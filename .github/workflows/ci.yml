@@ -183,11 +183,19 @@ jobs:
           curl -sSL -o third_party/nlohmann/json.hpp \
             https://raw.githubusercontent.com/nlohmann/json/v3.11.3/single_include/nlohmann/json.hpp
 
+      - name: Generate the embedded-config header
+        # This job compiles translation units directly rather than through
+        # CMake, so it does not otherwise get DefaultConfig.h -- which CMake
+        # generates from config/*.json. Configure once on the host purely to
+        # produce it.
+        run: cmake -S . -B build-gen -DCMAKE_BUILD_TYPE=Release
+
       - name: Cross-compile every translation unit
         run: |
           CXX=x86_64-w64-mingw32-g++-posix
           FLAGS="-std=c++20 -c -O1 -Wall -Wextra -I native/src -I third_party \
-                 -I /tmp/minhook/include -DWIN32_LEAN_AND_MEAN -DNOMINMAX \
+                 -I build-gen/generated -I /tmp/minhook/include \
+                 -DWIN32_LEAN_AND_MEAN -DNOMINMAX \
                  -DUNICODE -D_UNICODE -DFPCAM_VERSION=\"ci\" -DFPCAM_ENABLE_CONSOLE"
           mkdir -p /tmp/xbuild
           status=0
