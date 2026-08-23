@@ -18,12 +18,20 @@ std::atomic<bool> g_cursorLockEnabled{true};
 std::atomic<bool> g_uiOpen{false};
 std::atomic<bool> g_windowFocused{true};
 
-bool ShouldLockNow() {
-    if (!g_cursorLockEnabled.load()) return false;
+// Mouse look and the cursor pin are related but not the same condition.
+// Looking around should keep working for someone who turned the cursor lock off
+// in the config; what must stop, in both cases, is looking around while a menu
+// or a dialogue has the player's attention.
+bool ShouldLookNow() {
     if (!camera::FirstPersonEnabled()) return false;
     if (!g_windowFocused.load()) return false;
     if (GetConfig().mouse.autoReleaseOnUI && g_uiOpen.load()) return false;
     return true;
+}
+
+bool ShouldLockNow() {
+    if (!g_cursorLockEnabled.load()) return false;
+    return ShouldLookNow();
 }
 
 bool WindowCentre(POINT* out) {
@@ -94,7 +102,7 @@ void HandleRawInput(LPARAM lParam) {
     const LONG deltaY = raw->data.mouse.lLastY;
     if (deltaX == 0 && deltaY == 0) return;
 
-    if (!ShouldLockNow()) return;
+    if (!ShouldLookNow()) return;
 
     camera::ApplyMouseDelta(static_cast<float>(deltaX),
                             static_cast<float>(deltaY));

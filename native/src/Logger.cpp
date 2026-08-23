@@ -99,7 +99,9 @@ void Logger::Write(LogLevel level, std::string_view message) {
     char header[64] = {};
     const int headerLength = ::_snprintf_s(
         header, sizeof(header), _TRUNCATE, "[%02u:%02u:%02u.%03u][%s][%05lu] ",
-        now.wHour, now.wMinute, now.wSecond, now.wMilliseconds, LevelTag(level),
+        static_cast<unsigned>(now.wHour), static_cast<unsigned>(now.wMinute),
+        static_cast<unsigned>(now.wSecond),
+        static_cast<unsigned>(now.wMilliseconds), LevelTag(level),
         ::GetCurrentThreadId());
 
     std::string line;
