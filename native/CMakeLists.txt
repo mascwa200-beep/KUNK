@@ -13,6 +13,18 @@ FetchContent_Declare(minhook
 
 FetchContent_MakeAvailable(minhook)
 
+# MinHook's own CMakeLists does not export its include directory on the
+# `minhook` target, so linking it is not enough to find MinHook.h. Add the
+# path explicitly rather than depending on that upstream detail.
+if(NOT TARGET minhook)
+    message(FATAL_ERROR "MinHook did not provide the expected 'minhook' target.")
+endif()
+if(NOT EXISTS "${minhook_SOURCE_DIR}/include/MinHook.h")
+    message(FATAL_ERROR
+        "MinHook.h was not found under ${minhook_SOURCE_DIR}/include. The "
+        "MinHook checkout is incomplete or has been reorganised upstream.")
+endif()
+
 add_library(FPCamera SHARED
     src/main.cpp
     src/Common.cpp
@@ -28,7 +40,9 @@ add_library(FPCamera SHARED
     src/Bridge.cpp
     src/SelfTest.cpp)
 
-target_include_directories(FPCamera PRIVATE src)
+target_include_directories(FPCamera PRIVATE
+    src
+    "${minhook_SOURCE_DIR}/include")
 
 target_link_libraries(FPCamera PRIVATE
     minhook
