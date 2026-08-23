@@ -25,7 +25,9 @@ cmake_minimum_required(VERSION 3.21)
 project(BG3FPCamera
     VERSION 1.0.0
     DESCRIPTION "First-person camera and movement overhaul for Baldur's Gate 3"
-    LANGUAGES CXX)
+    # C as well as C++: MinHook is a C library and is compiled from
+    # source here, because upstream ships no CMake support.
+    LANGUAGES CXX C)
 
 option(FPCAM_BUILD_TESTS "Build the host test suite." ON)
 option(FPCAM_CONSOLE

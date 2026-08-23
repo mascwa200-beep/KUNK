@@ -13,16 +13,35 @@ FetchContent_Declare(minhook
 
 FetchContent_MakeAvailable(minhook)
 
-# MinHook's own CMakeLists does not export its include directory on the
-# `minhook` target, so linking it is not enough to find MinHook.h. Add the
-# path explicitly rather than depending on that upstream detail.
-if(NOT TARGET minhook)
-    message(FATAL_ERROR "MinHook did not provide the expected 'minhook' target.")
-endif()
+# MinHook ships Visual Studio project files and a MinGW makefile, but no
+# CMakeLists -- so FetchContent populates the sources and creates no target at
+# all. Naming `minhook` in target_link_libraries then silently degrades into
+# "pass -lminhook to the linker", which fails much later and much less clearly.
+# Build it here instead, which also guarantees it picks up this project's
+# static-CRT setting rather than whatever upstream would have chosen.
 if(NOT EXISTS "${minhook_SOURCE_DIR}/include/MinHook.h")
     message(FATAL_ERROR
-        "MinHook.h was not found under ${minhook_SOURCE_DIR}/include. The "
-        "MinHook checkout is incomplete or has been reorganised upstream.")
+        "MinHook.h was not found under ${minhook_SOURCE_DIR}/include -- the "
+        "checkout is incomplete or has been reorganised upstream.")
+endif()
+
+if(NOT TARGET minhook)
+    add_library(minhook STATIC
+        "${minhook_SOURCE_DIR}/src/buffer.c"
+        "${minhook_SOURCE_DIR}/src/hook.c"
+        "${minhook_SOURCE_DIR}/src/trampoline.c"
+        "${minhook_SOURCE_DIR}/src/hde/hde32.c"
+        "${minhook_SOURCE_DIR}/src/hde/hde64.c")
+
+    target_include_directories(minhook
+        PUBLIC "${minhook_SOURCE_DIR}/include"
+        PRIVATE "${minhook_SOURCE_DIR}/src")
+
+    if(MSVC)
+        # Upstream's own warning level, not ours -- this is third-party code and
+        # we are not going to fix its diagnostics.
+        target_compile_options(minhook PRIVATE /W3)
+    endif()
 endif()
 
 add_library(FPCamera SHARED
@@ -40,9 +59,7 @@ add_library(FPCamera SHARED
     src/Bridge.cpp
     src/SelfTest.cpp)
 
-target_include_directories(FPCamera PRIVATE
-    src
-    "${minhook_SOURCE_DIR}/include")
+target_include_directories(FPCamera PRIVATE src)
 
 target_link_libraries(FPCamera PRIVATE
     minhook
