@@ -28,6 +28,11 @@
     // Turns on view-matrix discovery logging and dumps the candidate table.
     "toggleDiscovery": "VK_F3",
     "reloadConfig": "VK_F4",
+    // Runs the in-game self-test and writes FPCamera.selftest.log: which hooks
+    // installed, whether the scanner works against real memory, whether the
+    // pointer chain resolves, whether the Lua side is connected. Run this first
+    // when something is not behaving.
+    "runSelfTest": "VK_F7",
     // Turns everything off at once, for when something goes wrong.
     "panicDisable": "VK_F8"
   },
@@ -60,7 +65,9 @@
       "Dragonborn": 1.82
     },
 
-    // Pushes the camera forward out of the head mesh.
+    // Pushes the camera forward out of the head mesh, along the camera's
+    // heading. Flattened to horizontal, so looking up does not lift the
+    // viewpoint into the ceiling.
     "forwardOffset": 0.12,
 
     // Near clip plane. Together with forwardOffset this is what stops your own
@@ -89,6 +96,13 @@
     "pointerChain": [],
 
     // Byte offsets of each float field within the camera object.
+    //
+    // "positionX" is the one that moves the viewpoint to your character's
+    // eyes, and it is the difference between "the camera rotates freely" and
+    // "this is a first-person game". It must point at the first of three
+    // contiguous floats (x, y, z). Leave it at -1 until you have confirmed it:
+    // the plugin adds eye height to whatever it finds there, and pointing it at
+    // something that is not a position produces nonsense.
     "fieldOffsets": {
       "pitch": -1,
       "yaw": -1,
@@ -158,10 +172,12 @@
 
   "headHide": {
     // The reliable fix: near-plane push plus the forward offset above.
-    "nearPlanePush": true,
-    // Experimental: asks the Lua client side to hide the head visual. Whether
-    // it does anything depends on your Script Extender version.
-    "luaHeadHide": false
+    "nearPlanePush": true
+    // The experimental head-visual hiding is NOT set here -- it is a Lua
+    // client-side concern and lives in headHide.enabled in
+    // fpcamera_gameplay.json. Having the same switch in two files meant one of
+    // them was always a lie. An old "luaHeadHide" key here is ignored, with a
+    // note in the log.
   },
 
   "bridge": {

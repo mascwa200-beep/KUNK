@@ -36,8 +36,8 @@ bottom of a page.
 
 | | |
 |---|---|
-| The viewpoint moving to eye level | Requires a memory offset specific to your exact build. |
-| Zoom forced to zero | Same. |
+| The viewpoint moving to eye level | Requires `camera.fieldOffsets.positionX`, specific to your exact build. |
+| Zoom forced to zero | Requires `camera.fieldOffsets.distance`. |
 
 That second group needs work because BG3's executable is stripped and re-linked
 every patch, so no shipped address or byte pattern can be correct for your
@@ -80,6 +80,25 @@ ledges. Set `movement.mode` in `FPCamera.json`; neither option is free.
 
 A physical controller always takes priority over the synthetic one.
 
+### Eye placement, and the bug it invites
+
+Raising the viewpoint to the character's eyes means reading the camera's
+position, adding an offset, and writing it back. That is a feedback loop the
+moment the engine does not refresh the field between our writes — we read our
+own output, add the offset again, and the camera climbs away at eye height per
+frame. It would pass a five-second check, because the engine usually *does*
+refresh; it breaks on a paused frame, a loading screen or a cutscene.
+
+The guard is to remember exactly what was written and recognise it on the way
+back in, falling back to the remembered pre-modification base. There is a
+10,000-frame no-drift test across three regimes — engine always refreshes,
+never refreshes, and intermittently.
+
+The offset is applied to the camera's own position rather than to the character
+position the Lua bridge publishes, because the bridge runs at 10 Hz and would
+visibly stutter while walking. The bridge supplies only the race, which selects
+the eye height and changes about once a session.
+
 ### Finding the camera, without hardcoded addresses
 
 Every frame the game must upload a view matrix to the GPU, through a Direct3D 11
@@ -105,6 +124,7 @@ changing what the game thinks you see is a trap, not a shortcut.
 | **F2** | Release / re-grab the cursor (for inventory and menus) |
 | **F3** | Toggle camera-matrix discovery logging |
 | **F4** | Reload `FPCamera.json` without restarting |
+| **F7** | Run the self-test and write `FPCamera.selftest.log` |
 | **F8** | Panic: turn everything off |
 | **W A S D** | Move, relative to the camera |
 | **Shift** | Walk |
@@ -140,6 +160,31 @@ cmake --build build --config Release
 Output: `build/native/Release/FPCamera.dll`, staged alongside its config files
 in `build/native/Release/NativeMods/`.
 
+## Testing
+
+The logic that a mistake in would be expensive — the camera-matrix decoder, the
+signature scanner, the resolve arithmetic, the eye-placement drift guard — lives
+in `native/src/core/`, which has no Windows dependency and is compiled unchanged
+into both the DLL and the test suite. The tests exercise what ships, not a copy.
+
+```
+cmake -S . -B build && cmake --build build   # builds the tests on any platform
+./build/tests/fpcam_tests                    # 93 cases, ~144k assertions
+lua5.4 tests/lua/run.lua                     # 160 assertions against a mock SE
+```
+
+The Lua suites run against a mock Script Extender that can be taken apart on
+purpose: every `Ext` and `Osi` entry point can be removed or made to raise, so
+the "degrades instead of crashing" claim is checked rather than asserted.
+
+CI runs the MSVC build, both suites, `luac -p` over every shipped Lua file, and
+a mingw cross-compile as a cheap second opinion.
+
+**What testing cannot tell you:** whether the camera looks right, whether the
+signature templates match your game build, or whether the game stays stable.
+None of that exists outside a Windows machine running Baldur's Gate 3. Press
+**F7** in game for the part that can only be checked there.
+
 ---
 
 ## Repository layout
@@ -155,10 +200,13 @@ native/src/             the DLL
   MemoryScanner         AOB scanning and guarded memory access
   Signatures            the config-driven signature registry
   Bridge                file exchange with the Lua mod
-config/                 the two JSON files that install next to the DLL
 mod/                    copied into <BG3>/Data/
   Mods/FPCameraMod/     meta.lsx, SE config, Lua
   Public/FPCameraMod/   stat overrides (ships inert; see the file)
+  SelfTest              in-game checks, bound to F7
+  core/                 portable logic, compiled into the DLL and the tests
+config/                 the two JSON files that install next to the DLL
+tests/                  host test suite; tests/lua/ has the mock Script Extender
 docs/                   SIGNATURES.md, TROUBLESHOOTING.md
 INSTALL.md              step-by-step manual install
 ```

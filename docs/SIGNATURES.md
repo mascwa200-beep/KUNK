@@ -38,6 +38,10 @@ What signatures buy you is exactly two things: the viewpoint moving to the
 character's eyes, and the zoom going to zero. Worth having, but it is the last
 20%, not the foundation.
 
+Press **F7** in game at any point to see where you stand: the self-test reports
+each capability as PASS, FAIL or SKIP, and SKIP is what an unconfigured
+signature looks like.
+
 ## Step 1 — Let the plugin find the camera matrix for you
 
 This is the part that is usually hard, and the plugin automates it.
@@ -89,6 +93,18 @@ together in the same structure:
 - **yaw**: repeat the search using the log's `yaw` value.
 - **distance**: scroll the camera in and out and search for the changing value.
 - **fov**: usually a constant near 1.2 (radians) or 70 (degrees).
+- **positionX**: the camera's own world position, and the one that actually
+  makes this first person. Search for the `pos=` X value from the discovery log
+  and walk around; the address that tracks you is it. It must be the *first* of
+  three contiguous floats — confirm y and z sit at +4 and +8 before using it.
+
+A word of warning specific to `positionX`: the plugin adds eye height to
+whatever it finds there and writes it back every frame. Pointing it at
+something that is not a position produces nonsense, so leave it at `-1` until
+you have confirmed all three components. There is a guard against the read-back
+feedback loop this could otherwise cause (see `core/EyePlacement.h`), and a
+sanity bound that refuses implausible values, but neither can tell a plausible
+wrong field from the right one.
 
 Note the byte offsets *between* them. If pitch is at `0x120` and yaw at `0x124`,
 those two offsets go straight into `camera.fieldOffsets` in `FPCamera.json`.
@@ -175,7 +191,9 @@ you wildcarded too little — some of those bytes were build-specific.
 `-1` means "I do not know this one" and the field is simply not written. Getting
 a field wrong is worse than leaving it out.
 
-Press **F4** in game to reload both files without restarting.
+Press **F4** in game to reload both files without restarting, then **F7** to
+confirm: `camera/pointer chain` and `camera/eye placement` should both turn from
+SKIP into PASS.
 
 ## The resolve op-chain
 

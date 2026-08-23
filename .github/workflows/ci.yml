@@ -1,0 +1,183 @@
+name: CI
+
+# The point of this workflow is narrow and worth stating: it proves the plugin
+# compiles and links with MSVC, and that its logic is correct under test.
+#
+# It cannot prove the mod works. Nothing outside a Windows machine running
+# Baldur's Gate 3 can tell you the camera looks right, that the signature
+# templates match a real game build, or that the game stays stable. What green
+# CI buys is that a first run is not the first time the code has been through a
+# compiler.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  # A push that supersedes an in-flight run should cancel it rather than queue
+  # behind it -- Windows runners bill at 2x.
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows-msvc:
+    name: Windows / MSVC (authoritative)
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+
+      - name: Build FPCamera.dll and the test suite
+        run: cmake --build build --config Release --parallel
+
+      - name: Run the host test suite
+        run: .\build\tests\Release\fpcam_tests.exe
+
+      - name: Confirm the DLL is 64-bit and exports its entry point
+        shell: pwsh
+        run: |
+          $dll = "build\native\Release\FPCamera.dll"
+          if (-not (Test-Path $dll)) { throw "FPCamera.dll was not produced" }
+          # Baldur's Gate 3 is a 64-bit process and silently skips a 32-bit DLL,
+          # so a wrong architecture here would look like "the mod does nothing".
+          $bytes = [System.IO.File]::ReadAllBytes($dll)
+          $peOffset = [BitConverter]::ToInt32($bytes, 0x3C)
+          $machine = [BitConverter]::ToUInt16($bytes, $peOffset + 4)
+          if ($machine -ne 0x8664) {
+            throw ("expected an x64 image (0x8664), got 0x{0:X}" -f $machine)
+          }
+          Write-Host "FPCamera.dll is x64, $((Get-Item $dll).Length) bytes"
+
+      - name: Upload FPCamera.dll
+        uses: actions/upload-artifact@v4
+        with:
+          name: FPCamera-dll
+          path: |
+            build/native/Release/FPCamera.dll
+            build/native/Release/FPCamera.pdb
+            config/FPCamera.json
+            config/FPCamera.signatures.json
+          if-no-files-found: error
+
+  linux-tests:
+    name: Linux / tests, fuzzing and Lua
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lua
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends lua5.4
+
+      - name: Configure and build the test suite
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --parallel
+
+      - name: Run the host test suite
+        run: ./build/tests/fpcam_tests
+
+      - name: Check every Lua file parses
+        run: |
+          status=0
+          for file in $(find mod -name '*.lua' | sort); do
+            if luac5.4 -p "$file"; then
+              echo "  ok   $file"
+            else
+              echo "  FAIL $file"
+              status=1
+            fi
+          done
+          exit $status
+
+      - name: Run the Lua test suite
+        run: lua5.4 tests/lua/run.lua
+
+      - name: Check the shipped data files are well formed
+        run: |
+          python3 - <<'PY'
+          import json, re, pathlib, sys, xml.etree.ElementTree as ET
+
+          failures = []
+
+          # FPCamera.json and the signature file are parsed leniently by the
+          # plugin and may carry // comments, so strip those before checking.
+          for path in ["config/FPCamera.json", "config/FPCamera.signatures.json"]:
+              text = re.sub(r'^\s*//.*$', '', pathlib.Path(path).read_text(), flags=re.M)
+              try:
+                  json.loads(text)
+                  print(f"  ok   {path}")
+              except Exception as e:
+                  failures.append(f"{path}: {e}")
+
+          # The Script Extender config is parsed strictly.
+          for path in ["mod/Mods/FPCameraMod/ScriptExtender/Config.json"]:
+              try:
+                  json.loads(pathlib.Path(path).read_text())
+                  print(f"  ok   {path}")
+              except Exception as e:
+                  failures.append(f"{path}: {e}")
+
+          for path in ["mod/Mods/FPCameraMod/meta.lsx"]:
+              try:
+                  ET.parse(path)
+                  print(f"  ok   {path}")
+              except Exception as e:
+                  failures.append(f"{path}: {e}")
+
+          if failures:
+              for f in failures:
+                  print("  FAIL " + f, file=sys.stderr)
+              sys.exit(1)
+          PY
+
+  windows-crosscheck:
+    name: Linux / mingw cross-compile
+    runs-on: ubuntu-latest
+    # A cheap second opinion on the Windows-only translation units. MinGW and
+    # MSVC disagree on SEH and some COM details, so this is not a substitute for
+    # the MSVC job -- it just catches ordinary type errors on a 1x runner
+    # instead of a 2x one.
+    continue-on-error: true
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the cross toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends g++-mingw-w64-x86-64
+
+      - name: Fetch MinHook headers
+        run: git clone --depth 1 --branch v1.3.3 https://github.com/TsudaKageyu/minhook.git /tmp/minhook
+
+      - name: Fetch the nlohmann/json header
+        run: |
+          mkdir -p third_party/nlohmann
+          curl -sSL -o third_party/nlohmann/json.hpp \
+            https://raw.githubusercontent.com/nlohmann/json/v3.11.3/single_include/nlohmann/json.hpp
+
+      - name: Cross-compile every translation unit
+        run: |
+          CXX=x86_64-w64-mingw32-g++-posix
+          FLAGS="-std=c++20 -c -O1 -Wall -Wextra -I native/src -I third_party \
+                 -I /tmp/minhook/include -DWIN32_LEAN_AND_MEAN -DNOMINMAX \
+                 -DUNICODE -D_UNICODE -DFPCAM_VERSION=\"ci\" -DFPCAM_ENABLE_CONSOLE"
+          mkdir -p /tmp/xbuild
+          status=0
+          for f in native/src/*.cpp native/src/core/*.cpp; do
+            if $CXX $FLAGS "$f" -o "/tmp/xbuild/$(basename "$f" .cpp).o"; then
+              echo "  ok   $f"
+            else
+              echo "  FAIL $f"
+              status=1
+            fi
+          done
+          exit $status

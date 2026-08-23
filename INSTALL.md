@@ -224,6 +224,16 @@ In this order. Each check tells you which step failed if it does.
    button held. If the view rotates but does not move to eye level, that is
    expected on a fresh install — see the next section.
 
+5. **Run the self-test.** Press **F7** and open
+   `<BG3>\bin\NativeMods\FPCamera.selftest.log`. It reports every check as
+   PASS, FAIL or SKIP.
+
+   Read SKIP as "not configured yet", not as a fault: on a fresh install the
+   signature and eye-placement checks are expected to skip, because the offsets
+   for your game build have not been filled in. FAIL means something is wrong
+   and the report says what. This is the file to paste when reporting a
+   problem.
+
 ---
 
 ## Step 8 — Make the camera actually go first-person
@@ -258,6 +268,7 @@ numbers to search for.
 | F2  | Release / re-grab the mouse cursor |
 | F3  | Toggle camera-matrix discovery logging |
 | F4  | Reload `FPCamera.json` without restarting |
+| F7  | Run the self-test and write `FPCamera.selftest.log` |
 | F8  | Panic: turn everything off |
 
 All rebindable in `FPCamera.json`. Console commands, typed into the Script
