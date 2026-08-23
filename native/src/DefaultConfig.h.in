@@ -1,0 +1,21 @@
+// DefaultConfig.h -- GENERATED AT CONFIGURE TIME. DO NOT EDIT.
+//
+// Produced from config/FPCamera.json and config/FPCamera.signatures.json by the
+// root CMakeLists.txt. Generating it rather than pasting the JSON into a header
+// keeps a single source of truth: the file the plugin writes on first run is
+// byte-for-byte the file in the repository, and editing one cannot leave the
+// other stale.
+//
+// The plugin writes these next to itself when they are missing, which is what
+// makes the install a single-file drop.
+#pragma once
+
+namespace fpcam {
+
+inline constexpr const char* kDefaultConfigJson =
+R"FPCAMDEFAULT(@FPCAM_DEFAULT_CONFIG@)FPCAMDEFAULT";
+
+inline constexpr const char* kDefaultSignaturesJson =
+R"FPCAMDEFAULT(@FPCAM_DEFAULT_SIGNATURES@)FPCAMDEFAULT";
+
+}  // namespace fpcam

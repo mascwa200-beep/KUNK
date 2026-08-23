@@ -32,6 +32,24 @@ namespace fpcam {
 std::string WideToUtf8(std::wstring_view wide);
 std::wstring Utf8ToWide(std::string_view utf8);
 
+// Outcome of EnsureFileExists.
+enum class EnsureResult {
+    AlreadyPresent,  // the file was already there and was left untouched
+    Created,         // it was missing and has been written
+    Failed,          // it was missing and could not be written
+};
+
+// Writes `contents` to <plugin dir>/fileName, but only if that file does not
+// already exist. This is what lets the plugin ship as a single DLL: the config
+// files it wants appear next to it on first run.
+//
+// An existing file is never overwritten, and the check is not a separate
+// existence test -- the file is opened CREATE_NEW so the decision is atomic.
+// Somebody who has spent an evening filling in memory offsets must not lose
+// them by dropping in a newer build.
+EnsureResult EnsureFileExists(const std::wstring& fileName,
+                              std::string_view contents);
+
 // Records the HMODULE handed to DllMain so PluginDirectory() can resolve paths
 // relative to the DLL rather than to the game executable. Called exactly once,
 // from DllMain, before any other function here.

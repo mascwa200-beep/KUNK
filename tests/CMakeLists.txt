@@ -8,7 +8,8 @@ add_executable(fpcam_tests
     test_eyeplacement.cpp
     test_angles.cpp
     test_moveintent.cpp
-    test_config.cpp)
+    test_config.cpp
+    test_defaults.cpp)
 
 target_include_directories(fpcam_tests PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}"

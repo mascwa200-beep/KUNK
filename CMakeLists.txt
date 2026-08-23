@@ -42,6 +42,46 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # not depend on a VC++ redistributable being present on the user's machine.
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
+# --- default configs, embedded into the DLL --------------------------------
+#
+# The plugin writes FPCamera.json and FPCamera.signatures.json next to itself
+# when they are absent, so installing is a single-file drop. The contents are
+# generated from the files in config/ rather than pasted into a header, because
+# a pasted copy is a second source of truth and drifts the first time either
+# side is edited.
+set(FPCAM_CONFIG_JSON     "${CMAKE_CURRENT_SOURCE_DIR}/config/FPCamera.json")
+set(FPCAM_SIGNATURES_JSON "${CMAKE_CURRENT_SOURCE_DIR}/config/FPCamera.signatures.json")
+
+foreach(_required "${FPCAM_CONFIG_JSON}" "${FPCAM_SIGNATURES_JSON}")
+    if(NOT EXISTS "${_required}")
+        message(FATAL_ERROR "Missing shipped config file: ${_required}")
+    endif()
+endforeach()
+
+file(READ "${FPCAM_CONFIG_JSON}"     FPCAM_DEFAULT_CONFIG)
+file(READ "${FPCAM_SIGNATURES_JSON}" FPCAM_DEFAULT_SIGNATURES)
+
+# The generated header wraps both in a raw string literal. If the terminator
+# ever appears inside the content the file silently stops compiling in a
+# baffling way, so check for it here and say exactly what happened.
+foreach(_content "${FPCAM_DEFAULT_CONFIG}" "${FPCAM_DEFAULT_SIGNATURES}")
+    string(FIND "${_content}" ")FPCAMDEFAULT\"" _delimiter_hit)
+    if(NOT _delimiter_hit EQUAL -1)
+        message(FATAL_ERROR
+            "A config file contains the raw-string terminator )FPCAMDEFAULT\" "
+            "used by native/src/DefaultConfig.h.in. Change the delimiter there.")
+    endif()
+endforeach()
+
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/native/src/DefaultConfig.h.in"
+    "${CMAKE_BINARY_DIR}/generated/DefaultConfig.h"
+    @ONLY)
+
+# Editing either JSON must re-run the generation above.
+set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+    "${FPCAM_CONFIG_JSON}" "${FPCAM_SIGNATURES_JSON}")
+
 include(FetchContent)
 set(FETCHCONTENT_QUIET OFF)
 
@@ -86,6 +126,7 @@ endif()
 # The configuration parser is portable too, but needs JSON.
 add_library(fpcam_config STATIC native/src/ConfigParse.cpp)
 target_link_libraries(fpcam_config PUBLIC fpcam_core fpcam_json)
+target_include_directories(fpcam_config PUBLIC "${CMAKE_BINARY_DIR}/generated")
 
 if(FPCAM_BUILD_TESTS)
     enable_testing()

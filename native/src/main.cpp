@@ -13,6 +13,7 @@
 #include "CameraHook.h"
 #include "Config.h"
 #include "D3D11Hook.h"
+#include "DefaultConfig.h"
 #include "InputHook.h"
 #include "Logger.h"
 #include "MatrixProbe.h"
@@ -25,7 +26,9 @@
 
 #include <atomic>
 #include <chrono>
+#include <initializer_list>
 #include <thread>
+#include <utility>
 
 namespace fpcam {
 namespace {
@@ -211,6 +214,53 @@ void Bootstrap() {
     FPCAM_INFO("FPCamera {} starting. Plugin directory: {}", FPCAM_VERSION,
                WideToUtf8(PluginDirectory()));
     FPCAM_INFO("Game executable version: {}", RunningGameVersion());
+
+    // Write the config files if they are absent, so the plugin can be
+    // installed by copying one DLL into bin/NativeMods and nothing else. An
+    // existing file is never touched.
+    const EnsureResult configFile =
+        EnsureFileExists(kConfigFile, kDefaultConfigJson);
+    const EnsureResult signatureFile =
+        EnsureFileExists(kSignatureFile, kDefaultSignaturesJson);
+
+    for (const auto& [name, result] :
+         {std::pair{kConfigFile, configFile},
+          std::pair{kSignatureFile, signatureFile}}) {
+        switch (result) {
+            case EnsureResult::Created:
+                FPCAM_INFO("Created {} with the built-in defaults.",
+                           WideToUtf8(name));
+                break;
+            case EnsureResult::AlreadyPresent:
+                FPCAM_DEBUG("{} already exists; leaving it alone.",
+                            WideToUtf8(name));
+                break;
+            case EnsureResult::Failed:
+                FPCAM_WARN("Could not create {} next to the DLL. Built-in "
+                           "defaults still apply, but there is nothing on disk "
+                           "to edit -- check that bin/NativeMods is writable.",
+                           WideToUtf8(name));
+                break;
+        }
+    }
+
+    if (configFile == EnsureResult::Created ||
+        signatureFile == EnsureResult::Created) {
+        FPCAM_INFO("---------------- FIRST RUN ----------------");
+        FPCAM_INFO("Working now, with no further setup: mouse look with no "
+                   "button held, the screen-centre cursor and the targeting fix "
+                   "it gives you, WASD movement, and the interaction assist.");
+        FPCAM_INFO("Not working yet: the viewpoint moving to your character's "
+                   "eyes, and zoom going to zero. Those need "
+                   "camera.fieldOffsets.positionX and .distance, which are "
+                   "specific to your game build -- no shipped value can be "
+                   "right for it. Press the discovery hotkey, rotate the "
+                   "camera, and read this log; docs/SIGNATURES.md covers the "
+                   "rest.");
+        FPCAM_INFO("So a camera that rotates freely but stays at third-person "
+                   "height is the expected state right now, not a fault.");
+        FPCAM_INFO("-------------------------------------------");
+    }
 
     if (config.Load(kConfigFile)) {
         Logger::Init(Utf8ToWide(config.logging.file), LogLevelFromName(config.logging.level),

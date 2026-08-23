@@ -50,6 +50,41 @@ std::wstring ComputePluginDirectory() {
 
 void SetPluginModule(HMODULE module) { g_pluginModule = module; }
 
+EnsureResult EnsureFileExists(const std::wstring& fileName,
+                              std::string_view contents) {
+    const std::wstring path = PluginDirectory() + fileName;
+
+    // CREATE_NEW fails with ERROR_FILE_EXISTS rather than truncating, so the
+    // "only if missing" decision is made by the filesystem in one step. A
+    // separate GetFileAttributes check would leave a window in which a
+    // concurrently created file gets clobbered.
+    const HANDLE file = ::CreateFileW(path.c_str(), GENERIC_WRITE, FILE_SHARE_READ,
+                                      nullptr, CREATE_NEW, FILE_ATTRIBUTE_NORMAL,
+                                      nullptr);
+    if (file == INVALID_HANDLE_VALUE) {
+        return ::GetLastError() == ERROR_FILE_EXISTS ? EnsureResult::AlreadyPresent
+                                                     : EnsureResult::Failed;
+    }
+
+    bool ok = contents.empty();
+    if (!contents.empty()) {
+        DWORD written = 0;
+        ok = ::WriteFile(file, contents.data(),
+                         static_cast<DWORD>(contents.size()), &written,
+                         nullptr) != 0 &&
+             written == contents.size();
+    }
+    ::CloseHandle(file);
+
+    if (!ok) {
+        // A half-written config is worse than none: it would parse as garbage
+        // and the plugin would report the user's install as broken.
+        ::DeleteFileW(path.c_str());
+        return EnsureResult::Failed;
+    }
+    return EnsureResult::Created;
+}
+
 const std::wstring& PluginDirectory() {
     static const std::wstring directory = ComputePluginDirectory();
     return directory;
