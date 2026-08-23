@@ -12,7 +12,10 @@
 #define NOMINMAX
 #endif
 
-#include <Windows.h>
+#include <windows.h>
+
+#include "core/Angles.h"
+#include "core/KeyNames.h"
 
 #include <cstdint>
 #include <string>
@@ -44,25 +47,15 @@ const std::wstring& PluginDirectory();
 // empty string if the folder cannot be resolved. Used by the Lua bridge.
 std::wstring ScriptExtenderDataDirectory();
 
-// Maps a key name from the config ("W", "VK_F1", "0x70") onto a virtual-key
-// code. Returns 0 when the name is not recognised, which callers treat as
-// "binding disabled" rather than as an error.
-int VirtualKeyFromName(std::string_view name);
+// Key-name parsing lives in core/KeyNames.h so the config tests can reach it
+// without Windows.h. Common.cpp static_asserts the table against the real VK_*
+// macros, so the two cannot drift apart unnoticed.
 
-// Human-readable name for a virtual-key code, for echoing bindings into the
-// log so the user can confirm what was actually parsed.
-std::string NameFromVirtualKey(int vk);
-
-// Clamps to [lo, hi]. std::clamp needs <algorithm> in every TU and we use this
-// in hot per-frame paths.
-template <typename T>
-constexpr T Clamp(T v, T lo, T hi) {
-    return v < lo ? lo : (v > hi ? hi : v);
-}
-
-// Wraps an angle in degrees into [-180, 180). Camera yaw accumulates without
-// bound as the mouse turns, and some camera structures reject out-of-range
-// values, so every write is normalised first.
-float WrapDegrees(float degrees);
+// Clamp and WrapDegrees live in core/Angles.h alongside the rest of the camera
+// angle conventions, and are re-exported here for the existing call sites.
+using core::Clamp;
+using core::NameFromVirtualKey;
+using core::VirtualKeyFromName;
+using core::WrapDegrees;
 
 }  // namespace fpcam

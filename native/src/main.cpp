@@ -17,6 +17,7 @@
 #include "Logger.h"
 #include "MatrixProbe.h"
 #include "MemoryScanner.h"
+#include "SelfTest.h"
 #include "Signatures.h"
 #include "XInputSpoof.h"
 
@@ -78,6 +79,12 @@ void LogStatus() {
     FPCAM_INFO("camera basis    : {}",
                cameraStatus.usingProbeBasis ? "decoded from the view matrix"
                                             : "derived from our own yaw/pitch");
+    FPCAM_INFO("eye placement   : {} (eye height {:.3f}m)",
+               cameraStatus.eyePlacementActive
+                   ? "active"
+                   : "inactive -- camera.fieldOffsets.positionX unset or "
+                     "unusable",
+               cameraStatus.eyeHeight);
     FPCAM_INFO("orientation     : yaw={:.2f} pitch={:.2f}", cameraStatus.yaw,
                cameraStatus.pitch);
     FPCAM_INFO("cursor lock     : enabled={} active={} uiOpen={}",
@@ -102,7 +109,7 @@ void ReloadConfiguration() {
         return;
     }
 
-    Logger::Init(config.logging.file, LogLevelFromName(config.logging.level),
+    Logger::Init(Utf8ToWide(config.logging.file), LogLevelFromName(config.logging.level),
                  config.logging.console);
     FPCAM_INFO("Configuration reloaded.");
     config.LogEffective();
@@ -121,6 +128,7 @@ void HotkeyLoop() {
     bool previousCursorLock = false;
     bool previousDiscovery = false;
     bool previousReload = false;
+    bool previousSelfTest = false;
     bool previousPanic = false;
 
     while (!g_shuttingDown.load()) {
@@ -147,6 +155,16 @@ void HotkeyLoop() {
 
         if (KeyPressed(keys.reloadConfig, &previousReload)) {
             ReloadConfiguration();
+        }
+
+        if (KeyPressed(keys.runSelfTest, &previousSelfTest)) {
+            selftest::Context context;
+            context.signatures = &g_signatures;
+            context.framesPresented = g_frameIndex.load();
+            const selftest::Report report = selftest::Run(context);
+            FPCAM_INFO("Self-test finished: {} passed, {} failed, {} skipped. "
+                       "Full report in FPCamera.selftest.log.",
+                       report.passed, report.failed, report.skipped);
         }
 
         if (KeyPressed(keys.panicDisable, &previousPanic)) {
@@ -195,7 +213,7 @@ void Bootstrap() {
     FPCAM_INFO("Game executable version: {}", RunningGameVersion());
 
     if (config.Load(kConfigFile)) {
-        Logger::Init(config.logging.file, LogLevelFromName(config.logging.level),
+        Logger::Init(Utf8ToWide(config.logging.file), LogLevelFromName(config.logging.level),
                      config.logging.console);
     }
     config.LogEffective();
@@ -259,8 +277,10 @@ void Bootstrap() {
     g_hotkeyThread = std::thread(&HotkeyLoop);
     g_started.store(true);
 
-    FPCAM_INFO("FPCamera ready. Press {} to toggle first person.",
-               NameFromVirtualKey(config.hotkeys.toggleFirstPerson));
+    FPCAM_INFO("FPCamera ready. Press {} to toggle first person, {} to run the "
+               "self-test.",
+               NameFromVirtualKey(config.hotkeys.toggleFirstPerson),
+               NameFromVirtualKey(config.hotkeys.runSelfTest));
     LogStatus();
 }
 

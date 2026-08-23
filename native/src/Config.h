@@ -1,5 +1,10 @@
 // Config.h -- runtime configuration loaded from FPCamera.json.
 //
+// This header is deliberately free of Windows headers: the parsing lives in
+// ConfigParse.cpp and is compiled into the test suite, so hostile and
+// malformed configs can be exercised on any host. Only Load() and
+// LogEffective(), in Config.cpp, touch the filesystem and the logger.
+//
 // Everything tunable lives here rather than in the source, for two reasons:
 // the correct values differ per game build (field offsets), and the
 // comfortable values differ per player (sensitivity, eye height). The file is
@@ -7,7 +12,12 @@
 // without restarting a two-minute game launch.
 #pragma once
 
-#include "Common.h"
+#include "core/Angles.h"
+#include "core/KeyNames.h"
+
+#include <cstdint>
+#include <string>
+#include <string_view>
 
 #include <unordered_map>
 #include <vector>
@@ -40,11 +50,13 @@ enum class MovementMode {
 };
 
 struct HotkeyConfig {
-    int toggleFirstPerson = VK_F1;
-    int toggleCursorLock  = VK_F2;
-    int toggleDiscovery   = VK_F3;
-    int reloadConfig      = VK_F4;
-    int panicDisable      = VK_F8;
+    int toggleFirstPerson = core::vk::kF1;
+    int toggleCursorLock  = core::vk::kF2;
+    int toggleDiscovery   = core::vk::kF3;
+    int reloadConfig      = core::vk::kF4;
+    // Runs the in-process self-test and writes FPCamera.selftest.log.
+    int runSelfTest       = core::vk::kF7;
+    int panicDisable      = core::vk::kF8;
 };
 
 struct CameraConfig {
@@ -130,7 +142,7 @@ struct MovementConfig {
     int keyBack    = 'S';
     int keyLeft    = 'A';
     int keyRight   = 'D';
-    int keyWalk    = VK_LSHIFT;
+    int keyWalk    = core::vk::kLShift;
 
     float deadzone        = 0.15f;  // fraction of full stick deflection
     float walkMultiplier  = 0.45f;  // stick magnitude while the walk key is held
@@ -144,19 +156,21 @@ struct MovementConfig {
 };
 
 struct HeadHideConfig {
+    // Writes the near clip plane, which together with camera.forwardOffset is
+    // what actually keeps the player's own head out of the frame.
+    //
+    // The experimental head-visual hiding is NOT configured here: it is a Lua
+    // client-side concern and is switched on in fpcamera_gameplay.json. Having
+    // the same switch in two files meant one of them was always a lie.
     bool nearPlanePush = true;
-    // Experimental: asks the Lua client side to hide the head visual. Whether
-    // this does anything depends on the Script Extender version's entity API,
-    // so it is off by default and the near-plane push is the real fix.
-    bool luaHeadHide = false;
 };
 
 struct BridgeConfig {
     bool  enabled = true;
     float rateHz  = 10.0f;
     // Empty means "use the Script Extender data directory", which is the only
-    // place SE's Lua IO is permitted to write.
-    std::wstring directory;
+    // place SE's Lua IO is permitted to write. UTF-8.
+    std::string directory;
 };
 
 struct DiscoveryConfig {
@@ -170,7 +184,8 @@ struct DiscoveryConfig {
 
 struct LoggingConfig {
     std::string level = "info";
-    std::wstring file = L"FPCamera.log";
+    // UTF-8; the logger widens it when opening the file.
+    std::string file = "FPCamera.log";
     bool console = false;
 };
 
@@ -189,9 +204,14 @@ struct Config {
     // Parse warnings collected during Load(), emitted once the logger exists.
     std::vector<std::string> warnings;
 
-    // Reads <plugin dir>/fileName. On any failure the existing values are left
-    // untouched and false is returned, so a typo in a hot-reloaded config
-    // cannot leave the plugin in a half-configured state.
+    // Parses `text` as the config document. On any failure the existing values
+    // are left untouched and false is returned with a reason in `error`, so a
+    // typo in a hot-reloaded config cannot leave the plugin half-configured.
+    //
+    // Portable and free of file IO -- this is the entry point the tests drive.
+    bool ParseFromString(const std::string& text, std::string* error);
+
+    // Reads <plugin dir>/fileName and hands it to ParseFromString.
     bool Load(const std::wstring& fileName);
 
     // Writes the effective configuration to the log, including which key names

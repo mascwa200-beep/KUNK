@@ -4,8 +4,9 @@
 #include "Config.h"
 #include "D3D11Hook.h"
 #include "Logger.h"
+#include "core/MoveIntent.h"
 
-#include <Xinput.h>
+#include <xinput.h>
 
 #include <MinHook.h>
 
@@ -66,58 +67,33 @@ bool KeyDown(int virtualKey) {
 // camera, so "W" means "the direction the camera is facing" without this code
 // knowing anything about the camera at all. That is the entire reason this
 // mode exists.
-// Raw WASD intent, before any deadzone shaping. Shared by the synthetic stick
-// and by the bridge, so both movement modes read the same keys.
-float RawIntent(float* x, float* y) {
+// Gathers the current key state into the portable intent input. The shaping --
+// diagonal normalisation, the deadzone floor, the walk multiplier -- is
+// core::ComputeMoveIntent, which the test suite exercises directly.
+core::MoveIntentInput GatherIntentInput() {
     const MovementConfig& movement = GetConfig().movement;
 
-    *x = 0.0f;
-    *y = 0.0f;
-    if (!GameHasFocus()) return 0.0f;
-
-    if (KeyDown(movement.keyForward)) *y += 1.0f;
-    if (KeyDown(movement.keyBack))    *y -= 1.0f;
-    if (KeyDown(movement.keyRight))   *x += 1.0f;
-    if (KeyDown(movement.keyLeft))    *x -= 1.0f;
-
-    // Normalise so diagonals are not faster than the cardinals, which is what
-    // a real stick would do at full deflection.
-    const float length = std::sqrt(*x * *x + *y * *y);
-    if (length > 1.0f) {
-        *x /= length;
-        *y /= length;
-    }
-    return length > 1.0f ? 1.0f : length;
+    core::MoveIntentInput input;
+    input.focused = GameHasFocus();
+    input.forward = KeyDown(movement.keyForward);
+    input.back    = KeyDown(movement.keyBack);
+    input.left    = KeyDown(movement.keyLeft);
+    input.right   = KeyDown(movement.keyRight);
+    input.walk    = KeyDown(movement.keyWalk);
+    input.deadzone = movement.deadzone;
+    input.walkMultiplier = movement.walkMultiplier;
+    return input;
 }
 
 void BuildStick(SHORT* thumbLX, SHORT* thumbLY) {
-    const MovementConfig& movement = GetConfig().movement;
+    const core::MoveIntentOutput intent =
+        core::ComputeMoveIntent(GatherIntentInput());
 
-    float x = 0.0f;
-    float y = 0.0f;
-    const float length = RawIntent(&x, &y);
+    g_lastStickX.store(intent.stickX);
+    g_lastStickY.store(intent.stickY);
 
-    float magnitude = KeyDown(movement.keyWalk) ? movement.walkMultiplier : 1.0f;
-
-    // Push past the engine's own stick deadzone: a real thumbstick rests near
-    // zero and BG3 discards small deflections, so a keyboard "half press" has
-    // to start above that threshold to register at all.
-    if (length > 0.0f) {
-        const float floorValue = movement.deadzone + 0.05f;
-        magnitude = floorValue + magnitude * (1.0f - floorValue);
-    } else {
-        magnitude = 0.0f;
-    }
-
-    x *= magnitude;
-    y *= magnitude;
-
-    g_lastStickX.store(x);
-    g_lastStickY.store(y);
-
-    constexpr float kMaxDeflection = 32767.0f;
-    *thumbLX = static_cast<SHORT>(Clamp(x, -1.0f, 1.0f) * kMaxDeflection);
-    *thumbLY = static_cast<SHORT>(Clamp(y, -1.0f, 1.0f) * kMaxDeflection);
+    *thumbLX = core::ToStickAxis(intent.stickX);
+    *thumbLY = core::ToStickAxis(intent.stickY);
 }
 
 bool StickOutsideDeadzone(const XINPUT_GAMEPAD& pad) {
@@ -303,7 +279,10 @@ void Uninstall() {
 
 void CurrentMoveIntent(float* x, float* y) {
     if (x == nullptr || y == nullptr) return;
-    RawIntent(x, y);
+    const core::MoveIntentOutput intent =
+        core::ComputeMoveIntent(GatherIntentInput());
+    *x = intent.x;
+    *y = intent.y;
 }
 
 bool Injecting() { return g_injecting.load(); }

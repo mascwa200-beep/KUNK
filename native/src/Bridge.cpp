@@ -43,7 +43,8 @@ LuaState g_luaState;
 bool WriteFileAtomic(const std::wstring& path, const std::string& content) {
     const std::wstring temporary = path + L".tmp";
     {
-        std::ofstream stream(temporary, std::ios::binary | std::ios::trunc);
+        std::ofstream stream(temporary.c_str(),
+                             std::ios::binary | std::ios::trunc);
         if (!stream) return false;
         stream.write(content.data(),
                      static_cast<std::streamsize>(content.size()));
@@ -54,7 +55,7 @@ bool WriteFileAtomic(const std::wstring& path, const std::string& content) {
 }
 
 bool ReadFileText(const std::wstring& path, std::string* out) {
-    std::ifstream stream(path, std::ios::binary);
+    std::ifstream stream(path.c_str(), std::ios::binary);
     if (!stream) return false;
     std::ostringstream buffer;
     buffer << stream.rdbuf();
@@ -67,10 +68,8 @@ void PublishNativeState() {
     const xinput::Status padStatus = xinput::GetStatus();
     const Config& config = GetConfig();
 
-    float forward[3] = {0.0f, 0.0f, 1.0f};
-    float right[3] = {1.0f, 0.0f, 0.0f};
-    camera::GetForward(forward);
-    camera::GetRight(right);
+    const core::Vec3 forward = camera::Forward();
+    const core::Vec3 right = camera::Right();
 
     // The `moveto` mode runs in Lua but must honour the same key bindings and
     // feel as the synthetic-stick mode, so the intent is computed here once and
@@ -84,12 +83,14 @@ void PublishNativeState() {
         {"schemaVersion", 1},
         {"firstPerson", cameraStatus.firstPersonEnabled},
         {"cameraObjectResolved", cameraStatus.cameraObjectResolved},
+        {"eyePlacementActive", cameraStatus.eyePlacementActive},
+        {"eyeHeight", cameraStatus.eyeHeight},
         {"usingProbeBasis", cameraStatus.usingProbeBasis},
         {"cursorLocked", input::CursorCurrentlyLocked()},
         {"yaw", cameraStatus.yaw},
         {"pitch", cameraStatus.pitch},
-        {"forward", {forward[0], forward[1], forward[2]}},
-        {"right", {right[0], right[1], right[2]}},
+        {"forward", {forward.x, forward.y, forward.z}},
+        {"right", {right.x, right.y, right.z}},
         {"movementMode",
          config.movement.mode == MovementMode::XInput  ? "xinput"
          : config.movement.mode == MovementMode::MoveTo ? "moveto"
@@ -203,7 +204,7 @@ bool Start() {
     }
 
     g_directory = config.directory.empty() ? ScriptExtenderDataDirectory()
-                                           : config.directory;
+                                           : Utf8ToWide(config.directory);
     if (g_directory.empty()) {
         FPCAM_ERROR("bridge: could not resolve the Script Extender data "
                     "directory. Set bridge.directory in FPCamera.json to point "

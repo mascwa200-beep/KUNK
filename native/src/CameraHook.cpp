@@ -1,20 +1,19 @@
 #include "CameraHook.h"
 
+#include "Bridge.h"
 #include "Config.h"
 #include "Logger.h"
 #include "MatrixProbe.h"
 #include "MemoryScanner.h"
+#include "core/Angles.h"
+#include "core/EyePlacement.h"
 
 #include <atomic>
-#include <cmath>
 #include <mutex>
 #include <vector>
 
 namespace fpcam::camera {
 namespace {
-
-constexpr float kPi = 3.14159265358979323846f;
-constexpr float kDegToRad = kPi / 180.0f;
 
 std::mutex g_mutex;
 
@@ -32,6 +31,17 @@ uintptr_t g_cameraRoot = 0;
 bool g_cameraResolved = false;
 
 std::vector<mem::BytePatch> g_clampPatches;
+
+// Raises the viewpoint from the camera's own position to the character's eyes.
+// Owns the guard against re-reading its own writes -- see core/EyePlacement.h.
+core::EyePlacement g_eyePlacement;
+
+// The camera object the placement state belongs to. When the engine swaps
+// cameras (dialogue, cutscenes, a level load) the remembered base refers to a
+// structure that no longer exists and must be discarded.
+uintptr_t g_lastCameraObject = 0;
+std::atomic<bool> g_eyePlacementActive{false};
+std::atomic<float> g_eyeHeightInUse{0.0f};
 
 std::atomic<uint64_t> g_framesWritten{0};
 std::atomic<uint64_t> g_writeFailures{0};
@@ -147,6 +157,9 @@ void Shutdown() {
     g_cameraResolved = false;
     g_cameraRoot = 0;
     g_firstPerson.store(false);
+    g_eyePlacement.Reset();
+    g_lastCameraObject = 0;
+    g_eyePlacementActive.store(false);
 }
 
 void Rebind(const SignatureRegistry& signatures) {
@@ -157,6 +170,14 @@ void Rebind(const SignatureRegistry& signatures) {
 void SetFirstPersonEnabled(bool enabled) {
     const bool previous = g_firstPerson.exchange(enabled);
     if (previous == enabled) return;
+    {
+        // Leaving first person hands the camera back to the engine; the
+        // remembered base must not survive into the next session.
+        std::scoped_lock lock(g_mutex);
+        g_eyePlacement.Reset();
+        g_lastCameraObject = 0;
+        g_eyePlacementActive.store(false);
+    }
     FPCAM_INFO("First-person mode {}.", enabled ? "ENABLED" : "disabled");
 }
 
@@ -231,6 +252,54 @@ void OnFrame(uint64_t frameIndex) {
                             "fov");
     }
 
+    // Raise the viewpoint to the character's eyes.
+    //
+    // This is a delta on the camera's own position, which the engine updates
+    // and smooths every frame, rather than on the character position the Lua
+    // bridge publishes -- that arrives at 10 Hz and would visibly stutter while
+    // walking. The bridge supplies only the race, which selects the eye height
+    // and changes about once a session.
+    if (camera.offsets.positionX >= 0) {
+        // A new camera object means the remembered base belongs to a structure
+        // that is gone; comparing against it would be meaningless.
+        if (object != g_lastCameraObject) {
+            g_eyePlacement.Reset();
+            g_lastCameraObject = object;
+        }
+
+        const uintptr_t positionAddress =
+            object + static_cast<uintptr_t>(camera.offsets.positionX);
+
+        float raw[3] = {0.0f, 0.0f, 0.0f};
+        if (mem::SafeRead(positionAddress, raw, sizeof(raw))) {
+            core::EyePlacementInput input;
+            input.enginePosition = core::Vec3{raw[0], raw[1], raw[2]};
+            input.forward = Forward();
+            input.eyeHeight = config.EyeHeightFor(bridge::Current().race);
+            input.forwardOffset = camera.forwardOffset;
+
+            const core::EyePlacementOutput placement =
+                g_eyePlacement.Solve(input);
+            g_eyeHeightInUse.store(input.eyeHeight);
+
+            if (placement.write) {
+                const float out[3] = {placement.position.x,
+                                      placement.position.y,
+                                      placement.position.z};
+                const bool written =
+                    mem::SafeWrite(positionAddress, out, sizeof(out));
+                allOk &= written;
+                g_eyePlacementActive.store(written);
+            } else {
+                // Solve refused: the read was not a plausible position. Leaving
+                // the game's own value alone is the correct response.
+                g_eyePlacementActive.store(false);
+            }
+        } else {
+            g_eyePlacementActive.store(false);
+        }
+    }
+
     if (allOk) {
         g_framesWritten.fetch_add(1);
     } else {
@@ -247,40 +316,20 @@ void OnFrame(uint64_t frameIndex) {
 float Yaw() { return g_yaw.load(); }
 float Pitch() { return g_pitch.load(); }
 
-void GetForward(float out[3]) {
+core::Vec3 Forward() {
     // The engine's own basis is authoritative when we have it: our yaw is an
     // intention, the decoded matrix is what the camera actually did with it.
     const probe::ViewSample sample = probe::Latest();
-    if (sample.valid) {
-        out[0] = sample.forward[0];
-        out[1] = sample.forward[1];
-        out[2] = sample.forward[2];
-        return;
-    }
-
-    const float yaw = g_yaw.load() * kDegToRad;
-    const float pitch = g_pitch.load() * kDegToRad;
-    const float cosPitch = std::cos(pitch);
-    out[0] = std::sin(yaw) * cosPitch;
-    out[1] = std::sin(pitch);
-    out[2] = std::cos(yaw) * cosPitch;
+    if (sample.valid) return sample.forward;
+    return core::ForwardFromYawPitch(g_yaw.load(), g_pitch.load());
 }
 
-void GetRight(float out[3]) {
+core::Vec3 Right() {
     const probe::ViewSample sample = probe::Latest();
-    if (sample.valid) {
-        out[0] = sample.right[0];
-        out[1] = sample.right[1];
-        out[2] = sample.right[2];
-        return;
-    }
-
-    // Right is derived from yaw alone, so that strafing stays horizontal no
-    // matter how far up or down the player is looking.
-    const float yaw = g_yaw.load() * kDegToRad;
-    out[0] = std::cos(yaw);
-    out[1] = 0.0f;
-    out[2] = -std::sin(yaw);
+    if (sample.valid) return sample.right;
+    // Derived from yaw alone, so strafing stays horizontal however far up or
+    // down the player is looking.
+    return core::RightFromYaw(g_yaw.load());
 }
 
 Status GetStatus() {
@@ -291,6 +340,8 @@ Status GetStatus() {
     status.framesWritten = g_framesWritten.load();
     status.writeFailures = g_writeFailures.load();
     status.usingProbeBasis = probe::Latest().valid;
+    status.eyePlacementActive = g_eyePlacementActive.load();
+    status.eyeHeight = g_eyeHeightInUse.load();
 
     std::scoped_lock lock(g_mutex);
     status.cameraObjectResolved = g_cameraResolved && ResolveCameraObject() != 0;

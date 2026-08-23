@@ -18,6 +18,7 @@
 
 #include "Common.h"
 #include "MemoryScanner.h"
+#include "core/ResolveChain.h"
 
 #include <optional>
 #include <unordered_map>
@@ -25,29 +26,13 @@
 
 namespace fpcam {
 
-// One step in turning a matched instruction address into the address the
-// feature actually wants (a global, a function entry, a vtable slot).
-enum class ResolveOp {
-    // addr += value
-    Add,
-    // addr -= value
-    Sub,
-    // addr = *(uintptr_t*)addr
-    Deref,
-    // RIP-relative: read the int32 displacement at (addr + value) and compute
-    // addr + instructionLength + displacement. This is how nearly every access
-    // to a global in x64 code is encoded, e.g. `mov rax, [rip+0x1234]`.
-    Rip32,
-    // Read an int32 at (addr + value) and add it to addr. For jump tables and
-    // relative call targets where the instruction length is already folded in.
-    Rel32,
-};
-
-struct ResolveStep {
-    ResolveOp op = ResolveOp::Add;
-    int64_t value = 0;            // byte offset within the matched instruction
-    int32_t instructionLength = 0;  // total length, for Rip32
-};
+// The resolve op-chain -- the arithmetic that turns a matched instruction into
+// the address a feature wants -- lives in core/ResolveChain.h, where the test
+// suite drives it against a fake address space. RIP-relative sign extension in
+// particular is easy to get wrong in a way that still produces a plausible
+// address, so it is pinned there rather than trusted here.
+using core::ResolveOp;
+using core::ResolveStep;
 
 struct SignatureDef {
     std::string name;

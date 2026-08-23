@@ -35,107 +35,6 @@ bool g_installed = false;
 bool g_discovery = false;
 uint64_t g_frame = 0;
 
-// --- Matrix maths ---------------------------------------------------------
-
-constexpr float kPi = 3.14159265358979323846f;
-
-struct Vec3 {
-    float x = 0.0f, y = 0.0f, z = 0.0f;
-};
-
-float Dot(const Vec3& a, const Vec3& b) {
-    return a.x * b.x + a.y * b.y + a.z * b.z;
-}
-
-float Length(const Vec3& v) { return std::sqrt(Dot(v, v)); }
-
-bool Finite(float v) { return std::isfinite(v); }
-
-// A view matrix is a rigid transform: its rotation part is orthonormal. That
-// is a strong, cheap discriminator -- almost nothing else uploaded to a
-// constant buffer satisfies it, and world or model matrices carry scale that
-// breaks it.
-bool IsOrthonormal(const Vec3& a, const Vec3& b, const Vec3& c,
-                   float tolerance) {
-    const float la = Length(a), lb = Length(b), lc = Length(c);
-    if (std::fabs(la - 1.0f) > tolerance) return false;
-    if (std::fabs(lb - 1.0f) > tolerance) return false;
-    if (std::fabs(lc - 1.0f) > tolerance) return false;
-    if (std::fabs(Dot(a, b)) > tolerance) return false;
-    if (std::fabs(Dot(a, c)) > tolerance) return false;
-    if (std::fabs(Dot(b, c)) > tolerance) return false;
-    return true;
-}
-
-// Decodes a 4x4 float block, trying both of the layouts a D3D engine can
-// plausibly upload: the row-vector convention D3DX/DirectXMath produce, and its
-// transpose, which is what HLSL's default column-major packing wants.
-bool DecodeViewMatrix(const float m[16], ViewSample* out) {
-    for (int i = 0; i < 16; ++i) {
-        if (!Finite(m[i]) || std::fabs(m[i]) > 1.0e6f) return false;
-    }
-
-    constexpr float kTolerance = 0.01f;
-
-    // Layout A -- row-vector world-to-view (v' = v * M):
-    //   basis vectors run down the columns, translation is the last row.
-    const bool lastColumnIsIdentity =
-        std::fabs(m[3]) < kTolerance && std::fabs(m[7]) < kTolerance &&
-        std::fabs(m[11]) < kTolerance && std::fabs(m[15] - 1.0f) < kTolerance;
-
-    // Layout B -- the transpose: translation in the last column.
-    const bool lastRowIsIdentity =
-        std::fabs(m[12]) < kTolerance && std::fabs(m[13]) < kTolerance &&
-        std::fabs(m[14]) < kTolerance && std::fabs(m[15] - 1.0f) < kTolerance;
-
-    Vec3 right, up, forward, translation;
-
-    if (lastColumnIsIdentity) {
-        right   = {m[0], m[4], m[8]};
-        up      = {m[1], m[5], m[9]};
-        forward = {m[2], m[6], m[10]};
-        translation = {m[12], m[13], m[14]};
-    } else if (lastRowIsIdentity) {
-        right   = {m[0], m[1], m[2]};
-        up      = {m[4], m[5], m[6]};
-        forward = {m[8], m[9], m[10]};
-        translation = {m[3], m[7], m[11]};
-    } else {
-        return false;
-    }
-
-    if (!IsOrthonormal(right, up, forward, kTolerance)) return false;
-
-    // The view matrix maps world to camera space, so the eye position is the
-    // negated translation expressed back in world axes.
-    const Vec3 eye = {
-        -(translation.x * right.x + translation.y * up.x + translation.z * forward.x),
-        -(translation.x * right.y + translation.y * up.y + translation.z * forward.y),
-        -(translation.x * right.z + translation.y * up.z + translation.z * forward.z),
-    };
-
-    // A camera 200 km from the origin is a decoding error, not a camera.
-    if (std::fabs(eye.x) > 200000.0f || std::fabs(eye.y) > 200000.0f ||
-        std::fabs(eye.z) > 200000.0f) {
-        return false;
-    }
-
-    out->valid = true;
-    out->position[0] = eye.x; out->position[1] = eye.y; out->position[2] = eye.z;
-    out->right[0] = right.x;  out->right[1] = right.y;  out->right[2] = right.z;
-    out->up[0] = up.x;        out->up[1] = up.y;        out->up[2] = up.z;
-    out->forward[0] = forward.x; out->forward[1] = forward.y;
-    out->forward[2] = forward.z;
-
-    // Y-up world assumed, which is what Larian's engine uses. Yaw is measured
-    // around the vertical axis from +Z; the Lua side compares against the
-    // game's own convention and the config carries a correction if they differ.
-    out->yawDegrees = std::atan2(forward.x, forward.z) * 180.0f / kPi;
-    out->pitchDegrees =
-        std::asin(Clamp(forward.y, -1.0f, 1.0f)) * 180.0f / kPi;
-    return true;
-}
-
 // --- Candidate tracking ---------------------------------------------------
 
 struct CandidateKey {
@@ -215,15 +114,6 @@ uint32_t ConstantBufferSize(ID3D11Resource* resource) {
     return size;
 }
 
-float BasisDelta(const ViewSample& a, const ViewSample& b) {
-    return std::fabs(a.forward[0] - b.forward[0]) +
-           std::fabs(a.forward[1] - b.forward[1]) +
-           std::fabs(a.forward[2] - b.forward[2]) +
-           std::fabs(a.position[0] - b.position[0]) * 0.01f +
-           std::fabs(a.position[1] - b.position[1]) * 0.01f +
-           std::fabs(a.position[2] - b.position[2]) * 0.01f;
-}
-
 // Walks a written constant-buffer range looking for 4x4 float blocks that
 // decode as a view matrix, and folds each hit into the candidate table.
 void InspectBuffer(const void* resource, const void* data, size_t size) {
@@ -239,7 +129,9 @@ void InspectBuffer(const void* resource, const void* data, size_t size) {
         ::memcpy(matrix, bytes + offset, sizeof(matrix));
 
         ViewSample sample;
-        if (!DecodeViewMatrix(matrix, &sample)) continue;
+        if (core::DecodeViewMatrix(matrix, &sample) != core::DecodeResult::Ok) {
+            continue;
+        }
         sample.frame = g_frame;
 
         const CandidateKey key{resource, static_cast<uint32_t>(offset)};
@@ -268,7 +160,7 @@ void InspectBuffer(const void* resource, const void* data, size_t size) {
         }
 
         Candidate& candidate = it->second;
-        candidate.motion += BasisDelta(candidate.sample, sample);
+        candidate.motion += core::BasisDelta(candidate.sample, sample);
         candidate.sample = sample;
         candidate.lastSeenFrame = g_frame;
         ++candidate.hitCount;
@@ -522,7 +414,7 @@ void LogCandidates() {
                    "pos=({:8.2f},{:8.2f},{:8.2f})  yaw={:7.2f} pitch={:6.2f}",
                    (hasLock && key == locked) ? "->" : "  ", key.resource,
                    key.byteOffset, candidate.hitCount, candidate.motion,
-                   s.position[0], s.position[1], s.position[2], s.yawDegrees,
+                   s.position.x, s.position.y, s.position.z, s.yawDegrees,
                    s.pitchDegrees);
     }
     FPCAM_INFO("  '->' marks the buffer currently used as the camera basis.");

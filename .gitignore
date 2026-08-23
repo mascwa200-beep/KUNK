@@ -19,3 +19,6 @@ CMakeSettings.json
 # Runtime artifacts produced next to the DLL
 FPCamera.log
 bridge_*.json
+
+# Vendored dependency, fetched by CMake when absent (see root CMakeLists.txt).
+third_party/

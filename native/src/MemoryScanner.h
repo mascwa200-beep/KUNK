@@ -12,6 +12,7 @@
 #pragma once
 
 #include "Common.h"
+#include "core/PatternScan.h"
 
 #include <vector>
 
@@ -36,18 +37,11 @@ Region ModuleImage(const wchar_t* moduleName);
 // Falls back to the full image if the section name is not found.
 Region ModuleSection(const wchar_t* moduleName, std::string_view sectionName);
 
-// A parsed byte pattern. Wildcards are per-byte: "??" or "?" match anything.
-// Accepts IDA-style ("48 8B 05 ?? ?? ?? ??") input; whitespace is free-form.
-struct Pattern {
-    std::vector<uint8_t> bytes;
-    std::vector<uint8_t> mask;  // 1 = byte must match, 0 = wildcard
-    std::string error;          // empty when parsing succeeded
-
-    bool Valid() const { return error.empty() && !bytes.empty(); }
-    size_t Size() const { return bytes.size(); }
-};
-
-Pattern ParsePattern(std::string_view text);
+// Pattern parsing and matching live in core/PatternScan.h, which has no
+// platform dependency and is driven directly by the test suite. They are
+// re-exported here so the existing call sites are unchanged.
+using core::ParsePattern;
+using core::Pattern;
 
 // Scans `region` and returns every match, stopping once `maxHits` are found.
 //

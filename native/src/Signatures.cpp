@@ -18,31 +18,9 @@ namespace {
 
 using json = nlohmann::json;
 
-ResolveOp ResolveOpFromName(std::string_view name, bool* ok) {
-    *ok = true;
-    if (name == "add")   return ResolveOp::Add;
-    if (name == "sub")   return ResolveOp::Sub;
-    if (name == "deref") return ResolveOp::Deref;
-    if (name == "rip32") return ResolveOp::Rip32;
-    if (name == "rel32") return ResolveOp::Rel32;
-    *ok = false;
-    return ResolveOp::Add;
-}
-
-const char* ResolveOpName(ResolveOp op) {
-    switch (op) {
-        case ResolveOp::Add:   return "add";
-        case ResolveOp::Sub:   return "sub";
-        case ResolveOp::Deref: return "deref";
-        case ResolveOp::Rip32: return "rip32";
-        case ResolveOp::Rel32: return "rel32";
-    }
-    return "?";
-}
-
 std::string ReadWholeFile(const std::wstring& path, bool* ok) {
     *ok = false;
-    std::ifstream stream(path, std::ios::binary);
+    std::ifstream stream(path.c_str(), std::ios::binary);
     if (!stream) return {};
     std::ostringstream buffer;
     buffer << stream.rdbuf();
@@ -131,10 +109,9 @@ bool SignatureRegistry::Load(const std::wstring& fileName) {
         if (const auto it = entry.find("resolve");
             it != entry.end() && it->is_array()) {
             for (const json& stepJson : *it) {
-                bool opOk = false;
                 ResolveStep step;
-                step.op = ResolveOpFromName(stepJson.value("op", std::string()),
-                                            &opOk);
+                const bool opOk = core::ResolveOpFromName(
+                    stepJson.value("op", std::string()), &step.op);
                 if (!opOk) {
                     FPCAM_WARN("Signature '{}': unknown resolve op '{}'; the "
                                "signature will be skipped.",
@@ -203,67 +180,20 @@ SignatureResult SignatureRegistry::ResolveOne(const SignatureDef& def) const {
         address = hits.front();
     }
 
-    // Apply the resolve chain.
-    for (size_t i = 0; i < def.resolve.size(); ++i) {
-        const ResolveStep& step = def.resolve[i];
-        switch (step.op) {
-            case ResolveOp::Add:
-                address += static_cast<uintptr_t>(step.value);
-                break;
+    // Apply the resolve chain. The arithmetic is core::ApplyResolveChain; this
+    // layer only supplies the guarded reader and turns a failure into a message
+    // the scan report can show.
+    const core::ResolveOutcome outcome = core::ApplyResolveChain(
+        address, def.resolve,
+        [](uintptr_t from, void* destination, size_t size) {
+            return mem::SafeRead(from, destination, size);
+        });
 
-            case ResolveOp::Sub:
-                address -= static_cast<uintptr_t>(step.value);
-                break;
-
-            case ResolveOp::Deref: {
-                uintptr_t pointer = 0;
-                if (!mem::Read(address, &pointer)) {
-                    result.error = "resolve step " + std::to_string(i) +
-                                   " (deref) read unmapped memory at " +
-                                   mem::DescribeAddress(address);
-                    return result;
-                }
-                address = pointer;
-                break;
-            }
-
-            case ResolveOp::Rip32: {
-                if (step.instructionLength <= 0) {
-                    result.error = "resolve step " + std::to_string(i) +
-                                   " (rip32) needs a positive instructionLength";
-                    return result;
-                }
-                int32_t displacement = 0;
-                const uintptr_t site =
-                    address + static_cast<uintptr_t>(step.value);
-                if (!mem::Read(site, &displacement)) {
-                    result.error = "resolve step " + std::to_string(i) +
-                                   " (rip32) read unmapped memory at " +
-                                   mem::DescribeAddress(site);
-                    return result;
-                }
-                address = address +
-                          static_cast<uintptr_t>(step.instructionLength) +
-                          static_cast<uintptr_t>(
-                              static_cast<int64_t>(displacement));
-                break;
-            }
-
-            case ResolveOp::Rel32: {
-                int32_t offset = 0;
-                const uintptr_t site =
-                    address + static_cast<uintptr_t>(step.value);
-                if (!mem::Read(site, &offset)) {
-                    result.error = "resolve step " + std::to_string(i) +
-                                   " (rel32) read unmapped memory at " +
-                                   mem::DescribeAddress(site);
-                    return result;
-                }
-                address += static_cast<uintptr_t>(static_cast<int64_t>(offset));
-                break;
-            }
-        }
+    if (!outcome.ok) {
+        result.error = outcome.error;
+        return result;
     }
+    address = outcome.address;
 
     if (address == 0) {
         result.error = "resolved to a null address";
@@ -326,7 +256,7 @@ void SignatureRegistry::LogReport() const {
         std::string chain;
         for (const ResolveStep& step : def.resolve) {
             if (!chain.empty()) chain += " -> ";
-            chain += ResolveOpName(step.op);
+            chain += core::ResolveOpName(step.op);
             chain += "(" + std::to_string(step.value);
             if (step.op == ResolveOp::Rip32) {
                 chain += ", len=" + std::to_string(step.instructionLength);

@@ -28,26 +28,17 @@
 #pragma once
 
 #include "Common.h"
+#include "core/ViewMatrix.h"
 
 #include <cstdint>
 
 namespace fpcam::probe {
 
-// A decoded view matrix: the camera's world-space position and orthonormal
-// basis, plus the Euler angles derived from it.
-struct ViewSample {
-    bool valid = false;
-
-    float position[3] = {0.0f, 0.0f, 0.0f};
-    float right[3]    = {1.0f, 0.0f, 0.0f};
-    float up[3]       = {0.0f, 1.0f, 0.0f};
-    float forward[3]  = {0.0f, 0.0f, 1.0f};
-
-    float yawDegrees   = 0.0f;
-    float pitchDegrees = 0.0f;
-
-    uint64_t frame = 0;  // frame index the sample was taken on
-};
+// The decoded sample and the decoder itself live in core/ViewMatrix.h, where
+// the test suite exercises them against composed matrices, projection
+// matrices, scaled world matrices and 300,000 fuzzed ones. This module is the
+// Direct3D plumbing that feeds them.
+using core::ViewSample;
 
 // Detours ID3D11DeviceContext::Map/Unmap/UpdateSubresource on the vtable
 // harvested by D3D11Hook. Must be called after d3d11::Install().

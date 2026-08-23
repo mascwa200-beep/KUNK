@@ -13,6 +13,7 @@
 
 #include "Common.h"
 #include "Signatures.h"
+#include "core/Vec3.h"
 
 namespace fpcam::camera {
 
@@ -21,8 +22,10 @@ struct Status {
     bool cameraObjectResolved = false;
     bool clampPatchesApplied = false;
     bool usingProbeBasis = false;   // camera basis is coming from MatrixProbe
+    bool eyePlacementActive = false;  // the viewpoint is being raised to the eyes
     float yaw = 0.0f;
     float pitch = 0.0f;
+    float eyeHeight = 0.0f;         // the value in use, after the race lookup
     uint64_t framesWritten = 0;
     uint64_t writeFailures = 0;
 };
@@ -56,8 +59,8 @@ float Pitch();
 // falls back to deriving vectors from our own yaw/pitch when no matrix has
 // been identified. Movement code uses this, which is why WASD works before any
 // signature has been resolved.
-void GetForward(float out[3]);
-void GetRight(float out[3]);
+core::Vec3 Forward();
+core::Vec3 Right();
 
 Status GetStatus();
 

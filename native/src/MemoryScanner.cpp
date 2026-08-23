@@ -2,7 +2,7 @@
 
 #include "Logger.h"
 
-#include <Psapi.h>
+#include <psapi.h>
 
 #include <cstdio>
 #include <cstring>
@@ -10,16 +10,14 @@
 namespace fpcam::mem {
 namespace {
 
-int HexDigit(char c) {
-    if (c >= '0' && c <= '9') return c - '0';
-    if (c >= 'a' && c <= 'f') return c - 'a' + 10;
-    if (c >= 'A' && c <= 'F') return c - 'A' + 10;
-    return -1;
-}
-
 // Raw copy behind a structured-exception guard. Kept in its own function with
 // no C++ objects in scope, which is what MSVC requires of a __try block that
 // coexists with unwindable types elsewhere in the translation unit.
+//
+// The guard matters because a page can be unmapped by another thread between
+// the VirtualQuery that validated it and the copy itself, and this runs inside
+// somebody's live game.
+#if defined(_MSC_VER)
 bool GuardedCopy(void* destination, const void* source, size_t size) {
     __try {
         ::memcpy(destination, source, size);
@@ -28,6 +26,17 @@ bool GuardedCopy(void* destination, const void* source, size_t size) {
         return false;
     }
 }
+#else
+// Structured exception handling is an MSVC feature. Other toolchains are only
+// used to cross-check that this code compiles -- the shipped DLL is always
+// built with MSVC -- so they get the unguarded copy. The VirtualQuery
+// validation in the caller still applies; what is lost is the narrow race
+// described above.
+bool GuardedCopy(void* destination, const void* source, size_t size) {
+    ::memcpy(destination, source, size);
+    return true;
+}
+#endif
 
 // Walks the page table across [address, address+size) and checks every region
 // against `allowedProtect`.
@@ -109,104 +118,24 @@ Region ModuleSection(const wchar_t* moduleName, std::string_view sectionName) {
     return image;
 }
 
-Pattern ParsePattern(std::string_view text) {
-    Pattern pattern;
-
-    size_t i = 0;
-    while (i < text.size()) {
-        const char c = text[i];
-        if (c == ' ' || c == '\t' || c == '\r' || c == '\n') {
-            ++i;
-            continue;
-        }
-
-        if (c == '?') {
-            // Accept both "?" and "??" for one wildcard byte.
-            pattern.bytes.push_back(0);
-            pattern.mask.push_back(0);
-            ++i;
-            if (i < text.size() && text[i] == '?') ++i;
-            continue;
-        }
-
-        const int high = HexDigit(c);
-        if (high < 0) {
-            pattern.error = "unexpected character '" + std::string(1, c) +
-                            "' at offset " + std::to_string(i);
-            return pattern;
-        }
-        if (i + 1 >= text.size()) {
-            pattern.error = "pattern ends with a single hex digit";
-            return pattern;
-        }
-        const int low = HexDigit(text[i + 1]);
-        if (low < 0) {
-            pattern.error = "byte at offset " + std::to_string(i) +
-                            " is not two hex digits";
-            return pattern;
-        }
-
-        pattern.bytes.push_back(static_cast<uint8_t>((high << 4) | low));
-        pattern.mask.push_back(1);
-        i += 2;
-    }
-
-    if (pattern.bytes.empty()) {
-        pattern.error = "pattern is empty";
-        return pattern;
-    }
-
-    bool anyFixed = false;
-    for (const uint8_t m : pattern.mask) {
-        if (m) { anyFixed = true; break; }
-    }
-    if (!anyFixed) {
-        pattern.error = "pattern is entirely wildcards";
-    }
-    return pattern;
-}
-
 std::vector<uintptr_t> Scan(const Region& region, const Pattern& pattern,
                             size_t maxHits) {
-    std::vector<uintptr_t> hits;
-    if (!region.Valid() || !pattern.Valid()) return hits;
-    if (pattern.Size() > region.size) return hits;
+    // The matching itself is core::ScanBuffer, which the test suite checks
+    // against a brute-force reference over random data. All this layer adds is
+    // turning a mapped module region into a buffer and offsets back into
+    // addresses.
+    std::vector<uintptr_t> addresses;
+    if (!region.Valid()) return addresses;
 
-    // Anchor on the first non-wildcard byte so the outer loop can skip with
-    // memchr instead of testing every offset. Signatures usually start with a
-    // fixed opcode, so in practice the anchor is at index 0.
-    size_t anchor = 0;
-    while (anchor < pattern.mask.size() && pattern.mask[anchor] == 0) ++anchor;
-    const uint8_t anchorByte = pattern.bytes[anchor];
+    const std::vector<size_t> offsets = core::ScanBuffer(
+        reinterpret_cast<const uint8_t*>(region.base), region.size, pattern,
+        maxHits);
 
-    const auto* const begin = reinterpret_cast<const uint8_t*>(region.base);
-    const size_t lastStart = region.size - pattern.Size();
-
-    size_t offset = 0;
-    while (offset <= lastStart) {
-        const size_t searchFrom = offset + anchor;
-        const size_t searchLength = (lastStart + anchor) - searchFrom + 1;
-        const auto* found = static_cast<const uint8_t*>(
-            ::memchr(begin + searchFrom, anchorByte, searchLength));
-        if (found == nullptr) break;
-
-        const size_t candidate = static_cast<size_t>(found - begin) - anchor;
-
-        bool matched = true;
-        for (size_t k = 0; k < pattern.Size(); ++k) {
-            if (pattern.mask[k] && begin[candidate + k] != pattern.bytes[k]) {
-                matched = false;
-                break;
-            }
-        }
-        if (matched) {
-            hits.push_back(region.base + candidate);
-            if (hits.size() >= maxHits) break;
-        }
-        offset = candidate + 1;
+    addresses.reserve(offsets.size());
+    for (const size_t offset : offsets) {
+        addresses.push_back(region.base + offset);
     }
-
-    return hits;
+    return addresses;
 }
 
 bool IsReadable(uintptr_t address, size_t size) {

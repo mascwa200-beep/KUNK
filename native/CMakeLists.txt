@@ -5,24 +5,13 @@
 # ---------------------------------------------------------------------------
 include(FetchContent)
 
-set(FETCHCONTENT_QUIET OFF)
-
 # MinHook -- the trampoline hooking library used for every function detour.
 FetchContent_Declare(minhook
     GIT_REPOSITORY https://github.com/TsudaKageyu/minhook.git
     GIT_TAG        v1.3.3
     GIT_SHALLOW    TRUE)
 
-# nlohmann/json -- parses FPCamera.json and FPCamera.signatures.json, and
-# serialises the Lua bridge files.
-set(JSON_BuildTests OFF CACHE INTERNAL "")
-set(JSON_Install OFF CACHE INTERNAL "")
-FetchContent_Declare(nlohmann_json
-    GIT_REPOSITORY https://github.com/nlohmann/json.git
-    GIT_TAG        v3.11.3
-    GIT_SHALLOW    TRUE)
-
-FetchContent_MakeAvailable(minhook nlohmann_json)
+FetchContent_MakeAvailable(minhook)
 
 add_library(FPCamera SHARED
     src/main.cpp
@@ -36,13 +25,17 @@ add_library(FPCamera SHARED
     src/CameraHook.cpp
     src/InputHook.cpp
     src/XInputSpoof.cpp
-    src/Bridge.cpp)
+    src/Bridge.cpp
+    src/SelfTest.cpp)
 
 target_include_directories(FPCamera PRIVATE src)
 
 target_link_libraries(FPCamera PRIVATE
     minhook
-    nlohmann_json::nlohmann_json
+    # fpcam_core and fpcam_config are the same sources the host test suite
+    # links, so what is tested is what ships.
+    fpcam_core
+    fpcam_config
     d3d11
     dxgi
     dxguid
@@ -50,7 +43,13 @@ target_link_libraries(FPCamera PRIVATE
     shlwapi
     shell32
     user32
-    version)
+    version
+    # SHGetKnownFolderPath's FOLDERID_* GUIDs live in uuid, and the call itself
+    # needs the COM allocator from ole32. CMake's default MSVC library set
+    # happens to include both, but relying on that is how a link breaks the
+    # first time somebody changes generators.
+    uuid
+    ole32)
 
 target_compile_definitions(FPCamera PRIVATE
     WIN32_LEAN_AND_MEAN
