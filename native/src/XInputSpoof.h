@@ -26,6 +26,15 @@ namespace fpcam::xinput {
 bool Install();
 void Uninstall();
 
+// Raw WASD intent in stick space: x is strafe (+right), y is forward
+// (+forward), each in [-1, 1] and jointly normalised so diagonals are not
+// faster. Zero when the game does not have focus.
+//
+// Published over the bridge so the `moveto` movement mode can use the same key
+// bindings and the same feel. It is computed from the key state directly, so it
+// works whether or not the XInput hook installed.
+void CurrentMoveIntent(float* x, float* y);
+
 // True when synthetic input is currently being injected, i.e. first-person is
 // on, the movement mode is `xinput`, and no physical controller is driving.
 bool Injecting();

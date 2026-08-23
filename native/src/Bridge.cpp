@@ -21,7 +21,15 @@ namespace {
 using json = nlohmann::json;
 
 constexpr wchar_t kNativeToLuaFile[] = L"fpcamera_native.json";
-constexpr wchar_t kLuaToNativeFile[] = L"fpcamera_lua.json";
+
+// Two inbound files rather than one, because the two halves of the Lua mod
+// know different things and run in different contexts. The server side has the
+// controlled character, its race and its position; the client side is the only
+// one that can see whether a UI panel is open. Giving each its own file avoids
+// two writers racing over one, and avoids making the whole thing depend on
+// SE's client-to-server messaging working on the user's version.
+constexpr wchar_t kServerStateFile[] = L"fpcamera_lua.json";
+constexpr wchar_t kClientStateFile[] = L"fpcamera_ui.json";
 
 std::wstring g_directory;
 std::thread g_thread;
@@ -64,6 +72,14 @@ void PublishNativeState() {
     camera::GetForward(forward);
     camera::GetRight(right);
 
+    // The `moveto` mode runs in Lua but must honour the same key bindings and
+    // feel as the synthetic-stick mode, so the intent is computed here once and
+    // published rather than being guessed at on the Lua side (which cannot read
+    // the keyboard at all in the server context).
+    float intentX = 0.0f;
+    float intentY = 0.0f;
+    xinput::CurrentMoveIntent(&intentX, &intentY);
+
     const json document = {
         {"schemaVersion", 1},
         {"firstPerson", cameraStatus.firstPersonEnabled},
@@ -79,6 +95,7 @@ void PublishNativeState() {
          : config.movement.mode == MovementMode::MoveTo ? "moveto"
                                                         : "none"},
         {"xinputInjecting", padStatus.injecting},
+        {"moveIntent", {intentX, intentY}},
         {"moveToDistance", config.movement.moveToDistance},
         {"moveToRateHz", config.movement.moveToRateHz},
         {"interactAssist", true},
@@ -97,36 +114,55 @@ void PublishNativeState() {
     }
 }
 
-void ConsumeLuaState() {
+// Parses one inbound file into `state`, returning false if it was absent or
+// mid-write. A torn read is normal at 10 Hz and is not worth logging.
+bool MergeStateFile(const std::wstring& fileName, LuaState* state) {
     std::string content;
-    if (!ReadFileText(g_directory + kLuaToNativeFile, &content)) return;
-    if (content.empty()) return;
+    if (!ReadFileText(g_directory + fileName, &content)) return false;
+    if (content.empty()) return false;
 
     json document;
     try {
         document = json::parse(content);
     } catch (const json::exception&) {
-        // A torn read is normal if the Lua side is mid-write; the next tick
-        // picks it up. Not worth logging at 10 Hz.
-        return;
+        return false;
     }
 
-    LuaState state;
-    state.valid = true;
-    state.uiOpen = document.value("uiOpen", false);
-    state.inDialog = document.value("inDialog", false);
-    state.inCombat = document.value("inCombat", false);
-    state.controlledCharacter =
-        document.value("controlledCharacter", std::string());
-    state.race = document.value("race", std::string());
-    state.sequence = document.value("sequence", uint64_t{0});
+    state->valid = true;
+
+    // Each key is only adopted if the file actually carries it, so the two
+    // sources cannot clobber each other's fields with defaults.
+    if (document.contains("uiOpen"))   state->uiOpen = document["uiOpen"].get<bool>();
+    if (document.contains("inDialog")) state->inDialog = document["inDialog"].get<bool>();
+    if (document.contains("inCombat")) state->inCombat = document["inCombat"].get<bool>();
+    if (document.contains("controlledCharacter")) {
+        state->controlledCharacter = document["controlledCharacter"].get<std::string>();
+    }
+    if (document.contains("race")) state->race = document["race"].get<std::string>();
+    if (document.contains("sequence")) {
+        state->sequence = document["sequence"].get<uint64_t>();
+    }
 
     if (const auto it = document.find("position");
         it != document.end() && it->is_array() && it->size() == 3) {
         for (size_t i = 0; i < 3; ++i) {
-            state.characterPosition[i] = (*it)[i].get<float>();
+            state->characterPosition[i] = (*it)[i].get<float>();
         }
     }
+    return true;
+}
+
+void ConsumeLuaState() {
+    LuaState state;
+    {
+        std::scoped_lock lock(g_stateMutex);
+        state = g_luaState;   // start from the last known state
+    }
+
+    bool any = false;
+    any |= MergeStateFile(kServerStateFile, &state);
+    any |= MergeStateFile(kClientStateFile, &state);
+    if (!any) return;
 
     {
         std::scoped_lock lock(g_stateMutex);

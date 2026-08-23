@@ -66,23 +66,36 @@ bool KeyDown(int virtualKey) {
 // camera, so "W" means "the direction the camera is facing" without this code
 // knowing anything about the camera at all. That is the entire reason this
 // mode exists.
+// Raw WASD intent, before any deadzone shaping. Shared by the synthetic stick
+// and by the bridge, so both movement modes read the same keys.
+float RawIntent(float* x, float* y) {
+    const MovementConfig& movement = GetConfig().movement;
+
+    *x = 0.0f;
+    *y = 0.0f;
+    if (!GameHasFocus()) return 0.0f;
+
+    if (KeyDown(movement.keyForward)) *y += 1.0f;
+    if (KeyDown(movement.keyBack))    *y -= 1.0f;
+    if (KeyDown(movement.keyRight))   *x += 1.0f;
+    if (KeyDown(movement.keyLeft))    *x -= 1.0f;
+
+    // Normalise so diagonals are not faster than the cardinals, which is what
+    // a real stick would do at full deflection.
+    const float length = std::sqrt(*x * *x + *y * *y);
+    if (length > 1.0f) {
+        *x /= length;
+        *y /= length;
+    }
+    return length > 1.0f ? 1.0f : length;
+}
+
 void BuildStick(SHORT* thumbLX, SHORT* thumbLY) {
     const MovementConfig& movement = GetConfig().movement;
 
     float x = 0.0f;
     float y = 0.0f;
-    if (KeyDown(movement.keyForward)) y += 1.0f;
-    if (KeyDown(movement.keyBack))    y -= 1.0f;
-    if (KeyDown(movement.keyRight))   x += 1.0f;
-    if (KeyDown(movement.keyLeft))    x -= 1.0f;
-
-    // Normalise so diagonals are not faster than the cardinals, which is what
-    // a real stick would do at full deflection.
-    const float length = std::sqrt(x * x + y * y);
-    if (length > 1.0f) {
-        x /= length;
-        y /= length;
-    }
+    const float length = RawIntent(&x, &y);
 
     float magnitude = KeyDown(movement.keyWalk) ? movement.walkMultiplier : 1.0f;
 
@@ -286,6 +299,11 @@ void Uninstall() {
     g_installed = false;
     g_injecting.store(false);
     FPCAM_INFO("xinput: hooks removed.");
+}
+
+void CurrentMoveIntent(float* x, float* y) {
+    if (x == nullptr || y == nullptr) return;
+    RawIntent(x, y);
 }
 
 bool Injecting() { return g_injecting.load(); }
