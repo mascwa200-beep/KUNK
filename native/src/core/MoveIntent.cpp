@@ -1,5 +1,7 @@
 #include "MoveIntent.h"
 
+#include <cmath>
+
 namespace fpcam::core {
 
 MoveIntentOutput ComputeMoveIntent(const MoveIntentInput& input) {

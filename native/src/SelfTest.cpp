@@ -15,6 +15,7 @@
 #include "core/ResolveChain.h"
 #include "core/ViewMatrix.h"
 
+#include <cmath>
 #include <cstdio>
 #include <fstream>
 

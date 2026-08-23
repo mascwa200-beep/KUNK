@@ -1,5 +1,7 @@
 #include "ViewMatrix.h"
 
+#include <cmath>
+
 namespace fpcam::core {
 namespace {
 

@@ -13,6 +13,8 @@
 
 #include "core/EyePlacement.h"
 
+#include <cmath>
+#include <limits>
 #include <random>
 
 using namespace fpcam::core;

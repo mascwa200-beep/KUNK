@@ -21,6 +21,7 @@
 #include "Angles.h"
 #include "Vec3.h"
 
+#include <cmath>
 #include <cstdint>
 
 namespace fpcam::core {

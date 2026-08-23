@@ -10,6 +10,7 @@
 
 #include "Config.h"
 
+#include <cmath>
 #include <random>
 
 using namespace fpcam;

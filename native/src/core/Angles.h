@@ -14,6 +14,8 @@
 
 #include "Vec3.h"
 
+#include <cmath>
+
 namespace fpcam::core {
 
 inline constexpr float kPi = 3.14159265358979323846f;

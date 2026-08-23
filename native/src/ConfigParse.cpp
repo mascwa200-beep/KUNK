@@ -13,6 +13,7 @@
 // parsing fills a scratch copy that is only committed on success.
 #include "Config.h"
 
+#include <cmath>
 #include <nlohmann/json.hpp>
 
 #include <cstdlib>

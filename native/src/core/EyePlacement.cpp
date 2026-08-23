@@ -1,5 +1,7 @@
 #include "EyePlacement.h"
 
+#include <cmath>
+
 namespace fpcam::core {
 namespace {
 

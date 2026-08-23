@@ -8,6 +8,8 @@
 
 #include "core/MoveIntent.h"
 
+#include <cmath>
+
 using namespace fpcam::core;
 
 namespace {

@@ -9,6 +9,8 @@
 
 #include "core/PatternScan.h"
 
+#include <cstdio>
+#include <initializer_list>
 #include <random>
 #include <vector>
 
