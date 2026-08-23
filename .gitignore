@@ -1,0 +1,21 @@
+# Build output
+build/
+out/
+cmake-build-*/
+_deps/
+*.dll
+*.pdb
+*.lib
+*.exp
+*.obj
+*.ilk
+
+# IDE
+.vs/
+.vscode/
+*.user
+CMakeSettings.json
+
+# Runtime artifacts produced next to the DLL
+FPCamera.log
+bridge_*.json
