@@ -1,0 +1,201 @@
+// FPCamera.json -- runtime configuration for FPCamera.dll.
+//
+// Install location: <Baldur's Gate 3>/bin/NativeMods/FPCamera.json
+// Reload without restarting the game with the reloadConfig hotkey (F4 below).
+//
+// // and /* */ comments are allowed here; this file is parsed leniently.
+{
+  "schemaVersion": 1,
+
+  // Master switch. false leaves the game completely untouched.
+  "enabled": true,
+
+  "logging": {
+    // trace | debug | info | warn | error | off
+    // Use "debug" while setting up signatures; "info" for normal play.
+    "level": "info",
+    "file": "FPCamera.log",
+    // Allocates a console window next to the game. Handy while hunting
+    // signatures, annoying otherwise.
+    "console": false
+  },
+
+  "hotkeys": {
+    "toggleFirstPerson": "VK_F1",
+    // Releases the cursor so you can use the inventory by hand. The Lua mod
+    // does this automatically too; this is the manual override.
+    "toggleCursorLock": "VK_F2",
+    // Turns on view-matrix discovery logging and dumps the candidate table.
+    "toggleDiscovery": "VK_F3",
+    "reloadConfig": "VK_F4",
+    // Runs the in-game self-test and writes FPCamera.selftest.log: which hooks
+    // installed, whether the scanner works against real memory, whether the
+    // pointer chain resolves, whether the Lua side is connected. Run this first
+    // when something is not behaving.
+    "runSelfTest": "VK_F7",
+    // Turns everything off at once, for when something goes wrong.
+    "panicDisable": "VK_F8"
+  },
+
+  "camera": {
+    // postWrite  -- overwrite pitch/yaw/zoom every frame after the game has
+    //               clamped them. Needs no extra signatures. Default.
+    // patchClamp -- NOP out the clamp instructions themselves. Cleaner, but
+    //               requires verified signatures for the clamp sites below.
+    "clampBypass": "postWrite",
+
+    "forceZoom": true,
+    "zoomDistance": 0.0,
+
+    // Eye height above the character's feet, in metres. There is no readable
+    // "head bone offset" without resolving the skeleton, so this is an
+    // approximation you are meant to tune to taste.
+    "eyeHeight": 1.62,
+    "eyeHeightByRace": {
+      "Human": 1.62,
+      "Elf": 1.70,
+      "HalfElf": 1.66,
+      "Drow": 1.68,
+      "Tiefling": 1.66,
+      "Dwarf": 1.15,
+      "Gnome": 1.02,
+      "Halfling": 0.98,
+      "HalfOrc": 1.78,
+      "Githyanki": 1.80,
+      "Dragonborn": 1.82
+    },
+
+    // Pushes the camera forward out of the head mesh, along the camera's
+    // heading. Flattened to horizontal, so looking up does not lift the
+    // viewpoint into the ceiling.
+    "forwardOffset": 0.12,
+
+    // Near clip plane. Together with forwardOffset this is what stops your own
+    // head from filling the screen. Raising it further hides more geometry but
+    // starts clipping through walls you stand close to.
+    "nearPlane": 0.15,
+
+    // 0 leaves the game's field of view alone. 90-100 suits first person.
+    "fovOverride": 0.0,
+
+    "pitchLimits": { "min": -89.0, "max": 89.0 },
+    "invertPitch": false,
+
+    // ---------------------------------------------------------------------
+    // BUILD-SPECIFIC. Everything below must be filled in for YOUR game build
+    // before the view will actually switch to first person. Until then the
+    // mod still gives you mouse look, the cursor lock and WASD movement --
+    // it just cannot move the game's camera. See docs/SIGNATURES.md.
+    //
+    // -1 means "unknown, do not write this field".
+    // ---------------------------------------------------------------------
+
+    // Offsets to dereference in turn, starting from whatever the
+    // CameraManagerInstance signature resolves to, to reach the live camera.
+    // Example once you have found it: [ "0x18", "0x40" ]
+    "pointerChain": [],
+
+    // Byte offsets of each float field within the camera object.
+    //
+    // "positionX" is the one that moves the viewpoint to your character's
+    // eyes, and it is the difference between "the camera rotates freely" and
+    // "this is a first-person game". It must point at the first of three
+    // contiguous floats (x, y, z). Leave it at -1 until you have confirmed it:
+    // the plugin adds eye height to whatever it finds there, and pointing it at
+    // something that is not a position produces nonsense.
+    "fieldOffsets": {
+      "pitch": -1,
+      "yaw": -1,
+      "distance": -1,
+      "fov": -1,
+      "nearPlane": -1,
+      "positionX": -1
+    },
+
+    // Only used when clampBypass is "patchClamp". nopLength must match the
+    // exact instruction length at the site, or you will corrupt the code
+    // stream and crash the game.
+    "clampPatches": []
+  },
+
+  "mouse": {
+    // Degrees of rotation per raw mouse count.
+    "sensitivity": 0.12,
+    "yawScale": 1.0,
+    "pitchScale": 1.0,
+
+    // Swallows the cursor-move messages produced by re-centring, so the game
+    // does not see the teleport as violent cursor jitter.
+    "suppressGameCameraRotate": true,
+
+    // Pins the cursor to the centre of the window. This is also what makes the
+    // game's own picking ray originate from screen centre, which is what fixes
+    // first-person targeting -- the cursor doubles as your crosshair.
+    "cursorLock": true,
+
+    // Releases the cursor automatically while a panel or dialogue is open,
+    // using state reported by the Lua mod. Requires the bridge below.
+    "autoReleaseOnUI": true
+  },
+
+  "movement": {
+    // xinput -- synthesise gamepad stick input from WASD. Uses the game's own
+    //           analog, camera-relative movement. Smooth. Switches the UI to
+    //           controller prompts while active.
+    // moveto -- the Lua mod re-issues move orders ahead of the camera. Keeps
+    //           the keyboard/mouse UI, but is pathfinder-driven and stutters
+    //           on stairs and ledges.
+    // none   -- camera changes only; move the way you normally would.
+    "mode": "xinput",
+
+    "keys": {
+      "forward": "W",
+      "back": "S",
+      "left": "A",
+      "right": "D",
+      "walk": "VK_LSHIFT"
+    },
+
+    // Fraction of full stick deflection the engine ignores. The synthetic
+    // stick starts just above this so a key press registers immediately.
+    "deadzone": 0.15,
+    "walkMultiplier": 0.45,
+
+    // moveto mode only.
+    "moveToRateHz": 10.0,
+    "moveToDistance": 6.0,
+
+    // Required for the game to poll for a pad at all. Turning this off
+    // disables xinput mode in practice.
+    "reportControllerConnected": true
+  },
+
+  "headHide": {
+    // The reliable fix: near-plane push plus the forward offset above.
+    "nearPlanePush": true
+    // The experimental head-visual hiding is NOT set here -- it is a Lua
+    // client-side concern and lives in headHide.enabled in
+    // fpcamera_gameplay.json. Having the same switch in two files meant one of
+    // them was always a lie. An old "luaHeadHide" key here is ignored, with a
+    // note in the log.
+  },
+
+  "bridge": {
+    // File exchange with the Script Extender Lua mod. Carries UI state and the
+    // camera heading; nothing per-frame goes through it.
+    "enabled": true,
+    "rateHz": 10.0,
+    // Empty = "%LOCALAPPDATA%\\Larian Studios\\Baldur's Gate 3\\Script Extender\\",
+    // which is the only directory SE's Lua is allowed to read and write.
+    "directory": ""
+  },
+
+  "discovery": {
+    // Logs every candidate view matrix found in the game's constant buffers.
+    // Turn on (or press F3), rotate the camera, and read FPCamera.log.
+    "enabled": false,
+    "maxCandidates": 32,
+    "logEveryNFrames": 120,
+    "verbose": false
+  }
+}

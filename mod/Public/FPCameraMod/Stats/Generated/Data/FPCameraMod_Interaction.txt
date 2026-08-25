@@ -1,0 +1,52 @@
+// FPCameraMod -- stat overrides for first-person reach.
+//
+// ===========================================================================
+// This file is intentionally INERT as shipped. It contains no entries, only
+// the syntax and the procedure for adding your own.
+//
+// Why: overriding a stat requires naming an entry that exists in your game
+// build, and I am not willing to guess at those names. A stat override that
+// names an entry which does not exist is silently ignored at best; one that
+// names a real entry with the wrong field can break unrelated systems. Neither
+// failure is visible until something odd happens twenty hours into a run.
+//
+// The good news is that you probably do not need this file at all. The
+// interaction problem in first person is mostly an aiming problem, and it is
+// already solved two other ways:
+//
+//   1. The DLL pins the cursor to the centre of the screen, so the game's own
+//      picking ray points where you are looking instead of where your mouse
+//      drifted to.
+//   2. The Lua look-at assist (Server/Interaction.lua) finds whatever is
+//      inside a cone around the camera forward and interacts with it, with a
+//      range you set in fpcamera_gameplay.json -- no stat editing involved.
+//
+// Use this file only if you specifically want the engine's own reach numbers
+// changed rather than assisted.
+// ===========================================================================
+//
+// HOW TO FIND THE RIGHT ENTRY
+//
+//   1. Unpack Shared.pak with the BG3 Modder's Multitool or LSLib's Divine:
+//        divine.exe -g bg3 -a extract-package -s Shared.pak -d ./Shared
+//   2. Search the unpacked stats for reach-related fields:
+//        findstr /S /I /C:"InteractionRange" Shared\Public\Shared\Stats\*
+//        findstr /S /I /C:"UseDistance"      Shared\Public\Shared\Stats\*
+//   3. Note the exact entry name, its "type", and the field you want to change.
+//   4. Add a block below using the syntax shown in the example, then verify in
+//      game that the value took effect before trusting it.
+//
+// SYNTAX (this is the real BG3 stats format; the names are placeholders)
+//
+//   new entry "SomeEntryNameYouFound"
+//   type "SomeTypeYouFound"
+//   using "SomeEntryNameYouFound"
+//   data "SomeFieldYouFound" "4.0"
+//
+// "using" inherits everything from the base entry, so only the fields you
+// list are changed. Always include it when overriding an existing entry --
+// without it you replace the entry wholesale and lose every field you did not
+// restate.
+//
+// After editing, launch the game and check the Script Extender console: stat
+// parse errors are reported there, and a typo here is otherwise silent.
