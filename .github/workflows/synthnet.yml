@@ -1,0 +1,120 @@
+name: Synthnet
+
+# Synthnet is a self-contained static site with no build step and no
+# dependencies. What CI is for here is holding three promises that are easy to
+# break by accident and invisible when broken:
+#
+#   1. It works with no network at all. One absolute URL slipped into one file
+#      breaks that, and nothing about the page would look wrong.
+#   2. It loads quickly. The search index once reached 4.2 MB for 333 KB of
+#      content and nobody noticed until it was measured.
+#   3. The pages actually render. A renderer once shipped with a fatal syntax
+#      error inside a build that reported success.
+#
+# Every step below exists because one of those already went wrong once.
+
+on:
+  push:
+    paths:
+      - "synthnet/**"
+      - ".github/scripts/synthnet_smoke.py"
+      - ".github/workflows/synthnet.yml"
+  pull_request:
+    paths:
+      - "synthnet/**"
+      - ".github/scripts/synthnet_smoke.py"
+      - ".github/workflows/synthnet.yml"
+  workflow_dispatch:
+
+concurrency:
+  # Keyed on the head commit, not github.ref: this runs on both push and
+  # pull_request, which see different refs for the same commit, so a ref-keyed
+  # group never collapses them and every push runs everything twice.
+  group: synthnet-${{ github.event.pull_request.head.sha || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Offline site
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate every site against the contract
+        # Schema, internal reference resolution, and the rule the whole project
+        # rests on: no absolute http/https URL anywhere, bar the SVG and XHTML
+        # XML namespaces. That rule is only true while something checks it.
+        run: python3 synthnet/tools/validate.py --strict
+
+      - name: Parse every renderer
+        run: |
+          status=0
+          for f in synthnet/app/*.js synthnet/app/types/*.js synthnet/sw.js; do
+            if node --check "$f"; then echo "  ok   $f"; else echo "  FAIL $f"; status=1; fi
+          done
+          exit $status
+
+      - name: Build, and confirm the committed generated files are current
+        run: |
+          python3 synthnet/tools/build.py
+          python3 synthnet/tools/build.py --check
+
+      - name: Enforce the size budget
+        run: |
+          limit=409600
+          actual=$(stat -c%s synthnet/net/search.json)
+          echo "search.json: $actual bytes (limit $limit)"
+          if [ "$actual" -gt "$limit" ]; then
+            echo "FAIL: the search index has regressed past its budget."
+            exit 1
+          fi
+
+          # Everything index.html pulls in on a cold load. The skins are in the
+          # list because all seven are <link>ed unconditionally -- leaving them
+          # out under-reports the real payload by 91 KB.
+          assets="synthnet/index.html synthnet/theme/aero.css \
+                  synthnet/theme/skins/*.css synthnet/app/*.js \
+                  synthnet/app/types/*.js synthnet/net/registry.json \
+                  synthnet/manifest.webmanifest"
+          raw=0; gz=0
+          for f in $assets; do
+            raw=$((raw + $(stat -c%s "$f")))
+            gz=$((gz + $(gzip -c "$f" | wc -c)))
+          done
+          echo "cold-load shell: $raw bytes raw, $gz bytes gzipped"
+          # Both numbers are real: tools/serve.py gzips, so a browser moves the
+          # second, but the raw figure is what the files actually weigh.
+          if [ "$raw" -gt 409600 ]; then
+            echo "FAIL: the shell payload has grown past 400 KB uncompressed."
+            exit 1
+          fi
+          if [ "$gz" -gt 122880 ]; then
+            echo "FAIL: the shell payload has grown past 120 KB gzipped."
+            exit 1
+          fi
+
+      - name: Render every site type in a real browser
+        # node --check proves a renderer parses, not that it works. This loads
+        # real pages and fails on console errors, empty renders, raw inline
+        # markup reaching the screen, or horizontal overflow at 360px.
+        run: |
+          pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+          python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
+
+      - name: Publish the standalone single-file build
+        # dist/ is gitignored because it is generated. Uploading it here keeps
+        # the current build one download from the Actions run, which is the
+        # point of the standalone mode: copy this one file to a phone, open it,
+        # no install and no server.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthnet-standalone
+          path: synthnet/dist/synthnet.html
+          if-no-files-found: error

@@ -1,0 +1,23 @@
+{
+  "name": "Synthnet",
+  "short_name": "Synthnet",
+  "description": "An offline synthetic internet: forums, blogs, news, wikis and personal pages from a place that never existed.",
+  "lang": "en",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone", "fullscreen", "browser"],
+  "orientation": "any",
+  "start_url": ".",
+  "scope": ".",
+  "background_color": "#0d3b5c",
+  "theme_color": "#1c4f7c",
+  "categories": ["entertainment", "books"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox='0%200%2064%2064'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20y1='0'%20x2='0'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%238fd0f0'/%3E%3Cstop%20offset='0.5'%20stop-color='%232f7fb8'/%3E%3Cstop%20offset='1'%20stop-color='%230f4570'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20x='2'%20y='2'%20width='60'%20height='60'%20rx='10'%20fill='url(%23g)'%20stroke='%230b3050'%20stroke-width='2'/%3E%3Ccircle%20cx='32'%20cy='32'%20r='17'%20fill='none'%20stroke='%23eaf6ff'%20stroke-width='2.5'/%3E%3Cellipse%20cx='32'%20cy='32'%20rx='8'%20ry='17'%20fill='none'%20stroke='%23eaf6ff'%20stroke-width='2'/%3E%3Cpath%20d='M15%2032h34'%20stroke='%23eaf6ff'%20stroke-width='2'/%3E%3Cpath%20d='M18%2022h28'%20stroke='%23eaf6ff'%20stroke-width='1.5'/%3E%3Cpath%20d='M18%2042h28'%20stroke='%23eaf6ff'%20stroke-width='1.5'/%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

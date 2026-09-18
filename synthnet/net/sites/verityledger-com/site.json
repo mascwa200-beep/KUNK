@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "domain": "verityledger.com",
+  "title": "The Verity Ledger",
+  "type": "news",
+  "era": "2007",
+  "skin": "broadsheet",
+  "description": "The Verity County paper of record, published in Gridfall since 1901.",
+  "links": [
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "webring.gridfall.net",
+    "marla.verity.net"
+  ],
+  "data": {
+    "masthead": "The Verity Ledger",
+    "slogan": "Verity County's newspaper since 1901. Published Wednesday and Saturday.",
+    "sections": [
+      { "id": "frontpage", "name": "Front Page" },
+      { "id": "community", "name": "Community" },
+      { "id": "schools", "name": "Schools" },
+      { "id": "sports", "name": "Sports" },
+      { "id": "opinion", "name": "Opinion & Letters" }
+    ],
+    "articles": [
+      {
+        "id": "fire-anniversary",
+        "sectionId": "frontpage",
+        "headline": "Four Years After the Fire, Gridfall Is Still Arguing About the Wire",
+        "dek": "Verity Valley Power says the Substation No. 3 rebuild is finished. People on Depot Street say their lights still blink.",
+        "byline": "By Ruth Ahlgren, Staff Writer",
+        "date": "June 14, 2007",
+        "featured": true,
+        "lead": "GRIDFALL. The fourth anniversary of the Substation No. 3 fire passed Monday with no ceremony, which is how most of the people on Depot Street said they wanted it.",
+        "body": "The fire began at 4:52 a.m. on June 11, 2003, in the transformer yard behind the fence at Depot and Quarry Road. It burned for six hours. Four thousand one hundred customers lost power, some of them for five days. Nobody died. Two Gridfall volunteer firefighters were treated at County General for smoke inhalation and released the same afternoon.\n\nVerity Valley Power & Light says the matter is closed. The company replaced both banks in 2004, added a second feed from the Pell tie line in 2005, and finished what it calls the hardening program last October.\n\n[quote=Alan Prewitt, Verity Valley Power & Light]The equipment in that yard today has nothing in common with the equipment that failed in 2003 except the address. We have said that in every public meeting we have attended, and we will keep saying it.[/quote]\n\nCarl Beske, 61, a retired machinist who has lived on Depot Street since 1974, does not accept that.\n\n\"I am not saying they are lying,\" Beske said, standing in his driveway about two hundred feet from the substation fence. \"I am saying my kitchen light dips every time it rains hard, and it did not do that before 2003, and they have been out here twice and told me it is my panel. I have had two electricians tell me it is not my panel.\"\n\nDana Shultz, the county emergency management coordinator, said her office logged eleven voltage complaints from the Depot Street area in 2006 and nine so far in 2007. She said that is not unusual for an older distribution circuit.\n\n\"Eleven calls in a year is not an emergency,\" Shultz said. \"It is a nuisance. I understand the difference feels smaller when it is your refrigerator.\"\n\nThe fire remains the most argued-about event in recent county history. A thread on the Gridfall message boards started in June 2003 has run past nine hundred replies and is still open. County residents have used it to trade utility bill comparisons, repeat a persistent claim that the fire was started by a contractor's cutting torch, and argue about whether the smoke plume was visible from Marrow Hill.\n\nVerity Valley has never released the internal report. The state utility commission published a two-page summary in November 2003 attributing the failure to \"insulation degradation consistent with age,\" a phrase that has been quoted back at the company at every hearing since.\n\nA fuller account of the fire and its aftermath is maintained on the county wiki at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]. The 2003 Ledger report is available at [url=/article/fire-2003]Substation Fire Leaves 4,100 Without Power[/url].\n\nBeske said he will be at the next commission hearing in September, as he has been at the last nine.\n\n\"I am retired,\" he said. \"I have the time.\""
+      },
+      {
+        "id": "fire-2003",
+        "sectionId": "frontpage",
+        "headline": "Substation Fire Leaves 4,100 Without Power",
+        "dek": "Crews fought the Depot Street transformer yard for six hours Wednesday morning. Two firefighters treated and released.",
+        "byline": "By Ruth Ahlgren, Staff Writer",
+        "date": "June 11, 2003",
+        "featured": false,
+        "lead": "GRIDFALL. A fire in the transformer yard at Verity Valley Power & Light's Substation No. 3 knocked out power to roughly 4,100 homes and businesses across eastern Verity County early Wednesday and closed Quarry Road for most of the day.",
+        "body": "The Gridfall Volunteer Fire Department was dispatched at 4:56 a.m. Chief Warren Kupfer said the first engine arrived to find \"the whole back bank involved\" and standing oil burning on the pad.\n\n\"You do not put water on that,\" Kupfer said. \"You wait for the utility to kill it and then you keep it from spreading to the brush line. That is what we did for six hours.\"\n\nFirefighters Ray Odell and Brian Sant were treated at County General Hospital for smoke inhalation and released Wednesday afternoon.\n\nPower was restored to the Gridfall business district by 2 p.m. Wednesday. Verity Valley said crews were still working Wednesday night on the Tannery Flats and Hollis Road circuits. A company statement said full restoration was expected \"within several days,\" which drew audible complaint at an impromptu gathering of about forty residents outside the town office Wednesday evening.\n\nCounty General ran on generator power from 4:58 a.m. until 11:20 a.m. Hospital administrator Lorraine Pike said no procedures were postponed.\n\nThe Verity County Fairgrounds opened its exhibition hall as a cooling and charging station Wednesday at noon. Fair association president Doyle Merritt said about ninety people used it during the afternoon.\n\nSmoke was visible from the Route 62 overlook and, by several accounts, from the north side of Marrow Hill. The Ledger was unable to confirm the second claim.\n\nVerity Valley spokesman Alan Prewitt said the cause was under investigation. Asked whether the equipment was at the end of its service life, Prewitt said, \"I am not going to speculate on the morning of the fire.\""
+      },
+      {
+        "id": "rail-closure",
+        "sectionId": "frontpage",
+        "headline": "Last Train Leaves the Gridfall Branch Friday",
+        "dek": "After 108 years, Verity Rail ends service on the Gridfall branch. Sixteen jobs go with it.",
+        "byline": "By Tom Vasko Jr., Staff Writer",
+        "date": "March 28, 2007",
+        "featured": true,
+        "lead": "GRIDFALL. The last scheduled train on the Verity Rail Gridfall branch is expected to leave the Depot Street yard sometime Friday afternoon, ending 108 years of freight service on the line and eliminating sixteen jobs in the county.",
+        "body": "Verity Rail filed for abandonment in August 2005. The federal board approved the filing in November 2006 after two rounds of comment. The company said the branch had carried fewer than four hundred cars in each of the last three years, most of them aggregate from the Quarry Road pit.\n\n\"We ran that branch at a loss for eleven years,\" said Verity Rail operations director Marie Hollenbeck. \"I understand what it means to the town. I grew up in Pell. I also understand what a balance sheet looks like.\"\n\nSixteen positions are affected: eleven in the Gridfall yard, three on the track gang, and two clerical. Hollenbeck said nine employees have been offered transfers to the Ardo main line, which would require a commute of about fifty minutes each way.\n\nYardmaster Denny Ocasek, who has worked the branch since 1979, said he has not decided.\n\n\"My wife works at the school. My mother is eighty-four and lives on Fenn Avenue,\" Ocasek said. \"They are not offering to move any of that.\"\n\nThe county has applied for a rail-banking designation that would preserve the right of way for a trail. Commissioner Paul Renko said the application is \"realistically a two-year process, and that is if nobody sues.\"\n\nA public hearing in February drew about sixty people to the Gridfall Armory. Most of the comment was about the grade crossings on Mill Street and Bracken Lane, which the county will now be responsible for maintaining or removing.\n\nRailfans have been arriving since early March. The Depot Street yard is private property and Verity Rail has asked people to stay off it. On Tuesday there were eleven cars parked along the shoulder of Quarry Road and at least four tripods.\n\nDiscussion of the closure, including a running list of what equipment is expected to move and when, is on the Verity Rail enthusiast forums at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]. Video of the March 21 aggregate move has been posted to [url=synth://clipvault.tv/]clipvault.tv[/url].\n\nThe Ledger will publish a photographic record of the branch in the April 4 edition."
+      },
+      {
+        "id": "ice-storm",
+        "sectionId": "frontpage",
+        "headline": "Ice Cuts Power to 2,300; Route 62 Closed Nine Hours",
+        "dek": "Freezing rain Sunday night brought down lines on Hollis Road and closed the Route 62 grade at the quarry until Monday morning.",
+        "byline": "By Ruth Ahlgren, Staff Writer",
+        "date": "January 16, 2007",
+        "featured": false,
+        "lead": "VERITY COUNTY. Freezing rain that began Sunday around 8 p.m. brought down power lines in four parts of the county, closed a nine-mile stretch of Route 62, and left about 2,300 customers without electricity, some until Tuesday afternoon.",
+        "body": "The county roads department began sanding at 9:15 p.m. Sunday. Superintendent Gale Mundt said crews ran out of the mixed sand and salt at the Pell garage by 2 a.m. and had to shuttle from Gridfall.\n\n\"We have two trucks for the east side,\" Mundt said. \"We have asked for a third every budget cycle since 2002.\"\n\nRoute 62 was closed from the Bracken Lane intersection to the county line at 10:40 p.m. Sunday and reopened at 7:50 a.m. Monday. A state police spokesman said there were fourteen reported crashes in the county overnight, two with injuries, none life-threatening.\n\nVerity Valley Power & Light reported outages in Tannery Flats, on Hollis Road, in the Bracken Lane area, and in a section of New Ardo. The company brought in two crews from outside the region Monday morning. Power was restored to all but about 140 customers by Monday night.\n\nThe Gridfall Armory opened as a warming shelter at 11 p.m. Sunday. Red Cross volunteer coordinator Bette Farrow said thirty-one people stayed overnight, most of them from the Hollis Road area.\n\nSchools in the Verity Central district were closed Monday and Tuesday. Superintendent Anne Rusk said the days would be made up in June.\n\nSeveral residents reported hearing the shortwave interference locally known as the Signal on 62 during the closure, which a county wiki page notes is a recurring claim during winter outages. The Ledger takes no position on the matter."
+      },
+      {
+        "id": "corrections",
+        "sectionId": "frontpage",
+        "headline": "Corrections and Clarifications",
+        "dek": "The Ledger corrects errors of fact in the edition following their discovery.",
+        "byline": "The Editors",
+        "date": "September 15, 2007",
+        "featured": false,
+        "lead": "The Ledger corrects errors of fact in the edition following their discovery. Readers may report an error to the news desk at the Mill Street office during business hours.",
+        "body": "In the September 12 edition, an article on the school board consolidation vote stated that board member Ellen Kerrigan voted against the measure. Kerrigan voted in favor. The Ledger regrets the error.\n\nIn the same article, the enrollment figure for Bracken Lane Elementary was given as 212. The correct figure for the 2006-07 year is 190. The figure of 212 is from 2003.\n\nIn a May 3 article on the Blue Kestrel sign, the diner's opening year was given as 1959. The Blue Kestrel opened in 1961 under the name Kestrel Creek Lunch and took the Blue Kestrel name in 1968. Several readers wrote to point this out, some of them twice.\n\nIn the August 23 county fair article, the name of the pulling event winner was spelled Corrigan. It is Korrigan.\n\nA reader has asked the Ledger to note that the photograph accompanying the March 28 rail article was taken at the Bracken Lane crossing and not, as the caption stated, at Mill Street. The caption was wrong. The photograph was correct."
+      },
+      {
+        "id": "rail-hearing",
+        "sectionId": "community",
+        "headline": "Rail Hearing Draws Sixty to the Armory; Most Came About Crossings",
+        "dek": "Two hours of public comment produced one question about jobs and forty minutes about the Bracken Lane grade.",
+        "byline": "By Tom Vasko Jr., Staff Writer",
+        "date": "February 15, 2007",
+        "featured": false,
+        "lead": "GRIDFALL. About sixty people attended Tuesday's public hearing on the Verity Rail branch abandonment at the Gridfall Armory, and a substantial portion of the two-hour meeting was spent on the future of two grade crossings.",
+        "body": "The hearing was conducted by a hearing officer from the state transportation department, who reminded the room four times that the federal abandonment decision was already final and not the subject of the meeting.\n\nThat did not entirely take.\n\nMill Street business owners asked who would pay to remove the rails and repave the crossing. County engineer Sam Prewitt, no relation to the utility spokesman of the same surname, said the estimate for both crossings is between $180,000 and $240,000, depending on how much of the subgrade has to come out.\n\n\"That is not in this year's budget and it is not in next year's,\" Prewitt said. \"The honest answer is that the rails will probably still be in the pavement in 2010.\"\n\nA resident of Bracken Lane, who gave her name as Ilene Korrigan, said the crossing has been rough for six years and that she has replaced two tires on it.\n\nDenny Ocasek, the branch yardmaster, spoke for about ninety seconds. He said he was not there to argue about the decision and asked that the yard office building be left standing because \"it is the only thing on Depot Street older than the substation.\"\n\nCommissioner Paul Renko said the county would pursue rail-banking for a trail. He was asked twice whether the trail would be paved and said he did not know.\n\nA transcript of the hearing is available for inspection at the county clerk's office. Residents have also been posting notes and photographs from the meeting on the Gridfall boards at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]."
+      },
+      {
+        "id": "diner-closing",
+        "sectionId": "community",
+        "headline": "The Blue Kestrel Serves Its Last Plate Sunday",
+        "dek": "After forty-three years on Mill Street, Ed Dombrowski is closing the diner. He says it is the lease and nothing else.",
+        "byline": "By Marguerite Lowell, Community Editor",
+        "date": "August 19, 2004",
+        "featured": true,
+        "lead": "GRIDFALL. The Blue Kestrel will close Sunday after the breakfast service, ending forty-three years of continuous operation at 214 Mill Street and removing from the county the only restaurant that has ever been open at 5 a.m. on a Tuesday.",
+        "body": "Owner Ed Dombrowski, who bought the diner in 1978 from the family of founder Hal Sowerby, said the decision came down to the building.\n\n\"The lease is up in September and the number they want is not a number I can make on eggs,\" Dombrowski said Tuesday, sitting in the second booth from the door, which is where he sits. \"People keep asking me if business was bad. Business was fine. Business has been fine for twenty-six years.\"\n\nThe building's owner, Hollis Property Group of New Ardo, did not return a call.\n\nThe Kestrel opened in 1961 as Kestrel Creek Lunch, named for the creek that runs behind the Mill Street block, and took its present name in 1968. The counter seats eleven. There are six booths. The coffee has been the same brand since at least 1980, which Dombrowski said is \"not a boast, it is just true.\"\n\nWaitress Marla Vance, who has worked there for nine years, said the last two weeks have been the busiest she can remember.\n\n\"Everybody who has not been in since 1994 came in this month to tell me how much they love the place,\" Vance said. \"I told two of them that if they had come in once a year we would not be having this conversation. That was not fair of me and I apologized to one of them.\"\n\nThe Tuesday morning group of retired county highway men, who have occupied the back two booths since the 1980s, held a vote and decided to relocate to the Hollis Market deli counter, which several of them described as a temporary arrangement.\n\nDombrowski said he has no plans.\n\n\"I am sixty-three,\" he said. \"I will sleep until six for a while and see how that goes.\"\n\nThe diner will be open Saturday until 2 p.m. and Sunday from 5 a.m. until the food runs out."
+      },
+      {
+        "id": "kestrel-sign",
+        "sectionId": "community",
+        "headline": "Kestrel Sign Goes to the Historical Society",
+        "dek": "The neon bird has been in a garage on Fenn Avenue since 2004. It will hang in the Depot Street museum by fall.",
+        "byline": "By Marguerite Lowell, Community Editor",
+        "date": "May 3, 2007",
+        "featured": false,
+        "lead": "GRIDFALL. The Blue Kestrel's neon sign, which has spent three years in Ed Dombrowski's garage on Fenn Avenue, was moved Tuesday to the Verity County Historical Society building on Depot Street, where the society intends to hang it in the front room by fall.",
+        "body": "The sign is eleven feet long and was made in 1968 by a shop in Ardo that closed in 1991. The bird is not a kestrel. It has never been a kestrel. The society's collections chair, Hugh Speltz, said this is the first thing anybody asks.\n\n\"It is a generic bird,\" Speltz said. \"The sign shop had a bird. Ed's predecessor said fine. We are not going to correct it and we are not going to pretend.\"\n\nDombrowski donated the sign. He said the garage situation had become untenable.\n\n\"I could not get the car in,\" he said.\n\nThe society is raising about $2,800 to rewire the transformer and replace two sections of tubing, the blue in the wing and part of the L. Speltz said roughly $1,600 has been committed, much of it in amounts under twenty dollars, and that a donation jar sits on the counter at Hollis Market.\n\nFormer waitress Marla Vance, who keeps a personal page at [url=synth://marla.verity.net/]marla.verity.net[/url] where she has posted photographs of the diner's last week, said she cried in the parking lot and is not embarrassed about it.\n\nThe building at 214 Mill Street has been vacant since 2004. Hollis Property Group listed it in 2005 and again in 2006.\n\nCorrection, May 5: This article originally gave the diner's opening year as 1959. The Blue Kestrel opened in 1961 as Kestrel Creek Lunch. The Ledger regrets the error."
+      },
+      {
+        "id": "obits",
+        "sectionId": "community",
+        "headline": "Obituaries",
+        "dek": "Notices received by the Ledger through Thursday noon.",
+        "byline": "Compiled by the Ledger Staff",
+        "date": "September 14, 2007",
+        "featured": false,
+        "lead": "Notices received by the Ledger through noon Thursday. Families may submit notices at the Mill Street office or by mail. There is no charge for county residents.",
+        "body": "[b]Warren J. Kupfer, 71[/b], of Gridfall, died September 9 at County General Hospital after a short illness. He was chief of the Gridfall Volunteer Fire Department from 1988 to 2005 and commanded the department at the Substation No. 3 fire in 2003. He worked thirty-one years at the Pell fastener plant. He is survived by his wife, Nadine, two sons, and four grandchildren. Services were held Wednesday at St. Brigid's. The family asks that donations go to the volunteer fire department equipment fund.\n\n[b]Eleanor \"Nell\" Purdy, 94[/b], of Tannery Flats, died September 10 at home. She taught fourth grade at Bracken Lane Elementary from 1938 until 1976 and is believed to have taught more than 1,400 children. She kept a class list every year and told the Ledger in 1996 that she could still match most of the names to faces. She was predeceased by her husband, Roy, in 1981. Services private.\n\n[b]Anton \"Tony\" Milek, 58[/b], of New Ardo, died suddenly September 11. He drove for Verity Rail for twenty-two years and was among the sixteen employees affected by the March closure of the Gridfall branch. He is survived by his mother, Helena, and a sister. Railroad colleagues will hold a gathering at the Armory on September 22 at 2 p.m.\n\n[b]Doris Sowerby Heck, 88[/b], formerly of Gridfall, died September 6 in Ardo. She was a daughter of Hal Sowerby, who founded the restaurant that became the Blue Kestrel, and worked the counter there as a young woman. She moved out of the county in 1969. Burial will be at Kestrel Creek Cemetery."
+      },
+      {
+        "id": "county-fair",
+        "sectionId": "community",
+        "headline": "Fair Attendance Down a Fourth Straight Year",
+        "dek": "The association counted 11,400 through the gate. In 2002 it counted 19,000. Nobody can agree on why.",
+        "byline": "By Marguerite Lowell, Community Editor",
+        "date": "August 23, 2007",
+        "featured": false,
+        "lead": "GRIDFALL. The Verity County Fair drew about 11,400 people through the Route 62 gate over five days this month, the fourth consecutive year of decline and roughly 40 percent below the 2002 figure, according to numbers released Tuesday by the fair association.",
+        "body": "Association president Doyle Merritt said the weather was good and the entry list for livestock was the strongest since 2004.\n\n\"I do not have a villain for you,\" Merritt said. \"People ask me if it is the gas prices or the rides contractor or the county. I think it is that there are fewer farms and the people who used to come because their cousin was showing a heifer do not have a cousin showing a heifer anymore.\"\n\nThe midway contractor changed in 2005 after a dispute over the percentage split. Several longtime attendees interviewed at the gate said the new midway is smaller, which Merritt confirmed. It is eleven rides, down from sixteen.\n\nThe truck and tractor pull on Saturday night remains the best-attended single event, with a paid gate of 2,150. The winner in the 9,500-pound class was Denise Korrigan of Bracken Lane, the third woman to win the class and the first to win it twice.\n\nThe association's finances are sound, Merritt said. The fair carries no debt and has about $31,000 in reserve, most of it from the sale of a parcel in 1998.\n\nThe 4-H building roof is the immediate problem. Estimates for replacement have come in between $22,000 and $27,000.\n\n\"We will patch it again,\" Merritt said. \"We have patched it since 1994.\"\n\nA history of the fair, including the attendance figures back to 1958, is kept on the county wiki at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]."
+      },
+      {
+        "id": "school-board-vote",
+        "sectionId": "schools",
+        "headline": "Board Splits 4-3 on Bracken Lane Consolidation",
+        "dek": "Four hours of comment, two hours of deliberation, and a vote that surprised nobody in the room.",
+        "byline": "By Delia Hardy, Staff Writer",
+        "date": "September 12, 2007",
+        "featured": true,
+        "lead": "GRIDFALL. The Verity Central school board voted 4-3 Tuesday night to close Bracken Lane Elementary at the end of the 2007-08 year and move its 190 students to Gridfall Elementary and New Ardo Elementary, ending eighteen months of argument that has divided the district more sharply than anything since the 1994 flood bond.",
+        "body": "The meeting began at 6 p.m. and ended at 12:40 a.m. Fifty-one residents signed up to speak. Board president Dell Hardy, no relation to this reporter, limited comment to three minutes each and enforced it with a kitchen timer, which drew complaints of its own.\n\nSuperintendent Anne Rusk presented the district's figures: Bracken Lane's enrollment has fallen from 261 in 1999 to 190 this year, per-pupil cost at the building is roughly $2,100 above district average, and the boiler and roof together carry a deferred maintenance estimate of $740,000.\n\n\"I am not going to stand here and tell you this is good news,\" Rusk said. \"I am going to tell you the alternative is the same closure in three years with $740,000 less in the capital fund.\"\n\nOpponents focused on the bus ride. Under the plan, children on the far end of Hollis Road would have a one-way ride of about forty-five minutes.\n\n\"You are asking a six-year-old to be on a bus an hour and a half a day so the district can save a line item,\" said Ilene Korrigan of Bracken Lane, who has two children at the school. \"Say that out loud and see how it sounds.\"\n\nVoting to close: Hardy, Rusk's recommendation carried by Ellen Kerrigan, Paul Renko, and Sofia Bramm. Voting against: Tom Vasko, Dennis Ocasek, and Ruth Pell.\n\nVasko, whose son also writes for this newspaper, said afterward that he expected the outcome and voted his district.\n\nThe building will be retained by the district for at least two years. Rusk said there has been \"informal interest\" from the county in using part of it for a senior nutrition site.\n\nDiscussion has been running for months on the Gridfall boards at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], where at least two threads have been locked.\n\nCorrection, September 15: This article originally reported that Ellen Kerrigan voted against the measure. She voted in favor. Bracken Lane's enrollment was also given as 212, which is the 2003 figure. The current figure is 190."
+      },
+      {
+        "id": "school-board-resign",
+        "sectionId": "schools",
+        "headline": "Kerrigan Resigns Board Seat, Calls Process a \"Circus\"",
+        "dek": "Two weeks after voting to close Bracken Lane, the board's longest-serving member quits with fourteen months left.",
+        "byline": "By Delia Hardy, Staff Writer",
+        "date": "September 26, 2007",
+        "featured": false,
+        "lead": "GRIDFALL. Ellen Kerrigan, who has served on the Verity Central school board since 1995, resigned Tuesday evening in a four-sentence letter read into the record by board president Dell Hardy, leaving fourteen months on her term.",
+        "body": "Kerrigan's letter cited \"the conduct of the public and of certain members of this board during the consolidation process\" and called the September 12 meeting \"a circus that I am no longer willing to be a clown in.\"\n\nReached at home Wednesday, Kerrigan declined to expand on the letter except to say that someone had put a note on her car at the Hollis Market and that her granddaughter had been asked about the vote at school.\n\n\"I have taken abuse for twelve years and I have never once minded,\" Kerrigan said. \"This was different and I am not going to describe it in the newspaper because the people who did it will enjoy reading about it.\"\n\nHardy said the board would advertise the vacancy and appoint a replacement to serve until the November 2008 election. Under district policy the appointment must be made within sixty days.\n\nBoard member Tom Vasko, who voted against the closure, said he disagreed with Kerrigan \"on the merits and on almost nothing else\" and called the resignation a loss.\n\nSuperintendent Anne Rusk said the closure timeline is unaffected.\n\nThe Ledger asked to see the note left on Kerrigan's car. She said she had thrown it away."
+      },
+      {
+        "id": "sports-football",
+        "sectionId": "sports",
+        "headline": "Cardinals Hold On, 21-17, on a Fourth-Down Stop at the Six",
+        "dek": "Verity Central snaps a three-game skid against Marrow Hill with a goal-line stand as the clock runs out.",
+        "byline": "By Russ Pell, Sports",
+        "date": "October 6, 2007",
+        "featured": false,
+        "lead": "GRIDFALL. Verity Central stopped Marrow Hill on fourth and goal from the six with eleven seconds left Friday night to hold a 21-17 win at Kupfer Field, the Cardinals' first win over the Miners since 2003.",
+        "body": "Marrow Hill drove seventy-one yards in nine plays after recovering an onside kick with 2:14 to play. On fourth down, quarterback Joel Bramm rolled right and threw for the corner of the end zone. Cardinals junior Marcus Teal broke on the ball and knocked it down at the goal line.\n\n\"I have watched that kid play since he was nine,\" Verity Central coach Al Dombrowski said. \"He has never once been where he was supposed to be and made a play at the same time. Tonight he did both.\"\n\nThe Cardinals (3-4) got two rushing touchdowns from senior Cody Mundt, who carried twenty-six times for 118 yards, and a 34-yard scoring pass from Sean Okafor to Teal in the second quarter.\n\nMarrow Hill (5-2) outgained Verity Central 341 yards to 266 and lost two fumbles, both inside the Cardinals' thirty.\n\n\"Two turnovers and a fourth down,\" Miners coach Gary Speltz said. \"That is the game. That is always the game.\"\n\nAttendance was announced at 1,850, the largest home crowd since the field lights were replaced in 2005. The band played the fight song eleven times, which senior drum major Iris Fenn said afterward was \"about four more than we rehearsed.\"\n\nVerity Central plays at Pell next Friday at 7 p.m."
+      },
+      {
+        "id": "sports-xc",
+        "sectionId": "sports",
+        "headline": "Cross Country Takes Third at Regionals; Two Advance",
+        "dek": "Fenn and Ocasek qualify for state. The girls' team misses a team berth by nine points.",
+        "byline": "By Russ Pell, Sports",
+        "date": "October 20, 2007",
+        "featured": false,
+        "lead": "ARDO. The Verity Central girls' cross country team finished third at the regional meet Saturday, nine points behind runner-up Ardo Central and short of the two team berths to the state meet, but sophomore Iris Fenn and junior Kate Ocasek qualified individually.",
+        "body": "Fenn finished fourth in 19:44 on the Ardo course, a personal best by twenty-six seconds. Ocasek was ninth in 20:12.\n\n\"I ran the hill wrong last year and I ran it wrong the year before,\" Fenn said. \"I ran it right once and it cost me nothing.\"\n\nCoach Bette Farrow said the team result was the best since 2001 and that the margin came down to the fifth runner, where Verity Central's Dana Speltz finished 41st after leading the team most of the season.\n\n\"Dana had a bad day at the worst time and she knows it and I am not going to say another word about it in the newspaper,\" Farrow said.\n\nThe boys' team finished seventh of eleven. Senior Cody Teal was 22nd.\n\nThe state meet is November 3 at the Quarry Road park course, which will be the first state-qualifying event held in Verity County since 1989. The county roads department has agreed to grade the parking field.\n\nFarrow said she expects a crowd and asked that spectators not park on the shoulder of Route 62."
+      },
+      {
+        "id": "letters-petty",
+        "sectionId": "opinion",
+        "headline": "Letters: On the Matter of the Parking Lines at Hollis Market",
+        "dek": "Three letters, one subject, no resolution.",
+        "byline": "Letters to the Editor",
+        "date": "August 9, 2007",
+        "featured": false,
+        "lead": "The Ledger publishes letters from county residents. Letters are edited for length and for libel and for nothing else. Correspondents are limited to one letter every two weeks, a rule the editors have begun enforcing.",
+        "body": "[b]The lines are not the problem[/b]\n\nTo the Editor:\n\nI have read three letters now about the new parking lines at Hollis Market and I would like to say what everybody in the store already knows. The lines are fine. The lines are at the angle the paving contractor was told to put them at. The problem is that a certain party who lives on Fenn Avenue parks a dual-wheel pickup across two of them every Saturday morning and has done since June, and then complains at the counter that the spaces are too narrow.\n\nThey are not too narrow. The truck is too wide. I measured both.\n\nH. Speltz, Gridfall\n\n[b]Reply to Mr. Speltz[/b]\n\nTo the Editor:\n\nMr. Speltz measured my truck. I would like the readers to sit with that for a moment.\n\nThe spaces at Hollis Market were nine feet six before the repaving and they are eight feet nine now. I do not have to measure anything to know that because I have parked there since 1988 and I did not have this problem until June. If the county requires eight feet nine, the county is wrong, and if Hollis Market chose eight feet nine to fit four more cars in, Hollis Market should say so instead of sending a neighbor to the newspaper.\n\nI will continue to park where the truck fits.\n\nD. Korrigan, Gridfall\n\n[b]This has gone on long enough[/b]\n\nTo the Editor:\n\nI do not own a truck. I do not shop at Hollis Market. I have now read five letters about this parking lot in six weeks, including one that used the word \"pharisee.\"\n\nMeanwhile the branch line has closed, the school board is going to shut Bracken Lane, and the substation people still have not published their report. I would like the Ledger to consider whether the letters column is a public forum or a place where two men on the same street argue about a truck.\n\nIf they want to keep at it there is an entire board for this sort of thing at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]. I am told the county has a page about the market as well at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]. Either would be an improvement.\n\nM. Vance, Gridfall\n\n[i]Editor's note: The Ledger considers the letters column to be a public forum. Correspondence on the Hollis Market parking lot is closed.[/i]"
+      },
+      {
+        "id": "editorial",
+        "sectionId": "opinion",
+        "headline": "Our View: The Branch Line Deserved a Better Argument",
+        "dek": "The county spent two years arguing about crossings and never made the case for the railroad itself.",
+        "byline": "The Editorial Board",
+        "date": "March 30, 2007",
+        "featured": false,
+        "lead": "The last train left the Gridfall branch on Friday afternoon. Eleven people stood at the Bracken Lane crossing to watch it, which is about eleven more than attended the 2005 county meeting where the abandonment filing was first discussed.",
+        "body": "This newspaper does not believe Verity Rail acted in bad faith. A branch that moves four hundred cars a year is not a going concern, and the company said so in public, repeatedly, for three years.\n\nWhat this newspaper believes is that the county never made an argument.\n\nThere was a case to be made. The Quarry Road pit still ships. The fastener plant in Pell took two cars a month as recently as 2001 and stopped because the service window got worse, not because the demand went away. A short-line operator looked at the branch in 2004 and went away without a public explanation, and no county official has ever said what happened in that conversation.\n\nInstead the county spent two years on grade crossings. That was the argument residents could understand and the one commissioners were willing to have, because it was about pavement and pavement is a thing a county knows how to talk about.\n\nSixteen people lost jobs. Nine were offered a fifty-minute commute. The rest were offered nothing.\n\nCommissioner Renko says rail-banking will take two years if nobody sues. Somebody will sue. There are four adjacent landowners on the Tannery Flats stretch who have said as much in open meeting.\n\nWe would like to be wrong about that. We would like the trail to open in 2009 and to have written this editorial for nothing.\n\nThe railfans who came to photograph the last train, and who have been posting their pictures at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] and [url=synth://clipvault.tv/]clipvault.tv[/url], were mostly from out of county. Several of them asked local people why the line was closing. The answers they got, according to two of our reporters who were standing nearby, were not accurate.\n\nThat is the part that should bother the county. Not that the branch closed. That after two years of meetings, nobody in Gridfall could explain it."
+      }
+    ]
+  }
+}

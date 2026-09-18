@@ -1,0 +1,428 @@
+/* SYNTHNET :: forum skins
+   Every rule is scoped under its .skin-<name> class so nothing leaks.
+   Skins: phpbb-blue, ezboard-grey.  Usable down to 360px. */
+
+/* =====================================================================
+   phpbb-blue  --  subSilver-ish: blue/grey gradient bars, 1px cell rules
+   ===================================================================== */
+
+.skin-phpbb-blue,
+.skin-phpbb-blue * { box-sizing: border-box; }
+
+.skin-phpbb-blue {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000000;
+  background: #e5e5e5;
+  padding: 8px;
+}
+
+.skin-phpbb-blue a { color: #006699; text-decoration: none; }
+.skin-phpbb-blue a:hover { color: #dd6900; text-decoration: underline; }
+.skin-phpbb-blue a:visited { color: #5493b4; }
+.skin-phpbb-blue .dim { color: #4a5b66; }
+
+.skin-phpbb-blue .fbanner {
+  background: linear-gradient(#1a6ea8, #003f6e);
+  border: 1px solid #003f6e;
+  color: #ffffff;
+  padding: 10px 12px;
+}
+.skin-phpbb-blue .fbanner h1 { margin: 0; font-size: 19px; letter-spacing: .02em; }
+.skin-phpbb-blue .fbanner a,
+.skin-phpbb-blue .fbanner a:visited { color: #ffffff; }
+.skin-phpbb-blue .fdesc { font-size: 11px; color: #cfe3f2; margin-top: 2px; }
+.skin-phpbb-blue .fnav { margin-top: 8px; font-size: 11px; }
+.skin-phpbb-blue .fnav .navitem { color: #b9d6ea; margin-right: 12px; white-space: nowrap; }
+
+.skin-phpbb-blue .crumb { font-size: 11px; margin: 8px 0 6px; color: #3c4b55; }
+.skin-phpbb-blue .crumb .here { font-weight: bold; color: #000000; }
+.skin-phpbb-blue .crumb .sepa { color: #7b98ab; }
+
+.skin-phpbb-blue .cat { margin-bottom: 12px; }
+.skin-phpbb-blue .cat-head {
+  background: linear-gradient(#1a6ea8, #0b4a78);
+  border: 1px solid #7b98ab;
+  border-bottom: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+.skin-phpbb-blue .flist {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #7b98ab;
+  table-layout: fixed;
+}
+.skin-phpbb-blue .flist th {
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border: 1px solid #a9b8c2;
+  color: #10456d;
+  font-size: 11px;
+  text-align: left;
+  padding: 4px 6px;
+}
+.skin-phpbb-blue .flist td {
+  border: 1px solid #d6dfe6;
+  padding: 6px;
+  vertical-align: top;
+  background: #f4f7f9;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.skin-phpbb-blue .flist tr.alt td { background: #e9eef3; }
+.skin-phpbb-blue .flist tr.is-sticky td { background: #fdf6e3; }
+
+.skin-phpbb-blue .col-icon { width: 26px; }
+.skin-phpbb-blue .col-num { width: 62px; text-align: center; font-size: 11px; }
+.skin-phpbb-blue .col-last { width: 170px; font-size: 11px; }
+.skin-phpbb-blue .col-author { width: 110px; font-size: 11px; }
+
+.skin-phpbb-blue .ficon {
+  display: inline-block;
+  width: 15px; height: 15px;
+  border: 1px solid #17527f;
+  background: #3f7fb0;
+  border-radius: 2px;
+}
+.skin-phpbb-blue .ficon.off { background: #b8c6d2; border-color: #8ea3b3; }
+.skin-phpbb-blue .ficon.lock { background: #a33c3c; border-color: #742626; }
+.skin-phpbb-blue .ficon.pin { background: #d8a13a; border-color: #9c7020; }
+
+.skin-phpbb-blue .fboard-name { font-weight: bold; font-size: 12px; }
+.skin-phpbb-blue .fboard-desc { font-size: 11px; color: #44545f; margin-top: 2px; }
+.skin-phpbb-blue .lp-time { font-size: 11px; }
+.skin-phpbb-blue .lp-by { font-size: 11px; color: #44545f; }
+
+.skin-phpbb-blue .tbar {
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border: 1px solid #a9b8c2;
+  padding: 6px 8px;
+  margin: 8px 0 0;
+}
+.skin-phpbb-blue .tbar-title { font-weight: bold; font-size: 13px; color: #10456d; }
+.skin-phpbb-blue .tbar-sub { display: block; font-size: 11px; color: #44545f; margin-top: 2px; }
+
+.skin-phpbb-blue .ttitle { font-size: 12px; font-weight: bold; }
+.skin-phpbb-blue .tmeta { font-size: 11px; color: #44545f; margin-top: 2px; }
+.skin-phpbb-blue .tflag {
+  font-size: 10px; font-weight: bold; text-transform: uppercase;
+  margin-right: 5px; padding: 1px 4px; border-radius: 2px;
+}
+.skin-phpbb-blue .tflag.sticky { background: #d8a13a; color: #3a2a06; }
+.skin-phpbb-blue .tflag.locked { background: #a33c3c; color: #ffffff; }
+.skin-phpbb-blue .lockednote {
+  background: #fdf0f0; border: 1px solid #d6a2a2;
+  padding: 6px 8px; font-size: 11px; margin-top: 6px;
+}
+
+.skin-phpbb-blue .post {
+  display: flex;
+  border: 1px solid #7b98ab;
+  background: #ffffff;
+  margin: 8px 0;
+}
+.skin-phpbb-blue .post-author {
+  width: 150px;
+  flex: 0 0 150px;
+  background: #e9eef3;
+  border-right: 1px solid #c3d0da;
+  padding: 8px;
+  text-align: center;
+  font-size: 11px;
+}
+.skin-phpbb-blue .avatar {
+  width: 48px; height: 48px; line-height: 48px;
+  margin: 0 auto 6px;
+  border: 1px solid #7b98ab;
+  color: #ffffff; font-weight: bold; font-size: 15px;
+  overflow: hidden;
+}
+.skin-phpbb-blue .aname { font-weight: bold; color: #10456d; font-size: 12px; }
+.skin-phpbb-blue .atitle { font-style: italic; color: #44545f; }
+.skin-phpbb-blue .ameta { color: #5a6b76; }
+.skin-phpbb-blue .post-main { flex: 1 1 auto; min-width: 0; }
+.skin-phpbb-blue .post-head {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border-bottom: 1px solid #a9b8c2;
+  padding: 4px 8px; font-size: 11px; color: #10456d;
+}
+.skin-phpbb-blue .perma { font-weight: bold; }
+.skin-phpbb-blue .post-body {
+  padding: 10px; font-size: 12px; line-height: 1.55;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-phpbb-blue .post-body p { margin: 0 0 .8em; }
+.skin-phpbb-blue .post-body blockquote,
+.skin-phpbb-blue .post-body .quote {
+  background: #eaedf3; border: 1px solid #b7c2cd; border-left: 3px solid #7b98ab;
+  margin: .6em 0; padding: 6px 8px; font-size: 11px;
+}
+.skin-phpbb-blue .post-body pre,
+.skin-phpbb-blue .post-body .code {
+  font-family: "Courier New", Courier, monospace; font-size: 11px;
+  background: #faf9f0; border: 1px dashed #9aa0a6;
+  padding: 6px 8px; margin: .6em 0; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-phpbb-blue .post-body ul { margin: .5em 0 .8em 1.2em; padding: 0; }
+.skin-phpbb-blue .post-body img { max-width: 100%; height: auto; }
+.skin-phpbb-blue .sep { border-top: 1px solid #c3d0da; margin: 4px 10px; }
+.skin-phpbb-blue .sig { padding: 6px 10px 10px; font-size: 11px; color: #4a5860; }
+
+.skin-phpbb-blue .pager { font-size: 11px; margin: 8px 0; color: #44545f; }
+.skin-phpbb-blue .pager .pg-label { color: #10456d; }
+.skin-phpbb-blue .pager a,
+.skin-phpbb-blue .pager .cur {
+  display: inline-block; padding: 1px 5px; margin: 1px 0;
+  border: 1px solid #a9b8c2; background: #e9eef3;
+}
+.skin-phpbb-blue .pager .cur { background: #ffffff; border-color: #006699; color: #000000; }
+.skin-phpbb-blue .pager .pg-sep { display: none; }
+.skin-phpbb-blue .pager .pg-gap { display: inline-block; width: 8px; }
+
+.skin-phpbb-blue .boardfoot { font-size: 11px; margin: 8px 0; }
+.skin-phpbb-blue .backlink { font-weight: bold; }
+
+.skin-phpbb-blue .fbottom {
+  background: #ffffff; border: 1px solid #7b98ab;
+  padding: 8px; margin-top: 12px; font-size: 11px;
+}
+.skin-phpbb-blue .fonline { margin-bottom: 4px; }
+.skin-phpbb-blue .fstats { border-top: 1px solid #d6dfe6; padding-top: 6px; margin-top: 6px; }
+.skin-phpbb-blue .legend { margin-top: 8px; color: #44545f; }
+.skin-phpbb-blue .legend .ficon { vertical-align: -2px; margin-right: 3px; }
+
+.skin-phpbb-blue .blank {
+  background: #ffffff; border: 1px solid #7b98ab;
+  padding: 14px; margin: 8px 0; color: #44545f;
+}
+.skin-phpbb-blue .err { border: 1px solid #7b98ab; background: #ffffff; margin: 10px 0; }
+.skin-phpbb-blue .err-head {
+  background: linear-gradient(#1a6ea8, #0b4a78); color: #ffffff;
+  font-weight: bold; padding: 5px 8px;
+}
+.skin-phpbb-blue .err-body { padding: 12px; }
+.skin-phpbb-blue .ffoot {
+  margin-top: 14px; font-size: 10px; color: #5a6b76; text-align: center;
+}
+
+@media (max-width: 620px) {
+  .skin-phpbb-blue { padding: 5px; }
+  .skin-phpbb-blue .col-num,
+  .skin-phpbb-blue .col-author { display: none; }
+  .skin-phpbb-blue .col-last { width: 120px; }
+}
+@media (max-width: 440px) {
+  /* The nav items are white-space:nowrap inside a fixed-width masthead, so on
+     a phone the last one ("Log in") was simply cut off at the edge with no
+     scroll and no wrap. Document scrollWidth was unaffected, which is why the
+     overflow check never caught it -- the clipping happened inside the banner.
+     Allow a second line and tighten the gaps. */
+  .skin-phpbb-blue .fnav { display: flex; flex-wrap: wrap; row-gap: 4px; }
+  .skin-phpbb-blue .fnav .navitem { margin-right: 10px; }
+  .skin-ezboard-grey .fnav { display: flex; flex-wrap: wrap; row-gap: 3px; }
+  .skin-ezboard-grey .fnav .navitem { margin-right: 7px; }
+  .skin-phpbb-blue .fbanner h1 { font-size: 16px; }
+  .skin-phpbb-blue .col-last { display: none; }
+  .skin-phpbb-blue .flist td,
+  .skin-phpbb-blue .flist th { padding: 5px 4px; }
+  .skin-phpbb-blue .post { display: block; }
+  .skin-phpbb-blue .post-author {
+    width: auto; flex: none;
+    display: flex; align-items: center; gap: 8px;
+    text-align: left; border-right: none;
+    border-bottom: 1px solid #c3d0da; padding: 6px;
+  }
+  .skin-phpbb-blue .post-author .avatar {
+    width: 34px; height: 34px; line-height: 34px; font-size: 12px; margin: 0;
+    flex: 0 0 34px;
+  }
+  .skin-phpbb-blue .aname,
+  .skin-phpbb-blue .atitle,
+  .skin-phpbb-blue .ameta { display: inline; margin-right: 8px; }
+  .skin-phpbb-blue .post-head { flex-wrap: wrap; }
+}
+
+/* =====================================================================
+   ezboard-grey  --  flatter, heavier borders, Verdana, cramped
+   ===================================================================== */
+
+.skin-ezboard-grey,
+.skin-ezboard-grey * { box-sizing: border-box; }
+
+.skin-ezboard-grey {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #111111;
+  background: #ffffff;
+  padding: 6px;
+}
+
+.skin-ezboard-grey a { color: #000080; text-decoration: underline; }
+.skin-ezboard-grey a:visited { color: #551a8b; }
+.skin-ezboard-grey a:hover { color: #cc0000; }
+.skin-ezboard-grey .dim { color: #555555; }
+
+.skin-ezboard-grey .fbanner {
+  background: #5d5d5d;
+  border: 2px solid #333333;
+  color: #ffffff;
+  padding: 6px 8px;
+}
+.skin-ezboard-grey .fbanner h1 { margin: 0; font-size: 16px; }
+.skin-ezboard-grey .fbanner a,
+.skin-ezboard-grey .fbanner a:visited { color: #ffffff; text-decoration: none; }
+.skin-ezboard-grey .fdesc { font-size: 10px; color: #eeeeee; }
+.skin-ezboard-grey .fnav { margin-top: 4px; font-size: 10px; }
+.skin-ezboard-grey .fnav .navitem { color: #ffffcc; margin-right: 8px; }
+
+.skin-ezboard-grey .crumb { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .crumb .here { font-weight: bold; }
+.skin-ezboard-grey .crumb .sepa { color: #666666; }
+
+.skin-ezboard-grey .cat { margin-bottom: 8px; }
+.skin-ezboard-grey .cat-head {
+  background: #666666; color: #ffffff; font-weight: bold;
+  padding: 3px 6px; border: 2px solid #333333; border-bottom: none;
+  font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+}
+
+.skin-ezboard-grey .flist {
+  width: 100%; border-collapse: collapse; background: #ffffff;
+  border: 2px solid #333333; table-layout: fixed;
+}
+.skin-ezboard-grey .flist th {
+  background: #cccccc; border: 2px solid #666666; color: #000000;
+  font-size: 10px; text-align: left; padding: 2px 4px; text-transform: uppercase;
+}
+.skin-ezboard-grey .flist td {
+  border: 2px solid #999999; padding: 3px 4px; vertical-align: top;
+  background: #ffffff; font-size: 11px;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-ezboard-grey .flist tr.alt td { background: #f0f0f0; }
+.skin-ezboard-grey .flist tr.is-sticky td { background: #ffffcc; }
+
+.skin-ezboard-grey .col-icon { width: 20px; }
+.skin-ezboard-grey .col-num { width: 52px; text-align: center; }
+.skin-ezboard-grey .col-last { width: 150px; }
+.skin-ezboard-grey .col-author { width: 100px; }
+
+.skin-ezboard-grey .ficon {
+  display: inline-block; width: 11px; height: 11px;
+  border: 1px solid #000000; background: #808080;
+}
+.skin-ezboard-grey .ficon.off { background: #dddddd; }
+.skin-ezboard-grey .ficon.lock { background: #000000; }
+.skin-ezboard-grey .ficon.pin { background: #ffcc00; }
+
+.skin-ezboard-grey .fboard-name { font-weight: bold; }
+.skin-ezboard-grey .fboard-desc { font-size: 10px; color: #444444; }
+.skin-ezboard-grey .lp-time,
+.skin-ezboard-grey .lp-by { font-size: 10px; }
+
+.skin-ezboard-grey .tbar {
+  background: #cccccc; border: 2px solid #333333;
+  padding: 3px 6px; margin-top: 6px;
+}
+.skin-ezboard-grey .tbar-title { font-weight: bold; font-size: 12px; }
+.skin-ezboard-grey .tbar-sub { display: block; font-size: 10px; color: #444444; }
+
+.skin-ezboard-grey .ttitle { font-weight: bold; }
+.skin-ezboard-grey .tmeta { font-size: 10px; color: #555555; }
+.skin-ezboard-grey .tflag { font-size: 10px; font-weight: bold; margin-right: 4px; }
+.skin-ezboard-grey .tflag.sticky { color: #996600; }
+.skin-ezboard-grey .tflag.locked { color: #cc0000; }
+.skin-ezboard-grey .lockednote {
+  border: 2px solid #cc0000; padding: 4px 6px; font-size: 10px; margin-top: 4px;
+}
+
+.skin-ezboard-grey .post {
+  display: flex; border: 2px solid #333333; margin: 6px 0; background: #ffffff;
+}
+.skin-ezboard-grey .post-author {
+  width: 122px; flex: 0 0 122px;
+  border-right: 2px solid #999999; background: #f0f0f0;
+  padding: 4px; text-align: center; font-size: 10px;
+}
+.skin-ezboard-grey .avatar {
+  width: 40px; height: 40px; line-height: 40px; margin: 0 auto 4px;
+  border: 2px solid #333333; color: #ffffff; font-weight: bold; font-size: 13px;
+}
+.skin-ezboard-grey .aname { font-weight: bold; font-size: 11px; }
+.skin-ezboard-grey .atitle { color: #444444; }
+.skin-ezboard-grey .ameta { color: #666666; }
+.skin-ezboard-grey .post-main { flex: 1 1 auto; min-width: 0; }
+.skin-ezboard-grey .post-head {
+  display: flex; justify-content: space-between; gap: 6px;
+  background: #cccccc; border-bottom: 2px solid #999999;
+  padding: 2px 5px; font-size: 10px;
+}
+.skin-ezboard-grey .post-body {
+  padding: 6px; font-size: 11px; line-height: 1.45;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-ezboard-grey .post-body p { margin: 0 0 .7em; }
+.skin-ezboard-grey .post-body blockquote,
+.skin-ezboard-grey .post-body .quote {
+  border: 2px solid #999999; background: #f6f6f6;
+  margin: .5em 0; padding: 4px 6px; font-size: 10px;
+}
+.skin-ezboard-grey .post-body pre,
+.skin-ezboard-grey .post-body .code {
+  font-family: "Courier New", monospace; font-size: 10px;
+  border: 2px solid #999999; background: #f0f0f0;
+  padding: 4px 6px; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-ezboard-grey .post-body ul { margin: .4em 0 .6em 1.1em; padding: 0; }
+.skin-ezboard-grey .post-body img { max-width: 100%; height: auto; }
+.skin-ezboard-grey .sep { border-top: 2px solid #999999; margin: 3px 6px; }
+.skin-ezboard-grey .sig { padding: 4px 6px 6px; font-size: 10px; color: #555555; }
+
+.skin-ezboard-grey .pager { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .pager a,
+.skin-ezboard-grey .pager .cur {
+  display: inline-block; padding: 0 4px; border: 2px solid #999999; margin: 1px 0;
+}
+.skin-ezboard-grey .pager .cur { background: #cccccc; }
+.skin-ezboard-grey .pager .pg-sep { display: none; }
+.skin-ezboard-grey .pager .pg-gap { display: inline-block; width: 6px; }
+
+.skin-ezboard-grey .boardfoot { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .fbottom {
+  border: 2px solid #333333; padding: 6px; margin-top: 8px; font-size: 10px;
+}
+.skin-ezboard-grey .fstats { border-top: 2px solid #999999; margin-top: 4px; padding-top: 4px; }
+.skin-ezboard-grey .legend { margin-top: 5px; color: #555555; }
+.skin-ezboard-grey .legend .ficon { vertical-align: -1px; margin-right: 2px; }
+.skin-ezboard-grey .blank { border: 2px solid #999999; padding: 10px; margin: 6px 0; color: #555555; }
+.skin-ezboard-grey .err { border: 2px solid #333333; margin: 8px 0; }
+.skin-ezboard-grey .err-head { background: #666666; color: #ffffff; font-weight: bold; padding: 3px 6px; }
+.skin-ezboard-grey .err-body { padding: 10px; }
+.skin-ezboard-grey .ffoot { margin-top: 10px; font-size: 10px; color: #666666; text-align: center; }
+
+@media (max-width: 620px) {
+  .skin-ezboard-grey { padding: 4px; }
+  .skin-ezboard-grey .col-num,
+  .skin-ezboard-grey .col-author { display: none; }
+  .skin-ezboard-grey .col-last { width: 110px; }
+}
+@media (max-width: 440px) {
+  .skin-ezboard-grey .col-last { display: none; }
+  .skin-ezboard-grey .post { display: block; }
+  .skin-ezboard-grey .post-author {
+    width: auto; flex: none; display: flex; align-items: center; gap: 6px;
+    text-align: left; border-right: none; border-bottom: 2px solid #999999;
+  }
+  .skin-ezboard-grey .post-author .avatar {
+    width: 30px; height: 30px; line-height: 30px; font-size: 11px; margin: 0; flex: 0 0 30px;
+  }
+  .skin-ezboard-grey .aname,
+  .skin-ezboard-grey .atitle,
+  .skin-ezboard-grey .ameta { display: inline; margin-right: 6px; }
+}

@@ -1,0 +1,408 @@
+/* SYNTHNET :: social skins
+   Every rule is scoped under its .skin-<name> class so nothing leaks.
+   Skins: bluebird, myspace-black.  Usable down to 360px. */
+
+/* =====================================================================
+   bluebird  --  clean white, blue links, round avatars
+   ===================================================================== */
+
+.skin-bluebird,
+.skin-bluebird * { box-sizing: border-box; }
+
+.skin-bluebird {
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #14171a;
+  background: #ffffff;
+  padding: 0 0 20px;
+}
+
+.skin-bluebird a { color: #16699f; text-decoration: none; }
+.skin-bluebird a:visited { color: #16699f; }
+.skin-bluebird a:hover { text-decoration: underline; }
+.skin-bluebird .dim { color: #657786; }
+
+.skin-bluebird .sn-top {
+  background: #1b95e0; color: #ffffff; padding: 8px 12px;
+}
+.skin-bluebird .sn-brand { font-size: 18px; font-weight: bold; }
+.skin-bluebird .sn-brand a,
+.skin-bluebird .sn-brand a:visited { color: #ffffff; }
+.skin-bluebird .sn-nav { margin-top: 5px; font-size: 12px; }
+.skin-bluebird .sn-nav a,
+.skin-bluebird .sn-nav a:visited { color: #d8ecfa; margin-right: 12px; }
+.skin-bluebird .sn-nav .navitem { color: #bcdef5; margin-right: 12px; }
+.skin-bluebird .sn-here { font-size: 12px; color: #e8f4fd; margin-top: 3px; }
+
+.skin-bluebird .sn-layout {
+  display: flex; align-items: flex-start; gap: 14px;
+  max-width: 900px; margin: 0 auto; padding: 14px 12px;
+}
+.skin-bluebird .sn-side { flex: 0 0 258px; width: 258px; }
+.skin-bluebird .sn-main { flex: 1 1 auto; min-width: 0; }
+
+.skin-bluebird .av {
+  display: inline-block; width: 40px; height: 40px; line-height: 40px;
+  border-radius: 50%; text-align: center; color: #ffffff;
+  font-weight: bold; font-size: 13px; flex: 0 0 40px; overflow: hidden;
+}
+.skin-bluebird .av.big {
+  width: 64px; height: 64px; line-height: 64px; font-size: 20px; flex: 0 0 64px;
+}
+
+.skin-bluebird .pcard {
+  border: 1px solid #e1e8ed; border-radius: 6px; padding: 12px; background: #ffffff;
+}
+.skin-bluebird .pcard-head { display: flex; gap: 10px; align-items: center; }
+.skin-bluebird .pid { min-width: 0; }
+.skin-bluebird .pname { font-weight: bold; font-size: 15px; }
+.skin-bluebird .phandle { color: #657786; font-size: 13px; }
+.skin-bluebird .pbio { margin-top: 8px; font-size: 13px; }
+.skin-bluebird .pmeta { margin-top: 8px; font-size: 13px; color: #657786; }
+.skin-bluebird .prow { margin-bottom: 2px; }
+.skin-bluebird .pk { display: inline-block; min-width: 68px; color: #657786; }
+.skin-bluebird .pv { color: #14171a; }
+.skin-bluebird .pcounts { margin-top: 10px; font-size: 13px; color: #657786; }
+.skin-bluebird .pcount { margin-right: 12px; }
+.skin-bluebird .pcount strong { color: #14171a; }
+.skin-bluebird .pactions { margin-top: 10px; }
+.skin-bluebird .btn {
+  display: inline-block; border: 1px solid #16699f; border-radius: 14px;
+  /* Was #1b95e0 at 3.27:1, the same value already corrected on the link
+     rule. Border darkened with it so the capsule still reads as one part. */
+  color: #16699f; font-size: 12px; font-weight: bold;
+  padding: 4px 12px; margin: 0 6px 4px 0; background: #ffffff; cursor: default;
+}
+.skin-bluebird .btn.dis { border-color: #ccd6dd; color: #657786; }
+
+.skin-bluebird .friends {
+  margin-top: 14px; border: 1px solid #e1e8ed; border-radius: 6px; padding: 12px;
+}
+.skin-bluebird .friends-head { font-weight: bold; font-size: 13px; margin-bottom: 8px; }
+.skin-bluebird .fcountall { font-weight: normal; color: #657786; }
+.skin-bluebird .fgrid { display: flex; flex-wrap: wrap; gap: 10px; }
+.skin-bluebird .fcell {
+  width: 68px; text-align: center; color: #14171a; text-decoration: none;
+}
+.skin-bluebird .fcell .fname {
+  display: block; font-size: 11px; margin-top: 4px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.skin-bluebird .sn-compose {
+  border: 1px solid #e1e8ed; border-radius: 6px; padding: 10px; margin-bottom: 12px;
+}
+.skin-bluebird .compose-label { font-size: 13px; color: #657786; margin-bottom: 6px; }
+.skin-bluebird .compose-box {
+  display: block; height: 42px; border: 1px solid #ccd6dd; border-radius: 4px;
+  background: #f5f8fa; margin-bottom: 8px;
+}
+
+.skin-bluebird .post {
+  border-bottom: 1px solid #e1e8ed; padding: 12px 2px;
+}
+.skin-bluebird .post.single { border-bottom: none; }
+.skin-bluebird .p-row { display: flex; gap: 10px; align-items: flex-start; }
+.skin-bluebird .p-main { flex: 1 1 auto; min-width: 0; }
+.skin-bluebird .p-head { font-size: 14px; }
+.skin-bluebird .p-name { font-weight: bold; }
+.skin-bluebird .p-name a,
+.skin-bluebird .p-name a:visited { color: #14171a; }
+.skin-bluebird .p-handle,
+.skin-bluebird .p-dot,
+.skin-bluebird .p-time { color: #657786; font-size: 13px; }
+.skin-bluebird a.p-time,
+.skin-bluebird a.p-time:visited { color: #657786; }
+.skin-bluebird .p-text {
+  margin-top: 3px; overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-bluebird .p-text p { margin: 0 0 .6em; }
+.skin-bluebird .p-text blockquote,
+.skin-bluebird .p-text .quote {
+  border-left: 3px solid #ccd6dd; margin: .5em 0; padding: 2px 10px; color: #4a5560;
+}
+.skin-bluebird .p-text pre,
+.skin-bluebird .p-text .code {
+  font-family: Menlo, Consolas, monospace; font-size: 12px;
+  background: #f5f8fa; border: 1px solid #e1e8ed; border-radius: 4px;
+  padding: 6px 8px; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-bluebird .p-text img { max-width: 100%; height: auto; border-radius: 4px; }
+.skin-bluebird .p-actions { margin-top: 6px; font-size: 12px; color: #657786; }
+.skin-bluebird .act { margin-right: 16px; }
+.skin-bluebird .act b { color: #14171a; }
+
+.skin-bluebird .replies {
+  margin: 8px 0 0 50px; border-left: 2px solid #e1e8ed; padding-left: 10px;
+}
+.skin-bluebird .reply { display: flex; gap: 8px; padding: 8px 0; }
+.skin-bluebird .reply .av {
+  width: 28px; height: 28px; line-height: 28px; font-size: 11px; flex: 0 0 28px;
+}
+.skin-bluebird .reply.hid { display: none; }
+.skin-bluebird .more-btn {
+  border: none; background: none; color: #16699f; font-size: 13px;
+  padding: 4px 0; cursor: pointer; font-family: inherit;
+}
+.skin-bluebird .more-btn:hover { text-decoration: underline; }
+
+.skin-bluebird .profile-head {
+  border: 1px solid #e1e8ed; border-radius: 6px; overflow: hidden; margin-bottom: 12px;
+}
+.skin-bluebird .ph-banner {
+  display: block; height: 84px;
+  background: linear-gradient(120deg, #1b95e0, #8ed0f5);
+}
+.skin-bluebird .ph-row {
+  display: flex; gap: 12px; align-items: flex-start; padding: 12px; flex-wrap: wrap;
+}
+.skin-bluebird .ph-id { flex: 1 1 180px; min-width: 0; }
+
+.skin-bluebird .crumbline { font-size: 13px; color: #657786; margin-bottom: 8px; }
+.skin-bluebird .crumbline .here { color: #14171a; font-weight: bold; }
+.skin-bluebird .p-fulltime {
+  font-size: 13px; color: #657786; border-top: 1px solid #e1e8ed;
+  margin-top: 10px; padding-top: 10px;
+}
+.skin-bluebird .blank {
+  border: 1px dashed #ccd6dd; border-radius: 6px; padding: 18px;
+  color: #657786; text-align: center;
+}
+.skin-bluebird .err { max-width: 620px; margin: 30px auto; padding: 0 14px; }
+.skin-bluebird .err h2 { font-size: 20px; margin: 0 0 8px; }
+.skin-bluebird .sn-foot {
+  max-width: 900px; margin: 0 auto; padding: 12px; font-size: 12px; color: #657786;
+}
+
+@media (max-width: 720px) {
+  .skin-bluebird .sn-layout { display: block; padding: 10px; }
+  .skin-bluebird .sn-side { width: auto; margin-bottom: 12px; }
+  .skin-bluebird .replies { margin-left: 16px; }
+}
+@media (max-width: 400px) {
+  .skin-bluebird { font-size: 13px; }
+  .skin-bluebird .av { width: 34px; height: 34px; line-height: 34px; flex: 0 0 34px; font-size: 12px; }
+  .skin-bluebird .av.big { width: 52px; height: 52px; line-height: 52px; font-size: 17px; flex: 0 0 52px; }
+  .skin-bluebird .fcell { width: 60px; }
+}
+
+/* =====================================================================
+   myspace-black  --  black, loud accent, tiled, dense, columns slightly
+   off in the way these pages always were. Affectionately.
+   ===================================================================== */
+
+.skin-myspace-black,
+.skin-myspace-black * { box-sizing: border-box; }
+
+.skin-myspace-black {
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.35;
+  color: #e8e8e8;
+  background-color: #000000;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 102, 0, .07) 0 6px, rgba(0, 0, 0, 0) 6px 12px),
+    repeating-linear-gradient(-45deg, rgba(0, 192, 255, .05) 0 6px, rgba(0, 0, 0, 0) 6px 12px);
+  padding: 0 0 24px;
+}
+
+.skin-myspace-black a { color: #00c0ff; text-decoration: underline; }
+.skin-myspace-black a:visited { color: #b48cff; }
+.skin-myspace-black a:hover { color: #ff6600; }
+.skin-myspace-black .dim { color: #999999; }
+
+.skin-myspace-black .sn-top {
+  background: #ff6600;
+  border-bottom: 3px solid #ffcc00;
+  color: #000000;
+  padding: 5px 8px;
+}
+.skin-myspace-black .sn-brand { font-size: 17px; font-weight: bold; letter-spacing: -.02em; }
+.skin-myspace-black .sn-brand a,
+.skin-myspace-black .sn-brand a:visited { color: #000000; text-decoration: none; }
+.skin-myspace-black .sn-nav { font-size: 10px; margin-top: 3px; }
+.skin-myspace-black .sn-nav a,
+.skin-myspace-black .sn-nav a:visited { color: #000000; margin-right: 9px; }
+.skin-myspace-black .sn-nav .navitem { color: #4d2200; margin-right: 9px; }
+.skin-myspace-black .sn-here { font-size: 10px; color: #331500; }
+
+.skin-myspace-black .sn-layout {
+  display: flex; align-items: flex-start; gap: 6px;
+  max-width: 812px; margin: 8px auto; padding: 0 6px;
+}
+.skin-myspace-black .sn-side { flex: 0 0 302px; width: 302px; }
+.skin-myspace-black .sn-main { flex: 1 1 auto; min-width: 0; }
+
+.skin-myspace-black .av {
+  display: inline-block; width: 44px; height: 44px; line-height: 44px;
+  text-align: center; color: #000000; font-weight: bold; font-size: 13px;
+  border: 2px solid #ff6600; flex: 0 0 44px; overflow: hidden;
+}
+.skin-myspace-black .av.big {
+  width: 76px; height: 76px; line-height: 76px; font-size: 22px; flex: 0 0 76px;
+}
+
+.skin-myspace-black .pcard {
+  background: #0a0a0a; border: 2px solid #ff6600; padding: 6px; margin-bottom: 8px;
+}
+.skin-myspace-black .pcard-head { display: flex; gap: 7px; align-items: flex-start; }
+.skin-myspace-black .pid { min-width: 0; }
+.skin-myspace-black .pname { font-size: 14px; font-weight: bold; color: #ffcc00; }
+.skin-myspace-black .phandle { color: #00c0ff; font-size: 10px; }
+.skin-myspace-black .pbio {
+  margin-top: 6px; border-top: 1px dashed #444444; padding-top: 5px; font-size: 10px;
+}
+.skin-myspace-black .pmeta { margin-top: 6px; font-size: 10px; }
+.skin-myspace-black .prow { border-bottom: 1px dotted #333333; padding: 1px 0; }
+.skin-myspace-black .pk { display: inline-block; width: 66px; color: #ff6600; font-weight: bold; }
+.skin-myspace-black .pv { color: #dddddd; }
+.skin-myspace-black .pcounts { margin-top: 6px; font-size: 10px; }
+.skin-myspace-black .pcount { margin-right: 10px; }
+.skin-myspace-black .pcount strong { color: #ffcc00; font-size: 12px; }
+.skin-myspace-black .pactions { margin-top: 7px; }
+.skin-myspace-black .btn {
+  display: inline-block; background: #ff6600; color: #000000; font-weight: bold;
+  font-size: 10px; padding: 2px 7px; margin: 0 4px 3px 0;
+  border: 1px solid #ffcc00; text-transform: uppercase; cursor: default;
+}
+.skin-myspace-black .btn.dis { background: #333333; color: #888888; border-color: #555555; }
+
+.skin-myspace-black .friends {
+  background: #0a0a0a; border: 2px solid #00c0ff; padding: 6px;
+}
+.skin-myspace-black .friends-head {
+  font-weight: bold; color: #00c0ff; font-size: 11px;
+  border-bottom: 1px solid #00c0ff; padding-bottom: 3px; margin-bottom: 6px;
+}
+.skin-myspace-black .fcountall { color: #888888; font-weight: normal; }
+.skin-myspace-black .fgrid { display: flex; flex-wrap: wrap; gap: 5px; }
+.skin-myspace-black .fcell {
+  width: 70px; text-align: center; color: #cccccc; text-decoration: none;
+  border: 1px solid #222222; padding: 3px 1px;
+}
+.skin-myspace-black .fcell:hover { border-color: #ff6600; }
+.skin-myspace-black .fcell .av { width: 38px; height: 38px; line-height: 38px; font-size: 11px; }
+.skin-myspace-black .fcell .fname {
+  display: block; font-size: 9px; margin-top: 2px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.skin-myspace-black .sn-compose {
+  background: #0a0a0a; border: 2px solid #333333; padding: 5px; margin-bottom: 7px;
+}
+.skin-myspace-black .compose-label { color: #ffcc00; font-size: 10px; margin-bottom: 4px; }
+.skin-myspace-black .compose-box {
+  display: block; height: 34px; background: #1a1a1a; border: 1px inset #555555; margin-bottom: 5px;
+}
+
+.skin-myspace-black .post {
+  background: #0a0a0a; border: 1px solid #333333;
+  border-left: 3px solid #ff6600; padding: 6px; margin-bottom: 6px;
+}
+.skin-myspace-black .post.single { border-left-color: #ffcc00; }
+.skin-myspace-black .p-row { display: flex; gap: 6px; align-items: flex-start; }
+.skin-myspace-black .p-main { flex: 1 1 auto; min-width: 0; }
+.skin-myspace-black .p-head { font-size: 10px; }
+.skin-myspace-black .p-name { font-weight: bold; }
+.skin-myspace-black .p-name a,
+.skin-myspace-black .p-name a:visited { color: #ffcc00; text-decoration: none; }
+.skin-myspace-black .p-handle { color: #00c0ff; }
+.skin-myspace-black .p-dot { color: #555555; }
+.skin-myspace-black .p-time,
+.skin-myspace-black a.p-time,
+.skin-myspace-black a.p-time:visited { color: #888888; text-decoration: none; }
+.skin-myspace-black .p-text {
+  margin-top: 4px; font-size: 11px; line-height: 1.4;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-myspace-black .p-text p { margin: 0 0 .55em; }
+.skin-myspace-black .p-text blockquote,
+.skin-myspace-black .p-text .quote {
+  background: #141414; border: 1px solid #444444; border-left: 3px solid #00c0ff;
+  margin: .4em 0; padding: 4px 6px; font-size: 10px; color: #cccccc;
+}
+.skin-myspace-black .p-text pre,
+.skin-myspace-black .p-text .code {
+  font-family: "Courier New", monospace; font-size: 10px; color: #9cff9c;
+  background: #101010; border: 1px solid #444444;
+  padding: 4px 6px; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-myspace-black .p-text ul { margin: .4em 0 .6em 1.1em; padding: 0; }
+.skin-myspace-black .p-text img { max-width: 100%; height: auto; border: 1px solid #444444; }
+.skin-myspace-black .p-actions {
+  margin-top: 5px; font-size: 10px; color: #999999;
+  border-top: 1px dotted #333333; padding-top: 4px;
+}
+.skin-myspace-black .act { margin-right: 10px; }
+.skin-myspace-black .act b { color: #ff6600; }
+
+.skin-myspace-black .replies {
+  margin: 5px 0 0 22px; border-left: 1px dashed #ff6600; padding-left: 6px;
+}
+.skin-myspace-black .reply {
+  display: flex; gap: 5px; padding: 4px 0; border-bottom: 1px dotted #262626;
+}
+.skin-myspace-black .reply .av {
+  width: 24px; height: 24px; line-height: 24px; font-size: 9px;
+  flex: 0 0 24px; border-width: 1px;
+}
+.skin-myspace-black .reply.hid { display: none; }
+.skin-myspace-black .more-btn {
+  background: #1a1a1a; color: #00c0ff; border: 1px solid #00c0ff;
+  font-family: inherit; font-size: 10px; padding: 2px 6px; margin-top: 4px; cursor: pointer;
+}
+.skin-myspace-black .more-btn:hover { background: #ff6600; color: #000000; border-color: #ffcc00; }
+
+.skin-myspace-black .profile-head {
+  background: #0a0a0a; border: 2px solid #ffcc00; margin-bottom: 7px;
+}
+.skin-myspace-black .ph-banner {
+  display: block; height: 62px;
+  background:
+    repeating-linear-gradient(90deg, #ff6600 0 14px, #000000 14px 28px);
+  border-bottom: 2px solid #ffcc00;
+}
+.skin-myspace-black .ph-row {
+  display: flex; gap: 8px; align-items: flex-start; padding: 6px; flex-wrap: wrap;
+}
+.skin-myspace-black .ph-id { flex: 1 1 150px; min-width: 0; }
+
+.skin-myspace-black .crumbline { font-size: 10px; color: #888888; margin-bottom: 5px; }
+.skin-myspace-black .crumbline .here { color: #ffcc00; }
+.skin-myspace-black .crumbline .sepa { color: #555555; }
+.skin-myspace-black .p-fulltime {
+  font-size: 10px; color: #888888; border-top: 1px dotted #333333;
+  margin-top: 6px; padding-top: 5px;
+}
+.skin-myspace-black .blank {
+  border: 1px dashed #555555; padding: 14px; text-align: center; color: #999999;
+}
+.skin-myspace-black .err { max-width: 560px; margin: 26px auto; padding: 0 10px; }
+.skin-myspace-black .err h2 { color: #ff6600; font-size: 16px; margin: 0 0 6px; }
+.skin-myspace-black .sn-foot {
+  max-width: 812px; margin: 0 auto; padding: 8px; font-size: 10px; color: #999999;
+}
+
+@media (max-width: 760px) {
+  .skin-myspace-black .sn-layout { display: block; }
+  .skin-myspace-black .sn-side { width: auto; margin-bottom: 8px; }
+}
+@media (max-width: 400px) {
+  .skin-myspace-black { font-size: 13px; }
+  .skin-myspace-black .av.big { width: 58px; height: 58px; line-height: 58px; font-size: 17px; flex: 0 0 58px; }
+  .skin-myspace-black .fcell { width: 62px; }
+  .skin-myspace-black .replies { margin-left: 8px; }
+  .skin-myspace-black .pk { width: 58px; }
+  .skin-myspace-black .sn-nav,
+  .skin-myspace-black .sn-here,
+  .skin-myspace-black .phandle,
+  .skin-myspace-black .pbio,
+  .skin-myspace-black .pmeta,
+  .skin-myspace-black .pcounts,
+  .skin-myspace-black .p-head,
+  .skin-myspace-black .p-actions,
+  .skin-myspace-black .crumbline,
+  .skin-myspace-black .p-fulltime,
+  .skin-myspace-black .sn-foot { font-size: 12px; }
+}

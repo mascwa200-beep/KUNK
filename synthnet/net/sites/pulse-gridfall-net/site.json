@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "domain": "pulse.gridfall.net",
+  "title": "Gridfall Pulse",
+  "type": "social",
+  "era": "2008",
+  "skin": "bluebird",
+  "description": "A small microblog for Gridfall and the rest of Verity County. Mostly road closures.",
+  "links": ["wiki.gridfall.net", "verityledger.com", "kestrel-journal.net", "clipvault.tv", "webring.gridfall.net"],
+  "data": {
+    "profile": {
+      "handle": "gridfallpulse",
+      "displayName": "Gridfall Pulse",
+      "avatarSeed": "pulse-logo",
+      "bio": "Short posts from Verity County. Run out of a back room on Ninth St by two people and a cat. Not affiliated with the county, the co-op, or [url=synth://verityledger.com/]the Ledger[/url]. Post what's actually happening.",
+      "location": "Gridfall, Verity County",
+      "joined": "March 2007",
+      "following": 212,
+      "followers": 1488,
+      "mood": "waiting on the plow"
+    },
+    "feed": [
+      {
+        "id": "p1",
+        "author": "Gridfall Pulse",
+        "handle": "gridfallpulse",
+        "avatarSeed": "pulse-logo",
+        "time": "Feb 12, 2008 6:41 AM",
+        "body": "Mill St closed between 4th and the bridge, water main. County says \"most of the day\" which means all of the day. Use 9th.",
+        "likes": 31,
+        "reposts": 14,
+        "replies": [
+          {
+            "id": "p1r1",
+            "author": "Tunde O.",
+            "handle": "toye_gf",
+            "avatarSeed": "toye",
+            "time": "Feb 12, 2008 6:58 AM",
+            "body": "9th is backed to the school already. Go Quarry Rd and come in behind the feed store."
+          },
+          {
+            "id": "p1r2",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Feb 12, 2008 7:22 AM",
+            "body": "Third main on Mill in fourteen months. All the same block."
+          },
+          {
+            "id": "p1r3",
+            "author": "Gridfall Pulse",
+            "handle": "gridfallpulse",
+            "avatarSeed": "pulse-logo",
+            "time": "Feb 12, 2008 4:10 PM",
+            "body": "Reopened 3:50pm. One lane. Plates still down over the trench."
+          }
+        ]
+      },
+      {
+        "id": "p2",
+        "author": "Junie Pell",
+        "handle": "juniep",
+        "avatarSeed": "junie",
+        "time": "Feb 12, 2008 8:15 AM",
+        "body": "LOST CAT. Grey tabby, white chin, no collar (i know, i know). Answers to Biscuit, mostly doesnt. Last seen behind the laundromat on 4th tues night. He is old and he is not smart. Please look in your garage.\n\n[img:photo:biscuit-on-chair]",
+        "likes": 96,
+        "reposts": 71,
+        "replies": [
+          {
+            "id": "p2r1",
+            "author": "Hettie L.",
+            "handle": "hettie_l",
+            "avatarSeed": "hettie",
+            "time": "Feb 12, 2008 9:02 AM",
+            "body": "Reposted. I'll check our shed tonight, we had a stray in it last winter."
+          },
+          {
+            "id": "p2r2",
+            "author": "gnash",
+            "handle": "gnash_88",
+            "avatarSeed": "gnash",
+            "time": "Feb 12, 2008 11:40 AM",
+            "body": "theres a grey cat that sits on the wall by the car wash every morning. dont know if its yours but its a grey cat"
+          },
+          {
+            "id": "p2r3",
+            "author": "Junie Pell",
+            "handle": "juniep",
+            "avatarSeed": "junie",
+            "time": "Feb 12, 2008 12:05 PM",
+            "body": "thats the car wash cat, hes been there since 2004, but thank you"
+          }
+        ]
+      },
+      {
+        "id": "p3",
+        "author": "Junie Pell",
+        "handle": "juniep",
+        "avatarSeed": "junie",
+        "time": "Feb 14, 2008 7:33 PM",
+        "body": "FOUND. he was in the crawl space UNDER OUR OWN HOUSE the entire time. two days. i put up eleven signs.\n\nthank you everyone, genuinely.",
+        "likes": 204,
+        "reposts": 38,
+        "replies": [
+          {
+            "id": "p3r1",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Feb 14, 2008 7:49 PM",
+            "body": "Best news I've had all week and that is not saying much about the week."
+          },
+          {
+            "id": "p3r2",
+            "author": "Tunde O.",
+            "handle": "toye_gf",
+            "avatarSeed": "toye",
+            "time": "Feb 14, 2008 8:11 PM",
+            "body": "Leave one sign up. He'll do it again."
+          }
+        ]
+      },
+      {
+        "id": "p4",
+        "author": "Gridfall Pulse",
+        "handle": "gridfallpulse",
+        "avatarSeed": "pulse-logo",
+        "time": "Feb 15, 2008 10:02 AM",
+        "body": "Blue Kestrel is closing. For real this time. Delia posted a letter in the window, we went down and read it. Last service is the 29th.\n\n[img:photo:kestrel-window-letter]",
+        "likes": 187,
+        "reposts": 122,
+        "replies": [
+          {
+            "id": "p4r1",
+            "author": "Nedra O.",
+            "handle": "nedra_o",
+            "avatarSeed": "nedra",
+            "time": "Feb 15, 2008 10:20 AM",
+            "body": "I have read that letter three times and I am going to go and read it again."
+          },
+          {
+            "id": "p4r2",
+            "author": "Curtis Flenn",
+            "handle": "cflenn",
+            "avatarSeed": "curtis",
+            "time": "Feb 15, 2008 11:04 AM",
+            "body": "She's 71 and she's done it alone since Ken died. Nobody is allowed to be angry about this one."
+          },
+          {
+            "id": "p4r3",
+            "author": "dmc",
+            "handle": "dmc_marchfield",
+            "avatarSeed": "dmc",
+            "time": "Feb 15, 2008 12:30 PM",
+            "body": "the kestrel journal guy has been saying this since like 2004 lol. broken clock"
+          },
+          {
+            "id": "p4r4",
+            "author": "Gridfall Pulse",
+            "handle": "gridfallpulse",
+            "avatarSeed": "pulse-logo",
+            "time": "Feb 15, 2008 1:15 PM",
+            "body": "[url=synth://kestrel-journal.net/]kestrel-journal.net[/url] has the full text of the letter up already, he typed it out. Credit where it's due."
+          }
+        ]
+      },
+      {
+        "id": "p5",
+        "author": "Howard Prewitt",
+        "handle": "hprewitt",
+        "avatarSeed": "prewitt",
+        "time": "Feb 15, 2008 2:02 PM",
+        "body": "\"Last service\" is the wrong phrase for a diner. Service is what a restaurant does in an evening. The word you want is \"last day of trading\" or simply \"last day.\"",
+        "likes": 3,
+        "reposts": 0,
+        "replies": [
+          {
+            "id": "p5r1",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Feb 15, 2008 2:14 PM",
+            "body": "Howard."
+          },
+          {
+            "id": "p5r2",
+            "author": "Howard Prewitt",
+            "handle": "hprewitt",
+            "avatarSeed": "prewitt",
+            "time": "Feb 15, 2008 2:31 PM",
+            "body": "I am aware of the timing. I have been sat here twenty minutes deciding whether to post it and I posted it, which tells you something about me."
+          }
+        ]
+      },
+      {
+        "id": "p6",
+        "author": "Gridfall Pulse",
+        "handle": "gridfallpulse",
+        "avatarSeed": "pulse-logo",
+        "time": "Feb 19, 2008 5:48 PM",
+        "body": "Power's out. East side, Quarry Rd and below. Went about 5:41. Co-op line is engaged.",
+        "likes": 44,
+        "reposts": 29,
+        "replies": [
+          {
+            "id": "p6r1",
+            "author": "Curtis Flenn",
+            "handle": "cflenn",
+            "avatarSeed": "curtis",
+            "time": "Feb 19, 2008 5:52 PM",
+            "body": "Out here too. 5:41 matches. Posting from the laptop battery."
+          }
+        ]
+      },
+      {
+        "id": "p7",
+        "author": "Curtis Flenn",
+        "handle": "cflenn",
+        "avatarSeed": "curtis",
+        "time": "Feb 19, 2008 6:04 PM",
+        "body": "5:41 out. No bang, no flicker, just gone. Street is completely dark, you can see the stars over the hardware store which I have never once seen.",
+        "likes": 22,
+        "reposts": 5,
+        "replies": [
+          {
+            "id": "p7r1",
+            "author": "Hettie L.",
+            "handle": "hettie_l",
+            "avatarSeed": "hettie",
+            "time": "Feb 19, 2008 6:09 PM",
+            "body": "We're fine on 9th. Lights are on. Feels rude."
+          }
+        ]
+      },
+      {
+        "id": "p8",
+        "author": "Curtis Flenn",
+        "handle": "cflenn",
+        "avatarSeed": "curtis",
+        "time": "Feb 19, 2008 6:22 PM",
+        "body": "Truck just went past toward the substation. Two of them. Not hurrying, which I take as good news.\n\nFound the candles. They were in the drawer with the batteries, which is where I said they were and where my wife said they were not.",
+        "likes": 37,
+        "reposts": 2,
+        "replies": [
+          {
+            "id": "p8r1",
+            "author": "Nedra O.",
+            "handle": "nedra_o",
+            "avatarSeed": "nedra",
+            "time": "Feb 19, 2008 6:30 PM",
+            "body": "Do not gloat about the drawer, Curtis. It's a long evening."
+          }
+        ]
+      },
+      {
+        "id": "p9",
+        "author": "Curtis Flenn",
+        "handle": "cflenn",
+        "avatarSeed": "curtis",
+        "time": "Feb 19, 2008 7:15 PM",
+        "body": "Ate cold beans standing at the counter in the dark like a man in a film about a man who has given up. 94 minutes.",
+        "likes": 63,
+        "reposts": 11,
+        "replies": [
+          {
+            "id": "p9r1",
+            "author": "gnash",
+            "handle": "gnash_88",
+            "avatarSeed": "gnash",
+            "time": "Feb 19, 2008 7:20 PM",
+            "body": "you have a gas stove curtis"
+          },
+          {
+            "id": "p9r2",
+            "author": "Curtis Flenn",
+            "handle": "cflenn",
+            "avatarSeed": "curtis",
+            "time": "Feb 19, 2008 7:24 PM",
+            "body": "I am aware of that now."
+          }
+        ]
+      },
+      {
+        "id": "p10",
+        "author": "Curtis Flenn",
+        "handle": "cflenn",
+        "avatarSeed": "curtis",
+        "time": "Feb 19, 2008 8:37 PM",
+        "body": "Back on. 8:36. Three hours less five minutes.\n\nEvery clock in this house is flashing and one of them I do not know how to set. It has been flashing since the substation fire in 03 and I had honestly stopped seeing it.",
+        "likes": 71,
+        "reposts": 8,
+        "replies": [
+          {
+            "id": "p10r1",
+            "author": "Gridfall Pulse",
+            "handle": "gridfallpulse",
+            "avatarSeed": "pulse-logo",
+            "time": "Feb 19, 2008 8:44 PM",
+            "body": "Confirmed back on across the east side. Co-op says a feeder fault, no further detail. Thanks Curtis, you were faster than the co-op by about two hours."
+          },
+          {
+            "id": "p10r2",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Feb 19, 2008 9:02 PM",
+            "body": "\"Feeder fault\" is doing a lot of work there. Background on the 03 fire if anyone's new: [url=synth://wiki.gridfall.net/wiki/gridfall-substation-fire]wiki.gridfall.net[/url]"
+          }
+        ]
+      },
+      {
+        "id": "p11",
+        "author": "Tunde O.",
+        "handle": "toye_gf",
+        "avatarSeed": "toye",
+        "time": "Feb 20, 2008 8:11 AM",
+        "body": "Commission meeting last night ran to 11:20 and got through four of eleven items. Forty minutes of it was the sign ordinance. Forty minutes. On signs.",
+        "likes": 19,
+        "reposts": 6,
+        "replies": [
+          {
+            "id": "p11r1",
+            "author": "Ray Dunleavy",
+            "handle": "raydun",
+            "avatarSeed": "raydun",
+            "time": "Feb 20, 2008 8:40 AM",
+            "body": "It is forty minutes on signs because the item after it was the utilities budget and one of them wanted it pushed to March. Watch who moved to extend debate. It is always the same two."
+          },
+          {
+            "id": "p11r2",
+            "author": "PRINCE_OF_ELM_ST",
+            "handle": "prince_elm",
+            "avatarSeed": "princeelm",
+            "time": "Feb 20, 2008 9:15 AM",
+            "body": "ray sees a conspiracy in a parking ticket. some people just like talking about signs"
+          },
+          {
+            "id": "p11r3",
+            "author": "Ray Dunleavy",
+            "handle": "raydun",
+            "avatarSeed": "raydun",
+            "time": "Feb 20, 2008 9:33 AM",
+            "body": "The budget item has been pushed at four consecutive meetings. That is not a conspiracy, it is a calendar, and anyone can go and look at it."
+          }
+        ]
+      },
+      {
+        "id": "p12",
+        "author": "Gridfall Pulse",
+        "handle": "gridfallpulse",
+        "avatarSeed": "pulse-logo",
+        "time": "Feb 21, 2008 7:05 AM",
+        "body": "School's on a 2 hour delay. Roads are fine in town, it's the county routes. Marchfield buses aren't running at all.",
+        "likes": 52,
+        "reposts": 44,
+        "replies": [
+          {
+            "id": "p12r1",
+            "author": "Junie Pell",
+            "handle": "juniep",
+            "avatarSeed": "junie",
+            "time": "Feb 21, 2008 7:19 AM",
+            "body": "can confirm, im at the school, we have four staff and no children"
+          }
+        ]
+      },
+      {
+        "id": "p13",
+        "author": "Hettie L.",
+        "handle": "hettie_l",
+        "avatarSeed": "hettie",
+        "time": "Feb 22, 2008 6:50 PM",
+        "body": "Somebody has put a bench at the top of the quarry path. Just a bench. Nobody knows who. It is a good bench, it's bolted down properly and it's in the right spot.",
+        "likes": 88,
+        "reposts": 17,
+        "replies": [
+          {
+            "id": "p13r1",
+            "author": "gnash",
+            "handle": "gnash_88",
+            "avatarSeed": "gnash",
+            "time": "Feb 22, 2008 7:30 PM",
+            "body": "no comment"
+          },
+          {
+            "id": "p13r2",
+            "author": "Hettie L.",
+            "handle": "hettie_l",
+            "avatarSeed": "hettie",
+            "time": "Feb 22, 2008 7:41 PM",
+            "body": "gnash."
+          },
+          {
+            "id": "p13r3",
+            "author": "gnash",
+            "handle": "gnash_88",
+            "avatarSeed": "gnash",
+            "time": "Feb 22, 2008 8:02 PM",
+            "body": "i said no comment"
+          }
+        ]
+      },
+      {
+        "id": "p14",
+        "author": "dmc",
+        "handle": "dmc_marchfield",
+        "avatarSeed": "dmc",
+        "time": "Feb 24, 2008 3:12 PM",
+        "body": "put up a clip of the branch trackbed walk from cutlers lane, about 6 min, nothing happens in it, its just walking [url=synth://clipvault.tv/watch/trackbed-walk-feb08]clipvault.tv[/url]",
+        "likes": 27,
+        "reposts": 9,
+        "replies": [
+          {
+            "id": "p14r1",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Feb 24, 2008 4:01 PM",
+            "body": "Watched all six minutes. The bit where you go under the bridge and the sound changes is worth it."
+          }
+        ]
+      },
+      {
+        "id": "p15",
+        "author": "Nedra O.",
+        "handle": "nedra_o",
+        "avatarSeed": "nedra",
+        "time": "Feb 29, 2008 2:40 PM",
+        "body": "At the Kestrel. There is a line out the door and around past the barber's. Delia is at the register and she is not letting anyone else do it.\n\nThey ran out of pie at half eleven.",
+        "likes": 231,
+        "reposts": 96,
+        "replies": [
+          {
+            "id": "p15r1",
+            "author": "Junie Pell",
+            "handle": "juniep",
+            "avatarSeed": "junie",
+            "time": "Feb 29, 2008 2:55 PM",
+            "body": "im in the line. been in it 40 min. nobody is complaining which for this town is remarkable"
+          },
+          {
+            "id": "p15r2",
+            "author": "Howard Prewitt",
+            "handle": "hprewitt",
+            "avatarSeed": "prewitt",
+            "time": "Feb 29, 2008 3:30 PM",
+            "body": "I was there at seven this morning before it filled up. She said \"you're early\" and I said \"I am\" and that was the whole conversation and it was the right one."
+          },
+          {
+            "id": "p15r3",
+            "author": "Tunde O.",
+            "handle": "toye_gf",
+            "avatarSeed": "toye",
+            "time": "Feb 29, 2008 4:18 PM",
+            "body": "Forty years. Somebody should put it in the wiki properly, the entry's two sentences: [url=synth://wiki.gridfall.net/wiki/blue-kestrel-diner]blue kestrel diner[/url]"
+          }
+        ]
+      },
+      {
+        "id": "p16",
+        "author": "Gridfall Pulse",
+        "handle": "gridfallpulse",
+        "avatarSeed": "pulse-logo",
+        "time": "Mar 01, 2008 9:30 AM",
+        "body": "Sign's down at the Kestrel. Came off this morning, two fellas and a ladder.\n\nWe're told it's going to the historical society and not the dumpster, which is the first bit of sense anybody's shown about that building in a decade.\n\nWe're also now on the county webring, if you're the sort of person who uses those: [url=synth://webring.gridfall.net/]webring.gridfall.net[/url]",
+        "likes": 143,
+        "reposts": 51,
+        "replies": [
+          {
+            "id": "p16r1",
+            "author": "PRINCE_OF_ELM_ST",
+            "handle": "prince_elm",
+            "avatarSeed": "princeelm",
+            "time": "Mar 01, 2008 10:12 AM",
+            "body": "the historical society is three people and a filing cabinet in the library basement. that sign is going in a basement"
+          },
+          {
+            "id": "p16r2",
+            "author": "Marguerite H.",
+            "handle": "marguerite_h",
+            "avatarSeed": "marguerite",
+            "time": "Mar 01, 2008 10:40 AM",
+            "body": "A basement is still better than the dumpster. I'm one of the three people and I'll take that."
+          },
+          {
+            "id": "p16r3",
+            "author": "PRINCE_OF_ELM_ST",
+            "handle": "prince_elm",
+            "avatarSeed": "princeelm",
+            "time": "Mar 01, 2008 11:05 AM",
+            "body": "i didnt know you were one of the three people"
+          }
+        ]
+      }
+    ],
+    "friends": [
+      { "handle": "marguerite_h", "displayName": "Marguerite H.", "avatarSeed": "marguerite" },
+      { "handle": "cflenn", "displayName": "Curtis Flenn", "avatarSeed": "curtis" },
+      { "handle": "toye_gf", "displayName": "Tunde O.", "avatarSeed": "toye" },
+      { "handle": "nedra_o", "displayName": "Nedra O.", "avatarSeed": "nedra" },
+      { "handle": "juniep", "displayName": "Junie Pell", "avatarSeed": "junie" },
+      { "handle": "gnash_88", "displayName": "gnash", "avatarSeed": "gnash" },
+      { "handle": "hettie_l", "displayName": "Hettie L.", "avatarSeed": "hettie" },
+      { "handle": "raydun", "displayName": "Ray Dunleavy", "avatarSeed": "raydun" },
+      { "handle": "hprewitt", "displayName": "Howard Prewitt", "avatarSeed": "prewitt" },
+      { "handle": "dmc_marchfield", "displayName": "dmc", "avatarSeed": "dmc" },
+      { "handle": "prince_elm", "displayName": "PRINCE_OF_ELM_ST", "avatarSeed": "princeelm" },
+      { "handle": "marla_v", "displayName": "marla", "avatarSeed": "marla" }
+    ]
+  }
+}

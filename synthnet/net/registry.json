@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "generated": "2026-09-18T07:52:13Z",
+  "sites": [
+    {
+      "domain": "boards.gridfall.net",
+      "title": "The Gridfall Boards",
+      "type": "forum",
+      "era": "2004",
+      "skin": "phpbb-blue",
+      "description": "General-purpose message board for Gridfall and the rest of Verity County.",
+      "tags": [],
+      "path": "net/sites/boards-gridfall-net/site.json",
+      "bytes": 37198
+    },
+    {
+      "domain": "clipvault.tv",
+      "title": "ClipVault",
+      "type": "media",
+      "era": "2007",
+      "skin": "tubeplayer",
+      "description": "Video uploads from around Verity County: camcorder tape, rail footage, hall shows, tool demos and radio recordings.",
+      "tags": [],
+      "path": "net/sites/clipvault-tv/site.json",
+      "bytes": 33296
+    },
+    {
+      "domain": "codeandcoffee.blog",
+      "title": "Code & Coffee",
+      "type": "blog",
+      "era": "2008",
+      "skin": "kubrick-blue",
+      "description": "Dave Carrow writes about servers, county networking, and things he has measured in Verity County.",
+      "tags": [],
+      "path": "net/sites/codeandcoffee-blog/site.json",
+      "bytes": 34780
+    },
+    {
+      "domain": "forums.verityrail.org",
+      "title": "Verity Rail Enthusiasts' Forum",
+      "type": "forum",
+      "era": "2006",
+      "skin": "ezboard-grey",
+      "description": "Discussion board for the Verity Rail line, its branches, and the people who photograph them.",
+      "tags": [],
+      "path": "net/sites/forums-verityrail-org-site/site.json",
+      "bytes": 21404
+    },
+    {
+      "domain": "kestrel-journal.net",
+      "title": "kestrel journal",
+      "type": "blog",
+      "era": "2005",
+      "skin": "movabletype-cream",
+      "description": "Jo Halloran's journal, written mostly after shifts at the Blue Kestrel diner in Gridfall.",
+      "tags": [],
+      "path": "net/sites/kestrel-journal-net/site.json",
+      "bytes": 23910
+    },
+    {
+      "domain": "marla.verity.net",
+      "title": "marla's page !!!",
+      "type": "social",
+      "era": "2005",
+      "skin": "myspace-black",
+      "description": "Personal page belonging to Marla Kesswick of Marchfield, updated whenever she feels like it.",
+      "tags": [],
+      "path": "net/sites/marla-verity-net/site.json",
+      "bytes": 19342
+    },
+    {
+      "domain": "pulse.gridfall.net",
+      "title": "Gridfall Pulse",
+      "type": "social",
+      "era": "2008",
+      "skin": "bluebird",
+      "description": "A small microblog for Gridfall and the rest of Verity County. Mostly road closures.",
+      "tags": [],
+      "path": "net/sites/pulse-gridfall-net/site.json",
+      "bytes": 19909
+    },
+    {
+      "domain": "stargazers.verity.net",
+      "title": "Verity County Amateur Astronomers",
+      "type": "page",
+      "era": "2001",
+      "skin": "geocities",
+      "description": "Home page of the Verity County Amateur Astronomers, meeting monthly since 1978 and observing from Perrin Hill.",
+      "tags": [],
+      "path": "net/sites/stargazers-verity-net/site.json",
+      "bytes": 19718
+    },
+    {
+      "domain": "tnorris.verity.net",
+      "title": "Thomas Norris",
+      "type": "page",
+      "era": "1998",
+      "skin": "plain-white",
+      "description": "The page of Thomas Norris, retired Verity County surveyor, including a detailed account of the flood of June 1994.",
+      "tags": [],
+      "path": "net/sites/tnorris-verity-net/site.json",
+      "bytes": 22690
+    },
+    {
+      "domain": "verityledger.com",
+      "title": "The Verity Ledger",
+      "type": "news",
+      "era": "2007",
+      "skin": "broadsheet",
+      "description": "The Verity County paper of record, published in Gridfall since 1901.",
+      "tags": [],
+      "path": "net/sites/verityledger-com/site.json",
+      "bytes": 37174
+    },
+    {
+      "domain": "webring.gridfall.net",
+      "title": "The Gridfall Webring",
+      "type": "page",
+      "era": "2002",
+      "skin": "tripod-tile",
+      "description": "Hub of the Gridfall Webring, linking personal and community sites in and about Verity County.",
+      "tags": [],
+      "path": "net/sites/webring-gridfall-net/site.json",
+      "bytes": 15529
+    },
+    {
+      "domain": "wiki.gridfall.net",
+      "title": "The Verity County Wiki",
+      "type": "wiki",
+      "era": "2007",
+      "skin": "monobook",
+      "description": "A community-maintained wiki covering Verity County, its towns, institutions and arguments.",
+      "tags": [],
+      "path": "net/sites/wiki-gridfall-net/site.json",
+      "bytes": 55840
+    }
+  ]
+}

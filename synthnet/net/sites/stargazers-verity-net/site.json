@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "domain": "stargazers.verity.net",
+  "title": "Verity County Amateur Astronomers",
+  "type": "page",
+  "era": "2001",
+  "skin": "geocities",
+  "description": "Home page of the Verity County Amateur Astronomers, meeting monthly since 1978 and observing from Perrin Hill.",
+  "links": [
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "marla.verity.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "codeandcoffee.blog",
+    "wiki.gridfall.net",
+    "clipvault.tv",
+    "webring.gridfall.net",
+    "tnorris.verity.net"
+  ],
+  "data": {
+    "navLabel": "CLUB PAGES",
+    "pages": [
+      {
+        "id": "home",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** WELCOME TO THE V.C.A.A. HOME PAGE *** NEXT MEETING: SECOND TUESDAY, 7:00 PM, ROOM 104, COUNTY EXTENSION BUILDING *** NEW MEMBERS ALWAYS WELCOME, BRING A CHAIR ***" },
+          { "kind": "image", "seed": "vcaa-banner-stars", "imgKind": "banner", "caption": "The Verity County Amateur Astronomers -- Est. 1978" },
+          { "kind": "heading", "level": 1, "text": "VERITY COUNTY AMATEUR ASTRONOMERS" },
+          { "kind": "text", "body": "[b]Welcome to our page![/b] This page is maintained by Dale Furniss (club president since 1996) on a Gateway computer in his basement, so please be patient if it is slow.\n\nWe are a small club. We have twenty six paid members and about nine who show up. We meet the second Tuesday of every month at 7:00 in Room 104 of the County Extension Building on Herron Road, and we observe from the [b]Perrin Hill gravel lot[/b] whenever the sky cooperates, which in this county is less often than any of us would like.\n\nThere is no dues increase this year. Dues are still $12, or $18 for a family, payable to Ann-Marie Tosches, who will remind you." },
+          { "kind": "heading", "level": 2, "text": "WHAT IS NEW" },
+          { "kind": "list", "ordered": false, "items": [
+            "10/14/2004 -- Added the October observing reports. Also fixed the link to the rail forum that Cliff has been emailing me about for a month. It is fixed, Cliff.",
+            "08/22/2003 -- THE POWER FAILURE. See the observing log. Best three nights any of us have had at Perrin Hill in twenty years and none of us are allowed to say we enjoyed it.",
+            "03/02/2003 -- New equipment page with the member scope list. If yours is wrong tell me at a meeting, not by email, I do not check the email.",
+            "11/09/2002 -- We joined the Gridfall Webring. See the bottom of this page.",
+            "06/17/2001 -- Page created. Thank you to Ben Tosches (age 15) for showing me how to do the tables."
+          ] },
+          { "kind": "heading", "level": 2, "text": "MEETING SCHEDULE AND OFFICERS" },
+          { "kind": "table", "head": ["OFFICE", "NAME", "SINCE", "NOTE"], "rows": [
+            ["President", "Dale Furniss", "1996", "Runs the meetings, brings the projector"],
+            ["Vice President", "Wes Jaris", "1999", "Also does the radio thing, see links"],
+            ["Secretary / Treasurer", "Ann-Marie Tosches", "1988", "DUES. See Ann-Marie about DUES."],
+            ["Newsletter", "Ann-Marie Tosches", "1988", "Yes, she does both"],
+            ["Site Coordinator", "Paul Lane", "2000", "Has the key to the cattle gate"]
+          ] },
+          { "kind": "text", "body": "[b]OBSERVING SITE:[/b] Perrin Hill gravel lot, off Route 62 at about mile 15, north side, past the cattle gate. [u]KILL YOUR HEADLIGHTS AT THE GATE.[/u] Park facing out. Do not block the turnaround, the farmer uses it and he has been very good to us and we would like to keep it that way.\n\nThe lot is a quarter mile up the hill from where the radio people record, and we get along with them fine. If you see a car up there at midnight it is probably one of ours or one of theirs." },
+          { "kind": "heading", "level": 2, "text": "LIGHT POLLUTION (READ THIS)" },
+          { "kind": "text", "body": "The single biggest thing hurting our sky is the sodium lighting on the county road and the security lights at the industrial park on the east side. We have been to the county board about this four times since 1994. Four times.\n\nIf you live in the county and you have a barn light or a dusk-to-dawn light, please put a shield on it. A shield costs about nine dollars and it puts the light on your property where you wanted it in the first place instead of into my telescope. That is the entire argument and it has never persuaded anyone.\n\nThe local paper printed a letter of mine about this in 1999 and the paper is at [url=synth://verityledger.com/]verityledger.com[/url] now if you want to see how little has changed. There is also a fairly good general write-up at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]." },
+          { "kind": "image", "seed": "perrin-hill-lot-night", "imgKind": "photo", "caption": "Perrin Hill lot, September 2002. Wes's C8 on the left, the picnic table we are not supposed to have moved on the right." },
+          { "kind": "hitcounter", "count": 21417 },
+          { "kind": "text", "body": "You are visitor number above. Counter reset 06/2001 and again 02/2004 when the basement flooded and I had to reinstall everything.\n\n[b]This page is best viewed at 800x600 with the text size set to medium.[/b] If it looks wrong at 1024 I am aware and I will get to it." },
+          { "kind": "guestbook", "entries": [
+            { "author": "Ben T.", "time": "07/03/2001", "body": "Testing the guestbook. It works. Dale you owe me a soda." },
+            { "author": "W. Jaris", "time": "09/12/2001", "body": "Page looks good Dale. The Perseid numbers from August are in my notebook, I will bring it Tuesday." },
+            { "author": "Carol in Cutler", "time": "04/28/2002", "body": "My grandson got a telescope for his birthday and we have no idea what we are doing with it. Is it alright if we just come to a meeting?" },
+            { "author": "Dale Furniss", "time": "04/29/2002", "body": "Carol, yes, please just come. Bring the telescope. Somebody will collimate it for you before the meeting starts." },
+            { "author": "R. Dunleavy", "time": "08/25/2003", "body": "Came up the hill the second night of the outage with the camcorder and could not get anything on tape, it was too dark, which I suppose is the point. Sorry for the headlights, I did not know about the gate." },
+            { "author": "kestrelbird", "time": "01/30/2007", "body": "Thank you for letting me park up there. I have never once been made to feel unwelcome and that is not true of everywhere I set up." },
+            { "author": "M. Vance", "time": "03/11/2007", "body": "Writing something about the county's night sky and I would like to sit in on a meeting if that is allowed. Marla, [url=synth://marla.verity.net/]marla.verity.net[/url]." }
+          ] },
+          { "kind": "webring", "ringName": "The Gridfall Webring", "members": [
+            { "label": "The Gridfall Boards", "domain": "boards.gridfall.net" },
+            { "label": "Verity Rail Forums", "domain": "forums.verityrail.org" },
+            { "label": "Gridfall Pulse", "domain": "pulse.gridfall.net" },
+            { "label": "ClipVault", "domain": "clipvault.tv" },
+            { "label": "Webring Home", "domain": "webring.gridfall.net" }
+          ] }
+        ]
+      },
+      {
+        "id": "log",
+        "name": "Observing Log",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "CLUB OBSERVING LOG" },
+          { "kind": "marquee", "text": "SEEING AND TRANSPARENCY ARE ESTIMATED, NOT MEASURED. IF YOU DISAGREE WITH A NUMBER, BRING YOUR OWN NUMBER." },
+          { "kind": "text", "body": "Entries are typed up from the clipboard that lives in the milk crate in my trunk. Seeing is 1 to 5, 5 is best. Transparency is the faintest star anybody could hold steadily at zenith, which is a crude method and we know it is a crude method.\n\nCorrections are welcome [i]at a meeting[/i]." },
+          { "kind": "table", "head": ["DATE", "SEEING", "LIMITING MAG", "PRESENT", "NOTES"], "rows": [
+            ["08/12/2001", "3", "5.1", "Furniss, Jaris, Tosches x2, Lane", "Perseids. Counted 41 in an hour before the dew took the corrector plate. Ben saw a fireball none of the rest of us caught and has never let it go."],
+            ["10/27/2001", "2", "4.8", "Furniss, Lane", "Awful. Went home at ten. Wrote it down anyway because a log with only good nights is not a log."],
+            ["03/09/2002", "4", "5.4", "Furniss, Jaris, Carol S. and grandson", "First clear Saturday since December. Showed the boy Saturn and he asked if it was a sticker on the end of the tube. Reasonable question honestly."],
+            ["11/16/2002", "3", "5.0", "Jaris, Lane", "Leonids, much worse than 2001. Twelve in two hours. Cold."],
+            ["08/19/2003", "4", "6.1", "Furniss, Jaris, Lane, Tosches x2", "THE NIGHT OF THE SUBSTATION FIRE. See the note below this table."],
+            ["08/20/2003", "4", "6.3", "Furniss, Jaris, Lane, Tosches x2, plus 6 visitors", "Second night of the outage. Best sky recorded at this site in the life of this club."],
+            ["08/21/2003", "3", "5.9", "Furniss, Jaris, Lane", "Third night. Partial power back in Gridfall by then. You could see the difference from the hill, in real time, as the grid came back on."],
+            ["05/04/2004", "3", "5.2", "Furniss, Tosches x2", "Lunar eclipse, mostly clouded, watched the last 20 minutes through a gap."],
+            ["10/09/2004", "2", "4.9", "Lane", "Paul alone. One line in the book: 'sky poor, coffee good, home by 11.'"],
+            ["09/22/2006", "4", "5.3", "Furniss, Jaris, Lane, K. (radio)", "Clear and steady. The radio fellow came up and sat with us for an hour and did not once bring up the thing everybody brings up."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "NOTE ON AUGUST 19-21, 2003" },
+          { "kind": "text", "body": "The substation on Gridfall Road burned on the evening of the 19th and most of the county was dark for three days.\n\nI want to be careful about how I say this. People lost freezers full of food. The nursing home ran on a generator for two nights and that frightened a lot of families. A man on Ellery Street was hurt getting a generator down a set of stairs. None of that was worth anything to anybody.\n\nAnd: from the top of Perrin Hill, on the 20th, five of us stood in a gravel lot and saw the Milky Way run from horizon to horizon with structure in it, and Wes held 6.3 at zenith twice, and Ann-Marie who has been doing this since 1988 sat down on the tailgate and did not say anything for about ten minutes.\n\nBoth of those things are true and I have never known how to put them in the same paragraph. That is the paragraph.\n\nWe had six visitors on the second night, people who drove up because there was nothing else to do with the power out. Two of them joined the club. One of them is Paul Lane's brother-in-law who now owns more equipment than the rest of us combined.\n\nThere is a good factual account of the fire at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], and camcorder footage of the aftermath at [url=synth://clipvault.tv/]clipvault.tv[/url] if you want to see what the morning looked like from the road." },
+          { "kind": "image", "seed": "milkyway-perrin-2003", "imgKind": "photo", "caption": "Piggyback exposure, 08/20/2003, about 15 minutes on 400 speed film. Wes's. It is not a good photograph and it is the best one we have." },
+          { "kind": "heading", "level": 2, "text": "WHAT WE ARE LOOKING AT NEXT" },
+          { "kind": "list", "ordered": false, "items": [
+            "Double stars through the winter. Bring a list, do not just point at things.",
+            "The Jupiter opposition. Wes will bring the barlow he keeps promising us is worth it.",
+            "Anybody who wants to try sketching, Ann-Marie will show you. She is patient and you will be bad at it for a year.",
+            "The Messier list in one night, someday, if we ever get a March that cooperates. We have tried twice and failed twice."
+          ] },
+          { "kind": "hitcounter", "count": 6390 }
+        ]
+      },
+      {
+        "id": "equipment",
+        "name": "Member Equipment",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "MEMBER EQUIPMENT LIST" },
+          { "kind": "text", "body": "People ask at every meeting what everyone else is using, so here it is. This is not a competition and if it becomes one I will take the page down.\n\n[b]If you are buying your first telescope[/b], talk to somebody in the club before you spend money. Every one of us has an expensive mistake in a closet. Ann-Marie has two." },
+          { "kind": "table", "head": ["MEMBER", "INSTRUMENT", "MOUNT", "NOTES"], "rows": [
+            ["D. Furniss", "8 inch f/6 Newtonian, homemade tube", "Equatorial, homemade", "Mirror from a kit, ground 1979. Still the best thing I own."],
+            ["W. Jaris", "Celestron C8", "Fork, with drive", "Bought used 1991. Corrector needs cleaning and he knows."],
+            ["A. Tosches", "4 inch refractor", "Alt-az", "Sketches at the eyepiece. Her Jupiter notebook goes back to 1989."],
+            ["B. Tosches", "6 inch Dobsonian", "Dob", "Built it himself at 14 with his mother holding the other end of the board."],
+            ["P. Lane", "10 inch Dobsonian", "Dob", "Heavy. Do not offer to help him carry it, he has a system."],
+            ["P. Lane's brother-in-law", "11 inch SCT, everything", "Goto", "Joined 2003. Owns more cases than telescopes."],
+            ["C. Sommers", "60mm department store refractor", "Wobbly", "The grandson's. We are working on the wobble. The optics are fine."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "CLUB LOANER SCOPE" },
+          { "kind": "text", "body": "The club owns one 6 inch Dobsonian, donated by the estate of Harold Perrin in 1994, for whom the hill is not actually named (it is his family's hill, though, so close enough).\n\nAny member in good standing may borrow it for a month. Sign the card in the crate. Bring it back with the eyepieces you took, all of them, both of them.\n\n[quote=Ann-Marie, at the 2002 annual meeting]The loaner has been out eleven times and come back eleven times. That is a better record than the newsletter.[/quote]" },
+          { "kind": "image", "seed": "loaner-dob-crate", "imgKind": "photo", "caption": "The loaner, in the extension building hallway, waiting for somebody to take it home." },
+          { "kind": "heading", "level": 2, "text": "A NOTE ABOUT EYEPIECES" },
+          { "kind": "text", "body": "You do not need seven eyepieces. You need a low power one you trust, a medium one, and something for the moon and planets. Buy them one at a time, used if you can, and use each one for a season before you buy the next.\n\nThe man at the camera shop in Gridfall will sell you a barlow. You probably want the barlow. That is the one thing I will say in favor of buying something.\n\nThere is a long argument about all of this, with people shouting, at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], where there is a long argument about everything." },
+          { "kind": "list", "ordered": false, "items": [
+            "Collimate before you complain about the optics.",
+            "Let the tube cool for half an hour. Half an hour.",
+            "Dew heater or a hair dryer and an extension cord. Either works. One is cheaper.",
+            "Red flashlight. Red. Not a white flashlight with a piece of red cellophane falling off it, Paul."
+          ] },
+          { "kind": "hitcounter", "count": 4128 }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "LINKS" },
+          { "kind": "marquee", "text": "IF A LINK IS BROKEN TELL ME AT A MEETING. I DO NOT CHECK THE EMAIL." },
+          { "kind": "text", "body": "Other places in the county worth your time. Some of these have nothing to do with astronomy and I have decided I do not care." },
+          { "kind": "table", "head": ["SITE", "WHAT IT IS"], "rows": [
+            ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "General county message board. Loud. Occasionally useful. The lighting ordinance thread is in there somewhere."],
+            ["[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]", "The branch line people. Cliff posts there. Fix your own links, Cliff."],
+            ["[url=synth://pulse.gridfall.net/]Gridfall Pulse[/url]", "The short posting site the younger members use. I do not understand it."],
+            ["[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "Encyclopedia of the county. Their substation article is better than the newspaper's was."],
+            ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The paper. Prints our meeting notice most months."],
+            ["[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]", "About the diner, mostly, and the town around it. We ate there after observing for twenty years."],
+            ["[url=synth://marla.verity.net/]Marla Vance[/url]", "Writes about the county. Came to a meeting in 2007 and asked good questions."],
+            ["[url=synth://codeandcoffee.blog/]Code and Coffee[/url]", "Computer weblog. Where I finally learned why my tables were crooked."],
+            ["[url=synth://clipvault.tv/]ClipVault[/url]", "Video. The substation footage and the diner's last day are both on there."],
+            ["[url=synth://tnorris.verity.net/]Tom Norris[/url]", "Retired county surveyor. His account of the 1994 flood is the best thing written about this county by anybody."],
+            ["[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]", "The ring we belong to. Full member list there."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "ABOUT THE RADIO PEOPLE" },
+          { "kind": "text", "body": "We get asked about this because our site is on Route 62 and because Wes is a member of both worlds.\n\nThere is a recording hobbyist who sets up about a quarter mile downhill from our lot and records shortwave. He publishes everything, including the nights with nothing on them, and he has been nothing but courteous to this club.\n\nWhat we have seen from the hill: nothing. What we have heard: nothing. We are looking up, not listening, and we are usually busy. That is the whole of our contribution to the argument and we would prefer not to be drawn into it further.\n\nHis recordings are at [url=synth://clipvault.tv/]clipvault.tv[/url] if you want to make up your own mind." },
+          { "kind": "guestbook", "entries": [
+            { "author": "Cliff B.", "time": "10/16/2004", "body": "The link is fixed. Thank you Dale. I will stop." },
+            { "author": "jvance", "time": "02/02/2005", "body": "Found this page looking for the lighting ordinance meeting date. It was worth the detour. Nice site." },
+            { "author": "Dale Furniss", "time": "02/03/2005", "body": "Second Tuesday, 7:00, Room 104. Always has been." }
+          ] },
+          { "kind": "webring", "ringName": "The Gridfall Webring", "members": [
+            { "label": "Webring Home", "domain": "webring.gridfall.net" },
+            { "label": "Previous: Blue Kestrel Journal", "domain": "kestrel-journal.net" },
+            { "label": "Next: Tom Norris", "domain": "tnorris.verity.net" },
+            { "label": "Random: The Gridfall Wiki", "domain": "wiki.gridfall.net" }
+          ] },
+          { "kind": "hitcounter", "count": 3802 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "schema": 1,
+  "domain": "clipvault.tv",
+  "title": "ClipVault",
+  "type": "media",
+  "era": "2007",
+  "skin": "tubeplayer",
+  "description": "Video uploads from around Verity County: camcorder tape, rail footage, hall shows, tool demos and radio recordings.",
+  "links": [
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "marla.verity.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "codeandcoffee.blog",
+    "wiki.gridfall.net",
+    "stargazers.verity.net",
+    "webring.gridfall.net",
+    "tnorris.verity.net"
+  ],
+  "data": {
+    "siteName": "ClipVault",
+    "channels": [
+      {
+        "id": "ch-veritycam",
+        "name": "Verity Camcorder",
+        "subscribers": 418,
+        "about": "Ray Dunleavy, Gridfall. I have had a camcorder since 1989 and I point it at things that are about to stop existing. Tapes transferred at 640x480, sorry about the tracking lines.",
+        "avatarSeed": "dunleavy-ray"
+      },
+      {
+        "id": "ch-railend",
+        "name": "Branch Line End",
+        "subscribers": 1236,
+        "about": "Cutler to Gridfall Yard, 14.2 miles, closed to revenue traffic in 2005. Everything I shot of it is going up here. Crossing locations and mileposts are in the descriptions. Discussion goes to [url=synth://forums.verityrail.org/]forums.verityrail.org[/url], not the comments.",
+        "avatarSeed": "brandt-c"
+      },
+      {
+        "id": "ch-cellar",
+        "name": "Cellar Show Tapes",
+        "subscribers": 292,
+        "about": "Hall shows and basement shows in Verity County, 1999 to now. If you played one of these and want it taken down, email me and it is down the same day, no argument.",
+        "avatarSeed": "novak-j"
+      },
+      {
+        "id": "ch-toolshed",
+        "name": "The Toolshed",
+        "subscribers": 2871,
+        "about": "Dwyer and Son Hardware, Ellery Street. We demo what we sell. Dad does the talking, I hold the camera and do the uploading.",
+        "avatarSeed": "dwyer-hardware"
+      },
+      {
+        "id": "ch-sixtytwo",
+        "name": "62 Archive",
+        "subscribers": 964,
+        "about": "Unedited recordings made on Route 62 between mile 11 and mile 16. Receiver, antenna, time, frequency and weather are listed for every upload. I am not claiming anything. I am posting audio.",
+        "avatarSeed": "kestrelbird"
+      }
+    ],
+    "items": [
+      {
+        "id": "vc-101",
+        "channelId": "ch-veritycam",
+        "title": "Gridfall substation, morning after the fire (part 1)",
+        "uploader": "rdunleavy",
+        "uploaded": "Feb 3, 2007",
+        "views": 41208,
+        "duration": "9:47",
+        "thumbSeed": "substation-morning",
+        "description": "Shot the morning of August 19, 2003, from the shoulder of Gridfall Road about 300 feet back from the west gate. That is as close as the deputy would let anybody stand and he was right to.\n\nWhat you are looking at: the transformer bank is the tall thing on the left that is now mostly not there. The white residue on the gravel is fire suppressant. The two trucks with the lights are county, the third one is the utility crew that came up from the valley overnight.\n\nI am not going to narrate the whole thing because at the time I did not know what I was looking at either. There is a much better explanation than mine on [url=synth://wiki.gridfall.net/wiki/gridfall-substation-fire]the wiki article[/url], and the paper's coverage from that week is at [url=synth://verityledger.com/]verityledger.com[/url].\n\nPart 2 is the fence line walk, which is honestly the more interesting tape.",
+        "comments": [
+          { "author": "hollis_m", "time": "Feb 3, 2007 7:12 pm", "body": "I was fourteen and I remember the whole street going dark at once, like somebody pulled a cord. Thanks for putting this up." },
+          { "author": "brandt_c", "time": "Feb 3, 2007 9:55 pm", "body": "Ray, your date is right but it was the 19th going into the 20th for the outage on our end. We did not lose power in Cutler until about 1 in the morning." },
+          { "author": "rdunleavy", "time": "Feb 4, 2007 6:40 am", "body": "That matches what the utility said later, they shed load in stages. The tape is the morning of the 19th regardless." },
+          { "author": "parkerlane", "time": "Feb 6, 2007 11:03 am", "body": "My father worked on that bank in the seventies. He watched this three times and did not say anything." }
+        ]
+      },
+      {
+        "id": "vc-102",
+        "channelId": "ch-veritycam",
+        "title": "Gridfall substation part 2, the fence line",
+        "uploader": "rdunleavy",
+        "uploaded": "Feb 3, 2007",
+        "views": 22940,
+        "duration": "14:06",
+        "thumbSeed": "substation-fence",
+        "description": "Same morning, walking north along the fence from the west gate to where the access road bends. About six minutes in you can see the burned section of the pole line and the two crossarms that came down.\n\n[b]Timestamps[/b]\n[list][*]0:00 west gate[*]3:20 the concrete pad and the oil containment[*]6:05 pole line damage[*]9:40 the yard crew arriving[*]12:15 back toward the road, you can hear the generator trucks[/list]\n\nSomebody in the other thread asked what the smell was. It was oil and burnt insulation and it hung around Ellery Street for two days. My wife had the windows shut through a 90 degree August.",
+        "comments": [
+          { "author": "annmt", "time": "Feb 4, 2007 8:31 pm", "body": "The smell is the detail nobody writes down. Thank you for writing it down." },
+          { "author": "gnash_44", "time": "Feb 5, 2007 1:19 pm", "body": "six minutes in, the second crossarm, is that a splice or is that a repair from before" },
+          { "author": "rdunleavy", "time": "Feb 5, 2007 5:02 pm", "body": "No idea. Ask on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], there are people over there who actually know poles." }
+        ]
+      },
+      {
+        "id": "vc-103",
+        "channelId": "ch-veritycam",
+        "title": "Ellery Street with the power out, night of Aug 19 2003",
+        "uploader": "rdunleavy",
+        "uploaded": "Feb 10, 2007",
+        "views": 15772,
+        "duration": "6:31",
+        "thumbSeed": "ellery-dark",
+        "description": "Handheld, almost no light, so this is mostly a sound recording with a picture attached. You can hear the Dwyers' generator two doors down and somebody's radio.\n\nThe bright patch at 4:10 is the Sunoco sign on the corner, which was on a different feed and stayed lit the entire outage, which people on this street complained about for years afterward.\n\nIf you had a camera out that night and you still have the tape, transfer it before the tape goes. I lost two from the eighties to shedding.",
+        "comments": [
+          { "author": "marla_v", "time": "Feb 11, 2007 9:22 am", "body": "I wrote about that Sunoco sign at the time and got a letter from a man who was very angry that I had. Still think about it." },
+          { "author": "hollis_m", "time": "Feb 12, 2007 7:47 pm", "body": "you can hear the crickets which you never normally can on Ellery" },
+          { "author": "dwyerandson", "time": "Feb 13, 2007 10:15 am", "body": "That generator was the Coleman and it ran 31 hours straight. It has never run right since." }
+        ]
+      },
+      {
+        "id": "vc-104",
+        "channelId": "ch-veritycam",
+        "title": "Blue Kestrel Diner, last day, lunch",
+        "uploader": "rdunleavy",
+        "uploaded": "Apr 2, 2007",
+        "views": 63915,
+        "duration": "21:18",
+        "thumbSeed": "kestrel-lunch",
+        "description": "November 12, 2006. I asked Marge two weeks ahead if I could tape it and she said only if I ate something, so I had the meatloaf.\n\nThis is the whole lunch rush more or less uncut. The regulars are all here. The man in the corner booth at 8:30 is Tom Norris who used to survey for the county, and who has a flood page at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url] that is worth your time.\n\nThings I did not know I was recording at the time: the wall clock that had been three minutes fast since at least 1991, the flood line penciled on the doorframe by the register, and the fact that they still wrote the specials on the mirror with a grease pencil.\n\nMore on the place at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]. Part two is Marge closing up.",
+        "comments": [
+          { "author": "annmt", "time": "Apr 2, 2007 6:18 pm", "body": "The clock. I had completely forgotten about the clock." },
+          { "author": "jnovak", "time": "Apr 2, 2007 8:44 pm", "body": "We used to go there after load-out at 1am when they still did overnights. Best coffee decision I ever made was never asking what was in it." },
+          { "author": "gnash_44", "time": "Apr 3, 2007 12:30 pm", "body": "meatloaf was not that good and everybody knows it, the pie was the thing" },
+          { "author": "marge_k", "time": "Apr 3, 2007 7:55 pm", "body": "The meatloaf was fine, Gary." },
+          { "author": "gnash_44", "time": "Apr 3, 2007 8:41 pm", "body": "ok" },
+          { "author": "parkerlane", "time": "Apr 9, 2007 10:02 am", "body": "My daughter is in this at 14:20 in the blue coat. She was six. Thank you, seriously." }
+        ]
+      },
+      {
+        "id": "vc-105",
+        "channelId": "ch-veritycam",
+        "title": "Blue Kestrel Diner, last day, closing up",
+        "uploader": "rdunleavy",
+        "uploaded": "Apr 2, 2007",
+        "views": 58430,
+        "duration": "11:52",
+        "thumbSeed": "kestrel-close",
+        "description": "Same day, after four o'clock. Marge counting out, the last two customers, the sign coming off the door.\n\nShe talks for about three minutes starting at 7:40 and I am not going to summarize it, you should just watch it.\n\nThe building is still there. It was a check cashing place for a while and now it is empty again.",
+        "comments": [
+          { "author": "marla_v", "time": "Apr 3, 2007 9:10 am", "body": "The bit where she wipes down the counter one more time out of pure habit, with the place already closed. That is the whole thing right there." },
+          { "author": "hollis_m", "time": "Apr 4, 2007 5:37 pm", "body": "watched this at work and had to go sit in my car" },
+          { "author": "brandt_c", "time": "Apr 5, 2007 7:20 am", "body": "Second time in two years I have watched somebody turn a key on something that is not coming back. Good tape, Ray." }
+        ]
+      },
+      {
+        "id": "rl-201",
+        "channelId": "ch-railend",
+        "title": "Last revenue run, Cutler to Gridfall Yard (1 of 2)",
+        "uploader": "cbrandt_rail",
+        "uploaded": "Jan 14, 2007",
+        "views": 37104,
+        "duration": "26:40",
+        "thumbSeed": "lastrun-cutler",
+        "description": "October 28, 2005. Two GP38-2s, eleven cars, mostly empties returning. Shot from six locations with a lot of driving in between, which is why the light changes.\n\n[b]Locations[/b]\n[list][*]0:00 Cutler team track, MP 14.2[*]4:55 the curve at Herron Road, MP 12.0[*]9:30 Mile 9 fill, north side[*]14:10 Route 62 grade crossing, MP 6.8 (this is in part 2 properly)[*]18:45 the Ellery Street bridge, MP 3.1[*]23:00 arrival, Gridfall Yard[/list]\n\nFor the history of the branch and the closure filing, see [url=synth://wiki.gridfall.net/wiki/verity-rail-branch-line]the wiki[/url]. For the fight about what happens to the right of way, see [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] and bring a lunch.\n\nPlease do not ask me in the comments whether the rail is still in. Read the forum.",
+        "comments": [
+          { "author": "tie_plate", "time": "Jan 14, 2007 4:05 pm", "body": "MP 12.0 in that light is a postcard. Nice work getting ahead of it three times." },
+          { "author": "gnash_44", "time": "Jan 15, 2007 9:12 am", "body": "is the rail still in" },
+          { "author": "cbrandt_rail", "time": "Jan 15, 2007 9:40 am", "body": "No." },
+          { "author": "yardgoat", "time": "Jan 16, 2007 11:58 am", "body": "The second unit is 2144 which went to the shortline in the valley and is still working. Small mercies." }
+        ]
+      },
+      {
+        "id": "rl-202",
+        "channelId": "ch-railend",
+        "title": "Last revenue run (2 of 2), Route 62 crossing",
+        "uploader": "cbrandt_rail",
+        "uploaded": "Jan 14, 2007",
+        "views": 29551,
+        "duration": "8:22",
+        "thumbSeed": "lastrun-62",
+        "description": "The Route 62 grade crossing, MP 6.8, on the same afternoon. Crossbucks only, no gates, never had gates, which is a separate argument I am tired of having.\n\nHorn sequence starts at 2:40. Watch the cars stopped on the north side, there were nine of them and about half of those people were there on purpose.\n\nThis crossing is roughly where all the radio business is supposed to happen. It is a gravel shoulder next to a bean field and I have stood on it in the dark many times and heard nothing but a truck. Take that for whatever it is worth.",
+        "comments": [
+          { "author": "kestrelbird", "time": "Jan 15, 2007 1:26 am", "body": "Mile 6.8 is not where I record. I record between 11 and 16. People keep putting the two things in the same place and they are five miles apart." },
+          { "author": "cbrandt_rail", "time": "Jan 15, 2007 6:50 am", "body": "Fair, corrected in my head. The crossing is still where the stories put it, which is my point." },
+          { "author": "tie_plate", "time": "Jan 17, 2007 8:14 pm", "body": "Nine cars for a branch line freight in 2005. That is a bigger crowd than the county board meeting about it got." }
+        ]
+      },
+      {
+        "id": "rl-203",
+        "channelId": "ch-railend",
+        "title": "Cab ride, Gridfall Yard to Mile 9, 1998 (VHS transfer)",
+        "uploader": "cbrandt_rail",
+        "uploaded": "Feb 22, 2007",
+        "views": 18466,
+        "duration": "33:15",
+        "thumbSeed": "cabride-98",
+        "description": "Permission ride, September 1998, arranged through the trainmaster who has since retired and who I will not name because he did me a favor.\n\nThe tape is bad. It was bad in 1998. There is a horizontal tear through the middle for about four minutes starting at 19:30 and nothing I can do about it.\n\nWhat this is good for: you can see the original jointed rail north of the Ellery Street bridge before the 2001 relay, and you can see the semaphore that came down that winter.\n\n[quote=yardgoat]People forget the branch was in decent shape right up until it wasn't.[/quote]\nThat is about right. It was not the track that closed it.",
+        "comments": [
+          { "author": "yardgoat", "time": "Feb 23, 2007 7:33 am", "body": "That semaphore is in somebody's garage in Cutler and I know whose and I am not telling." },
+          { "author": "tie_plate", "time": "Feb 24, 2007 3:41 pm", "body": "Jointed rail sound at 11:00 through the open window is the best two minutes of audio on this whole website." }
+        ]
+      },
+      {
+        "id": "rl-204",
+        "channelId": "ch-railend",
+        "title": "Ties coming out, Mile 4 to Mile 6, June 2006",
+        "uploader": "cbrandt_rail",
+        "uploaded": "Mar 8, 2007",
+        "views": 12094,
+        "duration": "17:09",
+        "thumbSeed": "ties-out",
+        "description": "Salvage contractor working north from the Ellery Street bridge. Excavator with a rail claw, two trucks, four men.\n\nI shot this because somebody should have, not because I enjoyed it. The rail went out first over two days and the ties came out after. The ballast is still there and will be there long after everybody reading this.\n\nAt 13:30 you can see the milepost being tossed in the truck. I asked. They said take it if I wanted it, so I took it. It is in my garage next to the water heater.",
+        "comments": [
+          { "author": "brandt_c", "time": "Mar 8, 2007 8:05 pm", "body": "Wrong account, this is me, I have two, do not worry about it." },
+          { "author": "parkerlane", "time": "Mar 9, 2007 12:22 pm", "body": "Walked that stretch with my dog last month. Straightest walk in the county now." },
+          { "author": "gnash_44", "time": "Mar 10, 2007 4:44 pm", "body": "they should have made it a trail years ago instead of arguing about it for a decade" },
+          { "author": "tie_plate", "time": "Mar 11, 2007 9:19 am", "body": "Take it to the forum, Gary, there is a 200 post thread waiting for you." }
+        ]
+      },
+      {
+        "id": "cs-301",
+        "channelId": "ch-cellar",
+        "title": "Sparrowfoot at the Elks Hall, full set (1 of 3)",
+        "uploader": "jnovak",
+        "uploaded": "May 5, 2007",
+        "views": 8871,
+        "duration": "28:44",
+        "thumbSeed": "sparrowfoot-1",
+        "description": "Elks Hall, Gridfall, March 4, 2006. Four piece, one camera on a tripod at the back, board feed for audio which is why the vocals are loud and the room is not.\n\nSet order in this part: Cutler Line, Eighteen Wheels of Nothing, Hollis, the slow one they never named, Bean Field.\n\nThis was the second to last show they played. There is no third part where they announce anything, they just stopped.\n\n[b]Audio note:[/b] the board feed clips on the kick for the first two songs. It settles down.",
+        "comments": [
+          { "author": "hollis_m", "time": "May 6, 2007 1:11 am", "body": "The song is not named after me. People keep asking. It is not." },
+          { "author": "sparrow_dt", "time": "May 7, 2007 6:29 pm", "body": "It is a little bit named after you." },
+          { "author": "jnovak", "time": "May 8, 2007 9:03 am", "body": "Taking no position." }
+        ]
+      },
+      {
+        "id": "cs-302",
+        "channelId": "ch-cellar",
+        "title": "Sparrowfoot at the Elks Hall (2 of 3)",
+        "uploader": "jnovak",
+        "uploaded": "May 5, 2007",
+        "views": 6402,
+        "duration": "31:02",
+        "thumbSeed": "sparrowfoot-2",
+        "description": "Middle of the set. Somebody's kid runs across the front at 6:15 and the band does not stop, which I respect.\n\nSongs: Grease Pencil, Two Mile Fill, a cover of something I have never been able to identify (if you know, comment, five people have guessed wrong so far), Ellery.\n\nThe Elks Hall rented for 60 dollars a night in 2006 and you had to be out by midnight and sweep. That is why every tape from that room ends at the same time.",
+        "comments": [
+          { "author": "gnash_44", "time": "May 6, 2007 3:50 pm", "body": "the cover at 14:20 is a Bunker Hill b-side, 100 percent" },
+          { "author": "sparrow_dt", "time": "May 6, 2007 8:12 pm", "body": "It is not. It is ours. We wrote it in a car." },
+          { "author": "gnash_44", "time": "May 6, 2007 8:40 pm", "body": "sounds like a b-side" },
+          { "author": "annmt", "time": "May 9, 2007 7:02 am", "body": "Grease Pencil is about the diner, isn't it. The specials on the mirror." },
+          { "author": "sparrow_dt", "time": "May 9, 2007 11:44 am", "body": "Yes." }
+        ]
+      },
+      {
+        "id": "cs-303",
+        "channelId": "ch-cellar",
+        "title": "Sparrowfoot at the Elks Hall (3 of 3), encore and load out",
+        "uploader": "jnovak",
+        "uploaded": "May 5, 2007",
+        "views": 5990,
+        "duration": "19:37",
+        "thumbSeed": "sparrowfoot-3",
+        "description": "Two song encore and then eleven minutes of four people carrying amps down a set of stairs, which I left in on purpose.\n\nThe last thing said into a microphone in this room by this band is at 8:52 and it is Dave saying the van is in the fire lane.\n\nIf anybody has the November show from the American Legion I will trade tapes.",
+        "comments": [
+          { "author": "jnovak", "time": "May 5, 2007 11:58 pm", "body": "Still looking for that Legion tape. Nine months now." },
+          { "author": "hollis_m", "time": "May 10, 2007 4:15 pm", "body": "the load out footage is unironically my favorite part of this channel" }
+        ]
+      },
+      {
+        "id": "ts-401",
+        "channelId": "ch-toolshed",
+        "title": "Echo PB-403T leaf blower, full walkaround and demo",
+        "uploader": "dwyerandson",
+        "uploaded": "Sep 30, 2007",
+        "views": 187330,
+        "duration": "42:11",
+        "thumbSeed": "blower-walk",
+        "description": "Dad goes through the whole unit. This runs forty two minutes because he does not skip anything.\n\n[b]Contents[/b]\n[list][*]0:00 out of the box, what is in the box[*]3:40 the harness and why you should adjust it before you fill it[*]8:05 fuel, mix ratio, and a long section on stale gas[*]16:30 starting procedure, cold[*]21:15 actual blowing, dry leaves, blacktop[*]28:00 dry leaves, grass[*]34:20 the tube extension and whether you need it[*]38:50 what breaks first and what it costs[/list]\n\nWe sell this unit so obviously we are not neutral. Dad still says what he thinks of it at 39:30 and I did not edit that out.\n\nComments about two stroke mix go on the follow up video, not this one.",
+        "comments": [
+          { "author": "gnash_44", "time": "Oct 1, 2007 7:24 am", "body": "42 minutes for a leaf blower" },
+          { "author": "dwyerandson", "time": "Oct 1, 2007 8:02 am", "body": "Yes." },
+          { "author": "parkerlane", "time": "Oct 2, 2007 6:38 pm", "body": "I watched the entire thing and I do not own a leaf blower and I do not have a yard. Something about the pacing." },
+          { "author": "tie_plate", "time": "Oct 4, 2007 9:09 pm", "body": "The stale gas section should be required viewing. Half the repairs in this county are stale gas." },
+          { "author": "hollis_m", "time": "Oct 14, 2007 2:55 pm", "body": "my dad sounds exactly like this and I have watched it four times" }
+        ]
+      },
+      {
+        "id": "ts-402",
+        "channelId": "ch-toolshed",
+        "title": "Leaf blower comparison, wet leaves on a gravel drive",
+        "uploader": "dwyerandson",
+        "uploaded": "Oct 21, 2007",
+        "views": 94622,
+        "duration": "27:53",
+        "thumbSeed": "blower-wet",
+        "description": "Three units, same driveway, same pile of wet maple. We did this the morning after a rain on purpose because dry leaf demos tell you nothing.\n\nThe gravel is the real test. Two of the three move gravel at full throttle and one of them does not, and Dad explains why starting at 19:00.\n\nWe are not naming a winner because the answer is that it depends on your driveway, which is a boring answer and also the correct one.",
+        "comments": [
+          { "author": "annmt", "time": "Oct 22, 2007 8:41 am", "body": "Finally somebody tests it on the surface people actually have." },
+          { "author": "gnash_44", "time": "Oct 23, 2007 12:14 pm", "body": "you can just use a rake" },
+          { "author": "dwyerandson", "time": "Oct 23, 2007 1:30 pm", "body": "We sell rakes too, aisle 3." }
+        ]
+      },
+      {
+        "id": "ts-403",
+        "channelId": "ch-toolshed",
+        "title": "Leaf blower follow up: answering the gas mix comments",
+        "uploader": "dwyerandson",
+        "uploaded": "Nov 4, 2007",
+        "views": 61207,
+        "duration": "18:26",
+        "thumbSeed": "blower-mix",
+        "description": "Two hundred and some comments about mix ratio, so here is Dad with a bench, three cans, and a measuring bottle.\n\nShort version: use what the manufacturer prints on the unit, buy the small bottles unless you go through fuel weekly, and do not keep mixed fuel over the winter. Long version is the video.\n\nAt 11:40 he takes apart a carburetor that came in off a unit somebody ran on year old mix. That is the part everybody keeps clipping.\n\nStore hours and the phone number are on the door. We are not doing repairs by email.",
+        "comments": [
+          { "author": "yardgoat", "time": "Nov 5, 2007 7:18 am", "body": "The varnish in that bowl at 13:00 is genuinely upsetting." },
+          { "author": "brandt_c", "time": "Nov 6, 2007 6:44 pm", "body": "Brought my saw in after watching this. It was year old mix. He did not say anything and that was worse." },
+          { "author": "marla_v", "time": "Nov 9, 2007 10:30 am", "body": "There is a whole essay in the fact that the most watched thing ever made in this county is a man explaining fuel to strangers." }
+        ]
+      },
+      {
+        "id": "sg-501",
+        "channelId": "ch-sixtytwo",
+        "title": "Route 62, 4.219 MHz, 11:40 PM, Feb 18 2007",
+        "uploader": "kestrelbird",
+        "uploaded": "Feb 19, 2007",
+        "views": 128744,
+        "duration": "12:58",
+        "thumbSeed": "sdr-62",
+        "description": "Recording made at the gravel pull-off at approximately MP 13.4 on Route 62, facing the field.\n\n[code]Date:      2007-02-18\nStart:     23:38 local\nFreq:      4.219 MHz\nMode:      USB\nRX:        Icom R75, laptop, direct from line out\nAntenna:   20m wire, about 8 ft up, tossed over a fence post\nWeather:   clear, 19 F, no wind\nNoise:     S3 with the car off, S7 with it running[/code]\n\nWhat is on the tape: carrier comes up around 2:10. Tone at 3:04. Voice, female, reading groups of five digits, starting 3:22 and running to 9:51. Carrier drops 10:06. The rest is me packing up.\n\nI am not telling you what it is. I do not know what it is. I have read the same three theories everyone else has and none of them explain the schedule.\n\nBackground reading, such as it is: [url=synth://wiki.gridfall.net/wiki/signal-on-62]the wiki article[/url], which is more careful than most of the argument about this. There is also a long running thread at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] which I would describe as informative in places.",
+        "comments": [
+          { "author": "wideband_jr", "time": "Feb 19, 2007 7:02 am", "body": "4.219 is not a broadcast allocation and it is not amateur. That alone rules out about half of the usual explanations people post here." },
+          { "author": "gnash_44", "time": "Feb 19, 2007 8:15 am", "body": "its a pager" },
+          { "author": "wideband_jr", "time": "Feb 19, 2007 8:31 am", "body": "Pagers do not read digits in a human voice. Pagers do not operate on 4 MHz. Pagers are not on for twelve minutes. Please think for one second before typing." },
+          { "author": "gnash_44", "time": "Feb 19, 2007 8:44 am", "body": "its a pager or its a hoax pick one" },
+          { "author": "ferris_lp", "time": "Feb 19, 2007 11:20 am", "body": "It is trivially a hoax. A laptop, a cheap transmitter, a text to speech program, and a guy who wants attention on the internet. You cannot rule that out and until you do the recording proves nothing." },
+          { "author": "kestrelbird", "time": "Feb 19, 2007 12:05 pm", "body": "Correct, I cannot rule it out. That is why I publish the receiver, the antenna, the time and the frequency, so somebody else can go stand in the same field and check. Two people have. Neither heard it that night. That is in the description of the next upload." },
+          { "author": "ferris_lp", "time": "Feb 19, 2007 12:41 pm", "body": "Two people not hearing it is not a result." },
+          { "author": "wideband_jr", "time": "Feb 19, 2007 1:09 pm", "body": "It absolutely is a result. It is a negative result, which is a kind of result, which is a thing you would know if you had ever done any of this." },
+          { "author": "ferris_lp", "time": "Feb 19, 2007 1:22 pm", "body": "Wonderful. Condescension. Very useful." },
+          { "author": "annmt", "time": "Feb 19, 2007 4:47 pm", "body": "Can somebody who is not fighting explain what the tone at 3:04 is. That is the part I do not understand." },
+          { "author": "wideband_jr", "time": "Feb 19, 2007 5:03 pm", "body": "Interval marker. A lot of these send a tone or a musical phrase ahead of the message so an operator can find it. It is the most ordinary thing on the whole recording." },
+          { "author": "hollis_m", "time": "Feb 19, 2007 6:30 pm", "body": "my uncle swears he heard this in 1988 which is before anybody had a laptop, so" },
+          { "author": "ferris_lp", "time": "Feb 19, 2007 6:52 pm", "body": "Your uncle is not evidence." },
+          { "author": "hollis_m", "time": "Feb 19, 2007 7:04 pm", "body": "neither is you being certain about something you did not go listen to" },
+          { "author": "sparrow_dt", "time": "Feb 20, 2007 2:18 am", "body": "we drove out there after a show in 2004 at like 3am and heard nothing and got yelled at by a farmer, which I feel is the most honest report in this comment section" },
+          { "author": "brandt_c", "time": "Feb 20, 2007 7:41 am", "body": "The crossing at 6.8 and the pull-off at 13.4 are not the same place and roughly every story about this mixes them up. Just saying it again." },
+          { "author": "ferris_lp", "time": "Feb 20, 2007 9:15 am", "body": "Which is itself evidence the whole thing is folklore that accreted around a road." },
+          { "author": "kestrelbird", "time": "Feb 20, 2007 10:30 am", "body": "That is a fair point and I have said the same thing. The audio is still on the tape." },
+          { "author": "gnash_44", "time": "Feb 21, 2007 8:00 am", "body": "pager" },
+          { "author": "parkerlane", "time": "Feb 24, 2007 9:12 pm", "body": "Eighty comments and four of them are about the recording. Never change, county." }
+        ]
+      },
+      {
+        "id": "sg-502",
+        "channelId": "ch-sixtytwo",
+        "title": "Same night, USB versus LSB, side by side",
+        "uploader": "kestrelbird",
+        "uploaded": "Feb 26, 2007",
+        "views": 44120,
+        "duration": "9:14",
+        "thumbSeed": "sdr-usb-lsb",
+        "description": "People asked, so: the same twelve minutes demodulated both ways, cut side by side, with the switch at 4:37.\n\nLSB is unintelligible, as you would expect from a USB transmission. This does not prove anything about the source, it only proves the signal is upper sideband, which I already said.\n\nTwo listeners went out on the 21st and the 23rd with their own gear and heard nothing on either night. Their notes are reproduced with permission:\n\n[quote=W. Jaris, 2007-02-21]2340 to 0020, 4.219 USB, R75 and a dipole, nothing above noise. Clear, 24 F. Two trucks went by.[/quote]\n[quote=P. Lane, 2007-02-23]Sat in the car from 11 to 1 with a portable. Heard a Cuban station on 40 meters and my own heater. Cold.[/quote]\n\nI will keep recording on the nights the pattern suggests and publishing everything, including the nights with nothing on them.",
+        "comments": [
+          { "author": "wideband_jr", "time": "Feb 26, 2007 6:40 pm", "body": "Publishing the null results is the single thing that makes this channel worth subscribing to." },
+          { "author": "ferris_lp", "time": "Feb 27, 2007 8:22 am", "body": "Or it is a person building credibility for the one night he fakes. I have said my piece, I am done with this channel." },
+          { "author": "gnash_44", "time": "Feb 27, 2007 9:05 am", "body": "he has said his piece four times now" },
+          { "author": "annmt", "time": "Feb 28, 2007 7:30 pm", "body": "Thank you for putting the other two people's notes up in full." }
+        ]
+      },
+      {
+        "id": "sg-503",
+        "channelId": "ch-sixtytwo",
+        "title": "Two hours of nothing, Mar 4 2007, for the record",
+        "uploader": "kestrelbird",
+        "uploaded": "Mar 6, 2007",
+        "views": 21883,
+        "duration": "1:59:40",
+        "thumbSeed": "sdr-nothing",
+        "description": "Two hours of band noise from the same pull-off on a night the pattern said something should have happened. Nothing did.\n\n[code]Date:      2007-03-04\nStart:     22:50 local\nEnd:       00:50 local\nFreq:      4.219 MHz, USB, unattended\nRX:        Icom R75\nAntenna:   same wire, same fence post\nWeather:   overcast, 31 F, light wind from the west\nResult:    nothing[/code]\n\nI am uploading it because a log that only contains the interesting nights is not a log, it is a scrapbook. If you want to skip to something, do not, there is nothing.\n\nThe truck at 1:04:12 is a truck.\n\nIf the astronomy club is out on the hill on one of these nights, say hello, they are usually at the gravel lot further up: [url=synth://stargazers.verity.net/]stargazers.verity.net[/url]. They have been generous about letting me park.",
+        "comments": [
+          { "author": "dfurniss", "time": "Mar 6, 2007 9:48 pm", "body": "You are welcome up there any clear night. Just kill your headlights past the cattle gate, we are usually dark adapted by ten." },
+          { "author": "wideband_jr", "time": "Mar 7, 2007 7:15 am", "body": "Two hours of hiss with a full log attached is more scientific than anything posted about this in six years of forum threads." },
+          { "author": "gnash_44", "time": "Mar 7, 2007 10:02 am", "body": "the truck is the pager" },
+          { "author": "kestrelbird", "time": "Mar 7, 2007 11:30 am", "body": "Gary." },
+          { "author": "hollis_m", "time": "Mar 9, 2007 1:40 am", "body": "put this on at 3am and it is the most relaxing thing on the internet, no notes" }
+        ]
+      }
+    ]
+  }
+}

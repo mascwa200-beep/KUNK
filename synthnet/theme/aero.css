@@ -1,0 +1,1155 @@
+/* ==========================================================================
+   Synthnet - aero.css
+   Windows Vista / Internet Explorer 7 browser chrome, circa 2007.
+   Pure CSS. No images, no webfonts, no network of any kind.
+   ========================================================================== */
+
+:root {
+  --aero-font: "Segoe UI", Frutiger, Tahoma, Verdana, sans-serif;
+  --aero-mono: Consolas, "Lucida Console", "Courier New", monospace;
+
+  --aero-blue:        #1c4f7c;
+  --aero-blue-deep:   #0d3b5c;
+  --aero-edge:        #3c7fb1;   /* the canonical Vista control border */
+  --aero-edge-soft:   #a7bcd2;
+  --aero-edge-hard:   #7a99b5;
+
+  --aero-chrome-top:  #f6fafd;
+  --aero-chrome-bot:  #dde8f3;
+  --aero-chrome-bot2: #cfdded;
+
+  --aero-ink:         #0b1b26;
+  --aero-ink-soft:    #26394a;
+  --aero-glow:        rgba(90, 170, 235, .55);
+
+  --aero-radius:      6px;
+}
+
+/* --------------------------------------------------------------------------
+   0. Reset-ish base + the Vista desktop
+   -------------------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--aero-font);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--aero-ink);
+  overflow: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  /* Vista "Aurora": blue-green gradient with a soft light bloom overhead */
+  background-color: #10597f;
+  background-image:
+    radial-gradient(130% 70% at 50% -12%, rgba(255,255,255,.60), rgba(255,255,255,0) 62%),
+    radial-gradient(90%  65% at 18% 16%,  rgba(150,232,238,.50), rgba(150,232,238,0) 66%),
+    radial-gradient(85%  60% at 86% 88%,  rgba(24,214,178,.34),  rgba(24,214,178,0)  70%),
+    linear-gradient(180deg,
+      #0a3350   0%,
+      #0f5177  26%,
+      #17789a  52%,
+      #24a08f  78%,
+      #1a6b66 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* --------------------------------------------------------------------------
+   1. Focus: always visible, dotted, period-correct
+   -------------------------------------------------------------------------- */
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[tabindex]:focus {
+  outline: 1px dotted #101820;
+  outline-offset: 1px;
+}
+.synth-titlebar :focus,
+.synth-titlebar :focus-visible {
+  outline-color: #ffffff;
+}
+/* keep the dotted ring for keyboard users where :focus-visible is supported */
+@supports selector(:focus-visible) {
+  button:focus:not(:focus-visible),
+  input:focus:not(:focus-visible),
+  [tabindex]:focus:not(:focus-visible) { outline: none; }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 1px dotted #101820;
+    outline-offset: 1px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Window frame
+   -------------------------------------------------------------------------- */
+
+.synth-desktop {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top:    max(20px, env(safe-area-inset-top));
+  padding-bottom: max(20px, env(safe-area-inset-bottom));
+  padding-left:   max(20px, env(safe-area-inset-left));
+  padding-right:  max(20px, env(safe-area-inset-right));
+}
+
+/* iOS Safari resolves 100% against the large viewport; fill the visible one */
+@supports (-webkit-touch-callout: none) {
+  .synth-desktop { min-height: -webkit-fill-available; }
+}
+
+.synth-window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1180px;
+  max-height: 940px;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  /* transparent so the glass title bar composites against the desktop aurora;
+     every child row paints its own opaque background */
+  background: transparent;
+  border: 1px solid rgba(6, 22, 36, .88);
+  border-radius: var(--aero-radius) var(--aero-radius) 4px 4px;
+  box-shadow:
+    0 22px 64px rgba(0, 0, 0, .55),
+    0 3px 10px rgba(0, 0, 0, .38),
+    inset 0 0 0 1px rgba(255, 255, 255, .22);
+}
+
+/* --------------------------------------------------------------------------
+   3. Glass title bar
+   -------------------------------------------------------------------------- */
+
+.synth-titlebar {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 30px;
+  padding: 0 5px 0 8px;
+  color: #eef6ff;
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .70), 0 0 7px rgba(130, 200, 255, .55);
+  border-bottom: 1px solid rgba(6, 20, 34, .80);
+  border-radius: 5px 5px 0 0;
+  background:
+    linear-gradient(180deg,
+      rgba(74, 112, 146, .70)  0%,
+      rgba(40,  76, 110, .66) 46%,
+      rgba(22,  50,  78, .78) 46.5%,
+      rgba(34,  70, 102, .70) 78%,
+      rgba(58, 100, 136, .62) 100%);
+  /* 1px inset white highlight along the top edge, plus the glass rim */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .60),
+    inset 0 0 0 1px rgba(255, 255, 255, .10),
+    inset 0 -1px 0 rgba(0, 0, 0, .35);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.synth-titlebar::after {
+  /* the Aero light bloom sitting in the glass */
+  content: "";
+  position: absolute;
+  left: 8%; right: 8%; top: 0; height: 60%;
+  border-radius: 0 0 50% 50%;
+  background: radial-gradient(60% 100% at 50% 0%, rgba(255,255,255,.26), rgba(255,255,255,0) 72%);
+  pointer-events: none;
+}
+
+.synth-titleicon {
+  flex: 0 0 auto;
+  width: 16px; height: 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(8, 40, 66, .9);
+  background:
+    radial-gradient(70% 70% at 35% 25%, rgba(255,255,255,.85), rgba(255,255,255,0) 60%),
+    linear-gradient(180deg, #9fd8f5 0%, #3d8fc4 50%, #1a5c8e 50.5%, #0f4571 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .28);
+}
+
+.synth-titletext {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.synth-titlespacer { flex: 1 1 auto; }
+
+.synth-winbtns {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.synth-winbtn {
+  position: relative;
+  width: 27px; height: 19px;
+  padding: 0;
+  font: inherit;
+  cursor: default;
+  border: 1px solid rgba(8, 28, 46, .8);
+  border-radius: 3px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.42) 0%, rgba(255,255,255,.14) 49%,
+                            rgba(255,255,255,.04) 50%, rgba(255,255,255,.20) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55);
+}
+.synth-winbtn:hover { background-color: rgba(255, 255, 255, .22); }
+.synth-winbtn:active { background-color: rgba(0, 0, 0, .18); }
+.synth-winclose {
+  width: 43px;
+  border-color: rgba(96, 16, 16, .9);
+  background:
+    linear-gradient(180deg, #f2a79b 0%, #d9553f 49%, #b52c1c 50%, #e06a53 100%);
+}
+.synth-winclose:hover {
+  background: linear-gradient(180deg, #ffc2b6 0%, #ea6a52 49%, #c83824 50%, #ef8067 100%);
+}
+.synth-winbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .55);
+}
+.synth-winmin::before { width: 9px; height: 2px; margin-top: 4px; }
+.synth-winmax::before {
+  width: 10px; height: 9px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-top-width: 3px;
+}
+.synth-winclose::before {
+  width: 10px; height: 2px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.synth-winclose::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 10px; height: 2px;
+  background: #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .55);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* --------------------------------------------------------------------------
+   4. Glossy capsule buttons (the Vista control look)
+   -------------------------------------------------------------------------- */
+
+.synth-btn,
+.synth-cmdbtn,
+.synth-iconbtn {
+  font-family: var(--aero-font);
+  font-size: 12px;
+  line-height: 1;
+  color: var(--aero-ink);
+  padding: 4px 10px;
+  min-height: 23px;
+  cursor: pointer;
+  border: 1px solid var(--aero-edge);
+  border-radius: 3px;
+  /* hard split at 50%: lighter top half, darker bottom half */
+  background:
+    linear-gradient(180deg,
+      #fdfeff 0%,
+      #e8f2fb 50%,
+      #d2e4f5 50.01%,
+      #bed9f1 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .78);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+  white-space: nowrap;
+}
+.synth-btn:hover,
+.synth-cmdbtn:hover,
+.synth-iconbtn:hover {
+  border-color: #2d7ab5;
+  background:
+    linear-gradient(180deg,
+      #ffffff 0%,
+      #eaf7ff 50%,
+      #ccebff 50.01%,
+      #aedcfb 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .92),
+    0 0 6px 1px var(--aero-glow);
+}
+.synth-btn:active,
+.synth-cmdbtn:active,
+.synth-iconbtn:active {
+  background:
+    linear-gradient(180deg,
+      #b7d2e8 0%,
+      #a6c6e0 50%,
+      #99bedb 50.01%,
+      #aecae4 100%);
+  box-shadow: inset 0 1px 3px rgba(0, 40, 80, .35);
+}
+.synth-btn[disabled],
+.synth-cmdbtn[disabled],
+.synth-iconbtn[disabled] {
+  color: #93a4b3;
+  border-color: #b9c8d6;
+  background: linear-gradient(180deg, #f6f9fc 0%, #eef3f8 50%, #e6edf4 50.01%, #dde6ef 100%);
+  box-shadow: none;
+  cursor: default;
+}
+
+/* --------------------------------------------------------------------------
+   5. Navigation row: back/forward, address bar, refresh/stop, search
+   -------------------------------------------------------------------------- */
+
+.synth-navrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  background: linear-gradient(180deg, var(--aero-chrome-top) 0%, var(--aero-chrome-bot) 100%);
+  border-bottom: 1px solid var(--aero-edge-soft);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+.synth-navbtns {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.synth-navbtn {
+  position: relative;
+  width: 27px; height: 27px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #2f6f9e;
+  border-radius: 50%;
+  background:
+    radial-gradient(80% 70% at 50% 12%, rgba(255,255,255,.95), rgba(255,255,255,0) 62%),
+    linear-gradient(180deg, #d9edfb 0%, #9fcdee 49%, #5ea5d6 50%, #8cc4e8 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .55),
+    0 1px 2px rgba(0, 30, 60, .30);
+}
+.synth-navbtn:hover {
+  border-color: #2d7ab5;
+  background:
+    radial-gradient(80% 70% at 50% 12%, rgba(255,255,255,1), rgba(255,255,255,0) 62%),
+    linear-gradient(180deg, #eaf8ff 0%, #b6e0fa 49%, #6fbcea 50%, #9cd6f6 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .75),
+    0 0 7px 1px var(--aero-glow);
+}
+.synth-navbtn:active {
+  background: linear-gradient(180deg, #8fb9d6 0%, #7aa8c9 50%, #6c9cc0 50.01%, #86b2d0 100%);
+}
+.synth-navbtn[disabled] {
+  border-color: #b3c4d2;
+  background: linear-gradient(180deg, #f2f6fa 0%, #e2eaf1 49%, #d5dfe8 50%, #e6eef4 100%);
+  box-shadow: none;
+  cursor: default;
+}
+.synth-navbtn::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.synth-navback::before {
+  transform: translate(-60%, -50%);
+  border-right: 7px solid #10456e;
+}
+.synth-navfwd::before {
+  transform: translate(-40%, -50%);
+  border-left: 7px solid #10456e;
+}
+.synth-navbtn[disabled]::before { border-right-color: #9fb0bd; border-left-color: #9fb0bd; }
+
+/* ---- home (phone only; the command bar is hidden at that size) ---- */
+
+.synth-navhome {
+  position: relative;
+  display: none;
+  flex: 0 0 auto;
+  width: 40px; height: 40px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #2f6f9e;
+  border-radius: 50%;
+  background:
+    radial-gradient(80% 70% at 50% 12%, rgba(255,255,255,.95), rgba(255,255,255,0) 62%),
+    linear-gradient(180deg, #d9edfb 0%, #9fcdee 49%, #5ea5d6 50%, #8cc4e8 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .55),
+    0 1px 2px rgba(0, 30, 60, .30);
+}
+.synth-navhome:hover {
+  border-color: #2d7ab5;
+  background:
+    radial-gradient(80% 70% at 50% 12%, rgba(255,255,255,1), rgba(255,255,255,0) 62%),
+    linear-gradient(180deg, #eaf8ff 0%, #b6e0fa 49%, #6fbcea 50%, #9cd6f6 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, .75),
+    0 0 7px 1px var(--aero-glow);
+}
+.synth-navhome:active {
+  background: linear-gradient(180deg, #8fb9d6 0%, #7aa8c9 50%, #6c9cc0 50.01%, #86b2d0 100%);
+}
+.synth-navhome::before {
+  /* roof */
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -11px);
+  width: 0; height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 8px solid #10456e;
+}
+.synth-navhome::after {
+  /* body */
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -3px);
+  width: 12px; height: 9px;
+  background: #10456e;
+}
+
+/* ---- address bar ---- */
+
+.synth-addrwrap {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 1px 0 3px;
+  background: #ffffff;
+  border: 1px solid #7f9db9;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 30, 60, .22);
+}
+.synth-addrwrap:focus-within {
+  border-color: var(--aero-edge);
+  box-shadow: inset 0 1px 2px rgba(0, 30, 60, .18), 0 0 5px rgba(90, 170, 235, .60);
+}
+.synth-addricon {
+  flex: 0 0 auto;
+  width: 14px; height: 14px;
+  margin: 0 4px 0 2px;
+  border-radius: 2px;
+  border: 1px solid #5c86a8;
+  background: linear-gradient(180deg, #d9f0ff 0%, #8ec4e6 50%, #4c8fbd 50.5%, #86bcdd 100%);
+}
+.synth-addr {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 20px;
+  margin: 0;
+  padding: 0 4px;
+  font-family: var(--aero-font);
+  font-size: 12px;
+  color: #10202c;
+  background: transparent;
+  border: 0;
+  outline-offset: -1px;
+}
+.synth-addr::placeholder { color: #8c9aa6; }
+
+.synth-addrdrop {
+  position: relative;
+  flex: 0 0 auto;
+  width: 17px; height: 22px;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  border-left: 1px solid #cfdae4;
+  background: linear-gradient(180deg, #fbfdff 0%, #eaf1f8 50%, #dfe9f3 50.01%, #d3e0ec 100%);
+}
+.synth-addrdrop:hover { background: linear-gradient(180deg, #ffffff 0%, #eaf7ff 50%, #cfeaff 50.01%, #b9e0fc 100%); }
+.synth-addrdrop::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -30%);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #2a5878;
+}
+
+.synth-go {
+  position: relative;
+  flex: 0 0 auto;
+  width: 22px; height: 22px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #3f7a2f;
+  border-radius: 50%;
+  margin-left: 2px;
+  background:
+    radial-gradient(80% 70% at 50% 14%, rgba(255,255,255,.90), rgba(255,255,255,0) 60%),
+    linear-gradient(180deg, #bdeda0 0%, #7ccb53 49%, #46a02a 50%, #79c94f 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .55), 0 1px 2px rgba(0, 40, 0, .25);
+}
+.synth-go:hover {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .8), 0 0 7px 1px rgba(120, 210, 90, .65);
+}
+.synth-go:active { background: linear-gradient(180deg, #86bd6a 0%, #6aab4a 50%, #5d9c3f 50.01%, #7cb85e 100%); }
+.synth-go::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-38%, -50%);
+  width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid #ffffff;
+}
+
+/* ---- refresh / stop ---- */
+
+.synth-iconbtn {
+  position: relative;
+  flex: 0 0 auto;
+  width: 25px; height: 24px;
+  padding: 0;
+}
+/* IE7 drew these as bare glyphs; the :hover rule above supplies the glow frame */
+.synth-refresh:not(:hover):not(:active),
+.synth-stop:not(:hover):not(:active) {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.synth-refresh::before {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%) rotate(38deg);
+  width: 11px; height: 11px;
+  border: 2px solid #1d6aa0;
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+.synth-refresh::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(1px, -8px);
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 5px solid #1d6aa0;
+}
+.synth-stop::before,
+.synth-stop::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 12px; height: 2px;
+  background: #a32a1c;
+}
+.synth-stop::before { transform: translate(-50%, -50%) rotate(45deg); }
+.synth-stop::after  { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* ---- search box (separate from the address bar, as in IE7) ---- */
+
+.synth-searchwrap {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 24px;
+  padding: 0 1px 0 4px;
+  background: #ffffff;
+  border: 1px solid #7f9db9;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 30, 60, .22);
+}
+.synth-searchwrap:focus-within {
+  border-color: var(--aero-edge);
+  box-shadow: inset 0 1px 2px rgba(0, 30, 60, .18), 0 0 5px rgba(90, 170, 235, .60);
+}
+.synth-searchicon {
+  flex: 0 0 auto;
+  width: 9px; height: 9px;
+  margin-right: 5px;
+  border: 2px solid #4a7ea3;
+  border-radius: 50%;
+  box-shadow: 3px 3px 0 -1px #4a7ea3;
+}
+.synth-searchinput {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 20px;
+  margin: 0;
+  padding: 0 2px;
+  font-family: var(--aero-font);
+  font-size: 12px;
+  color: #10202c;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.synth-searchinput::placeholder { color: #98a6b2; font-style: italic; }
+.synth-searchinput::-webkit-search-decoration,
+.synth-searchinput::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+.synth-searchgo {
+  position: relative;
+  flex: 0 0 auto;
+  width: 20px; height: 22px;
+  padding: 0;
+  cursor: pointer;
+  border: 0;
+  border-left: 1px solid #cfdae4;
+  background: linear-gradient(180deg, #fbfdff 0%, #eaf1f8 50%, #dfe9f3 50.01%, #d3e0ec 100%);
+}
+.synth-searchgo:hover { background: linear-gradient(180deg, #ffffff 0%, #eaf7ff 50%, #cfeaff 50.01%, #b9e0fc 100%); }
+.synth-searchgo::before {
+  content: "";
+  position: absolute;
+  left: 5px; top: 5px;
+  width: 8px; height: 8px;
+  border: 2px solid #2a5878;
+  border-radius: 50%;
+}
+.synth-searchgo::after {
+  content: "";
+  position: absolute;
+  left: 12px; top: 13px;
+  width: 5px; height: 2px;
+  background: #2a5878;
+  transform: rotate(45deg);
+}
+
+/* --------------------------------------------------------------------------
+   6. Tab strip  (BELOW the nav row, ABOVE the command bar - IE7 order)
+   -------------------------------------------------------------------------- */
+
+.synth-tabrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  min-width: 0;
+  padding: 4px 8px 0 8px;
+  background: linear-gradient(180deg, #dce8f4 0%, #cddcec 100%);
+  border-bottom: 1px solid #93acc6;
+}
+
+.synth-tabs {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* IE7 scrolled tabs with chevrons; a visible bar would shrink the strip */
+  scrollbar-width: none;
+}
+.synth-tabs::-webkit-scrollbar { width: 0; height: 0; }
+
+.synth-tab,
+.synth-tabs > button,
+.synth-tabs > a,
+.synth-tabs > div {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 190px;
+  min-width: 82px;
+  height: 23px;
+  margin: 0;
+  padding: 0 8px;
+  font-family: var(--aero-font);
+  font-size: 12px;
+  line-height: 1;
+  color: #13303f;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid #93acc6;
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: linear-gradient(180deg, #eef4fa 0%, #dbe7f3 50%, #cbdbeb 50.01%, #bed2e5 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .85);
+}
+.synth-tab > span,
+.synth-tabs > button > span { overflow: hidden; text-overflow: ellipsis; }
+
+.synth-tab:hover,
+.synth-tabs > button:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #eaf4fd 50%, #d9ebfb 50.01%, #cde3f8 100%);
+}
+
+.synth-tab.is-active,
+.synth-tab.active,
+.synth-tab[aria-selected="true"],
+.synth-tabs > button.is-active,
+.synth-tabs > button.active,
+.synth-tabs > button[aria-selected="true"] {
+  height: 25px;
+  color: #000000;
+  font-weight: 600;
+  border-color: #7f9db9;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 50%, #f4f9fe 50.01%, #ffffff 100%);
+  box-shadow: inset 0 1px 0 #ffffff, 0 -1px 2px rgba(0, 30, 60, .10);
+  /* merge visually into the content area below */
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+  z-index: 2;
+}
+
+.synth-tabclose {
+  flex: 0 0 auto;
+  width: 15px; height: 15px;
+  padding: 0;
+  font: inherit;
+  line-height: 13px;
+  color: #3a5468;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: transparent;
+}
+.synth-tabclose:hover {
+  color: #8c1c0c;
+  border-color: #d08a80;
+  background: linear-gradient(180deg, #ffe6e1 0%, #ffcfc6 50%, #f7b6aa 50.01%, #ffd6cd 100%);
+}
+
+.synth-newtab {
+  position: relative;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 20px;
+  margin-left: 2px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #93acc6;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(180deg, #e8f0f9 0%, #d8e4f1 50%, #c8d8e9 50.01%, #bccfe2 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8);
+}
+.synth-newtab:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #eaf6ff 50%, #d3ebff 50.01%, #c1e2fb 100%);
+  box-shadow: inset 0 1px 0 #fff, 0 0 6px 1px var(--aero-glow);
+}
+.synth-newtab::before,
+.synth-newtab::after {
+  content: "";
+  position: absolute;
+  left: 50%; top: 50%;
+  background: #2a5878;
+  transform: translate(-50%, -50%);
+}
+.synth-newtab::before { width: 9px; height: 2px; }
+.synth-newtab::after  { width: 2px; height: 9px; }
+
+/* --------------------------------------------------------------------------
+   7. Command bar
+   -------------------------------------------------------------------------- */
+
+.synth-commandbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  background: linear-gradient(180deg, #fcfdff 0%, #eaf1f8 55%, #e0e9f3 100%);
+  border-bottom: 1px solid var(--aero-edge-hard);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .95);
+}
+.synth-cmdbtn {
+  padding: 3px 9px;
+  min-height: 22px;
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+}
+.synth-cmdbtn:hover {
+  border-color: var(--aero-edge);
+  background:
+    linear-gradient(180deg, #ffffff 0%, #eaf7ff 50%, #ccebff 50.01%, #aedcfb 100%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.92), 0 0 6px 1px var(--aero-glow);
+}
+.synth-cmdbtn::before {
+  content: "";
+  display: inline-block;
+  width: 13px; height: 13px;
+  margin-right: 6px;
+  vertical-align: -2px;
+  border: 1px solid #4b7fa5;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #d9f0ff 0%, #8ec4e6 50%, #4c8fbd 50.5%, #86bcdd 100%);
+}
+.synth-cmd-home::before  { background: linear-gradient(180deg, #ffe9b8 0%, #f2c161 50%, #d99a2a 50.5%, #f0bf5e 100%); border-color: #a87a1e; }
+.synth-cmd-feeds::before { background: linear-gradient(180deg, #ffd9ad 0%, #f59b45 50%, #d9701a 50.5%, #f39a4b 100%); border-color: #a85c14; }
+.synth-cmd-print::before { background: linear-gradient(180deg, #eef2f6 0%, #c9d4de 50%, #93a3b1 50.5%, #c2ced9 100%); border-color: #74838f; }
+.synth-cmd-page::before  { background: linear-gradient(180deg, #ffffff 0%, #e6eef6 50%, #c3d4e4 50.5%, #e2ebf4 100%); border-color: #7b93a8; }
+.synth-cmd-tools::before { background: linear-gradient(180deg, #e2f6dd 0%, #a9dc97 50%, #6cb355 50.5%, #a2d890 100%); border-color: #4f8a3c; }
+
+/* IE7 reserved the left of the command bar for add-ins and right-aligned its own buttons */
+.synth-cmdspacer {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Home / Print / Page / Tools each carried a dropdown chevron */
+.synth-cmd-home::after,
+.synth-cmd-print::after,
+.synth-cmd-page::after,
+.synth-cmd-tools::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 2px;
+  width: 0; height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #4a6170;
+}
+
+.synth-cmdsep {
+  flex: 0 0 auto;
+  width: 1px;
+  height: 17px;
+  margin: 0 4px;
+  background: #bccbd9;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, .9);
+}
+
+/* --------------------------------------------------------------------------
+   8. Viewport + page mount
+   -------------------------------------------------------------------------- */
+
+.synth-viewport {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  background: #ffffff;
+  border-top: 1px solid #ffffff;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.synth-page {
+  background: #ffffff;
+  color: #000000;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--aero-font);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* period-accurate "page not found" shown inside whatever skin is active */
+.synth-404 {
+  padding: 30px 34px 40px 34px;
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--aero-font);
+}
+.synth-404 h1 {
+  margin: 0 0 14px 0;
+  padding: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1c4f7c;
+  border-bottom: 1px solid #d3dde6;
+}
+.synth-404 p { margin: 0 0 12px 0; font-size: 13px; max-width: 46em; }
+.synth-404 ul { margin: 0 0 14px 20px; padding: 0; font-size: 13px; }
+.synth-404 li { margin: 0 0 4px 0; }
+.synth-404 code,
+.synth-404 kbd { font-family: var(--aero-mono); font-size: 12px; }
+.synth-404 .synth-404-url {
+  display: inline-block;
+  padding: 1px 5px;
+  font-family: var(--aero-mono);
+  background: #f2f6fa;
+  border: 1px solid #d3dde6;
+}
+.synth-404 a { color: #0b4d87; }
+
+/* --------------------------------------------------------------------------
+   9. Status bar (inset)
+   -------------------------------------------------------------------------- */
+
+.synth-statusbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 23px;
+  padding: 0 8px;
+  font-size: 11px;
+  color: var(--aero-ink-soft);
+  background: linear-gradient(180deg, #eef3f9 0%, #e1e9f1 55%, #d6e0ea 100%);
+  border-top: 1px solid #9fb3c8;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .95), inset 0 2px 3px rgba(0, 30, 60, .10);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.synth-statustext {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.synth-statusgap { flex: 1 1 auto; }
+
+.synth-progress {
+  flex: 0 0 auto;
+  width: 110px;
+  height: 11px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #97a9ba;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 2px rgba(0, 30, 60, .25);
+}
+.synth-progress[aria-hidden="true"],
+.synth-progress[hidden] { visibility: hidden; }
+.synth-progressfill {
+  display: block;
+  width: 0;
+  height: 100%;
+  background:
+    linear-gradient(180deg, #d6f2b8 0%, #8fd35f 49%, #4ca62c 50%, #85cd57 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .6);
+  transition: width .12s linear;
+}
+
+.synth-zone,
+.synth-protmode,
+.synth-zoom {
+  flex: 0 0 auto;
+  padding: 1px 7px;
+  white-space: nowrap;
+  border: 1px solid #bfcddb;
+  border-radius: 2px;
+  background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.25));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
+}
+.synth-zoom::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 2px;
+  width: 0; height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid #4a6170;
+}
+
+/* --------------------------------------------------------------------------
+   10. Period scrollbars (progressive; ignored where unsupported)
+   -------------------------------------------------------------------------- */
+
+.synth-viewport::-webkit-scrollbar,
+.synth-commandbar::-webkit-scrollbar { width: 15px; height: 12px; }
+.synth-viewport::-webkit-scrollbar-track,
+.synth-commandbar::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #eef3f8, #e3ebf3);
+  border-left: 1px solid #cfdae4;
+}
+.synth-viewport::-webkit-scrollbar-thumb,
+.synth-commandbar::-webkit-scrollbar-thumb {
+  border: 1px solid #7f9db9;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #ffffff 0%, #e4eef8 50%, #cfe0ef 50.01%, #bfd5e9 100%);
+}
+.synth-viewport::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #ffffff 0%, #eaf6ff 50%, #cfeaff 50.01%, #b6ddfa 100%);
+}
+
+/* --------------------------------------------------------------------------
+   11. Phone layout - this runs self-hosted on a handset
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 699px) {
+
+  .synth-desktop {
+    padding: 0;
+    padding-top:    env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    align-items: stretch;
+  }
+
+  .synth-window {
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    box-shadow: none;
+  }
+
+  .synth-titlebar { border-radius: 0; height: 28px; }
+
+  /* a full-bleed phone browser has no OS window to minimise */
+  .synth-winbtns { display: none; }
+
+  .synth-navrow { flex-wrap: wrap; gap: 4px; padding: 4px 6px; }
+
+  /* refresh and stop hand their width back to the address field */
+  .synth-refresh,
+  .synth-stop { display: none; }
+
+  .synth-navbtns  { order: 1; }
+  .synth-navhome  { display: block; order: 1; }
+  .synth-go       { order: 2; }
+  .synth-searchwrap { order: 2; }
+  .synth-addrwrap { order: 3; }
+
+  .synth-navbtn { width: 40px; height: 40px; }
+  .synth-navbtn::before {
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+  }
+  .synth-navback::before { border-right-width: 9px; }
+  .synth-navfwd::before  { border-left-width: 9px; }
+
+  /* the address field takes a full-width row of its own */
+  .synth-addrwrap { flex: 1 1 100%; height: 40px; }
+  .synth-addr { height: 36px; font-size: 16px; } /* 16px stops iOS zoom-on-focus */
+  .synth-addrdrop { width: 40px; height: 38px; }
+  .synth-go { width: 40px; height: 40px; }
+
+  /* search stays reachable without a menu: it shares the first row.
+     The basis must be the min-width, not auto: flex line-breaking uses the
+     hypothetical (basis) size, so an auto basis measures the input at its
+     max-content width and wraps the box onto a row of its own before it ever
+     gets a chance to shrink. */
+  .synth-searchwrap {
+    flex: 1 1 96px;
+    width: auto;
+    height: 40px;
+    min-width: 96px;
+  }
+  .synth-searchinput { height: 36px; font-size: 16px; }
+  .synth-searchgo { width: 40px; height: 38px; }
+
+  .synth-iconbtn { width: 40px; height: 40px; }
+
+  .synth-tabrow { padding: 4px 6px 0 6px; }
+  .synth-tab,
+  .synth-tabs > button,
+  .synth-tabs > a,
+  .synth-tabs > div { height: 34px; min-width: 110px; }
+  .synth-tab.is-active,
+  .synth-tab.active,
+  .synth-tab[aria-selected="true"],
+  .synth-tabs > button.is-active,
+  .synth-tabs > button.active,
+  .synth-tabs > button[aria-selected="true"] { height: 36px; }
+  .synth-tabclose { width: 32px; height: 32px; line-height: 30px; }
+  .synth-newtab { width: 40px; height: 40px; }
+
+  /* IE Mobile dropped the command bar; Home is in the nav row, the address bar
+     takes a typed domain, and the keyboard shortcuts still work */
+  .synth-commandbar { display: none; }
+
+  .synth-statusbar { height: 22px; font-size: 11px; }
+  .synth-protmode { display: none; }
+  .synth-progress { width: 76px; }
+
+  .synth-404 { padding: 20px 16px 32px 16px; }
+}
+
+@media (max-width: 420px) {
+  .synth-titletext { font-size: 11px; }
+  .synth-progress { display: none; }
+}
+
+/* users who ask for less motion get none */
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* --------------------------------------------------------------------------
+   12. Print - chrome disappears, the page stands alone
+   -------------------------------------------------------------------------- */
+
+@media print {
+  html, body {
+    height: auto;
+    overflow: visible;
+    background: #ffffff !important;
+    color: #000000;
+  }
+  .synth-desktop {
+    position: static;
+    display: block;
+    padding: 0;
+  }
+  .synth-window {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+  .synth-titlebar,
+  .synth-navrow,
+  .synth-tabrow,
+  .synth-commandbar,
+  .synth-statusbar { display: none !important; }
+  .synth-viewport {
+    display: block;
+    overflow: visible;
+    height: auto;
+    border: 0;
+  }
+  .synth-page { min-height: 0; }
+  a { color: #000000; text-decoration: underline; }
+}

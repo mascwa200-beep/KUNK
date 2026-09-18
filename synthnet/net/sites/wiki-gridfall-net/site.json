@@ -1,0 +1,639 @@
+{
+  "schema": 1,
+  "domain": "wiki.gridfall.net",
+  "title": "The Verity County Wiki",
+  "type": "wiki",
+  "era": "2007",
+  "skin": "monobook",
+  "description": "A community-maintained wiki covering Verity County, its towns, institutions and arguments.",
+  "links": [
+    "verityledger.com",
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "webring.gridfall.net",
+    "marla.verity.net",
+    "codeandcoffee.blog",
+    "kestrel-journal.net"
+  ],
+  "data": {
+    "siteName": "The Verity County Wiki",
+    "categories": [
+      { "id": "places", "name": "Places in Verity County" },
+      { "id": "history", "name": "County history" },
+      { "id": "transport", "name": "Transport" },
+      { "id": "folklore", "name": "Folklore and unverified claims" },
+      { "id": "people", "name": "People" },
+      { "id": "internet", "name": "Local internet" }
+    ],
+    "articles": [
+      {
+        "id": "verity-county",
+        "title": "Verity County",
+        "summary": "Verity County is an inland county of roughly 31,000 residents, containing the towns of Gridfall, Pell, New Ardo, Marrow Hill and Verity Springs, and the unincorporated settlements of Tannery Flats and Bracken.",
+        "infobox": {
+          "caption": "Verity County",
+          "rows": [
+            ["County seat", "Gridfall"],
+            ["Established", "1841"],
+            ["Population (2000 census)", "31,208"],
+            ["Population (1980 census)", "38,540"],
+            ["Area", "612 sq mi"],
+            ["Principal watercourse", "Kestrel Creek"],
+            ["Principal road", "Route 62"],
+            ["Commissioners", "3 districts"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Geography",
+            "body": "The county occupies a shallow basin between two ridges. Kestrel Creek runs roughly east to west through the northern half and joins the Ardo River outside the county line. The southern third is higher and rockier and contains the working aggregate quarry on Quarry Road as well as three abandoned pits.\n\nRoute 62 is the only continuous east-west road. It follows the creek for its first eleven miles and then climbs past the quarry. The stretch between the Bracken Lane intersection and the quarry entrance is the subject of [url=/wiki/route-62-signal]The Signal on 62[/url]."
+          },
+          {
+            "heading": "Population",
+            "body": "The county's population peaked at approximately 41,000 in the 1970 census and has declined in every census since. The decline is generally attributed to the closure of the [url=/wiki/verity-tanning]Verity Tanning Company[/url] in 1987 and to reductions at the Pell fastener plant, which employed about 900 people in 1979 and about 240 in 2006.\n\nThe 2000 census recorded 31,208 residents. The county planning office projected 29,400 for 2010 in a 2004 report."
+          },
+          {
+            "heading": "Government",
+            "body": "The county is governed by three commissioners elected by district to four-year terms. District 3, covering Gridfall and Tannery Flats, was held by [url=/wiki/frank-tully]Frank Tully[/url] from 1991 to 2006.\n\nThe county clerk's office on Depot Street holds land records back to 1841 and meeting minutes back to 1903. Minutes from 1946 to 1958 were damaged in the basement during the [url=/wiki/flood-1994]1994 Kestrel Creek flood[/url] and exist only as partial transcripts."
+          },
+          {
+            "heading": "Media",
+            "body": "The [url=synth://verityledger.com/]Verity Ledger[/url], published in Gridfall since 1901, appears Wednesday and Saturday and is the county's only newspaper. A weekly shopper published in New Ardo ceased in 2003.\n\nLocal internet activity is concentrated on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] and [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url]. See also [url=/wiki/gridfall-webring]Gridfall Webring[/url]."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-rail", "label": "Verity Rail" },
+          { "id": "county-fair", "label": "Verity County Fair" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" }
+        ]
+      },
+      {
+        "id": "gridfall",
+        "title": "Gridfall",
+        "summary": "Gridfall is the seat of Verity County, with a population of 4,880 at the 2000 census. It is named for a mill race, not for electrical infrastructure, although the second explanation is widely repeated locally.",
+        "infobox": {
+          "caption": "Gridfall, Verity County",
+          "rows": [
+            ["Incorporated", "1858"],
+            ["Population (2000)", "4,880"],
+            ["Elevation", "640 ft"],
+            ["Principal streets", "Mill, Depot, Fenn, Quarry Rd"],
+            ["Post office", "Opened 1852"],
+            ["Named for", "The grid falls of the old mill race (disputed)"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Name",
+            "body": "The county history published in 1941 states that the name derives from \"the grid falls,\" a set of stepped timber weirs built in the 1830s to feed a grist mill on Kestrel Creek. The weirs were removed before 1900 and no photograph of them is known.\n\nA second explanation, that the town was named after the arrival of electric service, is heard frequently and is not possible: the name appears on a post office record dated 1852. This has been noted in this article since 2004 and is restored whenever it is removed."
+          },
+          {
+            "heading": "Mill Street",
+            "body": "Mill Street is the commercial block, running four blocks from the creek to the Depot Street corner. It contained 22 occupied storefronts in 1979 and 11 in 2007 according to figures compiled by the county planning office.\n\nNotable addresses include 214 Mill Street, formerly the [url=/wiki/blue-kestrel]Blue Kestrel[/url], vacant since 2004, and Hollis Market at 160 Mill Street, which is the county's oldest continuously operating business under one family, trading since 1912."
+          },
+          {
+            "heading": "Utilities",
+            "body": "Electric service is provided by Verity Valley Power & Light. Substation No. 3, at the corner of Depot Street and Quarry Road, serves the eastern half of the county and was the site of the [url=/wiki/substation-fire-2003]2003 Gridfall substation fire[/url].\n\nThe municipal water system draws from two wells north of the creek and is stored in the [url=/wiki/water-tower]Gridfall water tower[/url]."
+          },
+          {
+            "heading": "Landmarks",
+            "body": "[list][*]The county courthouse (1877), Depot Street[*]The Armory (1922), used for public hearings and the winter market[*]The Verity County Historical Society building, Depot Street[*]Kupfer Field, at [url=/wiki/verity-central-high]Verity Central High School[/url][*]The water tower[/list]"
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "blue-kestrel", "label": "Blue Kestrel" },
+          { "id": "water-tower", "label": "Gridfall water tower" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" }
+        ]
+      },
+      {
+        "id": "substation-fire-2003",
+        "title": "2003 Gridfall substation fire",
+        "summary": "A fire in the transformer yard of Verity Valley Power & Light Substation No. 3 on 11 June 2003 cut power to approximately 4,100 customers in eastern Verity County. No deaths resulted. The cause remains a matter of local dispute.",
+        "infobox": {
+          "caption": "2003 Gridfall substation fire",
+          "rows": [
+            ["Date", "11 June 2003"],
+            ["Time of first alarm", "04:56"],
+            ["Duration", "Approx. 6 hours"],
+            ["Location", "Substation No. 3, Depot St at Quarry Rd"],
+            ["Customers affected", "Approx. 4,100"],
+            ["Longest outage", "5 days (Tannery Flats)"],
+            ["Injuries", "2 firefighters, treated and released"],
+            ["Deaths", "0"],
+            ["Official cause", "\"Insulation degradation consistent with age\""]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Event",
+            "body": "The fire began in the transformer yard behind the Depot Street fence at approximately 04:52 on 11 June 2003. The Gridfall Volunteer Fire Department was dispatched at 04:56 under chief Warren Kupfer (1936-2007).\n\nCrews did not apply water to the burning oil and instead contained the fire at the brush line while awaiting isolation by the utility. The fire burned for approximately six hours. Quarry Road was closed for most of the day.\n\nFirefighters Ray Odell and Brian Sant were treated for smoke inhalation at County General Hospital and released the same afternoon. County General ran on generator power from 04:58 until 11:20.\n\nSource: the [url=synth://verityledger.com/]Verity Ledger[/url], 11 June 2003."
+          },
+          {
+            "heading": "Restoration",
+            "body": "Power was restored to the Gridfall business district by 14:00 on 11 June. The Hollis Road and Tannery Flats circuits were restored progressively over the following days, with the final customers reconnected on 16 June according to the utility, and on 17 June according to residents who reported the matter to the Ledger.\n\nThe Verity County Fairgrounds exhibition hall operated as a cooling and charging station on 11 June. Fair association president Doyle Merritt reported approximately 90 users."
+          },
+          {
+            "heading": "Official finding",
+            "body": "The state utility commission published a two-page summary in November 2003 attributing the failure to \"insulation degradation consistent with age.\" The full internal report prepared by Verity Valley Power & Light has never been released and the company has declined requests for it at public hearings in 2004, 2005 and 2007.\n\nA copy of the commission summary is held at the county clerk's office. A photographic copy was cited in this article in April 2008."
+          },
+          {
+            "heading": "Disputed causes",
+            "body": "[i]The following section has been repeatedly rewritten. Editors are asked to add sources rather than replace unsourced text with different unsourced text.[/i]\n\nIt is widely stated in the county that the fire was started by a contractor's cutting torch during work on the perimeter fence. No contractor has been named in any public document, the utility has denied that any work was under way at the site that week, and the commission summary does not mention a torch.\n\nIt has also been stated that the fire followed a switching operation carried out remotely at 04:40. The origin of this claim is a single post to [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] in July 2003 by an account that has not posted since. It has been repeated on this page, removed, and restored at least nineteen times.\n\nA third account holds that the failure was known about in advance because a Verity Valley crew inspected the bank in May 2003. A May inspection is not in itself evidence of anything. Inspections are routine.\n\nThe honest state of the matter is that the only document anybody has produced says age, and that no editor of this page has produced a document saying anything else."
+          },
+          {
+            "heading": "Aftermath",
+            "body": "Verity Valley replaced both transformer banks in 2004, added a second feed from the Pell tie line in 2005, and declared its hardening program complete in October 2006.\n\nResidents of Depot Street, notably Carl Beske, have continued to report voltage irregularities. The county emergency management office logged 11 voltage complaints from the area in 2006 and 9 in the first half of 2007.\n\nAn independent voltage logging effort was begun in 2007 by a Tannery Flats resident and documented at [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url]. Its published conclusion was that a single uncalibrated meter in one house proves nothing.\n\nA thread on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] opened in June 2003 remains open and has exceeded 900 replies."
+          }
+        ],
+        "categories": ["history", "places"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "route-62-signal", "label": "The Signal on 62" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" }
+        ]
+      },
+      {
+        "id": "verity-rail",
+        "title": "Verity Rail",
+        "summary": "Verity Rail is a regional freight railroad operating in and around Verity County. Its Gridfall branch, opened in 1899, closed to traffic in March 2007 after federal approval of an abandonment filing.",
+        "infobox": {
+          "caption": "Verity Rail",
+          "rows": [
+            ["Type", "Regional freight railroad"],
+            ["Gridfall branch opened", "1899"],
+            ["Gridfall branch closed", "30 March 2007"],
+            ["Branch length", "18.4 miles"],
+            ["Yard", "Depot Street, Gridfall"],
+            ["Final traffic", "Aggregate, Quarry Rd pit"],
+            ["Carloads (2006)", "Approx. 380"],
+            ["Jobs lost at closure", "16"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "History",
+            "body": "The branch was built in 1899 by the Verity & Ardo Railway to serve the tannery and the grist mills at Gridfall. It was absorbed into a larger system in 1928 and passed to the present Verity Rail in 1983 during a regional restructuring.\n\nPassenger service on the branch ended in 1953. The Depot Street station building was demolished in 1968; the yard office, built in 1897, still stands and is the oldest structure on Depot Street."
+          },
+          {
+            "heading": "Traffic",
+            "body": "In the 1960s the branch handled tannery hides, coal for the Gridfall municipal plant, and aggregate. Coal traffic ended in 1971. Tannery traffic ended with the closure of [url=/wiki/verity-tanning]Verity Tanning Company[/url] in 1987.\n\nThe Pell fastener plant received approximately two cars per month until 2001. Plant management stated at the time that the service window had become unreliable; Verity Rail stated that the volume no longer justified the switch. Both statements are on the record and they are not compatible.\n\nBy 2006 the branch carried approximately 380 carloads, nearly all aggregate from the Quarry Road pit."
+          },
+          {
+            "heading": "Abandonment",
+            "body": "Verity Rail filed for abandonment in August 2005. Federal approval followed in November 2006 after two comment periods. A public hearing at the Gridfall Armory on 13 February 2007 drew approximately 60 attendees; most comment concerned the future of the Mill Street and Bracken Lane grade crossings rather than the closure itself.\n\nThe final scheduled movement left the Depot Street yard on 30 March 2007.\n\nSixteen positions were eliminated: eleven in the yard, three on the track gang, two clerical. Nine employees were offered transfers to the Ardo main line."
+          },
+          {
+            "heading": "Right of way",
+            "body": "The county has applied for a rail-banking designation to preserve the corridor for a trail. As of late 2007 the application was pending. Commissioner Paul Renko has publicly estimated a two-year process \"if nobody sues.\" At least four adjacent landowners on the Tannery Flats stretch have stated in open meeting that they intend to contest the designation.\n\nThe rails remained in place through 2008. County engineer Sam Prewitt estimated crossing removal at $180,000 to $240,000 and stated the work was not funded."
+          },
+          {
+            "heading": "Documentation",
+            "body": "Enthusiast discussion and photographs are collected at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]. Video of the final aggregate movement of 21 March 2007 has been posted to [url=synth://clipvault.tv/]clipvault.tv[/url].\n\nA systematic photographic survey of all nineteen public crossings and bridges was carried out in four passes between October 2007 and March 2008 and deposited with the Verity County Historical Society and the county clerk. The signal bridge at Bracken Lane carries a builder's plate dated 1968 and replaced a timber structure lost in an earlier flood."
+          }
+        ],
+        "categories": ["transport", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-tanning", "label": "Verity Tanning Company" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" },
+          { "id": "verity-county", "label": "Verity County" }
+        ]
+      },
+      {
+        "id": "route-62-signal",
+        "title": "The Signal on 62",
+        "summary": "\"The Signal on 62\" is the local name for a broadcast, reported since approximately 1998, of a voice reading groups of digits, audible on car radios along a four-mile stretch of Route 62 in southern Verity County. Its source has not been established.",
+        "infobox": {
+          "caption": "The Signal on 62",
+          "rows": [
+            ["First documented report", "1998 (disputed)"],
+            ["Location", "Route 62, Bracken Ln to quarry entrance"],
+            ["Length of affected stretch", "Approx. 4 miles"],
+            ["Frequency", "1610 kHz (measured, 2007)"],
+            ["Content", "Groups of digits, usually described as five"],
+            ["Voice", "Usually described as female"],
+            ["Reported conditions", "Night, winter, during outages"],
+            ["Status", "Unexplained"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Reports",
+            "body": "The typical account describes driving the stretch of Route 62 between the Bracken Lane intersection and the quarry entrance after midnight, with an AM radio tuned between stations, and hearing a voice reading digits in groups.\n\nMost accounts describe five-digit groups and a woman's voice. A minority describe a repeated two-tone signal before the digits. Several accounts state the digits are clearer in winter, and several state they are clearer during power outages.\n\nThe county has received no formal complaint about the signal and has no official position on it. The state police have stated on one occasion, in 2002, that they are aware of the reports."
+          },
+          {
+            "heading": "Origin of the reports",
+            "body": "[i]The dating of the first report is contested and this section has been rewritten many times.[/i]\n\nThe earliest report that can be checked against a document is a letter to the [url=synth://verityledger.com/]Verity Ledger[/url] published in October 1998.\n\nIt is frequently asserted that reports go back to the 1970s. No document supporting this has been produced. The assertion generally traces to a 2001 post on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] in which a poster stated that his father heard it \"in the CB days.\" This is hearsay at two removes and has been described in this article as documented fact at least six times.\n\nIt is also frequently asserted that the signal began after the tannery closed in 1987, and separately that it began after the [url=/wiki/substation-fire-2003]2003 substation fire[/url]. The second is disproved by the 1998 letter. The first is unsupported."
+          },
+          {
+            "heading": "Proposed explanations",
+            "body": "[b]Travellers' information station.[/b] The county operates a licensed low-power information transmitter at the fairgrounds on Route 62, broadcasting a recorded loop on 1610 kHz. A 2007 receiving survey recorded the digits on 1610 kHz on four occasions and on one occasion recorded the phrase \"lot C\" in the same voice, which supports a damaged or fragmented loop tape as the content source.\n\nAgainst this: three of the four receptions were approximately 2.8 miles from the transmitter, with clean loop audio and no digits at the transmitter itself, and two occurred during a period when the roads department states the transmitter was off for the season.\n\n[b]Power line re-radiation.[/b] A corroded connector or cracked insulator can rectify and re-radiate a nearby broadcast signal. This is a documented effect and would explain audio appearing where it should not. It does not explain novel content, since re-radiation reproduces an existing broadcast.\n\n[b]Terrain reflection.[/b] It has been suggested that the quarry tailings face produces a reflection that creates a zone of reception at the 2.8 mile point. No measurement has been made.\n\n[b]Number station.[/b] Proposed frequently. There is no evidence for it beyond the format of the content, and the format of the content is also what a damaged recorded announcement sounds like.\n\n[b]Hoax.[/b] At least two recordings circulating on [url=synth://clipvault.tv/]clipvault.tv[/url] have been identified by their own uploaders as re-enactments."
+          },
+          {
+            "heading": "The 2007 survey",
+            "body": "Between 8 September and 27 October 2007 a Tannery Flats resident made eleven passes of the affected stretch with a receiver and a wire antenna, six of them between midnight and 03:00, logging time, temperature and reception at half-mile intervals. Digits were recorded on four of eleven passes.\n\nA further pass was made on 14 November 2007 during a scheduled three-hour outage on the Hollis Road circuit. Nothing was received.\n\nThe survey's author has published both the results and a list of what the results fail to explain, at [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url]. This is the only systematic measurement anybody has published and it is one person with one receiver.\n\nA proper determination would require two receivers at a known separation taking simultaneous bearings. This has been proposed on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] every winter since 2004 and has not been carried out."
+          },
+          {
+            "heading": "Note to editors",
+            "body": "This page attracts additions describing personal experiences. Those belong on [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url] or on the boards, not here.\n\nAdditions asserting a military, federal or utility origin have been removed on sight since 2005 and will continue to be, in the absence of a document. This is not a judgement about whether such an origin is possible."
+          }
+        ],
+        "categories": ["folklore", "places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" },
+          { "id": "county-fair", "label": "Verity County Fair" },
+          { "id": "gridfall-webring", "label": "Gridfall Webring" }
+        ]
+      },
+      {
+        "id": "blue-kestrel",
+        "title": "Blue Kestrel",
+        "summary": "The Blue Kestrel was a diner at 214 Mill Street, Gridfall, operating from 1961 until 22 August 2004. It opened as Kestrel Creek Lunch and took the Blue Kestrel name in 1968.",
+        "infobox": {
+          "caption": "Blue Kestrel",
+          "rows": [
+            ["Address", "214 Mill Street, Gridfall"],
+            ["Opened", "1961 (as Kestrel Creek Lunch)"],
+            ["Renamed", "1968"],
+            ["Closed", "22 August 2004"],
+            ["Founder", "Hal Sowerby"],
+            ["Last owner", "Ed Dombrowski (from 1978)"],
+            ["Counter seats", "11"],
+            ["Booths", "6"],
+            ["Opening hour", "05:00"],
+            ["Building status", "Vacant"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "History",
+            "body": "Hal Sowerby opened Kestrel Creek Lunch at 214 Mill Street in 1961, naming it for the creek behind the block. The business took the name Blue Kestrel in 1968 when the neon sign was installed.\n\nEd Dombrowski purchased the business from the Sowerby family in 1978 and operated it until 2004. The building was not owned by the business at any point; the freehold has been held by Hollis Property Group of New Ardo since 1974.\n\nFor most of its history the Blue Kestrel was the only restaurant in Verity County open at 05:00.\n\nThe opening year was given as 1959 in this article from 2004 until July 2004 and in the Verity Ledger until a correction published 5 May 2007."
+          },
+          {
+            "heading": "Closure",
+            "body": "Dombrowski announced in late May 2004 that the lease, expiring in September, would not be renewed at the rent sought by the freeholder. He stated publicly and repeatedly that trade was not the reason.\n\nThe diner closed after the Sunday breakfast service on 22 August 2004, running out of food at approximately 11:20. Approximately nine people were waiting on the sidewalk before opening at 05:00.\n\nThe building has been vacant since. It was listed for lease in 2005 and 2006."
+          },
+          {
+            "heading": "The sign",
+            "body": "The sign is eleven feet long and was fabricated in 1968 by a shop in Ardo that closed in 1991. The bird depicted is not a kestrel and is not a recognisable species; the sign shop is understood to have used a stock bird.\n\nDombrowski removed the sign in January 2005 and stored it in his garage on Fenn Avenue. It was donated to the Verity County Historical Society and moved to the Depot Street building in May 2007. Restoration of the transformer and two tube sections was estimated at approximately $2,800, of which approximately $1,600 had been raised at the time of the move."
+          },
+          {
+            "heading": "In local record",
+            "body": "The most detailed surviving account of daily operation is the journal kept from 2003 to 2005 by a morning-shift employee at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], which includes a contemporaneous account of the final shift.\n\nPhotographs of the last week are held at [url=synth://marla.verity.net/]marla.verity.net[/url].\n\nThe group of retired county highway employees who occupied the two rear booths on Tuesday mornings relocated to the Hollis Market deli counter in September 2004."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "gridfall-webring", "label": "Gridfall Webring" }
+        ]
+      },
+      {
+        "id": "county-fair",
+        "title": "Verity County Fair",
+        "summary": "The Verity County Fair is an agricultural fair held annually in August at the fairgrounds on Route 62, west of Gridfall. It has been held every year since 1889 except 1943 and 1944.",
+        "infobox": {
+          "caption": "Verity County Fair",
+          "rows": [
+            ["First held", "1889"],
+            ["Location", "Fairgrounds, Route 62"],
+            ["Duration", "5 days, August"],
+            ["Attendance (2007)", "Approx. 11,400"],
+            ["Attendance (2002)", "Approx. 19,000"],
+            ["Peak attendance", "23,600 (1978)"],
+            ["Organiser", "Verity County Fair Association"],
+            ["President (2007)", "Doyle Merritt"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "History",
+            "body": "The fair was founded in 1889 by a county agricultural society and has been held at the present Route 62 site since 1911. It was suspended in 1943 and 1944.\n\nThe exhibition hall dates from 1926 and the 4-H building from 1954. The grandstand was rebuilt in 1969 after a fire.\n\nA parcel at the western edge of the grounds was sold in 1998; proceeds form most of the association's reserve fund, reported at approximately $31,000 in 2007."
+          },
+          {
+            "heading": "Events",
+            "body": "[list][*]Livestock judging (dairy, beef, sheep, swine, poultry)[*]4-H exhibits[*]Home arts and preserving[*]Truck and tractor pull, Saturday evening[*]Midway[*]Draft horse show, Thursday[/list]\n\nThe Saturday evening pull is the best-attended single event, with a paid gate of 2,150 in 2007. Denise Korrigan of Bracken Lane won the 9,500-pound class in 2005 and 2007."
+          },
+          {
+            "heading": "Attendance",
+            "body": "Gate attendance peaked at 23,600 in 1978 and has declined with the county population. Figures for recent years, as reported by the association:\n\n[list][*]2002: approx. 19,000[*]2003: approx. 17,200[*]2004: approx. 15,400[*]2005: approx. 13,900[*]2006: approx. 12,600[*]2007: approx. 11,400[/list]\n\nThe midway contractor changed in 2005 following a dispute over the revenue split. The current midway comprises eleven rides, reduced from sixteen. Association president Doyle Merritt has attributed the decline chiefly to the loss of farms in the county rather than to the midway.\n\nCounted attendance figures before 1958 are not consistent and should be treated with caution."
+          },
+          {
+            "heading": "Other uses of the grounds",
+            "body": "The exhibition hall operated as a cooling and charging station during the [url=/wiki/substation-fire-2003]2003 substation fire[/url] outage and as an evacuation point during the [url=/wiki/flood-1994]1994 flood[/url].\n\nThe county's licensed low-power travellers' information transmitter is sited at the fairgrounds and broadcasts a recorded loop about parking and road closures. This transmitter features in discussion of [url=/wiki/route-62-signal]The Signal on 62[/url]."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "route-62-signal", "label": "The Signal on 62" },
+          { "id": "the-feldspars", "label": "The Feldspars" }
+        ]
+      },
+      {
+        "id": "the-feldspars",
+        "title": "The Feldspars",
+        "summary": "The Feldspars were a four-piece band from Gridfall, active from 2000 to 2005. They released one album, Tannery Flats (2003), and are the only Verity County band to have had a record reviewed outside the county.",
+        "infobox": {
+          "caption": "The Feldspars",
+          "rows": [
+            ["Origin", "Gridfall, Verity County"],
+            ["Active", "2000-2005"],
+            ["Members", "4"],
+            ["Albums", "Tannery Flats (2003)"],
+            ["Other releases", "Two demo tapes (2000, 2001)"],
+            ["Largest audience", "Approx. 900 (county fair, 2003)"],
+            ["Final performance", "Gridfall Armory, 19 March 2005"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Formation",
+            "body": "The band formed in 2000 from members of two earlier Verity Central High School groups. The line-up was stable throughout: guitar and vocals, bass, drums, and a fourth member who played keyboards and, on the album, accordion on two tracks.\n\nMembers' names are omitted here at the request of two of them. This has been contested on the talk page. The current consensus is that a living local person who asks not to be named in a county wiki article about a band that played fourteen shows should not be named."
+          },
+          {
+            "heading": "Tannery Flats (2003)",
+            "body": "The album was recorded over four weekends in the winter of 2002-03 in the Gridfall Armory, chosen for its reverberation and because it was free on Sundays. It was pressed in an edition of 500 CDs.\n\nSeven of the ten tracks are named after places in the county. The closing track concerns the [url=/wiki/verity-tanning]tannery[/url] and is the reason the album is frequently but incorrectly described as a concept record about the plant's closure.\n\nA regional weekly outside the county reviewed the album in June 2003. The review was three paragraphs and mildly positive. It has been referred to locally ever since as \"the review.\""
+          },
+          {
+            "heading": "Performances",
+            "body": "The band played approximately fourteen public shows, most at the Armory and at a bar in New Ardo that has since closed. Their largest audience was the Thursday evening slot at the 2003 [url=/wiki/county-fair]Verity County Fair[/url], estimated at 900, a figure that comes from the band and not from the fair association.\n\nA recording of part of the 2003 fair set, made from the audience, circulates locally and has been posted to [url=synth://clipvault.tv/]clipvault.tv[/url]."
+          },
+          {
+            "heading": "End",
+            "body": "The band stopped playing after a show at the Armory on 19 March 2005. No announcement was made. Two members left the county in 2005 and 2006.\n\nRemaining copies of the album surface occasionally at the Hollis Market counter and at the historical society's book sale. About 180 of the 500 pressed are believed to be unaccounted for, a figure that originates in a 2006 post on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] and should not be treated as reliable."
+          }
+        ],
+        "categories": ["people", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "county-fair", "label": "Verity County Fair" },
+          { "id": "verity-tanning", "label": "Verity Tanning Company" }
+        ]
+      },
+      {
+        "id": "water-tower",
+        "title": "Gridfall water tower",
+        "summary": "The Gridfall water tower is a 150,000-gallon elevated storage tank on Fenn Avenue, built in 1952. It is the tallest structure in Verity County and is locally called \"the Bell\" on account of its shape.",
+        "infobox": {
+          "caption": "Gridfall water tower",
+          "rows": [
+            ["Built", "1952"],
+            ["Capacity", "150,000 US gallons"],
+            ["Height to top of tank", "138 ft"],
+            ["Location", "Fenn Avenue, Gridfall"],
+            ["Type", "Single-pedestal spheroid"],
+            ["Last repainted", "1998"],
+            ["Lettering", "GRIDFALL"],
+            ["Local name", "The Bell"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Construction",
+            "body": "The tower was erected in 1952 as part of the municipal water system expansion, replacing a wooden tank of approximately 40,000 gallons that stood at the same site from 1911.\n\nIt is a single-pedestal spheroid tank standing 138 feet to the top of the tank. It is visible from the Route 62 overlook, from most of Mill Street, and on clear days from the northern slope of Marrow Hill."
+          },
+          {
+            "heading": "Painting",
+            "body": "The tank has been painted four times: 1952, 1969, 1984 and 1998.\n\nThe 1969 scheme included a cardinal, the Verity Central school mascot, which was removed in 1984 after a dispute over whether a municipal utility should display a school emblem. The dispute ran through two commission meetings and is recorded in the minutes.\n\nThe present scheme is plain with the town name in block letters. A 2004 proposal to restore the cardinal was raised at a commission meeting, referred to the utility committee, and not heard of again."
+          },
+          {
+            "heading": "\"The Bell\"",
+            "body": "The nickname is universal locally and its origin is not recorded. The obvious explanation is the tank's shape.\n\nA second explanation, that a bell was mounted on the earlier wooden tank, appears in a 1974 school local-history pamphlet and is not corroborated by any other source. The pamphlet is in the historical society collection and gives no citation of its own.\n\nThis section was longer. It has been shortened twice by editors who felt that the bell question did not merit four paragraphs. It does not."
+          },
+          {
+            "heading": "Other",
+            "body": "Climbing the tower is a recurring local rite and is illegal. The access ladder cage was fitted with a locked gate in 1991 after an injury.\n\nThe tower is a common photographic subject and appears in a number of images held at [url=synth://marla.verity.net/]marla.verity.net[/url] and in the historical society's scanning project."
+          }
+        ],
+        "categories": ["places"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-central-high", "label": "Verity Central High School" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" }
+        ]
+      },
+      {
+        "id": "verity-central-high",
+        "title": "Verity Central High School",
+        "summary": "Verity Central High School is the only public high school in Verity County, located on Hollis Road outside Gridfall. It opened in 1957 following the consolidation of four township schools and enrolled 611 students in 2006-07.",
+        "infobox": {
+          "caption": "Verity Central High School",
+          "rows": [
+            ["Opened", "1957"],
+            ["Location", "Hollis Road, Gridfall"],
+            ["Grades", "9-12"],
+            ["Enrolment (2006-07)", "611"],
+            ["Enrolment (1978-79)", "1,040"],
+            ["Mascot", "Cardinals"],
+            ["Athletic field", "Kupfer Field"],
+            ["Superintendent (2007)", "Anne Rusk"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "History",
+            "body": "The school opened in 1957, consolidating high school programmes previously run at Gridfall, Pell, New Ardo and Marrow Hill. The consolidation was contested at the time; the Marrow Hill building operated as a junior high until 1971.\n\nA science and vocational wing was added in 1968. The gymnasium was rebuilt in 1989 after roof failure under snow load.\n\nEnrolment peaked at 1,040 in 1978-79 and has fallen with county population."
+          },
+          {
+            "heading": "District",
+            "body": "The Verity Central district covers the whole county and operates the high school, a middle school, and three elementary schools: Gridfall, New Ardo, and Bracken Lane.\n\nIn September 2007 the school board voted 4-3 to close Bracken Lane Elementary at the end of the 2007-08 year and distribute its 190 students to the other two elementary schools. The vote followed eighteen months of public argument and was the most contested district decision since the 1994 flood bond.\n\nBoard member Ellen Kerrigan, who had served since 1995 and who voted in favour, resigned two weeks later.\n\nSource: the [url=synth://verityledger.com/]Verity Ledger[/url], 12 and 26 September 2007."
+          },
+          {
+            "heading": "Athletics",
+            "body": "The school competes as the Cardinals. Its principal rival is Marrow Hill, a school in the adjoining county, a rivalry which predates the 1957 consolidation and which is occasionally described locally in terms that are not accurate about either school.\n\nKupfer Field is named for a 1930s athletic director and not for the fire chief of the same surname, a confusion that appears in print regularly. Field lighting was replaced in 2005.\n\nThe 2007 football team finished 3-4 after a home win over Marrow Hill, 21-17, on a fourth-down stop, the first win in that series since 2003.\n\nThe girls' cross country team finished third at the 2007 regional meet. The 2007 state meet was held at the Quarry Road park course, the first state-qualifying event in the county since 1989."
+          },
+          {
+            "heading": "Alumni and culture",
+            "body": "Two members of [url=/wiki/the-feldspars]The Feldspars[/url] met in the school's music programme.\n\nThe school's technology was administered from 1999 by district staff; a district content management system purchased in 2005 was the subject of a widely read criticism published at [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url] in 2007."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "the-feldspars", "label": "The Feldspars" },
+          { "id": "water-tower", "label": "Gridfall water tower" },
+          { "id": "frank-tully", "label": "Frank Tully" }
+        ]
+      },
+      {
+        "id": "flood-1994",
+        "title": "1994 Kestrel Creek flood",
+        "summary": "Kestrel Creek flooded in early March 1994 after rain on frozen ground and rapid snowmelt, reaching a recorded crest of 14.2 feet at the Mill Street bridge and damaging approximately 140 structures in Gridfall and Tannery Flats.",
+        "infobox": {
+          "caption": "1994 Kestrel Creek flood",
+          "rows": [
+            ["Dates", "6-9 March 1994"],
+            ["Crest", "14.2 ft, Mill St gauge"],
+            ["Flood stage", "9 ft"],
+            ["Previous record", "13.1 ft (1936)"],
+            ["Structures damaged", "Approx. 140"],
+            ["Deaths", "1"],
+            ["Bridges lost", "2 (Bracken Ln, rail timber span)"],
+            ["Evacuation point", "Fairgrounds exhibition hall"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Cause and course",
+            "body": "Approximately 2.6 inches of rain fell on 6 and 7 March 1994 onto frozen ground carrying a snowpack of about nine inches water equivalent in the upper basin. Runoff was near total.\n\nThe creek exceeded flood stage on the evening of 6 March and crested at 14.2 feet at the Mill Street gauge on the morning of 8 March, exceeding the 1936 record of 13.1 feet. The crest figure is from the state gauge and was reported in the [url=synth://verityledger.com/]Verity Ledger[/url] of 9 March 1994.\n\nWater receded below stage on 9 March."
+          },
+          {
+            "heading": "Damage",
+            "body": "Approximately 140 structures were damaged, most of them in Tannery Flats, which sits on the inside of the creek's bend and which had been built on ground the 1941 county history describes as \"low and formerly wet.\"\n\nThe Bracken Lane road bridge was destroyed and replaced in 1995. The timber rail span carrying the [url=/wiki/verity-rail]Verity Rail[/url] branch was lost and replaced, the present signal bridge at that location carrying a 1968 plate and having been moved rather than newly built.\n\nThe county clerk's basement flooded, damaging bound meeting minutes for 1946 to 1958. Partial transcripts exist. The land records, kept on the ground floor, were not affected.\n\nOne death occurred, a motorist who drove onto a covered section of Quarry Road on the night of 7 March."
+          },
+          {
+            "heading": "Response",
+            "body": "The fairgrounds exhibition hall served as the evacuation point and housed approximately 210 people at its peak on 8 March. The Gridfall Volunteer Fire Department, the county roads department and a state guard engineering unit carried out the response.\n\nA county bond issue for creek channel work and a Tannery Flats levee was put to voters in November 1994. It failed, 2,940 to 2,180. A reduced channel-only measure passed in 1996 and the work was completed in 1998."
+          },
+          {
+            "heading": "Since",
+            "body": "The creek has exceeded flood stage four times since 1994, in 1997, 2001, 2003 and 2006, without approaching the 1994 crest.\n\nThe unlevied section of Tannery Flats remains in the mapped floodplain. Approximately thirty properties there are understood to be without flood insurance, a figure that comes from a 2005 county planning memorandum and which the memorandum itself describes as an estimate.\n\nThe flood is the reference point against which county residents measure other local events, and the phrase \"since the flood\" in Verity County means 1994 and not 1936."
+          }
+        ],
+        "categories": ["history", "places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-rail", "label": "Verity Rail" },
+          { "id": "county-fair", "label": "Verity County Fair" }
+        ]
+      },
+      {
+        "id": "verity-tanning",
+        "title": "Verity Tanning Company",
+        "summary": "The Verity Tanning Company operated a leather tannery on Kestrel Creek west of Gridfall from 1889 until 1987. The settlement of Tannery Flats is named for it. The site was demolished in 1997.",
+        "infobox": {
+          "caption": "Verity Tanning Company",
+          "rows": [
+            ["Founded", "1889"],
+            ["Closed", "March 1987"],
+            ["Location", "Kestrel Creek, west of Gridfall"],
+            ["Peak employment", "Approx. 620 (1954)"],
+            ["Employment at closure", "148"],
+            ["Demolished", "1997"],
+            ["Site status", "Vacant, partially remediated"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Operation",
+            "body": "The tannery was founded in 1889 and drew process water from Kestrel Creek. It was the county's largest employer from the 1910s until the 1960s, peaking at approximately 620 employees in 1954.\n\nHides arrived by rail on the [url=/wiki/verity-rail]Verity Rail[/url] branch and finished leather left the same way. Rail traffic to the plant ended with the closure.\n\nThe works comprised eleven buildings, of which the beamhouse (1889) and the office block (1922) were the oldest."
+          },
+          {
+            "heading": "Closure",
+            "body": "Employment fell through the 1970s and early 1980s. The plant closed in March 1987 with 148 employees.\n\nThe stated reasons at the time were import competition and the cost of effluent treatment required under state rules adopted in 1983. Both were cited by management. Union representatives at the time disputed the second, arguing that the treatment plant had already been built and paid for in 1985; this dispute is recorded in Ledger coverage of March 1987 and has never been resolved in public.\n\nThe closure is the single largest factor in the county's population decline."
+          },
+          {
+            "heading": "Site",
+            "body": "The buildings stood vacant from 1987 and were demolished in 1997. Environmental assessment identified chromium in soil in the area of the former tanyard; a partial remediation was carried out between 1998 and 2001 and the site remains under a deed restriction prohibiting residential use.\n\nThe office block foundation and part of the creek wall are still visible from the Route 62 bridge.\n\nA photographic record made before the 1997 demolition comprises approximately thirty images, nearly all of the front elevation. The absence of images of the loading dock and the rail siding entry has since been cited locally as an example of how not to document a building."
+          },
+          {
+            "heading": "Legacy",
+            "body": "The settlement of Tannery Flats takes its name from the works and grew as worker housing between 1900 and 1930. It suffered the greatest share of damage in the [url=/wiki/flood-1994]1994 flood[/url].\n\nThe closing track of Tannery Flats (2003) by [url=/wiki/the-feldspars]The Feldspars[/url] concerns the plant.\n\nA tannery pay stub from the 1980s, carried in a wallet for years by a former employee, was among the contents of the lost property box at the [url=/wiki/blue-kestrel]Blue Kestrel[/url] and is frequently retold locally."
+          }
+        ],
+        "categories": ["history", "places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "verity-rail", "label": "Verity Rail" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" },
+          { "id": "the-feldspars", "label": "The Feldspars" }
+        ]
+      },
+      {
+        "id": "frank-tully",
+        "title": "Frank Tully",
+        "summary": "Frank Tully (born 1944) was Verity County commissioner for District 3 from 1991 to 2006. He resigned in October 2006 during a dispute over a county paving contract. No charge was brought against him.",
+        "infobox": {
+          "caption": "Frank Tully",
+          "rows": [
+            ["Born", "1944, Pell"],
+            ["Office", "County commissioner, District 3"],
+            ["In office", "1991-2006"],
+            ["Elected", "1990, 1994, 1998, 2002"],
+            ["Resigned", "18 October 2006"],
+            ["Previous occupation", "Insurance agent"],
+            ["Successor", "Paul Renko (appointed 2006, elected 2008)"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Background",
+            "body": "Tully was born in Pell in 1944 and worked as an insurance agent in Gridfall from 1969. He served on the Gridfall town council from 1985 to 1990 and was first elected county commissioner in 1990, taking office in 1991.\n\nHe was re-elected three times, unopposed in 1998."
+          },
+          {
+            "heading": "In office",
+            "body": "Tully chaired the county roads committee for most of his tenure. He is associated with the 1996 creek channel measure, which passed after the failure of the broader 1994 flood bond, and with the county's opposition to the [url=/wiki/verity-rail]Verity Rail[/url] branch abandonment filing in 2005.\n\nHe was a consistent advocate for the third east-side plough truck that the roads department has requested in every budget cycle since 2002 and has not received."
+          },
+          {
+            "heading": "Paving contract and resignation",
+            "body": "[i]This section has been the subject of repeated reverts. Please do not add characterisations that are not in the published record.[/i]\n\nIn August 2006 the [url=synth://verityledger.com/]Verity Ledger[/url] reported that a 2004 county resurfacing contract had been awarded to a New Ardo firm in which Tully's brother-in-law held a minority interest, and that Tully had voted on the award without disclosing the relationship.\n\nTully stated that he had not known of the interest at the time of the vote. The county solicitor reviewed the matter and reported in October 2006 that the award process was defective in that the disclosure requirement had not been met, and that no evidence of a financial benefit to Tully had been found.\n\nTully resigned on 18 October 2006, stating that he was resigning \"so the county can talk about roads again.\" No charge was brought. The state did not open a proceeding.\n\nEditors have repeatedly rewritten this section either to state that Tully was cleared or to state that he resigned to avoid prosecution. The record supports neither. A review finding a defective process and no evidence of benefit is not an exoneration and is not an accusation.\n\nThe assertion that the contract was re-let in 2007 to the same firm has been added four times and is false; the 2007 resurfacing contract went to a firm in Ardo, which is in the published minutes."
+          },
+          {
+            "heading": "After office",
+            "body": "Paul Renko was appointed to the seat in November 2006 and elected in his own right in 2008.\n\nTully has not held public office since. He appeared at the February 2007 Verity Rail hearing as a member of the public and did not speak.\n\nA long-running discussion of the contract matter on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] was locked by moderators in 2007 after repeated posting of a home address."
+          }
+        ],
+        "categories": ["people", "history"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "verity-rail", "label": "Verity Rail" },
+          { "id": "flood-1994", "label": "1994 Kestrel Creek flood" }
+        ]
+      },
+      {
+        "id": "gridfall-webring",
+        "title": "Gridfall Webring",
+        "summary": "The Gridfall Webring is a webring of personal and community websites relating to Verity County, founded in 2001. It listed between nine and fourteen active members between 2003 and 2007.",
+        "infobox": {
+          "caption": "Gridfall Webring",
+          "rows": [
+            ["Founded", "2001"],
+            ["Founder", "Denny Ocasek"],
+            ["Members (2003)", "14"],
+            ["Members (2007)", "9"],
+            ["Requirement", "Verity County subject matter"],
+            ["Navigation", "Previous / Next / Random / List"],
+            ["Status", "Active"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "History",
+            "body": "The ring was founded in 2001 by Denny Ocasek, then yardmaster of the [url=/wiki/verity-rail]Verity Rail[/url] Gridfall branch, initially to link four railroad-related pages. Membership was opened to any site with substantial Verity County content in 2002.\n\nMembership peaked at fourteen in 2003 and stood at nine in 2007. Departures have been attributable to hosts closing rather than to members leaving."
+          },
+          {
+            "heading": "Rules",
+            "body": "The ring's stated rules have not changed since 2002:\n\n[list][*]The site must be substantially about Verity County or by a county resident.[*]The navigation fragment must appear on the front page, not on a separate links page.[*]Sites that go dark for six months are moved to an inactive list rather than removed, so that links elsewhere do not break.[*]No commercial sites. A business that keeps a genuine local-history page may apply for that page.[/list]\n\nThe third rule is the one most often praised by members and is the reason several defunct sites are still reachable through the ring."
+          },
+          {
+            "heading": "Members",
+            "body": "Current and former members include [url=synth://marla.verity.net/]marla.verity.net[/url], [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] (inactive since 2005), [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url], [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] and this wiki.\n\nThe ring's own page is at [url=synth://webring.gridfall.net/]webring.gridfall.net[/url].\n\nThis wiki joined in 2004 after a discussion about whether a wiki is a personal site. The conclusion was that the rules do not say it has to be."
+          },
+          {
+            "heading": "Relation to other county sites",
+            "body": "The ring is distinct from [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], which is a message board and shares no administration with it, and from [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url].\n\nA 2008 argument on this wiki about sourcing noted that the ring's member sites collectively contain a considerable quantity of primary material, in particular photographs, that has never been cited in any article here."
+          }
+        ],
+        "categories": ["internet"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "verity-rail", "label": "Verity Rail" },
+          { "id": "blue-kestrel", "label": "Blue Kestrel" },
+          { "id": "route-62-signal", "label": "The Signal on 62" }
+        ]
+      }
+    ]
+  }
+}

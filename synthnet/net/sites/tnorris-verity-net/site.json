@@ -1,0 +1,131 @@
+{
+  "schema": 1,
+  "domain": "tnorris.verity.net",
+  "title": "Thomas Norris",
+  "type": "page",
+  "era": "1998",
+  "skin": "plain-white",
+  "description": "The page of Thomas Norris, retired Verity County surveyor, including a detailed account of the flood of June 1994.",
+  "links": [
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "marla.verity.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "codeandcoffee.blog",
+    "wiki.gridfall.net",
+    "clipvault.tv",
+    "stargazers.verity.net",
+    "webring.gridfall.net"
+  ],
+  "data": {
+    "navLabel": "Contents",
+    "pages": [
+      {
+        "id": "home",
+        "name": "Home",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Thomas Norris" },
+          { "kind": "text", "body": "I was a surveyor for Verity County from 1961 until I retired in 1996, the last nineteen years of that as county surveyor. This page holds a few things I know that are not written down anywhere else, and that will otherwise go where I go.\n\nThere is not much here and there is not going to be much more. I add something when I have finished thinking about it, which is not often." },
+          { "kind": "heading", "level": 2, "text": "Contents" },
+          { "kind": "list", "ordered": false, "items": [
+            "[url=/flood]The flood of June 1994[/url] -- what happened, in what order, and why the water went where it went. This is the long one and it is the reason the page exists.",
+            "[url=/contact]How to reach me[/url] -- and a note about the webring this page belongs to."
+          ] },
+          { "kind": "heading", "level": 2, "text": "A word about what a surveyor does" },
+          { "kind": "text", "body": "People assume it is about property lines and arguments over fences. That is some of it. A great deal of it is elevations: knowing, to a hundredth of a foot, how high a piece of ground is above a fixed mark, and being able to prove it to somebody who would rather it were otherwise.\n\nElevation is the whole of the flood story. Water does not have opinions. It goes to the lowest place available and it takes the shortest route it can find, and everything that happened in June of 1994 follows from a small number of elevations that were, by then, forty years out of date in the county's own records.\n\nI spent the last two years of my working life re-running those elevations. It was the most useful thing I ever did and nobody outside the surveyor's office noticed." },
+          { "kind": "image", "seed": "norris-transit-1974", "imgKind": "photo", "caption": "Running levels on the Cutler Creek line, spring 1974. The rod man is Earl Shand, who died in 1989 and who never once let me get away with a sloppy reading." },
+          { "kind": "heading", "level": 2, "text": "Notes on this page" },
+          { "kind": "text", "body": "My nephew set this page up for me in 1998 and showed me how to change the words on it, which is all I have ever wanted a computer to do. It has looked the same since, and it will keep looking the same, because I am told it loads quickly on a telephone and I cannot think of a reason to spoil that.\n\nThe counter below was his idea. I have no use for it, but he checks it.\n\n[i]Last changed:[/i] 14 March 2007, to correct a gauge figure on the flood page that a reader was right about." },
+          { "kind": "hitcounter", "count": 34881 }
+        ]
+      },
+      {
+        "id": "flood",
+        "name": "The Flood of 1994",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The Flood of June 1994" },
+          { "kind": "text", "body": "This is an account of what happened in Verity County between the evening of Thursday 16 June and the morning of Sunday 19 June 1994. I have written it because the newspaper's account was written in three days by people who were also being flooded, and because in the years since I have heard the story told wrongly so many times that I have begun to correct strangers in line at the hardware store, which is not a good way to live.\n\nI was county surveyor at the time. I was not a hero of this. I spent most of the four days in a truck with a level and a rod, writing numbers in a book, which was the only thing I was qualified to do." },
+          { "kind": "heading", "level": 2, "text": "1. The shape of the ground" },
+          { "kind": "text", "body": "You cannot follow what happened without the ground, so bear with me for four paragraphs.\n\nThe Verity River enters the county from the northwest and runs southeast through Gridfall. Its one significant tributary here is Cutler Creek, which comes down off the higher ground north of Cutler and joins the river about a mile and a half above the Ellery Street bridge. The confluence is the whole problem. When both are high at once, the creek cannot get into the river fast enough, and the water backs up behind its own mouth and spreads north and west across the flats.\n\nThe flats were farm ground until about 1968 and they are not farm ground now. The industrial park sits on the eastern third of them. Two subdivisions, Rowan Court and the Maple Ridge extension, sit on the western third, built in 1971 and 1979 on fill.\n\nIn 1962 the county straightened about 4,000 feet of Cutler Creek where it ran through what was then the Perrin farm, and put in the concrete channel that everybody calls the ditch. The purpose was to move water off the farm faster. It does that. It also delivers it to the confluence faster, and at a higher stage, than the unimproved creek did, and in 1962 nobody carried that calculation past the property line, because in 1962 there was nothing downstream of the property line but more farm.\n\nLast: the Verity Rail branch line crosses the flats on a fill embankment about nine feet above grade, running roughly north and south, with two openings in it -- the creek bridge, and a 48 inch culvert at what the railroad called Mile 4.6. That embankment is the single most important structure in this story and it was never built to be a structure. It was built to carry trains." },
+          { "kind": "image", "seed": "verity-flood-map-1994", "imgKind": "photo", "caption": "Scanned from my working copy of the 1994 inundation sketch. The heavy line is the extent of standing water on the morning of 18 June. The hatched area east of the rail embankment stayed dry. Scanned at the county library; the fold is in the original." },
+          { "kind": "heading", "level": 2, "text": "2. Thursday 16 June, evening" },
+          { "kind": "text", "body": "It had rained for nine days out of eleven. The ground was as near saturated as it gets here. That is the part everyone leaves out when they tell it: the flood was not caused by the storm on Thursday night. It was caused by the eleven days before it, and the storm merely arrived to a county with nowhere left to put water.\n\nThe Thursday cell dropped, by the cooperative observer's gauge at the airport, 3.1 inches between 7:40 and about 11 at night. North of Cutler, on the higher ground, an unofficial gauge at a farm recorded 4.6 inches, and I believe that figure because I know the man who kept it and he was the kind of man who wrote down the time he emptied the can.\n\nThe river gauge below the Ellery Street bridge read 9.2 feet at 8 PM. Flood stage there is 14 feet. By midnight it read 13.1. That is not a fast rise for a small river with saturated ground above it. What made it dangerous was that Cutler Creek was rising at the same time, and the creek has no gauge at all." },
+          { "kind": "heading", "level": 2, "text": "3. Friday 17 June" },
+          { "kind": "text", "body": "The river passed flood stage at about 2:30 Friday morning and the low ground along the north bank went under before daylight. That was expected. That ground goes under every few years and there is nothing on it but the ball fields and a pumping station built on a raised pad for exactly this reason.\n\nWhat was not expected happened around eleven o'clock Friday morning at the creek bridge.\n\nThe bridge is a two span concrete structure with a center pier. The pier caught a mat of debris -- brush, fence wire, and by every account I have heard, most of a fallen silver maple -- and within perhaps forty minutes the opening was substantially blocked. Water that should have gone under the railroad went around it instead, spreading west across the flats, and the 48 inch culvert at Mile 4.6 took what it could take, which was not much, and was itself plugged by early afternoon.\n\nSo the rail embankment became a dam. Nine feet of compacted fill, two miles long, with two closed openings in it, sitting square across the path the water wanted to take. It held. It held for about twenty hours, and while it held, it did two things at once: it kept the industrial park on its east side completely dry, and it ponded water on its west side to a depth nobody had ever seen there, in the two subdivisions built on the fill.\n\nRowan Court took water in the first floors of eleven houses. Maple Ridge took it in nineteen and in the basements of forty more. The evacuation order went out at 4:15 Friday afternoon and by every account it was well run. Nobody in the county died in this flood. I want that sentence to sit by itself." },
+          { "kind": "heading", "level": 2, "text": "4. Saturday 18 June, and the breach" },
+          { "kind": "text", "body": "The embankment breached at about 6 in the morning on Saturday, roughly 900 feet north of the creek bridge, at a point where a farm crossing had been filled in sometime in the 1950s and where, I would guess, the fill was never compacted to the standard of the rest of it.\n\nIt went in perhaps ninety seconds. The opening was about sixty feet wide by the time anyone measured it.\n\nThis is where I disagree with almost everyone who tells this story, and it is the reason I finally wrote it out.\n\nThe common version is that the breach was the disaster. It was not. The breach was the end of the disaster. Every hour the embankment held was an hour that water piled up on the residential side. When it let go, the pond behind it drained east across the industrial park -- which is why the industrial park flooded on Saturday, hours after everybody else, and why the men who worked there have always believed they were flooded by the railroad rather than by the river. In a narrow sense they were right.\n\nThe water on the Maple Ridge side dropped about eighteen inches in the first hour after the breach. I know that because I was standing at a marked pole on Rowan Court with a level and I wrote it down: 6:04, 6:31, 7:00, 7:30. Those four numbers are in a green field book in a box in my basement and they are the only quantitative record of the breach's effect that I am aware of.\n\nThe river crested at the Ellery Street gauge at 19.4 feet at about 10 PM Saturday. It was below flood stage by Monday evening. Water ran out of the flats more slowly, because the ditch that brings water in so efficiently is not much use at taking it back out, which is a sentence I have now written in three separate reports to three separate boards." },
+          { "kind": "heading", "level": 2, "text": "5. The numbers" },
+          { "kind": "table", "head": ["Location", "Datum / note", "1994 crest", "Previous known high"], "rows": [
+            ["Verity River at Ellery St. bridge", "USGS gauge, flood stage 14.0 ft", "19.4 ft (18 June, ~10 PM)", "17.8 ft (April 1952)"],
+            ["Cutler Creek at the ditch outlet", "No gauge; estimated from debris line", "approx. 11.5 ft above invert", "not recorded"],
+            ["Rowan Court, marked pole", "Levelled from county BM 14", "2.1 ft above street grade", "0.4 ft (1973)"],
+            ["Maple Ridge extension, Lot 22", "Levelled from county BM 14", "3.4 ft above street grade", "none on record"],
+            ["Industrial park, east of embankment", "Levelled 20 June", "1.6 ft above slab", "none on record"],
+            ["Ellery Street at the diner", "Sill of the front door", "8 in. above sill", "3 in. (1952, per the pencil mark)"],
+            ["Rainfall, airport co-op gauge", "16 June, 7:40 PM to 11:00 PM", "3.10 in.", "storm total for 6-16 June: 8.44 in."]
+          ] },
+          { "kind": "text", "body": "The line at the diner deserves a note. The Blue Kestrel on Ellery Street had two pencil marks on the doorframe by the register, one dated 1952 in somebody's careful hand and one dated 1994 in Marge Kerrigan's. I levelled both of them in 1995 with her permission and they are consistent with the gauge record to within two inches, which for a pencil mark on a doorframe is remarkable.\n\nThe diner closed in November 2006. I do not know what became of the doorframe. I have asked. If anybody reading this knows where it went, I would like very much to hear from you. There are people writing about the place at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] who may know, and there is film of the last day at [url=synth://clipvault.tv/]clipvault.tv[/url] in which, if you look at the right moment, the doorframe is visible over the man's shoulder." },
+          { "kind": "heading", "level": 2, "text": "6. What was done afterward, and what was not" },
+          { "kind": "list", "ordered": true, "items": [
+            "The creek bridge pier was fitted with a debris deflector in 1996. This was the one recommendation that was adopted in full and promptly, and it was adopted because it was cheap.",
+            "The 48 inch culvert at Mile 4.6 was replaced with a 72 inch in 1997 by the railroad, at the county's expense, after two years of correspondence I would rather not describe.",
+            "The flood insurance maps were redrawn in 1998 on the basis of the elevations my office ran in 1995 and 1996. The new maps put much of Maple Ridge in the floodplain, which lowered the value of a number of houses, which is why I received the letters I received.",
+            "No further building was permitted on the western flats. This held until 2001 and then a variance was granted, and then another.",
+            "Nothing was ever done about the ditch, which is the actual problem, because doing something about the ditch means either buying farmland to hold water on or accepting that the 1962 project should not have been built the way it was built, and no board wants its name on either sentence.",
+            "In 2004 the railroad closed the branch line. Since 2006 the rail is gone and the embankment is an unmaintained earthen ridge that belongs to nobody in particular. It is still, by a considerable margin, the most consequential piece of flood infrastructure in this county, and it is still not flood infrastructure."
+          ] },
+          { "kind": "heading", "level": 2, "text": "7. Corrections and disagreements" },
+          { "kind": "text", "body": "[i]Added March 2007.[/i] I had the Rowan Court figure at 2.4 feet for nine years. A reader who lived in the second house from the corner wrote to me last winter, politely, with photographs, and he was right and I was wrong: the pole I used had been reset in 1996 and I had carried the old elevation forward without checking it. It is 2.1 feet. I have corrected the table and I am grateful to him.\n\nOn the substation fire of August 2003, which people now sometimes mention in the same breath as the flood: the two have nothing to do with each other beyond both having happened here. The substation is on high ground, deliberately, and the siting study that put it there in 1967 is one of the few pieces of county engineering from that decade that I would defend without reservation. Whatever went wrong on Gridfall Road in 2003, it was not water. There is an account of it at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url].\n\nOn the various theories about the rail embankment being breached deliberately: no. I have heard this for thirteen years. It breached at an old filled farm crossing at six in the morning with nobody near it, and the people who supposedly did it are named differently every time I hear the story. There is a thread about it at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] which I read once and have not read again. The rail side of it, which is better informed, is at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url].\n\nOn the newspaper: the [url=synth://verityledger.com/]Verity Ledger[/url] did what a small paper could do in four days without power for two of them, and the criticism it has taken since is unfair. Its Sunday piece got the sequence wrong. That is all. Sequence is hard when you are in it." },
+          { "kind": "heading", "level": 2, "text": "8. The thing I actually want to say" },
+          { "kind": "text", "body": "I have given this account to two county boards, a planning commission, a class of high school students, and a writer from the county who came out and sat in my kitchen for three hours and got it right, which I did not expect. Her page is at [url=synth://marla.verity.net/]marla.verity.net[/url].\n\nWhat I say each time is this. There was no villain in June of 1994. There was a drainage project from 1962 that was correct for the land as it was then, and a railroad embankment built in 1911 for entirely other reasons, and two subdivisions approved in the seventies by men who had the 1962 maps in front of them and no reason to doubt them, and eleven days of rain.\n\nEvery one of those decisions was defensible on the day it was made. Together they put three feet of water in nineteen houses. That is what infrastructure is: a set of reasonable decisions made by people who cannot see each other, accumulating in the ground, waiting.\n\nThe only defense is to keep measuring, and to write the numbers down, and to make sure somebody can find them in thirty years. I did that for a living. It is not dramatic work. It is the work." },
+          { "kind": "image", "seed": "field-book-page-1994", "imgKind": "photo", "caption": "Field book, 18 June 1994, Rowan Court. The four readings after the breach. My handwriting is worse than usual and the book got wet." }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "How to reach me" },
+          { "kind": "text", "body": "I read mail once or twice a week and I answer everything that is not a solicitation, though it may take me a while.\n\nMy address, written out so the address harvesting programs cannot lift it:\n\n[b]tnorris[/b] [i]at[/i] [b]verity[/b] [i]dot[/i] [b]net[/b]\n\nType it into your mail program with the usual symbols in place of the words in italics. I am told this is not much protection anymore. It was good advice in 1998 and I see no reason to stop.\n\nIf you would rather telephone, I am in the county book under Norris, Thomas E., on Herron Road. Please do not telephone after nine." },
+          { "kind": "heading", "level": 2, "text": "What I can help with" },
+          { "kind": "list", "ordered": false, "items": [
+            "Elevations, benchmarks, and old county monuments, particularly anything run between 1961 and 1996, which I either did myself or checked.",
+            "The 1994 flood, including anything on [url=/flood]that page[/url] you think is wrong. Corrections with evidence are welcome and I have accepted two.",
+            "The 1962 Cutler Creek channel project. I have the plan sheets.",
+            "Where a property line actually is, as against where a fence is. These are different questions and the answer is usually not the one the person wants."
+          ] },
+          { "kind": "heading", "level": 2, "text": "What I cannot help with" },
+          { "kind": "list", "ordered": false, "items": [
+            "Current surveying work. I retired in 1996 and my license lapsed. Hire somebody licensed; there are two good firms in the county and I will name them if you ask privately.",
+            "Disputes between neighbors. I will not be anybody's expert witness again.",
+            "The radio business out on Route 62. I have been asked eleven times. I surveyed that road. It is a road."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Other pages" },
+          { "kind": "table", "head": ["Site", "Note"], "rows": [
+            ["[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "Careful and sourced. They have used this page as a reference, with permission, and cited it correctly."],
+            ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The county paper."],
+            ["[url=synth://marla.verity.net/]Marla Vance[/url]", "Writer. Interviewed me in 2005 and got it right."],
+            ["[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]", "About the diner and Ellery Street."],
+            ["[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]", "The branch line. Better informed than most on the embankment."],
+            ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "The county message board. I do not post there."],
+            ["[url=synth://pulse.gridfall.net/]Gridfall Pulse[/url]", "My great-niece is on this. I am told I would not enjoy it."],
+            ["[url=synth://clipvault.tv/]ClipVault[/url]", "Film of the diner's last day and of the substation the morning after."],
+            ["[url=synth://stargazers.verity.net/]Verity County Amateur Astronomers[/url]", "Mr. Furniss has asked me twice to come up the hill. I intend to."],
+            ["[url=synth://codeandcoffee.blog/]Code and Coffee[/url]", "A young man in Gridfall explains computers patiently. My nephew reads it."],
+            ["[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]", "The ring this page belongs to."]
+          ] },
+          { "kind": "text", "body": "Mrs. Vance asked me in 2005 to join her webring and I could see no reason to refuse a neighbor. The four links below are the whole of my participation. I am told the code is normally put inside a table with a border. I did not do that." },
+          { "kind": "webring", "ringName": "The Gridfall Webring", "members": [
+            { "label": "Previous: Blue Kestrel Journal", "domain": "kestrel-journal.net" },
+            { "label": "Next: ClipVault", "domain": "clipvault.tv" },
+            { "label": "Random: Verity Rail Forums", "domain": "forums.verityrail.org" },
+            { "label": "List all members", "domain": "webring.gridfall.net" }
+          ] },
+          { "kind": "text", "body": "[i]This page has not been redesigned since 1998 and will not be.[/i]" }
+        ]
+      }
+    ]
+  }
+}
