@@ -1,0 +1,160 @@
+// FPCamera.signatures.json -- byte patterns used to locate the camera.
+//
+// Install location: <Baldur's Gate 3>/bin/NativeMods/FPCamera.signatures.json
+//
+// ===========================================================================
+// READ THIS FIRST
+//
+// None of the patterns below has been verified against a real Baldur's Gate 3
+// binary. They are TEMPLATES: the opcodes are the genuine x86-64 encodings for
+// the instruction kinds you need to find, but the surrounding context is a
+// guess. On a fresh install most of them will report "no match" or
+// "ambiguous: N matches" in the scan report, and that is the intended,
+// safe outcome -- the plugin refuses to guess which of several matches is the
+// right one, because writing floats into the wrong structure is far worse than
+// not switching to first person.
+//
+// This is not a limitation that better patterns would fix. BG3's executable is
+// stripped and re-linked on every patch, so any pattern shipped by any mod is
+// only ever valid for the build it was derived from. What ships here instead
+// is the machinery to derive your own quickly:
+//
+//   1. Launch the game and press F3 (discovery mode). Rotate the camera.
+//   2. Read bin/NativeMods/FPCamera.log. The candidate table shows every
+//      view matrix the game uploaded, decoded into a camera position and
+//      facing. The row that tracks your camera is the real one -- you now have
+//      the camera's live world position and orientation.
+//   3. Use those numbers in Cheat Engine as a float search to find the camera
+//      object, then work back to a pointer and an instruction that references
+//      it.
+//   4. Put the resulting pattern here and the offsets in FPCamera.json.
+//
+// docs/SIGNATURES.md walks through all four steps in detail.
+//
+// Fields per entry:
+//   name           -- referenced from the C++ and from FPCamera.json.
+//   pattern        -- IDA-style bytes; "??" is a wildcard.
+//   module         -- defaults to "bg3_dx11.exe".
+//   section        -- defaults to ".text".
+//   resolve        -- ops applied to the match address, in order:
+//                     add / sub  : value
+//                     deref      : read a pointer at the current address
+//                     rip32      : read the int32 at +value and add
+//                                  instructionLength (for RIP-relative operands)
+//                     rel32      : read the int32 at +value and add it
+//   manualAddress  -- skip scanning entirely; hex string, module-relative by
+//                     default. This is the fast path once you have found the
+//                     address yourself.
+//   required       -- a failure here disables camera writing.
+//   verified       -- set true once YOU have confirmed it on YOUR build.
+// ===========================================================================
+{
+  "schemaVersion": 1,
+
+  // Informational: which build these patterns were derived from. Compared
+  // against the running executable's version in the scan report.
+  "gameBuild": "UNVERIFIED-TEMPLATE",
+
+  "signatures": [
+    {
+      "name": "CameraManagerInstance",
+      "required": true,
+      "verified": false,
+
+      // Shape: mov rax, [rip+disp32] ; test rax, rax ; je short ; mov rcx, [rax+disp8]
+      //
+      // 48 8B 05 <disp32>  is the canonical x64 load of a global pointer, and
+      // a camera manager singleton is almost always accessed that way. The
+      // trailing null check narrows it, but nowhere near enough on its own --
+      // expect this to report several matches until you extend it with bytes
+      // that are actually unique to the camera code on your build.
+      "pattern": "48 8B 05 ?? ?? ?? ?? 48 85 C0 74 ?? 48 8B 48 ??",
+
+      // Turn the instruction address into the address of the global itself:
+      // read the displacement 3 bytes in, and add the 7-byte instruction
+      // length. The C++ then dereferences that global every frame.
+      "resolve": [
+        { "op": "rip32", "value": 3, "instructionLength": 7 }
+      ],
+
+      "notes": "The one required signature. Until it resolves, mouse look, the cursor lock and WASD movement all still work -- only the switch to a first-person viewpoint is disabled.",
+
+      // Once you know the address, this is faster and more reliable than any
+      // pattern. Module-relative, e.g. "0x4A1B2C0".
+      "manualAddress": "",
+      "manualIsRelative": true
+    },
+
+    {
+      "name": "CameraManagerInstanceAlt",
+      "required": false,
+      "verified": false,
+
+      // Shape: lea rcx, [rip+disp32] ; call rel32
+      //
+      // The other common way a singleton is reached: passed by address into an
+      // accessor rather than loaded directly. Try this if the primary pattern
+      // finds nothing. Rename it to CameraManagerInstance once it works, since
+      // that is the name the C++ looks up.
+      "pattern": "48 8D 0D ?? ?? ?? ?? E8 ?? ?? ?? ?? 48 8B ??",
+      "resolve": [
+        { "op": "rip32", "value": 3, "instructionLength": 7 }
+      ],
+      "notes": "Alternative shape for the same target. Not used unless renamed.",
+      "manualAddress": ""
+    },
+
+    {
+      "name": "CameraPitchClampSite",
+      "required": false,
+      "verified": false,
+
+      // Shape: minss xmm, xmm/m32 ; maxss xmm, xmm/m32
+      //
+      // F3 0F 5D is minss and F3 0F 5F is maxss -- those encodings are exact.
+      // A clamp to a pitch range compiles to exactly this pair. The catch is
+      // that so does every other float clamp in a 100 MB binary, so this WILL
+      // report as ambiguous until you anchor it to nearby camera-specific
+      // code. Only useful with clampBypass set to "patchClamp".
+      "pattern": "F3 0F 5D ?? F3 0F 5F ??",
+      "resolve": [],
+      "notes": "Expect 'ambiguous: N matches'. That is correct behaviour, not a bug -- extend the pattern with surrounding bytes unique to the camera update before using it. Default clampBypass ('postWrite') does not need this at all.",
+      "manualAddress": ""
+    },
+
+    {
+      "name": "CameraZoomClampSite",
+      "required": false,
+      "verified": false,
+
+      // Shape: movss xmm, [mem] ; comiss/maxss against it.
+      // Same caveat as the pitch clamp above.
+      "pattern": "F3 0F 10 ?? ?? ?? ?? ?? 0F 2F ?? 76 ??",
+      "resolve": [],
+      "notes": "Only needed for clampBypass 'patchClamp'. Verify the exact instruction length before adding it to camera.clampPatches -- a wrong nopLength corrupts the instruction stream and crashes the game.",
+      "manualAddress": ""
+    },
+
+    {
+      "name": "CameraUpdateFunction",
+      "required": false,
+      "verified": false,
+
+      // Shape: a standard non-leaf x64 prologue.
+      //   40 53          push rbx
+      //   48 83 EC xx    sub rsp, N
+      //   0F 29 74 24 xx movaps [rsp+N], xmm6   (saves a volatile xmm register,
+      //                                          which float-heavy camera code
+      //                                          reliably does)
+      //
+      // Reserved for a future detour that would let the plugin write camera
+      // values immediately after the game's own update instead of once per
+      // presented frame. Nothing reads this yet; it is here so the discovery
+      // workflow has somewhere to record the find.
+      "pattern": "40 53 48 83 EC ?? 0F 29 74 24 ?? 48 8B ??",
+      "resolve": [],
+      "notes": "Not currently consumed by the plugin. Record it here when you find it -- it is the natural hook point if per-frame overwriting proves too coarse.",
+      "manualAddress": ""
+    }
+  ]
+}
