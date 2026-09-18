@@ -18,7 +18,14 @@ on:
 concurrency:
   # A push that supersedes an in-flight run should cancel it rather than queue
   # behind it -- Windows runners bill at 2x.
-  group: ci-${{ github.ref }}
+  #
+  # Keyed on the head commit rather than github.ref, because this workflow runs
+  # on both `push` and `pull_request`. Those two events see different refs for
+  # the same commit (refs/heads/<branch> vs refs/pull/<n>/merge), so a ref-keyed
+  # group puts them in separate buckets and every push to a branch with an open
+  # PR runs the entire matrix twice -- which, at 2x billing, is the thing the
+  # comment above was trying to avoid. The head SHA is identical for both.
+  group: ci-${{ github.event.pull_request.head.sha || github.sha }}
   cancel-in-progress: true
 
 jobs:
