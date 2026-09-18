@@ -1,0 +1,390 @@
+{
+  "schema": 1,
+  "domain": "forums.verityrail.org",
+  "title": "Verity Rail Enthusiasts' Forum",
+  "type": "forum",
+  "era": "2006",
+  "skin": "ezboard-grey",
+  "description": "Discussion board for the Verity Rail line, its branches, and the people who photograph them.",
+  "links": ["wiki.gridfall.net", "verityledger.com", "kestrel-journal.net", "clipvault.tv", "webring.gridfall.net"],
+  "data": {
+    "boardName": "Verity Rail Enthusiasts' Forum",
+    "categories": [
+      {
+        "id": "c-vr",
+        "name": "Verity Rail",
+        "boards": [
+          {
+            "id": "b-service",
+            "name": "Service & Timetables",
+            "desc": "Current workings, timetable changes, engineering possessions, and the errors thread.",
+            "topicCount": 288,
+            "postCount": 6712,
+            "lastPost": { "author": "A. Wrenfield", "time": "14 Jun 2006, 21:38" }
+          },
+          {
+            "id": "b-branch",
+            "name": "The Marchfield Branch",
+            "desc": "The branch line, its closure, and what becomes of it. Please keep the campaign material in here.",
+            "topicCount": 61,
+            "postCount": 3004,
+            "lastPost": { "author": "Pauline Sedge", "time": "15 Jun 2006, 09:12" }
+          }
+        ]
+      },
+      {
+        "id": "c-rest",
+        "name": "The Rest Of It",
+        "boards": [
+          {
+            "id": "b-photo",
+            "name": "Photography",
+            "desc": "Photographs, lineside etiquette, scanning old slides, and where you are and are not allowed to stand.",
+            "topicCount": 174,
+            "postCount": 4890,
+            "lastPost": { "author": "dmc_marchfield", "time": "13 Jun 2006, 19:02" }
+          },
+          {
+            "id": "b-signalbox",
+            "name": "The Signal Box (off topic)",
+            "desc": "Everything else. Moderated lightly and reluctantly.",
+            "topicCount": 202,
+            "postCount": 5560,
+            "lastPost": { "author": "Pauline Sedge", "time": "15 Jun 2006, 09:40" }
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "1",
+        "boardId": "b-branch",
+        "title": "Marchfield branch: last day, 4 March",
+        "author": "Pauline Sedge",
+        "time": "05 Mar 2006, 00:41",
+        "replies": 6,
+        "views": 7188,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "05 Mar 2006, 00:41",
+            "body": "I have been trying to write this since about six o'clock and I am going to stop trying to write it well.\n\nThe 17:52 ran with four coaches and they were full, which is more people than that train has carried in one go since I have been counting, which is eleven years. A lot of people who have never been on it. The driver sounded the horn at every crossing from Verity Halt to Marchfield and at Cutler's Lane somebody had put a bedsheet on the fence with THANK YOU on it in what looked like fence paint.\n\nAt Marchfield they let us stand on the platform for about twenty minutes and nobody moved us on. Then the set went away empty to the depot and that was that.\n\nI have photographs but I am not posting them tonight.\n\n[img:photo:marchfield-last-1752]",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          },
+          {
+            "id": "2",
+            "author": "A. Wrenfield",
+            "authorTitle": "Member",
+            "authorPosts": 3319,
+            "authorJoined": "Feb 2002",
+            "avatarSeed": "wrenfield",
+            "time": "05 Mar 2006, 08:15",
+            "body": "Thank you for writing it, Pauline.\n\nFor the record because someone will want it in five years: the final public working was 2B47, the 17:52 Verity Central to Marchfield, 4 March 2006, formed 4 vehicles (set VR-112, one vehicle swapped in that morning after a door fault on the booked set). Arrived Marchfield 18:34, two minutes early. The empty stock left at 18:56.\n\nThe last down working the previous day was cancelled at Cutler's Lane for a trespass incident, so a number of the \"last train\" photographs circulating are in fact from the Friday.",
+            "signature": "A.W.\nIf you are going to quote a headcode, get the headcode right."
+          },
+          {
+            "id": "3",
+            "author": "dmc_marchfield",
+            "authorTitle": "Member",
+            "authorPosts": 1120,
+            "authorJoined": "Aug 2003",
+            "avatarSeed": "dmc",
+            "time": "05 Mar 2006, 10:02",
+            "body": "i was on it with my dad. he used it to get to work for 22 years and he didnt say anything the whole way there or the whole way back. when we got to the car he said \"well\" and that was it.\n\nsorry. i know thats not much of a post.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "Gerald Brue",
+            "authorTitle": "Member",
+            "authorPosts": 6602,
+            "authorJoined": "Jan 2002",
+            "avatarSeed": "brue",
+            "time": "05 Mar 2006, 11:47",
+            "body": "It did not have to go. That is the thing I keep coming back to. The loadings figures the county used were taken in the fortnight the bridge at Hallow was out and there was a bus replacement, and when that was pointed out in the consultation the response was that the methodology had been agreed in advance.\n\nAgreed with whom. Nobody has ever answered that.\n\nThe Ledger did one piece: [url=synth://verityledger.com/]verityledger.com[/url]. Two hundred words and a photograph of the sign.",
+            "signature": "G.B.\n  ___\n |o o|  \"Consultation (n.): the period during which the decision is typed up.\"\n |___|"
+          },
+          {
+            "id": "5",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "05 Mar 2006, 12:30",
+            "body": "Gerald, not today. Please.\n\nThere is a thread for the loadings methodology, it is four hundred posts long, it is three threads down, and I will happily reply in it tomorrow.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          },
+          {
+            "id": "6",
+            "author": "Gerald Brue",
+            "authorTitle": "Member",
+            "authorPosts": 6602,
+            "authorJoined": "Jan 2002",
+            "avatarSeed": "brue",
+            "time": "05 Mar 2006, 13:05",
+            "body": "Fair enough. Apologies Pauline, and to Dominic for landing that on top of his post about his father.",
+            "signature": "G.B.\n  ___\n |o o|  \"Consultation (n.): the period during which the decision is typed up.\"\n |___|"
+          },
+          {
+            "id": "7",
+            "author": "Hettie L.",
+            "authorTitle": "Member",
+            "authorPosts": 487,
+            "authorJoined": "Sep 2005",
+            "avatarSeed": "hettie",
+            "time": "06 Mar 2006, 20:19",
+            "body": "Went up to Cutler's Lane this evening. The bedsheet is still on the fence. It has rained on it and you can only read THA and the Y.\n\nSomeone should take it down before it goes to pieces and it just looks like rubbish on a fence. I did not want to be the one to do it.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "boardId": "b-service",
+        "title": "Summer 2006 timetable -- errors and omissions (post here)",
+        "author": "A. Wrenfield",
+        "time": "22 May 2006, 18:04",
+        "replies": 5,
+        "views": 2941,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "A. Wrenfield",
+            "authorTitle": "Member",
+            "authorPosts": 3319,
+            "authorJoined": "Feb 2002",
+            "avatarSeed": "wrenfield",
+            "time": "22 May 2006, 18:04",
+            "body": "As every year. Post errors you find in the printed summer timetable here with the table number and I will keep a consolidated list in this post.\n\n[b]Confirmed so far:[/b]\n\n[list][*]Table 4, 06:18 Verity Central: shown calling at Hallow. It does not. It has not since December.[*]Table 4 footnote c: refers to footnote e, which does not exist in this edition.[*]Table 11: Saturday column headed \"SX\". It is the Saturday column.[*]Table 11, 22:40: arrival time 23:02 is shown in the departure column.[/list]\n\nThe on-line version has the same four errors, so they are in the source data, not the typesetting.",
+            "signature": "A.W.\nIf you are going to quote a headcode, get the headcode right."
+          },
+          {
+            "id": "2",
+            "author": "Gerald Brue",
+            "authorTitle": "Member",
+            "authorPosts": 6602,
+            "authorJoined": "Jan 2002",
+            "avatarSeed": "brue",
+            "time": "22 May 2006, 19:22",
+            "body": "Table 7, page 31: Cutler's Lane is still listed. There is no service to Cutler's Lane. There has been no service to Cutler's Lane since the fourth of March.\n\nI appreciate this is a clerical matter and I am aware of how I sound.",
+            "signature": "G.B.\n  ___\n |o o|  \"Consultation (n.): the period during which the decision is typed up.\"\n |___|"
+          },
+          {
+            "id": "3",
+            "author": "Hettie L.",
+            "authorTitle": "Member",
+            "authorPosts": 487,
+            "authorJoined": "Sep 2005",
+            "avatarSeed": "hettie",
+            "time": "23 May 2006, 07:55",
+            "body": "Not an error as such but the maps at both Verity Central and Marchfield still have the branch drawn on them in the old blue. The one at Central has a sticker over Cutler's Lane and the sticker has already been picked off.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "dmc_marchfield",
+            "authorTitle": "Member",
+            "authorPosts": 1120,
+            "authorJoined": "Aug 2003",
+            "avatarSeed": "dmc",
+            "time": "23 May 2006, 12:41",
+            "body": "table 4 the 0618 does stop at hallow, i got it on the 16th and it stopped",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "A. Wrenfield",
+            "authorTitle": "Member",
+            "authorPosts": 3319,
+            "authorJoined": "Feb 2002",
+            "avatarSeed": "wrenfield",
+            "time": "23 May 2006, 13:26",
+            "body": "[quote=dmc_marchfield]table 4 the 0618 does stop at hallow, i got it on the 16th and it stopped[/quote]\n\nThe 16th was a Tuesday in the engineering period. The 06:18 was diverted and ran via Hallow with a conditional stop under the possession notice. That is not a booked call and it will not happen again until the next possession.\n\nThis is precisely the kind of thing that ends up in the errors list incorrectly and then somebody misses a train because of it, which is why I ask for table numbers and dates.",
+            "signature": "A.W.\nIf you are going to quote a headcode, get the headcode right."
+          },
+          {
+            "id": "6",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "14 Jun 2006, 21:38",
+            "body": "Stickied for the season. Andrew, thank you for keeping the list in the first post, it saves me an enormous amount of work.\n\nI have copied the confirmed four across to [url=synth://wiki.gridfall.net/wiki/verity-rail]the wiki page[/url] as well, since people find that before they find us.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "boardId": "b-photo",
+        "title": "PLEASE READ: posting photographs (size, credit, and where you stand)",
+        "author": "Pauline Sedge",
+        "time": "11 Apr 2005, 22:15",
+        "replies": 3,
+        "views": 9902,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "11 Apr 2005, 22:15",
+            "body": "Four things, and then I will stop.\n\n[b]Size.[/b] 800 wide maximum. Half the people here are on dial-up and a 2 megabyte photograph is not a gift to them, it is a tax.\n\n[b]Credit.[/b] If it is not your photograph, say whose it is. If you do not know whose it is, say that. \"Found on the internet\" is an acceptable answer. Passing it off as yours is not, and it has happened twice this year.\n\n[b]Scans.[/b] If you are scanning slides, scan the whole frame including the mount edge. People crop them, decide later they cropped wrong, and the original is gone.\n\n[b]Where you stand.[/b] Not on the ballast. Not on the crossing. Not on the bridge parapet at Hallow, I know exactly who I am talking to. We had a driver make a complaint in February and one more will cost us the goodwill we have with the depot, which we are going to want.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          },
+          {
+            "id": "2",
+            "author": "dmc_marchfield",
+            "authorTitle": "Member",
+            "authorPosts": 1120,
+            "authorJoined": "Aug 2003",
+            "avatarSeed": "dmc",
+            "time": "12 Apr 2005, 09:30",
+            "body": "what counts as on the ballast, like if im on the cess is that ok",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "12 Apr 2005, 10:11",
+            "body": "[quote=dmc_marchfield]what counts as on the ballast, like if im on the cess is that ok[/quote]\n\nDominic, the cess is on the railway. If you are on the railway and you do not work for the railway, the answer is no.\n\nStand on the road bridge or the public footpath at Cutler's Lane. Both give you a better photograph anyway.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          },
+          {
+            "id": "4",
+            "author": "dmc_marchfield",
+            "authorTitle": "Member",
+            "authorPosts": 1120,
+            "authorJoined": "Aug 2003",
+            "avatarSeed": "dmc",
+            "time": "13 Jun 2006, 19:02",
+            "body": "bumping this because somebody posted a 4mb jpeg in the depot thread and my computer has been thinking about it for nine minutes\n\nalso ive been on the bridge ever since pauline told me to and shes right, its a better photo. [img:photo:hallow-bridge-0605]",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "boardId": "b-signalbox",
+        "title": "A note from your moderator",
+        "author": "Pauline Sedge",
+        "time": "15 Jun 2006, 09:12",
+        "replies": 2,
+        "views": 1104,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "15 Jun 2006, 09:12",
+            "body": "There is one of me.\n\nI am not the webmaster, I do not own the domain, I cannot change your username, I cannot recover a password, I cannot delete a post you made in 2003 because you have fallen out with somebody, and I cannot make the county reopen the branch.\n\nWhat I can do is read every post on four boards, which I do, in the evenings, after work.\n\nIn the last month I have had eleven private messages asking me to intervene in one argument in the Signal Box. I have read that argument. It is about a bus. I am not going to intervene in it. If it upsets you, and I understand that it does, the thread has a link at the top that stops it appearing on your screen.\n\nIf anyone would like to moderate the Signal Box I will hand it over this afternoon and say thank you every day for a year.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          },
+          {
+            "id": "2",
+            "author": "A. Wrenfield",
+            "authorTitle": "Member",
+            "authorPosts": 3319,
+            "authorJoined": "Feb 2002",
+            "avatarSeed": "wrenfield",
+            "time": "15 Jun 2006, 09:31",
+            "body": "I will take the Signal Box if nobody else wants it. I am not going to be popular at it but I am consistent and I am on here at odd hours anyway.",
+            "signature": "A.W.\nIf you are going to quote a headcode, get the headcode right."
+          },
+          {
+            "id": "3",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "15 Jun 2006, 09:40",
+            "body": "Andrew, you have no idea what you have just agreed to and I am not going to tell you. Thank you. Genuinely.\n\nI will sort the permissions out tonight.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "boardId": "b-branch",
+        "title": "What happens to the trackbed now?",
+        "author": "Hettie L.",
+        "time": "02 Jun 2006, 20:44",
+        "replies": 3,
+        "views": 1877,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Hettie L.",
+            "authorTitle": "Member",
+            "authorPosts": 487,
+            "authorJoined": "Sep 2005",
+            "avatarSeed": "hettie",
+            "time": "02 Jun 2006, 20:44",
+            "body": "There is a notice up at Marchfield about a footpath and cycle route feasibility study. Has anyone actually read it? It is a photocopy in a plastic wallet and the wallet has gone cloudy.\n\nI am in two minds. A path is better than brambles and fly-tipping. But once it is a path it is never a railway again, and the rails are still down.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "Gerald Brue",
+            "authorTitle": "Member",
+            "authorPosts": 6602,
+            "authorJoined": "Jan 2002",
+            "avatarSeed": "brue",
+            "time": "02 Jun 2006, 21:50",
+            "body": "It is never a railway again either way. I have watched this happen to two other lines and the sequence is always the same: mothball, study, path, bridge deck removed for safety, done.\n\nThe bridge at Hallow is the one to watch. The moment that deck comes out the corridor is severed and everything after that is sentiment.\n\nI would still rather have the path than the brambles. I want to be clear that I am not arguing against it. I am saying let us not pretend it is reversible.",
+            "signature": "G.B.\n  ___\n |o o|  \"Consultation (n.): the period during which the decision is typed up.\"\n |___|"
+          },
+          {
+            "id": "3",
+            "author": "dmc_marchfield",
+            "authorTitle": "Member",
+            "authorPosts": 1120,
+            "authorJoined": "Aug 2003",
+            "avatarSeed": "dmc",
+            "time": "03 Jun 2006, 11:12",
+            "body": "walked from cutlers lane to the underbridge on sunday, its already got a path in it where people walk their dogs. nobody asked anybody, theres just a path now because thats where people walk\n\ntook some pictures, ill put them in the photo board when ive resized them properly (see pauline im learning)",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "Pauline Sedge",
+            "authorTitle": "Moderator",
+            "authorPosts": 8841,
+            "authorJoined": "Nov 2001",
+            "avatarSeed": "pauline",
+            "time": "04 Jun 2006, 18:33",
+            "body": "I read the notice. Consultation closes 31 August, responses to the county highways office in writing, and there is an address on the second page which nobody can read because it is the page facing the plastic.\n\nI will type it out and post it here. If enough of us write in as individuals rather than as \"the enthusiasts\" it tends to land better, that is the one useful thing I learned from the closure.",
+            "signature": "Pauline\nmod here since 2002. be kind to each other, I am tired."
+          }
+        ]
+      }
+    ]
+  }
+}

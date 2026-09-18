@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Synthnet</title>
+<meta name="description" content="Synthnet - an offline synthetic internet.">
+<meta name="theme-color" content="#1c4f7c">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Synthnet">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox='0%200%2016%2016'%3E%3Crect%20width='16'%20height='16'%20rx='3'%20fill='%231c4f7c'%2F%3E%3Crect%20x='2.5'%20y='4'%20width='11'%20height='8'%20rx='1'%20fill='%23cfe4f5'%2F%3E%3Crect%20x='2.5'%20y='4'%20width='11'%20height='2.2'%20fill='%23f2f8fd'%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="theme/aero.css">
+<link rel="stylesheet" href="theme/skins/forum.css">
+<link rel="stylesheet" href="theme/skins/social.css">
+<link rel="stylesheet" href="theme/skins/blog.css">
+<link rel="stylesheet" href="theme/skins/news.css">
+<link rel="stylesheet" href="theme/skins/wiki.css">
+<link rel="stylesheet" href="theme/skins/media.css">
+<link rel="stylesheet" href="theme/skins/page.css">
+</head>
+<body>
+
+<div class="synth-desktop" id="synth-desktop">
+
+  <div class="synth-window" id="synth-window" role="application" aria-label="Synthnet Browser">
+
+    <!-- ============ 1. TITLE BAR (glass) ============ -->
+    <div class="synth-titlebar" id="synth-titlebar">
+      <span class="synth-titleicon" aria-hidden="true"></span>
+      <span class="synth-titletext" id="synth-title">Synthnet</span>
+      <span class="synth-titlespacer" aria-hidden="true"></span>
+      <div class="synth-winbtns">
+        <button type="button" class="synth-winbtn synth-winmin" id="synth-winmin" title="Minimize" aria-label="Minimize"></button>
+        <button type="button" class="synth-winbtn synth-winmax" id="synth-winmax" title="Maximize" aria-label="Maximize"></button>
+        <button type="button" class="synth-winbtn synth-winclose" id="synth-winclose" title="Close" aria-label="Close"></button>
+      </div>
+    </div>
+
+    <!-- ============ 2. NAVIGATION ROW ============ -->
+    <div class="synth-navrow">
+
+      <div class="synth-navbtns">
+        <button type="button" class="synth-navbtn synth-navback" id="synth-back" title="Back" aria-label="Back"></button>
+        <button type="button" class="synth-navbtn synth-navfwd" id="synth-forward" title="Forward" aria-label="Forward"></button>
+      </div>
+
+      <button type="button" class="synth-navhome" id="synth-navhome" title="Home" aria-label="Home"
+              onclick="document.getElementById('synth-cmd-home').click();"></button>
+
+      <div class="synth-addrwrap">
+        <span class="synth-addricon" aria-hidden="true"></span>
+        <input type="text" class="synth-addr" id="synth-address" value="synth://" aria-label="Address"
+               spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off">
+        <button type="button" class="synth-addrdrop" id="synth-addrdrop" title="Recent pages" aria-label="Recent pages"></button>
+      </div>
+
+      <button type="button" class="synth-go" id="synth-go" title="Go" aria-label="Go"></button>
+
+      <button type="button" class="synth-btn synth-iconbtn synth-refresh" id="synth-refresh" title="Refresh" aria-label="Refresh"></button>
+      <button type="button" class="synth-btn synth-iconbtn synth-stop" id="synth-stop" title="Stop" aria-label="Stop"></button>
+
+      <div class="synth-searchwrap">
+        <span class="synth-searchicon" aria-hidden="true"></span>
+        <input type="search" class="synth-searchinput" id="synth-search" placeholder="Search Synthnet" aria-label="Search Synthnet"
+               spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off">
+        <button type="button" class="synth-searchgo" id="synth-searchgo" title="Search" aria-label="Search"></button>
+      </div>
+
+    </div>
+
+    <!-- ============ 3. TAB STRIP ============ -->
+    <div class="synth-tabrow">
+      <div class="synth-tabs" id="synth-tabs" role="tablist" aria-label="Open tabs"></div>
+      <button type="button" class="synth-newtab" id="synth-newtab" title="New Tab" aria-label="New Tab"></button>
+    </div>
+
+    <!-- ============ 4. COMMAND BAR ============ -->
+    <div class="synth-commandbar" id="synth-commandbar">
+      <span class="synth-cmdspacer" aria-hidden="true"></span>
+      <button type="button" class="synth-btn synth-cmdbtn synth-cmd-home" id="synth-cmd-home">Home</button>
+      <span class="synth-cmdsep" aria-hidden="true"></span>
+      <button type="button" class="synth-btn synth-cmdbtn synth-cmd-feeds" id="synth-cmd-feeds">Feeds</button>
+      <button type="button" class="synth-btn synth-cmdbtn synth-cmd-print" id="synth-cmd-print">Print</button>
+      <span class="synth-cmdsep" aria-hidden="true"></span>
+      <button type="button" class="synth-btn synth-cmdbtn synth-cmd-page" id="synth-cmd-page">Page</button>
+      <button type="button" class="synth-btn synth-cmdbtn synth-cmd-tools" id="synth-cmd-tools">Tools</button>
+    </div>
+
+    <!-- ============ 5. VIEWPORT (engine mounts the page here) ============ -->
+    <div class="synth-viewport" id="synth-viewport" tabindex="-1">
+      <noscript>
+        <div class="synth-page synth-404">
+          <h1>Synthnet cannot display the webpage</h1>
+          <p>Scripting is turned off in this browser. Synthnet is rendered locally by
+             scripts on this page, so nothing can be shown until scripting is enabled.</p>
+        </div>
+      </noscript>
+    </div>
+
+    <!-- ============ 6. STATUS BAR ============ -->
+    <div class="synth-statusbar">
+      <span class="synth-statustext" id="synth-status">Done</span>
+      <div class="synth-progress" id="synth-progress" role="progressbar" aria-label="Loading progress" aria-hidden="true"><span class="synth-progressfill"></span></div>
+      <span class="synth-statusgap" aria-hidden="true"></span>
+      <span class="synth-zone" id="synth-zone">Local intranet</span>
+      <span class="synth-protmode" id="synth-protmode">Protected Mode: On</span>
+      <span class="synth-zoom" id="synth-zoom" title="Zoom level">100%</span>
+    </div>
+
+  </div><!-- /synth-window -->
+</div><!-- /synth-desktop -->
+
+<script src="app/markup.js"></script>
+<script src="app/render.js"></script>
+<script src="app/types/forum.js"></script>
+<script src="app/types/social.js"></script>
+<script src="app/types/blog.js"></script>
+<script src="app/types/news.js"></script>
+<script src="app/types/wiki.js"></script>
+<script src="app/types/media.js"></script>
+<script src="app/types/page.js"></script>
+<script src="app/engine.js"></script>
+<script>
+window.addEventListener('load', function () {
+  try {
+    if (location.protocol === 'file:') { return; }
+    if (!('serviceWorker' in navigator)) { return; }
+    navigator.serviceWorker.register('./sw.js').catch(function () {});
+  } catch (e) {}
+});
+</script>
+
+</body>
+</html>
