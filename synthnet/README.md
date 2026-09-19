@@ -10,7 +10,16 @@ to still be a real thing you can sit and read.
 
 ## Running it
 
-There are two modes. They show the same content.
+Three modes. They show the same content.
+
+**As an app.** `android/build.sh` produces `synthnet.apk`: install it, tap the
+icon, it opens. No browser, no server, no file manager. The whole synthetic
+internet ships inside the APK and the app declares **no permissions at all** —
+without the INTERNET permission Android refuses every socket the process opens,
+so being offline is enforced by the operating system rather than promised here.
+Android 8.0+. The build uses only framework APIs, so it is aapt2, javac, d8 and
+apksigner with nothing to download — no Gradle, no androidx, no dependency
+resolution. See `docs/PHONE.md`.
 
 **Standalone.** `tools/build.py` produces a single HTML file with every site
 inlined. Copy that one file to the phone, open it from the file manager, and it

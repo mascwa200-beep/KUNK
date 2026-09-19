@@ -1,12 +1,45 @@
 # Running synthnet on a phone
 
-Three ways, from least to most effort. All of them work with the network
+Four ways, from least to most effort. All of them work with the network
 completely off; that is the whole point of the project. None of them need an
 account, a store listing, or a server you do not own.
 
-A note on honesty up front: this is a folder of static files and a small
-Python script. It is not an app. Nothing here is fast because it is clever —
-it is fast because there is almost nothing to load.
+Nothing here is fast because it is clever — it is fast because there is almost
+nothing to load.
+
+---
+
+## 0. The app
+
+`synthnet.apk` — install it, tap the icon, it opens. No browser, no server, no
+Termux, no file manager. This is the one you want.
+
+Get it from the **synthnet-android-apk** artifact on any green CI run, or build
+it yourself:
+
+```
+python3 synthnet/tools/build.py      # generate the site
+bash synthnet/android/build.sh       # package it
+```
+
+Copy `synthnet/android/synthnet.apk` to the phone and open it. Android will ask
+you to allow installing from that app the first time — that is the normal
+sideload prompt, not a warning that something is wrong. Needs Android 8.0 or
+newer.
+
+**The app declares no permissions at all.** Not internet, not storage, not
+anything. That is deliberate and it is checked in CI: without the INTERNET
+permission Android refuses every socket the process opens, so "works offline"
+stops being a claim in a README and becomes something the operating system
+enforces. The app cannot phone home, cannot be told to, and has nothing to
+leak. The entire synthetic internet is inside the APK.
+
+Two honest notes. The APK is signed with a generated debug key, which is fine
+for sideloading and not fine for a store listing — a real release needs a key
+you control. And the app has been built and verified but never run on a
+physical device, because the machine that built it has no Android hardware and
+no emulator; what *is* verified is that it is correctly signed, declares no
+permissions, and contains every single file the page asks for.
 
 ---
 

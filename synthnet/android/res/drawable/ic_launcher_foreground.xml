@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A small Aero-era window: title bar, three buttons, a page below. Vector so
+     it needs no density buckets and adds no binary assets to the repository. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,34 h56 a4,4 0 0 1 4,4 v32 a4,4 0 0 1 -4,4 h-56 a4,4 0 0 1 -4,-4 v-32 a4,4 0 0 1 4,-4 z" />
+    <path
+        android:fillColor="#1C4F7C"
+        android:pathData="M26,34 h56 a4,4 0 0 1 4,4 v6 h-64 v-6 a4,4 0 0 1 4,-4 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,38 h3 v2 h-3 z M76,38 h3 v2 h-3 z M64,38 h3 v2 h-3 z" />
+    <path
+        android:fillColor="#7FA9CC"
+        android:pathData="M28,50 h30 v3 h-30 z M28,57 h44 v3 h-44 z M28,64 h38 v3 h-38 z" />
+</vector>

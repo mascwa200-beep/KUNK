@@ -127,6 +127,11 @@
 window.addEventListener('load', function () {
   try {
     if (location.protocol === 'file:') { return; }
+    // Inside the Android app every asset is already in the APK and is served
+    // by the activity itself, so a cache layer buys nothing -- and the worker's
+    // own fetches do not pass through that interception, so registering one
+    // would fail noisily against an app that holds no network permission.
+    if (location.hostname === 'appassets.androidplatform.net') { return; }
     if (!('serviceWorker' in navigator)) { return; }
     navigator.serviceWorker.register('./sw.js').catch(function () {});
   } catch (e) {}

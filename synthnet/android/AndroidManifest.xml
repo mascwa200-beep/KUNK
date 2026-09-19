@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.verity.synthnet"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!--
+      There is deliberately no <uses-permission android:name="android.permission.INTERNET" />
+      here, and there must never be one.
+
+      The entire point of this project is a synthetic internet that works with
+      no network. Without that permission Android refuses every socket this
+      process opens, so "it works offline" stops being something you take on
+      trust and becomes something the operating system enforces. It also means
+      the app cannot phone home, cannot be told to, and has nothing to leak.
+
+      Everything it displays is inside the APK under assets/.
+    -->
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/SynthnetTheme"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|density|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

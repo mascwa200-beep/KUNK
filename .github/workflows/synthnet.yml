@@ -107,6 +107,45 @@ jobs:
           python3 -m playwright install --with-deps chromium
           python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
 
+      - name: Build the Android app
+        # ubuntu-latest ships the Android SDK, and the app uses only framework
+        # APIs, so there is nothing to resolve or download -- aapt2, javac, d8
+        # and apksigner, about a minute.
+        run: |
+          export ANDROID_HOME="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          bash synthnet/android/build.sh
+
+      - name: The app must hold no permissions
+        # The offline guarantee rests on the app having no INTERNET permission,
+        # which makes it enforced by Android rather than promised in a README.
+        # A future edit adding one would silently dissolve that, so it fails
+        # the build instead.
+        run: |
+          BT="$(ls -1 "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          AAPT2="$ANDROID_HOME/build-tools/$BT/aapt2"
+          n=$("$AAPT2" dump badging synthnet/android/synthnet.apk | grep -c "uses-permission" || true)
+          echo "uses-permission entries: $n"
+          if [ "$n" -ne 0 ]; then
+            echo "FAIL: the app declares a permission. It must declare none."
+            "$AAPT2" dump badging synthnet/android/synthnet.apk | grep "uses-permission"
+            exit 1
+          fi
+
+      - name: The APK must contain everything the page fetches
+        # Structural checks cannot catch a file that was never staged into
+        # assets/ -- the APK would be valid and the page would break. This
+        # drives the real site, records every URL it requests, and asserts each
+        # one is inside the APK.
+        run: python3 .github/scripts/synthnet_apk_check.py --apk synthnet/android/synthnet.apk --root synthnet
+
+      - name: Publish the Android app
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthnet-android-apk
+          path: synthnet/android/synthnet.apk
+          if-no-files-found: error
+
       - name: Publish the standalone single-file build
         # dist/ is gitignored because it is generated. Uploading it here keeps
         # the current build one download from the Actions run, which is the
