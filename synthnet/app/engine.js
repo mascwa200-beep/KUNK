@@ -79,6 +79,25 @@ window.SYNTH = window.SYNTH || {};
   }
 
   function registryList() {
+    var arr = registryListBuiltIn();
+    if (!SYNTH.packs) return arr;
+
+    /* Pack sites join the directory and the search index. Same domain means
+     * replace, not duplicate -- two entries for one address would show up as
+     * a ghost in the start page listing. */
+    var extra = SYNTH.packs.registryRows();
+    if (!extra.length) return arr;
+    var byDomain = {};
+    arr.forEach(function (row) { if (row && row.domain) byDomain[String(row.domain).toLowerCase()] = row; });
+    extra.forEach(function (row) { byDomain[String(row.domain).toLowerCase()] = row; });
+    var out = [];
+    for (var d in byDomain) {
+      if (hasOwn(byDomain, d)) out.push(byDomain[d]);
+    }
+    return out;
+  }
+
+  function registryListBuiltIn() {
     var r = SYNTH.data.registry;
     var arr = [];
     var k, v;
@@ -141,6 +160,17 @@ window.SYNTH = window.SYNTH || {};
     if (!domain) return Promise.resolve(null);
     if (hasOwn(siteCache, domain)) return Promise.resolve(siteCache[domain]);
 
+    /* Imported packs and sites you authored win over anything built in, so a
+     * pack can replace a shipped site by reusing its domain. Checked before
+     * the cache is populated, and the cache is dropped on import. */
+    if (SYNTH.packs) {
+      var over = SYNTH.packs.overlay();
+      if (hasOwn(over, domain)) {
+        siteCache[domain] = over[domain];
+        return Promise.resolve(siteCache[domain]);
+      }
+    }
+
     var emb = embedded();
     if (emb && emb.sites && typeof emb.sites === 'object') {
       var s = hasOwn(emb.sites, domain) ? emb.sites[domain] : null;
@@ -174,6 +204,14 @@ window.SYNTH = window.SYNTH || {};
     forget: function (domain) {
       domain = String(domain || '').toLowerCase();
       if (hasOwn(siteCache, domain)) delete siteCache[domain];
+    },
+
+    /* Called by SYNTH.packs after an import, a toggle or a delete. Without
+     * this the new sites would not appear until the app was restarted,
+     * because both the registry and each loaded site are cached. */
+    invalidate: function () {
+      siteCache = {};
+      searchPromise = null;
     }
   };
 

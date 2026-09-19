@@ -121,6 +121,12 @@
      renderers because they read from it at render time. -->
 <script src="app/live.js"></script>
 <script src="app/liveui.js"></script>
+<!-- Persistence and the things that need it: your account, and the
+     content packs that let the synthnet grow without a reinstall.
+     These load before engine.js because it consults the pack overlay. -->
+<script src="app/store.js"></script>
+<script src="app/me.js"></script>
+<script src="app/packs.js"></script>
 <script src="app/slop_social.js"></script>
 <script src="app/slop_forum.js"></script>
 <script src="app/slop_ads.js"></script>

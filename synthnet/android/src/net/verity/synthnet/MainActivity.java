@@ -1,12 +1,15 @@
 package net.verity.synthnet;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.ViewGroup;
+import android.webkit.ValueCallback;
+import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
@@ -71,6 +74,10 @@ public class MainActivity extends Activity {
 
     private WebView web;
 
+    /** Pending result of an <input type="file"> the page opened. */
+    private ValueCallback<Uri[]> pendingFiles;
+    private static final int PICK_FILE = 4011;
+
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
@@ -97,11 +104,40 @@ public class MainActivity extends Activity {
 
         web.setWebViewClient(new AssetClient(getAssets()));
 
+        /* Without a WebChromeClient an <input type="file"> in a WebView does
+         * nothing at all -- no picker, no error, no console message. The page
+         * looks broken and there is nothing to debug. This is what makes
+         * "import a content pack" work inside the app.
+         *
+         * ACTION_OPEN_DOCUMENT hands back a single readable URI through the
+         * Storage Access Framework. It needs no permission: the user picking
+         * the file IS the grant. The app still declares none, and CI still
+         * checks that. */
+        web.setWebChromeClient(new FilePicker(this));
+
         if (state != null) {
             web.restoreState(state);
         } else {
             web.loadUrl(START_URL);
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode != PICK_FILE) {
+            super.onActivityResult(requestCode, resultCode, data);
+            return;
+        }
+        if (pendingFiles == null) return;
+
+        Uri[] result = null;
+        if (resultCode == RESULT_OK && data != null && data.getData() != null) {
+            result = new Uri[] { data.getData() };
+        }
+        // Passing null on cancel is required, not optional: it is what releases
+        // the page's file input. Skip it and the next pick silently fails.
+        pendingFiles.onReceiveValue(result);
+        pendingFiles = null;
     }
 
     /** Keeps the current page and history across a rotation. */
@@ -123,6 +159,47 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    /**
+     * Opens a file picker when the page uses an <input type="file">.
+     *
+     * A named class rather than an anonymous one on purpose: d8 fails to
+     * dex an anonymous WebChromeClient here, because the override signature
+     * references the nested type WebChromeClient.FileChooserParams and the
+     * inner-class metadata javac emits for the anonymous case is not enough
+     * for it to resolve. The failure is a bare NullPointerException inside
+     * the dexer with no reference to this file, so it is worth not
+     * rediscovering.
+     */
+    private static final class FilePicker extends WebChromeClient {
+        private final MainActivity host;
+
+        FilePicker(MainActivity host) { this.host = host; }
+
+        @Override
+        public boolean onShowFileChooser(WebView view,
+                                         ValueCallback<Uri[]> callback,
+                                         WebChromeClient.FileChooserParams params) {
+            if (host.pendingFiles != null) {
+                // A picker was already open. Cancel the old callback or the
+                // page waits forever on a promise that never settles.
+                host.pendingFiles.onReceiveValue(null);
+            }
+            host.pendingFiles = callback;
+
+            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+            intent.addCategory(Intent.CATEGORY_OPENABLE);
+            intent.setType("*/*");
+            try {
+                host.startActivityForResult(intent, PICK_FILE);
+            } catch (Exception noPicker) {
+                host.pendingFiles = null;
+                callback.onReceiveValue(null);
+                return false;
+            }
+            return true;
+        }
     }
 
     private static final class AssetClient extends WebViewClient {
