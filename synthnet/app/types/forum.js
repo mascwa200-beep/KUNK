@@ -150,7 +150,21 @@
 
   function liveTopics(ctx, count) {
     var L = window.SYNTH.live;
-    var pool = arr(window.SYNTH.slop.forumTopics);
+    var all = arr(window.SYNTH.slop.forumTopics);
+
+    /* What arrives NOW is overwhelmingly automated -- that is the premise.
+     * The human threads in the pool are the board's history, not its current
+     * activity, so they are weighted down to roughly one in six rather than
+     * excluded: a board with literally no humans left reads as a gimmick,
+     * and one real person surfacing occasionally is what makes the rest
+     * land. */
+    var automated = [], human = [];
+    for (var i = 0; i < all.length; i++) {
+      (all[i].kind === 'human' ? human : automated).push(all[i]);
+    }
+    var pool = automated.length ? automated.concat(automated).concat(automated)
+                                    .concat(automated).concat(automated).concat(human)
+                                : all;
     /* Slower than the microblog: a board gets a new thread every 9 minutes,
      * and most of them are junk. */
     return L.stream('threads:' + ctx.site.domain, pool, 9, count).map(function (sl) {

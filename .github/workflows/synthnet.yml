@@ -74,11 +74,13 @@ jobs:
             exit 1
           fi
 
-          # Everything index.html pulls in on a cold load. The skins are in the
-          # list because all seven are <link>ed unconditionally -- leaving them
-          # out under-reports the real payload by 91 KB.
+          # Everything index.html pulls in on a cold load, including all seven
+          # skins and live.css, which are <link>ed unconditionally. Leaving a
+          # linked file out is how this step once reported 220 KB for a 311 KB
+          # payload: a budget that measures the wrong thing is worse than none.
           assets="synthnet/index.html synthnet/theme/aero.css \
-                  synthnet/theme/skins/*.css synthnet/app/*.js \
+                  synthnet/theme/skins/*.css synthnet/theme/live.css \
+                  synthnet/app/*.js \
                   synthnet/app/types/*.js synthnet/net/registry.json \
                   synthnet/manifest.webmanifest"
           raw=0; gz=0
@@ -89,12 +91,19 @@ jobs:
           echo "cold-load shell: $raw bytes raw, $gz bytes gzipped"
           # Both numbers are real: tools/serve.py gzips, so a browser moves the
           # second, but the raw figure is what the files actually weigh.
-          if [ "$raw" -gt 409600 ]; then
-            echo "FAIL: the shell payload has grown past 400 KB uncompressed."
+          # Raised from 400 KB / 120 KB when the live layer landed. The bot,
+          # sponsored and ad pools are ~240 KB raw of pure text, and they are
+          # loaded up front on purpose: the alternative is fetching them
+          # lazily, which is more machinery than this project wants. In the
+          # app and the standalone file these bytes are local, so the figure
+          # only means anything over a LAN, where the gzipped number is the
+          # one that travels. Headroom left for more sites.
+          if [ "$raw" -gt 921600 ]; then
+            echo "FAIL: the shell payload has grown past 900 KB uncompressed."
             exit 1
           fi
-          if [ "$gz" -gt 122880 ]; then
-            echo "FAIL: the shell payload has grown past 120 KB gzipped."
+          if [ "$gz" -gt 256000 ]; then
+            echo "FAIL: the shell payload has grown past 250 KB gzipped."
             exit 1
           fi
 

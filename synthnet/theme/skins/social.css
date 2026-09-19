@@ -176,7 +176,15 @@
 }
 
 @media (max-width: 720px) {
-  .skin-bluebird .sn-layout { display: block; padding: 10px; }
+  /* On a phone the feed is the page. Stacking the DOM order puts the profile
+     card and the Top 8 Friends grid above it, so the live content -- the
+     whole reason to open this -- starts below the fold. Flex ordering pulls
+     the feed up without touching the markup the desktop layout depends on. */
+  .skin-bluebird .sn-layout {
+    display: flex; flex-direction: column; padding: 10px;
+  }
+  .skin-bluebird .sn-main { order: 1; }
+  .skin-bluebird .sn-side { order: 2; }
   .skin-bluebird .sn-side { width: auto; margin-bottom: 12px; }
   .skin-bluebird .replies { margin-left: 16px; }
 }
@@ -385,7 +393,9 @@
 }
 
 @media (max-width: 760px) {
-  .skin-myspace-black .sn-layout { display: block; }
+  .skin-myspace-black .sn-layout { display: flex; flex-direction: column; }
+  .skin-myspace-black .sn-main { order: 1; }
+  .skin-myspace-black .sn-side { order: 2; }
   .skin-myspace-black .sn-side { width: auto; margin-bottom: 8px; }
 }
 @media (max-width: 400px) {
