@@ -54,7 +54,16 @@ BT_VER="$(newest "$SDK/build-tools")"
 [ -n "$BT_VER" ] || die "no build-tools in $SDK/build-tools"
 BT="$SDK/build-tools/$BT_VER"
 
-PLAT_VER="$(newest "$SDK/platforms")"
+# Prefer a stable platform over a preview one. "Newest" alone picked
+# android-37.2-beta3 on a GitHub runner, which happened to work but is not
+# something to depend on: a beta android.jar can change behaviour between
+# refreshes of the image and is removed once it ships. Fall back to whatever
+# exists if a machine genuinely only has previews.
+PLAT_VER="$(ls -1 "$SDK/platforms" 2>/dev/null | grep -E '^android-[0-9]+$' | sort -V | tail -1)"
+if [ -z "$PLAT_VER" ]; then
+  PLAT_VER="$(newest "$SDK/platforms")"
+  [ -n "$PLAT_VER" ] && echo "note: no stable platform installed, using preview $PLAT_VER"
+fi
 [ -n "$PLAT_VER" ] || die "no platform in $SDK/platforms"
 ANDROID_JAR="$SDK/platforms/$PLAT_VER/android.jar"
 [ -f "$ANDROID_JAR" ] || die "missing $ANDROID_JAR"
