@@ -1,0 +1,558 @@
+/* control.css -- the in-app control panel at synth://control.verity.net/
+   Every rule is prefixed .cp-. Works down to 360px.
+   Deliberately plainer than any site in the network: this is the machine,
+   not the fiction. */
+
+.cp-root {
+  font: 14px/1.55 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1c1f23;
+  background: #eef0f2;
+  padding: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+.cp-root *,
+.cp-root *:before,
+.cp-root *:after { box-sizing: border-box; }
+
+.cp-root [hidden] { display: none !important; }
+
+/* ------------------------------------------------------------------ head */
+
+.cp-head {
+  padding: 4px 2px 12px;
+  border-bottom: 2px solid #c6ccd2;
+  margin-bottom: 12px;
+}
+
+.cp-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.cp-sub {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #5c656e;
+}
+
+/* ------------------------------------------------------------------- nav */
+
+.cp-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 14px;
+}
+
+.cp-nav-item {
+  display: inline-block;
+  padding: 7px 11px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2a3138;
+  background: #dfe3e7;
+  border: 1px solid #c6ccd2;
+  border-radius: 3px;
+  min-height: 34px;
+  line-height: 20px;
+}
+
+.cp-nav-item:active { background: #cdd3d9; }
+
+.cp-nav-here {
+  background: #2a3138;
+  border-color: #2a3138;
+  color: #fff;
+  cursor: default;
+}
+
+/* ----------------------------------------------------------------- cards */
+
+.cp-card {
+  background: #fff;
+  border: 1px solid #c6ccd2;
+  border-radius: 4px;
+  padding: 14px;
+  margin: 0 0 12px;
+}
+
+.cp-card-danger {
+  border-color: #c0392b;
+  background: #fff8f7;
+}
+
+.cp-card-title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #3b444d;
+}
+
+.cp-card-sub {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #5c656e;
+}
+
+.cp-prose {
+  margin: 0 0 9px;
+  font-size: 13px;
+  color: #33393f;
+}
+
+.cp-prose:last-child { margin-bottom: 0; }
+
+.cp-hint {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: #6b747d;
+}
+
+.cp-editing {
+  margin: 0 0 10px;
+  padding: 7px 9px;
+  font-size: 12px;
+  background: #fff6db;
+  border: 1px solid #e0c56a;
+  border-radius: 3px;
+}
+
+/* ------------------------------------------------------------- key/value */
+
+.cp-rows {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(84px, 34%) 1fr;
+  gap: 4px 10px;
+  align-items: start;
+}
+
+.cp-rows-k {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b747d;
+  padding-top: 2px;
+}
+
+.cp-rows-v {
+  margin: 0;
+  font-size: 13px;
+  word-break: break-word;
+  min-width: 0;
+}
+
+/* ---------------------------------------------------------------- tables */
+
+.cp-table-slot { margin: 0; }
+
+.cp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.cp-th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #6b747d;
+  padding: 6px 8px;
+  border-bottom: 2px solid #c6ccd2;
+  white-space: nowrap;
+}
+
+.cp-td {
+  padding: 8px;
+  border-bottom: 1px solid #e2e6ea;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.cp-tr-off .cp-td { opacity: 0.55; }
+
+.cp-tr-total .cp-td {
+  font-weight: 600;
+  border-top: 2px solid #c6ccd2;
+  border-bottom: none;
+}
+
+.cp-td-name { font-weight: 600; }
+
+.cp-td-actions { white-space: nowrap; }
+
+.cp-cell-label { display: none; }
+
+.cp-cell-body { display: inline; }
+
+.cp-strong { font-weight: 600; }
+
+.cp-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  font-size: 11px;
+  background: #e8ecef;
+  border: 1px solid #ccd2d8;
+  border-radius: 10px;
+  color: #3b444d;
+}
+
+.cp-mono {
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+}
+
+.cp-link { color: #1b5e9c; }
+
+/* Below 640px the tables stack: each cell becomes a labelled line. */
+@media (max-width: 640px) {
+  .cp-thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .cp-table, .cp-tbody, .cp-tr, .cp-td { display: block; width: 100%; }
+
+  .cp-tr {
+    border: 1px solid #d8dde2;
+    border-radius: 3px;
+    margin: 0 0 8px;
+    padding: 4px 2px;
+    background: #fbfcfd;
+  }
+
+  .cp-td {
+    border-bottom: none;
+    padding: 4px 8px;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+  }
+
+  .cp-cell-label {
+    display: block;
+    flex: 0 0 34%;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6b747d;
+  }
+
+  .cp-cell-body { flex: 1 1 auto; min-width: 0; }
+
+  .cp-td-actions { white-space: normal; }
+}
+
+/* ---------------------------------------------------------------- fields */
+
+.cp-field { margin: 0 0 12px; }
+
+.cp-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #4a535c;
+  margin: 0 0 4px;
+}
+
+.cp-input,
+.cp-select,
+.cp-textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-size: 14px;
+  padding: 9px 10px;
+  color: #1c1f23;
+  background: #fff;
+  border: 1px solid #b9c0c7;
+  border-radius: 3px;
+  min-height: 40px;
+}
+
+.cp-textarea {
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.cp-textarea.cp-mono {
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12.5px;
+}
+
+.cp-input:focus,
+.cp-select:focus,
+.cp-textarea:focus {
+  outline: 2px solid #1b5e9c;
+  outline-offset: -1px;
+  border-color: #1b5e9c;
+}
+
+.cp-select { -webkit-appearance: menulist; appearance: menulist; }
+
+.cp-file {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.cp-check {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.cp-toggle { display: inline-flex; align-items: center; gap: 8px; }
+
+.cp-toggle-msg { font-size: 12px; }
+
+.cp-avatar {
+  margin: 0 0 12px;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #c6ccd2;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #f4f6f8;
+}
+
+.cp-avatar svg { display: block; width: 100%; height: 100%; }
+
+/* --------------------------------------------------------------- buttons */
+
+.cp-btn {
+  display: inline-block;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 14px;
+  min-height: 38px;
+  color: #22282e;
+  background: #dfe3e7;
+  border: 1px solid #b0b8c0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+.cp-btn:active { background: #cbd1d7; }
+
+.cp-btn-primary {
+  background: #1b5e9c;
+  border-color: #174f83;
+  color: #fff;
+}
+
+.cp-btn-primary:active { background: #17527f; }
+
+.cp-btn-quiet {
+  background: #f1f3f5;
+  color: #3b444d;
+}
+
+.cp-btn-danger {
+  background: #fff;
+  border-color: #c0392b;
+  color: #a5301f;
+}
+
+.cp-btn-armed {
+  background: #c0392b;
+  border-color: #98281b;
+  color: #fff;
+}
+
+.cp-btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  background: #f1f3f5;
+  color: #1b5e9c;
+  border-color: #c6ccd2;
+}
+
+.cp-btnrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 0;
+}
+
+.cp-confirm {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.cp-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.cp-actions-msg { font-size: 12px; }
+
+/* --------------------------------------------------------------- notices */
+
+.cp-status { margin: 10px 0 0; }
+
+.cp-status:empty { margin: 0; }
+
+.cp-note {
+  border: 1px solid #c6ccd2;
+  border-left-width: 4px;
+  border-radius: 3px;
+  padding: 9px 11px;
+  background: #f6f8f9;
+  font-size: 13px;
+}
+
+.cp-note-line { margin: 0 0 6px; }
+
+.cp-note-line:last-child { margin-bottom: 0; }
+
+.cp-note-head { font-weight: 600; }
+
+.cp-note-info { border-left-color: #6b747d; }
+
+.cp-note-good {
+  border-left-color: #2e7d46;
+  background: #f2faf4;
+}
+
+.cp-note-warn {
+  border-left-color: #b9812a;
+  background: #fffaf0;
+}
+
+.cp-note-bad {
+  border-left-color: #c0392b;
+  background: #fff5f4;
+}
+
+.cp-inline-ok { color: #2e7d46; font-size: 12px; }
+
+.cp-inline-bad { color: #a5301f; font-size: 12px; }
+
+.cp-errlist {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.cp-errlist-item {
+  margin: 0 0 4px;
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.cp-sitelist {
+  margin: 6px 0 6px;
+  padding-left: 18px;
+}
+
+.cp-sitelist-item { margin: 0 0 3px; }
+
+.cp-sitelist-title { color: #5c656e; }
+
+/* ------------------------------------------------------------ milestones */
+
+.cp-milestones {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cp-milestone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid #e2e6ea;
+  font-size: 13px;
+}
+
+.cp-milestone:last-child { border-bottom: none; }
+
+.cp-milestone-label { flex: 1 1 60%; min-width: 0; }
+
+.cp-milestone-at {
+  font-family: ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #5c656e;
+}
+
+.cp-milestone-flag {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2e7d46;
+}
+
+.cp-milestone-hit .cp-milestone-label { font-weight: 600; }
+
+/* ------------------------------------------------------------------- bar */
+
+.cp-bar {
+  margin: 10px 0 0;
+  height: 10px;
+  background: #e2e6ea;
+  border: 1px solid #c6ccd2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cp-bar-fill {
+  height: 100%;
+  width: 0;
+  background: #1b5e9c;
+}
+
+/* ------------------------------------------------------------------ 360 */
+
+@media (max-width: 400px) {
+  .cp-root { padding: 8px; }
+
+  .cp-card { padding: 11px; }
+
+  .cp-title { font-size: 19px; }
+
+  .cp-rows { grid-template-columns: 1fr; gap: 0 0; }
+
+  .cp-rows-k { padding-top: 7px; }
+
+  .cp-rows-v { padding-bottom: 4px; border-bottom: 1px solid #eef0f2; }
+
+  .cp-nav-item { flex: 1 1 auto; text-align: center; padding: 8px 6px; }
+
+  .cp-btn { width: 100%; text-align: center; }
+
+  .cp-btnrow .cp-btn,
+  .cp-confirm .cp-btn,
+  .cp-actions .cp-btn { width: auto; flex: 1 1 auto; }
+
+  .cp-btn-link { width: 100%; }
+}

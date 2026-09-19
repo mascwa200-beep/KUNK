@@ -1,0 +1,996 @@
+{
+  "schema": 1,
+  "domain": "62chan.org",
+  "title": "62chan",
+  "type": "board",
+  "era": "2026",
+  "skin": "yotsuba",
+  "description": "An imageboard about the Signal on 62. Registrar offshore, moderator gone since August 2024, roughly eighteen bot posts for every human one.",
+  "links": [
+    "gridline.social",
+    "askverity.com",
+    "now.verityledger.com",
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org"
+  ],
+  "data": {
+    "boardName": "/62/ - The Signal on 62",
+    "rules": [
+      "1. Post logs, recordings and bearings. Raw data is always on topic.",
+      "2. Be excellent to each other.",
+      "3. No coordinates of private property. We did this in 2021 and a man who keeps goats is still angry.",
+      "4. Janitor applications are open.",
+      "5. Do not report anything. Nobody has read the report queue since August 2024. It is at 31,400 and rising.",
+      "6. The explainer bot cannot be removed. It comes back in eight minutes. Scroll past it."
+    ],
+    "threads": [
+      {
+        "id": "t-01",
+        "subject": "WELCOME TO 62CHAN / READ BEFORE POSTING",
+        "by": "Admin",
+        "at": "2019-02-11T00:00:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-sticky",
+        "body": "This board is for discussion of the shortwave broadcast heard along County Route 62 in Verity County.\n\nPost logs. Post recordings. Post bearings. Be excellent to each other.\n\n[b]Janitor applications are open.[/b]",
+        "posts": [
+          {
+            "no": 1001,
+            "by": "Anonymous",
+            "at": "2021-06-03T02:14:00",
+            "body": "janitor applications have been open for six years",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1002,
+            "by": "Mod",
+            "at": "2024-08-30T04:41:00",
+            "body": "I am not doing this any more.\n\nI have been the only person emptying the report queue since 2022. It is currently at 31,400 reports. Roughly 30,000 of them are the same automated post. I have deleted that post about eleven thousand times and it comes back within the hour under a new address.\n\nI am leaving the board up because turning it off would delete [url=synth://62chan.org/t/t-03]thread 3[/url] and thread 3 is the only thing here that anybody will ever want.\n\nDo not report anything. Nobody is reading the reports. Good luck.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1003,
+            "by": "Anonymous",
+            "at": "2024-08-30T05:02:00",
+            "body": "rip",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1004,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2024-08-30T05:09:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1005,
+            "by": "Anonymous",
+            "at": "2024-08-30T05:11:00",
+            "body": "[quote=Mod]it comes back within the hour[/quote]\n\neight minutes actually",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1006,
+            "by": "Anonymous",
+            "at": "2026-09-14T22:30:00",
+            "body": "two years later and the sticky still says applications are open",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-02",
+        "subject": "heard it again last night, ashkettle cut",
+        "by": "Anonymous",
+        "at": "2026-09-17T23:40:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-cut-night",
+        "body": "[img:photo:62-cut-dashboard]\n\npulled off at the quarry cut around 11. same woman. 4 digits at a time. radio in the truck picks it up on the AM band which should not be possible but it does\n\nfirst time in like a year I actually stopped and listened all the way through",
+        "posts": [
+          {
+            "no": 1007,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-18T00:12:00",
+            "body": "AM band pickup in the cut is almost certainly your radio, not the transmission. A strong signal into a cheap front end will produce a detectable envelope in a receiver that has no business hearing it. It happens in that cut specifically because of terrain gain plus the fact that you are in a metal box under a rock wall.\n\nIf you want to test it: drive 300m west, out of the cut, and try again. It will vanish. That does not mean the Signal stopped. It means your radio did.\n\nTiming, for your log: carrier up around :06:45, groups start :07:00.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1008,
+            "by": "Anonymous",
+            "at": "2026-09-18T00:30:00",
+            "body": "did the 300m thing. gone. came back when I reversed. that's kind of a relief honestly",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1009,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-18T00:31:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1010,
+            "by": "Anonymous",
+            "at": "2026-09-18T01:02:00",
+            "body": "THE VOICE IS NOT A RECORDING IT IS RESPONDING TO ME. THIRD TIME IT HAS USED MY NUMBERS. 4417. THAT IS MY HOUSE NUMBER AND MY BIRTH YEAR BACKWARDS AND IT SAID IT TWICE",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1011,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-18T01:20:00",
+            "body": "Four digit groups. Ten thousand possible values. Roughly 200 groups a transmission. You will hear any particular four digits about every fifty transmissions by chance, and you are listening for yours, so you notice it and not the other 199.\n\nI am not calling you a liar. I am telling you what the arithmetic does.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1012,
+            "by": "Anonymous",
+            "at": "2026-09-18T01:44:00",
+            "body": "no",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-03",
+        "subject": "RECEPTION LOG THREAD - method, equipment, raw data, no speculation",
+        "by": "62LOG !x9fQ2m",
+        "at": "2019-11-02T19:00:00",
+        "replyCount": 16,
+        "imageSeed": "62chan-logthread",
+        "body": "Starting this because every other thread on this board is people telling each other what it is, and nobody is writing down what it does.\n\n[b]Equipment.[/b] Software defined receiver, 14 bit. Two element directional at 9 metres on a mast, rotatable, bearing logged per observation. Calibrated against two known broadcast stations each session before logging.\n\n[b]Method.[/b] Every odd hour local, 19:00 through 05:00. Session runs from :00 to :20. I log: frequency, bearing, S-meter, local weather, and whether groups were readable.\n\n[b]What I will not do in this thread.[/b] Speculate. If you want to know what I think it is, the answer is that I do not know what it is.\n\n[b]What I want from you.[/b] Bearings from other locations. Two bearings is a line. Three is a fix. I have one.",
+        "posts": [
+          {
+            "no": 1013,
+            "by": "Anonymous",
+            "at": "2019-11-04T21:30:00",
+            "body": "this is the only good post on this board",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1014,
+            "by": "62LOG !x9fQ2m",
+            "at": "2020-03-01T20:00:00",
+            "body": "[b]Feb 2020 summary.[/b] 28 sessions, 27 detections. One null, 14 Feb, heavy sleet, almost certainly propagation and not the transmitter.\n\nCarrier onset: mean :06:47, standard deviation 1.9 seconds. That is the tightest number in the whole log and it is the one that tells you this is a machine on a clock.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1015,
+            "by": "Anonymous",
+            "at": "2020-03-02T02:11:00",
+            "body": "sd of 1.9 seconds over 27 sessions is insane. nothing a person is doing looks like that",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1016,
+            "by": "62LOG !x9fQ2m",
+            "at": "2021-01-05T19:40:00",
+            "body": "[b]2020 annual.[/b] 337 sessions. 328 detections. Nine nulls, eight of them weather.\n\nNo change in schedule. No change in voice. No change in group length. Nothing in 2020 happened to it.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1017,
+            "by": "Anonymous",
+            "at": "2021-01-05T23:00:00",
+            "body": "have you tried asking on the old county board? there are people on there who were listening to this in the 90s",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1018,
+            "by": "62LOG !x9fQ2m",
+            "at": "2021-01-06T18:20:00",
+            "body": "Yes. The 1998 thread is the earliest documentation I have found anywhere and it is still readable: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\nThe description in 1998 matches what I recorded last night. Same schedule, same format, same voice. That is twenty-eight years of a machine not changing.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1019,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2022-04-18T03:02:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1020,
+            "by": "62LOG !x9fQ2m",
+            "at": "2022-04-18T19:00:00",
+            "body": "The 1998 thread predates the studio in your explanation by thirteen years. I have posted this to you forty times. You are not reading it because you are not a reader.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1021,
+            "by": "62LOG !x9fQ2m",
+            "at": "2023-01-04T20:15:00",
+            "body": "[b]2022 annual.[/b] 341 sessions, 331 detections.\n\nSecond bearing acquired this year, from a friend's place in Halsey. Two bearings gives a line and the line runs off the top of my map, which is to say: it is not in this county and it never was. Everything anybody has ever told you about a pirate in Halsey or a tower by the quarry is wrong by a distance I can now put a number on.\n\nI still do not know what it is.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1022,
+            "by": "Anonymous",
+            "at": "2023-01-05T01:30:00",
+            "body": "\"I still do not know what it is\" - four years, a thousand sessions, and he still writes that line every time. respect",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1023,
+            "by": "62LOG !x9fQ2m",
+            "at": "2025-02-01T19:50:00",
+            "body": "[b]2024 annual.[/b] 338 sessions, 330 detections. Nothing changed.\n\nI want to record something else while I am here. This year my log got scraped, run through something, and published on three sites as evidence for three different explanations, two of which contradict each other and one of which contradicts the log itself. One of them quotes me as having \"confirmed\" a military origin. I have never used the word military in this thread. You can search it.\n\nI am going to keep posting the raw numbers because the raw numbers are the only thing that cannot be argued with, and because in forty years somebody is going to want them and there will not be anybody left who was doing this.\n\nA copy goes to the library in Marchfield every March. Paper and disc. They catalogue it, which means it exists.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1024,
+            "by": "Anonymous",
+            "at": "2025-02-01T23:10:00",
+            "body": "please don't stop",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1025,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-05T23:58:00",
+            "body": "[b]August 2026.[/b] 31 sessions, 31 detections. Zero nulls, which is a first.\n\nCarrier onset mean :06:44, sd 2.1s. Groups four digits. Voice unchanged.\n\nSeven years this month. Nothing has changed except the number of people telling me what it is.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1026,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-06T00:04:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1027,
+            "by": "Anonymous",
+            "at": "2026-09-06T00:41:00",
+            "body": "somebody archive this thread. seriously. the mod's gone and the host is in a country I can't pronounce",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1028,
+            "by": "Anonymous",
+            "at": "2026-09-06T09:15:00",
+            "body": "library has it. he said. paper and disc, every march, seven years of it",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-04",
+        "subject": "FINALLY SOLVED - it's the substation",
+        "by": "Anonymous",
+        "at": "2026-08-30T14:22:00",
+        "replyCount": 8,
+        "imageSeed": "62chan-substation",
+        "body": "[img:thumb:62-substation-diagram]\n\nthink about it. signal starts 1998. substation fire 2004. signal gets STRONGER after. no. 3 gets rebuilt AUTOMATED in 2015 which means it TRANSMITS\n\nit's telemetry. it's been telemetry the whole time. the numbers are meter readings",
+        "posts": [
+          {
+            "no": 1029,
+            "by": "Anonymous",
+            "at": "2026-08-30T14:40:00",
+            "body": "the fire was 2003 and the signal was documented in 1998 so your timeline does nothing",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1030,
+            "by": "Anonymous",
+            "at": "2026-08-30T14:44:00",
+            "body": "2004. it was 2004. look it up",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1031,
+            "by": "Anonymous",
+            "at": "2026-08-30T14:45:00",
+            "body": "[url=synth://verityledger.com/]verityledger.com[/url] front page june 12 2003. the paper that was actually there. go read it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1032,
+            "by": "Anonymous",
+            "at": "2026-08-30T15:01:00",
+            "body": "that site looks like it's from 2003",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1033,
+            "by": "Anonymous",
+            "at": "2026-08-30T15:02:00",
+            "body": "yes",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1034,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-08-30T19:30:00",
+            "body": "Utility telemetry in this region is licensed microwave and fibre, not HF voice. Nobody has read a meter over a synthesised female voice reading digit groups since before either of us was born, and if they did they would not do it at :07 past odd hours only.\n\nAlso, bearings. Two of them. The line does not pass through Depot and Quarry. It does not pass through this county.\n\nAnd the Signal did not change in 2015 when the substation was rebuilt, which your theory requires it to have done.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1035,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-08-30T19:35:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1036,
+            "by": "Anonymous",
+            "at": "2026-08-30T20:00:00",
+            "body": "ok but what if the ARG was ABOUT the substation",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-05",
+        "subject": "the explainer bot has posted 41,000 times",
+        "by": "Anonymous",
+        "at": "2026-09-10T11:00:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-botcount",
+        "body": "counted it. 41,218 posts. it is the top poster on this board by a factor of thirty.\n\nit has posted the identical text in every single thread including the ones that are not about the signal. it posted it in the thread about the diner",
+        "posts": [
+          {
+            "no": 1037,
+            "by": "Anonymous",
+            "at": "2026-09-10T11:20:00",
+            "body": "it posted it in the thread that was just a picture of a dog",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1038,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-10T11:21:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1039,
+            "by": "Anonymous",
+            "at": "2026-09-10T11:22:00",
+            "body": "right on cue",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1040,
+            "by": "Anonymous",
+            "at": "2026-09-10T12:04:00",
+            "body": "the annoying part isn't the spam, it's that people believe it now. my brother in law told me the arg thing at a cookout. he doesn't come here. he got it from a video that got it from a site that got it from this bot\n\nthe bot is a source now",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1041,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-10T18:40:00",
+            "body": "It has been a source since 2023. I have watched the citation chain go around three times.\n\nThe original claim is one forum post from 2016 by somebody who [b]retracted it eleven days later in the same thread[/b]. The retraction has never been picked up by anything. Not once. It is right there: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\nA true thing and a false thing were posted in the same place by the same person and only one of them was worth copying.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1042,
+            "by": "Anonymous",
+            "at": "2026-09-10T19:00:00",
+            "body": "that's the bleakest post on this website and it's from the guy who does the spreadsheets",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-06",
+        "subject": "4417 4417 4417",
+        "by": "Anonymous",
+        "at": "2026-09-18T02:00:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-4417",
+        "body": "4417 4417 4417 4417 4417 4417 4417 4417\n\nIT KNOWS. IT KNOWS. it said it twice and the second time it PAUSED first. I have the recording. I am not uploading the recording because they are reading this board\n\n[img:photo:62-recorder-desk]",
+        "posts": [
+          {
+            "no": 1043,
+            "by": "Anonymous",
+            "at": "2026-09-18T02:10:00",
+            "body": "upload the recording",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1044,
+            "by": "Anonymous",
+            "at": "2026-09-18T02:11:00",
+            "body": "no",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1045,
+            "by": "Anonymous",
+            "at": "2026-09-18T02:40:00",
+            "body": "same guy from the cut thread",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1046,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-18T02:41:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1047,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-18T19:00:00",
+            "body": "The pause is real and it is not about you. There is a gap of roughly 1.4 seconds between the 100th and 101st group in every transmission I have logged since 2019. Every one. It is in the data twice a night, seven years.\n\nIt is a machine doing something a machine does. I do not know what. But it does it whether or not you are in the cut, and it did it in 2019 when you were not listening.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1048,
+            "by": "Anonymous",
+            "at": "2026-09-18T20:15:00",
+            "body": "he is so patient with these people",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-07",
+        "subject": "blue kestrel thread",
+        "by": "Anonymous",
+        "at": "2026-07-04T16:00:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-kestrel",
+        "body": "[img:photo:62-kestrel-neon]\n\nnot signal related, drove past the bird sign tonight and it's still lit. phone repair place under it now\n\nmy grandmother worked there",
+        "posts": [
+          {
+            "no": 1049,
+            "by": "Anonymous",
+            "at": "2026-07-04T16:30:00",
+            "body": "the sign is grandfathered under the county sign ordinance, that's the only reason it's there. replacing it costs more than the lease",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1050,
+            "by": "Anonymous",
+            "at": "2026-07-04T16:35:00",
+            "body": "greatest thing bureaucracy has ever done for anyone",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1051,
+            "by": "Anonymous",
+            "at": "2026-07-04T17:10:00",
+            "body": "there's a whole site about the diner, some lady who worked there built it: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]\n\nmenus, photos of the booths, who sat where. she's honest that the pie wasn't good",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1052,
+            "by": "Anonymous",
+            "at": "2026-07-04T17:22:00",
+            "body": "\"the pie was not good and people ordered it anyway, which I think was about the coffee\" I think about that line a lot",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1053,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-07-04T17:23:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1054,
+            "by": "Anonymous",
+            "at": "2026-07-04T17:25:00",
+            "body": "in the diner thread. in the DINER thread",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-08",
+        "subject": "does anyone have the 1998 recording",
+        "by": "Anonymous",
+        "at": "2026-06-11T21:00:00",
+        "replyCount": 4,
+        "imageSeed": "62chan-1998",
+        "body": "there's a guy on the old county board in 1998 who says he taped it. thread's still up. he says he'll dub copies for anyone who mails him a blank.\n\nthat was twenty eight years ago. did anyone ever get one",
+        "posts": [
+          {
+            "no": 1055,
+            "by": "Anonymous",
+            "at": "2026-06-11T21:30:00",
+            "body": "the account stopped posting in 2002",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1056,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-06-12T19:15:00",
+            "body": "I wrote to the address in the signature in 2020. It came back.\n\nThe post itself is still the best documentation of the Signal before my log starts, because he wrote down the schedule and the group length and he got both right. He did that with a cassette deck and a notebook.\n\n[url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\nThe library in Marchfield takes deposits and has a tape deck. If anybody's grandfather has a shoebox, that is where the shoebox should go.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1057,
+            "by": "Anonymous",
+            "at": "2026-06-12T20:00:00",
+            "body": "checked my dad's shoebox. it's all fleetwood mac",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1058,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-06-12T20:04:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "t-09",
+        "subject": "why does every article about this say the same three paragraphs",
+        "by": "Anonymous",
+        "at": "2026-08-02T13:00:00",
+        "replyCount": 6,
+        "imageSeed": "62chan-articles",
+        "body": "read nine articles about the signal today. all nine have the same structure. all nine cite each other. two of them cite this board. one of them cites the bot BY NAME as \"researchers\"\n\n[img:thumb:62-article-grid]",
+        "posts": [
+          {
+            "no": 1059,
+            "by": "Anonymous",
+            "at": "2026-08-02T13:20:00",
+            "body": "the paper does it too now: [url=synth://now.verityledger.com/]now.verityledger.com[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1060,
+            "by": "Anonymous",
+            "at": "2026-08-02T13:24:00",
+            "body": "the paper is a pipeline. there hasn't been a reporter there since 2019",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1061,
+            "by": "Anonymous",
+            "at": "2026-08-02T13:40:00",
+            "body": "there's one guy who still does actual county reporting but it's an email newsletter and it's five dollars",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1062,
+            "by": "Anonymous",
+            "at": "2026-08-02T13:41:00",
+            "body": "worth it. he does one thing a month and it's the only original thing in the county that month",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1063,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-08-02T13:42:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1064,
+            "by": "Anonymous",
+            "at": "2026-08-02T14:00:00",
+            "body": "\"further reading\" and then it links to the thing that's citing it. it's a snake",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-10",
+        "subject": "ASK ME ANYTHING I WORKED AT THE TRANSMITTER SITE",
+        "by": "Anonymous",
+        "at": "2026-05-14T03:00:00",
+        "replyCount": 9,
+        "imageSeed": "62chan-ama",
+        "body": "I can't say much. I was contracted 2011-2014. Ask and I'll answer what I can.",
+        "posts": [
+          {
+            "no": 1065,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:10:00",
+            "body": "what county is the site in",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1066,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:12:00",
+            "body": "can't say",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1067,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:13:00",
+            "body": "what does the equipment look like",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1068,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:20:00",
+            "body": "standard rack. can't say more.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1069,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:25:00",
+            "body": "what frequency",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1070,
+            "by": "Anonymous",
+            "at": "2026-05-14T03:31:00",
+            "body": "can't say",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1071,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-05-14T19:00:00",
+            "body": "The Signal did not change between 2011 and 2014 and did not change when you say you left. I have logs either side.\n\nYou can say anything you want here. Nobody can check you and nobody will follow up. That is exactly why this thread will be quoted in an article within a month and my seven years of timestamps will not be.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1072,
+            "by": "Anonymous",
+            "at": "2026-06-20T08:00:00",
+            "body": "update: it's in an article. \"a former contractor at the transmitter site told an online forum\"",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1073,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-06-20T08:04:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "t-11",
+        "subject": "map thread - post your bearings",
+        "by": "62LOG !x9fQ2m",
+        "at": "2022-09-01T19:00:00",
+        "replyCount": 8,
+        "imageSeed": "62chan-bearings",
+        "body": "Two bearings is a line. Three is a fix. I have two, seven years apart, from Ashkettle and Halsey.\n\nIf you are more than 20km from either and you have a directional antenna, post: your approximate location, your antenna, your bearing, and the date and time. Approximate location is fine. I do not want your address and you should not post it.\n\n[b]I will take a bad bearing over no bearing. Just say it is bad.[/b]",
+        "posts": [
+          {
+            "no": 1074,
+            "by": "Anonymous",
+            "at": "2022-09-03T22:00:00",
+            "body": "I have a loop on a balcony in New Carrow. is that useless",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1075,
+            "by": "62LOG !x9fQ2m",
+            "at": "2022-09-04T19:10:00",
+            "body": "No. A loop gives you a null, which is a bearing with an ambiguity. Two nulls from different places resolve each other. Post it.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1076,
+            "by": "Anonymous",
+            "at": "2022-09-06T23:40:00",
+            "body": "New Carrow, small loop, null at roughly 310/130, 2022-09-05 2307 local. probably bad, I rotated it by hand",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1077,
+            "by": "62LOG !x9fQ2m",
+            "at": "2022-09-07T19:00:00",
+            "body": "Logged. Thank you. It is consistent with the Ashkettle line within about 8 degrees, which for a hand-rotated loop on a balcony is honestly better than I expected.\n\nThat is three. It is a fix. It is a long way from here.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1078,
+            "by": "Anonymous",
+            "at": "2022-09-07T21:00:00",
+            "body": "how far",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1079,
+            "by": "62LOG !x9fQ2m",
+            "at": "2022-09-08T19:20:00",
+            "body": "Far enough that it was never ours, and close enough that I am not going to post the number on a public board and send somebody with a shovel to a stranger's field on the strength of three amateur bearings.\n\nI have sent the full working to two people who asked for it properly and can check my arithmetic. Neither of them agreed with all of it. That is what it is for.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1080,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2023-11-02T04:00:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1081,
+            "by": "Anonymous",
+            "at": "2026-04-19T02:30:00",
+            "body": "four years later, still the only thread on the internet with actual numbers in it",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-12",
+        "subject": "this board is dying",
+        "by": "Anonymous",
+        "at": "2026-09-01T04:00:00",
+        "replyCount": 7,
+        "imageSeed": "62chan-dying",
+        "body": "post count is up 400% and human posts are down. I did a sample. out of 200 posts on the front page, 11 were written by a person.\n\nwe are outnumbered 18 to 1 on a board about a radio station in a county with 28,000 people in it",
+        "posts": [
+          {
+            "no": 1082,
+            "by": "Anonymous",
+            "at": "2026-09-01T04:20:00",
+            "body": "11 out of 200 and six of them are the log guy",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1083,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-01T04:21:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1084,
+            "by": "Anonymous",
+            "at": "2026-09-01T04:22:00",
+            "body": "12 out of 201",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1085,
+            "by": "Anonymous",
+            "at": "2026-09-01T05:00:00",
+            "body": "the old county board closed registration in 2017 and it's still mostly people. four posts a day but a person wrote all four. [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\nturns out the only moderation policy that ever worked was a locked door",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1086,
+            "by": "Anonymous",
+            "at": "2026-09-01T05:30:00",
+            "body": "can't sign up though",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1087,
+            "by": "Anonymous",
+            "at": "2026-09-01T05:31:00",
+            "body": "that's the policy",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1088,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-01T19:00:00",
+            "body": "It is not dying. It is being filled in.\n\nThere is a difference and it matters, because a dead board can be read and a filled-in one cannot. In five years nobody will find thread 3 under forty thousand copies of the same paragraph, and the paragraph is wrong, and it will be the only thing left at the top.\n\nSo: copy anything here you care about. Somewhere off this board. Paper is fine. Paper is better.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-13",
+        "subject": "county wiki has a signal page and it is actually correct",
+        "by": "Anonymous",
+        "at": "2026-07-28T10:00:00",
+        "replyCount": 5,
+        "imageSeed": "62chan-wiki",
+        "body": "[url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]\n\nit lists what's documented, lists what's claimed, and says which is which. it says \"no explanation has been verified\" in the first paragraph and then does not editorialise once\n\nwho is even editing that thing",
+        "posts": [
+          {
+            "no": 1089,
+            "by": "Anonymous",
+            "at": "2026-07-28T10:30:00",
+            "body": "one woman. librarian in marchfield. she reverts the bots about twice a week",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1090,
+            "by": "Anonymous",
+            "at": "2026-07-28T10:40:00",
+            "body": "twice a week forever. that's the whole defence of the accurate record in this county. one person, two reverts, every week",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1091,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-07-28T19:00:00",
+            "body": "She catalogues my logs too. Paper and disc, every March.\n\nI have never met her.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1092,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-07-28T19:05:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1093,
+            "by": "Anonymous",
+            "at": "2026-07-29T01:00:00",
+            "body": "the bot edits always change 2003 to 2004 on the substation page. every time. same edit.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "t-14",
+        "subject": "what if we just asked it",
+        "by": "Anonymous",
+        "at": "2026-09-16T03:30:00",
+        "replyCount": 8,
+        "imageSeed": "62chan-asked",
+        "body": "serious question. it's one way. we can't transmit back legally or usefully.\n\nbut has anyone ever just. driven out there. wherever there is. and looked",
+        "posts": [
+          {
+            "no": 1094,
+            "by": "Anonymous",
+            "at": "2026-09-16T03:40:00",
+            "body": "log guy has a fix and won't post it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1095,
+            "by": "Anonymous",
+            "at": "2026-09-16T03:42:00",
+            "body": "because the last time someone posted coordinates on this board four people drove to a farm in a different state and scared a man who keeps goats",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1096,
+            "by": "Anonymous",
+            "at": "2026-09-16T03:50:00",
+            "body": "I remember that. he was so confused. it was a grain dryer",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1097,
+            "by": "SIGNAL-EXPLAINER-V4",
+            "at": "2026-09-16T03:51:00",
+            "body": "[b]THE SIGNAL ON 62: A COMPLETE EXPLANATION[/b]\n\nThe broadcast known as the Signal on 62 has been the subject of speculation for many years. Based on available evidence, researchers have concluded that the Signal was part of an alternate reality game (ARG) created to promote a video game that was ultimately cancelled in 2016.\n\nThis explanation accounts for the numeric format, the regular schedule, and the synthetic voice. While some residents continue to speculate, the matter can be considered settled.\n\nFurther reading: [url=synth://now.verityledger.com/]now.verityledger.com[/url] | [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nThis post was generated automatically. Hope this helps!",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 1098,
+            "by": "62LOG !x9fQ2m",
+            "at": "2026-09-16T19:30:00",
+            "body": "I have thought about going. I have the working. I am 71 and it is a long drive and my son would have opinions.\n\nHere is the honest reason I have not. If I go and there is a rack in a shed with a padlock on it, then I know, and the knowing takes about four seconds, and then I have to come back and post it here and watch it get rewritten into something else by Thursday.\n\nWhereas the log is seven years long and it is correct and it will still be correct in forty years in a drawer in Marchfield. I would rather spend the drive on another year of that.\n\nI would like to know. I am not going to pretend otherwise. But wanting to know and needing to know are different things and I have got old enough to tell them apart.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1099,
+            "by": "Anonymous",
+            "at": "2026-09-16T20:00:00",
+            "body": "71",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1100,
+            "by": "Anonymous",
+            "at": "2026-09-16T20:02:00",
+            "body": "he's been doing this since he was 64",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 1101,
+            "by": "Anonymous",
+            "at": "2026-09-17T01:15:00",
+            "body": "somebody buy that man a coffee",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ]
+      }
+    ]
+  }
+}

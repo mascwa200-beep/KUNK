@@ -260,11 +260,11 @@
     /* stats, derived deterministically so the page never jitters */
     var h = hash(txt(ctx.site.domain, 'board'));
     var regs = 1 + (h % 7);
-    var guests = 3 + ((h >> 4) % 22);
-    var peak = 46 + ((h >> 9) % 180);
-    var peakDate = DOW[(h >> 3) % 7] + ' ' + MON[(h >> 6) % 12] + ' ' +
-      (1 + ((h >> 11) % 28)) + ', ' + txt(ctx.site.era, '2004') + ' ' +
-      (1 + ((h >> 13) % 12)) + ':' + (10 + ((h >> 17) % 49)) + ' pm';
+    var guests = 3 + ((h >>> 4) % 22);
+    var peak = 46 + ((h >>> 9) % 180);
+    var peakDate = DOW[(h >>> 3) % 7] + ' ' + MON[(h >>> 6) % 12] + ' ' +
+      (1 + ((h >>> 11) % 28)) + ', ' + txt(ctx.site.era, '2004') + ' ' +
+      (1 + ((h >>> 13) % 12)) + ':' + (10 + ((h >>> 17) % 49)) + ' pm';
 
     var authors = {}, postTotal = 0, topicTotal = 0;
     topics(ctx).forEach(function (t) {
@@ -283,7 +283,7 @@
     if (declared > postTotal) postTotal = declared;
     var names = Object.keys(authors);
     var members = names.length + 12 + (h % 90);
-    var newest = names.length ? names[(h >> 7) % names.length] : 'lurker_01';
+    var newest = names.length ? names[(h >>> 7) % names.length] : 'lurker_01';
 
     mount.appendChild(el('div', { 'class': 'fbottom' },
       el('div', { 'class': 'fonline' },

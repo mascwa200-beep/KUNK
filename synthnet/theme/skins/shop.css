@@ -1,0 +1,393 @@
+/* skin-megastore -- 2026 everything-store. Dense, yellow-orange buy box,
+   star ratings, urgency banners. All rules scoped under .skin-megastore. */
+
+.skin-megastore {
+  background: #ffffff;
+  color: #14161a;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+.skin-megastore a { color: #0b4f8a; }
+.skin-megastore a:hover { color: #8a3b00; text-decoration: underline; }
+.skin-megastore a:focus-visible,
+.skin-megastore .ms-catlink:focus-visible {
+  outline: 2px solid #8a3b00;
+  outline-offset: 2px;
+}
+
+/* ---------- header ---------- */
+
+.skin-megastore .ms-head {
+  background: #10161d;
+  color: #ffffff;
+  padding: 8px 10px 0;
+}
+
+.skin-megastore .ms-head-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+
+.skin-megastore .ms-logo {
+  color: #ffd35c;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.skin-megastore .ms-logo:hover { color: #ffe291; }
+
+.skin-megastore .ms-deliver { font-size: 11px; color: #e4e7eb; }
+.skin-megastore .ms-deliver-lbl { color: #b9c0c8; margin-right: 4px; }
+.skin-megastore .ms-deliver-val { font-weight: 600; }
+
+.skin-megastore .ms-searchrow { padding: 8px 0 6px; }
+
+.skin-megastore .ms-searchbox {
+  display: flex;
+  align-items: stretch;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.skin-megastore .ms-searchcat {
+  background: #d7dbe0;
+  color: #23282e;
+  padding: 6px 8px;
+  border-right: 1px solid #a8b0b8;
+}
+.skin-megastore .ms-searchfield {
+  background: #ffffff;
+  color: #55606b;
+  flex: 1 1 auto;
+  padding: 6px 8px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.skin-megastore .ms-searchgo {
+  background: #f5a623;
+  color: #26190a;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+.skin-megastore .ms-catbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  background: #1d2833;
+  margin: 0 -10px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.skin-megastore .ms-catlink {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 2px 0;
+}
+.skin-megastore .ms-catlink:hover {
+  color: #ffd35c;
+  text-decoration: underline;
+}
+
+/* ---------- urgency ---------- */
+
+.skin-megastore .ms-urgent {
+  background: #a12208;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 7px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.skin-megastore .ms-urgent-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffd35c;
+  flex: 0 0 auto;
+}
+.skin-megastore .ms-urgent-text { flex: 1 1 auto; min-width: 0; }
+.skin-megastore .ms-urgent-count {
+  background: #7d1806;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ---------- body ---------- */
+
+.skin-megastore .ms-body { padding: 10px; }
+
+.skin-megastore .ms-h1 {
+  font-size: 19px;
+  line-height: 1.25;
+  margin: 0 0 6px;
+  color: #14161a;
+}
+
+.skin-megastore .ms-crumb {
+  font-size: 11px;
+  color: #55606b;
+  margin: 0 0 8px;
+  word-break: break-word;
+}
+.skin-megastore .ms-crumb-sep { margin: 0 4px; color: #8a929b; }
+.skin-megastore .ms-crumb-now { color: #55606b; }
+
+.skin-megastore .ms-hero {
+  background: #fff6e0;
+  border: 1px solid #e3c88a;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.skin-megastore .ms-hero-title { font-size: 20px; margin: 0 0 4px; }
+.skin-megastore .ms-hero-sub { margin: 0 0 4px; color: #3c434b; }
+.skin-megastore .ms-hero-live { margin: 0; font-size: 12px; color: #7a4500; font-weight: 600; }
+
+.skin-megastore .ms-sec { margin: 16px 0; }
+.skin-megastore .ms-sec-h {
+  font-size: 16px;
+  margin: 0 0 3px;
+  border-bottom: 2px solid #f5a623;
+  padding-bottom: 3px;
+}
+.skin-megastore .ms-sec-link { text-decoration: none; }
+.skin-megastore .ms-sec-note { font-size: 11px; color: #55606b; margin: 0 0 8px; }
+.skin-megastore .ms-result-count { font-size: 12px; color: #55606b; margin: 0 0 8px; }
+.skin-megastore .ms-empty { color: #55606b; font-style: italic; }
+
+/* ---------- grid of cards ---------- */
+
+.skin-megastore .ms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.skin-megastore .ms-card {
+  border: 1px solid #d3d8dd;
+  border-radius: 4px;
+  background: #ffffff;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.skin-megastore .ms-card:hover { border-color: #f5a623; }
+
+.skin-megastore .ms-card-img { display: block; margin-bottom: 6px; }
+.skin-megastore .ms-thumb,
+.skin-megastore .ms-card-img svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+}
+
+.skin-megastore .ms-card-name { font-size: 13px; font-weight: 400; margin: 0 0 4px; line-height: 1.3; }
+.skin-megastore .ms-card-link { text-decoration: none; }
+.skin-megastore .ms-card-rate { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 3px; }
+.skin-megastore .ms-card-rc { font-size: 11px; color: #0b4f8a; }
+.skin-megastore .ms-card-price { margin-bottom: 3px; }
+.skin-megastore .ms-card-seller { font-size: 11px; color: #55606b; margin: auto 0 0; }
+
+.skin-megastore .ms-price { font-size: 16px; font-weight: 700; color: #14161a; }
+.skin-megastore .ms-was {
+  font-size: 11px;
+  color: #6a5320;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+.skin-megastore .ms-prime {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0a5c6e;
+  margin: 0 0 3px;
+}
+
+/* ---------- stars ---------- */
+
+.skin-megastore .ms-stars { color: #8a6000; letter-spacing: 1px; font-size: 13px; }
+.skin-megastore .ms-star { color: #b8bdc3; }
+.skin-megastore .ms-star.on { color: #a06600; }
+
+/* ---------- category layout ---------- */
+
+.skin-megastore .ms-listhead { margin: 8px 0; }
+
+.skin-megastore .ms-layout { display: block; }
+.skin-megastore .ms-side {
+  border: 1px solid #d3d8dd;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #fafbfc;
+}
+.skin-megastore .ms-side-h { font-size: 13px; margin: 0 0 4px; }
+.skin-megastore .ms-side-list { list-style: none; margin: 0 0 10px; padding: 0; }
+.skin-megastore .ms-side-item { margin: 0 0 2px; }
+.skin-megastore .ms-side-link { font-size: 13px; text-decoration: none; }
+.skin-megastore .ms-side-link.on { font-weight: 700; color: #7a3300; }
+.skin-megastore .ms-side-note { font-size: 11px; color: #55606b; margin: 4px 0 2px; }
+
+/* ---------- product detail ---------- */
+
+.skin-megastore .ms-pdp { display: block; margin: 10px 0; }
+
+.skin-megastore .ms-gal { margin-bottom: 12px; }
+.skin-megastore .ms-gal-main svg { display: block; width: 100%; height: auto; }
+.skin-megastore .ms-gal-strip { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
+.skin-megastore .ms-gal-thumb { border: 1px solid #d3d8dd; padding: 1px; flex: 0 0 auto; }
+.skin-megastore .ms-gal-thumb svg { display: block; width: 42px; height: 42px; }
+.skin-megastore .ms-gal-note { font-size: 11px; color: #55606b; margin: 5px 0 0; }
+
+.skin-megastore .ms-by { font-size: 12px; color: #3c434b; margin: 0 0 4px; }
+.skin-megastore .ms-rate-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 8px; }
+.skin-megastore .ms-rate-num { font-weight: 700; }
+.skin-megastore .ms-rate-count { font-size: 12px; color: #0b4f8a; }
+.skin-megastore .ms-blurb { margin: 0 0 8px; }
+.skin-megastore .ms-bullets { margin: 0 0 8px; padding-left: 20px; }
+.skin-megastore .ms-bullet { margin-bottom: 3px; }
+.skin-megastore .ms-viewing {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a3b00;
+  margin: 0 0 10px;
+}
+
+/* ---------- the buy box ---------- */
+
+.skin-megastore .ms-buy {
+  border: 2px solid #e0a020;
+  border-radius: 6px;
+  background: #fff8e6;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+.skin-megastore .ms-buy-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #14161a;
+  margin: 0 0 3px;
+}
+.skin-megastore .ms-buy-was { font-size: 12px; color: #6a5320; margin: 0 0 6px; }
+.skin-megastore .ms-buy-ship { font-size: 12px; font-weight: 700; color: #0a5c6e; margin: 0 0 6px; }
+
+.skin-megastore .ms-stock { font-size: 13px; color: #1c5c28; margin: 0 0 8px; font-weight: 600; }
+.skin-megastore .ms-stock.low { color: #9b2000; }
+
+.skin-megastore .ms-buy-btn,
+.skin-megastore .ms-buy-btn2 {
+  display: block;
+  text-align: center;
+  border-radius: 16px;
+  padding: 8px 10px;
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.skin-megastore .ms-buy-btn {
+  background: #f7cb52;
+  border: 1px solid #b08010;
+  color: #221803;
+}
+.skin-megastore .ms-buy-btn2 {
+  background: #f09a1f;
+  border: 1px solid #94600a;
+  color: #221803;
+}
+.skin-megastore .ms-buy-small { font-size: 11px; color: #55606b; margin: 6px 0 0; }
+
+/* ---------- reviews ---------- */
+
+.skin-megastore .ms-revsec { border-top: 1px solid #d3d8dd; padding-top: 10px; }
+
+.skin-megastore .ms-review {
+  border-bottom: 1px solid #e6e9ec;
+  padding: 9px 0;
+}
+.skin-megastore .ms-rev-who { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 4px; }
+.skin-megastore .ms-rev-av svg { display: block; width: 22px; height: 22px; border-radius: 50%; }
+.skin-megastore .ms-rev-name { font-size: 12px; font-weight: 600; color: #3c434b; }
+.skin-megastore .ms-rev-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 3px; }
+.skin-megastore .ms-rev-title { font-weight: 700; font-size: 13px; }
+.skin-megastore .ms-rev-meta { font-size: 11px; color: #55606b; margin: 0 0 5px; }
+.skin-megastore .ms-verified { color: #9b2000; font-weight: 700; margin-left: 6px; }
+.skin-megastore .ms-rev-body { margin: 0 0 5px; }
+.skin-megastore .ms-rev-body p { margin: 0 0 5px; }
+.skin-megastore .ms-rev-help { font-size: 11px; color: #55606b; margin: 0; }
+
+/* ---------- ads ---------- */
+
+.skin-megastore .ms-adslot {
+  margin: 12px 0;
+  border: 1px dashed #c3a468;
+  background: #fffdf6;
+  padding: 6px;
+  overflow: hidden;
+}
+.skin-megastore .ms-adslot-box { max-width: 320px; }
+.skin-megastore .ms-adslot img,
+.skin-megastore .ms-adslot svg { max-width: 100%; height: auto; }
+
+/* ---------- 404 ---------- */
+
+.skin-megastore .ms-404 { padding: 16px 0; }
+.skin-megastore .ms-404-p { color: #3c434b; margin: 0 0 10px; }
+.skin-megastore .ms-404-link { font-weight: 700; }
+
+/* ---------- footer ---------- */
+
+.skin-megastore .ms-foot {
+  background: #10161d;
+  color: #e4e7eb;
+  padding: 12px 10px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+.skin-megastore .ms-foot a { color: #ffd35c; }
+.skin-megastore .ms-foot-line { margin: 0 0 5px; font-weight: 600; }
+.skin-megastore .ms-foot-small { margin: 0 0 6px; color: #b9c0c8; font-size: 11px; }
+.skin-megastore .ms-foot-links { margin: 0; word-break: break-word; }
+.skin-megastore .ms-foot-dot { color: #7f8892; }
+
+/* ---------- wider viewports ---------- */
+
+@media (min-width: 640px) {
+  .skin-megastore .ms-body { padding: 14px 16px; }
+  .skin-megastore .ms-layout {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .skin-megastore .ms-pdp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+}
+
+@media (min-width: 900px) {
+  .skin-megastore .ms-pdp {
+    grid-template-columns: 300px 1fr 240px;
+  }
+  .skin-megastore .ms-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+}

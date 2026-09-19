@@ -1,0 +1,1520 @@
+{
+  "schema": 1,
+  "domain": "shopwell.store",
+  "title": "ShopWell — Everything, Somehow, By Tomorrow",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "A marketplace with eleven million listings and about four hundred actual products. Prices move while you look at them. Every review is five stars and none of them are about the thing you are buying.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "classifieds.verity.net",
+    "mail.verity.net"
+  ],
+  "data": {
+    "storeName": "ShopWell",
+    "categories": [
+      {
+        "id": "c-tech",
+        "name": "Home & Tech"
+      },
+      {
+        "id": "c-kitchen",
+        "name": "Kitchen & Small Appliance"
+      },
+      {
+        "id": "c-well",
+        "name": "Wellness & Supplements"
+      },
+      {
+        "id": "c-outdoor",
+        "name": "Outdoor, Yard & Weather"
+      },
+      {
+        "id": "c-verity",
+        "name": "Verity County Official Heritage Merchandise"
+      },
+      {
+        "id": "c-pet",
+        "name": "Pet Corner"
+      }
+    ],
+    "products": [
+      {
+        "id": "p-101",
+        "catId": "c-tech",
+        "name": "GLIMWORTH 9-in-1 Smart Home Hub Pro Max (2026 Edition) (Black) (Works With Most)",
+        "price": 27.99,
+        "was": 189.99,
+        "rating": 4.8,
+        "reviewCount": 41283,
+        "blurb": "[b]ONLY 4 LEFT AT THIS PRICE — 41 people are viewing this item[/b]\n\nControl your whole home from one app. Or from the other app. The hub supports most standards and some of the other ones. Setup takes under nine minutes for most households.\n\nDiscussed on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], where opinions vary.",
+        "bullets": [
+          "9 functions in 1 device, including at least 4 that work",
+          "Companion app requires an account, a phone number and a reason",
+          "Firmware updates arrive weekly whether you want them or not",
+          "Compatible with: most",
+          "Ships from a warehouse, eventually"
+        ],
+        "imgSeed": "glimworth-hub-9",
+        "seller": "GLIMWORTH-DIRECT-US",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 8831",
+            "stars": 5,
+            "at": "2026-09-16T11:04:00Z",
+            "title": "Excellent product, exceeded my expectations!!",
+            "body": "This product is excellent. The quality is excellent and the price is excellent. My wife loves it. Shipping was fast. Would recommend to anyone looking for a product like this. Five stars!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "D. Marchetti",
+            "stars": 5,
+            "at": "2026-09-15T22:47:00Z",
+            "title": "Great for my truck",
+            "body": "Fits perfectly in my truck. The colour is nice. Very sturdy. I will be buying another one for my son.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "ShopWell Customer",
+            "stars": 5,
+            "at": "2026-09-14T06:12:00Z",
+            "title": "五星好评 five star good product",
+            "body": "Good product arrived quickly good seller good communication good price. Recommend.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "hal_ashkettle",
+            "stars": 3,
+            "at": "2026-08-30T19:20:00Z",
+            "title": "It does about three of the nine things",
+            "body": "It turns lights on. It turns lights off. It tells me the temperature of a room I do not have. The app wanted my address before it would do any of that.\n\nFor thirty dollars I am not going to make a fuss about it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-102",
+          "p-103",
+          "p-107"
+        ]
+      },
+      {
+        "id": "p-102",
+        "catId": "c-tech",
+        "name": "ZENTOPIA Ultra-Fast 240W Charging Cable, 6ft, Braided, Lifetime Warranty*",
+        "price": 6.49,
+        "was": 39.99,
+        "rating": 4.9,
+        "reviewCount": 88401,
+        "blurb": "[b]LIGHTNING DEAL — ends in 00:14:52[/b]\n\nCharges devices at up to 240W under laboratory conditions that have never been reproduced. Braided nylon exterior. Lifetime warranty covers the lifetime of the cable, which the seller determines.",
+        "bullets": [
+          "240W maximum theoretical throughput",
+          "Braided (partially)",
+          "Lifetime* warranty (*90 days)",
+          "Three colours available, one of which ships"
+        ],
+        "imgSeed": "zentopia-cable-240",
+        "seller": "ZENTOPIA Global Trading",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2290",
+            "stars": 5,
+            "at": "2026-09-17T03:31:00Z",
+            "title": "Perfect!!!",
+            "body": "Perfect. Exactly as described. Fast shipping. Five stars. My daughter uses it every day for her school work and she loves it.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "R. Ollinger",
+            "stars": 5,
+            "at": "2026-09-17T03:33:00Z",
+            "title": "Perfect!!",
+            "body": "Perfect. Exactly as described. Fast shipping. Five stars. My daughter uses it every day for her school work and she loves it.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "BEST-DEALS-ALERT",
+            "stars": 5,
+            "at": "2026-09-12T14:00:00Z",
+            "title": "CHEAPER ELSEWHERE CLICK HERE",
+            "body": "Do not buy at this price!! Same item 70% off at [url=synth://shopwell-outlet-deals.verify-now.top/cable]shopwell-outlet-deals[/url] limited time only!!",
+            "verified": false,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-101",
+          "p-104",
+          "p-106"
+        ]
+      },
+      {
+        "id": "p-103",
+        "catId": "c-tech",
+        "name": "HUOQIN Noise Cancelling Headphones — Studio Grade — As Seen On Pulse",
+        "price": 18.99,
+        "was": 249.0,
+        "rating": 4.7,
+        "reviewCount": 33907,
+        "blurb": "Studio grade audio at a price that reflects a different grade. Active noise cancellation reduces ambient noise by up to 32dB in a room with no ambient noise.\n\n[i]Trending on [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url] for six straight weeks.[/i]",
+        "bullets": [
+          "Up to 40 hours battery, measured while off",
+          "Foldable, once",
+          "Includes carry pouch",
+          "Bluetooth 5.x"
+        ],
+        "imgSeed": "huoqin-cans-studio",
+        "seller": "HUOQIN-US-STORE",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7714",
+            "stars": 5,
+            "at": "2026-09-18T09:02:00Z",
+            "title": "Sound quality is amazing for the price",
+            "body": "Sound quality is amazing for the price. Bass is deep. Highs are crisp. I use them for work calls and for the gym. Battery lasts all day. Highly recommend for anyone in the market.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7715",
+            "stars": 5,
+            "at": "2026-09-18T09:04:00Z",
+            "title": "Sound quality is amazing for the price",
+            "body": "Sound quality is amazing for the price. Bass is deep. Highs are crisp. I use them for work calls and for the gym. Battery lasts all day. Highly recommend for anyone in the market for a quality headphone at a reasonable price point.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-101",
+          "p-105",
+          "p-102"
+        ]
+      },
+      {
+        "id": "p-104",
+        "catId": "c-tech",
+        "name": "Doorbell Camera with AI Person Detection (Subscription Required After 14 Days)",
+        "price": 31.0,
+        "was": 129.0,
+        "rating": 4.6,
+        "reviewCount": 21455,
+        "blurb": "[b]45 SOLD IN THE LAST HOUR[/b]\n\nKnows the difference between a person, a cat and a paper bag roughly two thirds of the time. Notifications arrive between four and ninety seconds after the event.\n\nCloud storage requires the Shield tier. The Shield tier requires an annual commitment. The annual commitment requires a card on file.",
+        "bullets": [
+          "AI person detection (cloud, subscription)",
+          "1080p, upscaled from something less",
+          "Two-way talk with a 1.5 second delay",
+          "Wire-free, except for the charging cable",
+          "Footage retained for 3 days on the free tier, 0 days after the free tier ends"
+        ],
+        "imgSeed": "doorbell-ai-cam",
+        "seller": "SafeHaven Home Security (ShopWell Partner)",
+        "sellerKind": "sponsored",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1180",
+            "stars": 5,
+            "at": "2026-09-13T17:41:00Z",
+            "title": "Feel so much safer now",
+            "body": "I feel so much safer now that I have this installed. Easy setup, took ten minutes. The picture is clear day and night. Great value for money. Would buy again.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "NeighbourWatch Verity",
+            "stars": 5,
+            "at": "2026-09-11T08:15:00Z",
+            "title": "Essential in today's climate",
+            "body": "Crime is up 400% in Gridfall according to statistics. Everyone on my street has one now. Protect what matters.",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "m_t_reyes",
+            "stars": 2,
+            "at": "2026-08-19T20:55:00Z",
+            "title": "It films the road, not the door",
+            "body": "Mounted it where the old bell was. It watches the street. Every car that passes wakes my phone.\n\nI turned the alerts off and now it is a doorbell.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-102",
+          "p-108",
+          "p-119"
+        ]
+      },
+      {
+        "id": "p-105",
+        "catId": "c-tech",
+        "name": "Portable Power Station 300W — Outage Ready — Gridfall Winter Bundle",
+        "price": 94.5,
+        "was": 399.0,
+        "rating": 4.8,
+        "reviewCount": 12903,
+        "blurb": "[b]WINTER IS 94 DAYS AWAY. ARE YOU READY?[/b]\n\nKeeps a fridge running for approximately as long as the fridge takes to warm up. Bundle includes one cable and one card with a QR code on it.\n\nSee also the outage history on [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url].",
+        "bullets": [
+          "300W continuous, 600W peak, 900W in the photograph",
+          "Recharges in 6-9 hours from wall",
+          "LED torch built in",
+          "Weighs more than the listing says"
+        ],
+        "imgSeed": "powerstation-300",
+        "seller": "GLIMWORTH-DIRECT-US",
+        "sellerKind": "bot",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4402",
+            "stars": 5,
+            "at": "2026-09-10T12:20:00Z",
+            "title": "Lifesaver during the storm",
+            "body": "Lifesaver during the storm last week. Kept our phones and the router going all night. Every household should own one of these. Excellent build quality and the price cannot be beaten.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "PrepperDeals",
+            "stars": 5,
+            "at": "2026-09-09T05:00:00Z",
+            "title": "Grid is failing. Be ready.",
+            "body": "The grid is failing. In 2003 the substation went and people were cold for nine days. It will happen again. Buy two.",
+            "verified": false,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-103",
+          "p-118",
+          "p-116"
+        ]
+      },
+      {
+        "id": "p-106",
+        "catId": "c-kitchen",
+        "name": "7-Blade Vortex Chopper Pro — Chops Anything (Not For Ice)",
+        "price": 11.99,
+        "was": 79.99,
+        "rating": 4.9,
+        "reviewCount": 57310,
+        "blurb": "[b]BEST SELLER #1 IN KITCHEN[/b]\n\nChops onions, carrots, garlic, herbs, nuts and your afternoon. Seven blades, one of which is sharp. Dishwasher safe on the top rack only, and not really.",
+        "bullets": [
+          "7 stainless-look blades",
+          "One-hand operation (two hands)",
+          "Not for ice, bones, hard cheese, or repeated use",
+          "Hand wash recommended after the first dishwasher cycle"
+        ],
+        "imgSeed": "vortex-chopper-7",
+        "seller": "KitchenVista Home",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 9903",
+            "stars": 5,
+            "at": "2026-09-18T15:12:00Z",
+            "title": "Saves me so much time in the kitchen!!",
+            "body": "Saves me so much time in the kitchen!! I use it every single day. Chops everything perfectly. Easy to clean. My mother-in-law asked where I got it. Excellent product excellent price.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 9904",
+            "stars": 5,
+            "at": "2026-09-18T15:14:00Z",
+            "title": "Saves me so much time in the kitchen!!",
+            "body": "Saves me so much time in the kitchen!! I use it every single day. Chops everything perfectly. Easy to clean. My mother-in-law asked where I got it. Excellent product excellent price.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 9905",
+            "stars": 5,
+            "at": "2026-09-18T15:16:00Z",
+            "title": "Saves me so much time in the kitchen!!",
+            "body": "Saves me so much time in the kitchen!! I use it every single day. Chops everything perfectly. Easy to clean. My son-in-law asked where I got it. Excellent product excellent price.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-107",
+          "p-109",
+          "p-102"
+        ]
+      },
+      {
+        "id": "p-107",
+        "catId": "c-kitchen",
+        "name": "Air Fryer 5.5L Digital Touch — 12 Presets — Basket Coating May Vary",
+        "price": 39.0,
+        "was": 159.0,
+        "rating": 4.7,
+        "reviewCount": 64822,
+        "blurb": "Twelve presets. Four of them are the same temperature. The basket coating is described as non-stick and behaves as a suggestion.\n\n[b]PRICE INCREASED 3 TIMES TODAY — BUY NOW[/b]",
+        "bullets": [
+          "5.5L capacity (4.1L usable)",
+          "12 presets, 3 distinct outcomes",
+          "Digital touch panel, beeps at 4am after a power cut",
+          "Recipe card included in a language chosen at random"
+        ],
+        "imgSeed": "airfryer-55-digital",
+        "seller": "KitchenVista Home",
+        "sellerKind": "promoted",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 3321",
+            "stars": 5,
+            "at": "2026-09-17T18:30:00Z",
+            "title": "Best purchase of the year",
+            "body": "Best purchase of the year! Cooks chips perfectly every time. The family loves it. We use it more than the oven now. Cannot fault it for the money.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3322",
+            "stars": 5,
+            "at": "2026-09-16T18:33:00Z",
+            "title": "Best purchase of the year",
+            "body": "Best purchase of the year! Cooks chicken perfectly every time. The family loves it. We use it more than the oven now. Cannot fault it for the money.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "p_nowak",
+            "stars": 4,
+            "at": "2026-07-02T11:10:00Z",
+            "title": "Fine. Loud.",
+            "body": "It cooks food. It is louder than my old microwave and the coating came off the basket after two months, so I use a liner now.\n\nFor thirty-nine dollars, fine.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-106",
+          "p-110",
+          "p-101"
+        ]
+      },
+      {
+        "id": "p-108",
+        "catId": "c-kitchen",
+        "name": "Stainless Steel Knife Block Set, 14 Piece, Restaurant Quality",
+        "price": 24.99,
+        "was": 199.99,
+        "rating": 4.8,
+        "reviewCount": 19240,
+        "blurb": "Fourteen pieces, of which eleven are knives, two are scissors that are one scissors, and one is the block.\n\nRestaurant quality refers to the restaurants that closed.",
+        "bullets": [
+          "14 pieces including block",
+          "Stainless steel look",
+          "Sharpener built into the block (decorative)",
+          "Hand wash only"
+        ],
+        "imgSeed": "knifeblock-14pc",
+        "seller": "ZENTOPIA Global Trading",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 6612",
+            "stars": 5,
+            "at": "2026-09-15T13:00:00Z",
+            "title": "Looks beautiful on the counter",
+            "body": "Looks beautiful on the counter. Very sharp out of the box. Great gift idea. My wife loves it. Fast delivery. Excellent seller communication.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 6613",
+            "stars": 5,
+            "at": "2026-09-14T13:02:00Z",
+            "title": "Looks beautiful on the counter",
+            "body": "Looks beautiful on the counter. Very sharp out of the box. Great gift idea. My husband loves it. Fast delivery. Excellent seller communication.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-106",
+          "p-107",
+          "p-104"
+        ]
+      },
+      {
+        "id": "p-109",
+        "catId": "c-kitchen",
+        "name": "Vacuum Sealer Starter Kit + 50 Bags — Keep Food Fresh 5x Longer",
+        "price": 29.95,
+        "was": 119.95,
+        "rating": 4.6,
+        "reviewCount": 8801,
+        "blurb": "Keeps food fresh five times longer, where one time is a number the seller has not defined. Bags are proprietary and sold by the same seller at a price that increases when you run out.",
+        "bullets": [
+          "50 bags included",
+          "Bags are proprietary width",
+          "Pulse mode for delicate items",
+          "Motor rated for 20 seals per hour"
+        ],
+        "imgSeed": "vacsealer-kit50",
+        "seller": "FreshLock Direct",
+        "sellerKind": "bot",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5510",
+            "stars": 5,
+            "at": "2026-09-08T10:44:00Z",
+            "title": "Game changer for meal prep",
+            "body": "Game changer for meal prep. I buy in bulk now and nothing goes to waste. Strong seal every time. Highly recommended to anyone with a freezer.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "BAGS-CHEAPER-HERE",
+            "stars": 5,
+            "at": "2026-09-06T02:11:00Z",
+            "title": "Save 80% on refill bags",
+            "body": "Official bags overpriced!! Get 500 bags for $9 at [url=synth://freshlock-refills.bag-outlet.click/]freshlock-refills[/url] fits all models guaranteed.",
+            "verified": false,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-106",
+          "p-110",
+          "p-112"
+        ]
+      },
+      {
+        "id": "p-110",
+        "catId": "c-kitchen",
+        "name": "Ceramic Non-Stick Frying Pan 28cm — PFOA Free — Induction Compatible*",
+        "price": 16.75,
+        "was": 89.0,
+        "rating": 4.9,
+        "reviewCount": 45118,
+        "blurb": "[b]ONLY 2 LEFT — 63 people have this in their basket[/b]\n\nNon-stick for a period. Induction compatible where the asterisk means the hob may not recognise it.",
+        "bullets": [
+          "28cm, measured to the outer lip",
+          "PFOA free, other letters unspecified",
+          "Oven safe to 180C, handle not included in that figure",
+          "Metal utensils not recommended, or permitted, or survivable"
+        ],
+        "imgSeed": "ceramic-pan-28",
+        "seller": "KitchenVista Home",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2241",
+            "stars": 5,
+            "at": "2026-09-12T07:50:00Z",
+            "title": "Eggs slide right off",
+            "body": "Eggs slide right off! No oil needed at all. Cleans with a paper towel. Feels premium and heavy. Best pan I have ever owned and I have owned many pans.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 2242",
+            "stars": 5,
+            "at": "2026-09-12T07:52:00Z",
+            "title": "Eggs slide right off",
+            "body": "Eggs slide right off! No oil needed at all. Cleans with a paper towel. Feels premium and heavy. Best pan I have ever owned and I have owned several pans.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-107",
+          "p-106",
+          "p-109"
+        ]
+      },
+      {
+        "id": "p-111",
+        "catId": "c-well",
+        "name": "MITOCHARGE Cellular Energy Complex — 90 Capsules — Doctor Formulated*",
+        "price": 48.0,
+        "was": 120.0,
+        "rating": 4.9,
+        "reviewCount": 40217,
+        "blurb": "[b]STOCK CRITICAL — reformulation pending[/b]\n\nSupports cellular energy, mental clarity, metabolic wellness and general vibe. *Formulated with reference to a doctor.\n\nThese statements have not been evaluated by anybody with the authority to evaluate them.",
+        "bullets": [
+          "90 capsules, 30 day supply at 3 per day",
+          "Proprietary blend (contents proprietary)",
+          "Non-GMO, gluten free, evidence free",
+          "Subscribe & Save enrols automatically"
+        ],
+        "imgSeed": "mitocharge-90",
+        "seller": "VITAL AXIS WELLNESS",
+        "sellerKind": "promoted",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7790",
+            "stars": 5,
+            "at": "2026-09-18T06:00:00Z",
+            "title": "I have my life back",
+            "body": "I have my life back. After two weeks my energy levels are through the roof. I wake up before my alarm. My doctor was amazed. Cannot recommend this enough to anyone struggling with fatigue.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7791",
+            "stars": 5,
+            "at": "2026-09-18T06:03:00Z",
+            "title": "I have my energy back",
+            "body": "I have my energy back. After three weeks my energy levels are through the roof. I wake up before my alarm. My doctor was amazed. Cannot recommend this enough to anyone struggling with tiredness.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "WellnessInsider2026",
+            "stars": 5,
+            "at": "2026-09-17T23:41:00Z",
+            "title": "The industry does not want you to know",
+            "body": "Big pharma does not want you to know about this. Read the full report at [url=synth://mitocharge-truth-report.health-facts.top/]mitocharge-truth-report[/url] before it is taken down.",
+            "verified": false,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-112",
+          "p-113",
+          "p-115"
+        ]
+      },
+      {
+        "id": "p-112",
+        "catId": "c-well",
+        "name": "Magnesium Sleep Gummies — Berry — 60ct — As Recommended By People Online",
+        "price": 21.5,
+        "was": 44.99,
+        "rating": 4.8,
+        "reviewCount": 31006,
+        "blurb": "Sleep gummies. Berry flavour, where berry is a direction rather than a fruit. Two gummies thirty minutes before bed, or four, the label is unclear.",
+        "bullets": [
+          "60 gummies per jar",
+          "Contains magnesium, in some amount",
+          "Berry flavour (red)",
+          "Keep out of reach of children, who will find them"
+        ],
+        "imgSeed": "mag-gummies-60",
+        "seller": "VITAL AXIS WELLNESS",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4419",
+            "stars": 5,
+            "at": "2026-09-16T21:15:00Z",
+            "title": "Sleeping like a baby",
+            "body": "Sleeping like a baby for the first time in years. No grogginess in the morning. Taste great too. My whole family takes them now including my teenager.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 4420",
+            "stars": 5,
+            "at": "2026-09-16T21:19:00Z",
+            "title": "Sleeping like a baby",
+            "body": "Sleeping like a baby for the first time in years. No grogginess in the morning. Taste great too. My whole family takes them now including my husband.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-111",
+          "p-113",
+          "p-114"
+        ]
+      },
+      {
+        "id": "p-113",
+        "catId": "c-well",
+        "name": "Red Light Therapy Panel, Handheld, 12 LED, Clinical Wavelength Range",
+        "price": 59.99,
+        "was": 249.99,
+        "rating": 4.7,
+        "reviewCount": 9044,
+        "blurb": "Twelve LEDs in the clinical wavelength range, which is a range containing the clinical wavelength and also most other red light.\n\n[b]73 SOLD TODAY. DO NOT MISS OUT.[/b]",
+        "bullets": [
+          "12 LEDs",
+          "Rechargeable, cable not included",
+          "10 minute session timer",
+          "Eye protection sold separately"
+        ],
+        "imgSeed": "redlight-panel-12",
+        "seller": "LUMEN RESTORE LAB",
+        "sellerKind": "sponsored",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1102",
+            "stars": 5,
+            "at": "2026-09-14T16:20:00Z",
+            "title": "Skin has never looked better",
+            "body": "My skin has never looked better. Ten minutes a day and the difference is visible. Friends keep asking what I changed. Worth every penny for the results.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 1103",
+            "stars": 5,
+            "at": "2026-09-13T16:22:00Z",
+            "title": "My joints feel better",
+            "body": "My joints have never felt better. Ten minutes a day and the difference is noticeable. Colleagues keep asking what I changed. Worth every penny for the results.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-111",
+          "p-112",
+          "p-115"
+        ]
+      },
+      {
+        "id": "p-114",
+        "catId": "c-well",
+        "name": "Posture Corrector Brace — Unisex — One Size Fits Most Adults Approximately",
+        "price": 13.4,
+        "was": 69.0,
+        "rating": 4.6,
+        "reviewCount": 26773,
+        "blurb": "Pulls the shoulders back. Wear for fifteen minutes, then twenty, then never again because it lives in the drawer with the resistance bands.",
+        "bullets": [
+          "Adjustable straps",
+          "Breathable fabric (claim)",
+          "Wear over or under clothing, visibly either way",
+          "One size fits most adults approximately"
+        ],
+        "imgSeed": "posture-brace-uni",
+        "seller": "ZENTOPIA Global Trading",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 8080",
+            "stars": 5,
+            "at": "2026-09-11T09:30:00Z",
+            "title": "Back pain gone in 3 days",
+            "body": "Back pain gone in 3 days after years of suffering. I sit at a desk all day and this has changed everything. Comfortable under a shirt. Buy it you will not regret it.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 8081",
+            "stars": 5,
+            "at": "2026-09-11T09:34:00Z",
+            "title": "Neck pain gone in 4 days",
+            "body": "Neck pain gone in 4 days after years of suffering. I sit at a desk all day and this has changed everything. Comfortable under a shirt. Buy it you will not regret it.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-112",
+          "p-111",
+          "p-117"
+        ]
+      },
+      {
+        "id": "p-115",
+        "catId": "c-well",
+        "name": "Electrolyte Hydration Sticks, 30 Pack, Unflavoured Flavour",
+        "price": 27.0,
+        "was": 54.0,
+        "rating": 4.8,
+        "reviewCount": 18332,
+        "blurb": "Thirty sticks of electrolyte powder. The unflavoured flavour has a flavour. Recommended by three athletes who have never been named.",
+        "bullets": [
+          "30 single-serve sticks",
+          "Sodium-forward formula",
+          "Zero sugar, some sweetener",
+          "Dissolves in 500ml in about a minute, mostly"
+        ],
+        "imgSeed": "electrolyte-30",
+        "seller": "VITAL AXIS WELLNESS",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 3390",
+            "stars": 5,
+            "at": "2026-09-09T12:12:00Z",
+            "title": "Hydration solved",
+            "body": "Hydration solved. I take one every morning and I feel sharper all day. Great for the gym and for hot days. Mixes clear with no residue whatsoever.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3391",
+            "stars": 5,
+            "at": "2026-09-09T12:15:00Z",
+            "title": "Hydration solved",
+            "body": "Hydration solved. I take one every afternoon and I feel sharper all day. Great for the gym and for hot days. Mixes clear with almost no residue whatsoever.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-111",
+          "p-113",
+          "p-116"
+        ]
+      },
+      {
+        "id": "p-116",
+        "catId": "c-outdoor",
+        "name": "Solar Path Lights 12 Pack — Weatherproof — Auto On At Dusk",
+        "price": 22.99,
+        "was": 99.99,
+        "rating": 4.7,
+        "reviewCount": 37220,
+        "blurb": "Twelve solar lights. They come on at dusk and go off at approximately dusk plus forty minutes from October onward.\n\n[b]AUTUMN CLEARANCE — 88% OFF — TODAY ONLY (every day)[/b]",
+        "bullets": [
+          "12 lights per pack",
+          "IP44 weatherproof, in a garden without weather",
+          "No wiring required",
+          "Stakes included (brittle)"
+        ],
+        "imgSeed": "solar-path-12",
+        "seller": "YARDGLOW OUTDOOR",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5514",
+            "stars": 5,
+            "at": "2026-09-15T19:00:00Z",
+            "title": "Transformed my driveway",
+            "body": "Transformed my driveway overnight. Bright enough to see the path but not harsh. Neighbours have asked about them twice. Excellent value for twelve lights.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 5515",
+            "stars": 5,
+            "at": "2026-09-15T19:04:00Z",
+            "title": "Transformed my garden",
+            "body": "Transformed my garden overnight. Bright enough to see the path but not harsh. Neighbours have asked about them twice. Excellent value for twelve lights.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-117",
+          "p-105",
+          "p-120"
+        ]
+      },
+      {
+        "id": "p-117",
+        "catId": "c-outdoor",
+        "name": "Cordless Leaf Blower 21V — Battery & Charger Included — Quiet Mode",
+        "price": 44.0,
+        "was": 179.0,
+        "rating": 4.6,
+        "reviewCount": 14508,
+        "blurb": "Twenty-one volts of intent. Quiet mode reduces the noise and also the blowing. Battery included, charger included, second battery mandatory.",
+        "bullets": [
+          "21V battery included",
+          "Runtime 12 minutes on high",
+          "Quiet mode (relative)",
+          "Weighs 2.1kg before the battery"
+        ],
+        "imgSeed": "blower-21v",
+        "seller": "YARDGLOW OUTDOOR",
+        "sellerKind": "bot",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 6001",
+            "stars": 5,
+            "at": "2026-09-14T10:10:00Z",
+            "title": "Clears my whole yard in minutes",
+            "body": "Clears my whole yard in minutes. Light enough for my wife to use. Battery lasts long enough for the job. Great value compared to the big brands.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "j.calder",
+            "stars": 3,
+            "at": "2026-09-02T14:22:00Z",
+            "title": "Twelve minutes is twelve minutes",
+            "body": "Does what it says on high, for twelve minutes, then you wait ninety for the charge. Bought a second battery, which cost more than the blower.\n\nStill better than the rake at my age.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-116",
+          "p-120",
+          "p-105"
+        ]
+      },
+      {
+        "id": "p-118",
+        "catId": "c-verity",
+        "name": "GRIDFALL SUBSTATION FIRE 2003 Commemorative Mug — Heritage Collection — 11oz",
+        "price": 19.99,
+        "was": 34.99,
+        "rating": 4.9,
+        "reviewCount": 11264,
+        "blurb": "[b]VERITY COUNTY OFFICIAL HERITAGE COLLECTION[/b]\n\nCelebrate the rich local history of Gridfall with this ceramic 11oz mug featuring an artistic rendering of the historic 2003 substation event. A conversation starter for any kitchen.\n\nBackground reading: [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] and the contemporaneous coverage on [url=synth://verityledger.com/]verityledger.com[/url].",
+        "bullets": [
+          "11oz ceramic, dishwasher safe",
+          "Artistic rendering based on public photographs",
+          "Part of the Verity County Heritage Collection",
+          "Not affiliated with Verity County, the utility, or anybody who was there"
+        ],
+        "imgSeed": "gridfall-fire-mug",
+        "seller": "Verity Heritage Trading Co (Authorized)",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 9120",
+            "stars": 5,
+            "at": "2026-09-18T08:00:00Z",
+            "title": "Great local gift!",
+            "body": "Great local gift! The colours are vibrant and it holds plenty of coffee. Perfect for anyone with ties to the area. Arrived well packaged and on time.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 9121",
+            "stars": 5,
+            "at": "2026-09-18T08:02:00Z",
+            "title": "Great local gift!",
+            "body": "Great local gift! The colours are vibrant and it holds plenty of tea. Perfect for anyone with ties to the region. Arrived well packaged and on time.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "HeritageFanUSA",
+            "stars": 5,
+            "at": "2026-09-17T04:30:00Z",
+            "title": "Beautiful piece of history",
+            "body": "Beautiful piece of history for the collection. Bought three, one for each of my grandchildren so they remember where they came from.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 9122",
+            "stars": 5,
+            "at": "2026-09-16T08:10:00Z",
+            "title": "Lovely mug, fast shipping",
+            "body": "Lovely mug, fast shipping, seller responsive. Five stars. Would order from this seller again for other heritage items.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ruth Kettleman",
+            "stars": 1,
+            "at": "2026-06-11T21:48:00Z",
+            "title": "My father was on that crew",
+            "body": "My father was on the crew at the substation in March 2003. He was fifty-one. He did not come home and the four men who did have not been right since.\n\nThe picture on this mug is the fire. Somebody has drawn flames coming out of the transformer housing in an orange that is meant to look cheerful. Under it, it says HOT STUFF SINCE 2003.\n\nI have written to the seller twice. The first reply thanked me for my five star review. The second offered me a fifteen percent discount code for my next heritage purchase.\n\nThere are six hundred people in this county who know exactly what that building looked like. None of us are the customer for this. I do not know who is.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-119",
+          "p-121",
+          "p-122"
+        ]
+      },
+      {
+        "id": "p-119",
+        "catId": "c-verity",
+        "name": "VERITY RAIL Branch Line Heritage T-Shirt — Closed 1998 — Vintage Look",
+        "price": 23.5,
+        "was": 45.0,
+        "rating": 4.8,
+        "reviewCount": 7712,
+        "blurb": "Distressed vintage-look tee commemorating the Verity Rail branch line. Printed to order in a facility that has never seen a train.\n\nThe actual line is still discussed daily on [url=synth://forums.verityrail.org/]forums.verityrail.org[/url].",
+        "bullets": [
+          "100% cotton (blend)",
+          "Vintage distressed print",
+          "Sizes S-3XL, running small",
+          "Design generated from public timetable imagery"
+        ],
+        "imgSeed": "verityrail-tee",
+        "seller": "Verity Heritage Trading Co (Authorized)",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2205",
+            "stars": 5,
+            "at": "2026-09-13T11:00:00Z",
+            "title": "Perfect fit and great quality",
+            "body": "Perfect fit and great quality print. Washed twice with no fading. Lots of compliments. Great gift for a rail enthusiast in your life.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 2206",
+            "stars": 5,
+            "at": "2026-09-13T11:02:00Z",
+            "title": "Perfect fit and great print quality",
+            "body": "Perfect fit and great print quality. Washed three times with no fading. Lots of compliments. Great gift for a train enthusiast in your life.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "t_norris_gf",
+            "stars": 2,
+            "at": "2026-05-28T17:05:00Z",
+            "title": "Wrong livery, wrong year",
+            "body": "The livery on this shirt is green. The branch stock was maroon and cream from 1971 until the last run. The number on the front, 4402, was a locomotive on a different railway in a different state.\n\nIt is a comfortable shirt. It is not a Verity Rail shirt.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-118",
+          "p-120",
+          "p-123"
+        ]
+      },
+      {
+        "id": "p-120",
+        "catId": "c-verity",
+        "name": "Blue Kestrel Diner Retro Enamel Sign — Reproduction — 30x20cm",
+        "price": 17.25,
+        "was": 52.0,
+        "rating": 4.9,
+        "reviewCount": 5588,
+        "blurb": "Reproduction enamel-look sign for the beloved Blue Kestrel Diner. The diner closed. The sign did not exist. Both are now available in three sizes.",
+        "bullets": [
+          "30x20cm printed metal",
+          "Pre-drilled holes (2)",
+          "Distressed edges applied digitally",
+          "Reproduction of an original that has not been located"
+        ],
+        "imgSeed": "bluekestrel-sign",
+        "seller": "Verity Heritage Trading Co (Authorized)",
+        "sellerKind": "promoted",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4471",
+            "stars": 5,
+            "at": "2026-09-10T15:00:00Z",
+            "title": "Looks great in my kitchen",
+            "body": "Looks great in my kitchen! Exactly like the photo. Sturdy metal not flimsy at all. Bought a second one for my garage. Great nostalgic piece.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 4472",
+            "stars": 5,
+            "at": "2026-09-10T15:03:00Z",
+            "title": "Looks great in my diner-themed kitchen",
+            "body": "Looks great in my diner-themed kitchen! Exactly like the photo. Sturdy metal not flimsy at all. Bought a second one for my garage. Great nostalgic piece.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-118",
+          "p-119",
+          "p-121"
+        ]
+      },
+      {
+        "id": "p-121",
+        "catId": "c-verity",
+        "name": "THE SIGNAL ON 62 — Numbers Station Mystery Hoodie — Coordinates Print",
+        "price": 41.0,
+        "was": 89.0,
+        "rating": 4.8,
+        "reviewCount": 9930,
+        "blurb": "Heavyweight hoodie printed with a sequence of numbers described as the original transmission. The sequence was generated in 2024 by a listing tool.\n\nClips of the actual broadcasts are archived on [url=synth://clipvault.tv/]clipvault.tv[/url].",
+        "bullets": [
+          "Heavyweight 320gsm (280gsm)",
+          "Front coordinates print, back number block",
+          "Unisex sizing",
+          "Numbers are decorative and mean nothing"
+        ],
+        "imgSeed": "signal62-hoodie",
+        "seller": "MYSTERYWEAR PRINTS",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7001",
+            "stars": 5,
+            "at": "2026-09-16T13:00:00Z",
+            "title": "So warm and the design is unique",
+            "body": "So warm and the design is unique. Nobody else has one. Got asked about it twice on the first day. Quality is much better than expected for the price.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7002",
+            "stars": 5,
+            "at": "2026-09-16T13:05:00Z",
+            "title": "So cosy and the design is unique",
+            "body": "So cosy and the design is unique. Nobody else has one. Got asked about it twice on the first day. Quality is much better than expected for the price.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-118",
+          "p-122",
+          "p-119"
+        ]
+      },
+      {
+        "id": "p-122",
+        "catId": "c-verity",
+        "name": "Ashkettle Founders Day Tote Bag — Official Souvenir — 2026 Design",
+        "price": 12.0,
+        "was": 28.0,
+        "rating": 4.7,
+        "reviewCount": 3204,
+        "blurb": "Official souvenir tote for Ashkettle Founders Day, an event that was cancelled in 2019 and has been merchandised annually since.\n\n[b]ONLY 6 LEFT IN STOCK — ORDER SOON[/b]",
+        "bullets": [
+          "Cotton canvas tote, 38x42cm",
+          "Long handles",
+          "2026 design refreshed automatically each January",
+          "Official in the sense that the seller says so"
+        ],
+        "imgSeed": "ashkettle-tote",
+        "seller": "Verity Heritage Trading Co (Authorized)",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1919",
+            "stars": 5,
+            "at": "2026-09-05T09:00:00Z",
+            "title": "Strong and roomy",
+            "body": "Strong and roomy, holds a full grocery shop with no strain. The print is crisp. Great souvenir of a lovely town. Would buy again for gifts.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 1920",
+            "stars": 5,
+            "at": "2026-09-05T09:04:00Z",
+            "title": "Strong and spacious",
+            "body": "Strong and spacious, holds a full grocery shop with no strain. The print is crisp. Great souvenir of a beautiful town. Would buy again for gifts.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-120",
+          "p-118",
+          "p-123"
+        ]
+      },
+      {
+        "id": "p-123",
+        "catId": "c-verity",
+        "name": "Verity County Map Print — Seven Towns — Museum Quality Archival Paper",
+        "price": 34.0,
+        "was": 95.0,
+        "rating": 4.9,
+        "reviewCount": 4460,
+        "blurb": "Museum quality archival print of Verity County showing all seven towns. Two of the town names are misspelled and one river has been invented by the generator.\n\nCorrections welcome on [url=synth://wiki.gridfall.net/]the wiki[/url], where they have been logged since March.",
+        "bullets": [
+          "A2 archival paper, 200gsm",
+          "Unframed",
+          "Seven towns labelled (six correctly)",
+          "Fade resistant for 80 years"
+        ],
+        "imgSeed": "verity-map-print",
+        "seller": "CARTO PRINTS GLOBAL",
+        "sellerKind": "bot",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 8812",
+            "stars": 5,
+            "at": "2026-09-07T18:00:00Z",
+            "title": "Beautiful print, arrived flat",
+            "body": "Beautiful print, arrived flat and undamaged in a rigid mailer. The detail is stunning. Framed it the same day. Perfect gift for anyone from the area.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "marla_v",
+            "stars": 3,
+            "at": "2026-04-16T10:25:00Z",
+            "title": "Nice paper. Coyne Flats is spelled Coyne Flatts.",
+            "body": "The paper is genuinely lovely and it framed up well.\n\nCoyne Flats has two t's on this map. Milbrook is Millbrook. And there is a river running north of Halsey that has never been there in my lifetime.\n\nI kept it anyway. My mother is from Halsey and she laughed for a long time about the river.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-118",
+          "p-119",
+          "p-122"
+        ]
+      },
+      {
+        "id": "p-124",
+        "catId": "c-pet",
+        "name": "Self-Cleaning Cat Litter Box — App Connected — Health Monitoring",
+        "price": 129.0,
+        "was": 499.0,
+        "rating": 4.6,
+        "reviewCount": 6612,
+        "blurb": "Cleans itself, reports to an app, and emails you a weekly health summary about your cat that your cat has not consented to.\n\n[b]PRICE DROPS AGAIN IN 00:02:11[/b]",
+        "bullets": [
+          "App connected (account required)",
+          "Weight and frequency tracking",
+          "Health insights are not veterinary advice",
+          "Proprietary liner cartridges"
+        ],
+        "imgSeed": "litterbox-smart",
+        "seller": "PURRTECH SYSTEMS",
+        "sellerKind": "sponsored",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 3303",
+            "stars": 5,
+            "at": "2026-09-12T20:00:00Z",
+            "title": "Never scooping again",
+            "body": "Never scooping again! Worth every cent. The app is easy to use and the cat took to it immediately. Odour is completely gone from the house.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3304",
+            "stars": 5,
+            "at": "2026-09-12T20:06:00Z",
+            "title": "Never scooping again",
+            "body": "Never scooping again! Worth every cent. The app is simple to use and both cats took to it immediately. Odour is completely gone from the house.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-125",
+          "p-126",
+          "p-104"
+        ]
+      },
+      {
+        "id": "p-125",
+        "catId": "c-pet",
+        "name": "Dog Chew Toy Indestructible — Guaranteed For Life — Assorted Colours",
+        "price": 9.99,
+        "was": 39.99,
+        "rating": 4.8,
+        "reviewCount": 52014,
+        "blurb": "Indestructible. Guaranteed for life. The guarantee is administered by a form that returns an error on submission.",
+        "bullets": [
+          "Natural rubber compound",
+          "Indestructible for most chewers",
+          "Assorted colours, chosen for you",
+          "Lifetime guarantee via online claim portal"
+        ],
+        "imgSeed": "dogtoy-indestruct",
+        "seller": "PAWVANTA SUPPLY",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 6700",
+            "stars": 5,
+            "at": "2026-09-17T07:00:00Z",
+            "title": "Finally something my dog cannot destroy",
+            "body": "Finally something my dog cannot destroy! Six weeks in and it looks brand new. He plays with it every day. Great value and fast shipping as always.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 6701",
+            "stars": 5,
+            "at": "2026-09-17T07:04:00Z",
+            "title": "Finally something my puppy cannot destroy",
+            "body": "Finally something my puppy cannot destroy! Six weeks in and it looks brand new. She plays with it every day. Great value and fast shipping as always.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "CLAIM-YOUR-REFUND",
+            "stars": 5,
+            "at": "2026-09-04T01:20:00Z",
+            "title": "Refund portal is here",
+            "body": "Warranty claims now processed at [url=synth://pawvanta-warranty-claims.secure-refund.top/]pawvanta-warranty-claims[/url] have your card details ready for verification only.",
+            "verified": false,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-124",
+          "p-126",
+          "p-127"
+        ]
+      },
+      {
+        "id": "p-126",
+        "catId": "c-pet",
+        "name": "GPS Pet Tracker Collar — No Monthly Fee* — Waterproof — Real Time",
+        "price": 36.5,
+        "was": 149.0,
+        "rating": 4.5,
+        "reviewCount": 10441,
+        "blurb": "Real time location tracking with no monthly fee*. *The device requires a data plan sold separately by the same company under a different name.",
+        "bullets": [
+          "Real time (30-120 second refresh)",
+          "Waterproof to splash level",
+          "Battery 5 days, or 9 hours with tracking on",
+          "No monthly fee* (data plan required)"
+        ],
+        "imgSeed": "pet-gps-collar",
+        "seller": "PURRTECH SYSTEMS",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7440",
+            "stars": 5,
+            "at": "2026-09-08T16:00:00Z",
+            "title": "Found my dog in 20 minutes",
+            "body": "Found my dog in 20 minutes after he got out. This device paid for itself on day one. Every pet owner should have one. Setup was simple and quick.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7441",
+            "stars": 5,
+            "at": "2026-09-08T16:05:00Z",
+            "title": "Found my cat in 25 minutes",
+            "body": "Found my cat in 25 minutes after she got out. This device paid for itself on day one. Every pet owner should have one. Setup was simple and quick.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-124",
+          "p-125",
+          "p-101"
+        ]
+      },
+      {
+        "id": "p-127",
+        "catId": "c-pet",
+        "name": "Grain Free Salmon Dog Food 12kg — Vet Approved Formula* — Subscribe & Save",
+        "price": 54.0,
+        "was": 92.0,
+        "rating": 4.7,
+        "reviewCount": 23887,
+        "blurb": "Vet approved formula*, where the asterisk refers to a vet who approved a different formula in 2021.\n\nSubscribe & Save is pre-selected and the unsubscribe link is in an email you have not received yet — check [url=synth://mail.verity.net/]mail.verity.net[/url].",
+        "bullets": [
+          "12kg resealable bag (seal fails)",
+          "Salmon first ingredient by weight before cooking",
+          "Grain free",
+          "Subscribe & Save enrolled by default"
+        ],
+        "imgSeed": "dogfood-salmon-12",
+        "seller": "PAWVANTA SUPPLY",
+        "sellerKind": "promoted",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 9901",
+            "stars": 5,
+            "at": "2026-09-06T08:00:00Z",
+            "title": "Coat has never been shinier",
+            "body": "His coat has never been shinier since switching. No more itching. He actually runs to the bowl now. Great price for a large bag and delivery is reliable.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 9902",
+            "stars": 5,
+            "at": "2026-09-06T08:03:00Z",
+            "title": "Her coat has never been shinier",
+            "body": "Her coat has never been shinier since switching. No more scratching. She actually runs to the bowl now. Great price for a large bag and delivery is reliable.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-125",
+          "p-124",
+          "p-126"
+        ]
+      },
+      {
+        "id": "p-128",
+        "catId": "c-outdoor",
+        "name": "Home Weather Station Wireless — Predicts Local Conditions — Colour Display",
+        "price": 48.99,
+        "was": 169.0,
+        "rating": 4.6,
+        "reviewCount": 8117,
+        "blurb": "Measures the temperature in your garden and predicts local conditions using an icon selected from a set of six.\n\nAlso worth cross-checking against the county dashboard and the outage notices on [url=synth://kestrel-journal.net/]kestrel-journal.net[/url].",
+        "bullets": [
+          "Wireless outdoor sensor, 60m range through no walls",
+          "Colour LCD",
+          "Forecast icons: sun, cloud, rain, storm, snow, question mark",
+          "Batteries not included (4x AA, 2x AAA)"
+        ],
+        "imgSeed": "weatherstation-wifi",
+        "seller": "YARDGLOW OUTDOOR",
+        "sellerKind": "bot",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2277",
+            "stars": 5,
+            "at": "2026-09-03T09:30:00Z",
+            "title": "Accurate and easy to read",
+            "body": "Accurate and easy to read from across the room. Syncs with the outdoor sensor without any trouble. Great gift for the gardener in your life.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 2278",
+            "stars": 5,
+            "at": "2026-09-03T09:36:00Z",
+            "title": "Accurate and simple to read",
+            "body": "Accurate and simple to read from across the room. Syncs with the outdoor sensor without any trouble. Great gift for the gardener in your family.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-116",
+          "p-105",
+          "p-129"
+        ]
+      },
+      {
+        "id": "p-129",
+        "catId": "c-outdoor",
+        "name": "Collapsible Garden Hose 30m — Expands 3x — Brass Fittings (Brass Coloured)",
+        "price": 19.99,
+        "was": 74.99,
+        "rating": 4.5,
+        "reviewCount": 29104,
+        "blurb": "Expands to three times its length under pressure and to four times its length the once, in the driveway, permanently.",
+        "bullets": [
+          "30m expanded, 10m at rest",
+          "Brass coloured fittings",
+          "Spray nozzle with 7 patterns",
+          "Store out of sunlight, which is where hoses live"
+        ],
+        "imgSeed": "hose-collapsible-30",
+        "seller": "YARDGLOW OUTDOOR",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5150",
+            "stars": 5,
+            "at": "2026-08-29T13:00:00Z",
+            "title": "So much easier than my old hose",
+            "body": "So much easier than my old hose. Light to carry and stores in a bucket. No kinks at all. Wish I had bought one years ago. Excellent product for the money.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 5151",
+            "stars": 5,
+            "at": "2026-08-29T13:07:00Z",
+            "title": "So much better than my old hose",
+            "body": "So much better than my old hose. Light to carry and stores in a bucket. No kinks at all. Wish I had bought one years ago. Excellent product for the money.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-117",
+          "p-128",
+          "p-116"
+        ]
+      },
+      {
+        "id": "p-130",
+        "catId": "c-tech",
+        "name": "Digital Photo Frame 10in WiFi — Send Photos From Anywhere — Cloud Included",
+        "price": 52.0,
+        "was": 189.0,
+        "rating": 4.8,
+        "reviewCount": 16709,
+        "blurb": "Send photos to a relative from anywhere. Cloud storage included for the first year, after which the frame displays the photos it has plus advertising every eleventh slide.",
+        "bullets": [
+          "10 inch IPS, 1280x800",
+          "Cloud included 12 months",
+          "Family sharing up to 20 senders",
+          "Sponsored slides on the free tier"
+        ],
+        "imgSeed": "photoframe-10wifi",
+        "seller": "GLIMWORTH-DIRECT-US",
+        "sellerKind": "bot",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4001",
+            "stars": 5,
+            "at": "2026-09-11T19:00:00Z",
+            "title": "My mother loves it",
+            "body": "My mother loves it. We send photos every day and she sees the grandchildren growing up. Setup took five minutes over the phone. Wonderful product for families far apart.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 4002",
+            "stars": 5,
+            "at": "2026-09-11T19:08:00Z",
+            "title": "My father loves it",
+            "body": "My father loves it. We send photos every day and he sees the grandchildren growing up. Setup took five minutes over the phone. Wonderful product for families far apart.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "e_hollis",
+            "stars": 4,
+            "at": "2026-08-07T09:15:00Z",
+            "title": "Good, until the year runs out",
+            "body": "Bought this for my mother in Halsey after she stopped coming to the computer. She does not have to press anything, which was the whole point.\n\nIn July it began showing a tile advertising a supplement between our photos. She asked me if it was from the family.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-101",
+          "p-104",
+          "p-103"
+        ]
+      }
+    ]
+  }
+}

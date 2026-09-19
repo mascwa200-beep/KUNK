@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "domain": "dash.verity.net",
+  "title": "Verity Dash - Smart County Overview",
+  "type": "dash",
+  "era": "2026",
+  "skin": "glassdash",
+  "description": "The Verity County smart-county dashboard. Twelve live widgets, four of which are live.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "ask.verity.ai",
+    "verity.county.gov",
+    "now.clipvault.tv"
+  ],
+  "data": {
+    "siteName": "Verity Dash",
+    "place": "Verity County - Gridfall",
+    "weather": {
+      "nowC": 19,
+      "feelsC": 17,
+      "summary": "Clear. Sensor last reported 4 days ago; value carried forward.",
+      "days": [
+        { "day": "Today", "hi": 22, "lo": 11, "summary": "Clear" },
+        { "day": "Sat", "hi": 23, "lo": 12, "summary": "Mostly clear" },
+        { "day": "Sun", "hi": 21, "lo": 12, "summary": "Cloud, chance of rain" },
+        { "day": "Mon", "hi": 19, "lo": 9, "summary": "Rain" },
+        { "day": "Tue", "hi": 18, "lo": 8, "summary": "Clearing" },
+        { "day": "Wed", "hi": 20, "lo": 9, "summary": "Clear" },
+        { "day": "Thu", "hi": 22, "lo": 10, "summary": "Clear" }
+      ]
+    },
+    "transit": [
+      { "route": "Route 4 - Gridfall / Marchfield", "status": "On diversion", "note": "Temporary diversion via Halsey Road in effect since 14 February 2024. Adds 19 minutes. The word temporary has not been reviewed." },
+      { "route": "Route 7 - New Carrow Loop", "status": "On diversion", "note": "Diverted around the Mill Street bridge since August 2023. The bridge reopened in May 2025. The diversion did not." },
+      { "route": "Route 11 - Ashkettle / Milbrook Express", "status": "On diversion", "note": "Diversion of indeterminate origin. No work order on file. Operators report the diversion is in the schedule software and cannot be removed by anyone at the depot." },
+      { "route": "Route 2 - Gridfall Circulator", "status": "Good service", "note": "Running to schedule. Every 15 minutes weekdays, 20 minutes weekends." },
+      { "route": "Route 9 - Coyne Flats Connector", "status": "Reduced", "note": "Two round trips daily, Tuesday and Thursday only. Ridership last quarter: 31." },
+      { "route": "Verity Rail - Marchfield Line", "status": "Good service", "note": "Hourly. The only rail service remaining in the county." },
+      { "route": "Verity Rail - Ashkettle Branch", "status": "No service", "note": "Branch closed 2004. Retained in this feed because removing it requires a change request to a vendor that no longer exists. Enthusiast documentation at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]." }
+    ],
+    "energy": {
+      "price": 0.2417,
+      "unit": "per kWh",
+      "trend": "up 3.1% this week (estimated; meter data feed last ingested 2025-11-30)"
+    },
+    "alerts": [
+      { "level": "info", "text": "County offices closed Thursday and Friday. Details at [url=synth://verity.county.gov/]verity.county.gov[/url]." },
+      { "level": "warning", "text": "Air quality sensor GF-02 (Gridfall north) has reported a constant value of 41 since March. Readings from this sensor should not be used." },
+      { "level": "warning", "text": "Route 62 corridor: intermittent radio interference reported. The County advises that this is expected and requests no further reports." },
+      { "level": "info", "text": "Boil-water advisory for Milbrook lifted. Advisory was issued 2021-07-08 and lifted 2021-07-11. This alert has been displayed continuously since 2021-07-11." },
+      { "level": "critical", "text": "TEST ALERT - DO NOT ACT - This is a test of the county alert channel. Test scheduled 2024-09-03 02:00. Test has not been cleared." }
+    ],
+    "widgets": [
+      {
+        "title": "Grid Load - Gridfall Substation",
+        "lines": [
+          "Current draw: [b]0.0 MW[/b]",
+          "Capacity: 84 MW",
+          "Status: [b]Nominal[/b]",
+          "The Gridfall substation was decommissioned after the 2003 fire and carries no load. This widget reports zero as nominal and has done since it was installed in 2022.",
+          "Live camera: [url=synth://now.clipvault.tv/]GRIDFALL SUBSTATION 24/7[/url]"
+        ]
+      },
+      {
+        "title": "County Population",
+        "lines": [
+          "[b]61,204[/b] residents",
+          "Source: projection model, base year 2019",
+          "Change since last update: +0.0%",
+          "This figure is a county-wide projection displayed under a Gridfall-only heading. Both numbers are wrong in opposite directions and the error has been logged as [i]working as designed[/i]."
+        ]
+      },
+      {
+        "title": "Open Service Requests",
+        "lines": [
+          "Open: [b]4,118[/b]",
+          "Closed this month: 6",
+          "Median age of open request: 511 days",
+          "Oldest open request: [b]2,509 days[/b] - 'Site status inquiry, substation parcel'",
+          "Submit at [url=synth://verity.county.gov/]verity.county.gov[/url]"
+        ]
+      },
+      {
+        "title": "Air Quality",
+        "lines": [
+          "Gridfall north (GF-02): [b]41[/b] - flagged, constant since March",
+          "Marchfield (MF-01): [b]38[/b] - reporting normally",
+          "Ashkettle (AK-01): [b]--[/b] - no data since 2023",
+          "New Carrow (NC-01): [b]41[/b] - reporting normally",
+          "County index shown elsewhere on this page averages all four, including the flagged and the missing."
+        ]
+      },
+      {
+        "title": "Parking Availability - Gridfall Union",
+        "lines": [
+          "Spaces free: [b]312 of 310[/b]",
+          "Last updated: 6 seconds ago",
+          "The sensor counts vehicles entering and leaving and has drifted upward by roughly two spaces per month since 2023. It is recalibrated annually in January.",
+          "It is September."
+        ]
+      },
+      {
+        "title": "River Level - Kestrel Creek at Halsey",
+        "lines": [
+          "Stage: [b]1.42 m[/b]",
+          "Flood stage: 3.80 m",
+          "Trend: steady",
+          "Gauge reading is current and correct. This widget works.",
+          "Flood guidance: [url=synth://verity.county.gov/]verity.county.gov[/url]"
+        ]
+      },
+      {
+        "title": "County Newsfeed",
+        "lines": [
+          "Items in last 24h: [b]1,340[/b]",
+          "Identified as automated: 1,301",
+          "Items from a named local byline: [b]6[/b]",
+          "Primary sources: [url=synth://verityledger.com/]verityledger.com[/url], [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]",
+          "Everything else in this feed is a rewrite of those six."
+        ]
+      },
+      {
+        "title": "Transit Ridership",
+        "lines": [
+          "Weekday boardings: [b]11,402[/b]",
+          "vs last year: +2.4%",
+          "Note: figure includes Route 11 boardings, which are modelled rather than counted because the Route 11 fareboxes were removed in 2024.",
+          "Modelled boardings: 4,900 of 11,402."
+        ]
+      },
+      {
+        "title": "Emergency Services - Average Response",
+        "lines": [
+          "Fire: [b]7m 10s[/b]",
+          "EMS: [b]9m 44s[/b]",
+          "Law: [b]12m 02s[/b]",
+          "Figures cover the Gridfall district only. The unincorporated county is not measured and is not represented in any number shown on this dashboard."
+        ]
+      },
+      {
+        "title": "Well Water Testing",
+        "lines": [
+          "Free kits mailed this year: [b]61[/b]",
+          "Eligible households: approximately 9,000",
+          "Turnaround: 9 business days",
+          "Out-of-range results are followed up by a county sanitarian by telephone, same day.",
+          "This programme works and is almost entirely unused. Request a kit: [url=synth://verity.county.gov/]verity.county.gov[/url]"
+        ]
+      },
+      {
+        "title": "Ask The County",
+        "lines": [
+          "Automated assistant: [url=synth://ask.verity.ai/]VerityAssist 4-turbo[/url]",
+          "Questions answered this month: [b]84,900[/b]",
+          "Answers reviewed by a person: [b]0[/b]",
+          "The County does not review, endorse, or correct answers produced by the assistant, and notes that residents have reported it giving the wrong year for the substation fire, the wrong status for the Ashkettle branch, and opening hours for a diner that closed in 2006."
+        ]
+      },
+      {
+        "title": "Community",
+        "lines": [
+          "Where people actually are:",
+          "[list][*][url=synth://boards.gridfall.net/]boards.gridfall.net[/url] - still moderated by three volunteers[*][url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url] - mostly automated, some humans hold out[*][url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] - edit-locked since 2025, accurate because of it[*][url=synth://forums.verityrail.org/]forums.verityrail.org[/url] - eleven regulars, forty years of records[/list]",
+          "Archive of the county's older web: [url=synth://clipvault.tv/]clipvault.tv[/url]"
+        ]
+      }
+    ]
+  }
+}

@@ -1,7 +1,40 @@
 {
   "version": 1,
-  "generated": "2026-09-19T20:11:01Z",
+  "generated": "2026-09-19T23:22:38Z",
   "sites": [
+    {
+      "domain": "62chan.org",
+      "title": "62chan",
+      "type": "board",
+      "era": "2026",
+      "skin": "yotsuba",
+      "description": "An imageboard about the Signal on 62. Registrar offshore, moderator gone since August 2024, roughly eighteen bot posts for every human one.",
+      "tags": [],
+      "path": "net/sites/62chan-org/site.json",
+      "bytes": 52083
+    },
+    {
+      "domain": "ask.verity.ai",
+      "title": "VerityAssist - Your County, Answered",
+      "type": "assistant",
+      "era": "2026",
+      "skin": "chatbot",
+      "description": "A regional AI assistant trained on public data from Verity County. It answers everything instantly and is wrong about most of it.",
+      "tags": [],
+      "path": "net/sites/ask-verity-ai/site.json",
+      "bytes": 12876
+    },
+    {
+      "domain": "askverity.com",
+      "title": "AskVerity",
+      "type": "qa",
+      "era": "2026",
+      "skin": "stack",
+      "description": "Questions and answers about Verity County. One of several hundred identical local Q&A sites, all moderated by the same bot.",
+      "tags": [],
+      "path": "net/sites/askverity-com/site.json",
+      "bytes": 41239
+    },
     {
       "domain": "boards.gridfall.net",
       "title": "The Gridfall Boards",
@@ -12,6 +45,17 @@
       "tags": [],
       "path": "net/sites/boards-gridfall-net/site.json",
       "bytes": 37198
+    },
+    {
+      "domain": "classifieds.verity.net",
+      "title": "Verity Classifieds — Local Listings, County Wide",
+      "type": "market",
+      "era": "2026",
+      "skin": "classified",
+      "description": "The county's classifieds board, forty years old in print and six years old under its current owner. Most of it is posted from somewhere else. Some of it is a neighbour clearing out a garage.",
+      "tags": [],
+      "path": "net/sites/classifieds-verity-net/site.json",
+      "bytes": 31131
     },
     {
       "domain": "clipvault.tv",
@@ -36,6 +80,28 @@
       "bytes": 34780
     },
     {
+      "domain": "control.verity.net",
+      "title": "VerityNet Control Panel",
+      "type": "control",
+      "era": "2026",
+      "skin": "control",
+      "description": "Your account, your posts, installed content packs, and the sites you have authored. Local to this device.",
+      "tags": [],
+      "path": "net/sites/control-verity-net/site.json",
+      "bytes": 468
+    },
+    {
+      "domain": "dash.verity.net",
+      "title": "Verity Dash - Smart County Overview",
+      "type": "dash",
+      "era": "2026",
+      "skin": "glassdash",
+      "description": "The Verity County smart-county dashboard. Twelve live widgets, four of which are live.",
+      "tags": [],
+      "path": "net/sites/dash-verity-net/site.json",
+      "bytes": 9114
+    },
+    {
       "domain": "forums.verityrail.org",
       "title": "Verity Rail Enthusiasts' Forum",
       "type": "forum",
@@ -45,6 +111,17 @@
       "tags": [],
       "path": "net/sites/forums-verityrail-org-site/site.json",
       "bytes": 21404
+    },
+    {
+      "domain": "gridline.social",
+      "title": "Gridline",
+      "type": "aggregator",
+      "era": "2026",
+      "skin": "orange-news",
+      "description": "A link aggregator for Verity County, incorporated somewhere else, moderated by nobody since spring 2025.",
+      "tags": [],
+      "path": "net/sites/gridline-social/site.json",
+      "bytes": 37901
     },
     {
       "domain": "kestrel-journal.net",
@@ -58,6 +135,17 @@
       "bytes": 23910
     },
     {
+      "domain": "mail.verity.net",
+      "title": "Verity Mail",
+      "type": "mail",
+      "era": "2026",
+      "skin": "webmail",
+      "description": "Your inbox. Eleven things want money, four want your attention, two are from people. The junk folder is where the machines are having the most fun.",
+      "tags": [],
+      "path": "net/sites/mail-verity-net/site.json",
+      "bytes": 34102
+    },
+    {
       "domain": "marla.verity.net",
       "title": "marla's page !!!",
       "type": "social",
@@ -69,6 +157,28 @@
       "bytes": 19342
     },
     {
+      "domain": "now.clipvault.tv",
+      "title": "ClipVault Now",
+      "type": "stream",
+      "era": "2026",
+      "skin": "tubemodern",
+      "description": "ClipVault in 2026. Nine channels serving Verity County, seven of which are not operated by anyone in Verity County.",
+      "tags": [],
+      "path": "net/sites/now-clipvault-tv/site.json",
+      "bytes": 34064
+    },
+    {
+      "domain": "now.verityledger.com",
+      "title": "The Verity Ledger",
+      "type": "news",
+      "era": "2026",
+      "skin": "portal-red",
+      "description": "Verity County's newspaper since 1901, now a content pipeline operated by Pinelock Media Group. No reporter has worked here since 2019.",
+      "tags": [],
+      "path": "net/sites/now-verityledger-com/site.json",
+      "bytes": 35438
+    },
+    {
       "domain": "pulse.gridfall.net",
       "title": "Gridfall Pulse",
       "type": "social",
@@ -78,6 +188,17 @@
       "tags": [],
       "path": "net/sites/pulse-gridfall-net/site.json",
       "bytes": 19909
+    },
+    {
+      "domain": "shopwell.store",
+      "title": "ShopWell — Everything, Somehow, By Tomorrow",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "A marketplace with eleven million listings and about four hundred actual products. Prices move while you look at them. Every review is five stars and none of them are about the thing you are buying.",
+      "tags": [],
+      "path": "net/sites/shopwell-store/site.json",
+      "bytes": 61339
     },
     {
       "domain": "stargazers.verity.net",
@@ -100,6 +221,17 @@
       "tags": [],
       "path": "net/sites/tnorris-verity-net/site.json",
       "bytes": 22690
+    },
+    {
+      "domain": "verity.county.gov",
+      "title": "Verity County Services Portal",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "The official services portal for Verity County. Fourteen services, four working phone numbers, and one form that requires software discontinued in 2011.",
+      "tags": [],
+      "path": "net/sites/verity-county-gov/site.json",
+      "bytes": 16076
     },
     {
       "domain": "verityledger.com",

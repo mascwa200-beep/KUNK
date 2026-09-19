@@ -30,7 +30,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITES_DIR = ROOT / "net" / "sites"
 
-TYPES = ("forum", "social", "blog", "news", "wiki", "media", "page")
+TYPES = ("forum", "social", "blog", "news", "wiki", "media", "page",
+         # The 2026 set. See docs/WORLD.md for what each one is in-world.
+         "aggregator", "qa", "board", "shop", "market", "assistant",
+         "mail", "portal", "stream", "dash", "control")
 
 SKINS = {
     "forum": ("phpbb-blue", "ezboard-grey"),
@@ -40,6 +43,17 @@ SKINS = {
     "wiki": ("monobook",),
     "media": ("tubeplayer",),
     "page": ("geocities", "tripod-tile", "plain-white"),
+    "aggregator": ("orange-news", "round-red"),
+    "qa": ("stack",),
+    "board": ("yotsuba",),
+    "shop": ("megastore",),
+    "market": ("classified",),
+    "assistant": ("chatbot",),
+    "mail": ("webmail",),
+    "portal": ("govsite",),
+    "stream": ("tubemodern",),
+    "dash": ("glassdash",),
+    "control": ("control",),
 }
 
 ENVELOPE = ("schema", "domain", "title", "type", "era", "skin", "description",
@@ -56,7 +70,32 @@ PATH_PREFIXES = {
     "wiki": {"wiki", "category"},
     "media": {"watch", "channel"},
     "page": None,   # any single segment is a page id
+    "aggregator": {"board", "item"},
+    "qa": {"tag", "q"},
+    "board": {"t"},
+    "shop": {"c", "p"},
+    "market": {"c", "l"},
+    "assistant": {"chat"},
+    "mail": {"f", "m"},
+    "portal": {"s"},
+    "stream": {"w", "c"},
+    "dash": set(),          # single page, no sub-paths
+    "control": {"packs", "compose", "me", "storage"},
 }
+
+# Domains that are MEANT to dead-end.
+#
+# Scam and phishing content is a large part of what 2026 VerityNet is, and a
+# scam link that resolves to a real page is not a scam link. The engine already
+# renders an unknown domain as a period-correct "cannot find server" page,
+# which is the correct destination for these.
+#
+# Distinguishing "deliberately dead" from "typo" needs a rule rather than a
+# vibe, so: real sites in this project use ordinary TLDs, and anything on one
+# of these does not resolve and is not supposed to. Adding a real site on one
+# of these TLDs would be a mistake the type checker below would not catch, so
+# do not.
+DEAD_TLDS = (".top", ".click", ".win", ".example", ".finance", ".zip", ".lol")
 
 SCAN_SUFFIXES = {".html", ".htm", ".css", ".js", ".json", ".md", ".webmanifest", ".svg"}
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".idea", ".vscode"}
@@ -672,6 +711,8 @@ def main(argv=None):
                 start = max(0, match.start() - 40)
                 snippet = re.sub(r"\s+", " ", text[start:match.end() + 40]).strip()
                 if target not in known:
+                    if target.endswith(DEAD_TLDS):
+                        continue   # a scam link, and it is supposed to 404
                     report.error(where, "%s: synth://%s does not exist in this project -- %s"
                                  % (jsonpath, target, snippet))
                     continue
@@ -679,8 +720,8 @@ def main(argv=None):
                 segments = [s for s in raw_path.split("/") if s]
                 if not segments:
                     continue
-                allowed = PATH_PREFIXES.get(target_type)
-                if allowed is None:
+                allowed = PATH_PREFIXES.get(target_type, None)
+                if allowed is None and target_type in PATH_PREFIXES:
                     if len(segments) > 1:
                         report.warn(where, "%s: synth://%s%s -- a page site serves a single "
                                            "segment (/<pageId>)" % (jsonpath, target, raw_path))

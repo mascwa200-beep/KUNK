@@ -20,7 +20,19 @@
 <link rel="stylesheet" href="theme/skins/wiki.css">
 <link rel="stylesheet" href="theme/skins/media.css">
 <link rel="stylesheet" href="theme/skins/page.css">
+<link rel="stylesheet" href="theme/skins/aggregator.css">
+<link rel="stylesheet" href="theme/skins/qa.css">
+<link rel="stylesheet" href="theme/skins/board.css">
+<link rel="stylesheet" href="theme/skins/shop.css">
+<link rel="stylesheet" href="theme/skins/market.css">
+<link rel="stylesheet" href="theme/skins/assistant.css">
+<link rel="stylesheet" href="theme/skins/mail.css">
+<link rel="stylesheet" href="theme/skins/portal.css">
+<link rel="stylesheet" href="theme/skins/stream.css">
+<link rel="stylesheet" href="theme/skins/dash.css">
 <link rel="stylesheet" href="theme/live.css">
+<link rel="stylesheet" href="theme/compose.css">
+<link rel="stylesheet" href="theme/control.css">
 </head>
 <body>
 
@@ -127,6 +139,14 @@
 <script src="app/store.js"></script>
 <script src="app/me.js"></script>
 <script src="app/packs.js"></script>
+<!-- Being a user: the reply engine reads what you wrote, the fame model
+     decides what it did, compose is the UI for both, control is the in-app
+     panel for packs and authoring. Ordered because compose reads bots and
+     fame, and the renderers read compose. -->
+<script src="app/bots.js"></script>
+<script src="app/fame.js"></script>
+<script src="app/compose.js"></script>
+<script src="app/control.js"></script>
 <script src="app/slop_social.js"></script>
 <script src="app/slop_forum.js"></script>
 <script src="app/slop_ads.js"></script>
@@ -138,6 +158,16 @@
 <script src="app/types/wiki.js"></script>
 <script src="app/types/media.js"></script>
 <script src="app/types/page.js"></script>
+<script src="app/types/aggregator.js"></script>
+<script src="app/types/qa.js"></script>
+<script src="app/types/board.js"></script>
+<script src="app/types/shop.js"></script>
+<script src="app/types/market.js"></script>
+<script src="app/types/assistant.js"></script>
+<script src="app/types/mail.js"></script>
+<script src="app/types/portal.js"></script>
+<script src="app/types/stream.js"></script>
+<script src="app/types/dash.js"></script>
 <script src="app/engine.js"></script>
 <script>
 window.addEventListener('load', function () {

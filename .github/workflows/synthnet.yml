@@ -80,6 +80,7 @@ jobs:
           # payload: a budget that measures the wrong thing is worse than none.
           assets="synthnet/index.html synthnet/theme/aero.css \
                   synthnet/theme/skins/*.css synthnet/theme/live.css \
+                  synthnet/theme/compose.css synthnet/theme/control.css \
                   synthnet/app/*.js \
                   synthnet/app/types/*.js synthnet/net/registry.json \
                   synthnet/manifest.webmanifest"
@@ -91,19 +92,24 @@ jobs:
           echo "cold-load shell: $raw bytes raw, $gz bytes gzipped"
           # Both numbers are real: tools/serve.py gzips, so a browser moves the
           # second, but the raw figure is what the files actually weigh.
-          # Raised from 400 KB / 120 KB when the live layer landed. The bot,
-          # sponsored and ad pools are ~240 KB raw of pure text, and they are
-          # loaded up front on purpose: the alternative is fetching them
-          # lazily, which is more machinery than this project wants. In the
-          # app and the standalone file these bytes are local, so the figure
-          # only means anything over a LAN, where the gzipped number is the
-          # one that travels. Headroom left for more sites.
-          if [ "$raw" -gt 921600 ]; then
-            echo "FAIL: the shell payload has grown past 900 KB uncompressed."
+          # History: 400/120 KB originally, 900/250 when the live layer landed,
+          # 1600/450 now that the 2026 build added ten renderers, the reply
+          # engine, the fame model and the authoring UI. Measured at this
+          # commit: 1,208,404 raw / 332,687 gzipped.
+          #
+          # These bytes are loaded up front deliberately. Fetching them lazily
+          # is the better engineering and the wrong trade here: it costs the
+          # single-file standalone build, which is the mode that needs no
+          # install at all. In the app and that file the bytes are local, so
+          # the figure only means anything over a LAN -- where the gzipped
+          # number is the one that travels, and 330 KB is a third of a second
+          # on anything. Headroom left for packs and more sites.
+          if [ "$raw" -gt 1638400 ]; then
+            echo "FAIL: the shell payload has grown past 1.6 MB uncompressed."
             exit 1
           fi
-          if [ "$gz" -gt 256000 ]; then
-            echo "FAIL: the shell payload has grown past 250 KB gzipped."
+          if [ "$gz" -gt 460800 ]; then
+            echo "FAIL: the shell payload has grown past 450 KB gzipped."
             exit 1
           fi
 

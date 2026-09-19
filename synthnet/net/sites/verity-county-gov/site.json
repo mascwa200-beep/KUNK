@@ -1,0 +1,267 @@
+{
+  "schema": 1,
+  "domain": "verity.county.gov",
+  "title": "Verity County Services Portal",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "The official services portal for Verity County. Fourteen services, four working phone numbers, and one form that requires software discontinued in 2011.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "ask.verity.ai",
+    "now.clipvault.tv",
+    "dash.verity.net"
+  ],
+  "data": {
+    "agency": "Verity County Administrative Services",
+    "motto": "Serving the seven towns since 1871.",
+    "notices": [
+      "PORTAL NOTICE: The portal was modernized in March 2026. Some services have not yet been migrated. Services that have not been migrated remain available at the previous portal, which was decommissioned in March 2026.",
+      "Automated assistance for this portal is provided by [url=synth://ask.verity.ai/]VerityAssist[/url]. The County does not review or endorse answers produced by automated assistance. Answers produced by automated assistance are not County guidance.",
+      "Holiday closure: County offices will be closed Thursday and Friday. The Ashkettle annex will be closed Wednesday through Monday for reasons the annex has not provided.",
+      "Payment processing is handled by a third-party vendor. If a payment fails, do not retry more than twice. Retrying more than twice may create duplicate records that must be resolved in person at the Gridfall office.",
+      "The County is aware that the Clerk's office hours listed on the Records page do not match the hours listed on the Contact page. Both pages are under review."
+    ],
+    "services": [
+      {
+        "id": "prop-tax",
+        "name": "Property Tax Lookup and Payment",
+        "blurb": "Look up assessed value, view your current bill, and pay by card or bank transfer. This service was migrated in 2024 and works.",
+        "status": "available",
+        "lastUpdated": "2026-08-03",
+        "steps": [
+          "Enter your parcel number, or search by street address if you do not have it.",
+          "Confirm the parcel shown matches your property. Parcel numbers were renumbered in 2019 and older bills show the previous format.",
+          "Review the current-year assessment and any prior balance.",
+          "Pay by card (2.4% vendor fee) or bank transfer (no fee).",
+          "Save the confirmation number. Confirmation emails are sent from an address that most mail providers file as spam."
+        ],
+        "forms": [
+          { "name": "Assessment Appeal (Form VC-14)", "note": "Fillable PDF. Must be filed within 30 days of the assessment notice, which is mailed without a postmark date." },
+          { "name": "Senior Exemption Application (Form VC-14S)", "note": "Fillable PDF. Renews automatically after the first approved year." }
+        ]
+      },
+      {
+        "id": "burn-permit",
+        "name": "Open Burning Permit",
+        "blurb": "Required for any outdoor burning of brush or yard waste outside municipal limits. Not required inside Gridfall, Marchfield, or New Carrow, which prohibit it entirely.",
+        "status": "available",
+        "lastUpdated": "2026-05-19",
+        "steps": [
+          "Download Form VC-208 below.",
+          "Complete the form and sign it.",
+          "Bring the completed form to the Fire Marshal's office in person. The Fire Marshal's office does not accept email.",
+          "Pay the $12 fee. The Fire Marshal's office does not accept cards.",
+          "Permits are valid for the calendar year and must be carried during burning."
+        ],
+        "forms": [
+          { "name": "Open Burning Permit Application (Form VC-208)", "note": "PDF. Requires Adobe LiveCycle Designer ES2 to open the fillable fields. The County does not distribute this software and can no longer say where it may be obtained. Most applicants print the form and complete it by hand, which is accepted." },
+          { "name": "Agricultural Burning Addendum (Form VC-208A)", "note": "PDF, same requirement as VC-208. Only needed for parcels over 20 acres." }
+        ]
+      },
+      {
+        "id": "records",
+        "name": "County Clerk - Vital Records",
+        "blurb": "Certified copies of birth, death, and marriage records filed in Verity County. Records before 1912 are held by the Historical Collection and are not available here.",
+        "status": "available",
+        "lastUpdated": "2026-02-11",
+        "steps": [
+          "Complete the request form and present valid identification.",
+          "Pay $22 for the first certified copy and $8 for each additional copy of the same record.",
+          "Requests submitted in person before 11:00 AM are usually filled the same day.",
+          "Mail requests take four to six weeks."
+        ],
+        "forms": [
+          { "name": "Vital Record Request (Form VC-31)", "note": "Fillable PDF. Office hours for this service are Monday through Thursday, 9:00 AM to 3:00 PM, closed 12:00 to 1:00. Note that the Contact Directory lists this office as Monday through Friday, 8:30 AM to 4:30 PM. The Monday-through-Thursday hours are the ones the door is actually unlocked for." },
+          { "name": "Genealogy Research Request (Form VC-31G)", "note": "PDF. Six week processing. The researcher position has been vacant since 2023." }
+        ]
+      },
+      {
+        "id": "transit-pass",
+        "name": "County Transit Reduced Fare Pass",
+        "blurb": "Discounted transit passes for seniors, students, and riders with disabilities. Valid on all County Transit routes.",
+        "status": "available",
+        "lastUpdated": "2026-09-01",
+        "steps": [
+          "Apply online with proof of eligibility.",
+          "Cards are mailed within ten business days.",
+          "Tap the card on boarding. If the reader does not respond, show the card to the operator.",
+          "Reduced fare passes do not cover the Route 4 and Route 7 diversions, which the operator will explain."
+        ],
+        "forms": [
+          { "name": "Reduced Fare Application (Form VC-55)", "note": "Fillable PDF." }
+        ]
+      },
+      {
+        "id": "dog-license",
+        "name": "Dog Licensing",
+        "blurb": "All dogs over four months residing in the unincorporated county must be licensed annually. Renewal notices are mailed each January.",
+        "status": "available",
+        "lastUpdated": "2026-01-14",
+        "steps": [
+          "Provide current rabies vaccination certificate.",
+          "Pay $10 (altered) or $25 (unaltered).",
+          "Tags are issued immediately at the counter or mailed within two weeks.",
+          "Replacement tags are $3."
+        ],
+        "forms": [
+          { "name": "Dog License Application (Form VC-72)", "note": "Fillable PDF. The form asks for the dog's weight. Nothing is done with the weight." }
+        ]
+      },
+      {
+        "id": "noise-complaint",
+        "name": "Noise and Nuisance Complaint",
+        "blurb": "Report ongoing noise, unmaintained property, or nuisance conditions in the unincorporated county.",
+        "status": "available",
+        "lastUpdated": "2026-06-30",
+        "steps": [
+          "Submit the complaint online with the address and a description.",
+          "Complaints are triaged within five business days.",
+          "An inspector may contact you. Inspectors do not visit without contacting you first.",
+          "You will not be told the outcome. This is by policy."
+        ],
+        "forms": [
+          { "name": "Nuisance Complaint (Form VC-90)", "note": "Online only. There is no PDF and requests for one are declined." }
+        ]
+      },
+      {
+        "id": "well-water",
+        "name": "Private Well Water Testing",
+        "blurb": "Free annual testing of private wells for bacteria, nitrates, and hardness. Sample kits are provided at no cost. This service works, has always worked, and almost nobody uses it.",
+        "status": "available",
+        "lastUpdated": "2026-09-08",
+        "steps": [
+          "Call the Environmental Health line or request a kit online. Kits are mailed within three business days.",
+          "Collect the sample on a weekday morning following the instructions in the kit.",
+          "Drop the sealed kit at any of the seven town halls, or at the Gridfall office. There is a labeled cooler inside the door at each one.",
+          "Results are emailed within nine business days and mailed on paper if you prefer.",
+          "If a result is out of range, a county sanitarian calls you the same day and will walk you through what to do next. This is a real person and they will call back if you miss them."
+        ],
+        "forms": [
+          { "name": "Well Test Kit Request (Form VC-101)", "note": "Online, one page, no account required. Takes about ninety seconds." },
+          { "name": "Follow-up Sampling Request (Form VC-101F)", "note": "Only needed if a first result is out of range. The sanitarian fills this out for you." }
+        ]
+      },
+      {
+        "id": "building-permit",
+        "name": "Building and Structural Permits",
+        "blurb": "Permits for new construction, additions, decks, and structural alteration in the unincorporated county.",
+        "status": "delayed",
+        "lastUpdated": "2026-07-22",
+        "steps": [
+          "Submit plans as a single PDF under 40 MB.",
+          "Plan review is currently running 14 to 19 weeks. The published target is 4 weeks.",
+          "Respond to review comments within 30 days or the application is closed and the fee is not refunded.",
+          "Schedule inspections by phone. The online inspection scheduler was retired in 2025 and its replacement has not been selected."
+        ],
+        "forms": [
+          { "name": "Building Permit Application (Form VC-120)", "note": "Fillable PDF." },
+          { "name": "Deck and Accessory Structure Supplement (VC-120D)", "note": "PDF. Required for anything over 200 square feet or more than 30 inches above grade." },
+          { "name": "Contractor Registration (Form VC-119)", "note": "Fillable PDF. Must be current before VC-120 is accepted, and expires on a different cycle than VC-120." }
+        ]
+      },
+      {
+        "id": "land-records",
+        "name": "Land Records and Deed Search",
+        "blurb": "Search recorded deeds, easements, and plats back to 1912. Older instruments are held on microfilm at the Gridfall office.",
+        "status": "available",
+        "lastUpdated": "2026-04-05",
+        "steps": [
+          "Search by name, parcel number, or instrument number.",
+          "View images free of charge. Certified copies are $4 per page.",
+          "Microfilm for pre-1912 instruments is available by appointment. The reader is old and the appointment is worth it."
+        ],
+        "forms": [
+          { "name": "Certified Copy Request (Form VC-40)", "note": "Fillable PDF." },
+          { "name": "Microfilm Appointment Request", "note": "Online. Appointments are Tuesdays and Thursdays only." }
+        ]
+      },
+      {
+        "id": "substation-parcel",
+        "name": "Gridfall Substation Parcel - Site Status",
+        "blurb": "Information regarding the former substation parcel on the north edge of Gridfall, including current ownership, access restrictions, and remediation status.",
+        "status": "temporarily unavailable",
+        "lastUpdated": "2019-11-06",
+        "steps": [
+          "This service is temporarily unavailable while records are transferred to the new system.",
+          "In the interim, inquiries regarding the parcel should be directed to the Office of County Counsel.",
+          "The Office of County Counsel directs parcel inquiries to this page."
+        ],
+        "forms": [
+          { "name": "Site Status Inquiry (Form VC-77)", "note": "Temporarily unavailable. Form VC-77 has been temporarily unavailable since November 2019." },
+          { "name": "Records Request - Substation Parcel", "note": "Accepted, logged, and answered with a letter stating that the responsive records are held by the service that is temporarily unavailable. Residents have documented this loop at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]." }
+        ]
+      },
+      {
+        "id": "route62-signal",
+        "name": "Route 62 Transmitter - Interference Reports",
+        "blurb": "Intake for reports of radio interference along the Route 62 corridor. Reports are logged. The County makes no representation as to what is logged against.",
+        "status": "limited",
+        "lastUpdated": "2026-03-17",
+        "steps": [
+          "Report the date, approximate time, your location, and the frequency if known.",
+          "Reports are forwarded quarterly to the Office of Emergency Management.",
+          "The County does not operate a transmitter at the location most reports describe.",
+          "The County has no further information and requests that residents stop asking whether it does."
+        ],
+        "forms": [
+          { "name": "Interference Report (Form VC-63)", "note": "Online. Free text field, 500 character limit. Residents have found the limit insufficient." }
+        ]
+      },
+      {
+        "id": "rail-crossing",
+        "name": "Rail Crossing and Right-of-Way Inquiries",
+        "blurb": "Questions regarding grade crossings, abandoned right-of-way, and trail conversion on the former Verity Rail branch corridor.",
+        "status": "limited",
+        "lastUpdated": "2026-08-25",
+        "steps": [
+          "Crossing safety concerns should be reported immediately by phone, not through this form.",
+          "Right-of-way ownership questions require a title search and are not answered here.",
+          "Trail conversion on the Ashkettle segment remains in study. The study began in 2014.",
+          "Historical questions about the branch line are better answered by the people at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] than by this office."
+        ],
+        "forms": [
+          { "name": "Right-of-Way Inquiry (Form VC-88)", "note": "Fillable PDF." }
+        ]
+      },
+      {
+        "id": "records-request",
+        "name": "Public Records Request",
+        "blurb": "Request non-exempt county records under the state public records act.",
+        "status": "available",
+        "lastUpdated": "2026-09-12",
+        "steps": [
+          "Describe the records sought with reasonable specificity.",
+          "The County acknowledges within 5 business days and provides an estimate.",
+          "Copy fees are $0.15 per page. Staff time over 30 minutes is billed at $31 per hour.",
+          "Requests seeking records held by an unavailable service are acknowledged and then closed."
+        ],
+        "forms": [
+          { "name": "Public Records Request (Form VC-5)", "note": "Online or fillable PDF. Both work." }
+        ]
+      },
+      {
+        "id": "ashkettle-annex",
+        "name": "Ashkettle Annex - Walk-In Services",
+        "blurb": "Limited counter services for residents of Ashkettle, Milbrook, and Coyne Flats without traveling to Gridfall.",
+        "status": "limited",
+        "lastUpdated": "2026-07-01",
+        "steps": [
+          "Walk-in only. The annex does not take appointments.",
+          "Posted hours are Tuesday and Wednesday, 10:00 AM to 2:00 PM.",
+          "The Contact Directory lists the annex as Monday through Friday, 8:00 AM to 4:00 PM. The Ashkettle town page lists it as Wednesday only.",
+          "Calling ahead is recommended. The annex phone rings at the Gridfall office, which does not know the annex schedule."
+        ],
+        "forms": [
+          { "name": "Annex Service Availability List", "note": "Posted on the annex door. Not available online. Photographs of the door are periodically posted to [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url] by residents, which is currently the most reliable source for annex hours." }
+        ]
+      }
+    ]
+  }
+}
