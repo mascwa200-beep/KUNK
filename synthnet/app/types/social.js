@@ -264,16 +264,25 @@
     opts = opts || {};
     var replyCount = arr(post.replies).length;
 
+    /* A live post carries a real millisecond timestamp and is shown relative
+     * ("6 min ago"); an authored one keeps its baked 2008 string. */
+    var when = post.liveAt && window.SYNTH.live
+      ? window.SYNTH.live.ago(post.liveAt)
+      : stamp(post.time, base);
+
     var head = el('div', { 'class': 'p-head' },
       el('span', { 'class': 'p-name' },
         post.handle
           ? ctx.link('/user/' + encodeURIComponent(normHandle(post.handle)),
               txt(post.author, txt(post.handle, 'someone')))
           : txt(post.author, 'someone')),
+      post.verified && window.SYNTH.liveui ? window.SYNTH.liveui.verifiedTick() : null,
       el('span', { 'class': 'p-handle' }, atHandle(post.handle)),
+      kindBadge(ctx, post.kind),
       el('span', { 'class': 'p-dot' }, ' · '),
-      ctx.link('/post/' + encodeURIComponent(txt(post.id)),
-        stamp(post.time, base), 'p-time'));
+      post.liveAt
+        ? el('span', { 'class': 'p-time lv-time' }, when)
+        : ctx.link('/post/' + encodeURIComponent(txt(post.id)), when, 'p-time'));
 
     var actions = el('div', { 'class': 'p-actions' },
       el('span', { 'class': 'act' }, el('b', null, num(replyCount)), ' replies'),
@@ -281,11 +290,68 @@
       el('span', { 'class': 'act' }, el('b', null, num(post.likes)), ' likes'),
       opts.single ? null : ctx.link('/post/' + encodeURIComponent(txt(post.id)), 'permalink', 'act permalink'));
 
-    return el('div', { 'class': 'post' + (opts.single ? ' single' : '') },
+    var rowKind = post.kind === 'promoted' ? ' lv-promoted-row'
+                : (post.kind === 'bot' || post.kind === 'spam') ? ' lv-bot-row' : '';
+
+    return el('div', { 'class': 'post' + (opts.single ? ' single' : '') + rowKind },
       el('div', { 'class': 'p-row' },
         avatar(el, post.avatarSeed, txt(post.author, post.handle)),
         el('div', { 'class': 'p-main' }, head, bodyNode(ctx, post.body), actions)),
       replyBlock(ctx, post, base, !!opts.single));
+  }
+
+
+  /* ---------- the live layer ----------
+   * pulse.gridfall.net is not a 2008 archive any more. Most of what arrives
+   * on it now is automated, and this is where that arrives. See app/live.js:
+   * posts are a pure function of the wall clock, so the feed has genuinely
+   * moved on when you come back, with nothing stored anywhere.
+   */
+
+  function liveOn(ctx) {
+    /* Only the microblog runs live. marla.verity.net is a personal page that
+     * stopped updating in 2005, and bots posting into it would be nonsense. */
+    return ctx.site && ctx.site.domain === 'pulse.gridfall.net' &&
+           window.SYNTH.live && window.SYNTH.slop &&
+           arr(window.SYNTH.slop.socialPosts).length > 0;
+  }
+
+  function livePosts(ctx, count) {
+    var L = window.SYNTH.live;
+    var pool = arr(window.SYNTH.slop.socialPosts);
+    /* One arrival every 4 minutes. Busy enough that a refresh usually shows
+     * something new, slow enough that it is not a slot machine. */
+    var slots = L.stream(ctx.site.domain, pool, 4, count);
+    return slots.map(function (s, i) {
+      var item = s.item;
+      var r = L.rng(s.seed);
+      return {
+        id: 'live-' + s.slot,
+        author: item.author,
+        handle: item.handle,
+        avatarSeed: item.avatarSeed,
+        kind: item.kind,
+        verified: item.verified,
+        body: item.body,
+        /* Engagement grows while the post is up, so the top of the feed has
+         * lower numbers than the posts below it -- which is what a real feed
+         * looks like and is oddly the detail that sells it. */
+        likes: Math.floor((item.likes || 0) * (0.25 + r() * 0.2) + i * (item.likes || 0) * 0.04),
+        reposts: Math.floor((item.reposts || 0) * (0.3 + r() * 0.3) + i * (item.reposts || 0) * 0.03),
+        replies: arr(item.replies),
+        liveAt: s.at
+      };
+    });
+  }
+
+  function kindBadge(ctx, kind) {
+    if (!window.SYNTH.liveui) return null;
+    return window.SYNTH.liveui.badge(kind);
+  }
+
+  function adNode(ctx, slot, seed) {
+    if (!window.SYNTH.liveui) return null;
+    return window.SYNTH.liveui.ad(slot, seed);
   }
 
   /* ---------- pages ---------- */
@@ -305,13 +371,52 @@
       el('div', { 'class': 'compose-box' }, ''),
       el('span', { 'class': 'btn dis' }, 'Post')));
 
+    /* Live arrivals sit above the archive, newest first, the way a feed
+     * actually reads. Everything below the fold is the 2008 content that was
+     * here before the bots. */
     var list = feed(ctx);
-    if (!list.length) {
+    var live = liveOn(ctx) ? livePosts(ctx, 22) : [];
+
+    if (live.length) {
+      main.insertBefore(window.SYNTH.liveui.onlineBar(ctx.site.domain, 900, 14000),
+                        main.firstChild);
+      var newCount = 0;
+      var L = window.SYNTH.live;
+      for (var n = 0; n < live.length; n++) {
+        if (L.now() - live[n].liveAt < 15 * 60000) newCount++;
+      }
+      if (newCount) {
+        main.appendChild(el('div', { 'class': 'sn-newbar' },
+          newCount + ' new post' + (newCount === 1 ? '' : 's') + ' since you last looked'));
+      }
+    }
+
+    if (!list.length && !live.length) {
       main.appendChild(el('div', { 'class': 'blank' }, 'Nothing here yet. Check back later.'));
     }
+
+    live.forEach(function (post, i) {
+      main.appendChild(postNode(ctx, post, base, {}));
+      /* An ad every fifth slot. The seed moves with the post so the inventory
+       * rotates with the feed rather than sitting still. */
+      if (i % 5 === 4) {
+        var ad = adNode(ctx, 'inline', ctx.site.domain + ':' + post.id);
+        if (ad) main.appendChild(ad);
+      }
+    });
+
+    if (live.length && list.length) {
+      main.appendChild(el('div', { 'class': 'sn-divider' },
+        'Older posts \u2014 before the migration'));
+    }
+
     list.forEach(function (post) {
       main.appendChild(postNode(ctx, post, base, {}));
     });
+
+    if (live.length) {
+      side.appendChild(adNode(ctx, 'box', ctx.site.domain + ':side'));
+    }
 
     mount.appendChild(el('div', { 'class': 'sn-layout' }, side, main));
     mount.appendChild(el('div', { 'class': 'sn-foot' },

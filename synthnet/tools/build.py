@@ -649,6 +649,56 @@ def dumps_search(obj):
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=False) + "\n"
 
 
+SW_PATH = ROOT / "sw.js"
+_SW_SHELL = re.compile(r"(var SHELL = \[)(.*?)(\];)", re.DOTALL)
+
+
+def build_service_worker(warnings):
+    """Regenerate sw.js's precache list from what index.html actually loads.
+
+    This list used to be maintained by hand, and it drifted exactly the way
+    hand-maintained lists do: it named three files that did not exist and
+    omitted the main stylesheet, so every cold load logged 404s and the
+    offline shell came back unstyled. The install step swallows per-file
+    errors, so nothing failed loudly -- it just quietly cached the wrong set.
+
+    Deriving it from index.html means the two cannot disagree. Adding a
+    stylesheet or a script to the page is now the whole change.
+    """
+    html = INDEX_HTML.read_text(encoding="utf-8")
+    assets = []
+    for tag in _LINK_TAG.findall(html):
+        rel = (_attr(tag, "rel") or "").lower()
+        if "stylesheet" not in rel and rel != "manifest":
+            continue
+        path = _local(_attr(tag, "href") or "")
+        if path:
+            assets.append(_rel(path).replace("\\", "/"))
+    for match in _SCRIPT_SRC.finditer(html):
+        path = _local(match.group(1))
+        if path:
+            assets.append(_rel(path).replace("\\", "/"))
+
+    # The generated data files are not referenced by a tag but are fetched on
+    # boot, so the offline shell is incomplete without them.
+    entries = ["./", "./index.html"]
+    for a in assets:
+        entry = "./" + a
+        if entry not in entries:
+            entries.append(entry)
+    for extra in ("./net/registry.json", "./net/search.json"):
+        if extra not in entries:
+            entries.append(extra)
+
+    body = "\n" + ",\n".join("  '%s'" % e for e in entries) + "\n"
+    current = SW_PATH.read_text(encoding="utf-8")
+    match = _SW_SHELL.search(current)
+    if not match:
+        warnings.append("sw.js has no 'var SHELL = [...]' block to regenerate")
+        return current
+    return current[:match.start(2)] + body + current[match.end(2):]
+
+
 def compute(warnings):
     loaded = load_sites()
     registry = build_registry(loaded)
@@ -656,11 +706,13 @@ def compute(warnings):
     sites = {}
     for _path, site in loaded:
         sites[site.get("domain", "")] = site
+    service_worker = build_service_worker(warnings)
     bundle = build_bundle(registry, sites, search, warnings)
     return {
         REGISTRY_PATH: dumps(registry),
         SEARCH_PATH: dumps_search(search),
         BUNDLE_PATH: bundle,
+        SW_PATH: service_worker,
     }, registry, search
 
 

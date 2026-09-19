@@ -106,6 +106,9 @@
 
     function shell(children, currentSectionId) {
       return el('div', { class: 'news-wrap' },
+        /* Every news site has one of these now, and most of what scrolls
+         * through it was not written by anyone. */
+        (window.SYNTH.liveui ? window.SYNTH.liveui.ticker(site.domain, 10) : null),
         masthead(),
         nav(currentSectionId === undefined ? null : currentSectionId),
         el('div', { class: 'news-body' }, children),

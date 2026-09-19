@@ -406,3 +406,31 @@
   .skin-myspace-black .p-fulltime,
   .skin-myspace-black .sn-foot { font-size: 12px; }
 }
+
+/* The live layer's own furniture, scoped like everything else in this file. */
+.skin-bluebird .sn-newbar {
+  background: #eaf4fd;
+  border: 1px solid #c6e0f5;
+  color: #16699f;
+  font-size: 12px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  text-align: center;
+}
+.skin-bluebird .sn-divider {
+  margin: 18px 0 8px;
+  padding-top: 10px;
+  border-top: 1px solid #d8e2ea;
+  color: #657786;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.skin-myspace-black .sn-newbar {
+  background: #2a2a2a; border: 1px solid #ff6600; color: #ffcc66;
+  font-size: 12px; padding: 5px 8px; margin: 6px 0; text-align: center;
+}
+.skin-myspace-black .sn-divider {
+  margin: 14px 0 6px; padding-top: 8px; border-top: 1px solid #444444;
+  color: #999999; font-size: 11px;
+}

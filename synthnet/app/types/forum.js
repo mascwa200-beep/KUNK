@@ -136,12 +136,71 @@
 
   /* ---------- index ---------- */
 
+
+  /* ---------- the live layer ----------
+   * These boards did not die, which would at least be dignified. They filled
+   * up with automated accounts posting keyword salad at each other. New
+   * threads arrive on the wall clock; see app/live.js.
+   */
+
+  function liveOn(ctx) {
+    return window.SYNTH.live && window.SYNTH.slop &&
+           arr(window.SYNTH.slop.forumTopics).length > 0;
+  }
+
+  function liveTopics(ctx, count) {
+    var L = window.SYNTH.live;
+    var pool = arr(window.SYNTH.slop.forumTopics);
+    /* Slower than the microblog: a board gets a new thread every 9 minutes,
+     * and most of them are junk. */
+    return L.stream('threads:' + ctx.site.domain, pool, 9, count).map(function (sl) {
+      var t = sl.item, r = L.rng(sl.seed);
+      return {
+        id: 'live-' + sl.slot,
+        title: t.title,
+        author: t.author,
+        kind: t.kind,
+        replies: Math.floor((t.replies || 0) * (0.3 + r() * 0.8)),
+        views: Math.floor((t.views || 0) * (0.3 + r() * 1.4)),
+        at: sl.at
+      };
+    });
+  }
+
+  function liveTopicRows(ctx, count) {
+    var el = ctx.el;
+    if (!liveOn(ctx)) return null;
+    var L = window.SYNTH.live;
+    var rows = liveTopics(ctx, count);
+    if (!rows.length) return null;
+
+    var wrap = el('div', { 'class': 'lv-recent' });
+    wrap.appendChild(el('div', { 'class': 'lv-recent-head' }, 'Active in the last hour'));
+    rows.forEach(function (t) {
+      wrap.appendChild(el('div', { 'class': 'lv-recent-row' },
+        el('span', { 'class': 'lv-recent-title' }, t.title),
+        window.SYNTH.liveui ? window.SYNTH.liveui.badge(t.kind) : null,
+        el('span', { 'class': 'lv-recent-meta' },
+          ' by ' + t.author + ' \u00b7 ' + L.ago(t.at) +
+          ' \u00b7 ' + t.replies + ' replies \u00b7 ' + L.commas(t.views) + ' views')));
+    });
+    return wrap;
+  }
+
   function renderIndex(ctx) {
     var el = ctx.el, d = dat(ctx), mount = ctx.mount;
     var name = txt(d.boardName, txt(ctx.site.title, ctx.site.domain));
     ctx.title(name + ' :: Index');
 
     header(ctx, [{ label: 'Board index' }]).forEach(function (n) { mount.appendChild(n); });
+
+    if (window.SYNTH.liveui) {
+      mount.appendChild(window.SYNTH.liveui.onlineBar(ctx.site.domain, 60, 2400));
+      var topBanner = window.SYNTH.liveui.ad('banner', ctx.site.domain + ':index');
+      if (topBanner) mount.appendChild(topBanner);
+    }
+    var recent = liveTopicRows(ctx, 8);
+    if (recent) mount.appendChild(recent);
 
     var list = cats(ctx);
     if (!list.length) {
@@ -248,6 +307,13 @@
     mount.appendChild(el('div', { 'class': 'tbar' },
       el('span', { 'class': 'tbar-title' }, txt(board.name, 'Forum')),
       el('span', { 'class': 'tbar-sub' }, txt(board.desc))));
+
+    var boardRecent = liveTopicRows(ctx, 6);
+    if (boardRecent) mount.appendChild(boardRecent);
+    if (window.SYNTH.liveui) {
+      var bAd = window.SYNTH.liveui.ad('text', ctx.site.domain + ':' + boardId);
+      if (bAd) mount.appendChild(bAd);
+    }
 
     var list = topicsOfBoard(ctx, boardId).slice(0);
     list.sort(function (a, b) {

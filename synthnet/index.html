@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="theme/skins/wiki.css">
 <link rel="stylesheet" href="theme/skins/media.css">
 <link rel="stylesheet" href="theme/skins/page.css">
+<link rel="stylesheet" href="theme/live.css">
 </head>
 <body>
 
@@ -115,6 +116,15 @@
 
 <script src="app/markup.js"></script>
 <script src="app/render.js"></script>
+<!-- The live layer: a wall-clock-driven simulation of an active network,
+     plus the bot, sponsored and ad content it streams. Loaded before the
+     renderers because they read from it at render time. -->
+<script src="app/live.js"></script>
+<script src="app/liveui.js"></script>
+<script src="app/slop_social.js"></script>
+<script src="app/slop_forum.js"></script>
+<script src="app/slop_ads.js"></script>
+<script src="app/slop_news.js"></script>
 <script src="app/types/forum.js"></script>
 <script src="app/types/social.js"></script>
 <script src="app/types/blog.js"></script>

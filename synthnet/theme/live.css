@@ -1,0 +1,241 @@
+/* live.css -- ads, bot badges, live counters, the breaking-news ticker.
+ *
+ * Kept out of the skin files on purpose: this furniture belongs to the ad
+ * network and the platform, not to any one site, so it looks identical
+ * everywhere. That sameness is the point. Every site on VerityNet is wearing
+ * the same three ad slots.
+ *
+ * All rules are prefixed .lv- so they cannot collide with a skin or with the
+ * browser chrome.
+ */
+
+/* --- badges ----------------------------------------------------------- */
+
+.lv-badge {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-size: 9px;
+  font-weight: bold;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+/* #595959 on #e8e8e8 is 6.1:1; the badge is 9px so it needs the headroom. */
+.lv-badge-bot { background: #e8e8e8; color: #595959; border: 1px solid #c9c9c9; }
+.lv-badge-spam { background: #ffe6e6; color: #a11111; border: 1px solid #f0bcbc; }
+.lv-badge-promoted,
+.lv-badge-sponsored {
+  background: #fff4d6; color: #6b4b00; border: 1px solid #e3cf95;
+  text-transform: none; letter-spacing: 0;
+}
+
+.lv-verified {
+  display: inline-block;
+  margin-left: 4px;
+  color: #1c74bb;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+/* --- ads --------------------------------------------------------------- */
+
+.lv-ad {
+  position: relative;
+  border: 1px solid #c8c8c8;
+  padding: 9px 26px 9px 10px;
+  margin: 10px 0;
+  font-family: Tahoma, Verdana, "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+.lv-ad-tag {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+  margin-bottom: 3px;
+}
+
+.lv-ad-head { font-size: 14px; font-weight: bold; line-height: 1.25; }
+.lv-ad-body { font-size: 11px; line-height: 1.35; margin-top: 4px; opacity: 0.92; }
+
+.lv-ad-cta {
+  display: inline-block;
+  margin-top: 7px;
+  padding: 3px 11px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.lv-ad-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font-size: 13px;
+  line-height: 1;
+  opacity: 0.45;
+  cursor: default;
+}
+
+.lv-ad-banner { min-height: 58px; }
+.lv-ad-box { max-width: 320px; }
+.lv-ad-text { padding: 6px 26px 6px 10px; }
+.lv-ad-text .lv-ad-head { font-size: 12px; }
+
+/* An ad inside a feed, pretending to be a post. */
+.lv-ad-inline { margin: 8px 0; border-style: dashed; }
+
+.lv-ad-interstitial {
+  border-width: 2px;
+  text-align: center;
+  padding: 18px 26px;
+}
+.lv-ad-interstitial .lv-ad-head { font-size: 17px; }
+
+/* --- live counters ----------------------------------------------------- */
+
+.lv-online {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #3f4b54;
+  padding: 5px 8px;
+  background: #eef3f8;
+  border: 1px solid #cfdce7;
+  margin: 8px 0;
+}
+
+.lv-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #2faa4a;
+  display: inline-block;
+  /* A slow pulse. Subtle enough not to be irritating on a page you read. */
+  animation: lv-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes lv-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.lv-online-sep { opacity: 0.45; }
+.lv-online-bots { color: #8a5a00; }
+
+/* --- ticker ------------------------------------------------------------ */
+
+.lv-ticker {
+  display: flex;
+  align-items: stretch;
+  background: #1b1b1b;
+  color: #f2f2f2;
+  font-size: 11px;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.lv-ticker-label {
+  flex: 0 0 auto;
+  background: #c01717;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  padding: 4px 8px;
+  align-self: center;
+}
+
+.lv-ticker-win { flex: 1 1 auto; overflow: hidden; position: relative; }
+
+.lv-ticker-rail {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 4px 0 4px 100%;
+  animation: lv-scroll 48s linear infinite;
+}
+
+.lv-ticker-item { padding: 0 10px; }
+.lv-ticker-dot { opacity: 0.4; font-size: 7px; vertical-align: middle; }
+
+@keyframes lv-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Motion is decorative here. Anyone who has asked the OS to stop moving
+   things gets a static strip rather than nothing. */
+@media (prefers-reduced-motion: reduce) {
+  .lv-ticker-rail { animation: none; padding-left: 8px; }
+  .lv-dot { animation: none; }
+}
+
+/* --- feed furniture ---------------------------------------------------- */
+
+.lv-time { color: #6a757d; font-size: 11px; }
+
+/* A post the platform is showing you because someone paid. */
+.lv-promoted-row {
+  background: #fffdf5;
+  border-left: 3px solid #e3b23c;
+}
+
+.lv-bot-row { background: #fbfbfb; }
+
+/* The counter under a thread that keeps going up while you read it. */
+.lv-livecount { font-size: 11px; color: #6a757d; }
+
+/* --- phone ------------------------------------------------------------- */
+
+@media (max-width: 520px) {
+  .lv-ad { padding: 8px 22px 8px 8px; }
+  .lv-ad-head { font-size: 13px; }
+  .lv-ad-interstitial { padding: 14px 18px; }
+  .lv-online { font-size: 10px; gap: 4px; }
+  .lv-ticker { font-size: 10px; }
+}
+
+/* --- "active now" strip, used by the forum index and board pages ------- */
+
+.lv-recent {
+  border: 1px solid #cfdce7;
+  background: #fbfdff;
+  margin: 8px 0;
+}
+
+.lv-recent-head {
+  background: #e4eef7;
+  border-bottom: 1px solid #cfdce7;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #2c4a63;
+}
+
+.lv-recent-row {
+  padding: 5px 8px;
+  border-bottom: 1px solid #edf3f8;
+  font-size: 12px;
+}
+.lv-recent-row:last-child { border-bottom: 0; }
+
+.lv-recent-title { color: #1a4d7a; }
+/* #62707b on #fbfdff is 4.8:1 at 11px. */
+.lv-recent-meta { color: #62707b; font-size: 11px; }
+
+.synth-b-stat {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #6b4b00;
+  background: #fff8e5;
+  border: 1px solid #e8d8a8;
+  padding: 4px 8px;
+  display: inline-block;
+}
+.synth-b-stat-src { opacity: 0.75; }

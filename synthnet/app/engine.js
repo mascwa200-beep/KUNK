@@ -576,7 +576,14 @@ window.SYNTH = window.SYNTH || {};
     var list = registryList();
     mount.appendChild(el('div', { class: 'synth-b-head' },
       el('div', { class: 'synth-b-title' }, 'VerityNet Start Page'),
-      el('div', { class: 'synth-b-sub' }, 'Your directory to the Verity County network — ' + list.length + ' sites indexed')
+      el('div', { class: 'synth-b-sub' }, 'Your directory to the Verity County network — ' + list.length + ' sites indexed'),
+      /* The number that says the quiet part. It drifts hourly, because a
+       * figure that never moves is the tell that a page is a screenshot. */
+      SYNTH.liveui
+        ? el('div', { class: 'synth-b-stat' },
+            SYNTH.liveui.automatedShare() + '% of VerityNet traffic in the last 24h was automated',
+            el('span', { class: 'synth-b-stat-src' }, ' \u2014 VerityNet Transparency Report'))
+        : null
     ));
 
     var body = el('div', { class: 'synth-b-body' });

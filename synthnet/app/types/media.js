@@ -139,10 +139,21 @@
             ? ctx.link('/channel/' + encodeURIComponent(txt(item.channelId)), txt(item.uploader, 'unknown'), 'up')
             : el('span', { 'class': 'up' }, txt(item.uploader, 'unknown'))),
         el('div', { 'class': 'card-meta dim' },
-          num(item.views) + ' views  •  ' + txt(item.uploaded, 'some time ago'))));
+          liveViews(item) + ' views  •  ' + txt(item.uploaded, 'some time ago'))));
   }
 
   /* ---------- index ---------- */
+
+
+  /* A view count that has not moved since 2007 is the single clearest sign
+   * that a page is dead. These keep climbing, faster for the automated
+   * channels, because the bot network watches its own uploads. */
+  function liveViews(item) {
+    var L = window.SYNTH.live;
+    if (!L) return num(item.views);
+    var perDay = 40 + (L.hash32(String(item.id)) % 220);
+    return L.commas(L.counter('views:' + item.id, item.views || 0, perDay));
+  }
 
   function renderIndex(ctx) {
     var el = ctx.el, mount = ctx.mount, d = dat(ctx);
@@ -227,7 +238,7 @@
     main.appendChild(playerBlock(ctx, item));
     main.appendChild(el('h1', { 'class': 'vtitle' }, txt(item.title, 'Untitled clip')));
     main.appendChild(el('div', { 'class': 'vmeta' },
-      num(item.views) + ' views  •  Added ' + txt(item.uploaded, 'some time ago')));
+      liveViews(item) + ' views  •  Added ' + txt(item.uploaded, 'some time ago')));
 
     var subBtn = el('button', {
       'class': 'subscribe', type: 'button',
@@ -255,10 +266,34 @@
     main.appendChild(el('div', { 'class': 'descbox' },
       el('div', { 'class': 'desc-head' }, 'Description'), desc));
 
-    var comments = arr(item.comments);
+    /* The archived comments from 2007, plus everything the bots have left
+     * since. The new ones arrive on the wall clock and carry a badge, so the
+     * ratio is visible at a glance -- which is the whole point. */
+    var archived = arr(item.comments);
+    var fresh = [];
+    if (window.SYNTH.live && window.SYNTH.slop &&
+        arr(window.SYNTH.slop.mediaComments).length) {
+      var L = window.SYNTH.live;
+      fresh = L.stream('c:' + item.id, arr(window.SYNTH.slop.mediaComments), 6, 14)
+        .map(function (sl) {
+          return {
+            author: sl.item.author,
+            avatarSeed: sl.item.avatarSeed,
+            kind: sl.item.kind,
+            body: sl.item.body,
+            liveAt: sl.at
+          };
+        });
+    }
+    var comments = fresh.concat(archived);
+
     var clist = el('div', { 'class': 'comments' },
       el('div', { 'class': 'sec-head small' },
         num(comments.length) + ' comment' + (comments.length === 1 ? '' : 's')));
+    if (window.SYNTH.liveui && fresh.length) {
+      var cAd = window.SYNTH.liveui.ad('text', 'media:' + item.id);
+      if (cAd) clist.appendChild(cAd);
+    }
     if (!comments.length) {
       clist.appendChild(el('div', { 'class': 'blank' }, 'No comments were archived for this clip.'));
     }
@@ -271,7 +306,9 @@
         el('div', { 'class': 'c-main' },
           el('div', { 'class': 'c-head' },
             el('span', { 'class': 'c-name' }, txt(c.author, 'guest')),
-            el('span', { 'class': 'c-time' }, txt(c.time))),
+            (window.SYNTH.liveui ? window.SYNTH.liveui.badge(c.kind) : null),
+            el('span', { 'class': 'c-time' },
+              c.liveAt && window.SYNTH.live ? window.SYNTH.live.ago(c.liveAt) : txt(c.time))),
           body)));
     });
     clist.appendChild(el('div', { 'class': 'c-postbox' },
