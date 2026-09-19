@@ -328,7 +328,12 @@ window.SYNTH = window.SYNTH || {};
   /* -------------------------------------------------------------------- chat */
 
   function bubble(ctx, m) {
-    var MK = ctx.markup || SYNTH.markup;
+    /* ctx.markup IS the parse function; SYNTH.markup is the namespace
+     that has .parse on it. Normalise here so the call sites below can
+     just invoke MK(text). */
+    var MK = (typeof ctx.markup === 'function')
+      ? ctx.markup
+      : function (t) { return SYNTH.markup.parse(t); };
     var row = E('div', { 'class': 'msg ' + (m.role === 'user' ? 'me' : 'bot') });
     var meta = E('div', { 'class': 'meta' });
     meta.appendChild(E('span', { 'class': 'who' }, m.role === 'user' ? 'You' : txt(m.who || 'Assistant')));
@@ -336,14 +341,14 @@ window.SYNTH = window.SYNTH || {};
     meta.appendChild(E('span', { 'class': 'when' }, ago(m.at)));
     row.appendChild(meta);
     var b = E('div', { 'class': 'bubble' });
-    b.appendChild(MK.parse(txt(m.body)));
+    b.appendChild(MK(txt(m.body)));
     row.appendChild(b);
     if (m.sources && m.sources.length) {
       var src = E('div', { 'class': 'sources' });
       src.appendChild(E('span', { 'class': 'srclabel' }, 'Sources'));
       var i;
       for (i = 0; i < m.sources.length; i++) {
-        src.appendChild(MK.parse('[url=synth://' + m.sources[i].domain + '/]' + m.sources[i].label + '[/url]'));
+        src.appendChild(MK('[url=synth://' + m.sources[i].domain + '/]' + m.sources[i].label + '[/url]'));
       }
       row.appendChild(src);
     }

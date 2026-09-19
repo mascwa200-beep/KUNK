@@ -18,11 +18,13 @@ on:
     paths:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
+      - ".github/scripts/synthnet_user_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
+      - ".github/scripts/synthnet_user_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -121,6 +123,15 @@ jobs:
           pip install --quiet playwright
           python3 -m playwright install --with-deps chromium
           python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
+
+      - name: Posting, replies, fame, packs and persistence
+        # The render test proves pages draw. It cannot prove the site does
+        # anything: that a post gets replies referencing what was written,
+        # that fame progresses, that a content pack survives an export/wipe/
+        # import round trip, or that any of it outlives a reload. Every one of
+        # those fails silently with the page still rendering perfectly, which
+        # is the failure mode that has already shipped twice here.
+        run: python3 .github/scripts/synthnet_user_check.py --root synthnet
 
       - name: Build the Android app
         # ubuntu-latest ships the Android SDK, and the app uses only framework

@@ -436,7 +436,14 @@ window.SYNTH = window.SYNTH || {};
     }
     if (live) {
       for (i = 0; i < live.length; i++) {
-        var lc = live[i];
+        /* SYNTH.live.stream() yields wrappers -- {slot, at, item, seed} --
+         * not the pooled entries themselves. Treating the wrapper as the
+         * entry meant every field lookup missed and the fallback stringified
+         * an object, so every live comment on every video read
+         * "[object Object]". */
+        var wrapped = live[i];
+        var lc = (wrapped && wrapped.item !== undefined) ? wrapped.item : wrapped;
+        var lcAt = (wrapped && wrapped.at) ? wrapped.at : nowMs();
         var obj = typeof lc === 'string'
           ? { by: 'guest_' + (hash32(lc) % 9000), kind: 'bot', body: lc, likes: 0, at: nowMs() }
           : lc;
@@ -445,7 +452,7 @@ window.SYNTH = window.SYNTH || {};
           kind: obj.kind || 'bot',
           body: obj.body || obj.text || String(lc),
           likes: obj.likes || 0,
-          at: obj.at || nowMs()
+          at: obj.at || lcAt
         }, ctx.site.domain + ':lc:' + v.id + ':' + i));
       }
     }

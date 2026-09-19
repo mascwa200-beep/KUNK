@@ -63,11 +63,18 @@ window.SYNTH = window.SYNTH || {};
   }
 
   function body(ctx, text) {
-    var m = (ctx && ctx.markup) || S.markup;
-    if (m && typeof m.parse === 'function') {
-      try { return m.parse(String(text == null ? '' : text)); } catch (e) {}
+    var str = String(text == null ? '' : text);
+    /* Two different shapes carry the parser: ctx.markup IS the function, while
+     * SYNTH.markup is the namespace with .parse on it. Checking only for
+     * .parse meant ctx.markup never matched, every user post silently fell
+     * back to plain text, and typing [b]bold[/b] showed the tags. */
+    if (ctx && typeof ctx.markup === 'function') {
+      try { return ctx.markup(str); } catch (e) {}
     }
-    return txt(text);
+    if (S.markup && typeof S.markup.parse === 'function') {
+      try { return S.markup.parse(str); } catch (e) {}
+    }
+    return txt(str);
   }
 
   function badge(kind) {
@@ -381,8 +388,13 @@ window.SYNTH = window.SYNTH || {};
             ' likes. You have been ratioed.')));
     }
 
-    if (post.analysis) {
-      node.appendChild(el('div', { 'class': 'cw-analysis' }, txt(String(post.analysis))));
+    if (post.analysis && post.analysis.topics && post.analysis.topics.length) {
+      /* Showing the classification is not debug output left in by accident --
+       * it is the tell that explains the replies. When four bots answer a post
+       * about a bereavement with brand copy, seeing "read as: grief" is the
+       * joke completing itself. */
+      node.appendChild(el('div', { 'class': 'cw-analysis' },
+        txt('read as: ' + post.analysis.topics.join(', '))));
     }
 
     /* replies */

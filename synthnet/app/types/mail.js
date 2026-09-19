@@ -324,7 +324,12 @@ window.SYNTH = window.SYNTH || {};
   var SMART = ['Thanks, received.', 'Please remove this address.', 'Who is this?'];
 
   function readPane(ctx, d, folderId, msg) {
-    var MK = ctx.markup || SYNTH.markup;
+    /* ctx.markup IS the parse function; SYNTH.markup is the namespace
+     that has .parse on it. Normalise here so the call sites below can
+     just invoke MK(text). */
+    var MK = (typeof ctx.markup === 'function')
+      ? ctx.markup
+      : function (t) { return SYNTH.markup.parse(t); };
     var domain = ctx.site.domain;
     var pane = E('section', { 'class': 'pane pane-read' });
 
@@ -352,7 +357,7 @@ window.SYNTH = window.SYNTH || {};
     }
 
     var body = E('div', { 'class': 'body' });
-    body.appendChild(MK.parse(txt(msg.body)));
+    body.appendChild(MK(txt(msg.body)));
     pane.appendChild(body);
 
     if (msg.attachments && msg.attachments.length) {

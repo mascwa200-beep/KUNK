@@ -29,7 +29,11 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 # Substrings that must never reach the rendered page. Each one means a renderer
 # passed a markup-bearing string through as plain text.
-LEAK_MARKERS = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:", "[list]", "[code]"]
+LEAK_MARKERS = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:", "[list]", "[code]",
+                # Not markup, but the same class of defect: a value that
+                # rendered instead of being read. String(someObject) shipped
+                # visibly on every user post once.
+                "[object Object]", "undefined undefined", "NaN"]
 
 # One representative path per site type, formatted with the first id found.
 # Kept in sync with the path table in synthnet/docs/AUTHORING.md.
@@ -41,6 +45,20 @@ TYPE_PROBES = {
     "wiki": ["/", "/wiki/{article}"],
     "media": ["/", "/watch/{item}"],
     "page": ["/"],
+    # The 2026 types. Without their sub-paths listed here only the index of
+    # each was ever loaded, leaving most of every new renderer unexercised --
+    # and an index that works says nothing about the detail page.
+    "aggregator": ["/", "/item/{link}"],
+    "qa": ["/", "/q/{question}"],
+    "board": ["/", "/t/{thread}"],
+    "shop": ["/", "/p/{product}"],
+    "market": ["/", "/l/{listing}"],
+    "assistant": ["/", "/chat"],
+    "mail": ["/", "/m/{message}"],
+    "portal": ["/", "/s/{service}"],
+    "stream": ["/", "/w/{video}"],
+    "dash": ["/"],
+    "control": ["/", "/packs", "/me", "/storage"],
 }
 
 
@@ -82,6 +100,14 @@ def probes_for(site: dict) -> list:
         "post": first_id(data, "feed", "posts"),
         "article": first_id(data, "articles"),
         "item": first_id(data, "items"),
+        "link": first_id(data, "links"),
+        "question": first_id(data, "questions"),
+        "thread": first_id(data, "threads"),
+        "product": first_id(data, "products"),
+        "listing": first_id(data, "listings"),
+        "message": first_id(data, "messages"),
+        "service": first_id(data, "services"),
+        "video": first_id(data, "videos"),
     }
     for cat in data.get("categories") or []:
         if isinstance(cat, dict):

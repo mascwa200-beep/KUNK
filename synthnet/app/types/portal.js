@@ -285,7 +285,12 @@ window.SYNTH = window.SYNTH || {};
 
   function renderService(ctx, d, s) {
     ctx.title(txt(s.name) + ' — ' + (txt(d.agency) || txt(ctx.site.domain)));
-    var MK = ctx.markup || SYNTH.markup;
+    /* ctx.markup IS the parse function; SYNTH.markup is the namespace
+     that has .parse on it. Normalise here so the call sites below can
+     just invoke MK(text). */
+    var MK = (typeof ctx.markup === 'function')
+      ? ctx.markup
+      : function (t) { return SYNTH.markup.parse(t); };
     var root = E('div', { 'class': 'govsite' });
     root.appendChild(masthead(ctx, d));
 
@@ -309,7 +314,7 @@ window.SYNTH = window.SYNTH || {};
     head.appendChild(st);
     if (s.blurb) {
       var bl = E('div', { 'class': 'svcblurb big' });
-      bl.appendChild(MK.parse(txt(s.blurb)));
+      bl.appendChild(MK(txt(s.blurb)));
       head.appendChild(bl);
     }
     col.appendChild(head);
@@ -321,7 +326,7 @@ window.SYNTH = window.SYNTH || {};
       var i;
       for (i = 0; i < s.steps.length; i++) {
         var li = E('li', {});
-        li.appendChild(MK.parse(txt(s.steps[i])));
+        li.appendChild(MK(txt(s.steps[i])));
         ol.appendChild(li);
       }
       stepsSec.appendChild(ol);

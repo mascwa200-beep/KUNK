@@ -1467,7 +1467,37 @@ window.SYNTH = window.SYNTH || {};
 
     var h = String(location.hash || '').replace(/^#/, '');
     var start = /^synth:\/\//i.test(h) ? h : HOME_URL;
-    navigate(start, { push: false });
+
+    /* Wait for storage before the first render.
+     *
+     * Renderers build DOM synchronously and cannot await, so they read the
+     * account straight out of the in-memory mirror. IndexedDB opens
+     * asynchronously, so a cold start used to draw the first page before the
+     * mirror was filled: your account looked missing, the composer offered to
+     * sign you up again, and your own posts were absent -- until you navigated
+     * once, at which point everything reappeared. Nothing was lost, but it
+     * read exactly like data loss, which is worse.
+     *
+     * Storage failing is not a reason to show nothing, so the failure path
+     * navigates anyway and the site runs in its logged-out state. */
+    if (SYNTH.store && SYNTH.store.ready) {
+      var go = function () { navigate(start, { push: false }); };
+      var ready = SYNTH.store.ready();
+      var settled = false;
+      var once = function () { if (!settled) { settled = true; go(); } };
+      if (ready && typeof ready.then === 'function') {
+        ready.then(function () {
+          return (SYNTH.me && SYNTH.me.ready) ? SYNTH.me.ready() : null;
+        }).then(once, once);
+        /* Belt and braces: a storage layer that never settles must not leave
+         * the app on a blank screen forever. */
+        setTimeout(once, 3000);
+      } else {
+        go();
+      }
+    } else {
+      navigate(start, { push: false });
+    }
   }
 
   SYNTH.engine = {
