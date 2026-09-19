@@ -113,22 +113,22 @@ Rail branch-line closure, a roadside numbers-station myth called "the Signal on
 62", and a closed diner called the Blue Kestrel - so cross-links between sites
 land on something real.
 
-Seed sites:
+Seed sites, generated from `net/registry.json` rather than typed by hand,
+because an earlier version of this list named five domains that do not
+exist:
 
-- `boards.gridfall.net` - forum. County-wide message board; the substation fire
-  thread, parking arguments, a locked flame war.
-- `wiki.gridfall.net` - wiki. Reference articles on the county, the fire, the
-  rail branch, the Signal on 62.
-- `veritycountyledger.net` - news. Local paper; sections for county news,
-  business, and letters.
-- `chatterbox.gridfall.net` - social. Profiles, a short feed, replies, friend
-  lists.
-- `kestrelkitchen.gridfall.net` - blog. Recipes and remembrance of the Blue
-  Kestrel diner, with comments and a blogroll.
-- `clipstream.gridfall.net` - media. Uploaded clips with channels, view counts
-  and comment threads.
-- `home.gridfall.net` - page. Personal homepages with a hit counter, a
-  guestbook, a webring and a marquee.
+- `boards.gridfall.net` - forum. General-purpose message board for Gridfall and the rest of Verity County.
+- `forums.verityrail.org` - forum. Discussion board for the Verity Rail line, its branches, and the people who photograph them.
+- `marla.verity.net` - social. Personal page belonging to Marla Kesswick of Marchfield, updated whenever she feels like it.
+- `pulse.gridfall.net` - social. A small microblog for Gridfall and the rest of Verity County. Mostly road closures.
+- `codeandcoffee.blog` - blog. Dave Carrow writes about servers, county networking, and things he has measured in Verity County.
+- `kestrel-journal.net` - blog. Jo Halloran's journal, written mostly after shifts at the Blue Kestrel diner in Gridfall.
+- `verityledger.com` - news. The Verity County paper of record, published in Gridfall since 1901.
+- `wiki.gridfall.net` - wiki. A community-maintained wiki covering Verity County, its towns, institutions and arguments.
+- `clipvault.tv` - media. Video uploads from around Verity County: camcorder tape, rail footage, hall shows, tool demos and radio recordings.
+- `stargazers.verity.net` - page. Home page of the Verity County Amateur Astronomers, meeting monthly since 1978 and observing from Perrin Hill.
+- `tnorris.verity.net` - page. The page of Thomas Norris, retired Verity County surveyor, including a detailed account of the flood of June 1994.
+- `webring.gridfall.net` - page. Hub of the Gridfall Webring, linking personal and community sites in and about Verity County.
 
 Exact domains and descriptions for the current set are in `net/registry.json`
 after a build; that file is generated, so treat it as the source of truth over
