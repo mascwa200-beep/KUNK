@@ -146,6 +146,40 @@
 
     /* ---------- routes ---------- */
 
+
+    /* The wire that never stops. Most of what the Ledger publishes now is
+     * generated, filed under a byline that is a product name, and the human
+     * pieces sit underneath it. Arrivals are wall-clock driven; see
+     * app/live.js. */
+    function liveWire(count) {
+      if (!window.SYNTH.live || !window.SYNTH.slop) return null;
+      var pool = window.SYNTH.slop.newsItems || [];
+      if (!pool.length) return null;
+      var L = window.SYNTH.live;
+      var rows = L.stream('wire:' + site.domain, pool, 7, count);
+      if (!rows.length) return null;
+
+      var box = el('div', { class: 'news-wire' });
+      box.appendChild(el('div', { class: 'news-wire-head' },
+        'Filed in the last hour',
+        el('span', { class: 'news-wire-sub' },
+          ' \u00b7 ' + L.commas(L.counter('wire:' + site.domain, 41820, 380)) +
+          ' stories published this year')));
+
+      rows.forEach(function (r) {
+        var it = r.item;
+        box.appendChild(el('div', { class: 'news-wire-row' },
+          el('span', { class: 'news-wire-sec' }, String(it.section || 'Local')),
+          el('span', { class: 'news-wire-title' }, String(it.headline || '')),
+          (window.SYNTH.liveui
+            ? window.SYNTH.liveui.badge(it.kind === 'sponsored' ? 'sponsored' : it.kind)
+            : null),
+          el('span', { class: 'news-wire-meta' },
+            ' ' + String(it.byline || 'Staff') + ' \u00b7 ' + L.ago(r.at))));
+      });
+      return box;
+    }
+
     if (path.length === 0) {
       ctx.title(String(data.masthead || site.title || 'News'));
       if (!articles.length) {
@@ -167,6 +201,8 @@
       for (i = 0; i < ordered.length; i++) { grid.appendChild(gridItem(ordered[i])); }
 
       ctx.mount.appendChild(shell([
+        liveWire(9),
+        (window.SYNTH.liveui ? window.SYNTH.liveui.ad('banner', site.domain + ':front') : null),
         el('div', { class: 'news-lead' },
           el('h2', { class: 'news-lead-head' },
             link(href(lead), String(lead.headline || 'Untitled'))),

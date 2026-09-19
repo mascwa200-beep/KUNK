@@ -8,6 +8,25 @@ Everything is fabricated. Nothing in it connects to the real internet.
 It is built to run on a phone, offline, with no server and no installation, and
 to still be a real thing you can sit and read.
 
+## It is live
+
+VerityNet is not an archive. Open it twice an hour apart and the microblog has
+new posts, the boards have new threads, view counts have climbed and the
+"users online" figure has moved with the time of day.
+
+There is no server doing that, and nothing is stored. Everything live is a pure
+function of the wall clock: a slot number derived from minutes elapsed, and a
+hash of that slot picking from a pool. Deterministic within a minute, so the
+page does not reshuffle while you read it; different an hour later; different
+again next week.
+
+What fills those slots is the joke. Most of VerityNet is automated now --
+engagement farms, content mills, answer bots confidently wrong about local
+history, SEO spam, bought posts disclosed in the smallest available type, and
+an ad network on every page. A few humans are still posting into it. The start
+page reports what share of the last day's traffic was automated; the forums
+report how many of the accounts online are.
+
 ## Running it
 
 Three modes. They show the same content.

@@ -205,13 +205,49 @@
         el('div', { class: 'blog-box-body' }, body));
     }
 
+
+    /* Content farms scraping the neighbourhood. These are not this blog's
+     * posts -- they are other people's, rewritten by something that read
+     * them. On kestrel-journal.net in particular the farm is quietly
+     * republishing its own host, which is the joke and also roughly what
+     * happens. */
+    function aroundTheWeb() {
+      if (!window.SYNTH.live || !window.SYNTH.slop) return null;
+      var pool = window.SYNTH.slop.blogPosts || [];
+      if (!pool.length) return null;
+      var L = window.SYNTH.live;
+      var rows = L.stream('farm:' + site.domain, pool, 13, 6);
+      if (!rows.length) return null;
+
+      var list = el('ul', { class: 'blog-farm' });
+      rows.forEach(function (r) {
+        var it = r.item;
+        list.appendChild(el('li', { class: 'blog-farm-row' },
+          el('span', { class: 'blog-farm-title' }, String(it.title || '')),
+          (window.SYNTH.liveui && it.kind !== 'human'
+            ? window.SYNTH.liveui.badge(it.kind === 'sponsored' ? 'sponsored' : it.kind)
+            : null),
+          el('span', { class: 'blog-farm-meta' },
+            ' ' + String(it.blog || 'unknown') + ' \u00b7 ' + L.ago(r.at))));
+      });
+      return list;
+    }
+
     function sidebar() {
-      return el('div', { class: 'blog-side' },
+      var side = el('div', { class: 'blog-side' },
         box('About', el('div', { class: 'blog-about' },
           markup(String(data.about || site.description || '')))),
         box('Tags', tagCloud()),
         box('Archives', archive()),
         box('Blogroll', blogroll()));
+
+      var farm = aroundTheWeb();
+      if (farm) side.appendChild(box('Around VerityNet', farm));
+      if (window.SYNTH.liveui) {
+        var a = window.SYNTH.liveui.ad('box', site.domain + ':side');
+        if (a) side.appendChild(a);
+      }
+      return side;
     }
 
     function shell(mainChildren) {

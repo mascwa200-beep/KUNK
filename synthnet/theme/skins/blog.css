@@ -389,3 +389,26 @@
   .skin-kubrick-blue .blog-head { padding: 18px 12px 14px; }
   .skin-kubrick-blue .blog-cols { padding: 12px; }
 }
+
+/* --- "Around VerityNet": scraped and rewritten posts from content farms -- */
+
+.skin-movabletype-cream .blog-farm,
+.skin-kubrick-blue .blog-farm { list-style: none; margin: 0; padding: 0; }
+
+.skin-movabletype-cream .blog-farm-row,
+.skin-kubrick-blue .blog-farm-row {
+  padding: 5px 0;
+  border-bottom: 1px dotted #c9c0a6;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.skin-kubrick-blue .blog-farm-row { border-bottom-color: #d4dde4; }
+.skin-movabletype-cream .blog-farm-row:last-child,
+.skin-kubrick-blue .blog-farm-row:last-child { border-bottom: 0; }
+
+.skin-movabletype-cream .blog-farm-title { color: #4a4127; display: block; }
+.skin-kubrick-blue .blog-farm-title { color: #234b6b; display: block; }
+
+/* #6b5f40 on the cream card is 5.6:1; #566672 on white is 5.9:1. */
+.skin-movabletype-cream .blog-farm-meta { color: #6b5f40; font-size: 11px; }
+.skin-kubrick-blue .blog-farm-meta { color: #566672; font-size: 11px; }
