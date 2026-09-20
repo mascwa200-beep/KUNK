@@ -254,3 +254,66 @@
   .skin-monobook .wiki-infobox { font-size: 0.82em; }
   .skin-monobook .wiki-infobox-label { width: 45%; }
 }
+
+/* --- revision history --------------------------------------------------
+ *
+ * A wiki whose articles were last edited in 2007 is a PDF. These lines are
+ * derived from the clock rather than authored, and what they show if you
+ * read them is the canon mechanic: bots "correcting" a date to the version
+ * the content farms carry, and one person reverting them, neither stopping.
+ */
+
+.skin-monobook .wiki-sincebar {
+  margin: 0 0 10px 0;
+  padding: 5px 9px;
+  font-size: 12px;
+  background: #fdf6e3;
+  border: 1px solid #e0d5a8;
+}
+
+/* #6b5200 on #fdf6e3 is 6.4:1. */
+.skin-monobook .wiki-sincebar strong { color: #6b5200; }
+.skin-monobook .wiki-sincebots { color: #6b5200; }
+
+.skin-monobook .wiki-history {
+  margin-top: 22px;
+  padding-top: 10px;
+  border-top: 1px solid #a7d7f9;
+  font-size: 12px;
+  /* #4c5b66 on #fff is 7.1:1. */
+  color: #4c5b66;
+}
+
+.skin-monobook .wiki-editor-human { font-weight: bold; color: #0645ad; }
+.skin-monobook .wiki-editor-bot,
+.skin-monobook .wiki-editor-anon { color: #5a6570; }
+.skin-monobook .wiki-editsummary { font-style: italic; }
+
+.skin-monobook .wiki-revbox { margin-top: 7px; }
+.skin-monobook .wiki-revbox summary { cursor: pointer; color: #0645ad; }
+
+.skin-monobook .wiki-revlist {
+  margin: 7px 0 0 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid #e6e6e6;
+}
+
+.skin-monobook .wiki-rev {
+  padding: 3px 0 3px 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+}
+
+/* The one human edit in a column of automated ones should be findable. */
+.skin-monobook .wiki-rev-human { border-left: 2px solid #0645ad; margin-left: -2px; }
+
+.skin-monobook .wiki-revwhen { min-width: 82px; color: #6a747d; }
+.skin-monobook .wiki-revwho { font-weight: bold; }
+.skin-monobook .wiki-revsummary { font-style: italic; flex: 1 1 14ch; }
+
+@media (max-width: 700px) {
+  .skin-monobook .wiki-revwhen { min-width: 0; }
+}

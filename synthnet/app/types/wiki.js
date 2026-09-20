@@ -101,6 +101,132 @@
       return table;
     }
 
+    /* ---------- revisions -------------------------------------------------
+     *
+     * A wiki whose articles were last edited in 2007 is a PDF. These are
+     * derived rather than authored: an article picks up an edit every few
+     * hours on the wall clock, from a pool of editors weighted the way this
+     * one actually is in 2026 -- almost entirely bots, and Karen Fennimore.
+     *
+     * The mechanic is canon (docs/WORLD.md section 4): bots "correct" the
+     * substation fire from 2003 to 2004, because that is what the content
+     * farms say, and she reverts them about twice a week. Neither of them
+     * stops. Nothing here says that out loud; it is just what the history
+     * shows if you read it.
+     */
+    var EDIT_INTERVAL_MIN = 190;
+
+    var EDITORS = [
+      { who: 'kfennimore', kind: 'human' },
+      { who: 'WikiTidyBot', kind: 'bot' },
+      { who: 'CiteFixer_v2', kind: 'bot' },
+      { who: 'AutoLocal_Feed', kind: 'bot' },
+      { who: 'VerityPulseAI', kind: 'bot' },
+      { who: 'LinkRot_Patrol', kind: 'bot' },
+      { who: '198.51.100.44', kind: 'anon' },
+      { who: 'WikiTidyBot', kind: 'bot' },
+      { who: 'CiteFixer_v2', kind: 'bot' }
+    ];
+
+    var BOT_SUMMARIES = [
+      'automated consistency pass',
+      'updated date to match cited source',
+      'added citation needed',
+      'formatting',
+      'linked related entity',
+      'removed dead external reference',
+      'standardised infobox fields'
+    ];
+
+    var HUMAN_SUMMARIES = [
+      'rv — source for that is the article that got it wrong',
+      'date corrected, see Ledger 12 Jun 2003 p1',
+      'added reel and page for the citation',
+      'rv, again',
+      'tidied, no change of substance',
+      'this is the third time this month'
+    ];
+
+    function L() { return SYNTH.live; }
+
+    /* Revisions for one article, newest first. Pure function of the clock. */
+    function revisionsFor(art, count) {
+      var live = L();
+      if (!live || typeof live.stream !== 'function') { return []; }
+      var rows = live.stream('wiki:' + site.domain + ':' + art.id,
+                             EDITORS, EDIT_INTERVAL_MIN, count || 8);
+      var out = [];
+      for (var i = 0; i < rows.length; i++) {
+        var ed = rows[i].item || EDITORS[0];
+        var summaries = ed.kind === 'human' ? HUMAN_SUMMARIES : BOT_SUMMARIES;
+        out.push({
+          at: rows[i].at,
+          who: ed.who,
+          kind: ed.kind,
+          summary: summaries[live.hash32(rows[i].seed + ':s') % summaries.length]
+        });
+      }
+      return out;
+    }
+
+    function lastVisit() {
+      if (!SYNTH.alerts || typeof SYNTH.alerts.lastVisit !== 'function') { return 0; }
+      try { return SYNTH.alerts.lastVisit(site.domain) || 0; } catch (e) { return 0; }
+    }
+
+    function agoText(ms) {
+      var live = L();
+      return (live && typeof live.ago === 'function') ? live.ago(ms) : '';
+    }
+
+    /* Wikipedia's "diff since your last visit", which is the affordance that
+     * makes a watchlist worth having. */
+    function sinceYouLooked(revs) {
+      var since = lastVisit();
+      if (!since || !revs.length) { return null; }
+      var fresh = [];
+      for (var i = 0; i < revs.length; i++) {
+        if (revs[i].at > since) { fresh.push(revs[i]); }
+      }
+      if (!fresh.length) { return null; }
+      var bots = 0;
+      for (var j = 0; j < fresh.length; j++) { if (fresh[j].kind !== 'human') bots++; }
+      return el('div', { class: 'wiki-sincebar' },
+        el('strong', null, fresh.length === 1
+          ? '1 edit since you last looked'
+          : fresh.length + ' edits since you last looked'),
+        el('span', { class: 'wiki-sincebots' },
+          bots === fresh.length
+            ? ' — all of them automated'
+            : ' — ' + bots + ' automated'));
+    }
+
+    function historyFoot(art) {
+      var revs = revisionsFor(art, 8);
+      if (!revs.length) { return null; }
+      var foot = el('div', { class: 'wiki-history' });
+      foot.appendChild(el('div', { class: 'wiki-lastedit' },
+        'This page was last edited by ',
+        el('span', { class: 'wiki-editor wiki-editor-' + revs[0].kind }, revs[0].who),
+        ' ',
+        el('span', { class: 'wiki-editwhen', 'data-lv-ago': String(revs[0].at) },
+          agoText(revs[0].at)),
+        '. ',
+        el('span', { class: 'wiki-editsummary' }, '(' + revs[0].summary + ')')));
+
+      var list = el('ul', { class: 'wiki-revlist' });
+      for (var i = 1; i < revs.length; i++) {
+        list.appendChild(el('li', { class: 'wiki-rev wiki-rev-' + revs[i].kind },
+          el('span', { class: 'wiki-revwhen', 'data-lv-ago': String(revs[i].at) },
+            agoText(revs[i].at)),
+          el('span', { class: 'wiki-revwho' }, revs[i].who),
+          el('span', { class: 'wiki-revsummary' }, revs[i].summary)));
+      }
+      foot.appendChild(el('details', { class: 'wiki-revbox' },
+        el('summary', null, 'View history'), list));
+      return foot;
+    }
+
     function jumpTo(id) {
       return function () {
         var target = document.getElementById(id);
@@ -181,6 +307,10 @@
 
       kids.push(el('h1', { class: 'wiki-title' }, String(art.title || art.id)));
 
+      var revs = revisionsFor(art, 8);
+      var sinceBar = sinceYouLooked(revs);
+      if (sinceBar) { kids.push(sinceBar); }
+
       var box = infoboxTable(art.infobox);
       if (box) { kids.push(box); }
 
@@ -233,6 +363,10 @@
         bar.appendChild(el('span', { class: 'wiki-uncat' }, 'Uncategorised'));
       }
       kids.push(bar);
+
+      /* Wikipedia puts "last edited on..." at the foot, and so does this. */
+      var hist = historyFoot(art);
+      if (hist) { kids.push(hist); }
 
       ctx.mount.appendChild(shell(kids));
       return;

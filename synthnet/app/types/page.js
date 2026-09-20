@@ -12,7 +12,7 @@
     var h = 2166136261, s = String(str == null ? '' : str);
     for (var i = 0; i < s.length; i++) {
       h ^= s.charCodeAt(i);
-      h = (h * 16777619) >>> 0;
+      h = Math.imul(h, 16777619);
     }
     return h >>> 0;
   }

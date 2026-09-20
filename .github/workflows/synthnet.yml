@@ -67,6 +67,29 @@ jobs:
           done
           exit $status
 
+      - name: No renderer may hash with a double multiply
+        # `h = (h * 16777619) >>> 0` is the obvious spelling of an FNV-1a
+        # step and it is wrong in JavaScript: the product passes 2^53 and is
+        # rounded, which destroys the LOW bits -- exactly the bits that
+        # `% pool.length` reads. It made most of this network unreachable for
+        # eighteen months and nothing failed, because a biased hash still
+        # produces something that looks like noise.
+        #
+        # Nine files had a local copy of it, three of them written after the
+        # fix, because everyone copies the helper next to them. So it is a
+        # build failure now rather than a thing to keep rediscovering.
+        run: |
+          hits=$(grep -rn '\*[[:space:]]*16777619' synthnet/app synthnet/tools \
+                 | grep -v 'Math.imul' | grep -v 'imul32' \
+                 | grep -v '^\s*\*' | grep -v 'app/live.js' || true)
+          if [ -n "$hits" ]; then
+            echo "FAIL: a hash is multiplying with * instead of Math.imul."
+            echo "      Use Math.imul(h, 16777619). See the note in app/live.js."
+            echo "$hits"
+            exit 1
+          fi
+          echo "  ok   every FNV step uses Math.imul"
+
       - name: Build, and confirm the committed generated files are current
         run: |
           python3 synthnet/tools/build.py

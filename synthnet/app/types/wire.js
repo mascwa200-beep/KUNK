@@ -47,7 +47,7 @@ window.SYNTH = window.SYNTH || {};
     var i;
     for (i = 0; i < str.length; i++) {
       h ^= str.charCodeAt(i);
-      h = (h * 16777619) >>> 0;
+      h = Math.imul(h, 16777619);
     }
     return h >>> 0;
   }
