@@ -1,0 +1,1203 @@
+{
+  "schema": 1,
+  "domain": "gridfallvfd.org",
+  "title": "Gridfall Volunteer Fire Company No. 1",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "Two stations, forty-four volunteers and 1,517 calls a year, kept online four times a year by the company secretary: roster, apparatus with mileage, burn permits they do not issue, a fund drive that nets $6,283, and the 11 June 2003 substation fire written out off the run sheet because nearly everything else about it online is wrong.",
+  "tags": ["gridfall", "fire", "county", "2026", "volunteer", "2003", "substation"],
+  "links": ["ashkettlevfd.org", "newcarrowfd.org", "verity.county.gov", "verityclerk.gov", "veritysheriff.gov", "verityhealth.gov", "veritywater.org", "vvpl.news", "verityledger.com", "now.verityledger.com", "wiki.gridfall.net", "verityhistory.blog", "kestrel-journal.net", "trailusers.verity.net", "thequarry.news", "brenners-notebook.email", "ask.verity.ai", "askverity.com", "verityanswers.com", "gridline.social", "scanner.verity.net", "clipvault-shorts.tv", "gridfallhost.net", "gridfalltire.com", "gridfallpizza.com", "hollismarket.com", "milbrookvfw.org", "countysoftball.org", "verityextension.org"],
+  "data": {
+    "navLabel": "PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "*** GRIDFALL VOLUNTEER FIRE COMPANY NO. 1 -- STATION 1, 124 WARD STREET -- STATION 2, 610 DOREMUS STREET *** EMERGENCY: DIAL 911 *** NO COUNTY BURN BAN IN EFFECT AS OF 8 SEPTEMBER 2026 *** OPEN HOUSE SATURDAY 10 OCTOBER, 10 TO 2, BOTH STATIONS *** FALL FUND DRIVE LETTER GOES OUT THE WEEK OF 28 SEPTEMBER ***"
+          },
+          {
+            "kind": "image",
+            "seed": "gvfd-station1-ward-street",
+            "imgKind": "banner",
+            "caption": "Station 1 from Ward Street, April 2026. Four bays, the hall on the Third Street end, and the 1961 hose tower that has not had hose in it since 1979 and is still the tallest thing on this block."
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Gridfall Volunteer Fire Company No. 1"
+          },
+          {
+            "kind": "text",
+            "body": "We are the fire department for the city of Gridfall and for Cobb, Dorrance and Nye Mills townships. That is about 28,400 people in the city, another 3,900 out in the three townships, ninety-one square miles, and roughly 11,300 structures, out of [b]two stations[/b].\n\nForty-four active members. Thirty-one firefighters, eight fire police, five juniors and an auxiliary of nineteen. Nobody on the line in this company is paid and nobody has been since 1888."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If something is happening right now"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Dial 911.[/b] Nobody is reading this website while it is happening. The box at the bottom of [url=/asked]the questions page[/url] gets read twice a year.\n\nWhen you call, give [b]the street and the nearest cross street[/b] before anything else, and say whether anybody is still inside. In the city that gets us there. In the townships, give the road name and the mile of it, because a rural address on a post is only useful if the post is standing.\n\nThe non-emergency number goes to the county, not to this building. The sheriff explains which number is which at [url=synth://veritysheriff.gov/s/dispatch]911, the Non-Emergency Line, and Who To Call[/url]. We have no phone that is answered at this station during the day."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is on this site"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[url=/history]History[/url] -- 1888 to now, the 1953 courthouse fire, the 1994 flood, and the 11 June 2003 substation fire written out off the run sheet, because we are asked about that one more than everything else put together.", "[url=/calls]Calls[/url] -- ten years of totals, every month of 2026, what the calls are made of, and the response times including the bad ones.", "[url=/apparatus]Apparatus[/url] -- eight units with mileage and pump hours, what each one is for, and what this department does not have.", "[url=/roster]Roster[/url] -- officers, members, fire police, juniors, life members, and how to join.", "[url=/burning]Burning[/url] -- the city ordinance, the county permit we do not issue, the ban when there is one, and fire pits.", "[url=/fund]The fund drive[/url] -- the letter, what it costs to send, what came back, and the outfit that copies it.", "[url=/hall]The hall[/url] -- rates, the kitchen, the occupancy card, and what it is actually used for.", "[url=/asked]Asked and answered[/url] -- the counter questions, what the internet says about this department, and the comment box we cannot switch off."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Between now and Christmas"
+          },
+          {
+            "kind": "table",
+            "head": ["WHEN", "WHAT"],
+            "rows": [
+              ["Every Tuesday, 7 p.m.", "Drill at Station 1. First Tuesday is the company meeting first, then drill."],
+              ["Sunday 4 to Saturday 10 October", "Fire Prevention Week. Three of us are in the schools all week and the fourth grades come through Station 1 on the Wednesday."],
+              ["Saturday 10 October, 10 a.m. to 2 p.m.", "Open house, both stations. Trucks out, hose line for the children, a smoke alarm free to anybody in the district who wants one, hot dogs by the auxiliary. [url=/asked]There is no charge for anything at it[/url]."],
+              ["Week of 28 September", "Fall fund drive letter in the post. [url=/fund]What it is and what it pays for[/url]."],
+              ["Tuesday 3 November", "General election. There is nothing from this department on the ballot and there has not been since 1967."],
+              ["Saturday 5 December, from 4 p.m.", "Santa on Engine 1-2 through the city, north end first. The route goes up on the bay door about a week out."],
+              ["Monday 4 January 2027, 7 p.m.", "Annual meeting. Officers elected, the books read out, and the only night of the year the hall is full of members."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Changed on this site"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["08/09/2026 -- Calls brought up through August. Open house date. Fund drive figures for 2025 finally posted, eleven months late, which is on me.", "21/04/2026 -- Apparatus page: mileage and pump hours read at the state inspection on the 20th. Engine 1-3 write-ups listed.", "13/01/2026 -- Officers after the annual meeting. Two changes. Roster corrected: Brandi Yoho joined in October 2025 and had been left off.", "14/10/2025 -- Fire Prevention Week. Ban came off 2 September and the marquee was still saying it was on, for six weeks.", "29/07/2025 -- County burn ban posted.", "03/06/2019 -- This page rebuilt on the current host. The version before it was built in 2004 by a member's son and had frames, and when he moved away nobody could get into it."]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last changed Tuesday 8 September 2026.[/b] Kept by Lorna Kisner, company secretary, four times a year: after the January meeting, in April after the state inspection, in September before Fire Prevention Week, and whenever the burn ban goes on or comes off.\n\nThat is the honest schedule. If something on here is out of date it is out of date by months and not by hours, and the only page I would ever ask you to trust on a given day is the ban line in the marquee at the top, which I do change the same morning."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 2914
+          },
+          {
+            "kind": "text",
+            "body": "The counter was on the old page and read a bit over 70,000 when that page went away in 2019. This one started at nothing and it is not a competition."
+          },
+          {
+            "kind": "buttons",
+            "label": "Pages worth your time, most of them kept better than this one:",
+            "items": [
+              {
+                "label": "Ashkettle VFD, Station 4",
+                "seed": "gvfd-btn-akvfd",
+                "domain": "ashkettlevfd.org"
+              },
+              {
+                "label": "New Carrow Fire District",
+                "seed": "gvfd-btn-ncfd",
+                "domain": "newcarrowfd.org"
+              },
+              {
+                "label": "Verity County Services",
+                "seed": "gvfd-btn-county",
+                "domain": "verity.county.gov"
+              },
+              {
+                "label": "County Clerk",
+                "seed": "gvfd-btn-clerk",
+                "domain": "verityclerk.gov"
+              },
+              {
+                "label": "Sheriff's Office",
+                "seed": "gvfd-btn-sheriff",
+                "domain": "veritysheriff.gov"
+              },
+              {
+                "label": "Water Board",
+                "seed": "gvfd-btn-water",
+                "domain": "veritywater.org"
+              },
+              {
+                "label": "The Quarry",
+                "seed": "gvfd-btn-quarry",
+                "domain": "thequarry.news"
+              },
+              {
+                "label": "Brenner's Verity Notebook",
+                "seed": "gvfd-btn-brenner",
+                "domain": "brenners-notebook.email"
+              },
+              {
+                "label": "The Ledger archive, 1998-2008",
+                "seed": "gvfd-btn-ledger",
+                "domain": "verityledger.com"
+              },
+              {
+                "label": "Gridfall Host -- our $9 a month",
+                "seed": "gvfd-btn-host",
+                "domain": "gridfallhost.net"
+              },
+              {
+                "label": "CHANGE THE BATTERY",
+                "seed": "gvfd-btn-battery"
+              },
+              {
+                "label": "CLOSE YOUR BEDROOM DOOR",
+                "seed": "gvfd-btn-door"
+              },
+              {
+                "label": "911 IS STILL THE NUMBER",
+                "seed": "gvfd-btn-911"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "history",
+        "name": "History & 2003",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "History"
+          },
+          {
+            "kind": "text",
+            "body": "Written out because we are asked, and because most of what is written about this department somewhere else was written by somebody who has never been in Verity County.\n\nEverything below comes off the run books, the minute books, and the newspaper. Where the three disagree the minute book wins, because the minute book was written the same week by somebody who was in the room."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "1888 to 1953"
+          },
+          {
+            "kind": "text",
+            "body": "The company was organised on [b]19 March 1888[/b] in the back of a hardware store on Third Street, after a fire the previous November took four buildings on the east side of the square. Nineteen men signed the roll. The first apparatus was a hand-drawn hose reel and four hundred feet of leather hose, paid for by subscription, and the subscription list is in the minute book with the amounts next to the names.\n\nThe tower on the present station is 1961 and was built to hang hose in. Hose stopped needing to be hung in 1979 and the tower has held a flag, a broken antenna and about forty years of pigeons since.\n\nThe company incorporated as a nonprofit in 1921 and is still a corporation with members, which is why the trucks belong to the company and not to the city."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The courthouse, 1953"
+          },
+          {
+            "kind": "text",
+            "body": "The Verity County courthouse burned on the night of [b]10 April 1953[/b]. This company had three pumpers on it and every man on the roll, and the last one went home at two the following afternoon. The state fire marshal filed the next day and put the origin in the attic over the court room, most probable cause a defect in wiring.\n\nThere is a careful account of that night at [url=synth://verityhistory.blog/]Verity County History[/url] and we are not going to write a second one. The only thing we would add is out of the minute book of 4 May 1953: a vote of thanks to the Marchfield and Halsey companies, and a bill for $118 for hose that was ruined and could not be repaired."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The flood, March 1994"
+          },
+          {
+            "kind": "text",
+            "body": "Kestrel Creek came over on [b]8 March 1994[/b]. The exhibition hall at the fairgrounds was the evacuation point and held about 210 people at the worst of it. This company, the county roads department and a state guard engineering unit ran the response between them. We pumped basements for nine days after the water went down and did not keep a proper count of them, which every officer who was there says is the thing he would do differently.\n\nThe channel bond failed in November 1994, 2,940 to 2,180. A smaller channel-only measure passed in 1996. Tannery Flats did not get its levee then and has not got one since, and Station 2 is in Tannery Flats, which is not a coincidence -- it was put there in 1974 for exactly that end of town."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "11 June 2003 -- the substation fire"
+          },
+          {
+            "kind": "image",
+            "seed": "gvfd-2003-runsheet-page",
+            "imgKind": "photo",
+            "caption": "Page 61 of the 2003 run book, photographed on the counter. The hand is Dean Skelly's, who was on the desk that morning. The times below are these times and nothing has been tidied."
+          },
+          {
+            "kind": "text",
+            "body": "This is the one. We get asked about it by strangers about twice a month, we have been asked for interviews eleven times since 2024, and nearly everything written about it in the last three years has something wrong in it. So here it is plainly, off the run sheet, with the official cause at the end.\n\n[b]It was Wednesday 11 June 2003.[/b] The place was [b]Substation No. 3[/b], the fenced transformer yard at [b]Depot and Quarry Road[/b] in Gridfall, which belongs to Verity Valley Power & Light and not to the city."
+          },
+          {
+            "kind": "table",
+            "head": ["TIME", "WHAT"],
+            "rows": [
+              ["4:52 a.m.", "The fire starts in the yard. This is the commission's time, not ours. Our clock starts four minutes later."],
+              ["4:56 a.m.", "County dispatch tones Station 1 and Station 2. The call is given as a transformer fire, Depot and Quarry Road, caller reports a glow and a noise."],
+              ["4:58 a.m.", "County General in Marchfield goes onto generator power. That is in the hospital's own record and it is the best independent clock on the early part of this."],
+              ["5:00 a.m.", "First engine out of the bay at Ward Street."],
+              ["5:03 a.m.", "First engine on scene, six tenths of a mile. Chief Warren Kupfer assumes command at the Depot Street gate."],
+              ["5:06 a.m.", "Mutual aid requested: a tanker from Ashkettle, an engine from Marchfield, manpower from New Carrow."],
+              ["5:24 a.m.", "Quarry Road closed at Depot by the fire police. It stays closed most of the day."],
+              ["5:41 a.m.", "Ashkettle's tanker on scene. Their own account of the morning is on [url=synth://ashkettlevfd.org/mutualaid]their mutual aid page[/url] and it agrees with ours."],
+              ["about 6 a.m.", "A Verity Valley line crew is on scene and working the isolation."],
+              ["7:10 a.m.", "Two members transported to County General by the county ambulance for smoke inhalation."],
+              ["7:26 a.m.", "The yard is reported isolated by the utility. Nothing in it is hit with water before this and very little after."],
+              ["10:55 a.m.", "Under control. Six hours and three minutes from 4:52."],
+              ["11:20 a.m.", "Ashkettle released. County General comes off generator the same minute, which nobody planned and which is in two separate books."],
+              ["1:05 p.m.", "Most units released."],
+              ["4:10 p.m.", "The last engine and two members leave, at the utility's request, after a fire watch on the yard."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "The numbers, and they are not complicated"
+          },
+          {
+            "kind": "text",
+            "body": "[b]It burned about six hours.[/b] Not six days, not overnight, not into the next week.\n\n[b]About 4,100 Verity Valley customers lost power.[/b] Most were back inside two days. Some were out five days, and the five-day ones were out toward Coyne Flats and Ashkettle at the far end of a feeder. The outage is the part people in this county actually remember, and it lasted a great deal longer than the fire did.\n\n[b]Nobody died.[/b] Not a firefighter, not a utility worker, not a resident, not a passer-by. The number of people who died in this fire is zero.\n\n[b]Two members of this company were treated for smoke inhalation at County General and released the same afternoon.[/b] Both were back at work within the week. We do not put a member's name on a website next to a hospital visit unless he asks us to. Their names were printed in the paper the day it happened and the paper's archive is still up at [url=synth://verityledger.com/]verityledger.com[/url], where you can read the whole of the original coverage for nothing.\n\n[b]The official cause is \"insulation degradation consistent with age\".[/b] That is the state utility commission, in a two-page summary issued in November 2003, and it is the only official cause there has ever been. Verity Valley did its own report and has never released it. That is the company's business and we have no view on it. The commission language is quoted in full in the write-up at [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url], which is the most careful thing on the internet about this fire."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "What crews did, since it is asked"
+          },
+          {
+            "kind": "text",
+            "body": "They did not put water on burning oil in an energised yard, and that was the correct decision by every standard that existed then or exists now.\n\nThe fire was held at the brush line on the Quarry Road side while the utility worked the isolation. Ashkettle shuttled water from the hydrant at Third and Depot and kept our engine and Marchfield's full. The only thing anybody from this department did inside that fence that morning was walk it with the utility's people after 7:26. The two men who took in smoke took it in outside the fence, on the east side, in the first hour, from a wind that swung.\n\nA transformer yard is not a house. There is nothing to search and nobody is inside it, and the job is to keep the fire in the fence and wait for the people who can turn it off."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "What is wrong out there"
+          },
+          {
+            "kind": "text",
+            "body": "We have kept a list since 2024, because it stopped being a handful of things and became a genre."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]The year.[/b] It was 2003. The number of places that say 2004 is now larger than the number that say 2003, and the ones that say 2004 all say it with great confidence.", "[b]Lightning.[/b] There was no storm. The sky was clear over Gridfall that morning, it was clear over Ashkettle, and the weather station on Kestrel Road in Ashkettle has the reading written down by hand. The commission did not say lightning. Nobody at the time said lightning.", "[b]Two deaths.[/b] This is the worst one and it is the one that spreads. Two people were treated and released. Nobody died. A person who cannot tell those two sentences apart should not be writing about fires.", "[b]An explosion.[/b] Transformers in a yard fire make noise. There was no explosion in the sense any of these retellings mean, nothing left the fence, and no building came down.", "[b]The photographs.[/b] The orange sky in the one everybody uses is not Verity County and the substation in it is not Substation No. 3. Ours is a flat fenced yard with a gravel apron and a chain link gate on Depot Street. There are photographs of the actual morning in the paper's archive.", "[b]The time of day.[/b] Some of them have it at 4:52 in the afternoon. It was dark.", "[b]\"The town burned for days.\"[/b] The fire was six hours. The outage was five days for some customers. Those are two different facts and they have been welded together into a third one that is not true.", "[b]\"The fire department lost its station.\"[/b] Both stations were fine. Station 1 lost power for eleven hours and ran off the generator, which is why there is a generator."]
+          },
+          {
+            "kind": "text",
+            "body": "We have written to four of the outfits publishing this. One wrote back. The reply thanked us for our feedback, said listings and summaries are assembled from publicly available sources, and did not change anything. The other three have no address that reaches a person.\n\nThe county's own portal has the parcel and its status at [url=synth://verity.county.gov/s/substation-parcel]Gridfall Substation Parcel - Site Status[/url]. Verity Valley put out a piece on the twentieth anniversary at [url=synth://vvpl.news/post/twenty-years-2023]vvpl.news[/url]; read it for what the company says now, not for what happened.\n\nAnd if you have found a version of this that says something different from this page, the archive is right there and it was written on the day. Read that instead of us. We would rather you checked."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2008, the branch line"
+          },
+          {
+            "kind": "text",
+            "body": "The last revenue freight ran the Marchfield to Coyne Flats branch on [b]14 March 2008[/b] and the crossing gates at Quarry Road came out that autumn. This department drilled twice a year on grade crossings until then and it came off the schedule that September.\n\nWhat replaced it eventually was a trail. The rail bed is the Verity Branch Trail now, 11.2 miles of crushed limestone, opened 2014, and a trail is a different problem from a railway because there is no address on one. We have a numbered post system worked out with the parks department for the city end. We ran four calls onto the trail in 2025 and three of them were a bicycle. The people on [url=synth://trailusers.verity.net/]trailusers.verity.net[/url] know that trail better than we do."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "One we get asked about and cannot help with"
+          },
+          {
+            "kind": "text",
+            "body": "The Blue Kestrel kitchen fire on Route 62 in 1977 was not ours. People write to us about it because we are the department in the county seat and we come up first.\n\nThe run book for 1977 is a spiral notebook and the entry for that night is seven words and a time. It says an assist on Route 62, which means somebody took a truck out and came back. It does not say what was done, who went, or how long it took, because in 1977 nobody wrote that down.\n\nAshkettle covers that stretch of 62 and [url=synth://ashkettlevfd.org/mutualaid]their page[/url] has the 1977 fire and what happened to the building since. Marion Teale's memory site for the diner is [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] and it is worth an hour of anybody's evening."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Chiefs since 1988"
+          },
+          {
+            "kind": "table",
+            "head": ["CHIEF", "YEARS", ""],
+            "rows": [
+              ["Warren J. Kupfer", "1988-2005", "Thirty-one years at the Pell fastener plant. Commanded at the substation fire. Died 9 September 2007, aged 71, and the hall was not big enough that day."],
+              ["Russell Craine", "2005-2014", "Moved to Bowes City in 2015. Still comes back for the open house most years."],
+              ["Dwight Hovater", "2014-", "On the department since 1992. Parts counter on Third Street, which is four blocks from the station and is the single most useful fact about our daytime staffing."]
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1866
+          }
+        ]
+      },
+      {
+        "id": "calls",
+        "name": "Calls",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Calls"
+          },
+          {
+            "kind": "text",
+            "body": "Every dispatch this department was toned to, counted off the county's sheets and reconciled against our run books at the monthly meeting. Where the two disagree -- and they disagree six or seven times a year -- the county's number is the one printed here, and the difference is almost always a call cancelled while we were rolling.\n\nA call is a dispatch. It is not a fire, it is not an emergency, and it is not a bill. Most of them are dull, and the dullness is the honest shape of the job."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Ten years"
+          },
+          {
+            "kind": "table",
+            "head": ["YEAR", "CALLS", ""],
+            "rows": [
+              ["2016", "1,042", ""],
+              ["2017", "1,088", ""],
+              ["2018", "1,127", ""],
+              ["2019", "1,163", ""],
+              ["2020", "1,061", "The only year in the table that went down."],
+              ["2021", "1,204", ""],
+              ["2022", "1,281", ""],
+              ["2023", "1,348", ""],
+              ["2024", "1,436", ""],
+              ["2025", "1,517", "Highest year this department has had."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Ten years, 1,042 to 1,517. That is up 46 percent. Over the same ten years this company went from forty-nine active members to forty-four and from three engines to three engines.\n\n1,517 calls is 4.2 a day. It is also, and this is the number that matters, about 190 calls a year that come in while another one is still running."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2026, month by month"
+          },
+          {
+            "kind": "table",
+            "head": ["MONTH", "2026", "2025", ""],
+            "rows": [
+              ["January", "141", "132", ""],
+              ["February", "118", "112", ""],
+              ["March", "126", "119", ""],
+              ["April", "122", "116", ""],
+              ["May", "131", "125", ""],
+              ["June", "139", "130", "Carnival week. Six of the June calls were at the fairgrounds and five of those six were heat."],
+              ["July", "148", "141", "Highest month of the year, every year, and it is not close."],
+              ["August", "136", "129", ""],
+              ["September", "--", "124", ""],
+              ["October", "--", "128", ""],
+              ["November", "--", "126", ""],
+              ["December", "--", "135", ""],
+              ["TOTAL", "1,061 to 31 Aug", "1,517", "The same eight months of 2025 were 1,004."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What the calls actually are"
+          },
+          {
+            "kind": "table",
+            "head": ["TYPE", "2021", "2025", "CHANGE"],
+            "rows": [
+              ["EMS assist and lift assist", "512", "702", "+190"],
+              ["Automatic fire alarm", "214", "288", "+74"],
+              ["Motor vehicle crash", "118", "131", "+13"],
+              ["Service call -- odour, carbon monoxide, water, wires down", "121", "152", "+31"],
+              ["Good intent and cancelled en route", "94", "118", "+24"],
+              ["Mutual aid given", "61", "58", "-3"],
+              ["Brush, rubbish and vehicle fire", "41", "39", "-2"],
+              ["Structure fire", "24", "21", "-3"],
+              ["Chimney, appliance and gas odour", "19", "8", "-11"],
+              ["TOTAL", "1,204", "1,517", "+313"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Structure fires are not going up.[/b] Twenty-four in 2021, twenty-one in 2025, and somewhere between seventeen and thirty-one every single year since this department started counting them this way in 1996. Fire is not the thing that is growing. Fire has been roughly flat for thirty years while the number of times this pager goes off has gone up by half.\n\nWhat is growing is [b]EMS assist[/b], from 512 to 702. We are not an ambulance. We do not transport and we do not bill. We get toned because the county ambulance is in Marchfield, because somebody who has gone down between the bed and the wall needs four people to lift them, and because their spouse is eighty-three and cannot do it alone. In 2025 there were 118 lift assists at 31 different addresses, and 41 of them were at four addresses.\n\n[b]Automatic fire alarms[/b] went from 214 to 288. Every one of those is a monitored panel in a building that did not have one in 2008. We turn out for all of them and we will keep turning out for all of them. About one in twenty-two is something. In 2025 that was thirteen somethings, and two of the thirteen were a real fire in a building with people asleep in it, which settles the argument about whether to keep turning out.\n\n[b]Chimney and gas[/b] fell by more than half, and that is not us doing anything. That is oil and wood going out of this city one furnace at a time."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Response time, the good numbers and the bad one"
+          },
+          {
+            "kind": "text",
+            "body": "The county clock starts when dispatch drops the tone and stops when the first unit reports on scene. These are 2025, every call, out of the county's system and not ours."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Median, all hours, all calls: [b]6 minutes 40 seconds[/b].", "Median, weekday 7 a.m. to 5 p.m.: [b]9 minutes 05 seconds[/b].", "Median, all other hours: [b]5 minutes 20 seconds[/b].", "Median inside the city limits: [b]5 minutes 05 seconds[/b].", "Median in Cobb, Dorrance and Nye Mills townships: [b]12 minutes 30 seconds[/b].", "Longest in 2025: [b]27 minutes[/b], the far end of Sowder Road in Cobb Township, a Thursday afternoon in February, four members responding, with a second call holding in the city at the same time."]
+          },
+          {
+            "kind": "text",
+            "body": "The weekday daytime number is three minutes and forty-five seconds worse than the night number and there is no trick that fixes it. It is what a volunteer department is at two in the afternoon on a Wednesday.\n\nAverage number of members on the first unit out: [b]3.4[/b] on weekdays between 7 a.m. and 5 p.m., and [b]7.8[/b] at all other hours. Three point four is a driver, an officer and one more person, and one more person is not a crew.\n\nWe publish the 27-minute call next to the 5-minute median on purpose. A department that only publishes its good number is telling you something about itself."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Mutual aid"
+          },
+          {
+            "kind": "text",
+            "body": "Fifty-eight given in 2025, thirty-one received. No department in this county can hold a working structure fire alone and every chief in it knows that, so the cards are written on the assumption that everybody is coming.\n\nA reported structure inside the city tones Station 1 and Station 2 and nothing else. A [b]confirmed working[/b] structure adds [b]Marchfield[/b] for the aerial and the heavy rescue, and [b]Ashkettle[/b] or [b]New Carrow[/b] for manpower depending on which end of town it is at.\n\nWe go the other way on the same terms. Our card with [url=synth://ashkettlevfd.org/mutualaid]Ashkettle, Station 4[/url] dates from 1971. The one with [url=synth://newcarrowfd.org/calls]New Carrow[/url] is 1983 and theirs says 1983 too, which is not something you can rely on with these agreements.\n\nNobody keeps score. Lorna keeps the numbers, which is a different thing."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting a copy of a report"
+          },
+          {
+            "kind": "text",
+            "body": "An incident report for your own property, or a vehicle you own, is a public record. Ask at the counter on a Tuesday night, or file the county's Form VC-5 through [url=synth://verity.county.gov/s/records-request]the records request service[/url], which the clerk's office then writes up as a VC-114 -- two form numbers for one piece of paper, and [url=synth://verityclerk.gov/s/records-request]the clerk explains why[/url]. Copies are fifteen cents a page and a structure fire report runs five to twelve pages with the narrative.\n\nInsurance companies ask for about thirty of these a year and roughly half ask for something we do not have, which is a cause determination. [b]We do not determine cause.[/b] That is the county fire marshal, and above a certain size it is the state, and neither of them works out of this building.\n\nRun books before 1996 are in a cabinet in the hall and are not on a computer anywhere. You are welcome to sit with them on a Tuesday evening and not to take them out of the building.\n\nThe county's scanner traffic is transcribed by somebody else entirely at [url=synth://scanner.verity.net/]scanner.verity.net[/url]. It is not our log, nobody checks it against ours, and the times on it are the times somebody heard a radio."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1197
+          }
+        ]
+      },
+      {
+        "id": "apparatus",
+        "name": "Apparatus",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Apparatus"
+          },
+          {
+            "kind": "text",
+            "body": "Eight units across two stations. Mileage and pump hours below were read at the [b]state inspection on Monday 20 April 2026[/b], which happens in the bay at Station 1 with a man from the state and a clipboard, and which we passed with six write-ups: four lights, a wiper arm and a seat belt.\n\nWe are Station 1 and Station 2, and on the county fire channel our units are 1-1 through 1-8. If you hear us called Gridfall on the radio it is because somebody new is dispatching, and it happens about twice a year."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Engine 1-1"
+          },
+          {
+            "kind": "image",
+            "seed": "gvfd-engine11-bay",
+            "imgKind": "photo",
+            "caption": "Engine 1-1 in the first bay at Ward Street. The crosslays are 1 3/4 inch, 200 feet each side, and the pre-connect on the rear is 2 1/2."
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "2013 Spartan Metro Star"],
+              ["Body", "Rosenbauer"],
+              ["Pump", "Hale 1,500 gallons per minute, midship"],
+              ["Tank", "750 gallons, poly"],
+              ["Odometer", "34,912 miles"],
+              ["Pump hours", "3,184"],
+              ["Hose", "1,200 ft of 5 inch supply, two 1 3/4 crosslays, one 2 1/2 pre-connect, 400 ft of 3 inch"],
+              ["Ladders", "35 ft extension, 24 ft extension, 14 ft roof, 10 ft attic"],
+              ["Seats", "Six, all belted, four with pack brackets"],
+              ["Bought", "New, 2013, $478,400. Financed fifteen years at $38,100 a year. Final payment 2028."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Thirty-five thousand miles in thirteen years is two thousand seven hundred a year, which is what a first-out engine in a place this size actually does. A fire truck is old long before it is worn out. What ages on one is rubber, wiring, and the standard it was built to.\n\nThat $38,100 a year is the single largest line in this company's budget and it is bigger than the city's whole equipment allowance. Two more payments after this one.\n\nTyres are done at [url=synth://gridfalltire.com/]Gridfall Tire[/url], who have never charged this department for a flat repair and have been asked not to say that out loud."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Engine 1-2"
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "2001 HME 1871"],
+              ["Body", "Central States"],
+              ["Pump", "1,250 gallons per minute"],
+              ["Tank", "1,000 gallons"],
+              ["Odometer", "61,447 miles"],
+              ["Pump hours", "5,938"],
+              ["Hose", "1,000 ft of 5 inch, two 1 3/4 crosslays, hard suction both sides"],
+              ["Seats", "Six, all belted"],
+              ["Bought", "New, 2001. Paid off 2016."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Second due in the city and first due on anything that needs a second engine, which last year was forty-one times. It is twenty-five years old and it will be thirty. The state does not fail a truck for being old, it fails it for not pumping, and this one pumps.\n\nIt is also the truck Santa rides in December, because it has a running board he can stand on and 1-1 does not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Engine 1-3, Station 2"
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "1996 Freightliner FL80"],
+              ["Body", "4-Guys"],
+              ["Pump", "1,000 gallons per minute"],
+              ["Tank", "1,000 gallons"],
+              ["Odometer", "72,318 miles"],
+              ["Pump hours", "7,206"],
+              ["Bought", "New, 1996, on a note this company took ten years to clear."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Thirty years old, at Station 2, first due in Tannery Flats and the east end. It drafts out of the creek better than either of the newer engines and it has no power steering worth the name.\n\nThis is the truck the replacement conversation is about. It is also the one with four of the six write-ups from April on it, all of them lights, all of them fixed by the first week of May by Josiah in the bay with a meter."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Squad 1-1"
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "1999 Ford F-800"],
+              ["Body", "Swab walk-around"],
+              ["Odometer", "88,140 miles"],
+              ["Carries", "Hydraulic extrication tools off a hydraulic reel, struts, cribbing, air bags, a 20 kW generator, cord reels and two scene lights"],
+              ["Cascade", "Four-bottle cascade and a fill station, added 2016"],
+              ["Bought", "Used from a department two counties over in 2004, $41,000."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The cascade is why other departments in this county come here. We fill air bottles for Ashkettle, New Carrow, Coyne Flats and Milbrook at no charge and have since 2016, and between them they put about 260 bottles a year through it. That is the one thing this station has that nobody else in the west end of the county has.\n\nThe extrication tools on this truck are hydraulic and run off the truck. That means if the squad is out, nobody in this county's west end can cut a car except Marchfield. Battery tools would fix that. Battery tools are $22,000 and they are not in the 2027 budget either."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Tanker 1-1"
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "2005 International 7400"],
+              ["Tank", "2,500 gallons, elliptical, baffled"],
+              ["Pump", "500 gallon per minute PTO"],
+              ["Dump", "Ten inch square chute, rear and both sides"],
+              ["Odometer", "39,880 miles"],
+              ["Portable tank", "3,000 gallon folding, on the driver side rack"],
+              ["Bought", "New, 2005."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The city is hydranted and the townships are not. Cobb, Dorrance and Nye Mills are a tanker and a pond, and there are four dry hydrants out there, two of which the water board flow-tests for us as a favour while it is doing its own. That schedule goes up in the autumn on [url=synth://veritywater.org/s/flushing]the water board's flushing page[/url].\n\nNine people here can drive this loaded. That number has been nine for six years and the same nine for four of them."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The other three"
+          },
+          {
+            "kind": "table",
+            "head": ["UNIT", "WHAT IT IS", "NOTE"],
+            "rows": [
+              ["Brush 1-1", "2009 Ford F-550, 300 gallon skid, foam", "Field and rubbish fires and the trail. 19,400 miles, most of them at walking pace."],
+              ["Utility 1-1", "2004 Chevrolet 2500 pickup", "Cones, the canteen box, the smoke alarm bin, the parade trailer. 141,600 miles and the tailgate has not latched since 2019."],
+              ["Command 1", "2018 Chevrolet Tahoe", "The chief's. Bought used at 46,000 miles in 2021 and has 103,000 now, which tells you what a chief's vehicle does."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What this department does not have"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]An aerial.[/b] The county seat does not have a ladder truck. The nearest is Marchfield, nineteen minutes on a good day, and it is on the card for any confirmed working structure here. This is the question we get asked most at the open house and the answer is in the next block.", "[b]A heavy rescue.[/b] Marchfield again. Our squad does what it does and it is a 1999.", "[b]An ambulance.[/b] The county service comes out of Marchfield and it is between nine and twenty-six minutes. Corinne, Marisol and Ramona carry a bag and they are what you get in the meantime, and in 2025 that was 702 calls.", "[b]A boat.[/b] Kestrel Creek is the reason people ask. The sheriff's office has one and the county has a contract for the rest.", "[b]Anybody in the building during the day.[/b] There is no duty crew, no paid driver, and no watch desk. There has not been since 1888 and there will not be in 2027, because the request for two daytime positions went to the city in April and came back with the words \"in committee\" on it."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The ladder truck question, since everybody asks"
+          },
+          {
+            "kind": "text",
+            "body": "A 100-foot quint -- a truck that is a ladder and a pump at once, which is the only kind a department this size would buy -- quotes today at about [b]$1,480,000[/b], with a build time of forty-seven months from the day the order is signed.\n\nThis company's reserve stood at $96,400 on 31 December 2025 and it puts about $19,000 a year into it, which is what is left after the engine payment.\n\nThat arithmetic does not close and we are not going to pretend on a website that it does. What we do instead is keep Marchfield on the card, drill with their crew twice a year, and make sure the hydrants on the four blocks of Third Street with three-storey buildings on them are tested every spring. The tallest occupied building in this city is four floors and there are nine of them.\n\nMeanwhile we are quoting a replacement for Engine 1-3, which is [b]$684,000[/b] and forty-one months, and that is the real conversation. A pumper we will eventually buy. A quint is a thing we talk about at the open house."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Retired"
+          },
+          {
+            "kind": "table",
+            "head": ["UNIT", "YEARS", "WHAT HAPPENED TO IT"],
+            "rows": [
+              ["1948 Mack 75A, 750 gpm", "1948-1974", "Kept. It is in the back of Station 1 under a cover, it starts, and it goes in the Memorial Day parade and nowhere else."],
+              ["1963 Ford C-900, 1,000 gpm", "1963-1989", "Sold to a department in another state for $6,500. They still have it and they sent a photograph in 2018."],
+              ["1978 Hahn, 1,250 gpm", "1978-2001", "Auctioned, $9,200, to a contractor who wanted the pump. Somebody saw the cab in a field near Tessler in 2011."],
+              ["1989 Pierce Arrow, 1,250 gpm", "1989-2013", "The first engine on scene on 11 June 2003. Sold 2014 for $21,000 to a department three counties over and still in service there as their second engine."]
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1341
+          }
+        ]
+      },
+      {
+        "id": "roster",
+        "name": "Roster",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Roster"
+          },
+          {
+            "kind": "text",
+            "body": "Current as of [b]Tuesday 8 September 2026[/b]. Forty-four active members.\n\nLine officers are elected by the membership at the annual meeting on the first Monday in January, except the chief, who is elected and then has to be confirmed by the city under the service contract, which has never once failed to happen and which takes six weeks anyway.\n\nYears are years on this department. Six members have time on another department that is not counted here, and two of them will tell you about it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Line officers"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "POSITION", "ON SINCE", "WORKS", "DAYTIME"],
+            "rows": [
+              ["Dwight Hovater", "Chief", "1992", "Parts counter, Third Street", "Four blocks away with a radio. In the district all day unless he is at the warehouse in Bowes City, which is one day a month."],
+              ["Renae Brumbach", "Deputy Chief", "1999", "Payroll, County General", "Marchfield, gone 7 to 4."],
+              ["Terry Lindenmuth", "Assistant Chief, Station 2", "1996", "Retired, city water department", "Available. At Station 2 most mornings whether or not there is a reason."],
+              ["Alvie Rakestraw", "Captain, Station 1", "2002", "Self-employed, drywall", "In the city most days, up a wall."],
+              ["Corinne Dietzel", "Captain, EMS officer", "2007", "Nights, care home in Halsey", "Good in the daytime, which is why the daytime numbers are not worse than they are."],
+              ["Pete Wenrich", "Lieutenant", "2005", "City street department", "In the city all day with a truck and a radio."],
+              ["Shauna Klauser", "Lieutenant", "2011", "Teaches at Verity Central", "Cannot leave the building during school hours. She raised that herself when she stood for the job and the membership elected her anyway."],
+              ["Brody Hackenberg", "Lieutenant, Station 2", "2015", "Welding shop, Doremus Street", "Half a block from Station 2 and it shows in the Tannery Flats response times."],
+              ["Gail Ozanne", "Safety officer", "1988", "Retired", "Available. At every drill for thirty-eight years and counting."],
+              ["Merv Stiely", "Fire police captain", "1994", "Retired, school district", "Available."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Firefighters"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "CARD", "NOTE"],
+            "rows": [
+              ["Ardell Yoho", "1981", "FF I, life member", "Forty-five years. Still has the 1981 helmet in a box and has never once brought it to a drill to show anybody."],
+              ["Kenton Mensch", "1986", "FF I/II, pump operator", "Does the annual pump tests in April with the man from the state standing next to him."],
+              ["Vaughn Rebuck", "1990", "FF I/II", "Air bottles, the cascade, and the hydrostatic test schedule, which he keeps in a book because the software the vendor sold us stopped working in 2019."],
+              ["Dana Pruett", "1998", "FF I/II, extrication", "Runs the extrication drill in March in the lot behind Station 2. Gets the cars from the yard on Doremus for nothing."],
+              ["Hollis Gaugler", "2001", "FF I, tanker", "One of nine who can drive the tanker loaded, which is the real ceiling on what we can do in the townships."],
+              ["Ty Zimmerer", "2004", "FF I/II, pump operator", "Second on the pump. Hose testing, which nobody wants."],
+              ["Marisol Ferrante", "2006", "EMT, FF I", "Keeps the medical inventory, which in twenty years has never once been wrong."],
+              ["Craig Derr", "2008", "FF I/II, ladders", "Ventilation. The only person here who enjoys a ladder in January."],
+              ["Nolan Faust", "2010", "FF I", "Works at the elevator. Nights and weekends in season, which is now."],
+              ["Bette Hoffert", "2012", "FF I, pump operator", "Works from home. On more weekday daytime calls than anyone else on this list by a wide margin."],
+              ["Josiah Klinger", "2013", "FF I/II", "Small engines, the generator, the light tower, and whatever the light tower is doing this month."],
+              ["Ramona Shirk", "2014", "EMT, FF I", "Lift assists. She has been to the same address on Bellview eleven times this year and has never once said anything about it."],
+              ["Dell Wingard", "2016", "FF I/II, extrication", "Station 2. Drives the squad."],
+              ["Kip Brumbach", "2017", "FF I", "Renae's son, which he would rather not lead with."],
+              ["Tanya Rakestraw", "2018", "FF I, tanker", "Alvie's daughter. Drywall in the day, tanker at night, and better at backing than her father."],
+              ["Everett Sipple", "2019", "FF I", "City police officer. Carries our pager and the city radio at once. The chief of police and this chief have now discussed that twice and settled it the same way twice."],
+              ["Curtis Mowery", "2020", "FF I/II", "Came in the year nobody could hold a class and did the whole card on a laptop and a parking lot."],
+              ["Jamie Lou Pettibone", "2021", "FF I", "Drives the brush truck because somebody has to want to."],
+              ["Hector Bazan", "2022", "FF I, pump operator", "Nights at the tyre shop. Weekday daytime, every time."],
+              ["Duane Frantz", "2023", "FF I", "Nine years on a department in another state before this one. Says nothing about it unless asked."],
+              ["Keisha Amato", "2024", "FF I", "Finished the card in eleven months, which is the fastest anybody here has done it."],
+              ["Wyatt Dellinger", "2025", "Probationary, in class", "Finishes in February."],
+              ["Brandi Yoho", "2025", "Probationary, in class", "Ardell's granddaughter. Finishes in February. Was left off this page for five months and did not mention it."],
+              ["Owen Klauser", "2026", "Probationary", "Started in July. Shauna's nephew, and no, she did not ask him."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "That is twenty-four. The other seven firefighters on the forty-four are members in good standing who are on the roll but off the line this year, for a knee, a job in another county, a new baby, a deployment, and three who are inactive and have not resigned and will not be asked to."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Fire police"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "NOTE"],
+            "rows": [
+              ["Merv Stiely", "1994", "Captain. Thirty-two years of standing in a road with a light."],
+              ["Lorna Kisner", "2001", "Company secretary since 2009. Keeps the minutes, the fund drive ledger and this website, in that order of importance."],
+              ["Arthur Tice", "2003", "Depot Street end, which is the one with the traffic."],
+              ["Bernadette Lutz", "2009", "Parades, the Santa run, and every drill that shuts a street."],
+              ["Glen Ohmer", "2012", "Retired from the county highway department. Knows which road closes badly and which road closes fine."],
+              ["Sylvia Dowd", "2016", "Rehab at a working fire: water, chairs, shade, and making grown men sit down in it."],
+              ["Rich Coffelt", "2020", "Traffic on Quarry Road, which is the one that scares all of us."],
+              ["Nadine Kupfer", "2021", "Auxiliary since 1971, fire police since 2021, and she was in this building before most of the roster was born. Warren's widow."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Juniors and auxiliary"
+          },
+          {
+            "kind": "text",
+            "body": "Five juniors, sixteen and seventeen, with a parent's signature on file: [b]Micah Gaugler[/b], [b]Presley Dowd[/b], [b]Cade Lindenmuth[/b] (all 2025), [b]Tessa Ohmer[/b] and [b]Danny Bazan[/b] (2026). They come to drill, roll hose, run cones at the parade, and do not go inside anything.\n\nThe junior programme started in 2006 and has produced six full members. The chief thinks that makes it the best thing this company does and the treasurer thinks it is six members for twenty years of insurance premiums, and both of them are right.\n\nThe auxiliary is nineteen people with its own officers, minutes and bank account, organised in 1949. It cooks the open house, runs the kitchen at hall rentals, and puts about $2,400 a year into the company that the company did not have to ask for. President is [b]Verna Coffelt[/b]. If you are renting the hall you are talking to her and not to us."
+          },
+          {
+            "kind": "image",
+            "seed": "gvfd-roster-bay-june-2026",
+            "imgKind": "photo",
+            "caption": "Twenty-six of forty-four, the Tuesday after the June inspection, in front of Engine 1-1 at Station 1. Of the eighteen not in it, thirteen were at work and one was on the way to a lift assist that came in while the camera was up."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Life members"
+          },
+          {
+            "kind": "text",
+            "body": "Twenty-five years on this department makes you a life member, and it is voted at the annual meeting, and nobody has ever been voted down.\n\nOn the current roster: [b]Ardell Yoho[/b], [b]Gail Ozanne[/b], [b]Kenton Mensch[/b], [b]Vaughn Rebuck[/b], [b]Merv Stiely[/b] and [b]Nadine Kupfer[/b].\n\nOff the line and still members: [b]Arlen Pennock[/b] (1981-2009), [b]Gene Doerfler[/b] (1979-2011), [b]Dean Skelly[/b] (1974-2004), [b]Lester Ohmer[/b] (1968-1999) and eleven others whose names are on the board in the hall.\n\nThere are ninety-one names on that board going back to 1913. Four of them are men we buried while they were still on the line and the years next to those four have a bar under them, and it is the only decoration in the building."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Joining"
+          },
+          {
+            "kind": "text",
+            "body": "Forty-four sounds like a great many people. On a Wednesday at ten in the morning it is six, and two of those six are retired.\n\nYou do not have to be a firefighter. We need drivers. We need fire police who will stand in a road and turn traffic in the rain. We need somebody who can run a pump, we need two more people in the kitchen, and we need one person who is willing to learn the air bottles from Vaughn before Vaughn is seventy-five.\n\nWhat it costs you is [b]Tuesday nights[/b] and a pager that goes off at four in the morning maybe twenty times a year. What it costs to join is nothing: the gear is the company's, the state pays for the class, the physical is on us, and there are no dues.\n\nCome on a Tuesday at seven. Do not telephone first, because nobody will answer. Side door on the Third Street end, under the light."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1512
+          }
+        ]
+      },
+      {
+        "id": "burning",
+        "name": "Burning",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Burning"
+          },
+          {
+            "kind": "text",
+            "body": "Two things happen at this station about eighty times a year: somebody comes for a burn permit, and somebody telephones the county about a neighbour's fire pit.\n\n[b]This department does not issue burn permits[/b] and never has. What you need depends entirely on which side of the city line you are standing on."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "1. Inside the city of Gridfall"
+          },
+          {
+            "kind": "text",
+            "body": "[b]You may not burn.[/b] Open burning inside the city limits is prohibited outright under City Ordinance 9-31, adopted 1979 and amended twice since. There is no permit that makes it legal, including the county one -- the county permit does not apply inside a municipality and never did, and that is the commonest misunderstanding at this counter.\n\nThat covers leaves, brush, a burn barrel, construction scrap, and a fire pit being used to get rid of something. Leaves go to the yard waste drop on Doremus Street, and the city picks up bagged leaves on the regular route for three weeks in October and November.\n\n[b]A recreational fire is not open burning.[/b] Clean seasoned firewood, in a pit or a ring or an appliance, under three feet across, somebody with it, a hose or an extinguisher in reach, not under a tree or against a fence or on a deck. Nobody is coming to look at that. We do not want to be at your fire pit any more than you want us there."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2. Outside the city, in the three townships"
+          },
+          {
+            "kind": "text",
+            "body": "You need the county's [b]Open Burning Permit, Form VC-208[/b]. It is good for the calendar year and you carry it while you are burning.\n\nThere are two counters and they do not charge the same thing, which we have asked about and been told twice that both are correct:\n\n[list][*][url=synth://verity.county.gov/s/burn-permit]The county's own service page[/url] says the completed form goes to the Fire Marshal's office in person with a $12 fee, and that the office takes neither email nor cards.[*][url=synth://verityclerk.gov/s/burn-permit]The clerk's counter[/url] keeps the same paper form, fills it in with you, stamps it, dates it, sends the copy across and charges nothing.[/list]\n\nThe clerk's counter is open and the Fire Marshal's office mostly is not. That is not advice, it is a fact about hours. If somebody at one counter tells you the other counter is wrong, that is a conversation to have with them.\n\nOver twenty acres you also need Form VC-208A, the agricultural addendum, and the extension office has the plainest explanation of when that applies at [url=synth://verityextension.org/]verityextension.org[/url]."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "3. Either way: telephone the county before you light it"
+          },
+          {
+            "kind": "text",
+            "body": "Not us. The county non-emergency line. Say where you are, what is burning and roughly how long, and it goes on the sheet. It takes ninety seconds.\n\nA legal fire that nobody logged costs this department a full response and costs the three neighbours who called it in an afternoon of wondering. In 2025 we turned out to [b]thirty-one[/b] fires that were entirely legal and entirely nobody's fault, and every one of those was an engine out of the bay and six people out of their jobs.\n\nThe county's sheet is the only thing that stops that. It is not a permit, it is not a record of anything, it costs nothing and nobody writes your name down for longer than that day."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The ban"
+          },
+          {
+            "kind": "text",
+            "body": "A county burn ban is declared by the fire marshal, not by us. When one is on, [b]nothing outdoors burns anywhere in the county[/b], permit or not, including recreational fires, including a grill using charcoal on a lot with no hydrant, and the fine is the county's.\n\nWhen the ban changes we put it on the sign at Station 1 and on the marquee at the top of this website the same morning. That marquee line is the one thing on this site I keep current to the day."
+          },
+          {
+            "kind": "table",
+            "head": ["BAN", "ON", "OFF", "DAYS"],
+            "rows": [
+              ["2021", "26 July", "13 September", "50"],
+              ["2022", "11 July", "29 August", "50"],
+              ["2023", "none", "--", "0"],
+              ["2024", "5 August", "2 September", "29"],
+              ["2025", "29 July", "2 September", "36"],
+              ["2026", "none so far", "--", "0"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What may not be burned anywhere in this district, ban or no ban, permit or no permit"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Tyres, shingles, roofing felt or anything else that came off a roof. This one catches somebody every single time a roof gets done.", "Treated, painted or pressure-treated lumber, including old decking and old fence posts.", "Plastic of any kind, insulation, carpet, foam, mattresses, upholstered furniture.", "Appliances, wire being burned for the copper in it, oil filters, waste oil.", "Anything belonging to a business rather than a household.", "A building. If you want a structure burned for training, that is a real thing, it takes about five months of paperwork through the state, and this department has done it three times since 2004 and would do it again."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The three sites that say we issue permits"
+          },
+          {
+            "kind": "text",
+            "body": "[url=synth://ask.verity.ai/]VerityAssist[/url] told somebody in July that the Gridfall fire department issues burn permits Monday to Friday, nine to five, and gave the Ward Street address. There is nobody in this building at nine on a Monday. There is nobody in this building at nine on any day.\n\n[url=synth://askverity.com/]AskVerity[/url] has an answer from 2017 saying the same thing. The question under it is closed as a duplicate of a question about a different county's fire marshal.\n\n[url=synth://verityanswers.com/]VerityAnswers[/url] has it right, for what it is worth, in an answer that is sitting at two votes under a wrong one at nineteen.\n\nWe have written to the two that have an address. One replied and thanked us for our feedback."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1108
+          }
+        ]
+      },
+      {
+        "id": "fund",
+        "name": "Fund Drive",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The fund drive"
+          },
+          {
+            "kind": "marquee",
+            "text": "*** THE ONLY LETTER THIS COMPANY SENDS GOES OUT THE WEEK OF 28 SEPTEMBER *** IT HAS A GRIDFALL RETURN ADDRESS AND NO TELEPHONE NUMBER IN IT *** WE DO NOT TELEPHONE ANYBODY, EVER ***"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What it is"
+          },
+          {
+            "kind": "text",
+            "body": "Once a year, the week after the fourth Monday in September, this company puts a letter in the post to every address in the city and the three townships. That is [b]9,100 letters[/b]: one page, a reply envelope, no glossy photograph, the same wording with the numbers changed since 2009.\n\nIt is a request. It is not a bill, not a subscription and not a membership, and [b]nothing about your fire protection changes if you throw it away[/b]. We come to your house either way. Nobody has ever looked at that list on the way to a call and nobody ever will.\n\nPeople ask why a department paid by the city needs a letter. The answer is the table below and it is not dramatic."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where this company's money comes from"
+          },
+          {
+            "kind": "table",
+            "head": ["SOURCE", "2025", "WHAT IT COVERS"],
+            "rows": [
+              ["City of Gridfall service contract", "$188,600", "The engine payment, insurance, fuel, utilities at both stations, radios and the county radio system share. Set by contract, renegotiated every three years, last in 2024."],
+              ["Cobb Township", "$9,400", "Contract. Per capita, worked out in 1998 and adjusted for inflation since."],
+              ["Dorrance Township", "$7,800", "Same."],
+              ["Nye Mills Township", "$6,200", "Same. They have been late twice in twenty-eight years and both times they telephoned first."],
+              ["Fall fund drive", "$9,340", "Gear, tools, training, the reserve, and everything the contract does not name."],
+              ["Auxiliary", "$2,400", "The kitchen, the open house, and the coffee, which is not nothing at 3 a.m."],
+              ["Hall rental", "$4,150", "[url=/hall]The hall page[/url]."],
+              ["Interest on the reserve", "$1,980", ""],
+              ["TOTAL", "$229,870", ""]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What the letter actually costs and what it actually brings"
+          },
+          {
+            "kind": "text",
+            "body": "Posted here because somebody asked at the open house in 2023 and the honest answer took me three days to work out."
+          },
+          {
+            "kind": "table",
+            "head": ["2025 FUND DRIVE", "", ""],
+            "rows": [
+              ["Letters posted", "9,100", "Every address in the city and the three townships."],
+              ["Printing", "$780", "Copy shop on Third Street, at cost, and they have never charged us setup."],
+              ["Postage, nonprofit bulk rate", "$2,093", "23 cents each."],
+              ["Envelopes, reply envelopes, labels", "$184", ""],
+              ["TOTAL COST", "$3,057", ""],
+              ["Envelopes returned", "604", "6.6 percent."],
+              ["GROSS RECEIVED", "$9,340", ""],
+              ["NET", "$6,283", ""],
+              ["Average gift", "$15.46", "The commonest single gift was $10 and there were 211 of them."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Six thousand two hundred and eighty-three dollars. That is what a year of this is worth, and it is a set of turnout gear and a bit.\n\nIn [b]2011[/b], the same letter to 8,400 addresses brought $16,900 from 1,390 envelopes, which was 16.5 percent. The response rate has gone down every year since 2014 without exception. We have not changed the letter. What has changed is that fewer people open post, fewer people keep a chequebook, and more people have been warned off giving to anything that arrives in an envelope, which is a reasonable thing to have been warned about and is partly the fault of the outfit in the next section.\n\nThere is no card reader, no online giving and no application. A cheque in the reply envelope, or cash in the boot at the open house, and that is the whole of it. Gridfall Host would sell us a payment page for $16 a month and the treasurer has said no four years running on the grounds that she would then have to reconcile it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Every dollar this company raised, with a date on it"
+          },
+          {
+            "kind": "text",
+            "body": "The treasurer reads this out at the meeting and I type it here after. If you gave and you are not on this, it is an error and she would like to know, and it will bother her more than it bothers you."
+          },
+          {
+            "kind": "table",
+            "head": ["DATE", "WHERE IT CAME FROM", "AMOUNT", "RUNNING"],
+            "rows": [
+              ["07 October 2024", "Open house boot", "$412", "$412"],
+              ["31 October 2024", "Fall fund drive, net", "$6,870", "$7,282"],
+              ["14 December 2024", "Santa run, the buckets", "$308", "$7,590"],
+              ["16 February 2025", "Memorial gifts, Dean Skelly", "$1,140", "$8,730"],
+              ["21 June 2025", "Carnival week, net of the ride contract", "$3,910", "$12,640"],
+              ["11 October 2025", "Open house boot", "$386", "$13,026"],
+              ["30 October 2025", "Fall fund drive, net", "$6,283", "$19,309"],
+              ["13 December 2025", "Santa run, the buckets", "$274", "$19,583"],
+              ["20 June 2026", "Carnival week, net of the ride contract", "$3,480", "$23,063"],
+              ["12 September 2026", "Quilt raffle at the county fair, with the auxiliary", "$395", "$23,458"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Against that, since October 2024 this company has bought nine sets of turnout gear at $4,180 each, which is $37,620, and the difference came out of the reserve. That is the whole shape of it. The drive does not cover the gear and the gear is not optional: it times out ten years from the date on the label whether it has been worn or not, and eleven of our sets date out between now and 2030."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The one that copies us"
+          },
+          {
+            "kind": "text",
+            "body": "Every autumn, about two weeks after our letter, a second letter goes round this county. It is on similar paper. It uses a shield and the words [b]Gridfall Firefighters Support Fund[/b]. The return address is a suite number in another state and the website on it is [url=synth://gridfall-firefighters-fund.biz/]gridfall-firefighters-fund.biz[/url].\n\nIt has nothing to do with this company, it is not a Verity County organisation, and no part of what it collects has ever reached this building. We have written to it twice. There is a similar one operating by telephone under a name close enough to ours that people have apologised to us for hanging up on it.\n\n[b]This company does not telephone anybody, for anything, ever.[/b] If a person rings you and says he is with the Gridfall fire department and asks for a card number, he is not. Hang up. You do not need to be polite about it.\n\nThe sheriff's office keeps a page on this and on the other three that go round here, at [url=synth://veritysheriff.gov/s/scams]Scams and Frauds[/url]. There is also a thing calling itself a first responder charity at [url=synth://verity-first-responders.top/donate]verity-first-responders.top[/url] which has used a photograph of our Engine 1-1 in the bay, taken off this website, and which does not answer letters.\n\nHow to tell ours: it comes from a Gridfall return address, it has no telephone number in it, it does not mention a deadline, it does not say you are a member of anything, and it is signed by the treasurer by hand in blue ink, 9,100 times, over two evenings, by an eighty-one-year-old woman who will not let anybody else do it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What the money is for, in order"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]Turnout gear.[/b] $4,180 a set, and everything else waits on it.", "[b]Air bottles.[/b] Fifteen years from the date stamped on the bottle and then it is scrap, whatever it looks like. Six come due in 2028.", "[b]Battery extrication tools.[/b] $22,000, quoted twice and higher the second time. This is the one that would change what we can do on a bad night.", "[b]The reserve.[/b] $96,400 at the end of 2025, and it is for Engine 1-3.", "[b]Training.[/b] The state pays for the class and not for the fuel, the overnight or the meal. A weekend course two hours away costs this company about $340 a member."]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1053
+          }
+        ]
+      },
+      {
+        "id": "hall",
+        "name": "The Hall",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The hall"
+          },
+          {
+            "kind": "text",
+            "body": "The hall is the Third Street end of Station 1. It is [b]40 by 72 feet[/b], the posted occupancy on the fire marshal's card by the door is [b]200[/b], and we will book you for 150 at round tables or 190 in rows of chairs.\n\nIt has been rented out since 1952. It is the only thing this building does that makes money and it makes $4,150 a year, which in 2025 was thirty-one bookings."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Rates"
+          },
+          {
+            "kind": "table",
+            "head": ["", "RATE", ""],
+            "rows": [
+              ["Saturday, full day", "$275", "Access from 9 a.m., out by midnight."],
+              ["Friday or Sunday, full day", "$210", ""],
+              ["Weekday evening", "$140", "After 5 p.m. Not Tuesdays."],
+              ["Half day, any day", "$120", "Four hours."],
+              ["Kitchen", "included", "There is no separate kitchen charge and there never has been."],
+              ["Deposit", "$100", "Returned, in full, within a fortnight, unless the floor is bad."],
+              ["Verity County nonprofit, weekday", "no charge", "Ask. We have never said no. The detectorists, the quilters and two AA groups use it and none of them pay."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Not on a Tuesday[/b], because Tuesday is drill and the tables have to come down anyway. Not the first week of October, because of Fire Prevention Week, and not the third week of June, because of the carnival.\n\nBookings are through [b]Verna Coffelt[/b], auxiliary president. She has the book and it is a paper book and she will tell you within a day. There is no online calendar on this website and there is not going to be one, because the last thing I want is two people with a receipt for the same Saturday."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is in it"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Twenty-two eight-foot tables, twelve round tables that seat eight, and about 210 chairs, of which roughly 190 are worth sitting on.", "A kitchen: two six-burner ranges, two ovens, a three-bay sink, two refrigerators, a freezer, and a warmer that works if you turn it on an hour early.", "Four coffee urns, a serving line, a steam table, and about 200 place settings of the plain white china the auxiliary bought in 1988.", "A public address system donated in 2004 that is honestly not good. Bring your own if the speaking matters."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Rules, all of them"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Alcohol[/b] takes a permit from the state, which is your permit and not ours, and a copy goes to Verna a week before. No open containers in the bay, and the door between the hall and the bay stays shut, which is a code thing and not a manners thing.\n\n[b]Food.[/b] Cook what you like for a private event. If you are selling food to the public you need a temporary food event permit from the county, [url=synth://verityhealth.gov/s/temp-events]on the health department's page[/url], $45 and about two weeks.\n\n[b]Decorations.[/b] Nothing on the ceiling, nothing taped to the panelling. There is a rail all the way round at eight feet and that is what it is for.\n\n[b]Clean-up.[/b] Floor swept, tables folded, rubbish in the dumpster at the Doremus end, kitchen as you found it. The deposit has come back thirty of the last thirty-one times.\n\n[b]The trucks come first.[/b] If the pagers go during your event, the hall keeps going and the bay does not. Members have walked through the middle of three weddings. Everybody has always been fine about it and the one time somebody was not, it was the photographer."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What it is actually used for"
+          },
+          {
+            "kind": "text",
+            "body": "Of the thirty-one bookings in 2025: eleven funeral lunches, six birthdays with a number on them, four wedding receptions, three baby showers, two graduations, two Christmas parties, one anniversary, one auction, and the Verity Central class of 1975's fiftieth reunion, which was the loudest thing this building has held since the carnival.\n\nThe funeral lunches are the ones that matter and they are free. They have been free since 1952 and it is not written down anywhere except in the minute book of 3 November 1952, which says the hall is to be at the disposal of any family in the district on the day of a burial at no charge. That is still the motion in force.\n\nIf ours is booked, there is a good list of halls on [url=synth://milbrookvfw.org/]the VFW post's page in Milbrook[/url], kept better than this one. The Ashkettle fire hall takes bookings as well, and the softball league has its banquet there in November, which is on [url=synth://countysoftball.org/]the league's page[/url]."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The kitchen, and what comes out of it"
+          },
+          {
+            "kind": "image",
+            "seed": "gvfd-hall-kitchen-1988-china",
+            "imgKind": "photo",
+            "caption": "The 1988 china, counted after the reunion in June. Two hundred and four plates and the auxiliary knows that number without looking."
+          },
+          {
+            "kind": "text",
+            "body": "The auxiliary will cook for a rental at cost plus $3 a head. They would rather you asked them than brought in caterers, and they would much rather you asked them than brought in caterers and then asked them to wash up.\n\nThe open house food is theirs, the carnival food is theirs, the funeral lunches are theirs, and they have never charged this company for any of it.\n\nFor the things they will not cook, [url=synth://gridfallpizza.com/]Gridfall Pizza[/url] does a sheet tray that comes to this hall about four times a year, and the market on Mill Street does trays as well, at [url=synth://hollismarket.com/]hollismarket.com[/url]."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1428
+          }
+        ]
+      },
+      {
+        "id": "asked",
+        "name": "Asked & Answered",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Asked and answered"
+          },
+          {
+            "kind": "text",
+            "body": "What gets asked at the counter, in the post and in the box at the bottom of this page. Written once so I can point at it."
+          },
+          {
+            "kind": "table",
+            "head": ["QUESTION", "ANSWER"],
+            "rows": [
+              ["Will I get a bill if you come to my house?", "No. This company does not bill for anything, ever, including a false alarm, including the fourth false alarm from the same panel in the same month. The county ambulance bills for a transport and the county ambulance is not us."],
+              ["Do you issue burn permits?", "No. Never have. [url=/burning]The burning page[/url] is the whole answer and it takes two minutes to read."],
+              ["Can I get a smoke alarm?", "Yes, free, to anybody who lives in this district, and we will come and put it in if you would rather not be on a chair. There is a bin of them in Utility 1-1 and a list on the wall. We put in 84 last year, 61 of them at the open house. We do not ask anything about you and we do not write your address down anywhere except on the list of alarms installed."],
+              ["What about the batteries?", "A ten-year sealed alarm is the only kind we hand out now: never change the battery, replace the whole thing in 2036. If yours is the kind that chirps, the battery is a 9 volt and it is $3 at the hardware store, and if you cannot reach it, leave a message at the station and somebody will come. We have done eleven of those this year."],
+              ["Do you check car seats?", "No. We used to. The certification lapsed in 2018 when the two members who held it left."],
+              ["Can we have a tour? Can you bring a truck to our school?", "Yes and yes. Leave a message or catch somebody on a Tuesday night. We do about twenty a year and they are the best part of the job. There is no charge. If we get toned while we are there the truck leaves, and that is the most exciting birthday party any child in this city has had."],
+              ["Why did the siren stop going off at night?", "The Ward Street siren was set to sound only between 7 a.m. and 10 p.m. in 2018, after a petition from Bellview Street with 61 names on it. It still sounds at noon every day and that is a test, not a call. Every member has a pager and has since 1979, so the siren has been decorative for forty-seven years, and every few years somebody asks for it back at night, and every few years the answer is the petition."],
+              ["Are you going to be merged into a county fire department?", "There is no county fire department and there never has been. It comes up every five or six years, goes to a committee, and stops there. Nine volunteer companies cover this county and the county's part of it is dispatch, the radio system and the fire marshal."],
+              ["What do the officers get paid?", "Nothing. Nobody on the line in this company is paid. The treasurer gets $1,500 a year and she is not an officer of the line."],
+              ["Do you sell the old trucks?", "Yes, and [url=/apparatus]what happened to each of them is on the apparatus page[/url]. If you are ringing about the 1948 Mack, it is not for sale, it has never been for sale, and the answer will be the same next year."],
+              ["Does the fire department know anything about the radio thing out on 62?", "No. We have no information about it, it is not on our road -- that stretch is Ashkettle's first-due -- and we have never been dispatched to anything to do with it. The county takes interference reports on Form VC-63 at [url=synth://verity.county.gov/s/route62-signal]the county portal[/url] and that is the whole of what we can tell you."],
+              ["Why does this website look like this?", "Because it costs $9 a month at [url=synth://gridfallhost.net/pricing]Gridfall Host[/url] and $18 a year for the name, which is $126 a year, and because I am a company secretary and not a website person. It works on a telephone, it works on the computer in the front office, and it will still be here in five years. The last one was prettier and it is gone."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What the internet says about this department"
+          },
+          {
+            "kind": "text",
+            "body": "None of this is a complaint. It is a list, because people arrive at this page having read one of these and it saves a conversation."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[url=synth://ask.verity.ai/]VerityAssist[/url] gives our hours as Monday to Friday, nine to five, and has given a telephone number that has never belonged to this company. It also says we issue burn permits. It is confident about all of it.", "[url=synth://now.verityledger.com/]The Ledger's current site[/url] ran a piece in June about a garage fire on Bellview that had the address right, the date right, and said two companies responded when it was one, and gave a quote from a chief who is not our chief and is not anybody's chief. There are no comments on that site and no address on it that reaches a person, so it stands.", "[url=synth://gridline.social/]Gridline[/url] carries our open house date every year, usually wrong, posted by an account that is not a person and that also posts the New Carrow pork dinner and the Milbrook fair. Last year it had the open house on a Sunday.", "[url=synth://clipvault-shorts.tv/]ClipVault Shorts[/url] has a video about the 2003 fire with our station in the thumbnail and a voice that is not a voice, saying two firefighters died. Two did not. [url=/history]The history page[/url] is the fact and the paper's archive is the source.", "There are at least four business-directory listings for us. Two have the old 1990s address, one lists us as permanently closed, none has a way to write to a person, and one wants $49 a month to \"claim\" the listing for a fire company that does not sell anything.", "Somebody scraped the roster off this page in 2024 onto a site that sells background checks. Three members found themselves on it. There is nothing to be done about that, and the only change it produced is that I stopped putting members' home towns on this page."]
+          },
+          {
+            "kind": "text",
+            "body": "The two people who actually write about this county are [url=synth://brenners-notebook.email/]Hal Brenner[/url] and [url=synth://thequarry.news/]Ruth Cannady[/url]. Brenner went through the city's fire contract line by line in the spring and had every figure right, including the two we had wrong on this page at the time, which is how we found out. Cannady published the county's tone-out and turnout times for all nine departments last year and ours are middling."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The box"
+          },
+          {
+            "kind": "text",
+            "body": "The template put a comment box at the bottom of every page on this site and I have not found the setting that turns it off. I read it in January and September when I am in here anyway.\n\nWhat follows is what has landed in it since January, unedited, in the order it arrived, with the obvious machines left exactly where they fell. If you wrote something in here expecting an answer, that is my fault for leaving the box up and I am sorry."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "R. Teagle",
+                "time": "2026-01-19",
+                "body": "Is this where a person gets the burn permit. The recording at the fire marshal says the office is open Tuesday and Thursday mornings and it was Tuesday morning."
+              },
+              {
+                "author": "growth-partner-93",
+                "time": "2026-01-22",
+                "body": "Hello! I am reaching out regarding a content partnership opportunity for gridfallvfd.org. Our network reaches over 40 million monthly readers in the public safety vertical. We would be delighted to discuss sponsored placements at a rate that reflects your site's strong local authority. Please advise on next steps at your earliest convenience."
+              },
+              {
+                "author": "(no name given)",
+                "time": "2026-02-03",
+                "body": "Dear {{business_name}},\n\nWe noticed that {{business_name}} does not currently appear in the top ten results for fire services in {{city}}. Our team of specialists can resolve this in under {{timeframe}}. Reply STOP to opt out."
+              },
+              {
+                "author": "Marty D.",
+                "time": "2026-02-11",
+                "body": "Four of you carried my father down the stairs at 2 in the morning on the 9th and one of you went back up for his glasses. I do not know which one and he does not either. That is all, I just wanted it written down somewhere."
+              },
+              {
+                "author": "VerityLocalNews",
+                "time": "2026-02-14",
+                "body": "Local officials confirm that residents in the community are encouraged to review fire safety guidance as the season changes. The department has served the area for many years. For more information, residents should contact local officials."
+              },
+              {
+                "author": "documentary research",
+                "time": "2026-03-02",
+                "body": "Hi there, I'm producing a short piece on the 2004 Gridfall substation disaster and I'd love to include a line about the two firefighters who lost their lives. Could someone confirm their names and whether the department holds an annual memorial? Working to a tight deadline, any help appreciated."
+              },
+              {
+                "author": "Lorna Kisner, secretary",
+                "time": "2026-03-03",
+                "body": "It was 2003. Nobody lost their life. Two of our members took in smoke and were home that afternoon and both of them are alive. There is no memorial because there is nothing to memorialise. [url=/history]The page is here[/url] and the newspaper from the day is at [url=synth://verityledger.com/]verityledger.com[/url].\n\nI sent that as a reply as well and it came back undeliverable."
+              },
+              {
+                "author": "CASH-4-SCRAP",
+                "time": "2026-03-18",
+                "body": "TOP DOLLAR PAID FOR RETIRED FIRE APPARATUS AND SURPLUS EQUIPMENT NATIONWIDE ANY CONDITION FAST QUOTE [url=synth://apparatus-cash-offer.top/quote]apparatus-cash-offer.top[/url]"
+              },
+              {
+                "author": "W. Beidler",
+                "time": "2026-04-06",
+                "body": "The noon siren is fine. Leave it. Whoever complains about it every spring can move four blocks."
+              },
+              {
+                "author": "listing verification",
+                "time": "2026-04-06",
+                "body": "URGENT: Your business listing for GRIDFALL VOLUNTEER FIRE CO is scheduled for removal. Verify ownership within 48 hours to maintain visibility across our partner network. Annual verification fee applies."
+              },
+              {
+                "author": "Dot Wenrich",
+                "time": "2026-05-12",
+                "body": "You have my son's name as Pete on the roster page and it is Peter but he has been Pete since he was four so leave it."
+              },
+              {
+                "author": "a neighbour on Doremus",
+                "time": "2026-06-22",
+                "body": "Whoever backed the tanker in at half past two on Saturday morning did it in one go and I am not even annoyed. I have watched that take four tries."
+              },
+              {
+                "author": "AutoLocal_Feed",
+                "time": "2026-07-08",
+                "body": "Fire safety experts say residents in Gridfall should check their smoke alarms twice a year. Officials in the community note that the local fire department plays a vital role. Read more about fire safety in Gridfall and across the region."
+              },
+              {
+                "author": "K. Amrhein",
+                "time": "2026-08-30",
+                "body": "Was told at the county that you have the flow test numbers for the hydrant at the corner of Ward and Third. Is that something a person can just come and look at or is there a form. There is always a form."
+              },
+              {
+                "author": "Lorna Kisner, secretary",
+                "time": "2026-09-08",
+                "body": "You can come and look at it on a Tuesday night, there is no form, and the numbers are the water board's rather than ours so theirs will be better than mine: [url=synth://veritywater.org/s/flushing]veritywater.org[/url].\n\nThat is the box up to date. Next time I am in here is January."
+              }
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 2201
+          }
+        ]
+      }
+    ]
+  }
+}

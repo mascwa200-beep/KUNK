@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T15:48:35Z",
+  "generated": "2026-09-20T15:55:36Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -551,6 +551,25 @@
       ],
       "path": "net/sites/gridfalltire-com/site.json",
       "bytes": 43274
+    },
+    {
+      "domain": "gridfallvfd.org",
+      "title": "Gridfall Volunteer Fire Company No. 1",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "Two stations, forty-four volunteers and 1,517 calls a year, kept online four times a year by the company secretary: roster, apparatus with mileage, burn permits they do not issue, a fund drive that nets $6,283, and the 11 June 2003 substation fire written out off the run sheet because nearly everything else about it online is wrong.",
+      "tags": [
+        "gridfall",
+        "fire",
+        "county",
+        "2026",
+        "volunteer",
+        "2003",
+        "substation"
+      ],
+      "path": "net/sites/gridfallvfd-org/site.json",
+      "bytes": 112572
     },
     {
       "domain": "gridline.social",
