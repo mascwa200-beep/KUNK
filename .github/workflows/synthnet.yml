@@ -27,6 +27,7 @@ on:
       - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/scripts/synthnet_budget_check.py"
       - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
@@ -42,6 +43,7 @@ on:
       - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/scripts/synthnet_budget_check.py"
       - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
@@ -227,6 +229,28 @@ jobs:
         # when I added this; it is under five, so the budget stays at six
         # and --press stays uncapped.
         run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 6
+
+      - name: No page may contradict itself
+        # Every other check asks whether a page renders, whether its links go
+        # anywhere, whether its controls do anything. This asks whether the
+        # page AGREES WITH ITSELF -- whether a number it states matches the
+        # thing it states it about, three inches down the same screen.
+        #
+        # That is where every content bug of the last two rounds lived, and
+        # not one was caught by CI: "101,900 articles in 21 topics" over a
+        # column adding to 17,064; "2 Answers" over five; "3 comments" over
+        # eight; a thread saying "Bump limit reached" above an omitted count
+        # from before it got there; and "Most users ever online was 118 on
+        # Mon Apr 2, 2009-2016 9:50 pm". All six rendered perfectly. All six
+        # were found by looking at a picture.
+        #
+        # Two rules inside it, both learned by getting them wrong: it reads
+        # BOTH numbers off the page and never recomputes one (a checker that
+        # re-derives the renderer's arithmetic agrees with the renderer's
+        # bug), and every row names its relation, because a board that
+        # declares more posts than it itemises is correct and a heading that
+        # undercounts its own list is not.
+        run: python3 .github/scripts/synthnet_claims_check.py --root synthnet
 
       - name: Every renderer mode has to render once
         # You cannot render a route no site serves, so a renderer can ship
