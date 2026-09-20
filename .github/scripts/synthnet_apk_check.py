@@ -23,6 +23,7 @@ import argparse
 import glob
 import os
 import pathlib
+import re
 import socket
 import sys
 import threading
@@ -57,6 +58,25 @@ def launch(pw):
         return pw.chromium.launch(executable_path=found[-1])
 
 
+_LOADMAP_ENTRY = re.compile(
+    r"\w+\s*:\s*\{\s*js\s*:\s*'([^']+)'\s*,\s*css\s*:\s*'([^']+)'\s*\}")
+
+
+def loadmap_paths(root: pathlib.Path) -> set:
+    """Every file app/render.js may fetch on demand, read from the one table
+    that decides it. Empty would silently assert nothing, so that is a
+    failure rather than a pass."""
+    text = (root / "app" / "loadmap.js").read_text(encoding="utf-8")
+    out = set()
+    for js, css in _LOADMAP_ENTRY.findall(text):
+        out.add(js)
+        out.add(css)
+    if not out:
+        raise SystemExit("FAIL: app/loadmap.js parsed to zero entries -- this "
+                         "check would assert nothing")
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apk", default="synthnet/android/synthnet.apk")
@@ -87,6 +107,25 @@ def main() -> int:
         pass
     if not assets:
         problems.append("APK contains no assets/ at all")
+
+    # Everything app/render.js can fetch at navigation time, from the table
+    # in app/loadmap.js.
+    #
+    # The browser drive below records what the page ASKS FOR, and it opens
+    # one site of eight types. That covered every renderer while index.html
+    # carried all twenty of them; it stopped covering the other twelve the
+    # moment they became on-demand, because nothing in the drive opens a
+    # newsletter or a dash. The check would have gone blind rather than red
+    # -- a green run meaning "the eight types we happened to visit are in
+    # the APK" while reading like "everything is".
+    #
+    # So the table is asserted directly. The drive stays, because it proves
+    # the loading path itself works, which a file listing cannot.
+    for rel in sorted(loadmap_paths(root)):
+        if rel not in assets:
+            problems.append(
+                f"app/loadmap.js needs {rel!r} but it is not in the APK's "
+                "assets/ -- that site type cannot render on the phone")
 
     try:
         from playwright.sync_api import sync_playwright

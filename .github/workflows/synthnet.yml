@@ -25,6 +25,9 @@ on:
       - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
+      - ".github/scripts/synthnet_budget_check.py"
+      - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_apk_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -37,6 +40,9 @@ on:
       - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
+      - ".github/scripts/synthnet_budget_check.py"
+      - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_apk_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -102,69 +108,32 @@ jobs:
           python3 synthnet/tools/build.py --check
 
       - name: Enforce the size budget
-        run: |
-          # Raised to 2 MB for the push to ~100 sites; the reasoning and the
-          # measurements are in tools/build.py next to SEARCH_LIMIT, which
-          # must hold the same number.
-          # 400 KB was set when the index held 252 documents, because search
-          # only ever built documents for seven of the eighteen site types.
-          # It now indexes all of them -- 492 documents at this commit, 216 KB
-          # -- and roughly triples again with the content this branch adds.
-          # Measured at this commit: 221,738 bytes.
-          limit=2097152
-          actual=$(stat -c%s synthnet/net/search.json)
-          echo "search.json: $actual bytes (limit $limit)"
-          if [ "$actual" -gt "$limit" ]; then
-            echo "FAIL: the search index has regressed past its budget."
-            exit 1
-          fi
-
-          # Everything index.html pulls in on a cold load, including all seven
-          # skins and live.css, which are <link>ed unconditionally. Leaving a
-          # linked file out is how this step once reported 220 KB for a 311 KB
-          # payload: a budget that measures the wrong thing is worse than none.
-          assets="synthnet/index.html synthnet/theme/aero.css \
-                  synthnet/theme/skins/*.css synthnet/theme/live.css \
-                  synthnet/theme/compose.css synthnet/theme/control.css \
-                  synthnet/theme/feeds.css \
-                  synthnet/app/*.js \
-                  synthnet/app/types/*.js synthnet/net/registry.json \
-                  synthnet/manifest.webmanifest"
-          raw=0; gz=0
-          for f in $assets; do
-            raw=$((raw + $(stat -c%s "$f")))
-            gz=$((gz + $(gzip -c "$f" | wc -c)))
-          done
-          echo "cold-load shell: $raw bytes raw, $gz bytes gzipped"
-          # Both numbers are real: tools/serve.py gzips, so a browser moves the
-          # second, but the raw figure is what the files actually weigh.
-          #
-          # History: 400/120 KB originally. 900/250 when the live layer
-          # landed. 1600/450 when the 2026 build added ten renderers, the
-          # reply engine, the fame model and the authoring UI. Raised again
-          # here for the heartbeat, the alerts layer and the Feeds panel, the
-          # composition grammar, and the wire, newsletter and chat renderers.
-          # Measured at this commit: 1,503,598 raw / 423,360 gzipped.
-          #
-          # These bytes are loaded up front deliberately. Fetching them lazily
-          # is the better engineering and the wrong trade here: it costs the
-          # single-file standalone build, which is the mode that needs no
-          # install at all. In the app and that file the bytes are local, so
-          # the figure only means anything over a LAN -- where the gzipped
-          # number is the one that travels, and 420 KB is under half a second
-          # on anything.
-          #
-          # NOTE that content does NOT land here. A site.json is fetched when
-          # you visit that site, so the network can keep growing without this
-          # number moving. What moves it is renderers and pools.
-          if [ "$raw" -gt 2097152 ]; then
-            echo "FAIL: the shell payload has grown past 2 MB uncompressed."
-            exit 1
-          fi
-          if [ "$gz" -gt 573440 ]; then
-            echo "FAIL: the shell payload has grown past 560 KB gzipped."
-            exit 1
-          fi
+        # Two numbers, because there are two questions.
+        #
+        # COLD LOAD is what index.html blocks on before it paints. PAYLOAD is
+        # everything the service worker eventually pulls, which is what a
+        # first visit really costs and what offline needs. They used to be the
+        # same number: the page carried all twenty renderers and all twenty
+        # skin stylesheets whatever site you were looking at. Now app/
+        # render.js fetches the one a page needs, from the table in
+        # app/loadmap.js, and the first paint is 1,082,706 bytes raw cheaper
+        # while the payload has not moved by a byte.
+        #
+        # Saying only the first number would claim the app halved. It did not.
+        #
+        # The ceiling went DOWN here -- 2 MiB to 1 MiB raw, 560 KiB to 320 KiB
+        # gzipped -- which is the first time that has happened in this project.
+        # It had been raised three times (400 KB, 1 MB, 2 MB) and each raise
+        # was defensible on its own while the trend was not: a ceiling that
+        # moves whenever content grows has stopped being an alarm.
+        #
+        # The list is derived from index.html and from sw.js rather than typed
+        # here. It used to be a shell glob, and a glob is a hand-maintained
+        # list in a disguise -- `synthnet/app/*.js` kept counting control.js
+        # after it was deferred, and an earlier version of this step
+        # under-reported by 91 KB by not naming the skin stylesheets that
+        # every single page loaded.
+        run: python3 .github/scripts/synthnet_budget_check.py --root synthnet
 
       - name: The standalone single-file build must stay openable
         # dist/synthnet.html inlines the shell AND every site, which is what
@@ -191,6 +160,19 @@ jobs:
           pip install --quiet playwright
           python3 -m playwright install --with-deps chromium
           python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
+
+      - name: The standalone file must work off a file manager, offline
+        # The previous step checks that dist/synthnet.html is not too big,
+        # which is to say it checks the file exists. Nothing ever opened it.
+        #
+        # That became the gap that mattered when the twenty renderers left
+        # index.html: served, app/render.js fetches them on demand; a single
+        # file has nothing to fetch from, so tools/build.py inlines every
+        # app/loadmap.js entry instead. The reason this was not done years
+        # ago was a belief that deferring them "costs the standalone build".
+        # It does not, and now that is asserted rather than believed --
+        # including that the file makes no non-file:// request at all.
+        run: python3 .github/scripts/synthnet_standalone_check.py --bundle synthnet/dist/synthnet.html
 
       - name: Posting, replies, fame, packs and persistence
         # The render test proves pages draw. It cannot prove the site does

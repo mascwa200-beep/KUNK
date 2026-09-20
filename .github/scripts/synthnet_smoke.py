@@ -233,6 +233,23 @@ def main() -> int:
                         failures.append(f"{where}: console error: {errors[0][:200]}")
                     if len(text.strip()) < 40:
                         failures.append(f"{where}: rendered {len(text.strip())} chars (empty page)")
+                    # app/render.js draws a notice box when it has no renderer
+                    # for a type, or when one throws. Both are legible pages
+                    # with plenty of text, so every assertion here was happy
+                    # with them: a network where all 109 sites rendered
+                    # "Unsupported site type" would have swept green.
+                    #
+                    # That was survivable while index.html carried all twenty
+                    # renderers -- nothing could go missing at runtime. Now
+                    # app/render.js fetches them on demand and this is the
+                    # sweep that would notice a loader that stopped loading.
+                    for notice in ("Unsupported site type",
+                                   "This page could not be displayed"):
+                        if notice in text:
+                            failures.append(
+                                f"{where}: rendered the {notice!r} notice "
+                                "instead of the page")
+                            break
                     for marker in LEAK_MARKERS:
                         if marker in text:
                             idx = text.index(marker)
