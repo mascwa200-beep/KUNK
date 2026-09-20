@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T08:04:51Z",
+  "generated": "2026-09-20T08:13:24Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -474,6 +474,23 @@
       "tags": [],
       "path": "net/sites/now-verityledger-com/site.json",
       "bytes": 62508
+    },
+    {
+      "domain": "oldswap.gridfall.net",
+      "title": "Gridfall Swap Shop (archived)",
+      "type": "forum",
+      "era": "2009-2016",
+      "skin": "phpbb-blue",
+      "description": "ARCHIVED AND READ ONLY -- registration and posting closed on 30 September 2016, everything posted here since 2009 is still where it was, and the board people use now is gridfallswap.net.",
+      "tags": [
+        "gridfall",
+        "classifieds",
+        "archive",
+        "2016",
+        "locals"
+      ],
+      "path": "net/sites/oldswap-gridfall-net/site.json",
+      "bytes": 105556
     },
     {
       "domain": "pinelock-media.com",
