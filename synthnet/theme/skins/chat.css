@@ -414,6 +414,20 @@
   overflow-wrap: break-word;
 }
 
+/* A name in the archive that never turns up in a channel that still takes
+ * messages. The page never says what happened to them, because nobody who
+ * is still here knows either. */
+.skin-chatdark .cd-left {
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #a6adb5;                       /* 5.58:1 on #313338, 5.34:1 on hover */
+  border: 1px solid #4a4d55;
+  border-radius: 3px;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
 .skin-chatdark .cd-when {
   font-size: 11px;
   color: #a6adb5;                       /* 5.58:1 on #313338, 5.34:1 on hover */

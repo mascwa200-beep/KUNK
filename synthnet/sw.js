@@ -30,6 +30,8 @@ var SHELL = [
   './theme/skins/stream.css',
   './theme/skins/dash.css',
   './theme/skins/wire.css',
+  './theme/skins/newsletter.css',
+  './theme/skins/chat.css',
   './theme/live.css',
   './theme/compose.css',
   './theme/control.css',
@@ -72,6 +74,8 @@ var SHELL = [
   './app/types/stream.js',
   './app/types/dash.js',
   './app/types/wire.js',
+  './app/types/newsletter.js',
+  './app/types/chat.js',
   './app/engine.js',
   './net/registry.json',
   './net/search.json'

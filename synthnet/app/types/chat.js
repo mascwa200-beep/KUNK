@@ -52,7 +52,7 @@ window.SYNTH = window.SYNTH || {};
 
   function trim(s) {
     return String(s === null || s === undefined ? '' : s)
-      .replace(/^[\s ]+|[\s ]+$/g, '');
+      .replace(/^[\s\u00a0]+|[\s\u00a0]+$/g, '');
   }
 
   /* FNV-1a, matching live.js, and unsigned the whole way down. A signed
@@ -621,6 +621,26 @@ window.SYNTH = window.SYNTH || {};
     return box;
   }
 
+  /* Everyone who has said something in a channel that still takes messages.
+   * A name in the archive that is not in here belongs to somebody who did
+   * not come across with the export, or came across and stopped. The page
+   * does not say that anywhere; it just tags the name. */
+  function stillHere(list) {
+    var seen = {};
+    var i, j;
+    for (i = 0; i < list.length; i++) {
+      if (isReadOnly(list[i])) { continue; }
+      var src = list[i].messages || [];
+      for (j = 0; j < src.length; j++) {
+        if (src[j] && typeof src[j] === 'object') {
+          var who = trim(src[j].by);
+          if (who) { seen[who] = 1; }
+        }
+      }
+    }
+    return seen;
+  }
+
   /* ---------- the river ---------- */
 
   function replyChip(ctx, r) {
@@ -655,7 +675,7 @@ window.SYNTH = window.SYNTH || {};
     }, text(agoText(g.at)));
   }
 
-  function groupNode(ctx, ch, g) {
+  function groupNode(ctx, ch, g, here) {
     var dead = isReadOnly(ch);
     var row = el('li', { 'class': 'cd-grp' + (g.mine ? ' cd-grp-mine' : '') });
 
@@ -667,6 +687,9 @@ window.SYNTH = window.SYNTH || {};
 
     var head = el('div', { 'class': 'cd-grp-head' });
     head.appendChild(el('span', { 'class': 'cd-who' }, text(g.by)));
+    if (dead && here && !Object.prototype.hasOwnProperty.call(here, g.by)) {
+      head.appendChild(el('span', { 'class': 'cd-left' }, text('left the server')));
+    }
     var b = badge(g.kind);
     if (b) { head.appendChild(b); }
     head.appendChild(stampNode(g));
@@ -683,7 +706,7 @@ window.SYNTH = window.SYNTH || {};
     return row;
   }
 
-  function riverNode(ctx, ch, groups) {
+  function riverNode(ctx, ch, groups, here) {
     var list = el('ul', { 'class': 'cd-msgs' });
     var lastDay = null;
     var i;
@@ -697,7 +720,7 @@ window.SYNTH = window.SYNTH || {};
             el('span', { 'class': 'cd-day-label' }, text(dayLabel(g.at)))));
         }
       }
-      list.appendChild(groupNode(ctx, ch, g));
+      list.appendChild(groupNode(ctx, ch, g, here));
     }
     if (!groups.length) {
       list.appendChild(el('li', { 'class': 'cd-empty' },
@@ -825,7 +848,8 @@ window.SYNTH = window.SYNTH || {};
     main.appendChild(topicBar(ctx, ch));
     if (isReadOnly(ch)) { main.appendChild(archiveBanner(ctx, ch)); }
 
-    main.appendChild(riverNode(ctx, ch, groupMessages(riverFor(ctx, ch))));
+    main.appendChild(riverNode(ctx, ch, groupMessages(riverFor(ctx, ch)),
+                               stillHere(list)));
 
     var typing = typingNode(ctx, ch);
     if (typing) { main.appendChild(typing); }
