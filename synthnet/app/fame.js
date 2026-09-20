@@ -1001,6 +1001,39 @@ window.SYNTH = window.SYNTH || {};
     };
   }
 
+  /* --- the shadowban ------------------------------------------------------
+   *
+   * Your posts go through. They are on your profile, they have an id, they
+   * are in your own list. Nobody else sees them. There is no notice, no
+   * appeal, and no way to tell from inside the account -- which is the whole
+   * mechanism, and the reason it is the moderation action people find most
+   * upsetting: the evidence for it and the evidence for being boring are the
+   * same evidence.
+   *
+   * So there is deliberately no marker anywhere in the UI. The tell is the
+   * absence: the replies stop, the likes stop, the Feeds digest has nothing
+   * addressed to you, and everyone else's posts carry on exactly as before.
+   * If you notice, you notice.
+   *
+   * Seeded on the handle so it is stable -- being shadowbanned on alternate
+   * refreshes would read as a bug rather than a punishment -- and gated on
+   * having posted enough for it to be legible as a change. About one account
+   * in twenty-five, which is roughly the rate people accuse platforms of and
+   * far above the rate platforms admit to. */
+  var SHADOW_RATE = 0.04;
+  var SHADOW_AFTER_POSTS = 12;
+
+  function shadowbanned(profile, postCount) {
+    var p = profile || {};
+    if (!p.handle) { return false; }
+    var n = (typeof postCount === 'number') ? postCount : (p.postCount || 0);
+    if (n < SHADOW_AFTER_POSTS) { return false; }
+    var L = window.SYNTH.live;
+    if (!L || !L.hash32) { return false; }
+    return (L.hash32('shadow:' + String(p.handle).toLowerCase()) % 1000) <
+      Math.round(SHADOW_RATE * 1000);
+  }
+
   SYNTH.fame = {
     score: score,
     tierFor: tierFor,
@@ -1009,6 +1042,7 @@ window.SYNTH = window.SYNTH || {};
     dmsFor: dmsFor,
     decayed: decayed,
     drift: drift,
+    shadowbanned: shadowbanned,
     tuning: tuning
   };
 })();

@@ -134,6 +134,18 @@
         ? SYNTH.fame.score({ text: text, analysis: analysis, profile: p, at: at, id: id })
         : { likes: 0, reposts: 0, followerDelta: 0, viral: false, ratioed: false };
 
+      /* A shadowbanned post still posts. It is saved, it has an id, it is on
+       * your profile and in your own list. It simply reaches nobody, and
+       * nothing anywhere says so -- see fame.js. The post keeps a flag so
+       * bots.js can decline to reply to it; the flag is never rendered. */
+      var muted = !!(SYNTH.fame && SYNTH.fame.shadowbanned &&
+        SYNTH.fame.shadowbanned(p, p.postCount || 0));
+      if (muted) {
+        scored = {
+          likes: 0, reposts: 0, followerDelta: 0, viral: false, ratioed: false
+        };
+      }
+
       var post = {
         id: id,
         at: at,
@@ -144,6 +156,7 @@
         followerDelta: scored.followerDelta || 0,
         viral: !!scored.viral,
         ratioed: !!scored.ratioed,
+        muted: muted,
         analysis: analysis
       };
 

@@ -1655,6 +1655,12 @@ window.SYNTH = window.SYNTH || {};
       post = post || {};
       opts = opts || {};
 
+      /* A shadowbanned post reaches nobody, so nobody answers it. This is
+       * the only place the flag does anything, and it does it by returning
+       * an empty list rather than by saying anything -- the silence IS the
+       * feature. See the note in app/fame.js. */
+      if (post.muted) { return []; }
+
       var id = String(post.id == null ? 'post' : post.id);
       var body = String(post.body == null ? '' : post.body);
       var at = Number(post.at);
