@@ -143,7 +143,8 @@ DEAD_TLDS = (
 # the only version of this that a person can act on without reading the
 # source.
 LIVE_TLDS = (".org", ".net", ".com", ".tv", ".blog", ".social", ".store",
-             ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press")
+             ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press",
+             ".live", ".chat", ".radio")
 
 SCAN_SUFFIXES = {".html", ".htm", ".css", ".js", ".json", ".md", ".webmanifest", ".svg"}
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".idea", ".vscode"}

@@ -69,7 +69,8 @@ DEAD_TLDS = (
     ".synth",
 )
 LIVE_TLDS = (".org", ".net", ".com", ".tv", ".blog", ".social", ".store",
-             ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press")
+             ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press",
+             ".live", ".chat", ".radio")
 
 # Domains the engine serves itself rather than from net/sites/. They are not
 # in the registry and never will be, because there is no site.json behind them.
