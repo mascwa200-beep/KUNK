@@ -552,13 +552,46 @@
           'Ranked by pages opened, which is not the same as pages read.'));
     }
 
-    /* A dateline that is fixed for this paper, not for today. */
+    /* A dateline fixed to this paper's own latest edition -- which is right
+     * for the frozen 2007 archive and wrong for a 2026 site whose slogan is
+     * "Updated continuously". On those the masthead sat eleven days behind
+     * its own front page, where the liveblog above it said "12 min ago".
+     *
+     * So a live paper prints today and an archive prints its last day. The
+     * authored articles still decide the volume and issue number either way,
+     * because those are the paper's, not the calendar's. */
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                  'July', 'August', 'September', 'October', 'November',
+                  'December'];
+
+    function today() {
+      var L = window.SYNTH.live;
+      var t = new Date(L && L.now ? L.now() : Date.now());
+      return MONTHS[t.getMonth()] + ' ' + t.getDate() + ', ' + t.getFullYear();
+    }
+
+    /* Dates are written "September 18, 2026", so picking the newest with a
+     * string comparison sorts by the spelling of the month: September beats
+     * October, and March beats April. Sort on a real key instead. */
+    function dateKey(s) {
+      var m = /^([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})$/.exec(String(s || ''));
+      if (!m) { return -1; }
+      var mi = -1;
+      for (var i = 0; i < MONTHS.length; i++) {
+        if (MONTHS[i].toLowerCase() === m[1].toLowerCase()) { mi = i; break; }
+      }
+      if (mi < 0) { return -1; }
+      return parseInt(m[3], 10) * 10000 + mi * 100 + parseInt(m[2], 10);
+    }
+
     function dateline() {
-      var latest = '';
+      var latest = '', best = -1;
       for (var i = 0; i < articles.length; i++) {
         var d = String(articles[i].date || '');
-        if (d && d > latest) { latest = d; }
+        var k = dateKey(d);
+        if (d && k > best) { best = k; latest = d; }
       }
+      if (String(site.era || '') === '2026') { latest = today(); }
       if (!latest) { latest = String(site.era || ''); }
       var yr = yearOf(latest) || yearOf(site.era) || 2004;
       var seed = hash(site.domain || site.title || 'news');
