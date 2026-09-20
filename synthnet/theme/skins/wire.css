@@ -222,7 +222,10 @@
 
 .skin-wireroom .wr-row:hover { background: #171a1d; }
 
-.skin-wireroom .wr-row-live { border-left: 2px solid #3d4a3f; padding-left: 6px; }
+/* Copy that is still moving and has not been written up: a green bar on the
+ * left, the same tell the paper feed had when the printer was still running.
+ * It has to read at a glance on a dark rail, so it is brighter than the rule. */
+.skin-wireroom .wr-row-live { border-left: 3px solid #5f8c66; padding-left: 6px; }
 
 .skin-wireroom .wr-row-bul { background: #1d1415; }
 

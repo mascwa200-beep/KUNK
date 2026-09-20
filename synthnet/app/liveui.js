@@ -69,7 +69,22 @@
 
     box.appendChild(el('div', { 'class': 'lv-ad-tag' }, 'Ad · ' + (a.advertiser || 'VerityAds')));
     box.appendChild(el('div', { 'class': 'lv-ad-head' }, a.headline || ''));
-    if (a.body) box.appendChild(el('div', { 'class': 'lv-ad-body' }, a.body));
+    if (a.body) {
+      /* Through the parser, like every other body on the network. This went
+       * in as plain text for a long time and nothing caught it, because the
+       * one ad in the pool with markup in it -- the deliberately broken
+       * creative -- was essentially never drawn: hash32's low bits were
+       * biased, so most of every pool was unreachable. Fixing the hash made
+       * this ad appear and it printed "[img:banner:...]" on the page. */
+      var bodyBox = el('div', { 'class': 'lv-ad-body' });
+      if (SYNTH.markup && typeof SYNTH.markup.parse === 'function') {
+        var frag = SYNTH.markup.parse(String(a.body));
+        if (frag) bodyBox.appendChild(frag);
+      } else {
+        bodyBox.appendChild(document.createTextNode(String(a.body)));
+      }
+      box.appendChild(bodyBox);
+    }
     if (a.cta) {
       box.appendChild(el('span', {
         'class': 'lv-ad-cta',

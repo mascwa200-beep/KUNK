@@ -68,28 +68,28 @@ public final class SlotMath {
     /**
      * FNV-1a as JavaScript computes it, rounding and all. See the class note.
      */
+    /**
+     * FNV-1a, 32-bit, exact.
+     *
+     * This used to be done in double arithmetic, deliberately, to match what
+     * `(h * 16777619) >>> 0` does in JavaScript -- which is a double multiply
+     * whose product exceeds 2^53 and is therefore rounded before truncation.
+     * The two agreed, and both were wrong: rounding a product that large
+     * destroys the BOTTOM bits, and every draw on this network is
+     * `hash % pool.length`, which reads exactly those. Bucketing 40,000
+     * values by `& 7` put 21,768 in one bucket and 4 in another.
+     *
+     * app/live.js now uses Math.imul, which is an exact 32-bit multiply, so
+     * the plain Java one below is once again both the obvious translation and
+     * the correct one.
+     */
     public static long hash32(String s) {
-        double h = 2166136261.0;
+        int h = (int) 2166136261L;
         for (int i = 0; i < s.length(); i++) {
-            // `h ^= c` in JavaScript is ToInt32(h) ^ ToInt32(c), and ToInt32
-            // is SIGNED: the result lives in [-2^31, 2^31). Keeping it
-            // unsigned here looks harmless and is not -- it changes the
-            // magnitude of the product below, which changes where the double
-            // rounds, which changes the hash. Every seed on the network came
-            // out different until this cast was added.
-            int signed = ((int) (long) h) ^ s.charAt(i);
-
-            // Deliberately a double multiply. The product reaches 2^55, past
-            // the 53 bits a double carries, so it is rounded -- and it is
-            // rounded in JavaScript too, identically, because both are
-            // IEEE754. An exact 32-bit integer multiply here would be the
-            // more obvious translation and would give different answers.
-            h = (double) signed * 16777619.0;
-
-            h = h % TWO32;              // ToUint32
-            if (h < 0) h += TWO32;
+            h ^= s.charAt(i);
+            h *= 16777619;
         }
-        return (long) h;
+        return h & 0xFFFFFFFFL;
     }
 
     /**

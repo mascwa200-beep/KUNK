@@ -13,16 +13,23 @@ That is a duplicate implementation, and duplicates drift. The drift here would
 be quiet and nasty: the widget would say four new replies and the app would
 show seven, with nothing failing anywhere.
 
-Worse, the two languages disagree about arithmetic unless you are careful.
-JavaScript numbers are IEEE754 doubles, so `(h * 16777619) >>> 0` is a double
-multiply whose product exceeds 2^53 and is therefore rounded before being
-truncated to uint32. The obvious Java translation -- a 32-bit int multiply --
-is exact, and gives different hashes. SlotMath.hash32 deliberately does that
-step in double arithmetic to match the rounding rather than the intent, and
-this check is the only thing that says whether that was right.
-
 Both implementations are fed the same script and their output compared line
 for line.
+
+AND THEN THE DISTRIBUTION IS CHECKED, because agreement is not correctness.
+
+For a long time both sides agreed on a hash that was unusable as an index.
+`(h * 16777619) >>> 0` in JavaScript is a double multiply whose product
+passes 2^53, so it is rounded -- and rounding a number that large throws away
+the BOTTOM bits. Every draw on this network is `hash % pool.length`, which
+reads exactly those: bucketing 40,000 values by `& 7` gave 21,768 in one
+bucket and 4 in another. Seven of grammar.js's twenty-eight canon nouns were
+chosen essentially never, "the Signal on 62" did not appear once in 4,000
+posts, and the whole network had a fraction of the variety it appeared to.
+Nothing failed anywhere; the feeds just repeated.
+
+live.js uses Math.imul now, which is exact, so the plain Java multiply is
+once again both the obvious translation and the right one.
 
 Usage:  python3 .github/scripts/synthnet_slotmath_check.py [--root synthnet]
 """
@@ -206,6 +213,59 @@ def main():
             print(f"      java: {j}")
             print(f"      js:   {s}")
         return 1
+
+    # --- the hash has to be usable as an index ---------------------------
+    #
+    # Agreement is not correctness. For eighteen months both implementations
+    # agreed on a hash whose LOW bits were nearly constant, because the
+    # JavaScript spelling `(h * 16777619) >>> 0` is a double multiply whose
+    # product passes 2^53 and gets rounded -- and rounding a number that
+    # large throws away the bottom bits.
+    #
+    # Every draw on this network is `hash % pool.length`, which reads exactly
+    # those bits. Seven of grammar.js's twenty-eight canon nouns were chosen
+    # essentially never; "the Signal on 62" did not appear once in 4,000
+    # posts. Nothing failed, the output still looked like noise, and the
+    # feeds just quietly repeated.
+    #
+    # So: assert the distribution, not only that the two sides match.
+    buckets = 32
+    counts = [0] * buckets
+    hash_rows = [(row, j) for row, j in zip(script, jrows) if row[0] == "hash32"]
+    # The script's hashes are not enough of a sample on their own, so use the
+    # Java side over a dense, realistically-shaped set of seeds: a constant
+    # suffix with a varying prefix, which is what every call site looks like.
+    probe = "\n".join("hash32\tg:socialPosts:%d|thing" % i for i in range(8000)) + "\n"
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmp = pathlib.Path(tmpdir)
+        classes2 = tmp / "classes"
+        classes2.mkdir()
+        subprocess.run(["javac", "-nowarn", "-d", str(classes2), str(slot_java)],
+                       capture_output=True, text=True)
+        out = subprocess.run(
+            ["java", "-cp", str(classes2), "net.verity.synthnet.SlotMath"],
+            input=probe, capture_output=True, text=True)
+    for line in out.stdout.split():
+        if line.isdigit():
+            counts[int(line) % buckets] += 1
+
+    total = sum(counts)
+    if total:
+        expected = total / buckets
+        worst = max(abs(c - expected) / expected for c in counts)
+        if worst > 0.35:
+            print(f"FAIL: the hash is not usable as an index. Over {total} seeds "
+                  f"with a constant suffix, bucket counts ranged "
+                  f"{min(counts)}..{max(counts)} against an expected "
+                  f"{expected:.0f} -- {worst * 100:.0f}% off.")
+            print("      Every pool on the network is sampled with "
+                  "`hash % length`, so a skew here means most of its content "
+                  "is never drawn, and nothing anywhere will fail.")
+            print(f"      buckets: {counts}")
+            return 1
+        print(f"     hash distribution over {total} seeds: "
+              f"{min(counts)}..{max(counts)} per bucket, expected "
+              f"{expected:.0f} ({worst * 100:.0f}% worst deviation)")
 
     kinds = {}
     for row in script:

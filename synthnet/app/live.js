@@ -53,11 +53,36 @@
    * as broken rather than alive. Everything here is a hash of inputs, so the
    * same minute always renders the same page. */
 
+  /* FNV-1a, with Math.imul.
+   *
+   * The obvious spelling of this step is `h = (h * 16777619) >>> 0`, and it
+   * is WRONG in a way that took eighteen months to notice, because the
+   * output still looks like noise.
+   *
+   * JavaScript numbers are IEEE754 doubles. With h up to 2^32 the product
+   * reaches 2^55, past the 53 bits a double carries, so it is rounded -- and
+   * what rounding throws away is the BOTTOM bits. The result is a hash whose
+   * low bits are almost constant: bucketing 40,000 values by `& 7` gave
+   * 21,768 in one bucket and 4 in another.
+   *
+   * Every draw on this network is `hash32(x) % pool.length`, so every pool
+   * was being sampled through that. Seven of the twenty-eight canon nouns in
+   * grammar.js were chosen essentially never and seven were chosen three
+   * times too often; the same was true of every slop pool, every ad slot and
+   * every bot archetype. The network has always had a fraction of the
+   * variety it appeared to have, and the feeds repeating was the symptom.
+   *
+   * Math.imul is an exact 32-bit multiply. The same 40,000 values now land
+   * within 0.2% of even across all eight buckets.
+   *
+   * Changing this changes every seed, so all derived content shifts. That is
+   * fine -- none of it is stored -- but android/.../SlotMath.java must move
+   * with it or the widget and the app disagree. There is a check for that. */
   function hash32(str) {
     var h = 2166136261;
     for (var i = 0; i < str.length; i++) {
       h ^= str.charCodeAt(i);
-      h = (h * 16777619) >>> 0;
+      h = Math.imul(h, 16777619);
     }
     return h >>> 0;
   }

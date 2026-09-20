@@ -52,6 +52,31 @@ window.SYNTH = window.SYNTH || {};
     return h >>> 0;
   }
 
+  /* A float in [0,1) for a seed.
+   *
+   * FNV-1a's low bits hardly move between inputs that share a prefix -- the
+   * last step is a multiply by an odd constant, so h % 4 is very nearly a
+   * function of the last byte alone. Taking hash32(seed) % 4 to choose a
+   * category dropped eleven of fourteen live dispatches into the same one.
+   * live.rng() is a proper mixer, so ask it; the fallback takes the TOP bits,
+   * unsigned, because >> on a uint32 goes negative and negative % length is
+   * negative. */
+  function unit(seed) {
+    if (has('live') && SYNTH.live.rng) {
+      try {
+        var v = SYNTH.live.rng(String(seed))();
+        if (v >= 0 && v < 1) { return v; }
+      } catch (e) { /* fall */ }
+    }
+    return (hash32(seed) >>> 8) / 16777216;
+  }
+
+  function pickIdx(seed, len) {
+    if (!len) { return 0; }
+    var i = Math.floor(unit(seed) * len);
+    return i < 0 ? 0 : (i >= len ? len - 1 : i);
+  }
+
   function nowMs() {
     if (has('live') && SYNTH.live.now) {
       try { return SYNTH.live.now(); } catch (e) { /* fall */ }
@@ -120,10 +145,10 @@ window.SYNTH = window.SYNTH || {};
     var want = n < arr.length ? n : arr.length;
     var out = [];
     var used = {};
-    var h = hash32(seed);
+    var start = pickIdx('sample:' + seed, arr.length);
     var step = 0;
     while (out.length < want && step < arr.length * 4) {
-      var idx = (h + step * 7) % arr.length;
+      var idx = (start + step * 7) % arr.length;
       if (!used[idx]) { used[idx] = 1; out.push(arr[idx]); }
       step++;
     }
@@ -206,16 +231,16 @@ window.SYNTH = window.SYNTH || {};
       if (words[i].length > 3) { keep.push(words[i]); }
     }
     if (!keep.length) { keep.push('VERITY'); }
-    return keep.join('-') + '-' + LD[hash32('ld:' + seed) % LD.length];
+    return keep.join('-') + '-' + LD[pickIdx('ld:' + seed, LD.length)];
   }
 
   /* Bulletins are rare on purpose: two slots in a hundred. Make them common
    * and the red chip stops meaning anything, which is how real wires end up
    * with four priority levels nobody uses. */
   function livePriority(seed) {
-    var h = hash32('pri:' + seed) % 100;
-    if (h < 2) { return 'bulletin'; }
-    if (h < 20) { return 'urgent'; }
+    var u = unit('pri:' + seed);
+    if (u < 0.02) { return 'bulletin'; }
+    if (u < 0.20) { return 'urgent'; }
     return 'routine';
   }
 
@@ -263,7 +288,7 @@ window.SYNTH = window.SYNTH || {};
       var it = (r && r.item && typeof r.item === 'object') ? r.item : null;
       if (!it) { continue; }
       var seed = String(r.seed || r.slot || i);
-      var cat = cats.length ? cats[hash32('cat:' + seed) % cats.length] : null;
+      var cat = cats.length ? cats[pickIdx('cat:' + seed, cats.length)] : null;
       out.push({
         id: null,
         live: true,
@@ -383,7 +408,10 @@ window.SYNTH = window.SYNTH || {};
     var cls = 'wr-row';
     if (r.live) { cls += ' wr-row-live'; }
     if (r.priority === 'bulletin') { cls += ' wr-row-bul'; }
-    var li = el('li', { 'class': cls });
+    var li = el('li', {
+      'class': cls,
+      title: r.live ? 'Moving now. Not written up, not filed, not checked.' : null
+    });
 
     li.appendChild(el('span', { 'class': 'wr-time' },
       text(r.at === null || r.at === undefined ? '--:--' : clockText(r.at))));
@@ -623,8 +651,7 @@ window.SYNTH = window.SYNTH || {};
     }
     var pool = modern.length >= 2 ? modern : modern.concat(rest);
 
-    var h = hash32('carry:' + id);
-    var want = 2 + (h % 2);                       /* two or three, never a shift */
+    var want = 2 + pickIdx('carry:' + id, 2);     /* two or three */
     var picks = sampleOf(pool, want, 'carry:' + id);
     if (picks.length < 2) { return null; }
 
@@ -632,7 +659,8 @@ window.SYNTH = window.SYNTH || {};
      * title alone would print the same outlet twice. */
     var seen = {};
     for (i = 0; i < picks.length; i++) {
-      var t = String(picks[i].title || picks[i].domain);
+      /* '#' keeps a masthead called "constructor" out of Object.prototype. */
+      var t = '#' + String(picks[i].title || picks[i].domain);
       seen[t] = (seen[t] || 0) + 1;
     }
 
@@ -642,13 +670,13 @@ window.SYNTH = window.SYNTH || {};
     for (i = 0; i < picks.length; i++) {
       var row = picks[i];
       var title = String(row.title || row.domain);
-      var label = seen[title] > 1 ? (title + ' (' + row.domain + ')') : title;
-      var hh = hash32('pick:' + id + ':' + row.domain);
+      var label = seen['#' + title] > 1 ? (title + ' (' + row.domain + ')') : title;
+      var pseed = 'pick:' + id + ':' + row.domain;
       var live2026 = String(row.era || '').indexOf('2026') !== -1;
       var tail = live2026
-        ? (' · picked it up ' + (3 + (hh % 55)) + ' min after filing, ' +
-           HOW[hh % HOW.length])
-        : (' · ' + HOW_DEAD[hh % HOW_DEAD.length]);
+        ? (' · picked it up ' + (3 + pickIdx('min:' + pseed, 55)) +
+           ' min after filing, ' + HOW[pickIdx('how:' + pseed, HOW.length)])
+        : (' · ' + HOW_DEAD[pickIdx('dead:' + pseed, HOW_DEAD.length)]);
       var li = el('li', { 'class': 'wr-carry-row' });
       li.appendChild(ctx.link('synth://' + row.domain + '/', label, 'wr-carry-link'));
       li.appendChild(el('span', { 'class': 'wr-dim' }, text(tail)));
