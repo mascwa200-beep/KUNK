@@ -177,8 +177,19 @@ window.SYNTH = window.SYNTH || {};
    * written to survive being cut here, because it usually is. */
   function firstLine(s, max) {
     var t = strip(s);
-    var stop = t.search(/[.!?](\s|$)/);
-    if (stop > 24) { t = t.slice(0, stop + 1); }
+    var re = /[.!?](\s+|$)/g;
+    var m;
+    while ((m = re.exec(t)) !== null) {
+      /* "Substation No. 3" and "5:02 a.m." are not ends of sentences, and a
+       * rail line that stops at "No." is worse than one that runs long. */
+      var before = t.slice(0, m.index).match(/[A-Za-z0-9]+$/);
+      if (before && before[0].length <= 3) { continue; }
+      if (m.index < 28) { continue; }
+      var next = t.charAt(m.index + m[0].length);
+      if (next && next !== next.toUpperCase()) { continue; }
+      t = t.slice(0, m.index + 1);
+      break;
+    }
     if (t.length > max) { t = t.slice(0, max - 1) + '…'; }
     return t;
   }
@@ -464,8 +475,8 @@ window.SYNTH = window.SYNTH || {};
     main.appendChild(el('div', { 'class': 'wr-railhead' },
       el('span', { 'class': 'wr-key' }, text('THE RAIL')),
       el('span', { 'class': 'wr-dim' },
-        text('newest first · times local · a dispatch is not an article, ' +
-             'and if it reads like one somebody has rewritten it'))));
+        text('newest first · times local · nothing here has been ' +
+             'subedited'))));
 
     if (!rows.length) {
       main.appendChild(emptyRail());
@@ -569,6 +580,13 @@ window.SYNTH = window.SYNTH || {};
     'credited it to a different agency'
   ];
 
+  /* An archive domain cannot pick anything up, but it can still be on the
+   * subscriber list, because nobody has audited that list either. */
+  var HOW_DEAD = [
+    'still on the subscriber list; nothing has published there in years',
+    'listed as taking the file, which it has not done since the archive froze'
+  ];
+
   function newsSites() {
     var rows = [];
     try {
@@ -593,24 +611,47 @@ window.SYNTH = window.SYNTH || {};
     var sites = newsSites();
     if (sites.length < 2) { return null; }
 
+    /* Prefer outlets that still publish. Two of them is enough to make the
+     * point; below that, fall back to whatever news sites exist so the block
+     * does not vanish from a small net. */
+    var modern = [];
+    var rest = [];
+    var i;
+    for (i = 0; i < sites.length; i++) {
+      if (String(sites[i].era || '').indexOf('2026') !== -1) { modern.push(sites[i]); }
+      else { rest.push(sites[i]); }
+    }
+    var pool = modern.length >= 2 ? modern : modern.concat(rest);
+
     var h = hash32('carry:' + id);
     var want = 2 + (h % 2);                       /* two or three, never a shift */
-    var picks = sampleOf(sites, want, 'carry:' + id);
+    var picks = sampleOf(pool, want, 'carry:' + id);
     if (picks.length < 2) { return null; }
+
+    /* Two Ledger domains carry the same masthead, so name the domain when the
+     * title alone would print the same outlet twice. */
+    var seen = {};
+    for (i = 0; i < picks.length; i++) {
+      var t = String(picks[i].title || picks[i].domain);
+      seen[t] = (seen[t] || 0) + 1;
+    }
 
     var box = el('section', { 'class': 'wr-carry' });
     box.appendChild(el('h2', { 'class': 'wr-h2' }, text('CARRIED BY')));
     var ul = el('ul', { 'class': 'wr-carry-list' });
-    var i;
     for (i = 0; i < picks.length; i++) {
-      var hh = hash32('pick:' + id + ':' + picks[i].domain);
-      var mins = 3 + (hh % 55);
+      var row = picks[i];
+      var title = String(row.title || row.domain);
+      var label = seen[title] > 1 ? (title + ' (' + row.domain + ')') : title;
+      var hh = hash32('pick:' + id + ':' + row.domain);
+      var live2026 = String(row.era || '').indexOf('2026') !== -1;
+      var tail = live2026
+        ? (' · picked it up ' + (3 + (hh % 55)) + ' min after filing, ' +
+           HOW[hh % HOW.length])
+        : (' · ' + HOW_DEAD[hh % HOW_DEAD.length]);
       var li = el('li', { 'class': 'wr-carry-row' });
-      li.appendChild(ctx.link('synth://' + picks[i].domain + '/',
-        String(picks[i].title || picks[i].domain), 'wr-carry-link'));
-      li.appendChild(el('span', { 'class': 'wr-dim' },
-        text(' · picked it up ' + mins + ' min after filing, ' +
-             HOW[hh % HOW.length])));
+      li.appendChild(ctx.link('synth://' + row.domain + '/', label, 'wr-carry-link'));
+      li.appendChild(el('span', { 'class': 'wr-dim' }, text(tail)));
       ul.appendChild(li);
     }
     box.appendChild(ul);
@@ -687,7 +728,9 @@ window.SYNTH = window.SYNTH || {};
 
     if (x.byline) {
       art.appendChild(el('p', { 'class': 'wr-byline' },
-        text('By ' + String(x.byline) + ', ' + agencyName(ctx, d))));
+        text('By '),
+        el('span', { 'class': 'wr-byline-name' }, text(String(x.byline))),
+        text(', ' + agencyName(ctx, d))));
     }
 
     bodyInto(ctx, art, x.body);

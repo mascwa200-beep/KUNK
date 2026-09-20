@@ -426,3 +426,42 @@
   .skin-ezboard-grey .atitle,
   .skin-ezboard-grey .ameta { display: inline; margin-right: 6px; }
 }
+
+/* --- unread ------------------------------------------------------------
+ *
+ * "Jump to first unread" is the affordance that defined forums, and the
+ * divider dropped into the river at the exact post you had not seen is the
+ * half of it that matters -- a marker at the top of the page tells you
+ * nothing you did not already know.
+ *
+ * Both skins get it, because both forum skins are forums.
+ */
+.skin-phpbb-blue .unreadjump,
+.skin-ezboard-grey .unreadjump {
+  margin: 6px 0;
+  padding: 5px 9px;
+  font-size: 11px;
+  background: #fffbe6;
+  border: 1px solid #e3d59a;
+}
+
+.skin-phpbb-blue .unreadjump .jumplink,
+.skin-ezboard-grey .unreadjump .jumplink {
+  font-weight: bold;
+  /* #7a5200 on #fffbe6 is 5.9:1. */
+  color: #7a5200;
+}
+
+.skin-phpbb-blue .unreadbar,
+.skin-ezboard-grey .unreadbar {
+  margin: 10px 0 4px 0;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #a33b2a;
+  border-top: 2px solid #c0392b;
+  background: linear-gradient(rgba(192, 57, 43, 0.10), transparent);
+  /* Scroll-margin so the #first-unread anchor does not land the divider
+     flush against the top of the viewport with the post cut off above it. */
+  scroll-margin-top: 12px;
+}

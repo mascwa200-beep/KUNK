@@ -333,14 +333,25 @@ the badge means something.
    it is a Tuesday.
 7. **The five named humans may be referenced anywhere but only *written* in
    character.** If a pack cannot do the voice, quote them second-hand instead.
-8. **Cross-link only to domains that exist in this project.** Current set:
-   `boards.gridfall.net`, `wiki.gridfall.net`, `verityledger.com`,
-   `kestrel-journal.net`, `pulse.gridfall.net`, `clipvault.tv`,
-   `forums.verityrail.org`, `webring.gridfall.net`, `marla.verity.net`,
-   `tnorris.verity.net`, `stargazers.verity.net`, `codeandcoffee.blog`,
-   `gridline.social`, `askverity.com`, `62chan.org`, `now.verityledger.com`.
-   The **one** exception is a deliberate scam or dead link, which must 404 —
-   use that sparingly and make it obviously a scam.
+8. **Cross-link only to domains that exist in this project.** The authority
+   is `net/registry.json`, which is generated — read it rather than a list
+   kept by hand here, because a list kept by hand here goes stale the first
+   time anyone adds a site, and this one did.
+
+   The **exceptions** are links that are meant to dead-end, which the
+   validator recognises by TLD (`DEAD_TLDS` in `tools/validate.py`):
+
+   - a **scam** link, on `.biz`, `.top`, `.click`, `.win`, `.vip`, `.shop`,
+     `.fin`, `.zip`, `.lol` or `.finance`. A scam link that resolves is not a
+     scam link.
+   - an **off-net** business or office, on `.synth`. It exists in Verity
+     County; its website is simply not in this build. Most of the web is like
+     this, and a county where every mentioned business has an archived site
+     reads as a brochure rather than a place.
+
+   Everything else must resolve, and CI follows every link the app generates
+   at run time as well as every link written into content.
+
 9. **Link syntax is `[url=synth://domain/path]label[/url]`.** Never a bare
    `http` or `https` string, anywhere, including comments. CI fails the build.
 10. **Inline markup is only** `[b] [i] [u] [s] [quote=Name] [code] [list][*]x[/list] [url=] [img:kind:seed]`.

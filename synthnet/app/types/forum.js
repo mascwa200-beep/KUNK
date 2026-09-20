@@ -409,6 +409,53 @@
     return el('div', { 'class': 'pager ' + (where || '') }, kids);
   }
 
+  /* --- unread ------------------------------------------------------------
+   *
+   * "Jump to first unread" is the affordance that defines a forum. It is the
+   * reason people could follow a 900-post thread for four years without
+   * re-reading it, and it is the single most-cited thing people miss about
+   * forums now that the conversation has moved to places that do not have
+   * it. The engine records a real last-visit per domain (see app/alerts.js),
+   * so this costs a timestamp comparison.
+   *
+   * On the archive boards nothing is ever newer than your last visit, so no
+   * divider appears and nothing changes -- which is correct. It is the 2026
+   * boards where it does any work.
+   */
+  function lastVisitOf(ctx) {
+    if (!window.SYNTH.alerts || typeof window.SYNTH.alerts.lastVisit !== 'function') {
+      return 0;
+    }
+    try { return window.SYNTH.alerts.lastVisit(ctx.site.domain) || 0; }
+    catch (e) { return 0; }
+  }
+
+  function postTime(post) {
+    var raw = post && post.time;
+    if (typeof raw === 'number') return raw;
+    if (!raw) return 0;
+    var ms = Date.parse(String(raw));
+    if (!isFinite(ms)) ms = Date.parse(String(raw).replace(' ', 'T'));
+    return isFinite(ms) ? ms : 0;
+  }
+
+  /* Index of the first post newer than your last visit, or -1. */
+  function firstUnread(posts, since) {
+    if (!since) return -1;
+    for (var i = 0; i < posts.length; i++) {
+      if (postTime(posts[i]) > since) return i;
+    }
+    return -1;
+  }
+
+  function unreadDivider(el, count) {
+    return el('div', {
+      'class': 'unreadbar',
+      id: 'first-unread'
+    }, count === 1 ? 'New post since you last looked'
+                   : count + ' new posts since you last looked');
+  }
+
   function postNode(ctx, topic, post, globalIndex, page) {
     var el = ctx.el;
     var left = el('div', { 'class': 'post-author' },
@@ -474,6 +521,23 @@
         'This topic is locked: you cannot edit posts or make replies.'));
     }
 
+    /* Where you got to last time. */
+    var since = lastVisitOf(ctx);
+    var unreadAt = firstUnread(posts, since);
+    var unreadCount = unreadAt === -1 ? 0 : posts.length - unreadAt;
+
+    if (unreadCount) {
+      var unreadPage = Math.floor(unreadAt / PER_PAGE) + 1;
+      mount.appendChild(el('div', { 'class': 'unreadjump' },
+        ctx.link('/topic/' + encodeURIComponent(txt(topic.id)) +
+                 '?page=' + unreadPage + '#first-unread',
+          'Jump to first unread post', 'jumplink'),
+        el('span', { 'class': 'dim' },
+          '  ' + num(unreadCount) + ' new since ' +
+          (window.SYNTH.live && window.SYNTH.live.ago
+            ? window.SYNTH.live.ago(since) : 'your last visit'))));
+    }
+
     if (pages > 1) mount.appendChild(pager(ctx, topic.id, page, pages, 'top'));
 
     var start = (page - 1) * PER_PAGE;
@@ -483,6 +547,11 @@
       mount.appendChild(el('div', { 'class': 'blank' }, 'There are no posts in this topic.'));
     }
     slice.forEach(function (p, i) {
+      /* The divider goes in the river at the exact post you had not seen,
+       * rather than at the top of the page, which is the whole point of it. */
+      if (unreadCount && start + i === unreadAt) {
+        mount.appendChild(unreadDivider(el, unreadCount));
+      }
       mount.appendChild(postNode(ctx, topic, p, start + i, page));
     });
 

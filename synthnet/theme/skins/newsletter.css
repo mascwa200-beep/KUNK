@@ -296,6 +296,10 @@
   letter-spacing: 0.04em;
 }
 
+/* liveui draws the badge with no margin of its own, so without this it sits
+   flush against the last letter of the advertiser's name. */
+.skin-inbox-letter .nl-sponsor-tag .lv-badge { margin-left: 7px; }
+
 .skin-inbox-letter .nl-sponsor-copy p { margin: 0 0 0.7em; }
 .skin-inbox-letter .nl-sponsor-copy p:last-child { margin-bottom: 0; }
 
@@ -540,6 +544,8 @@
 }
 
 .skin-inbox-letter .nl-echo-src { font-weight: 700; }
+
+.skin-inbox-letter .nl-echo-meta .lv-badge { margin: 0 5px 0 6px; }
 
 /* ---- phone ---- */
 

@@ -417,16 +417,22 @@ window.SYNTH = window.SYNTH || {};
     var box = el('div', { 'class': 'nl-echo' });
     box.appendChild(el('h2', { 'class': 'nl-echo-h' }, text('Picked up elsewhere')));
     box.appendChild(el('p', { 'class': 'nl-echo-note' },
-      text('Not part of the letter. The archive adds it because the feeds ' +
-           'rewrite each issue within the hour, and one of the four says where ' +
-           'it came from.')));
+      text('Not part of the letter. The archive bolts it on: the feeds that ' +
+           'scrape this publish inside the hour, and what comes out is only ' +
+           'sometimes about the same thing.')));
+
+    /* Rotate through the handles rather than hashing each row independently,
+     * which kept dealing the same one three times. Three different feeds
+     * carrying it is the shape of the thing; one feed carrying it three times
+     * is a different and less true joke. */
+    var turn = hashOf('nl:echo:' + ctx.site.domain + ':' + issue.id) % sources.length;
 
     var ul = el('ul', { 'class': 'nl-echo-list' });
     var i;
     for (i = 0; i < rows.length; i++) {
       var row = rows[i];
       var item = row.item;
-      var who = sources[row.seed % sources.length];
+      var who = sources[(turn + i) % sources.length];
       var li = el('li', { 'class': 'nl-echo-row' });
 
       var head = el('div', { 'class': 'nl-echo-head' },

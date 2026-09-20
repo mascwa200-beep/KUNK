@@ -386,10 +386,17 @@
 .skin-wireroom .wr-byline {
   margin: 0 0 12px;
   font-size: 11px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: #9aa3ab;
   overflow-wrap: anywhere;
+}
+
+/* The name is set in caps and the agency is not, which is how a wire byline
+ * has looked since it was a teleprinter that only had caps for the name. */
+.skin-wireroom .wr-byline-name {
+  color: #c9d1d9;                      /* 12.16:1 on #101214 */
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .skin-wireroom .wr-copy a { color: #8fd0ff; }
