@@ -675,7 +675,7 @@ window.SYNTH = window.SYNTH || {};
     }, text(agoText(g.at)));
   }
 
-  function groupNode(ctx, ch, g, here) {
+  function groupNode(ctx, ch, g, showLeft) {
     var dead = isReadOnly(ch);
     var row = el('li', { 'class': 'cd-grp' + (g.mine ? ' cd-grp-mine' : '') });
 
@@ -687,7 +687,7 @@ window.SYNTH = window.SYNTH || {};
 
     var head = el('div', { 'class': 'cd-grp-head' });
     head.appendChild(el('span', { 'class': 'cd-who' }, text(g.by)));
-    if (dead && here && !Object.prototype.hasOwnProperty.call(here, g.by)) {
+    if (showLeft) {
       head.appendChild(el('span', { 'class': 'cd-left' }, text('left the server')));
     }
     var b = badge(g.kind);
@@ -709,6 +709,10 @@ window.SYNTH = window.SYNTH || {};
   function riverNode(ctx, ch, groups, here) {
     var list = el('ul', { 'class': 'cd-msgs' });
     var lastDay = null;
+    var dead = isReadOnly(ch);
+    /* The tag goes on a name the first time it comes up and not again. Once
+     * per person is the fact; once per block is nagging. */
+    var tagged = {};
     var i;
     for (i = 0; i < groups.length; i++) {
       var g = groups[i];
@@ -720,7 +724,11 @@ window.SYNTH = window.SYNTH || {};
             el('span', { 'class': 'cd-day-label' }, text(dayLabel(g.at)))));
         }
       }
-      list.appendChild(groupNode(ctx, ch, g, here));
+      var showLeft = dead && here &&
+        !Object.prototype.hasOwnProperty.call(here, g.by) &&
+        !Object.prototype.hasOwnProperty.call(tagged, g.by);
+      if (showLeft) { tagged[g.by] = 1; }
+      list.appendChild(groupNode(ctx, ch, g, showLeft));
     }
     if (!groups.length) {
       list.appendChild(el('li', { 'class': 'cd-empty' },
