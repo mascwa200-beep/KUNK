@@ -225,6 +225,43 @@ window.SYNTH = window.SYNTH || {};
   var RE_ITEM = /^\[\*\]/;
   var RE_IMG = /^\[img:(avatar|banner|photo|thumb):([^\]\r\n]*)\]/i;
 
+  /* --- maintenance templates, and the collision they sit on top of ------
+   *
+   * There are 69 distinct {{merge_field}} strings across the content, in
+   * something over a hundred places -- {{city}}, {{ticket_price}},
+   * {{template_error_undefined_ref}} -- and every one of them is
+   * DELIBERATE. An unfilled merge field is what a content farm actually
+   * ships, and one of them is the whole joke in a gridfall.chat exchange
+   * where two people work out that the weather bot has broken.
+   *
+   * Until this branch existed those strings were safe by construction: the
+   * line below used to read `if (c !== '[')`, so nothing in the bracket
+   * chain was reachable for a `{` and every brace rendered literally. That
+   * guarantee is now a rule instead of an accident, so it is written down:
+   *
+   *   1. RE_TEMPLATE is anchored, requires the closing `}}`, and its name
+   *      class excludes `_` and `.` -- so {{ticket_price}} and
+   *      {{intro_variant_3}} do not match the regex at all.
+   *   2. A name that DOES match still has to be in TEMPLATES. {{city}} is
+   *      letters-only and matches the regex; it is not in the allowlist, so
+   *      it falls through to literal.
+   *   3. Anything that falls through lands on `buf += c`, which is exactly
+   *      what an unknown [tag] does at the bottom of this loop.
+   *
+   * CI asserts both halves in the same run and on the same page load: that
+   * {{stub}} renders as a tag on the wiki, and that {{city}} still renders
+   * as the five characters {{city}} in a forum post.
+   */
+  var RE_TEMPLATE = /^\{\{([A-Za-z][A-Za-z ?]{0,22})\}\}/;
+
+  var TEMPLATES = {
+    'citation needed': 'citation needed',
+    'stub': 'stub',
+    'npov disputed': 'neutrality disputed',
+    'dead link': 'dead link',
+    'who?': 'who?'
+  };
+
   function tokenize(text) {
     var s = (text === null || text === undefined) ? '' : String(text);
     var low = s.toLowerCase();
@@ -257,6 +294,19 @@ window.SYNTH = window.SYNTH || {};
         out.push({ t: nl >= 2 ? 'par' : 'br' });
         i = j;
         continue;
+      }
+
+      /* See RE_TEMPLATE above. Allowlist or literal, nothing in between. */
+      if (c === '{') {
+        var tm = RE_TEMPLATE.exec(s.slice(i, i + 28));
+        if (tm && Object.prototype.hasOwnProperty.call(
+              TEMPLATES, tm[1].toLowerCase())) {
+          flush();
+          out.push({ t: 'tpl', name: tm[1].toLowerCase(), raw: tm[0] });
+          i += tm[0].length;
+          continue;
+        }
+        buf += c; i++; continue;
       }
 
       if (c !== '[') { buf += c; i++; continue; }
@@ -402,6 +452,7 @@ window.SYNTH = window.SYNTH || {};
       if (tok.t === 'par') { pushNode({ type: 'par' }); continue; }
       if (tok.t === 'code') { pushNode({ type: 'code', value: tok.v }); continue; }
       if (tok.t === 'img') { pushNode({ type: 'img', kind: tok.kind, seed: tok.seed }); continue; }
+      if (tok.t === 'tpl') { pushNode({ type: 'tpl', name: tok.name }); continue; }
 
       if (tok.t === 'item') {
         if (findOpen('list') === -1) { pushText(tok.raw); continue; }
@@ -477,6 +528,14 @@ window.SYNTH = window.SYNTH || {};
       case 'img':
         try { return placeholder(node.kind, node.seed); }
         catch (e) { return document.createTextNode(''); }
+      case 'tpl': {
+        var sup = document.createElement('sup');
+        sup.className = 'synth-tpl synth-tpl-' +
+          String(node.name).replace(/[^a-z]+/g, '');
+        sup.appendChild(document.createTextNode(
+          '[' + (TEMPLATES[node.name] || node.name) + ']'));
+        return sup;
+      }
       case 'url':
         return makeLinkNode(node.href, node.children);
       case 'fmt': {
@@ -660,6 +719,7 @@ window.SYNTH = window.SYNTH || {};
       for (var i = 0; i < toks.length; i++) {
         var t = toks[i];
         if (t.t === 'text') out.push(t.v);
+        else if (t.t === 'tpl') out.push(' [' + (TEMPLATES[t.name] || t.name) + '] ');
         else if (t.t === 'code') out.push(' ' + t.v + ' ');
         else if (t.t === 'br' || t.t === 'par' || t.t === 'item') out.push(' ');
         else if (t.t === 'open' && t.name === 'quote' && t.arg) out.push(' ' + t.arg + ': ');
