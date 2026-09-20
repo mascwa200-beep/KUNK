@@ -200,6 +200,8 @@ window.SYNTH = window.SYNTH || {};
       11,
       4
     );
+    /* story layer: stream() rows in, stream() rows out. See app/live.js. */
+    items = SYNTH.live.withStory(items, ctx.site);
     if (!items.length) { return null; }
     var box = el('section', { 'class': 'agg-stream' });
     box.appendChild(el('h2', { 'class': 'agg-stream-h' }, text('Arriving now')));

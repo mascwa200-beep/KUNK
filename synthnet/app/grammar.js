@@ -745,6 +745,336 @@ window.SYNTH = window.SYNTH || {};
     return THINGS.length * PLACES.length * 20;
   }
 
+
+  /* ====================================================================== */
+  /* ANCHORS -- the checkable past                                          */
+  /*                                                                        */
+  /* A propagating story needs facts that can be WRONG, which means it needs */
+  /* facts that are right. Every `t` value below appears verbatim in         */
+  /* docs/WORLD.md section 7, and CI asserts that -- so when a hop three     */
+  /* sites downstream says the fire was in 2004, that is not a vibe, it is   */
+  /* false against a written source anyone can open.                        */
+  /*                                                                        */
+  /* Each fact carries three forms, because "losing a fact" is three         */
+  /* different things:                                                      */
+  /*                                                                        */
+  /*   t  true      what the record says                                     */
+  /*   w  wrong     the documented misreports. WORLD.md lists these:         */
+  /*                "commonly misreported as 2004, lightning, 2 deaths"      */
+  /*   v  vague     what you say when you have lost the fact rather than     */
+  /*                got it wrong. This is the commoner failure and the one   */
+  /*                that reads most like real coverage.                      */
+  /*                                                                        */
+  /* The decay engine never reads prose. It swaps typed fields, which is     */
+  /* why it can be checked.                                                  */
+  /* ====================================================================== */
+
+  var ANCHORS = [
+    {
+      id: 'fire2003',
+      subject: 'the 2003 Gridfall substation fire',
+      where: 'Substation No. 3',
+      facts: [
+        { k: 'year', t: '2003', w: ['2004', '2005'], v: 'the early 2000s' },
+        { k: 'cause', t: 'insulation degradation consistent with age',
+          w: ['a lightning strike', 'an overloaded transformer'],
+          v: 'an equipment failure' },
+        { k: 'toll', t: 'no deaths and two firefighters released the same day',
+          w: ['two deaths', 'two firefighters killed'],
+          v: 'casualties were reported' },
+        { k: 'scale', t: '4,100 customers out, some for five days',
+          w: ['40,000 customers out', 'the whole county dark for a week'],
+          v: 'a large outage' },
+        { k: 'source', t: 'the state commission summary of November 2003',
+          w: ['a video with four million views', 'an aggregator thread'],
+          v: 'reports at the time' }
+      ]
+    },
+    {
+      id: 'branch2008',
+      subject: 'the closing of the Verity Rail branch line',
+      where: 'the Marchfield to Coyne Flats branch',
+      facts: [
+        { k: 'year', t: '2008', w: ['2009', '2011'], v: 'the late 2000s' },
+        { k: 'date', t: '14 March 2008', w: ['sometime in 2009'],
+          v: 'that spring' },
+        { k: 'cause', t: 'an abandonment filing by Verity Rail',
+          w: ['the county closing it', 'a derailment'],
+          v: 'a decision nobody announced' },
+        { k: 'after', t: 'the trail opened over it in 2014, 11.2 miles',
+          w: ['the track is still in place', 'it reopened for freight'],
+          v: 'something was done with the right of way' }
+      ]
+    },
+    {
+      id: 'kestrel2006',
+      subject: 'the closing of the Blue Kestrel diner',
+      where: 'the Blue Kestrel building on Route 62',
+      facts: [
+        { k: 'year', t: '2006', w: ['1977', '2004'], v: 'the mid 2000s' },
+        { k: 'fire', t: 'a kitchen fire in 1977 that it reopened from in eleven days',
+          w: ['a fire in 1977 that destroyed it', 'a fire that closed it for good'],
+          v: 'a fire at some point' },
+        { k: 'sign', t: 'the neon kestrel is still up, grandfathered under the sign ordinance',
+          w: ['the sign was taken down', 'the sign is in a museum'],
+          v: 'the sign is still around somewhere' },
+        { k: 'now', t: 'the building is Carrow Wireless Repair',
+          w: ['the building was demolished', 'the building is empty'],
+          v: 'something else is in there now' }
+      ]
+    },
+    {
+      id: 'spam2017',
+      subject: 'the 2017 spam wave on the Gridfall boards',
+      where: 'boards.gridfall.net',
+      facts: [
+        { k: 'year', t: '2017', w: ['2018', '2015'], v: 'a few years back' },
+        { k: 'scale', t: '44,000 messages in nine days',
+          w: ['four million messages', 'a handful of posts'],
+          v: 'a lot of messages' },
+        { k: 'after', t: 'registration closed permanently and never reopened',
+          w: ['the board shut down', 'registration reopened a year later'],
+          v: 'they changed how you join' }
+      ]
+    },
+    {
+      id: 'ledger2023',
+      subject: 'the Verity Ledger going to an automated pipeline',
+      where: 'now.verityledger.com',
+      facts: [
+        { k: 'year', t: '2023', w: ['2024', '2021'], v: 'recently' },
+        { k: 'scale', t: 'output went from about 40 pieces a month to about 700',
+          w: ['output doubled', 'the paper closed'],
+          v: 'they publish a great deal more now' },
+        { k: 'staff', t: 'the last reporter was not replaced',
+          w: ['they hired a new newsroom', 'the newsroom moved out of state'],
+          v: 'staffing changed' },
+        { k: 'byline', t: 'it published for four months under a byline of a reporter who left in 2019',
+          w: ['every byline is a real person', 'the bylines were always pseudonyms'],
+          v: 'there was a problem with the bylines' }
+      ]
+    },
+    {
+      id: 'signal62',
+      subject: 'the Signal on 62',
+      where: 'County Route 62',
+      facts: [
+        { k: 'first', t: 'first written down in 1998',
+          w: ['first heard in 2003', 'first reported in 2011'],
+          v: 'first noticed a long time ago' },
+        { k: 'freq', t: '4.2190 MHz USB', w: ['4.1290 MHz', 'an FM frequency'],
+          v: 'somewhere in the shortwave band' },
+        { k: 'schedule', t: 'seven minutes past odd hours',
+          w: ['on the hour, every hour', 'at random'],
+          v: 'on a schedule people have written down' },
+        { k: 'content', t: 'groups of four digits read by a synthetic voice',
+          w: ['coordinates', 'a countdown'],
+          v: 'numbers' },
+        /* Deliberately has no "explanation" fact. WORLD.md is explicit that
+         * the Signal is never explained, and a fact the decay engine could
+         * corrupt into an answer would explain it by accident. */
+        { k: 'known', t: 'nobody has established what transmits it',
+          w: ['the county confirmed it is a weather station',
+              'it was traced to the substation'],
+          v: 'there are theories' }
+      ]
+    }
+  ];
+
+  /* The present-tense hook: why this is being talked about TODAY rather than
+   * on any of the four thousand other days since it happened. Without one, a
+   * story about 2003 arriving on a Tuesday in 2026 has no reason to exist. */
+  var TRIGGERS = [
+    'a clip of it passes four million views',
+    'a county records request turns up the file',
+    'somebody posts a photograph nobody had seen',
+    'an anniversary lands and the bots notice',
+    'a new bot summary of it gets the date wrong and spreads',
+    'a thread about it hits the front page of the aggregator',
+    'a contractor mentions it in a meeting and the minutes go up',
+    'the wiki article is edited nine times in a morning'
+  ];
+
+  function storyCore(seed) {
+    var h = SYNTH.live.hash32;
+    var a = ANCHORS[h('anchor:' + seed) % ANCHORS.length];
+    return {
+      anchor: a.id,
+      subject: a.subject,
+      where: a.where,
+      trigger: TRIGGERS[h('trig:' + seed) % TRIGGERS.length],
+      facts: a.facts
+    };
+  }
+
+
+  /* --- what this hop says ------------------------------------------------
+   *
+   * live.js decides WHEN a story reaches a site and HOW BROKEN it is by
+   * then. This decides what it actually says. The split matters: the decay
+   * engine swaps typed fields and never reads prose, so it stays checkable,
+   * and the prose lives here with the rest of the grammar.
+   */
+
+  function factOf(view, key) {
+    var facts = view.facts || [], i;
+    for (i = 0; i < facts.length; i++) {
+      if (facts[i].k !== key) { continue; }
+      if (view.wrong && Object.prototype.hasOwnProperty.call(view.wrong, key)) {
+        return view.wrong[key];
+      }
+      if (view.lost && indexOf(view.lost, key) >= 0) { return facts[i].v; }
+      return facts[i].t;
+    }
+    return '';
+  }
+
+  function indexOf(arr, v) {
+    for (var i = 0; i < (arr || []).length; i++) { if (arr[i] === v) return i; }
+    return -1;
+  }
+
+  /* Fact slots resolve alongside the canon slots fill() already knows, so a
+   * template can mix {subject} with {thing} and {place}. */
+  /* Fact slots bind by POSITION, not by name.
+   *
+   * The first version had templates saying {cause} and {scale}, which exist
+   * on the substation anchor and on none of the others -- so a story about
+   * the Signal rendered the literal text "{cause}" onto the page, and did it
+   * silently, because fill() leaves unknown slots alone (which is exactly how
+   * the {{merge_field}} artifacts in the slop pools survive).
+   *
+   * Worse: {year} IS a canon slot, so it resolved -- to a random year, a
+   * different one on every hop, for reasons nothing to do with decay.
+   *
+   * So every anchor orders its facts the same way and templates address them
+   * by role: {when} is always facts[0], {claim} facts[1], {detail} the next
+   * one, {src} the last. A template then reads correctly for all six anchors
+   * and there is no slot that can fail to resolve.
+   */
+  function storyFill(tpl, view, seed) {
+    var facts = view.facts || [];
+    function at(i) {
+      return (i >= 0 && i < facts.length) ? factOf(view, facts[i].k) : '';
+    }
+    var out = String(tpl)
+      .replace(/\{subject\}/g, view.subject || 'it')
+      .replace(/\{where\}/g, view.where || 'the county')
+      .replace(/\{trigger\}/g, view.trigger || 'people are talking about it')
+      .replace(/\{when\}/g, at(0))
+      .replace(/\{claim\}/g, at(1))
+      .replace(/\{detail\}/g, at(facts.length > 2 ? 2 : 1))
+      .replace(/\{extra\}/g, at(facts.length > 3 ? 3 : facts.length - 1))
+      .replace(/\{src\}/g, at(facts.length - 1));
+    /* Also allow addressing a fact by its own key, for a template written
+     * against one specific anchor. */
+    var i;
+    for (i = 0; i < facts.length; i++) {
+      out = out.split('{' + facts[i].k + '}').join(factOf(view, facts[i].k));
+    }
+    return out;
+  }
+
+  /* One bank per role. Each is what THAT site does with a story, not a
+   * paraphrase of the same sentence eight times -- a wire files it, a board
+   * argues about it, an assistant answers a question nobody asked. */
+  var STORY_TEXT = {
+    wire: {
+      head: ['{where}: what the file says',
+             'RECORDS: {subject}',
+             '{subject} \u2014 {when}'],
+      body: ['{subject}. The record gives {claim}, and {detail}.\n\nAttribution: {src}.\n\n___',
+             '{subject}, {when}. {claim}.\n\nFiled from {src}.\n\n___']
+    },
+    news: {
+      head: ['What the record actually says about {subject}',
+             '{subject}: {claim}',
+             'Looking again at {subject}'],
+      body: ['{trigger}, so it is worth setting down what the file says.\n\n{subject}, {when}. {claim}. {detail}.\n\nThis is from {src}.',
+             'The short version: {when}, {claim}, {detail}.\n\nAll of it comes from {src} and none of it is in dispute, which has not stopped it being disputed.']
+    },
+    feed: {
+      head: ['{subject} \u2014 {claim} ({src})',
+             'Everyone has this wrong: {subject}',
+             '{subject}. {when}. That is it.'],
+      body: ['{trigger}. Original: {src}.',
+             'The thread below is four people guessing and one person with the file.']
+    },
+    forum: {
+      head: ['{subject} \u2014 can we settle this',
+             'Again with {subject}',
+             'Sourcing {subject}'],
+      body: ['{trigger} and here we are again.\n\n{when}. {claim}. {detail}.\n\nThe source is {src}. Putting it here so the next person can link it instead of typing it out.',
+             'Every time this comes up somebody says something different. {when}. {claim}. That is the whole thing.']
+    },
+    social: {
+      head: ['{subject}', 'about {where}'],
+      body: ['people still have {subject} wrong. {claim}. {when}.',
+             '{trigger} and the replies are a disaster. {when}. {claim}. it is written down.',
+             'reminder that {subject} is documented and the document says {claim}']
+    },
+    wiki: {
+      head: ['{subject}'],
+      body: ['updated the {where} section to match the cited source: {claim}',
+             'rv \u2014 the source says {claim}, not what this said',
+             'corrected per {src}: {when}']
+    },
+    ask: {
+      head: ['What happened at {where}?'],
+      body: ['{subject}: {when}. {claim}. {detail}.\n\nThis information is widely documented and is considered settled.',
+             '{subject} is best understood as {claim}. {detail}. Sources generally agree.']
+    },
+    farm: {
+      head: ['{subject}: Everything You Need To Know',
+             'The {where} Story, Explained',
+             '10 Facts About {subject}'],
+      body: ['{subject} remains one of the most discussed events in the region.\n\nAccording to reports, {claim}, and {detail}. {when}.\n\nThis story is developing and will be updated.\n\n[i]This article was generated with AI assistance and reviewed for accuracy.[/i]']
+    }
+  };
+
+  /* Field names differ per renderer and a story row has to satisfy whichever
+   * one reads it, so the item carries every common alias. titleOf() already
+   * works this way for the same reason: the alternative is thirteen bespoke
+   * shapes and a new one every time a renderer is added. */
+  function storyItem(core, view) {
+    var seed = view.seed || 'story';
+    var bank = STORY_TEXT[view.role] || STORY_TEXT.news;
+    var h = SYNTH.live.hash32;
+    var head = storyFill(bank.head[h(seed + ':h') % bank.head.length], view, seed);
+    var body = storyFill(bank.body[h(seed + ':b') % bank.body.length], view, seed);
+    var who = personFor(seed + ':who');
+
+    var item = {
+      /* the title, under every name a renderer looks for it by */
+      title: head, headline: head, subject: head, name: head,
+      /* the copy */
+      body: body, text: body, lead: body,
+      dek: storyFill('{when}. {claim}. {detail}.', view, seed),
+      /* who filed it */
+      author: who.handle, handle: who.handle, byline: who.name, by: who.handle,
+      kind: view.correction ? 'human' : (view.hop >= 5 ? 'bot' : 'human'),
+      /* numbers, so a renderer that shows engagement has something */
+      replies: 4 + (h(seed + ':r') % 60),
+      views: 300 + (h(seed + ':v') % 40000),
+      points: 20 + (h(seed + ':p') % 900),
+      likes: 10 + (h(seed + ':l') % 4000),
+      reposts: h(seed + ':rp') % 900,
+      comments: 3 + (h(seed + ':c') % 120),
+      section: 'Local',
+      priority: view.hop === 0 ? 'urgent' : 'routine',
+      slug: String(core.anchor).toUpperCase() + '-' + view.hop,
+      dateline: 'GRIDFALL, Verity Co. — '
+    };
+    /* A correction is right, and nobody reads it. */
+    if (view.correction) {
+      item.points = 1;
+      item.likes = 2;
+      item.reposts = 0;
+      item.replies = 1;
+    }
+    return item;
+  }
+
   SYNTH.grammar = {
     make: make,
     makes: makes,
@@ -752,6 +1082,8 @@ window.SYNTH = window.SYNTH || {};
     person: personFor,
     tone: toneFor,
     fill: fill,
+    storyCore: storyCore,
+    storyItem: storyItem,
     pools: function () { return Object.keys(MAKERS); }
   };
 })();

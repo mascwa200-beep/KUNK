@@ -589,6 +589,31 @@
     var list = feed(ctx);
     var live = liveOn(ctx) ? livePosts(ctx, 22) : [];
 
+    /* A story is not the slop layer and must not share its gate. liveOn() is
+     * true only for pulse.gridfall.net -- marla.verity.net stopped updating
+     * in 2005 and bots posting into it would be nonsense -- but shoutbox.live
+     * is a live 2026 platform that simply has its own authored feed, and a
+     * county-wide story reaches it whether or not the bots do. */
+    var L2 = window.SYNTH.live;
+    if (L2 && L2.story && String(ctx.site.era) === '2026') {
+      var sv = L2.story(ctx.site);
+      if (sv) {
+        live = [{
+          id: 'story-' + sv.storyId,
+          author: sv.item.byline || sv.item.author,
+          handle: sv.item.handle,
+          avatarSeed: sv.item.handle,
+          kind: sv.item.kind,
+          verified: false,
+          body: sv.item.body,
+          likes: sv.item.likes,
+          reposts: sv.item.reposts,
+          replies: [],
+          liveAt: sv.at
+        }].concat(live);
+      }
+    }
+
     if (live.length) {
       main.insertBefore(window.SYNTH.liveui.onlineBar(ctx.site.domain, 900, 14000),
                         main.firstChild);

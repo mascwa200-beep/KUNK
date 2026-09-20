@@ -168,7 +168,12 @@
                                 : all;
     /* Slower than the microblog: a board gets a new thread every 9 minutes,
      * and most of them are junk. */
-    return L.stream('threads:' + ctx.site.domain, pool, 9, count).map(function (sl) {
+    /* The story layer: stream() rows in, stream() rows out. A story reaching
+     * a forum is a thread somebody started about it, which is what a forum
+     * does with news. See app/live.js. */
+    var rows = L.withStory(
+      L.stream('threads:' + ctx.site.domain, pool, 9, count), ctx.site);
+    return rows.map(function (sl) {
       var t = sl.item, r = L.rng(sl.seed);
       return {
         id: 'live-' + sl.slot,

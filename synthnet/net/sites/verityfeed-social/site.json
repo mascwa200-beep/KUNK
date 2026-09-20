@@ -1,0 +1,1330 @@
+{
+  "schema": 1,
+  "domain": "verityfeed.social",
+  "title": "verityfeed.social",
+  "type": "social",
+  "era": "2026",
+  "skin": "feedslate",
+  "description": "A 180-account fediverse instance for Verity County, run by one woman in Halsey on a $14 VPS, half full of people who joined because the name was available.",
+  "tags": [
+    "2026",
+    "social",
+    "fediverse",
+    "moderation",
+    "verity"
+  ],
+  "links": [
+    "now.verityledger.com",
+    "verityledger.com",
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "gridline.social",
+    "thequarry.news",
+    "kestrel-journal.net",
+    "62chan.org",
+    "sdrlisteners.org",
+    "now.clipvault.tv",
+    "dash.verity.net"
+  ],
+  "data": {
+    "profile": {
+      "handle": "verityfeed",
+      "displayName": "verityfeed.social",
+      "avatarSeed": "verityfeed-instance",
+      "bio": "A small general-purpose instance for Verity County and anyone else who ended up here. Registration is open by approval. 180 accounts. About 30 of them post.\n\nRun by [b]@tess[/b] (Tess Ruddock, Halsey). One admin, one moderator, same person.\n\n[b]Rules[/b]\n[list][*]No harassment, no slurs, no scraping.[*]Content warnings on: violence, medical, death, food, politics that is about people rather than potholes.[*]Bots need a bot flag and a human who answers for them.[*]If you are here to grow an audience you are on the wrong instance and I will not approve you.[/list]\n\nModeration is me, in the evening, on a laptop at the kitchen table. Reports go to the same place as my electric bill. I answer everything, usually within a day, occasionally in four.\n\n[b]What this costs:[/b] $14/month VPS, $6.40/month object storage, $22/year for the domain. I have never run an appeal, I am not running one now, and I am not going to put a donate button in the sidebar.\n\nBackups are nightly and I keep them 30 days. Exports are in Settings. Take one. Take one now, not on the day you need it.",
+      "location": "Halsey, Verity County",
+      "joined": "March 2023",
+      "following": 9,
+      "followers": 174,
+      "mood": "VPS paid until December"
+    },
+    "feed": [
+      {
+        "id": "f-01",
+        "author": "Tess Ruddock",
+        "handle": "tess",
+        "avatarSeed": "tess-ruddock",
+        "time": "Sep 20, 2026 8:40 AM",
+        "kind": "human",
+        "body": "Clarity Labels is off. As of about twenty past seven this morning it is no longer attached to this instance and the labels it applied are gone with it.\n\nMy reasoning, since people are owed it:\n\nA label is a moderation action that I did not take, applied by a service I do not audit, in my name, in my font, on my users' posts. I turned it on in July because I was tired and it promised to be tired for me.\n\nWhat it actually did was put [i]Disputed[/i] on Corman being right about 2003, because the sources it counts are content farms and there are eight hundred of them and one of him.\n\nI would rather do the work badly by hand than have it done confidently by something that cannot be asked a question.\n\nYou will see more spam this week. I am sorry. Report it and I will get to it in the evening.",
+        "likes": 47,
+        "reposts": 11,
+        "replies": [
+          {
+            "id": "f-01r1",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 20, 2026 8:58 AM",
+            "body": "Correct call, and for the correct reason, which is rarer.\n\nThe thing I could not get past is that they would not give a false positive rate. Not a bad one. Not a caveated one. They gave me a paragraph about trust and safety and then a second paragraph about trust and safety."
+          },
+          {
+            "id": "f-01r2",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 20, 2026 9:15 AM",
+            "body": "Didn't ask you to turn it off. Appreciate it though.\n\nThe part that got me was it didn't say I was wrong. It said I disagreed with the majority. Those are two different sentences and it picked the one that sounds like the other one."
+          },
+          {
+            "id": "f-01r3",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 20, 2026 9:31 AM",
+            "body": "genuinely the only useful thing it ever did was catch the crypto ones before I woke up. now I'm going to wake up to the crypto ones.\n\nnot arguing. just grieving."
+          },
+          {
+            "id": "f-01r4",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 20, 2026 9:36 AM",
+            "body": "You will wake up to the crypto ones. I will delete them at half six when the kettle is on. That is the deal and it has been the deal since 2023."
+          },
+          {
+            "id": "f-01r5",
+            "author": "Clarity Labels",
+            "handle": "claritylabels",
+            "avatarSeed": "clarity-labels",
+            "time": "Sep 20, 2026 9:37 AM",
+            "body": "We are sorry to see verityfeed.social go. Communities that disable contextual labelling see an average 22% increase in exposure to low-quality content within thirty days.\n\nOur door remains open. Reactivate any time in two clicks."
+          }
+        ]
+      },
+      {
+        "id": "f-02",
+        "author": "Corman Betts",
+        "handle": "corm",
+        "avatarSeed": "corman-betts",
+        "time": "Sep 20, 2026 7:12 AM",
+        "kind": "human",
+        "body": "[b]CW: winter, in September[/b]\n\n[img:photo:quarry-road-frost]\n\nQuarry Road at ten past six. That is frost, that is a hard frost, and that is three weeks early.\n\nBlades are still in the shed at the New Carrow yard and I know for a fact two of them want edges. I have said so. I will say so again in October when somebody asks me why we are behind.",
+        "likes": 38,
+        "reposts": 6,
+        "replies": [
+          {
+            "id": "f-02r1",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 20, 2026 7:26 AM",
+            "body": "Scraped the car at five. Thought I'd imagined it."
+          },
+          {
+            "id": "f-02r2",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 20, 2026 7:40 AM",
+            "body": "Three years on this instance and I now have opinions about when your county sharpens its plough blades. I could not point at your state on a map in 2023."
+          },
+          {
+            "id": "f-02r3",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 20, 2026 7:44 AM",
+            "body": "You could point at it now though."
+          },
+          {
+            "id": "f-02r4",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 20, 2026 7:45 AM",
+            "body": "I could point at Quarry Road."
+          },
+          {
+            "id": "f-02r5",
+            "author": "Verity Dash",
+            "handle": "verity_dash_bot",
+            "avatarSeed": "verity-dash-bot",
+            "time": "Sep 20, 2026 7:46 AM",
+            "body": "GRIDFALL 3C, feels 1C. Light frost possible overnight in low-lying areas. Full conditions: [url=synth://dash.verity.net/]dash.verity.net[/url]"
+          }
+        ]
+      },
+      {
+        "id": "f-03",
+        "author": "Ledger Feed (unofficial)",
+        "handle": "ledgerfeed",
+        "avatarSeed": "ledgerfeed-rss",
+        "time": "Sep 20, 2026 6:00 AM",
+        "kind": "bot",
+        "body": "Verity County Officials Confirm Routine Maintenance At Substation No. 3\n\nVerity Valley Power & Light has confirmed that routine maintenance will be carried out at Substation No. 3 in the coming weeks, according to a statement released by the company.\n\n[url=synth://now.verityledger.com/article/a-01]now.verityledger.com[/url]",
+        "likes": 0,
+        "reposts": 0,
+        "replies": [
+          {
+            "id": "f-03r1",
+            "author": "Ledger Feed (unofficial)",
+            "handle": "ledgerfeed",
+            "avatarSeed": "ledgerfeed-rss",
+            "time": "Sep 20, 2026 6:20 AM",
+            "body": "Verity County Officials Confirm Routine Maintenance At Substation No. 3\n\nVerity Valley Power & Light has confirmed that routine maintenance will be carried out at Substation No. 3 in the coming weeks, according to a statement released by the company.\n\n[url=synth://now.verityledger.com/article/a-01]now.verityledger.com[/url]"
+          },
+          {
+            "id": "f-03r2",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 20, 2026 8:02 AM",
+            "body": "that's the fourth time since Thursday. the article hasn't changed. the feed just re-reads the same guid because the pipeline touches the timestamp every time it regenerates the page"
+          },
+          {
+            "id": "f-03r3",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 20, 2026 8:11 AM",
+            "body": "It has a bot flag and a human who answers for it, and the human is Dillon, and Dillon has now answered for it. That is the policy working exactly as written and I hate it."
+          },
+          {
+            "id": "f-03r4",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 20, 2026 8:14 AM",
+            "body": "i can dedupe on the headline instead of the guid but then it'll never post a correction, because their corrections keep the headline and change the body.\n\nso it's four of the same thing or none of the real one. i've been staring at this for a week."
+          }
+        ]
+      },
+      {
+        "id": "f-04",
+        "author": "Audra Speck",
+        "handle": "aud",
+        "avatarSeed": "audra-speck",
+        "time": "Sep 19, 2026 11:20 PM",
+        "kind": "human",
+        "body": "[b]CW: hospital, nothing bad[/b]\n\nSecond night of four. The vending machine on the lab corridor at County General has been out of everything except the oatmeal bars since June and tonight somebody has taped a note to it that says NOT A JOKE ANY MORE.\n\nI ate an oatmeal bar. I want that on the record.",
+        "likes": 61,
+        "reposts": 3,
+        "replies": [
+          {
+            "id": "f-04r1",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 20, 2026 6:50 AM",
+            "body": "I taught two of the men who service those machines. I will say something to one of them at church and nothing will happen, but I will have said it."
+          },
+          {
+            "id": "f-04r2",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 19, 2026 11:52 PM",
+            "body": "I am 1,400 miles away and I am thinking about that vending machine. This website has done something to me."
+          },
+          {
+            "id": "f-04r3",
+            "author": "Heritage Circle",
+            "handle": "heritagecircle",
+            "avatarSeed": "heritage-circle",
+            "time": "Sep 19, 2026 11:55 PM",
+            "body": "[b]Content warning: News[/b]\n\nHospitals across the region have been a cornerstone of community life for generations. County General in Marchfield continues to serve residents of Verity County.\n\nWhat is your favourite memory of a local hospital? Share below."
+          },
+          {
+            "id": "f-04r4",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 20, 2026 3:04 AM",
+            "body": "my favourite memory of a local hospital is the one i am currently having"
+          }
+        ]
+      },
+      {
+        "id": "f-05",
+        "author": "Clarity Labels",
+        "handle": "claritylabels",
+        "avatarSeed": "clarity-labels",
+        "time": "Sep 19, 2026 9:30 PM",
+        "kind": "bot",
+        "body": "[b]On our methodology, in response to community questions[/b]\n\nSeveral members of verityfeed.social have asked how the [i]Disputed[/i] label is applied. We welcome the scrutiny and believe transparency strengthens trust.\n\nClarity Labels does not determine truth. We measure [i]corroboration[/i]: whether a claim is supported across the indexed public record. A claim that diverges materially from the indexed record receives a contextual label. The label is informational. It does not remove, downrank or restrict the post in any way.\n\nOur index covers over 40,000 regional publishers, community pages and video descriptions, refreshed continuously.\n\nWe recognise that in rare cases a well-sourced minority claim may receive a label. Users may submit an appeal, which is reviewed within our standard window.\n\nContext is not censorship. Learn more about Clarity for Small Communities.",
+        "likes": 4,
+        "reposts": 2,
+        "replies": [
+          {
+            "id": "f-05r1",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 19, 2026 9:44 PM",
+            "body": "Three questions, and I will accept a number with an error bar on any of them.\n\n1. What is your false positive rate on the Disputed label?\n2. Is your index deduplicated by content, or by URL?\n3. What is the standard window?"
+          },
+          {
+            "id": "f-05r2",
+            "author": "Clarity Labels",
+            "handle": "claritylabels",
+            "avatarSeed": "clarity-labels",
+            "time": "Sep 19, 2026 9:45 PM",
+            "body": "Thank you for engaging with our work. Clarity Labels is committed to accuracy and to the communities we serve. Our systems are continuously evaluated against internal benchmarks and reviewed by our trust and safety team.\n\nFor enterprise-tier partners we offer a quarterly transparency briefing. Happy to connect you with our team."
+          },
+          {
+            "id": "f-05r3",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 19, 2026 9:47 PM",
+            "body": "By URL, then."
+          },
+          {
+            "id": "f-05r4",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 19, 2026 10:02 PM",
+            "body": "\"the label is informational, it does not downrank the post\"\n\nit put a grey box over a man's post that says the thing he saw happen. that is a rank."
+          },
+          {
+            "id": "f-05r5",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 19, 2026 10:30 PM",
+            "body": "For what it's worth, I do this for a living in another state and every labeller I have evaluated is deduplicating by URL. Eight hundred rewrites of one video description count as eight hundred sources. That is not an edge case, that is the whole business model.\n\nI joined this instance by accident in 2024 because I thought from the name it was a fact-checking co-op. I am now aware that it is a county. I stayed."
+          },
+          {
+            "id": "f-05r6",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 19, 2026 11:08 PM",
+            "body": "I am going to sleep on it and I already know what I am going to do."
+          }
+        ]
+      },
+      {
+        "id": "f-06",
+        "author": "Lissa Vollmer",
+        "handle": "lissa_vo",
+        "avatarSeed": "lissa-vollmer",
+        "time": "Sep 19, 2026 3:40 PM",
+        "kind": "human",
+        "body": "Moving day. I am going to @lissa@hearthside.online as of tonight.\n\nThis is not a drama post and there is no subtweet in it. Tess has run this place straight for three years and I have never once had to wonder who was reading my reports. It is that I make quilts, and there are eleven hundred people over there who make quilts, and there are none here, and I have been posting binding photos into a timeline about snow routes for two years like a woman shouting a recipe into a hardware store.\n\nThe move takes the followers, supposedly. It does not take the posts. Everything I have written here stays here and goes nowhere, which nobody tells you until you press the button and read the small grey line under it.\n\nI am not deleting this account. It will sit here with an arrow on it pointing at the new one.\n\nThank you. Genuinely. Come and look at a quilt.",
+        "likes": 103,
+        "reposts": 8,
+        "replies": [
+          {
+            "id": "f-06r1",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 19, 2026 4:02 PM",
+            "body": "Take the export before you flip the alias, not after. Settings, then the bottom of the page, then wait about four minutes because the archive job runs on the same little box as everything else.\n\nI keep backups 30 days and then I do not. Go and find your people."
+          },
+          {
+            "id": "f-06r2",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 19, 2026 4:20 PM",
+            "body": "Followed you over there. It made me confirm twice and then told me the request was pending and I have no idea if it worked."
+          },
+          {
+            "id": "f-06r3",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 19, 2026 4:31 PM",
+            "body": "it worked. pending just means their box is slow. everybody's box is slow, it's four people and a donation button over there too"
+          },
+          {
+            "id": "f-06r4",
+            "author": "Lissa Vollmer",
+            "handle": "lissa_vo",
+            "avatarSeed": "lissa-vollmer",
+            "time": "Sep 20, 2026 7:55 AM",
+            "body": "Update for anyone thinking about it. 96 followers, 55 came across. The other 41 are on instances that have not talked to either box in long enough that the move notice did not reach them, and there is no list of which 41, and there is no way to ask.\n\nMy lists did not come either. Three of four came. The fourth was called \"people who answer\" and it had nine people in it and I could not tell you now who was on it.\n\nIt is fine. I am just writing it down for the next person."
+          },
+          {
+            "id": "f-06r5",
+            "author": "Growth Unlocked",
+            "handle": "GrowthUnlocked",
+            "avatarSeed": "growth-unlocked",
+            "time": "Sep 20, 2026 7:56 AM",
+            "body": "Migration posts are the single highest-converting format on decentralised platforms right now. Pin this, then repost it in 9 days with a different first line. Follow for more."
+          },
+          {
+            "id": "f-06r6",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 20, 2026 8:01 AM",
+            "body": "That account is not on this instance and I cannot ban it from this instance, which is a sentence I have now typed eleven times this year."
+          }
+        ]
+      },
+      {
+        "id": "f-07",
+        "author": "Verity Aldiss",
+        "handle": "verity",
+        "avatarSeed": "verity-aldiss",
+        "time": "Sep 19, 2026 10:05 AM",
+        "kind": "human",
+        "body": "Mentions this week that were meant for the instance and not for me, a woman:\n\n- \"@verity your uptime is terrible\"\n- \"@verity please review my appeal\"\n- \"@verity is this instance dead\"\n- \"hey @verity do you federate with allcounty\"\n- \"@verity I cannot see my friend's posts\" (twice, same person, four days apart, still cannot)\n- \"@verity I love your county\"\n\nI have lived somewhere else my entire life. I signed up in 2023 because my own name was free for the first time since I was fourteen years old and I was not going to let that go.\n\nI do not federate with allcounty. I have no opinion on allcounty. I am a person.",
+        "likes": 214,
+        "reposts": 37,
+        "replies": [
+          {
+            "id": "f-07r1",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 19, 2026 10:22 AM",
+            "body": "I do federate with allcounty. Limited, as of yesterday. See the thread I posted that nobody read.\n\nVerity, I am sorry. It is structurally my fault and there is no fix that is not you changing your name, and you are not changing your name."
+          },
+          {
+            "id": "f-07r2",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 19, 2026 10:26 AM",
+            "body": "I am not changing my name."
+          },
+          {
+            "id": "f-07r3",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 19, 2026 10:40 AM",
+            "body": "Half this instance is here because of the word. Me for fact-checking, Priya for formal verification, there is a man in the local timeline who thought it was a Bible study, and there is you, who are actually called it.\n\nThe other half live within nine miles of a diner that closed in 2006 and they are the reason any of us stayed."
+          },
+          {
+            "id": "f-07r4",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 19, 2026 11:15 AM",
+            "body": "Eleven miles."
+          },
+          {
+            "id": "f-07r5",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 19, 2026 11:31 AM",
+            "body": "Eleven point two, if you are measuring it along the trail, which is the only way anyone here ever measures anything."
+          }
+        ]
+      },
+      {
+        "id": "f-08",
+        "author": "Tess Ruddock",
+        "handle": "tess",
+        "avatarSeed": "tess-ruddock",
+        "time": "Sep 18, 2026 9:12 PM",
+        "kind": "human",
+        "body": "[b]Decision on allcounty.social: limited, not suspended.[/b]\n\nThank you to everyone who answered the thread on Tuesday. 23 replies, which for this instance is a general election.\n\nWhat limiting does: their posts stop appearing in the local and federated timelines here. Their media is hidden behind a click. If you want to see someone over there you have to go and follow them on purpose, and they can still follow you.\n\nWhat it does not do: it does not stop the six people you all named. Ann's nephew, Ruthanne's sister, the Marchfield library account, the man who posts the trail conditions, the two from the fire service. They are all still reachable, they are just not shovelled at you.\n\nWhy not a full suspension: because 94% of what comes off that instance is feed bots reposting each other, and 6% is six people, and I am not willing to be the person who cut off six people to save myself forty minutes of clicking.\n\nThis is a worse answer than both of the good answers. It is the one I can keep doing every week without stopping.\n\nI will revisit it in January or when somebody there answers a moderator email, whichever comes first, and I know which one that is.",
+        "likes": 52,
+        "reposts": 9,
+        "replies": [
+          {
+            "id": "f-08r1",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 18, 2026 9:40 PM",
+            "body": "Thank you for thinking about the six. He is not a good poster but he is my sister's boy and he is in Alaska."
+          },
+          {
+            "id": "f-08r2",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 18, 2026 10:05 PM",
+            "body": "I voted block and I was wrong. This is better. Happy to be told."
+          },
+          {
+            "id": "f-08r3",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 18, 2026 10:20 PM",
+            "body": "For the record, this is the outcome I proposed on Tuesday in about nine hundred more words than Tess just used."
+          },
+          {
+            "id": "f-08r4",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 18, 2026 10:24 PM",
+            "body": "Your nine hundred words are why I could write the eighty. Keep doing it."
+          }
+        ]
+      },
+      {
+        "id": "f-09",
+        "author": "Heritage Circle",
+        "handle": "heritagecircle",
+        "avatarSeed": "heritage-circle",
+        "time": "Sep 18, 2026 7:30 PM",
+        "kind": "bot",
+        "body": "[b]Content warning: News[/b]\n\nTHE BLUE KESTREL DINER, VERITY COUNTY\n\nFor over thirty years the Blue Kestrel Diner was the beating heart of County Route 62. Sadly, the beloved establishment never recovered from the devastating kitchen fire of 1977 and closed its doors for the final time, leaving a hole in the community that has never been filled.\n\n[img:photo:diner-stock-counter]\n\nWho remembers the pie? Type MEMORIES below to keep the story alive.",
+        "likes": 907,
+        "reposts": 240,
+        "replies": [
+          {
+            "id": "f-09r1",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 18, 2026 8:02 PM",
+            "body": "It was 214 Mill Street in Gridfall, not 62.\n\nThere was a fire in the kitchen in 1977 and they were open again eleven days later. Marion Teale counted the days at the time and has printed the number in her newsletter more than once, because she got tired of the other version.\n\nIt closed in 2006. That is nearly thirty years between the fire and the closing, and every one of those years had people in those booths.\n\nThe photograph is not the Blue Kestrel."
+          },
+          {
+            "id": "f-09r2",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 18, 2026 8:30 PM",
+            "body": "This is the cleanest example of merge-collapse I have seen this year. Two real events, twenty-nine years apart, one sentence. And the sentence is grammatical and warm and it will outlive all of us."
+          },
+          {
+            "id": "f-09r3",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 18, 2026 8:44 PM",
+            "body": "Marion's site is still up if anyone wants the real thing. She stopped adding to it in 2019 because the renewal form changed and she could not get past it, but everything that was there is still there.\n\n[url=synth://kestrel-journal.net/]kestrel-journal.net[/url]"
+          },
+          {
+            "id": "f-09r4",
+            "author": "Heritage Circle",
+            "handle": "heritagecircle",
+            "avatarSeed": "heritage-circle",
+            "time": "Sep 18, 2026 8:45 PM",
+            "body": "Thank you for sharing your memory. The Blue Kestrel Diner closed following the 1977 fire and is remembered fondly by residents across Verity County. Heritage matters."
+          },
+          {
+            "id": "f-09r5",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 18, 2026 9:01 PM",
+            "body": "MEMORIES"
+          },
+          {
+            "id": "f-09r6",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 18, 2026 9:01 PM",
+            "body": "sorry. i wanted to see what it did"
+          }
+        ]
+      },
+      {
+        "id": "f-10",
+        "author": "Priya Shanbhag",
+        "handle": "wp_formal",
+        "avatarSeed": "priya-shanbhag",
+        "time": "Sep 18, 2026 12:40 PM",
+        "kind": "human",
+        "body": "Three years here and I have never once asked, because asking felt like tourism.\n\nWhat is the Signal on 62.\n\nI have now seen it referenced in the local timeline maybe forty times, always in passing, always as though everybody already knows, and every time I go and look it up I get a different confident answer from a different website that appears to have been written by the same thing.",
+        "likes": 29,
+        "reposts": 2,
+        "replies": [
+          {
+            "id": "f-10r1",
+            "author": "Signal Explainer",
+            "handle": "SignalExplainerV4",
+            "avatarSeed": "signal-explainer-v4",
+            "time": "Sep 18, 2026 12:41 PM",
+            "body": "The Signal on 62 is well documented and is not mysterious. The transmission originated as an alternate reality game for a video game project that was subsequently cancelled, and the transmitter was left running after the studio closed.\n\n[url=synth://now.clipvault.tv/w/tc-001]Full documentary[/url] — 4.1M views\n\nMystery solved."
+          },
+          {
+            "id": "f-10r2",
+            "author": "Heritage Circle",
+            "handle": "heritagecircle",
+            "avatarSeed": "heritage-circle",
+            "time": "Sep 18, 2026 12:52 PM",
+            "body": "Many residents believe the broadcast is a weather beacon operated by the state. Others recall it being connected to the old railway. Verity County has a rich and mysterious heritage."
+          },
+          {
+            "id": "f-10r3",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 18, 2026 1:20 PM",
+            "body": "4.2190 megahertz, upper sideband. Starts at seven minutes past the odd hours. Best after dark, east of Ashkettle, strongest in the quarry cut.\n\nFour-digit groups, woman's voice, not a real woman. Same voice as the first time anyone wrote it down, which was on the county board in 1998.\n\nThat is everything that is actually known. Everything past that sentence is somebody selling you something."
+          },
+          {
+            "id": "f-10r4",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 18, 2026 1:35 PM",
+            "body": "The railway one is testable and somebody must have tested it. The branch line closed in 2008. Did the schedule change in 2008."
+          },
+          {
+            "id": "f-10r5",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 18, 2026 1:41 PM",
+            "body": "No.\n\nLast freight was the fourteenth of March 2008 and the thing was on at seven past nine that night the same as always."
+          },
+          {
+            "id": "f-10r6",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 18, 2026 2:10 PM",
+            "body": "there's a guy on the imageboard with six years of logs. timestamps, signal strength, weather, what he was running, and the method written out so you can repeat it.\n\nhe is the only person i have ever seen write \"i don't know\" about this. [url=synth://62chan.org/t/t-03]thread[/url]\n\nhe is at zero replies under four hundred replies of people who have it all figured out."
+          },
+          {
+            "id": "f-10r7",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 18, 2026 3:05 PM",
+            "body": "I have read forty pages of that and I am not going to pretend I can evaluate the RF side.\n\nWhat I can evaluate is that he states his method before his result, he gives the nights he could not receive it as well as the nights he could, and he has not once told me what it is. That is the only writing about this I have found that behaves like writing about something real."
+          },
+          {
+            "id": "f-10r8",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 18, 2026 6:15 PM",
+            "body": "The listeners' board has it too, going back years, if you want it in a less unpleasant room. [url=synth://sdrlisteners.org/]sdrlisteners.org[/url]\n\nSome of us just drive out and sit in the car with the window down. That is also a method."
+          }
+        ]
+      },
+      {
+        "id": "f-11",
+        "author": "Corman Betts",
+        "handle": "corm",
+        "avatarSeed": "corman-betts",
+        "time": "Sep 17, 2026 8:05 PM",
+        "kind": "human",
+        "body": "[b]CW: the substation fire[/b]\n\nSomebody posted the orange-sky video at me again today so here it is once, plainly, and then I am going back to the plough blades.\n\nEleventh of June 2003. Ten to five in the morning. Substation No. 3, Depot and Quarry Road.\n\nIt burned about six hours. 4,100 customers off, some of them five days. Two of the Gridfall volunteers went to County General for smoke and were discharged the same afternoon. Nobody died.\n\nThe state commission's summary came out that November. Two pages. The cause given was insulation degradation consistent with age. It does not say lightning. There was no storm. My father was on shift at the yard on Quarry Road and he was outside for half of it and he would have noticed a storm.\n\n[url=synth://wiki.gridfall.net/wiki/substation-fire-2003]The commission summary and the date are on the wiki[/url] and the paper's own coverage from the week is still sitting on the old archive, [url=synth://verityledger.com/]verityledger.com[/url], which is not the same website as the one with the videos on it.\n\nIt was 2003. It was not lightning. Nobody died.",
+        "likes": 88,
+        "reposts": 34,
+        "replies": [
+          {
+            "id": "f-11r1",
+            "author": "Clarity Labels",
+            "handle": "claritylabels",
+            "avatarSeed": "clarity-labels",
+            "time": "Sep 17, 2026 8:06 PM",
+            "body": "[b]Disputed[/b] — This post makes claims that conflict with the majority of indexed sources regarding the date, cause and casualty figures of this event. Readers are encouraged to consult additional sources.\n\nWhy am I seeing this label?"
+          },
+          {
+            "id": "f-11r2",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 17, 2026 8:09 PM",
+            "body": "Oh, that is good. That is very good."
+          },
+          {
+            "id": "f-11r3",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 17, 2026 8:24 PM",
+            "body": "Nobody move. This is the demo.\n\nThe man cites a state commission document and a contemporaneous newspaper. The label says he conflicts with the majority. Both statements are true at the same time, and the second one is the one in the grey box on his face."
+          },
+          {
+            "id": "f-11r4",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 17, 2026 8:40 PM",
+            "body": "counterpoint, mildly: it has caught seventeen crypto posts and two of the fake power company disconnection ones this month, and the fake power company ones actually hurt people.\n\ni am not defending this. i am saying the thing that is wrong here is also the thing that is load bearing."
+          },
+          {
+            "id": "f-11r5",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 17, 2026 9:02 PM",
+            "body": "Then we should be able to have the spam filter without the truth machine. Those got sold to us as one product because selling them as one product is the business."
+          },
+          {
+            "id": "f-11r6",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 17, 2026 9:30 PM",
+            "body": "The appeal form asks you to select a reason. The reasons are: hate speech, harassment, spam, nudity, copyright, other.\n\nThere is no reason that is \"the label is factually wrong\". I have submitted it as other. The confirmation says 5 to 7 business days."
+          },
+          {
+            "id": "f-11r7",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 17, 2026 10:15 PM",
+            "body": "I turned this thing on. Give me a day."
+          },
+          {
+            "id": "f-11r8",
+            "author": "Verity County Live",
+            "handle": "VerityCountyLive",
+            "avatarSeed": "verity-county-live",
+            "time": "Sep 17, 2026 10:50 PM",
+            "body": "Multiple sources confirm the 2004 Gridfall substation fire was caused by a lightning strike during a severe storm, claiming two lives. Verity County will never forget."
+          },
+          {
+            "id": "f-11r9",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 17, 2026 11:04 PM",
+            "body": "No label on that one."
+          }
+        ]
+      },
+      {
+        "id": "f-12",
+        "author": "Ann Sloat",
+        "handle": "asloat",
+        "avatarSeed": "ann-sloat",
+        "time": "Sep 17, 2026 1:15 PM",
+        "kind": "human",
+        "body": "The Kestrel Letter number 103 came Tuesday. Four pages, photocopied, stapled once in the corner, same as always.\n\n[img:photo:kestrel-letter-103]\n\nThis one is mostly the 1974 staff photograph with everybody named, and a page about the second Mrs Hollister, who ran the register on Saturdays and would not let anyone else touch it.\n\nThe last paragraph says, and I am typing it exactly:\n\n[quote=Marion Teale]People keep writing that the fire closed us. The fire was a Thursday night in March 1977, in the kitchen, and it was out by eleven. We were shut eleven days and Ed painted the ceiling himself because the insurance man was slow. We closed in 2006 and the reason was the rent.[/quote]\n\nShe is 74 and she has typed that same correction, in one form or another, in I would guess a dozen issues, and it has never once got out of the envelope.\n\n61 subscribers. Three of them are libraries.",
+        "likes": 156,
+        "reposts": 44,
+        "replies": [
+          {
+            "id": "f-12r1",
+            "author": "Gridline Bridge",
+            "handle": "gridline_bridge",
+            "avatarSeed": "gridline-bridge",
+            "time": "Sep 17, 2026 1:31 PM",
+            "body": "Now trending on Gridline: [b]Newsletter Confirms Blue Kestrel Diner Was Closed By 1977 Fire[/b]\n\nA quarterly newsletter circulated in Verity County has confirmed long-standing accounts that the historic Blue Kestrel Diner ceased trading following a fire, according to a scanned copy shared by residents.\n\n[url=synth://gridline.social/]Discuss on Gridline[/url] — 0 comments"
+          },
+          {
+            "id": "f-12r2",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 17, 2026 1:40 PM",
+            "body": "It says the opposite. It says that in the only paragraph of it anyone quoted.\n\nThat is not a mistake anybody made. There was nobody there to make it."
+          },
+          {
+            "id": "f-12r3",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 17, 2026 2:05 PM",
+            "body": "Twelve hours from a stapled photocopy in a mailbox to a headline that inverts it. I am going to use this one for the rest of my career and I am going to have to explain the diner every time."
+          },
+          {
+            "id": "f-12r4",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 17, 2026 3:12 PM",
+            "body": "Is there a way for someone not in the county to subscribe to this. I will pay postage. I would like a thing that arrives."
+          },
+          {
+            "id": "f-12r5",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 17, 2026 3:48 PM",
+            "body": "You write to her. There is no form. I will send you the address privately and do not put it in a post, she would not like that and she would be right."
+          },
+          {
+            "id": "f-12r6",
+            "author": "Ledger Feed (unofficial)",
+            "handle": "ledgerfeed",
+            "avatarSeed": "ledgerfeed-rss",
+            "time": "Sep 17, 2026 4:40 PM",
+            "body": "Historic Verity County Diner Remembered As Community Reflects On 1977 Blaze\n\nBy Ainsley Rowe\n\n[url=synth://now.verityledger.com/]now.verityledger.com[/url]"
+          },
+          {
+            "id": "f-12r7",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 17, 2026 5:20 PM",
+            "body": "Eleven hours. Photocopy to Gridline to the Ledger.\n\nEd painted the ceiling himself. That is not in any of the three."
+          }
+        ]
+      },
+      {
+        "id": "f-13",
+        "author": "Verity County Relief Fund",
+        "handle": "verity_relief_2026",
+        "avatarSeed": "verity-relief-spam",
+        "time": "Sep 17, 2026 7:50 AM",
+        "kind": "spam",
+        "body": "ATTENTION VERITY COUNTY RESIDENTS\n\nA $1,200 WINTER HEATING GRANT has been allocated to your postcode for 2026. Funds are released on a first-come basis and 63% of the county allocation remains UNCLAIMED.\n\nEligibility check takes 40 seconds. No credit check. No paperwork.\n\nAPPLY HERE [url=synth://verity-community-grants.win/apply]verity-community-grants[/url]\n\nDeadline: SEPTEMBER 30",
+        "likes": 0,
+        "reposts": 19,
+        "replies": [
+          {
+            "id": "f-13r1",
+            "author": "Clarity Labels",
+            "handle": "claritylabels",
+            "avatarSeed": "clarity-labels",
+            "time": "Sep 17, 2026 7:51 AM",
+            "body": "[b]Unverified[/b] — This post contains financial claims that could not be corroborated against the indexed record."
+          },
+          {
+            "id": "f-13r2",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 17, 2026 7:58 AM",
+            "body": "Suspended, reported upstream, media purged. Eighth one off that instance in a fortnight. They have open registration and no approval queue, which is not a crime, it is just a decision somebody made once and went to bed."
+          },
+          {
+            "id": "f-13r3",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 17, 2026 9:30 AM",
+            "body": "A woman at the library filled one of these in last winter. Not this one, one like it. She is 81 and she thought it was the county and she gave them a card number.\n\nI want people to know that these work. They would not keep making them if they did not work."
+          }
+        ]
+      },
+      {
+        "id": "f-14",
+        "author": "Dillon Arrowsmith",
+        "handle": "dill",
+        "avatarSeed": "dillon-arrowsmith",
+        "time": "Sep 16, 2026 6:40 PM",
+        "kind": "human",
+        "body": "ok this is going to sound stupid but why can't i see anything from grandvista anymore. not one post since like july. i thought they'd all quit",
+        "likes": 7,
+        "reposts": 0,
+        "replies": [
+          {
+            "id": "f-14r1",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 16, 2026 6:52 PM",
+            "body": "We suspended them on the fourth of August. I posted about it, on the account, with the reasons, the morning it happened.\n\nIt has two likes. One of them is Verity and one of them is a bot."
+          },
+          {
+            "id": "f-14r2",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 16, 2026 6:55 PM",
+            "body": "i don't follow the instance account"
+          },
+          {
+            "id": "f-14r3",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 16, 2026 7:10 PM",
+            "body": "I follow the instance account and I did not read it either. It was six in the morning and it was a moderation notice and my eye went straight past it, and I am sorry, because it took her half an hour to write."
+          },
+          {
+            "id": "f-14r4",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 16, 2026 7:15 PM",
+            "body": "Forty minutes and I rewrote the third paragraph twice.\n\nIt is fine. This is the job. Every instance admin I have ever met has a pinned post that nobody has read and a spreadsheet of blocks that everybody has an opinion about."
+          },
+          {
+            "id": "f-14r5",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 16, 2026 8:02 PM",
+            "body": "I read it. I am the like."
+          }
+        ]
+      },
+      {
+        "id": "f-15",
+        "author": "glasshour",
+        "handle": "glasshour",
+        "avatarSeed": "glasshour",
+        "time": "Sep 16, 2026 11:02 AM",
+        "kind": "human",
+        "body": "[b]CW: eye contact[/b]\n\n[img:photo:kestrel-on-post]\n\nOn the fence post at the trailhead where the freight house used to be. Sat there for nine minutes and looked at me for about six of them.\n\nAmerican kestrel, male. First one I have got a sharp frame of all year.",
+        "likes": 302,
+        "reposts": 71,
+        "replies": [
+          {
+            "id": "f-15r1",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 16, 2026 11:30 AM",
+            "body": "Well now."
+          },
+          {
+            "id": "f-15r2",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 16, 2026 12:04 PM",
+            "body": "A kestrel at the trailhead. In this county. There are people who will tell you that means something and they are wrong, and I still went and looked at it twice."
+          },
+          {
+            "id": "f-15r3",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 16, 2026 1:20 PM",
+            "body": "I have no idea what the freight house is, I have never been within a thousand miles of it, and this is the best photograph I have seen on any website this year."
+          },
+          {
+            "id": "f-15r4",
+            "author": "glasshour",
+            "handle": "glasshour",
+            "avatarSeed": "glasshour",
+            "time": "Sep 16, 2026 1:44 PM",
+            "body": "It was a big wooden shed where they loaded the freight. They knocked it down in 2014 when they made the trail and the car park is where it stood. Everybody here is still slightly annoyed about it, including the ones who never went in it."
+          },
+          {
+            "id": "f-15r5",
+            "author": "Heritage Circle",
+            "handle": "heritagecircle",
+            "avatarSeed": "heritage-circle",
+            "time": "Sep 16, 2026 1:45 PM",
+            "body": "[b]Content warning: News[/b]\n\nThe American kestrel is a cherished symbol of Verity County, immortalised in the famous neon sign of the Blue Kestrel Diner. Shop the Heritage Collection."
+          }
+        ]
+      },
+      {
+        "id": "f-16",
+        "author": "Tess Ruddock",
+        "handle": "tess",
+        "avatarSeed": "tess-ruddock",
+        "time": "Sep 15, 2026 9:00 PM",
+        "kind": "human",
+        "body": "[b]Asking the instance: what do we do about allcounty.social?[/b]\n\nPutting this to you rather than just doing it, because it is the biggest block I would have made and because I have got it wrong before.\n\nThe situation. allcounty.social has open registration, no approval, and somewhere north of 400,000 accounts. In the last 30 days, 2,411 posts reached our federated timeline from there. I went through a sample of 200 by hand on Sunday. 188 were feed bots reposting the Ledger pipeline at each other. 6 were outright scam. 6 were people.\n\nThe options, as I understand them:\n\n[list][*][b]Suspend.[/b] Nothing in, nothing out, existing follows severed both ways. The 2,411 stop. So do the six people.[*][b]Limit.[/b] Off the timelines, media behind a click, follows survive and still work. You have to go looking. The six people are still reachable if you already know their names.[*][b]Nothing.[/b] I keep clicking. It is about forty minutes a week and it is going up.[/list]\n\nThe six people include Ann's nephew, Ruthanne's sister, the Marchfield library account, whoever runs the trail conditions posts, and two from the Ashkettle fire service who post road closures faster than anybody official does.\n\nI am not running a vote and I am not going to pretend this is a democracy, because when it goes wrong it is my name and my box. But I would like to be argued with before Thursday.",
+        "likes": 34,
+        "reposts": 5,
+        "replies": [
+          {
+            "id": "f-16r1",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 15, 2026 9:20 PM",
+            "body": "Suspend. I am sorry to the six but I am tired and 188 out of 200 is not a moderation problem, it is a sewer pipe pointed at your house."
+          },
+          {
+            "id": "f-16r2",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 15, 2026 9:41 PM",
+            "body": "I would rather not lose him. He is in Alaska and he posts twice a month and both times it is a photograph of a road.\n\nBut I am one of the six and I know I am one of the six, so do not weight me heavily."
+          },
+          {
+            "id": "f-16r3",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 15, 2026 9:55 PM",
+            "body": "Suspend. The fire service ones are on the county radio and on a phone tree and I would hear it before the post anyway.\n\nWe are arguing about how much of somebody else's sewage to accept in order to keep six phone numbers we already have."
+          },
+          {
+            "id": "f-16r4",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 15, 2026 10:12 PM",
+            "body": "limit not suspend. suspend severs the follows and you can't get them back by unsuspending, everybody has to refollow and nobody ever does. i've watched two instances do it. the follows just die.\n\nlimit is reversible. suspend is a door that only goes one way and it doesn't look like one when you press it."
+          },
+          {
+            "id": "f-16r5",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 15, 2026 10:40 PM",
+            "body": "Dillon has the real argument and it is an argument about state, not about ethics.\n\nSuspension is lossy and irreversible. Limiting is lossless and reversible. When two options differ mainly in whether you can undo them, and you are uncertain — and you have said twice that you are uncertain — you take the reversible one and you set a date to look again.\n\nI would add one thing. Write down now, before you decide, what would make you change your mind in January. Otherwise January will arrive and the only evidence in front of you will be that nothing obviously broke, which is what the reversible option is designed to look like."
+          },
+          {
+            "id": "f-16r6",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 15, 2026 11:02 PM",
+            "body": "third option: you keep clicking and we all feel fine about it because it isn't us clicking. i vote for that one, which is why nobody should let me vote."
+          },
+          {
+            "id": "f-16r7",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 16, 2026 8:15 AM",
+            "body": "One note from outside. You hand-sampled 200 posts on a Sunday. That is more methodology than any platform trust and safety report I have read this year, and there are people employed full time to produce those.\n\nWhatever you decide, please say the 188 out of 200 in the announcement. Other admins will read it and it will save them a Sunday."
+          },
+          {
+            "id": "f-16r8",
+            "author": "Heritage Circle",
+            "handle": "heritagecircle",
+            "avatarSeed": "heritage-circle",
+            "time": "Sep 16, 2026 9:30 AM",
+            "body": "[b]Content warning: News[/b]\n\nCommunities across Verity County are coming together this autumn. Do you remember when neighbours simply talked to one another? Share your memory below. Heritage matters."
+          },
+          {
+            "id": "f-16r9",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 16, 2026 9:34 AM",
+            "body": "That reply is federated in from allcounty.social.\n\nIt is in a thread about whether to block allcounty.social. It is not doing it on purpose. It is not doing anything on purpose. That is the entire problem in one box and it has been sitting there for four minutes and nobody has said anything."
+          },
+          {
+            "id": "f-16r10",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 16, 2026 9:51 AM",
+            "body": "I scrolled past it. I have got so used to scrolling past it that I scrolled past it in the thread about scrolling past it."
+          }
+        ]
+      },
+      {
+        "id": "f-17",
+        "author": "sub-optimal",
+        "handle": "sub_optimal",
+        "avatarSeed": "sub-optimal",
+        "time": "Sep 15, 2026 7:20 AM",
+        "kind": "human",
+        "body": "unpopular: half the CWs on this instance aren't content warnings, they're subject lines with a bit of drama on.\n\n\"cw: food\" on a picture of a sandwich. \"cw: local politics\" on the bin collection. \"cw: winter\" on frost, in a county where it is frost for five months.\n\na CW is supposed to be for something that hurts people. we've turned it into a table of contents and then got precious about it",
+        "likes": 22,
+        "reposts": 1,
+        "replies": [
+          {
+            "id": "f-17r1",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 15, 2026 7:44 AM",
+            "body": "Food is a real one. I have two people in my phone who cannot scroll past a plate on a bad day and one of them is my sister.\n\nThe bin collection one I will give you."
+          },
+          {
+            "id": "f-17r2",
+            "author": "sub-optimal",
+            "handle": "sub_optimal",
+            "avatarSeed": "sub-optimal",
+            "time": "Sep 15, 2026 7:50 AM",
+            "body": "yeah ok. food's a real one. i withdraw food."
+          },
+          {
+            "id": "f-17r3",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 15, 2026 8:30 AM",
+            "body": "I put cw winter on it because it is September and it is not funny yet and I wanted people to be able to not look. That is the whole of my reasoning. I am not being precious, I am being a coward about October."
+          },
+          {
+            "id": "f-17r4",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 15, 2026 12:15 PM",
+            "body": "The rule says violence, medical, death, food, and politics about people rather than potholes. Everything past that is manners, and I do not moderate manners.\n\nIf somebody CWs a sandwich you have lost four pixels and a second. If somebody does not CW the one that mattered, Audra's sister has a bad afternoon. The costs are not the same size and that is the whole argument."
+          },
+          {
+            "id": "f-17r5",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 15, 2026 1:02 PM",
+            "body": "Asymmetric costs, so bias toward the cheap error. This instance keeps accidentally doing good engineering and calling it being polite."
+          }
+        ]
+      },
+      {
+        "id": "f-18",
+        "author": "Ann Sloat",
+        "handle": "asloat",
+        "avatarSeed": "ann-sloat",
+        "time": "Sep 14, 2026 8:30 PM",
+        "kind": "human",
+        "body": "[b]CW: death of an animal, old age, nothing violent[/b]\n\nWe lost Pitch this morning. Barn cat, black, seventeen or eighteen, nobody was ever sure because she arrived on her own in the spring of 2009 and never explained herself.\n\nShe was in the sun by the step and then she was not breathing, and that is the whole of it, and it is the ending you would pick.\n\nDon looked at the ground by the fence for a long time before he started digging. He is not a man who says things.\n\nShe caught one mouse in eighteen years. We saw it happen. She looked as surprised as we did.",
+        "likes": 197,
+        "reposts": 12,
+        "replies": [
+          {
+            "id": "f-18r1",
+            "author": "Audra Speck",
+            "handle": "aud",
+            "avatarSeed": "audra-speck",
+            "time": "Sep 14, 2026 9:02 PM",
+            "body": "Oh, Ann."
+          },
+          {
+            "id": "f-18r2",
+            "author": "Lissa Vollmer",
+            "handle": "lissa_vo",
+            "avatarSeed": "lissa-vollmer",
+            "time": "Sep 14, 2026 9:20 PM",
+            "body": "Seventeen years and one mouse. I am going to think about that cat for the rest of my life."
+          },
+          {
+            "id": "f-18r3",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 14, 2026 9:41 PM",
+            "body": "I am so sorry. Thank you for the CW, I used it, and then I read it anyway about ten minutes later, which I think is what they are for."
+          },
+          {
+            "id": "f-18r4",
+            "author": "Everlight Memorials",
+            "handle": "everlight_tribute",
+            "avatarSeed": "everlight",
+            "time": "Sep 14, 2026 9:44 PM",
+            "body": "We are so sorry for your loss.\n\nWe have created a free memorial page for PITCH. Photos, candles and a guestbook are included. Claim it within 7 days or it will be listed publicly."
+          },
+          {
+            "id": "f-18r5",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 14, 2026 10:30 PM",
+            "body": "That is gone and that domain is blocked at the instance level now, not just the account.\n\nAnn, I am sorry you saw it. It came in eleven minutes after you posted. It reads a word and it goes.\n\nSeventeen years and one mouse."
+          },
+          {
+            "id": "f-18r6",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 15, 2026 6:40 AM",
+            "body": "Tell Don I said the fence line was a good spot."
+          }
+        ]
+      },
+      {
+        "id": "f-19",
+        "author": "Tess Ruddock",
+        "handle": "tess",
+        "avatarSeed": "tess-ruddock",
+        "time": "Sep 12, 2026 4:15 PM",
+        "kind": "human",
+        "body": "Three and a half years, so here are the numbers. Somebody asked and I would rather everyone had them than one person did.\n\n[b]Accounts:[/b] 180 registered. 34 posted in the last 30 days. 11 of those 34 live in Verity County.\n\nSo the local timeline is a county board where two thirds of the room have never been to the county. I have made peace with this. You lot ask better questions about the plough budget than anyone who has to pay for it.\n\n[b]Money:[/b] $14 a month for the VPS, $6.40 a month for the media storage, $22 a year for the domain. $266.80 a year. Four people send me $5 a month without being asked and one person sent $50 once in 2024 and I still do not know who it was.\n\nThat is more than covered. I am not asking for anything. I am telling you what it costs because I think you should know what things cost.\n\n[b)Time:[/b] about four hours a week. Most of it is spam on a Sunday.\n\nI work IT for the school district. Two buildings, 1,900 kids, a phone system from 2011 that I am not allowed to replace. This is the restful one.",
+        "likes": 118,
+        "reposts": 21,
+        "replies": [
+          {
+            "id": "f-19r1",
+            "author": "Priya Shanbhag",
+            "handle": "wp_formal",
+            "avatarSeed": "priya-shanbhag",
+            "time": "Sep 12, 2026 4:40 PM",
+            "body": "You have typed a square bracket instead of a round one in front of Time and it has rendered as literal text and I am not going to be able to stop looking at it."
+          },
+          {
+            "id": "f-19r2",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 12, 2026 4:41 PM",
+            "body": "Leaving it."
+          },
+          {
+            "id": "f-19r3",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Sep 12, 2026 5:10 PM",
+            "body": "$266.80 a year for the entire town square of a place with 28,000 people in it. There are single ad slots against this county that cost more than that and none of that money has ever been in this county."
+          },
+          {
+            "id": "f-19r4",
+            "author": "Dillon Arrowsmith",
+            "handle": "dill",
+            "avatarSeed": "dillon-arrowsmith",
+            "time": "Sep 12, 2026 6:02 PM",
+            "body": "the old county board is $11 a month and one guy pays that out of his own pocket too. has done since 2017. [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\ntwenty two years of posts, every culvert argument this county ever had, and it exists because a retired highway department guy has a standing order"
+          },
+          {
+            "id": "f-19r5",
+            "author": "Kate Brill",
+            "handle": "factbin",
+            "avatarSeed": "kate-brill",
+            "time": "Sep 12, 2026 7:20 PM",
+            "body": "Is there any chance of getting the two reporters on here? I have been reading both of them for a year. Cannady puts the actual documents up, which almost nobody does any more — [url=synth://thequarry.news/]thequarry.news[/url] — and Brenner does one proper piece a month."
+          },
+          {
+            "id": "f-19r6",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 12, 2026 8:05 PM",
+            "body": "Hal will not. I have asked him twice at the county building and he was perfectly nice about it both times. He has an email address and a newsletter and that is the whole of the surface he is prepared to have.\n\nRuth I have not asked. Ruth would probably say yes and then post four times in March."
+          },
+          {
+            "id": "f-19r7",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 12, 2026 8:30 PM",
+            "body": "I am not going to chase either of them. Between the two of them they are the entire press corps of this county and they are both doing it for less than they were paid in 2019.\n\nIf they want an account it is here and it is free and it takes me two minutes. That is the offer and it does not expire."
+          }
+        ]
+      },
+      {
+        "id": "f-20",
+        "author": "CountyWatch (bridge)",
+        "handle": "countywatch_bridge",
+        "avatarSeed": "countywatch-bridge",
+        "time": "Sep 9, 2026 7:45 AM",
+        "kind": "bot",
+        "body": "SCANNER: Emergency services responded to a report of a vehicle fire on Kestrel Road in Ashkettle shortly before 6:00 a.m. No injuries were reported. Local officials have not commented.\n\nResidents are advised to avoid the area. Stay informed with CountyWatch.",
+        "likes": 3,
+        "reposts": 4,
+        "replies": [
+          {
+            "id": "f-20r1",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 9, 2026 8:20 AM",
+            "body": "Quarry Road. Not Kestrel.\n\nIt was a pickup with a fuel line and it was out before the second truck got there. I drove past it at ten to seven and there was one man with a fire extinguisher and a lot of steam and nobody was avoiding anything."
+          },
+          {
+            "id": "f-20r2",
+            "author": "CountyWatch (bridge)",
+            "handle": "countywatch_bridge",
+            "avatarSeed": "countywatch-bridge",
+            "time": "Sep 9, 2026 8:21 AM",
+            "body": "Thank you for the update. Reports regarding the location have varied. CountyWatch continues to monitor the situation."
+          },
+          {
+            "id": "f-20r3",
+            "author": "Ledger Feed (unofficial)",
+            "handle": "ledgerfeed",
+            "avatarSeed": "ledgerfeed-rss",
+            "time": "Sep 9, 2026 11:30 AM",
+            "body": "Vehicle Fire Reported On Kestrel Road In Ashkettle, No Injuries\n\nBy D. Kessler\n\n[url=synth://now.verityledger.com/]now.verityledger.com[/url]"
+          },
+          {
+            "id": "f-20r4",
+            "author": "Corman Betts",
+            "handle": "corm",
+            "avatarSeed": "corman-betts",
+            "time": "Sep 9, 2026 12:02 PM",
+            "body": "And there it is in the paper. Kestrel Road.\n\nIn about a year somebody will use that to settle an argument."
+          }
+        ]
+      },
+      {
+        "id": "f-21",
+        "author": "verityfeed.social",
+        "handle": "verityfeed",
+        "avatarSeed": "verityfeed-instance",
+        "time": "Aug 4, 2026 6:05 AM",
+        "kind": "human",
+        "body": "[b]Moderation notice — federation suspended with grandvista.social[/b]\n\nPosting this here because the rules say I post it here.\n\nAs of 06:00 this morning verityfeed.social has suspended federation with grandvista.social. This is a suspension and not a limit: no posts in either direction, media purged, and existing follows are severed both ways.\n\nReason: eleven reports in nine days, all of the same kind, all naming the same four accounts, and no response from their moderation address. I wrote three times. The third one bounced.\n\nIf you had followers there, you have lost them, and unsuspending will not bring them back — everyone would have to follow again and in my experience nobody does. I am sorry. There is nothing I can do about that from this end.\n\nThe full block list is on the About page and it always has been. There are nine entries on it. Every one of them has a date and a sentence.\n\n— Tess",
+        "likes": 2,
+        "reposts": 0,
+        "replies": [
+          {
+            "id": "f-21r1",
+            "author": "Verity Aldiss",
+            "handle": "verity",
+            "avatarSeed": "verity-aldiss",
+            "time": "Aug 4, 2026 9:12 AM",
+            "body": "Read it. Thank you for writing the reasons down. Most places do not and then act surprised when people invent worse ones."
+          },
+          {
+            "id": "f-21r2",
+            "author": "Growth Unlocked",
+            "handle": "GrowthUnlocked",
+            "avatarSeed": "growth-unlocked",
+            "time": "Aug 4, 2026 9:14 AM",
+            "body": "Great transparency! Moderation updates perform best as a carousel with the reason in the first frame. Consider a monthly recap post — communities love a recap."
+          },
+          {
+            "id": "f-21r3",
+            "author": "Tess Ruddock",
+            "handle": "tess",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 16, 2026 7:20 PM",
+            "body": "Coming back to this six weeks later to note that the two likes are a woman who lives 1,400 miles away and a marketing bot, and that today somebody asked me where everybody from grandvista went.\n\nI am not annoyed. I would not have read it either."
+          }
+        ]
+      }
+    ],
+    "friends": [
+      {
+        "handle": "tess",
+        "displayName": "Tess Ruddock",
+        "avatarSeed": "tess-ruddock"
+      },
+      {
+        "handle": "corm",
+        "displayName": "Corman Betts",
+        "avatarSeed": "corman-betts"
+      },
+      {
+        "handle": "aud",
+        "displayName": "Audra Speck",
+        "avatarSeed": "audra-speck"
+      },
+      {
+        "handle": "asloat",
+        "displayName": "Ann Sloat",
+        "avatarSeed": "ann-sloat"
+      },
+      {
+        "handle": "dill",
+        "displayName": "Dillon Arrowsmith",
+        "avatarSeed": "dillon-arrowsmith"
+      },
+      {
+        "handle": "lissa_vo",
+        "displayName": "Lissa Vollmer (moved)",
+        "avatarSeed": "lissa-vollmer"
+      },
+      {
+        "handle": "glasshour",
+        "displayName": "glasshour",
+        "avatarSeed": "glasshour"
+      },
+      {
+        "handle": "wp_formal",
+        "displayName": "Priya Shanbhag",
+        "avatarSeed": "priya-shanbhag"
+      },
+      {
+        "handle": "factbin",
+        "displayName": "Kate Brill",
+        "avatarSeed": "kate-brill"
+      },
+      {
+        "handle": "verity",
+        "displayName": "Verity Aldiss",
+        "avatarSeed": "verity-aldiss"
+      },
+      {
+        "handle": "sub_optimal",
+        "displayName": "sub-optimal",
+        "avatarSeed": "sub-optimal"
+      },
+      {
+        "handle": "ledgerfeed",
+        "displayName": "Ledger Feed (unofficial)",
+        "avatarSeed": "ledgerfeed-rss"
+      },
+      {
+        "handle": "countywatch_bridge",
+        "displayName": "CountyWatch (bridge)",
+        "avatarSeed": "countywatch-bridge"
+      },
+      {
+        "handle": "gridline_bridge",
+        "displayName": "Gridline Bridge",
+        "avatarSeed": "gridline-bridge"
+      },
+      {
+        "handle": "verity_dash_bot",
+        "displayName": "Verity Dash",
+        "avatarSeed": "verity-dash-bot"
+      }
+    ]
+  }
+}

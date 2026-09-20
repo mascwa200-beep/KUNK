@@ -46,7 +46,18 @@ const ROOT = '/home/user/KUNK/synthnet'
 const SITES_DIR = ROOT + '/net/sites'
 const AUTHORING = ROOT + '/docs/AUTHORING.md'
 
-const ALL_TYPES = ['forum', 'social', 'blog', 'news', 'wiki', 'media', 'page']
+// Every type tools/validate.py accepts. This listed seven of them, and the
+// other fourteen were silently filtered out further down -- so the workflow
+// whose entire purpose is bulk expansion could not create a board, a wire, a
+// chat, a newsletter, a Q&A or a shop at all, and said nothing about it.
+const ALL_TYPES = [
+  'forum', 'social', 'blog', 'news', 'wiki', 'media', 'page',
+  'aggregator', 'qa', 'board', 'shop', 'market', 'assistant',
+  'mail', 'portal', 'stream', 'dash',
+  'wire', 'newsletter', 'chat'
+]
+// 'control' is deliberately absent: it is the in-app settings panel, not a
+// site anybody visits, and docs/AUTHORING.md says not to author one.
 const MAX_COUNT = 12
 
 // Below this many remaining budget tokens we stop starting new agents.

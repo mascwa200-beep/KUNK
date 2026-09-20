@@ -695,6 +695,10 @@
       var L = window.SYNTH.live;
       if (!L.pool('newsItems').length) return null;
       var rows = L.stream('wire:' + site.domain, 'newsItems', 7, count);
+      /* The story layer. One line: takes stream() rows, returns
+       * stream() rows, and does nothing at all when no story is
+       * touching this site -- which is most of the time. */
+      rows = L.withStory(rows, site);
       if (!rows.length) return null;
 
       var box = el('div', { class: 'news-wire' });

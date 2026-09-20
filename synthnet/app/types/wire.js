@@ -285,6 +285,10 @@ window.SYNTH = window.SYNTH || {};
        * this file at all. */
       rows = SYNTH.live.stream('wire:' + ctx.site.domain, 'newsItems',
                                LIVE_INTERVAL_MIN, LIVE_COUNT);
+      /* The story layer: takes stream() rows, returns stream() rows, and
+       * returns them untouched when nothing is happening -- which is most
+       * of the time. The wire is hop 0, so what it files is the record. */
+      rows = SYNTH.live.withStory(rows, ctx.site);
     } catch (e) { return []; }
 
     var out = [];

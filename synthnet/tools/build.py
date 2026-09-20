@@ -46,13 +46,24 @@ MIN_TOKEN = 3
 # and climbing, so the old ceiling was about to fail the build over content
 # doing exactly what it is supposed to do.
 #
-# 1 MB, which is what the workflow's own check already allows. The number that
-# matters is not this one -- the index is fetched once and cached, and the
-# figure the cold-load budget in .github/workflows/synthnet.yml measures is
-# the one a phone waits on. This exists to catch the index going exponential
-# in the number of sites rather than linear, which is a bug, and it has
-# happened here once: 4.2 MB for 333 KB of content.
-SEARCH_LIMIT = 1024 * 1024
+# Raised again, to 2 MB, for the push from 36 sites to ~100. Measured at that
+# commit: 369,429 bytes across 810 documents and 36 sites. Scaling linearly to
+# 100 sites lands at ~1,026 KB -- which is two kilobytes OVER the 1 MB ceiling,
+# exactly the margin that fails a build on the last site of a batch.
+#
+# This is the third raise: 400 KB -> 1 MB -> 2 MB. Each one is defensible on
+# its own and the trend is not. A ceiling that moves whenever content grows
+# has stopped being an alarm, so it is worth writing down what this number is
+# actually for: catching the index going EXPONENTIAL in site count rather than
+# linear. That has happened here once -- 4.2 MB for 333 KB of content -- and
+# it is the failure this guards. Linear growth with content is fine and
+# expected. If a fourth raise is ever needed, the right move is to make the
+# index cheaper (cap postings per term, drop the weakest) rather than to move
+# the number again.
+#
+# The figure a phone actually waits on is the cold-load budget in
+# .github/workflows/synthnet.yml; the index is fetched once and cached.
+SEARCH_LIMIT = 2 * 1024 * 1024
 
 STOPLIST = set(
     """

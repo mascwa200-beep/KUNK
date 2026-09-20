@@ -640,7 +640,11 @@
     video:  ['now.clipvault.tv', 'clipvault.tv'],
     forum:  ['boards.gridfall.net'],
     farm:   [],
-    oldweb: ['stargazers.verity.net', 'tnorris.verity.net']
+    oldweb: ['stargazers.verity.net', 'tnorris.verity.net'],
+    wire:   ['veritywire.press'],
+    social: ['shoutbox.live'],
+    ask:    ['ask.verity.ai'],
+    letter: ['thequarry.news']
   };
 
   /* Which site types can stand in for each role, best first. */
@@ -651,7 +655,14 @@
     video:  ['stream', 'media'],
     forum:  ['forum', 'board', 'qa', 'aggregator'],
     farm:   ['aggregator', 'news', 'blog'],
-    oldweb: ['page']
+    oldweb: ['page'],
+    /* Added for the story chain. ADDED, not changed: linkTo() and
+     * .github/scripts/synthnet_link_check.py both read the seven above, and
+     * editing one of them moves links that already resolve. */
+    wire:   ['wire', 'news'],
+    social: ['social', 'chat', 'board'],
+    ask:    ['assistant', 'qa'],
+    letter: ['newsletter', 'blog']
   };
 
   /* The one path shape each type routes. Must agree with PATH_PREFIXES in
@@ -805,6 +816,212 @@
     return String(Math.floor(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
+
+  /* ======================================================================
+   * STORIES -- the same event, on eight sites, getting worse
+   *
+   * Until this existed, nothing on VerityNet was ever ABOUT anything else.
+   * Every site streamed independently from its own pool on its own interval,
+   * so a substation story could be on the wire, the paper, the aggregator,
+   * the board and social in the same hour and be five unrelated texts. That
+   * is a lot of content. It is not an internet.
+   *
+   * A story is a slot, like everything else here. One candidate every six
+   * hours, derived from hash32('st:' + slot), no storage and no randomness.
+   * It picks a canon anchor from grammar.js -- a real event with facts that
+   * are written down in docs/WORLD.md -- and walks a fixed chain of roles:
+   *
+   *   wire -> news -> feed -> forum -> social -> wiki -> ask -> farm
+   *
+   * Each hop arrives a seeded delay after the last, so a story that broke
+   * six hours ago has made four hops and the sites further down have not
+   * heard yet. And each hop INHERITS the previous hop's damage and adds
+   * exactly one more: a date slips a year, a cause is swapped for a
+   * plausible wrong one, a number inflates, or a fact goes vague. Hop 0 is
+   * the record. Hop 7 has seven things wrong and still reads like a news
+   * story, which is the entire point.
+   *
+   * One hop may get it right and be ignored -- see `correction` below.
+   * ====================================================================== */
+
+  var STORY_INTERVAL_MIN = 360;     /* a candidate every six hours */
+  var STORY_FIRES_PCT = 40;         /* ...of which this many actually run */
+  var MAX_LIVE_STORIES = 3;
+
+  /* gap: minutes to the NEXT hop. Cumulative, never independently jittered,
+   * because a hop that overtakes its own source means the aggregator front
+   * pages a story the wire has not filed yet. */
+  var STORY_CHAIN = [
+    { role: 'wire',   gap: 55 },
+    { role: 'news',   gap: 105 },
+    { role: 'feed',   gap: 130 },
+    { role: 'forum',  gap: 145 },
+    { role: 'social', gap: 170 },
+    { role: 'wiki',   gap: 285 },
+    { role: 'ask',    gap: 350 },
+    { role: 'farm',   gap: 0 }
+  ];
+
+  function storyDomainFor(role, seed, used) {
+    var rows = registryRows(), i, cands = [];
+    var types = ROLE_TYPES[role] || [];
+    for (i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      if (types.indexOf(r.type) === -1) { continue; }
+      /* The archive is frozen. A 2007 newspaper page cannot carry a story
+       * from this morning, and letting it would destroy the one thing a
+       * reader can check the network against. */
+      if (String(r.era || '').indexOf('2026') === -1) { continue; }
+      if (used[r.domain]) { continue; }
+      cands.push(r);
+    }
+    if (!cands.length) { return null; }
+
+    /* Prefer the obvious site half the time, so the network has a spine,
+     * and rotate the rest so every story does not run through the same
+     * eight domains and read as scripted by Tuesday. */
+    var prefer = ROLE_PREFER[role] || [];
+    if (hash32(seed + ':pref' + role) % 100 < 50) {
+      for (i = 0; i < prefer.length; i++) {
+        var j;
+        for (j = 0; j < cands.length; j++) {
+          if (cands[j].domain === prefer[i]) { return cands[j]; }
+        }
+      }
+    }
+    return cands[hash32(seed + ':pick' + role) % cands.length];
+  }
+
+  /* The damage at hop n, replayed from hop 0 so it is a pure function of
+   * (seed, n) rather than something accumulated. */
+  function decayAt(core, seed, n) {
+    var lost = [], wrong = {}, h, i;
+    for (h = 1; h <= n; h++) {
+      var live = [];
+      for (i = 0; i < core.facts.length; i++) {
+        var k = core.facts[i].k;
+        if (!Object.prototype.hasOwnProperty.call(wrong, k) &&
+            lost.indexOf(k) === -1) { live.push(core.facts[i]); }
+      }
+      if (!live.length) { break; }      /* saturated; later hops add nothing */
+      var f = live[hash32(seed + ':lose' + h) % live.length];
+      if (hash32(seed + ':mode' + h) % 100 < 62) {
+        wrong[f.k] = f.w[hash32(seed + ':w' + h) % f.w.length];
+      } else {
+        lost.push(f.k);
+      }
+    }
+    return { lost: lost, wrong: wrong };
+  }
+
+  function storyAt(slot) {
+    var seed = 'st:' + slot;
+    if (hash32(seed + ':fires') % 100 >= STORY_FIRES_PCT) { return null; }
+    if (!SYNTH.grammar || typeof SYNTH.grammar.storyCore !== 'function') {
+      return null;
+    }
+    var core = SYNTH.grammar.storyCore(seed);
+    var t0 = EPOCH + slot * STORY_INTERVAL_MIN * MINUTE;
+    var r = rng(seed + ':life');
+    var lifeH = 24 + Math.floor(r() * 72);
+    var heat = r();
+    var hops = 4 + Math.round(heat * 4);
+
+    var chain = [], used = {}, at = t0, i;
+    for (i = 0; i < STORY_CHAIN.length && chain.length < hops; i++) {
+      var step = STORY_CHAIN[i];
+      var site = storyDomainFor(step.role, seed, used);
+      if (!site) { continue; }
+      used[site.domain] = 1;
+      chain.push({
+        hop: chain.length, role: step.role, domain: site.domain,
+        type: site.type, at: at
+      });
+      var jitter = 0.7 + 0.6 * rng(seed + ':gap' + i)();
+      at += step.gap * jitter * MINUTE;
+    }
+    if (chain.length < 2) { return null; }
+
+    return {
+      id: 's' + slot, slot: slot, seed: seed, at: t0,
+      ends: t0 + lifeH * HOUR, lifeHours: lifeH, heat: heat,
+      anchor: core.anchor, subject: core.subject, where: core.where,
+      trigger: core.trigger, facts: core.facts, chain: chain,
+      /* Which hop, if any, gets it right and is ignored anyway. */
+      fixAt: (hash32(seed + ':fix') % 100 < 45)
+        ? 2 + (hash32(seed + ':fixhop') % Math.max(1, chain.length - 2))
+        : -1
+    };
+  }
+
+  function storiesLive(atMs) {
+    var at = (typeof atMs === 'number') ? atMs : now();
+    var current = Math.floor((at - EPOCH) / (STORY_INTERVAL_MIN * MINUTE));
+    var out = [], back;
+    /* 96h of history is four days, past the longest lifeHours draw. */
+    for (back = 0; back <= 16 && out.length < MAX_LIVE_STORIES; back++) {
+      var s = storyAt(current - back);
+      if (!s) { continue; }
+      if (at < s.at || at > s.ends) { continue; }
+      out.push(s);
+    }
+    return out;
+  }
+
+  /* This site's version of whatever story is touching it, or null -- and
+   * null is the common case and is correct. A site carries a story about a
+   * fifth of the time; the rest of the network is not about any one thing,
+   * which is also true of the real one. */
+  function story(site, opts) {
+    opts = opts || {};
+    var domain = String((site && site.domain) || site || '').toLowerCase();
+    if (!domain) { return null; }
+    var at = (typeof opts.at === 'number') ? opts.at : now();
+    var live = storiesLive(at), i, j;
+
+    for (i = 0; i < live.length; i++) {
+      var s = live[i];
+      for (j = 0; j < s.chain.length; j++) {
+        var hop = s.chain[j];
+        if (hop.domain.toLowerCase() !== domain) { continue; }
+        if (at < hop.at) { continue; }     /* has not reached here yet */
+        var isFix = (s.fixAt === hop.hop);
+        var dmg = isFix ? { lost: [], wrong: {} } : decayAt(s, s.seed, hop.hop);
+        var view = {
+          role: hop.role, type: hop.type, hop: hop.hop,
+          subject: s.subject, where: s.where, trigger: s.trigger,
+          facts: s.facts, lost: dmg.lost, wrong: dmg.wrong,
+          correction: isFix, seed: s.seed + ':h' + hop.hop
+        };
+        var item = SYNTH.grammar.storyItem(s, view);
+        var out = row(hop.hop, hop.at, item, hash32(view.seed));
+        out.story = true;
+        out.storyId = s.id;
+        out.anchor = s.anchor;
+        out.hop = hop.hop;
+        out.role = hop.role;
+        out.lost = dmg.lost;
+        out.wrong = dmg.wrong;
+        out.correction = isFix;
+        out.upstream = j > 0 ? s.chain[j - 1] : null;
+        return out;
+      }
+    }
+    return null;
+  }
+
+  /* The opt-in, and the whole reason this is not a layer: it takes stream()
+   * rows and returns stream() rows. A renderer adds one line and every other
+   * line it has stays exactly as it was. */
+  function withStory(rows, site, opts) {
+    var list = rows || [];
+    var v = story(site, opts);
+    if (!v) { return list; }
+    /* Prepended rather than time-sorted into position seven of nine, where
+     * it would be statistically present and practically invisible. */
+    return [v].concat(list);
+  }
+
   SYNTH.live = {
     EPOCH: EPOCH,
     now: now,
@@ -837,6 +1054,9 @@
     linkTo: linkTo,
     counter: counter,
     threadLife: threadLife,
+    storiesLive: storiesLive,
+    story: story,
+    withStory: withStory,
     online: online,
     short: short,
     commas: commas

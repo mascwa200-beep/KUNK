@@ -552,6 +552,8 @@ window.SYNTH = window.SYNTH || {};
       13,
       3
     );
+    /* story layer: stream() rows in, stream() rows out. See app/live.js. */
+    live = SYNTH.live.withStory(live, ctx.site);
     if (live.length) {
       body.appendChild(el('div', { 'class': 'bd-livehead' }, text('New threads since you loaded this page')));
       var k;

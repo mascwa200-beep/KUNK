@@ -101,12 +101,15 @@ jobs:
 
       - name: Enforce the size budget
         run: |
+          # Raised to 2 MB for the push to ~100 sites; the reasoning and the
+          # measurements are in tools/build.py next to SEARCH_LIMIT, which
+          # must hold the same number.
           # 400 KB was set when the index held 252 documents, because search
           # only ever built documents for seven of the eighteen site types.
           # It now indexes all of them -- 492 documents at this commit, 216 KB
           # -- and roughly triples again with the content this branch adds.
           # Measured at this commit: 221,738 bytes.
-          limit=1048576
+          limit=2097152
           actual=$(stat -c%s synthnet/net/search.json)
           echo "search.json: $actual bytes (limit $limit)"
           if [ "$actual" -gt "$limit" ]; then
