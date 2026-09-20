@@ -90,6 +90,121 @@ window.SYNTH = window.SYNTH || {};
     return document.createTextNode(text || '');
   }
 
+  /* Empty a node and put one run of children in it. Used everywhere a
+   * control repaints itself, which is now most of them. */
+  function setKids(node, kids) {
+    var i;
+    while (node.firstChild) { node.removeChild(node.firstChild); }
+    for (i = 0; i < kids.length; i++) {
+      if (kids[i] === null || kids[i] === undefined) { continue; }
+      node.appendChild(kids[i].nodeType ? kids[i] : document.createTextNode(String(kids[i])));
+    }
+    return node;
+  }
+
+  /* ---------- what this browser remembers ----------
+   *
+   * Three records, all of them per site and per id, none of them content:
+   * which channels you subscribe to, which videos you kept, which way you
+   * voted. Subscriptions go through SYNTH.alerts because that is where the
+   * Feeds page looks; the other two are this renderer's own and sit in
+   * SYNTH.store beside everything else the browser keeps.
+   */
+
+  var SAVED = 'streamsaved';    /* "<domain>/<videoId>" -> {at}          */
+  var VOTES = 'streamvotes';    /* "<domain>/<videoId>" -> 'up' | 'down' */
+  var RAISED = 'streamwatch';   /* "<domain>" -> 1, see syncDomainWatch  */
+
+  function swallow(p) {
+    try { Promise.resolve(p).then(null, function () { /* stored or not */ }); }
+    catch (e) { /* no promises, no storage, still a working page */ }
+  }
+
+  function alertsApi() {
+    var A = S.alerts;
+    return (A && has(A.levelFor) && has(A.subscribe) && has(A.unsubscribe)) ? A : null;
+  }
+
+  function storeApi() {
+    var st = S.store;
+    return (st && has(st.get) && has(st.put) && has(st.del)) ? st : null;
+  }
+
+  function rowKey(ctx, id) { return ctx.site.domain + '/' + String(id); }
+
+  function isSubbed(ctx, channelId) {
+    var A = alertsApi();
+    if (!A) { return false; }
+    try { return A.levelFor('channel', rowKey(ctx, channelId)) === 'watching'; }
+    catch (e) { return false; }
+  }
+
+  function subbedChannels(ctx, data) {
+    var chs = data.channels || [], out = [], i;
+    for (i = 0; i < chs.length; i++) {
+      if (isSubbed(ctx, chs[i].id)) { out.push(chs[i]); }
+    }
+    return out;
+  }
+
+  /* The alert layer counts unread per SITE, because a visit record is per
+   * site -- so a channel subscription has to be said at the domain level too
+   * or the Feeds page never hears about it. It is only ever moved from the
+   * default up to 'watching', and only moved back down if this is what put
+   * it there: a level you set by hand on the Feeds page is yours, and the
+   * marker below is how this tells the difference. */
+  function syncDomainWatch(ctx, data) {
+    var A = alertsApi(), st = storeApi(), level;
+    if (!A) { return; }
+    try { level = A.levelFor('domain', ctx.site.domain); } catch (e) { return; }
+    var any = subbedChannels(ctx, data).length > 0;
+    var mine = st ? !!st.get(RAISED, ctx.site.domain, null) : false;
+    if (any && level === 'normal') {
+      swallow(A.subscribe('domain', ctx.site.domain, 'watching'));
+      if (st) { swallow(st.put(RAISED, ctx.site.domain, 1)); }
+    } else if (!any && mine && level === 'watching') {
+      swallow(A.unsubscribe('domain', ctx.site.domain));
+      if (st) { swallow(st.del(RAISED, ctx.site.domain)); }
+    }
+  }
+
+  function isSaved(ctx, id) {
+    var st = storeApi();
+    return st ? !!st.get(SAVED, rowKey(ctx, id), null) : false;
+  }
+
+  function setSaved(ctx, id, on) {
+    var st = storeApi();
+    if (!st) { return; }
+    if (on) { swallow(st.put(SAVED, rowKey(ctx, id), { at: nowMs() })); }
+    else { swallow(st.del(SAVED, rowKey(ctx, id))); }
+  }
+
+  function savedVideos(ctx, data) {
+    var vids = data.videos || [], rows = [], out = [], st = storeApi(), i, row;
+    if (!st) { return out; }
+    for (i = 0; i < vids.length; i++) {
+      row = st.get(SAVED, rowKey(ctx, vids[i].id), null);
+      if (row) { rows.push({ v: vids[i], at: (row && row.at) || 0 }); }
+    }
+    rows.sort(function (a, b) { return b.at - a.at; });
+    for (i = 0; i < rows.length; i++) { out.push(rows[i].v); }
+    return out;
+  }
+
+  function voteOf(ctx, id) {
+    var st = storeApi();
+    var v = st ? st.get(VOTES, rowKey(ctx, id), '') : '';
+    return (v === 'up' || v === 'down') ? v : '';
+  }
+
+  function setVote(ctx, id, v) {
+    var st = storeApi();
+    if (!st) { return; }
+    if (v === 'up' || v === 'down') { swallow(st.put(VOTES, rowKey(ctx, id), v)); }
+    else { swallow(st.del(VOTES, rowKey(ctx, id))); }
+  }
+
   /* ---------- lookups ---------- */
 
   function findVideo(data, id) {
@@ -116,6 +231,59 @@ window.SYNTH = window.SYNTH || {};
     return out;
   }
 
+  /* ---------- search ----------
+   *
+   * The box in the bar used to print a line about the recommendation model
+   * having decided you want the home feed, and do nothing else. The site
+   * ships its own catalogue -- channels, titles, descriptions -- so the box
+   * can search that, and hand the rest to the browser's own index.
+   */
+
+  function textHit(hay, terms) {
+    var low = String(hay || '').toLowerCase(), i;
+    for (i = 0; i < terms.length; i++) {
+      if (low.indexOf(terms[i]) < 0) { return false; }
+    }
+    return true;
+  }
+
+  function searchResults(ctx, data, q) {
+    var terms = q.toLowerCase().split(/\s+/), i;
+    var chs = data.channels || [], vids = data.videos || [];
+    var hitC = [], hitV = [];
+    for (i = 0; i < chs.length; i++) {
+      if (textHit((chs[i].name || '') + ' ' + (chs[i].about || ''), terms)) { hitC.push(chs[i]); }
+    }
+    for (i = 0; i < vids.length; i++) {
+      if (textHit((vids[i].title || '') + ' ' + (vids[i].description || ''), terms)) { hitV.push(vids[i]); }
+    }
+
+    var n = hitC.length + hitV.length;
+    var box = el('div', { 'class': 'tm-results' });
+    box.appendChild(el('div', { 'class': 'tm-resulthead' },
+      n ? (n + (n === 1 ? ' match' : ' matches') + ' on this site for “' + q + '”')
+        : ('Nothing on this site matches “' + q + '”.')));
+
+    var ul = el('ul', { 'class': 'tm-resultlist' });
+    for (i = 0; i < hitC.length && i < 4; i++) {
+      ul.appendChild(el('li', { 'class': 'tm-resultitem' },
+        ctx.link('/c/' + hitC[i].id, hitC[i].name || hitC[i].id, 'tm-resultlink'),
+        el('span', { 'class': 'tm-resultkind' }, 'channel')));
+    }
+    for (i = 0; i < hitV.length && i < 8; i++) {
+      ul.appendChild(el('li', { 'class': 'tm-resultitem' },
+        ctx.link('/w/' + hitV[i].id, titleOf(hitV[i], 'Untitled'), 'tm-resultlink'),
+        el('span', { 'class': 'tm-resultkind' }, hitV[i].duration || '')));
+    }
+    if (ul.firstChild) { box.appendChild(ul); }
+
+    box.appendChild(el('div', { 'class': 'tm-resultfoot' },
+      'Titles and descriptions on this site only. ',
+      ctx.link('synth://search.verity.net/?q=' + encodeURIComponent(q),
+               'Search the whole network', 'tm-resultlink')));
+    return box;
+  }
+
   /* ---------- shared chrome ---------- */
 
   function header(ctx, data) {
@@ -139,12 +307,8 @@ window.SYNTH = window.SYNTH || {};
     search.appendChild(btn);
     search.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      while (results.firstChild) { results.removeChild(results.firstChild); }
       var q = input.value.replace(/^\s+|\s+$/g, '');
-      if (!q) { return; }
-      results.appendChild(document.createTextNode(
-        'Search is handled by the recommendation model. It has decided you want the home feed.'
-      ));
+      setKids(results, q ? [searchResults(ctx, data, q)] : []);
     });
     bar.appendChild(search);
     bar.appendChild(results);
@@ -224,6 +388,68 @@ window.SYNTH = window.SYNTH || {};
     return card;
   }
 
+  /* ---------- subscribing ----------
+   *
+   * This was a span reading "Subscribe" on every channel and every watch
+   * page, and it was the one dead control here that could simply be made
+   * true: both ClipVault sites are live in 2026, SYNTH.alerts already keeps
+   * subscriptions, and the browser's Feeds page already reads them back.
+   *
+   * The count next to it goes up by one when you press it, because that is
+   * what your subscription does to the count -- and it says "including you"
+   * as well, because at 418,000 subscribers rounded to three figures your
+   * one is arithmetically real and completely invisible.
+   */
+
+  function subsCount(ctx, ch, suffix) {
+    var node = el('div', { 'class': 'tm-chsubs' });
+    var base = counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420);
+    function paint() {
+      var on = isSubbed(ctx, ch.id);
+      setKids(node, [shortNum(base + (on ? 1 : 0)) + suffix + (on ? ' · including you' : '')]);
+    }
+    paint();
+    return { node: node, paint: paint };
+  }
+
+  function subscribeControl(ctx, data, ch, onChange) {
+    if (!alertsApi()) { return null; }     /* no store, no promise to make */
+    var wrap = el('div', { 'class': 'tm-subwrap' });
+    var btn = el('button', { type: 'button', 'class': 'tm-subbtn' });
+    var note = el('div', { 'class': 'tm-subnote' });
+
+    function paint() {
+      var on = isSubbed(ctx, ch.id);
+      setKids(btn, [on ? 'Subscribed' : 'Subscribe']);
+      btn.setAttribute('class', 'tm-subbtn' + (on ? ' tm-subbtn-on' : ''));
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.setAttribute('aria-label',
+        (on ? 'Subscribed to ' : 'Subscribe to ') + (ch.name || ch.id));
+      setKids(note, on
+        ? ['New uploads here are counted in ',
+           ctx.link('synth://feeds.verity.net/?t=sites', 'Feeds', 'tm-subnotelink'),
+           '.']
+        : []);
+    }
+
+    btn.addEventListener('click', function () {
+      var A = alertsApi();
+      if (!A) { return; }
+      var key = rowKey(ctx, ch.id);
+      swallow(isSubbed(ctx, ch.id)
+        ? A.unsubscribe('channel', key)
+        : A.subscribe('channel', key, 'watching'));
+      syncDomainWatch(ctx, data);
+      paint();
+      if (onChange) { onChange(); }
+    }, false);
+
+    paint();
+    wrap.appendChild(btn);
+    wrap.appendChild(note);
+    return wrap;
+  }
+
   /* ---------- live sidebar feed ---------- */
 
   function autoplayFeed(ctx, data, currentId) {
@@ -288,6 +514,199 @@ window.SYNTH = window.SYNTH || {};
     return box;
   }
 
+  /* ---------- the home feed ----------
+   *
+   * The chip row was six words in pill shapes: All, Verity County, Live,
+   * Auto-generated, From 2007, Music -- one of them highlighted as though it
+   * were selected, none of them doing anything, and four of them describing
+   * categories neither site actually has. They are now worked out from the
+   * videos on the page, so a chip exists only if it names a real division of
+   * what is here, and pressing it makes that division.
+   */
+
+  function durationSecs(v) {
+    var parts = String(v.duration || '').split(':'), n = 0, i;
+    if (!v.duration) { return 0; }
+    for (i = 0; i < parts.length; i++) { n = n * 60 + (parseInt(parts[i], 10) || 0); }
+    return n;
+  }
+
+  function videoText(v) {
+    return ((v.title || '') + ' ' + (v.description || '')).toLowerCase();
+  }
+
+  function videoMs(v) {
+    var t = Date.parse(v.at || '');
+    return isFinite(t) ? t : 0;
+  }
+
+  function filterDefs(vids) {
+    var cands = [
+      { id: 'short', label: 'Under a minute',
+        test: function (v) { var s = durationSecs(v); return s > 0 && s < 60; } },
+      { id: 'long', label: 'Over five minutes',
+        test: function (v) { return durationSecs(v) >= 300; } },
+      { id: 'human', label: 'Made by a person',
+        test: function (v) { return v.kind === 'human'; } },
+      { id: 'auto', label: 'Generated',
+        test: function (v) { return v.kind === 'bot' || v.kind === 'spam'; } },
+      { id: 'fire', label: 'The substation',
+        test: function (v) { return videoText(v).indexOf('substation') >= 0; } },
+      { id: 'week', label: 'This week',
+        test: function (v) {
+          var t = videoMs(v);
+          return t > 0 && (nowMs() - t) < 7 * 86400000;
+        } }
+    ];
+    var out = [{ id: 'all', label: 'All', test: null }], i, j, n;
+    for (i = 0; i < cands.length && out.length < 6; i++) {
+      n = 0;
+      for (j = 0; j < vids.length; j++) { if (cands[i].test(vids[j])) { n++; } }
+      /* A chip that selects everything, or nothing, is a lie in a pill. */
+      if (n > 0 && n < vids.length) { out.push(cands[i]); }
+    }
+    return out;
+  }
+
+  function feedSection(ctx, data) {
+    var vids = data.videos || [];
+    var defs = filterDefs(vids);
+    var box = el('section', { 'class': 'tm-feed' });
+    var head = el('h1', { 'class': 'tm-h1' }, 'Recommended');
+    var note = el('div', { 'class': 'tm-filternote' });
+    var grid = el('div', { 'class': 'tm-grid' });
+    var current = 'all';
+    var btns = [];
+    var i;
+
+    function draw() {
+      var def = null, list = [], j;
+      for (j = 0; j < defs.length; j++) { if (defs[j].id === current) { def = defs[j]; } }
+      for (j = 0; j < vids.length; j++) {
+        if (!def || !def.test || def.test(vids[j])) { list.push(vids[j]); }
+      }
+
+      setKids(head, [def && def.test ? def.label : 'Recommended']);
+      setKids(note, [def && def.test
+        ? (list.length + ' of ' + vids.length + ' on this page.')
+        : (vids.length + ' videos, in the order the model put them in.')]);
+
+      var kids = [];
+      for (j = 0; j < list.length; j++) {
+        kids.push(videoCard(ctx, data, list[j]));
+        if (j === 3) {
+          var mid = liveAd('box', ctx.site.domain + ':grid');
+          if (mid) { kids.push(el('div', { 'class': 'tm-card tm-card-ad' }, mid)); }
+        }
+      }
+      if (!kids.length) { kids.push(el('p', { 'class': 'tm-empty' }, 'Nothing on this page.')); }
+      setKids(grid, kids);
+
+      for (j = 0; j < btns.length; j++) {
+        var on = defs[j].id === current;
+        btns[j].setAttribute('class', 'tm-chip' + (on ? ' tm-chip-on' : ''));
+        btns[j].setAttribute('aria-pressed', on ? 'true' : 'false');
+      }
+    }
+
+    /* One chip is not a filter row, it is a label. */
+    if (defs.length > 1) {
+      var chipRow = el('div', { 'class': 'tm-chips', role: 'group', 'aria-label': 'Filter this page' });
+      for (i = 0; i < defs.length; i++) {
+        btns.push((function (def) {
+          var b = el('button', { type: 'button', 'class': 'tm-chip' }, def.label);
+          b.addEventListener('click', function () { current = def.id; draw(); }, false);
+          chipRow.appendChild(b);
+          return b;
+        }(defs[i])));
+      }
+      box.appendChild(chipRow);
+    }
+
+    box.appendChild(head);
+    box.appendChild(note);
+    box.appendChild(grid);
+    draw();
+    return box;
+  }
+
+  /* What subscribing got you: the channels you follow here, and what they
+   * have put out. Derived from the same two lists the rest of the page is
+   * drawn from, so it cannot go stale. */
+  function subscriptionShelf(ctx, data) {
+    var chans = subbedChannels(ctx, data);
+    if (!chans.length) { return null; }
+
+    var sec = el('section', { 'class': 'tm-shelf' });
+    sec.appendChild(el('h2', { 'class': 'tm-h2' }, 'From your subscriptions'));
+
+    var line = el('p', { 'class': 'tm-shelfnote' }, chans.length === 1
+      ? 'One channel here: '
+      : (chans.length + ' channels here: '));
+    var i;
+    for (i = 0; i < chans.length; i++) {
+      line.appendChild(ctx.link('/c/' + chans[i].id, chans[i].name || chans[i].id, 'tm-chlink'));
+      if (i < chans.length - 1) { line.appendChild(el('span', { 'class': 'tm-dot' }, '·')); }
+    }
+    sec.appendChild(line);
+
+    var list = [], j;
+    for (i = 0; i < chans.length; i++) {
+      var mine = videosOf(data, chans[i].id);
+      for (j = 0; j < mine.length; j++) { list.push(mine[j]); }
+    }
+    list.sort(function (a, b) { return videoMs(b) - videoMs(a); });
+
+    if (!list.length) {
+      sec.appendChild(el('p', { 'class': 'tm-empty' },
+        'Nothing from them on this page. The upload queue is still running.'));
+      return sec;
+    }
+    var grid = el('div', { 'class': 'tm-grid' });
+    for (i = 0; i < list.length && i < 6; i++) {
+      grid.appendChild(videoCard(ctx, data, list[i]));
+    }
+    sec.appendChild(grid);
+    return sec;
+  }
+
+  /* Where Save puts things. */
+  function savedShelf(ctx, data) {
+    if (!savedVideos(ctx, data).length) { return null; }
+
+    var sec = el('section', { 'class': 'tm-shelf' });
+    sec.appendChild(el('h2', { 'class': 'tm-h2' }, 'Saved'));
+    sec.appendChild(el('p', { 'class': 'tm-shelfnote' },
+      'Kept by this browser. ClipVault is not told and has no list of its own.'));
+    var grid = el('div', { 'class': 'tm-grid' });
+
+    function removeBtn(v) {
+      var b = el('button', {
+        type: 'button', 'class': 'tm-unsave',
+        'aria-label': 'Remove ' + titleOf(v, 'this video') + ' from Saved'
+      }, 'Remove');
+      b.addEventListener('click', function () { setSaved(ctx, v.id, false); draw(); }, false);
+      return b;
+    }
+
+    function draw() {
+      var rows = savedVideos(ctx, data), kids = [], i, card;
+      for (i = 0; i < rows.length && i < 8; i++) {
+        card = videoCard(ctx, data, rows[i]);
+        card.appendChild(removeBtn(rows[i]));
+        kids.push(card);
+      }
+      if (!kids.length) {
+        kids.push(el('p', { 'class': 'tm-empty' }, 'Nothing saved here now.'));
+      }
+      setKids(grid, kids);
+    }
+
+    draw();
+    sec.appendChild(grid);
+    return sec;
+  }
+
   /* ---------- pages ---------- */
 
   function pageIndex(ctx, data) {
@@ -325,33 +744,118 @@ window.SYNTH = window.SYNTH || {};
     }
     if (mineHost) { main.appendChild(mineHost); }
 
-    var chipRow = el('div', { 'class': 'tm-chips' });
-    var chipNames = ['All', 'Verity County', 'Live', 'Auto-generated', 'From 2007', 'Music'];
-    for (var c = 0; c < chipNames.length; c++) {
-      chipRow.appendChild(el('span', {
-        'class': 'tm-chip' + (c === 0 ? ' tm-chip-on' : '')
-      }, chipNames[c]));
-    }
-    main.appendChild(chipRow);
+    var subs = subscriptionShelf(ctx, data);
+    if (subs) { main.appendChild(subs); }
+    var kept = savedShelf(ctx, data);
+    if (kept) { main.appendChild(kept); }
 
-    main.appendChild(el('h1', { 'class': 'tm-h1' }, 'Recommended'));
-
-    var grid = el('div', { 'class': 'tm-grid' });
-    var vids = data.videos || [], i;
-    for (i = 0; i < vids.length; i++) {
-      grid.appendChild(videoCard(ctx, data, vids[i]));
-      if (i === 3) {
-        var mid = liveAd('box', ctx.site.domain + ':grid');
-        if (mid) { grid.appendChild(el('div', { 'class': 'tm-card tm-card-ad' }, mid)); }
-      }
-    }
-    main.appendChild(grid);
+    main.appendChild(feedSection(ctx, data));
 
     shell.appendChild(main);
     shell.appendChild(autoplayFeed(ctx, data, null));
     wrap.appendChild(shell);
     wrap.appendChild(footer(ctx, data));
     ctx.mount.appendChild(wrap);
+  }
+
+  /* ---------- the row under a video ----------
+   *
+   * Five pills that were five spans: a like count you could not move, a
+   * thumb-down, Share, Save, and "Report · queued" which announced a queue
+   * nothing had been put in. All five keep a record now, and the line under
+   * the row says what that record is and where it went -- which on a
+   * platform with no accounts and nobody reading reports is the honest half
+   * of the feature.
+   */
+  function watchActions(ctx, data, v, likes) {
+    var box = el('div', { 'class': 'tm-actbox' });
+    var row = el('div', { 'class': 'tm-actions' });
+    var panel = el('div', { 'class': 'tm-panel', role: 'status' });
+    var open = '';
+
+    function show(key, kids) { open = key; setKids(panel, kids); }
+    function clearIf(key) { if (open === key) { open = ''; setKids(panel, []); } }
+    function toggle(key, kids) {
+      if (open === key) { clearIf(key); } else { show(key, kids); }
+    }
+
+    var up = el('button', { type: 'button', 'class': 'tm-act' });
+    var down = el('button', { type: 'button', 'class': 'tm-act' });
+    var share = el('button', { type: 'button', 'class': 'tm-act' }, 'Share');
+    var save = el('button', { type: 'button', 'class': 'tm-act' });
+    var report = el('button', { type: 'button', 'class': 'tm-act' }, 'Report');
+
+    function paintVotes() {
+      var vote = voteOf(ctx, v.id);
+      setKids(up, ['▲ ' + shortNum(likes + (vote === 'up' ? 1 : 0))]);
+      setKids(down, ['▼']);
+      up.setAttribute('class', 'tm-act' + (vote === 'up' ? ' tm-act-on' : ''));
+      up.setAttribute('aria-pressed', vote === 'up' ? 'true' : 'false');
+      up.setAttribute('aria-label', 'Like this video');
+      down.setAttribute('class', 'tm-act' + (vote === 'down' ? ' tm-act-on' : ''));
+      down.setAttribute('aria-pressed', vote === 'down' ? 'true' : 'false');
+      down.setAttribute('aria-label', 'Dislike this video');
+    }
+
+    function paintSave() {
+      var on = isSaved(ctx, v.id);
+      setKids(save, [on ? 'Saved' : 'Save']);
+      save.setAttribute('class', 'tm-act' + (on ? ' tm-act-on' : ''));
+      save.setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+
+    up.addEventListener('click', function () {
+      var on = voteOf(ctx, v.id) !== 'up';
+      setVote(ctx, v.id, on ? 'up' : '');
+      paintVotes();
+      if (on) { show('vote', ['Counted. The number on the button is the site’s, plus you.']); }
+      else { clearIf('vote'); }
+    }, false);
+
+    down.addEventListener('click', function () {
+      var on = voteOf(ctx, v.id) !== 'down';
+      setVote(ctx, v.id, on ? 'down' : '');
+      paintVotes();
+      if (on) { show('vote', ['Kept. This one is not shown to anybody, including you.']); }
+      else { clearIf('vote'); }
+    }, false);
+
+    share.addEventListener('click', function () {
+      toggle('share', [
+        'The address is ',
+        ctx.link('/w/' + v.id, 'synth://' + ctx.site.domain + '/w/' + v.id, 'tm-panellink'),
+        '. There is nowhere off this network to send it to, and nothing here ' +
+        'that can copy it for you.'
+      ]);
+    }, false);
+
+    save.addEventListener('click', function () {
+      var on = !isSaved(ctx, v.id);
+      setSaved(ctx, v.id, on);
+      paintSave();
+      if (on) {
+        show('save', ['Kept on the ', ctx.link('/', 'front page', 'tm-panellink'),
+                      ' under Saved, by this browser and nowhere else.']);
+      } else { clearIf('save'); }
+    }, false);
+
+    report.addEventListener('click', function () {
+      var n = counter(ctx.site.domain + ':reports:' + v.id,
+                      400 + (hash32(String(v.id)) % 9000), 140);
+      toggle('report', ['Queued. ' + commas(n) + ' reports are ahead of yours on ' +
+                        'this site, and nothing on this page says who reads one.']);
+    }, false);
+
+    paintVotes();
+    paintSave();
+    row.appendChild(up);
+    row.appendChild(down);
+    row.appendChild(share);
+    row.appendChild(save);
+    row.appendChild(report);
+    box.appendChild(row);
+    box.appendChild(panel);
+    return box;
   }
 
   function pageWatch(ctx, data, id) {
@@ -373,11 +877,16 @@ window.SYNTH = window.SYNTH || {};
     ));
     player.appendChild(stage);
 
-    var scrub = el('div', { 'class': 'tm-scrub' });
+    /* The transport is a picture of a transport. There is no file behind it
+     * and there never was, which the stage says in so many words, so it is
+     * marked as decoration -- aria-hidden here, pointer-events off in the
+     * skin -- rather than sitting there inviting a press that cannot do
+     * anything. */
+    var scrub = el('div', { 'class': 'tm-scrub', 'aria-hidden': 'true' });
     var fill = el('div', { 'class': 'tm-scrubfill' });
     scrub.appendChild(fill);
     player.appendChild(scrub);
-    var controls = el('div', { 'class': 'tm-controls' });
+    var controls = el('div', { 'class': 'tm-controls', 'aria-hidden': 'true' });
     controls.appendChild(el('span', { 'class': 'tm-ctl' }, '▶'));
     controls.appendChild(el('span', { 'class': 'tm-ctl' }, '⏭'));
     controls.appendChild(el('span', { 'class': 'tm-time' }, '0:00 / ' + (v.duration || '0:00')));
@@ -401,13 +910,7 @@ window.SYNTH = window.SYNTH || {};
     if (vb) { stats.appendChild(vb); }
     main.appendChild(stats);
 
-    var actions = el('div', { 'class': 'tm-actions' });
-    actions.appendChild(el('span', { 'class': 'tm-act' }, '▲ ' + shortNum(likes)));
-    actions.appendChild(el('span', { 'class': 'tm-act' }, '▼'));
-    actions.appendChild(el('span', { 'class': 'tm-act' }, 'Share'));
-    actions.appendChild(el('span', { 'class': 'tm-act' }, 'Save'));
-    actions.appendChild(el('span', { 'class': 'tm-act tm-act-dim' }, 'Report · queued'));
-    main.appendChild(actions);
+    main.appendChild(watchActions(ctx, data, v, likes));
 
     /* channel strip */
     var ch = findChannel(data, v.channelId);
@@ -423,11 +926,11 @@ window.SYNTH = window.SYNTH || {};
       var cb2 = badge(ch.kind);
       if (cb2) { nm.appendChild(cb2); }
       cm.appendChild(nm);
-      cm.appendChild(el('div', { 'class': 'tm-chsubs' }, shortNum(
-        counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420)
-      ) + ' subscribers'));
+      var count = subsCount(ctx, ch, ' subscribers');
+      cm.appendChild(count.node);
       strip.appendChild(cm);
-      strip.appendChild(el('span', { 'class': 'tm-subbtn' }, 'Subscribe'));
+      var sub = subscribeControl(ctx, data, ch, count.paint);
+      if (sub) { strip.appendChild(sub); }
       main.appendChild(strip);
     }
 
@@ -529,8 +1032,8 @@ window.SYNTH = window.SYNTH || {};
     var chb = badge(ch.kind);
     if (chb) { h1.appendChild(chb); }
     hm.appendChild(h1);
-    hm.appendChild(el('div', { 'class': 'tm-chsubs' },
-      shortNum(counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420)) + ' subscribers'));
+    var count = subsCount(ctx, ch, ' subscribers');
+    hm.appendChild(count.node);
     if (S.live && has(S.live.online)) {
       hm.appendChild(el('div', { 'class': 'tm-chonline' },
         commas(S.live.online(ctx.site.domain + ':ch:' + ch.id, 30, 2400)) + ' viewers on this channel right now'));
@@ -539,7 +1042,8 @@ window.SYNTH = window.SYNTH || {};
     about.appendChild(parseBody(ch.about || ''));
     hm.appendChild(about);
     head.appendChild(hm);
-    head.appendChild(el('span', { 'class': 'tm-subbtn' }, 'Subscribe'));
+    var sub = subscribeControl(ctx, data, ch, count.paint);
+    if (sub) { head.appendChild(sub); }
     wrap.appendChild(head);
 
     var ad = liveAd('banner', ctx.site.domain + ':ch:' + ch.id);

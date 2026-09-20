@@ -997,3 +997,283 @@
 .skin-phpbb-blue .modlog-nothing,
 .skin-ezboard-grey .modlog-nothing,
 .skin-softboard .modlog-nothing { opacity: 0.72; }
+
+/* =====================================================================
+   THE PAGES BEHIND THE NAV BAR
+
+   FAQ, Search, Memberlist, Usergroups, Register, Profile, Log in sat at
+   the top of every board page as spans that did nothing. They are links
+   now, and these are the pages they go to: a board FAQ, a search over the
+   board's own threads, the memberlist derived from the people in them,
+   and three pages that explain what this board will and will not let you
+   do -- which is a different answer on a board that closed registration
+   in 2017 than on one that never closed anything.
+
+   Everything here is scoped to the three forum skins and reuses their own
+   furniture (.tbar, .flist, .post, .blank) wherever it can, so a page that
+   is not a thread still looks like it belongs to the board it is on.
+   ===================================================================== */
+
+/* The nav items are anchors now. phpbb-blue's old #b9d6ea was 3.6:1 on the
+   top of the banner gradient, which was survivable as decoration and is not
+   for something you are meant to press. #e3eef8 is 4.6:1 on #1a6ea8. */
+.skin-phpbb-blue .fnav .navitem { color: #e3eef8; text-decoration: none; }
+.skin-phpbb-blue .fnav .navitem:hover,
+.skin-phpbb-blue .fnav .navitem:focus { color: #ffffff; text-decoration: underline; }
+.skin-ezboard-grey .fnav .navitem { color: #ffffcc; text-decoration: none; }
+.skin-ezboard-grey .fnav .navitem:hover,
+.skin-ezboard-grey .fnav .navitem:focus { color: #ffffff; text-decoration: underline; }
+.skin-softboard .fnav .navitem:hover,
+.skin-softboard .fnav .navitem:focus { text-decoration: underline; }
+
+/* --- panels of prose ---------------------------------------------------- */
+
+.skin-phpbb-blue .fpanel {
+  border: 1px solid #7b98ab;
+  background: #ffffff;
+  padding: 10px 12px;
+  margin: 0 0 10px;
+}
+.skin-phpbb-blue .fsec {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #10456d;
+}
+.skin-phpbb-blue .fpara { margin: 0 0 .7em; font-size: 12px; }
+.skin-phpbb-blue .fpara:last-child { margin-bottom: 0; }
+
+.skin-ezboard-grey .fpanel {
+  border: 2px solid #999999;
+  background: #ffffff;
+  padding: 8px 9px;
+  margin: 0 0 8px;
+}
+.skin-ezboard-grey .fsec { margin: 0 0 5px; font-size: 12px; color: #111111; }
+.skin-ezboard-grey .fpara { margin: 0 0 .6em; font-size: 11px; }
+.skin-ezboard-grey .fpara:last-child { margin-bottom: 0; }
+
+.skin-softboard .fpanel {
+  border-bottom: 1px solid #e3e5e8;
+  padding: 14px 16px;
+  margin: 0;
+}
+.skin-softboard .fsec {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b6f76;
+}
+.skin-softboard .fpara { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
+.skin-softboard .fpara:last-child { margin-bottom: 0; }
+
+/* --- search ------------------------------------------------------------- */
+
+.skin-phpbb-blue .fsearch,
+.skin-ezboard-grey .fsearch,
+.skin-softboard .fsearch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.skin-softboard .fsearch { padding: 12px 16px 0; }
+
+.skin-phpbb-blue .fsearch-input,
+.skin-ezboard-grey .fsearch-input,
+.skin-softboard .fsearch-input {
+  flex: 1 1 150px;
+  min-width: 0;
+  padding: 5px 7px;
+  font: inherit;
+  font-size: 13px;
+  color: #111111;
+  background: #ffffff;
+}
+.skin-phpbb-blue .fsearch-input { border: 1px solid #7b98ab; }
+.skin-ezboard-grey .fsearch-input { border: 2px solid #999999; }
+.skin-softboard .fsearch-input { border: 1px solid #d8dbe0; border-radius: 8px; padding: 9px 12px; }
+
+.skin-phpbb-blue .fsearch-go,
+.skin-ezboard-grey .fsearch-go,
+.skin-softboard .fsearch-go {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 5px 12px;
+}
+/* #10456d on #e6edf3 is 9.2:1. */
+.skin-phpbb-blue .fsearch-go {
+  border: 1px solid #a9b8c2;
+  background: linear-gradient(#e6edf3, #c7d3de);
+  color: #10456d;
+  font-weight: bold;
+}
+.skin-ezboard-grey .fsearch-go {
+  border: 2px solid #333333;
+  background: #dddddd;
+  color: #111111;
+}
+/* #ffffff on #0a62c4 is 5.9:1. */
+.skin-softboard .fsearch-go {
+  border: 0;
+  border-radius: 8px;
+  background: #0a62c4;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 16px;
+}
+
+.skin-phpbb-blue .fhit-count,
+.skin-ezboard-grey .fhit-count { font-size: 11px; margin: 0 0 8px; color: #44545f; }
+.skin-softboard .fhit-count { font-size: 14px; color: #6b6f76; padding: 10px 16px 0; }
+
+.skin-phpbb-blue .fhit,
+.skin-ezboard-grey .fhit {
+  border-bottom: 1px solid #d6dfe6;
+  padding: 6px 4px;
+}
+.skin-ezboard-grey .fhit { border-bottom: 1px solid #999999; }
+.skin-softboard .fhit {
+  border-bottom: 1px solid #e3e5e8;
+  padding: 12px 16px;
+}
+
+.skin-phpbb-blue .fhit-snip,
+.skin-ezboard-grey .fhit-snip {
+  font-size: 11px;
+  color: #44545f;
+  margin-top: 3px;
+  overflow-wrap: break-word;
+}
+.skin-softboard .fhit-snip {
+  font-size: 14px;
+  color: #6b6f76;
+  margin-top: 4px;
+  overflow-wrap: break-word;
+}
+
+/* --- memberlist and groups ---------------------------------------------- */
+
+.skin-phpbb-blue .avatar.tiny,
+.skin-ezboard-grey .avatar.tiny {
+  width: 24px; height: 24px; line-height: 24px;
+  margin: 0; font-size: 10px;
+}
+.skin-softboard .avatar.tiny { width: 26px; height: 26px; font-size: 11px; }
+
+.skin-phpbb-blue .fmembers .col-forum,
+.skin-ezboard-grey .fmembers .col-forum { width: auto; }
+
+/* On softboard the cells are one grey line under the name, so a bare "341"
+   needs saying what it is. */
+.skin-softboard .fmembers .col-num::after { content: " posts"; }
+
+/* The topic tables drop their number columns below 620px because a topic row
+   has five of them. A member row has three, and the post count is half of
+   what a memberlist is for, so it stays. */
+@media (max-width: 620px) {
+  .skin-phpbb-blue .fmembers .col-num,
+  .skin-ezboard-grey .fmembers .col-num { display: table-cell; }
+}
+
+.skin-phpbb-blue .fgroup { margin: 0 0 10px; }
+.skin-ezboard-grey .fgroup { margin: 0 0 8px; }
+.skin-softboard .fgroup { padding: 12px 16px; border-bottom: 1px solid #e3e5e8; }
+
+.skin-phpbb-blue .fgroup-head {
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: #10456d;
+}
+.skin-ezboard-grey .fgroup-head { margin: 0 0 3px; font-size: 11px; color: #111111; }
+.skin-softboard .fgroup-head { margin: 0 0 6px; font-size: 15px; font-weight: 600; }
+
+.skin-phpbb-blue .fgroup-body,
+.skin-ezboard-grey .fgroup-body { font-size: 11px; overflow-wrap: break-word; }
+.skin-softboard .fgroup-body { font-size: 15px; overflow-wrap: break-word; line-height: 1.6; }
+
+/* --- the watch setting on the record page --------------------------------
+ * Four real buttons wired to SYNTH.alerts. They are the only control on
+ * these pages that changes anything, which is as it should be: everything
+ * else a board would have offered a guest was a lie about an account.
+ */
+.skin-phpbb-blue .fwatch,
+.skin-ezboard-grey .fwatch,
+.skin-softboard .fwatch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 6px;
+}
+
+.skin-phpbb-blue .fwatch-btn,
+.skin-ezboard-grey .fwatch-btn,
+.skin-softboard .fwatch-btn {
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+.skin-phpbb-blue .fwatch-btn {
+  border: 1px solid #a9b8c2;
+  background: #e6edf3;
+  color: #10456d;
+}
+/* #ffffff on #10456d is 10.0:1. */
+.skin-phpbb-blue .fwatch-btn.is-on {
+  background: #10456d;
+  border-color: #10456d;
+  color: #ffffff;
+  font-weight: bold;
+}
+.skin-ezboard-grey .fwatch-btn {
+  border: 2px solid #333333;
+  background: #dddddd;
+  color: #111111;
+}
+.skin-ezboard-grey .fwatch-btn.is-on {
+  background: #333333;
+  color: #ffffff;
+  font-weight: bold;
+}
+.skin-softboard .fwatch-btn {
+  border: 1px solid #d8dbe0;
+  border-radius: 999px;
+  background: #f2f4f7;
+  color: #1c1c1e;
+  font-size: 14px;
+  padding: 7px 14px;
+}
+.skin-softboard .fwatch-btn.is-on {
+  background: #0a62c4;
+  border-color: #0a62c4;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.skin-phpbb-blue .fwatch-now,
+.skin-ezboard-grey .fwatch-now { font-size: 11px; }
+.skin-softboard .fwatch-now { font-size: 14px; }
+
+@media (max-width: 440px) {
+  /* Four watch buttons and a search box both have to fit 360px with no
+     sideways scroll, so they wrap rather than shrink their text. */
+  .skin-phpbb-blue .fwatch-btn,
+  .skin-ezboard-grey .fwatch-btn { padding: 4px 8px; }
+  .skin-softboard .fwatch-btn { padding: 7px 12px; font-size: 13px; }
+  .skin-softboard .fpanel { padding: 12px; }
+  .skin-softboard .fsearch,
+  .skin-softboard .fhit,
+  .skin-softboard .fhit-count,
+  .skin-softboard .fgroup { padding-left: 12px; padding-right: 12px; }
+  /* The memberlist's last column is the one that can go; the name, the
+     title and the post count are the three things a memberlist is for --
+     which is also why softboard's hidden count comes back here. */
+  .skin-phpbb-blue .fmembers .col-last,
+  .skin-ezboard-grey .fmembers .col-last { display: none; }
+  .skin-softboard .fmembers .col-num { display: block; }
+}

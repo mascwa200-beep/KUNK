@@ -32,7 +32,6 @@
 .skin-bluebird .sn-nav { margin-top: 5px; font-size: 12px; }
 .skin-bluebird .sn-nav a,
 .skin-bluebird .sn-nav a:visited { color: #d8ecfa; margin-right: 12px; }
-.skin-bluebird .sn-nav .navitem { color: #bcdef5; margin-right: 12px; }
 .skin-bluebird .sn-here { font-size: 12px; color: #e8f4fd; margin-top: 3px; }
 
 .skin-bluebird .sn-layout {
@@ -74,7 +73,6 @@
   color: #16699f; font-size: 12px; font-weight: bold;
   padding: 4px 12px; margin: 0 6px 4px 0; background: #ffffff; cursor: default;
 }
-.skin-bluebird .btn.dis { border-color: #ccd6dd; color: #657786; }
 
 .skin-bluebird .friends {
   margin-top: 14px; border: 1px solid #e1e8ed; border-radius: 6px; padding: 12px;
@@ -94,10 +92,6 @@
   border: 1px solid #e1e8ed; border-radius: 6px; padding: 10px; margin-bottom: 12px;
 }
 .skin-bluebird .compose-label { font-size: 13px; color: #657786; margin-bottom: 6px; }
-.skin-bluebird .compose-box {
-  display: block; height: 42px; border: 1px solid #ccd6dd; border-radius: 4px;
-  background: #f5f8fa; margin-bottom: 8px;
-}
 
 .skin-bluebird .post {
   border-bottom: 1px solid #e1e8ed; padding: 12px 2px;
@@ -232,7 +226,6 @@
 .skin-myspace-black .sn-nav { font-size: 10px; margin-top: 3px; }
 .skin-myspace-black .sn-nav a,
 .skin-myspace-black .sn-nav a:visited { color: #000000; margin-right: 9px; }
-.skin-myspace-black .sn-nav .navitem { color: #4d2200; margin-right: 9px; }
 .skin-myspace-black .sn-here { font-size: 10px; color: #331500; }
 
 .skin-myspace-black .sn-layout {
@@ -274,7 +267,6 @@
   font-size: 10px; padding: 2px 7px; margin: 0 4px 3px 0;
   border: 1px solid #ffcc00; text-transform: uppercase; cursor: default;
 }
-.skin-myspace-black .btn.dis { background: #333333; color: #888888; border-color: #555555; }
 
 .skin-myspace-black .friends {
   background: #0a0a0a; border: 2px solid #00c0ff; padding: 6px;
@@ -300,9 +292,6 @@
   background: #0a0a0a; border: 2px solid #333333; padding: 5px; margin-bottom: 7px;
 }
 .skin-myspace-black .compose-label { color: #ffcc00; font-size: 10px; margin-bottom: 4px; }
-.skin-myspace-black .compose-box {
-  display: block; height: 34px; background: #1a1a1a; border: 1px inset #555555; margin-bottom: 5px;
-}
 
 .skin-myspace-black .post {
   background: #0a0a0a; border: 1px solid #333333;
@@ -512,7 +501,7 @@
   gap: 4px 17px;
   font-size: 14px;
 }
-.skin-feedslate .sn-nav .navitem { color: #8b949e; white-space: nowrap; }
+.skin-feedslate .sn-nav a { white-space: nowrap; }
 .skin-feedslate .sn-here,
 .skin-feedslate .here { color: #e7e9ea; font-weight: 600; }
 .skin-feedslate .crumbline { padding: 9px 15px 0; font-size: 13px; color: #8b949e; }
@@ -524,15 +513,13 @@
 
 /* --- compose ----------------------------------------------------------- */
 
-.skin-feedslate .sn-compose,
-.skin-feedslate .compose-box {
+.skin-feedslate .sn-compose {
   padding: 13px 15px;
   border-bottom: 1px solid #262c33;
   background: none;
 }
 .skin-feedslate .compose-label { color: #8b949e; font-size: 15px; }
 .skin-feedslate .sn-compose textarea,
-.skin-feedslate .compose-box textarea,
 .skin-feedslate .sn-compose input[type="text"] {
   width: 100%;
   background: #1d2228;
@@ -759,7 +746,6 @@
   .skin-feedslate .post,
   .skin-feedslate .pcard,
   .skin-feedslate .sn-compose,
-  .skin-feedslate .compose-box,
   .skin-feedslate .profile-head,
   .skin-feedslate .ph-row,
   .skin-feedslate .sn-side,
@@ -859,3 +845,257 @@
 .skin-bluebird .p-note.is-pending { background: none; border-style: dashed; }
 .skin-bluebird .p-note.is-pending .p-note-head,
 .skin-bluebird .p-note.is-pending .p-note-body { color: #5b6670; font-weight: normal; }
+
+/* =====================================================================
+   the pages the dead controls now go to
+
+   Search, Members and the account page did not exist when this file was
+   written, because the controls that should have led to them led nowhere.
+   Three skins, three eras, one set of shapes: a page head, a paragraph
+   that is allowed to be a paragraph, a row of results, a row of people.
+
+   Every rule below is scoped under its skin class like everything above
+   it, and everything is written to hold at 360px -- which for the result
+   rows means min-width: 0 on the flex children, because a long handle
+   next to a long display name is exactly what pushes a row off the right
+   edge of a phone and nothing catches it on a desktop.
+   ===================================================================== */
+
+/* --- bluebird ----------------------------------------------------------- */
+
+.skin-bluebird .sn-prose { max-width: 42em; }
+.skin-bluebird .sn-pagehead { font-size: 17px; margin: 2px 0 7px; }
+.skin-bluebird .sn-lede,
+.skin-bluebird .sn-count { color: #5b6670; font-size: 13px; margin: 0 0 12px; }
+.skin-bluebird .sn-say { margin: 0 0 11px; }
+.skin-bluebird .sn-list { margin: 0 0 12px; padding-left: 20px; }
+.skin-bluebird .sn-list li { margin-bottom: 5px; }
+.skin-bluebird .sn-subhead {
+  font-size: 13px; font-weight: bold; margin: 16px 0 7px; color: #14171a;
+}
+.skin-bluebird .sn-searchform { display: flex; gap: 6px; margin: 0 0 12px; }
+.skin-bluebird .sn-q {
+  flex: 1 1 auto; min-width: 0; font: inherit; color: #14171a;
+  background: #ffffff; border: 1px solid #ccd6dd; border-radius: 4px;
+  padding: 6px 8px;
+}
+.skin-bluebird button.btn,
+.skin-bluebird a.btn { cursor: pointer; font-family: inherit; line-height: 1.45; }
+.skin-bluebird a.btn,
+.skin-bluebird a.btn:visited { color: #16699f; text-decoration: none; }
+.skin-bluebird a.btn:hover { text-decoration: underline; }
+.skin-bluebird button.btn { background: #ffffff; font-size: 12px; font-weight: bold; }
+/* #ffffff on #16699f is 5.9:1. */
+.skin-bluebird .btn.is-on { background: #16699f; border-color: #16699f; color: #ffffff; }
+.skin-bluebird .sn-hit { border-bottom: 1px solid #e1e8ed; padding: 9px 2px; }
+.skin-bluebird .sn-hit-head { font-size: 13px; }
+.skin-bluebird .sn-hit-body { color: #3d4650; font-size: 13px; overflow-wrap: break-word; }
+.skin-bluebird .sn-elsewhere {
+  margin: 16px 0 4px; padding-top: 10px; border-top: 1px solid #e1e8ed; font-size: 13px;
+}
+.skin-bluebird .mcell {
+  display: block; border-bottom: 1px solid #e1e8ed; padding: 8px 2px; color: #14171a;
+}
+.skin-bluebird .mcell:hover { text-decoration: none; background: #f5f8fa; }
+.skin-bluebird .mrow { display: flex; align-items: center; gap: 10px; }
+.skin-bluebird .mid { min-width: 0; flex: 1 1 auto; }
+.skin-bluebird .mname { display: block; font-weight: bold; font-size: 14px; }
+.skin-bluebird .mhandle,
+.skin-bluebird .mcount { display: block; color: #5b6670; font-size: 12px; }
+.skin-bluebird .mfollow,
+.skin-bluebird .p-following {
+  color: #16699f; font-size: 11px; border: 1px solid #c6e0f5;
+  border-radius: 999px; padding: 0 7px; white-space: nowrap;
+}
+.skin-bluebird .sn-replyrow { border-bottom: 1px solid #e1e8ed; padding: 8px 0; }
+.skin-bluebird .sn-replyon { font-size: 12px; color: #5b6670; margin-bottom: 3px; }
+.skin-bluebird .sn-closed {
+  border: 1px solid #e1e8ed; border-radius: 6px; padding: 11px; margin-bottom: 12px;
+}
+.skin-bluebird .sn-closed-note { font-size: 13px; color: #3d4650; margin-bottom: 9px; }
+.skin-bluebird .fcountlink { font-weight: normal; }
+.skin-bluebird .p-note-btn {
+  background: none; font: inherit; font-size: 11px; cursor: pointer;
+}
+.skin-bluebird .p-note-ask.is-rated { display: block; }
+
+/* --- myspace-black ------------------------------------------------------ */
+
+.skin-myspace-black .sn-prose { max-width: 44em; }
+.skin-myspace-black .sn-pagehead {
+  color: #ffcc00; font-size: 14px; margin: 2px 0 6px; text-transform: uppercase;
+}
+.skin-myspace-black .sn-lede,
+.skin-myspace-black .sn-count { color: #cccccc; font-size: 11px; margin: 0 0 9px; }
+.skin-myspace-black .sn-say { margin: 0 0 9px; color: #e8e8e8; }
+.skin-myspace-black .sn-list { margin: 0 0 10px; padding-left: 18px; }
+.skin-myspace-black .sn-list li { margin-bottom: 4px; }
+.skin-myspace-black .sn-subhead {
+  color: #00c0ff; font-size: 11px; font-weight: bold; margin: 13px 0 5px;
+  text-transform: uppercase;
+}
+.skin-myspace-black .sn-searchform { display: flex; gap: 5px; margin: 0 0 10px; }
+.skin-myspace-black .sn-q {
+  flex: 1 1 auto; min-width: 0; font: inherit; color: #e8e8e8;
+  background: #1a1a1a; border: 1px inset #555555; padding: 4px 6px;
+}
+.skin-myspace-black button.btn,
+.skin-myspace-black a.btn { cursor: pointer; font-family: inherit; }
+.skin-myspace-black a.btn,
+.skin-myspace-black a.btn:visited { color: #000000; text-decoration: none; }
+.skin-myspace-black a.btn:hover { color: #000000; text-decoration: underline; }
+.skin-myspace-black button.btn {
+  font-size: 10px; font-weight: bold; text-transform: uppercase;
+}
+.skin-myspace-black .btn.is-on { background: #ffcc00; border-color: #ff6600; }
+.skin-myspace-black .sn-hit {
+  background: #0a0a0a; border: 1px solid #333333; border-left: 3px solid #00c0ff;
+  padding: 5px 6px; margin-bottom: 5px;
+}
+.skin-myspace-black .sn-hit-head { font-size: 10px; }
+.skin-myspace-black .sn-hit-body { color: #dddddd; overflow-wrap: break-word; }
+.skin-myspace-black .sn-elsewhere {
+  margin-top: 12px; border-top: 1px dotted #444444; padding-top: 8px; font-size: 10px;
+}
+.skin-myspace-black .mcell {
+  display: block; background: #0a0a0a; border: 1px solid #222222;
+  border-left: 3px solid #ff6600; padding: 4px 6px; margin-bottom: 4px;
+  color: #e8e8e8; text-decoration: none;
+}
+.skin-myspace-black .mcell:hover { border-color: #ffcc00; color: #e8e8e8; }
+.skin-myspace-black .mrow { display: flex; align-items: center; gap: 7px; }
+.skin-myspace-black .mid { min-width: 0; flex: 1 1 auto; }
+.skin-myspace-black .mname { display: block; font-weight: bold; color: #ffcc00; }
+.skin-myspace-black .mhandle { display: block; color: #00c0ff; font-size: 10px; }
+.skin-myspace-black .mcount { display: block; color: #999999; font-size: 10px; }
+.skin-myspace-black .mfollow,
+.skin-myspace-black .p-following {
+  color: #ffcc00; font-size: 9px; text-transform: uppercase; white-space: nowrap;
+}
+.skin-myspace-black .sn-replyrow {
+  border-left: 3px solid #00c0ff; background: #0a0a0a; border-top: 1px solid #222222;
+  padding: 4px 6px; margin-bottom: 5px;
+}
+.skin-myspace-black .sn-replyon { font-size: 10px; color: #999999; margin-bottom: 2px; }
+.skin-myspace-black .sn-closed {
+  background: #0a0a0a; border: 2px solid #333333; padding: 6px; margin-bottom: 7px;
+}
+.skin-myspace-black .sn-closed-note { color: #dddddd; margin-bottom: 6px; }
+.skin-myspace-black .fcountlink { font-weight: normal; }
+.skin-myspace-black .p-note-btn { background: none; font: inherit; cursor: pointer; }
+.skin-myspace-black .p-note-ask.is-rated { display: block; }
+
+/* --- feedslate ---------------------------------------------------------- */
+
+.skin-feedslate .sn-prose { max-width: 44em; }
+.skin-feedslate .sn-pagehead {
+  font-size: 20px; font-weight: 700; letter-spacing: -0.02em;
+  margin: 0; padding: 15px 15px 6px;
+}
+.skin-feedslate .sn-lede,
+.skin-feedslate .sn-say { margin: 0; padding: 0 15px 12px; }
+.skin-feedslate .sn-lede,
+.skin-feedslate .sn-count { color: #8b949e; font-size: 14px; }
+.skin-feedslate .sn-count { padding: 0 15px 10px; }
+.skin-feedslate .sn-list { margin: 0; padding: 0 15px 14px 34px; }
+.skin-feedslate .sn-list li { margin-bottom: 7px; }
+.skin-feedslate .sn-subhead {
+  font-size: 15px; font-weight: 700; margin: 0; padding: 14px 15px 7px;
+  border-top: 1px solid #262c33; color: #e7e9ea;
+}
+.skin-feedslate .sn-searchform {
+  display: flex; gap: 8px; padding: 0 15px 14px; margin: 0;
+}
+.skin-feedslate .sn-q {
+  flex: 1 1 auto; min-width: 0; font: inherit; color: #e7e9ea;
+  background: #1d2228; border: 1px solid #2d343c; border-radius: 999px;
+  padding: 9px 14px;
+}
+/* White on #1d9bf0 was 3.1:1, which is under AA for a 14px label, and this
+   skin now puts real buttons on real controls rather than a greyed-out
+   rectangle nobody could press. Darkened until the text passes: #ffffff on
+   #1a6dc2 is 5.2:1. */
+.skin-feedslate .btn { background: #1a6dc2; }
+.skin-feedslate button.btn,
+.skin-feedslate a.btn {
+  cursor: pointer; display: inline-block; text-decoration: none;
+  font: 600 14px/1.3 inherit;
+}
+.skin-feedslate a.btn,
+.skin-feedslate a.btn:visited { color: #ffffff; }
+.skin-feedslate a.btn:hover { text-decoration: none; background: #17609f; }
+.skin-feedslate .btn.is-on {
+  background: none; border: 1px solid #3a424b; color: #e7e9ea;
+}
+.skin-feedslate .sn-hit {
+  padding: 11px 15px; border-bottom: 1px solid #262c33;
+}
+.skin-feedslate .sn-hit-head { font-size: 14px; font-weight: 600; }
+.skin-feedslate .sn-hit-body { color: #c9ced4; font-size: 14px; overflow-wrap: break-word; }
+.skin-feedslate .sn-elsewhere {
+  padding: 14px 15px 4px; border-top: 1px solid #262c33; font-size: 14px;
+}
+.skin-feedslate .mcell {
+  display: block; padding: 11px 15px; border-bottom: 1px solid #262c33;
+  color: #e7e9ea; text-decoration: none;
+}
+.skin-feedslate .mcell:hover { background: #181c21; text-decoration: none; }
+.skin-feedslate .mrow { display: flex; align-items: center; gap: 11px; }
+.skin-feedslate .mid { min-width: 0; flex: 1 1 auto; }
+.skin-feedslate .mname { display: block; font-weight: 700; }
+.skin-feedslate .mhandle,
+.skin-feedslate .mcount { display: block; color: #8b949e; font-size: 13px; }
+.skin-feedslate .mfollow,
+.skin-feedslate .p-following {
+  color: #8b949e; font-size: 12px; border: 1px solid #3a424b;
+  border-radius: 999px; padding: 1px 8px; white-space: nowrap;
+}
+.skin-feedslate .sn-replyrow { padding: 11px 15px; border-bottom: 1px solid #262c33; }
+.skin-feedslate .sn-replyon { font-size: 13px; color: #8b949e; margin-bottom: 5px; }
+.skin-feedslate .sn-closed { padding: 13px 15px; border-bottom: 1px solid #262c33; }
+.skin-feedslate .sn-closed-note { color: #c9ced4; font-size: 14px; margin: 5px 0 11px; }
+.skin-feedslate .fcountlink { font-weight: 400; }
+.skin-feedslate .p-note-btn { background: none; font: inherit; font-size: 12px; cursor: pointer; }
+.skin-feedslate .p-note-ask.is-rated { display: block; }
+
+/* The shared composer (theme/compose.css) is light by default and this skin
+   is not. Its colours are variables for exactly this reason, so the box is
+   re-pointed rather than re-written. Checked against the surface it sits on:
+   #e7e9ea on #1a1f25 is 13.4:1, #99a2ab on it is 6.4:1. */
+.skin-feedslate .cw-root {
+  --cw-ink: #e7e9ea;
+  --cw-ink-soft: #99a2ab;
+  --cw-line: #2d343c;
+  --cw-surface: #1a1f25;
+  --cw-surface-2: #23292f;
+  --cw-accent: #1a6dc2;
+  --cw-accent-ink: #ffffff;
+  --cw-hot: #f08a84;
+  --cw-good: #6fcf97;
+  max-width: 100%;
+}
+.skin-feedslate .sn-mine { padding: 0 15px 12px; }
+
+@media (max-width: 400px) {
+  .skin-feedslate .sn-pagehead,
+  .skin-feedslate .sn-lede,
+  .skin-feedslate .sn-say,
+  .skin-feedslate .sn-count,
+  .skin-feedslate .sn-subhead,
+  .skin-feedslate .sn-searchform,
+  .skin-feedslate .sn-hit,
+  .skin-feedslate .sn-elsewhere,
+  .skin-feedslate .mcell,
+  .skin-feedslate .sn-replyrow,
+  .skin-feedslate .sn-closed,
+  .skin-feedslate .sn-mine { padding-left: 12px; padding-right: 12px; }
+  .skin-feedslate .sn-list { padding-left: 30px; padding-right: 12px; }
+}
+
+/* The one-line caveat over the composer, where the instance says in its own
+   profile that it lets people in by hand. */
+.skin-feedslate .sn-compose-note {
+  color: #8b949e; font-size: 13px; margin-bottom: 10px;
+}
+.skin-bluebird .sn-compose-note { color: #5b6670; font-size: 12px; margin-bottom: 8px; }
+.skin-myspace-black .sn-compose-note { color: #cccccc; font-size: 10px; margin-bottom: 6px; }

@@ -1,6 +1,17 @@
 /* SYNTHNET :: media renderer
    paths: /  |  /watch/<itemId>  |  /channel/<channelId>
+          /channels  |  /members  |  /search?q=  |  /upload  |  /signup
    There is no video here. The player is an honest placeholder.
+
+   The nav used to print Videos, Channels, Community, Upload and Sign Up as
+   grey spans that did nothing at all, and a search box made of an empty span
+   and the word Search. They rendered perfectly for a year. Everything that
+   looks like a control in here now either does the thing, or is a page that
+   says why it cannot -- which on an archive is the more interesting page of
+   the two. See docs/WORLD.md section 2 (2018) for why ClipVault cannot take
+   an upload, and the "Setup, tests and dead cards" channel on
+   trailcam.verity.net for why that one never could.
+
    No modules, no innerHTML, no network. Everything hangs off window.SYNTH. */
 (function () {
   'use strict';
@@ -46,6 +57,24 @@
     return (parts[0].charAt(0) + parts[1].charAt(0)).toUpperCase();
   }
 
+  function trim(s) { return String(s == null ? '' : s).replace(/^\s+|\s+$/g, ''); }
+  function lower(s) { return trim(s).toLowerCase(); }
+
+  function setText(node, s) {
+    while (node.firstChild) node.removeChild(node.firstChild);
+    node.appendChild(document.createTextNode(String(s)));
+  }
+
+  /* Inline markup out of a description, so a search snippet never ships a
+     raw [url= to the screen. */
+  function flat(s) {
+    var raw = txt(s);
+    if (window.SYNTH.markup && typeof window.SYNTH.markup.strip === 'function') {
+      try { return window.SYNTH.markup.strip(raw); } catch (e) { /* fall through */ }
+    }
+    return raw.replace(/\[[^\]]*\]/g, ' ').replace(/\s+/g, ' ').replace(/^\s+|\s+$/g, '');
+  }
+
   /* deterministic two-tone plate, no images, no network */
   function plateStyle(seed) {
     var h = hash(seed);
@@ -72,6 +101,16 @@
   function dat(ctx) { return (ctx.site && ctx.site.data) ? ctx.site.data : {}; }
   function items(ctx) { return arr(dat(ctx).items); }
   function channels(ctx) { return arr(dat(ctx).channels); }
+  function siteName(ctx) {
+    return txt(dat(ctx).siteName, txt(ctx.site.title, ctx.site.domain));
+  }
+
+  /* 1998-2008 sites are saved copies of something that stopped. 2026 sites
+     are running. The difference decides what a dead form is allowed to say. */
+  function isArchive(ctx) {
+    var year = parseInt(txt(ctx.site.era, ''), 10);
+    return isFinite(year) && year < 2009;
+  }
 
   function findItem(ctx, id) {
     var list = items(ctx), i;
@@ -89,23 +128,196 @@
     return item ? findChannel(ctx, item.channelId) : null;
   }
 
+  function itemsOfChannel(ctx, chanId) {
+    return items(ctx).filter(function (it) {
+      return String(it.channelId) === String(chanId);
+    });
+  }
+
+  /* ---------- subscriptions ----------
+   *
+   * SYNTH.alerts already stores these: a kind, an id and a level, on the
+   * device, and nothing is sent anywhere. That is exactly the right shape for
+   * a subscribe button on a site that stopped listening in 2018 -- it can
+   * remember, it just cannot tell anyone. The fallback map is for the case
+   * where storage is not up yet, so the button still answers a press. */
+
+  var localSubs = {};
+
+  function subId(ctx, chanId) {
+    return String(ctx.site.domain) + ':' + String(chanId);
+  }
+
+  function alerts() {
+    var A = window.SYNTH.alerts;
+    return (A && typeof A.levelFor === 'function' &&
+            typeof A.subscribe === 'function') ? A : null;
+  }
+
+  function isSubbed(ctx, chanId) {
+    var key = subId(ctx, chanId);
+    var A = alerts();
+    if (A) {
+      try { return A.levelFor('channel', key) === 'watching'; }
+      catch (e) { /* fall through to the local map */ }
+    }
+    return !!localSubs[key];
+  }
+
+  function setSub(ctx, chanId, on) {
+    var key = subId(ctx, chanId);
+    localSubs[key] = !!on;
+    var A = alerts();
+    if (!A) return;
+    try {
+      if (on) A.subscribe('channel', key, 'watching');
+      else A.unsubscribe('channel', key);
+    } catch (e) { /* the local map already holds it */ }
+  }
+
+  function subbedChannels(ctx) {
+    return channels(ctx).filter(function (c) { return isSubbed(ctx, c.id); });
+  }
+
+  function subscribeButton(ctx, chan, note) {
+    var el = ctx.el;
+    var btn = el('button', { 'class': 'subscribe', type: 'button' });
+
+    function paint() {
+      var on = isSubbed(ctx, chan.id);
+      btn.className = on ? 'subscribe on' : 'subscribe';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      setText(btn, on ? 'Subscribed' : 'Subscribe');
+      /* Only once you have pressed it, because the explanation is only
+         interesting then, and seven copies of it down a channel list is
+         noise. */
+      if (note) {
+        setText(note, on ? 'Subscribed. Kept on this device; the site is not told.' : '');
+      }
+    }
+
+    btn.addEventListener('click', function () {
+      setSub(ctx, chan.id, !isSubbed(ctx, chan.id));
+      paint();
+    }, false);
+
+    paint();
+    return btn;
+  }
+
+  /* ---------- why the forms are shut ----------
+   *
+   * Per domain, because a true reason has to be. The fallbacks are true of
+   * any copy of their era, so a media site added later gets an honest page
+   * rather than an invented one. */
+
+  var NOTICES = {
+    'clipvault.tv': {
+      upload: {
+        head: 'Uploading',
+        paras: [
+          'There is nothing behind this link and there has not been for years.',
+          'ClipVault was a regional video host: cheap, scrappy, and for about four years the only place in the county you could put a tape where somebody else might see it. In 2018 it was bought. What the buyer wanted was the traffic and the recommendation feed it could hang off it, not the tapes, and the Verity County material that came with the name was left where it fell, as a back catalogue nobody has curated since.',
+          'You are reading that back catalogue. The pages were kept; the video files were not, and neither was the script this form posted to. Nothing you typed in would reach anything.'
+        ]
+      },
+      signup: {
+        head: 'Signing up',
+        paras: [
+          'Registration closed with the sale in 2018 and was never reopened.',
+          'The handles under these clips and in these comments belong to people who signed up while this was a going concern, between 2005 and 2008. Most had stopped visiting well before it changed hands. No new ones are being issued, and none of the old ones can be written to from here.'
+        ]
+      }
+    },
+    'trailcam.verity.net': {
+      upload: {
+        head: 'Uploading',
+        paras: [
+          'Nothing goes up here except cards out of six cameras, and one man swaps them.',
+          'This gallery is an off-the-shelf script a fellow in Gridfall set up in 2019 for forty dollars and a pie. It prints Upload and Sign Up across the top of every page whether or not either is wired to anything, in the same way it prints that video files were not preserved at the foot of a page where the files are plainly right there. Neither link has ever gone anywhere.',
+          'The cards come out on Sunday mornings, on a loop round the place that takes about an hour. That is the whole of the pipeline and no part of it is reachable through a web form.'
+        ]
+      },
+      signup: {
+        head: 'Signing up',
+        paras: [
+          'There are no accounts on this site. There is one password and it belongs to the man whose sixty acres these are.',
+          'The names in the comments are people from around Coyne Flats. The script has never asked any of them who they are, which is also why the two or three machines advertising down there are not going anywhere: it will not let anybody delete a comment, the owner included.'
+        ]
+      }
+    }
+  };
+
+  function noticeFor(ctx, kind) {
+    var byDomain = NOTICES[String(ctx.site.domain)];
+    if (byDomain && byDomain[kind]) return byDomain[kind];
+    var archive = isArchive(ctx);
+    if (kind === 'upload') {
+      return archive ? {
+        head: 'Uploading',
+        paras: [
+          'The form that used to be here posted to a script that stopped answering a long time ago.',
+          'You are reading a saved copy of this site: the pages were kept and the video files were not. There is no server on the other end of this link to take a file, and no account it would be filed under.'
+        ]
+      } : {
+        head: 'Uploading',
+        paras: [
+          'Nothing on this site is crowd-sourced.',
+          'Everything you can watch here was put up by the channels listed under Channels. There has never been a form on this site for anybody else, and the link at the top of the page is one the software prints whether or not it is wired to anything.'
+        ]
+      };
+    }
+    return archive ? {
+      head: 'Signing up',
+      paras: [
+        'Nobody has been able to register on this site since it stopped being a going concern.',
+        'The handles under these clips belong to people who signed up while it was running. The copy you are reading has no account system behind it at all.'
+      ]
+    } : {
+      head: 'Signing up',
+      paras: [
+        'This site does not issue accounts and there is nothing behind this link.',
+        'Whatever the top of the page prints, there is no sign-up on the other side of it. Nothing here asks who you are, and nothing here would know what to do with the answer.'
+      ]
+    };
+  }
+
   /* ---------- chrome ---------- */
 
-  function topBar(ctx, here) {
-    var el = ctx.el, d = dat(ctx);
+  function searchForm(ctx, initial) {
+    var el = ctx.el;
+    var input = el('input', {
+      type: 'text', name: 'q', value: txt(initial), autocomplete: 'off',
+      'class': 'm-searchbox', placeholder: 'Search this site',
+      'aria-label': 'Search this site'
+    });
+    var go = function (ev) {
+      if (ev && ev.preventDefault) ev.preventDefault();
+      var v = trim(input.value);
+      var url = 'synth://' + ctx.site.domain + '/search' +
+        (v ? ('?q=' + encodeURIComponent(v)) : '');
+      if (window.SYNTH.engine && window.SYNTH.engine.navigate) {
+        window.SYNTH.engine.navigate(url);
+      }
+      return false;
+    };
+    return el('form', { 'class': 'm-search', role: 'search', onsubmit: go },
+      input,
+      el('button', { type: 'submit', 'class': 'btn m-searchgo' }, 'Search'));
+  }
+
+  function topBar(ctx, here, query) {
+    var el = ctx.el;
     return el('div', { 'class': 'm-top' },
       el('div', { 'class': 'm-brandrow' },
-        ctx.link('/', txt(d.siteName, txt(ctx.site.title, ctx.site.domain)), 'm-brand'),
-        el('div', { 'class': 'm-search' },
-          el('span', { 'class': 'm-searchbox' }, ''),
-          el('span', { 'class': 'btn' }, 'Search'))),
+        ctx.link('/', siteName(ctx), 'm-brand'),
+        searchForm(ctx, query)),
       el('div', { 'class': 'm-nav' },
         ctx.link('/', 'Home'),
-        el('span', { 'class': 'navitem' }, 'Videos'),
-        el('span', { 'class': 'navitem' }, 'Channels'),
-        el('span', { 'class': 'navitem' }, 'Community'),
-        el('span', { 'class': 'navitem' }, 'Upload'),
-        el('span', { 'class': 'navitem' }, 'Sign Up'),
+        ctx.link('/channels', 'Channels'),
+        ctx.link('/members', 'Community'),
+        ctx.link('/upload', 'Upload'),
+        ctx.link('/signup', 'Sign Up'),
         here ? el('span', { 'class': 'm-here' }, here) : null));
   }
 
@@ -113,6 +325,10 @@
     return ctx.el('div', { 'class': 'm-foot' },
       txt(ctx.site.description, '') + ' — archived copy, ' + txt(ctx.site.era, '') +
       '. Video files were not preserved.');
+  }
+
+  function backRow(ctx) {
+    return ctx.el('div', { 'class': 'backrow' }, ctx.link('/', '« Back to ' + siteName(ctx)));
   }
 
   /* ---------- cards ---------- */
@@ -142,6 +358,15 @@
           liveViews(item) + ' views  •  ' + txt(item.uploaded, 'some time ago'))));
   }
 
+  function chanChip(ctx, c) {
+    var el = ctx.el;
+    return el('div', { 'class': 'chanchip' },
+      avatarBox(el, c.avatarSeed, c.name),
+      el('div', { 'class': 'chanchip-id' },
+        ctx.link('/channel/' + encodeURIComponent(txt(c.id)), txt(c.name, 'channel')),
+        el('div', { 'class': 'dim' }, num(c.subscribers) + ' subscribers')));
+  }
+
   /* ---------- index ---------- */
 
 
@@ -156,8 +381,8 @@
   }
 
   function renderIndex(ctx) {
-    var el = ctx.el, mount = ctx.mount, d = dat(ctx);
-    ctx.title(txt(d.siteName, txt(ctx.site.title, ctx.site.domain)));
+    var el = ctx.el, mount = ctx.mount;
+    ctx.title(siteName(ctx));
     mount.appendChild(topBar(ctx, null));
 
     var list = items(ctx);
@@ -173,6 +398,14 @@
       el('div', { 'class': 'feat-strip' },
         featured.map(function (it) { return card(ctx, it, 'feat-card'); }))));
 
+    var mine = subbedChannels(ctx);
+    if (mine.length) {
+      mount.appendChild(el('div', { 'class': 'sec-head' },
+        'Your Subscriptions (' + mine.length + ')'));
+      mount.appendChild(el('div', { 'class': 'chanrow' },
+        mine.map(function (c) { return chanChip(ctx, c); })));
+    }
+
     mount.appendChild(el('div', { 'class': 'sec-head' }, 'Most Viewed This Week'));
     mount.appendChild(el('div', { 'class': 'grid' },
       list.map(function (it) { return card(ctx, it); })));
@@ -181,13 +414,9 @@
     if (chans.length) {
       mount.appendChild(el('div', { 'class': 'sec-head' }, 'Channels'));
       mount.appendChild(el('div', { 'class': 'chanrow' },
-        chans.map(function (c) {
-          return el('div', { 'class': 'chanchip' },
-            avatarBox(el, c.avatarSeed, c.name),
-            el('div', { 'class': 'chanchip-id' },
-              ctx.link('/channel/' + encodeURIComponent(txt(c.id)), txt(c.name, 'channel')),
-              el('div', { 'class': 'dim' }, num(c.subscribers) + ' subscribers')));
-        })));
+        chans.map(function (c) { return chanChip(ctx, c); })));
+      mount.appendChild(el('div', { 'class': 'm-more' },
+        ctx.link('/channels', 'All ' + chans.length + ' channels, with what is on them')));
     }
 
     mount.appendChild(foot(ctx));
@@ -201,15 +430,28 @@
       'This clip is unavailable in the archive — only the page around it was saved. ' +
       'Nothing will play.');
 
+    /* Every transport control answers the same way, because the same thing is
+     * true of all of them. Two lines, alternating, so a second press is not
+     * met with silence either. */
+    var tries = 0;
+    function nudge(ev) {
+      if (ev && ev.preventDefault) ev.preventDefault();
+      tries++;
+      caption.className = 'unavail flash';
+      setText(caption, (tries % 2)
+        ? 'Nothing will play. The page was saved; the file it pointed at was not.'
+        : 'Still nothing. Pressing it again does not put the file back.');
+    }
+
     var play = el('a', {
-      'class': 'play-btn',
-      href: '#',
-      title: 'Playback unavailable',
-      onclick: function (ev) {
-        if (ev && ev.preventDefault) ev.preventDefault();
-        if (caption.className.indexOf('flash') === -1) caption.className += ' flash';
-      }
+      'class': 'play-btn', href: '#', title: 'Playback unavailable', onclick: nudge
     }, el('span', { 'class': 'play-tri' }, ''));
+
+    var ctl = el('span', { 'class': 'ctl', title: 'Playback unavailable', onclick: nudge },
+      el('span', { 'class': 'ctl-tri' }, ''));
+    var scrub = el('span', { 'class': 'scrub', title: 'Playback unavailable', onclick: nudge },
+      el('span', { 'class': 'scrub-fill' }, ''),
+      el('span', { 'class': 'scrub-knob' }, ''));
 
     return el('div', { 'class': 'player' },
       el('div', { 'class': 'player-frame', style: plateStyle(txt(item.thumbSeed, item.id)) },
@@ -217,9 +459,8 @@
         play,
         el('div', { 'class': 'stillnote' }, 'still frame')),
       el('div', { 'class': 'controls' },
-        el('span', { 'class': 'ctl' }, el('span', { 'class': 'ctl-tri' }, '')),
-        el('span', { 'class': 'scrub' }, el('span', { 'class': 'scrub-fill' }, ''),
-          el('span', { 'class': 'scrub-knob' }, '')),
+        ctl,
+        scrub,
         el('span', { 'class': 'times' }, '0:00 / ' + txt(item.duration, '--:--')),
         el('span', { 'class': 'ctl vol' }, '')),
       caption);
@@ -231,7 +472,7 @@
     if (!item) return render404(ctx, 'This video is no longer available.');
 
     var chan = channelOfItem(ctx, item);
-    ctx.title(txt(item.title, 'Video') + ' — ' + txt(dat(ctx).siteName, ctx.site.domain));
+    ctx.title(txt(item.title, 'Video') + ' — ' + siteName(ctx));
     mount.appendChild(topBar(ctx, 'Watch'));
 
     var main = el('div', { 'class': 'watch-main' });
@@ -240,16 +481,7 @@
     main.appendChild(el('div', { 'class': 'vmeta' },
       liveViews(item) + ' views  •  Added ' + txt(item.uploaded, 'some time ago')));
 
-    var subBtn = el('button', {
-      'class': 'subscribe', type: 'button',
-      onclick: function () {
-        var on = subBtn.className.indexOf('on') !== -1;
-        subBtn.className = on ? 'subscribe' : 'subscribe on';
-        while (subBtn.firstChild) subBtn.removeChild(subBtn.firstChild);
-        subBtn.appendChild(document.createTextNode(on ? 'Subscribe' : 'Unsubscribe'));
-      }
-    }, 'Subscribe');
-
+    var subNote = chan ? el('div', { 'class': 'sub-note dim' }, '') : null;
     main.appendChild(el('div', { 'class': 'uploader-row' },
       avatarBox(el, chan ? chan.avatarSeed : item.thumbSeed, txt(item.uploader, chan ? chan.name : '?')),
       el('div', { 'class': 'u-id' },
@@ -257,8 +489,9 @@
           ? ctx.link('/channel/' + encodeURIComponent(txt(item.channelId)), txt(item.uploader, 'unknown'), 'u-name')
           : el('span', { 'class': 'u-name' }, txt(item.uploader, 'unknown')),
         el('div', { 'class': 'dim' },
-          chan ? num(chan.subscribers) + ' subscribers' : 'no channel on record')),
-      subBtn));
+          chan ? num(chan.subscribers) + ' subscribers' : 'no channel on record'),
+        subNote),
+      chan ? subscribeButton(ctx, chan, subNote) : null));
 
     var desc = el('div', { 'class': 'desc' });
     var frag = ctx.markup(txt(item.description));
@@ -311,8 +544,14 @@
               c.liveAt && window.SYNTH.live ? window.SYNTH.live.ago(c.liveAt) : txt(c.time))),
           body)));
     });
+    /* The box that used to be here was a grey span shaped like a text field.
+       A disabled input that says why is the same picture and not a lie. */
     clist.appendChild(el('div', { 'class': 'c-postbox' },
-      el('span', { 'class': 'c-input' }, ''),
+      el('input', {
+        'class': 'c-input', type: 'text', disabled: true,
+        'aria-label': 'Commenting is not available on this copy',
+        value: 'This copy does not take comments.'
+      }),
       el('span', { 'class': 'btn dis' }, 'Post Comment')));
     main.appendChild(clist);
 
@@ -353,7 +592,7 @@
     var chan = findChannel(ctx, id);
     if (!chan) return render404(ctx, 'That channel does not exist.');
 
-    ctx.title(txt(chan.name, 'Channel') + ' — ' + txt(dat(ctx).siteName, ctx.site.domain));
+    ctx.title(txt(chan.name, 'Channel') + ' — ' + siteName(ctx));
     mount.appendChild(topBar(ctx, 'Channel'));
 
     mount.appendChild(el('div', { 'class': 'chan-banner', style: plateStyle(txt(chan.avatarSeed, chan.id)) },
@@ -363,17 +602,17 @@
     var af = ctx.markup(txt(chan.about, 'No description given.'));
     if (af) about.appendChild(af);
 
+    var note = el('div', { 'class': 'sub-note dim' }, '');
     mount.appendChild(el('div', { 'class': 'chan-head' },
       avatarBox(el, chan.avatarSeed, chan.name, 'big'),
       el('div', { 'class': 'chan-id' },
         el('div', { 'class': 'chan-name' }, txt(chan.name, 'Channel')),
         el('div', { 'class': 'chan-subs' }, num(chan.subscribers) + ' subscribers'),
+        note,
         about),
-      el('span', { 'class': 'subscribe' }, 'Subscribe')));
+      subscribeButton(ctx, chan, note)));
 
-    var mine = items(ctx).filter(function (it) {
-      return String(it.channelId) === String(chan.id);
-    });
+    var mine = itemsOfChannel(ctx, chan.id);
 
     mount.appendChild(el('div', { 'class': 'sec-head' },
       num(mine.length) + ' video' + (mine.length === 1 ? '' : 's')));
@@ -384,7 +623,310 @@
         mine.map(function (it) { return card(ctx, it); })));
     }
 
-    mount.appendChild(el('div', { 'class': 'backrow' }, ctx.link('/', '« Back to home')));
+    mount.appendChild(backRow(ctx));
+    mount.appendChild(foot(ctx));
+  }
+
+  /* ---------- channel list ---------- */
+
+  function renderChannels(ctx) {
+    var el = ctx.el, mount = ctx.mount;
+    ctx.title('Channels — ' + siteName(ctx));
+    mount.appendChild(topBar(ctx, 'Channels'));
+
+    var chans = channels(ctx);
+    mount.appendChild(el('div', { 'class': 'sec-head' },
+      chans.length + ' channel' + (chans.length === 1 ? '' : 's')));
+
+    if (!chans.length) {
+      mount.appendChild(el('div', { 'class': 'blank' }, 'No channels on this site.'));
+      mount.appendChild(foot(ctx));
+      return;
+    }
+
+    var list = el('div', { 'class': 'chanlist' });
+    chans.forEach(function (c) {
+      var mine = itemsOfChannel(ctx, c.id);
+      var newest = mine.length ? mine[0] : null;
+      var note = el('div', { 'class': 'sub-note dim' }, '');
+      var body = el('div', { 'class': 'chan-line-id' },
+        el('div', { 'class': 'chan-line-name' },
+          ctx.link('/channel/' + encodeURIComponent(txt(c.id)), txt(c.name, 'channel'))),
+        el('div', { 'class': 'dim' },
+          num(c.subscribers) + ' subscribers  •  ' +
+          mine.length + ' clip' + (mine.length === 1 ? '' : 's')),
+        newest ? el('div', { 'class': 'chan-line-last' },
+          'First on the page: ',
+          ctx.link('/watch/' + encodeURIComponent(txt(newest.id)),
+            txt(newest.title, 'Untitled clip'))) : null,
+        note);
+      list.appendChild(el('div', { 'class': 'chan-line' },
+        avatarBox(el, c.avatarSeed, c.name),
+        body,
+        subscribeButton(ctx, c, note)));
+    });
+    mount.appendChild(list);
+
+    mount.appendChild(el('div', { 'class': 'm-note-fact' },
+      'Subscribing is kept on this device. ' +
+      (isArchive(ctx)
+        ? 'Nothing on this site has been notified of anything since it stopped running.'
+        : 'Nothing on this site is notified.')));
+
+    mount.appendChild(backRow(ctx));
+    mount.appendChild(foot(ctx));
+  }
+
+  /* ---------- community ----------
+   *
+   * There is no member list in the data and there never was one on the site.
+   * This one is counted off the pages: every name that uploaded a clip or
+   * left a comment on one. */
+
+  function peopleOf(ctx) {
+    var index = {}, order = [];
+
+    function touch(name) {
+      var key = lower(name);
+      if (!key) return null;
+      if (!index[key]) {
+        index[key] = { name: trim(name), uploads: 0, comments: 0, channelId: '', kind: '' };
+        order.push(key);
+      }
+      return index[key];
+    }
+
+    items(ctx).forEach(function (it) {
+      var up = touch(txt(it.uploader));
+      if (up) {
+        up.uploads++;
+        if (!up.channelId) up.channelId = txt(it.channelId);
+      }
+      arr(it.comments).forEach(function (c) {
+        var row = touch(txt(c.author));
+        if (!row) return;
+        row.comments++;
+        if (!row.kind && c.kind && c.kind !== 'human') row.kind = String(c.kind);
+      });
+    });
+
+    var rows = order.map(function (k) { return index[k]; });
+    rows.sort(function (a, b) {
+      if (b.uploads !== a.uploads) return b.uploads - a.uploads;
+      if (b.comments !== a.comments) return b.comments - a.comments;
+      return a.name < b.name ? -1 : (a.name > b.name ? 1 : 0);
+    });
+    return rows;
+  }
+
+  function renderMembers(ctx) {
+    var el = ctx.el, mount = ctx.mount;
+    ctx.title('Community — ' + siteName(ctx));
+    mount.appendChild(topBar(ctx, 'Community'));
+
+    var rows = peopleOf(ctx);
+    var uploaders = 0, machines = 0;
+    rows.forEach(function (r) {
+      if (r.uploads) uploaders++;
+      if (r.kind === 'bot' || r.kind === 'spam') machines++;
+    });
+
+    mount.appendChild(el('div', { 'class': 'sec-head' },
+      rows.length + ' name' + (rows.length === 1 ? '' : 's') + ' on this site'));
+
+    mount.appendChild(el('div', { 'class': 'm-note-fact' },
+      'Nobody kept a member list here, so this one is counted off the pages: ' +
+      'every name that put up a clip or left a comment on one. ' +
+      uploaders + ' of them uploaded something' +
+      (machines ? ', and ' + machines + ' of them are machines.' : '.')));
+
+    if (!rows.length) {
+      mount.appendChild(el('div', { 'class': 'blank' }, 'Nobody signed anything on this site.'));
+      mount.appendChild(backRow(ctx));
+      mount.appendChild(foot(ctx));
+      return;
+    }
+
+    var list = el('div', { 'class': 'people' });
+    rows.forEach(function (r) {
+      var counts = [];
+      if (r.uploads) counts.push(r.uploads + ' clip' + (r.uploads === 1 ? '' : 's'));
+      if (r.comments) counts.push(r.comments + ' comment' + (r.comments === 1 ? '' : 's'));
+      var name = (r.uploads && r.channelId && findChannel(ctx, r.channelId))
+        ? ctx.link('/channel/' + encodeURIComponent(r.channelId), r.name, 'p-name')
+        : el('span', { 'class': 'p-name' }, r.name);
+      list.appendChild(el('div', { 'class': 'person' },
+        avatarBox(el, r.name, r.name, 'small'),
+        el('div', { 'class': 'p-id' },
+          el('div', { 'class': 'p-head' },
+            name,
+            (window.SYNTH.liveui ? window.SYNTH.liveui.badge(r.kind) : null)),
+          el('div', { 'class': 'p-meta dim' }, counts.join('  •  ')))));
+    });
+    mount.appendChild(list);
+
+    mount.appendChild(backRow(ctx));
+    mount.appendChild(foot(ctx));
+  }
+
+  /* ---------- search ----------
+   *
+   * This site's own titles, descriptions, uploaders and comments. It is not
+   * the network index at search.verity.net and does not pretend to be; there
+   * is a link to that at the bottom for when this one is not enough. */
+
+  function termsOf(q) {
+    var raw = lower(q).split(/\s+/), out = [], i;
+    for (i = 0; i < raw.length; i++) if (raw[i]) out.push(raw[i]);
+    return out;
+  }
+
+  function hasAll(hay, terms) {
+    var low = lower(hay), i;
+    for (i = 0; i < terms.length; i++) if (low.indexOf(terms[i]) === -1) return false;
+    return true;
+  }
+
+  function snippet(text, terms) {
+    var body = flat(text);
+    if (!body) return '';
+    var at = terms.length ? lower(body).indexOf(terms[0]) : 0;
+    if (at < 0) at = 0;
+    var from = Math.max(0, at - 45);
+    var cut = body.substring(from, from + 150);
+    return (from > 0 ? '…' : '') + cut + (from + 150 < body.length ? '…' : '');
+  }
+
+  function searchSite(ctx, terms) {
+    var hits = [];
+    items(ctx).forEach(function (it) {
+      var chan = channelOfItem(ctx, it);
+      var where = '';
+      var hay = [txt(it.title), txt(it.uploader), flat(it.description),
+                 chan ? txt(chan.name) : ''].join(' \n ');
+      if (hasAll(hay, terms)) {
+        where = hasAll(txt(it.title), terms) ? 'title' : 'description';
+      } else {
+        var found = null;
+        arr(it.comments).forEach(function (c) {
+          if (found) return;
+          if (hasAll(txt(c.author) + ' ' + flat(c.body), terms)) found = c;
+        });
+        if (!found) return;
+        where = 'a comment by ' + txt(found.author, 'guest');
+        hits.push({ item: it, chan: chan, where: where,
+                    snip: snippet(found.body, terms) });
+        return;
+      }
+      hits.push({ item: it, chan: chan, where: where,
+                  snip: snippet(it.description, terms) });
+    });
+    return hits;
+  }
+
+  function renderSearch(ctx) {
+    var el = ctx.el, mount = ctx.mount;
+    var q = trim((ctx.query && ctx.query.q) || '');
+    var terms = termsOf(q);
+
+    ctx.title((q ? ('Search: ' + q) : 'Search') + ' — ' + siteName(ctx));
+    mount.appendChild(topBar(ctx, 'Search results', q));
+
+    if (!terms.length) {
+      mount.appendChild(el('div', { 'class': 'sec-head' }, 'Search this site'));
+      mount.appendChild(el('div', { 'class': 'm-note-fact' },
+        'Type into the box at the top of the page. This looks at the titles, ' +
+        'descriptions, uploaders and comments on ' + siteName(ctx) +
+        ' and nothing else.'));
+      mount.appendChild(backRow(ctx));
+      mount.appendChild(foot(ctx));
+      return;
+    }
+
+    var hits = searchSite(ctx, terms);
+    var chanHits = channels(ctx).filter(function (c) {
+      return hasAll(txt(c.name) + ' ' + flat(c.about), terms);
+    });
+
+    mount.appendChild(el('div', { 'class': 'sec-head' },
+      hits.length + ' clip' + (hits.length === 1 ? '' : 's') +
+      (chanHits.length ? (' and ' + chanHits.length + ' channel' +
+        (chanHits.length === 1 ? '' : 's')) : '') +
+      ' matching "' + q + '"'));
+
+    if (!hits.length && !chanHits.length) {
+      mount.appendChild(el('div', { 'class': 'blank' },
+        'Nothing on this site matches those words.'));
+    }
+
+    if (chanHits.length) {
+      mount.appendChild(el('div', { 'class': 'chanrow' },
+        chanHits.map(function (c) { return chanChip(ctx, c); })));
+    }
+
+    if (hits.length) {
+      var list = el('div', { 'class': 'hits' });
+      hits.forEach(function (h) {
+        list.appendChild(el('div', { 'class': 'hit' },
+          el('a', {
+            'class': 'hit-thumb', href: '#',
+            onclick: function (ev) {
+              if (ev && ev.preventDefault) ev.preventDefault();
+              SYNTH.engine.navigate('synth://' + ctx.site.domain + '/watch/' +
+                encodeURIComponent(txt(h.item.id)));
+            }
+          }, thumbBox(el, h.item, 'rel-thumb')),
+          el('div', { 'class': 'hit-id' },
+            el('div', { 'class': 'hit-title' },
+              ctx.link('/watch/' + encodeURIComponent(txt(h.item.id)),
+                txt(h.item.title, 'Untitled clip'))),
+            el('div', { 'class': 'hit-meta dim' },
+              txt(h.item.uploader, 'unknown') + '  •  ' +
+              txt(h.item.uploaded, 'some time ago') + '  •  match in ' + h.where),
+            h.snip ? el('div', { 'class': 'hit-snip' }, h.snip) : null)));
+      });
+      mount.appendChild(list);
+    }
+
+    mount.appendChild(el('div', { 'class': 'm-note-fact' },
+      'This searched ' + siteName(ctx) + ' only. ',
+      ctx.link('synth://search.verity.net/?q=' + encodeURIComponent(q),
+        'Look for "' + q + '" across the whole network')));
+
+    mount.appendChild(backRow(ctx));
+    mount.appendChild(foot(ctx));
+  }
+
+  /* ---------- the two shut forms ---------- */
+
+  function renderNotice(ctx, kind) {
+    var el = ctx.el, mount = ctx.mount;
+    var spec = noticeFor(ctx, kind);
+    var here = (kind === 'upload') ? 'Uploading' : 'Accounts';
+
+    ctx.title(spec.head + ' — ' + siteName(ctx));
+    mount.appendChild(topBar(ctx, here));
+
+    var box = el('div', { 'class': 'm-note' },
+      el('h1', { 'class': 'm-note-head' }, spec.head));
+    spec.paras.forEach(function (p) {
+      box.appendChild(el('p', { 'class': 'm-note-p' }, p));
+    });
+
+    if (kind === 'upload') {
+      box.appendChild(el('div', { 'class': 'm-note-fact' },
+        items(ctx).length + ' clip' + (items(ctx).length === 1 ? '' : 's') +
+        ' from ' + channels(ctx).length + ' channel' +
+        (channels(ctx).length === 1 ? '' : 's') + ' are on this site. ',
+        ctx.link('/', 'They are all still here to watch'), '.'));
+    } else {
+      box.appendChild(el('div', { 'class': 'm-note-fact' },
+        'The names that are on this site were counted off its own pages. ',
+        ctx.link('/members', 'The Community page lists every one of them'), '.'));
+    }
+    mount.appendChild(box);
+
+    mount.appendChild(backRow(ctx));
     mount.appendChild(foot(ctx));
   }
 
@@ -408,6 +950,11 @@
     if (!path.length) return renderIndex(ctx);
     if (path[0] === 'watch' && path.length >= 2) return renderWatch(ctx, path[1]);
     if (path[0] === 'channel' && path.length >= 2) return renderChannel(ctx, path[1]);
+    if (path[0] === 'channels') return renderChannels(ctx);
+    if (path[0] === 'members') return renderMembers(ctx);
+    if (path[0] === 'search') return renderSearch(ctx);
+    if (path[0] === 'upload') return renderNotice(ctx, 'upload');
+    if (path[0] === 'signup') return renderNotice(ctx, 'signup');
     return render404(ctx, 'The page you asked for is not in the archive.');
   }
 

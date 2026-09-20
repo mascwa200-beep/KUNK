@@ -34,10 +34,14 @@
 .skin-tubeplayer .m-brand:visited {
   font-size: 19px; font-weight: bold; color: #333333; letter-spacing: -.02em;
 }
-.skin-tubeplayer .m-search { display: flex; align-items: center; gap: 5px; }
+.skin-tubeplayer .m-search {
+  display: flex; align-items: center; gap: 5px;
+  margin: 0; max-width: 100%; min-width: 0;
+}
 .skin-tubeplayer .m-searchbox {
-  display: inline-block; width: 150px; height: 21px;
-  border: 1px solid #a0a0a0; background: #ffffff;
+  display: inline-block; width: 150px; min-width: 0; height: 22px;
+  border: 1px solid #a0a0a0; background: #ffffff; color: #222222;
+  font-family: inherit; font-size: 12px; padding: 0 5px;
 }
 .skin-tubeplayer .btn {
   display: inline-block;
@@ -45,12 +49,15 @@
   border: 1px solid #999999; border-radius: 2px;
   font-size: 11px; color: #333333; padding: 3px 9px; cursor: default;
 }
-.skin-tubeplayer .btn.dis { color: #888888; border-color: #bbbbbb; }
+.skin-tubeplayer .btn.dis { color: #6e6e6e; border-color: #bbbbbb; }
+.skin-tubeplayer .m-searchgo {
+  font-family: inherit; height: 22px; cursor: pointer; white-space: nowrap;
+}
 .skin-tubeplayer .m-nav { margin-top: 6px; font-size: 12px; }
 .skin-tubeplayer .m-nav a,
 .skin-tubeplayer .m-nav a:visited { color: #0033cc; margin-right: 12px; }
-.skin-tubeplayer .m-nav .navitem { color: #5a5a5a; margin-right: 12px; }
-.skin-tubeplayer .m-here { color: #767676; }
+.skin-tubeplayer .m-here { color: #6b6b6b; }
+.skin-tubeplayer .m-more { padding: 6px 10px 0; font-size: 12px; }
 
 .skin-tubeplayer .sec-head {
   font-size: 14px; font-weight: bold; color: #333333;
@@ -253,8 +260,9 @@
 .skin-tubeplayer .c-body p { margin: 0 0 .5em; }
 .skin-tubeplayer .c-postbox { display: flex; gap: 6px; align-items: center; padding: 10px 0; }
 .skin-tubeplayer .c-input {
-  display: block; flex: 1 1 auto; height: 30px;
-  border: 1px solid #a0a0a0; background: #ffffff;
+  display: block; flex: 1 1 auto; min-width: 0; height: 30px;
+  border: 1px solid #a0a0a0; background: #f4f4f4; color: #5c5c5c;
+  font-family: inherit; font-size: 11px; padding: 0 6px;
 }
 
 .skin-tubeplayer .rel-item {
@@ -285,6 +293,70 @@
 .skin-tubeplayer .chan-subs { font-size: 11px; color: #666666; }
 .skin-tubeplayer .chan-about { font-size: 12px; margin-top: 5px; }
 
+/* ---- channel list, community, search, and the two shut forms ---- */
+
+.skin-tubeplayer .sub-note { font-size: 11px; margin-top: 2px; }
+
+.skin-tubeplayer .chanlist { padding: 0 10px; }
+.skin-tubeplayer .chan-line {
+  display: flex; gap: 9px; align-items: flex-start; flex-wrap: wrap;
+  border: 1px solid #d4d4d4; background: #fbfbfb;
+  padding: 8px; margin-bottom: 8px;
+}
+.skin-tubeplayer .chan-line-id { flex: 1 1 150px; min-width: 0; font-size: 12px; }
+.skin-tubeplayer .chan-line-name { font-size: 13px; font-weight: bold; }
+.skin-tubeplayer .chan-line-last {
+  font-size: 11px; margin-top: 3px;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+
+.skin-tubeplayer .people { padding: 0 10px; }
+.skin-tubeplayer .person {
+  display: flex; gap: 8px; align-items: center;
+  border-bottom: 1px solid #ededed; padding: 7px 0;
+}
+.skin-tubeplayer .p-id { flex: 1 1 auto; min-width: 0; }
+.skin-tubeplayer .p-head { font-size: 12px; }
+.skin-tubeplayer .p-name { font-weight: bold; margin-right: 6px; }
+.skin-tubeplayer span.p-name { color: #333333; }
+.skin-tubeplayer .p-meta { font-size: 11px; }
+
+.skin-tubeplayer .hits { padding: 0 10px; }
+.skin-tubeplayer .hit {
+  display: flex; gap: 8px; align-items: flex-start;
+  border: 1px solid #e4e4e4; background: #fbfbfb;
+  padding: 6px; margin-bottom: 7px;
+}
+.skin-tubeplayer .hit-thumb { flex: 0 0 78px; width: 78px; }
+.skin-tubeplayer .hit-id { flex: 1 1 auto; min-width: 0; }
+.skin-tubeplayer .hit-title {
+  font-size: 12px; font-weight: bold; line-height: 1.25;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-tubeplayer .hit-meta { font-size: 11px; margin-top: 2px; }
+.skin-tubeplayer .hit-snip {
+  font-size: 11px; color: #444444; margin-top: 3px;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+
+.skin-tubeplayer .m-note {
+  max-width: 620px; margin: 14px auto 0; padding: 0 10px;
+}
+.skin-tubeplayer .m-note-head {
+  font-size: 18px; margin: 0 0 8px; color: #333333;
+  border-bottom: 1px solid #d4d4d4; padding-bottom: 5px;
+}
+.skin-tubeplayer .m-note-p {
+  font-size: 13px; margin: 0 0 .8em;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-tubeplayer .m-note-fact {
+  background: #f6f6f6; border: 1px solid #d4d4d4;
+  padding: 7px 9px; margin: 10px; font-size: 12px; color: #444444;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-tubeplayer .m-note .m-note-fact { margin-left: 0; margin-right: 0; }
+
 .skin-tubeplayer .backrow { padding: 12px 10px; font-size: 12px; }
 .skin-tubeplayer .blank {
   border: 1px dashed #c4c4c4; background: #fafafa;
@@ -309,7 +381,14 @@
   .skin-tubeplayer .chanchip { width: 100%; }
   .skin-tubeplayer .sec-head { margin-left: 8px; margin-right: 8px; }
   .skin-tubeplayer .vtitle { font-size: 15px; }
-  .skin-tubeplayer .m-searchbox { width: 110px; }
+  .skin-tubeplayer .m-searchbox { width: 104px; }
   .skin-tubeplayer .times { font-size: 10px; }
   .skin-tubeplayer .chan-banner { height: 76px; }
+  .skin-tubeplayer .m-nav a,
+  .skin-tubeplayer .m-nav a:visited { margin-right: 9px; }
+  .skin-tubeplayer .chanlist,
+  .skin-tubeplayer .people,
+  .skin-tubeplayer .hits { padding: 0 8px; }
+  .skin-tubeplayer .m-note { padding: 0 8px; }
+  .skin-tubeplayer .hit-thumb { flex: 0 0 66px; width: 66px; }
 }

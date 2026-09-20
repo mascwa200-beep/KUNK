@@ -228,21 +228,36 @@
   -webkit-overflow-scrolling: touch;
 }
 
+/* The chips are buttons that filter the grid below them. They were spans. */
 .skin-tubemodern .tm-chip {
   flex: 0 0 auto;
   background: var(--tm-bg3);
   border: 1px solid var(--tm-line);
   border-radius: 14px;
   color: var(--tm-fg);
+  font: inherit;
   font-size: 13px;
+  line-height: 1.4;
   padding: 4px 12px;
   white-space: nowrap;
+  cursor: pointer;
 }
+
+.skin-tubemodern .tm-chip:hover { background: #2e2e2e; }
 
 .skin-tubemodern .tm-chip-on {
   background: #f1f1f1;
   color: #101010;
   border-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.skin-tubemodern .tm-chip-on:hover { background: #ffffff; }
+
+.skin-tubemodern .tm-filternote {
+  color: var(--tm-dim);
+  font-size: 12.5px;
+  margin: -4px 0 12px;
 }
 
 /* ---------- compose ---------- */
@@ -437,6 +452,12 @@
   font-size: 13px;
 }
 
+/* A still of a transport bar. The stage above it says there is no video and
+   there never was, so nothing in here takes a press: it is a picture, and it
+   is marked aria-hidden in the renderer for the same reason. */
+.skin-tubemodern .tm-controls,
+.skin-tubemodern .tm-scrub { pointer-events: none; }
+
 .skin-tubemodern .tm-ctl { color: var(--tm-fg); }
 .skin-tubemodern .tm-time { color: var(--tm-dim); font-size: 12px; }
 .skin-tubemodern .tm-ctlspace { flex: 1 1 auto; }
@@ -468,14 +489,41 @@
 
 .skin-tubemodern .tm-act {
   background: var(--tm-bg3);
+  border: 0;
   border-radius: 16px;
   color: var(--tm-fg);
+  font: inherit;
   font-size: 13px;
+  line-height: 1.4;
   padding: 6px 13px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
+.skin-tubemodern .tm-act:hover { background: #2e2e2e; }
+
+.skin-tubemodern .tm-act-on {
+  background: #f1f1f1;
+  color: #101010;
+  font-weight: bold;
+}
+
+.skin-tubemodern .tm-act-on:hover { background: #ffffff; }
+
 .skin-tubemodern .tm-act-dim { color: var(--tm-dim); }
+
+/* What the pill just did, and where it went. */
+.skin-tubemodern .tm-panel {
+  color: var(--tm-dim);
+  font-size: 13px;
+  margin: -4px 0 12px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-tubemodern .tm-panel:empty { display: none; }
+.skin-tubemodern .tm-panellink { overflow-wrap: break-word; word-wrap: break-word; }
 
 .skin-tubemodern .tm-chstrip {
   display: flex;
@@ -512,15 +560,51 @@
 .skin-tubemodern .tm-chsubs { color: var(--tm-dim); font-size: 12.5px; }
 .skin-tubemodern .tm-chonline { color: var(--tm-dim); font-size: 12.5px; }
 
+/* Subscribe writes a real subscription; the skin has to carry an "on" state
+   because there is now one to show. */
+.skin-tubemodern .tm-subwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .skin-tubemodern .tm-subbtn {
   background: #f1f1f1;
+  border: 1px solid #f1f1f1;
   border-radius: 16px;
   color: #101010;
+  font: inherit;
   font-size: 13px;
   font-weight: bold;
+  line-height: 1.4;
   padding: 7px 15px;
   white-space: nowrap;
+  cursor: pointer;
 }
+
+.skin-tubemodern .tm-subbtn:hover { background: #ffffff; border-color: #ffffff; }
+
+.skin-tubemodern .tm-subbtn-on {
+  background: var(--tm-bg3);
+  border-color: var(--tm-line);
+  color: var(--tm-fg);
+}
+
+.skin-tubemodern .tm-subbtn-on:hover { background: #2e2e2e; border-color: var(--tm-line); }
+
+.skin-tubemodern .tm-subnote {
+  color: var(--tm-dim);
+  font-size: 12px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-tubemodern .tm-subnote:empty { display: none; }
 
 .skin-tubemodern .tm-desc {
   background: var(--tm-bg2);
@@ -814,6 +898,101 @@
 .skin-tubemodern .tm-footline { margin: 0 0 5px; }
 .skin-tubemodern .tm-footdim { color: var(--tm-dimmer); }
 .skin-tubemodern .tm-footlinks { margin: 8px 0 0; }
+
+/* ---------- search results ----------
+   The box in the bar searches this site's own catalogue, so it needs
+   somewhere to put what it found. It sits on its own row of the bar and
+   wraps, because at 360px there is no other option. */
+
+.skin-tubemodern .tm-results {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-tubemodern .tm-resulthead {
+  color: var(--tm-fg);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.skin-tubemodern .tm-resultlist {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+}
+
+.skin-tubemodern .tm-resultitem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  padding: 2px 0;
+  min-width: 0;
+}
+
+.skin-tubemodern .tm-resultlink { min-width: 0; }
+
+.skin-tubemodern .tm-resultkind {
+  color: var(--tm-dim);
+  font-size: 11.5px;
+}
+
+.skin-tubemodern .tm-resultfoot {
+  color: var(--tm-dim);
+  font-size: 12px;
+}
+
+/* ---------- shelves ----------
+   Subscriptions and Saved: what the two buttons on a watch page actually
+   did, shown on the front page where you would look for it. */
+
+.skin-tubemodern .tm-shelf {
+  border: 1px solid var(--tm-line);
+  border-radius: 10px;
+  background: var(--tm-bg2);
+  padding: 10px 12px;
+  margin: 0 0 14px;
+}
+
+.skin-tubemodern .tm-shelf .tm-h2 { margin-top: 0; }
+
+.skin-tubemodern .tm-shelfnote {
+  color: var(--tm-dim);
+  font-size: 12.5px;
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px;
+  min-width: 0;
+}
+
+.skin-tubemodern .tm-unsave {
+  background: var(--tm-bg3);
+  border: 1px solid var(--tm-line);
+  border-radius: 14px;
+  color: var(--tm-fg);
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-top: 6px;
+  padding: 4px 11px;
+  cursor: pointer;
+}
+
+.skin-tubemodern .tm-unsave:hover { background: #2e2e2e; }
+
+/* Every control in this skin takes a visible focus ring. */
+.skin-tubemodern .tm-chip:focus-visible,
+.skin-tubemodern .tm-act:focus-visible,
+.skin-tubemodern .tm-subbtn:focus-visible,
+.skin-tubemodern .tm-unsave:focus-visible,
+.skin-tubemodern .tm-searchbtn:focus-visible,
+.skin-tubemodern .tm-searchinput:focus-visible {
+  outline: 2px solid var(--tm-link);
+  outline-offset: 2px;
+}
 
 /* ---------- wider viewports ---------- */
 
