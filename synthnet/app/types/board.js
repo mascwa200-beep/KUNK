@@ -114,7 +114,12 @@ window.SYNTH = window.SYNTH || {};
     var top = el('div', { 'class': 'bd-topbar' });
     top.appendChild(ctx.link('/', '/' + (d.boardName || 'b') + '/', 'bd-toplink'));
     top.appendChild(el('span', { 'class': 'bd-topsep' }, text('  ')));
-    top.appendChild(el('span', { 'class': 'bd-topdim' }, text('catalog   archive   rules')));
+    /* "catalog" was one of three words in an inert span that looked
+     * exactly like links. It is a real route now. "archive" and "rules"
+     * stay dim because there is no archive and the rules are already
+     * further down the page -- three fake links was the bug. */
+    top.appendChild(ctx.link('/catalog', 'catalog', 'bd-toplink'));
+    top.appendChild(el('span', { 'class': 'bd-topdim' }, text('   archive   rules')));
     head.appendChild(top);
 
     var banner = el('div', { 'class': 'bd-banner' });
@@ -164,6 +169,112 @@ window.SYNTH = window.SYNTH || {};
 
   function postNo(seedBase, i) {
     return 8000000 + (hash32(String(seedBase) + ':' + i) % 8999999);
+  }
+
+  /* --- how a board orders itself ------------------------------------------
+   *
+   * It did not. pageIndex walked d.threads in whatever order the file was
+   * written in, forever, which is the one thing a board never does: the
+   * whole form is "what was posted in last is at the top". Without it,
+   * "bump" is a word in the rules with no referent.
+   *
+   * Bumping is derived from the clock like everything else here: a thread's
+   * last activity is its newest authored post, or the arrival of whatever
+   * the stream has filed into it since, whichever is later.
+   */
+  var BUMP_LIMIT = 310;
+
+  function lastActivity(ctx, t) {
+    var L = window.SYNTH.live;
+    var posts = t.posts || [];
+    var best = 0, i, ms;
+    for (i = 0; i < posts.length; i++) {
+      ms = (L && L.toMs) ? L.toMs(posts[i].at) : null;
+      if (ms !== null && ms > best) { best = ms; }
+    }
+    if (!best && L && L.toMs) {
+      ms = L.toMs(t.at);
+      if (ms !== null) { best = ms; }
+    }
+    /* A thread past the bump limit stops rising however much it is posted
+     * in. That is the rule, and it is the reason old threads sink even while
+     * people are still arguing in them. */
+    if (replyTotal(t) >= BUMP_LIMIT) { return best; }
+
+    var live = streamed('bd:' + ctx.site.domain + ':t:' + t.id,
+      ['mediaComments', 'socialPosts'], 6, 4);
+    for (i = 0; i < live.length; i++) {
+      if (live[i].at > best) { best = live[i].at; }
+    }
+    return best;
+  }
+
+  /* Replies are not a number in the file, they are a number that grows.
+   *
+   * The authored count is where a thread starts; live.threadLife() carries it
+   * forward on a decaying curve, so most threads settle in the tens and about
+   * one in forty runs away. Without this the bump limit was unreachable --
+   * the busiest thread on 62chan has sixteen replies against a limit of 310,
+   * so the rule existed and could never once have fired. */
+  function replyTotal(t) {
+    var authored = (typeof t.replyCount === 'number')
+      ? t.replyCount : (t.posts || []).length;
+    if (!has('live') || !SYNTH.live.threadLife) { return authored; }
+    try {
+      return SYNTH.live.threadLife('bd:' + t.id, authored, t.at).total;
+    } catch (e) { return authored; }
+  }
+
+  function bumpOrder(ctx, threads) {
+    var rows = [], i;
+    for (i = 0; i < threads.length; i++) {
+      rows.push({ t: threads[i], at: lastActivity(ctx, threads[i]), i: i });
+    }
+    rows.sort(function (a, b) {
+      var sa = a.t.sticky ? 1 : 0, sb = b.t.sticky ? 1 : 0;
+      if (sa !== sb) { return sb - sa; }
+      if (b.at !== a.at) { return b.at - a.at; }
+      return a.i - b.i;
+    });
+    var out = [];
+    for (i = 0; i < rows.length; i++) { out.push(rows[i].t); }
+    return out;
+  }
+
+  /* --- who you are, for the length of one thread --------------------------
+   *
+   * Everyone here is Anonymous, which is the point and also makes a
+   * four-way argument unreadable. The per-thread poster id is how boards
+   * solved that without giving anyone a name: stable inside one thread,
+   * different in the next, worth nothing anywhere else.
+   */
+  function posterId(threadId, who, seed) {
+    var h = hash32('pid:' + threadId + ':' + (who || 'anon') + ':' + (seed || ''));
+    var chars = 'abcdefghijkmnpqrstuvwxyz23456789';
+    var out = '', i, v = h;
+    for (i = 0; i < 6; i++) { out += chars.charAt(v % chars.length); v = Math.floor(v / 32) + 7; }
+    return out;
+  }
+
+  function idTint(id) {
+    return 'hsl(' + (hash32('tint:' + id) % 360) + ', 42%, 32%)';
+  }
+
+  /* A tripcode. Someone who wants to be recognised across threads types
+   * name#secret; the board shows name plus a hash of the secret and never
+   * the secret. Weak by design and famously so -- that is why the content
+   * can have someone complain about it. */
+  function tripOf(name) {
+    var s = String(name || '');
+    var cut = s.indexOf('#');
+    if (cut < 0) { return null; }
+    var secret = s.slice(cut + 1);
+    if (!secret) { return null; }
+    var h = hash32('trip:' + secret);
+    var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789./';
+    var out = '', i, v = h;
+    for (i = 0; i < 10; i++) { out += chars.charAt(v % 64); v = Math.floor(v / 64) + 13; }
+    return { name: s.slice(0, cut) || 'Anonymous', trip: '!' + out };
   }
 
   /* A board reply that quotes nothing is a forum post with the name taken
@@ -235,12 +346,30 @@ window.SYNTH = window.SYNTH || {};
     return head + '\n' + body;
   }
 
-  function nameLine(ctx, by, kind, at, no) {
+  function nameLine(ctx, by, kind, at, no, pid) {
     var line = el('div', { 'class': 'bd-postinfo' });
-    line.appendChild(el('span', { 'class': 'bd-name' }, text(by || 'Anonymous')));
+    var trip = tripOf(by);
+    if (trip) {
+      line.appendChild(el('span', { 'class': 'bd-name' }, text(trip.name)));
+      line.appendChild(el('span', {
+        'class': 'bd-trip',
+        title: 'A tripcode. Derived from a secret this poster types; anyone ' +
+               'with the secret can be them.'
+      }, text(trip.trip)));
+    } else {
+      line.appendChild(el('span', { 'class': 'bd-name' }, text(by || 'Anonymous')));
+    }
     var b = liveBadge(kind);
     if (b) { line.appendChild(b); }
     line.appendChild(el('span', { 'class': 'bd-date' }, text(' ' + ago(at))));
+    if (pid) {
+      line.appendChild(el('span', {
+        'class': 'bd-pid',
+        style: 'color:' + idTint(pid) + ';',
+        title: 'Poster ID. The same person, for as long as this thread lasts ' +
+               'and not one thread longer.'
+      }, text(' ID:' + pid)));
+    }
     line.appendChild(el('span', { 'class': 'bd-no' }, text(' No.' + no)));
     return line;
   }
@@ -269,7 +398,8 @@ window.SYNTH = window.SYNTH || {};
     var subj = el('span', { 'class': 'bd-subject' }, text(t.subject || ''));
     info.appendChild(subj);
     info.appendChild(text(' '));
-    info.appendChild(nameLine(ctx, t.by, null, t.at, postNo(t.id, 0)));
+    info.appendChild(nameLine(ctx, t.by, null, t.at, postNo(t.id, 0),
+      posterId(t.id, t.by, 'op')));
 
     if (!isThreadPage) {
       info.appendChild(el('span', { 'class': 'bd-oplinks' },
@@ -289,7 +419,8 @@ window.SYNTH = window.SYNTH || {};
 
     var no = p.no != null ? p.no : postNo(seedBase, i + 1);
     var info = el('div', { 'class': 'bd-postrow' });
-    info.appendChild(nameLine(ctx, p.by, p.kind, p.at, no));
+    info.appendChild(nameLine(ctx, p.by, p.kind, p.at, no,
+      posterId(seedBase, p.by, p.pidSeed != null ? p.pidSeed : i)));
     wrap.appendChild(info);
 
     var fl = fileLine(ctx, p.imageSeed);
@@ -377,12 +508,17 @@ window.SYNTH = window.SYNTH || {};
 
     body.appendChild(el('hr', { 'class': 'bd-hr' }));
 
-    var threads = d.threads || [];
+    var threads = bumpOrder(ctx, d.threads || []);
     var i;
     for (i = 0; i < threads.length; i++) {
       var t = threads[i];
       var tw = el('div', { 'class': 'bd-threadblock' });
       tw.appendChild(threadOp(ctx, d, t, false));
+      if (replyTotal(t) >= BUMP_LIMIT) {
+        tw.appendChild(el('div', { 'class': 'bd-autosage' },
+          text('Bump limit reached. This thread will not rise again, however ' +
+               'much is posted in it.')));
+      }
 
       var preview = (t.posts || []).slice(-2);
       var j;
@@ -507,6 +643,51 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(root);
   }
 
+  /* The catalog: every thread at once, as a grid of thumbnails and subjects,
+   * in bump order. On a real board this is how anybody with more than a
+   * passing interest actually reads it -- the index is for browsing, the
+   * catalog is for finding the thread you were in yesterday. */
+  function pageCatalog(ctx, d) {
+    ctx.title('Catalog – /' + (d.boardName || 'b') + '/');
+    var root = el('div', { 'class': 'bd-page' });
+    root.appendChild(header(ctx, d));
+
+    var body = el('div', { 'class': 'bd-bodywrap' });
+    body.appendChild(el('div', { 'class': 'bd-backline' },
+      ctx.link('/', '[Return]', 'bd-replylink')));
+
+    var threads = bumpOrder(ctx, d.threads || []);
+    var grid = el('div', { 'class': 'bd-catalog' });
+    var i;
+    for (i = 0; i < threads.length; i++) {
+      var t = threads[i];
+      var cell = el('div', { 'class': 'bd-cat-cell' + (t.sticky ? ' is-sticky' : '') });
+      if (t.imageSeed) {
+        var th = el('div', { 'class': 'bd-cat-thumb' });
+        th.appendChild(SYNTH.markup.placeholder('thumb', t.imageSeed));
+        cell.appendChild(th);
+      }
+      cell.appendChild(el('div', { 'class': 'bd-cat-meta' },
+        text('R: ' + replyTotal(t)),
+        replyTotal(t) >= BUMP_LIMIT
+          ? el('span', { 'class': 'bd-cat-sage', title: 'past the bump limit' },
+              text(' ↓')) : null));
+      cell.appendChild(ctx.link('/t/' + t.id,
+        t.subject || titleOf(t, 'no subject'), 'bd-cat-subject'));
+      cell.appendChild(el('div', { 'class': 'bd-cat-excerpt' },
+        text(String(t.body || '').replace(/\[[^\]]*\]/g, ' ')
+          .replace(/\s+/g, ' ').trim().slice(0, 110))));
+      grid.appendChild(cell);
+    }
+    body.appendChild(grid);
+    body.appendChild(el('div', { 'class': 'bd-omitted' },
+      text(threads.length + ' threads. Bump order, stickies first.')));
+
+    root.appendChild(body);
+    root.appendChild(footer(ctx, d));
+    ctx.mount.appendChild(root);
+  }
+
   function page404(ctx, d) {
     ctx.title('404 – /' + (d.boardName || 'b') + '/');
     var root = el('div', { 'class': 'bd-page' });
@@ -531,6 +712,7 @@ window.SYNTH = window.SYNTH || {};
 
     if (!p.length) { return pageIndex(ctx, d); }
     if (p[0] === 't' && p[1]) { return pageThread(ctx, d, p[1]); }
+    if (p[0] === 'catalog') { return pageCatalog(ctx, d); }
     return page404(ctx, d);
   });
 }());

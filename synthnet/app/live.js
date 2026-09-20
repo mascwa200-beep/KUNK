@@ -737,6 +737,50 @@
     return Math.max(0, Math.floor(base + days * perDay * drift));
   }
 
+  /* --- thread half-life ---------------------------------------------------
+   *
+   * counter() grows for ever, which is right for a view count and wrong for
+   * a conversation. Threads do not accrue replies at a steady rate until the
+   * heat death of the universe: they burn through most of their replies in
+   * the first day or so, then stop, and a small minority run for years.
+   *
+   * So a thread gets two draws at birth, both pure functions of its id: how
+   * many replies it will EVER get, and how fast it gets there. The count at
+   * any moment is the exponential approach to that ceiling:
+   *
+   *   total(age) = authored + peak * (1 - 2^(-age / halfLife))
+   *
+   * which is monotonic, never exceeds `authored + peak`, and is computable
+   * in constant time from (id, now) -- no walking the history, nothing
+   * stored. The heavy tail is what puts a handful of threads past a board's
+   * bump limit while most sink at nine replies, and it is the reason a bump
+   * limit is a rule rather than a decoration. */
+  function threadLife(key, authored, startMs) {
+    var base = (typeof authored === 'number' && isFinite(authored)) ? authored : 0;
+    var start = toMs(startMs);
+    if (start === null) { return { total: base, peak: 0, halfLifeH: 0, hot: false }; }
+
+    var r = rng('life:' + key);
+    var roll = r();
+    /* Most threads are small. About one in twenty-five is the thread people
+     * are still linking to in two years. */
+    var peak = roll > 0.96 ? Math.floor(240 + r() * 900)
+             : roll > 0.80 ? Math.floor(28 + r() * 90)
+             : Math.floor(2 + r() * 22);
+    var halfLifeH = roll > 0.96 ? (90 + r() * 400) : (5 + r() * 30);
+
+    var ageH = (now() - start) / HOUR;
+    if (ageH < 0) { ageH = 0; }
+    var grown = peak * (1 - Math.pow(2, -ageH / halfLifeH));
+    return {
+      total: base + Math.floor(grown),
+      peak: base + peak,
+      halfLifeH: halfLifeH,
+      /* Still moving: it has not yet reached nine tenths of what it will be. */
+      hot: grown < peak * 0.9
+    };
+  }
+
   /* "N users online": a daily sine so it is busy in the evening and dead at
    * 4am, plus a slow wander so two refreshes never read quite the same. */
   function online(key, low, high) {
@@ -792,6 +836,7 @@
     domainFor: domainFor,
     linkTo: linkTo,
     counter: counter,
+    threadLife: threadLife,
     online: online,
     short: short,
     commas: commas

@@ -331,3 +331,53 @@
 
 .skin-yotsuba img,
 .skin-yotsuba svg { max-width: 100%; height: auto; }
+
+/* --- the catalog --------------------------------------------------------
+ * Every thread at once. On a real board this is how anyone with more than a
+ * passing interest reads it: the index is for browsing, the catalog is for
+ * finding the thread you were in yesterday.
+ */
+.skin-yotsuba .bd-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.skin-yotsuba .bd-cat-cell {
+  flex: 1 1 150px;
+  min-width: 0;
+  max-width: 220px;
+  padding: 6px;
+  border: 1px solid #d9bfb7;
+  background: #f0e0d6;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.skin-yotsuba .bd-cat-cell.is-sticky { border-color: #b8a36a; background: #f6ecd8; }
+.skin-yotsuba .bd-cat-thumb { margin-bottom: 4px; }
+.skin-yotsuba .bd-cat-thumb img,
+.skin-yotsuba .bd-cat-thumb > * { max-width: 100%; height: auto; }
+.skin-yotsuba .bd-cat-meta { color: #7a6a63; margin-bottom: 2px; }
+.skin-yotsuba .bd-cat-sage { color: #9a4b3f; font-weight: bold; }
+.skin-yotsuba .bd-cat-subject {
+  display: block;
+  font-weight: bold;
+  color: #0f0c5d;
+  overflow-wrap: break-word;
+  margin-bottom: 3px;
+}
+.skin-yotsuba .bd-cat-excerpt { color: #4b3f3a; overflow-wrap: break-word; }
+
+/* Past the bump limit: the thread still works, it just stops rising. */
+.skin-yotsuba .bd-autosage {
+  margin: 4px 0 6px;
+  font-size: 11px;
+  font-style: italic;
+  /* #8a5a2b on #f0e0d6 is 4.7:1. */
+  color: #8a5a2b;
+}
+
+/* A tripcode, and a per-thread poster id. Both are identity on a board that
+   has none: one is portable and weak, the other is strong and disposable. */
+.skin-yotsuba .bd-trip { color: #228854; font-weight: bold; margin-left: 2px; }
+.skin-yotsuba .bd-pid { font-size: 10px; font-weight: bold; margin-left: 4px; }

@@ -47,7 +47,7 @@ PATH_PREFIXES = {
     "page": None,
     "aggregator": {"board", "item"},
     "qa": {"tag", "q"},
-    "board": {"t"},
+    "board": {"t", "catalog"},
     "shop": {"c", "p"},
     "market": {"c", "l"},
     "assistant": {"chat"},

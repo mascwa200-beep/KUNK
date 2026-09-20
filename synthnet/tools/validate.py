@@ -84,7 +84,7 @@ PATH_PREFIXES = {
     "page": None,   # any single segment is a page id
     "aggregator": {"board", "item"},
     "qa": {"tag", "q"},
-    "board": {"t"},
+    "board": {"t", "catalog"},
     "shop": {"c", "p"},
     "market": {"c", "l"},
     "assistant": {"chat"},
