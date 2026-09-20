@@ -900,8 +900,23 @@ def main():
                         summary: (n.querySelector('.wiki-histsummary') || {}).textContent || ''
                       }))""")
 
+                # A maintenance tag after the wrong full stop. The first
+                # one in the substation article belongs to "Substation No. 3",
+                # so a naive /\.\s/ put a citation tag inside an abbreviation
+                # and the page read as a broken template. No assertion caught
+                # that; a screenshot did. Checked on the article page (where
+                # the tag renders as [citation needed]) and in the diff
+                # source view (where it stays {{citation needed}}), across
+                # every article swept rather than only the first -- the first
+                # version of this check looked at one article, whose lead has
+                # no abbreviation in it, and could not fail.
+                ABBREV = re.compile(
+                    r"\b(?:No|St|Rd|Ave|Mr|Mrs|Dr|Jr|Sr|vs|etc|Co|Inc|a\.m|p\.m)"
+                    r"\.(?:\{\{|\[)(?:citation|stub|dead|NPOV|neutrality|who)")
+
                 t0 = page.evaluate("() => SYNTH.live.now()")
                 orphans, protections, locked_leaks, seen_rows = 0, 0, 0, 0
+                misplaced = []
                 for day in range(0, 40, 5):
                     page.evaluate("(ms) => SYNTH.live.setNow(ms)",
                                   t0 + day * DAY)
@@ -919,6 +934,18 @@ def main():
                                 if not wrong:
                                     orphans += 1
                                 wrong = False
+                        page.evaluate(
+                            "(u) => SYNTH.engine.navigate(u, {push: false})",
+                            "synth://%s/wiki/%s" % (wiki, art))
+                        page.wait_for_timeout(70)
+                        m = ABBREV.search(page.inner_text("#synth-viewport"))
+                        if m:
+                            misplaced.append(m.group(0))
+                        page.evaluate(
+                            "(u) => SYNTH.engine.navigate(u, {push: false})",
+                            "synth://%s/history/%s" % (wiki, art))
+                        page.wait_for_timeout(70)
+
                         # 3RR: while a page is protected, the automated
                         # editors are not in the history, because they could
                         # not edit. That is the whole point of tripping it.
@@ -963,11 +990,20 @@ def main():
                     .map(a => a.getAttribute('data-synth-href') || '')
                     .filter(h => h.indexOf('/diff/') === 0)""")
                 blank = []
+                # A maintenance tag after the wrong full stop. The first one
+                # in the substation article belongs to "Substation No. 3", so
+                # a naive /\.\s/ put a citation tag inside an abbreviation
+                # and the page read as a broken template. No assertion caught
+                # that; a screenshot did.
                 for href in links:
                     page.evaluate(
                         "(u) => SYNTH.engine.navigate(u, {push: false})",
                         "synth://" + wiki + href)
                     page.wait_for_timeout(110)
+                    body = page.inner_text(".wiki-diffbody")
+                    m = ABBREV.search(body)
+                    if m:
+                        misplaced.append(m.group(0))
                     n = page.evaluate(
                         "() => document.querySelectorAll('.wiki-ins, .wiki-del').length")
                     if n:
@@ -975,6 +1011,10 @@ def main():
                     heads = page.inner_text(".wiki-diffheads")
                     if "protected for" not in heads:
                         blank.append(href)
+                if misplaced:
+                    problems.append(
+                        f"a maintenance tag landed inside an abbreviation: "
+                        f"{misplaced[0]!r}")
                 if not links:
                     problems.append("the wiki history offers no diffs")
                 elif blank:

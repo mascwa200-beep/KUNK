@@ -439,7 +439,7 @@
         s = s.split(h.dispute.right).join(h.dispute.wrong);
         if (h.action === 'claim') { s = '{{NPOV disputed}} ' + s; }
       }
-      if (h.citedAfter) { s = s.replace(/\.(\s|$)/, '.{{citation needed}}$1'); }
+      if (h.citedAfter) { s = tagFirstSentence(s, '{{citation needed}}'); }
       if (h.deadAfter) { s = s.replace(/\s*$/, ' {{dead link}}'); }
       /* Houses alternate between these two forever and neither side wins,
        * which is why a wiki's history is mostly noise with one real
@@ -481,6 +481,29 @@
     /* Kept as it was: the foot of an article wants editors, not actions. */
     function revisionsFor(art, count) {
       return historyFor(art, count);
+    }
+
+    /* A maintenance tag goes after the first SENTENCE, and finding one is
+     * not `/\.\s/`. The first full stop in the substation article belongs to
+     * "Substation No. 3", so that regex produced
+     *
+     *     ...the transformer yard of Substation No.{{citation needed}} 3...
+     *
+     * which reads as a broken template rather than as a wiki. Found in a
+     * screenshot of the diff page, not by any assertion -- a page can render
+     * perfectly and be completely wrong, and this one rendered perfectly.
+     *
+     * A sentence end is a full stop after a word that ends in a letter or a
+     * digit, followed by space and a capital. "No. 3" fails it (digit after
+     * the space), "a.m. on" fails it (lower case after the space), and
+     * "...five days. Nobody died." passes. No lookbehind: this file is ES5.
+     */
+    function tagFirstSentence(s, tag) {
+      var str = String(s);
+      var m = /[a-z0-9)]\.(\s+[A-Z])/.exec(str);
+      if (!m) { return str.replace(/\s*$/, ' ' + tag); }
+      var at = m.index + m[0].length - m[1].length;
+      return str.slice(0, at) + tag + str.slice(at);
     }
 
     function swapIn(s, h) {
@@ -794,8 +817,9 @@
       if (LIVING && head) {
         leadNow = swapIn(leadNow, head);
         if (head.citedAfter) {
-          leadNow = leadNow.replace(/\.(\s|$)/, '.{{citation needed}}$1');
+          leadNow = tagFirstSentence(leadNow, '{{citation needed}}');
         }
+        if (head.deadAfter) { leadNow = leadNow.replace(/\s*$/, ' {{dead link}}'); }
         if (head.dispute && head.wrongAfter) {
           leadNow = '{{NPOV disputed}} ' + leadNow;
         }
