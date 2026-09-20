@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T11:52:49Z",
+  "generated": "2026-09-20T11:58:31Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -240,7 +240,7 @@
         "verity"
       ],
       "path": "net/sites/countyalerts-live/site.json",
-      "bytes": 61381
+      "bytes": 60052
     },
     {
       "domain": "countyfacts.info",
@@ -926,6 +926,22 @@
       "bytes": 84630
     },
     {
+      "domain": "verity-careers-portal.com",
+      "title": "Verity County Regional Careers Portal",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "A hiring page that is not one: work-from-home offers under the names of Verity Valley Power & Light and County General, an offer letter with the applicant's name still in the merge field, and a refundable verification deposit that has to be paid in gift cards.",
+      "tags": [
+        "scam",
+        "jobs",
+        "gridfall",
+        "2026"
+      ],
+      "path": "net/sites/verity-careers-portal-com/site.json",
+      "bytes": 14849
+    },
+    {
       "domain": "verity-transit.gov",
       "title": "Verity County Transit Division",
       "type": "portal",
@@ -1199,7 +1215,7 @@
         "2026"
       ],
       "path": "net/sites/veritysheriff-gov/site.json",
-      "bytes": 64820
+      "bytes": 65011
     },
     {
       "domain": "veritysignal.blog",

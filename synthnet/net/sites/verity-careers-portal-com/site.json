@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "domain": "verity-careers-portal.com",
+  "title": "Verity County Regional Careers Portal",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "A hiring page that is not one: work-from-home offers posted under the names of Verity Valley Power & Light and County General, an offer letter with the applicant's name still in the merge field, and a refundable verification deposit payable in gift cards.",
+  "tags": ["scam", "jobs", "gridfall", "2026"],
+  "links": [],
+  "data": {
+    "navLabel": "Applicants",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Open Positions",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Verity County Regional Careers Portal"},
+          {"kind": "marquee", "text": "*** IMMEDIATE START *** 4 POSITIONS REMAINING IN {{city}} *** NO EXPERIENCE REQUIRED *** APPLY BEFORE {{deadline_date}} ***"},
+          {"kind": "text", "body": "The official employment portal for Verity County, {{state}}. An authorised hiring partner of [b]Verity Valley Power & Light[/b], County General Health System and eleven other regional employers. Over 12,000 residents placed since 2011.\n\nPositions are filled on a first-verified basis. Applicants who finish [url=/verify]Step 3[/url] first are placed first."},
+          {"kind": "table", "head": ["POSITION", "EMPLOYER", "LOCATION", "PAY", "STATUS"], "rows": [["Remote Meter Data Assistant", "Verity Valley Power & Light", "Gridfall (work from home)", "$34.75/hr", "4 openings"], ["Remote Meter Data Assistant", "Verity Valley Power & Light", "Gridfall (work from home)", "$34.75/hr", "4 openings"], ["Patient Records Clerk, evenings", "County General Health System", "Marchfield", "$31.00/hr", "2 openings"], ["Payroll Administrative Aide", "{{employer_name}}", "Springfield", "$29.50/hr", "1 opening"]]},
+          {"kind": "text", "body": "Every position includes medical and dental from day one, weekly pay by direct deposit, and a laptop, printer and headset shipped to your home at no cost to you.*\n\n[i]*A refundable equipment and identity verification deposit applies.[/i]"},
+          {"kind": "heading", "level": 2, "text": "How hiring works here"},
+          {"kind": "list", "ordered": true, "items": ["Send your name, address and telephone number. No resume required.", "Interview by text message. Nine minutes. Most applicants pass.", "Applicant Verification: identity, banking, equipment deposit.", "Start Monday."]},
+          {"kind": "text", "body": "Hiring managers are online [b]now[/b]. Step 2 is by text message only; do not telephone, our recruiters are in the field.\n\nOur 4.9 out of 5 rating is independently confirmed at [url=synth://trusted-employer-ratings.vip/verity-careers-portal]Trusted Employer Ratings[/url], and the utility posts its openings through us at [url=synth://vvpl-careers-hr.click/openings]vvpl-careers-hr.click[/url]."},
+          {"kind": "buttons", "label": "Accreditations:", "items": [{"label": "VERIFIED EMPLOYER NETWORK 2026", "seed": "vcp-btn-verified"}, {"label": "256-BIT SSL SECURED", "seed": "vcp-btn-ssl"}, {"label": "As featured in {{publication_name}}", "seed": "vcp-btn-featured"}]},
+          {"kind": "hitcounter", "count": 8241},
+          {"kind": "text", "body": "Portal office: 118 Mill Street, Suite 4, Gridfall. Applicant line 782-0119, weekdays 9:00am to 5:00pm EST.\n\n[i]Copyright (c) 2028 Verity County Regional Careers Portal. All Rights Reserved. Powered by HireFlow Pro v4.2. Theme (c) 2019 JobBoard Templates. Last updated {{last_modified}}. [url=/privacy]Privacy Policy[/url].[/i]"}
+        ]
+      },
+      {
+        "id": "offer",
+        "name": "Your Offer Letter",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Conditional offer of employment"},
+          {"kind": "text", "body": "Date: Tuesday, 15 September 2026\nReference: VCP-{{application_id}}\n\nDear {{applicant_first_name}},\n\nCongratulations! Following your successful interview, {{company_name}} is pleased to offer you the position of {{position_title}}. You were selected from 412 applicants in the {{city}} area.\n\nOnboarding must be completed within 24 hours of this letter or the position is released to the next candidate."},
+          {"kind": "table", "head": ["", "OFFER SUMMARY"], "rows": [["Position", "Remote Meter Data Assistant"], ["Employer", "Verity Valley Power & Light"], ["Start date", "Monday 21 September 2026"], ["Schedule", "Monday to Friday, 9:00am to 5:00pm EST (overnight shift)"], ["Rate", "$34.75 per hour, paid weekly"], ["Equipment", "Laptop, printer, headset, from our {{warehouse_city}} facility"], ["Deposit due", "$48.50, refunded with your first pay"]]},
+          {"kind": "text", "body": "[b]About your employer.[/b] Verity Valley Power & Light is the largest employer in Verity County, with over 900 employees serving 41,000 homes. The company rebuilt its Gridfall substation after the 2004 lightning fire that claimed the lives of two firefighters, and has invested in community safety ever since."},
+          {"kind": "text", "body": "Sincerely,\n\n{{hr_rep_name}}\nSenior Recruitment Officer\nDirect: 1-888-441-0092 (voicemail only)\n\n[i]Generated automatically. Do not reply to this address. {{template_error_undefined_ref}}[/i]"},
+          {"kind": "text", "body": "[b]Next step:[/b] [url=/verify]Applicant Verification, Step 3 of 4[/url]. This offer expires in {{hours_remaining}} hours.\n\nYour W-4 and I-9 are at [url=synth://onboarding-docs-verity.zip/forms]onboarding-docs-verity.zip[/url]. Print both, sign, photograph them with your telephone."}
+        ]
+      },
+      {
+        "id": "verify",
+        "name": "Applicant Verification",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Applicant verification -- Step 3 of 4"},
+          {"kind": "text", "body": "Before equipment can be released to your address we must verify your identity and hold a deposit against the hardware. The deposit is [b]$48.50[/b] and is returned in full with your first weekly pay."},
+          {"kind": "list", "ordered": true, "items": ["Your full legal name as it appears on your identification.", "A photograph of your driver's licence, front and back, held in your hand.", "Your bank routing number and account number. Checking is processed faster than savings.", "Your branch name and its telephone number.", "A photograph of your debit card, front and back, signature strip visible.", "Your mother's maiden name, for security."]},
+          {"kind": "table", "head": ["ITEM", "AMOUNT", "REFUNDABLE"], "rows": [["Equipment deposit", "$48.50", "Yes, with first pay"], ["Background screening", "$79.00", "Yes, with second pay"], ["Payroll enrolment", "$22.50", "No"], ["TOTAL DUE TODAY", "$150.00", ""]]},
+          {"kind": "text", "body": "Pay by prepaid gift card, which is fastest, by transfer through an app, or by money order. Card numbers may be photographed and sent to your recruiter by text. [b]Do not send cash in the post.[/b]\n\nProcessing is by our secure partner at [url=synth://verity-payroll-direct.finance/enroll]Verity Payroll Direct[/url]. If that page does not load use [url=synth://vcp-verify-secure.top/step3]vcp-verify-secure.top[/url]. Both are safe and encrypted. Status: [url=synth://county-jobs-verify.win/status]county-jobs-verify.win[/url], with the reference from your [url=/offer]offer letter[/url].\n\n[i]Verify before {{deadline_date}} and receive a $250 signing bonus with your first cheque.[/i]"},
+          {"kind": "heading", "level": 2, "text": "Applicant message board"},
+          {"kind": "guestbook", "entries": [
+            {"author": "Verity Jobs Daily", "time": "08/27/2026", "body": "Residents of {{city}} are encouraged to apply. This employer has been recognized by local officials for its commitment to the community and continues to hire across the {{city}} area."},
+            {"author": "Tanya M.", "time": "09/02/2026", "body": "I paid the $48.50 on Wednesday and then the text said $79 for a background check, and after that $22.50 for payroll. That is when I rang the bank and the bank stopped the card. I am out $48.50 and the pictures of my licence, and the licence is the part I am sick about."},
+            {"author": "CareerBoost AI", "time": "09/05/2026", "body": "Thank you for your interest, {{applicant_first_name}}! Your application for {{position_title}} at {{company_name}} is being reviewed by our team in {{city}}, {{state}}."},
+            {"author": "R. Vosburg, Halsey", "time": "09/08/2026", "body": "There is no such job. My mother got this letter with a different account number on it and the same reference number as mine. Ring the sheriff's non-emergency line, 782-1200, and make the report even if you never paid them anything. They are counting."},
+            {"author": "Anonymous", "time": "09/11/2026", "body": "is this the county or not. the front page says official and the questions page says you are not the government"}
+          ]}
+        ]
+      },
+      {
+        "id": "faq",
+        "name": "Applicant Questions",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Applicant questions"},
+          {"kind": "heading", "level": 2, "text": "Is this the county's own website?"},
+          {"kind": "text", "body": "The Portal is an independent authorized hiring partner and is not affiliated with any government agency, employer or utility named on this site."},
+          {"kind": "heading", "level": 2, "text": "Why is a deposit required?"},
+          {"kind": "text", "body": "It protects our employer partners against loss of equipment shipped to a home address. It is standard across the industry and fully refundable with your first weekly pay, issued the Friday after your start date of {{start_date}}."},
+          {"kind": "heading", "level": 2, "text": "My equipment has not arrived."},
+          {"kind": "text", "body": "Shipping from our {{warehouse_city}} facility takes 3 to 5 business days. Track it at [url=synth://onboarding-docs-verity.zip/tracking]onboarding-docs-verity.zip[/url]. If tracking shows no movement after ten days a second deposit may be required to release a replacement unit."},
+          {"kind": "heading", "level": 2, "text": "Can I speak to someone by telephone?"},
+          {"kind": "text", "body": "All communication is by text message, for the safety and convenience of our applicants. The office at 118 Mill Street is not open to the public and does not accept walk-in applicants."},
+          {"kind": "text", "body": "[i]Copyright (c) 2028 Verity County Regional Careers Portal. All Rights Reserved.[/i]"}
+        ]
+      },
+      {
+        "id": "privacy",
+        "name": "Privacy Policy",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Privacy policy"},
+          {"kind": "text", "body": "[i]Effective 1 January 2019. Last reviewed {{review_date}}.[/i]"},
+          {"kind": "text", "body": "Bright Meadow Dental Group, PLLC (\"the Practice\") is committed to protecting the privacy of our patients. This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully."},
+          {"kind": "heading", "level": 2, "text": "Protected health information"},
+          {"kind": "text", "body": "The Practice may use your treatment records, radiographs and appointment history for treatment, payment and health care operations as permitted under HIPAA. We may disclose information to a dental laboratory in order to fabricate a restoration, and to your carrier in order to obtain payment for services rendered."},
+          {"kind": "heading", "level": 2, "text": "Appointment reminders"},
+          {"kind": "text", "body": "We may contact you by telephone, text message or postcard to remind you that your six month recall is due. If you do not wish to receive reminders, tell the front desk at check-in. Our four locations and their hours are listed at [url=synth://brightmeadowdental.biz/patients]brightmeadowdental.biz[/url]."},
+          {"kind": "heading", "level": 2, "text": "Your California privacy rights"},
+          {"kind": "text", "body": "Residents of California may request a list of third parties to whom personal information was disclosed for direct marketing purposes in the preceding calendar year. Direct requests to the Practice Privacy Officer, Dr. {{provider_name}}, at the address on the Contact page.\n\nCopyright (c) 2028 Verity County Regional Careers Portal. All Rights Reserved."}
+        ]
+      }
+    ]
+  }
+}
