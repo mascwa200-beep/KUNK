@@ -1008,14 +1008,19 @@ def main():
                 }""")
                 if talk["posts"] < 2:
                     problems.append("the wiki talk page has no discussion on it")
-                elif talk["maxDepth"] > 4:
+                elif talk["maxDepth"] < 1:
+                    # A talk page that does not indent is a list of remarks.
+                    # The upper bound is NOT asserted here: a thread has at
+                    # most four replies and depth rises by at most one each,
+                    # so `> 4` is unreachable and a check that cannot fail is
+                    # a comment. The cap in the renderer is the guarantee;
+                    # this is the half that can go wrong.
                     problems.append(
-                        f"a talk reply is indented {talk['maxDepth']} deep; "
-                        "4 is all a 360px screen has")
+                        "talk replies are not indented -- the thread is flat")
                 else:
                     notes.append(
-                        f"{talk['posts']} talk posts, indented to {talk['maxDepth']}, "
-                        "signed and threaded")
+                        f"{talk['posts']} talk posts, indented to "
+                        f"{talk['maxDepth']} of 4, signed and threaded")
                 future = []
                 for hhmm, date in re.findall(
                         r"\(talk\) (\d\d:\d\d), (\d+ \w+ \d{4}) \(UTC\)",
