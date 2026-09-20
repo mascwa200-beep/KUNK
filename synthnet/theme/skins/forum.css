@@ -939,3 +939,58 @@
   /* #b06a00 is 4.6:1 on every one of the three backgrounds these sit on. */
   color: #b06a00;
 }
+
+/* --- the moderation log -------------------------------------------------
+ * Public because every board eventually concludes it has to be. It does not
+ * make anyone fairer; it makes the unfairness legible, which is the only
+ * thing that has ever reduced the arguing.
+ */
+.skin-phpbb-blue .modlog,
+.skin-ezboard-grey .modlog,
+.skin-softboard .modlog { margin: 8px 0 14px; }
+
+.skin-phpbb-blue .modlog-row,
+.skin-ezboard-grey .modlog-row,
+.skin-softboard .modlog-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+.skin-softboard .modlog-row { padding: 9px 12px; font-size: 13px; }
+
+.skin-phpbb-blue .modlog-when,
+.skin-ezboard-grey .modlog-when,
+.skin-softboard .modlog-when {
+  flex: 0 0 auto;
+  min-width: 88px;
+  color: #6b6f76;
+}
+.skin-phpbb-blue .modlog-what,
+.skin-ezboard-grey .modlog-what,
+.skin-softboard .modlog-what { font-weight: bold; }
+.skin-phpbb-blue .modlog-by,
+.skin-ezboard-grey .modlog-by,
+.skin-softboard .modlog-by { color: #6b6f76; }
+.skin-phpbb-blue .modlog-why,
+.skin-ezboard-grey .modlog-why,
+.skin-softboard .modlog-why {
+  flex: 1 1 100%;
+  color: #55606b;
+  font-style: italic;
+}
+.skin-phpbb-blue .modlog-target,
+.skin-ezboard-grey .modlog-target,
+.skin-softboard .modlog-target { min-width: 0; overflow-wrap: break-word; }
+
+/* A ban is the one that gets argued about, so it is the one with a colour. */
+.skin-phpbb-blue .modlog-banned .modlog-what,
+.skin-ezboard-grey .modlog-banned .modlog-what,
+.skin-softboard .modlog-banned .modlog-what { color: #a33b2a; }
+/* And a dismissed report is the one nobody reads, so it is the quiet one. */
+.skin-phpbb-blue .modlog-nothing,
+.skin-ezboard-grey .modlog-nothing,
+.skin-softboard .modlog-nothing { opacity: 0.72; }

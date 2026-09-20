@@ -10,6 +10,36 @@ window.SYNTH = window.SYNTH || {};
 
   var MAX = 480;
 
+  /* --- the throttle -------------------------------------------------------
+   *
+   * Read from the posts already on disk rather than kept in a variable, so
+   * it survives a reload and a navigation the way a real one does -- a
+   * throttle you can escape by pressing F5 is a decoration.
+   *
+   * Thirty seconds between posts to one site. Slower than any real platform
+   * because there is only one of you here, and being told to wait five
+   * minutes in an app with no other users would just be annoying.
+   */
+  var THROTTLE_S = 30;
+
+  function throttleLeft(domain) {
+    if (!S.me || typeof S.me.posts !== 'function') { return 0; }
+    var mine = [];
+    try { mine = S.me.posts(domain) || []; } catch (e) { return 0; }
+    var last = 0, i;
+    for (i = 0; i < mine.length; i++) {
+      if ((mine[i].at || 0) > last) { last = mine[i].at || 0; }
+    }
+    if (!last) { return 0; }
+    var nowMs = (S.live && S.live.now) ? S.live.now() : Date.now();
+    var since = (nowMs - last) / 1000;
+    /* The clock can be pinned backwards by a test or a screenshot. A
+     * negative gap is not a violation. */
+    if (since < 0) { return 0; }
+    var left = Math.ceil(THROTTLE_S - since);
+    return left > 0 ? left : 0;
+  }
+
   /* ---------- small helpers ---------- */
 
   function E(ctx) {
@@ -275,6 +305,18 @@ window.SYNTH = window.SYNTH || {};
       if (!text || text.length > MAX) return;
       if (!S.me || typeof S.me.addPost !== 'function') {
         say('Posting is unavailable right now.');
+        return;
+      }
+
+      /* "You're doing that too much." Every platform has this and it is
+       * always the same sentence, always slightly patronising, and always
+       * arrives when you are mid-argument. There was no throttle of any kind
+       * here, which made the composer the one part of this network that has
+       * never told you no. */
+      var wait = throttleLeft(domain);
+      if (wait > 0) {
+        say('You are doing that too much. Try again in ' + wait +
+            (wait === 1 ? ' second.' : ' seconds.'));
         return;
       }
       post.disabled = true;

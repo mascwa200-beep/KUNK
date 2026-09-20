@@ -942,12 +942,73 @@ window.SYNTH = window.SYNTH || {};
 
   /* --------------------------------------------------------------- export */
 
+  /* --- the audience leaving ----------------------------------------------
+   *
+   * Everything in this file until now moved one way. You gained followers by
+   * posting and lost them by being ratioed, and if you stopped posting
+   * entirely the number you had in March was still there in September. That
+   * is the one thing no platform has ever done.
+   *
+   * An audience is not a possession, it is attention, and attention is on
+   * loan. So followers drain while you are not posting, fast at first and
+   * then slowly: the people who followed you for one thing leave within the
+   * week, and the ones still there after two months are not going anywhere.
+   *
+   *   kept(days) = floor + (1 - floor) * 2^(-days / halfLife)
+   *
+   * A pure function of (followers, silence), constant time, nothing stored
+   * and nothing accumulated -- the same rule as everything else here. The
+   * floor is 62%, so going quiet costs you the loan and not the principal;
+   * a network where walking away for a month zeroed you would be a different
+   * and much crueller joke than the one this is making.
+   *
+   * Nothing decays in the first three days. Not posting over a weekend is
+   * not a lapse. */
+  var DECAY_GRACE_D = 3;
+  var DECAY_HALFLIFE_D = 21;
+  var DECAY_FLOOR = 0.62;
+
+  function decayed(followers, lastPostMs, atMs) {
+    var n = Math.max(0, Number(followers) || 0);
+    var L = window.SYNTH.live;
+    var last = (L && L.toMs) ? L.toMs(lastPostMs) : null;
+    if (last === null || !n) { return n; }
+    var at = (typeof atMs === 'number')
+      ? atMs : ((L && L.now) ? L.now() : Date.now());
+
+    var days = (at - last) / 86400000 - DECAY_GRACE_D;
+    if (days <= 0) { return n; }
+
+    var kept = DECAY_FLOOR + (1 - DECAY_FLOOR) *
+      Math.pow(2, -days / DECAY_HALFLIFE_D);
+    return Math.floor(n * kept);
+  }
+
+  /* How many went, and a line for the digest. Returns null when nobody has. */
+  function drift(profile, atMs) {
+    var p = profile || {};
+    var had = Math.max(0, Number(p.followers) || 0);
+    var now2 = decayed(had, p.lastPostAt || p.lastPost || null, atMs);
+    var gone = had - now2;
+    if (gone < 1) { return null; }
+    return {
+      had: had,
+      now: now2,
+      gone: gone,
+      note: gone === 1
+        ? 'One person stopped following you while you were not posting.'
+        : gone + ' people stopped following you while you were not posting.'
+    };
+  }
+
   SYNTH.fame = {
     score: score,
     tierFor: tierFor,
     milestones: milestones,
     events: events,
     dmsFor: dmsFor,
+    decayed: decayed,
+    drift: drift,
     tuning: tuning
   };
 })();

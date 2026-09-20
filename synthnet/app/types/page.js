@@ -1,7 +1,8 @@
 /* SYNTHNET - personal homepage renderer.
    Paths:  /            first page
            /<pageId>    any page
-   Block kinds: heading text list table image marquee hitcounter guestbook webring
+   Block kinds: heading text list table image marquee hitcounter guestbook
+                webring buttons
    Classic script, no modules. */
 (function () {
   'use strict';
@@ -21,7 +22,11 @@
     avatar: [96, 96],
     thumb: [140, 105],
     banner: [400, 60],
-    photo: [320, 210]
+    photo: [320, 210],
+    /* 88x31. Not an arbitrary number -- it is THE number, the size every
+     * button on every personal page between about 1996 and 2004 was, because
+     * that is what the first few sites made and everyone copied them. */
+    button: [88, 31]
   };
 
   /* Last-resort placeholder if markup.js gives us nothing: pure CSS, no assets. */
@@ -97,6 +102,42 @@
           'Guestbook (' + list.length + (list.length === 1 ? ' signature)' : ' signatures)')),
         list.length ? ul : el('p', { class: 'pg-empty' }, 'Nobody has signed yet. Be the first!'),
         el('p', { class: 'pg-gb-note' }, 'Signing is temporarily disabled. Sorry!'));
+    }
+
+    /* The button wall. Rows of 88x31 badges: the ring you are in, the browser
+     * you want people to use, the host, a friend's site, a cause, a joke.
+     * Some of them link somewhere and some of them never did -- a button for
+     * a site that went away is still on the page, because taking it down
+     * would mean editing the HTML by hand and nobody did that either. */
+    function buttons(block) {
+      var items = Array.isArray(block.items) ? block.items : [];
+      var wall = el('div', { class: 'pg-buttons' });
+      if (block.label) {
+        wall.appendChild(el('div', { class: 'pg-buttons-label' },
+          String(block.label)));
+      }
+      var row = el('div', { class: 'pg-button-row' }), i;
+      for (i = 0; i < items.length; i++) {
+        var b = items[i] || {};
+        var label = String(b.label || 'button');
+        var badge = el('span', { class: 'pg-button', title: label });
+        badge.appendChild(imageNode(String(b.seed || label), 'button'));
+        badge.appendChild(el('span', { class: 'pg-button-alt' }, label));
+
+        if (b.domain) {
+          var a = link('synth://' + String(b.domain) + '/', '', 'pg-button-link');
+          a.appendChild(badge);
+          a.setAttribute('title', label);
+          row.appendChild(a);
+        } else {
+          /* No domain: the button is decoration, or points somewhere that
+           * stopped existing. It stays on the wall either way. */
+          badge.className = 'pg-button is-dead';
+          row.appendChild(badge);
+        }
+      }
+      wall.appendChild(row);
+      return wall;
     }
 
     function webring(block) {
@@ -196,6 +237,7 @@
       if (kind === 'hitcounter') { return odometer(b.count); }
       if (kind === 'guestbook') { return guestbook(b.entries); }
       if (kind === 'webring') { return webring(b); }
+      if (kind === 'buttons') { return buttons(b); }
 
       return el('div', { class: 'pg-unknown' }, '[unsupported block: ' + kind + ']');
     }

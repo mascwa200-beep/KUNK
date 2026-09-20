@@ -26,120 +26,459 @@
         "id": "home",
         "name": "Ring Home",
         "blocks": [
-          { "kind": "marquee", "text": "THE GRIDFALL WEBRING -- 11 SITES -- ADDED THIS MONTH: TOM NORRIS, CODE AND COFFEE -- QUEUE: 2 PENDING" },
-          { "kind": "image", "seed": "gridfall-ring-banner", "imgKind": "banner", "caption": "The Gridfall Webring" },
-          { "kind": "heading", "level": 1, "text": "The Gridfall Webring" },
-          { "kind": "text", "body": "A webring for sites from Verity County, or about it, or made by people who live here. Started November 2001 by Jeanne Vance because there was no index of any of this and people kept emailing each other asking where so-and-so's page had gone.\n\nIt is a ring, not a directory. Every member puts the navigation code at the bottom of one page, and from any member site you can walk to the next one, and eventually you come back to where you started. That is the whole idea and it has worked fine for a year and a half.\n\n[b]Membership is free and it always will be.[/b] See [url=/join]How To Join[/url]. The full list is on [url=/members]the member page[/url]." },
-          { "kind": "heading", "level": 2, "text": "Ring rules, short version" },
-          { "kind": "list", "ordered": true, "items": [
-            "Your site has something to do with Verity County. Loosely is fine. Tom's flood essay and a page about a leaf blower are both in.",
-            "The navigation code goes on a page a visitor can actually reach, not buried three clicks down.",
-            "No commercial sites. A business that keeps a page of local history is welcome. A page that is a price list is not.",
-            "Nothing that would embarrass you if your mother followed the ring to it.",
-            "If your site moves, email me. If your site dies, email me. If you do neither I will notice within a month or two and move you to the graveyard section.",
-            "I am not a moderator. Arguments between members are between members. Take them to the boards like everybody else."
-          ] },
-          { "kind": "heading", "level": 2, "text": "Ring status" },
-          { "kind": "table", "head": ["", ""], "rows": [
-            ["Members in the ring", "11"],
-            ["Pending applications", "2"],
-            ["Removed for dead links", "3 (since 2001)"],
-            ["Ring maintained by", "Jeanne Vance, Gridfall"],
-            ["Last link check", "the first Saturday of the month, by hand, with a notepad"],
-            ["Navigation code version", "1.2 (updated 03/2002, adds the RANDOM link)"]
-          ] },
-          { "kind": "text", "body": "[b]Note on the link check.[/b] I sit down with coffee and I click every link in the ring. It takes about twenty minutes. Several people have offered to write me a program that does it and I have said no every time, because when I do it by hand I actually read what people have posted that month, and that is the only reason I still enjoy running this.\n\n[i]Added 09/2003:[/i] the ring was down for nine days in August because the machine this is on lives in Gridfall and so did the power. Everything is back. Nothing was lost. Thank you to the four people who emailed to check on me, and to the one person who emailed to complain, who I hope had a nice week." },
-          { "kind": "guestbook", "entries": [
-            { "author": "D. Furniss", "time": "11/12/2002", "body": "Astronomy club is in. Code is on our front page at the bottom. Ben put it on for me." },
-            { "author": "M. Vance", "time": "01/04/2003", "body": "Hi Mom." },
-            { "author": "Jeanne V.", "time": "01/04/2003", "body": "Put the code on your site, Marla." },
-            { "author": "M. Vance", "time": "01/06/2003", "body": "It is on my site." },
-            { "author": "gnash_44", "time": "05/19/2003", "body": "webrings are dead, nobody uses these anymore, its 2003" },
-            { "author": "Jeanne V.", "time": "05/19/2003", "body": "And yet here you are, in the guestbook, on the webring." },
-            { "author": "T. Norris", "time": "02/28/2005", "body": "Mrs. Vance, thank you for the invitation. I have added your code at the bottom of my contact page. I hope I have done it correctly. If I have not, please telephone." },
-            { "author": "kestrelbird", "time": "06/11/2007", "body": "Applied last week. No rush. Nice to find an index of any of this that a person maintains instead of a machine." }
-          ] },
-          { "kind": "webring", "ringName": "The Gridfall Webring", "members": [
-            { "label": "The Gridfall Boards", "domain": "boards.gridfall.net" },
-            { "label": "Verity Rail Forums", "domain": "forums.verityrail.org" },
-            { "label": "Gridfall Pulse", "domain": "pulse.gridfall.net" },
-            { "label": "Marla Vance", "domain": "marla.verity.net" },
-            { "label": "The Verity Ledger", "domain": "verityledger.com" },
-            { "label": "Blue Kestrel Journal", "domain": "kestrel-journal.net" },
-            { "label": "Code and Coffee", "domain": "codeandcoffee.blog" },
-            { "label": "The Gridfall Wiki", "domain": "wiki.gridfall.net" },
-            { "label": "ClipVault", "domain": "clipvault.tv" },
-            { "label": "Verity County Amateur Astronomers", "domain": "stargazers.verity.net" },
-            { "label": "Tom Norris", "domain": "tnorris.verity.net" }
-          ] },
-          { "kind": "hitcounter", "count": 48219 }
+          {
+            "kind": "marquee",
+            "text": "THE GRIDFALL WEBRING -- 11 SITES -- ADDED THIS MONTH: TOM NORRIS, CODE AND COFFEE -- QUEUE: 2 PENDING"
+          },
+          {
+            "kind": "image",
+            "seed": "gridfall-ring-banner",
+            "imgKind": "banner",
+            "caption": "The Gridfall Webring"
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The Gridfall Webring"
+          },
+          {
+            "kind": "text",
+            "body": "A webring for sites from Verity County, or about it, or made by people who live here. Started November 2001 by Jeanne Vance because there was no index of any of this and people kept emailing each other asking where so-and-so's page had gone.\n\nIt is a ring, not a directory. Every member puts the navigation code at the bottom of one page, and from any member site you can walk to the next one, and eventually you come back to where you started. That is the whole idea and it has worked fine for a year and a half.\n\n[b]Membership is free and it always will be.[/b] See [url=/join]How To Join[/url]. The full list is on [url=/members]the member page[/url]."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Ring rules, short version"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Your site has something to do with Verity County. Loosely is fine. Tom's flood essay and a page about a leaf blower are both in.",
+              "The navigation code goes on a page a visitor can actually reach, not buried three clicks down.",
+              "No commercial sites. A business that keeps a page of local history is welcome. A page that is a price list is not.",
+              "Nothing that would embarrass you if your mother followed the ring to it.",
+              "If your site moves, email me. If your site dies, email me. If you do neither I will notice within a month or two and move you to the graveyard section.",
+              "I am not a moderator. Arguments between members are between members. Take them to the boards like everybody else."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Ring status"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "Members in the ring",
+                "11"
+              ],
+              [
+                "Pending applications",
+                "2"
+              ],
+              [
+                "Removed for dead links",
+                "3 (since 2001)"
+              ],
+              [
+                "Ring maintained by",
+                "Jeanne Vance, Gridfall"
+              ],
+              [
+                "Last link check",
+                "the first Saturday of the month, by hand, with a notepad"
+              ],
+              [
+                "Navigation code version",
+                "1.2 (updated 03/2002, adds the RANDOM link)"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Note on the link check.[/b] I sit down with coffee and I click every link in the ring. It takes about twenty minutes. Several people have offered to write me a program that does it and I have said no every time, because when I do it by hand I actually read what people have posted that month, and that is the only reason I still enjoy running this.\n\n[i]Added 09/2003:[/i] the ring was down for nine days in August because the machine this is on lives in Gridfall and so did the power. Everything is back. Nothing was lost. Thank you to the four people who emailed to check on me, and to the one person who emailed to complain, who I hope had a nice week."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "D. Furniss",
+                "time": "11/12/2002",
+                "body": "Astronomy club is in. Code is on our front page at the bottom. Ben put it on for me."
+              },
+              {
+                "author": "M. Vance",
+                "time": "01/04/2003",
+                "body": "Hi Mom."
+              },
+              {
+                "author": "Jeanne V.",
+                "time": "01/04/2003",
+                "body": "Put the code on your site, Marla."
+              },
+              {
+                "author": "M. Vance",
+                "time": "01/06/2003",
+                "body": "It is on my site."
+              },
+              {
+                "author": "gnash_44",
+                "time": "05/19/2003",
+                "body": "webrings are dead, nobody uses these anymore, its 2003"
+              },
+              {
+                "author": "Jeanne V.",
+                "time": "05/19/2003",
+                "body": "And yet here you are, in the guestbook, on the webring."
+              },
+              {
+                "author": "T. Norris",
+                "time": "02/28/2005",
+                "body": "Mrs. Vance, thank you for the invitation. I have added your code at the bottom of my contact page. I hope I have done it correctly. If I have not, please telephone."
+              },
+              {
+                "author": "kestrelbird",
+                "time": "06/11/2007",
+                "body": "Applied last week. No rush. Nice to find an index of any of this that a person maintains instead of a machine."
+              }
+            ]
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              {
+                "label": "The Gridfall Boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "Verity Rail Forums",
+                "domain": "forums.verityrail.org"
+              },
+              {
+                "label": "Gridfall Pulse",
+                "domain": "pulse.gridfall.net"
+              },
+              {
+                "label": "Marla Vance",
+                "domain": "marla.verity.net"
+              },
+              {
+                "label": "The Verity Ledger",
+                "domain": "verityledger.com"
+              },
+              {
+                "label": "Blue Kestrel Journal",
+                "domain": "kestrel-journal.net"
+              },
+              {
+                "label": "Code and Coffee",
+                "domain": "codeandcoffee.blog"
+              },
+              {
+                "label": "The Gridfall Wiki",
+                "domain": "wiki.gridfall.net"
+              },
+              {
+                "label": "ClipVault",
+                "domain": "clipvault.tv"
+              },
+              {
+                "label": "Verity County Amateur Astronomers",
+                "domain": "stargazers.verity.net"
+              },
+              {
+                "label": "Tom Norris",
+                "domain": "tnorris.verity.net"
+              }
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 48219
+          }
         ]
       },
       {
         "id": "members",
         "name": "Member List",
         "blocks": [
-          { "kind": "heading", "level": 1, "text": "Member Sites" },
-          { "kind": "text", "body": "Eleven sites, listed in the order they joined. Click any of them. If one is broken, [url=/join]the join page[/url] has my email at the bottom and I will pull it at the next link check." },
-          { "kind": "table", "head": ["#", "SITE", "JOINED", "WHAT IT IS"], "rows": [
-            ["1", "[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "11/2001", "The county's general message board: parking, school taxes, the substation, and a decade of people correcting each other."],
-            ["2", "[url=synth://verityledger.com/]The Verity Ledger[/url]", "12/2001", "The local newspaper online, twice weekly, plus the archive going back to 1998."],
-            ["3", "[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]", "02/2002", "Everything about the Cutler branch line: operations, the closure, and what happens to the right of way now."],
-            ["4", "[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "05/2002", "A volunteer encyclopedia of Verity County. Careful, sourced, and argued over in the talk pages."],
-            ["5", "[url=synth://stargazers.verity.net/]Verity County Amateur Astronomers[/url]", "11/2002", "The county astronomy club: meeting notices, the Perrin Hill observing log, and a standing grievance about barn lights."],
-            ["6", "[url=synth://marla.verity.net/]Marla Vance[/url]", "01/2003", "Personal site of a writer who grew up here and keeps coming back to write about it."],
-            ["7", "[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]", "08/2003", "A weblog about the diner on Ellery Street and the block it stood on, still updated after the closing."],
-            ["8", "[url=synth://pulse.gridfall.net/]Gridfall Pulse[/url]", "04/2004", "Short posts, fast, mostly by people under thirty. The rest of us read it and pretend not to."],
-            ["9", "[url=synth://codeandcoffee.blog/]Code and Coffee[/url]", "10/2004", "A programmer's weblog from Gridfall. Explains why your tables are crooked, kindly."],
-            ["10", "[url=synth://tnorris.verity.net/]Tom Norris[/url]", "02/2005", "A retired county surveyor's page, with the best account anywhere of the 1994 flood."],
-            ["11", "[url=synth://clipvault.tv/]ClipVault[/url]", "06/2007", "Video: camcorder tape of the substation fire, the last train, the diner's final day, and a great deal about leaf blowers."]
-          ] },
-          { "kind": "heading", "level": 2, "text": "Pending" },
-          { "kind": "list", "ordered": false, "items": [
-            "A page about the county fair, 1970 to present. Applied 08/2007. Waiting on the navigation code to go up.",
-            "A church history page from Cutler. Applied 09/2007. I have written twice and had no answer, which usually means somebody built a site and then got busy."
-          ] },
-          { "kind": "heading", "level": 2, "text": "The graveyard" },
-          { "kind": "text", "body": "Sites that were in the ring and are gone. I keep the names here because somebody, someday, is going to go looking for them and at least this way they will know they existed.\n\n[list][*][b]The Herron Road Garage page[/b] (2002-2004). Repair advice and a photo of every car that came in. Vanished when the shop closed.[*][b]Ben Tosches' page[/b] (2002-2005). Telescope building, a Quake page, and a long section about a lawnmower engine. He went to college and it went away. Ben, if you are reading this, you still have a slot.[*][b]The Gridfall Little League site[/b] (2003-2006). Schedules and standings. Replaced by something the league pays for that nobody can find anything on.[/list]" },
-          { "kind": "image", "seed": "ring-member-map", "imgKind": "photo", "caption": "Hand-drawn ring order, taped above Jeanne's monitor. Scanned at the library because our scanner has never once worked." },
-          { "kind": "hitcounter", "count": 19604 }
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Member Sites"
+          },
+          {
+            "kind": "text",
+            "body": "Eleven sites, listed in the order they joined. Click any of them. If one is broken, [url=/join]the join page[/url] has my email at the bottom and I will pull it at the next link check."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "#",
+              "SITE",
+              "JOINED",
+              "WHAT IT IS"
+            ],
+            "rows": [
+              [
+                "1",
+                "[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]",
+                "11/2001",
+                "The county's general message board: parking, school taxes, the substation, and a decade of people correcting each other."
+              ],
+              [
+                "2",
+                "[url=synth://verityledger.com/]The Verity Ledger[/url]",
+                "12/2001",
+                "The local newspaper online, twice weekly, plus the archive going back to 1998."
+              ],
+              [
+                "3",
+                "[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]",
+                "02/2002",
+                "Everything about the Cutler branch line: operations, the closure, and what happens to the right of way now."
+              ],
+              [
+                "4",
+                "[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]",
+                "05/2002",
+                "A volunteer encyclopedia of Verity County. Careful, sourced, and argued over in the talk pages."
+              ],
+              [
+                "5",
+                "[url=synth://stargazers.verity.net/]Verity County Amateur Astronomers[/url]",
+                "11/2002",
+                "The county astronomy club: meeting notices, the Perrin Hill observing log, and a standing grievance about barn lights."
+              ],
+              [
+                "6",
+                "[url=synth://marla.verity.net/]Marla Vance[/url]",
+                "01/2003",
+                "Personal site of a writer who grew up here and keeps coming back to write about it."
+              ],
+              [
+                "7",
+                "[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]",
+                "08/2003",
+                "A weblog about the diner on Ellery Street and the block it stood on, still updated after the closing."
+              ],
+              [
+                "8",
+                "[url=synth://pulse.gridfall.net/]Gridfall Pulse[/url]",
+                "04/2004",
+                "Short posts, fast, mostly by people under thirty. The rest of us read it and pretend not to."
+              ],
+              [
+                "9",
+                "[url=synth://codeandcoffee.blog/]Code and Coffee[/url]",
+                "10/2004",
+                "A programmer's weblog from Gridfall. Explains why your tables are crooked, kindly."
+              ],
+              [
+                "10",
+                "[url=synth://tnorris.verity.net/]Tom Norris[/url]",
+                "02/2005",
+                "A retired county surveyor's page, with the best account anywhere of the 1994 flood."
+              ],
+              [
+                "11",
+                "[url=synth://clipvault.tv/]ClipVault[/url]",
+                "06/2007",
+                "Video: camcorder tape of the substation fire, the last train, the diner's final day, and a great deal about leaf blowers."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Pending"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "A page about the county fair, 1970 to present. Applied 08/2007. Waiting on the navigation code to go up.",
+              "A church history page from Cutler. Applied 09/2007. I have written twice and had no answer, which usually means somebody built a site and then got busy."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The graveyard"
+          },
+          {
+            "kind": "text",
+            "body": "Sites that were in the ring and are gone. I keep the names here because somebody, someday, is going to go looking for them and at least this way they will know they existed.\n\n[list][*][b]The Herron Road Garage page[/b] (2002-2004). Repair advice and a photo of every car that came in. Vanished when the shop closed.[*][b]Ben Tosches' page[/b] (2002-2005). Telescope building, a Quake page, and a long section about a lawnmower engine. He went to college and it went away. Ben, if you are reading this, you still have a slot.[*][b]The Gridfall Little League site[/b] (2003-2006). Schedules and standings. Replaced by something the league pays for that nobody can find anything on.[/list]"
+          },
+          {
+            "kind": "image",
+            "seed": "ring-member-map",
+            "imgKind": "photo",
+            "caption": "Hand-drawn ring order, taped above Jeanne's monitor. Scanned at the library because our scanner has never once worked."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 19604
+          },
+          {
+            "kind": "buttons",
+            "label": "Member buttons. Copy the code above yours onto your own page.",
+            "items": [
+              {
+                "label": "Stargazers",
+                "seed": "ring-stargazers",
+                "domain": "stargazers.verity.net"
+              },
+              {
+                "label": "T. Norris",
+                "seed": "ring-tnorris",
+                "domain": "tnorris.verity.net"
+              },
+              {
+                "label": "Kestrel Journal",
+                "seed": "ring-kestrel",
+                "domain": "kestrel-journal.net"
+              },
+              {
+                "label": "Verity Rail Fans",
+                "seed": "ring-rail"
+              },
+              {
+                "label": "Coyne Flats Hist.",
+                "seed": "ring-coyne"
+              },
+              {
+                "label": "MarchfieldWX",
+                "seed": "ring-wx"
+              }
+            ]
+          }
         ]
       },
       {
         "id": "join",
         "name": "How To Join",
         "blocks": [
-          { "kind": "heading", "level": 1, "text": "How To Join The Ring" },
-          { "kind": "text", "body": "Four steps. It takes about ten minutes and most of that is deciding where to put the code." },
-          { "kind": "list", "ordered": true, "items": [
-            "Read the rules on the ring home page. They are short and I mean all of them.",
-            "Put the navigation code below at the bottom of a page on your site that a visitor can reach from your front page.",
-            "Email me the address of that page, the name you want listed, and one sentence describing your site. One sentence. If you send me three I will pick my favorite and you may not like which one.",
-            "Wait for the next link check, which is the first Saturday of the month. I will write back either way."
-          ] },
-          { "kind": "heading", "level": 2, "text": "The navigation code" },
-          { "kind": "text", "body": "Paste this exactly. Change only the two places marked. If you do not know what any of it means, that is fine, it still works, and [url=synth://codeandcoffee.blog/]Code and Coffee[/url] has a patient explanation of tables if you ever get curious." },
-          { "kind": "text", "body": "[code]<!-- BEGIN GRIDFALL WEBRING CODE v1.2 -->\n<table border=1 cellpadding=4 cellspacing=0>\n<tr>\n  <td colspan=4 align=center>\n    <b>This site is a member of The Gridfall Webring</b>\n  </td>\n</tr>\n<tr>\n  <td><a href=\"synth://webring.gridfall.net/?go=prev&id=YOUR_ID\">[ Prev ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/?go=next&id=YOUR_ID\">[ Next ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/?go=random\">[ Random ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/members\">[ List All ]</a></td>\n</tr>\n<tr>\n  <td colspan=4 align=center>\n    Site owner: YOUR_NAME\n  </td>\n</tr>\n</table>\n<!-- END GRIDFALL WEBRING CODE -->[/code]\n\n[b]YOUR_ID[/b] is the number I send you when you are accepted. It is your position in the list on [url=/members]the member page[/url]. [b]YOUR_NAME[/b] is whatever you want people to call you.\n\nIf your page is plain and you would rather not have a table, that is allowed. Four links and the words [i]The Gridfall Webring[/i] are enough. Tom Norris does it that way and his site is the most-read one in the ring." },
-          { "kind": "heading", "level": 2, "text": "Questions people actually ask" },
-          { "kind": "table", "head": ["QUESTION", "ANSWER"], "rows": [
-            ["Does it cost anything?", "No. It never has and it never will. There is nothing to pay for."],
-            ["Do you put ads on my site?", "No. The code above is the entire thing. Read it. It is four links."],
-            ["My site is ugly.", "That is not a question, and also, have you seen the ring?"],
-            ["Can I be in it if I moved away?", "Yes, if the site is still about here. Two members do not live in the county anymore."],
-            ["Can I link the ring without joining?", "Of course. [url=synth://webring.gridfall.net/]synth://webring.gridfall.net/[/url] goes to the front page."],
-            ["Who decides what gets in?", "Me. It is my computer. I have turned down exactly two sites in six years and both of them were selling something."],
-            ["What happened in August 2003?", "The power went out for three days, this machine is in Gridfall, and so the ring went out too. See [url=synth://wiki.gridfall.net/]the wiki[/url]."]
-          ] },
-          { "kind": "heading", "level": 2, "text": "Contact" },
-          { "kind": "text", "body": "Jeanne Vance, Gridfall.\n\nEmail: [b]jeanne[/b] at [b]webring[/b] dot [b]gridfall[/b] dot [b]net[/b] -- please type it out, I do not put it up as a link because of the address harvesters.\n\nIf you would rather telephone, my number is in the book, and I would honestly rather you telephoned.\n\nIf you want to find the members without joining, start anywhere: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], [url=synth://forums.verityrail.org/]forums.verityrail.org[/url], [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url], [url=synth://marla.verity.net/]marla.verity.net[/url], [url=synth://verityledger.com/]verityledger.com[/url], [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url], [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], [url=synth://clipvault.tv/]clipvault.tv[/url], [url=synth://stargazers.verity.net/]stargazers.verity.net[/url], [url=synth://tnorris.verity.net/]tnorris.verity.net[/url]. Keep clicking and you will end up back here." },
-          { "kind": "marquee", "text": "NEXT LINK CHECK: FIRST SATURDAY OF THE MONTH -- IF YOUR SITE MOVED, TELL ME BEFORE THEN AND SAVE US BOTH THE TROUBLE" },
-          { "kind": "webring", "ringName": "The Gridfall Webring", "members": [
-            { "label": "Previous: ClipVault", "domain": "clipvault.tv" },
-            { "label": "Next: The Gridfall Boards", "domain": "boards.gridfall.net" },
-            { "label": "Random: Code and Coffee", "domain": "codeandcoffee.blog" },
-            { "label": "List All: Members", "domain": "webring.gridfall.net" }
-          ] },
-          { "kind": "hitcounter", "count": 11255 }
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "How To Join The Ring"
+          },
+          {
+            "kind": "text",
+            "body": "Four steps. It takes about ten minutes and most of that is deciding where to put the code."
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Read the rules on the ring home page. They are short and I mean all of them.",
+              "Put the navigation code below at the bottom of a page on your site that a visitor can reach from your front page.",
+              "Email me the address of that page, the name you want listed, and one sentence describing your site. One sentence. If you send me three I will pick my favorite and you may not like which one.",
+              "Wait for the next link check, which is the first Saturday of the month. I will write back either way."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The navigation code"
+          },
+          {
+            "kind": "text",
+            "body": "Paste this exactly. Change only the two places marked. If you do not know what any of it means, that is fine, it still works, and [url=synth://codeandcoffee.blog/]Code and Coffee[/url] has a patient explanation of tables if you ever get curious."
+          },
+          {
+            "kind": "text",
+            "body": "[code]<!-- BEGIN GRIDFALL WEBRING CODE v1.2 -->\n<table border=1 cellpadding=4 cellspacing=0>\n<tr>\n  <td colspan=4 align=center>\n    <b>This site is a member of The Gridfall Webring</b>\n  </td>\n</tr>\n<tr>\n  <td><a href=\"synth://webring.gridfall.net/?go=prev&id=YOUR_ID\">[ Prev ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/?go=next&id=YOUR_ID\">[ Next ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/?go=random\">[ Random ]</a></td>\n  <td><a href=\"synth://webring.gridfall.net/members\">[ List All ]</a></td>\n</tr>\n<tr>\n  <td colspan=4 align=center>\n    Site owner: YOUR_NAME\n  </td>\n</tr>\n</table>\n<!-- END GRIDFALL WEBRING CODE -->[/code]\n\n[b]YOUR_ID[/b] is the number I send you when you are accepted. It is your position in the list on [url=/members]the member page[/url]. [b]YOUR_NAME[/b] is whatever you want people to call you.\n\nIf your page is plain and you would rather not have a table, that is allowed. Four links and the words [i]The Gridfall Webring[/i] are enough. Tom Norris does it that way and his site is the most-read one in the ring."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Questions people actually ask"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "QUESTION",
+              "ANSWER"
+            ],
+            "rows": [
+              [
+                "Does it cost anything?",
+                "No. It never has and it never will. There is nothing to pay for."
+              ],
+              [
+                "Do you put ads on my site?",
+                "No. The code above is the entire thing. Read it. It is four links."
+              ],
+              [
+                "My site is ugly.",
+                "That is not a question, and also, have you seen the ring?"
+              ],
+              [
+                "Can I be in it if I moved away?",
+                "Yes, if the site is still about here. Two members do not live in the county anymore."
+              ],
+              [
+                "Can I link the ring without joining?",
+                "Of course. [url=synth://webring.gridfall.net/]synth://webring.gridfall.net/[/url] goes to the front page."
+              ],
+              [
+                "Who decides what gets in?",
+                "Me. It is my computer. I have turned down exactly two sites in six years and both of them were selling something."
+              ],
+              [
+                "What happened in August 2003?",
+                "The power went out for three days, this machine is in Gridfall, and so the ring went out too. See [url=synth://wiki.gridfall.net/]the wiki[/url]."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Contact"
+          },
+          {
+            "kind": "text",
+            "body": "Jeanne Vance, Gridfall.\n\nEmail: [b]jeanne[/b] at [b]webring[/b] dot [b]gridfall[/b] dot [b]net[/b] -- please type it out, I do not put it up as a link because of the address harvesters.\n\nIf you would rather telephone, my number is in the book, and I would honestly rather you telephoned.\n\nIf you want to find the members without joining, start anywhere: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], [url=synth://forums.verityrail.org/]forums.verityrail.org[/url], [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url], [url=synth://marla.verity.net/]marla.verity.net[/url], [url=synth://verityledger.com/]verityledger.com[/url], [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url], [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], [url=synth://clipvault.tv/]clipvault.tv[/url], [url=synth://stargazers.verity.net/]stargazers.verity.net[/url], [url=synth://tnorris.verity.net/]tnorris.verity.net[/url]. Keep clicking and you will end up back here."
+          },
+          {
+            "kind": "marquee",
+            "text": "NEXT LINK CHECK: FIRST SATURDAY OF THE MONTH -- IF YOUR SITE MOVED, TELL ME BEFORE THEN AND SAVE US BOTH THE TROUBLE"
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              {
+                "label": "Previous: ClipVault",
+                "domain": "clipvault.tv"
+              },
+              {
+                "label": "Next: The Gridfall Boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "Random: Code and Coffee",
+                "domain": "codeandcoffee.blog"
+              },
+              {
+                "label": "List All: Members",
+                "domain": "webring.gridfall.net"
+              }
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 11255
+          }
         ]
       }
     ]

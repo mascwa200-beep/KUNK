@@ -166,12 +166,24 @@
       var p = SYNTH.me.profile();
       if (!p) return null;
       var posts = SYNTH.me.posts();
-      var best = null;
+      var best = null, lastAt = 0;
       for (var i = 0; i < posts.length; i++) {
         if (!best || (posts[i].likes || 0) > (best.likes || 0)) best = posts[i];
+        if ((posts[i].at || 0) > lastAt) { lastAt = posts[i].at || 0; }
       }
+
+      /* An audience is attention on loan, and it is repaid in silence. The
+       * stored `followers` is what you ever had; `followers` here is what is
+       * still listening, which is the number worth showing. */
+      var had = p.followers || 0;
+      var live = (SYNTH.fame && SYNTH.fame.decayed && lastAt)
+        ? SYNTH.fame.decayed(had, lastAt) : had;
+
       return {
-        followers: p.followers || 0,
+        followers: live,
+        followersPeak: had,
+        followersLost: Math.max(0, had - live),
+        lastPostAt: lastAt || null,
         following: p.following || 0,
         posts: posts.length,
         totalLikes: p.totalLikes || 0,
@@ -179,7 +191,7 @@
         verified: !!p.verified,
         best: best,
         tier: (SYNTH.fame && SYNTH.fame.tierFor)
-          ? SYNTH.fame.tierFor(p.followers || 0) : null
+          ? SYNTH.fame.tierFor(live) : null
       };
     },
 

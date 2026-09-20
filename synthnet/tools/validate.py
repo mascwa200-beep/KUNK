@@ -69,10 +69,10 @@ ENVELOPE = ("schema", "domain", "title", "type", "era", "skin", "description",
             "links", "data")
 
 PAGE_BLOCK_KINDS = {"heading", "text", "list", "table", "image", "marquee",
-                    "hitcounter", "guestbook", "webring"}
+                    "hitcounter", "guestbook", "webring", "buttons"}
 
 PATH_PREFIXES = {
-    "forum": {"board", "topic"},
+    "forum": {"board", "topic", "modlog"},
     "social": {"user", "post"},
     "blog": {"post", "tag"},
     # A news site is not only articles. Live coverage, fact checks and the

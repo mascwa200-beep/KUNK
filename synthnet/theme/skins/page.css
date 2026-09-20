@@ -420,3 +420,80 @@
   .skin-tripod-tile .pg-gb-entry,
   .skin-plain-white .pg-gb-entry { padding: 5px 6px; }
 }
+
+/* --- the button wall ----------------------------------------------------
+ * 88x31, which is not an arbitrary size but THE size: what the first few
+ * sites made, and what everyone copied for the next eight years. A wall of
+ * them is the single most recognisable thing about a personal page.
+ */
+.skin-geocities .pg-buttons,
+.skin-tripod-tile .pg-buttons,
+.skin-plain-white .pg-buttons { margin: 14px 0; }
+
+.skin-geocities .pg-buttons-label,
+.skin-tripod-tile .pg-buttons-label,
+.skin-plain-white .pg-buttons-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.skin-geocities .pg-buttons-label { color: #ffff66; }
+.skin-tripod-tile .pg-buttons-label { color: #202020; }
+.skin-plain-white .pg-buttons-label { color: #333333; }
+
+.skin-geocities .pg-button-row,
+.skin-tripod-tile .pg-button-row,
+.skin-plain-white .pg-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skin-geocities .pg-button,
+.skin-tripod-tile .pg-button,
+.skin-plain-white .pg-button {
+  display: inline-block;
+  position: relative;
+  width: 88px;
+  height: 31px;
+  overflow: hidden;
+  border: 1px solid #000000;
+  line-height: 0;
+}
+.skin-geocities .pg-button .pg-image,
+.skin-tripod-tile .pg-button .pg-image,
+.skin-plain-white .pg-button .pg-image { margin: 0; }
+.skin-geocities .pg-button .pg-image-fallback,
+.skin-tripod-tile .pg-button .pg-image-fallback,
+.skin-plain-white .pg-button .pg-image-fallback {
+  width: 88px !important;
+  height: 31px !important;
+  border: 0 !important;
+}
+
+/* The label sits on the badge, because that is what the text baked into a
+   real one looked like: too small, slightly wrong, entirely legible. */
+.skin-geocities .pg-button-alt,
+.skin-tripod-tile .pg-button-alt,
+.skin-plain-white .pg-button-alt {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 1px 2px;
+  font: 9px/11px Verdana, Geneva, sans-serif;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.62);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* A button whose site went away. It stays on the wall, because taking it
+   down means editing the HTML by hand and nobody ever did. */
+.skin-geocities .pg-button.is-dead,
+.skin-tripod-tile .pg-button.is-dead,
+.skin-plain-white .pg-button.is-dead { opacity: 0.55; filter: grayscale(1); }
+
+.skin-geocities .pg-button-link,
+.skin-tripod-tile .pg-button-link,
+.skin-plain-white .pg-button-link { line-height: 0; text-decoration: none; }

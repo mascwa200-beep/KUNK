@@ -131,7 +131,8 @@
     var el = ctx.el;
     return el('div', { 'class': 'ffoot' },
       'Powered by a board script someone uploaded in ' + txt(ctx.site.era, '2003') + '. ' +
-      'All times are local.');
+      'All times are local. ',
+      ctx.link('/modlog', 'Moderation log', 'backlink'));
   }
 
   /* ---------- index ---------- */
@@ -698,6 +699,144 @@
     mount.appendChild(footer(ctx));
   }
 
+  /* --- the mod log --------------------------------------------------------
+   *
+   * Moderation on this network left no trace anywhere. Threads could be
+   * locked and posts could be gone, and there was no record of who did it or
+   * why -- which is the opposite of the thing forums argue about constantly.
+   * A public log is the compromise every board eventually lands on: it does
+   * not stop anyone being unfair, it just makes the unfairness legible.
+   *
+   * Derived from the clock like the wiki's revisions, so it accumulates
+   * while you are away and is the same list twice at the same instant.
+   */
+  var MOD_ACTIONS = [
+    ['locked', 'thread locked', 'going in circles'],
+    ['locked', 'thread locked', 'answered, twice'],
+    ['locked', 'thread locked', 'rule 3'],
+    ['removed', 'post removed', 'rule 1'],
+    ['removed', 'post removed', 'advertising'],
+    ['removed', 'post removed', 'reposted from the other board, verbatim'],
+    ['moved', 'thread moved', 'wrong board'],
+    ['moved', 'thread moved', 'belongs in Off Topic'],
+    ['warned', 'user warned', 'rule 2, second time'],
+    ['banned', 'user banned, 7 days', 'rule 2, third time'],
+    ['banned', 'user banned, permanent', 'the account was made this morning'],
+    ['pinned', 'thread pinned', 'people keep asking'],
+    ['unlocked', 'thread unlocked', 'on request. Behave.'],
+    ['nothing', 'report dismissed', 'this is not against any rule'],
+    ['nothing', 'report dismissed', 'I read the thread. It is fine.']
+  ];
+
+  /* Who moderates here, taken from the board's own staff rather than a
+   * hardcoded name. An earlier version defaulted to mod_dcarver, who is
+   * canon -- he pays the hosting on boards.gridfall.net out of pocket -- and
+   * therefore exactly the wrong person to be banning people on a swap board
+   * two domains over. The site already says who its staff are, in the title
+   * next to every post they make. */
+  function modsOf(d) {
+    var seen = {}, out = [], i, j, topics = arr(d.topics);
+    if (arr(d.moderators).length) { return arr(d.moderators); }
+    for (i = 0; i < topics.length; i++) {
+      var posts = arr(topics[i].posts);
+      for (j = 0; j < posts.length; j++) {
+        var p = posts[j];
+        if (!p.author || seen[p.author]) { continue; }
+        if (!isRole(p.authorTitle)) { continue; }
+        /* A bot does not moderate; it is the thing being moderated. */
+        var t = String(p.authorTitle).toLowerCase();
+        if (t.indexOf('bot') >= 0 || t.indexOf('automated') >= 0) { continue; }
+        seen[p.author] = 1;
+        out.push(p.author);
+      }
+    }
+    return out.length ? out : ['staff'];
+  }
+
+  function modLogRows(ctx, count) {
+    var L = window.SYNTH.live;
+    if (!L || !L.stream) { return []; }
+    var d = dat(ctx);
+    var mods = modsOf(d);
+
+    var rows = L.stream('modlog:' + ctx.site.domain, MOD_ACTIONS, 220, count || 24);
+    var out = [], i;
+    for (i = 0; i < rows.length; i++) {
+      var a = rows[i].item;
+      if (!a) { continue; }
+      out.push({
+        at: rows[i].at,
+        kind: a[0],
+        what: a[1],
+        why: a[2],
+        by: mods[L.hash32('modby:' + rows[i].seed) % mods.length],
+        /* A thread id if the content has one, so the entry points somewhere
+         * real rather than at a number nobody can follow. */
+        topic: pickTopic(d, rows[i].seed)
+      });
+    }
+    return out;
+  }
+
+  function pickTopic(d, seed) {
+    var L = window.SYNTH.live;
+    var topics = arr(d.topics);
+    if (!topics.length) { return null; }
+    return topics[L.hash32('modtopic:' + seed) % topics.length];
+  }
+
+  function renderModLog(ctx) {
+    var el = ctx.el, d = dat(ctx);
+    ctx.title('Moderation log - ' + txt(ctx.site.title, ctx.site.domain));
+
+    var mount = ctx.mount;
+    header(ctx, [
+      { label: 'Board index', href: '/' },
+      { label: 'Moderation log' }
+    ]).forEach(function (n) { mount.appendChild(n); });
+
+    var wrap = el('div', { 'class': 'fwrap' });
+
+    var head = el('div', { 'class': 'tbar' },
+      el('span', { 'class': 'tbar-title' }, 'Moderation log'),
+      el('span', { 'class': 'tbar-sub' },
+        'Public since 2009. Every action, and the reason given at the time. ' +
+        'Appeals go to the contact address and are read eventually.'));
+    wrap.appendChild(head);
+
+    var rows = modLogRows(ctx, 24);
+    var list = el('div', { 'class': 'modlog' });
+    var i;
+    for (i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var line = el('div', { 'class': 'modlog-row modlog-' + r.kind });
+      line.appendChild(el('span', {
+        'class': 'modlog-when',
+        'data-lv-ago': String(r.at)
+      }, window.SYNTH.live.ago(r.at)));
+      line.appendChild(el('span', { 'class': 'modlog-what' }, r.what));
+      if (r.topic) {
+        line.appendChild(el('span', { 'class': 'modlog-target' },
+          ctx.link('/topic/' + encodeURIComponent(txt(r.topic.id)),
+            txt(r.topic.title, 'a thread'), 'modlog-link')));
+      }
+      line.appendChild(el('span', { 'class': 'modlog-by' }, 'by ' + r.by));
+      line.appendChild(el('span', { 'class': 'modlog-why' }, '“' + r.why + '”'));
+      list.appendChild(line);
+    }
+    wrap.appendChild(list);
+
+    if (!rows.length) {
+      wrap.appendChild(el('p', { 'class': 'blank' },
+        'Nothing has been actioned recently. This is either a quiet week or ' +
+        'nobody is reading the reports.'));
+    }
+
+    wrap.appendChild(el('div', { 'class': 'boardfoot' },
+      ctx.link('/', 'Board index', 'backlink')));
+    ctx.mount.appendChild(wrap);
+  }
+
   /* ---------- entry point ---------- */
 
   function renderForum(ctx) {
@@ -705,6 +844,7 @@
     if (!path.length) return renderIndex(ctx);
     if (path[0] === 'board' && path.length >= 2) return renderBoard(ctx, path[1]);
     if (path[0] === 'topic' && path.length >= 2) return renderTopic(ctx, path[1]);
+    if (path[0] === 'modlog') return renderModLog(ctx);
     return render404(ctx, 'The page you requested could not be found on this board.');
   }
 

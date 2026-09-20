@@ -38,7 +38,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 # the test below asserts they agree, so drift fails the build rather than
 # silently weakening the check.
 PATH_PREFIXES = {
-    "forum": {"board", "topic"},
+    "forum": {"board", "topic", "modlog"},
     "social": {"user", "post"},
     "blog": {"post", "tag"},
     "news": {"section", "article", "live", "factcheck", "corrections"},
