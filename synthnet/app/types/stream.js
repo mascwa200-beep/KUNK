@@ -1112,6 +1112,20 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(wrap);
   }
 
+  /* site.links is an array of domain STRINGS (the envelope in
+     docs/AUTHORING.md, enforced by tools/validate.py). Reading it as
+     objects is why this footer emitted `synth://` with no domain at all,
+     labelled "link" -- the `l.domain || l.href || ''` fallback chain made
+     the fault silent instead of printing "undefined" the way market.js and
+     shop.js did. An object is still accepted in case a pack ships one. */
+  function linkDomain(entry) {
+    if (typeof entry === 'string') { return entry; }
+    if (entry && typeof entry === 'object') {
+      return String(entry.domain || entry.href || '');
+    }
+    return '';
+  }
+
   function footer(ctx, data) {
     var f = el('footer', { 'class': 'tm-foot' });
     f.appendChild(el('p', { 'class': 'tm-footline' },
@@ -1122,9 +1136,9 @@ window.SYNTH = window.SYNTH || {};
     if (links.length) {
       var row = el('p', { 'class': 'tm-footlinks' });
       for (var i = 0; i < links.length; i++) {
-        var l = links[i];
-        row.appendChild(parseBody('[url=synth://' + (l.domain || l.href || '') + ']' +
-          (l.label || l.domain || 'link') + '[/url]'));
+        var dom = linkDomain(links[i]);
+        if (!dom) { continue; }
+        row.appendChild(parseBody('[url=synth://' + dom + ']' + dom + '[/url]'));
         if (i < links.length - 1) { row.appendChild(el('span', { 'class': 'tm-dot' }, '·')); }
       }
       f.appendChild(row);

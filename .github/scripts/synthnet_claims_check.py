@@ -288,6 +288,65 @@ def main():
                     checked_years += 1
                     notes.append(f"{label}: {hit} site(s) print one year")
 
+            # ---- one number, printed on two pages ------------------------
+            #
+            # The only cross-page row here, and it earns the exception. The
+            # general index-says-N / item-page-shows-M seam is excluded from
+            # this file because it needs the renderer's pagination mirrored
+            # in the checker, which is how a check ends up agreeing with the
+            # bug. This is not that: it is ONE value printed twice, read off
+            # two rendered pages, with no arithmetic in between.
+            #
+            # market.js fed SYNTH.live.counter() the same key,
+            # 'market:cat:<id>', from both pages and a different base from
+            # each -- the index counted only the authored listings, the
+            # category page counted those plus the generated ones. So
+            # classifieds.verity.net's index said Vehicles (121) and the
+            # Vehicles page said "142 listings indexed", on every category of
+            # all four market sites.
+            cat_pairs = 0
+            for dom in by_type.get("market", []):
+                go("synth://%s/" % dom)
+                cats = page.evaluate(
+                    """() => Array.from(document.querySelectorAll(
+                          '#synth-viewport .cl-catitem')).map(li => {
+                        const a = li.querySelector('[data-synth-href^="/c/"]');
+                        const c = li.querySelector('.cl-catcount');
+                        return a && c ? {href: a.dataset.synthHref,
+                                         name: a.innerText.trim(),
+                                         n: c.innerText.replace(/[^0-9]/g, '')}
+                                      : null; }).filter(Boolean)""")
+                if not cats:
+                    problems.append(
+                        f"market: {dom} shows no category counts on its index "
+                        "-- the class moved and this row went blind")
+                    continue
+                for c in cats:
+                    go("synth://%s%s" % (dom, c["href"]), 300)
+                    note = page.evaluate(
+                        """() => { const n = document.querySelector(
+                             '#synth-viewport .cl-note');
+                           return n ? n.innerText.replace(/\\s+/g, ' ') : ''; }""")
+                    m = re.search(r"([\d,]+) listings indexed", note)
+                    if not m:
+                        problems.append(
+                            f"market: synth://{dom}{c['href']} no longer says "
+                            "'N listings indexed'")
+                        continue
+                    cat_pairs += 1
+                    said = m.group(1).replace(",", "")
+                    if said != c["n"]:
+                        problems.append(
+                            f"market: {dom} category {c['name']!r} is "
+                            f"{c['n']} on the index and {said} on its own "
+                            "page")
+            if cat_pairs:
+                notes.append(f"market: {cat_pairs} categories carry the same "
+                             "count on the index and on their own page")
+            else:
+                problems.append(
+                    "market: no category was checked on either page")
+
             browser.close()
     finally:
         srv.shutdown()
@@ -317,7 +376,8 @@ def main():
             print(f"  - {p}")
         return 1
     print(f"OK: {len(ROWS)} counted claims and {len(YEAR_ROWS)} printed years "
-          "agree with the pages that make them.")
+          "agree with the pages that make them, and every market category "
+          "carries one count on both of the pages that state it.")
     return 0
 
 

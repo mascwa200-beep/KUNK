@@ -420,6 +420,61 @@ def main():
                             f">>{dead}, and no post on that page has that "
                             f"number")
 
+            # --- every link the CHROME draws, not just the content ---------
+            #
+            # Everything above harvests synth:// URLs out of TEXT: literals in
+            # app/*.js, fame event bodies, DMs, milestone blurbs, bot replies,
+            # board >>N references. None of it ever opened a page and read the
+            # links on it.
+            #
+            # So 158 dead links sat in plain sight and this check passed. Four
+            # renderers -- market, shop, dash, stream -- built their footer row
+            # from `site.links`, which is an array of domain STRINGS, by
+            # reading `.href`/`.label`/`.domain` off each entry. market and
+            # shop emitted `synth://undefined` labelled "undefined"; dash and
+            # stream fell through to `synth://` with no domain at all,
+            # labelled "link". Nine on one site, eighteen on another, on every
+            # page of all fourteen.
+            #
+            # A literal in the source could not catch it: the source says
+            # `'[url=synth://' + links[i].href + ...`, and the broken part is
+            # what the concatenation produces. Only a rendered page has it.
+            #
+            # Front door of every site, which is where chrome lives.
+            for domain in sorted(sites):
+                page.goto(f"{base}#synth://{domain}/", wait_until="networkidle")
+                page.wait_for_timeout(120)
+                hrefs = page.evaluate(
+                    """() => Array.from(document.querySelectorAll(
+                         '#synth-viewport [data-synth-href]'))
+                       .map(a => a.dataset.synthHref)""")
+                for href in hrefs:
+                    # The query and the fragment are not path segments. A
+                    # search box links to /chat?q=... and a region filter to
+                    # /?region=... -- both are fine, and the first version of
+                    # this pass reported thirty of them as unserved paths.
+                    href = href.split("?", 1)[0].split("#", 1)[0] or "/"
+                    if href.startswith("/"):
+                        target, path = domain, href
+                    else:
+                        m = SYNTH_URL.match(href)
+                        if not m:
+                            problems.append(
+                                f"synth://{domain}/ draws a link to {href!r}, "
+                                "which is not a path and not a synth:// URL")
+                            continue
+                        target, path = m.group(1), m.group(2) or "/"
+                    checked += 1
+                    # strict_ids=False: a front door carries streamed rows
+                    # whose ids are invented on the clock and are not in any
+                    # site.json. The domain and the path prefix are still
+                    # checked, which is the whole of the fault this pass
+                    # exists for -- synth://undefined is not a site whatever
+                    # you do with ids.
+                    bad = check_url(target, path, sites, strict_ids=False)
+                    if bad:
+                        problems.append(f"on synth://{domain}/ : {bad}")
+
             browser.close()
     finally:
         srv.shutdown()

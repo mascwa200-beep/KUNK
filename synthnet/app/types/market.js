@@ -32,6 +32,30 @@ window.SYNTH = window.SYNTH || {};
    * length and 1 January 1970 as a moment -- so every "posted", every "last
    * index sweep" and every listing time on all four market sites read
    * "1 Jan 1970". */
+  /* `site.links` is an array of DOMAIN STRINGS. The envelope says so and
+     tools/validate.py enforces it -- every entry must be a domain that
+     exists in the project.
+
+     This footer read it as objects: `links[i].href` for the address and
+     `links[i].label || links[i].href` for the text. Both are undefined on a
+     string, so every market page ended up with a row of links whose text
+     and whose destination were both the word undefined. Nine of them on
+     classifieds.verity.net, eighteen on verityjobs.org, on every page.
+
+     shop.js had the identical line; dash.js and stream.js reached for
+     `l.domain || l.href` and fell through to an empty domain labelled
+     "link", which is the same mistake wearing a fallback. 158 dead links in
+     all, and the object shape they were written for has never existed.
+
+     An object is still accepted, in case a pack ever ships one. */
+  function linkDomain(entry) {
+    if (typeof entry === 'string') { return entry; }
+    if (entry && typeof entry === 'object') {
+      return String(entry.domain || entry.href || '');
+    }
+    return '';
+  }
+
   function agoBy(ms) {
     return SYNTH.live.ago(SYNTH.live.now() - ms);
   }
@@ -118,7 +142,9 @@ window.SYNTH = window.SYNTH || {};
       var i;
       for (i = 0; i < links.length; i++) {
         if (i) { row.appendChild(el('span', { 'class': 'cl-sep' }, ' | ')); }
-        row.appendChild(SYNTH.markup.parse('[url=synth://' + links[i].href + ']' + (links[i].label || links[i].href) + '[/url]'));
+        var dom = linkDomain(links[i]);
+        if (!dom) { continue; }
+        row.appendChild(SYNTH.markup.parse('[url=synth://' + dom + ']' + dom + '[/url]'));
       }
       f.appendChild(row);
     }
@@ -256,12 +282,35 @@ window.SYNTH = window.SYNTH || {};
     var all = data.listings || [];
     var i, j;
 
+    /* The auto-generated listings count towards a category here as well as on
+       the category page.
+
+       Both pages feed SYNTH.live.counter() the SAME KEY, 'market:cat:<id>',
+       and used to feed it a DIFFERENT BASE: this loop counted only
+       data.listings, while renderCategory() counts those plus the ones
+       slopListings() puts in that category. Same key, different seed, two
+       numbers -- classifieds.verity.net's index said Vehicles (121) and the
+       Vehicles page said "142 listings indexed", and so on for every
+       category on all four market sites.
+
+       The category page is the one that is right: "indexed" means everything
+       the site knows about in that category, not just the written ones. So
+       the index moves to match it.
+
+       slopListings() has no clock in it -- it walks the pools by index and
+       assigns catId from hash32(text) -- so once the bases agree the two
+       pages agree for good. The index already calls it below for the
+       "newest listings" stream, so this costs nothing new. */
+    var counted = all.concat(slopListings(data));
+
     var catBlock = el('section', { 'class': 'cl-cats' });
     catBlock.appendChild(el('h2', { 'class': 'cl-h2' }, 'categories'));
     var cg = el('ul', { 'class': 'cl-catlist' });
     for (i = 0; i < cats.length; i++) {
       var n = 0;
-      for (j = 0; j < all.length; j++) { if (String(all[j].catId) === String(cats[i].id)) { n++; } }
+      for (j = 0; j < counted.length; j++) {
+        if (String(counted[j].catId) === String(cats[i].id)) { n++; }
+      }
       cg.appendChild(el('li', { 'class': 'cl-catitem' },
         ctx.link('/c/' + cats[i].id, cats[i].name, 'cl-a'),
         el('span', { 'class': 'cl-catcount' }, ' (' + SYNTH.live.commas(

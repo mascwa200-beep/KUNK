@@ -321,6 +321,17 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- small pieces ---------- */
 
+  /* site.links is an array of domain STRINGS (the envelope in
+     docs/AUTHORING.md, enforced by tools/validate.py). An object is still
+     accepted in case a pack ever ships one. */
+  function linkDomain(entry) {
+    if (typeof entry === 'string') { return entry; }
+    if (entry && typeof entry === 'object') {
+      return String(entry.domain || entry.href || '');
+    }
+    return '';
+  }
+
   function stars(rating) {
     var wrap = el('span', { 'class': 'ms-stars', 'aria-label': (rating || 0) + ' out of 5 stars' });
     var full = Math.round(Number(rating) || 0);
@@ -484,9 +495,18 @@ window.SYNTH = window.SYNTH || {};
     if (links.length) {
       var row = el('p', { 'class': 'ms-foot-links' });
       var i;
+      /* site.links is an array of domain STRINGS -- see the envelope in
+         docs/AUTHORING.md. This read links[i].href and
+         links[i].label || links[i].href, both undefined on a string, so
+         every shop page carried a footer row of links whose text and whose
+         destination were both the word undefined. Seven on countysupply.store,
+         eighteen on gridfalleats.com. market.js, dash.js and stream.js all
+         had the same fault. */
       for (i = 0; i < links.length; i++) {
+        var dom = linkDomain(links[i]);
+        if (!dom) { continue; }
         if (i) { row.appendChild(el('span', { 'class': 'ms-foot-dot', 'aria-hidden': 'true' }, ' · ')); }
-        row.appendChild(SYNTH.markup.parse('[url=synth://' + links[i].href + ']' + (links[i].label || links[i].href) + '[/url]'));
+        row.appendChild(SYNTH.markup.parse('[url=synth://' + dom + ']' + dom + '[/url]'));
       }
       f.appendChild(row);
     }
