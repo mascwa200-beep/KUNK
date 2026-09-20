@@ -1028,6 +1028,41 @@ def main():
                 # Talk pages: indentation is bounded and nobody signs a post
                 # in the future, which is the one error a dated argument
                 # cannot hide.
+                #
+                # And nothing is said twice on one page. Threads are seeded
+                # independently, which is right, and it put the heading
+                # "Requested move" on one page three times and repeated a
+                # reply word for word under two of them. A reader forgives a
+                # lot but not that.
+                echoes = []
+                for art in arts[:8]:
+                    page.evaluate(
+                        "(u) => SYNTH.engine.navigate(u, {push: false})",
+                        "synth://%s/talk/%s" % (wiki, art))
+                    page.wait_for_timeout(120)
+                    said = page.evaluate("""() => {
+                      const strip = (t) => t.replace(/\s*\(talk\)[^]*$/, '').trim();
+                      return {
+                        posts: Array.from(document.querySelectorAll('.wiki-talkpost'))
+                          .map(n => strip(n.innerText)),
+                        heads: Array.from(document.querySelectorAll('.wiki-talkthread h2'))
+                          .map(n => n.textContent)
+                      };
+                    }""")
+                    for kind in ("posts", "heads"):
+                        seen_once = set()
+                        for line in said[kind]:
+                            if line in seen_once:
+                                echoes.append(f"{art} says {line[:48]!r} twice")
+                                break
+                            seen_once.add(line)
+                if echoes:
+                    problems.append(
+                        f"{len(echoes)} talk page(s) repeat themselves: "
+                        f"{echoes[0]}")
+                else:
+                    notes.append("no talk page says the same thing twice")
+
                 page.evaluate(
                     "(u) => SYNTH.engine.navigate(u, {push: false})",
                     "synth://%s/talk/%s" % (wiki, arts[0]))

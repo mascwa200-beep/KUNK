@@ -424,8 +424,22 @@
   border-left: 2px solid #e6e6e6;
   font-size: 13px;
 }
+/* .wiki-editor-<kind> was written for a name in a history row -- a short
+   span, bold and blue for a person. Put on a talk POST it coloured the whole
+   paragraph, so every human reply came out bold blue and every anon one grey,
+   which is unreadable at length and says the wrong thing besides: on a talk
+   page the point is who is speaking, not that the whole remark is a name. The
+   kind survives as the left border and nothing else. */
+.skin-monobook .wiki-talkpost.wiki-editor-human,
+.skin-monobook .wiki-talkpost.wiki-editor-bot,
+.skin-monobook .wiki-talkpost.wiki-editor-anon,
+.skin-monobook .wiki-talkpost.wiki-editor-admin {
+  font-weight: normal;
+  color: #202122;
+}
 .skin-monobook .wiki-talkpost.wiki-editor-human { border-left-color: #0645ad; }
 .skin-monobook .wiki-talkpost.wiki-editor-admin { border-left-color: #33475e; }
+.skin-monobook .wiki-talkpost.wiki-editor-anon { border-left-color: #c9ced3; }
 .skin-monobook .wiki-talkpost .synth-p { margin: 0 0 4px 0; }
 
 /* Talk-page indentation. Capped hard, because a 360px screen runs out of

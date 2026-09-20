@@ -549,7 +549,27 @@
         who: '198.51.100.44', kind: 'anon' },
       { t: 'Infobox field standardisation',
         b: 'This page uses a nonstandard field name. Bringing it in line with the other county pages. No content change intended. ~~~~',
-        who: 'WikiTidyBot', kind: 'bot' }
+        who: 'WikiTidyBot', kind: 'bot' },
+      /* Six openers for four threads put the same heading on one page three
+       * times. These are the other six. */
+      { t: 'External links',
+        b: 'Three of the links here go to pages that redirect to the same aggregator thread. I have cut two and tagged the third. ~~~~',
+        who: 'kfennimore', kind: 'human' },
+      { t: 'Measurements in this article',
+        b: 'The figure in the third paragraph is quoted to four significant figures from a source that gives two. I have not changed it, I am asking first. ~~~~',
+        who: 'wpennock', kind: 'human' },
+      { t: 'Merge proposal',
+        b: 'Proposing this be merged with the parent article. There is not enough here for a standalone page and half of it is duplicated there already. ~~~~',
+        who: '198.51.100.44', kind: 'anon' },
+      { t: 'Photograph',
+        b: 'I have a photograph of this from about 1994 that I scanned last winter. Happy for it to be used. It is not great quality. ~~~~',
+        who: 'kfennimore', kind: 'human' },
+      { t: 'Category cleanup',
+        b: 'This article appears in two categories that mean the same thing. Removing the redundant one per the category guideline. ~~~~',
+        who: 'LinkRot_Patrol', kind: 'bot' },
+      { t: 'Wording in the lead',
+        b: 'The lead says "reportedly" twice in one sentence. Either we have a source or we do not. ~~~~',
+        who: 'kfennimore', kind: 'human' }
     ];
 
     var TALK_REPLIES = [
@@ -598,9 +618,27 @@
       var rows = live.stream('wikitalk:' + site.domain + ':' + art.id,
                              TALK_OPENERS, TALK_INTERVAL_MIN, count || 4);
       var d = LIVING ? disputeFor(art) : null;
+      /* One page, one use of each reply. Threads are seeded independently,
+       * which is right -- they are independent -- and it meant "Agreed. The
+       * number has been 2003 in every primary document anybody has actually
+       * put a hand on" appeared word for word in two threads on the same
+       * screen. A reader forgives a lot but not that. Walk the bank from the
+       * drawn index until an unused one comes up; when the bank runs out the
+       * thread simply gets fewer replies, which is also what a quiet talk
+       * page looks like. */
+      var used = {};
       var out = [], i, j;
       for (i = 0; i < rows.length; i++) {
         var op = rows[i].item || TALK_OPENERS[0];
+        /* No dedupe here, deliberately. Four threads drawn from six openers
+         * put "Requested move" on one page three times; the fix was the
+         * other six openers, not a filter. stream() already re-rolls a
+         * repeated draw and succeeds once the pool is wide enough, and a
+         * filter on top of it would have made the CI assertion unfalsifiable
+         * -- it would guarantee the property by construction rather than
+         * checking it, which is how a check becomes a comment. The replies
+         * below DO need one: they are picked here, and nothing re-rolls
+         * them. */
         var nReplies = 1 + (live.hash32(rows[i].seed + ':rn') % 4);
         var posts = [{
           who: op.who, kind: op.kind, depth: 0, at: rows[i].at,
@@ -614,7 +652,15 @@
         var span = Math.max(60000, live.now() - rows[i].at);
         var depth = 0;
         for (j = 0; j < nReplies; j++) {
-          var rp = TALK_REPLIES[live.hash32(rows[i].seed + ':r' + j) % TALK_REPLIES.length];
+          var pick = live.hash32(rows[i].seed + ':r' + j) % TALK_REPLIES.length;
+          var tries = 0;
+          while (used[pick] && tries < TALK_REPLIES.length) {
+            pick = (pick + 1) % TALK_REPLIES.length;
+            tries++;
+          }
+          if (used[pick]) { break; }
+          used[pick] = 1;
+          var rp = TALK_REPLIES[pick];
           var frac = (j + 1) / (nReplies + 1);
           var wob = 0.75 + 0.5 * ((live.hash32(rows[i].seed + ':t' + j) % 1000) / 1000);
           var at = rows[i].at + Math.min(span * 0.97, span * frac * wob);
