@@ -40,7 +40,7 @@ TYPES = ("forum", "social", "blog", "news", "wiki", "media", "page",
          "wire", "newsletter", "chat")
 
 SKINS = {
-    "forum": ("phpbb-blue", "ezboard-grey"),
+    "forum": ("phpbb-blue", "ezboard-grey", "softboard"),
     "social": ("bluebird", "myspace-black"),
     "blog": ("movabletype-cream", "kubrick-blue"),
     # pinkslime: the 2026 local layer. A locally-named site with no staff

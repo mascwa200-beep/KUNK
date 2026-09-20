@@ -444,11 +444,22 @@
         /* Two posts on one screen that open with the same eight words is the
          * single thing that gives a composed feed away, and with a dozen
          * templates and ten posts the birthday problem makes it common. So
-         * re-roll a repeat rather than write another hundred templates. Only
-         * composed pools can re-roll; a written pool repeating means it has
-         * genuinely wrapped, which is a different problem and an honest one. */
+         * re-roll a repeat rather than write another hundred templates.
+         *
+         * This used to re-roll only for composed pools, on the reasoning that
+         * a WRITTEN pool repeating means it has genuinely wrapped, and an
+         * honest wrap should show. The reasoning is right and the test for it
+         * was wrong: it confused "this draw collided" with "the pool is
+         * exhausted". A forum front page drawing 8 rows from 38 written
+         * topics is nowhere near wrapping, and it was showing three duplicate
+         * pairs out of eight rows -- 5 distinct titles, stacked adjacently,
+         * which reads as the machine and not as a board.
+         *
+         * So the test is now whether the pool has anything else to offer.
+         * Below `count` items it genuinely has wrapped, nothing is re-rolled,
+         * and the repetition is the truth. */
         var tries = 0;
-        while (pool.isVirtual && tries < 4 &&
+        while (tries < 4 && (pool.isVirtual || pool.length > count) &&
                Object.prototype.hasOwnProperty.call(seen, signature(item))) {
           tries++;
           var rh = hash32(key + ':' + slot + '/r' + tries);

@@ -169,6 +169,7 @@ authority; this table mirrors it.
 | era | type | skins |
 |---|---|---|
 | archive | `forum` | `phpbb-blue`, `ezboard-grey` |
+| 2026 | `forum` | `softboard` (or either archive skin — see below) |
 | archive | `social` | `bluebird`, `myspace-black` |
 | archive | `blog` | `movabletype-cream`, `kubrick-blue` |
 | archive | `news` | `broadsheet`, `portal-red` |
@@ -195,6 +196,16 @@ The "era" column is guidance, not enforcement — a 2026 `forum` is entirely
 legal and the project needs several. Adding a skin means adding it to `SKINS`
 in `tools/validate.py`, adding rules to `theme/skins/<type>.css` scoped under
 `.skin-<name>`, and (for a new type) a `<link>` in `index.html`.
+
+**Which forum skin.** `softboard` is the flat, wide, avatar-led list every
+forum platform converged on, and it is the right default for a board started
+in the last ten years. The two archive skins are not off-limits to a 2026
+board and the choice carries meaning: a forum still wearing `phpbb-blue` in
+2026 is a forum that never got round to upgrading, which is true of most of
+them and is why `sdrlisteners.org` (running since 2004) keeps it while
+`gridfallswap.net` (started 2017) does not. Pick on that basis, not on age
+of the skin. The renderer is identical either way — `softboard` flattens the
+same `<table>` the others draw, so nothing in the content changes.
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-19T23:22:38Z",
+  "generated": "2026-09-20T03:46:14Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -113,6 +113,22 @@
       "bytes": 21404
     },
     {
+      "domain": "gridfallswap.net",
+      "title": "Gridfall Swap",
+      "type": "forum",
+      "era": "2026",
+      "skin": "softboard",
+      "description": "Buy, sell and give away things in Verity County. Started in 2017 when the old boards stopped taking new members, and still the only local forum anybody posts on.",
+      "tags": [
+        "gridfall",
+        "classifieds",
+        "2026",
+        "locals"
+      ],
+      "path": "net/sites/gridfallswap-net/site.json",
+      "bytes": 88244
+    },
+    {
       "domain": "gridline.social",
       "title": "Gridline",
       "type": "aggregator",
@@ -190,6 +206,24 @@
       "bytes": 19909
     },
     {
+      "domain": "sdrlisteners.org",
+      "title": "SDR Listeners",
+      "type": "forum",
+      "era": "2026",
+      "skin": "phpbb-blue",
+      "description": "A national shortwave and software-defined-radio listening board, running since 2004, where Verity County is one thread among antennas, noise floors and receivers nobody makes any more.",
+      "tags": [
+        "radio",
+        "shortwave",
+        "sdr",
+        "hobby",
+        "numbers",
+        "verity"
+      ],
+      "path": "net/sites/sdrlisteners-org/site.json",
+      "bytes": 89356
+    },
+    {
       "domain": "shopwell.store",
       "title": "ShopWell — Everything, Somehow, By Tomorrow",
       "type": "shop",
@@ -199,6 +233,22 @@
       "tags": [],
       "path": "net/sites/shopwell-store/site.json",
       "bytes": 61339
+    },
+    {
+      "domain": "shoutbox.live",
+      "title": "Shoutbox",
+      "type": "social",
+      "era": "2026",
+      "skin": "bluebird",
+      "description": "Where Verity County is discussed in 2026, by accounts that are mostly not in Verity County and mostly not people.",
+      "tags": [
+        "2026",
+        "social",
+        "bots",
+        "advertising"
+      ],
+      "path": "net/sites/shoutbox-live/site.json",
+      "bytes": 50371
     },
     {
       "domain": "stargazers.verity.net",
@@ -221,6 +271,23 @@
       "tags": [],
       "path": "net/sites/tnorris-verity-net/site.json",
       "bytes": 22690
+    },
+    {
+      "domain": "trailusers.verity.net",
+      "title": "Verity Branch Trail Users",
+      "type": "forum",
+      "era": "2026",
+      "skin": "ezboard-grey",
+      "description": "The users' board for the Verity Branch Trail, nominally run by the county parks department, which last posted a mowing notice in November 2023.",
+      "tags": [
+        "verity",
+        "trail",
+        "parks",
+        "marchfield",
+        "locals"
+      ],
+      "path": "net/sites/trailusers-verity-net/site.json",
+      "bytes": 60469
     },
     {
       "domain": "verity.county.gov",

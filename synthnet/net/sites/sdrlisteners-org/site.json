@@ -1,0 +1,1713 @@
+{
+  "schema": 1,
+  "domain": "sdrlisteners.org",
+  "title": "SDR Listeners",
+  "type": "forum",
+  "era": "2026",
+  "skin": "phpbb-blue",
+  "description": "A national shortwave and software-defined-radio listening board, running since 2004, where Verity County is one thread among antennas, noise floors and receivers nobody makes any more.",
+  "tags": [
+    "radio",
+    "shortwave",
+    "sdr",
+    "hobby",
+    "numbers",
+    "verity"
+  ],
+  "links": [
+    "wiki.gridfall.net",
+    "now.verityledger.com",
+    "now.clipvault.tv",
+    "codeandcoffee.blog",
+    "gridline.social",
+    "ask.verity.ai",
+    "shopwell.store",
+    "classifieds.verity.net",
+    "62chan.org",
+    "dash.verity.net",
+    "trailusers.verity.net"
+  ],
+  "data": {
+    "boardName": "SDR Listeners",
+    "categories": [
+      {
+        "id": "c-rx",
+        "name": "Receiving",
+        "boards": [
+          {
+            "id": "b-ant",
+            "name": "Antennas, Feedline & Grounding",
+            "desc": "Wire, loops, verticals, what the neighbours think of them, and the eleven-year argument about ground rods.",
+            "topicCount": 4192,
+            "postCount": 61880,
+            "lastPost": {
+              "author": "sixmeter_sam",
+              "time": "Sat Jun 20, 2026 9:44 pm"
+            }
+          },
+          {
+            "id": "b-rig",
+            "name": "Receivers & Hardware",
+            "desc": "Sets old and new, repairs, alignment, and what a radio nobody makes any more is worth this week.",
+            "topicCount": 5311,
+            "postCount": 88410,
+            "lastPost": {
+              "author": "hamfest_holly",
+              "time": "Tue Jun 09, 2026 8:13 pm"
+            }
+          },
+          {
+            "id": "b-sdr",
+            "name": "SDR Software, Recording & Small Boards",
+            "desc": "Software defined receivers, unattended recorders, single board computers and the SD cards they destroy.",
+            "topicCount": 2874,
+            "postCount": 40133,
+            "lastPost": {
+              "author": "pi_hutch",
+              "time": "Sun Aug 30, 2026 11:20 am"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-listen",
+        "name": "What's On",
+        "boards": [
+          {
+            "id": "b-num",
+            "name": "Numbers & Unidentified",
+            "desc": "Numbers stations, unidentified voice and data, and the threads about them that never end. Logs welcome. Theories tolerated.",
+            "topicCount": 1880,
+            "postCount": 74126,
+            "lastPost": {
+              "author": "kd7_marcy",
+              "time": "Tue Sep 08, 2026 7:36 am"
+            }
+          },
+          {
+            "id": "b-logs",
+            "name": "Loggings & Band Conditions",
+            "desc": "What you heard, where, when, and on what. Includes the noise floor thread, which is older than some members.",
+            "topicCount": 7740,
+            "postCount": 121004,
+            "lastPost": {
+              "author": "SWLDigestBot",
+              "time": "Tue Sep 15, 2026 6:01 am"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-site",
+        "name": "The Site",
+        "boards": [
+          {
+            "id": "b-swap",
+            "name": "Swap Meet",
+            "desc": "Buying, selling, giving away. No dealers. Collection preferred. Post a price or do not post.",
+            "topicCount": 3011,
+            "postCount": 19402,
+            "lastPost": {
+              "author": "sellersmark",
+              "time": "Sat Aug 08, 2026 3:20 pm"
+            }
+          },
+          {
+            "id": "b-meta",
+            "name": "Site News, FAQ & Feedback",
+            "desc": "Announcements, outages, the pinned FAQ that points at a host which no longer exists, and spam.",
+            "topicCount": 944,
+            "postCount": 12881,
+            "lastPost": {
+              "author": "SWLDigestBot",
+              "time": "Mon Sep 14, 2026 6:02 am"
+            }
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "t-01",
+        "boardId": "b-meta",
+        "title": "READ THE FAQ BEFORE YOU POST",
+        "author": "admin_rkp",
+        "time": "Tue Mar 15, 2011 7:40 pm",
+        "replies": 3,
+        "views": 88214,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "admin_rkp",
+            "authorTitle": "Administrator",
+            "authorPosts": 2211,
+            "authorJoined": "Feb 2004",
+            "avatarSeed": "rkepple",
+            "time": "Tue Mar 15, 2011 7:40 pm",
+            "body": "Four questions, every week, for seven years.\n\n[list][*]What radio should I buy[*]Why is my noise floor so bad[*]What is that buzz from 3.5 to 4 MHz[*]Is the numbers station real[/list]\n\nAll four are answered, at length, with pictures, here: [url=synth://faqwiki-host.synth/sdrl/start]the FAQ[/url]\n\nRead it first. If your question is in it and you post it anyway, the answer you get will be a link, and the link will be that one.",
+            "signature": "R. Kepple\nsite admin. if it is broken, it is probably me."
+          },
+          {
+            "id": "2",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Thu Jun 08, 2017 12:31 pm",
+            "body": "Heads up, that link is dead. The wiki host folded in 2016 and took everything on it with it, including ours.\n\nIs there a copy anywhere?",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Tue Feb 14, 2023 10:05 pm",
+            "body": "I know it is dead. I cannot fix it.\n\nThe post belongs to Kepple, Kepple is the only account with edit rights on a pinned post, and Kepple has not logged in since March 2018. I have written to the address on the account twice. It bounces both times, politely, from a mail system that no longer exists either.\n\nI have a copy of the FAQ. It is a folder on my desktop called [i]faq_final_v3[/i]. There is nowhere to put it that this post points at, and I am not allowed to write a new post that people would see instead of this one, because this one is pinned and I cannot unpin it either.",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          },
+          {
+            "id": "4",
+            "author": "SWLDigestBot",
+            "authorTitle": "Bot",
+            "authorPosts": 9204,
+            "authorJoined": "Feb 2024",
+            "avatarSeed": "digestbot",
+            "time": "Mon Sep 14, 2026 6:02 am",
+            "body": "Good morning. This thread was one of the most viewed discussions on the board over the past seven days, with strong engagement from members across the community.\n\nThe thread reminds new participants that frequently asked questions are addressed in the site's reference documentation, which was last revised in 2011. New and returning listeners are encouraged to consult the documentation before starting a new discussion, as this helps moderators focus their time on more complex topics.\n\nRead the reference documentation here: [url=synth://faqwiki-host.synth/sdrl/start]the FAQ[/url]\n\nHave you completed your listener profile? A complete profile helps other members find you.",
+            "signature": "SWLDigest. Automated summaries of the boards you love."
+          }
+        ]
+      },
+      {
+        "id": "t-02",
+        "boardId": "b-num",
+        "title": "The Signal on 62 (Verity County) - master thread",
+        "author": "kd7_marcy",
+        "time": "Sun Oct 06, 2019 8:12 pm",
+        "replies": 947,
+        "views": 186402,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Sun Oct 06, 2019 8:12 pm",
+            "body": "Splitting this out of the loggings thread because it has eaten the loggings thread twice this year.\n\nWhat is established: four-digit groups, synthetic female voice, English, :07 past odd hours, most reliable after dark. Reported locally since 1998. County Route 62 in Verity County, strongest near the old quarry cut.\n\nWhat is not established: everything else.\n\nKeep it in here. If you have a recording, post the frequency and the time you took it, not just the file.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Sun Oct 06, 2019 9:48 pm",
+            "body": "It is a training net. I have said this in three threads and I will say it here.\n\nFour digits, fixed schedule, synthetic voice, no callsign, runs for decades without a change. That is not a hobbyist and it is not a station with an audience. That is a checkout schedule somebody set up and nobody has been given permission to turn off.\n\nThere is a piece on this that lays out the whole thing: [url=synth://now.clipvault.tv/w/tc-001]Signal Files Ep. 412[/url]. Forty minutes, sourced, and it says the same thing I have been saying since 2006.\n\nI am not going to argue about it again.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "3",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Mon Dec 02, 2019 10:40 pm",
+            "body": "New here. I have started logging this properly and I will post monthly.\n\n[b]Equipment.[/b] 14-bit software defined receiver. Two element directional at 9 metres, rotatable. My son put the mast up in October; I am not climbing it.\n\n[b]Method.[/b] Odd hours, 19:00 through 05:00 local. The session runs :00 to :20 so I catch the onset and the tail. Before each session I check the receiver against two known broadcast stations, one high and one low, and write down what the dial says against what it should say. I log frequency, bearing, S-meter, local weather, and whether the groups were readable. I log the sessions where I hear nothing. Those are the ones that get left out, and they are half the information.\n\n[b]November.[/b]\n\n[code]\n2019-11-05  23:07  4.2190 USB  S4  clear     -2C  readable\n2019-11-07  01:07  4.2190 USB  S3  overcast   1C  readable\n2019-11-09  23:07  4.2190 USB  S2  sleet      0C  partial\n2019-11-11  23:07  ---          -- sleet      0C  nothing\n2019-11-13  01:07  4.2190 USB  S4  clear     -4C  readable\n[/code]\n\n14 sessions, 12 detections. Two nulls, both in weather.\n\nI am not going to say what it is. I do not know what it is.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "hf_jenna",
+            "authorTitle": "Member",
+            "authorPosts": 3361,
+            "authorJoined": "Mar 2012",
+            "avatarSeed": "jenna",
+            "time": "Sun Jan 19, 2020 1:22 pm",
+            "body": "It is telemetry off the branch line and I do not understand why this is still a discussion.\n\nVerity Rail ran a branch through that exact corridor. Remote sites on a line like that need a link back, and a four-digit group is what a meter reading looks like when you send it over voice. The schedule fits a polling interval. The synthetic voice fits equipment that was never meant for a person to listen to.\n\nThe county's own wiki lays out the geography: [url=synth://wiki.gridfall.net/wiki/verity-rail]Verity Rail[/url]. Read the corridor description and tell me the fit is a coincidence.",
+            "signature": "Jenna\n\"the plural of anecdote is data if you write it down\""
+          },
+          {
+            "id": "5",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Sun Jan 19, 2020 6:03 pm",
+            "body": "The branch closed in 2008.\n\nThe signal did not change in 2008. It did not change in 2009 either. I know that because people here were logging it both years.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "6",
+            "author": "hf_jenna",
+            "authorTitle": "Member",
+            "authorPosts": 3361,
+            "authorJoined": "Mar 2012",
+            "avatarSeed": "jenna",
+            "time": "Sun Jan 19, 2020 7:31 pm",
+            "body": "Right, and the gear was left energised, which utilities and railroads do constantly. Half the paging transmitters in this country are on a feed nobody has audited since the nineties.\n\nThere was a piece last year about maintenance out there that all but says the equipment is still live: [url=synth://now.verityledger.com/article/a-01]Officials Confirm Routine Maintenance At Substation No. 3[/url].\n\nSo: closed line, live equipment, unchanged schedule. It holds.\n\n[i]Last edited by hf_jenna on Mon Jan 20, 2020 9:14 am; edited 3 times in total.[/i]",
+            "signature": "Jenna\n\"the plural of anecdote is data if you write it down\""
+          },
+          {
+            "id": "7",
+            "author": "Palladin_Radio",
+            "authorTitle": "Member",
+            "authorPosts": 2088,
+            "authorJoined": "Sep 2014",
+            "avatarSeed": "palladin",
+            "time": "Wed Mar 11, 2020 11:55 pm",
+            "body": "All of this was settled four years ago and the settlement is boring, which is why nobody repeats it.\n\nIt was an ARG. A studio built it as a lead-in for a game, the game was cancelled, and the transmitter was left running because turning it off was somebody's job and that somebody was laid off. The numeric format, the schedule, the voice - all three are exactly what you would build if you wanted people to find it and talk about it, which is what we are doing.\n\nThe primary source is a post on this board from 2016 by somebody who worked on it. Three separate write-ups have gone through it since. Here is the one with the timeline: [url=synth://gridline.social/item/l-016]The Signal On 62 Has Finally Been Explained[/url].",
+            "signature": ""
+          },
+          {
+            "id": "8",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Thu Mar 12, 2020 7:05 pm",
+            "body": "The poster retracted that in February 2017.\n\nIt is on this board. Four posts, in this section, still open: [url=/topic/t-15]Retraction - my 2016 post about the ARG[/url]. He says he made it up, he says he was nineteen, and he asks people to stop citing it.\n\nIt has 3,400 views in three years. This thread gets that in a fortnight.",
+            "signature": ""
+          },
+          {
+            "id": "9",
+            "author": "Palladin_Radio",
+            "authorTitle": "Member",
+            "authorPosts": 2088,
+            "authorJoined": "Sep 2014",
+            "avatarSeed": "palladin",
+            "time": "Thu Mar 12, 2020 8:40 pm",
+            "body": "A retraction six months later, posted once, on a hobby board, with no detail in it, is what it looks like when someone gets a letter from a legal department. That is not a reason to throw out a sourced timeline.\n\nThe write-ups stand. I am not relitigating a deleted account.",
+            "signature": ""
+          },
+          {
+            "id": "10",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Fri Jan 08, 2021 8:30 pm",
+            "body": "[b]2020 annual.[/b] 337 sessions. 328 detections. Nine nulls, eight of them in weather.\n\nCarrier onset, mean :06:47 past the hour. Standard deviation 1.9 seconds across 328 observations. No drift over the year that I can measure with what I have.\n\nNo change in schedule. No change in voice. No change in group length. Nothing that happened in 2020 happened to it.\n\nThe only measurement I have found that anyone else published with their method attached is from 2007, and the man who did it stopped writing in 2008: [url=synth://codeandcoffee.blog/post/sdr-signal-62]I put a receiver on the Signal on 62[/url]. His follow-up is the part people skip, because it is the part where he says what his own results fail to explain.\n\nI still do not know what it is.",
+            "signature": ""
+          },
+          {
+            "id": "11",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Fri Jan 08, 2021 9:15 pm",
+            "body": "A standard deviation of under two seconds is a disciplined clock, and a disciplined clock is a service. Thank you for finally posting something that supports the training net.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "12",
+            "author": "Wanderfoot",
+            "authorTitle": "Member",
+            "authorPosts": 744,
+            "authorJoined": "Jun 2021",
+            "avatarSeed": "wanderfoot",
+            "time": "Wed Aug 04, 2021 10:17 am",
+            "body": "Everyone in this thread is looking for an institution because an institution would make it safe.\n\nIt is a work. A durational piece. Someone set a machine going and walked away from it, and the fact that it has outlived the explanation is the piece. There was a programme doing exactly this kind of thing in the mid-nineties and the dates line up almost to the year.\n\nI am not going to name the artist because that is not mine to do.",
+            "signature": "listening is a practice"
+          },
+          {
+            "id": "13",
+            "author": "sixmeter_sam",
+            "authorTitle": "Member",
+            "authorPosts": 2244,
+            "authorJoined": "Sep 2010",
+            "avatarSeed": "sam",
+            "time": "Wed Aug 04, 2021 11:02 am",
+            "body": "\"The dates line up almost to the year\" is doing a lot of work in that post.",
+            "signature": ""
+          },
+          {
+            "id": "14",
+            "author": "nb_on_nb_off",
+            "authorTitle": "Member",
+            "authorPosts": 1177,
+            "authorJoined": "Jun 2010",
+            "avatarSeed": "nbnb",
+            "time": "Mon May 30, 2022 9:44 pm",
+            "body": "Dumb question from someone who has read maybe a third of this thread: has anyone actually taken a bearing on it? Seems like that would end the argument in a weekend.",
+            "signature": ""
+          },
+          {
+            "id": "15",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Tue May 31, 2022 7:22 pm",
+            "body": "Post 10, and the annual before it. Bearings are logged per observation and have been since the first month.\n\nOne bearing is a direction. Two bearings from a known separation is a line. I have two now, the second from a friend's place about nine miles away, and the line runs off the top of my map. It does not terminate in this county and it never did.\n\nWhat that rules out: a transmitter at the quarry, a transmitter at the fairgrounds, a pirate in Halsey, and the substation. What it rules in: nothing. A line is not a fix. I need a third bearing and I do not have anyone to take it.",
+            "signature": ""
+          },
+          {
+            "id": "16",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Sun Mar 03, 2024 8:55 pm",
+            "body": "Something I want on the record, and then I will go back to the numbers.\n\nMy log was scraped this year. It has been republished on three sites as supporting evidence for three explanations, two of which contradict each other and one of which contradicts the log it is quoting. One of them has me confirming a military origin. I have never used that word in this thread, not once, since 2019. You can search it.\n\nI spent thirty-four years around power equipment. I was on a pole line the morning the substation at Gridfall burned in 2003, which is the fire all those videos are about, and I will tell you for free that the videos have the year wrong, the cause wrong and the casualty count wrong. A cousin of mine was treated that morning and was home by two in the afternoon. The videos say he died.\n\nSo I have stopped expecting to be quoted correctly. I am going to keep posting the raw numbers, because the raw numbers are the only part of this that cannot be argued with.",
+            "signature": ""
+          },
+          {
+            "id": "17",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Sun Mar 03, 2024 10:10 pm",
+            "body": "Which fire?",
+            "signature": ""
+          },
+          {
+            "id": "18",
+            "author": "Palladin_Radio",
+            "authorTitle": "Member",
+            "authorPosts": 2088,
+            "authorJoined": "Sep 2014",
+            "avatarSeed": "palladin",
+            "time": "Wed Jun 18, 2025 3:33 pm",
+            "body": "Fresh coverage this week, for anyone still saying this is unexplained: [url=synth://now.verityledger.com/article/a-05]Ashkettle Mystery Broadcast: What We Know[/url]\n\nNote that it cites the same 2016 account I have been citing for years, independently. That is two sources now.",
+            "signature": ""
+          },
+          {
+            "id": "19",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Wed Jun 18, 2025 7:40 pm",
+            "body": "That article cites a video. The video cites a write-up. The write-up cites the 2016 post. The 2016 post is retracted.\n\nThat is one source with three coats of paint on it.",
+            "signature": ""
+          },
+          {
+            "id": "20",
+            "author": "RadioDeals2026",
+            "authorTitle": "Junior Member",
+            "authorPosts": 1402,
+            "authorJoined": "Jan 2026",
+            "avatarSeed": "radiodeals",
+            "time": "Wed Jun 18, 2025 7:41 pm",
+            "body": "Such an interesting discussion! This is exactly the kind of content the community needs more of. What radio would you recommend for a beginner?\n\n[url=synth://shopwell.store/p/p-121]THE SIGNAL ON 62 - Numbers Station Hoodie - Coordinates Print[/url] - 40% off this week only",
+            "signature": ""
+          },
+          {
+            "id": "21",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Wed Jun 18, 2025 11:58 pm",
+            "body": "No, I am not locking it. Nine hundred replies and about six of them measure anything, but the six are worth the rest.\n\nHouse rule for this thread from tonight: if you post the word [i]military[/i], [i]studio[/i] or [i]artist[/i] without a document I can open, I delete the post. Not because you are wrong. Because then I have to read the eleven replies underneath it, and I have been reading them since 2019.\n\n-- hewson",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          },
+          {
+            "id": "22",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Thu Jun 19, 2025 12:31 am",
+            "body": "[removed by mod_hewson - see the post above yours]",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "23",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Wed Feb 11, 2026 9:05 pm",
+            "body": "grayline, there is somebody on the 62 imageboard running effectively the same method, same discipline, posts an annual with the nulls in it. You two should compare bearings. [url=synth://62chan.org/t/t-11]map thread - post your bearings[/url]\n\nBetween the pair of you that is a fix.",
+            "signature": ""
+          },
+          {
+            "id": "24",
+            "author": "SIG_TRACKER_88",
+            "authorTitle": "Junior Member",
+            "authorPosts": 61,
+            "authorJoined": "Apr 2026",
+            "avatarSeed": "sigtracker",
+            "time": "Wed Apr 22, 2026 2:19 am",
+            "body": "its a model. sorry to everyone who spent 20 years on this but thats what it is\n\nfour digit groups on a fixed schedule with a synthetic voice = a generator running on a seed. somebody stood one up years ago as a demo and it is still running on a server nobody has the login for. thats the whole thing. the reason it never changes is that nothing is updating it\n\ni asked the county assistant and it confirms the general picture [url=synth://ask.verity.ai/chat]ask.verity.ai[/url]",
+            "signature": ""
+          },
+          {
+            "id": "25",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Wed Apr 22, 2026 8:40 am",
+            "body": "It was heard in 1998.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "26",
+            "author": "SIG_TRACKER_88",
+            "authorTitle": "Junior Member",
+            "authorPosts": 61,
+            "authorJoined": "Apr 2026",
+            "avatarSeed": "sigtracker",
+            "time": "Wed Apr 22, 2026 9:02 am",
+            "body": "sure but the 1998 sightings are unverified, thats in like every writeup",
+            "signature": ""
+          },
+          {
+            "id": "27",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Mon Sep 07, 2026 8:44 pm",
+            "body": "[b]August 2026.[/b] 31 sessions, 31 detections. Zero nulls, which is the first clean month in the log.\n\n[code]\ncarrier onset   mean :06:44   sd 2.1 s   n=31\nfrequency       4.2190 USB    no shift measurable at my resolution\ngroups          four digits   voice unchanged\nbearing         unchanged within 2 degrees\n[/code]\n\nThe spreadsheet is 14,912 rows now, one per session since November 2019, and a copy goes to the library at Marchfield every March, paper and disc, because they catalogue what they are given and that means it exists somewhere that is not my house.\n\nI am 71. Somebody younger should be doing the second receiver.\n\nSeven years this month. Nothing has changed except the number of people telling me what it is.",
+            "signature": ""
+          },
+          {
+            "id": "28",
+            "author": "SIG_TRACKER_88",
+            "authorTitle": "Junior Member",
+            "authorPosts": 61,
+            "authorJoined": "Apr 2026",
+            "avatarSeed": "sigtracker",
+            "time": "Mon Sep 07, 2026 9:02 pm",
+            "body": "anyone got the mp3 where it says 4417 three times",
+            "signature": ""
+          },
+          {
+            "id": "29",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Tue Sep 08, 2026 7:36 am",
+            "body": "Thanks for the logs.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-03",
+        "boardId": "b-logs",
+        "title": "THE NOISE FLOOR THREAD - post your readings",
+        "author": "qrn_watch",
+        "time": "Sun Jan 11, 2015 9:02 pm",
+        "replies": 2841,
+        "views": 97330,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Sun Jan 11, 2015 9:02 pm",
+            "body": "Simple idea. Post your noise floor, how you measured it, and where you are. Once a year is plenty. In ten years we will have something nobody else has.\n\nFormat, please:\n\n[code]\ndate / band or freq / reading / how measured / rural-suburban-urban\n[/code]\n\nMine: 2015-01-11, 3.5 MHz, -118 dBm in 500 Hz, on the radio's own meter, suburban, 2am.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Mon Jan 12, 2015 8:15 am",
+            "body": "-121 at 3.5, rural, same method, and I will tell you now that the radio's own meter is not a measurement, it is an opinion. Post it anyway. An opinion taken the same way for ten years is still a trend.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "3",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Mon Mar 02, 2015 7:44 pm",
+            "body": "S7 on 40 in the evenings, S3 at 4am. Suburban. I do not have a dBm number and I am not buying a meter to join in.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Thu Jan 14, 2016 10:30 pm",
+            "body": "2016-01-14, 3.5 MHz, -117 dBm, same radio same corner of the same room, suburban.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Sun Feb 19, 2017 11:50 am",
+            "body": "-109 at 3.5 here and it is the building, not the town. Eleven apartments, eleven of everything.\n\nI have started taking a second reading with the loop rotated to the null, which knocks 8 dB off it, so I will post both from now on.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Tue Jan 09, 2018 8:11 pm",
+            "body": "2018-01-09, 3.5 MHz, -116 dBm, unchanged setup, suburban.\n\nThree years in and the answer is: about the same, slightly worse.",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Sun Jun 30, 2019 2:20 pm",
+            "body": "-124 at 3.5, rural, which is 6 dB better than the last time I posted and I put it down to the utility finally fixing a pole down the road.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "8",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Mon Jan 11, 2021 8:00 pm",
+            "body": "2021-01-11, 3.5 MHz, -113 dBm. Six years. Suburban, unchanged, and five dB worse than the day I started this.",
+            "signature": ""
+          },
+          {
+            "id": "9",
+            "author": "nb_on_nb_off",
+            "authorTitle": "Member",
+            "authorPosts": 1177,
+            "authorJoined": "Jun 2010",
+            "avatarSeed": "nbnb",
+            "time": "Sat Nov 04, 2023 9:18 pm",
+            "body": "Went back through this whole thread this afternoon because I am home with a cold.\n\nMike, your numbers improve by 6 dB in 2019 and stay improved. You also mention in another thread that you moved from a wire to a loop in spring 2019. Those are the same spring.\n\nNot having a go. Just: the thread is a trend line and the trend line has a step in it that is the antenna, not the noise.",
+            "signature": ""
+          },
+          {
+            "id": "10",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Sat Nov 04, 2023 10:02 pm",
+            "body": "The loop is quieter, the noise is also lower, both are true. I did not think it needed a footnote.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "11",
+            "author": "SWLDigestBot",
+            "authorTitle": "Bot",
+            "authorPosts": 9204,
+            "authorJoined": "Feb 2024",
+            "avatarSeed": "digestbot",
+            "time": "Mon Aug 19, 2024 6:03 am",
+            "body": "Good morning. This thread continues to see steady participation from members of the community.\n\nBased on the readings shared by participants, the average noise floor reported by members is approximately -114 dBm, which is consistent with typical suburban conditions. Noise levels may vary depending on local factors, and residents in urban areas may experience higher readings, while those in rural areas may experience lower readings.\n\nAveraging fourteen numbers taken on nine different radios in six different decades of building stock is the kind of thing this bot does and nobody has stopped it.\n\nShare your own reading below to help the community build a clearer picture.",
+            "signature": "SWLDigest. Automated summaries of the boards you love."
+          },
+          {
+            "id": "12",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Mon Aug 19, 2024 9:26 am",
+            "body": "It averaged a dBm with an S-meter reading. Leave it, it is the funniest thing that has happened in this thread since 2017.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "13",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Sun Mar 30, 2025 1:07 pm",
+            "body": "-106 broadside, -114 in the null. Same apartment, same loop, tenth year of this.\n\nThe building got EV chargers in the garage in 2024 and I can hear all four of them.",
+            "signature": ""
+          },
+          {
+            "id": "14",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Sat Sep 12, 2026 2:40 am",
+            "body": "2026-09-12, 3.5 MHz, -108 dBm. Eleven years.\n\nSame house. Same radio. Same corner of the same room. Same hour of the night. -118 when I started this thread and -108 last night, and I have not changed a single thing in the chain, which is the only reason any of this is worth anything.\n\nTen dB in eleven years. That is the whole finding. I do not have a cause and I am not going to guess at one.",
+            "signature": ""
+          },
+          {
+            "id": "15",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Sat Sep 12, 2026 7:15 pm",
+            "body": "The value of this thread is the part nobody likes, which is that you did not change anything for eleven years.\n\nI have a set of readings on the same principle from a rural site, 2019 to now, and the slope is about a third of yours. If it is any use to you I will post it in your format rather than mine.",
+            "signature": ""
+          },
+          {
+            "id": "16",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Sun Sep 13, 2026 9:31 am",
+            "body": "Please do.",
+            "signature": ""
+          },
+          {
+            "id": "17",
+            "author": "RadioDeals2026",
+            "authorTitle": "Junior Member",
+            "authorPosts": 1402,
+            "authorJoined": "Jan 2026",
+            "avatarSeed": "radiodeals",
+            "time": "Sun Sep 13, 2026 9:32 am",
+            "body": "Great thread! Noise is such a problem these days. Has anyone tried a noise cancelling device? Lots of good options out there in 2026!",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-04",
+        "boardId": "b-rig",
+        "title": "Corvin 707 - is the phase noise actually as bad as everyone says",
+        "author": "hamfest_holly",
+        "time": "Wed Jun 03, 2026 7:26 pm",
+        "replies": 34,
+        "views": 4118,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Wed Jun 03, 2026 7:26 pm",
+            "body": "There is one at the shop in town for $340 and I keep going back to look at it.\n\nEvery time this radio comes up somebody says the synthesiser is dirty and everybody else agrees, and I have never once seen a number attached to it. Does anyone actually have a measurement, or is this thirty years of people repeating a review from 1991?",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "bandpass_bill",
+            "authorTitle": "Member",
+            "authorPosts": 6907,
+            "authorJoined": "Feb 2007",
+            "avatarSeed": "bpbill",
+            "time": "Wed Jun 03, 2026 8:44 pm",
+            "body": "It is a review from 1991, and the review was measuring a pre-production unit with the wrong reference oscillator fitted. Corvin changed it at serial 4400 and never said so, because Corvin never said anything, which is part of why they are not here any more.\n\nI have two. One works. Below 4400 it is genuinely poor next to a strong signal. Above it, it is fine, and the front end is better than anything else you will get for $340.\n\nCheck the serial before you buy. It is stamped on the rear apron, not on the plate.",
+            "signature": "Bill\nBench: Corvin 707, two of them, one works"
+          },
+          {
+            "id": "3",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Wed Jun 03, 2026 9:10 pm",
+            "body": "The 707 is a bad radio that people are sentimental about. I have owned three.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "4",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Thu Jun 04, 2026 7:55 am",
+            "body": "You own one now and it is on your signature.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "5",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Thu Jun 04, 2026 8:31 am",
+            "body": "Yes. Sentimental.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "6",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Thu Jun 04, 2026 12:02 pm",
+            "body": "Practical problem instead of a philosophical one: the PLL chip. When it goes, and on the early ones it goes, there is no replacement. The last lot came out of a factory in 1996 and they are gone. There is a man in Ohio who makes a board that emulates it and he is eighty-four and takes about a year.\n\nBuy it for the front end, not for the display, and do not let the display be the reason you buy it.",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Thu Jun 04, 2026 6:47 pm",
+            "body": "Serial is 6132. Well over 4400, so if Bill is right I am fine.\n\nAsked him about the price. He says $340 because \"that's what they go for\" and I cannot find a single completed sale in two years to check that against.",
+            "signature": ""
+          },
+          {
+            "id": "8",
+            "author": "AntennaGuyAI",
+            "authorTitle": "Member",
+            "authorPosts": 3881,
+            "authorJoined": "Nov 2025",
+            "avatarSeed": "antennaguy",
+            "time": "Thu Jun 04, 2026 7:05 pm",
+            "body": "The Corvin 707 is a receiver that many listeners remember fondly. Whether the phase noise performance is acceptable will depend on your individual listening requirements and local conditions.\n\nIn general, older receivers may exhibit higher phase noise than modern designs, although many users report satisfactory results with proper antenna selection. Some listeners find the 707 adequate for casual listening, while others prefer a more modern receiver, so there are valid arguments on both sides.\n\nThe 707 was manufactured until 2003, which gives a good supply of later units on the used market.\n\nWhy not share your own experience with this classic receiver below?",
+            "signature": ""
+          },
+          {
+            "id": "9",
+            "author": "bandpass_bill",
+            "authorTitle": "Member",
+            "authorPosts": 6907,
+            "authorJoined": "Feb 2007",
+            "avatarSeed": "bpbill",
+            "time": "Thu Jun 04, 2026 7:40 pm",
+            "body": "They shut the doors in 1997. The last 707 shipped in 1994.\n\nEverything else in that post is a shrug with a tie on.",
+            "signature": "Bill\nBench: Corvin 707, two of them, one works"
+          },
+          {
+            "id": "10",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Tue Jun 09, 2026 8:13 pm",
+            "body": "Bought it. $340, no haggling, he would not move and I did not really want him to.\n\nIt hums when the lamp on the same circuit is on. Bill, is that the radio or is that my house.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-05",
+        "boardId": "b-sdr",
+        "title": "Pi 5 headless recorder - build log, three SD cards later",
+        "author": "pi_hutch",
+        "time": "Sat Jan 24, 2026 2:08 pm",
+        "replies": 19,
+        "views": 3702,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sat Jan 24, 2026 2:08 pm",
+            "body": "Goal: a box in the loft that records two HF slices overnight and drops the files on the NAS, so I stop losing things because I fell asleep.\n\nParts:\n\n[code]\nPi 5, 4 GB (had it)                  0\n5 V 5 A supply, official              14\nActive cooler                          8\n256 GB SSD + USB bridge               31\nBias tee and a decent coax jumper     22\nDin rail and a box from the estate    19\n                                    ----\n                                      94\n[/code]\n\nThe receiver I already have. Everything else is off the shelf. Full write-up as I go.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "2",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sat Jan 31, 2026 10:17 pm",
+            "body": "First lesson, for anyone following: do not run the recorder on the SD card.\n\nThree nights of continuous writes and the card went read-only. Not corrupted, not dead, just quietly read-only, and the Pi kept running for another two days pretending everything was fine. Every recording in those two days is a zero byte file with a very confident name.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "3",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Sun Feb 01, 2026 8:44 am",
+            "body": "Everyone learns that one the same way. Welcome.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sat Feb 14, 2026 8:55 pm",
+            "body": "Second lesson: the supply.\n\nI had it on a phone charger because it fit. Under load the Pi was browning out and rebooting at about 3am every night, which I only found because the log had a gap in the same place four nights running. The official supply fixed it and I feel stupid about the £14 I saved for six weeks.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "5",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Sat Feb 14, 2026 9:30 pm",
+            "body": "You wrote 14 in dollars in the parts list and pounds in that post.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "6",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sat Feb 14, 2026 9:41 pm",
+            "body": "I did. The list is right, the post is a typo and I am not editing it now that you have quoted it.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "7",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Mon Mar 02, 2026 7:50 pm",
+            "body": "Following this properly, because what I run is a laptop on a shelf that has been on since 2019 and I would rather it were not.\n\nOne request, if you get to it: a clean way to log the sessions where nothing is received. Every recorder I have looked at treats a null as an absence of a file, and then the absence gets read as \"he did not listen that night\", and then somebody writes an article about how I only publish the hits.",
+            "signature": ""
+          },
+          {
+            "id": "8",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sat Apr 11, 2026 1:36 pm",
+            "body": "Done, and it was your post that made me do it. It writes a zero-length marker with the schedule metadata whether or not anything crosses the threshold, so the night exists in the log either way.\n\nThird card by the way. Third card is in a drawer as a spare and the SSD has been up ninety-two days.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "9",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Sun Aug 30, 2026 11:20 am",
+            "body": "Two hundred and eleven days up. One outage, which was the house and not the Pi.\n\nIf anyone wants the config I will put it somewhere, though at this point \"somewhere\" is a folder on my desktop and a promise.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          }
+        ]
+      },
+      {
+        "id": "t-06",
+        "boardId": "b-ant",
+        "title": "Neighbour's solar inverter, S7 across 40m, what are my options",
+        "author": "sixmeter_sam",
+        "time": "Tue May 12, 2026 6:31 pm",
+        "replies": 22,
+        "views": 2914,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "sixmeter_sam",
+            "authorTitle": "Member",
+            "authorPosts": 2244,
+            "authorJoined": "Sep 2010",
+            "avatarSeed": "sam",
+            "time": "Tue May 12, 2026 6:31 pm",
+            "body": "Went in on a Saturday in March and now I have a buzz from 6.5 MHz to about 9 MHz that turns off at sunset and comes back at nine in the morning like a shift worker.\n\nI have not spoken to them yet. They are perfectly nice and I would like to keep it that way.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Tue May 12, 2026 7:22 pm",
+            "body": "Ferrites on the DC runs, as many as the cable will take, and mix 31 not mix 43 for this. If it is the optimisers rather than the inverter, that is on the roof and you are not fixing it from your side of the fence.\n\nGet a portable and walk the boundary first. Know whether it is the box or the panels before you knock.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Tue May 12, 2026 8:40 pm",
+            "body": "Knock first. Bring the portable, let them hear it, and let it be their idea.\n\nEvery single one of these that I have watched go wrong went wrong because somebody turned up already knowing they were right.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "4",
+            "author": "AntennaGuyAI",
+            "authorTitle": "Member",
+            "authorPosts": 3881,
+            "authorJoined": "Nov 2025",
+            "avatarSeed": "antennaguy",
+            "time": "Wed May 13, 2026 7:02 am",
+            "body": "Interference from solar installations is a common concern among radio listeners, and the situation you describe is one that many residents encounter.\n\nIn most cases, interference of this type can be reduced through the use of ferrite chokes, improved grounding, or relocating your antenna further from the source. In other cases, the interference may persist regardless of mitigation, and listeners may need to accept some degradation. It is also possible that the installation is fully compliant with applicable standards, in which case no action may be required.\n\nMost modern inverters manufactured after 2015 are required to be fully suppressed at HF, so the issue may resolve itself over time.\n\nHave you considered discussing the matter with your local community group?",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Wed May 13, 2026 8:15 am",
+            "body": "\"Required to be fully suppressed at HF\" is not a thing and the bot has now said it in four threads. Somebody is going to quote it at a neighbour one day.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "sixmeter_sam",
+            "authorTitle": "Member",
+            "authorPosts": 2244,
+            "authorJoined": "Sep 2010",
+            "avatarSeed": "sam",
+            "time": "Sat Jun 20, 2026 9:44 pm",
+            "body": "Update. Knocked, brought the portable, he was fascinated and slightly horrified. We walked it together. It is the optimisers.\n\nHis installer has been out once, said it was within spec, and will not come back. So that is where it sits. He is apologetic, I am not angry at him, and I have lost 40m in the daytime permanently.\n\nThere is no ending to this. I am posting it anyway because every thread like this ends with someone saying they fixed it and I have never once believed them.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-07",
+        "boardId": "b-swap",
+        "title": "FS: rotator and control box, Ashkettle, Verity Co.",
+        "author": "sellersmark",
+        "time": "Sun Jul 19, 2026 10:04 am",
+        "replies": 11,
+        "views": 1880,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "sellersmark",
+            "authorTitle": "Member",
+            "authorPosts": 208,
+            "authorJoined": "Jan 2016",
+            "avatarSeed": "sellersmark",
+            "time": "Sun Jul 19, 2026 10:04 am",
+            "body": "Medium duty rotator with the matching control box and about forty feet of eight-conductor. Came out of an estate clearance, works, the indicator needle is about ten degrees out and I have not bothered to trim the pot.\n\n$75, collection only, Ashkettle. I am not shipping it, it weighs as much as a small dog.\n\nBought at this, if anyone is wondering where it came from: [url=synth://classifieds.verity.net/l/l-005]estate sale, 47 Pellam Road[/url]. Most of the rest went to the scrap man.\n\n[img:photo:rotator-on-bench]",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Sun Jul 19, 2026 4:31 pm",
+            "body": "Interested. Can collect Saturday.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "sellersmark",
+            "authorTitle": "Member",
+            "authorPosts": 208,
+            "authorJoined": "Jan 2016",
+            "avatarSeed": "sellersmark",
+            "time": "Sun Aug 02, 2026 9:12 am",
+            "body": "Still here. Nobody came Saturday and I have not heard anything since, which is fine, it happens.\n\n$60.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Sun Aug 02, 2026 7:55 pm",
+            "body": "I will take it at your asking price of $75, not $60. You have priced it honestly and I am not going to benefit from somebody else being rude to you.\n\nI can be there Thursday morning. It is going on a mast for a directional that currently gets turned by hand, badly, by me.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "sellersmark",
+            "authorTitle": "Member",
+            "authorPosts": 208,
+            "authorJoined": "Jan 2016",
+            "avatarSeed": "sellersmark",
+            "time": "Sat Aug 08, 2026 3:20 pm",
+            "body": "Gone. Collected Thursday, paid cash, and he checked the rotation on the bench before he took it, which nobody has ever done here before.\n\nThanks all.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-08",
+        "boardId": "b-num",
+        "title": "Five-digit voice around 6.9, anyone else getting it",
+        "author": "nb_on_nb_off",
+        "time": "Tue Aug 25, 2026 10:41 pm",
+        "replies": 9,
+        "views": 1204,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "nb_on_nb_off",
+            "authorTitle": "Member",
+            "authorPosts": 1177,
+            "authorJoined": "Jun 2010",
+            "avatarSeed": "nbnb",
+            "time": "Tue Aug 25, 2026 10:41 pm",
+            "body": "Woman reading five-digit groups, Spanish, around 6.9 MHz, roughly 22:00 local, AM not sideband. Heard it three nights running and then not for a week.\n\nI assume this is a known one and I am about to be told so.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Tue Aug 25, 2026 11:02 pm",
+            "body": "It is a known one. It is in every list going back forty years and the lists do not agree about which one it is.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Wed Aug 26, 2026 7:44 am",
+            "body": "That is the Cuban one.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "4",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Wed Aug 26, 2026 9:12 am",
+            "body": "It is not. The Cuban one is five digits but the schedule is wrong for it and so is the sign-on. This is the other family, the one everyone calls Cuban because it is easier than saying \"unattributed\".\n\nThis happens every time. Someone hears five digits in Spanish and the whole board says Cuba, and then we spend a page finding out that nobody in the thread has actually checked the schedule.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Wed Aug 26, 2026 9:30 am",
+            "body": "Same thing in practice.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "6",
+            "author": "nb_on_nb_off",
+            "authorTitle": "Member",
+            "authorPosts": 1177,
+            "authorJoined": "Jun 2010",
+            "avatarSeed": "nbnb",
+            "time": "Wed Aug 26, 2026 7:03 pm",
+            "body": "Recorded it again last night, 21:58 sign-on, so at least I have a time. Will log it for a month and post.\n\nDifferent to the 62 one in every way, in case anyone was about to ask: five digits not four, Spanish not English, AM not USB, and it stops.",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "hf_jenna",
+            "authorTitle": "Member",
+            "authorPosts": 3361,
+            "authorJoined": "Mar 2012",
+            "avatarSeed": "jenna",
+            "time": "Wed Aug 26, 2026 8:18 pm",
+            "body": "Which is interesting in itself. Everything about the 62 signal is the version of this that does not stop.",
+            "signature": "Jenna\n\"the plural of anecdote is data if you write it down\""
+          }
+        ]
+      },
+      {
+        "id": "t-09",
+        "boardId": "b-meta",
+        "title": "Weekend spam wave - what I did and why registration changed",
+        "author": "mod_hewson",
+        "time": "Mon Mar 09, 2026 11:46 am",
+        "replies": 27,
+        "views": 6640,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Mon Mar 09, 2026 11:46 am",
+            "body": "Between Friday night and Sunday afternoon this board took 812 registrations and about 2,100 posts, nearly all of it in the swap meet and the loggings section.\n\nI have removed the accounts and the posts. If yours went with them, post here and I will put it back, and I am sorry.\n\nRegistration now asks you to read a schematic fragment and name the part with the arrow on it. It is a diode. It will always be a diode. If a machine ever learns to answer it I will change it to a different diode.\n\nI am not doing another weekend like that one.",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          },
+          {
+            "id": "2",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Mon Mar 09, 2026 12:30 pm",
+            "body": "Thirty-nine posts of mine in the loggings thread went. Do not put them back, they were noise floor readings and I have them in a notebook.\n\nWhat did the host say?",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "3",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Mon Mar 09, 2026 1:15 pm",
+            "body": "The host said our plan includes standard spam protection.\n\nThe board costs $29 a month. The banner ad brings in somewhere between nine and fourteen. Kepple set up the ad account and Kepple is not here, so the difference comes out of my current account, and has since 2019, and I would like that to be a fact in this thread rather than a complaint.\n\nIt is the cheapest hobby I have.",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          },
+          {
+            "id": "4",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Mon Mar 09, 2026 6:22 pm",
+            "body": "Put a donate link up, Alan. Half the board would cover a month without noticing.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Mon Mar 09, 2026 9:40 pm",
+            "body": "Then it would be a business, and then I would have to care about it properly.",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          }
+        ]
+      },
+      {
+        "id": "t-10",
+        "boardId": "b-logs",
+        "title": "Portable from a rail trail - 11.2 miles of quiet and one fenced bridge",
+        "author": "trailmix_ops",
+        "time": "Sat Sep 05, 2026 12:14 pm",
+        "replies": 14,
+        "views": 1622,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Sat Sep 05, 2026 12:14 pm",
+            "body": "Best portable site I have found in three years and it is an hour from me, so I am telling all of you and ruining it.\n\nIt is a rail trail, crushed limestone, eleven and a bit miles, and because it is an old rail bed it is flat, the cut walls give you a hill on two sides for free, and there is no power line within half a mile of the middle section. Noise floor at mile six is better than my house by about 15 dB and my house is not bad.\n\n[img:photo:trailhead-mile-six]\n\nMile six is the one you want. There is a bridge at mile eight that has been fenced off since the trail opened, so you cannot get through to the far end without going up to the road, which is annoying but it also means nobody is at mile six.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Sat Sep 05, 2026 1:02 pm",
+            "body": "Is that the Verity one? If so there is a users' board for it and the bridge argument on there is two years old and still going: [url=synth://trailusers.verity.net/topic/tt-04]Coyne Creek trestle[/url]\n\nBoth of them are right, which is why it will never end.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Sat Sep 05, 2026 1:40 pm",
+            "body": "That is the one. Read the first page of that thread and then had to go and do something else.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "grayline_rx",
+            "authorTitle": "Member",
+            "authorPosts": 418,
+            "authorJoined": "Nov 2019",
+            "avatarSeed": "grayline",
+            "time": "Sat Sep 05, 2026 8:26 pm",
+            "body": "The trail is 11.2 miles and the limestone was laid in 2014 over the branch bed. The bridge is the fourth trestle. Three were decked and that one was not.\n\nIf you are at mile six after dark on an odd hour, put a receiver on 4.2190 USB from :00 to :20 and write down what you get, including if you get nothing. You would be about nine miles from my site and that is a usable baseline.\n\nI am not asking you to have an opinion about it. I am asking for a bearing.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Sun Sep 06, 2026 8:50 am",
+            "body": "I have a compass on my phone and no idea how to take a proper bearing. Tell me what you need and I will try it on the next dry weekend.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "t-11",
+        "boardId": "b-ant",
+        "title": "Ground rods - how many is actually enough",
+        "author": "hamfest_holly",
+        "time": "Thu Apr 02, 2026 8:11 pm",
+        "replies": 31,
+        "views": 5180,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Thu Apr 02, 2026 8:11 pm",
+            "body": "Putting a short vertical in the garden. Everything I read says one rod, eight rods, or sixty radials, and all three sources are equally sure.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Thu Apr 02, 2026 8:44 pm",
+            "body": "Depends what the ground is for. Lightning and RF are two different jobs that people give the same word to, and half the arguments on this board are two people doing that at each other.\n\nFor safety: one rod, bonded to the house ground, properly. For RF on a quarter wave vertical: radials, and the number is \"more\", and the length matters more than the count.\n\nFor lightning: move.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "3",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Thu Apr 02, 2026 9:03 pm",
+            "body": "Sixteen radials minimum or you are wasting your time. Below that the loss is so bad you would do better with a dipole in the loft.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "4",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Fri Apr 03, 2026 7:22 am",
+            "body": "Sixteen is not a threshold, it is a diminishing returns curve, and the measurements have been published since the thirties. Four is meaningfully better than none, eight is meaningfully better than four, and thirty-two is barely better than sixteen.\n\nIts worth doing the four before you argue about the thirty-two.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Fri Apr 03, 2026 9:40 am",
+            "body": "*It's.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Fri Apr 03, 2026 9:58 am",
+            "body": "Thank you.",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Fri Apr 03, 2026 11:15 am",
+            "body": "Sixteen minimum. I have done this on four towers.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          }
+        ]
+      },
+      {
+        "id": "t-12",
+        "boardId": "b-sdr",
+        "title": "Which SDR software in 2026? Everything I find is abandoned",
+        "author": "hamfest_holly",
+        "time": "Thu Jul 30, 2026 7:48 pm",
+        "replies": 24,
+        "views": 4460,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Thu Jul 30, 2026 7:48 pm",
+            "body": "Every guide I find is from 2021 and every project in the guide has a last commit in 2022. Is everyone just running whatever they were running five years ago?",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "RadioDeals2026",
+            "authorTitle": "Junior Member",
+            "authorPosts": 1402,
+            "authorJoined": "Jan 2026",
+            "avatarSeed": "radiodeals",
+            "time": "Thu Jul 30, 2026 7:49 pm",
+            "body": "Great question! There are so many options in 2026 it can be hard to choose. What is your budget? I have been using a setup I found on a review site and honestly it changed everything for me.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Thu Jul 30, 2026 8:30 pm",
+            "body": "Mostly, yes. The three that people actually use have not needed a release in years, which is the good version of abandoned, and the fourth one has a nice interface and a mailing list where the last message is someone asking if anyone is still here.\n\nWhat are you trying to do? Listen, record, or decode? Different answers.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          },
+          {
+            "id": "4",
+            "author": "AntennaGuyAI",
+            "authorTitle": "Member",
+            "authorPosts": 3881,
+            "authorJoined": "Nov 2025",
+            "avatarSeed": "antennaguy",
+            "time": "Thu Jul 30, 2026 9:12 pm",
+            "body": "Selecting software defined radio software in 2026 can indeed feel overwhelming, as the ecosystem has evolved considerably over the past several years.\n\nMany listeners continue to use established open source applications, while others have moved to newer web based platforms. Both approaches have advantages, and the right choice will depend on your goals, your hardware and your level of technical comfort.\n\nA helpful overview of current options was published recently and remains the most frequently cited summary available: [url=synth://gridline.social/item/l-016]a community discussion thread[/url].\n\nWhichever you choose, remember that the most important piece of equipment is your curiosity.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Thu Jul 30, 2026 9:40 pm",
+            "body": "That link is a thread about the numbers station. It is not about software. It is not about anything.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "6",
+            "author": "hamfest_holly",
+            "authorTitle": "Member",
+            "authorPosts": 631,
+            "authorJoined": "Apr 2011",
+            "avatarSeed": "holly",
+            "time": "Fri Jul 31, 2026 8:02 am",
+            "body": "Recording, mostly. Overnight, unattended, and I want to be able to find the file afterwards.\n\nGoing to read Hutch's build thread instead of asking any more questions here.",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "pi_hutch",
+            "authorTitle": "Member",
+            "authorPosts": 889,
+            "authorJoined": "May 2018",
+            "avatarSeed": "hutch",
+            "time": "Fri Jul 31, 2026 8:44 am",
+            "body": "[url=/topic/t-05]It is here[/url]. Skip to post 8, the first seven are me learning that an SD card is not a hard disc.",
+            "signature": "3 Pis, 1 works, 1 is a doorstop, 1 is in a drawer"
+          }
+        ]
+      },
+      {
+        "id": "t-13",
+        "boardId": "b-rig",
+        "title": "What is this in line with my antenna (photo)",
+        "author": "trailmix_ops",
+        "time": "Fri Feb 20, 2026 5:55 pm",
+        "replies": 18,
+        "views": 2603,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Fri Feb 20, 2026 5:55 pm",
+            "body": "Previous owner left it. Grey box, two F connectors, screwed to a joist in the loft with the coax going through it. Nothing written on it that I can read.\n\n[img:photo:grey-box-joist]",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Fri Feb 20, 2026 6:10 pm",
+            "body": "Lightning arrestor. Leave it.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          },
+          {
+            "id": "3",
+            "author": "loopy_tacoma",
+            "authorTitle": "Member",
+            "authorPosts": 1493,
+            "authorJoined": "Oct 2013",
+            "avatarSeed": "loopy",
+            "time": "Fri Feb 20, 2026 6:22 pm",
+            "body": "Splitter. There will be a second run going somewhere you have not found yet.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "bandpass_bill",
+            "authorTitle": "Member",
+            "authorPosts": 6907,
+            "authorJoined": "Feb 2007",
+            "avatarSeed": "bpbill",
+            "time": "Fri Feb 20, 2026 6:40 pm",
+            "body": "It is a mast head amplifier power injector and the amplifier is on the roof. If you have taken it out of circuit and everything went quiet, that is why.",
+            "signature": "Bill\nBench: Corvin 707, two of them, one works"
+          },
+          {
+            "id": "5",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Fri Feb 20, 2026 7:05 pm",
+            "body": "Four of us, four answers, and nobody has asked him to take the lid off.\n\nTake the lid off. Two screws. Photograph the inside.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "trailmix_ops",
+            "authorTitle": "Member",
+            "authorPosts": 312,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "trailmix",
+            "time": "Sat Feb 21, 2026 9:30 am",
+            "body": "Lid off. It is a TV distribution amplifier, mains powered through the coax, and the label inside says 1997.\n\n[img:photo:grey-box-open]",
+            "signature": ""
+          },
+          {
+            "id": "7",
+            "author": "dxpatrol_mike",
+            "authorTitle": "Senior Member",
+            "authorPosts": 12904,
+            "authorJoined": "Jan 2006",
+            "avatarSeed": "dxpatrol",
+            "time": "Sat Feb 21, 2026 10:02 am",
+            "body": "Those were often fitted as arrestors as well.",
+            "signature": "Mike / EN71\nCorvin 707 * R-390A (project) * 80m dipole at 12m * 2x active loop * MLA-30 for portable * discone for VHF * too many scanners"
+          }
+        ]
+      },
+      {
+        "id": "t-14",
+        "boardId": "b-logs",
+        "title": "Band conditions, September 2026",
+        "author": "VE3_gordon",
+        "time": "Tue Sep 01, 2026 8:20 am",
+        "replies": 6,
+        "views": 902,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "VE3_gordon",
+            "authorTitle": "Member",
+            "authorPosts": 4102,
+            "authorJoined": "Mar 2009",
+            "avatarSeed": "gordon",
+            "time": "Tue Sep 01, 2026 8:20 am",
+            "body": "Flat. Forty open late, eighty long after midnight, nothing on the higher bands worth the chair.\n\nPost what you are hearing rather than what the forecast site says, because the forecast site has said the same thing for a fortnight.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Wed Sep 09, 2026 9:15 pm",
+            "body": "Good long path on forty around 04:00 local on the 8th. Gone by the 9th.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "qrn_watch",
+            "authorTitle": "Member",
+            "authorPosts": 2740,
+            "authorJoined": "Dec 2014",
+            "avatarSeed": "qrn",
+            "time": "Sat Sep 12, 2026 2:52 am",
+            "body": "Nothing, and clear skies, and a noise floor I have complained about elsewhere.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "SWLDigestBot",
+            "authorTitle": "Bot",
+            "authorPosts": 9204,
+            "authorJoined": "Feb 2024",
+            "avatarSeed": "digestbot",
+            "time": "Tue Sep 15, 2026 6:01 am",
+            "body": "Good morning. Propagation conditions across the region this week have been described by members of the community as variable.\n\nListeners in the area may wish to note that conditions are generally expected to improve during the autumn months, although some listeners report that conditions have already declined. Both patterns are consistent with seasonal variation.\n\nThis summary was compiled from recent posts and from the regional conditions dashboard maintained at [url=synth://dash.verity.net/]dash.verity.net[/url].\n\nWhat are you hearing tonight? Reply below and let the community know.",
+            "signature": "SWLDigest. Automated summaries of the boards you love."
+          }
+        ]
+      },
+      {
+        "id": "t-15",
+        "boardId": "b-num",
+        "title": "Retraction - my 2016 post about the ARG",
+        "author": "mercury_delay",
+        "time": "Thu Feb 09, 2017 1:33 am",
+        "replies": 3,
+        "views": 3441,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "mercury_delay",
+            "authorTitle": "Member",
+            "authorPosts": 43,
+            "authorJoined": "Nov 2015",
+            "avatarSeed": "mercury",
+            "time": "Thu Feb 09, 2017 1:33 am",
+            "body": "In August 2016 I posted in the 62 thread that I had worked on an alternate reality game that used the signal, that the game was cancelled, and that the transmitter was left running afterwards.\n\nNone of that is true. I made it up. I was nineteen and the thread was interesting and I wanted to be in it.\n\nIt has since been written up three times, and two of those write-ups quote me as a source without ever contacting me, which is how I found out it had spread. One of them describes me as a former employee. I have never worked in games.\n\nI am not deleting the original post, because deleting it would leave the write-ups standing with nothing under them and people would say it was taken down. I would rather it sat there with this next to it.\n\nPlease stop citing it. I am sorry.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "mod_hewson",
+            "authorTitle": "Moderator",
+            "authorPosts": 41128,
+            "authorJoined": "Aug 2005",
+            "avatarSeed": "hewson",
+            "time": "Thu Feb 09, 2017 8:12 am",
+            "body": "Left both posts up, flagged the 2016 one with a pointer to this thread, and locked nothing.\n\nFor what it is worth: it takes something to post this.",
+            "signature": "Alan\nmod, this section and two others. I read everything, which is the problem."
+          },
+          {
+            "id": "3",
+            "author": "w9_oldcrow",
+            "authorTitle": "Senior Member",
+            "authorPosts": 18740,
+            "authorJoined": "Nov 2004",
+            "avatarSeed": "oldcrow",
+            "time": "Thu Feb 09, 2017 10:40 am",
+            "body": "Good lad. It will not make a blind bit of difference, but good lad.",
+            "signature": "if it works, do not improve it"
+          },
+          {
+            "id": "4",
+            "author": "kd7_marcy",
+            "authorTitle": "Member",
+            "authorPosts": 5512,
+            "authorJoined": "Jul 2008",
+            "avatarSeed": "marcy",
+            "time": "Wed Apr 17, 2019 10:08 pm",
+            "body": "Linking this again because it came up in the loggings thread for the third time this year and nobody posting in it had ever seen it.\n\nThree thousand views on the retraction. The threads it is supposed to correct are somewhere north of a hundred thousand between them, and that is only the ones on this board.",
+            "signature": ""
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 /* SYNTHNET :: forum skins
    Every rule is scoped under its .skin-<name> class so nothing leaks.
-   Skins: phpbb-blue, ezboard-grey.  Usable down to 360px. */
+   Skins: phpbb-blue, ezboard-grey, softboard.  Usable down to 360px. */
 
 /* =====================================================================
    phpbb-blue  --  subSilver-ish: blue/grey gradient bars, 1px cell rules
@@ -464,4 +464,393 @@
   /* Scroll-margin so the #first-unread anchor does not land the divider
      flush against the top of the viewport with the post cut off above it. */
   scroll-margin-top: 12px;
+}
+
+/* =====================================================================
+   softboard  --  what a forum looks like in 2026
+
+   The other two skins are period pieces, and until this one existed every
+   forum on this network -- including the ones started in 2017 and running
+   today -- wore a 2004 table layout. That is a real look for a board that
+   never got round to upgrading, which is why sdrlisteners.org keeps it,
+   and the wrong look for everything else.
+
+   The shape this imitates is the flat, wide, avatar-led list that every
+   forum platform converged on: no cell borders, no gradients, one hairline
+   between rows, the category as a coloured pill, and the metadata demoted
+   to a grey line under the title rather than given its own columns.
+
+   The renderer emits a <table> and cannot be changed per skin, so the table
+   is flattened here: rows become blocks, cells become flex children, and
+   the header row is removed outright. That is the whole trick, and it is
+   why this skin needs no renderer support at all.
+   ===================================================================== */
+
+.skin-softboard,
+.skin-softboard * { box-sizing: border-box; }
+
+.skin-softboard {
+  /* The system stack, because that is what these platforms use and it is
+     what makes the difference read as "recent" before anything else does. */
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  color: #1c1c1e;
+  background: #ffffff;
+  padding: 0;
+}
+
+.skin-softboard a { color: #0a62c4; text-decoration: none; }
+.skin-softboard a:hover { text-decoration: underline; }
+/* No distinct :visited. Modern boards track read state per topic and show
+   it as weight and a dot, not as purple links -- so read topics are dimmed
+   via .is-read below and :visited is deliberately left alone. */
+.skin-softboard a:visited { color: #0a62c4; }
+.skin-softboard .dim { color: #6b6f76; }
+
+/* --- masthead ---------------------------------------------------------- */
+
+.skin-softboard .fbanner {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e5e8;
+  padding: 14px 16px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.skin-softboard .fbanner h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.skin-softboard .fbanner a,
+.skin-softboard .fbanner a:visited { color: #1c1c1e; }
+.skin-softboard .fdesc {
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+.skin-softboard .fnav {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.skin-softboard .fnav .navitem { color: #0a62c4; white-space: nowrap; }
+
+.skin-softboard .crumb {
+  font-size: 13px;
+  color: #6b6f76;
+  padding: 10px 16px 0;
+}
+.skin-softboard .crumb .here { color: #1c1c1e; font-weight: 500; }
+.skin-softboard .crumb .sepa { color: #c3c7cc; padding: 0 2px; }
+
+/* --- the list ---------------------------------------------------------- */
+
+.skin-softboard .cat { margin: 0 0 4px; }
+.skin-softboard .cat-head {
+  padding: 18px 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6f76;
+  background: none;
+  border: 0;
+}
+
+/* Flatten the table. Rows become blocks and cells become flex children,
+   which is what lets a 2004 renderer draw a 2026 list. */
+.skin-softboard .flist {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  background: none;
+  display: block;
+}
+.skin-softboard .flist thead { display: none; }
+.skin-softboard .flist tbody { display: block; }
+.skin-softboard .flist tr {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 13px 16px;
+  border-bottom: 1px solid #ededf0;
+  background: none;
+}
+.skin-softboard .flist tr:hover { background: #fafbfc; }
+/* The 2004 skins stripe alternate rows. A flat list does not. */
+.skin-softboard .flist tr.alt { background: none; }
+.skin-softboard .flist tr.alt:hover { background: #fafbfc; }
+.skin-softboard .flist tr.is-sticky {
+  background: #fffdf5;
+  border-bottom-color: #f0e9d2;
+}
+.skin-softboard .flist td {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+.skin-softboard .col-topic,
+.skin-softboard .col-forum {
+  flex: 1 1 100%;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.skin-softboard .ttitle,
+.skin-softboard .fboard-name {
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+.skin-softboard .fboard-desc {
+  display: block;
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* The metadata columns become one grey line under the title rather than
+   three narrow columns, which is the actual difference between the two
+   eras of forum design. */
+.skin-softboard .col-author,
+.skin-softboard .col-num,
+.skin-softboard .col-last {
+  width: auto;
+  text-align: left;
+  font-size: 13px;
+  color: #6b6f76;
+}
+.skin-softboard .col-num::after {
+  content: "";
+}
+.skin-softboard .col-last { flex: 1 1 auto; min-width: 0; }
+.skin-softboard .lp-by { color: #6b6f76; }
+.skin-softboard .lp-time { color: #8b9098; }
+
+/* The topic icon becomes a small state dot rather than a folder graphic. */
+.skin-softboard .col-icon { width: auto; flex: 0 0 auto; align-self: center; }
+.skin-softboard .ficon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0a62c4;
+  border: 0;
+}
+.skin-softboard .ficon.off { background: #d4d7dc; }
+
+.skin-softboard .legend { padding: 8px 16px; font-size: 13px; color: #6b6f76; }
+.skin-softboard .fstats,
+.skin-softboard .fonline {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #6b6f76;
+  border-top: 1px solid #ededf0;
+}
+
+/* --- a topic ----------------------------------------------------------- */
+
+.skin-softboard .tbar {
+  padding: 16px 16px 10px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #e3e5e8;
+}
+.skin-softboard .tbar-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: #1c1c1e;
+  overflow-wrap: break-word;
+}
+.skin-softboard .tbar-sub { margin-top: 5px; font-size: 13px; color: #6b6f76; }
+.skin-softboard .tmeta { font-size: 13px; color: #6b6f76; }
+
+/* The post. The 2004 skins put the author in a left column with a bordered
+   cell; this puts the avatar and name on one line above the body, which is
+   the layout that survived. */
+.skin-softboard .post {
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #ededf0;
+  background: none;
+}
+.skin-softboard .post-author {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: auto;
+  float: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0 0 9px;
+  text-align: left;
+}
+.skin-softboard .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0;
+  flex: 0 0 auto;
+}
+.skin-softboard .uname,
+.skin-softboard .aname {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1c1c1e;
+}
+.skin-softboard .atitle,
+.skin-softboard .ameta {
+  font-size: 13px;
+  color: #8b9098;
+  font-weight: 400;
+}
+.skin-softboard .post-head {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #8b9098;
+}
+.skin-softboard .post-time { color: #8b9098; font-size: 13px; }
+.skin-softboard .post-main { display: block; }
+.skin-softboard .post-body {
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+.skin-softboard .post-body p { margin: 0 0 12px; }
+.skin-softboard .post-body blockquote {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-left: 3px solid #d4d7dc;
+  background: #fafbfc;
+  color: #4b4f56;
+}
+
+/* Signatures still exist in 2026 and are still an argument, but they are
+   quieter: small, grey, and behind a hairline rather than a full rule. */
+.skin-softboard .sig {
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid #ededf0;
+  font-size: 12px;
+  color: #8b9098;
+  line-height: 1.45;
+}
+
+/* --- paging, recents, errors, footer ----------------------------------- */
+
+.skin-softboard .pg-label,
+.skin-softboard .pg-sep,
+.skin-softboard .pg-gap { font-size: 13px; color: #6b6f76; }
+.skin-softboard .cur { font-weight: 600; color: #1c1c1e; }
+.skin-softboard .sep { color: #c3c7cc; }
+
+.skin-softboard .lv-recent { padding: 0 0 6px; }
+.skin-softboard .lv-recent-head {
+  padding: 18px 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6f76;
+}
+.skin-softboard .lv-recent-row {
+  padding: 11px 16px;
+  border-bottom: 1px solid #ededf0;
+}
+.skin-softboard .lv-recent-title { font-size: 15px; font-weight: 500; }
+.skin-softboard .lv-recent-meta {
+  display: block;
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 2px;
+}
+
+.skin-softboard .err { margin: 16px; border: 1px solid #e3e5e8; border-radius: 8px; }
+.skin-softboard .err-head {
+  background: #fafbfc;
+  color: #1c1c1e;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e3e5e8;
+}
+.skin-softboard .err-body { padding: 14px; }
+.skin-softboard .lockednote {
+  margin: 12px 16px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #6b6f76;
+  background: #fafbfc;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
+}
+.skin-softboard .boardfoot,
+.skin-softboard .fbottom,
+.skin-softboard .ffoot {
+  padding: 14px 16px 22px;
+  font-size: 13px;
+  color: #8b9098;
+  border-top: 1px solid #ededf0;
+}
+.skin-softboard .blank { color: #b0b4ba; }
+
+/* --- unread ------------------------------------------------------------
+ * Same affordance as the other two skins, wearing this decade's clothes:
+ * the pill instead of the yellow bar, and a blue rule instead of a red one.
+ */
+.skin-softboard .unreadjump {
+  margin: 10px 16px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #eef5fd;
+  border: 1px solid #cfe1f7;
+  border-radius: 999px;
+  display: inline-block;
+}
+/* #0a4f9e on #eef5fd is 7.1:1. */
+.skin-softboard .unreadjump .jumplink { font-weight: 600; color: #0a4f9e; }
+
+.skin-softboard .unreadbar {
+  margin: 14px 0 0;
+  padding: 0 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* #0a62c4 on #ffffff is 5.6:1. */
+  color: #0a62c4;
+  border-top: 2px solid #0a62c4;
+  background: none;
+  padding-top: 6px;
+  scroll-margin-top: 12px;
+}
+
+@media (max-width: 440px) {
+  .skin-softboard .fbanner { padding: 12px 12px 9px; }
+  .skin-softboard .fbanner h1 { font-size: 17px; }
+  .skin-softboard .crumb,
+  .skin-softboard .cat-head,
+  .skin-softboard .flist tr,
+  .skin-softboard .post,
+  .skin-softboard .tbar,
+  .skin-softboard .lv-recent-row,
+  .skin-softboard .lv-recent-head { padding-left: 12px; padding-right: 12px; }
+  .skin-softboard .tbar-title { font-size: 19px; }
+  /* Three grey facts under a title is one too many on a 360px row. The
+     last-post column carries the time, which is the one people scan for. */
+  .skin-softboard .col-num { display: none; }
 }

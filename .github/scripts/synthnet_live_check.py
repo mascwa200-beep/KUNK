@@ -332,6 +332,35 @@ def main():
                            "boards.gridfall.net", "dash.verity.net",
                            "now.clipvault.tv", "mail.verity.net",
                            "shopwell.store", "62chan.org"]
+            # A feed can leak no markup, throw nothing, and still read as a
+            # machine because the same row is on screen twice. live.stream()
+            # re-rolls a repeat, but the re-roll was gated on the pool being
+            # a composed one, so every renderer that passes a written array
+            # got no dedup at all: 15% of all visible rows network-wide were
+            # duplicates of another row on the same screen, three pairs out
+            # of eight on a forum front page. Nothing failed. It just looked
+            # generated.
+            #
+            # 5% is the line. Some repetition is real -- a bot does repost,
+            # and a genuinely wrapped pool should show it -- so this is not
+            # zero, it is "not the mechanism showing through".
+            ROWS = [".lv-recent-row", ".news-entry", ".wr-line", ".ag-row",
+                    ".feed-item", ".tl-post", ".q-row", ".bd-post", ".cd-msg",
+                    ".news-index-row", ".sh-card"]
+            DUPE_PROBE = """(sels) => {
+              let n = 0, d = 0;
+              for (const s of sels) {
+                const t = [...document.querySelectorAll(s)]
+                  .map(x => (x.innerText || '').replace(/\\s+/g, ' ').trim().slice(0, 70))
+                  .filter(x => x.length > 12);
+                if (t.length < 3) continue;
+                n += t.length; d += t.length - new Set(t).size;
+              }
+              return [n, d];
+            }"""
+            seen_rows = dupe_rows = 0
+            dupe_worst = []
+
             base_ms = page.evaluate("Date.now()")
             stops = 0
             leaks = []
@@ -354,6 +383,12 @@ def main():
                                 f"synth://{domain}/ at +{step * 4}h leaked "
                                 f"{marker!r}: ...{text[max(0, idx - 40):idx + 60]!r}")
                             break
+
+                    n, d = page.evaluate(DUPE_PROBE, ROWS)
+                    seen_rows += n
+                    dupe_rows += d
+                    if d:
+                        dupe_worst.append((d, n, domain, step * 4))
             if errors:
                 problems.append(f"console error during the clock sweep: "
                                 f"{errors[0][:200]}")
@@ -364,6 +399,20 @@ def main():
                 notes.append(f"clock sweep: {stops} page loads across four days "
                              f"on {len(sweep_pages)} streaming sites, no leaked "
                              f"markup")
+
+            pct = 100.0 * dupe_rows / max(1, seen_rows)
+            if pct > 5.0:
+                dupe_worst.sort(reverse=True)
+                problems.append(
+                    f"{dupe_rows} of {seen_rows} visible rows across the sweep "
+                    f"({pct:.1f}%) repeat another row on the same screen. Over "
+                    f"5% the mechanism is showing. Worst: " + ", ".join(
+                        f"{d}/{n} on {dom} at +{h}h"
+                        for d, n, dom, h in dupe_worst[:3]))
+            else:
+                notes.append(f"repeated rows: {dupe_rows}/{seen_rows} "
+                             f"({pct:.1f}%) across the sweep")
+
             page.evaluate("SYNTH.live.setNow(null)")
 
             # --- 9. what happened while you were gone ----------------------

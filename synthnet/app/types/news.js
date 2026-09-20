@@ -305,7 +305,13 @@
 
     function byline(a) {
       var parts = [];
-      if (a.byline) { parts.push('By ' + String(a.byline)); }
+      if (a.byline) {
+        /* Half the copy on this network puts the name in the field and half
+         * puts "By Ruth Ahlgren, Staff Writer", so prefixing unconditionally
+         * printed BY BY across the archive's front page. */
+        var who = trim(a.byline);
+        parts.push(/^by\s+/i.test(who) ? who : 'By ' + who);
+      }
       if (a.date) { parts.push(String(a.date)); }
       var sec = sectionName(a.sectionId);
       if (sec) { parts.push(sec); }
@@ -364,7 +370,7 @@
       return el('div', { 'class': 'news-stamps' },
         el('p', { 'class': 'news-stamp' },
           el('span', { 'class': 'news-stamp-label' }, 'Published'),
-          ' ', stampOf(a.date)),
+          ' ', stampOf(a.date) || 'date not recorded'),
         el('p', { 'class': 'news-stamp news-stamp-updated' },
           el('span', { 'class': 'news-stamp-label' }, 'Updated'),
           ' ', stampOf(last.raw, pubMs),

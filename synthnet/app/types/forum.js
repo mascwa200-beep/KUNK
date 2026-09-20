@@ -196,7 +196,8 @@
         window.SYNTH.liveui ? window.SYNTH.liveui.badge(t.kind) : null,
         el('span', { 'class': 'lv-recent-meta' },
           ' by ' + t.author + ' \u00b7 ' + L.ago(t.at) +
-          ' \u00b7 ' + t.replies + ' replies \u00b7 ' + L.commas(t.views) + ' views')));
+          ' \u00b7 ' + t.replies + (t.replies === 1 ? ' reply' : ' replies') +
+          ' \u00b7 ' + L.commas(t.views) + ' views')));
     });
     return wrap;
   }
