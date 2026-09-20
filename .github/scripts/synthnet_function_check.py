@@ -243,7 +243,8 @@ def main():
     ap.add_argument("--root", default="synthnet")
     ap.add_argument("--sites", type=int, default=0, help="limit sites (0 = all)")
     ap.add_argument("--pages", type=int, default=10, help="pages per site")
-    ap.add_argument("--only", default="", help="one domain")
+    ap.add_argument("--only", default="", help="domain, or a comma list")
+    ap.add_argument("--type", default="", help="only sites of this type")
     ap.add_argument("--json", default="", help="write findings here")
     args = ap.parse_args()
     root = pathlib.Path(args.root).resolve()
@@ -292,7 +293,11 @@ def main():
             sites = page.evaluate(
                 "() => SYNTH.data.list().map(r => ({d: r.domain, t: r.type}))")
             if args.only:
-                sites = [s for s in sites if s["d"] == args.only]
+                want = {d.strip() for d in args.only.split(",") if d.strip()}
+                sites = [s for s in sites if s["d"] in want]
+            if args.type:
+                kinds = {t.strip() for t in args.type.split(",") if t.strip()}
+                sites = [s for s in sites if s["t"] in kinds]
             if args.sites:
                 sites = sites[:args.sites]
 
