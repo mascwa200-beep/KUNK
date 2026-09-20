@@ -195,8 +195,16 @@ authority; this table mirrors it.
 
 The "era" column is guidance, not enforcement — a 2026 `forum` is entirely
 legal and the project needs several. Adding a skin means adding it to `SKINS`
-in `tools/validate.py`, adding rules to `theme/skins/<type>.css` scoped under
-`.skin-<name>`, and (for a new type) a `<link>` in `index.html`.
+in `tools/validate.py` and adding rules to `theme/skins/<type>.css` scoped
+under `.skin-<name>`.
+
+**Adding a whole new type** means one more thing: an entry in
+`app/loadmap.js`. Nothing is `<script>`ed or `<link>`ed from `index.html`
+any more — `app/render.js` fetches a type's renderer and stylesheet the
+first time a page of that type is opened, and that table is the only record
+of which files those are. `tools/build.py` fails the build if a file under
+`app/types/` or `theme/skins/` is missing from it, so this is not something
+you can forget quietly.
 
 **Which forum skin.** `softboard` is the flat, wide, avatar-led list every
 forum platform converged on, and it is the right default for a board started

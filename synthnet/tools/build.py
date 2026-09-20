@@ -910,6 +910,59 @@ def parse_gate(paths, warnings):
             )
 
 
+LOADMAP_JS = ROOT / "app" / "loadmap.js"
+_LOADMAP_ENTRY = re.compile(
+    r"(\w+)\s*:\s*\{\s*js\s*:\s*'([^']+)'\s*,\s*css\s*:\s*'([^']+)'\s*\}"
+)
+
+
+def read_loadmap():
+    """The type -> {js, css} table in app/loadmap.js, and a check that it is whole.
+
+    index.html no longer carries the twenty renderers and twenty skin
+    stylesheets; app/render.js fetches the one a page needs. The standalone
+    single-file build has nothing to fetch from, so it has to inline all of
+    them -- and the ONLY record of what "all of them" means is that table.
+
+    So the table is read here, and anything on disk that is missing from it
+    is a build failure. A renderer added without an entry would otherwise
+    produce a green build and a site type that silently never renders, which
+    is exactly the failure this project already had once when build.py
+    bundled JavaScript it never parsed.
+    """
+    if not LOADMAP_JS.exists():
+        raise BuildError("app/loadmap.js not found at %s" % _rel(LOADMAP_JS))
+    text = LOADMAP_JS.read_text(encoding="utf-8")
+    entries = {}
+    for name, js, css in _LOADMAP_ENTRY.findall(text):
+        entries[name] = {"js": js, "css": css}
+    if not entries:
+        raise BuildError("app/loadmap.js parsed to zero entries -- the shape changed")
+
+    claimed_js = {e["js"] for e in entries.values()}
+    claimed_css = {e["css"] for e in entries.values()}
+    problems = []
+    for path in sorted((ROOT / "app" / "types").glob("*.js")):
+        rel = "app/types/" + path.name
+        if rel not in claimed_js:
+            problems.append("%s is on disk but not in app/loadmap.js, so nothing "
+                            "would ever load it" % rel)
+    for path in sorted((ROOT / "theme" / "skins").glob("*.css")):
+        rel = "theme/skins/" + path.name
+        if rel not in claimed_css:
+            problems.append("%s is on disk but not in app/loadmap.js, so no page "
+                            "would ever be styled by it" % rel)
+    for name, entry in sorted(entries.items()):
+        for key in ("js", "css"):
+            if not (ROOT / entry[key]).exists():
+                problems.append("app/loadmap.js maps %r to %s, which does not exist"
+                                % (name, entry[key]))
+    if problems:
+        raise BuildError("app/loadmap.js and the files on disk disagree:\n  "
+                         + "\n  ".join(problems))
+    return entries
+
+
 def _attr(tag, name):
     m = re.search(r"\b%s\s*=\s*[\"']([^\"']*)[\"']" % name, tag, re.IGNORECASE)
     return m.group(1) if m else ""
@@ -934,6 +987,7 @@ def build_bundle(registry, sites, search, warnings):
     if not INDEX_HTML.exists():
         raise BuildError("index.html not found at %s" % INDEX_HTML)
     html = INDEX_HTML.read_text(encoding="utf-8")
+    loadmap = read_loadmap()
 
     blob = json.dumps(
         {"registry": registry, "sites": sites, "search": search},
@@ -999,6 +1053,49 @@ def build_bundle(registry, sites, search, warnings):
         return out
 
     html = _SCRIPT_SRC.sub(swap_script, html)
+
+    # ---- the deferred half -------------------------------------------
+    #
+    # Served, app/render.js fetches a type's renderer and stylesheet the
+    # first time a page of that type is opened. This file has nothing to
+    # fetch from, so everything in the loadmap goes in.
+    #
+    # That is also what keeps the two modes on ONE code path: with every
+    # renderer inlined, SYNTH.render.has() is true for every type, so
+    # ensure() resolves without touching the network and never knows which
+    # mode it is in. The stylesheets carry the same data-synth-skin marker
+    # the loader stamps on an injected <link>, so it will not add a second
+    # copy of one that is already here.
+    #
+    # Position matters: immediately before app/engine.js, which is exactly
+    # where these scripts sat when index.html listed them. Some renderers do
+    # module-level work that reads app/live.js, app/grammar.js and the slop
+    # pools, and all of those are inlined above this point.
+    lazy_parts = []
+    for name, entry in sorted(loadmap.items()):
+        css_path = ROOT / entry["css"]
+        lazy_parts.append(
+            '<style data-synth-skin="%s">\n/* %s */\n%s\n</style>'
+            % (name, entry["css"], css_path.read_text(encoding="utf-8").strip())
+        )
+    for name, entry in sorted(loadmap.items()):
+        js_path = ROOT / entry["js"]
+        code = js_path.read_text(encoding="utf-8").strip()
+        if "</script" in code.lower():
+            warnings.append("%s contains a literal </script -- the bundle may break"
+                            % entry["js"])
+        scripts.append(js_path)
+        lazy_parts.append("<script>\n/* %s */\n%s\n</script>" % (entry["js"], code))
+
+    anchor = "<script>\n/* app/engine.js */"
+    if anchor not in html:
+        raise BuildError(
+            "index.html no longer loads app/engine.js, so there is nowhere to "
+            "put the twenty renderers the standalone build has to inline. "
+            "Move the anchor in build_bundle() rather than dropping them."
+        )
+    html = html.replace(anchor, "\n".join(lazy_parts) + "\n" + anchor, 1)
+
     parse_gate(scripts, warnings)
 
     if not state["embedded"]:
@@ -1040,6 +1137,19 @@ def build_service_worker(warnings):
 
     Deriving it from index.html means the two cannot disagree. Adding a
     stylesheet or a script to the page is now the whole change.
+
+    index.html is no longer the whole story, though: the twenty renderers and
+    twenty skin stylesheets moved out of it into app/loadmap.js, and
+    app/render.js fetches them on demand. Deriving from the page alone
+    dropped all forty from the precache and quietly broke offline for any
+    site type you had not already visited -- the same class of failure this
+    function exists to prevent, arriving from the other direction. Both
+    sources, then.
+
+    Deferring them changes WHEN the first paint happens, not how many bytes
+    a first visit eventually pulls. The service worker still fetches
+    everything; it just does it after the page is on screen instead of
+    before.
     """
     html = INDEX_HTML.read_text(encoding="utf-8")
     assets = []
@@ -1054,6 +1164,13 @@ def build_service_worker(warnings):
         path = _local(match.group(1))
         if path:
             assets.append(_rel(path).replace("\\", "/"))
+
+    # Everything app/render.js can fetch at navigation time. Without these the
+    # app is offline-complete only for the site types you happened to open
+    # while you still had a network.
+    for _name, entry in sorted(read_loadmap().items()):
+        assets.append(entry["css"])
+        assets.append(entry["js"])
 
     # The generated data files are not referenced by a tag but are fetched on
     # boot, so the offline shell is incomplete without them.

@@ -1415,39 +1415,54 @@ window.SYNTH = window.SYNTH || {};
           return null;
         }
 
-        var mount = el('div', {
-          class: 'synth-page skin-' + (site.skin || 'plain-white'),
-          dataset: { domain: loc.domain, type: site.type || '' }
+        /* This type's renderer and stylesheet, fetched now if this is the
+         * first page of its kind. index.html no longer carries all twenty of
+         * each -- see app/loadmap.js. In the standalone build they are
+         * already inlined and this resolves without a fetch.
+         *
+         * ensure() never rejects: a renderer that will not load resolves
+         * anyway and render() draws its "Unsupported site type" notice,
+         * which beats a browser that never paints. */
+        return SYNTH.render.ensure(site.type).then(function () {
+          /* Re-check across the new async gap, the same as after getSite
+           * above. Without this a slow first fetch lets an older navigation
+           * commit its page over a newer one. */
+          if (token !== navToken) return null;
+
+          var mount = el('div', {
+            class: 'synth-page skin-' + (site.skin || 'plain-white'),
+            dataset: { domain: loc.domain, type: site.type || '' }
+          });
+
+          var pageTitle = site.title || loc.domain;
+
+          /* Clear the arrivals ledger immediately before the renderer runs, so
+           * whatever it asks live.stream() for becomes the record of what THIS
+           * page is watching. app/tick.js compares against it to say how many
+           * things have arrived since. */
+          if (SYNTH.live && SYNTH.live.resetLedger) SYNTH.live.resetLedger();
+          if (SYNTH.tick && SYNTH.tick.reset) SYNTH.tick.reset();
+
+          var ctx = {
+            site: site,
+            path: loc.path,
+            query: loc.query,
+            mount: mount,
+            el: SYNTH.el,
+            markup: function (text) {
+              return (SYNTH.markup && SYNTH.markup.parse)
+                ? SYNTH.markup.parse(text)
+                : document.createDocumentFragment();
+            },
+            link: function (href, label, className) { return engineLink(href, label, className); },
+            title: function (s) { if (s) pageTitle = String(s); }
+          };
+
+          SYNTH.render.render(ctx);
+          if (token !== navToken) return null;
+          commit(loc, mount, pageTitle, opts, tab);
+          return null;
         });
-
-        var pageTitle = site.title || loc.domain;
-
-        /* Clear the arrivals ledger immediately before the renderer runs, so
-         * whatever it asks live.stream() for becomes the record of what THIS
-         * page is watching. app/tick.js compares against it to say how many
-         * things have arrived since. */
-        if (SYNTH.live && SYNTH.live.resetLedger) SYNTH.live.resetLedger();
-        if (SYNTH.tick && SYNTH.tick.reset) SYNTH.tick.reset();
-
-        var ctx = {
-          site: site,
-          path: loc.path,
-          query: loc.query,
-          mount: mount,
-          el: SYNTH.el,
-          markup: function (text) {
-            return (SYNTH.markup && SYNTH.markup.parse)
-              ? SYNTH.markup.parse(text)
-              : document.createDocumentFragment();
-          },
-          link: function (href, label, className) { return engineLink(href, label, className); },
-          title: function (s) { if (s) pageTitle = String(s); }
-        };
-
-        SYNTH.render.render(ctx);
-        if (token !== navToken) return null;
-        commit(loc, mount, pageTitle, opts, tab);
-        return null;
       });
     }).then(null, function (err) {
       if (window.console && console.error) console.error('[synth.engine] navigation failed', err && err.stack ? err.stack : err);

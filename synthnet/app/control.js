@@ -214,43 +214,32 @@ window.SYNTH = window.SYNTH || {};
 
   /* ------------------------------------------------------------- site types */
 
-  /* Ask the renderer registry what it actually knows. Different builds keep
-     the map under different names, so try them all, then fall back to the
-     published list of seventeen. */
-  var FALLBACK_TYPES = [
-    'homepage', 'blog', 'forum', 'news', 'social', 'media', 'wiki',
-    'shop', 'search', 'directory', 'guestbook', 'webring', 'gallery',
-    'chat', 'board', 'archive', 'control'
-  ];
-
+  /* Every type this app can draw.
+   *
+   * This used to guess. It probed S.render for a list/types/names/registered
+   * function and then for a renderers/registry/map object, and app/render.js
+   * exported none of them -- the map is closure-private -- so both probes
+   * failed every single time and it returned a hardcoded fallback list.
+   *
+   * That list had drifted. It offered homepage, search, directory,
+   * guestbook, webring, gallery and archive, none of which have a renderer,
+   * and left out page, aggregator, qa, market, assistant, mail, portal,
+   * stream, dash, wire and newsletter, all of which do. The authoring form
+   * below has been offering seven types that cannot render, under a label
+   * saying seventeen renderers are installed when there are twenty-one.
+   *
+   * Nothing caught it because a fallback that always fires looks exactly
+   * like a fallback that never does.
+   *
+   * There is a real answer now: app/render.js exports list(), which is the
+   * union of what has registered and what app/loadmap.js can still load.
+   * If it ever returns nothing, that is worth seeing on the page rather
+   * than papering over with a list that was wrong for a year.
+   */
   function knownTypes() {
-    var r = S.render;
-    var got = null;
-    var i, k, src;
-
-    var fns = ['list', 'types', 'names', 'registered'];
-    for (i = 0; i < fns.length; i++) {
-      if (typeof r[fns[i]] === 'function') {
-        try {
-          var v = r[fns[i]]();
-          if (v && v.length) { got = v.slice(); break; }
-        } catch (e) { /* keep looking */ }
-      }
-    }
-
-    if (!got) {
-      var maps = ['renderers', 'registry', 'map', '_types', '_map', 'types'];
-      for (i = 0; i < maps.length; i++) {
-        src = r[maps[i]];
-        if (src && typeof src === 'object') {
-          var keys = [];
-          for (k in src) { if (Object.prototype.hasOwnProperty.call(src, k)) { keys.push(k); } }
-          if (keys.length > 1) { got = keys; break; }
-        }
-      }
-    }
-
-    if (!got || got.length < 2) { got = FALLBACK_TYPES.slice(); }
+    var got = (S.render && typeof S.render.list === 'function')
+      ? S.render.list() : [];
+    var i;
 
     /* normalise entries that came back as objects */
     var out = [];
@@ -263,9 +252,11 @@ window.SYNTH = window.SYNTH || {};
       seen[name] = 1;
       out.push(name);
     }
-    for (i = 0; i < FALLBACK_TYPES.length; i++) {
-      if (!seen[FALLBACK_TYPES[i]]) { seen[FALLBACK_TYPES[i]] = 1; out.push(FALLBACK_TYPES[i]); }
-    }
+    /* The fallback list used to be unioned in here as well, unconditionally,
+       so even a probe that worked would still have added homepage, search,
+       directory, guestbook, webring, gallery and archive to the menu. Two
+       separate reasons the form offered types that cannot render; fixing
+       only the probe would have fixed neither. */
     out.sort();
     return out;
   }

@@ -99,6 +99,108 @@ window.SYNTH = window.SYNTH || {};
     return hasOwn(renderers, String(type));
   }
 
+  /* ------------------------------------------------------------------ */
+  /* loading a type on demand                                            */
+  /* ------------------------------------------------------------------ */
+  /*
+   * index.html used to carry all twenty renderers and all twenty skin
+   * stylesheets, render-blocking, on every page. See app/loadmap.js for the
+   * measurement. They are fetched when a page of that type is opened now.
+   *
+   * THE WHOLE TRICK IS has(). In the standalone single-file build every
+   * renderer is inlined and has therefore already registered, so has() is
+   * true, ensure() resolves without touching the network, and nothing has
+   * to know which mode it is running in. The skin half works the same way
+   * through the data-synth-skin marker, which tools/build.py stamps onto
+   * each inlined <style> and this file stamps onto each injected <link>.
+   * One code path, two modes, no flag -- which matters because the reason
+   * this was not done sooner was the belief that it would cost the
+   * standalone build.
+   *
+   * ensure() NEVER REJECTS. A renderer that fails to load resolves anyway
+   * and render() below draws its "Unsupported site type" notice, which is a
+   * legible page. A rejected promise here would be a blank browser.
+   */
+
+  var pending = {};   /* type -> Promise, so two navigations share one fetch */
+
+  function entryFor(type) {
+    var map = SYNTH.loadmap;
+    return (map && hasOwn(map, type)) ? map[type] : null;
+  }
+
+  /* A <link> that never fires either event would hang the navigation
+     forever, and a page drawn unstyled beats a browser that never paints.
+     Chromium fires onload; this is the insurance, not the plan. */
+  var SKIN_WAIT_MS = 2000;
+
+  function ensureSkin(type, href) {
+    if (!href) return Promise.resolve(false);
+    if (hasOwn(pending, 'css:' + type)) return pending['css:' + type];
+    /* Already inlined by the standalone build, or already injected here. */
+    if (document.querySelector('[data-synth-skin="' + type + '"]')) {
+      return Promise.resolve(true);
+    }
+    pending['css:' + type] = new Promise(function (resolve) {
+      var done = false;
+      function settle(ok) { if (!done) { done = true; resolve(ok); } }
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.setAttribute('data-synth-skin', type);
+      link.onload = function () { settle(true); };
+      link.onerror = function () { settle(false); };
+      document.head.appendChild(link);
+      setTimeout(function () { settle(false); }, SKIN_WAIT_MS);
+    });
+    return pending['css:' + type];
+  }
+
+  function ensureScript(type, src) {
+    if (has(type)) return Promise.resolve(true);
+    if (!src) return Promise.resolve(false);
+    if (hasOwn(pending, 'js:' + type)) return pending['js:' + type];
+    pending['js:' + type] = new Promise(function (resolve) {
+      var s = document.createElement('script');
+      s.src = src;
+      /* Keep execution ordered against anything else injected, so a
+         renderer cannot run before a dependency injected just before it. */
+      s.async = false;
+      s.onload = function () { resolve(has(type)); };
+      s.onerror = function () { resolve(false); };
+      document.head.appendChild(s);
+    });
+    return pending['js:' + type];
+  }
+
+  /* Resolves once this type can be rendered AND its stylesheet is in the
+     document -- both, because drawing before the skin lands is a flash of
+     unstyled page, which at 360px also means a horizontal overflow. */
+  function ensure(type) {
+    var key = String(type || '');
+    var entry = entryFor(key);
+    if (has(key) && !entry) return Promise.resolve(true);
+    if (!entry) return Promise.resolve(false);
+    return Promise.all([
+      ensureScript(key, entry.js),
+      ensureSkin(key, entry.css)
+    ]).then(function (both) { return both[0]; });
+  }
+
+  /* Every type this app can draw, whether or not it has been loaded yet.
+     app/control.js asked for exactly this and there was nothing to ask:
+     it probed for list/types/names/registered, found none of them because
+     `renderers` is closure-private, and fell back to a hardcoded list that
+     had drifted to naming seven types with no renderer. */
+  function list() {
+    var out = {}, k;
+    for (k in renderers) { if (hasOwn(renderers, k)) out[k] = 1; }
+    if (SYNTH.loadmap) {
+      for (k in SYNTH.loadmap) { if (hasOwn(SYNTH.loadmap, k)) out[k] = 1; }
+    }
+    return Object.keys(out).sort();
+  }
+
   function clear(node) {
     if (!node) return;
     while (node.firstChild) node.removeChild(node.firstChild);
@@ -165,6 +267,8 @@ window.SYNTH = window.SYNTH || {};
     register: register,
     render: render,
     has: has,
+    ensure: ensure,
+    list: list,
     clear: clear
   };
 })();

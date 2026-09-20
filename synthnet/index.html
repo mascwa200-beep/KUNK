@@ -13,30 +13,15 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox='0%200%2016%2016'%3E%3Crect%20width='16'%20height='16'%20rx='3'%20fill='%231c4f7c'%2F%3E%3Crect%20x='2.5'%20y='4'%20width='11'%20height='8'%20rx='1'%20fill='%23cfe4f5'%2F%3E%3Crect%20x='2.5'%20y='4'%20width='11'%20height='2.2'%20fill='%23f2f8fd'%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href="theme/aero.css">
-<link rel="stylesheet" href="theme/skins/forum.css">
-<link rel="stylesheet" href="theme/skins/social.css">
-<link rel="stylesheet" href="theme/skins/blog.css">
-<link rel="stylesheet" href="theme/skins/news.css">
-<link rel="stylesheet" href="theme/skins/wiki.css">
-<link rel="stylesheet" href="theme/skins/media.css">
-<link rel="stylesheet" href="theme/skins/page.css">
-<link rel="stylesheet" href="theme/skins/aggregator.css">
-<link rel="stylesheet" href="theme/skins/qa.css">
-<link rel="stylesheet" href="theme/skins/board.css">
-<link rel="stylesheet" href="theme/skins/shop.css">
-<link rel="stylesheet" href="theme/skins/market.css">
-<link rel="stylesheet" href="theme/skins/assistant.css">
-<link rel="stylesheet" href="theme/skins/mail.css">
-<link rel="stylesheet" href="theme/skins/portal.css">
-<link rel="stylesheet" href="theme/skins/stream.css">
-<link rel="stylesheet" href="theme/skins/dash.css">
-<link rel="stylesheet" href="theme/skins/wire.css">
-<link rel="stylesheet" href="theme/skins/newsletter.css">
-<link rel="stylesheet" href="theme/skins/chat.css">
-<link rel="stylesheet" href="theme/skins/wire.css">
+<!-- The twenty per-type skin stylesheets and theme/control.css are NOT here.
+     A page uses one of them; linking all twenty cost 364,979 bytes raw on
+     every load and put the cold-load budget at 95% of its gzipped ceiling.
+     app/render.js injects the one a page needs, from the table in
+     app/loadmap.js, and tools/build.py inlines all of them into the
+     standalone build. This list had also silently grown a duplicate
+     theme/skins/wire.css, which is the argument for a table over a list. -->
 <link rel="stylesheet" href="theme/live.css">
 <link rel="stylesheet" href="theme/compose.css">
-<link rel="stylesheet" href="theme/control.css">
 <link rel="stylesheet" href="theme/feeds.css">
 </head>
 <body>
@@ -134,6 +119,10 @@
 </div><!-- /synth-desktop -->
 
 <script src="app/markup.js"></script>
+<!-- Which files each site type needs. Read by app/render.js at navigation
+     time and by tools/build.py at build time; the build fails if a renderer
+     on disk is missing from it. -->
+<script src="app/loadmap.js"></script>
 <script src="app/render.js"></script>
 <!-- The live layer: a wall-clock-driven simulation of an active network,
      plus the bot, sponsored and ad content it streams. Loaded before the
@@ -165,32 +154,15 @@
 <script src="app/bots.js"></script>
 <script src="app/fame.js"></script>
 <script src="app/compose.js"></script>
-<script src="app/control.js"></script>
 <script src="app/slop_social.js"></script>
 <script src="app/slop_forum.js"></script>
 <script src="app/slop_ads.js"></script>
 <script src="app/slop_news.js"></script>
-<script src="app/types/forum.js"></script>
-<script src="app/types/social.js"></script>
-<script src="app/types/blog.js"></script>
-<script src="app/types/news.js"></script>
-<script src="app/types/wiki.js"></script>
-<script src="app/types/media.js"></script>
-<script src="app/types/page.js"></script>
-<script src="app/types/aggregator.js"></script>
-<script src="app/types/qa.js"></script>
-<script src="app/types/board.js"></script>
-<script src="app/types/shop.js"></script>
-<script src="app/types/market.js"></script>
-<script src="app/types/assistant.js"></script>
-<script src="app/types/mail.js"></script>
-<script src="app/types/portal.js"></script>
-<script src="app/types/stream.js"></script>
-<script src="app/types/dash.js"></script>
-<script src="app/types/wire.js"></script>
-<script src="app/types/newsletter.js"></script>
-<script src="app/types/chat.js"></script>
-<script src="app/types/wire.js"></script>
+<!-- The twenty renderers and app/control.js are NOT here. They were 715,560
+     bytes raw of parser-blocking script on every load, of which a page runs
+     one. app/render.js fetches the one a page needs; see app/loadmap.js.
+     This list had also silently grown a duplicate app/types/wire.js, which
+     re-parsed and re-registered that renderer on every single page load. -->
 <script src="app/engine.js"></script>
 <script>
 window.addEventListener('load', function () {

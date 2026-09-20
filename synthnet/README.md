@@ -59,10 +59,11 @@ locally from the phone itself - see `docs/PHONE.md`.
 ```
 index.html              the chrome: address bar, back/forward, tabs
 app/markup.js           inline markup parser -> DOM nodes
-app/render.js           el() helper and the renderer registry
-app/types/*.js          one renderer per site type (7 files)
+app/loadmap.js          which files each site type needs
+app/render.js           el() helper, the renderer registry, the on-demand loader
+app/types/*.js          one renderer per site type (20 files), fetched when used
 app/engine.js           router, history, search, site loading
-theme/                  chrome CSS and theme/skins/<type>.css
+theme/                  chrome CSS and theme/skins/<type>.css, also on demand
 net/sites/<slug>/site.json   the content, one file per site
 net/registry.json       generated index of sites
 net/search.json         generated search index
