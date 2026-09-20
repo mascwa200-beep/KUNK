@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T07:57:24Z",
+  "generated": "2026-09-20T08:04:51Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -43,7 +43,7 @@
         "route-62"
       ],
       "path": "net/sites/ashkettlevfd-org/site.json",
-      "bytes": 72197
+      "bytes": 69663
     },
     {
       "domain": "ask.verity.ai",
@@ -138,7 +138,7 @@
         "substation"
       ],
       "path": "net/sites/clipvault-shorts-tv/site.json",
-      "bytes": 36828
+      "bytes": 36820
     },
     {
       "domain": "clipvault.tv",
@@ -264,7 +264,7 @@
     },
     {
       "domain": "gridfall.chat",
-      "title": "Gridfall County",
+      "title": "Gridfall, Verity County",
       "type": "chat",
       "era": "2026",
       "skin": "chatdark",
@@ -276,7 +276,7 @@
         "archive"
       ],
       "path": "net/sites/gridfall-chat/site.json",
-      "bytes": 39788
+      "bytes": 39804
     },
     {
       "domain": "gridfallswap.net",
@@ -426,7 +426,7 @@
       "type": "news",
       "era": "2016",
       "skin": "broadsheet",
-      "description": "The weekly paper for Milbrook and Kerrin County, published Thursdays since 1908. The last edition is 27 October 2016 and says the pause is temporary.",
+      "description": "The weekly paper for Milbrook and the north end of Verity County, published Thursdays since 1908. The last edition is 27 October 2016 and says the pause is temporary.",
       "tags": [
         "milbrook",
         "kerrin",
@@ -434,7 +434,7 @@
         "archive"
       ],
       "path": "net/sites/milbrookgazette-com/site.json",
-      "bytes": 79437
+      "bytes": 79454
     },
     {
       "domain": "newcarrow-today.com",

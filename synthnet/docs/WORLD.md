@@ -16,6 +16,17 @@ dated 2026 is the present. The gap between the two is the entire point.
 (pop. ~34,000 in 2003, ~28,400 in 2026). Other towns: **Marchfield**,
 **Ashkettle**, **New Carrow**, **Halsey**, **Coyne Flats**, **Milbrook**.
 
+Smaller places inside the county, added as content established them: **Kerrin**
+(north end, has the consolidated school and its own volunteer ambulance),
+**Tessler**, and the townships of **Nye Mills**, **Dorrance** and **Cobb**,
+which are the three the broadband applications keep naming and keep failing to
+get funded.
+
+There are other counties and they are mentioned in passing, but **the only
+county this project writes from the inside is Verity**, and the seven towns
+above are towns in it. "Gridfall County" is an error — Gridfall is the seat.
+CI checks that one, because a chat server's own title said otherwise.
+
 Geography that recurs: County Route 62 runs east–west through Ashkettle and out
 past the old quarry. The Verity Rail branch line ran Marchfield → Coyne Flats.
 Gridfall Substation No. 3 sits in a fenced transformer yard at Depot and Quarry Road. Winters are long.
@@ -72,6 +83,12 @@ automated**: no operator on site, remote SCADA from a control centre two states
 away. The crew room is not rebuilt. Walt Pennock, who was on the pole line the
 morning of the fire, drives out to watch the ribbon cutting and is not invited
 to speak.
+
+**2016:** the **Milbrook Gazette** — a weekly out of Milbrook since 1908,
+covering the north end of the county — stops after the edition of 27 October.
+The note to readers says the pause is temporary and blames a printer contract.
+It is not temporary. Milbrook has had no paper of its own since, which is why
+the Pinelock county sites are now the only thing that reports on it.
 
 **2016:** Halloran Communications is rolled up into **Pinelock Media Group**.
 The Ledger's newsroom is now three people and a shared copy desk in another
@@ -408,5 +425,6 @@ the badge means something.
 | Ledger bought by chain | 2011 (Halloran), 2016 (Pinelock) |
 | Ledger goes to pipeline | 2023 |
 | Boards registration closed | 2017 |
+| Milbrook Gazette last edition | 27 October 2016 |
 | Signal schedule | :07 past odd hours, four-digit groups |
 | Present | autumn 2026 |

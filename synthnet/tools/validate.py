@@ -1046,6 +1046,52 @@ DISPUTES = [
 ]
 
 
+# The seven towns. Gridfall is the SEAT of Verity County, not a county, and a
+# chat server called "Gridfall County" said otherwise in its own <title>.
+# A town used as a county is the shape this error takes; it also took the shape
+# of a whole invented county, "Kerrin County", wrapped around Milbrook across
+# 28 strings on one site, because the brief that produced it called Milbrook
+# "the neighbouring county" and WORLD.md puts Milbrook inside Verity.
+CANON_TOWNS = ("Gridfall", "Marchfield", "Ashkettle", "New Carrow", "Halsey",
+               "Coyne Flats", "Milbrook")
+
+COUNTY_NAME = re.compile(r"\b([A-Z][a-z]{2,12}(?: [A-Z][a-z]+)?) County\b")
+
+# Phrases that are not a county name.
+NOT_COUNTIES = {"The", "Your", "Our", "This", "Which", "New", "Smart", "Whole",
+                "Every", "Any", "One", "Same", "Another", "Next", "Home"}
+
+
+def check_geography(report, parsed):
+    invented = {}
+    for path, _folder, site in parsed:
+        where = rel(path)
+        text = json.dumps(site, ensure_ascii=False)
+        for match in COUNTY_NAME.finditer(text):
+            name = match.group(1)
+            # The two-word branch happily eats a leading article, so
+            # "the Verity County plow" captured as "The Verity". Drop any
+            # leading determiner before deciding anything.
+            words = name.split()
+            if len(words) > 1 and words[0] in NOT_COUNTIES:
+                name = " ".join(words[1:])
+            if name == "Verity" or name in NOT_COUNTIES:
+                continue
+            if name in CANON_TOWNS:
+                report.error(where, "canon: %r -- %s is a town in Verity "
+                                    "County, not a county" % (match.group(0), name))
+            else:
+                invented.setdefault(name, set()).add(where)
+    # Neighbouring counties are fine and a county with no neighbours reads as
+    # a diorama. They are listed rather than failed, so that one appearing on
+    # thirty sites is visible before it becomes canon by accident.
+    for name in sorted(invented):
+        if len(invented[name]) >= 4:
+            report.warn("canon", "%r County is on %d sites and is not in "
+                                 "WORLD.md; either write it down or use Verity"
+                        % (name, len(invented[name])))
+
+
 def check_canon(report, parsed):
     blobs = []
     for path, _folder, site in parsed:
@@ -1217,6 +1263,7 @@ def main(argv=None):
                                    ", /".join(sorted(allowed)), segments[0]))
 
     check_canon(report, parsed)
+    check_geography(report, parsed)
     scan_external(report)
 
     if report.errors:
