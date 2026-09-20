@@ -52,6 +52,7 @@ import glob
 import json
 import os
 import pathlib
+import re
 import socket
 import sys
 import threading
@@ -333,10 +334,26 @@ def main():
             notfound = {}
 
             def _shape(t):
-                # First forty words, lowered. Enough to tell one renderer's
-                # not-found page from its real ones, loose enough to survive
-                # a counter or a clock inside it.
-                return " ".join(t.lower().split()[:40])
+                # The whole page, with digits flattened and the requested
+                # path removed.
+                #
+                # Three versions of this were wrong in three ways. The first
+                # matched a list of phrases and missed social's wording. The
+                # second took the first forty words, which on 27 sites is the
+                # masthead and the nav -- every one of those front pages was
+                # called a dead end. The third added a length window and
+                # still caught gridfallswap's /search, which is a real page
+                # that happens to be short, because an empty search form is
+                # mostly chrome too.
+                #
+                # A not-found page is not LIKE the probe's answer, it IS the
+                # probe's answer. Compare the whole thing. Digits go because
+                # these pages carry live counters; the path goes because some
+                # renderers echo it back.
+                return re.sub(r"\d+", "#", " ".join(t.lower().split()))
+
+            def _same(a, b):
+                return bool(a) and bool(b) and a == b
 
             for site in sites:
                 dom, typ = site["d"], site["t"]
@@ -346,7 +363,9 @@ def main():
                         "(u) => SYNTH.engine.navigate(u, {push: false})",
                         "synth://%s/zzz-no-such-path-9417/zzz" % dom)
                     page.wait_for_timeout(150)
-                    notfound[dom] = _shape(page.inner_text("#synth-viewport"))
+                    nft = page.inner_text("#synth-viewport")
+                    notfound[dom] = _shape(
+                        nft.replace("zzz-no-such-path-9417", " ").replace("zzz", " "))
                 except Exception:
                     notfound[dom] = None
                 seen, queue = set(), ["/"]
@@ -387,7 +406,9 @@ def main():
                     # site is asked for a path that certainly does not
                     # exist, once, and anything that comes back looking like
                     # that answer is a dead end.
-                    if notfound.get(dom) and _shape(text) == notfound[dom]:
+                    probe_path = path.strip("/").split("/")[0]
+                    if _same(_shape(text.replace(probe_path, " ")),
+                             notfound.get(dom)):
                         stats["notfound"] += 1
                         findings.setdefault(dom, []).append(
                             {"path": path, "kind": "dead-end",
