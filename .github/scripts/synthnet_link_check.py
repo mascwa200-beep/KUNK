@@ -42,7 +42,10 @@ PATH_PREFIXES = {
     "social": {"user", "post"},
     "blog": {"post", "tag"},
     "news": {"section", "article", "live", "factcheck", "corrections"},
-    "wiki": {"wiki", "category"},
+    # A living wiki is history, diffs, talk and recent changes as well
+    # as articles. The 1998-2008 wiki serves the first two only, but the
+    # prefix table is per TYPE, not per site.
+    "wiki": {"wiki", "category", "history", "diff", "talk", "changes"},
     "media": {"watch", "channel"},
     "page": None,
     "aggregator": {"board", "item"},

@@ -605,7 +605,13 @@
           avatarSeed: sv.item.handle,
           kind: sv.item.kind,
           verified: false,
-          body: sv.item.body,
+          /* Headline first, then the post. A social post has no title
+           * field, so taking only the body meant a story row here said
+           * "a county records request turns up the file. Original: ..."
+           * and never once named what the file was about -- the same bug
+           * the wire had, found the same way, by asserting on the page
+           * rather than on the absence of an error. */
+          body: (sv.item.title ? sv.item.title + '\n\n' : '') + sv.item.body,
           likes: sv.item.likes,
           reposts: sv.item.reposts,
           replies: [],

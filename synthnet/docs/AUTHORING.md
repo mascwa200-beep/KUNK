@@ -221,7 +221,7 @@ a path no renderer serves is a link that 404s. `PATH_PREFIXES` in
 | `social` | `/` `/user/<handle>` `/post/<postId>` |
 | `blog` | `/` `/post/<postId>` `/tag/<tag>` |
 | `news` | `/` `/section/<sectionId>` `/article/<articleId>` `/live/<liveId>` `/factcheck/<checkId>` `/corrections` |
-| `wiki` | `/` `/wiki/<articleId>` `/category/<categoryId>` |
+| `wiki` | `/` `/wiki/<articleId>` `/category/<categoryId>` `/history/<articleId>` `/diff/<articleId>/<rev>` `/talk/<articleId>` `/changes` |
 | `media` | `/` `/watch/<itemId>` `/channel/<channelId>` |
 | `page` | `/` `/<pageId>` |
 | `aggregator` | `/` `/board/<boardId>` `/item/<linkId>` |
@@ -301,7 +301,28 @@ blank line              paragraph break
 
 [img:avatar:marla_t]      kind is avatar | banner | photo | thumb
 [img:photo:mill-street]   the seed makes the placeholder deterministic
+
+{{citation needed}}  {{stub}}  {{NPOV disputed}}  {{dead link}}  {{who?}}
 ```
+
+### The five braces, and the sixty-nine that are not
+
+The list above is an **allowlist and nothing but**. Those five strings render
+as a small maintenance tag. Every other `{{...}}` string on this network
+renders as the literal characters you typed, and that is not an oversight —
+there are 69 distinct unfilled merge fields in the content (`{{city}}`,
+`{{ticket_price}}`, `{{template_error_undefined_ref}}`) and they are the
+point. An unfilled merge field is what a content farm actually ships, and one
+of them is the whole joke in a `gridfall.chat` exchange where two people work
+out that the weather bot has broken.
+
+So: a maintenance tag only if it is one of those five, exactly, lower case or
+not, with no underscore and no spaces around the name. `{{ stub }}` is
+literal. `{{stub` is literal. `{stub}` is literal. If you want a merge field,
+you already have one — write anything that is not on the list.
+
+CI asserts both halves on the same run: a tag renders on the wiki and
+`{{summary}}` stays five plus four characters in `gridfall.chat`.
 
 Example of a body as it really looks:
 

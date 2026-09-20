@@ -317,3 +317,131 @@
 @media (max-width: 700px) {
   .skin-monobook .wiki-revwhen { min-width: 0; }
 }
+
+/* --- the edit war: history, diffs, talk ---------------------------------
+ *
+ * The old wiki showed a revision COUNT and called it a diff. These are the
+ * pages that make the count checkable: a history you can walk, a diff that
+ * shows text that differs, and a talk page where the argument is had in
+ * public and settles nothing.
+ *
+ * Every row wraps rather than scrolls, because the target is a 360px phone
+ * and a history table that needs a horizontal scrollbar is a history table
+ * nobody reads.
+ */
+
+.skin-monobook .wiki-protbar,
+.skin-monobook .wiki-disputebar {
+  margin: 0 0 10px 0;
+  padding: 6px 9px;
+  font-size: 12px;
+  border: 1px solid #c8b8b8;
+  background: #f6efef;
+  /* #6b3a3a on #f6efef is 6.9:1. */
+  color: #6b3a3a;
+}
+.skin-monobook .wiki-protbar { background: #eef2f7; border-color: #b7c6d8; color: #33475e; }
+.skin-monobook .wiki-disputebar a,
+.skin-monobook .wiki-protbar a { color: #0645ad; }
+
+.skin-monobook .wiki-infobox-changed { background: #fbf1f1; }
+
+.skin-monobook .wiki-footlinks { margin: 8px 0 0 0; }
+.skin-monobook .wiki-rclink { margin: 10px 0; font-size: 13px; }
+
+.skin-monobook .wiki-histlist,
+.skin-monobook .wiki-rclist { margin: 12px 0 0 0; padding: 0; list-style: none; }
+
+.skin-monobook .wiki-histrow,
+.skin-monobook .wiki-rcrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+  padding: 5px 0 5px 9px;
+  border-left: 2px solid #e6e6e6;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  color: #4c5b66;
+}
+
+.skin-monobook .wiki-histrow-human,
+.skin-monobook .wiki-rcrow-human { border-left-color: #0645ad; }
+.skin-monobook .wiki-histrow-rv { background: #fbf8ee; }
+.skin-monobook .wiki-histrow-prot { background: #eef2f7; border-left-color: #33475e; }
+
+.skin-monobook .wiki-histwhen,
+.skin-monobook .wiki-rcwhen { min-width: 82px; color: #6a747d; }
+.skin-monobook .wiki-histrev { color: #6a747d; font-variant-numeric: tabular-nums; }
+.skin-monobook .wiki-histsummary,
+.skin-monobook .wiki-rcsummary { font-style: italic; flex: 1 1 14ch; }
+.skin-monobook .wiki-difflink { color: #0645ad; }
+.skin-monobook .wiki-difflink-flat { color: #9aa4ad; }
+.skin-monobook .wiki-rctitle { font-weight: bold; }
+
+.skin-monobook .wiki-diffheads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.skin-monobook .wiki-diffhead {
+  flex: 1 1 14ch;
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 12px;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.skin-monobook .wiki-diffbody {
+  padding: 9px 10px;
+  border: 1px solid #a7d7f9;
+  background: #fff;
+  line-height: 1.55;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* #6b1f1f on #fde3e3 is 8.0:1; #14532d on #ddf5e3 is 8.3:1. */
+.skin-monobook .wiki-del {
+  background: #fde3e3; color: #6b1f1f; text-decoration: line-through;
+}
+.skin-monobook .wiki-ins {
+  background: #ddf5e3; color: #14532d; text-decoration: none;
+}
+.skin-monobook .wiki-diffsame { color: #6a747d; font-style: italic; }
+
+.skin-monobook .wiki-talkthread {
+  margin: 0 0 18px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.skin-monobook .wiki-talkpost {
+  margin: 6px 0;
+  padding: 2px 0 2px 9px;
+  border-left: 2px solid #e6e6e6;
+  font-size: 13px;
+}
+.skin-monobook .wiki-talkpost.wiki-editor-human { border-left-color: #0645ad; }
+.skin-monobook .wiki-talkpost.wiki-editor-admin { border-left-color: #33475e; }
+.skin-monobook .wiki-talkpost .synth-p { margin: 0 0 4px 0; }
+
+/* Talk-page indentation. Capped hard, because a 360px screen runs out of
+ * width at about four colons and a reply nobody can read is worse than a
+ * reply that lost its place in the thread. */
+.skin-monobook .wiki-talkdepth-0 { margin-left: 0; }
+.skin-monobook .wiki-talkdepth-1 { margin-left: 10px; }
+.skin-monobook .wiki-talkdepth-2 { margin-left: 20px; }
+.skin-monobook .wiki-talkdepth-3 { margin-left: 30px; }
+.skin-monobook .wiki-talkdepth-4 { margin-left: 40px; }
+
+@media (max-width: 420px) {
+  .skin-monobook .wiki-talkdepth-1 { margin-left: 6px; }
+  .skin-monobook .wiki-talkdepth-2 { margin-left: 12px; }
+  .skin-monobook .wiki-talkdepth-3 { margin-left: 18px; }
+  .skin-monobook .wiki-talkdepth-4 { margin-left: 24px; }
+  .skin-monobook .wiki-histwhen,
+  .skin-monobook .wiki-rcwhen { min-width: 0; }
+}

@@ -367,7 +367,11 @@ the badge means something.
 
 9. **Link syntax is `[url=synth://domain/path]label[/url]`.** Never a bare
    `http` or `https` string, anywhere, including comments. CI fails the build.
-10. **Inline markup is only** `[b] [i] [u] [s] [quote=Name] [code] [list][*]x[/list] [url=] [img:kind:seed]`.
+10. **Inline markup is only** `[b] [i] [u] [s] [quote=Name] [code] [list][*]x[/list] [url=] [img:kind:seed]`, plus exactly five wiki
+    maintenance templates: `{{citation needed}} {{stub}} {{NPOV disputed}}
+    {{dead link}} {{who?}}`. Every OTHER `{{...}}` renders literally and is
+    meant to — the unfilled merge fields are content, not a bug. See
+    AUTHORING.md section 5.
     Blank line is a paragraph break. Anything else renders literally — which is
     itself a usable effect for broken bot output.
 11. **Dates.** 2026 content is dated within the last ~18 months. Use real

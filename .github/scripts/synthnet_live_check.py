@@ -22,6 +22,7 @@ Usage:  python3 .github/scripts/synthnet_live_check.py [--root synthnet]
 """
 
 import argparse
+import datetime
 import glob
 import os
 import pathlib
@@ -862,6 +863,203 @@ def main():
                         problems.append(
                             f"WORLD.md says the fire is misreported as "
                             f"{named!r} and no hop can say it")
+
+            # --- 12. the wiki argues with itself -------------------------
+            #
+            # The old wiki drew each edit summary independently, so "rv,
+            # again" could sit at the top of a history with nothing under it
+            # to revert. Nothing caught that, because a history of eight
+            # plausible lines renders perfectly. These assertions are all
+            # about the RELATIONSHIP between rows -- which is the only place
+            # the bug was.
+            wiki = None
+            for r in page.evaluate("() => SYNTH.data.list()"):
+                if r.get("type") == "wiki" and "2026" in str(r.get("era")):
+                    wiki = r["domain"]
+                    break
+            if not wiki:
+                problems.append("there is no 2026 wiki to check")
+            else:
+                arts = page.evaluate("""async (d) => {
+                  const s = await SYNTH.data.getSite(d);
+                  return ((s && s.data && s.data.articles) || [])
+                    .map(a => a.id).slice(0, 10);
+                }""", wiki)
+
+                def rows_at(domain, art):
+                    page.evaluate(
+                        "(u) => SYNTH.engine.navigate(u, {push: false})",
+                        "synth://%s/history/%s" % (domain, art))
+                    page.wait_for_timeout(120)
+                    return page.evaluate("""() =>
+                      Array.from(document.querySelectorAll('.wiki-histrow')).map(n => ({
+                        at: Number((n.querySelector('[data-lv-ago]') || {}).dataset
+                              ? n.querySelector('[data-lv-ago]').dataset.lvAgo : 0),
+                        who: (n.querySelector('.wiki-histwho') || {}).textContent || '',
+                        bot: /wiki-editor-(bot|anon)/.test(n.innerHTML),
+                        summary: (n.querySelector('.wiki-histsummary') || {}).textContent || ''
+                      }))""")
+
+                t0 = page.evaluate("() => SYNTH.live.now()")
+                orphans, protections, locked_leaks, seen_rows = 0, 0, 0, 0
+                for day in range(0, 40, 5):
+                    page.evaluate("(ms) => SYNTH.live.setNow(ms)",
+                                  t0 + day * DAY)
+                    for art in arts[:6]:
+                        rows = list(reversed(rows_at(wiki, art)))   # oldest first
+                        seen_rows += len(rows)
+                        # A revert reverts something: walking forward, the
+                        # state must be "wrong" before an rv and not before.
+                        wrong = False
+                        for row in rows:
+                            s = row["summary"]
+                            if s.startswith("(updated "):
+                                wrong = True
+                            elif s.startswith("(rv"):
+                                if not wrong:
+                                    orphans += 1
+                                wrong = False
+                        # 3RR: while a page is protected, the automated
+                        # editors are not in the history, because they could
+                        # not edit. That is the whole point of tripping it.
+                        for k, row in enumerate(rows):
+                            if not row["summary"].startswith("(protected"):
+                                continue
+                            protections += 1
+                            until = row["at"] + 7 * DAY
+                            for later in rows[k + 1:]:
+                                if later["at"] < until and later["bot"]:
+                                    locked_leaks += 1
+                page.evaluate("() => SYNTH.live.setNow(null)")
+
+                if orphans:
+                    problems.append(
+                        f"{orphans} revert(s) in the wiki history have nothing "
+                        "before them to revert")
+                else:
+                    notes.append(f"every revert across {seen_rows} wiki "
+                                 "revisions follows the edit it undoes")
+                if not protections:
+                    problems.append(
+                        "three reverts in a window never produce page "
+                        "protection -- 3RR is decoration")
+                elif locked_leaks:
+                    problems.append(
+                        f"{locked_leaks} automated edit(s) went through while "
+                        "the page was protected")
+                else:
+                    notes.append(f"3RR trips {protections} times in the sweep "
+                                 "and the bots stop until it lifts")
+
+                # A diff shows text that differs. The exception is a
+                # protection, which changes who may edit and not a word of
+                # the article -- so it is named rather than tolerated.
+                page.evaluate(
+                    "(u) => SYNTH.engine.navigate(u, {push: false})",
+                    "synth://%s/history/%s" % (wiki, arts[0]))
+                page.wait_for_timeout(200)
+                links = page.evaluate("""() =>
+                  Array.from(document.querySelectorAll('#synth-viewport a'))
+                    .map(a => a.getAttribute('data-synth-href') || '')
+                    .filter(h => h.indexOf('/diff/') === 0)""")
+                blank = []
+                for href in links:
+                    page.evaluate(
+                        "(u) => SYNTH.engine.navigate(u, {push: false})",
+                        "synth://" + wiki + href)
+                    page.wait_for_timeout(110)
+                    n = page.evaluate(
+                        "() => document.querySelectorAll('.wiki-ins, .wiki-del').length")
+                    if n:
+                        continue
+                    heads = page.inner_text(".wiki-diffheads")
+                    if "protected for" not in heads:
+                        blank.append(href)
+                if not links:
+                    problems.append("the wiki history offers no diffs")
+                elif blank:
+                    problems.append(
+                        f"{len(blank)} of {len(links)} diffs show no change at "
+                        f"all, e.g. {blank[0]}")
+                else:
+                    notes.append(f"all {len(links)} diffs show text that "
+                                 "differs, protections excepted")
+
+                # Talk pages: indentation is bounded and nobody signs a post
+                # in the future, which is the one error a dated argument
+                # cannot hide.
+                page.evaluate(
+                    "(u) => SYNTH.engine.navigate(u, {push: false})",
+                    "synth://%s/talk/%s" % (wiki, arts[0]))
+                page.wait_for_timeout(200)
+                talk = page.evaluate("""() => {
+                  const now = SYNTH.live.now();
+                  const posts = Array.from(document.querySelectorAll('.wiki-talkpost'));
+                  const depth = posts.map(p => {
+                    const m = /wiki-talkdepth-(\\d+)/.exec(p.className);
+                    return m ? Number(m[1]) : 0;
+                  });
+                  return {
+                    posts: posts.length,
+                    maxDepth: depth.length ? Math.max.apply(null, depth) : 0,
+                    text: document.querySelector('#synth-viewport').innerText,
+                    now: now
+                  };
+                }""")
+                if talk["posts"] < 2:
+                    problems.append("the wiki talk page has no discussion on it")
+                elif talk["maxDepth"] > 4:
+                    problems.append(
+                        f"a talk reply is indented {talk['maxDepth']} deep; "
+                        "4 is all a 360px screen has")
+                else:
+                    notes.append(
+                        f"{talk['posts']} talk posts, indented to {talk['maxDepth']}, "
+                        "signed and threaded")
+                future = []
+                for hhmm, date in re.findall(
+                        r"\(talk\) (\d\d:\d\d), (\d+ \w+ \d{4}) \(UTC\)",
+                        talk["text"]):
+                    try:
+                        stamp = datetime.datetime.strptime(
+                            date + " " + hhmm + " +0000", "%d %B %Y %H:%M %z")
+                    except ValueError:
+                        problems.append(f"unparseable talk signature: {date!r}")
+                        continue
+                    if stamp.timestamp() * 1000 > talk["now"] + 60000:
+                        future.append(date + " " + hhmm)
+                if future:
+                    problems.append(
+                        f"{len(future)} talk post(s) are signed in the future, "
+                        f"e.g. {future[0]}")
+                else:
+                    notes.append("no talk post is signed later than now")
+
+                # THE COLLISION, both halves, one run, two page loads.
+                page.evaluate(
+                    "(u) => SYNTH.engine.navigate(u, {push: false})",
+                    "synth://%s/wiki/%s" % (wiki, arts[0]))
+                page.wait_for_timeout(200)
+                tags = page.evaluate(
+                    "() => Array.from(document.querySelectorAll('.synth-tpl'))"
+                    ".map(n => n.textContent)")
+                page.evaluate(
+                    "(u) => SYNTH.engine.navigate(u, {push: false})",
+                    "synth://gridfall.chat/c/c-general")
+                page.wait_for_timeout(250)
+                chat = page.inner_text("#synth-viewport")
+                if not tags:
+                    problems.append(
+                        "no maintenance template renders on the wiki article")
+                elif "{{" not in chat:
+                    problems.append(
+                        "the weather bot's unfilled merge fields stopped "
+                        "rendering literally in gridfall.chat -- the template "
+                        "branch in markup.js is eating them")
+                else:
+                    notes.append(
+                        f"templates render on the wiki ({tags[0]}) and "
+                        "{{merge_field}} stays literal in chat, same run")
 
             browser.close()
     finally:

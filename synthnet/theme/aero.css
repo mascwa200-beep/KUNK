@@ -1153,3 +1153,24 @@ textarea:focus,
   .synth-page { min-height: 0; }
   a { color: #000000; text-decoration: underline; }
 }
+
+/* Wiki maintenance templates. In markup.js rather than the wiki renderer
+   because {{stub}} belongs to the markup, not to one site -- a forum post
+   quoting a wiki tag should render it the same way. The allowlist that
+   decides which braces become one of these lives in markup.js and is the
+   most carefully guarded five lines in this project: 69 other {{...}}
+   strings across the content are deliberate unfilled merge fields and must
+   keep rendering literally. */
+.synth-tpl {
+  font-size: 0.78em;
+  vertical-align: baseline;
+  /* #6a4a00 on #fff is 7.4:1. */
+  color: #6a4a00;
+  background: #fdf6e3;
+  border: 1px solid #e6d9ad;
+  border-radius: 2px;
+  padding: 0 3px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.synth-tpl-npovdisputed { color: #6b1f1f; background: #fdeeee; border-color: #e6c0c0; }

@@ -381,3 +381,42 @@
    has none: one is portable and weak, the other is strong and disposable. */
 .skin-yotsuba .bd-trip { color: #228854; font-weight: bold; margin-left: 2px; }
 .skin-yotsuba .bd-pid { font-size: 10px; font-weight: bold; margin-left: 4px; }
+
+/* --- classes the renderer emitted and nothing styled --------------------
+ *
+ * board.js has been writing bd-head, bd-topsep, bd-ad-box and bd-ad-inline
+ * since it was written and none of them had a rule, so the two ad shapes
+ * rendered identically and the header had no box of its own. Found by
+ * diffing the class names the renderer emits against the ones this file
+ * mentions, which is worth doing on every skin.
+ */
+
+.skin-yotsuba .bd-head {
+  display: block;
+  padding: 6px 4px 2px;
+}
+
+/* The separator between the top links. It holds two spaces on purpose --
+ * every board of this shape has had a run of bracketed links at the top
+ * with irregular spacing, and regularising it is the wrong fix. */
+.skin-yotsuba .bd-topsep { white-space: pre; }
+
+/* A box ad sits in the flow at full width with room around it. An inline
+ * one is jammed between posts pretending to be one, which is the entire
+ * point of the format, so it gets the post's own margins and no border. */
+.skin-yotsuba .bd-ad-box {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 10px;
+  border: 1px dashed #d9bfb7;
+  background: #fdf6f4;
+  text-align: center;
+}
+
+.skin-yotsuba .bd-ad-inline {
+  display: block;
+  margin: 4px 0 4px 18px;
+  padding: 4px 8px;
+  border-left: 2px solid #e3d3ce;
+  font-size: 12px;
+}

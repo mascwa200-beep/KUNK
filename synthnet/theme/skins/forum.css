@@ -501,9 +501,12 @@
 
 .skin-softboard a { color: #0a62c4; text-decoration: none; }
 .skin-softboard a:hover { text-decoration: underline; }
-/* No distinct :visited. Modern boards track read state per topic and show
-   it as weight and a dot, not as purple links -- so read topics are dimmed
-   via .is-read below and :visited is deliberately left alone. */
+/* No distinct :visited. Modern boards track read state per topic and show it
+   as weight and a dot rather than as purple links, so :visited is left alone
+   here deliberately. This comment used to point at an .is-read rule "below";
+   there is no such rule and there never was one after the skin was rewritten,
+   and forum.js does not emit the class. Per-topic read state needs storage
+   this renderer does not have, so the honest version is: unstyled for now. */
 .skin-softboard a:visited { color: #0a62c4; }
 .skin-softboard .dim { color: #6b6f76; }
 

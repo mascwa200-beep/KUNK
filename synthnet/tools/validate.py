@@ -79,7 +79,10 @@ PATH_PREFIXES = {
     # corrections page are the shapes news actually takes that are not video,
     # which was the explicit ask.
     "news": {"section", "article", "live", "factcheck", "corrections"},
-    "wiki": {"wiki", "category"},
+    # A living wiki is history, diffs, talk and recent changes as well
+    # as articles. The 1998-2008 wiki serves the first two only, but the
+    # prefix table is per TYPE, not per site.
+    "wiki": {"wiki", "category", "history", "diff", "talk", "changes"},
     "media": {"watch", "channel"},
     "page": None,   # any single segment is a page id
     "aggregator": {"board", "item"},
@@ -472,6 +475,11 @@ def check_wiki(report, where, data):
             continue
         require(report, where, art, "id", "str", label)
         require(report, where, art, "title", "str", label)
+        # The renderer uses `summary` in four places -- the lead, the featured
+        # box, the category blurb and the revision text the diff is built from
+        # -- and it was not validated at all, so omitting it rendered an empty
+        # lead and a blank diff rather than failing.
+        require(report, where, art, "summary", "str", label)
         sections = require(report, where, art, "sections", "arr", label) or []
         for si, section in enumerate(sections):
             slabel = "%s.sections[%d]" % (label, si)
