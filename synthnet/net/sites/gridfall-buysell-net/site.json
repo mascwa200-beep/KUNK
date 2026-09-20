@@ -1,0 +1,569 @@
+{
+  "schema": 1,
+  "domain": "gridfall-buysell.net",
+  "title": "Gridfall Buy & Sell",
+  "type": "market",
+  "era": "2026",
+  "skin": "classified",
+  "description": "Ronnie Pelt has typed up other people's ads on this site since 2014, mostly farm equipment, tools and furniture, and adds his own notes in brackets when he thinks you are being had.",
+  "tags": [
+    "gridfall",
+    "classifieds",
+    "farm",
+    "2026",
+    "locals"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "classifieds.verity.net",
+    "gridfallswap.net",
+    "trailusers.verity.net",
+    "forums.verityrail.org",
+    "kestrel-journal.net",
+    "sdrlisteners.org",
+    "wiki.gridfall.net",
+    "shopwell.store"
+  ],
+  "data": {
+    "siteName": "Gridfall Buy & Sell",
+    "regions": [
+      {
+        "id": "r-gridfall",
+        "name": "Gridfall"
+      },
+      {
+        "id": "r-marchfield",
+        "name": "Marchfield"
+      },
+      {
+        "id": "r-coyneflats",
+        "name": "Coyne Flats"
+      },
+      {
+        "id": "r-newcarrow",
+        "name": "New Carrow"
+      },
+      {
+        "id": "r-ashkettle",
+        "name": "Ashkettle"
+      },
+      {
+        "id": "r-halsey",
+        "name": "Halsey"
+      }
+    ],
+    "cats": [
+      {
+        "id": "k-farm",
+        "name": "Farm & Livestock"
+      },
+      {
+        "id": "k-tools",
+        "name": "Tools & Machinery"
+      },
+      {
+        "id": "k-vehicles",
+        "name": "Vehicles & Trailers"
+      },
+      {
+        "id": "k-furniture",
+        "name": "Furniture & Household"
+      },
+      {
+        "id": "k-free",
+        "name": "Free / Take It Away"
+      },
+      {
+        "id": "k-wanted",
+        "name": "Wanted"
+      },
+      {
+        "id": "k-notices",
+        "name": "Notices"
+      }
+    ],
+    "listings": [
+      {
+        "id": "l-000",
+        "catId": "k-notices",
+        "regionId": "r-gridfall",
+        "title": "Read this before you email me - how the site works",
+        "price": "n/a",
+        "at": "2024-03-02T08:15:00Z",
+        "by": "Ronnie Pelt",
+        "kind": "human",
+        "body": "This is not a company. It is me, in the back office at 214 Depot Street, Gridfall, between jobs.\n\nSend your ad to the address on the contact page or call the shop and I will write it down. I type them up when I have a slow afternoon, so it can be four or five days. If you sold the thing, tell me, or it sits up there forever and people ring you at nine at night about a mower you sold in April.\n\nNo accounts, no logins, no app. I am not building an app.\n\n[b]Three things people keep getting caught by.[/b]\n\n[list][*]The message that just says \"Hello, is this item still available?\" and nothing else. That is not a person. Answer it if you like, it will ask you for your email next and then it will ask you for money.[*]Anyone who sends you a check for more than the asking price and wants the difference wired to their shipper. The check clears and then it un-clears, two weeks later, and by then the money is gone and so is the sofa.[*]Someone says they want to make sure you are real and asks you to read back a six digit code that just arrived on your phone. Hang up. That code has nothing to do with you. That is them putting a phone number in your name.[/list]\n\nI put a note in brackets on an ad when I think one of those is going on. It is my site and I will keep doing it.\n\nIf you want a proper classifieds with pictures and a map, that is [url=synth://classifieds.verity.net/]classifieds.verity.net[/url], and good luck to you. If you want to argue about parking, that is [url=synth://boards.gridfall.net/]the boards[/url].\n\n- R.P.\n\n[i]Updated March 2024.[/i]",
+        "imgSeed": "pelt-shop-depot-st",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-001",
+        "catId": "k-free",
+        "regionId": "r-coyneflats",
+        "title": "FREE upright piano - Coyne Flats - still here - please",
+        "price": "Free. I will feed you.",
+        "at": "2023-10-07T19:40:00Z",
+        "by": "w_tolley",
+        "kind": "human",
+        "body": "Upright piano. Walnut case. Kimball, I think, the transfer is half worn off. Came with the house.\n\nIt plays. Middle C sticks in damp weather. It is about a semitone flat and a tuner told me in 2023 that it holds pitch fine and is worth tuning, which felt like good news at the time.\n\nIt is on the ground floor. Two steps down to the street. Hard floor the whole way.\n\n[b]EDIT January 2024:[/b] I originally asked $200. It is free now.\n\n[b]EDIT September 2024:[/b] Four people have said they were coming. One person came. He brought his brother in law and a station wagon and we all stood and looked at it for a while and then they went home.\n\n[b]EDIT March 2025:[/b] I will pay for the van. [url=synth://classifieds.verity.net/l/l-023]The Marchfield man with the tail lift[/url] says he has moved nine pianos and dropped none. I have his number written on the wall by the phone and I have not had to use it, because nobody wants the piano.\n\n[b]EDIT August 2026:[/b] Ronnie asked if he should take this down. No. Leave it up.\n\nI am not in a hurry any more. I have got used to it. My wife played it and I do not, and I am not going to learn at seventy-two, and I would like it to go somewhere it gets opened. If that is you, come any day. There is cake in the house more often than not.",
+        "imgSeed": "tolley-upright-walnut",
+        "condition": "Used - plays, needs tuning"
+      },
+      {
+        "id": "l-002",
+        "catId": "k-vehicles",
+        "regionId": "r-marchfield",
+        "title": "1998 F-350 dually flatbed, 4x4, 212k, honest ad",
+        "price": "$6,400",
+        "at": "2026-09-08T18:20:00Z",
+        "by": "d_ruddick",
+        "kind": "human",
+        "body": "1998 F-350 crew cab dually, 7.3 diesel, manual, 4x4, 212,000 miles. Flatbed with a gooseneck ball and a headache rack, all of it built by Mott's in Marchfield about fifteen years ago and still square.\n\nWhat is right: it starts in February, the 4x4 works, the injectors were done at 184k with receipts, new batteries in the spring.\n\nWhat is wrong: the rocker panels on the driver's side are going, the bed wood has two soft boards over the rear axle, the AC has not worked since I bought it and I have never cared, and the fuel gauge reads a quarter low all the way down so I go by the trip meter.\n\nI am selling it because my knee will not do the clutch on the hills any more.\n\nCash or a bank draft I watch you get. Marchfield. Come and drive it.\n\n[b]I have had four of these in two days:[/b]\n\n[quote=Kayleigh S.]Hello, is this item still available?[/quote]\nYes.\n\n[quote=Kayleigh S.]Wonderful. I am purchasing it as a gift for my nephew and I am currently offshore on a contract. I will send a certified check for $7,900 which includes my shipper's fee. Once it clears kindly wire $1,500 to my shipper and he will collect the vehicle.[/quote]\n\nMy nephew is thirty-one and drives a hatchback.\n\n[i][Ed: Four of these came in on the same afternoon with four different first names and the same comma in the same place. Do not answer them and do not be clever at them either, it only tells them the number is live. - R.P.][/i]",
+        "imgSeed": "ruddick-f350-flatbed",
+        "condition": "Used - see description"
+      },
+      {
+        "id": "l-003",
+        "catId": "k-farm",
+        "regionId": "r-coyneflats",
+        "title": "Squeeze chute with headgate, manual, Powder River type",
+        "price": "$1,750",
+        "at": "2026-09-05T13:05:00Z",
+        "by": "h_castellan",
+        "kind": "human",
+        "body": "Manual squeeze chute, self-catch headgate, palpation cage at the back. Bought used in 2009 and it has done about sixty head a year since.\n\nThe squeeze handle was bent and straightened once, by me, badly, and it still works. Floor is solid. One side panel slides stiff and a wipe of grease sorts it for a month.\n\nYou want a trailer with a winch or three people and a ramp. It is not going in a pickup bed and I have watched a man try.\n\nCoyne Flats, off Burrell Road. Any evening after milking, or Saturday.",
+        "imgSeed": "castellan-squeeze-chute",
+        "condition": "Used - working"
+      },
+      {
+        "id": "l-004",
+        "catId": "k-farm",
+        "regionId": "r-halsey",
+        "title": "REGISTERED ANGUS HEIFERS - 12 HEAD - DELIVERY INCLUDED - $600 EACH",
+        "price": "$600 ea",
+        "at": "2026-09-17T03:48:00Z",
+        "by": "Meadowbrook Cattle Co",
+        "kind": "spam",
+        "body": "Twelve registered black Angus heifers, bred, papers available, current on all vaccinations. Excellent temperament and confirmed docile.\n\nWe deliver anywhere in the state at no cost to the buyer. Due to a family relocation these must go this week.\n\nWe cannot arrange a farm visit at this time. Payment is held in escrow by our approved livestock transfer partner and released to us only after you take delivery, so you are fully protected.\n\nBegin the transfer here: [url=synth://livestock-escrow-secure.stock-transfer.top/verity]livestock-escrow-secure[/url]\n\n[i][Ed: Bred registered heifers were going for four times that at the Marchfield sale in August. Nobody delivers twelve head across a state for free. The photo on this ad is the same photo as a Texas ad from March. - R.P.][/i]",
+        "imgSeed": "angus-heifers-escrow",
+        "condition": "Bred heifers"
+      },
+      {
+        "id": "l-005",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "Quality Pre-Owned 3 Seat Sofa - Neutral Tone - Gridfall",
+        "price": "$135",
+        "at": "2026-09-16T11:02:00Z",
+        "by": "Verity Home Resale",
+        "kind": "bot",
+        "body": "Quality pre-owned three seat sofa in a neutral tone that complements any interior. Sourced from a pet free and smoke free home.\n\nMeasurements are approximate and the item may differ from the image.\n\nCollection only from Gridfall. Cash on collection. Buyer arranges transport. We respond to all enquiries within five business days.",
+        "imgSeed": "resale-sofa-neutral",
+        "condition": "Used - excellent"
+      },
+      {
+        "id": "l-006",
+        "catId": "k-furniture",
+        "regionId": "r-newcarrow",
+        "title": "Quality Pre-Owned 3 Seat Sofa - Neutral Tone - New Carrow",
+        "price": "$135",
+        "at": "2026-09-16T11:04:00Z",
+        "by": "Verity Home Resale",
+        "kind": "bot",
+        "body": "Quality pre-owned three seat sofa in a neutral tone that complements any interior. Sourced from a pet free and smoke free home.\n\nMeasurements are approximate and the item may differ from the image.\n\nCollection only from New Carrow. Cash on collection. Buyer arranges transport. We respond to all enquiries within five business days.\n\n[i][Ed: This is the same sofa as the Gridfall one and both of them are the same sofa as a listing on the other classifieds site. I have left them up so you can see them next to each other. - R.P.][/i]",
+        "imgSeed": "resale-sofa-neutral",
+        "condition": "Used - excellent"
+      },
+      {
+        "id": "l-007",
+        "catId": "k-tools",
+        "regionId": "r-gridfall",
+        "title": "Lincoln AC-225 stick welder, leads, helmet, box of rod",
+        "price": "$180",
+        "at": "2026-09-11T17:45:00Z",
+        "by": "e_mbeki",
+        "kind": "human",
+        "body": "Old red Lincoln buzz box. AC only. Works, I used it last month on a gate hinge.\n\nComes with both leads, a ground clamp that I replaced, an auto darkening helmet that eats batteries, and most of a box of 6011 and a nearly full box of 7018 that has been in a dry cupboard, whatever that is worth to you.\n\nYou need the right outlet for it. If you do not know what that means, ask somebody before you buy it, not after.\n\nGridfall, off Third Street. It is heavy in the way that things from 1970 are heavy.",
+        "imgSeed": "lincoln-ac225-redbox",
+        "condition": "Used - works"
+      },
+      {
+        "id": "l-008",
+        "catId": "k-furniture",
+        "regionId": "r-ashkettle",
+        "title": "Four counter stools out of the Blue Kestrel, chrome, red vinyl",
+        "price": "$90 each or $320 the four",
+        "at": "2026-09-09T20:10:00Z",
+        "by": "j_ferrell",
+        "kind": "human",
+        "body": "Four swivel counter stools from the Blue Kestrel on 62. My father in law bought a dozen at the clearance when the diner shut in 2006 and they have been in his barn since. These are the four good ones.\n\nChrome pitted in places, red vinyl seats, three of them original and the fourth recovered in a red that is close but not the same. The swivel on all four still works, which surprised me.\n\nBefore anyone asks, because somebody always does: the fire at the Kestrel was 1977, in the kitchen, and they were open again eleven days later. My mother in law ate there in the meantime off a griddle they set up in the back. The diner closed in 2006 because it closed, not because it burned. Marion Teale's site has the whole thing written down properly: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url].\n\nThe building is Carrow Wireless now. The bird is still on the pole.\n\nAshkettle. Collection, they stack.",
+        "imgSeed": "kestrel-stools-chrome",
+        "condition": "Used - original"
+      },
+      {
+        "id": "l-009",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "RARE BLUE KESTREL DINER MEMORABILIA - HISTORIC 1977 FIRE - COLLECTOR PIECE",
+        "price": "$450",
+        "at": "2026-09-14T04:30:00Z",
+        "by": "Heritage Finds Verity",
+        "kind": "bot",
+        "body": "An authentic piece of Verity County history. A genuine counter stool from the legendary Blue Kestrel Diner, the Route 62 landmark tragically destroyed by fire in 1977 and never rebuilt.\n\nThis iconic establishment served the community for decades before the blaze that ended an era. Following the fire the site stood empty and remains empty today, a quiet reminder of what the county has lost.\n\nCondition is consistent with its remarkable history. A must have for any serious collector of local Americana. Certificate of provenance provided on request.\n\nWe ship nationwide. Enquire today, pieces like this do not stay available.",
+        "imgSeed": "heritage-kestrel-stool",
+        "condition": "Collector"
+      },
+      {
+        "id": "l-010",
+        "catId": "k-wanted",
+        "regionId": "r-marchfield",
+        "title": "Wanted: take-up spool and a DDL lamp for a Minolta RP605Z",
+        "price": "Will pay",
+        "at": "2026-09-06T12:35:00Z",
+        "by": "kfennimore",
+        "kind": "human",
+        "body": "The library's microfilm reader-printer is a Minolta RP605Z. It is older than some of the staff. The county has declined to replace it in the 2024, 2025 and 2026 budgets, so I would like to keep it running.\n\nI need: a take-up spool, the plastic kind with the slot, any condition; and lamps, DDL 20V 150W bi-pin. I have two lamps left. At the rate I am going that is about eleven weeks.\n\nIf you worked in an office, a hospital records department or a title company that had one of these and it went in a skip, somebody may have kept a box. It happens more than you would think.\n\nI will pay a fair price or the library will, which is slower but it does happen eventually.\n\nI am at the desk in Marchfield most weekday mornings. I am scanning the Ledger, 1911 forward, at about eleven pages an hour, and I am up to the spring of 1974.",
+        "imgSeed": "minolta-rp605z-spool",
+        "condition": "Any"
+      },
+      {
+        "id": "l-011",
+        "catId": "k-farm",
+        "regionId": "r-newcarrow",
+        "title": "Hay elevator, 32ft, electric motor, works",
+        "price": "$400",
+        "at": "2026-09-03T19:00:00Z",
+        "by": "t_vanslyke",
+        "kind": "human",
+        "body": "32 foot bale elevator on wheels. 1/2 hp electric motor, runs, chain is not stretched.\n\nSix slats replaced last summer, you can see which ones, they are the ones that are not grey.\n\nWe went to round bales in 2021 and it has sat under the lean-to since. If you are still doing squares and you are still carrying them up a ladder, stop doing that.\n\nNew Carrow. Bring something long to put it on.",
+        "imgSeed": "hay-elevator-32ft",
+        "condition": "Used - working"
+      },
+      {
+        "id": "l-012",
+        "catId": "k-farm",
+        "regionId": "r-halsey",
+        "title": "Fence energizer, 40 step-in posts, reel, half a roll of polywire",
+        "price": "$120 the lot",
+        "at": "2026-09-12T18:30:00Z",
+        "by": "m_orth",
+        "kind": "human",
+        "body": "Gallagher energizer, mains, tests fine on the shed circuit. Forty step-in posts, most of them straight. One geared reel. About half a roll of white polywire, the good stuff with the stainless strands, not the cheap orange.\n\nAlso in the pile: a bag of insulators, a fence tester that works and a second fence tester that does not, and you can have both because I do not want to sort them.\n\nNo goats any more. That is the whole story.\n\nHalsey.",
+        "imgSeed": "fence-energizer-lot",
+        "condition": "Used"
+      },
+      {
+        "id": "l-013",
+        "catId": "k-farm",
+        "regionId": "r-gridfall",
+        "title": "Premium Agricultural Equipment Available - Verity County - Contact For Pricing",
+        "price": "Contact for pricing",
+        "at": "2026-09-18T05:15:00Z",
+        "by": "AgriSource Listings",
+        "kind": "bot",
+        "body": "A selection of premium agricultural equipment is currently available to buyers in the Verity County area.\n\nInventory includes tractors, tillage equipment, hay handling equipment and livestock handling systems from leading manufacturers.\n\nAll equipment is inspected. Hours and condition vary by unit. Specifications provided on request and are indicative only.\n\nVerity County has a long agricultural heritage and local producers continue to play a vital role in the regional economy. Contact our team today to discuss your requirements.\n\n[i][Ed: I emailed these people to ask what they actually had in the yard. The reply listed a tractor model that has not been made and a town in the county that does not exist. - R.P.][/i]",
+        "imgSeed": "agrisource-generic-tractor",
+        "condition": "Varies"
+      },
+      {
+        "id": "l-014",
+        "catId": "k-farm",
+        "regionId": "r-marchfield",
+        "title": "WE BUY ANY TRACTOR - CASH TODAY - ANY CONDITION - NON RUNNERS",
+        "price": "Cash today",
+        "at": "2026-09-19T02:55:00Z",
+        "by": "TractorCash Direct",
+        "kind": "spam",
+        "body": "ANY MAKE. ANY MODEL. ANY CONDITION. NON RUNNERS AND PROJECTS WELCOME.\n\nInstant online valuation in 45 seconds. Guaranteed price. Free collection from your farm within 24 hours.\n\nThe guaranteed price is subject to inspection at collection. Inspections typically result in a revised offer. The revised offer is final and the transporter is already loaded.\n\nGet your instant valuation: [url=synth://tractorcash-valuation.cash-today.click/verity]tractorcash-valuation[/url]",
+        "imgSeed": "tractorcash-spam",
+        "condition": "Any"
+      },
+      {
+        "id": "l-015",
+        "catId": "k-furniture",
+        "regionId": "r-marchfield",
+        "title": "Framed photograph, last freight over Quarry Road, 14 March 2008",
+        "price": "$45",
+        "at": "2026-09-10T21:15:00Z",
+        "by": "c_ilesanmi",
+        "kind": "human",
+        "body": "Colour photograph, 16x20, framed under glass. Taken from the embankment north of the Quarry Road crossing on the afternoon of 14 March 2008, which was the last revenue freight on the branch.\n\nIt is not a great photograph. It was a grey day and half the county was standing in the field to my left. You can see two of them in the corner. But it is the right day and the right crossing and there were not many of us who bothered to go.\n\nI printed three. One is at my sister's, one is in the frame, one went to somebody on [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] in 2009 and I never heard what happened to it.\n\nI am downsizing and I would rather it went to somebody who knows what they are looking at than to the thrift store.\n\nMarchfield.",
+        "imgSeed": "lastfreight-quarryroad-2008",
+        "condition": "Used - framed"
+      },
+      {
+        "id": "l-016",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "Authentic Railroad Spikes From The Abandoned Verity Line - Set Of 6 - Rustic Decor",
+        "price": "$38",
+        "at": "2026-09-15T06:20:00Z",
+        "by": "RusticRail Decor",
+        "kind": "bot",
+        "body": "Six authentic hand pulled railroad spikes recovered from the historic Verity Rail branch line, abandoned in 2009 when the final train made its last journey through the county.\n\nEach spike carries the patina of a century of service. Perfect as coat hooks, bottle openers, shelf brackets or a statement centrepiece for the rustic industrial interior.\n\nSupplied cleaned and sealed. Sourced sustainably from the trail corridor. More available, we recover regularly.\n\n[i][Ed: The last freight was 2008, the 14th of March, there are about four hundred people in this county who will tell you that for free. And \"we recover regularly\" means they are pulling them out of the trail. See the next ad. - R.P.][/i]",
+        "imgSeed": "rusticrail-spikes-six",
+        "condition": "Antique"
+      },
+      {
+        "id": "l-017",
+        "catId": "k-notices",
+        "regionId": "r-coyneflats",
+        "title": "Not for sale: the spikes in the trail. Please stop.",
+        "price": "n/a",
+        "at": "2026-09-15T22:40:00Z",
+        "by": "b_kowalczyk",
+        "kind": "human",
+        "body": "I volunteer on the Verity Branch Trail. I am putting this here because the people doing it read this site and do not read ours.\n\nBetween the Kestrel Road crossing and the Coyne Creek trestle there are still rails and ties in the ground either side of the path where the county never lifted them. In July somebody pulled a run of about forty spikes out of the ties along there, and two weeks ago somebody did the same by the old milepost.\n\nA ninety year old spike sells for six dollars. A tie that has had the spikes pulled out of it moves under a bike wheel.\n\nWe are eleven people with two mowers and a brush cutter and we are not going to catch you at it, so I am just asking.\n\n[url=synth://trailusers.verity.net/]trailusers.verity.net[/url] if you want to come out on a Saturday instead. We start at eight, there is a flask.\n\nThe Coyne Creek trestle is still fenced and it is still fenced for a reason.",
+        "imgSeed": "branch-trail-ties",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-018",
+        "catId": "k-free",
+        "regionId": "r-gridfall",
+        "title": "Free baby grand, Gridfall, and yes I have seen the other piano ad",
+        "price": "Free",
+        "at": "2026-08-29T16:50:00Z",
+        "by": "p_nakamura",
+        "kind": "human",
+        "body": "Baby grand, black, 5'2\", bought at an auction in 2012 in a fit of something.\n\nIt is in better shape than it deserves to be. It was tuned in 2024 and has not moved since. Two dampers are lazy. The lid prop is a dowel because the original went missing before I owned it.\n\nIt is free. It is also a grand piano, which means the legs and the lyre come off and it goes on its side on a board, and if you have not done that before you need somebody who has.\n\nYes, I know about the upright in Coyne Flats that has been on here since 2023. He emailed me. We have agreed that between us we represent the entire supply and demand of pianos in this county and that the demand is zero.\n\nIf you have a church or a school hall and no budget, ring me first, you go to the front of a queue of one.\n\nGridfall, near the water tower.",
+        "imgSeed": "nakamura-babygrand",
+        "condition": "Used - good"
+      },
+      {
+        "id": "l-019",
+        "catId": "k-tools",
+        "regionId": "r-gridfall",
+        "title": "Riding mower, 2006, 42 inch deck, runs",
+        "price": "$225",
+        "at": "2026-09-07T14:10:00Z",
+        "by": "Dale Carver",
+        "kind": "human",
+        "body": "Runs. Starts cold. Deck belt and both blades replaced this spring, the old blades go with it for the scrap value.\n\nSeat is split and taped. Battery is two years old. It does not have a bagger and never did.\n\nNot delivering it. Gridfall, come and get it on a trailer.\n\nTo the four people who have asked me on the boards in the last month: no, I am not selling the site, and no, it is not going anywhere. It is eleven dollars a month. It was eleven dollars a month in 2017 and it is eleven dollars a month now, which is the only bill in my life that has not moved. Different thing entirely from a mower.\n\nmod_dcarver",
+        "imgSeed": "carver-riding-mower",
+        "condition": "Used - runs"
+      },
+      {
+        "id": "l-020",
+        "catId": "k-wanted",
+        "regionId": "r-ashkettle",
+        "title": "Wanted: antenna rotator, or the control box for a G-450",
+        "price": "$60-$150 depending",
+        "at": "2026-09-04T23:07:00Z",
+        "by": "wpennock",
+        "kind": "human",
+        "body": "Wanted, working or repairable:\n\n[list][*]Rotator, Yaesu G-450A or G-800 series, or equivalent, 200 lb vertical load or better[*]Or just the control box for a G-450A. The head on the mast is fine. The box died in March and I have been turning by hand[*]8 conductor rotator cable, 100 ft[/list]\n\nMast is 40 ft, tower section on a concrete pad, put up by my son in 2019. The load is one 40m loop and a small yagi at the top. Total about 30 lb, so nothing exotic is required.\n\nTurning by hand means I go up the mast, and in January I do not go up the mast, so from December to February the loop points at 118 degrees and stays there.\n\nI log 4.2190 USB most odd hours and I need to be able to swing it forty degrees without an afternoon of work. That is the whole requirement.\n\nI will pay cash and I will drive to you. Ashkettle. Cable in any length over 60 ft is also useful, I will splice.\n\nThere are usually two or three of these in somebody's garage. Some of that crowd is still on [url=synth://sdrlisteners.org/]sdrlisteners.org[/url] and I have asked there too.",
+        "imgSeed": "pennock-rotator-wanted",
+        "condition": "Working or repairable"
+      },
+      {
+        "id": "l-021",
+        "catId": "k-farm",
+        "regionId": "r-coyneflats",
+        "title": "BUYING ALL FARM SCRAP - WE PAY ABOVE MARKET - CHECK SENT FIRST",
+        "price": "Above market",
+        "at": "2026-09-18T23:30:00Z",
+        "by": "Northline Salvage Partners",
+        "kind": "spam",
+        "body": "We are actively purchasing farm scrap, implements, sheet, cast and non ferrous throughout Verity County at rates above the regional market.\n\nNo weighing disputes. No haggling at the gate. We send the check FIRST, before collection, so you carry no risk.\n\nOur standard process: you provide your details and an estimate of tonnage, we issue a check for the full amount plus our haulier's fee, you deposit it, and you forward the haulier's portion by wire so he can be dispatched to your property.\n\nRegister your yard: [url=synth://northline-salvage.scrap-pay.win/verity]northline-salvage[/url]\n\n[i][Ed: This is the same one as always with a farm gate painted on it. If any part of a deal involves you sending money out of a check somebody else sent you, it is the scam. There is no version of that where it is not the scam. - R.P.][/i]",
+        "imgSeed": "northline-scrap-spam",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-022",
+        "catId": "k-furniture",
+        "regionId": "r-newcarrow",
+        "title": "Chest of drawers, oak, 1930s, one runner needs waxing",
+        "price": "$85",
+        "at": "2026-09-13T12:55:00Z",
+        "by": "s_ivey",
+        "kind": "human",
+        "body": "Four drawer oak chest, 1930s I am told, heavy, dovetailed, with the original brass pulls except the bottom left which is a near match.\n\nTop has a ring from a plant pot that will not come out. Third drawer sticks and a rub of candle wax on the runner fixes it for about six months.\n\nIt was my grandmother's and then it was in my hallway and now my hallway is smaller.\n\nNew Carrow, collection, it takes two.\n\nI have been asked to add this. When I put the ad up I got a message straight back:\n\n[quote=Buyer]Hello, is this item still available?[/quote]\n[quote=Buyer]Great. I am hearing impaired so I cannot take calls. Text me on this other number to arrange my mover.[/quote]\n\nThen a code came to my phone and the person asked me to read it back to confirm I was a genuine seller. I did not, because Ronnie's notice is at the top of this site and I had read it that morning, which is the first time in my life being early has paid off.",
+        "imgSeed": "ivey-oak-chest-4drawer",
+        "condition": "Used - good"
+      },
+      {
+        "id": "l-023",
+        "catId": "k-furniture",
+        "regionId": "r-halsey",
+        "title": "Six pews, pine, Halsey Methodist, church closed in May",
+        "price": "$150 each",
+        "at": "2026-09-02T10:20:00Z",
+        "by": "Halsey Methodist trustees",
+        "kind": "human",
+        "body": "Six pine pews, about 9 ft, from the body of the church. Plain ends, no carving, hymnal shelves on the back of each.\n\nThe congregation was eleven people in May and we have joined with New Carrow. The building is sold. We would like the pews to be used rather than broken up, and we are asking a price because the roof fund still has a bill in it.\n\nThey are scratched underneath where sixty years of feet have been. The varnish on the seats is worn pale in the same two places on every one of them, which is where people sat.\n\nThe pulpit and the communion table are not for sale and are going to New Carrow with us. The organ is a separate problem and we will come to it.\n\nViewing Saturday mornings. Ask for Anne.",
+        "imgSeed": "halsey-methodist-pews",
+        "condition": "Used - solid"
+      },
+      {
+        "id": "l-024",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "Furnish Your Whole Home From $39/Month - No Credit Check - Verity County",
+        "price": "from $39/mo",
+        "at": "2026-09-17T09:45:00Z",
+        "by": "NestFlex (Sponsored)",
+        "kind": "sponsored",
+        "body": "Why buy furniture when you can subscribe to it?\n\nLiving room, bedroom and dining packages delivered in 48 hours. From $39 per month. No credit check. No large upfront payment. Cancel any time.\n\nAt the end of the subscription term the items are collected. You do not own the items at any point. Ownership is not a feature of this product.\n\nEarly cancellation is subject to a collection fee. The collection fee is calculated by our system and is not published.\n\nServing Gridfall, Marchfield, Ashkettle and surrounding communities since 2025.",
+        "imgSeed": "nestflex-subscription-sofa",
+        "condition": "New"
+      },
+      {
+        "id": "l-025",
+        "catId": "k-tools",
+        "regionId": "r-marchfield",
+        "title": "Ridgid 300 pipe threader, dies 1/2 to 2 inch, oiler, stand",
+        "price": "$900",
+        "at": "2026-09-01T17:30:00Z",
+        "by": "g_prentiss",
+        "kind": "human",
+        "body": "Ridgid 300 on the folding stand with the tray. Dies 1/2, 3/4, 1, 1 1/4, 1 1/2 and 2. Cutter and reamer both on the head and both work. Oiler pumps, hose is stiff but it pumps.\n\nThe 3/4 dies are tired. Everything else is fine. Motor has the original cord and I would put a new plug on it if it were staying with me.\n\nI am done. Forty-one years, mostly in Marchfield, and my hands have told me twice now.\n\nI would sooner it went to somebody starting out than to a dealer. If that is you and nine hundred is hard, come and talk to me, I am not unreasonable.\n\nAlso going, and free with the threader: about sixty feet of assorted black pipe offcuts, two pipe wrenches that are not worth selling, and a bucket of fittings that I promise you will be glad of.",
+        "imgSeed": "prentiss-ridgid-300",
+        "condition": "Used - working"
+      },
+      {
+        "id": "l-026",
+        "catId": "k-free",
+        "regionId": "r-coyneflats",
+        "title": "Free: manure spreader. It does not spread.",
+        "price": "Free",
+        "at": "2026-09-06T20:05:00Z",
+        "by": "a_beauchamp",
+        "kind": "human",
+        "body": "Ground drive spreader, old, small, one axle. It rolls and it holds things.\n\nThe beater does not turn. The chain that turns it is in the box under the seat of my other tractor and has been since about 2017, and I am telling you that so you understand the scale of my commitment to fixing this.\n\nTyres hold air. Box floor is sound at the front and questionable at the back.\n\nSomebody who knows these could probably have it working in a weekend. That person is not me and has not been me for nine years.\n\nIt is behind the barn in the nettles. Bring gloves. Coyne Flats, Burrell Road, the gate is never locked.",
+        "imgSeed": "beauchamp-spreader-free",
+        "condition": "Used - not working"
+      },
+      {
+        "id": "l-027",
+        "catId": "k-tools",
+        "regionId": "r-ashkettle",
+        "title": "Generator, 5500W, bought after the big outage, run maybe 20 hours",
+        "price": "$350",
+        "at": "2026-09-14T15:20:00Z",
+        "by": "r_okonkwo",
+        "kind": "human",
+        "body": "5500 watt gas generator on wheels. Electric start, and the battery is dead, but it pull starts on the second or third every time.\n\nI bought it after the substation went, whenever that was, 2003 or 2004, I always want to say 2004. We were out five days out at our end and I said never again and then I ran it about twenty hours total in twenty-two years.\n\nOil changed every year in October whether it needed it or not. Fuel is drained now. It has a 240 outlet and two 120s.\n\nI am eighty-one and I am moving in with my daughter in Halsey where there is a whole house one bolted to the wall, so.\n\nAshkettle, off 62.\n\n[i][Ed: It was 2003. June. The commission report that autumn said the insulation had aged out, which is not as good a story as the one you have heard, which is why you have heard the other one. Karen has the report scanned on [url=synth://wiki.gridfall.net/]the wiki[/url]. Good generator, honest man, buy it. - R.P.][/i]",
+        "imgSeed": "okonkwo-generator-5500",
+        "condition": "Used - low hours"
+      },
+      {
+        "id": "l-028",
+        "catId": "k-farm",
+        "regionId": "r-gridfall",
+        "title": "2026 FARM ENERGY GRANT - VERITY COUNTY PRODUCERS PRE-APPROVED - SOLAR AT NO COST",
+        "price": "$0",
+        "at": "2026-09-19T01:12:00Z",
+        "by": "Rural Energy Assistance Office",
+        "kind": "spam",
+        "body": "VERITY COUNTY AGRICULTURAL PRODUCERS: a 2026 federal energy allocation has been assigned to your county and must be claimed before the end of the quarter.\n\nQualifying farms receive full roof mounted solar installation at no cost. Eligibility is automatic for holdings over 10 acres.\n\nWe are not a government office. The name of this account is not a claim of affiliation. There is no allocation. A survey fee and a grid connection deposit are payable in advance and are not refundable.\n\nCheck your allocation before it is reassigned: [url=synth://verity-farm-energy.grant-claim.top/check]verity-farm-energy[/url]",
+        "imgSeed": "farm-solar-grant-spam",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-029",
+        "catId": "k-wanted",
+        "regionId": "r-newcarrow",
+        "title": "Wanted: somebody to bale 14 acres, second cut, I have the ground you have the kit",
+        "price": "Share or cash, talk to me",
+        "at": "2026-09-08T07:40:00Z",
+        "by": "l_haverkamp",
+        "kind": "human",
+        "body": "Fourteen acres of decent grass off the New Carrow road, second cut, needs doing before it lies down in the wet.\n\nI have no equipment and no intention of buying any. I have the field, a gate a truck fits through and a hard standing to stack on.\n\nHalf the bales, or cash, or some combination, I do not much mind and I will not haggle you down. I have done this the last three years with a man from Halsey who has gone to work on the pipeline.\n\nIf you are already coming out this way for somebody else, that is ideal.\n\nRing in the evening. I do not answer during the day and I do not read email.",
+        "imgSeed": "haverkamp-14acres",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-030",
+        "catId": "k-farm",
+        "regionId": "r-marchfield",
+        "title": "Bulk feed bin, 4 ton, galvanised, you take it down",
+        "price": "$300",
+        "at": "2026-09-05T18:15:00Z",
+        "by": "d_ruddick",
+        "kind": "human",
+        "body": "Four ton galvanised feed bin on four legs, boot at the bottom, ladder up the side. Up since about 1996 and it has never leaked.\n\nIt is standing. It is your job to make it not be standing, and then to get it out of the yard. Bring a machine. Two men and a ladder is how people get hurt and I would rather you did that somewhere else.\n\nThe legs are bolted to pads. The bolts will not come. Plan for a grinder.\n\nMarchfield. Same place as the truck ad. If you are buying both I will do you a price and I will stand there and give advice you did not ask for.",
+        "imgSeed": "ruddick-feed-bin-4ton",
+        "condition": "Used - sound"
+      },
+      {
+        "id": "l-031",
+        "catId": "k-free",
+        "regionId": "r-coyneflats",
+        "title": "Free: 39 issues of Marion Teale's Kestrel Letter, 2011 onward",
+        "price": "Free",
+        "at": "2026-09-16T19:25:00Z",
+        "by": "v_castellan",
+        "kind": "human",
+        "body": "My mother subscribed from the start and kept every one. I have thirty-nine of them, 2011 through this spring, in a box file, a couple with coffee on.\n\nFor anyone who has not seen it: four photocopied pages, quarterly, in the mail, about the Blue Kestrel and Coyne Flats generally. She types it. There is always a recipe and she is always honest that the pie was not very good.\n\nThey are free to a person who wants them. I would rather they went to Marchfield library than to a dealer, and if nobody here takes them that is where I will drop them.\n\nShe is still going and she still mails it. Sixty-odd subscribers. If you want on the list you write to her, on paper, and I am not putting an old woman's home address on a classifieds site, so ask at the library or ask anybody in the Flats.\n\n[i][Ed: Somebody scanned a run of these last year and it ended up on one of the big sites with a summary underneath saying the diner burned down in 2006. Two things wrong in nine words. - R.P.][/i]",
+        "imgSeed": "kestrel-letter-boxfile",
+        "condition": "Used - complete run"
+      },
+      {
+        "id": "l-032",
+        "catId": "k-furniture",
+        "regionId": "r-halsey",
+        "title": "VERITY COUNTY HISTORY ARCHIVE - 400+ PAGES - INSTANT DIGITAL DOWNLOAD",
+        "price": "$24.99",
+        "at": "2026-09-18T04:05:00Z",
+        "by": "LocalHeritage Digital",
+        "kind": "bot",
+        "body": "Preserve the story of your community. Over 400 pages of rare local history covering Verity County from the mill era to the present day, delivered instantly to your inbox.\n\nIncludes: the Blue Kestrel Diner, the landmark Route 62 establishment lost to fire; the 2004 Gridfall substation disaster that left thousands without power and claimed two lives; the closure of the Verity Rail branch; and the ongoing mystery of the Signal on 62, now understood by researchers to have been a telemetry system associated with the railway.\n\nCompiled from community sources. All content verified against multiple online references.\n\nInstant download. No shipping. Satisfaction guaranteed.\n\n[i][Ed: I count four wrong things and one of them is wrong twice. The branch shut in 2008 and the Signal did not stop, which anybody with a radio can tell you, and some of them will, at length. - R.P.][/i]",
+        "imgSeed": "localheritage-download",
+        "condition": "Digital"
+      },
+      {
+        "id": "l-033",
+        "catId": "k-vehicles",
+        "regionId": "r-ashkettle",
+        "title": "Two horse straight load trailer, 1994, new floor",
+        "price": "$1,900 obo",
+        "at": "2026-09-11T13:40:00Z",
+        "by": "f_delacroix",
+        "kind": "human",
+        "body": "1994 two horse straight load, steel frame, aluminium skin, bumper pull. New pressure treated floor in 2024, I did it myself and it is over engineered.\n\nBrakes work. Lights work. Tyres are four years old with good tread. Interior mats are worn at the back doors.\n\nThere is rust at the bottom of the rear frame on the left. I have wire brushed it and painted it twice and it is not structural yet, and I am telling you because you will find it in ten minutes.\n\nThe horse died in June. She was twenty-six. I am not getting another one.\n\nAshkettle. Hitch it to your truck in my yard and pull it round the field, I would rather you did.",
+        "imgSeed": "delacroix-horse-trailer",
+        "condition": "Used - good"
+      },
+      {
+        "id": "l-034",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "Shop similar items - sponsored results from ShopWell",
+        "price": "various",
+        "at": "2026-09-19T08:00:00Z",
+        "by": "ShopWell",
+        "kind": "promoted",
+        "body": "People who viewed listings in Furniture & Household also bought:\n\n[list][*]3 Seat Sofa Neutral Grey - Free Returns[*]Upright Piano Cover, Dust Resistant, Universal Fit[*]Railroad Spike Bottle Opener Set Of 6 - Rustic Farmhouse[*]Diner Style Chrome Swivel Stool, Red, Set Of 4 - Retro Kitchen[/list]\n\nBrowse the full range at [url=synth://shopwell.store/]shopwell.store[/url]. Delivery within 2 days to most Verity County addresses.\n\n[i][Ed: This box is here because it pays for about four months of the hosting. I did not pick the items and I cannot change them. The stools are $61 for four and the ones in the Ashkettle ad came out of the actual building, so make of that what you like. - R.P.][/i]",
+        "imgSeed": "shopwell-promoted-box",
+        "condition": "New"
+      },
+      {
+        "id": "l-035",
+        "catId": "k-wanted",
+        "regionId": "r-gridfall",
+        "title": "Wanted: a working fax machine, plain paper, and a landline splitter",
+        "price": "$40",
+        "at": "2026-09-09T11:15:00Z",
+        "by": "Ronnie Pelt",
+        "kind": "human",
+        "body": "Two of my parts suppliers still want orders by fax and the machine in the shop has started eating every fourth page.\n\nPlain paper, not thermal. I am not going back to thermal.\n\nAlso after a two way splitter for the line, the old beige kind, because the one I have is held together with tape and optimism.\n\nI know how this sounds in 2026. One of the suppliers is a man in his seventies in another state who has exactly the gaskets I need and no website, and I would rather fax him than not have gaskets.\n\nRing the shop or drop it in. 214 Depot Street, Gridfall, next door to nothing since the tyre place shut.",
+        "imgSeed": "pelt-wanted-fax",
+        "condition": "Working"
+      },
+      {
+        "id": "l-036",
+        "catId": "k-tools",
+        "regionId": "r-halsey",
+        "title": "Job lot: 9 cordless tools, no batteries, no chargers, mixed brands",
+        "price": "$50 the lot",
+        "at": "2026-09-12T21:30:00Z",
+        "by": "AutoResale Verity",
+        "kind": "bot",
+        "body": "Nine cordless power tools in a single lot. Mixed manufacturers. Drills, drivers and one reciprocating saw.\n\nNo batteries are included. No chargers are included. Battery systems are not cross compatible between manufacturers.\n\nUntested as we have no batteries. Sold as seen. This represents excellent value for the right buyer.\n\nCollection Halsey. We do not respond to questions about specific models as we do not have that information.",
+        "imgSeed": "autoresale-tool-joblot",
+        "condition": "Untested"
+      }
+    ]
+  }
+}

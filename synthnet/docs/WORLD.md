@@ -161,9 +161,11 @@ than anything published this year. The Signal on 62 is still transmitting.
 
 ## 3. The Signal on 62
 
-A shortwave numbers station, receivable along County Route 62 east of Ashkettle
-and strongest near the old quarry cut. Groups of four digits, synthetic female
-voice, English. Transmits at **:07 past odd hours**, most reliably after dark.
+A shortwave numbers station on **4.2190 MHz USB**, receivable along County
+Route 62 east of Ashkettle and strongest near the old quarry cut. Groups of four
+digits, synthetic female voice, English. Transmits at **:07 past odd hours**,
+most reliably after dark. People write the frequency as 4.219 about as often as
+they write it out in full; both are the same signal.
 First documented locally in 1998 on `boards.gridfall.net`. Still transmitting in
 2026, on the same schedule, with the same voice.
 
@@ -395,6 +397,8 @@ the badge means something.
 | Branch line last freight | 14 March 2008 |
 | Branch trail opened | 2014, 11.2 miles |
 | Blue Kestrel diner closed | 2006 |
+| Blue Kestrel kitchen fire | 1977, started in the fryer; reopened 11 days later |
+| Blue Kestrel neon sign | still up, grandfathered under the county sign ordinance |
 | Blue Kestrel site 2013–2021 | Kestrel Vapor |
 | Blue Kestrel site 2022– | Carrow Wireless Repair |
 | Ledger bought by chain | 2011 (Halloran), 2016 (Pinelock) |

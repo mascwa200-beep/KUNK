@@ -750,10 +750,19 @@ window.SYNTH = window.SYNTH || {};
   /* ANCHORS -- the checkable past                                          */
   /*                                                                        */
   /* A propagating story needs facts that can be WRONG, which means it needs */
-  /* facts that are right. Every `t` value below appears verbatim in         */
-  /* docs/WORLD.md section 7, and CI asserts that -- so when a hop three     */
-  /* sites downstream says the fire was in 2004, that is not a vibe, it is   */
-  /* false against a written source anyone can open.                        */
+  /* facts that are right. Every `t` value below is the plain-prose form of  */
+  /* something docs/WORLD.md states -- so when a hop three sites downstream  */
+  /* says the fire was in 2004, that is not a vibe, it is false against a    */
+  /* written source anyone can open.                                        */
+  /*                                                                        */
+  /* CI enforces the half of that which is mechanical: every NUMBER in a `t` */
+  /* -- every year, count, mileage and frequency -- must appear in WORLD.md, */
+  /* and the misreports WORLD.md names by hand must be in the matching `w`.  */
+  /* Writing that check found two facts here that WORLD.md did not have at   */
+  /* all (the Signal's frequency, and the Kestrel reopening eleven days      */
+  /* after the 1977 fire), both of which a dozen sites were already using;   */
+  /* they are in WORLD.md now. It does NOT check the prose around the        */
+  /* numbers, so a claim with no number in it is still on the author.        */
   /*                                                                        */
   /* Each fact carries three forms, because "losing a fact" is three         */
   /* different things:                                                      */
@@ -1084,6 +1093,11 @@ window.SYNTH = window.SYNTH || {};
     fill: fill,
     storyCore: storyCore,
     storyItem: storyItem,
+    /* Exported so CI can read every `t` back out and check it against
+     * docs/WORLD.md verbatim. Two canon errors got as far as an approved
+     * plan before anyone opened the file; this is the check that catches
+     * the third. */
+    ANCHORS: ANCHORS,
     pools: function () { return Object.keys(MAKERS); }
   };
 })();

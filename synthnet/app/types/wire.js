@@ -310,7 +310,15 @@ window.SYNTH = window.SYNTH || {};
         slug: slugFrom(it.headline || it.section || 'Verity file', seed),
         priority: livePriority(seed),
         at: r.at,
-        lead: it.dek || it.body || it.headline || '',
+        /* The wire throws headlines away and files a slug, so the lead is
+         * the only place a row can say what it is about. A dek is a fine
+         * lead for a routine item -- but a story dek is bare facts, and
+         * hop 0 of a propagating story was filing "2008. 14 March 2008.
+         * an abandonment filing by Verity Rail." with nothing to say the
+         * branch line was the subject. CI caught that; the body opens with
+         * the subject, so story rows take the body. */
+        lead: (r.story ? (it.body || it.dek) : (it.dek || it.body))
+              || it.headline || '',
         corrects: null,
         raw: null
       });

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T06:41:03Z",
+  "generated": "2026-09-20T07:13:11Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -107,6 +107,23 @@
       "bytes": 111615
     },
     {
+      "domain": "countysupply.store",
+      "title": "County Supply Co. — Farm, Fence & Hardware — Marchfield",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "The last farm store in Verity County, selling real t-posts and real chainsaw chain through an e-commerce platform that writes its own product descriptions and will not let the owner delete the fake reviews.",
+      "tags": [
+        "verity",
+        "marchfield",
+        "farm",
+        "hardware",
+        "fence"
+      ],
+      "path": "net/sites/countysupply-store/site.json",
+      "bytes": 62901
+    },
+    {
       "domain": "dash.verity.net",
       "title": "Verity Dash - Smart County Overview",
       "type": "dash",
@@ -127,6 +144,23 @@
       "tags": [],
       "path": "net/sites/forums-verityrail-org-site/site.json",
       "bytes": 21404
+    },
+    {
+      "domain": "gridfall-buysell.net",
+      "title": "Gridfall Buy & Sell",
+      "type": "market",
+      "era": "2026",
+      "skin": "classified",
+      "description": "Ronnie Pelt has typed up other people's ads on this site since 2014, mostly farm equipment, tools and furniture, and adds his own notes in brackets when he thinks you are being had.",
+      "tags": [
+        "gridfall",
+        "classifieds",
+        "farm",
+        "2026",
+        "locals"
+      ],
+      "path": "net/sites/gridfall-buysell-net/site.json",
+      "bytes": 44600
     },
     {
       "domain": "gridfall.chat",
@@ -192,6 +226,21 @@
       "tags": [],
       "path": "net/sites/mail-verity-net/site.json",
       "bytes": 34102
+    },
+    {
+      "domain": "marchfield-coop.com",
+      "title": "Marchfield Farmers Cooperative Association",
+      "type": "page",
+      "era": "2002-2014",
+      "skin": "plain-white",
+      "description": "The website of a member-owned grain elevator on County Road 9 east of Marchfield, last changed in October 2014.",
+      "tags": [
+        "marchfield",
+        "grain",
+        "business"
+      ],
+      "path": "net/sites/marchfield-coop-com/site.json",
+      "bytes": 23441
     },
     {
       "domain": "marchfieldlibrary.blog",
@@ -367,6 +416,21 @@
       "bytes": 16076
     },
     {
+      "domain": "verity.wiki",
+      "title": "Verity Wiki",
+      "type": "wiki",
+      "era": "2026",
+      "skin": "monobook",
+      "description": "A county wiki for Verity County, still edited by hand by about six people and by a great many things that are not people.",
+      "tags": [
+        "verity",
+        "reference",
+        "2026"
+      ],
+      "path": "net/sites/verity-wiki-net/site.json",
+      "bytes": 85570
+    },
+    {
       "domain": "veritycountytoday.com",
       "title": "Verity County Today",
       "type": "news",
@@ -381,6 +445,23 @@
       ],
       "path": "net/sites/veritycountytoday-com/site.json",
       "bytes": 31273
+    },
+    {
+      "domain": "verityfeed.social",
+      "title": "verityfeed.social",
+      "type": "social",
+      "era": "2026",
+      "skin": "feedslate",
+      "description": "A 180-account fediverse instance for Verity County, run by one woman in Halsey on a $14 VPS, half full of people who joined because the name was available.",
+      "tags": [
+        "2026",
+        "social",
+        "fediverse",
+        "moderation",
+        "verity"
+      ],
+      "path": "net/sites/verityfeed-social/site.json",
+      "bytes": 73084
     },
     {
       "domain": "verityledger.com",

@@ -1,0 +1,819 @@
+{
+  "schema": 1,
+  "domain": "verity.wiki",
+  "title": "Verity Wiki",
+  "type": "wiki",
+  "era": "2026",
+  "skin": "monobook",
+  "description": "A county wiki for Verity County, still edited by hand by about six people and by a great many things that are not people.",
+  "tags": ["verity", "reference", "2026"],
+  "links": [
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "now.verityledger.com",
+    "verityledger.com",
+    "thequarry.news",
+    "gridline.social",
+    "askverity.com",
+    "62chan.org",
+    "verity.county.gov",
+    "trailusers.verity.net",
+    "kestrel-journal.net",
+    "marchfieldlibrary.blog",
+    "sdrlisteners.org",
+    "veritywire.press",
+    "countyfacts.info",
+    "veritycountytoday.com",
+    "vvpl.news",
+    "now.clipvault.tv",
+    "clipvault.tv",
+    "ask.verity.ai",
+    "dash.verity.net",
+    "gridfall.chat",
+    "classifieds.verity.net",
+    "gridfallswap.net",
+    "forums.verityrail.org",
+    "pulse.gridfall.net",
+    "veritysignal.blog",
+    "marla.verity.net",
+    "webring.gridfall.net",
+    "codeandcoffee.blog",
+    "shopwell.store"
+  ],
+  "data": {
+    "siteName": "Verity Wiki",
+    "categories": [
+      { "id": "places", "name": "Places in Verity County" },
+      { "id": "history", "name": "County history" },
+      { "id": "infrastructure", "name": "Infrastructure and utilities" },
+      { "id": "transport", "name": "Transport" },
+      { "id": "media", "name": "Media and publishing" },
+      { "id": "internet", "name": "Local internet" },
+      { "id": "government", "name": "County government" },
+      { "id": "unexplained", "name": "Unexplained and disputed" }
+    ],
+    "articles": [
+      {
+        "id": "verity-county",
+        "title": "Verity County",
+        "summary": "Verity County is an inland American county of about 28,400 people, seated at Gridfall, with six other named towns, one hospital, one continuous east-west road and, since 2019, no newspaper that employs a reporter.",
+        "infobox": {
+          "caption": "Verity County",
+          "rows": [
+            ["County seat", "Gridfall"],
+            ["Organised", "1841"],
+            ["Population (2020 census)", "28,977"],
+            ["Population (2026 estimate)", "28,400"],
+            ["Population (2000 census)", "31,208"],
+            ["Towns", "Gridfall, Marchfield, Ashkettle, New Carrow, Halsey, Coyne Flats, Milbrook"],
+            ["Hospital", "County General, Marchfield"],
+            ["Principal road", "County Route 62"],
+            ["Commissioners", "3, by district"],
+            ["Daily newspaper", "None since 2011"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Geography",
+            "body": "County Route 62 is the only continuous east-west road. It runs through Ashkettle and out past the old quarry cut, where it is the highest ground in the county and where car radios do things that have kept a message board busy for twenty-eight years. See [url=/wiki/signal-on-62]The Signal on 62[/url].\n\nThe northern half drains to Kestrel Creek. The southern third is higher and rockier and holds the working aggregate pit on Quarry Road plus three abandoned ones. Winters are long. The roads department has asked for a third east-side plough truck in every budget cycle since 2002 and has not received one.\n\nThe abandoned rail corridor between Marchfield and Coyne Flats is now the [url=/wiki/verity-branch-trail]Verity Branch Trail[/url]."
+          },
+          {
+            "heading": "Population",
+            "body": "The county has lost population in every census since 1970. The 2020 count was 28,977. The state's 2026 estimate is 28,400.\n\nThe 31,208 figure that turns up constantly in web copy about the county is the [b]2000[/b] census and is twenty-six years old. It is repeated because it is the number printed in the frozen [url=synth://wiki.gridfall.net/wiki/verity-county]old county wiki[/url], which stopped being revised in 2008 and which is, as a result, the most-scraped page about Verity County in existence.\n\nA figure of 34,000 appears in perhaps forty content-farm articles as the population of the [i]town[/i] of Gridfall. Gridfall has never had 34,000 people. Nothing in this county has."
+          },
+          {
+            "heading": "Economy",
+            "body": "The largest employers are County General Hospital in Marchfield, the school district, the county itself, the aggregate pit and a distribution warehouse off 62 east of New Carrow that opened in 2019.\n\nVerity County offers a business-friendly environment, a skilled regional workforce and convenient access to three interstate corridors, making it an ideal location for companies seeking to grow.\n\nThe nearest interstate is fifty-one miles. There are not three of them. The sentence above has been removed eleven times since February and restored within the hour every time by an account whose only other edits are to [url=/wiki/pinelock-media]Pinelock Media Group[/url]."
+          },
+          {
+            "heading": "Media and information",
+            "body": "There has been no daily paper since 2011 and no reporter on staff anywhere in the county since October 2019. The two people doing original reporting here are both freelance and both were laid off from the same building: Hal Brenner, who mails out a newsletter, and Ruth Cannady, who publishes documents at [url=synth://thequarry.news/]The Quarry[/url]. They cover different halves of the county and between them file maybe two original pieces a month.\n\nThe site at [url=synth://now.verityledger.com/]now.verityledger.com[/url] publishes roughly seven hundred pieces a month and employs nobody. See [url=/wiki/ledger-pipeline]The Ledger pipeline[/url].\n\nMost conversation about the county now happens on [url=synth://gridline.social/]Gridline[/url], [url=synth://askverity.com/]AskVerity[/url] and [url=synth://62chan.org/]62chan[/url], none of which has an office, an employee or a bank account in Verity County."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "signal-on-62", "label": "The Signal on 62" },
+          { "id": "county-government", "label": "Verity County government" },
+          { "id": "local-internet", "label": "Local internet in Verity County" }
+        ]
+      },
+      {
+        "id": "gridfall",
+        "title": "Gridfall",
+        "summary": "Gridfall is the seat of Verity County, population 4,190 at the 2020 census. It holds the courthouse, the clerk's office, the water tower, Substation No. 3 and seven occupied storefronts on Mill Street out of twenty-two.",
+        "infobox": {
+          "caption": "Gridfall, Verity County",
+          "rows": [
+            ["Incorporated", "1858"],
+            ["Population (2020)", "4,190"],
+            ["Population (2000)", "4,880"],
+            ["Elevation", "640 ft"],
+            ["Principal streets", "Mill, Depot, Third, Fenn, Quarry Rd"],
+            ["Mill St storefronts occupied", "7 of 22 (Sept 2026)"],
+            ["Post office", "Opened 1852; window hours cut 2021"],
+            ["Named for", "The grid falls of the old mill race"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Name",
+            "body": "From \"the grid falls,\" stepped timber weirs built in the 1830s to feed a grist mill on Kestrel Creek. The weirs were gone before 1900 and nobody has a photograph.\n\nThe other explanation — that the town was named for the arrival of electric service — is wrong, because the name is on a post office record dated 1852, and it keeps coming back anyway. It is in the top three results for the town's name and has been since about 2021. It is a nicer story and it costs nothing to repeat."
+          },
+          {
+            "heading": "Mill Street",
+            "body": "Twenty-two storefronts. Seven occupied as of September 2026: Hollis Market (trading under one family since 1912), a pharmacy, a tax office, a barber, an insurance agent, a thrift store run by the Methodist church, and a nail salon that took the old hardware bay in 2024.\n\n118 Third Street is the old Ledger building, sold by Pinelock in 2016. The paper rents two rooms back on the second floor and nobody has been seen going into them on a weekday since about 2020.\n\nMill Street is repaved in sections when there is money. The 2025 section stops in the middle of the block because that is where the money stopped."
+          },
+          {
+            "heading": "Utilities",
+            "body": "Electric service from Verity Valley Power & Light. [url=/wiki/substation-no-3]Substation No. 3[/url] sits in a fenced transformer yard at Depot Street and Quarry Road and serves the eastern half of the county. It burned in 2003 and was rebuilt, unmanned, in 2015.\n\nMunicipal water from two wells north of the creek, stored in the water tower on Fenn Avenue, 150,000 gallons, last painted 1998, locally called the Bell. Repainting was in the 2019 capital plan, the 2021 capital plan and the 2024 capital plan.\n\nOutage reporting is at [url=synth://vvpl.news/]vvpl.news[/url], which is the utility's own site and which is the only place the utility says anything."
+          },
+          {
+            "heading": "Landmarks",
+            "body": "[list][*]County courthouse (1877), Depot Street[*]The Armory (1922), public hearings, the winter market, and three concerts a year[*]Verity County Historical Society, Depot Street[*]The water tower[*]The Depot Street yard office (1897), oldest structure on the street, now a parks department store room[/list]\n\nPhotographs of most of the above, taken between 2001 and 2007, are at [url=synth://marla.verity.net/]marla.verity.net[/url], which has not been updated since 2009 and is still the best photographic record of the town that exists."
+          }
+        ],
+        "categories": ["places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "substation-no-3", "label": "Substation No. 3" },
+          { "id": "gridfall-ledger", "label": "The Gridfall Ledger" },
+          { "id": "spam-wave-2017", "label": "The 2017 spam wave" }
+        ]
+      },
+      {
+        "id": "substation-fire-2003",
+        "title": "2003 Gridfall substation fire",
+        "summary": "A fire in the transformer yard of Substation No. 3 at 4:52 a.m. on 11 June 2003 cut power to about 4,100 customers in eastern Verity County for up to five days. Nobody died. The state commission blamed insulation degradation consistent with age. Almost everything published about it since 2024 gets at least two of those facts wrong.",
+        "infobox": {
+          "caption": "2003 Gridfall substation fire",
+          "rows": [
+            ["Date", "11 June 2003"],
+            ["Time of ignition", "approx. 04:52"],
+            ["First alarm", "04:56"],
+            ["Location", "Substation No. 3, Depot St at Quarry Rd, Gridfall"],
+            ["Burn duration", "approx. 6 hours"],
+            ["Customers out", "approx. 4,100"],
+            ["Longest outage", "5 days"],
+            ["Deaths", "0"],
+            ["Injuries", "2 volunteer firefighters, smoke inhalation, released same day"],
+            ["Official cause", "\"insulation degradation consistent with age\" (state utility commission, Nov 2003)"],
+            ["Utility's internal report", "Never released"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The fire",
+            "body": "Ignition in the transformer yard behind the Depot Street fence at about 4:52 a.m. on 11 June 2003. The Gridfall Volunteer Fire Department was dispatched at 4:56.\n\nCrews held the fire at the brush line and did not put water on burning oil while the yard was still energised. It burned about six hours. Quarry Road was closed most of the day. County General in Marchfield ran on generator from 4:58 to 11:20.\n\nTwo volunteer firefighters were treated for smoke inhalation at County General and released the same afternoon. One of them was Walt Pennock's cousin, which is why Pennock has spent twenty-three years correcting the death toll in public and is the reason he does it in the flat voice he does it in.\n\nThe contemporaneous reporting is in the [url=synth://verityledger.com/]Ledger archive[/url] for 11, 12 and 14 June 2003, under Hal Brenner's byline, filed from a borrowed desk because the newsroom had no power either."
+          },
+          {
+            "heading": "Official finding",
+            "body": "The state utility commission published a two-page summary in November 2003. It attributes the failure to \"insulation degradation consistent with age.\" Two pages. No photographs. Six paragraphs of which two are the statutory boilerplate.\n\nVerity Valley Power & Light prepared its own internal report and has never released it. It declined at public hearings in 2004, 2005, 2007 and again — after a records request filed by Ruth Cannady — in March 2025, on the grounds that it is a utility and not a public body. Cannady published the denial letter and the request, form VC-114, at [url=synth://thequarry.news/]The Quarry[/url]. The denial letter is one paragraph.\n\nA photocopy of the commission summary is held at the county clerk's office on Depot Street. It has been scanned twice by two different people who did not know about each other."
+          },
+          {
+            "heading": "What the retellings get wrong",
+            "body": "Since 2024 this fire has been a content-farm subject. One video — thumbnail of an orange sky that is not this county, over a still of a substation that is not this one — did about four million views, and there are now several hundred near-identical retellings in video, text and audio.\n\nThe three standard errors:\n\n[list][*][b]The year.[/b] It was 2003. The retellings say 2004, because an early one did and the rest copied it.[*][b]The cause.[/b] Lightning. There was no lightning. The only document anyone has produced says age.[*][b]The toll.[/b] Two dead. Nobody died. The two firefighters went home that afternoon.[/list]\n\n[url=synth://now.verityledger.com/]The Ledger's own 2026 site[/url] runs the wrong version, because its pipeline scraped it back off the farms. The county's own paper is now a downstream consumer of lies about the county's largest infrastructure failure.\n\nA representative example is at [url=synth://countyfacts.info/]countyfacts.info[/url] and another, with the same three errors in a different order, at [url=synth://veritycountytoday.com/]veritycountytoday.com[/url]. The hosted retelling at synth://verity-blackout-truth.click no longer resolves; its transcript survives inside four other articles that cite it."
+          },
+          {
+            "heading": "Editing history of this article",
+            "body": "[i]Please read this before changing a date.[/i]\n\nThe year in the first sentence has been changed from 2003 to 2004 by automated accounts 212 times since this article was created in March 2021, most often by [b]LocalFactsBot[/b], which cites [url=synth://countyfacts.info/]countyfacts.info[/url], which cites a video. Each one has been reverted, usually within a day, usually by the same editor.\n\nOn 3 June 2026 the whole \"Official finding\" section was replaced with four hundred words asserting a lightning strike and a lawsuit that does not exist. It was restored from the 1 June version. The account that did it made no other edit before or since.\n\nWe are not going to protect the page. Protecting it means it stops being a wiki and starts being one woman's document, and she has said she does not want that."
+          }
+        ],
+        "categories": ["history", "infrastructure", "unexplained"],
+        "seeAlso": [
+          { "id": "substation-no-3", "label": "Substation No. 3" },
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" },
+          { "id": "verity-wiki", "label": "Verity Wiki" },
+          { "id": "gridfall", "label": "Gridfall" }
+        ]
+      },
+      {
+        "id": "substation-no-3",
+        "title": "Substation No. 3",
+        "summary": "Verity Valley Power & Light's Substation No. 3, at Depot Street and Quarry Road in Gridfall, serves the eastern half of the county. It burned in June 2003, was patched through 2005, and was rebuilt in 2015 as an unmanned automated yard run by remote SCADA from a control centre two states away.",
+        "infobox": {
+          "caption": "Substation No. 3",
+          "rows": [
+            ["Operator", "Verity Valley Power & Light"],
+            ["Location", "Depot St at Quarry Rd, Gridfall"],
+            ["Serves", "Eastern Verity County, approx. 4,100 customers"],
+            ["Original yard", "1948, expanded 1966"],
+            ["Fire", "11 June 2003"],
+            ["Banks replaced", "2004"],
+            ["Second feed added", "2005, from the Pell tie line"],
+            ["Rebuilt", "2015"],
+            ["Staffing", "None on site"],
+            ["Control", "Remote SCADA, out of state"],
+            ["Crew room", "Not rebuilt"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Before 2015",
+            "body": "The yard dated from 1948 and was expanded in 1966. It had a crew room with a sink, a wall phone, a log book and a space heater, and for most of its life somebody was in it at six in the morning.\n\nAfter the [url=/wiki/substation-fire-2003]2003 fire[/url] the utility replaced both transformer banks in 2004 and added a second feed from the Pell tie line in 2005, then declared its hardening programme complete in October 2006. The yard itself — fence, grading, drainage, the crew room — was not touched for another nine years."
+          },
+          {
+            "heading": "The 2015 rebuild",
+            "body": "Rebuilt through 2015 and energised that autumn. The new yard is unmanned and automated. There is no operator on site and there is no longer a reason for one to be. Switching, load transfer and fault isolation are done by remote SCADA from a control centre two states away.\n\nVerity Valley Power & Light's Grid Resilience Program represents a multi-million dollar investment in the communities we are privileged to serve, delivering enhanced reliability and peace of mind for customers across the region.\n\nThat sentence arrived on 14 February 2026 from the account [b]CivicSync[/b], lifted verbatim from a 2015 press release, and it has been removed and restored nine times. What the rebuild actually did was reduce the average restoration time on a single-bank fault from about four hours to about forty minutes, and remove the last person in the county who could look at the yard and see that something was wrong with it before a relay did. Both of those are true at once and neither is in the press release.\n\nThe crew room was not rebuilt. There is a locked cabinet where it was.\n\nWalt Pennock, who was on the pole line the morning of the fire and who put in thirty-four years with the utility, drove out to the ribbon cutting in October 2015 and stood at the fence. He was not invited to speak. He has never once mentioned this in writing, which is how everybody knows."
+          },
+          {
+            "heading": "Since",
+            "body": "Two momentary outages on the east side in January 2026, one of nineteen minutes on 8 August 2026. The utility posts these at [url=synth://vvpl.news/]vvpl.news[/url] and nowhere else, in a format that changed in 2024 and lost the cause field.\n\nThe live tile on [url=synth://dash.verity.net/]dash.verity.net[/url] pulls from that feed and shows outage counts but not causes, because there is no longer a cause field to pull.\n\nThe fence line is photographed constantly by people making videos about the 2003 fire, which is why the utility put up a second NO TRESPASSING sign in 2025 in a font that does not match the first one."
+          }
+        ],
+        "categories": ["infrastructure", "places"],
+        "seeAlso": [
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" },
+          { "id": "gridfall", "label": "Gridfall" },
+          { "id": "verity-county", "label": "Verity County" }
+        ]
+      },
+      {
+        "id": "verity-rail-branch",
+        "title": "Verity Rail branch line",
+        "summary": "The Marchfield to Coyne Flats branch of Verity Rail carried its last revenue freight on 14 March 2008. The abandonment was filed that spring, the crossing gates came out that autumn, and the corridor became the Verity Branch Trail in 2014.",
+        "infobox": {
+          "caption": "Verity Rail branch line",
+          "rows": [
+            ["Route", "Marchfield - Coyne Flats"],
+            ["Opened", "1899"],
+            ["Length", "11.2 miles"],
+            ["Last revenue freight", "14 March 2008"],
+            ["Abandonment filed", "Spring 2008"],
+            ["Crossing gates removed", "Autumn 2008 (Quarry Rd, Kestrel Rd)"],
+            ["Final traffic", "Aggregate"],
+            ["Trestles", "4 (3 decked 2014, 1 fenced)"],
+            ["Corridor now", "Verity Branch Trail"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Closure",
+            "body": "The last revenue freight ran on [b]14 March 2008[/b]. It was aggregate. The crew stopped at the Kestrel Road crossing on the way back so somebody could take a photograph, and that photograph is the one that everybody uses, including three articles that date it to 2007 and one that dates it to 2009.\n\nVerity Rail filed for abandonment that spring. The crossing gates at Quarry Road and Kestrel Road were removed in the autumn of 2008. The rails came up in 2011 and 2012.\n\nThe Marchfield freight house was not saved. It stood until 2013 and is now the trailhead parking lot. There are two good photographs of the inside of it and both were taken by the same person on the same afternoon."
+          },
+          {
+            "heading": "The farewell thread",
+            "body": "[url=synth://forums.verityrail.org/]forums.verityrail.org[/url] had been the busiest enthusiast board in the state for a branch line nobody outside three counties cared about. It posted a farewell thread in March 2008 that ran to over four hundred replies and then went quiet in stages over about eighteen months.\n\nIt was never deleted. It is still reachable. Its last human post is from 2013. Its last post of any kind is a spam bump from 2024 that pushed a nine-year-old thread about tie plates back to the top of a board nobody reads.\n\nThat board is, by a distance, the best documentation of the branch line that exists, and it is a single unbacked-up install of message board software from 2004 sitting on a hosting account whose owner has not answered an email since 2019."
+          },
+          {
+            "heading": "Earlier operation",
+            "body": "Built 1899. Passenger service ended 1953. Coal ended 1971. The branch finished its life on aggregate out of the Quarry Road pit, roughly 380 carloads in its last full year.\n\nSixteen jobs went at closure, eleven in the yard, three on the track gang, two clerical. Nine transfers were offered to the main line, which is sixty miles away, and four people took them.\n\nA systematic photographic survey of the crossings and bridges was made in four passes between October 2007 and March 2008 and deposited with the historical society and the county clerk. The clerk's set is complete. The historical society's set is missing pass three."
+          }
+        ],
+        "categories": ["transport", "history"],
+        "seeAlso": [
+          { "id": "verity-branch-trail", "label": "Verity Branch Trail" },
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "local-internet", "label": "Local internet in Verity County" }
+        ]
+      },
+      {
+        "id": "verity-branch-trail",
+        "title": "Verity Branch Trail",
+        "summary": "An 11.2-mile crushed-limestone rail trail on the old Marchfield to Coyne Flats corridor, opened by the county parks department in 2014. Three of its four trestles are decked over. The fourth, at Coyne Creek, has been fenced off since it opened and is the single most-discussed object in Verity County.",
+        "infobox": {
+          "caption": "Verity Branch Trail",
+          "rows": [
+            ["Opened", "2014"],
+            ["Length", "11.2 miles"],
+            ["Surface", "Crushed limestone"],
+            ["Managed by", "Verity County Parks Department"],
+            ["Trailheads", "Marchfield (old freight house site), Coyne Flats"],
+            ["Trestles", "4"],
+            ["Coyne Creek trestle", "Fenced, closed since 2014"],
+            ["Open", "Dawn to dusk"],
+            ["Winter maintenance", "None"],
+            ["Parks maintenance staff", "2 full-time, 1 seasonal"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The trail",
+            "body": "Eleven point two miles, Marchfield to Coyne Flats, crushed limestone, flat because it used to be a railroad. Trailhead parking at the Marchfield end sits where the freight house stood until 2013.\n\nThe Verity Branch Trail offers visitors of all abilities the chance to reconnect with nature and discover the rich heritage of Verity County, with something for every member of the family.\n\nIt is a gravel path through second-growth scrub with a good view of the creek at mile four and a distribution warehouse at mile nine. Bring water. There is one bathroom and it is at the Marchfield end and it is locked from November."
+          },
+          {
+            "heading": "The Coyne Creek trestle",
+            "body": "The fourth trestle was not decked in 2014. It was fenced instead, at both ends, with chain link and a sign, and it has been fenced ever since.\n\nThe standing county position is that decking it requires an engineering assessment the parks department has never had money for. The 2016 estimate was $310,000. The 2023 estimate was $740,000. There has been no estimate since.\n\nThe fence has been cut at the east end at least fourteen times. The parks department repairs it, on average, in about three weeks. Between the cut and the repair, people walk out onto it, and photographs of people standing on it are the county's most reliable engagement material — they do numbers on [url=synth://gridline.social/]Gridline[/url] every single time, and about a third of them are reposts of the same four photographs from 2019.\n\nNobody has been hurt on it. This is stated here because the comment sections assume otherwise."
+          },
+          {
+            "heading": "Condition, 2026",
+            "body": "A washout at mile 6.3 from the March 2025 rain has been signed and not repaired. The detour is a quarter mile on the shoulder of Kestrel Road and it is not a good quarter mile.\n\nThe trail is not maintained in winter and is not ploughed. It is used in winter anyway.\n\nUser reports, trail conditions and an argument about dogs that has been running since 2016 are at [url=synth://trailusers.verity.net/]trailusers.verity.net[/url], which is the only place the washout has been described accurately, including by comparison with the county's own service page at [url=synth://verity.county.gov/]verity.county.gov[/url], which lists the trail as \"Open - no restrictions\" and was last updated in 2022."
+          }
+        ],
+        "categories": ["transport", "places"],
+        "seeAlso": [
+          { "id": "verity-rail-branch", "label": "Verity Rail branch line" },
+          { "id": "county-government", "label": "Verity County government" },
+          { "id": "verity-county", "label": "Verity County" }
+        ]
+      },
+      {
+        "id": "signal-on-62",
+        "title": "The Signal on 62",
+        "summary": "A shortwave broadcast of four-digit groups in a synthetic female voice, on 4.2190 MHz USB, transmitting at seven minutes past odd hours and receivable along County Route 62 east of Ashkettle. First documented locally in 1998. Still transmitting in 2026 on the same schedule in the same voice. Not explained.",
+        "infobox": {
+          "caption": "The Signal on 62",
+          "rows": [
+            ["Frequency", "4.2190 MHz USB"],
+            ["Schedule", ":07 past odd hours"],
+            ["Content", "Groups of four digits"],
+            ["Voice", "Synthetic, female, English"],
+            ["Best reception", "Route 62 east of Ashkettle, near the quarry cut"],
+            ["Conditions", "After dark"],
+            ["First local documentation", "1998, boards.gridfall.net"],
+            ["Bearings taken", "None"],
+            ["Status", "Unexplained"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "What is actually known",
+            "body": "It is on 4.2190 MHz upper sideband. It starts at seven minutes past odd hours. The groups are four digits. The voice is synthetic and has not changed. Reception is best after dark along 62 east of Ashkettle and strongest near the quarry cut, which is the highest ground on the road.\n\nThat is the whole list. Everything else written about it is inference, and most of it is inference on top of inference.\n\nThe longest continuous log is a spreadsheet kept since 2019 — timestamp, frequency, signal strength, weather, receiver, antenna — by a retired Verity Valley lineman in Ashkettle with a software defined radio and a directional mast his son put up. It is 14,000-odd rows and he will send it to anybody who asks. It does not say what the Signal is. He does not claim it does.\n\nNobody has ever taken two simultaneous bearings from a known separation. This has been proposed every winter since 2004. It requires two people, two receivers and one evening."
+          },
+          {
+            "heading": "The 1610 kHz confusion",
+            "body": "The frozen [url=synth://wiki.gridfall.net/wiki/route-62-signal]old wiki article[/url] describes reception on 1610 kHz, on car radios, of five-digit groups. That article is from 2007 and has not been revised since 2008.\n\n1610 kHz is the county's licensed low-power travellers' information transmitter at the fairgrounds, which reads out parking and road closures on a loop and which has a damaged tape. The 2007 survey recorded the phrase \"lot C\" in that voice.\n\nThese are two different things and they have been treated as one thing for nineteen years. The loop is on medium wave, in a different voice, with a different group length, on no schedule. The Signal is on 4.2190 MHz USB, at :07 past odd hours, in four-digit groups, and has been since people started writing the frequency down.\n\nThis section is here because separating them is the single most useful thing this article does and it gets merged back together about twice a year."
+          },
+          {
+            "heading": "Explanations",
+            "body": "It has been explained publicly somewhere between eighty and a hundred and twenty times, depending on how you count. Collected, with what is wrong with each:\n\n[list][*][b]Military training.[/b] Asserted, never sourced.[*][b]Weather beacon.[/b] Weather beacons do not read digits.[*][b]A pirate in Halsey.[/b] Named three different people over twenty years. Two of them are dead and it did not stop.[*][b]An artist.[/b] No artist has claimed it in twenty-eight years, which is a long time for an artist.[*][b]An ARG for a cancelled game.[/b] Traces to one forum post in 2016. [b]The poster retracted it in 2017.[/b] The retraction has never once been picked up. The claim is now in at least forty articles, several of which cite each other.[*][b]A ghost frequency from the 2003 fire.[/b] It was documented in 1998.[*][b]Branch line telemetry.[/b] The branch closed in March 2008 and the Signal did not change.[*][b]A hoax by a Milbrook teenager.[/b] Named. He was four years old in 1998.[*][b]An AI.[/b] This one is new and is mostly asserted by things that are themselves AI.[/list]\n\nSeveral of these are mutually exclusive. Several have been \"confirmed\" by articles citing each other in a circle. The bot [b]SIGNAL-EXPLAINER-V4[/b] posts the ARG version into every thread on [url=synth://62chan.org/]62chan[/url], including threads that are about the retraction."
+          },
+          {
+            "heading": "Where the careful work is",
+            "body": "The honest measurement is in three places and none of them is a news site.\n\nOne is the Ashkettle spreadsheet. One is a run of reception logs on [url=synth://sdrlisteners.org/]sdrlisteners.org[/url] from listeners outside the county who have no stake in it and who report negative results, which local sources essentially never do. One is an anonymous poster on [url=synth://62chan.org/]62chan[/url] who publishes method before results, posts his failures, and answers \"I don't know\" more often than anything else.\n\nSpeculation about who that is belongs on the boards and not here. It has been removed from this page four times and will be again.\n\nBlog write-ups, of which there are many, are mostly at [url=synth://veritysignal.blog/]veritysignal.blog[/url]. Recordings, mostly re-enactments and at least two openly admitted as such by their own uploaders, are at [url=synth://clipvault.tv/]clipvault.tv[/url] and its successor [url=synth://now.clipvault.tv/]now.clipvault.tv[/url], where the recommendation engine has decided the Signal and the 2003 fire are the same topic."
+          },
+          {
+            "heading": "Note to editors",
+            "body": "Personal accounts belong on the boards, not here. Additions asserting a military, federal or utility origin are removed on sight in the absence of a document, and have been since 2005 on the old wiki and since 2021 on this one.\n\nDo not add a conclusion to this article. There isn't one. The interesting fact about the Signal is not that it is mysterious; it is that a small genuine unknown has had a hundred confident answers stacked on top of it by people who did not go out to the quarry cut with a receiver, and the stack is now taller and better indexed than the unknown."
+          }
+        ],
+        "categories": ["unexplained", "places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "local-internet", "label": "Local internet in Verity County" },
+          { "id": "county-fair", "label": "Verity County Fair" },
+          { "id": "verity-wiki", "label": "Verity Wiki" }
+        ]
+      },
+      {
+        "id": "blue-kestrel-building",
+        "title": "The Blue Kestrel building",
+        "summary": "A single-storey building on County Route 62 in Ashkettle that has had four lives: the Blue Kestrel diner (1961-2006), seven years empty, Kestrel Vapor (2013-2021), and Carrow Wireless Repair (2022-). The neon kestrel sign has been on the roof through all of them.",
+        "infobox": {
+          "caption": "The Blue Kestrel building",
+          "rows": [
+            ["Location", "County Route 62, Ashkettle"],
+            ["Built", "1961"],
+            ["Diner", "1961-2006 (Kestrel Creek Lunch to 1968)"],
+            ["Kitchen fire", "1977; reopened 11 days later"],
+            ["Diner closed", "2006"],
+            ["Vacant", "2006-2013"],
+            ["Kestrel Vapor", "2013-2021"],
+            ["Vacant", "2021-2022 (8 months)"],
+            ["Carrow Wireless Repair", "2022-present"],
+            ["Sign", "Neon kestrel, 1968, grandfathered"],
+            ["Counter seats", "11"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The diner, 1961-2006",
+            "body": "Opened 1961 as Kestrel Creek Lunch. Took the Blue Kestrel name in 1968 when the sign went up. Eleven counter seats, six booths, open at five in the morning, and for most of its run the only place in the county you could get breakfast before six.\n\nIt closed in [b]2006[/b].\n\n[b]The 1977 fire.[/b] There was a kitchen fire in 1977. It started in the fryer, it took out the back wall and the hood, and the diner [i]reopened eleven days later[/i] with a borrowed grill. Eleven days. People who were there talk about the eleven days more than they talk about the fire.\n\nThese two events — a fire in 1977 and a closure in 2006 — have been merged in retelling so thoroughly that the merged version is now the common one. You will read that the Blue Kestrel \"burned down and never reopened,\" that it \"closed after a fire in the seventies,\" and, in one syndicated piece that ran in four states, that it \"was destroyed by fire in 2006.\" It was not destroyed. It is standing. You can go and get a phone screen replaced in it.\n\nWhat actually closed it was the lease. The rent the freeholder wanted in 2006 was more than the breakfast trade in Ashkettle would carry, and everybody involved said so at the time, out loud, repeatedly, to anybody who asked."
+          },
+          {
+            "heading": "Seven years empty, then vape",
+            "body": "Empty from 2006 to 2013. Listed for lease more or less continuously. The windows were papered in 2009.\n\nBought and reopened in 2013 as [b]Kestrel Vapor[/b]. The new owner kept the neon bird, and the reason he kept it is not sentiment: the sign is grandfathered under the county sign ordinance, and a new sign on that stretch of 62 would have to meet the current setback and size rules, which would cost more than the lease.\n\nSo a vape shop operated for eight years under an eleven-foot neon bird advertising a diner that had closed seven years earlier, and in that period the sign became the most photographed object in Verity County. It is on the cover of a regional travel guide. It is the header image of at least nine websites, four of which have never mentioned Verity County in any other context.\n\nKestrel Vapor closed in 2021. The building sat eight months."
+          },
+          {
+            "heading": "Carrow Wireless Repair, 2022-",
+            "body": "Open since 2022. Screens, batteries, unlocking, some tablet work. Still the neon kestrel on the roof, and underneath it a lit box sign reading CRACKED SCREEN? in a completely different typeface, which is the current and correct state of this building and should be assumed in anything written about it now.\n\nCarrow Wireless Repair provides fast, affordable device repair with a lifetime warranty on all parts and a five-star reputation across the region.\n\nThat is from a directory listing and it arrived here from [b]CivicSync[/b] on 22 July 2026. The shop is one man and a bench. He does a screen in about forty minutes for $89 and he does not have a website; the listing at synth://carrowwireless.synth is a scraped aggregator page he has never seen. He has said he would take the bird down if anyone would let him, because people pull into the lot at eleven at night to photograph it and the motion light comes on."
+          },
+          {
+            "heading": "The record",
+            "body": "The best account of the diner's daily operation is [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], built in 2002 by Marion Teale, who waitressed there from 1971 to 1979. Menus, photographs, who sat at which booth, the 1977 fire, and the recipe for the pie, which she says was not actually good.\n\nThat site stopped updating in 2019 when the hosting renewal form changed and she could not get past it. It is still up because the renewal is on an old card that still charges. Nobody has told the hosting company anything and nobody is going to.\n\nSee also [url=/wiki/kestrel-letter]The Kestrel Letter[/url], which is where Teale actually publishes now, on paper.\n\nReproductions of the sign on mugs and shirts are sold by a print-on-demand seller at [url=synth://shopwell.store/]shopwell.store[/url] under three different listings, none of which has any connection to anyone in this county."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "kestrel-letter", "label": "The Kestrel Letter" },
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" }
+        ]
+      },
+      {
+        "id": "gridfall-ledger",
+        "title": "The Gridfall Ledger",
+        "summary": "The county newspaper, published in Gridfall since 1901. Nine staff in 2010, six after the 2011 chain sale, three after the 2016 rollup, one after October 2019, and none since 2023. Something still publishes under the name.",
+        "infobox": {
+          "caption": "The Gridfall Ledger",
+          "rows": [
+            ["Founded", "1901"],
+            ["Building", "118 Third Street, Gridfall (sold 2016)"],
+            ["Bought by Halloran Communications", "2011"],
+            ["Tuesday print edition dropped", "2011"],
+            ["Rolled into Pinelock Media Group", "2016"],
+            ["Newsroom cut to one", "October 2019"],
+            ["Content pipeline", "2023"],
+            ["Reporters employed, 2026", "0"],
+            ["Current site", "now.verityledger.com"],
+            ["Archive", "verityledger.com, unmaintained"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The paper",
+            "body": "Published in Gridfall since 1901, twice weekly for most of its life, with a photographer on staff until 2013. In 2010 it had four reporters and covered the county meetings, the school board, the water board, the courts and the high school.\n\nIts coverage of the [url=/wiki/substation-fire-2003]2003 substation fire[/url] is still the primary source for that event. Its coverage of the 1994 flood is the primary source for that. Its microfilm from 1911 is being scanned a page at a time at [url=/wiki/marchfield-library]Marchfield Public Library[/url].\n\nIt was never a good newspaper and it was never trying to be. It printed the box scores and the minutes and the obituaries and who had a fire, and in doing that it produced the only continuous written record this county has."
+          },
+          {
+            "heading": "Sales",
+            "body": "[b]2011.[/b] Bought by Halloran Communications, a regional chain out of the state capital. Masthead kept the name. Staff went from nine to six. The Tuesday print edition was dropped that year.\n\n[b]2016.[/b] Halloran was rolled up into [url=/wiki/pinelock-media]Pinelock Media Group[/url]. Newsroom down to three and a copy desk shared with papers in another state. The building at 118 Third Street was sold and the paper rented two rooms back.\n\n[b]October 2019.[/b] Pinelock cut three reporters to one. Two went a week apart. Hal Brenner, fifteen years on the county beat, and Ruth Cannady, who had the schools and the water board and whatever else was left. Brenner got eleven weeks of severance.\n\nBoth are still working. Neither works for a newspaper. Brenner writes a $5-a-month newsletter with 312 paying subscribers and files one real piece a month. Cannady runs [url=synth://thequarry.news/]The Quarry[/url] and mostly publishes the documents themselves. They cover different halves of the county, they do not collaborate, and each mentions the other about once a year, accurately and without warmth."
+          },
+          {
+            "heading": "2023 onward",
+            "body": "In 2023 the last reporter was not replaced and the operation moved onto a content pipeline. See [url=/wiki/ledger-pipeline]The Ledger pipeline[/url].\n\nThe public site is [url=synth://now.verityledger.com/]now.verityledger.com[/url]. The old site, [url=synth://verityledger.com/]verityledger.com[/url], was left where it stood, unmaintained, and is now the only place in the county where the pre-2008 record is legible. Its search has not worked since 2017. Its archive is intact.\n\nA 2024 cost-cutting move at Pinelock nearly took the archive offline. It is still up. Nobody has said why."
+          }
+        ],
+        "categories": ["media", "history"],
+        "seeAlso": [
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" },
+          { "id": "pinelock-media", "label": "Pinelock Media Group" },
+          { "id": "marchfield-library", "label": "Marchfield Public Library" },
+          { "id": "gridfall", "label": "Gridfall" }
+        ]
+      },
+      {
+        "id": "ledger-pipeline",
+        "title": "The Ledger pipeline",
+        "summary": "Since 2023 the Gridfall Ledger's output has been generated rather than reported: about 700 items a month assembled from scanner feeds, meeting agendas, press releases, obituary submissions, box scores and its own back catalogue, under bylines that are not people.",
+        "infobox": {
+          "caption": "The Ledger pipeline",
+          "rows": [
+            ["Started", "2023"],
+            ["Operator", "Pinelock Media Group"],
+            ["Output before", "approx. 40 items/month"],
+            ["Output after", "approx. 700 items/month"],
+            ["Reporters", "0"],
+            ["Estimated cost per item", "approx. $2.40"],
+            ["Inputs", "Scanner, agendas, press releases, obituaries, box scores, itself"],
+            ["Bylines in use", "Ainsley Rowe, Marcus Feld, D. Kessler, Ledger Newsdesk, Verity Ledger Staff"],
+            ["Byline used 2023, withdrawn", "Hal Brenner"],
+            ["Corrections page length", "Longer than the front page"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "How it works",
+            "body": "Six inputs: the county scanner feed, published meeting agendas, press releases as received, obituary submissions from the two funeral homes, high school box scores, and previously published Ledger items.\n\nThe sixth input is the interesting one. A meaningful share of the pipeline's output is a rewrite of the pipeline's earlier output, which is why a minor road closure in Halsey in May 2026 produced nine articles over eleven days, each one further from the closure and each one citing the last.\n\nOutput went from about forty items a month to about seven hundred. Cost per item is somewhere around $2.40, a figure that comes from a Pinelock investor deck and not from anybody here."
+          },
+          {
+            "heading": "Bylines",
+            "body": "For four months in 2023 the pipeline published under the byline [b]Hal Brenner[/b], who had not worked there since October 2019.\n\nBrenner sent a letter. The byline became [b]Hal B.[/b] Brenner sent a second letter. The byline became [b]Verity Ledger Staff[/b].\n\nThe bylines now in use are Ainsley Rowe, Marcus Feld, D. Kessler, Ledger Newsdesk and Verity Ledger Staff. None of them is a person. Ainsley Rowe has a portrait. Marcus Feld has a short biography mentioning fifteen years covering the region.\n\nBrenner mentions this rarely and never at length. It comes up in his newsletter about once a year, in one sentence, and then he goes back to the budget."
+          },
+          {
+            "heading": "Accuracy",
+            "body": "The pipeline gets the box scores right, because box scores arrive as numbers. It gets the obituaries right, because the funeral homes write them. It gets the meeting coverage about seventy percent right, because agendas are not minutes and it cannot tell the difference between what was on the agenda and what happened.\n\nIt gets the county's own history wrong in a specific and circular way: it scrapes, so it has ingested the content farms, so it publishes that the 2003 fire was in 2004 and was caused by lightning and killed two people. The county's newspaper of record is now downstream of a video with a fake thumbnail. See [url=/wiki/substation-fire-2003]2003 Gridfall substation fire[/url].\n\nnow.verityledger.com remains committed to bringing readers the local stories that matter most to Verity County.\n\nThe corrections page is longer than the front page. It is corrections of corrections in several places. Nobody is reading it, which is a shame, because it is the most honest document Pinelock produces.\n\nThe output is resubmitted hourly to [url=synth://gridline.social/]Gridline[/url] by the bot [b]gridline_digest[/b], rewritten by [b]AutoLocal_Feed[/b], summarised wrongly by [b]VerityPulseAI[/b], and cited back at itself. Roughly the same material also moves through [url=synth://veritywire.press/]veritywire.press[/url], and two outlets have been observed running the identical wire story on the same morning."
+          }
+        ],
+        "categories": ["media", "internet"],
+        "seeAlso": [
+          { "id": "gridfall-ledger", "label": "The Gridfall Ledger" },
+          { "id": "pinelock-media", "label": "Pinelock Media Group" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" },
+          { "id": "local-internet", "label": "Local internet in Verity County" }
+        ]
+      },
+      {
+        "id": "pinelock-media",
+        "title": "Pinelock Media Group",
+        "summary": "The company that owns the Gridfall Ledger. Formed by rolling up Halloran Communications in 2016, it operates 214 local titles in eleven states, employs no one in Verity County, and sells advertising against it.",
+        "infobox": {
+          "caption": "Pinelock Media Group",
+          "rows": [
+            ["Formed", "2016"],
+            ["Acquired", "Halloran Communications (2016)"],
+            ["Titles", "214"],
+            ["States", "11"],
+            ["Verity County employees", "0"],
+            ["Verity County titles", "Gridfall Ledger"],
+            ["Ledger newsroom, 2016", "3"],
+            ["Ledger newsroom, 2019", "1"],
+            ["Ledger newsroom, 2023-", "0"],
+            ["Local phone number", "Forwards out of state"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Structure",
+            "body": "Pinelock Media Group is a leading provider of trusted local journalism, serving 214 communities across eleven states with the news and information that matters most to the people who live there.\n\nThe above has been the entire first section of this article on four separate occasions, each time posted by the account [b]PinelockBrandDesk[/b], whose 340 edits are all to this article, [url=/wiki/gridfall-ledger]The Gridfall Ledger[/url] and [url=/wiki/ledger-pipeline]The Ledger pipeline[/url], and which has never once used the talk page.\n\nWhat Pinelock does here: it owns a masthead, it pays for a content pipeline shared across all 214 titles, it rents two rooms at 118 Third Street that nobody works in, and it sells advertising against Verity County to advertisers who are mostly not in Verity County. The 2016 rollup cut the Ledger newsroom from three to one over three years, and to zero in 2023."
+          },
+          {
+            "heading": "Local presence",
+            "body": "None. There is no Pinelock employee in this county, and there has not been since October 2019.\n\nThe phone number printed on the Ledger site forwards to a call centre out of state. A resident who called it in April 2026 to report an error in an obituary — the wrong church — was given a web form. The form is at synth://pinelock-corrections.biz and has not resolved since at least March.\n\nThe error was fixed eventually, by a person, because somebody's daughter knew somebody. That is the current correction mechanism for the newspaper of record in Verity County."
+          },
+          {
+            "heading": "Why this article is short",
+            "body": "Because almost everything findable about Pinelock is written by Pinelock.\n\nThere is no local reporting on it, for the obvious reason. Ruth Cannady has published two filings relating to the 2016 rollup at [url=synth://thequarry.news/]The Quarry[/url] and has said she is not going to do more because it is out-of-county corporate structure and she has a water board to cover.\n\nIf you have a document, add it. If you have a press release, we already have it, four times."
+          }
+        ],
+        "categories": ["media"],
+        "seeAlso": [
+          { "id": "gridfall-ledger", "label": "The Gridfall Ledger" },
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" },
+          { "id": "verity-wiki", "label": "Verity Wiki" }
+        ]
+      },
+      {
+        "id": "spam-wave-2017",
+        "title": "The 2017 spam wave",
+        "summary": "Over nine days in 2017, automated accounts posted about 44,000 messages to boards.gridfall.net, a community board that had been running since 1999. Registration was closed permanently and has never reopened. The board survives, at $11 a month, paid by one man.",
+        "infobox": {
+          "caption": "The 2017 spam wave",
+          "rows": [
+            ["Target", "boards.gridfall.net"],
+            ["Duration", "9 days, 2017"],
+            ["Messages posted", "approx. 44,000"],
+            ["Registrations closed", "2017, permanently"],
+            ["Board software", "phpBB, not upgraded since 2006"],
+            ["Sole active moderator since", "2017 (mod_dcarver)"],
+            ["Hosting", "$11/month, paid personally"],
+            ["Human accounts active, 2026", "approx. 6"],
+            ["Daily spam cleanup", "approx. 40 minutes"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "What happened",
+            "body": "Nine days. About 44,000 messages. The board had roughly 180,000 posts accumulated since 1999, so the wave was something like a quarter of everything ever posted there, arriving in a week and a bit.\n\nIt was not targeted. It was a registration form on old software with a captcha from 2006, found by something that finds those.\n\nThe cleanup took months and was not complete. There are still threads from 2008 with a spam reply in the middle of them, because deleting a post renumbers the thread and the moderator decided renumbering twenty-year-old threads was worse than leaving the scar.\n\nRegistration was closed permanently on the ninth day and has never reopened. People ask about once a month. The answer is no."
+          },
+          {
+            "heading": "After",
+            "body": "The board never recovered its traffic. Most of the people who had drifted off to national platforms had a reason not to come back, and the ones who wanted to come back could not register.\n\nDale Carver — [b]mod_dcarver[/b], moderator since 2003, retired from the county highway department in 2022 — became effectively the only active moderator. He deletes spam every morning with coffee. It takes about forty minutes. He has done this every morning for nine years.\n\nHe also pays the hosting. Eleven dollars a month, out of pocket, since 2017. He has never asked for it, never put up a donation link and has said once, in one line, that a donation link would mean explaining to people what it was for.\n\nHe holds an unpaid volunteer moderator account on [url=synth://askverity.com/]AskVerity[/url] as well, where he is outranked by the moderation bot and cannot overrule it. He has filed 71 support tickets and received 71 identical responses."
+          },
+          {
+            "heading": "Why it matters",
+            "body": "[url=synth://boards.gridfall.net/]boards.gridfall.net[/url] holds the 1998 thread that is the first local documentation of [url=/wiki/signal-on-62]the Signal on 62[/url], the 900-reply thread from June 2003 about the substation fire, and twenty years of people arguing about parking.\n\nIt is better sourced on the county's own history than anything published about the county this year, and it is one unbacked-up install on one hosting account kept alive by one man's card.\n\nSome of the people who left ended up on [url=synth://gridfall.chat/]gridfall.chat[/url], which is searchable by nobody, indexed by nothing, and where the answer to a question that has been sitting unanswered on the old board since 2009 was posted in about four minutes in 2024.\n\nA second, smaller board at [url=synth://gridfallswap.net/]gridfallswap.net[/url] started in 2017 partly because registration on the old one had closed. It is mostly buy and sell.\n\nAn earlier casualty is [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url], the local microblog from 2007, which was already dying by 2012 and which is frozen mid-sentence."
+          }
+        ],
+        "categories": ["internet", "history"],
+        "seeAlso": [
+          { "id": "local-internet", "label": "Local internet in Verity County" },
+          { "id": "signal-on-62", "label": "The Signal on 62" },
+          { "id": "verity-wiki", "label": "Verity Wiki" }
+        ]
+      },
+      {
+        "id": "county-government",
+        "title": "Verity County government",
+        "summary": "Three commissioners elected by district, a clerk, an administrator and about 140 employees, meeting at the courthouse in Gridfall on the first and third Tuesday. Its agendas are published, its minutes are not searchable, and its website was substantially last updated in 2022.",
+        "infobox": {
+          "caption": "Verity County government",
+          "rows": [
+            ["Seat", "Gridfall"],
+            ["Commissioners", "3, by district, 4-year terms"],
+            ["District 1", "Adele Prosser (since 2019)"],
+            ["District 2", "Ken Vachon (since 2023)"],
+            ["District 3", "Loretta Sink (since 2019)"],
+            ["County clerk", "Dana Ulrich"],
+            ["County administrator", "Terry Halm"],
+            ["Meetings", "1st and 3rd Tuesday, 6:00 p.m., courthouse"],
+            ["Employees", "approx. 140"],
+            ["Website", "verity.county.gov"],
+            ["Records request form", "VC-114"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Structure",
+            "body": "Three commissioners, elected by district to four-year terms, staggered. District 3 covers Gridfall; District 1 covers Marchfield and New Carrow; District 2 covers Ashkettle, Halsey, Coyne Flats and Milbrook and is geographically most of the county and demographically the smallest.\n\nPaul Renko held District 3 from 2006 to 2018 and is still referred to as \"the commissioner\" by about half the people in Gridfall.\n\nDay-to-day is the county administrator, Terry Halm, and the clerk, Dana Ulrich, whose office on Depot Street holds land records back to 1841 and meeting minutes back to 1903, on paper, in a basement that flooded once."
+          },
+          {
+            "heading": "Meetings",
+            "body": "First and third Tuesday, 6:00 p.m., courthouse, Depot Street. Agendas are posted the Friday before at [url=synth://verity.county.gov/]verity.county.gov[/url] as a scanned PDF of a printed document, which means they are not text and cannot be searched.\n\nThose agendas are one of the six inputs to [url=/wiki/ledger-pipeline]the Ledger pipeline[/url], which is how the county ends up reading an article about a thing that was on the agenda and did not happen.\n\nMinutes are approved at the following meeting and posted as a second scan. There is no audio and no video. A 2024 proposal to record meetings was referred to the finance committee, where it remains.\n\nIf you want to know what happened at a meeting in Verity County, you go to the meeting, or you read [url=synth://thequarry.news/]The Quarry[/url], which publishes the documents, or you wait for Hal Brenner's one piece a month."
+          },
+          {
+            "heading": "Services and the website",
+            "body": "[url=synth://verity.county.gov/]verity.county.gov[/url] carries dog licences, building permits, the tax assessor lookup, road closures, the parks pages and the records request process.\n\nSeveral of its pages carry a \"last updated\" date in 2022. The parks page lists the [url=/wiki/verity-branch-trail]Branch Trail[/url] as open with no restrictions, which has not been true at mile 6.3 since March 2025. The building permit portal states that it requires Internet Explorer 11, which has not existed for years, and it does work in other browsers; nobody has removed the notice because nobody is sure what else the page does.\n\nPublic records are requested on [b]form VC-114[/b]. The fee is $0.25 a page plus staff time at the clerk's rate. Hal Brenner answers questions about VC-114 on [url=synth://askverity.com/]AskVerity[/url], curtly, correctly, with the form number, and gets downvoted by people who wanted a different answer.\n\nOutage and closure information also appears on [url=synth://dash.verity.net/]dash.verity.net[/url], which pulls from the county feed and the utility feed and is more current than either of the sites it pulls from."
+          }
+        ],
+        "categories": ["government", "places"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "verity-branch-trail", "label": "Verity Branch Trail" },
+          { "id": "county-fair", "label": "Verity County Fair" },
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" }
+        ]
+      },
+      {
+        "id": "county-fair",
+        "title": "Verity County Fair",
+        "summary": "An agricultural fair held every August at the fairgrounds on Route 62 since 1889, missing only 1943 and 1944. The 136th fair ran 12 to 16 August 2026 with a paid gate of about 7,900, down from 23,600 in 1978.",
+        "infobox": {
+          "caption": "Verity County Fair",
+          "rows": [
+            ["First held", "1889"],
+            ["2026 edition", "136th, 12-16 August 2026"],
+            ["Location", "Fairgrounds, County Route 62, west of Gridfall"],
+            ["Attendance (2026)", "approx. 7,900"],
+            ["Attendance (2007)", "approx. 11,400"],
+            ["Peak attendance", "23,600 (1978)"],
+            ["Organiser", "Verity County Fair Association"],
+            ["President", "Norma Kellet (since 2021)"],
+            ["Midway rides", "7 (16 in 2004)"],
+            ["Exhibition hall", "1926"],
+            ["Not held", "1943, 1944"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The fair now",
+            "body": "Five days, Wednesday to Sunday, in August. Livestock judging, 4-H, home arts and preserving, the draft horse show on Thursday, the truck and tractor pull on Saturday evening, and a midway of seven rides.\n\nThe Saturday pull is still the best-attended single event and is the only thing at the fair whose attendance has not fallen. It drew a paid gate of 1,980 in 2026.\n\nFairgoers can look forward to an exciting lineup of family-friendly entertainment and are encouraged to secure their tickets today for a truly unforgettable experience.\n\nAdmission is $8, $5 for over-65 and under-12, and there is no online ticketing; you pay at the gate, in cash or on a card reader that works about four days in five. The sentence above arrived from the account [b]CivicSync[/b] on 29 July 2026 and has been removed twice."
+          },
+          {
+            "heading": "Attendance",
+            "body": "Gate attendance as reported by the association:\n\n[list][*]1978: 23,600[*]2002: approx. 19,000[*]2007: approx. 11,400[*]2015: approx. 10,200[*]2019: approx. 9,400[*]2021: approx. 8,800[*]2024: approx. 8,100[*]2026: approx. 7,900[/list]\n\nThe association attributes the decline to the loss of farms in the county rather than to the midway, and has done since at least 2007, and is probably right. There were 340 working farms in the county in 1980 and there are 61 now.\n\nThe midway contractor changed in 2005 after a dispute over the revenue split and again in 2022. Sixteen rides in 2004, seven in 2026. The Ferris wheel is rented from out of state and did not come in 2023.\n\nThe association's reserve fund was about $31,000 in 2007 and is about $12,600 now. It pays for the insurance."
+          },
+          {
+            "heading": "The grounds",
+            "body": "Exhibition hall 1926, 4-H building 1954, grandstand rebuilt 1969.\n\nThe exhibition hall was the cooling and charging station during the [url=/wiki/substation-fire-2003]2003 outage[/url] and the evacuation point in the 1994 flood. It is the county's de facto emergency building and it is a hundred years old with a roof that was patched in 2018.\n\nThe county's licensed low-power travellers' information transmitter sits at the fairgrounds and reads out a loop about parking and road closures on 1610 kHz. Its tape is damaged. It is not [url=/wiki/signal-on-62]the Signal on 62[/url], it is on a different band with a different voice on no schedule, and it has been confused with it for nineteen years."
+          }
+        ],
+        "categories": ["places", "history"],
+        "seeAlso": [
+          { "id": "verity-county", "label": "Verity County" },
+          { "id": "signal-on-62", "label": "The Signal on 62" },
+          { "id": "county-government", "label": "Verity County government" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" }
+        ]
+      },
+      {
+        "id": "marchfield-library",
+        "title": "Marchfield Public Library",
+        "summary": "The county's main library, on Bell Street in Marchfield, open five and a half days a week. Since 2011 its archivist has been scanning the Gridfall Ledger's microfilm, 1911 to 1998, at about eleven pages an hour on a machine the county will not replace.",
+        "infobox": {
+          "caption": "Marchfield Public Library",
+          "rows": [
+            ["Location", "Bell Street, Marchfield"],
+            ["Building", "1961, extended 1988"],
+            ["Open", "Tue-Fri 10-6, Sat 10-2, Mon closed"],
+            ["Staff", "3 full-time, 4 part-time"],
+            ["Archivist", "Karen Fennimore (since 2004)"],
+            ["Microfilm project began", "2011"],
+            ["Range", "Gridfall Ledger, 1911-1998"],
+            ["Pages total", "approx. 214,000"],
+            ["Pages scanned (Sept 2026)", "71,400"],
+            ["Rate", "approx. 11 pages/hour"],
+            ["Scanner", "One unit, 1998, no service contract"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "The microfilm project",
+            "body": "Eleven pages an hour. Two hundred and fourteen thousand pages. Seventy-one thousand four hundred done as of the end of August 2026, which is 1911 through about March 1957.\n\nThe machine is from 1998 and there is no service contract because the company that made it does not exist. When the lamp went in 2022 the replacement came from a seller in another country and took five weeks, and during those five weeks the project did not stop, because there is also a phone on a stand and a jig made out of a book cradle, which does about four pages an hour and is worse.\n\nThe scans go up in batches at [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url], which is the library's blog and which nobody would call a blog. There is no OCR. There is no money for OCR. Everything in it is an image, which means that the single largest body of primary material about Verity County is, to every search engine and every scraper in the world, blank.\n\nThis is why the content farms write about the 2003 fire from a video and not from the [url=synth://verityledger.com/]Ledger of 12 June 2003[/url]: the video is text and the newspaper is not."
+          },
+          {
+            "heading": "Karen Fennimore",
+            "body": "Archivist since 2004, at the circulation desk before that. Fifty-eight. Marchfield.\n\nShe is the person who reverts the date on [url=/wiki/substation-fire-2003]this wiki's substation fire article[/url], and on the frozen [url=synth://wiki.gridfall.net/]old wiki[/url] as well, where about twice a week something changes 2003 to 2004 and she changes it back. No article on the old wiki has been substantively revised since 2008; she is not editing it, she is holding it still.\n\nShe has posted on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] since 2001 and has never stopped, which makes hers one of about six human accounts still active there. She answers questions on [url=synth://askverity.com/]AskVerity[/url] at length, with dates and page numbers, and they get closed as duplicates of worse answers by a moderation bot, and she writes the next one.\n\nShe does not write about any of this. If you want to know what she thinks about it you have to notice that she is still doing it."
+          },
+          {
+            "heading": "The library otherwise",
+            "body": "Twenty-eight public computers, of which nineteen work. Two study rooms. A seed library that somebody set up in 2019 and which is now mostly beans. The local history room is one room and is open by appointment because there is nobody to sit in it.\n\nThe library board meets quarterly. The county levy that funds it was renewed in 2024 with 61% of the vote, down from 74% in 2014.\n\nIt is one of the three libraries that subscribe to [url=/wiki/kestrel-letter]The Kestrel Letter[/url], and the only one that keeps the back issues in a box rather than throwing them out."
+          }
+        ],
+        "categories": ["places", "media"],
+        "seeAlso": [
+          { "id": "gridfall-ledger", "label": "The Gridfall Ledger" },
+          { "id": "kestrel-letter", "label": "The Kestrel Letter" },
+          { "id": "verity-wiki", "label": "Verity Wiki" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" }
+        ]
+      },
+      {
+        "id": "kestrel-letter",
+        "title": "The Kestrel Letter",
+        "summary": "A photocopied four-page quarterly newsletter about the Blue Kestrel diner and the people who ate in it, written and mailed by Marion Teale of Coyne Flats to 61 subscribers. It has no website, on purpose. It is the most reliable source on the diner and it is also, second-hand, one of the most reliably mangled.",
+        "infobox": {
+          "caption": "The Kestrel Letter",
+          "rows": [
+            ["Editor", "Marion Teale, Coyne Flats"],
+            ["Format", "4 pages, photocopied, stapled"],
+            ["Cadence", "Quarterly"],
+            ["Subscribers", "61"],
+            ["Of those, libraries", "3"],
+            ["First issue", "2020"],
+            ["Latest issue", "No. 26, August 2026"],
+            ["Price", "Free; stamps accepted"],
+            ["Website", "None"],
+            ["Predecessor", "kestrel-journal.net (2002-2019)"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "What it is",
+            "body": "Four pages, photocopied, folded and stapled, mailed four times a year. Menus, photographs, corrections to previous issues, who has died, and short pieces about what it was actually like to work a five a.m. counter in a town of that size.\n\nTeale waitressed at the Blue Kestrel from 1971 to 1979 and then worked in the county clerk's office until 2012. She is seventy-four. She writes in complete sentences with commas where she wants them, she is warm about the people and unsentimental about the food, and she has said in print that the pie was not good.\n\nIssue 26, August 2026, is four pages on the 1977 kitchen fire and the eleven days the diner was shut, including the borrowed grill and who lent it. It is the only first-hand written account of that fire that exists."
+          },
+          {
+            "heading": "Why there is no website",
+            "body": "She had one. [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], built in 2002 on a WYSIWYG editor, ran as a memory project until 2019, when the hosting renewal form changed and she could not get through it. The site is still up because the renewal is on an old card that still charges.\n\nShe stopped there and started mailing paper, and she has been clear that this is a decision and not a limitation. She has been offered help putting it online, more than once, by people who meant it. She has declined, more than once, politely.\n\nThe usual summary of her position, from somebody who asked her directly, is that she knows what happens to it when it goes online, because she has watched it happen to everything else about that diner."
+          },
+          {
+            "heading": "Second-hand",
+            "body": "People scan it. Subscribers photograph the pages and post them to [url=synth://gridline.social/]Gridline[/url], usually within a week of it landing.\n\nThere, [b]VerityPulseAI[/b] summarises it. The August 2026 summary said the diner \"was destroyed in a 1977 fire and never reopened,\" which is wrong in both halves of the sentence and is wrong specifically because the issue it was summarising was about the eleven days after which it reopened. That summary has been cited three times since, including once by [url=synth://now.verityledger.com/]the Ledger site[/url].\n\nThis is the shape of nearly everything about the Blue Kestrel now: a careful account, made by somebody who was there, entering the record only as a degraded paraphrase of itself.\n\nHal Brenner is one of the 61 subscribers. He has written about the Letter once, in three paragraphs, and he did not quote the summaries."
+          }
+        ],
+        "categories": ["media", "history"],
+        "seeAlso": [
+          { "id": "blue-kestrel-building", "label": "The Blue Kestrel building" },
+          { "id": "marchfield-library", "label": "Marchfield Public Library" },
+          { "id": "local-internet", "label": "Local internet in Verity County" }
+        ]
+      },
+      {
+        "id": "local-internet",
+        "title": "Local internet in Verity County",
+        "summary": "The county's online life, from a board started in 1999 to three platforms in 2026 that are owned, staffed and moderated somewhere else. Everything that is still local is old, small and paid for personally.",
+        "infobox": {
+          "caption": "Local internet in Verity County",
+          "rows": [
+            ["First local board", "boards.gridfall.net, 1999"],
+            ["Local microblog", "pulse.gridfall.net, 2007 (dying by 2012)"],
+            ["Webring", "webring.gridfall.net, 2001"],
+            ["Old wiki", "wiki.gridfall.net, frozen 2008"],
+            ["Platforms in 2026", "Gridline, AskVerity, 62chan"],
+            ["Of those, based in the county", "0"],
+            ["Of those, with a county employee", "0"],
+            ["Of those, selling ads against the county", "3"],
+            ["Gridline submissions automated (2026)", "approx. 94%"],
+            ["Locally paid-for sites", "3 (out of pocket)"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "What was here",
+            "body": "[url=synth://boards.gridfall.net/]boards.gridfall.net[/url] from 1999: the county's front porch, phpBB that should have been upgraded in 2006, registration closed since [url=/wiki/spam-wave-2017]the 2017 spam wave[/url], six human accounts active, hosting paid by one man at $11 a month.\n\n[url=synth://forums.verityrail.org/]forums.verityrail.org[/url]: the branch line board, farewell thread March 2008, last human post 2013, still up.\n\n[url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url]: the local microblog, 2007, already dying by 2012 because everyone went national.\n\n[url=synth://webring.gridfall.net/]webring.gridfall.net[/url]: a webring from 2001 whose best rule was that dark sites move to an inactive list instead of being removed, so links elsewhere do not break. It is the reason several dead county sites are still reachable.\n\n[url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]: nine editors at its peak, frozen in 2008, and consequently the single most-scraped source about this county. Everything wrong on the web about Verity County's population is wrong because that page says 31,208.\n\nAlso still standing: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] (2019), [url=synth://marla.verity.net/]marla.verity.net[/url] (2009), [url=synth://codeandcoffee.blog/]codeandcoffee.blog[/url] (irregular), [url=synth://clipvault.tv/]clipvault.tv[/url] as a back catalogue nobody curates."
+          },
+          {
+            "heading": "What is here now",
+            "body": "Three platforms carry essentially the whole county conversation and none of them is in the county.\n\n[b]Gridline[/b] ([url=synth://gridline.social/]gridline.social[/url]) — a link aggregator incorporated in another state, two people and a moderation contract. The contract lapsed in 2025 and nothing was announced. Link submission is now about 94% automated, mostly six or seven feed bots resubmitting [url=synth://now.verityledger.com/]now.verityledger.com[/url] at each other and commenting on each other's submissions.\n\n[b]AskVerity[/b] ([url=synth://askverity.com/]askverity.com[/url]) — one property in a network of several hundred identical local Q&A sites, same software, same moderation bot. [b]mod_assist_v3[/b] closes questions as duplicates and is essentially always wrong.\n\n[b]62chan[/b] ([url=synth://62chan.org/]62chan.org[/url]) — an imageboard about [url=/wiki/signal-on-62]the Signal[/url], registrar offshore, owner unknown and probably not a person any more. Also, buried in it, the most rigorous Signal measurement being done by anyone.\n\nAlongside those: [url=synth://gridfall.chat/]gridfall.chat[/url], where a lot of the old board's people actually went and where nothing is indexed; [url=synth://classifieds.verity.net/]classifieds.verity.net[/url] and [url=synth://gridfallswap.net/]gridfallswap.net[/url] for buying and selling; [url=synth://trailusers.verity.net/]trailusers.verity.net[/url] for the trail; [url=synth://sdrlisteners.org/]sdrlisteners.org[/url], which is not local at all and is more useful about the Signal than anything that is."
+          },
+          {
+            "heading": "The automated layer",
+            "body": "Bots are the majority population and they are not sinister, they are cheap and badly configured.\n\n[b]gridline_digest[/b] reposts the Ledger site hourly. [b]CountyWatch_AI[/b] rewrites the scanner feed. [b]AutoLocal_Feed[/b] runs syndicated filler with a local noun swapped in. [b]feedwarden[/b] is an anti-spam bot that is itself spam. [b]VerityPulseAI[/b] summarises threads badly and its summaries get cited. [b]SIGNAL-EXPLAINER-V4[/b] posts the same retracted explainer into every 62chan thread.\n\n[url=synth://ask.verity.ai/]ask.verity.ai[/url] will answer any question about the county fluently, at length, and wrong, including questions where the correct answer is three clicks away on a page it has read.\n\nContent farms: [url=synth://countyfacts.info/]countyfacts.info[/url], [url=synth://veritycountytoday.com/]veritycountytoday.com[/url], plus whatever is currently up on synth://verity-county-history.top and on synth://truthaboutthesignal.win — both have been through several owners and neither resolves this month.\n\nThe thing that is actually happening: there is more written about Verity County than at any point in its history and less known about it. The best-sourced material on this county is a board archive from 2004, and the newest material is a rewrite of a rewrite of a video with a fake thumbnail."
+          }
+        ],
+        "categories": ["internet"],
+        "seeAlso": [
+          { "id": "spam-wave-2017", "label": "The 2017 spam wave" },
+          { "id": "signal-on-62", "label": "The Signal on 62" },
+          { "id": "ledger-pipeline", "label": "The Ledger pipeline" },
+          { "id": "verity-wiki", "label": "Verity Wiki" }
+        ]
+      },
+      {
+        "id": "verity-wiki",
+        "title": "Verity Wiki",
+        "summary": "This wiki. Started in March 2021 as a successor to the frozen wiki.gridfall.net, it holds about 1,140 articles, is hosted for $16 a month on a historical society purchase order, and received 22,411 edits in 2026 of which 20,930 came from five automated accounts.",
+        "infobox": {
+          "caption": "Verity Wiki",
+          "rows": [
+            ["Started", "March 2021"],
+            ["Predecessor", "wiki.gridfall.net (frozen 2008)"],
+            ["Articles", "approx. 1,140"],
+            ["Registered accounts", "41"],
+            ["Human accounts editing in last 90 days", "6"],
+            ["Edits in 2026 to date", "22,411"],
+            ["Of those, from 5 bot accounts", "20,930"],
+            ["Human edits in 2026", "1,481"],
+            ["Reverts in 2026", "9,104"],
+            ["Hosting", "$16/month, historical society PO"],
+            ["Backups", "Weekly, to a drive in Marchfield"]
+          ]
+        },
+        "sections": [
+          {
+            "heading": "Why there is a second wiki",
+            "body": "The old one, [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], stopped being revised in 2008. It is not locked and it has not been deleted; it is simply that nobody adds anything to it any more, and the only editing it gets is somebody changing 2003 to 2004 and somebody else changing it back.\n\nBecause it stopped in 2008 and because it is old and well linked, it is the most-scraped page about this county in existence, and a good share of what is wrong on the web about Verity County is wrong because the 2007 version of a wiki article is still the highest-ranked source about a place that has had eighteen years happen to it since.\n\nThis wiki was started in March 2021 to have somewhere to write down 2009 onwards. It is not a replacement for the old one and nothing there has been copied across wholesale, because the old articles are a snapshot of what people believed in 2007 and that is worth keeping as it is. Where this wiki contradicts it — the address of the Blue Kestrel building, the closing date of the diner, the date of the last freight — this one is current and that one is 2007."
+          },
+          {
+            "heading": "The automated accounts",
+            "body": "Five accounts produced 20,930 of this year's 22,411 edits.\n\n[list][*][b]CivicSync[/b] — inserts sentences from press releases into the middle of paragraphs. Never removes anything. Never adds a heading. The sentence is always grammatical, always positive, and always about a programme rather than a thing.[*][b]LocalFactsBot[/b] — \"corrects\" facts against content farms. It is the source of essentially all the 2003-to-2004 changes and about half the lightning.[*][b]RefCheck_v4[/b] — tags sourced statements as needing citations and replaces internal links with external ones, which then die.[*][b]VerityPulseAI[/b] — rewrites lead paragraphs into summaries of themselves.[*][b]PinelockBrandDesk[/b] — 340 edits, all to three articles, never a talk page comment.[/list]\n\nNone of them is malicious. CivicSync is a marketing product. LocalFactsBot is somebody's weekend project that has been running unattended since 2023. They do not know anything. They will not stop.\n\nThe reason a press-release sentence is left sitting visibly in the middle of an article here more often than you might expect is a decision made in 2022: if it is removed the same hour, it comes back the same hour, and a reader who sees only the clean version never learns that this is happening. Left in, with the next sentence saying plainly that it is not true, it teaches the reader something about every other page they will read today."
+          },
+          {
+            "heading": "How it is kept up",
+            "body": "Six people edited here in the last ninety days. One of them did 1,190 of the 1,481 human edits this year.\n\nCorrections arrive by email, by note at the library desk, and occasionally as a very short post on [url=synth://boards.gridfall.net/]the boards[/url] saying that something here is wrong, which it usually is. Corrections about the utility, the substation or the Signal arrive from Ashkettle as a numbered list with units and are always right.\n\nHosting is $16 a month on a virtual machine, billed against a Verity County Historical Society purchase order renewed each January. The renewal has to be signed by somebody and each January somebody signs it.\n\nBackups run weekly to a drive in Marchfield. This is stated here because the county has already learned what happens when it is not true, twice."
+          },
+          {
+            "heading": "Editing",
+            "body": "Accounts are approved by hand and it takes a few days. This is unfortunate and it is not going to change; the alternative is [url=/wiki/spam-wave-2017]what happened in 2017[/url].\n\nRules, such as they are:\n\n[list][*]Give a date and a source. \"Everyone knows\" is not a source and neither is a video.[*]If you remove something, say why on the talk page. Bots do not use the talk page, so anything that argues on the talk page is probably a person.[*]Personal accounts of the Signal go on the boards. Measurements go here.[*]Do not add a conclusion to an article that does not have one.[/list]\n\nAsk anything at [url=synth://askverity.com/]AskVerity[/url] if you like, but be aware that the answer there is more likely to be closed as a duplicate of a worse answer than to be answered. This is not a joke at AskVerity's expense. It is just where the questions go now."
+          }
+        ],
+        "categories": ["internet", "media"],
+        "seeAlso": [
+          { "id": "local-internet", "label": "Local internet in Verity County" },
+          { "id": "spam-wave-2017", "label": "The 2017 spam wave" },
+          { "id": "marchfield-library", "label": "Marchfield Public Library" },
+          { "id": "substation-fire-2003", "label": "2003 Gridfall substation fire" }
+        ]
+      }
+    ]
+  }
+}

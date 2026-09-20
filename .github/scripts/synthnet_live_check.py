@@ -600,6 +600,269 @@ def main():
                 elif len(page.inner_text("#synth-viewport").strip()) < 60:
                     problems.append(f"Feeds '{tab}' tab rendered almost nothing")
 
+            # --- 11. one event, many sites, getting worse -----------------
+            #
+            # Propagation is the feature where a page rendering perfectly
+            # proves the least. Five sites can each show a beautiful
+            # substation story and be five unrelated texts -- which is
+            # exactly what this network did before the story engine, and
+            # every check stayed green through it.
+            #
+            # So nothing below asserts the absence of an error. It asserts
+            # that the SAME story, carrying the same id, arrives in chain
+            # order, is intact at hop 0, and is wrong in a documented way by
+            # the end. The window is pinned to EPOCH rather than to today,
+            # so this says the same thing in CI next March as it does now.
+            page.evaluate("SYNTH.live.setNow(null)")
+            prop = page.evaluate("""() => {
+              const L = SYNTH.live, EP = L.EPOCH, SLOT = 360 * 60000;
+              const rows = SYNTH.data.list() || [];
+              const typeOf = {}, archive = new Set();
+              rows.forEach(r => {
+                const d = String(r.domain).toLowerCase();
+                typeOf[d] = r.type;
+                if (String(r.era || '').indexOf('2026') === -1) archive.add(d);
+              });
+
+              // Every distinct story in the first 400 slots (~100 days).
+              const seen = new Map();
+              for (let k = 0; k < 400; k++) {
+                L.storiesLive(EP + k * SLOT + 60000).forEach(s => {
+                  if (!seen.has(s.id)) seen.set(s.id, s);
+                });
+              }
+              const all = Array.from(seen.values());
+
+              // An archive site cannot carry this morning's story. Checked
+              // over every chain in the window, not at one instant.
+              const leaked = [];
+              all.forEach(s => s.chain.forEach(h => {
+                if (archive.has(String(h.domain).toLowerCase())) {
+                  leaked.push(s.id + ' -> ' + h.domain);
+                }
+              }));
+
+              // A story whose every hop is still the freshest thing on its
+              // own domain once the last one lands. Without that, story()
+              // rightly returns a NEWER story at some domain and the walk
+              // is not testable -- so this picks a clean one rather than
+              // asserting something that is only usually true.
+              let S = null, end = 0;
+              for (const s of all) {
+                if (s.chain.length < 5) continue;
+                const t = s.chain[s.chain.length - 1].at + 60000;
+                if (t > s.ends) continue;
+                if (s.chain.every(h => {
+                  const r = L.story(h.domain, {at: t});
+                  return r && r.storyId === s.id && r.hop === h.hop;
+                })) { S = s; end = t; break; }
+              }
+              if (!S) return {ok: false, stories: all.length, leaked: leaked};
+
+              const walk = S.chain.map(h => {
+                const r = L.story(h.domain, {at: end});
+                return {
+                  hop: r.hop, role: r.role, domain: h.domain,
+                  type: typeOf[String(h.domain).toLowerCase()] || '?',
+                  damage: r.lost.length + Object.keys(r.wrong).length,
+                  correction: !!r.correction,
+                  title: String(r.title || ''), body: String(r.body || ''),
+                  dek: String(r.dek || ''),
+                  // withStory() on an empty page: how many rows a story
+                  // adds. More than one and a feed stops being a feed.
+                  added: L.withStory([], h.domain, {at: end}).length
+                };
+              });
+
+              // At hop 0's minute, who has heard it?
+              const early = S.chain.map(h => {
+                const r = L.story(h.domain, {at: S.at + 60000});
+                return {hop: h.hop, mine: !!(r && r.storyId === S.id)};
+              });
+
+              return {
+                ok: true, stories: all.length, id: S.id, end: end,
+                subject: S.subject, where: S.where, anchor: S.anchor,
+                facts: S.facts.map(f => ({k: f.k, t: f.t})),
+                walk: walk, early: early, leaked: leaked
+              };
+            }""")
+
+            if prop["leaked"]:
+                problems.append(
+                    "the frozen archive is carrying a 2026 story: "
+                    + ", ".join(prop["leaked"][:3]))
+            else:
+                notes.append("no story ever reaches a pre-2026 site")
+
+            if not prop["ok"]:
+                problems.append(
+                    f"no clean story chain in 400 slots ({prop['stories']} "
+                    "stories) -- propagation is untestable, not necessarily "
+                    "broken")
+                walk = []
+            else:
+                walk = prop["walk"]
+
+            if walk:
+                # A story reaches many sites -- the same story, by id, which
+                # the JS above already asserted, and on enough different
+                # kinds of site that it is a network rather than a mailing.
+                doms = {w["domain"] for w in walk}
+                kinds = {w["type"] for w in walk}
+                if len(doms) < 5 or len(kinds) < 3:
+                    problems.append(
+                        f"story {prop['id']} covers {len(doms)} sites of "
+                        f"{len(kinds)} kinds; wanted 5 and 3")
+                else:
+                    notes.append(
+                        f"{prop['anchor']} travels {len(doms)} sites, "
+                        f"{len(kinds)} kinds: "
+                        + " -> ".join(w["role"] for w in walk))
+
+                # Arrives in order: at hop 0's minute only hop 0 has it.
+                heard = [e["hop"] for e in prop["early"] if e["mine"]]
+                if heard != [0]:
+                    problems.append(
+                        f"at hop 0's minute the story is already on hops "
+                        f"{heard} -- downstream sites are ahead of the wire")
+                else:
+                    notes.append("downstream sites have not heard it yet at "
+                                 "hop 0, and all have by the last hop")
+
+                # Hop 0 is the record: nothing lost, nothing wrong, and the
+                # canon text of the first two facts is on the page verbatim.
+                h0 = walk[0]
+                if h0["damage"] != 0:
+                    problems.append(
+                        f"hop 0 already has {h0['damage']} facts wrong")
+                canon = [f["t"] for f in prop["facts"][:2]]
+                said = h0["dek"] + " " + h0["body"] + " " + h0["title"]
+                off = [c for c in canon if c not in said]
+                if off:
+                    problems.append(
+                        f"hop 0 does not state the record: missing {off[0]!r}")
+                else:
+                    notes.append(f"hop 0 states the record verbatim: "
+                                 f"{canon[0]!r}")
+
+                # Monotone decay. The correction hop is deliberately clean
+                # and sits in the middle, so it is excluded rather than
+                # allowed to look like a regression.
+                run = [w for w in walk if not w["correction"]]
+                worse = [w["damage"] for w in run]
+                if any(b < a for a, b in zip(worse, worse[1:])):
+                    problems.append(
+                        f"a hop recovered a fact it should not have: {worse}")
+                elif len(run) > 3 and worse[-1] <= worse[1]:
+                    problems.append(
+                        f"the story does not decay: hop damage {worse}")
+                else:
+                    notes.append(f"facts lost per hop: {worse}")
+
+                # Wrong in the right way: a corrupted date is still a date.
+                for w in walk:
+                    fields = {"title": w["title"], "body": w["body"],
+                              "dek": w["dek"]}
+                    for name, v in fields.items():
+                        if not v.strip():
+                            problems.append(
+                                f"hop {w['hop']} on {w['domain']} has an "
+                                f"empty {name}")
+                        for bad in ("undefined", "NaN", "[object Object]"):
+                            if bad in v:
+                                problems.append(
+                                    f"hop {w['hop']} {name} shows {bad!r}")
+                        m = re.search(r"\{[a-z_]+\}", v)
+                        if m:
+                            problems.append(
+                                f"hop {w['hop']} {name} left {m.group(0)} "
+                                "unresolved")
+                    if w["added"] != 1:
+                        problems.append(
+                            f"{w['domain']} takes {w['added']} story rows, "
+                            "not 1")
+
+                # ...and it is actually on the page. Only the renderers that
+                # opted in can show it, so this checks those and says how
+                # many of the chain that was.
+                wired = {"aggregator", "news", "wire", "forum", "board",
+                         "social"}
+                page.evaluate(f"SYNTH.live.setNow({prop['end']})")
+                shown = 0
+                for w in walk:
+                    if w["type"] not in wired:
+                        continue
+                    errors.clear()
+                    page.evaluate(
+                        "SYNTH.engine.navigate('synth://%s/', {push: false})"
+                        % w["domain"])
+                    page.wait_for_timeout(300)
+                    text = page.inner_text("#synth-viewport")
+                    if prop["subject"] not in text and prop["where"] not in text:
+                        problems.append(
+                            f"{w['domain']} is hop {w['hop']} of "
+                            f"{prop['id']} and the page does not mention it")
+                        continue
+                    shown += 1
+                    # A feed that is mostly story stops being a feed.
+                    if len(text) < 400:
+                        problems.append(
+                            f"{w['domain']} rendered {len(text)} chars with "
+                            "a story on it -- the story is the page")
+                    elif len(w["title"]) + len(w["body"]) > 0.6 * len(text):
+                        problems.append(
+                            f"the story is {100 * (len(w['title']) + len(w['body'])) // len(text)}%"
+                            f" of {w['domain']}")
+                page.evaluate("SYNTH.live.setNow(null)")
+                eligible = sum(1 for w in walk if w["type"] in wired)
+                if shown < 3:
+                    problems.append(
+                        f"only {shown} of {eligible} wired hops actually "
+                        "render the story")
+                else:
+                    notes.append(f"{shown} of {eligible} hops visibly carry "
+                                 "the story on the page itself")
+
+            # The canon guard. Two facts in ANCHORS turned out not to be in
+            # WORLD.md at all when this was written, and both had already
+            # spread across a dozen sites. Numbers are the checkable part:
+            # every year, count, mileage and frequency a story asserts as
+            # TRUE has to be in the document. The prose around them is not
+            # checked and is still on the author.
+            anchors = page.evaluate("() => SYNTH.grammar.ANCHORS")
+            world = (root / "docs" / "WORLD.md").read_text(encoding="utf-8")
+            flat = world.replace(",", "")
+            unsourced, nums = [], 0
+            for a in anchors:
+                for f in a["facts"]:
+                    for tok in re.findall(r"\d[\d,]*(?:\.\d+)?", f["t"]):
+                        nums += 1
+                        if not re.search(r"(?<!\d)" + re.escape(
+                                tok.replace(",", "")) + r"(?!\d)", flat):
+                            unsourced.append(f"{a['id']}.{f['k']} = {tok}")
+            if unsourced:
+                problems.append(
+                    "anchor facts assert numbers WORLD.md does not have: "
+                    + ", ".join(unsourced))
+            else:
+                notes.append(f"all {nums} numbers in the anchor facts are in "
+                             "WORLD.md")
+
+            # And the misreports WORLD.md names by hand are the ones the
+            # decay engine actually produces, rather than three others.
+            fire = [a for a in anchors if a["id"] == "fire2003"]
+            if not fire:
+                problems.append("the substation anchor is gone")
+            else:
+                wrongs = " | ".join(
+                    w for f in fire[0]["facts"] for w in f["w"])
+                for named in ("2004", "lightning", "two deaths"):
+                    if named not in wrongs:
+                        problems.append(
+                            f"WORLD.md says the fire is misreported as "
+                            f"{named!r} and no hop can say it")
+
             browser.close()
     finally:
         srv.shutdown()

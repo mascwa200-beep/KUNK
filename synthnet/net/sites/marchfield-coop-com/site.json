@@ -1,0 +1,194 @@
+{
+  "schema": 1,
+  "domain": "marchfield-coop.com",
+  "title": "Marchfield Farmers Cooperative Association",
+  "type": "page",
+  "era": "2002-2014",
+  "skin": "plain-white",
+  "description": "The website of a member-owned grain elevator on County Road 9 east of Marchfield, last changed in October 2014.",
+  "tags": ["marchfield", "grain", "business"],
+  "links": [
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "verityledger.com",
+    "wiki.gridfall.net",
+    "kestrel-journal.net",
+    "tnorris.verity.net",
+    "webring.gridfall.net"
+  ],
+  "data": {
+    "navLabel": "Pages",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Marchfield Farmers Cooperative Association" },
+          { "kind": "marquee", "text": "*** HARVEST HOURS IN EFFECT *** SCALE 7 AM TO 9 PM OR UNTIL THE LINE IS GONE *** TELL KYLE AT THE WINDOW IF YOU ARE BRINGING 15.5 AND UP ***" },
+          { "kind": "image", "seed": "coop-office-number-gif", "imgKind": "banner",
+            "caption": "The office number. Denny Hovda made this graphic in 2002 on his own computer and took the file with him to Arizona, so it cannot be changed and it cannot be copied off the screen. Write it down." },
+          { "kind": "text", "body": "If pictures do not come up on your machine, we are in the county book under [b]Marchfield Farmers Cooperative Assn.[/b] The scale house has its own number and it is not on this website on purpose. Dean will tell you why if you have half an hour." },
+          { "kind": "text", "body": "We have bought grain at this location since [b]1937[/b] and in this concrete house since 1953. Member owned. There are three hundred forty-some members on the books and about a hundred ninety of them do business with us in a given year, which is the honest number and not the one in the annual report.\n\n[b]What we are:[/b] 186,000 bushels of upright concrete, two steel tanks from 1994 and 1998, a continuous flow dryer, a 70-foot scale, LP on two routes, and bulk fertilizer and chemical out of the Coyne Flats building.\n\n[b]What we are not:[/b] big. If you need forty thousand bushels moved in a day we are not your elevator, and we will tell you that on the telephone rather than let you find out at the pit." },
+          { "kind": "list", "ordered": false, "items": [
+            "Grain: corn, soybeans, soft red wheat. Cash, delayed price, basis contracts. No oats bid since 2010 and there is not going to be one.",
+            "Drying and commercial storage, 1 September through 1 July. Charges are on the [url=/grain]grain page[/url] and on the scale house door, and the door governs.",
+            "LP delivery on the Marchfield and Coyne Flats routes. Keep-full or will-call. Tell Corinne which, in writing, once.",
+            "Bulk and bagged fertilizer, seed, and custom application by Troy out of Coyne Flats. Custom application is $8.50 an acre and has been since 2011.",
+            "Certified scale weights for anybody who needs one, grain or not. $8 a ticket. Yes, gravel is fine. No, we will not weigh your horse trailer with the horse in it again.",
+            "Patronage and equity questions go to Corinne. Do not ask Gene. Gene will send you to Corinne."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Notes" },
+          { "kind": "text", "body": "[i]Last changed on this page: 3 October 2014.[/i]\n\nThe county closed on the freight house ground in the spring and the trail parking goes in this fall, so there will be a gravel lot and a sign board where our siding was. Gene went to the hearing and said we had no objection, which we did not, there being no rail in it since 2008. The freight house itself is not being kept. We were not asked about that and would have said the same thing.\n\nIf you walk the trail down toward Coyne Flats: the Coyne Creek trestle is fenced off, and it is fenced off for a reason. Three of them got decked and that one did not.\n\nWe do not have a Facebook. People ask. [url=synth://boards.gridfall.net/]The Gridfall boards[/url] is where the complaining about our scale line happens and we read it, which surprises some of you." },
+          { "kind": "buttons", "label": "Sites we like:", "items": [
+            { "label": "The Gridfall Boards", "seed": "btn-gridfall-boards", "domain": "boards.gridfall.net" },
+            { "label": "Verity Rail Forums", "seed": "btn-verityrail", "domain": "forums.verityrail.org" },
+            { "label": "The Verity Ledger", "seed": "btn-ledger", "domain": "verityledger.com" },
+            { "label": "The Gridfall Webring", "seed": "btn-webring", "domain": "webring.gridfall.net" },
+            { "label": "AgriSite Web Hosting - Sites For Ag", "seed": "btn-agrisite" },
+            { "label": "Verity County Farm Bureau", "seed": "btn-farm-bureau" },
+            { "label": "GrainTrak Pro 4 - Bids To Your Pager", "seed": "btn-graintrak" },
+            { "label": "This site is Y2K compliant", "seed": "btn-y2k" },
+            { "label": "Best viewed at 800 x 600", "seed": "btn-800x600" }
+          ] },
+          { "kind": "text", "body": "The counter went in in 2002 and went back to zero in 2009 when we changed hosts. Corinne has not gotten over it." },
+          { "kind": "hitcounter", "count": 18442 },
+          { "kind": "guestbook", "entries": [
+            { "author": "r.kestner", "time": "2009-10-19",
+              "body": "Line was out to the road Saturday and they still got everybody weighed before dark. Whoever thought to put the second probe on the north side, thank you." },
+            { "author": "a member", "time": "2011-02-08",
+              "body": "Patronage check came Tuesday. Two dollars and change less than last year. I am not complaining, I am reporting." },
+            { "author": "Lorene S.", "time": "2013-01-22",
+              "body": "Thank you for the flowers, and for what Gene said at the service. Wilmer would have told you this website still looks terrible." },
+            { "author": "sdr_curious", "time": "2016-07-11",
+              "body": "Long shot and I apologize for using a grain elevator's guestbook for this. Do you run anything on 4.219 MHz or near it, a radio link for the bins or the dryer? I get a carrier out of your general direction on odd hours and I am trying to rule things out before I drive any further. Not accusing anybody of anything." },
+            { "author": "j.vanderpool", "time": "2019-04-02",
+              "body": "Drove past and saw the flag down. Gene weighed my first load of beans in 1979 and told me my moisture was too high, which it was. Sorry to the family. He is still listed on your people page and I would leave him there." },
+            { "author": "BIN PARTS DIRECT", "time": "2021-08-30",
+              "body": "GRAIN BIN PARTS SHIPPED SAME DAY!! augers sweeps unload tubes FAST. order at [url=synth://binparts-direct.top/]binparts-direct.top[/url] use code HARVEST for 12% OFF!!!" },
+            { "author": "Aurelia", "time": "2024-05-14",
+              "body": "Hello Marchfield Farmers Cooperative Association team, I was reviewing your website and noticed several opportunities where your local search presence could be significantly improved for the agricultural sector in your community. Our team helps businesses like yours connect with more residents. Would you be open to a brief conversation this week? [url=synth://localreach-growth.biz/]localreach-growth.biz[/url]" }
+          ] }
+        ]
+      },
+      {
+        "id": "grain",
+        "name": "Grain",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Grain, drying and storage" },
+          { "kind": "text", "body": "Bids change every morning at 9:30 and are read over the counter, over the telephone, and on the noon farm report out of Gridfall at 12:40." },
+          { "kind": "table",
+            "head": ["", "Cash bid", "Basis", "Delivery"],
+            "rows": [
+              ["Corn, new crop", "$3.21", "-0.34 Dec", "now through 30 November"],
+              ["Corn, old crop", "$3.34", "-0.21 Sep", "closed"],
+              ["Soybeans", "$9.06", "-0.62 Nov", "now"],
+              ["Soft red wheat", "$4.38", "-0.45 Dec", "contract only"],
+              ["Oats", "no bid", "--", "--"]
+            ] },
+          { "kind": "text", "body": "Posted Friday 3 October 2014, 9:40 a.m." },
+          { "kind": "heading", "level": 2, "text": "Charges" },
+          { "kind": "list", "ordered": false, "items": [
+            "Drying, corn: 4.5 cents per point per bushel above 15.0%.",
+            "Shrink: 1.4% per point. This is the number people argue about and it is the same number every elevator in three counties uses.",
+            "Commercial storage: 17 cents a bushel to 1 March, then 3.5 cents a month.",
+            "Handling in and out: 9 cents.",
+            "Dockage over 2%: discounted on the posted schedule taped to the scale house door. [b]That schedule governs, not this page.[/b] This page is a website."
+          ] },
+          { "kind": "text", "body": "Delayed price is 4 cents a bushel service charge and it runs out 1 July, and on 1 July it prices at whatever that morning is, which some of you have learned the hard way and one of you has learned twice.\n\nFreight to the river terminal is brokered through Kroon Trucking in Coyne Flats, and their page is [url=synth://kroontrucking.synth/]here[/url]. We do not mark the freight up. We do not make anything on it either." },
+          { "kind": "image", "seed": "marchfield-elevator-1953", "imgKind": "photo",
+            "caption": "The concrete house, put up in 1953 by Gerhardt & Sons out of the state capital. Fourteen tanks. The manlift has been out of service since 1998 and you are not going up in it." },
+          { "kind": "heading", "level": 2, "text": "The scale" },
+          { "kind": "text", "body": "70-foot pitless, installed 1996, county weighmaster certificate [b]No. 44-118[/b], tested by the state every March and the certificate is on the office wall where you can read it.\n\nIf you think the scale is wrong, say so at the window and Corinne will weigh you empty twice and put both tickets in your hand. We would rather do that than have you tell it at the elevator in Halsey.\n\nBenchmark on the scale pad was run by Tom Norris in 1988. His page is at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url] and if your bin pad is settling he is the man who can tell you why, or could." }
+        ]
+      },
+      {
+        "id": "news",
+        "name": "News",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "News" },
+          { "kind": "text", "body": "Newest at the top. Corinne types these up when there is something to say." },
+          { "kind": "heading", "level": 3, "text": "Fall hours, and the new probe -- 24 September 2013" },
+          { "kind": "text", "body": "Scale goes on harvest hours Monday. 7 a.m. to 9 p.m. or until the line is gone, whichever comes first, and Saturdays as long as there are trucks.\n\nThe north probe is new this year and it is faster, which means the line moves and it also means you have less time to find your ticket. Have your ticket.\n\nIf you are bringing 15.5 and up, tell Kyle at the window when you pull on so he can stage you for the dryer instead of dumping you into the wet leg behind four dry loads. He cannot fix it after you have dumped.\n\nGene wants the first wagon through the scale at seven. Gene has wanted this since 1997." },
+          { "kind": "heading", "level": 3, "text": "Patronage -- 5 February 2013" },
+          { "kind": "text", "body": "Checks went in the mail Tuesday 5 February. The board revolved the 2001 equity, which is the twelve-year cycle same as always.\n\nIf your address changed and you did not tell us, your check is in Halsey with somebody who has your old mailbox. This happens every single year." },
+          { "kind": "heading", "level": 3, "text": "Wilmer Stroh, 1944-2012 -- 22 January 2013" },
+          { "kind": "text", "body": "Wilmer merchandised grain for this cooperative for forty-one years, on a telephone and a legal pad, and he was better at it than people with three screens.\n\nHe died at County General on the eighteenth of November. Service was at Trinity in Marchfield. Memorials to the Marchfield FFA, which was his idea and not ours.\n\nHe would want it recorded here that his basis beat the river's on the sixth of August, and that he told everybody about it for four months." },
+          { "kind": "heading", "level": 3, "text": "LP route change -- 14 October 2011" },
+          { "kind": "text", "body": "We are dropping the Halsey end of the propane route after this winter. Marchfield and Coyne Flats keep theirs and nothing changes for those of you on them.\n\nIf you are north of the Halsey line, we are sorry, and we would rather say it plainly than let you find out in January. It was about two hundred gallons a year and four hours of driving and the arithmetic stopped working two winters ago." },
+          { "kind": "heading", "level": 3, "text": "Annual meeting -- 10 March 2009" },
+          { "kind": "text", "body": "Marchfield fire hall, ham and scalloped potatoes, 6 p.m., meeting at 7.\n\nSixty-one members voted, which is eleven more than last year, and the bylaw amendment on director terms passed 44 to 17. Three-year terms, staggered, two-term limit, effective with the 2010 election.\n\nThe Ledger printed the notice on the wrong page again and we thank them for printing it at all: [url=synth://verityledger.com/]verityledger.com[/url]." },
+          { "kind": "heading", "level": 3, "text": "The last car went out Friday -- 17 March 2008" },
+          { "kind": "text", "body": "Verity Rail pulled the last loads off the Marchfield siding on [b]Friday the fourteenth of March[/b]. Three covered hoppers of corn, billed to the river. That is the end of rail at this elevator after ninety-seven years.\n\nWhat it means for you, said plainly: we take the same bushels, the freight line on your settlement gets worse, and there is nothing either of us can do about it. We are all trucks now.\n\nThe gates at Kestrel Road and Quarry Road come out this fall, we are told. The rail people have better pictures of our siding than we do, and they have been taking them for thirty years: [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]." },
+          { "kind": "heading", "level": 3, "text": "The Blue Kestrel closed Saturday -- 27 November 2006" },
+          { "kind": "text", "body": "Nine of us drove out to Route 62 on the last Saturday and there was nowhere to sit.\n\nSomebody at the counter was telling it that the place burned down in the seventies and was never the same after. That is half right and the wrong half. The fryer went up in 1977 and they were open again eleven days later. What closed it was this year and nothing more interesting than this year.\n\nMarion Teale has the photographs and the menus and who sat where, at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], and she has more of it right than anybody.\n\nThere is now no place to eat between here and Coyne Flats. Bring a lunch during harvest. We are not running a sandwich operation out of the office, Kyle." },
+          { "kind": "heading", "level": 3, "text": "No power here Wednesday, Thursday or most of Friday -- 13 June 2003" },
+          { "kind": "text", "body": "The substation at Depot and Quarry Road burned before five o'clock Wednesday morning and we were dark from about 4:55 until Friday afternoon.\n\nThe office ran on the generator, which runs the lights and the adding machine and nothing else. No scale. No leg. No pumps, in the middle of side-dress.\n\nSo nobody got a ticket Wednesday or Thursday. If you hauled those two days, Corinne wrote your name and your own best guess on a legal pad and we settled it the following week against the Coyne Flats scale. Six of you were owed money and two of you owed us and every one of you was decent about it, which we will remember.\n\nVerity Valley had us carried on the tie line by Friday afternoon. Nobody has told anybody what started it.\n\n[i]Added 2 December 2003.[/i] The state commission put out two pages last month. The cause is given as [b]insulation degradation consistent with age[/b]. That is the whole of it. There is a proper write-up at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url].\n\n[i]Added September 2013.[/i] We get asked about this maybe twice a year now, mostly by people who are not from here and who have it off some website. For the record, from somebody who was standing in the dark: it was [b]June[/b]. It was not lightning. Two of the Gridfall volunteers went to County General for smoke and came home the same afternoon. [b]Nobody died.[/b]" }
+        ]
+      },
+      {
+        "id": "people",
+        "name": "Our People",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Our people" },
+          { "kind": "text", "body": "Gone through last in March 2014. If you call and ask for somebody by name you will get them, or you will get Corinne, and Corinne is usually the right answer anyway." },
+          { "kind": "table",
+            "head": ["Name", "What they do", "Here since"],
+            "rows": [
+              ["Gene Ostrander", "General manager. Grain contracts, the board, anything anybody is angry about.", "1981, manager since 1997"],
+              ["Corinne Lubbers", "Office. Scale tickets, settlements, patronage, equity, LP accounts.", "1994"],
+              ["Dean Wendt", "Coyne Flats location. Fertilizer, chemical, the old warehouse.", "1988"],
+              ["Troy Bergendahl", "Agronomy and custom application. Licensed applicator, cert. 3-A and 4.", "2004"],
+              ["Marlys Hovda", "Bookkeeping, Tuesdays and Thursdays.", "1999"],
+              ["Kyle Ostrander", "Scale house, dryer, whatever else. Seasonal, and Gene's nephew, and both of those are relevant.", "2011"],
+              ["Wilmer Stroh", "Grain merchandising, 1971 to 2012.", "--"]
+            ] },
+          { "kind": "text", "body": "Wilmer's line is left on the list on purpose. He answered that telephone for forty-one years and a good many of you dialed it looking for him and not for a bid.\n\nThere is a plaque by the window. It is not a very good plaque. He would have said so." },
+          { "kind": "image", "seed": "coop-crew-2006", "imgKind": "photo",
+            "caption": "The crew, fall 2006, in front of the scale house. Wilmer is the one not looking at the camera. Dean is the one holding the probe like it is a rifle, which is a thing we have asked him not to do." },
+          { "kind": "heading", "level": 2, "text": "The board" },
+          { "kind": "text", "body": "Seven directors, three-year staggered terms, two-term limit since the 2009 bylaw amendment. Meets the [b]second Tuesday[/b] at 7 in the office. Members may attend and about one a year does.\n\nCurrent president is Arlen Prill (Marchfield), vice president Dorothy Wenzel (Coyne Flats), secretary-treasurer is Corinne in practice and a director on paper, which is how every co-op in this state does it and how none of them will admit to doing it.\n\nIf you want to run, the petition is twenty-five member signatures to Corinne by 15 January. It is form [b]C-9[/b] and it is one page and nobody has filed one since 2011." }
+        ]
+      },
+      {
+        "id": "hours",
+        "name": "Hours & Directions",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Hours, and how to find us" },
+          { "kind": "table",
+            "head": ["", "Office", "Scale"],
+            "rows": [
+              ["Monday to Friday", "7:30 - 4:30", "7:00 - 5:00"],
+              ["Saturday", "7:30 - 11:00", "7:00 - 12:00"],
+              ["Sunday", "closed", "closed"],
+              ["Harvest, 15 Sept to 15 Nov", "7:00 - 6:00", "7:00 - 9:00, or until the line is gone"],
+              ["Thanksgiving, Christmas, New Year", "closed", "closed"],
+              ["Annual meeting night, March", "closed at 3:00", "closed at 3:00"]
+            ] },
+          { "kind": "text", "body": "We are on [b]County Road 9[/b], a mile and a half east of Marchfield, north side. You can see the leg from town and you can see it from the four-way at Ostrander Road, and if you cannot see it you have turned somewhere you did not mean to.\n\nComing up from Coyne Flats: the crossing at Kestrel Road has had no gates and no rail in it since 2008. It is a hump now. You will still take it too fast. Everybody does.\n\nTruck entrance is the second drive, not the first. The first drive is the office and it is not built for a tandem and we have the mailbox to prove it." },
+          { "kind": "heading", "level": 2, "text": "What to bring" },
+          { "kind": "list", "ordered": true, "items": [
+            "Your account number, or a name we can spell.",
+            "Your split, if you are on shares, in writing, before you dump. Not after. We have never once had that conversation go well after.",
+            "Your own tarp strap. We have three and they are all somebody's.",
+            "Patience between about 4 and 6 in the last week of October."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Telephone and mail" },
+          { "kind": "text", "body": "The office number is in the picture at the top of the [url=/]front page[/url]. It is also in the county book. We know a picture is a nuisance and we have not been able to change it since Denny moved.\n\nMail goes to the co-op, County Road 9, Marchfield. That is enough address. It has been enough address since 1937.\n\nWe do not do email for contracts. If it is money, it is on paper with a signature, and that is not us being old, that is the state grain dealer license and form [b]GD-114[/b] saying so." },
+          { "kind": "heading", "level": 2, "text": "Other places" },
+          { "kind": "table",
+            "head": ["Site", "What it is"],
+            "rows": [
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The county paper. Prints our annual meeting notice, usually on the wrong page."],
+              ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "Where the complaining about our scale line happens. We read it. We do not post."],
+              ["[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]", "The branch line people. Better pictures of our siding than we have."],
+              ["[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]", "Marion Teale's pages about the diner on 62."],
+              ["[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "Has the 2003 substation fire written up properly, with the commission language in it."],
+              ["[url=synth://tnorris.verity.net/]Thomas Norris[/url]", "Ran the benchmark on our scale pad in 1988. Also the best account of the 1994 flood there is."],
+              ["[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]", "Corinne signed us up in 2003 and we have never been sure what it does."]
+            ] },
+          { "kind": "text", "body": "[i]This site was built by Denny Hovda in 2002 and has been changed by Corinne with a program he left behind. The program does not run on the new machine in the office. We are going to get somebody in about it.[/i]" }
+        ]
+      }
+    ]
+  }
+}

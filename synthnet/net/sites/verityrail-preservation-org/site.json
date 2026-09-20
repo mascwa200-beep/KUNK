@@ -1,0 +1,486 @@
+{
+  "schema": 1,
+  "domain": "verityrail-preservation.org",
+  "title": "Verity Rail Preservation Society",
+  "type": "page",
+  "era": "2003",
+  "skin": "tripod-tile",
+  "description": "The society that keeps the paper, the caboose and the freight house fund for the Marchfield and Coyne Flats branch line, last updated September 2009.",
+  "tags": ["verity", "rail", "marchfield", "preservation", "archive"],
+  "links": [
+    "forums.verityrail.org",
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "webring.gridfall.net",
+    "clipvault.tv",
+    "tnorris.verity.net",
+    "kestrel-journal.net"
+  ],
+  "data": {
+    "navLabel": "SOCIETY PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "VERITY RAIL PRESERVATION SOCIETY -- MEETINGS 2ND TUESDAY 7PM MARCHFIELD LIBRARY ROOM B -- DUES $15 -- CABOOSE 4412 OPEN HOUSE MAY AND SEPTEMBER -- NO MEETING IN JANUARY OR AUGUST"
+          },
+          {
+            "kind": "image",
+            "seed": "vrps-freighthouse-banner",
+            "imgKind": "banner",
+            "caption": "The Marchfield freight house in 1988, before the dock was taken off. Photograph by Merle Pitts. Scanned at 200 dpi, which is as good as the machine goes."
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Verity Rail Preservation Society"
+          },
+          {
+            "kind": "text",
+            "body": "Started in November 1997 by nine people in the back room of the Marchfield VFW, after [url=synth://verityledger.com/]the Ledger[/url] ran three paragraphs saying Verity Rail had applied to take the Coyne Flats branch out of service. It did not happen that year. It happened in 2008.\n\nWe are a membership organisation. Dues are [b]$15 a year[/b], $20 for a household. There is no life membership because we tried that in 1999 and it turns out people live a long time.\n\nWhat we do, in order of how much time it takes: we keep the paper, we keep the caboose, we sit through county meetings, and we argue about the name of the line. It is the [b]Marchfield and Coyne Flats branch[/b] on every employee timetable we own. Half the membership calls it the Cutler branch because of the cement plant. One is right on paper and the other is what people say, and the minutes use both, because A. Pitts writes down what was said."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we have"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "VR 4412, bay-window caboose, International Car Company, built 1966, retired by Verity Rail in 1994, donated to the Society in June 2002. It sits on eighty feet of rail beside the Marchfield freight house. It does not leave.",
+              "A Fairmont M19 motorcar, no engine, from the estate of Lyle Ganz, 2004. The engine is in a crate. The crate is in Roy's barn.",
+              "About nine linear feet of paper: timetables, valuation maps, train orders, a conductor's book, and four filing drawers of photographs nobody has counted. See [url=/archive]the archive page[/url].",
+              "The Quarry Road crossing signal head, west lens broken, off the contractor's pile on 3 November 2008 with permission, which we have in writing, which we have been asked for twice.",
+              "A key to the freight house, which the county says is not a key to the freight house."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Meetings"
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["WHEN", "Second Tuesday of the month, 7:00 p.m. Doors at 6:30 because Bev brings the urn and it takes that long."],
+              ["WHERE", "Community Room B, Marchfield Public Library, 208 Wessel Street. After six o'clock the front is locked, use the side door by the book drop."],
+              ["NO MEETING", "January and August. January is the weather. August is the fair."],
+              ["DUES", "$15 single, $20 household, payable at the February meeting or by mail. Cheques to Verity Rail Preservation Society, not to Bev, she cannot deposit those."],
+              ["NEWSLETTER", "The Branch Line Record. Four pages, six times a year, photocopied at the library at four cents a page."],
+              ["VISITORS", "Always. You do not have to join to come. You do have to sign the sheet, which is fire code and not us being officious."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Officers, elected 2007, term to 2010"
+          },
+          {
+            "kind": "table",
+            "head": ["OFFICE", "WHO", "SINCE"],
+            "rows": [
+              ["President", "Roy Tibbets, Marchfield", "1997"],
+              ["Vice President", "Dorothy Kilmartin, Coyne Flats", "2001"],
+              ["Secretary", "Arlen Pitts, Marchfield", "1997"],
+              ["Treasurer", "Bev Stanek, Halsey", "2004"],
+              ["Archivist", "Dorothy Kilmartin (also)", "2005"],
+              ["Webmaster", "Kyle Stanek", "2003, when he was fifteen"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Two things people write to us about that are not about trains"
+          },
+          {
+            "kind": "text",
+            "body": "[b]The substation fire.[/b] We were not there, we have no photographs of it, and we are not the fire department. We do keep the state commission's summary, because we got tired of telling people we did not have it. It is [url=/archive]A-016[/url], two pages, November 2003, and it gives the cause as insulation degradation consistent with age. Several people who have written to us were certain it was lightning. The report does not say lightning. Nobody died. Two Gridfall volunteers were treated at County General and went home the same afternoon. [url=synth://wiki.gridfall.net/]The wiki[/url] has it right as well, if you would rather read it from somebody who was closer to it.\n\n[b]The radio business out on 62.[/b] One of these arrives about every eight months and it is always the same question: was it branch line telemetry. The branch used 160.590 for road communication, which is AAR channel 30, and that is VHF. What people are hearing is down at 4.219 and is not a railroad band, was not in 1969, and was not in 2008. Past that we do not know what it is and we are not the people to ask. [url=synth://boards.gridfall.net/]The Gridfall boards[/url] have been at it since 1998 and have got no further than we have."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Elsewhere:[/b] [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] is the enthusiast board and is where the operating talk happens; we are a society with a filing cabinet and they are four hundred people who know what every train did. Tom Norris surveyed a good deal of this right of way for the county and his page is [url=synth://tnorris.verity.net/]here[/url]. Somebody has put tape of the last run up on [url=synth://clipvault.tv/]ClipVault[/url].\n\nApplied to [url=synth://webring.gridfall.net/]the Gridfall Webring[/url] in August 2009. No answer yet. Kyle says the navigation code has to be on a page you can walk to from the front, and it is now, at the bottom of this one. Mrs. Vance, it is now."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "G. Ruddock, Halsey",
+                "time": "04/22/2004",
+                "body": "Came to the open house. The caboose stove works. I did not expect the caboose stove to work."
+              },
+              {
+                "author": "kestrelbird",
+                "time": "09/17/2006",
+                "body": "Marion sent me over. If anybody has a photograph of the spur that went behind Ellery Street I would like to see it. There is nothing about it on my side of things. [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]"
+              },
+              {
+                "author": "A. Pitts",
+                "time": "09/20/2006",
+                "body": "There is no spur behind Ellery Street and never was. The team track was at the foot of Wessel. I can show you on the 1918 valuation map, sheet 7. Come to a meeting."
+              },
+              {
+                "author": "railfan_dw",
+                "time": "03/16/2008",
+                "body": "Was out at Quarry Road Friday with about forty other people. Sorry about your tripod."
+              },
+              {
+                "author": "M. Ferro",
+                "time": "03/17/2008",
+                "body": "It was my tripod and I am over it."
+              },
+              {
+                "author": "-- nothing --",
+                "time": "11/02/2010",
+                "body": "[removed]"
+              },
+              {
+                "author": "j.hollick",
+                "time": "06/14/2011",
+                "body": "Drove out to Marchfield Saturday to see 4412 and there is chain link across the whole end of the lot and a county notice stapled to a post. Is anybody still running this group? The number on this page rings and rings."
+              },
+              {
+                "author": "PREMIUM TRACKWORK SUPPLY",
+                "time": "01/09/2013",
+                "body": "hello webmaster we offer rail joint bars best price visit [url=synth://trackwork-direct.biz/]trackwork-direct[/url] bulk discount available friend"
+              }
+            ]
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Shortline and Branchline Ring",
+            "members": [
+              { "label": "Previous: Kesson Valley Chapter", "domain": "kessonvalley-nrhs.synth" },
+              { "label": "Next: Verity Rail Forums", "domain": "forums.verityrail.org" },
+              { "label": "Random", "domain": "tnorris.verity.net" },
+              { "label": "List all sites (ringmaster is in Ohio and has not answered mail since March)", "domain": "branchlinering.synth" }
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 20481
+          },
+          {
+            "kind": "text",
+            "body": "[i]Counter reset in June 2006 when the host changed. It was about 51,000 before that.[/i]\n\n[i]Last updated 22 September 2009 by K. Stanek.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "minutes",
+        "name": "Meeting Minutes",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Meeting Minutes"
+          },
+          {
+            "kind": "text",
+            "body": "Minutes as approved at the following meeting. The book is the record; this page is a convenience and A. Pitts would like that understood. Corrections to the secretary, in writing, with the date of the meeting on it.\n\nOnly some years are typed up. Kyle put the ones he was given."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 8 July 2003"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m.\nPresent: R. Tibbets (chair), A. Pitts (recording), B. Stanek, D. Kilmartin, L. Ganz, M. Ferro, and four members. Guest: W. Pennock, Ashkettle.\n\n[b]1. Call to order[/b] 7:06 p.m. Minutes of 10 June approved without discussion, nobody having any recollection of that evening.\n\n[b]2. Treasurer.[/b] Balance $2,914.18. Dues in from 61 of 88. Photocopying for the June Record, $14.72. Postage, $26.40.\n\n[b]3.[/b] Most of the hour was the fire in Gridfall on the 11th. M. Ferro said he had it from a man at the power company that it was a lightning strike. Mr. Pennock, asked directly, said the commission had not reported, that he was not going to guess, and that the sky that morning was clear at four o'clock because he was standing under it. The chair moved us along.\n\n[b]4. Freight house.[/b] No answer from Verity Rail on the lease. Third letter to go out, certified this time.\n\n[b]5. Caboose.[/b] Roof walk loose at the south end. D. Kilmartin will bring the ladder, and will not go up it.\n\nAdjourned 8:41 p.m. Next meeting 12 August -- [i]there is no August meeting. 9 September.[/i] -- A.P."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 11 November 2003"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Eleven present.\n\n[b]1.[/b] Minutes of 14 October approved.\n\n[b]2. Treasurer.[/b] Balance $3,190.55.\n\n[b]3. Newsletter.[/b] The Record went out a week late. The library copier was down and the church would only do it on a Wednesday.\n\n[b]4. Archive.[/b] D. Kilmartin brought the state commission's summary on Gridfall Substation No. 3, which came out this month and runs to two pages. It gives the cause as insulation degradation consistent with age. A. Pitts asked why a railroad society is accessioning a power company document. The chair said because six people have telephoned this society about that fire since June and we are the only outfit in the county with a filing cabinet and a listed number. Accessioned as A-016, 5 to 2.\n\n[b]5.[/b] M. Ferro asked that the minutes reflect that he still thinks it was lightning. The minutes so reflect.\n\n[b]6.[/b] The annual dinner is at the Blue Kestrel on the 6th of December, as it has been every year. Roy will telephone about the room.\n\nAdjourned 8:20 p.m."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 13 November 2007"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Nine present.\n\n[b]1.[/b] Minutes of 9 October approved with one change: the signal lens raffle took in $1,840, not $1,480.\n\n[b]2. Treasurer.[/b] General fund $1,106.22. Freight House Fund [b]$14,212.40[/b] against a goal of $35,000. That is the raffle, the September open house, and the Ganz bequest.\n\n[b]3. Fund.[/b] B. Stanek has redrawn the thermometer. K. Stanek will put the new one on the website when he is home at Thanksgiving. Forty per cent, near enough.\n\n[b]4.[/b] Verity Rail's filing is expected in the new year. D. Kilmartin has a docket number from a man at the state and will watch it.\n\n[b]5.[/b] The dinner is at the Elks again. It has been at the Elks since 2006. Two members turned up at the Kestrel building last December and stood in the car park, and the secretary is asked to put it in the Record in larger type.\n\nAdjourned 8:12 p.m."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 11 March 2008"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Nineteen present, which is the most since the flood meeting.\n\n[b]1.[/b] The last revenue freight runs Friday. Verity Rail will not give a time and the crew has been told not to.\n\n[b]2. Photographs.[/b] D. Kilmartin has Quarry Road and will shoot four rolls. Anybody wanting Kestrel Road should say so tonight so that we are not all standing in the same place. We were all standing in the same place in 1994 and the pictures prove it.\n\n[b]3. Press.[/b] H. Brenner of the Ledger telephoned wanting somebody to talk to on Friday. The chair will do it, and is asked to say the caboose number slowly.\n\n[b]4.[/b] A motion that the Society issue a statement was withdrawn after discussion. The sense of the meeting was that a statement is a thing you put out when you have not done anything.\n\n[b]5. Fund.[/b] No change. $14,212.40.\n\nAdjourned 8:55 p.m., late, because nobody wanted to go."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 14 October 2008"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Ten present.\n\n[b]1. Salvage.[/b] The gates and both masts at Quarry Road came out the week of the 6th. The contractor has said we may have a signal head off the pile if we are there when he is. R. Tibbets will be there when he is.\n\n[b]2. The Ledger piece.[/b] Ran on the 19th of March with the caboose as 4112. Mr. Brenner corrected it the following week without being asked, which is more than we get from anybody else, and the secretary is directed to say so here.\n\n[b]3. The trail.[/b] County parks has a consultant looking at the right of way from the freight house to Coyne Creek for a recreation trail. Position adopted 5 to 1: the Society does not oppose a trail, and does oppose lifting rail before the abandonment is final. D. Kilmartin dissenting, and asked that her reason be recorded, which was that a trail is how a railroad stops being a railroad and starts being a memory of one. Recorded.\n\n[b]4. Fund.[/b] Coyne Creek Concrete came out and priced a foundation on the parcel the county owns. The number is $61,000, not $35,000. Long discussion, no minutes taken of it at the chair's request. The board voted to leave the goal at $35,000 on the thermometer until we have something better to say. No further action.\n\nAdjourned 8:47 p.m."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 9 June 2009"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Six present, the fewest since 1999.\n\n[b]1. Treasurer.[/b] Total on hand $4,318.07, of which the Fund is $14,212.40 -- [i]this is wrong and is corrected in the October book; the Fund is held separately at Marchfield Savings and the $4,318.07 is the general account. A.P.[/i]\n\n[b]2.[/b] Dues in from 34 of 71. B. Stanek notes that thirteen of the lapsed are lapsed because they have died and that we might take them off the list, which she has been saying since 2006.\n\n[b]3.[/b] The signal head is in R. Tibbets' barn under a tarp. The broken lens is the west one.\n\n[b]4. The radio business.[/b] A magazine out of the state capital has run a piece saying the transmissions on 62 were branch line telemetry, and cites a local historical society. Nobody telephoned us. There is no other local historical society. The chair will write. A. Pitts observes that the chair wrote the last two times as well and that we have the carbons.\n\nAdjourned 8:05 p.m."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 8 September 2009"
+          },
+          {
+            "kind": "text",
+            "body": "Community Room B, 7:00 p.m. Seven present.\n\n[b]1. Freight house.[/b] The county has the building on the removal list for the spring. We asked for sixty days in 2006, in 2008, and again in July. We have had sixty days three times and done nothing with any of them, which is not the county's fault.\n\n[b]2.[/b] No quorum for the officers vote. Tabled to October.\n\n[b]3.[/b] K. Stanek has taken a job in Ohio. He will keep the website up and cannot promise to change it. He has written down how it works on two sheets of paper and given them to his mother.\n\n[b]4.[/b] The September open house had nine visitors, two of whom were looking for the trail.\n\nAdjourned 8:02 p.m."
+          },
+          {
+            "kind": "text",
+            "body": "[i]October and November 2009 are in the book. They are not typed up.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "archive",
+        "name": "The Archive",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The Archive"
+          },
+          {
+            "kind": "text",
+            "body": "Four filing drawers and a map case in Community Room B, in a cabinet the library lets us keep there on the understanding that we do not ask for a second one.\n\nEverything below is real paper that exists and that a person can be shown. Where it says [b]online[/b], there is a scan on this website. Where it says [b]CD[/b], Bev will post you one. Where it says [b]not scanned[/b], it is not scanned, and writing to ask when it will be scanned does not move it up the list, although it does give A. Pitts something to be irritated about at the next meeting."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How to see something"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Come to a meeting. Second Tuesday, 7:00 p.m. Say which number you want a week ahead so that D. Kilmartin can pull it before she comes.",
+              "By post: a self-addressed padded envelope and $2 in stamps to the treasurer, and say which number. One CD holds the whole of A-001 and most of A-004.",
+              "The library has a microfilm reader and the Ledger back to 1911 on film, which is not ours and is a better place to start than we are. Ask at the desk. The woman who does the scanning knows this county better than the cabinet does."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The list"
+          },
+          {
+            "kind": "table",
+            "head": ["NO.", "DOCUMENT", "DATE", "EXTENT", "STATUS"],
+            "rows": [
+              ["A-001", "Verity Rail Employee Timetable No. 14, effective 12:01 a.m. Sunday 27 April 1969. Includes the branch schedule, the Quarry Road and Kestrel Road whistle posts, and the speed restriction over Coyne Creek.", "1969", "8 pp", "Online. Eight GIFs, 200 dpi, about 140 KB each. On dial-up this is four minutes. Sorry."],
+              ["A-002", "ICC valuation map V-3, sheets 4 to 11, Marchfield to Coyne Flats. Shows the team track at the foot of Wessel Street and the cement plant spur at Cutler.", "1918", "8 sheets", "CD only. The sheets are thirty-six inches and the library scanner is eleven. A. Pitts photographed them on a copy stand and the middle of every sheet is soft."],
+              ["A-003", "Conductor's book, M. Pitts, Marchfield local.", "1961-1974", "214 pp", "Not scanned. Donated by the family on the condition that it stays in the county, and it will."],
+              ["A-004", "Track chart, Marchfield yard, revised in pencil to 1971.", "1953", "2 sheets", "CD only."],
+              ["A-007", "Form 19 train orders, one shoebox. Mostly 31s, a few 19s, one order in 1977 annulling a train that had already run.", "1966-1988", "approx. 400", "Not scanned. Counted twice, got two numbers, and we are going with 400."],
+              ["A-011", "Coyne Creek trestle, inspection report, Verity County Highway Department, 16 August 1988. Pier 2 scour, recommends monitoring.", "1988", "6 pp", "Online. This is the one everybody asks for. Monitoring is what happened to it."],
+              ["A-016", "State utility commission, summary of inquiry, Gridfall Substation No. 3.", "Nov 1963", "2 pp", "Online. Not a railroad document. See the note below."],
+              ["A-019", "Verity Rail abandonment filing, branch line, with the map exhibit.", "2008", "31 pp", "CD only. Thirty-one pages of which two are about Verity County."],
+              ["A-022", "D. Kilmartin, photographs of the last revenue freight, Quarry Road and the Wessel Street crossing.", "14 Mar 2008", "96 frames", "Online, 24 selected. Four rolls. Thirty-one frames are the same grade crossing and she will tell you why if you let her."],
+              ["A-023", "Crossing signal cut sheet and wiring diagram, Quarry Road, Verity Rail signal department.", "1974", "3 pp", "Online."],
+              ["A-026", "Kestrel Road crossing gate mechanism, maker's plate and two bolts.", "removed 2008", "object", "Not a document. Filed here because there is nowhere else to file it."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Correction to the table above.[/b] A-016 is November [b]2003[/b], not 1963. Kyle typed it from my card and my three looks like a six. The document is two pages, it is dated the month after the state commission finished, and the cause it gives is insulation degradation consistent with age. It does not say lightning. It does not say anybody was killed, because nobody was. I am leaving the wrong date in the table so that anybody who has already copied it down can see what they copied. -- A. Pitts, 11/2003"
+          },
+          {
+            "kind": "image",
+            "seed": "valmap-sheet-7-detail",
+            "imgKind": "photo",
+            "caption": "A-002, sheet 7, detail. The team track at the foot of Wessel Street, 1918. The soft band across the middle is the copy stand and not the map."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Missing"
+          },
+          {
+            "kind": "text",
+            "body": "A-005, A-006 and A-013 are in the index in A. Pitts' hand and are not in the cabinet.\n\nA-005 is a Verity Rail company photograph of the freight house interior, undated, probably 1950s. A-006 is the 1994 flood damage survey of the Coyne Creek approach, which is the one thing we had that [url=synth://tnorris.verity.net/]Tom Norris[/url] did not. A-013 is nine pages of correspondence about the 1988 inspection.\n\nIf you borrowed them, no questions will be asked and no minute will be taken. Leave them at the desk at the library in an envelope with the numbers on the outside."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we do not have"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Anything from the power company. Not the 2003 internal report, not any of it. People assume we do because we have A-016, and A-016 is two pages from the state and is not the same thing.",
+              "Photographs of the fire. We have none. [url=synth://clipvault.tv/]ClipVault[/url] has somebody's camcorder tape and the boards have a thread of what people took that morning.",
+              "Timetables before 1961 except No. 14, which is 1969, which is not before 1961 and is listed here because somebody will ask.",
+              "Anything on the radio transmissions out on 62. Asked eleven times to date. We have no railroad document that mentions them and there is no reason a railroad document would."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fund",
+        "name": "Freight House Fund",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The Freight House Fund"
+          },
+          {
+            "kind": "text",
+            "body": "The Marchfield freight house was put up in 1911 and is the last railroad building standing in Verity County. It is on county land now. It has no roof to speak of at the west end, it has been open to the weather since the 2004 storm, and the county has it on a removal list.\n\nThe Fund pays to move it two hundred feet onto the parcel by the caboose, put it on a foundation, and roof it. That is the whole plan. It has been the whole plan since 2005."
+          },
+          {
+            "kind": "image",
+            "seed": "fund-thermometer-40",
+            "imgKind": "photo",
+            "caption": "FREIGHT HOUSE FUND -- $14,212.40 of $35,000 -- 40%. Drawn by hand on graph paper by the treasurer and scanned at the library. The red goes up when the treasurer's report comes in."
+          },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Goal", "$35,000"],
+              ["On hand", "$14,212.40"],
+              ["Thermometer", "40%"],
+              ["Last deposit", "November 2007"],
+              ["Held at", "Marchfield Savings, separate account, two signatures"],
+              ["Actual estimate as of October 2008", "$61,000"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]About those last two rows.[/b] Coyne Creek Concrete came out in the autumn of 2008 and looked at what a foundation costs on that parcel, which is fill, and the number came back $61,000 rather than $35,000. The board discussed it for an hour and voted to leave the goal at $35,000 on the thermometer until we had something better to say.\n\nWe have not had anything better to say. The thermometer has read forty per cent since November 2007, which is accurate, and it is accurate in the way a stopped clock is."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where it came from"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Bequest, estate of Lyle Ganz, 2004 -- $8,000. Lyle also left us the motorcar and the crate.",
+              "Signal lens raffle, October 2007 -- $1,840. Three hundred and eighty tickets at $5. The lens went to a man from two counties over who had never heard of us and drove four hours.",
+              "Open houses, May and September, 2003 to 2008 -- $2,611.40 across twelve of them, which is a coffee urn and a card table.",
+              "Memorial gifts -- $1,761. Six of them. Two were for members and four were for people who just liked the line.",
+              "Nothing since November 2007."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Giving"
+          },
+          {
+            "kind": "text",
+            "body": "Cheques to [b]Verity Rail Preservation Society[/b], memo line [b]Freight House[/b], to the treasurer. We are a 501(c)(3) as of 2001 and the determination letter is in the cabinet, so a gift to the Fund is deductible; your dues are not, and if anybody has been deducting their dues since 1998 we would rather not know.\n\nWe do not take anything over the web. There was a plan to, in 2006, and it wanted $19 a month and a merchant account, which is more than we take in some months."
+          },
+          {
+            "kind": "image",
+            "seed": "email-picture-bstanek",
+            "imgKind": "thumb",
+            "caption": "bstanek (at) verityrail-preservation (dot) org -- this is a picture of the address and not a link, because of the harvesters. Type it out. If you would rather telephone, the number is in the Marchfield book under the Society."
+          },
+          {
+            "kind": "text",
+            "body": "[b]September 2009.[/b] The county has the building listed for removal in the spring. We have asked for sixty days three times and had it three times. There is no fourth ask that is different from the first three.\n\nIf the building goes, the board has said the Fund goes to the caboose and to getting the archive somewhere that is not a cabinet the library is being polite about. That is not a decision, it is what people said out loud at a meeting, and the minute for it is [url=/minutes]8 September[/url]."
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "name": "Join / Contact",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Joining, and other questions"
+          },
+          {
+            "kind": "text",
+            "body": "Turn up at a meeting and say so, or post $15 with your name, your address and a line about what you are interested in. The line about what you are interested in is not a formality. It is how D. Kilmartin knows who to telephone when a box of photographs comes in.\n\nYou get the Record six times a year, a vote, and the run of the archive. You do not get a key to the caboose. Nobody gets a key to the caboose. There are two keys and Roy has both of them and one of them is taped under the step, which A. Pitts is asked to remove from these minutes and which Kyle has left on the website for six years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Questions people actually ask"
+          },
+          {
+            "kind": "table",
+            "head": ["QUESTION", "ANSWER"],
+            "rows": [
+              ["Did the Blue Kestrel close because of the fire?", "No. The fire was 1977, it started in the fryer, and they were open again in eleven days. The diner closed in 2006, and it had nothing to do with 1977. We are asked this at every open house and we are not even a diner. [url=synth://kestrel-journal.net/]Marion's site[/url] has the whole of it."],
+              ["Will there be trains again?", "No."],
+              ["Can I walk the right of way?", "Not yet and not from us. It is Verity Rail's until the abandonment is final, and after that it is the county's. People do it anyway. The Coyne Creek trestle has had a scour problem at pier 2 since 1988 and is not a thing to walk on."],
+              ["Do you have the last train on video?", "Not ours. Somebody put a tape up on [url=synth://clipvault.tv/]ClipVault[/url]. The audio is mostly wind and a child asking to go back to the car."],
+              ["Are you the people with the radio?", "No. That is [url=synth://boards.gridfall.net/]the boards[/url], and before them it was a man in Ashkettle with a mast, and none of them know either."],
+              ["Can I use your photographs?", "Ask. The answer is nearly always yes and the credit line is the photographer, not us. If the photographer is Merle Pitts the answer is yes and the credit line matters."],
+              ["My grandfather worked for Verity Rail, do you have his record?", "No. Personnel records went with the company and the company went into a holding company in 1981. We can usually tell you what job he did from the timetables and the conductor's book, which is not nothing."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Contact"
+          },
+          {
+            "kind": "text",
+            "body": "Verity Rail Preservation Society, P.O. Box 118, Marchfield.\n\nMeetings: second Tuesday, 7:00 p.m., Community Room B, Marchfield Public Library, 208 Wessel Street. Side door after six.\n\nFor the archive: D. Kilmartin, through the box, or at a meeting. For dues and the Fund: B. Stanek, address as on [url=/fund]the fund page[/url]. For anything about the website being wrong: K. Stanek, and he is in Ohio, and he will get to it."
+          },
+          {
+            "kind": "buttons",
+            "label": "Buttons. Right click, save it to your own machine, and put it on your page -- please do not hotlink it off us, the host bills by the month and we are the ones who pay. Tell us and we will put yours up here.",
+            "items": [
+              { "label": "VRPS 88x31", "seed": "btn-vrps" },
+              { "label": "Verity Rail Forums", "seed": "btn-vrforums", "domain": "forums.verityrail.org" },
+              { "label": "The Gridfall Boards", "seed": "btn-gridfall-boards", "domain": "boards.gridfall.net" },
+              { "label": "The Gridfall Webring", "seed": "btn-ring", "domain": "webring.gridfall.net" },
+              { "label": "The Gridfall Wiki", "seed": "btn-wiki", "domain": "wiki.gridfall.net" },
+              { "label": "ClipVault", "seed": "btn-clipvault", "domain": "clipvault.tv" },
+              { "label": "Tom Norris", "seed": "btn-tnorris", "domain": "tnorris.verity.net" },
+              { "label": "Branchline Bulletin", "seed": "btn-bbulletin" },
+              { "label": "Kesson Valley Chapter", "seed": "btn-kesson" },
+              { "label": "BEST VIEWED AT 800x600", "seed": "btn-800x600" },
+              { "label": "SCANNED NOT TYPED", "seed": "btn-scanned" }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Branchline Bulletin has been a dead link since some time in 2008. Kyle left the button because the button still works and the man who ran it was good to us.[/i]"
+          },
+          {
+            "kind": "marquee",
+            "text": "NEXT MEETING SECOND TUESDAY 7PM -- DUES ARE $15 -- IF YOU HAVE PHOTOGRAPHS IN A BOX IN A BASEMENT PLEASE TELEPHONE BEFORE YOU THROW THEM OUT"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 6142
+          }
+        ]
+      }
+    ]
+  }
+}
