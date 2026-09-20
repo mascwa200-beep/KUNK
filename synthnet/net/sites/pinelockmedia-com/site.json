@@ -1,0 +1,603 @@
+{
+  "schema": 1,
+  "domain": "pinelockmedia.com",
+  "title": "Pinelock Media Group - Trusted local news at scale",
+  "type": "page",
+  "era": "2016",
+  "skin": "plain-white",
+  "description": "Pinelock Media Group's corporate site in the year it bought Halloran Communications and with it the Verity Ledger, including a page describing the content pipeline it would install at the Ledger seven years later.",
+  "tags": ["corporate", "media", "pinelock", "2016"],
+  "links": [
+    "verityledger.com",
+    "halloranmedia.com",
+    "clipvault.tv"
+  ],
+  "data": {
+    "navLabel": "Company",
+    "pages": [
+      {
+        "id": "index",
+        "name": "About",
+        "blocks": [
+          { "kind": "image", "seed": "pinelock-wordmark-2015", "imgKind": "banner",
+            "caption": "Pinelock Media Group" },
+
+          { "kind": "heading", "level": 1, "text": "Pinelock Media Group" },
+
+          { "kind": "text",
+            "body": "[b]Trusted local news at scale.[/b]" },
+
+          { "kind": "text",
+            "body": "Pinelock Media Group owns and operates 24 local media properties in 19 markets across three states. The oldest of them has published since 1889. The newest launched in May of this year and has never had an office.\n\nThe Group's model is to keep what a reader recognises and to change what a reader does not see. Mastheads, title names, publication days and legal-notice standing are retained. Production, page design, advertising operations, billing, circulation fulfilment and technology are shared." },
+
+          { "kind": "heading", "level": 2, "text": "What we do" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "[b]Buy titles that are already trusted.[/b] A community newspaper's name is the asset. It takes forty years to build and it cannot be bought anywhere else, which is why we buy it where it already exists rather than starting one.",
+            "[b]Separate the newsroom from the plumbing.[/b] Nothing a reader values happens in ad trafficking, subscriber billing or page composition. All three are done once, for every property, in one place.",
+            "[b]Publish more.[/b] Our properties published 3,900 items in an average month this year against 2,100 two years ago. Readers arrive from search on the specific thing they were looking for, and a property that does not have that thing does not get the reader.",
+            "[b]Lower the cost of an item.[/b] Cost per published item across the portfolio was $9.80 in the twelve months to 30 September 2016, against $14.60 in 2014.",
+            "[b]Keep the title alive.[/b] Where a market will not support a standalone title, the title is merged into a neighbouring property in the same group and the coverage area is added to it. The Group has not closed a title outright."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "At a glance" },
+
+          { "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Properties", "24"],
+              ["Markets", "19"],
+              ["States", "3"],
+              ["Daily newspapers", "3"],
+              ["Weekly and twice-weekly newspapers", "12"],
+              ["Free-distribution and specialty titles", "5"],
+              ["Digital-only county titles", "4"],
+              ["Combined paid circulation", "43,900"],
+              ["Combined weekly distribution, paid and free", "63,300"],
+              ["Monthly unique visitors, all properties", "1.4M"],
+              ["Published items, monthly average", "3,900"],
+              ["Cost per published item", "$9.80"],
+              ["Employees", "312"],
+              ["Employees in newsrooms", "91"],
+              ["Printing plants", "2"],
+              ["Formed", "2009"],
+              ["Headquarters", "Fairhill"],
+              ["Ownership", "Private"]
+            ] },
+
+          { "kind": "text",
+            "body": "Circulation figures are publisher's statements for the six months ended 30 September 2016 and are not independently audited for every title. Visitor figures are from the Group's own analytics and are not an audited measure. A title-by-title list is on the [url=/brands]Our Brands[/url] page." },
+
+          { "kind": "heading", "level": 2, "text": "History" },
+
+          { "kind": "table",
+            "head": ["Year", "Event"],
+            "rows": [
+              ["2009", "Pinelock Media Group is formed at Fairhill by Ellis Grandin, with equity from Norbury Street Capital."],
+              ["2012", "Acquires four weekly newspapers in the Cardinal Valley market."],
+              ["2013", "Acquires The Roselawn Press."],
+              ["2014", "Cardinal Valley Group established as the Group's first operating group. Cardinal Valley Homes & Living launched."],
+              ["2015", "Alder County Now and Stannard County Now launched. First deployment of the Pinelock Editorial Desk, at Cardinal Valley Times."],
+              ["2016", "Hollis County Now launched, 11 January."],
+              ["2016", "Agreement to acquire Halloran Communications, Inc. announced, 14 January."],
+              ["2016", "Acquisition of Halloran Communications completed, 1 April. Halloran Group established as the Group's second operating group, with fourteen titles."],
+              ["2016", "Verity County Now launched, 2 May."],
+              ["2016", "Corliss plant ceases commercial and contract printing, effective 2 December."]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Ownership and capital" },
+
+          { "kind": "text",
+            "body": "Pinelock Media Group is privately held and has no publicly traded securities. This page is not an offer to sell or a solicitation of an offer to buy any security.\n\nThe Group is controlled by Norbury Street Capital, which has held a majority interest since formation in 2009. Former shareholders of Halloran Communications, Inc. hold a minority interest received as part of the April 2016 consideration. The Group does not disclose the purchase price of any transaction." },
+
+          { "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Senior secured credit facility", "$22.0M commitments"],
+              ["Drawn at 30 September 2016", "$18.4M"],
+              ["Maturity", "June 2021"],
+              ["Financial covenants", "Total net leverage; fixed charge coverage"],
+              ["Covenant compliance", "In compliance at 30 September 2016"],
+              ["Lender reporting", "Quarterly, within 45 days"],
+              ["Audited financials", "Annually, within 120 days"],
+              ["Equity sponsor", "Norbury Street Capital (2009)"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Leadership" },
+
+          { "kind": "table",
+            "head": ["Name", "Title", "Joined"],
+            "rows": [
+              ["Ellis Grandin", "Chief Executive Officer", "2009"],
+              ["Owen Brochu", "Chief Financial Officer", "2011"],
+              ["Brett Sasso", "Chief Revenue Officer", "2014"],
+              ["Gil Mattoon", "Vice President, Editorial Operations", "2016"],
+              ["Kurt Aldinger", "Vice President, Technology", "2013"],
+              ["Susan Hatchell", "General Counsel and Corporate Secretary", "2016"]
+            ] },
+
+          { "kind": "text",
+            "body": "[b]Ellis Grandin[/b] formed Pinelock Media Group in 2009 and has been Chief Executive Officer since. He previously ran a regional directory business and before that sold outdoor advertising in two states. He has said in interviews that he has never worked in a newsroom and does not intend to start." },
+
+          { "kind": "text",
+            "body": "[b]Owen Brochu[/b] is responsible for finance, treasury and lender reporting. He joined in 2011 from a rural telephone cooperative holding company, where he was controller." },
+
+          { "kind": "text",
+            "body": "[b]Brett Sasso[/b] leads advertising, ad operations and the Group's programmatic partnerships. He joined in 2014 and had spent nine years in newspaper advertising before that, most of it selling inserts." },
+
+          { "kind": "text",
+            "body": "[b]Gil Mattoon[/b] is responsible for editorial operations across the portfolio, including deployment of the Pinelock Editorial Desk. He came to the Group with the Halloran acquisition in April, having been Halloran's Vice President, News and Audience Development since 2013 and editor of the Dunmore Daily Record for nine years before that. He is based at Dunmore and is the only officer of the Group who does not work at Fairhill." },
+
+          { "kind": "text",
+            "body": "[b]Kurt Aldinger[/b] is responsible for the publishing platform, the content management system, hosting and search performance. He joined in 2013 and built the first version of the Editorial Desk with two contractors." },
+
+          { "kind": "text",
+            "body": "[b]Susan Hatchell[/b] advises on transactions, licensing, public-notice compliance and pre-publication matters. She was General Counsel of Halloran Communications, Inc. from 2014 and continues with the Group. Halloran had no in-house counsel before her appointment." },
+
+          { "kind": "text",
+            "body": "The Group has a five-member board. Three seats are held by Norbury Street Capital, one by the Chief Executive Officer and one by a former Halloran shareholder. The Group does not publish board biographies." },
+
+          { "kind": "heading", "level": 2, "text": "Outlook" },
+
+          { "kind": "text",
+            "body": "The 2017 operating plan assumes no acquisitions. It assumes deployment of the Editorial Desk to the remaining Halloran titles, consolidation of page design and copy editing onto the Central Desk at Fairhill, and a reduction in owned real estate.\n\nThe Group expects cost per published item to fall below $6.00 by the end of 2018 and below $4.00 by 2020. Print advertising revenue is expected to decline in every year of the plan, and the plan is built on that assumption rather than against it." },
+
+          { "kind": "text",
+            "body": "[b]Forward-looking statements.[/b] This page contains forward-looking statements, including statements about published item volume, cost per item, platform deployment and portfolio composition. These are based on management's current expectations and are subject to risks including advertising demand, newsprint and postal cost, changes in search referral, statutory changes affecting public-notice publication, and the Group's ability to service its indebtedness. Actual results may differ materially. The Group undertakes no obligation to update any forward-looking statement." },
+
+          { "kind": "text",
+            "body": "Media inquiries: Erin Sowash, Director of Communications, [b]esowash@pinelockmedia.com[/b], 555-0177. Inquiries about a story, a correction or a photograph go to the title that published it. See [url=/contact]Contact[/url].\n\nThe corporate site of Halloran Media Group remains online at [url=synth://halloranmedia.com/]halloranmedia.com[/url] and is not being updated." },
+
+          { "kind": "text",
+            "body": "[i]This page was last updated 14 November 2016.[/i]" }
+        ]
+      },
+
+      {
+        "id": "brands",
+        "name": "Our Brands",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Our brands" },
+
+          { "kind": "text",
+            "body": "Pinelock publishes 24 properties in 19 markets. Each newspaper keeps its own masthead, its own name, its own publication day and its own standing to carry legal notices in the jurisdiction where it is the newspaper of record.\n\n\"Established\" is the year shown on the title's own masthead. Several of our papers are older than the name they carry now and we do not claim the difference. The list is current as of 1 November 2016." },
+
+          { "kind": "heading", "level": 2, "text": "Daily newspapers" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Established", "Published", "Paid circulation"],
+            "rows": [
+              ["[url=synth://dunmorerecord.synth/]Dunmore Daily Record[/url]", "Dunmore", "1888", "Monday to Saturday", "8,340"],
+              ["[url=synth://pellunionherald.synth/]The Pell Union-Herald[/url]", "Pell", "1902", "Tuesday to Saturday", "5,180"],
+              ["[url=synth://bowescitysentinel.synth/]The Bowes City Sentinel[/url]", "Bowes City", "1911", "Monday to Friday", "3,870"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Community newspapers" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Established", "Published", "Paid circulation"],
+            "rows": [
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "Gridfall, Verity Co.", "1898", "Wednesday and Saturday", "4,020"],
+              ["[url=synth://cardinalvalleytimes.synth/]Cardinal Valley Times[/url]", "Fairhill", "1911", "Wednesday", "3,600"],
+              ["[url=synth://lelandstar.synth/]The Leland Star[/url]", "Leland", "1934", "Thursday", "3,190"],
+              ["[url=synth://stannardcountypress.synth/]Stannard County Press[/url]", "Stannard Co.", "1921", "Wednesday", "2,710"],
+              ["[url=synth://kearneyfallsadvocate.synth/]Kearney Falls Advocate[/url]", "Kearney Falls", "1889", "Thursday", "2,480"],
+              ["[url=synth://meadechronicle.synth/]The Meade Chronicle[/url]", "Meade", "1934", "Thursday", "2,050"],
+              ["[url=synth://quaylebeacon.synth/]The Quayle Beacon[/url]", "Quayle", "1947", "Wednesday", "1,860"],
+              ["[url=synth://roselawnpress.synth/]The Roselawn Press[/url]", "Roselawn", "1903", "Wednesday", "1,780"],
+              ["[url=synth://wexlerweekly.synth/]Wexler Township Weekly[/url]", "Wexler Twp.", "1968", "Thursday", "1,440"],
+              ["[url=synth://marchfieldregister.synth/]The Marchfield Register[/url]", "Marchfield, Verity Co.", "1957", "Thursday", "1,390"],
+              ["[url=synth://brindlecreekitem.synth/]The Brindle Creek Item[/url]", "Brindle Creek", "1962", "Thursday", "1,010"],
+              ["[url=synth://lomaxweekly.synth/]The Lomax Weekly[/url]", "Lomax", "1957", "Friday", "990"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Free-distribution and specialty titles" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Established", "Published", "Distribution"],
+            "rows": [
+              ["[url=synth://aldercountyshopper.synth/]Alder County Shopper[/url]", "Alder Co.", "1978", "Weekly", "19,400 free"],
+              ["Verity County Homes & Land", "Verity Co.", "2004", "Monthly", "11,000 free"],
+              ["Quayle Valley Weddings", "Quayle Valley", "2008", "Annual, February", "9,000 free"],
+              ["[url=synth://corlissbusinessjournal.synth/]The Corliss Business Journal[/url]", "Corliss", "1986", "Monthly", "5,900 paid"],
+              ["Cardinal Valley Homes & Living", "Cardinal Valley", "2014", "Quarterly", "14,000 free"]
+            ] },
+
+          { "kind": "text",
+            "body": "[i]Verity County Homes & Land[/i], [i]Quayle Valley Weddings[/i] and [i]Cardinal Valley Homes & Living[/i] do not have websites of their own. Their listings run on the websites of The Verity Ledger, The Quayle Beacon and Cardinal Valley Times." },
+
+          { "kind": "heading", "level": 2, "text": "Pinelock County Digital" },
+
+          { "kind": "text",
+            "body": "County Digital is the Group's digital-only product line. A County Digital title covers one county, publishes only to the web, and carries no print edition, no office, no counter and no telephone number. Correspondence is handled centrally at Fairhill.\n\nThe four titles share one template, one section structure, one taxonomy and one production queue. The naming convention is deliberate. A reader who has used one should recognise the next one without being told what it is." },
+
+          { "kind": "table",
+            "head": ["Title", "County", "Launched", "Editorial staffing"],
+            "rows": [
+              ["[url=synth://aldercountynow.synth/]Alder County Now[/url]", "Alder Co.", "2 March 2015", "One editor, shared with two titles"],
+              ["[url=synth://stannardcountynow.synth/]Stannard County Now[/url]", "Stannard Co.", "14 September 2015", "One editor, shared with two titles"],
+              ["[url=synth://holliscountynow.synth/]Hollis County Now[/url]", "Hollis Co.", "11 January 2016", "One editor, shared with three titles"],
+              ["[url=synth://veritycountynow.synth/]Verity County Now[/url]", "Verity Co.", "2 May 2016", "One editor, shared with three titles"]
+            ] },
+
+          { "kind": "text",
+            "body": "County Digital titles are assembled on the [url=/technology]Pinelock Editorial Desk[/url] from public sources, reader submissions and material previously published by a Pinelock property. An editor reviews and releases each item. The line is profitable at 40 items a week per title and every title has been above that since its fourth month.\n\n[b]Verity County Now[/b] covers the whole of Verity County, which includes Milbrook, Kerrin and the northern townships, where the Group does not publish a weekly and where the Ledger's print edition does not circulate well." },
+
+          { "kind": "heading", "level": 2, "text": "The Verity Ledger" },
+
+          { "kind": "image", "seed": "verity-ledger-118-third-street", "imgKind": "photo",
+            "caption": "The Verity Ledger, 118 Third Street, Gridfall. Sold 14 October 2016." },
+
+          { "kind": "text",
+            "body": "The Verity Ledger has published in Gridfall since 1898 and is the newspaper of record for Verity County. It carries the county's legal notices under a contract worth $12,800 in the year to 30 June 2016. It came to Halloran in 2011 and to Pinelock in April.\n\nThe newsroom is six people. It is the only newsroom in the county and the only one with a reporter at the county board of supervisors every month. County reporter Hal Brenner has had that beat since 1999." },
+
+          { "kind": "text",
+            "body": "The Ledger's most-read item in its online archive remains its coverage of the 2004 Gridfall substation fire, filed overnight from the Third Street newsroom while the building had no power. Four thousand one hundred customers lost service and some were out for five days. [url=synth://verityledger.com/article/fire-2003]The Ledger's coverage is here[/url].\n\nThe Ledger also carries the Ashkettle Notes, a community column that has run without a missed week since 1961 and is still filed on paper at the front counter." },
+
+          { "kind": "heading", "level": 2, "text": "Changes to the portfolio" },
+
+          { "kind": "text",
+            "body": "[b]The Brindle Creek Item[/b] will merge into the Dunmore Daily Record with the edition of Thursday 29 December 2016. Brindle Creek coverage continues in the Record, which adds a Brindle Creek page on Thursdays. Item subscribers will receive the balance of their subscriptions in Record issues. The Item's office at 2 Sawyer Street closes on 30 December. One position is affected." },
+
+          { "kind": "text",
+            "body": "[b]The Verity Ledger[/b] will discontinue its Saturday edition with the edition of Saturday 31 December 2016 and publish once a week, on Wednesday, from 4 January 2017. The Wednesday edition absorbs the page count. Wednesday has been the Ledger's larger edition since 2011 and carries the legal notices.\n\nSubscription rates do not change in 2017. Subscribers who wish to cancel on this basis may do so and will be refunded the unexpired portion." },
+
+          { "kind": "text",
+            "body": "[b]118 Third Street, Gridfall[/b] was sold on 14 October 2016 under the Group's real estate program. The Ledger has taken a five-year lease on two rooms on the second floor and remains at the same address. The front counter, which was on the ground floor, closes on 30 November. Obituaries, classified advertising and legal notices move to the Group intake line and to the Ledger's website." },
+
+          { "kind": "text",
+            "body": "[b]Video.[/b] Halloran titles have posted video to [url=synth://clipvault.tv/]ClipVault[/url] since 2010. The arrangement is under review. No new video is being commissioned at any Pinelock property and the Group does not employ videographers." },
+
+          { "kind": "heading", "level": 2, "text": "For advertisers" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "[b]One order, one invoice.[/b] The Pinelock Network buy places one advertisement in all 20 print titles at a combined open inch rate of $58.40.",
+            "[b]County Digital buy.[/b] All four County Digital titles, sold by the thousand impressions, minimum $120. Available as an add-on to any print schedule at no additional creative charge.",
+            "[b]Inserts.[/b] Distribution to 63,300 households a week, paid and free combined, zoned to the postal route.",
+            "[b]Digital display.[/b] All 24 property websites run on one ad server with one tag. Programmatic inventory is sold through a single exchange partner.",
+            "[b]Classified and legal notices.[/b] Placed with the individual title. Legal-notice rates are set by statute in each of the three states and are not negotiable by us or by anyone else.",
+            "[b]Rate cards.[/b] Current rate cards are available from your Pinelock representative or by writing to ads@pinelockmedia.com. Rates are set in January."
+          ] },
+
+          { "kind": "text",
+            "body": "[i]This page was last updated 1 November 2016.[/i]" }
+        ]
+      },
+
+      {
+        "id": "technology",
+        "name": "Editorial Technology",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Editorial technology" },
+
+          { "kind": "text",
+            "body": "Every Pinelock property publishes through one system. This page describes it, because advertisers, lenders and the editors of titles we have not yet acquired all ask, and because the answer is not a secret." },
+
+          { "kind": "heading", "level": 2, "text": "The Pinelock Editorial Desk" },
+
+          { "kind": "text",
+            "body": "The Editorial Desk is the Group's publishing system. It was built in 2014 and 2015 and first ran at Cardinal Valley Times in September 2015. Ten of the Group's 24 properties are on it today." },
+
+          { "kind": "list", "ordered": false, "items": [
+            "One content management system for every property, on one template family with per-property colours, masthead and section structure.",
+            "One taxonomy. Every item carries a category, a market, a geography and, where applicable, a named entity. The taxonomy is maintained centrally and properties do not extend it.",
+            "One photo archive across all properties, with reuse rights cleared at the Group level rather than the title level.",
+            "One advertising system, one ad server, one tag.",
+            "One subscriber database and one billing run.",
+            "One house style file per property, held centrally, covering spellings, honorifics, place names and the forms of address a market expects."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "Composer" },
+
+          { "kind": "text",
+            "body": "Composer is the drafting module of the Editorial Desk. It takes a structured source document and produces a first-pass draft in the property's template and house style. An editor then reviews the draft, edits it, and releases it or holds it.\n\nComposer was built for the material that has a fixed shape. A school board agenda has a fixed shape. A high school box score has a fixed shape. A fire department dispatch summary, a real estate transfer, a road closure notice and an obituary submitted on the standard form all have a fixed shape. Roughly 55 percent of what our properties publish in a month is one of those things, and until 2015 a person typed all of it." },
+
+          { "kind": "text", "body": "[b]Composer draws on[/b]" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Agendas, packets and minutes published by a governmental body in the property's market.",
+            "Dispatch and incident summaries as released by a responsible public safety agency.",
+            "Official statements, releases and filings issued by an identified organisation.",
+            "Obituary notices, event listings, public notices and youth and school sports results submitted through the property's intake form or counter.",
+            "Property transfers and building permits as filed with the county recorder, where the county publishes them in a machine-readable form. Four of our nineteen markets do.",
+            "Licensed regional wire copy.",
+            "Material previously published by a Pinelock property, including by a different property."
+          ] },
+
+          { "kind": "text",
+            "body": "That last source is the one editors ask about. A property may republish, update or extend an item that originated at another property in the Group. Where it does, the item carries the second property's byline or staff designation and no separate credit, because the Group holds the rights in both." },
+
+          { "kind": "heading", "level": 2, "text": "How an item moves" },
+
+          { "kind": "list", "ordered": true, "items": [
+            "A source document arrives, either by feed or by intake form.",
+            "Composer assembles a draft against the property's template and house style file.",
+            "The draft runs through the consistency check.",
+            "An editor opens the draft in a queue, reviews it, and releases, corrects or holds it.",
+            "The item publishes to the property website, to the property's social accounts, and to the print page plan where the property has one."
+          ] },
+
+          { "kind": "text",
+            "body": "Median editor review time on an assembled item is [b]four minutes and ten seconds[/b]. Median time on an item typed from the same source document by the same editor, measured at Cardinal Valley Times before deployment, was nineteen minutes.\n\nAn editor at a County Digital title releases 38 to 46 items on a normal day. The same editor at the same title in 2015, before Composer, released 9 to 12." },
+
+          { "kind": "heading", "level": 2, "text": "What Composer does not do" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "It does not go to a meeting.",
+            "It does not telephone anyone, and it cannot be given a source it does not already hold a document from.",
+            "It does not write an item that requires a judgement about what matters. Every item it drafts is one where the source document already decided that.",
+            "It does not publish. Release is an editor action and is logged against a named individual.",
+            "It does not cover a beat. Beat reporting is done by reporters, and the Group employs 91 people in newsrooms to do it."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "Attribution" },
+
+          { "kind": "text",
+            "body": "An item assembled in Composer and released by an editor carries the byline of the editor who released it, or the property's staff designation where the property uses one. The Group's position is that the person who released the item is responsible for the item, and that a reader does not need to be told which tool produced a first draft any more than a reader is told which word processor was used.\n\n[b]No Pinelock property publishes an item that has not been released by a named editor.[/b] This is a condition of the deployment and it is written into the Editorial Desk. There is no path in the system that publishes without a release, and the Group does not intend to build one." },
+
+          { "kind": "heading", "level": 2, "text": "The consistency check" },
+
+          { "kind": "text",
+            "body": "Every assembled draft is checked before it reaches an editor. The check compares names, dates, figures and place references in the draft against the source document and against items the Group has already published. A draft that disagrees with either is held and flagged rather than queued.\n\nThe check currently holds about 6 percent of assembled drafts. Most holds are a name spelled two ways in the source document itself. Roughly one hold in nine is a real error in the draft, and those are the ones the check is for." },
+
+          { "kind": "heading", "level": 2, "text": "What this has done to the numbers" },
+
+          { "kind": "table",
+            "head": ["", "2014", "2015", "2016 to date"],
+            "rows": [
+              ["Properties", "6", "8", "24"],
+              ["Properties on the Editorial Desk", "0", "2", "10"],
+              ["Published items, monthly average", "2,100", "2,600", "3,900"],
+              ["Cost per published item", "$14.60", "$12.20", "$9.80"],
+              ["Median editor review time, assembled item", "—", "6m 40s", "4m 10s"],
+              ["Items held by the consistency check", "—", "11%", "6%"],
+              ["Corrections published per 1,000 items", "4.1", "3.8", "3.3"]
+            ] },
+
+          { "kind": "text",
+            "body": "Corrections per thousand items is the number we watch hardest and it is the number a reader can check, because every correction runs on the property's corrections page and stays there. It has gone down in each of the three years, which we did not expect in the first year and did expect in the third." },
+
+          { "kind": "heading", "level": 2, "text": "Deployment" },
+
+          { "kind": "table",
+            "head": ["Phase", "Scope", "Categories", "Target"],
+            "rows": [
+              ["1", "Cardinal Valley Group, County Digital", "Results, obituaries, notices, listings", "Complete, Q2 2016"],
+              ["2", "Halloran weeklies and specialty titles", "Adds agendas, minutes, dispatch summaries", "Q2 2017"],
+              ["3", "Halloran dailies", "Adds transfers, permits, wire", "Q4 2017"],
+              ["4", "All properties, all eligible categories", "All of the above", "Q4 2018"]
+            ] },
+
+          { "kind": "text",
+            "body": "The Verity Ledger is a phase 2 property. Its page design and copy editing move to the Central Desk at Fairhill in the first quarter of 2017 and Composer follows in the second. Reporting and photography stay in Gridfall.\n\nDeployment at a title takes six to nine weeks, of which four are spent building the house style file. The house style file is the part nobody budgets for. Ashkettle has one T in the middle of it, the Quayle Valley has no apostrophe, and there is a road in Alder County that three of our own titles spelled three different ways for eleven years." },
+
+          { "kind": "heading", "level": 2, "text": "Archives" },
+
+          { "kind": "text",
+            "body": "Material published by a property before it moves to the Editorial Desk stays where it is, at its existing address, in its existing form. It is not migrated, reformatted, re-tagged or maintained. It is not searchable from the new site and the new site does not link to it.\n\nThis is a cost decision and we state it plainly. Migrating a title's back catalogue costs between $4,000 and $30,000 depending on how the old site stored its dates, and the traffic to material older than about four years does not support that in any market we operate in. The old addresses are kept resolving. Nothing is deleted." },
+
+          { "kind": "heading", "level": 2, "text": "Highest-traffic items" },
+
+          { "kind": "text",
+            "body": "Twelve months to 30 September 2016, Halloran titles, page views." },
+
+          { "kind": "table",
+            "head": ["Item", "Property", "Views", "Note"],
+            "rows": [
+              ["Coverage of the 2004 Gridfall substation fire", "The Verity Ledger", "41,200", "Published 2004. Still the archive's most-read item."],
+              ["Ice storm school closings, 3 February 2016", "Dunmore Daily Record", "28,900", "Assembled. Updated eleven times in one day."],
+              ["\"What is the four-digit radio broadcast out past Ashkettle?\"", "The Verity Ledger", "9,140", "Reader question. Republished twice."],
+              ["Kestrel Vapor marks three years on Route 62", "The Verity Ledger", "7,660", "Business brief. Assembled from a press release."],
+              ["Quayle Valley Weddings vendor list 2016", "The Quayle Beacon", "6,410", "Annual. Runs from February to August every year."],
+              ["Bowes City property transfers, week of 12 September", "The Bowes City Sentinel", "5,880", "Assembled. Runs weekly."]
+            ] },
+
+          { "kind": "text",
+            "body": "The pattern is not complicated. Two of the six are a specific fact a reader needed on a specific day, two are a list that runs on a schedule, and one is twelve years old and will still be on this table next year.\n\nThe third one we have never satisfactorily answered and it comes back every October." },
+
+          { "kind": "text",
+            "body": "This page is maintained by Gil Mattoon, Vice President, Editorial Operations. Questions from editors at titles the Group does not own are welcome and are answered.\n\n[i]This page was last updated 19 September 2016.[/i]" }
+        ]
+      },
+
+      {
+        "id": "careers",
+        "name": "Careers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Careers at Pinelock" },
+
+          { "kind": "text",
+            "body": "Pinelock employs 312 people in 19 markets across three states. Ninety-one of them work in a newsroom. Most of the rest work at Fairhill, at Corliss or at Dunmore, and a good many of them came to us with a company we bought." },
+
+          { "kind": "image", "seed": "pinelock-central-desk-fairhill-2016", "imgKind": "photo",
+            "caption": "The Central Desk, Fairhill, August 2016." },
+
+          { "kind": "heading", "level": 2, "text": "Current openings (0)" },
+
+          { "kind": "text",
+            "body": "There are no open positions at this time.\n\nThe Group is not hiring into any job family while the 2017 operating plan is being finalised. We expect to post again in the first quarter. There is no waiting list and no notification service; this page is the notification service." },
+
+          { "kind": "heading", "level": 2, "text": "Job families" },
+
+          { "kind": "table",
+            "head": ["Family", "Where", "Typical entry role"],
+            "rows": [
+              ["Newsroom", "At the title", "Multimedia journalist"],
+              ["Central Desk", "Fairhill", "Copy editor"],
+              ["Editorial Operations", "Fairhill", "Production associate"],
+              ["Advertising and Ad Operations", "Fairhill, at the title", "Inside sales representative"],
+              ["Production and Distribution", "Dunmore, Corliss", "Press assistant, motor route driver"],
+              ["Technology", "Fairhill", "Support analyst"],
+              ["Finance and Corporate", "Fairhill", "Accounts payable clerk"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "How to apply when there is something to apply for" },
+
+          { "kind": "text",
+            "body": "Applications are accepted only through our applicant tracking system at [url=synth://pinelock.talentroster.synth/]pinelock.talentroster.synth[/url]. Résumés sent to a Group address or to a title cannot be entered into the process and will not be acknowledged. We are aware this is a change from how Halloran did it.\n\n[b]Halloran applicants.[/b] Applications submitted to Halloran Media Group through halloran.jobraildirect before 1 April 2016 were not transferred and are not retrievable. If you applied to a Halloran title this year and have not heard back, you will not; please apply again when a position is posted." },
+
+          { "kind": "text",
+            "body": "You may file an expression of interest without a posted position. Expressions of interest are held for twelve months and are searched when a requisition opens. About one hire in nine came in this way last year." },
+
+          { "kind": "heading", "level": 2, "text": "Working at Pinelock" },
+
+          { "kind": "text",
+            "body": "We asked three people what they would tell somebody thinking about it." },
+
+          { "kind": "text",
+            "body": "[quote=Renata Coyle, copy editor, Central Desk, Fairhill]I read for four papers and I have not been to any of the four towns. There is a list taped along the bottom of my monitor of every place name in those four counties and how it is spelled, and I added to it about twice a week the first year. Ashkettle has one T in the middle. Somebody ran it as Askettle for three weeks in the spring and nobody at this desk knew it was wrong, because we are not from there. The list is the job. That and knowing that the Marchfield people will write in and the Leland people will not.[/quote]\n\nRenata joined the Central Desk in February 2016 as an hourly copy editor." },
+
+          { "kind": "text",
+            "body": "[quote=Bo Sikkema, second pressman, Dunmore plant]The press does not care who owns it. We start the Record at eleven forty at night and we are washing up by three. What changed this year is how many jobs come through in a week off the Corliss side, and after December it will all be here. I have been told the schedule works. I have run this press since 1987 and I would like to see the schedule.[/quote]\n\nBo has been on the Dunmore press since 1987." },
+
+          { "kind": "text",
+            "body": "[quote=Marisol Ferreyra, inside sales representative, Fairhill]One order, one invoice is a real thing and it is the reason I can sell to a furniture store in a town I could not find on a map. The hard part is the January rate change. You spend three weeks apologising for a number somebody else picked in November.[/quote]\n\nMarisol joined in 2014." },
+
+          { "kind": "heading", "level": 2, "text": "What the work is like" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "[b]Newsroom.[/b] You will shoot your own photographs, write your own headlines and post your own work. You will not do your own page design or your own copy editing after your title moves to the Central Desk. Two of our twenty newsrooms have made that move so far and the reporters in both say the same thing about it, which is that it is faster and that they miss the argument.",
+            "[b]Central Desk.[/b] Queue work, on a clock, for titles you do not live near. Eight people today, more next year.",
+            "[b]Editorial Operations.[/b] Deployment, house style files, intake, corrections, taxonomy. This team did not exist in 2014.",
+            "[b]Production.[/b] Two plants, nights, and the weather matters. After 2 December the Corliss plant prints Group titles only.",
+            "[b]Everywhere.[/b] The Group is nineteen markets and one telephone system. You will be on a call with somebody four hours away most days."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "Pay and benefits" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Medical, dental and vision after 60 days.",
+            "401(k) with a 3 percent match after one year of service. The match was 3 percent at Halloran and is unchanged for employees who came across in April.",
+            "Two weeks of paid vacation, three after five years, six paid holidays.",
+            "Mileage reimbursed at $0.28 a mile for newsroom and sales staff, paid with the second cheque of the month.",
+            "A subscription to the title you work for. Employees of the Group may request a digital subscription to any other property at no charge."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "Internships" },
+
+          { "kind": "text",
+            "body": "Pinelock does not run an internship program.\n\nHalloran ran eight to ten paid summer internships a year. The 2016 internships were honoured in full and all nine interns were paid through the end of their terms. The program is not being continued. Applications for summer 2017 are not being accepted." },
+
+          { "kind": "text",
+            "body": "Pinelock Media Group is an equal opportunity employer. Employment is at will. The Group does not sponsor employment visas.\n\n[i]This page was last updated 4 October 2016.[/i]" }
+        ]
+      },
+
+      {
+        "id": "news",
+        "name": "News",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "News from Pinelock" },
+
+          { "kind": "text",
+            "body": "Announcements from the Group. This page is not a news site and is not updated daily. For news, go to a title." },
+
+          { "kind": "text",
+            "body": "[b]Pinelock Media Group Announces Production Network Consolidation[/b]\n[i]15 August 2016[/i]\n\nFAIRHILL. Pinelock Media Group today announced that the Corliss plant will cease commercial and contract printing effective Friday 2 December 2016. From that date the Corliss plant will print Group titles only.\n\nThe Group's commercial and contract printing work will be consolidated at the Dunmore plant, which has the larger press and the longer web. Capacity at Dunmore will be offered to current Corliss customers subject to schedule availability.\n\nCorliss currently holds fourteen outside printing contracts. Each customer has been written to individually with the date, the contact at Dunmore and the current Dunmore night schedule. Customers whose contract runs past 2 December will be released without penalty.\n\n\"This is a capacity decision and not a cost decision,\" said Ellis Grandin, Chief Executive Officer. \"We have two presses running well under capacity on different nights and one of them should not be.\"\n\nNo positions are affected at Corliss. The plant's night crew moves to Group work.\n\n[i]Customer inquiries: printing@pinelockmedia.com.[/i]" },
+
+          { "kind": "text",
+            "body": "[b]Verity County Now Launches[/b]\n[i]2 May 2016[/i]\n\nGRIDFALL. Verity County Now, a digital-only local news site covering Verity County, launched today at veritycountynow.\n\nVerity County Now is the fourth title in the Group's County Digital line and the first launched in a county where the Group also publishes a newspaper. It covers county government, public safety, schools, youth and high school sports, obituaries and public notices for all of Verity County, including the northern townships.\n\nThe site is free to read and carries no subscription. It publishes between 40 and 70 items a week.\n\nThe Verity Ledger continues to publish twice weekly in print and daily to its own website. \"These are different products for different readers and there is no plan to combine them,\" said Gil Mattoon, Vice President, Editorial Operations." },
+
+          { "kind": "text",
+            "body": "[b]Pinelock Media Group Completes Acquisition of Halloran Communications[/b]\n[i]1 April 2016[/i]\n\nFAIRHILL and CORLISS. Pinelock Media Group has completed its acquisition of Halloran Communications, Inc. of Corliss. Terms were not disclosed. Former Halloran shareholders receive cash and a minority interest in the Group.\n\nHalloran's fourteen titles, two printing plants and 214 employees join Pinelock as the Halloran Group, the Group's second operating group. Halloran Communications, Inc. remains the legal entity of record for the titles' mastheads, contracts and legal-notice standing, and the name Halloran Media Group will continue in use at the titles through 2016.\n\nNo masthead is changing. No title is being renamed. No publication day changes this year.\n\nCurt Ledbetter, President and Chief Executive Officer of Halloran since 2006, will advise the Group through 31 December 2016 and will not continue after that date.\n\n\"The papers are in good order and the people running them are the people who should be running them,\" Ledbetter said. \"I have said what I have to say to Mr Grandin and he has heard it. The rest of it is his now.\"\n\n\"We bought fourteen titles that people still argue with,\" Grandin said. \"You cannot manufacture that and we are not going to spend it.\"\n\nGil Mattoon, Halloran's Vice President, News and Audience Development, joins the Group as Vice President, Editorial Operations. Susan Hatchell, Halloran's General Counsel, joins as General Counsel and Corporate Secretary of the Group." },
+
+          { "kind": "text",
+            "body": "[b]Pinelock Media Group to Acquire Halloran Communications[/b]\n[i]14 January 2016[/i]\n\nFAIRHILL. Pinelock Media Group has entered into a definitive agreement to acquire Halloran Communications, Inc., publisher of fourteen newspapers, shoppers and specialty titles in twelve markets across two states.\n\nThe transaction is expected to close in the second quarter of 2016, subject to customary conditions. The combined Group will operate 24 properties in 19 markets across three states.\n\nHalloran Communications was founded at Corliss in 1954 by Raymond T. Halloran. The company has been owned by the Halloran family and by management since. Its oldest title, the Kearney Falls Advocate, has published since 1889.\n\n\"Halloran is a company that never sold a paper and never closed one, and that is a short list,\" said Ellis Grandin, Chief Executive Officer of Pinelock. \"Our job is to put a modern production platform underneath what they built and otherwise leave it alone.\"\n\nThe Group said it does not expect newsroom reductions at any Halloran title as a result of the transaction." },
+
+          { "kind": "text",
+            "body": "[b]Hollis County Now Launches[/b]\n[i]11 January 2016[/i]\n\nFAIRHILL. Hollis County Now, the third title in the Group's County Digital line, launched today. It covers Hollis County and publishes only to the web." },
+
+          { "kind": "text",
+            "body": "[b]Pinelock Editorial Desk Reaches Second Property[/b]\n[i]1 December 2015[/i]\n\nFAIRHILL. The Pinelock Editorial Desk is now running at The Roselawn Press, the second property to deploy it. Cardinal Valley Times has been on the system since September 2015.\n\nThe Group expects all properties to be on the Editorial Desk by the end of 2018. See [url=/technology]Editorial Technology[/url]." },
+
+          { "kind": "text",
+            "body": "Media inquiries: Erin Sowash, Director of Communications, [b]esowash@pinelockmedia.com[/b], 555-0177. Inquiries about a story, a correction or a photograph go to the title that published it.\n\n[i]This page was last updated 16 November 2016.[/i]" }
+        ]
+      },
+
+      {
+        "id": "contact",
+        "name": "Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Contact" },
+
+          { "kind": "image", "seed": "pinelock-fairhill-loomis-street", "imgKind": "photo",
+            "caption": "80 Loomis Street, Fairhill. The Central Desk is on two." },
+
+          { "kind": "heading", "level": 2, "text": "Corporate office" },
+
+          { "kind": "text",
+            "body": "Pinelock Media Group\n80 Loomis Street, Third Floor\nFairhill\n\nSwitchboard 555-0177, weekdays 8:30 a.m. to 5:00 p.m. It is answered by a person. If what you want is a particular newspaper, it is faster to ring the newspaper." },
+
+          { "kind": "heading", "level": 2, "text": "Halloran Group office" },
+
+          { "kind": "text",
+            "body": "Halloran Communications, Inc.\n412 Rensbury Street, Fourth Floor\nCorliss\n\nSwitchboard 555-0186, weekdays 8:30 a.m. to 5:00 p.m. The Corliss office handles Halloran title business, subscriptions and contract printing through the end of 2016. Corporate functions have moved to Fairhill." },
+
+          { "kind": "heading", "level": 2, "text": "Where to direct an inquiry" },
+
+          { "kind": "table",
+            "head": ["Inquiry", "Where it goes"],
+            "rows": [
+              ["News tips and story ideas", "The newsroom of the title that covers you. Every newsroom answers its own telephone during business hours."],
+              ["Corrections", "The editor of the title that published it, or corrections@pinelockmedia.com. Corrections run on the property's corrections page and in print where the title prints."],
+              ["Letters to the editor", "The title. Letters run to 300 words."],
+              ["Obituaries", "The title's intake line, or the funeral home, which usually files for you."],
+              ["Legal and public notices", "legals@pinelockmedia.com, or the title's business office. Rates are set by statute."],
+              ["Display advertising", "ads@pinelockmedia.com, or your Pinelock representative."],
+              ["Classified advertising", "The title."],
+              ["Subscriptions, delivery, vacation holds", "1-800-555-0148, seven days, 6:00 a.m. to 10:00 a.m."],
+              ["Reprints and permissions", "permissions@pinelockmedia.com"],
+              ["Contract printing", "printing@pinelockmedia.com. See [url=/news]News[/url] for the December change."],
+              ["Employment", "Applicant tracking system only. See [url=/careers]Careers[/url]."],
+              ["Media inquiries", "Erin Sowash, Director of Communications, esowash@pinelockmedia.com"],
+              ["Investors and lenders", "Owen Brochu, Chief Financial Officer, at the corporate address above."],
+              ["Vendors and accounts payable", "ap@pinelockmedia.com"],
+              ["Service of process and notices of claim", "Susan Hatchell, General Counsel, at the corporate address above."]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Our newsrooms" },
+
+          { "kind": "text",
+            "body": "Every title prints its address and newsroom number in its masthead and on its own website. These are the ones people ring the corporate switchboard for." },
+
+          { "kind": "table",
+            "head": ["Title", "Address", "Newsroom"],
+            "rows": [
+              ["The Verity Ledger", "118 Third Street, Second Floor, Gridfall", "555-0131"],
+              ["The Marchfield Register", "7 Water Street, Marchfield", "555-0193"],
+              ["Dunmore Daily Record", "900 Canal Street, Dunmore", "555-0110"],
+              ["The Pell Union-Herald", "41 Union Square, Pell", "555-0164"],
+              ["The Leland Star", "12 Ash Street, Leland", "555-0152"],
+              ["The Bowes City Sentinel", "3 Depot Square, Bowes City", "555-0128"],
+              ["Cardinal Valley Times", "80 Loomis Street, Fairhill", "555-0204"],
+              ["County Digital titles", "No office. Correspondence to Fairhill.", "None"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Printing" },
+
+          { "kind": "text",
+            "body": "[b]Dunmore plant.[/b] 900 Canal Street, Dunmore. Dailies, Group weeklies and all outside contract work from 2 December 2016. The Record goes on the press at 11:40 p.m.\n\n[b]Corliss plant.[/b] 412 Rensbury Street, rear entrance off the alley. Group titles only from 2 December 2016. Commercial and contract work ends on that date.\n\nOutside work is quoted from Dunmore. Write to printing@pinelockmedia.com with a page count, a trim size, a run and a date." },
+
+          { "kind": "heading", "level": 2, "text": "Subscriptions" },
+
+          { "kind": "text",
+            "body": "Home delivery is $6.95 a month for a weekly title and $15.50 a month for a daily, both including full access to the title's website. Website access on its own is $4.95 a month. A digital subscription to any one title includes read access to every other Pinelock property website.\n\nRates rose on 1 July 2016 for the first time since 2013. A vacation hold of eight days or more is credited automatically; a shorter one is not.\n\nIf your paper did not come, ring the number above before 10:00 a.m. In town we will get one to you that day. On a motor route it is the next day." },
+
+          { "kind": "heading", "level": 2, "text": "Terms and notices" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Material published by a Pinelock property is the property of Pinelock Media Group, of Halloran Communications, Inc. or of their licensors. Reproduction requires written permission, which is given to schools, libraries and historical societies at no charge.",
+            "The Group does not sell or rent its subscriber list.",
+            "The Group's privacy policy was revised in June 2016 and is available on request.",
+            "Material published by a property before that property moved to the Pinelock Editorial Desk remains at its original address and is not maintained. See [url=/technology]Editorial Technology[/url].",
+            "This site is maintained by the communications office at Fairhill."
+          ] },
+
+          { "kind": "text",
+            "body": "© 2016 Pinelock Media Group, Fairhill. All rights reserved.\n\n[i]This page was last updated 2 August 2016.[/i]" }
+        ]
+      }
+    ]
+  }
+}

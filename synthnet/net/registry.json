@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T14:01:36Z",
+  "generated": "2026-09-20T14:37:31Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -400,20 +400,19 @@
     },
     {
       "domain": "gridfalldeals.com",
-      "title": "Gridfall Deals — Your Local Verity County Store",
+      "title": "Gridfall Deals - Verity County's Hometown Store",
       "type": "shop",
       "era": "2026",
       "skin": "megastore",
-      "description": "A storefront that says it is a family business on Ellery Street in Gridfall, selling county-name merchandise that ships from somewhere else in eighteen to thirty-two days, with a returns policy that closes its own window before the parcel lands.",
+      "description": "A storefront that says it is a family business on Depot Street in Gridfall, selling county-name merchandise off a print-on-demand catalogue, with delivery in 18 to 32 days and a returns window that shuts before the parcel lands.",
       "tags": [
         "gridfall",
-        "verity",
         "shopping",
-        "dropship",
-        "merchandise"
+        "merchandise",
+        "dropship"
       ],
       "path": "net/sites/gridfalldeals-com/site.json",
-      "bytes": 101690
+      "bytes": 95922
     },
     {
       "domain": "gridfalldetectorists.net",
@@ -571,6 +570,24 @@
       "tags": [],
       "path": "net/sites/kestrel-journal-net/site.json",
       "bytes": 23910
+    },
+    {
+      "domain": "kestrelvapor.com",
+      "title": "Kestrel Vapor - Route 62, Ashkettle",
+      "type": "page",
+      "era": "2015",
+      "skin": "plain-white",
+      "description": "The site of the vape shop that took the old Blue Kestrel diner building in 2013: a juice list, a punch card, directions that say look for the neon bird, and an About page that gets the diner's history wrong and is still up in 2026 with the correction sitting five pages away in the guestbook.",
+      "tags": [
+        "ashkettle",
+        "route-62",
+        "blue-kestrel",
+        "business",
+        "vape",
+        "2015"
+      ],
+      "path": "net/sites/kestrelvapor-com/site.json",
+      "bytes": 65694
     },
     {
       "domain": "mail.verity.net",
@@ -733,6 +750,22 @@
       "bytes": 105194
     },
     {
+      "domain": "pennock-sdr.net",
+      "title": "W. Pennock - Reception Notes, 4.2190 MHz USB",
+      "type": "page",
+      "era": "2013",
+      "skin": "plain-white",
+      "description": "Walt Pennock's measurement pages from Ashkettle: itemised equipment with prices, a written method, a session-by-session reception log for 4.2190 MHz USB with the nulls left in, a propagation plot described in text, and a list of the things he has ruled out.",
+      "tags": [
+        "ashkettle",
+        "radio",
+        "measurement",
+        "signal-62"
+      ],
+      "path": "net/sites/pennock-sdr-net/site.json",
+      "bytes": 81240
+    },
+    {
       "domain": "pinelock-media.com",
       "title": "Pinelock Media Group",
       "type": "page",
@@ -747,6 +780,22 @@
       ],
       "path": "net/sites/pinelock-media-com/site.json",
       "bytes": 34267
+    },
+    {
+      "domain": "pinelockmedia.com",
+      "title": "Pinelock Media Group - Trusted local news at scale",
+      "type": "page",
+      "era": "2016",
+      "skin": "plain-white",
+      "description": "Pinelock Media Group's corporate site in the year it bought Halloran Communications and with it the Verity Ledger, including a page describing the content pipeline it would install at the Ledger seven years later.",
+      "tags": [
+        "corporate",
+        "media",
+        "pinelock",
+        "2016"
+      ],
+      "path": "net/sites/pinelockmedia-com/site.json",
+      "bytes": 53313
     },
     {
       "domain": "pulse.gridfall.net",
@@ -907,6 +956,24 @@
       "tags": [],
       "path": "net/sites/tnorris-verity-net/site.json",
       "bytes": 22690
+    },
+    {
+      "domain": "trailcam.verity.net",
+      "title": "Slocum Road Trail Cameras",
+      "type": "media",
+      "era": "2026",
+      "skin": "tubeplayer",
+      "description": "Forty clips off six trail cameras on sixty acres at Coyne Flats: deer, raccoons, a culvert, one animal that is probably a dog, and a great deal of nothing at three in the morning.",
+      "tags": [
+        "verity",
+        "coyne flats",
+        "wildlife",
+        "trail",
+        "video",
+        "locals"
+      ],
+      "path": "net/sites/trailcam-verity-net/site.json",
+      "bytes": 57478
     },
     {
       "domain": "trailusers.verity.net",
@@ -1122,6 +1189,24 @@
       "bytes": 63588
     },
     {
+      "domain": "verityhistory.blog",
+      "title": "Verity County History",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "A monthly local history blog by Marjorie Hoberg, a retired title abstractor in Gridfall. Every claim is cited to a document, with its date and its page. It is the best-sourced site in the county and almost nobody reads it.",
+      "tags": [
+        "history",
+        "records",
+        "deeds",
+        "gridfall",
+        "sources",
+        "locals"
+      ],
+      "path": "net/sites/verityhistory-blog/site.json",
+      "bytes": 65673
+    },
+    {
       "domain": "verityledger.com",
       "title": "The Verity Ledger",
       "type": "news",
@@ -1250,6 +1335,24 @@
       ],
       "path": "net/sites/veritysignal-blog/site.json",
       "bytes": 52488
+    },
+    {
+      "domain": "veritytrailwatch.blog",
+      "title": "Verity Trail Watch",
+      "type": "blog",
+      "era": "2012-2014",
+      "skin": "kubrick-blue",
+      "description": "Ray Sabo's month-by-month record of the Verity Branch Trail being built on the old Marchfield and Coyne Flats branch line, from the first survey stakes in 2012 to the trailhead sign board in 2014.",
+      "tags": [
+        "marchfield",
+        "coyne-flats",
+        "verity-rail",
+        "trail",
+        "construction",
+        "photographs"
+      ],
+      "path": "net/sites/veritytrailwatch-blog/site.json",
+      "bytes": 64526
     },
     {
       "domain": "veritywater.org",
