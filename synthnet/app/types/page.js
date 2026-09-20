@@ -18,6 +18,16 @@
     return h >>> 0;
   }
 
+  /* The LAST four-digit year in a string, or 0. `site.era` is the skin
+     vintage and is free text -- "2013" or "2002-2014" -- so printing it as
+     a single date means picking an end on purpose. The footer below wants
+     the finish. */
+  function lastYear(v) {
+    var re = /(19|20)\d{2}/g, s = String(v == null ? '' : v), m, out = 0;
+    while ((m = re.exec(s)) !== null) { out = m[0]; }
+    return out;
+  }
+
   var IMG_SIZE = {
     avatar: [96, 96],
     thumb: [140, 105],
@@ -263,7 +273,13 @@
         el('div', { class: 'pg-foot' },
           el('p', null,
             String(site.title || 'My Home Page'),
-            site.era ? (' · last updated ' + String(site.era)) : '',
+            /* The LAST year in the era, because "last updated" takes an end.
+               marchfield-coop.com is skinned 2002-2014 and this printed
+               "last updated 2002-2014". The forum footer had the same fault
+               and wanted the other end of the range -- "uploaded in" is a
+               start, "last updated" is a finish, and there is no helper that
+               can be right for both. */
+            site.era ? (' · last updated ' + String(lastYear(site.era) || site.era)) : '',
             ' · best viewed at 800x600')));
     }
 

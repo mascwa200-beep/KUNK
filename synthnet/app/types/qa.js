@@ -434,8 +434,22 @@ window.SYNTH = window.SYNTH || {};
       return (b.votes || 0) - (a.votes || 0);
     });
 
+    /* Computed BEFORE the heading, because the heading counts it.
+       "2 Answers" sat above five .qa-answer blocks on askverity.com/q/q-01:
+       the count was the authored array and the page went on to append the
+       streamed ones under a second heading. A reader counting answers gets
+       five. Both groups still have their own heading; only the total is
+       honest now. */
+    var live = streamed(
+      'qa:' + ctx.site.domain + ':a:' + q.id,
+      ['mediaComments', 'blogPosts'],
+      8,
+      3
+    );
+    var shown = answers.length + live.length;
+
     main.appendChild(el('h2', { 'class': 'qa-h2' },
-      text(answers.length + (answers.length === 1 ? ' Answer' : ' Answers'))));
+      text(shown + (shown === 1 ? ' Answer' : ' Answers'))));
 
     var i;
     for (i = 0; i < answers.length; i++) {
@@ -446,12 +460,6 @@ window.SYNTH = window.SYNTH || {};
       }
     }
 
-    var live = streamed(
-      'qa:' + ctx.site.domain + ':a:' + q.id,
-      ['mediaComments', 'blogPosts'],
-      8,
-      3
-    );
     if (live.length) {
       main.appendChild(el('h2', { 'class': 'qa-h2 qa-h2-live' }, text('Answers still arriving')));
       var j;

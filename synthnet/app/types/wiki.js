@@ -69,7 +69,13 @@
         el('div', { class: 'wiki-foot' },
           el('p', null,
             'Content on ' + siteName + ' is written by whoever showed up. ',
-            site.era ? ('Snapshot: ' + String(site.era) + '.') : '')));
+            /* "Snapshot: 2026." on a wiki with a Recent Changes page, an
+               edit war and revisions arriving on the wall clock. The
+               renderer already knows better -- LIVING is computed below and
+               gates the whole living layer -- and the footer said it anyway.
+               A snapshot is a thing the frozen 2007 archive is; it is the
+               opposite of what this one is. */
+            (site.era && !LIVING) ? ('Snapshot: ' + String(site.era) + '.') : '')));
     }
 
     function notFound(msg) {

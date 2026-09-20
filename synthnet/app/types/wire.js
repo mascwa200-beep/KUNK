@@ -847,9 +847,17 @@ window.SYNTH = window.SYNTH || {};
       ul.appendChild(li);
     }
     box.appendChild(ul);
+    /* The list is two or three long (`want` above), and this sentence used
+       to say "Two of them" whatever it drew -- so a three-outlet list came
+       with a flat statement that two of them had gone quiet, and a reader
+       who counted found three. Derive it, and never claim more have stopped
+       reporting than are on the list. */
+    var quiet = picks.length >= 3 ? 'Two' : 'One';
+    var verb = picks.length >= 3 ? 'have' : 'has';
     box.appendChild(el('p', { 'class': 'wr-carry-note' },
       text('Pickup is reported by the subscriber, on the honour system, ' +
-           'monthly. Two of them have not reported since March.')));
+           'monthly. ' + quiet + ' of them ' + verb +
+           ' not reported since March.')));
     return box;
   }
 

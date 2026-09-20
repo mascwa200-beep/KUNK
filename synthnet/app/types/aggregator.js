@@ -361,6 +361,17 @@ window.SYNTH = window.SYNTH || {};
     return node;
   }
 
+  /* How many comments a list draws, replies included. Mirrors the recursion
+     in commentNode() above -- the two walk the same tree, so a count taken
+     any other way is a count of something else. */
+  function countComments(list) {
+    var n = 0, i;
+    for (i = 0; i < (list || []).length; i++) {
+      n += 1 + countComments(list[i] && list[i].replies);
+    }
+    return n;
+  }
+
   function pageItem(ctx, d, id) {
     var link = byId(d.links || [], id);
     if (!link) { return page404(ctx, d); }
@@ -401,7 +412,25 @@ window.SYNTH = window.SYNTH || {};
     if (boxAd) { body.appendChild(el('div', { 'class': 'agg-ad agg-ad-box' }, boxAd)); }
 
     var cs = link.comments || [];
-    body.appendChild(el('h2', { 'class': 'agg-h2' }, text(cs.length + ' comments')));
+
+    /* The streamed comments, computed HERE because the heading counts them.
+       gridline.social/item/l-016 said "3 comments" over nine rendered
+       .agg-comment nodes: the count was the top-level array while
+       commentNode() recurses into c.replies and three more arrive from the
+       stream below. A reader counting comments gets nine.
+
+       A reply is a comment. Nesting is how a thread is drawn, not a reason
+       to stop counting -- the number over a thread is how many people said
+       something in it. */
+    var live = streamed(
+      'agg:' + ctx.site.domain + ':c:' + link.id,
+      ['mediaComments', 'socialPosts'],
+      7,
+      3
+    );
+    var shown = countComments(cs) + live.length;
+    body.appendChild(el('h2', { 'class': 'agg-h2' },
+      text(shown + (shown === 1 ? ' comment' : ' comments'))));
 
     if (cs.length) {
       var ul = el('ul', { 'class': 'agg-clist agg-clist-top' });
@@ -421,12 +450,6 @@ window.SYNTH = window.SYNTH || {};
       body.appendChild(el('p', { 'class': 'agg-empty' }, text('No comments. Unusual in 2026.')));
     }
 
-    var live = streamed(
-      'agg:' + ctx.site.domain + ':c:' + link.id,
-      ['mediaComments', 'socialPosts'],
-      7,
-      3
-    );
     if (live.length) {
       var lu = el('ul', { 'class': 'agg-clist agg-clist-live' });
       var j;

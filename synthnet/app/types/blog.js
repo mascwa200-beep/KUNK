@@ -17,6 +17,15 @@
     MONTH_IDX[MONTHS[mi].slice(0, 3).toLowerCase()] = mi + 1;
   }
 
+  /* The first four-digit year in a string, or 0. `site.era` is the skin
+     vintage and is free text: it can be "2008" or "2009-2026", so anywhere
+     it is printed as if it were a single date the range has to be resolved
+     to one end deliberately. */
+  function firstYear(v) {
+    var m = /(19|20)\d{2}/.exec(String(v == null ? '' : v));
+    return m ? m[0] : 0;
+  }
+
   /* Parse the free-text date on a post into something sortable. Never throws. */
   function dateInfo(raw) {
     var s = String(raw == null ? '' : raw).trim();
@@ -262,7 +271,13 @@
         el('div', { class: 'blog-foot' },
           el('p', null,
             'Powered by nothing much. ',
-            site.era ? el('span', { class: 'blog-era' }, 'Since ' + String(site.era) + '.') : null)));
+            /* The FIRST year in the era, because "since" takes a start.
+               scanner.verity.net is skinned 2009-2026 and this printed
+               "Since 2009-2026." -- the same fault as the forum footer,
+               which took the era as a founding date. A blog that ran from
+               2009 to 2026 has been going since 2009. */
+            site.era ? el('span', { class: 'blog-era' },
+              'Since ' + String(firstYear(site.era) || site.era) + '.') : null)));
     }
 
     function notFound(what) {

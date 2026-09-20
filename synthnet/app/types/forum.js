@@ -351,8 +351,17 @@
     var regs = 1 + (h % 7);
     var guests = 3 + ((h >>> 4) % 22);
     var peak = 46 + ((h >>> 9) % 180);
+    /* eraYear(), not the era string. The era can be a range, and dropping it
+       into a date printed "Most users ever online was 118 on Mon Apr 2,
+       2009-2016 9:50 pm" on oldswap -- a date with a span where the year
+       goes. Same fault as the footer year, four hundred lines apart, and
+       neither was caught by anything.
+
+       The LAST year of the range here, where the footer wants the first: a
+       board's busiest night is late in its life, and the script that runs it
+       went up at the start. One field, two ends, two call sites. */
     var peakDate = DOW[(h >>> 3) % 7] + ' ' + MON[(h >>> 6) % 12] + ' ' +
-      (1 + ((h >>> 11) % 28)) + ', ' + txt(ctx.site.era, '2004') + ' ' +
+      (1 + ((h >>> 11) % 28)) + ', ' + String(eraYear(ctx)) + ' ' +
       (1 + ((h >>> 13) % 12)) + ':' + (10 + ((h >>> 17) % 49)) + ' pm';
 
     var authors = {}, postTotal = 0, topicTotal = 0;

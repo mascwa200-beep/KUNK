@@ -526,7 +526,13 @@ window.SYNTH = window.SYNTH || {};
         tw.appendChild(postNode(ctx, preview[j], t.id, (t.posts || []).length - preview.length + j));
       }
 
-      var hidden = Math.max(0, (t.replyCount || (t.posts || []).length) - preview.length);
+      /* replyTotal(t), the same source the bump banner thirteen lines above
+         is gated on and the same one /catalog prints. This read raw
+         t.replyCount, which is the count before live.threadLife() grows it
+         on the wall clock -- so a thread could say "Bump limit reached" and,
+         directly underneath, omit a number of replies from before it got
+         there. One thread, one block, two totals. */
+      var hidden = Math.max(0, replyTotal(t) - preview.length);
       if (hidden > 0) {
         tw.appendChild(el('div', { 'class': 'bd-omitted' },
           text(hidden + ' repl' + (hidden === 1 ? 'y' : 'ies') + ' omitted. '),
