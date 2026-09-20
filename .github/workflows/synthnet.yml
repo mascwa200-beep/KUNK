@@ -229,13 +229,21 @@ jobs:
         # addEventListener, which leaves no trace a page can read, and this
         # app delegates clicks from #synth-viewport, so every element has a
         # listener above it. So pass 2 PRESSES each distinct control and
-        # watches for the route, the DOM or the scroll to move. Likewise a
-        # dead end is found by asking each site for a path that cannot exist
-        # and recognising that answer, rather than guessing at its wording.
+        # watches for the route, the DOM, the scroll or a form field's value
+        # to move. Likewise a dead end is found by asking each site for a
+        # path that cannot exist and recognising that answer, rather than
+        # guessing at its wording.
         #
-        # Six pages a site, 109 sites, 597 pages, 214 controls pressed: 233
-        # seconds. I guessed seven or eight minutes when I added this and it
-        # is under four, so the budget stays at six.
+        # It now also presses the controls it can SEE a handler on, which it
+        # used to trust and skip. That is the more useful half: a handler
+        # that is a no-op, an early return or a throw passed the old check
+        # with a clean sweep, and the whole argument for pressing anything
+        # was that static inspection cannot answer this.
+        #
+        # Six pages a site, 109 sites: 233 seconds for 214 controls before
+        # that change, 288 for 348 after. I guessed seven or eight minutes
+        # when I added this; it is under five, so the budget stays at six
+        # and --press stays uncapped.
         run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 6
 
       - name: Every renderer mode has to render once

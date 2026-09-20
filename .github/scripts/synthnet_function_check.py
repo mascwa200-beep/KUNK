@@ -31,20 +31,32 @@ Those two tell us a node is DEFINITELY live. They cannot tell us it is dead,
 because a handler may be delegated from an ancestor -- and this app delegates
 from #synth-viewport, so every element has a listener above it somewhere.
 
+They also cannot tell us it WORKS, which is the hole this check ran with for
+its first two rounds: anything carrying a handler was dropped from the index
+and never pressed, on the reasoning that our own code had promised to do
+something. A no-op, an early return, or a handler that throws all pass that
+reasoning, and the argument for pressing things in the first place was that
+static inspection cannot answer this. It cannot answer it here either.
+
 So the check has two passes:
 
   1. crawl every site and collect the things that LOOK like controls and are
-     not provably live, deduped by tag+class+text, because the same dead span
-     on forty pages is one bug;
+     not provably live (`inert`), AND the things our own code attached a
+     handler to (`handled`) -- both deduped by tag+class+text, because the
+     same dead span on forty pages is one bug;
   2. for each distinct one, go to a page carrying it, PRESS IT, and see
-     whether anything at all changes -- the route, or a single byte of the
-     viewport. Nothing changed means nothing happens means decor.
+     whether anything at all changes -- the route, a single byte of the
+     viewport, the scroll position -- and whether the press raised anything.
 
-Pass 2 is the whole point. Pass 1 is an index so that pass 2 is a hundred
-clicks instead of four thousand.
+Nothing changed means nothing happens. From the first bucket that is decor;
+from the second it is a no-op, which is the worse of the two, because the
+code reads as though it works.
+
+Pass 2 is the whole point. Pass 1 is an index so that pass 2 is a few hundred
+clicks instead of ten thousand.
 
 Usage:  python3 .github/scripts/synthnet_function_check.py [--root synthnet]
-        [--sites N] [--pages N] [--only domain.com]
+        [--sites N] [--pages N] [--press N] [--only domain.com]
 """
 
 import argparse
@@ -97,6 +109,46 @@ CLICKY = {
     "follow", "unfollow", "like", "vote", "flag", "mark read", "menu",
 }
 
+# Controls the press pass must not touch, and why. Every entry is a thing
+# that works BY changing state this run depends on, so pressing it would
+# either destroy the run or make every verdict after it meaningless.
+#
+# Matched on the control's exact text. Keep this list to things that are
+# dangerous, never to things that are merely awkward -- an entry added to
+# quiet a finding is the finding.
+# Every one of these is a stage of a confirmChain() in app/control.js, the
+# only surface on this network that can change anything.
+#
+# The second stage is the one that fires, so all four are here. The first
+# stage of the two whole-store wipes is here as well, because a sweep that
+# empties the device at site 30 then checks the remaining 79 against an empty
+# store and reports what it finds as fact -- and "pass 2 re-navigates before
+# every press, so it can only ever arm them" is a property of today's control
+# flow, not a guarantee worth betting the run on.
+#
+# "Remove" and "Delete" -- the first stages at :698 and :1028 -- are
+# deliberately NOT here. They only arm, they are ordinary words that appear
+# as real controls elsewhere on the network, and a list that swallows them
+# would stop testing those. The point of a skip list is the six things that
+# are dangerous, not every word near them.
+DO_NOT_PRESS = {
+    "Reset everything": "control.js:1146 -- account, posts, sites, packs",
+    "This erases everything. Tap again.": "the tap that fires it",
+    "Wipe storage": "control.js:1308 -- the same wipe from the other side",
+    "Everything goes. Tap again.": "the tap that fires it",
+    "Really remove?": "control.js:698 -- removes an imported pack",
+    "Really delete?": "control.js:1028 -- deletes a site you authored",
+}
+
+# There is deliberately no allowlist of handlers that are ALLOWED to do
+# nothing. The one category that genuinely qualifies -- a control already in
+# the state pressing it would set, such as the highlighted chip on a filter
+# row -- is recognised from its own aria-pressed/aria-current markup in the
+# probe, which is a rule the content states about itself rather than a list
+# of sites this check has agreed to stop looking at. An empty allowlist that
+# nothing ever matches is a check that cannot fire; a full one is a way to
+# make findings go away. Neither is wanted here.
+
 # The page-level probe. Returns everything that looks like a control together
 # with whether it is one, so the Python side decides and the JS side only
 # reports.
@@ -104,25 +156,67 @@ PROBE = r"""() => {
   const view = document.getElementById('synth-viewport');
   if (!view) return {error: 'no viewport'};
 
+  /* Returns WHY a node is live, not just that it is, because the three
+   * answers get different treatment:
+   *
+   *   'link'    someone else's job -- synthnet_link_check.py drives the app
+   *             and follows every one of these.
+   *   'native'  the browser's behaviour, not ours. A <select>, a <details>,
+   *             a <form>. Pressing a <form> is not how a form is used.
+   *   'handler' OUR code said it would do something when pressed. That is a
+   *             promise this check can hold it to, and until the `handled`
+   *             bucket below existed it was the one promise nobody checked:
+   *             these were dropped from `inert` and never pressed, so a
+   *             handler that was a no-op, an early return, or a throw passed
+   *             a clean sweep. Static inspection cannot tell a working
+   *             handler from an empty one either. Pass 2 presses it.
+   *
+   * null means no trace of a handler, which does NOT mean dead -- see the
+   * delegation note below.
+   */
   const isReal = (n) => {
-    if (n.dataset && n.dataset.synthHref) return true;
-    if (typeof n.onclick === 'function') return true;
-    if (n.__synthListener) return true;
+    if (n.dataset && n.dataset.synthHref) return 'link';
+    if (n.tagName === 'A' && n.getAttribute('href') &&
+        n.getAttribute('href') !== '#') return 'link';
+    /* Native tags are classified BEFORE handlers on purpose. A <form> with a
+     * submit listener and a <select> with a change listener both carry a
+     * handler, and clicking either does nothing, correctly -- putting them
+     * in `handled` would report every form on the network as a no-op. */
+    if (n.tagName === 'INPUT' || n.tagName === 'TEXTAREA' ||
+        n.tagName === 'SELECT' || n.tagName === 'DETAILS' ||
+        n.tagName === 'SUMMARY' || n.tagName === 'LABEL' ||
+        n.tagName === 'FORM' || n.tagName === 'OPTION') return 'native';
+    if (typeof n.onclick === 'function') return 'handler';
+    if (n.__synthListener) return 'handler';
     /* NO ancestor walk. The engine puts one delegated click handler on
      * #synth-viewport to catch [data-synth-href], so "an ancestor has a
      * listener" is true of every element on every page and marking those
      * live turned this check off entirely -- it reported a clean sweep of
      * twelve sites while the dead nav item was still sitting there. Static
      * inspection cannot answer this. Pass 2 clicks the thing. */
-    if (n.tagName === 'A' && n.getAttribute('href') &&
-        n.getAttribute('href') !== '#') return true;
-    if (n.tagName === 'INPUT' || n.tagName === 'TEXTAREA' ||
-        n.tagName === 'SELECT' || n.tagName === 'DETAILS' ||
-        n.tagName === 'SUMMARY' || n.tagName === 'LABEL') return true;
-    if (n.closest && n.closest('details')) return true;
-    if (n.closest && n.closest('[data-synth-href]')) return true;
-    if (n.closest && n.closest('form')) return true;
-    return false;
+    if (n.closest && n.closest('details')) return 'native';
+    if (n.closest && n.closest('[data-synth-href]')) return 'link';
+    if (n.closest && n.closest('form')) return 'native';
+    return null;
+  };
+
+  /* A control that is ALREADY in the state pressing it would set. Pressing
+   * the highlighted "All" chip on a filter row sets current to what current
+   * already is and redraws the identical grid, and that is the chip working.
+   *
+   * Decided by ARIA rather than by class name on purpose. `tm-chip-on`,
+   * `is-active`, `sel`, `here` and `current` are all in use on this network
+   * and excluding anything that looks like them would be the third time in
+   * this file that widening a filter turned the check off. aria-pressed and
+   * aria-current are the markup saying, in the one vocabulary that means
+   * exactly this, that the control is already set. These are counted and
+   * printed at the end rather than quietly dropped. */
+  const alreadySet = (n) => {
+    if (!n.getAttribute) return false;
+    return n.getAttribute('aria-pressed') === 'true' ||
+           n.getAttribute('aria-selected') === 'true' ||
+           (n.hasAttribute('aria-current') &&
+            n.getAttribute('aria-current') !== 'false');
   };
 
   const disabledish = (n) => {
@@ -167,13 +261,45 @@ PROBE = r"""() => {
     return false;
   };
 
-  const out = {inert: [], links: [], forms: 0, buttons: 0};
+  const out = {inert: [], handled: [], links: [], forms: 0, buttons: 0,
+               alreadySet: 0, overflow: 0};
+
+  /* Which one of its kind, so pass 2 can find a textless or repeated
+   * control again -- tag+class+text does not identify one of four empty
+   * spans. */
+  const nthOf = (n, tag) => Array.prototype.indexOf.call(
+    view.querySelectorAll(tag + (n.className ? '.' +
+      String(n.className).trim().split(/\s+/).join('.') : '')), n);
 
   // (a) anything the browser says is clickable
   const all = view.querySelectorAll('*');
   for (const n of all) {
     const txt = (n.textContent || '').replace(/\s+/g, ' ').trim();
     if (txt.length > 60) continue;
+    if (n.children.length > 2) continue;            // a container, not a control
+    const real = isReal(n);
+
+    /* A node carrying its OWN handler is a control by construction, so none
+     * of the looks-like-a-control gates below apply to it. Those gates exist
+     * to GUESS at nodes with no handler; this is not a guess. The only open
+     * question is whether pressing it does anything, and only pass 2 can
+     * answer that.
+     *
+     * Disabled is excluded because a greyed-out button doing nothing is the
+     * button working. Ads are excluded for the same reason as below. Width
+     * is excluded because a control nobody can hit is a different bug. */
+    if (real === 'handler' && alreadySet(n)) { out.alreadySet++; continue; }
+    if (real === 'handler' && !disabledish(n) && !isAd(n) &&
+        n.getBoundingClientRect().width >= 8) {
+      // Counted, not silently dropped, if a page ever exceeds the cap.
+      if (out.handled.length >= 60) { out.overflow++; continue; }
+      out.handled.push({
+        tag: n.tagName, cls: String(n.className || '').slice(0, 40),
+        text: txt.slice(0, 48), nth: nthOf(n, n.tagName),
+        why: (typeof n.onclick === 'function') ? 'onclick' : 'addEventListener'
+      });
+      continue;
+    }
     /* A control with NO text is still a control. media.js draws its
      * transport row as empty spans styled into shapes, and skipping
      * textless nodes meant the volume control -- dead, next to three live
@@ -188,7 +314,6 @@ PROBE = r"""() => {
       if (est.cursor !== 'pointer' && !isBtn) continue;
       if (n.getBoundingClientRect().width < 8) continue;
     }
-    if (n.children.length > 2) continue;            // a container, not a control
     const st = getComputedStyle(n);
     const pointer = st.cursor === 'pointer';
     const clicky = CLICKY_WORDS.has(txt.toLowerCase());
@@ -203,16 +328,12 @@ PROBE = r"""() => {
      * offering to do anything. */
     if (!pointer && (PROSE.has(tag) || inProse(n))) continue;
     if (isAd(n) || wrapsAControl(n)) continue;
-    if (isReal(n) || disabledish(n)) continue;
+    if (real || disabledish(n)) continue;
     // A bare word inside a real link's label is not itself decor.
     out.inert.push({
       tag: tag, cls: String(n.className || '').slice(0, 40),
       text: txt.slice(0, 48),
-      /* Which one of its kind, so pass 2 can find a textless control
-       * again -- tag+class+text does not identify one of four empty spans. */
-      nth: Array.prototype.indexOf.call(
-        view.querySelectorAll(tag + (n.className ? '.' +
-          String(n.className).trim().split(/\s+/).join('.') : '')), n),
+      nth: nthOf(n, tag),
       why: pointer ? 'cursor:pointer' : (controlish ? 'is a ' + tag.toLowerCase()
                                                     : 'reads as a control')
     });
@@ -230,17 +351,43 @@ PROBE = r"""() => {
 
 # A cheap fingerprint of the viewport: length plus one character from the
 # middle. Enough to notice a re-render, cheap enough to take 200 times.
-SNAP = r"""() => {
-  const v = document.getElementById('synth-viewport');
+#
+# Written once and interpolated into both SNAP and SNAP_AND_CLICK, because
+# the two are compared against each other and a fingerprint that drifts
+# between them would report every control on the network as live or as dead,
+# with nothing in between to notice.
+FINGERPRINT = r"""(v) => {
   const h = v ? v.innerHTML : '';
+  /* A form field's VALUE is a DOM property and is not in innerHTML, so a
+   * control whose whole job is to fill or clear a form is invisible to a
+   * fingerprint taken from the markup alone. The control panel's "New /
+   * clear" button was reported as a no-op for exactly this reason: it sets
+   * .value = '' on five fields and the page it draws does not change by one
+   * byte. Read the values too, and the button is doing its job. */
+  let vals = 0, vlen = 0;
+  if (v) {
+    for (const f of v.querySelectorAll('input, textarea, select')) {
+      const s = String(f.value == null ? '' : f.value);
+      vlen += s.length;
+      for (let i = 0; i < s.length; i++) { vals = (vals * 31 + s.charCodeAt(i)) | 0; }
+      vals = (vals * 31 + (f.checked ? 1 : 2)) | 0;
+    }
+  }
   /* Scroll counts. A table-of-contents entry calls scrollIntoView and
    * changes neither the DOM nor the route, and the first version of this
    * check called every one of them dead. Jumping the reader to a heading is
    * a thing happening. */
   return {len: h.length, sig: h.length ? h.charCodeAt(h.length >> 1) : 0,
           route: location.hash,
-          scroll: (v ? v.scrollTop : 0) + window.scrollY};
+          scroll: (v ? v.scrollTop : 0) + window.scrollY,
+          vals: vals, vlen: vlen};
 }"""
+
+# The fields every comparison must agree on. Adding one to FINGERPRINT and
+# forgetting it here is how a check quietly stops looking at something.
+FP_KEYS = ("len", "sig", "route", "scroll", "vals", "vlen")
+
+SNAP = """() => (%s)(document.getElementById('synth-viewport'))""" % FINGERPRINT
 
 SNAP_AND_CLICK = r"""(want) => {
   const view = document.getElementById('synth-viewport');
@@ -259,13 +406,43 @@ SNAP_AND_CLICK = r"""(want) => {
     if (want.nth < same.length) { n = same[want.nth]; }
   }
   if (!n) return {gone: true};
-  const h = view.innerHTML;
-  const before = {len: h.length, sig: h.length ? h.charCodeAt(h.length >> 1) : 0,
-                  route: location.hash,
-                  scroll: view.scrollTop + window.scrollY};
+
+  /* Give the control something to work with before pressing it.
+   *
+   * The assistant's Send button is the case: submit() starts
+   * `if (!text) { return; }`, so pressing Send with an empty box correctly
+   * does nothing, and the check called it a no-op. The tempting fix is to
+   * allowlist the word "Send", which would also silence a Send button that
+   * is genuinely dead on some other site -- exactly the bug this exists to
+   * find. So type into the box instead. A composer that is only ever
+   * pressed empty is not being tested at all.
+   *
+   * Nearest empty text field going up three ancestors, no further: beyond
+   * that we would start filling in a search box on the other side of the
+   * page and pressing an unrelated button. */
+  var filled = false;
+  var hop = n, depth = 0;
+  while (hop && depth < 4) {
+    var box = hop.querySelector &&
+      hop.querySelector('textarea, input[type="text"], input[type="search"], input:not([type])');
+    if (box && !box.value) {
+      box.value = 'verity';
+      box.dispatchEvent(new Event('input', {bubbles: true}));
+      box.dispatchEvent(new Event('change', {bubbles: true}));
+      filled = true;
+      break;
+    }
+    hop = hop.parentElement;
+    depth++;
+  }
+
+  /* Snapshot AFTER filling, so the typing is not mistaken for the press
+   * having done something. */
+  const before = (FINGERPRINT)(view);
+  before.filled = filled;
   n.click();
   return before;
-}"""
+}""".replace("FINGERPRINT", FINGERPRINT)
 
 
 def main():
@@ -275,6 +452,9 @@ def main():
     ap.add_argument("--pages", type=int, default=10, help="pages per site")
     ap.add_argument("--only", default="", help="domain, or a comma list")
     ap.add_argument("--type", default="", help="only sites of this type")
+    ap.add_argument("--press", type=int, default=0,
+                    help="cap distinct presses (0 = no cap); the number "
+                         "skipped is always printed")
     ap.add_argument("--json", default="", help="write findings here")
     args = ap.parse_args()
     root = pathlib.Path(args.root).resolve()
@@ -291,7 +471,9 @@ def main():
     threading.Thread(target=srv.serve_forever, daemon=True).start()
 
     findings = {}       # domain -> list of finding dicts
-    stats = {"pages": 0, "sites": 0, "inert": 0, "notfound": 0}
+    stats = {"pages": 0, "sites": 0, "inert": 0, "handled": 0, "notfound": 0,
+             "noop": 0, "throws": 0, "skipped": 0, "already": 0, "unsafe": 0,
+             "overflow": 0, "typed": 0}
     errors = []
 
     try:
@@ -424,31 +606,90 @@ def main():
                             {"path": path, "kind": "inert", "type": typ,
                              "tag": item["tag"], "cls": item["cls"],
                              "text": item["text"], "why": item["why"],
+                             "nth": item.get("nth", -1),
                              "at": "synth://%s%s" % (dom, path)})
+                    # Controls our own code claims are live. They go through
+                    # exactly the same press pass; the only difference is
+                    # what a silent one is called at the end.
+                    stats["already"] += probe.get("alreadySet", 0)
+                    stats["overflow"] += probe.get("overflow", 0)
+                    for item in probe.get("handled", []):
+                        if item["text"] in DO_NOT_PRESS:
+                            stats["unsafe"] += 1
+                            continue
+                        stats["handled"] += 1
+                        findings.setdefault(dom, []).append(
+                            {"path": path, "kind": "handled", "type": typ,
+                             "tag": item["tag"], "cls": item["cls"],
+                             "text": item["text"], "why": item["why"],
+                             "nth": item.get("nth", -1),
+                             "at": "synth://%s%s" % (dom, path)})
+                    # Renderers spell an internal link two ways. Nearly all of
+                    # them emit a bare path, "/faq". app/control.js emits the
+                    # whole thing, "synth://control.verity.net/packs" -- and a
+                    # startswith("/") filter dropped every one of those, so
+                    # the control panel was crawled to exactly its front door
+                    # and the buttons on the four panels behind it had never
+                    # been pressed. It is the ONE surface on this network that
+                    # can change anything, and this check was reporting a
+                    # clean sweep of it while never going inside. Both
+                    # spellings, and a link to another domain is the link
+                    # check's job, not this crawl's.
                     for href in probe["links"]:
-                        if href.startswith("/") and href not in seen:
-                            if len(seen) + len(queue) < args.pages:
-                                queue.append(href)
+                        here = "synth://%s/" % dom
+                        if href.startswith(here):
+                            href = href[len(here) - 1:]
+                        elif not href.startswith("/"):
+                            continue
+                        if href not in seen and len(seen) + len(queue) < args.pages:
+                            queue.append(href)
 
             # ---- pass 2: press them --------------------------------------
             #
             # One instance of each distinct candidate, on a page carrying it.
-            # A control is real if pressing it changes the route or a byte of
-            # the viewport. This is the only test delegation cannot fool.
+            # A control is real if pressing it moves the route, a byte of the
+            # viewport, the scroll position, or the value of a form field.
+            # This is the only test delegation cannot fool.
+            #
+            # BOTH buckets come through here. `inert` is a suspicion -- we
+            # found no handler and want to know. `handled` is a promise --
+            # our code attached a handler and we are holding it to that. The
+            # press is identical; only the word for a silent one differs.
+            #
+            # The dedupe key is (type, tag, class, text), and the renderers
+            # are shared across sites, so a control drawn by forum.js is
+            # pressed once for the whole forum type rather than once per
+            # forum. That is what keeps this affordable -- and it is also its
+            # blind spot: if one site's copy of a shared control is broken
+            # and another's works, the working one may be the instance
+            # pressed.
             candidates = {}
             for dom, items in findings.items():
                 for f in items:
-                    if f["kind"] == "inert":
+                    if f["kind"] in ("inert", "handled"):
                         candidates.setdefault(
                             (f.get("type"), f["tag"], f["cls"], f["text"]), f)
 
+            if args.press and len(candidates) > args.press:
+                # No silent caps. A cap that is printed is a known limit; a
+                # cap that is not reads as a clean sweep.
+                keep = list(candidates.items())[:args.press]
+                stats["skipped"] = len(candidates) - len(keep)
+                candidates = dict(keep)
+
             verdicts = {}
+            press_errors = {}
             for key, f in candidates.items():
                 try:
                     page.evaluate(
                         "(u) => SYNTH.engine.navigate(u, {push: false})",
                         f["at"])
                     page.wait_for_timeout(200)
+                    # Clear immediately before the press, so a handler that
+                    # throws is attributed to the control that threw rather
+                    # than to whatever page is navigated to next. The
+                    # per-navigation clear above happens too early for that.
+                    errors.clear()
                     shot = page.evaluate(SNAP_AND_CLICK,
                                          {"tag": f["tag"], "text": f["text"],
                                           "cls": f["cls"],
@@ -456,6 +697,8 @@ def main():
                     if shot.get("gone"):
                         verdicts[key] = "vanished"
                         continue
+                    if shot.get("filled"):
+                        stats["typed"] += 1
                     # POLL, do not sample once. The assistant's chips repaint
                     # about 300ms after the press and a single look at 240ms
                     # called every one of them dead. A control is allowed to
@@ -464,12 +707,14 @@ def main():
                     for _ in range(9):
                         page.wait_for_timeout(180)
                         after = page.evaluate(SNAP)
-                        if (after["len"] != shot["len"]
-                                or after["sig"] != shot["sig"]
-                                or after["route"] != shot["route"]
-                                or after["scroll"] != shot["scroll"]):
+                        if any(after[k] != shot[k] for k in FP_KEYS):
                             verdict = "live"
                             break
+                    # A handler that threw is not live even if the half of it
+                    # that ran before the throw repainted something.
+                    if errors:
+                        verdict = "threw"
+                        press_errors[key] = errors[0][:160]
                     verdicts[key] = verdict
                 except Exception as exc:
                     verdicts[key] = "error: " + str(exc)[:60]
@@ -478,51 +723,126 @@ def main():
     finally:
         srv.shutdown()
 
-    live = sum(1 for v in verdicts.values() if v == "live")
-    dead = {k: f for k, f in candidates.items() if verdicts.get(k) == "decor"}
-    other = len(verdicts) - live - len(dead)
-    print(f"pressed {len(candidates)} distinct controls: {live} did something, "
-          f"{len(dead)} did nothing at all, {other} could not be tested\n")
+    # What a silent press MEANS depends on which bucket it came from, which
+    # is the only reason the two are tracked separately at all.
+    #
+    #   inert   + silent  -> decor. Nothing was listening and nothing
+    #                        happened: three words in link colour.
+    #   handled + silent  -> a no-op. Something WAS listening and still
+    #                        nothing happened, which is the worse bug of the
+    #                        two, because the code reads as if it works.
+    #   either  + threw   -> the handler raised. Named separately so nobody
+    #                        has to guess which press produced the console
+    #                        line.
+    def _relabel(f):
+        key = (f.get("type"), f["tag"], f["cls"], f["text"])
+        # Not in verdicts means never pressed: over the --press cap, which is
+        # counted and printed above.
+        if key not in verdicts:
+            return None
+        v = verdicts[key]
+        if v == "threw":
+            g = dict(f)
+            g["kind"] = "throws"
+            g["detail"] = press_errors.get(key, "")
+            return g
+        if v != "decor":
+            return None                        # live, vanished, or untestable
+        if f["kind"] == "handled":
+            g = dict(f)
+            g["kind"] = "noop"
+            return g
+        return f
 
-    # Only the ones that did nothing survive as findings.
+    live = sum(1 for v in verdicts.values() if v == "live")
+    silent = sum(1 for v in verdicts.values() if v == "decor")
+    threw = sum(1 for v in verdicts.values() if v == "threw")
+    other = len(verdicts) - live - silent - threw
+    n_inert = sum(1 for k, f in candidates.items() if f["kind"] == "inert")
+    n_handled = len(candidates) - n_inert
+    print(f"pressed {len(candidates)} distinct controls "
+          f"({n_inert} with no handler found, {n_handled} our code said were "
+          f"live): {live} did something, {silent} did nothing at all, "
+          f"{threw} threw, {other} could not be tested")
+    if other:
+        # Say WHY they could not be tested. "Could not be tested" is a
+        # number that reads like a rounding error and can hide a bucket the
+        # check has stopped reaching.
+        gone = sum(1 for v in verdicts.values() if v == "vanished")
+        broke = other - gone
+        print(f"    of those, {gone} were no longer on the page when pass 2 "
+              f"went back for them, {broke} errored in the harness")
+    if stats["skipped"]:
+        print(f"  NOT pressed: {stats['skipped']} over the --press cap")
+    print()
+
+    # Only the ones that did nothing, or threw, survive as findings.
     for dom in list(findings):
-        findings[dom] = [
-            f for f in findings[dom]
-            if f["kind"] != "inert"
-            or (f.get("type"), f["tag"], f["cls"], f["text"]) in dead]
+        kept = []
+        for f in findings[dom]:
+            if f["kind"] in ("inert", "handled"):
+                g = _relabel(f)
+                if g:
+                    kept.append(g)
+            else:
+                kept.append(f)
+        findings[dom] = kept
         if not findings[dom]:
             del findings[dom]
-    stats["inert"] = sum(1 for items in findings.values()
-                         for f in items if f["kind"] == "inert")
+    for name in ("inert", "noop", "throws"):
+        stats[name] = sum(1 for items in findings.values()
+                          for f in items if f["kind"] == name)
 
-    # Group the inert findings: the same span on 40 pages is one bug.
+    # Group the control findings: the same span on 40 pages is one bug.
     groups = {}
     for dom, items in findings.items():
         for f in items:
-            if f["kind"] != "inert":
+            if f["kind"] not in ("inert", "noop", "throws"):
                 key = ("%s|%s|%s" % (f["kind"], dom, f.get("path", "")))
                 groups.setdefault(key, {"kind": f["kind"], "domains": set(),
                                         "sample": f, "count": 0})
             else:
-                key = "inert|%s|%s|%s" % (f.get("type"), f["tag"], f["cls"])
-                groups.setdefault(key, {"kind": "inert", "domains": set(),
+                key = "%s|%s|%s|%s|%s" % (f["kind"], f.get("type"), f["tag"],
+                                          f["cls"], f["text"])
+                groups.setdefault(key, {"kind": f["kind"], "domains": set(),
                                         "sample": f, "count": 0})
             groups[key]["domains"].add(dom)
             groups[key]["count"] += 1
 
     ordered = sorted(groups.items(), key=lambda kv: -kv[1]["count"])
-    print(f"swept {stats['sites']} sites, {stats['pages']} pages")
+    print(f"swept {stats['sites']} sites, {stats['pages']} pages, "
+          f"{stats['handled']} handler controls seen")
+    # Say out loud what was seen and not pressed, so "everything works" never
+    # rests on a number nobody printed.
+    if stats["already"]:
+        print(f"  {stats['already']} not pressed: already the selected one "
+              "(aria-pressed / aria-current)")
+    if stats["unsafe"]:
+        print(f"  {stats['unsafe']} not pressed: on the DO_NOT_PRESS list")
+    if stats["overflow"]:
+        print(f"  {stats['overflow']} not indexed: over the per-page cap")
+    # If the fill selector in SNAP_AND_CLICK ever stops matching, this drops
+    # to zero and every composer on the network quietly goes back to being
+    # pressed empty. A number nobody prints is a number nobody notices.
+    print(f"  {stats['typed']} presses typed into a text box first")
     print(f"  {stats['inert']} things that look like controls and are not")
+    print(f"  {stats['noop']} controls with a handler that does nothing")
+    print(f"  {stats['throws']} controls whose handler threw")
     print(f"  {stats['notfound']} navigations that dead-ended\n")
     for key, g in ordered[:60]:
         s = g["sample"]
         where = ", ".join(sorted(g["domains"])[:3])
         if len(g["domains"]) > 3:
             where += f" +{len(g['domains']) - 3}"
-        if g["kind"] == "inert":
-            print(f"  x{g['count']:<4} [{s.get('type','?')}] <{s['tag'].lower()}"
-                  f" class=\"{s['cls']}\"> {s['text']!r}  ({s['why']})")
-            print(f"         {where}")
+        if g["kind"] in ("inert", "noop", "throws"):
+            lead = {"inert": "  x", "noop": " NOOP x",
+                    "throws": "THREW x"}[g["kind"]]
+            print(f"{lead}{g['count']:<4} [{s.get('type','?')}] "
+                  f"<{s['tag'].lower()} class=\"{s['cls']}\"> "
+                  f"{s['text']!r}  ({s['why']})")
+            if s.get("detail"):
+                print(f"         {str(s['detail'])[:110]}")
+            print(f"         {where}  e.g. {s.get('at', s.get('path', ''))}")
         else:
             print(f"  x{g['count']:<4} {g['kind']}: {s.get('path','')} "
                   f"{str(s.get('detail',''))[:70]!r}")
@@ -537,7 +857,8 @@ def main():
         print(f"\nwrote {args.json}")
 
     if not groups:
-        print("\nOK: everything that looks like a control is one.")
+        print("\nOK: everything that looks like a control is one, and every "
+              "control our code claims is live does something when pressed.")
         return 0
     return 1
 
