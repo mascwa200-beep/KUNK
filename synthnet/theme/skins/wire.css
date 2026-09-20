@@ -229,6 +229,25 @@
 
 .skin-wireroom .wr-row-bul { background: #1d1415; }
 
+/* A pinned bulletin sits above dispatches filed after it. Without a marker
+   on the row that reads as a rail that cannot sort, so the row says what
+   the desk is doing: holding the story at the top while it still moves. */
+.skin-wireroom .wr-row-pin { border-left: 2px solid #b4483c; }
+.skin-wireroom .wr-pin {
+  flex: 0 0 auto;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 15px;
+  padding: 0 5px;
+  border: 1px dashed #7d5a55;
+  border-radius: 2px;
+  background: none;
+  color: #e0a39c;                      /* 6.4:1 on #1d1415 */
+  white-space: nowrap;
+}
+
 .skin-wireroom .wr-rail-tight .wr-row { padding-top: 3px; padding-bottom: 3px; }
 
 .skin-wireroom .wr-time {

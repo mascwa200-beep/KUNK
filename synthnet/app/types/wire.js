@@ -412,10 +412,11 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- the rail ---------- */
 
-  function rowNode(ctx, r) {
+  function rowNode(ctx, r, pinned) {
     var cls = 'wr-row';
     if (r.live) { cls += ' wr-row-live'; }
     if (r.priority === 'bulletin') { cls += ' wr-row-bul'; }
+    if (pinned) { cls += ' wr-row-pin'; }
     var li = el('li', {
       'class': cls,
       title: r.live ? 'Moving now. Not written up, not filed, not checked.' : null
@@ -424,6 +425,15 @@ window.SYNTH = window.SYNTH || {};
     li.appendChild(el('span', { 'class': 'wr-time' },
       text(r.at === null || r.at === undefined ? '--:--' : clockText(r.at))));
     li.appendChild(chip(r.priority));
+    /* A pinned bulletin sits above dispatches filed after it, so the rail's
+     * own "newest first" is briefly untrue at the top. Say why, or it reads
+     * as a broken sort rather than a desk holding a story up. */
+    if (pinned) {
+      li.appendChild(el('span', {
+        'class': 'wr-pin',
+        title: 'Held at the top of the file while it is still moving.'
+      }, text('HOLDING')));
+    }
 
     if (r.id) {
       li.appendChild(ctx.link('/d/' + encodeURIComponent(r.id), r.slug, 'wr-slug'));
@@ -484,10 +494,10 @@ window.SYNTH = window.SYNTH || {};
   function railList(ctx, rows, pinned) {
     var ol = el('ol', { 'class': 'wr-rail' });
     var i;
-    if (pinned) { ol.appendChild(rowNode(ctx, pinned)); }
+    if (pinned) { ol.appendChild(rowNode(ctx, pinned, true)); }
     for (i = 0; i < rows.length; i++) {
       if (pinned && rows[i] === pinned) { continue; }
-      ol.appendChild(rowNode(ctx, rows[i]));
+      ol.appendChild(rowNode(ctx, rows[i], false));
     }
     return ol;
   }
@@ -511,8 +521,11 @@ window.SYNTH = window.SYNTH || {};
     main.appendChild(el('div', { 'class': 'wr-railhead' },
       el('span', { 'class': 'wr-key' }, text('THE RAIL')),
       el('span', { 'class': 'wr-dim' },
-        text('newest first · times local · nothing here has been ' +
-             'subedited'))));
+        text(bul
+          ? 'newest first, under the bulletin the desk is holding up · ' +
+            'times local · nothing here has been subedited'
+          : 'newest first · times local · nothing here has been ' +
+            'subedited'))));
 
     if (!rows.length) {
       main.appendChild(emptyRail());
