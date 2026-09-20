@@ -469,6 +469,25 @@
   overflow-wrap: anywhere;
 }
 
+/* A keyword chip goes to the agency's index for that word, so it is allowed
+   to look reachable. It keeps the chip's own grey rather than taking the
+   skin's link blue -- a row of eight blue chips under the copy reads as a
+   navigation bar, which is not what the keyword line is. */
+.skin-wireroom .wr-kw-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #b9c0c7;                      /* 9.02:1 on the #1b1f23 chip */
+}
+
+.skin-wireroom .wr-kw-link:visited { color: #b9c0c7; }
+
+.skin-wireroom .wr-kw-link:hover,
+.skin-wireroom .wr-kw-link:focus {
+  color: #e3e6e8;                      /* 11.25:1 on #262c32 */
+  background: #262c32;
+  border-color: #4c555d;
+}
+
 .skin-wireroom .wr-end {
   display: flex;
   flex-wrap: wrap;
@@ -485,6 +504,39 @@
 }
 
 .skin-wireroom .wr-end .wr-dim { overflow-wrap: anywhere; }
+
+/* MORE is the end mark's opposite number and is drawn to match it: same rank
+   in the page, same dim gloss beside it. The mark itself goes to the next
+   take, so it is the one word here that is allowed to look like a link. */
+.skin-wireroom .wr-more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 4px 0 14px;
+  font-size: 11px;
+}
+
+.skin-wireroom .wr-more-mark {
+  color: #8fd0ff;                      /* 11.29:1 on #101214 */
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-decoration: none;
+  border-bottom: 1px solid #40525f;
+}
+
+.skin-wireroom .wr-more-mark:visited { color: #8fd0ff; }
+.skin-wireroom .wr-more-mark:hover,
+.skin-wireroom .wr-more-mark:focus { border-bottom-color: #8fd0ff; }
+
+.skin-wireroom .wr-more .wr-dim { overflow-wrap: anywhere; }
+
+.skin-wireroom .wr-more-note {
+  margin: 4px 0 14px;
+  font-size: 11px;
+  color: #9aa3ab;                      /* 7.33:1 on #101214 */
+  overflow-wrap: anywhere;
+}
 
 /* ---- carried by / earlier ---- */
 

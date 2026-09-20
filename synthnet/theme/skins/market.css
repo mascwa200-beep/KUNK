@@ -248,3 +248,26 @@
   .skin-classified .cl-catlist { columns: 4; }
   .skin-classified .cl-photo svg { max-height: 420px; width: auto; }
 }
+
+/* ---------- posting ----------
+   The composer and the your-listings feed come from app/compose.js, which
+   ships its own .cw-* markup. These rules only give them somewhere to sit in
+   a classifieds page and keep them inside 360px. */
+
+.skin-classified .cl-post,
+.skin-classified .cl-mine {
+  margin: 14px 0;
+  padding-top: 10px;
+  border-top: 1px solid #c8ccd2;
+}
+.skin-classified .cl-post .cw-root,
+.skin-classified .cl-mine .cw-root {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.skin-classified .cl-post textarea,
+.skin-classified .cl-post input {
+  max-width: 100%;
+  box-sizing: border-box;
+}

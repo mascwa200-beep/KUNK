@@ -525,6 +525,27 @@
 .skin-portal-red .news-kicker,
 .skin-pinkslime .news-kicker { display: inline-block; }
 
+/* The kicker is a link to its section now. Each skin already gives .news-kicker
+   a colour that clears AA on that skin's paper, and those rules outrank the
+   skin's generic `a`, so the only thing added here is the affordance: no rule
+   underline, one on hover and on keyboard focus. Broadsheet underlines every
+   link by default, which over a kicker in letterspaced small caps reads as a
+   smudge, so it is turned off there and its visited colour pinned to the
+   kicker's own black rather than the #333 the skin gives read links. */
+.skin-broadsheet .news-kicker-link,
+.skin-portal-red .news-kicker-link,
+.skin-pinkslime .news-kicker-link { text-decoration: none; }
+
+.skin-broadsheet .news-kicker-link,
+.skin-broadsheet .news-kicker-link:visited { color: #000000; }
+
+.skin-broadsheet .news-kicker-link:hover,
+.skin-broadsheet .news-kicker-link:focus,
+.skin-portal-red .news-kicker-link:hover,
+.skin-portal-red .news-kicker-link:focus,
+.skin-pinkslime .news-kicker-link:hover,
+.skin-pinkslime .news-kicker-link:focus { text-decoration: underline; }
+
 .skin-broadsheet .news-wirechip,
 .skin-portal-red .news-wirechip,
 .skin-pinkslime .news-wirechip {

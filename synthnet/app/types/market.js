@@ -27,8 +27,23 @@ window.SYNTH = window.SYNTH || {};
     return SYNTH.liveui.badge(kind);
   }
 
+  /* SYNTH.live.ago() takes an absolute timestamp, not a length of time. Every
+   * call here was passing a duration, and 6 * 60 * 1000 is six minutes as a
+   * length and 1 January 1970 as a moment -- so every "posted", every "last
+   * index sweep" and every listing time on all four market sites read
+   * "1 Jan 1970". */
+  function agoBy(ms) {
+    return SYNTH.live.ago(SYNTH.live.now() - ms);
+  }
+
+  /* Returns how long ago the listing went up, in ms. An authored numeric at is
+   * already an absolute timestamp, so it is converted to an age here and every
+   * caller can treat the result the same way. */
   function whenOf(l) {
-    if (typeof l.at === 'number') { return l.at; }
+    if (typeof l.at === 'number') {
+      var age = SYNTH.live.now() - l.at;
+      return age > 0 ? age : 0;
+    }
     var m = 3 + (SYNTH.live.hash32('mkt:' + (l.id || '') + '|' + (l.at || '')) % (60 * 24 * 21));
     return m * 60 * 1000;
   }
@@ -107,7 +122,7 @@ window.SYNTH = window.SYNTH || {};
       }
       f.appendChild(row);
     }
-    f.appendChild(el('p', { 'class': 'cl-foot-p' }, 'last index sweep ' + SYNTH.live.ago(6 * 60 * 1000)));
+    f.appendChild(el('p', { 'class': 'cl-foot-p' }, 'last index sweep ' + agoBy(6 * 60 * 1000)));
     return f;
   }
 
@@ -128,7 +143,7 @@ window.SYNTH = window.SYNTH || {};
     meta.appendChild(el('span', { 'class': 'cl-price' }, money(l.price)));
     var rn = nameOf(data.regions, l.regionId);
     if (rn) { meta.appendChild(el('span', { 'class': 'cl-where' }, '(' + rn + ')')); }
-    meta.appendChild(el('span', { 'class': 'cl-when' }, SYNTH.live.ago(whenOf(l))));
+    meta.appendChild(el('span', { 'class': 'cl-when' }, agoBy(whenOf(l))));
     var b = badgeFor(l.kind);
     if (b) { meta.appendChild(b); }
     body.appendChild(meta);
@@ -149,7 +164,7 @@ window.SYNTH = window.SYNTH || {};
       li.appendChild(el('p', { 'class': 'cl-cell-title' }, ctx.link('/l/' + l.id, l.title || '(no title)', 'cl-a')));
       var m = el('p', { 'class': 'cl-cell-meta' },
         el('span', { 'class': 'cl-price' }, money(l.price)),
-        el('span', { 'class': 'cl-when' }, SYNTH.live.ago(whenOf(l)))
+        el('span', { 'class': 'cl-when' }, agoBy(whenOf(l)))
       );
       var b = badgeFor(l.kind);
       if (b) { m.appendChild(b); }
@@ -202,13 +217,34 @@ window.SYNTH = window.SYNTH || {};
     var data = d(ctx.site);
     ctx.title((data.siteName || ctx.site.title) + ' — classifieds');
 
+    /* Both of these return a node and mount nothing themselves. The return
+     * values used to be dropped on the floor, so the composer was built and
+     * thrown away on every market site while the footer went on saying that
+     * posting is free. The callback went to SYNTH.route.refresh, which does
+     * not exist and never has; the refresh that does is on SYNTH.engine. */
     if (SYNTH.compose && SYNTH.compose.box) {
-      SYNTH.compose.box(ctx, ctx.site.domain, function () {
-        if (SYNTH.route && SYNTH.route.refresh) { SYNTH.route.refresh(); }
+      var composer = SYNTH.compose.box(ctx, ctx.site.domain, function () {
+        if (SYNTH.engine && SYNTH.engine.refresh) { SYNTH.engine.refresh(); }
       });
+      if (composer) {
+        ctx.mount.appendChild(el('section', { 'class': 'cl-post' },
+          el('h2', { 'class': 'cl-h2' }, 'post a listing'), composer));
+      }
     }
-    if (SYNTH.compose && SYNTH.compose.myPosts) {
-      SYNTH.compose.myPosts(ctx, ctx.site.domain);
+    /* Only worth a heading once there is something under it. myPosts renders
+     * its own "nothing here yet" box, which on a front page you have never
+     * posted to is a section about your absence. */
+    var posted = [];
+    if (SYNTH.me && typeof SYNTH.me.posts === 'function') {
+      try { posted = SYNTH.me.posts(ctx.site.domain) || []; } catch (e) { posted = []; }
+    }
+    if (posted.length && SYNTH.compose && SYNTH.compose.myPosts) {
+      var mine = SYNTH.compose.myPosts(ctx, ctx.site.domain);
+      if (mine) {
+        ctx.mount.appendChild(el('section', { 'class': 'cl-sec cl-mine' },
+          el('h2', { 'class': 'cl-h2' },
+            posted.length === 1 ? 'your listing' : 'your listings'), mine));
+      }
     }
 
     ctx.mount.appendChild(scamWarning(ctx.site.domain));
@@ -290,7 +326,7 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(el('h2', { 'class': 'cl-h2' }, cat.name));
     ctx.mount.appendChild(el('p', { 'class': 'cl-note' },
       SYNTH.live.commas(SYNTH.live.counter('market:cat:' + cat.id, 30 + hits.length * 7, 24)) +
-      ' listings indexed · ' + hits.length + ' shown · refreshed ' + SYNTH.live.ago(3 * 60 * 1000)));
+      ' listings indexed · ' + hits.length + ' shown · refreshed ' + agoBy(3 * 60 * 1000)));
 
     ctx.mount.appendChild(scamWarning(cat.id));
 
@@ -342,7 +378,7 @@ window.SYNTH = window.SYNTH || {};
     head.appendChild(el('h2', { 'class': 'cl-ltitle' }, l.title || '(no title)'));
     head.appendChild(el('p', { 'class': 'cl-lprice' }, money(l.price)));
     var sub = el('p', { 'class': 'cl-lmeta' },
-      el('span', { 'class': 'cl-when' }, 'posted ' + SYNTH.live.ago(whenOf(l))));
+      el('span', { 'class': 'cl-when' }, 'posted ' + agoBy(whenOf(l))));
     if (region) { sub.appendChild(el('span', { 'class': 'cl-where' }, region.name)); }
     if (l.condition) { sub.appendChild(el('span', { 'class': 'cl-cond' }, 'condition: ' + l.condition)); }
     head.appendChild(sub);

@@ -216,10 +216,16 @@
      * wrong, and dating the page right is most of this renderer's job. */
     var modern = String(site.era || '').indexOf('2026') !== -1;
 
-    function sectionName(id) {
+    function sectionById(id) {
       for (var i = 0; i < sections.length; i++) {
-        if (String(sections[i].id) === String(id)) { return String(sections[i].name || sections[i].id); }
+        if (String(sections[i].id) === String(id)) { return sections[i]; }
       }
+      return null;
+    }
+
+    function sectionName(id) {
+      var s = sectionById(id);
+      if (s) { return String(s.name || s.id); }
       return String(id || 'News');
     }
 
@@ -292,11 +298,39 @@
       return name.toUpperCase();
     }
 
-    function eyebrow(a) {
+    /* The kicker is the line above the headline naming the desk a story came
+     * off, and every paper here files every story under a section it also
+     * publishes an index for. So the kicker goes there. It used to be a span,
+     * which meant that on halsey-ledger.com the word ABOUT sat above a
+     * headline in kicker type for a year and did nothing at all when pressed
+     * -- the one control on this renderer that looked live and was not.
+     * Where the kicker is a running topic rather than the section's own name
+     * ("ROUTE 62" over a story filed under Roads) the link still lands on the
+     * index that actually holds the story, which is the honest destination. */
+    function kickerNode(a, k, here) {
+      var sec = sectionById(a.sectionId);
+      /* Already standing in the section: the kicker still labels the story
+       * but it has nowhere to send anybody, and a link back to the page you
+       * are on is the same dead control in better clothes. */
+      if (!sec || here) { return el('span', { 'class': 'news-kicker' }, k); }
+      return link('/section/' + encodeURIComponent(String(sec.id)), k,
+                  'news-kicker news-kicker-link');
+    }
+
+    /* `curSec` is the section index this row is being drawn on, if any. */
+    function eyebrow(a, curSec) {
       var k = kickerOf(a);
+      var here = curSec !== null && curSec !== undefined &&
+                 String(a.sectionId) === String(curSec);
+      /* The section index already says overhead which section this is, so a
+       * kicker that only repeats it is dropped -- the same rule this renderer
+       * has always applied to FRONT PAGE on the front page. A kicker carrying
+       * a running topic or a disclosure (PARTNER CONTENT) still earns its
+       * line; it just has nowhere left to point. */
+      if (k && here && k === sectionName(a.sectionId).toUpperCase()) { k = ''; }
       if (!k && !a.wire) { return null; }
       return el('p', { 'class': 'news-eyebrow' },
-        k ? el('span', { 'class': 'news-kicker' }, k) : null,
+        k ? kickerNode(a, k, here) : null,
         a.wire ? el('span', {
           'class': 'news-wirechip',
           title: 'Agency copy. This outlet did not write it and did not check it.'
@@ -789,7 +823,7 @@
       for (i = 0; i < list.length; i++) {
         var a = list[i];
         ul.appendChild(el('div', { class: 'news-list-item' + (a.featured ? ' is-featured' : '') },
-          eyebrow(a),
+          eyebrow(a, sid),
           el('h3', { class: 'news-list-head' }, link(href(a), String(a.headline || 'Untitled'))),
           a.dek ? el('p', { class: 'news-list-dek' }, String(a.dek)) : null,
           byline(a)));

@@ -21,6 +21,248 @@ window.SYNTH = window.SYNTH || {};
     return SYNTH.live.hash32(String(str || 'seed'));
   }
 
+  function isArray(v) {
+    return Object.prototype.toString.call(v) === '[object Array]';
+  }
+
+  /* SYNTH.live.ago() takes an absolute timestamp, and every call in this file
+   * was handing it a duration instead -- 11 * 60 * 1000 is eleven minutes as a
+   * length and 1 January 1970 as a moment, so every "refreshed", every review
+   * date and every repriced-at on all seven shops read "1 Jan 1970". */
+  function agoBy(ms) {
+    return SYNTH.live.ago(SYNTH.live.now() - ms);
+  }
+
+  /* ---------- what this storefront can actually do ----------
+   *
+   * Seven shops run on this renderer and only some of them can take an order.
+   * The difference is already in the data. A catalogue that is mostly
+   * sellerKind "brand" is a business selling its own goods, and on every one
+   * of those the website is a catalogue while the order is placed by a person
+   * somewhere else -- Hollis says so on its own ordering page, in as many
+   * words: "there is no cart that knows what is on the shelf". A catalogue of
+   * "bot", "dropship", "reseller" and "sponsored" is a platform, and a
+   * platform will always take the order. What it will not tell you is what
+   * happens next.
+   *
+   * So the list is the same everywhere and the end of the list is not. DESK
+   * holds the end of it, per domain, taken from each site's own pages. A shop
+   * added later and not in the table falls back to the generic entry for its
+   * mode, which says only things that are true of every store here.
+   */
+
+  var CART = 'shopcart';
+
+  function cartRows(domain) {
+    var v = (SYNTH.store && SYNTH.store.get) ? SYNTH.store.get(CART, domain, null) : null;
+    return isArray(v) ? v : [];
+  }
+
+  function cartSave(domain, rows) {
+    if (SYNTH.store && SYNTH.store.put) { SYNTH.store.put(CART, domain, rows); }
+  }
+
+  function cartCount(domain) {
+    var rows = cartRows(domain);
+    var n = 0;
+    var i;
+    for (i = 0; i < rows.length; i++) { n += Number(rows[i].qty) || 0; }
+    return n;
+  }
+
+  function cartQtyOf(domain, id) {
+    var rows = cartRows(domain);
+    var i;
+    for (i = 0; i < rows.length; i++) {
+      if (String(rows[i].id) === String(id)) { return Number(rows[i].qty) || 0; }
+    }
+    return 0;
+  }
+
+  /* price and name are copied in at the moment of adding rather than looked up
+   * again when the list is read. On shopwell.store that is the whole joke --
+   * the repricer moves the listing while the list sits -- and everywhere else
+   * it means a delisted item still reads as something instead of a blank row. */
+  function cartAdd(domain, p, howMany) {
+    var rows = cartRows(domain);
+    var i;
+    for (i = 0; i < rows.length; i++) {
+      if (String(rows[i].id) === String(p.id)) {
+        rows[i].qty = (Number(rows[i].qty) || 0) + howMany;
+        cartSave(domain, rows);
+        return rows[i].qty;
+      }
+    }
+    rows.push({
+      id: p.id,
+      qty: howMany,
+      price: Number(p.price) || 0,
+      name: SYNTH.markup.strip(p.name || '').slice(0, 90)
+    });
+    cartSave(domain, rows);
+    return howMany;
+  }
+
+  function cartSetQty(domain, id, qty) {
+    var rows = cartRows(domain);
+    var out = [];
+    var i;
+    for (i = 0; i < rows.length; i++) {
+      if (String(rows[i].id) !== String(id)) { out.push(rows[i]); continue; }
+      if (qty > 0) { rows[i].qty = qty; out.push(rows[i]); }
+    }
+    cartSave(domain, out);
+    return out;
+  }
+
+  var DESK_COUNTER = {
+    noun: 'order', title: 'Your order', add: 'Add to Order',
+    lines: [
+      'Nothing here has been sent to the shop. This list is kept in this browser and goes no further.',
+      'The storefront is a catalogue. Somebody at the shop takes the order, and it is not this page.'
+    ]
+  };
+
+  var DESK_PLATFORM = {
+    noun: 'cart', title: 'Your cart', add: 'Add to Cart', now: 'Buy Now',
+    lines: [
+      'Nothing here has been ordered. This cart is kept in this browser and goes no further.',
+      'Prices, availability and the seller on each line are whatever the listing said at the moment it was added.'
+    ]
+  };
+
+  var DESK = {
+    'gridfallpizza.com': {
+      noun: 'order', title: 'Your order', add: 'Add to Order',
+      second: { label: 'Ordering, and what to do when it will not work', href: '/p/p-ordering' },
+      lines: [
+        'Nothing here has been sent to the shop. This list is kept in this browser and goes no further.',
+        'The ORDER ONLINE button on this site belongs to a company called Menubridge. It is not part of the shop and the shop did not write it. Marcy has had ticket 44-1187 open with them since the 4th of March and has had three replies.',
+        'Ring 782-2440 and read this list down the telephone. A person answers. Prices on these pages win over prices in the order system, every time.',
+        'Delivery is $15 minimum: $3 inside the Gridfall village line, $5 just outside it, and nowhere else at any price.'
+      ]
+    },
+    'hollismarket.com': {
+      noun: 'order list', title: 'Your order list', add: 'Add to Order List',
+      second: { label: 'Online ordering — how this actually works', href: '/p/p-info-order' },
+      lines: [
+        'Nothing here has been sent to the store. This list is kept in this browser and goes no further.',
+        'There is no cart on this site that knows what is on the shelf. The order form emails the store and that is all it does: it reserves nothing and it charges nothing.',
+        'Alma reads the orders between 6:15 and 7 in the morning, and again after the lunch rush. Put a real telephone number on it — if the cut you asked for is not there, somebody rings you, because the platform sends the order from an address that does not receive.',
+        'Pickup orders in before 4 p.m. are ready the next morning. Thursday delivery has to be in by 4 p.m. Wednesday or it waits a week. Or ring 782-3811 and read your list to somebody.'
+      ]
+    },
+    'countysupply.store': {
+      noun: 'order', title: 'Your order', add: 'Add to Order',
+      lines: [
+        'Nothing here has been sent to the store. This list is kept in this browser and goes no further.',
+        'County Supply fills orders off the shelf in Marchfield. The e-commerce platform sitting between you and the shop is the thing that wrote the product descriptions on these pages, and it will not let the shop delete the reviews underneath them.'
+      ]
+    },
+    'veritymonuments.com': {
+      noList: true,
+      second: { label: 'The yard, the hours, and how an order goes', href: '/p/p-sh-about' },
+      why: [
+        'A stone is not added to a cart.',
+        'An order starts with the cemetery’s rules, because half of what you are about to choose has already been chosen for you. Then stone, size and colour, out in the yard in daylight. Then a layout printed full size on paper, as many times as it takes. Then you sign the proof — and after that, what is on the proof is what gets cut, including anything wrong on it that both of you missed.',
+        'Telephone before you drive out to 4110 Marchfield Road. Two of the five of them are usually in a cemetery.'
+      ]
+    },
+    'shopwell.store': {
+      noun: 'cart', title: 'Your cart', add: 'Add to Cart', now: 'Buy Now',
+      lines: [
+        'Nothing here has been ordered. This cart is kept in this browser and goes no further.',
+        'The figures below are the ones that were showing when each item went in. A repricer runs while you read, so the listing pages may already disagree with this page.',
+        'ShopWell lists about eleven million items and stocks about four hundred of them. Which of the two any one listing is does not appear on the listing.'
+      ]
+    },
+    'gridfalldeals.com': {
+      noun: 'cart', title: 'Your cart', add: 'Add to Cart', now: 'Buy Now',
+      second: { label: 'Shipping & delivery times', href: '/p/p-90' },
+      lines: [
+        'Nothing here has been ordered. This cart is kept in this browser and goes no further.',
+        'Each item is printed or picked after the order is placed, at whichever fulfilment partner is nearest. Delivery is 18 to 32 days. Retail collection at Depot Street is not available.',
+        'A handling fee of $4.95 applies under $35, and a fulfilment surcharge of $2.40 on county merchandise. Neither of them is in the subtotal above.',
+        'All Verity County merchandise is final sale. Returns must be started within 14 days of the order date, and an order counts as delivered 7 days after dispatch whatever the estimate on the listing said.'
+      ]
+    },
+    'gridfalleats.com': {
+      noun: 'order', title: 'Your order', add: 'Add to Order', now: 'Order Now',
+      second: { label: 'How your order total is calculated', href: '/p/f-total' },
+      lines: [
+        'Nothing here has been ordered. This order is kept in this browser and goes no further.',
+        'Drivers currently online in your area: 0.',
+        'The subtotal above is the items only. The Service Fee, the Delivery Fee, the Small Order Fee and the Local Operating Fee are added at checkout, and the suggested tip is calculated on the total after all four of them.',
+        'Orders to addresses outside the delivery area are accepted and may not be delivered.'
+      ]
+    }
+  };
+
+  function modeOf(site) {
+    var products = d(site).products || [];
+    var brand = 0;
+    var i;
+    for (i = 0; i < products.length; i++) {
+      if (String(products[i].sellerKind || '') === 'brand') { brand++; }
+    }
+    return (products.length && brand * 2 >= products.length) ? 'counter' : 'platform';
+  }
+
+  function deskFor(site) {
+    var found = Object.prototype.hasOwnProperty.call(DESK, site.domain)
+      ? DESK[site.domain] : null;
+    if (found) { return found; }
+    return modeOf(site) === 'counter' ? DESK_COUNTER : DESK_PLATFORM;
+  }
+
+  /* Only offer a link to one of the store's own pages if the store still has
+   * that page. The ids below come out of the site files; a file can change. */
+  function hasProduct(site, id) {
+    var products = d(site).products || [];
+    var i;
+    for (i = 0; i < products.length; i++) {
+      if (String(products[i].id) === String(id)) { return true; }
+    }
+    return false;
+  }
+
+  function secondLinkOf(site) {
+    var desk = deskFor(site);
+    if (!desk.second) { return null; }
+    var id = String(desk.second.href).replace(/^\/p\//, '');
+    return hasProduct(site, id) ? desk.second : null;
+  }
+
+  /* Several of these shops publish prose through a storefront that only knows
+   * how to publish products: opening hours, delivery areas, cemetery rules and
+   * fee schedules all arrive here as $0.00 "products". Gridfall Pizza says so
+   * itself, in a bullet on its own hours page. None of them is for sale, and a
+   * buy button on one would be the plainest lie on the site.
+   *
+   * A zero price on its own does not settle it, though. Renner's on
+   * gridfalleats.com is priced at $0 because its delivery is free, and it is a
+   * restaurant, not an article. So: a whole department of unpriced items is a
+   * department of pages; one unpriced item among priced ones is a listing that
+   * simply has no price, and there is still nothing there to add. */
+  var PAGEY = /\bhelp\b|\bsupport\b|\babout\b|\binformation\b|\bcontact\b|\bpolic|\bservice\b|\bfees?\b|\bcharges?\b|\bhours\b/i;
+
+  function catHasPrices(site, cat) {
+    if (!cat) { return false; }
+    var products = d(site).products || [];
+    var i;
+    for (i = 0; i < products.length; i++) {
+      if (String(products[i].catId) !== String(cat.id)) { continue; }
+      if (Number(products[i].price) > 0) { return true; }
+    }
+    return false;
+  }
+
+  function buyState(site, p, cat) {
+    if (cat && PAGEY.test(String(cat.name || ''))) { return 'page'; }
+    if (Number(p.price) > 0) { return 'sell'; }
+    return catHasPrices(site, cat) ? 'noprice' : 'page';
+  }
+
   /* ---------- small pieces ---------- */
 
   function stars(rating) {
@@ -91,6 +333,51 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- chrome ---------- */
 
+  function goTo(ctx, path) {
+    if (SYNTH.engine && SYNTH.engine.navigate) {
+      SYNTH.engine.navigate('synth://' + ctx.site.domain + path);
+    }
+  }
+
+  /* The search box used to be three spans painted to look like a search box.
+   * It searches the catalogue now, which is the only index this store has and
+   * the only one it ever claimed to have. */
+  function searchForm(ctx) {
+    var data = d(ctx.site);
+    var store = data.storeName || ctx.site.title || 'the store';
+    var cats = data.categories || [];
+    var q = (ctx.query && ctx.query.q) ? String(ctx.query.q) : '';
+    var inCat = (ctx.query && ctx.query.in) ? String(ctx.query.in) : '';
+
+    var pick = el('select', { 'class': 'ms-searchcat', 'aria-label': 'Department to search' });
+    pick.appendChild(el('option', { 'value': '' }, 'All'));
+    var i;
+    for (i = 0; i < cats.length; i++) {
+      var opt = el('option', { 'value': String(cats[i].id) }, cats[i].name);
+      if (String(cats[i].id) === inCat) { opt.selected = true; }
+      pick.appendChild(opt);
+    }
+
+    var field = el('input', {
+      'type': 'search', 'class': 'ms-searchfield', 'value': q,
+      'placeholder': 'Search ' + store, 'aria-label': 'Search ' + store
+    });
+
+    var box = el('form', {
+      'class': 'ms-searchbox',
+      'onsubmit': function (ev) {
+        if (ev && ev.preventDefault) { ev.preventDefault(); }
+        var term = String(field.value || '').replace(/^\s+|\s+$/g, '');
+        var where = String(pick.value || '');
+        var path = '/?q=' + encodeURIComponent(term);
+        if (where) { path += '&in=' + encodeURIComponent(where); }
+        goTo(ctx, path);
+      }
+    }, pick, field, el('button', { 'type': 'submit', 'class': 'ms-searchgo' }, 'Go'));
+
+    return el('div', { 'class': 'ms-searchrow' }, box);
+  }
+
   function header(ctx) {
     var data = d(ctx.site);
     var head = el('header', { 'class': 'ms-head' });
@@ -102,16 +389,15 @@ window.SYNTH = window.SYNTH || {};
         el('span', { 'class': 'ms-deliver-val' }, 'Gridfall, Verity County')
       )
     );
+    var desk = deskFor(ctx.site);
+    if (!desk.noList) {
+      var n = cartCount(ctx.site.domain);
+      top.appendChild(ctx.link('/cart',
+        desk.title + (n ? ' (' + n + ')' : ''), 'ms-cartlink'));
+    }
     head.appendChild(top);
 
-    var form = el('div', { 'class': 'ms-searchrow' },
-      el('span', { 'class': 'ms-searchbox', 'role': 'presentation' },
-        el('span', { 'class': 'ms-searchcat' }, 'All'),
-        el('span', { 'class': 'ms-searchfield' }, 'Search ' + (data.storeName || 'the store')),
-        el('span', { 'class': 'ms-searchgo' }, 'Go')
-      )
-    );
-    head.appendChild(form);
+    head.appendChild(searchForm(ctx));
 
     var cats = el('nav', { 'class': 'ms-catbar', 'aria-label': 'Departments' });
     var list = data.categories || [];
@@ -135,7 +421,7 @@ window.SYNTH = window.SYNTH || {};
       (data.storeName || 'Store') + ' — a Verity County fulfilment partner.'));
     f.appendChild(el('p', { 'class': 'ms-foot-small' },
       'Prices, availability and product descriptions are generated and may not reflect any item that exists. ' +
-      'Listings refreshed ' + SYNTH.live.ago(4 * 60 * 1000) + '.'));
+      'Listings refreshed ' + agoBy(4 * 60 * 1000) + '.'));
     var links = ctx.site.links || [];
     if (links.length) {
       var row = el('p', { 'class': 'ms-foot-links' });
@@ -248,7 +534,7 @@ window.SYNTH = window.SYNTH || {};
     var dealSec = el('section', { 'class': 'ms-sec' });
     dealSec.appendChild(el('h2', { 'class': 'ms-sec-h' }, 'Deals of the minute'));
     dealSec.appendChild(el('p', { 'class': 'ms-sec-note' },
-      'Refreshed ' + SYNTH.live.ago(90 * 1000) + ' by the pricing engine.'));
+      'Refreshed ' + agoBy(90 * 1000) + ' by the pricing engine.'));
     dealSec.appendChild(grid(ctx, dealStream.length ? dealStream : products.slice(0, 8), 'ms-grid-deal'));
     ctx.mount.appendChild(dealSec);
 
@@ -285,10 +571,19 @@ window.SYNTH = window.SYNTH || {};
     }
     if (!cat) { return render404(ctx); }
 
+    var query = ctx.query || {};
+    var minStars = query.min ? Number(query.min) : 0;
+    var onlyBrand = String(query.by || '') === 'brand';
+
     var products = [];
     var all = data.products || [];
+    var inCat = 0;
     for (i = 0; i < all.length; i++) {
-      if (String(all[i].catId) === String(catId)) { products.push(all[i]); }
+      if (String(all[i].catId) !== String(catId)) { continue; }
+      inCat++;
+      if (minStars && !((Number(all[i].rating) || 0) >= minStars)) { continue; }
+      if (onlyBrand && String(all[i].sellerKind || '') !== 'brand') { continue; }
+      products.push(all[i]);
     }
 
     ctx.title(cat.name + ' — ' + (data.storeName || ctx.site.title));
@@ -299,11 +594,17 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(urgencyBanner(ctx.site.domain + ':' + catId));
 
     var head = el('div', { 'class': 'ms-listhead' },
-      el('h1', { 'class': 'ms-h1' }, cat.name),
-      el('p', { 'class': 'ms-result-count' },
+      el('h1', { 'class': 'ms-h1' }, cat.name));
+    if (minStars || onlyBrand) {
+      head.appendChild(el('p', { 'class': 'ms-result-count' },
+        products.length + ' of the ' + inCat + ' items in this department' +
+        (minStars ? (', rated ' + minStars + ' stars and up') : '') +
+        (onlyBrand ? ', sold by the shop itself' : '') + '.'));
+    } else {
+      head.appendChild(el('p', { 'class': 'ms-result-count' },
         SYNTH.live.commas(SYNTH.live.counter('shop:res:' + catId, 1200 + products.length, 340)) +
-        ' results · ' + products.length + ' in stock locally')
-    );
+        ' results · ' + products.length + ' in stock locally'));
+    }
     ctx.mount.appendChild(head);
 
     var a1 = ad('banner', ctx.site.domain + ':cat:' + catId);
@@ -318,16 +619,42 @@ window.SYNTH = window.SYNTH || {};
         ctx.link('/c/' + cats[i].id, cats[i].name, String(cats[i].id) === String(catId) ? 'ms-side-link on' : 'ms-side-link')));
     }
     side.appendChild(ul);
+
+    /* These used to be a row of stars and the word "unavailable" sitting under
+     * a heading that said Filters. Both filter now. On a catalogue of bot
+     * listings the seller filter returns nothing, which is the honest result
+     * and not an error. */
     side.appendChild(el('h2', { 'class': 'ms-side-h' }, 'Filters'));
     side.appendChild(el('p', { 'class': 'ms-side-note' }, 'Avg. customer review'));
-    side.appendChild(stars(4));
-    side.appendChild(el('p', { 'class': 'ms-side-note' }, 'Verified seller only (unavailable)'));
+    var base = '/c/' + catId;
+    var rates = el('ul', { 'class': 'ms-side-list ms-side-rates' });
+    var r;
+    for (r = 4; r >= 2; r--) {
+      var on = String(minStars) === String(r);
+      var lab = el('span', { 'class': 'ms-rate-lbl' });
+      lab.appendChild(stars(r));
+      lab.appendChild(el('span', { 'class': 'ms-rate-txt' }, '& up'));
+      rates.appendChild(el('li', { 'class': 'ms-side-item' },
+        on ? ctx.link(base, lab, 'ms-side-link on')
+           : ctx.link(base + '?min=' + r, lab, 'ms-side-link')));
+    }
+    side.appendChild(rates);
+    side.appendChild(el('p', { 'class': 'ms-side-note' },
+      onlyBrand
+        ? ctx.link(base, 'Showing the shop’s own listings — show every seller', 'ms-side-link on')
+        : ctx.link(base + '?by=brand', 'Sold by the shop itself', 'ms-side-link')));
     var a2 = ad('box', ctx.site.domain + ':side:' + catId);
     if (a2) { side.appendChild(el('div', { 'class': 'ms-adslot ms-adslot-box' }, a2)); }
     layout.appendChild(side);
 
     var main = el('div', { 'class': 'ms-main' });
-    if (!products.length) {
+    if (!products.length && (minStars || onlyBrand)) {
+      main.appendChild(el('p', { 'class': 'ms-empty' },
+        onlyBrand && inCat
+          ? 'Nothing in this department is sold by the shop itself. Every listing here comes from somebody else.'
+          : 'No item in this department is rated that highly.'));
+      main.appendChild(ctx.link(base, 'Show all ' + inCat + ' again', 'ms-cart-back'));
+    } else if (!products.length) {
       main.appendChild(el('p', { 'class': 'ms-empty' }, 'No items indexed in this department yet.'));
     } else {
       main.appendChild(grid(ctx, products));
@@ -351,7 +678,7 @@ window.SYNTH = window.SYNTH || {};
     box.appendChild(head);
 
     var meta = el('p', { 'class': 'ms-rev-meta' },
-      SYNTH.live.ago(hoursOf(r.at, 'rev:' + pid + ':' + idx)));
+      agoBy(hoursOf(r.at, 'rev:' + pid + ':' + idx)));
     if (r.verified) {
       meta.appendChild(el('span', { 'class': 'ms-verified' }, 'Verified Purchase'));
     }
@@ -366,8 +693,248 @@ window.SYNTH = window.SYNTH || {};
     return box;
   }
 
+  /* The two things that used to be paragraphs painted to look like buttons.
+   * On a store that can hold an order they hold one; on a store that cannot,
+   * the second one is the store's own page about how an order really goes,
+   * and on veritymonuments.com there is no first one at all. */
+  function buyControls(ctx, buy, p) {
+    var desk = deskFor(ctx.site);
+    var second = secondLinkOf(ctx.site);
+
+    if (desk.noList) {
+      var why = el('div', { 'class': 'ms-truth ms-truth-buy' });
+      var i;
+      for (i = 0; i < desk.why.length; i++) {
+        why.appendChild(el('p', { 'class': 'ms-truth-p' }, desk.why[i]));
+      }
+      buy.appendChild(why);
+      if (second) {
+        buy.appendChild(ctx.link(second.href, second.label, 'ms-buy-alt'));
+      }
+      return;
+    }
+
+    var note = el('p', { 'class': 'ms-buy-note' });
+    var have = cartQtyOf(ctx.site.domain, p.id);
+    if (have) {
+      note.appendChild(document.createTextNode(have + ' in your ' + desk.noun + '. '));
+      note.appendChild(ctx.link('/cart', 'Open it', 'ms-buy-open'));
+    }
+
+    var add = el('button', {
+      'type': 'button', 'class': 'ms-buy-btn',
+      'onclick': function () {
+        var n = cartAdd(ctx.site.domain, p, 1);
+        while (note.firstChild) { note.removeChild(note.firstChild); }
+        note.appendChild(document.createTextNode(n + ' in your ' + desk.noun + '. '));
+        note.appendChild(ctx.link('/cart', 'Open it', 'ms-buy-open'));
+      }
+    }, desk.add);
+    buy.appendChild(add);
+
+    if (desk.now) {
+      buy.appendChild(el('button', {
+        'type': 'button', 'class': 'ms-buy-btn2',
+        'onclick': function () {
+          cartAdd(ctx.site.domain, p, 1);
+          goTo(ctx, '/cart');
+        }
+      }, desk.now));
+    } else if (second) {
+      buy.appendChild(ctx.link(second.href, second.label, 'ms-buy-alt'));
+    }
+
+    buy.appendChild(note);
+  }
+
+  /* ---------- the order list ---------- */
+
+  function truthBlock(desk) {
+    var box = el('section', { 'class': 'ms-truth' });
+    var i;
+    for (i = 0; i < desk.lines.length; i++) {
+      box.appendChild(el('p', { 'class': 'ms-truth-p' }, desk.lines[i]));
+    }
+    return box;
+  }
+
+  function renderCart(ctx) {
+    var data = d(ctx.site);
+    var desk = deskFor(ctx.site);
+    var domain = ctx.site.domain;
+
+    if (desk.noList) {
+      ctx.title('How an order goes — ' + (data.storeName || ctx.site.title));
+      ctx.mount.appendChild(breadcrumb(ctx, [
+        { label: data.storeName || 'Home', href: '/' },
+        { label: 'How an order goes' }
+      ]));
+      ctx.mount.appendChild(el('h1', { 'class': 'ms-h1' }, 'There is no cart on this site'));
+      var why = el('section', { 'class': 'ms-truth' });
+      var w;
+      for (w = 0; w < desk.why.length; w++) {
+        why.appendChild(el('p', { 'class': 'ms-truth-p' }, desk.why[w]));
+      }
+      ctx.mount.appendChild(why);
+      var alt = secondLinkOf(ctx.site);
+      if (alt) { ctx.mount.appendChild(ctx.link(alt.href, alt.label, 'ms-buy-alt')); }
+      return;
+    }
+
+    ctx.title(desk.title + ' — ' + (data.storeName || ctx.site.title));
+    ctx.mount.appendChild(breadcrumb(ctx, [
+      { label: data.storeName || 'Home', href: '/' },
+      { label: desk.title }
+    ]));
+    ctx.mount.appendChild(el('h1', { 'class': 'ms-h1' }, desk.title));
+
+    var box = el('div', { 'class': 'ms-cart' });
+
+    function paint() {
+      while (box.firstChild) { box.removeChild(box.firstChild); }
+      var rows = cartRows(domain);
+      if (!rows.length) {
+        box.appendChild(el('p', { 'class': 'ms-cart-empty' },
+          'Your ' + desk.noun + ' is empty.'));
+        box.appendChild(ctx.link('/', 'Back to the storefront', 'ms-cart-back'));
+        return;
+      }
+
+      var total = 0;
+      var i;
+      for (i = 0; i < rows.length; i++) {
+        total += (Number(rows[i].price) || 0) * (Number(rows[i].qty) || 0);
+        box.appendChild(cartRow(ctx, rows[i], paint));
+      }
+
+      var sum = el('div', { 'class': 'ms-cart-sum' },
+        el('span', { 'class': 'ms-cart-sum-lbl' }, 'Subtotal'),
+        el('span', { 'class': 'ms-cart-sum-val' }, money(total))
+      );
+      box.appendChild(sum);
+
+      box.appendChild(el('button', {
+        'type': 'button', 'class': 'ms-cart-clear',
+        'onclick': function () { cartSave(domain, []); paint(); }
+      }, 'Empty this ' + desk.noun));
+    }
+
+    paint();
+    ctx.mount.appendChild(box);
+    ctx.mount.appendChild(truthBlock(desk));
+
+    var second = secondLinkOf(ctx.site);
+    if (second) {
+      ctx.mount.appendChild(ctx.link(second.href, second.label, 'ms-buy-alt'));
+    }
+  }
+
+  function cartRow(ctx, row, paint) {
+    var domain = ctx.site.domain;
+    var qty = Number(row.qty) || 0;
+    var line = el('div', { 'class': 'ms-cart-row' });
+
+    line.appendChild(el('p', { 'class': 'ms-cart-name' },
+      ctx.link('/p/' + row.id, row.name || row.id, 'ms-cart-link')));
+
+    var unit = el('p', { 'class': 'ms-cart-unit' },
+      money(Number(row.price) || 0) + ' each');
+    line.appendChild(unit);
+
+    var qbox = el('div', { 'class': 'ms-qtybox' });
+    qbox.appendChild(el('button', {
+      'type': 'button', 'class': 'ms-qty',
+      'aria-label': 'One fewer ' + (row.name || 'item'),
+      'onclick': function () { cartSetQty(domain, row.id, qty - 1); paint(); }
+    }, '−'));
+    qbox.appendChild(el('span', { 'class': 'ms-qty-n' }, String(qty)));
+    qbox.appendChild(el('button', {
+      'type': 'button', 'class': 'ms-qty',
+      'aria-label': 'One more ' + (row.name || 'item'),
+      'onclick': function () { cartSetQty(domain, row.id, qty + 1); paint(); }
+    }, '+'));
+    qbox.appendChild(el('button', {
+      'type': 'button', 'class': 'ms-qty ms-qty-rm',
+      'onclick': function () { cartSetQty(domain, row.id, 0); paint(); }
+    }, 'Remove'));
+    line.appendChild(qbox);
+
+    line.appendChild(el('p', { 'class': 'ms-cart-line' },
+      money((Number(row.price) || 0) * qty)));
+    return line;
+  }
+
+  /* ---------- catalogue search ---------- */
+
+  function matches(p, terms) {
+    var hay = String(p.name || '') + ' ' + String(p.blurb || '') + ' ' +
+      (p.bullets || []).join(' ') + ' ' + String(p.seller || '');
+    hay = SYNTH.markup.strip(hay).toLowerCase();
+    var i;
+    for (i = 0; i < terms.length; i++) {
+      if (hay.indexOf(terms[i]) < 0) { return false; }
+    }
+    return true;
+  }
+
+  function renderSearch(ctx, q, inCat) {
+    var data = d(ctx.site);
+    var store = data.storeName || ctx.site.title;
+    var all = data.products || [];
+    var cats = data.categories || [];
+    var cat = null;
+    var i;
+    for (i = 0; i < cats.length; i++) {
+      if (String(cats[i].id) === String(inCat)) { cat = cats[i]; }
+    }
+
+    ctx.title('"' + q + '" — ' + store);
+    ctx.mount.appendChild(breadcrumb(ctx, [
+      { label: store, href: '/' },
+      { label: 'Search' }
+    ]));
+
+    var terms = q.toLowerCase().split(/\s+/);
+    var clean = [];
+    for (i = 0; i < terms.length; i++) { if (terms[i]) { clean.push(terms[i]); } }
+
+    var hits = [];
+    for (i = 0; i < all.length; i++) {
+      if (cat && String(all[i].catId) !== String(cat.id)) { continue; }
+      if (clean.length && !matches(all[i], clean)) { continue; }
+      hits.push(all[i]);
+    }
+
+    ctx.mount.appendChild(el('h1', { 'class': 'ms-h1' },
+      clean.length ? ('Results for “' + q + '”') : 'Search this catalogue'));
+
+    var scope = cat ? (' in ' + cat.name) : ' across every department';
+    ctx.mount.appendChild(el('p', { 'class': 'ms-result-count' },
+      clean.length
+        ? (hits.length + (hits.length === 1 ? ' item' : ' items') + scope +
+           ', out of ' + all.length + ' this store has listed.')
+        : ('This store lists ' + all.length + ' items' + scope +
+           '. Type something into the box above to narrow them down.')));
+
+    if (!hits.length && clean.length) {
+      ctx.mount.appendChild(el('p', { 'class': 'ms-empty' },
+        'Nothing in the catalogue matches that. The box above searches this store only — it does not reach the rest of the network.'));
+      ctx.mount.appendChild(ctx.link('/', 'Back to the storefront', 'ms-cart-back'));
+      return;
+    }
+
+    ctx.mount.appendChild(grid(ctx, hits.slice(0, 40)));
+  }
+
+  /* How long ago the review was left, in ms. Authored reviews carry a date
+   * string; the ones SYNTH.live.stream hands back carry epoch ms, and those
+   * have to be turned into an age here or agoBy subtracts a timestamp from a
+   * timestamp and lands back in 1970. */
   function hoursOf(at, seed) {
-    if (typeof at === 'number') { return at; }
+    if (typeof at === 'number') {
+      var age = SYNTH.live.now() - at;
+      return age > 0 ? age : 0;
+    }
     var h = 1 + (SYNTH.live.hash32(String(at || '') + '|' + seed) % (60 * 24 * 40));
     return h * 60 * 1000;
   }
@@ -444,21 +1011,34 @@ window.SYNTH = window.SYNTH || {};
 
     /* the buy box */
     var buy = el('aside', { 'class': 'ms-buy' });
-    var priceLine = el('p', { 'class': 'ms-buy-price' }, money(p.price));
-    buy.appendChild(priceLine);
-    if (p.was && p.was > p.price) {
-      var save = Math.round(100 - (p.price / p.was) * 100);
-      buy.appendChild(el('p', { 'class': 'ms-buy-was' },
-        'List: ' + money(p.was) + ' · you save ' + save + '%'));
+    var state = buyState(ctx.site, p, cat);
+    if (state !== 'sell') {
+      buy.appendChild(el('p', { 'class': 'ms-buy-notforsale' },
+        state === 'page' ? 'Not for sale' : 'No price on this listing'));
+      buy.appendChild(el('p', { 'class': 'ms-buy-small ms-buy-why' },
+        state === 'page'
+          ? 'This is a page. The storefront only knows how to publish products, so the page is filed as one, with a price of nothing and a star rating it did not ask for.'
+          : 'There is nothing on this listing to add to an order. What can be ordered is in the department below.'));
+      if (cat) {
+        buy.appendChild(ctx.link('/c/' + cat.id,
+          (state === 'page' ? 'Back to ' : 'Open ') + cat.name, 'ms-buy-back'));
+      }
+    } else {
+      var priceLine = el('p', { 'class': 'ms-buy-price' }, money(p.price));
+      buy.appendChild(priceLine);
+      if (p.was && p.was > p.price) {
+        var save = Math.round(100 - (p.price / p.was) * 100);
+        buy.appendChild(el('p', { 'class': 'ms-buy-was' },
+          'List: ' + money(p.was) + ' · you save ' + save + '%'));
+      }
+      if (p.prime) {
+        buy.appendChild(el('p', { 'class': 'ms-buy-ship' }, 'SAME-DAY delivery, drone window pending'));
+      }
+      buy.appendChild(stockLine(p));
+      buyControls(ctx, buy, p);
+      buy.appendChild(el('p', { 'class': 'ms-buy-small' },
+        'Price last changed ' + agoBy(11 * 60 * 1000) + ' by an automated repricer.'));
     }
-    if (p.prime) {
-      buy.appendChild(el('p', { 'class': 'ms-buy-ship' }, 'SAME-DAY delivery, drone window pending'));
-    }
-    buy.appendChild(stockLine(p));
-    buy.appendChild(el('p', { 'class': 'ms-buy-btn' }, 'Add to Cart'));
-    buy.appendChild(el('p', { 'class': 'ms-buy-btn2' }, 'Buy Now'));
-    buy.appendChild(el('p', { 'class': 'ms-buy-small' },
-      'Price last changed ' + SYNTH.live.ago(11 * 60 * 1000) + ' by an automated repricer.'));
     var a1 = ad('box', 'buy:' + p.id);
     if (a1) { buy.appendChild(el('div', { 'class': 'ms-adslot ms-adslot-box' }, a1)); }
     top.appendChild(buy);
@@ -554,12 +1134,19 @@ window.SYNTH = window.SYNTH || {};
     inner.mount = body;
 
     var path = ctx.path || [];
+    var query = ctx.query || {};
     if (!path.length) {
-      renderIndex(inner);
+      if (query.q !== undefined || query.in !== undefined) {
+        renderSearch(inner, String(query.q || ''), String(query.in || ''));
+      } else {
+        renderIndex(inner);
+      }
     } else if (path[0] === 'c' && path.length === 2) {
       renderCategory(inner, path[1]);
     } else if (path[0] === 'p' && path.length === 2) {
       renderProduct(inner, path[1]);
+    } else if (path[0] === 'cart' && path.length === 1) {
+      renderCart(inner);
     } else {
       render404(inner);
     }

@@ -576,11 +576,145 @@ window.SYNTH = window.SYNTH || {};
     shell(ctx, d, rows, main, cat.id);
   }
 
+  /* ---------- the keyword index ---------- */
+
+  /* The keyword line at the foot of a file is not decoration. It is how the
+   * file is retrieved: a desk that wants everything the agency has moved on
+   * the substation punches the word and gets the lot back. The words were
+   * drawn as chips -- bordered, boxed, sitting in a row under a heading
+   * reading KEYWORDS -- and did nothing whatever when pressed, which made the
+   * retrieval index the one part of this terminal that was a prop. It isn't
+   * one now, and nothing had to be invented to fix it: the index was always
+   * sitting in the file, spelled out on every dispatch. */
+
+  function keywordRows(d, cats, word) {
+    var all = authoredRows(d, cats);
+    var want = String(word === null || word === undefined ? '' : word).toLowerCase();
+    var out = [];
+    var i, j, kw;
+    for (i = 0; i < all.length; i++) {
+      kw = (all[i].raw && all[i].raw.keywords) || [];
+      for (j = 0; j < kw.length; j++) {
+        if (String(kw[j]).toLowerCase() === want) { out.push(all[i]); break; }
+      }
+    }
+    out.sort(byTimeDesc);
+    return out;
+  }
+
+  /* Give the word back in the spelling the file keeps, not whatever spelling
+   * arrived in the address bar. */
+  function keywordLabel(d, word) {
+    var all = d.dispatches || [];
+    var want = String(word === null || word === undefined ? '' : word).toLowerCase();
+    var i, j, kw;
+    for (i = 0; i < all.length; i++) {
+      kw = (all[i] && all[i].keywords) || [];
+      for (j = 0; j < kw.length; j++) {
+        if (String(kw[j]).toLowerCase() === want) { return String(kw[j]); }
+      }
+    }
+    return String(word === null || word === undefined ? '' : word);
+  }
+
+  function pageKeyword(ctx, d, word) {
+    var cats = d.categories || [];
+    var rows = keywordRows(d, cats, word);
+    if (!rows.length) { return pageNotFound(ctx, d); }
+
+    var label = keywordLabel(d, word).toUpperCase();
+    ctx.title('KEYWORD ' + label + ' — ' + agencyName(ctx, d));
+
+    var main = document.createDocumentFragment();
+    main.appendChild(el('h1', { 'class': 'wr-h1' }, text('KEYWORD: ' + label)));
+    main.appendChild(el('p', { 'class': 'wr-catnote' },
+      text(rows.length === 1
+        ? 'One file on the agency keyword index carries this word.'
+        : String(rows.length) + ' files on the agency keyword index carry ' +
+          'this word, newest first. The index goes back as far as the file ' +
+          'does and no further.')));
+    main.appendChild(railList(ctx, rows, null));
+    main.appendChild(el('p', { 'class': 'wr-back' },
+      ctx.link('/', '◄ back to the whole file', 'wr-backlink')));
+
+    shell(ctx, d, railRows(ctx, d, cats, null), main, null);
+  }
+
   /* ---------- one dispatch ---------- */
+
+  /* The other half of the ### end mark. A take that ends MORE is telling the
+   * receiving desk the story is not whole yet and to keep the slug open for
+   * the next one. It was being flushed into the copy like any other
+   * paragraph, which left the word MORE sitting alone under a 2:58 a.m.
+   * bulletin in body type, looking exactly like something you press and doing
+   * nothing at all when you did. It is not a Read More button and never was.
+   * But the take it promises is in the file -- GRIDFALL-OUTAGE-BULLETIN is
+   * followed at 3:12 by GRIDFALL-OUTAGE-1ST-LD -- so the mark goes there. */
+  var MORE_RE = /^\(?\s*MORE(?:\s+(?:TO\s+COME|FOLLOWS))?\s*\)?$/i;
+
+  function slugWords(slug) {
+    var parts = String(slug === null || slug === undefined ? '' : slug)
+      .toUpperCase().split(/[^A-Z0-9]+/);
+    var out = [], i;
+    for (i = 0; i < parts.length; i++) { if (parts[i]) { out.push(parts[i]); } }
+    return out;
+  }
+
+  /* Two takes are the same story when the slug opens on the same two words --
+   * a desk refiles GRIDFALL-OUTAGE-BULLETIN as GRIDFALL-OUTAGE-1ST-LD -- or,
+   * where the desk renamed it, when the keyword line still agrees twice over.
+   * ROUTE-62-TANKER-BULLETIN became ROUTE-62-REOPEN-BRIEF overnight and only
+   * the keywords carry that across. */
+  function sameStory(a, b) {
+    var wa = slugWords(a.slug), wb = slugWords(b.slug);
+    if (wa.length && wb.length && wa[0] === wb[0] &&
+        (wa.length < 2 || wb.length < 2 || wa[1] === wb[1])) { return true; }
+    var seen = {}, ka = a.keywords || [], kb = b.keywords || [], n = 0, i;
+    for (i = 0; i < ka.length; i++) { seen[String(ka[i]).toLowerCase()] = 1; }
+    for (i = 0; i < kb.length; i++) {
+      if (seen[String(kb[i]).toLowerCase()]) { n++; }
+    }
+    return n >= 2;
+  }
+
+  function nextTake(d, x) {
+    var all = (d && d.dispatches) || [];
+    var mine = parseAt(x.at);
+    var best = null, bestAt = null;
+    var i, c, at;
+    for (i = 0; i < all.length; i++) {
+      c = all[i];
+      if (!c || String(c.id) === String(x.id)) { continue; }
+      if (String(c.catId) !== String(x.catId)) { continue; }
+      at = parseAt(c.at);
+      if (at === null || mine === null || at <= mine) { continue; }
+      if (!sameStory(x, c)) { continue; }
+      if (bestAt === null || at < bestAt) { best = c; bestAt = at; }
+    }
+    return best ? { take: best, at: bestAt } : null;
+  }
+
+  function moreInto(ctx, host, d, x) {
+    var found = x ? nextTake(d, x) : null;
+    if (!found) {
+      /* No later take moved. Then the mark is the whole truth about the file:
+       * the desk meant to send more and never did. */
+      host.appendChild(el('p', { 'class': 'wr-more-note' },
+        text('MORE — the take ended there. Nothing further has moved on this slug.')));
+      return;
+    }
+    var slug = String(found.take.slug || 'the next take').toUpperCase();
+    host.appendChild(el('div', { 'class': 'wr-more' },
+      ctx.link('/d/' + encodeURIComponent(String(found.take.id)), 'MORE',
+               'wr-more-mark'),
+      el('span', { 'class': 'wr-dim' },
+        text('Not the whole story. The next take moved at ' +
+             clockText(found.at) + ' as ' + slug + '.'))));
+  }
 
   /* Body sections are separated by ___ on a line of its own, which is how a
    * wire marks a break the receiving desk is allowed to cut at. */
-  function bodyInto(ctx, host, body) {
+  function bodyInto(ctx, host, body, d, x) {
     var lines = String(body === null || body === undefined ? '' : body).split('\n');
     var chunk = [];
     var i;
@@ -588,7 +722,9 @@ window.SYNTH = window.SYNTH || {};
     function flush() {
       var t = chunk.join('\n');
       chunk = [];
-      if (!strip(t)) { return false; }
+      var bare = strip(t);
+      if (!bare) { return false; }
+      if (MORE_RE.test(bare)) { moreInto(ctx, host, d, x); return true; }
       host.appendChild(el('div', { 'class': 'wr-copy' }, ctx.markup(t)));
       return true;
     }
@@ -789,7 +925,7 @@ window.SYNTH = window.SYNTH || {};
         text(', ' + agencyName(ctx, d))));
     }
 
-    bodyInto(ctx, art, x.body);
+    bodyInto(ctx, art, x.body, d, x);
 
     var kw = x.keywords || [];
     if (kw.length) {
@@ -797,7 +933,9 @@ window.SYNTH = window.SYNTH || {};
       tags.appendChild(el('span', { 'class': 'wr-key' }, text('KEYWORDS')));
       var i;
       for (i = 0; i < kw.length; i++) {
-        tags.appendChild(el('span', { 'class': 'wr-kw' }, text(String(kw[i]))));
+        tags.appendChild(ctx.link(
+          '/kw/' + encodeURIComponent(String(kw[i]).toLowerCase()),
+          String(kw[i]), 'wr-kw wr-kw-link'));
       }
       art.appendChild(tags);
     }
@@ -847,6 +985,9 @@ window.SYNTH = window.SYNTH || {};
     if (!p.length) { return pageIndex(ctx, d); }
     if (p[0] === 'd' && p[1]) { return pageDispatch(ctx, d, p[1]); }
     if (p[0] === 'cat' && p[1]) { return pageCat(ctx, d, p[1]); }
+    /* Engine path segments arrive already decoded, so a keyword with a space
+     * in it ("route 62") reaches this as one segment and is not re-decoded. */
+    if (p[0] === 'kw' && p[1]) { return pageKeyword(ctx, d, p.slice(1).join('/')); }
     return pageNotFound(ctx, d);
   });
 }());

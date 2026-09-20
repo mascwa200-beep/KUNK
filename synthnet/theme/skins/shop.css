@@ -48,35 +48,71 @@
 
 .skin-megastore .ms-searchrow { padding: 8px 0 6px; }
 
+/* The search row is a real form now: a department select, a text input and a
+   submit button. It searches this store's catalogue, which is the only index
+   the store ever had. */
 .skin-megastore .ms-searchbox {
   display: flex;
   align-items: stretch;
   border-radius: 4px;
   overflow: hidden;
   font-size: 13px;
+  margin: 0;
 }
 .skin-megastore .ms-searchcat {
   background: #d7dbe0;
   color: #23282e;
-  padding: 6px 8px;
+  padding: 6px 4px 6px 8px;
+  border: 0;
   border-right: 1px solid #a8b0b8;
+  font: inherit;
+  flex: 0 1 auto;
+  max-width: 36%;
+  min-width: 0;
+  border-radius: 0;
 }
 .skin-megastore .ms-searchfield {
   background: #ffffff;
-  color: #55606b;
+  color: #1d232a;
   flex: 1 1 auto;
   padding: 6px 8px;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  border: 0;
+  font: inherit;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
 }
+.skin-megastore .ms-searchfield::placeholder { color: #5c6570; opacity: 1; }
 .skin-megastore .ms-searchgo {
   background: #f5a623;
   color: #26190a;
   font-weight: 700;
   padding: 6px 12px;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  flex: 0 0 auto;
+  cursor: pointer;
+  border-radius: 0;
 }
+.skin-megastore .ms-searchgo:hover { background: #ffb838; }
+.skin-megastore .ms-searchcat:focus-visible,
+.skin-megastore .ms-searchfield:focus-visible,
+.skin-megastore .ms-searchgo:focus-visible {
+  outline: 2px solid #ffd35c;
+  outline-offset: -2px;
+}
+
+.skin-megastore .ms-cartlink {
+  color: #ffd35c;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.skin-megastore .ms-cartlink:hover { color: #ffe291; text-decoration: underline; }
 
 .skin-megastore .ms-catbar {
   display: flex;
@@ -293,23 +329,141 @@
 .skin-megastore .ms-buy-btn,
 .skin-megastore .ms-buy-btn2 {
   display: block;
+  width: 100%;
   text-align: center;
   border-radius: 16px;
   padding: 8px 10px;
   margin: 0 0 6px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
+  cursor: pointer;
 }
 .skin-megastore .ms-buy-btn {
   background: #f7cb52;
   border: 1px solid #b08010;
   color: #221803;
 }
+.skin-megastore .ms-buy-btn:hover { background: #ffd970; }
 .skin-megastore .ms-buy-btn2 {
   background: #f09a1f;
   border: 1px solid #94600a;
   color: #221803;
 }
+.skin-megastore .ms-buy-btn2:hover { background: #ffab38; }
+.skin-megastore .ms-buy-btn:focus-visible,
+.skin-megastore .ms-buy-btn2:focus-visible,
+.skin-megastore .ms-qty:focus-visible,
+.skin-megastore .ms-cart-clear:focus-visible {
+  outline: 2px solid #8a3b00;
+  outline-offset: 2px;
+}
+
+.skin-megastore .ms-buy-note { font-size: 12px; color: #3c434b; margin: 4px 0 0; }
+.skin-megastore .ms-buy-alt {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 6px 0 0;
+}
+.skin-megastore .ms-buy-notforsale {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3c434b;
+  margin: 0 0 4px;
+}
+.skin-megastore .ms-buy-why { margin: 0 0 8px; }
+.skin-megastore .ms-buy-back { font-size: 12px; font-weight: 700; }
+
+/* ---------- the truth at the end of a list ---------- */
+
+.skin-megastore .ms-truth {
+  border: 1px solid #d3d8dd;
+  border-left: 4px solid #8a6a10;
+  background: #fffbf0;
+  padding: 10px 12px;
+  margin: 12px 0;
+}
+.skin-megastore .ms-truth-p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #2b3138;
+}
+.skin-megastore .ms-truth-p:last-child { margin-bottom: 0; }
+.skin-megastore .ms-truth-buy {
+  margin: 0 0 6px;
+  padding: 8px 10px;
+  background: #fffdf7;
+}
+.skin-megastore .ms-truth-buy .ms-truth-p { font-size: 12px; }
+
+/* ---------- the list itself ---------- */
+
+.skin-megastore .ms-cart { margin: 10px 0 4px; }
+.skin-megastore .ms-cart-empty { color: #3c434b; margin: 0 0 8px; }
+.skin-megastore .ms-cart-back { font-weight: 700; }
+.skin-megastore .ms-cart-row {
+  border-bottom: 1px solid #e6e9ec;
+  padding: 8px 0;
+}
+.skin-megastore .ms-cart-name { margin: 0 0 2px; font-weight: 600; }
+.skin-megastore .ms-cart-link { text-decoration: none; }
+.skin-megastore .ms-cart-link:hover { text-decoration: underline; }
+.skin-megastore .ms-cart-unit { margin: 0 0 6px; font-size: 12px; color: #55606b; }
+.skin-megastore .ms-cart-line { margin: 4px 0 0; font-weight: 700; }
+
+.skin-megastore .ms-qtybox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.skin-megastore .ms-qty {
+  background: #f1f3f5;
+  border: 1px solid #a8b0b8;
+  border-radius: 3px;
+  color: #1d232a;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.skin-megastore .ms-qty:hover { background: #e2e6ea; }
+.skin-megastore .ms-qty-rm { min-width: 0; }
+.skin-megastore .ms-qty-n {
+  font-weight: 700;
+  min-width: 22px;
+  text-align: center;
+}
+
+.skin-megastore .ms-cart-sum {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.skin-megastore .ms-cart-sum-lbl { font-weight: 600; }
+.skin-megastore .ms-cart-clear {
+  background: #f1f3f5;
+  border: 1px solid #a8b0b8;
+  border-radius: 3px;
+  color: #1d232a;
+  font: inherit;
+  font-size: 12px;
+  padding: 6px 10px;
+  min-height: 34px;
+  cursor: pointer;
+}
+.skin-megastore .ms-cart-clear:hover { background: #e2e6ea; }
+
+.skin-megastore .ms-side-rates { margin-bottom: 6px; }
+.skin-megastore .ms-rate-lbl { display: inline-flex; align-items: center; gap: 4px; }
+.skin-megastore .ms-rate-txt { font-size: 12px; }
 .skin-megastore .ms-buy-small { font-size: 11px; color: #55606b; margin: 6px 0 0; }
 
 /* ---------- reviews ---------- */
