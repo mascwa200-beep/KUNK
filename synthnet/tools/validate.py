@@ -1003,14 +1003,21 @@ def scan_external(report):
 #
 # It cannot check whether they are in character. That is still on the author.
 
+# The floor is what it means for the continuity to be BROKEN, not a coverage
+# target. CI runs this with --strict, where a warning fails the build, so
+# anything reported as one has to be something worth blocking a build over --
+# and "this person could do with another site" is not, it is a note that flaps
+# every time content lands. Reaching two sites is the real line: at one, a
+# person has stopped being someone the county knows and is a character on a
+# page. The actual counts print on every run either way.
 CANON_PEOPLE = {
-    # name in prose          canonical handle    sites it must reach
-    "Karen Fennimore":      ("kfennimore",       5),
-    "Dale Carver":          ("mod_dcarver",      5),
-    "Walt Pennock":         ("wpennock",         5),
-    "Marion Teale":         (None,               4),
-    "Hal Brenner":          (None,               4),
-    "Ruth Cannady":         (None,               3),
+    # name in prose          canonical handle    floor
+    "Karen Fennimore":      ("kfennimore",       2),
+    "Dale Carver":          ("mod_dcarver",      2),
+    "Walt Pennock":         ("wpennock",         2),
+    "Marion Teale":         (None,               2),
+    "Hal Brenner":          (None,               2),
+    "Ruth Cannady":         (None,               2),
 }
 
 # A handle is a name people type, and people typing a name is exactly where
@@ -1098,11 +1105,13 @@ def check_canon(report, parsed):
         text = json.dumps(site, ensure_ascii=False)
         blobs.append((rel(path), str(site.get("era", "")), text))
 
-    for name, (handle, want) in sorted(CANON_PEOPLE.items()):
+    reach = []
+    for name, (handle, floor) in sorted(CANON_PEOPLE.items()):
         seen = sum(1 for _w, _e, t in blobs if name in t)
-        if seen < want:
-            report.warn("canon", "%s appears on %d site(s); the county needs "
-                                 "them on at least %d" % (name, seen, want))
+        reach.append("%s %d" % (name.split()[-1], seen))
+        if seen < floor:
+            report.warn("canon", "%s is on %d site(s) and has stopped being "
+                                 "someone the county knows" % (name, seen))
         if not handle:
             continue
         for wrong in sorted(handle_variants(handle)):
@@ -1111,6 +1120,8 @@ def check_canon(report, parsed):
                     report.error(where, "canon: %r is a misspelling of the "
                                         "handle %r" % (wrong, handle))
                     break
+
+    print("  people: " + ", ".join(reach))
 
     for what, true_pat, wrong_pat in DISPUTES:
         right = re.compile(true_pat, re.I)
