@@ -75,6 +75,22 @@ const SETTING = [
   'posting recipes, correcting each other\'s grammar, flaming.',
 ].join(' ')
 
+// THERE IS NO REPAIR STAGE HERE, AND ONE MUST NOT BE ADDED WITH WRITE ACCESS.
+//
+// A second stage that runs validate.py on the file its author just wrote and
+// "fixes what it names" is the obvious next thing to build. It was built, in
+// an ad-hoc version of this workflow, and it deleted content three times:
+// eight finished articles and 11,500 characters from a site that had NO
+// validation errors at all; four topics and thirty-three posts from another;
+// and a third of a page including its 88x31 badge wall, from a file that had
+// already been committed. Twice that shipped, because the site still
+// validated and still rendered -- deletion is invisible to every check in
+// this project.
+//
+// Telling it not to does not work; it was told, in as many words, and did it
+// again on the next site. If you want that stage, give it validate.py and a
+// read of the file and have it RETURN a note saying what is wrong. Let
+// something that is not a language model do the writing.
 const NO_EXPLORE = [
   'TOKEN DISCIPLINE - obey strictly:',
   '- Do NOT explore the repository. No grep, no glob, no directory listing.',
