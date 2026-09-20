@@ -2,6 +2,7 @@ package net.verity.synthnet;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Build;
@@ -77,6 +78,15 @@ public class MainActivity extends Activity {
     /** Pending result of an <input type="file"> the page opened. */
     private ValueCallback<Uri[]> pendingFiles;
     private static final int PICK_FILE = 4011;
+    private static final int ASK_NOTIFY = 4012;
+
+    /** Sent by Bridge when the page's alerts toggle is switched on. */
+    static final String ACTION_ASK_NOTIFY = "net.verity.synthnet.ASK_NOTIFY";
+    /** Sent by a tapped notification. */
+    static final String ACTION_OPEN_FEEDS = "net.verity.synthnet.OPEN_FEEDS";
+
+    private static final String FEEDS_URL =
+            "https://" + ASSET_HOST + "/index.html#synth://feeds.verity.net/";
 
     @Override
     protected void onCreate(Bundle state) {
@@ -115,10 +125,79 @@ public class MainActivity extends Activity {
          * checks that. */
         web.setWebChromeClient(new FilePicker(this));
 
+        /* The page's one line to the outside. It saves a snapshot of when you
+         * last looked at each site, so the widget and the alarm can keep
+         * counting with no WebView running. See Bridge for why exposing this
+         * is safe here and would not be in an app that could load a URL. */
+        web.addJavascriptInterface(new Bridge(this), "SynthHost");
+
+        AlertAlarm.ensureChannel(this);
+        AlertAlarm.schedule(this);
+
         if (state != null) {
             web.restoreState(state);
         } else {
-            web.loadUrl(START_URL);
+            web.loadUrl(startUrlFor(getIntent()));
+        }
+    }
+
+    /**
+     * A tapped notification should land on Feeds rather than wherever you
+     * happened to be three days ago.
+     */
+    private String startUrlFor(Intent intent) {
+        if (intent != null && ACTION_OPEN_FEEDS.equals(intent.getAction())) {
+            return FEEDS_URL;
+        }
+        return START_URL;
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (intent == null) return;
+        setIntent(intent);
+
+        if (ACTION_ASK_NOTIFY.equals(intent.getAction())) {
+            askForNotifications();
+            return;
+        }
+        if (ACTION_OPEN_FEEDS.equals(intent.getAction()) && web != null) {
+            web.loadUrl(FEEDS_URL);
+        }
+    }
+
+    /**
+     * Ask for POST_NOTIFICATIONS, and only when the page says you asked for
+     * alerts.
+     *
+     * Not on first launch: a permission dialog that appears before anyone
+     * knows what the app is gets declined, and on Android 13+ a declined
+     * POST_NOTIFICATIONS is final until reinstall. One chance, so spend it
+     * when the answer is likely to be yes.
+     */
+    private void askForNotifications() {
+        if (Build.VERSION.SDK_INT < 33) return;   // not a permission before 13
+        /* The literal string rather than Manifest.permission.POST_NOTIFICATIONS:
+         * build.sh compiles against whatever stable platform jar the machine
+         * has, and referencing a constant added in API 33 would make the
+         * build depend on that being 33 or newer. */
+        String permission = "android.permission.POST_NOTIFICATIONS";
+        if (checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED) return;
+        requestPermissions(new String[] { permission }, ASK_NOTIFY);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int code, String[] permissions, int[] results) {
+        super.onRequestPermissionsResult(code, permissions, results);
+        if (code != ASK_NOTIFY) return;
+        /* Granted or not, the page should see the real answer rather than
+         * assume. Refusal is a perfectly good outcome -- the widget and the
+         * in-app Feeds panel do not need it. */
+        if (web != null) {
+            web.evaluateJavascript(
+                    "window.SYNTH && SYNTH.host && SYNTH.host.alertsAnswered "
+                            + "&& SYNTH.host.alertsAnswered();", null);
         }
     }
 

@@ -1290,6 +1290,13 @@ window.SYNTH = window.SYNTH || {};
     if (SYNTH.feedsui && SYNTH.feedsui.paintBadge) {
       try { SYNTH.feedsui.paintBadge(); } catch (e) { /* not fatal */ }
     }
+
+    /* Hand the Android app the small part it cannot derive for itself, so
+     * the home-screen widget keeps counting with the app closed. A no-op
+     * anywhere that is not the app. */
+    if (SYNTH.host && SYNTH.host.sync) {
+      try { SYNTH.host.sync(); } catch (e) { /* not fatal */ }
+    }
   }
 
   function navigate(url, opts) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.verity.synthnet"
-    android:versionCode="1"
-    android:versionName="1.0">
+    android:versionCode="2"
+    android:versionName="1.1">
 
     <!--
       There is deliberately no <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,25 @@
       the app cannot phone home, cannot be told to, and has nothing to leak.
 
       Everything it displays is inside the APK under assets/.
+
+      The two permissions below are for local notifications, and NEITHER OF
+      THEM GRANTS ANY NETWORK ACCESS. The guarantee above is unchanged: the
+      process still cannot open a socket. What changed is that "declares no
+      permissions at all" is no longer literally true, so the CI gate is now
+      an allowlist rather than a count. It still fails the build on INTERNET,
+      on ACCESS_NETWORK_STATE, and on anything not named here.
+
+      See AlertAlarm for why an inexact alarm rather than an exact one
+      (SCHEDULE_EXACT_ALARM is denied by default on Android 14+ for apps
+      targeting 33+) and rather than a foreground service (three more
+      permissions and a permanent notification, to say a fictional forum is
+      busy).
+
+      The home-screen widget needs no permission at all and is the half of
+      this that keeps working when an OEM battery manager throttles the alarm.
     -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:label="@string/app_name"
@@ -36,5 +54,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- The widget. A BroadcastReceiver and an XML file; that is the
+             whole of it. Not exported: nothing outside the app has any
+             business poking it. -->
+        <receiver
+            android:name=".SynthWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <!-- The alarm, and re-arming it after a reboot or an update. The
+             alarm intent is ours and internal; BOOT_COMPLETED has to come
+             from the system, which is why this one is exported. -->
+        <receiver
+            android:name=".AlertAlarm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>

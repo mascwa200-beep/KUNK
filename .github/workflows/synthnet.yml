@@ -21,6 +21,7 @@ on:
       - ".github/scripts/synthnet_user_check.py"
       - ".github/scripts/synthnet_link_check.py"
       - ".github/scripts/synthnet_live_check.py"
+      - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -29,6 +30,7 @@ on:
       - ".github/scripts/synthnet_user_check.py"
       - ".github/scripts/synthnet_link_check.py"
       - ".github/scripts/synthnet_live_check.py"
+      - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -159,6 +161,15 @@ jobs:
         # This reads the app's source AND drives it through every fame tier.
         run: python3 .github/scripts/synthnet_link_check.py --root synthnet
 
+      - name: The Java clock and the JavaScript clock must agree
+        # The widget recomputes its counts natively, because when the app is
+        # closed there is no WebView to ask and a cached number would be wrong
+        # within minutes. That is a duplicate implementation of the one
+        # function this whole project rests on, and the two languages disagree
+        # about arithmetic unless you are careful: they differed on 863 of
+        # 1304 answers the first time this ran.
+        run: python3 .github/scripts/synthnet_slotmath_check.py --root synthnet
+
       - name: Build the Android app
         # ubuntu-latest ships the Android SDK, and the app uses only framework
         # APIs, so there is nothing to resolve or download -- aapt2, javac, d8
@@ -167,21 +178,82 @@ jobs:
           export ANDROID_HOME="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
           bash synthnet/android/build.sh
 
-      - name: The app must hold no permissions
+      - name: The app must hold no network permission
         # The offline guarantee rests on the app having no INTERNET permission,
         # which makes it enforced by Android rather than promised in a README.
-        # A future edit adding one would silently dissolve that, so it fails
-        # the build instead.
+        #
+        # This used to assert zero permissions of any kind. It now asserts an
+        # allowlist, because local notifications need two and neither of them
+        # grants network access: POST_NOTIFICATIONS (a runtime prompt) and
+        # RECEIVE_BOOT_COMPLETED (so the alarm survives a restart). The
+        # process still cannot open a socket. The home-screen widget, which
+        # is the half of that feature that cannot be throttled or declined,
+        # needs no permission at all.
+        #
+        # An allowlist is stricter than it sounds: anything not named below
+        # fails, so adding INTERNET, ACCESS_NETWORK_STATE, a location
+        # permission or a foreground-service type all fail the build the same
+        # way a count would have.
         run: |
           BT="$(ls -1 "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
           AAPT2="$ANDROID_HOME/build-tools/$BT/aapt2"
-          n=$("$AAPT2" dump badging synthnet/android/synthnet.apk | grep -c "uses-permission" || true)
-          echo "uses-permission entries: $n"
-          if [ "$n" -ne 0 ]; then
-            echo "FAIL: the app declares a permission. It must declare none."
-            "$AAPT2" dump badging synthnet/android/synthnet.apk | grep "uses-permission"
-            exit 1
+          ALLOWED="android.permission.POST_NOTIFICATIONS
+          android.permission.RECEIVE_BOOT_COMPLETED"
+
+          GOT=$("$AAPT2" dump badging synthnet/android/synthnet.apk \
+                | grep -oE "uses-permission[^:]*: name='[^']+'" \
+                | sed "s/.*name='//;s/'//" | sort -u || true)
+          echo "declared permissions:"
+          echo "$GOT" | sed 's/^/  /'
+
+          status=0
+          for p in $GOT; do
+            case "$p" in
+              android.permission.POST_NOTIFICATIONS) ;;
+              android.permission.RECEIVE_BOOT_COMPLETED) ;;
+              *)
+                echo "FAIL: $p is not on the allowlist."
+                status=1
+                ;;
+            esac
+          done
+          # Named explicitly as well, so the failure says the right thing if
+          # the loop above is ever loosened by accident.
+          if echo "$GOT" | grep -qE "INTERNET|ACCESS_NETWORK_STATE"; then
+            echo "FAIL: the app asked for network access. The whole project"
+            echo "      rests on Android refusing it one."
+            status=1
           fi
+          exit $status
+
+      - name: The widget and the alarm must survive the build
+        # d8 has silently dropped a class here before (an anonymous
+        # WebChromeClient it could not resolve), with a bare NPE naming no
+        # source file. A widget that is not in the dex is a widget that never
+        # appears in the picker, and nothing else would notice.
+        run: |
+          BT="$(ls -1 "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          AAPT2="$ANDROID_HOME/build-tools/$BT/aapt2"
+          status=0
+          CLASSES=$(unzip -p synthnet/android/synthnet.apk classes.dex | strings \
+                    | grep -oE "Lnet/verity/synthnet/[A-Za-z]+;" | sort -u)
+          for c in SynthWidget AlertAlarm Bridge Snapshot SlotMath MainActivity; do
+            if echo "$CLASSES" | grep -q "Lnet/verity/synthnet/$c;"; then
+              echo "  ok   $c"
+            else
+              echo "  FAIL $c is not in the dex"
+              status=1
+            fi
+          done
+          for r in res/xml/widget_info.xml res/layout/widget.xml; do
+            if unzip -l synthnet/android/synthnet.apk | grep -q "${r##*/}"; then
+              echo "  ok   ${r##*/}"
+            else
+              echo "  FAIL ${r##*/} is not in the APK"
+              status=1
+            fi
+          done
+          exit $status
 
       - name: The APK must contain everything the page fetches
         # Structural checks cannot catch a file that was never staged into

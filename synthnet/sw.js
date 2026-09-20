@@ -43,6 +43,7 @@ var SHELL = [
   './app/packs.js',
   './app/alerts.js',
   './app/feedsui.js',
+  './app/hostbridge.js',
   './app/bots.js',
   './app/fame.js',
   './app/compose.js',

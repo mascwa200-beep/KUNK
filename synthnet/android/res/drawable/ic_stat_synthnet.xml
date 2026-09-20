@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Status-bar icons are drawn as a silhouette: the system keeps the alpha
+     channel and throws the colour away, so this is a solid white shape. A
+     browser window, matching the launcher icon. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,4h18v3H3z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,8.5h18V20H3zM5,10.5v7.5h14v-7.5z" />
+</vector>
