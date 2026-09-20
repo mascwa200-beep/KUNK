@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T14:47:57Z",
+  "generated": "2026-09-20T14:53:45Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -559,6 +559,24 @@
       ],
       "path": "net/sites/halsey-ledger-com/site.json",
       "bytes": 40752
+    },
+    {
+      "domain": "halseycountynow.com",
+      "title": "Ordway County Now",
+      "type": "news",
+      "era": "2026",
+      "skin": "pinkslime",
+      "description": "A Pinelock property covering Ordway County, the next county over, off the same pipeline and the same template as the Verity Ledger, on a domain that names a village in Verity County.",
+      "tags": [
+        "ordway",
+        "verity",
+        "2026",
+        "news",
+        "pinelock",
+        "pinkslime"
+      ],
+      "path": "net/sites/halseycountynow-com/site.json",
+      "bytes": 72048
     },
     {
       "domain": "hollismarket.com",

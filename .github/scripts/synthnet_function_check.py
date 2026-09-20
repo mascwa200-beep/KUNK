@@ -140,6 +140,14 @@ PROBE = r"""() => {
   // it, and the first version of this check reported every one of them.
   const LABELS = new Set(['H1','H2','H3','H4','H5','H6','TH','CAPTION',
                           'LEGEND','DT','STRONG','B','EM','I','TITLE']);
+  /* NOT span or div. Those are what a nav item is made of -- excluding
+   * them would have silently dropped the 252 dead nav items this check
+   * exists to find, which is the second time in this file that widening a
+   * filter turned the check off. Authored prose is caught by its container
+   * instead: markup.js wraps every paragraph it renders in .synth-p. */
+  const PROSE = new Set(['P','TD','LI','BLOCKQUOTE','PRE','FIGCAPTION','DD',
+                         'SMALL']);
+  const inProse = (n) => !!(n.closest && n.closest('.synth-p, .synth-code, blockquote'));
 
   // The ad layer is decor ON PURPOSE. An advert on this network that does
   // nothing when pressed is not a bug, it is what an advert on a county
@@ -174,6 +182,11 @@ PROBE = r"""() => {
                        (n.getAttribute && n.getAttribute('role') === 'button');
     if (!pointer && !clicky && !controlish) continue;
     if (!pointer && LABELS.has(tag)) continue;
+    /* Prose is not a control either. A <p> reading "NEXT" in an old-web
+     * table, or a news kicker reading "ABOUT", is content that happens to
+     * use a word people click. Without a pointer cursor there is nothing
+     * offering to do anything. */
+    if (!pointer && (PROSE.has(tag) || inProse(n))) continue;
     if (isAd(n) || wrapsAControl(n)) continue;
     if (isReal(n) || disabledish(n)) continue;
     // A bare word inside a real link's label is not itself decor.
@@ -200,8 +213,13 @@ PROBE = r"""() => {
 SNAP = r"""() => {
   const v = document.getElementById('synth-viewport');
   const h = v ? v.innerHTML : '';
+  /* Scroll counts. A table-of-contents entry calls scrollIntoView and
+   * changes neither the DOM nor the route, and the first version of this
+   * check called every one of them dead. Jumping the reader to a heading is
+   * a thing happening. */
   return {len: h.length, sig: h.length ? h.charCodeAt(h.length >> 1) : 0,
-          route: location.hash};
+          route: location.hash,
+          scroll: (v ? v.scrollTop : 0) + window.scrollY};
 }"""
 
 SNAP_AND_CLICK = r"""(want) => {
@@ -213,7 +231,8 @@ SNAP_AND_CLICK = r"""(want) => {
   if (!n) return {gone: true};
   const h = view.innerHTML;
   const before = {len: h.length, sig: h.length ? h.charCodeAt(h.length >> 1) : 0,
-                  route: location.hash};
+                  route: location.hash,
+                  scroll: view.scrollTop + window.scrollY};
   n.click();
   return before;
 }"""
@@ -364,7 +383,8 @@ def main():
                         after = page.evaluate(SNAP)
                         if (after["len"] != shot["len"]
                                 or after["sig"] != shot["sig"]
-                                or after["route"] != shot["route"]):
+                                or after["route"] != shot["route"]
+                                or after["scroll"] != shot["scroll"]):
                             verdict = "live"
                             break
                     verdicts[key] = verdict
