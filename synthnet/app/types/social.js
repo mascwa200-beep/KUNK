@@ -259,6 +259,205 @@
     return wrap;
   }
 
+  /* ---------- reader notes ----------
+   *
+   * The crowd-sourced correction hung under a post. It belongs here for the
+   * same reason the bots do: on this network the loudest posts are automated
+   * and wrong, and the only thing answering them is other readers, slowly,
+   * after the post has already travelled.
+   *
+   * Three things about the real ones that matter more than the box itself:
+   *
+   *   1. They arrive HOURS LATE. The post goes out, it spreads, and the note
+   *      turns up the next morning under a copy nobody is reading any more.
+   *      So a note has an arrival time and simply is not there before it --
+   *      come back tomorrow and a post you already read has grown one.
+   *   2. Most are proposed and never shown. The pending state is the common
+   *      one, and it is visible to nobody but the people rating it.
+   *   3. Some of them are wrong. A note is a crowd, and a crowd that is
+   *      confidently mistaken writes in exactly the same register as one
+   *      that is right. Three of the bank below are wrong, and nothing on
+   *      the page marks which -- that is the point of including them.
+   */
+  /* Each note names what it is answering. A note about broadband hung under
+   * a post about a hardware store does not read as a crowd correcting a
+   * mistake, it reads as a bug -- which is what the first version of this
+   * did, because the bank was picked at random. `on` is the list of words
+   * that have to be in the post for the note to be available at all; null
+   * means it fits any automated post, because it is about the account
+   * rather than the claim. */
+  var NOTES = [
+    { on: ['broadband', 'internet', 'ranks', 'ranked'],
+      head: 'Readers added context',
+      body: 'The figure in this post is from a 2019 state table that ' +
+            'measures advertised speed, not delivered speed. Verity County ' +
+            'has not been surveyed since.',
+      src: 'Sources: state broadband table (2019); county franchise filings' },
+    { on: ['substation', 'fire', '2003', '2004'],
+      head: 'Readers added context',
+      body: 'The Gridfall substation fire was in June 2003, not 2004. The ' +
+            '2004 date comes from a video thumbnail that has been reposted ' +
+            'since 2024.',
+      src: 'Sources: Verity Ledger archive, 12 June 2003' },
+    /* Every key here has to be in the post, not any one of them: a note
+     * about a substation photograph hung on a post about a covered bridge
+     * matched on the word "photo" alone, which is the mismatch this whole
+     * matching pass exists to stop. */
+    { on: ['substation'], all: ['photo'],
+      head: 'Readers added context',
+      body: 'The photograph attached to this post is of a substation in ' +
+            'another state. The original is credited to a utility trade ' +
+            'magazine.',
+      src: 'Sources: reverse image search; the magazine’s own archive' },
+    { on: ['kestrel', 'diner'],
+      head: 'Readers added context',
+      body: 'The Blue Kestrel diner closed in 1977 after a kitchen fire, ' +
+            'not in 2006. The 2006 date is when the building was last sold.',
+      src: 'Sources: kestrel-journal.net' },
+    { on: ['trail', 'branch', 'rail', 'trestle', 'crossing'],
+      head: 'Readers added context',
+      body: 'The Coyne Creek trestle on this route has been fenced since ' +
+            '2014. The county’s own 2013 assessment classes it as not ' +
+            'suitable for pedestrian loading.',
+      src: 'Sources: Structural Assessment, Four Bridge Structures (2013)' },
+    { on: ['store', 'shop', 'storefront'],
+      head: 'Readers added context',
+      body: 'This post gives the wrong street. The business named here has ' +
+            'been on Third since 1994.',
+      src: 'Sources: county business licence register' },
+
+    /* --- and the ones that are wrong, written in the same register ----- */
+    { on: ['trail', 'branch', 'rail', 'freight'],
+      head: 'Readers added context',
+      body: 'The Verity Rail branch line is still in service. Freight runs ' +
+            'on it twice a week.',
+      src: 'Sources: a rail enthusiast forum thread from 2011' },
+    { on: ['summary', 'roundup', 'explained', 'explainer'],
+      head: 'Readers added context',
+      body: 'This account has posted the same text under four different ' +
+            'local place names in the last week.',
+      src: 'Sources: this account’s own timeline' },
+    /* The false positive, and it has to land on a person to be the joke the
+     * research says it is. These are the words a small business writes with:
+     * opening hours, a street, a price. */
+    { on: ['sundays', 'walk-in', 'appointment', 'screens', 'batteries'],
+      head: 'Readers added context',
+      body: 'The em dashes and the sentence rhythm here indicate this was ' +
+            'written by a language model.',
+      src: 'Sources: widely reported detection guidance' }
+  ];
+
+  /* Every note has to be about the post. An earlier version let two of them
+   * match anything, and because those two are the false accusations the
+   * feature turned into nothing but vigilantism -- half the notes on screen
+   * were wrong ones landing on the two humans who knew what they were
+   * talking about. Now the wrong ones are keyed too: they land on the words
+   * a small business writes with, which is exactly who gets accused.
+   *
+   * `on` is any-of and `all` is every-of. A note about a substation
+   * photograph matched a post about a covered bridge on the word "photo"
+   * alone, which is the mismatch this exists to stop. */
+  /* Whole words, not substrings. Matching "top " inside "on top of" and
+   * "open " inside "opened" is how a note about content-farm reposting
+   * found its way onto an obituary. */
+  function saysWord(hay, word) {
+    var w = String(word).toLowerCase();
+    var at = hay.indexOf(w);
+    while (at >= 0) {
+      var before = at === 0 ? ' ' : hay.charAt(at - 1);
+      var after = hay.charAt(at + w.length) || ' ';
+      if (!/[a-z0-9]/.test(before) && !/[a-z0-9]/.test(after)) { return true; }
+      at = hay.indexOf(w, at + 1);
+    }
+    return false;
+  }
+
+  function notesFor(post) {
+    var hay = String(post.body || '').toLowerCase();
+    var out = [], i, j;
+    for (i = 0; i < NOTES.length; i++) {
+      var n = NOTES[i], hit = false;
+      for (j = 0; j < n.on.length; j++) {
+        if (saysWord(hay, n.on[j])) { hit = true; break; }
+      }
+      if (hit && n.all) {
+        for (j = 0; j < n.all.length; j++) {
+          if (!saysWord(hay, n.all[j])) { hit = false; break; }
+        }
+      }
+      if (hit) { out.push(n); }
+    }
+    return out;
+  }
+
+  /* Nothing is ever hung on a post by a person.
+   *
+   * The research calls the false-positive accusation one of the funniest
+   * things about this feature, and it is, right up until the post it lands
+   * on is someone writing about their father dying at County General --
+   * which is a real post on this site, and which the first version of this
+   * matched twice, once for "written by a language model" and once for
+   * "posted the same text under four place names".
+   *
+   * The joke survives without that. `promoted` is a real local business
+   * writing its own opening hours, and accusing Carrow Wireless of being a
+   * language model is the same joke with nobody's bereavement in it. */
+  var NOTE_KIND_RATE = { bot: 0.30, spam: 0.34, promoted: 0.22, human: 0 };
+
+  function noteFor(post, base) {
+    var L = window.SYNTH.live;
+    if (!L || !L.rng || !L.now) { return null; }
+
+    var at = post.liveAt;
+    if (typeof at !== 'number') {
+      /* An authored 2026 post: its baked time, if it parses. */
+      at = L.toMs ? L.toMs(post.time) : null;
+      if (typeof at !== 'number') { return null; }
+    }
+
+    var r = L.rng(hash('note:' + txt(post.id, txt(post.handle)) + ':' + at));
+    var rate = NOTE_KIND_RATE[post.kind || 'human'];
+    if (rate === undefined) { rate = 0.05; }
+    if (r() > rate) { return null; }
+
+    /* Somewhere between two and twenty-six hours after the post. */
+    var delay = (2 + r() * 24) * 3600000;
+    var shownAt = at + delay;
+    var pending = L.now() < shownAt;
+
+    /* A pending note is the common case and is shown to nobody. Only a
+     * fraction leak into view at all, as the "being rated" state. */
+    if (pending && r() > 0.25) { return null; }
+
+    /* Nothing here answers the post, so nothing is hung under it. That is
+     * the truth about almost every post. */
+    var bank = notesFor(post);
+    if (!bank.length) { return null; }
+    var row = bank[Math.floor(r() * bank.length) % bank.length];
+    return { head: row.head, body: row.body, source: row.src,
+             pending: pending, at: shownAt };
+  }
+
+  function noteNode(ctx, note) {
+    var el = ctx.el;
+    if (note.pending) {
+      return el('div', { 'class': 'p-note is-pending' },
+        el('div', { 'class': 'p-note-head' },
+          'Readers have proposed a note on this post'),
+        el('div', { 'class': 'p-note-body' },
+          'It is being rated and is not shown to everyone.'));
+    }
+    return el('div', { 'class': 'p-note' },
+      el('div', { 'class': 'p-note-head' }, note.head),
+      el('div', { 'class': 'p-note-body' }, note.body),
+      el('div', { 'class': 'p-note-src' }, note.source),
+      el('div', { 'class': 'p-note-ask' },
+        'Do you find this helpful?',
+        el('span', { 'class': 'p-note-btn' }, 'Yes'),
+        el('span', { 'class': 'p-note-btn' }, 'Somewhat'),
+        el('span', { 'class': 'p-note-btn' }, 'No')));
+  }
+
   function postNode(ctx, post, base, opts) {
     var el = ctx.el;
     opts = opts || {};
@@ -293,10 +492,17 @@
     var rowKind = post.kind === 'promoted' ? ' lv-promoted-row'
                 : (post.kind === 'bot' || post.kind === 'spam') ? ' lv-bot-row' : '';
 
+    /* The note sits between the post and its counts, which is where it goes
+     * on the real thing: under what it is correcting, above how far that
+     * travelled. Only on 2026 sites -- a 2008 archive predates the idea. */
+    var note = (ctx.site && String(ctx.site.era) === '2026')
+      ? noteFor(post, base) : null;
+
     return el('div', { 'class': 'post' + (opts.single ? ' single' : '') + rowKind },
       el('div', { 'class': 'p-row' },
         avatar(el, post.avatarSeed, txt(post.author, post.handle)),
-        el('div', { 'class': 'p-main' }, head, bodyNode(ctx, post.body), actions)),
+        el('div', { 'class': 'p-main' }, head, bodyNode(ctx, post.body),
+          note ? noteNode(ctx, note) : null, actions)),
       replyBlock(ctx, post, base, !!opts.single));
   }
 

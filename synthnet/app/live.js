@@ -139,19 +139,64 @@
    * Parsed by parts rather than through Date.parse, which reads a bare
    * date-time as UTC under ES5 and as local under ES2016 -- a difference that
    * would move every authored timestamp by hours depending on the engine. */
-  var AT_RE = /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/;
+  /* Content on disk writes times three different ways, because three
+   * different kinds of page show them three different ways:
+   *
+   *   2019-04-11T10:22:00      question and dispatch timestamps
+   *   September 18, 2026       a newspaper's edition date
+   *   Sep 20, 2026 7:58 AM     a post in a feed
+   *
+   * All three are here so that callers stop each keeping a half-right parser
+   * of their own, which is what produced a renderer that silently did
+   * nothing on two formats out of three.
+   *
+   * Parsed by parts, never Date.parse: a bare date-time reads as UTC under
+   * ES5 and as local under ES2016, which would move every authored timestamp
+   * by hours depending on the engine. */
+  var AT_ISO = /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/;
+  var AT_WORD =
+    /^([A-Za-z]{3,9})\.?\s+(\d{1,2}),\s*(\d{4})(?:[,\s]+(\d{1,2}):(\d{2})\s*([AaPp])?)?/;
+
+  function monthIndex(name) {
+    var n = String(name || '').slice(0, 3).toLowerCase(), i;
+    for (i = 0; i < MONTHS.length; i++) {
+      if (MONTHS[i].toLowerCase() === n) { return i; }
+    }
+    return -1;
+  }
 
   function toMs(v) {
     if (typeof v === 'number') { return isFinite(v) ? v : null; }
-    if (v instanceof Date) { return v.getTime(); }
-    var m = AT_RE.exec(String(v === null || v === undefined ? '' : v));
-    if (!m) { return null; }
-    var t = new Date(
-      parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10),
-      m[4] ? parseInt(m[4], 10) : 0, m[5] ? parseInt(m[5], 10) : 0,
-      m[6] ? parseInt(m[6], 10) : 0
-    ).getTime();
-    return isFinite(t) ? t : null;
+    if (v instanceof Date) { return isFinite(v.getTime()) ? v.getTime() : null; }
+    var s = String(v === null || v === undefined ? '' : v);
+
+    var m = AT_ISO.exec(s);
+    if (m) {
+      var t = new Date(
+        parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10),
+        m[4] ? parseInt(m[4], 10) : 0, m[5] ? parseInt(m[5], 10) : 0,
+        m[6] ? parseInt(m[6], 10) : 0
+      ).getTime();
+      return isFinite(t) ? t : null;
+    }
+
+    m = AT_WORD.exec(s);
+    if (m) {
+      var mi = monthIndex(m[1]);
+      if (mi < 0) { return null; }
+      var hr = m[4] ? parseInt(m[4], 10) : 0;
+      var ap = m[6] ? m[6].toLowerCase() : '';
+      /* 12 AM is 0 and 12 PM is 12, which is the one case a naive +12 gets
+       * backwards at both ends of the day. */
+      if (ap === 'p' && hr < 12) { hr += 12; }
+      if (ap === 'a' && hr === 12) { hr = 0; }
+      var w = new Date(
+        parseInt(m[3], 10), mi, parseInt(m[2], 10),
+        hr, m[5] ? parseInt(m[5], 10) : 0, 0
+      ).getTime();
+      return isFinite(w) ? w : null;
+    }
+    return null;
   }
 
   /* "just now" / "6 min ago" / "3 hours ago" / "12 Mar" / "11 Apr 2019" */
@@ -667,6 +712,10 @@
     pick: pick,
     sample: sample,
     ago: ago,
+    /* Exported because renderers hold both shapes too: an authored time is a
+     * wall-clock string and a streamed one is epoch ms, and every one of them
+     * had its own half-right parser. */
+    toMs: toMs,
     clock: clock,
     longDate: longDate,
     stream: stream,

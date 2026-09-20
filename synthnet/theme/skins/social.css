@@ -773,3 +773,89 @@
   .skin-feedslate .pactions,
   .skin-feedslate .act { gap: 4px 14px; }
 }
+
+/* --- reader notes -------------------------------------------------------
+ * The crowd-sourced correction box, on both 2026-capable skins. It is
+ * deliberately not styled as a warning: the real ones are quiet, grey and
+ * easy to scroll past, which is most of why they do not work.
+ */
+.skin-feedslate .p-note {
+  margin: 10px 0 0;
+  padding: 11px 12px;
+  border: 1px solid #2d343c;
+  border-radius: 10px;
+  background: #1a1f25;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.skin-feedslate .p-note-head {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #e7e9ea;
+}
+.skin-feedslate .p-note-body { color: #c9ced4; overflow-wrap: break-word; }
+.skin-feedslate .p-note-src {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #8b949e;
+  overflow-wrap: break-word;
+}
+.skin-feedslate .p-note-ask {
+  margin-top: 9px;
+  font-size: 12px;
+  color: #8b949e;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+.skin-feedslate .p-note-btn {
+  border: 1px solid #3a424b;
+  border-radius: 999px;
+  padding: 3px 11px;
+  color: #c9ced4;
+}
+.skin-feedslate .p-note.is-pending {
+  background: none;
+  border-style: dashed;
+}
+.skin-feedslate .p-note.is-pending .p-note-head { color: #8b949e; font-weight: 600; }
+.skin-feedslate .p-note.is-pending .p-note-body { color: #8b949e; }
+
+.skin-bluebird .p-note {
+  margin: 8px 0 0;
+  padding: 9px 10px;
+  border: 1px solid #d8dde2;
+  border-radius: 6px;
+  background: #f7f9fa;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.skin-bluebird .p-note-head { font-weight: bold; margin-bottom: 4px; color: #14171a; }
+.skin-bluebird .p-note-body { color: #3d4650; overflow-wrap: break-word; }
+.skin-bluebird .p-note-src {
+  margin-top: 5px;
+  font-size: 11px;
+  /* #5b6670 on #f7f9fa is 5.6:1. */
+  color: #5b6670;
+  overflow-wrap: break-word;
+}
+.skin-bluebird .p-note-ask {
+  margin-top: 7px;
+  font-size: 11px;
+  color: #5b6670;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 7px;
+}
+.skin-bluebird .p-note-btn {
+  border: 1px solid #c7ced5;
+  border-radius: 999px;
+  padding: 2px 9px;
+  color: #3d4650;
+}
+.skin-bluebird .p-note.is-pending { background: none; border-style: dashed; }
+.skin-bluebird .p-note.is-pending .p-note-head,
+.skin-bluebird .p-note.is-pending .p-note-body { color: #5b6670; font-weight: normal; }
