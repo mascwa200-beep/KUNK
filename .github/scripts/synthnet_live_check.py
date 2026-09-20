@@ -25,6 +25,7 @@ import argparse
 import glob
 import os
 import pathlib
+import re
 import socket
 import sys
 import threading
@@ -508,6 +509,69 @@ def main():
                 problems.append("sites moved on and the badge showed nothing at all")
             else:
                 notes.append(f"badge: {badge['count']} counted, dot for the rest")
+
+            # --- 9b. the same thing, with no account -----------------------
+            #
+            # Everything above signs up first, so profile.joined always
+            # existed and the no-account path was never once walked. You can
+            # read this entire network without making an account and most
+            # people will, and on that path the away window fell through to
+            # a "now minus a day" fallback that is recomputed per call -- so
+            # it slid, and three days away reported twenty-four hours. Same
+            # bug as the one section 9 exists to catch, arriving through the
+            # door section 9 does not use.
+            anon = page.evaluate("""async () => {
+              await SYNTH.store.ready();
+              await SYNTH.store.wipe();
+              SYNTH.data.invalidate();
+              SYNTH.live.setNow(null);
+              // deliberately NO signUp
+
+              const nav = async (u) => {
+                await SYNTH.engine.navigate(u);
+                await new Promise(r => setTimeout(r, 180));
+              };
+              await nav('synth://boards.gridfall.net/');
+              await nav('synth://gridline.social/');
+
+              const t0 = Date.now();
+              const away = (days) => {
+                SYNTH.live.setNow(t0 + days * 86400000);
+                return Math.round(SYNTH.alerts.digest().away / 3600000);
+              };
+              const out = {h1: away(1 / 24), d3: away(3), w3: away(21)};
+              SYNTH.live.setNow(t0 + 3 * 86400000);
+              return out;
+            }""")
+
+            if anon["d3"] < 60 or anon["w3"] < 480:
+                problems.append(
+                    f"with no account the away window does not track the clock: "
+                    f"{anon['h1']}h / {anon['d3']}h / {anon['w3']}h reported after "
+                    f"1h / 3d / 3w away. It is sliding instead of staying put, so "
+                    f"someone who never signed up is told they have been gone a "
+                    f"day no matter how long it has been.")
+            else:
+                notes.append(f"with no account: {anon['h1']}h / {anon['d3']}h / "
+                             f"{anon['w3']}h away after 1h / 3d / 3w")
+
+            # And the sentence built from it has to be English. spell() says
+            # "an hour" as well as "3 days", and pasting either after a
+            # definite article gives "In the an hour since you last checked".
+            page.evaluate("SYNTH.live.setNow(Date.now() + 3600000)")
+            page.evaluate(
+                "SYNTH.engine.navigate('synth://feeds.verity.net/', {push: false})")
+            page.wait_for_timeout(400)
+            line = page.evaluate(
+                "() => { const n = document.querySelector('.fd-summary');"
+                " return n ? n.innerText.replace(/\\s+/g, ' ').trim() : ''; }")
+            if re.search(r"\bthe an?\b", line):
+                problems.append(f"the digest summary is not English: {line[:90]!r}")
+            elif not line:
+                problems.append("the Feeds page rendered no summary line at all")
+            else:
+                notes.append(f"digest reads: {line[:64]!r}")
+            page.evaluate("SYNTH.live.setNow(null)")
 
             # --- 10. the Feeds page renders and fits a phone ---------------
             page.evaluate("SYNTH.engine.navigate('synth://feeds.verity.net/')")

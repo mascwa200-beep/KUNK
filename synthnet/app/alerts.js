@@ -366,6 +366,28 @@
         ? profile.joined : Date.parse(profile.joined);
       if (isFinite(joined) && joined > 0 && joined <= nowMs()) return joined;
     }
+
+    /* No profile -- you can read this whole network without making one, and
+     * most people will. The visits are still on disk, and the first of them
+     * is when you started, which is the same answer the join date gives for
+     * anyone who did sign up. Without this the last-resort below fires, and
+     * because it is recomputed per call it slides: three days away reported
+     * as twenty-four hours, which is the exact bug the comment above is
+     * about, arriving through the other door. */
+    var first = 0;
+    try {
+      /* allVisits() is keyed by domain, not a list. */
+      var rows = allVisits();
+      for (var domain in rows) {
+        if (!Object.prototype.hasOwnProperty.call(rows, domain)) { continue; }
+        var at = rows[domain] && rows[domain].at;
+        if (typeof at === 'number' && at > 0 && (!first || at < first)) { first = at; }
+      }
+    } catch (e) { first = 0; }
+    if (first && first <= nowMs()) { return first; }
+
+    /* Nothing stored at all: a genuinely fresh install, where a day is a
+     * harmless thing to say. */
     return nowMs() - DAY;
   }
 

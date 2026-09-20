@@ -217,7 +217,13 @@
       summary = 'Nothing has happened since you last looked. This is unusual ' +
                 'and will not last.';
     } else {
-      summary = 'In the ' + spell(digest.away) + ' since you last checked: ' +
+      /* spell() returns "an hour", "a day", "a moment" as well as "3 days",
+       * and "In the an hour since you last checked" is what you get if you
+       * paste it straight after a definite article. Drop the indefinite one;
+       * "in the hour since", "in the day since", "in the moment since" all
+       * read correctly. */
+      var away = spell(digest.away).replace(/^an? /, '');
+      summary = 'In the ' + away + ' since you last checked: ' +
         (mentions ? mentions + (mentions === 1 ? ' thing' : ' things') +
                     ' addressed to you' : 'nothing addressed to you') +
         (ambient ? ', and ' + ambient + ' site' + (ambient === 1 ? '' : 's') +
