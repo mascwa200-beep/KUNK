@@ -1,0 +1,2291 @@
+{
+  "schema": 1,
+  "domain": "gridfalldeals.com",
+  "title": "Gridfall Deals — Your Local Verity County Store",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "A storefront that says it is a family business on Ellery Street in Gridfall, selling county-name merchandise that ships from somewhere else in eighteen to thirty-two days, with a returns policy that closes its own window before the parcel lands.",
+  "tags": [
+    "gridfall",
+    "verity",
+    "shopping",
+    "dropship",
+    "merchandise"
+  ],
+  "links": [
+    "askverity.com",
+    "bluekestrel.com",
+    "carrowwireless.com",
+    "classifieds.verity.net",
+    "countyfacts.info",
+    "countysupply.store",
+    "gridfall.chat",
+    "gridline.social",
+    "hollismarket.com",
+    "now.verityledger.com",
+    "scanner.verity.net",
+    "sdrlisteners.org",
+    "shopwell.store",
+    "thequarry.news",
+    "trailusers.verity.net",
+    "verity.wiki",
+    "verityclerk.gov",
+    "veritysheriff.gov",
+    "vvpl.news",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "storeName": "Gridfall Deals",
+    "categories": [
+      {
+        "id": "c-verity",
+        "name": "Verity County Pride"
+      },
+      {
+        "id": "c-towns",
+        "name": "Gridfall & County Towns"
+      },
+      {
+        "id": "c-home",
+        "name": "Home, Kitchen & Garage"
+      },
+      {
+        "id": "c-outdoor",
+        "name": "Winter, Outage & Outdoors"
+      },
+      {
+        "id": "c-tech",
+        "name": "Tech, Cables & Cameras"
+      },
+      {
+        "id": "c-gift",
+        "name": "Gifts & Last Minute"
+      },
+      {
+        "id": "c-info",
+        "name": "Store Information"
+      }
+    ],
+    "products": [
+      {
+        "id": "p-01",
+        "catId": "c-verity",
+        "name": "VERITY COUNTY Hoodie — Unisex Heavyweight Fleece — EST. 1851 — Mountain & Pine Design",
+        "price": 38.95,
+        "was": 79.99,
+        "rating": 4.8,
+        "reviewCount": 3141,
+        "blurb": "Show your Verity County pride with this premium heavyweight fleece hoodie. Featuring an original vintage-inspired mountain and pine forest design with EST. 1851 lettering, this hoodie makes a thoughtful gift for anyone with a connection to Verity County.\n\nThe cotton-polyester blend is soft on the inside and holds its shape through the long Verity County winters. Available in nine colours, although the colour supplied may differ from the colour shown.\n\n[b]This design is also available for over 3,000 other counties.[/b] Enter your county name at checkout and our team will do the rest.\n\nOrder today and wear where you are from.",
+        "bullets": [
+          "Heavyweight fleece, 60/40 cotton-polyester, front pouch pocket",
+          "Original design: mountain range, pine forest, EST. 1851 lettering",
+          "Nine colours available. Colour supplied may differ from colour shown",
+          "Estimated delivery 18-32 business days. Ships from our Gridfall facility",
+          "Same design available for {{county_name}}, {{state_name}}"
+        ],
+        "imgSeed": "gd-verity-hoodie-mountain",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "g_prather",
+            "stars": 2,
+            "at": "2026-05-26",
+            "title": "There are no mountains here",
+            "body": "The hoodie is a hoodie. It is thinner than the photograph makes it look, the seams are straight, it will do for the garage.\n\nThe front of it has a mountain range on it. We do not have mountains.\n\nIt also says EST. 1851. The county was organised in 1839. That is cut into the courthouse cornerstone in Gridfall and it is printed at the top of every form the clerk's office hands you. Nobody had to look it up. You would have to walk past it not to know it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 8812",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Great quality",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Kayla M.",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Love it",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "A***n",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Five stars",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "COUNTY-MERCH-OUTLET",
+            "stars": 5,
+            "at": "2026-08-12",
+            "title": "SAME HOODIE $12 SHIPPED",
+            "body": "Why pay $38?? Identical hoodie, identical print, [b]$12 shipped[/b] direct from the printer at [url=synth://verity-county-merch.vip/]verity-county-merch[/url]. Limited stock!!",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "s_ruttledge",
+            "stars": 3,
+            "at": "2026-07-14",
+            "title": "Same photograph as the other store",
+            "body": "The photograph on this listing is the photograph on ShopWell. Same model, same grey wall, same fold in the left sleeve. Over there it is the rail shirt, sold by [url=synth://shopwell.store/p/p-119]Verity Heritage Trading Co (Authorized)[/url]. Here it is sold by Gridfall Deals of Gridfall, Verity County.\n\nI am not accusing anybody of anything. I am saying that if you are shopping local to keep the money here, you are shopping at the same warehouse either way, and the warehouse is not here.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-07-15",
+            "title": "Thank you for your feedback",
+            "body": "Thank you for taking the time to share your experience with Gridfall Deals. We take the accuracy of our product listings very seriously and your comments have been passed to the appropriate team for review. Customer satisfaction is important to us and we hope to serve you again soon. In the meantime, why not browse our other Verity County heritage items?",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-02",
+          "p-03",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-02",
+        "catId": "c-verity",
+        "name": "Verity County Coffee Mug 11oz — Vintage Trail Map Design — Dishwasher Safe",
+        "price": 16.49,
+        "was": 34.0,
+        "rating": 4.9,
+        "reviewCount": 812,
+        "blurb": "A beautiful ceramic mug featuring a vintage-style map of the historic Verity Branch Trail, the 22 mile rail-trail that winds through the heart of Verity County.\n\nWhether you are a hiker, a cyclist or simply someone who loves this corner of the country, this mug brings a piece of the trail to your morning coffee. Microwave and dishwasher safe.\n\nMakes a wonderful gift for retirement, housewarming or the holidays.",
+        "bullets": [
+          "11oz ceramic, white gloss, wraparound print",
+          "Vintage trail map design, 22 mile route",
+          "Dishwasher and microwave safe",
+          "Estimated delivery 18-32 business days",
+          "Gift boxing available for $4.99 at checkout"
+        ],
+        "imgSeed": "gd-trail-map-mug",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "l_haymaker",
+            "stars": 2,
+            "at": "2026-06-30",
+            "title": "It is 11.2 miles and that is not the map",
+            "body": "The Verity Branch Trail is 11.2 miles. Marchfield to Coyne Flats, crushed limestone, county parks. It opened in 2014 on the old rail bed and there is a sign at the Marchfield trailhead with the mileage on it. [url=synth://verity.wiki/wiki/verity-branch-trail]The wiki has it right[/url], which is not always the way round these things go.\n\nThe map on the mug has a lake on it. There is no lake on the trail. There is a creek you cross three times and a fenced trestle you do not.\n\nI use the mug. I am not going to pretend I threw it out.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "p_nussbaum",
+            "stars": 1,
+            "at": "2026-08-05",
+            "title": "Print came off in the wash",
+            "body": "Second wash, top rack, normal detergent. The map is now a grey smear and the word VERITY. It says dishwasher safe on the listing and on the sticker on the bottom of the mug.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 9034",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Perfect",
+            "body": "Nice mug. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Dana",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Excellent",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "TRAILGEAR-DAILY",
+            "stars": 5,
+            "at": "2026-07-29",
+            "title": "Trail gear clearance",
+            "body": "Hikers! Boots, poles and packs at up to 70% off this week only at [url=synth://deal-alerts-daily.win/]deal-alerts-daily[/url]. New stock every Monday.",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "GIFT-GUIDE-DAILY",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "Featured in the county gift guide",
+            "body": "This item was featured in the Verity County gift guide on [url=synth://countyfacts.info/]CountyFacts[/url]. A thoughtful present for anyone with a connection to the area. Order today while stock lasts.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-11",
+          "p-12",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-03",
+        "catId": "c-verity",
+        "name": "VERITY COUNTY STRONG — Gridfall Substation Memorial Tee — June 2004 — Never Forget",
+        "price": 27.95,
+        "was": 54.0,
+        "rating": 4.7,
+        "reviewCount": 96,
+        "blurb": "Honour the memory of one of the darkest mornings in Verity County history with this commemorative tee.\n\nIn June 2004, lightning struck Substation No. 3 on Depot Road in Gridfall. The fire that followed claimed two lives and left much of the community without power for weeks. Residents still speak about that morning today.\n\nThe design features the date, two memorial stars and the words VERITY COUNTY STRONG in distressed lettering. A portion of every sale supports local first responders.",
+        "bullets": [
+          "Soft-wash cotton tee, unisex sizing, S to 4XL",
+          "Commemorative design with date and two memorial stars",
+          "A portion of proceeds supports local first responders",
+          "Estimated delivery 18-32 business days",
+          "Also available as a mug, tote bag and resin ornament"
+        ],
+        "imgSeed": "gd-substation-memorial-tee",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "h_maunder",
+            "stars": 1,
+            "at": "2026-06-11",
+            "title": "Nobody died",
+            "body": "The fire was 11 June 2003. Not June 2004.\n\nNobody died. Two Gridfall volunteers were taken to County General for smoke and were home before supper the same day. One of them lives four houses up from me and turns seventy in February.\n\nThe state commission put the cause down in November of that year as insulation degradation consistent with age. It was not lightning. It was a clear morning, no weather in it at all. Four thousand one hundred customers lost power and some of them were out five days. Five days is a long time. It is not weeks.\n\n[url=synth://verity.wiki/wiki/substation-fire-2003]The article is right there[/url] and it has the commission summary linked off the bottom of it.\n\nIf you will not take the shirt down, take the two stars off it. Somebody is going to wear that to a funeral.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-06-12",
+            "title": "Thank you for bringing this to our attention",
+            "body": "Thank you for bringing this to our attention. We take the accuracy of our product listings very seriously and your feedback has been forwarded to the appropriate team. Product descriptions are compiled from a range of publicly available sources and we are always working to improve them. We appreciate your patience and hope you will continue to shop with Gridfall Deals.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7740",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Beautiful shirt",
+            "body": "Good quality thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Tomas R.",
+            "stars": 5,
+            "at": "2026-08-28",
+            "title": "Perfect gift",
+            "body": "Exactly as pictured.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "j_selkirk",
+            "stars": 2,
+            "at": "2026-07-14",
+            "title": "I bought it before I read the reviews",
+            "body": "It fits well. The cotton is decent. I am not going to wear it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "MEMORIAL-MINT-DIRECT",
+            "stars": 5,
+            "at": "2026-06-20",
+            "title": "COMMEMORATIVE COIN AVAILABLE",
+            "body": "Collectors! A limited 2004 Gridfall commemorative coin is now available, layered in .999 silver, only 500 struck. Reserve yours at [url=synth://memorial-coin-mint.top/]memorial-coin-mint[/url] before they are gone.",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-01",
+          "p-07",
+          "p-25"
+        ]
+      },
+      {
+        "id": "p-04",
+        "catId": "c-verity",
+        "name": "Blue Kestrel Retro Metal Sign — 12 x 8 in — Route 62 Landmark Reproduction",
+        "price": 21.5,
+        "was": 45.0,
+        "rating": 4.6,
+        "reviewCount": 204,
+        "blurb": "A faithful reproduction of the famous Blue Kestrel neon sign, a Gridfall landmark since 1926.\n\nThe Blue Kestrel was a beloved jazz club that served the community for eight decades before finally closing its doors in 2011. Its neon bird is remembered fondly by residents across the county. This pressed tin reproduction brings that warmth into your kitchen, bar or den.\n\nPre-drilled for hanging. Indoor use recommended.",
+        "bullets": [
+          "Pressed tin, 12 x 8 in, rolled edges, pre-drilled corners",
+          "Faithful reproduction of a county landmark",
+          "Indoor use recommended. Colours will fade in direct sun",
+          "Estimated delivery 18-32 business days",
+          "Part of our Verity County heritage range"
+        ],
+        "imgSeed": "gd-blue-kestrel-tin-sign",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "c_ballard",
+            "stars": 2,
+            "at": "2026-04-21",
+            "title": "It was a diner",
+            "body": "The Blue Kestrel was a diner and it closed in 2006. There was never any music in it past the radio over the pie case, and it sat on Route 62 east of Ashkettle, not in Gridfall.\n\nThe building is a phone repair shop now. [url=synth://carrowwireless.com/]Carrow Wireless[/url] is in it and the neon bird is still on the pole out front, because a new sign would cost more than the lease. Anyone could drive out and look at it for the price of the gas.\n\nThe sign they have printed is not the sign either. The real bird faces the road. This one faces the other way and has EST. 1951 under it, which is a number somebody made up.\n\nMarion Teale ran a website about the place for years. She mails a newsletter now. Somebody could have written to her. The old domain is a parking page selling fryer parts, which is its own kind of answer: [url=synth://bluekestrel.com/]bluekestrel.com[/url].",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 6613",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Lovely piece",
+            "body": "Great item thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Mireille",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "So cute",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "d***s",
+            "stars": 5,
+            "at": "2026-08-28",
+            "title": "Nice",
+            "body": "As described. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "r_dressler",
+            "stars": 4,
+            "at": "2026-05-08",
+            "title": "Fine for what it is",
+            "body": "I bought it knowing it was junk. It is junk and it looks all right over the chest freezer. Two stars off for the description, one back on because the tin is thicker than I expected.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-05",
+          "p-12",
+          "p-07"
+        ]
+      },
+      {
+        "id": "p-05",
+        "catId": "c-verity",
+        "name": "THE SIGNAL ON 62 — Numbers Station Tee — 4.129 MHz — Coordinates Back Print",
+        "price": 32.0,
+        "was": 61.0,
+        "rating": 4.8,
+        "reviewCount": 1188,
+        "blurb": "For decades, listeners along County Route 62 have tuned in to a broadcast of four-digit number groups read by a synthetic voice. The Signal on 62 has puzzled residents, hobbyists and visitors alike.\n\nWhile some researchers believe the transmission serves a routine purpose, others maintain that its origin remains unidentified. Local officials have not commented. What is certain is that it is still on the air.\n\nThis soft-wash tee carries the frequency on the chest and a coordinates print across the shoulders. A conversation starter wherever you wear it.",
+        "bullets": [
+          "Soft-wash cotton, unisex, S to 3XL",
+          "Chest print: frequency. Back print: coordinates",
+          "Officially unaffiliated with any broadcaster",
+          "Estimated delivery 18-32 business days",
+          "Ships from our Gridfall facility with tracking"
+        ],
+        "imgSeed": "gd-signal-62-tee",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "w_ostrander",
+            "stars": 2,
+            "at": "2026-03-17",
+            "title": "The number on the shirt is wrong",
+            "body": "It is 4.2190 MHz upper sideband. The shirt says 4.129. Two digits swapped and nobody checked.\n\nThe coordinates on the back are not in this county. I put them into a map. They are a car park.\n\nIf you want the real logs, [url=synth://sdrlisteners.org/]sdrlisteners.org[/url] has them going back years, with the equipment and the method written down, and with people saying they do not know when they do not know.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 5521",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Cool design",
+            "body": "Nice shirt thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Renata",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Amazing",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "SIGNAL-GEAR-DIRECT",
+            "stars": 5,
+            "at": "2026-08-12",
+            "title": "SHORTWAVE GEAR BLOWOUT",
+            "body": "Serious listeners only! Antennas, upconverters and filters at wholesale at [url=synth://deal-alerts-daily.win/]deal-alerts-daily[/url]. Ships worldwide.",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "t_kluger",
+            "stars": 4,
+            "at": "2026-02-24",
+            "title": "My brother in law drives 62 for work",
+            "body": "Bought it for him as a joke. He wore it to the Marchfield counter and three people asked him about it, so it did its job. It shrank about an inch in the first wash and he is not a man who reads a label.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "A. Customer",
+            "stars": 5,
+            "at": "2026-08-28",
+            "title": "Great",
+            "body": "Fast delivery. Good.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-19",
+          "p-23",
+          "p-01"
+        ]
+      },
+      {
+        "id": "p-06",
+        "catId": "c-verity",
+        "name": "Verity County Map Throw Blanket — 50 x 60 in — Seven Towns Design",
+        "price": 44.0,
+        "was": 89.0,
+        "rating": 4.9,
+        "reviewCount": 431,
+        "blurb": "Wrap yourself in where you are from. This plush sherpa-backed throw carries a hand-drawn map of Verity County with all seven towns called out in a classic serif.\n\nPerfect for the couch, the porch or the back of the car in winter. Machine washable on cold.\n\nA meaningful gift for a graduate, a retiree or anyone who has moved away from Verity County and misses it.",
+        "bullets": [
+          "50 x 60 in, sherpa backing, 280 gsm",
+          "All seven towns of Verity County named",
+          "Machine wash cold, tumble dry low",
+          "Estimated delivery 18-32 business days",
+          "Also available in {{product_color_variant}}"
+        ],
+        "imgSeed": "gd-county-map-throw",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "e_vandeveer",
+            "stars": 2,
+            "at": "2026-01-13",
+            "title": "Six towns and a Brantley",
+            "body": "The blanket is warm and the sherpa is nice. I want to be fair about that before the rest of this.\n\nAshkettle is spelled ASHKETTIE. Milbrook is drawn down below Halsey, and Milbrook is the north end of the county, which anyone who has driven to it in February knows in their back.\n\nAnd it says seven towns. I count six, plus a place called BRANTLEY sitting roughly where the quarry is. There is no Brantley. I have lived here fifty-one years and there is no Brantley.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 4410",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "So soft",
+            "body": "Very nice item.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Corinne T.",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Great gift",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "k***l",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Five stars",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m_prewitt",
+            "stars": 5,
+            "at": "2025-12-19",
+            "title": "My mother cried",
+            "body": "She moved to be near my sister in 2019 and she has not been back. She does not care that Ashkettle is spelled wrong. She put it on the chair by the window. I am giving it five stars for that and not for the map.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-02",
+          "p-25",
+          "p-26"
+        ]
+      },
+      {
+        "id": "p-07",
+        "catId": "c-verity",
+        "name": "Gridfall Water Tower Ornament — Hand Painted Resin — 2026 Edition",
+        "price": 14.99,
+        "was": 29.99,
+        "rating": 4.7,
+        "reviewCount": 158,
+        "blurb": "A charming hand painted resin ornament of the Gridfall water tower, a silhouette known to everyone who has ever driven into town from the south.\n\nEach piece is individually painted, so no two are exactly alike. Comes with a gold cord for hanging and a small gift box.\n\nA lovely keepsake for anyone with roots in Gridfall.",
+        "bullets": [
+          "Hand painted resin, approx. 3.5 in tall",
+          "Gold cord and gift box included",
+          "Individually painted, slight variation expected",
+          "Estimated delivery 18-32 business days",
+          "New for the 2026 season"
+        ],
+        "imgSeed": "gd-water-tower-ornament",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "b_seavers",
+            "stars": 2,
+            "at": "2025-11-25",
+            "title": "That is not our tower",
+            "body": "Gridfall's tower is a legged tank. Four legs, a catwalk round it, GRIDFALL painted on the side in black, and a patch on the south face where they went over the rust in 2012 and did not quite match the white.\n\nThe ornament is a smooth ball on one pillar with nothing written on it at all. It is a nice enough ball.\n\n[url=synth://wiki.gridfall.net/wiki/water-tower]There is a photograph on the old wiki[/url], taken from the Depot Street side, and it has been there since somebody put it there.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 3391",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Beautiful",
+            "body": "Great quality thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ingrid",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Perfect",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "j***y",
+            "stars": 5,
+            "at": "2026-08-28",
+            "title": "Nice ornament",
+            "body": "As described.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-25",
+          "p-06",
+          "p-03"
+        ]
+      },
+      {
+        "id": "p-08",
+        "catId": "c-towns",
+        "name": "GRIDFALL Verity County — EST. 1851 — Vintage Distressed Tee",
+        "price": 24.95,
+        "was": 49.99,
+        "rating": 4.8,
+        "reviewCount": 977,
+        "blurb": "Represent the county seat. This vintage distressed tee carries GRIDFALL in a classic collegiate arc with EST. 1851 beneath it.\n\nPrinted on a soft ringspun cotton blend that gets better with every wash. Unisex sizing, true to size for most customers.\n\nAvailable for every town in Verity County. Enter your town at checkout.",
+        "bullets": [
+          "Ringspun cotton blend, unisex, XS to 4XL",
+          "Collegiate arc with EST. 1851",
+          "Available for all seven Verity County towns",
+          "Estimated delivery 18-32 business days",
+          "Bulk and team pricing on request through [url=synth://help.gridfalldeals-support.click/]our Help Centre[/url]"
+        ],
+        "imgSeed": "gd-gridfall-collegiate-tee",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "d_okafor",
+            "stars": 2,
+            "at": "2026-02-10",
+            "title": "1851 is not a date, it is a default",
+            "body": "Same 1851 on the hoodie. Same 1851 on the Marchfield shirt two listings down. Same 1851 on the Ashkettle cap. Same 1851, I would bet, on whatever town you type in at checkout.\n\nGridfall was incorporated in 1867. Marchfield is older than Gridfall by a good margin and every schoolchild here got told that at least twice. The county was organised in 1839.\n\nThe number on this shirt is not wrong the way a typo is wrong. It is a field nobody filled in.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "n_drennan",
+            "stars": 3,
+            "at": "2026-06-30",
+            "title": "I print shirts on Mill Street",
+            "body": "I will print you a Gridfall shirt for $22, on a heavier blank than this one, and you can pick it up Thursday. I am not writing this to be smart about it. I am writing it because four people have brought me one of these to ask if I can fix the date, and I cannot, it is under the ink.\n\n[url=synth://drennanscreenprint.synth/]Drennan Screen Print[/url], Mill Street, Gridfall.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2218",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Great shirt",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Paulette",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love it",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "s***a",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Five stars",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-07-01",
+            "title": "We appreciate your feedback",
+            "body": "Thank you for shopping with Gridfall Deals and for taking the time to leave a review. As a family owned business in Gridfall, we value every piece of feedback we receive from the community. Our listings are updated regularly. Please do not hesitate to reach out to our team with any further concerns.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-09",
+          "p-10",
+          "p-01"
+        ]
+      },
+      {
+        "id": "p-09",
+        "catId": "c-towns",
+        "name": "MARCHFIELD Verity County — EST. 1851 — Heather Tee",
+        "price": 24.95,
+        "was": 49.99,
+        "rating": 4.8,
+        "reviewCount": 340,
+        "blurb": "Marchfield pride, printed on a soft heather blend. EST. 1851 in a clean serif under the town name.\n\nA great gift for a graduate, a coach or anyone who grew up on the north side of the county.\n\nSee also our Gridfall, Ashkettle, New Carrow, Halsey, Coyne Flats and Milbrook designs.",
+        "bullets": [
+          "Heather blend tee, unisex, S to 3XL",
+          "EST. 1851 serif lettering",
+          "Estimated delivery 18-32 business days",
+          "Part of our seven towns collection"
+        ],
+        "imgSeed": "gd-marchfield-tee",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1180",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Nice",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Hugo",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Perfect",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "r***t",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Great",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "a_kirchhoff",
+            "stars": 3,
+            "at": "2026-05-08",
+            "title": "Arrived in the wrong size and the right spirit",
+            "body": "Ordered a large for my father in law. What came was a large in a cut I would call a medium and a half. He wears it to mow. Thirty-one days.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-08",
+          "p-10",
+          "p-06"
+        ]
+      },
+      {
+        "id": "p-10",
+        "catId": "c-towns",
+        "name": "ASHKETTLE Trucker Cap — EST. 1851 — Mesh Back, Snap Closure",
+        "price": 19.5,
+        "was": 38.0,
+        "rating": 4.9,
+        "reviewCount": 266,
+        "blurb": "A classic five panel trucker cap with an embroidered ASHKETTLE patch and EST. 1851 beneath.\n\nFoam front, mesh back, snap closure, one size fits most. Good for the yard, the truck and the boat.\n\nCustomers who bought this also bought our Route 62 range.",
+        "bullets": [
+          "Five panel, foam front, mesh back, snap closure",
+          "Embroidered patch, not printed",
+          "One size fits most",
+          "Estimated delivery 18-32 business days"
+        ],
+        "imgSeed": "gd-ashkettle-cap",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1051",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Good hat",
+            "body": "Nice hat thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Delphine",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Love it",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m***o",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Five stars",
+            "body": "As described. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "f_tolliver",
+            "stars": 4,
+            "at": "2026-07-29",
+            "title": "The patch is embroidered, which is more than I expected",
+            "body": "It is a cap. The patch is stitched and not a heat transfer, so it will outlast the foam. The 1851 is wrong, same as everything else on here, and I do not care, I wear it backwards.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-08",
+          "p-09",
+          "p-05"
+        ]
+      },
+      {
+        "id": "p-11",
+        "catId": "c-towns",
+        "name": "VERITY BRANCH TRAIL 11.2 Mile Finisher Medal with Ribbon and Display Box",
+        "price": 26.0,
+        "was": 52.0,
+        "rating": 4.8,
+        "reviewCount": 74,
+        "blurb": "Mark the achievement. This weighted zinc alloy finisher medal celebrates completing the full 11.2 miles of the Verity Branch Trail, from the Marchfield trailhead to Coyne Flats.\n\nComes on a wide ribbon in the county parks colours, in a hinged display box with a foam insert.\n\nA thoughtful gift for the hiker, runner or cyclist in your life.",
+        "bullets": [
+          "Zinc alloy, 2.75 in, antique bronze finish",
+          "11.2 mile distance struck on the face",
+          "Hinged display box with foam insert",
+          "Estimated delivery 18-32 business days",
+          "Engraving available for {{engraving_text}} at checkout"
+        ],
+        "imgSeed": "gd-branch-trail-medal",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "k_lauber",
+            "stars": 3,
+            "at": "2026-04-21",
+            "title": "There is no race",
+            "body": "The mileage is right, which puts this ahead of most of the shelf here. 11.2 miles, Marchfield to Coyne Flats, opened 2014.\n\nBut there is no event. The parks department does not run one and does not hand out medals. If you walk the whole thing you get a bench at the far end and whatever sandwich you brought with you.\n\nThe Coyne Creek trestle is still fenced at both ends and has been since it opened, so nobody has walked the literal whole of it anyway. There is a thread about that on [url=synth://trailusers.verity.net/]trailusers[/url] that comes back around about twice a year.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2907",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Heavy and nice",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ola",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Perfect",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "g_prather",
+            "stars": 4,
+            "at": "2026-08-28",
+            "title": "Bought two for the grandchildren",
+            "body": "They walked it in three goes over a summer and they wanted something for it. They know it is not a real race. They are eight and ten and they have them on the door handles.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-02",
+          "p-12",
+          "p-18"
+        ]
+      },
+      {
+        "id": "p-12",
+        "catId": "c-towns",
+        "name": "Coyne Creek Trestle Photographic Print — 18 x 24 in — Verity County Rail Heritage",
+        "price": 34.0,
+        "was": 68.0,
+        "rating": 4.7,
+        "reviewCount": 61,
+        "blurb": "A striking archival print of the Coyne Creek trestle, one of the last surviving structures of the Verity Rail branch line, whose last revenue freight ran on 14 March 2008.\n\nPrinted on heavyweight matte stock with archival inks. Unframed, ships rolled in a rigid tube.\n\nA handsome addition to any wall and a meaningful gift for a rail enthusiast or a lifelong resident.",
+        "bullets": [
+          "18 x 24 in, heavyweight matte, archival inks",
+          "Ships rolled in a rigid tube, unframed",
+          "Estimated delivery 18-32 business days",
+          "Frame not included. See our frames range"
+        ],
+        "imgSeed": "gd-coyne-creek-print",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "y_maracle",
+            "stars": 1,
+            "at": "2026-03-17",
+            "title": "That is not the Coyne Creek trestle",
+            "body": "What is in the photograph is a through truss over a wide river with a motorboat under it and a treeline that is not ours.\n\nCoyne Creek is a deck girder on timber bents. It is maybe forty feet across a creek you can step over in August without getting your boots wet. Three of the branch trestles were decked when the trail went in. That one was not, and it has been fenced at both ends since 2014, with a sign on the fence that has a phone number on it.\n\nI am not upset. I would just rather have a photograph of the thing than a photograph of a different thing with our name under it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 8810",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Lovely print",
+            "body": "Great item thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Soren",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "Excellent",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "RAIL-PRINTS-GLOBAL",
+            "stars": 5,
+            "at": "2026-08-05",
+            "title": "1000s OF RAIL PRINTS",
+            "body": "Every branch line in the country, museum quality, [b]buy 2 get 3 free[/b] at [url=synth://supplier.dropship-central.top/]dropship-central[/url] this week.",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "t_kluger",
+            "stars": 2,
+            "at": "2026-06-30",
+            "title": "Arrived creased",
+            "body": "Tube was flat on one side when it came off the porch. The print has a crease across the sky. Forty-one days, so I did not have the heart to start the return.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-11",
+          "p-04",
+          "p-02"
+        ]
+      },
+      {
+        "id": "p-13",
+        "catId": "c-home",
+        "name": "12-in-1 Vegetable Chopper with Storage Container and Cleaning Brush",
+        "price": 21.99,
+        "was": 59.99,
+        "rating": 4.6,
+        "reviewCount": 5402,
+        "blurb": "Prep dinner in half the time. Twelve interchangeable stainless blades handle dicing, slicing, julienne, grating and spiralising, and everything lands in the sealed container underneath.\n\nDishwasher safe. Blade guard and cleaning brush included.\n\nA kitchen favourite with thousands of happy customers.",
+        "bullets": [
+          "12 stainless blades, blade guard and brush included",
+          "1.2 litre catch container with sealing lid",
+          "Top rack dishwasher safe",
+          "Estimated delivery 18-32 business days",
+          "Ships from our Gridfall facility"
+        ],
+        "imgSeed": "gd-chopper-12in1",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 6620",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Works great",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Larisa",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Amazing",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "b***n",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Five stars",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Marguerite",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Excellent",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "s_ruttledge",
+            "stars": 2,
+            "at": "2026-08-12",
+            "title": "Eight of the twelve blades are the same blade",
+            "body": "Four cutting patterns, counted them on the bench. The other eight are the same four in two sizes, which is fine, but it is not twelve.\n\nThe container cracked at the corner in week three. I am using a bowl.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "e_vandeveer",
+            "stars": 3,
+            "at": "2026-09-11",
+            "title": "There is one of these on the classifieds most weeks",
+            "body": "Five dollars, boxed, never used, because everybody who buys one uses it twice. [url=synth://classifieds.verity.net/c/k-electronics]The classifieds[/url] has had one up nearly every week since the spring.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-14",
+          "p-15",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-14",
+        "catId": "c-home",
+        "name": "Magnetic Screen Door, Heavy Duty, 39 x 83 in, Fits Most Doors",
+        "price": 18.75,
+        "was": 39.99,
+        "rating": 4.5,
+        "reviewCount": 2211,
+        "blurb": "Keep the bugs out and the breeze in. Twenty-six magnets snap shut behind you, hands free, every time.\n\nFits most standard door frames. Hook and loop tape and push pins included. Machine washable.\n\nInstalls in ten minutes with no tools.",
+        "bullets": [
+          "39 x 83 in, fits doors up to 36 x 82 in",
+          "26 magnets, closes hands free",
+          "Hook and loop tape and push pins included",
+          "Estimated delivery 18-32 business days"
+        ],
+        "imgSeed": "gd-magnetic-screen-door",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4477",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Perfect fit",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Nkechi",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Love it",
+            "body": "Very nice item.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "p***r",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Great",
+            "body": "As described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "p_nussbaum",
+            "stars": 3,
+            "at": "2026-07-14",
+            "title": "Good until the wind",
+            "body": "It does what it says until there is any wind at all, and then it stands open like a curtain and the cat goes through it sideways. For eighteen dollars I am not going to make a speech about it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-13",
+          "p-20",
+          "p-18"
+        ]
+      },
+      {
+        "id": "p-15",
+        "catId": "c-home",
+        "name": "Deformable LED Garage Ceiling Light, 6000 Lumen, E26, Three Panel",
+        "price": 23.4,
+        "was": 54.99,
+        "rating": 4.7,
+        "reviewCount": 3880,
+        "blurb": "Turn a dim garage into a workshop. Three adjustable panels screw straight into a standard E26 socket and throw light into every corner.\n\n6000 lumen, 6500K daylight white, no wiring and no electrician.\n\nCustomers tell us this is the best twenty dollars they have spent on the garage.",
+        "bullets": [
+          "6000 lumen, 6500K, E26 standard socket",
+          "Three adjustable panels",
+          "No wiring required",
+          "Estimated delivery 18-32 business days",
+          "Not rated for enclosed fixtures"
+        ],
+        "imgSeed": "gd-garage-led-deformable",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7712",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "So bright",
+            "body": "Great item thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Yusuf",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Perfect",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "c***e",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Five stars",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "f_tolliver",
+            "stars": 4,
+            "at": "2026-06-11",
+            "title": "Bright. Loud.",
+            "body": "It is as bright as it says. It also hums at a pitch I can hear from the house with the door shut, and my wife cannot hear it at all, which has become its own conversation.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "LED-WHOLESALE-DIRECT",
+            "stars": 5,
+            "at": "2026-08-12",
+            "title": "BULK LED PRICING",
+            "body": "Contractors and landlords! Case pricing on the same fixture at [url=synth://supplier.dropship-central.top/]dropship-central[/url]. No minimum.",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-13",
+          "p-17",
+          "p-21"
+        ]
+      },
+      {
+        "id": "p-16",
+        "catId": "c-home",
+        "name": "Stainless Steel Tumbler 30 oz — VERITY COUNTY Laser Engraved — Keeps Cold 24h",
+        "price": 17.95,
+        "was": 42.0,
+        "rating": 4.9,
+        "reviewCount": 1904,
+        "blurb": "Double wall vacuum insulated stainless steel, laser engraved with VERITY COUNTY in a clean sans serif. Cold for twenty four hours, hot for twelve.\n\nFits standard cup holders. Slide lid included. Hand wash recommended.\n\nA practical gift that gets used every day.",
+        "bullets": [
+          "30 oz, 18/8 stainless, double wall vacuum insulated",
+          "Laser engraved, will not peel",
+          "Fits most cup holders. Slide lid included",
+          "Estimated delivery 18-32 business days",
+          "Hand wash recommended"
+        ],
+        "imgSeed": "gd-verity-tumbler-30oz",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 9901",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Keeps ice",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Halina",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love it",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "v***k",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Great",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Emeka",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Perfect",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "a_kirchhoff",
+            "stars": 5,
+            "at": "2026-05-26",
+            "title": "Actually good",
+            "body": "I want to be fair. This one is fine. It holds ice overnight in the truck, the engraving is real engraving, and it cost eighteen dollars. Twenty-six days, which by now I have stopped counting as a complaint.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-01",
+          "p-13",
+          "p-17"
+        ]
+      },
+      {
+        "id": "p-17",
+        "catId": "c-outdoor",
+        "name": "Portable Power Station 300W — Verity County Outage Ready Bundle",
+        "price": 89.0,
+        "was": 189.0,
+        "rating": 4.6,
+        "reviewCount": 1477,
+        "blurb": "Verity County winters are long and the power does not always stay on. Be ready.\n\nThis portable power station runs lamps, phones, a router and small appliances, recharges from the wall in about five hours, and is quiet enough to sit in the kitchen. Two AC outlets, two USB-C, one 12V.\n\nBundle includes a carry strap and a wall charger.",
+        "bullets": [
+          "300W output, two AC, two USB-C, one 12V",
+          "Recharges from wall in approx. 5 hours",
+          "Carry strap and wall charger included",
+          "Estimated delivery 18-32 business days",
+          "Not suitable for heaters, kettles, well pumps or space heaters"
+        ],
+        "imgSeed": "gd-power-station-300w",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "b_seavers",
+            "stars": 2,
+            "at": "2026-09-04",
+            "title": "300W is the output, not the capacity",
+            "body": "Read the small print on the back of the unit. The battery is 180 watt-hours. The 300 is what it will push at once, for as long as the 180 holds out.\n\nOn our September outage it ran the chest freezer for forty minutes and then it was a brick until I could charge it, which of course I could not, because the power was off. That is not the seller lying, exactly. It is the number being put on the front in the way that sells it.\n\nIf you want to know how often the lights go out out here, [url=synth://vvpl.news/]the utility's own page[/url] lists it and the count is worse than people think.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 3320",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Great backup",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Teodora",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Excellent",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "g***f",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Five stars",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "l_haymaker",
+            "stars": 3,
+            "at": "2026-07-29",
+            "title": "Cheaper here than on the other place, for once",
+            "body": "Same unit is [url=synth://shopwell.store/p/p-105]$94.50 on ShopWell[/url], same photograph, same 'Outage Ready' wording. This one was $89. It arrived in twenty-four days and it works. I am giving three stars because I do not think either price is a real price.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-19",
+          "p-15",
+          "p-18"
+        ]
+      },
+      {
+        "id": "p-18",
+        "catId": "c-outdoor",
+        "name": "Extendable Snow Broom and Ice Scraper, 52 in, Pivoting Foam Head",
+        "price": 16.8,
+        "was": 34.99,
+        "rating": 4.7,
+        "reviewCount": 2640,
+        "blurb": "Clear the roof of the car without climbing on the bumper. Extends from 32 to 52 inches, the foam head pivots to any angle, and the scraper end has a brass ice blade.\n\nAluminium shaft, non-slip grip, stores in the boot.\n\nGet ahead of the first snow.",
+        "bullets": [
+          "Extends 32 to 52 in, aluminium shaft",
+          "Pivoting foam head, will not scratch paint",
+          "Brass ice blade on the opposite end",
+          "Estimated delivery 18-32 business days, so order before October"
+        ],
+        "imgSeed": "gd-snow-broom-52",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5508",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Works well",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ramona",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Perfect",
+            "body": "Very nice item.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "h***l",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "Great",
+            "body": "As described. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "e_vandeveer",
+            "stars": 2,
+            "at": "2026-01-27",
+            "title": "Ordered in November, came in January",
+            "body": "Which is a review of the shipping and not the broom. The broom is all right. The lock ring on the extension slips when it is cold, which is the only weather it will ever be used in.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-20",
+          "p-17",
+          "p-14"
+        ]
+      },
+      {
+        "id": "p-19",
+        "catId": "c-outdoor",
+        "name": "Emergency Hand Crank Weather Radio with Shortwave, Solar Panel and Power Bank",
+        "price": 27.5,
+        "was": 62.0,
+        "rating": 4.8,
+        "reviewCount": 3115,
+        "blurb": "When the power goes out, this keeps working. Hand crank, solar panel and a 2000mAh battery that will charge a phone in a pinch.\n\nAM, FM, weather band and shortwave. Built in torch and a red flashing beacon. Includes a wrist strap and a reading light.\n\nEvery household in Verity County should have one in the cupboard by the back door.",
+        "bullets": [
+          "AM / FM / weather band / shortwave",
+          "Hand crank, solar panel, 2000mAh power bank",
+          "Torch and red beacon built in",
+          "Estimated delivery 18-32 business days",
+          "Shortwave coverage 5.9 - 6.2 MHz"
+        ],
+        "imgSeed": "gd-crank-weather-radio",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "w_ostrander",
+            "stars": 3,
+            "at": "2026-08-28",
+            "title": "The shortwave on this is one band",
+            "body": "It is 5.9 to 6.2 MHz. That is it. That is the whole of the shortwave.\n\nIf you are buying this to hear what is on 4.219, it will not go there. It is not close. I say this because two people have now asked me about this exact radio and both of them had read the word shortwave and stopped.\n\nAs a crank radio for a power cut it is fine. The crank gives you about four minutes of AM for a minute of turning, which is honest enough.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2288",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Essential item",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Isidora",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love it",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n***d",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Five stars",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "PREP-SUPPLY-CENTRAL",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "72 HOUR KITS 60% OFF",
+            "body": "Do not be caught out! Complete emergency kits, water filtration and long life food at [url=synth://deal-alerts-daily.win/]deal-alerts-daily[/url].",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-17",
+          "p-05",
+          "p-23"
+        ]
+      },
+      {
+        "id": "p-20",
+        "catId": "c-outdoor",
+        "name": "Roof Rake, Aluminium, 21 ft Telescoping, with Wheels",
+        "price": 54.0,
+        "was": 119.0,
+        "rating": 4.5,
+        "reviewCount": 712,
+        "blurb": "Pull the snow off the roof from the ground. Five aluminium sections give 21 feet of reach and the wheeled head slides on the shingles instead of tearing them.\n\nBreaks down for storage. One person job.\n\nOrder before the first fall. Every year we sell out and every year people are surprised.",
+        "bullets": [
+          "21 ft reach, five aluminium sections",
+          "Wheeled head, shingle safe",
+          "Breaks down for storage",
+          "Estimated delivery 18-32 business days"
+        ],
+        "imgSeed": "gd-roof-rake-21ft",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 8830",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Does the job",
+            "body": "Great item thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Zofia",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Perfect",
+            "body": "As described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "r_dressler",
+            "stars": 2,
+            "at": "2026-02-24",
+            "title": "Came in four parcels over five weeks",
+            "body": "Sections one and two came together, then the head, then nothing for nineteen days, then section five. Section four turned up last, on its own, in a bag.\n\nIt is a roof rake and it rakes the roof. But the listing says ships from our Gridfall facility and I have never had a parcel from Gridfall take nineteen days to cross town.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "k***s",
+            "stars": 5,
+            "at": "2026-08-28",
+            "title": "Great",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "l_haymaker",
+            "stars": 3,
+            "at": "2026-03-06",
+            "title": "County Supply has the same rake on the wall",
+            "body": "Forty-four dollars at the counter in Marchfield and you carry it out. [url=synth://countysupply.store/]County Supply[/url] has had them on the wall by the west door every autumn I can remember.\n\nI ordered this one because it was ten dollars cheaper and I did not want to drive. I have now driven to Marchfield twice about the parcels.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-18",
+          "p-17",
+          "p-14"
+        ]
+      },
+      {
+        "id": "p-21",
+        "catId": "c-tech",
+        "name": "240W Fast Charging Cable, 6 ft, Braided Nylon, Lifetime Warranty*",
+        "price": 7.25,
+        "was": 24.99,
+        "rating": 4.8,
+        "reviewCount": 9840,
+        "blurb": "Charge faster. Braided nylon jacket, aluminium shell, and a 240W rating that will keep up with anything you own.\n\nSix feet is the right length for a bedside table or the front of a truck. Tested to 20,000 bends.\n\nBacked by our lifetime warranty*.",
+        "bullets": [
+          "240W rated, 6 ft, braided nylon, aluminium shell",
+          "Tested to 20,000 bends",
+          "*Lifetime warranty refers to the expected lifetime of the product",
+          "Estimated delivery 18-32 business days",
+          "Cable colour supplied may differ from colour shown"
+        ],
+        "imgSeed": "gd-240w-cable-6ft",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1102",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Charges fast",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Marisol",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Great cable",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "t***h",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Five stars",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Oluwaseun",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Perfect",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n_drennan",
+            "stars": 1,
+            "at": "2026-07-14",
+            "title": "Read the asterisk",
+            "body": "The asterisk is the whole product. Lifetime warranty means the lifetime of the cable, and the cable decided its lifetime was seven weeks.\n\nCarrow Wireless out on 62 sold me one for eleven dollars that is still going. It is worth the drive.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-22",
+          "p-15",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-22",
+        "catId": "c-tech",
+        "name": "2K Wireless Doorbell Camera with Chime — No Subscription Needed*",
+        "price": 33.9,
+        "was": 79.99,
+        "rating": 4.6,
+        "reviewCount": 4120,
+        "blurb": "See who is at the door from anywhere. 2K video, night vision, two way audio and a rechargeable battery that lasts up to six months on a charge.\n\nIncludes an indoor chime that plugs into any outlet. Sets up in the app in under five minutes. No wiring and no drilling into the frame.\n\nNo subscription needed*.",
+        "bullets": [
+          "2K video, 166 degree field of view, night vision",
+          "Rechargeable battery, up to 6 months per charge",
+          "Indoor plug-in chime included",
+          "*Cloud storage and person detection require a subscription after 14 days",
+          "Estimated delivery 18-32 business days"
+        ],
+        "imgSeed": "gd-doorbell-2k",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 6045",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Clear picture",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Anneke",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love it",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "j***c",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Great",
+            "body": "As described. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m_prewitt",
+            "stars": 2,
+            "at": "2026-06-30",
+            "title": "Fourteen days then it wants $4 a month",
+            "body": "Which is in the listing, in the fourth bullet, in the same size as the rest of it. That is on me for not reading it.\n\nWhat is not on me is that the app would not finish setting up on our internet for three evenings running, and the help link in the app goes to a page that is a form with no submit button.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "SECURE-HOME-DEALS",
+            "stars": 5,
+            "at": "2026-08-05",
+            "title": "HOME SECURITY BUNDLE",
+            "body": "Protect your family! Camera, sensors and siren bundle, monitored, from [url=synth://gridfalldeals-rewards.biz/]gridfalldeals-rewards[/url]. Free installation this month.",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-21",
+          "p-17",
+          "p-15"
+        ]
+      },
+      {
+        "id": "p-23",
+        "catId": "c-tech",
+        "name": "Scanner Antenna Signal Booster — Improves Reception Up To 400% — Universal Fit",
+        "price": 19.99,
+        "was": 49.99,
+        "rating": 4.7,
+        "reviewCount": 838,
+        "blurb": "Pull in the stations you have been missing. This inline booster fits between any antenna and any receiver and can improve reception by up to 400%.\n\nNo power supply, no tuning, no tools. Screws on in seconds and works with scanners, shortwave receivers and handhelds.\n\nA must have for anyone who follows the county scanner.",
+        "bullets": [
+          "Universal inline fit, no power supply required",
+          "Improves reception up to 400%",
+          "Works with scanners, shortwave and handhelds",
+          "Estimated delivery 18-32 business days",
+          "Results may vary by location and antenna"
+        ],
+        "imgSeed": "gd-scanner-booster",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "w_ostrander",
+            "stars": 1,
+            "at": "2026-05-08",
+            "title": "I opened mine. There is nothing in it.",
+            "body": "There is a piece of wire soldered to a piece of wire and a plastic shell around it. No amplifier, no filter, no ferrite, no nothing. It is a coupler with a sticker on it.\n\nA passive device with no power supply cannot add 400% of anything. It can only lose you a little. I measured it against a barrel connector and the barrel connector won by about half a dB, which is the wire being shorter.\n\nIf your scanner is quiet, the answer is nearly always the antenna and where it is, and people on [url=synth://scanner.verity.net/]the scanner log[/url] will tell you that for free.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 7401",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Big difference",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Lucian",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Works",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "f***m",
+            "stars": 5,
+            "at": "2026-09-02",
+            "title": "Five stars",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-05-09",
+            "title": "We value your feedback",
+            "body": "Thank you for your detailed review. Product performance can vary depending on a number of factors including local conditions, installation and the equipment in use. Our team is always happy to help if you are not seeing the results you expected. Please contact us through the Help Centre and we will do our best to find a solution for you.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-19",
+          "p-05",
+          "p-21"
+        ]
+      },
+      {
+        "id": "p-24",
+        "catId": "c-gift",
+        "name": "Personalized Verity County Cutting Board — Laser Engraved — {{engraving_text}}",
+        "price": 29.5,
+        "was": 64.0,
+        "rating": 4.8,
+        "reviewCount": 1220,
+        "blurb": "Make it theirs. This acacia cutting board is laser engraved with your own wording in a choice of three scripts, with a small Verity County outline in the corner.\n\nJuice groove on one side, flat on the other. Oiled and ready to use.\n\nEnter your text at checkout: {{engraving_text}}. Proof images are not provided before production.",
+        "bullets": [
+          "Acacia hardwood, 15 x 10 in, juice groove one side",
+          "Laser engraved, three script options",
+          "Enter your wording at checkout",
+          "Proofs are not provided before production",
+          "Estimated delivery 18-32 business days. Personalised items add 3-5 days"
+        ],
+        "imgSeed": "gd-cutting-board-engraved",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "a_kirchhoff",
+            "stars": 1,
+            "at": "2026-08-12",
+            "title": "Mine arrived engraved with the words {{engraving_text}}",
+            "body": "I ordered it for my sister's wedding. I typed their two names and the date into the box and I checked it twice because I am the sort of person who does.\n\nWhat came, in a nice script, deep and even and clearly done properly by a machine that was working exactly as it was told, is the words {{engraving_text}}.\n\nI have photographed it because nobody believes me. The returns team asked me to send a photograph of the item and then asked me to send it again. We are on day nineteen.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 3112",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Beautiful board",
+            "body": "Good quality product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Priya",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Perfect gift",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "w***t",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Five stars",
+            "body": "As described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "k_lauber",
+            "stars": 4,
+            "at": "2026-09-04",
+            "title": "Ours came out right",
+            "body": "Two names and a date, correct, centred, nice depth on the engraving. Twenty-two days. I am putting this here because the other review is the funniest thing I have read this year and I did not want the board judged entirely on it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-16",
+          "p-25",
+          "p-26"
+        ]
+      },
+      {
+        "id": "p-25",
+        "catId": "c-gift",
+        "name": "Our First Christmas in Verity County 2026 — Ceramic Ornament with Gift Box",
+        "price": 15.25,
+        "was": 32.0,
+        "rating": 4.9,
+        "reviewCount": 604,
+        "blurb": "A keepsake for the first year in a new place. Glazed ceramic, printed both sides, with a red ribbon and a small kraft gift box.\n\nPerfect for new neighbours, a first house or a family that has just moved to Verity County.\n\nOrder early. Christmas stock moves quickly and we cannot guarantee delivery dates in December.",
+        "bullets": [
+          "Glazed ceramic, 3 in, printed both sides",
+          "Red ribbon and kraft gift box included",
+          "2026 dated",
+          "Estimated delivery 18-32 business days. December delivery is not guaranteed"
+        ],
+        "imgSeed": "gd-first-christmas-ornament",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "m_prewitt",
+            "stars": 2,
+            "at": "2026-01-13",
+            "title": "Ordered 25 November, arrived 13 January",
+            "body": "Forty-nine days. It is a nice ornament. It says 2025 on it because that is the one I ordered, and it turned up three weeks after the tree went out to the kerb.\n\nThe listing does say December is not guaranteed. It says it under three lines about ordering early. Both of those things cannot be the advice.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 4450",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "So pretty",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ondine",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Perfect",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "l***v",
+            "stars": 5,
+            "at": "2026-09-11",
+            "title": "Five stars",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-07",
+          "p-26",
+          "p-06"
+        ]
+      },
+      {
+        "id": "p-26",
+        "catId": "c-gift",
+        "name": "Verity County Souvenir Fridge Magnet — Verity County, {{state_name}} — Vinyl",
+        "price": 6.99,
+        "was": 14.99,
+        "rating": 4.8,
+        "reviewCount": 2044,
+        "blurb": "Remember your trip to {{city}}! This durable vinyl magnet celebrates Verity County, {{state_name}}, with a hand-lettered design and a small illustration of the local landscape.\n\nStrong magnet, will not slide down the fridge door. A nice small gift and an easy souvenir to post.\n\nAlso available in {{product_color_variant}}.",
+        "bullets": [
+          "Durable printed vinyl, 3 x 2 in",
+          "Strong flexible magnet backing",
+          "Souvenir of {{city}}, {{state_name}}",
+          "Estimated delivery 18-32 business days"
+        ],
+        "imgSeed": "gd-county-magnet",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "dropship",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "j_selkirk",
+            "stars": 3,
+            "at": "2026-06-11",
+            "title": "It is a magnet",
+            "body": "It holds up a shopping list. The illustration on it is a coastline.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 5590",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Cute",
+            "body": "Very nice item.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Basia",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love it",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "q***n",
+            "stars": 5,
+            "at": "2026-09-08",
+            "title": "Five stars",
+            "body": "As described. Good.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Ndidi",
+            "stars": 5,
+            "at": "2026-09-04",
+            "title": "Perfect",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-25",
+          "p-24",
+          "p-06"
+        ]
+      },
+      {
+        "id": "p-90",
+        "catId": "c-info",
+        "name": "About Gridfall Deals — Family Owned and Operated in Gridfall, Verity County",
+        "price": 0.0,
+        "was": null,
+        "rating": 4.9,
+        "reviewCount": 41,
+        "blurb": "Gridfall Deals is a family owned and operated retailer based right here in Gridfall, Verity County. We have been proud to serve the {{city}} community since 2011.\n\nOur mission is simple. We believe small-town shoppers deserve big-city selection at prices that respect a household budget. Every item in our catalogue is hand selected by our local team and inspected before it leaves our Gridfall facility.\n\n[b]Why shop local?[/b] When you shop with Gridfall Deals, your money stays in Verity County, supporting local families and local jobs. We are your neighbours.\n\n[img:photo:gd-warehouse-team]\n\nOur fulfilment team at the Gridfall facility.\n\nQuestions, comments or wholesale enquiries? Our customer care team is standing by at [url=synth://help.gridfalldeals-support.click/]the Gridfall Deals Help Centre[/url].",
+        "bullets": [
+          "Locally owned. Locally operated. Proudly {{state_name}}",
+          "Over 40,000 products available for delivery in Verity County",
+          "Founded 2011 by the Gridfall Deals family",
+          "306 Ellery Street, Suite 1140, Gridfall, Verity County",
+          "Payments handled by our secure partner, [url=synth://checkout.paylinq-secure.fin/]PayLinq[/url]"
+        ],
+        "imgSeed": "gd-about-warehouse",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "unknown",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "d_okafor",
+            "stars": 1,
+            "at": "2026-09-11",
+            "title": "There is no assumed name certificate on file",
+            "body": "The county clerk keeps an index of assumed name certificates and it is free to look at, at the counter or by request: [url=synth://verityclerk.gov/s/assumed-name]Assumed Name Certificates[/url]. A business trading in this county under a name that is not the owner's legal name files one. It costs $18 and it is one page.\n\nThere is nothing on file for Gridfall Deals. There is nothing on file for anything close to it. I checked the index for 2011, which is the year on this page, and for every year since.\n\nRuth Cannady went through the corporate filings in the spring and printed them in [url=synth://thequarry.news/]The Quarry[/url]. The company behind the storefront is registered in another state and its agent is a service address in a third. That is not illegal and I am not saying it is. It is just not what the word neighbours means.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "t_bellows",
+            "stars": 2,
+            "at": "2026-08-28",
+            "title": "Suite 1140 in a one storey building",
+            "body": "306 Ellery Street is the pack and ship between the laundromat and the tax preparer. [url=synth://gridfallpackandship.synth/]Gridfall Pack & Post[/url]. One storey, eleven boxes on the wall, a counter and a scale.\n\nThe woman behind the counter says she gets somebody in asking about this two or three times a month. She will not tell you whose box it is and she should not have to, it is not her business, she rents boxes.\n\nSuite 1140 is a mailbox in a building that does not have a first floor.\n\nThe photograph on the About page, the one captioned our fulfilment team, is a stock photograph. I have seen the same four people in the same high-vis vests on a tyre shop and on a supplement company. The one on the left is pointing at a clipboard on both.\n\nThe Ledger ran a piece in June about a growing Gridfall retailer creating local jobs. It named this shop. Nobody from the Ledger came out to Ellery Street, because there is nobody at the Ledger to come out: [url=synth://now.verityledger.com/]now.verityledger.com[/url].",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-09-12",
+            "title": "Thank you for shopping local",
+            "body": "Thank you for your interest in Gridfall Deals. As a family owned business rooted in the Gridfall community, we are grateful for every customer who chooses to shop with us rather than with the large national retailers. Our team is always available to answer questions about our products, our shipping or our local roots. Why not sign up for our newsletter and be first to hear about our Verity County offers?",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 1001",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Great local company",
+            "body": "Good local store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Dagmar",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Love supporting local",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "c_ballard",
+            "stars": 2,
+            "at": "2026-07-29",
+            "title": "It comes up above Hollis Market",
+            "body": "Search the words grocery Gridfall on your phone and this shop is the second thing on the page, above [url=synth://hollismarket.com/]Hollis Market[/url], which is a building on Mill Street with a meat counter and eleven people working in it.\n\nThis shop does not sell groceries. It does not sell anything from Gridfall. It comes up first because it has the word in its name and Hollis has had the same website since the year the deli menu changed.\n\nThat is not the shop's fault. I am putting it here anyway because it is the part that actually costs somebody something.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "k_lauber",
+            "stars": 2,
+            "at": "2026-09-15",
+            "title": "Asked on AskVerity, got closed as a duplicate",
+            "body": "I asked whether this shop is actually in Gridfall, because I wanted to buy the medal from somebody I could drive to. The question was closed inside four minutes as a duplicate of a 2019 question about where the county fair is held.\n\nThat is not a person doing that. [url=synth://askverity.com/]askverity.com[/url] has not had a person on it in years, and the two volunteers who are on it cannot overrule the thing that closed it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-91",
+          "p-92",
+          "p-93"
+        ]
+      },
+      {
+        "id": "p-91",
+        "catId": "c-info",
+        "name": "Shipping and Delivery Times",
+        "price": 0.0,
+        "was": null,
+        "rating": 4.8,
+        "reviewCount": 27,
+        "blurb": "[b]FAST LOCAL SHIPPING.[/b] Most orders placed before 2:00 PM ship the same business day from our Gridfall facility.\n\nEstimated delivery time for standard shipping is 18 to 32 business days. Delivery estimates are estimates and are not guaranteed.\n\nOrders over $35 ship free. A handling and preparation fee of $6.99 is applied at checkout to all orders, including orders qualifying for free shipping.\n\nSome items in your order may be dispatched separately from our supplier network and may arrive in up to six parcels on different days. This is normal and does not indicate a problem with your order.\n\nTracking is provided by our logistics partner and updates every five to nine days. If your tracking has not updated in 21 days, this is normal and does not indicate a problem. Please allow the full delivery window to pass before contacting customer care.\n\n[url=synth://track.parcelgateway-express.click/]Track your order[/url]",
+        "bullets": [
+          "Same business day dispatch from Gridfall, Monday to Friday",
+          "Estimated delivery 18-32 business days",
+          "Free shipping over $35, plus a $6.99 handling and preparation fee",
+          "Orders may arrive in up to six separate parcels",
+          "We are unable to ship to PO boxes"
+        ],
+        "imgSeed": "gd-shipping-policy",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "unknown",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "m_dunlavy",
+            "stars": 2,
+            "at": "2026-05-26",
+            "title": "Thirty-five days is not the same day",
+            "body": "Ordered the hoodie on Tuesday 21 April. Shipping confirmation that evening with a tracking number that did not scan anywhere at all until 9 May. It came on 26 May.\n\nThirty-five days. Nobody hid the eighteen to thirty-two from me, it is in the fourth line. What I object to is the first line of the same page saying same day, in bold, above it.\n\nAlso: they will not ship to a PO box. Their own address is a box.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2240",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Fast",
+            "body": "Fast shipping thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Yolanda",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Quick delivery",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "f_tolliver",
+            "stars": 3,
+            "at": "2026-06-11",
+            "title": "The tracking page is not their tracking page",
+            "body": "The track your order link goes to a different company on a different domain and it wants the order number and the email and then it says no data found for 14 days and then it says delivered. It said delivered four days before the parcel came.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "SHIP-FAST-DEALS",
+            "stars": 5,
+            "at": "2026-08-12",
+            "title": "CUT YOUR SHIPPING COSTS",
+            "body": "Sellers! Warehouse and fulfilment from $0.90 a unit at [url=synth://warehouse.eastgate-fulfilment.zip/]eastgate-fulfilment[/url]. Onboard in 48 hours.",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "n_drennan",
+            "stars": 2,
+            "at": "2026-09-08",
+            "title": "The feed bot posts these to Gridline four times a day",
+            "body": "Every listing on this shop goes up on the Local board on [url=synth://gridline.social/board/b-local]Gridline[/url] with a headline the bot writes itself. The snow broom went up three times last Tuesday with three different prices in the title, none of which was the price on the page.\n\nThere is a standing joke in the general channel on [url=synth://gridfall.chat/c/c-general]gridfall.chat[/url] where somebody posts eighteen to thirty-two whenever anyone asks how long anything is going to take. That is where I first heard of this place.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-92",
+          "p-93",
+          "p-90"
+        ]
+      },
+      {
+        "id": "p-92",
+        "catId": "c-info",
+        "name": "Returns and Refund Policy",
+        "price": 0.0,
+        "was": null,
+        "rating": 4.7,
+        "reviewCount": 33,
+        "blurb": "[b]30-DAY HASSLE FREE RETURNS ON EVERY ITEM.[/b] We stand behind everything we sell.\n\nTo begin a return, contact customer care within 14 days of your order date with your order number and a clear photograph of the item. Requests made outside this window cannot be processed.\n\nReturn shipping is free. Customers are responsible for return postage, which is typically $24.80 to $41.00 depending on weight and is not refundable.\n\nItems must be returned unopened and in the original packaging to the return address supplied by our returns team at the time of approval. Do not return items to the address printed on the parcel. The return address supplied may be outside the country and transit is typically 20 to 40 business days.\n\nRefunds are issued to the original payment method within three to five business days of the item being received and inspected. Please allow up to 45 business days for the refund to appear on your statement.\n\nSale, clearance and promotional items are final sale and may not be returned.\n\nQuestions about a return? [url=synth://help.gridfalldeals-support.click/]the Gridfall Deals Help Centre[/url] is open 24 hours.",
+        "bullets": [
+          "30 day returns on every item",
+          "Returns must be requested within 14 days of the order date",
+          "Free returns",
+          "Return postage is at the customer's expense and is not refundable",
+          "Sale, clearance and promotional items are final sale"
+        ],
+        "imgSeed": "gd-returns-policy",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "unknown",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "d_wamsley",
+            "stars": 1,
+            "at": "2026-09-11",
+            "title": "The fourteen days runs out before the parcel arrives",
+            "body": "Read it twice and then read it to my wife to check I was not being unreasonable.\n\nReturns have to be requested within fourteen days of the order date. Delivery is eighteen to thirty-two business days. So the return window shuts somewhere over the ocean, about three weeks before you have the thing in your hands.\n\nThen: return shipping is free, and the next sentence says the customer pays it and it is not refundable. Those are one line apart.\n\nAnd every single item on this site has a line through a higher price next to it, which makes every single item a promotional item, which makes every single item final sale. That is not a loophole in the policy. That is the policy, written twice, facing two directions.\n\nI got the money back by calling the bank. Eleven minutes on the phone and a form. The sheriff's office has a page on this sort of thing: [url=synth://veritysheriff.gov/s/scams]Scams and Frauds[/url]. They cannot do much about a shop that ships you the thing you ordered, badly, but they will take the report and the report is how anybody ever counts it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "b_okonjo",
+            "stars": 3,
+            "at": "2026-08-28",
+            "title": "I did get my money, eventually",
+            "body": "Forty-one days from asking to the refund landing. Store credit first, which I said no to, then the card. Nobody was rude to me at any point. It was just eleven emails with the same four sentences in them in a different order.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-09-12",
+            "title": "We are sorry to hear about your experience",
+            "body": "We are sorry to hear that your recent experience did not meet expectations. Customer satisfaction is our highest priority and we would welcome the opportunity to put this right. Our returns policy is published in full on this page for transparency. Please contact our Help Centre with your order number and a member of our team will be pleased to assist you further.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3380",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Easy returns",
+            "body": "Good. Fast. Thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Perpetua",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "No problems",
+            "body": "Exactly as described.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "REFUND-RECOVERY-HELP",
+            "stars": 5,
+            "at": "2026-09-13",
+            "title": "GET YOUR MONEY BACK",
+            "body": "Scammed online? Our recovery specialists have returned over $4 million to victims. Free consultation at [url=synth://gridfalldeals-rewards.biz/]gridfalldeals-rewards[/url]. Act now, funds are traceable for 90 days only!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-91",
+          "p-93",
+          "p-90"
+        ]
+      },
+      {
+        "id": "p-93",
+        "catId": "c-info",
+        "name": "Contact Us, Showroom Hours and Wholesale",
+        "price": 0.0,
+        "was": null,
+        "rating": 4.9,
+        "reviewCount": 19,
+        "blurb": "[b]Gridfall Deals[/b]\n306 Ellery Street, Suite 1140\nGridfall, Verity County\n\n[b]Showroom hours[/b]\nMonday to Friday, 9:00 AM to 5:00 PM\nSaturday, 10:00 AM to 2:00 PM\nClosed Sunday\n\nCustomer care is available 24 hours a day, seven days a week through [url=synth://help.gridfalldeals-support.click/]the Gridfall Deals Help Centre[/url]. Telephone support is not available at this time. Email replies are sent within 24 to 48 hours.\n\nWholesale and bulk enquiries are handled by our supplier network at [url=synth://supplier.dropship-central.top/]dropship-central[/url].\n\nWe love hearing from our neighbours in Gridfall, Marchfield, Ashkettle, New Carrow, Halsey, Coyne Flats and Milbrook.",
+        "bullets": [
+          "306 Ellery Street, Suite 1140, Gridfall, Verity County",
+          "Showroom open Monday to Friday, 9 to 5, and Saturday 10 to 2",
+          "No telephone support at this time",
+          "Email replies within 24 to 48 hours",
+          "Serving all seven towns of Verity County"
+        ],
+        "imgSeed": "gd-contact-storefront",
+        "seller": "Gridfall Deals (Gridfall, Verity County)",
+        "sellerKind": "unknown",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "t_bellows",
+            "stars": 1,
+            "at": "2026-09-04",
+            "title": "I went at eleven on a Saturday",
+            "body": "There is no showroom. There is a counter, a scale, a roll of tape and eleven mailboxes, and the pack and ship shuts at noon on Saturday and is closed all day Monday, which is two of the five days on this page.\n\nA man was ahead of me posting a birthday parcel to Halsey. He said he had come about the same thing in March.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "l_haymaker",
+            "stars": 2,
+            "at": "2026-05-26",
+            "title": "Eight emails, no phone number",
+            "body": "The Help Centre is a form. The form sends a reply with a ticket number. The ticket number is not accepted by the form.\n\nI wanted to ask one question, which was whether the medal was in Gridfall or not, because if it was I would have driven in for it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 4402",
+            "stars": 5,
+            "at": "2026-09-16",
+            "title": "Very helpful",
+            "body": "Good service thanks.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Solveig",
+            "stars": 5,
+            "at": "2026-09-15",
+            "title": "Great team",
+            "body": "Love it!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Deals Customer Care",
+            "stars": 5,
+            "at": "2026-09-05",
+            "title": "We would love to hear from you",
+            "body": "Thank you for reaching out to Gridfall Deals. Our customer care team is available around the clock through our Help Centre and we aim to respond to every enquiry within 24 to 48 hours. We are proud to serve the communities of Verity County and we look forward to welcoming you to our showroom.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-90",
+          "p-91",
+          "p-92"
+        ]
+      }
+    ]
+  }
+}

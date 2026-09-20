@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T11:58:31Z",
+  "generated": "2026-09-20T14:01:36Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -399,6 +399,23 @@
       "bytes": 39804
     },
     {
+      "domain": "gridfalldeals.com",
+      "title": "Gridfall Deals — Your Local Verity County Store",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "A storefront that says it is a family business on Ellery Street in Gridfall, selling county-name merchandise that ships from somewhere else in eighteen to thirty-two days, with a returns policy that closes its own window before the parcel lands.",
+      "tags": [
+        "gridfall",
+        "verity",
+        "shopping",
+        "dropship",
+        "merchandise"
+      ],
+      "path": "net/sites/gridfalldeals-com/site.json",
+      "bytes": 101690
+    },
+    {
       "domain": "gridfalldetectorists.net",
       "title": "Gridfall & District Detectorists",
       "type": "forum",
@@ -639,7 +656,7 @@
         "2026"
       ],
       "path": "net/sites/milbrookvfw-org/site.json",
-      "bytes": 72753
+      "bytes": 82255
     },
     {
       "domain": "newcarrow-today.com",
