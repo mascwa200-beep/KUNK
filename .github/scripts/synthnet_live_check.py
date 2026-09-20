@@ -312,6 +312,60 @@ def main():
                         f"{gram['screen']}")
             page.evaluate("SYNTH.live.setNow(null)")
 
+            # --- 8c. sweep the clock, so every pool entry gets drawn -------
+            #
+            # The render test loads every page once, at whatever moment it
+            # runs. A feed shows a handful of its pool at any one moment, so
+            # that test has only ever seen a sample -- and for eighteen
+            # months the sample was a biased handful of the same entries,
+            # because hash32's low bits were skewed. Fixing the hash made
+            # unreachable content reachable and immediately turned up an ad
+            # whose body had never been parsed.
+            #
+            # So: walk the clock across many slots on the pages that stream,
+            # and apply the same assertions at each stop. This is coverage,
+            # not a new kind of test, which on this project has consistently
+            # been where the bugs were.
+            LEAK = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:",
+                    "[list]", "[code]", "[object Object]", "undefined undefined"]
+            sweep_pages = ["gridline.social", "now.verityledger.com",
+                           "boards.gridfall.net", "dash.verity.net",
+                           "now.clipvault.tv", "mail.verity.net",
+                           "shopwell.store", "62chan.org"]
+            base_ms = page.evaluate("Date.now()")
+            stops = 0
+            leaks = []
+            for domain in sweep_pages:
+                for step in range(0, 26):
+                    # Four hours apart: far enough that every stream has
+                    # turned over several times, and cheap enough to do
+                    # two hundred of them.
+                    at = base_ms + step * 4 * HOUR
+                    page.evaluate(f"SYNTH.live.setNow({at})")
+                    page.evaluate(
+                        f"SYNTH.engine.navigate('synth://{domain}/', {{push: false}})")
+                    page.wait_for_timeout(60)
+                    text = page.inner_text("#synth-viewport")
+                    stops += 1
+                    for marker in LEAK:
+                        if marker in text:
+                            idx = text.index(marker)
+                            leaks.append(
+                                f"synth://{domain}/ at +{step * 4}h leaked "
+                                f"{marker!r}: ...{text[max(0, idx - 40):idx + 60]!r}")
+                            break
+            if errors:
+                problems.append(f"console error during the clock sweep: "
+                                f"{errors[0][:200]}")
+            if leaks:
+                for leak in leaks[:6]:
+                    problems.append(leak)
+            else:
+                notes.append(f"clock sweep: {stops} page loads across four days "
+                             f"on {len(sweep_pages)} streaming sites, no leaked "
+                             f"markup")
+            page.evaluate("SYNTH.live.setNow(null)")
+
             # --- 9. what happened while you were gone ----------------------
             #
             # The net moving is only half of it. The other half is being told

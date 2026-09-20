@@ -110,6 +110,17 @@ window.SYNTH = window.SYNTH || {};
     return out;
   }
 
+  /* One line, stripped and cut. Shared via live.js, because every renderer
+   * that rolled its own reached for `body` before `headline` and printed a
+   * whole article where a title goes. */
+  function titleOf(item, fallback) {
+    if (SYNTH.live && typeof SYNTH.live.titleOf === 'function') {
+      return SYNTH.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   function strOf(v, fallback) {
     if (typeof v === 'string') { return v; }
     if (v && typeof v === 'object') {
@@ -436,7 +447,7 @@ window.SYNTH = window.SYNTH || {};
       var li = el('li', { 'class': 'nl-echo-row' });
 
       var head = el('div', { 'class': 'nl-echo-head' },
-        text(strOf(item, 'Verity County Residents React To Local Development')));
+        text(titleOf(item, 'Verity County Residents React To Local Development')));
       li.appendChild(head);
 
       var meta = el('div', { 'class': 'nl-echo-meta' });

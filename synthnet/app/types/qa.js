@@ -76,6 +76,17 @@ window.SYNTH = window.SYNTH || {};
     return fallback || '';
   }
 
+  /* One line, stripped and cut. Shared, because every renderer that rolled
+   * its own reached for `body` before `headline` and printed a whole article
+   * where a title goes. */
+  function titleOf(item, fallback) {
+    if (SYNTH.live && typeof SYNTH.live.titleOf === 'function') {
+      return SYNTH.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   /* ---------- chrome ---------- */
 
   function header(ctx, d) {
@@ -300,7 +311,7 @@ window.SYNTH = window.SYNTH || {};
       var lu = el('ul', { 'class': 'qa-newlist' });
       var j;
       for (j = 0; j < live.length; j++) {
-        var title = strOf(live[j], 'Untitled question');
+        var title = titleOf(live[j], 'Untitled question');
         var li = el('li', { 'class': 'qa-newrow' });
         li.appendChild(el('span', { 'class': 'qa-newtitle' }, text(title)));
         var bg = liveBadge('bot');

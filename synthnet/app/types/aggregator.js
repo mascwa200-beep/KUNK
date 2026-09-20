@@ -53,6 +53,17 @@ window.SYNTH = window.SYNTH || {};
     return pool.slice(0, count || 3);
   }
 
+  /* One line, stripped and cut. Shared, because every renderer that rolled
+   * its own reached for `body` before `headline` and printed a whole article
+   * where a title goes. */
+  function titleOf(item, fallback) {
+    if (SYNTH.live && typeof SYNTH.live.titleOf === 'function') {
+      return SYNTH.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   function pool(name) {
     if (has('slop') && SYNTH.slop[name]) { return SYNTH.slop[name]; }
     return [];
@@ -188,7 +199,7 @@ window.SYNTH = window.SYNTH || {};
     var i;
     for (i = 0; i < items.length; i++) {
       var it = items[i];
-      var title = typeof it === 'string' ? it : (it.title || it.text || it.body || 'untitled');
+      var title = titleOf(it, 'untitled');
       var kind = typeof it === 'string' ? 'bot' : (it.kind || 'bot');
       var li = el('li', { 'class': 'agg-row agg-row-live' });
       li.appendChild(el('span', { 'class': 'agg-vote', 'aria-hidden': 'true' }, text('▲')));

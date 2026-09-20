@@ -248,6 +248,69 @@
     return String(text).replace(/\s+/g, ' ').slice(0, 48);
   }
 
+  /* One row of a stream.
+   *
+   * The contract has always been {slot, at, item, seed}, and reading a field
+   * off the row instead of off `.item` is far and away the most repeated
+   * mistake on this project -- it is bug #2 in docs/AUTHORING.md and it was
+   * still live in three shipped renderers: the dash drew blank headlines and
+   * blank ticker lines, every streamed shop review rendered as "Anonymous"
+   * with an empty body, and the stream site's "Just uploaded" list was six
+   * identical "Untitled upload" rows. None of them failed. They just quietly
+   * rendered nothing, which is exactly the shape of bug this project keeps
+   * producing.
+   *
+   * So the row now carries the item's own fields as well. row.body and
+   * row.item.body are both the body; neither spelling is wrong any more.
+   *
+   * The four wrapper keys win on a collision, because they are the contract.
+   * Only one pool entry anywhere defines one of them (an ad's `slot`, which
+   * means the ad shape rather than a time slot), and ads are drawn directly
+   * rather than streamed, so nothing is shadowed today. A future pool that
+   * needs a field called `at` or `seed` should read it off `.item`. */
+  function row(slot, at, item, seed) {
+    var out = {};
+    if (item && typeof item === 'object') {
+      for (var k in item) {
+        if (Object.prototype.hasOwnProperty.call(item, k)) out[k] = item[k];
+      }
+    }
+    out.slot = slot;
+    out.at = at;
+    out.item = item;
+    out.seed = seed;
+    return out;
+  }
+
+  /* A one-line title for a pooled item, for the many places a renderer wants
+   * a headline rather than a body.
+   *
+   * Hand-rolled versions of this kept reaching for `body` first, which is
+   * right for a post and wrong for a headline -- and pooled news items have
+   * a `headline`, not a `title`, so the usual `it.title || it.text ||
+   * it.body` chain fell straight through to the body. The aggregator, the Q&A
+   * site and the dash were each putting a whole multi-paragraph article where
+   * one line goes, with its markup printed raw because a title is inserted as
+   * text rather than parsed.
+   *
+   * Strips markup and truncates, because a title should be neither. */
+  function titleOf(item, fallback) {
+    var raw = '';
+    if (typeof item === 'string') {
+      raw = item;
+    } else if (item && typeof item === 'object') {
+      raw = item.title || item.headline || item.subject || item.name ||
+            item.text || item.body || '';
+    }
+    if (!raw) return fallback || '';
+    if (SYNTH.markup && typeof SYNTH.markup.strip === 'function') {
+      try { raw = String(SYNTH.markup.strip(raw)); } catch (e) { /* as-is */ }
+    }
+    raw = String(raw).replace(/\s+/g, ' ').trim();
+    if (raw.length > 96) raw = raw.slice(0, 95) + '…';
+    return raw || fallback || '';
+  }
+
   function poolItem(pool, index, seed) {
     return (pool && pool.isVirtual)
       ? pool.at(index, seed)
@@ -393,12 +456,7 @@
         }
         seen[signature(item)] = 1;
 
-        out.push({
-          slot: slot,
-          at: EPOCH + slot * intervalMin * MINUTE,
-          item: item,
-          seed: h
-        });
+        out.push(row(slot, EPOCH + slot * intervalMin * MINUTE, item, h));
       }
       slot--;
       scanned++;
@@ -569,6 +627,7 @@
     pool: resolvePool,
     virtual: virtual,
     poolItem: poolItem,
+    titleOf: titleOf,
     resetLedger: resetLedger,
     ledgerRows: ledgerRows,
     arrivals: arrivals,

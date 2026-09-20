@@ -513,7 +513,14 @@ window.SYNTH = window.SYNTH || {};
       SYNTH.live.commas(SYNTH.live.counter('shop:removed:' + p.id, 40, 6)) +
       ' reviews were removed for policy reasons.'));
     for (i = 0; i < shown.length; i++) {
-      revSec.appendChild(reviewRow(ctx, shown[i], i, p.id));
+      /* .item, not the row. SYNTH.live.stream yields {slot, at, item, seed}
+       * wrappers, so passing the wrapper into reviewRow meant every field
+       * missed: every streamed review rendered as "Anonymous" with no stars
+       * and an empty body. It looked like a styling problem. */
+      var rw = shown[i];
+      var rev = (rw && rw.item !== undefined) ? rw.item : rw;
+      if (rw && rw.at && rev && !rev.at) { rev.at = rw.at; }
+      revSec.appendChild(reviewRow(ctx, rev, i, p.id));
     }
     ctx.mount.appendChild(revSec);
   }

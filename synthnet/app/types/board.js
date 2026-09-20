@@ -79,6 +79,17 @@ window.SYNTH = window.SYNTH || {};
     return null;
   }
 
+  /* One line, stripped and cut. Shared, because every renderer that rolled
+   * its own reached for `body` before `headline` and printed a whole article
+   * where a title goes. */
+  function titleOf(item, fallback) {
+    if (SYNTH.live && typeof SYNTH.live.titleOf === 'function') {
+      return SYNTH.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   function strOf(v, fallback) {
     if (typeof v === 'string') { return v; }
     if (v && typeof v === 'object') {
@@ -304,7 +315,7 @@ window.SYNTH = window.SYNTH || {};
       for (k = 0; k < live.length; k++) {
         var lb = el('div', { 'class': 'bd-threadblock bd-threadblock-live' });
         var info = el('div', { 'class': 'bd-opinfo' });
-        info.appendChild(el('span', { 'class': 'bd-subject' }, text(strOf(live[k], 'no subject').slice(0, 60))));
+        info.appendChild(el('span', { 'class': 'bd-subject' }, text(titleOf(live[k], 'no subject'))));
         info.appendChild(text(' '));
         info.appendChild(nameLine(ctx, 'Anonymous', 'bot', null, postNo('live:' + ctx.site.domain, k)));
         lb.appendChild(info);

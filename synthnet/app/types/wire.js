@@ -114,11 +114,6 @@ window.SYNTH = window.SYNTH || {};
     try { return SYNTH.liveui.badge(kind); } catch (e) { return null; }
   }
 
-  function liveAd(slot, seed) {
-    if (!has('liveui') || !SYNTH.liveui.ad) { return null; }
-    try { return SYNTH.liveui.ad(slot, seed); } catch (e) { return null; }
-  }
-
   function counterNode(key, base, perDay) {
     var value = base;
     if (has('live') && SYNTH.live.counter) {
@@ -221,6 +216,17 @@ window.SYNTH = window.SYNTH || {};
 
   var LD = ['1ST-LD', '2ND-LD-WRITETHRU', '3RD-LD', 'ADV', 'BRIEF', 'ADDS', 'SUB'];
 
+  /* A slug names the story, so the words a headline opens with -- HERE is what
+   * to know, WHAT you need to know -- are exactly the ones it must not use.
+   * Without this the rail fills with HERE-ASHKETTLE-RESIDENTS and
+   * WHAT-KNOW-ABOUT, which no desk would recognise. */
+  var SLUG_STOP = {
+    HERE: 1, WHAT: 1, THIS: 1, THAT: 1, THESE: 1, THOSE: 1, WITH: 1, FROM: 1,
+    AFTER: 1, BEFORE: 1, ABOUT: 1, SAYS: 1, SAID: 1, WILL: 1, WOULD: 1,
+    HAVE: 1, BEEN: 1, MORE: 1, THAN: 1, THEY: 1, WERE: 1, ALSO: 1, YOUR: 1,
+    JUST: 1, INTO: 1, OVER: 1, KNOW: 1, NEED: 1, THERE: 1, WHICH: 1
+  };
+
   /* Slugs are made from the story, not the headline, and they are always a
    * little too short to be clear. Every desk keeps a cheat sheet for this. */
   function slugFrom(headline, seed) {
@@ -228,7 +234,9 @@ window.SYNTH = window.SYNTH || {};
     var keep = [];
     var i;
     for (i = 0; i < words.length && keep.length < 3; i++) {
-      if (words[i].length > 3) { keep.push(words[i]); }
+      if (words[i].length <= 3) { continue; }
+      if (Object.prototype.hasOwnProperty.call(SLUG_STOP, words[i])) { continue; }
+      keep.push(words[i]);
     }
     if (!keep.length) { keep.push('VERITY'); }
     return keep.join('-') + '-' + LD[pickIdx('ld:' + seed, LD.length)];
@@ -512,14 +520,9 @@ window.SYNTH = window.SYNTH || {};
       main.appendChild(railList(ctx, rows, bul));
     }
 
-    var ad = liveAd('inline', ctx.site.domain + ':rail');
-    if (ad) {
-      main.appendChild(el('div', { 'class': 'wr-paid' },
-        el('span', { 'class': 'wr-key' }, text('PAID FILE')),
-        el('span', { 'class': 'wr-dim' }, text('carried at the advertiser’s request, not the desk’s')),
-        ad));
-    }
-
+    /* No ad slot. The file is sold by subscription, and an agency that ran
+     * display advertising down the middle of its own rail would be told so by
+     * every subscriber it has, twice. */
     shell(ctx, d, rows, main, null);
   }
 

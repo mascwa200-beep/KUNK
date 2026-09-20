@@ -74,6 +74,17 @@ window.SYNTH = window.SYNTH || {};
     return el('span', { 'class': 'tm-noimg' });
   }
 
+  /* One line, stripped and cut. Shared, because every renderer that rolled
+   * its own reached for `body` before `headline` and printed a whole article
+   * where a title goes. */
+  function titleOf(item, fallback) {
+    if (S.live && typeof S.live.titleOf === 'function') {
+      return S.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   function parseBody(text) {
     if (S.markup && has(S.markup.parse)) { return S.markup.parse(text || ''); }
     return document.createTextNode(text || '');
@@ -251,8 +262,12 @@ window.SYNTH = window.SYNTH || {};
       box.appendChild(el('h3', { 'class': 'tm-uptitle tm-uptitle2' }, 'Just uploaded'));
       var ul2 = el('ul', { 'class': 'tm-uplist tm-uplist-thin' });
       for (i = 0; i < incoming.length; i++) {
-        var it = incoming[i];
-        var text = typeof it === 'string' ? it : (it.title || it.text || it.body || 'Untitled upload');
+        /* .item, not the row -- see the note on the live comments below.
+         * This one fell through to the 'Untitled upload' fallback, so the
+         * whole "Just uploaded" list was six identical placeholder rows. */
+        var incRow = incoming[i];
+        var it = (incRow && incRow.item !== undefined) ? incRow.item : incRow;
+        var text = titleOf(it, 'Untitled upload');
         var seed = ctx.site.domain + ':inc:' + i + ':' + text;
         var li = el('li', { 'class': 'tm-upitem tm-incoming' });
         var row = el('div', { 'class': 'tm-increw' });

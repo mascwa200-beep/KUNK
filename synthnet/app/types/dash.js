@@ -62,6 +62,17 @@ window.SYNTH = window.SYNTH || {};
     return (pool || []).slice(0, count);
   }
 
+  /* One line, stripped and cut. Shared, because every renderer that rolled
+   * its own reached for `body` before `headline` and printed a whole article
+   * where a title goes. */
+  function titleOf(item, fallback) {
+    if (S.live && typeof S.live.titleOf === 'function') {
+      return S.live.titleOf(item, fallback);
+    }
+    if (typeof item === 'string') { return item; }
+    return (item && (item.title || item.headline || item.body)) || fallback || '';
+  }
+
   function parseBody(text) {
     if (S.markup && has(S.markup.parse)) { return S.markup.parse(text || ''); }
     return document.createTextNode(text || '');
@@ -304,12 +315,19 @@ window.SYNTH = window.SYNTH || {};
     card.appendChild(el('h2', { 'class': 'gd-cardtitle' }, 'County wire'));
     var ul = el('ul', { 'class': 'gd-ticker' });
     for (var i = 0; i < items.length; i++) {
-      var it = items[i];
-      var text = typeof it === 'string' ? it : (it.text || it.title || it.body || '');
+      /* .item, not the row: SYNTH.live.stream yields {slot, at, item, seed}
+       * wrappers. Reading .text off the wrapper is undefined, which is why
+       * this card has been drawing blank lines since it shipped. */
+      var row = items[i];
+      var it = (row && row.item !== undefined) ? row.item : row;
+      var text = titleOf(it, '');
       var kind = (typeof it === 'object' && it.kind) || 'bot';
       var seed = ctx.site.domain + ':tk:' + i + ':' + text;
       var li = el('li', { 'class': 'gd-tickitem' });
-      li.appendChild(el('span', { 'class': 'gd-tickwhen' }, ago(nowMs() - ((i + 1) * 240000))));
+      li.appendChild(el('span', {
+        'class': 'gd-tickwhen',
+        'data-lv-ago': String((row && row.at) || (nowMs() - ((i + 1) * 240000)))
+      }, ago((row && row.at) || (nowMs() - ((i + 1) * 240000)))));
       var tx = el('span', { 'class': 'gd-ticktext' });
       tx.appendChild(parseBody(text));
       li.appendChild(tx);
@@ -331,8 +349,12 @@ window.SYNTH = window.SYNTH || {};
     card.appendChild(el('h2', { 'class': 'gd-cardtitle' }, 'Auto-filed reports'));
     var ul = el('ul', { 'class': 'gd-news' });
     for (var i = 0; i < items.length; i++) {
-      var it = items[i];
-      var title = typeof it === 'string' ? it : (it.title || it.text || it.body || '');
+      /* Same wrapper unpacking as above. And `headline` first: a newsItem
+       * has no `title`, so the old fallback chain would have reached `body`
+       * and put a whole multi-paragraph article where a headline goes. */
+      var nrow = items[i];
+      var it = (nrow && nrow.item !== undefined) ? nrow.item : nrow;
+      var title = titleOf(it, 'Untitled report');
       var kind = (typeof it === 'object' && it.kind) || 'bot';
       var li = el('li', { 'class': 'gd-newsitem' });
       li.appendChild(el('span', { 'class': 'gd-newsthumb' },
@@ -341,7 +363,10 @@ window.SYNTH = window.SYNTH || {};
       var t = el('div', { 'class': 'gd-newstitle' });
       t.appendChild(parseBody(title));
       m.appendChild(t);
-      var sub = el('div', { 'class': 'gd-newssub' }, ago(nowMs() - ((i + 1) * 1500000)));
+      var sub = el('div', {
+        'class': 'gd-newssub',
+        'data-lv-ago': String((nrow && nrow.at) || (nowMs() - ((i + 1) * 1500000)))
+      }, ago((nrow && nrow.at) || (nowMs() - ((i + 1) * 1500000))));
       var b = badge(kind);
       if (b) { sub.appendChild(b); }
       m.appendChild(sub);

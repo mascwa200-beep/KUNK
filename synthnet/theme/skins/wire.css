@@ -496,20 +496,7 @@
 
 .skin-wireroom .wr-catnote { margin: 0 0 12px; }
 
-/* ---- paid slot, notices, footer ---- */
-
-.skin-wireroom .wr-paid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 8px;
-  margin: 16px 0 0;
-  padding: 8px;
-  border: 1px dashed #3a4148;
-  font-size: 11px;
-}
-
-.skin-wireroom .wr-paid .lv-ad { max-width: 100%; }
+/* ---- notices, footer ---- */
 
 .skin-wireroom .wr-empty,
 .skin-wireroom .wr-404 {
