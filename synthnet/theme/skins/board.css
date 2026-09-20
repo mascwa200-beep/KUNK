@@ -214,6 +214,15 @@
    #789922 is the colour, and it is 4.6:1 on #f0e0d6. */
 .skin-yotsuba .bd-body .synth-gt { color: #789922; }
 
+/* A post that is gone. Quieter than the copy around it, because a hole in
+   a thread is not an announcement -- it is a gap you scroll past. */
+.skin-yotsuba .bd-tomb {
+  display: inline-block;
+  font-style: italic;
+  /* #6d6357 on #f0e0d6 is 4.9:1. */
+  color: #6d6357;
+}
+
 .skin-yotsuba .bd-body code {
   font-family: "Courier New", Courier, monospace;
   background: #f0e0d6;

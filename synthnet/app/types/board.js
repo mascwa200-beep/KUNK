@@ -293,10 +293,40 @@ window.SYNTH = window.SYNTH || {};
     }
 
     var body = el('blockquote', { 'class': 'bd-body' });
-    body.appendChild(ctx.markup(p.body || ''));
+    var gone = tombstone(p);
+    if (gone) {
+      body.appendChild(el('span', { 'class': 'bd-tomb' }, text(gone)));
+    } else {
+      body.appendChild(ctx.markup(p.body || ''));
+    }
     wrap.appendChild(body);
 
     return wrap;
+  }
+
+  /* Moderation leaves marks, and a thread with none of them has never been
+   * read by anybody. You are looking at this thread now, which is after
+   * whatever happened to it: some posts are already gone.
+   *
+   * Only streamed posts, because an authored one was written to be read. And
+   * mostly self-deletes rather than removals, because the sticky at the top
+   * of this board is the only moderator announcing that he stopped emptying
+   * the report queue in 2022 -- a board with no mod still loses posts, it
+   * just loses them to the people who wrote them. */
+  var TOMBS = [
+    '[deleted]  — post deleted by its author',
+    '[deleted]  — post deleted by its author',
+    '[deleted]  — post deleted by its author',
+    '[removed]  — removed by a moderator. No rule was cited.',
+    '[removed]  — removed automatically. Spam filter, probably.'
+  ];
+
+  function tombstone(p) {
+    if (!p || !p.live || typeof p.seed !== 'number') { return null; }
+    if (!has('live') || !SYNTH.live.rng) { return null; }
+    var r = SYNTH.live.rng(p.seed ^ 0x5eed);
+    if (r() > 0.07) { return null; }
+    return TOMBS[Math.floor(r() * TOMBS.length) % TOMBS.length];
   }
 
   /* ---------- compose ---------- */
@@ -447,7 +477,9 @@ window.SYNTH = window.SYNTH || {};
         kind: 'bot',
         body: replyTo(t, posts, live, j,
           strOf(live[j], '>>' + postNo(t.id, 0) + '\nthis')),
-        at: null
+        at: null,
+        live: true,
+        seed: live[j] && live[j].seed
       }, 'live:' + t.id, j));
     }
 
