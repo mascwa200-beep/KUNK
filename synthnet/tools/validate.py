@@ -991,6 +991,96 @@ def scan_external(report):
                              "external reference (%s): %s" % (", ".join(hits), shown))
 
 
+
+# --------------------------------------------------------------------------
+# canon: the people, and the facts they are wrong about
+# --------------------------------------------------------------------------
+#
+# Breadth without depth is a directory. What makes 60 sites read as one county
+# rather than 60 unrelated documents is that the same nine people keep turning
+# up, and this is the half of that which a machine can check: they turn up
+# OFTEN ENOUGH, and their handles are spelled the same way every time.
+#
+# It cannot check whether they are in character. That is still on the author.
+
+CANON_PEOPLE = {
+    # name in prose          canonical handle    sites it must reach
+    "Karen Fennimore":      ("kfennimore",       5),
+    "Dale Carver":          ("mod_dcarver",      5),
+    "Walt Pennock":         ("wpennock",         5),
+    "Marion Teale":         (None,               4),
+    "Hal Brenner":          (None,               4),
+    "Ruth Cannady":         (None,               3),
+}
+
+# A handle is a name people type, and people typing a name is exactly where
+# drift starts. These are the shapes a near-miss takes.
+def handle_variants(handle):
+    stem = handle.replace("_", "")
+    return {
+        handle.replace("_", "-"),
+        handle.replace("_", "."),
+        stem[0] + "_" + stem[1:] if "_" not in handle else handle.replace("_", ""),
+        handle.capitalize(),
+        handle.upper(),
+    } - {handle}
+
+
+# The two facts the whole network is an argument about. WORLD.md says roughly
+# half of 2026 bot claims should fail a check against the archive, so neither
+# form can be asserted correct -- what CAN be asserted is that the argument
+# exists at all: the truth is in the frozen layer, and BOTH forms are in 2026.
+# If one of them vanishes the mechanic has quietly died, and nothing else in
+# this file would notice.
+# Matched in PROXIMITY to the subject, not as a bare year. "2004" occurs in
+# something on almost every site on this network -- a copyright line, a post
+# id, a price -- so a substring test for it measures nothing at all and would
+# have passed whatever the content said. It has to be 2004 near the fire.
+DISPUTES = [
+    ("the substation fire year",
+     r"(?:fire|substation)[^\"]{0,140}\b2003\b|\b2003\b[^\"]{0,140}(?:fire|substation)",
+     r"(?:fire|substation)[^\"]{0,140}\b2004\b|\b2004\b[^\"]{0,140}(?:fire|substation)"),
+    ("the Blue Kestrel closing",
+     r"Kestrel[^\"]{0,140}\b2006\b|\b2006\b[^\"]{0,140}Kestrel",
+     r"Kestrel[^\"]{0,140}\b1977\b[^\"]{0,80}(?:clos|shut|final|for good)"),
+]
+
+
+def check_canon(report, parsed):
+    blobs = []
+    for path, _folder, site in parsed:
+        text = json.dumps(site, ensure_ascii=False)
+        blobs.append((rel(path), str(site.get("era", "")), text))
+
+    for name, (handle, want) in sorted(CANON_PEOPLE.items()):
+        seen = sum(1 for _w, _e, t in blobs if name in t)
+        if seen < want:
+            report.warn("canon", "%s appears on %d site(s); the county needs "
+                                 "them on at least %d" % (name, seen, want))
+        if not handle:
+            continue
+        for wrong in sorted(handle_variants(handle)):
+            for where, _era, text in blobs:
+                if wrong in text:
+                    report.error(where, "canon: %r is a misspelling of the "
+                                        "handle %r" % (wrong, handle))
+                    break
+
+    for what, true_pat, wrong_pat in DISPUTES:
+        right = re.compile(true_pat, re.I)
+        wrong = re.compile(wrong_pat, re.I)
+        archive = [w for w, e, t in blobs if "2026" not in e and right.search(t)]
+        modern_true = [w for w, e, t in blobs if "2026" in e and right.search(t)]
+        modern_wrong = [w for w, e, t in blobs if "2026" in e and wrong.search(t)]
+        if not archive:
+            report.warn("canon", "%s: no pre-2026 site states it, so a reader "
+                                 "has nothing to check the bots against" % what)
+        if not modern_true or not modern_wrong:
+            report.warn("canon", "%s: %d 2026 site(s) get it right and %d get "
+                                 "it wrong -- the argument needs both"
+                        % (what, len(modern_true), len(modern_wrong)))
+
+
 # --------------------------------------------------------------------------
 # main
 # --------------------------------------------------------------------------
@@ -1126,6 +1216,7 @@ def main(argv=None):
                                 % (jsonpath, target, raw_path, target_type,
                                    ", /".join(sorted(allowed)), segments[0]))
 
+    check_canon(report, parsed)
     scan_external(report)
 
     if report.errors:
