@@ -1,0 +1,903 @@
+{
+  "schema": 1,
+  "domain": "gridfall.chat",
+  "title": "Gridfall County",
+  "type": "chat",
+  "era": "2026",
+  "skin": "chatdark",
+  "description": "The chat server the Gridfall boards moved to in 2021, including the read-only import of the old phpBB.",
+  "tags": ["gridfall", "verity", "locals", "archive"],
+  "links": [
+    "boards.gridfall.net",
+    "forums.verityrail.org",
+    "askverity.com",
+    "wiki.gridfall.net",
+    "now.verityledger.com",
+    "verity.county.gov",
+    "trailusers.verity.net",
+    "thequarry.news"
+  ],
+  "data": {
+    "serverName": "Gridfall County",
+    "memberCount": 418,
+    "onlineCount": 37,
+    "channels": [
+      {
+        "id": "c-general",
+        "name": "general",
+        "kind": "text",
+        "topic": "no topic set",
+        "messages": [
+          {
+            "by": "verity-weather",
+            "at": "2026-09-08T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: cloudy, high 21, low 11. Sunrise 6:37, sunset 19:22. Wind SW 9."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-09T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: {{summary}}, high {{hi}}, low {{lo}}. Sunrise {{sunrise}}, sunset {{sunset}}. Wind {{wind}}."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-10T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: rain later, high 19, low 12. Sunrise 6:40, sunset 19:17. Wind S 14."
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-10T12:18:00",
+            "body": "is that thing still pulling from the service that shut down"
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-10T12:18:30",
+            "body": "because it went blank yesterday and then it was fine again"
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-10T12:19:00",
+            "body": "sorry, not important, just noticed"
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-10T21:06:00",
+            "body": "It is pulling from something. I stopped asking what in about 2023."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-11T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: bright, high 22, low 10. Sunrise 6:41, sunset 19:15. Wind NW 6."
+          },
+          {
+            "by": "kkarnes",
+            "at": "2026-09-11T19:40:00",
+            "body": "hello, just joined, moved to marchfield in june. is this where people are"
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-12T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: bright, high 23, low 11. Sunrise 6:43, sunset 19:13. Wind NW 5."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-13T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: fog to mid morning, high 20, low 9. Sunrise 6:44, sunset 19:11. Wind calm."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-13T08:50:00",
+            "replyTo": "kkarnes",
+            "body": "Hello. This is where two of us are. #county is where anything happens."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-13T08:53:00",
+            "body": "And if you have an actual county question, do not put it on [url=synth://askverity.com/q/q-18]AskVerity[/url]. It closes it inside a minute against a question that is not yours."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-15T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: cloudy, high 24, low 12. Sunrise 6:46, sunset 19:07. Wind SW 11."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-15T16:22:00",
+            "body": "It said 24 this morning and it did not get past 15."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-15T16:23:00",
+            "body": "I am aware it is a robot. I am telling it anyway."
+          },
+          {
+            "by": "Noelle | Community",
+            "at": "2026-09-16T03:12:00",
+            "kind": "spam",
+            "body": "hey :) i am giving away 3 gift cards to active members of this server, claim in 10 min here [url=synth://verity-rewards.top/claim]verity-rewards.top[/url]"
+          },
+          {
+            "by": "AutoMod",
+            "at": "2026-09-16T03:12:40",
+            "kind": "bot",
+            "body": "1 message removed. Reason: link filter (rule 4)."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-16T07:31:00",
+            "body": "automod got it forty seconds after it posted and left the post up. good work everyone"
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-17T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: showers, high 18, low 11. Sunrise 6:47, sunset 19:05. Wind S 16."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-18T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: showers easing, high 18, low 10. Sunrise 6:49, sunset 19:03. Wind S 12."
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-19T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: bright, high 21, low 8. Sunrise 6:50, sunset 19:01. Wind W 7."
+          },
+          {
+            "by": "kkarnes",
+            "at": "2026-09-19T11:05:00",
+            "body": "is the weather one actually accurate or is it a running joke"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-19T11:44:00",
+            "body": "both"
+          },
+          {
+            "by": "verity-weather",
+            "at": "2026-09-20T06:04:00",
+            "kind": "bot",
+            "body": "Good morning Gridfall. Today: bright, high 20, low 7. Sunrise 6:51, sunset 18:59. Wind W 9."
+          }
+        ]
+      },
+      {
+        "id": "c-county",
+        "name": "county",
+        "kind": "text",
+        "topic": "roads, power, meetings. If it is on fire ring somebody, do not post it here first.",
+        "messages": [
+          {
+            "by": "toyelaran",
+            "at": "2026-09-08T17:41:00",
+            "body": "Depot St is shut at the culvert from Monday. They are saying two weeks."
+          },
+          {
+            "by": "toyelaran",
+            "at": "2026-09-08T17:41:40",
+            "body": "detour is Ninth to Quarry Rd which is going to be lovely at half eight in the morning"
+          },
+          {
+            "by": "toyelaran",
+            "at": "2026-09-08T17:44:00",
+            "body": "sign went up today, nothing on the county site"
+          },
+          {
+            "by": "jrosales_nc",
+            "at": "2026-09-08T18:02:00",
+            "body": "there is never anything on the county site"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-08T18:30:00",
+            "body": "Public Works puts road closures on the bulletin service, not the website. You have to be on the list, and the sign-up is a paper form at the annex. [url=synth://verity.county.gov/s/ashkettle-annex]The annex page[/url] says walk-in hours are limited, which in practice is Tuesday and Thursday mornings."
+          },
+          {
+            "by": "toyelaran",
+            "at": "2026-09-08T19:11:00",
+            "body": "a paper form. for an email list."
+          },
+          {
+            "by": "ledger_feed",
+            "at": "2026-09-11T14:20:00",
+            "kind": "bot",
+            "body": "Residents Report Brief Power Interruption On Pell Road [url=synth://now.verityledger.com/article/a-09]now.verityledger.com[/url]"
+          },
+          {
+            "by": "jrosales_nc",
+            "at": "2026-09-11T14:26:00",
+            "body": "that is me, that is my house. it was twelve minutes at ten past four in the morning and it was the third time"
+          },
+          {
+            "by": "jrosales_nc",
+            "at": "2026-09-11T14:27:00",
+            "body": "the article says residents. it is one resident. it is me"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-11T15:02:00",
+            "replyTo": "jrosales_nc",
+            "body": "Twelve minutes, same lateral, three times in a year is a recloser locking out on a fault it does not clear on the third shot. Ring the trouble desk and say \"recloser lockout, repeated, same lateral, requesting a line patrol\". Do not ring the outage line. Twelve minutes is not an outage to them."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-11T15:05:00",
+            "body": "It will be a limb. It is always a limb. There is a silver maple about 400 feet east of the crossing that I have written about twice."
+          },
+          {
+            "by": "jrosales_nc",
+            "at": "2026-09-11T15:20:00",
+            "body": "ok. thank you. i have written the sentence down"
+          },
+          {
+            "by": "ledger_feed",
+            "at": "2026-09-18T09:02:00",
+            "kind": "bot",
+            "body": "Verity County Officials Confirm Routine Maintenance At Substation No. 3 [url=synth://now.verityledger.com/article/a-01]now.verityledger.com[/url]"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-18T09:40:00",
+            "body": "That had a different headline when I read it at seven."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-18T09:40:30",
+            "body": "It said crews at the substation, something something, no cause given. Now it says routine maintenance."
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-18T09:52:00",
+            "body": "did anyone screenshot it"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-18T10:05:00",
+            "body": "no"
+          },
+          {
+            "by": "toyelaran",
+            "at": "2026-09-18T10:19:00",
+            "body": "no"
+          },
+          {
+            "by": "VerityPulseAI",
+            "at": "2026-09-18T10:20:00",
+            "kind": "bot",
+            "body": "Summary of this discussion: Residents are discussing routine maintenance at Substation No. 3 in Gridfall. Officials have confirmed the work is routine. Local officials encourage residents to sign up for alerts."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-18T10:31:00",
+            "body": "Nobody confirmed anything. That was the point I was making."
+          },
+          {
+            "by": "ledger_feed",
+            "at": "2026-09-18T10:44:00",
+            "kind": "bot",
+            "body": "Verity County Officials Confirm Routine Maintenance At Substation No. 3 [url=synth://now.verityledger.com/article/a-01]now.verityledger.com[/url]"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-18T12:06:00",
+            "body": "For anyone new: the 2003 fire is documented properly in three places and none of them is that site. The wiki article has the commission finding and the page numbers. [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]Substation fire, 2003[/url]"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-18T12:08:00",
+            "body": "I revert an edit on it about twice a week that changes 2003 to 2004. It is not malice. It is a bot copying a video."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-18T13:15:00",
+            "body": "anyone know if the bakery on fourth is doing the cider doughnuts yet"
+          },
+          {
+            "by": "toyelaran",
+            "at": "2026-09-18T13:22:00",
+            "body": "from the 26th she said"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-19T08:14:00",
+            "body": "The yard work is a relay panel swap. Two trucks, Wednesday and Thursday. There is nothing to it, and nobody would have had to guess if the parcel page still worked."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-19T08:15:00",
+            "body": "[url=synth://verity.county.gov/s/substation-parcel]Site status[/url] has said temporarily unavailable since November 2019."
+          },
+          {
+            "by": "rbowersox",
+            "at": "2026-09-19T08:52:00",
+            "body": "temporarily"
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-19T21:30:00",
+            "body": "Seven years is temporarily if nobody is counting."
+          }
+        ]
+      },
+      {
+        "id": "c-the-trail",
+        "name": "the-trail",
+        "kind": "text",
+        "topic": "Verity Branch Trail. 11.2 miles, crushed limestone, one trestle you cannot walk on.",
+        "messages": [
+          {
+            "by": "abramley",
+            "at": "2026-09-12T09:20:00",
+            "body": "Marchfield lot was full at 08:25. Saturday in September, so, expected, but there were four cars on the grass verge again."
+          },
+          {
+            "by": "b_ferrell",
+            "at": "2026-09-12T09:44:00",
+            "body": "the verge is going to get posted no parking and then there will be nowhere at all, which is worse"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2026-09-12T10:02:00",
+            "body": "park at the school. four minutes walk. it has been the answer for about forty years"
+          },
+          {
+            "by": "abramley",
+            "at": "2026-09-12T10:15:00",
+            "body": "The school lot is chained at weekends now. Has been since spring."
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2026-09-12T10:16:00",
+            "body": "oh"
+          },
+          {
+            "by": "dee_hollis",
+            "at": "2026-09-14T18:40:00",
+            "body": "Somebody has cut the fence at Coyne Creek again. Same corner, north side, and you can see where they have bent it back to look shut."
+          },
+          {
+            "by": "dee_hollis",
+            "at": "2026-09-14T18:41:00",
+            "body": "There were two lads out on the deck taking photographs on Sunday and I did not say anything and I should have."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-14T19:12:00",
+            "body": "The deck is not the problem. The stringers under it are. Rot in the stringers was the 2014 inspection finding and nothing has been done to them since, so what is holding those lads up is the timber that failed the inspection twelve years ago."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-14T19:14:00",
+            "body": "Three trestles were decked over in 2014. That one was not, for money, and it has been money every year since."
+          },
+          {
+            "by": "hettie_l",
+            "at": "2026-09-14T20:01:00",
+            "body": "It is item 14 in the draft capital plan again. It goes in every autumn and comes out every spring and I have watched it do that six times."
+          },
+          {
+            "by": "hettie_l",
+            "at": "2026-09-14T20:01:40",
+            "body": "Ruth has the item number and the page in this week's Quarry, which is the only place I have seen it written down: [url=synth://thequarry.news/i/i-82]The Quarry, issue 82[/url]"
+          },
+          {
+            "by": "hettie_l",
+            "at": "2026-09-14T20:02:00",
+            "body": "Vote is Wednesday 7 October at the annex. There will be nine people there."
+          },
+          {
+            "by": "abramley",
+            "at": "2026-09-14T20:30:00",
+            "body": "The trail board thread on this is still the best summary of the engineering anywhere: [url=synth://trailusers.verity.net/topic/tt-04]Coyne Creek trestle - deck it like the other three[/url]"
+          },
+          {
+            "by": "AutoLocal_Feed",
+            "at": "2026-09-16T04:30:00",
+            "kind": "bot",
+            "body": "Great news for outdoor lovers! The Verity Branch Trail has been named one of the region's best rail trails. With 11 miles of scenic pathway and fully restored historic trestles, it is the perfect destination this fall. [url=synth://now.verityledger.com/article/a-04]Read more[/url]"
+          },
+          {
+            "by": "dee_hollis",
+            "at": "2026-09-16T07:10:00",
+            "body": "fully restored historic trestles"
+          },
+          {
+            "by": "b_ferrell",
+            "at": "2026-09-16T07:36:00",
+            "body": "one of them has chain link across it with a county padlock on it, but sure"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2026-09-16T08:03:00",
+            "body": "my dad used that line for 22 years and now its a listicle. anyway mile 8.6 is standing water again after tuesday, take the north side"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2026-09-16T08:09:00",
+            "body": "the old rail board still has the freight house pictures from before they took it down, nobody has posted on it since 2013 [url=synth://forums.verityrail.org/board/b-photo]forums.verityrail.org[/url]"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2026-09-16T08:10:00",
+            "body": "half the images are gone but the captions are still there so you know what you are not looking at"
+          },
+          {
+            "by": "hettie_l",
+            "at": "2026-09-19T15:22:00",
+            "body": "Walked Cutler's Lane to the underbridge this morning. Mowing is done and they have left the cuttings on the surface, which will be a skating rink by Tuesday if it rains."
+          },
+          {
+            "by": "hettie_l",
+            "at": "2026-09-19T15:24:00",
+            "body": "Reported it. I get an automatic reply that gives me a reference number and I have four of those now."
+          }
+        ]
+      },
+      {
+        "id": "c-off-topic",
+        "name": "off-topic",
+        "kind": "text",
+        "topic": "not county business. this is where the Harrow and Pike thing lives, please leave it here",
+        "messages": [
+          {
+            "by": "rbowersox",
+            "at": "2026-08-11T21:07:00",
+            "body": "rewatching Harrow & Pike and series 6 is where it stops being about the town"
+          },
+          {
+            "by": "rbowersox",
+            "at": "2026-08-11T21:07:40",
+            "body": "they move the whole thing to the city and after that it is a normal police show"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-08-11T21:09:00",
+            "body": "Series 6 is the best one and it is not close."
+          },
+          {
+            "by": "rbowersox",
+            "at": "2026-08-11T21:10:00",
+            "body": "no"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-08-11T21:31:00",
+            "body": "I have thought about it for twenty minutes and I am still right."
+          },
+          {
+            "by": "rbowersox",
+            "at": "2026-08-11T21:31:40",
+            "body": "i went and made a cup of tea and came back and you are still wrong"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-08-11T21:50:00",
+            "body": "the problem with 6 is they recast dinah"
+          },
+          {
+            "by": "abramley",
+            "at": "2026-08-11T21:55:00",
+            "body": "They did not recast Dinah. She is written out at the end of 5 and comes back in 7 with the same actress. There is a whole year where she is simply not in it."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-08-11T22:04:00",
+            "body": "well thats who i see when i think about it"
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-02T20:15:00",
+            "body": "its Harrow and Pike, not Harrow & Pike. the ampersand is only on the american box set"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-02T20:40:00",
+            "body": "It is on the title card of every episode."
+          },
+          {
+            "by": "sgarrity",
+            "at": "2026-09-02T20:41:00",
+            "body": "the title card is a prop"
+          },
+          {
+            "by": "abramley",
+            "at": "2026-09-02T20:58:00",
+            "body": "The title card is the title."
+          },
+          {
+            "by": "VerityPulseAI",
+            "at": "2026-09-02T21:00:00",
+            "kind": "bot",
+            "body": "Harrow and Pike is a beloved television series that ran for nine seasons. Fans continue to debate its later years. Whichever season is your favourite, there is something in it for everyone. What is your favourite episode?"
+          },
+          {
+            "by": "rbowersox",
+            "at": "2026-09-02T21:14:00",
+            "body": "eight seasons"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-09-02T21:20:00",
+            "body": "Eight and the christmas one, which is why every list on the internet says nine."
+          },
+          {
+            "by": "jrosales_nc",
+            "at": "2026-09-16T19:02:00",
+            "body": "started this on the strength of this channel, i am three episodes in and nobody has told me which one dinah is"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-16T19:30:00",
+            "body": "the one with the coat"
+          },
+          {
+            "by": "abramley",
+            "at": "2026-09-16T19:44:00",
+            "body": "They all have coats. It is set in a town where it rains in every scene."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-16T19:51:00",
+            "body": "the good coat"
+          }
+        ]
+      },
+      {
+        "id": "c-announce",
+        "name": "announce",
+        "kind": "announce",
+        "topic": "Read only for everyone except me. I post here about twice a year.",
+        "messages": [
+          {
+            "by": "mod_dcarver",
+            "at": "2024-11-03T11:00:00",
+            "body": "Rules, such as they are.\n\n[list][*]Be civil. You buy groceries where they buy groceries.[*]No dealers in the buy and sell threads, and there is no buy and sell channel, so nowhere.[*]Do not post anybody's address or phone number, including your own.[*]No link shorteners. The filter eats them and I am not unbanning them one at a time.[/list]\n\nIf a thing gets removed and you think it should not have been, message me. I will usually agree with you and put it back."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2025-02-18T20:12:00",
+            "body": "The server moved hosts on Sunday. If you cannot see this message, let me know."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2025-07-09T09:30:00",
+            "body": "#forum-archive is read only and is going to stay read only. It is an import, not a conversation, and if posting were on somebody would eventually reply to a man who died in 2011.\n\nIf you want something out of it, ask me and I will paste it into #county."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-05-30T08:45:00",
+            "body": "The invite link in the pinned post stopped working in March. I am not making a new one. If somebody wants in, one of you can invite them. That is what the permission is for."
+          }
+        ]
+      },
+      {
+        "id": "c-forum-archive",
+        "name": "forum-archive",
+        "kind": "archive",
+        "topic": "boards.gridfall.net, 2001-2017. Read only. Not searchable from outside and there is nothing I can do about that.",
+        "importedFrom": "boards.gridfall.net (phpBB 2.0.22)",
+        "importedAt": "2021-03-14",
+        "messages": [
+          {
+            "by": "mod_dcarver",
+            "at": "2021-03-13T22:40:00",
+            "body": "right. the export ran."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2021-03-13T22:41:00",
+            "body": "61,400 posts, 340MB of text. the importer takes 2,000 messages to a channel and then stops."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2021-03-13T22:44:00",
+            "body": "so what is going in here is every two hundredth post. not the good ones, not the popular ones. every two hundredth one. i have the whole file on a disc and karen has a copy of the disc."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2021-03-14T00:02:00",
+            "body": "attachments did not come across. i knew that going in. it is text or it is nothing."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2004-04-06T19:51:00",
+            "body": "Knee surgery. Confirmed, I ran into Delia's son at the pharmacy. Six to eight weeks and she is coming back, and she asked him to tell people because she knew this thread would happen."
+          },
+          {
+            "by": "BillT_GF",
+            "at": "2004-06-22T21:14:00",
+            "body": "thats the tap off the temporary gear. its undersized for the evening load and everybody on the co op knows it and nobody will say it in writing"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2004-09-30T12:06:00",
+            "body": "SOLD. thanks all"
+          },
+          {
+            "by": "Junie Pell",
+            "at": "2005-01-18T16:33:00",
+            "body": "here is the one my mother does with the tinned peaches, its the same batter as the hot milk cake but the fruit goes in cold [img:photo:peach-cake-january]"
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2005-01-18T18:02:00",
+            "body": "\"The same batter\" is not the same batter. There is an extra egg in this one and you have not said so."
+          },
+          {
+            "by": "Ray Dunleavy",
+            "at": "2005-06-11T07:20:00",
+            "body": "Two years today. Still no incident report, still nothing from the co-op, and the sign on the fence says what it said in November."
+          },
+          {
+            "by": "Curtis Flenn",
+            "at": "2005-10-02T23:48:00",
+            "body": "Out on 62 again tonight. Odometer zeroed at the county line sign. Comes up at 0.3, strongest at 0.9, gone by 1.7. Same as March. Tape is filed and dated. [img:photo:62-log-sheet-1002]"
+          },
+          {
+            "by": "PRINCE_OF_ELM_ST",
+            "at": "2005-10-03T07:55:00",
+            "body": "its the fence curtis. we did this one already."
+          },
+          {
+            "by": "T. Oyelaran",
+            "at": "2006-06-19T13:10:00",
+            "body": "The rail people have been at this three months now. Their question is who agreed the passenger count methodology, because the county's answer to the objections was that it had been agreed in advance, and nobody will say agreed with whom. If anybody here has a contact at highways I will pass it on."
+          },
+          {
+            "by": "Nedra Oyelaran",
+            "at": "2006-11-04T19:40:00",
+            "body": "Terry has been asked to stop ringing the highways office. I am putting that here so he cannot say nobody told anyone."
+          },
+          {
+            "by": "PRINCE_OF_ELM_ST",
+            "at": "2007-03-22T14:05:00",
+            "body": "[removed]"
+          },
+          {
+            "by": "DaveK (admin)",
+            "at": "2007-03-22T14:40:00",
+            "body": "That is the second time this month. If you want to have that argument, have it somewhere that is not my spare room."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2008-03-15T10:12:00",
+            "body": "For the record, because it will matter later: last freight ran yesterday. Eleven of us at the Pell Road crossing and a dog. Film is in to be developed and I will scan it. [img:photo:pell-road-crossing-0314]"
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2009-08-07T20:18:00",
+            "body": "Does anybody still have the photographs from the fair in 2003? The gallery link in the old thread goes to a page that says account suspended."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2011-02-09T12:44:00",
+            "body": "The Ledger has been sold. Four paragraphs on page 6, underneath a notice about a dog. I would like it minuted that the newspaper reported its own sale on page 6."
+          },
+          {
+            "by": "BillT_GF",
+            "at": "2012-10-30T18:22:00",
+            "body": "im not going to be posting much, my hands are bad. if somebody wants the co op paperwork i have two boxes of it and id rather it went somewhere than in the skip"
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2014-05-02T07:15:00",
+            "body": "Spam. Forty minutes of it this morning, same nine accounts, same eleven words. Registration stays open for now, because closing it is a door you do not reopen."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2016-07-19T13:30:00",
+            "body": "I have started at 1911 and I am doing eleven pages an hour on a machine the county will not replace. At that rate I finish in 2038. I am forty-eight."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2017-09-25T08:00:00",
+            "body": "Registration is closed. 44,000 posts in nine days and I have deleted every one of them by hand. I am sorry to the four real people who signed up this month and I will do you individually if you email me."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2021-03-14T09:30:00",
+            "body": "Dale, this is going to read as nonsense to anyone who was not there, and that is fine. It is a record. It does not have to be a story."
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2021-03-21T16:40:00",
+            "body": "scrolled the whole thing this afternoon. theres a post from terry oyelaran in 2006 about the branch line counts"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2021-03-21T16:41:00",
+            "body": "gerald brue asked that same question on the rail board about nine hundred times and i never once saw anybody answer it"
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2021-03-21T16:42:00",
+            "body": "did anybody ever actually find out"
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T19:55:00",
+            "body": "Yes. It took me an hour in 2007. It is not a secret, it is filed where nobody looks."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T19:57:00",
+            "body": "\"Agreed in advance\" is doing all the work in that sentence. It does not mean agreed with the objectors, and it does not mean agreed by the commission. It means there is a scoping note."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T19:59:00",
+            "body": "The document is the [b]Marchfield Branch Passenger Count Protocol[/b], annex D to the Stage 2 appraisal. Two pages. Dated 9 February 2005."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T20:03:00",
+            "body": "The signature block at the foot of page 2 has two names on it. C. Ledd for county highways, and the consultant's transport planner, whose name on my copy is a fax smudge. The state DOT regional liaison is recorded as \"in attendance, noted\". Noted is not agreed.\n\nSo the answer to agreed with whom is: the county agreed it with the firm the county was paying. That is all it has ever meant and it is why nobody wanted to put it in a letter."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T20:06:00",
+            "body": "The count fortnight is para 3.1. It had to fall outside school holidays, outside the two weeks either side of a timetable change, and inside the survey window the funding letter gave them. In that year exactly one fortnight satisfied all three. They used it."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T20:08:00",
+            "body": "The Hallow bridge possession was in a different document, held by a different body, on a different calendar, and nobody laid the two calendars side by side. It is not a stitch-up. It is two calendars."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T20:11:00",
+            "body": "Para 4.3 is the one everybody needed and nobody read. It says a count affected by [i]unplanned[/i] disruption is re-run. A booked engineering possession is planned disruption. So 4.3 never triggered, every objector who cited it got one sentence back, and all of them came away thinking they had been stonewalled."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T20:15:00",
+            "body": "If anyone still wants the numbers rather than the argument: the raw survey sheets are with Public Works, not the clerk, and they are public. Surveyor's name, hourly tallies, by station. Ask for [b]survey sheets[/b] and give the fortnight. Ask for \"the loadings data\" and they will send the summary table again, which is the thing everybody is complaining about.\n\n[img:photo:annex-d-page-2] [img:photo:signature-block-scan]"
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2021-03-21T21:02:00",
+            "body": "howard why did you never put that on the rail board"
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T21:20:00",
+            "body": "I do not read the rail board."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2021-03-21T21:44:00",
+            "body": "You have had that in your head since 2006, Howard."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2021-03-21T21:46:00",
+            "body": "Since 2007. The report is dated 2005 and I did not go and look at it until 2007."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2021-03-21T21:52:00",
+            "body": "Junie's peach cake is in here twice and the good version is the one where she forgets the egg."
+          },
+          {
+            "by": "dmc_marchfield",
+            "at": "2021-03-21T22:05:00",
+            "body": "every picture in this is a filename. theres one called pell-road-crossing and i would have liked to see that one"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2021-03-21T22:30:00",
+            "replyTo": "dmc_marchfield",
+            "body": "I have the negatives. They are in a box at the library with an accession number, which means that in forty years somebody who does not know my name can still find them. That is the only part of any of this I have ever been good at."
+          },
+          {
+            "by": "wpennock",
+            "at": "2021-03-28T11:15:00",
+            "replyTo": "Curtis Flenn",
+            "body": "Curtis's distances from 2005 match mine from 2019 to within a tenth of a mile. Sixteen years, two receivers, two people who never met. I am putting it here because there is nowhere else to put it."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2021-04-02T09:00:00",
+            "body": "Locking this. Read only from here.\n\nIt is not a conversation, it is a filing cabinet somebody tipped out. If you want something out of it, ask me.\n\nThe board itself is still up and I am still paying for it, so none of this is instead of anything: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]"
+          }
+        ]
+      },
+      {
+        "id": "c-mods",
+        "name": "mods",
+        "kind": "text",
+        "topic": "moderator channel. yes everyone can see it. yes I know.",
+        "messages": [
+          {
+            "by": "mod_dcarver",
+            "at": "2026-06-16T07:20:00",
+            "body": "Nine spam joins overnight. Same pattern, six character handle, digit on the end, avatar of a car."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-06-16T07:21:00",
+            "body": "Banned. Forty minutes. Same as every morning."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-06-16T08:40:00",
+            "body": "Dale, this channel is public. I can read it and I am not a moderator."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-06-16T09:02:00",
+            "body": "I know."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-06-16T09:10:00",
+            "body": "The permission that made it private was on a role I deleted in 2023 while tidying up. Putting it back means rebuilding the roles, and the last time I touched the roles nobody could see #county for two days."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-06-16T09:30:00",
+            "body": "So we all just read it."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-06-16T09:31:00",
+            "body": "So you all just read it. There is nothing in it. It is me saying banned."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-08-04T07:44:00",
+            "body": "Banned."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-08-27T07:38:00",
+            "body": "Banned. Four of them."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-05T18:12:00",
+            "body": "Somebody asked me today whether this server is archived anywhere. It is not. If it goes, it goes, and nothing in it has ever been indexed by anything."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-05T21:40:00",
+            "body": "It is eleven dollars a month and I have paid it every month since 2017. I will tell you before I stop."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-05T21:55:00",
+            "body": "That is not what I was asking and you know it is not."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-05T22:10:00",
+            "body": "I do. Bring a disc on Tuesday."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-06T08:30:00",
+            "body": "sorry to interrupt the moderators but the doughnut answer in county is wrong, its the 26th for cider and the 3rd for plain"
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-06T08:47:00",
+            "body": "Banned."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-06T08:49:00",
+            "body": "lol"
+          }
+        ]
+      }
+    ]
+  }
+}

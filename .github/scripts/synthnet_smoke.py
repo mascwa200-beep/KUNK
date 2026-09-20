@@ -280,6 +280,99 @@ def main() -> int:
                     " return r.width > 0 && r.height > 0; }")
                 if not has_search:
                     failures.append("360px viewport: no visible search control")
+
+                # ...and then every site, which this did not do. It checked the
+                # start page and stopped, so twenty-three skins and every site
+                # on the network were never once measured at the width the
+                # project states as its primary target. A skin that overflows
+                # is unusable on a phone and completely invisible on a desktop,
+                # which is where it gets written.
+                #
+                # Each site is checked at its front door and one route in, and
+                # the widest offending element is named, because "this page
+                # overflows" without saying what is doing it is a bug report
+                # you have to redo from scratch.
+                # document.scrollWidth is the WRONG instrument for content
+                # inside this shell, and the comment in theme/skins/forum.css
+                # says so from the last time: "the nav items were simply cut
+                # off at the edge with no scroll and no wrap. Document
+                # scrollWidth was unaffected, which is why the overflow check
+                # never caught it -- the clipping happened inside the banner."
+                # #synth-viewport clips, so the document never widens and the
+                # page is broken and measures clean.
+                #
+                # So measure the elements. Anything whose right edge is past
+                # the viewport's is overflowing, with two deliberate
+                # exceptions -- both of which are content you CAN still read:
+                #
+                #   * something between it and the viewport scrolls, so you
+                #     swipe to it: a channel strip, a wide table, a code block
+                #   * it is animated, so it comes to you: the breaking-news
+                #     ticker and the 1998 marquees are `white-space: nowrap`
+                #     inside an `overflow: hidden` window and translate across
+                #     it, and are several thousand pixels wide on purpose
+                #
+                # Anything else past the edge is text nobody can get to.
+                WIDEST = """() => {
+                  const host = document.querySelector('#synth-viewport');
+                  if (!host) return null;
+                  const edge = host.getBoundingClientRect().right;
+                  const scrolls = (n) => {
+                    if (getComputedStyle(n).animationName !== 'none') return true;
+                    for (let p = n.parentElement; p && p !== host; p = p.parentElement) {
+                      const s = getComputedStyle(p);
+                      if (s.overflowX === 'auto' || s.overflowX === 'scroll') return true;
+                      if (s.animationName !== 'none') return true;
+                    }
+                    return false;
+                  };
+                  let worst = null, w = edge + 1;
+                  host.querySelectorAll('*').forEach(n => {
+                    const r = n.getBoundingClientRect();
+                    if (r.width === 0 && r.height === 0) return;
+                    if (r.right <= w) return;
+                    if (scrolls(n)) return;
+                    w = r.right;
+                    worst = {
+                      sel: (n.tagName.toLowerCase() + '.' +
+                            String(n.className || '')).slice(0, 60),
+                      over: Math.round(r.right - edge)
+                    };
+                  });
+                  return worst; }"""
+                DEEP = """() => {
+                  const a = [...document.querySelectorAll('#synth-viewport a[href]')]
+                    .map(x => x.getAttribute('href'))
+                    .find(h => h && h.indexOf('://') < 0 && h.length > 3);
+                  return a || null; }"""
+                swept = 0
+                for entry in registry.get("sites", []):
+                    domain = entry.get("domain")
+                    if not domain:
+                        continue
+                    phone.goto(f"{base}#synth://{domain}/", wait_until="networkidle")
+                    phone.wait_for_timeout(150)
+                    swept += 1
+                    wide = phone.evaluate(WIDEST)
+                    if wide:
+                        failures.append(
+                            f"360px: synth://{domain}/ (skin {entry.get('skin')}) "
+                            f"runs {wide['over']}px past the right edge at "
+                            f"{wide['sel']}")
+                    href = phone.evaluate(DEEP)
+                    if not href:
+                        continue
+                    path = href if href.startswith("/") else "/" + href
+                    phone.goto(f"{base}#synth://{domain}{path}",
+                               wait_until="networkidle")
+                    phone.wait_for_timeout(150)
+                    wide = phone.evaluate(WIDEST)
+                    if wide:
+                        failures.append(
+                            f"360px: synth://{domain}{path} (skin "
+                            f"{entry.get('skin')}) runs {wide['over']}px past "
+                            f"the right edge at {wide['sel']}")
+                print(f"  360px: swept {swept} sites, front door and one route in")
                 phone.close()
 
             browser.close()

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T03:57:37Z",
+  "generated": "2026-09-20T04:05:59Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -91,6 +91,22 @@
       "bytes": 468
     },
     {
+      "domain": "countyfacts.info",
+      "title": "CountyFacts - Verity County Answered",
+      "type": "blog",
+      "era": "2026",
+      "skin": "movabletype-cream",
+      "description": "Comprehensive guides to Verity County, generated at volume, monetised with affiliate links, and wrong about the substation fire in every article.",
+      "tags": [
+        "verity county",
+        "guides",
+        "seo",
+        "2026"
+      ],
+      "path": "net/sites/countyfacts-info/site.json",
+      "bytes": 111615
+    },
+    {
       "domain": "dash.verity.net",
       "title": "Verity Dash - Smart County Overview",
       "type": "dash",
@@ -111,6 +127,22 @@
       "tags": [],
       "path": "net/sites/forums-verityrail-org-site/site.json",
       "bytes": 21404
+    },
+    {
+      "domain": "gridfall.chat",
+      "title": "Gridfall County",
+      "type": "chat",
+      "era": "2026",
+      "skin": "chatdark",
+      "description": "The chat server the Gridfall boards moved to in 2021, including the read-only import of the old phpBB.",
+      "tags": [
+        "gridfall",
+        "verity",
+        "locals",
+        "archive"
+      ],
+      "path": "net/sites/gridfall-chat/site.json",
+      "bytes": 39788
     },
     {
       "domain": "gridfallswap.net",
@@ -160,6 +192,23 @@
       "tags": [],
       "path": "net/sites/mail-verity-net/site.json",
       "bytes": 34102
+    },
+    {
+      "domain": "marchfieldlibrary.blog",
+      "title": "Marchfield Public Library - Notes from the Reference Desk",
+      "type": "blog",
+      "era": "2026",
+      "skin": "movabletype-cream",
+      "description": "The Marchfield Public Library's blog: hours, closures, the Friends' book sale, and Karen Fennimore's notes from the microfilm reader.",
+      "tags": [
+        "marchfield",
+        "library",
+        "microfilm",
+        "archives",
+        "locals"
+      ],
+      "path": "net/sites/marchfieldlibrary-blog/site.json",
+      "bytes": 47204
     },
     {
       "domain": "marla.verity.net",
@@ -318,6 +367,22 @@
       "bytes": 16076
     },
     {
+      "domain": "veritycountytoday.com",
+      "title": "Verity County Today",
+      "type": "news",
+      "era": "2026",
+      "skin": "pinkslime",
+      "description": "A locally named news site with no staff page, no phone number and no address, published by Meridian Local Network, which runs four hundred of them.",
+      "tags": [
+        "verity",
+        "2026",
+        "news",
+        "pinkslime"
+      ],
+      "path": "net/sites/veritycountytoday-com/site.json",
+      "bytes": 31273
+    },
+    {
       "domain": "verityledger.com",
       "title": "The Verity Ledger",
       "type": "news",
@@ -327,6 +392,23 @@
       "tags": [],
       "path": "net/sites/verityledger-com/site.json",
       "bytes": 37174
+    },
+    {
+      "domain": "veritysignal.blog",
+      "title": "The Verity Signal",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "Curtis Flenn has been logging the Signal on County Route 62 since March 2004 and has not got any closer, which has not stopped him writing it down.",
+      "tags": [
+        "signal-62",
+        "verity",
+        "shortwave",
+        "milbrook",
+        "2026"
+      ],
+      "path": "net/sites/veritysignal-blog/site.json",
+      "bytes": 52488
     },
     {
       "domain": "veritywire.press",
@@ -343,6 +425,23 @@
       ],
       "path": "net/sites/veritywire-press/site.json",
       "bytes": 45893
+    },
+    {
+      "domain": "vvpl.news",
+      "title": "Verity Valley Power & Light - News & Announcements",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "Corporate announcements from Verity Valley Power & Light. Posted when there is an announcement, which is not often. Comments are not enabled.",
+      "tags": [
+        "utility",
+        "corporate",
+        "press-releases",
+        "verity",
+        "2026"
+      ],
+      "path": "net/sites/vvpl-news/site.json",
+      "bytes": 14634
     },
     {
       "domain": "webring.gridfall.net",

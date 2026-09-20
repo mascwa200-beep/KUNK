@@ -40,7 +40,19 @@ REGISTRY_VERSION = 1
 SEARCH_VERSION = 2
 MAX_POSTINGS = 200
 MIN_TOKEN = 3
-SEARCH_LIMIT = 400 * 1024
+# 400 KB was set when the index held 252 documents, because search only ever
+# built documents for seven of the eighteen site types. It now indexes all of
+# them, and the network has gone from 24 sites to 36: 365 KB at this commit
+# and climbing, so the old ceiling was about to fail the build over content
+# doing exactly what it is supposed to do.
+#
+# 1 MB, which is what the workflow's own check already allows. The number that
+# matters is not this one -- the index is fetched once and cached, and the
+# figure the cold-load budget in .github/workflows/synthnet.yml measures is
+# the one a phone waits on. This exists to catch the index going exponential
+# in the number of sites rather than linear, which is a bug, and it has
+# happened here once: 4.2 MB for 333 KB of content.
+SEARCH_LIMIT = 1024 * 1024
 
 STOPLIST = set(
     """
