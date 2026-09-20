@@ -50,6 +50,13 @@ window.SYNTH = window.SYNTH || {};
     return h >>> 0;
   }
 
+  /* Built-in pool plus anything imported content packs add under the same
+   * name. Goes through live.js so packs reach every renderer at once. */
+  function poolOf(name) {
+    if (S.live && has(S.live.pool)) { return S.live.pool(name); }
+    return (S.slop && S.slop[name]) || [];
+  }
+
   function streamPool(key, pool, intervalMin, count) {
     if (S.live && has(S.live.stream)) { return S.live.stream(key, pool, intervalMin, count); }
     return (pool || []).slice(0, count);
@@ -290,7 +297,7 @@ window.SYNTH = window.SYNTH || {};
   }
 
   function tickerCard(ctx, data) {
-    var pool = (S.slop && S.slop.tickers) || [];
+    var pool = poolOf('tickers');
     var items = streamPool(ctx.site.domain + ':ticker', pool, 4, 8);
     if (!items || !items.length) { return null; }
     var card = el('article', { 'class': 'gd-card gd-card-ticker' });
@@ -317,7 +324,7 @@ window.SYNTH = window.SYNTH || {};
   }
 
   function newsCard(ctx, data) {
-    var pool = (S.slop && S.slop.newsItems) || [];
+    var pool = poolOf('newsItems');
     var items = streamPool(ctx.site.domain + ':news', pool, 9, 5);
     if (!items || !items.length) { return null; }
     var card = el('article', { 'class': 'gd-card gd-card-news' });

@@ -132,8 +132,32 @@
    * The core of the whole illusion. Returns the most recent `count` arrivals
    * for a stream, newest first, each with the moment it "posted". */
 
-  function stream(key, pool, intervalMin, count) {
-    if (!pool || !pool.length) return [];
+  /* Resolve a pool argument. Renderers may pass the array itself, or -- and
+   * this is the point -- the *name* of a pool, in which case the built-in
+   * entries are concatenated with whatever imported content packs contribute
+   * under the same name.
+   *
+   * SYNTH.packs.slopFor() has existed since packs shipped and was called by
+   * nothing, so a pack could ship fifty extra feed posts and none of them
+   * would ever appear anywhere. Resolving here means every renderer picks
+   * that up without any of them changing, which beats teaching seventeen
+   * renderers about packs individually. */
+  function resolvePool(pool) {
+    if (Array.isArray(pool)) return pool;
+    if (typeof pool !== 'string') return [];
+    var base = (SYNTH.slop && SYNTH.slop[pool]) || [];
+    var extra = [];
+    try {
+      if (SYNTH.packs && typeof SYNTH.packs.slopFor === 'function') {
+        extra = SYNTH.packs.slopFor(pool) || [];
+      }
+    } catch (e) { /* packs not ready, or storage unavailable */ }
+    return extra.length ? base.concat(extra) : base;
+  }
+
+  function stream(key, poolOrName, intervalMin, count) {
+    var pool = resolvePool(poolOrName);
+    if (!pool.length) return [];
     var current = Math.floor(minutesSinceEpoch() / intervalMin);
     var out = [];
     for (var i = 0; i < count; i++) {
@@ -148,6 +172,118 @@
       });
     }
     return out;
+  }
+
+  /* --- pointing at somewhere that exists --------------------------------
+   *
+   * Several places build a synth:// link in code rather than in content:
+   * fame.js ("the Ledger has written about you"), bots.js ("read the full
+   * aggregation at..."), and anything else that wants to reference a kind of
+   * site without caring which one.
+   *
+   * They used to hardcode domain strings, and three of the domains in
+   * fame.js had never existed in the registry, so the entire fame feature
+   * emitted dead links at every milestone. validate.py could not see it
+   * because it checks the links inside site JSON, not the ones JavaScript
+   * builds at run time.
+   *
+   * So: resolve a *role* against the registry when the link is built. If the
+   * net has no site that can play the role, the link is omitted rather than
+   * emitted broken. Renaming or deleting a site can no longer strand a
+   * caller. .github/scripts/synthnet_link_check.py holds the line.
+   */
+
+  var ROLE_PREFER = {
+    feed:   ['gridline.social'],
+    news:   ['now.verityledger.com', 'verityledger.com'],
+    wiki:   ['wiki.gridfall.net'],
+    video:  ['now.clipvault.tv', 'clipvault.tv'],
+    forum:  ['boards.gridfall.net'],
+    farm:   [],
+    oldweb: ['stargazers.verity.net', 'tnorris.verity.net']
+  };
+
+  /* Which site types can stand in for each role, best first. */
+  var ROLE_TYPES = {
+    feed:   ['social', 'aggregator', 'board'],
+    news:   ['news', 'wire', 'blog'],
+    wiki:   ['wiki'],
+    video:  ['stream', 'media'],
+    forum:  ['forum', 'board', 'qa', 'aggregator'],
+    farm:   ['aggregator', 'news', 'blog'],
+    oldweb: ['page']
+  };
+
+  /* The one path shape each type routes. Must agree with PATH_PREFIXES in
+   * tools/validate.py -- a path no renderer serves is a link that 404s. */
+  var ROLE_PATH = {
+    forum: '/topic/', board: '/t/', social: '/post/', aggregator: '/item/',
+    news: '/article/', wire: '/d/', blog: '/post/', wiki: '/wiki/',
+    media: '/watch/', stream: '/w/', qa: '/q/', page: '/'
+  };
+
+  function registryRows() {
+    try {
+      if (SYNTH.data && typeof SYNTH.data.list === 'function') {
+        return SYNTH.data.list() || [];
+      }
+    } catch (e) { /* registry not loaded yet */ }
+    return [];
+  }
+
+  /* The registry row that best plays `role`, or null. Prefers a 2026 site
+   * over an archive, except for the `oldweb` role where the whole point is
+   * that the page is ancient and still up. */
+  function siteFor(role) {
+    var rows = registryRows();
+    if (!rows.length) return null;
+
+    var byDomain = {}, i;
+    for (i = 0; i < rows.length; i++) {
+      byDomain[String(rows[i].domain).toLowerCase()] = rows[i];
+    }
+
+    var prefer = ROLE_PREFER[role] || [];
+    for (i = 0; i < prefer.length; i++) {
+      if (byDomain[prefer[i]]) return byDomain[prefer[i]];
+    }
+
+    var types = ROLE_TYPES[role] || [];
+    var wantOld = role === 'oldweb';
+    var best = null;
+    for (i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      var rank = types.indexOf(r.type);
+      if (rank === -1) continue;
+      var modern = String(r.era || '').indexOf('2026') !== -1;
+      var score = rank * 2 + ((modern !== wantOld) ? 0 : 1);
+      if (!best || score < best.score) best = { row: r, score: score };
+    }
+    return best ? best.row : null;
+  }
+
+  function domainFor(role) {
+    var row = siteFor(role);
+    return row ? row.domain : null;
+  }
+
+  /* A complete markup link, or '' when nothing can serve the role. Callers
+   * concatenate the result, so '' disappears cleanly. Pass slug === null for
+   * a link to the site's front page. */
+  function linkTo(role, slug, label) {
+    var row = siteFor(role);
+    if (!row) return '';
+    if (slug === null || slug === undefined) {
+      return '[url=synth://' + row.domain + '/]' + label + '[/url]';
+    }
+    var prefix = ROLE_PATH[row.type];
+    if (!prefix) return '';
+    if (prefix === '/') {
+      /* `page` sites address pages as /<pageId>, and we do not know theirs. */
+      return '[url=synth://' + row.domain + '/]' + label + '[/url]';
+    }
+    return '[url=synth://' + row.domain + prefix + encodeURIComponent(slug) +
+           ']' + label + '[/url]';
   }
 
   /* --- counters that move ----------------------------------------------
@@ -198,6 +334,10 @@
     clock: clock,
     longDate: longDate,
     stream: stream,
+    pool: resolvePool,
+    siteFor: siteFor,
+    domainFor: domainFor,
+    linkTo: linkTo,
     counter: counter,
     online: online,
     short: short,

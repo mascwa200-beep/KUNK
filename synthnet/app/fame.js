@@ -31,9 +31,9 @@
  * dmsFor() are pure functions of the profile. No clock-dependent randomness
  * except the deliberate ageing of direct messages.
  *
- * Domains referenced by world events. If the present-day sites get renamed,
- * retarget them here -- a bad target renders an in-skin 404 and nothing else
- * breaks.
+ * The sites that world events point at are resolved from the registry at call
+ * time rather than hardcoded, so renaming or removing a site cannot leave this
+ * file emitting links to somewhere that does not exist. See siteFor() below.
  */
 
 window.SYNTH = window.SYNTH || {};
@@ -43,13 +43,18 @@ window.SYNTH = window.SYNTH || {};
 
   var SYNTH = window.SYNTH;
 
-  var DOM = {
-    feed: 'shoutbox.live',
-    news: 'verityledger.com',
-    wiki: 'veritywiki.org',
-    video: 'clipvault.tv',
-    forum: 'gridfall.forums.net'
-  };
+  /* Where fame happens. Roles rather than domains, resolved against the
+   * registry when the link is built -- see SYNTH.live.siteFor(). These used
+   * to be five hardcoded domain strings, three of which were never in the
+   * registry, so every milestone emitted a dead link. */
+
+  function domainFor(role) {
+    return (SYNTH.live && SYNTH.live.domainFor) ? SYNTH.live.domainFor(role) : null;
+  }
+
+  function linkTo(role, slug, label) {
+    return (SYNTH.live && SYNTH.live.linkTo) ? SYNTH.live.linkTo(role, slug, label) : '';
+  }
 
   /* ----------------------------------------------------------------- knobs */
 
@@ -535,7 +540,7 @@ window.SYNTH = window.SYNTH || {};
         at: 100,
         id: 'fame-farms',
         kind: 'farm',
-        domain: DOM.feed,
+        domain: domainFor('feed'),
         title: 'The reply farms have found you',
         body:
           'Every post you make now gets three replies inside sixty seconds. ' +
@@ -549,14 +554,14 @@ window.SYNTH = window.SYNTH || {};
           'posting the phrase "interesting perspective" four hundred times a ' +
           'day since March. It has never posted anything else.\n\n' +
           'Nothing you can do about it. The block button works for about an ' +
-          'hour. See [url=synth://' + DOM.forum + '/t/engagement-farms]the ' +
-          'Gridfall thread about it[/url], which is itself now half farms.'
+          'hour. ' + (linkTo('forum', 'engagement-farms', 'The thread about it') ||
+            'The thread about it') + ' is itself now half farms.'
       },
       {
         at: 1000,
         id: 'fame-verify-offer',
         kind: 'offer',
-        domain: DOM.feed,
+        domain: domainFor('feed'),
         title: 'You are eligible for verification',
         body:
           '[b]Stand out. Get seen. Be trusted.[/b]\n\n' +
@@ -577,7 +582,7 @@ window.SYNTH = window.SYNTH || {};
         at: 10000,
         id: 'fame-hater',
         kind: 'hater',
-        domain: DOM.feed,
+        domain: domainFor('feed'),
         title: 'You have a dedicated hater now',
         body:
           'An account appeared this week. It exists to be about you.\n\n' +
@@ -596,7 +601,7 @@ window.SYNTH = window.SYNTH || {};
         at: 10000,
         id: 'fame-parody',
         kind: 'parody',
-        domain: DOM.feed,
+        domain: domainFor('feed'),
         title: 'And a parody account',
         body:
           '[b]@' + handle.replace(/[aeiou]/, 'e') + '[/b]\n' +
@@ -612,7 +617,7 @@ window.SYNTH = window.SYNTH || {};
         at: 50000,
         id: 'fame-ledger',
         kind: 'article',
-        domain: DOM.news,
+        domain: domainFor('news'),
         title: 'The Verity Ledger has written about you',
         body:
           '[b]Meet ' + wrong + "'s Own " + name + ': The Local Voice ' +
@@ -632,14 +637,13 @@ window.SYNTH = window.SYNTH || {};
           'There is a correction form. It is a mailto link to an address that ' +
           'bounces. The piece is already on three aggregators, each of which ' +
           'rewrote it slightly worse.\n\n' +
-          '[url=synth://' + DOM.news + '/community/' + handle + ']Read it on ' +
-          'the Ledger[/url]'
+          linkTo('news', 'community-' + handle, 'Read it on the Ledger')
       },
       {
         at: 250000,
         id: 'fame-wiki',
         kind: 'wiki',
-        domain: DOM.wiki,
+        domain: domainFor('wiki'),
         title: 'There is a wiki stub about you',
         body:
           '[b]' + name + '[/b]\n' +
@@ -667,14 +671,13 @@ window.SYNTH = window.SYNTH || {};
           '[i]18:41[/i][/quote]\n\n' +
           'The argument is four years old in tone and nine hours old in fact. ' +
           'Neither of them has asked you.\n\n' +
-          '[url=synth://' + DOM.wiki + '/wiki/' + handle + ']Read the ' +
-          'stub[/url]'
+          linkTo('wiki', handle, 'Read the stub')
       },
       {
         at: 1000000,
         id: 'fame-documentary',
         kind: 'documentary',
-        domain: DOM.video,
+        domain: domainFor('video'),
         title: 'Someone made a documentary about you',
         body:
           '[img:thumb:' + handle + '-doc]\n\n' +
@@ -703,7 +706,7 @@ window.SYNTH = window.SYNTH || {};
         at: 1000000,
         id: 'fame-impostors',
         kind: 'impostor',
-        domain: DOM.feed,
+        domain: domainFor('feed'),
         title: 'There are now several of you',
         body:
           'Eleven accounts are currently using your name and avatar:\n\n' +

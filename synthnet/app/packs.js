@@ -204,6 +204,12 @@
     /* engine.js caches the registry and each site; both must be dropped or an
      * imported pack would not appear until a restart. */
     if (SYNTH.data && SYNTH.data.invalidate) SYNTH.data.invalidate();
+    /* bots.js buckets socialAccounts by kind once and keeps the result, and
+     * that pool now includes pack-supplied accounts, so it is stale the
+     * moment a pack is imported, toggled or deleted. */
+    if (SYNTH.bots && typeof SYNTH.bots.invalidate === 'function') {
+      try { SYNTH.bots.invalidate(); } catch (e) { /* not fatal */ }
+    }
   }
 
   SYNTH.packs = {

@@ -19,12 +19,14 @@ on:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
+      - ".github/scripts/synthnet_link_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
+      - ".github/scripts/synthnet_link_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -68,7 +70,12 @@ jobs:
 
       - name: Enforce the size budget
         run: |
-          limit=409600
+          # 400 KB was set when the index held 252 documents, because search
+          # only ever built documents for seven of the eighteen site types.
+          # It now indexes all of them -- 492 documents at this commit, 216 KB
+          # -- and roughly triples again with the content this branch adds.
+          # Measured at this commit: 221,738 bytes.
+          limit=1048576
           actual=$(stat -c%s synthnet/net/search.json)
           echo "search.json: $actual bytes (limit $limit)"
           if [ "$actual" -gt "$limit" ]; then
@@ -132,6 +139,15 @@ jobs:
         # those fails silently with the page still rendering perfectly, which
         # is the failure mode that has already shipped twice here.
         run: python3 .github/scripts/synthnet_user_check.py --root synthnet
+
+      - name: Every link the app generates must resolve
+        # validate.py checks the synth:// links written inside site JSON. It
+        # cannot see the ones JavaScript builds at render time, and nothing
+        # did: app/fame.js hardcoded five domains, three of which had never
+        # been in the registry, so "gain followers and the world reacts"
+        # emitted a dead link at every milestone while CI stayed green.
+        # This reads the app's source AND drives it through every fame tier.
+        run: python3 .github/scripts/synthnet_link_check.py --root synthnet
 
       - name: Build the Android app
         # ubuntu-latest ships the Android SDK, and the app uses only framework

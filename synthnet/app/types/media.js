@@ -272,9 +272,9 @@
     var archived = arr(item.comments);
     var fresh = [];
     if (window.SYNTH.live && window.SYNTH.slop &&
-        arr(window.SYNTH.slop.mediaComments).length) {
+        window.SYNTH.live.pool('mediaComments').length) {
       var L = window.SYNTH.live;
-      fresh = L.stream('c:' + item.id, arr(window.SYNTH.slop.mediaComments), 6, 14)
+      fresh = L.stream('c:' + item.id, 'mediaComments', 6, 14)
         .map(function (sl) {
           return {
             author: sl.item.author,

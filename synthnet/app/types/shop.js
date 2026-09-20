@@ -222,9 +222,9 @@ window.SYNTH = window.SYNTH || {};
     for (i = 0; i < products.length; i++) {
       dealPool.push(products[i]);
     }
-    if (SYNTH.slop && SYNTH.slop.ads) {
+    if (SYNTH.live && SYNTH.live.pool) {
       /* fold ad copy in as phantom "deals of the minute" */
-      var extra = SYNTH.slop.ads;
+      var extra = SYNTH.live.pool('ads');
       for (i = 0; i < extra.length && i < 14; i++) {
         var txt = typeof extra[i] === 'string' ? extra[i] : (extra[i] && (extra[i].text || extra[i].title)) || '';
         if (!txt) { continue; }
@@ -488,8 +488,8 @@ window.SYNTH = window.SYNTH || {};
 
     /* reviews -- a stream, so fresh "reviews" keep arriving */
     var pool = (p.reviews || []).slice(0);
-    if (SYNTH.slop && SYNTH.slop.mediaComments) {
-      var mc = SYNTH.slop.mediaComments;
+    if (SYNTH.live && SYNTH.live.pool) {
+      var mc = SYNTH.live.pool('mediaComments');
       for (i = 0; i < mc.length && i < 24; i++) {
         var body = typeof mc[i] === 'string' ? mc[i] : (mc[i] && mc[i].body) || '';
         if (!body) { continue; }

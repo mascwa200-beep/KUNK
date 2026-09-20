@@ -95,7 +95,40 @@ PATH_PREFIXES = {
 # of these does not resolve and is not supposed to. Adding a real site on one
 # of these TLDs would be a mistake the type checker below would not catch, so
 # do not.
-DEAD_TLDS = (".top", ".click", ".win", ".example", ".finance", ".zip", ".lol")
+# Two groups, same behaviour, different intent -- keep them apart so whoever
+# writes the next pack picks the right one:
+#
+#   scams        a link that is a lie. It is supposed to 404, and a scam link
+#                that resolves is not a scam link.
+#   off-net      a business or office that exists in Verity County and whose
+#                website is simply not in this build. Most of the web is like
+#                this, and a county where every mentioned business has an
+#                archived site reads as a brochure rather than a place.
+#
+# Both dead-end on the engine's period-correct "cannot find server" page.
+DEAD_TLDS = (
+    # scams
+    ".top", ".click", ".win", ".example", ".finance", ".fin", ".zip",
+    ".lol", ".biz", ".hostline", ".vip", ".shop",
+    # off-net
+    ".synth",
+)
+
+# The other half of that rule. Real sites in this project live on these.
+#
+# Two lists rather than one, because one list only catches one kind of
+# mistake. With only DEAD_TLDS, a typo ("wiki.gridfall.nett") reads as an
+# unknown domain, which is correct -- but a *new* scam TLD invented by
+# whoever writes the next content pack reads as a broken link, and the fix
+# looks like "add it to the dead list", which is a rule nobody can infer.
+# With only a live list, the typo silently becomes a deliberate dead end.
+#
+# So: a TLD in DEAD_TLDS is meant to 404. A TLD in LIVE_TLDS must resolve to
+# a real site. A TLD in neither is an error that says to pick one, which is
+# the only version of this that a person can act on without reading the
+# source.
+LIVE_TLDS = (".org", ".net", ".com", ".tv", ".blog", ".social", ".store",
+             ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press")
 
 SCAN_SUFFIXES = {".html", ".htm", ".css", ".js", ".json", ".md", ".webmanifest", ".svg"}
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".idea", ".vscode"}
@@ -540,6 +573,220 @@ def check_page(report, where, data):
                     require(report, where, member, "domain", "str", mlabel)
 
 
+# --------------------------------------------------------------------------
+# shape checks for the 2026 types
+#
+# These eleven had no check at all, so a shop with no products, a thread whose
+# posts were strings, or a listing referencing a category that does not exist
+# all passed `validate.py --strict` cleanly and then rendered as a blank page
+# or threw in the console. That is the worst possible place for a content bug
+# to surface, and it is about to matter a great deal more, because everything
+# new gets written in these types.
+#
+# The seven original checks above are hand-rolled loops. Repeating that
+# eleven more times would be four hundred lines of the same three mistakes, so
+# the ones below are table-driven through _collect(). Same errors, same
+# labels, far less to get wrong.
+# --------------------------------------------------------------------------
+
+
+def _collect(report, where, container, key, label, spec, nested=None,
+             required=True):
+    """Validate an array of objects at container[key].
+
+    `spec` is a list of (field, kind) that every row must carry. A field
+    named "id" additionally has to be unique within the array. `nested` is
+    called as nested(report, where, row, row_label) for each valid row.
+
+    Returns (rows, ids).
+    """
+    if not required and (not isinstance(container, dict) or key not in container):
+        return [], set()
+    rows = require(report, where, container, key, "arr", label) or []
+    ids = set()
+    for i, row in enumerate(rows):
+        rl = "%s.%s[%d]" % (label, key, i)
+        if not isinstance(row, dict):
+            report.error(where, "%s: must be an object" % rl)
+            continue
+        for field, kind in spec:
+            value = require(report, where, row, field, kind, rl)
+            if field == "id" and isinstance(value, str):
+                if value in ids:
+                    report.error(where, "%s: duplicate id %r" % (rl, value))
+                ids.add(value)
+        if nested:
+            nested(report, where, row, rl)
+    return rows, ids
+
+
+def _refs(report, where, rows, label, key, field, known, what):
+    """Every rows[i][field] must be an id that exists in `known`."""
+    for i, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        value = row.get(field)
+        if isinstance(value, str) and value not in known:
+            report.error(where, "%s.%s[%d]: %s %r does not match any %s"
+                         % (label, key, i, field, value, what))
+
+
+def check_aggregator(report, where, data):
+    require(report, where, data, "siteName", "str", "data")
+    _, board_ids = _collect(report, where, data, "boards", "data",
+                            [("id", "str"), ("name", "str")])
+
+    def comments(report, where, row, label):
+        # Comment trees nest arbitrarily; recurse so a malformed reply six
+        # levels down is still reported with a usable path.
+        _collect(report, where, row, "comments", label,
+                 [("by", "str"), ("body", "str")],
+                 nested=comments, required=False)
+        _collect(report, where, row, "replies", label,
+                 [("by", "str"), ("body", "str")],
+                 nested=comments, required=False)
+
+    links, _ = _collect(report, where, data, "links", "data",
+                        [("id", "str"), ("title", "str"), ("by", "str")],
+                        nested=comments)
+    _refs(report, where, links, "data", "links", "boardId", board_ids, "board")
+
+
+def check_qa(report, where, data):
+    require(report, where, data, "siteName", "str", "data")
+    _, tag_ids = _collect(report, where, data, "tags", "data",
+                          [("id", "str"), ("name", "str")])
+
+    def answers(report, where, q, label):
+        _collect(report, where, q, "answers", label,
+                 [("by", "str"), ("body", "str")], required=False)
+        _collect(report, where, q, "comments", label,
+                 [("by", "str"), ("body", "str")], required=False)
+        # tagIds is a list of ids rather than a single ref, so _refs does not
+        # fit; check it here.
+        for tid in q.get("tagIds") or []:
+            if isinstance(tid, str) and tid not in tag_ids:
+                report.error(where, "%s: tagId %r does not match any tag"
+                             % (label, tid))
+
+    _collect(report, where, data, "questions", "data",
+             [("id", "str"), ("title", "str"), ("body", "str"), ("by", "str")],
+             nested=answers)
+
+
+def check_board(report, where, data):
+    require(report, where, data, "boardName", "str", "data")
+
+    def posts(report, where, thread, label):
+        rows, _ = _collect(report, where, thread, "posts", label,
+                           [("by", "str"), ("body", "str")], required=False)
+        if not rows:
+            report.warn(where, "%s: thread has no posts" % label)
+
+    _collect(report, where, data, "threads", "data",
+             [("id", "str"), ("subject", "str"), ("by", "str"), ("body", "str")],
+             nested=posts)
+
+
+def check_shop(report, where, data):
+    require(report, where, data, "storeName", "str", "data")
+    _, cat_ids = _collect(report, where, data, "categories", "data",
+                          [("id", "str"), ("name", "str")])
+
+    def reviews(report, where, product, label):
+        _collect(report, where, product, "reviews", label,
+                 [("by", "str"), ("body", "str")], required=False)
+
+    products, _ = _collect(report, where, data, "products", "data",
+                           [("id", "str"), ("name", "str"), ("blurb", "str")],
+                           nested=reviews)
+    _refs(report, where, products, "data", "products", "catId", cat_ids, "category")
+
+
+def check_market(report, where, data):
+    require(report, where, data, "siteName", "str", "data")
+    _, cat_ids = _collect(report, where, data, "cats", "data",
+                          [("id", "str"), ("name", "str")])
+    _, region_ids = _collect(report, where, data, "regions", "data",
+                             [("id", "str"), ("name", "str")])
+    listings, _ = _collect(report, where, data, "listings", "data",
+                           [("id", "str"), ("title", "str"), ("body", "str"),
+                            ("by", "str")])
+    _refs(report, where, listings, "data", "listings", "catId", cat_ids, "category")
+    _refs(report, where, listings, "data", "listings", "regionId", region_ids, "region")
+
+
+def check_assistant(report, where, data):
+    require(report, where, data, "productName", "str", "data")
+    # The disclaimers are not decoration. This thing exists to be confidently
+    # wrong, and a version of it with nothing hedging that is a different and
+    # worse joke.
+    disclaimers = require(report, where, data, "disclaimers", "arr", "data") or []
+    if not disclaimers:
+        report.warn(where, "data.disclaimers: an AI assistant with no disclaimers")
+    _collect(report, where, data, "canned", "data",
+             [("q", "str"), ("a", "str")])
+
+
+def check_mail(report, where, data):
+    require(report, where, data, "account", "str", "data")
+    _, folder_ids = _collect(report, where, data, "folders", "data",
+                             [("id", "str"), ("name", "str")])
+    messages, _ = _collect(report, where, data, "messages", "data",
+                           [("id", "str"), ("subject", "str"), ("from", "str"),
+                            ("body", "str")])
+    _refs(report, where, messages, "data", "messages", "folderId", folder_ids, "folder")
+
+
+def check_portal(report, where, data):
+    require(report, where, data, "agency", "str", "data")
+
+    def forms(report, where, service, label):
+        _collect(report, where, service, "forms", label,
+                 [("name", "str")], required=False)
+
+    _collect(report, where, data, "services", "data",
+             [("id", "str"), ("name", "str"), ("blurb", "str")],
+             nested=forms)
+
+
+def check_stream(report, where, data):
+    require(report, where, data, "siteName", "str", "data")
+    _, channel_ids = _collect(report, where, data, "channels", "data",
+                              [("id", "str"), ("name", "str")])
+
+    def comments(report, where, video, label):
+        _collect(report, where, video, "comments", label,
+                 [("by", "str"), ("body", "str")], required=False)
+
+    videos, _ = _collect(report, where, data, "videos", "data",
+                         [("id", "str"), ("title", "str"), ("description", "str")],
+                         nested=comments)
+    _refs(report, where, videos, "data", "videos", "channelId", channel_ids, "channel")
+
+
+def check_dash(report, where, data):
+    require(report, where, data, "siteName", "str", "data")
+    require(report, where, data, "place", "str", "data")
+    weather = require(report, where, data, "weather", "obj", "data")
+    if isinstance(weather, dict):
+        _collect(report, where, weather, "days", "data.weather",
+                 [("day", "str"), ("summary", "str")], required=False)
+    _collect(report, where, data, "transit", "data",
+             [("route", "str"), ("status", "str")], required=False)
+    _collect(report, where, data, "alerts", "data",
+             [("level", "str"), ("text", "str")], required=False)
+    _collect(report, where, data, "widgets", "data",
+             [("title", "str")], required=False)
+
+
+def check_control(report, where, data):
+    # control.verity.net is the in-app settings panel. Its renderer draws the
+    # whole thing from live state, so the site.json is a stub on purpose and
+    # there is nothing here to check beyond it being an object.
+    return
+
+
 SHAPE_CHECKS = {
     "forum": check_forum,
     "social": check_social,
@@ -548,6 +795,17 @@ SHAPE_CHECKS = {
     "wiki": check_wiki,
     "media": check_media,
     "page": check_page,
+    "aggregator": check_aggregator,
+    "qa": check_qa,
+    "board": check_board,
+    "shop": check_shop,
+    "market": check_market,
+    "assistant": check_assistant,
+    "mail": check_mail,
+    "portal": check_portal,
+    "stream": check_stream,
+    "dash": check_dash,
+    "control": check_control,
 }
 
 
@@ -713,6 +971,16 @@ def main(argv=None):
                 if target not in known:
                     if target.endswith(DEAD_TLDS):
                         continue   # a scam link, and it is supposed to 404
+                    if not target.endswith(LIVE_TLDS):
+                        report.error(
+                            where,
+                            "%s: synth://%s is on a TLD this project does not "
+                            "recognise. Put it on a real domain, or -- if it "
+                            "is meant to dead-end, which most scam links are "
+                            "-- use a TLD from DEAD_TLDS in tools/validate.py "
+                            "(or add yours there). -- %s"
+                            % (jsonpath, target, snippet))
+                        continue
                     report.error(where, "%s: synth://%s does not exist in this project -- %s"
                                  % (jsonpath, target, snippet))
                     continue

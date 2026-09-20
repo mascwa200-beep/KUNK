@@ -60,8 +60,10 @@
         <button type="button" class="synth-navbtn synth-navfwd" id="synth-forward" title="Forward" aria-label="Forward"></button>
       </div>
 
-      <button type="button" class="synth-navhome" id="synth-navhome" title="Home" aria-label="Home"
-              onclick="document.getElementById('synth-cmd-home').click();"></button>
+      <!-- No inline onclick forwarding to the command bar's Home button:
+           engine.js wires every Home control directly now, so forwarding
+           would fire the navigation twice. -->
+      <button type="button" class="synth-navhome" id="synth-navhome" title="Home" aria-label="Home"></button>
 
       <div class="synth-addrwrap">
         <span class="synth-addricon" aria-hidden="true"></span>

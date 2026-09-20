@@ -53,8 +53,9 @@
    * inventory looks like it was sold by different people, which it was. */
 
   function adFor(slot, seed) {
-    var pool = (SYNTH.slop.ads || []).filter(function (a) { return a.slot === slot; });
-    if (!pool.length) pool = SYNTH.slop.ads || [];
+    var all = live().pool('ads');
+    var pool = all.filter(function (a) { return a.slot === slot; });
+    if (!pool.length) pool = all;
     if (!pool.length) return null;
     return pool[live().hash32(slot + ':' + seed) % pool.length];
   }
@@ -112,9 +113,9 @@
    * the layout. */
 
   function ticker(seed, count) {
-    var items = SYNTH.slop.tickers || [];
-    if (!items.length) return null;
     var l = live();
+    var items = l.pool('tickers');
+    if (!items.length) return null;
     var chosen = l.sample(items, count || 8, 'ticker:' + Math.floor(l.minutesSinceEpoch() / 11));
     var strip = el('div', { 'class': 'lv-ticker' });
     var rail = el('div', { 'class': 'lv-ticker-rail' });

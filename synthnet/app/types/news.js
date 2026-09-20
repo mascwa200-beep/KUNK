@@ -153,10 +153,9 @@
      * app/live.js. */
     function liveWire(count) {
       if (!window.SYNTH.live || !window.SYNTH.slop) return null;
-      var pool = window.SYNTH.slop.newsItems || [];
-      if (!pool.length) return null;
       var L = window.SYNTH.live;
-      var rows = L.stream('wire:' + site.domain, pool, 7, count);
+      if (!L.pool('newsItems').length) return null;
+      var rows = L.stream('wire:' + site.domain, 'newsItems', 7, count);
       if (!rows.length) return null;
 
       var box = el('div', { class: 'news-wire' });

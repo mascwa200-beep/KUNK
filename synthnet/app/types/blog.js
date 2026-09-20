@@ -213,10 +213,9 @@
      * happens. */
     function aroundTheWeb() {
       if (!window.SYNTH.live || !window.SYNTH.slop) return null;
-      var pool = window.SYNTH.slop.blogPosts || [];
-      if (!pool.length) return null;
       var L = window.SYNTH.live;
-      var rows = L.stream('farm:' + site.domain, pool, 13, 6);
+      if (!L.pool('blogPosts').length) return null;
+      var rows = L.stream('farm:' + site.domain, 'blogPosts', 13, 6);
       if (!rows.length) return null;
 
       var list = el('ul', { class: 'blog-farm' });

@@ -925,7 +925,7 @@ window.SYNTH = window.SYNTH || {};
 
     var help = card('What the data has to look like');
     help.appendChild(el('p', { 'class': 'cp-prose' },
-      'Body text anywhere in the data understands exactly six things and nothing else: [b] [i] [u] [s] for emphasis, [quote=Name] for a quotation, [code] for fixed text, [list][*]item[/list] for a list, [url=synth://somewhere/]label[/url] for a link, and [img:avatar|thumb|photo|banner:seed] for a picture. A blank line starts a paragraph. Anything else you type prints as itself.'));
+      'Body text anywhere in the data understands exactly six things and nothing else: [b] [i] [u] [s] for emphasis, [quote=Name] for a quotation, [code] for fixed text, [list][*]item[/list] for a list, [url=synth://wiki.gridfall.net/]label[/url] for a link, and [img:avatar|thumb|photo|banner:seed] for a picture. A blank line starts a paragraph. Anything else you type prints as itself.'));
     help.appendChild(el('p', { 'class': 'cp-prose' },
       'There are no pictures in this app, only generated ones. The seed in an img tag decides what gets drawn; the same seed always draws the same thing.'));
     help.appendChild(el('p', { 'class': 'cp-prose' },

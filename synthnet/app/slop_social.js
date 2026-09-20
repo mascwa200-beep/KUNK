@@ -36,7 +36,7 @@ SYNTH.slop.socialPosts = [
   verified: true,
   likes: 9921,
   reposts: 3310,
-  body: "BREAKING: A substation fire in the Gridfall area in 2003 caused widespread outages, according to local reporting.\n\nThe Verity Ledger reported at the time that crews worked through the night. Officials said the situation was being monitored. More details as they develop.\n\nSource: [url=synth://verityledger.com/archive/2003/gridfall-substation]verityledger.com[/url]",
+  body: "BREAKING: A substation fire in the Gridfall area in 2003 caused widespread outages, according to local reporting.\n\nThe Verity Ledger reported at the time that crews worked through the night. Officials said the situation was being monitored. More details as they develop.\n\nSource: [url=synth://verityledger.com/article/fire-2003]verityledger.com[/url]",
   replies: [
     { author: "Verity County News Now", handle: "vcnewsnow", avatarSeed: "vcnn", kind: "bot",
       body: "DEVELOPING: A substation fire in the Gridfall area caused widespread outages, officials say. Crews worked through the night. We will continue to monitor." },
@@ -362,7 +362,7 @@ SYNTH.slop.socialPosts = [
   body: "A local diner known as the Blue Kestrel has closed, sources confirm.\n\nThe Verity Ledger previously described the diner as a fixture of the community. Residents expressed sadness. The building remains standing.\n\nWe reached out to the owner for comment and did not receive a response, because we did not reach out.",
   replies: [
     { author: "Gridfall Daily Digest", handle: "gridfall_digest", avatarSeed: "gdig", kind: "bot",
-      body: "CONFIRMED: A local diner has closed. Residents expressed sadness. The building remains standing. [url=synth://verityledger.com/local/blue-kestrel]via verityledger.com[/url]" },
+      body: "CONFIRMED: A local diner has closed. Residents expressed sadness. The building remains standing. [url=synth://verityledger.com/article/diner-closing]via verityledger.com[/url]" },
     { author: "Doug Ferreira", handle: "dferreira", avatarSeed: "dferr", kind: "human",
       body: "it closed in 2006" }
   ]
@@ -634,7 +634,7 @@ SYNTH.slop.socialPosts = [
   verified: true,
   likes: 18220,
   reposts: 5001,
-  body: "In 2003, a fire at a Gridfall substation left much of Verity County without power for several days.\n\nWhat happened next was not just recovery, but transformation.\n\nRead the full story here: [url=synth://verityledger.com/archive/2003/gridfall-substation]verityledger.com[/url] (we did not write this)",
+  body: "In 2003, a fire at a Gridfall substation left much of Verity County without power for several days.\n\nWhat happened next was not just recovery, but transformation.\n\nRead the full story here: [url=synth://verityledger.com/article/fire-2003]verityledger.com[/url] (we did not write this)",
   replies: [
     { author: "Verity History Daily", handle: "vhistory_daily", avatarSeed: "vhist", kind: "bot",
       body: "In 2003, a fire at a Gridfall substation left much of Verity County without power for several days." }
@@ -1305,7 +1305,7 @@ SYNTH.slop.socialPosts = [
     { author: "Verity County News Now", handle: "vcnewsnow", avatarSeed: "vcnn", kind: "bot",
       body: "Local journalism is not just important, but irreplaceable. 📰 Follow for daily Verity County updates." },
     { author: "Gridfall Daily Digest", handle: "gridfall_digest", avatarSeed: "gdig", kind: "bot",
-      body: "DEVELOPING: Residents expressed concern. Officials said the situation was being monitored. [url=synth://verityledger.com/local]via verityledger.com[/url]" },
+      body: "DEVELOPING: Residents expressed concern. Officials said the situation was being monitored. [url=synth://verityledger.com/section/community]via verityledger.com[/url]" },
     { author: "NewsWire Verity", handle: "newswire_verity", avatarSeed: "nwire", kind: "bot",
       body: "LOCAL: County officials confirmed this morning that the" }
   ]

@@ -1,5 +1,53 @@
 # Authoring a synthnet site
 
+## Read this first
+
+Three mistakes have each been made independently by more than one author on
+this project. They all produce a page that renders — badly — rather than an
+error, so nothing catches them but a person looking at the screen.
+
+**1. `ctx.markup` IS the parse function.** Not an object with a `.parse` on
+it.
+
+```js
+ctx.mount.appendChild(ctx.markup(post.body));   // yes
+ctx.markup.parse(post.body);                    // TypeError
+MK.parse(post.body);                            // there is no MK
+```
+
+Get this wrong and every body renders as raw `[b]like this[/b]`, or the page
+throws. Three separate renderers shipped with it wrong.
+
+**2. `SYNTH.live.stream()` returns wrappers, not items.**
+
+```js
+var rows = L.stream('wire:' + domain, 'newsItems', 7, 10);
+rows[0]            // -> { slot, at, item, seed }
+rows[0].item.body  // the content you wanted
+rows[0].body       // undefined -> "[object Object]" on screen
+```
+
+**3. Never right-shift a `hash32` value.** It returns a uint32, and `>>` is a
+*signed* shift, so `h >> 3` can be negative, `negative % array.length` is
+negative, and the lookup is `undefined`. Use `>>>`, or just `%`.
+
+```js
+pool[L.hash32(seed) % pool.length]        // yes
+pool[(L.hash32(seed) >> 3) % pool.length] // crashes on roughly half of seeds
+```
+
+One renderer shipped crashing on this and another had eight latent instances.
+
+Two more, less dramatic:
+
+- **Pass pool *names*, not arrays**, to `stream()` and `live.pool()`.
+  `L.stream(key, 'socialPosts', 4, 20)` picks up content packs;
+  `L.stream(key, SYNTH.slop.socialPosts, 4, 20)` does not.
+- **Renderers are synchronous.** The return value is ignored. Build DOM,
+  append to `ctx.mount`, call `ctx.title(str)`. You cannot `await` anything.
+
+---
+
 Everything in this network is one JSON file per site:
 
 ```
@@ -65,21 +113,42 @@ The folder may carry a trailing suffix after the domain part
 A skin is applied as `skin-<name>` on the mount, and every rule in
 `theme/skins/<type>.css` is scoped under that class, so skins cannot leak.
 
-| type | skins |
-|---|---|
-| `forum` | `phpbb-blue`, `ezboard-grey` |
-| `social` | `bluebird`, `myspace-black` |
-| `blog` | `movabletype-cream`, `kubrick-blue` |
-| `news` | `broadsheet`, `portal-red` |
-| `wiki` | `monobook` |
-| `media` | `tubeplayer` |
-| `page` | `geocities`, `tripod-tile`, `plain-white` |
+The skin must be legal for the type. `tools/validate.py` (`SKINS`) is the
+authority; this table mirrors it.
+
+| era | type | skins |
+|---|---|---|
+| archive | `forum` | `phpbb-blue`, `ezboard-grey` |
+| archive | `social` | `bluebird`, `myspace-black` |
+| archive | `blog` | `movabletype-cream`, `kubrick-blue` |
+| archive | `news` | `broadsheet`, `portal-red` |
+| archive | `wiki` | `monobook` |
+| archive | `media` | `tubeplayer` |
+| any | `page` | `geocities`, `tripod-tile`, `plain-white` |
+| 2026 | `aggregator` | `orange-news`, `round-red` |
+| 2026 | `qa` | `stack` |
+| 2026 | `board` | `yotsuba` |
+| 2026 | `shop` | `megastore` |
+| 2026 | `market` | `classified` |
+| 2026 | `assistant` | `chatbot` |
+| 2026 | `mail` | `webmail` |
+| 2026 | `portal` | `govsite` |
+| 2026 | `stream` | `tubemodern` |
+| 2026 | `dash` | `glassdash` |
+| — | `control` | `control` (the in-app panel; do not author one) |
+
+The "era" column is guidance, not enforcement — a 2026 `forum` is entirely
+legal and the project needs several. Adding a skin means adding it to `SKINS`
+in `tools/validate.py`, adding rules to `theme/skins/<type>.css` scoped under
+`.skin-<name>`, and (for a new type) a `<link>` in `index.html`.
 
 ---
 
 ## 3. Paths per type
 
-The renderers and your content must agree on these. Nothing else routes.
+The renderers and your content must agree on these. Nothing else routes, and
+a path no renderer serves is a link that 404s. `PATH_PREFIXES` in
+`tools/validate.py` is the authority.
 
 | type | paths |
 |---|---|
@@ -90,8 +159,24 @@ The renderers and your content must agree on these. Nothing else routes.
 | `wiki` | `/` `/wiki/<articleId>` `/category/<categoryId>` |
 | `media` | `/` `/watch/<itemId>` `/channel/<channelId>` |
 | `page` | `/` `/<pageId>` |
+| `aggregator` | `/` `/board/<boardId>` `/item/<linkId>` |
+| `qa` | `/` `/tag/<tagId>` `/q/<questionId>` |
+| `board` | `/` `/t/<threadId>` |
+| `shop` | `/` `/c/<catId>` `/p/<productId>` |
+| `market` | `/` `/c/<catId>` `/l/<listingId>` |
+| `assistant` | `/` `/chat` |
+| `mail` | `/` `/f/<folderId>` `/m/<messageId>` |
+| `portal` | `/` `/s/<serviceId>` |
+| `stream` | `/` `/c/<channelId>` `/w/<videoId>` |
+| `dash` | `/` only |
 
 For a `page` site, the page whose `id` is `index` is the root.
+
+Note that `/c/` means three different things depending on type (shop
+category, market category, stream channel) and `/board/` two (forum board,
+aggregator board). That is deliberate — each is what the real thing used —
+but it means a cross-site link's path only makes sense against the target's
+type. The validator warns on a mismatch.
 
 ---
 
@@ -261,6 +346,156 @@ period-accurate shell around the thumbnail.
 
 ---
 
+## 6b. `data` shapes — the 2026 types
+
+Same rules: exact key names, extra keys ignored, missing required keys fail
+validation. Every `*Id` cross-reference is checked and a dangling one is a
+hard error.
+
+`kind` appears throughout and drives the badge the live layer draws:
+`human` (no badge), `bot`, `spam`, `promoted`, `sponsored`. It is how the
+page shows you how much of itself is automated, which is the whole joke — a
+site where everything is `human` reads as a 2006 site with a 2026 skin.
+
+### aggregator
+
+```
+{ siteName, tagline,
+  boards:  [ { id, name } ],
+  links:   [ { id, boardId, title, url, domain, by, points, at, commentCount,
+               kind, comments: [ COMMENT ] } ] }
+
+COMMENT = { by, kind, body, points, replies: [ COMMENT ] }   // nests
+```
+
+`url`/`domain` are the *displayed* source. A link to a site in the project
+should use its real domain; a link to a scam should use a `DEAD_TLDS` domain
+(see §4) so it dead-ends on purpose.
+
+### qa
+
+```
+{ siteName,
+  tags:      [ { id, name, count } ],
+  questions: [ { id, tagIds: [], title, body, by, at, votes, views,
+                 closed, closedReason,
+                 answers:  [ { by, body, votes, accepted, at, kind } ],
+                 comments: [ { by, body } ] } ] }
+```
+
+`closedReason` is where the culture lives: "duplicate of a question from 2019
+that does not answer this", "too broad", "opinion-based". At most one answer
+per question should be `accepted`, and it does not have to be the top-voted
+one.
+
+### board
+
+```
+{ boardName,
+  rules:   [ "..." ],
+  threads: [ { id, subject, by, at, replyCount, imageSeed, body,
+               posts: [ { no, by, at, body, imageSeed, kind } ] } ] }
+```
+
+`no` is the global post number, which goes up forever and never resets —
+readers count on it. `by` is almost always `Anonymous`. Greentext is a `body`
+line starting with `>`.
+
+### shop
+
+```
+{ storeName,
+  categories: [ { id, name } ],
+  products:   [ { id, catId, name, price, was, rating, reviewCount, blurb,
+                  bullets: [], imgSeed, seller, sellerKind, prime,
+                  reviews: [ { by, stars, at, title, body, verified,
+                               kind } ] } ] }
+```
+
+`was` is the fake strikethrough price. `sellerKind` is `brand` | `reseller` |
+`dropship` | `unknown`. Reviews for the wrong product, five-star reviews of a
+different item entirely, and "verified purchase" on obvious spam are all
+correct and encouraged.
+
+### market
+
+```
+{ siteName,
+  regions:  [ { id, name } ],
+  cats:     [ { id, name } ],
+  listings: [ { id, catId, regionId, title, price, at, by, kind, body,
+                imgSeed, condition } ] }
+```
+
+`price` is a string, so `"$40 obo"`, `"free"` and `"make offer"` all work.
+
+### assistant
+
+```
+{ productName, tagline, model,
+  disclaimers: [ "..." ],
+  suggested:   [ "..." ],
+  canned:      [ { q, a } ] }
+```
+
+The `a` answers should be fluent, confident and wrong in a specific,
+checkable way — contradicting the wiki, inventing a date, citing a source
+that is itself generated. Never wrong in a way that reads as a joke; wrong in
+the way the real ones are.
+
+### mail
+
+```
+{ account,
+  folders:  [ { id, name, unread } ],
+  messages: [ { id, folderId, from, fromAddr, subject, at, body, read,
+                kind, attachments: [] } ] }
+```
+
+Mostly phishing, newsletters nobody signed up for, and three real messages.
+
+### portal
+
+```
+{ agency, motto,
+  notices:  [ "..." ],
+  services: [ { id, name, blurb, status, lastUpdated,
+                steps: [ "..." ],
+                forms: [ { name, note } ] } ] }
+```
+
+`status` is `online` | `degraded` | `offline` | `paper-only`. `lastUpdated`
+should frequently be years ago. `note` on a form is where "requires Internet
+Explorer 11" goes.
+
+### stream
+
+```
+{ siteName,
+  channels: [ { id, name, subs, avatarSeed, verified, kind, about } ],
+  videos:   [ { id, channelId, title, views, at, duration, description,
+                thumbSeed, kind, likes,
+                comments: [ { by, kind, body, likes, at } ] } ] }
+```
+
+There is no video. The player is a shell around the thumbnail, and the
+`description` carries the affiliate links and the timestamps nobody made.
+
+### dash
+
+```
+{ siteName, place,
+  weather: { nowC, feelsC, summary, days: [ { day, hi, lo, summary } ] },
+  transit: [ { route, status, note } ],
+  energy:  { price, unit, trend },
+  alerts:  [ { level, text } ],
+  widgets: [ { title, lines: [ "..." ] } ] }
+```
+
+Single page, no sub-paths. `alerts[].level` is `info` | `warn` | `severe`.
+
+---
+
 ## 7. A complete, working `page` site
 
 Copy this to `net/sites/kestrel-diner-verity-us/site.json`, change the domain,
@@ -344,17 +579,44 @@ pass, the tree is internally consistent and provably offline.
 
 ## 9. House style
 
-The setting is Verity County, a mid-sized inland region, 2001-2008. The
-recurring threads are the Gridfall substation fire of 2003, the Verity Rail
-branch-line closure, "the Signal on 62", and the Blue Kestrel.
+**`docs/WORLD.md` is the canon and it outranks this section.** Read it before
+writing anything. If a detail is not in it, invent something consistent with
+what is, then add it there.
 
-Write it mundane. Real forums are mostly people arguing about parking,
+The setting is Verity County, a mid-sized inland region. Sites dated
+1998–2008 are **immutable archive** — do not edit them, and do not write
+anything that contradicts them. Sites dated 2026 are the present. The gap
+between the two is the entire point of the project.
+
+The recurring threads are the Gridfall substation fire of 2003, the Verity
+Rail branch-line closure, "the Signal on 62", and the Blue Kestrel.
+
+**Write it mundane.** Real forums are mostly people arguing about parking,
 correcting each other's grammar, posting recipes nobody asked for, and
 misreading each other. Usernames should be inconsistent in style, timestamps
 should cluster at evenings and lunch hours, and at least one person in every
-thread should be wrong and unbothered about it. Nobody in 2004 knew what would
-matter later — do not let them.
+thread should be wrong and unbothered about it. Nobody in 2004 knew what
+would matter later — do not let them.
 
-Cross-link constantly. A forum thread cites the newspaper article, the wiki
-cites the forum thread, someone's blog complains about the wiki. That is what
-makes it read as a network rather than a folder.
+**In 2026, add the automation.** Most of what is posted is not posted by
+anyone. Engagement farms reply within sixty seconds and never about the post.
+Three aggregators rewrite the same wire story, each slightly worse. The
+assistant is confident and wrong. Brands reply to grief. People post about
+dead internet theory in a thread that is 60% bots, which is the only joke the
+setting makes on purpose. The Ledger runs on a content pipeline and its
+corrections page is longer than its front page.
+
+**Do not make it a horror setting.** Nothing supernatural has ever been
+confirmed in Verity County and nothing ever will be. It is a boring dystopia.
+The Signal on 62 has a mundane explanation nobody has bothered to write down.
+
+**Render decay, not just state.** Most of what makes a real internet feel
+real is the sediment: dead outbound links, a page that says it was last
+updated in 2019, a webring member whose domain lapsed, an embed that no
+longer renders, a correction appended in 2024 to an article from 2011, a
+"[removed]" where the good post was. Leave scars.
+
+**Cross-link constantly.** A forum thread cites the newspaper article, the
+wiki cites the forum thread, someone's blog complains about the wiki, and the
+content farm reposts the blog with a stolen photo. That is what makes it read
+as a network rather than a folder.

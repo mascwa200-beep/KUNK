@@ -313,15 +313,14 @@
      * stopped updating in 2005, and bots posting into it would be nonsense. */
     return ctx.site && ctx.site.domain === 'pulse.gridfall.net' &&
            window.SYNTH.live && window.SYNTH.slop &&
-           arr(window.SYNTH.slop.socialPosts).length > 0;
+           window.SYNTH.live.pool('socialPosts').length > 0;
   }
 
   function livePosts(ctx, count) {
     var L = window.SYNTH.live;
-    var pool = arr(window.SYNTH.slop.socialPosts);
     /* One arrival every 4 minutes. Busy enough that a refresh usually shows
      * something new, slow enough that it is not a slot machine. */
-    var slots = L.stream(ctx.site.domain, pool, 4, count);
+    var slots = L.stream(ctx.site.domain, 'socialPosts', 4, count);
     return slots.map(function (s, i) {
       var item = s.item;
       var r = L.rng(s.seed);
@@ -382,8 +381,17 @@
                         main.firstChild);
       var newCount = 0;
       var L = window.SYNTH.live;
+      /* "since you last looked" used to mean "in the last fifteen minutes",
+       * which is not what those words mean and was the same number whether
+       * you had been away ten seconds or ten days. engine.js now records the
+       * real last visit per domain on every navigation; fall back to the old
+       * window only when storage has nothing yet (a first visit). */
+      var since = (window.SYNTH.alerts && typeof window.SYNTH.alerts.lastVisit === 'function')
+        ? window.SYNTH.alerts.lastVisit(ctx.site.domain)
+        : 0;
+      if (!since) since = L.now() - 15 * 60000;
       for (var n = 0; n < live.length; n++) {
-        if (L.now() - live[n].liveAt < 15 * 60000) newCount++;
+        if (live[n].liveAt > since) newCount++;
       }
       if (newCount) {
         main.appendChild(el('div', { 'class': 'sn-newbar' },

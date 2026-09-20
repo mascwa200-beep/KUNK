@@ -145,12 +145,12 @@
 
   function liveOn(ctx) {
     return window.SYNTH.live && window.SYNTH.slop &&
-           arr(window.SYNTH.slop.forumTopics).length > 0;
+           window.SYNTH.live.pool('forumTopics').length > 0;
   }
 
   function liveTopics(ctx, count) {
     var L = window.SYNTH.live;
-    var all = arr(window.SYNTH.slop.forumTopics);
+    var all = L.pool('forumTopics');
 
     /* What arrives NOW is overwhelmingly automated -- that is the premise.
      * The human threads in the pool are the board's history, not its current

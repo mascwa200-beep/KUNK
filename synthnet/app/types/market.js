@@ -163,10 +163,12 @@ window.SYNTH = window.SYNTH || {};
 
   function slopListings(data) {
     var out = [];
-    if (!SYNTH.slop) { return out; }
+    if (!SYNTH.live || !SYNTH.live.pool) { return out; }
     var pools = [];
-    if (SYNTH.slop.ads) { pools.push(SYNTH.slop.ads); }
-    if (SYNTH.slop.forumTopics) { pools.push(SYNTH.slop.forumTopics); }
+    var adPool = SYNTH.live.pool('ads');
+    var topicPool = SYNTH.live.pool('forumTopics');
+    if (adPool.length) { pools.push(adPool); }
+    if (topicPool.length) { pools.push(topicPool); }
     var cats = data.cats || [];
     var regions = data.regions || [];
     var p, i;

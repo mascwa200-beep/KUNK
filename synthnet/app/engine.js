@@ -471,8 +471,12 @@ window.SYNTH = window.SYNTH || {};
     }
 
     tabs.forEach(function (t, i) {
+      /* 'synth-tabclose', not 'synth-tab-close': the stylesheet spells it
+       * without the second hyphen (theme/aero.css:739), and for a long time
+       * this emitted the other spelling, so every tab shipped an unstyled
+       * bare "x". */
       var closeBtn = tabs.length > 1 ? el('span', {
-        class: 'synth-tab-close',
+        class: 'synth-tabclose',
         title: 'Close Tab',
         onclick: function (ev) { ev.stopPropagation(); ev.preventDefault(); closeTab(i); }
       }, 'x') : null;
@@ -875,6 +879,92 @@ window.SYNTH = window.SYNTH || {};
       return joinText([row.description, row.uploader,
                        fieldsOf(kids, 'author'), fieldsOf(kids, 'body')]);
     }
+    /* --- the 2026 types ------------------------------------------------
+     *
+     * These must mirror the builders in tools/build.py. build.py decides
+     * what is *findable*; this decides what the result *says*. For a long
+     * time neither existed for any of these types, so eleven site types were
+     * unsearchable; adding only the build side would have made them findable
+     * with a blank snippet under every hit, which reads as a broken index. */
+
+    if (kind === 'item' && id) {                       /* aggregator */
+      row = findBy(data.links, 'id', id);
+      if (!row) return '';
+      var cbodies = [], cauthors = [];
+      (function walk(rows) {
+        for (var k = 0; k < (rows || []).length; k++) {
+          var c = rows[k];
+          if (!c || typeof c !== 'object') continue;
+          cbodies.push(c.body); cauthors.push(c.by);
+          walk(c.replies);
+        }
+      }(row.comments));
+      return joinText([row.by, row.domain, cauthors, cbodies]);
+    }
+    if (kind === 'q' && id) {                          /* qa */
+      row = findBy(data.questions, 'id', id);
+      if (!row) return '';
+      kids = row.answers || [];
+      var qcom = row.comments || [];
+      return joinText([row.body, row.by, row.closedReason,
+                       fieldsOf(kids, 'by'), fieldsOf(kids, 'body'),
+                       fieldsOf(qcom, 'by'), fieldsOf(qcom, 'body')]);
+    }
+    if (kind === 't' && id) {                          /* board */
+      row = findBy(data.threads, 'id', id);
+      if (!row) return '';
+      kids = row.posts || [];
+      return joinText([row.body, row.by,
+                       fieldsOf(kids, 'by'), fieldsOf(kids, 'body')]);
+    }
+    if (kind === 'p' && id) {                          /* shop product */
+      row = findBy(data.products, 'id', id);
+      if (!row) return '';
+      kids = row.reviews || [];
+      return joinText([row.blurb, row.bullets, row.seller,
+                       fieldsOf(kids, 'by'), fieldsOf(kids, 'title'),
+                       fieldsOf(kids, 'body')]);
+    }
+    if (kind === 'l' && id) {                          /* market listing */
+      row = findBy(data.listings, 'id', id);
+      return row ? joinText([row.body, row.by, row.price, row.condition]) : '';
+    }
+    if (kind === 'chat') {                             /* assistant */
+      kids = data.canned || [];
+      return joinText([data.tagline, data.model, data.disclaimers,
+                       data.suggested, fieldsOf(kids, 'q'), fieldsOf(kids, 'a')]);
+    }
+    if (kind === 'f' && id) {                          /* mail folder */
+      row = findBy(data.folders, 'id', id);
+      return row ? joinText([row.name]) : '';
+    }
+    if (kind === 'm' && id) {                          /* mail message */
+      row = findBy(data.messages, 'id', id);
+      return row ? joinText([row.body, row.from, row.fromAddr]) : '';
+    }
+    if (kind === 's' && id) {                          /* portal service */
+      row = findBy(data.services, 'id', id);
+      if (!row) return '';
+      kids = row.forms || [];
+      return joinText([row.blurb, row.status, row.steps,
+                       fieldsOf(kids, 'name'), fieldsOf(kids, 'note')]);
+    }
+    if (kind === 'w' && id) {                          /* stream video */
+      row = findBy(data.videos, 'id', id);
+      if (!row) return '';
+      kids = row.comments || [];
+      return joinText([row.description,
+                       fieldsOf(kids, 'by'), fieldsOf(kids, 'body')]);
+    }
+    if (kind === 'c' && id) {
+      /* /c/ is three different things: a stream channel, a shop category and
+       * a market category. Try each; only one will have the id. */
+      row = findBy(data.channels, 'id', id);
+      if (row) return joinText([row.about, row.name]);
+      row = findBy(data.categories, 'id', id) || findBy(data.cats, 'id', id);
+      return row ? joinText([row.name]) : '';
+    }
+
     /* "page" sites address their pages as /<pageId> */
     return pageText(data, seg.join('/'));
   }
@@ -1345,7 +1435,18 @@ window.SYNTH = window.SYNTH || {};
     ui.address = pick('#synth-address', '.synth-address');
     ui.back = pick('#synth-back', '.synth-back');
     ui.forward = pick('#synth-forward', '.synth-forward');
-    ui.home = pick('#synth-home', '.synth-home');
+    /* There are two Home buttons and neither is called '#synth-home'. The
+     * command bar has '#synth-cmd-home' and the nav row has '#synth-navhome'
+     * -- and the command bar is hidden below 700px (aero.css:1096), which
+     * makes the nav-row one *the* Home button on a phone. This used to look
+     * for a selector nothing matched, so ui.home was null, no listener was
+     * attached, and Home did nothing at all on the primary target. Collect
+     * every one that exists rather than picking one. */
+    ui.homes = [];
+    ['#synth-navhome', '#synth-cmd-home', '#synth-home', '.synth-home'].forEach(function (sel) {
+      var node = pick(sel);
+      if (node && ui.homes.indexOf(node) === -1) ui.homes.push(node);
+    });
     ui.go = pick('#synth-go', '.synth-go');
     ui.newtab = pick('#synth-newtab', '.synth-newtab');
     ui.searchBox = pick('#synth-search', '.synth-search');
@@ -1354,7 +1455,9 @@ window.SYNTH = window.SYNTH || {};
 
     if (ui.back) ui.back.addEventListener('click', function (e) { e.preventDefault(); back(); }, false);
     if (ui.forward) ui.forward.addEventListener('click', function (e) { e.preventDefault(); forward(); }, false);
-    if (ui.home) ui.home.addEventListener('click', function (e) { e.preventDefault(); navigate(HOME_URL); }, false);
+    ui.homes.forEach(function (node) {
+      node.addEventListener('click', function (e) { e.preventDefault(); navigate(HOME_URL); }, false);
+    });
     if (ui.go) ui.go.addEventListener('click', function (e) { e.preventDefault(); addressGo(); }, false);
     if (ui.newtab) ui.newtab.addEventListener('click', function (e) { e.preventDefault(); newTab(); }, false);
     if (ui.refresh) ui.refresh.addEventListener('click', function (e) { e.preventDefault(); refresh(); }, false);

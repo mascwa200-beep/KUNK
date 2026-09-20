@@ -51,6 +51,13 @@ window.SYNTH = window.SYNTH || {};
     return base;
   }
 
+  /* Built-in pool plus anything imported content packs add under the same
+   * name. Goes through live.js so packs reach every renderer at once. */
+  function poolOf(name) {
+    if (S.live && has(S.live.pool)) { return S.live.pool(name); }
+    return (S.slop && S.slop[name]) || [];
+  }
+
   function streamPool(key, pool, intervalMin, count) {
     if (S.live && has(S.live.stream)) { return S.live.stream(key, pool, intervalMin, count); }
     return (pool || []).slice(0, count);
@@ -238,7 +245,7 @@ window.SYNTH = window.SYNTH || {};
     box.appendChild(ul);
 
     /* incoming uploads keep arriving */
-    var pool = (S.slop && S.slop.mediaUploads) || [];
+    var pool = poolOf('mediaUploads');
     var incoming = streamPool(ctx.site.domain + ':uploads', pool, 11, 6);
     if (incoming && incoming.length) {
       box.appendChild(el('h3', { 'class': 'tm-uptitle tm-uptitle2' }, 'Just uploaded'));
@@ -420,7 +427,7 @@ window.SYNTH = window.SYNTH || {};
     var comments = v.comments || [];
     var live = streamPool(
       ctx.site.domain + ':cmt:' + v.id,
-      (S.slop && S.slop.mediaComments) || [],
+      poolOf('mediaComments'),
       7, 6
     );
     var csec = el('section', { 'class': 'tm-comments' });

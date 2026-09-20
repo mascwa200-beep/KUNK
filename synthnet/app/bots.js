@@ -967,8 +967,25 @@ window.SYNTH = window.SYNTH || {};
       bigN: commas(intBetween(r, 1200, 984000)),
       pct: String(intBetween(r, 11, 94)),
       year: String(intBetween(r, 1998, 2008)),
-      hour: String(intBetween(r, 1, 11))
+      hour: String(intBetween(r, 1, 11)),
+
+      /* Links that point at whatever site currently plays the role, rather
+       * than a domain typed into a template. Two of these templates used to
+       * name veritypulse.net and kestrelroad.geocit.net, neither of which has
+       * ever been in the registry, so those replies carried a dead link every
+       * time they fired. Resolving here means the bots can only link
+       * somewhere real -- and if the net has no such site the slot is empty
+       * and the sentence still reads. */
+      farmLink: roleLink('farm', 'the aggregation'),
+      oldwebLink: roleLink('oldweb', 'an old page that is somehow still up')
     };
+  }
+
+  function roleLink(role, label) {
+    if (SYNTH.live && typeof SYNTH.live.linkTo === 'function') {
+      try { return SYNTH.live.linkTo(role, null, label); } catch (e) {}
+    }
+    return '';
   }
 
   function fill(tpl, a, r) {
@@ -1310,7 +1327,7 @@ window.SYNTH = window.SYNTH || {};
       'Context: {subject} has appeared in {n} posts across Verity County this week. {emoji}',
       'UPDATE: An earlier version of this thread said {keyword}. It said {keyword}. No change.',
       'Our automated desk flagged this post about {subject} as locally relevant. {emoji}',
-      'STORY: {firstWords}... Read the full aggregation at [url=synth://veritypulse.net/wire]VerityPulse Wire[/url].',
+      'STORY: {firstWords}... Read {farmLink}, which is this post with the words moved.',
       'Verity County in numbers today: {n} posts about {topic}, {bigN} views, {n2} of them human.'
     ]
   };
@@ -1347,7 +1364,7 @@ window.SYNTH = window.SYNTH || {};
       'They closed the branch line, they closed the Blue Kestrel, and now we post about {subject} instead.',
       'I remember when {entity} had a webring. Genuinely. {emoji}',
       'Archive note: {subject} first appears in Verity County records in {year}. Context is mostly lost.',
-      'Old page, still up: [url=synth://kestrelroad.geocit.net/index.html]kestrelroad[/url]. It mentions {subject}.'
+      'Still up somewhere: {oldwebLink}. It mentions {subject}. Nobody has touched it since.'
     ]
   };
 
@@ -1422,7 +1439,9 @@ window.SYNTH = window.SYNTH || {};
     if (_poolCache) return _poolCache;
     var pools = { bot: [], spam: [], promoted: [], human: [] };
     try {
-      var accts = (SYNTH.slop && SYNTH.slop.socialAccounts) || [];
+      var accts = (SYNTH.live && SYNTH.live.pool)
+        ? SYNTH.live.pool('socialAccounts')
+        : ((SYNTH.slop && SYNTH.slop.socialAccounts) || []);
       var i, a;
       for (i = 0; i < accts.length && i < 500; i++) {
         a = accts[i];
@@ -1852,6 +1871,10 @@ window.SYNTH = window.SYNTH || {};
     analyse: analyse,
     reply: reply,
     repliesFor: repliesFor,
+
+    /* Drop the bucketed account pool. Called by packs.js whenever an import,
+     * toggle or delete changes what socialAccounts contains. */
+    invalidate: function () { _poolCache = null; },
 
     /* introspection, for the in-app editor */
     archetypes: function () { return ARCH_IDS.slice(0); },

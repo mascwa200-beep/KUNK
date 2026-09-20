@@ -335,6 +335,248 @@ def _docs_page(data):
     return docs
 
 
+# --------------------------------------------------------------------------
+# the 2026 types
+#
+# These eleven shipped with no builder at all, so every one of their sites
+# contributed exactly one search document -- its front page -- and nothing
+# else. 62chan.org holds 14 threads and 101 posts and was one result.
+# shopwell.store holds 30 products and 100+ reviews and was one result. The
+# whole network indexed 252 documents for roughly 900 content items, and
+# nothing was obviously wrong: search returned things, just never the thing
+# you wanted.
+#
+# Paths below must match PATH_PREFIXES in tools/validate.py and the routing in
+# each app/types/*.js. A path that no renderer serves is a search result that
+# 404s, which is worse than not being indexed.
+# --------------------------------------------------------------------------
+
+
+def _docs_aggregator(data):
+    docs = []
+    for board in data.get("boards") or []:
+        if isinstance(board, dict) and board.get("id"):
+            docs.append(_doc("/board/%s" % board["id"], board.get("name"), ""))
+    for link in data.get("links") or []:
+        if not isinstance(link, dict) or not link.get("id"):
+            continue
+        # Comment trees nest, and the replies are where the argument is.
+        bodies, authors = [], []
+
+        def walk(rows):
+            for row in rows or []:
+                if not isinstance(row, dict):
+                    continue
+                bodies.append(row.get("body"))
+                authors.append(row.get("by"))
+                walk(row.get("replies"))
+
+        walk(link.get("comments"))
+        docs.append(
+            _doc(
+                "/item/%s" % link["id"],
+                link.get("title"),
+                _txt(link.get("by"), link.get("domain"), authors, bodies),
+            )
+        )
+    return docs
+
+
+def _docs_qa(data):
+    docs = []
+    for tag in data.get("tags") or []:
+        if isinstance(tag, dict) and tag.get("id"):
+            docs.append(_doc("/tag/%s" % tag["id"], tag.get("name"), ""))
+    for q in data.get("questions") or []:
+        if not isinstance(q, dict) or not q.get("id"):
+            continue
+        answers = [a for a in (q.get("answers") or []) if isinstance(a, dict)]
+        comments = [c for c in (q.get("comments") or []) if isinstance(c, dict)]
+        docs.append(
+            _doc(
+                "/q/%s" % q["id"],
+                q.get("title"),
+                _txt(
+                    q.get("body"),
+                    q.get("by"),
+                    q.get("closedReason"),
+                    _people(answers, "by"),
+                    [a.get("body") for a in answers],
+                    _people(comments, "by"),
+                    [c.get("body") for c in comments],
+                ),
+            )
+        )
+    return docs
+
+
+def _docs_board(data):
+    docs = []
+    for thread in data.get("threads") or []:
+        if not isinstance(thread, dict) or not thread.get("id"):
+            continue
+        posts = [p for p in (thread.get("posts") or []) if isinstance(p, dict)]
+        docs.append(
+            _doc(
+                "/t/%s" % thread["id"],
+                thread.get("subject") or ("Thread %s" % thread["id"]),
+                _txt(
+                    thread.get("body"),
+                    thread.get("by"),
+                    _people(posts, "by"),
+                    [p.get("body") for p in posts],
+                ),
+            )
+        )
+    return docs
+
+
+def _docs_shop(data):
+    docs = []
+    for cat in data.get("categories") or []:
+        if isinstance(cat, dict) and cat.get("id"):
+            docs.append(_doc("/c/%s" % cat["id"], cat.get("name"), ""))
+    for p in data.get("products") or []:
+        if not isinstance(p, dict) or not p.get("id"):
+            continue
+        reviews = [r for r in (p.get("reviews") or []) if isinstance(r, dict)]
+        docs.append(
+            _doc(
+                "/p/%s" % p["id"],
+                p.get("name"),
+                _txt(
+                    p.get("blurb"),
+                    p.get("bullets"),
+                    p.get("seller"),
+                    _people(reviews, "by"),
+                    [r.get("title") for r in reviews],
+                    [r.get("body") for r in reviews],
+                ),
+            )
+        )
+    return docs
+
+
+def _docs_market(data):
+    docs = []
+    for cat in data.get("cats") or []:
+        if isinstance(cat, dict) and cat.get("id"):
+            docs.append(_doc("/c/%s" % cat["id"], cat.get("name"), ""))
+    for row in data.get("listings") or []:
+        if not isinstance(row, dict) or not row.get("id"):
+            continue
+        docs.append(
+            _doc(
+                "/l/%s" % row["id"],
+                row.get("title"),
+                _txt(row.get("body"), row.get("by"), row.get("price"),
+                     row.get("condition")),
+            )
+        )
+    return docs
+
+
+def _docs_assistant(data):
+    # One page, but the canned exchanges are the content and people will
+    # search for what it confidently got wrong.
+    canned = [c for c in (data.get("canned") or []) if isinstance(c, dict)]
+    text = _txt(
+        data.get("tagline"),
+        data.get("model"),
+        data.get("disclaimers"),
+        data.get("suggested"),
+        [c.get("q") for c in canned],
+        [c.get("a") for c in canned],
+    )
+    return [_doc("/chat", data.get("productName") or "Chat", text)] if text else []
+
+
+def _docs_mail(data):
+    docs = []
+    for folder in data.get("folders") or []:
+        if isinstance(folder, dict) and folder.get("id"):
+            docs.append(_doc("/f/%s" % folder["id"], folder.get("name"), ""))
+    for m in data.get("messages") or []:
+        if not isinstance(m, dict) or not m.get("id"):
+            continue
+        docs.append(
+            _doc(
+                "/m/%s" % m["id"],
+                m.get("subject"),
+                _txt(m.get("body"), m.get("from"), m.get("fromAddr")),
+            )
+        )
+    return docs
+
+
+def _docs_portal(data):
+    docs = []
+    for s in data.get("services") or []:
+        if not isinstance(s, dict) or not s.get("id"):
+            continue
+        forms = [f for f in (s.get("forms") or []) if isinstance(f, dict)]
+        docs.append(
+            _doc(
+                "/s/%s" % s["id"],
+                s.get("name"),
+                _txt(
+                    s.get("blurb"),
+                    s.get("status"),
+                    s.get("steps"),
+                    [f.get("name") for f in forms],
+                    [f.get("note") for f in forms],
+                ),
+            )
+        )
+    return docs
+
+
+def _docs_stream(data):
+    docs = []
+    for ch in data.get("channels") or []:
+        if isinstance(ch, dict) and ch.get("id"):
+            docs.append(_doc("/c/%s" % ch["id"], ch.get("name"), _txt(ch.get("about"))))
+    for v in data.get("videos") or []:
+        if not isinstance(v, dict) or not v.get("id"):
+            continue
+        comments = [c for c in (v.get("comments") or []) if isinstance(c, dict)]
+        docs.append(
+            _doc(
+                "/w/%s" % v["id"],
+                v.get("title"),
+                _txt(
+                    v.get("description"),
+                    _people(comments, "by"),
+                    [c.get("body") for c in comments],
+                ),
+            )
+        )
+    return docs
+
+
+def _docs_dash(data):
+    # A dash has no sub-paths (PATH_PREFIXES gives it an empty set), so
+    # everything it knows folds into the root document rather than becoming
+    # pages that would 404.
+    weather = data.get("weather") if isinstance(data.get("weather"), dict) else {}
+    days = [d for d in (weather.get("days") or []) if isinstance(d, dict)]
+    transit = [t for t in (data.get("transit") or []) if isinstance(t, dict)]
+    alerts = [a for a in (data.get("alerts") or []) if isinstance(a, dict)]
+    widgets = [w for w in (data.get("widgets") or []) if isinstance(w, dict)]
+    text = _txt(
+        data.get("place"),
+        weather.get("summary"),
+        [d.get("summary") for d in days],
+        [t.get("route") for t in transit],
+        [t.get("status") for t in transit],
+        [t.get("note") for t in transit],
+        [a.get("text") for a in alerts],
+        [w.get("title") for w in widgets],
+        [w.get("lines") for w in widgets],
+    )
+    return [_doc("/", data.get("siteName") or "Dashboard", text)] if text else []
+
+
 _DOC_BUILDERS = {
     "forum": _docs_forum,
     "social": _docs_social,
@@ -343,6 +585,17 @@ _DOC_BUILDERS = {
     "wiki": _docs_wiki,
     "media": _docs_media,
     "page": _docs_page,
+    "aggregator": _docs_aggregator,
+    "qa": _docs_qa,
+    "board": _docs_board,
+    "shop": _docs_shop,
+    "market": _docs_market,
+    "assistant": _docs_assistant,
+    "mail": _docs_mail,
+    "portal": _docs_portal,
+    "stream": _docs_stream,
+    "dash": _docs_dash,
+    # `control` is the in-app settings panel, not content. Deliberately absent.
 }
 
 
