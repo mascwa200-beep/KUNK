@@ -961,9 +961,61 @@ window.SYNTH = window.SYNTH || {};
       /* /c/ is three different things: a stream channel, a shop category and
        * a market category. Try each; only one will have the id. */
       row = findBy(data.channels, 'id', id);
-      if (row) return joinText([row.about, row.name]);
+      if (row) {
+        /* A stream channel has an `about`; a chat channel has a `topic` and
+         * the messages people actually typed. */
+        kids = row.messages || [];
+        return joinText([row.about, row.name, row.topic,
+                         fieldsOf(kids, 'by'), fieldsOf(kids, 'body')]);
+      }
       row = findBy(data.categories, 'id', id) || findBy(data.cats, 'id', id);
       return row ? joinText([row.name]) : '';
+    }
+
+    if (kind === 'd' && id) {                          /* wire dispatch */
+      row = findBy(data.dispatches, 'id', id);
+      return row ? joinText([row.lead, row.body, row.dateline, row.byline,
+                             row.keywords, row.corrects]) : '';
+    }
+    if (kind === 'cat' && id) {                        /* wire category */
+      row = findBy(data.categories, 'id', id);
+      return row ? joinText([row.name]) : '';
+    }
+    if (kind === 'i' && id) {                          /* newsletter issue */
+      row = findBy(data.issues, 'id', id);
+      if (!row) return '';
+      var heads = [], blurbs = [];
+      var secs = row.sections || [];
+      for (i = 0; i < secs.length; i++) {
+        if (!secs[i] || typeof secs[i] !== 'object') continue;
+        heads.push(secs[i].name);
+        var its = secs[i].items || [];
+        for (var q = 0; q < its.length; q++) {
+          if (!its[q]) continue;
+          heads.push(its[q].headline);
+          blurbs.push(its[q].blurb);
+        }
+      }
+      var sp = (row.sponsor && typeof row.sponsor === 'object') ? row.sponsor : {};
+      return joinText([row.intro, heads, blurbs, row.signoff, sp.name, sp.copy]);
+    }
+    if (kind === 'live' && id) {                       /* news liveblog */
+      row = findBy(data.live, 'id', id);
+      if (!row) return '';
+      kids = row.entries || [];
+      return joinText([row.standfirst, row.keyPoints,
+                       fieldsOf(kids, 'headline'), fieldsOf(kids, 'body'),
+                       fieldsOf(kids, 'by')]);
+    }
+    if (kind === 'factcheck' && id) {                  /* news fact check */
+      row = findBy(data.factchecks, 'id', id);
+      return row ? joinText([row.claim, row.claimBy, row.claimWhere,
+                             row.verdict, row.ruling, row.evidence,
+                             row.sources]) : '';
+    }
+    if (kind === 'corrections') {                      /* news corrections */
+      kids = data.corrections || [];
+      return joinText([fieldsOf(kids, 'text'), fieldsOf(kids, 'kind')]);
     }
 
     /* "page" sites address their pages as /<pageId> */

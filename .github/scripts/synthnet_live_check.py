@@ -250,6 +250,68 @@ def main():
             else:
                 notes.append("still deterministic: same instant, same page")
 
+            # --- 8b. the grammar has not collapsed -------------------------
+            #
+            # Most of what arrives on any feed is composed rather than
+            # written, and the failure mode is silent in both directions: a
+            # broken grammar falls back to the written pool and the page
+            # looks fine but wraps within ten minutes, and a working one can
+            # still hand you the same sentence twice on one screen, which is
+            # the single thing that gives a composed feed away.
+            #
+            # This already caught the grammar being switched off entirely:
+            # the "is this pool virtual" check duck-typed on .at(), and both
+            # arrays and strings have had .at() since ES2022, so it matched
+            # everything and the composed half never ran.
+            gram = page.evaluate("""() => {
+              if (!window.SYNTH || !SYNTH.grammar) return null;
+              const bodies = new Set();
+              for (let i = 0; i < 3000; i++) {
+                const made = SYNTH.grammar.make('socialPosts', i);
+                if (made && made.body) bodies.add(made.body);
+              }
+              SYNTH.live.setNow(Date.UTC(2026, 8, 22, 20, 0, 0));
+              const rows = SYNTH.live.stream('probe.social', 'socialPosts', 4, 14);
+              const pool = SYNTH.live.virtual(
+                SYNTH.live.pool('socialPosts'), 'socialPosts');
+              return {
+                distinct: bodies.size,
+                screen: rows.length,
+                screenDistinct: new Set(rows.map(r => (r.item.body || '').slice(0, 40))).size,
+                composed: rows.filter(r => r.item && r.item.tplId).length,
+                virtual: !!pool.isVirtual,
+                written: pool.written || 0,
+                length: pool.length || 0
+              };
+            }""")
+            if gram is None:
+                problems.append("the grammar did not load at all")
+            else:
+                if not gram["virtual"]:
+                    problems.append(
+                        "the feed pool is not virtual, so every post comes from "
+                        "the written pool and the feed wraps within ten minutes")
+                if gram["distinct"] < 1500:
+                    problems.append(
+                        f"only {gram['distinct']} distinct posts in 3000 draws; "
+                        f"the grammar has collapsed to a handful of templates")
+                if gram["composed"] < 4:
+                    problems.append(
+                        f"only {gram['composed']} of {gram['screen']} posts on a "
+                        f"screen were composed; the grammar is barely running")
+                if gram["screenDistinct"] < gram["screen"]:
+                    problems.append(
+                        f"{gram['screen'] - gram['screenDistinct']} repeated "
+                        f"opening(s) on one screen of {gram['screen']}. Two posts "
+                        f"that start the same way is what gives it away.")
+                if not problems:
+                    notes.append(
+                        f"grammar: {gram['distinct']} distinct in 3000 draws, "
+                        f"{gram['written']} written entries serving as "
+                        f"{gram['length']}, no repeats on a screen of "
+                        f"{gram['screen']}")
+            page.evaluate("SYNTH.live.setNow(null)")
+
             # --- 9. what happened while you were gone ----------------------
             #
             # The net moving is only half of it. The other half is being told

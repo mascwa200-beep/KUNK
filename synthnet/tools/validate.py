@@ -33,13 +33,19 @@ SITES_DIR = ROOT / "net" / "sites"
 TYPES = ("forum", "social", "blog", "news", "wiki", "media", "page",
          # The 2026 set. See docs/WORLD.md for what each one is in-world.
          "aggregator", "qa", "board", "shop", "market", "assistant",
-         "mail", "portal", "stream", "dash", "control")
+         "mail", "portal", "stream", "dash", "control",
+         # News that is not video: a wire service filing dispatches all day,
+         # and a newsletter. Plus the chat the forums migrated to, which is
+         # where the searchable archive went to die.
+         "wire", "newsletter", "chat")
 
 SKINS = {
     "forum": ("phpbb-blue", "ezboard-grey"),
     "social": ("bluebird", "myspace-black"),
     "blog": ("movabletype-cream", "kubrick-blue"),
-    "news": ("broadsheet", "portal-red"),
+    # pinkslime: the 2026 local layer. A locally-named site with no staff
+    # page, no phone number, "Metro Desk" bylines and 400 identical siblings.
+    "news": ("broadsheet", "portal-red", "pinkslime"),
     "wiki": ("monobook",),
     "media": ("tubeplayer",),
     "page": ("geocities", "tripod-tile", "plain-white"),
@@ -54,6 +60,9 @@ SKINS = {
     "stream": ("tubemodern",),
     "dash": ("glassdash",),
     "control": ("control",),
+    "wire": ("wireroom",),
+    "newsletter": ("inbox-letter",),
+    "chat": ("chatdark",),
 }
 
 ENVELOPE = ("schema", "domain", "title", "type", "era", "skin", "description",
@@ -66,7 +75,10 @@ PATH_PREFIXES = {
     "forum": {"board", "topic"},
     "social": {"user", "post"},
     "blog": {"post", "tag"},
-    "news": {"section", "article"},
+    # A news site is not only articles. Live coverage, fact checks and the
+    # corrections page are the shapes news actually takes that are not video,
+    # which was the explicit ask.
+    "news": {"section", "article", "live", "factcheck", "corrections"},
     "wiki": {"wiki", "category"},
     "media": {"watch", "channel"},
     "page": None,   # any single segment is a page id
@@ -81,6 +93,9 @@ PATH_PREFIXES = {
     "stream": {"w", "c"},
     "dash": set(),          # single page, no sub-paths
     "control": {"packs", "compose", "me", "storage"},
+    "wire": {"d", "cat"},
+    "newsletter": {"i"},
+    "chat": {"c"},
 }
 
 # Domains that are MEANT to dead-end.
@@ -396,6 +411,40 @@ def check_news(report, where, data):
             if aid in seen:
                 report.error(where, "%s: duplicate article id %r" % (label, aid))
             seen.add(aid)
+
+    # The modes that make a news site something other than a list of
+    # articles. All optional; a site with none is still valid.
+    def entries(report, where, live, label):
+        rows, _ = _collect(report, where, live, "entries", label,
+                           [("at", "any"), ("headline", "str"), ("body", "str")],
+                           required=False)
+        if not rows:
+            report.warn(where, "%s: a liveblog with no entries" % label)
+
+    _collect(report, where, data, "live", "data",
+             [("id", "str"), ("headline", "str")],
+             nested=entries, required=False)
+
+    checks, _ = _collect(report, where, data, "factchecks", "data",
+                         [("id", "str"), ("claim", "str"), ("verdict", "str"),
+                          ("ruling", "str")], required=False)
+    for i, row in enumerate(checks):
+        if not isinstance(row, dict):
+            continue
+        v = row.get("verdict")
+        if isinstance(v, str) and v not in VERDICTS:
+            report.error(where, "data.factchecks[%d]: verdict %r is not one of %s"
+                         % (i, v, sorted(VERDICTS)))
+
+    corrections, _ = _collect(report, where, data, "corrections", "data",
+                              [("text", "str")], required=False)
+    for i, row in enumerate(corrections):
+        if not isinstance(row, dict):
+            continue
+        k = row.get("kind")
+        if isinstance(k, str) and k not in CORRECTION_KINDS:
+            report.error(where, "data.corrections[%d]: kind %r is not one of %s"
+                         % (i, k, sorted(CORRECTION_KINDS)))
 
 
 def check_wiki(report, where, data):
@@ -780,6 +829,73 @@ def check_dash(report, where, data):
              [("title", "str")], required=False)
 
 
+
+VERDICTS = {"true", "mostly-true", "misleading", "missing-context",
+            "false", "unproven"}
+PRIORITIES = {"bulletin", "urgent", "routine"}
+CORRECTION_KINDS = {"correction", "clarification", "editors-note", "retraction"}
+
+
+def check_wire(report, where, data):
+    require(report, where, data, "agency", "str", "data")
+    _, cat_ids = _collect(report, where, data, "categories", "data",
+                          [("id", "str"), ("name", "str")])
+    rows, _ = _collect(report, where, data, "dispatches", "data",
+                       [("id", "str"), ("slug", "str"), ("dateline", "str"),
+                        ("priority", "str"), ("lead", "str"), ("body", "str")])
+    _refs(report, where, rows, "data", "dispatches", "catId", cat_ids, "category")
+    for i, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        p = row.get("priority")
+        if isinstance(p, str) and p not in PRIORITIES:
+            report.error(where, "data.dispatches[%d]: priority %r is not one of %s"
+                         % (i, p, sorted(PRIORITIES)))
+        slug = row.get("slug")
+        if isinstance(slug, str) and slug != slug.upper():
+            report.warn(where, "data.dispatches[%d]: a wire slug is upper case "
+                               "(%r)" % (i, slug))
+
+
+def check_newsletter(report, where, data):
+    require(report, where, data, "title", "str", "data")
+    require(report, where, data, "author", "str", "data")
+
+    def sections(report, where, issue, label):
+        rows, _ = _collect(report, where, issue, "sections", label,
+                           [("name", "str")], required=False)
+        for si, section in enumerate(rows):
+            if not isinstance(section, dict):
+                continue
+            _collect(report, where, section, "items",
+                     "%s.sections[%d]" % (label, si),
+                     [("headline", "str"), ("blurb", "str")], required=False)
+
+    _collect(report, where, data, "issues", "data",
+             [("id", "str"), ("date", "str"), ("subject", "str"),
+              ("intro", "str")],
+             nested=sections)
+
+
+def check_chat(report, where, data):
+    require(report, where, data, "serverName", "str", "data")
+
+    def messages(report, where, channel, label):
+        rows, _ = _collect(report, where, channel, "messages", label,
+                           [("by", "str"), ("body", "str")], required=False)
+        if not rows:
+            report.warn(where, "%s: a channel with nothing in it" % label)
+
+    rows, _ = _collect(report, where, data, "channels", "data",
+                       [("id", "str"), ("name", "str"), ("topic", "str")],
+                       nested=messages)
+    # The point of this type is that the archive is here and unsearchable
+    # from outside. A chat with no archive channel is just a chat.
+    if rows and not any(isinstance(r, dict) and r.get("kind") == "archive"
+                        for r in rows):
+        report.warn(where, "data.channels: no channel marked kind 'archive'. "
+                           "See docs/AUTHORING.md on what this type is for.")
+
 def check_control(report, where, data):
     # control.verity.net is the in-app settings panel. Its renderer draws the
     # whole thing from live state, so the site.json is a stub on purpose and
@@ -806,6 +922,9 @@ SHAPE_CHECKS = {
     "stream": check_stream,
     "dash": check_dash,
     "control": check_control,
+    "wire": check_wire,
+    "newsletter": check_newsletter,
+    "chat": check_chat,
 }
 
 

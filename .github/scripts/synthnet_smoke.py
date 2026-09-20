@@ -41,7 +41,8 @@ TYPE_PROBES = {
     "forum": ["/", "/board/{board}", "/topic/{topic}"],
     "social": ["/", "/post/{post}"],
     "blog": ["/", "/post/{post}"],
-    "news": ["/", "/article/{article}"],
+    "news": ["/", "/article/{article}", "/live/{live}", "/factcheck/{check}",
+             "/corrections"],
     "wiki": ["/", "/wiki/{article}"],
     "media": ["/", "/watch/{item}"],
     "page": ["/"],
@@ -59,6 +60,10 @@ TYPE_PROBES = {
     "stream": ["/", "/w/{video}"],
     "dash": ["/"],
     "control": ["/", "/packs", "/me", "/storage"],
+    # News that is not video, plus the chat the forums migrated to.
+    "wire": ["/", "/d/{dispatch}"],
+    "newsletter": ["/", "/i/{issue}"],
+    "chat": ["/", "/c/{channel}"],
 }
 
 
@@ -108,6 +113,11 @@ def probes_for(site: dict) -> list:
         "message": first_id(data, "messages"),
         "service": first_id(data, "services"),
         "video": first_id(data, "videos"),
+        "live": first_id(data, "live"),
+        "check": first_id(data, "factchecks"),
+        "dispatch": first_id(data, "dispatches"),
+        "issue": first_id(data, "issues"),
+        "channel": first_id(data, "channels"),
     }
     for cat in data.get("categories") or []:
         if isinstance(cat, dict):

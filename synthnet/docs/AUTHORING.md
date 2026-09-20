@@ -135,6 +135,10 @@ authority; this table mirrors it.
 | 2026 | `portal` | `govsite` |
 | 2026 | `stream` | `tubemodern` |
 | 2026 | `dash` | `glassdash` |
+| 2026 | `wire` | `wireroom` |
+| 2026 | `newsletter` | `inbox-letter` |
+| 2026 | `chat` | `chatdark` |
+| 2026 | `news` | also `pinkslime` (see below) |
 | — | `control` | `control` (the in-app panel; do not author one) |
 
 The "era" column is guidance, not enforcement — a 2026 `forum` is entirely
@@ -155,7 +159,7 @@ a path no renderer serves is a link that 404s. `PATH_PREFIXES` in
 | `forum` | `/` `/board/<boardId>` `/topic/<topicId>` |
 | `social` | `/` `/user/<handle>` `/post/<postId>` |
 | `blog` | `/` `/post/<postId>` `/tag/<tag>` |
-| `news` | `/` `/section/<sectionId>` `/article/<articleId>` |
+| `news` | `/` `/section/<sectionId>` `/article/<articleId>` `/live/<liveId>` `/factcheck/<checkId>` `/corrections` |
 | `wiki` | `/` `/wiki/<articleId>` `/category/<categoryId>` |
 | `media` | `/` `/watch/<itemId>` `/channel/<channelId>` |
 | `page` | `/` `/<pageId>` |
@@ -169,6 +173,9 @@ a path no renderer serves is a link that 404s. `PATH_PREFIXES` in
 | `portal` | `/` `/s/<serviceId>` |
 | `stream` | `/` `/c/<channelId>` `/w/<videoId>` |
 | `dash` | `/` only |
+| `wire` | `/` `/d/<dispatchId>` `/cat/<categoryId>` |
+| `newsletter` | `/` `/i/<issueId>` |
+| `chat` | `/` `/c/<channelId>` |
 
 For a `page` site, the page whose `id` is `index` is the root.
 
@@ -493,6 +500,109 @@ There is no video. The player is a shell around the thumbnail, and the
 ```
 
 Single page, no sub-paths. `alerts[].level` is `info` | `warn` | `severe`.
+
+---
+
+## 6c. News that is not video
+
+Video is the one shape this network deliberately does not lean on. Everything
+below is the other shapes news actually takes.
+
+### `news`, extended
+
+The `news` type gains three modes. They are optional: a site with none of
+them is still valid.
+
+```
+{ masthead, slogan,
+  sections:  [ { id, name } ],
+  articles:  [ { id, sectionId, headline, dek, byline, date, lead, body,
+                 featured, kicker, readMinutes, wire, updates: [UPDATE] } ],
+  live:      [ { id, headline, standfirst, open, startedAt, intervalMin,
+                 keyPoints: [ "..." ],
+                 entries: [ { at, label, headline, body, by } ] } ],
+  factchecks:[ { id, claim, claimBy, claimWhere, claimWhen, verdict,
+                 ruling, evidence: [ "..." ], sources: [ "..." ] } ],
+  corrections:[ { at, articleId, kind, text } ] }
+
+UPDATE = { at, text }
+```
+
+- `kicker` is the small category label above a headline ("COUNTY", "THE
+  BRANCH LINE"). `readMinutes` prints as "6 min read".
+- `wire: true` marks copy the outlet did not write. Two of the 2026 outlets
+  should be running the *same wire story* nearly verbatim, because that is
+  what actually happens.
+- **`updates` is the developing story.** Entries whose `at` has not arrived
+  yet are not shown, so the article is genuinely longer when you come back to
+  it. Give one three or four updates hours apart. The page shows `Published`
+  and `Updated` as separate lines when any update has landed.
+- **`live` is the liveblog.** Newest entry first, red LIVE dot, "Last updated
+  N minutes ago", and the pinned `keyPoints` box — which exists because
+  readers arrive *midstream*, not at the top. Set `open: false` and it becomes
+  the "… as it happened" artifact, which is the state most liveblogs spend
+  most of their life in. `intervalMin` lets entries keep arriving on the wall
+  clock while the story is open.
+- `verdict` is one of `true`, `mostly-true`, `misleading`, `missing-context`,
+  `false`, `unproven`. Some fact checks should themselves be wrong, and one
+  should check a claim the outlet's own article made.
+- `corrections` `kind` is `correction`, `clarification`, `editors-note` or
+  `retraction`. A believable outlet's corrections page is longer than anyone
+  would like.
+
+### `wire`
+
+A wire service: the best possible fit for a slot machine, because a dispatch
+every few minutes forever is exactly what one is.
+
+```
+{ agency, bureau,
+  categories: [ { id, name } ],
+  dispatches: [ { id, catId, slug, dateline, priority, byline, at,
+                  lead, body, keywords: [ "..." ], corrects, moved } ] }
+```
+
+- `slug` is the all-caps wire slug: `VERITY-SUBSTATION-2ND-LD-WRITETHRU`.
+- `dateline` is `GRIDFALL, Verity Co.` — the renderer adds the em dash.
+- `priority` is `bulletin`, `urgent` or `routine`. Bulletins are rare and
+  short.
+- `corrects` is a sentence: `"CORRECTS spelling of Pennock in 4th graf"`.
+- `moved` is a timestamp string for a story that has been refiled.
+- Inverted pyramid. One- and two-sentence paragraphs. Attribution in every
+  paragraph. Separate sections with `___` on its own line.
+
+### `newsletter`
+
+```
+{ title, author, cadence, subscribers, sponsorLabel,
+  issues: [ { id, number, date, subject, intro,
+              sections: [ { name, items: [ { headline, blurb, href } ] } ],
+              sponsor: { name, copy }, signoff } ] }
+```
+
+- `intro` is first person and slightly too long, because they all are.
+- Section names are playful: "The big one", "Quick hits", "One more thing".
+- `sponsor` renders as "Together with …". `href` may be a `synth://` URL or
+  omitted.
+- Every issue ends with an unsubscribe line the renderer adds. Do not write
+  one.
+
+### `chat`
+
+Where the forums went. The joke is structural rather than written: search
+finds the dead 2009 forum thread and not the answer, because the answer is in
+here and nothing can index it.
+
+```
+{ serverName, memberCount, onlineCount,
+  channels: [ { id, name, topic, kind,
+                messages: [ { by, at, body, kind, replyTo } ] } ] }
+```
+
+- `kind` on a channel is `text`, `announce` or `archive`.
+- At least one channel should be `archive`: read-only, and holding the answer
+  to something a forum thread elsewhere on the network asks and never gets.
+- Messages are short. People type three in a row instead of editing.
 
 ---
 

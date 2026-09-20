@@ -1,0 +1,552 @@
+/* synthnet :: wire skin  ---  .skin-wireroom
+ *
+ * A receiving terminal in a room nobody sits in any more: dark, monospaced,
+ * one line per dispatch, no pictures. Everything is scoped under
+ * .skin-wireroom so it cannot leak into the browser chrome or another skin.
+ *
+ * Contrast is measured against the page background #101214 (or the panel
+ * #171a1d where a block sits on one) and noted wherever a grey is chosen.
+ * Nothing here is below 6:1, which leaves room for the 12px rail text.
+ */
+
+.skin-wireroom {
+  background: #101214;
+  color: #e3e6e8;                      /* 14.97:1 on #101214 */
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas,
+               "Liberation Mono", "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.skin-wireroom .wr-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 24px;
+  background: #101214;
+}
+
+.skin-wireroom a { color: #8fd0ff; }   /* 11.29:1 on #101214 */
+
+.skin-wireroom img,
+.skin-wireroom svg { max-width: 100%; height: auto; }
+
+/* ---- shared bits ---- */
+
+.skin-wireroom .wr-key {
+  color: #f0c46a;                      /* 11.45:1 on #101214 */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+/* The grey everything secondary is set in: 7.33:1 on #101214, 6.82:1 on the
+ * #171a1d panels. Above AA for body text at every size used here. */
+.skin-wireroom .wr-dim { color: #9aa3ab; }
+
+.skin-wireroom .wr-num { color: #e3e6e8; font-variant-numeric: tabular-nums; }
+
+.skin-wireroom .wr-sep { color: #4d555c; }
+
+.skin-wireroom .wr-ago {
+  color: #9aa3ab;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* ---- header ---- */
+
+.skin-wireroom .wr-head {
+  border-bottom: 2px solid #2a2f34;
+  background: #171a1d;
+  padding: 10px 12px 8px;
+}
+
+.skin-wireroom .wr-head-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.skin-wireroom .wr-brand {
+  color: #e3e6e8;                      /* 13.94:1 on #171a1d */
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-brand:hover,
+.skin-wireroom .wr-brand:focus { color: #f0c46a; text-decoration: underline; }
+
+.skin-wireroom .wr-bureau {
+  color: #9aa3ab;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.skin-wireroom .wr-head-stat {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px 7px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #9aa3ab;
+}
+
+/* ---- category rail ---- */
+
+.skin-wireroom .wr-cats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 8px;
+  padding: 7px 12px;
+  border-bottom: 1px solid #2a2f34;
+  background: #14171a;
+}
+
+.skin-wireroom .wr-cat {
+  color: #9aa3ab;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  border: 1px solid #2f353b;
+  border-radius: 2px;
+  padding: 1px 6px;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-cat:hover,
+.skin-wireroom .wr-cat:focus {
+  color: #101214;
+  background: #f0c46a;                 /* 11.45:1, inverted */
+  border-color: #f0c46a;
+}
+
+.skin-wireroom .wr-cat.is-on {
+  color: #101214;
+  background: #c9d1d9;                 /* 12.16:1, inverted */
+  border-color: #c9d1d9;
+}
+
+.skin-wireroom .wr-cat-sm { font-size: 10px; }
+
+/* ---- main ---- */
+
+.skin-wireroom .wr-main { padding: 12px 12px 0; }
+
+.skin-wireroom .wr-h1 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0 0 6px;
+  color: #e3e6e8;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-h2 {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: #f0c46a;
+  margin: 18px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #2a2f34;
+}
+
+.skin-wireroom .wr-railhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #2a2f34;
+  font-size: 11px;
+}
+
+/* ---- the bulletin banner ---- */
+
+.skin-wireroom .wr-bulletin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  background: #8c1c13;
+  color: #ffe9e6;                      /* 7.88:1 on #8c1c13 */
+  border: 1px solid #b4483c;
+  border-radius: 2px;
+  padding: 6px 9px;
+  margin: 0 0 12px;
+}
+
+.skin-wireroom .wr-bulletin-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+}
+
+.skin-wireroom .wr-bulletin-text {
+  flex: 1 1 200px;
+  min-width: 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-bulletin-link { color: #ffe9e6; }
+
+.skin-wireroom .wr-bulletin .wr-ago { color: #ffd9d6; } /* 7.05:1 on #8c1c13 */
+
+/* ---- the rail ---- */
+
+.skin-wireroom .wr-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skin-wireroom .wr-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px 8px;
+  padding: 5px 2px;
+  border-bottom: 1px solid #1e2226;
+  font-size: 12px;
+}
+
+.skin-wireroom .wr-row:hover { background: #171a1d; }
+
+.skin-wireroom .wr-row-live { border-left: 2px solid #3d4a3f; padding-left: 6px; }
+
+.skin-wireroom .wr-row-bul { background: #1d1415; }
+
+.skin-wireroom .wr-rail-tight .wr-row { padding-top: 3px; padding-bottom: 3px; }
+
+.skin-wireroom .wr-time {
+  flex: 0 0 auto;
+  width: 38px;
+  color: #f0c46a;
+  font-variant-numeric: tabular-nums;
+}
+
+.skin-wireroom .wr-slug {
+  flex: 0 1 auto;
+  min-width: 0;
+  color: #8fd0ff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-slug:hover,
+.skin-wireroom .wr-slug:focus { color: #f0c46a; text-decoration: underline; }
+
+/* Live copy has no file page, so its slug is not a link and must not look
+ * like a dead one. */
+.skin-wireroom .wr-slug-flat { color: #c9d1d9; font-weight: 700; } /* 12.16:1 */
+
+.skin-wireroom .wr-line {
+  flex: 1 1 220px;
+  min-width: 0;
+  color: #9aa3ab;
+  overflow-wrap: anywhere;
+}
+
+/* ---- priority chips ---- */
+
+.skin-wireroom .wr-chip {
+  flex: 0 0 auto;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 15px;
+  padding: 0 5px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.skin-wireroom .wr-chip-bulletin {
+  background: #8c1c13;
+  color: #ffe9e6;                      /* 7.88:1 */
+  border: 1px solid #b4483c;
+}
+
+.skin-wireroom .wr-chip-urgent {
+  background: #6b4a05;
+  color: #ffe6b3;                      /* 6.61:1 */
+  border: 1px solid #8f6a17;
+}
+
+.skin-wireroom .wr-chip-routine {
+  background: #262b30;
+  color: #b9c0c7;                      /* 7.77:1 */
+  border: 1px solid #383f45;
+}
+
+.skin-wireroom .wr-corr {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f0c46a;
+  border: 1px dashed #8f6a17;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+/* ---- one dispatch ---- */
+
+.skin-wireroom .wr-dispatch {
+  border: 1px solid #2a2f34;
+  background: transparent;             /* the terminal is the page */
+  padding: 12px 12px 14px;
+  margin-bottom: 4px;
+}
+
+.skin-wireroom .wr-slugline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2a2f34;
+}
+
+.skin-wireroom .wr-h1-slug {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+.skin-wireroom .wr-moved {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  color: #101214;
+  background: #9aa3ab;                 /* 7.33:1, inverted stamp */
+  border-radius: 2px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+.skin-wireroom .wr-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin: 8px 0 12px;
+  font-size: 11px;
+  color: #9aa3ab;
+}
+
+.skin-wireroom .wr-corrects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  border: 1px solid #b4483c;
+  background: #241416;
+  color: #f2b8b0;                      /* 10.96:1 on #101214, 9.4:1 here */
+  padding: 7px 9px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-corrects-tag {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.skin-wireroom .wr-lead,
+.skin-wireroom .wr-copy p {
+  margin: 0 0 11px;
+  max-width: 68ch;
+  color: #e3e6e8;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-lead { font-size: 13px; }
+
+.skin-wireroom .wr-dateline {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #f0c46a;
+}
+
+.skin-wireroom .wr-byline {
+  margin: 0 0 12px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9aa3ab;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-copy a { color: #8fd0ff; }
+
+.skin-wireroom .wr-copy blockquote {
+  margin: 0 0 11px;
+  padding: 2px 0 2px 10px;
+  border-left: 2px solid #3d4a3f;
+  color: #b9c0c7;                      /* 9.5:1 on #101214 */
+}
+
+.skin-wireroom .wr-copy ul,
+.skin-wireroom .wr-copy ol { margin: 0 0 11px; padding-left: 20px; }
+
+.skin-wireroom .wr-copy code {
+  background: #1b1f23;
+  border: 1px solid #2f353b;
+  padding: 0 3px;
+  color: #e3e6e8;                      /* 13.22:1 on #1b1f23 */
+}
+
+/* The ___ the copy carries on a line of its own, drawn as the break it is. */
+.skin-wireroom .wr-sep-rule {
+  border: 0;
+  border-top: 1px solid #3a4148;
+  max-width: 160px;
+  margin: 4px 0 14px;
+}
+
+.skin-wireroom .wr-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #2a2f34;
+}
+
+.skin-wireroom .wr-kw {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: #b9c0c7;                      /* 9.5:1 on #101214 */
+  background: #1b1f23;
+  border: 1px solid #2f353b;
+  border-radius: 2px;
+  padding: 1px 5px;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-end {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin-top: 14px;
+  font-size: 11px;
+}
+
+.skin-wireroom .wr-end-mark {
+  color: #e3e6e8;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+}
+
+.skin-wireroom .wr-end .wr-dim { overflow-wrap: anywhere; }
+
+/* ---- carried by / earlier ---- */
+
+.skin-wireroom .wr-carry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skin-wireroom .wr-carry-row {
+  padding: 3px 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.skin-wireroom .wr-carry-link { color: #8fd0ff; text-decoration: none; }
+
+.skin-wireroom .wr-carry-link:hover,
+.skin-wireroom .wr-carry-link:focus { text-decoration: underline; }
+
+.skin-wireroom .wr-carry-note,
+.skin-wireroom .wr-catnote {
+  margin: 8px 0 0;
+  font-size: 11px;
+  color: #9aa3ab;
+  max-width: 68ch;
+}
+
+.skin-wireroom .wr-catnote { margin: 0 0 12px; }
+
+/* ---- paid slot, notices, footer ---- */
+
+.skin-wireroom .wr-paid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+  margin: 16px 0 0;
+  padding: 8px;
+  border: 1px dashed #3a4148;
+  font-size: 11px;
+}
+
+.skin-wireroom .wr-paid .lv-ad { max-width: 100%; }
+
+.skin-wireroom .wr-empty,
+.skin-wireroom .wr-404 {
+  border: 1px solid #2a2f34;
+  background: #171a1d;
+  padding: 16px 14px;
+  margin: 12px 0 0;
+  color: #e3e6e8;                      /* 13.94:1 on #171a1d */
+  max-width: 68ch;
+}
+
+.skin-wireroom .wr-404 p {
+  margin: 0 0 12px;
+  color: #9aa3ab;                      /* 6.82:1 on #171a1d */
+}
+
+.skin-wireroom .wr-back { margin: 16px 0 0; font-size: 12px; }
+
+.skin-wireroom .wr-backlink { color: #8fd0ff; text-decoration: none; }
+
+.skin-wireroom .wr-backlink:hover,
+.skin-wireroom .wr-backlink:focus { text-decoration: underline; }
+
+.skin-wireroom .wr-foot {
+  margin-top: 20px;
+  padding: 12px;
+  border-top: 2px solid #2a2f34;
+  background: #171a1d;
+}
+
+.skin-wireroom .wr-foot-line {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #b9c0c7;                      /* 8.8:1 on #171a1d */
+  max-width: 76ch;
+}
+
+.skin-wireroom .wr-foot-line:last-child { margin-bottom: 0; }
+
+/* ---- phone ----
+ * Under 560px the lead drops to its own line under the slug, so the rail stays
+ * a rail instead of becoming four words per row. */
+
+@media (max-width: 560px) {
+  .skin-wireroom .wr-line { flex: 1 1 100%; }
+  .skin-wireroom .wr-row { padding: 6px 2px; }
+  .skin-wireroom .wr-main { padding: 10px 10px 0; }
+  .skin-wireroom .wr-dispatch { padding: 10px; }
+  .skin-wireroom .wr-bulletin-text { flex: 1 1 100%; }
+}

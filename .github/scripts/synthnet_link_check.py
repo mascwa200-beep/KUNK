@@ -41,7 +41,7 @@ PATH_PREFIXES = {
     "forum": {"board", "topic"},
     "social": {"user", "post"},
     "blog": {"post", "tag"},
-    "news": {"section", "article"},
+    "news": {"section", "article", "live", "factcheck", "corrections"},
     "wiki": {"wiki", "category"},
     "media": {"watch", "channel"},
     "page": None,
@@ -56,6 +56,9 @@ PATH_PREFIXES = {
     "stream": {"w", "c"},
     "dash": set(),
     "control": {"packs", "compose", "me", "storage"},
+    "wire": {"d", "cat"},
+    "newsletter": {"i"},
+    "chat": {"c"},
 }
 
 DEAD_TLDS = (
@@ -132,6 +135,8 @@ def load_sites(root):
         elif t == "news":
             collect("article", data.get("articles"))
             collect("section", data.get("sections"))
+            collect("live", data.get("live"))
+            collect("factcheck", data.get("factchecks"))
         elif t == "wiki":
             collect("wiki", data.get("articles"))
             collect("category", data.get("categories"))
@@ -159,6 +164,13 @@ def load_sites(root):
             collect("s", data.get("services"))
         elif t == "stream":
             collect("w", data.get("videos"))
+            collect("c", data.get("channels"))
+        elif t == "wire":
+            collect("d", data.get("dispatches"))
+            collect("cat", data.get("categories"))
+        elif t == "newsletter":
+            collect("i", data.get("issues"))
+        elif t == "chat":
             collect("c", data.get("channels"))
         elif t == "page":
             collect("", data.get("pages"))

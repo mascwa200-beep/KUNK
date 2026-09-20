@@ -239,6 +239,40 @@ def _docs_news(data):
                 _txt(art.get("dek"), art.get("byline"), art.get("lead"), art.get("body")),
             )
         )
+
+    for live in data.get("live") or []:
+        if not isinstance(live, dict) or not live.get("id"):
+            continue
+        entries = [e for e in (live.get("entries") or []) if isinstance(e, dict)]
+        docs.append(
+            _doc(
+                "/live/%s" % live["id"],
+                live.get("headline"),
+                _txt(live.get("standfirst"), live.get("keyPoints"),
+                     _people(entries, "by"),
+                     [e.get("headline") for e in entries],
+                     [e.get("body") for e in entries]),
+            )
+        )
+    for check in data.get("factchecks") or []:
+        if not isinstance(check, dict) or not check.get("id"):
+            continue
+        docs.append(
+            _doc(
+                "/factcheck/%s" % check["id"],
+                check.get("claim"),
+                _txt(check.get("claimBy"), check.get("claimWhere"),
+                     check.get("verdict"), check.get("ruling"),
+                     check.get("evidence"), check.get("sources")),
+            )
+        )
+    rows = [c for c in (data.get("corrections") or []) if isinstance(c, dict)]
+    if rows:
+        docs.append(
+            _doc("/corrections", "Corrections and clarifications",
+                 _txt([c.get("text") for c in rows],
+                      [c.get("kind") for c in rows]))
+        )
     return docs
 
 
@@ -577,6 +611,69 @@ def _docs_dash(data):
     return [_doc("/", data.get("siteName") or "Dashboard", text)] if text else []
 
 
+
+def _docs_wire(data):
+    docs = []
+    for cat in data.get("categories") or []:
+        if isinstance(cat, dict) and cat.get("id"):
+            docs.append(_doc("/cat/%s" % cat["id"], cat.get("name"), ""))
+    for d in data.get("dispatches") or []:
+        if not isinstance(d, dict) or not d.get("id"):
+            continue
+        docs.append(
+            _doc(
+                "/d/%s" % d["id"],
+                d.get("slug") or d.get("lead"),
+                _txt(d.get("lead"), d.get("body"), d.get("dateline"),
+                     d.get("byline"), d.get("keywords"), d.get("corrects")),
+            )
+        )
+    return docs
+
+
+def _docs_newsletter(data):
+    docs = []
+    for issue in data.get("issues") or []:
+        if not isinstance(issue, dict) or not issue.get("id"):
+            continue
+        heads, blurbs = [], []
+        for section in issue.get("sections") or []:
+            if not isinstance(section, dict):
+                continue
+            heads.append(section.get("name"))
+            for item in section.get("items") or []:
+                if isinstance(item, dict):
+                    heads.append(item.get("headline"))
+                    blurbs.append(item.get("blurb"))
+        sponsor = issue.get("sponsor") if isinstance(issue.get("sponsor"), dict) else {}
+        docs.append(
+            _doc(
+                "/i/%s" % issue["id"],
+                issue.get("subject") or ("Issue %s" % issue.get("number", "")),
+                _txt(issue.get("intro"), heads, blurbs, issue.get("signoff"),
+                     sponsor.get("name"), sponsor.get("copy")),
+            )
+        )
+    return docs
+
+
+def _docs_chat(data):
+    docs = []
+    for channel in data.get("channels") or []:
+        if not isinstance(channel, dict) or not channel.get("id"):
+            continue
+        messages = [m for m in (channel.get("messages") or []) if isinstance(m, dict)]
+        docs.append(
+            _doc(
+                "/c/%s" % channel["id"],
+                "#" + str(channel.get("name") or channel["id"]),
+                _txt(channel.get("topic"), _people(messages, "by"),
+                     [m.get("body") for m in messages]),
+            )
+        )
+    return docs
+
+
 _DOC_BUILDERS = {
     "forum": _docs_forum,
     "social": _docs_social,
@@ -595,6 +692,9 @@ _DOC_BUILDERS = {
     "portal": _docs_portal,
     "stream": _docs_stream,
     "dash": _docs_dash,
+    "wire": _docs_wire,
+    "newsletter": _docs_newsletter,
+    "chat": _docs_chat,
     # `control` is the in-app settings panel, not content. Deliberately absent.
 }
 

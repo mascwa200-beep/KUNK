@@ -142,8 +142,15 @@
    * would ever appear anywhere. Resolving here means every renderer picks
    * that up without any of them changing, which beats teaching seventeen
    * renderers about packs individually. */
+  /* How much of a feed is composed rather than hand-written. At 0.72 roughly
+   * seven posts in ten come out of the grammar, which is what stops a pool of
+   * eighty wrapping visibly inside ten minutes -- while the hand-written ones
+   * stay frequent enough to carry the texture the grammar cannot. */
+  var GRAMMAR_SHARE = 0.72;
+
   function resolvePool(pool) {
     if (Array.isArray(pool)) return pool;
+    if (pool && pool.isVirtual) return pool;
     if (typeof pool !== 'string') return [];
     var base = (SYNTH.slop && SYNTH.slop[pool]) || [];
     var extra = [];
@@ -153,6 +160,73 @@
       }
     } catch (e) { /* packs not ready, or storage unavailable */ }
     return extra.length ? base.concat(extra) : base;
+  }
+
+  /* --- virtual pools -----------------------------------------------------
+   *
+   * 550 hand-written entries across every pool is the whole variety budget of
+   * this network. Sit on one site for ten minutes and it wraps, which is the
+   * tell that finishes the illusion off.
+   *
+   * Writing 55,000 entries instead is 32 MB and nobody would write them. So
+   * most of a feed is COMPOSED: template x canon entity x tone x detail, the
+   * same technique bots.js already uses to answer your own posts.
+   *
+   * A virtual pool reports a length but holds only the written items. Indices
+   * past those are composed on demand from the seed of the slot that asked,
+   * so each one is drawn from the grammar's whole space rather than from a
+   * precomputed list. Nothing is generated until something asks and nothing
+   * is stored.
+   *
+   * Deliberately NOT returned by resolvePool(): several renderers read a pool
+   * directly with pool[i] and pool.filter(), and handing those an object with
+   * a length of 300 and 80 real entries would be a quiet source of undefined.
+   * Only stream() -- which goes through at() -- ever sees one. */
+  function virtual(written, poolName) {
+    if (!written || !written.length) return written || [];
+    if (written.isVirtual) return written;
+    if (!SYNTH.grammar || typeof SYNTH.grammar.makes !== 'function') return written;
+    if (!SYNTH.grammar.makes(poolName)) return written;
+
+    return {
+      /* An explicit flag rather than duck-typing on .at(). Both arrays and
+       * strings have had a .at() method since ES2022, so a check for one
+       * matches every plain array AND every pool name -- which returned the
+       * string "socialPosts" as an eleven-item pool and served its
+       * characters as posts. It also silently disabled the grammar
+       * everywhere, because Array.prototype.at(i) ignores the second
+       * argument and cheerfully returns the element. */
+      isVirtual: true,
+      length: Math.round(written.length / (1 - GRAMMAR_SHARE)),
+      written: written.length,
+      at: function (index, seed) {
+        if (index < written.length) return written[index];
+        var made = null;
+        try { made = SYNTH.grammar.make(poolName, seed); } catch (e) { made = null; }
+        return made || written[index % written.length];
+      }
+    };
+  }
+
+  /* What makes two composed items "the same" to a reader. Not identity --
+   * two posts that open with the same eight words read as a repeat even when
+   * the nouns differ, and that is the thing people actually notice. */
+  function signature(item) {
+    if (!item) return '';
+    if (typeof item === 'string') return item.slice(0, 48);
+    /* A composed item carries the id of the template it came out of, which
+     * is the only reliable comparison: "Got a letter about Substation No. 3"
+     * and "Got a letter about the Bracken Lane school" differ well past any
+     * prefix you would compare and are obviously the same post. */
+    if (item.tplId) return 't' + item.tplId;
+    var text = item.body || item.title || item.headline || item.lead || '';
+    return String(text).replace(/\s+/g, ' ').slice(0, 48);
+  }
+
+  function poolItem(pool, index, seed) {
+    return (pool && pool.isVirtual)
+      ? pool.at(index, seed)
+      : pool[index];
   }
 
   /* --- rhythm -----------------------------------------------------------
@@ -170,7 +244,8 @@
    */
 
   /* Reach by hour, local time. Mirrors the curve in fame.js, which models
-   * the same thing from the other end (how far YOUR post travels). */
+   * the same thing from the other end (how far YOUR post travels), and
+   * SlotMath.java, which computes it for the widget. */
   var HOUR_WEIGHT = [
     0.34, 0.28, 0.22, 0.20, 0.22, 0.30,
     0.48, 0.66, 0.82, 0.88, 0.86, 0.90,
@@ -248,7 +323,11 @@
   }
 
   function stream(key, poolOrName, intervalMin, count) {
-    var pool = resolvePool(poolOrName);
+    /* A name gets the grammar folded in; a pre-filtered array does not,
+     * unless the caller wrapped it with live.virtual() itself. */
+    var pool = (typeof poolOrName === 'string')
+      ? virtual(resolvePool(poolOrName), poolOrName)
+      : resolvePool(poolOrName);
     if (!pool.length) return [];
     var current = Math.floor(minutesSinceEpoch() / intervalMin);
     /* Keyed by stream key so a renderer calling the same stream twice (an
@@ -265,13 +344,34 @@
     var scanned = 0;
     var limit = count * 8;
     var slot = current;
+    var seen = {};
     while (out.length < count && slot >= 0 && scanned < limit) {
       if (slotLive(key, slot, intervalMin)) {
         var h = hash32(key + ':' + slot);
+        /* poolItem, not pool[...]: a pool may be virtual, with most of its
+         * length composed on demand from this slot's seed rather than
+         * sitting in memory. See virtual(). */
+        var item = poolItem(pool, h % pool.length, h);
+
+        /* Two posts on one screen that open with the same eight words is the
+         * single thing that gives a composed feed away, and with a dozen
+         * templates and ten posts the birthday problem makes it common. So
+         * re-roll a repeat rather than write another hundred templates. Only
+         * composed pools can re-roll; a written pool repeating means it has
+         * genuinely wrapped, which is a different problem and an honest one. */
+        var tries = 0;
+        while (pool.isVirtual && tries < 4 &&
+               Object.prototype.hasOwnProperty.call(seen, signature(item))) {
+          tries++;
+          var rh = hash32(key + ':' + slot + '/r' + tries);
+          item = poolItem(pool, rh % pool.length, rh);
+        }
+        seen[signature(item)] = 1;
+
         out.push({
           slot: slot,
           at: EPOCH + slot * intervalMin * MINUTE,
-          item: pool[h % pool.length],
+          item: item,
           seed: h
         });
       }
@@ -442,6 +542,8 @@
     longDate: longDate,
     stream: stream,
     pool: resolvePool,
+    virtual: virtual,
+    poolItem: poolItem,
     resetLedger: resetLedger,
     ledgerRows: ledgerRows,
     arrivals: arrivals,
