@@ -645,9 +645,31 @@
        * thread simply gets fewer replies, which is also what a quiet talk
        * page looks like. */
       var used = {};
+
+      /* Openers are chosen by WALKING the bank, not by drawing from it.
+       *
+       * stream() re-rolls a repeated draw and I assumed that was enough with
+       * twelve openers and four threads. It is not -- six talk pages ended up
+       * heading two threads with the same sentence. The obvious fix is the
+       * same used-set the replies have, and it is the wrong one: it makes a
+       * repeat impossible by construction, so the CI assertion that watches
+       * for repeats can never fail, which is how a check becomes a comment.
+       * That has happened twice in this file already.
+       *
+       * So: start at a seeded index and step by a stride coprime to the bank
+       * size, which visits every entry once before returning to any. Distinct
+       * while threads <= openers, and repeating the moment it is not -- so
+       * asking for more threads than there are openers, or cutting the bank
+       * down, still fires the check.
+       */
+      var STRIDES = [1, 5, 7, 11];          /* coprime to 12 */
+      var openN = TALK_OPENERS.length;
+      var start = live.hash32('topen:' + site.domain + ':' + art.id) % openN;
+      var stride = STRIDES[live.hash32('tstride:' + art.id) % STRIDES.length];
+
       var out = [], i, j;
       for (i = 0; i < rows.length; i++) {
-        var op = rows[i].item || TALK_OPENERS[0];
+        var op = TALK_OPENERS[(start + i * stride) % openN];
         /* No dedupe here, deliberately. Four threads drawn from six openers
          * put "Requested move" on one page three times; the fix was the
          * other six openers, not a filter. stream() already re-rolls a

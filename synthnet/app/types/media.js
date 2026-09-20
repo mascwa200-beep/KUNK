@@ -452,6 +452,12 @@
     var scrub = el('span', { 'class': 'scrub', title: 'Playback unavailable', onclick: nudge },
       el('span', { 'class': 'scrub-fill' }, ''),
       el('span', { 'class': 'scrub-knob' }, ''));
+    /* The volume slider is drawn from the same .ctl box as the play control
+     * sitting two inches to its left, so it has to answer the same way. It
+     * was the one transport control left without a handler, and no checker
+     * here can see that: the function check indexes candidates by their
+     * text, and every control in this row has none. */
+    var vol = el('span', { 'class': 'ctl vol', title: 'Playback unavailable', onclick: nudge }, '');
 
     return el('div', { 'class': 'player' },
       el('div', { 'class': 'player-frame', style: plateStyle(txt(item.thumbSeed, item.id)) },
@@ -462,7 +468,7 @@
         ctl,
         scrub,
         el('span', { 'class': 'times' }, '0:00 / ' + txt(item.duration, '--:--')),
-        el('span', { 'class': 'ctl vol' }, '')),
+        vol),
       caption);
   }
 
@@ -734,11 +740,19 @@
     mount.appendChild(el('div', { 'class': 'sec-head' },
       rows.length + ' name' + (rows.length === 1 ? '' : 's') + ' on this site'));
 
+    /* The count has to say what it counted. Comments keep landing on the
+     * clips while you read them -- a watch page here will show a dozen
+     * names this list does not have -- so "everybody who ever commented"
+     * is a claim this page cannot keep. What it can say is exactly which
+     * names it counted and where it got them, which is the true version
+     * and the funnier one. */
     mount.appendChild(el('div', { 'class': 'm-note-fact' },
-      'Nobody kept a member list here, so this one is counted off the pages: ' +
-      'every name that put up a clip or left a comment on one. ' +
+      'Nobody kept a member list here, so this one is counted off the clips: ' +
+      'every name that put one up, and every name on a comment saved with one. ' +
       uploaders + ' of them uploaded something' +
-      (machines ? ', and ' + machines + ' of them are machines.' : '.')));
+      (machines ? ', and ' + machines + ' of them are machines. ' : '. ') +
+      'Comments are still arriving on the clips and are not counted here. ' +
+      'Nothing on this site has ever kept a list of who leaves them.'));
 
     if (!rows.length) {
       mount.appendChild(el('div', { 'class': 'blank' }, 'Nobody signed anything on this site.'));
@@ -797,6 +811,40 @@
     return (from > 0 ? '…' : '') + cut + (from + 150 < body.length ? '…' : '');
   }
 
+  /* Which field the words were actually found in. The first version of this
+   * printed "match in description" for anything that was not a title hit,
+   * which put that line under a search for an uploader's handle next to a
+   * snippet of a description the handle does not appear in. A result page
+   * that tells you where the match is has to be right about it or it is
+   * worth less than no line at all. */
+  function matchLabel(it, chan, terms) {
+    var fields = [
+      { label: 'the title', text: txt(it.title) },
+      { label: 'the description', text: flat(it.description) },
+      { label: 'the uploader', text: txt(it.uploader) },
+      { label: 'the channel name', text: chan ? txt(chan.name) : '' }
+    ];
+    var whole = [], part = [], i, j, low, hitAny, hitAll;
+    for (i = 0; i < fields.length; i++) {
+      low = lower(fields[i].text);
+      if (!low) continue;
+      hitAny = false; hitAll = true;
+      for (j = 0; j < terms.length; j++) {
+        if (low.indexOf(terms[j]) === -1) hitAll = false;
+        else hitAny = true;
+      }
+      if (hitAll) whole.push(fields[i].label);
+      else if (hitAny) part.push(fields[i].label);
+    }
+    /* One field holding every word is a match in that field. Words split
+     * across two of them is a match across both, and says so. */
+    var names = whole.length ? whole : part;
+    if (!names.length) return '';
+    if (names.length === 1) return names[0];
+    return names.slice(0, names.length - 1).join(', ') + ' and ' +
+      names[names.length - 1];
+  }
+
   function searchSite(ctx, terms) {
     var hits = [];
     items(ctx).forEach(function (it) {
@@ -805,7 +853,7 @@
       var hay = [txt(it.title), txt(it.uploader), flat(it.description),
                  chan ? txt(chan.name) : ''].join(' \n ');
       if (hasAll(hay, terms)) {
-        where = hasAll(txt(it.title), terms) ? 'title' : 'description';
+        where = matchLabel(it, chan, terms) || 'the page';
       } else {
         var found = null;
         arr(it.comments).forEach(function (c) {
@@ -836,8 +884,8 @@
       mount.appendChild(el('div', { 'class': 'sec-head' }, 'Search this site'));
       mount.appendChild(el('div', { 'class': 'm-note-fact' },
         'Type into the box at the top of the page. This looks at the titles, ' +
-        'descriptions, uploaders and comments on ' + siteName(ctx) +
-        ' and nothing else.'));
+        'descriptions and uploaders on ' + siteName(ctx) + ', and at the ' +
+        'comments saved with each clip. Nothing else, and nothing off this site.'));
       mount.appendChild(backRow(ctx));
       mount.appendChild(foot(ctx));
       return;
@@ -921,8 +969,8 @@
         ctx.link('/', 'They are all still here to watch'), '.'));
     } else {
       box.appendChild(el('div', { 'class': 'm-note-fact' },
-        'The names that are on this site were counted off its own pages. ',
-        ctx.link('/members', 'The Community page lists every one of them'), '.'));
+        'The names that are on this site were counted off the clips themselves. ',
+        ctx.link('/members', 'The Community page has them'), '.'));
     }
     mount.appendChild(box);
 

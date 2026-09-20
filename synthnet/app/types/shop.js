@@ -53,13 +53,39 @@ window.SYNTH = window.SYNTH || {};
 
   var CART = 'shopcart';
 
+  /* The header's count links, for the page being looked at. Reset when a page
+   * is built, pruned of anything the engine has since swapped out. */
+  var cartLinks = [];
+
+  function repaintCartLinks(domain) {
+    var kept = [];
+    var i;
+    for (i = 0; i < cartLinks.length; i++) {
+      var w = cartLinks[i];
+      if (!w.node || (document.body && !document.body.contains(w.node))) { continue; }
+      kept.push(w);
+      if (String(w.domain) !== String(domain)) { continue; }
+      var n = cartCount(domain);
+      while (w.node.firstChild) { w.node.removeChild(w.node.firstChild); }
+      w.node.appendChild(document.createTextNode(
+        w.title + (n ? ' (' + n + ')' : '')));
+    }
+    cartLinks = kept;
+  }
+
   function cartRows(domain) {
     var v = (SYNTH.store && SYNTH.store.get) ? SYNTH.store.get(CART, domain, null) : null;
     return isArray(v) ? v : [];
   }
 
+  /* Every mutation goes through here, so the one place that has to know the
+   * list changed is this one. The count in the header is built once per
+   * navigation, and without this it went on reading "Your cart (1)" while the
+   * page under it said "Your cart is empty" -- the control worked and the
+   * chrome above it contradicted the result on the same screen. */
   function cartSave(domain, rows) {
     if (SYNTH.store && SYNTH.store.put) { SYNTH.store.put(CART, domain, rows); }
+    repaintCartLinks(domain);
   }
 
   function cartCount(domain) {
@@ -243,8 +269,37 @@ window.SYNTH = window.SYNTH || {};
    * gridfalleats.com is priced at $0 because its delivery is free, and it is a
    * restaurant, not an article. So: a whole department of unpriced items is a
    * department of pages; one unpriced item among priced ones is a listing that
-   * simply has no price, and there is still nothing there to add. */
-  var PAGEY = /\bhelp\b|\bsupport\b|\babout\b|\binformation\b|\bcontact\b|\bpolic|\bservice\b|\bfees?\b|\bcharges?\b|\bhours\b/i;
+   * simply has no price, and there is still nothing there to add.
+   *
+   * Recruitment belongs in the list for the same reason and was missed the
+   * first time. gridfalleats.com files its driver recruitment as a department,
+   * and prices "Driver Pay and Earnings" at $2.40 -- which is what a driver is
+   * paid per delivery, not what the article costs. Reading that as a price put
+   * a working "Add to Order", an "Order Now" and an "Only 3 left in stock" on
+   * an article about how drivers are paid. */
+  var PAGEY = /\bhelp\b|\bsupport\b|\babout\b|\binformation\b|\bcontact\b|\bpolic|\bservice\b|\bfees?\b|\bcharges?\b|\bhours\b|\bhiring\b|\bcareers?\b|\bjobs?\b|\brecruit/i;
+
+  /* A listing whose name IS the name of one of this store's own departments is
+   * the front of that department, not a thing. gridfalleats.com's "Restaurants
+   * Near You" holds four of them, each priced at its own delivery fee, so Add
+   * to Order put a restaurant on the order at the price of delivering from it.
+   * What a reader wants off that listing is the menu, and the menu is the
+   * department it names. Derived from the data, so it finds nothing on the
+   * other six shops and would find a fifth restaurant if one were added. */
+  function departmentBehind(site, p) {
+    var cats = d(site).categories || [];
+    var head = String(p.name || '').split(/\s+[-–—·]\s+/)[0]
+      .replace(/^\s+|\s+$/g, '').toLowerCase();
+    if (!head) { return null; }
+    var i;
+    for (i = 0; i < cats.length; i++) {
+      if (String(cats[i].id) === String(p.catId)) { continue; }
+      if (String(cats[i].name || '').replace(/^\s+|\s+$/g, '').toLowerCase() === head) {
+        return cats[i];
+      }
+    }
+    return null;
+  }
 
   function catHasPrices(site, cat) {
     if (!cat) { return false; }
@@ -258,6 +313,7 @@ window.SYNTH = window.SYNTH || {};
   }
 
   function buyState(site, p, cat) {
+    if (departmentBehind(site, p)) { return 'menu'; }
     if (cat && PAGEY.test(String(cat.name || ''))) { return 'page'; }
     if (Number(p.price) > 0) { return 'sell'; }
     return catHasPrices(site, cat) ? 'noprice' : 'page';
@@ -392,8 +448,10 @@ window.SYNTH = window.SYNTH || {};
     var desk = deskFor(ctx.site);
     if (!desk.noList) {
       var n = cartCount(ctx.site.domain);
-      top.appendChild(ctx.link('/cart',
-        desk.title + (n ? ' (' + n + ')' : ''), 'ms-cartlink'));
+      var cl = ctx.link('/cart',
+        desk.title + (n ? ' (' + n + ')' : ''), 'ms-cartlink');
+      cartLinks.push({ node: cl, title: desk.title, domain: ctx.site.domain });
+      top.appendChild(cl);
     }
     head.appendChild(top);
 
@@ -1012,12 +1070,26 @@ window.SYNTH = window.SYNTH || {};
     /* the buy box */
     var buy = el('aside', { 'class': 'ms-buy' });
     var state = buyState(ctx.site, p, cat);
-    if (state !== 'sell') {
+    var dept = state === 'menu' ? departmentBehind(ctx.site, p) : null;
+    if (dept) {
+      buy.appendChild(el('p', { 'class': 'ms-buy-notforsale' }, 'Not an item'));
+      buy.appendChild(el('p', { 'class': 'ms-buy-small ms-buy-why' },
+        'This listing is the front of a whole department of this store. There ' +
+        'is no single thing on it to order, and the price on it is not the ' +
+        'price of anything you would receive. What can be ordered is inside.'));
+      buy.appendChild(ctx.link('/c/' + dept.id, 'Open ' + dept.name, 'ms-buy-back'));
+    } else if (state !== 'sell') {
       buy.appendChild(el('p', { 'class': 'ms-buy-notforsale' },
         state === 'page' ? 'Not for sale' : 'No price on this listing'));
       buy.appendChild(el('p', { 'class': 'ms-buy-small ms-buy-why' },
         state === 'page'
-          ? 'This is a page. The storefront only knows how to publish products, so the page is filed as one, with a price of nothing and a star rating it did not ask for.'
+          /* Most of these are filed at $0.00. Not all: gridfalleats.com files
+           * its driver-pay article at $2.40, because $2.40 is what a driver is
+           * paid, so the sentence has to read what the listing actually says
+           * rather than assume the nothing. */
+          ? ('This is a page. The storefront only knows how to publish products, so the page is filed as one, with ' +
+             (Number(p.price) > 0 ? 'a price that is not a price' : 'a price of nothing') +
+             ' and a star rating it did not ask for.')
           : 'There is nothing on this listing to add to an order. What can be ordered is in the department below.'));
       if (cat) {
         buy.appendChild(ctx.link('/c/' + cat.id,
@@ -1119,6 +1191,7 @@ window.SYNTH = window.SYNTH || {};
 
   SYNTH.render = SYNTH.render || {};
   SYNTH.render.register('shop', function (ctx) {
+    cartLinks = [];
     var wrap = el('div', { 'class': 'skin-megastore' });
     var real = ctx.mount;
     real.appendChild(wrap);

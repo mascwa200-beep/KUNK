@@ -404,6 +404,64 @@ the badge means something.
 
 ---
 
+## 6b. What the four of them keep
+
+Added when each got a site of their own. These are the specifics their pages
+turn on; contradicting one of them contradicts a page a reader can open.
+
+**Hal Brenner** — `brenner.verity.net` is the free web archive; the letter
+itself goes out from `brenners-notebook.email`. Issues are numbered and land
+on the third Tuesday: no. 64 is 19 August 2025, no. 77 is 15 September 2026.
+Web copies start at issue 69 because the list moved services in December 2025;
+anything earlier exists only on the archive. Comments have been off since
+2020 — what appears under a piece is reader mail he retypes with permission.
+His AskVerity handle is `hbrenner`. He leaves the Ashkettle water district to
+Cannady because it is a separate board with its own wells.
+
+**Karen Fennimore** — reference desk, Marchfield Public Library, 782-1170,
+Tuesday to Friday. 61,460 pages of Ledger microfilm scanned since March 2016,
+205 of 291 reels, at 400 dpi grey. The Ledger printed Tuesdays and Fridays
+until 31 March 1958 and six days a week after, which is why reel 178 stops
+there. The bound set was thrown out in 1986, so the film is the only copy of
+most of the run. June–September 1943 is 62 issues the vendor's own card marks
+FILM POOR. Item 41 in the local collection is the state commission's two-page
+summary on Substation No. 3 — 63 copies sent out since January 2026, fourteen
+of them to people who had read it was lightning. Item 12 is the Kestrel Letter
+run, scanned and deliberately not published, because Marion Teale asked.
+
+**Dale Carver** — `dcarver.verity.net`, put up 9 March 2019 and changed once,
+on 29 September 2026. The boards.gridfall.net bill has been in his name since
+1 October 2017: Gridfall Host Standard Plus, $11/month, card on the 1st. To
+1 September 2026 that is 108 invoices, 107 paid, $1,177. July 2024 was never
+invoiced after a disk failure on 13 June and he has never raised it. The
+`gridfall.net` name is a separate $18/year, renewed each March. The board uses
+1.8 GB of a 10 GB plan on a machine called `cobb`. Attachments posted after
+2009 were lost when a 2012 PHP upgrade moved the folder and he found out five
+months later. A collection for the hosting in 2019 raised $40 over six weeks
+and three people are still not speaking.
+
+**Ruth Cannady** — `archive.thequarry.news` publishes the documents rather
+than the piece: FOIA responses with the request date, the response date and
+the redactions noted, each with two sentences saying what it is and nothing
+about what it means.
+
+County specifics those pages establish, which other content should not
+contradict: bridge 12-047, Nye Mills Road over Fenn Creek, posted at 8 tons
+since 12 August 2011, replacement estimated $610,000, school bus detours 6.2
+miles by Dorrance Road; 61 county bridges, 4 posted, and a bridge line held at
+$150,000 a year since 2016. South-end ambulance cover is bought from Coulter
+Ambulance of Marchfield at $71,400 a year on a 2019 contract that renews
+itself; the Kerrin Ambulance Association gets $6,000, unchanged since 2017,
+and asked for $9,000 in March 2025. Position 24-07, Planner II, $58,400, has
+been budgeted every year since 2022 and never filled — the county has had no
+planner since March 2022. `verity.county.gov` runs on a 2016 contract with
+Lanark Civic Systems at $18,600 a year; the scope includes two content reviews
+a year and the file contains one, a 2019 memo listing 31 out-of-date pages.
+The assessment appeal form is VC-14, and the stack on the assessor's counter
+is still printed A-9 from before the 2019 renumbering.
+
+---
+
 ## 7. Quick reference
 
 | Fact | Value |

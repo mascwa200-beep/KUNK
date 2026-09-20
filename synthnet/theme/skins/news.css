@@ -525,6 +525,16 @@
 .skin-portal-red .news-kicker,
 .skin-pinkslime .news-kicker { display: inline-block; }
 
+/* A kicker standing on its own section index has nowhere to go, so it is drawn
+   as the eyebrow line itself rather than as a span inside one -- a line of type
+   is prose, a span is a nav item, and the difference is the whole point. It
+   still has to lay out as the block it is: .news-kicker above makes a kicker
+   inline-block, which is right for a kicker sitting beside a WIRE chip and
+   wrong for one that IS the line. */
+.skin-broadsheet p.news-eyebrow.news-kicker,
+.skin-portal-red p.news-eyebrow.news-kicker,
+.skin-pinkslime p.news-eyebrow.news-kicker { display: block; }
+
 /* The kicker is a link to its section now. Each skin already gives .news-kicker
    a colour that clears AA on that skin's paper, and those rules outrank the
    skin's generic `a`, so the only thing added here is the affordance: no rule

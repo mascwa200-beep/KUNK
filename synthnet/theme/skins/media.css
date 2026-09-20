@@ -164,6 +164,7 @@
 .skin-tubeplayer .ctl {
   display: inline-block; position: relative; width: 17px; height: 15px;
   background: #d8d8d8; border: 1px solid #202020; flex: 0 0 17px;
+  cursor: pointer;
 }
 .skin-tubeplayer .ctl .ctl-tri {
   position: absolute; left: 5px; top: 3px; width: 0; height: 0;
@@ -177,6 +178,7 @@
 .skin-tubeplayer .scrub {
   position: relative; flex: 1 1 auto; height: 8px;
   background: #1f1f1f; border: 1px solid #101010;
+  cursor: pointer;
 }
 .skin-tubeplayer .scrub-fill {
   position: absolute; left: 0; top: 0; bottom: 0; width: 2%;

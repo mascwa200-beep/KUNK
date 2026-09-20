@@ -104,16 +104,17 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- what this browser remembers ----------
    *
-   * Three records, all of them per site and per id, none of them content:
-   * which channels you subscribe to, which videos you kept, which way you
-   * voted. Subscriptions go through SYNTH.alerts because that is where the
-   * Feeds page looks; the other two are this renderer's own and sit in
-   * SYNTH.store beside everything else the browser keeps.
+   * Four records, all of them per site, none of them content: which channels
+   * you subscribe to, which videos you kept, which way you voted, and whether
+   * you left autoplay on. Subscriptions go through SYNTH.alerts because that
+   * is where the Feeds page looks; the rest are this renderer's own and sit
+   * in SYNTH.store beside everything else the browser keeps.
    */
 
   var SAVED = 'streamsaved';    /* "<domain>/<videoId>" -> {at}          */
   var VOTES = 'streamvotes';    /* "<domain>/<videoId>" -> 'up' | 'down' */
   var RAISED = 'streamwatch';   /* "<domain>" -> 1, see syncDomainWatch  */
+  var AUTO = 'streamautoplay';  /* "<domain>" -> 0, only ever the off    */
 
   function swallow(p) {
     try { Promise.resolve(p).then(null, function () { /* stored or not */ }); }
@@ -203,6 +204,19 @@ window.SYNTH = window.SYNTH || {};
     if (!st) { return; }
     if (v === 'up' || v === 'down') { swallow(st.put(VOTES, rowKey(ctx, id), v)); }
     else { swallow(st.del(VOTES, rowKey(ctx, id))); }
+  }
+
+  /* Autoplay defaults on, so only the off is worth a row. */
+  function autoplayOn(ctx) {
+    var st = storeApi();
+    return st ? st.get(AUTO, ctx.site.domain, 1) !== 0 : true;
+  }
+
+  function setAutoplay(ctx, on) {
+    var st = storeApi();
+    if (!st) { return; }
+    if (on) { swallow(st.del(AUTO, ctx.site.domain)); }
+    else { swallow(st.put(AUTO, ctx.site.domain, 0)); }
   }
 
   /* ---------- lookups ---------- */
@@ -339,9 +353,12 @@ window.SYNTH = window.SYNTH || {};
         nameRow.appendChild(el('span', { 'class': 'tm-verified', title: 'Verified' }, '✓'));
       }
       meta.appendChild(nameRow);
-      meta.appendChild(el('span', { 'class': 'tm-navsubs' }, shortNum(
-        counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420)
-      ) + ' subs'));
+      /* Same arithmetic as the channel header. Drawing the raw counter here
+       * made the rail say "860 subs" on the front page while the channel
+       * page said "861 subscribers · including you" -- one fact, two
+       * numbers, one press apart. */
+      meta.appendChild(el('span', { 'class': 'tm-navsubs' },
+        shortNum(subsTotal(ctx, ch)) + ' subs'));
       a.appendChild(meta);
       li.appendChild(a);
       var b = badge(ch.kind);
@@ -401,12 +418,18 @@ window.SYNTH = window.SYNTH || {};
    * one is arithmetically real and completely invisible.
    */
 
+  /* The site's own count plus you, if you are one of them. Every place that
+   * prints a subscriber number goes through here, so they cannot disagree. */
+  function subsTotal(ctx, ch) {
+    return counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420) +
+           (isSubbed(ctx, ch.id) ? 1 : 0);
+  }
+
   function subsCount(ctx, ch, suffix) {
     var node = el('div', { 'class': 'tm-chsubs' });
-    var base = counter(ctx.site.domain + ':subs:' + ch.id, ch.subs || 0, 420);
     function paint() {
       var on = isSubbed(ctx, ch.id);
-      setKids(node, [shortNum(base + (on ? 1 : 0)) + suffix + (on ? ' · including you' : '')]);
+      setKids(node, [shortNum(subsTotal(ctx, ch)) + suffix + (on ? ' · including you' : '')]);
     }
     paint();
     return { node: node, paint: paint };
@@ -457,14 +480,29 @@ window.SYNTH = window.SYNTH || {};
     var head = el('div', { 'class': 'tm-uphead' });
     head.appendChild(el('h2', { 'class': 'tm-uptitle' }, 'Up next'));
     var toggle = el('label', { 'class': 'tm-autoplay' });
-    var cb = el('input', { type: 'checkbox', 'class': 'tm-autocb', checked: 'checked' });
+    var on = autoplayOn(ctx);
+    var cb = el('input', { type: 'checkbox', 'class': 'tm-autocb', checked: on });
+    cb.checked = on;
     toggle.appendChild(cb);
     toggle.appendChild(el('span', { 'class': 'tm-autotxt' }, 'Autoplay'));
     head.appendChild(toggle);
     box.appendChild(head);
 
-    var note = el('p', { 'class': 'tm-upnote' },
-      'Autoplay is on. It has been on since 2024. The setting saves, the model does not read it.');
+    /* The note used to say "the setting saves" while nothing stored it: the
+     * box came back ticked on the next watch page because it was drawn
+     * ticked, every time. It saves now -- per site, in this browser -- and
+     * the note says which half of the sentence the site is responsible for. */
+    var note = el('p', { 'class': 'tm-upnote' });
+    function paintNote() {
+      setKids(note, [cb.checked
+        ? 'Autoplay is on. It has been on since 2024. The setting is kept by this browser; the model does not read it.'
+        : 'Autoplay is off, and this browser will remember that. The list below is the same list either way -- the model never read the setting.']);
+    }
+    cb.addEventListener('change', function () {
+      setAutoplay(ctx, cb.checked);
+      paintNote();
+    }, false);
+    paintNote();
     box.appendChild(note);
 
     var vids = data.videos || [], list = [], i;

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T16:06:48Z",
+  "generated": "2026-09-20T17:00:48Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -12,6 +12,25 @@
       "tags": [],
       "path": "net/sites/62chan-org/site.json",
       "bytes": 52083
+    },
+    {
+      "domain": "archive.thequarry.news",
+      "title": "The Quarry Document Archive",
+      "type": "blog",
+      "era": "2026",
+      "skin": "movabletype-cream",
+      "description": "Ruth Cannady's companion to The Quarry, where the records she gets out of Verity County are posted whole, with the request date, the response date and the redactions marked.",
+      "tags": [
+        "verity",
+        "gridfall",
+        "records",
+        "foia",
+        "documents",
+        "2026",
+        "local-news"
+      ],
+      "path": "net/sites/archive-thequarry-news/site.json",
+      "bytes": 60973
     },
     {
       "domain": "ashkettle-wx.net",
@@ -125,6 +144,24 @@
       ],
       "path": "net/sites/brackenlanegarage-net/site.json",
       "bytes": 63194
+    },
+    {
+      "domain": "brenner.verity.net",
+      "title": "Brenner's Verity Notebook",
+      "type": "blog",
+      "era": "2026",
+      "skin": "movabletype-cream",
+      "description": "The web archive of Hal Brenner's monthly county letter out of Gridfall: one sourced piece a month, each one ending in the documents it came out of.",
+      "tags": [
+        "verity",
+        "gridfall",
+        "county",
+        "records",
+        "2026",
+        "local-news"
+      ],
+      "path": "net/sites/brenner-verity-net/site.json",
+      "bytes": 59993
     },
     {
       "domain": "brenners-notebook.email",
@@ -341,6 +378,23 @@
       "bytes": 9114
     },
     {
+      "domain": "dcarver.verity.net",
+      "title": "Dale Carver, Gridfall",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "A personal page put up in 2019 and changed once since, by the man who moderates the Gridfall boards: what he runs, what the hosting costs a month and since, and the radio and the truck.",
+      "tags": [
+        "gridfall",
+        "boards",
+        "hosting",
+        "radio",
+        "personal"
+      ],
+      "path": "net/sites/dcarver-verity-net/site.json",
+      "bytes": 37541
+    },
+    {
       "domain": "fennerinsurance.com",
       "title": "Fenner Insurance Agency, Inc. - Marchfield",
       "type": "page",
@@ -355,6 +409,23 @@
       ],
       "path": "net/sites/fennerinsurance-com/site.json",
       "bytes": 66987
+    },
+    {
+      "domain": "fennimore.verity.net",
+      "title": "Scanning index - K. Fennimore, Marchfield Public Library",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "The list of what has been scanned out of the Marchfield library's microfilm cabinet and local collection, reel by reel and item by item, with what shape each one is in and how to ask for a copy.",
+      "tags": [
+        "marchfield",
+        "library",
+        "microfilm",
+        "archive",
+        "index"
+      ],
+      "path": "net/sites/fennimore-verity-net/site.json",
+      "bytes": 44206
     },
     {
       "domain": "forums.verityrail.org",

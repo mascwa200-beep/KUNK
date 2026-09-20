@@ -231,9 +231,17 @@
   .skin-phpbb-blue .flist td,
   .skin-phpbb-blue .flist th { padding: 5px 4px; }
   .skin-phpbb-blue .post { display: block; }
+  /* `display: inline` on the three text lines below is blockified the moment
+     they become flex items, so they do NOT reflow as text the way the rule
+     reads -- they stay one unwrapping row, and a long name pushes "Posts:"
+     off the right edge. Nothing scrolls, so it is just gone. Invisible to the
+     overflow check as it was aimed, because the check sampled one thread per
+     site and the long names are further in; /members/<name> now gives every
+     one of them a page of its own, which is where it showed up. Let the row
+     wrap. */
   .skin-phpbb-blue .post-author {
     width: auto; flex: none;
-    display: flex; align-items: center; gap: 8px;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
     text-align: left; border-right: none;
     border-bottom: 1px solid #c3d0da; padding: 6px;
   }
@@ -415,8 +423,10 @@
 @media (max-width: 440px) {
   .skin-ezboard-grey .col-last { display: none; }
   .skin-ezboard-grey .post { display: block; }
+  /* Same blockified-inline trap as phpbb-blue above: wrap the row. */
   .skin-ezboard-grey .post-author {
     width: auto; flex: none; display: flex; align-items: center; gap: 6px;
+    flex-wrap: wrap;
     text-align: left; border-right: none; border-bottom: 2px solid #999999;
   }
   .skin-ezboard-grey .post-author .avatar {
@@ -693,10 +703,14 @@
   border-bottom: 1px solid #ededf0;
   background: none;
 }
+/* This strip is a flex row at every width, so on a phone a long handle --
+   verity_deals_2026, SwapFinder_AI -- ran the post count off the right edge
+   with nothing to scroll it back. Wrapping costs a line only when it has to. */
 .skin-softboard .post-author {
   display: flex;
   align-items: center;
   gap: 9px;
+  flex-wrap: wrap;
   width: auto;
   float: none;
   border: 0;

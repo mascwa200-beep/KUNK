@@ -286,7 +286,16 @@
    * None of these sites ships a member list. Every one of them ships the
    * posts, and a post has an author, so the list can be counted off the page
    * itself -- which is also the honest version: it is who has spoken here,
-   * not who registered. */
+   * not who registered.
+   *
+   * Two kinds of account get in here WITHOUT having said anything, and both
+   * belong on the page because both are drawn on it: the friends in the
+   * sidebar, and the account the site is published under (on shoutbox.live
+   * that account has posted nothing at all). They are counted separately,
+   * because a headline that says "29 accounts appear in the posts and
+   * replies" over a list whose last two rows read "has not posted here" is
+   * a member list lying about itself, which is the exact bug this page was
+   * built to stop being. */
 
   function census(ctx) {
     var map = {}, order = [], p = profile(ctx);
@@ -300,7 +309,8 @@
          * showed everyone as @countyalerts_verity until these were split. */
         map[h] = { handle: h, shown: String(handle).replace(/^@/, ''),
                    name: txt(name, h), seed: txt(seed, h),
-                   posts: 0, replies: 0, kind: '' };
+                   posts: 0, replies: 0, kind: '',
+                   friend: false, self: false };
         order.push(h);
       }
       var rec = map[h];
@@ -320,8 +330,14 @@
         if (sub) sub.replies++;
       });
     });
-    friends(ctx).forEach(function (f) { touch(f.handle, f.displayName, f.avatarSeed); });
-    if (p.handle) touch(p.handle, p.displayName, p.avatarSeed);
+    friends(ctx).forEach(function (f) {
+      var rec = touch(f.handle, f.displayName, f.avatarSeed);
+      if (rec) rec.friend = true;
+    });
+    if (p.handle) {
+      var own = touch(p.handle, p.displayName, p.avatarSeed);
+      if (own) own.self = true;
+    }
 
     var list = order.map(function (h) { return map[h]; });
     list.sort(function (a, b) {
@@ -330,6 +346,16 @@
       return a.handle < b.handle ? -1 : (a.handle > b.handle ? 1 : 0);
     });
     return list;
+  }
+
+  /* Said something on the pages that survive, as opposed to merely being
+   * drawn on them. The sort above already puts the silent ones last. */
+  function spoke(m) { return (m.posts + m.replies) > 0; }
+
+  function spokeCount(ctx) {
+    var n = 0;
+    census(ctx).forEach(function (m) { if (spoke(m)) n++; });
+    return n;
   }
 
   function repliesByHandle(ctx, handle) {
@@ -416,13 +442,16 @@
         avatar(el, f.avatarSeed, txt(f.displayName, f.handle)),
         el('span', { 'class': 'fname' }, txt(f.displayName, txt(f.handle, '?'))));
     });
-    /* "(12 total)" was a claim with no way to check it. It is a link now,
-     * and the page it goes to is counted off the posts. */
+    /* "(12 total)" was a claim with no way to check it. It is a link now --
+     * and it names where it goes, because /members is not a friends list and
+     * "see all 12" landing on a page of 29 is the same claim again with a
+     * destination stapled to it. */
     return el('div', { 'class': 'friends' },
       el('div', { 'class': 'friends-head' },
         txt(profile(ctx).displayName, 'This user') + "'s Top " + top.length + ' Friends',
         el('span', { 'class': 'fcountall' }, ' (',
-          ctx.link('/members', 'see all ' + num(list.length), 'fcountlink'), ')')),
+          ctx.link('/members', 'all ' + num(list.length) + ' are on Members',
+            'fcountlink'), ')')),
       el('div', { 'class': 'fgrid' }, cells));
   }
 
@@ -1301,7 +1330,13 @@
     var bits = [];
     if (m.posts) bits.push(num(m.posts) + ' post' + (m.posts === 1 ? '' : 's'));
     if (m.replies) bits.push(num(m.replies) + ' repl' + (m.replies === 1 ? 'y' : 'ies'));
-    return bits.length ? bits.join(' · ') : 'listed, has not posted here';
+    if (bits.length) return bits.join(' · ');
+    /* Say which of the two reasons put a silent account on the list, rather
+     * than "listed" -- which is the word a member list uses when it does not
+     * want to be asked. */
+    if (m.self) return 'the account the site is published under · nothing of its own here';
+    if (m.friend) return 'in the friends list · has said nothing on these pages';
+    return 'has said nothing on these pages';
   }
 
   function memberRow(ctx, m) {
@@ -1319,12 +1354,14 @@
 
   function renderMembers(ctx) {
     var el = ctx.el, mount = ctx.mount;
-    var list = census(ctx), auto = 0, i;
+    var list = census(ctx), auto = 0, said = 0, i;
 
     for (i = 0; i < list.length; i++) {
+      if (spoke(list[i])) said++;
       if (list[i].kind === 'bot' || list[i].kind === 'spam' ||
           list[i].kind === 'promoted') auto++;
     }
+    var quiet = list.length - said;
 
     ctx.title('People on ' + txt(ctx.site.title, ctx.site.domain));
     mount.appendChild(topBar(ctx, 'Members'));
@@ -1333,11 +1370,19 @@
       el('h2', { 'class': 'sn-pagehead' }, 'Everyone who has said something here'),
       el('p', { 'class': 'sn-lede' },
         'There is no member list on ' + ctx.site.domain + ' to hand out, so ' +
-        'this one is counted off the page: ' + num(list.length) + ' account' +
-        (list.length === 1 ? '' : 's') + ' appear in the posts and replies ' +
+        'this one is counted off the page: ' + num(said) + ' account' +
+        (said === 1 ? '' : 's') + ' appear in the posts and replies ' +
         'that are here. It is who has spoken, not who registered.' +
         (auto ? ' ' + num(auto) + ' of them post under a label that says ' +
-                'the account is automated.' : '')));
+                'the account is automated.' : '') +
+        /* The friends in the sidebar and the site's own account are drawn on
+         * these pages without having written on them. They stay on the list,
+         * because a reader who clicked one of those faces has to be able to
+         * land somewhere -- but they are counted apart from the people who
+         * said something, and each row says which it is. */
+        (quiet ? ' Below them, ' + num(quiet) + ' more account' +
+                 (quiet === 1 ? ' is' : 's are') + ' drawn on this site ' +
+                 'without having posted or replied here at all.' : '')));
 
     list.forEach(function (m) { main.appendChild(memberRow(ctx, m)); });
 
@@ -1366,7 +1411,7 @@
         ' post' + (posts === 1 ? '' : 's') + ' and ' + num(reps) + ' repl' +
         (reps === 1 ? 'y' : 'ies') + ', all of it readable without an account.'),
       el('li', null, ctx.link('/members', 'Everyone who posted'),
-        ' — ' + num(census(ctx).length) + ' accounts, counted off the posts.'),
+        ' — ' + num(spokeCount(ctx)) + ' accounts, counted off the posts.'),
       el('li', null, ctx.link('/search', 'Search'),
         ' — over those posts, done here in the page.')));
   }
@@ -1420,6 +1465,13 @@
         : ('Messages to ' + who + ' go to whoever runs ' + ctx.site.domain +
            '. What that means in practice is in the profile, and it is worth ' +
            'reading before you write.')));
+      /* Send Message brought you here, so this page owes you the rest of the
+       * sentence: there is no form, and there is not going to be one. */
+      main.appendChild(line(ctx,
+        'There is no box on this page to write one in. Nothing in this copy ' +
+        'reaches ' + ctx.site.domain + ', and a form that quietly wrote to ' +
+        'your own browser instead would be a worse lie than the button that ' +
+        'brought you here.'));
       if (p.handle) {
         main.appendChild(el('p', { 'class': 'sn-say' },
           ctx.link('/user/' + encodeURIComponent(normHandle(p.handle)),

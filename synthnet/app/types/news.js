@@ -306,35 +306,46 @@
      * -- the one control on this renderer that looked live and was not.
      * Where the kicker is a running topic rather than the section's own name
      * ("ROUTE 62" over a story filed under Roads) the link still lands on the
-     * index that actually holds the story, which is the honest destination. */
-    function kickerNode(a, k, here) {
-      var sec = sectionById(a.sectionId);
-      /* Already standing in the section: the kicker still labels the story
-       * but it has nowhere to send anybody, and a link back to the page you
-       * are on is the same dead control in better clothes. */
-      if (!sec || here) { return el('span', { 'class': 'news-kicker' }, k); }
-      return link('/section/' + encodeURIComponent(String(sec.id)), k,
-                  'news-kicker news-kicker-link');
-    }
-
-    /* `curSec` is the section index this row is being drawn on, if any. */
+     * index that actually holds the story, which is the honest destination.
+     *
+     * A kicker has a destination only when that destination is somewhere
+     * else. On the index that already holds the story it has none, and
+     * linking it to the page under the reader's feet is not a working
+     * control: pressing ROADS on the Local index moves no route and repaints
+     * no byte, which is the dead span again in a link's clothes. There it is
+     * drawn as what it reads as -- a label.
+     *
+     * A label with nothing beside it is the eyebrow line rather than a span
+     * inside it. That is not a detail: a span reading ABOUT is shaped exactly
+     * like a nav item, and a line of type reading ABOUT is prose. Legal &
+     * Notices on halseycountynow.com carries a story kickered ABOUT, and
+     * prose is the only honest thing left to call it once it is established
+     * that it has nowhere to go. */
     function eyebrow(a, curSec) {
       var k = kickerOf(a);
+      var sec = sectionById(a.sectionId);
       var here = curSec !== null && curSec !== undefined &&
                  String(a.sectionId) === String(curSec);
-      /* The section index already says overhead which section this is, so a
-       * kicker that only repeats it is dropped -- the same rule this renderer
-       * has always applied to FRONT PAGE on the front page. A kicker carrying
-       * a running topic or a disclosure (PARTNER CONTENT) still earns its
-       * line; it just has nowhere left to point. */
+      /* The section index says overhead which section this is, so a kicker
+       * that only repeats it is dropped -- the same rule this renderer has
+       * always applied to FRONT PAGE on the front page. A kicker carrying a
+       * running topic (ROUTE 62) or a disclosure (PARTNER CONTENT) is not a
+       * repetition and stays. */
       if (k && here && k === sectionName(a.sectionId).toUpperCase()) { k = ''; }
       if (!k && !a.wire) { return null; }
+      var chip = a.wire ? el('span', {
+        'class': 'news-wirechip',
+        title: 'Agency copy. This outlet did not write it and did not check it.'
+      }, 'WIRE') : null;
+      if (k && (here || !sec)) {
+        if (!chip) { return el('p', { 'class': 'news-eyebrow news-kicker' }, k); }
+        return el('p', { 'class': 'news-eyebrow' },
+          el('span', { 'class': 'news-kicker' }, k), chip);
+      }
       return el('p', { 'class': 'news-eyebrow' },
-        k ? kickerNode(a, k, here) : null,
-        a.wire ? el('span', {
-          'class': 'news-wirechip',
-          title: 'Agency copy. This outlet did not write it and did not check it.'
-        }, 'WIRE') : null);
+        k ? link('/section/' + encodeURIComponent(String(sec.id)), k,
+                 'news-kicker news-kicker-link') : null,
+        chip);
     }
 
     function byline(a) {
