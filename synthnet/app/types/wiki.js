@@ -274,6 +274,24 @@
 
       var walk = rows.slice().reverse();      /* oldest first */
 
+      /* Every article's stream divides the same clock by the same interval,
+       * so every article's newest edit lands in the same slot -- and Recent
+       * Changes showed all eighteen articles edited "10 min ago", one under
+       * the other, which is the most obviously generated thing this wiki has
+       * ever put on a screen. Nothing asserted on it; a screenshot did.
+       *
+       * Each article gets a fixed phase inside the interval, from its own id,
+       * so the eighteen spread across three hours the way a wiki's recent
+       * changes actually look. Still pure, still no storage: same article,
+       * same offset, forever. */
+      var phase = live.hash32('phase:' + site.domain + ':' + art.id) %
+                  (EDIT_INTERVAL_MIN * 60000);
+      for (var pi = 0; pi < walk.length; pi++) {
+        walk[pi] = {
+          at: walk[pi].at - phase, seed: walk[pi].seed, item: walk[pi].item
+        };
+      }
+
       /* stream() cannot walk back past EPOCH, and EPOCH is recent -- so on
        * a fresh build a 190-minute stream has about eight slots in it, full
        * stop. Eight revisions is a history for a page created last Tuesday,

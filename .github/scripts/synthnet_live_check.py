@@ -1115,6 +1115,39 @@ def main():
                 else:
                     notes.append("no talk post is signed later than now")
 
+                # Recent changes is the one page where every article's
+                # stream is visible side by side, and they all divide the
+                # same clock by the same interval -- so every article's
+                # newest edit landed in the same slot and the page read
+                # "10 min ago" eighteen times in a column. A screenshot
+                # caught it; nothing else could have.
+                page.evaluate(
+                    "(u) => SYNTH.engine.navigate(u, {push: false})",
+                    "synth://%s/changes" % wiki)
+                page.wait_for_timeout(300)
+                rc = page.evaluate("""() => {
+                  const rows = Array.from(document.querySelectorAll('.wiki-rcwhen'));
+                  return {
+                    at: rows.slice(0, 20).map(n => Number(n.dataset.lvAgo)),
+                    labels: rows.slice(0, 12).map(n => n.textContent)
+                  };
+                }""")
+                if len(rc["at"]) < 10:
+                    problems.append(
+                        f"recent changes lists {len(rc['at'])} rows")
+                else:
+                    span = (max(rc["at"]) - min(rc["at"])) // 60000
+                    distinct = len(set(rc["labels"]))
+                    if span < 60 or distinct < 4:
+                        problems.append(
+                            f"recent changes: 20 edits inside {span} minutes "
+                            f"and {distinct} distinct times on the first 12 "
+                            "rows -- every article is on the same clock")
+                    else:
+                        notes.append(
+                            f"recent changes spreads 20 edits over {span} "
+                            f"minutes, {distinct} distinct times on screen")
+
                 # THE COLLISION, both halves, one run, two page loads.
                 page.evaluate(
                     "(u) => SYNTH.engine.navigate(u, {push: false})",
