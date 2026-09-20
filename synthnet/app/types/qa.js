@@ -50,7 +50,15 @@ window.SYNTH = window.SYNTH || {};
         if (out && out.length) { return out; }
       } catch (e) { /* fall */ }
     }
-    return p.slice(0, count || 3);
+    /* Fallback for when live.js is missing. `p` may be a list of POOL NAMES
+     * rather than items, and slicing that hands back the strings
+     * "forumTopics" and "socialPosts" as if they were posts. Resolve first. */
+    var flat = p, fi;
+    if (typeof flat[0] === 'string') {
+      flat = [];
+      for (fi = 0; fi < p.length; fi++) { flat = flat.concat(pool(p[fi])); }
+    }
+    return flat.slice(0, count || 3);
   }
 
   function pool(name) {
@@ -302,7 +310,7 @@ window.SYNTH = window.SYNTH || {};
 
     var live = streamed(
       'qa:' + ctx.site.domain + ':newq',
-      pool('forumTopics').concat(pool('newsItems')),
+      ['forumTopics', 'newsItems'],
       9,
       4
     );
@@ -440,7 +448,7 @@ window.SYNTH = window.SYNTH || {};
 
     var live = streamed(
       'qa:' + ctx.site.domain + ':a:' + q.id,
-      pool('mediaComments').concat(pool('blogPosts')),
+      ['mediaComments', 'blogPosts'],
       8,
       3
     );

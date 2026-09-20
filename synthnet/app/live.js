@@ -126,29 +126,27 @@
 
   function pad(n) { return n < 10 ? '0' + n : String(n); }
 
-  /* Times in site JSON are wall-clock strings -- "2019-04-11T10:22:00" -- and
-   * times from the live clock are epoch ms. Both reach ago(), so both are
-   * parsed here.
+  /* Times from the live clock are epoch ms. Times on disk are strings, and
+   * the content writes them FOUR different ways, because four different kinds
+   * of page show them four different ways:
    *
-   * Passing a string used to fail silently and completely: `now() - "2019-.."`
-   * is NaN, every `d < X` below is therefore false, and the function fell
-   * through to the absolute date at the bottom, which does parse the string.
-   * So a question asked in 2019 rendered as "11 Apr", with no year, on a site
-   * being read in 2026. Nothing threw and it looked like a date.
-   *
-   * Parsed by parts rather than through Date.parse, which reads a bare
-   * date-time as UTC under ES5 and as local under ES2016 -- a difference that
-   * would move every authored timestamp by hours depending on the engine. */
-  /* Content on disk writes times three different ways, because three
-   * different kinds of page show them three different ways:
-   *
-   *   2019-04-11T10:22:00      question and dispatch timestamps
+   *   2019-04-11T10:22:00      a question or a wire dispatch
    *   September 18, 2026       a newspaper's edition date
    *   Sep 20, 2026 7:58 AM     a post in a feed
+   *   04 Mar 2017              a forum member's join date
    *
-   * All three are here so that callers stop each keeping a half-right parser
-   * of their own, which is what produced a renderer that silently did
-   * nothing on two formats out of three.
+   * All four live here so callers stop each keeping a half-right parser of
+   * their own. That is not hypothetical: passing a string used to fail
+   * silently and completely -- `now() - "2019-.."` is NaN, so every
+   * comparison in ago() was false and it fell through to the absolute date
+   * at the bottom, which does parse strings. A question asked in 2019
+   * rendered as "11 Apr", no year, on a page being read in 2026. Nothing
+   * threw. It looked like a date.
+   *
+   * The fourth shape is the forum join date, and half of those carry no day
+   * at all ("Mar 2017", 233 of them against 201 with a day). Those parse to
+   * the first of the month, and callers that need a real day -- a join
+   * anniversary, say -- have to check `toMsHasDay` rather than assume.
    *
    * Parsed by parts, never Date.parse: a bare date-time reads as UTC under
    * ES5 and as local under ES2016, which would move every authored timestamp
@@ -156,6 +154,9 @@
   var AT_ISO = /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/;
   var AT_WORD =
     /^([A-Za-z]{3,9})\.?\s+(\d{1,2}),\s*(\d{4})(?:[,\s]+(\d{1,2}):(\d{2})\s*([AaPp])?)?/;
+  /* "04 Mar 2017" and "Mar 2017". The day is optional and its absence is
+   * information, so it is reported rather than defaulted away. */
+  var AT_DMY = /^(?:(\d{1,2})\s+)?([A-Za-z]{3,9})\.?\s+(\d{4})\s*$/;
 
   function monthIndex(name) {
     var n = String(name || '').slice(0, 3).toLowerCase(), i;
@@ -196,7 +197,29 @@
       ).getTime();
       return isFinite(w) ? w : null;
     }
+
+    m = AT_DMY.exec(s);
+    if (m) {
+      var di = monthIndex(m[2]);
+      if (di < 0) { return null; }
+      var d = new Date(
+        parseInt(m[3], 10), di, m[1] ? parseInt(m[1], 10) : 1
+      ).getTime();
+      return isFinite(d) ? d : null;
+    }
     return null;
+  }
+
+  /* Whether a date string actually named a day, as opposed to parsing to the
+   * first of the month because that is all there was. A join anniversary is
+   * meaningless without this, and "Mar 2017" would otherwise silently become
+   * the 1st of March and celebrate itself. */
+  function hasDay(v) {
+    if (typeof v === 'number' || v instanceof Date) { return true; }
+    var s = String(v === null || v === undefined ? '' : v);
+    if (AT_ISO.test(s) || AT_WORD.test(s)) { return true; }
+    var m = AT_DMY.exec(s);
+    return !!(m && m[1]);
   }
 
   /* "just now" / "6 min ago" / "3 hours ago" / "12 Mar" / "11 Apr 2019" */
@@ -253,7 +276,28 @@
    * stay frequent enough to carry the texture the grammar cannot. */
   var GRAMMAR_SHARE = 0.72;
 
+  /* An array of POOL NAMES, rather than an array of items.
+   *
+   * This distinction is the whole reason twelve renderers were drawing from
+   * hand-written entries only. A site that wants two pools -- a board shows
+   * forum topics and social posts together -- concatenated them itself and
+   * passed the result, and a plain array is not a pool name, so virtual()
+   * declined to compose and the grammar never ran. The board had 149 items
+   * forever where it could have had 246 and climbing.
+   *
+   * So a list of strings is now a first-class pool. */
+  function isNameList(v) {
+    return Array.isArray(v) && v.length > 0 && typeof v[0] === 'string';
+  }
+
   function resolvePool(pool) {
+    if (isNameList(pool)) {
+      var joined = [], n;
+      for (n = 0; n < pool.length; n++) {
+        joined = joined.concat(resolvePool(pool[n]));
+      }
+      return joined;
+    }
     if (Array.isArray(pool)) return pool;
     if (pool && pool.isVirtual) return pool;
     if (typeof pool !== 'string') return [];
@@ -291,7 +335,16 @@
     if (!written || !written.length) return written || [];
     if (written.isVirtual) return written;
     if (!SYNTH.grammar || typeof SYNTH.grammar.makes !== 'function') return written;
-    if (!SYNTH.grammar.makes(poolName)) return written;
+
+    /* poolName may be a list, for a site that streams two pools at once.
+     * Keep only the names the grammar can actually compose; if none of them
+     * can be, there is nothing to add and the written array stands. */
+    var names = isNameList(poolName) ? poolName : [poolName];
+    var makeable = [], mi;
+    for (mi = 0; mi < names.length; mi++) {
+      if (SYNTH.grammar.makes(names[mi])) { makeable.push(names[mi]); }
+    }
+    if (!makeable.length) return written;
 
     return {
       /* An explicit flag rather than duck-typing on .at(). Both arrays and
@@ -306,8 +359,14 @@
       written: written.length,
       at: function (index, seed) {
         if (index < written.length) return written[index];
+        /* Which kind of thing to compose, when the site streams more than
+         * one. Hashed off the seed so it is stable for a slot, rather than
+         * alternating, which would read as a pattern. */
+        var name = makeable.length === 1
+          ? makeable[0]
+          : makeable[hash32('mk:' + seed) % makeable.length];
         var made = null;
-        try { made = SYNTH.grammar.make(poolName, seed); } catch (e) { made = null; }
+        try { made = SYNTH.grammar.make(name, seed); } catch (e) { made = null; }
         return made || written[index % written.length];
       }
     };
@@ -493,7 +552,7 @@
   function stream(key, poolOrName, intervalMin, count) {
     /* A name gets the grammar folded in; a pre-filtered array does not,
      * unless the caller wrapped it with live.virtual() itself. */
-    var pool = (typeof poolOrName === 'string')
+    var pool = (typeof poolOrName === 'string' || isNameList(poolOrName))
       ? virtual(resolvePool(poolOrName), poolOrName)
       : resolvePool(poolOrName);
     if (!pool.length) return [];
@@ -716,6 +775,7 @@
      * wall-clock string and a streamed one is epoch ms, and every one of them
      * had its own half-right parser. */
     toMs: toMs,
+    toMsHasDay: hasDay,
     clock: clock,
     longDate: longDate,
     stream: stream,

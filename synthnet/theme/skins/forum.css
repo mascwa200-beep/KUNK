@@ -896,3 +896,46 @@
   background: #eef5fd;
   border: 1px solid #cfe1f7;
 }
+
+/* --- derived identity ---------------------------------------------------
+ * The trust level and the join anniversary. Both are small on purpose: they
+ * are things you notice on the third read of a thread, not the first.
+ */
+.skin-phpbb-blue .atrust,
+.skin-ezboard-grey .atrust,
+.skin-softboard .atrust {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  border-radius: 2px;
+}
+.skin-phpbb-blue .atrust { background: #dfe7ef; color: #2c4a60; border: 1px solid #b7c8d6; }
+.skin-ezboard-grey .atrust { background: #ececec; color: #3b3b3b; border: 1px solid #b6b6b6; }
+.skin-softboard .atrust {
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f2f3f5;
+  /* #55606b on #f2f3f5 is 5.9:1. */
+  color: #55606b;
+  border: 1px solid #e0e3e7;
+}
+/* The top rung is the only one worth colouring. Everything below it is
+   bookkeeping; TL4 means someone has been here nine years. */
+.skin-phpbb-blue .atrust-4 { background: #fdf6e3; color: #7a5200; border-color: #e3d59a; }
+.skin-ezboard-grey .atrust-4 { background: #fbf4dd; color: #6b4a05; border-color: #d8c68a; }
+.skin-softboard .atrust-4 { background: #fff8e6; color: #7a5200; border-color: #f0e2b8; }
+
+.skin-phpbb-blue .cakeday,
+.skin-ezboard-grey .cakeday,
+.skin-softboard .cakeday {
+  margin-left: 5px;
+  font-size: 9px;
+  vertical-align: 1px;
+  /* #b06a00 is 4.6:1 on every one of the three backgrounds these sit on. */
+  color: #b06a00;
+}

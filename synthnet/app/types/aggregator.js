@@ -42,15 +42,23 @@ window.SYNTH = window.SYNTH || {};
     return String(n);
   }
 
-  function streamed(key, pool, intervalMin, count) {
-    if (!pool || !pool.length) { return []; }
+  function streamed(key, p, intervalMin, count) {
+    if (!p || !p.length) { return []; }
     if (has('live') && SYNTH.live.stream) {
       try {
-        var out = SYNTH.live.stream(key, pool, intervalMin, count);
+        var out = SYNTH.live.stream(key, p, intervalMin, count);
         if (out && out.length) { return out; }
       } catch (e) { /* fall */ }
     }
-    return pool.slice(0, count || 3);
+    /* Fallback for when live.js is missing. `p` may be a list of POOL NAMES
+     * rather than items, and slicing that hands back the strings
+     * "forumTopics" and "socialPosts" as if they were posts. Resolve first. */
+    var flat = p, fi;
+    if (typeof flat[0] === 'string') {
+      flat = [];
+      for (fi = 0; fi < p.length; fi++) { flat = flat.concat(pool(p[fi])); }
+    }
+    return flat.slice(0, count || 3);
   }
 
   /* One line, stripped and cut. Shared, because every renderer that rolled
@@ -188,7 +196,7 @@ window.SYNTH = window.SYNTH || {};
   function streamRows(ctx, keySuffix) {
     var items = streamed(
       'agg:' + ctx.site.domain + ':' + keySuffix,
-      pool('newsItems').concat(pool('forumTopics')),
+      ['newsItems', 'forumTopics'],
       11,
       4
     );
@@ -413,7 +421,7 @@ window.SYNTH = window.SYNTH || {};
 
     var live = streamed(
       'agg:' + ctx.site.domain + ':c:' + link.id,
-      pool('mediaComments').concat(pool('socialPosts')),
+      ['mediaComments', 'socialPosts'],
       7,
       3
     );

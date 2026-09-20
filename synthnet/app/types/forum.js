@@ -457,6 +457,101 @@
                    : count + ' new posts since you last looked');
   }
 
+  /* --- who someone is on a forum -----------------------------------------
+   *
+   * Every forum that has ever existed computes a member's title from their
+   * post count. This one did not: `authorTitle` is free text the content
+   * author types, and the generator picks from a fixed list without ever
+   * looking at `authorPosts` (app/grammar.js). The result was 352 posts
+   * titled "Member", including one from an account with 4,106 posts.
+   *
+   * So a RANK is derived, and a ROLE is not. "Administrator", "Moderator",
+   * "Site Admin" and the bot titles are given to someone by a person and
+   * outrank anything arithmetic; the generic rungs are recomputed from the
+   * number next to them, which is what a forum does.
+   */
+  var RANKS = [
+    [0, 'Newly registered'],
+    [10, 'Junior Member'],
+    [50, 'Member'],
+    [250, 'Senior Member'],
+    [1000, 'Regular'],
+    [5000, 'Lifer']
+  ];
+
+  /* Titles that are a job rather than a score. Matched case-insensitively
+   * and kept exactly as the content wrote them. */
+  var ROLE_TITLES = ['administrator', 'site admin', 'admin', 'moderator',
+                     'mod', 'bot', 'automated listing assistant', 'staff',
+                     'founder', 'banned'];
+
+  function isRole(title) {
+    var t = String(title || '').toLowerCase().trim();
+    if (!t) { return false; }
+    for (var i = 0; i < ROLE_TITLES.length; i++) {
+      if (t === ROLE_TITLES[i]) { return true; }
+    }
+    /* "Automated listing assistant" and friends: anything that says what the
+     * account is for rather than how much it has posted. */
+    return t.indexOf('admin') >= 0 || t.indexOf('mod') >= 0 ||
+           t.indexOf('bot') >= 0 || t.indexOf('automated') >= 0;
+  }
+
+  function rankFor(posts) {
+    var n = (typeof posts === 'number') ? posts : parseInt(posts, 10);
+    if (!isFinite(n) || n < 0) { n = 0; }
+    var name = RANKS[0][1];
+    for (var i = 0; i < RANKS.length; i++) {
+      if (n >= RANKS[i][0]) { name = RANKS[i][1]; }
+    }
+    return name;
+  }
+
+  function titleFor(post) {
+    if (isRole(post.authorTitle)) { return String(post.authorTitle); }
+    return rankFor(post.authorPosts);
+  }
+
+  /* Trust, on the ladder every modern forum uses, from post count AND age
+   * together -- which is the point of it. A thousand posts in a fortnight is
+   * not the same account as a thousand posts over nine years, and a forum
+   * that cannot tell them apart is one a spammer walks into. */
+  function trustFor(post) {
+    var L = window.SYNTH.live;
+    var posts = (typeof post.authorPosts === 'number') ? post.authorPosts : 0;
+    var joined = (L && L.toMs) ? L.toMs(post.authorJoined) : null;
+    if (joined === null) { return null; }
+    var years = ((L && L.now ? L.now() : Date.now()) - joined) / 31557600000;
+    if (years < 0) { years = 0; }
+    if (posts >= 500 && years >= 3) { return { n: 4, label: 'Trust level 4 — veteran' }; }
+    if (posts >= 200 && years >= 1) { return { n: 3, label: 'Trust level 3 — regular' }; }
+    if (posts >= 30 && years >= 0.25) { return { n: 2, label: 'Trust level 2 — member' }; }
+    if (posts >= 5) { return { n: 1, label: 'Trust level 1 — basic' }; }
+    return { n: 0, label: 'Trust level 0 — new' };
+  }
+
+  /* A join anniversary, but only where there is a date to have one on. More
+   * than half the join strings in this network are "Mar 2017" with no day at
+   * all, and inventing one so the slice could celebrate itself would be
+   * making up a fact about a person. Those accounts get nothing. */
+  function cakeYears(post) {
+    var L = window.SYNTH.live;
+    var joined = (L && L.toMs) ? L.toMs(post.authorJoined) : null;
+    if (joined === null) { return 0; }
+    return new Date(L.now()).getFullYear() - new Date(joined).getFullYear();
+  }
+
+  function isCakeDay(post) {
+    var L = window.SYNTH.live;
+    if (!L || !L.toMs || !L.toMsHasDay) { return false; }
+    if (!L.toMsHasDay(post.authorJoined)) { return false; }
+    var joined = L.toMs(post.authorJoined);
+    if (joined === null) { return false; }
+    var j = new Date(joined), t = new Date(L.now());
+    if (j.getFullYear() >= t.getFullYear()) { return false; }
+    return j.getMonth() === t.getMonth() && j.getDate() === t.getDate();
+  }
+
   function postNode(ctx, topic, post, globalIndex, page) {
     var el = ctx.el;
     /* The thread starter, marked wherever they turn up further down it.
@@ -465,14 +560,26 @@
     var isOp = !!post.author && !!topic.author &&
       String(post.author).toLowerCase() === String(topic.author).toLowerCase();
 
+    var trust = trustFor(post);
+    var cake = isCakeDay(post);
+
     var left = el('div', { 'class': 'post-author' },
       avatarBox(el, post.avatarSeed, post.author),
       el('div', { 'class': 'aname' },
         txt(post.author, 'guest'),
         isOp ? el('span', { 'class': 'optag', title: 'started this thread' },
           'OP') : null),
-      el('div', { 'class': 'atitle' }, txt(post.authorTitle, 'Member')),
-      el('div', { 'class': 'ameta' }, 'Joined: ' + txt(post.authorJoined, '—')),
+      el('div', { 'class': 'atitle' }, titleFor(post)),
+      trust ? el('div', {
+        'class': 'atrust atrust-' + trust.n,
+        title: trust.label
+      }, 'TL' + trust.n) : null,
+      el('div', { 'class': 'ameta' },
+        'Joined: ' + txt(post.authorJoined, '—'),
+        cake ? el('span', {
+          'class': 'cakeday',
+          title: 'Joined on this day, ' + cakeYears(post) + ' years ago'
+        }, '●') : null),
       el('div', { 'class': 'ameta' }, 'Posts: ' + num(post.authorPosts)));
 
     var body = el('div', { 'class': 'post-body' });

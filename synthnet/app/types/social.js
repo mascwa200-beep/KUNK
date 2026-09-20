@@ -309,11 +309,18 @@
             'another state. The original is credited to a utility trade ' +
             'magazine.',
       src: 'Sources: reverse image search; the magazine’s own archive' },
+    /* Canon: the diner closed in 2006; the 1977 fire was in the kitchen and
+     * it reopened eleven days later. An earlier version of this note had the
+     * two the wrong way round, which put a "Readers added context" box --
+     * sitting in the half of this bank that is meant to be RIGHT -- on the
+     * side of the mistake the network already models a bot making on
+     * gridline.social. askverity.com states it correctly and is the source. */
     { on: ['kestrel', 'diner'],
       head: 'Readers added context',
-      body: 'The Blue Kestrel diner closed in 1977 after a kitchen fire, ' +
-            'not in 2006. The 2006 date is when the building was last sold.',
-      src: 'Sources: kestrel-journal.net' },
+      body: 'The Blue Kestrel closed in 2006. The 1977 fire was in the ' +
+            'kitchen and the diner reopened eleven days later; the two have ' +
+            'been merged in retellings ever since.',
+      src: 'Sources: kestrel-journal.net; Marion Teale waitressed there 1971–1979' },
     { on: ['trail', 'branch', 'rail', 'trestle', 'crossing'],
       head: 'Readers added context',
       body: 'The Coyne Creek trestle on this route has been fenced since ' +
