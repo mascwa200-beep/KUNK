@@ -19,7 +19,9 @@ on:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
+      - ".github/fixtures/modes/**"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/workflows/synthnet.yml"
@@ -28,7 +30,9 @@ on:
       - "synthnet/**"
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
+      - ".github/fixtures/modes/**"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
       - ".github/workflows/synthnet.yml"
@@ -207,6 +211,16 @@ jobs:
         # emitted a dead link at every milestone while CI stayed green.
         # This reads the app's source AND drives it through every fame tier.
         run: python3 .github/scripts/synthnet_link_check.py --root synthnet
+
+      - name: Every renderer mode has to render once
+        # You cannot render a route no site serves, so a renderer can ship
+        # having never run. Four did: wire, newsletter, chat, and the three
+        # modes news gained. Three threw on first contact with data and the
+        # fourth drew the wrong thing, and no check here could see any of it.
+        # So this brings its own sites -- .github/fixtures/modes, staged into
+        # a throwaway tree -- and nothing on the network has to keep a
+        # liveblog open for it to go on working.
+        run: python3 .github/scripts/synthnet_modes_check.py --root synthnet
 
       - name: The Java clock and the JavaScript clock must agree
         # The widget recomputes its counts natively, because when the app is

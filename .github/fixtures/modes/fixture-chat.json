@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "domain": "fixture.chat",
+  "title": "Fixture Chat",
+  "type": "chat",
+  "era": "2026",
+  "skin": "chatdark",
+  "description": "A fixture chat that exists only to prove the renderer runs.",
+  "links": [],
+  "data": {
+    "serverName": "Verity Rail Fans",
+    "members": 1840,
+    "online": 91,
+    "channels": [
+      {
+        "id": "general",
+        "name": "general",
+        "topic": "be nice, no crossposting from the board",
+        "messages": [
+          {
+            "by": "halsey_branch",
+            "at": "2026-09-20T05:40:00Z",
+            "body": "anyone else out at gridfall? lights just went"
+          },
+          {
+            "by": "coyne_flats",
+            "at": "2026-09-20T05:41:00Z",
+            "body": "yeah whole block"
+          },
+          {
+            "by": "halsey_branch",
+            "at": "2026-09-20T05:44:00Z",
+            "body": "substation again probably"
+          }
+        ]
+      },
+      {
+        "id": "archive",
+        "name": "forum-archive",
+        "kind": "archive",
+        "topic": "dump from forums.verityrail.org, read only, images did not come across",
+        "messages": [
+          {
+            "by": "archivebot",
+            "at": "2024-02-02T00:00:00Z",
+            "body": "[2006-04-11] TrainNut62 wrote: the crossing gates at quarry road are original, the relay housing is not\n\n[img:photo:gates quarry 1998]"
+          },
+          {
+            "by": "archivebot",
+            "at": "2024-02-02T00:00:01Z",
+            "body": "[2006-04-11] MarrowBend wrote: source? I walked that line in 04 and the housing looked original to me\n\n[img:photo:IMG 0042] [img:photo:scan003]"
+          }
+        ]
+      }
+    ]
+  }
+}

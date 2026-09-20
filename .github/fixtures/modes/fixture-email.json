@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "domain": "fixture.email",
+  "title": "Fixture Letter",
+  "type": "newsletter",
+  "era": "2026",
+  "skin": "inbox-letter",
+  "description": "A fixture newsletter that exists only to prove the renderer runs.",
+  "links": [],
+  "data": {
+    "title": "The Fixture Letter",
+    "author": "A. Fixture",
+    "subscribers": 312,
+    "price": "$5/month",
+    "issues": [
+      {
+        "id": "i1",
+        "date": "2026-09-18",
+        "number": 44,
+        "subject": "The culvert item, again",
+        "intro": "Short one this week. I spent most of it on hold with the clerk's office.",
+        "sections": [
+          {
+            "name": "What I actually chased",
+            "items": [
+              {
+                "headline": "Third deferral on Quarry Road",
+                "blurb": "The contract has now been deferred in June, August and September. Nobody has said why on the record.",
+                "link": "synth://fixture.news/article/a1"
+              }
+            ]
+          },
+          {
+            "name": "Three things, briefly",
+            "items": [
+              {
+                "headline": "The broadband number is bad",
+                "blurb": "It measures advertised speed. It has been quoted four times this month."
+              },
+              {
+                "headline": "Water board meets Tuesday",
+                "blurb": "Agenda is up. Item 7 is the one to read."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Carrow Wireless Repair",
+          "text": "Cracked screen? Depot Street, Gridfall."
+        }
+      },
+      {
+        "id": "i2",
+        "date": "2026-09-11",
+        "number": 43,
+        "subject": "The FOIA came back mostly black",
+        "intro": "They redacted the part I asked for and left the cover letter in."
+      }
+    ]
+  }
+}
