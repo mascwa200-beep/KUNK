@@ -321,7 +321,13 @@ window.SYNTH = window.SYNTH || {};
 
     if (s.steps && s.steps.length) {
       var stepsSec = E('section', { 'class': 'steps' });
-      stepsSec.appendChild(E('h2', {}, 'How to apply'));
+      /* A county portal serves more than application processes. The
+       * sheriff's daily blotter is a numbered list of eighteen calls and
+       * this heading called it "How to apply", which is the same trap as
+       * the form note below: a renderer deciding what content means. The
+       * service says what its list is when it knows; the default is what a
+       * service page usually is. */
+      stepsSec.appendChild(E('h2', {}, txt(s.stepsLabel) || 'How to apply'));
       var ol = E('ol', {});
       var i;
       for (i = 0; i < s.steps.length; i++) {

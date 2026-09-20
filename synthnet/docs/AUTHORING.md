@@ -549,13 +549,19 @@ Mostly phishing, newsletters nobody signed up for, and three real messages.
 { agency, motto,
   notices:  [ "..." ],
   services: [ { id, name, blurb, status, lastUpdated,
-                steps: [ "..." ],
+                steps: [ "..." ], stepsLabel,
                 forms: [ { name, note } ] } ] }
 ```
 
 `status` is `online` | `degraded` | `offline` | `paper-only`. `lastUpdated`
 should frequently be years ago. `note` on a form is where "requires Internet
-Explorer 11" goes.
+Explorer 11" goes, and it takes inline markup, so a note can link.
+
+`steps` is headed **How to apply** unless `stepsLabel` says otherwise. A
+county portal serves more than applications — the sheriff's daily blotter is
+a numbered list of eighteen calls, and it spent a while headed "How to apply"
+because the renderer decided what the list meant. If your list is not an
+application process, name it.
 
 ### stream
 
