@@ -21,6 +21,7 @@ on:
       - ".github/scripts/synthnet_user_check.py"
       - ".github/fixtures/modes/**"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_function_check.py"
       - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
@@ -32,6 +33,7 @@ on:
       - ".github/scripts/synthnet_user_check.py"
       - ".github/fixtures/modes/**"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_function_check.py"
       - ".github/scripts/synthnet_modes_check.py"
       - ".github/scripts/synthnet_live_check.py"
       - ".github/scripts/synthnet_slotmath_check.py"
@@ -214,6 +216,23 @@ jobs:
         # emitted a dead link at every milestone while CI stayed green.
         # This reads the app's source AND drives it through every fame tier.
         run: python3 .github/scripts/synthnet_link_check.py --root synthnet
+
+      - name: Everything that looks like a control has to be one
+        # Every other check here asks whether a page RENDERS. This asks
+        # whether it WORKS. A renderer writes el('span', {}, 'catalog') and
+        # three words sit at the top of a board in link colour for a year --
+        # nothing about that span is an error, it renders perfectly, and it
+        # is a lie to the reader. There were fifteen of them, 453 occurrences,
+        # the biggest being seven nav items on every page of eight forums.
+        #
+        # It cannot be answered by looking: a handler may be attached with
+        # addEventListener, which leaves no trace a page can read, and this
+        # app delegates clicks from #synth-viewport, so every element has a
+        # listener above it. So pass 2 PRESSES each distinct control and
+        # watches for the route, the DOM or the scroll to move. Likewise a
+        # dead end is found by asking each site for a path that cannot exist
+        # and recognising that answer, rather than guessing at its wording.
+        run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 6
 
       - name: Every renderer mode has to render once
         # You cannot render a route no site serves, so a renderer can ship
