@@ -673,7 +673,12 @@
   color: #1c1c1e;
   overflow-wrap: break-word;
 }
-.skin-softboard .tbar-sub { margin-top: 5px; font-size: 13px; color: #6b6f76; }
+/* display:block, which the other two skins set and this one did not, so
+   the title ran straight into the meta: "(last edited 2019)Sticky 4
+   posts". Both are spans; the renderer relies on the skin for this. */
+.skin-softboard .tbar-sub {
+  display: block; margin-top: 5px; font-size: 13px; color: #6b6f76;
+}
 .skin-softboard .tmeta { font-size: 13px; color: #6b6f76; }
 
 /* The post. The 2004 skins put the author in a left column with a bordered
@@ -853,4 +858,41 @@
   /* Three grey facts under a title is one too many on a 360px row. The
      last-post column carries the time, which is the one people scan for. */
   .skin-softboard .col-num { display: none; }
+}
+
+/* The thread starter's tag, on all three forum skins: same idea, each
+   decade's clothes. */
+.skin-phpbb-blue .optag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  color: #ffffff;
+  background: #1a6ea8;
+  border: 1px solid #0b4a78;
+}
+.skin-ezboard-grey .optag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #3b3b3b;
+  background: #e2e2e2;
+  border: 1px solid #a9a9a9;
+}
+.skin-softboard .optag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  /* #0a4f9e on #eef5fd is 7.1:1. */
+  color: #0a4f9e;
+  background: #eef5fd;
+  border: 1px solid #cfe1f7;
 }

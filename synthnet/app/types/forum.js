@@ -459,9 +459,18 @@
 
   function postNode(ctx, topic, post, globalIndex, page) {
     var el = ctx.el;
+    /* The thread starter, marked wherever they turn up further down it.
+     * On a long thread this is the difference between reading an argument
+     * and reading a person answering everybody in turn. */
+    var isOp = !!post.author && !!topic.author &&
+      String(post.author).toLowerCase() === String(topic.author).toLowerCase();
+
     var left = el('div', { 'class': 'post-author' },
       avatarBox(el, post.avatarSeed, post.author),
-      el('div', { 'class': 'aname' }, txt(post.author, 'guest')),
+      el('div', { 'class': 'aname' },
+        txt(post.author, 'guest'),
+        isOp ? el('span', { 'class': 'optag', title: 'started this thread' },
+          'OP') : null),
       el('div', { 'class': 'atitle' }, txt(post.authorTitle, 'Member')),
       el('div', { 'class': 'ameta' }, 'Joined: ' + txt(post.authorJoined, '—')),
       el('div', { 'class': 'ameta' }, 'Posts: ' + num(post.authorPosts)));
