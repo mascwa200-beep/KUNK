@@ -38,20 +38,24 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 # the test below asserts they agree, so drift fails the build rather than
 # silently weakening the check.
 PATH_PREFIXES = {
-    "forum": {"board", "topic", "modlog"},
-    "social": {"user", "post"},
+    # faq/search/members/account arrived with the decor sweep: the nav items
+    # that had been inert spans for a year now go somewhere.
+    "forum": {"board", "topic", "modlog", "faq", "search", "members",
+              "account"},
+    "social": {"user", "post", "search", "members", "account"},
     "blog": {"post", "tag"},
     "news": {"section", "article", "live", "factcheck", "corrections"},
     # A living wiki is history, diffs, talk and recent changes as well
     # as articles. The 1998-2008 wiki serves the first two only, but the
     # prefix table is per TYPE, not per site.
     "wiki": {"wiki", "category", "history", "diff", "talk", "changes"},
-    "media": {"watch", "channel"},
+    "media": {"watch", "channel", "channels", "members", "search", "signup",
+              "upload"},
     "page": None,
     "aggregator": {"board", "item"},
     "qa": {"tag", "q"},
     "board": {"t", "catalog"},
-    "shop": {"c", "p"},
+    "shop": {"c", "p", "cart"},
     "market": {"c", "l"},
     "assistant": {"chat"},
     "mail": {"f", "m"},
@@ -59,7 +63,7 @@ PATH_PREFIXES = {
     "stream": {"w", "c"},
     "dash": set(),
     "control": {"packs", "compose", "me", "storage"},
-    "wire": {"d", "cat"},
+    "wire": {"d", "cat", "kw"},
     "newsletter": {"i"},
     "chat": {"c"},
 }

@@ -338,7 +338,7 @@
             "authorJoined": "Mar 2024",
             "avatarSeed": "condbot",
             "time": "30 Apr 2025, 05:02",
-            "body": "Good morning. This is the daily conditions update for the Verity Branch Trail.\n\nConditions for Saturday are expected to be generally favourable, with a high of NaN C and winds of null mph.\n\nAll sections of the 11.4 mile trail are currently open.\n\nConditions data is aggregated from regional feeds including the county conditions service at [url=synth://dash.verity.net/]dash.verity.net[/url] and AutoLocal_Feed.\n\nPlan your visit today and discover everything the trail has to offer the community.",
+            "body": "Good morning. This is the daily conditions update for the Verity Branch Trail.\n\nConditions for Saturday are expected to be generally favourable, with a high of {{temp_high}} C and winds of {{wind}} mph.\n\nAll sections of the 11.4 mile trail are currently open.\n\nConditions data is aggregated from regional feeds including the county conditions service at [url=synth://dash.verity.net/]dash.verity.net[/url] and AutoLocal_Feed.\n\nPlan your visit today and discover everything the trail has to offer the community.",
             "signature": ""
           },
           {

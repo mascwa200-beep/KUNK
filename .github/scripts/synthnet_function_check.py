@@ -172,7 +172,21 @@ PROBE = r"""() => {
   const all = view.querySelectorAll('*');
   for (const n of all) {
     const txt = (n.textContent || '').replace(/\s+/g, ' ').trim();
-    if (!txt || txt.length > 60) continue;
+    if (txt.length > 60) continue;
+    /* A control with NO text is still a control. media.js draws its
+     * transport row as empty spans styled into shapes, and skipping
+     * textless nodes meant the volume control -- dead, next to three live
+     * ones -- was invisible to this check while it reported the row clean.
+     * An empty node only counts if the browser says it is clickable or it
+     * is a button, because otherwise every spacer div on the network is a
+     * finding. */
+    if (!txt) {
+      const est = getComputedStyle(n);
+      const isBtn = n.tagName === 'BUTTON' ||
+                    (n.getAttribute && n.getAttribute('role') === 'button');
+      if (est.cursor !== 'pointer' && !isBtn) continue;
+      if (n.getBoundingClientRect().width < 8) continue;
+    }
     if (n.children.length > 2) continue;            // a container, not a control
     const st = getComputedStyle(n);
     const pointer = st.cursor === 'pointer';
@@ -193,6 +207,11 @@ PROBE = r"""() => {
     out.inert.push({
       tag: tag, cls: String(n.className || '').slice(0, 40),
       text: txt.slice(0, 48),
+      /* Which one of its kind, so pass 2 can find a textless control
+       * again -- tag+class+text does not identify one of four empty spans. */
+      nth: Array.prototype.indexOf.call(
+        view.querySelectorAll(tag + (n.className ? '.' +
+          String(n.className).trim().split(/\s+/).join('.') : '')), n),
       why: pointer ? 'cursor:pointer' : (controlish ? 'is a ' + tag.toLowerCase()
                                                     : 'reads as a control')
     });
@@ -225,9 +244,19 @@ SNAP = r"""() => {
 SNAP_AND_CLICK = r"""(want) => {
   const view = document.getElementById('synth-viewport');
   const nodes = Array.from(view.querySelectorAll(want.tag));
-  const n = nodes.find(x =>
-    (x.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 48) === want.text &&
-    String(x.className || '').slice(0, 40) === want.cls);
+  var n = nodes.find(function (x) {
+    return (x.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 48) === want.text &&
+      String(x.className || '').slice(0, 40) === want.cls;
+  });
+  /* A control with no text cannot be found again by its text. Pass 1 also
+   * records which one of its kind it was; media.js draws its transport row
+   * as empty spans and the dead volume control among them is only
+   * identifiable by position. */
+  if (!n && want.text === '' && want.nth >= 0 && want.cls) {
+    var same = view.querySelectorAll(
+      want.tag + '.' + want.cls.trim().split(/\s+/).join('.'));
+    if (want.nth < same.length) { n = same[want.nth]; }
+  }
   if (!n) return {gone: true};
   const h = view.innerHTML;
   const before = {len: h.length, sig: h.length ? h.charCodeAt(h.length >> 1) : 0,
@@ -301,9 +330,25 @@ def main():
             if args.sites:
                 sites = sites[:args.sites]
 
+            notfound = {}
+
+            def _shape(t):
+                # First forty words, lowered. Enough to tell one renderer's
+                # not-found page from its real ones, loose enough to survive
+                # a counter or a clock inside it.
+                return " ".join(t.lower().split()[:40])
+
             for site in sites:
                 dom, typ = site["d"], site["t"]
                 stats["sites"] += 1
+                try:
+                    page.evaluate(
+                        "(u) => SYNTH.engine.navigate(u, {push: false})",
+                        "synth://%s/zzz-no-such-path-9417/zzz" % dom)
+                    page.wait_for_timeout(150)
+                    notfound[dom] = _shape(page.inner_text("#synth-viewport"))
+                except Exception:
+                    notfound[dom] = None
                 seen, queue = set(), ["/"]
                 while queue and len(seen) < args.pages:
                     path = queue.pop(0)
@@ -329,9 +374,20 @@ def main():
 
                     text = page.inner_text("#synth-viewport")
                     low = text.lower()
-                    if ("page not found" in low or "no page here" in low
-                            or "is not a page on this" in low
-                            or "404" in low[:400]):
+                    # ASK THE SITE what its not-found page looks like,
+                    # rather than guessing at the words.
+                    #
+                    # This used to match a list of phrases. It had four and
+                    # missed social's "Sorry! This page is not available.",
+                    # so a social route serving nothing read as a clean
+                    # sweep -- the adversarial pass caught that, not this
+                    # check. Widening the list then flagged clipvault's
+                    # front page, because a video site says "not available"
+                    # about videos. Words are the wrong instrument. Each
+                    # site is asked for a path that certainly does not
+                    # exist, once, and anything that comes back looking like
+                    # that answer is a dead end.
+                    if notfound.get(dom) and _shape(text) == notfound[dom]:
                         stats["notfound"] += 1
                         findings.setdefault(dom, []).append(
                             {"path": path, "kind": "dead-end",
@@ -374,7 +430,8 @@ def main():
                     page.wait_for_timeout(200)
                     shot = page.evaluate(SNAP_AND_CLICK,
                                          {"tag": f["tag"], "text": f["text"],
-                                          "cls": f["cls"]})
+                                          "cls": f["cls"],
+                                          "nth": f.get("nth", -1)})
                     if shot.get("gone"):
                         verdicts[key] = "vanished"
                         continue

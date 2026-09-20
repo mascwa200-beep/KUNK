@@ -72,8 +72,11 @@ PAGE_BLOCK_KINDS = {"heading", "text", "list", "table", "image", "marquee",
                     "hitcounter", "guestbook", "webring", "buttons"}
 
 PATH_PREFIXES = {
-    "forum": {"board", "topic", "modlog"},
-    "social": {"user", "post"},
+    # faq/search/members/account arrived with the decor sweep: the nav items
+    # that had been inert spans for a year now go somewhere.
+    "forum": {"board", "topic", "modlog", "faq", "search", "members",
+              "account"},
+    "social": {"user", "post", "search", "members", "account"},
     "blog": {"post", "tag"},
     # A news site is not only articles. Live coverage, fact checks and the
     # corrections page are the shapes news actually takes that are not video,
@@ -83,12 +86,13 @@ PATH_PREFIXES = {
     # as articles. The 1998-2008 wiki serves the first two only, but the
     # prefix table is per TYPE, not per site.
     "wiki": {"wiki", "category", "history", "diff", "talk", "changes"},
-    "media": {"watch", "channel"},
+    "media": {"watch", "channel", "channels", "members", "search", "signup",
+              "upload"},
     "page": None,   # any single segment is a page id
     "aggregator": {"board", "item"},
     "qa": {"tag", "q"},
     "board": {"t", "catalog"},
-    "shop": {"c", "p"},
+    "shop": {"c", "p", "cart"},
     "market": {"c", "l"},
     "assistant": {"chat"},
     "mail": {"f", "m"},
@@ -96,7 +100,7 @@ PATH_PREFIXES = {
     "stream": {"w", "c"},
     "dash": set(),          # single page, no sub-paths
     "control": {"packs", "compose", "me", "storage"},
-    "wire": {"d", "cat"},
+    "wire": {"d", "cat", "kw"},
     "newsletter": {"i"},
     "chat": {"c"},
 }
