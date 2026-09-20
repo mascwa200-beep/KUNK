@@ -1,0 +1,431 @@
+{
+  "schema": 1,
+  "domain": "vnetdial.com",
+  "title": "VerityNet Dial-Up",
+  "type": "page",
+  "era": "2004",
+  "skin": "plain-white",
+  "description": "The county dial-up provider as it stood in September 2004: access numbers by town, modem settings, the personal pages policy, webmail, and the outage log.",
+  "tags": ["gridfall", "isp", "dial-up", "verity.net"],
+  "links": [
+    "boards.gridfall.net",
+    "webring.gridfall.net",
+    "verityledger.com",
+    "forums.verityrail.org",
+    "verityrail-preservation.org",
+    "stargazers.verity.net",
+    "ashkettle-wx.net",
+    "marchfield-coop.com",
+    "kestrel-journal.net",
+    "tnorris.verity.net",
+    "marla.verity.net",
+    "mail.verity.net"
+  ],
+  "data": {
+    "navLabel": "VERITYNET",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** NEW 56K BANK IN GRIDFALL -- IN SERVICE SINCE 13 SEPTEMBER -- SAME NUMBER, 782-0700, NOTHING FOR YOU TO CHANGE ***" },
+          { "kind": "image", "seed": "veritynet-letterhead", "imgKind": "banner", "caption": "VerityNet Dial-Up, Inc. -- Gridfall, Verity County" },
+          { "kind": "heading", "level": 1, "text": "VerityNet Dial-Up" },
+          { "kind": "text", "body": "Internet access for Verity County since February 1996. We are two rooms over Corrigan's print shop at 212 Larkin Street in Gridfall, eight modem banks in eight towns, and 1,207 accounts as of the first of this month.\n\nIf you are already a customer the two pages you want are [url=/numbers]Access Numbers[/url] and [url=/setup]Connecting[/url]. If you are thinking about it, [url=/signup]Plans and Signing Up[/url] has the prices and there is not much else to it.\n\nThe office telephone is [b]782-0711[/b]. Support is [b]782-0777[/b]. A person picks both of them up, nine to five Monday through Friday and nine to one on Saturday, and if you get the machine it is because that person is under a desk." },
+          { "kind": "heading", "level": 2, "text": "News" },
+          { "kind": "text", "body": "[b]Monday 20 September 2004 -- the new Gridfall modems are in.[/b]\n\nThe 56k bank went into service at ten past three in the morning on Monday 13 September and has been up since. Forty-eight lines, V.92. The number has not changed. It is still [b]782-0700[/b] and you do not have to do anything at your end.\n\nWhat you will notice, if you notice anything, is that Gridfall answers on the first or second ring instead of the fourth, and that your connect speed goes up. On our lines expect somewhere between 44,000 and 50,666. If you see 31,200 twice running you have landed on one of the twelve old 33.6 modems that are still in the same hunt group until the second week of October. Hang up, wait twenty seconds, dial again, and you will get a new one.\n\nTwo things I want to say plainly, because I have already had four telephone calls about them.\n\n[b]56k is not 56k.[/b] It never was, here or anywhere. The legal ceiling is 53,333 and no telephone line in this county is going to do it. Fifty thousand is a very good day and forty-four is normal.\n\n[b]This does nothing for Milbrook.[/b] Milbrook is on 28.8 equipment and the loops out of that exchange are long, and neither of those is a problem that new modems in Gridfall fixes. Milbrook is next in line. I am not giving a date. The last time I gave a date I was wrong by five months and I am still hearing about it.\n\n-- Ray Tulley" },
+          { "kind": "text", "body": "[b]Tuesday 7 September 2004 -- third circuit ordered.[/b]\n\nWe have had two T1s to the capital since 2001. A third is ordered. The carrier says November. I have written November on the calendar in pencil.\n\n[b]Saturday 4 September 2004 -- Bonnie is on Tuesdays through Saturdays now.[/b]\n\nSaturday morning is when half of you can come in and the other half telephone. Monday the office is me, and I am frequently up a pole somewhere, so Monday you will get the machine more than you would like." },
+          { "kind": "heading", "level": 2, "text": "What is on this site" },
+          { "kind": "list", "ordered": false, "items": [
+            "[url=/numbers]Access Numbers[/url] -- the local number for every town we serve, with speeds and how many lines.",
+            "[url=/signup]Plans and Signing Up[/url] -- what it costs and what you need to have.",
+            "[url=/setup]Connecting[/url] -- every setting, the modem strings, and what to do when it will not connect.",
+            "[url=/mail]Mail and Webmail[/url] -- mail settings, the webmail, the news server.",
+            "[url=/pages]Personal Pages[/url] -- your ten megabytes, what you may put on it, and how to get it there.",
+            "[url=/start]Welcome to the Internet[/url] -- the starter page. If you bought a computer through us this is what opens.",
+            "[url=/status]System Status[/url] -- what is up right now, planned work, and the outage log back to 2003.",
+            "[url=/help]Support and Questions[/url] -- the things we are asked most, answered once."
+          ] },
+          { "kind": "heading", "level": 2, "text": "The office" },
+          { "kind": "table", "head": ["", ""], "rows": [
+            ["Address", "212 Larkin Street, second floor, Gridfall. The street door is between the print shop and the shoe repair. Ring the upper bell."],
+            ["Office", "782-0711"],
+            ["Support", "782-0777"],
+            ["Hours", "Mon-Fri 9:00 to 5:00, Sat 9:00 to 1:00. Closed Sunday and closed the week between Christmas and New Year."],
+            ["Owner", "Ray Tulley"],
+            ["Office and billing", "Bonnie Selke, Tuesday through Saturday"],
+            ["Pages and the start page", "Eddie Tulley, afternoons, and not in the summer"],
+            ["Accounts", "1,207 as of 1 September 2004"],
+            ["Started", "February 1996, with eight lines and a room half this size"]
+          ] },
+          { "kind": "text", "body": "We are not in [url=synth://webring.gridfall.net/]the Gridfall Webring[/url], before anybody asks again. Mrs. Vance turned us down in 2002 because we sell something, which is the rule she wrote and it is the right rule. I told her so at the time. Half the sites in that ring are hosted on this machine anyway." },
+          { "kind": "hitcounter", "count": 71284 },
+          { "kind": "buttons", "label": "Buttons. Eddie made most of these and I have stopped asking why.", "items": [
+            { "label": "The Gridfall Webring", "seed": "vn-btn-ring", "domain": "webring.gridfall.net" },
+            { "label": "The Gridfall Boards", "seed": "vn-btn-boards", "domain": "boards.gridfall.net" },
+            { "label": "The Verity Ledger", "seed": "vn-btn-ledger", "domain": "verityledger.com" },
+            { "label": "Best viewed with any browser", "seed": "vn-btn-anybrowser" },
+            { "label": "This page hand coded", "seed": "vn-btn-handcoded" },
+            { "label": "Y2K READY", "seed": "vn-btn-y2k" },
+            { "label": "VerityNet Dial-Up", "seed": "vn-btn-house" }
+          ] },
+          { "kind": "text", "body": "[i]Last changed 20 September 2004. Copyright VerityNet Dial-Up, Inc. The Y2K button has been up there since 1999 and Eddie says taking it down would be historically irresponsible.[/i]" }
+        ]
+      },
+      {
+        "id": "numbers",
+        "name": "Access Numbers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Access Numbers" },
+          { "kind": "text", "body": "Dial the number for [b]your own exchange[/b]. Not the nearest town, not the biggest one, not the one with the fast modems. Yours.\n\nA call from a Gridfall telephone to the Ashkettle number is a toll call, every minute of it, whatever we do at our end. We have no say in that and we cannot credit it back to you. Check the front of the telephone book if you are not certain which calls from your house are local; the map in there is correct and ours would not be." },
+          { "kind": "table", "head": ["Town", "Number", "Fastest here", "Lines", "Equipment"], "rows": [
+            ["Gridfall", "782-0700", "56k (V.92)", "48 + 12", "New September 2004. Twelve 33.6 modems still in the hunt group until the second week of October."],
+            ["Marchfield", "744-0700", "56k (V.90)", "32", "2002. Good bank, no complaints, nothing planned."],
+            ["Ashkettle", "619-0700", "33.6", "12", "1999. On the list."],
+            ["Coyne Flats", "655-0700", "33.6", "8", "2000."],
+            ["Halsey", "418-0700", "33.6", "8", "2000."],
+            ["New Carrow", "367-0700", "33.6", "8", "1999."],
+            ["Milbrook", "295-0700", "28.8", "6", "1997. The oldest thing we own. Next after Gridfall."],
+            ["Kerrin", "231-0700", "33.6", "4", "2001. Four lines is four lines. Evenings it is full."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "If your town is not on that list" },
+          { "kind": "text", "body": "Tessler is on the Kerrin exchange, so Tessler dials [b]231-0700[/b] and it is a local call.\n\nNye Mills, Dorrance and Cobb are the hard ones. There is no exchange of their own out there and the boundary does not follow the township line, so two houses a quarter mile apart can have different answers. Before you sign anything, telephone the telephone company, give them your own number and the one you mean to dial, and ask whether it is a local call. Write down who told you. They have been wrong twice that I know of and both times the customer had the name.\n\nIf the answer is that nothing of ours is local to you, say so and do not sign up. I would rather lose the account than take $18.95 a month from somebody who is also paying nine cents a minute to reach us." },
+          { "kind": "heading", "level": 2, "text": "Before the number: things that share your line" },
+          { "kind": "list", "ordered": false, "items": [
+            "[b]Call waiting.[/b] Put [b]*70,[/b] in front of the number in your dialer, comma and all. The comma is a two second pause and it matters. So the Gridfall number becomes *70,782-0700. This switches call waiting off for that one call only and the person calling you gets a ring, not a busy signal, and no message, so tell your mother.",
+            "[b]A second handset off the hook.[/b] This is the single most common cause of a call that connects at 14,400 and then dies. Walk the house.",
+            "[b]A satellite receiver, an alarm panel, a credit card terminal.[/b] All of these seize the line to make their own calls and will knock you off, usually at the same time every night, which makes it easy to find once you think of it."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Busy signals" },
+          { "kind": "text", "body": "We run roughly one line for every nine accounts. That is a normal ratio and it is not generous. It means that at the busiest hour of the week you will sometimes get a busy signal, and that hour is Sunday between eight and ten at night, every week, without fail, forever.\n\nBelow is Gridfall for the week of 13 September, averaged, out of 60 lines. I put this up because three people a month tell me the system is down when what they mean is that it is Sunday." },
+          { "kind": "table", "head": ["Hour", "Lines in use, weekday average", "Sunday"], "rows": [
+            ["7 a.m. - 9 a.m.", "6", "2"],
+            ["9 a.m. - noon", "14", "9"],
+            ["noon - 1 p.m.", "22", "11"],
+            ["1 p.m. - 5 p.m.", "17", "16"],
+            ["5 p.m. - 7 p.m.", "29", "31"],
+            ["7 p.m. - 10 p.m.", "44", "57"],
+            ["10 p.m. - midnight", "31", "36"],
+            ["midnight - 7 a.m.", "9", "12"]
+          ] },
+          { "kind": "text", "body": "If you get a busy signal, set your dialer to redial three times with thirty seconds between. Do not set it to redial forever every five seconds. Four people doing that is the difference between a busy hour and a bad one, and I can see who they are.\n\nKerrin at four lines is the one town where I will admit the ratio is wrong. It is on the list behind Milbrook." },
+          { "kind": "heading", "level": 2, "text": "Disconnects you did not ask for" },
+          { "kind": "table", "head": ["Rule", "Why"], "rows": [
+            ["Twenty minutes idle and we hang up", "Somebody in Halsey held a line for eleven days in 2001. The counter looks at bytes, not at whether your browser is open."],
+            ["Four hours and we hang up, connected or not", "Sixty lines, 1,207 accounts. Dial back in; if a line is free you will get it straight away."],
+            ["Two logins on one account at once", "The second one wins and the first is dropped. If you are dropped at odd times and you gave your password to a cousin, that is your answer."]
+          ] }
+        ]
+      },
+      {
+        "id": "signup",
+        "name": "Plans and Signing Up",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Plans and Signing Up" },
+          { "kind": "text", "body": "Four plans. No contract, no setup fee, no activation fee, no fee for cancelling, and the price on this page is the price on the bill. I have had that last sentence up since 1998 and I have had to defend it twice, both times to salesmen." },
+          { "kind": "table", "head": ["Plan", "Price", "What you get"], "rows": [
+            ["Unlimited", "$18.95 a month", "Dial-up on any of our numbers, one mailbox, 10 MB of web space, news server."],
+            ["Unlimited, paid a year at a time", "$189.00 a year", "Same thing, two months off. Most of our long customers do this."],
+            ["Evenings and weekends", "$11.95 a month", "6 p.m. to 7 a.m. weekdays, and all day Saturday and Sunday. Same mailbox, same web space."],
+            ["Ten hours", "$8.95 a month", "Ten hours, then $1.00 an hour. For people who check mail twice a week and nothing else."],
+            ["Second mailbox", "$2.00 a month", "Free for a child under sixteen at the same address. Just tell Bonnie."],
+            ["Extra web space", "$2.00 a month", "Per 5 MB, on top of the 10 MB you already have."],
+            ["External 56k modem", "$59.00", "We set it up and test it on your line before it leaves. We do not sell computers and we do not want to."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "What you need at your end" },
+          { "kind": "list", "ordered": true, "items": [
+            "A telephone line. An ordinary one. It does not need anything done to it.",
+            "A telephone jack the computer can reach. This stops more people than anything else on this list, and the answer is a longer modem cord, not a longer handset cord. The hardware store will sell you either.",
+            "A modem. Internal or external, 33.6 or faster. If you do not know what you have, telephone and read me the writing on the box, or bring the computer in and I will look.",
+            "Windows 95 or later, or a Macintosh running 8.6 or later. If you have Windows 3.1 we can still do it, it works fine, and I will want an afternoon rather than twenty minutes.",
+            "A browser and a mail program. Both come with the computer. We do not care which ones you use and we do not make you install anything of ours, because we do not have anything of ours."
+          ] },
+          { "kind": "heading", "level": 2, "text": "How to sign up" },
+          { "kind": "text", "body": "Come to the office, or telephone 782-0711, or take one of the paper forms that are in the co-op, the library and both hardware stores. The form asks for your name, your address, your telephone number, which town you will dial from, and what you want your username to be.\n\nPick the username carefully. It is your mail address and it is the name of your web page, so [b]rtulley[/b] becomes rtulley at verity dot net and rtulley.verity.net. I will change it once for free if you hate it. The second change is five dollars, which exists purely because of one gentleman in 1999.\n\nAllow a day. Bonnie sets the account up the same morning if you are there before eleven." },
+          { "kind": "heading", "level": 2, "text": "Paying" },
+          { "kind": "text", "body": "We take a check, we take cash at the office, and we can bill you quarterly if you would rather have four pieces of paper a year than twelve.\n\nWe do not take a card over the telephone. We have never taken a card over the telephone. We are never going to ask you for one by email, and if a message that appears to come from us asks you to go to a page and put a card number in, it is not from us. There is more about that on the [url=/help]support page[/url] and I would rather you read it before you need it.\n\nFirst month is not refundable, with one exception, which is the one that matters: if it does not work [i]in your house[/i] in the first two weeks, I will cancel it and not charge you a cent. Every line is different and some of them out past Dorrance are genuinely not good enough, and I would rather find that out in the first fortnight than argue about it in March." },
+          { "kind": "heading", "level": 2, "text": "Cancelling" },
+          { "kind": "text", "body": "Telephone, or write, or come in. That is the whole procedure. We do not have a retention script and nobody here will try to talk you into staying on a cheaper plan you did not ask about.\n\nIf you are leaving because somebody else's number is local to you and ours is not, take theirs. [url=synth://pellvalleyonline.synth/]Pell Valley Online[/url] is who most people out of the county go to and they are fine. I would rather you had service than had it from me.\n\nOne favour, if you are leaving and you have a page on our system: tell us what you want done with it. We hold pages for ninety days and then they go. Twice now somebody has written eighteen months later asking for something back and there was nothing to give them." }
+        ]
+      },
+      {
+        "id": "setup",
+        "name": "Connecting",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Connecting" },
+          { "kind": "text", "body": "Every setting is on this page. If you telephone support, this is the page Bonnie or I will be reading from, so you may as well have it in front of you too. Print it. It is one page printed and it has saved a great many long-distance calls from people's daughters in other states." },
+          { "kind": "heading", "level": 2, "text": "The connection" },
+          { "kind": "table", "head": ["Setting", "Value"], "rows": [
+            ["Telephone number", "Your town's number from [url=/numbers]Access Numbers[/url]"],
+            ["User name", "Just your username. Not your mail address. No @ and nothing after it."],
+            ["Password", "Case matters. It is not your mail password because they are the same password."],
+            ["Connection type", "PPP"],
+            ["Data bits / parity / stop bits", "8 / none / 1"],
+            ["Flow control", "Hardware (RTS/CTS)"],
+            ["Port speed", "115200, or 57600 on an older machine. This is the speed between the computer and the modem. It is not your connection speed and it never was."],
+            ["IP address", "Server assigned. Do not type anything in."],
+            ["Primary name server", "198.51.100.4"],
+            ["Secondary name server", "198.51.100.5"],
+            ["Domain", "verity.net"],
+            ["Log on to network", "Off. Nothing good comes of leaving this on."],
+            ["Software compression", "On"],
+            ["Enable LCP extensions", "On"]
+          ] },
+          { "kind": "heading", "level": 2, "text": "Modem strings" },
+          { "kind": "text", "body": "Nine times out of ten the modem works on its defaults and you should leave it alone. The strings below are for the tenth time. Put them in the box marked [i]extra settings[/i] or [i]init string[/i]; it is in a different place in every version of everything, and in Windows it is usually behind the Advanced button on the modem's properties page.\n\nIf a string makes things worse, take it back out. Nothing here can damage anything." },
+          { "kind": "table", "head": ["Modem", "String", "What it is for"], "rows": [
+            ["Anything, as a first try", "AT&F", "Factory defaults. Start here. Half of what we get telephoned about is a string somebody's nephew put in."],
+            ["US Robotics Sportster 33.6", "AT&F1", "&F1 is the hardware flow control profile. Plain &F on a Sportster gives you software flow control and grief."],
+            ["US Robotics 56K, external", "AT&F1&N0", "Lets it negotiate down instead of insisting."],
+            ["Rockwell or Conexant, internal", "AT&FS38=0", "These are the ones that cost us the most telephone time. They are not bad modems, they just do too much in software."],
+            ["Lucent or Agere winmodem", "AT&FS41=0", "Turns off the retrain that on a long loop turns into a loop of retrains."],
+            ["Zoom 2836", "AT&F", "Leave it alone, it is a good modem."],
+            ["A line that will not finish dialing", "AT&F S7=90 S11=55", "More patience, slower touch tones. This is the string for the far end of the Cobb road."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "It will not connect" },
+          { "kind": "text", "body": "Work down this list in order. Do not skip to the bottom; the top three are the answer about eight times in ten." },
+          { "kind": "list", "ordered": true, "items": [
+            "Pick up the telephone. Do you hear a dial tone? If not, this is a telephone problem and not an us problem, and their number is on your telephone bill.",
+            "Is a handset off the hook somewhere in the house? Is the answering machine mid-message? Is the fax machine sending?",
+            "Turn the volume on the modem up (AT M1 L3, or it is a slider in the dialer) and listen to it dial. You want the tones, then a ring, then the two modems talking for eight to twelve seconds. Where it stops tells you which of these lines you are on.",
+            "It dials and nothing happens at all: nothing is answering, so you probably have the wrong number, or a 1 or an area code in front of it that should not be there.",
+            "It dials and a person answers: you have the wrong number and somebody in your town is now quite annoyed with you. This happens most often with the Halsey number.",
+            "It rings and rings: all our lines in your town are busy. See the busy hour table on [url=/numbers]Access Numbers[/url].",
+            "They talk and then it goes quiet and starts again: line noise or a bad modem string. Try AT&F first, then the string for your modem above, then put the modem straight in the wall jack with a new cord.",
+            "It connects and then asks for a user name over and over: your password. It is case sensitive. Type it in the box slowly with the caps lock off. If you have honestly forgotten it, telephone; we will not mail it to you and we will not tell it to somebody who is not you.",
+            "None of the above: telephone 782-0777 and have the computer switched on and in front of you. Two thirds of support calls are finished in under four minutes and almost all of the long ones are long because the person is calling from work."
+          ] },
+          { "kind": "heading", "level": 2, "text": "How to see what you actually connected at" },
+          { "kind": "text", "body": "In Windows, after it connects, double click the two little computers by the clock. The number it shows is your connect speed. On a Macintosh it is in the status window and it is easier to find.\n\nWrite it down for three or four evenings before you telephone us about it, because one bad connection is weather and five bad connections in a row is a line.\n\nWhat is normal on our banks, September 2004:" },
+          { "kind": "table", "head": ["Where you dial", "Usual", "Good", "Telephone us if you are below"], "rows": [
+            ["Gridfall, in town", "44,000 - 48,000", "50,666", "31,200 twice running"],
+            ["Gridfall, out past the quarry", "38,600 - 44,000", "46,666", "26,400"],
+            ["Marchfield", "42,600 - 48,000", "50,666", "28,800"],
+            ["Ashkettle, Coyne Flats, Halsey, New Carrow, Kerrin", "28,800 - 33,600", "33,600", "19,200"],
+            ["Milbrook", "24,000 - 28,800", "28,800", "16,800"],
+            ["Nye Mills, Dorrance, Cobb", "21,600 - 26,400", "28,800", "14,400, and honestly, telephone anyway"]
+          ] },
+          { "kind": "text", "body": "One more thing, and it is the thing people find hardest to believe. [b]Your connect speed is mostly your telephone line, and your telephone line is mostly how far you are from the exchange and what it is made of on the way.[/b] A faster modem cannot fix copper. Neither can a faster computer, more memory, a new browser, or the program a man in the parking lot of the co-op is selling that doubles your speed. There is no such program. There has never been such a program." },
+          { "kind": "image", "seed": "veritynet-rack-larkin-street", "imgKind": "photo", "caption": "The Gridfall bank the morning after it went in, 13 September 2004. The cardboard is not structural." }
+        ]
+      },
+      {
+        "id": "mail",
+        "name": "Mail and Webmail",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Mail and Webmail" },
+          { "kind": "text", "body": "Your address is your username, then the at sign, then verity dot net. We do not write it out as a link anywhere on this site and neither should you on yours; there are programs that read web pages looking for addresses to sell, and while writing it out in words is not much protection, it is free." },
+          { "kind": "heading", "level": 2, "text": "Settings for your mail program" },
+          { "kind": "table", "head": ["Setting", "Value"], "rows": [
+            ["Incoming mail (POP3)", "mail.verity.net"],
+            ["Incoming port", "110"],
+            ["Outgoing mail (SMTP)", "smtp.verity.net"],
+            ["Outgoing port", "25"],
+            ["Account name", "Your username. Not the whole address."],
+            ["Password", "Same as your dial-in password. One password, one account, always."],
+            ["Leave a copy on server", "Your choice, but see the mailbox size below before you tick it."],
+            ["News (NNTP)", "news.verity.net"],
+            ["Webmail", "[url=synth://mail.verity.net/]mail.verity.net[/url] in a browser"]
+          ] },
+          { "kind": "heading", "level": 2, "text": "The mailbox" },
+          { "kind": "list", "ordered": false, "items": [
+            "5 MB. That is a lot of letters and about four photographs from a new camera.",
+            "At 5 MB the server stops accepting mail for you and the person writing to you gets a bounce that says so. It does not silently throw anything away.",
+            "Anything left on the server ninety days is deleted, and has been since 1999. This is on the sign-up form in the same size type as everything else.",
+            "One attachment may be 8 MB at most, in or out. Something bigger goes on your [url=/pages]web space[/url] and you send the address instead, which is faster for both of you anyway."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Webmail" },
+          { "kind": "text", "body": "Point a browser at [url=synth://mail.verity.net/]mail.verity.net[/url], put in your username and password, and there is your mail. It works from the library, from work, and from your sister's house in another state.\n\nIt is not fancy. It reads, writes, replies, deletes and attaches, and that is the whole of it. There is no address book and there is no calendar. Two people have asked for a calendar. I am not writing a calendar." },
+          { "kind": "image", "seed": "veritynet-webmail-login-2004", "imgKind": "photo", "caption": "The login. Username, password, the button. It has looked like this since Eddie built it in the summer of 2001." },
+          { "kind": "text", "body": "[b]Read this part.[/b] That login page is the only place we will ever ask you for your password, and we will never send you to it by email. Nobody here will telephone you and ask for it either. If you are ever unsure, close whatever you are looking at, and dial 782-0777 yourself, from the number on this page, which you found yourself." },
+          { "kind": "heading", "level": 2, "text": "Junk mail" },
+          { "kind": "text", "body": "It has got much worse in the last two years and I am not going to pretend otherwise.\n\nWhat we do: we refuse mail from three relays that have sent us nothing but junk since 2002, and we refuse mail that claims to come from our own domain but arrives from outside it. That is all of it. We do not run a filter that decides what you want, because the day that filter eats somebody's letter from the hospital is the day I get a telephone call I do not want to take.\n\nWhat you should do: get a filter in your own mail program, which you can tune and I cannot. Do not reply to junk, not even to the ones with an unsubscribe line, because replying tells them the address is real and worth more.\n\nAnd if it says it is from us and it wants a password or a card number, it is not from us. See the [url=/help]support page[/url]." },
+          { "kind": "heading", "level": 2, "text": "The news server" },
+          { "kind": "text", "body": "news.verity.net carries about 1,100 groups. Text only.\n\nWe do not carry the binary groups, we have never carried them, and we are not going to start. They are most of the traffic and almost none of the reading, and the two T1s we have are for all 1,207 of us. If you want them there are people who sell that service by itself for a few dollars a month and that is the right way to get it.\n\nWe carry a local group, [b]verity.general[/b], which has had maybe eleven posts this year. The county's conversation happens on [url=synth://boards.gridfall.net/]the Gridfall Boards[/url] and always did. I keep the group because it costs nothing." }
+        ]
+      },
+      {
+        "id": "pages",
+        "name": "Personal Pages",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Personal Pages" },
+          { "kind": "text", "body": "Every account gets [b]10 MB[/b] of web space and an address of its own: your username, then a dot, then verity dot net. So the account [b]tnorris[/b] has the page at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url]. It is included. It is not an extra and it never has been.\n\nThere are 214 pages on the system this month. I think that is the best thing we do, and it is certainly the part of this business I would miss." },
+          { "kind": "heading", "level": 2, "text": "The rules, which are short" },
+          { "kind": "list", "ordered": true, "items": [
+            "[b]10 MB.[/b] More is $2.00 a month per 5 MB. Nobody has ever needed a third one.",
+            "[b]1 GB of traffic a month.[/b] If you go over it I telephone you, I do not switch anything off, and in eight years I have made that call four times. Three of them were somebody's photographs being linked from a message board in another state.",
+            "[b]No commercial use.[/b] This is the one that needs explaining, so it has its own section below.",
+            "[b]Nothing illegal, and no software or music you did not make.[/b] An archive of MP3s is both of those at once and it is also most of the 1 GB, so it gets found quickly.",
+            "[b]Nothing a child should not open by accident.[/b] You know the line. I have only ever had to make this call once and the fellow was decent about it.",
+            "[b]No chain letters, no pyramid schemes, no make money at home.[/b] Off the same morning I see it, no refund, and I will telephone whoever's name is on it because they are usually being used.",
+            "[b]An index.html has to exist.[/b] Without one, the address shows a list of your files to anybody who types it, which is almost never what a person wants."
+          ] },
+          { "kind": "heading", "level": 2, "text": "What no commercial use means" },
+          { "kind": "text", "body": "It does not mean a business may not have a page here. It means a business may not [i]sell[/i] from a page here.\n\nA page for the garage on Bracken Lane with the hours, the address, what they do and a photograph of the building is welcome and there are eleven like it on the system. A page with a catalogue, prices and an order form is not, and the reason is not moral. It is that the machine on Larkin Street is one machine with two T1s, it has no way to take a card safely, and the first time somebody's order goes missing I am the one who is on the telephone about it.\n\nIf you get to the point of selling, you want a real hosting company and your own name, and I will tell you which of them are honest and help you move. [url=synth://marchfield-coop.com/]The co-op[/url] started on this system and outgrew it in about a year, which is exactly how it should go.\n\nA club, a church, a team, a society, a library group: all fine, all free, all welcome, even if they take dues. Dues are not sales." },
+          { "kind": "heading", "level": 2, "text": "Getting the files up there" },
+          { "kind": "text", "body": "FTP to [b]ftp.verity.net[/b] with the same username and password you dial in with. Put the files in the folder called [b]public_html[/b]. Anything in that folder is on the web about a second later and anything outside it is not.\n\nThat is the whole of it. There is no upload page, there is no wizard, and there is no program of ours you have to install. Every FTP program in the world works. If you do not have one, come in and I will put a free one on a disk for you.\n\nCommon things that go wrong, in the order they happen:" },
+          { "kind": "list", "ordered": false, "items": [
+            "The file is called Index.html or index.htm or INDEX.HTML. It must be index.html, all lower case. The machine cares even though your computer at home does not.",
+            "The pictures do not show. Same reason: Photo.JPG in the folder and photo.jpg in the page. Rename everything to lower case once and stop thinking about it.",
+            "You uploaded in binary and the page shows as a wall of text, or you uploaded in text and the pictures are broken. Set the program to automatic and it will get both right.",
+            "The page looks right on your computer and wrong on everybody else's. Ninety percent of the time this is a table with no width set. [url=synth://tnorris.verity.net/]Tom Norris[/url] has the plainest page on the system and it has never once broken for anybody."
+          ] },
+          { "kind": "heading", "level": 2, "text": "A page to start from" },
+          { "kind": "text", "body": "This is what we hand out on a disk at the office. Type over the parts in capitals. It is not much of a page and that is the point of it; every good page on this system started as something about this size." },
+          { "kind": "text", "body": "[code]<html>\n<head>\n<title>YOUR NAME HERE</title>\n</head>\n<body bgcolor=\"#ffffff\" text=\"#000000\">\n\n<h1>YOUR NAME HERE</h1>\n\n<p>\nA sentence or two about who you are and why\nthis page exists. One paragraph is plenty.\n</p>\n\n<p>\n<a href=\"pictures.html\">Pictures</a><br>\n<a href=\"about.html\">More about me</a>\n</p>\n\n<hr>\n\n<p>\n<font size=\"2\">\nLast changed: THE DATE<br>\nWrite to me: NAME at verity dot net\n</font>\n</p>\n\n</body>\n</html>[/code]" },
+          { "kind": "heading", "level": 2, "text": "Counters and guestbooks" },
+          { "kind": "text", "body": "You cannot run your own programs on the machine. You can use ours, and ours are a hit counter and a guestbook, and between them they are on about a hundred and forty of the 214 pages.\n\nAsk Bonnie and she will switch them on for your account and email you the four lines to paste in. The counter starts wherever you like. I will not pretend I have never started one at 4,000 for somebody who was embarrassed.\n\nThe guestbook is checked by nobody but you. If it fills up with junk, which now happens to about one page in five, tell us and we will clear it and turn it off, and I am sorry, because in 1999 a guestbook was a lovely thing to have." },
+          { "kind": "heading", "level": 2, "text": "Pages people ask me for" },
+          { "kind": "text", "body": "There is no index of all 214. I maintained one for two years, and pages move, people leave, and a list that is a third wrong is worse than no list. These are the ones the office gets asked for by name." },
+          { "kind": "table", "head": ["Page", "Whose", "What it is"], "rows": [
+            ["[url=synth://tnorris.verity.net/]tnorris.verity.net[/url]", "Tom Norris, Gridfall", "The retired county surveyor. The account of the 1994 flood on there is better than anything the rest of us have, and he answers his mail."],
+            ["[url=synth://stargazers.verity.net/]stargazers.verity.net[/url]", "Verity County Amateur Astronomers", "Meeting notices and the Perrin Hill observing log. Mr. Furniss brings it in on a disk when he wants it changed."],
+            ["[url=synth://marla.verity.net/]marla.verity.net[/url]", "A young woman in Marchfield", "Loud. Renders correctly, which is more than I can say for some. She rebuilds it about every six weeks."],
+            ["ashkettle-wx.net", "Len Mabry, Ashkettle", "His weather station on Kestrel Road. It is on its own name rather than ours, but the readings still leave Ashkettle down our line: [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]."],
+            ["[url=synth://verityrail-preservation.org/]verityrail-preservation.org[/url]", "Verity Rail Preservation Society", "Also on its own name. Started here in 2003 as a page with eight scanned photographs on it."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "Pages that have gone" },
+          { "kind": "text", "body": "I keep these names written down because sooner or later somebody comes in looking for one and at least this way I can tell them it was real.\n\n[list][*][b]bartlett.verity.net[/b] -- Ellen Bartlett's recipes, 1998 to 2002. Her daughter took it down after she died and asked me not to keep a copy, and I did not.[*][b]hsauer.verity.net[/b] -- model railroad, the branch line in HO, 1999 to 2003. He moved to Ohio and the account lapsed. Somebody on [url=synth://forums.verityrail.org/]the rail forum[/url] asks about it every few months.[*][b]kesler.verity.net[/b] -- a lawnmower engine, in enormous detail, 2000 to 2001. I have thought about that page more than is reasonable.[/list]" },
+          { "kind": "heading", "level": 2, "text": "One thing I do" },
+          { "kind": "text", "body": "I look at every new page within a week of it going up.\n\nNot to approve it. There is nothing to approve and I have taken down four pages in eight years, three of them chain letters and one of them a mistake. I look because they are the most interesting thing that passes across this desk, and because somebody in this county built a page about a lawnmower engine in 2000 and if nobody looked at it then nobody looked at it at all.\n\nIf yours has been up a fortnight and you have not heard from me, it means I read it and liked it and got busy. Assume that. It is usually true." }
+        ]
+      },
+      {
+        "id": "start",
+        "name": "Welcome to the Internet",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Welcome to the Internet" },
+          { "kind": "text", "body": "This is your start page. If we set your computer up, this is what opens when you press the blue E, and if you would rather it opened something else, that is two minutes of work and [url=/setup]the connecting page[/url] tells you where the box is. I will not be offended. Eddie will be.\n\nIf this is genuinely your first week: nothing here can break the computer. You cannot use up the internet. You cannot wear it out by clicking. The two things you can actually do wrong are giving your password to somebody and buying something from a stranger, and both of those are further down this page." },
+          { "kind": "heading", "level": 2, "text": "Five things to do first" },
+          { "kind": "list", "ordered": true, "items": [
+            "Send one piece of mail to somebody you know and wait for the answer. That is the whole thing working, end to end, and once you have seen it work the rest is easier.",
+            "Send one to yourself. Then you know what your own address looks like when it arrives, which is what you will be reading out over the telephone for the next ten years.",
+            "Find one thing you already care about. Not what is on the news. A tractor, a knitting stitch, the county you grew up in, the branch line. There is a page about it and there are people arguing about it.",
+            "Learn where the Back button is and that it is safe. Most of what frightens people in the first month is the fear of not being able to get back.",
+            "Go to [url=synth://boards.gridfall.net/]the Gridfall Boards[/url] and read for a week before you post. Everybody says that about every board and it is still right."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Around here" },
+          { "kind": "text", "body": "Local pages worth the call. Eddie checked every one of these on Saturday 18 September; he is paid for two hours and takes three." },
+          { "kind": "table", "head": ["Page", "What it is"], "rows": [
+            ["[url=synth://boards.gridfall.net/]boards.gridfall.net[/url]", "The county message board. Parking, school taxes, the substation, the road, and people correcting each other. If you only ever use one of these, use this one."],
+            ["[url=synth://verityledger.com/]verityledger.com[/url]", "The Verity Ledger. Twice a week, and the archive back to 1998, which is more use than people realise."],
+            ["[url=synth://webring.gridfall.net/]webring.gridfall.net[/url]", "The Gridfall Webring. Eleven local pages linked in a circle. Start anywhere and keep clicking and you come back."],
+            ["[url=synth://forums.verityrail.org/]forums.verityrail.org[/url]", "The rail forum. Busiest board in the state about a branch line nobody outside three counties has heard of."],
+            ["[url=synth://stargazers.verity.net/]stargazers.verity.net[/url]", "The astronomy club. Meets monthly, observes from Perrin Hill, and has a long-running grievance about barn lights."],
+            ["[url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]", "Len Mabry's weather station in Ashkettle. Better than the forecast for the north end of the county and he types the numbers in himself."],
+            ["[url=synth://marchfield-coop.com/]marchfield-coop.com[/url]", "The co-op. Prices, hours and the seed order."],
+            ["[url=synth://kestrel-journal.net/]kestrel-journal.net[/url]", "Mrs. Teale's pages about the Blue Kestrel and the people in it. Photographs and menus going back to the seventies."],
+            ["[url=synth://tnorris.verity.net/]tnorris.verity.net[/url]", "Tom Norris on the 1994 flood. The best piece of writing anybody in this county has put on the web."],
+            ["[url=synth://marla.verity.net/]marla.verity.net[/url]", "A nineteen year old in Marchfield, at volume. Eddie put this on the list. I have left it on the list."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "Finding things" },
+          { "kind": "text", "body": "We kept five search pages here once and argued about which was best. Now there is the one everybody uses and you already know which, so it is not on the list.\n\nHow to use it, which nobody tells you: type the [b]exact words that would be on the page you want[/b], not a question. Not [i]where can I find out about the branch line[/i] but [i]verity rail branch line coyne flats[/i]. Three or four unusual words beat a sentence, and a name in quotation marks finds a person." },
+          { "kind": "heading", "level": 2, "text": "Things that are not true" },
+          { "kind": "list", "ordered": false, "items": [
+            "Nobody is about to start charging five cents for every email. That letter has been going around since 1997, it changes the name of the agency each time, and it has never once been true.",
+            "Forwarding a message to ten people does not get you anything. No company is tracking the forwards. There is no way to track a forward. A machine that could do that would be a more impressive machine than any of the ones in this building.",
+            "A sick child is not collecting postcards this year. He collected postcards in 1989, he recovered, he is a grown man, and his mother has asked people to stop.",
+            "Nobody in another country needs your bank account to move money out of it, and there is no lottery you can win without entering."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Staying out of trouble" },
+          { "kind": "list", "ordered": false, "items": [
+            "Your password is for you. Not for your grandson, not for the man who telephones saying he is from VerityNet, not for a page you arrived at from a link in an email. We will never ask you for it in a message. Never.",
+            "If somebody is unpleasant to you on a board, do not answer that night. Three quarters of the arguments on [url=synth://boards.gridfall.net/]the boards[/url] are between two people who both answered at eleven at night.",
+            "Anything you put on a page can be copied, kept and shown to somebody you would rather it were not shown to. That applies to a photograph of your house and to a complaint about your employer.",
+            "If a program appears and says your computer is infected and you must click now, it is lying, and clicking is how it gets in. Close the window with the X in the corner."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Guestbook" },
+          { "kind": "text", "body": "Eddie put a guestbook on the start page. I asked what it was for and he said so people know somebody is home. I have left it up." },
+          { "kind": "guestbook", "entries": [
+            { "author": "D. Furniss", "time": "03/14/2004", "body": "Ray -- club page went up fine, thank you for the disk. Tell Eddie the picture is the right way up now." },
+            { "author": "a customer in Halsey", "time": "04/02/2004", "body": "Eleven minutes of busy signal Sunday night. Eleven. I timed it." },
+            { "author": "Ray T.", "time": "04/05/2004", "body": "You are right and there is a table about it now on the numbers page. Halsey has eight lines and Sunday at nine is the worst hour of the week. It will get better when Milbrook and Kerrin do, which is honest but is not much comfort at eleven minutes." },
+            { "author": "L. Mabry", "time": "05/21/2004", "body": "Readings went out at 6 a.m. same as always through the whole of that storm. Whatever you did to the Ashkettle line in March, it held." },
+            { "author": "nobody in particular", "time": "06/30/2004", "body": "does anyone here know anything about the numbers you can hear on the radio out past the quarry on 62. someone on the boards said to ask an internet company" },
+            { "author": "Ray T.", "time": "07/01/2004", "body": "No. I sell internet access. Whatever is out there is not on anything of ours and I do not know one thing about it that you do not." },
+            { "author": "FREE-*-CASH-*-GRANTS", "time": "08/11/2004", "body": "UNCLAIMED FUNDS ARE WAITING!!! claim yours today at our secure site!!! [url=synth://grantsdept-claim.biz/]grantsdept-claim.biz[/url]" },
+            { "author": "Ray T.", "time": "08/12/2004", "body": "That one stays up as an exhibit. Look at it. Three exclamation marks, a word spelled right that no agency would use, and an address that is not an agency. That is the shape of it. They are not all this easy but they all have one of those three." },
+            { "author": "Eddie", "time": "09/18/2004", "body": "links all checked. the co-op one was slow not broken. dad the counter is stuck again" }
+          ] },
+          { "kind": "hitcounter", "count": 39610 },
+          { "kind": "text", "body": "[i]The counter is not stuck. The counter counts and Eddie reloads. -- R.T.[/i]" }
+        ]
+      },
+      {
+        "id": "status",
+        "name": "System Status",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "System Status" },
+          { "kind": "text", "body": "Updated by hand, by whoever is in the office, when something is wrong and again when it is fixed. If this page says everything is fine and it is not fine, telephone 782-0777 and say so, because it means nobody has got to the page yet." },
+          { "kind": "heading", "level": 2, "text": "Right now -- Monday 20 September 2004, 4:40 p.m." },
+          { "kind": "table", "head": ["", "State", "Note"], "rows": [
+            ["Gridfall dial-in", "Up", "New bank, in service since 13 September."],
+            ["Marchfield dial-in", "Up", ""],
+            ["Ashkettle dial-in", "Up", ""],
+            ["Coyne Flats dial-in", "Up", ""],
+            ["Halsey dial-in", "Up", ""],
+            ["New Carrow dial-in", "Up", ""],
+            ["Milbrook dial-in", "Up", "Two of the six modems are out. Parts are ordered. Four lines is what Milbrook has this week and I am sorry about it."],
+            ["Kerrin dial-in", "Up", ""],
+            ["Mail", "Up", ""],
+            ["Webmail", "Up", ""],
+            ["Web space and FTP", "Up", ""],
+            ["News server", "Up", ""],
+            ["Both circuits to the capital", "Up", "Third circuit ordered. The carrier says November."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "Planned" },
+          { "kind": "list", "ordered": false, "items": [
+            "[b]Second week of October, overnight.[/b] The twelve old 33.6 modems come out of the Gridfall hunt group. If you are connected when it happens you will not notice. If you dial in during the twenty minutes it takes you will get a busy signal.",
+            "[b]Milbrook, no date.[/b] 28.8 out, 56k in. It is the next thing we spend money on. I am not giving a date and you should not believe one if you hear one from anybody but me.",
+            "[b]November, if the carrier is right.[/b] Third circuit. Evenings will be better for everybody.",
+            "[b]Kerrin, after Milbrook.[/b] Four lines is not enough for Kerrin and Tessler together and I know it."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Outage log" },
+          { "kind": "text", "body": "Everything since the start of 2003 that took anything of ours down for more than half an hour. I write these up the same day, before I have had time to make myself look better in them." },
+          { "kind": "text", "body": "[b]Monday 30 August 2004 -- Milbrook, 6 hours 20 minutes.[/b]\n\nA contractor put a backhoe through the telephone cable on Route 9 at about half past eight in the morning. Nothing to do with us and nothing we could do. Milbrook dialled Kerrin for the day, at toll rates, and I credited the difference to the eleven accounts that told me about it. If you were one of the ones that did not tell me, tell me now, the offer stands." },
+          { "kind": "text", "body": "[b]Tuesday 6 July 2004 -- mail, 3 hours 10 minutes.[/b]\n\nThe mail spool filled. Nothing was lost; incoming mail bounced with a message telling the sender to try again, which is the correct thing for it to do and is also the thing that makes people telephone.\n\nThis was my fault. I had moved the log files onto the same disk in June and had not thought it through." },
+          { "kind": "text", "body": "[b]Friday 11 June 2004 -- Ashkettle and Coyne Flats, 2 hours 45 minutes.[/b]\n\nThunderstorm. Our equipment out there sits in the telephone company's buildings and came back when their generator picked it up." },
+          { "kind": "text", "body": "[b]Tuesday 17 February 2004 -- Kerrin and Milbrook, 31 hours.[/b]\n\nIce. Both towns lost power and so did the roads to them, and I was not going to send anybody out on Kerrin Road on the Tuesday night to look at four modems. We waited for daylight and for the county to sand it, and then we waited for the power.\n\nThis is the one where I learned that the battery at Kerrin was not what I had been told it was. It is now." },
+          { "kind": "text", "body": "[b]Wednesday 11 June 2003 -- Gridfall: dial-in, mail, web and everything else, about 62 hours.[/b]\n\nSubstation No. 3 at Depot and Quarry Road burned at 4:52 in the morning. The room on Larkin Street is on that circuit and so is the telephone company building across from it. Our batteries held the modems for forty minutes and then that was the end of it.\n\nMarchfield never went down. If you had the Marchfield number in your dialer you had service the entire time, at toll rates from most of the county, and I know some of you did and I am sorry about those bills.\n\nWe came back at five past seven on the Friday evening on a generator borrowed from Corrigan's downstairs, on an extension cord I would not like to describe, and back on the utility on the Sunday. Verity Valley had 4,100 customers out and some of them were out five days, so we were not the worst off by a long way.\n\nMail that arrived for you during those 62 hours was held by the sending machines and delivered afterwards. Almost nothing was actually lost. Two hundred and some of you telephoned to ask, which is reasonable, and it is the reason this log exists at all: I started writing these up the week after.\n\nNobody was killed. Two of the Gridfall volunteer firemen were treated at County General for smoke and went home the same afternoon. I put that here because in the three months afterwards I heard four different versions of it in the Kestrel and not one of them was right, and this page at least is dated." },
+          { "kind": "text", "body": "[b]Sunday 2 February 2003 -- Gridfall, 1 hour 5 minutes.[/b]\n\nPlanned, announced a week ahead, ran long. We were moving the racks two feet to the left. It took an hour and five minutes to move two racks two feet and I have never lived it down." },
+          { "kind": "heading", "level": 2, "text": "How we tell you" },
+          { "kind": "text", "body": "In this order: this page, then the recording on 782-0777, then, if it is going to be more than a day, a note in the window at the street door and a post on [url=synth://boards.gridfall.net/]the Gridfall Boards[/url].\n\nWe do not send a mail about a mail outage. I should not have to say that. I say it because we did exactly that in 1998." }
+        ]
+      },
+      {
+        "id": "help",
+        "name": "Support and Questions",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Support and Questions" },
+          { "kind": "text", "body": "[b]782-0777.[/b] Nine to five Monday through Friday, nine to one Saturday. After hours there is a machine and it is checked first thing.\n\nBefore you telephone, have the computer switched on and in front of you, and know which town you dial from. Two thirds of these calls finish in under four minutes. The long ones are long because the person is calling from work and guessing at what is on the screen at home." },
+          { "kind": "heading", "level": 2, "text": "Asked most" },
+          { "kind": "table", "head": ["Question", "Answer"], "rows": [
+            ["I get a busy signal in the evening.", "One line for every nine accounts, and Sunday between eight and ten is the worst hour of the week everywhere. Set the dialer to redial three times, thirty seconds apart. There is a table of the busy hours on [url=/numbers]Access Numbers[/url]."],
+            ["Call waiting knocks me off.", "*70, in front of the number, comma included."],
+            ["It says 115200 but it is slow.", "That is the speed between your computer and your modem and it has nothing to do with the telephone line. Your real connect speed is on [url=/setup]Connecting[/url], with what is normal for each town."],
+            ["I forgot my password.", "Come in with something with your name on it, or telephone from the number on the account and I will ask you two things off the sign-up form. We will not mail it out and we will not give it to your son-in-law, however reasonable he sounds."],
+            ["Do you read my mail?", "No. The only mail I have ever opened on this system was a message that had no sender and was 40 MB, and I opened it to find out why the disk was full."],
+            ["Do you block sites?", "No. We refuse mail from three relays that have sent us nothing but junk since 2002 and that is the whole of it. If you want something blocked at your house, that is a program on your computer, and I will tell you which ones are not a scam."],
+            ["Will you ever do DSL, or cable?", "Ask the telephone company and the cable company. I ask them twice a year. The answer from both of them, for six years, has been that the county does not have the density. If that changes I will be the first to tell you and the first to be out of a business, in that order."],
+            ["Are you in the webring?", "No. [url=synth://webring.gridfall.net/]Mrs. Vance[/url] turned us down in 2002 because we sell something, and that is the rule she wrote and it is correct. I was one of two."],
+            ["Something is wrong with the computer, not the internet.", "I will still look at it and I will not charge you for looking. If it wants parts, the shop on Dunnet does that work and I am not trying to."]
+          ] },
+          { "kind": "heading", "level": 2, "text": "A message going around this summer" },
+          { "kind": "text", "body": "Since about the middle of July people have been getting a message that appears to come from us. It says the account will be closed within 48 hours unless it is revalidated, and it gives a page to go to, which is at [url=synth://verityaccount-revalidate.biz/]verityaccount-revalidate.biz[/url] or something close to it. The address changes every couple of weeks.\n\nIt is not ours. The page it goes to is a copy of our webmail login with a second box on it asking for a card number, which our login has never had and is never going to have.\n\n[b]What to do:[/b] delete it. Do not go to the page. If you already did and typed your password in, telephone 782-0777 and we will change the password inside a minute, and it costs nothing, and nobody here is going to make you feel stupid about it. Fourteen people have telephoned about that message so far and four of them had already typed it in, and all four of them were fine, because they telephoned.\n\nHow to tell, generally: we will never send you to a page to type your password. We will never ask for a card number in a message. If you want to check anything at all, close it, and dial 782-0777 from the number on this page, which you came to yourself." },
+          { "kind": "heading", "level": 2, "text": "Questions I cannot help with" },
+          { "kind": "list", "ordered": false, "items": [
+            "Anything about your telephone bill, your telephone line or your telephone company. We are their customer too.",
+            "Whether your particular house can get a local call to a particular number. Telephone them and ask them, and write down who told you.",
+            "The radio broadcast people listen for out on 62 past Ashkettle. I get asked about that perhaps once a month, generally after somebody has read a thread about it on [url=synth://boards.gridfall.net/]the boards[/url]. I do not know anything about it. It is not on anything of ours, it has nothing to do with a modem or a telephone line, and I have no theory and no interest in having one. I sell internet access.",
+            "Finding out who sent you something unpleasant. If it is a threat it is a matter for the sheriff and I will help them with what I have. If it is somebody being rude, I have nothing useful and neither does anybody else."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Complaints" },
+          { "kind": "text", "body": "To me, Ray Tulley, at the office, by telephone or in person or on paper. There is no complaints department. There is a man with a screwdriver and a telephone and the department is him.\n\nIf I have got something wrong I will say so on [url=/status]the status page[/url] with the date on it, the way I did about the mail spool in July, which was entirely my doing." },
+          { "kind": "heading", "level": 2, "text": "And the thing at the bottom of every page like this" },
+          { "kind": "text", "body": "We are eight banks of modems, two T1s, one machine that does mail and web, and three people, one of whom is nineteen and only works afternoons. When it goes wrong it goes wrong for the whole county at once and you will all telephone in the same four minutes.\n\nThat is not an apology. It is the size of the thing, and I would rather you knew the size of it, because a company that tells you it is enormous and infallible is going to be a great deal less useful to you at half past six on a Sunday than Bonnie is." },
+          { "kind": "hitcounter", "count": 22918 }
+        ]
+      }
+    ]
+  }
+}

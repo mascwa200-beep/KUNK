@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "domain": "fennerinsurance.com",
+  "title": "Fenner Insurance Agency, Inc. - Marchfield",
+  "type": "page",
+  "era": "2013",
+  "skin": "plain-white",
+  "description": "The website of an independent insurance agency on Bellamy Street in Marchfield: nine template pages about types of insurance, staff photographs described but not shown, a quote form that goes nowhere, and a syndicated safety-tip feed that stopped in July 2014.",
+  "tags": ["marchfield", "business", "insurance", "archive"],
+  "links": ["marchfield-coop.com", "gridfalltire.com", "ashkettlevfd.org", "troop62.verity.net", "boards.gridfall.net", "wiki.gridfall.net", "verityledger.com", "tnorris.verity.net", "countysoftball.org"],
+  "data": {
+    "navLabel": "Site Menu",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Fenner Insurance Agency, Inc."},
+          {"kind": "marquee", "text": "*** OFFICE CLOSED THURSDAY 28 NOVEMBER AND FRIDAY 29 NOVEMBER *** ASK US ABOUT BUNDLING YOUR AUTO AND HOME *** OUR 52nd YEAR IN MARCHFIELD ***"},
+          {"kind": "image", "seed": "fenner-delbrook-banner-home-2", "imgKind": "banner", "caption": "banner_home_2.jpg -- Delbrook stock library. A glass office tower at dusk with a highway in front of it."},
+          {"kind": "text", "body": "Welcome to the online home of [b]Fenner Insurance Agency, Inc.[/b]\n\nAs an independent insurance agency, we are not owned by any one insurance company. We represent nine of them. That means we can place your policy where it fits instead of where we are told to put it, and it means that when a company raises its rates or stops writing in this county, you do not have to start over with a stranger.\n\nWe have been doing this in Marchfield since 1961 and in Gridfall since 2009."},
+          {"kind": "text", "body": "[b]Marchfield office:[/b] 31 Bellamy Street, Marchfield. Telephone [b]744-1195[/b]. Monday to Friday, 8:30 to 4:30.\n\n[b]Gridfall office:[/b] 141 Mill Street, Gridfall. Telephone [b]782-2262[/b]. Monday and Thursday, 9:00 to 3:00.\n\nIf nobody answers in Gridfall it is because it is a Tuesday. Ring Marchfield."},
+          {"kind": "heading", "level": 2, "text": "What we write"},
+          {"kind": "list", "ordered": false, "items": ["[url=/auto]Auto insurance[/url] -- cars, light trucks, motorcycles, the third vehicle that does not run.", "[url=/home]Homeowners insurance[/url] -- and dwelling fire for the rentals.", "[url=/farm]Farm insurance[/url] -- farm owners, equipment, liability, crop and hail through Midstate.", "[url=/business]Business insurance[/url] -- shops, contractors, churches, halls, two fire companies.", "[url=/life]Life insurance[/url] -- term, whole life, final expense.", "[url=/umbrella]Umbrella liability[/url]", "[url=/renters]Renters insurance[/url]", "[url=/flood]Flood insurance[/url]", "[url=/recreational]Recreational vehicles[/url] -- campers, trailers, the boat that is on the trailer."]},
+          {"kind": "heading", "level": 2, "text": "Start here"},
+          {"kind": "text", "body": "[url=/quote]Request a quote[/url] -- the online form.\n\n[url=/claims]Report a claim[/url] -- every company's 24-hour number, on one page. Print it and put it in the glove box.\n\n[url=/faq]Questions people actually ask us[/url] -- written by this office and not by the website people."},
+          {"kind": "heading", "level": 2, "text": "Agency news"},
+          {"kind": "text", "body": "[b]Latest article:[/b] [i]Grilling Safety: Five Things To Check Before You Light[/i] -- posted 7 July 2014. [url=/news]Read more agency news and safety tips[/url]."},
+          {"kind": "hitcounter", "count": 9412},
+          {"kind": "text", "body": "The counter came with the template and was reset in 2018 when Delbrook moved their servers, so it is nine thousand of something and not nine thousand people.\n\n[i]Copyright 2013 Fenner Insurance Agency, Inc. All rights reserved. Site design by Delbrook Marketing Services. Site last updated: 08/04/2014.[/i]"}
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About Our Agency",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "About our agency"},
+          {"kind": "text", "body": "At Fenner Insurance Agency, Inc., we believe that insurance is a relationship and not a transaction. Our licensed professionals take the time to understand your needs, review your existing coverage, and recommend solutions tailored to your situation. We are proud to serve the families and businesses of Verity County.\n\nAs an independent agency we represent multiple insurance carriers, which allows us to shop the market on your behalf at each renewal.\n\n[i]The two paragraphs above came with the website. They are not wrong. They are just not how anybody here talks. -- D.F.H.[/i]"},
+          {"kind": "heading", "level": 2, "text": "How it actually goes"},
+          {"kind": "text", "body": "A man comes in because he bought a truck on Saturday and it has to be insured before he drives it Monday. That is most of this job. The rest is renewals, certificates for contractors who need one by four o'clock, and sitting across a desk from somebody whose house has water in it.\n\nWe are nine companies deep and we know which of them pays a hail claim without an argument and which of them will send an adjuster from three counties away and take eleven days about it. That knowledge is not written down anywhere and it is the entire reason to use an agent instead of a website.\n\nI am the third Fenner in this office and there will not be a fourth, and that is fine. My son teaches. -- [b]Dee Fenner Hoke[/b]"},
+          {"kind": "heading", "level": 2, "text": "Fifty-two years"},
+          {"kind": "table", "head": ["YEAR", "WHAT"], "rows": [["1961", "Russell J. Fenner opens an office in a room above the hardware on Bellamy Street. One company, personal auto, and a rented adding machine."], ["1968", "First farm appointment, Pell Valley Mutual. Still our largest company."], ["1971", "Moved across and down to 31 Bellamy Street, where we still are."], ["1977", "The fire at the Blue Kestrel. Kitchen, eleven days shut. The claim was paid and it was not paid quickly, and we have heard about that at every chicken supper since. Russ said at the time that he would have been slow too with those receipts, which did not help."], ["1978", "Gerald \"Jerry\" Fenner joins his father. Licensed the same year."], ["1984", "Delores Fenner joins the office. Filing, then rating, then a licence in 1989."], ["1988", "Russell Fenner dies in March. Jerry takes the agency."], ["1994", "The flood. Three hundred and twelve claims in the nine days after 7 March, most of them in Gridfall. Bellamy Street had no telephone service for two of those days and we worked out of the town hall with a legal pad. See Tom Norris's [url=synth://tnorris.verity.net/flood]account of the flood[/url], which is better than ours."], ["1996", "Last year we put the agency name on a softball shirt. Sandy Reber picked the team up the following spring and has had it since."], ["2001", "First rating computer. It took a week to learn and saved four hours a day."], ["2003", "The June outage in Gridfall. Forty-one claims through this office."], ["2004", "Dee Fenner Hoke becomes principal."], ["2006", "Jerry retires. He keeps renewing his licence every two years and has not explained why."], ["2009", "Gridfall office opens at 141 Mill Street, in what was Kerchner Jewelers. Two days a week."], ["2011", "Tyler Frantz joins and is licensed in November."], ["2013", "This website."]]},
+          {"kind": "heading", "level": 2, "text": "Companies we represent"},
+          {"kind": "table", "head": ["COMPANY", "WHAT THEY WRITE FOR US", "SINCE"], "rows": [["Pell Valley Mutual Insurance Company", "Farm owners, homeowners, dwelling fire", "1968"], ["Kesson Mutual", "Homeowners, personal auto", "1974"], ["Drovers Mutual Casualty", "Personal auto, commercial auto", "1981"], ["Ardent National Insurance Group", "Homeowners, auto, umbrella", "1989"], ["Halloway Indemnity Company", "Commercial package, general liability", "1993"], ["Midstate Crop & Hail", "Crop, hail", "1996"], ["Amity Life Insurance Company", "Term, whole life, final expense", "1999"], ["Cardiff Surety & Casualty", "Contractor bonds, inland marine", "2004"], ["Wexford Specialty", "Vacant dwellings, seasonal property, the hard ones", "2008"]]},
+          {"kind": "text", "body": "Flood is written through the federal programme and serviced by Pell Valley. Workers compensation goes to the state fund, which is not a company and cannot be shopped, and anybody who tells you otherwise is selling you something else."},
+          {"kind": "heading", "level": 2, "text": "The building"},
+          {"kind": "image", "seed": "fenner-31-bellamy-exterior", "imgKind": "photo", "caption": "31-bellamy-exterior.jpg -- Two-storey brick, white door, a gold-leaf window sign reading FENNER INSURANCE that was painted in 1971 and has been retouched twice."},
+          {"kind": "text", "body": "Parking is behind the building off the alley, four spaces, and the one nearest the fence is Marlene's and always was.\n\nThe front door is heavy and sticks in August. Push it."}
+        ]
+      },
+      {
+        "id": "staff",
+        "name": "Our Staff",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Our staff"},
+          {"kind": "text", "body": "Our team of dedicated insurance professionals is here to serve you. Each member of our staff brings years of experience and a commitment to personal service. Click any name below to send an email."},
+          {"kind": "text", "body": "[i]The names below are not clickable. Delbrook asked us for email addresses for each person and we gave them one address for the whole office. -- M.S., 2013[/i]"},
+          {"kind": "heading", "level": 2, "text": "Delores \"Dee\" Fenner Hoke, CIC"},
+          {"kind": "image", "seed": "fenner-staff-dee", "imgKind": "photo", "caption": "dee-fenner-hoke.jpg -- Woman in a blue jacket standing in front of a beige wall, arms at her sides."},
+          {"kind": "text", "body": "[b]Principal and licensed agent. Personal lines, farm.[/b]\n\nWith the agency since 1984, licensed since 1989, principal since 2004. Handles farm, homeowners and anything that has gone to a company's underwriting department and stopped moving.\n\nDee is on the Marchfield Public Library board and has been since 2007."},
+          {"kind": "heading", "level": 2, "text": "Gary Wenrich"},
+          {"kind": "image", "seed": "fenner-staff-gary", "imgKind": "photo", "caption": "IMG_0412.JPG -- Man in a grey sweater in front of the same beige wall, slightly off centre, looking at something to the left of the camera."},
+          {"kind": "text", "body": "[b]Licensed agent. Commercial lines.[/b]\n\nWith the agency since 1998. Writes the shops, the contractors, the churches, the halls and two of the county's volunteer fire companies, including [url=synth://ashkettlevfd.org/]Ashkettle Station 4[/url].\n\nGary is at the Gridfall office on Mondays and Thursdays and in Marchfield the rest of the week. He has done the advancement paperwork for [url=synth://troop62.verity.net/]Boy Scout Troop 62[/url] in Gridfall since 2004, which is a bigger job than it sounds and is not one of ours."},
+          {"kind": "heading", "level": 2, "text": "Marlene Strunk"},
+          {"kind": "image", "seed": "fenner-staff-marlene", "imgKind": "photo", "caption": "marlene-strunk.jpg -- Woman seated at a desk with a telephone and a green blotter, hands folded."},
+          {"kind": "text", "body": "[b]Office manager.[/b]\n\nWith the agency since 1979. If you have telephoned this office you have talked to Marlene. She does the billing, the certificates, the cancellations and the part where she tells you your payment did not go through before the company does.\n\n[i]Marlene retired Friday 30 September 2016 after thirty-seven years. She is not on the telephone any more and people still ask for her. We have left this here because taking it off felt worse. -- D.F.H.[/i]"},
+          {"kind": "heading", "level": 2, "text": "Tyler Frantz"},
+          {"kind": "image", "seed": "fenner-staff-stock-male-03", "imgKind": "photo", "caption": "stock_agent_male_03.jpg -- A man in a dark suit shaking hands with a client across a glass desk in a bright office with a city view. Delbrook stock library."},
+          {"kind": "text", "body": "[b]Licensed agent. Personal lines.[/b]\n\nWith the agency since 2011, licensed November 2011. Grew up in Gridfall and made Eagle Scout in Troop 62 in 2000, which is on their [url=synth://troop62.verity.net/eagles]Eagle list[/url] and which Gary mentions more often than Tyler does.\n\nTyler was not in the office the afternoon the photographs were taken."},
+          {"kind": "heading", "level": 2, "text": "Bonnie Klahr"},
+          {"kind": "image", "seed": "fenner-staff-stock-female-01", "imgKind": "photo", "caption": "stock_agent_female_01.jpg -- A woman in a telephone headset smiling at a computer monitor. Delbrook stock library."},
+          {"kind": "text", "body": "[b]Customer service representative. Personal lines.[/b]\n\nWith the agency since 2005. Endorsements, ID cards, and the mortgage companies, who ring here about escrow all year and never once have the policy number.\n\nBonnie was also not in the office that afternoon."},
+          {"kind": "heading", "level": 2, "text": "Sherri Zellers"},
+          {"kind": "image", "seed": "fenner-staff-placeholder", "imgKind": "photo", "caption": "photo_coming_soon.gif -- Grey rectangle, 200 by 250, with the words PHOTO COMING SOON in the middle."},
+          {"kind": "text", "body": "[b]Receptionist.[/b]\n\nWith the agency since 2012. Front desk, post, and the coffee, which she does not have to do and does."},
+          {"kind": "heading", "level": 2, "text": "Gerald R. Fenner"},
+          {"kind": "image", "seed": "fenner-staff-jerry-1979", "imgKind": "photo", "caption": "jerry-fenner-1979.jpg -- Scan of a framed photograph. Man in his forties in a wide tie, standing beside a desk. There is a glare off the frame glass in the top right corner."},
+          {"kind": "text", "body": "[b]Agent Emeritus.[/b]\n\nRetired 2006. The title came with the template. Jerry does not have a desk here and comes in when the mail has something in it with his name on, which is about four times a year, and stays about ninety minutes."}
+        ]
+      },
+      {
+        "id": "types",
+        "name": "Types of Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Types of insurance"},
+          {"kind": "text", "body": "Whatever you need to protect, Fenner Insurance Agency, Inc. has a solution. Select a coverage type below to learn more about how we can help you and your family in Marchfield and throughout Verity County."},
+          {"kind": "list", "ordered": false, "items": ["[url=/auto]Auto insurance[/url]", "[url=/home]Homeowners insurance[/url]", "[url=/farm]Farm insurance[/url]", "[url=/business]Business insurance[/url]", "[url=/life]Life insurance[/url]", "[url=/umbrella]Umbrella liability insurance[/url]", "[url=/renters]Renters insurance[/url]", "[url=/flood]Flood insurance[/url]", "[url=/recreational]Recreational vehicle insurance[/url]"]},
+          {"kind": "text", "body": "These nine pages came with the website package. Four of them are for things this office writes twice a year. We asked for a farm page that talked about hail and we got the one below, which is about a barn in a state we are not in.\n\nIf you want to know whether we can write something, telephone and ask. The answer is usually yes and it takes ninety seconds. -- [b]D.F.H.[/b]"}
+        ]
+      },
+      {
+        "id": "auto",
+        "name": "Auto Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Auto insurance"},
+          {"kind": "text", "body": "Your automobile is more than a means of transportation. It is your commute, your freedom, and for many households the second largest purchase they will ever make. The right auto insurance policy protects that investment and protects you from the financial consequences of an accident.\n\nAt Fenner Insurance Agency, Inc. we review your driving habits, your vehicles and your household to build a policy that fits. We represent multiple carriers, so if your rate moves at renewal we can shop it without you having to start again somewhere else."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Bodily injury and property damage liability", "Collision and comprehensive (\"other than collision\")", "Uninsured and underinsured motorist", "Medical payments", "Towing and labour", "Rental reimbursement", "Gap coverage on financed vehicles", "Classic and antique vehicle policies on agreed value"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "Many drivers carry only the state minimum limits of liability, which have not been raised in many years and which can be exhausted by a single emergency room visit. A review takes fifteen minutes and often costs less than you expect."},
+          {"kind": "text", "body": "[i]Two practical things this page does not say. One: the minimum limits will not cover a three car accident on a wet morning and they never did. Two: if you are adding a sixteen year old, ring us before you buy the car and not after. The car matters more than the driver does to the rate and nobody believes that until they see the two numbers. -- T.F., 2013[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "home",
+        "name": "Homeowners Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Homeowners insurance"},
+          {"kind": "text", "body": "Your home is where your life happens. It is also, for most families, their single largest asset. A homeowners policy from Fenner Insurance Agency, Inc. protects the structure, the contents, and your liability to others, and it does it at a price we will review with you every year whether you ask us to or not.\n\nWe write homeowners through several carriers, including companies that understand older houses, wood heat and outbuildings, which not every company does."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Dwelling and other structures", "Personal property, at replacement cost where available", "Loss of use and additional living expense", "Personal liability and medical payments to others", "Scheduled items -- rings, guns, tools, tack, instruments", "Service line and equipment breakdown endorsements", "Ordinance or law coverage on older construction"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "Building costs rise. A policy written ten years ago may insure your house for considerably less than it would cost to rebuild it today, and the shortfall does not appear until the day it matters."},
+          {"kind": "text", "body": "[i]Three things we get asked every week and none of them are on this page.\n\nA standard homeowners policy does not cover flood. Not from the creek, not from the road, not from water coming in at the foundation. See the [url=/flood]flood page[/url].\n\nFood spoiled in a power outage is usually covered and usually capped at $500, and there is a deductible in front of it. See the [url=/faq]questions page[/url] for what happened here in June 2003.\n\nA wood stove is not a problem. A wood stove that the company does not know about is a problem. Tell us and we will get it inspected and written properly. -- D.F.H.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "farm",
+        "name": "Farm Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Farm insurance"},
+          {"kind": "text", "body": "The family farm faces risks that a homeowners policy was never designed to address. From the farmhouse to the machine shed, from livestock to liability arising out of farming operations, a farm owners policy brings your exposures together under one program.\n\nFenner Insurance Agency, Inc. has written farm business in this area since 1968 and understands the seasonal nature of agricultural operations."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Farm dwelling and household contents", "Barns, machine sheds, grain bins, fencing", "Scheduled and blanket farm personal property", "Farm machinery, including equipment in transit", "Livestock, including collision and named perils", "Farm liability and custom farming liability", "Crop and hail through Midstate Crop & Hail", "Employer liability for hired help"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "Coverage for the modern farm should be reviewed each year before planting season. Equipment values, acreage and hired labour all change, and a policy that fit last spring may not fit this one."},
+          {"kind": "text", "body": "[i]Hail dates in this county: the deadline for crop and hail is usually the end of the first week in June and it moves. Ring us in May.\n\nAlso: if you have started renting ground to somebody, or taken on custom work for a neighbour, that is a different policy from the one you have. This is the single most common gap we find, and we find it after the fact more often than before it. -- D.F.H.[/i]"},
+          {"kind": "text", "body": "The [url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url] posts the grain bids and the agronomy calendar, and is a better guide to when anything is happening than we are."},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "business",
+        "name": "Business Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Business insurance"},
+          {"kind": "text", "body": "You have built your business. Protecting it should not be complicated. A business owners policy brings property, liability and business interruption together in a single package designed for small and mid-sized operations.\n\nWhether you own a retail storefront, operate as a contractor, or manage a not-for-profit organisation, the licensed professionals at Fenner Insurance Agency, Inc. can help you identify and address your exposures."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Building and business personal property", "General liability and products liability", "Business interruption and extra expense", "Commercial auto, including hired and non-owned", "Contractor equipment and installation floaters", "Liquor liability", "Directors and officers liability for boards and non-profits", "Surety and performance bonds through Cardiff", "Workers compensation placed with the state fund"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "Many small business owners assume their homeowners policy covers business equipment kept at home. In most cases it does not, or covers it only to a small sublimit. Call our office in {{city}} to schedule a review."},
+          {"kind": "text", "body": "[i]What we actually write in this county: seventeen Mill Street and Bellamy Street storefronts, thirty-one contractors, nine churches, four fire halls, two volunteer fire companies, a lodge, a bowling alley, and the fairground's liability for the week of the fair.\n\nIf you need a certificate of insurance, ring and ask for one. They are free, they take four minutes, and the general contractor is not going to let you on the job without one. Do not fax us the request the morning you need it and then also ring; we will do the same thing twice. -- G.W.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "life",
+        "name": "Life Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Life insurance"},
+          {"kind": "text", "body": "Life insurance is not about you. It is about the people who depend on you, and about what their lives look like on the worst day of them.\n\nThe agents at Fenner Insurance Agency, Inc. will sit down with you and work out how much coverage your family actually needs, for how long, and what it will cost. There is no obligation and there is no pressure."},
+          {"kind": "heading", "level": 2, "text": "Products available"},
+          {"kind": "list", "ordered": false, "items": ["Term life, 10, 20 and 30 year", "Whole life", "Final expense and burial policies", "Mortgage protection", "Key person and buy-sell coverage for businesses", "Fixed annuities"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "A healthy person in their thirties can often insure themselves for a quarter of a million dollars for less than the cost of a mobile telephone plan. Speak with a licensed agent today at {{agency_phone}}."},
+          {"kind": "text", "body": "[i]We write life. We are not going to telephone you about it at supper time and we are not going to send you a letter that looks like a bill. If you want it, come in.\n\nOne thing worth saying plainly: a burial policy is not a bad product and it is not an investment. If somebody is selling you one as an investment, that is the part to walk away from. -- D.F.H.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "umbrella",
+        "name": "Umbrella Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Umbrella liability insurance"},
+          {"kind": "text", "body": "An umbrella policy sits above your automobile and homeowners policies and provides additional liability protection when the limits of those policies are exhausted. In today's litigious environment, a judgment can easily exceed the liability limits on a standard policy.\n\n{{agency_name}} offers personal umbrella coverage in $1,000,000 increments. Speak with a licensed agent in {{city}}, {{state}} to learn whether an umbrella is right for your household."},
+          {"kind": "heading", "level": 2, "text": "An umbrella may be appropriate if you"},
+          {"kind": "list", "ordered": false, "items": ["Own rental property", "Serve on the board of a non-profit organisation", "Have a swimming pool, trampoline or dog", "Have teenage drivers in the household", "Own recreational vehicles or watercraft", "Have assets or future earnings worth protecting"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "The first million dollars of umbrella coverage is typically the least expensive coverage in your entire insurance program, often costing less per year than a single month of auto premium."},
+          {"kind": "text", "body": "[i]This is the one page on this website I would keep. An umbrella is cheap, it is boring, and it is the only thing on here that has ever kept somebody in their house after a bad afternoon. We write about forty of them. -- D.F.H.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "renters",
+        "name": "Renters Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Renters insurance"},
+          {"kind": "text", "body": "Your home is where your life happens. If you rent, your landlord's policy covers the building. It does not cover your belongings and it does not cover your liability to others.\n\n{{agency_name}} can protect your personal property, your additional living expense if the unit becomes uninhabitable, and the dwelling coverage on your house against fire, wind, theft and vandalism."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Personal property, at replacement cost where available", "Personal liability and medical payments to others", "Loss of use and additional living expense", "Protection for your home's foundation and attached structures", "Scheduled items -- rings, guns, tools, instruments"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "The average renter in {{city}} owns between $20,000 and $30,000 of personal property, far more than most people estimate when asked. Renters coverage frequently costs less than $15 per month."},
+          {"kind": "text", "body": "[i]The foundation line above is because this page is the homeowners page with the words changed, and whoever changed them missed one. We told Delbrook in October 2013 and again in 2014.\n\nThe coverage is real and it is about $140 a year and every student and every second-floor apartment on Bellamy Street should have it. -- B.K.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "flood",
+        "name": "Flood Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Flood insurance"},
+          {"kind": "text", "body": "Flooding is the most common natural disaster and it is not covered by a standard homeowners policy. Flood insurance is written through the federal programme and is available to homeowners, renters and business owners.\n\nAs {{state}} enters hurricane season, {{agency_name}} encourages every property owner to review their exposure to storm surge and coastal flooding. There is a thirty day waiting period before a new flood policy takes effect, so waiting until a storm is named is waiting too long."},
+          {"kind": "heading", "level": 2, "text": "Coverages available"},
+          {"kind": "list", "ordered": false, "items": ["Building coverage to $250,000 on residential structures", "Contents coverage to $100,000", "Commercial building and contents coverage", "Preferred risk policies outside the mapped floodplain", "Excess flood above the federal limits"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "More than twenty per cent of flood claims come from properties outside the high risk flood zone, where a preferred risk policy is often available for a few hundred dollars per year."},
+          {"kind": "text", "body": "[i]There is no storm surge in Verity County and there is no coastal anything. There is Kestrel Creek, and there is Tannery Flats in Gridfall, which is the mapped floodplain and which took four feet of water on 7 March 1994.\n\nWe write eleven flood policies in Tannery Flats. A county planning memorandum in 2005 estimated that about thirty properties down there had none, and I have no way of knowing whether that number is still right, and neither has anybody else. The [url=synth://wiki.gridfall.net/wiki/flood-1994]wiki write-up of the flood[/url] has the memorandum in it.\n\nThe thirty day wait is real and it is the part people find out about too late. -- D.F.H.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "recreational",
+        "name": "Recreational Vehicle Insurance",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Recreational vehicle insurance"},
+          {"kind": "text", "body": "Weekends are what you work for. Whether you are towing a travel trailer, launching a boat, or riding the trails, {{agency_name}} can protect your recreational investment.\n\nMany owners assume their auto policy extends to recreational vehicles. In most cases it does not, and in {{state}} the registration requirements differ by vehicle class."},
+          {"kind": "heading", "level": 2, "text": "Vehicles we can insure"},
+          {"kind": "list", "ordered": false, "items": ["Travel trailers, fifth wheels and motor homes", "Boats, pontoons and personal watercraft", "Snowmobiles", "All terrain vehicles and side by sides", "Motorcycles and scooters", "Golf carts", "Utility and livestock trailers"]},
+          {"kind": "heading", "level": 2, "text": "Did you know?"},
+          {"kind": "text", "body": "Coverage for a travel trailer should include liability for the period when the trailer is parked and being used as a residence, which is not automatically included on every policy."},
+          {"kind": "text", "body": "[i]In this county this page means camper trailers, four-wheelers and about nine boats. Two of the boats are on the same road.\n\nIf you tow it on the road, your auto liability follows the trailer while it is hitched and does not cover the trailer itself. That is the thing people get wrong. -- T.F.[/i]"},
+          {"kind": "text", "body": "Contact a licensed agent at Fenner Insurance Agency, Inc. today for a no-obligation review of your current coverage. [url=/quote]Request your free quote online[/url] or telephone our office."}
+        ]
+      },
+      {
+        "id": "quote",
+        "name": "Get a Quote",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Request a free quote"},
+          {"kind": "text", "body": "Complete the form below and a licensed agent will contact you within one business day. There is no obligation and your information is never sold or shared. Required fields are marked with an asterisk (*)."},
+          {"kind": "heading", "level": 2, "text": "Your information"},
+          {"kind": "list", "ordered": false, "items": ["First name *", "Last name *", "Street address", "City *", "State * [ select ]", "ZIP *", "Daytime telephone *", "Evening telephone", "Email address *", "Best time to contact [ Morning / Afternoon / Evening ]"]},
+          {"kind": "heading", "level": 2, "text": "What would you like a quote on? (check all that apply)"},
+          {"kind": "table", "head": ["", "COVERAGE", "", "COVERAGE"], "rows": [["[ ]", "Auto", "[ ]", "Umbrella"], ["[ ]", "Homeowners", "[ ]", "Renters"], ["[ ]", "Farm", "[ ]", "Flood"], ["[ ]", "Business", "[ ]", "Recreational vehicle"], ["[ ]", "Life", "[ ]", "Other (describe below)"]]},
+          {"kind": "heading", "level": 2, "text": "Tell us about your current coverage"},
+          {"kind": "text", "body": "[ large text box, 6 rows ]\n\nCurrent carrier: [ ______________ ]\nRenewal date: [ __ / __ / ____ ]\n\nPlease enter the characters you see below:"},
+          {"kind": "image", "seed": "fenner-captcha", "imgKind": "thumb", "caption": "captcha.php?sid=  -- Broken image icon. The box below it is 8 characters wide and there is nothing to read."},
+          {"kind": "text", "body": "[ SUBMIT MY REQUEST ]   [ CLEAR FORM ]"},
+          {"kind": "text", "body": "Thank you, {{first_name}}. Your request has been received and a licensed agent from {{agency_name}} in {{city}}, {{state}} will contact you within one business day. A confirmation has been sent to {{email}}."},
+          {"kind": "text", "body": "[b]If you want a quote, telephone the office.[/b] 744-1195, Monday to Friday, 8:30 to 4:30, and ask for whoever picks up.\n\nBring or have handy: the declarations page of what you have now, the VIN, and the year the roof was done. Fifteen minutes on the telephone and we can usually tell you the number the same day.\n\n[i]Added 19 April 2021. -- D.F.H.[/i]"}
+        ]
+      },
+      {
+        "id": "claims",
+        "name": "Report a Claim",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Report a claim"},
+          {"kind": "text", "body": "[b]If anyone is hurt, or there is fire, call 911 first.[/b] Then call the company. Then call us. In that order, and do not worry about the order."},
+          {"kind": "heading", "level": 2, "text": "What to do"},
+          {"kind": "list", "ordered": true, "items": ["Telephone the company's 24-hour claim line from the table below. They are open nights, weekends and Christmas, and we are not.", "Write down the claim number they give you. Put it in your telephone and on a piece of paper.", "Take photographs before you clean anything up. More than you think. From further back than you think.", "Stop the damage getting worse -- tarp the roof, shut the water off, get the tree off the wire only if the power company says the wire is dead. Keep the receipts for whatever you spend doing it; that is a covered expense.", "Do not throw anything away until the adjuster has seen it, including the ruined carpet and including the freezer contents. Photograph, then bag, then tell them.", "Telephone us in the morning. We will get the adjuster moving and we will read the estimate with you when it comes."]},
+          {"kind": "heading", "level": 2, "text": "24-hour claim numbers"},
+          {"kind": "table", "head": ["COMPANY", "CLAIMS", "NOTE"], "rows": [["Pell Valley Mutual", "1-800-772-4100", "Farm and homeowners. Adjusters are local. Ask for Curt on anything with a barn in it."], ["Kesson Mutual", "1-800-772-6155", "Homeowners and auto. Press 2, not 1. The menu is wrong."], ["Drovers Mutual Casualty", "1-800-449-2280", "Auto. They will want the other driver's plate. Get the plate."], ["Ardent National", "1-800-331-7788", "Auto, home, umbrella. Number changed March 2018; see below."], ["Halloway Indemnity", "1-800-449-9012", "Commercial. Business hours line is 744-1195, meaning us."], ["Midstate Crop & Hail", "1-800-772-3030", "Hail. Report within 72 hours of the storm or they will argue about it."], ["Amity Life", "1-800-331-4471", "Death claims. Ring us instead and we will do it with you. There is no rush and there is paperwork."], ["Cardiff Surety", "1-800-449-6600", "Bonds and inland marine."], ["Wexford Specialty", "1-800-772-8180", "Vacant and seasonal dwellings."], ["Federal flood programme", "1-800-331-2020", "Serviced by Pell Valley. Have the policy number; they cannot find you by address."], ["State compensation fund", "1-800-449-1000", "Workers compensation. First report of injury within 48 hours."]]},
+          {"kind": "text", "body": "[i]Ardent National changed their claim number in March 2018. The old number still answers and tells you the new one, which is the table above. Do not throw the old card away, it works. -- D.F.H., 6 March 2018[/i]"},
+          {"kind": "heading", "level": 2, "text": "What we can and cannot do"},
+          {"kind": "text", "body": "[b]We can:[/b] file the report for you, find your policy number, tell you what your deductible is, chase an adjuster who has not rung you back, read an estimate and tell you what is missing from it, and tell you honestly whether a claim is worth filing at all.\n\n[b]We cannot:[/b] decide your claim, pay your claim, raise your limits after the fact, or add coverage to a policy after a loss. Nobody can do the last one and anybody who says they can is committing a crime and offering to make you a party to it.\n\n[b]Ask us first on a small one.[/b] A $900 claim against a $1,000 deductible is a claim on your record for nothing. Ring and ask. It costs nothing to ask and we will tell you not to file it."},
+          {"kind": "heading", "level": 2, "text": "Power outages"},
+          {"kind": "text", "body": "Food spoiled by a power failure is covered under most homeowners policies, usually to $500, and the deductible applies first. Photograph the freezer before you empty it and write a list with prices.\n\nThe June 2003 outage in Gridfall produced forty-one claims through this office over the following two weeks. Thirty-eight were freezers. The companies paid all but two, and the two were both policies with a $1,000 deductible and about $300 of meat in them. That is what usually happens and it is worth knowing before you spend a morning on it."},
+          {"kind": "text", "body": "The [url=synth://ashkettlevfd.org/safety]Ashkettle fire company's safety page[/url] on chimneys and space heaters is better than anything we could write and we have handed it out at renewals."}
+        ]
+      },
+      {
+        "id": "news",
+        "name": "News & Safety Tips",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Agency news and safety tips"},
+          {"kind": "text", "body": "[i]Nothing on this page is written by this office. The articles came with the website on a content subscription. The subscription was dropped in the summer of 2014 and the page stayed where it was. -- posted for D.F.H., 2018[/i]"},
+          {"kind": "heading", "level": 3, "text": "Five Ways To Prevent a Kitchen Fire"},
+          {"kind": "text", "body": "Cooking is the leading cause of home fires. Never leave a pan unattended on a lit burner. Keep dish towels, packaging and curtains away from the stove. Clean grease from the range hood regularly. Keep a lid nearby to smother a pan fire, and never carry a burning pan to the sink.\n\nInstall smoke alarms on every level of your home and test them monthly.\n\n[i]Posted 17 June 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Is Your Teen Driver Ready? A Checklist for Parents"},
+          {"kind": "text", "body": "Adding a teenage driver to your policy is a significant step. Establish rules about passengers, night driving and mobile telephone use before the keys change hands, and put them in writing. Many carriers offer a good student discount for a B average or better.\n\nTalk to your agent before you purchase a vehicle for your teen. The vehicle you choose affects the premium more than most parents expect.\n\n[i]Posted 1 July 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Back To School: Watch for Buses and Children"},
+          {"kind": "text", "body": "School is back in session across {{city}} and the surrounding communities. Remember that it is illegal to pass a stopped school bus with its lights flashing in all fifty states. Slow down in school zones, watch for children stepping out between parked cars, and allow extra time in the morning.\n\nThe fifteen minutes you save is not worth what it could cost.\n\n[i]Posted 12 August 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Hurricane Preparedness: Secure Your Property Before the Storm"},
+          {"kind": "text", "body": "As the season peaks, property owners should review their preparations. Trim trees away from the structure, secure outdoor furniture, know your evacuation route, and photograph your possessions for your records. Remember that flood damage is not covered by a standard homeowners policy and that there is a thirty day waiting period on new flood policies.\n\nContact {{agency_name}} to review your coverage before a storm is named.\n\n[i]Posted 3 September 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Fall Home Maintenance Checklist"},
+          {"kind": "text", "body": "Autumn is the time to prepare your home for winter. Clean the gutters and downspouts, have the furnace serviced, inspect the roof for missing shingles, reverse ceiling fans, and have the chimney swept if you burn wood.\n\nA chimney fire is among the most preventable of all home losses and among the most expensive when it is not prevented.\n\n[i]Posted 30 September 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Deer Season: What To Do If You Hit One"},
+          {"kind": "text", "body": "Deer are most active at dawn and dusk during the autumn rut. If a collision is unavoidable, brake firmly and do not swerve. Swerving is what turns a repairable front end into a roll-over.\n\nDamage from striking an animal is covered under comprehensive rather than collision on most policies, which typically means a lower deductible. Report the collision and contact your agent.\n\n[i]Posted 14 October 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Winter Driving: Slow Down and Leave Room"},
+          {"kind": "text", "body": "Four wheel drive helps you go. It does not help you stop. Increase your following distance to eight or ten seconds on snow and ice, accelerate and brake gently, and keep the fuel tank above half.\n\nCarry a blanket, a shovel, sand or cat litter, and a torch. If you slide off, stay with the vehicle.\n\n[i]Posted 9 December 2013. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Protect Your Identity After a Data Breach"},
+          {"kind": "text", "body": "Review your statements monthly. Shred documents containing account numbers. Use different passwords for financial accounts and check your credit report annually, which you may do at no charge.\n\nMany homeowners policies now offer identity restoration coverage as an endorsement for a small additional premium. Ask your agent at {{agency_phone}}.\n\n[i]Posted 10 February 2014. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Spring Thaw: Check Your Sump Pump Now"},
+          {"kind": "text", "body": "Pour a bucket of water into the sump pit and confirm the pump switches on and the discharge runs clear of the foundation. Consider a battery backup; power failures and heavy rain arrive together.\n\nWater that backs up through a sump or a drain is excluded under most homeowners policies unless sewer and drain backup coverage has been added.\n\n[i]Posted 10 March 2014. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Grilling Safety: Five Things To Check Before You Light"},
+          {"kind": "text", "body": "Position the grill well away from the house, the deck rail and overhanging branches. Check the gas line for leaks with soapy water. Clean grease from the trays. Never add lighter fluid to a lit fire, and never leave the grill unattended.\n\nJuly is the peak month for grill fires.\n\n[i]Posted 7 July 2014. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "heading", "level": 3, "text": "Test Post - Please Ignore"},
+          {"kind": "text", "body": "This is a test of the Delbrook content publishing system. {{article_body}}\n\n[i]Posted 12 January 2015. Provided by the Delbrook Content Service.[/i]"},
+          {"kind": "text", "body": "[i]That is the end of the page. There is no more.[/i]"}
+        ]
+      },
+      {
+        "id": "faq",
+        "name": "Questions People Ask",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Questions people ask us"},
+          {"kind": "text", "body": "This page was not part of the website package. Marlene wrote most of it down over about three weeks in 2013 because she was answering the same eleven questions on the telephone every day, and then we put it up.\n\nIt is the only page on here anybody in this office has read twice."},
+          {"kind": "heading", "level": 2, "text": "Will my rate go up if I ring and ask a question?"},
+          {"kind": "text", "body": "No. Asking is free and it is not recorded anywhere. Filing a claim can affect your rate. Asking whether to file one cannot, and we would rather you ask."},
+          {"kind": "heading", "level": 2, "text": "Do I have to come in?"},
+          {"kind": "text", "body": "No. Most of this can be done on the telephone and we can post or email anything that needs a signature. People come in anyway and we like it, and there is coffee, and it is not very good coffee."},
+          {"kind": "heading", "level": 2, "text": "Does my homeowners policy cover the food in my freezer when the power goes out?"},
+          {"kind": "text", "body": "Usually yes, usually to $500, and your deductible comes off first. So on a $1,000 deductible the answer is almost always no in practice.\n\nWe have a real number for this. The June 2003 outage in Gridfall put forty-one claims through this office in two weeks and thirty-eight of them were freezers. All but two were paid. The two that were not were both $1,000 deductibles.\n\nPhotograph the freezer before you empty it, and write the list while you are throwing it out and not a week later.\n\nOne other thing, since it comes up every time this is mentioned: the state commission report on that fire came out in November 2003, it is two pages long, and it does not say lightning. People have been saying lightning since the week it happened. It is in the [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki article[/url] with the wording."},
+          {"kind": "heading", "level": 2, "text": "Somebody rang me saying my auto policy had lapsed and asked for a card number."},
+          {"kind": "text", "body": "That was not us and it was not your company.\n\nWe do not telephone you for a card number. If you want to pay by card you ring us, on 744-1195, a number you looked up yourself and not one you were given on the call.\n\n[i]Added April 2021: the current version of this uses a website called fenner-insurance-billing.click and a letter with our address on it. The letter is a good forgery apart from the telephone number. If you get one, bring it in, and do not use the [url=synth://fenner-insurance-billing.click/]address on it[/url]. -- D.F.H.[/i]"},
+          {"kind": "heading", "level": 2, "text": "Can you write my house if it has knob and tube wiring / a wood stove / a fuse box / a roof that is twenty-five years old?"},
+          {"kind": "text", "body": "Probably, at a price, with one of the two companies that still will. Tell us before we write it rather than after the inspection photographs come back, because the second way costs you a cancellation on your record.\n\nA twenty-five year old roof is the most common reason a company will not take a house in this county now. That is a change from ten years ago and it is not going back."},
+          {"kind": "heading", "level": 2, "text": "Why is my farm policy more than my neighbour's?"},
+          {"kind": "text", "body": "Usually one of four things: a grain bin he does not have, hired help, a pond with a dock, or a lower deductible you asked for in 1998 and forgot about.\n\nBring both declarations pages in and we will tell you which. If it is the fourth one we can fix it in ten minutes."},
+          {"kind": "heading", "level": 2, "text": "Do you sell health insurance?"},
+          {"kind": "text", "body": "No, and we have not since 2014. Nobody in this office is qualified to advise you on it and we are not going to pretend otherwise. We will tell you who to ring."},
+          {"kind": "heading", "level": 2, "text": "Do you take payments here?"},
+          {"kind": "text", "body": "For most companies, yes. Cheque, cash, money order, or a card with a fee that the company charges and we do not see a penny of.\n\nWe do not take payment for Ardent National or the state fund. Those go direct and there is nothing we can do about it, including on the last day."},
+          {"kind": "heading", "level": 2, "text": "The bank says my escrow is short and it is your fault."},
+          {"kind": "text", "body": "It is occasionally our fault and usually the bank's, and either way we can sort it out in one telephone call if you bring the letter in. Bring the letter. Not a photograph of the letter on a telephone; the number we need is in small print."},
+          {"kind": "heading", "level": 2, "text": "What happens if I die?"},
+          {"kind": "text", "body": "Your policies do not stop. Your family rings us and we deal with it, and there is no hurry in the first week and there is no charge for any of it.\n\nWe have done this for a lot of people here and we are not bad at it."}
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact & Directions",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Contact us"},
+          {"kind": "table", "head": ["", "MARCHFIELD", "GRIDFALL"], "rows": [["Address", "31 Bellamy Street, Marchfield", "141 Mill Street, Gridfall"], ["Telephone", "744-1195", "782-2262"], ["Fax", "744-1196", "none"], ["Monday", "8:30 - 4:30", "9:00 - 3:00"], ["Tuesday", "8:30 - 4:30", "closed"], ["Wednesday", "8:30 - 4:30", "closed"], ["Thursday", "8:30 - 4:30", "9:00 - 3:00"], ["Friday", "8:30 - 4:30", "closed"], ["Saturday", "closed", "closed"], ["Sunday", "closed", "closed"]]},
+          {"kind": "text", "body": "Email: [b]mailto:office@fennerinsurance.com[/b]\n\nThat is the whole office, not a person. Bonnie reads it. It is checked once in the morning and once about three, and it is not the way to report a claim -- for that, see the [url=/claims]claim numbers[/url]."},
+          {"kind": "heading", "level": 2, "text": "Finding us in Marchfield"},
+          {"kind": "text", "body": "Bellamy Street, town side of the town hall, third door down from the corner of Fenn Avenue. Brick, white door, gold letters in the window. If you have reached the Alliance church on Rensbury you have gone two blocks too far.\n\nParking is behind, off the alley. Four spaces. The kerb is high and the second space is not as wide as it looks."},
+          {"kind": "heading", "level": 2, "text": "Finding us in Gridfall"},
+          {"kind": "text", "body": "141 Mill Street, between the pharmacy and what was the hardware. It was Kerchner Jewelers until 2007 and there are people who still call it that when giving directions, including us.\n\nTwo days a week only, Monday and Thursday. There is a slot in the door for payments and it is emptied on those two days and not in between."},
+          {"kind": "image", "seed": "fenner-map-embed", "imgKind": "photo", "caption": "map.php?address=31+Bellamy+St -- Grey box with a small broken image icon in the corner. The map has not drawn since the website was built."},
+          {"kind": "heading", "level": 2, "text": "After hours"},
+          {"kind": "text", "body": "There is no after-hours number and there never has been. If you have a claim, ring your company's 24-hour line from the [url=/claims]claims page[/url]; they are staffed all night and we are not.\n\nIf it is not a claim it will keep until half past eight."}
+        ]
+      },
+      {
+        "id": "testimonials",
+        "name": "What Clients Say",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "What our clients say"},
+          {"kind": "text", "body": "We are proud of the relationships we have built over five decades. Read what your neighbours have to say about Fenner Insurance Agency, Inc., and use the form below to share your own experience."},
+          {"kind": "text", "body": "[i]The first four are off letters and cards in the drawer, typed up with permission. After that it is whatever comes in through the form. Nobody has checked the form since about 2015. -- M.S.[/i]"},
+          {"kind": "guestbook", "entries": [{"author": "R. Ebersole, Marchfield", "time": "06/17/2013", "body": "Been with this office since 1974 under three different Fenners. Dee found me $400 on the farm policy in 2011 without me asking her to look."}, {"author": "Denise H., Ashkettle", "time": "09/04/2013", "body": "Tree came through the porch roof in the July storm. Rang Gary at twenty past seven in the morning, adjuster was out Thursday, cheque in eleven days. That is all I want from insurance."}, {"author": "Pastor D. Halderman", "time": "11/26/2013", "body": "Gary sat with our trustees for two hours and explained why the church needed the liability limit raised, without once trying to sell us anything else. We raised it."}, {"author": "Karen Fennimore, Marchfield", "time": "03/10/2015", "body": "The maple came down on the garage on 3 March. Marlene had the claim number for me before I had finished describing it and the adjuster was out on the 6th. I have had this policy since 2004 and this is the first time I have used it.\n\nOne correction for the page: the office is not \"across from the town hall\", it is three doors down from Fenn Avenue on the same side. I have given people the wrong directions twice off this website."}, {"author": "kevin", "time": "07/30/2019", "body": "GREAT SERVICE!!! Also check out our site for the BEST rates on auto insurance in your area, save up to 47% in minutes no medical exam required [url=synth://autosave-quotes-now.top/]click here now[/url]"}, {"author": "Storm Response Team", "time": "09/14/2021", "body": "ATTENTION HOMEOWNERS. Our crews are in VERITY COUNTY THIS WEEK following recent hail activity. FREE roof inspection, we work directly with your insurer, most homeowners qualify for a FULL REPLACEMENT at no cost. Do not wait. [url=synth://freeroof-nationwide.click/]Book your free inspection[/url]"}, {"author": "Anonymous", "time": "03/22/2022", "body": "is this where i renew my registration. the lady at the counter said do it online"}, {"author": "helen_m", "time": "08/17/2023", "body": "Five stars! {{business_name}} in {{city}}, {{state}} provided excellent {{service_type}} and I would recommend {{business_name}} to anyone in the {{city}} area looking for {{service_type}}."}, {"author": "Local History Digest", "time": "03/19/2024", "body": "Did you know? In 2004 the Gridfall power station fire burned for three days after a lightning strike and claimed the lives of two firefighters, an event that transformed insurance in Verity County forever. Read the full story and 9 other shocking facts about this area [url=synth://county-history-facts.vip/]here[/url]."}, {"author": "AutoQuote Savings Bot", "time": "06/24/2025", "body": "Residents of Marchfield may be overpaying for auto insurance. Our system compares rates from over 40 providers in seconds. Drivers in your area report saving an average of $912 per year. [url=synth://compare-rates-marchfield.win/]Start saving today[/url]"}, {"author": "m.", "time": "11/13/2025", "body": "does anyone know if marlene still works here"}, {"author": "Verity Business Reviews", "time": "08/11/2026", "body": "Fenner Insurance Agency, Inc. is a trusted provider of insurance services in the Marchfield community. Local officials and residents have praised the agency for its commitment to the community. The agency was founded in 1958 and has served the community for over six decades. Customers seeking insurance services in the Marchfield area are encouraged to contact the agency today. Source: [url=synth://verity-business-directory.biz/]Verity Business Directory[/url]"}]},
+          {"kind": "text", "body": "[ Submit your testimonial ]  Name: [ __________ ]  Town: [ __________ ]  Comment: [ ______________________ ]  [ SEND ]"},
+          {"kind": "text", "body": "[i]Added 2026. We are aware of what is on this page. Taking it down means ringing the website company, and the website company has not answered a telephone since 2019, and the agency is busy. If you want to say something about this office, say it to us. -- D.F.H.[/i]"}
+        ]
+      },
+      {
+        "id": "privacy",
+        "name": "Privacy Policy",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Privacy policy and terms of use"},
+          {"kind": "text", "body": "[i]Last revised: January 2011.[/i]"},
+          {"kind": "text", "body": "{{company_legal_name}} (\"we\", \"us\", \"our\") respects the privacy of visitors to this website (the \"Site\"). This policy describes the information we collect and how it is used. By using the Site you consent to the practices described in this policy."},
+          {"kind": "heading", "level": 2, "text": "Information we collect"},
+          {"kind": "text", "body": "We collect information you voluntarily provide through forms on the Site, including your name, address, telephone number, email address and details of your insurance needs. We may also collect non-identifying information such as browser type, referring page and the time of your visit, which is used in aggregate to improve the Site."},
+          {"kind": "heading", "level": 2, "text": "Cookies"},
+          {"kind": "text", "body": "The Site uses cookies to remember your preferences. Most browsers permit you to refuse cookies. If you refuse cookies certain features of the Site may not function as intended."},
+          {"kind": "heading", "level": 2, "text": "Disclosure"},
+          {"kind": "text", "body": "We do not sell your information. We may share information with the insurance carriers we represent for the purpose of preparing a quotation, with service providers who operate the Site on our behalf, and where required by law or by the regulatory authorities of the State of {{state}}."},
+          {"kind": "heading", "level": 2, "text": "Your California privacy rights"},
+          {"kind": "text", "body": "Residents of California may request a list of third parties to whom we have disclosed personal information for direct marketing purposes during the preceding calendar year. Requests should be directed to the address listed on the Contact page."},
+          {"kind": "heading", "level": 2, "text": "Terms of use"},
+          {"kind": "text", "body": "The content of the Site is provided for general informational purposes only and does not constitute an offer of insurance or a statement of coverage. No coverage is bound, altered or cancelled by any communication submitted through the Site. Coverage is subject to the terms, conditions and exclusions of the actual policy issued. In the event of a conflict between the Site and the policy, the policy governs.\n\nThe Site may contain links to third party websites. {{company_legal_name}} does not control and is not responsible for the content of those sites."},
+          {"kind": "text", "body": "[i]This page came with the website package and has never been read by anybody in this office until a customer asked about the California paragraph in 2017. It is still here. -- D.F.H.[/i]"}
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Local Links",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Local links"},
+          {"kind": "text", "body": "Sites we use or send people to. If one of them has stopped working we probably do not know."},
+          {"kind": "buttons", "label": "Badges that came with the template:", "items": [{"label": "Independent Agent -- We Work For You", "seed": "fenner-btn-independent"}, {"label": "Delbrook Agency Websites", "seed": "fenner-btn-delbrook"}, {"label": "Verity County Chamber of Commerce", "seed": "fenner-btn-chamber"}, {"label": "Best viewed in Internet Explorer 8 or higher", "seed": "fenner-btn-ie8"}, {"label": "This site is secured", "seed": "fenner-btn-secured"}, {"label": "The Gridfall Boards", "seed": "fenner-btn-boards", "domain": "boards.gridfall.net"}, {"label": "The Gridfall Wiki", "seed": "fenner-btn-wiki", "domain": "wiki.gridfall.net"}, {"label": "Marchfield Farmers Cooperative", "seed": "fenner-btn-coop", "domain": "marchfield-coop.com"}]},
+          {"kind": "table", "head": ["SITE", "WHAT IT IS"], "rows": [["[url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url]", "Grain bids and the agronomy calendar. Half our farm customers are theirs too."], ["[url=synth://gridfalltire.com/]Gridfall Tire & Alignment[/url]", "Depot Street. They put us on their links page in 2011 and it took us until 2013 to return it."], ["[url=synth://ashkettlevfd.org/]Ashkettle Volunteer Fire Department[/url]", "Station 4. We write their liability and Gary is at their banquet every year."], ["[url=synth://troop62.verity.net/]Boy Scout Troop 62, Gridfall[/url]", "Gary's, more or less. The pancake breakfast is the first Saturday in March."], ["[url=synth://countysoftball.org/teams]Verity County Adult Softball League[/url]", "We had a team from 1974 to 1996. Sandy Reber has had that slot since 1997 and is welcome to it."], ["[url=synth://reber-insurance.synth/]Reber Insurance Agency, Marchfield[/url]", "The other agency in this town. Sandy writes companies we do not and we write companies she does not, and we have sent each other business for thirty years."], ["[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "Has the 1994 flood and the 2003 substation fire written up with the documents, which is more than most places."], ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "Where the county argues. Somebody asks about insurance on there roughly twice a year and gets four wrong answers before anybody rings an agent."], ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The paper. We buy the same quarter page every week and have since 1969."], ["[url=synth://tnorris.verity.net/flood]Thomas Norris on the 1994 flood[/url]", "The surveyor's account, with the high water marks. We still use it to explain what the floodplain means."], ["[url=synth://delbrookmarketing.synth/]Delbrook Marketing Services[/url]", "Built this website in 2013 for $59 a month including the article feed. The feed was dropped in 2014. Nobody has answered their telephone since 2019 and the monthly charge is still going out on the same card."]]},
+          {"kind": "text", "body": "[i]The chamber badge does not link anywhere. It never did. We are members and it is $95 a year and we have never been able to say what it is for either.[/i]"}
+        ]
+      }
+    ]
+  }
+}

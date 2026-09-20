@@ -1,0 +1,513 @@
+{
+  "schema": 1,
+  "domain": "veritysheriff.gov",
+  "title": "Verity County Sheriff's Office",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Road patrol, civil process and the county jail for Verity County, plus the daily blotter, which is the most-read page in the county and the one nothing links to.",
+  "tags": [
+    "verity",
+    "county",
+    "sheriff",
+    "blotter",
+    "2026"
+  ],
+  "links": [
+    "verity.county.gov",
+    "verity-transit.gov",
+    "now.verityledger.com",
+    "verityledger.com",
+    "veritycountytoday.com",
+    "newcarrow-today.com",
+    "milbrookgazette.com",
+    "thequarry.news",
+    "scanner.verity.net",
+    "classifieds.verity.net",
+    "gridfallswap.net",
+    "askverity.com",
+    "verityanswers.com",
+    "ask.verity.ai",
+    "verity.wiki",
+    "wiki.gridfall.net",
+    "shoutbox.live",
+    "gridline.social",
+    "marchfieldlibrary.blog",
+    "ashkettlevfd.org",
+    "vvpl.news",
+    "veritywire.press"
+  ],
+  "data": {
+    "agency": "Verity County Sheriff's Office",
+    "motto": "Emergencies 911. Everything else 782-1200.",
+    "notices": [
+      "Emergencies: 911. Non-emergency: 782-1200. The non-emergency line is answered in this building by a person, weekdays 8:00 a.m. to 4:00 p.m. Outside those hours it is answered at the regional centre in Ridgemont along with 911. Either way somebody picks up. There is no voicemail on either line and there is not going to be.",
+      "[b]911 call answering moved on Tuesday 1 September 2026.[/b] Emergency calls from Verity County are now answered by the three-county communications authority in Ridgemont under a five-year contract. The number you dial has not changed. Six dispatchers worked in the room behind this office from 1987 until the first of this month. Two took the jobs offered in Ridgemont, which are sixty-one miles away and at grade. The room is still there and the sign on the door still says DISPATCH. The contract, the saving and the arithmetic behind the saving were written up in [url=synth://thequarry.news/i/i-78]The Quarry, issue 78[/url], and that account is accurate as far as this office can check it.",
+      "[b]Scam alert - the power disconnection call.[/b] A recorded or live caller says your electric account is 48 hours from being shut off and directs you to pay immediately with prepaid cards. It is not Verity Valley Power & Light. This office has taken 118 reports since 4 August 2026. Five people paid. Read [url=/s/scams]Scams and Frauds[/url] before you call anybody back. Nobody in this office, at the court, at the utility or at the county will ever ask you for a prepaid card.",
+      "The blotter is posted weekday mornings by 9:30 for the previous twenty-four hours. Saturday and Sunday calls appear in Monday's entry. The blotter gives the road and not the house number, and carries no names. The [b]weekly release file[/b], which does have names, street addresses and case numbers in it, goes out Monday mornings to anybody who asks, at no charge, in the format it comes out of the system. You do not have to be a newspaper and we do not ask why.",
+      "Answers about this office produced by [url=synth://ask.verity.ai/]VerityAssist[/url] are not our answers and we do not review them. This year it has told residents that this office issues open burning permits (the County Fire Marshal does, on [url=synth://verity.county.gov/s/burn-permit]Form VC-208[/url]), that jail visitation is Monday and Friday evenings (it has not been since 2019), and that the Gridfall substation fire was in 2004. If an answer about this office did not come off this page, ring 782-1200 and ask a person.",
+      "This office is asked about the 2003 substation fire roughly once a week. What we hold is the dispatch record. The first call came in at 4:56 a.m. on Wednesday 11 June 2003 and we logged 214 calls before midnight. Nobody died. Two Gridfall volunteer firefighters were treated at County General for smoke inhalation and released the same afternoon. This office did not investigate the cause, does not hold a file on the cause, and has never been asked for one by anybody who then printed the answer. The cause finding is the state utility commission's, dated November 2003, and it runs to two pages. The contemporaneous coverage is in the [url=synth://verityledger.com/]Ledger archive[/url]. We have been sent nine videos about it this year and have watched two.",
+      "This office does not investigate radio transmissions and has no information about them. Interference reports are taken by the County on [url=synth://verity.county.gov/s/route62-signal]Form VC-63[/url]. Calls about a vehicle parked on the shoulder of County Route 62 are welcome and a deputy will check it. Parking on the north shoulder east of the quarry cut is not a violation, which is what this office told the [url=synth://milbrookgazette.com/]Milbrook Gazette[/url] in 2016 and is still the answer.",
+      "Between 2:00 a.m. and 6:00 a.m. the village of New Carrow is patrolled by this office under the shared services agreement of 2019. The village has its own four officers and its own log for the other twenty hours. Two logs, two agencies, one village. If you are not sure which one took your call, ring 782-1200 and we will look."
+    ],
+    "services": [
+      {
+        "id": "blotter-0918",
+        "name": "Daily Blotter - Friday 18 September 2026",
+        "blurb": "Eighteen calls received by this office between midnight and midnight on Friday 18 September 2026. The road, not the house number. No names.",
+        "status": "online",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "12:41 a.m. - Alarm, commercial, Depot Street, Gridfall. Building checked and secure. Keyholder contacted. The panel has done this three times in eight days.",
+          "6:05 a.m. - Deer struck, County Route 62 west of Kestrel Road. No injuries. Vehicle towed. The deer was dispatched by the deputy and removed by Highway at 7:40 a.m. Fourteenth deer strike reported in the county this month.",
+          "7:12 a.m. - Traffic control, Third Street at Mill Street, Gridfall. Signal on flash. Public Works notified. Deputy on the intersection eighteen minutes.",
+          "8:04 a.m. - Dog at large, Pell Road. Same dog as 14 September. Owner advised a second time. A third call is a citation and the owner was told that in those words.",
+          "9:31 a.m. - Brush burning without a permit, Quarry Road. Advised. Extinguished by the occupant. No fire department response. Burn permits are issued by the County Fire Marshal, not by this office.",
+          "10:22 a.m. - Fraud report, Halsey. Resident received a recorded call stating that power would be disconnected within 48 hours and was directed to buy prepaid cards. No money sent. Report taken. Eleventh report of this call in seven days.",
+          "11:47 a.m. - Civil standby, Marchfield. Property exchange between two parties by agreement. Fifteen minutes. No dispute.",
+          "12:15 p.m. - Larceny, County Road 9. Approximately sixty feet of copper downspout taken from a barn overnight. Report taken. Fifth downspout report in the county since July, all on roads with a hard surface and a long driveway.",
+          "1:05 p.m. - Lost property, Verity Branch Trail, Marchfield trailhead. A hearing aid. Not recovered. Logged and described.",
+          "2:20 p.m. - Assist motorist, County Route 62 at the quarry cut. Flat tyre, no spare. Deputy stood by with the bar on until the tow arrived, which took fifty minutes.",
+          "3:11 p.m. - Harassment complaint, Ashkettle. Continuing dispute between neighbours about a fence line. Both parties advised it is a civil matter. Seventh call to this address since June and the seventh time they have been told the same thing.",
+          "4:44 p.m. - Assist other agency, Marchfield. Borough police requested a second unit on a traffic stop. No further action.",
+          "5:02 p.m. - Juvenile complaint, Bellamy Street, New Carrow. Daylight hours. Referred to the village.",
+          "5:35 p.m. - Welfare check, Tannery Flats. Requested by a pharmacy that had not been able to reach a customer. Resident located at a neighbour's house. No medical.",
+          "6:50 p.m. - Deer struck, County Road 9 north of Marchfield. No injuries. Vehicle driveable.",
+          "9:15 p.m. - Motor vehicle stop, Depot Street. One man, 41, arrested for driving while intoxicated. Transported to the county jail and released on an appearance ticket. Gridfall town court, 6 October.",
+          "10:58 p.m. - Report of shots, Cobb Creek Road. Determined to be a bird cannon on a vineyard two roads over. No violation. This is the third September in a row this call has been made.",
+          "11:52 p.m. - Suspicious person, Court Street, Gridfall. Man waiting for a ride outside the courthouse. Checked and left."
+        ],
+        "forms": [
+          {
+            "name": "Weekly release file, week of 14 September 2026",
+            "note": "Spreadsheet, released Monday mornings. Contains names, street addresses and case numbers. No charge. Ask at the counter or ring 782-1209. It is the same file whether you are a newspaper or not, and most weeks two of the four people who collect it are not. A retyped weekly summary of it, with the names taken back out, appears at [url=synth://veritycountytoday.com/article/c-blotter]veritycountytoday.com[/url]."
+          },
+          {
+            "name": "Correction to a blotter entry",
+            "note": "If an entry about you or your address is wrong, ring 782-1209 and we will check it against the call record. Eleven entries have been corrected this year. Nine of them were road names."
+          },
+          {
+            "name": "Prior days",
+            "note": "Thursday is at [url=/s/blotter-0917]17 September[/url], Wednesday at [url=/s/blotter-0916]16 September[/url], and the weekend of the outage at [url=/s/blotter-0914]14 September[/url]. Anything older than three weeks comes off this page and goes into the monthly binder at the counter."
+          }
+        ]
+      },
+      {
+        "id": "blotter-0917",
+        "name": "Daily Blotter - Thursday 17 September 2026",
+        "blurb": "Fourteen calls received between midnight and midnight on Thursday 17 September 2026.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "2:14 a.m. - Vehicle parked on the north shoulder of County Route 62 east of the quarry cut. Unoccupied, no hazard lights, not obstructing. Plate check returned no record. Notice left on the windshield. The vehicle was gone at 6:40 a.m. No violation and no further action.",
+          "3:02 a.m. - Alarm, Depot Street, Gridfall. Building checked and secure. Panel fault reported to the keyholder.",
+          "7:40 a.m. - Traffic complaint, County Road 9. School bus passed on the right while stopped with the arm out. Plate obtained from the bus camera. Referred to the district and the registered owner will be contacted.",
+          "8:15 a.m. - Cattle out, County Route 62 near the county line. Four head. Returned by the owner inside twenty minutes. No damage and no traffic held.",
+          "10:22 a.m. - Welfare check, Bracken Lane. Requested by a family member out of state who had not reached the resident in four days. Resident at home and well. The telephone had been out since Sunday and had not been reported. The deputy reported it.",
+          "12:30 p.m. - Identity theft report, Gridfall. Resident's name used to open an account with an out-of-state lender. Report taken and a case number issued so the resident has something to give the lender. This office cannot close the account and the resident was told so at the counter.",
+          "1:40 p.m. - Parking complaint, Third Street, Gridfall. No action. The vehicle was legally parked and the complaint was about which vehicle it was.",
+          "2:55 p.m. - Civil papers served, Halsey. Warrant of eviction, one tenant named. Served in hand.",
+          "4:18 p.m. - Deer struck, County Route 62 at the Ashkettle line. No injuries. Vehicle driveable. Twelfth this month.",
+          "5:30 p.m. - Fraud report, Ashkettle. Power disconnection call. Four hundred dollars in prepaid card numbers read out over the telephone. Report taken. The money is gone. The resident was told that plainly because there is no version of this where it is not true.",
+          "6:45 p.m. - Trespass complaint, quarry parcel off County Route 62. Two people on the floor of the cut with cameras. Advised the parcel is private and posted. Left without incident and were pleasant about it.",
+          "7:50 p.m. - Alarm, Kerrin Central School. Building checked and secure.",
+          "9:10 p.m. - Domestic complaint, Nye Mills. One party transported to a relative's house. No charge filed, no injuries reported, information on services left at the residence.",
+          "11:20 p.m. - Suspicious vehicle, Verity Branch Trail parking, Marchfield. Two occupants. Checked. Left when asked. The lot is posted closed from dusk and the posting is a parks rule, not a county ordinance, which means a deputy can ask and cannot cite."
+        ],
+        "forms": [
+          {
+            "name": "Traffic complaint - school bus passing (Form VS-14)",
+            "note": "One page. If you saw it and can give a plate, a direction and a time, this office can do something with it. If you can only give the make, this office cannot."
+          },
+          {
+            "name": "Identity theft packet",
+            "note": "Six pages, free at the counter. Report, case number, the state's affidavit, the three credit bureau addresses, and a page on what a police report does and does not do. It does not make anybody give your money back."
+          }
+        ]
+      },
+      {
+        "id": "blotter-0916",
+        "name": "Daily Blotter - Wednesday 16 September 2026",
+        "blurb": "Ten calls received between midnight and midnight on Wednesday 16 September 2026.",
+        "status": "online",
+        "lastUpdated": "2026-09-17",
+        "steps": [
+          "2:07 a.m. - Six calls, east side of the county, momentary loss of power. No unit sent. Clocks only.",
+          "6:30 a.m. - Deer struck, Brill Road. No injuries. Eleventh this month.",
+          "9:49 a.m. - Assist fire department, Gridfall Middle School. Automatic alarm, contractor on the roof. Ellery Street held eleven minutes.",
+          "11:15 a.m. - Civil standby, Coyne Flats. Property retrieval by agreement. Fifteen minutes.",
+          "1:12 p.m. - Assist fire department, County Route 62, Carrow Wireless Repair. Automatic alarm, burnt popcorn. The dispatch address for this parcel reads BLUE KESTREL DINER and has since the file was built in 1994. The diner closed in 2006. The building was a vape shop from 2013 and has been a phone repair business since 2022. This office has asked twice to have the record changed and has been told the address file is held by the vendor.",
+          "2:00 p.m. - Fraud report, Gridfall. Power disconnection call. No money sent. The resident had read about it here, which is the only reason this office knows the page is read.",
+          "3:25 p.m. - Theft from a motor vehicle, Second Street, Marchfield. Vehicle unlocked. Loose change and a garage door opener taken. Report taken. The opener is the part that matters and the resident was advised to have the code changed.",
+          "5:22 p.m. - Wires down, Pell Road. Road closed at the Hollis Road junction. Utility on scene in thirty-one minutes, which is the best this office has logged on that road. Reopened 6:20 p.m.",
+          "7:40 p.m. - Smoke reported, Ashkettle. Checked against the permit list. Permitted burn, in order, no action.",
+          "11:20 p.m. - Motor vehicle stop, County Route 62 near Kestrel Road, defective tail lamp. One man, 34, arrested on a charge arising from the stop. Transported to the county jail."
+        ],
+        "forms": [
+          {
+            "name": "Dispatch address file - correction request",
+            "note": "Not a public form. The address file behind the computer-aided dispatch system is maintained by the vendor under the county's contract. Corrections are submitted by this office and this office is told they are queued. The Blue Kestrel entry has been queued since March 2023. A fire crew arriving at that parcel knows what the building is; a machine reading the log later does not, and that is how the words THE KESTREL keep turning up in feeds that have never been on Route 62."
+          },
+          {
+            "name": "Automatic alarm registration (Form VS-6)",
+            "note": "Required for commercial alarm systems in the unincorporated county. The first three false alarms in a year are free; after that it is $50 each. The Depot Street panel is at three."
+          }
+        ]
+      },
+      {
+        "id": "blotter-0914",
+        "name": "Daily Blotter - Monday 14 September 2026, with the weekend",
+        "blurb": "Calls received between midnight on Saturday 12 September and midnight on Monday 14 September. Three hundred and eleven of the weekend's calls were about the power, thirty-eight of them to 911. Those are counted and not listed. The rest are below.",
+        "status": "online",
+        "lastUpdated": "2026-09-15",
+        "steps": [
+          "[b]Saturday 12 September[/b]",
+          "6:41 p.m. - First of the outage calls. Marchfield, Halsey and part of New Carrow. A call to 911 to report that your power is out is answered, logged, and no unit is sent. That is the correct answer and it is not a satisfying one. The utility's trouble desk is on your bill.",
+          "6:58 p.m. - Traffic control, Depot Street at Third, Gridfall. Signal dark. Deputy working the intersection until 8:10 p.m.",
+          "8:41 p.m. - Warming room opened at the Meacham Street fire station at the request of emergency management. The head count given on the air at 9:07 p.m. was four. The county's summary the following Monday gives nine over the whole night. Both numbers are in the record. They are counting different things and nobody has said which one they mean.",
+          "9:44 p.m. - Assist fire department, carbon monoxide, Hollis Road. Generator running in an attached garage with the door shut. Four people out of the house, one transported to County General.",
+          "10:10 p.m. - Assist fire department, carbon monoxide, Tannery Flats. Generator. Nobody transported.",
+          "[b]Sunday 13 September[/b]",
+          "2:41 a.m. - Gridfall and south Ashkettle lose power. Forty-one calls in the following hour.",
+          "3:19 a.m. - Traffic control, Depot and Third. Signal dark again. No deputy available for eleven minutes.",
+          "4:02 a.m. - Medical assist, Pell Road. Lift assist with no ambulance crew free for twenty minutes. The fire department assisted. Nobody transported.",
+          "6:22 a.m. - Welfare checks, Halsey, nine of them, all requested by family out of the area who could not get through. All nine residents located and well. Two were asleep.",
+          "7:52 a.m. - Halsey restored. Last of the outage calls at 8:10 a.m.",
+          "11:30 a.m. - Larceny, Marchfield. A generator taken from a yard overnight while it was running. Report taken. Not recovered.",
+          "[b]Monday 14 September[/b]",
+          "8:12 a.m. - Dog at large, Pell Road. Owner advised.",
+          "9:35 a.m. - Fraud report, Marchfield. Power disconnection call, on the morning after a real outage. That is not a coincidence and it is how this one works. No money sent.",
+          "2:50 p.m. - Civil papers served, Gridfall. Small claims summons, served in hand.",
+          "4:30 p.m. - Larceny, Coyne Flats. Approximately ninety gallons of diesel taken from a farm tank. Report taken. Third fuel theft in the county this year and the other two were also on a Sunday night.",
+          "6:15 p.m. - Deer struck, County Route 62. No injuries."
+        ],
+        "forms": [
+          {
+            "name": "Outage weekend call totals, 12 to 14 September 2026",
+            "note": "One page. 311 calls about the power, of which 38 came in on 911. 27 welfare checks. 9 carbon monoxide responses, all generators, one transport. Free at the counter. The emergency management summary is a separate document and is the County's, not ours."
+          },
+          {
+            "name": "Generator advisory card",
+            "note": "Half a sheet, in the rack at the counter and at both libraries. Outside, six feet from any opening, never in a garage with the door shut, and a carbon monoxide alarm on every floor. The Ashkettle fire department keeps a list of people on oxygen and on a well pump and checks it every January. Their page is at [url=synth://ashkettlevfd.org/]ashkettlevfd.org[/url]. Ask them to put you on it; they would rather have the name."
+          },
+          {
+            "name": "Fire and EMS radio traffic for the same nights",
+            "note": "Not ours. A retired county dispatcher writes down fire and EMS traffic at [url=synth://scanner.verity.net/post/log-2026-09-12]scanner.verity.net[/url] and has since 2009. Her log for that weekend is minute by minute and is better than this entry at what happened in what order. It is not an official record and she says so on every page."
+          }
+        ]
+      },
+      {
+        "id": "blotter-about",
+        "name": "About the Blotter",
+        "blurb": "What the blotter is, what it is not, how it is made, where the names are, and why it exists in this form.",
+        "status": "online",
+        "lastUpdated": "2026-09-11",
+        "steps": [
+          "[b]What it is.[/b] A list of calls received. Not a list of crimes, not a list of arrests, and not a list of anything that was found to be true. A call logged as a burglary is a call somebody made. Twice this year it has been a raccoon.",
+          "[b]How it is made.[/b] The records clerk reads the previous day out of the computer-aided dispatch system and types it into this page by hand, taking out house numbers and names and leaving in the road and the time. It takes about fifty minutes on an ordinary day and it took four hours on the Monday after the outage.",
+          "[b]Why it is typed and not exported.[/b] The export includes fields this office is not going to publish, and nobody here can edit the export template. The vendor can. The quote to change the template was $2,400 and it was not funded, so it is typed.",
+          "[b]Names.[/b] There are none on this page. Names, street addresses and case numbers are in the weekly release file, which goes out Monday mornings to anybody who asks and is free. This office does not decide who is a journalist and does not want to.",
+          "[b]The two names we got wrong.[/b] Twice this year the weekly file carried a name that did not match the charging document. Both were corrected in the following Monday's file. A correction does not reach anybody who already downloaded the first one, and this office has not solved that and does not have a way to. A wire service noticed both times and said so in print, which is the only reason it was caught the second time.",
+          "[b]Why this page exists at all.[/b] On 1 February 2021 sheriff's primary radio traffic moved to an encrypted talkgroup on the state trunk, along with car-to-car. Before that, anybody with a scanner could hear a welfare check being sent. Since then this page is the public record of what road patrol did, and that is the argument that was made inside this building for keeping it daily rather than weekly. It was not a popular argument and it won.",
+          "[b]Who reads it.[/b] 41,600 page views last month. Everything else on this site together got 6,200. Nothing links here except three feed robots and, twice, a school project. The county's own services portal does not link to it. We have mentioned that.",
+          "[b]Who copies it.[/b] Three feed robots repost it within the hour, none of them run by this office, and two of them add a closing sentence we did not write. This office has no account on [url=synth://gridline.social/]gridline.social[/url], [url=synth://shoutbox.live/]shoutbox.live[/url] or anything of that kind, and pages using the county seal there are not ours. Lines out of this page turn up verbatim on [url=synth://now.verityledger.com/]now.verityledger.com[/url] within the hour, with a byline on them. This office has not complained about that and is not going to; it is a public record and copying it is the point. What this office would like is for the copy to carry the date the call came in, because two of the feeds carry the date they scraped it, and by the third rewrite a Tuesday deer strike is a Thursday deer strike in a story about an increase.",
+          "[b]The old ones.[/b] The blotter was typed on paper from 1979 to 2006 and bound by the month. Those binders are at the Marchfield Public Library, in the local history room, and the library has asked twice whether they can be digitised. The answer both times has been that this office has no scanner and no budget line for one. The archivist there has offered to do it on the library's machine in whatever time she has, which is not much, because she is eleven pages an hour into microfilm that runs to 1998."
+        ],
+        "forms": [
+          {
+            "name": "Weekly release file - standing request",
+            "note": "Ring 782-1209 once and you go on the list, and it comes every Monday until you say stop. Fourteen people are on the list. Four of them are automated."
+          },
+          {
+            "name": "Blotter correction (Form VS-3)",
+            "note": "One page, or a phone call, which is faster. Bring the date and the time if you have them."
+          },
+          {
+            "name": "Note from the records desk",
+            "note": "I type this. If an entry reads oddly it is because the call notes read oddly, and I would rather leave a deputy's sentence alone than improve it into something he did not mean. I do take out the abbreviations. Nobody outside this building should have to know what unf means. - D. Ketzel, records clerk"
+          },
+          {
+            "name": "Older blotters, 1979 to 2006",
+            "note": "Paper, bound by month, in the local history room at the Marchfield Public Library. The library's blog is at [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url] and the room is open when the library is."
+          }
+        ]
+      },
+      {
+        "id": "scams",
+        "name": "Scams and Frauds",
+        "blurb": "What is being reported in Verity County right now, what the tells are, what this office can do, and what it cannot.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "[b]1. The power disconnection call. This is the one.[/b] A recorded voice, or a live one with a call centre behind it, says your Verity Valley Power & Light account is scheduled for disconnection within 48 hours for non-payment, and that a truck is already assigned. You are told to stay on the line and pay immediately with prepaid cards bought at a named store, or by transfer through an app. Caller ID shows a 782 number and sometimes shows the utility's own published number. Caller ID can be set to say anything and costs nothing to set.",
+          "[b]The tells, in order of how fast they settle it.[/b] Prepaid cards. That is the whole thing. No utility, no court, no agency, no bail process and nobody in this office has ever taken a prepaid card, and none of them ever will. If the call has got as far as a store, hang up in the store.",
+          "[b]Second tell: the account number.[/b] The caller reads you an account number in the shape 88-4419-K. Verity Valley account numbers are two letters, then six digits, then a hyphen and a single check digit, and have been since the billing system was replaced. The utility confirmed that format to this office by telephone on 17 September 2026. Look at your bill. If the number the caller has does not look like the number on your bill, you are finished with the call.",
+          "[b]Third tell: the clock.[/b] Verity Valley does not disconnect a residential account in under twenty-one days and does it by mailed letter, not by telephone. There is no 48-hour disconnection and there is no truck.",
+          "[b]The same operation also sends it in writing.[/b] The message circulating since mid-September gives account 88-4419-K and a balance of $2,841.17 and a link to [url=synth://vvpl-account-secure.vip/settle]vvpl-account-secure.vip[/url], which is not the utility and is not in the county. It has been forwarded to this office 63 times. The telephone version gives a different balance to each person and an account number in the same wrong shape.",
+          "[b]The numbers, as of Friday 18 September 2026.[/b] 118 reports since 4 August. Five people paid. Total lost in Verity County: $4,740. The largest single loss was $1,800 in prepaid cards, from a resident in Halsey, on 9 September. The smallest was $60. Four of the five were over seventy. The calls arrive in bursts and the biggest burst so far was the two days after the outage of 12 September, which is not an accident.",
+          "[b]What to do.[/b] Hang up. Do not call the number the caller gives you. Find your paper bill and ring the number printed on it, or the utility's trouble desk. Then ring this office on 782-1200 and make the report, whether or not any money moved. The report takes about six minutes and it is the only reason the numbers above exist.",
+          "[b]What this office can do.[/b] Take the report, give you a case number, send the card numbers to the issuer the same day, and put the count in front of the county and the utility. If the cards were bought in the last hour and have not been drained, an issuer has occasionally frozen them. Occasionally is the honest word.",
+          "[b]What this office cannot do.[/b] Get money back that went out by prepaid card, wire or transfer. It is gone, it went out of the country, and nobody here is going to tell you otherwise to be kind. Come in anyway and make the report. Five reports is a warning nobody reads. A hundred and eighteen is a number the utility had to answer for.",
+          "[b]2. The warrant call.[/b] A caller identifies himself as a deputy or a sergeant of this office, gives a real name off this website, and says you missed a jury summons or a court date and a warrant has been issued. He offers to hold the warrant if you pay a bond by card or app. This office does not telephone people about warrants, does not accept payment of any kind by telephone, and does not offer to hold anything. Court fines and bail are paid at the courthouse counter or by mail to the court clerk, and nowhere else. Nine reports since June, no losses reported yet.",
+          "[b]3. The free storm damage inspection.[/b] Crews working door to door after weather, offering a free roof inspection with no obligation. They are back this month and they are [url=synth://classifieds.verity.net/l/l-012]advertising again[/url]. They were here after the March wind in 2024 and this office took eleven calls about them. It is not theft and there is nothing here to charge. They will find damage, because there is always damage. Ask for the county contractor registration number, which is a real thing on [url=synth://verity.county.gov/s/building-permit]Form VC-119[/url], and watch what happens next.",
+          "[b]4. The seller who cannot meet you.[/b] A sealed phone for a fifth of its price, a sofa, a tractor, a bred heifer. The seller is working offshore, a relative will post it, payment is by transfer or gift card, and there is a link to a page that verifies how trustworthy he is, which he owns. Meet in person, pay on collection, and do not pay for anything you have not stood next to. There are two parking spaces in the lot at 22 Court Street, under the light and under a camera, marked EXCHANGE, lit all night, and you do not need to ask anybody's permission to use them. Bring a friend anyway. The people who run [url=synth://gridfallswap.net/]gridfallswap.net[/url] have been telling their members the same thing for years and say it better than this page does.",
+          "[b]5. The county alert text.[/b] A message saying Verity County emergency alerts will stop unless you confirm your address, with a link. The County does not run an alert list that works like that and will not ask you to confirm anything by text. When the County does need to reach you it is a recorded telephone call from a list that has ninety-six numbers on it and has not been rebuilt since 2017, which is a different problem and is not this one.",
+          "[b]What a report is worth.[/b] The five people who paid are the reason the utility now reads a warning on its own hold music and the reason this page exists. None of them got their money back. All five let this office print the amounts above without their names, and that is the useful thing any of them could have done."
+        ],
+        "forms": [
+          {
+            "name": "Fraud report - non-emergency line 782-1200",
+            "note": "Answered by a person in this building weekdays 8:00 to 4:00, and at the regional centre outside those hours. Bring or have ready: the date and time of the call, the number it showed, the exact wording if you wrote it down, the store, the card numbers and the receipts. Keep the cards. The empty cards are evidence and people throw them away."
+          },
+          {
+            "name": "Written fraud statement (Form VS-21)",
+            "note": "Two pages. Needed if a bank, a card issuer or a platform has asked you for a police report. This office will give you one for any reported fraud, including one where no money moved."
+          },
+          {
+            "name": "Monthly scam count",
+            "note": "Typed onto this page and nowhere else. There is no dashboard and no spreadsheet. A deputy will also come and talk about all of this for twenty minutes at a church hall, a lodge or a grange meeting, free, most weekday afternoons; ring 782-1201. Fourteen were done last year and eleven were arranged by the same four people. August: 61 reports, 3 paid, $2,140. September to the 18th: 57 reports, 2 paid, $2,600."
+          },
+          {
+            "name": "Utility contact",
+            "note": "Verity Valley Power & Light's own notices are at [url=synth://vvpl.news/]vvpl.news[/url]. The trouble desk number is on your bill. The number on the bill is the number; do not look one up, because the first four results for that search are not the utility."
+          }
+        ]
+      },
+      {
+        "id": "registry",
+        "name": "Sex Offender Registry - Lookup and Address Verification",
+        "blurb": "The registry is maintained by the state. This office verifies addresses and holds the county list at the counter. What this office can and cannot change.",
+        "status": "degraded",
+        "lastUpdated": "2026-06-02",
+        "steps": [
+          "The registry is a state record. It is created by the courts and maintained by the state division that runs it. This office does not put anybody on it, does not take anybody off it, and does not set anybody's level. Those are court decisions and questions about them go to the state, not here.",
+          "What this office does: verifies registered addresses in person, on a schedule set by level, and takes a report when a registrant fails to verify or has moved without notice. That is a criminal charge and it is filed by this office.",
+          "As of 1 September 2026 there were 23 registrants with a Verity County address. Eleven in Gridfall, four in Marchfield, three in Ashkettle, two in Halsey, one in New Carrow, one in Milbrook and one in the unincorporated county. Those numbers move by one or two a quarter, usually because somebody moved out of the county.",
+          "[b]Searching the registry.[/b] The state's public lookup takes a name, a ZIP code or a county. It is the authoritative copy and it is the only copy this office will vouch for.",
+          "[b]The county's own lookup page.[/b] This office ran one from 2014 to 2023. It was a copy of the state file refreshed nightly, the refresh stopped working in March 2023, and it served a stale list for six weeks before anybody noticed. It was taken down and it is not coming back. A copy of a record is a record that can be wrong on its own.",
+          "[b]The paper list.[/b] The county list, printed from the state file on the day you ask for it, is free at the counter at 22 Court Street. It is one to two pages. Nobody is asked why they want it and no record is kept of who took one.",
+          "[b]Commercial sites.[/b] At least one company copies the state file, sells alerts at $19.95 a month and mails postcards with a map on them. It is not affiliated with this office, the county or the state. Its map has shown pins on two addresses in this county where nobody on the registry has lived since 2021, and one of those addresses is a business. Complaints about it have been sent to this office eight times and this office has no authority over it whatsoever.",
+          "[b]What the information is for.[/b] Knowing. Not for a letter to a landlord, not for a sign, not for a visit. Using registry information to harass, threaten or damage property is a crime in its own right and has been charged twice in this county, in 2013 and in 2021. Both times the charge was brought by this office.",
+          "[b]Reporting a concern.[/b] If a registrant appears not to be living at the listed address, ring 782-1200 and say so. It will be checked and you will not be told the outcome, because the outcome is somebody's criminal file."
+        ],
+        "forms": [
+          {
+            "name": "County registrant list (printed on request)",
+            "note": "Counter only, free, printed fresh. Not emailed, because an emailed list is a list that is still being forwarded in 2029."
+          },
+          {
+            "name": "Failure to verify - report",
+            "note": "Ring 782-1200. This office files the charge; the state division is notified by this office and not by you."
+          },
+          {
+            "name": "Questions about a level or a removal petition",
+            "note": "State division and the sentencing court. This office cannot answer either one and will give you the correct telephone number rather than a guess."
+          }
+        ]
+      },
+      {
+        "id": "civil",
+        "name": "Civil Division - Process Service and Fee Schedule",
+        "blurb": "Serving summonses, subpoenas, evictions and executions in Verity County. Two deputies, a counter and a fee schedule set by statute.",
+        "status": "paper-only",
+        "lastUpdated": "2026-01-05",
+        "steps": [
+          "[b]Where and when.[/b] Civil Division counter, 22 Court Street, Gridfall, weekdays 8:30 a.m. to 4:00 p.m., closed 12:00 to 12:45. Telephone 782-1214.",
+          "[b]What to bring.[/b] Two copies of each paper for each person to be served, the index or docket number, and the fee. Bring an address, a description, and the hours the person is actually likely to be there. Home is not an hour.",
+          "[b]Attempts.[/b] Three attempts at different times of day within fourteen days, at least one of them outside business hours. If service is not made, you get an affidavit of non-service and the fee is not refunded, because the attempts were made.",
+          "[b]Out of county.[/b] Papers for an address outside Verity County go to that county's sheriff. This office will tell you which county and will not take your money for it.",
+          "[b]Fee schedule, effective 1 January 2026.[/b] Set by statute. This office does not set these and cannot waive them except where the statute says so.",
+          "[list][*]Summons and complaint, per defendant - $38[*]Subpoena, per witness - $22[*]Notice of petition or order to show cause, per person - $38[*]Warrant of eviction, per tenant named - $50[*]Income execution - $45, plus 5 per cent poundage on money actually collected[*]Property execution and levy - $50, plus mileage and the actual cost of keeping the property[*]Certified copy of a return of service - $2[*]Advance deposit on an execution sale - $250[*]Mileage - $0.62 per mile one way from the courthouse, first five miles included[/list]",
+          "[b]No fee at all[/b] for an order of protection, for family court process, or for papers where the court has granted a fee waiver. Bring the waiver order. This office will not ask you about your finances and does not want to know.",
+          "[b]Evictions.[/b] A warrant of eviction is executed by a deputy, on a date this office sets, after the notice period on the warrant has run. The landlord and a labour crew must be present and the landlord provides the labour. This office does not move furniture and does not store it.",
+          "[b]Sheriff's sales.[/b] Posted on the board inside the Court Street door and in the county's legal notices at least twenty days before. There have been four this year. They are held at 10:00 a.m. at the courthouse door, which is a real door and not a phrase, and in three of the four the only bidder was the plaintiff.",
+          "[b]What this office will not do.[/b] Give legal advice, tell you what a paper means, tell you whether you should sign it, or recommend a lawyer. A deputy will tell you which date on the paper is the date that matters, because that is not advice, it is reading."
+        ],
+        "forms": [
+          {
+            "name": "Request for Service (Form VS-30)",
+            "note": "One page, at the counter or by mail with the papers. Fill in the hours the person is likely to be home. That box is the difference between one attempt and three."
+          },
+          {
+            "name": "Affidavit of Non-Service",
+            "note": "Issued automatically after three attempts, mailed to you and filed with the court. It lists the dates, the times and what the deputy saw. It is a document that a court can work with and it is often more useful than people expect."
+          },
+          {
+            "name": "Note from the Civil Division",
+            "note": "If you have been handed a warrant of eviction, read it at the counter before you leave. There are two dates on it and people read the wrong one, and by the time they work that out they have lost a week they could have used. I will point at the right one. I cannot tell you what to do about it. - Deputy A. Foy, Civil Division"
+          }
+        ]
+      },
+      {
+        "id": "jail-visits",
+        "name": "Verity County Jail - Visitation",
+        "blurb": "Forty-eight beds behind the courthouse on Court Street. Visiting hours, how to book, what you can bring in, and what happens when the facility is locked down.",
+        "status": "online",
+        "lastUpdated": "2026-08-03",
+        "steps": [
+          "[b]Where.[/b] Verity County Jail, 22 Court Street, Gridfall, entrance on the Ellery Street side. Visitor parking is the gravel lot, not the numbered spaces.",
+          "[b]Days.[/b] Wednesday, Thursday, Saturday and Sunday. No visits Monday, Tuesday or Friday and no visits on county holidays.",
+          "[b]Sessions.[/b] Wednesday and Thursday evenings at 6:00, 6:40 and 7:20. Saturday and Sunday mornings at 9:00, 9:40 and 10:20, and afternoons at 1:00, 1:40 and 2:20. A session is thirty minutes; the schedule allows forty so the room can be cleared without rushing anybody out.",
+          "[b]Booking.[/b] Ring 782-1230, weekdays 9:00 a.m. to 3:00 p.m., at least twenty-four hours ahead. Walk-ins are taken when a slot is open, and on a Sunday morning a slot is usually open.",
+          "[b]Who may visit.[/b] Two adults and two children per session. Children must be with a parent or guardian. Photo identification for everybody sixteen and over, every time, including people the staff know by name.",
+          "[b]What the visit is.[/b] Non-contact, through glass, with a telephone handset on each side. Three of the eight handsets are quiet and staff will move you to another booth if you say so. Say so; people sit through the whole thirty minutes shouting rather than mention it.",
+          "[b]What you cannot bring in.[/b] Bags, telephones, food, drink, cameras, keys with anything attached. Lockers in the lobby, free, no coin. Bring nothing you cannot leave in a locker.",
+          "[b]Lockdowns.[/b] Visits are cancelled without notice when the facility is locked down. It has happened five times this year, twice for a count that would not clear and three times for a medical. Ring 782-1230 before you drive more than twenty minutes. The recording on that line is updated by the shift sergeant and is the fastest thing this office has.",
+          "[b]Video visitation.[/b] Available from the lobby tablet or from home through the vendor, twenty minutes, $0.25 a minute, paid to the vendor and not to the county. In 2024 the vendor proposed replacing in-person visits with video at no cost to the county. The proposal was declined. It will be made again and it will be declined again."
+        ],
+        "forms": [
+          {
+            "name": "Visitor Application (Form VS-40)",
+            "note": "One page, completed once, at the lobby counter. Approval is usually the same day. An approved visitor stays approved unless something happens to change that, and if it does you will be told at the door, quietly, and not in front of the room."
+          },
+          {
+            "name": "Lockdown recording - 782-1230",
+            "note": "Updated by the shift sergeant. If the recording says the facility is locked down, it is, and the counter cannot get you in as a favour."
+          }
+        ]
+      },
+      {
+        "id": "jail-inmate",
+        "name": "Verity County Jail - Mail, Money, Telephone and Property",
+        "blurb": "How to write to someone in the county jail, how to put money on an account without being charged four dollars for it, and what happens to property.",
+        "status": "paper-only",
+        "lastUpdated": "2026-08-03",
+        "steps": [
+          "[b]Mail.[/b] Inmate's full name, Verity County Jail, 22 Court Street, Gridfall. Plain paper, plain envelope, sender's full name and return address on the outside. Mail without a return address is returned to the post office.",
+          "[b]What will not go through.[/b] Card stock, greeting cards with glitter or musical inserts, stickers, tape, crayon, perfume, lipstick, stamps loose in the envelope, and polaroid photographs. Ordinary printed photographs are fine, up to five per envelope, nothing that would not be on a wall at a school.",
+          "[b]Books and magazines.[/b] Direct from a publisher or a bookshop only, shipped to the facility. Not from your shelf. The jail has a book cart and takes donations of paperbacks at the lobby counter, which is the way to get a book in for somebody without it being addressed to them.",
+          "[b]Legal mail.[/b] Opened in the inmate's presence and not read. Mark it clearly from the attorney's office on the outside.",
+          "[b]Money.[/b] Three ways. A money order by post, payable to the inmate's account with the inmate's name and booking number on it. The kiosk in the lobby, which takes cards and charges $3.95 a deposit no matter how small the deposit. Or the vendor's website and app, same fee, plus tax.",
+          "[b]About that fee.[/b] A money order costs $1.75 at the post office on Third Street and there is a card taped to the kiosk that says so. Staff put it there. The vendor has asked twice for it to come down.",
+          "[b]Telephone.[/b] $0.11 a minute, no connection fee, since the 2023 contract. Calls are recorded and inmates are told so at the start of each call. Calls to counsel are not recorded and are made from a separate handset that you have to ask for.",
+          "[b]Medication.[/b] Bring prescriptions in the original pharmacy bottle to the lobby counter, any hour. Give your name at the desk. The jail nurse is in weekdays and a physician's assistant comes Tuesdays.",
+          "[b]Property at discharge.[/b] Collected on the way out, or held thirty days if the person is transferred. After thirty days, clothing is donated to the thrift shop on Third Street and anything else is disposed of under the property rule. Ring 782-1230 before the thirty days if you are collecting for somebody.",
+          "[b]Releases.[/b] Happen at any hour, including 3:00 a.m., because that is when a court order arrives. The lobby telephone is a real telephone and can be used to ring for a ride. There is no bus at 3:00 a.m. and there is not going to be one; the transit division's hours are at [url=synth://verity-transit.gov/]verity-transit.gov[/url] and they do not cover it."
+        ],
+        "forms": [
+          {
+            "name": "Inmate account deposit - money order",
+            "note": "Payable to the inmate account, inmate name and booking number written on it. Booking numbers are given out on 782-1230 to anybody who asks, because they are on the public jail roster anyway."
+          },
+          {
+            "name": "Public jail roster",
+            "note": "Names, booking dates and charges, printed daily and posted at the lobby counter. An automated service copies it every night and republishes it with advertising around it, and drops the release column, so people show up here looking for somebody who went home on Tuesday. The roster on the counter is the current one."
+          },
+          {
+            "name": "Medication drop",
+            "note": "Lobby counter, any hour, original bottle. No appointment, no form. If the bottle is empty bring it anyway; the nurse needs the label."
+          }
+        ]
+      },
+      {
+        "id": "dispatch",
+        "name": "911, the Non-Emergency Line, and Who To Call",
+        "blurb": "What number to use for what, what happened to county dispatch on 1 September, and who answers at two in the morning.",
+        "status": "online",
+        "lastUpdated": "2026-09-01",
+        "steps": [
+          "[b]911[/b] for anything happening now where somebody could be hurt: a crash, a fire, a medical, a crime in progress, a person in the road, a down wire. A down wire is always 911.",
+          "[b]782-1200[/b] for everything else: a report of something that already happened, a scam call, a dog, a noise complaint, a civil question, or when you do not know who to ring. It is answered in this building by a person weekdays 8:00 a.m. to 4:00 p.m. Outside those hours it rings through to Ridgemont with 911.",
+          "[b]What changed on 1 September 2026.[/b] Emergency call answering and radio dispatch for this office, county fire and county EMS moved to a three-county communications authority in Ridgemont under a five-year contract. Nothing you dial changed. What changed is that the person answering is sixty-one miles away and does not know that Brill Road is called the Brill cutoff by everybody who lives on it.",
+          "[b]What that means when you call.[/b] Say the town first. Say the road name as it is on the sign, and then the local name if there is one. Give the nearest crossroad or the fire number on the post at the end of the driveway. The system maps most addresses correctly and the times it does not are the times that matter.",
+          "[b]Fire numbers.[/b] The blue and white reflective number on a post at the end of a rural driveway. If yours is missing, faded, or behind a hedge, replace it. The fire departments sell them for $20 and it is the cheapest useful thing anybody in this county can buy.",
+          "[b]What did not move.[/b] The non-emergency line, animal control, after-hours highway callouts and the road department list are still answered here or from here. Who answers the after-hours menu was asked twice at the county board and the answer both times was that it was being worked through.",
+          "[b]Radio.[/b] Sheriff's primary and car-to-car have been on an encrypted state talkgroup since 1 February 2021. County fire dispatch, the fire tactical channels, EMS and public works are still in the clear and can be heard on any scanner. This office did not consult anybody about the 2021 change and the county put out three paragraphs about it. Somebody who has written down fire and EMS traffic since 2009 explains what is left at [url=synth://scanner.verity.net/post/encryption]scanner.verity.net[/url].",
+          "[b]Do not ring 911 to ask[/b] whether the power is out, when it will be back, whether the road is open, or what the sirens were. For the power, ring the number on your bill. For the road, ring 782-1200. For the sirens, the blotter will have it in the morning."
+        ],
+        "forms": [
+          {
+            "name": "Rural fire number request",
+            "note": "The fire departments issue and post them. In Ashkettle, [url=synth://ashkettlevfd.org/]Station 4[/url] will come out and set the post for you if you are over seventy or cannot dig. They do not advertise that and they do not want to."
+          },
+          {
+            "name": "Dispatch contract - Verity County and the Ridgemont authority",
+            "note": "Five years from 1 September 2026, with an opt-out at year three that costs the balance of the term. Copy on file for inspection at the county administrator's office. The clearest account of what is in it and what it saves is in [url=synth://thequarry.news/i/i-78]The Quarry, issue 78[/url]."
+          }
+        ]
+      },
+      {
+        "id": "counter",
+        "name": "The Rest of the Counter",
+        "blurb": "Pistol permits, report copies, VIN inspections, found property and the annual sale. Everything this office does that has a queue in front of it.",
+        "status": "paper-only",
+        "lastUpdated": "2026-09-02",
+        "steps": [
+          "[b]Pistol permits.[/b] Applications at the Civil Division counter. Fee $94.25, of which $89.25 is the state's and $5.00 is the county's, and the county's five dollars has not changed since 1994. Fingerprinting Tuesdays and Thursdays, 9:00 to 11:00, no appointment, machine down about one Tuesday in six. [b]Current processing time 27 weeks[/b] against a statutory target of six months, because there is one clerk and the state check is itself eleven weeks behind. Ringing to ask where it is does not move it and the clerk will be polite about that for the rest of her life. Amendments to add or remove a firearm are three to four weeks and are not stuck behind the 27, which nobody believes until it happens.",
+          "[b]Accident report copies.[/b] Available ten days after the crash, not sooner. $15 at the counter. $22 through the state's online vendor, of which the county gets $15 and the vendor keeps $7. This office has asked about that and the answer was no.",
+          "[b]Incident reports.[/b] To a person named in the report, to an insurer with a signed authorisation, or to anybody through a County public records request on [url=synth://verity.county.gov/s/records-request]Form VC-5[/url]. Redactions are done by hand with a marker and then photocopied, which is why the copy looks the way it does.",
+          "[b]A case number on its own[/b] gets you confirmation that a report exists, the date it was taken and the deputy's name, free, over the telephone on 782-1209. That is usually all an insurer or a bank actually wants.",
+          "[b]VIN inspections.[/b] Tuesdays 9:00 to 11:00 in the gravel lot. Free for a standard check, $50 for salvage or rebuilt, and the salvage one needs the actual receipts and not a list you wrote out. Bring the vehicle. People arrive with photographs. Snow or heavy rain cancels it, because the deputy is lying on the ground with a torch.",
+          "[b]Found property.[/b] Handed in at the counter, entered in a bound book that has been in pen since 1998, held ninety days. Describe it before it is shown to you; that is the whole test and it works. Unclaimed property goes to the sale in May, in the lot, cash, mostly bicycles and tools. It raised $1,180 this year.",
+          "[b]Firearms found in a house being cleared out[/b] never come over the counter unannounced. Ring 782-1200, leave it where it is, and a deputy will come to you. Nobody is in trouble and this happens more often than people think."
+        ],
+        "forms": [
+          {
+            "name": "Pistol Permit Application (Form VS-50)",
+            "note": "Four pages, free at the counter, plus four character reference sheets completed by the references themselves. They must not be relatives, and the most common reason an application comes back is that two of the four are. Not a fillable PDF: it was scanned from a typed original in 2009 and the box for the middle name has been a grey smear since about 2017."
+          },
+          {
+            "name": "Crash counts by road",
+            "note": "Printed on request, free, not published. County Route 62 between Ashkettle and the county line has had the most reported deer strikes of any county road every year since the count began in 2011, which surprises nobody who drives it. The last time a table like that left this building it came back with a headline on it about the deadliest road in the state, which it is not and was never said to be."
+          }
+        ]
+      },
+      {
+        "id": "newcarrow",
+        "name": "New Carrow - Overnight Coverage",
+        "blurb": "What the 2019 shared services agreement covers, which log your call is in, and who to ring at half past three in the morning.",
+        "status": "online",
+        "lastUpdated": "2026-03-02",
+        "steps": [
+          "The village of New Carrow has four full-time officers and covers itself from 6:00 a.m. to 2:00 a.m. Between 2:00 a.m. and 6:00 a.m., and whenever the village has nobody on, calls are handled by this office under an agreement signed in 2019 and renewed each January.",
+          "The village pays the county a flat annual sum for that coverage. It was $38,000 in 2019 and is $52,400 for 2026. It is a line in both budgets and both lines are public.",
+          "[b]Which log.[/b] Calls taken by the village are in the village log, which the village releases weekly as a printed sheet. Calls taken by this office are in ours. A call at 1:55 a.m. is theirs and a call at 2:05 a.m. is ours, and there is no third place where they are put together.",
+          "[b]Which means[/b] that the New Carrow police log printed in the local news site and the county blotter on this page are two different records of one village, neither of them wrong, and adding them up is something nobody has ever done.",
+          "[b]What to dial.[/b] 911 for an emergency, whatever the hour, and the call is routed correctly without you thinking about it. 782-1200 for everything else. The village's own number rings to a recording after 2:00 a.m. that gives you 911 and then 782-1200.",
+          "[b]Response times.[/b] Overnight, a New Carrow call is covered from wherever the on-duty deputy is, which at four in the morning is usually Gridfall or the Route 62 corridor. That is eleven to nineteen minutes on a dry road. The village knows that, the agreement says it, and the four officers have never once pretended otherwise at a meeting.",
+          "[b]Halsey, Milbrook, Coyne Flats, Kerrin, Nye Mills, Dorrance, Cobb and the unincorporated county[/b] have no police department of their own at any hour and are this office's responsibility around the clock. Marchfield and Gridfall boroughs have their own departments and this office assists on request."
+        ],
+        "forms": [
+          {
+            "name": "Shared services agreement, Verity County and the Village of New Carrow",
+            "note": "Nine pages. Copy on file at the county administrator's office for inspection, and at the village clerk's. Renewed each January by both boards, usually on the consent agenda, usually in under a minute."
+          },
+          {
+            "name": "New Carrow village log",
+            "note": "The village's record, not ours. It is retyped and published weekly by a local news site at [url=synth://newcarrow-today.com/]newcarrow-today.com[/url], which has no telephone number and no address on it and which this office has never been able to reach to correct anything."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact, Patrol Areas and Staffing",
+        "blurb": "Where we are, who does what, how many of us there are, and the numbers behind the overtime line people ask about.",
+        "status": "online",
+        "lastUpdated": "2026-09-08",
+        "steps": [
+          "[b]Verity County Sheriff's Office, 22 Court Street, Gridfall.[/b] Public counter weekdays 8:30 a.m. to 4:00 p.m., closed 12:00 to 12:45. The jail lobby on the Ellery Street side is open at all hours.",
+          "[b]Telephones.[/b] Emergency 911. Non-emergency 782-1200. Records and report copies 782-1209. Civil Division 782-1214. Jail and visitation 782-1230. Administration 782-1201, weekdays only.",
+          "[b]Sheriff:[/b] Glen Bodine. [b]Chief Deputy:[/b] Dwight Semmel.",
+          "[b]Sworn strength:[/b] 31. Fourteen road deputies across three shifts, three sergeants, two civil deputies, ten corrections officers, the chief deputy and the sheriff. Records is one clerk and the Civil Division has one. That is the whole office.",
+          "[b]Area covered:[/b] 622 square miles, about 28,400 residents, seven towns, four townships, and every mile of county road outside the two borough departments. On an ordinary weekday night there are two deputies on for all of it, and on some nights there is one.",
+          "[b]Overtime.[/b] $301,400 in 2025, up 31 per cent on 2024. The reason is two deputies out long-term since last spring, one knee and one back, both documented, and shifts that still have to be covered at time and a half. That is the whole of it and it is on page nineteen of the December budget packet. A headline once went round calling it something else and this office has given up correcting the version that has four sources, all of which are each other.",
+          "[b]The two deputies that were one.[/b] The 2026 budget request was for two additional road deputies. The county board amended it to one at 9:52 p.m. on the night of the vote, 4-3, a saving given as $71,000 including benefits. The sheriff was in the room and did not speak, which has been written about, and which was a decision and not an accident.",
+          "[b]Complaints about a deputy.[/b] In writing to the sheriff at the address above, or in person at the counter, and you may ask for the chief deputy rather than leave it at the window. Every written complaint is acknowledged within five business days and you are told the outcome in general terms. Nineteen were received in 2025.",
+          "[b]Questions this office cannot answer:[/b] what a court order means, whether you should sign something, who owns a fence, and whether a landlord may do a thing. County process questions are often answered correctly at [url=synth://askverity.com/]askverity.com[/url] and at [url=synth://verityanswers.com/]verityanswers.com[/url], and then closed as duplicates of worse answers.",
+          "[b]Records of this office before 1979[/b] are at the county clerk's, on microfilm, and some of the blotter volumes are at the Marchfield library. What is on [url=synth://verity.wiki/]verity.wiki[/url] and [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] about this office is mostly right, has been corrected by hand more than once, and is not an official record of anything.",
+          "[b]Press.[/b] There is no communications officer. Questions go to the chief deputy and are answered when he is not on a call, which some days is late. The wire service at [url=synth://veritywire.press/]veritywire.press[/url] rings the same number as everybody else and gets the same answer, usually faster, because they ring at eight."
+        ],
+        "forms": [
+          {
+            "name": "Complaint or commendation (Form VS-1)",
+            "note": "One page, both purposes, which is deliberate. Counter, post, or handed to any deputy. A commendation goes in the file the same way a complaint does."
+          },
+          {
+            "name": "Civil service and hiring",
+            "note": "Road deputy vacancies are posted at the county administrator's office and on the board inside the Court Street door. There is one open now. It has been open since June and has had four applicants, two of whom withdrew when they read the shift pattern."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,987 @@
+{
+  "schema": 1,
+  "domain": "newcarrowfd.org",
+  "title": "New Carrow Fire District",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "Station 3 in New Carrow: a levy explainer written for the 3 November ballot, five years of monthly call counts that go up while the fires do not, a burn notice form, a roster of twenty-nine, a pork dinner, and a comment box that cannot be switched off.",
+  "tags": ["new-carrow", "fire", "county", "2026", "levy", "volunteer"],
+  "links": ["ashkettlevfd.org", "ashkettle-wx.net", "verity.county.gov", "veritysheriff.gov", "verityhealth.gov", "verity-transit.gov", "newcarrow-today.com", "thequarry.news", "brenners-notebook.email", "wiki.gridfall.net", "verity.wiki", "verityledger.com", "now.verityledger.com", "veritybirders.org", "gridline.social", "askverity.com", "ask.verity.ai", "scanner.verity.net"],
+  "data": {
+    "navLabel": "DISTRICT PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "*** NEW CARROW FIRE DISTRICT -- STATION 3, 208 BELLAMY STREET *** EMERGENCY: DIAL 911 *** NO COUNTY BURN BAN IN EFFECT AS OF 14 SEPTEMBER 2026 *** FALL PORK DINNER SATURDAY 7 NOVEMBER, 4 TO 7 *** LEVY QUESTION ON THE 3 NOVEMBER BALLOT -- WHAT IT IS AND WHAT IT COSTS IS ON THE LEVY PAGE ***"
+          },
+          {
+            "kind": "image",
+            "seed": "ncfd-station-bellamy-front",
+            "imgKind": "banner",
+            "caption": "Station 3 from Bellamy Street, March 2026. Three bays and the meeting room on the Mill Street end. The apron was poured in 1988 and it is the newest thing in the photograph."
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "New Carrow Fire District"
+          },
+          {
+            "kind": "text",
+            "body": "We are the fire district for the village of New Carrow and the country around it: seventy-four square miles, about 4,930 people, roughly 2,050 structures and sixty-three miles of road, out of one station at [b]208 Bellamy Street[/b].\n\nTwenty-nine active members. Twenty-three firefighters and six fire police. Three juniors and an auxiliary of eleven. Nobody on this department is paid to answer a pager and nobody has been since 1931."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Two bodies, one building"
+          },
+          {
+            "kind": "text",
+            "body": "People get these mixed up and we do not blame them, because both of them are called the fire department by everybody including us.\n\nThe [b]New Carrow Fire Company[/b] was organised in 1931. It is the members. It owns the coffee pot and the hall tables and not much else.\n\nThe [b]New Carrow Fire District[/b] was created by referendum in 1967. It is a taxing body with five elected trustees, the same as the water district and the school district, and it owns the building, the trucks and the gear. It is the district that is on your tax bill, and the line is explained on [url=/levy]the levy page[/url].\n\nCheques get written to the wrong one of us about twice a month. It does not matter. They go in the same drawer and Joyce sorts it out."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If something is happening now"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Dial 911.[/b] Nobody reads this website while it is happening. The comment box at the bottom of [url=/comments]the comments page[/url] is read on Thursdays.\n\nWhen you call, the two things that help most are the [b]road name and the nearest crossroad[/b], and whether anybody is still inside. Give the mile marker if you are on County Route 9. Half the addresses in this district are on a post at the end of a lane and about a third of those posts are lying down, which is why [url=/water]there is a page on this site about your house number[/url].\n\nCalls in the village between 2 a.m. and 6 a.m. are dispatched the same as any other, but the police who show up will be the county's rather than the village's. The sheriff explains that arrangement at [url=synth://veritysheriff.gov/s/newcarrow]New Carrow -- Overnight Coverage[/url] and it has nothing to do with the fire side."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is on this site"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[url=/levy]The levy[/url] -- what the fire line on your tax bill is, what it bought this year, and the question on the 3 November ballot.", "[url=/calls]Calls[/url] -- every month since January 2021, with the totals and what they are made of.", "[url=/burning]Burning[/url] -- where the permit comes from (not here), and the form we do want from you.", "[url=/roster]Roster[/url] -- who is on the department, the trustees, and how to join.", "[url=/dinner]The pork dinner and the calendar raffle[/url] -- 7 November, and every dollar in the rescue tool fund with a date on it.", "[url=/water]Your address and our water[/url] -- house numbers, hydrants, the four dry hydrants, and the bridge on Mill Road.", "[url=/comments]Comments[/url] -- the box the website company put at the bottom of every page, and what has landed in it."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Dates between now and Christmas"
+          },
+          {
+            "kind": "table",
+            "head": ["WHEN", "WHAT"],
+            "rows": [
+              ["Monday 28 September to Thursday 8 October", "Quarry Road closed at the culvert. Our east end goes round by County Route 9, which is about six minutes. [url=synth://verity-transit.gov/s/culvert]The county's detour notice[/url] has the map."],
+              ["Tuesday 20 October, 7 p.m.", "District board, meeting room. Open. Agenda posted on the door the Friday before."],
+              ["Tuesday 3 November", "General election. The levy question is on the ballot. [url=/levy]What it is[/url]."],
+              ["Saturday 7 November, 4 to 7 p.m.", "Fall pork dinner. $12, $6 under twelve, takeout in a foil pan. [url=/dinner]Details[/url]."],
+              ["Every Monday, 7 p.m.", "Drill. Second and fourth Mondays are the business meeting first."],
+              ["Saturday 12 December", "Santa on the engine through the village, starting at the school. There are oranges."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Recently changed on this site"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["14/09/2026 -- Call table brought up through August. Levy page rewritten after the lawyer read it.", "12/09/2026 -- Rescue tool fund updated. $11,260 of $18,400.", "19/05/2026 -- Roster corrected. Bo Gochenour came off the juniors in March and had been left off since.", "10/02/2026 -- Dry hydrant No. 4 added to the water page.", "23/01/2026 -- This site moved off the old host. Everything before that date is gone, including four years of notices, which nobody backed up including me."]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last changed Monday 14 September 2026.[/b] Kept up by Marguerite Nace, district secretary, on a laptop in the meeting room, usually on a Thursday."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1043
+          },
+          {
+            "kind": "text",
+            "body": "The counter was at about 26,000 in January and the new host started it again at nothing. We have decided not to mind."
+          },
+          {
+            "kind": "buttons",
+            "label": "Other people's pages that are worth your time:",
+            "items": [
+              {
+                "label": "Ashkettle VFD, Station 4",
+                "seed": "ncfd-btn-akvfd",
+                "domain": "ashkettlevfd.org"
+              },
+              {
+                "label": "Kestrel Road Weather",
+                "seed": "ncfd-btn-wx",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "Verity County Services",
+                "seed": "ncfd-btn-county",
+                "domain": "verity.county.gov"
+              },
+              {
+                "label": "Sheriff's Office",
+                "seed": "ncfd-btn-sheriff",
+                "domain": "veritysheriff.gov"
+              },
+              {
+                "label": "County Health Department",
+                "seed": "ncfd-btn-health",
+                "domain": "verityhealth.gov"
+              },
+              {
+                "label": "The Quarry",
+                "seed": "ncfd-btn-quarry",
+                "domain": "thequarry.news"
+              },
+              {
+                "label": "Brenner's Verity Notebook",
+                "seed": "ncfd-btn-brenner",
+                "domain": "brenners-notebook.email"
+              },
+              {
+                "label": "Verity County Scanner Log",
+                "seed": "ncfd-btn-scanner",
+                "domain": "scanner.verity.net"
+              },
+              {
+                "label": "Bird club",
+                "seed": "ncfd-btn-birders",
+                "domain": "veritybirders.org"
+              },
+              {
+                "label": "SMOKE ALARM: TEN YEARS AND OUT",
+                "seed": "ncfd-btn-alarm"
+              },
+              {
+                "label": "911 IS THE NUMBER",
+                "seed": "ncfd-btn-911"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "levy",
+        "name": "The Levy",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The levy, and what it pays for"
+          },
+          {
+            "kind": "text",
+            "body": "There is a line on your Verity County tax bill that says [b]NEW CARROW FIRE[/b]. This page is what that line is, what it bought this year, and what the question on the 3 November ballot would do to it.\n\nIt is long because every short version of it we have tried has left out the part somebody then asked about at the counter."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The rate"
+          },
+          {
+            "kind": "text",
+            "body": "The district levies [b]82 cents per $1,000 of assessed valuation[/b]. The voters set that rate at the election of Tuesday 8 November 2011 and it has not changed since. Before that it was 61 cents, set in 1998.\n\nTotal assessed valuation in the district this year is [b]$248,600,000[/b], so the levy raises [b]$203,852[/b].\n\nThe rate has not moved in fifteen years. The money has, because valuations have: the same 82 cents raised $166,400 in 2011. That is up 22 percent over fifteen years, and the list further down this page is what it is spent on, which anybody who buys tyres or insurance can compare against their own fifteen years."
+          },
+          {
+            "kind": "table",
+            "head": ["IF YOUR PROPERTY IS ASSESSED AT", "YOU PAY NOW", "AT $1.10", "DIFFERENCE"],
+            "rows": [
+              ["A house assessed at $75,000", "$61.50", "$82.50", "+$21.00"],
+              ["A house assessed at $118,000 (the village median)", "$96.76", "$129.80", "+$33.04"],
+              ["A house assessed at $190,000", "$155.80", "$209.00", "+$53.20"],
+              ["160 acres and buildings assessed at $312,000", "$255.84", "$343.20", "+$87.36"],
+              ["The grain elevator, assessed at $840,000", "$688.80", "$924.00", "+$235.20"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "On the village median, $118,000, the fire line is [b]$96.76 a year[/b], which is $8.06 a month. The question on the ballot would make it $129.80, which is $10.82 a month.\n\nIf you want your own number rather than one off this table, your assessed valuation is on your bill and on [url=synth://verity.county.gov/s/prop-tax]the county's property tax lookup[/url]. Multiply the thousands by 0.82. There is no other arithmetic in it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The 2026 budget, both sides of it"
+          },
+          {
+            "kind": "text",
+            "body": "Adopted by the trustees on 10 February 2026 after a hearing at which two people were present who were not on the board, one of whom was the auditor."
+          },
+          {
+            "kind": "table",
+            "head": ["WHERE IT COMES FROM", "2026"],
+            "rows": [
+              ["Property tax levy, $0.82 per $1,000 on $248,600,000", "$203,852"],
+              ["Hall rental", "$3,900"],
+              ["Interest on the apparatus reserve", "$2,140"],
+              ["County fuel reimbursement, mutual aid on the state route", "$1,600"],
+              ["TOTAL", "$211,492"]
+            ]
+          },
+          {
+            "kind": "table",
+            "head": ["WHERE IT GOES", "2026"],
+            "rows": [
+              ["Loan payment, 2019 engine (final payment 2034)", "$32,484"],
+              ["Insurance -- vehicle, liability, members' accident and sickness", "$34,180"],
+              ["Turnout gear, 3 sets at $4,120", "$12,360"],
+              ["Fuel, tyres, vehicle maintenance and repair", "$21,600"],
+              ["Building -- heat, light, water, snow removal", "$16,400"],
+              ["Radios, pagers and the county radio system share", "$14,900"],
+              ["Testing -- air bottles, hose, ladders, pump tests", "$9,300"],
+              ["Training and state class fees", "$6,700"],
+              ["Medical supplies and oxygen", "$4,450"],
+              ["Member physicals, 29 at $210", "$6,090"],
+              ["Audit, legal notices and the election notice", "$5,800"],
+              ["Treasurer's stipend", "$1,200"],
+              ["Office, postage, website ($96) and domain ($18)", "$1,180"],
+              ["Transfer to the apparatus reserve", "$44,600"],
+              ["TOTAL", "$211,244"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "That leaves [b]$248[/b]. That is not a cushion. It is what is left when you subtract one list from the other, and in a year when the boiler goes it comes out of the reserve and the reserve is for the truck.\n\nThe audit is done by a firm in the state capital, costs $3,900 of the line above, and is on paper at the counter. We have never had a finding. We mention that because a district that has never had a finding and does not say so is a district nobody believes."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The reserve, and the truck it is for"
+          },
+          {
+            "kind": "text",
+            "body": "The apparatus reserve stood at [b]$214,300[/b] on 31 December 2025.\n\nEngine 3-2 is a 2004. It passed its pump test in May and it will keep passing it for a while. The state's inspectors do not fail a truck for being old, they fail it for not pumping, and that engine pumps.\n\nA replacement engine of the same size quotes today at about [b]$784,000[/b], with a build time of forty-one months from the order. That is not a Verity County number, it is what a pumper costs everywhere in 2026, and the forty-one months is the part that changes how a small district has to think.\n\nAt $44,600 a year the reserve reaches $784,000 in about thirteen years. The quote will not be $784,000 in thirteen years. We are telling you that plainly rather than putting a thermometer on the front page, because we have seen what happens to a thermometer."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The question on the 3 November ballot"
+          },
+          {
+            "kind": "text",
+            "body": "This is the wording as it was certified to the county board of elections on 19 May 2026. It will be on the back of the ballot."
+          },
+          {
+            "kind": "text",
+            "body": "[code]\nSHALL THE NEW CARROW FIRE DISTRICT BE AUTHORISED TO LEVY A TAX\nFOR FIRE PROTECTION AND EMERGENCY SERVICES AT A RATE NOT TO EXCEED\nONE DOLLAR AND TEN CENTS ($1.10) PER ONE THOUSAND DOLLARS ($1,000)\nOF ASSESSED VALUATION, REPLACING THE RATE OF EIGHTY-TWO CENTS\n($0.82) PER ONE THOUSAND DOLLARS ($1,000) AUTHORISED AT THE\nELECTION OF NOVEMBER 8, 2011, SUCH RATE TO BE LEVIED COMMENCING\nWITH THE 2027 TAX YEAR AND CONTINUING UNTIL REPEALED?\n\n        YES  [ ]                    NO  [ ]\n[/code]"
+          },
+          {
+            "kind": "text",
+            "body": "At $1.10 the levy would raise [b]$273,460[/b], which is [b]$69,608[/b] more than it raises now. Here is the whole of what that $69,608 is for."
+          },
+          {
+            "kind": "table",
+            "head": ["WHAT", "HOW MUCH", "WORKED OUT"],
+            "rows": [
+              ["One daytime duty position, weekdays 6 a.m. to 6 p.m.", "$56,160", "12 hours x 5 days x 52 weeks x $18 an hour. One member, paid, in the building, weekdays. Not a fire chief, not a career department, one person at a kitchen table with a radio."],
+              ["Turnout gear, from three sets a year to six", "$12,360", "Three more sets at $4,120. Gear is out of service ten years from the date on the label whatever it looks like, and we have nine sets that date out between now and 2029."],
+              ["Not allocated", "$1,088", "It is not allocated to anything and the board would rather print that than invent a line for it."],
+              ["TOTAL", "$69,608", ""]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The duty position is the whole of the argument and it is worth being plain about what it is and is not.\n\nIt is one person, weekdays, daytime. It does not put a crew in the building. It puts a driver in the building, which means the first truck leaves when the tone drops instead of when the third person gets there from work.\n\nIt is a wage, which is why it cannot come out of the reserve. A reserve is a pile of money that can be spent once. A wage is every fortnight until somebody votes it away. The board looked at doing it out of reserve for three years and then having this same conversation in 2029 with the reserve gone, and decided that was a worse way to ask."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What happens if it fails"
+          },
+          {
+            "kind": "text",
+            "body": "The rate stays at 82 cents. Nothing closes, nothing is sold, no truck goes away. The duty position does not happen, gear stays at three sets a year, and the nine sets that time out between now and 2029 get replaced by pushing something else off.\n\nThe board will be back in 2028 or 2029. It will be a bigger number then, because they always are."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What this district is allowed to say about it"
+          },
+          {
+            "kind": "text",
+            "body": "A fire district may spend public money telling you [b]what the levy does, what it costs and what happens either way[/b]. It may not spend public money asking you to vote yes.\n\nThose are two different sentences and the difference between them is the entire law on the subject. The district's lawyer read this page in August, took out four sentences, and we did not put them back.\n\nIndividual members are private citizens on their own time and several of them will have a sign in a yard. That is theirs, not the district's, and none of it is paid for out of the line above."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Asked at the hearing, and at the counter since"
+          },
+          {
+            "kind": "table",
+            "head": ["QUESTION", "ANSWER"],
+            "rows": [
+              ["Why is this on the November ballot and not a special election in March?", "The county board of elections charges the district $2,900 to be on a ballot by itself and nothing at all to be on the general. That is the entire reason and we would rather say it than pretend it was strategy."],
+              ["Does the village pay the district anything?", "No. The village and the district are separate taxing bodies and always have been. The village pays the water district for the hydrants in the village, which is $18,400 a year, and that is on the village's side of the ledger and not ours."],
+              ["Will I get a bill if you come to my house?", "No. The district does not bill for anything, ever, including a false alarm, including the fourth false alarm. The county ambulance bills for a transport and the county ambulance is not us."],
+              ["Are you going to be absorbed into a county fire department?", "There is no county fire department and there never has been. It comes up every few years, goes to a committee, and stops there. Nine volunteer departments cover this county and the county's part of it is dispatch and the radio system."],
+              ["What do the officers get paid?", "Nothing. The treasurer is paid $1,200 a year and she is not an officer. Everyone else, including the chief, gets a pager and a jacket."],
+              ["Is this because of the hospital moving the lab?", "No. It is not related and we would not have a position on it."],
+              ["Why not raise it on the businesses instead of the houses?", "A levy is a rate on valuation. It cannot be written to fall on one kind of property and not another. The elevator at $840,000 pays $688.80 now and would pay $924.00, which is on the table above with everybody else's."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If you would rather read somebody who is not us"
+          },
+          {
+            "kind": "text",
+            "body": "[url=synth://brenners-notebook.email/i/i-73]Hal Brenner went through the village's $2.1 million budget in June[/url] and mentioned this district in one line, accurately: that it is not part of it and never has been.\n\n[url=synth://thequarry.news/i/i-78]Ruth Cannady's dispatch issue[/url] has the county's tone-out and turnout figures for every department including this one. Ours are not the worst in the county and they are not good.\n\nThe village side of the ballot -- the trustee seats and the water bond -- is at [url=synth://newcarrow-today.com/]newcarrow-today.com[/url], which is not a person and gets our dinner date wrong every year, and at [url=synth://verity.county.gov/]the county's services portal[/url], which has the sample ballot when the board of elections sends it across."
+          }
+        ]
+      },
+      {
+        "id": "calls",
+        "name": "Calls",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Calls, by month"
+          },
+          {
+            "kind": "text",
+            "body": "Every call this district was dispatched to, by month, since January 2021. These are counted off the county dispatch sheets and reconciled against our own run sheets at the business meeting. Where the two disagree, and they disagree about four times a year, the county's number is the one in this table and the difference is almost always a call that was cancelled while we were rolling.\n\nA call is a dispatch. It is not a fire, it is not an emergency and it is not a bill. Most of them are neither dramatic nor interesting, which is the honest shape of this work and the reason the table is here rather than a page of photographs."
+          },
+          {
+            "kind": "table",
+            "head": ["MONTH", "2021", "2022", "2023", "2024", "2025", "2026"],
+            "rows": [
+              ["January", "22", "24", "25", "28", "31", "33"],
+              ["February", "19", "21", "22", "24", "26", "28"],
+              ["March", "18", "20", "22", "24", "26", "27"],
+              ["April", "17", "19", "21", "23", "25", "27"],
+              ["May", "19", "22", "23", "25", "27", "30"],
+              ["June", "21", "24", "26", "28", "30", "32"],
+              ["July", "23", "25", "27", "30", "32", "34"],
+              ["August", "20", "23", "24", "26", "29", "32"],
+              ["September", "18", "20", "22", "24", "26", "--"],
+              ["October", "19", "21", "22", "24", "26", "--"],
+              ["November", "20", "20", "22", "24", "26", "--"],
+              ["December", "22", "22", "23", "25", "27", "--"],
+              ["TOTAL", "238", "261", "279", "305", "331", "243 to 31 Aug"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Five years, 238 to 331. That is up ninety-three calls a year, or thirty-nine percent, with no more people and no more trucks.\n\nThe eight months of 2026 so far are 243 against 226 for the same eight months of 2025, which is seventeen more.\n\nJanuary 2025 is the highest single month in the table at 31. Eleven of those were in the four days of the ice storm that began on the 14th, and nine of the eleven were wires down or a tree across a road, which we do not cut and are not allowed to cut, and which we sit with until the utility gets there."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What the calls are"
+          },
+          {
+            "kind": "table",
+            "head": ["TYPE", "2021", "2025", "CHANGE"],
+            "rows": [
+              ["EMS assist and lift assist", "92", "148", "+56"],
+              ["Automatic fire alarm", "33", "52", "+19"],
+              ["Motor vehicle crash", "31", "38", "+7"],
+              ["Service call -- odour, carbon monoxide, water, wires down", "27", "34", "+7"],
+              ["Mutual aid given", "26", "26", "0"],
+              ["Brush, field and outdoor", "17", "18", "+1"],
+              ["Structure fire", "8", "9", "+1"],
+              ["Chimney and appliance", "4", "6", "+2"],
+              ["TOTAL", "238", "331", "+93"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Structure fires have not gone up.[/b] Eight in 2021, nine in 2025, and somewhere between six and eleven every year since the district started counting them this way in 1996. Fire is not what is growing.\n\nWhat is growing is EMS assist, from 92 to 148. We are not an ambulance, we do not transport and we do not bill. We get toned because the county ambulance comes from Marchfield and we are eleven minutes closer, and because a person who has gone down in a bathroom needs four people to lift them and their spouse is eighty-one.\n\nAutomatic fire alarms went from 33 to 52, and every one of those is a monitored panel in a building that did not have one in 2010. We turn out for all of them and we will keep turning out for all of them. About one in sixteen is something.\n\nWeekday daytime calls are answered by fewer people: in 2025 the first unit out carried an average of 3.4 members between 7 a.m. and 5 p.m. on weekdays and 6.1 at all other hours."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Response time, both numbers"
+          },
+          {
+            "kind": "text",
+            "body": "The county clock starts when dispatch drops the tone and stops when the first unit reports on scene. These are 2025, all calls, out of the county's own system and not ours.\n\n[list][*]Median, all hours: 8 minutes 20 seconds.[*]Median, weekday 7 a.m. to 5 p.m.: 11 minutes 05 seconds.[*]Median, all other hours: 6 minutes 45 seconds.[*]Median inside the village: 5 minutes 10 seconds.[*]Longest in 2025: 24 minutes, the far east end of County Route 9 on a Tuesday afternoon in March, three responding, and a second call holding.[/list]\n\nWe publish the bad one next to the good one. A department that publishes only the good one is telling you something about itself."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Mutual aid"
+          },
+          {
+            "kind": "text",
+            "body": "Twenty-six calls given in 2021 and twenty-six in 2025, which is the only line in the type table that has not moved.\n\nOn a reported structure in this district the county tones us and [b]Gridfall[/b] together. A confirmed working fire adds [b]Marchfield[/b] for the aerial, because we do not have one and the nearest is twenty-six minutes, and [b]Ashkettle[/b] or [b]Halsey[/b] for tankers depending on which end of the district it is at.\n\nWe go the other way on the same terms. Our card with [url=synth://ashkettlevfd.org/mutualaid]Ashkettle, Station 4[/url] dates from 1983, and their page says 1983 as well, which is not something you can count on with these agreements.\n\nNobody keeps score. Joyce keeps the numbers, because Joyce keeps every number, and the numbers say we have gone out of the district more often than anyone has come into it in four of the last five years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The run people ask about"
+          },
+          {
+            "kind": "text",
+            "body": "Tanker 3-1 was dispatched to Gridfall at [b]5:12 a.m. on Wednesday 11 June 2003[/b] for the substation fire at Depot and Quarry Road, went on scene at 5:58 and was released at 10:05. It shuttled water to the engines on the hydrant at Third and Depot and nobody from this district went past the utility's fence.\n\n[b]Nobody died at that fire.[/b] Two Gridfall volunteers were treated for smoke inhalation at County General and released the same afternoon. The state utility commission put out two pages in November 2003 and gave the cause as insulation degradation consistent with age.\n\nOur own lights never went out that week, which is why this district has considerably less to say about it than [url=synth://ashkettlevfd.org/mutualaid]Ashkettle does[/url], and theirs is the account to read. The paper's coverage from the time is in the archive at [url=synth://verityledger.com/]verityledger.com[/url] and there is a careful write-up at [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url].\n\nWe keep the paragraph on this page because of what turns up in [url=/comments]the comment box[/url]."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting a copy of a report"
+          },
+          {
+            "kind": "text",
+            "body": "An incident report for your own property, or for a vehicle you own, is a public record. Ask the secretary at the counter or file the county's Form VC-5 through [url=synth://verity.county.gov/s/records-request]the public records request service[/url]. Copies are fifteen cents a page and a house fire report runs four to nine pages with the narrative.\n\nInsurance companies ask for these about twenty times a year and about half of them ask for something we do not have, usually a cause determination. We do not determine cause. That is the county fire marshal, and on anything over a certain size it is the state, and neither of them works out of this building.\n\nRun sheets before 1996 are in a filing cabinet in the meeting room and are not on a computer anywhere. You are welcome to look at them on a Monday. Bring your own patience.\n\nThe county's scanner traffic is transcribed by somebody else entirely at [url=synth://scanner.verity.net/]scanner.verity.net[/url]. It is not our log, it is not checked against ours, and the times on it are when somebody heard the radio."
+          }
+        ]
+      },
+      {
+        "id": "burning",
+        "name": "Burning",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Burning"
+          },
+          {
+            "kind": "text",
+            "body": "The single most common reason anybody walks into this station is to get a burn permit, and this district [b]does not issue burn permits[/b] and never has. It happens about forty times a year.\n\nWhat you need depends entirely on which side of the village line you are standing on, so start there."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "1. Inside the village limits"
+          },
+          {
+            "kind": "text",
+            "body": "[b]You may not burn.[/b] Open burning inside the village of New Carrow is prohibited outright under village ordinance 7-14, adopted in 1994. There is no permit that makes it legal, including the county one, and the county's own service page says so in its first sentence.\n\nThat covers leaves, brush, a burn barrel and a fire pit that is being used to get rid of something rather than to sit around. A contained recreational fire of clean, seasoned firewood is not open burning and nobody is coming to look at it.\n\nLeaves inside the village go to the pile behind the public works garage, which is open the hours the garage is open and which Gary will tell you about at more length than you want."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2. Outside the village, which is most of this district"
+          },
+          {
+            "kind": "text",
+            "body": "You need the county's [b]Open Burning Permit, Form VC-208[/b]. It is good for the calendar year and you carry it while you are burning.\n\nWhere you get it depends on who you ask, and we have been told two different things by two county offices in the same week, so here is both:\n\n[list][*][url=synth://verity.county.gov/s/burn-permit]The county's own service page[/url] says the completed form goes to the Fire Marshal's office in Gridfall, in person, with a $12 fee, and that the office takes neither email nor cards.[*]The clerk's counter in Gridfall keeps the same paper form, fills it in with you, stamps it, dates it, sends the copy across and does not charge for it.[/list]\n\nWe are not the people to settle that. Go to whichever counter is open, keep the stamped copy, and put the permit number on our form below. If somebody at one counter tells you the other counter is wrong, that is a conversation to have with them and not with us."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "3. Whichever side you are on: tell us first"
+          },
+          {
+            "kind": "text",
+            "body": "A legal fire that nobody told us about costs this district a full response, costs you nothing, and costs the three neighbours who called it in an afternoon of wondering. We came up four lanes in 2025 at full response to look at a perfectly legal brush pile.\n\nSo: [b]Form NCFD-3[/b], below. It is not a permit. It is a notice. It is free, it takes two minutes, and it goes in the box on the wall by the bay door at any hour, or into the hand of anybody in a department shirt, or you telephone the non-emergency line the morning of and say it out loud, which is just as good and takes less time."
+          },
+          {
+            "kind": "text",
+            "body": "[code]\n  FORM NCFD-3          NOTICE OF INTENT TO BURN          No. ______\n  NEW CARROW FIRE DISTRICT -- STATION 3, 208 BELLAMY ST\n  THIS IS NOT A PERMIT.  SEE THE CONDITIONS BELOW.\n  ---------------------------------------------------------------\n  Name ______________________________  Telephone ______________\n\n  Address of the burn __________________________________________\n\n  Nearest crossroad ____________________________________________\n\n  Date ____________  Start ________  Expected finish __________\n\n  What is being burned _________________________________________\n\n  Pile, feet:   ______ long  x  ______ wide  x  ______ high\n\n  Water on site (circle one):   HOSE    TANK    POND    NONE\n\n  Who is present the whole time ________________________________\n\n  County permit VC-208 number (outside the village) ____________\n\n  Signature _____________________________  Date _______________\n  ---------------------------------------------------------------\n  Received by ____________   Read at drill ____________\n[/code]"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The conditions, which are the part that matters"
+          },
+          {
+            "kind": "table",
+            "head": ["", "WHAT IT SAYS"],
+            "rows": [
+              ["Hours", "7 a.m. until one hour before sunset. Not overnight, not banked, not left to go out on its own."],
+              ["Attendance", "Somebody is with it, awake, from the time it is lit until it is cold. Not in the house. Not down the road."],
+              ["Water", "A charged hose, a tank on a trailer or a pond you can get a pump to. A bucket is not water."],
+              ["Distance", "Fifty feet from any building, fence line, fuel tank or power drop. A hundred feet if the pile is over four feet high."],
+              ["Wind", "Nothing over about fifteen miles an hour, and nothing at all on a day the wind is swinging. Nobody measures this for you."],
+              ["Ban", "Nothing at all under a county ban. The ban goes on the sign at the front of this station and on the clerk's recording the same morning."],
+              ["Size", "Over ten feet in any direction and it stops being a brush pile. Telephone first and we will come and look at it with you, which costs you nothing."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What you may not burn, anywhere in this district, permit or not"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Tyres, shingles, roofing felt or anything else off a roof. This one catches somebody every single time a roof gets done.", "Treated, painted or pressure-treated lumber, including old decking and old fence posts.", "Plastic of any kind, insulation, carpet, foam, mattresses, upholstered furniture.", "Appliances, wire for the copper in it, oil filters, oil.", "Anything belonging to a business rather than a household.", "A building. If you want a building burned for training, that is a different conversation, it takes about four months of paperwork through the state, and we have done it twice since 2009."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Wind, and where to look at it"
+          },
+          {
+            "kind": "text",
+            "body": "Len Mabry has been writing down the wind at his house on Kestrel Road twice a day since 1999 and it is on [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]. That is eighteen miles from the east end of this district and it is not your yard, and he says so himself, and it is still better than nothing and better than the airport.\n\nThe honest version: stand where the pile is, look at the trees, and if you are wondering whether it is too windy then it is."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The places on the internet that say we issue permits"
+          },
+          {
+            "kind": "text",
+            "body": "There are three that we know of.\n\n[url=synth://ask.verity.ai/]VerityAssist[/url] says this district issues burn permits Monday to Friday, nine to five. There is nobody in this building at nine on a Monday. There is nobody in this building at nine on any day.\n\n[url=synth://askverity.com/]AskVerity[/url] has a nine-year-old answer saying the same thing, and the question under it is closed as a duplicate of a question about a different county.\n\nThe third is a directory listing that we cannot find a way to write to.\n\nWe have written to the two that have an address. One replied. The reply thanked us for our feedback and did not change anything."
+          }
+        ]
+      },
+      {
+        "id": "roster",
+        "name": "Roster",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Roster"
+          },
+          {
+            "kind": "text",
+            "body": "Current as of [b]Monday 14 September 2026[/b]. Twenty-nine active members.\n\nLine rank is elected by the membership every December, except chief, which the trustees appoint. Years are years on this department; four people have time on other departments that is not counted here and two of them mention it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Line officers"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "POSITION", "ON SINCE", "CARD", "DAYTIME"],
+            "rows": [
+              ["Owen Mummert", "Chief", "1998", "FF I/II, pump operator, incident command", "Drives the fuel truck for the co-op. In the district most days, on a route the rest."],
+              ["Kurt Dornbach", "Assistant Chief", "2003", "FF I/II, extrication", "Maintenance at County General, Marchfield. Gone 6 to 4."],
+              ["Marlin Gochenour", "Captain", "1995", "FF I/II, tanker", "Farms on County Route 9. Home except at planting and at harvest, which is now."],
+              ["Adele Rhinehart", "Captain, EMS officer", "2006", "EMT, FF I", "Nights at the care home in Halsey, so daytime is good and she is the reason the daytime average is not worse."],
+              ["Gary Nyquist", "Lieutenant", "2009", "FF I, pump operator", "Village public works foreman. In the village all day with a radio and a truck."],
+              ["Tessa Kuhnle", "Lieutenant", "2012", "FF I/II, ladders", "Teaches fourth grade at New Carrow Elementary and cannot leave the building during school hours, which she raised herself and which the board agreed is not a problem."],
+              ["Herb Zerby", "Safety officer", "1984", "FF I, life member", "Retired in 2019. Available, and at every drill."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Firefighters"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "CARD", "NOTE"],
+            "rows": [
+              ["Alvin Bittner", "1979", "FF I, life member", "Forty-seven years. Still backs the tanker into the centre bay in one movement."],
+              ["Lamar Seibold", "1988", "FF I/II, pump operator", "Second on the pump after Gary. Does the pump tests in May."],
+              ["Galen Trexler", "1994", "FF I, tanker", "One of seven who can drive the tanker loaded. The dry hydrant on his pond is No. 2."],
+              ["Dean Hollenbach", "1997", "FF I/II", "Compressor, generator, small engines, and whatever the compressor is doing this week."],
+              ["Nevin Culp", "2001", "FF I, extrication", "Runs the extrication drill in April. Has opinions about door hinges."],
+              ["Janelle Stambaugh", "2004", "EMT, FF I", "Keeps the EMS bag inventory, the only inventory in this building that is right."],
+              ["Rodney Wingert", "2007", "FF I/II, pump operator", "Hose testing, which nobody else wants and which he is good at."],
+              ["Perry Oberholtzer", "2010", "FF I", "Works in Halsey. Evenings and weekends."],
+              ["Colton Fouse", "2013", "FF I/II, ladders", "Ventilation. Came back after four years away and did the whole card again without complaining."],
+              ["Sherry Lantz", "2014", "FF I", "Works from home, which is why she is on more daytime calls than anybody on this list."],
+              ["Emmett Bricker", "2016", "FF I", "Drives the brush truck. Somebody has to want to."],
+              ["Trent Kuhnle", "2018", "FF I", "Tessa's brother-in-law. Nights at the elevator in season."],
+              ["Renny Dubose", "2019", "FF I", "Village police officer. Carries our pager and the village radio at once, which the chief of police and this chief have now discussed twice and settled the same way twice."],
+              ["Cody Brubaker", "2021", "FF I, tanker", "Concrete. Out of the district weekdays and in it every weekend."],
+              ["Marnie Shilling", "2023", "Probationary, in class", "Finishes in February."],
+              ["Bo Gochenour", "2024", "FF I", "Came off the juniors in March. Marlin's son, and the second junior this department has ever kept."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Fire police"
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "NOTE"],
+            "rows": [
+              ["Merle Tandy", "1996", "Village wastewater operator. Has the key to the lagoon gate on him at all times and it is the reason dry hydrant No. 1 works."],
+              ["Doris Weidman", "2002", "Lorene's daughter-in-law. Has the school crossing on parade day and at every drill that shuts a street."],
+              ["Stuart Nace", "2005", "Parades, the dinner, and the Santa run."],
+              ["Arliss Fouse", "2011", "Stands at the County Route 9 end in the rain so somebody younger does not have to."],
+              ["Kay Wingert", "2015", "Rehab. Water, chairs, shade, and making people sit down in it."],
+              ["Wendell Shilling", "2019", "Also a district trustee, which the state says is allowed and which he recuses himself over anyway whenever the board votes on anything to do with the fire police."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Juniors and auxiliary"
+          },
+          {
+            "kind": "text",
+            "body": "Juniors are sixteen and seventeen, with a parent's signature on file. They come to drill, roll hose, run the lights at the parade and do not go inside anything. [b]Aidan Lantz[/b] and [b]Corinne Dornbach[/b], both 2025, and [b]Wesley Bittner[/b], 2026.\n\nThe junior programme started in 2011 and has produced two full members. The chief says that makes it worth doing and the treasurer says it makes it expensive and neither of them is wrong.\n\nThe auxiliary is eleven people and it cooks every dollar this department raises. Its own minutes, its own account, and it was organised in 1948, seventeen years after the company. President is [b]Rhonda Seibold[/b]. If you are renting the meeting room you are talking to her and not to us."
+          },
+          {
+            "kind": "image",
+            "seed": "ncfd-roster-bay-2026",
+            "imgKind": "photo",
+            "caption": "Nineteen of twenty-nine, the Monday after the June inspection, in front of Engine 3-1 because the tanker was at the pump shop. Of the ten missing, seven were at work."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The district board"
+          },
+          {
+            "kind": "text",
+            "body": "Five trustees, elected at the general election, two-year staggered terms, unpaid. The board meets the [b]third Tuesday at 7 p.m.[/b] in the meeting room. It is open, the agenda goes on the bay door the Friday before, and the average attendance by anybody not on the board or married to somebody on it is under one."
+          },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON THE BOARD SINCE", "ROLE"],
+            "rows": [
+              ["Lowell Fouse", "2011", "Chair"],
+              ["Marguerite Nace", "2017", "Secretary. Keeps the minutes and this website."],
+              ["Wendell Shilling", "2019", ""],
+              ["Pauline Oberholtzer", "2023", ""],
+              ["Glenn Trexler", "2025", ""],
+              ["Joyce Hollenbach", "appointed 2008", "Treasurer. Not a trustee, does not vote, paid $1,200 a year, and the only person who knows where anything is."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Two of the five seats are on the 3 November ballot. Both are uncontested. That has been true at every district election since 2013 and the board would genuinely rather it were not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Life members and the ones who are not here"
+          },
+          {
+            "kind": "text",
+            "body": "Twenty-five years on this department makes you a life member. Thirty-one people have reached it since 1931 and nine of them are on the roster above.\n\n[b]Lorene Weidman[/b], auxiliary 1961 to 2024, died in January 2025 at ninety-one. She cooked at every pork dinner from the first one and she had the pan sizes written on an index card that is still taped inside the cupboard door, and nobody is going to take it down. The $525 in [url=/dinner]the tool fund[/url] dated 18 February 2025 is memorial gifts from her family and from people at the funeral who did not want flowers."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Joining"
+          },
+          {
+            "kind": "text",
+            "body": "Twenty-nine sounds like plenty. On a Wednesday at ten in the morning it is five, and two of those five are over sixty-five.\n\nYou do not have to be a firefighter. We need drivers, we need fire police to stand in a road and turn traffic, we need somebody who can run a pump, and we need two more people in the kitchen for the dinner. If you can back a trailer you are already ahead of where most of us started.\n\nWhat it costs you is [b]Monday nights[/b] and a pager that goes off at four in the morning maybe a dozen times a year. What it costs to join is nothing. The gear is the district's, the state pays for the class, and the physical is on us.\n\nCome on a Monday at seven. Do not telephone first. Walk in the side door by the flagpole."
+          }
+        ]
+      },
+      {
+        "id": "dinner",
+        "name": "Pork Dinner & Raffle",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The fall pork dinner, and the calendar raffle"
+          },
+          {
+            "kind": "marquee",
+            "text": "*** FALL PORK DINNER -- SATURDAY 7 NOVEMBER 2026 -- 4 TO 7 P.M. -- $12, $6 UNDER TWELVE -- TAKEOUT IN A FOIL PAN -- STATION 3, 208 BELLAMY ST ***"
+          },
+          {
+            "kind": "image",
+            "seed": "ncfd-dinner-line-2025",
+            "imgKind": "photo",
+            "caption": "The line at about ten past four, 1 November 2025. It looks like this until about half past five and then it does not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The dinner"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Saturday 7 November 2026, 4 to 7 p.m.[/b], in the meeting room at Station 3. It is the first Saturday in November every year and it has been since 1974.\n\n$12 for adults, $6 under twelve, and under four eats off a parent's plate for nothing. Cash or a cheque at the door. There is no card reader and there is not going to be one this year.\n\nTakeout goes in a foil pan and you can telephone ahead for eight or more, which the auxiliary would very much rather you did than turning up with a list at ten to five."
+          },
+          {
+            "kind": "table",
+            "head": ["WHAT", "WHERE IT COMES FROM"],
+            "rows": [
+              ["Roast pork loin", "Kreider Packing in Halsey, at cost since 2009. [url=synth://kreider-packing.synth/]They have a website[/url] that has said COMING SOON since about 2015."],
+              ["Mashed potatoes, real ones", "Forty pounds, peeled in the meeting room on the Friday night by whoever turns up, which is how the auxiliary recruits."],
+              ["Sauerkraut", "Also Kreider. There is an argument about this every year and the kraut wins every year."],
+              ["Applesauce", "The Rhinehart orchard. Not bought, and Adele will tell you which trees."],
+              ["Roll, butter, coffee, cake", "The cake is whatever eleven people baked. There is never enough of one kind and always too much of another."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What a dinner actually makes"
+          },
+          {
+            "kind": "text",
+            "body": "People assume a dinner like this is a lot of money. Here is the whole of 2025, which was a normal year."
+          },
+          {
+            "kind": "table",
+            "head": ["", "2025"],
+            "rows": [
+              ["Adult dinners sold", "238 at $12 = $2,856"],
+              ["Children's dinners sold", "62 at $6 = $372"],
+              ["Gross", "$3,228"],
+              ["Food and supplies", "$1,288"],
+              ["County health department temporary food event permit", "$45, and it is in the food figure"],
+              ["NET TO THE TOOL FUND", "$1,940"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Three hundred dinners, five hours of cooking, about forty-one hours of auxiliary labour in the two days around it, and $1,940.\n\nThat is not a complaint. It is the arithmetic, and it is why [url=/levy]the levy page[/url] exists: you cannot run a fire district on dinners and nobody should pretend otherwise. What a dinner is actually for is the room being full.\n\nThe health department inspects it. We are on their list at [url=synth://verityhealth.gov/s/temp-events]temporary food event permits[/url] every year, we have been satisfactory every year, and in 2024 we had one note, which was a thermometer in the cooler that had stopped, and which was replaced that afternoon for $14."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The calendar raffle, and what has happened to it"
+          },
+          {
+            "kind": "text",
+            "body": "Two hundred and fifty calendars at $20. A name is drawn every day in March, the prizes are $25 to $100, and you stay in the drum after you win, which is the only rule anybody remembers.\n\nIt worked very well for nine years and it has stopped working.\n\n[list][*]2024: sold 236 of 250. Twenty-six of the thirty-one prizes donated. Net $2,360.[*]2025: sold 184. Nineteen donated. Net $1,065.[*]2026: sold 116. Eleven donated, so the district bought twenty. Net $310.[/list]\n\nThe prizes are the problem rather than the sales. Six of the businesses that used to give one are closed and four are now owned somewhere else and have a policy about local donations that involves a form.\n\nThe board will decide in January whether to run it in 2027. If it runs it will be 150 calendars and fewer prizes, or it will not run. Either is fine and neither is a crisis."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The rescue tool fund, every dollar with a date on it"
+          },
+          {
+            "kind": "text",
+            "body": "We are raising for a [b]battery hydraulic rescue tool set[/b]: a cutter, a spreader, two batteries and two chargers, quoted at [b]$18,400[/b] by Keiser Fire Equipment in the state capital, who also sell us hose and bottles and who have quoted this twice, the second time higher.\n\nWhat we have now is a 1998 hydraulic set that runs off the generator on Engine 3-1. It works. It weighs what two people can carry and not one, and it cannot be used at all if 3-1 is committed to a fire somewhere else, which on the night we needed it in February it was.\n\nJoyce keeps this in the ledger and types it here after every board meeting. If you gave and you are not on it, that is an error, and she would like to know, and it will bother her more than it bothers you."
+          },
+          {
+            "kind": "table",
+            "head": ["DATE", "WHERE IT CAME FROM", "AMOUNT", "RUNNING"],
+            "rows": [
+              ["04 November 2023", "Fall pork dinner", "$1,880", "$1,880"],
+              ["31 March 2024", "Calendar raffle, net of prizes", "$2,360", "$4,240"],
+              ["04 July 2024", "Chicken stand at the ball field", "$640", "$4,880"],
+              ["02 November 2024", "Fall pork dinner", "$2,070", "$6,950"],
+              ["18 February 2025", "Memorial gifts, Lorene Weidman", "$525", "$7,475"],
+              ["30 March 2025", "Calendar raffle, net of prizes", "$1,065", "$8,540"],
+              ["01 November 2025", "Fall pork dinner", "$1,940", "$10,480"],
+              ["29 March 2026", "Calendar raffle, net of prizes", "$310", "$10,790"],
+              ["12 September 2026", "Quilt raffle at the county fair, with the auxiliary", "$470", "$11,260"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]$11,260 of $18,400. $7,140 to go.[/b]\n\nAt the rate of the last three years that is two more dinners and something else. The board has not decided what the something else is, and it will not be a raffle."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How to give, and who is not us"
+          },
+          {
+            "kind": "text",
+            "body": "A cheque to [b]New Carrow Fire Company[/b], 208 Bellamy Street, with [i]tools[/i] on the memo line, or cash at the dinner, or handed to anybody in a department shirt, who will write you a receipt out of the book in the drawer.\n\n[b]This district does not telephone people for money.[/b] Nobody does it on our behalf, nobody is paid a percentage, and there is no professional fundraiser anywhere in this.\n\nTwice in the last two years somebody has telephoned houses in this district calling themselves the New Carrow Firefighters Benevolent Fund or something close to it. That is not us, it is not any department in this county, and the sheriff has a page about that kind of call at [url=synth://veritysheriff.gov/s/scams]Scams and Frauds[/url]. If you get one, hang up and then telephone the non-emergency line, because the second part is the part that helps.\n\nThe only fundraising this district does is standing in front of you with a plate."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where the dinner gets announced"
+          },
+          {
+            "kind": "text",
+            "body": "The notice goes on the bay door, in the church bulletins, on the board outside the elevator, and on this page.\n\nSomebody scans it and puts it on [url=synth://gridline.social/]Gridline[/url] most years, where a feed account reposts it with the wrong date about half the time. [url=synth://newcarrow-today.com/]newcarrow-today.com[/url] has printed the wrong date three years running; we have written to them twice and the correction went on [url=synth://newcarrow-today.com/corrections]their corrections page[/url] rather than on the article.\n\nIt is the [b]first Saturday in November[/b]. It has been for fifty-two years. If a website tells you otherwise, the website is wrong."
+          }
+        ]
+      },
+      {
+        "id": "water",
+        "name": "Address & Water",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Your address, and our water"
+          },
+          {
+            "kind": "text",
+            "body": "Two things that decide how a bad night goes here, and both of them are settled long before anybody telephones 911."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The number at the end of your lane"
+          },
+          {
+            "kind": "text",
+            "body": "We cannot help you if we cannot find you.\n\nAt night, in rain, on a county road with the ditch full, in a truck doing thirty-five with four people looking, what we need is [b]four-inch reflective numbers on a post at the road[/b], visible from both directions, not screwed to a house that is three hundred feet back behind spruce.\n\nThe district sells the sign at what it costs us: [b]$15[/b], green, reflective on both sides, on a steel post. We will drive the post for you if you are over seventy or not able, and we will not look at anything else while we are in your yard.\n\nWe have sold 512 since 2009. There are about 2,050 structures in this district.\n\nAnd if your number is on a post that is now lying in the weeds, you do not have a number. Go and look at yours today. Most people have not looked at theirs since they put it in."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Hydrants in the village"
+          },
+          {
+            "kind": "text",
+            "body": "Seventy-four, all of them the [b]New Carrow Water District's[/b] and none of them ours. The water district flow-tests them on a three-year cycle and the last full round was autumn 2024.\n\nNine are marked red, which means under 500 gallons a minute, and three are out of service and have been bagged since spring. The bagged ones are on Fetters Road, and that is the reason the first-due assignment to anything on Fetters Road is an engine [i]and[/i] the tanker, which is not how it works anywhere else in the village.\n\nWhen a main breaks, the hydrants in that zone go with it. On [url=synth://newcarrow-today.com/article/c-boil]Friday 18 September[/url] we had two members on traffic control at Mill Street from seven in the morning, and the hydrant at Mill and Fetters was shut for four hours. The boil notice is the water district's business and the four hours is ours."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The four dry hydrants, which is what the other sixty-one square miles have"
+          },
+          {
+            "kind": "text",
+            "body": "A dry hydrant is a pipe already sunk in a pond with a fitting on the bank, so an engine can draft in four minutes instead of forty. Everywhere outside the village, the water at your fire is what we bring and what we can draft."
+          },
+          {
+            "kind": "table",
+            "head": ["", "WHERE", "GOOD FOR", "NOTE"],
+            "rows": [
+              ["No. 1", "North lagoon, village wastewater, off the service track", "Unlimited", "The gate is the village's and Merle carries the key. Exterior firefighting only and the truck gets flushed after, which is a job nobody volunteers for. There is a strand of wire across the gap at the south end that is not ours and we have asked the village about it twice."],
+              ["No. 2", "Trexler pond, County Route 9", "About 70,000 gallons", "Private, and Galen has never once said no, including at two in the morning in a wheat field."],
+              ["No. 3", "Dorrance Creek at the Mill Road bridge", "Seasonal", "Not in August. In a dry August it is not there at all, and 2026 has been a dry August."],
+              ["No. 4", "Quarry Road borrow pit", "Unlimited", "Best water in the district. Installed 2021. Unreachable from 28 September to 8 October while the culvert is out, which for eleven days leaves us three."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Four is not enough for seventy-four square miles and we would like seven.\n\n[b]If you have a pond and you would let us put a pipe in it[/b], telephone the chief. The district pays for the pipe and does the work, it does not go on your taxes, and most insurers will take something off your premium for it. There are five ponds in this district we would like and we have properly asked about one."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting a truck to you"
+          },
+          {
+            "kind": "text",
+            "body": "[b]The Mill Road bridge is posted at 8 tons.[/b] Tanker 3-1 weighs 46,000 pounds loaded. It does not cross that bridge and it is not going to.\n\nIf you live north of the bridge, everything heavy that comes to you comes round by County Route 9, and the long way is about six minutes. That is the single most important sentence on this page for about ninety households, and it has been true since the posting went up in 2018.\n\nThe district has written to the county highway department about that bridge in 2018, 2021 and 2025. The 2025 reply said the structure is scheduled for evaluation.\n\nThe rest of it:\n\n[list][*][b]Lane gates.[/b] If your lane has a gate, we will come through it. A chain and a padlock costs you about ninety seconds while somebody cuts it, and we would rather cut it than wait. If you would prefer we did not cut it, put a Knox box on the post and we will have the key.[*][b]Turnarounds.[/b] A quarter-mile lane with nowhere to turn a truck means the engine backs out in the dark, and an engine backing out in the dark is the most dangerous thing we do on an ordinary call.[*][b]Low wires and low branches.[/b] Engine 3-1 is eleven feet two inches. It has taken a drop off a barn twice.[*][b]Snow.[/b] We are not a plough. If your lane is not open, the truck stops where the truck stops and we walk in with what we can carry.[/list]"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Knox boxes"
+          },
+          {
+            "kind": "text",
+            "body": "A Knox box is a small steel box by your door with a key in it, and one key at this station opens all of them in the district.\n\nThirty-one buildings have one: the school, the elevator, the apartments over the storefronts on Bellamy, the church halls, and eleven houses where somebody lives alone.\n\nIt costs about $220 for the box, which is not ours and which we do not sell, and it means we open your door rather than your door. We have forced eleven doors in five years and six of them had somebody inside who was fine and could not get to it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The list by the radio"
+          },
+          {
+            "kind": "text",
+            "body": "There is a card file next to the base radio in the meeting room. It has thirty-eight cards on it. Each one is an address in this district where somebody is on oxygen, on a well with no hand pump, needs two people to get out of a chair, or is on their own and over eighty.\n\nIt gets checked every January by Adele and Janelle. It is not a government list, it is not shared with anybody, and it is a box of index cards in a fire hall, which is exactly as far as it goes.\n\nIf you should be on it, or your mother should be, telephone Adele Rhinehart or say so at the dinner. Nobody has ever been put on it who did not want to be."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The lagoon, and the people who are also out there"
+          },
+          {
+            "kind": "text",
+            "body": "Dry hydrant No. 1 is at the north lagoon, and the north lagoon is also the best place in the county to look at shorebirds in a dry summer, which we did not know until somebody from [url=synth://veritybirders.org/]the bird club[/url] explained it to Merle at the counter.\n\nWe have no objection to anybody being out there and neither does the village. Two things only: the gate stays shut behind you, and if you find our fitting on the bank buried in mud, it would be a kindness to say so, because we find out otherwise at three in the morning."
+          }
+        ]
+      },
+      {
+        "id": "comments",
+        "name": "Comments",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Comments"
+          },
+          {
+            "kind": "text",
+            "body": "The company that built this site in January puts a comment box at the bottom of every page and there is no setting to turn it off. There is a setting that says MODERATION: ON. It does nothing.\n\nSo this is where everything lands. Marguerite reads it on Thursdays. The chief reads it when somebody tells him to.\n\n[b]This is not an emergency line and nobody is watching it.[/b] Dial 911."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "Gayle Fenstermacher",
+                "time": "03/14/2025",
+                "body": "I have the county form for burning, we are out on County Route 9 past the church. Do I need to tell the fire department as well or is the county enough? I do not want to be a nuisance either way."
+              },
+              {
+                "author": "O. Mummert",
+                "time": "03/17/2025",
+                "body": "The county form makes it legal. Telling us stops the truck.\n\nDrop an NCFD-3 in the box by the bay door, or telephone the non-emergency line the morning of and say your name, the road and the crossroad. Thirty seconds. Then when the two people who can see your smoke from the ridge telephone it in, dispatch already has it and nobody comes up your lane at fifty.\n\nYou are not a nuisance. The people who do not call are not a nuisance either, they just cost us an afternoon."
+              },
+              {
+                "author": "Rich Oberholtzer",
+                "time": "06/02/2025",
+                "body": "Three times in five weeks now, all after midnight, and every time four of you came and nobody made me feel like I had done something wrong.\n\nMy mother is 88 and I cannot pick her up on my own any more. I know what three calls in five weeks does to your numbers and I am sorry about it."
+              },
+              {
+                "author": "A. Rhinehart",
+                "time": "06/04/2025",
+                "body": "Call. That is what the number is for and a lift is not a lesser call than a fire.\n\nYou are on the card file by the radio now, which means if the power goes in that part of the district somebody comes and looks at the two of you without being asked.\n\nAnd get the rail on the side of the bed. Not the one from the catalogue, the one that bolts to the frame. I will bring you the name of it at the dinner."
+              },
+              {
+                "author": "AutoLocal_Feed",
+                "time": "08/21/2025",
+                "body": "SEVEN SMALL-TOWN FIRE DEPARTMENTS WITH REMARKABLE HISTORIES, No. 4: New Carrow, {{city}}\n\nFounded in 1912, the New Carrow Fire District has served the residents of {{city}} for over a century. The department gained regional attention in 2004 when it responded to the catastrophic Gridfall substation explosion, sparked by a lightning strike during a violent summer storm, which claimed the lives of two volunteer firefighters and left more than 40,000 homes without power for nearly two weeks.\n\nToday the district operates a modern fleet from three stations across Verity County. Nearby, the historic Blue Kestrel Diner, which closed its doors in 2008, remains a popular destination for visitors as a vape shop on scenic Route 62.\n\nSource: [url=synth://now.verityledger.com/]now.verityledger.com[/url].\n\nWhich small-town department should we feature next? Let us know in the comments."
+              },
+              {
+                "author": "kfennimore",
+                "time": "09/02/2025",
+                "body": "Nearly every number in the item above is wrong, and the page it is sitting on has the same facts right, which is the part I would like somebody at this district to notice before they let this website lapse.\n\nThe fire was 11 June 2003, not 2004. There was no storm. The weather that morning is written down at [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]: clear, calm, 0.00 inches on the tenth, eleventh and twelfth. The state commission's two pages in November 2003 gave the cause as insulation degradation consistent with age. Nobody died. Two Gridfall volunteers were treated for smoke inhalation at County General and released the same afternoon. It was 4,100 customers, not 40,000, and the longest of those was five days.\n\nThe diner closed in 2006. It was a vape shop from 2013 to 2021 and it has been a phone repair since 2022.\n\nThis department was organised in 1931 and the district was created in 1967, both of which are on your own front page, and you have one station.\n\nYour [url=/calls]calls page[/url] has the 2003 run on it with the dispatch time and the release time. I have cited it twice on [url=synth://verity.wiki/]the county wiki[/url], where the year gets changed back to 2004 about twice a week by something that is not a person.\n\nKaren Fennimore, Marchfield Public Library."
+              },
+              {
+                "author": "FIRE SERVICES GRANT OFFICE",
+                "time": "11/12/2025",
+                "body": "NOTICE TO FIRE CHIEF: your department has been PRE-SELECTED for up to $175,000 in 2026 equipment funding. eligibility window closes in 72 hours. our award specialists have recovered funds for 900+ volunteer departments nationwide. NO UPFRONT COST -- we take our fee from the award only. begin your free eligibility review at [url=synth://fire-award-portal.click/verity]fire-award-portal.click[/url] REF 44-NC-2026"
+              },
+              {
+                "author": "Pat Kreider",
+                "time": "01/20/2026",
+                "body": "Why did an engine come for my father in law? He fell in the kitchen, he is fine, but there were six of you and a fire truck in the drive and the neighbours all came out. The ambulance was another ten minutes behind you."
+              },
+              {
+                "author": "K. Dornbach",
+                "time": "01/23/2026",
+                "body": "Because the engine is where the people are.\n\nWe do not have a car that carries four. We have an engine that carries six, and a lift off a kitchen floor takes four of us if it is going to be done without hurting him or one of us. So the engine comes, and it is the same engine either way, and the neighbours come out either way.\n\nThe ambulance is out of Marchfield, which is why it is ten minutes behind. That is the whole reason this department gets toned for medical calls at all.\n\nHe is fine, which is the part of your message that matters."
+              },
+              {
+                "author": "VerityPulseAI",
+                "time": "04/14/2026",
+                "body": "Summary of this page for readers:\n\nThe New Carrow Fire District publishes one of the more complete call records available for a volunteer department in Verity County. According to the district, it answered 331 calls in 2025, up from 238 in 2021, with structure fires remaining between eight and nine per year across the period. The district attributes the increase primarily to emergency medical assists.\n\nThe district's account of the June 2003 Gridfall substation fire is consistent with the state utility commission summary published in November 2003, which attributed the cause to insulation degradation consistent with age. No fatalities occurred.\n\nThe district operates three stations and a fleet of eleven vehicles, and is funded by a property tax levy expected to be renewed at the November election. Residents are encouraged to contact the district with any questions. Local officials have not commented."
+              },
+              {
+                "author": "Curtis Ganske",
+                "time": "05/19/2026",
+                "body": "Ashkettle, Station 4. Two things.\n\nWhere did you get your calendars printed? Ours has been the same place since 2006 and they have stopped answering.\n\nAnd whoever built this site for you in January, what did it cost and does it stay up on its own. Ours is from 2004 and the thermometer on the front of it has said sixty-two percent since 2012 because the program I drew it in does not run on anything any more, and I have looked at what rebuilding costs twice and closed the window twice."
+              },
+              {
+                "author": "M. Nace",
+                "time": "05/21/2026",
+                "body": "Kerrin Print & Copy. Three hundred copies, and they have not raised us since 2019.\n\nThe site is $96 a year plus $18 for the domain, and it is a template with our words typed into it. It stays up on its own and I can change the words, which is all I wanted. It also came with a comment box I cannot switch off, which is what you are typing into.\n\nWe lost four years of notices moving to it. Nobody kept a copy, and I am the somebody who should have."
+              },
+              {
+                "author": "LISTING VERIFICATION DEPT",
+                "time": "06/08/2026",
+                "body": "ACTION REQUIRED -- the business listing for NEWCARROWFD is unverified and scheduled for removal from local search directories within 5 business days. unverified emergency service listings are removed automatically. verify ownership now to retain your placement and associated map pin: [url=synth://listing-verify-now.biz/]listing-verify-now.biz[/url] CASE 8815-NCF"
+              },
+              {
+                "author": "a farmer on Mill Road",
+                "time": "08/19/2026",
+                "body": "Is anything being done about the bridge. I read on this site that the tanker comes round the long way and I have lived here forty years and did not know that until I read it here, which I would say is on me and on you about equally."
+              },
+              {
+                "author": "L. Fouse, board chair",
+                "time": "08/22/2026",
+                "body": "It is on us. It should have been in a letter to every house north of it in 2018 and it was in the minutes instead.\n\nThe district has written to the county highway department in 2018, 2021 and 2025. The 2025 reply said the structure is scheduled for evaluation. I asked what that meant and was told it means it is on a list.\n\nThe bridge is the county's. The district cannot rebuild it, cannot pay for it, and cannot make anybody look at it. What we can do is tell people it is there, which is now on [url=/water]the water page[/url] in bold, and go the long way, which we have been doing for eight years and will keep doing.\n\nIf you want to write to the county yourself, that is worth more than another letter from us. It has been the same letter three times."
+              },
+              {
+                "author": "Dorrance Creek Sportsmen's Club",
+                "time": "09/09/2026",
+                "body": "The club will match the first $500 given to the tool fund between now and the dinner. Our members voted it on Wednesday, 14 to 2.\n\nWe would also like to ask about the pond at the club grounds for one of your pipes. Somebody said at the meeting that it costs us nothing and I said I would find out rather than repeat it."
+              },
+              {
+                "author": "G. Nyquist",
+                "time": "09/14/2026",
+                "body": "For anyone on the east end: Quarry Road is shut at the culvert from Monday the 28th to Thursday 8 October, and the county calendar says the 9th, so plan on the 9th.\n\nFor us that means the borrow pit is out of reach for eleven days and we are down to three dry hydrants. If you are burning anything at all out there in those eleven days, do not, and if you must, telephone first and one of us will come and stand with you.\n\nThe detour and the map are at [url=synth://verity-transit.gov/s/culvert]the county's notice[/url]. It is signed at both ends and about a third of people are moving the barrels, which is the village's problem and the sheriff's and not mine, and I am putting it here anyway."
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]The comment box is unmoderated. The setting that says it is moderated has never worked and the company has been told twice.[/i]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 388
+          }
+        ]
+      }
+    ]
+  }
+}

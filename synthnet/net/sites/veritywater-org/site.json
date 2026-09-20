@@ -1,0 +1,508 @@
+{
+  "schema": 1,
+  "domain": "veritywater.org",
+  "title": "Verity Valley Water Board",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Agendas, minutes, the rate schedule, the annual water quality report, the hydrant flushing zones and every boil water notice since 2018, for the two wells and 31.4 miles of main that serve Gridfall, Coyne Flats and Tessler.",
+  "tags": [
+    "verity",
+    "county",
+    "water",
+    "utility",
+    "minutes",
+    "2026"
+  ],
+  "links": [
+    "verity.county.gov",
+    "verityhealth.gov",
+    "veritysheriff.gov",
+    "veritywire.press",
+    "now.verityledger.com",
+    "wiki.gridfall.net",
+    "ask.verity.ai",
+    "ashkettlevfd.org",
+    "vvpl.news",
+    "thequarry.news",
+    "brenners-notebook.email"
+  ],
+  "data": {
+    "agency": "Verity Valley Water Board",
+    "motto": "Two wells, one tower and 31.4 miles of main. Gridfall, Coyne Flats and Tessler.",
+    "notices": [
+      "[b]There is no boil water notice in effect on this system.[/b] The last notice on this system was issued at 9:40 a.m. on Wednesday 4 February 2026 for 62 connections on Third Street and was lifted at 12:15 p.m. on Friday 6 February 2026. Every notice this Board has issued since 2018, with the date it was lifted and the sample results, is at [url=/s/boil-archive]Boil Water Notices - Archive[/url].",
+      "The boil water advisory that has been reported since 24 July on the [b]Ashkettle north loop[/b] is not on this system. Ashkettle has its own water board, its own wells and its own operator, and this office has no information about that advisory and cannot lift it. The Ashkettle board's site is at [url=synth://ashkettlewater.synth/notices]ashkettlewater.synth[/url] and a news agency has been refiling the advisory weekly at [url=synth://veritywire.press/d/d-603]veritywire.press[/url]. The water main break on Bellamy Street in Marchfield on 5 September was likewise not on this system. Marchfield runs its own department on its own wells. See [url=/s/system]The Water System and Service Area[/url].",
+      "[b]Autumn hydrant flushing runs Monday 5 October to Friday 16 October 2026[/b], weekdays, 8:00 a.m. to 3:00 p.m. Zones 1 and 2 in the first week, zones 3 and 4 in the second. Your water may run brown or orange for a few hours afterwards. It is manganese sediment off the inside of the pipe, it is not a health risk, and it will stain a white wash permanently. Do not do laundry on the day your zone is flushed. The zone list and the streets in each one are at [url=/s/flushing]Hydrant Flushing - Autumn 2026[/url].",
+      "[b]Rates change again on Friday 1 January 2027.[/b] Under section 4 of Resolution 2025-7, adopted 12 November 2025, the volumetric rate rises 5.5 percent on 1 January 2027 and again on 1 January 2028 without a further vote of the Board and without a further public hearing. The volumetric rate goes from $4.42 to $4.66 per 1,000 gallons on 1 January 2027. The quarterly readiness-to-serve charge and the infrastructure surcharge do not change. The full schedule, including both future steps and a worked comparison of an average quarterly bill, is at [url=/s/rates]Schedule of Rates, Fees and Charges[/url]. This notice is posted fifteen months ahead because the Board was asked to post it.",
+      "There is a site on a [i].click[/i] address advertising \"Verity Water - Pay Your Bill Online, Fast and Secure\" at [url=synth://verity-water-pay.click/]verity-water-pay.click[/url]. It is not this Board and it is not anybody's vendor. It takes a card number, adds a $6.95 \"processing fee\" and the payment does not arrive here. Eleven customers have brought it to the counter since May and two of them had already paid it. This Board takes payment at the counter, by mail, by the drop box at the Armory door, and through [url=synth://verity.county.gov/]the county services portal[/url], which adds a 2.4 percent vendor fee, and nowhere else. There is no automatic payment and has been none since 2022. The sheriff's office keeps a running list at [url=synth://veritysheriff.gov/s/scams]Scams and Frauds[/url].",
+      "The [b]Consumer Confidence Report for calendar year 2025[/b] was mailed with the July bill and is at [url=/s/ccr-2025]Consumer Confidence Report - Calendar Year 2025[/url]. It reports one monitoring and reporting violation, in August 2025, and no violation of a drinking water standard. Paper copies are at the counter. If you rent and your landlord pays the water bill, you did not get one, and you may have one.",
+      "[b]Trustee seat 5 has been vacant since 2 April 2026[/b] and no one has applied. The seat was advertised in the legal notices on 15 April and 20 May 2026. The Board may appoint to fill it until the district election in April 2027. A trustee must live in the district, attends twelve meetings a year and is paid $150 a meeting. The meeting of 12 August 2026 was cancelled for want of a quorum, which with four trustees is three. Ask the clerk for the one-page form. See [url=/s/about]About the Board, Trustees and Meetings[/url].",
+      "Answers about this Board produced by [url=synth://ask.verity.ai/]VerityAssist[/url] are not written here, are not reviewed here and cannot be corrected from here. Three have reached the counter often enough to be worth stating. [b]This Board does not serve Marchfield.[/b] [b]Bills are not due on the 15th[/b]; they are due 21 days from the date printed on the bill, which falls on a different day each quarter. And this Board was not [b]\"formed after the 2004 substation fire\"[/b]. The Board was created on 1 January 2009 by a joint agreement between Gridfall, Coyne Flats and Tessler, and the substation fire was in June 2003. The account of the fire at [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url] has the year right.",
+      "The office is two rooms at the Armory, 12 Depot Street, Gridfall, open Monday to Thursday, 8:30 a.m. to 3:30 p.m., closed Friday. The telephone is 782-4145 and it is answered by a person when there is a person in the room. The machine is cleared twice a day. [b]For a break, a loss of pressure or water coming up out of the ground, do not use this number after 3:30 p.m.[/b] Call the sheriff's non-emergency line, which pages the operator on call; see [url=synth://veritysheriff.gov/s/dispatch]911, the Non-Emergency Line, and Who To Call[/url]. The on-call operator is paged about forty times a year and about nine of those are ours."
+    ],
+    "services": [
+      {
+        "id": "rates",
+        "name": "Schedule of Rates, Fees and Charges",
+        "blurb": "Every charge this Board makes, what it was before, and what it becomes on 1 January 2027 and 1 January 2028. Includes a worked comparison of an average quarterly bill under the old schedule and the new one.",
+        "status": "online",
+        "lastUpdated": "2026-01-02",
+        "steps": [
+          "[b]Quarterly readiness-to-serve charge, by meter size.[/b] This is charged whether or not you use any water.\n\n[list][*]5/8 inch and 3/4 inch - [b]$34.00[/b] (was $28.00)[*]1 inch - $56.00 (was $46.00)[*]1 1/2 inch - $102.00 (was $84.00)[*]2 inch - $168.00 (was $138.00)[*]3 inch - $340.00 (was $280.00)[*]4 inch - $544.00 (was $448.00)[/list]\n\nAbout 1,790 of the 1,941 meters on this system are 5/8 inch.",
+          "[b]Volumetric charge, per 1,000 gallons.[/b] One rate for all usage. There are no longer blocks.\n\n[list][*]From 1 January 2026 - [b]$4.42[/b][*]From 1 January 2027 - $4.66[*]From 1 January 2028 - $4.92[/list]\n\nThe 2027 and 2028 figures are 5.5 percent steps set by section 4 of Resolution 2025-7 and rounded to the nearest cent. They take effect without a further vote and without a further public hearing. The rate before 1 January 2026 was $4.15, unchanged since 1 April 2017.",
+          "[b]Infrastructure surcharge - $5.00 a quarter, every account.[/b] This was $3.50 when it was adopted on 1 July 2021 by Resolution 2021-6, which stated that it expired on 31 December 2026. Section 5 of Resolution 2025-7 superseded Resolution 2021-6. The surcharge is $5.00, it applies to every account regardless of usage or meter size, and it does not expire.",
+          "[b]An average quarterly bill, worked through.[/b] The Board's average household use figure is 10,700 gallons a quarter. It comes from the 2016 rate study and has not been recomputed. Actual average use on this system in the first two quarters of 2026 was about 9,700 gallons.\n\n[list][*]Before 1 January 2026 - $28.00 base, $3.50 surcharge, $44.41 for 10,700 gallons at $4.15. Total [b]$75.91[/b].[*]From 1 January 2026 - $34.00 base, $5.00 surcharge, $47.29 for 10,700 gallons at $4.42. Total [b]$86.29[/b].[*]From 1 January 2027 - $34.00 base, $5.00 surcharge, $49.86 at $4.66. Total [b]$88.86[/b].[*]From 1 January 2028 - $34.00 base, $5.00 surcharge, $52.64 at $4.92. Total [b]$91.64[/b].[/list]\n\n$75.91 to $91.64 is $15.73 a quarter, or $62.92 a year, over three years. The figure given at the public hearing on 12 November 2025 was the volumetric step alone, twenty-seven cents per thousand gallons, which at 10,700 gallons is about $2.90 a quarter. Both figures are correct and they are not the same figure. This paragraph was added on 2 January 2026 because the Board was asked for the comparison and the Board has no reason to withhold it.",
+          "[b]Other charges.[/b]\n\n[list][*]Late penalty - 10 percent of the unpaid balance, added 21 days after the bill date[*]Reconnection after shutoff - $35.00, during office hours only[*]New connection, 5/8 inch, within 100 feet of an existing main - $1,850.00 plus the cost of the road cut[*]Meter test at customer request - $60.00, refunded if the meter reads more than 2 percent fast[*]Bulk water from a hydrant - $75.00 permit, then $9.00 per 1,000 gallons[*]Returned payment - $30.00[*]Copies of records - $0.25 a page[/list]",
+          "[b]Wholesale.[/b] The village of Halsey buys finished water through the master meter at the Meacham Street connection at $2.65 per 1,000 gallons under an agreement dated 2018 that runs to 2028. Halsey took 11.4 million gallons in 2025. Halsey owns and maintains every pipe on its side of that meter, sets its own retail rates and bills its own customers, and this Board has nothing to do with a Halsey bill.",
+          "[b]Why the rates changed.[/b] The 2011 state revolving fund loan for the Fenn Avenue main and the Well 5 rebuild carries a covenant requiring net revenue of at least 1.10 times annual debt service. Coverage was 1.11 in the 2023 audit, 1.04 in 2024 and 0.99 in 2025. The loan office wrote to the Board on 21 August 2025 requiring corrective rate action within 180 days, that is by 17 February 2026. The Board had to raise something. What it raised, and in what order it decided, is in the minutes of [url=/s/min-2509]10 September[/url], [url=/s/min-2510]8 October[/url] and [url=/s/min-2511]12 November 2025[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Resolution 2025-7, Schedule of Rates, Fees and Charges (6 pages)",
+            "note": "Adopted 12 November 2025 by a vote of 3-1 with one abstention. Effective with the billing period beginning 1 January 2026. The schedule is Attachment A, which is pages 3 to 6 and is where every dollar figure lives. Sections 4 and 5 are eleven lines and are the two that change what you pay after 2026."
+          },
+          {
+            "name": "Resolution 2021-6, Infrastructure Surcharge (2 pages)",
+            "note": "Adopted 9 June 2021, effective 1 July 2021. Superseded by Resolution 2025-7 section 5. Kept on file because people ask about the expiry date in it, which was 31 December 2026."
+          },
+          {
+            "name": "Resolution 2017-2, Schedule of Rates, Fees and Charges (5 pages)",
+            "note": "The schedule that ran from 1 April 2017 to 31 December 2025. Kept for comparison. Anyone checking the arithmetic above against an old bill will want this one."
+          },
+          {
+            "name": "Rate and Revenue Study, Brice-Hallam Engineering, October 2025 (61 pages)",
+            "note": "Cost $14,600, authorised 9 July 2025, received 8 October 2025. Three scenarios. The Board adopted scenario B with the base charge from scenario C. That combination is not modelled anywhere in the document, which is why the revenue projection in it does not match the schedule that was adopted."
+          },
+          {
+            "name": "Affidavit of Publication, notice of public hearing, 22 October 2025 (1 page)",
+            "note": "The statutory notice ran on 22 October 2025, twenty-one days before the hearing, at 14.5 column inches and $14.60 an inch, total $211.70. In the published table the readiness-to-serve column appeared under the heading 'per 1,000 gallons'. The affidavit came back signed on 29 October and was filed. Nobody read the printed table before it was filed, including this office."
+          }
+        ]
+      },
+      {
+        "id": "boil-archive",
+        "name": "Boil Water Notices - Archive",
+        "blurb": "Every boil water notice this Board has issued since 2018, with the reason, the number of connections affected, the time it was issued, the time it was lifted and the sample results. Twelve notices. There is none in effect now.",
+        "status": "online",
+        "lastUpdated": "2026-02-06",
+        "steps": [
+          "A boil water notice is issued when pressure in a main falls below 20 pounds per square inch, when a main is opened for a repair, or when a routine sample is positive for total coliform. The first two are precautionary and most notices on this system are the first two.",
+          "[b]If a notice is in effect for your address:[/b] bring water to a rolling boil for one minute and let it cool. Use boiled or bottled water for drinking, for brushing teeth, for ice, for washing produce and for making up formula. Dishwashing on a hot cycle is fine. Bathing is fine. Do not swallow it.",
+          "A notice is lifted only after two sets of samples, taken at least 16 hours apart, come back clear from the laboratory. That is why a notice for a two-hour repair lasts two days. The laboratory is in another county, it is closed on Sunday, and samples go over in a cooler in somebody's truck.",
+          "Notice of a notice goes out four ways, because none of them reaches everybody: door hangers on every affected address, a sign at each end of the affected street, the recorded message on 782-4145, and this page. There is no text message system. The Board looked at one in 2023 and the quote was $2,900 a year.",
+          "[b]Notices before 2018 are not here.[/b] They were on the Board's previous site, which was replaced in 2018, and they were not migrated. Paper copies from 2009 onward are in the office and may be read at the counter. Anything before 2009 belonged to the Gridfall Municipal Water Commission and is in the county clerk's records; see [url=synth://verity.county.gov/s/records-request]Public Records Request[/url].",
+          "A story published on 20 July 2025 reported that the July 2025 notice covered \"the city of Gridfall and surrounding communities including Ashkettle.\" It did not cover Ashkettle. Ashkettle has never been on this system. The Board asked for a correction on 21 July 2025 and did not get one, and the item is still up at [url=synth://now.verityledger.com/]now.verityledger.com[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Notice 2026-01 - Third Street at Depot - 62 connections",
+            "note": "Issued Wednesday 4 February 2026, 9:40 a.m. Six-inch cast iron main failed under the Third Street crossing during a cold snap; pressure in the affected loop fell to 9 psi. Repaired and charged the same day. Two sets of samples clear. Lifted Friday 6 February 2026, 12:15 p.m. This is the most recent notice on this system."
+          },
+          {
+            "name": "Notice 2025-03 - entire system - 1,826 accounts",
+            "note": "Issued Saturday 19 July 2025, 6:05 p.m. The Well 5 motor failed on the hottest evening of the year with the Coyne Flats standpipe already drawn down; pressure at the Bell reached 12 psi before Well 3 caught up. The motor is the original 1988 motor, rewound twice. Lifted Tuesday 22 July 2025, 10:30 a.m. Every sample in both sets was clear."
+          },
+          {
+            "name": "Notice 2025-02 - Coyne Flats and River Road - 141 connections",
+            "note": "Issued Thursday 8 May 2025, 7:20 a.m. Planned. The standpipe was drained to replace the altitude valve, which had been overflowing the tank into the ditch since March at an estimated 3,000 gallons a day. Lifted Saturday 10 May 2025, 4:00 p.m."
+          },
+          {
+            "name": "Notice 2025-01 - Quarry Road extension - 38 connections",
+            "note": "Issued Monday 3 March 2025, 1:15 p.m. A contractor's auger went through the four-inch main 180 feet east of the Quarry Road culvert. The locate had been requested and the locate was correct. Lifted Wednesday 5 March 2025, 11:00 a.m. The repair was billed to the contractor and was paid."
+          },
+          {
+            "name": "Notice 2024-02 - Fenn Avenue and the Bell hill - 301 connections",
+            "note": "Issued Sunday 8 September 2024, 4:35 p.m. A hydrant at Fenn and Third was sheared off at the barrel by a vehicle. Lifted Tuesday 10 September 2024, 9:50 a.m. This notice stayed posted on this page as though it were still in effect until 14 March 2025, when a customer telephoned to ask why. It was a page that nobody had a job of taking down."
+          },
+          {
+            "name": "Notice 2024-01 - Mill Street north of Third - 118 connections",
+            "note": "Issued Friday 23 February 2024, 8:00 a.m. Planned shutdown to replace two valves that had not closed since at least 2009 and possibly never. Lifted Monday 26 February 2024, 10:15 a.m."
+          },
+          {
+            "name": "Notice 2023-01 - entire system - 1,819 accounts",
+            "note": "Issued Wednesday 14 June 2023, 5:50 a.m. Kestrel Creek came up into the Well 3 well house after 2.1 inches of rain overnight. The well was shut in as a precaution; no positive sample was ever taken. Lifted Saturday 17 June 2023, 2:30 p.m. The well house floor was raised eighteen inches that autumn at a cost of $31,400."
+          },
+          {
+            "name": "Notice 2022-01 - Bracken Lane - 24 connections",
+            "note": "Issued Monday 31 January 2022, 6:40 a.m. A service split in frost at four feet; frost depth that winter reached 51 inches at the pump station. Lifted Thursday 3 February 2022."
+          },
+          {
+            "name": "Notice 2020-01 - Coyne Flats and Tessler - 141 connections",
+            "note": "Issued Thursday 5 November 2020, 2:05 p.m. Pump control failure at the standpipe; the tank ran down over about nine hours before the low-level alarm was noticed, the alarm having been wired to a telephone line disconnected in 2019 as a saving. Lifted Sunday 8 November 2020. The alarm now dials a cellular unit."
+          },
+          {
+            "name": "Notice 2019-01 - Mill Street and Tannery Flats - 209 connections",
+            "note": "Issued Tuesday 16 April 2019, 3:30 p.m. Main break in 1931 cast iron under the Mill Street bridge approach. Lifted Friday 19 April 2019, 12:00 noon. This is the fourth break on that run since 2014."
+          },
+          {
+            "name": "Notice 2018-01 - Route 62 extension - 31 connections",
+            "note": "Issued Tuesday 7 August 2018, 9:00 a.m. Planned shutdown for a tie-in at the east end of the extension. Lifted Friday 10 August 2018, 10:30 a.m. This is the oldest notice that survived the change of site."
+          }
+        ]
+      },
+      {
+        "id": "flushing",
+        "name": "Hydrant Flushing - Autumn 2026",
+        "blurb": "Zone by zone dates for 5 to 16 October, the streets in each zone, what the brown water is, and what to do about it. Spring flushing was 20 April to 1 May.",
+        "status": "online",
+        "lastUpdated": "2026-09-14",
+        "steps": [
+          "Flushing opens hydrants one at a time and runs the mains fast enough to scour sediment off the pipe wall. It is done twice a year on this system, in spring and autumn, and it is the only maintenance that reaches the whole distribution system.",
+          "[b]Week of Monday 5 October.[/b]\n\n[b]Zone 1[/b] - Mill Street north of Third, Fenn Avenue, Ward Street, Bell Hill Road, Third Street from Mill to the Armory.\n\n[b]Zone 2[/b] - Tannery Flats, Bracken Lane, Dunmore Street, Creekside, the two courts off Dunmore.",
+          "[b]Week of Monday 12 October.[/b]\n\n[b]Zone 3[/b] - Depot Street, Quarry Road east to the county line, the Route 62 extension, Kestrel Road as far as the district boundary.\n\n[b]Zone 4[/b] - Coyne Flats village, River Road, Tessler, the standpipe loop.",
+          "Weekdays only, 8:00 a.m. to 3:00 p.m. A crew of two works a zone in about three days, so the day your street is done is not fixed and cannot be. A truck parked at a hydrant with its beacon on and a lot of water in the gutter is the crew.",
+          "[b]Your water will run brown, orange or grey for one to six hours[/b] after the crew has been down your street. That is manganese and iron sediment, it is a secondary standard, it is not a health risk and the state does not require us to treat for it. It will permanently stain a white wash.",
+          "[b]Do not do laundry on the day your zone is flushed.[/b] If you have already started and the water turns, leave the load wet in the machine and rewash it when the water clears. Do not put it in the dryer. A rust remover made for laundry will take it out. Bleach will set it and it will never come out.",
+          "To clear your own line, run the cold tap at the lowest fixture in the house - a basement laundry tub or an outside spigot - for ten minutes. Do not run the hot tap; that pulls the sediment into the water heater, which then takes a week to clear and may need draining.",
+          "Flushing also flow-tests the 214 hydrants. Results go to the Gridfall Volunteer Fire Department, and for the seven hydrants on the Route 62 extension to [url=synth://ashkettlevfd.org/]the Ashkettle Volunteer Fire Department[/url], whose first-due area covers that stretch although the village of Ashkettle is on its own water system. Fourteen hydrants failed the spring test in April, eleven have been repaired, and three are still bagged: Ward Street at Third, the east end of the Route 62 extension, and the Coyne Flats grange. A bagged hydrant is out of service and the fire department knows it is. Parts for two of the three were ordered in May and the supplier's date has moved three times. Only the Board and the fire departments may open a hydrant, and about half the brown water complaints in a year come from somebody else opening one fast.",
+          "If your water has not cleared by the following morning, ring 782-4145. If it is still brown three days later it is probably your own galvanised service line and not the main, which is a different problem and a more expensive one. Of the 1,941 service lines on this system, 24 are confirmed lead, 388 galvanised, 339 confirmed not lead, and 1,190 are recorded as unknown, which means nobody has looked. The tap cards for 1911 to 1954 are handwritten, one card a property, and most of them give the size and the date and not the material. You can check your own in five minutes with a coin and a magnet, and the clerk will change the record if you ring in what you find."
+        ],
+        "forms": [
+          {
+            "name": "Autumn 2026 flushing schedule, zone map (1 page)",
+            "note": "PDF. The zone boundaries on this map are drawn on a base map dated 1998 and four streets built since then are not on it. They are flushed; they are just not drawn."
+          },
+          {
+            "name": "Spring 2026 flushing report (3 pages)",
+            "note": "20 April to 1 May 2026. 1.31 million gallons flushed, 14 hydrants failed, 2 valves found closed that should have been open, one of them closed since at least 2016 by the look of it."
+          },
+          {
+            "name": "Laundry staining - what takes it out (1 page)",
+            "note": "One page, from the operator, typed in 2012 and still correct. Names three products. Nobody is paid anything by anybody for this."
+          }
+        ]
+      },
+      {
+        "id": "ccr-2025",
+        "name": "Consumer Confidence Report - Calendar Year 2025",
+        "blurb": "The annual drinking water quality report. Source, what was detected and at what level, the one monitoring violation in August 2025, and why the water is hard and sometimes orange.",
+        "status": "online",
+        "lastUpdated": "2026-06-26",
+        "steps": [
+          "This report covers calendar year 2025 and was mailed with the July 2026 bill, which meets the 1 July delivery deadline by five days. Paper copies are at the counter. Este informe contiene informacion muy importante sobre su agua potable. The report has carried that sentence since 2004 followed by an instruction to ring extension 214, and extension 214 has not existed since 2016. Ring 782-4145 and ask for the clerk.",
+          "[b]Where the water comes from.[/b] Two wells in the well field north of Kestrel Creek off River Road. Well 3, drilled 1962, 310 feet, rated 420 gallons a minute. Well 5, drilled 1988, 285 feet, rated 505 gallons a minute. Both draw from the same sand and gravel aquifer. Well 4 was taken off line in 1996 for sand and has not been sealed. Wells 1 and 2 were sealed in 1962 and 1988.",
+          "[b]What is done to it.[/b] Sodium hypochlorite for disinfection and a polyphosphate sequestering agent to hold the iron and manganese in solution so that it does not drop out in your pipes. That is all. There is no filtration and no softening. This system does not add fluoride and never has.",
+          "[b]Detected in 2025.[/b] Nothing exceeded a maximum contaminant level.\n\n[list][*]Nitrate - 1.8 mg/L, range 1.2 to 1.8, MCL 10. From fertiliser and septic systems.[*]Total trihalomethanes - 41 ppb running annual average, range 18 to 56, MCL 80. A by-product of chlorination. The 56 was at the Coyne Flats standpipe in August, where the water sits longest.[*]Haloacetic acids (five) - 22 ppb, range 9 to 31, MCL 60.[*]Barium - 0.09 mg/L, MCL 2. Natural.[*]Combined radium 226/228 - 1.9 pCi/L, MCL 5. Natural to this aquifer.[*]Sodium - 34 mg/L. No MCL. If you are on a sodium-restricted diet, this figure is the one to take to your doctor.[*]Lead - 90th percentile 3.1 ppb, action level 15. Twenty sites, none above the action level. Sampled 2024 on the three-year schedule.[*]Copper - 90th percentile 0.21 mg/L, action level 1.3.[*]Total coliform - one positive routine sample in 2025, in August, at the standpipe. Both repeat samples were negative.[/list]",
+          "[b]Not regulated, and the reason for most of the telephone calls.[/b] Hardness 325 mg/L as calcium carbonate, which is 19 grains per gallon, which is very hard. Iron 0.18 mg/L. Manganese 0.06 to 0.11 mg/L against a secondary standard of 0.05. Hardness and manganese are aesthetic standards. They are why the kettle furs, why the dishwasher leaves a film and why the water goes orange after a main break. The Board is not required to treat for either and treating for either would mean a softening plant, which the 2025 study priced at $4.1 million.",
+          "[b]The 2025 violation.[/b] On Monday 4 August 2025 the routine coliform sample from the Coyne Flats standpipe reached the laboratory at 31.5 hours against a 30-hour hold time and was rejected. A replacement sample was not collected before the end of the month. The state recorded a monitoring and reporting violation. It is a violation of the requirement to sample, not of a drinking water standard, and it does not mean the water was unsafe; it means that for August 2025 this Board cannot prove what it was. Public notice was mailed to every customer on 2 September 2025. The sample courier schedule was changed in September 2025 and there has been no repeat.",
+          "If you are on a private well this report does not describe your water and nothing in it applies to you. The health department tests private wells free of charge in the autumn; see [url=synth://verityhealth.gov/s/well-water]Private Well Water Testing[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Consumer Confidence Report, calendar year 2025 (4 pages)",
+            "note": "The mailed version. Pages 3 and 4 are the detection table. The table is a picture of a table; the text in it cannot be selected or searched, which is the fault of the template and not of anybody who works here."
+          },
+          {
+            "name": "Consumer Confidence Report, calendar year 2024 (4 pages)",
+            "note": "For comparison. Trihalomethanes were 38 ppb. Manganese was 0.05 to 0.09. Nothing else moved."
+          },
+          {
+            "name": "Public notice of monitoring violation, August 2025 (1 page)",
+            "note": "Mailed 2 September 2025 to 1,826 accounts. Required wording, state template, no changes permitted. Cost $694 in postage, which is not in any budget line and came out of office supplies."
+          },
+          {
+            "name": "Lead and copper sampling results, 2024 round (3 pages)",
+            "note": "Twenty sites, chosen from the tier 1 list, which is short because the tier 1 list is houses with known lead service lines and this system has 24 of those. Three of the twenty sites are the same three houses that have been sampled since 2011 because the owners say yes."
+          },
+          {
+            "name": "Source Water Assessment, 2021 (18 pages)",
+            "note": "State-prepared. Rates the well field as highly susceptible on account of the shallow aquifer and the sand and gravel above it. Recommends a wellhead protection ordinance. Gridfall has not adopted one. Coyne Flats adopted one in 2022."
+          }
+        ]
+      },
+      {
+        "id": "agenda-2610",
+        "name": "Agenda - Regular Meeting, Wednesday 14 October 2026",
+        "blurb": "Posted 18 September 2026. Small hall at the Armory, 7:00 p.m. Includes the engineer's 2027 revenue review and the fourth deferral of the tower painting.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "Call to order and roll call.",
+          "Approval of the minutes of 9 September 2026.",
+          "Public comment. Three minutes a speaker, five speakers, at the start. Sign in at the door. You may speak on anything; the Board will not answer on anything that is not on the agenda, which is the rule and which people find out at the microphone.",
+          "Treasurer's report. Third quarter. Includes the quarterly comparison of billed revenue against the 2026 projection.",
+          "Superintendent's report. Autumn flushing, hydrant repairs, the Well 3 pitless adapter, and the status of the service line inventory.",
+          "Correspondence. (a) Letter from Brice-Hallam Engineering dated 28 August 2026, 2027 revenue review. (b) Letter from the state loan office dated 4 September 2026 acknowledging the 2026 audit. (c) Thirty-one items of customer correspondence regarding rates, received since January, summarised by the clerk in one page.",
+          "Unfinished business. (a) Trustee seat 5, vacant since 2 April 2026, no applications received. (b) Fenn Avenue tower recoating, deferred from the 2019, 2021 and 2024 capital plans, engineer's estimate now $340,000 against $210,000 in 2019.",
+          "New business. (a) Award of the 2027 laboratory services contract, two quotes received. (b) Resolution 2026-3, authorising the annual certification of unpaid balances to the tax roll. (c) Discussion of the 2027 budget and of whether any action on rates is required before 1 January 2027, which under Resolution 2025-7 section 4 it is not.",
+          "Adjournment.",
+          "[b]The agenda packet is 41 pages and is not posted.[/b] It is available at the counter for $0.25 a page or may be read there for nothing. The packet is where the engineer's letter, the revenue comparison and the tower estimate actually are. The agenda above says \"correspondence\"; the packet says what the correspondence says. This has been the arrangement since 2009 and the Board has never voted on it."
+        ],
+        "forms": [
+          {
+            "name": "Agenda, 14 October 2026 (1 page)",
+            "note": "Posted at the Armory door, at the county building and on this page on Friday 18 September 2026, which is twenty-six days ahead and unusually early. The statutory minimum is 48 hours."
+          },
+          {
+            "name": "Agenda packet, 14 October 2026 (41 pages)",
+            "note": "Counter only. Not scanned. The copier in this office is a 2011 machine that scans to a floppy-era format the county network no longer accepts, so packets are photocopied rather than scanned and have been since 2019."
+          },
+          {
+            "name": "Request to Place an Item on the Agenda (Form VVW-1A)",
+            "note": "One page, to the clerk, not less than ten days before the meeting. The president decides. Four have been submitted since 2024 and all four were placed."
+          }
+        ]
+      },
+      {
+        "id": "min-2609",
+        "name": "Draft Minutes - Wednesday 9 September 2026",
+        "blurb": "Not approved. The Board approves minutes at the following meeting, so these become official on 14 October 2026 and may change. Includes the first two quarters of revenue under the new rate schedule.",
+        "status": "online",
+        "lastUpdated": "2026-09-14",
+        "steps": [
+          "President Dreisbach called the meeting to order at 7:00 p.m. in the small hall at the Armory.",
+          "Present: Dreisbach, Steuck, Tobias, Moyer. Seat 5 vacant. Also present: Rupp, clerk; Trask, superintendent. Six members of the public signed in.",
+          "Minutes of 8 July 2026 approved, 4-0, on a motion by Tobias, seconded by Steuck. There was no meeting in August; the meeting of 12 August 2026 was cancelled for want of a quorum.",
+          "[b]Public comment.[/b] Two speakers. A. Prosser, Dunmore Street, asked when the $5.00 surcharge on the quarterly bill comes off. President Dreisbach said it does not come off. Ms Prosser said that when she asked the same question at the hearing in November she was told to look at the schedule, and that she had looked at the schedule, and that the schedule is where it says it does not come off. The president said that was correct. D. Halbach, Bracken Lane, asked about brown water on 26 August. Superintendent Trask said a hydrant had been opened by somebody who is not this Board and that he did not know who.",
+          "[b]Treasurer's report.[/b] Cash on hand $118,400. The clerk reported that billed revenue for the first two quarters under the schedule adopted 12 November 2025 is $16,100 below the projection in the rate study. Trustee Moyer asked why. The clerk said the study assumed 10,700 gallons a quarter for an average household and that actual average use is about 9,700, and that the 10,700 figure is from the 2016 study. Trustee Moyer asked whether the Board had been told that in November. The clerk said the figure is on page 14 of the study. Discussion held. No action taken.",
+          "[b]Superintendent's report.[/b] Autumn flushing to run 5 to 16 October. Three hydrants remain bagged from the spring test, at Ward and Third, at the east end of the Route 62 extension, and at the Coyne Flats grange. Parts for two of the three are on order and have been since May. Well 3 is drawing air at high demand and the pitless adapter is suspected; the superintendent recommended a camera survey at an estimated $2,800. Approved 4-0 on a motion by Steuck, seconded by Moyer.",
+          "[b]Correspondence.[/b] Letter from Brice-Hallam Engineering dated 28 August 2026 regarding 2027 revenue, referred to the October meeting. Twenty-nine items of customer correspondence regarding rates received since January, summarised by the clerk. The clerk reported that eleven of the twenty-nine ask why the surcharge did not expire and that she has answered all eleven with the same paragraph.",
+          "[b]Unfinished business.[/b] Trustee seat 5. No applications. The president asked the clerk to advertise once more. The clerk said she has advertised twice and that the advertisements cost $84.00 each. No action taken.",
+          "[b]New business.[/b] The certification of unpaid balances to the tax roll was set for the October meeting. The clerk reported 47 accounts at more than 60 days, totalling $9,310, which is fewer accounts and more money than the same date last year.",
+          "Adjourned 8:12 p.m. on a motion by Tobias.",
+          "[b]This page is a draft and is not approved.[/b] Approved minutes are the official record. The clerk's draft is published because a draft is a public record whether it is approved or not, and because the alternative is that nothing about this meeting is readable for five weeks. These become official on 14 October 2026 and may change before then."
+        ],
+        "forms": [
+          {
+            "name": "Draft minutes, 9 September 2026 (3 pages)",
+            "note": "Clerk's draft. Not approved. Approved minutes for this meeting will be posted after 14 October 2026 and will replace this page."
+          },
+          {
+            "name": "Treasurer's report, second quarter 2026 (2 pages)",
+            "note": "Billed, collected and outstanding by quarter, against the 2026 projection. This is the page the $16,100 comes off. It is two columns and one line of arithmetic."
+          },
+          {
+            "name": "Superintendent's report, September 2026 (2 pages)",
+            "note": "Gallons pumped by well by month, hydrant status, sample results, and a list of work orders closed. Fourteen work orders in August, nine of them leaks at the curb stop."
+          }
+        ]
+      },
+      {
+        "id": "min-2511",
+        "name": "Minutes - Wednesday 12 November 2025",
+        "blurb": "Approved 10 December 2025. The public hearing on the rate schedule, and the adoption of Resolution 2025-7 by a vote of 3-1 with one abstention.",
+        "status": "online",
+        "lastUpdated": "2025-12-11",
+        "steps": [
+          "President Dreisbach called the meeting to order at 7:00 p.m. in the small hall at the Armory.",
+          "Present: Dreisbach, Steuck, Tobias, Moyer, Hilkert. Also present: Rupp, clerk; Trask, superintendent. Three members of the public signed in.",
+          "Minutes of 8 October 2025 approved, 5-0.",
+          "[b]Public hearing on a revision to the schedule of rates, fees and charges.[/b] The president opened the hearing at 7:02 p.m. The clerk confirmed that notice was published on 22 October 2025 and that the affidavit of publication was on file.",
+          "Superintendent Trask summarised the proposal. He said the volumetric rate would go from $4.15 to $4.42 per thousand gallons, an increase of twenty-seven cents, which for an average household is about $2.90 a quarter. He said the remaining changes were in Attachment A.",
+          "One speaker. A. Prosser, Dunmore Street, asked whether the infrastructure surcharge would still come off the bill at the end of 2026 as the 2021 resolution said it would. Superintendent Trask referred the speaker to the schedule at Attachment A. The speaker asked no further question.",
+          "The president closed the hearing at 7:11 p.m.",
+          "[b]Resolution 2025-7, a resolution adopting a schedule of rates, fees and charges, effective with the billing period beginning 1 January 2026.[/b] Moved by Steuck, seconded by Tobias. Trustee Moyer said the north end mains should be replaced before the tower is recoated and that she would not vote for a schedule built around the tower. Trustee Hilkert said he had not read the attachment and would abstain. Roll call: Dreisbach aye, Steuck aye, Tobias aye, Moyer nay, Hilkert abstain. [b]Carried 3-1 with one abstention.[/b]",
+          "The clerk was directed to publish the adopted schedule and to include a notice with the January bill. Carried 5-0.",
+          "[b]Treasurer's report.[/b] Cash on hand $96,700. The clerk reported that the 2025 audit field work would begin in January.",
+          "[b]Superintendent's report.[/b] Two main breaks in October, both on 1931 cast iron in Tannery Flats. The superintendent said the run under the Mill Street bridge approach has now broken five times since 2014 and that he would like it in the 2026 capital plan. The president said the Board would take that up with the tower.",
+          "Adjourned 8:05 p.m.",
+          "[b]Clerk's note, added January 2026. Not part of the approved minutes.[/b] Resolution 2025-7 runs to six pages, of which four are Attachment A. Section 2 sets the volumetric rate at $4.42. Section 3 sets the quarterly readiness-to-serve charge at $34.00 for a 5/8 inch meter, up from $28.00. Section 4 provides that the volumetric rate increases by 5.5 percent on 1 January 2027 and again on 1 January 2028 without further action of the Board. Section 5 supersedes Resolution 2021-6 and sets the infrastructure surcharge at $5.00 a quarter with no expiry date. Sections 3, 4 and 5 were not read aloud and are not described in the motion. They are on the page. See [url=/s/rates]Schedule of Rates, Fees and Charges[/url] for the worked comparison."
+        ],
+        "forms": [
+          {
+            "name": "Minutes, 12 November 2025, approved 10 December 2025 (4 pages)",
+            "note": "The official record of this meeting. The description of what Resolution 2025-7 does, at the end of the page above, is not part of the approved minutes. It was added to this page by the clerk in January 2026 and the Board has not objected to it."
+          },
+          {
+            "name": "Resolution 2025-7 with Attachment A (6 pages)",
+            "note": "Adopted at this meeting. Attachment A is pages 3 to 6 and is the schedule. Sections 3, 4 and 5 are on page 2, between the recitals and the signature block, and take up eleven lines."
+          },
+          {
+            "name": "Notice of public hearing as published, 22 October 2025 (1 page)",
+            "note": "The published notice. In the printed table the readiness-to-serve column sits under the heading 'per 1,000 gallons'. Read as printed, the notice says the base charge is $34.00 per thousand gallons, which would be a bill of about $364 a quarter. Nobody who read it appears to have believed it."
+          },
+          {
+            "name": "Sign-in sheet and hearing record, 12 November 2025 (2 pages)",
+            "note": "Three names signed in. One spoke. The hearing lasted nine minutes. No written comment was received before the hearing and none was received after it until 17 December 2025."
+          },
+          {
+            "name": "Roll call sheet, Resolution 2025-7 (1 page)",
+            "note": "Dreisbach aye, Steuck aye, Tobias aye, Moyer nay, Hilkert abstain. The abstention is recorded with the reason the trustee gave, which is required by the Board's own rules and is not required by statute."
+          }
+        ]
+      },
+      {
+        "id": "min-2510",
+        "name": "Minutes - Wednesday 8 October 2025",
+        "blurb": "Approved 12 November 2025. The rate study was received and the public hearing was set. The minutes do not say what the revision would be, because the motion did not say.",
+        "status": "online",
+        "lastUpdated": "2025-11-13",
+        "steps": [
+          "President Dreisbach called the meeting to order at 7:00 p.m.",
+          "Present: Dreisbach, Steuck, Tobias, Moyer, Hilkert. Also present: Rupp, clerk; Trask, superintendent. One member of the public signed in.",
+          "Minutes of 10 September 2025 approved, 5-0.",
+          "Public comment. None.",
+          "[b]Unfinished business - rate and revenue study.[/b] The study prepared by Brice-Hallam Engineering was received. The engineer, R. Hallam, attended and presented three scenarios. Scenario A holds the rate structure and raises the volumetric rate alone, reaching coverage of 1.10 in 2029. Scenario B raises the volumetric rate and adds an annual escalator, reaching coverage in 2028. Scenario C raises the readiness-to-serve charge and makes the infrastructure surcharge permanent, reaching coverage in 2027. The engineer recommended B.",
+          "Trustee Tobias asked which scenario gets the Board to 1.10 fastest. The engineer said C. Trustee Moyer asked what each one does to a typical bill. The engineer said the comparison is at page 14 of the study. Discussion held.",
+          "[b]Motion by Tobias, seconded by Steuck: that the Board set a public hearing on a revision to the schedule of rates, fees and charges for 12 November 2025 at 7:00 p.m., notice to be published as required, and that the superintendent and the clerk prepare the revision.[/b] Carried 5-0.",
+          "[b]Treasurer's report.[/b] Cash on hand $101,200. The 2025 audit had been received; coverage 0.99 against a covenant of 1.10.",
+          "[b]Superintendent's report.[/b] Autumn flushing completed 26 September. The Well 5 motor, rewound in July, is holding. The superintendent said there is no second motor and that a replacement is fourteen to sixteen weeks.",
+          "[b]Correspondence.[/b] Letter from the state loan office dated 21 August 2025, taken up at the September meeting, no further action. Invoice from Brice-Hallam Engineering, $14,600, approved for payment 5-0.",
+          "Adjourned 8:20 p.m.",
+          "[b]Clerk's note, added January 2026. Not part of the approved minutes.[/b] These minutes do not record which scenario the revision would be built on, because the motion did not say and no trustee asked. What came back on 12 November was scenario B with the readiness-to-serve charge and the permanent surcharge from scenario C. That combination is not modelled anywhere in the study, and no comparison of it against a typical bill was prepared before the hearing."
+        ],
+        "forms": [
+          {
+            "name": "Minutes, 8 October 2025, approved 12 November 2025 (3 pages)",
+            "note": "The official record. Item 8 on the page above is not part of it and is marked as such."
+          },
+          {
+            "name": "Rate and Revenue Study, Brice-Hallam Engineering, October 2025 (61 pages)",
+            "note": "Three scenarios, a twenty-year capital schedule and a coverage projection. Page 14 is the bill comparison table, which compares scenarios A, B and C and does not compare the combination that was adopted, because that combination did not exist in October."
+          },
+          {
+            "name": "2025 audited financial statements (34 pages)",
+            "note": "Revenue $584,200. Operations and maintenance $481,700. Net revenue available for debt service $102,500 against debt service of $103,800. Coverage 0.99. The covenant is 1.10. The auditor's note on coverage is one sentence on page 22."
+          },
+          {
+            "name": "Letter, State Drinking Water Revolving Fund, Office of Loan Administration, 21 August 2025 (2 pages)",
+            "note": "Notes the coverage shortfall, requires corrective rate action within 180 days, and states that the loan is not in default and that no acceleration is contemplated. The second page is the schedule of remaining payments through 2041."
+          }
+        ]
+      },
+      {
+        "id": "min-2509",
+        "name": "Minutes - Wednesday 10 September 2025",
+        "blurb": "Approved 8 October 2025. The state loan office letter was read under correspondence and the Board directed the superintendent to prepare options. The minutes record the discussion as held.",
+        "status": "online",
+        "lastUpdated": "2025-10-09",
+        "steps": [
+          "President Dreisbach called the meeting to order at 7:00 p.m.",
+          "Present: Dreisbach, Steuck, Tobias, Hilkert. Trustee Moyer absent, excused. Also present: Rupp, clerk; Trask, superintendent. No members of the public signed in.",
+          "Minutes of 13 August 2025 approved, 4-0.",
+          "Public comment. None. No members of the public were present.",
+          "[b]Correspondence.[/b] (a) Letter from the State Drinking Water Revolving Fund, Office of Loan Administration, dated 21 August 2025, regarding the rate covenant on the 2011 loan. The clerk read the letter. The letter states that net revenue for the fiscal year ended 30 June 2025 was 0.99 times annual debt service against a covenant requiring 1.10, that the loan is not in default, and that the Board is required to take corrective rate action within 180 days. (b) Two customer letters regarding brown water on Dunmore Street, referred to the superintendent.",
+          "Discussion held on the letter at item 5(a). The superintendent was directed to prepare options for the October meeting in consultation with the engineer. No vote taken.",
+          "[b]Treasurer's report.[/b] Cash on hand $109,800.",
+          "[b]Superintendent's report.[/b] The Well 5 motor was rewound in July at a cost of $6,240. Autumn flushing to begin 22 September. The superintendent reported that the laboratory rejected the 4 August standpipe sample for hold time and that a public notice would be mailed. Trustee Tobias asked whether that was a violation. The superintendent said it was a monitoring violation and not a water quality violation. Discussion held.",
+          "[b]New business.[/b] None.",
+          "Adjourned 7:48 p.m.",
+          "[b]Clerk's note, added January 2026. Not part of the approved minutes.[/b] This is the meeting at which the rate increase started, and this page is the whole public record of it. Item 6 is twenty-one words. The letter at item 5(a) is on file and the superintendent's options memo, prepared for October, is in the October packet. Neither was posted. A reader of these minutes alone would not know that a rate increase had begun, and three people were in the room, all of whom work here. This paragraph was added by the clerk in January 2026 and is not part of the approved minutes."
+        ],
+        "forms": [
+          {
+            "name": "Minutes, 10 September 2025, approved 8 October 2025 (2 pages)",
+            "note": "The official record. Two pages. The paragraph at the end of the page above is not part of it."
+          },
+          {
+            "name": "Letter, State Drinking Water Revolving Fund, Office of Loan Administration, 21 August 2025 (2 pages)",
+            "note": "Read into the record at this meeting. Plain and unthreatening in tone. The operative sentence is the third one on page 1."
+          },
+          {
+            "name": "Superintendent's options memorandum, VVW-25-09, 29 September 2025 (7 pages)",
+            "note": "Prepared for the October meeting. Four options, each with a coverage projection and a typical bill. Option 4, which is the one nearest to what was adopted, shows a typical quarterly bill of $86.29. The figure $86.29 appears once, on page 6, in a table, and was not read aloud at any meeting."
+          },
+          {
+            "name": "2011 loan agreement, State Drinking Water Revolving Fund (28 pages)",
+            "note": "$2,340,000 at 2.0 percent over thirty years for the Fenn Avenue main and the Well 5 rebuild. Annual debt service $103,800. The rate covenant is section 6.03 and is four lines. Final payment 2041."
+          }
+        ]
+      },
+      {
+        "id": "minutes-archive",
+        "name": "Minutes and Agendas - Earlier Meetings",
+        "blurb": "What exists, where it is, and what it costs to get a copy. Minutes from 2009 to 2017 are on paper only. Anything before 2009 belongs to the predecessor commission.",
+        "status": "paper-only",
+        "lastUpdated": "2026-03-04",
+        "steps": [
+          "[b]2018 to date.[/b] On this site. Agendas are posted when they are issued and minutes when they are approved, which is a month behind by design. Drafts are posted in the week after the meeting.",
+          "[b]2009 to 2017.[/b] Paper only. Bound by year in the office. You may read them at the counter without an appointment and without saying why. Copies are $0.25 a page. They were on the Board's previous site until 2018 and they were not migrated, and the previous site's files were not kept.",
+          "[b]Before 2009.[/b] This Board did not exist. The system was run by the Gridfall Municipal Water Commission from 1911 and by the Coyne Flats Water Works from 1948, and their minutes are county clerk records. Ask the county; see [url=synth://verity.county.gov/s/records-request]Public Records Request[/url]. The commission's minutes for 1946 to 1958 were damaged in the 1994 flood when the clerk's basement took water, and exist as partial transcripts. That is recorded at [url=synth://wiki.gridfall.net/wiki/flood-1994]wiki.gridfall.net[/url].",
+          "[b]Agenda packets are not archived at all.[/b] The packet is assembled for each meeting, copied nine times, and the file copy is kept for three years under the retention schedule and then destroyed. If you want a packet from 2022 it is gone. The documents inside it are not gone; they are filed separately by kind, and the clerk can usually find a given one in about twenty minutes if you can name it.",
+          "A records request for the 2011 loan documents, the 2025 rate study, and the minutes and packets of the meetings of 10 September, 8 October and 12 November 2025 was received on 24 February 2026 from [url=synth://thequarry.news/]The Quarry[/url] and released on 3 March 2026, 214 pages, copying fee waived. All 214 pages were then published there. This Board takes no position on what is written about it and does not dispute the documents, which are its own.",
+          "A newsletter, [url=synth://brenners-notebook.email/]Brenner's Verity Notebook[/url], published a piece on 16 December 2025 setting out the effect of the new schedule on an average quarterly bill across the three years. The arithmetic in it is the arithmetic in Attachment A. This Board did not ask for a correction and has not asked for one since. The worked comparison now at [url=/s/rates]Schedule of Rates, Fees and Charges[/url] was put there in January 2026 because people had begun ringing to ask whether the article was right, and it is easier to publish the table than to read it out."
+        ],
+        "forms": [
+          {
+            "name": "Index of bound minutes, 2009 to 2017 (4 pages)",
+            "note": "By date, with the resolution numbers adopted at each meeting. Typed in 2019 by a summer employee and it is the single most useful document in this office."
+          },
+          {
+            "name": "Records retention schedule, as adopted 2014 (6 pages)",
+            "note": "Minutes permanent. Agenda packets three years. Work orders five years. Sample results ten years. Meter reading cards until superseded, which is why the 1911 to 1954 tap cards are still in the drawer."
+          },
+          {
+            "name": "Response to Records Request 2026-18 - index of released records (3 pages)",
+            "note": "214 pages released 3 March 2026, nothing withheld, fee waived. The index is what was sent with it. This office keeps the index and not a second copy of the release."
+          },
+          {
+            "name": "Records Request (Form VVW-14)",
+            "note": "One page. Five working days, $0.25 a page, fee waived on request more often than it is charged. This Board holds its own minutes, resolutions, rate studies, audits, sample results, work orders and meter records, and holds nothing about property, tax, building permits or septic permits. Ask for the agenda packet and the draft minutes, not only the approved minutes. The minutes say discussion held; the packet says what was discussed."
+          }
+        ]
+      },
+      {
+        "id": "system",
+        "name": "The Water System and Service Area",
+        "blurb": "Two wells, one tower, one standpipe and 31.4 miles of main serving Gridfall, Coyne Flats and Tessler. Ashkettle, New Carrow, Marchfield, Milbrook and Halsey's retail customers are not on this system.",
+        "status": "online",
+        "lastUpdated": "2026-08-13",
+        "steps": [
+          "[b]Who is on this system.[/b] The village of Gridfall, the village of Coyne Flats, the settlement of Tessler, and 310 out-of-village customers on Quarry Road, River Road and the Route 62 extension east to the district boundary. 1,941 metered connections, 1,826 active accounts, about 4,050 people.",
+          "[b]Who is not, and who to ring instead.[/b]\n\n[list][*][b]Ashkettle[/b] - the Ashkettle Water Board, its own wells, its own operator, its own rates. [url=synth://ashkettlewater.synth/]ashkettlewater.synth[/url][*][b]New Carrow[/b] - the New Carrow Water District, a separate taxing body[*][b]Marchfield[/b] - the Marchfield water department, village wells south of town[*][b]Milbrook and the three townships[/b] - private wells, almost entirely[*][b]Halsey[/b] - the village buys finished water from this Board wholesale and bills its own customers on its own rates. A Halsey bill is not our bill and we cannot look it up[/list]\n\nThis office takes about six calls a month that belong to one of the above, and about two a month that belong to the power company. Verity Valley Power & Light and the Verity Valley Water Board are unconnected, share nothing but the name of the valley, and neither can do anything about the other's outage. The power company is at [url=synth://vvpl.news/]vvpl.news[/url].",
+          "[b]Sources.[/b] Well 3, drilled 1962, 310 feet, 420 gallons a minute. Well 5, drilled 1988, 285 feet, 505 gallons a minute. Both in the well field north of Kestrel Creek off River Road, both in the same sand and gravel aquifer, both inside a fence that is checked weekly. Average day 412,000 gallons. Maximum day in 2025 was 688,000 gallons, on 18 July. Either well alone can carry an average day. Neither alone carries a maximum day with fire flow.",
+          "[b]Treatment.[/b] Sodium hypochlorite and a polyphosphate sequestering agent at the Fenn Avenue pump station. No filtration, no softening, no fluoride. The pump station has had a permanent standby generator since 2005. Before that it did not, and in June 2003 the system ran on a rented generator for four days while the substation was out.",
+          "[b]Storage.[/b] The Fenn Avenue tower, 150,000 gallons, built 1952, single pedestal, 138 feet to the top of the tank, lettering GRIDFALL, last recoated 1998. Locally called the Bell; there is an article about it at [url=synth://wiki.gridfall.net/wiki/water-tower]wiki.gridfall.net[/url] which is accurate as far as this Board can tell. Recoating was in the 2019, 2021 and 2024 capital plans and has not been done. The engineer's estimate was $210,000 in 2019 and is $340,000 now. The Coyne Flats standpipe holds 75,000 gallons and dates from 1974.",
+          "[b]Mains.[/b] 31.4 miles. 4.1 miles of it is cast iron laid between 1911 and 1931, most of that under Tannery Flats and the north end of Mill Street. That 4.1 miles produces about two thirds of the breaks. Replacing it was costed at $2.9 million in the 2025 study, which is more than four times the Board's annual revenue.",
+          "[b]After 3:30 p.m., at a weekend or on a Friday[/b], do not ring the office about a break or about water in a basement. The machine is cleared twice a day and that is not fast enough. Ring the sheriff's non-emergency line, which pages the operator on call; see [url=synth://veritysheriff.gov/s/dispatch]911, the Non-Emergency Line, and Who To Call[/url]. He drives from Coyne Flats and on a winter night the honest answer is thirty-five minutes. The Board owns the main and the service line as far as the curb stop; you own everything from the curb stop to the house, and that is the sentence that decides who pays for a repair.",
+          "[b]Staff.[/b] A superintendent, one operator, one operator in training and a clerk who works 24 hours a week. Four and a half people for 31.4 miles of pipe. The superintendent holds a Grade 3 licence and the system requires one, and when he retires the Board will have a problem it has not yet discussed at a meeting.",
+          "[b]Unaccounted-for water was 21 percent in 2025.[/b] That is water pumped and not billed. Some of it is flushing, some is fire flow and hydrant tests, some is the 43 meters that read zero for four straight quarters, and the rest is leaking into the ground somewhere in Tannery Flats. The state considers anything over 15 percent worth explaining. This Board has explained it the same way for six years."
+        ],
+        "forms": [
+          {
+            "name": "System map, 2019 revision (1 sheet, D size)",
+            "note": "Counter only, and it does not photocopy. Mains, valves, hydrants and the district boundary. Hand-annotated in red since 2019 and the annotations are the current record. There is no digital version; a quote for one in 2021 was $46,000."
+          },
+          {
+            "name": "Annual water system report to the state, 2025 (11 pages)",
+            "note": "Gallons pumped by well by month, unaccounted-for water, storage, staffing and licences. Filed 27 February 2026. The unaccounted-for water explanation is the same paragraph as 2024, 2023, 2022, 2021 and 2020, with the number changed."
+          },
+          {
+            "name": "Wholesale water agreement with the village of Halsey, 2018 (14 pages)",
+            "note": "Runs to 2028. $2.65 per 1,000 gallons through the Meacham Street master meter, with a minimum take of 9 million gallons a year. Halsey has exceeded the minimum every year. Renegotiation is due in 2027 and no one from either side has raised it."
+          },
+          {
+            "name": "Joint agreement creating the Verity Valley Water Board, 2008 (22 pages)",
+            "note": "Signed by Gridfall, Coyne Flats and the Tessler special district on 14 October 2008, effective 1 January 2009. Sets five trustees, a four-year term and a district election in April. Amended once, in 2013, to change the fiscal year end to 30 June."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About the Board, Trustees and Meetings",
+        "blurb": "Five trustees, one seat vacant, $150 a meeting. Second Wednesday of the month at 7:00 p.m. in the Armory. How to get an item on the agenda and how to be heard at one.",
+        "status": "online",
+        "lastUpdated": "2026-09-14",
+        "steps": [
+          "The Verity Valley Water Board was created on 1 January 2009 by joint agreement between the village of Gridfall, the village of Coyne Flats and the Tessler special district. It took over the Gridfall Municipal Water Commission, which dated from 1911, and the Coyne Flats Water Works, which dated from 1948. It is a separate taxing body, it sets its own rates, and no part of your county or village tax bill comes here.",
+          "[b]Trustees.[/b] Five seats, four-year terms, elected at large in the district at the election on the first Tuesday in April. $150 a meeting attended, twelve meetings a year, $175 for the president. No other pay and no benefits.\n\n[list][*]Arlen Dreisbach, president, term to 2028[*]Norma Steuck, vice president, term to 2027[*]Gerald Tobias, term to 2028[*]Pauline Moyer, term to 2030[*]Seat 5 - vacant since 2 April 2026[/list]\n\nDuane Hilkert held seat 5 from 2019 and resigned on 2 April 2026 on moving to New Carrow, which is outside the district. The seat has been advertised twice. Nobody has applied. With four trustees a quorum is three, and the meeting of 12 August 2026 was cancelled because only two could come.",
+          "[b]Staff.[/b] Lowell Trask, superintendent, Grade 3 operator licence, twenty-two years. Dwayne Sallis, operator, Grade 2. Nikki Ochs, operator in training. Charlene Rupp, clerk and treasurer, 24 hours a week. Four and a half people.",
+          "[b]Meetings.[/b] Second Wednesday of the month, 7:00 p.m., small hall at the Armory, 12 Depot Street, Gridfall. Open to the public. Not recorded, not streamed, not transcribed. The agenda is posted at the Armory door, at the county building and on this site, normally on the Friday before. The next meeting is Wednesday 14 October 2026; the agenda is at [url=/s/agenda-2610]Agenda - Regular Meeting, Wednesday 14 October 2026[/url].",
+          "[b]To speak at a meeting[/b], sign the sheet at the door. Three minutes, five speakers, at the start. You may speak on anything. The Board will not answer on anything that is not on the agenda, which is the rule, and which people find out at the microphone, and which the Board could change and has not.",
+          "[b]To get an item on the agenda[/b], write to the clerk not less than ten days before the meeting on Form VVW-1A. The president decides. Four requests have been made since 2024 and all four were placed on the agenda.",
+          "The office is two rooms at the Armory, 12 Depot Street, Gridfall. Monday to Thursday, 8:30 a.m. to 3:30 p.m., closed Friday. Telephone 782-4145. The clerk is here Monday to Thursday; the superintendent is here when he is not somewhere else, which is most of the time.",
+          "[i]From the clerk.[/i] I type the minutes and I maintain this site. If a number in the minutes does not match a number in the schedule, the schedule is right and the minutes are my mistake, and I would like to be told. The paragraphs on three of the minutes pages that explain what a resolution does are mine and are marked as mine. I added them because people were ringing to ask and I was saying the same thing eleven times. - C. Rupp"
+        ],
+        "forms": [
+          {
+            "name": "Joint agreement creating the Board, 2008, as amended 2013 (22 pages)",
+            "note": "The Board's constitution. Five trustees, four-year terms, April election, 30 June fiscal year end. Twelve pages of it are about how a member village would withdraw, which none has ever tried."
+          },
+          {
+            "name": "Application for Appointment to a Vacant Trustee Seat (Form VVW-3)",
+            "note": "One page. Name, address, whether you live in the district, and a space for anything you want to say. The space is optional. Zero applications received since 2 April 2026."
+          },
+          {
+            "name": "Schedule of meetings, 2026 (1 page)",
+            "note": "Second Wednesday, twelve dates. The 12 August meeting on this list did not take place. The list has not been reprinted."
+          },
+          {
+            "name": "Trustee and staff compensation, year to 30 June 2026 (1 page)",
+            "note": "Trustees $1,800, $1,800, $1,650 and $1,500, and $1,350 to the trustee who resigned in April. President's differential $300, which is $25 a meeting. Superintendent, operator, trainee and clerk salaries are on the second half of the page. The five trustees together cost $8,400, which is less than the rate study cost."
+          }
+        ]
+      }
+    ]
+  }
+}

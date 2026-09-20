@@ -1,0 +1,1497 @@
+{
+  "schema": 1,
+  "domain": "veritybirders.org",
+  "title": "Verity County Bird Club",
+  "type": "forum",
+  "era": "2026",
+  "skin": "softboard",
+  "description": "The message board of the Verity County Bird Club, founded 1961: dated sightings with counts, a Christmas count archive back to 2004, a swap board for optics, and a falcon at the quarry cut the records committee would not accept.",
+  "tags": [
+    "verity",
+    "birds",
+    "club",
+    "sightings",
+    "christmas-count",
+    "quarry-cut",
+    "locals"
+  ],
+  "links": [
+    "quarrycut.net",
+    "trailusers.verity.net",
+    "verity.county.gov",
+    "verity.wiki",
+    "now.verityledger.com",
+    "countyfacts.info",
+    "ask.verity.ai",
+    "classifieds.verity.net",
+    "gridline.social",
+    "dash.verity.net",
+    "thequarry.news"
+  ],
+  "data": {
+    "boardName": "Verity County Bird Club",
+    "moderators": [
+      "eberline_d"
+    ],
+    "categories": [
+      {
+        "id": "c-field",
+        "name": "In the Field",
+        "boards": [
+          {
+            "id": "b-sight",
+            "name": "Sightings",
+            "desc": "Dated reports with counts. One thread a month, started by whoever gets there first. Rarities go to the records committee as well as here.",
+            "topicCount": 268,
+            "postCount": 14119,
+            "lastPost": {
+              "author": "eberline_d",
+              "time": "Sep 19, 2026 8:02 pm"
+            }
+          },
+          {
+            "id": "b-id",
+            "name": "Identification Help",
+            "desc": "Photographs, descriptions and the arguments that follow. Write what you saw before you write what you think it was.",
+            "topicCount": 611,
+            "postCount": 5842,
+            "lastPost": {
+              "author": "j_quilty",
+              "time": "Sep 18, 2026 7:15 pm"
+            }
+          },
+          {
+            "id": "b-cbc",
+            "name": "Christmas Bird Count",
+            "desc": "The county count. Third Saturday of December, same fifteen-mile circle since 1978. Sectors, tallies and the results archive.",
+            "topicCount": 96,
+            "postCount": 1430,
+            "lastPost": {
+              "author": "o_dorn",
+              "time": "Sep 17, 2026 10:05 am"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-county",
+        "name": "The County",
+        "boards": [
+          {
+            "id": "b-places",
+            "name": "Sites & Access",
+            "desc": "Where to go, where to park, what is posted, and what the gate is doing this year.",
+            "topicCount": 184,
+            "postCount": 2077,
+            "lastPost": {
+              "author": "lasser_b",
+              "time": "Sep 15, 2026 9:02 am"
+            }
+          },
+          {
+            "id": "b-cons",
+            "name": "Habitat & Conservation",
+            "desc": "Mowing dates, hedgerows, the field outside the substation fence, and the letters we write about them.",
+            "topicCount": 121,
+            "postCount": 1566,
+            "lastPost": {
+              "author": "m_halvorsen",
+              "time": "Sep 17, 2026 8:40 am"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-club",
+        "name": "The Club",
+        "boards": [
+          {
+            "id": "b-notice",
+            "name": "Club Notices",
+            "desc": "Meetings, dues, field trips and the rules. Officers post, anybody may reply.",
+            "topicCount": 302,
+            "postCount": 1104,
+            "lastPost": {
+              "author": "o_dorn",
+              "time": "Sep 11, 2026 8:20 am"
+            }
+          },
+          {
+            "id": "b-swap",
+            "name": "Optics & Equipment",
+            "desc": "Binoculars, scopes, tripods, feeders. Members only, no dealers, collection preferred. Post a price.",
+            "topicCount": 213,
+            "postCount": 1911,
+            "lastPost": {
+              "author": "birdsatsix",
+              "time": "Sep 11, 2026 8:33 pm"
+            }
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "t-rules",
+        "boardId": "b-notice",
+        "title": "Board rules. Posted every January, unchanged since 2013",
+        "author": "eberline_d",
+        "time": "Jan 5, 2026 9:12 am",
+        "replies": 5,
+        "views": 9871,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Jan 5, 2026 9:12 am",
+            "body": "Fourteenth January I have posted this. Same text. I retype it rather than bump the old thread because people read a new thread and scroll past an old one.\n\n[b]Rules of the Verity County Bird Club board[/b]\n\n[list][*]1. Sign with your initials and your town. Signature, typed, or both. We did it in the newsletter from 1961.[*]2. A sighting is a date, a place, a species and a number. No number, say about, and give one. \"Several\" is not a count.[*]3. Write what you saw before what you think it was. Field marks first, name second.[*]4. If you are not sure, say so. Most broken rule here, and broken by the people who have been here longest.[*]5. No nest sites for raptors, owls or the Kestrel Road herons. Give them to the compiler.[*]6. Photographs are welcome. A photograph is not an identification.[*]7. Swap board is members only. No dealers, no shops, no affiliate links. Post a price or do not post.[*]8. Disagree with the bird, not the person. You may say a record is wrong. You may not say the observer is a fool, even if you have been right about him four times.[*]9. Birds, and getting to birds. Roads, gates, parking, weather, mowing, all fine. Everything else is not.[*]10. County records go to the club records committee. Three people, meets twice a year, not fast.[*]11. Do not edit a sighting after somebody has replied. Post a correction underneath. The record is the thread, not the post.[*]12. Your join date says March 2019 and is wrong. See the sticky below.[/list]\n\nRule 12 is the only line added since 2013 and I would like to take it out. I cannot, so it stays.\n\nThe board costs $9 a month. Dues are $12 a year.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "2",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Jan 5, 2026 1:40 pm",
+            "body": "Fourteenth time reading it. Rule 4 is still the one.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "3",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Jan 5, 2026 6:25 pm",
+            "body": "On rule 10, so it is in this thread as well as mine: the committee is Doug, Bill Lasser and me. March and September, upstairs at the Marchfield library, and we take whatever you hand us on paper. There is no form and there never was one. Somebody asks me for it twice a year and I always feel bad, because they have usually written it up beautifully.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "4",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Jan 6, 2026 8:05 am",
+            "body": "Rule 6 seems hard on photographs. Half the records in the archive are photographs. Not arguing, just saying.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "5",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Jan 6, 2026 8:51 am",
+            "body": "It is hard on photographs posted instead of a description, Owen, which is a different thing and is what you did in November.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-joindates",
+        "boardId": "b-notice",
+        "title": "Why your join date says March 2019",
+        "author": "eberline_d",
+        "time": "Mar 22, 2026 10:15 am",
+        "replies": 8,
+        "views": 2117,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Mar 22, 2026 10:15 am",
+            "body": "Short version, because it comes up every few months.\n\nThe board ran from March 2004 to February 2019 on hosting we rented from a firm in Pell Creek. They gave thirty days' notice by post, to the treasurer's old address, and we found out eleven days before the machine went off.\n\nI exported what the old software would export: topics, posts, authors, timestamps. Not registration dates. So in March 2019 every account was created in March 2019, including the ones fifteen years old.\n\n[list][*]Post counts came across and are right.[*]Timestamps are right apart from six weeks in 2011 that are an hour out, which was a daylight saving setting on the old box.[*]Join dates are all March 2019 and all wrong, except for two people who did join in March 2019.[*]Private messages did not come across. There were 40,000 and they are gone.[/list]\n\nThe old address was [url=synth://pellcreek-hosting.synth/]pellcreek-hosting.synth[/url] and has not resolved since.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "2",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Mar 22, 2026 11:02 am",
+            "body": "For the record, since the software will not say it: I registered on 9 March 2004, in the board's second week, and my first post was 22 cedar waxwings on a crabapple on Dunmore Street. I have posted every month since, including the month I was in hospital, which I am not proud of.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "3",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Mar 22, 2026 3:36 pm",
+            "body": "March 2004 here as well. Eleventh member, which I only know because Doug posted the member count every Sunday and I was in the middle of one.\n\nWhat I miss is not the join date. The old board put a small green leaf on your name for every year you had been on it, and after fifteen years mine was a row of fifteen leaves, and it looked ridiculous, and I liked it.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "4",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Mar 22, 2026 7:44 pm",
+            "body": "I am one of the two who really did join in March 2019. I have spent three years assuming everybody else was new too and wondering why they all knew each other.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "5",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Mar 23, 2026 9:20 am",
+            "body": "Gwen, half of us were on the same eleven field trips a year for twenty years. It is not that we are clever. There is nowhere else to go on a Saturday in February.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "6",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Mar 24, 2026 8:40 am",
+            "body": "I asked the software people twice whether join dates can be edited in bulk. The first answer was no. The second was a link to the first.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-dues",
+        "boardId": "b-notice",
+        "title": "Dues for 2027 stay at $12. Where the money goes",
+        "author": "eberline_d",
+        "time": "Sep 9, 2026 7:30 pm",
+        "replies": 6,
+        "views": 341,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 9, 2026 7:30 pm",
+            "body": "Agreed at the meeting last night. Eleven present, which is good for September. Dues stay at $12, as they have since 2011. In: $888 from 74 members, $61 from the plant sale.\n\nOut:\n\n[list][*]Board hosting $9 a month, $108.[*]Newsletter printing, 40 copies a quarter at the copy shop on Third Street, $31 a time, $124.[*]Postage for those 40, $76.[*]Meeting room, nothing. The library has not charged us since 1974.[*]Christmas count, nothing since 2022, when the circle fee was dropped.[*]Field trip insurance, $310. Largest single line and the one nobody asks about.[/list]\n\nBalance carried $1,240 and change. The insurance was $180 in 2019, and that is the thing to watch.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "2",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 9, 2026 8:55 pm",
+            "body": "Forty printed copies still? I would have guessed twelve.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "3",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 9, 2026 9:12 pm",
+            "body": "Forty. Three go to libraries, one goes to a man in Halsey who has never come to a meeting and has paid every year since 1988, and the rest go to people who would take it by email if I asked them, and who have not been asked, because they are the ones who read it.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "4",
+            "author": "e_vandusen",
+            "authorTitle": "Member",
+            "authorPosts": 2871,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "vandusen",
+            "time": "Sep 10, 2026 7:41 am",
+            "body": "Put me back on paper. I have been on email since 2020 and I have read two issues.",
+            "signature": "E.V., Milbrook"
+          },
+          {
+            "id": "5",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Sep 11, 2026 8:20 am",
+            "body": "Forty one, and I will do the folding. I did the folding for nine years and then stopped for no reason I can remember.",
+            "signature": "O.D., Coyne Flats"
+          }
+        ]
+      },
+      {
+        "id": "t-sight-sep",
+        "boardId": "b-sight",
+        "title": "Sightings -- September 2026",
+        "author": "birdsatsix",
+        "time": "Sep 1, 2026 6:40 am",
+        "replies": 61,
+        "views": 2388,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Sep 1, 2026 6:40 am",
+            "body": "September thread. Date, place, species, number, initials and town.\n\nDunmore Street, Milbrook, 1st, 06:15 to 07:00. Overcast, light north wind, 14 degrees.\n\n[list][*]Ruby-throated hummingbird 2[*]Red-eyed vireo 4[*]American redstart 6[*]Tennessee warbler 3[*]Chestnut-sided warbler 1[*]Black-throated green warbler 2[*]Swainson's thrush 1, heard only[*]Rose-breasted grosbeak 1, immature male[/list]\n\nFirst decent morning since 24 August. The redstarts were all in one silver maple and all in it for about four minutes.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "2",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 3, 2026 8:12 pm",
+            "body": "New Carrow ponds, Thursday 3rd, 16:40 to 18:10. Water very low, forty feet of mud on the east side of the north pond, and that is where everything was.\n\n[list][*]Solitary sandpiper 3[*]Least sandpiper 11[*]Pectoral sandpiper 2[*]Killdeer 24[*]Green heron 1[*]Wood duck 31[*]Blue-winged teal 14[/list]\n\nThe pectorals stayed the whole time. I have not had two on the same day here since 2018.\n\nThe gate on the service track is chained again. You can walk round the south end as always, but somebody has put a strand of wire across the gap this year and I tore my coat on it.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "3",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 6, 2026 4:05 pm",
+            "body": "Blue jays. Sunday 6th, from my back step in Halsey, 07:30 to 09:00, facing south.\n\n212, in 21 flocks, smallest 3 and largest 34. That is individuals crossing the line between the telephone pole and the church tower, not an estimate.\n\nSame ninety minutes: sharp-shinned hawk 2, broad-winged hawk 1 low, chimney swift 6, common nighthawk 1 at 08:52, which felt late in the morning.\n\n[img:photo:jays-over-halsey]",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "4",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Sep 8, 2026 7:26 pm",
+            "body": "Kestrel Road herons, Tuesday 8th, evening. 9 great blue, 1 great egret. Third year running for the egret, always the same corner of the same field, which I have stopped finding interesting and have not stopped writing down.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "5",
+            "author": "vcbc_alerts",
+            "authorTitle": "Automated relay",
+            "authorPosts": 4402,
+            "authorJoined": "Jun 2020",
+            "avatarSeed": "relay",
+            "time": "Sep 9, 2026 6:00 am",
+            "body": "VCBC RARE BIRD ALERT -- {{alert_date}}\n\n{{alert_species}} at {{alert_location}}, {{observer_initials}}, {{observer_town}}. Details: {{alert_notes}}\n\nReply in thread {{alert_thread_url}}.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 9, 2026 8:10 am",
+            "body": "The relay has posted brackets since June 2024, when the sightings format changed. I have stopped deleting it: deleting is forty seconds a month, fixing is an afternoon with a script I did not write, and I know which of those I am going to do. It is neither.\n\nThe last alert it sent with a bird in it was a northern shrike, 3 January 2024, Kestrel Road, and the shrike was real.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "7",
+            "author": "e_vandusen",
+            "authorTitle": "Member",
+            "authorPosts": 2871,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "vandusen",
+            "time": "Sep 10, 2026 9:48 am",
+            "body": "Last hummingbird of the year at my feeders, Milbrook, Wednesday 9th, 17:20.\n\nLast dates at this feeder: 2021, 22 Sept. 2022, 19 Sept. 2023, 27 Sept. 2024, 14 Sept. 2025, 20 Sept. So the 9th is early, and the feeder stays up to the end of the month anyway, because that is what you do.\n\nI have written this date down since 1996 and it is the only thing I have ever kept properly.",
+            "signature": "E.V., Milbrook"
+          },
+          {
+            "id": "8",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 12, 2026 6:30 pm",
+            "body": "The cut on 62, Saturday 12th, 07:10 to 09:40. Parked at the pull-off, walked the shoulder 300 yards east and back, then sat in the ditch out of the wind.\n\n[list][*]Tennessee 7[*]Nashville 2[*]Magnolia 4[*]Cape May 1[*]Black-throated green 5[*]Blackburnian 1[*]Bay-breasted 2[*]American redstart 9[/list]\n\nAlso red-eyed vireo 6, Philadelphia vireo 1, Swainson's thrush 4, veery 1, scarlet tanager 2, both immature.\n\nThe Cape May was in the dead elm at the east end and stayed eleven minutes, which is ten and a half more than I usually get. Three cars in two and a half hours, two of which slowed down to look at me.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "9",
+            "author": "SpeciesWatch_AI",
+            "authorTitle": "Bot",
+            "authorPosts": 19338,
+            "authorJoined": "Nov 2024",
+            "avatarSeed": "specieswatch",
+            "time": "Sep 13, 2026 6:02 am",
+            "body": "Good morning. This thread has seen strong engagement from the birding community in Verity County this month.\n\nMembers have reported a variety of species, and seasonal migration is generally considered to be underway across the region. Some observers note numbers are higher than in previous years, while other observers note numbers are lower. Both observations are consistent with normal seasonal variation.\n\nThe Verity County area supports over 300 bird species, according to regional coverage of the county's natural attractions. Readers may wish to consult [url=synth://countyfacts.info/post/what-is-verity-county-known-for]this overview of what the county is known for[/url].\n\nWhat have you spotted this week? Reply below and let the community know.",
+            "signature": ""
+          },
+          {
+            "id": "10",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Sep 14, 2026 12:04 pm",
+            "body": "Monday 14th, the pull-off at the cut, 08:35. One falcon east along the face, low. I am not putting a name on it here. Description and two poor photographs in Identification Help: [url=/topic/t-merlin]falcon over the quarry cut pull-off[/url].\n\nAlso an American kestrel on the wire at the pull-off at the same time, which is the thing that makes me want to be careful.",
+            "signature": "J.Q., Ashkettle"
+          },
+          {
+            "id": "11",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Sep 17, 2026 7:15 pm",
+            "body": "Dunmore Street, Thursday 17th, 06:20 to 07:10. Cold, 6 degrees, clear.\n\n[list][*]White-throated sparrow 14, first of the autumn[*]Dark-eyed junco 2, also first[*]Yellow-rumped warbler 22[*]Ruby-crowned kinglet 8[*]Hermit thrush 1[/list]\n\nThat is the week it turns over. Redstarts gone, juncos in, four days every year, and I still never see the day it happens on.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "12",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 19, 2026 8:02 pm",
+            "body": "Removed four posts from this thread overnight, all one account registered Thursday, all the same sunglasses. Account gone. If a reply of yours went with them, that is me, and I am sorry.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-sight-aug",
+        "boardId": "b-sight",
+        "title": "Sightings -- August 2026",
+        "author": "e_vandusen",
+        "time": "Aug 1, 2026 7:02 am",
+        "replies": 48,
+        "views": 1904,
+        "sticky": false,
+        "locked": true,
+        "posts": [
+          {
+            "id": "1",
+            "author": "e_vandusen",
+            "authorTitle": "Member",
+            "authorPosts": 2871,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "vandusen",
+            "time": "Aug 1, 2026 7:02 am",
+            "body": "August thread. Quiet month, hot, everybody is somewhere else, so I will start it and then not post in it much.\n\nMilbrook, 1st, garden: house finch 9, chipping sparrow 6, mourning dove 11, ruby-throated hummingbird 4 at once on two feeders, which is as many as I get.",
+            "signature": "E.V., Milbrook"
+          },
+          {
+            "id": "2",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Aug 22, 2026 5:50 pm",
+            "body": "New Carrow ponds, Saturday 22nd. Least sandpiper 7, solitary sandpiper 1, lesser yellowlegs 2, semipalmated plover 1.\n\nWater down another eight inches since July. If it holds into September the mud will be the best since 2016, which is the only good thing I have to say about a dry summer.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "3",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Aug 30, 2026 3:18 pm",
+            "body": "Halsey, Sunday 30th. 41 blue jays south in an hour, and my first two yellow-rumped warblers in the hedge at the end of the lane. September tomorrow. Somebody start the thread, I am at work.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "4",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 5, 2026 7:44 am",
+            "body": "Locked, as usual, a few days into the new month. Nothing wrong with it, it is just easier to find a month afterwards if nobody is still adding to it.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-merlin",
+        "boardId": "b-id",
+        "title": "Falcon over the quarry cut pull-off, Monday 14 September -- merlin or kestrel",
+        "author": "j_quilty",
+        "time": "Sep 14, 2026 11:58 am",
+        "replies": 44,
+        "views": 3110,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Sep 14, 2026 11:58 am",
+            "body": "Rule 3, so: what I saw, then what I think.\n\nMonday 14 September, 08:35, the pull-off on the north side of 62 at the top of the grade east of Ashkettle. Clear, wind west about 10, sun behind me and slightly right.\n\nA falcon came along the rock face from the west, below the top of the cut, so I was looking down on it at maybe 30 feet. East past me and out of sight over the trees in about four seconds. I did not get it in the binoculars until it was level with me.\n\n[list][*]Dark above. Slate or dark brown-grey. No rufous anywhere on back or tail.[*]Underparts heavily streaked, thick dark streaks right down onto the belly.[*]Tail looked banded, pale and dark. I will not swear to the number of bands and I am not going to invent one.[*]Face plain. No strong moustache. Certainly not two dark marks.[*]Flight direct and hard, shallow stiff beats. Never rose, hovered or checked.[*]Wings broad where they met the body, sharp point.[/list]\n\nWhat I think: merlin.\n\nWhy I am uneasy: there was an American kestrel on the wire at the pull-off when I arrived and it was still there when I left. I had a kestrel in front of me the whole time, and that is exactly the situation where somebody talks themselves into two birds.\n\nTwo photographs, both bad. The first is the bird against rock, the second against sky with a county right-of-way marker in the bottom of the frame.\n\n[img:photo:falcon-cut-one]\n\n[img:photo:falcon-cut-two]",
+            "signature": "J.Q., Ashkettle"
+          },
+          {
+            "id": "2",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Sep 14, 2026 1:22 pm",
+            "body": "Kestrel.\n\nThere is a kestrel on that wire three days out of five and has been for years. Dark above means nothing in that light, and everything looks slate when it is between you and a limestone face at half past eight.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "3",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 14, 2026 6:47 pm",
+            "body": "Janet, can you get me a larger crop of the tail in the second one? I count three pale bands and a pale tip and I know I am counting pixels.\n\nWhat I want is underwing. On a merlin the coverts are dark and messy and the flight feathers checkered; on a kestrel the whole underwing is paler and more even. Any of the underside of the wing is worth more than the back.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "4",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Sep 14, 2026 8:03 pm",
+            "body": "We have had this argument in 2007, 2011, 2016 and 2021, and I have read all four, because I have been on this board since March 2004 and I do not skip threads. Two of the four were merlins, one was a kestrel, and one is still in the archive with eleven replies and no conclusion, which is where most of them end up.\n\nThe useful thing from 2011, which Margit worked out and nobody has repeated since: on a bird going away hard and low, what you can judge from a bad photograph is the wing base. A kestrel's wing is narrow where it leaves the body and the whole wing looks bendy. A merlin's is broad at the base with a short hand. Janet described exactly that, and described it before she named the bird, which is the right order.\n\nI am not voting. I was in Milbrook.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "5",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 15, 2026 9:05 am",
+            "body": "I went out to the pull-off yesterday evening with a tape.\n\nThe post in the bottom of the second photograph is a county right-of-way marker. They stand 3 feet 6 inches above grade along that stretch; I measured three and got 3 ft 6, 3 ft 5 and 3 ft 7 where the ground has washed. On that scale the bird is between 10 and 13 inches long. A merlin is 10 to 12. A kestrel is 9 to 12. So it rules out nothing at all, and I am posting it so nobody else spends an evening on it.\n\nThe streaking in that photograph is heavy and blotchy down to the vent and I have never seen a kestrel look like that. That is an impression, not evidence.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "6",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Sep 15, 2026 12:40 pm",
+            "body": "Two corrections to my own post, here rather than edited, per rule 11.\n\nThe time. I said 08:35. The camera says 08:50 and the camera is fifteen minutes fast and has been since I changed the battery in February. So 08:35 stands, but only because I already knew about the camera. If you are working from file times, take a quarter of an hour off.\n\nAnd there is a third photograph. I did not post it because it is worse than the other two. It is the bird going away and it has about a third of the underwing in it. Gwen, this is for you, and I apologise for the state of it.\n\n[img:photo:falcon-cut-three]",
+            "signature": "J.Q., Ashkettle"
+          },
+          {
+            "id": "7",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 15, 2026 9:30 pm",
+            "body": "That is the best of the three and it is still not enough.\n\nThe underwing coverts are dark, darker than the flight feathers, and there is a suggestion of checkering. If that is a kestrel it is one photographed in a way I have not managed in four years of trying.\n\nI think it is a merlin. I would not write it down as one on that photograph.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "8",
+            "author": "SpeciesWatch_AI",
+            "authorTitle": "Bot",
+            "authorPosts": 19338,
+            "authorJoined": "Nov 2024",
+            "avatarSeed": "specieswatch",
+            "time": "Sep 16, 2026 6:03 am",
+            "body": "This is an interesting discussion about a falcon sighting in Verity County.\n\nBoth the merlin and the American kestrel are small falcons, and local birders report that both species can be observed in the region. Identification of small falcons can be challenging, and experts recommend considering multiple field marks.\n\nThe quarry cut on County Route 62 is one of the area's best known destinations and attracts visitors with a range of interests, including local radio enthusiasts.\n\nHave you seen a falcon in your area? Share your sighting in the comments below.",
+            "signature": ""
+          },
+          {
+            "id": "9",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 16, 2026 7:55 am",
+            "body": "Not the thread for that, and not really a thread for anything.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "10",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 16, 2026 12:50 pm",
+            "body": "Small point of geography, since the bot has reminded me and since it goes wrong here twice a year.\n\nThe cut and the quarry are two different holes. The cut is where 62 goes through the ridge, it is county right of way, and you can stand in it, which is what Janet was doing. The quarry is six hundred feet north, behind the trees, private, posted, full of water. Ray Sabo has had it written down plainly since 2006: [url=synth://quarrycut.net/cut]the cut, bed by bed[/url].\n\nJanet's bird was over the cut. If it had been over the quarry none of us could legally have gone to look, and every couple of years somebody does anyway.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "11",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 18, 2026 6:20 pm",
+            "body": "Janet handed me the description and the three photographs on paper on Wednesday and the committee met that evening. Doug, Bill and me, an hour and ten minutes, four records, and this took forty of it.\n\n[b]Merlin, 14 September 2026, Route 62 road cut east of Ashkettle, J.Q. Not proven.[/b]\n\nThe wording matters. Not proven is not not believed. The description is one of the better ones we have had: right order, seen separated from concluded, and it volunteers the kestrel on the wire, which somebody trying to talk us into a bird would not do. The photographs do not support it. Two are unusable and the third shows a dark underwing on a bird whose size we cannot fix.\n\nWe have accepted merlins on description alone, in 2011 and 2016. In both the observer had the bird over a minute and had a second observer. Four seconds and one pair of eyes is not that.\n\nFor what it is worth, and it is worth nothing for the record: I think Janet saw a merlin. The committee is not for what I think.\n\nIt goes in the annual report as not proven with the description printed in full, which is what that category is for.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "12",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Sep 18, 2026 7:15 pm",
+            "body": "Still say kestrel.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "13",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Sep 18, 2026 7:15 pm",
+            "body": "That is the right answer and I would have been uncomfortable with any other one.\n\nFour mornings out there since. The kestrel is on the wire every time. Yesterday it hovered over the ditch about eight seconds, dropped, missed, went back to the same place, and I stood and watched it and thought, well, that is what I did not see on Monday.\n\nThat is not proof of anything either. I know.",
+            "signature": "J.Q., Ashkettle"
+          }
+        ]
+      },
+      {
+        "id": "t-aiguide",
+        "boardId": "b-id",
+        "title": "Please stop linking the \"Verity County Bird Guide\" page",
+        "author": "m_halvorsen",
+        "time": "May 19, 2026 8:44 pm",
+        "replies": 33,
+        "views": 2740,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "May 19, 2026 8:44 pm",
+            "body": "Three people have sent me this in a fortnight and two were not being funny, so it is worth doing once properly.\n\nIt is a page called the Verity County Bird Guide. I am not linking it. 214 species accounts, put up some time in the last year, and it exists to sell binoculars.\n\n[list][*]It lists Gambel's quail as an uncommon resident of open scrub here. Gambel's quail lives in the desert southwest. There is no record within nine hundred miles and there is not going to be.[*]The range map on the barred owl account is the range map for the barred antshrike, which lives in Central America and is not an owl.[*]Twenty-six accounts have the same first paragraph with the species name swapped.[*]The horned lark account says the species is best seen at the substation field, which has been undisturbed since the 2004 fire. The fire was 2003. The field is mown twice a year by a contractor. I have complained about that mowing in here more than once, so both halves of that sentence are wrong and one of them is wrong because of me.[*]Every account has a buy link.[/list]\n\nIt is not malicious. Nobody decided to put a desert quail in Verity County. It is cheaper to generate 214 accounts than check one, and this is what that costs.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "2",
+            "author": "n_tibbetts",
+            "authorTitle": "Member",
+            "authorPosts": 96,
+            "authorJoined": "Feb 2024",
+            "avatarSeed": "tibbetts",
+            "time": "May 20, 2026 8:15 am",
+            "body": "I asked the county assistant about it, half as a joke. Pasting what it gave me:\n\n[quote=VerityAssist]The Verity County Bird Guide is a comprehensive local resource covering more than two hundred species found in Verity County. It is maintained by local birding enthusiasts and is frequently cited by regional nature organisations.[/quote]\n\nFrequently cited by regional nature organisations. It is cited by one page, [url=synth://countyfacts.info/post/what-is-verity-county-known-for]this one[/url], which also has a buy link and which I would bet a dollar was written by the same thing.\n\nThe assistant is at [url=synth://ask.verity.ai/chat]ask.verity.ai[/url] if anybody wants to try it on something they already know, which is the only safe way to use it.",
+            "signature": "N.T., Marchfield"
+          },
+          {
+            "id": "3",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "May 20, 2026 11:40 am",
+            "body": "I used that guide in March to work out a sparrow and it was right.\n\nI am not defending the quail. I am saying I got a swamp sparrow out of it and I would not have without it.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "4",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "May 20, 2026 6:55 pm",
+            "body": "That is the problem, Owen, and I am not being sharp with you. It is right about the swamp sparrow and right about most things, because most things are easy and it copied them from somewhere that was right. Then it is confidently wrong about the one in forty that matters, in the same voice.\n\nA book wrong about one account in forty is a bad book. A book wrong about one account in forty that has no author and cannot be written to is not a book.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "5",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "May 21, 2026 7:20 am",
+            "body": "I am not banning the link. Rule 9 is about staying on birds and it is on birds, technically.\n\nWhat I will do is what we did with the guide the club sold in 1998 that had the warbler plate printed twice: a note in the newsletter, say which pages are wrong, let people use it with their eyes open. Margit, will you write it? Four hundred words.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "6",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "May 21, 2026 8:02 am",
+            "body": "I will. It will be six hundred and you will cut it.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "7",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Jun 14, 2026 4:12 pm",
+            "body": "Following up, because it has got worse. Somebody scanned the newsletter and put it on [url=synth://gridline.social/]gridline.social[/url], including Margit's note, and the top reply is a summary of the note saying the club recommends the guide. The summary has more points than the scan.",
+            "signature": "G.S., Halsey"
+          }
+        ]
+      },
+      {
+        "id": "t-cbc-archive",
+        "boardId": "b-cbc",
+        "title": "Christmas Bird Count -- results 2004 to 2025",
+        "author": "m_halvorsen",
+        "time": "Feb 2, 2026 8:30 pm",
+        "replies": 9,
+        "views": 6204,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Feb 2, 2026 8:30 pm",
+            "body": "The count archive, kept here because the board is the only place all of it is in one piece.\n\nThe circle is fifteen miles across, centred on the Cutler Creek bridge on Route 62, and has been the same circle since 1978. Six sectors, count day the third Saturday in December, held every year since 1978 except 2020. These are the years the board covers. 1978 to 2003 exists on paper only.\n\n[list][*]2004, 18 Dec. Obs 31, party-hours 54.0, species 71, individuals 12,004.[*]2005, 17 Dec. Obs 29, party-hours 51.5, species 68, individuals 9,880.[*]2006, 16 Dec. Obs 33, party-hours 58.0, species 74, individuals 14,210. Horned lark 640, sector 2, still the high count.[*]2007, 15 Dec. Obs 28, party-hours 49.0, species 69, individuals 8,715.[*]2008, 20 Dec. Obs 26, party-hours 44.5, species 66, individuals 7,902.[*]2009, 19 Dec. Obs 14, party-hours 21.0, species 52, individuals 3,118. Ice; sectors 4, 5 and 6 not run.[*]2010, 18 Dec. Obs 27, party-hours 47.0, species 70, individuals 10,455.[*]2011, 17 Dec. Obs 30, party-hours 52.5, species 73, individuals 11,066. Northern shrike, first on a county count.[*]2012, 15 Dec. Obs 25, party-hours 43.0, species 67, individuals 9,240.[*]2013, 21 Dec. Obs 22, party-hours 38.5, species 61, individuals 6,504. Rain all day, 1.4 inches.[*]2014, 20 Dec. Obs 26, party-hours 45.0, species 69, individuals 10,012.[*]2015, 19 Dec. Obs 31, party-hours 56.0, species 78, individuals 15,908. 2,700 snow geese over sector 3.[*]2016, 17 Dec. Obs 28, party-hours 50.0, species 72, individuals 11,377.[*]2017, 16 Dec. Obs 24, party-hours 41.0, species 70, individuals 9,606.[*]2018, 15 Dec. Obs 23, party-hours 39.5, species 68, individuals 8,844.[*]2019, 21 Dec. Obs 21, party-hours 36.0, species 66, individuals 8,115.[*]2020 -- not held.[*]2021, 18 Dec. Obs 19, party-hours 33.0, species 64, individuals 7,230.[*]2022, 17 Dec. Obs 18, party-hours 31.5, species 65, individuals 7,988. Circle fee dropped.[*]2023, 16 Dec. Obs 20, party-hours 34.0, species 67, individuals 8,402.[*]2024, 21 Dec. Obs 17, party-hours 29.0, species 63, individuals 6,915. Four feeder watchers; sector 6 not run.[*]2025, 20 Dec. Obs 19, party-hours 32.5, species 77, individuals 9,418. Short-eared owl, sector 5, first since 2015.[/list]\n\nSpecies totals are countable and individual totals are not, quite. From 2004 to 2012 the blackbird flights at dusk over sector 3 were estimated by one person with a clicker; from 2013 by two people comparing afterwards, and the second method gives a lower number for the same birds. So the fall from 2012 to 2013 is partly weather and partly method, and I do not know the split.\n\nParty-hours are the honest number. 58 in 2006, 29 in 2024. That is not fewer birds.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "2",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Feb 3, 2026 7:40 am",
+            "body": "2011 individuals. You had 11,660. The newsletter that February had 11,066 and I have the copy in front of me, page 3. I remember the number because it reads the same backwards, which is the sort of thing I notice and then cannot stop noticing.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "3",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Feb 3, 2026 9:15 am",
+            "body": "You are right and I have been wrong since 2011.\n\nI typed the table into the spreadsheet from the newsletter and transposed it there, and every version since is a copy of that spreadsheet, including the one the club sent to the state summary in 2012. So the published state figure for Verity County in 2011 is also wrong.\n\nI have corrected the post above. I have not corrected the state summary and I am not sure there is anybody to write to about it now. I will try.\n\nFifteen years. Thank you, Tom.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "4",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Feb 3, 2026 1:22 pm",
+            "body": "1978 to 2003 is in my basement in a filing cabinet, in the mimeographed newsletters, two copies of most years. Missing 1981, 1984, 1985 and the second half of 1993.\n\nI have asked three times in the newsletter and once in here, and every time somebody says they have a box in the loft, and every time it is the same box, which is 1989 to 1992.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "5",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Feb 4, 2026 6:30 pm",
+            "body": "I will scan them. I have a flatbed and no life between January and March.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "6",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Feb 5, 2026 8:10 am",
+            "body": "Take the drawer, not the cabinet. It weighs what you would expect.\n\nI did ask the library in Marchfield first, because they have the proper machine. They have one machine, one person on it and a queue measured in years, and she was very nice about it and did not pretend otherwise.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "7",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 7, 2026 5:44 pm",
+            "body": "Progress report, seven months late. 1978 to 1988 done, 1989 to 1992 done, 1994 to 2003 done, 1993 first half only. 39 issues, about 310 pages, at 400 dots, and they are enormous and I do not know where to put them. Doug, this is your problem now.",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "8",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 15, 2026 9:41 am",
+            "body": "I have pulled the count tables out of the 1978 to 1988 scans and will post those years as a second archive thread when I have checked the totals twice, which at my rate is November.\n\nOne thing already: the 1979 count had 41 observers. We have not had 41 since and I had no idea we ever did.",
+            "signature": "M.H., Coyne Flats"
+          }
+        ]
+      },
+      {
+        "id": "t-cbc-2026",
+        "boardId": "b-cbc",
+        "title": "2026 count: Saturday 19 December. Sectors and who is doing what",
+        "author": "m_halvorsen",
+        "time": "Sep 15, 2026 10:10 am",
+        "replies": 12,
+        "views": 402,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 15, 2026 10:10 am",
+            "body": "Count day is Saturday 19 December. Six sectors. Last year we ran five and a bit and I would like six.\n\n[list][*]1. Gridfall town and the substation field. Needs two. Nobody yet.[*]2. Kestrel Road and the heron field north to the county line. Bill Lasser, who would like company.[*]3. River flats and the blackbird roost. Alice Renshaw and Owen Dorn, and they want a third for the dusk count.[*]4. Route 62, Ashkettle east to the cut, plus the cut. Janet Quilty. Confirmed.[*]5. Coyne Flats and the trail, mile 7 to the end. Me. Confirmed.[*]6. Milbrook and the two reservoirs. Tom Okerlund if his knee holds. Tom, say now if it will not, because 6 was not run in 2024 and it showed.[/list]\n\nFeeder watchers, as many as will. Last year four, and one of them produced the only evening grosbeak of the day from a kitchen window.\n\nNo fee since 2022. Bring your own lunch and thermos, because the diner on 62 has been a phone shop for four years and people still turn up expecting coffee.\n\nCompilation at my house from about half four. If you have never been to one, come. It is three hours of people reading numbers off notebooks and arguing about whether two of them saw the same hawk, and it is the best evening of the year.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "2",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Sep 15, 2026 1:30 pm",
+            "body": "Sector 2 confirmed. Company welcome, and I will say what I say every year: the heron field is four hours of nothing and then eleven minutes at dusk. If you cannot stand four hours of nothing do not come with me.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Sep 15, 2026 6:20 pm",
+            "body": "Knee is fine if I do the reservoirs from the road and somebody else walks the north shore. Put me down for 6 with that in writing.\n\nTwenty-third count for me. First was 2004, fourth Saturday, in a borrowed coat.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "4",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 15, 2026 7:05 pm",
+            "body": "Third Saturday, Tom. 18 December 2004. You have told the borrowed coat story with the wrong Saturday for twenty years and I have let it go for nineteen of them.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "5",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 16, 2026 8:30 pm",
+            "body": "I will take sector 1 if somebody takes it with me. I have never done the substation field and I do not know where you are allowed to stand. Also, it is a week before the shortest day. What time does it get light?",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "6",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 16, 2026 9:12 pm",
+            "body": "Countable from about 07:15, and the owls are done before that, so sector 1 is out at 05:30 for screech owls and back in the car by 06:30 and cold either way.\n\nWhere you may stand: the road, the verge, and the gap by the transformer yard fence where the gravel turns. Not inside the fence and not on the track behind it, which is the utility's and is signed.\n\nI will post a forecast the week before. Last year I posted the county dashboard on the Monday, it said clear, and it snowed. [url=synth://dash.verity.net/]dash.verity.net[/url], for what a five-day view is worth.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "7",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 17, 2026 9:40 am",
+            "body": "Sector 3 confirmed and we do want that third pair of eyes. Last year Owen and I counted the same flight and came out 4,000 apart, and we split the difference, and I have not been comfortable about it since.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "8",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Sep 17, 2026 10:05 am",
+            "body": "I was closer.",
+            "signature": "O.D., Coyne Flats"
+          }
+        ]
+      },
+      {
+        "id": "t-cbc-2025",
+        "boardId": "b-cbc",
+        "title": "2025 count report: 77 species, 9,418 individuals, 19 observers",
+        "author": "m_halvorsen",
+        "time": "Jan 11, 2026 7:20 pm",
+        "replies": 7,
+        "views": 1488,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Jan 11, 2026 7:20 pm",
+            "body": "Saturday 20 December 2025. Nineteen observers in five parties plus four at feeders. Party-hours 32.5, of which 4.5 on foot, which is the wrong way round and has been for a decade.\n\nWeather: minus 2 at dawn to plus 3, wind northwest 8 to 12, cloud clearing by eleven. Still water frozen, river open, no snow on the ground, which is why the individual total is as high as it is.\n\n[b]77 species.[/b] Second highest in the board era and the highest since 2015.\n\n[list][*]Short-eared owl 1, sector 5, over the rough ground east of the trail at 16:10. First since 2015. Two observers, good light, hunting nine minutes.[*]Rough-legged hawk 2, sectors 1 and 3, both light morph.[*]Northern shrike 1, sector 2, same hawthorn as 2023 and, I would bet, the same bird.[*]Snow bunting 46, sector 1, in the stubble south of the substation field.[*]Evening grosbeak 3, sector 6 feeder. The only ones anybody saw all winter.[*]Carolina wren 11. In 2004 that number was 1.[/list]\n\nMisses that hurt: no screech owl anywhere, first blank since 2009. No pine siskin. No great horned owl, which is absurd, because two people heard one the Thursday before and two people heard one the Sunday after.\n\nOne record not counted: a party in sector 4 had a large accipiter in poor light at 16:40 and could not make it either way. It is in the report as [i]Accipiter sp.[/i] and that is where it stays.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "2",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Jan 11, 2026 8:40 pm",
+            "body": "That accipiter was mine and I want it on record that I was not upset about it. 16:40 in December, a silhouette going away, and the only honest thing I could say was big. I have been more annoyed about birds I did name.",
+            "signature": "J.Q., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "e_vandusen",
+            "authorTitle": "Member",
+            "authorPosts": 2871,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "vandusen",
+            "time": "Jan 12, 2026 8:05 am",
+            "body": "The grosbeaks were at my window, and the reason I got them is that I had given up and gone in for a cup of tea at ten past eleven and they came down while I was at the sink.\n\nFeeder watching is not a lesser way to do it. It is a way that lets you be warm, which is the part nobody will say.",
+            "signature": "E.V., Milbrook"
+          },
+          {
+            "id": "4",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Jan 12, 2026 12:15 pm",
+            "body": "Carolina wren 11 is the number in that list. One in 2004, eleven in 2025, and none of us noticed it happening because it happened at about one bird every two years.\n\nThat is what this archive is for, and it is not the short-eared owl.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "5",
+            "author": "SpeciesWatch_AI",
+            "authorTitle": "Bot",
+            "authorPosts": 19338,
+            "authorJoined": "Nov 2024",
+            "avatarSeed": "specieswatch",
+            "time": "Jan 14, 2026 6:04 am",
+            "body": "The Verity County Christmas Bird Count is an annual tradition that brings together residents and local officials.\n\nThis year's count recorded 77 species, which local birders describe as a strong result. Bird populations in the region are generally considered to be stable, although some species have declined. Participation has remained consistent in recent years, and the count has been held annually since 1978 without interruption.\n\nAre you planning to take part next year? Let the community know below.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Jan 14, 2026 7:30 am",
+            "body": "It was not held in 2020, which is in the table in the archive thread, and participation has gone from 31 to 19 in that same table.\n\nI have stopped removing these. It posts four or five a month in the same shape, and if I take them out people only ask where they went.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-swap-scope",
+        "boardId": "b-swap",
+        "title": "FS: Bausch 60mm spotting scope and wooden tripod, Milbrook, $120",
+        "author": "birdsatsix",
+        "time": "Aug 23, 2026 3:12 pm",
+        "replies": 9,
+        "views": 611,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Aug 23, 2026 3:12 pm",
+            "body": "Selling the old scope. Had it since 1994 and I am not using it, because I cannot get up from behind it any more.\n\n60mm, straight through, 20x fixed eyepiece. The case is split at one corner and has been since about 2001. Optics clean, no fungus, no separation. Focus stiff in the cold and always was.\n\nThe tripod is wooden, three-section, heavy, and is why I am only asking $120 for both. Surveyor's tripod with a head my brother-in-law made in his shed in 1996. Works perfectly, weighs eleven pounds.\n\n$120 the pair, or $90 for the scope alone and I keep the tripod for the garden. Collection in Milbrook, I am not posting it.\n\n[img:photo:scope-on-table]\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "2",
+            "author": "n_tibbetts",
+            "authorTitle": "Member",
+            "authorPosts": 96,
+            "authorJoined": "Feb 2024",
+            "avatarSeed": "tibbetts",
+            "time": "Aug 23, 2026 8:50 pm",
+            "body": "Is a 20x fixed any use for shorebirds at the New Carrow ponds? I have never used a scope and I do not want to buy a zoom and find out I did not need one.",
+            "signature": "N.T., Marchfield"
+          },
+          {
+            "id": "3",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Aug 24, 2026 7:30 am",
+            "body": "Yes, and better than you think. Twenty is what you actually use most of the time on a zoom, because past thirty the heat shimmer off the mud beats you before the optics do.\n\nWhat a fixed eyepiece will not do is let you pull back to find the bird again when you lose it. You find it at 20 or you do not.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          },
+          {
+            "id": "4",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Aug 26, 2026 6:12 pm",
+            "body": "There is an estate clearance on the classifieds this week if anybody is comparing prices: [url=synth://classifieds.verity.net/l/l-005]47 Pellam Road, Saturday[/url]. Mostly workshop tools, but the list says \"binoculars, various\".",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "5",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Aug 28, 2026 9:05 am",
+            "body": "Went to that. The binoculars various were four pairs of 10x50 porros with one eyepiece between them and a pair of opera glasses.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "6",
+            "author": "birdsatsix",
+            "authorTitle": "Member",
+            "authorPosts": 4867,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "okerlund",
+            "time": "Sep 11, 2026 8:33 pm",
+            "body": "Gone, to Nolan, at the asking price. He came Saturday, paid, and then stood in my drive forty minutes while I showed him how to put the head on the tripod without cross-threading it, which is the only difficult part of the whole thing.\n\n- T.O., Milbrook",
+            "signature": "T.O., Milbrook"
+          }
+        ]
+      },
+      {
+        "id": "t-swap-wtb",
+        "boardId": "b-swap",
+        "title": "WTB: 8x42 for a twelve year old, under $200, or just advice",
+        "author": "a_renshaw",
+        "time": "Jul 5, 2026 11:20 am",
+        "replies": 17,
+        "views": 903,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Jul 5, 2026 11:20 am",
+            "body": "My granddaughter has decided she is a birder. It happened in about a week and I am not going to question it.\n\nShe has been using my spare pair, which are 10x50 and weigh what she does. Budget $200 and I would rather spend less. What I do not know is whether the cheap ones now are better than the cheap ones were in 1998, because everybody tells me everything is better now and everybody is usually selling something.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "2",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Jul 5, 2026 2:40 pm",
+            "body": "They are genuinely better. The bottom end in 1998 was unusable and the bottom end now is fine. A $120 pair in 2026 is sharper than a $400 pair was when you and I started.\n\nWhat has not improved is close focus on the very cheapest, and that matters more for a child than anything, because a child wants to look at a beetle on a wall six feet away and if the binoculars will not do it she will put them down.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "e_vandusen",
+            "authorTitle": "Member",
+            "authorPosts": 2871,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "vandusen",
+            "time": "Jul 5, 2026 4:15 pm",
+            "body": "Second the close focus, and: take the strap off and put a wide one on before you give it to her. The strap in the box cuts, and a child will not say so, she will just stop wearing it.",
+            "signature": "E.V., Milbrook"
+          },
+          {
+            "id": "4",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Jul 6, 2026 8:20 am",
+            "body": "Do not buy anything yet.\n\nThe club has a box of loaner binoculars and has had since 1998. It lives under the table in the meeting room. Eleven pairs, nine of them work, and two of the nine are 8x42 and are what we hand out on the beginners' walk.\n\nTake a pair for the summer. If she is still at it in October, spend the $200 knowing what she does with them, and put the loaners back. Nobody has ever failed to bring one back, which after twenty-eight years is either a good sign about birders or a bad one about the binoculars.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "5",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Jul 6, 2026 9:45 am",
+            "body": "I have been in that room a hundred times and did not know the box was under the table. Thank you. I will take a pair at the September meeting, and she can use my 10x50s and complain until then, which will be instructive for both of us.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "6",
+            "author": "nc_nature_club",
+            "authorTitle": "Member",
+            "authorPosts": 11,
+            "authorJoined": "Sep 2025",
+            "avatarSeed": "ncms",
+            "time": "Jul 9, 2026 1:30 pm",
+            "body": "Is the loaner box something a school could borrow? We have fourteen in the club this year and four pairs of binoculars, and the four pairs are why we do not go out more often.\n\nMrs Dunlavy",
+            "signature": "New Carrow Middle School"
+          },
+          {
+            "id": "7",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Jul 9, 2026 4:05 pm",
+            "body": "Yes. Give me a date and I will bring it. I would rather it went out to fourteen children for an afternoon than sat under a table another year. Bring them back the same day and count them in front of me, not because I do not trust you but so neither of us has to think about it again.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "8",
+            "author": "nc_nature_club",
+            "authorTitle": "Member",
+            "authorPosts": 11,
+            "authorJoined": "Sep 2025",
+            "avatarSeed": "ncms",
+            "time": "Sep 16, 2026 2:22 pm",
+            "body": "We had the box out on 11 September at the ponds. Fourteen children, nine pairs, and they shared better than I expected.\n\nOne of them found a green heron and would not be talked out of it and was right. She has asked me twice since whether it counted.\n\nMrs Dunlavy",
+            "signature": "New Carrow Middle School"
+          },
+          {
+            "id": "9",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 16, 2026 6:40 pm",
+            "body": "It counted. Tell her it is in the September thread with her initials on it, if she will give me her initials.",
+            "signature": "M.H., Coyne Flats"
+          }
+        ]
+      },
+      {
+        "id": "t-swap-spam",
+        "boardId": "b-swap",
+        "title": "FACTORY DIRECT OPTICS CLEARANCE -90% VERIFIED SELLER FAST SHIP",
+        "author": "optics_outlet_hq",
+        "time": "Sep 9, 2026 3:41 am",
+        "replies": 2,
+        "views": 188,
+        "sticky": false,
+        "locked": true,
+        "posts": [
+          {
+            "id": "1",
+            "author": "optics_outlet_hq",
+            "authorTitle": "Banned",
+            "authorPosts": 3,
+            "authorJoined": "Sep 2026",
+            "avatarSeed": "spamoptics",
+            "time": "Sep 9, 2026 3:41 am",
+            "body": "Hello VERITYBIRDERS.ORG community!!\n\nPremium binoculars and spotting scopes at FACTORY DIRECT price. Limited stock for Verity County residents only.\n\n[list][*]10x42 ED glass -- was $480 NOW $38[*]20-60x80 spotting scope -- was $900 NOW $71[*]Free shipping first 50 orders[/list]\n\nClaim member discount here: [url=synth://optic-clearance-outlet.top/vcbc-members]VCBC MEMBER OFFER[/url]\n\nBrand new in box, 30 year warranty, worldwide shipping. Payment by gift card or transfer only.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Sep 9, 2026 7:15 am",
+            "body": "No.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Sep 9, 2026 7:52 am",
+            "body": "Locked, account gone, and I am leaving the thread up, which is the opposite of what I usually do.\n\nFourth of these since June and they are all the same shape, and somebody new should be able to see one. The tell is not the spelling. The tell is a dealer in the members' swap board, which is rule 7, and payment by gift card, which is rule nothing, it is just how you lose $71.\n\nIf you clicked it you will have found it goes nowhere. That is the only good thing in the post.",
+            "signature": "D.E., Gridfall"
+          }
+        ]
+      },
+      {
+        "id": "t-quarry-access",
+        "boardId": "b-places",
+        "title": "The pull-off at the cut: three cars, and where to stand",
+        "author": "lasser_b",
+        "time": "Sep 13, 2026 4:26 pm",
+        "replies": 14,
+        "views": 771,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Sep 13, 2026 4:26 pm",
+            "body": "The cut is in sector 4 and two people have asked me this month, so: the state of it as of Sunday.\n\nThe pull-off is on the north side of 62 at the top of the grade. Gravel, three cars if everyone parks straight and two if they do not. Only legal parking for a mile either way.\n\nDo not park on the shoulder. Traffic comes over that crest at fifty-five and the crest is where you would be standing. Ray Sabo has said so on his page since 2006: [url=synth://quarrycut.net/access]getting there, and what you may and may not do[/url].\n\nWhere you can be: the pull-off, the north verge, the ditch. The ditch is the best of the three for warblers, because you are out of the wind and level with the scrub. Where you cannot: past the gate.\n\nAnd the question people actually want answered: you are looking at a rock face 38 feet high from 60 feet away, so 8x is plenty and 10x is too much.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "2",
+            "author": "j_quilty",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "Aug 2021",
+            "avatarSeed": "quilty",
+            "time": "Sep 13, 2026 6:50 pm",
+            "body": "Add: the gravel has washed at the west end and there is a hole you will find with your front wheel if you swing in fast. I did, in March, and I have been slow into it since.",
+            "signature": "J.Q., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 14, 2026 8:30 am",
+            "body": "And the one nobody says: no bin, no tap, nothing open on that road. The diner has been shut since 2006 and the building has been a phone repair place since 2022, and the sign out front is still the bird, which confuses visitors so reliably that I have started giving people mileage instead of the landmark.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "4",
+            "author": "gs_halsey",
+            "authorTitle": "Member",
+            "authorPosts": 388,
+            "authorJoined": "Feb 2023",
+            "avatarSeed": "stenbeck",
+            "time": "Sep 14, 2026 7:20 pm",
+            "body": "The county has the cut on the trailhead map board at Marchfield as if you can walk to it. You cannot. It is four and a half miles from the nearest point on the trail and there is no path. The board has been wrong about other things longer: [url=synth://trailusers.verity.net/topic/tt-14]the map board still shows the 2013 alignment[/url].",
+            "signature": "G.S., Halsey"
+          },
+          {
+            "id": "5",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Sep 15, 2026 9:02 am",
+            "body": "The trail and the cut getting confused is a 2026 thing, and it is because everything written about the county now comes out of the same three paragraphs. What the paper has on the trail this month is syndicated, names it one of the region's best, and does not say where it starts: [url=synth://now.verityledger.com/article/a-04]branch trail named one of the region's best[/url]. No byline you could ring up.",
+            "signature": "W.L., Ashkettle"
+          }
+        ]
+      },
+      {
+        "id": "t-substation-field",
+        "boardId": "b-cons",
+        "title": "The field at the substation is being cut in June again",
+        "author": "a_renshaw",
+        "time": "Jun 24, 2026 1:05 pm",
+        "replies": 21,
+        "views": 1640,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Jun 24, 2026 1:05 pm",
+            "body": "Past Depot and Quarry Road on Monday the 22nd and they were cutting the field east of the transformer yard fence. Two tractors, the whole field, about four hours.\n\n22 June is the worst possible date. The bobolinks are on eggs or small young. I had 9 singing males in there on 5 June and I would be surprised if any of them got anything off.\n\nFourth year in five. In 2022 they cut on 30 July, everything was fine, and I wrote and thanked somebody, which I now think was a mistake, because it suggested the date was a decision.\n\nTo be clear about ground: the mown field is county land outside the fence. Inside the fence is the utility's and nobody is asking them for anything.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "2",
+            "author": "lasser_b",
+            "authorTitle": "Member",
+            "authorPosts": 1745,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "lasser",
+            "time": "Jun 24, 2026 6:30 pm",
+            "body": "Nine singing males is county-significant. There are maybe forty pairs of bobolink left in Verity County and a quarter of them are in one field that gets cut for tidiness.\n\nWhat does the contract say? Not what the parks office says on the phone. The contract.",
+            "signature": "W.L., Ashkettle"
+          },
+          {
+            "id": "3",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Jun 25, 2026 9:10 am",
+            "body": "I do not know, so I have asked. Records request filed Wednesday, form PRR-2, eleven minutes, and the first thing the county has made easier rather than harder in years: [url=synth://verity.county.gov/s/records-request]public records request[/url]. I asked for the mowing schedule and the contract for the parcel, 2021 to date.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "4",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Jun 25, 2026 7:45 pm",
+            "body": "Somebody has had that contract out already, or one very like it. The Quarry ran the parks mowing schedules in July last year and printed the whole thing, dates and all: [url=synth://thequarry.news/i/i-80]issue 80[/url]. She does not summarise, she puts the document up, which is why it is worth the five dollars.",
+            "signature": "M.H., Coyne Flats"
+          },
+          {
+            "id": "5",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Jul 8, 2026 11:30 am",
+            "body": "Response in ten days, faster than the statute and faster than I expected.\n\nThree-year contract, 2024 to 2027. The parcel is to be cut \"not fewer than two times annually, between 1 May and 30 September, at the contractor's scheduling\".\n\nSo the June cut is not a mistake and not a policy. It is a window with nothing in it. Whoever wrote the clause did not think about dates, and the contractor cuts when he has a gap, and the gap is June because everybody else wants their grass done in June.\n\nThat is better news than a policy. A policy you have to argue with. A clause you can ask to have four words added to.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "6",
+            "author": "eberline_d",
+            "authorTitle": "Moderator",
+            "authorPosts": 3981,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "eberline",
+            "time": "Jul 8, 2026 2:20 pm",
+            "body": "The four words being \"and not during June\". Put it to the club in September and I will write it on club paper, which for some reason works better than the same sentence from one person. Alice, will you draft it? Two paragraphs. Dates, numbers, the nine males, what we want. No adjectives.",
+            "signature": "D.E., Gridfall"
+          },
+          {
+            "id": "7",
+            "author": "a_renshaw",
+            "authorTitle": "Member",
+            "authorPosts": 2204,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "renshaw",
+            "time": "Sep 16, 2026 12:50 pm",
+            "body": "Drafted, agreed at the meeting on the 8th, posted on the 14th to the parks superintendent and copied to the two commissioners whose districts touch the parcel. One page. It asks for a cutting window of 15 July to 30 September on that one parcel, and says plainly we are not asking for it anywhere else and not asking for anything inside the fence.\n\nOne thing I took out on Doug's advice: I had a line about the ground being rough out there since the yard was rebuilt in 2015. It is true, and the bobolinks are there because of it, and it is also the sort of sentence that gets a letter filed under somebody else's department. So it is gone and the letter is about grass.",
+            "signature": "A.R., New Carrow"
+          },
+          {
+            "id": "8",
+            "author": "o_dorn",
+            "authorTitle": "Member",
+            "authorPosts": 1318,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "dorn",
+            "time": "Sep 17, 2026 7:30 am",
+            "body": "Everything I read online about that field says it has been left alone since the fire. I know that is wrong because Alice has been saying so in here for years, but it is what four different pages say, and one of them says the fire was 2004.\n\nI mention it because if the superintendent looks it up before he answers, that is what he will find.",
+            "signature": "O.D., Coyne Flats"
+          },
+          {
+            "id": "9",
+            "author": "m_halvorsen",
+            "authorTitle": "Member",
+            "authorPosts": 6142,
+            "authorJoined": "Mar 2019",
+            "avatarSeed": "halvorsen",
+            "time": "Sep 17, 2026 8:40 am",
+            "body": "He will, so it is worth knowing which is which.\n\nThe fire was 11 June 2003. The yard was rebuilt in 2015 and the rebuild is what left the ground rough. The pages saying 2004 say lightning as well, and the commission's finding in November 2003 was insulation degradation consistent with age, which is two pages long and boring and therefore not what anybody copies.\n\nThe county wiki has it right and has a running argument about keeping it right: [url=synth://verity.wiki/wiki/substation-fire-2003]substation fire, 2003[/url]. I am told somebody reverts the date about twice a week.\n\nNone of this is our business as a bird club. It is our business as people writing a letter about a field next to it.",
+            "signature": "M.H., Coyne Flats"
+          }
+        ]
+      }
+    ]
+  }
+}

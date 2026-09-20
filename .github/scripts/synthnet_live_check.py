@@ -1136,17 +1136,30 @@ def main():
                     problems.append(
                         f"recent changes lists {len(rc['at'])} rows")
                 else:
+                    # DISTINCT TIMESTAMPS, not the rendered labels and not
+                    # the span. Two earlier versions of this were wrong in
+                    # opposite ways. The span is stable but does not catch
+                    # the bug: with every article on the same phase the top
+                    # twenty still cover one whole interval, because rows
+                    # nineteen and twenty come from the previous slot. The
+                    # count of distinct "an hour ago"-style labels does catch
+                    # it, but ago() buckets coarsely and which bucket a row
+                    # lands in depends on when you look, so it fails in CI at
+                    # some hours and not others. The raw millisecond values
+                    # are both: identical when the phases collapse, all
+                    # different when they do not, and the same either way
+                    # whenever the check runs.
                     span = (max(rc["at"]) - min(rc["at"])) // 60000
-                    distinct = len(set(rc["labels"]))
-                    if span < 60 or distinct < 4:
+                    distinct = len(set(rc["at"]))
+                    if distinct < 12:
                         problems.append(
-                            f"recent changes: 20 edits inside {span} minutes "
-                            f"and {distinct} distinct times on the first 12 "
-                            "rows -- every article is on the same clock")
+                            f"recent changes: 20 rows carry only {distinct} "
+                            "distinct times -- the articles are all on the "
+                            "same clock")
                     else:
                         notes.append(
-                            f"recent changes spreads 20 edits over {span} "
-                            f"minutes, {distinct} distinct times on screen")
+                            f"recent changes: {distinct} distinct edit times "
+                            f"in the top 20, spread over {span} minutes")
 
                 # THE COLLISION, both halves, one run, two page loads.
                 page.evaluate(

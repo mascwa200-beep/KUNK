@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "domain": "stmarks-verity.org",
+  "title": "St Mark's Lutheran Church - Marchfield",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "A Marchfield congregation's website, kept up by the church secretary: service times, a food pantry page with real hours and a real shortage list, a bulletin archive whose files are no longer linked, the parish hall roof fund, and the memorial list.",
+  "tags": ["marchfield", "church", "food-pantry", "2026"],
+  "links": ["marchfieldlibrary.blog", "verity.county.gov", "verity-transit.gov", "ashkettlevfd.org", "thequarry.news", "brenners-notebook.email", "now.verityledger.com", "countyfacts.info", "ask.verity.ai", "classifieds.verity.net", "boards.gridfall.net", "gridline.social", "veritycountytoday.com"],
+  "data": {
+    "navLabel": "St Mark's",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** FOOD PANTRY OPEN TUESDAY 1-4 AND THURSDAY 4-7 *** FIRST SATURDAY 9-11:30 *** PARISH HALL DOOR ON FENN AVENUE *** NO APPOINTMENT AND NO PAPERWORK ***" },
+          { "kind": "heading", "level": 1, "text": "St Mark's Lutheran Church" },
+          { "kind": "image", "seed": "stmarks-bellamy-front-2026", "imgKind": "banner", "caption": "412 Bellamy Street from the corner of Fenn Avenue. The brick is 1926. The low part on the left is the 1958 parish hall, and the roof on the low part is the reason there is a building fund." },
+          { "kind": "text", "body": "412 Bellamy Street, Marchfield. Two blocks north of the town hall, on the corner of Fenn Avenue. Telephone the office Tuesday through Friday, 9:00 to 1:00.\n\nThere have been Lutherans on this corner since 1891. The congregation met in a frame building until it burned in the winter of 1924, and the brick one went up over two years after that and was dedicated on [b]Sunday 26 September 1926[/b]. We had 511 members in 1961. We have 203 now, of whom about 90 are here on a given Sunday, and the two numbers are both true and only one of them is interesting." },
+          { "kind": "heading", "level": 2, "text": "Sunday" },
+          {
+            "kind": "table",
+            "head": ["", "Time", "Note"],
+            "rows": [
+              ["Holy Communion, spoken", "8:30 a.m.", "No music. Out by 9:15. In the chapel January through March."],
+              ["Sunday school, and the adult class", "9:40 a.m.", "Children downstairs. Adults in the library. September through May."],
+              ["Holy Communion, choir and organ", "10:45 a.m.", "Nursery is staffed. Coffee in the hall after."],
+              ["Summer, one service only", "9:30 a.m.", "Memorial Day weekend through Labor Day weekend."]
+            ]
+          },
+          { "kind": "text", "body": "Communion is every Sunday at 10:45 and on the first and third Sundays at 8:30. Everyone is welcome at the table. That includes children, it includes visitors, and nobody will ask you anything.\n\nThe 8:30 moves into the chapel for the three cold months because the sanctuary costs about $40 a morning to heat and there are usually nineteen of us at that hour. The chapel costs nothing to heat because it shares a wall with the boiler room.\n\nThe hearing loop works. The receivers are in the basket inside the Bellamy Street door and the batteries were changed in August. Large-print bulletins are on the table in the narthex. There are always twelve and we are always out of them by 10:50, which I have raised at council twice." },
+          { "kind": "heading", "level": 2, "text": "The food pantry" },
+          { "kind": "text", "body": "Tuesday 1:00 to 4:00, Thursday 4:00 to 7:00, and the first Saturday of the month 9:00 to 11:30. Parish hall door on the Fenn Avenue side. There is a ramp.\n\nYou do not have to be a member here. You do not have to be Lutheran. You do not have to be from Marchfield. You do not have to explain.\n\nThe [url=/pantry]pantry page[/url] has what we are short of this week, what we have too much of, what we cannot take and why, the other pantries in the county with their hours, and what to do if you need food and it is not a Tuesday." },
+          { "kind": "heading", "level": 2, "text": "Between now and Christmas" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Sunday 18 October[/b] -- Harvest Home. Bring canned goods to the chancel rail at either service. All of it goes downstairs to the pantry that afternoon and Lois has asked, in writing, that it not be green beans.",
+              "[b]Sunday 25 October[/b] -- Reformation Sunday. One service at 10:00, choir, red paraments, and the hymn everybody actually knows.",
+              "[b]Saturday 31 October[/b] -- Trunk or treat in the lower lot, 5:30 to 7:00. Eleven trunks signed up. We would like fourteen. Sign the sheet on the hall door.",
+              "[b]Sunday 1 November[/b] -- All Saints. Names read at both services. If you want a name read, tell me by Wednesday 28 October, and tell me how it is pronounced, because I will get it wrong otherwise and I have.",
+              "[b]Wednesday 25 November[/b] -- Thanksgiving Eve, 7:00 p.m., with First Presbyterian and Marchfield United Methodist. It is our turn to host and their turn to bring the pie.",
+              "[b]Sunday 29 November[/b] -- Advent 1. Wreath making in the hall after the late service, $8 for the greens, children free.",
+              "[b]Thursday 24 December[/b] -- Christmas Eve, 4:00 with the children and 10:30 with the choir and the candles. The 4:00 fills. Come at 3:40 if you want to sit downstairs."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The rest of the week" },
+          {
+            "kind": "table",
+            "head": ["What", "When", "Where"],
+            "rows": [
+              ["Quilters", "Wednesday, 9:00 to noon", "Parish hall. 214 quilts last year, all of them shipped."],
+              ["Choir", "Thursday, 7:00 p.m., September to May", "Choir room. They take anyone and they mean it."],
+              ["Men's breakfast", "First Saturday, 7:00 a.m.", "The Hearthside on Third Street. Separate checks."],
+              ["Council", "Second Tuesday, 7:00 p.m.", "Library. Open. Minutes on the narthex table."],
+              ["Confirmation", "Sunday, 6:00 p.m., October to April", "Downstairs. Six this year, which is four more than last year."],
+              ["Alcoholics Anonymous", "Monday and Thursday, 7:30 p.m.", "Lower level, Fenn Avenue door. Not ours, and none of our business."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "A correction about 2003" },
+          { "kind": "text", "body": "A profile of this congregation turns up on directory sites, and people ask about one line in it. It says St Mark's \"served as an emergency shelter during the 2004 Gridfall substation fire.\"\n\nThe fire was [b]11 June 2003[/b], not 2004. We were not a shelter. The Red Cross had the shelter, and it was at the high school. What we did was open the parish hall on the nights of the 11th and the 12th with coffee, a telephone that worked, and somewhere to sit down, because something over four thousand houses had no power and some of them had none for five days. Ruth Hoppes made 140 sandwiches on the Thursday out of what was thawing in her own freezer.\n\nThat is the whole of it, and it is in the council minutes for June 2003, which are in the binder in the library here and which anyone may read." },
+          { "kind": "text", "body": "[i]This page was last changed Friday 16 October 2026. -- A.K.[/i]" },
+          { "kind": "hitcounter", "count": 214338 },
+          { "kind": "text", "body": "The counter came with the template in 2011. The hosting company's own report says 91 people looked at this site last month and that 38 of those were one machine in another country asking for the same page every forty minutes. Gary says leave the counter alone, it makes the trustees happy." }
+        ]
+      },
+      {
+        "id": "pantry",
+        "name": "Food Pantry",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "St Mark's Food Pantry" },
+          { "kind": "text", "body": "[b]Open to anyone in Verity County.[/b] You do not have to be a member here. You do not have to be Lutheran. You do not have to be from Marchfield. You do not have to explain." },
+          {
+            "kind": "table",
+            "head": ["Day", "Hours", "Note"],
+            "rows": [
+              ["Tuesday", "1:00 - 4:00 p.m.", "Bread comes in the morning and is gone by two."],
+              ["Thursday", "4:00 - 7:00 p.m.", "Busiest 4:00 to 5:30. The last hour is quiet."],
+              ["First Saturday", "9:00 - 11:30 a.m.", "Next one is 7 November."],
+              ["Closed", "Thanksgiving, 24 and 25 December, 1 January", "Open Tuesday 24 November as usual, and we stay till five that day."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Where the door is" },
+          { "kind": "text", "body": "[b]The parish hall door on Fenn Avenue[/b], which is the alley side. Not the red doors on Bellamy Street -- those are locked except Sunday morning, and people stand at them in the rain, and I am sorry.\n\nThere is a concrete ramp with a rail. The lot behind the building holds seven cars and the two nearest the door are kept clear for whoever needs them, including on a Sunday.\n\nIf you are walking, it is the second building north of the town hall and the sign is small and on the Bellamy side, which is the wrong side. We have known that since 2015." },
+          { "kind": "image", "seed": "stmarks-fenn-hall-door-ramp", "imgKind": "photo", "caption": "The Fenn Avenue door, with the ramp and the bins. The paper sign taped inside the glass is the current shortage list and it is the same list as this page." },
+          { "kind": "heading", "level": 2, "text": "Getting here without a car" },
+          { "kind": "text", "body": "[url=synth://verity-transit.gov/s/route-4]Route 4[/url] stops at the Marchfield town hall, which is two blocks. On a Tuesday the 12:40 out of Gridfall puts you at the town hall at 12:51 and the 4:10 back gets you home. On a Thursday the last northbound is 6:05, which is before we close, and that has caught people out.\n\n[url=synth://verity-transit.gov/s/dial-a-ride]Dial-A-Ride[/url] will bring you and will wait, but you have to be registered and you have to book by the day before. If you are not registered and you need to be, telephone the office here and I will do the form with you over the telephone. It takes about ten minutes and most of it is the address.\n\nIf none of that works, we deliver. See below." },
+          { "kind": "heading", "level": 2, "text": "What we need right now" },
+          { "kind": "text", "body": "[b]This list was counted on the shelf Friday 16 October 2026.[/b] It is the list on the door and it is the list I read to anybody who telephones and asks." },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Canned chicken and tuna in water.[/b] We have 31 cans. We hand out about 60 a week.",
+              "[b]Peanut butter, 16 oz, plastic jars.[/b] Not glass. The boxes get carried out to cars and glass has broken twice.",
+              "[b]Cooking oil[/b], any size, any kind. Nobody donates oil and everybody needs it.",
+              "[b]Flour and sugar[/b], 2 lb and 4 lb bags. The 25 lb bags we cannot split.",
+              "[b]Shelf-stable milk[/b], or the 12-count boxes of evaporated.",
+              "[b]Diapers, size 5 and size 6.[/b] We have had none since 22 September. Newborn and size 1 we have plenty of, because that is what people buy.",
+              "[b]Pull-ups, 4T-5T.[/b]",
+              "[b]Pads, regular and overnight.[/b] Tampons go out the same day they come in.",
+              "[b]Toilet paper and dish soap.[/b] Food stamps do not cover either and this is the thing people are most embarrassed to ask for.",
+              "[b]Pet food[/b], cat or dog, small bags. People will go without before the dog does, so we would rather have it here.",
+              "[b]Can openers.[/b] The cheap kind. We give out about six a month and I do not fully understand why.",
+              "[b]Spices.[/b] Salt, pepper, cinnamon, garlic powder, chili powder. Nobody thinks of it and everybody asks."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Please hold off on these" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Green beans.[/b] 411 cans. Harvest Home on 18 October will bring more and I have made my peace with that.",
+              "[b]Canned corn.[/b] Over 300.",
+              "[b]Ramen.[/b] More than we can move before the dates run.",
+              "[b]Cranberry sauce.[/b] Every November, by the case, and it sits until the following November.",
+              "[b]Diet soda and powdered drink mixes.[/b]",
+              "Unusual ingredients are welcome and they are slow. If you are clearing a cupboard, the plain things move and the capers do not."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What we cannot take, and why" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Home canned anything.[/b] It is a state rule, not our rule. Lois has been asked to bend it by people she likes and she will not.",
+              "[b]Anything opened, unsealed, or with the seal button already down.[/b]",
+              "[b]Cans that are rusted, bulging, or dented on a seam.[/b] A dent in the middle of a can is fine and we take those.",
+              "[b]Infant formula past the date.[/b] Not one day past. This is the one date that is absolute and there is no judgement call in it.",
+              "[b]Prescription medicine, vitamins, supplements.[/b]",
+              "[b]Refrigerated or frozen food after 3:00 p.m. on a pantry day.[/b] The freezer is small and only one of the two runs."
+            ]
+          },
+          { "kind": "text", "body": "[b]About dates, since this is the question I get most.[/b]\n\n\"Best by\" and \"sell by\" are about quality, not safety. A box of pasta a year past its best-by date is pasta. We take those, we put them out, and we say so on the shelf tag so that nobody is being fooled.\n\n\"Use by\" on refrigerated food is about safety and we do not take those past the date.\n\nInfant formula is the exception to everything above. See the list.\n\nIf you would not give it to somebody you know, do not give it to us, because the people who come here are somebody you know." },
+          { "kind": "heading", "level": 2, "text": "What you get" },
+          { "kind": "text", "body": "A standard box, which is about 22 items and comes to roughly four days of meals for one person, scaled up by household size. Then the choice shelf, where you take six of whatever is on it.\n\nBread and rolls on Tuesday morning from Hoffman's Market on Third Street. It is gone by two and I am not going to pretend otherwise.\n\nFrozen meat when we have it. We had ground beef three weeks running in September and none since the 24th.\n\nProduce from the gardens June through October. Tomatoes finished on 2 October. There is squash and there will be squash for some time.\n\n[b]We write down how many people are in your household and what town you are in.[/b] That is all of it. It goes on the monthly sheet that pays for the truck from the regional food bank at Steuben, and it has no name on it. If you would rather not say, say so, and we put an X and the number still counts." },
+          { "kind": "heading", "level": 2, "text": "How often you can come" },
+          { "kind": "text", "body": "Once every two weeks per household is what the sheet says.\n\nWe do not check. There is no card and no database and nobody at the door with a list. If you need to come every week, come every week, and if you can bear to say so to Lois she will put the right things aside for you on the Monday instead of you taking what is left on a Thursday at ten to seven." },
+          { "kind": "heading", "level": 2, "text": "Delivery" },
+          { "kind": "text", "body": "Second and fourth Thursday of the month, for anyone who cannot get out. Lyle Tressler drives and Bev goes with him.\n\nThe route is Marchfield, then Coyne Flats, then up to Kerrin and back. Milbrook is on the fourth Thursday only, because it is 26 miles each way and the van does what it does.\n\nTelephone the office by the Tuesday before. If you miss the Tuesday, telephone anyway, because Lyle has gone out on a Thursday afternoon for one box more than once.\n\nIn late September the [url=synth://veritycountytoday.com/article/w-culvert]Quarry Road closure[/url] put about forty minutes on the Coyne Flats leg and everybody still got their box, an hour later than usual, which Lyle would like noted." },
+          { "kind": "heading", "level": 2, "text": "The numbers" },
+          { "kind": "text", "body": "Households served per month, from the sheet Lois turns in. A household is a household whether it is one person or seven, so the people column matters more." },
+          {
+            "kind": "table",
+            "head": ["2026", "Households", "People", "Pounds out"],
+            "rows": [
+              ["January", "214", "512", "9,840"],
+              ["February", "221", "534", "10,110"],
+              ["March", "236", "561", "10,780"],
+              ["April", "229", "548", "10,240"],
+              ["May", "218", "521", "9,905"],
+              ["June", "241", "602", "11,430"],
+              ["July", "258", "641", "12,015"],
+              ["August", "263", "659", "12,380"],
+              ["September", "271", "674", "12,910"]
+            ]
+          },
+          { "kind": "text", "body": "In 2019 this pantry did about 90 households a month and we were open one day a week.\n\nHal Brenner telephoned in March and asked what that line had done since 2019, and I read it to him off this page. He printed it in [url=synth://brenners-notebook.email/]the Notebook[/url] and he got it right, which after this summer I no longer take for granted. [url=synth://thequarry.news/]The Quarry[/url] ran the county's own assistance figures in August and ours are the same shape, which is a thing I would rather not have in common with anybody." },
+          { "kind": "heading", "level": 2, "text": "Giving" },
+          { "kind": "text", "body": "[b]Money goes further than groceries.[/b] A dollar here buys about four dollars at the regional food bank, because we pay a handling fee by the pound and not a shelf price. If you were going to spend $20 on cans for us, $20 in the box does more, and I promise not to be offended if you do the cans anyway, because people like to bring something and that is not nothing.\n\nCheques to [b]St Mark's Lutheran Church, 412 Bellamy Street, Marchfield[/b], with [i]pantry[/i] on the memo line, or it goes in the general fund and Gary has to move it by hand.\n\nCash in the wooden box inside the hall door. It is emptied Tuesday and Thursday by two people together, which is not because of anybody, it is just how it is done.\n\nWe do not have a card reader. Somebody set one up for us in 2021 and it took 2.9% and thirty cents of every gift and we took it down after four months." },
+          { "kind": "text", "body": "[b]We will never telephone you for money.[/b] Not for the pantry, not for the roof, not ever.\n\nIn August a page went up at [url=synth://stmarksverity-give.click/]stmarksverity-give.click[/url] using our name and a photograph of the front of this building taken from the street. It is not ours. Two people we know of gave to it, one of them $60. We reported it to the registrar in August and to the sheriff's office in September and it is still up.\n\nIf you are ever unsure whether something is us, telephone the office. If I am not here the machine answers and I clear it Tuesday morning." },
+          { "kind": "heading", "level": 2, "text": "Volunteers" },
+          { "kind": "text", "body": "Tuesday wants two people from 12:30 to 4:30 and has two, both of whom are over eighty.\n\nThursday wants four and has three.\n\nFirst Saturday wants six and has eleven, because Saturday morning is the shift everybody wants, and I say that with love.\n\nThe truck comes from Steuben on the third Wednesday at about 10:00 and wants four people who can lift a 40 lb case, for about ninety minutes.\n\nThere is a sheet on the hall door. There is no form, no application, no background check unless you are going to be alone with children, and nobody will telephone you to follow up, so if you mean it, write your name and then come." },
+          { "kind": "heading", "level": 2, "text": "If you need food and it is not a pantry day" },
+          { "kind": "text", "body": "Telephone the church office, Tuesday through Friday 9:00 to 1:00, and if I am here I will meet you at the hall door and you will not have to wait for Tuesday.\n\nOutside those hours, Lois Hoppes's home number is written on the Fenn Avenue door in marker. It has been there since 2022. The council discussed painting over it and Lois said to leave it, and it is still there.\n\n[url=synth://ashkettlevfd.org/]Station 4 in Ashkettle[/url] keeps a cupboard in the hall and somebody is usually at the station on a Monday evening. They are not a pantry and they do not want to be described as one, and they have never once turned anybody away.\n\nThe county's own list of assistance programmes is at [url=synth://verity.county.gov/]verity.county.gov[/url]. The page that used to list the pantries came off in about 2021 and what replaced it is a telephone number that goes to the state." },
+          { "kind": "heading", "level": 2, "text": "The other pantries and meals in the county" },
+          { "kind": "text", "body": "I check these twice a year and last checked them in the first week of September 2026. If one of them is wrong, telephone me and I will fix it the same day, because a wrong line here means somebody drives." },
+          {
+            "kind": "table",
+            "head": ["Where", "When", "Note"],
+            "rows": [
+              ["St Mark's, 412 Bellamy St, Marchfield", "Tue 1-4, Thu 4-7, first Sat 9-11:30", "Here. Fenn Avenue door."],
+              ["Gridfall Council of Churches, 118 Depot St", "Mon, Wed, Fri 9-noon", "The biggest one. Photo ID asked for, not required."],
+              ["Halsey United Methodist, 214 Front St", "Wed 10-12, Sat 9-11", "Closed the last two weeks of December."],
+              ["New Carrow Community Center", "Tue and Fri 12-3", "Also does the school backpack bags."],
+              ["Station 4 hall, Route 62 at Kestrel Rd, Ashkettle", "Third Saturday 9-11", "A cupboard, not a pantry. Ask anyway."],
+              ["Kerrin Consolidated School", "School days, through the nurse", "Backpack programme. Term time only."],
+              ["Milbrook", "None since 2019", "The fire company keeps a box. Telephone first."],
+              ["Coyne Flats", "None", "Nearest is here or New Carrow. We deliver, see above."],
+              ["Community supper, First Presbyterian, Gridfall", "Wednesday 5:00-6:30", "Hot meal, no questions, eat in or take out."],
+              ["Summer lunch, Marchfield school district", "June 15 - Aug 21, weekdays 11:30-12:30", "Ward Street park and the pool. Under 18, no sign-up."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Two things on the internet about us are wrong" },
+          { "kind": "text", "body": "People arrive on the wrong day because of them, so I am going to write them down here.\n\n[b]The county assistant[/b] at [url=synth://ask.verity.ai/chat]ask.verity.ai[/url] says this pantry is open Monday, Wednesday and Friday, 9:00 a.m. to 5:00 p.m. We have never been open on a Monday in sixteen years. In July a woman sat on the ramp with two children for twenty minutes on a Monday before Ed came out to bring the bins in. There is no correction form on that site. I have looked.\n\n[b]CountyFacts[/b] lists a pantry at Marchfield Alliance on Rensbury Street in its [url=synth://countyfacts.info/post/what-is-verity-county-known-for]county guide[/url]. That pantry closed in 2014. The building is a dance studio and the woman who runs it has been telling people where we are for eleven years, which is more than the website does.\n\nOur hours are also posted on [url=synth://boards.gridfall.net/]the old Gridfall boards[/url], and those were right when somebody put them there in 2021. Two of the three are still right. That is better than either of the above and it was done by a person for nothing." },
+          { "kind": "text", "body": "[url=synth://marchfieldlibrary.blog/]Marchfield Public Library[/url] prints this page for anyone who asks and keeps a few copies at the reference desk. Karen Fennimore set that up herself and told me about it afterwards." },
+          { "kind": "text", "body": "[i]Shortage list counted and this page changed Friday 16 October 2026. -- A.K., from what Lois wrote on the back of an envelope.[/i]" }
+        ]
+      },
+      {
+        "id": "bulletins",
+        "name": "Bulletins",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Bulletin archive" },
+          { "kind": "text", "body": "Every Sunday bulletin since January 2012 is a PDF on the computer in the office. [b]They are not links on this page any more[/b], and I am sorry about that, and here is what happened.\n\nWhen the site moved to a new host in March the bulletin folder did not come with it. The files are not lost. They are on the office machine, on a drive in the safe, and on a second drive that goes home with the treasurer every quarter. What is gone is the part of the website that pointed at them.\n\nThe company that built this site is the one that does the synod's, and the ticket has been open since [b]Monday 6 April[/b]. I have telephoned four times. The last person told me the folder was \"not in the migration scope,\" and I wrote that down because I did not want to misquote him.\n\n[b]Telephone the office or e-mail and I will send you any bulletin the same morning.[/b] Say the date if you know it. If you do not know the date, tell me what you remember -- it is almost always a baptism, a wedding or a funeral -- and I will find it, because I also have the register and the register is on paper." },
+          { "kind": "heading", "level": 2, "text": "Recent" },
+          {
+            "kind": "table",
+            "head": ["Sunday", "File", "Size", "What is in it"],
+            "rows": [
+              ["18 October 2026", "2026-10-18-bulletin.pdf", "412 KB", "Harvest Home. Both services. The pantry shortage list is on the back page and it is the current one."],
+              ["11 October 2026", "2026-10-11-bulletin.pdf", "388 KB", "Pentecost 19. Baptism of Nora Jean Weitzel at 10:45. Treasurer's report for September, one page, and the roof fund line."],
+              ["4 October 2026", "2026-10-04-bulletin.pdf", "396 KB", "St Francis. Blessing of the animals at 2:00 in the lower lot, which is a separate two-page insert and mostly a map."],
+              ["27 September 2026", "2026-09-27-bulletin.pdf", "374 KB", "Pentecost 17. Annual meeting notice, first of three."],
+              ["20 September 2026", "2026-09-20-bulletin.pdf", "381 KB", "Pentecost 16. Sunday school starts. The list of teachers, which had two mistakes in it."],
+              ["13 September 2026", "2026-09-13-bulletin.pdf", "369 KB", "Pentecost 15. Back to two services. God's Work Our Hands, with the roster of who went where."],
+              ["6 September 2026", "2026-09-06-bulletin.pdf", "358 KB", "Last summer service at 9:30. Labor Day weekend, 41 in attendance, which is the low for the year."],
+              ["30 August 2026", "2026-08-30-bulletin.pdf", "362 KB", "Pentecost 12. Eileen Kleppinger's last Sunday with the choir before her surgery."],
+              ["23 August 2026", "2026-08-23-bulletin.pdf", "355 KB", "Pentecost 11. Blessing of the backpacks."],
+              ["16 August 2026", "2026-08-16-bulletin.pdf", "351 KB", "Pentecost 10. Pastor away, supply preacher, order of service is the shorter one."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The ones people ask for" },
+          {
+            "kind": "table",
+            "head": ["Date", "File", "Size", "What is in it"],
+            "rows": [
+              ["Sunday 5 April 2026", "2026-04-05-easter.pdf", "1.4 MB", "Easter. Both services, brass, and the full list of lily donors with who each one is in memory of. This is the single most requested file we have."],
+              ["Friday 3 April 2026", "2026-04-03-goodfriday.pdf", "302 KB", "Good Friday, 7:00 p.m. Tenebrae. Seven readers named."],
+              ["Thursday 2 April 2026", "2026-04-02-maundy.pdf", "318 KB", "Maundy Thursday. Stripping of the altar."],
+              ["Wednesday 18 February 2026", "2026-02-18-ashwednesday.pdf", "288 KB", "Ash Wednesday, noon and 7:00 p.m."],
+              ["Wednesday 24 December 2025", "2025-12-24-christmaseve.pdf", "1.1 MB", "Both Christmas Eve services, all four anthems, and the candle instructions that we print every year and that nobody reads."],
+              ["Sunday 2 November 2025", "2025-11-02-allsaints.pdf", "426 KB", "All Saints. The names read, in order, with dates."],
+              ["Sunday 20 April 2025", "2025-04-20-easter.pdf", "1.3 MB", "Easter 2025. Same as above, different lilies."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Large print, and the people who cannot get here" },
+          { "kind": "text", "body": "The large-print bulletin is the same file set at 18 point. It runs to 1.1 MB, which mattered when half the congregation was on dial-up and does not matter now.\n\nThe cassette, and then the CD, went out to shut-ins from 1987 until June 2023, when the duplicator died and the replacement was $610 for a machine that copies a format nobody makes. Sixteen people were on that list. Four of them now have a grandchild who holds a telephone up at the 10:45 service, which is not allowed and which I am not going to mention to anybody. The other twelve get a printed bulletin in Monday's mail. It costs the church $73 a quarter in postage and it is the best $73 we spend.\n\nThere is no livestream. We tried in 2021 with a tablet on a music stand and the sound in the sanctuary was unusable. The council voted in February not to spend $3,400 on doing it properly and to spend $900 on the hearing loop instead. It was the right call and I have not heard one person say otherwise." },
+          { "kind": "heading", "level": 2, "text": "Older than 2012" },
+          { "kind": "text", "body": "There is no file. Before 2012 the bulletin was typed, run on the mimeograph and then on the copier, and folded on the table in the office on a Friday afternoon by whoever was around.\n\nWhat exists on paper is the bound set in the church library: 1954 to 1979 complete, 1980 to 1992 with gaps, 1993 onward complete. Two people have come in to look at them this year, both of them tracing a family, and both found what they came for.\n\nKaren Fennimore at [url=synth://marchfieldlibrary.blog/]the library[/url] found the Ledger's notice of our dedication, 26 September 1926, on the microfilm and printed it out for us. It is in the case in the narthex. She would not take anything for it, so I put five dollars in the Friends' jar on the way out." },
+          { "kind": "text", "body": "[i]Last changed Friday 9 October 2026. -- A.K.[/i]" }
+        ]
+      },
+      {
+        "id": "building",
+        "name": "Building Fund",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The parish hall roof" },
+          { "kind": "image", "seed": "stmarks-hall-roof-patch-2026", "imgKind": "photo", "caption": "The flat roof over the 1958 hall, from the fire escape. The silver is the 2017 patch. The dark area at the top of the picture is over the kitchen and it is the one that matters." },
+          { "kind": "text", "body": "The 1958 parish hall has a flat tar-and-gravel roof. It was patched in 2009 and again in 2017. It leaks over the kitchen and over the storeroom where the pantry keeps the dry goods, which is why this became urgent this year and was not urgent in 2019 when the same roof was the same age.\n\nIn August we moved 40 cases off the floor and onto pallets and the council stopped calling it a maintenance item." },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["What", "Tear off and replace, 4,900 sq ft, EPDM membrane, new edge metal and two roof drains"],
+              ["Bid", "$46,800, Keiper Roofing, Halsey"],
+              ["Bid dated", "Thursday 2 July 2026, good 90 days"],
+              ["Second bid", "$52,115, a company in the state capital, which would not come out to look at it twice"],
+              ["Third bid", "Nobody would come. Two did not return the call."],
+              ["Raised, at 30 September", "$31,240"],
+              ["Still needed", "$15,560"],
+              ["Held by", "The roof fund, Marchfield Savings, two signatures"]
+            ]
+          },
+          { "kind": "text", "body": "The Keiper bid expired on 30 September. Dale Keiper telephoned Gary on the Monday and said he would hold the price to [b]31 December[/b] and that after that it is whatever the membrane costs in the spring. He put that in writing when Gary asked him to, which Gary asked him to because that is how Gary is." },
+          { "kind": "heading", "level": 2, "text": "Where it has come from" },
+          {
+            "kind": "table",
+            "head": ["Date", "What", "Amount", "Running"],
+            "rows": [
+              ["6 October 2025", "Council designates the 2025 fall appeal to the roof", "$4,110", "$4,110"],
+              ["24 November 2025", "Thanksgiving offering", "$1,285", "$5,395"],
+              ["28 December 2025", "Year-end gifts", "$3,940", "$9,335"],
+              ["11 January 2026", "Memorial, Wilma Detweiler, family designated", "$1,415", "$10,750"],
+              ["22 February 2026", "Soup supper, hall", "$612", "$11,362"],
+              ["29 March 2026", "Anonymous, in an envelope, in the plate", "$5,000", "$16,362"],
+              ["5 April 2026", "Easter offering, half designated", "$2,880", "$19,242"],
+              ["9 May 2026", "Rummage sale, two days", "$1,744", "$20,986"],
+              ["14 June 2026", "Chicken barbecue with the Ashkettle fire company", "$1,388", "$22,374"],
+              ["20 June 2026", "Quilters' auction", "$905", "$23,279"],
+              ["19 July 2026", "Memorial, Harold Fegley", "$2,260", "$25,539"],
+              ["15 August 2026", "Corn roast, lower lot", "$1,141", "$26,680"],
+              ["13 September 2026", "Fall appeal, first Sunday", "$3,310", "$29,990"],
+              ["27 September 2026", "Fall appeal, second Sunday", "$1,250", "$31,240"]
+            ]
+          },
+          { "kind": "text", "body": "The $5,000 in March came in a plain envelope in the plate at the 8:30 with [i]roof[/i] written on it in pencil. The council spent part of a meeting deciding whether to try to find out who it was and decided not to, 7 to 2." },
+          { "kind": "heading", "level": 2, "text": "How to give to it" },
+          { "kind": "text", "body": "Cheque to [b]St Mark's Lutheran Church[/b], 412 Bellamy Street, Marchfield, with [i]roof[/i] on the memo line.\n\nIn the plate, in an envelope, marked.\n\nBy bank transfer from your own bank, if your bank does that. Telephone Gary Weitzel and he will read you the numbers. We do not have a donate button on this website and we are not getting one.\n\n[b]Nobody from this church will telephone you or e-mail you asking for money.[/b] See the note on the [url=/pantry]pantry page[/url] about the page that used our name in August." },
+          { "kind": "heading", "level": 2, "text": "The things this fund does not cover" },
+          { "kind": "text", "body": "[b]The sanctuary slate.[/b] 1926, original, and the estimate to do it properly was $96,000 in 2024 and nobody has asked for a newer one. The council is not raising that this year and has said so out loud, which I appreciated.\n\nSo we patch it. Ed Trexler and Dean Fegley go up in April and again in October and come down with four or five broken ones each time, and Ed is 68 and Dean is 71 and that is the whole of our slate programme. It is not a plan. It is what we are doing.\n\n[b]The boiler.[/b] A 1978 Weil-McLain, converted from oil to gas in 1994, serviced every September by Bortner Propane, who have said for four years that it owes us nothing. There is $8,900 in the boiler reserve and a new one is somewhere north of $30,000 with the piping. Everybody knows how this ends and nobody wants to be the council that spends the roof money on it.\n\n[b]The elevator.[/b] Raised in 1998, in 2006 and in 2014. It is not happening. The chair lift on the hall stairs went in in 2015, cost $4,100, works, and gets used about six times a Sunday.\n\n[b]The parking lot.[/b] It needs sealing. It has needed sealing since 2019. It will keep needing sealing." },
+          { "kind": "heading", "level": 2, "text": "The treasurer's position on all of this" },
+          { "kind": "text", "body": "Gary Weitzel puts the fund balances in the bulletin every week and the full quarterly statement on the table in the narthex, four pages, stapled. If you want it in the mail he will mail it, and he will not ask why.\n\nHe has asked me to put this on the website, so here it is, in his words as near as I took them down: [quote=Gary Weitzel]The roof is $46,800 whether we talk about it or not. We have $31,240. Everything else on this page is a reason, and a reason is not a roof.[/quote]" },
+          { "kind": "text", "body": "[i]Last changed Friday 16 October 2026 with the September figures. -- A.K.[/i]" }
+        ]
+      },
+      {
+        "id": "memorials",
+        "name": "Memorials",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Memorials" },
+          { "kind": "text", "body": "When somebody dies, people give. The family says where it goes. If the family does not say, it goes into the memorial fund and the memorial committee spends it once a year, in October, on something the congregation will use.\n\nThis page is the list. It is the only complete one we have. The brass plates on the board in the narthex stopped in 1994 because the board filled up and the new board was voted down twice on the grounds that the old one was the right one." },
+          { "kind": "heading", "level": 2, "text": "2026" },
+          {
+            "kind": "table",
+            "head": ["Name", "Died", "Service", "Memorials to", "Received"],
+            "rows": [
+              ["Wilma Ruch Detweiler, 94", "Saturday 3 January 2026", "Tuesday 6 January, here", "The roof fund, and the hearing loop", "$1,415 and $900"],
+              ["Raymond E. Stauffer, 81", "Friday 13 March 2026", "Tuesday 17 March, here", "Food pantry", "$2,040"],
+              ["Nancy Kepner Hartle, 77", "Tuesday 21 April 2026", "Saturday 25 April, here", "Altar guild, and the choir", "$785"],
+              ["Donald W. Fry, 88", "Tuesday 9 June 2026", "Friday 12 June, Gridfall", "Memorial fund, undesignated", "$610"],
+              ["Harold L. Fegley, 90", "Tuesday 14 July 2026", "Saturday 18 July, here", "The roof fund", "$2,260"],
+              ["Betty Jane Osterhout, 92", "Tuesday 25 August 2026", "Saturday 29 August, here", "Food pantry", "$1,180"],
+              ["Infant son of the Reber family", "Saturday 26 September 2026", "Private", "The family asked that nothing be given. It went to the pantry.", "$430"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "2025" },
+          {
+            "kind": "table",
+            "head": ["Name", "Died", "Service", "Memorials to", "Received"],
+            "rows": [
+              ["Paul H. Kleinfelter, 79", "Tuesday 11 February 2025", "Saturday 15 February, here", "Food pantry", "$1,620"],
+              ["Arlene M. Trexler, 85", "Sunday 13 April 2025", "Thursday 17 April, here", "Memorial fund, undesignated", "$940"],
+              ["Ruth Hoppes, 96", "Tuesday 3 June 2025", "Saturday 7 June, here", "Food pantry, \"and nothing else\"", "$3,105"],
+              ["Wayne A. Sowle, 73", "Tuesday 22 July 2025", "Friday 25 July, Coyne Flats", "Quilters", "$520"],
+              ["Marjorie L. Fry, 90", "Tuesday 19 August 2025", "Saturday 23 August, here", "Memorial fund, undesignated", "$1,075"],
+              ["Kenneth R. Boop, 84", "Tuesday 30 September 2025", "Saturday 4 October, here", "Cemetery fund", "$860"],
+              ["Dolores Weitzel Kern, 88", "Wednesday 26 November 2025", "Monday 1 December, here", "Music fund", "$1,340"]
+            ]
+          },
+          { "kind": "text", "body": "Ruth Hoppes was Lois's mother-in-law and she started the pantry in the hall in 2010 with a card table and four cases of soup. The \"and nothing else\" in her line above is hers. It is what she wrote on the paper in the folder in the office, in 2014, and it is underlined twice." },
+          { "kind": "heading", "level": 2, "text": "What the memorial committee did with it" },
+          { "kind": "text", "body": "They met on Monday 12 October 2026 and spent the undesignated fund, which was $3,310 with what carried over. This is the whole list." },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Convection oven for the hall kitchen, $2,180, which the quilters and the pantry both wanted and which arrives in November.",
+              "Forty folding chairs, $624, because we have been borrowing from the fire company since 2019 and it is embarrassing.",
+              "Two rolling shelf units for the pantry storeroom, $398, off the floor, which is the whole point of them.",
+              "The rest, $108, to the roof fund, because that is what the committee does with the odd money every year."
+            ]
+          },
+          { "kind": "text", "body": "The hearing loop was paid for out of the Detweiler memorial, $900, installed in February. Wilma was deaf in one ear from 1979 on and told people about it at length, so the committee did not have to discuss it for long." },
+          { "kind": "heading", "level": 2, "text": "A note about the obituaries" },
+          { "kind": "text", "body": "The Ledger's website has been assembling obituaries by machine since 2023. I do not know how else to put it.\n\nFor Wilma Detweiler in January it gave the service as \"St Mark's Lutheran Church, Gridfall.\" There is a St Mark's in Gridfall, it is Episcopal, and four people went there on the Tuesday morning and stood in the vestibule. The rector there telephoned me himself and was very kind about it.\n\nThe family asked for a correction. What came back was the same notice with the town changed to Marchfield and the date of death changed to 9 January, which is the day the notice was filed. It has said that ever since. [url=synth://now.verityledger.com/corrections]Their corrections page[/url] does not carry it, and I have checked in January, in March and in September.\n\nFor Harold Fegley in July, the same site ran a paragraph about his \"decades of service to the community\" that belongs to a Harold Fegley in another state who died in 2019. It is still there.\n\n[b]So: the notices we give to families are typed here, by me, and I read them back over the telephone before they go anywhere.[/b] If you see a notice for one of ours somewhere and it does not match what is on this page, this page is right, and I would like to know where you saw it." },
+          { "kind": "text", "body": "[i]Last changed Friday 16 October 2026. -- A.K.[/i]" }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Office & Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The office, and who does what" },
+          { "kind": "text", "body": "St Mark's Lutheran Church, 412 Bellamy Street, Marchfield.\n\n[b]Office hours: Tuesday through Friday, 9:00 a.m. to 1:00 p.m.[/b] Closed Monday, and closed the week between Christmas and New Year.\n\nThe answering machine is an actual answering machine. It holds about thirty messages and I clear it first thing Tuesday, so a Friday afternoon message waits until Tuesday. If it will not wait, the pastor's mobile number is on the sheet by the Bellamy Street door and in every bulletin." },
+          {
+            "kind": "table",
+            "head": ["Who", "What", "When you will find them"],
+            "rows": [
+              ["The Rev. Dennis Kleppinger", "Pastor, called 2011", "Tuesday to Thursday, and Sunday. Three-quarter time since 2022, at the congregation's request and not his."],
+              ["Arlene Kepner", "Church secretary since 2009", "Tuesday to Friday mornings. Does this website."],
+              ["Lois Hoppes", "Food pantry coordinator since 2010", "Tuesday and Thursday afternoons, and most of Monday, unofficially."],
+              ["Gary Weitzel", "Treasurer since 2014", "Sunday between services, at the table in the narthex."],
+              ["Dean Fegley", "Council president", "Second Tuesday, and up a ladder in April and October."],
+              ["Marilyn Oberholtzer", "Organist and choir director, 41 years", "Thursday evening, Sunday morning, and the two hours before anything."],
+              ["Ed Trexler", "Custodian, 22 years", "Early. Before you."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Finding the building" },
+          { "kind": "text", "body": "Two blocks north of the Marchfield town hall on Bellamy Street, corner of Fenn Avenue. Brick, with the tower and the red doors.\n\nThe red doors on Bellamy are the church and they are open Sunday morning and locked the rest of the week. [b]The parish hall door is on Fenn Avenue[/b] and that is the one for the office, the pantry, the quilters, AA, and anything else on any other day. It has the ramp.\n\nParking is the lot behind the building off Fenn, seven spaces, and the street. On Sunday the bank next door lets us use theirs and has since 1998 and has never once mentioned it." },
+          { "kind": "heading", "level": 2, "text": "We are not on anything" },
+          { "kind": "text", "body": "This website is all we have. There is no account anywhere else that belongs to this congregation.\n\nThere is a page on [url=synth://gridline.social/]Gridline[/url] that carries our name and reposts our service times. The service times on it are correct. It is not us, we do not know who set it up, and when somebody left a prayer request on it in May we did not see it for eleven days, and only then because a member mentioned it in the coffee line. If you need us, telephone the office or come to the Fenn Avenue door." },
+          { "kind": "heading", "level": 2, "text": "The guestbook" },
+          { "kind": "text", "body": "This came with the template. I turned the form off in June 2019 after it filled up overnight, twice. The last four entries are still on the page because I cannot work out how to remove them without removing the whole box, and Kurt is in the state capital." },
+          {
+            "kind": "guestbook",
+            "entries": [
+              { "author": "Peggy Rauhauser", "time": "2018-05-14", "body": "Thank you for the beautiful service for my father on Saturday. Marilyn played his hymn without being asked. We noticed." },
+              { "author": "a visitor", "time": "2018-11-26", "body": "Came to the Thanksgiving Eve service by accident, I was looking for the Methodist church. Stayed anyway. Nice organ." },
+              { "author": "PharmaDirect24", "time": "2019-06-02", "body": "Best prices guaranteed fast shipping worldwide no prescription needed click here" },
+              { "author": "casino-bonus", "time": "2019-06-02", "body": "{{spintax_greeting}} great blog! {{city}} readers get {{bonus_amount}} free" }
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "About this website" },
+          { "kind": "text", "body": "It was made in 2011 by Kurt Weitzel, Gary's son, who was in high school and who is now in the state capital and has a child of his own. I change the words. I do not change anything else, because the one time I did the whole left-hand side went away and Kurt talked me through fixing it over the telephone on Thanksgiving Day.\n\nThe hosting is $71 a year on the treasurer's card. The renewal notice goes to an e-mail address that belonged to a pastor who left in 2011, and Gary has it forwarded to himself, and every year he says he will sort that out properly.\n\nI use the computer in the office, which is the one with the good keyboard. There are eleven pages of instructions in a binder on the shelf above it, written by Kurt in 2011, and eight of them are still right." },
+          { "kind": "heading", "level": 2, "text": "What has changed on this site" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "16 October 2026 -- Pantry shortage list recounted. September figures on the roof page. Memorial committee spending added.",
+              "9 October 2026 -- Bulletin page rewritten to say plainly that the files are not linked, after the fourth person asked.",
+              "2 October 2026 -- Other pantries table checked against every one of them by telephone. New Carrow changed from Wednesday to Friday.",
+              "25 August 2026 -- Added the warning about the page using our name.",
+              "14 June 2026 -- Roof fund page created. Council asked for it in May.",
+              "6 April 2026 -- Bulletin links stopped working. Ticket opened.",
+              "3 March 2026 -- Site moved to the new host. This is the day the bulletins went.",
+              "11 November 2025 -- Service times corrected. The summer times had been up since July.",
+              "20 August 2024 -- Photograph of the front replaced. The old one had the 1996 sign in it.",
+              "2 May 2019 -- Pantry hours changed to add Thursday evening. This was the last change before I started keeping this list."
+            ]
+          },
+          { "kind": "text", "body": "[i]Last changed Friday 16 October 2026. -- A.K.[/i]" }
+        ]
+      }
+    ]
+  }
+}

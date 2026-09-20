@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "domain": "suspended.gridfallhost.net",
+  "title": "Account Suspended",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "The page Gridfall Host serves in place of any site whose account is past due, over quota or unrenewed: one paragraph, a phone number and a footer.",
+  "tags": ["hosting", "gridfall", "2026"],
+  "links": [],
+  "data": {
+    "navLabel": "Account Suspended",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Account Suspended",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Account Suspended" },
+          { "kind": "text",
+            "body": "[b]This account has been suspended. Please contact your hosting provider.[/b]" },
+          { "kind": "text",
+            "body": "If you are the account holder, call the number below and have the domain name with you. If you arrived here from a link somewhere else, there is nothing to find on this address. The site that was here is not being served and this page is what is served instead." },
+          { "kind": "heading", "level": 2, "text": "Support" },
+          { "kind": "text",
+            "body": "Gridfall Host billing and support\n[b]1-888-540-2200[/b]\nMonday to Friday, 8:00 a.m. to 4:30 p.m.\nAfter hours, leave the domain name and a number.\n\nThere is no charge to reinstate. An account paid before 3 p.m. is normally back the same afternoon." },
+          { "kind": "heading", "level": 2, "text": "Common reasons" },
+          { "kind": "list", "ordered": false, "items": [
+            "The card on file expired and the renewal did not go through.",
+            "An invoice is more than 21 days past due.",
+            "The monthly transfer allowance was exceeded.",
+            "A mailbox on the account was used to send bulk mail.",
+            "The account was closed at the customer's request and the domain still points here."
+          ] },
+          { "kind": "text",
+            "body": "Files on a suspended account are held for 90 days and then removed. Backups are part of the plan and stop with the plan, so there is no copy after that. We cannot tell you over the phone what was on the account; we can only turn it back on." },
+          { "kind": "text",
+            "body": "[i]This page is served for every suspended account on this host. It does not name the address you typed and it is not evidence that the address was ever ours.[/i]" },
+          { "kind": "text",
+            "body": "Gridfall Host, a service of Cassaday Data Services, Inc., Pell City.\nCopyright 2026. All rights reserved.\n\ngh-web-04 - page generated Thursday, 17 September 2026, 06:12 CDT" }
+        ]
+      }
+    ]
+  }
+}

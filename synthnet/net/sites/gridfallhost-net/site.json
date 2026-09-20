@@ -1,0 +1,1421 @@
+{
+  "schema": 1,
+  "domain": "gridfallhost.net",
+  "title": "Gridfall Host",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "Web hosting, e-mail and domain names for Verity County, run by two people out of two rooms on Third Street in Gridfall since 2002.",
+  "tags": [
+    "gridfall",
+    "hosting",
+    "business",
+    "infrastructure",
+    "2026"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "gridfallswap.net",
+    "gridfalldetectorists.net",
+    "sdrlisteners.org",
+    "veritybirders.org",
+    "countysoftball.org",
+    "verityquilters.net",
+    "brackenlanegarage.net",
+    "stmarks-verity.org",
+    "gridfalltire.com",
+    "kestrel-journal.net",
+    "verity.wiki",
+    "thequarry.news",
+    "verityrail-preservation.org",
+    "ashkettlevfd.org",
+    "marchfieldlibrary.blog",
+    "troop62.verity.net",
+    "gridfall.chat",
+    "askverity.com"
+  ],
+  "data": {
+    "navLabel": "Gridfall Host",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Gridfall Host"
+          },
+          {
+            "kind": "marquee",
+            "text": "*** 3 SEPTEMBER: MAIL FROM THESE MACHINES TO TWO LARGE PROVIDERS IS STILL BEING DEFERRED. IT IS NOT FIXED. SEE THE STATUS PAGE. ***"
+          },
+          {
+            "kind": "text",
+            "body": "Web hosting, e-mail and domain names for people and businesses in Verity County.\n\nTwo rooms on the second floor at 118 Third Street in Gridfall, over the copy shop. Five machines, four of them in a rented cabinet forty-three miles away in Ardo and one under the window here. Two people, one of them three days a week.\n\nWe started in March 2002. There are [b]268 sites on these machines across 191 accounts[/b]. About sixty of those accounts are clubs, churches, leagues, one quilting guild and one historical society, and they pay nine dollars a month, and that is on purpose and is not going to change."
+          },
+          {
+            "kind": "image",
+            "seed": "gridfallhost-third-street-window",
+            "imgKind": "banner",
+            "caption": "The office window, from the pavement on Third Street. The machine on the sill is the backup machine and it is called kerrin. The buzzer downstairs works about half the time."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is on every plan"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "A machine in a cabinet in Ardo on a floor that has had power continuously since we moved into it in 2004. That is not a promise. It is a description of what has happened so far.",
+              "Certificates, free, renewed automatically. See the February entry on the status page for what that looks like when the automatic part stops.",
+              "A copy of your whole account taken every night and kept for fourteen nights. Read [url=/kb-backups]the backups page[/url] before you decide that is a backup, because it is not one, and I would rather say so now than in a bad week.",
+              "A control panel you log into with a password. There is no application for your telephone and there is not going to be one.",
+              "Somebody in this county answers the telephone between nine and four on weekdays. It is either me or Renata and there is nobody else it could be.",
+              "No setup fee, no contract, no minimum term. One month's notice either way, and if you give us less we will not chase you for it."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Prices, short version"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Plan",
+              "Per month",
+              "Roughly who it is for"
+            ],
+            "rows": [
+              [
+                "Page",
+                "$38 a year",
+                "Files only. No database, no mail. A page that changes twice a year."
+              ],
+              [
+                "Standard",
+                "$9",
+                "A club, a church, a league, a business page with hours on it."
+              ],
+              [
+                "Standard Plus",
+                "$11",
+                "The same with a database under it, or a message board that is quiet."
+              ],
+              [
+                "Board",
+                "$14",
+                "Forum software with people actually posting on it."
+              ],
+              [
+                "Virtual machine",
+                "$16 to $34",
+                "You want root and you know why you want root."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The full list, with space, databases, mailboxes and what it costs us, is on [url=/pricing]the prices page[/url].\n\nDomain names are [b]$18 a year[/b] for a .com, a .net or a .org, and they are $18 a year at renewal as well, every year, for as long as you keep it. That last part is the whole trick the large registrars run and I am not going to run it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where the machines are"
+          },
+          {
+            "kind": "text",
+            "body": "Four machines in cabinet 14, row C, at a colocation building in Ardo. One machine here in the office, which does the backups and nothing else.\n\nThey are called [b]nye[/b], [b]dorrance[/b] and [b]cobb[/b], which are the three web machines, [b]tessler[/b], which is the mail machine, and [b]kerrin[/b], which is the one on the window sill. They are named after places in the north end of this county because in 2002 I needed five names and there was a map on the wall.\n\nEverything was in this building until 2004. After the summer of 2003 I moved it to Ardo, which cost more than I had at the time and was still obviously the right thing to have done."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we do not do"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Website design. We host what you make. If you need somebody to build it, there is a list of three names by the telephone and two of them are the same woman's sons.",
+              "Card payments on our machines. If you want to sell things, use something that takes the cards somewhere else and sends people back to you.",
+              "Bulk mail. Not from here, not on any plan, not once. See the acceptable use page, which is short.",
+              "Reselling. If you want to sell hosting, buy a virtual machine from us and sell your own and tell your customers your name and not mine.",
+              "Anything described as managed, enterprise, or a solution."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Some of what is on these machines"
+          },
+          {
+            "kind": "text",
+            "body": "This row went up in 2011 and I add to it when somebody asks. Everybody on it said yes. There are 268 sites here and this is fifteen of them, so do not read anything into the ones that are missing."
+          },
+          {
+            "kind": "buttons",
+            "label": "Sites hosted here:",
+            "items": [
+              {
+                "label": "The Gridfall Boards",
+                "seed": "gh-btn-boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "GridfallSwap",
+                "seed": "gh-btn-swap",
+                "domain": "gridfallswap.net"
+              },
+              {
+                "label": "Gridfall Detectorists",
+                "seed": "gh-btn-det",
+                "domain": "gridfalldetectorists.net"
+              },
+              {
+                "label": "SDR Listeners",
+                "seed": "gh-btn-sdr",
+                "domain": "sdrlisteners.org"
+              },
+              {
+                "label": "Verity County Birders",
+                "seed": "gh-btn-birders",
+                "domain": "veritybirders.org"
+              },
+              {
+                "label": "County Adult Softball",
+                "seed": "gh-btn-softball",
+                "domain": "countysoftball.org"
+              },
+              {
+                "label": "Verity Quilters Guild",
+                "seed": "gh-btn-quilt",
+                "domain": "verityquilters.net"
+              },
+              {
+                "label": "Bracken Lane Garage",
+                "seed": "gh-btn-bracken",
+                "domain": "brackenlanegarage.net"
+              },
+              {
+                "label": "St Mark's, Gridfall",
+                "seed": "gh-btn-stmarks",
+                "domain": "stmarks-verity.org"
+              },
+              {
+                "label": "Gridfall Tire & Alignment",
+                "seed": "gh-btn-tire",
+                "domain": "gridfalltire.com"
+              },
+              {
+                "label": "The Kestrel Journal",
+                "seed": "gh-btn-kestrel",
+                "domain": "kestrel-journal.net"
+              },
+              {
+                "label": "Verity Wiki",
+                "seed": "gh-btn-wiki",
+                "domain": "verity.wiki"
+              },
+              {
+                "label": "The Quarry",
+                "seed": "gh-btn-quarry",
+                "domain": "thequarry.news"
+              },
+              {
+                "label": "Verity Rail Preservation",
+                "seed": "gh-btn-vrps",
+                "domain": "verityrail-preservation.org"
+              },
+              {
+                "label": "Ashkettle Volunteer Fire",
+                "seed": "gh-btn-akvfd",
+                "domain": "ashkettlevfd.org"
+              }
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting hold of us"
+          },
+          {
+            "kind": "text",
+            "body": "[b]555-0181[/b], Monday to Thursday nine to four, Friday nine to one. It rings on Renata's desk first and mine second.\n\n[b]help@gridfallhost.net[/b], read twice a day by Renata and once at night by me.\n\n[b]555-0182[/b] is my house, for when a site is down outside those hours. It is on this page on purpose. I would rather you rang it at nine on a Sunday evening than sat looking at a blank page until Monday. In twenty-four years it has been rung about forty times and thirty-eight of those were fine."
+          },
+          {
+            "kind": "text",
+            "body": "[i]Last changed Friday 18 September 2026. The counter below came with a script in 2004 and it counts robots along with everybody else. The log says a bit over seventy percent of what asks for this page is not a person, and I have given up trying to subtract them.[/i]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 418266
+          }
+        ]
+      },
+      {
+        "id": "pricing",
+        "name": "Prices",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Prices"
+          },
+          {
+            "kind": "text",
+            "body": "All figures are US dollars. Monthly plans are billed on the day of the month you started. Yearly on any monthly plan is ten months' money, so $9 a month is $90 for the year.\n\nState sales tax is added where the state says it has to be, which for hosting in this state it does not, and for a domain name it does.\n\nNo setup fee. No minimum term. No contract. If you leave you are refunded the unused part of a year without being asked and without being telephoned about it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Monthly"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Plan",
+              "Per month",
+              "Space",
+              "Databases",
+              "Mailboxes",
+              "What it is for"
+            ],
+            "rows": [
+              [
+                "Standard",
+                "$9",
+                "5 GB",
+                "1",
+                "10",
+                "A club, a church, a league, a business page. Sixty-two accounts are on this."
+              ],
+              [
+                "Standard Plus",
+                "$11",
+                "10 GB",
+                "3",
+                "25",
+                "The same, with something running under it. Forty-one accounts."
+              ],
+              [
+                "Board",
+                "$14",
+                "25 GB",
+                "5",
+                "25",
+                "Forum software with people posting. The settings are already tuned for it."
+              ],
+              [
+                "Board Large",
+                "$29",
+                "100 GB",
+                "10",
+                "50",
+                "A busy board, or one with twenty years of attachments in it."
+              ],
+              [
+                "Virtual machine, small",
+                "$16",
+                "40 GB",
+                "your own",
+                "your own",
+                "1 processor, 2 GB of memory, root, and you look after it."
+              ],
+              [
+                "Virtual machine",
+                "$19",
+                "80 GB",
+                "your own",
+                "your own",
+                "2 processors, 4 GB."
+              ],
+              [
+                "Virtual machine, large",
+                "$34",
+                "200 GB",
+                "your own",
+                "your own",
+                "4 processors, 8 GB. This is the largest thing we sell."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Yearly only"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Plan",
+              "Per year",
+              "Space",
+              "Databases",
+              "Mailboxes",
+              "What it is for"
+            ],
+            "rows": [
+              [
+                "Page",
+                "$38",
+                "1 GB",
+                "none",
+                "none",
+                "Files. A page that changes twice a year and does not need to do anything."
+              ],
+              [
+                "Page with mail",
+                "$71",
+                "2 GB",
+                "none",
+                "5",
+                "The same with addresses at your own name on it."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "There is no monthly option on those two because the card fee on four dollars is not worth either of our time."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Domain names"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Per year"
+            ],
+            "rows": [
+              [
+                ".com, .net, .org",
+                "$18"
+              ],
+              [
+                ".us",
+                "$16"
+              ],
+              [
+                ".info",
+                "$14"
+              ],
+              [
+                ".blog",
+                "$26"
+              ],
+              [
+                ".news",
+                "$34"
+              ],
+              [
+                ".tv",
+                "$41"
+              ],
+              [
+                "Transfer one in",
+                "free, and we add on the year you already paid for"
+              ],
+              [
+                "Privacy on the public register",
+                "free"
+              ],
+              [
+                "Renewal",
+                "the same as the first year. Always. In writing, here."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "We do not do the thing where the first year is four dollars and the fourth year is fifty-five. The price above is the price in 2032.\n\nIf you already have a name somewhere else you do not have to move it. Ring and Renata will point it here while you are on the line."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Extras"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "Extra mailbox",
+                "$1 a month"
+              ],
+              [
+                "Extra 10 GB of space",
+                "$2 a month"
+              ],
+              [
+                "An address of your own on a machine, not shared",
+                "$4 a month"
+              ],
+              [
+                "Certificate",
+                "free"
+              ],
+              [
+                "Restoring your site from a backup",
+                "free"
+              ],
+              [
+                "Moving your site here from another host",
+                "free, and we do the work"
+              ],
+              [
+                "A copy of your whole account on a disc, posted to you",
+                "$9"
+              ],
+              [
+                "One of us looking at it with you on the telephone",
+                "free, and it is usually four minutes"
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What happens if you go over"
+          },
+          {
+            "kind": "text",
+            "body": "You get an e-mail from a person saying you are over, and then you get another one a week later. Nothing is switched off and nothing is upgraded.\n\nWe have never once moved somebody onto a larger plan and told them afterwards. If you find a host who does that, the word for the arrangement is not hosting."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Clubs, churches, leagues, volunteer fire, anything with a treasurer"
+          },
+          {
+            "kind": "text",
+            "body": "Nine dollars a month, on the Standard plan, and there is no form and no proof and no application. Ring up and say what you are.\n\nSixty-two accounts are on it. The rule is not charity and I want to be exact about that: a volunteer treasurer paying nine dollars from a tin does not ring me at eleven at night, does not want a marketing e-mail, does not use a tenth of the machine, and pays in January without being chased. It is the best business on these machines."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Why the numbers are odd"
+          },
+          {
+            "kind": "text",
+            "body": "Because they are what it costs plus a figure I picked in 2002 and have moved twice, both times by a dollar. Standard has been $9 since 2016; it was $8 from 2009 and $7 before that. Standard Plus has been $11 since 2017.\n\nIf yours goes up you get sixty days' notice in an e-mail a person wrote, with the old number and the new number in the first line and not in the fourth paragraph."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What it costs us, which you are welcome to know"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "A month"
+            ],
+            "rows": [
+              [
+                "Cabinet 14, row C, in Ardo",
+                "$340"
+              ],
+              [
+                "Transit, one carrier, 200 Mbit committed",
+                "$210"
+              ],
+              [
+                "A second carrier into that cabinet, which we do not buy",
+                "$260"
+              ],
+              [
+                "Machines, spread over five years",
+                "about $180"
+              ],
+              [
+                "Disks, now bought in pairs twice a year from two suppliers",
+                "about $60"
+              ],
+              [
+                "The office, two rooms on Third Street",
+                "$395"
+              ],
+              [
+                "Registrar, licences, the accountant, the insurance",
+                "about $160"
+              ],
+              [
+                "Renata, three days a week",
+                "the largest number on this list and it is not close"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Against that, the 191 accounts bring in somewhere around $2,900 in a month.\n\nWork it out. It is a living for one and a bit people and it has been for twenty-four years, and the reason it still is is that no year has yet ended with more accounts gone than arrived. 2019 came closest. I also do contract work for a lumber yard in Marchfield and for the school district up at Kerrin, and that is what the mortgage comes out of, and I am telling you that so you know what you are buying: a small thing that is looked after, and not a large thing that is not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Paying"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Card, monthly, on the day you started. The card is held by the processor and not by us and not on any machine in this building.",
+              "Check, yearly, made out to Gridfall Host. About forty of you do this and I prefer it and I am not allowed to give you a discount for it because the accountant says the paperwork costs more than the discount.",
+              "Bank transfer, yearly, if you are a district or a township and that is the only way your clerk is permitted to do it.",
+              "Not cash. Twice somebody has put an envelope through the door downstairs and both times I have had a long conversation with the accountant about it.",
+              "We do not take payment through an application on your telephone. I do not have the application and I am not getting it."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Receipts go out within the hour with the plan, the period and the amount in one line you can paste straight into a treasurer's report, because a treasurer asked me for that in 2014 and it took ten minutes."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 41927
+          }
+        ]
+      },
+      {
+        "id": "status",
+        "name": "Status",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Status"
+          },
+          {
+            "kind": "text",
+            "body": "[b]ALL SYSTEMS OPERATIONAL[/b]\n\nLast checked Friday 18 September 2026 at 4:40 p.m."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Status",
+              "Checked"
+            ],
+            "rows": [
+              [
+                "nye (web)",
+                "Operational",
+                "4:40 p.m."
+              ],
+              [
+                "dorrance (web)",
+                "Operational",
+                "4:40 p.m."
+              ],
+              [
+                "cobb (web)",
+                "Operational",
+                "4:40 p.m."
+              ],
+              [
+                "tessler (mail)",
+                "Operational",
+                "4:40 p.m."
+              ],
+              [
+                "kerrin (backups)",
+                "Operational",
+                "4:00 a.m."
+              ],
+              [
+                "Control panel",
+                "Operational",
+                "4:40 p.m."
+              ],
+              [
+                "Name servers",
+                "Operational",
+                "4:40 p.m."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]That table is written by a script that asks each machine for a page and waits nine seconds for it. It is not a statement about whether your site works, and it knows nothing at all about whether mail sent from here is being accepted at the far end, which is the thing that is wrong today. I have not worked out a way to test that from this side that is not itself a way to get blocklisted.[/i]\n\n[i]The line at the top of this page has said the same thing since 2019. I am aware of what it looks like above an open incident. I have twice sat down to make it say something truer and both times I have ended up with a page nobody could read at a glance, so it stays, and this paragraph stays under it. -- A.P.[/i]"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Open"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Mail to two large providers is being deferred. Open since Thursday 3 September 2026."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Started[/b] Thursday 3 September 2026, about 6 a.m.\n[b]Affects[/b] Outbound mail from tessler to two providers. Between them that is roughly forty percent of everything that leaves these machines.\n[b]Does not affect[/b] Mail between accounts here, mail to anywhere else, or any website.\n\n[b]What is happening.[/b] Their side accepts the connection and then defers the message with a temporary refusal. We queue it and retry for five days. A good deal of it gets through on the third or fourth attempt, hours late. Some of it expires in the queue and comes back to you, and when that happens you do get told.\n\n[b]Cause, as far as I can establish it.[/b] Tessler's address was added to a public blocklist on 2 September. The reason given on the listing is one word and the word is wrong. I have submitted the delisting form four times. It is a form. There is nobody on the other end of it."
+          },
+          {
+            "kind": "text",
+            "body": "[b]What we have done.[/b]\n\n[list][*]Moved outbound onto a second address on 4 September. That fixed one of the two providers for about four days.[*]Set up SPF and DKIM on every domain here that did not have them. That was 61 domains and it should have been done years ago, and the reason it was not is that nothing was broken.[*]Published a DMARC record on all of them.[*]Turned off outbound for one account sending 280 messages at a time from a contact form, which is not the cause of this and is not helping.[/list]"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Updates.[/b]\n\nFriday 4 September, 11:20 a.m. Delisted at one of the two. The other has an automated reply saying a person will review it.\n\nTuesday 8 September, 9:05 a.m. The second address is now being deferred as well, which means it is following the domain and not the address, which is worse news than it sounds.\n\nTuesday 15 September, 2:30 p.m. Opened a ticket through the provider's postmaster form. Reference number received. Nothing since. The automated reply from the fourth is now eleven days old.\n\nFriday 18 September, 4:40 p.m. Still open. Two people have rung to ask whether this is why something did not arrive. It is. If you are sending something this month that has to land, send it from an ordinary account at one of the large providers and not from your site, and I am sorry to be telling a customer that."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Closed"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Power at the Third Street office. Backups only. Tuesday 9 June 2026."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Duration[/b] 26 hours 10 minutes, from 7:35 a.m. Tuesday to 9:45 a.m. Wednesday.\n[b]Affected[/b] Nothing a customer could see. Every site and all mail run on the machines in Ardo and those did not blink.\n\n[b]What actually happened.[/b] A contractor working on the building next door took the service drop off the front of this one. Kerrin, which is the backup machine and sits on the window sill in this office, went off with it. It did not take the Tuesday night copy.\n\n[b]What that meant.[/b] For twenty-six hours the only copy of anything here that anybody could reach was the live one, because the machine with the other thirteen nights on it was sitting dark on a window sill in a building with no power in it, and I could not get at them either.\n\nNothing happened. It is still the nearest this business has come to a bad week. I am writing it down rather than not writing it down, because the value of a status page is the entries a customer would never otherwise have found out about.\n\n[b]Since.[/b] A second nightly copy now goes to a disk in the cabinet in Ardo as well. That is four hundred dollars of disk and about an hour of work and I should have done it in 2015."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Certificate warnings on 41 sites. Sunday 15 February 2026."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Duration[/b] 3 hours 20 minutes, 6:04 a.m. to 9:24 a.m.\n[b]Affected[/b] 41 sites on dorrance. Browsers showed a full-page warning. Nothing was down and nothing went anywhere it should not have.\n\n[b]Cause.[/b] The renewal runs as a service account on dorrance. I set a password expiry policy on that machine in November and did not think about that account. Renewals had been failing quietly since 31 January. On the 15th the first certificate actually ran out. Thirteen more were due inside the next four days and would have gone the same way.\n\n[b]How I found out.[/b] A customer rang my house at 6:40 on a Sunday morning. That is the correct thing to have done, I have told him so, and I would rather have twelve of those calls than one polite e-mail on Monday afternoon.\n\n[b]Since.[/b] The renewal runs on a system timer as root and writes one line to a file that I read. Monitoring now checks certificate expiry at thirty days, fourteen days and three days and sends me an e-mail at each, which is what it should have been doing since the day we started issuing them."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Everything unreachable. Wednesday 13 August 2025."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Duration[/b] 2 hours 51 minutes, 10:22 a.m. to 1:13 p.m.\n[b]Affected[/b] Every site and all mail on all four machines in Ardo.\n\n[b]Cause.[/b] A directional bore on the far side of Ardo went through a fibre. Not ours and not the building's. The carrier's. The machines ran the entire time and the logs from that morning are three hours of a machine sitting there being asked for nothing by anybody.\n\n[b]What we could do.[/b] Nothing. I drove to Ardo, which was pointless, and was overtaken on the way back by the splice truck.\n\n[b]The honest part.[/b] We buy transit from one carrier. A second carrier into that cabinet is $260 a month, about nine percent of what this business takes in, and I have not made that number work. In twenty-four years it would have turned one three-hour outage into no outage. I look at it every January and I have not bought it, and I would rather you knew that from this page than on a Wednesday."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Disk failure on cobb. Eleven hours. Thursday 13 June 2024."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Duration[/b] 11 hours 5 minutes, 4:10 a.m. to 3:15 p.m.\n[b]Affected[/b] 38 accounts on cobb, including the oldest message board in the county.\n\n[b]Cause.[/b] A disk in the array failed at 4:10 a.m. That on its own is a Thursday. The second disk failed about forty minutes into the rebuild, and two out of two is not a Thursday.\n\nBoth disks came out of the same production run, were bought on the same purchase order, went into the machine on the same afternoon in June 2017 and had a little over 61,000 hours on them each. That is the mistake and it is mine and it is the oldest mistake in this trade."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Recovery.[/b] Restored from the copy taken at 11:40 p.m. on the Wednesday. Everything written to those 38 accounts between 11:40 p.m. and 4:10 a.m. is gone and is not coming back.\n\nAcross 38 accounts that turned out to be eleven forum posts, nine of which were spam, one message through a garage's contact form, and one tire order that the tire shop had on the pad by the till anyway. It was a good night to lose.\n\nNine of the eleven hours were copying. The array rebuild was not the slow part; putting four hundred gigabytes back over a card bought in 2018 was.\n\n[b]Since.[/b] Disks go in from two suppliers bought six months apart, the array is scrubbed on the first Sunday of the month, the card was replaced in July 2024 for $310, and a full test restore of a real account onto a spare machine is done every March. The March 2026 one took two hours forty."
+          },
+          {
+            "kind": "text",
+            "body": "[b]The board.[/b] It is one I have hosted since 2004. It is on eleven dollars a month, the man who pays that is not the man who opened the account, and it holds more of this county's actual history than anything else on any machine I own.\n\nThe man who pays for it sent one e-mail at 6:02 a.m. asking whether it was the disk or him, and one at 3:31 p.m. saying it was back. He did not ask for anything off the bill. I took a month off it anyway and he did not mention that either.\n\n[quote=mod_dcarver]Back up. Anything posted between midnight and four is gone. That is nine spam and one post of mine about the parking on Depot Street, so we are ahead. Morning delete will happen at lunch.[/quote]\n\nHe posted that on a chat server I do not host and somebody forwarded it to me. The thread about that day on [url=synth://gridfall.chat/]gridfall.chat[/url] is longer than this whole page and about two thirds of it is people explaining to each other what a rebuild is.\n\nSomebody also asked on [url=synth://askverity.com/]AskVerity[/url] that afternoon whether the board had finally closed for good. It had not. The answer with the votes on it said it had, and it is still the first thing you see there, and I have not got an account and would not win that argument if I did."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is not on this page"
+          },
+          {
+            "kind": "text",
+            "body": "Anything shorter than five minutes, and anything on a customer's own virtual machine.\n\nPlanned work goes out by e-mail to the accounts affected a week ahead. It happens at five on a Sunday morning, because that is the hour when this county is not looking at anything."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 9184
+          }
+        ]
+      },
+      {
+        "id": "kb",
+        "name": "Help",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Help"
+          },
+          {
+            "kind": "text",
+            "body": "Four pages. They are the four things people ring about, in the order they ring about them. There is no search box on this site and there are four pages, so there does not need to be one.\n\nAnything else: [b]555-0181[/b], Monday to Thursday nine to four, Friday nine to one, or [b]help@gridfallhost.net[/b]."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[url=/kb-upload]Your files uploaded and the pictures still do not show up.[/url] By a wide margin the most common call we get, and the answer is nearly always one of five things.",
+              "[url=/kb-backups]What we back up, what we do not, and how to get your own copy.[/url] Read this one even if nothing is wrong.",
+              "[url=/kb-mail]Mail from your site to the large providers.[/url] Why it is hard now, what we have set up, and the one thing you must not do.",
+              "[url=/kb-move]Moving a site here from somewhere else, and moving one away.[/url] Free, takes about a week, and most of the week is waiting."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Before you ring"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Check whether it is only you. Open the site on a telephone with the wifi switched off. If it works there and not on your computer, the problem is between your chair and Ardo and I can usually tell you which bit in about a minute.",
+              "Look at the status page. If there is an open entry on it, I already know, and ringing will not make me know it harder, although you are still welcome to ring.",
+              "Write down the exact words. Not 'it said an error'. The exact words, or a photograph of the screen taken with your telephone, which is genuinely the most useful thing a customer has ever sent me.",
+              "Note the time. Down to the nearest five minutes is plenty. With a time I can find it in the log in about thirty seconds and without one I am reading four hours of it."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Things we cannot help with"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "What your site should say. We host it, we do not write it.",
+              "Getting back an account that is not yours. Not for a spouse, not for an estate, not for a club whose last treasurer will not answer, until there is a document. There is a procedure for the club one: three e-mails and a letter on the club's own paper.",
+              "A domain you registered somewhere else in 2009 and cannot remember where. I will help you find out where. I cannot make them answer you."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The old help pages"
+          },
+          {
+            "kind": "text",
+            "body": "There were nineteen of these in 2009 and they were written for software almost nobody runs any more. They are not on this site.\n\nIf you followed a link from somewhere else and landed on nothing, that is why. I know that at least two sites in this county still link to help/frontpage.html and I am sorry about both of them."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 23755
+          }
+        ]
+      },
+      {
+        "id": "kb-upload",
+        "name": "Help: pictures not showing",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Your files uploaded and the pictures still do not show up"
+          },
+          {
+            "kind": "text",
+            "body": "This is the most common call we get and it has been the most common call since about 2003. It is nearly always one of the five things below, and it is number one or number three about seven times out of ten.\n\nIt is not a stupid problem. Three of the five are cases where your own computer is telling you the truth about a different question from the one you are asking it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "1. Capital letters"
+          },
+          {
+            "kind": "text",
+            "body": "Our machines care about capital letters in a filename and the computer on your desk does not.\n\nIf the page asks for [code]album/Picnic.JPG[/code] and the file that is actually on the machine is [code]album/picnic.jpg[/code], you get nothing. On your own machine at home both of those are the same file, so the page worked there and then stopped working the moment it was uploaded.\n\nThe camera is usually to blame. A lot of cameras write .JPG in capitals, and a lot of editing programs write .jpg in small letters when they save, and a folder can easily end up with both.\n\n[b]How to check.[/b] Open the file manager in the control panel and read the name off the screen character by character. Do not read it off your own machine. The whole trap is that your own machine agrees with you."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2. Permissions"
+          },
+          {
+            "kind": "text",
+            "body": "A file has to be readable by the web server, not just by you. Files want 644 and folders want 755.\n\nThis mostly happens when a folder is created by a program rather than by you, or when files come off a memory card or out of an archive that carried its own permissions with it. The file manager in the control panel shows the number in the right-hand column and will change it if you click it.\n\nIf you would rather not think about any of that, ring up, and Renata or I will set the whole account right in about a minute. We are not going to charge you for it and we are not going to be funny about it, because we have both done it to ourselves."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "3. Your own browser is lying to you"
+          },
+          {
+            "kind": "text",
+            "body": "The pictures come up for you. They come up for you every time, on your machine, and that is exactly why you are certain the upload worked.\n\nThey come up because they are already on your machine. You made the page there. Your browser has the pictures saved and it is showing you those, not the ones on the server, and it will carry on doing that for weeks.\n\nThe test is to look at your own site from somewhere that has never seen it: a telephone with the wifi turned off, or a computer at the library. If a friend also says they can see them, ask whether the friend has ever had the pictures sent to them, because that is the same trap one step further out.\n\nThis one catches people who are otherwise entirely competent, and it catches them for years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "4. The path is from your own machine"
+          },
+          {
+            "kind": "text",
+            "body": "A page written in an editing program will sometimes point at a picture by where it sat on your hard disk, starting with a drive letter and backslashes. That works while the page is on your computer and cannot work anywhere else.\n\nIf you can see a drive letter in the page's own text, that is your answer and you found it yourself."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "5. The folder is not called what the page thinks it is called"
+          },
+          {
+            "kind": "text",
+            "body": "Page says Album, folder is album. Page says images, folder is img. Page says photos/2024 and the folder is photos/2024 with a space on the end that got in when somebody made it and cannot be seen on any screen anywhere.\n\nThat last one is rare and it is horrible, and if the other four do not explain it, that is where I look next."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If it is none of the five"
+          },
+          {
+            "kind": "text",
+            "body": "Ring 555-0181 and stay on the line while I look. Your site's log records every request that came in and did not find anything, with the exact name it asked for. Reading that name out to you is usually the whole job, and the whole job is usually about four minutes.\n\nThis is free, it is not an imposition, and it is more interesting than the invoicing."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "One that is not ours"
+          },
+          {
+            "kind": "text",
+            "body": "There is a scout troop page in this county whose photograph album has been broken since October 2010, and if I had to put money on it I would put a week's takings on number one and number three together.\n\nIt is not on our machines. The man who keeps it has a paragraph on his own site explaining, patiently and at some length, that the pictures come up for him, and that they come up for his friend Ron, and that Ron's son says that is because they both already have them saved. Ron's son is right. That paragraph has been sitting there for sixteen years with the answer written next to the problem.\n\n[url=synth://troop62.verity.net/]troop62.verity.net[/url]\n\nI have twice written an e-mail to the address on that page and twice not sent it, because I could not find a way to put it that did not read like a man selling hosting."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 31402
+          }
+        ]
+      },
+      {
+        "id": "kb-backups",
+        "name": "Help: backups",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "What we back up, what we do not, and how to get your own copy"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What happens every night"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Databases are dumped first, starting at 12:40 a.m., one at a time.",
+              "Files are copied after that, between about 1 a.m. and 4 a.m. depending on how much there is.",
+              "The copy goes to kerrin, which is the machine on the window sill in this office, and since June 2026 to a disk in the cabinet in Ardo as well.",
+              "Fourteen copies are kept. The fifteenth night pushes the first night off the end.",
+              "Mail sitting in a mailbox on our server is in the copy. Mail you have already downloaded into a program on your own computer is not, and never was, and that is the one that surprises people.",
+              "Restores are free. They take between twenty minutes and most of a day. Ring and say which night you want and we will tell you what we have."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Fourteen nights is not an archive"
+          },
+          {
+            "kind": "text",
+            "body": "I want to be plain about this because it is the part that matters and it is the part nobody asks about until a bad week.\n\nIf the only copy of something is on this machine, then what you have is a fourteen day memory of it and nothing older. That is completely fine for a business. If the tyre shop's opening hours page is wrong I can hand it back the way it was on Tuesday and everyone gets on with their day.\n\nIt is not fine for a record. If your site is the only place something exists in the world -- twenty-two years of a message board, a parish register, a set of photographs of a building that is not standing any more, a league's results going back to 1994 -- then fourteen nights on my disk is not a plan. It is a rolling window, held in one building by one man, and one of those two things is going to end before the material does."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What to do instead, which is boring"
+          },
+          {
+            "kind": "text",
+            "body": "Ask us for a copy of your account once a year. We will put it on a disc and post it for nine dollars, or you can download it and it costs nothing.\n\nThen give one to a library.\n\nThe library in Marchfield takes local material, and when they take it they give it an accession number, which means that in forty years somebody who has never heard of you or me can walk in and ask for it by name. [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url] has the hours and who to ask for.\n\nThat is not my argument. An archivist over there said it on a chat server one night about an entirely different disc, and it is the best case for backups I have ever heard in twenty-four years of making this case badly, so I have taken it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How many people actually do this"
+          },
+          {
+            "kind": "text",
+            "body": "Eleven accounts out of 191 have asked for a copy in the last two years.\n\nFour of those eleven requests are one quilting guild's treasurer, who asks in January, April, July and October, because it is on the agenda as a standing item and she does the agenda. Two are the fire department. One is a man who runs a garage and a band and who asked for it the week after he found out a photo host he had used since 2007 had shut.\n\nThe county's oldest message board is not among the eleven. It is on the nightly copy like everything else here, which means there are fourteen days of it and not one day more. Twenty-two years of that board exists in one place plus a fortnight. I have said this to the man who pays for it, more than once, in a way I hope was not preachy. He said he knows."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What a copy contains"
+          },
+          {
+            "kind": "text",
+            "body": "Your files as they sit on the machine, your databases as a plain text dump anything can read, mail still in mailboxes here, and your DNS records as a text file.\n\nNot certificates, which are free and which you get new ones of. Not anything on a virtual machine you bought root on, which is yours to copy and which we will show you how to do. Not passwords, only the hashes inside the dump, which is not the same thing."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If something is already gone"
+          },
+          {
+            "kind": "text",
+            "body": "Ring before you touch anything else. Almost every restore I have ever had to refuse was refused because somebody spent two days trying to put it back themselves and the nightly copy rolled past the good night while they were doing it.\n\nFourteen nights is fourteen nights and it does not stop for you. If you ring on day two I have twelve good copies. If you ring on day sixteen I have none, and I will be as sorry about that as you are, and it will not help."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 18640
+          }
+        ]
+      },
+      {
+        "id": "kb-mail",
+        "name": "Help: mail",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Mail from your site to the large providers"
+          },
+          {
+            "kind": "text",
+            "body": "Mail is the hardest thing we sell and it has got harder every year since about 2014. Websites either work or they do not. Mail works, and then one Tuesday it silently does not, for some people, somewhere else, for reasons nobody will tell you.\n\nThis page is what we have done about it and what you can do about it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The short version"
+          },
+          {
+            "kind": "text",
+            "body": "Anything sent from a shared machine to one of the large providers is guilty until proven otherwise. That is not unreasonable of them. It is what happens when most of the mail in the world is rubbish. It does mean that a church newsletter going out from a machine in Ardo has to prove itself in a way that the same newsletter sent from an ordinary account at a large provider does not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The three records, which we now set for you"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "SPF, which says which machines are allowed to send for your name. We have had this on by default for new accounts since 2016.",
+              "DKIM, which signs the message so the far end can tell it was not altered on the way.",
+              "DMARC, which tells the far end what to do when the first two do not match, and, more usefully, asks it to send us a report."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "As of 8 September 2026 all three are set on every domain on these machines. Sixty-one of them did not have all three and now do. That should have been done in about 2019 and the reason it was not is that nothing was broken and there is always something else on the desk.\n\nYou do not need to do anything for this. If you host your name somewhere else and point it here, ring us and we will read you the three lines to add."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The one thing you must not do"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do not send a newsletter from a hosting account.[/b] Not from ours and not from anybody's.\n\nTwo hundred and eighty messages leaving a shared machine in one minute looks exactly like the thing the whole world is trying to stop, because it is the same shape as that thing. It gets the machine deferred and it takes every other site on that machine with it, and it has, and see the open entry on the status page.\n\nAnything over about fifty at a time goes through a service built for it. They cost between nothing and nine dollars a month at the sizes anybody in this county is working at. Ring and I will name two and neither of them is us and we do not get anything for it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Forwarding breaks, and it is not your fault"
+          },
+          {
+            "kind": "text",
+            "body": "If you have an address here that forwards everything to an account at a large provider, then every message that arrives is re-sent by our machine under somebody else's name, and the checks at the far end see our machine sending mail it has no business sending.\n\nThere is no clean fix. It is a known ugly corner of how mail works. The practical answer is to collect the mailbox here instead, or to have the large provider fetch from us rather than us pushing to it. Renata will set either one up on the telephone in about ten minutes."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Contact forms"
+          },
+          {
+            "kind": "text",
+            "body": "The single most common thing wrong with a contact form written in 2004 that otherwise still works fine.\n\nThe form sends you the message [i]from[/i] the visitor's own address. It has probably done that since the day it was installed. It now fails almost every check there is, because our machine is sending mail claiming to be from somebody at a large provider who has never heard of us.\n\nThe fix is one line. Send from an address at your own name, and put the visitor's address in the reply-to field, so that hitting reply still does exactly what you expect. Send us the form and we will do it. It is free and it takes four minutes and we have done it about ninety times."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we cannot do"
+          },
+          {
+            "kind": "text",
+            "body": "There are two providers who between them hold most of the personal mail in this county. I have no relationship with either of them. There is no account manager, there is no telephone number, and there is no human being. There is a form.\n\nWhen it goes wrong it goes wrong for days and the only honest thing I can tell you is how many days it has been so far, which is what the status page is for. I would rather say that than tell you it is being escalated, because there is nothing to escalate it to."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 14208
+          }
+        ]
+      },
+      {
+        "id": "kb-move",
+        "name": "Help: moving a site",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Moving a site here, and moving one away"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coming here"
+          },
+          {
+            "kind": "text",
+            "body": "It is free and we do the work. It takes about a week and most of the week is waiting for things outside anybody's control.\n\nWhat we need from you:\n\n[list][*]A login at your old host, or a copy of the files if you would rather not hand one over.[*]The database, if there is one. If you do not know whether there is one, tell us what the site runs on and we will know.[*]Who controls the domain name, and the login for that. This is the one that stops people, every time, and it is worth finding out before you ring us rather than after.[*]An e-mail address that works and that you will read this week.[/list]"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The order it happens in"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "We copy everything and stand your site up here on a temporary address. Your old site is still live the whole time. Nothing has moved.",
+              "You look at it on that address and tell us what is missing. Something always is.",
+              "We shorten the timer on the domain name a day ahead, which turns the next step from two days into two hours.",
+              "We change the name over. From that minute some people see the new one and some the old one, and nobody can do anything about that.",
+              "Both run for a fortnight, because mail keeps arriving at the old one for days.",
+              "Then, and only then, you cancel the old account."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do not cancel the old account first.[/b] I am aware of how that sentence reads on a page like this. I have written it in capitals on an invoice."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Message boards, specifically"
+          },
+          {
+            "kind": "text",
+            "body": "A board export is not the board and nobody tells you this until it is too late to matter.\n\nPosts, topics, board names and usernames come across. Attachments, avatars, private messages and password hashes very often do not, depending on how far apart the two pieces of software are. Everybody is told the private messages will come across. Sometimes they do.\n\nIf your board has anything in it that people would be upset to lose, get it out as a database dump before you agree a date with anybody, and give me a copy of that dump, and I will keep it regardless of what happens next."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The nine clubs from Pell Creek"
+          },
+          {
+            "kind": "text",
+            "body": "Eleven sites came here in the first three months of 2019 when a hosting firm over in Pell Creek stopped trading. Nine of the eleven were clubs.\n\nThey were given thirty days by post. About half of them found out with eleven days left, because the notice went to whoever had been treasurer in 2011, at an address that person moved away from. One of those boards had about forty thousand private messages in it and they were gone before anybody rang me, and there was nothing I could do about that then and there is nothing I could do about it now. The board itself is fine and is still here and is busier than it was.\n\n[url=synth://veritybirders.org/]veritybirders.org[/url] is one of the nine. The old address was [url=synth://pellcreek-hosting.synth/]pellcreek-hosting.synth[/url] and it has not resolved since.\n\n[b]So.[/b] If your club's hosting contact, or its domain contact, is a person who moved away, fix that this week. It costs nothing, it takes one telephone call, and it is the single cheapest thing on any page on this site."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Going the other way"
+          },
+          {
+            "kind": "text",
+            "body": "You get a copy of everything, free, within two working days, in plain formats anything can read. We will talk to your new host if they want to talk to us, and most of them do and it is quicker. The unused part of any year comes back without you asking.\n\nWe will not ask you why and we will not ring you with an offer. There is no retention screen with three steps on it, because I have been through one of those myself and I remember what I thought of the company afterwards.\n\nFour accounts have left in the last three years. Two came back, and I did not say anything about that either."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 11933
+          }
+        ]
+      },
+      {
+        "id": "aup",
+        "name": "Acceptable use",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Acceptable use"
+          },
+          {
+            "kind": "text",
+            "body": "This is the whole policy. There is not a second document behind it and there is no schedule at the back. Nine rules, then the four things people actually want to know, which are what happens when there is a problem, what we do about removal requests, what happens to an account nobody is paying attention to, and robots.\n\nIn force since 2 August 2026. Six changes since 2002 and the dates are at the bottom."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The nine"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Nothing illegal in this state or the one the cabinet is in. That is shorter than the list a lawyer would write and it covers the same ground.",
+              "No bulk mail from these machines. Over about fifty recipients at a time, use a service built for it. This one has been broken more times than the other eight put together and is the reason the status page has an open entry on it today.",
+              "No open proxies, no anonymising relays, no tunnels carrying other people's traffic. If you want a machine to route your own traffic through, buy a virtual machine and say so and that is fine.",
+              "No mining. This is not a moral position. The cabinet has a power budget, the budget is 3.2 kilowatts, and I am charged against it whether the machine is doing anything useful or not.",
+              "Nothing that is mostly other people's copied work, once the person who owns it tells us and can show us. Every time this has come up it has ended in two e-mails and somebody taking a page down.",
+              "Do not attack anybody from here. That includes running a scanner across somebody else's addresses and calling it research. The first I hear about it is always their host writing to me.",
+              "Keep your own software updated. We will patch the machine. We cannot patch what you installed on it and we will not log into your board and do it without being asked, because the last time somebody did that to a board in this county, without asking, they broke nineteen years of attachments and it took a fortnight to get back.",
+              "Keep a contact address on your account that works. See the section on abandoned accounts, which is the one I care most about on this page.",
+              "Pay. Late is fine, and if you are having a bad month say so and it will be fine for longer than you think. Silence is the difficult one, because silence and abandoned look identical from this desk."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Spam on your board"
+          },
+          {
+            "kind": "text",
+            "body": "The spam protection on the Board plans is whatever your message board software ships with. We do not have anything better than that and I am not going to pretend we do.\n\nThe plan page used to say standard spam protection, which is true and useless, and I have been asked what it means often enough that the honest answer belongs here: it means the machine's own mail filter. The machine's mail filter does a good job on mail. It does precisely nothing about a person or a script registering on your forum and posting about handbags, because that traffic is a normal web request to a site that has invited it.\n\nWhat actually helps is the module your own board software has for it, kept current, plus closing registration if you have reached the point where that is the trade you want to make. One board here did that in 2017 and is still here and is still readable, and the board that did not close registration that year is not.\n\nIf a salesman tells you his hosting stops forum spam, ask him how, and then listen to the answer, because there is not one."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What happens when there is a problem"
+          },
+          {
+            "kind": "text",
+            "body": "Somebody rings you or writes to you, and it is one of two people and both of them are on this page by name.\n\nSuspension is the last thing and not the first. In twenty-four years we have suspended fourteen accounts. Eleven of those fourteen were an account that had been taken over by somebody else, and the owner was as surprised as we were and got it back the same week.\n\nThree accounts have been ended for cause, ever. Two were bulk mail after being told twice. The third was a man reselling our space to nine people, each of whom believed they were dealing with him, and who found out what had happened from me, which was an afternoon I would not like to repeat."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Removal requests"
+          },
+          {
+            "kind": "text",
+            "body": "Twice in twenty-four years somebody has asked me to take a page down because of what it said about them.\n\nBoth times I asked whether a court had said so. Both times that was the end of the conversation.\n\nIf a court does say so I will do what it says, and I will tell the account holder that it happened and what it said, on the day. I have never had to."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Abandoned accounts"
+          },
+          {
+            "kind": "text",
+            "body": "There are nine accounts on these machines where the card goes through every month and the contact address has bounced for more than three years. One of them has been like that since 2019.\n\nWe do not switch those off. I wrote the policy down in 2021 so that it would be a policy and not a mood:\n\n[list][*]We try the address once a year, in January, and we log what came back.[*]We try a telephone number, if there is one anywhere on the site.[*]If the card stops, the site stays readable and the mail stops, for ninety days.[*]After the ninety days the files come off the machine and go onto a disk, in a drawer in this office, with the date written on it in marker. They stay there.[*]There are thirty-four of those disks. The oldest is from 2006. Nothing has ever been asked for off one of them, and twice I have looked something up on one for somebody who did not know I still had it.[/list]\n\nA site that nobody is paying and nobody can be reached about is not a mess to be tidied away. It is a thing somebody made, and the cost of keeping it is a disk and a drawer."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The page an account gets when it is switched off"
+          },
+          {
+            "kind": "text",
+            "body": "If an account here is suspended, or a card stops and nothing is done about it, what people see at that address is a page at suspended.gridfallhost.net. I did not write it and I cannot edit it. It came with the control panel we bought in 2019 and the panel serves it by itself.\n\nIt gives a toll-free number that rings the panel vendor's call centre in Pell City and not this office, and hours that are not our hours. Its footer says Gridfall Host is a service of Cassaday Data Services of Pell City. Cassaday sells us the billing and the panel. They do not own this, they have never seen these machines, and there is no version of that sentence I would have written.\n\nIt also says that files on a suspended account are held for ninety days and then removed and that there is no copy after that. Read the section above this one. That is not what happens here.\n\nI have asked four times to be allowed to change the wording. The answer each time is that the footer and the retention text are part of the platform. Twice a customer has rung the number on that page and been told, by somebody reading from a script, that their site was gone. Both times it was on a disk in the drawer and both times they heard that from me a day later than they should have.\n\nThe panel also switches an account off by itself at twenty-one days past due. I turn it back on by hand when I see it, usually the same morning, which is why most of you have never met that page. If you do meet it and the account is yours, ring [b]555-0181[/b]. Nothing has been deleted."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Robots"
+          },
+          {
+            "kind": "text",
+            "body": "We do not block automated traffic by default. You can ask us to, it is free, and it takes about ten minutes.\n\nIn August the four machines in Ardo answered 11.4 million requests. A bit over seventy percent of those did not come from a person. A quarter of the whole total came from eleven address ranges that ask for every page of every site here on a fortnightly cycle and ignore the file that asks them not to.\n\nIf your site got slower this year and you changed nothing, that is very likely why, and the fix is a rule I put in for you.\n\nA few of you have asked me to block everything automated. I will, and I will also say what it costs, which is that no search engine will find you either. For a garage that is the wrong trade. For a parish register it is sometimes the right one."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Changes to this policy"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Date",
+              "What changed"
+            ],
+            "rows": [
+              [
+                "June 2002",
+                "Written. Four rules."
+              ],
+              [
+                "March 2007",
+                "Added the rule about attacking other people's machines, after an afternoon."
+              ],
+              [
+                "September 2013",
+                "Added open proxies and relays."
+              ],
+              [
+                "November 2018",
+                "Added mining, and the power budget sentence."
+              ],
+              [
+                "April 2021",
+                "Added abandoned accounts. This is the one I am glad is here."
+              ],
+              [
+                "August 2026",
+                "Added robots, and rewrote the bulk mail rule to have a number in it."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Every change since 2007 has been announced by e-mail to every account sixty days before it took effect, and every one of those e-mails was written by a person and said what changed in the first line.[/i]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 7719
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "The shop",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The shop"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Arlen Pike.[/b] Started this in March 2002 in a spare bedroom on Wickle Street with one machine and four customers, three of whom were my brother's. I do the machines, the network, the cabinet, and the part of the telephone that Renata hands over.\n\n[b]Renata Kolb.[/b] Here since 2013. Tuesday, Wednesday and Thursday, nine to four. Billing, domains, the telephone, and anything that is a form, which is most of it. If you have dealt with us in the last twelve years you have dealt with Renata.\n\nThat is everybody. There is no third person and there has not been since 2009."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where"
+          },
+          {
+            "kind": "text",
+            "body": "118 Third Street, Gridfall, second floor, over the copy shop. The door is between the copy shop and the insurance office and there is a buzzer on it that works about half the time, so if you are standing there, ring 555-0181 from the pavement and somebody will come down.\n\nThere is no shop front and nothing to look at. People do come up, mostly treasurers with a folder, and that is fine, and there is a chair."
+          },
+          {
+            "kind": "image",
+            "seed": "gridfallhost-cabinet-14-ardo",
+            "imgKind": "photo",
+            "caption": "Cabinet 14, row C, Ardo. Four machines, two switches, and a shelf with a spare disk on it that has been there since 2021 waiting for a disk to fail that has not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The machines, and 2003"
+          },
+          {
+            "kind": "text",
+            "body": "Everything was in this building until 2004. It was in the spare bedroom before that.\n\nAfter the summer of 2003 I moved it to a colocation building in Ardo, forty-three miles away, on a floor that has its own generator and a contract with a fuel company. That cost more than I had and I borrowed some of it from my brother, who is the same brother as the three customers, and it was obviously the right thing to have done and I have never once wondered about it since.\n\nWhat is here now is one machine on the window sill that takes the nightly copies, a spare of every part that is in the cabinet, thirty-four disks in a drawer, and a filing cabinet with the paper in it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The numbers"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "Trading since",
+                "March 2002"
+              ],
+              [
+                "Accounts",
+                "191"
+              ],
+              [
+                "Sites on those accounts",
+                "268"
+              ],
+              [
+                "Machines",
+                "5. Four in Ardo, one on the sill."
+              ],
+              [
+                "People",
+                "2, one of them three days a week"
+              ],
+              [
+                "Oldest account still paying",
+                "opened September 2002, same card holder, same site"
+              ],
+              [
+                "Longest outage ever",
+                "11 hours 5 minutes, 13 June 2024. It is on the status page."
+              ],
+              [
+                "Accounts that have left in the last three years",
+                "4, of which 2 came back"
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The control panel, and 2019"
+          },
+          {
+            "kind": "text",
+            "body": "We changed the control panel in April 2019. The one before it was written for us by a man in Ardo in 2005 and had been showing its age for a decade. The new one is bought in. It is better in every measurable way and it has a password reset that does not go through me at ten at night.\n\nThe new one has more steps on a renewal. You confirm the account, then the card, then the term, then a code arrives by e-mail and you type it back in. Four screens where there had been one. Every one of those screens exists for a reason I agreed with at the time and would agree with again.\n\nIt also serves a page of its own when an account goes off, and that page says several things about this company that are not true, and I have written about it at the bottom of [url=/aup]the acceptable use page[/url] because I have run out of other places to put it.\n\nEleven accounts stopped logging in that year and carried on paying by standing card order and nothing else.\n\nOne of those eleven is a site about a diner out on 62 that has not been added to since 2019. It is [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] and it is the best site on any machine I own, and I am not being sentimental, I mean that it is the most carefully made and the most useful. The card goes through every November.\n\nI do not know that the panel is why she stopped. I know the months are the same. I have picked up the telephone about it twice, because hello, I am your hosting company and I notice you have not logged in for seven years is not a sentence that does what I would want it to do."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Hours"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Telephone",
+              "In the office"
+            ],
+            "rows": [
+              [
+                "Monday",
+                "9:00 - 4:00",
+                "both of us"
+              ],
+              [
+                "Tuesday",
+                "9:00 - 4:00",
+                "both of us"
+              ],
+              [
+                "Wednesday",
+                "9:00 - 4:00",
+                "both of us"
+              ],
+              [
+                "Thursday",
+                "9:00 - 4:00",
+                "both of us"
+              ],
+              [
+                "Friday",
+                "9:00 - 1:00",
+                "me"
+              ],
+              [
+                "Saturday",
+                "no",
+                "sometimes me, do not count on it"
+              ],
+              [
+                "Sunday",
+                "no",
+                "no"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The last week of July, Renata is away and the telephone is on my mobile and it is answered slowly.\n\nOut of hours, if a site is down: [b]555-0182[/b]. That is my house. It has been on this page since 2004."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we are not"
+          },
+          {
+            "kind": "text",
+            "body": "We are not a data centre, we are not staffed around the clock, and we are not resilient the way a bank is. [url=/status]The status page[/url] says where the single points are and what the second one would cost.\n\nFour machines in a good cabinet forty-three miles away, one under a window in Gridfall, two people and a number in my kitchen. Price it accordingly. If that is not enough for what you are doing then it genuinely is not, and there are people who will sell you more, and I will tell you who they are."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "One more thing"
+          },
+          {
+            "kind": "text",
+            "body": "I am fifty-four. Renata is forty-seven. There is nobody after us.\n\nI think about that in January when the renewals go out, and then I do not think about it again until the next January, and in the meantime the invoices go out on the first and the copies run at one in the morning and somebody answers the telephone.\n\nIf you want the honest planning answer: get your copy, give one to the library, and then nothing that happens to me is a problem for you. That is on [url=/kb-backups]the backups page[/url] and it is the only advice on this whole site that I would give to somebody who was not a customer."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 16805
+          }
+        ]
+      }
+    ]
+  }
+}

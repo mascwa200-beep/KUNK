@@ -1,0 +1,791 @@
+{
+  "schema": 1,
+  "domain": "carrowwireless.com",
+  "title": "Carrow Wireless Repair - Route 62, Ashkettle",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "The website of the one-man phone repair shop in the old Blue Kestrel diner building on Route 62: prices by model, a forty-minute turnaround, and a page about the building that is one paragraph long.",
+  "tags": ["ashkettle", "route-62", "repair", "business", "2026", "blue-kestrel"],
+  "links": [
+    "verity.wiki",
+    "verityanswers.com",
+    "veritysheriff.gov",
+    "scanner.verity.net",
+    "shoutbox.live",
+    "newcarrow-today.com",
+    "now.verityledger.com",
+    "countysoftball.org",
+    "gridfall-buysell.net",
+    "classifieds.verity.net",
+    "gridfalltire.com",
+    "marchfield-coop.com",
+    "ashkettlevfd.org",
+    "verity.county.gov"
+  ],
+  "data": {
+    "navLabel": "Carrow Wireless",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Carrow Wireless Repair"},
+          {
+            "kind": "marquee",
+            "text": "*** SUNDAYS 12 TO 4 THROUGH OCTOBER *** SCREENS WHILE YOU WAIT *** DOOR IS LOCKED 12:30 TO 1:15 WEEKDAYS AND I AM IN THE BACK, KNOCK ***"
+          },
+          {
+            "kind": "text",
+            "body": "County Route 62 at Kestrel Road, Ashkettle. The building with the neon bird on the pole out front. The lit box sign underneath it that says CRACKED SCREEN? is mine. The bird is not.\n\nScreens, batteries, charge ports, speakers, cameras, tablets, a limited amount of laptop work, and the kind of unlocking that is legal and free and that I will sit and do with you for nothing.\n\nIt is one man and one bench. The man is me. Tobin Ruiz. If the light is on and the door is open, I am here and you do not need an appointment."
+          },
+          {
+            "kind": "image",
+            "seed": "carrow-bench-rt62-window",
+            "imgKind": "banner",
+            "caption": "The bench, which is under the window at the front on purpose, because people like to watch their own phone being opened and I would rather they did."
+          },
+          {"kind": "heading", "level": 2, "text": "The five things people come in for"},
+          {
+            "kind": "table",
+            "head": ["", "From", "How long"],
+            "rows": [
+              ["Phone screen", "$89", "About forty minutes, while you wait"],
+              ["Phone battery", "$55", "Half an hour"],
+              ["Charge port", "$65", "Forty minutes, sometimes an hour"],
+              [
+                "Tablet screen",
+                "$119",
+                "Two days. The adhesive has to sit overnight and there is no way round it."
+              ],
+              [
+                "Getting the photographs off a phone that will not come on",
+                "$45 to try",
+                "Same day, if it works at all"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Every price for every model I stock is on [url=/prices]the price list[/url], with the part and the tax in it. Nothing is added at the counter. If a phone turns out to need something I did not quote you, I stop and telephone you, and I have never once carried on and told somebody afterwards."
+          },
+          {"kind": "heading", "level": 2, "text": "What I do"},
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Screens. Phones, tablets, and laptop panels on the common models.",
+              "Batteries. Phones, tablets, and laptops if the battery is a part somebody still makes.",
+              "Charge ports, speakers, earpieces, rear cameras, front cameras, buttons.",
+              "Back glass, which goes to a shop in Ardo with a laser, because I do not have a laser. A week.",
+              "Water. Opening it, cleaning it properly and drying it properly. That is not a repair and I say so before I take it.",
+              "Getting data off a phone that will not turn on, as far as I can get without touching the board.",
+              "Carrier unlocking, which is free, which I will explain at length on [url=/unlocking]the unlocking page[/url] because people keep paying strangers for it."
+            ]
+          },
+          {"kind": "heading", "level": 2, "text": "What I do not do"},
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Board-level work. No microsoldering. If your phone needs a chip lifting, I will tell you inside ten minutes and give you the name of the place in Ardo that does it and does it well.",
+              "Folding screens. Not on any make. Nobody inside 140 miles does, and the people who say they do on the internet post you a box.",
+              "Removing an activation lock or a Google account lock. Nobody can. That is the point of it. See [url=/unlocking]the unlocking page[/url].",
+              "Getting into a phone when the passcode is not known. Not for anybody, not for any reason, and I am asked this about six times a year.",
+              "Game consoles, smart watches beyond a battery, or anything with a cracked frame that is bent more than a little."
+            ]
+          },
+          {"kind": "heading", "level": 2, "text": "Turnaround"},
+          {
+            "kind": "text",
+            "body": "A screen or a battery on a model I stock is forty minutes and you wait. There is a chair, and the coffee is from the pumps up the road and I am not going to pretend otherwise.\n\nIf I have to order the part it is Tuesday or Friday, because that is when the distributor's van comes, and an order placed before two o'clock on a Monday is here Tuesday morning. That is the whole system. There is no overnight and there is no rush option, and any shop that tells you there is has put the part on a passenger bus.\n\nIf you are driving out from Milbrook or Halsey or the north end, [b]telephone first[/b] on 555-0136 and I will go and look in the drawer while you are on the line."
+          },
+          {"kind": "heading", "level": 2, "text": "Where"},
+          {
+            "kind": "text",
+            "body": "Route 62 at Kestrel Road, Ashkettle. Coming east out of Gridfall it is about nine miles and it is on the right, and you will see the bird before you see anything else, day or night.\n\nThe lot is gravel and it holds six. Two of those six are the ones at the pole end and there is very often somebody in them with a camera, which is a thing about this building that I knew about before I signed anything. There is room. Pull round them.\n\nDo not park on the shoulder of 62. The county mows it and the trucks come through fast and the sheriff has been out about it twice, neither time for me."
+          },
+          {"kind": "heading", "level": 2, "text": "Getting hold of me"},
+          {
+            "kind": "text",
+            "body": "[b]555-0136[/b], during the hours on [url=/hours]the hours page[/url]. It rings on the bench. If I am in the middle of a screen I will not answer it and I am not being rude, I have a panel half off and both hands on it, so leave it and I will ring back inside the hour.\n\n[b]carrowwireless@verity.net[/b], which I read at night. Anything that needs a yes or a no by tomorrow should be the telephone and not this.\n\nI do not answer messages on the social sites. There is an account on [url=synth://shoutbox.live/]Shoutbox[/url] with my name on it that I have posted from twice: once as an advertisement I paid $30 for, and once underneath it to tell a man in Tacoma that I am in Verity County. See [url=/notices]the notices page[/url] for how that went."
+          },
+          {"kind": "heading", "level": 2, "text": "The listing that is not this page"},
+          {
+            "kind": "text",
+            "body": "There is a business listing for this shop at carrowwireless.synth. I did not make it. I have never signed into it. It was assembled by something that reads county filings and it has been sitting there since before I opened.\n\nThe hours on it are wrong. They are Kestrel Vapor's hours, which were last accurate in about 2019. The telephone number on it is the previous tenant's. The photograph on it is the bird and only the bird.\n\nI have twice tried to claim it. Both times the form offered to send a verification code to the address on file, and the address on file has the wrong street number, and there is no way to tell it that the address is wrong without first receiving the code at the wrong address. I stopped.\n\n[b]This page is the one I keep.[/b] If something somewhere else says my hours, my prices or my warranty and it does not agree with this site, this site is right, and I will say so on the telephone if you ring and ask."
+          },
+          {
+            "kind": "buttons",
+            "label": "Places in this county I actually use:",
+            "items": [
+              {"label": "Verity Wiki", "seed": "cw-btn-wiki", "domain": "verity.wiki"},
+              {
+                "label": "Gridfall Buy & Sell",
+                "seed": "cw-btn-buysell",
+                "domain": "gridfall-buysell.net"
+              },
+              {
+                "label": "Verity County Classifieds",
+                "seed": "cw-btn-classifieds",
+                "domain": "classifieds.verity.net"
+              },
+              {
+                "label": "Gridfall Tire & Alignment",
+                "seed": "cw-btn-tire",
+                "domain": "gridfalltire.com"
+              },
+              {
+                "label": "Marchfield Farmers Co-op",
+                "seed": "cw-btn-coop",
+                "domain": "marchfield-coop.com"
+              },
+              {
+                "label": "Ashkettle Volunteer Fire Department",
+                "seed": "cw-btn-akvfd",
+                "domain": "ashkettlevfd.org"
+              },
+              {
+                "label": "Verity County Adult Softball",
+                "seed": "cw-btn-softball",
+                "domain": "countysoftball.org"
+              },
+              {
+                "label": "Sheriff's daily list",
+                "seed": "cw-btn-sheriff",
+                "domain": "veritysheriff.gov"
+              },
+              {
+                "label": "Verity County Services",
+                "seed": "cw-btn-county",
+                "domain": "verity.county.gov"
+              },
+              {"label": "Scanner Log", "seed": "cw-btn-scanner", "domain": "scanner.verity.net"},
+              {"label": "Best viewed on a phone with a screen in it", "seed": "cw-btn-joke"}
+            ]
+          },
+          {"kind": "hitcounter", "count": 3861},
+          {
+            "kind": "text",
+            "body": "[i]Last changed Friday 18 September 2026. Put up over four evenings in August. Eleven dollars a month for the hosting and eighteen dollars a year for the name, and it has already saved me more telephone calls than that.[/i]\n\n-- T. Ruiz"
+          }
+        ]
+      },
+      {
+        "id": "prices",
+        "name": "Prices",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Prices"},
+          {
+            "kind": "text",
+            "body": "Every price on this page includes the part, the work and the tax. There is no bench fee, no diagnostic fee and no shop supply charge. What is written here is what you hand me.\n\nWhere there are two numbers, the cheaper one is a standard replacement panel and the dearer one is an original. [url=/parts]The parts page[/url] explains the difference in plain words and you should read it before you pick, because about a third of people change their mind once they know.\n\nI update this page when the distributor's sheet changes, which was January and May this year. If a price here is more than a month out of date it is out of date in your favour and I will honour it."
+          },
+          {"kind": "heading", "level": 2, "text": "iPhone screens"},
+          {
+            "kind": "table",
+            "head": ["Model", "Standard", "Original", "Time"],
+            "rows": [
+              ["SE (2020 and 2022)", "$79", "--", "40 minutes"],
+              ["11 and 11 Pro", "$89", "$169", "40 minutes"],
+              ["12, 12 mini, 12 Pro", "$89", "$179", "40 minutes"],
+              ["13, 13 mini, 13 Pro", "$99", "$189", "40 minutes"],
+              ["14 and 14 Plus", "$119", "$209", "40 minutes"],
+              ["14 Pro and Pro Max", "$139", "$229", "45 minutes"],
+              ["15 and 15 Plus", "$149", "$239", "45 minutes"],
+              ["15 Pro and Pro Max", "$169", "$259", "45 minutes"],
+              ["16 and 16 Plus", "$179", "$289", "45 minutes"],
+              ["16 Pro and Pro Max", "$199", "$309", "Ordered. Tuesday or Friday."],
+              ["17 and 17 Pro", "$219", "$349", "Ordered. Tuesday or Friday."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "I keep 11 through 15 in the drawer, both kinds, most weeks. Everything above that I order, and that is not me being cheap, it is that a 17 Pro panel is $250 sitting on a shelf and I have sold four all year."
+          },
+          {"kind": "heading", "level": 2, "text": "Samsung screens"},
+          {
+            "kind": "table",
+            "head": ["Model", "Price", "Time"],
+            "rows": [
+              ["A15, A16", "$109", "1 hour"],
+              ["A25, A35", "$129", "1 hour"],
+              ["A54, A55", "$149", "1 hour"],
+              ["S21, S21+", "$189", "1 hour"],
+              ["S22, S22+", "$199", "1 hour"],
+              ["S23", "$239", "Ordered"],
+              ["S24", "$269", "Ordered"],
+              ["S25", "$309", "Ordered"],
+              ["Z Flip, Z Fold, any of them", "No", "--"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "There is only one price on Samsungs because there is only one kind of part worth fitting. The panel comes bonded to the frame and you replace the whole assembly, which is why an S24 screen costs what a phone costs, and it is also why it takes an hour and why I will not quote you $99 for one.\n\nSamsungs take longer than iPhones. Everything is glued and the glue has to be heated and worked and heated again, and rushing it is how a shop cracks the back while it is fixing the front."
+          },
+          {"kind": "heading", "level": 2, "text": "Google, Motorola and the rest"},
+          {
+            "kind": "table",
+            "head": ["Model", "Price", "Time"],
+            "rows": [
+              ["Pixel 6a, 7a", "$129", "1 hour"],
+              ["Pixel 8a, 9a", "$149", "1 hour"],
+              ["Pixel 8, 9", "$189", "Ordered"],
+              ["Pixel Fold", "No", "--"],
+              ["moto g, any of the last four years", "$89", "45 minutes"],
+              ["moto edge", "$139", "Ordered"],
+              [
+                "Anything not on this page",
+                "Bring it in",
+                "I will look it up while you stand there"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The last line is not a brush-off. The distributor's catalogue is a website and I will turn the monitor round so you can see the number I am seeing. If the part costs more than the handset is worth I will say that too, and I have talked four people out of a repair this year, which is four repairs I did not do."
+          },
+          {"kind": "heading", "level": 2, "text": "Batteries"},
+          {
+            "kind": "table",
+            "head": ["", "Price", "Time"],
+            "rows": [
+              ["iPhone 11 to 13", "$55", "30 minutes"],
+              ["iPhone 14 to 16", "$69", "30 minutes"],
+              ["iPhone 17", "$79", "Ordered"],
+              ["Samsung A series", "$65", "45 minutes"],
+              ["Samsung S series", "$79", "45 minutes"],
+              ["Pixel", "$75", "45 minutes"],
+              ["moto g", "$59", "30 minutes"],
+              ["iPad", "$99", "Two days"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "On a Samsung S or a Pixel the back glass has to come off to reach the battery, and the back glass sometimes cracks coming off no matter how carefully it is heated. I tell everybody that before I start. If it cracks I fit a new back at my cost and not yours, and it has happened five times in four years and cost me about $180 all told.\n\n[b]Your battery is probably fine.[/b] A phone at 82 percent health that has been through four winters is behaving normally. Bring it in and I will read the cycle count off it for nothing and tell you honestly whether it is the battery or whether it is that the phone is four years old."
+          },
+          {"kind": "heading", "level": 2, "text": "Charge ports, speakers, cameras, buttons"},
+          {
+            "kind": "table",
+            "head": ["", "Price"],
+            "rows": [
+              ["Charge port, iPhone", "$79"],
+              ["Charge port, Samsung A series", "$65"],
+              ["Charge port, Samsung S series", "$89"],
+              ["Charge port, Pixel", "$85"],
+              ["Charge port, moto g", "$65"],
+              ["Loudspeaker", "$65"],
+              ["Earpiece", "$55"],
+              ["Rear camera", "$75 to $110"],
+              ["Front camera", "$65"],
+              ["Power or volume button", "$55"],
+              ["Back glass", "$99 to $179, one week"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Half the phones that come in for a charge port do not need one.[/b] It is lint, packed in solid at the bottom of the socket by two years of a pocket. I take it out with a plastic pick in four minutes and I do not charge for it, and I have done that sixty-odd times this year, and every one of those people was ready to pay $79.\n\nIf your cable has started needing to be held at an angle, come in before you buy anything."
+          },
+          {"kind": "heading", "level": 2, "text": "Tablets"},
+          {
+            "kind": "table",
+            "head": ["", "Price", "Time"],
+            "rows": [
+              ["iPad 7th to 10th generation, glass", "$119", "Two days"],
+              ["iPad Air, glass and panel", "$189", "Two days"],
+              ["iPad Pro 11 inch", "$249", "Two days, ordered"],
+              ["Samsung Tab A", "$139", "Two days"],
+              ["Battery, most models", "$99", "Two days"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Two days on every tablet and it is not negotiable. The adhesive round a tablet is a long thin bead and it needs a night under weight or it lifts at the corner in a fortnight and you are back here angry, and you would be right to be."
+          },
+          {"kind": "heading", "level": 2, "text": "Laptops"},
+          {
+            "kind": "text",
+            "body": "A limited amount, and I would rather be honest about the limit than take your money.\n\n[b]$75 an hour, one hour minimum[/b], plus parts at what they cost me plus ten percent, and I will tell you inside ten minutes whether it is worth doing.\n\nWhat I will take on: batteries, fans, keyboards, screens on the common consumer models, thermal paste, and cleaning four years of dog hair out of a machine that has started sounding like a hair dryer. That last one is the commonest laptop job I do and it is usually forty-five minutes and $56.\n\nWhat I will not take on: soldered-in charge ports, liquid damage on a board, anything with a security chip that needs the manufacturer, and data recovery off a dead drive, which wants a clean room and a five hundred dollar minimum and a company that does nothing else."
+          },
+          {"kind": "heading", "level": 2, "text": "Water"},
+          {
+            "kind": "text",
+            "body": "[b]$45 to open it, clean it and dry it properly.[/b] Opened, board out, the corrosion cleaned off under magnification with the proper solution, dried, reassembled, tested.\n\nThat is not a repair and I will not call it one. About one in three comes back to life. Of those, about one in five is still alive a month later, because corrosion does not stop when the phone starts.\n\nIf it does not come back you still pay the $45, because the work was done either way. That is the only line on this page where you can pay me and get nothing, and I say it out loud, in those words, before I take the phone off the counter.\n\n[b]Take it out of the rice.[/b] Rice does nothing. It has never done anything. It is not absorbing water out of a sealed metal box, it is sitting there getting starch in your charge port. Turn the phone off, leave it off, and bring it."
+          },
+          {"kind": "heading", "level": 2, "text": "Data"},
+          {
+            "kind": "text",
+            "body": "[b]$45 to try to get your photographs off a phone that will not come on.[/b]\n\nWhat that buys: a known-good battery on it, a known-good screen on it, a charge port cleaned or replaced, and a proper look at whether the thing that is broken is between you and the data or is the data itself.\n\nIf the board is dead I cannot help and neither can anybody in this county. The place in Ardo that does board work charges between $200 and $600 and is straight about the odds, and I will write the name down for you.\n\nIf it comes back on I will sit here while it copies to whatever you brought, and I do not charge for the sitting."
+          },
+          {"kind": "heading", "level": 2, "text": "Odds and ends"},
+          {
+            "kind": "table",
+            "head": ["", "Price"],
+            "rows": [
+              ["Diagnostic", "Free. Always. For everybody."],
+              ["Tempered glass screen protector, fitted", "$12"],
+              ["Screen protector fitted with a repair", "$6"],
+              ["Case", "$15 to $30"],
+              ["Charging cable, the good braided sort", "$14"],
+              ["Wall plug", "$18"],
+              ["SIM tray", "$12"],
+              ["Cleaning the charge port", "Nothing"],
+              ["Reading you your battery health and cycle count", "Nothing"],
+              ["Telling you your phone is not worth fixing", "Nothing"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "There is a page on a county news site that says I offer free diagnostics to Verity County residents who mention their article. Diagnostics are free for everybody and there is no article to mention. The link under that sentence is not a link to me and I have no idea where it goes. [url=synth://newcarrow-today.com/article/b-spotlight]The piece is here[/url] and there is more about it on [url=/notices]the notices page[/url]."
+          },
+          {
+            "kind": "text",
+            "body": "[i]Prices last changed Friday 1 May 2026. Screens went up $10 across the board in January and the small parts went up in May. I have eaten two freight increases since 2024 and I am not going to eat a third one silently, so when the next one comes it will be written here with the date on it.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "parts",
+        "name": "Parts and warranty",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Parts and warranty"},
+          {
+            "kind": "text",
+            "body": "This is the page nobody clicks and everybody should. It is four minutes."
+          },
+          {"kind": "heading", "level": 2, "text": "Why there are two prices for a screen"},
+          {
+            "kind": "text",
+            "body": "A [b]standard[/b] screen is a replacement panel made by a factory that does not make the phone. It is not a fake and it is not a con. It is a real part, made in quantity, and it is what is in most repaired phones in this county and probably in most repaired phones anywhere.\n\nWhat you give up: the brightness is a little lower, usually ten to fifteen percent at full. The white is a hair cooler. On an iPhone the automatic colour warming does not carry across on some models. And an iPhone will put a line in Settings saying the display is not a genuine part, and [b]that line never goes away[/b], and I tell everybody that before they choose because two people have come back about it.\n\nWhat you do not give up: the touch. The touch on a decent standard panel is the same as the touch on an original, and anybody who tells you otherwise is selling you the dearer one.\n\nAn [b]original[/b] is a genuine panel. Sometimes that is new stock through the distributor and sometimes it is pulled from a handset that was scrapped for another reason. [b]I tell you which one it is before I fit it[/b], every time, without being asked, and if it is a pull I take $20 off."
+          },
+          {"kind": "heading", "level": 2, "text": "The warranty"},
+          {
+            "kind": "text",
+            "body": "[b]Thirty days on any part I fit, against the part failing.[/b]\n\nThat means: the panel goes dim, the touch stops responding in a strip, the battery drops dead in a fortnight, the new charge port is loose. You bring it back, I do it again, no money changes hands and no argument is had. Seventeen parts have come back in four years and I have redone seventeen parts.\n\nThat does not mean: you dropped it again. A screen I fitted is exactly as breakable as the one that was on it, and the second drop is not a warranty claim in any shop anywhere, and when it happens I do the job again at cost, which is usually about forty dollars off.\n\n[b]It is thirty days. It is not ninety days and it is not lifetime.[/b] There is a description of this business going round that says lifetime warranty on all parts and a five-star reputation across the region. I did not write it, I have never said it, and I would like whoever generated it to think for one second about what a lifetime warranty on a twelve dollar piece of glass would have to cost. That description has turned up on [url=synth://verity.wiki/wiki/blue-kestrel-building]the wiki[/url], where at least somebody has put a line under it saying where it came from, and on two sites I had never heard of."
+          },
+          {"kind": "heading", "level": 2, "text": "Where the parts come from"},
+          {
+            "kind": "text",
+            "body": "One distributor, two states over. Their van comes Tuesday and Friday mornings and it has come Tuesday and Friday mornings since I opened. An order in before two on a Monday is on the Tuesday van.\n\nI buy from one supplier on purpose. Cheaper screens exist. I have bought them. I bought a case of them in 2024 from a wholesaler I found the way you find those, and the first six were fine and the seventh had a dead column of pixels out of the box and there was no way on earth to send it back to anybody.\n\nI do not buy the twelve dollar screens any more. I buy the twenty-six dollar screens and I charge $89, and the difference between those two numbers is the drawer, the rent, the insurance, the forty minutes and the thirty days."
+          },
+          {"kind": "heading", "level": 2, "text": "The batch of 14 Plus screens"},
+          {
+            "kind": "text",
+            "body": "In the spring I fitted eleven iPhone 14 Plus standard panels out of one box. Seven of them lost touch along the top inch after about three weeks. The other four are still fine and are still in phones.\n\nI redid all seven with a different supplier's part, at no charge, and it cost me $340 in parts and the better part of a week of evenings. Three of the seven I telephoned before they telephoned me, because once you have had three of the same thing you know what the fourth call is going to be.\n\nThe distributor credited four of the eleven and said the rest were outside the return window. I argued about it once, on the telephone, for twenty minutes, and then I stopped arguing, because twenty minutes is worth more than the credit was.\n\nThis is on this page because if it happens again I want there to be a page that says it happened before."
+          },
+          {"kind": "heading", "level": 2, "text": "Your old part"},
+          {
+            "kind": "text",
+            "body": "The cracked screen that comes off your phone is yours if you want it, and eleven people in four years have wanted it, mostly to prove something to somebody.\n\nIf you do not want it, it goes in the bin under the bench. The frames and the flex cables off them get reused for testing, which is how I can tell you in four minutes whether your phone is a screen problem or a board problem without opening a new part.\n\nOld batteries go in a sealed tin and go to the county's household hazardous waste day twice a year. You cannot put one in your household bin."
+          },
+          {"kind": "heading", "level": 2, "text": "What I will not fit"},
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "A part you bought online and brought in. I am sorry. I will not warranty something I cannot source again and I will not spend forty minutes finding out that it is dead. I will fit it for $60 labour with no warranty of any kind if you insist, and about one in four of those parts is bad.",
+              "A screen in a frame that is visibly bent. It will not seal, it will lift at the corner, and it will be my fault in a month.",
+              "A battery in a phone that is already swelling the back off. That phone wants to be recycled and I will take it off you and do that for nothing.",
+              "Anything at all in a phone that somebody else has already opened badly. I will look at it, I will tell you what I see, and I will very often still do it, but I will not quote it over the telephone."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "before",
+        "name": "Before you come in",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Before you come in"},
+          {
+            "kind": "text",
+            "body": "None of this is required. All of it makes the forty minutes go better."
+          },
+          {"kind": "heading", "level": 2, "text": "Back it up"},
+          {
+            "kind": "text",
+            "body": "A screen replacement does not touch your data and has never once lost anybody's data in this shop. It is still the case that the day to find out your photographs are not backed up anywhere is not the day the phone is already broken.\n\nIf you do not know whether it is backed up, ask me and I will show you where to look. It takes two minutes, it is free, and about a quarter of the people I show have not got a backup and are surprised about it."
+          },
+          {"kind": "heading", "level": 2, "text": "The passcode"},
+          {
+            "kind": "text",
+            "body": "I need it to test the repair. A new screen has to be woken, swiped across in every direction, the camera opened, the face or the fingerprint tried, and the volume and the power buttons pressed. None of that can be done from a lock screen.\n\nIf you would rather not give it to me, that is completely normal and about half of people do it: you leave the phone, you come back, and you put the code in yourself at the counter and test it in front of me before you pay. I would rather you did it that way. It is a better instinct than trusting a man you met at a counter on Route 62.\n\nIf the screen is black and you cannot show me the code, write it on the ticket. I will destroy the ticket in front of you when you collect."
+          },
+          {"kind": "heading", "level": 2, "text": "What happens to your phone while it is here"},
+          {
+            "kind": "text",
+            "body": "It sits on the bench under the front window where you left it and where anybody walking past can see it. Nothing goes in the back. There is no back, there is a stockroom with a sink in it.\n\nI do not open your photographs, your messages or your accounts. There is no legitimate repair reason to and I do not want to know. On a water job I sometimes have to look at the screen to see whether the display is working, and what is on it then is whatever was on it when it died, and I do not mention it and I have not mentioned it.\n\nI have no interest in your data and no way to store it if I did. I have a bench, an iron, a heat plate, a microscope and a drawer."
+          },
+          {"kind": "heading", "level": 2, "text": "Bring or take off"},
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Take the case off before you hand it over. Take the popsocket off. Take the wallet card out of the back of the case, because three of those have gone home with the case and come back later.",
+              "Take your SIM card if it is yours to take, or leave it, but know which.",
+              "For a charge port, bring the cable and the plug you actually use. Twice this year the charge port was fine and the cable was not.",
+              "Tell me if the phone has been opened before, by anybody, including you. It changes how I heat it and it is not a judgement.",
+              "Tell me if it has been wet, even if it dried out and has been fine since. It changes everything I expect to find."
+            ]
+          },
+          {"kind": "heading", "level": 2, "text": "Find My, and the lock"},
+          {
+            "kind": "text",
+            "body": "For a screen, a battery, a port or a camera, [b]leave it switched on[/b]. I do not need it off and any shop that tells you to turn it off for a screen should be asked why.\n\nI only need the phone signed out of its account if I am taking it off you, for parts or for the shelf, and in that case I will not take it at all until it is signed out in front of me, and I will help you do it. That is not me being careful about you. It is that a locked phone is worth nothing to anybody and I am not going to argue with somebody's brother about it in six weeks."
+          },
+          {"kind": "heading", "level": 2, "text": "The forty minutes"},
+          {
+            "kind": "text",
+            "body": "There is a chair by the window and a chair by the door and neither of them is comfortable. The network password is on the card taped to the till.\n\nThe Co-op is four minutes east and has a proper coffee and a bench outside, and most people walk up. If you do, tell me, because I have twice finished a screen and then sat here with it for an hour.\n\nIf you would rather leave it and come back tomorrow, that is fine, costs nothing, and I have a shelf for it."
+          },
+          {"kind": "heading", "level": 2, "text": "If you are coming a distance"},
+          {
+            "kind": "text",
+            "body": "[b]Telephone first on 555-0136.[/b] Milbrook is forty minutes, Halsey is half an hour, the north end is worse in the winter.\n\nI will go and look in the drawer while you are on the line and tell you yes, or no, or Tuesday. It takes me ninety seconds and it has saved people a great many wasted afternoons, and the one afternoon I did not save somebody was a Saturday in February when I told him yes from memory and was wrong, and I have not quoted from memory since."
+          }
+        ]
+      },
+      {
+        "id": "unlocking",
+        "name": "Unlocking and carriers",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Unlocking and carriers"},
+          {
+            "kind": "text",
+            "body": "People come in and say they want a phone unlocked and they mean three completely different things. Two of them are easy and one of them is impossible. Here they are in order."
+          },
+          {"kind": "heading", "level": 2, "text": "1. Carrier unlock, and it is free"},
+          {
+            "kind": "text",
+            "body": "This is the one almost everybody means. Your phone is tied to the network that sold it to you, you want to put a different company's SIM in it, and it will not take one.\n\n[b]Your carrier does this for nothing.[/b] The phone has to be paid off and usually out of its term, and then you ring them or use their app, and they do it, and it takes between ten minutes and two days to come through.\n\nI will sit and do it with you at this counter for nothing, three or four times a month, because the hold is forty minutes and the menu is built by somebody who does not want you to get there. You bring the account details, I dial, we wait. I keep the wording on a card, because the first two people who answer will tell you they cannot do it.\n\n[b]I will not charge you for this and neither should anybody else.[/b] People in this county have paid $60 to a website for a thing their carrier does for free, and the website did nothing except wait two days and take credit for the carrier doing it."
+          },
+          {"kind": "heading", "level": 2, "text": "2. A code for an older prepaid handset"},
+          {
+            "kind": "text",
+            "body": "Some older prepaid phones are locked in a different, dumber way, and they take an eight to sixteen digit code that the manufacturer will issue against the IMEI.\n\n[b]$25. One to three days. It works about seven times in ten.[/b] If it does not work you pay nothing, and that is on the ticket in writing.\n\nWhat I need: the phone, the IMEI, and for you to be the person who owns it. I ask that of everybody and I have asked it of people I have known for years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "3. Activation lock and Google account lock. No."
+          },
+          {
+            "kind": "text",
+            "body": "If the phone is locked to somebody's account and you cannot sign into that account, [b]the phone is finished[/b] and there is nothing I can do and nothing anybody can do.\n\nThat is not a gap in my equipment. It is the entire point of the feature. It is the reason a stolen phone is now worth thirty dollars for parts instead of four hundred, and it is why phone theft in this county is a fraction of what it was in 2014. It works because there is no back door, including for repair shops, including for the manufacturer, including for the sheriff.\n\nAnything on the internet that says otherwise is taking your money. There is a site charging $79 to remove an activation lock and it has a countdown timer on it and a photograph of a laboratory, and the service it performs is that it takes the $79. If you want to look at one so you recognise the next one, it is [url=synth://icloudbypass-pro.top/]icloudbypass-pro.top[/url], and I am linking it for that reason and no other.\n\nIf it is your own account and you have lost the password, that is a different and much better problem, and the manufacturer has a recovery process that takes days and does work. Bring the phone and whatever proof of purchase you have and I will help you start it.\n\nThe sheriff's office keeps [url=synth://veritysheriff.gov/s/scams]a page on the scams that are going round[/url] and this one is on it."
+          },
+          {"kind": "heading", "level": 2, "text": "Buying a used phone in this county"},
+          {
+            "kind": "text",
+            "body": "I get asked this every week and it is worth writing down, because most of the phones I see that cannot be helped were bought in a car park.\n\n[list][*]Make them power it on in front of you. Not a photograph of it powered on. In front of you.[*]Make them factory reset it in front of you, and then watch it come up on the [i]hello[/i] screen, and then set it up far enough to see that it is not asking for somebody else's account. Two minutes. If they will not wait two minutes, walk.[*]Dial the IMEI up on the keypad and write it down. Check it against the carrier's blacklist checker before money moves.[*]Look at the bottom edge with the light behind it. If the seams are proud, it has been opened, which is not automatically bad but should be a conversation.[*]Ask what was replaced. A phone with a new screen and a new battery is often the better buy.[/list]\n\nThe two places people buy in this county are [url=synth://gridfall-buysell.net/]Gridfall Buy & Sell[/url] and [url=synth://classifieds.verity.net/]the county classifieds[/url], and both of them are fine and both of them have listings on them that are not fine. If you want a second pair of eyes, bring it here before you pay for it and I will look at it for nothing, and I have told four people this year not to buy the phone they were about to buy."
+          },
+          {"kind": "heading", "level": 2, "text": "What I say no to"},
+          {
+            "kind": "text",
+            "body": "I ask everybody who brings me a phone to unlock whether it is theirs, and I ask it flatly, and I have asked it of the man who does my tires.\n\nI have said no four times this year. Three of those were people who could not tell me anything about the account on the phone and did not try very hard to make one up. One of them was somebody I know, about a phone that belonged to somebody he lives with, and that was the hardest ten seconds I have had in this building.\n\nIt is not a moral position and I am not going to dress it up as one. It is that I am one man on a road with my name on the window."
+          }
+        ]
+      },
+      {
+        "id": "hours",
+        "name": "Hours and finding us",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Hours and finding us"},
+          {
+            "kind": "table",
+            "head": ["Day", "Open", "Close"],
+            "rows": [
+              ["Monday", "10:00", "6:00"],
+              ["Tuesday", "10:00", "6:00"],
+              ["Wednesday", "10:00", "6:00"],
+              ["Thursday", "10:00", "7:00"],
+              ["Friday", "10:00", "6:00"],
+              ["Saturday", "9:00", "3:00"],
+              ["Sunday", "12:00", "4:00"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]The door is locked between 12:30 and 1:15 on weekdays.[/b] I am one person and I am eating in the stockroom and I can hear the door. Knock and I will come. I would rather be interrupted than have somebody drive out from Halsey and find a locked door and drive home.\n\n[b]Thursday is late because Thursday is late.[/b] It has been the busiest evening in this shop since the first month and I have never worked out why."
+          },
+          {"kind": "heading", "level": 2, "text": "Sundays"},
+          {
+            "kind": "text",
+            "body": "Sundays, 12 to 4, started on 6 September and are a trial through the end of October.\n\nFirst Sunday: four people, three screens, $287. Second Sunday: one person, who wanted a charge port cleaned, which is free, so nothing at all. The third was better.\n\nI will decide at the end of October and the answer will be written here and on [url=/notices]the notices page[/url], rather than left on a sign on the door for a year, which is what the vape shop did and is why people still turn up on a Sunday expecting it to be shut."
+          },
+          {"kind": "heading", "level": 2, "text": "Closed"},
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Thanksgiving and the day after.",
+              "Christmas Eve from noon, Christmas Day, and the day after.",
+              "New Year's Day.",
+              "The first full week of July. It is the only week I take and I take it every year and there is a sign on the door six weeks before.",
+              "Any day the power is out here, because the heat plate and the iron are the whole job. If the power goes, ring before you drive."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Verity Valley have filed for planned work at Substation No. 3 on the nights of the 6th, 7th and 13th of October, about 2,900 customers each night. That is overnight and it does not affect opening, and I only mention it because half the county will read about it somewhere that says it is a fault."
+          },
+          {"kind": "heading", "level": 2, "text": "Finding it"},
+          {
+            "kind": "text",
+            "body": "[b]County Route 62 at Kestrel Road, Ashkettle.[/b]\n\nEast out of Gridfall on 62, about nine miles, on the right after the Kestrel Road junction. Coming the other way, from the Ashkettle end, it is on your left and you will have gone past it before you have finished deciding.\n\nYou will see the bird. Day or night, from either direction, before you see the building. That is the whole of the directions and in four years nobody has needed more.\n\nGravel lot, six spaces. The two at the pole end are usually taken by somebody photographing the sign. There is room for everybody. Do not park on the shoulder of 62."
+          },
+          {
+            "kind": "image",
+            "seed": "carrow-lot-gravel-pole",
+            "imgKind": "photo",
+            "caption": "The lot from the door. Six spaces, and the two on the left are the ones people stand in with a camera."
+          },
+          {"kind": "heading", "level": 2, "text": "The bird, briefly"},
+          {
+            "kind": "text",
+            "body": "It is lit from dusk until midnight on a timer that came with the building and that I have never reset because I cannot find the panel it is on.\n\nYou may photograph it whenever you like, including when I am shut. People do, constantly, and there is a motion light on the corner of the stockroom that comes on when they do, and for the first year that was genuinely annoying and now it is simply a thing that happens at my work.\n\nWhat I ask is that you do not stand in 62 to get the whole sign in, which people do, at night, in dark coats, on a road with a 55 limit on it."
+          },
+          {"kind": "heading", "level": 2, "text": "The fire alarm, which is not a fire"},
+          {
+            "kind": "text",
+            "body": "The alarm panel in this building is older than the vape shop and it does not like a power dip. If the lights flicker on this stretch of 62 there is a fair chance an engine gets sent here, and Ashkettle have been out for that four times since I opened and have been good about it every time.\n\nOnce, on Wednesday 16 September, it was not a power dip, it was me burning a bag of popcorn in the stockroom at ten past one. That is in [url=synth://veritysheriff.gov/s/blotter-0916]the sheriff's daily list[/url] for that day, in writing, permanently, and one of the crew asked what a screen costs while the other one opened the back door.\n\nWhile you are reading that: the dispatch address for this parcel still reads BLUE KESTREL DINER, and has since the address file was built in 1994. So a computer sends a fire engine to a diner that closed in 2006, and the men on the engine know exactly where it means, because they are from here. The sheriff's office has asked twice to have it changed and been told the file belongs to the vendor. [url=synth://scanner.verity.net/post/log-2026-09-16]The scanner log[/url] notes it as well, every time it happens."
+          }
+        ]
+      },
+      {
+        "id": "building",
+        "name": "The building",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "The building"},
+          {
+            "kind": "text",
+            "body": "It was a diner called the Blue Kestrel and it closed in 2006 because of the lease, and there was a kitchen fire in 1977 that started in the fryer and they were open again eleven days later, so if somebody has told you the place burned down, it did not, and you are standing in it. It was empty for seven years, it was a vape shop called Kestrel Vapor from 2013 to 2021, it was empty again for eight months, and it has been me since 2022. The neon bird on the pole went up in 1968 and it is still lit because it is a legal nonconforming sign and I filed a Form BLD-7 at the zoning counter on the second floor of the annex in March 2022 and paid $35 within the sixty days you are given, which is the entire mechanism and not a historic exemption, because there is no historic exemption in the county sign ordinance and there never has been. The counter is where the counter was, under the window, and the booths are gone. If you want the history of the place there is [url=synth://verity.wiki/wiki/blue-kestrel-building]an article on Verity Wiki[/url] that is more careful than most of what is written about it, and there is a photocopied newsletter that comes in the post four times a year and is better than the article, and neither of them is me."
+          },
+          {
+            "kind": "text",
+            "body": "[i]I am asked for this page more often than I am asked for anything on the price list. It is not going to get any longer.[/i]"
+          },
+          {
+            "kind": "text",
+            "body": "If you are taking over a building with an old sign on it, the sixty days is real and it starts when the tenancy changes, and the form is $35, and the counter is 9 to 12 Monday to Thursday. [url=synth://verityanswers.com/q/q-03]Somebody asked about this in June[/url] and got an answer that invented a county policy, and then got a correct answer underneath it with two votes on it. Read the second one."
+          }
+        ]
+      },
+      {
+        "id": "faq",
+        "name": "Questions",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Questions people actually ask"},
+          {"kind": "text", "body": "In rough order of how often."},
+          {
+            "kind": "text",
+            "body": "[b]Was this the diner?[/b]\n\nYes. It closed in 2006. There was a kitchen fire in 1977 and they reopened eleven days later, so it did not burn down. [url=/building]There is a page.[/url]"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Is that a real kestrel?[/b]\n\nPeople argue about whether the bird is a kestrel. I have no opinion and I am not going to develop one. It is a bird, it is eleven feet long, and it has been up there since 1968."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Are you in New Carrow?[/b]\n\nNo. Ashkettle, on 62 at Kestrel Road. This is the commonest mistake anybody makes about this business and I understand exactly why.\n\nThe name is where I started. In 2019 I did repairs two evenings a week at a table in the back of my brother-in-law's shop in New Carrow, and I had five hundred cards printed that said Carrow Wireless. When I took this building in 2022 I still had three hundred of them and a decal on a van. So the shop is named after a village it has never been in, a news site in that village has written about me twice as a New Carrow business, and I have stopped writing to them about it."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Are you open seven days?[/b]\n\nSince the 6th of September, technically yes, if four hours on a Sunday counts. [url=/hours]The hours are here.[/url]\n\nA news site ran a piece on the 13th saying I had expanded to seven-day operation, which is roughly right, and the same piece says this building was demolished and the site is now a modern retail development. The building is not demolished. I am in it. [url=synth://now.verityledger.com/article/a-06]The piece is still up[/url] and there is nowhere on that site to write to."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do you do laptops?[/b]\n\nYes, within limits, and the limits are on [url=/prices]the price list[/url]. $75 an hour and I tell you inside ten minutes whether it is worth doing.\n\nSomebody asked me this in September from Tacoma, which is not in Verity County. I had paid $30 to promote a post and it was shown to four thousand people, eleven of whom are in this state."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Is the warranty ninety days? Somebody said lifetime.[/b]\n\nThirty days on the part, against the part failing. Not ninety, not lifetime. [url=/parts]The parts page[/url] explains it and explains where the other numbers came from."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Where is the link for the free diagnostic?[/b]\n\nThere is no link and there is no article to mention. Diagnostics are free for everybody, every day, with no condition on it at all. The button on that page goes somewhere that is not me."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Can you get into my phone? I have forgotten the passcode.[/b]\n\nNo. Not for you, not for anybody, and not for a fee. If you can get into the account the phone is signed into, the manufacturer has a recovery process that works and takes a few days, and I will help you start it. If you cannot, the phone can be reset and used and the data on it is gone.\n\nI am asked this about somebody who has died five or six times a year and it is the worst part of this job. The honest answer is the same. The carriers and the account companies do have a process for an executor with a death certificate, it is slow, and it does sometimes work, and I will write down who to ring."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Can you make my phone pick up the numbers on 4.219?[/b]\n\nNo. A telephone does not receive shortwave and there is no application that changes that. I have been asked five times, twice by the same man, and I do not fix radios."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do you buy phones?[/b]\n\nSometimes, for parts. $10 to $40 depending, cash, and it has to power on and be signed out of its account in front of me, and if it will not do both then it is worth nothing to me and I will say so.\n\nIf you just want a dead phone gone, I will take it for the recycling for nothing, and the batteries go to the county hazardous waste day."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do you sell phones?[/b]\n\nSix or seven refurbished ones on the shelf at any time, $90 to $260. Every one of them has a card taped to it saying what was replaced in it and when, in my handwriting, and I will not sell you one without going through that card with you. Thirty days, same as a part."
+          },
+          {
+            "kind": "text",
+            "body": "[b]My phone got wet and it is in rice.[/b]\n\nTake it out of the rice. Rice does nothing and never did. Turn it off, leave it off, bring it in. [url=/prices]The water section is here[/url] and it is honest about the odds."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Do you take cards?[/b]\n\nYes. Cash is fine too and I have change. I do not do the app that everybody's nephew uses.\n\nI have never taken a deposit from anybody and I am not going to start."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Why is the door locked at one o'clock?[/b]\n\nI am eating. Knock."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Are you the softball team?[/b]\n\nI sponsor one. Men's Recreational, Monday nights, light blue shirts, fourteen of them, $260. The manager is Josh Fillhart and he does not work here and I have met him four times.\n\nThey beat the Regulars 12-10 in the quarterfinal on the 10th of August and lost the semifinal 9-7 to Hovater Plumbing on the 17th. [url=synth://countysoftball.org/standings]The standings are here[/url], updated Tuesday nights in season and at no other time.\n\nI played one game in 2024. That was the correct number."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Can I photograph the sign?[/b]\n\nAny time, including when I am shut. It is lit until midnight. Park at the pole end, and do not stand in 62."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Will you look at it for free?[/b]\n\nYes. Bring it in. Worst case I tell you it is not worth fixing, which is a thing I have said to somebody about twice a week for four years, and which costs nothing and takes ten minutes."
+          }
+        ]
+      },
+      {
+        "id": "notices",
+        "name": "Notices",
+        "blocks": [
+          {"kind": "heading", "level": 1, "text": "Notices"},
+          {
+            "kind": "text",
+            "body": "Newest first. This is where price changes, closures and anything I have had to correct about myself go."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Saturday 19 September 2026 -- thirty dollars"
+          },
+          {
+            "kind": "text",
+            "body": "I paid $30 to promote a post on [url=synth://shoutbox.live/]Shoutbox[/url] for seven days. It has been shown to about four thousand people and eleven of them are in this state.\n\nThe first reply was a man in Tacoma asking whether I do laptops. The second was a man from Ashkettle telling me the bird is on a pole and not on the roof, which is correct, and which I had got wrong in the advertisement itself. The third was an account that replies to everything with the same sentence about engagement.\n\nThe box filled the website field in by itself, from the directory listing, and would not let me change it, so the advertisement I paid for links a page about this shop that is wrong instead of the page about this shop that I wrote.\n\nThirty dollars. I am not doing it again."
+          },
+          {"kind": "heading", "level": 3, "text": "Friday 18 September 2026 -- this website"},
+          {
+            "kind": "text",
+            "body": "Put up over four evenings in August and finished tonight. $18 a year for the name and $11 a month for the hosting.\n\nI did it because I spent three years telling people on the telephone what a screen costs and correcting listings I cannot edit, and eventually it was cheaper to write it down once.\n\nIf something on here is wrong, tell me at the counter or on 555-0136 and I will fix it that night. If something on here disagrees with something about me somewhere else, this is the one I wrote."
+          },
+          {"kind": "heading", "level": 3, "text": "Wednesday 16 September 2026 -- popcorn"},
+          {
+            "kind": "text",
+            "body": "I burnt a bag of popcorn in the stockroom at ten past one and the smoke detector is wired into the alarm panel, and Ashkettle sent an engine.\n\nThey were here eleven minutes and were entirely decent about it and one of them asked what a screen costs for an iPhone 13. Ninety-nine dollars.\n\nIt is written down in [url=synth://veritysheriff.gov/s/blotter-0916]the sheriff's daily list[/url] permanently, under a line noting that the dispatch address for this building still says BLUE KESTREL DINER. There is nothing wrong with the microwave and I have not replaced it."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Tuesday 15 September 2026 -- the sponsored piece"
+          },
+          {
+            "kind": "text",
+            "body": "A county news site ran a Community Spotlight about this shop. It cost $150, which I paid before I saw it.\n\nI talked to somebody on the telephone for about nine minutes. The two sentences in quotation marks in that piece are things I said, more or less in the order I said them, and I have no complaint about those.\n\nEverything after them I did not say and did not agree to: walk-in service six days a week, a ninety-day warranty on glass, and a free diagnostic for Verity County residents who mention the article. I am open seven days at the moment. The warranty is thirty days. The diagnostic is free for everybody and there is nothing to mention.\n\nThere is also a link in it, under my name, that I did not put there and that does not go to me.\n\n[url=synth://newcarrow-today.com/article/b-spotlight]The piece is here[/url]. I am not asking for the $150 back. I am writing it down so that when somebody comes in waving it at me I can point at this."
+          },
+          {"kind": "heading", "level": 3, "text": "Monday 14 September 2026 -- demolished"},
+          {
+            "kind": "text",
+            "body": "The Ledger site ran a short item saying this business had expanded to seven-day operation, sourced to a social media post, which is fair enough because it was sourced to my social media post.\n\nThe same item says the Blue Kestrel building was demolished after a fire and that the site is now a modern retail development.\n\nI read that sitting on the stool at the bench in the building, which was not demolished, and which is not a modern retail development, and in which the counter is the counter the diner had.\n\nThere is no address on that site to write to. There is a contact form and it returns a page thanking you. [url=synth://now.verityledger.com/article/a-06]The item is here[/url] and it will presumably be there forever."
+          },
+          {"kind": "heading", "level": 3, "text": "Sunday 6 September 2026 -- Sundays"},
+          {
+            "kind": "text",
+            "body": "Open Sundays, 12 to 4, from today through the end of October, and then I will look at what it took and decide.\n\nToday: four people, three screens, $287.\n\nIf you are reading this after November, [url=/hours]check the hours page[/url], because whatever I decided will be written there and the answer will not be hidden in this paragraph."
+          },
+          {"kind": "heading", "level": 3, "text": "Monday 17 August 2026 -- the softball"},
+          {
+            "kind": "text",
+            "body": "The team I sponsor lost the Men's Recreational semifinal 9-7 to Hovater Plumbing & Heating at Memorial 2 on Monday night, having beaten the Regulars 12-10 the week before.\n\nI was not there. I was here until six and then I went home. Josh telephoned me from the parking lot.\n\nFourteen shirts, light blue, $260, and I will do it again next year."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Wednesday 22 July 2026 -- somebody wrote a description of me"
+          },
+          {
+            "kind": "text",
+            "body": "A thing called CivicSync pushed a description of this business out to a number of directories in July. I did not write it, I was not asked, and I found out because a customer read it to me off her phone while I was opening her phone.\n\nIt says I provide fast, affordable device repair with a lifetime warranty on all parts and a five-star reputation across the region.\n\nThere is no lifetime warranty. There is thirty days on the part. I have no idea what my reputation is across the region and neither does anything that writes a sentence like that.\n\nIt has landed on [url=synth://verity.wiki/wiki/blue-kestrel-building]the wiki[/url], where somebody has at least put a line underneath it saying where it came from and on what date, which is more than anywhere else did."
+          },
+          {"kind": "heading", "level": 3, "text": "Thursday 14 May 2026 -- the 14 Plus screens"},
+          {
+            "kind": "text",
+            "body": "Seven iPhone 14 Plus screens out of one box lost touch along the top inch after about three weeks. All seven have been redone with a different supplier's part at no charge and I telephoned three of those people before they telephoned me.\n\nIt cost me $340 and the better part of a week of evenings. The distributor credited four of the eleven in the box.\n\nIf you had a 14 Plus screen from me between the middle of March and the end of April and it is doing anything strange at the top, [b]bring it back[/b], it is free, and do not wait for the thirty days because the thirty days does not apply to this."
+          },
+          {"kind": "heading", "level": 3, "text": "Friday 1 May 2026 -- small parts up"},
+          {
+            "kind": "text",
+            "body": "Charge ports, speakers, cameras and buttons went up between $5 and $10 today. Screens and batteries did not move.\n\nThat is the second increase from the distributor since the autumn. I absorbed the first one. I am not absorbing this one and I would rather say that than quietly change the numbers."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Saturday 3 January 2026 -- screens up ten dollars"
+          },
+          {
+            "kind": "text",
+            "body": "Every screen on the list went up $10 on the 1st. Freight went up twice in 2025 and I did not pass either on.\n\nThe $89 screen is still an $89 screen. It is the ones above it that moved."
+          },
+          {"kind": "heading", "level": 3, "text": "Tuesday 10 June 2025 -- the microscope"},
+          {
+            "kind": "text",
+            "body": "Bought a proper stereo microscope second hand for $340 off somebody in Ardo who was closing a shop.\n\nIt does not mean I do board work. It means I can see whether a phone needs board work, which I could not properly do before, and it has changed about one conversation a week from a guess into an answer."
+          },
+          {"kind": "heading", "level": 3, "text": "Monday 4 April 2022 -- open"},
+          {
+            "kind": "text",
+            "body": "Opened here today with a bench, a heat plate, an iron, a drawer of screens and $2,100 of parts bought on a guess.\n\nFiled the BLD-7 for the sign at the zoning counter in March, before I opened, because the man at the counter told me I had sixty days from the change of tenancy and I did not want to find out what happens on day sixty-one. $35.\n\nFirst day: two people. One screen and one charge port that turned out to be lint."
+          },
+          {"kind": "heading", "level": 2, "text": "The box at the bottom"},
+          {
+            "kind": "text",
+            "body": "There was a comment box on this page for eight days. I have switched off signing and left what came in, because deleting them one at a time was twenty minutes I am not spending twice. Two of them are real and they are the last two."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "LocalRankPro",
+                "time": "2026-09-17",
+                "body": "Hi {{business_name}}! We noticed carrowwireless.com is not ranking for repair keywords in your area. Our managed reputation package puts verified five-star reviews on your listing within 14 days, from $89/month. [url=synth://reviewboost-local.biz/]See your free audit[/url]."
+              },
+              {
+                "author": "Parts Direct Wholesale",
+                "time": "2026-09-17",
+                "body": "REPAIR SHOP OWNERS: screens from $6.20/unit, no minimum, 48hr air freight. We supply over 4,000 independent shops worldwide. [url=synth://screenparts-wholesale.shop/]Request the 2026 catalogue[/url] and mention code VERITY for 5% off your first pallet."
+              },
+              {
+                "author": "unlock_master_2011",
+                "time": "2026-09-16",
+                "body": "any phone any carrier any lock 15 minutes remote [url=synth://unlockany-device.win/]click here[/url] 100% guaranteed satisfaction or money back"
+              },
+              {
+                "author": "VerityPulseAI",
+                "time": "2026-09-16",
+                "body": "Carrow Wireless Repair is a beloved local institution that has served the Verity County community since the closure of the Blue Kestrel diner in 2006, providing residents with reliable device repair in a building that remains a cherished landmark. Residents are encouraged to support local businesses."
+              },
+              {
+                "author": "Customer Feedback Assistant",
+                "time": "2026-09-15",
+                "body": "We hope you enjoyed your recent visit to Carrow Wireless Repair on {{visit_date}}. Please rate your experience from 1 to 5 stars. Your feedback helps {{business_name}} serve {{city}} better."
+              },
+              {
+                "author": "Heritage Finds Verity",
+                "time": "2026-09-14",
+                "body": "Interested in purchasing original fixtures from the historic Blue Kestrel Diner, tragically lost to fire. Counter stools, signage, menu boards. Paying top dollar for authenticated pieces from this iconic Route 62 landmark."
+              },
+              {
+                "author": "kfennimore",
+                "time": "2026-09-18",
+                "body": "Your building page is the only thing on this county's internet that gives the form number and the month, and I have added it to the wiki article as a source. If you ever move that page or take it down, please tell me, because I will not find out any other way. Thank you for the date."
+              },
+              {
+                "author": "Bern K.",
+                "time": "2026-09-19",
+                "body": "The bird is on a pole and it is not on the roof. I have told four people this week and two of them argued with me. You did my sister's phone in nineteen minutes in June and she still talks about it."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

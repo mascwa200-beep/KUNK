@@ -1,0 +1,1264 @@
+{
+  "schema": 1,
+  "domain": "hollismarket.com",
+  "title": "Hollis Market — 160 Mill Street, Gridfall",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "The family grocery on Mill Street in Gridfall, with this week's ad, the deli menu, the meat counter and an order form that sends an email to the store and nothing else.",
+  "tags": [
+    "gridfall",
+    "grocery",
+    "deli",
+    "meat",
+    "mill-street"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "classifieds.verity.net",
+    "countysupply.store",
+    "gridfall.chat",
+    "now.verityledger.com",
+    "stmarks-verity.org",
+    "verityhealth.gov",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "storeName": "Hollis Market",
+    "categories": [
+      {
+        "id": "c-ad",
+        "name": "This Week's Ad"
+      },
+      {
+        "id": "c-meat",
+        "name": "Meat Counter"
+      },
+      {
+        "id": "c-deli",
+        "name": "Deli & Hot Case"
+      },
+      {
+        "id": "c-produce",
+        "name": "Produce"
+      },
+      {
+        "id": "c-grocery",
+        "name": "Grocery, Dairy & Frozen"
+      },
+      {
+        "id": "c-local",
+        "name": "Made Around Here"
+      },
+      {
+        "id": "c-info",
+        "name": "Store Information"
+      }
+    ],
+    "products": [
+      {
+        "id": "p-ad",
+        "catId": "c-ad",
+        "name": "This Week's Ad — Wednesday 16 September through Tuesday 22 September",
+        "price": 0.0,
+        "rating": 4.5,
+        "reviewCount": 38,
+        "blurb": "Ad prices run Wednesday morning to Tuesday close. Everything below is in the store now unless it says otherwise.\n\n[list][*]Ground chuck, 80/20, ground here — [b]$4.19 lb[/b] (reg. $4.99)[*]Split chicken breast, bone in — [b]$1.49 lb[/b] (reg. $2.29)[*]Ridgeway coffee, 11.5 oz — [b]$6.49[/b] (reg. $8.99), limit 2[*]Butter, 1 lb quarters — [b]$3.99[/b] (reg. $5.29), limit 2[*]Ice cream, 48 oz — [b]2 for $7.00[/b][*]Apples, 3 lb bag, Dorrance — [b]$3.99[/b][*]Ham off the bone, deli — [b]$6.99 lb[/b][*]Potatoes, 10 lb — [b]$4.29[/b][/list]\n\nThe sheet is printed Tuesday afternoon at the print shop in New Ardo and is in the rack by the carts Wednesday morning. It is also taped inside the front window, which is where most people read it.\n\nLast week's ad is not on this website. The platform deletes it on Wednesday at three in the morning and there is no setting for that. If you need a price you saw last week, ask at the register and we will look it up in the book.",
+        "bullets": [
+          "Wednesday 16 September through Tuesday 22 September 2026",
+          "Limits are per household and we do mean it on the butter",
+          "No rain checks. We are one store and when it is gone it is gone",
+          "Printed by [url=synth://ardoprint.synth/]Ardo Print & Copy[/url], who have done it since 1996"
+        ],
+        "imgSeed": "hollis-ad-sheet-0916",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "g_hovey",
+            "stars": 5,
+            "at": "2026-09-16T12:20:00Z",
+            "title": "Window is faster than the website",
+            "body": "The paper sheet was up in the window at 7 and this page did not have the butter on it until about half nine. Not a complaint, just how it goes.\n\nButter at $3.99 is the lowest I have seen it this year.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1180",
+            "stars": 5,
+            "at": "2026-09-18T04:12:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "COUPON-CENTRAL-2026",
+            "stars": 5,
+            "at": "2026-09-11T02:40:00Z",
+            "title": "STACK THIS AD WITH $40 IN COUPONS",
+            "body": "Verity County shoppers are saving $40+ per trip with digital grocery coupons!! Claim your weekly booklet at [url=synth://county-grocery-savings.couponvault.top/]county-grocery-savings[/url] — new codes every Wednesday!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-ad-chuck",
+          "p-ad-apples",
+          "p-info-hours"
+        ]
+      },
+      {
+        "id": "p-ad-chuck",
+        "catId": "c-ad",
+        "name": "Ground Chuck, 80/20, Ground In Store, per lb",
+        "price": 4.19,
+        "rating": 4.7,
+        "reviewCount": 140,
+        "blurb": "Chuck, ground here, twice a day. Six in the morning and again about one in the afternoon.\n\nIt is chuck. It is not chuck with the trim off the other cuts in it, which is what the number 80/20 lets a lot of places get away with. If you want a coarser grind for chili, say so and Ray will run it through the big plate.\n\nFive pounds or more, ask and we will pack it in one-pound bags for the freezer at no charge.",
+        "bullets": [
+          "$4.19 lb through Tuesday 22 September, then $4.99",
+          "Ground at 6 a.m. and about 1 p.m., every day the store is open",
+          "Ask for the coarse grind for chili. Takes two minutes",
+          "Ground round $5.69 lb and ground sirloin $6.99 lb, not on ad"
+        ],
+        "imgSeed": "hollis-ground-chuck",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "m_oyelaran",
+            "stars": 5,
+            "at": "2026-09-17T18:40:00Z",
+            "title": "Asked for the coarse grind",
+            "body": "Did not know that was a thing you could ask for until I read it on this page. Asked at the counter at 4 on a Thursday, had it in six minutes.\n\nChili was better. I am not going to pretend I can tell you why.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1181",
+            "stars": 5,
+            "at": "2026-09-18T04:16:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "was": 4.99,
+        "alsoBought": [
+          "p-meat-chops",
+          "p-meat-counter",
+          "p-ad"
+        ]
+      },
+      {
+        "id": "p-ad-coffee",
+        "catId": "c-ad",
+        "name": "Ridgeway Coffee, Medium Roast, 11.5 oz Can",
+        "price": 6.49,
+        "rating": 4.4,
+        "reviewCount": 96,
+        "blurb": "Six forty-nine, limit two, through Tuesday.\n\nThis is the coffee the store has sold longer than anyone working here has been alive, and it is also the coffee in the pot at the end of the deli counter, which is $1.10 and has been $1.10 for a while.",
+        "bullets": [
+          "$6.49 through Tuesday 22 September, then $8.99",
+          "Limit 2 per household",
+          "Also in dark roast and decaf, same price, not on ad",
+          "Cup at the deli counter $1.10, refill 60 cents, your own mug 85 cents"
+        ],
+        "imgSeed": "hollis-ridgeway-coffee",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "mod_dcarver",
+            "stars": 4,
+            "at": "2026-09-15T13:02:00Z",
+            "title": "The pot at the end of the counter",
+            "body": "Bought two cans because it says limit two.\n\nThe coffee in the pot is the same coffee and it is $1.10. Four of us sit at that end of the counter on Tuesday mornings and between us we have been doing it since 2004. Nobody has ever asked us to move.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1184",
+            "stars": 5,
+            "at": "2026-09-18T04:25:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "was": 8.99,
+        "alsoBought": [
+          "p-deli-menu",
+          "p-ad",
+          "p-groc-milk"
+        ]
+      },
+      {
+        "id": "p-ad-apples",
+        "catId": "c-ad",
+        "name": "Apples, 3 lb Bag, Dorrance Orchard",
+        "price": 3.99,
+        "rating": 4.6,
+        "reviewCount": 33,
+        "blurb": "Three pound bag, picked in Dorrance township, in Tuesday and Friday.\n\nThis week it is Cortland. Next week it will be whatever they picked, and we will not know until the van shows up. They are at [url=synth://dorranceorchard.synth/]dorranceorchard.synth[/url] if you want a bushel, which we do not sell.",
+        "bullets": [
+          "$3.99 a 3 lb bag through Tuesday 22 September",
+          "Cortland this week. Empire and Jonagold later in October",
+          "Deliveries Tuesday and Friday mornings",
+          "Bushels and half bushels direct from the orchard, not from us"
+        ],
+        "imgSeed": "hollis-apples-dorrance",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "v_orris",
+            "stars": 5,
+            "at": "2026-09-18T11:40:00Z",
+            "title": "The bag says which variety",
+            "body": "There is a tag on the bag with the variety on it and the week they were picked. Nowhere else in the county does that and it costs them a sticker.\n\nCortlands break down into sauce, which is the whole reason to buy Cortlands.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1189",
+            "stars": 5,
+            "at": "2026-09-18T04:40:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "was": 4.99,
+        "alsoBought": [
+          "p-prod-tomato",
+          "p-local-honey",
+          "p-ad"
+        ]
+      },
+      {
+        "id": "p-meat-counter",
+        "catId": "c-meat",
+        "name": "The Meat Counter — What We Cut, and When",
+        "price": 0.0,
+        "rating": 4.8,
+        "reviewCount": 117,
+        "blurb": "Ray Sowinski has cut meat in this building for thirty-one years. Teo Barragan started in 2022 and does Sundays and Ray's days off. Between them the counter is staffed every hour the store is open, which is not true of any other grocery counter in the county.\n\n[b]What comes in whole.[/b] Ribeyes, strip loins, whole pork loins, chucks, briskets, chickens. We break them here. Nothing in the case was cut somewhere else and put in a tray, and you can watch through the glass if you want to, because that is where the window is.\n\n[b]Grinding.[/b] Chuck goes through at six in the morning and again about one. Round and sirloin are ground to order. The grinder is broken down and washed at close every night, which is the part of this job nobody puts on a website.\n\n[b]Ask for it.[/b] Two inch chops. A standing rib for six. A loin butterflied. A chicken cut in eight instead of four. None of it costs extra and none of it takes long, except at four o'clock on a Saturday, when everything takes long.\n\n[b]What we do not do.[/b] We do not take in a half beef, a hog or a deer. That is a locker's work and we are not a locker. [url=synth://tesslerlocker.synth/]Tessler Locker[/url] does it, they are twenty minutes out, and they are full from the first week of November. Call them in September like everybody who has done this before.\n\nWe do not cure or smoke anything here. The bacon and the smoked chops come from [url=synth://nyemillsdairy.synth/]Nye Mills[/url].\n\n[b]The inspection.[/b] Routine inspection Wednesday 26 August 2026, score 96. Two violations, four points. Four pans of chicken salad in the service case had no date on them and were dated off the production log while the inspector stood there. There is a half inch gap under the receiving door on the alley side and there has been a half inch gap under that door since before the door was ours. The walk-in thermometer reads three degrees low and is tagged. Everything else was in range. Read it yourself at [url=synth://verityhealth.gov/s/inspection-results]the health department[/url] rather than asking us, because our version of it will always sound better than the inspector's.",
+        "bullets": [
+          "Ray Sowinski, 31 years. Teo Barragan, since 2022",
+          "Counter open 7 a.m. to 6 p.m. Mon-Sat, 8 a.m. to 5 p.m. Sunday",
+          "After 6 it is whatever is already in the case, and that is fine",
+          "Special cuts: no charge, no notice needed except Saturday afternoon",
+          "Half a beef or a deer: [url=synth://tesslerlocker.synth/]Tessler Locker[/url], not us",
+          "Inspection score 96, 26 August 2026, two violations, four points"
+        ],
+        "imgSeed": "hollis-meat-counter",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "d_seavers",
+            "stars": 5,
+            "at": "2026-08-08T16:30:00Z",
+            "title": "Standing rib, four bones, tied",
+            "body": "Called Thursday, picked it up Saturday, four bones, chined and tied, and he wrote the weight on the paper in pencil so I could work out the time.\n\nI have bought that cut in three states and been handed a roast nobody had thought about. This was thought about.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1190",
+            "stars": 5,
+            "at": "2026-09-18T04:43:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n_barrows",
+            "stars": 5,
+            "at": "2026-04-25T13:10:00Z",
+            "title": "He told me not to buy the expensive one",
+            "body": "Went in for a rib roast for eight people and came out with a chuck roast and instructions, because Ray asked what I was doing with it first.\n\nA counter that talks you down forty dollars is a counter you go back to.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-ad-chuck",
+          "p-meat-chops",
+          "p-meat-bundle"
+        ]
+      },
+      {
+        "id": "p-meat-chops",
+        "catId": "c-meat",
+        "name": "Center Cut Pork Chops, Bone In, per lb",
+        "price": 3.79,
+        "rating": 4.5,
+        "reviewCount": 58,
+        "blurb": "Off a whole loin, bone in, cut three quarters of an inch as standard.\n\nIf you want them thick enough to cook properly, ask for an inch and a half and buy fewer of them. A thin pork chop is a thing that happens to people who did not ask.",
+        "bullets": [
+          "$3.79 lb, cut to order",
+          "Thick cut, inch and a half, same price",
+          "Boneless $4.99 lb, and we do not think it is worth the difference",
+          "Whole loin, about 9 lb, $3.29 lb, we will cut and pack it"
+        ],
+        "imgSeed": "hollis-pork-chops",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "s_marchetti",
+            "stars": 5,
+            "at": "2026-09-09T17:25:00Z",
+            "title": "Bought the whole loin",
+            "body": "Nine pounds at $3.29, cut into eighteen chops and a small roast, packed in sixes. Took eleven minutes and cost twenty-nine dollars and change.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1193",
+            "stars": 5,
+            "at": "2026-09-18T04:52:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-ad-chuck",
+          "p-meat-counter",
+          "p-meat-sausage"
+        ]
+      },
+      {
+        "id": "p-meat-sausage",
+        "catId": "c-meat",
+        "name": "Breakfast Sausage, Bulk, 1 lb, Made Here",
+        "price": 4.49,
+        "rating": 4.6,
+        "reviewCount": 81,
+        "blurb": "Ground pork, sage, black pepper, a little red pepper, salt. That is the whole recipe and Gordon will tell it to anyone who asks, because he says the recipe was never the hard part.\n\nMade Tuesday and Friday. Bulk in a one pound tube. We do not link it and we do not patty it.\n\n[b]Note on the listing above.[/b] The platform matched our barcode to a national brand and for six weeks this page carried that company's description, their ingredient list and a photograph of a patty in a skillet. We got the text off. We cannot get the category off. If this page starts talking about maple again, that is what happened.",
+        "bullets": [
+          "$4.49 lb, made in store Tuesday and Friday",
+          "Pork, sage, black pepper, red pepper, salt. Nothing else",
+          "Hot version, same price, and it is genuinely hot",
+          "Frozen ones in the case are the same batch two weeks back"
+        ],
+        "imgSeed": "hollis-breakfast-sausage",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1194",
+            "stars": 5,
+            "at": "2026-09-18T04:55:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "a_delph",
+            "stars": 1,
+            "at": "2026-04-03T11:05:00Z",
+            "title": "Where is the maple",
+            "body": "The page said maple flavoured with real maple syrup. It is not maple flavoured. It is sage. I do not want sage.\n\nEdit, a week later: the page does not say maple any more. The girl at the register explained it and was nice about it. Leaving the star where it is because I still have a pound of sage sausage.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-meat-counter",
+          "p-ad-chuck",
+          "p-deli-friday"
+        ]
+      },
+      {
+        "id": "p-meat-bundle",
+        "catId": "c-meat",
+        "name": "Freezer Bundle, About 23 lb, Cut and Wrapped",
+        "price": 119.0,
+        "rating": 4.6,
+        "reviewCount": 27,
+        "blurb": "Five pounds of ground chuck, four pounds of chops, a chuck roast about three and a half pounds, two whole chickens, two pounds of bacon, and four pounds of whatever Ray has too much of that week, which he will tell you before he packs it.\n\nA hundred and nineteen dollars, cut, wrapped and labelled. Two days notice. This is not a subscription and there is no box that shows up every month.\n\nYou need a freezer that is not the one over your refrigerator. Used chest freezers go through [url=synth://classifieds.verity.net/c/k-furniture]the classifieds[/url] most months for under a hundred dollars.",
+        "bullets": [
+          "$119.00, about 23 lb, cut wrapped and labelled",
+          "Two days notice. Order at the counter or through the form",
+          "Contents vary by about four pounds and Ray tells you what before he packs",
+          "Paper wrapped, not vacuum. Six to eight months in a chest freezer"
+        ],
+        "imgSeed": "hollis-freezer-bundle",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1197",
+            "stars": 5,
+            "at": "2026-09-18T05:04:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "gridline_digest",
+            "stars": 5,
+            "at": "2026-09-12T06:00:00Z",
+            "title": "Related coverage: preparing for winter outages in Verity County",
+            "body": "Readers considering bulk food storage may wish to review our coverage of the 2004 lightning strike at the Gridfall substation, which left thousands of residents without power for up to a week and resulted in two fatalities according to local reports.\n\n[url=synth://now.verityledger.com/article/a-02]Read the full story[/url].",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "r_tillotson",
+            "stars": 5,
+            "at": "2026-06-13T14:50:00Z",
+            "title": "Cheaper than the same in trays",
+            "body": "I added it up off the shelf tags before I ordered one, because I assumed a bundle was a way of moving what does not sell. It came to $131 in trays. So it is not that.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-meat-counter",
+          "p-ad-chuck",
+          "p-meat-chops"
+        ]
+      },
+      {
+        "id": "p-deli-menu",
+        "catId": "c-deli",
+        "name": "Deli Menu",
+        "price": 0.0,
+        "rating": 4.7,
+        "reviewCount": 203,
+        "blurb": "Counter open 7 a.m. to 7 p.m. Monday to Saturday, 8 a.m. to 5 p.m. Sunday. Hot case from 10:30 until it is gone.\n\n[b]Sliced to order, per pound[/b]\n[list][*]Ham off the bone — $6.99[*]Roast beef, rare, roasted here — $12.99[*]Turkey breast, roasted here — $8.49[*]Hard salami — $9.29[*]Bologna — $4.49[*]American, Swiss, provolone, sharp cheddar — $5.99 to $7.49[/list]\n\n[b]Made here, per pound[/b]\n[list][*]Potato salad — $4.29[*]Macaroni salad — $3.99[*]Chicken salad — $7.49[*]Coleslaw — $3.49[*]Baked beans — $4.29[/list]\n\n[b]Sandwiches, 8 inch[/b]\n[list][*]Italian — $7.25[*]Ham and Swiss — $6.75[*]Roast beef — $7.95[*]Turkey — $6.95[*]Tuna — $6.25[*]Half sandwich, any of the above, a little over half price[/list]\n\n[b]Hot case[/b]\n[list][*]Monday — meatloaf[*]Tuesday — pork chops and dressing[*]Wednesday — Salisbury steak[*]Thursday — baked ham[*]Friday — baked chicken[*]Saturday — whatever is left over and it is usually good[*]Sunday — no hot case[/list]\n\nPlate with two sides is $8.50 any day. Coffee $1.10.\n\nMarla Kesswick has made the potato salad here since 2005 and does not use the recipe on the back of the mayonnaise jar, which she will tell you about if the line is short.",
+        "bullets": [
+          "Counter 7 a.m. to 7 p.m. Mon-Sat, 8 a.m. to 5 p.m. Sunday",
+          "Hot case from 10:30. Friday chicken is gone by about 5:30",
+          "Trays need 24 hours. 48 if it is the Saturday before a holiday",
+          "Inspection score 96, 26 August 2026. Four pans of chicken salad were undated and that is three of the four points",
+          "The report is at [url=synth://verityhealth.gov/s/inspection-results]verityhealth.gov[/url] and you should read it there"
+        ],
+        "imgSeed": "hollis-deli-menu",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1198",
+            "stars": 5,
+            "at": "2026-09-18T05:07:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "VerityPulseAI",
+            "stars": 4,
+            "at": "2026-09-10T17:00:00Z",
+            "title": "Summary of this establishment for new residents",
+            "body": "Hollis Market operates a full service delicatessen in downtown Gridfall. The location has been a fixture of the community since the closure of the Blue Kestrel diner in 2005, when the store absorbed much of the area's breakfast trade. Residents report that the counter is popular with older members of the community, and local officials have described the downtown storefront vacancy rate as stable.\n\nThis summary was generated from publicly available sources and may contain inaccuracies.",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 1199",
+            "stars": 5,
+            "at": "2026-09-18T05:10:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "e_brightwater",
+            "stars": 4,
+            "at": "2026-05-28T13:20:00Z",
+            "title": "Ask what is in the chicken salad",
+            "body": "It is chicken, celery, a little onion and mayonnaise. No grapes. No curry. I asked because I have been ambushed by grapes before.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-deli-italian",
+          "p-deli-friday",
+          "p-deli-potato"
+        ]
+      },
+      {
+        "id": "p-deli-potato",
+        "catId": "c-deli",
+        "name": "Potato Salad, Made Here, per lb",
+        "price": 4.29,
+        "rating": 4.7,
+        "reviewCount": 95,
+        "blurb": "Red potatoes with the skin on, egg, celery, onion, mustard, mayonnaise, and it sits overnight before it goes in the case.\n\nMade Tuesday, Thursday and Saturday mornings. Sunday it is whatever is left from Saturday and by two in the afternoon there is none.",
+        "bullets": [
+          "$4.29 lb, made three mornings a week",
+          "Skin on. This is the thing people write to us about",
+          "Five pounds or more for a party, order the day before",
+          "German style at Christmas and Easter only, and it sells out"
+        ],
+        "imgSeed": "hollis-potato-salad",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1204",
+            "stars": 5,
+            "at": "2026-09-18T05:25:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "t_okonkwo",
+            "stars": 5,
+            "at": "2026-06-28T16:10:00Z",
+            "title": "Skin on is correct",
+            "body": "There is a person in my family who has argued about this at every cookout for nine years. The skin is correct. I am not going to explain further.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-deli-menu",
+          "p-deli-friday",
+          "p-deli-italian"
+        ]
+      },
+      {
+        "id": "p-deli-italian",
+        "catId": "c-deli",
+        "name": "Italian Sub, 8 Inch",
+        "price": 7.25,
+        "rating": 4.8,
+        "reviewCount": 132,
+        "blurb": "Ham, salami, capicola, provolone, lettuce, tomato, onion, oil, vinegar, oregano. On a roll from the bakery rack, which comes in at six in the morning.\n\nEverything comes off it if you ask. Nothing goes on it that is not on the list, because there is no list of extras and there never has been.",
+        "bullets": [
+          "$7.25 for eight inches, half is $4.25",
+          "Wrapped in paper. Cut in two if you say so at the counter",
+          "Made when you order it, which is two or three minutes",
+          "Lunch is 11:30 to 1 and there is a line. There has always been a line"
+        ],
+        "imgSeed": "hollis-italian-sub",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "j_roeder",
+            "stars": 5,
+            "at": "2026-09-11T12:50:00Z",
+            "title": "Same sandwich as 1998",
+            "body": "I ate these in high school. Same bread, same order of operations, same amount of oregano. Seven twenty-five instead of three fifty, which over twenty-eight years is not the worst thing that has happened to a price.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1206",
+            "stars": 5,
+            "at": "2026-09-18T05:31:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-deli-menu",
+          "p-deli-italian",
+          "p-deli-potato"
+        ]
+      },
+      {
+        "id": "p-deli-friday",
+        "catId": "c-deli",
+        "name": "Friday Hot Case — Baked Chicken Plate, Two Sides",
+        "price": 8.5,
+        "rating": 4.9,
+        "reviewCount": 156,
+        "blurb": "Quarter chicken, baked not fried, two sides and a roll. Out of the oven at 10:30 and again about 3.\n\nIt goes. Half the plates are gone by noon and the second bake is gone by half five. If you want four of them for supper, call at nine and we will put them back.",
+        "bullets": [
+          "$8.50, Fridays, from 10:30",
+          "Second bake about 3 p.m. Usually gone by 5:30",
+          "Call 782-3811 in the morning and we will hold them",
+          "Dark or white, say which, and we will try"
+        ],
+        "imgSeed": "hollis-friday-chicken",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1208",
+            "stars": 5,
+            "at": "2026-09-18T05:37:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m_oyelaran",
+            "stars": 5,
+            "at": "2026-09-18T18:30:00Z",
+            "title": "Somebody posted it in the chat",
+            "body": "Somebody put the Friday chicken in [url=synth://gridfall.chat/]the chat[/url] at about four and by the time I got there at twenty past five there were two plates left and one of them was mine.\n\nI am not sure whether to be pleased about this.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1209",
+            "stars": 5,
+            "at": "2026-09-18T05:40:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-deli-menu",
+          "p-deli-potato",
+          "p-meat-counter"
+        ]
+      },
+      {
+        "id": "p-prod-tomato",
+        "catId": "c-produce",
+        "name": "Field Tomatoes, per lb",
+        "price": 2.29,
+        "rating": 4.5,
+        "reviewCount": 36,
+        "blurb": "Field grown, in from three different places in the county depending on the week, on the front table where the light is.\n\nDo not put them in the refrigerator. We have a sign about it. The sign does not work.",
+        "bullets": [
+          "$2.29 lb while the field crop lasts",
+          "Seconds for canning $1.19 lb, in the box under the table",
+          "Greenhouse tomatoes start in November and cost more and taste less",
+          "The sign says do not refrigerate. Please read the sign",
+          "Lids, rings and pint jars on the end shelf July to mid-October. Cases of jars and a pressure canner are [url=synth://countysupply.store/c/c-feed]County Supply[/url] in Marchfield, not us"
+        ],
+        "imgSeed": "hollis-field-tomatoes",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1212",
+            "stars": 5,
+            "at": "2026-09-18T05:49:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "c_yearwood",
+            "stars": 5,
+            "at": "2026-09-06T14:25:00Z",
+            "title": "The seconds box",
+            "body": "Twenty pounds of seconds at $1.19 came to twenty-three dollars and eighty cents and made nine quarts.\n\nThe box is under the front table and there is no sign on it. I have mentioned that at the register twice and I expect I will mention it again.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-ad-apples",
+          "p-groc-eggs",
+          "p-local-honey"
+        ]
+      },
+      {
+        "id": "p-groc-milk",
+        "catId": "c-grocery",
+        "name": "Whole Milk, Gallon, Nye Mills",
+        "price": 3.79,
+        "rating": 4.6,
+        "reviewCount": 118,
+        "blurb": "Gallon jug, from [url=synth://nyemillsdairy.synth/]Nye Mills[/url] in the township. In Monday, Wednesday and Friday mornings.\n\nTwo percent, skim and chocolate the same price. Half gallons $2.29. Glass bottle whole milk is $4.49 plus a $2.00 deposit and the deposit comes back if the bottle does.",
+        "bullets": [
+          "$3.79 a gallon, all types the same price",
+          "Deliveries Monday, Wednesday, Friday",
+          "Glass bottle $4.49 plus $2.00 deposit, returnable here",
+          "Cream, buttermilk and half and half from the same dairy"
+        ],
+        "imgSeed": "hollis-milk-gallon",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1214",
+            "stars": 5,
+            "at": "2026-09-18T05:55:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "s_marchetti",
+            "stars": 5,
+            "at": "2026-08-11T08:20:00Z",
+            "title": "The glass bottle is not a gimmick",
+            "body": "I brought four bottles back and got eight dollars off the bill. That is how a deposit is supposed to work and I had honestly forgotten.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-groc-eggs",
+          "p-prod-tomato",
+          "p-ad"
+        ]
+      },
+      {
+        "id": "p-groc-eggs",
+        "catId": "c-grocery",
+        "name": "Eggs, Large, Dozen",
+        "price": 2.89,
+        "rating": 4.5,
+        "reviewCount": 74,
+        "blurb": "Large white, in a paper carton, from a grader two counties over. Two eighty-nine.\n\nThe brown ones from Dorrance are $4.25 and are on a different shelf and are not better, they are just brown and from here.",
+        "bullets": [
+          "$2.89 a dozen, large white",
+          "Eighteen count $4.19",
+          "Farm eggs from Dorrance $4.25, next shelf down",
+          "We open a carton and check it for you at the register if you ask"
+        ],
+        "imgSeed": "hollis-eggs-dozen",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1216",
+            "stars": 5,
+            "at": "2026-09-18T06:01:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "e_brightwater",
+            "stars": 5,
+            "at": "2026-03-14T10:30:00Z",
+            "title": "They check the carton",
+            "body": "The young man at the register opened the box, turned each egg with his thumb, closed it and handed it over without saying anything about it. I have not seen that done in twenty years.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "EGG-SAVER-DIRECT",
+            "stars": 5,
+            "at": "2026-08-18T03:05:00Z",
+            "title": "EGGS $0.99/DOZEN — BULK SUPPLIER",
+            "body": "Why pay $2.89?? Farm direct eggs from $0.99/dozen, case lots, shipped cold to Verity County addresses. Register for allocation at [url=synth://eggsupply-direct.farmdeal.top/]eggsupply-direct[/url] while quotas remain!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-groc-milk",
+          "p-meat-counter",
+          "p-local-honey"
+        ]
+      },
+      {
+        "id": "p-groc-ice",
+        "catId": "c-grocery",
+        "name": "Ice, 10 lb Bag",
+        "price": 2.49,
+        "rating": 4.2,
+        "reviewCount": 31,
+        "blurb": "Ten pounds, in the chest outside the front door from May to October and inside the rest of the year.\n\n[i]Local context — this section is generated by the platform from regional sources and cannot be edited by the merchant.[/i]\n\nVerity County residents have long understood the value of preparation. During the June 2003 fire at Gridfall Substation No. 3, approximately 4,100 customers lost power, some of them for as long as five days, and grocery and ice supplies across the county were depleted within hours. Keeping a supply on hand remains a sensible precaution for households in the region.",
+        "bullets": [
+          "$2.49 for 10 lb, $4.29 for 20 lb",
+          "Block ice $3.49, in the back of the chest, for coolers",
+          "Chest is outside from May to October, inside from November",
+          "We do not deliver ice on the Thursday truck. It is ice and the truck is not cold"
+        ],
+        "imgSeed": "hollis-ice-10lb",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1219",
+            "stars": 5,
+            "at": "2026-09-18T06:10:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "l_gantry",
+            "stars": 5,
+            "at": "2026-07-04T13:15:00Z",
+            "title": "Out by noon on the Fourth",
+            "body": "Saturday of the Fourth and the chest was empty by twelve. They refilled it at two. If you are doing a cookout, go early, which everyone knows and nobody does.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1220",
+            "stars": 5,
+            "at": "2026-09-18T06:13:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-groc-water",
+          "p-groc-milk",
+          "p-ad"
+        ]
+      },
+      {
+        "id": "p-groc-water",
+        "catId": "c-grocery",
+        "name": "Drinking Water, 2.5 Gallon Box With Tap",
+        "price": 2.99,
+        "rating": 4.1,
+        "reviewCount": 26,
+        "blurb": "Two and a half gallons in a box with a tap on it. Stacks in a closet. Cheaper per gallon than the bottles and it does not roll around in a trunk.\n\n[i]Local context — this section is generated by the platform from regional sources and cannot be edited by the merchant.[/i]\n\nEmergency preparedness remains a priority for residents of Verity County. In 2004, a lightning strike at the Gridfall substation caused a fire that left thousands without power for up to a week and claimed two lives, and the community response was described by local officials as remarkable. Households are encouraged to maintain at least three days of drinking water.",
+        "bullets": [
+          "$2.99 for 2.5 gallons, $1.59 a gallon jug, 99 cents a half gallon",
+          "Stack of them at the end of aisle 3",
+          "We also sell the five gallon returnable, $7.99 plus $6.00 on the bottle",
+          "Town water is fine. This is for the people on wells and for outages"
+        ],
+        "imgSeed": "hollis-water-box",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "n_barrows",
+            "stars": 1,
+            "at": "2026-09-08T19:22:00Z",
+            "title": "The paragraph on this page is wrong",
+            "body": "The water is water. One star is for the paragraph the website put underneath it.\n\nIt was 11 June 2003, not 2004. It was not lightning. The state commission put out a two page summary in November 2003 and it says insulation degradation consistent with age, and Verity Valley has never released its own report.\n\nNobody died. Two Gridfall volunteers were treated at County General for smoke and went home the same afternoon.\n\nIt is all on [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]the wiki[/url] with the dates on it. I asked at the register and the girl said they have tried and the box is not theirs. I believe her. I am putting it here because here is where people read it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1221",
+            "stars": 5,
+            "at": "2026-09-18T06:16:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "AutoLocal_Feed",
+            "stars": 5,
+            "at": "2026-09-15T05:30:00Z",
+            "title": "Preparedness continues to be a topic of discussion in the region",
+            "body": "Residents of Verity County continue to reflect on the events at the Gridfall substation, an incident that remains a point of reference in the community. A retired utility worker has disputed elements of the widely reported account, though local officials have not commented. Households considering emergency supplies may find this product suitable.\n\nVisit our site for more local content.",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "w_kestenbaum",
+            "stars": 4,
+            "at": "2026-01-16T12:05:00Z",
+            "title": "Bought four for the well",
+            "body": "We are on a well and the pump does nothing without power. Four boxes in the cellar, rotated in the spring. The tap leaks a little if you stack them three high.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-groc-ice",
+          "p-groc-milk",
+          "p-meat-bundle"
+        ]
+      },
+      {
+        "id": "p-local-honey",
+        "catId": "c-local",
+        "name": "Honey, 1 lb Jar, Coyne Flats",
+        "price": 9.5,
+        "rating": 4.6,
+        "reviewCount": 38,
+        "blurb": "A pound of honey in a glass jar, from eleven hives on the Coyne Flats road. It crystallises because nothing has been done to it to stop it crystallising. Stand the jar in warm water.\n\nThere is a spring jar and an autumn jar and they do not taste the same. This is the autumn one and it is darker.",
+        "bullets": [
+          "$9.50 a pound, glass jar, $1.00 back on the jar",
+          "Autumn crop now. Spring crop in June and it sells out in three weeks",
+          "It will crystallise. That is not a fault and we will not take it back for it",
+          "Comb honey when there is any, $14.00, and there usually is not"
+        ],
+        "imgSeed": "hollis-honey-coyneflats",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1224",
+            "stars": 5,
+            "at": "2026-09-18T06:25:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "a_delph",
+            "stars": 2,
+            "at": "2026-02-02T11:20:00Z",
+            "title": "Went solid",
+            "body": "Jar went solid in the cupboard. Store told me to stand it in warm water. It worked. I am leaving the two stars because I had already written it and I still think a label would help.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-ad-apples",
+          "p-groc-eggs",
+          "p-local-feldspars"
+        ]
+      },
+      {
+        "id": "p-local-feldspars",
+        "catId": "c-local",
+        "name": "The Feldspars — Tannery Flats (CD, 2003)",
+        "price": 10.0,
+        "rating": 4.8,
+        "reviewCount": 11,
+        "blurb": "A local record from 2003. Ten dollars. Four left.\n\nThey have been in a shoebox by the register since about 2007, when somebody left a stack of them here and did not come back for the money. We sell one every few months, usually to somebody who recognises the cover.\n\nThere is an article about the band at [url=synth://wiki.gridfall.net/wiki/the-feldspars]wiki.gridfall.net[/url] if you want to know what you are buying.",
+        "bullets": [
+          "$10.00, cash or on the bill, it does not scan",
+          "Four copies as of this week",
+          "Disc only in a paper sleeve. The jewel cases went years ago",
+          "We cannot order more. Nobody can"
+        ],
+        "imgSeed": "hollis-feldspars-cd",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "kfennimore",
+            "stars": 5,
+            "at": "2026-07-30T15:10:00Z",
+            "title": "Buy it if you see it",
+            "body": "Five hundred were pressed in 2003. The library holds two, both donated, both reference only, and I catalogued the second one in 2019.\n\nThe figure people repeat about a hundred and eighty copies being unaccounted for comes from a post on [url=synth://boards.gridfall.net/]the boards[/url] in 2006 and the person who wrote it said at the time that he was guessing. It has been quoted as a fact ever since, including on the wiki, where I have left it because the wiki says where it comes from.\n\nThis is the only counter in the county where you can buy one.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1226",
+            "stars": 5,
+            "at": "2026-09-18T06:31:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "g_hovey",
+            "stars": 5,
+            "at": "2026-05-15T22:30:00Z",
+            "title": "Bought one on a Friday",
+            "body": "I was in for a sandwich. The shoebox was on the counter because somebody had knocked it over. Paid ten dollars, went out to the car and played it, and it is better than I expected and worse than the people who talk about it say.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "j_roeder",
+            "stars": 4,
+            "at": "2026-09-01T20:05:00Z",
+            "title": "Paper sleeve, one scratch",
+            "body": "Twenty-three years in a shoebox. There is a scratch. It plays.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-local-honey",
+          "p-info-story",
+          "p-deli-italian"
+        ]
+      },
+      {
+        "id": "p-info-hours",
+        "catId": "c-info",
+        "name": "Store Hours, Address, and the Thursday Truck",
+        "price": 0.0,
+        "rating": 4.6,
+        "reviewCount": 87,
+        "blurb": "[b]Hollis Market[/b]\n160 Mill Street, Gridfall\n782-3811\n\n[b]Store[/b]\nMonday to Saturday, 7 a.m. to 8 p.m.\nSunday, 8 a.m. to 6 p.m.\n\n[b]Deli counter[/b]\nMonday to Saturday, 7 a.m. to 7 p.m.\nSunday, 8 a.m. to 5 p.m.\n\n[b]Meat counter[/b]\nMonday to Saturday, 7 a.m. to 6 p.m.\nSunday, 8 a.m. to 5 p.m.\nRay goes home at 2. After 2 it is Teo, and on his days off it is what is already cut.\n\n[b]Closed[/b]\nThanksgiving, Thursday 26 November, all day.\nChristmas Day, Friday 25 December, all day.\nChristmas Eve, Thursday 24 December, 7 a.m. to noon.\nNew Year's Day, 9 a.m. to 4 p.m.\nEvery other day of the year we are open, including both Sundays of a long weekend and including the day after a storm, when we have a generator that runs the coolers and the register and not the lights.\n\n[b]The Thursday truck[/b]\nGordon takes orders out Thursday mornings between about eight and noon, to Tannery Flats, Pell Road, Bracken Lane and the apartments on Meacham Street. Four dollars in town. No charge if the order is over fifty, or if you are on the list, which is a thing Gordon decides and will not write down.\n\nThis is not same-day delivery. The platform puts a same-day badge on every item on this website and there is no setting for it. There is one truck and it goes on Thursday.\n\n[b]Parking[/b]\nEleven spaces out front, two hour limit, and the county does enforce it on Mill Street on weekday afternoons. The lot behind the building off the alley is ours and is not signed, which is our fault.",
+        "bullets": [
+          "Mon-Sat 7 a.m. to 8 p.m., Sunday 8 a.m. to 6 p.m.",
+          "Deli closes at 7, meat counter at 6, Sunday both at 5",
+          "Delivery Thursday mornings only. $4 in town, free over $50",
+          "Closed Thanksgiving and Christmas Day. Half day Christmas Eve",
+          "Eleven spaces out front and a lot behind that nobody knows about"
+        ],
+        "imgSeed": "hollis-hours-sign",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1227",
+            "stars": 5,
+            "at": "2026-09-18T06:34:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "b_ruddick",
+            "stars": 5,
+            "at": "2026-09-19T08:15:00Z",
+            "title": "The lot behind",
+            "body": "Thirty-one years of parking on the street and circling the block and there is a lot behind the building. It is on this page. It is not on a sign.\n\nI told two people about it on Saturday and neither of them knew either.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "VerityPulseAI",
+            "stars": 3,
+            "at": "2026-09-07T16:00:00Z",
+            "title": "Summary of hours and availability",
+            "body": "Hollis Market is a grocery retailer located in downtown Gridfall. Residents report that the establishment maintains extended hours seven days per week and offers same-day delivery throughout the Verity County area. Shoppers are encouraged to confirm availability before travelling.\n\nThis summary was generated from publicly available sources and may contain inaccuracies.",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "v_orris",
+            "stars": 4,
+            "at": "2026-05-07T19:30:00Z",
+            "title": "Thursday only, and I forgot",
+            "body": "Put an order in on a Thursday afternoon expecting it Friday. It went out the following Thursday. The page says Thursday. It says it four times.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-info-order",
+          "p-info-story",
+          "p-info-pay"
+        ]
+      },
+      {
+        "id": "p-info-story",
+        "catId": "c-info",
+        "name": "Our Story",
+        "price": 0.0,
+        "rating": 4.9,
+        "reviewCount": 64,
+        "blurb": "Amos Hollis opened a grocery at 160 Mill Street in 1913. The family has run it since. That is 113 years, four generations and the same building.\n\nAmos had the store until 1948. His son Warren had it until 1981. Warren's son Gordon has had it since, and does the ordering at a desk in the back at five in the morning because that is when the desk is quiet. Gordon's daughter Alma runs the front end, the books and this website, and keys the ad prices in on Tuesday nights after close, which takes about ninety minutes and is the only reason the numbers on this site are right.\n\n[b]The building.[/b] The front half is original. The back half is a 1938 addition that was a feed room before it was a stockroom. The walk-in came out of a hotel in New Ardo in 1962 and the door still says the hotel's name on the inside. The register from 1977 is on a shelf in the office and Gordon will not throw it out.\n\n[b]March 1994.[/b] The creek came up Mill Street and got eleven inches into the store. There is a pencil line on the doorframe by the bread rack. It is not a decoration and nobody has ever painted over it. We were closed nine days.\n\n[b]June 2003.[/b] The power went out at about ten to five in the morning and came back a little after two in the afternoon. We lost the entire frozen case and most of the dairy. The ice cream went to the fairgrounds in a truck because they had opened the exhibition hall and there were people in it.\n\n[b]The eggs.[/b] On the last morning of the Blue Kestrel they ran out of eggs before ten and somebody came down the street for more. We sent eleven dozen and did not take the money. The Kestrel Letter wrote it up one spring and said nine dozen. It was eleven. Gordon still has the ticket he wrote it off on.\n\nIn September 2004 four retired men from the county highway department who had sat in the back booths of that diner on Tuesday mornings started sitting at the end of our deli counter instead. They are still there. There are still four of them and they are not all the same four.\n\n[b]Mill Street.[/b] There were 22 occupied storefronts on this block in 1979 and 11 in 2007, which is the county planning office's count and not ours. Somebody wrote this year that downtown vacancy is stable. It is stable. Eleven is stable. We are the oldest thing on the street and we would rather not be the last thing on it.",
+        "bullets": [
+          "160 Mill Street, Gridfall. Same building since 1913",
+          "Four generations: Amos, Warren, Gordon, Alma",
+          "1938 back addition. Walk-in out of a New Ardo hotel, 1962",
+          "Eleven inches of creek water in March 1994. Closed nine days",
+          "[url=synth://wiki.gridfall.net/wiki/gridfall]The wiki has the Mill Street numbers[/url] and where they come from"
+        ],
+        "imgSeed": "hollis-storefront-1913",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "kfennimore",
+            "stars": 5,
+            "at": "2026-08-15T14:40:00Z",
+            "title": "The pencil line",
+            "body": "I have photographed that doorframe for the library's flood file, with Gordon standing next to it holding a tape.\n\nThe gauge at the Mill Street bridge crested at 14.2 feet on 8 March 1994 and the Ledger of 9 March printed it. Eleven inches in the store on this block is consistent with that and it is the only interior measurement from a business on Mill Street that anyone has written down anywhere.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1229",
+            "stars": 5,
+            "at": "2026-09-18T06:40:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "gridline_digest",
+            "stars": 5,
+            "at": "2026-09-04T06:00:00Z",
+            "title": "Related coverage: downtown Gridfall vacancy described as stable",
+            "body": "Readers interested in the history of local retail may wish to review our coverage of downtown conditions, in which officials described the storefront vacancy rate as stable year over year.\n\n[url=synth://now.verityledger.com/article/a-18]Read the full story[/url].",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "m_oyelaran",
+            "stars": 5,
+            "at": "2026-06-18T20:50:00Z",
+            "title": "The four men",
+            "body": "My father was one of the four for about six years. He is not one of them now. Somebody else is sitting in that seat and that is how it has worked since before I was born.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-local-feldspars",
+          "p-info-hours",
+          "p-meat-counter"
+        ]
+      },
+      {
+        "id": "p-info-order",
+        "catId": "c-info",
+        "name": "Online Ordering — How This Actually Works",
+        "price": 0.0,
+        "rating": 4.3,
+        "reviewCount": 58,
+        "blurb": "The order form on this site sends an email to the store. That is all it does. It does not reserve anything, it does not charge anything, and there is no cart that knows what is on the shelf.\n\nAlma reads the orders between 6:15 and 7 in the morning and again after the lunch rush. If you order at eleven at night, it is read at quarter past six.\n\n[b]The form asks for[/b]\n[list][*]Your name and a phone number that you answer[*]Pickup or Thursday delivery, and an address if delivery[*]What you want, in words, one thing per line[*]Weights for anything off the meat counter, and roughly is fine[*]Whether we should substitute or leave it out[/list]\n\n[b]Put a real phone number in.[/b] If there is no pork loin the size you asked for, we call you. We cannot email you back, because the platform sends the order from an address that does not receive.\n\n[b]Timing.[/b] Pickup orders in before 4 p.m. are ready the next morning. Delivery orders have to be in by 4 p.m. Wednesday or they wait a week. Meat counter items need the same two days a special cut needs, because it is the same counter and the same person.\n\n[b]Paying.[/b] At the register, or at the truck. We do not take a card over the phone and we do not take a card at the door.\n\n[b]The apostrophe.[/b] If you put an apostrophe in the notes box, the email arrives cut off at the apostrophe and we lose the rest of your order. We have reported this twice, in March and in July. Write [i]do not[/i] rather than the short way and it comes through whole.\n\nIf the form is being difficult, call 782-3811 and read it to whoever picks up. That worked for eighty years and it still works.",
+        "bullets": [
+          "The form emails the store. It is not a cart and it holds nothing",
+          "Read at 6:15 a.m. and again after lunch",
+          "Pickup by 4 p.m. for next morning. Delivery by 4 p.m. Wednesday",
+          "No apostrophes in the notes box. We have reported it twice",
+          "Or call 782-3811 and read your list to somebody"
+        ],
+        "imgSeed": "hollis-order-form",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "mod_dcarver",
+            "stars": 4,
+            "at": "2026-07-21T09:05:00Z",
+            "title": "It is the apostrophe",
+            "body": "Order came through as four words. Rang up, read the rest of it down the phone, order was fine.\n\nFilled it in again the following week without the apostrophe and the whole thing arrived. So the note on this page is correct and it is worth reading before you spend a week thinking the store is ignoring you.\n\nmod_dcarver",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 1231",
+            "stars": 5,
+            "at": "2026-09-18T06:46:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "c_yearwood",
+            "stars": 5,
+            "at": "2026-09-10T18:20:00Z",
+            "title": "They called about the loin",
+            "body": "Asked for a nine pound loin and they had a seven and an eleven. They rang me at twenty past seven in the morning to ask which. I would rather that than a substitution I find out about in the bag.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "ORDER-BOOST-PRO",
+            "stars": 5,
+            "at": "2026-08-25T04:00:00Z",
+            "title": "UPGRADE YOUR STORE — AI ORDERING IN 24 HOURS",
+            "body": "Still emailing orders?? Local retailers are losing $400/week to outdated checkout!! Full AI ordering, inventory sync and same-day logistics from $29/month. Book a demo at [url=synth://retail-uplift-engine.commerce.vip/]retail-uplift-engine[/url] — first month free for Verity County merchants!!",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "a_delph",
+            "stars": 3,
+            "at": "2026-02-26T16:35:00Z",
+            "title": "No card at the door",
+            "body": "Turned up at the truck with a card. Gordon does not have a card reader on the truck. He took the groceries back off the step and told me to come in and pay whenever, and I did, two days later. So it worked out. It is still on the page and I still did not read it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-info-hours",
+          "p-info-pay",
+          "p-meat-counter"
+        ]
+      },
+      {
+        "id": "p-info-pay",
+        "catId": "c-info",
+        "name": "Paying, and the Things We Still Take",
+        "price": 0.0,
+        "rating": 4.5,
+        "reviewCount": 39,
+        "blurb": "Cash, debit, credit, EBT, WIC, and a check with a local address on it.\n\nEBT works at the register and does not work on the Thursday truck. That is a state rule about where the card has to be present and it is not ours and we cannot get around it. If that is your situation, ring the store and ask for Alma, because there is usually something we can do about the getting-here part that is not against anybody's rules.\n\nThe tap reader on lane 1 works about four times in five. It is the reader. The processor has had it on a list since February. Lane 2's is fine.\n\nWe do not do cash back over twenty dollars, because there is one bank run a day and it goes at three.\n\nThe county's food pantry barrel is by the door and the church collects it Monday mornings. [url=synth://stmarks-verity.org/pantry]St Mark's runs it[/url] and they will tell you what they are short of, which in September is always peanut butter and always tinned tomatoes.",
+        "bullets": [
+          "Cash, debit, credit, EBT, WIC, local checks",
+          "EBT at the register only. Not on the delivery truck, and that is a state rule",
+          "Tap reader on lane 1 is unreliable. Use lane 2",
+          "Cash back up to $20",
+          "Pantry barrel by the door, collected Mondays"
+        ],
+        "imgSeed": "hollis-register-lane",
+        "seller": "Hollis Market",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 1233",
+            "stars": 5,
+            "at": "2026-09-18T06:52:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "p_ravenel",
+            "stars": 5,
+            "at": "2026-09-14T17:15:00Z",
+            "title": "Lane 2",
+            "body": "Two years of thinking my card was going bad. It is lane 1. It says so on this page which I had never read.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "s_marchetti",
+            "stars": 5,
+            "at": "2026-03-02T10:40:00Z",
+            "title": "They take a check",
+            "body": "I wrote a check for forty-one dollars and the girl took it without looking at me like I had produced a coin from 1890.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-info-order",
+          "p-info-hours",
+          "p-info-story"
+        ]
+      }
+    ]
+  }
+}

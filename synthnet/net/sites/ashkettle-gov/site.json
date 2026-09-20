@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "domain": "ashkettle.gov",
+  "title": "Village of Ashkettle",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Five pages for a village of nine hundred people, kept by one part-time clerk on a template the County supplies, including a zoning ordinance too large to upload and a water tower that is currently empty.",
+  "tags": [
+    "ashkettle",
+    "village",
+    "government",
+    "water"
+  ],
+  "links": [
+    "verity.county.gov",
+    "verity-transit.gov",
+    "ashkettlevfd.org",
+    "ashkettle-wx.net",
+    "ask.verity.ai",
+    "boards.gridfall.net",
+    "brenners-notebook.email",
+    "thequarry.news",
+    "marchfieldlibrary.blog",
+    "countysoftball.org"
+  ],
+  "data": {
+    "agency": "Village of Ashkettle",
+    "motto": "Incorporated 1901. Population 902.",
+    "notices": [
+      "The Village Office is open [b]Tuesday and Thursday, 9:00 a.m. to 3:00 p.m.[/b], and the first Saturday of the month, 9:00 a.m. to noon. The next Saturday opening is 3 October. The office closes from 12:00 to 12:30 and there is no way around that, because there is one clerk.",
+      "The next meeting of the Village Board is [b]Tuesday 13 October, 7:00 p.m.[/b], in the meeting room at the Village Hall, 14 Main Street. The agenda goes on the door on the Friday before and on [url=/s/board]the meetings page[/url] the same day when the Clerk is in the office.",
+      "The County's Ashkettle Annex is the front room of this building and is open [b]Wednesdays only[/b]. It is not the Village Office, and the Village Clerk cannot look anything up in the County's system, including your property tax. County business is at [url=synth://verity.county.gov/s/ashkettle-annex]the County's annex page[/url]. The County lists other hours for the annex in two other places. Wednesday is the day somebody is at that desk.",
+      "The water tower is out of service for painting. Pressure on the north end of the village is lower than usual and will stay lower until the tower is back, which the contractor now says is the week of 19 October. Everything the Village knows about it is on [url=/s/watertower]the water tower page[/url], which is kept current because people ask.",
+      "An automated answering service has told at least four people this year that the Village Board meets on the first Monday. It meets on the second Tuesday and has since 1974. The Village has written to [url=synth://ask.verity.ai/]that service[/url] twice, has had no reply either time, and has stopped writing.",
+      "[b]WINTER PARKING BAN.[/b] No parking on any village street between 2:00 a.m. and 6:00 a.m., 15 November to 1 April. Cars in the way of the plow are not towed. They are plowed around, and then the pile is yours. Posted 12 February.",
+      "Open burning inside the village limits is not permitted between 1 May and 30 September under Ordinance 4-2. A grill is not open burning. Outside the village limits it is a County permit, Form VC-208, at [url=synth://verity.county.gov/s/burn-permit]the County's burning page[/url]. Please stop telephoning the weather station about this. [url=synth://ashkettle-wx.net/]That page[/url] belongs to Mr Mabry and he has never set a burn ban in his life.",
+      "This site is put together by the Clerk out of a template the County supplies. If something on it is wrong, telephone 736-2101 and say so and it will be right by the following Tuesday. Do not write to the address printed at the bottom of the page. That address is the County's and it has been wrong since 2019.",
+      "The Village does not have an account on any social site, any county discussion board, or any neighbourhood app. Anything posted under the Village's name in those places was not posted by the Village. The Village posts here, on the door of the Hall, and in the rack at the post office."
+    ],
+    "services": [
+      {
+        "id": "welcome",
+        "name": "Welcome to Ashkettle",
+        "blurb": "General information about the Village, the office, and what the Village does and does not do. The list of what it does not do is the longer one and is worth reading before you telephone.",
+        "status": "online",
+        "lastUpdated": "2026-09-15",
+        "steps": [
+          "Ashkettle is a village of about nine hundred people in the east of Verity County. The village limits take in 1.4 square miles. The Village was incorporated on 3 May 1901 and has had a mayor and five trustees ever since.",
+          "The village grew up around the Ashkettle quarry, which cut building limestone from 1884 until it closed in 1958. It is private property, it is fenced, and the Village cannot give anyone permission to be on it.",
+          "The village is named for Ashkettle Creek, which runs behind the park. The Village has been told several times, in writing, that it is named for kettles cast at a foundry here. There has never been a foundry here.",
+          "[b]The office.[/b] The Village Office is the back room of the Village Hall at 14 Main Street. Tuesday and Thursday, 9:00 to 3:00, and the first Saturday of the month, 9:00 to noon. Telephone 736-2101. Post to P.O. Box 8, Ashkettle. There is a slot in the office door for water payments and for anything else that will go through a slot.",
+          "[b]Who works for the Village.[/b] Two people. The Clerk-Treasurer is part time, nineteen hours a week. The maintenance man is part time, twenty-four hours a week in summer and whatever the snow takes in winter. Everyone else you are likely to deal with is either a volunteer or works for somebody other than the Village.",
+          "[b]What the Village does.[/b][list][*]water and sewer[*]the village streets, the plowing, and the sidewalks on Main Street[*]brush and leaf pickup[*]zoning inside the village limits[*]the park, the pond and the ball field[*]the cemetery on Bell Street[/list]",
+          "[b]What the Village does not do.[/b][list][*][b]Police.[/b] The Sheriff covers the village. Emergencies are 911.[*][b]Fire and ambulance.[/b] [url=synth://ashkettlevfd.org/]The Ashkettle Volunteer Fire Department[/url] is a separate organisation. The Village does not run it, fund it, or speak for it, and its page is better than this one.[*][b]The school.[/b] Outside the village limits and a separate district with its own board.[*][b]Dog licences, property tax, building permits, well tests.[/b] All County. Start at [url=synth://verity.county.gov/]the County services portal[/url].[*][b]Household garbage.[/b] A private hauler. The Village is not a party to that contract, did not redraw the routes in March, and cannot move your pickup time. Telephone [url=synth://ordway-sanitation.synth]Ordway Sanitation[/url] on the number printed on your bill.[/list]",
+          "[b]If you have just moved in.[/b] Come to the office with a lease or a deed and open a water account, Form A-1. The deposit is $50 and it comes back against your final bill when you move. Your first bill will be a part quarter and will look wrong. It is not wrong.",
+          "[b]Your house number.[/b] The fire department has asked the Village to print this, so here it is. Put your number where it can be read from the road in figures at least four inches high, and put it on the house as well as on the post, because the post ends up in the ditch.",
+          "[b]The park.[/b] Open dawn to dusk. The pavilion is first come and there is nothing to book. The ball field is mowed by the Village; the infield is dragged by somebody who is not the Village, and the Clerk has never found out who, and has stopped asking. The schedule for the league that plays there is at [url=synth://countysoftball.org/]countysoftball.org[/url].",
+          "[b]The pond.[/b] The maintenance man plows the pond for skating when it makes eight inches, and he measures it with a bar and a tape, not by looking at it. When there is no sign on the gate there is no ice. This has not been a good question to argue with him about since 2014 and it is not one now.",
+          "[b]The meeting room.[/b] The room at the Village Hall holds forty-five people at tables and about sixty in chairs. It is $40 a day plus a $50 deposit and you sweep it before you go. The key is picked up at the office on a Tuesday or a Thursday and not on the day itself, because the office is not open on the day itself. If you need a bigger room, ask the Grange or the fire department. The Village will not be offended.",
+          "[b]The cemetery.[/b] The Village cemetery is on Bell Street. At eleven burials a year it has room for about two hundred more. Lots are $250 for people who live in the village and $600 for people who do not. The Clerk keeps the map. The map is a book, and it is the only copy, and that is on the list of things the Village knows it should fix.",
+          "[b]Books.[/b] There is no library in Ashkettle. The bookmobile stopped coming in 2011. A county card works at Marchfield and at Gridfall and costs nothing; the Marchfield library posts its hours and its closures at [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url].",
+          "[b]The bus.[/b] Route 7 comes into the village four times each weekday. The 4:45 p.m. trip does not come in and stops out on the highway only, which catches somebody out about once a month. Timetable and the current detour are at [url=synth://verity-transit.gov/s/route-7]the Transit Division[/url].",
+          "[b]Records.[/b] Anything the Village has is a public record unless the state says otherwise. Ask at the counter or write. There is no form, and nothing under twenty pages is charged for, because working out the charge takes longer than the copying. County records are a different office and do have a form: [url=synth://verity.county.gov/s/records-request]Form VC-5[/url]."
+        ],
+        "forms": [
+          {
+            "name": "New Water and Sewer Account (Form A-1)",
+            "note": "One page. $50 deposit, refunded against your final bill. Bring a lease or a deed and something with your name on it."
+          },
+          {
+            "name": "Village Directory (one sheet, printed)",
+            "note": "Free at the counter and in the rack at the post office. The copy on this site is the 2023 one. Two of the numbers on it ring at houses where nobody holds that job any more, and both of those people have been very good about it."
+          },
+          {
+            "name": "Hall Rental Agreement (Form H-2)",
+            "note": "One page, signed at the counter. Not available by email. The office scanner is the fax machine and what it produces is not worth sending."
+          }
+        ]
+      },
+      {
+        "id": "board",
+        "name": "Village Board - Meetings, Agendas and Minutes",
+        "blurb": "When the Board meets, how to get something on the agenda, where the minutes are, and what is in the minute books.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "The Village Board meets on the [b]second Tuesday of the month at 7:00 p.m.[/b] in the meeting room at the Village Hall, 14 Main Street. It has met on the second Tuesday since 1974. Meetings are open and there is nothing to sign unless you want to speak.",
+          "The September meeting was moved to Tuesday 15 September because the school open house was on the 8th and the Board would have lost three of its members to it. It went on the door on Friday 4 September and on this page the same afternoon.",
+          "The rest of 2026:[list][*]Tuesday 13 October[*]Tuesday 10 November[*]Tuesday 8 December[/list]The first meeting of 2027 is Tuesday 12 January, and that is the one where the budget is set, and it is the one worth coming to if you are only coming to one.",
+          "[b]Speaking.[/b] Public comment is at the top of the meeting and again at the end. Three minutes at the top. At the end you can take as long as there are people willing to sit there, which in practice is about ten minutes. You do not have to live in the village and you do not have to give your address. The Clerk will ask how you spell your name, for the minutes.",
+          "[b]Getting on the agenda.[/b] Telephone 736-2101 or write by the Wednesday before. A sentence is enough. Anything that arrives after Wednesday goes under Other Business, which is at the end, after the bills, when everybody is tired.",
+          "[b]Agendas.[/b] The agenda is posted on the door of the Village Hall on the Friday before and goes on this page the same day, unless the Clerk is not in on the Friday, in which case it goes up on the Monday. [b]If the door and this page disagree, the door is the notice.[/b] That is in the ordinance and it is also simply true.",
+          "[b]Minutes.[/b] Minutes are drafted the week after the meeting and are not minutes until the Board approves them at the next one, so what goes up in the first month is marked DRAFT at the top. Nobody reads the word DRAFT. It is on there anyway.",
+          "Approved minutes from January 2016 to now are in a binder at the counter and are on this page as PDFs, one file to a meeting. Anything before 2016 is paper. The Clerk will copy any of it. Under twenty pages there is no charge; over twenty it is ten cents a page.",
+          "[b]Recordings.[/b] There are none. The Board voted 4-1 against buying a recorder in 2019 on the grounds that the minutes are the record. Nobody has asked since. The minutes say what was decided. If you want to know what was said, telephone the Clerk, who was there and who remembers.",
+          "[b]The minute books.[/b] They run from the first meeting, 9 May 1901, and there is no gap in them. The books from 1901 to 1968 were filmed by the Marchfield library in 2004 and the library holds the film. The Village does not have a copy of the film and did not ask for one at the time.",
+          "The archivist at Marchfield has asked twice for the books from 1969 to 1984, which the Village believes are in the attic of the Hall. The attic is reached by a ladder the maintenance man will not go up, and he is right not to go up it. A proper ladder is $340 and it has been in the draft budget twice.",
+          "The 2003 minute book is in the binder and people do ask for it. The June 2003 meeting is two pages and most of it is the outage and the generator. There is nothing in it about the substation that is not in better detail, with times on it, at [url=synth://ashkettlevfd.org/]ashkettlevfd.org[/url]. The Village Hall generator was bought in 2005 and it runs the office, the furnace and the water controls and nothing else. The Village Hall is not a shelter. The shelter in this district is the fire hall and always has been.",
+          "[b]The Board.[/b][list][*]Mayor: Gale Tolliver, term to 2028[*]Trustee: Ed Harnish, to 2028[*]Trustee: Bonnie Kreft, to 2030[*]Trustee: Marvin Pyle, to 2030[*]Trustee: Donna Sedlak, to 2028[*]Trustee: vacant[/list]The vacant seat has been vacant since Wayne Ostrander resigned in March. It was advertised on the door and in the post office rack for sixty days and nobody applied. The Board may appoint somebody at any meeting. The Board has not appointed anybody.",
+          "[b]Pay.[/b] Trustees are paid $30 a meeting and the Mayor $60. Nobody has asked for an increase since 2009, and the Clerk would remember, because the Clerk writes the cheques.",
+          "[b]Audit.[/b] The Village is audited by the state every two years. The 2025 audit found two things, both of them about how water deposits are carried on the books, and both were fixed in the same month. [url=synth://thequarry.news/]The Quarry[/url] asked for a copy in April and it went out in the post on 14 April. Anybody else can have one the same way.",
+          "[b]The agenda for 13 October[/b], as it stood on Friday 18 September:[list][*]Minutes of 15 September[*]Bills[*]Water tower, contractor's fourth progress report[*]Brush contract, renewal, and the question of passes[*]W. Pennock, brush truck passes on Ash Street[*]Zoning permit Z-26-14, fence, 212 Grove Street[*]Cemetery mowing, one bid received[*]Other business[/list]Anything that comes in after the Wednesday will be added under Other Business and will not be on the posted agenda.",
+          "[b]Vacancies.[/b] The Village needs one trustee, two people on the Board of Zoning Appeals, and somebody to mow the cemetery from April to October. The cemetery is the only one of the three that pays, and it pays $2,900 for the season, and there has been one bid.",
+          "There is a spare copy of everything on this page in the binder at the counter, and the binder is open to anybody during office hours without asking, and nobody has ever taken anything out of it."
+        ],
+        "forms": [
+          {
+            "name": "Agenda Request (there is no form)",
+            "note": "Telephone 736-2101 or write to P.O. Box 8. A sentence is enough. If you cannot come to the meeting the Clerk will read it out, and will say that you could not come."
+          },
+          {
+            "name": "Minutes, January 2016 to present (PDF, one file per meeting)",
+            "note": "Posted on this page. The February 2019 file is the January file uploaded twice and the correct February file is in the binder at the counter."
+          },
+          {
+            "name": "Minute books, 1901 to 1968 (microfilm)",
+            "note": "Held by the Marchfield library, not by the Village. The Village does not own a reader and has never owned one."
+          },
+          {
+            "name": "Board Vacancy Application (one page)",
+            "note": "Name, address, and whether you can be at a meeting on a Tuesday evening. That is the whole form. It has been on the counter since March."
+          }
+        ]
+      },
+      {
+        "id": "brush",
+        "name": "Brush and Leaf Pickup",
+        "blurb": "Dates for the year, what goes at the curb, and what the truck will leave behind and why.",
+        "status": "online",
+        "lastUpdated": "2026-09-08",
+        "steps": [
+          "Brush is picked up on the [b]first Monday of the month, April through November[/b]. Have it at the curb by 7:00 a.m. The truck makes one round through the village and it does not come back for what was put out late.",
+          "[b]2026 dates.[/b][list][*]Monday 6 April[*]Monday 4 May[*]Monday 1 June[*]Monday 6 July[*]Monday 3 August[*]Tuesday 8 September, because the first Monday was the holiday[*]Monday 5 October[*]Monday 2 November[/list]April to November is the whole of it. There is no pickup in December, January, February or March, and the reason is that the truck is plowing.",
+          "[b]Brush means branches.[/b] Butt ends to the street, in one pile, not across the sidewalk and not in the ditch. Nothing over six inches through and nothing over eight feet long. It is one man and a grapple and he is loading it himself.",
+          "[b]The truck will leave:[/b] stumps, root balls, sod, lumber, pallets, fence, anything with a nail in it, anything in a bag, and brush from a job a contractor did. If you paid somebody to cut it, you paid somebody to haul it. That has been the rule since 2011 and it is the only rule on this page that anybody argues about.",
+          "Grass clippings are not brush and they are not leaves and they are not picked up at any time of the year. Three houses put them out every June. The Clerk telephones all three, and all three are perfectly nice about it, and all three do it again the next June.",
+          "[b]Leaves.[/b] Loose leaves are vacuumed twice in November, in the week of Monday 2 November and the week of Monday 16 November. Rake them to the curb. Not into the street, and not over the storm grate on Water Street, which backs the whole corner up.",
+          "The machine will not take bags and it will not take anything with a stick in it thicker than your thumb. It is the Village's machine, it is from 1997, and it is why the November pickups are a week each and not a day each. When it breaks, and it does break, the dates move and a notice goes on the door of the Hall.",
+          "[b]Christmas trees.[/b] The first two Mondays in January, which in 2027 are the 4th and the 11th. No stands, no lights, no tinsel, not in a bag. Flocked trees are not chipped. They go in the back of the truck and to the landfill, and there is no way round that.",
+          "[b]Chips.[/b] The Village borrows the County's chipper for two weeks a year and the chips go on the pile at the end of the park drive. They are free. Bring a shovel and a truck and take as much as you want. It is not screened, there is dirt in it, and it is worth exactly what it costs.",
+          "[b]Route order.[/b] The village is done in two halves. Main Street and everything south of Ash first, then everything north of Grove. The north half is usually after lunch. It is not always after lunch and the Village cannot tell you on the day.",
+          "[b]Passes.[/b] A resident counted the truck on Ash Street on four Mondays last summer. On two of those Mondays it made three passes and on two it made one. The contract is written as two. The Board asked the contractor in August and the contractor said it depends on the street. The Village pays a flat monthly figure and not by the pass, so the count does not change the bill. The count is in the minutes and the count is right.",
+          "[b]Burning it instead.[/b] Not inside the village limits between 1 May and 30 September, under Ordinance 4-2, and never within thirty feet of a building. Outside the village limits it is a County permit, Form VC-208, at [url=synth://verity.county.gov/s/burn-permit]the County's page[/url]. The Village does not issue that permit, does not hold a copy of it, and cannot tell you over the telephone whether the County has issued you one.",
+          "[b]Taking it yourself.[/b] There is no drop-off in the village. The County transfer station takes brush at $8 a load and is open Wednesday, Friday and Saturday. Take a tarp; they will turn you round at the gate for an untarped load and they are right to.",
+          "[b]After a storm.[/b] The Board can call an extra pickup and has done three times since 2019, most recently after the ice in February. An extra pickup goes on the door first and on this page when the Clerk is next in the office, which can be two days later. If the whole village is out of power, the door is the only place it will be.",
+          "[b]If the truck missed you.[/b] Telephone 736-2101 and say the street and which side. Say it to the Clerk and not to the Sheriff. Two people a year telephone the Sheriff about brush."
+        ],
+        "forms": [
+          {
+            "name": "Brush and Leaf Schedule 2026 (one sheet, printed)",
+            "note": "Free at the counter and in the rack at the post office. It says the same thing as this page. It is on yellow paper because the white ran out in 2019 and the yellow was cheaper, and now people ask for the yellow sheet by name."
+          },
+          {
+            "name": "Extra Pickup Request (there is no form)",
+            "note": "The Board decides these at a meeting and there is nothing to fill in. Ring the office and it goes on the agenda."
+          },
+          {
+            "name": "Contractor Brush Disposal Permit",
+            "note": "The Village does not issue one. Contractors haul their own. This line is here because the question comes in about eight times a year and this way it is answered before it is asked."
+          }
+        ]
+      },
+      {
+        "id": "watertower",
+        "name": "Water Tower Painting Project",
+        "blurb": "Why the tower is empty, what the pressure is doing, what the water will look like when it comes back, and what the whole thing cost.",
+        "status": "degraded",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "The Ashkettle water tower holds 100,000 gallons and went up in 1962. It was last painted, inside and out, in 1998. Coatings do not last thirty years, and this one did not.",
+          "The 2023 inspection found the interior coating failing on the roof and the upper shell, with rust over about fifteen percent of the inside surface. The recommendation was to recoat inside three years. The Village took the three years.",
+          "[b]What it costs.[/b][list][*]Engineering and inspection, Hessert Engineering of Gridfall: $18,500[*]Painting contract, [url=synth://tolancoatings.synth]Tolan Coatings[/url] of Marchfield: $274,900[*]State small community grant: $150,000[*]Village share, borrowed over ten years: $143,400[/list]",
+          "[b]The bidding.[/b] One bid came in on 31 March at $286,400 against an engineer's estimate of $240,000. The Board rejected it on 14 April and the job went out again. Two bids came in on 9 June and the low one was $274,900. The Board awarded it on 14 July, 4-0, with one seat vacant.",
+          "The second bid opening was reported in June by [url=synth://brenners-notebook.email/]Brenner's Verity Notebook[/url]. The figures in that piece are the figures. The Village had nothing to add at the time and has nothing to add now.",
+          "[b]What it does to your bill.[/b] The Village share comes out of the water fund. The quarterly water bill goes up [b]$4.50[/b] starting with the January 2027 bill and stays up for ten years. The Board voted that in July as a motion of its own, separate from the award, so that anybody reading the minutes in fifteen years can find it without reading the whole meeting.",
+          "[b]Schedule, as it stands.[/b][list][*]17 August, staging and containment[*]24 August, tower drained and out of service[*]25 August to 11 September, exterior blasting[*]14 September, exterior primer[*]week of 21 September, interior blasting[*]early October, interior coating, then fourteen days of cure with the hatch open[*]week of 19 October, disinfect, fill, sample, back in service[/list]",
+          "That is eleven days later than the schedule posted in August. Six of the eleven days are rain. The other five are a second primer coat the north side needed, which the engineer approved and which the Village is not paying extra for.",
+          "[b]Pressure while the tower is down.[/b] The village is running off the well through a rented pressure tank. Pressure is eight to twelve pounds lower than usual everywhere, and lower again north of Grove Street, where the ground is higher. It is measured twice a day at the hydrant by the grain elevator and written on a clipboard at the well house. The lowest reading so far is 28 pounds.",
+          "That 28 was on the afternoon of Sunday 30 August and it was somebody filling a pool. Please do not fill a pool, and please do not run two hoses at once, until the tower is back. A washing machine and a shower at the same time is fine and always has been.",
+          "[b]There is no boil notice and none is expected.[/b] If one is ever issued it is hand delivered to every house in the village and posted on the door of the Hall. It will not appear here first. This website is not read at night and it is not read by everybody, and a boil notice has to reach everybody.",
+          "[b]When it comes back.[/b] The water will be rusty for about a week after the tower is refilled. It is not harmful and it will not hurt you to drink it. It will ruin a load of white washing. Run the cold tap in the bathtub until it clears before you put a load on. The Village will not pay for a load of laundry and has never paid for a load of laundry.",
+          "[b]Flushing.[/b] Hydrant flushing follows the refill, the week of 26 October, north end first. Expect the water to be discoloured again for a day after your street is done. That one is us and it is deliberate and it is how the pipe gets clean.",
+          "[b]The lettering.[/b] The tower says ASHKETTLE and under it 1962, and it will say that again. A request to add the school's mascot to it was on the agenda in May and the Board voted it down 3-1, one absent. The reason in the minutes is that the school is not in the village. There was a second reason given at the meeting, about what a stencil that size costs, and it is not in the minutes.",
+          "[b]Photographs.[/b] Somebody has been photographing the staging from Ash Street about once a week and posting it to [url=synth://boards.gridfall.net/]the Gridfall boards[/url]. Those are not the Village's photographs and the Village does not keep them. They are better than the Village's and the Clerk has said so to him.",
+          "[b]Why not a new tank.[/b] A new tank was priced in 2024 at a little over a million dollars. The Board asked the question, got the number, and did not take it any further, and that is the whole of that discussion.",
+          "[b]Next time.[/b] The next recoat is due in about twenty years. The Board has put $6,000 a year into a water capital line since 2021, and that is the only reason this borrowing is ten years and not twenty.",
+          "[b]Questions.[/b] Anything about the water bill, the deposit, or a leak, telephone 736-2101. Anything about the painting, telephone 736-2101. The contractor's people are on the tower and cannot answer a telephone, and the Clerk would rather nobody shouted up at them either."
+        ],
+        "forms": [
+          {
+            "name": "Engineer's progress reports 1 to 3 (PDF, four pages each)",
+            "note": "On this page as received. They have not been rewritten and they are not written for the public. The photograph on page three of the second one is upside down and the Village is leaving it that way."
+          },
+          {
+            "name": "Project Cost Summary (one page)",
+            "note": "One page, four figures, the same four figures as on this page. Somebody asked for it on its own so it exists on its own."
+          },
+          {
+            "name": "Rented Pressure Tank Daily Log",
+            "note": "Paper, on a clipboard at the well house. Copies at the counter on request. There is no PDF of it and there is not going to be one until the tower is back and the Clerk has an afternoon."
+          },
+          {
+            "name": "Grant Agreement, state small community water grant (PDF, 22 pages)",
+            "note": "On this page. Nineteen of the twenty-two pages are the state's standard conditions and the three that are about Ashkettle are pages 4, 5 and 18."
+          }
+        ]
+      },
+      {
+        "id": "zoning",
+        "name": "Zoning Ordinance and Permits",
+        "blurb": "What is zoned what, which permits the Village issues, and how to get a copy of the ordinance, which is not on this site.",
+        "status": "paper-only",
+        "lastUpdated": "2021-06-08",
+        "steps": [
+          "The Village of Ashkettle Zoning Ordinance was adopted on 12 June 1978 and amended in 1991, in 2004, and on 10 May 2016. It is seventy-four pages including the map and the use tables.",
+          "[b]The ordinance is a PDF and it is not on this site.[/b] It is a scan of a photocopy of a typescript. The file is 31 megabytes and the Village's hosting allows 20 megabytes to a file. The Clerk has tried four times to make it smaller, and every version small enough to upload has a map you cannot read, and the map is the part people want.",
+          "So telephone 736-2101 or ask at the counter and it will be emailed to you in four parts, usually the same day and always the same week. On paper it is ten cents a page, seventy-four pages, $7.40, and nobody is charged for the staple.",
+          "The Village pays $96 a year for this website. The next plan up, which would hold the file, is $180 a year. The Board looked at that in 2022 and decided against it. The Clerk agrees with the Board on this one, which is not always the case, and the four parts have never yet failed to arrive.",
+          "A scanned copy of the ordinance has been posted somewhere by somebody. The Village did not post it, has not checked it against the signed original, and will not link to it. It is the 2004 text. The 2016 amendments are not in it and the 2016 amendments are the ones about setbacks, which is what people are usually looking it up for.",
+          "[b]The map.[/b] The official zoning map is the one on the wall of the meeting room, coloured by hand, with each change initialled at the edge by whoever made it. The map inside the PDF is a photograph of that wall map taken in 2016 and three parcels have been rezoned since. [b]Where the wall and the PDF disagree, the wall is the map.[/b]",
+          "[b]Districts.[/b][list][*]R-1, houses, which is most of the village[*]R-2, houses and two-family, Water Street and the east side of Ash[*]B-1, business, Main Street from the creek bridge to the park drive[*]I-1, industrial, the estate at the north end[*]A-1, agricultural, the rest[/list]",
+          "[b]When you need a Village permit.[/b] A fence, a shed, a deck, a sign, a pool, a new building, an addition, or a change of use. [b]Not[/b] for a roof, siding, windows, paint, or a garden. If you are not sure, telephone. You will get an answer in a minute or a call back the same day, and neither of those costs anything.",
+          "[b]Fees.[/b][list][*]Fence, shed, pool: $25[*]Deck or addition: $40[*]New building or change of use: $75[*]Sign: $40, and $15 to renew a temporary one[/list]",
+          "[b]A Village zoning permit is not a building permit.[/b] Building permits are the County's, Form VC-120, at [url=synth://verity.county.gov/s/building-permit]the County's building page[/url]. You need both. They are two offices with two clocks and neither one tells the other. About four times a year somebody gets one and not the other and finds out when they go to sell.",
+          "[b]How long it takes.[/b] The Clerk signs a fence or a shed at the counter if the drawing is right. Anything that needs the Board waits for the second Tuesday. The Village has no plan reviewer and does not pretend to have one, and for anything structural the County's review is the one that matters.",
+          "[b]Notice of a hearing.[/b] Written notice goes by first class post to the owners of record of every abutting parcel, not less than ten days before, and a notice goes on the door of the Hall. It is usually four letters. The postage comes to about three dollars and the Clerk does the envelopes at the counter on a Thursday.",
+          "[b]Board of Zoning Appeals.[/b] Three people, and two of them are also trustees, which the state allows in a village this size and which nobody here is pleased about. It meets when there is something to hear. It has met twice since 2021.",
+          "[b]Variances.[/b] $75 to file and the $75 does not come back if it is refused. Two have been filed since 2021. One was granted, for a garage four feet into a side setback on Grove Street, and the neighbour who would have objected came to the hearing to say it was fine.",
+          "[b]Enforcement.[/b] It is complaint driven, which means nobody drives around looking. A complaint has to be in writing with a name on it, and the name is a public record and cannot be kept back. That is the part that ends most complaints, and the Clerk says so on the telephone before anybody wastes an afternoon on it.",
+          "[b]The three questions that come in most.[/b][list][*]A shed under 120 square feet still needs a permit here. It is $25 and it takes ten minutes.[*]A fence on the property line needs the line, and the Village does not know where your line is. That is a survey and a survey is not cheap.[*]A camper can be parked on a lot but not lived in, and lived in means more than fourteen days.[/list]",
+          "[b]The solar amendment.[/b] The Board has been talking about one since 2023. There is a draft. It is three pages and it has been three pages for a year and a half. When it moves there will be a hearing and there will be letters in the post, the same as anything else.",
+          "[b]Buying a parcel.[/b] Telephone and ask what it is zoned and you will be told from the wall. Do not rely on the County's zoning viewer for a village parcel; the village is not in it. If the parcel is outside the village and you want the well tested, that is free from the County and a person telephones you back: [url=synth://verity.county.gov/s/well-water]well testing[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Zoning Permit Application (Form Z-1)",
+            "note": "One page, front only. Bring a drawing with the measurements on it. A drawing on the back of an envelope is fine as long as the measurements are on it and the north arrow points somewhere sensible."
+          },
+          {
+            "name": "Variance Application (Form Z-4)",
+            "note": "Three pages. $75 with the application. The fee is not returned if the variance is refused, and the form says so twice, because for eleven years it only said so once."
+          },
+          {
+            "name": "Village of Ashkettle Zoning Ordinance as amended 2016 (PDF, 31 MB)",
+            "note": "Not on this site. Request it by telephone or at the counter and it comes by email in four parts. On paper it is 74 pages at ten cents a page. Do not ask for it on a disc; the office has no drive to write one."
+          },
+          {
+            "name": "Zoning Map (wall map, meeting room)",
+            "note": "Not available in any other form. The Clerk will photograph a corner of it for you and post the photograph, and the photograph is not the official map and says so on the back."
+          },
+          {
+            "name": "Complaint of Zoning Violation (one page)",
+            "note": "Must have a name and a signature on it. The name is a public record. Anonymous complaints are filed and not acted on, and the filing is the only thing that happens to them."
+          }
+        ]
+      }
+    ]
+  }
+}

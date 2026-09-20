@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T08:13:24Z",
+  "generated": "2026-09-20T11:52:49Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -27,6 +27,22 @@
       ],
       "path": "net/sites/ashkettle-wx-net/site.json",
       "bytes": 31185
+    },
+    {
+      "domain": "ashkettle.gov",
+      "title": "Village of Ashkettle",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Five pages for a village of nine hundred people, kept by one part-time clerk on a template the County supplies, including a zoning ordinance too large to upload and a water tower that is currently empty.",
+      "tags": [
+        "ashkettle",
+        "village",
+        "government",
+        "water"
+      ],
+      "path": "net/sites/ashkettle-gov/site.json",
+      "bytes": 37823
     },
     {
       "domain": "ashkettlevfd.org",
@@ -94,6 +110,23 @@
       "bytes": 37198
     },
     {
+      "domain": "brackenlanegarage.net",
+      "title": "Cold Start - brackenlanegarage.net",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "The website of Cold Start, a four-piece bar band out of Gridfall, built and maintained by the bass player: three upcoming dates, a page of songs nobody can listen to, one shirt, and a news page that stopped last October.",
+      "tags": [
+        "gridfall",
+        "band",
+        "music",
+        "2026",
+        "bracken-lane"
+      ],
+      "path": "net/sites/brackenlanegarage-net/site.json",
+      "bytes": 63194
+    },
+    {
       "domain": "brenners-notebook.email",
       "title": "Brenner's Verity Notebook",
       "type": "newsletter",
@@ -111,6 +144,24 @@
       ],
       "path": "net/sites/brenners-notebook-email/site.json",
       "bytes": 56593
+    },
+    {
+      "domain": "carrowwireless.com",
+      "title": "Carrow Wireless Repair - Route 62, Ashkettle",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "The website of the one-man phone repair shop in the old Blue Kestrel diner building on Route 62: prices by model, a forty-minute turnaround, and a page about the building that is one paragraph long.",
+      "tags": [
+        "ashkettle",
+        "route-62",
+        "repair",
+        "business",
+        "2026",
+        "blue-kestrel"
+      ],
+      "path": "net/sites/carrowwireless-com/site.json",
+      "bytes": 69404
     },
     {
       "domain": "classifieds.verity.net",
@@ -174,6 +225,24 @@
       "bytes": 468
     },
     {
+      "domain": "countyalerts.live",
+      "title": "County Alerts — Verity County",
+      "type": "social",
+      "era": "2026",
+      "skin": "feedslate",
+      "description": "An automated breaking-alerts account that rewrites Verity County scanner traffic in under a minute, at volume, with nobody reading it first.",
+      "tags": [
+        "2026",
+        "social",
+        "bots",
+        "scanner",
+        "alerts",
+        "verity"
+      ],
+      "path": "net/sites/countyalerts-live/site.json",
+      "bytes": 61381
+    },
+    {
       "domain": "countyfacts.info",
       "title": "CountyFacts - Verity County Answered",
       "type": "blog",
@@ -188,6 +257,24 @@
       ],
       "path": "net/sites/countyfacts-info/site.json",
       "bytes": 111615
+    },
+    {
+      "domain": "countysoftball.org",
+      "title": "Verity County Adult Softball League",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "Thirty-six teams, five divisions, a rainout recording, four pages of courtesy runner rules, and a Hall of Fame plaque that has been behind the ice cream freezer since 2011.",
+      "tags": [
+        "softball",
+        "league",
+        "gridfall",
+        "county",
+        "recreation",
+        "2026"
+      ],
+      "path": "net/sites/countysoftball-org/site.json",
+      "bytes": 108716
     },
     {
       "domain": "countysupply.store",
@@ -207,6 +294,23 @@
       "bytes": 66509
     },
     {
+      "domain": "coyneflats.org",
+      "title": "Coyne Flats Community Association",
+      "type": "page",
+      "era": "2009",
+      "skin": "geocities",
+      "description": "The community association for Coyne Flats, a settlement of 400 at the end of the branch line: the hall, the August chicken barbecue, the depot that stood from 1898 to 1987, and a links page last checked in January 2011.",
+      "tags": [
+        "coyne flats",
+        "community",
+        "rail",
+        "history",
+        "archive"
+      ],
+      "path": "net/sites/coyneflats-org/site.json",
+      "bytes": 74458
+    },
+    {
       "domain": "dash.verity.net",
       "title": "Verity Dash - Smart County Overview",
       "type": "dash",
@@ -216,6 +320,22 @@
       "tags": [],
       "path": "net/sites/dash-verity-net/site.json",
       "bytes": 9114
+    },
+    {
+      "domain": "fennerinsurance.com",
+      "title": "Fenner Insurance Agency, Inc. - Marchfield",
+      "type": "page",
+      "era": "2013",
+      "skin": "plain-white",
+      "description": "The website of an independent insurance agency on Bellamy Street in Marchfield: nine template pages about types of insurance, staff photographs described but not shown, a quote form that goes nowhere, and a syndicated safety-tip feed that stopped in July 2014.",
+      "tags": [
+        "marchfield",
+        "business",
+        "insurance",
+        "archive"
+      ],
+      "path": "net/sites/fennerinsurance-com/site.json",
+      "bytes": 66987
     },
     {
       "domain": "forums.verityrail.org",
@@ -277,6 +397,58 @@
       ],
       "path": "net/sites/gridfall-chat/site.json",
       "bytes": 39804
+    },
+    {
+      "domain": "gridfalldetectorists.net",
+      "title": "Gridfall & District Detectorists",
+      "type": "forum",
+      "era": "2026",
+      "skin": "softboard",
+      "description": "The metal detecting club's board: finds posted with depth and soil, a permission letter anybody can copy, and a rule about the old branch right-of-way that gets restated every few weeks.",
+      "tags": [
+        "gridfall",
+        "detecting",
+        "finds",
+        "permission",
+        "locals",
+        "2026"
+      ],
+      "path": "net/sites/gridfalldetectorists-net/site.json",
+      "bytes": 86334
+    },
+    {
+      "domain": "gridfallhost.net",
+      "title": "Gridfall Host",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "Web hosting, e-mail and domain names for Verity County, run by two people out of two rooms on Third Street in Gridfall since 2002.",
+      "tags": [
+        "gridfall",
+        "hosting",
+        "business",
+        "infrastructure",
+        "2026"
+      ],
+      "path": "net/sites/gridfallhost-net/site.json",
+      "bytes": 82013
+    },
+    {
+      "domain": "gridfallpizza.com",
+      "title": "Gridfall Pizza — 142 Third Street, Gridfall",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "A takeout pizza shop on Third Street in Gridfall, run by three of the same family, on a storefront template that only knows how to sell products and a third-party order button that does not work on some phones.",
+      "tags": [
+        "gridfall",
+        "food",
+        "pizza",
+        "third-street",
+        "delivery"
+      ],
+      "path": "net/sites/gridfallpizza-com/site.json",
+      "bytes": 57917
     },
     {
       "domain": "gridfallswap.net",
@@ -354,6 +526,23 @@
       ],
       "path": "net/sites/halsey-ledger-com/site.json",
       "bytes": 40752
+    },
+    {
+      "domain": "hollismarket.com",
+      "title": "Hollis Market — 160 Mill Street, Gridfall",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "The family grocery on Mill Street in Gridfall, with this week's ad, the deli menu, the meat counter and an order form that sends an email to the store and nothing else.",
+      "tags": [
+        "gridfall",
+        "grocery",
+        "deli",
+        "meat",
+        "mill-street"
+      ],
+      "path": "net/sites/hollismarket-com/site.json",
+      "bytes": 70033
     },
     {
       "domain": "kestrel-journal.net",
@@ -437,6 +626,22 @@
       "bytes": 79454
     },
     {
+      "domain": "milbrookvfw.org",
+      "title": "VFW Post 6791 - Milbrook",
+      "type": "page",
+      "era": "2026",
+      "skin": "tripod-tile",
+      "description": "The Veterans of Foreign Wars post in Milbrook: hall rental rates in detail because the hall pays for the building, a Friday fish fry, the Memorial Day parade route, the members who have died since last May, the Auxiliary, and the village notices this page carries because Milbrook has had no newspaper since 2016.",
+      "tags": [
+        "milbrook",
+        "veterans",
+        "hall-rental",
+        "2026"
+      ],
+      "path": "net/sites/milbrookvfw-org/site.json",
+      "bytes": 72753
+    },
+    {
       "domain": "newcarrow-today.com",
       "title": "New Carrow Today",
       "type": "news",
@@ -452,6 +657,24 @@
       ],
       "path": "net/sites/newcarrow-today-com/site.json",
       "bytes": 33965
+    },
+    {
+      "domain": "newcarrowfd.org",
+      "title": "New Carrow Fire District",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "Station 3 in New Carrow: a levy explainer written for the 3 November ballot, five years of monthly call counts that go up while the fires do not, a burn notice form, a roster of twenty-nine, a pork dinner, and a comment box that cannot be switched off.",
+      "tags": [
+        "new-carrow",
+        "fire",
+        "county",
+        "2026",
+        "levy",
+        "volunteer"
+      ],
+      "path": "net/sites/newcarrowfd-org/site.json",
+      "bytes": 80586
     },
     {
       "domain": "now.clipvault.tv",
@@ -490,7 +713,7 @@
         "locals"
       ],
       "path": "net/sites/oldswap-gridfall-net/site.json",
-      "bytes": 105556
+      "bytes": 105194
     },
     {
       "domain": "pinelock-media.com",
@@ -610,6 +833,37 @@
       "bytes": 27019
     },
     {
+      "domain": "stmarks-verity.org",
+      "title": "St Mark's Lutheran Church - Marchfield",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "A Marchfield congregation's website, kept up by the church secretary: service times, a food pantry page with real hours and a real shortage list, a bulletin archive whose files are no longer linked, the parish hall roof fund, and the memorial list.",
+      "tags": [
+        "marchfield",
+        "church",
+        "food-pantry",
+        "2026"
+      ],
+      "path": "net/sites/stmarks-verity-org/site.json",
+      "bytes": 50685
+    },
+    {
+      "domain": "suspended.gridfallhost.net",
+      "title": "Account Suspended",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "The page Gridfall Host serves in place of any site whose account is past due, over quota or unrenewed: one paragraph, a phone number and a footer.",
+      "tags": [
+        "hosting",
+        "gridfall",
+        "2026"
+      ],
+      "path": "net/sites/suspended-gridfallhost-net/site.json",
+      "bytes": 2686
+    },
+    {
       "domain": "thequarry.news",
       "title": "The Quarry",
       "type": "newsletter",
@@ -653,6 +907,23 @@
       ],
       "path": "net/sites/trailusers-verity-net/site.json",
       "bytes": 60469
+    },
+    {
+      "domain": "troop62.verity.net",
+      "title": "Boy Scout Troop 62 - Gridfall",
+      "type": "page",
+      "era": "2012",
+      "skin": "tripod-tile",
+      "description": "Scout Troop 62 of Gridfall, on a template a parent bought in 2007: a calendar that stops in June 2012, a merit badge counsellor list with phone numbers, the pancake breakfast accounts back to 2007, an Eagle Scout list, and a photo album in which not one picture comes up.",
+      "tags": [
+        "gridfall",
+        "scouts",
+        "archive",
+        "youth",
+        "pancakes"
+      ],
+      "path": "net/sites/troop62-verity-net/site.json",
+      "bytes": 84630
     },
     {
       "domain": "verity-transit.gov",
@@ -713,6 +984,43 @@
       "bytes": 49554
     },
     {
+      "domain": "veritybirders.org",
+      "title": "Verity County Bird Club",
+      "type": "forum",
+      "era": "2026",
+      "skin": "softboard",
+      "description": "The message board of the Verity County Bird Club, founded 1961: dated sightings with counts, a Christmas count archive back to 2004, a swap board for optics, and a falcon at the quarry cut the records committee would not accept.",
+      "tags": [
+        "verity",
+        "birds",
+        "club",
+        "sightings",
+        "christmas-count",
+        "quarry-cut",
+        "locals"
+      ],
+      "path": "net/sites/veritybirders-org/site.json",
+      "bytes": 89650
+    },
+    {
+      "domain": "verityclerk.gov",
+      "title": "Verity County Clerk",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "The County Clerk's office in Gridfall: records requests on Form VC-114, marriage licenses, the fee schedule, certified election results back to 1994, and one microfilm reader in the basement that you have to book.",
+      "tags": [
+        "verity",
+        "county",
+        "clerk",
+        "records",
+        "elections",
+        "2026"
+      ],
+      "path": "net/sites/verityclerk-gov/site.json",
+      "bytes": 68631
+    },
+    {
       "domain": "veritycountytoday.com",
       "title": "Verity County Today",
       "type": "news",
@@ -727,6 +1035,24 @@
       ],
       "path": "net/sites/veritycountytoday-com/site.json",
       "bytes": 31273
+    },
+    {
+      "domain": "verityextension.org",
+      "title": "Verity County Cooperative Extension",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "The county extension office on Herron Road: soil test bags, the applicator recertification date, the 4-H premium book, two tree disease alerts, and which beetle it actually is.",
+      "tags": [
+        "extension",
+        "agriculture",
+        "4-h",
+        "trees",
+        "soil",
+        "gridfall"
+      ],
+      "path": "net/sites/verityextension-org/site.json",
+      "bytes": 81387
     },
     {
       "domain": "verityfeed.social",
@@ -746,6 +1072,23 @@
       "bytes": 73084
     },
     {
+      "domain": "verityhealth.gov",
+      "title": "Verity County Health Department",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Food inspection reports with the scores and the violation text as written, septic permits, autumn immunization clinics and free well water testing. One sanitarian, one vacancy, and a health officer who is here eight hours a week.",
+      "tags": [
+        "verity",
+        "county",
+        "health",
+        "inspections",
+        "2026"
+      ],
+      "path": "net/sites/verityhealth-gov/site.json",
+      "bytes": 63588
+    },
+    {
       "domain": "verityledger.com",
       "title": "The Verity Ledger",
       "type": "news",
@@ -755,6 +1098,41 @@
       "tags": [],
       "path": "net/sites/verityledger-com/site.json",
       "bytes": 37174
+    },
+    {
+      "domain": "veritymonuments.com",
+      "title": "Verity Monument Company - Gridfall, since 1949",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "Granite, lettering, foundations and the cemetery rules for seven townships, from a Gridfall shop the Almquists have run since 1949, on a platform that gives a grave marker four and a half stars.",
+      "tags": [
+        "verity",
+        "gridfall",
+        "monuments",
+        "cemetery",
+        "granite",
+        "stone"
+      ],
+      "path": "net/sites/veritymonuments-com/site.json",
+      "bytes": 82349
+    },
+    {
+      "domain": "verityquilters.net",
+      "title": "The Verity Piecers",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "A quilt guild in Marchfield: meeting minutes, the block of the month with the cutting written out, the comfort quilt count, the raffle quilt, and one obituary.",
+      "tags": [
+        "marchfield",
+        "quilting",
+        "guild",
+        "charity",
+        "locals"
+      ],
+      "path": "net/sites/verityquilters-net/site.json",
+      "bytes": 67992
     },
     {
       "domain": "verityrail-preservation.org",
@@ -791,6 +1169,39 @@
       "bytes": 72079
     },
     {
+      "domain": "verityrealestatenow.com",
+      "title": "Verity Real Estate Now",
+      "type": "blog",
+      "era": "2026",
+      "skin": "kubrick-blue",
+      "description": "A real estate content site covering Verity County, twelve articles deep, every one of them built from the same seven headings and a different population figure.",
+      "tags": [
+        "verity county",
+        "real estate",
+        "seo",
+        "2026"
+      ],
+      "path": "net/sites/verityrealestatenow-com/site.json",
+      "bytes": 73456
+    },
+    {
+      "domain": "veritysheriff.gov",
+      "title": "Verity County Sheriff's Office",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Road patrol, civil process and the county jail for Verity County, plus the daily blotter, which is the most-read page in the county and the one nothing links to.",
+      "tags": [
+        "verity",
+        "county",
+        "sheriff",
+        "blotter",
+        "2026"
+      ],
+      "path": "net/sites/veritysheriff-gov/site.json",
+      "bytes": 64820
+    },
+    {
       "domain": "veritysignal.blog",
       "title": "The Verity Signal",
       "type": "blog",
@@ -808,6 +1219,24 @@
       "bytes": 52488
     },
     {
+      "domain": "veritywater.org",
+      "title": "Verity Valley Water Board",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Agendas, minutes, the rate schedule, the annual water quality report, the hydrant flushing zones and every boil water notice since 2018, for the two wells and 31.4 miles of main that serve Gridfall, Coyne Flats and Tessler.",
+      "tags": [
+        "verity",
+        "county",
+        "water",
+        "utility",
+        "minutes",
+        "2026"
+      ],
+      "path": "net/sites/veritywater-org/site.json",
+      "bytes": 67422
+    },
+    {
       "domain": "veritywire.press",
       "title": "Verity News Service",
       "type": "wire",
@@ -822,6 +1251,22 @@
       ],
       "path": "net/sites/veritywire-press/site.json",
       "bytes": 45893
+    },
+    {
+      "domain": "vnetdial.com",
+      "title": "VerityNet Dial-Up",
+      "type": "page",
+      "era": "2004",
+      "skin": "plain-white",
+      "description": "The county dial-up provider as it stood in September 2004: access numbers by town, modem settings, the personal pages policy, webmail, and the outage log.",
+      "tags": [
+        "gridfall",
+        "isp",
+        "dial-up",
+        "verity.net"
+      ],
+      "path": "net/sites/vnetdial-com/site.json",
+      "bytes": 61401
     },
     {
       "domain": "vvpl.news",

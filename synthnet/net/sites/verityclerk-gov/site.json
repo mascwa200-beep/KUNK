@@ -1,0 +1,570 @@
+{
+  "schema": 1,
+  "domain": "verityclerk.gov",
+  "title": "Verity County Clerk",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "The County Clerk's office in Gridfall: records requests on Form VC-114, marriage licenses, the fee schedule, certified election results back to 1994, and one microfilm reader in the basement that you have to book.",
+  "tags": [
+    "verity",
+    "county",
+    "clerk",
+    "records",
+    "elections",
+    "2026"
+  ],
+  "links": [
+    "verity.county.gov",
+    "veritysheriff.gov",
+    "verityhealth.gov",
+    "askverity.com",
+    "ask.verity.ai",
+    "marchfieldlibrary.blog",
+    "verityledger.com",
+    "now.verityledger.com",
+    "veritywire.press",
+    "thequarry.news",
+    "brenners-notebook.email",
+    "verity.wiki",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "agency": "Verity County Clerk",
+    "motto": "14 Depot Street, Gridfall. Monday through Thursday, 9 to 3, closed noon to one.",
+    "notices": [
+      "Counter hours are Monday through Thursday, 9:00 a.m. to 3:00 p.m., closed from noon to 1:00 p.m. The contact directory at [url=synth://verity.county.gov/]verity.county.gov[/url] lists this office as Monday through Friday, 8:30 a.m. to 4:30 p.m. That entry is wrong, this office has asked three times to have it changed, and the hours on this page are the hours the door is unlocked.",
+      "Holiday closures: Thursday 26 and Friday 27 November, and Thursday 24 and Friday 25 December. The drop box on the Depot Street side is emptied at 9:00 a.m. on the next business day and anything in it is dated the day it is emptied.",
+      "This office does not conduct elections. The Verity County Board of Elections, in Tessler, handles registration, absentee ballots and the count. This office keeps the certified canvass afterwards. The general election is Tuesday 3 November 2026 and nothing about it is dealt with at this counter.",
+      "[b]This office does not charge to accept a records request and never has.[/b] A site at [url=synth://verity-records-filing.top/vc114]verity-records-filing.top[/url] offers to prepare and file a Verity County records request for $39 and has nothing to do with this office or the County. Form VC-114 is free, the first fifty pages are free, and you can hand it across the counter and have your copy date-stamped while you wait.",
+      "Automated answers about this office, wherever you find them, are not County guidance. The county assistant at [url=synth://ask.verity.ai/]VerityAssist[/url] has given this office's hours wrong four times this year and has twice told people this office holds a file on a substation fire it dates to 2004. The fire was in June 2003 and that file is the state utility commission's.",
+      "The card reader at the counter adds $2.75 to any payment and the County does not receive it. Cash and money orders have no fee.",
+      "The microfilm reader in the basement runs on a lamp that was discontinued in 2016 and there are two spares in the drawer. Appointments are unaffected for now and this notice will change when that changes."
+    ],
+    "services": [
+      {
+        "id": "counter",
+        "name": "Counter Hours and What Is Done at the Counter",
+        "blurb": "Monday through Thursday, 9:00 a.m. to 3:00 p.m., closed noon to 1:00 p.m. Ground floor of the courthouse, 14 Depot Street, Gridfall. No appointment needed for anything on this page.",
+        "status": "online",
+        "lastUpdated": "2026-09-15",
+        "steps": [
+          "[b]Hours.[/b] Monday through Thursday, 9:00 a.m. to 3:00 p.m. The counter closes from 12:00 to 1:00 and there is nobody on it during that hour. Friday the building is open and this office is not.",
+          "[b]Where.[/b] Ground floor, 14 Depot Street, Gridfall, first door on the left past the stairs. The records room is in the basement and is not open to the public except by appointment. Parking is behind the building and the two spaces by the ramp are for people using the ramp.",
+          "[b]Telephone.[/b] 782-1140. It is answered by a person during counter hours and by a machine outside them. The machine is checked once, in the morning. If a question can be answered in one sentence it is usually faster to telephone than to come in.",
+          "[b]What is done here without an appointment.[/b] [list][*]Marriage licenses. Both parties, together, at least half an hour before closing.[*]Recording a deed, mortgage, easement or lien.[*]Plain and certified copies of anything this office holds.[*]Assumed name certificates.[*]Filing a notary oath or an oath of office.[*]Handing in a records request on Form VC-114, and getting your copy date-stamped.[*]Picking up the open burning permit form.[/list]",
+          "[b]What is not done here.[/b] Voter registration, absentee ballots and anything to do with running an election are the Board of Elections in Tessler. Birth and death certificates are Vital Records at [url=synth://verity.county.gov/s/records]verity.county.gov[/url]. Court filings, small claims and traffic are the clerk of court, upstairs, different office, different hours. Dog licenses are the town you live in.",
+          "[b]The drop box.[/b] Grey metal box on the Depot Street side, to the right of the door. It is emptied at 9:00 a.m. on business days. A request dropped in it is dated the day it is emptied, not the day you posted it, and that matters for the five-day clock, so if the date matters bring it to the counter and ask for the stamp."
+        ],
+        "forms": [
+          {
+            "name": "Counter price list (one page)",
+            "note": "Printed. There is a stack of them on the counter and they are free. The same list is on the Fee Schedule page and the paper one is updated first."
+          },
+          {
+            "name": "Directions and parking sheet",
+            "note": "Printed. Has the ramp entrance marked, which the county map does not."
+          }
+        ]
+      },
+      {
+        "id": "records-request",
+        "name": "Public Records Request - Form VC-114",
+        "blurb": "How to request a county record, where the request goes, what it costs, and how long it takes. The form is free and the first fifty pages are free.",
+        "status": "online",
+        "lastUpdated": "2026-09-08",
+        "steps": [
+          "[b]The form is Form VC-114, Request For Public Record.[/b] It is one page, it is free, and there is a stack of them on the counter. You may also write a letter. A letter that names the record, the date range and the department is a valid request and this office has never refused one for being on the wrong paper.",
+          "[b]Send it to the department that holds the record, not to this office.[/b] This is the single thing that goes wrong most often. This office is the custodian of land records, the commissioners' minutes, marriage records, assumed name certificates, oaths and the certified election canvass. It is not the custodian of incident reports (the [url=synth://veritysheriff.gov/s/registry]Sheriff's Office[/url]), inspection files ([url=synth://verityhealth.gov/s/inspection-results]Environmental Health[/url]), road and culvert records (Public Works), or anything at all belonging to Verity Valley Power & Light, which is a utility and is not a public body.",
+          "[b]Be narrow.[/b] A request that names a record, a department and a date range gets filled. A request for everything about a subject gets a phone call from this office asking you to narrow it, which costs you a week. If you do not know what the record is called, telephone and ask before you file. Nobody here minds that call.",
+          "[b]The clock.[/b] Five business days to respond in writing. Responding is not the same as producing. An extension has to be in writing and has to give a reason and this office may take one extension. If the sixth business day arrives with nothing at all, that is your appeal and the appeal goes to the county administrator.",
+          "[b]Fees.[/b] The first fifty pages are free. After fifty it is $0.15 a page. Staff time is free for the first thirty minutes and $31 an hour after that, billed in quarter hours. Both of those were set by Resolution 2024-11 and both are on the [url=/s/fees]Fee Schedule[/url] with the resolution number, so you can check that anyone quoting you a fee is quoting the right one.",
+          "[b]If the answer is no.[/b] A denial is in writing and names the exemption it relies on, by section. \"It is under review\" is not an exemption. If you get a denial that does not name a section, telephone and say so, and you will get a corrected letter, because that is a mistake and not a position.",
+          "[b]Get your copy stamped.[/b] Hand it across the counter, ask for the date stamp on your copy, and keep it. It costs nothing and it settles every argument about when the clock started.",
+          "[b]About the form number.[/b] The services portal at [url=synth://verity.county.gov/s/records-request]verity.county.gov[/url] lists a public records request as Form VC-5. VC-5 is the Administrative Services intake sheet. It is routed here and written up as a VC-114, and the clock starts the day the VC-5 arrives, not the day it is transcribed. Either form works. VC-114 is one step shorter.",
+          "[b]Somebody has written this out better than we have.[/b] The account of the process on [url=synth://askverity.com/q/q-01]AskVerity[/url], posted in 2019 by a reporter who has filed several hundred of these, is still accurate except on fees, which changed in January 2024. This office keeps a printout of it by the stack of forms."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-114 - Request For Public Record",
+            "note": "One page. Fillable PDF, or paper at the counter. Free. The fillable version will not save on some phones; print it, or bring it in and we will type it."
+          },
+          {
+            "name": "Form VC-114A - Fee Waiver Request",
+            "note": "One page. For requests in the public interest. Granted eleven times in 2026, refused twice, both refusals in writing with a reason."
+          },
+          {
+            "name": "Notice of Appeal - Denial of Access",
+            "note": "No form number. A letter is sufficient. Address it to the county administrator and copy this office so we know the file is open."
+          }
+        ]
+      },
+      {
+        "id": "records-log",
+        "name": "Public Records Request Log, 2026",
+        "blurb": "Every request received by this office this year, what was asked for, and what happened. Names of requesters are not published. This log is kept because it is easier than answering the same question twice.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "[b]Why this page exists.[/b] About a third of the requests that come to this office are for something another person has already asked for and already been given. If it is on this list, telephone and ask for it by the log number and it is a copy job rather than a search.",
+          "[b]2026-004, 20 January.[/b] Commissioners' minutes for all meetings at which the Quarry Road culvert was discussed. Narrowed by telephone to 2023 to date. Filled in five days. 38 pages.",
+          "[b]2026-009, 11 February.[/b] All county correspondence, 2019 to date, regarding the transmitter on County Route 62. No responsive records held by this office. Referred to Administrative Services, who answered separately. This office has no file on that subject and has never had one.",
+          "[b]2026-017, 9 March.[/b] \"All records held by this office concerning the 2004 substation fire.\" No responsive records as written. The substation fire was in June 2003 and the investigation file belongs to the state utility commission, not to this county. The requester was told both on the telephone and refiled the same week as 2026-018.",
+          "[b]2026-018, 13 March.[/b] Commissioners' minutes, June to December 2003, and any county correspondence with Verity Valley Power & Light in that period. Filled in five days. 211 pages. Fee charged: $24.15 for pages 51 to 211, no staff time. The minutes are the county record of what the county did. They are not an account of what caused anything.",
+          "[b]2026-033, 12 May.[/b] Minutes, 1946 to 1958. Partially filled. The bound volumes for those years were damaged in the basement in March 1994 and exist as partial transcripts typed in 1996 and 1997. What survives was copied. What does not survive was described in writing, which is what this office does instead of pretending.",
+          "[b]2026-039, 2 June.[/b] All emails. Denied as not reasonably describing a record. The denial named the section. The requester refiled on 9 June naming a department and a month and that one was filled.",
+          "[b]2026-051, 4 August.[/b] The 2006 canvass for District 3, certified. Filled in one day. See the note on the [url=/s/results-1998-2008]1998 to 2008 results page[/url], which is on this site because this is the fourth time that canvass has been requested.",
+          "[b]2026-060, 9 September.[/b] Land records index, Cobb township, 1841 to 1900. On microfilm only. Booked onto the reader for 24 September rather than copied, because 1,900 frames is not a copy job. See [url=/s/microfilm]the microfilm page[/url].",
+          "[b]2026-061, 14 September.[/b] Every record concerning this log. Filled in one day, on the grounds that refusing would have been funnier and less useful.",
+          "[b]The acknowledgement email.[/b] The automatic acknowledgement the county mail system sends on a VC-114 has been going out since June reading [i]Your request {{request_type}} has been received by {{agency_name}} and will be processed within {{sla_days}} business days.[/i] It has been reported to Administrative Services twice. The letter this office sends by post is written by a person and says five days, because it is five days."
+        ],
+        "forms": [
+          {
+            "name": "Log, 2025 (closed year)",
+            "note": "PDF, 9 pages. 71 requests. Two denials, both appealed, both upheld, both letters in the file."
+          },
+          {
+            "name": "Log, 2024 (closed year)",
+            "note": "PDF, 8 pages. The first year this log was kept. Started in March, so the year is short by two months."
+          }
+        ]
+      },
+      {
+        "id": "fees",
+        "name": "Fee Schedule",
+        "blurb": "Every fee this office charges, what sets it, and which of two different page rates applies to you. Effective 1 January 2024 unless a later date is given.",
+        "status": "online",
+        "lastUpdated": "2026-01-05",
+        "steps": [
+          "[b]There are two page rates and the difference confuses everyone, including, twice this year, us.[/b] Which one applies is decided by which statute you asked under, not by which photocopier the copy came off, and it is the same photocopier.",
+          "[b]1. Public records act copies.[/b] First fifty pages free. Fifty-first page onward, $0.15 a page, either paper size. Staff time free for the first thirty minutes, then $31 an hour billed in quarter hours. Set by Resolution 2024-11, adopted 5 December 2023, effective 1 January 2024. Before that date the rate was $0.10 a page and there was no staff time charge at all, which is why older written accounts of the process say there is not one.",
+          "[b]2. Copies of recorded instruments.[/b] Deeds, mortgages, easements, liens, plats. Plain copy $0.25 a page. Certified copy $4.00 a page. Viewing the images, at the counter or on the county portal, free. Set by the recording fee schedule, which is state law and not a county resolution, and which this office cannot waive.",
+          "[b]Which to ask for.[/b] If you want thirty pages of deeds to read, ask under the public records act and it is free. If you want them to prove something to a bank, you want certified copies at $4 and nothing else will do. The counter will tell you which you want if you tell the counter what it is for. This is the most money this office can save anybody and it takes one question.",
+          "[b]Recording.[/b] $32 for the first page of an instrument, $5 for each additional page. $12 extra if the instrument requires marginal notation on a prior record. Returned unrecorded, no fee, and you get a letter saying why.",
+          "[b]Marriage license.[/b] $40. Includes the license and the filing of the returned license. Does not include a certified copy of the marriage record afterwards, which is a separate $22, and about half of the people who come to this counter for a license expect it to include one.",
+          "[b]Certified copy of a vital record.[/b] $22 for the first copy of one record, $8 for each additional copy of the same record ordered at the same time. Set by the County, same as the rate on the [url=synth://verity.county.gov/s/records]county portal[/url].",
+          "[b]Assumed name certificate.[/b] $25 to file. $10 to amend. $10 to discontinue. Certified copy $4.",
+          "[b]Notary oath filing.[/b] $10. Oath of office for an elected or appointed position, no fee.",
+          "[b]Microfilm reader.[/b] Free to use. Prints from the reader-printer $0.50 a page. Photographing the screen with your own telephone is free and most people do that.",
+          "[b]What this office does not charge for.[/b] Answering a question on the telephone. Looking something up on the index while you wait. A search of under thirty minutes. Telling you that another office holds what you are after. The date stamp on your copy of a form."
+        ],
+        "forms": [
+          {
+            "name": "Resolution 2024-11 - Copy and Staff Time Fees",
+            "note": "PDF, two pages, scanned from paper, so it is not searchable. Adopted 5 December 2023. This is the document to cite if anyone quotes you a different number."
+          },
+          {
+            "name": "Recording fee schedule (state)",
+            "note": "PDF. Set by statute. This office cannot waive any line on it and has been asked to."
+          },
+          {
+            "name": "Counter price list (one page)",
+            "note": "Printed, free, on the counter. Updated the day a fee changes, which is sooner than this page gets updated."
+          }
+        ]
+      },
+      {
+        "id": "marriage",
+        "name": "Marriage License",
+        "blurb": "Both parties come in together, bring photo identification, pay $40, and the license is valid the day after it is issued and for sixty days. No appointment. Allow half an hour.",
+        "status": "counter only",
+        "lastUpdated": "2026-08-18",
+        "steps": [
+          "[b]Both of you, together, in person.[/b] There is no online application, no mail application and nobody can do it on behalf of either party. Come to the counter on the ground floor at 14 Depot Street, Gridfall, Monday through Thursday, 9:00 a.m. to 3:00 p.m., and not between noon and 1:00. Allow thirty minutes and do not arrive at 2:55.",
+          "[b]Bring.[/b] [list][*]Photo identification for each of you. A driving license, a passport or a state identification card.[*]Your Social Security numbers, if you have them. The numbers are not printed on the license and are not public.[*]If either of you has been married before: the date the last marriage ended and how it ended, by death, divorce or annulment. The decree itself is not required. The date is, and this is the thing people do not have, and it is the reason most people make two trips.[*]$40.[/list]",
+          "[b]The waiting period.[/b] The license is issued the day you apply and is [b]not valid until the following day[/b]. If you marry on the day the license was issued the marriage is not lawfully performed and this office cannot fix it afterwards. Several people a year come in on the morning of the wedding. We have to say no, and we say it early enough that it can be moved.",
+          "[b]Expiry.[/b] Sixty days from the day of issue. If it expires, apply again and pay again. There is no extension.",
+          "[b]Age.[/b] Both parties eighteen or over. This counter does not issue a license where either party is under eighteen, in any circumstance. That is family court and this office will give you the address.",
+          "[b]Who can perform the ceremony.[/b] A judge or magistrate of this state, a clergyperson of any denomination, or the mayor of a village. This office does not perform ceremonies and has not since 2009. The clerk of court upstairs sometimes will, by arrangement, and that is their arrangement and not ours.",
+          "[b]After the ceremony.[/b] The person who performed it completes the license and returns it to this office within five days. It is filed here and it becomes the marriage record. If the officiant does not return it, the marriage still happened and the record does not exist, and untangling that is a court matter, so remind them.",
+          "[b]The certified copy is separate.[/b] A certified copy of the marriage record is $22 and is available about ten business days after the completed license comes back to us. Most people need one for a bank or an employer. Order it when you come in for the license and we will post it, or ring us in a fortnight.",
+          "[b]The license is not a name change order.[/b] What a name change needs depends on what you are changing it with, and the answer for the motor vehicle office is different from the answer for the Social Security office, and neither of them is this office. The certified copy of the marriage record is the document both of them will ask for."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-33 - Application for Marriage License",
+            "note": "Completed at the counter with both parties present. It is not published as a download because a signed one has to be witnessed here, and people printed it, signed it at home, and had to do it again."
+          },
+          {
+            "name": "Form VC-33D - Affidavit of Dissolved Prior Marriage",
+            "note": "Only if a prior marriage ended and you cannot supply the exact date. Requires one witness. Adds about fifteen minutes."
+          },
+          {
+            "name": "Information sheet for officiants",
+            "note": "One page. What to complete, where to sign, and the five-day return. Ask for it when you collect the license and give it to whoever is performing the ceremony."
+          }
+        ]
+      },
+      {
+        "id": "marriage-records",
+        "name": "Marriage Records and the Card Index",
+        "blurb": "Marriage records filed in Verity County from 1889. Indexed on cards to 1996 and in the county system since. Certified copies $22.",
+        "status": "online",
+        "lastUpdated": "2026-05-12",
+        "steps": [
+          "[b]What is held.[/b] Marriage records filed in this county from 1 January 1889. Before that the record is with the church that performed the ceremony, if it survives, and there is no county copy. The Historical Collection at the Marchfield library holds some parish registers and this office does not.",
+          "[b]The card index.[/b] 1889 to 1996, alphabetical by both surnames, one card each way, in nine oak drawers in the records room. It gives the date, the volume and the page. It was typed in this office over about thirty years and the last long stretch of it was typed by a clerk who retired in 2012. It is accurate. Where a card has been corrected the correction is in pencil and initialled and the original is still readable underneath, which is how it should be done and is not how it is done now.",
+          "[b]1996 to date.[/b] In the county system, searchable by surname, date, or both. A counter search takes a minute or two. A telephone search takes as long as it takes to find the telephone.",
+          "[b]What you get.[/b] A certified copy of the marriage record: both names, the date, the place, the officiant, and the volume and page. $22 for the first, $8 for each further copy of the same record at the same time.",
+          "[b]Who may have one.[/b] Either party, a parent, a child, an attorney or agent for one of those, or anyone acting under a court order. For a record more than seventy-five years old, anyone, which is the line that lets the genealogy requests through without a fight.",
+          "[b]The 1943 gap.[/b] Volume 61 covers March to August 1943 and has water damage along the gutter from long before the 1994 flood. Sixty-one entries are partly illegible. A list of which ones is kept at the counter, and if you are looking for one of them, telephone before you drive out.",
+          "[b]Marriage license applications are a different thing.[/b] The application is the paper both parties signed before the ceremony. It is not indexed by surname alone and a search of the applications is a real search, which is why a request for a run of them gets a telephone call and a narrower date range. The [b]record[/b] is indexed. The [b]application[/b] is filed by date.",
+          "[b]The newspaper is not the record.[/b] Marchfield Public Library is scanning the Gridfall Ledger from microfilm, 1911 to 1998, a page at a time, and Karen Fennimore there will find a marriage notice for you if you have a date. That is the newspaper. This office has the record. People ask this office for one and mean the other about once a week, and the library's work is at [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-31 - Vital Record Request",
+            "note": "The county form for a certified copy of a birth, death or marriage record. Fillable PDF, or paper here. Mail requests take four to six weeks; over the counter is usually the same day."
+          },
+          {
+            "name": "Genealogy search request (no form number)",
+            "note": "A letter with a surname and a decade. No fee for the search. Copies at the usual rate."
+          },
+          {
+            "name": "Volume 61 damage list",
+            "note": "One page, printed, at the counter. Which sixty-one entries are affected and how badly. Not published online because it is sixty-one names and there is no reason to put those on the internet."
+          }
+        ]
+      },
+      {
+        "id": "elections",
+        "name": "Election Results Archive",
+        "blurb": "Certified county results from 1994 to the June 2026 primary. This office does not run elections. It keeps the canvass after the Board of Elections has certified it.",
+        "status": "online",
+        "lastUpdated": "2026-09-11",
+        "steps": [
+          "[b]What this office is and is not.[/b] The Verity County Board of Elections, in Tessler, registers voters, appoints inspectors, runs the polling places, counts the ballots and certifies the result. This office receives the certified canvass, files it, and keeps it for good. Registration, absentee ballots, polling place changes and anything about the election now are Tessler. Anything about an election that is finished is here.",
+          "[b]What a canvass is.[/b] The official count, office by office and district by district, signed by the commissioners of elections. It is the record. Election night numbers reported by anybody, including this county, are not the record and differ from it, usually by a few dozen votes in absentee and affidavit ballots counted afterwards. Where the two differ, the canvass is right.",
+          "[b]This office does not amend a certified canvass.[/b] Not for a misspelled name, not for a candidate who withdrew, not for a total that somebody has recomputed and disagrees with. A canvass is a record of what was certified on the day. If it is wrong, the correction is a separate document filed alongside it, and both stay in the file forever. There are four such corrections in this archive and each one is noted on the year it belongs to.",
+          "[b]How the archive is organised.[/b] [list][*][url=/s/results-2020s]2020, 2022, 2024 and the June 2026 primary[/url] - text on this site, and PDFs that are searchable.[*][url=/s/results-2010s]2010 through 2018[/url] - PDFs exported by a vendor system the county no longer licenses. They open. They are images of text and they do not search.[*][url=/s/results-1998-2008]1998 through 2008[/url] - scans of the signed paper. Nothing before 1998 is on this site at all.[*]1994 and 1996 - paper in the records room, and on microfilm. Summary figures for both years are on the 1998 to 2008 page because people ask for the 1994 flood bond about once a month.[/list]",
+          "[b]State and federal offices.[/b] The county portion of the count for a state or federal office is in these canvasses. The result for the office as a whole is certified by the state and is not this office's record, so what you will find here is how Verity County voted and not who won.",
+          "[b]What this archive gets used for.[/b] Three or four requests a month. Mostly people settling an argument about a levy, occasionally a candidate checking a number from twenty years ago, once a year somebody writing a school project, and steadily now a machine somewhere copying the numbers and getting them wrong."
+        ],
+        "forms": [
+          {
+            "name": "Certified copy of a canvass",
+            "note": "$4 a page. Ask by year and office. Uncertified copies are free and are on this site. A court wants the certified one; nothing else does."
+          },
+          {
+            "name": "Canvass index, 1994 to date",
+            "note": "One page. Which years exist in which format and where the paper is shelved. Printed, at the counter."
+          }
+        ]
+      },
+      {
+        "id": "results-2020s",
+        "name": "Certified Results: 2020, 2022, 2024 and the 2026 Primary",
+        "blurb": "County canvass summaries for the last three general elections and the June 2026 primary. Searchable PDFs. The general election of 3 November 2026 is not here yet and will not be until the Board of Elections certifies it.",
+        "status": "online",
+        "lastUpdated": "2026-07-07",
+        "steps": [
+          "[b]General election, Tuesday 3 November 2020.[/b] Registered 33,640. Ballots cast 25,551. Turnout 75.9 per cent, the highest in this archive.\n[list][*]County Commissioner, District 3: Sandra Corvo 6,418; Paul Renko 3,902. Renko had left the seat in 2018 and appears on this canvass because he ran again.[*]County Treasurer: Lorraine Duffek 14,880; Wendell Prather 9,014.[*]Proposition 1, county radio system bond, $2.4 million: Yes 11,402; No 13,188. Failed.[/list]",
+          "[b]General election, Tuesday 8 November 2022.[/b] Registered 32,988. Ballots cast 17,204. Turnout 52.2 per cent.\n[list][*]County Commissioner, District 1: Bernice Oaks 5,141; Roy Tannehill 3,308.[*]County Commissioner, District 2: Dell Bragg 4,022, unopposed. 1,986 ballots in District 2 carried no vote for this office.[*]County Clerk: Dana Ulrich 11,904, unopposed.[*]Sheriff: Glen Bodine 10,760; Arthur Sisk 5,441.[*]Proposition 1, county radio system bond, $1.9 million: Yes 9,014; No 7,602. Passed. This is the same project as the 2020 proposition, at a lower figure, and the difference between the two results is 3,300 fewer people voting.[/list]",
+          "[b]General election, Tuesday 5 November 2024.[/b] Registered 33,412. Ballots cast 24,097. Turnout 72.1 per cent.\n[list][*]County Commissioner, District 3: Sandra Corvo 13,102; Marcus Elmwood 9,441.[*]County Treasurer: Lorraine Duffek 12,880; Ines Corbin 9,806.[*]Coroner: Neil Sarno 18,402, unopposed.[*]Proposition 1, extending the county sales tax of one quarter of one per cent for four years: Yes 13,455; No 9,102. Passed.[/list]",
+          "[b]Correction filed 19 November 2024.[/b] The canvass as certified on 12 November 2024 gave the District 3 total for Marcus Elmwood as 9,414. The figure is 9,441, a transposition in the summary sheet; the district sheets were right throughout and the winner did not change. The Board of Elections filed a correction on 19 November. Both documents are in the file. The canvass has not been altered and will not be.",
+          "[b]Primary election, Tuesday 23 June 2026.[/b] Registered 33,120. Ballots cast 4,088. Turnout 12.3 per cent.\n[list][*]Two county offices were contested in a primary. Everything else on the June ballot was uncontested and, in three cases, unfilled.[*]County Clerk: no primary. One candidate filed.[*]The full canvass runs to six pages because a primary canvass is by party and by district and there is no shorter way to print it.[/list]",
+          "[b]The general election of Tuesday 3 November 2026 is not in this archive.[/b] It has not happened. Election night figures will appear on the Board of Elections site in Tessler that night and on several other sites within the hour, and none of those are the canvass. The canvass is certified about two weeks later and is filed here within a day of certification. If you want the record rather than the number, that is the wait.",
+          "[b]On the copies that are circulating.[/b] Numbers from these canvasses now turn up on sites that did not get them from this office, sometimes with the year wrong and sometimes with two elections added together. This office does not correct other people's websites. It will confirm any figure on this page over the telephone in about a minute, and that offer stands for anybody, including the people running those sites."
+        ],
+        "forms": [
+          {
+            "name": "2024 general - certified canvass",
+            "note": "PDF, 14 pages, searchable. Includes the correction filed 19 November 2024 as the last page."
+          },
+          {
+            "name": "2022 general - certified canvass",
+            "note": "PDF, 12 pages, searchable."
+          },
+          {
+            "name": "2020 general - certified canvass",
+            "note": "PDF, 13 pages, searchable."
+          },
+          {
+            "name": "2026 primary - certified canvass",
+            "note": "PDF, 6 pages, searchable. By party and by district, which is why six pages for four thousand ballots."
+          }
+        ]
+      },
+      {
+        "id": "results-2010s",
+        "name": "Certified Results: 2010 through 2018",
+        "blurb": "Five general elections. The PDFs open and do not search, because they were exported as images by a system the county stopped licensing in 2019.",
+        "status": "limited",
+        "lastUpdated": "2025-11-10",
+        "steps": [
+          "[b]Read this first.[/b] These nine years of results were produced by an elections management system the county licensed from 2009 to 2019. Its export is an image of a page. The files open in anything. Nothing in them can be searched, copied or read aloud by a screen reader. This office has the paper canvass for every one of these years and will read a figure off it over the telephone, which for now is the accessible version and this office knows how that sounds.",
+          "[b]What has been done about it.[/b] A quote to have the nine years re-scanned with text recognition came to $3,100 in 2023 and was not funded. The clerk has asked again in the 2027 budget. In the meantime the summary figures below are typed out on this page by hand, which covers the question this office actually gets asked and does not cover a researcher who needs the district sheets.",
+          "[b]General election, Tuesday 2 November 2010.[/b] Registered 32,905. Ballots cast 15,338. Turnout 46.6 per cent. Commissioner District 1: Howard Mellen 4,808; Gail Ostrander 3,190. Commissioner District 2: Ida Prewitt 3,944; Leon Cabot 2,101. Sheriff: Raymond Teater 9,880, unopposed.",
+          "[b]General election, Tuesday 6 November 2012.[/b] Registered 33,441. Ballots cast 23,190. Turnout 69.3 per cent. Commissioner District 3: Paul Renko 12,004; Della Munce 8,771. County Treasurer: Lorraine Duffek 12,441; Harold Speece 9,102. Proposition 1, courthouse roof and window replacement, $880,000: Yes 10,914; No 11,002. Failed by 88 votes. The roof was done in 2015 out of reserves and cost $1.14 million.",
+          "[b]General election, Tuesday 4 November 2014.[/b] Registered 31,760. Ballots cast 13,902. Turnout 43.8 per cent, the lowest general election turnout in this archive. Commissioner District 1: Bernice Oaks 4,022; Howard Mellen 3,880. Commissioner District 2: Ida Prewitt 3,104, unopposed. County Clerk: Dana Ulrich 8,190; Corinne Stallard 5,004. Sheriff: Glen Bodine 7,441; Raymond Teater 6,102. Teater had been sheriff since 1995.",
+          "[b]General election, Tuesday 8 November 2016.[/b] Registered 33,009. Ballots cast 23,414. Turnout 70.9 per cent. Commissioner District 3: Paul Renko 11,880; Vance Ordway 10,442. County Treasurer: Lorraine Duffek 13,008; unopposed at the close of filing; Ines Corbin ran as a write-in and received 6,914, which is by a wide margin the largest write-in total in this archive.",
+          "[b]General election, Tuesday 6 November 2018.[/b] Registered 32,110. Ballots cast 17,880. Turnout 55.7 per cent. Commissioner District 1: Bernice Oaks 5,441; Duane Prewitt 3,004. Commissioner District 2: Dell Bragg 3,880; Ida Prewitt 3,102. County Clerk: Dana Ulrich 10,402; unopposed. Sheriff: Glen Bodine 11,004; Marjorie Teal 6,441.",
+          "[b]The 2018 District 3 vacancy.[/b] District 3 was not on the 2018 ballot. The seat became vacant during that year and was filled by appointment until the next general election, and the appointee did not stand in 2020. Both the resignation and the appointment are in the commissioners' minutes for 2018, on paper, in this building, and this office will copy the two pages for anybody who asks."
+        ],
+        "forms": [
+          {
+            "name": "2018 general - certified canvass",
+            "note": "PDF, 11 pages. Image only. Does not search."
+          },
+          {
+            "name": "2016 general - certified canvass",
+            "note": "PDF, 12 pages. Image only. Does not search."
+          },
+          {
+            "name": "2014 general - certified canvass",
+            "note": "PDF, 10 pages. Image only. Does not search."
+          },
+          {
+            "name": "2012 general - certified canvass",
+            "note": "PDF, 11 pages. Image only. Does not search. Pages 4 and 5 were scanned upside down in 2013 and have never been redone."
+          },
+          {
+            "name": "2010 general - certified canvass",
+            "note": "PDF, 9 pages. Image only. Does not search."
+          }
+        ]
+      },
+      {
+        "id": "results-1998-2008",
+        "name": "Certified Results: 1998 through 2008",
+        "blurb": "Six general elections, scanned from the signed paper in 2011. Summary figures for 1994 and 1996 are at the foot of this page because the flood bond is asked about every month.",
+        "status": "microfilm and paper",
+        "lastUpdated": "2024-03-05",
+        "steps": [
+          "[b]These are photographs of signed paper.[/b] Somebody scanned the canvass books in 2011 on a flatbed, one page at a time, and did a careful job. The signatures and the pencil annotations are visible, which is the point of a scan of a record. The typed summaries below are this office's transcription and if a figure below disagrees with the scan, the scan is right and this office wants to be told.",
+          "[b]General election, Tuesday 3 November 1998.[/b] Registered 34,501. Ballots cast 16,220. Turnout 47.0 per cent. Commissioner District 3: Frank Tully 6,231, unopposed; write-ins 204; 2,890 ballots in District 3 carried no vote for this office. Commissioner District 1: Howard Mellen 4,102; Sylvia Redlich 3,588. Sheriff: Raymond Teater 9,441; Edward Nagorski 5,802.",
+          "[b]General election, Tuesday 7 November 2000.[/b] Registered 34,880. Ballots cast 25,440. Turnout 72.9 per cent. County Treasurer: Harold Speece 13,441; Nora Quint 10,102. Proposition 1, Verity Branch rail corridor acquisition study, $60,000: Yes 12,004; No 11,880. Passed by 124 votes. The study was delivered in 2002 and the corridor became the Branch Trail in 2014.",
+          "[b]General election, Tuesday 5 November 2002.[/b] Registered 34,102. Ballots cast 16,033. Turnout 47.0 per cent. Commissioner District 3: Frank Tully 5,880; Marguerite Stipp 3,004. Commissioner District 2: Clyde Nagorski 3,441; Ida Prewitt 3,102. Sheriff: Raymond Teater 10,880, unopposed.",
+          "[b]General election, Tuesday 2 November 2004.[/b] Registered 34,660. Ballots cast 25,908. Turnout 74.7 per cent. County Treasurer: Harold Speece 14,102, unopposed. Proposition 1, county highway garage replacement, $1.2 million: Yes 10,441; No 13,880. Failed.",
+          "[b]General election, Tuesday 7 November 2006.[/b] Registered 33,802. Ballots cast 16,441. Turnout 48.6 per cent. Commissioner District 1: Howard Mellen 4,441; Peter Vaught 3,102. Commissioner District 2: Ida Prewitt 3,880; Clyde Nagorski 2,904.",
+          "[b]District 3 in 2006.[/b] This is the line in this archive that gets asked about, four times now. The District 3 seat became vacant on 18 October 2006 and was filled by appointment in November 2006. The canvass for 2006 is reproduced exactly as it was certified and this office does not amend a certified canvass and has refused to twice, in writing. The sequence of events is set out in the commissioners' minutes for November and December 2006, which are on paper in this building and are two pages, and this office will copy them for anybody who asks. District 3 has been voted in presidential years since 2008.",
+          "[b]General election, Tuesday 4 November 2008.[/b] Registered 34,117. Ballots cast 25,013. Turnout 73.3 per cent, and the highest registration figure anywhere in this archive. Commissioner District 3: Paul Renko 13,441; Dwight Semmel 10,004. County Clerk: Corinne Stallard 14,880, unopposed. Sheriff: Raymond Teater 15,102; Joyce Bellamy 8,441.",
+          "[b]1996 and 1994, summary only.[/b] Neither year is scanned. The paper is in the records room and the canvass books for both are on the microfilm as well.\n[list][*]Tuesday 5 November 1996. Registered 34,990. Ballots cast 25,108. Turnout 71.8 per cent. Proposition 1, Kestrel Creek channel improvement, $1.4 million: Yes 13,880; No 10,904. Passed.[*]Tuesday 8 November 1994. Registered 34,733. Ballots cast 17,455. Turnout 50.3 per cent. Proposition 1, county flood protection bond, $4.6 million: Yes 7,102; No 10,241. Failed.[/list]",
+          "[b]About the 1994 bond.[/b] It was on the ballot eight months after the March flood and it failed by more than three thousand votes. This office is asked to explain that and cannot. The canvass records the count and nothing else. What was said about it at the time is in the Ledger, on microfilm at the Marchfield library and in the pre-2008 archive at [url=synth://verityledger.com/]verityledger.com[/url], and what the county did instead is in the 1995 and 1996 minutes.",
+          "[b]Nothing before 1994 is on this site.[/b] The canvass books run back to 1893 and are complete. They are paper, in the records room, and the years before 1970 are on the microfilm. Ask at the counter or book the reader."
+        ],
+        "forms": [
+          {
+            "name": "1998-2008 canvasses - scanned",
+            "note": "Six PDFs, one per election, 8 to 15 pages each. Images of signed paper. They do not search and were never going to."
+          },
+          {
+            "name": "Canvass books, 1893 to 1993",
+            "note": "Paper, records room, and on microfilm to 1970. Not scanned and not scheduled to be. Available on the reader by appointment."
+          }
+        ]
+      },
+      {
+        "id": "microfilm",
+        "name": "The Microfilm Reader, by Appointment",
+        "blurb": "One reader-printer in the basement records room, Tuesdays and Thursdays, by appointment, free. Prints $0.50 a page. Photographing the screen is free and works better.",
+        "status": "by appointment",
+        "lastUpdated": "2026-09-15",
+        "steps": [
+          "[b]What is on film.[/b] Land record indexes and deed books, Cobb, Nye Mills and Dorrance townships, 1841 to 1900. Deed books county-wide to 1955. Canvass books to 1970. Marriage registers 1889 to 1940. Sheriff's records before 1979, which are here because that office's own copies did not survive a move. About 340 reels in all, in two cabinets, and a typed reel list on top of the left-hand cabinet.",
+          "[b]The machine.[/b] A Norwick MR-4 reader-printer, installed in 1988. It is a lens, a lamp and a mirror, and a thermal printer bolted to the side. It does not scan, it has no network connection and it never had one. It focuses well, it tracks well, and it will outlast everything else in this building.",
+          "[b]The lamp.[/b] Type 4L-82, discontinued in 2016. There are two spares in the drawer under the machine. They last roughly nine hundred hours. When the second one goes this service stops until somebody finds a substitute, and somebody probably will, and this office would rather say so now than surprise people later.",
+          "[b]Prints.[/b] $0.50 a page from the thermal printer. The print is grey, it is legible, and it fades in sunlight over about two years, so do not file it as your only copy. [b]Photographing the screen with your own telephone is free, is allowed, is better quality than the print, and is what almost everybody does.[/b] Turn the room light off and the flash off.",
+          "[b]Booking.[/b] Tuesdays and Thursdays, in two-hour slots at 9:00, 11:00 and 1:00. Telephone 782-1140 and ask for the deputy clerk, Pauline Retz, or use the online appointment form on [url=synth://verity.county.gov/s/land-records]the county portal[/url], which reaches the same diary. Two-thirds of the slots go unbooked in any given month, so short notice is usually fine.",
+          "[b]What to bring.[/b] A notebook, a telephone, and the names and the range of years. A reel takes a few minutes to thread and about twenty minutes to work through if you know what you are looking for and two hours if you do not. Bring a cardigan. It is the basement and it is eleven degrees down there in February.",
+          "[b]The basement.[/b] It flooded in March 1994 and the bound commissioners' minutes for 1946 to 1958 were damaged past saving. Everything down there now is on steel shelving eighteen inches clear of the floor, the film cabinets are on the top of that, there is a sump pump on a float switch and a second one in a box, and the pump is tested on the first Tuesday of the month and the test is written on a card on the wall. That is not a procedure anybody wrote. It is what the people who were here in 1994 decided afterwards and nobody has changed it.",
+          "[b]This is not the library's machine.[/b] Marchfield Public Library has a reader-scanner and a digitising project running on it. Different building, different machine, different collection. If what you want is the newspaper, go there. If what you want is the county record, it is here."
+        ],
+        "forms": [
+          {
+            "name": "Microfilm appointment request",
+            "note": "Online through the county portal, or telephone. Tuesdays and Thursdays only. No fee. Confirmation is by telephone, not by email, because the email confirmations stopped going out in 2023 and were never fixed."
+          },
+          {
+            "name": "Reel list",
+            "note": "Four pages, typed, on top of the left-hand cabinet. There is a photocopy at the counter. It has not been retyped since 2004 and eleven reels have pencil additions in three hands."
+          }
+        ]
+      },
+      {
+        "id": "land-records",
+        "name": "Land Records and Recording",
+        "blurb": "Deeds, mortgages, easements, liens and plats, recorded here since 1841. Images are free to view. Recording is $32 for the first page and $5 for each page after.",
+        "status": "online",
+        "lastUpdated": "2026-04-20",
+        "steps": [
+          "[b]What is here.[/b] Every instrument recorded against land in Verity County since 1841. The books are complete. The grantor and grantee indexes are complete. This is the oldest continuous record the county has and it was on the ground floor in 1994, which is the only reason it is still complete.",
+          "[b]Searching.[/b] 1912 to date is indexed in the county system and searchable by name, parcel or instrument number at [url=synth://verity.county.gov/s/land-records]verity.county.gov[/url] or on the terminal at this counter. 1841 to 1911 is the bound index books and the microfilm. There is no shortcut for the older half and there is not going to be one.",
+          "[b]A chain of title is not a search this office does for you.[/b] Staff will show you how the indexes work, will pull a book, and will find an instrument if you have the book and page. Running a chain back is the work of a title searcher or an attorney, and this office will not do it, not because of policy but because getting it wrong costs somebody a house.",
+          "[b]Recording, at the counter.[/b] Bring the original, signed and notarised. It is checked for the things that get instruments rejected: legal description present, signatures matching the names typed under them, notary stamp legible and not expired, and a return address. It is stamped with the date, time and book and page, entered in the index, imaged, and handed back to you. Twenty minutes on a quiet morning.",
+          "[b]Rejections.[/b] About one instrument in twenty comes back unrecorded. No fee is charged for a rejection and you get a letter saying exactly what is wrong. The commonest is an expired notary commission and the second commonest is a legal description copied from a listing rather than from the prior deed.",
+          "[b]Fees.[/b] $32 first page, $5 each additional page, $12 more where a marginal notation on a prior record is required. Plain copies $0.25 a page, certified $4 a page. Viewing images is free. The full list is on the [url=/s/fees]Fee Schedule[/url].",
+          "[b]Plats and surveys.[/b] Filed flat in the map drawers. Copies of an oversized plat are $6 and go out to a print shop, so allow three days. The drawers are catalogued by township and year and the catalogue is a card box, and it is accurate.",
+          "[b]What this office does not do.[/b] Tell you who owns a parcel over the telephone, which the assessor's lookup does better. Tell you whether a deed is valid, which is a lawyer's question. Change a name on a deed, which requires a new instrument. Remove a lien, which requires a satisfaction from the person who filed it."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-40 - Certified Copy Request",
+            "note": "Fillable PDF or at the counter. Give book and page if you have it. If you do not, give names and a year and staff will find it."
+          },
+          {
+            "name": "Recording checklist",
+            "note": "One page, free, on the counter. Nine items. Reading it before you drive in saves about one trip in twenty."
+          },
+          {
+            "name": "Oversized plat copy request",
+            "note": "No form. Ask at the counter. $6, three business days, longer in December."
+          }
+        ]
+      },
+      {
+        "id": "minutes",
+        "name": "Commissioners' Minutes, 1903 to Date",
+        "blurb": "The bound record of what the county commissioners decided. Paper in this building from 1903. Scans of recent years are on the county portal and are not searchable.",
+        "status": "paper only",
+        "lastUpdated": "2026-02-17",
+        "steps": [
+          "[b]What the minutes are.[/b] The official record of the meetings of the county commissioners: who attended, what was moved, who seconded, how each member voted, and what was adopted. They are not an account of the discussion and were never meant to be. A minute records a decision. If you want to know what was said, you had to be there.",
+          "[b]What is held.[/b] Bound volumes from 1903 to date, in the records room, complete except for 1946 to 1958.",
+          "[b]The 1946 to 1958 gap.[/b] Those volumes were in the basement when it flooded in March 1994 and were damaged past use. Partial transcripts were typed in 1996 and 1997 from what could still be read and from the county's own carbon copies where those existed. Roughly two-thirds of those thirteen years survive in some form. The transcripts are marked as transcripts on every page, which is correct and which nobody who cites them ever repeats.",
+          "[b]Recent minutes.[/b] Approved at the following meeting and posted to [url=synth://verity.county.gov/]verity.county.gov[/url] as a scan of a printed document. They are images. They do not search. The signed paper copy filed here is the record and the scan is a convenience.",
+          "[b]Agendas.[/b] Posted the Friday before the meeting, also as a scan. Meetings are the first and third Tuesday at 6:00 p.m. in the courthouse. If you want the agenda as text rather than as a picture of text, telephone this office and ask for it by email, and you will have it inside an hour. That has worked every time anybody has asked and it is not a special favour.",
+          "[b]There is no recording.[/b] No audio, no video, no transcript beyond the minutes. A proposal to record meetings went to the finance committee in 2024 and is still there. This office has no view on it and gets asked for the recordings about twice a month.",
+          "[b]Searching the minutes.[/b] There is no index by subject and never has been. There is an index by date and there is the county's own file of resolutions by number. If you can give this office a subject and a two-year window, staff will look, and it will take a while, and under thirty minutes of it is free."
+        ],
+        "forms": [
+          {
+            "name": "Minutes, 1903 to date",
+            "note": "Bound paper, records room. Not loaned. Copied at $0.25 a page, or photograph them yourself at the counter table for nothing."
+          },
+          {
+            "name": "Transcripts, 1946 to 1958",
+            "note": "Typed 1996-1997 from damaged originals. Marked as transcripts on every page. Incomplete and described as incomplete in the front matter, which is worth reading before citing them."
+          },
+          {
+            "name": "Resolution file, by number",
+            "note": "Card index plus the resolutions themselves. The only subject-adjacent finding aid in this office."
+          }
+        ]
+      },
+      {
+        "id": "assumed-name",
+        "name": "Assumed Name Certificates",
+        "blurb": "The filing a sole trader or partnership makes to do business under a name that is not their own. $25, five years, at the counter.",
+        "status": "counter only",
+        "lastUpdated": "2019-06-11",
+        "steps": [
+          "[b]Who files one.[/b] Anybody trading under a name that is not their legal name and who is not a corporation or a limited company. If the sign on the van says something other than what is on your driving license, this is the filing.",
+          "[b]What it is not.[/b] It is not a trade mark, it does not stop anybody else using the name, it is not a license to trade, and it does not register you with the state. It is a public record of who is behind a name, kept so that somebody who needs to sue you or pay you can find out who you are.",
+          "[b]How.[/b] At the counter. Bring photo identification and the exact name you intend to use, spelled the way you want it to appear forever. $25. Five minutes. You leave with a stamped copy.",
+          "[b]Term.[/b] Five years. It does not renew itself and this office does not send a reminder, which is the only real complaint anybody has about this service and is a fair one. Put it in a calendar.",
+          "[b]Amending or discontinuing.[/b] $10 either way, at the counter. Discontinue it when you stop trading; it costs ten dollars and it closes the file.",
+          "[b]Searching the register.[/b] Free, at the counter, by name or by person. 404 certificates were on file in April 2026. The register has been asked for in full once, and the person who asked found two errors in it and told us, and both were corrected.",
+          "[b]This page was last reviewed in 2019[/b] and the fee and the term have not changed since. The telephone number on the printed leaflet at the counter has."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-34 - Assumed Name Certificate",
+            "note": "Completed at the counter. Requires identification. Not available as a download because it is witnessed here."
+          },
+          {
+            "name": "Form VC-34D - Discontinuance",
+            "note": "One page, $10. Takes two minutes and closes the file properly."
+          }
+        ]
+      },
+      {
+        "id": "notary",
+        "name": "Notary Commissions and Oaths of Office",
+        "blurb": "Filing a notary oath and signature, and swearing in elected and appointed officials. $10 for a notary, nothing for an oath of office.",
+        "status": "counter only",
+        "lastUpdated": "2021-09-13",
+        "steps": [
+          "[b]Notaries.[/b] The state issues the commission. This office files the oath and the signature specimen, which is what makes the commission usable in this county. Bring the commission certificate and identification. $10. It takes about ten minutes.",
+          "[b]Why the signature specimen matters.[/b] When a recorded instrument is challenged, the specimen on file here is what a court compares against. It is also why an expired commission is the commonest reason an instrument is rejected at the recording counter: this office can see the expiry date on the file card.",
+          "[b]Checking a notary.[/b] Free, at the counter or by telephone. Give the name and this office will tell you whether the commission is current here and when it expires. 212 notaries are on file. Six of those are in this building.",
+          "[b]Oaths of office.[/b] Elected and appointed county officials take the oath here before they serve. No fee. The book goes back to 1871 and the current volume is the eleventh. New commissioners are sworn in during the first week of January, usually at half past eight in the morning with four people watching, and that is the whole ceremony and it is the right size for it.",
+          "[b]This page was reviewed in 2021.[/b] The fee is right. The notary count is from the 2026 audit."
+        ],
+        "forms": [
+          {
+            "name": "Form VC-36 - Notary Oath and Signature",
+            "note": "Completed at the counter. Bring the state commission certificate; a photograph of it on a telephone is not accepted for this one and that is the state's rule, not ours."
+          },
+          {
+            "name": "Oath of office",
+            "note": "No form number. Administered at the counter. No fee. No appointment. Bring nothing."
+          }
+        ]
+      },
+      {
+        "id": "burn-permit",
+        "name": "Open Burning Permit - Counter Pickup",
+        "blurb": "The permit is the Fire Marshal's. The paper lives at this counter because this counter is open and theirs is not. Free, good for the calendar year.",
+        "status": "counter only",
+        "lastUpdated": "2026-03-10",
+        "steps": [
+          "[b]The form is here, the permit is not ours.[/b] Open burning in the county is permitted by the County Fire Marshal. The paper form is kept at this counter, you fill it in here, this office stamps and dates it and sends the copy across, and you walk out with the permit. It is free, it takes four minutes, and it is good for the calendar year.",
+          "[b]Read the back.[/b] The conditions are on the reverse and they are the part that matters: distances from a structure and a property line, what may not be burned at all, wind, and the requirement that somebody stays with it. People read the front, sign it and never turn it over, and then the fire department turns up.",
+          "[b]It is not a permit to burn on a burn ban day.[/b] A ban suspends every permit in the county including yours. The [url=synth://veritysheriff.gov/s/contact]Sheriff's Office[/url] and the fire departments know whether there is a ban on; this counter often does not, because nobody tells us.",
+          "[b]Ashkettle, Kerrin and the north end.[/b] The volunteer fire departments up there hold a stack of the same form and it is a shorter drive. Any of them can date and stamp it.",
+          "[b]The online version.[/b] There is an open burning service listed on [url=synth://verity.county.gov/s/burn-permit]verity.county.gov[/url]. It works. It emails you a permit. Several people a year print that, drive here, and ask us to stamp it, and it does not need a stamp and never did."
+        ],
+        "forms": [
+          {
+            "name": "Open burning permit (Fire Marshal's form, no county number)",
+            "note": "Paper only at this counter. Two sides. The conditions are on the second side and that is the side that gets people fined."
+          }
+        ]
+      },
+      {
+        "id": "passport",
+        "name": "Passport Acceptance - Thursday Mornings",
+        "blurb": "This office is a passport acceptance facility. Thursdays, 9:00 a.m. to 11:30 a.m., by appointment only, one appointment per applicant.",
+        "status": "by appointment",
+        "lastUpdated": "2026-06-09",
+        "steps": [
+          "[b]Thursday mornings only.[/b] 9:00 to 11:30, by appointment, twenty minutes each. Telephone 782-1140. This is the only service in this office that must be booked, and it is booked about three weeks out from February to June and walk-in-able in November.",
+          "[b]Every applicant needs their own appointment,[/b] including children. A family of four is four appointments and is most of a morning, and if you telephone and say so, we will put them together.",
+          "[b]Bring.[/b] The completed application, unsigned. Proof of citizenship, original or certified copy, which you will get back. Photo identification and a photocopy of it. A photograph that meets the federal specification. Two separate payments, one to the federal government and one to this office.",
+          "[b]Do not sign the application before you get here.[/b] It is signed in front of the acceptance agent. About one applicant in six arrives with it signed and has to fill in a fresh one at the counter, which is why twenty minutes and not ten.",
+          "[b]If you were born in Verity County[/b] and need a certified birth certificate for this, that is Vital Records on the [url=synth://verity.county.gov/s/records]county portal[/url] or in person, and it is a different counter, and it takes a day, so do it before you book the Thursday.",
+          "[b]This office cannot tell you where your passport is.[/b] Once the packet leaves here it is federal. This office has the date it was sent and the tracking number for the packet and nothing else, and will give you both, and that is genuinely the end of what we can do."
+        ],
+        "forms": [
+          {
+            "name": "Federal application form",
+            "note": "Download it, fill it in, do not sign it. Blank copies are here if you would rather. Black ink."
+          },
+          {
+            "name": "Acceptance appointment",
+            "note": "By telephone only. The online diary was set up in 2022, double-booked four people in a week, and was switched off."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About This Office",
+        "blurb": "Who works here, what this office is the custodian of, what it is not, and how to complain about it.",
+        "status": "online",
+        "lastUpdated": "2026-09-01",
+        "steps": [
+          "[b]The Clerk.[/b] Dana Ulrich, County Clerk, in this office since January 2015, elected in 2014, 2018 and 2022. The clerk is an elected officer and not an employee of the county administration, which matters exactly twice a decade and is confusing for the rest of the time.",
+          "[b]Staff.[/b] Two deputy clerks, Pauline Retz and Milo Sarwar, and one part-time recording clerk. Four people, one counter, ground floor, 14 Depot Street, Gridfall. Telephone 782-1140.",
+          "[b]What this office is the custodian of.[/b] Land records from 1841. Commissioners' minutes from 1903. Marriage records from 1889. Assumed name certificates. Notary oaths and oaths of office. The certified election canvass. The county's own files of resolutions and of recorded instruments. That is the whole list and everything else belongs to somebody else.",
+          "[b]What this office is not.[/b] It is not the clerk of court, who is upstairs and handles filings, small claims and the calendar, and who is also called the clerk. It is not the Board of Elections, in Tessler. It is not Administrative Services, who run [url=synth://verity.county.gov/]verity.county.gov[/url] and most of what people mean when they say \"the county website\". The Clerk of the Board, who keeps the agendas and the minutes for the commissioners' meetings, is a separate appointed position and is not this office either, although the minutes end up here afterwards.",
+          "[b]On a salary list published this September.[/b] A site called Verity County Today ran a list of the twelve highest-paid county employees and gave the county clerk as a name that has never appeared on this office's payroll. Two people have telephoned to ask who that is. The clerk is Dana Ulrich and has been since January 2015, the same list calls the commissioners \"supervisors\", which this county has never had, and this office has not asked for a correction because there is no address on the site to ask at.",
+          "[b]Automated answers.[/b] Questions about this office asked of the county's automated assistant at [url=synth://ask.verity.ai/]VerityAssist[/url] come back fluent and are wrong often enough to matter. It has given the counter hours as Monday to Friday four times that this office knows of, it has told at least four people this year that this office holds the investigation file for a substation fire it dates to 2004, and it has invented a records request fee. None of that is County guidance and this office has reported it twice.",
+          "[b]This site.[/b] Written and updated by the people who work here. Every page has a date on it and the date is honest; where a page says 2019 it means nobody has looked at it since 2019, not that nothing has changed. There is no analytics on this site, no advertising sold by this office, and nothing on it is generated. It is slower to update than it should be and that is a staffing fact rather than a policy.",
+          "[b]Where our records get quoted.[/b] Figures from this office turn up on aggregators, in the county wire's dispatches at [url=synth://veritywire.press/]veritywire.press[/url], in the Ledger's automated output at [url=synth://now.verityledger.com/]now.verityledger.com[/url], and in encyclopedia entries at [url=synth://verity.wiki/wiki/county-government]verity.wiki[/url] and [url=synth://wiki.gridfall.net/wiki/verity-county]wiki.gridfall.net[/url]. Some of it is right. This office will confirm any figure on this site by telephone in about a minute and that offer is open to anybody, including whoever is running the sites that get it wrong.",
+          "[b]Reporters.[/b] Both of the people still doing original reporting in this county file records requests here and both of them do it correctly, which makes them easier to deal with than most law firms. They are at [url=synth://thequarry.news/]The Quarry[/url] and [url=synth://brenners-notebook.email/]Brenner's Verity Notebook[/url]. This office does not decide who is a journalist and does not want to. Everybody gets the same five days."
+        ],
+        "forms": [
+          {
+            "name": "Records retention schedule",
+            "note": "PDF, 31 pages, state schedule. What must be kept, for how long, and what may be destroyed. The answer to \"do you still have it\" is usually in here."
+          },
+          {
+            "name": "Annual report of the clerk, 2025",
+            "note": "PDF, 6 pages. Instruments recorded, licenses issued, fees collected, and the one paragraph a year about the reader in the basement."
+          }
+        ]
+      }
+    ]
+  }
+}

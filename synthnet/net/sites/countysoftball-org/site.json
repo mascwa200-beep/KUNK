@@ -1,0 +1,1334 @@
+{
+  "schema": 1,
+  "domain": "countysoftball.org",
+  "title": "Verity County Adult Softball League",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "Thirty-six teams, five divisions, a rainout recording, four pages of courtesy runner rules, and a Hall of Fame plaque that has been behind the ice cream freezer since 2011.",
+  "tags": ["softball", "league", "gridfall", "county", "recreation", "2026"],
+  "links": ["gridfalltire.com", "marchfield-coop.com", "ashkettle-wx.net", "ashkettlevfd.org", "boards.gridfall.net", "verityledger.com", "now.verityledger.com", "verity.county.gov", "wiki.gridfall.net", "verity.wiki", "thequarry.news", "brenners-notebook.email", "classifieds.verity.net", "marchfieldlibrary.blog", "kestrel-journal.net", "webring.gridfall.net", "gridline.social", "mail.verity.net", "clipvault.tv"],
+  "data": {
+    "navLabel": "League Pages",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "*** RAINOUT LINE 555-0143 *** 2026 REGULAR SEASON IS FINAL *** BANQUET SATURDAY 7 NOVEMBER, ASHKETTLE FIRE HALL, $18 A PLATE, PAY SANDY BY THE 24TH ***"
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Verity County Adult Softball League"
+          },
+          {
+            "kind": "image",
+            "seed": "vcasl-memorial-field1-dusk",
+            "imgKind": "banner",
+            "caption": "Memorial 1 from behind the third base fence, a Tuesday in June. The light pole in the middle of the picture is the one that only comes on when the one behind it is already on."
+          },
+          {
+            "kind": "text",
+            "body": "Thirty-six teams in five divisions. Monday through Thursday nights and Sunday mornings, second week of May to the third week of August, at five fields in four towns.\n\nThe league was organised in 1971 out of what had been the Gridfall Industrial League. It has been run the whole time by a volunteer board of no more than seven people, and the board has never once had seven people on it at the same time.\n\n[b]We are not the county parks department.[/b] Parks owns Gridfall Memorial and mows it. We rent it, one season at a time, and we pay $1,900 for the three fields. If a field is closed that is their decision and not ours, and it goes up on [url=synth://verity.county.gov/]the county services portal[/url] before it gets anywhere near this page."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The rainout line"
+          },
+          {
+            "kind": "text",
+            "body": "[b]555-0143.[/b] It is a recording on a machine in Renee's kitchen and it is the only official word on whether games are on.\n\nShe changes the message by 4:30 on a day it looks bad. If you ring at 4:15 you get yesterday. If the message names a date that is not today, that means the games are on and she has not got to it yet, which is not the same thing as the games being off, and the difference has cost four teams a forfeit since 2019.\n\nDo not ring the fire hall. Do not ring parks. [b]We are not on Gridline[/b], and the account posting our standings over there with our name on it is not us and has never once got a score right. Somebody set it up in 2024 and there is nobody to write to about it.\n\nLightning is the umpire's call at the field, not the recording's. Thirty minutes from the last strike, and the clock restarts every time it flashes. It is in [url=/rules]the rules[/url] at 11.2."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where it finished"
+          },
+          {
+            "kind": "text",
+            "body": "Regular season standings below are [b]final[/b]. Full tables, with runs for and against in the Men's Open, are on [url=/standings]the standings page[/url]."
+          },
+          {
+            "kind": "table",
+            "head": ["DIVISION", "NIGHT", "TEAMS", "FIELDS", "REGULAR SEASON, 2026"],
+            "rows": [
+              ["Men's Open", "Tuesday", "6", "Memorial 1 and 2", "Bortner Propane, 11-2"],
+              ["Men's Recreational", "Monday", "10", "Memorial 1 and 2, Marchfield Legion", "Marchfield Co-op, 10-2"],
+              ["Coed", "Wednesday", "8", "Marchfield Legion, Ashkettle, Memorial 1", "Perrin Hill Orchard, 11-2"],
+              ["Coed B", "Thursday", "6", "New Carrow, Kerrin, Ashkettle", "Kerrin Ag Supply, 10-3"],
+              ["50 and Over", "Sunday morning", "6", "Memorial 1 and 3", "Klahr Radiator, 9-3"],
+              ["Women's", "--", "0", "--", "Not running. Last full season 2019."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Thirty-six teams. There were 71 in 2002 and 58 in 2011. The Coed B division exists because two of the Thursday teams could not field ten people at 6:30 any more and asked for a division where that was normal rather than a forfeit."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Playoffs"
+          },
+          {
+            "kind": "text",
+            "body": "Top eight in Men's Rec, top four everywhere else. Single elimination, no seeding protection, higher seed is the home team and keeps the book.\n\n[b]Men's Recreational quarterfinals, Monday 10 August.[/b]"
+          },
+          {
+            "kind": "table",
+            "head": ["", "GAME", "FINAL"],
+            "rows": [
+              ["Mem 1, 6:15", "(8) Wambold Roofing at (1) Marchfield Co-op", "3-18, 4 inn."],
+              ["Mem 2, 6:15", "(7) Reber Insurance at (2) Hovater Plumbing & Heating", "9-11"],
+              ["Mem 1, 7:45", "(6) The Regulars at (3) Carrow Wireless Repair", "10-12"],
+              ["Legion, 6:30", "(5) Fleeger Electric at (4) Boop's Meat Market", "8-7"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Fleeger Electric was the only road team to win and they did it with nine people and a man from the Regulars who had already played and was standing there.\n\n[b]Men's Open quarterfinals are tonight[/b], 6:15 and 8:00, Memorial 1 and 2. Semifinals Monday the 17th. Championship Thursday the 20th at Marchfield Legion, 7:00, one game, and the plate umpire is Gene Poff because it is always Gene Poff.\n\nResults will be up next Tuesday."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "About this page"
+          },
+          {
+            "kind": "text",
+            "body": "This page is updated [b]Tuesday nights in season[/b] and at no other time. That has been true since 2009 and it is not going to change, because the person who updates it does it after the Tuesday games with the scorecards in front of her and there is no other point in the week when all the scorecards are in one place.\n\nWhat that means in practice: from the third week of August until the first week of April, whatever is on this page is whatever was on it in August. It is not broken. Nobody has died. The season is over.\n\nIt also means the playoff results are not here. They were never here. Somebody asks every February."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[url=/standings]Standings[/url] -- all five divisions, final, with how the ties were broken.", "[url=/schedule]Schedule[/url] -- the full Men's Open schedule as played, with scores. The other four divisions are on the sheet in the team packet and I will tell you why below.", "[url=/fields]Fields[/url] -- where they are, which have lights, and the ground rules, which are different at every one of them.", "[url=/rules]Rules[/url] -- including section 7, the courtesy runner, which is four pages because of two protests and three votes.", "[url=/teams]Teams and sponsors[/url] -- who is on the shirt and what that costs.", "[url=/halloffame]Hall of Fame[/url] -- 1988 to now, and every league champion back to 1971.", "[url=/league]The league[/url] -- officers, fees, umpires, registration, and the bank balance."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What changed, by update"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Tue 11 Aug 2026 -- Final standings, all five. Monday quarterfinals. Tonight's Open quarterfinals listed above.", "Tue 4 Aug 2026 -- Last regular season Tuesday. Bortner beat Kesterke by three and took the division by a game. Gridfall Tire won as well and it made no difference.", "Tue 21 Jul 2026 -- Sponsor page corrected: it is Hovater Plumbing & Heating, not Hovater Plumbing. It has been wrong on here since 2017 and Dale Hovater has mentioned it twice a year for nine years without ever once being sharp about it.", "Tue 14 Jul 2026 -- Nye Mills Feed & Grain beat the Depot Tap 12-4. The Depot Tap had eight players. It counts.", "Tue 30 Jun 2026 -- Nothing to report, which I am putting here so people stop ringing to ask whether the page is broken.", "Tue 23 Jun 2026 -- Sunday 21 June makeups added to the Open schedule. 16 June was 1.4 inches between four and six and Memorial 2 was a pond.", "Tue 7 Apr 2026 -- Registration closed. Thirty-six teams, two short of last year, one short of a Coed B schedule that works.", "Nothing at all between 19 August 2025 and 7 April 2026, and nothing at all between now and next April. See above."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2027"
+          },
+          {
+            "kind": "text",
+            "body": "Registration opens the first Tuesday in March and closes the first Tuesday in April. Team fee will be $340 again unless the parks rent goes up, and the parks rent goes up.\n\nIf your team is folding, tell Toby in [b]March[/b], not in May. A division is a schedule and a schedule with a hole in it is eleven weeks of somebody sitting at a field with nobody to play."
+          },
+          {
+            "kind": "buttons",
+            "label": "Other things worth having open:",
+            "items": [
+              {
+                "label": "Kestrel Road Weather",
+                "seed": "vcasl-btn-wx",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "County Services Portal",
+                "seed": "vcasl-btn-county",
+                "domain": "verity.county.gov"
+              },
+              {
+                "label": "Gridfall Tire & Alignment",
+                "seed": "vcasl-btn-tire",
+                "domain": "gridfalltire.com"
+              },
+              {
+                "label": "Marchfield Co-op",
+                "seed": "vcasl-btn-coop",
+                "domain": "marchfield-coop.com"
+              },
+              {
+                "label": "Ashkettle VFD",
+                "seed": "vcasl-btn-akvfd",
+                "domain": "ashkettlevfd.org"
+              },
+              {
+                "label": "The Gridfall Boards",
+                "seed": "vcasl-btn-boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "Verity Classifieds",
+                "seed": "vcasl-btn-class",
+                "domain": "classifieds.verity.net"
+              },
+              {
+                "label": "The Quarry",
+                "seed": "vcasl-btn-quarry",
+                "domain": "thequarry.news"
+              },
+              {
+                "label": "The Gridfall Webring",
+                "seed": "vcasl-btn-ring",
+                "domain": "webring.gridfall.net"
+              }
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Guestbook"
+          },
+          {
+            "kind": "text",
+            "body": "The guestbook came with the host in 2004. It has not been a guestbook for a long time. I read it in April and again in August and delete the worst of it, and the rest sits there.\n\nTaking it off means editing eight pages by hand and I would rather do the standings."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "AutoLocal_Feed",
+                "time": "2026-08-09",
+                "body": "Readers may recall that the 2004 Gridfall substation incident forced the cancellation of the county's entire summer recreation season. Local officials confirmed at the time that two firefighters lost their lives in the blaze, which was caused by a lightning strike during severe storms. Residents interested in this chapter of local history are encouraged to explore our related coverage."
+              },
+              {
+                "author": "wpennock",
+                "time": "2026-08-11",
+                "body": "The entry above is wrong four times.\n\nThe fire was 11 June 2003, not 2004. It was Substation No. 3 at Depot and Quarry Road. Nobody died. Two Gridfall volunteers were treated for smoke inhalation at County General in Marchfield and released the same afternoon.\n\nThere was no storm. Wind northeast at 8, clear, 0.00 inches on the 10th, the 11th and the 12th, which is on [url=synth://ashkettle-wx.net/]Len Mabry's page[/url] with the date on it.\n\nThe state commission's finding, November 2003, two pages, was insulation degradation consistent with age. Verity Valley has not released its own report.\n\nThe season was not cancelled. Four games were called off on the 11th and made up on the 25th. That is in the book on this website."
+              },
+              {
+                "author": "gridline_digest",
+                "time": "2026-08-12",
+                "body": "Trending in Verity County: \"Verity County Adult Softball League Standings Updated.\" Read more and join the discussion at [url=synth://gridline.social/]gridline.social[/url]. This summary was generated automatically. Source: {{source_domain}} | Confidence: {{score}}"
+              },
+              {
+                "author": "JERSEY DEALS",
+                "time": "2026-08-14",
+                "body": "CUSTOM SPONSOR JERSEYS 60% OFF LIMITED TIME!!! full sublimation 11 piece team set from $89 no minimum [url=synth://teamjersey-deals.top/softball]ORDER NOW[/url] we serve leagues in your area"
+              },
+              {
+                "author": "VerityPulseAI",
+                "time": "2026-07-30",
+                "body": "Summary of this page: The Verity County Adult Softball League was founded in 1988 and operates three fields. The league is currently in its playoff phase. Key takeaway: local recreation remains an important part of community life in the region. Would you like me to summarise the standings?"
+              },
+              {
+                "author": "Marlene at the stand",
+                "time": "2026-07-28",
+                "body": "Somebody left a glove at Memorial 2 Monday night. Black Mizuno, right hand thrower, KLAHR in marker inside the wrist. It is behind the concession counter in the box with the two water bottles and the phone charger and a retainer, which has been there since 2024 and which I am not describing further."
+              },
+              {
+                "author": "countyfacts_bot",
+                "time": "2026-07-19",
+                "body": "Did you know? The Blue Kestrel Diner on County Route 62 closed its doors in 2006 after more than thirty years in business. The building is currently occupied by a phone and tablet repair business. The original neon sign remains in place."
+              },
+              {
+                "author": "LocalHistoryDaily",
+                "time": "2026-07-11",
+                "body": "The historic Blue Kestrel Diner, which burned down in the devastating fire of 1977, was once a hub for Verity County's softball community. Today only memories remain. #LocalHistory #SmallTownAmerica"
+              },
+              {
+                "author": "kfennimore",
+                "time": "2026-06-09",
+                "body": "Your 1988 Hall of Fame class is in the Ledger of Wednesday 14 September 1988, page 11, with the photograph and all five names.\n\nThe paper spells it Wenrich and so does your page. The county wiki spells it Wendrich and has since 2024. So there is no correction here for you. I only wanted the citation somewhere a person could find it, because the plaque is behind a freezer.\n\nThe 1971 to 1979 standings I sent Renee in 2023 are from the same reel, box 14, and the microfilm is legible except for August 1976, which is legible if you are patient."
+              },
+              {
+                "author": "RailFanFacts",
+                "time": "2026-06-02",
+                "body": "Fun fact for softball fans: the Coyne Flats ball field was served by the Verity Rail branch line until trains stopped running in 2009. The rail bed is now the Verity Branch Trail, an 11.2-mile crushed limestone path opened by the county parks department in 2014. Great for a post-game walk!"
+              },
+              {
+                "author": "d.hovater",
+                "time": "2026-05-19",
+                "body": "It is Hovater Plumbing and Heating. It has been Heating since 1994. This is not important and I am not going to bring it up again this year."
+              },
+              {
+                "author": "Anonymous",
+                "time": "2026-05-14",
+                "body": "whoever is telling people 7.9 means you cant run for yourself after youve had a runner needs to actually read 7.9. it says the opposite. it has said the opposite since 2023. four people told me this at one game"
+              },
+              {
+                "author": "Renee",
+                "time": "2026-04-14",
+                "body": "Registration is closed. Thirty-six teams. If you did not get a packet it is because Toby has it and Toby is in Halsey until Thursday."
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The correction from Walt Pennock in Ashkettle above is right on every count and I checked all four of them against the book before I left it up. He did not ask me to and I would guess he does not know I did.\n\nThe entry above his is a machine. So are six more of the ones under it. I am not going to go through and label them. If you cannot tell, the tell is that the machine never mentions a person by name and never mentions a number it could be wrong about."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 61204
+          },
+          {
+            "kind": "text",
+            "body": "The counter is from the free host and reset itself in 2018, so it is eight years of visits and not twenty-two. Nine thousand of it is April, when people find out registration closed."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b] Renee Kinsel, league secretary. Nothing on this site is official until it has been read at a meeting."
+          }
+        ]
+      },
+      {
+        "id": "standings",
+        "name": "Standings",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Standings"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Final, regular season 2026.[/b] Posted Tuesday 11 August. Playoff results are not on this page and will not be; see [url=/]the note on the front page[/url].\n\nPct is wins divided by games played, three places, no rounding up at the last digit. GB is games behind the division leader. RF and RA are runs for and runs against, and they are only kept in the Men's Open, because the Men's Open is the only division where the book comes back to me with both halves filled in."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Men's Open -- Tuesday"
+          },
+          {
+            "kind": "table",
+            "head": ["", "TEAM", "W", "L", "PCT", "GB", "RF", "RA"],
+            "rows": [
+              ["1", "Bortner Propane", "11", "2", ".846", "--", "159", "119"],
+              ["2", "Gridfall Tire & Alignment", "10", "3", ".769", "1", "157", "124"],
+              ["3", "The Depot Tap", "8", "5", ".615", "3", "143", "123"],
+              ["4", "Kesterke Well Drilling", "6", "7", ".462", "5", "151", "160"],
+              ["5", "Sturtz Auto Body", "3", "10", ".231", "8", "103", "147"],
+              ["6", "Nye Mills Feed & Grain", "1", "12", ".077", "10", "126", "166"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Thirteen games each, three games a Tuesday, 39 games, and every one of them is on [url=/schedule]the schedule page[/url] with the score, so the twelve numbers in the last two columns add up and anybody who wants to check them can.\n\nKesterke scored more runs than the Depot Tap and finished two games behind them. Three of their seven losses were by three runs or fewer.\n\nNye Mills won on 14 July. Their run differential is better than Sturtz's and they finished two games behind them. Nobody has ever been able to explain that to a Nye Mills player in a way they accepted."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Men's Recreational -- Monday"
+          },
+          {
+            "kind": "table",
+            "head": ["", "TEAM", "W", "L", "PCT", "GB"],
+            "rows": [
+              ["1", "Marchfield Co-op", "10", "2", ".833", "--"],
+              ["2", "Hovater Plumbing & Heating", "9", "3", ".750", "1"],
+              ["3", "Carrow Wireless Repair", "8", "4", ".667", "2"],
+              ["4", "Boop's Meat Market", "7", "5", ".583", "3"],
+              ["5", "Fleeger Electric", "6", "6", ".500", "4"],
+              ["6", "The Regulars", "6", "6", ".500", "4"],
+              ["7", "Reber Insurance", "5", "7", ".417", "5"],
+              ["8", "Wambold Roofing", "4", "8", ".333", "6"],
+              ["9", "Yeakel Monument Works", "3", "9", ".250", "7"],
+              ["10", "Kerrin Merchants", "2", "10", ".167", "8"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Fifth and sixth.[/b] Fleeger Electric and the Regulars both finished 6-6. Fleeger is fifth on head to head, 2-0. That is the first tiebreaker and it settled it, which is unusual; most years we get to the third one.\n\n[b]Wambold Roofing.[/b] Two of their eight losses are forfeits, 7-0, 8 June and 27 July. A forfeit is a loss with a score on it and it goes in the standings like any other.\n\n[b]Yeakel Monument Works[/b] has thirteen on the roster and nine of them work the same shift at the same place, which is fine in April and is not fine on the Monday after a Sunday that ran long.\n\nTop eight make the playoffs, so ninth and tenth were out on 3 August with a week still to play. We schedule those two against each other on the last Monday on purpose."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coed -- Wednesday"
+          },
+          {
+            "kind": "table",
+            "head": ["", "TEAM", "W", "L", "PCT", "GB"],
+            "rows": [
+              ["1", "Perrin Hill Orchard", "11", "2", ".846", "--"],
+              ["2", "County General 3 North", "10", "3", ".769", "1"],
+              ["3", "Rauhauser Family Dentistry", "8", "5", ".615", "3"],
+              ["4", "Doubek Excavating", "7", "6", ".538", "4"],
+              ["5", "Halsey Pizza House", "6", "7", ".462", "5"],
+              ["6", "Tessler Trucking", "5", "8", ".385", "6"],
+              ["7", "Purkey Small Engine", "4", "9", ".308", "7"],
+              ["8", "Bad Hops", "1", "12", ".077", "10"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "County General 3 North is a hospital floor, not a business, and they are the only team in this league whose roster changes by shift bid. They have finished second four times in six years and have never once had the same nine people twice.\n\nBad Hops have been in this division since 2016 and have not had a winning season. They pay on time, they never forfeit, and they bring a cooler for both benches. If you are a new team wondering who to model yourself on, it is not the Orchard."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coed B -- Thursday"
+          },
+          {
+            "kind": "table",
+            "head": ["", "TEAM", "W", "L", "PCT", "GB"],
+            "rows": [
+              ["1", "Kerrin Ag Supply", "10", "3", ".769", "--"],
+              ["2", "Skurka Concrete", "9", "4", ".692", "1"],
+              ["3", "Mowrer Hauling", "7", "6", ".538", "3"],
+              ["4", "Detwiler Lawn & Landscape", "6", "7", ".462", "4"],
+              ["5", "Ashkettle Lions", "4", "9", ".308", "6"],
+              ["6", "New Carrow Methodist", "3", "10", ".231", "7"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Coed B plays nine fielders instead of ten, the pitcher may be either sex, and the home run limit is two instead of four. It is not a lesser division, it is a division with different arithmetic, and the four teams that asked for it in 2021 were right."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "50 and Over -- Sunday morning"
+          },
+          {
+            "kind": "table",
+            "head": ["", "TEAM", "W", "L", "PCT", "GB"],
+            "rows": [
+              ["1", "Klahr Radiator", "9", "3", ".750", "--"],
+              ["2", "County Highway Retirees", "8", "4", ".667", "1"],
+              ["3", "Stipe Dairy", "7", "5", ".583", "2"],
+              ["4", "Milbrook Merchants", "5", "7", ".417", "4"],
+              ["5", "Coyne Flats", "4", "8", ".333", "5"],
+              ["6", "Halsey 50s", "3", "9", ".250", "6"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "9:00 and 10:15, Memorial 1 and 3, twelve Sundays. Unlimited courtesy runners, no sliding, and the league buys the balls because this division has never asked for anything else.\n\nOldest player in the league is on the Highway Retirees and is 78. He plays second base and he has never once been pulled for a runner, which is his business."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How ties are broken"
+          },
+          {
+            "kind": "text",
+            "body": "In order, and we go down the list until something separates them. This is section 3.8 of [url=/rules]the rules[/url] and it is the only part of the rules nobody argues about, which is because nobody reads it until it is already over."
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": ["Head to head record between the tied teams.", "If more than two are tied, record among all of the tied teams, then drop back to head to head between whoever is still level.", "Fewest forfeits.", "Run differential in games between the tied teams only. Not season differential.", "Runs allowed in games between the tied teams only.", "Coin, at the field, in front of both managers, by the umpire-in-chief. It has happened three times: 1998, 2012 and 2022."]
+          },
+          {
+            "kind": "text",
+            "body": "Season run differential is deliberately not on that list and people ask every year. It rewards running up a score on a team that is short-handed, and this league has a run rule specifically so that does not happen.\n\nThe 2022 coin was for the fourth seed in Coed. Gene flipped it in the parking lot at Marchfield Legion with eleven people watching. Doubek Excavating called tails, got it, and lost the semifinal by nine."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 22843
+          }
+        ]
+      },
+      {
+        "id": "schedule",
+        "name": "Schedule",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Schedule"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What plays when"
+          },
+          {
+            "kind": "table",
+            "head": ["NIGHT", "DIVISION", "FIELDS", "FIRST PITCH"],
+            "rows": [
+              ["Monday", "Men's Recreational", "Memorial 1 and 2, Marchfield Legion", "6:15 / 7:45, Legion 6:30"],
+              ["Tuesday", "Men's Open", "Memorial 1 and 2", "6:15 / 7:45"],
+              ["Wednesday", "Coed", "Marchfield Legion, Ashkettle, Memorial 1", "Legion 6:30 / 8:00, Ashkettle 6:00, Memorial 6:15"],
+              ["Thursday", "Coed B", "New Carrow, Kerrin Consolidated, Ashkettle", "6:30, except Ashkettle 6:00"],
+              ["Sunday", "50 and Over", "Memorial 1 and 3", "9:00 / 10:15"],
+              ["Friday, Saturday", "--", "--", "Nothing. Never has been. Do not ask for a Saturday."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Ashkettle starts at 6:00 because Ashkettle has no lights and a seven-inning slow pitch game takes about an hour and forty in June and about the same in August with less daylight on the end of it. Games there are called for darkness, complete after five innings, and the umpire's watch is the watch.\n\nKerrin Consolidated moved from 6:00 to 6:30 in June because the buses are not back in the lot until twenty past and nobody wants a right fielder parked behind a bus."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Men's Open, 2026, as played"
+          },
+          {
+            "kind": "text",
+            "body": "Thirteen Tuesdays, 12 May to 4 August. Visitor listed first. Scores are from the book the winning manager turned in, which is the book of record under 2.6 whether or not the losing manager agrees with it.\n\n[b]*[/b] Tuesday 16 June was called at 5:10 p.m. after 1.4 inches between four and six. Made up Sunday 21 June, 1:00 and 2:30."
+          },
+          {
+            "kind": "table",
+            "head": ["DATE", "TIME", "FIELD", "GAME", "FINAL"],
+            "rows": [
+              ["12 May", "6:15", "Mem 1", "Nye Mills Feed at Bortner Propane", "8-10"],
+              ["12 May", "6:15", "Mem 2", "Sturtz Auto Body at Gridfall Tire", "1-11"],
+              ["12 May", "7:45", "Mem 1", "Kesterke Well at Depot Tap", "13-14"],
+              ["19 May", "6:15", "Mem 1", "Sturtz Auto Body at Bortner Propane", "12-13"],
+              ["19 May", "6:15", "Mem 2", "Kesterke Well at Nye Mills Feed", "18-5, 5 inn."],
+              ["19 May", "7:45", "Mem 1", "Depot Tap at Gridfall Tire", "7-10"],
+              ["26 May", "6:15", "Mem 1", "Kesterke Well at Bortner Propane", "1-10"],
+              ["26 May", "6:15", "Mem 2", "Depot Tap at Sturtz Auto Body", "12-1"],
+              ["26 May", "7:45", "Mem 1", "Gridfall Tire at Nye Mills Feed", "11-9"],
+              ["2 Jun", "6:15", "Mem 1", "Depot Tap at Bortner Propane", "8-10"],
+              ["2 Jun", "6:15", "Mem 2", "Gridfall Tire at Kesterke Well", "17-10"],
+              ["2 Jun", "7:45", "Mem 1", "Nye Mills Feed at Sturtz Auto Body", "14-15"],
+              ["9 Jun", "6:15", "Mem 1", "Gridfall Tire at Bortner Propane", "13-14"],
+              ["9 Jun", "6:15", "Mem 2", "Nye Mills Feed at Depot Tap", "8-9"],
+              ["9 Jun", "7:45", "Mem 1", "Sturtz Auto Body at Kesterke Well", "9-10"],
+              ["21 Jun*", "1:00", "Mem 1", "Nye Mills Feed at Bortner Propane", "13-17"],
+              ["21 Jun*", "1:00", "Mem 2", "Sturtz Auto Body at Gridfall Tire", "5-12"],
+              ["21 Jun*", "2:30", "Mem 1", "Kesterke Well at Depot Tap", "7-15"],
+              ["23 Jun", "6:15", "Mem 1", "Sturtz Auto Body at Bortner Propane", "1-11"],
+              ["23 Jun", "6:15", "Mem 2", "Kesterke Well at Nye Mills Feed", "18-16"],
+              ["23 Jun", "7:45", "Mem 1", "Depot Tap at Gridfall Tire", "18-12"],
+              ["30 Jun", "6:15", "Mem 1", "Kesterke Well at Bortner Propane", "8-7"],
+              ["30 Jun", "6:15", "Mem 2", "Depot Tap at Sturtz Auto Body", "9-1"],
+              ["30 Jun", "7:45", "Mem 1", "Gridfall Tire at Nye Mills Feed", "10-6"],
+              ["7 Jul", "6:15", "Mem 1", "Depot Tap at Bortner Propane", "6-14"],
+              ["7 Jul", "6:15", "Mem 2", "Gridfall Tire at Kesterke Well", "12-16"],
+              ["7 Jul", "7:45", "Mem 1", "Nye Mills Feed at Sturtz Auto Body", "4-11"],
+              ["14 Jul", "6:15", "Mem 1", "Gridfall Tire at Bortner Propane", "13-7"],
+              ["14 Jul", "6:15", "Mem 2", "Nye Mills Feed at Depot Tap", "12-4"],
+              ["14 Jul", "7:45", "Mem 1", "Sturtz Auto Body at Kesterke Well", "13-10"],
+              ["21 Jul", "6:15", "Mem 1", "Nye Mills Feed at Bortner Propane", "13-18"],
+              ["21 Jul", "6:15", "Mem 2", "Sturtz Auto Body at Gridfall Tire", "13-14"],
+              ["21 Jul", "7:45", "Mem 1", "Kesterke Well at Depot Tap", "13-17"],
+              ["28 Jul", "6:15", "Mem 1", "Sturtz Auto Body at Bortner Propane", "11-13"],
+              ["28 Jul", "6:15", "Mem 2", "Kesterke Well at Nye Mills Feed", "15-10"],
+              ["28 Jul", "7:45", "Mem 1", "Depot Tap at Gridfall Tire", "10-12"],
+              ["4 Aug", "6:15", "Mem 1", "Kesterke Well at Bortner Propane", "12-15"],
+              ["4 Aug", "6:15", "Mem 2", "Depot Tap at Sturtz Auto Body", "14-10"],
+              ["4 Aug", "7:45", "Mem 1", "Gridfall Tire at Nye Mills Feed", "10-8"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Two things in that table that people asked about.\n\n[b]19 May, Kesterke 18 Nye Mills 5 in five.[/b] That is the run rule, twelve after five, and it is the only one in the division all year. Kesterke's manager took his best three out after the fourth and it did not matter.\n\n[b]14 July, Nye Mills 12 Depot Tap 4.[/b] The Depot Tap had eight and played with eight rather than forfeit, which under 4.3 means an out every time the ninth and tenth spots come up. That is two automatic outs an inning and it is why the score looks like that. They still get the credit for showing up, and Nye Mills still gets the win, and those are both true at once."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The other four divisions"
+          },
+          {
+            "kind": "text",
+            "body": "They are not on this page and I am going to be straight about why.\n\nThe Monday, Wednesday, Thursday and Sunday schedules go out in the team packet in April as a single sheet, one side, one division per quarter of the page. Forty-four games a week across four divisions is about nine hundred lines over a season, and putting it on here means retyping it, and retyping it means getting it wrong somewhere, and getting it wrong somewhere means four people driving to Kerrin on a night when there is nothing at Kerrin.\n\nI did it through 2021. In 2021 I put the Coed B sheet up with two Thursdays transposed and two teams sat at New Carrow in the rain for forty minutes. I have not done it since.\n\n[b]The sheet in the packet is the schedule.[/b] If you have lost yours, ring Toby, or ring me and I will read it to you."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Postponements and makeups"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["The call is at 4:30 on the [b]rainout line, 555-0143[/b]. Nowhere else.", "A game called before the first pitch is a postponement. A game called after four and a half innings with the home team ahead, or five complete, is a [b]complete game[/b] and the score stands.", "A game called between the first pitch and five innings is a [b]suspended game[/b] and it restarts from the point it stopped, same lineups, same count, on whatever date we can find. It does not start over. People have played four innings twice in this league and it was nobody's fault but they did not enjoy it.", "Makeups go on the first open slot, which is usually a Sunday afternoon at Memorial or a Friday, in which case it is the only Friday of the year and it is a makeup.", "A team that cannot make a makeup date forfeits it. There is no second makeup and there is nowhere to put one.", "Nothing is made up after the last regular-season night. A division that cannot complete its schedule finishes on percentage."]
+          },
+          {
+            "kind": "text",
+            "body": "2026 had one postponed night, 16 June, and one suspended game, Coed at Marchfield Legion on 1 July, restarted 8 July in the top of the fourth with Doubek Excavating batting and two out. Everybody turned up and it took thirty-five minutes.\n\nBefore you drive out on a day that looks bad: Len Mabry's rain gauge on Kestrel Road is at [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url] and is the closest reading anybody publishes to the Ashkettle field. It does not tell you whether the game is on. The recording tells you whether the game is on."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 31776
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "name": "Fields",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Fields"
+          },
+          {
+            "kind": "text",
+            "body": "Five fields in four towns, and none of them is like any of the others. The ground rules below are the league's and they are read to both managers at the plate meeting, which takes ninety seconds and which people still skip."
+          },
+          {
+            "kind": "table",
+            "head": ["FIELD", "WHERE", "LIGHTS", "FENCE", "OWNER"],
+            "rows": [
+              ["Gridfall Memorial 1", "Depot St at Fifth, Gridfall", "Yes", "300 ft, chain link", "County parks"],
+              ["Gridfall Memorial 2", "Same park, north end", "Yes", "295 ft, chain link", "County parks"],
+              ["Gridfall Memorial 3", "Same park, behind the maintenance shed", "No", "Rope at 275 ft", "County parks"],
+              ["Marchfield Legion Field", "Water St behind Post 431, Marchfield", "Yes", "310 ft, wood and chain link", "American Legion Post 431"],
+              ["Ashkettle Village Park", "Route 62 at Pine, Ashkettle", "No", "Snow fence at 280 ft", "Ashkettle village"],
+              ["New Carrow Township Park 1", "Carrow Rd, half a mile past the school", "No", "290 ft", "Carrow Township"],
+              ["Kerrin Consolidated School", "School lot, Kerrin", "No", "No fence. Rope on posts.", "Kerrin school district"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Gridfall Memorial Park"
+          },
+          {
+            "kind": "image",
+            "seed": "vcasl-memorial-3-shed",
+            "imgKind": "photo",
+            "caption": "Memorial 3, looking from the maintenance shed toward what would be right field if there were a right field. The rope goes up on Sunday morning and comes down on Sunday morning."
+          },
+          {
+            "kind": "text",
+            "body": "Depot Street at Fifth, in Gridfall, which is the same Depot Street that runs out to the substation yard but a mile and a half the other way. Three fields, one parking lot, one concession stand, two portable toilets that the county pumps on the first and third Wednesday.\n\n[b]Fields 1 and 2 have lights.[/b] They go on at dusk from a timer in the shed that is set by hand in May and not touched again, so in May they come on late and in August they come on early. The bank on the third base side of Field 1 has one pole where the top four fixtures have not worked since 2019 and there is a shadow in left centre that everybody plays and nobody likes.\n\n[b]Field 3 has no lights, no dugouts and no fence.[/b] It is a rope on eleven steel posts at about 275 feet, put up Sunday morning and taken down after the second game. It is the 50 and Over field and it is also where the Monday overflow goes when a makeup has to happen.\n\nGround rules, all three fields:"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Ball in the equipment shed doorway on Field 2, third base side: two bases from the time of pitch.", "Ball that goes through the gap between the backstop and the fence on Field 1, which is four inches and which the parks department has been told about since 2015: dead, one base.", "Field 3 rope: ball over on the fly is a home run. Ball that goes under the rope is in play until it stops. Ball that knocks a post over is in play and so is the post.", "The maintenance shed itself is out of play. So is anything on the far side of it, which is where the county keeps the salt."]
+          },
+          {
+            "kind": "text",
+            "body": "The league pays parks $1,900 for the season for all three, which is the rent, the lights and the toilets, and does not include the grass, which parks cuts on a schedule that is theirs.\n\nThe Quarry published the parks department's 2026 field maintenance contract in March, all eleven pages, which is the first time anybody outside the department has seen it. It is at [url=synth://thequarry.news/]thequarry.news[/url] and it explains, among other things, why Memorial 3 has no infield lip: cutting one is in the contract as an annual task and it has been carried forward as deferred every year since 2017."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Marchfield Legion Field"
+          },
+          {
+            "kind": "text",
+            "body": "Water Street behind Post 431. It is the best field in the county and it is not close.\n\nReal dugouts with a roof. A scoreboard that works. An infield that somebody drags between games without being asked. Lights that come on when you throw the switch inside the door and go off at eleven whatever is happening, which is in the rental agreement and which ended a championship game in 2013 in the top of the eighth.\n\nThe Legion charges the league [b]$480[/b] for the season, which is under what it costs them, and they have raised it once in fourteen years.\n\nGround rules: ball in the dugout is dead, one base. Ball that hits the scoreboard on the fly in left is a home run and it has happened four times. Ball over the wood fence in right and into the lot is a home run and it is also somebody's windscreen, and the league does not pay for windscreens and neither does the Legion."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Ashkettle Village Park"
+          },
+          {
+            "kind": "text",
+            "body": "Route 62 at Pine, in the village. No lights, which is why everything there starts at 6:00.\n\nIt is a village park, so the backstop is 1968 and the bleachers are three rows and the snow fence in the outfield is held up by whatever the village had. The infield is good. Somebody in Ashkettle drags it and it is not the village and nobody has ever told us who.\n\nThe [url=synth://ashkettlevfd.org/]Ashkettle fire department[/url] runs the chicken stand here on the Fourth of July and the parking is theirs that day. The league does not schedule the Fourth, which is a Saturday this year anyway.\n\nGround rules: the tree behind third is in play and a ball in it is in play until it comes out. A ball that stays in it is two bases. Ball through the snow fence rather than over is two bases. Ball into the pavilion is dead, two bases. There is a scorer's box behind the backstop with an AM radio in it that was there before anybody currently in this league, and it stays in the box."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "New Carrow Township Park"
+          },
+          {
+            "kind": "text",
+            "body": "Carrow Road, half a mile past the school, on the left, and if you are coming from Gridfall you will go past it because the sign faces the other way.\n\nTwo fields, one usable. Field 2 has a dip in right centre, eight feet across and four inches deep, there since the township regraded the drainage in 2014, and it turned an ankle in 2019 and a knee in 2022. We do not schedule Field 2 and we have said in writing that we will not until it is filled. The township has agreed twice.\n\nField 1 is fine. No lights, 6:30 start, and the mosquitoes after eight are a factor in how fast the last three innings go."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Kerrin Consolidated School"
+          },
+          {
+            "kind": "text",
+            "body": "The school field, in the lot behind the bus garage. The district lets the league use it for nothing and in exchange the league puts $200 a year into the school athletic fund, which is not nothing and is also not rent and both sides prefer it that way.\n\nNo fence. A rope on posts at about 270, which the Coed B teams put up and take down themselves. Available after 6:30 because the buses come back at twenty past.\n\nGround rule: anything hit past the rope on the ground is two bases and not a home run, which is the opposite of Memorial 3 and which catches somebody out every single May."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Fields we do not use any more"
+          },
+          {
+            "kind": "table",
+            "head": ["FIELD", "USED", "WHY NOT"],
+            "rows": [
+              ["Coyne Flats, by the freight house", "1974-2020", "Township stopped mowing it in 2021. The backstop is still there."],
+              ["Halsey Borough Park", "1988-2022", "Borough asked for a certificate of insurance naming them as additional insured. Our carrier will not write it. Neither side did anything wrong."],
+              ["Milbrook Elementary", "1996-2016", "School consolidated to Kerrin. The field is mowed and it is forty minutes from Gridfall."],
+              ["Verity Valley field, Depot Rd", "1979-1994", "Utility field, utility team, utility stopped sponsoring. It is a parking lot."],
+              ["Gridfall Ironworks field", "1954-1984", "The Ironworks closed. The land is the county highway garage."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]Coyne Flats.[/b] The field was next to the freight house on the branch line, and people keep running two things together that are thirteen years apart.\n\nThe last revenue freight on the Marchfield to Coyne Flats branch ran on [b]14 March 2008[/b]. The league kept playing at Coyne Flats for twelve more seasons after that. What ended it was the township taking the mowing off its list in 2021.\n\nThe rail bed is the Verity Branch Trail now, 11.2 miles, opened by parks in 2014. If you want the actual history of the line rather than whatever a feed bot has decided it was, it is on [url=synth://wiki.gridfall.net/]the Gridfall wiki[/url] and it is sourced."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 18490
+          }
+        ]
+      },
+      {
+        "id": "rules",
+        "name": "Rules",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Playing rules"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Adopted at the annual meeting, 10 February 2026. Supersedes all prior versions.[/b]\n\nThe league plays under the current USA Softball slow pitch rules [b]except[/b] where this document says otherwise. Where this document is silent, the book governs. Where this document and the book disagree, this document governs, and the umpire has the book in his bag so you can see exactly what you are overruling.\n\nSection 7 is four pages long. Section 7 is four pages long because of two protests and three votes, and if you read nothing else read section 7."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "1. Eligibility"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["1.1 Eighteen and over on the date of the first game. No exceptions and no parental signature that makes it all right.", "1.2 Rosters are twenty maximum, ten minimum, filed with the secretary before the second game. A player not on the filed roster is an ineligible player and a game he plays in is a forfeit, whether or not anybody noticed at the time.", "1.3 Roster additions accepted until [b]1 July[/b]. After 1 July a roster is closed. A team that drops below ten after 1 July may petition the board and the board has granted it every time it has been asked and would like that not to become the plan.", "1.4 A player may be on one roster. One. A player who appears on two is off both for the season and both teams forfeit the games he played in. This has happened twice, 2008 and 2017, and both times the player did not know it was a rule.", "1.5 50 and Over: 50 by 31 December of the playing year. Two players per roster may be 48 or 49 and they must be listed as such on the filed roster.", "1.6 Coed: at least four of each sex on the field at all times, in an alternating batting order. Coed B: at least three of each sex, and the order does not have to alternate.", "1.7 A player added to a roster after 1 June must play in four regular season games to be eligible for the playoffs. The book is the record of that and the book is the winning manager's."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "2. The game"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["2.1 Seven innings, or 55 minutes, whichever comes first. No new inning after 55 minutes. An inning in progress is finished.", "2.2 Run rule: 20 after 3 complete, 15 after 4, 12 after 5. The home team gets its at-bat.", "2.3 Ties: at 55 minutes a tie stands as a tie in the regular season. In the playoffs, extra innings with the international tiebreaker -- last batted out starts at second.", "2.4 Ten fielders. Four outfielders, and the fourth is not a rover and may not stand in the infield dirt before the pitch.", "2.5 Free substitution on defence. The batting order is the batting order and it does not change once the game starts, except for injury under 2.7.", "2.6 [b]The winning manager's book is the book of record.[/b] Both keep one. If they differ, the winner's governs and the difference should have been settled at the half inning it happened in, not at the end.", "2.7 Injury: a player who leaves injured is an out in his spot unless the team is at exactly ten, in which case his spot is skipped without penalty. A player who leaves for any other reason is an out in his spot every time it comes up.", "2.8 Home team is the higher seed in the playoffs, and in the regular season it is whoever is listed second on the schedule sheet. It is not a coin. It has not been a coin since 1999."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "3. Pitching, bats and balls"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["3.1 Arc is six to twelve feet. The umpire calls illegal at the pitch, the batter may hit it anyway, and if he hits it the call is off.", "3.2 One foot on the rubber at release. The pitcher's box is the box on the field, and at Kerrin, where there is no box, it is the rubber.", "3.3 Strike mat behind the plate. A pitch that hits the mat is a strike. A pitch that hits the plate is not. This is the single most argued line in this document and it is not going to change.", "3.4 Three strikes, four balls, and a foul ball on the third strike is an out.", "3.5 [b]Bats[/b] must carry a current USA Softball certification mark and must not be on the withdrawn list. The umpire's list is the league list. It is a laminated sheet and it is dated.", "3.6 The list in the umpires' bags is dated [b]March 2019[/b]. If your bat is newer than the sheet, bring something that shows the stamp, or expect to be told no. Two bats were pulled at Memorial on 6 July, both the same model, both perfectly legal, neither on a seven-year-old piece of paper. That is the league's fault and not the umpire's and the board has been told to fix it four years running.", "3.7 Balls are 12 inch, .44 COR, 375 compression, men's; 11 inch women in coed. The league supplies two new per game and the home team keeps the old ones.", "3.8 Tie-breaking procedure for final standings is on [url=/standings]the standings page[/url] and is part of this section."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "4. Forfeits and short teams"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["4.1 Game time is game time. Ten minutes' grace. At ten minutes past, it is a forfeit, 7-0.", "4.2 A team may start and finish with [b]nine[/b]. The tenth spot in the order is an automatic out every time it comes round.", "4.3 A team may play with [b]eight[/b] by agreement of both managers, recorded in the book. The ninth and tenth spots are both automatic outs. Two outs an inning is a real penalty and teams take it anyway, which is the right instinct and the league does not discourage it.", "4.4 Fewer than eight is a forfeit and no agreement makes it otherwise.", "4.5 First forfeit of a season: nothing but the loss. Second: $25 to the league. Third: the board reviews the team's standing for the following year. No team has ever been put out for forfeits and two have been talked to."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "5. Home runs"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["5.1 Men's Open: unlimited.", "5.2 Men's Recreational: four per team per game. The fifth and every one after is an out, not a single, and the batter-runner is out at the moment the ball leaves the park.", "5.3 Coed: four per team per game, same penalty.", "5.4 Coed B: two per team per game.", "5.5 50 and Over: four per team per game.", "5.6 An over-the-fence ball that would be the penalty home run is a dead ball out and no runner advances. A ball hit out with the bases loaded on a team that is at its limit is one out and three runners standing where they were."]
+          },
+          {
+            "kind": "text",
+            "body": "The limit is four and not three, and it is four because in 2015 it was three and the Men's Rec division scored fourteen percent fewer runs and nobody enjoyed it. It went back to four in 2016 by a vote of 19 to 2."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "6. Baserunning"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["6.1 No stealing. No leaving the base until the ball is hit.", "6.2 [b]No sliding into first.[/b] No sliding at all in the 50 and Over division, at any base, and a slide there is an out and it is not a warning.", "6.3 Commitment line, twenty feet up the third base line. Past it, the runner may not go back, and the play at the plate is a force on the plate, not a tag.", "6.4 Safety base at first: the runner uses the orange, the fielder uses the white. A runner who touches white on a play from the infield is out. A runner rounding to go to second uses either.", "6.5 A runner who makes contact with a fielder making a play is out and may be ejected. This is a recreational league and the umpires have been told to use the second half of that sentence."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "7. Courtesy runners"
+          },
+          {
+            "kind": "text",
+            "body": "Read this whole section. Every line in it is here because of something that happened at a field in this county, and two of the clauses are here because of a protest that was upheld.\n\nA courtesy runner is not a substitution. It does not use a substitution, it does not change the batting order, and the player run for is not out of the game. That sentence is the one that, once understood, resolves about eighty percent of the arguments this section causes."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "7.1 to 7.4 -- who, and how many"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]7.1[/b] A courtesy runner may be used for any player who has reached base safely and is standing on it with the ball dead. It does not have to be declared in advance, it does not require an injury, and no reason need be given. A team that wants one asks for one.", "[b]7.2[/b] The courtesy runner shall be [b]the player who made the last out[/b]. If the last out was made by the player now on base, it is the player who made the out before that.", "[b]7.3[/b] [b]One per inning per team[/b] in Men's Open, Men's Recreational, Coed and Coed B. [b]Unlimited[/b] in 50 and Over, where the runner may be any player not currently on base and the last-out rule does not apply.", "[b]7.4[/b] In Coed and Coed B the courtesy runner must be the same sex as the player being run for. If the last out was made by a player of the other sex, it is the last out of the correct sex."]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "7.5 to 7.9 -- the four that get protested"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]7.5[/b] A courtesy runner [b]must be requested and in place before the next pitch[/b]. Once the pitcher has released the next pitch, the runner on base is the runner, and no protest, appeal or apology brings the courtesy runner back. If you are still looking for someone to run when the pitcher is on the rubber, you have missed it.", "[b]7.6[/b] [b]A courtesy runner may not be run for.[/b] If the courtesy runner is hurt, he stays or the team takes an out in the spot of the player he ran for.", "[b]7.7[/b] [b]If the courtesy runner's turn at bat comes up while he is on base, he is removed from the base and goes and bats.[/b] The base is then taken by the next eligible courtesy runner -- that is, the player who made the out before the one who is now batting. The original player, the one who was run for, does [b]not[/b] come back to the base. The original player is done running for that inning and that is all he is done with.", "[b]7.8[/b] A courtesy runner who is on base when the inning ends has no further status. Nothing carries over. Each inning starts clean.", "[b]7.9[/b] [b]A player who has had a courtesy runner run for him may run for himself later in the same game, in the same inning, on the same night, as many times as he likes.[/b] There is no rule that taking a courtesy runner retires a player from the bases. There has never been such a rule in this league. It is said out loud at a field in this county roughly four times a week and it is wrong every time."]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "7.10 to 7.12 -- the rest"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]7.10[/b] A courtesy runner may not be used for the batter-runner. The runner enters when the ball is dead and the player is standing on the base. You may not run for a man at the plate, and you may not put the runner at first while the ball is still live.", "[b]7.11[/b] The courtesy runner does not count against free substitution, does not count as an entry or re-entry, and does not appear in the book except as a note in the margin. The out, when it happens, is charged to the batter in the order, not to the runner.", "[b]7.12[/b] A courtesy runner used illegally is not an out. Play stands, the runner is corrected, and if it happened because a team was trying it on, the umpire may warn or eject under 10.3. It is almost never a team trying it on. It is almost always 7.7."]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Why this section is four pages"
+          },
+          {
+            "kind": "text",
+            "body": "Because of these, in order.\n\n[b]2009, Coed, Marchfield Legion.[/b] A team used three courtesy runners in an inning. The rule then said only \"a courtesy runner may be used\" and did not say how many. Protest upheld, game replayed from the point of the infraction, and 7.3 was written that winter.\n\n[b]2011.[/b] The board raised the limit to two per inning on a trial. It made games run eleven minutes longer on average and the 55 minute limit started cutting innings in half. Reverted at the 2014 meeting, with the 50 and Over exception written in as the actual fix.\n\n[b]2013, Men's Rec, Memorial 2.[/b] A courtesy runner came up to bat while standing on second. Both managers, the umpire and everybody else at the field had a different view of what happens next. There were four views and none of them was written down anywhere. The protest was upheld on the ground that there was no rule to have broken. 7.7 was written that winter and it is the longest clause in this document.\n\n[b]2019.[/b] Somebody proposed a \"clarification\" reading that a player who takes a courtesy runner \"shall be considered unable to run for the remainder of the game.\" It passed 12 to 9 on a show of hands at half past nine at night. Teams with eleven players ran out of legal runners in the fourth inning. One game that July was played by a team with three men who were, by the letter of it, forbidden to advance past the base they were standing on.\n\n[b]2023.[/b] Repealed, 24 to 1, and 7.9 was written to say the opposite in the plainest words the board could find. It is still said at fields. Four people said it to one manager at one game this May and he wrote it in the guestbook on the front page of this site, where I have left it."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Can I"
+          },
+          {
+            "kind": "table",
+            "head": ["SITUATION", "ANSWER", "CLAUSE"],
+            "rows": [
+              ["Run for a man who just singled, before the next pitch", "Yes", "7.1, 7.5"],
+              ["Run for a man who singled, after the next pitch", "No", "7.5"],
+              ["Run for the batter, at the plate, because his knee is bad", "No", "7.10"],
+              ["Use a second courtesy runner in the same inning, Men's Rec", "No", "7.3"],
+              ["Use a second courtesy runner in the same inning, 50 and Over", "Yes", "7.3"],
+              ["Run for a man, then have that same man run for himself in the sixth", "Yes", "7.9"],
+              ["Put in a courtesy runner for a courtesy runner", "No", "7.6"],
+              ["Take a woman as courtesy runner for a man in Coed", "No", "7.4"],
+              ["Keep the courtesy runner on base when his own turn to bat comes", "No, he goes and bats", "7.7"],
+              ["Put the original player back on the base at that point", "No", "7.7"],
+              ["Protest a game over an illegal courtesy runner", "You may. You will lose.", "7.12, 9.1"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Things people say at fields that are not the rule"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["\"Once you take a runner you are done running.\" Not the rule. 7.9. It was the rule for four seasons, 2019 to 2022, which is why it will not die.", "\"You need an injury.\" Not the rule. 7.1. You need a base.", "\"It has to be the slowest man on your team.\" Not the rule, not ever, and it is the last out.", "\"The runner counts as a sub so you lose him for the rest of the game.\" Not the rule. 7.11.", "\"You can ask after the pitch if the umpire says it is all right.\" The umpire cannot say it is all right. 7.5.", "\"It is the same in USA Softball.\" It is not. This is a league exception and it always has been."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "8. Playoffs"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["8.1 Top eight in Men's Recreational. Top four in every other division. Single elimination, higher seed is home and keeps the book.", "8.2 No time limit in the championship game. The time limit applies in every other playoff game.", "8.3 A player must be on the filed roster and, if added after 1 June, must have played four regular-season games. See 1.7.", "8.4 A playoff game is not postponed for anything but weather and the field being unplayable. Not for a wedding, a shift, or a holiday, all three of which have been asked."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "9. Protests"
+          },
+          {
+            "kind": "text",
+            "body": "[b]9.1[/b] A protest must be lodged with the plate umpire [b]before the next pitch[/b], stated as a rule, and written in both books at the time with the inning, the score and the situation. A protest lodged after the game is not a protest, it is a complaint, and the board will listen to it and do nothing.\n\n[b]9.2[/b] Judgement is not protestable. Whether the ball hit the mat is judgement. Whether a courtesy runner was legal is a rule. Almost everybody who has ever protested in this league has protested judgement.\n\n[b]9.3[/b] Protest fee is [b]$20[/b], cash, to the umpire at the time, returned if the protest is upheld. The fee exists because before it existed there were nine protests in 2007 and after it existed there were two in 2008.\n\n[b]9.4[/b] The board rules within seven days. If upheld, the game resumes from the point of the infraction on a date the board sets. If the game cannot be resumed, it is replayed.\n\n[b]9.5[/b] Protests since 2009: eleven. Upheld: four. Two of the four are the 2009 and 2013 courtesy runner protests, and they are why section 7 reads the way it does. The other two were both an ineligible player under 1.2 and both were the same team."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "10. Conduct"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["10.1 One warning per team per game for language. After that the umpire ejects, and the umpire does not have to warn the individual first.", "10.2 Ejection is that game plus the next one. No appeal, no exceptions, and the board does not hear it.", "10.3 Contact with an umpire, of any kind, at any time, is the season and the following season. This has happened once, in 2004, and the man came back in 2006 and has played every year since and umpires the 50 and Over division now.", "10.4 Alcohol is not permitted at Gridfall Memorial or at Kerrin. It is the county's rule at Memorial and the school district's at Kerrin and it is not the league's and we enforce it anyway because we would like to keep renting them."]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "11. Weather"
+          },
+          {
+            "kind": "text",
+            "body": "[b]11.1[/b] Before 4:30, the call is the league's, on the rainout line, 555-0143. After 4:30 and at the field, the call is the plate umpire's and nobody else's.\n\n[b]11.2[/b] [b]Lightning: thirty minutes from the last visible strike or audible thunder, and the thirty minutes restarts every time.[/b] Everybody off the field and off the metal bleachers. This is not the umpire being careful and it is not open to a vote by two managers who want to finish.\n\n[b]11.3[/b] Darkness at Ashkettle, New Carrow, Kerrin and Memorial 3: the umpire's call, and a game is complete at five innings, or four and a half with the home team ahead.\n\n[b]11.4[/b] Heat: the league has never called a game for heat and has twice moved a Sunday to 8:00 a.m.\n\n[b]11.5[/b] A field that is unplayable is unplayable whether or not it is raining at that moment. Standing water in front of the plate at Memorial 2 takes about six hours to go and there is no drain."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Printed copies[/b] of this document, stapled, go out in the team packet. If you want another one, they are in the box at the meeting. Please do not ask me to send you one, because sending it means a printer and I do not have a printer.\n\n[b]Last updated Tuesday 11 August 2026[/b] -- although the rules themselves have not changed since 10 February and will not change until the next annual meeting."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 27351
+          }
+        ]
+      },
+      {
+        "id": "teams",
+        "name": "Teams & Sponsors",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Teams and sponsors, 2026"
+          },
+          {
+            "kind": "text",
+            "body": "Thirty-six teams. Twenty-six carry one business's name on the shirt. Four carry a club, a church or a handful of businesses sharing the back. Six carry nothing at all, and those six pay their own $340 out of eleven or twelve people's pockets, which is about thirty dollars each and which is the real price of adult softball in this county."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Men's Open -- Tuesday"
+          },
+          {
+            "kind": "table",
+            "head": ["TEAM", "SPONSOR SINCE", "MANAGER", "SHIRTS"],
+            "rows": [
+              ["[url=synth://bortner-propane.synth/]Bortner Propane[/url]", "1992", "Chad Bortner", "Navy, white letters"],
+              ["[url=synth://gridfalltire.com/]Gridfall Tire & Alignment[/url]", "1996", "Ken Ruhl", "Red, black letters"],
+              ["[url=synth://depot-tap.synth/]The Depot Tap[/url]", "1999", "Mike Sowle", "Black"],
+              ["[url=synth://kesterke-well.synth/]Kesterke Well Drilling[/url]", "1985", "Bud Kesterke Jr.", "Grey, green letters"],
+              ["[url=synth://sturtz-autobody.synth/]Sturtz Auto Body[/url]", "2009", "Denny Sturtz", "Orange. It was not a choice."],
+              ["[url=synth://nyemills-feed.synth/]Nye Mills Feed & Grain[/url]", "2018", "Alan Reber", "Kelly green"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Men's Recreational -- Monday"
+          },
+          {
+            "kind": "table",
+            "head": ["TEAM", "SPONSOR SINCE", "MANAGER", "SHIRTS"],
+            "rows": [
+              ["[url=synth://marchfield-coop.com/]Marchfield Co-op[/url]", "1973", "Terry Wambold", "Royal blue"],
+              ["[url=synth://hovater-ph.synth/]Hovater Plumbing & Heating[/url]", "2004", "Dale Hovater", "Maroon"],
+              ["[url=synth://carrow-wireless.synth/]Carrow Wireless Repair[/url]", "2023", "Josh Fillhart", "Light blue"],
+              ["[url=synth://boops-meats.synth/]Boop's Meat Market[/url]", "1988", "Dwight Boop", "White, red letters"],
+              ["[url=synth://fleeger-electric.synth/]Fleeger Electric[/url]", "2011", "Randy Fleeger Jr.", "Yellow"],
+              ["The Regulars", "no sponsor", "Pat Yeakel", "Whatever they had"],
+              ["[url=synth://reber-insurance.synth/]Reber Insurance Agency[/url]", "1997", "Sandy Reber", "Forest green"],
+              ["[url=synth://wambold-roofing.synth/]Wambold Roofing[/url]", "2006", "Neal Wambold", "Black, orange letters"],
+              ["[url=synth://yeakel-monument.synth/]Yeakel Monument Works[/url]", "1981", "Russ Yeakel", "Grey"],
+              ["Kerrin Merchants", "no single sponsor", "Tim Detwiler", "Six businesses on the back"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]The Regulars[/b] have been in this league since 1994 under four names and no sponsor at all. They are called the Regulars because for eleven years the printer asked what to put on the shirts and Pat Yeakel said \"just the regular.\"\n\n[b]Kerrin Merchants[/b] carry six names on the back at $60 each, which is a perfectly good way to do it and which two more teams should copy."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coed -- Wednesday"
+          },
+          {
+            "kind": "table",
+            "head": ["TEAM", "SPONSOR SINCE", "MANAGER", "SHIRTS"],
+            "rows": [
+              ["[url=synth://perrinhill-orchard.synth/]Perrin Hill Orchard[/url]", "2013", "Carla Rauhauser", "Dark red"],
+              ["County General 3 North", "no sponsor, hospital floor", "Denise Hartle", "Teal scrubs colour, on purpose"],
+              ["[url=synth://rauhauser-dental.synth/]Rauhauser Family Dentistry[/url]", "2015", "Kim Stipe", "White"],
+              ["[url=synth://doubek-excavating.synth/]Doubek Excavating[/url]", "2002", "Curt Doubek", "Hi-vis yellow"],
+              ["[url=synth://halsey-pizza.synth/]Halsey Pizza House[/url]", "1999", "Tony Skurka", "Red and white"],
+              ["[url=synth://tessler-trucking.synth/]Tessler Trucking[/url]", "2020", "Bev Mowrer", "Navy"],
+              ["[url=synth://purkey-smallengine.synth/]Purkey Small Engine[/url]", "2008", "Joanne Purkey", "Orange and grey"],
+              ["Bad Hops", "no sponsor", "Shane Detwiler", "Different every year"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coed B -- Thursday"
+          },
+          {
+            "kind": "table",
+            "head": ["TEAM", "SPONSOR SINCE", "MANAGER", "SHIRTS"],
+            "rows": [
+              ["[url=synth://kerrin-ag.synth/]Kerrin Ag Supply[/url]", "2021", "Amy Tillotson", "Green"],
+              ["[url=synth://skurka-concrete.synth/]Skurka Concrete[/url]", "2012", "Brian Skurka", "Charcoal"],
+              ["[url=synth://mowrer-hauling.synth/]Mowrer Hauling[/url]", "2016", "Tim Mowrer", "Blue"],
+              ["[url=synth://detwiler-lawn.synth/]Detwiler Lawn & Landscape[/url]", "2019", "Kyle Detwiler", "Lime"],
+              ["Ashkettle Lions", "Ashkettle Lions Club", "Bev Klahr", "Purple and gold"],
+              ["New Carrow Methodist", "the congregation", "Rev. Ellen Purkey", "Plain grey, and they mean it"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "50 and Over -- Sunday morning"
+          },
+          {
+            "kind": "table",
+            "head": ["TEAM", "SPONSOR SINCE", "MANAGER", "SHIRTS"],
+            "rows": [
+              ["[url=synth://klahr-radiator.synth/]Klahr Radiator[/url]", "1989", "Gerald Klahr", "Blue"],
+              ["County Highway Retirees", "no sponsor", "Ray Purkey", "Highway orange, obviously"],
+              ["[url=synth://stipe-dairy.synth/]Stipe Dairy[/url]", "1977", "Arlen Stipe", "White and black"],
+              ["Milbrook Merchants", "four businesses", "Hollis Ruhl", "Red"],
+              ["Coyne Flats", "no sponsor", "Vern Osterhout", "Grey, and they have been grey since 1981"],
+              ["Halsey 50s", "no sponsor", "Clifton Sowle", "Navy"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Marchfield Co-op has had its name on a shirt in this league without a break since 1973 and Stipe Dairy since 1977. Those are the two long ones. The next is Yeakel Monument Works in 1981.\n\nThe Stipe team is the same farm on Coyne Flats Road and the same family, and Arlen Stipe, who manages it, is 67, plays third base, and does not slide because 6.2 says he may not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What a sponsorship is"
+          },
+          {
+            "kind": "text",
+            "body": "A sponsorship is [b]$340[/b]. That is the team entry fee and the sponsor pays it instead of the players.\n\nWhat the sponsor gets is their name on eleven or twelve shirts, their name on this page, their name in the standings, and a 2 foot by 4 foot sign on the outfield fence at Memorial for the season if they want one, which is another $60 and which about half of them take.\n\nWhat the sponsor does not get is advertising in any sense a person selling advertising would recognise. Roughly two hundred people see a Tuesday night at Memorial and about a hundred and eighty of them already know where the tire shop is. Nobody in this arrangement is confused about that. A sponsorship is a business in this county putting $340 somewhere it can see it, and it has kept this league running since 1971, and the day it is a marketing decision is the day it stops.\n\nIf you want one: ring Sandy Reber, or come to the March meeting. We have never once turned a sponsor away and we have twice had to tell somebody the team they wanted to sponsor already had one."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Sponsors we do not have any more"
+          },
+          {
+            "kind": "table",
+            "head": ["SPONSOR", "YEARS", "WHAT HAPPENED"],
+            "rows": [
+              ["Gridfall Ironworks", "1954-1984", "Closed. The team was the reason the league existed and the plant was the reason the team existed."],
+              ["Blue Kestrel", "1972-1979", "The diner stopped sponsoring in 1979. It stayed open until 2006."],
+              ["Verity Valley Power & Light", "1979-1993", "Stopped after a reorganisation. There have been several since."],
+              ["Milbrook Gazette", "1991-2016", "The paper stopped after the edition of 27 October 2016. The team finished the 2016 season and folded in the spring."],
+              ["Kestrel Vapor", "2014-2019", "Sponsored the old Coyne Flats coed team for six years and then closed in 2021."],
+              ["The Verity Ledger", "1988-2018", "Sponsored a Men's Rec team for thirty-one years. The cheque stopped in 2019 and nobody at the paper was able to say who had cancelled it."],
+              ["Fillhart Chevrolet", "1976-2009", "Dealership closed in the crash and never came back."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]The Blue Kestrel.[/b] The diner on Route 62 sponsored a men's team for eight seasons and won the league in 1973 and 1976.\n\n1977 is the season people remember, because the kitchen fire in July took the storeroom the shirts were boxed in, and the team played its last eight games in whatever they had. The diner was open again eleven days later. The shirts were not replaced and the team wore the mixed ones for the rest of the year on purpose.\n\nThe diner closed in [b]2006[/b]. The building has been a vape shop and is now a phone repair shop, and the neon bird is still up. Marion Teale kept the real record of that place at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], and her account of 1977 has the date right, which not everything written about that building does.\n\nWe have the 1976 and 1978 scorebooks in the box at Sandy's. We do not have 1973, 1974, 1975 or 1977, and if somebody's mother has one in a cupboard the league would take a photocopy and give the original straight back."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 16022
+          }
+        ]
+      },
+      {
+        "id": "halloffame",
+        "name": "Hall of Fame",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Hall of Fame"
+          },
+          {
+            "kind": "image",
+            "seed": "vcasl-hof-plaque-concession",
+            "imgKind": "photo",
+            "caption": "The plaque, on the back wall of the concession stand at Gridfall Memorial. The ice cream freezer went in front of it in 2011 and the 1988 to 1996 names are behind the freezer."
+          },
+          {
+            "kind": "text",
+            "body": "The Hall of Fame was started in 1988 at the league's seventeenth annual meeting, on a motion by Ernest Sowle, who was then inducted into it, which he objected to at the time and lost.\n\nThe plaque is a walnut board with brass plates, 24 inches by 36, and it hangs on the back wall of the concession stand at Gridfall Memorial. In 2011 parks put a chest freezer in front of it. The freezer has not moved since and the first nine years of names are behind it. This is raised at roughly every third annual meeting and the board has agreed every time that something should be done.\n\nThere are 47 names on it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How you get on it"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Ten seasons in the league as a player, or eight as an officer, umpire or scorekeeper. The eight was ten until 2001 and was lowered because nobody was doing eight years as a scorekeeper.", "Five years since your last season, unless you are being put on for service, in which case there is no wait and you may still be doing it.", "Nominated in writing to the secretary before 1 October. Anybody may nominate anybody, including themselves, and two people have.", "Voted at the annual meeting in February by the managers present, one vote per team, two-thirds to carry.", "No more than two in a year. There have been years with none, and a year with none is not a snub, it is a year when nobody got to two-thirds."]
+          },
+          {
+            "kind": "text",
+            "body": "Induction is at the banquet, [b]the first Saturday in November[/b], at the Ashkettle fire hall. This year that is Saturday 7 November. $18 a plate, chicken or ham, pay Sandy Reber by 24 October. The hall is $140 and the auxiliary cooks and the league has never once had to cater it.\n\nThe plate is engraved in Halsey by the same shop that has done it since 1988 and costs $34."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The inductees"
+          },
+          {
+            "kind": "table",
+            "head": ["YEAR", "NAME", "MAINLY WITH", "FOR"],
+            "rows": [
+              ["1988", "Wendell Lauffer", "Gridfall Ironworks", "Pitcher, 1954-1976. Twenty-two seasons, four titles."],
+              ["1988", "Doris Stipe", "Verity Ladies' League", "Player 1951-1969. Started the women's division in 1972 and ran it for eleven years."],
+              ["1988", "Harold \"Hap\" Kinsel", "umpire", "Thirty-eight years behind the plate, 1949-1987. Never ejected anybody."],
+              ["1988", "Bud Wenrich", "Marchfield Co-op", "1958-1974. Shortstop. Still holds the league record nobody can verify."],
+              ["1988", "Ernest Sowle", "service", "First league president, 1971-1983. Wrote the first rule book on a typewriter."],
+              ["1989", "Alvin Ruhl", "Gridfall Ironworks", "First base, 1957-1978."],
+              ["1990", "Marlene Fillhart", "Fillhart Chevrolet", "Women's division, 1972-1986. Fourteen seasons, never missed a game."],
+              ["1990", "Roy Osterhout", "Blue Kestrel", "1971-1982. The 1973 and 1976 teams."],
+              ["1991", "Gene Poff", "umpire", "Put on for service in his thirteenth year. He is in his forty-eighth."],
+              ["1992", "Clyde Boop", "Boop's Meat Market", "Catcher, 1966-1989. Twenty-three seasons."],
+              ["1993", "Donna Kesterke", "Kesterke Well Drilling", "Women's division, 1974-1988. Pitched every inning of 1981."],
+              ["1993", "Walt Sturtz", "Halsey Machine", "1970-1990."],
+              ["1994", "Lester Yeakel", "Yeakel Monument Works", "Third base, 1963-1985. Stone cutter, and the plaques were his until 1988."],
+              ["1995", "Arlene Doubek", "service", "League secretary 1976-1994. Eighteen years of standings in a ledger book."],
+              ["1995", "Virgil Klahr", "Klahr Radiator", "1969-1989."],
+              ["1998", "Eldon Purkey", "Verity Valley P&L", "Outfield, 1972-1991. The 1984, 1986 and 1987 teams."],
+              ["1999", "Betty Sowle", "Sowle Brothers Hauling", "Women's division, 1975-1992, then scorekeeper until 2004."],
+              ["2000", "Dale Hovater Sr.", "Marchfield Co-op", "1974-1996. Twenty-two seasons, one ejection, 1981, and he still says it was wrong."],
+              ["2001", "Merle Skurka", "Gridfall Ironworks", "1968-1984. The last Ironworks player inducted and the last one there was."],
+              ["2002", "Nadine Reber", "service", "Ran the concession at Memorial 1979-2001. Twenty-two seasons of hot dogs."],
+              ["2002", "Bill Fleeger", "Halsey Machine", "Pitcher, 1977-1998."],
+              ["2003", "Chester Mowrer", "umpire", "1974-2001. Twenty-seven years, and the man who wrote the commitment line into the rules."],
+              ["2004", "Joyce Tillotson", "Blue Kestrel, then Marchfield Lanes", "Women's division 1973-1990. Four titles."],
+              ["2005", "Dwight Boop", "Boop's Meat Market", "1979-2000, and still managing the team in 2026, which the board noted at the time was unusual."],
+              ["2006", "Ronald Detwiler", "Verity Valley P&L", "1976-1997."],
+              ["2007", "Marge Wambold", "service", "Treasurer 1988-2006. Eighteen years and every year balanced to the cent."],
+              ["2008", "Kenneth Ruhl Sr.", "Gridfall Tire & Alignment", "1980-2002. The 1996 team."],
+              ["2010", "Sharon Klahr", "women's division", "1978-1995, then umpire 1996-2009, and the first woman to umpire a men's game in this league."],
+              ["2010", "Terry Sowle", "The Depot Tap", "1985-2005. The 2000 and 2002 teams."],
+              ["2011", "Vern Osterhout", "Coyne Flats", "1976-2009. Thirty-four seasons, which is the record and is not going to be beaten."],
+              ["2012", "Arlen Stipe", "Stipe Dairy", "Third base since 1977. Put on while still playing, which took a rule change and a vote."],
+              ["2013", "Gerald Klahr", "Klahr Radiator", "1981-2011."],
+              ["2014", "Joanne Purkey", "service", "Banquet, hall, and the auxiliary, 1990 to now. Thirty-six banquets."],
+              ["2015", "Raymond Purkey", "County Highway", "1979-2008."],
+              ["2016", "Curtis Ganske", "service", "Scorekeeper and the man who put this league on the internet in 2003."],
+              ["2016", "Denise Hartle", "County General", "Coed division 1998-2014, and the first coed player inducted."],
+              ["2017", "Patrick Yeakel", "The Regulars", "1994-2015, four team names, no sponsor, never missed a fee."],
+              ["2018", "Neal Wambold", "Wambold Roofing", "1990-2014."],
+              ["2019", "Clifton Sowle", "Halsey", "1978-2012, and fire police at the Kestrel Road crossing for twenty years, which is not why he is on here but is why people know him."],
+              ["2022", "Carla Rauhauser", "Perrin Hill Orchard", "Coed 2000-2018. Four titles, three of them as manager."],
+              ["2022", "Randy Fleeger", "Fleeger Electric", "1989-2013."],
+              ["2023", "Bev Klahr", "Ashkettle Lions", "Coed and Coed B, 1995-2019, then manager."],
+              ["2024", "Sandra Reber", "service", "Treasurer since 2006. Twenty years and counting, and she asked not to be put on and was outvoted 22 to 3."],
+              ["2024", "Tony Skurka", "Halsey Pizza House", "Coed 1997-2020."],
+              ["2025", "Hollis Ruhl", "Milbrook Merchants", "1988-2016. Twenty-eight seasons across four teams and two divisions."],
+              ["2026", "Marjorie Doubek", "service", "Scorekeeper at Memorial since 1979, and the keeper of the league's own minutes since 1994."],
+              ["2026", "Kim Stipe", "Rauhauser Family Dentistry", "Coed 2003-2024. Arlen's daughter, and she has more titles than he does, which is in the citation because she asked for it to be."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The gaps"
+          },
+          {
+            "kind": "text",
+            "body": "There is no class in 1996, 1997, 2009, 2020 or 2021, and the reasons are all different.\n\n[b]1996 and 1997[/b] -- nobody nominated anybody. The secretary at the time did not remind people and the deadline went by twice.\n\n[b]2009[/b] -- two nominations, neither got to two-thirds, and the meeting went to a second ballot and then a third and then to half past ten and then home. Both were inducted in 2010.\n\n[b]2020[/b] -- no season, no banquet. [b]2021[/b] -- a season and no banquet, and the 2021 nominations were carried to 2022, which is why 2022 has two.\n\nThe board has never inducted anybody after their death. That is a rule and not an oversight. Ernest Sowle put it in the first book in 1988 on the grounds that a man should get to hear it, and nobody has moved to change it in thirty-eight years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "League champions"
+          },
+          {
+            "kind": "text",
+            "body": "Men's Open, or whatever the top division was called that year. It was the A Division until 1991.\n\nThe pre-1980 lines came from Ledger microfilm. [b]Karen Fennimore[/b] at Marchfield Public Library pulled the reels, found the standings in the Thursday sports page for nine seasons, all of which are in the [url=synth://verityledger.com/]Ledger archive[/url] as well, and mailed the league photocopies in 2023 with the date and the page number written on each one in pencil. The league had none of it. Her notes on that kind of work are at [url=synth://marchfieldlibrary.blog/]the library's reference desk blog[/url]."
+          },
+          {
+            "kind": "table",
+            "head": ["YEAR", "CHAMPION", "YEAR", "CHAMPION"],
+            "rows": [
+              ["1971", "Gridfall Ironworks", "1999", "Kesterke Well Drilling"],
+              ["1972", "Gridfall Ironworks", "2000", "The Depot Tap"],
+              ["1973", "Blue Kestrel", "2001", "Marchfield Co-op"],
+              ["1974", "Gridfall Ironworks", "2002", "The Depot Tap"],
+              ["1975", "Marchfield Co-op", "2003", "Bortner Propane"],
+              ["1976", "Blue Kestrel", "2004", "Gridfall Tire & Alignment"],
+              ["1977", "Kesterke Well Drilling", "2005", "Bortner Propane"],
+              ["1978", "Marchfield Co-op", "2006", "The Depot Tap"],
+              ["1979", "Verity Valley P&L", "2007", "Kesterke Well Drilling"],
+              ["1980", "Gridfall Ironworks", "2008", "Gridfall Tire & Alignment"],
+              ["1981", "Marchfield Co-op", "2009", "Marchfield Co-op"],
+              ["1982", "Marchfield Co-op", "2010", "The Depot Tap"],
+              ["1983", "Sowle Brothers Hauling", "2011", "Bortner Propane"],
+              ["1984", "Verity Valley P&L", "2012", "Sturtz Auto Body"],
+              ["1985", "Kesterke Well Drilling", "2013", "Bortner Propane"],
+              ["1986", "Verity Valley P&L", "2014", "Gridfall Tire & Alignment"],
+              ["1987", "Verity Valley P&L", "2015", "Kesterke Well Drilling"],
+              ["1988", "Marchfield Co-op", "2016", "The Depot Tap"],
+              ["1989", "Kesterke Well Drilling", "2017", "Bortner Propane"],
+              ["1990", "Halsey Machine", "2018", "Bortner Propane"],
+              ["1991", "Halsey Machine", "2019", "Gridfall Tire & Alignment"],
+              ["1992", "Bortner Propane", "2020", "no season"],
+              ["1993", "Marchfield Co-op", "2021", "The Depot Tap"],
+              ["1994", "Bortner Propane", "2022", "Bortner Propane"],
+              ["1995", "Halsey Machine", "2023", "Kesterke Well Drilling"],
+              ["1996", "Gridfall Tire & Alignment", "2024", "Bortner Propane"],
+              ["1997", "Bortner Propane", "2025", "Gridfall Tire & Alignment"],
+              ["1998", "Bortner Propane", "2026", ""]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Bortner Propane, twelve. Marchfield Co-op, eight. Kesterke Well Drilling, seven. The Depot Tap and Gridfall Tire & Alignment, six each. Halsey Machine, three. Gridfall Ironworks, four in fourteen years and then the plant shut. Verity Valley, four in nine.\n\nThe 2026 line is blank because the championship was played on Thursday 20 August and this page was last updated on Tuesday 11 August. It is not a mystery. See [url=/]the front page[/url]."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Women's division.[/b] It ran from 1972 to 2019. Fourteen teams in 1984, six in 2005, four in 2019. The Blue Kestrel won the first one. Fillhart Chevrolet won three, Marchfield Lanes three, Sowle Brothers two, Reber Insurance two, and Perrin Hill Orchard the last three, in 2011, 2017 and 2019.\n\nThe full list is in the minutes and not on here, because the standings were kept separately from 1972 to 1998 by whoever was running it and were never typed up.\n\nThere were two teams in 2023 and you cannot make a schedule out of two, so it is not running. It has not been formally folded either, because folding it would require a vote and nobody at a February meeting has ever been willing to be the one to move it.\n\nIf four teams turn up in March it runs. That is not a polite way of saying no. It is how every division in this league started."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 24905
+          }
+        ]
+      },
+      {
+        "id": "league",
+        "name": "The League",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The league"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Board"
+          },
+          {
+            "kind": "table",
+            "head": ["", "NAME", "SINCE", "DAYTIME"],
+            "rows": [
+              ["President", "Dean Fillhart", "2014", "Marchfield. Retired. Reachable."],
+              ["Vice president and scheduler", "Toby Klahr", "2009", "Drives for Tessler. In Halsey Tuesdays and Thursdays."],
+              ["Secretary", "Renee Kinsel", "2009", "Gridfall. Does this website and the rainout line."],
+              ["Treasurer", "Sandra Reber", "2006", "Reber Insurance, Marchfield. Office hours are the best time."],
+              ["Umpire-in-chief", "Gene Poff", "1991", "Everywhere. He is 71 and he still works the plate."],
+              ["Field coordinator", "Larry Detwiler", "2018", "New Carrow. Has the key to the Memorial shed."],
+              ["Seventh seat", "vacant", "since 2019", "It has been open for seven years and it is on the agenda every February."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Six people. One of them has been doing it since before the board had a website. The seventh seat is vacant because the bylaws say seven and seven has been optimistic since about 2015.\n\nThe board meets four times a year: February (annual, rules, elections), March (registration), June (whatever has gone wrong), and November (the banquet, and the books). Meetings are at the Ashkettle fire hall and they are open, and in twelve years the number of people who have turned up who were not on the board is eleven."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What it costs"
+          },
+          {
+            "kind": "table",
+            "head": ["", "AMOUNT", "NOTE"],
+            "rows": [
+              ["Team entry, any division", "$340", "Due at registration. Covers umpires, balls, field rent and the sanction."],
+              ["Player sanction and insurance", "$2 per player", "Included in the team fee. It is a card and it is worth what a card is worth."],
+              ["Outfield sign at Memorial", "$60", "Optional. 2 ft by 4 ft. You supply it or the shop in Halsey makes one for $85."],
+              ["Second forfeit in a season", "$25", "Payable before the next game."],
+              ["Protest fee", "$20", "Returned if upheld. Four have been returned since 2009."],
+              ["Banquet plate", "$18", "Chicken or ham. Pay by 24 October."],
+              ["Replacement rule book", "free", "There are forty spares on the table at every meeting."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where $340 goes"
+          },
+          {
+            "kind": "table",
+            "head": ["", "PER TEAM", "TOTAL, 36 TEAMS"],
+            "rows": [
+              ["Umpires", "$184", "$6,624"],
+              ["Field rent, Memorial", "$53", "$1,900"],
+              ["Field rent, Marchfield Legion", "$13", "$480"],
+              ["Kerrin school athletic fund", "$6", "$200"],
+              ["Balls", "$41", "$1,476"],
+              ["Sanction and insurance", "$24", "$864"],
+              ["Bases, plates, mats, chalk, rope", "$11", "$396"],
+              ["Hosting for this website", "$3", "$108"],
+              ["Rainout line", "$2", "$72"],
+              ["Plaques and engraving", "$2", "$68"],
+              ["Left over", "$1", "$36"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "That adds to $340 and it does not add to a penny more, and the last line is not a reserve, it is what was left after Sandy did the arithmetic in March.\n\n[b]The league's balance on 31 December 2025 was $2,108.[/b] It has been between eighteen hundred and twenty-six hundred every year since 2011. It is one rained-out July and one set of bases away from being nineteen hundred, and that is the correct size for it to be, because a volunteer league with eight thousand dollars in the bank is a volunteer league that is about to have an argument.\n\n[b]Hosting is $9 a month[/b], on Sandy's card, and the league pays her back in February. It has gone up twice in eleven years, both times by a dollar."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Umpires"
+          },
+          {
+            "kind": "text",
+            "body": "[b]$46 a game[/b], one umpire, cash at the field from the home team, and the home team gets it back off the league at the end of the season on a slip. That system is silly, it has worked since 1994, and every attempt to change it has made it worse.\n\nThe league needs [b]fourteen[/b] umpires to cover a full week. It has nine. Gene Poff works four nights a week at 71 and has done for six years, and two of the nine are men who played until their knees went and came back to umpire, which is where almost all of them come from.\n\nThe state clinic is one Saturday in March, it costs $65, and the league pays it. You need a mask, a bag and shoes. You do not need to be good in your first year and you will not be. What you need is to turn up on the night you said you would, which is the entire job and which is why there are nine and not fourteen."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Registration"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": ["First Tuesday in March: registration opens at the board meeting, Ashkettle fire hall, 7:00.", "Team fee and a manager's name and phone number. That is all that is needed to hold a spot.", "First Tuesday in April: registration closes. In 2026 that was 7 April and we finished with 36.", "Second week of April: Toby builds the schedules. This takes him about three weeks and he does it on paper first.", "Last week of April: team packets. Schedule sheet, rule book, roster form, two balls, and a receipt.", "1 May: filed rosters due, ten names minimum.", "Second week of May: first pitch."]
+          },
+          {
+            "kind": "text",
+            "body": "A team that misses the April deadline can be put on a list, and if a division loses a team before 1 May the list gets a phone call. In 2024 the list had four teams on it and none of them got a call. In 2025 it had one and it did."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How to reach the league"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Rainout line, 555-0143.[/b] Recording only. It does not take messages and never has, which has not stopped about sixty people a year from leaving one.\n\n[b]Renee Kinsel, 555-0159[/b], evenings, for anything about this website, the standings or the schedule.\n\n[b]Sandy Reber[/b] at Reber Insurance in Marchfield, office hours, for money, sponsorship and the banquet.\n\n[b]By post:[/b] Verity County Adult Softball League, Box 88, Gridfall.\n\n[b]The league account on [url=synth://mail.verity.net/]Verity Mail[/url][/b] forwards to me. It gets about four hundred messages a week and roughly six of them are from a person. I read it on Tuesdays in season and in April. If you need an answer in a hurry, ring."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Where the league's conversation went"
+          },
+          {
+            "kind": "text",
+            "body": "Until about 2016 the argument about all of this happened in the Sports and Recreation board at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]. Rule change threads, schedule complaints, somebody posting a whole game's scorecard because he thought the book was wrong. It is all still there and it is still readable and several of the threads are better written than this website.\n\n[b]Registration there closed in 2017 and is not reopening.[/b] So if you read something in one of those threads and want to reply to it, you cannot, and neither can I. The man who pays for that board pays $11 a month out of his own pocket and has every month since, and closing it to new accounts is the reason it still exists at all, and those two facts are the same fact.\n\nWe are not on Gridline, we are not on any of the feeds, and we are not going to be. There is an account over there using this league's name and posting standings. They are not our standings, they have been wrong every week since May, and there is nobody at that company to write to about it. Ours are on [url=/standings]this page[/url], they come off the scorecards, and they are updated on Tuesday."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Some history, briefly"
+          },
+          {
+            "kind": "text",
+            "body": "The league was organised in [b]1971[/b] from the Gridfall Industrial League, which had been running since 1948 and which was four plant teams and a church team. The Ironworks closed in 1984 and the league had already been bigger than the Ironworks for a decade by then.\n\nHigh water was [b]1984[/b]: 71 teams, six divisions, four nights and two Saturdays, and a women's division with fourteen teams in it.\n\n[b]Wednesday 11 June 2003[/b] is the only night in this league's history when games were called off for something that was not weather. Substation No. 3 at Depot and Quarry Road burned starting at about ten to five that morning. Gridfall Memorial had no power for thirty-eight hours and the Coed games at Memorial and at Marchfield Legion were called that afternoon. Four games. They were made up on Wednesday 25 June and the league lost nothing but a Wednesday.\n\nThat is the whole of this league's connection to it. It is written down here because the thing gets rewritten about four times a week now by outfits that were not here, and because somebody will eventually put it on this page's guestbook with the year wrong. Somebody already has.\n\n[b]2020[/b]: no season. Fees were returned in full to twenty-nine teams and nine of them told Sandy to keep it and she sent it back anyway.\n\nCurtis Ganske built the first version of this website in 2003 on the computer at the hardware store in Ashkettle. It had the standings and a phone number. This one has eight pages and it is the same website and it is still updated on a Tuesday."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Things we are asked"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["[b]Can I join a team as an individual?[/b] The league does not place players. Ring a manager on [url=/teams]the teams page[/url]; most rosters are three or four short by July and every one of them would rather have you than an automatic out.", "[b]Do you have a youth league?[/b] No. That is the school and the borough programmes and this league has nothing to do with them and gets their phone calls anyway.", "[b]Where do I buy a bat?[/b] Not from us. There are usually four or five on [url=synth://classifieds.verity.net/]Verity Classifieds[/url] and about half of them are on the withdrawn list, so read 3.5 first and then read the stamp on the bat.", "[b]Why does the county not fix the field?[/b] Read the maintenance contract. [url=synth://thequarry.news/]The Quarry[/url] published all eleven pages of it in March, which is more than anybody managed in the previous ten years.", "[b]Is the parks budget going up?[/b] [url=synth://brenners-notebook.email/]Brenner's Verity Notebook[/url] did the levy in February and it is the only piece anybody wrote on it. The answer is no.", "[b]Why is the league not on the Ledger site?[/b] It is, sort of. [url=synth://now.verityledger.com/]now.verityledger.com[/url] has run seven items with this league's name on them since May. Five of them are the same item. None of them has a score in it that matches the book, and one of them refers to the Coed B division as \"the county's newest youth program\". There is nobody there to write to either.", "[b]Is there video?[/b] There are nine minutes of the 2007 championship somebody's brother put on [url=synth://clipvault.tv/]ClipVault[/url]. The camera is behind the backstop, the sound is a crowd of forty, and it has 118 views."]
+          },
+          {
+            "kind": "text",
+            "body": "There is also a page about this league on [url=synth://verity.wiki/]Verity Wiki[/url]. It says the league was founded in 1988, which is the year the Hall of Fame started, and it has said that since somebody's script wrote it in 2024. I corrected it once. It went back.\n\nThe older wiki at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] has it right, and has had it right since 2009, and is maintained by about one person."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Last updated Tuesday 11 August 2026.[/b] Renee Kinsel, secretary, 555-0159 evenings.\n\nThe next update to this website will be the first Tuesday of the 2027 season, which is 11 May 2027, unless something happens, and nothing happens."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 14638
+          }
+        ]
+      }
+    ]
+  }
+}

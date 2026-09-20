@@ -344,7 +344,13 @@ window.SYNTH = window.SYNTH || {};
         fli.appendChild(E('span', { 'class': 'fname' }, txt(f && f.name)));
         var note = E('span', { 'class': 'fnote' });
         note.appendChild(E('span', { 'class': 'bang' }, '!'));
-        note.appendChild(document.createTextNode(noteFor(f, txt(s.id) + ':' + j)));
+        /* Through markup, not as a text node. A form note is a long text
+         * body and AUTHORING.md says inline markup works in one of those --
+         * so the sheriff's office wrote a note pointing at the paper's
+         * retyped version of the blotter, and the page printed the raw
+         * [url=...] at the reader. A field that silently cannot carry a
+         * link is a trap for every author after this one. */
+        note.appendChild(MK(noteFor(f, txt(s.id) + ':' + j)));
         fli.appendChild(note);
         ul.appendChild(fli);
       }
