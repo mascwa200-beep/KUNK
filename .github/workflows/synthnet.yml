@@ -129,24 +129,48 @@ jobs:
           echo "cold-load shell: $raw bytes raw, $gz bytes gzipped"
           # Both numbers are real: tools/serve.py gzips, so a browser moves the
           # second, but the raw figure is what the files actually weigh.
-          # History: 400/120 KB originally, 900/250 when the live layer landed,
-          # 1600/450 now that the 2026 build added ten renderers, the reply
-          # engine, the fame model and the authoring UI. Measured at this
-          # commit: 1,208,404 raw / 332,687 gzipped.
+          #
+          # History: 400/120 KB originally. 900/250 when the live layer
+          # landed. 1600/450 when the 2026 build added ten renderers, the
+          # reply engine, the fame model and the authoring UI. Raised again
+          # here for the heartbeat, the alerts layer and the Feeds panel, the
+          # composition grammar, and the wire, newsletter and chat renderers.
+          # Measured at this commit: 1,503,598 raw / 423,360 gzipped.
           #
           # These bytes are loaded up front deliberately. Fetching them lazily
           # is the better engineering and the wrong trade here: it costs the
           # single-file standalone build, which is the mode that needs no
           # install at all. In the app and that file the bytes are local, so
           # the figure only means anything over a LAN -- where the gzipped
-          # number is the one that travels, and 330 KB is a third of a second
-          # on anything. Headroom left for packs and more sites.
-          if [ "$raw" -gt 1638400 ]; then
-            echo "FAIL: the shell payload has grown past 1.6 MB uncompressed."
+          # number is the one that travels, and 420 KB is under half a second
+          # on anything.
+          #
+          # NOTE that content does NOT land here. A site.json is fetched when
+          # you visit that site, so the network can keep growing without this
+          # number moving. What moves it is renderers and pools.
+          if [ "$raw" -gt 2097152 ]; then
+            echo "FAIL: the shell payload has grown past 2 MB uncompressed."
             exit 1
           fi
-          if [ "$gz" -gt 460800 ]; then
-            echo "FAIL: the shell payload has grown past 450 KB gzipped."
+          if [ "$gz" -gt 573440 ]; then
+            echo "FAIL: the shell payload has grown past 560 KB gzipped."
+            exit 1
+          fi
+
+      - name: The standalone single-file build must stay openable
+        # dist/synthnet.html inlines the shell AND every site, which is what
+        # makes it a build you can copy to a phone and open with no install.
+        # It is therefore the one artifact that grows with content, and the
+        # one where "just add more sites" has a real cost. 2.3 MB at this
+        # commit; a phone opens that instantly. The ceiling exists so that
+        # doubling the network is a decision rather than an accident.
+        run: |
+          actual=$(stat -c%s synthnet/dist/synthnet.html)
+          echo "dist/synthnet.html: $actual bytes"
+          if [ "$actual" -gt 12582912 ]; then
+            echo "FAIL: the standalone build has passed 12 MB. Either trim it,"
+            echo "      or decide deliberately that the single-file mode is"
+            echo "      no longer the point and raise this."
             exit 1
           fi
 
