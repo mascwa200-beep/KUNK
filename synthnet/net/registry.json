@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T15:55:36Z",
+  "generated": "2026-09-20T16:06:48Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -569,7 +569,7 @@
         "substation"
       ],
       "path": "net/sites/gridfallvfd-org/site.json",
-      "bytes": 112572
+      "bytes": 95466
     },
     {
       "domain": "gridline.social",
@@ -1478,6 +1478,24 @@
       ],
       "path": "net/sites/verityrealestatenow-com/site.json",
       "bytes": 73456
+    },
+    {
+      "domain": "verityschools.org",
+      "title": "Verity County School District",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Six schools, 2,914 students and about 340 employees: closings and delays, the October lunch menu, fourteen bus runs going to a contractor in January, board minutes back to 2001 with a five-year hole in them, and a parent portal that is not the county's portal.",
+      "tags": [
+        "verity",
+        "county",
+        "schools",
+        "board",
+        "minutes",
+        "2026"
+      ],
+      "path": "net/sites/verityschools-org/site.json",
+      "bytes": 104835
     },
     {
       "domain": "veritysheriff.gov",

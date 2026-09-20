@@ -240,7 +240,20 @@ window.SYNTH = window.SYNTH || {};
 
       var left = E('div', { 'class': 'svcmain' });
       left.appendChild(ctx.link('/s/' + encodeURIComponent(txt(s.id)), txt(s.name), 'svclink'));
-      if (s.blurb) { left.appendChild(E('div', { 'class': 'svcblurb' }, txt(s.blurb))); }
+      if (s.blurb) {
+        /* Through markup, like the service page does at the bottom of this
+         * file. One field rendered two ways is a trap that only springs
+         * when an author uses a tag: the school district wrote
+         * "[b]This is not the county services portal.[/b]" in a blurb, the
+         * detail page rendered it bold and the index printed the brackets
+         * at the reader. */
+        var bsum = E('div', { 'class': 'svcblurb' });
+        var bfrag = (typeof ctx.markup === 'function')
+          ? ctx.markup(txt(s.blurb)) : null;
+        if (bfrag) { bsum.appendChild(bfrag); }
+        else { bsum.appendChild(document.createTextNode(txt(s.blurb))); }
+        left.appendChild(bsum);
+      }
       row.appendChild(left);
 
       var right = E('div', { 'class': 'svcmeta' });
