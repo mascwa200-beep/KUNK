@@ -196,6 +196,11 @@
     try {
       repaintWidgets();
       checkArrivals();
+      /* The badge is derived from the clock too, so it goes stale exactly
+       * as fast as everything else on the page. */
+      if (SYNTH.feedsui && typeof SYNTH.feedsui.paintBadge === 'function') {
+        SYNTH.feedsui.paintBadge();
+      }
     } catch (e) {
       /* A throwing heartbeat that keeps throwing every ten seconds would
        * bury the console and hide whatever caused it. Stop, and say so once. */

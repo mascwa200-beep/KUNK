@@ -12,6 +12,7 @@ window.SYNTH = window.SYNTH || {};
 
   var HOME_DOMAIN = 'start.verity.net';
   var SEARCH_DOMAIN = 'search.verity.net';
+  var FEEDS_DOMAIN = 'feeds.verity.net';
   var HOME_URL = 'synth://start.verity.net/';
   var BROWSER_NAME = 'Verity Explorer';
   var MAX_STACK = 120;
@@ -1266,6 +1267,29 @@ window.SYNTH = window.SYNTH || {};
     syncHash(full, opts.push === false);
     setProgress(false);
     setStatus('Done');
+
+    /* Record the visit. This is the single choke point every successful
+     * navigation passes through with a domain in hand, which makes it the
+     * one place "when did you last look at this" can live without threading
+     * it through every renderer.
+     *
+     * The stream ledger goes with it: whatever the page just asked
+     * live.stream() for IS what that site watches, so the unread count is
+     * derived from what the renderer really did rather than from a table of
+     * stream keys kept in sync by hand. See app/alerts.js.
+     *
+     * Skipped for the app's own pages -- being "behind" on your own settings
+     * panel is not a thing. */
+    if (SYNTH.alerts && SYNTH.alerts.markVisited && loc.domain &&
+        loc.domain !== HOME_DOMAIN && loc.domain !== SEARCH_DOMAIN &&
+        loc.domain !== FEEDS_DOMAIN) {
+      var feeds = (SYNTH.live && SYNTH.live.ledgerRows) ? SYNTH.live.ledgerRows() : [];
+      try { SYNTH.alerts.markVisited(loc.domain, feeds); } catch (e) { /* not fatal */ }
+    }
+
+    if (SYNTH.feedsui && SYNTH.feedsui.paintBadge) {
+      try { SYNTH.feedsui.paintBadge(); } catch (e) { /* not fatal */ }
+    }
   }
 
   function navigate(url, opts) {
@@ -1287,6 +1311,19 @@ window.SYNTH = window.SYNTH || {};
         var homeMount = builtinMount('synth-startpage');
         var ht = renderHomePage(homeMount, loc);
         commit(loc, homeMount, ht, opts, tab);
+        return null;
+      }
+
+      if (loc.domain === FEEDS_DOMAIN) {
+        /* Feeds is a page rather than a dropdown so it gets history, the
+         * back button and the phone layout for nothing -- and the command
+         * bar it hangs off is hidden below 700px, so a dropdown there would
+         * be unreachable on the primary target. Drawn by app/feedsui.js. */
+        var fm = builtinMount('synth-feedspage');
+        var ft = (SYNTH.feedsui && SYNTH.feedsui.render)
+          ? SYNTH.feedsui.render(fm, loc)
+          : 'Feeds';
+        commit(loc, fm, ft, opts, tab);
         return null;
       }
 
@@ -1369,7 +1406,7 @@ window.SYNTH = window.SYNTH || {};
 
   function isKnownDomain(d) {
     d = String(d || '').toLowerCase();
-    if (d === HOME_DOMAIN || d === SEARCH_DOMAIN) return true;
+    if (d === HOME_DOMAIN || d === SEARCH_DOMAIN || d === FEEDS_DOMAIN) return true;
     return !!registryEntry(d);
   }
 
@@ -1466,6 +1503,16 @@ window.SYNTH = window.SYNTH || {};
     ui.homes.forEach(function (node) {
       node.addEventListener('click', function (e) { e.preventDefault(); navigate(HOME_URL); }, false);
     });
+
+    /* The Feeds button has existed in index.html since the first commit and
+     * has never been wired to anything. */
+    ui.feeds = pick('#synth-cmd-feeds', '.synth-cmd-feeds');
+    if (ui.feeds) {
+      ui.feeds.addEventListener('click', function (e) {
+        e.preventDefault();
+        navigate('synth://' + FEEDS_DOMAIN + '/');
+      }, false);
+    }
     if (ui.go) ui.go.addEventListener('click', function (e) { e.preventDefault(); addressGo(); }, false);
     if (ui.newtab) ui.newtab.addEventListener('click', function (e) { e.preventDefault(); newTab(); }, false);
     if (ui.refresh) ui.refresh.addEventListener('click', function (e) { e.preventDefault(); refresh(); }, false);

@@ -68,8 +68,9 @@ DEAD_TLDS = (
 LIVE_TLDS = (".org", ".net", ".com", ".tv", ".blog", ".social", ".store",
              ".ai", ".gov", ".us", ".info", ".news", ".wiki", ".press")
 
-# Domains the engine serves itself rather than from net/sites/.
-BUILTIN_DOMAINS = {"start.verity.net", "search.verity.net"}
+# Domains the engine serves itself rather than from net/sites/. They are not
+# in the registry and never will be, because there is no site.json behind them.
+BUILTIN_DOMAINS = {"start.verity.net", "search.verity.net", "feeds.verity.net"}
 
 SYNTH_URL = re.compile(r"synth://([a-z0-9.-]+)((?:/[^\s\]\)\"'<>]*)?)", re.IGNORECASE)
 

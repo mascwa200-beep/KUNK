@@ -250,6 +250,127 @@ def main():
             else:
                 notes.append("still deterministic: same instant, same page")
 
+            # --- 9. what happened while you were gone ----------------------
+            #
+            # The net moving is only half of it. The other half is being told
+            # that it moved, which needs a real last-visit rather than a
+            # sliding window -- a bug this very check caught: the fallback
+            # "seen" time was recomputed on every call, so going away for
+            # three days reported the last twenty-four hours of them.
+            gone = page.evaluate("""async () => {
+              await SYNTH.store.ready();
+              await SYNTH.store.wipe();
+              SYNTH.data.invalidate();
+              SYNTH.live.setNow(null);
+              await SYNTH.me.signUp({handle: 'awaycheck', name: 'Away Check'});
+
+              const nav = async (u) => {
+                await SYNTH.engine.navigate(u);
+                await new Promise(r => setTimeout(r, 180));
+              };
+              await nav('synth://boards.gridfall.net/');
+              await nav('synth://now.verityledger.com/');
+              await nav('synth://gridline.social/');
+              await SYNTH.me.addPost('gridline.social',
+                'the substation on Ellery is making that noise again');
+
+              const visits = SYNTH.alerts.allVisits();
+              const recorded = Object.keys(visits).map(d => ({
+                domain: d, feeds: (visits[d].feeds || []).length
+              }));
+
+              const t0 = Date.now();
+              const at = (days) => {
+                SYNTH.live.setNow(t0 + days * 86400000);
+                const u = SYNTH.alerts.unreadByDomain();
+                const d = SYNTH.alerts.digest();
+                return {
+                  unread: Object.values(u).reduce((a, b) => a + b, 0),
+                  sites: Object.keys(u).length,
+                  mentions: d.mentions.length,
+                  awayHours: Math.round(d.away / 3600000),
+                  badge: SYNTH.alerts.badge()
+                };
+              };
+              const out = {recorded: recorded, h1: at(1 / 24), d1: at(1), d3: at(3)};
+              // Leave the clock three days out, so the Feeds page rendered
+              // next is the one someone coming back would actually see.
+              SYNTH.live.setNow(t0 + 3 * 86400000);
+              return out;
+            }""")
+
+            missing = [r["domain"] for r in gone["recorded"] if r["feeds"] < 1]
+            if missing:
+                problems.append(
+                    f"visiting {missing} recorded no live feeds, so nothing on "
+                    f"those sites can ever count as unread")
+            if len(gone["recorded"]) < 3:
+                problems.append(f"only {len(gone['recorded'])} visits recorded of 3")
+
+            if not (gone["h1"]["unread"] < gone["d1"]["unread"] < gone["d3"]["unread"]):
+                problems.append(
+                    f"unread does not grow with time away: "
+                    f"{gone['h1']['unread']} after an hour, "
+                    f"{gone['d1']['unread']} after a day, "
+                    f"{gone['d3']['unread']} after three")
+            else:
+                notes.append(f"unread grows with absence: {gone['h1']['unread']} / "
+                             f"{gone['d1']['unread']} / {gone['d3']['unread']} "
+                             f"after 1h / 1d / 3d across {gone['d3']['sites']} sites")
+
+            if gone["d3"]["awayHours"] < 60:
+                problems.append(
+                    f"after three days away the digest thinks it was "
+                    f"{gone['d3']['awayHours']} hours. The 'since you last "
+                    f"looked' window is sliding with the clock instead of "
+                    f"staying put.")
+            if gone["d3"]["mentions"] < 1:
+                problems.append("three days and a post, and nothing was addressed "
+                                "to you -- replies and messages are not reaching "
+                                "the digest")
+            else:
+                notes.append(f"{gone['d3']['mentions']} things addressed to you "
+                             f"after three days away")
+
+            # Count versus dot: a number only for things addressed to you.
+            badge = gone["d3"]["badge"]
+            if badge["count"] != gone["d3"]["mentions"]:
+                problems.append(
+                    f"the badge counts {badge['count']} but {gone['d3']['mentions']} "
+                    f"things were addressed to you. A badge that counts ambient "
+                    f"activity says nothing except that you should feel behind.")
+            elif not badge["dot"]:
+                problems.append("sites moved on and the badge showed nothing at all")
+            else:
+                notes.append(f"badge: {badge['count']} counted, dot for the rest")
+
+            # --- 10. the Feeds page renders and fits a phone ---------------
+            page.evaluate("SYNTH.engine.navigate('synth://feeds.verity.net/')")
+            page.wait_for_timeout(400)
+            text = page.inner_text("#synth-viewport")
+            if len(text.strip()) < 80:
+                problems.append(f"the Feeds page rendered {len(text.strip())} chars")
+            for marker in ("[object Object]", "undefined", "NaN"):
+                if marker in text:
+                    problems.append(f"Feeds page shows {marker!r}")
+            overflow = page.evaluate(
+                "() => { const v = document.getElementById('synth-viewport');"
+                " return v.scrollWidth - v.clientWidth; }")
+            if overflow > 1:
+                problems.append(f"Feeds page overflows by {overflow}px at 360 wide")
+            else:
+                notes.append("Feeds page renders and fits a 360px phone")
+
+            for tab in ("mentions", "replies", "sites"):
+                errors.clear()
+                page.evaluate(
+                    f"SYNTH.engine.navigate('synth://feeds.verity.net/?t={tab}')")
+                page.wait_for_timeout(250)
+                if errors:
+                    problems.append(f"Feeds '{tab}' tab: {errors[0][:160]}")
+                elif len(page.inner_text("#synth-viewport").strip()) < 60:
+                    problems.append(f"Feeds '{tab}' tab rendered almost nothing")
+
             browser.close()
     finally:
         srv.shutdown()

@@ -33,6 +33,7 @@
 <link rel="stylesheet" href="theme/live.css">
 <link rel="stylesheet" href="theme/compose.css">
 <link rel="stylesheet" href="theme/control.css">
+<link rel="stylesheet" href="theme/feeds.css">
 </head>
 <body>
 
@@ -144,6 +145,10 @@
 <script src="app/store.js"></script>
 <script src="app/me.js"></script>
 <script src="app/packs.js"></script>
+<!-- What happened while you were gone. Derived from one record per domain
+     plus the clock; nothing is queued and nothing runs in the background. -->
+<script src="app/alerts.js"></script>
+<script src="app/feedsui.js"></script>
 <!-- Being a user: the reply engine reads what you wrote, the fame model
      decides what it did, compose is the UI for both, control is the in-app
      panel for packs and authoring. Ordered because compose reads bots and

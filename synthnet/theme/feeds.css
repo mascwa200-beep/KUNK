@@ -1,0 +1,229 @@
+/* feeds.css -- the Feeds panel and the badges that point at it.
+ *
+ * Reads as part of the 2007 browser chrome rather than as a 2026 app screen,
+ * because it IS part of the chrome: Feeds is a button on the command bar, and
+ * this is what it opens. Same gradients, same borders, same blues.
+ */
+
+.fd-page {
+  font: 12px/1.5 "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #1b1b1b;
+  background: #fff;
+  padding: 10px 12px 18px 12px;
+}
+
+/* --- header ------------------------------------------------------------ */
+
+.fd-head {
+  border-bottom: 1px solid #cfdce7;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.fd-h1 {
+  margin: 0 0 3px 0;
+  font-size: 17px;
+  font-weight: normal;
+  color: #1c4f7c;
+}
+
+.fd-summary {
+  margin: 0 0 6px 0;
+  /* #4a5a68 on white is 7.4:1. */
+  color: #4a5a68;
+  max-width: 62ch;
+}
+
+.fd-markread {
+  font: 11px "Segoe UI", Tahoma, sans-serif;
+  padding: 3px 9px;
+  border: 1px solid #a8c0d4;
+  border-radius: 3px;
+  background: linear-gradient(#fdfefe, #e6eef6);
+  color: #1c4f7c;
+  cursor: pointer;
+}
+.fd-markread:hover { background: linear-gradient(#fff, #d8e8f6); }
+
+/* --- tabs -------------------------------------------------------------- */
+
+.fd-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  border-bottom: 1px solid #cfdce7;
+  margin-bottom: 6px;
+}
+
+.fd-tab {
+  display: block;
+  padding: 5px 12px;
+  font-size: 12px;
+  text-decoration: none;
+  /* #33526b on #eef4f9 is 7.9:1. */
+  color: #33526b;
+  background: #eef4f9;
+  border: 1px solid #cfdce7;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -1px;
+}
+.fd-tab:hover { background: #dce9f4; }
+.fd-tab.is-on {
+  background: #fff;
+  color: #14384f;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+/* --- event rows -------------------------------------------------------- */
+
+.fd-list { margin-top: 4px; }
+
+.fd-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 4px;
+  border-bottom: 1px solid #edf3f8;
+}
+.fd-row:last-child { border-bottom: 0; }
+
+.fd-kind {
+  flex: 0 0 auto;
+  min-width: 62px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  text-align: center;
+  /* #4d5c68 on #eef1f4 is 6.9:1. */
+  color: #4d5c68;
+  background: #eef1f4;
+  border: 1px solid #dde3e9;
+}
+
+/* Things addressed to you read warm; ambient activity stays grey. */
+.fd-kind-reply,
+.fd-kind-dm,
+.fd-kind-world {
+  color: #6b4b00;
+  background: #fff8e5;
+  border-color: #e8d8a8;
+}
+
+.fd-main { flex: 1 1 auto; min-width: 0; }
+
+.fd-title { color: #1a4d7a; font-weight: bold; text-decoration: none; }
+a.fd-title:hover { text-decoration: underline; }
+
+.fd-body {
+  /* #59666f on white is 6.3:1. */
+  color: #59666f;
+  font-size: 11px;
+  margin-top: 1px;
+  overflow-wrap: anywhere;
+}
+
+.fd-when {
+  flex: 0 0 auto;
+  font-size: 11px;
+  color: #6b7780;
+  white-space: nowrap;
+}
+
+.fd-empty {
+  padding: 18px 6px;
+  color: #5c6b76;
+  font-style: italic;
+}
+
+/* --- the sites tab ----------------------------------------------------- */
+
+.fd-site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  padding: 7px 4px;
+  border-bottom: 1px solid #edf3f8;
+}
+
+.fd-sitename { color: #1a4d7a; font-weight: bold; text-decoration: none; }
+.fd-sitename:hover { text-decoration: underline; }
+.fd-sitedom { color: #6b7780; font-size: 11px; }
+.fd-sitewhen { color: #6b7780; font-size: 11px; flex: 1 1 auto; }
+
+.fd-count {
+  font-size: 11px;
+  font-weight: bold;
+  color: #1c4f7c;
+  white-space: nowrap;
+}
+.fd-count-zero { color: #7b868e; font-weight: normal; }
+
+.fd-level { display: flex; gap: 1px; flex: 0 0 auto; }
+
+.fd-levelbtn {
+  font: 10px "Segoe UI", Tahoma, sans-serif;
+  padding: 2px 6px;
+  border: 1px solid #cfdce7;
+  background: #f6f9fc;
+  /* #55646f on #f6f9fc is 6.3:1. */
+  color: #55646f;
+  cursor: pointer;
+}
+.fd-levelbtn:hover { background: #e4eef7; }
+.fd-levelbtn.is-on {
+  background: #2f6a9e;
+  border-color: #2f6a9e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.fd-foot {
+  margin-top: 14px;
+  padding-top: 8px;
+  border-top: 1px solid #e6eef4;
+  font-size: 11px;
+  color: #6b7780;
+  max-width: 62ch;
+}
+
+/* --- the badge on the chrome ------------------------------------------- */
+
+.fd-badge {
+  display: inline-block;
+  min-width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: #c0392b;
+  color: #fff;
+  font: bold 10px/15px "Segoe UI", Tahoma, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* A plain dot, no number: ambient activity on sites you read. A count there
+ * would say nothing except that you should feel behind. */
+.fd-badge-dot {
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  background: #2f6a9e;
+}
+
+/* On a phone the command bar is hidden, so the title-bar badge is the only
+ * one there is. Give it room. */
+@media (max-width: 700px) {
+  .fd-page { padding: 8px 10px 16px 10px; }
+  .fd-kind { min-width: 0; }
+  .fd-row { flex-wrap: wrap; }
+  .fd-when { width: 100%; }
+  .fd-sitewhen { flex-basis: 100%; }
+}

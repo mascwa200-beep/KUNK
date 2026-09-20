@@ -92,6 +92,7 @@ jobs:
           assets="synthnet/index.html synthnet/theme/aero.css \
                   synthnet/theme/skins/*.css synthnet/theme/live.css \
                   synthnet/theme/compose.css synthnet/theme/control.css \
+                  synthnet/theme/feeds.css \
                   synthnet/app/*.js \
                   synthnet/app/types/*.js synthnet/net/registry.json \
                   synthnet/manifest.webmanifest"
