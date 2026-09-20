@@ -18,14 +18,40 @@ MK.parse(post.body);                            // there is no MK
 Get this wrong and every body renders as raw `[b]like this[/b]`, or the page
 throws. Three separate renderers shipped with it wrong.
 
-**2. `SYNTH.live.stream()` returns wrappers, not items.**
+**2. `SYNTH.live.stream()` returns rows, not items.**
 
 ```js
 var rows = L.stream('wire:' + domain, 'newsItems', 7, 10);
-rows[0]            // -> { slot, at, item, seed }
-rows[0].item.body  // the content you wanted
-rows[0].body       // undefined -> "[object Object]" on screen
+rows[0]            // -> { slot, at, item, seed, ...the item's own fields }
+rows[0].item.body  // the content
+rows[0].body       // the same content -- both spellings work now
+rows[0].at         // when it "arrived". This is on the ROW, not the item.
 ```
+
+A row used to carry only the four wrapper keys, and reading a field off it
+gave `undefined` every time. That was still live in three shipped renderers
+— the dash drew blank headlines, every streamed shop review rendered as
+"Anonymous" with an empty body, and one site's "just uploaded" list was six
+identical "Untitled upload" rows. None of them failed; they rendered
+nothing, neatly.
+
+So the row now carries the item's fields too. **The four wrapper keys win on
+a collision**, so if a pool entry ever needs a field called `at`, `slot`,
+`seed` or `item`, read that one off `.item`.
+
+**Do not use a stream row as a title.** Use `SYNTH.live.titleOf(item,
+fallback)`:
+
+```js
+el('h3', null, L.titleOf(row, 'Untitled'))   // yes
+el('h3', null, row.title || row.body)        // a whole article in a headline
+```
+
+Pooled news items have a `headline`, not a `title`, so the obvious
+`it.title || it.text || it.body` chain falls straight through to the body —
+and prints its markup raw, because a title is inserted as text rather than
+parsed. Five renderers each had their own copy of that chain. `titleOf`
+prefers a headline, strips markup and truncates.
 
 **3. Never right-shift a `hash32` value.** It returns a uint32, and `>>` is a
 *signed* shift, so `h >> 3` can be negative, `negative % array.length` is
@@ -37,6 +63,30 @@ pool[(L.hash32(seed) >> 3) % pool.length] // crashes on roughly half of seeds
 ```
 
 One renderer shipped crashing on this and another had eight latent instances.
+
+**3b. Use `SYNTH.live.hash32`, and if you must write your own, use
+`Math.imul`.**
+
+```js
+h = Math.imul(h, 16777619);    // yes
+h = (h * 16777619) >>> 0;      // a build failure, and here is why
+```
+
+The second is the obvious spelling of an FNV-1a step and it is wrong in
+JavaScript. Numbers are IEEE754 doubles; the product reaches 2^55, past the
+53 bits a double carries, so it is rounded — and rounding a number that
+large discards the **low** bits, which is exactly what `% pool.length`
+reads. Bucketing 40,000 of those hashes by `& 7` gave 21,768 in one bucket
+and 4 in another.
+
+It made most of this network unreachable for eighteen months. Seven of the
+grammar's twenty-eight canon nouns were drawn essentially never; "the Signal
+on 62" did not appear once in 4,000 posts. Nothing failed, because a biased
+hash still produces something that looks like noise.
+
+Nine files had a local copy of it, three of them written *after* it was
+fixed, because everyone copies the helper next to them. CI now fails the
+build on the spelling.
 
 Two more, less dramatic:
 
