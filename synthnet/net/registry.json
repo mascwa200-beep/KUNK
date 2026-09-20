@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T14:53:45Z",
+  "generated": "2026-09-20T15:48:35Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -243,6 +243,25 @@
       "bytes": 60052
     },
     {
+      "domain": "countyclips.net",
+      "title": "County Clips",
+      "type": "media",
+      "era": "2026",
+      "skin": "tubeplayer",
+      "description": "An AI-voiceover video farm with six channels and nobody in Verity County, selling the county its own biggest mysteries with the wrong dates, the wrong frequency and somebody else's photographs.",
+      "tags": [
+        "2026",
+        "video",
+        "slop",
+        "gridfall",
+        "ashkettle",
+        "substation",
+        "signal"
+      ],
+      "path": "net/sites/countyclips-net/site.json",
+      "bytes": 63637
+    },
+    {
       "domain": "countyfacts.info",
       "title": "CountyFacts - Verity County Answered",
       "type": "blog",
@@ -448,6 +467,24 @@
       ],
       "path": "net/sites/gridfalldetectorists-net/site.json",
       "bytes": 86334
+    },
+    {
+      "domain": "gridfalleats.com",
+      "title": "Gridfall Eats - Food Delivery in Gridfall, Verity County",
+      "type": "shop",
+      "era": "2026",
+      "skin": "megastore",
+      "description": "A food delivery marketplace that lists three Gridfall restaurants, one of which closed in 2019 and is still taking orders and one of which is on it twice under two spellings, with four separate fees and delivery estimates nobody checked against a map.",
+      "tags": [
+        "gridfall",
+        "food",
+        "delivery",
+        "aggregator",
+        "fees",
+        "2026"
+      ],
+      "path": "net/sites/gridfalleats-com/site.json",
+      "bytes": 105908
     },
     {
       "domain": "gridfallhost.net",
@@ -695,6 +732,24 @@
       "bytes": 79454
     },
     {
+      "domain": "milbrooknow.com",
+      "title": "Milbrook Now",
+      "type": "news",
+      "era": "2026",
+      "skin": "pinkslime",
+      "description": "The only news published about Milbrook since the town's weekly stopped in 2016, produced by a content pipeline three states away, with a Community Voices section whose three contributors nobody in the village has met.",
+      "tags": [
+        "verity",
+        "milbrook",
+        "2026",
+        "news",
+        "pinkslime",
+        "pinelock"
+      ],
+      "path": "net/sites/milbrooknow-com/site.json",
+      "bytes": 73647
+    },
+    {
       "domain": "milbrookvfw.org",
       "title": "VFW Post 6791 - Milbrook",
       "type": "page",
@@ -858,6 +913,23 @@
       ],
       "path": "net/sites/quarrycut-net/site.json",
       "bytes": 72623
+    },
+    {
+      "domain": "quarrytalk.net",
+      "title": "quarrytalk",
+      "type": "board",
+      "era": "2026",
+      "skin": "yotsuba",
+      "description": "A slow imageboard for Verity County: /loc/ for the county and /sig/ for the shortwave on 62. Up since March 2011, about forty posters, no accounts, and one arithmetic question at the posting box that has kept most of the automation out.",
+      "tags": [
+        "ashkettle",
+        "radio",
+        "locals",
+        "signal-62",
+        "measurement"
+      ],
+      "path": "net/sites/quarrytalk-net/site.json",
+      "bytes": 68308
     },
     {
       "domain": "scanner.verity.net",
@@ -1088,6 +1160,24 @@
       "bytes": 16076
     },
     {
+      "domain": "verity.town",
+      "title": "verity.town",
+      "type": "social",
+      "era": "2026",
+      "skin": "feedslate",
+      "description": "A 140-account fediverse server for Verity County, run off a kitchen table in Ashkettle on a $9 box, where the content warnings get used properly and almost nothing leaves the building.",
+      "tags": [
+        "2026",
+        "social",
+        "fediverse",
+        "moderation",
+        "ashkettle",
+        "verity"
+      ],
+      "path": "net/sites/verity-town/site.json",
+      "bytes": 78548
+    },
+    {
       "domain": "verity.wiki",
       "title": "Verity Wiki",
       "type": "wiki",
@@ -1117,6 +1207,22 @@
       ],
       "path": "net/sites/verityanswers-com/site.json",
       "bytes": 49554
+    },
+    {
+      "domain": "verityauctions.net",
+      "title": "Verity Auctions — Ottmar Auction Service",
+      "type": "market",
+      "era": "2026",
+      "skin": "classified",
+      "description": "Dean Ottmar types the sale bill on the office machine, scans it, photographs the lots himself, and posts what everything brought afterward. Four other sites copy the bills and get the dates wrong.",
+      "tags": [
+        "auctions",
+        "estates",
+        "farm",
+        "newcarrow"
+      ],
+      "path": "net/sites/verityauctions-net/site.json",
+      "bytes": 56250
     },
     {
       "domain": "veritybirders.org",
@@ -1240,6 +1346,23 @@
       ],
       "path": "net/sites/verityhistory-blog/site.json",
       "bytes": 65673
+    },
+    {
+      "domain": "verityjobs.org",
+      "title": "VerityJobs.org — Jobs in Verity County",
+      "type": "market",
+      "era": "2026",
+      "skin": "classified",
+      "description": "The county job board: one warehouse night shift posted eleven times under four agency names at four different wages, a handful of real openings, a rack of remote data entry scams, and a posting date that says today on everything because the index refreshes at two in the morning.",
+      "tags": [
+        "jobs",
+        "2026",
+        "gridfall",
+        "scam",
+        "bots"
+      ],
+      "path": "net/sites/verityjobs-org/site.json",
+      "bytes": 71996
     },
     {
       "domain": "verityledger.com",
