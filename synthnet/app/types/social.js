@@ -374,7 +374,9 @@
    * on /account, which answers each of them in turn -- on the archive sites
    * because the server that answered them is not in the copy, and on the
    * 2026 sites because a feed with no session has nothing to end. Bulletins
-   * is a 2005 word and is drawn only where it belongs. */
+   * is drawn on the archived sites only -- marla.verity.net in 2005 and
+   * pulse.gridfall.net in 2008, which is the whole span of the word. It is
+   * `archived(ctx)` that decides, not a year, so a 2026 feed never gets it. */
   function topBar(ctx, here) {
     var el = ctx.el, p = profile(ctx), old = archived(ctx);
     return el('div', { 'class': 'sn-top' },

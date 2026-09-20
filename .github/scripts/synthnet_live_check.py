@@ -1187,6 +1187,107 @@ def main():
                         f"templates render on the wiki ({tags[0]}) and "
                         "{{merge_field}} stays literal in chat, same run")
 
+            # --- 13. a forum agrees with itself ---------------------------
+            #
+            # Two numbers a board index states twice, on one screen: how many
+            # topics and posts it holds, and what year it went up.
+            #
+            # phpBB's bottom line is "posted a total of N articles in M
+            # topics", and the index above it lists a topic and post count
+            # per board. Those are the same two numbers written twice, so a
+            # page that disagrees with itself is a page arguing with itself.
+            #
+            # It did, on all eight forums. The post total was corrected
+            # against the declared per-board counts and the topic total was
+            # not, so gridfallswap's Off Topic row read 604 topics while the
+            # line beneath it said "101,900 articles in 21 topics". Nothing
+            # caught it -- it renders perfectly, and no check had ever read
+            # two numbers on one page and compared them. A screenshot did.
+            TOTALS = r"""() => {
+              const f = document.querySelector('#synth-viewport .fstats');
+              const cells = document.querySelectorAll('#synth-viewport .col-num');
+              if (!f || cells.length < 2) return null;
+              let t = 0, p = 0;
+              for (let i = 0; i + 1 < cells.length; i += 2) {
+                t += parseInt(cells[i].innerText.replace(/[^0-9]/g, '') || '0', 10);
+                p += parseInt(cells[i + 1].innerText.replace(/[^0-9]/g, '') || '0', 10);
+              }
+              const said = f.innerText.replace(/,/g, '').match(
+                /total of (\d+) articles in (\d+) topics/);
+              if (!said) return null;
+              /* The footer's founding year and whatever the site's own
+                 description claims, so the two can be read off one page.
+                 validate.py checks the DATA agrees; only a render can show
+                 that forum.js still reads `since` at all. */
+              const foot = document.querySelector('#synth-viewport .ffoot');
+              const desc = document.querySelector('#synth-viewport .fdesc');
+              const up = foot && foot.innerText.match(/uploaded in ((?:19|20)\d{2})/);
+              const claim = desc && desc.innerText.match(
+                /\b(?:since|started in|founded in)\s+((?:19|20)\d{2})\b/i);
+              return {colTopics: t, colPosts: p,
+                      saidPosts: +said[1], saidTopics: +said[2],
+                      footYear: up ? +up[1] : 0,
+                      claimYear: claim ? +claim[1] : 0};
+            }"""
+            forums = page.evaluate(
+                "() => SYNTH.data.list().filter(r => r.type === 'forum')"
+                ".map(r => r.domain)")
+            checked, dated = 0, 0
+            for dom in forums:
+                page.evaluate("(u) => SYNTH.engine.navigate(u, {push: false})",
+                              "synth://%s/" % dom)
+                page.wait_for_timeout(250)
+                t = page.evaluate(TOTALS)
+                if not t:
+                    problems.append(
+                        f"{dom}: no totals line or no board columns on the "
+                        "index -- one of the two moved and this check went "
+                        "blind rather than red")
+                    continue
+                checked += 1
+                # The totals may exceed the columns (a board can hold threads
+                # the index does not itemise); they may never fall short of
+                # them, which is the failure that was there.
+                if t["saidTopics"] < t["colTopics"]:
+                    problems.append(
+                        f"{dom}: the index columns add up to {t['colTopics']} "
+                        f"topics and the line under them says "
+                        f"{t['saidTopics']}")
+                if t["saidPosts"] < t["colPosts"]:
+                    problems.append(
+                        f"{dom}: the index columns add up to {t['colPosts']} "
+                        f"posts and the line under them says {t['saidPosts']}")
+                # A board cannot have been installed after it started taking
+                # posts. gridfallswap said 2026 in the footer and "Started in
+                # 2017" three inches above it, because the footer read the
+                # skin vintage. The optional `since` is what fixed it, and
+                # this is the half validate.py cannot see: that the renderer
+                # still reads the field.
+                if t["claimYear"]:
+                    # Counted whether it passes or fails, so the "has this
+                    # check gone blind" assertion below stays independent of
+                    # the one it guards rather than piling on beside it.
+                    dated += 1
+                    if t["footYear"] > t["claimYear"]:
+                        problems.append(
+                            f"{dom}: the footer says the board script went up "
+                            f"in {t['footYear']}, the description says the "
+                            f"board has run since {t['claimYear']}")
+            if checked < 6:
+                problems.append(
+                    f"only {checked} forums had both a totals line and board "
+                    "columns; there should be eight")
+            else:
+                notes.append(f"{checked} forums agree with their own index "
+                             "columns, topics and posts")
+            if dated < 3:
+                problems.append(
+                    f"only {dated} forum descriptions state a founding year; "
+                    "three do, so this check has stopped reading them")
+            else:
+                notes.append(f"{dated} forums state a founding year and none "
+                             "prints a later one in the footer")
+
             browser.close()
     finally:
         srv.shutdown()

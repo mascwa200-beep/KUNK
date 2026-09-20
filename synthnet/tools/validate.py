@@ -1088,6 +1088,54 @@ NOT_COUNTIES = {"The", "Your", "Our", "This", "Which", "New", "Smart", "Whole",
                 "Every", "Any", "One", "Same", "Another", "Next", "Home"}
 
 
+# "running since 2004", "Started in 2017", "online since 1998". The year a
+# site says it began, in its own description.
+#
+# Bare "since" is enough and covers "running since", "online since" and the
+# rest: alternation is tried at each word boundary, so the longer forms would
+# only ever be dead branches dressed up as thoroughness.
+SAYS_SINCE = re.compile(
+    r"\b(?:since|started in|founded in)\s+((?:19|20)\d{2})\b", re.I)
+
+
+def year_in(value):
+    """The first four-digit year in a string. Mirrors yearIn() in forum.js."""
+    match = re.search(r"(?:19|20)\d{2}", str(value if value is not None else ""))
+    return int(match.group(0)) if match else 0
+
+
+def check_founded(report, parsed):
+    """A site must not print a start date later than the one it claims.
+
+    forum.js writes "Powered by a board script someone uploaded in YYYY" in
+    the footer of every board, taking YYYY from the optional `since` and
+    falling back to the skin vintage in `era`. Those two are different
+    questions -- what decade the board LOOKS like, and when it started taking
+    posts -- and on two boards the answer differed by nine and by
+    twenty-two years, each of them contradicting a sentence in that site's
+    own description on the page above the footer.
+
+    A warning rather than an error, because it reads prose with a regex; CI
+    runs --strict, where a warning fails the build anyway.
+    """
+    for path, _folder, site in parsed:
+        if site.get("type") != "forum":
+            continue
+        said = SAYS_SINCE.search(str(site.get("description") or ""))
+        if not said:
+            continue
+        claimed = int(said.group(1))
+        # Mirrors foundedIn() in app/types/forum.js: `since` wins, then the
+        # first year in the era string.
+        printed = year_in(site.get("since")) or year_in(site.get("era"))
+        if printed and printed > claimed:
+            report.warn(rel(path),
+                        "founded: the footer will print %d, but the "
+                        "description says %r. Set \"since\": %d if the board "
+                        "predates its current skin."
+                        % (printed, said.group(0), claimed))
+
+
 def check_geography(report, parsed):
     invented = {}
     for path, _folder, site in parsed:
@@ -1294,6 +1342,7 @@ def main(argv=None):
 
     check_canon(report, parsed)
     check_geography(report, parsed)
+    check_founded(report, parsed)
     scan_external(report)
 
     if report.errors:

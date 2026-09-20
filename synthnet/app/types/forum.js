@@ -189,14 +189,30 @@
     ];
   }
 
+  /* When the board started taking posts, which is NOT the same question as
+     what decade the board looks like.
+
+     `era` is the skin vintage. Twenty-odd places across app/ read it to pick
+     a layout, so it cannot be quietly reinterpreted as a founding date -- and
+     for two boards it is not one. gridfallswap.net is skinned 2026 and its
+     own description says "Started in 2017"; sdrlisteners.org is skinned 2026
+     and says "running since 2004". Both printed 2026 in the footer, on the
+     same page as the sentence contradicting it.
+
+     So: an optional `since` when the two differ, and the era otherwise. The
+     era can be a range -- oldswap ran 2009-2016 -- and "a board script
+     someone uploaded in 2009-2016" is not a sentence. The script was
+     uploaded once, at the start, which is the first year in the range. */
+  function foundedIn(ctx) {
+    return yearIn(ctx.site && ctx.site.since) ||
+           yearIn(ctx.site && ctx.site.era) || 2003;
+  }
+
   function footer(ctx) {
     var el = ctx.el;
-    /* The era can be a range -- oldswap ran 2009-2016 -- and "a board script
-       someone uploaded in 2009-2016" is not a sentence. The script was
-       uploaded once, at the start. */
     return el('div', { 'class': 'ffoot' },
       'Powered by a board script someone uploaded in ' +
-      String(yearIn(ctx.site.era) || 2003) + '. ' +
+      String(foundedIn(ctx)) + '. ' +
       'All times are local. ',
       ctx.link('/modlog', 'Moderation log', 'backlink'));
   }
@@ -348,12 +364,22 @@
         if (p.author) authors[String(p.author)] = 1;
       });
     });
-    var declared = 0;
+    /* A board only carries the handful of threads somebody wrote out; the
+       rest of it is the number in the index row. The totals line has to
+       agree with the column above it or the page argues with itself -- and
+       it did: gridfallswap's Off Topic row read 604 topics while the line
+       under it said "101,900 articles in 21 topics", because posts were
+       corrected against the declared counts and topics were not. Both, or
+       neither. */
+    var claimedPosts = 0, claimedTopics = 0;
     allBoards(ctx).forEach(function (b) {
       var pc = parseInt(b.postCount, 10);
-      if (isFinite(pc)) declared += pc;
+      if (isFinite(pc)) claimedPosts += pc;
+      var tc = parseInt(b.topicCount, 10);
+      if (isFinite(tc)) claimedTopics += tc;
     });
-    if (declared > postTotal) postTotal = declared;
+    if (claimedPosts > postTotal) postTotal = claimedPosts;
+    if (claimedTopics > topicTotal) topicTotal = claimedTopics;
     var names = Object.keys(authors);
     var members = names.length + 12 + (h % 90);
     var newest = names.length ? names[(h >>> 7) % names.length] : 'lurker_01';

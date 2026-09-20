@@ -145,8 +145,9 @@ Every `site.json` has exactly these keys at the top level:
 | `schema` | always `1` |
 | `domain` | unique across the whole project; the folder name is this with `.` replaced by `-` |
 | `title` | shown in the chrome and the tab title |
-| `type` | one of the seven below |
-| `era` | free text, e.g. `"2004"`, `"2001-2003"`; shown in the chrome |
+| `type` | one of the twenty-one in the table below |
+| `era` | free text, e.g. `"2004"`, `"2001-2003"`; shown in the chrome. It is the **skin vintage** — what decade the site looks like — and around twenty places in `app/` read it as that. It is not a founding date |
+| `since` | optional, `forum` only, a four-digit year: when the board started taking posts, when that differs from the era. `gridfallswap.net` is skinned 2026 and has run since 2017. Without it the footer prints the era and contradicts the description; `check_founded` in the validator warns when it would |
 | `skin` | must be a skin that is legal for that `type` |
 | `description` | one sentence; indexed for search |
 | `tags` | optional array of strings, used by the directory |
