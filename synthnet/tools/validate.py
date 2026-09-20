@@ -172,6 +172,21 @@ MARKUP_PAIRS = ("b", "i", "u", "s", "quote", "code", "list", "url")
 
 
 class Report:
+    """Collects errors and warnings.
+
+    THERE IS NO SUCH THING AS A SOFT WARNING HERE. CI runs this with
+    --strict, where a warning fails the build exactly as an error does, and
+    the job stops before the standalone bundle and the APK are built -- so a
+    warning added "just to surface something" turns the branch red and takes
+    two artifacts with it. That has happened.
+
+    So before calling warn(), answer: would I want a build to stop for this?
+    If the answer is no, print it instead. The canon section at the bottom of
+    this file does both -- it prints how far each of the named people reaches
+    on every run, and warns only when one of them falls below the point where
+    the continuity is actually broken.
+    """
+
     def __init__(self):
         self.errors = []
         self.warnings = []
