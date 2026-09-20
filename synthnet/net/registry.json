@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T14:37:31Z",
+  "generated": "2026-09-20T14:47:57Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -397,6 +397,23 @@
       ],
       "path": "net/sites/gridfall-chat/site.json",
       "bytes": 39804
+    },
+    {
+      "domain": "gridfallband.org",
+      "title": "Gridfall High School Band Boosters",
+      "type": "page",
+      "era": "2010",
+      "skin": "geocities",
+      "description": "The band parents' page for the Verity Central Marching Cardinals, built by somebody's uncle on a free host in August 2010: the fruit sale, the bus wash, the uniform fund, a calendar that stops in May 2011, and a picture page where the pictures do not come up.",
+      "tags": [
+        "gridfall",
+        "school",
+        "band",
+        "fundraising",
+        "archive"
+      ],
+      "path": "net/sites/gridfallband-org/site.json",
+      "bytes": 81452
     },
     {
       "domain": "gridfalldeals.com",
