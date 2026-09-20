@@ -38,13 +38,15 @@ LEAK_MARKERS = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:", "[list
 # One representative path per site type, formatted with the first id found.
 # Kept in sync with the path table in synthnet/docs/AUTHORING.md.
 TYPE_PROBES = {
-    "forum": ["/", "/board/{board}", "/topic/{topic}"],
-    "social": ["/", "/post/{post}"],
+    "forum": ["/", "/board/{board}", "/topic/{topic}", "/faq", "/search",
+              "/members", "/account/register"],
+    "social": ["/", "/post/{post}", "/search", "/members", "/account"],
     "blog": ["/", "/post/{post}"],
     "news": ["/", "/article/{article}", "/live/{live}", "/factcheck/{check}",
              "/corrections"],
     "wiki": ["/", "/wiki/{article}"],
-    "media": ["/", "/watch/{item}"],
+    "media": ["/", "/watch/{item}", "/channels", "/members", "/search",
+              "/upload", "/signup"],
     "page": ["/"],
     # The 2026 types. Without their sub-paths listed here only the index of
     # each was ever loaded, leaving most of every new renderer unexercised --
@@ -52,7 +54,7 @@ TYPE_PROBES = {
     "aggregator": ["/", "/item/{link}"],
     "qa": ["/", "/q/{question}"],
     "board": ["/", "/t/{thread}"],
-    "shop": ["/", "/p/{product}"],
+    "shop": ["/", "/p/{product}", "/cart"],
     "market": ["/", "/l/{listing}"],
     "assistant": ["/", "/chat"],
     "mail": ["/", "/m/{message}"],
@@ -60,8 +62,13 @@ TYPE_PROBES = {
     "stream": ["/", "/w/{video}"],
     "dash": ["/"],
     "control": ["/", "/packs", "/me", "/storage"],
+    # The routes the decor sweep added. Nothing had ever rendered them: the
+    # adversarial pass pointed out that smoke's probe list stopped at the
+    # shapes each type had in 2024, so /search, /members and /account -- all
+    # brand new, all reachable from the nav on every page -- had never once
+    # been through the 360px sweep or the leaked-markup check.
     # News that is not video, plus the chat the forums migrated to.
-    "wire": ["/", "/d/{dispatch}"],
+    "wire": ["/", "/d/{dispatch}", "/kw/62"],
     "newsletter": ["/", "/i/{issue}"],
     "chat": ["/", "/c/{channel}"],
 }

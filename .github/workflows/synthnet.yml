@@ -232,6 +232,10 @@ jobs:
         # watches for the route, the DOM or the scroll to move. Likewise a
         # dead end is found by asking each site for a path that cannot exist
         # and recognising that answer, rather than guessing at its wording.
+        #
+        # Six pages a site, 109 sites, 597 pages, 214 controls pressed: 233
+        # seconds. I guessed seven or eight minutes when I added this and it
+        # is under four, so the budget stays at six.
         run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 6
 
       - name: Every renderer mode has to render once
