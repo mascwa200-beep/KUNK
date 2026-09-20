@@ -379,6 +379,40 @@ def main():
                 if complaint:
                     problems.append(f"{row['where']}: {complaint}")
 
+            # --- board post references ---------------------------------
+            #
+            # A ">>8162518" on an imageboard is a link like any other, and
+            # it can be dead like any other -- it just does not look like a
+            # URL, so nothing above would ever see it. The first version of
+            # the code that generates them recomputed a post's number from
+            # a hash instead of reading the number the post is rendered
+            # with, and every reference on every thread pointed at no post
+            # on the page. It looked completely correct.
+            for domain, entry in sorted(sites.items()):
+                if entry.get("type") != "board":
+                    continue
+                for tid in sorted(entry.get("ids", {}).get("t", set()))[:8]:
+                    page.goto(f"{base}#synth://{domain}/t/{tid}",
+                              wait_until="networkidle")
+                    page.wait_for_timeout(120)
+                    found = page.evaluate("""() => {
+                      const nos = new Set(
+                        [...document.querySelectorAll('.bd-no')]
+                          .map(n => n.innerText.replace(/\\D/g, '')));
+                      const refs = [];
+                      document.querySelectorAll('.bd-body').forEach(b => {
+                        (b.innerText.match(/>>(\\d+)/g) || [])
+                          .forEach(r => refs.push(r.slice(2)));
+                      });
+                      return {n: refs.length,
+                              dead: refs.filter(r => !nos.has(r))}; }""")
+                    checked += found["n"]
+                    for dead in found["dead"][:3]:
+                        problems.append(
+                            f"synth://{domain}/t/{tid}: the reply references "
+                            f">>{dead}, and no post on that page has that "
+                            f"number")
+
             browser.close()
     finally:
         srv.shutdown()

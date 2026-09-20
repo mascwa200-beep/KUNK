@@ -126,8 +126,38 @@
 
   function pad(n) { return n < 10 ? '0' + n : String(n); }
 
-  /* "just now" / "6 min ago" / "3 hours ago" / "Tue 14:02" / "12 Mar" */
-  function ago(ms) {
+  /* Times in site JSON are wall-clock strings -- "2019-04-11T10:22:00" -- and
+   * times from the live clock are epoch ms. Both reach ago(), so both are
+   * parsed here.
+   *
+   * Passing a string used to fail silently and completely: `now() - "2019-.."`
+   * is NaN, every `d < X` below is therefore false, and the function fell
+   * through to the absolute date at the bottom, which does parse the string.
+   * So a question asked in 2019 rendered as "11 Apr", with no year, on a site
+   * being read in 2026. Nothing threw and it looked like a date.
+   *
+   * Parsed by parts rather than through Date.parse, which reads a bare
+   * date-time as UTC under ES5 and as local under ES2016 -- a difference that
+   * would move every authored timestamp by hours depending on the engine. */
+  var AT_RE = /^(\d{4})-(\d{2})-(\d{2})(?:[T ](\d{2}):(\d{2})(?::(\d{2}))?)?/;
+
+  function toMs(v) {
+    if (typeof v === 'number') { return isFinite(v) ? v : null; }
+    if (v instanceof Date) { return v.getTime(); }
+    var m = AT_RE.exec(String(v === null || v === undefined ? '' : v));
+    if (!m) { return null; }
+    var t = new Date(
+      parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10),
+      m[4] ? parseInt(m[4], 10) : 0, m[5] ? parseInt(m[5], 10) : 0,
+      m[6] ? parseInt(m[6], 10) : 0
+    ).getTime();
+    return isFinite(t) ? t : null;
+  }
+
+  /* "just now" / "6 min ago" / "3 hours ago" / "12 Mar" / "11 Apr 2019" */
+  function ago(at) {
+    var ms = toMs(at);
+    if (ms === null) { return ''; }
     var d = now() - ms;
     if (d < 0) d = 0;
     if (d < 45000) return 'just now';
@@ -138,6 +168,11 @@
     if (d < 2 * DAY) return 'yesterday';
     if (d < 7 * DAY) return Math.round(d / DAY) + ' days ago';
     var t = new Date(ms);
+    /* Half the network is an archive. "11 Apr" on a page being read in 2026
+     * says this year, and it means 2019. */
+    if (t.getFullYear() !== new Date(now()).getFullYear()) {
+      return t.getDate() + ' ' + MONTHS[t.getMonth()] + ' ' + t.getFullYear();
+    }
     return t.getDate() + ' ' + MONTHS[t.getMonth()];
   }
 

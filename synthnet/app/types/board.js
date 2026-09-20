@@ -158,6 +158,75 @@ window.SYNTH = window.SYNTH || {};
     return 8000000 + (hash32(String(seedBase) + ':' + i) % 8999999);
   }
 
+  /* A board reply that quotes nothing is a forum post with the name taken
+   * off. The two things that make this form look like itself are the post
+   * reference and the greentext quote above the answer, and neither was
+   * reaching the streamed replies -- the ">>" here was a fallback for a row
+   * with no usable text, so in practice it never appeared at all.
+   *
+   * So a reply picks something earlier in the thread, seeded off the row, and
+   * opens against it. Roughly half the time with the number alone, a third of
+   * the time with a quoted line as well. The rest answer nothing, because a
+   * board is mostly people talking past each other.
+   *
+   * The quoted line is a real fragment of the post being answered, so the
+   * thread reads as a conversation rather than a stack. markup.js turns any
+   * line opening with ">" green; the ">>" reference is left alone, because on
+   * a board that is a link and not a quote. */
+  function quotable(s) {
+    var line = String(s || '')
+      .replace(/\[[^\]]*\]/g, ' ')
+      .split(/\n+/)
+      .map(function (x) { return x.replace(/\s+/g, ' ').trim(); })
+      .filter(function (x) { return x.length > 14 && x.charAt(0) !== '>'; })[0];
+    if (!line) { return ''; }
+    if (line.length <= 64) { return line; }
+    var cut = line.slice(0, 64);
+    var sp = cut.lastIndexOf(' ');
+    return (sp > 28 ? cut.slice(0, sp) : cut);
+  }
+
+  function replyTo(t, posts, live, j, body) {
+    var row = live[j];
+    if (!row || typeof row.seed !== 'number') { return body; }
+    if (!has('live') || !SYNTH.live.rng) { return body; }
+
+    var r = SYNTH.live.rng(row.seed);
+    var roll = r();
+    if (roll > 0.82) { return body; }          /* answers nobody */
+
+    /* Anything already in the thread: the OP, an authored reply, or an
+     * earlier streamed one. */
+    var targets = [{ no: postNo(t.id, 0), text: t.body }];
+    var i;
+    for (i = 0; i < posts.length; i++) {
+      /* postNode's own rule: an authored post may carry its number, and on
+       * this board they all do (No.1001 upward). Recomputing the hash here
+       * instead produced three references per thread that pointed at no post
+       * on the page -- the same dead-link class as app/fame.js, arriving as
+       * a number rather than a URL. */
+      var p = posts[i] || {};
+      targets.push({
+        no: p.no != null ? p.no : postNo(t.id, i + 1),
+        text: p.body
+      });
+    }
+    for (i = 0; i < j; i++) {
+      targets.push({ no: postNo('live:' + t.id, i + 1), text: strOf(live[i], '') });
+    }
+
+    var pickedAt = Math.floor(r() * targets.length);
+    var target = targets[pickedAt >= targets.length ? targets.length - 1 : pickedAt];
+    if (!target) { return body; }
+
+    var head = '>>' + target.no;
+    if (roll < 0.34) {
+      var q = quotable(target.text);
+      if (q) { head += '\n>' + q; }
+    }
+    return head + '\n' + body;
+  }
+
   function nameLine(ctx, by, kind, at, no) {
     var line = el('div', { 'class': 'bd-postinfo' });
     line.appendChild(el('span', { 'class': 'bd-name' }, text(by || 'Anonymous')));
@@ -376,7 +445,8 @@ window.SYNTH = window.SYNTH || {};
       block.appendChild(postNode(ctx, {
         by: 'Anonymous',
         kind: 'bot',
-        body: strOf(live[j], '>>' + postNo(t.id, 0) + '\nthis'),
+        body: replyTo(t, posts, live, j,
+          strOf(live[j], '>>' + postNo(t.id, 0) + '\nthis')),
         at: null
       }, 'live:' + t.id, j));
     }

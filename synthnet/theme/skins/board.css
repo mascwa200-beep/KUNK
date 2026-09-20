@@ -208,6 +208,12 @@
 
 .skin-yotsuba .bd-body a { color: #34345c; }
 
+/* Greentext. markup.js marks every line that opens with ">" on every site,
+   because people quote that way everywhere; this is the one skin that paints
+   it, because this is the one place it means something.
+   #789922 is the colour, and it is 4.6:1 on #f0e0d6. */
+.skin-yotsuba .bd-body .synth-gt { color: #789922; }
+
 .skin-yotsuba .bd-body code {
   font-family: "Courier New", Courier, monospace;
   background: #f0e0d6;

@@ -560,6 +560,50 @@ window.SYNTH = window.SYNTH || {};
     return !!(p.querySelector && p.querySelector('svg, img, a, hr'));
   }
 
+  /* Greentext. A line that opens with ">" is a quote on every board that has
+   * ever existed, and on an imageboard it is rendered green -- which is the
+   * single most identifying thing about the form, and 62chan.org shipped
+   * without it.
+   *
+   * It is done here rather than in the board renderer because the convention
+   * is not the board's: people quote with ">" on forums, in mail and in chat,
+   * and they always have. So every line that opens with one is marked, and
+   * what that looks like is the skin's business. Only .skin-yotsuba paints it
+   * green; everywhere else it stays the plain text it already was.
+   *
+   * ">>" is left alone. On a board that is a post reference, not a quote, and
+   * it is a link rather than green.
+   */
+  function markGreentext(para) {
+    var nodes = [], n;
+    for (n = para.firstChild; n; n = n.nextSibling) { nodes.push(n); }
+
+    var lineStart = true;
+    var i = 0;
+    while (i < nodes.length) {
+      n = nodes[i];
+      if (n.nodeName === 'BR') { lineStart = true; i++; continue; }
+
+      var green = lineStart &&
+        n.nodeType === 3 &&
+        /^>(?!>)/.test(String(n.nodeValue || ''));
+      lineStart = false;
+      if (!green) { i++; continue; }
+
+      /* Take every node from here to the end of the line. */
+      var run = [];
+      var j = i;
+      while (j < nodes.length && nodes[j].nodeName !== 'BR') { run.push(nodes[j]); j++; }
+
+      var span = document.createElement('span');
+      span.className = 'synth-gt';
+      para.insertBefore(span, run[0]);
+      for (var k = 0; k < run.length; k++) { span.appendChild(run[k]); }
+      i = j;
+    }
+    return para;
+  }
+
   function emitBlocks(children, parent) {
     var para = null;
 
@@ -572,7 +616,7 @@ window.SYNTH = window.SYNTH || {};
     }
     function flush() {
       if (para) {
-        if (paraHasContent(para)) parent.appendChild(para);
+        if (paraHasContent(para)) parent.appendChild(markGreentext(para));
         para = null;
       }
     }
