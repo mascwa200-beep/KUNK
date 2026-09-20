@@ -239,3 +239,45 @@
   display: inline-block;
 }
 .synth-b-stat-src { opacity: 0.75; }
+
+/* --- the new-arrivals pill --------------------------------------------
+ *
+ * Content arrived while you were reading. Real feeds do not shove it into
+ * the page under your thumb; they offer it. Clicking re-renders, which is
+ * the one moment when replacing what you are looking at is what you asked
+ * for. Drawn by app/tick.js.
+ *
+ * Sticky rather than fixed: it should scroll with the page it belongs to,
+ * and a fixed element would sit over the next site after you navigate. */
+.lv-pill {
+  position: sticky;
+  top: 4px;
+  z-index: 20;
+  display: block;
+  margin: 4px auto 8px auto;
+  padding: 5px 14px;
+  border: 1px solid #2f6a9e;
+  border-radius: 11px;
+  background: linear-gradient(#4d92c8, #2f6a9e);
+  color: #fff;
+  font: bold 12px/1.4 "Segoe UI", Tahoma, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+}
+
+.lv-pill:hover { background: linear-gradient(#5ba2d8, #3777ad); }
+.lv-pill:active { background: linear-gradient(#2f6a9e, #4d92c8); }
+
+.lv-pill-arrow { margin-right: 5px; }
+
+/* The pill appears without warning, so it gets one short movement to be
+ * noticed by. Anyone who has asked not to see motion gets none. */
+@keyframes lv-pill-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.lv-pill { animation: lv-pill-in 180ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lv-pill { animation: none; }
+}

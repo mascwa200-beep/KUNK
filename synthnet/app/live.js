@@ -155,21 +155,128 @@
     return extra.length ? base.concat(extra) : base;
   }
 
+  /* --- rhythm -----------------------------------------------------------
+   *
+   * A network that posts at exactly the same rate at 4am on a Tuesday as at
+   * 9pm on a Saturday is not a network, it is a metronome. This is the one
+   * cheapest thing that makes a place feel inhabited rather than merely
+   * populated: the same feed, read at different hours, should feel busy or
+   * abandoned.
+   *
+   * It is expressed as slots being skipped rather than as fewer items being
+   * returned, so a quiet hour never produces an empty page -- it produces a
+   * page whose last ten posts span six hours instead of forty minutes.
+   * Which is what a dead forum at 4am actually looks like.
+   */
+
+  /* Reach by hour, local time. Mirrors the curve in fame.js, which models
+   * the same thing from the other end (how far YOUR post travels). */
+  var HOUR_WEIGHT = [
+    0.34, 0.28, 0.22, 0.20, 0.22, 0.30,
+    0.48, 0.66, 0.82, 0.88, 0.86, 0.90,
+    1.00, 0.92, 0.84, 0.84, 0.92, 1.04,
+    1.18, 1.30, 1.34, 1.22, 0.92, 0.58
+  ];
+
+  /* Sunday..Saturday. Weekends run later and louder; Monday is nobody's
+   * best day; Friday evening starts early. */
+  var DAY_WEIGHT = [1.06, 0.92, 0.97, 0.99, 1.00, 1.08, 1.12];
+
+  /* Never below this, or a page drawn at 4am looks broken rather than
+   * quiet -- and CI, which runs at whatever hour it runs, would flake. */
+  var QUIET_FLOOR = 0.34;
+
+  function busyness(ms) {
+    var d = new Date(ms === undefined ? now() : ms);
+    var hourOfDay = d.getHours() + d.getMinutes() / 60;
+    var lo = HOUR_WEIGHT[Math.floor(hourOfDay) % 24];
+    var hi = HOUR_WEIGHT[(Math.floor(hourOfDay) + 1) % 24];
+    var frac = hourOfDay - Math.floor(hourOfDay);
+    var hour = lo + (hi - lo) * frac;      /* smooth, not stepped on the hour */
+    var w = hour * DAY_WEIGHT[d.getDay()];
+    return w < QUIET_FLOOR ? QUIET_FLOOR : (w > 1 ? 1 : w);
+  }
+
+  /* Did anything actually get posted in this slot? Deterministic per
+   * (key, slot), so the same slot is always either live or not -- a slot
+   * that flickered would make posts appear and disappear on a refresh. */
+  function slotLive(key, slot, intervalMin) {
+    var at = EPOCH + slot * intervalMin * MINUTE;
+    return rng(key + ':live:' + slot)() < busyness(at);
+  }
+
+  /* --- the arrivals ledger ---------------------------------------------
+   *
+   * Every live feed on the network goes through stream(), which makes it the
+   * one place that knows what a page is watching and which slot it was
+   * watching when it drew. Recording that costs nothing and lets the
+   * heartbeat say exactly how many things have arrived since -- "4 new
+   * posts", counted, not estimated -- without a single renderer having to
+   * opt in or report anything.
+   *
+   * The engine clears this immediately before each render, so the ledger
+   * always describes the page currently on screen. */
+  var ledger = {};
+
+  function resetLedger() { ledger = {}; }
+
+  /* [{key, interval, slot}] as of the last render. */
+  function ledgerRows() {
+    var out = [], k;
+    for (k in ledger) {
+      if (Object.prototype.hasOwnProperty.call(ledger, k)) out.push(ledger[k]);
+    }
+    return out;
+  }
+
+  /* How many slots have ticked over on the watched streams since the page
+   * drew. This is the number behind the "N new posts" pill. */
+  function arrivals() {
+    var rows = ledgerRows(), total = 0, i, s;
+    for (i = 0; i < rows.length; i++) {
+      var nowSlot = Math.floor(minutesSinceEpoch() / rows[i].interval);
+      /* Count only the slots that were actually busy enough to post in, or
+       * the pill would promise four new posts at 4am and deliver one. Capped
+       * because a tab left open for a month should say "lots", not spend a
+       * second counting to 40,000. */
+      var from = Math.max(rows[i].slot + 1, nowSlot - 400);
+      for (s = from; s <= nowSlot; s++) {
+        if (slotLive(rows[i].key, s, rows[i].interval)) total++;
+      }
+    }
+    return total;
+  }
+
   function stream(key, poolOrName, intervalMin, count) {
     var pool = resolvePool(poolOrName);
     if (!pool.length) return [];
     var current = Math.floor(minutesSinceEpoch() / intervalMin);
+    /* Keyed by stream key so a renderer calling the same stream twice (an
+     * index and a sidebar, say) does not count its arrivals twice. */
+    ledger[key] = { key: key, interval: intervalMin, slot: current };
+
+    /* Walk back through slots, keeping only the ones that were busy enough
+     * to have produced a post (see slotLive). Scanning further than `count`
+     * means a quiet night still fills the page -- it just reaches further
+     * back to do it, so the timestamps spread out instead of the feed
+     * emptying. The cap stops a pathologically quiet stretch walking back
+     * through years of slots looking for ten posts. */
     var out = [];
-    for (var i = 0; i < count; i++) {
-      var slot = current - i;
-      if (slot < 0) break;
-      var h = hash32(key + ':' + slot);
-      out.push({
-        slot: slot,
-        at: EPOCH + slot * intervalMin * MINUTE,
-        item: pool[h % pool.length],
-        seed: h
-      });
+    var scanned = 0;
+    var limit = count * 8;
+    var slot = current;
+    while (out.length < count && slot >= 0 && scanned < limit) {
+      if (slotLive(key, slot, intervalMin)) {
+        var h = hash32(key + ':' + slot);
+        out.push({
+          slot: slot,
+          at: EPOCH + slot * intervalMin * MINUTE,
+          item: pool[h % pool.length],
+          seed: h
+        });
+      }
+      slot--;
+      scanned++;
     }
     return out;
   }
@@ -335,6 +442,11 @@
     longDate: longDate,
     stream: stream,
     pool: resolvePool,
+    resetLedger: resetLedger,
+    ledgerRows: ledgerRows,
+    arrivals: arrivals,
+    busyness: busyness,
+    slotLive: slotLive,
     siteFor: siteFor,
     domainFor: domainFor,
     linkTo: linkTo,

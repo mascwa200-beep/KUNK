@@ -36,6 +36,7 @@ var SHELL = [
   './app/render.js',
   './app/live.js',
   './app/liveui.js',
+  './app/tick.js',
   './app/store.js',
   './app/me.js',
   './app/packs.js',

@@ -1325,6 +1325,14 @@ window.SYNTH = window.SYNTH || {};
         });
 
         var pageTitle = site.title || loc.domain;
+
+        /* Clear the arrivals ledger immediately before the renderer runs, so
+         * whatever it asks live.stream() for becomes the record of what THIS
+         * page is watching. app/tick.js compares against it to say how many
+         * things have arrived since. */
+        if (SYNTH.live && SYNTH.live.resetLedger) SYNTH.live.resetLedger();
+        if (SYNTH.tick && SYNTH.tick.reset) SYNTH.tick.reset();
+
         var ctx = {
           site: site,
           path: loc.path,
@@ -1570,6 +1578,12 @@ window.SYNTH = window.SYNTH || {};
 
     var h = String(location.hash || '').replace(/^#/, '');
     var start = /^synth:\/\//i.test(h) ? h : HOME_URL;
+
+    /* The heartbeat. Until this existed the page painted once and froze, so
+     * the network moved between visits and was a still photograph during
+     * one. See app/tick.js for what it does and, more importantly, for what
+     * it deliberately does not. */
+    if (SYNTH.tick && SYNTH.tick.start) SYNTH.tick.start();
 
     /* Wait for storage before the first render.
      *

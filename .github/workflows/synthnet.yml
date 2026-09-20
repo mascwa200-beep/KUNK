@@ -20,6 +20,7 @@ on:
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_live_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -27,6 +28,7 @@ on:
       - ".github/scripts/synthnet_smoke.py"
       - ".github/scripts/synthnet_user_check.py"
       - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_live_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -139,6 +141,13 @@ jobs:
         # those fails silently with the page still rendering perfectly, which
         # is the failure mode that has already shipped twice here.
         run: python3 .github/scripts/synthnet_user_check.py --root synthnet
+
+      - name: The network has to actually move
+        # A frozen page renders perfectly, so every other check stays green
+        # while the whole premise of the project quietly stops being true.
+        # This pins the clock and asserts the page moves when it moves, does
+        # not move when it does not, and is busier at 9pm than at 4am.
+        run: python3 .github/scripts/synthnet_live_check.py --root synthnet
 
       - name: Every link the app generates must resolve
         # validate.py checks the synth:// links written inside site JSON. It

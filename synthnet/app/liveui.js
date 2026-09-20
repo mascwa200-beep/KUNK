@@ -89,7 +89,13 @@
     var users = l.online(domain, low || 40, high || 900);
     var guests = Math.round(users * (0.55 + (l.rng(domain)() * 0.3)));
     var bots = Math.max(1, Math.round(users * 0.93));
-    return el('div', { 'class': 'lv-online' },
+    /* data-lv-online is what app/tick.js reads to repaint this in place
+     * every few seconds. Without it the number is computed once at paint
+     * and then sits there, which is the tell that a page is a screenshot. */
+    return el('div', {
+      'class': 'lv-online',
+      'data-lv-online': domain + ':' + (low || 40) + ':' + (high || 900)
+    },
       el('span', { 'class': 'lv-dot' }, ''),
       el('span', {}, l.commas(users) + ' users online'),
       el('span', { 'class': 'lv-online-sep' }, '·'),
@@ -117,7 +123,10 @@
     var items = l.pool('tickers');
     if (!items.length) return null;
     var chosen = l.sample(items, count || 8, 'ticker:' + Math.floor(l.minutesSinceEpoch() / 11));
-    var strip = el('div', { 'class': 'lv-ticker' });
+    var strip = el('div', {
+      'class': 'lv-ticker',
+      'data-lv-ticker': String(seed || 'ticker') + ':' + (count || 8)
+    });
     var rail = el('div', { 'class': 'lv-ticker-rail' });
     for (var i = 0; i < chosen.length; i++) {
       rail.appendChild(el('span', { 'class': 'lv-ticker-item' }, chosen[i]));
