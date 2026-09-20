@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "domain": "verity-transit.gov",
+  "title": "Verity County Transit Division",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Two bus routes, a dial-a-ride line that answers three and a half hours a day, and a detour around the Quarry Road culvert that has been posted since July.",
+  "tags": ["verity", "county", "transit", "2026"],
+  "links": [
+    "verity.county.gov",
+    "boards.gridfall.net",
+    "dash.verity.net",
+    "trailusers.verity.net",
+    "thequarry.news",
+    "ask.verity.ai",
+    "pulse.gridfall.net"
+  ],
+  "data": {
+    "agency": "Verity County Transit Division",
+    "motto": "Fixed route and dial-a-ride service for the seven towns.",
+    "notices": [
+      "SERVICE ALERT - ROUTE 7 DETOUR. Quarry Road is closed to vehicles over 8 tons between Depot Street and the County Route 62 junction following a culvert failure. Route 7 is detouring by way of Mill Street in both directions, adding approximately 9 minutes to each trip. The Depot & Quarry stop is not being served. The nearest served stop is Mill & Third, 0.4 miles. Posted 6 July 2026. This alert will be updated when the County Highway Department provides a reopening date.",
+      "The reopening date referenced in the Route 7 alert has not been provided to this office. The alert above remains current and is reviewed weekly. It was last reviewed on 6 July 2026.",
+      "Dial-A-Ride reservations are taken at 782-4118, Monday through Friday, 8:00 AM to 11:30 AM. The line is not staffed outside those hours and does not take messages. Reservations must be placed by 2:00 PM the business day before the trip, which is two and a half hours after the line closes. The Division is aware of this.",
+      "Fixed route fare is $1.75. The fareboxes do not make change and the operators are not permitted to carry any. A transfer to the other route is $0.25 and is good for 90 minutes, which is longer than either route takes to run end to end.",
+      "The County does not sell transit passes on any website other than this one. Residents have reported a site at [url=synth://verity-transit-passes.top/]verity-transit-passes.top[/url] that takes card payments for a monthly pass and mails nothing. It is not operated by the County. Reduced fare passes are issued through [url=synth://verity.county.gov/s/transit-pass]the County services portal[/url] and are free to apply for.",
+      "Real-time vehicle positions are published to [url=synth://dash.verity.net/]dash.verity.net[/url]. The feed reports the vehicle's last known position, which on Route 7 is frequently the Ashkettle turnaround, because that is where the modem last had signal. A bus shown at the Ashkettle turnaround is not necessarily at the Ashkettle turnaround.",
+      "Automated answers about County services, including this one, may be produced by [url=synth://ask.verity.ai/]VerityAssist[/url]. The Transit Division does not review those answers. In particular, the Division has been asked four times this year about a Route 12, which does not exist and has not existed."
+    ],
+    "services": [
+      {
+        "id": "route-4",
+        "name": "Route 4 - Gridfall / Marchfield",
+        "blurb": "Hourly weekday service between the Depot Street Transfer Point in Gridfall and County General Hospital in Marchfield, by way of Third Street, the Gridfall Plaza, and the Marchfield town hall.",
+        "status": "online",
+        "lastUpdated": "2026-09-06",
+        "steps": [
+          "Weekdays, first outbound 6:10 AM from Depot Street, last outbound 6:10 PM. Last return from County General 6:55 PM.",
+          "Saturdays, four round trips: 8:10, 10:10, 12:10 and 2:10. No Sunday or holiday service on either route.",
+          "End to end is 38 minutes scheduled and 44 minutes actual. The schedule has not been retimed since 2019.",
+          "Flag stops are permitted between marked stops on the Marchfield Road segment only, in daylight, on the right-hand side. Stand where the operator can see you from at least 200 feet.",
+          "The bus holds two wheelchairs on the front ramp positions. The ramp is deployed by the operator and takes about 90 seconds. Nobody minds.",
+          "Bicycles ride on the front rack, two per bus, first come. The rack on vehicle 412 has a bent tine and holds one."
+        ],
+        "forms": [
+          { "name": "Route 4 Weekday Timetable (single sheet)", "note": "Printed on green paper. Available in the rack at the Depot Street shelter and at the County General information desk. The version in the rack is dated September 2025 and the times on it are still correct." },
+          { "name": "Route 4 Saturday Timetable (single sheet)", "note": "Printed on the back of the weekday sheet. Riders regularly do not turn the sheet over and this accounts for most of the Saturday calls to dispatch." }
+        ]
+      },
+      {
+        "id": "route-7",
+        "name": "Route 7 - Gridfall / Ashkettle / Coyne Flats",
+        "blurb": "Four round trips each weekday out County Route 62 through Ashkettle to Coyne Flats. Currently operating a detour. See the service alert at the top of this page.",
+        "status": "degraded",
+        "lastUpdated": "2026-07-06",
+        "steps": [
+          "Weekdays only. Departs Depot Street at 6:45 AM, 10:15 AM, 1:45 PM and 4:45 PM. Returns from Coyne Flats at 7:50, 11:20, 2:50 and 5:50.",
+          "DETOUR IN EFFECT: outbound and inbound trips use Mill Street to the Route 62 junction instead of Quarry Road. Add 9 minutes to every timepoint on the printed schedule.",
+          "The Depot & Quarry stop, at the transformer yard fence, is not served during the detour. Use Mill & Third.",
+          "The flag stop at County Route 62 and Kestrel Road is listed on the schedule as BLUE KESTREL. This is the shelter across the road from the building with the neon bird on it, which is now a phone repair shop. The Division has been asked to relabel the stop and has it on a list.",
+          "Ashkettle riders should note that the 4:45 PM trip does not enter the Ashkettle loop and serves the Route 62 stops only. This is the trip most people want.",
+          "There is no service to Halsey, New Carrow or Milbrook on any route. Residents of those towns use Dial-A-Ride."
+        ],
+        "forms": [
+          { "name": "Route 7 Timetable with Detour Insert (two sheets)", "note": "The detour insert is a half sheet, photocopied, that says ADD 9 MINUTES and gives the Mill & Third walking directions. It has been the current insert since 8 July 2026. The Division has printed 600 of them." },
+          { "name": "Route 7 Flag Stop Guide (Form VT-31)", "note": "PDF. One page, mostly a map. Shows Quarry Road as open, because it was when the map was drawn in 2021." }
+        ]
+      },
+      {
+        "id": "culvert",
+        "name": "Quarry Road Culvert - Closure and Detour",
+        "blurb": "Status of the Quarry Road closure between Depot Street and the County Route 62 junction, and the Route 7 detour it requires.",
+        "status": "degraded",
+        "lastUpdated": "2026-07-06",
+        "steps": [
+          "The 48-inch corrugated pipe carrying Mill Run under Quarry Road, approximately 300 feet north of Depot Street, separated at a joint during the storm on the night of 2 July 2026.",
+          "A void was found under the northbound lane on 3 July. The road was posted at 8 tons the same afternoon. A loaded Route 7 bus is about 14 tons.",
+          "The culvert is a County Highway Department asset. Transit does not own it, does not schedule the work, and cannot give a reopening date. Transit owns the detour and the detour is the part this office can answer for.",
+          "Highway's engineering estimate was completed in August. The first bid opening drew one bid, over the estimate, and was not awarded. Highway has told this office the work will be re-bid.",
+          "Residents have asked why the detour does not simply use the old crossing at Kestrel Road. The crossing gates were removed in autumn 2008 when the branch line was abandoned and the approach grade was never rebuilt. A transit bus cannot make it.",
+          "A rider on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] has been posting the week number in the Route 7 thread every Monday morning since this alert went up. As of this Monday he was at eleven."
+        ],
+        "forms": [
+          { "name": "Detour Comment Card (Form VT-2)", "note": "Available on the bus and at the Depot Street shelter. Forty-one have been returned. Thirty-eight of them ask when Quarry Road will reopen, which is the one question on the card this office cannot answer." },
+          { "name": "Highway Department Culvert Status - Project 26-QR-04", "note": "Not a Transit form. Status inquiries go to Highway at 782-4020. Ruth Cannady has been following the project in [url=synth://thequarry.news/]The Quarry[/url] and has said she will print the engineer's estimate and the bid numbers once the re-bid opens. Until then the packet is a records request, on [url=synth://verity.county.gov/s/records-request]Form VC-9[/url], and this office does not hold it." }
+        ]
+      },
+      {
+        "id": "dial-a-ride",
+        "name": "Verity Dial-A-Ride",
+        "blurb": "Curb-to-curb demand response service anywhere in the county for registered riders. This is the only public transportation available in Halsey, New Carrow, Milbrook and most of the unincorporated county.",
+        "status": "online",
+        "lastUpdated": "2026-09-06",
+        "steps": [
+          "Register once, using Form VT-9 below. Registration does not expire. It has never expired for anybody.",
+          "Reserve by phone at 782-4118, weekdays 8:00 AM to 11:30 AM, no later than 2:00 PM the business day before your trip.",
+          "Fares are $3.50 each way within one town and $6.00 each way town to town. Exact fare. Personal care attendants ride free and do not need to register.",
+          "Medical trips to County General have booking priority and are the only trips guaranteed a same-day return.",
+          "The vehicle will wait five minutes at the curb. Operators are instructed to knock once at residences where the rider has asked them to. Write that on the form if you need it.",
+          "Rides are shared. A 20-minute trip can take 50 minutes. If you have an appointment, tell the reservationist the appointment time, not the pickup time you want."
+        ],
+        "forms": [
+          { "name": "Dial-A-Ride Eligibility and Registration (Form VT-9)", "note": "Two pages. Page 1 is the rider. Page 2 is signed by a physician only if you are requesting ADA paratransit priority, which you do not need for ordinary registration. Most of the forms that come back have a blank page 2 and get held for 30 days waiting for a signature nobody needed." },
+          { "name": "Form VT-9 (online submission)", "note": "The online version works and submits. It submits to a shared mailbox that is opened on Tuesdays. If you mail the paper form to the Depot Street office it is typically processed the next business day, which is why the counter staff tell people to mail it." },
+          { "name": "Standing Order Request (Form VT-9S)", "note": "For the same trip at the same time every week, such as dialysis. Fill this out. It means you do not have to call the 8:00 AM line at all, and the 8:00 AM line is the worst part of this service." }
+        ]
+      },
+      {
+        "id": "timetables",
+        "name": "System Timetable and Route Map",
+        "blurb": "The complete printed timetable for both routes, the system map, the fare table and the Title VI notice, in one document.",
+        "status": "offline",
+        "lastUpdated": "2026-03-14",
+        "steps": [
+          "The current edition is the System Timetable effective Sunday 6 September 2026: eight pages, 1.2 MB, portrait, saddle-stapled in print.",
+          "Page 1 is the cover and the fare table. Page 2 is the system map. Pages 3 and 4 are Route 4 weekday and Saturday. Page 5 is Route 7 with the detour insert reproduced. Page 6 is Dial-A-Ride. Page 7 is holiday and snow-route service. Page 8 is the Title VI notice in English and Spanish.",
+          "The PDF is not on the server. It has not been on the server since the portal was migrated in March 2026, and this office does not have the file either. The vendor that did the migration has been asked.",
+          "Printed copies are in the rack at the Depot Street shelter when the rack has copies in it. The rack is refilled Mondays.",
+          "The library in Marchfield keeps a copy at the reference desk and will photocopy the page you need."
+        ],
+        "forms": [
+          { "name": "Verity County Transit System Timetable, effective 6 September 2026 (PDF, 1.2 MB)", "note": "Link is present on this page and returns an error. Reported 17 March, 2 April, 19 June and 31 August 2026. Ticket numbers were issued for all four reports. Two of the tickets have been closed as duplicates of each other." },
+          { "name": "System Map only (PDF)", "note": "Also not on the server. A photograph of the map from the shelter wall gets posted to [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url] about twice a year and is, at present, the most reliable way to see it." }
+        ]
+      },
+      {
+        "id": "fares",
+        "name": "Fares, Passes and Reduced Fare",
+        "blurb": "Fare rates, the monthly pass, and how to get a reduced fare card if you are 65 or over, a student, or a rider with a disability.",
+        "status": "online",
+        "lastUpdated": "2026-09-06",
+        "steps": [
+          "Single ride $1.75. Transfer $0.25, valid 90 minutes. Children under 6 free, limit two per fare-paying adult.",
+          "Monthly pass $48, reduced monthly pass $24. Sold at the Depot Street office and at the Marchfield town hall counter, cash or check.",
+          "Reduced fare cards are applied for through the County services portal on Form VC-55, not here. Apply at [url=synth://verity.county.gov/s/transit-pass]verity.county.gov[/url]. Cards arrive in about ten business days.",
+          "A reduced fare card is not required to pay the reduced cash fare if you are visibly over 65 and the operator knows you, which on these routes is most people.",
+          "Dial-A-Ride fares are separate and are not covered by the monthly pass. This is the single most common complaint the Division receives and the Division agrees with it."
+        ],
+        "forms": [
+          { "name": "Reduced Fare Application (Form VC-55)", "note": "County form, not a Transit form. Fillable PDF, hosted on the County portal, where it does work." },
+          { "name": "Employer Pass Program (Form VT-18)", "note": "For employers of 15 or more. Two employers in the county participate. One of them is the County." }
+        ]
+      },
+      {
+        "id": "accessibility",
+        "name": "Accessibility Statement",
+        "blurb": "The Division's statement on the accessibility of this website and of its vehicles and facilities.",
+        "status": "degraded",
+        "lastUpdated": "2017-04-11",
+        "steps": [
+          "This website is designed to conform to the Web Content Accessibility Guidelines 2.0 Level AA. It is best viewed at a screen resolution of 1024 by 768 or greater.",
+          "Documents on this site are provided in Adobe PDF format. To view PDF files you may download the free Adobe Acrobat Reader from the Adobe website.",
+          "Riders requiring an accessible format of any published schedule may request one through the Accessible Trip Planner, or by contacting the ADA Coordinator.",
+          "TTY users may reach the Division at 782-4119.",
+          "This statement was adopted 11 April 2017 and is reviewed annually."
+        ],
+        "forms": [
+          { "name": "Accessible Format Request", "note": "The Accessible Trip Planner referenced above was retired in 2021 and its page was removed in the March 2026 migration. The link in the statement goes nowhere. Requests for an accessible format should be made by phone to the Depot Street office, which will read you the schedule or mail you a large-print sheet, usually the same week." },
+          { "name": "ADA Coordinator - contact", "note": "The ADA Coordinator position has been shared with Public Works since 2018 and the number in the statement rings at the Gridfall office switchboard. The switchboard will take a message and it will be returned. The statement has not been revised to say so because the statement is reviewed annually and the review is a line item that gets checked off." },
+          { "name": "Vehicle and Facility Accessibility", "note": "Both fixed-route buses are lift-equipped and both lifts are tested monthly. The Depot Street shelter has a level approach and a bench. The Coyne Flats stop does not have a shelter, a bench, or a sidewalk, and the Division has asked for one every budget cycle since 2016." }
+        ]
+      },
+      {
+        "id": "lost-found",
+        "name": "Lost and Found",
+        "blurb": "Items left on a County Transit vehicle are turned in at the end of the operator's shift and held at the Depot Street office.",
+        "status": "paper-only",
+        "lastUpdated": "2024-10-02",
+        "steps": [
+          "Call 782-4110 or come to the Depot Street office, weekdays 7:00 AM to 3:30 PM.",
+          "Describe the item. Staff will look in the bin and check the log book. There is no online lookup and there is not going to be one.",
+          "Items are held 30 days. Identification, keys, medication and phones are held 90 days.",
+          "Unclaimed items go to the thrift shop on Third Street in January and July.",
+          "Bicycles left on a rack are walked into the office and leaned against the filing cabinet. Two have been there since spring."
+        ],
+        "forms": [
+          { "name": "Lost and Found Log", "note": "A spiral notebook on the counter. Entries are made in pen. It goes back to 2011 and has never been transcribed anywhere." }
+        ]
+      },
+      {
+        "id": "service-change",
+        "name": "Service Changes and Public Comment",
+        "blurb": "Proposed changes to routes, schedules and fares, and how to comment on them. Required public hearings are noticed here and in the legal notices.",
+        "status": "online",
+        "lastUpdated": "2026-08-18",
+        "steps": [
+          "The annual service review opened 6 July 2026 and closed 14 August 2026. The public hearing was held 11 August at 4:00 PM in the Gridfall municipal building.",
+          "Two members of the public attended. Twenty-two written comments were received, nineteen of them about Quarry Road.",
+          "No service changes were adopted. The September timetable is the same as the March timetable with the detour incorporated.",
+          "Comments outside a review period are still read and logged. Use Form VT-2 or write to the Depot Street office.",
+          "Trail users asking about bus access to the Verity Branch Trail trailheads should see the discussion at [url=synth://trailusers.verity.net/board/b-cond]trailusers.verity.net[/url]. Route 4 passes within a quarter mile of the Marchfield trailhead and the Division is aware this is not the same as serving it."
+        ],
+        "forms": [
+          { "name": "Public Comment (Form VT-2)", "note": "One page. Free text. Also used as the detour comment card." },
+          { "name": "Title VI Complaint (Form VT-6)", "note": "PDF. Federal requirement. Must be filed within 180 days. The Division has received two complaints since 2015, both about the same bus stop being moved 60 feet." },
+          { "name": "Public Hearing Minutes, 11 August 2026", "note": "Three paragraphs. Available on request. The Division was asked at the hearing whether the timetable PDF would be restored before the next review and the minutes record the answer as 'the vendor has been contacted'." }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact and Office Hours",
+        "blurb": "Depot Street office, dispatch, and who to call for what.",
+        "status": "online",
+        "lastUpdated": "2026-09-06",
+        "steps": [
+          "Depot Street office and shelter, 118 Depot Street, Gridfall. Weekdays 7:00 AM to 3:30 PM, closed 11:30 to 12:00.",
+          "Dispatch 782-4110. Dial-A-Ride reservations 782-4118, 8:00 to 11:30 AM only. TTY 782-4119.",
+          "Fixed-route operations are performed under contract by Pellham Coach Lines. Complaints about an operator come to this office, not to Pellham, and this office will not forward your name unless you ask it to.",
+          "The Division has four staff: an administrator, a dispatcher, a reservationist and a half-time clerk. The clerk is the one who fills the timetable rack.",
+          "If nobody answers, the dispatcher is outside with a bus. Call back in ten minutes. There is no voicemail on the dispatch line, which is deliberate."
+        ],
+        "forms": [
+          { "name": "Operator Commendation or Complaint (Form VT-2)", "note": "Same form as everything else. The commendations are almost all for the same two operators and are almost all about a Dial-A-Ride pickup in weather." },
+          { "name": "Pellham Coach Lines - contract inquiries", "note": "Off-site. The contractor is at [url=synth://pellhamcoach.synth/]pellhamcoach.synth[/url]. The current contract runs through June 2028 and a copy is on file at the Depot Street office for public inspection during office hours." }
+        ]
+      }
+    ]
+  }
+}

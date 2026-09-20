@@ -1,0 +1,904 @@
+{
+  "schema": 1,
+  "domain": "gridfall-help.chat",
+  "title": "Verity Help Desk (unofficial)",
+  "type": "chat",
+  "era": "2026",
+  "skin": "chatdark",
+  "description": "A small chat server where people in Verity County ask each other why the printer is doing that, including a read-only import of the Users Group board that closed in 2014.",
+  "tags": ["gridfall", "verity", "computers", "help", "archive"],
+  "links": [
+    "boards.gridfall.net",
+    "gridfall.chat",
+    "wiki.gridfall.net",
+    "marchfieldlibrary.blog",
+    "verity.county.gov",
+    "countysupply.store",
+    "sdrlisteners.org",
+    "askverity.com"
+  ],
+  "data": {
+    "serverName": "Verity Help Desk (unofficial)",
+    "memberCount": 241,
+    "onlineCount": 9,
+    "channels": [
+      {
+        "id": "c-general",
+        "name": "general",
+        "kind": "text",
+        "topic": "Computer help. Not the county. The county does not have one of these.",
+        "messages": [
+          {
+            "by": "dwiles",
+            "at": "2026-08-03T09:12:00",
+            "body": "Rules: ask the actual question, put the actual model number in it, and say what you already tried. That is the whole thing."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-03T09:13:00",
+            "body": "I run the phone repair place on 62. I am not IT for the county, the schools, the library or the fire hall, and I keep having to say that, so I am saying it at the top."
+          },
+          {
+            "by": "hbagshaw",
+            "at": "2026-08-19T12:40:00",
+            "body": "is this the county help desk, i got given this"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-19T12:44:00",
+            "body": "No."
+          },
+          {
+            "by": "hbagshaw",
+            "at": "2026-08-19T12:45:00",
+            "body": "the woman at the annex wrote it on the back of a form"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-19T12:51:00",
+            "body": "I know. They have been doing that since about March. I have asked twice and both times she said she would stop and both times she was being kind about it, so."
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-08-19T13:20:00",
+            "body": "For the record, the annex does it because the number on [url=synth://verity.county.gov/]the county site[/url] rings a desk that was cut in 2021 and there is nobody left who can take the page down. It is not a person refusing. It is a login."
+          },
+          {
+            "by": "SupportGenie",
+            "at": "2026-08-19T13:20:40",
+            "kind": "bot",
+            "body": "Verity County residents can reach the county technology help desk Monday through Friday, 8:00 a.m. to 4:30 p.m. Staff are available to assist with password resets, printing and email access. For urgent matters, residents should contact their department administrator. Is there anything else I can help you with today?"
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-08-19T13:31:00",
+            "body": "There is no county technology help desk. There is a man called Ross who does the annex, the sheriff's and the two libraries, and he is also the person who salts the steps."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-19T13:40:00",
+            "body": "Who added that bot"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-19T13:41:00",
+            "body": "It was me. In June. I am leaving it up because it is right about forty percent of the time, which is roughly the internet, and because when it is wrong it is wrong in a way that gets somebody who actually knows to come and correct it. That is a support strategy."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-08-26T18:02:00",
+            "body": "My daughter set the new phone up for me and now the photographs are in two places, one of them keeps telling me I am out of room, and I cannot work out which two places."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-26T18:20:00",
+            "body": "Bring it in, it is ten minutes. Until then do not pay anything and do not let it free up space. That button is the one that deletes them."
+          },
+          {
+            "by": "marguerite_h",
+            "at": "2026-08-26T18:35:00",
+            "body": "I have already pressed it once. Nothing appears to have gone. I am going to stop touching it now."
+          },
+          {
+            "by": "Kayla · Support",
+            "at": "2026-09-02T04:11:00",
+            "kind": "spam",
+            "body": "hi!! our scan shows 3 threats on a device on this network :( free cleanup for the first 10 members today only [url=synth://printerfix-verity.top/scan]printerfix-verity.top[/url]"
+          },
+          {
+            "by": "AutoMod",
+            "at": "2026-09-02T04:11:40",
+            "kind": "bot",
+            "body": "1 link removed. Reason: filter (rule 3). Message retained."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-02T07:50:00",
+            "body": "its still there though"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-02T08:05:00",
+            "body": "It takes the link out and leaves the sentence. I have read that settings page four times and there is no box for take the whole thing out."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-02T08:07:00",
+            "body": "so the advert works fine, its just the part where you could click it thats broken"
+          },
+          {
+            "by": "nquiroz",
+            "at": "2026-09-09T20:14:00",
+            "body": "The food bank in Coyne Flats has a desktop that still runs the old Windows and it is the machine we do the intake sheets on. Somebody told me it is dangerous now. Is it dangerous now."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-09T20:40:00",
+            "body": "Pull the network cable out and use it as a typewriter. I am not being funny. That is what we did at the co-op for six years and the machine is still there."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-09T20:52:00",
+            "body": "That, and put the intake sheets on a USB stick and give the stick to a second person so there are two. The risk to you is not a hacker, it is that the drive dies on a Tuesday and takes eleven years of names with it."
+          },
+          {
+            "by": "nquiroz",
+            "at": "2026-09-09T21:06:00",
+            "body": "ok. i have bought two sticks. they were $6.40 for the pair at the hardware."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T11:02:00",
+            "body": "Housekeeping. Three channels that do anything: here, #hardware, #printers. Scanners go in #printers, there is nowhere else for them.\n\n#archive is read only. It is somebody else's board that closed in 2014 and I imported it because otherwise it was a disc in a drawer."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-15T21:18:00",
+            "body": "For what it is worth I did the same thing with [url=synth://boards.gridfall.net/]the old boards[/url] and the import is on [url=synth://gridfall.chat/c/c-forum-archive]the other server[/url]. Two people have asked me for it in five years and one of them was Karen."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-16T08:30:00",
+            "body": "Three. I asked twice."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-19T17:40:00",
+            "body": "Shop is shut Sunday. If your thing is dead on a Sunday it will still be dead on Monday, and it will be dead for free."
+          }
+        ]
+      },
+      {
+        "id": "c-hardware",
+        "name": "hardware",
+        "kind": "text",
+        "topic": "Model number in the first message or nobody can help you. Flip it over, there is a sticker.",
+        "messages": [
+          {
+            "by": "chip_82",
+            "at": "2026-08-21T19:04:00",
+            "body": "laptop wont turn on. was fine friday"
+          },
+          {
+            "by": "chip_82",
+            "at": "2026-08-21T19:05:00",
+            "body": "its a lenovo"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-08-21T19:20:00",
+            "body": "Which one. There are about four hundred."
+          },
+          {
+            "by": "chip_82",
+            "at": "2026-08-21T19:31:00",
+            "body": "the black one"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-08-21T19:40:00",
+            "body": "flip it over. theres a sticker with a line of numbers on it. type the whole line, dont summarise it"
+          },
+          {
+            "by": "chip_82",
+            "at": "2026-08-21T20:02:00",
+            "body": "T480 20L5. it does one beep and the fan spins for about a second and then nothing"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-08-21T20:10:00",
+            "body": "one beep is memory. open the bottom, two sticks in there, take one out, try, put it back, take the other out, try. if it boots on one stick its the other stick"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-08-21T20:11:00",
+            "body": "earth yourself on the radiator first and dont do it on a carpet"
+          },
+          {
+            "by": "chip_82",
+            "at": "2026-08-22T08:15:00",
+            "body": "it was the stick"
+          },
+          {
+            "by": "chip_82",
+            "at": "2026-08-22T08:15:40",
+            "body": "thanks. i was about to buy a laptop"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-05T10:40:00",
+            "body": "I need a USB to RS-232 adapter that will pass a break signal and will still have a driver in five years. The two I have are both Prolific clones. The 2012 driver will not load on anything I own that was made after 2015, and the current driver identifies them as counterfeit and refuses."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-05T10:42:00",
+            "body": "This is for an antenna rotator controller, not a receiver. The receiver is fine. The controller is from 1996, it speaks 9600 8-N-1, and it will not be persuaded to speak anything else."
+          },
+          {
+            "by": "SupportGenie",
+            "at": "2026-09-05T10:42:40",
+            "kind": "bot",
+            "body": "The Prolific PL2303 chipset is fully supported across all modern operating systems and generally requires no additional configuration. Users experiencing connection problems should first ensure the cable is securely seated at both ends and try an alternate USB port. Serial adapters are widely available from most major retailers. Would you like me to explain what a serial port is?"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-05T10:51:00",
+            "body": "No."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-05T11:15:00",
+            "body": "FTDI, and pay the twenty two dollars for a real one. The fakes are the entire problem you are describing. [url=synth://countysupply.store/]countysupply.store[/url] sell a three pack for nine dollars and it is three fakes."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-05T11:40:00",
+            "body": "Understood. Ordered. For the log: it arrives Thursday and I will post whether it passes break, because nobody else ever does."
+          },
+          {
+            "by": "laurelann",
+            "at": "2026-09-08T13:10:00",
+            "body": "Dad's tower has started making a noise like a fridge that is thinking about it. Is it worth doing anything or is it just old."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-08T13:22:00",
+            "body": "If it is the fan, blow it out and put a new one in, eleven dollars. If it is the drive, stop using it today and bring it to me tomorrow."
+          },
+          {
+            "by": "laurelann",
+            "at": "2026-09-08T13:25:00",
+            "body": "how do i tell which"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-08T13:31:00",
+            "body": "fan noise changes when you tilt the case. drive noise doesnt. also fan noise is constant and drive noise happens when its doing something"
+          },
+          {
+            "by": "laurelann",
+            "at": "2026-09-08T14:02:00",
+            "body": "It changes when I tilt it. Thank you both, that is the most useful thing anybody has told me this month."
+          },
+          {
+            "by": "vk_ashkettle",
+            "at": "2026-09-11T22:31:00",
+            "body": "Want wifi in the barn, about 280 feet from the house. Everyone at work says get a repeater. Is a repeater the answer."
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-11T22:44:00",
+            "body": "no. bury cat6 and put a cheap access point in the barn. a repeater halves your speed and youll spend a year blaming the weather"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-12T07:10:00",
+            "body": "If the cable leaves the building it wants a gas discharge arrestor at the entry point and a ground rod bonded to the house ground. Not a surge strip. An arrestor."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-12T07:12:00",
+            "body": "A strike 600 feet away puts a few hundred volts on a 280 foot run. It will find the access point, then the router, then whatever the router is plugged into. I did it the cheap way in 2019 and it cost me a switch, a router and the television, and the television was the expensive part of being right."
+          },
+          {
+            "by": "vk_ashkettle",
+            "at": "2026-09-12T08:20:00",
+            "body": "Noted. Trench is booked for the 26th."
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-13T15:20:00",
+            "body": "free to whoever wants it: dell tower, works, no drive in it. its been in my garage two years"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-13T15:26:00",
+            "body": "ill take it"
+          },
+          {
+            "by": "gnash_88",
+            "at": "2026-09-13T15:44:00",
+            "body": "its yours. its the one with the bird sticker on the side, thats off the diner, dont scrape it off"
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-13T15:50:00",
+            "body": "wouldnt dream of it"
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-17T19:22:00",
+            "body": "It passes break. 9600 8-N-1, break held 300 ms, controller answers on the first try. Two days on it, no dropped characters, no re-enumeration. The chip is marked FT232RL and the markings are straight, which the fakes never are."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-17T19:24:00",
+            "body": "Twenty two dollars against six weeks of thinking the controller was dying. Posted the same on [url=synth://sdrlisteners.org/]sdrlisteners[/url] because that is where the next person will look."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-18T09:05:00",
+            "body": "To the four people who have asked me where the shop is: we are in the old diner building on 62, the one with the neon bird on the pole. The bird is not ours. It came with the lease and the county will not let anyone take it down, which is the only time that rule has ever worked in anybody's favour. [url=synth://carrow-wireless.synth]carrow-wireless.synth[/url]"
+          },
+          {
+            "by": "tperko",
+            "at": "2026-09-18T09:40:00",
+            "body": "the bird is why i found you. i assumed you were a diner and came in with a screen in three pieces anyway"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-18T09:55:00",
+            "body": "That happens about twice a month. One woman asked for pie. I said we do not do pie and she said she knew, she just wanted to ask in the building."
+          }
+        ]
+      },
+      {
+        "id": "c-printers",
+        "name": "printers",
+        "kind": "text",
+        "topic": "Printers, copiers, scanners, and fax if you are still doing that. Yes scanners go in here. There is nowhere else.",
+        "messages": [
+          {
+            "by": "bgilkeson",
+            "at": "2026-09-03T10:14:00",
+            "body": "Clerk's office. The Dayson 380 is putting out a third copy you cannot read. Ribbon is four days old, forms are the usual three-part, head gap lever is on 2."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-03T10:50:00",
+            "body": "Gap wants to be on 3 for three-part and back to 1 for plain. Whoever last printed a single sheet on it left it where they found it comfortable."
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-09-03T11:20:00",
+            "body": "That was me."
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-09-03T11:21:00",
+            "body": "It is on 3 and the third copy is black. I have written GAP 3 on a bit of tape and stuck it to the lever."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-03T11:40:00",
+            "body": "The tape will come off in about two years and we will do this again. That is fine. That is how it works."
+          },
+          {
+            "by": "nquiroz",
+            "at": "2026-09-07T14:02:00",
+            "body": "Form CR-212 prints half an inch low and the date box falls off the bottom of the page. Three different printers, same result, so it is not the printer."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-07T14:15:00",
+            "body": "Print at 100 percent. Do not let it fit to printable area. That setting is the half inch."
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-09-07T14:30:00",
+            "body": "And the reason the box is that close to the edge is that the county's PDF of CR-212 is a scan of a photocopy of a fax. It has been that file since 2009. If it still runs off, write the date in by hand, we take it, nobody has ever once rejected one."
+          },
+          {
+            "by": "nquiroz",
+            "at": "2026-09-07T14:44:00",
+            "body": "100 percent worked. I have filed the previous eleven attempts in the bin."
+          },
+          {
+            "by": "laurelann",
+            "at": "2026-09-10T16:40:00",
+            "body": "Had a call this afternoon saying my printer warranty had expired and they needed to connect to my computer to renew it. I said no and hung up. Putting it here in case they work through the phone book."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-10T16:58:00",
+            "body": "Good. Printers do not have warranties that ring you. Nothing rings you."
+          },
+          {
+            "by": "PrinterFix Pro",
+            "at": "2026-09-11T02:26:00",
+            "kind": "spam",
+            "body": "OFFICIAL DRIVER UPDATE — your printer model has a critical driver out of date. Download the certified pack and restore full functionality in 2 minutes [url=synth://driver-help.click/verity]driver-help.click[/url]"
+          },
+          {
+            "by": "AutoMod",
+            "at": "2026-09-11T02:26:30",
+            "kind": "bot",
+            "body": "1 link removed. Reason: filter (rule 3). Message retained."
+          },
+          {
+            "by": "laurelann",
+            "at": "2026-09-11T07:15:00",
+            "body": "Well that is timing."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T10:20:00",
+            "body": "This is a scanner and I am sorry about that.\n\nMarchfield library has a Norwick MS-600 microfilm reader-scanner with the IC-4 interface board in it. Since 2011 it has written its output to a folder on a PC in the same room. The county replaced that PC on Friday. The machine now scans, shows COMPLETE, and writes nothing."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T10:21:00",
+            "body": "It was set up once, by somebody who is not here any more, and there is no note about it anywhere in the building. I have looked in the obvious drawer and the unobvious drawer."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T10:23:00",
+            "body": "I do eleven pages an hour on it. I am in 1954. I would rather not lose the week."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T10:40:00",
+            "body": "Does the new PC have a share on it the scanner can write to"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T10:44:00",
+            "body": "It has a share. The scanner cannot see it. The scanner can see the PC, it lists it, it just will not go into it."
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-14T10:50:00",
+            "body": "whats the share called. old kit like that chokes on long names"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T10:52:00",
+            "body": "SCANS_MICROFILM_2026."
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-14T10:53:00",
+            "body": "there you go. eight characters, no underscores if you can help it, no password"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T11:30:00",
+            "body": "Renamed it SCANOUT. It goes into it now. It writes the first page, then stops, and the panel says E-14."
+          },
+          {
+            "by": "SupportGenie",
+            "at": "2026-09-14T11:30:40",
+            "kind": "bot",
+            "body": "The Norwick MS-600 supports USB connectivity and can be connected directly to any modern computer without additional hardware. Error code E-14 indicates a paper jam. Open the front cover, carefully remove any obstruction, and restart the device. Updated drivers for your model are available from the manufacturer's support portal [url=synth://driver-help.click/ms600]driver-help.click[/url]. Let me know if this resolved your issue!"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T11:44:00",
+            "body": "There is no paper in it. There has never been paper in it. It is a microfilm scanner."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T11:46:00",
+            "body": "It has decided you have a different machine and it is going to be very helpful about that machine."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-14T12:02:00",
+            "body": "This was answered. It was answered on the users group board, and I read it at the time. There was a photograph of the switch block with somebody's pen in the shot pointing at one of the switches."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-14T12:03:00",
+            "body": "I am fairly sure it was Perry Ostrander who wrote it and I am fairly sure it was about the library's machine, because the library's machine is the only one of those in the county."
+          },
+          {
+            "by": "hbagshaw",
+            "at": "2026-09-14T12:10:00",
+            "body": "the archive channel is right there. search it"
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T12:22:00",
+            "body": "Search covers the last ninety days on the free plan. The import is 2001 to 2014."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T12:23:00",
+            "body": "You can scroll it. It is 4,163 messages and they are in the order the exporter felt like, which is roughly chronological and occasionally not."
+          },
+          {
+            "by": "Discover",
+            "at": "2026-09-14T12:23:30",
+            "kind": "promoted",
+            "body": "Unlock full history search, unlimited uploads and custom roles with Pro. This server has 4,163 messages that are not currently searchable. Upgrade for $9.99/month, billed annually."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-14T12:40:00",
+            "body": "Ninety nine dollars a year to search a file that is on a disc in my drawer."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2026-09-14T13:05:00",
+            "body": "It is always ninety nine dollars a year to search a file that is on a disc in somebody's drawer."
+          },
+          {
+            "by": "nquiroz",
+            "at": "2026-09-14T13:30:00",
+            "body": "Could you not just ask Perry. He did our copier for about twenty years."
+          },
+          {
+            "by": "bgilkeson",
+            "at": "2026-09-14T13:44:00",
+            "body": "Perry is at Willowbank in New Carrow and has been since the spring. His daughter has the shop paperwork in a storage unit in Halsey and she has offered it to three different people, and all three of us said yes and none of us has driven over."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T16:02:00",
+            "body": "I have written to the manufacturer. The manufacturer is now a website that sells a different machine and a contact form with a dropdown that does not have my model in it. I picked Other. It sent me a confirmation number."
+          },
+          {
+            "by": "hbagshaw",
+            "at": "2026-09-14T16:30:00",
+            "body": "try askverity? someone on there answers everything"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-14T16:48:00",
+            "body": "I asked on [url=synth://askverity.com/]AskVerity[/url] at eleven. It was closed as a duplicate at 11:04 against a question about a home inkjet."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-15T09:10:00",
+            "body": "Update. The old PC is still in the corner because nobody came to take it away. I have plugged it back in and the scanner talks to it exactly as it did on Thursday.\n\nSo I am scanning to a machine that cannot reach the network, burning a disc, and carrying the disc twelve feet to the machine that can. It has a CD burner and a floppy drive and it is now the only computer in this building that can do the job the building is for."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-15T09:11:00",
+            "body": "1954 is done. That is where we are on a Tuesday."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-15T09:40:00",
+            "body": "Bring the discs in and I will put them somewhere with a second copy of themselves. No charge, obviously. Do not let that PC be the only place those years exist."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-15T09:52:00",
+            "body": "Thank you. Thursday. I will bring the 1953s as well, they are already burned.\n\nI wrote the whole of this up on [url=synth://marchfieldlibrary.blog/]the library blog[/url] on the basis that the next person is going to be me in four years."
+          },
+          {
+            "by": "T. Ruddock",
+            "at": "2026-09-16T20:15:00",
+            "body": "I scrolled the archive for an hour and ten minutes last night and did not find it. I got as far as 2009 and my eyes went. It is in there. I am not wrong about this one."
+          },
+          {
+            "by": "dwiles",
+            "at": "2026-09-16T20:44:00",
+            "body": "Then it is in there."
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-16T21:02:00",
+            "body": "for what its worth E-14 on old scan kit is nearly always a timeout not a jam. something in there will have a write timeout value in it"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-17T08:20:00",
+            "body": "There is a service menu. I do not know how to get into it and the panel has eleven buttons on it, none of them labelled in English."
+          },
+          {
+            "by": "steeb",
+            "at": "2026-09-17T08:31:00",
+            "body": "its usually hold one button and press another one twice. i dont know which two"
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-17T08:50:00",
+            "body": "I have tried nine combinations. One of them turned the lamp off and I could not get it back on for twenty minutes, so I have stopped."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-17T08:52:00",
+            "body": "The disc carry works. I would rather have the week than the fix."
+          },
+          {
+            "by": "wpennock",
+            "at": "2026-09-19T11:04:00",
+            "body": "Karen. When you are next at it, photograph the inside of both side panels before anybody tidies. Whoever set it up in 2011 did it once and people who set a thing up once write it down somewhere on the thing."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2026-09-19T11:40:00",
+            "body": "The left panel is against the wall and the machine weighs about two hundred pounds. I will ask the two people who can move it, which is not me and not Ross."
+          }
+        ]
+      },
+      {
+        "id": "c-archive",
+        "name": "archive",
+        "kind": "archive",
+        "topic": "Verity County Computer Users Group, 2001-2014. Read only. Imported from a disc. The attachments did not come.",
+        "importedFrom": "vcug-talk (vBulletin 3.6.8)",
+        "importedAt": "2023-02-11",
+        "messages": [
+          {
+            "by": "dwiles",
+            "at": "2023-02-11T21:10:00",
+            "body": "Ed Szabo posted me a CD in a padded envelope with a note in it that said do what you like with it, and then a second note under the first one with his daughter's phone number on it in case the disc did not read."
+          },
+          {
+            "by": "dwiles",
+            "at": "2023-02-11T21:12:00",
+            "body": "The board was vcug-talk. It ran on a machine under the stairs of a house on Ninth Street in Gridfall from April 2001 until Ed shut it on 30 November 2014. 4,163 posts."
+          },
+          {
+            "by": "dwiles",
+            "at": "2023-02-11T21:15:00",
+            "body": "Attachments were never on the board. They were on a photo host that stopped resolving in 2016. So every picture in here is a filename and nothing else. I have left the filenames in, because a filename is more than nothing, and in about four cases it is the only description of the photograph that exists."
+          },
+          {
+            "by": "dwiles",
+            "at": "2023-02-11T21:18:00",
+            "body": "Read only, permanently. It is not a conversation. Two of these people have died and one of them would have hated this."
+          },
+          {
+            "by": "eszabo",
+            "at": "2001-04-09T20:12:00",
+            "body": "Board is up. It is a machine under the stairs and if the stairs flood the board goes with them.\n\nOne rule to start with: do not post your dial-up password. I have already had to edit one."
+          },
+          {
+            "by": "postrander",
+            "at": "2001-11-27T08:44:00",
+            "body": "Ostrander Business Machines, Third Street, behind the bank. I will look at anything anybody brings in. I will not put a bigger power supply in a case that is full of dust, so blow yours out before you carry it down here or I will charge you for the twenty minutes it takes me."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2002-03-14T19:30:00",
+            "body": "Does anybody have a parallel cable longer than six feet that actually works. I have three and all three of them print the first page and then Greek."
+          },
+          {
+            "by": "postrander",
+            "at": "2002-03-14T20:02:00",
+            "body": "Six feet is the spec and the spec is not a suggestion. Move the printer."
+          },
+          {
+            "by": "eszabo",
+            "at": "2003-06-11T09:40:00",
+            "body": "Power went here at about ten to five this morning. The UPS under the stairs gave me twenty two minutes and then the board went down with it, hard, in the middle of a write.\n\nIt is back up on my brother in law's generator, which is in the driveway and is very loud. If you posted between five and eight this morning it is gone and it is not coming back. The gap is the gap."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2003-06-12T11:05:00",
+            "body": "Circulation came back this morning. The catalogue did not. We are issuing on paper slips into a shoebox until Tuesday and I am the one who will be typing the shoebox in.\n\nIf you have books out, keep them, nobody is going to fine anybody for a fortnight."
+          },
+          {
+            "by": "postrander",
+            "at": "2003-06-13T17:22:00",
+            "body": "Five machines in this week with dead power supplies and four of them are from streets off Depot. If yours was switched on when the power came back, bring it in before it does something more expensive than a power supply. [img:photo:psu-bench-june]"
+          },
+          {
+            "by": "BillT_GF",
+            "at": "2003-11-21T18:50:00",
+            "body": "the commission report came out. two pages. two. i have printed it and pinned it up in the shop and people keep reading it and saying is that it"
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2004-11-02T12:18:00",
+            "body": "Co-op is going to three-part forms for the delivery notes and the dot matrix we have will do two and smear the third. Before I buy anything: is there a lever for this."
+          },
+          {
+            "by": "postrander",
+            "at": "2004-11-02T13:40:00",
+            "body": "There is a lever for this. It is on the left, behind the cover, and it has numbers next to it. Put it on 3 and put it back on 1 when you go back to single sheets, and buy the ribbons six at a time because they are going to stop making them."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2004-11-02T15:05:00",
+            "body": "There was a lever for this."
+          },
+          {
+            "by": "eszabo",
+            "at": "2005-02-08T21:33:00",
+            "body": "Three people have now had the phone call about the expired warranty. Nobody in this county has a warranty on anything. If they ring, say the machine is a typewriter and hang up."
+          },
+          {
+            "by": "Junie Pell",
+            "at": "2005-08-30T14:10:00",
+            "body": "My grandson has put the pictures from the reunion onto a disc for me and I do not know how to get them off it and onto the letter I am writing. [img:photo:reunion-disc-label]"
+          },
+          {
+            "by": "postrander",
+            "at": "2005-08-30T16:44:00",
+            "body": "Bring the disc and the letter and we will do it at the counter. It is four minutes. Do not let anybody charge you for it."
+          },
+          {
+            "by": "dcass_62",
+            "at": "2006-05-19T22:05:00",
+            "body": "Pell Valley are putting the dial-up price up again and the local number is going to be a toll call from Coyne Flats from July. I have been with them since 1997."
+          },
+          {
+            "by": "eszabo",
+            "at": "2006-05-20T07:40:00",
+            "body": "Everyone who is on the cable will tell you to get on the cable. There is no cable past the quarry and there is not going to be. Do not let anybody tell you that you are being stubborn."
+          },
+          {
+            "by": "dcass_62",
+            "at": "2007-08-14T23:40:00",
+            "body": "Every time I drive the stretch past the quarry cut my powered speakers pick up a woman reading numbers out. Same voice every time, flat, four at a time. My wife has decided I am making it up. It is not the radio, the radio is off. [img:photo:speaker-wiring-quarry]"
+          },
+          {
+            "by": "postrander",
+            "at": "2007-08-15T08:10:00",
+            "body": "That is your speaker lead working as an aerial. Unshielded run, no ferrite on it, and the amplifier input is high impedance, so anything strong enough locally gets in and gets amplified.\n\nPut a ferrite bead on each lead at the amplifier end, shorten the run, and move the amplifier off the same strip as the charger. That will not stop the broadcast. It will stop your speakers joining in with it."
+          },
+          {
+            "by": "H. Prewitt",
+            "at": "2007-08-15T09:30:00",
+            "body": "It is four groups of four digits, not four numbers, and it has been on 4.2190 since at least 1998, on the odd hours, seven minutes past. It is on [url=synth://boards.gridfall.net/]the Gridfall board[/url] in a thread that is nine years old. Report it properly or do not report it."
+          },
+          {
+            "by": "dcass_62",
+            "at": "2007-08-16T19:12:00",
+            "body": "beads worked. 80 cents for four of them."
+          },
+          {
+            "by": "dcass_62",
+            "at": "2007-08-16T19:13:00",
+            "body": "still there if i wind the window down though"
+          },
+          {
+            "by": "eszabo",
+            "at": "2008-03-14T18:30:00",
+            "body": "Nobody has posted since lunchtime. I assume you are all standing at a level crossing in the rain."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2008-03-14T21:44:00",
+            "body": "Eleven of us at Pell Road and a dog. The dog was the only one of us who was not photographing it. [img:photo:pell-road-0314-ruddock]"
+          },
+          {
+            "by": "PRINCE_OF_ELM_ST",
+            "at": "2009-02-11T16:20:00",
+            "body": "[removed]"
+          },
+          {
+            "by": "eszabo",
+            "at": "2009-02-11T16:52:00",
+            "body": "Not in here. There are about nine places in this county to have that argument and this is a board about computers."
+          },
+          {
+            "by": "Junie Pell",
+            "at": "2009-10-04T11:30:00",
+            "body": "[img:photo:tower-guts-october]"
+          },
+          {
+            "by": "Junie Pell",
+            "at": "2009-10-04T11:31:00",
+            "body": "Sorry. That is the inside of it. The fan is the noisy one, second from the top. What do I buy."
+          },
+          {
+            "by": "postrander",
+            "at": "2010-06-22T08:15:00",
+            "body": "Shop is shut Saturdays from July. Forty years of Saturdays is enough of them. Tuesday to Friday, nine to five, and I am still at the end of the phone on a Saturday if it is an actual emergency, which a printer is not."
+          },
+          {
+            "by": "rnovak_mpl",
+            "at": "2011-03-08T09:40:00",
+            "body": "Marchfield Public Library. We have a Norwick MS-600 reader-scanner with the IC-4 board in it and we need it to write TIFFs onto the PC we have just put in the microfilm room. It scans, it says COMPLETE, and it writes nothing at all.\n\nIf anybody has done one of these before I will buy them lunch."
+          },
+          {
+            "by": "rnovak_mpl",
+            "at": "2011-03-08T09:42:00",
+            "body": "The county gave us the PC and then said the scanner was not their scope. It is nobody's scope. It is a scanner in a room."
+          },
+          {
+            "by": "postrander",
+            "at": "2011-03-08T12:15:00",
+            "body": "I have set up two of these, yours and the one at County General that has gone now. In order, and do them in this order:\n\n[list][*]Share name eight characters or fewer, no spaces, no password on it. I used SCANOUT at your place in 2004 and I would use it again.[*]SW2 on the IC-4 board. It is the switch block behind the left hand panel, third screw down, you do not have to take the whole panel off. Switch 4 to DOWN for host mode. It ships UP, which is standalone, and standalone means it is writing very happily to a drive that is not in the building any more.[*]Service menu: hold MODE and press 7 twice. F-12 is the write timeout. Factory is 10. Set it to 30 or it drops the connection on any page over about 400 KB and hands you E-14, which the manual calls a transport error and which is not a transport error.[*]F-15 is file naming. Leave it on 8.3. If you set it to long names it writes 99 files and then stops without saying anything, and you find out when you go looking for page 100.[/list]\n\nThat is the whole of it. Twenty minutes with a No. 2 Phillips. [img:photo:ms600-sw2-block] [img:photo:ms600-service-f12]"
+          },
+          {
+            "by": "postrander",
+            "at": "2011-03-08T12:17:00",
+            "body": "Write it on a card and tape the card inside the left panel. The next person will not have me."
+          },
+          {
+            "by": "rnovak_mpl",
+            "at": "2011-03-08T14:50:00",
+            "body": "It is writing. F-12 was the one. Lunch stands and it is not negotiable."
+          },
+          {
+            "by": "postrander",
+            "at": "2011-03-08T15:02:00",
+            "body": "There is a card taped inside the left panel now. I have written the date on it as well, so that whoever finds it knows how old the advice is."
+          },
+          {
+            "by": "eszabo",
+            "at": "2012-01-30T20:11:00",
+            "body": "Somebody asked me what the board costs. It costs the electricity and a static IP that I was paying for anyway. That is the answer and it is why I have never put an advert on it."
+          },
+          {
+            "by": "eszabo",
+            "at": "2013-04-17T06:50:00",
+            "body": "Eleven hundred spam registrations overnight, all of them the same nine words about handbags. I have turned new sign-ups off until I have had a coffee and possibly for good."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2013-04-17T12:30:00",
+            "body": "For good, Ed. Everybody who was going to join joined in 2004."
+          },
+          {
+            "by": "postrander",
+            "at": "2014-06-02T09:20:00",
+            "body": "I am not taking on new copier contracts. The ones I have I will see out. I am sixty eight and the parts are getting to be a phone call to a man in another state who is seventy."
+          },
+          {
+            "by": "eszabo",
+            "at": "2014-11-03T19:00:00",
+            "body": "I am moving in April to be near my daughter. The machine is not coming with me and there is nobody here to hand it to, and I have asked.\n\nThe board closes on the 30th."
+          },
+          {
+            "by": "eszabo",
+            "at": "2014-11-03T19:04:00",
+            "body": "If anybody wants the text of it I will put it on a disc. It is a text file. It is not going to be a website again and I would rather say that now than let anybody think otherwise."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2014-11-04T07:40:00",
+            "body": "Thirteen years."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2014-11-04T13:12:00",
+            "body": "Ed, put me down for a disc and I will give it an accession number and put it in the local history room, which means in forty years somebody who has never heard of any of us can still ask for it by name.\n\nThat is the only thing I am any good at and it is worth more than it sounds."
+          },
+          {
+            "by": "postrander",
+            "at": "2014-11-28T16:30:00",
+            "body": "Two days left. Is there anything anybody needs written down while there is still somewhere to write it."
+          },
+          {
+            "by": "eszabo",
+            "at": "2014-11-30T23:58:00",
+            "body": "That is it then. Thank you, all of you. Somebody turn the lights off."
+          },
+          {
+            "by": "chip_82",
+            "at": "2014-11-30T23:59:00",
+            "body": "hang on quick one does anybody know if the"
+          },
+          {
+            "by": "dwiles",
+            "at": "2023-02-11T21:40:00",
+            "body": "The last line in the file is cut off like that. I have left it as it came. I do not know whether the board went down mid-post or whether the export did, and there is nobody to ask, because Ed died in Arizona in 2019 and his daughter only had the disc."
+          },
+          {
+            "by": "mod_dcarver",
+            "at": "2023-02-14T07:50:00",
+            "body": "Second one of these I have watched go in. Mine is 61,400 posts and the importer took every two hundredth one, so I have a filing cabinet somebody tipped out and you have a whole cabinet nobody will open. I am not sure which is worse.\n\n[url=synth://gridfall.chat/c/c-forum-archive]The other one[/url], if anybody is collecting."
+          },
+          {
+            "by": "kfennimore",
+            "at": "2023-02-14T18:30:00",
+            "body": "Neither is worse. They are both the record and the record does not have to be readable to be worth keeping, it has to exist so that somebody can make it readable later.\n\nThe disc Ed sent me in 2014 is item MPL-LH-2014-031. It has been findable for nine years and nobody has asked for it, and that is fine, because findable is the job. [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]Half the citations on the wiki[/url] are things nobody asked for until somebody did."
+          },
+          {
+            "by": "T_Ruddock",
+            "at": "2023-02-15T20:02:00",
+            "body": "I have read the whole of it over three nights. There is a post in here I have wanted since about 2016 and it is not where I remember it being, so either my memory has moved it or the export has."
+          }
+        ]
+      }
+    ]
+  }
+}

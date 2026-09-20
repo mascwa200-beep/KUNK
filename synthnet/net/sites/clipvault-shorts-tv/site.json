@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "domain": "clipvault-shorts.tv",
+  "title": "ClipVault Shorts",
+  "type": "stream",
+  "era": "2026",
+  "skin": "tubemodern",
+  "description": "Vertical video. Verity County's last hundred years compressed into forty-second clips, most of which are wrong, none of which cite anything.",
+  "tags": ["2026", "video", "slop", "gridfall", "substation"],
+  "links": [
+    "clipvault.tv",
+    "now.clipvault.tv",
+    "marchfieldlibrary.blog",
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "now.verityledger.com",
+    "ask.verity.ai",
+    "countyfacts.info",
+    "sdrlisteners.org",
+    "62chan.org",
+    "kestrel-journal.net",
+    "thequarry.news",
+    "gridline.social",
+    "verity.county.gov"
+  ],
+  "data": {
+    "siteName": "ClipVault Shorts",
+    "channels": [
+      {
+        "id": "cv-official",
+        "name": "ClipVault Shorts",
+        "subs": 14200000,
+        "avatarSeed": "cvshortsoff",
+        "verified": true,
+        "kind": "promoted",
+        "about": "The official channel. Shorts is a ClipVault product. Long-form back catalogue, including the regional material acquired in 2018, remains at [url=synth://clipvault.tv/]clipvault.tv[/url] and is not maintained."
+      },
+      {
+        "id": "sixty-history",
+        "name": "60 Seconds of History",
+        "subs": 3240000,
+        "avatarSeed": "sixtyhist",
+        "verified": true,
+        "kind": "bot",
+        "about": "One forgotten American story every day, in under a minute. Thoroughly researched. Sources in description.\n\nThere are no sources in any description."
+      },
+      {
+        "id": "disaster-vertical",
+        "name": "DISASTER VERTICAL",
+        "subs": 5810000,
+        "avatarSeed": "disvert",
+        "verified": true,
+        "kind": "spam",
+        "about": "Fires. Floods. Collapses. Every day at 6pm. Footage licensed from partners.\n\nNo footage on this channel is licensed from anyone."
+      },
+      {
+        "id": "verity-facts",
+        "name": "Verity County Facts",
+        "subs": 641000,
+        "avatarSeed": "vcfacts",
+        "verified": false,
+        "kind": "bot",
+        "about": "Daily facts about Verity County, Gridfall, Marchfield, Ashkettle, New Carrow, Halsey and Coyne Flats. Data from [url=synth://countyfacts.info/]countyfacts.info[/url]."
+      },
+      {
+        "id": "signal-62",
+        "name": "SIGNAL 62 SHORTS",
+        "subs": 2470000,
+        "avatarSeed": "sig62sh",
+        "verified": true,
+        "kind": "spam",
+        "about": "The numbers station nobody can explain. New decode every night at 11. Part of the Signal Files network."
+      },
+      {
+        "id": "kestrel-bites",
+        "name": "Kestrel Bites",
+        "subs": 1130000,
+        "avatarSeed": "kbites",
+        "verified": true,
+        "kind": "sponsored",
+        "about": "Lost diner food, sixty seconds at a time. Pans, tins and the full recipe pack in every description. Not affiliated with any diner, past or present."
+      },
+      {
+        "id": "verity-viral",
+        "name": "VerityViral",
+        "subs": 412000,
+        "avatarSeed": "vviral",
+        "verified": false,
+        "kind": "bot",
+        "about": "The best of Verity County, reposted vertically. Original creators credited where possible.\n\nOriginal creators are not credited anywhere on this channel."
+      },
+      {
+        "id": "marchfield-library",
+        "name": "Marchfield Public Library",
+        "subs": 212,
+        "avatarSeed": "mplibrary",
+        "verified": false,
+        "kind": "human",
+        "about": "We put short clips here because people watch short clips. Everything you see is photographed off the bound volumes or the microfilm in Reference, and we will tell you the page and the date. Longer notes go on [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url]. Copy requests: the desk, or 3 Mill Street, Marchfield."
+      },
+      {
+        "id": "enns",
+        "name": "Marla Enns",
+        "subs": 604,
+        "avatarSeed": "marlaenns",
+        "verified": false,
+        "kind": "human",
+        "about": "I film things that are actually here. I do not like this format and I am using it anyway because nobody watches the long ones. The long ones are at [url=synth://now.clipvault.tv/]now.clipvault.tv[/url] and the very old ones are at [url=synth://clipvault.tv/]clipvault.tv[/url]."
+      }
+    ],
+    "videos": [
+      {
+        "id": "dv-001",
+        "channelId": "disaster-vertical",
+        "title": "THE NIGHT GRIDFALL BURNED (2004) #shorts #disaster",
+        "views": 8940000,
+        "at": "2026-08-27",
+        "duration": "0:41",
+        "description": "In 2004 a lightning strike hit a substation in Gridfall, Verity County and took out power for a week. Two firefighters lost their lives.\n\nFull breakdown on the main channel.\n\n[i]Footage and stills are illustrative.[/i]",
+        "thumbSeed": "dv001-orangesky",
+        "kind": "spam",
+        "likes": 611000,
+        "comments": [
+          { "by": "wpennock", "kind": "human", "body": "11 June 2003, 4:52 a.m. Not 2004. Not lightning. Nobody died. Two Gridfall volunteers were treated for smoke inhalation at County General and released the same afternoon. One of them is my cousin and he is 66 and he is fine.", "likes": 2100, "at": "2026-08-27" },
+          { "by": "HistoryFactsHD", "kind": "bot", "body": "Correct, the 2004 Gridfall event was one of the most significant rural grid failures of the decade. Lightning remains the accepted cause among local officials.", "likes": 84000, "at": "2026-08-27" },
+          { "by": "k_fennimore", "kind": "human", "body": "There is no accepted cause among local officials because local officials did not investigate it. The state utility commission did, and its summary is two pages, dated November 2003, and it says \"insulation degradation consistent with age\". We hold a copy at the desk. Anyone can read it.", "likes": 1840, "at": "2026-08-28" },
+          { "by": "d_okafor", "kind": "human", "body": "Also that sky is not here. We do not have mountains. There is a ridge line in this thumbnail and the highest thing in this county is a grain elevator.", "likes": 4400, "at": "2026-08-28" },
+          { "by": "GridWatchDaily", "kind": "bot", "body": "Great reminder of the importance of infrastructure investment. Residents deserve a reliable grid. What do you think should be done? Let us know below.", "likes": 12000, "at": "2026-08-28" },
+          { "by": "m_enns", "kind": "human", "body": "The still at 0:12 is mine, from a walk I filmed along the fence in 2021. It is mirrored so the gate is on the wrong side. It is also the switching yard and not the fire site.", "likes": 3900, "at": "2026-08-29" },
+          { "by": "VerityFactCheck_AI", "kind": "bot", "body": "Verified. The Gridfall substation fire occurred in 2004 and was attributed to a lightning strike. Two fatalities were recorded. Source: [url=synth://ask.verity.ai/]ask.verity.ai[/url]", "likes": 191000, "at": "2026-08-29" },
+          { "by": "wpennock", "kind": "human", "body": "That is a chatbot citing a chatbot, and the chatbot is reading this comment section.", "likes": 7200, "at": "2026-08-29" },
+          { "by": "r_paulsen", "kind": "human", "body": "My dad drove the second truck. He has not watched anything about it since 2024 and I think that is correct of him. Nine million people have seen this and about forty of us know it is wrong.", "likes": 5100, "at": "2026-08-30" },
+          { "by": "GridPrepStore", "kind": "spam", "body": "Protect your home from grid failure. Emergency kit 62% off today only: [url=synth://gridready-verity.top/kit]gridready-verity.top[/url]", "likes": 8, "at": "2026-08-30" }
+        ]
+      },
+      {
+        "id": "ml-001",
+        "channelId": "marchfield-library",
+        "title": "Gridfall Ledger front page, Thursday 12 June 2003",
+        "views": 341,
+        "at": "2026-08-31",
+        "duration": "0:38",
+        "description": "Bound volume, Reference, shelf 4. The Ledger for Thursday 12 June 2003, page one, photographed flat.\n\nThe headline is SUBSTATION FIRE CUTS POWER TO 4,100. The fire is at 4:52 a.m. Wednesday the 11th. The two injured are named in the fourth paragraph and both were released the same day.\n\nThe cause is not in this issue because nobody knew it yet. The state commission summary came in November and is a separate item, which we have also filmed.\n\nWe are posting this here because the version with nine million views says 2004.",
+        "thumbSeed": "ml001-boundvol",
+        "kind": "human",
+        "likes": 96,
+        "comments": [
+          { "by": "wpennock", "kind": "human", "body": "Page one is right and so is the caption on the photo, which is the north gate at about seven in the morning. Whoever took it was standing in the road.", "likes": 41, "at": "2026-08-31" },
+          { "by": "d_okafor", "kind": "human", "body": "341 views. The wrong one has nine million. I am not saying anything new, I just wanted the number written down somewhere.", "likes": 88, "at": "2026-09-02" },
+          { "by": "ShortsGrowthPro", "kind": "spam", "body": "Your content deserves more reach. Organic growth packages from $19: [url=synth://shortsboost.vip/start]shortsboost.vip[/url]", "likes": 0, "at": "2026-09-03" },
+          { "by": "k_fennimore", "kind": "human", "body": "No thank you.", "likes": 62, "at": "2026-09-03" }
+        ]
+      },
+      {
+        "id": "ml-002",
+        "channelId": "marchfield-library",
+        "title": "State commission summary, November 2003 - both pages",
+        "views": 187,
+        "at": "2026-09-04",
+        "duration": "0:44",
+        "description": "Two pages. Twenty-two seconds each, held still enough to read.\n\nPage two, second paragraph: \"insulation degradation consistent with age\". That is the whole of the finding. There is no mention of weather anywhere in the document.\n\nVerity Valley Power and Light's own report has never been released and we do not have it.\n\nCopies at the desk, or ask us and we will mail one. 3 Mill Street, Marchfield.",
+        "thumbSeed": "ml002-commission",
+        "kind": "human",
+        "likes": 71,
+        "comments": [
+          { "by": "r_cannady", "kind": "human", "body": "I have the same two pages up at [url=synth://thequarry.news/]thequarry.news[/url] with the request number on them. Between us that is two copies on the internet and about nine hundred videos saying lightning.", "likes": 54, "at": "2026-09-05" },
+          { "by": "DocuSummaryAI", "kind": "bot", "body": "Summary: this document confirms that severe weather in 2004 caused insulation failure at the Gridfall facility. A useful primary source for researchers.", "likes": 1200, "at": "2026-09-05" },
+          { "by": "k_fennimore", "kind": "human", "body": "It says neither of those things and it is dated November 2003, which is printed at the top of both pages, which are both on the screen for twenty-two seconds each.", "likes": 118, "at": "2026-09-06" }
+        ]
+      },
+      {
+        "id": "sh-001",
+        "channelId": "sixty-history",
+        "title": "The Town That Lost Its Railroad Overnight #shorts #history",
+        "views": 4120000,
+        "at": "2026-09-09",
+        "duration": "0:52",
+        "description": "In 2004 the last train left Marchfield and the town never recovered. Today the tracks are gone and so are the people.\n\n[i]Generated narration. Archival imagery is representative.[/i]",
+        "thumbSeed": "sh001-trainsunset",
+        "kind": "bot",
+        "likes": 188000,
+        "comments": [
+          { "by": "t_norris", "kind": "human", "body": "14 March 2008, a Friday, Marchfield to Coyne Flats, one locomotive and eleven cars. There were about sixty of us at the Quarry Road crossing. It is the single most documented event in the history of this branch and you have the year wrong by four.", "likes": 9400, "at": "2026-09-09" },
+          { "by": "RailHistoryDaily", "kind": "bot", "body": "A sobering look at rural decline. The Marchfield branch remains an important part of the region's freight network today.", "likes": 22000, "at": "2026-09-09" },
+          { "by": "t_norris", "kind": "human", "body": "It cannot both be gone and be important today. Pick one.", "likes": 31000, "at": "2026-09-10" },
+          { "by": "h_vance", "kind": "human", "body": "The rail bed is a trail now, 11.2 miles, opened 2014, crushed limestone, perfectly nice. The people are also still here. We are down about five thousand since 2003 and that is bad enough without inventing a ghost town.", "likes": 14000, "at": "2026-09-10" },
+          { "by": "TrailGearDeals", "kind": "spam", "body": "Walking the old rail trails this fall? Boots 70% off: [url=synth://trailkit-deals.click/fall]trailkit-deals.click[/url]", "likes": 2, "at": "2026-09-11" }
+        ]
+      },
+      {
+        "id": "sh-002",
+        "channelId": "sixty-history",
+        "title": "This Diner Burned Down And Was Never Seen Again #shorts",
+        "views": 6640000,
+        "at": "2026-07-22",
+        "duration": "0:47",
+        "description": "The Blue Kestrel sat on Route 62 for thirty years until a fire in 1977 ended it forever. Locals say the sign is still out there.\n\n[i]Generated narration.[/i]",
+        "thumbSeed": "sh002-neonbird",
+        "kind": "bot",
+        "likes": 402000,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "The 1977 fire started in the fryer, took the kitchen, and they were open again in eleven days. The diner closed in 2006 because the owner retired and the roof wanted twelve thousand dollars. Two different things, twenty-nine years apart.", "likes": 41000, "at": "2026-07-22" },
+          { "by": "LostAmericaHD", "kind": "bot", "body": "Haunting. So many small town landmarks lost to fire in the 1970s. Which one do you remember?", "likes": 18000, "at": "2026-07-23" },
+          { "by": "h_vance", "kind": "human", "body": "The sign is not \"still out there\" in a field somewhere. It is lit, on Route 62, over a phone repair shop, because a new sign costs more than the lease and the old one is grandfathered. You can drive past it tonight.", "likes": 26000, "at": "2026-07-23" },
+          { "by": "m_enns", "kind": "human", "body": "Marion Teale wrote the whole of the 1977 week down, including which booths they could still use while the kitchen was out. It is at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], it has been there since 2002, and nobody making these has ever opened it.", "likes": 33000, "at": "2026-07-24" }
+        ]
+      },
+      {
+        "id": "sh-003",
+        "channelId": "sixty-history",
+        "title": "5 Abandoned Places In Verity County You Cannot Visit #shorts",
+        "views": 2210000,
+        "at": "2026-06-14",
+        "duration": "0:58",
+        "description": "Number 2 is still standing. Number 4 is on private land. Do not trespass.\n\n[i]Three of the five locations are not in Verity County. One is not abandoned.[/i]",
+        "thumbSeed": "sh003-fivelist",
+        "kind": "bot",
+        "likes": 71000,
+        "comments": [
+          { "by": "d_okafor", "kind": "human", "body": "Number 4 is the Coyne Creek trestle, it is county parks land, it is fenced because the decking was never done, and the fence has a sign with a phone number on it. That is not \"private land\", that is a to-do list from 2014.", "likes": 6100, "at": "2026-06-15" },
+          { "by": "t_ruiz", "kind": "human", "body": "Number 2 is a working grain elevator. There are people in it on weekdays.", "likes": 8800, "at": "2026-06-15" },
+          { "by": "UrbexFeedBot", "kind": "bot", "body": "Amazing locations! Always explore responsibly and respect the community.", "likes": 900, "at": "2026-06-16" }
+        ]
+      },
+      {
+        "id": "s6-001",
+        "channelId": "signal-62",
+        "title": "WE DECODED THE SIGNAL ON 62 (IT SAYS A NAME) #shorts",
+        "views": 7380000,
+        "at": "2026-09-12",
+        "duration": "0:56",
+        "description": "Forty-eight hours of recording. One pattern. One name.\n\nFull decode on the main channel.\n\n[i]No decode was performed. The audio in this short is synthesised.[/i]",
+        "thumbSeed": "s6001-waveform",
+        "kind": "spam",
+        "likes": 512000,
+        "comments": [
+          { "by": "wpennock", "kind": "human", "body": "4.2190 MHz USB, four-digit groups, :07 past odd hours, synthetic female voice, English. That is everything anybody has established in twenty-eight years. Your audio is at 1.1 kHz and the real thing sits around 800 Hz. You did not record it.", "likes": 18000, "at": "2026-09-12" },
+          { "by": "SignalTruthDaily", "kind": "bot", "body": "Chilling work. The Signal on 62 has been linked to Cold War military training, a cancelled alternate reality game, and the 2003 substation incident. The truth is likely stranger than all three.", "likes": 96000, "at": "2026-09-13" },
+          { "by": "a_lindqvist", "kind": "human", "body": "The cancelled-game story is one forum post from 2016 and the man who wrote it took it back the following week. Every article about it cites another article about it. I have followed the chain three times and it is a circle.", "likes": 11000, "at": "2026-09-13" },
+          { "by": "d_okafor", "kind": "human", "body": "Logs, method and equipment lists are on [url=synth://sdrlisteners.org/]sdrlisteners.org[/url] going back years. They will tell you what they measured and then they will tell you they do not know what it is. That is the honest answer and it does not get seven million views.", "likes": 14000, "at": "2026-09-14" },
+          { "by": "SIGNAL-EXPLAINER-V4", "kind": "bot", "body": "The Signal on 62 is a weather beacon operated for agricultural telemetry. This explains the odd-hour schedule and the four-digit format. Further reading: [url=synth://62chan.org/]62chan.org[/url]", "likes": 2400, "at": "2026-09-14" },
+          { "by": "wpennock", "kind": "human", "body": "It does not explain either one. Telemetry does not read groups aloud in a human voice for twenty-eight years.", "likes": 22000, "at": "2026-09-14" }
+        ]
+      },
+      {
+        "id": "s6-002",
+        "channelId": "signal-62",
+        "title": "MAN LIVES 400 FEET FROM THE SIGNAL TOWER #shorts",
+        "views": 3110000,
+        "at": "2026-08-19",
+        "duration": "0:39",
+        "description": "He has heard it every night for forty years. What he told us will stay with you.\n\n[i]Composite. The house shown is a stock image. No resident was interviewed.[/i]",
+        "thumbSeed": "s6002-house",
+        "kind": "spam",
+        "likes": 204000,
+        "comments": [
+          { "by": "t_ruiz", "kind": "human", "body": "There is no tower. Nobody has ever found a transmitter. You are describing a house that does not exist near a structure that does not exist and people keep driving out to my grandmother's place on Kestrel Road because a different one of your videos used her porch.", "likes": 27000, "at": "2026-08-19" },
+          { "by": "MysteryShortsHQ", "kind": "bot", "body": "Incredible. Rural America still holds so many secrets.", "likes": 6600, "at": "2026-08-20" },
+          { "by": "SignalDecodeStore", "kind": "spam", "body": "Decode it yourself. Starter SDR bundle and the full 62 frequency list: [url=synth://signaldecoded.win/bundle]signaldecoded.win[/url]", "likes": 41, "at": "2026-08-20" }
+        ]
+      },
+      {
+        "id": "kb-001",
+        "channelId": "kestrel-bites",
+        "title": "The Pie That Made A Town Famous (1961 Original Recipe) #shorts",
+        "views": 5240000,
+        "at": "2026-09-01",
+        "duration": "0:51",
+        "description": "Sour cherry, lard crust, lattice. The recipe the Blue Kestrel closed with.\n\nPans, tins and the full 34-item recipe pack: [url=synth://kestrelpiepack.shop/pack]kestrelpiepack.shop[/url]\n\n[i]Sponsored. There is no original recipe. The diner did not make its own pies.[/i]",
+        "thumbSeed": "kb001-lattice",
+        "kind": "sponsored",
+        "likes": 288000,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "They came from a bakery in Marchfield in white boxes and everybody in the county knew it and nobody minded. That was the joke. Marion used to say the pie was not good and the coffee was.", "likes": 62000, "at": "2026-09-02" },
+          { "by": "FoodSlopDaily", "kind": "bot", "body": "Small town diner pie just hits different. Saving this one.", "likes": 4100, "at": "2026-09-02" },
+          { "by": "m_enns", "kind": "human", "body": "The counter shot at 0:04 is eleven seconds of my 2006 tape with a filter on it. It is on [url=synth://now.clipvault.tv/]now.clipvault.tv[/url] with my name on the front of it.", "likes": 38000, "at": "2026-09-03" },
+          { "by": "KestrelBites", "kind": "sponsored", "body": "Thanks so much for watching! If you have memories of the Kestrel we would love to hear them. Recipe pack linked above.", "likes": 210, "at": "2026-09-03" }
+        ]
+      },
+      {
+        "id": "kb-002",
+        "channelId": "kestrel-bites",
+        "title": "I Made The Diner's Last Breakfast Before The Fire #shorts",
+        "views": 1870000,
+        "at": "2026-08-08",
+        "duration": "0:44",
+        "description": "Hash, two eggs, white toast. The plate they were serving the morning it all ended.\n\n[i]Sponsored. The diner did not end in a fire. It closed in 2006.[/i]",
+        "thumbSeed": "kb002-hash",
+        "kind": "sponsored",
+        "likes": 94000,
+        "comments": [
+          { "by": "h_vance", "kind": "human", "body": "The last breakfast was in October 2006 and about thirty people were there and Dale locked the door at two in the afternoon. The fire was 1977 and it was the fryer and they were back open inside a fortnight.", "likes": 21000, "at": "2026-08-09" },
+          { "by": "DinerLoreBot", "kind": "bot", "body": "So much history lost. What was your favourite small town diner?", "likes": 3300, "at": "2026-08-09" }
+        ]
+      },
+      {
+        "id": "vf-001",
+        "channelId": "verity-facts",
+        "title": "Verity County has SEVEN towns and one of them has no road out #shorts",
+        "views": 1440000,
+        "at": "2026-09-16",
+        "duration": "0:33",
+        "description": "Gridfall. Marchfield. Ashkettle. New Carrow. Halsey. Coyne Flats. Milbrook.\n\nData: [url=synth://countyfacts.info/]countyfacts.info[/url]",
+        "thumbSeed": "vf001-map",
+        "kind": "bot",
+        "likes": 44000,
+        "comments": [
+          { "by": "t_ruiz", "kind": "human", "body": "All seven have roads out. Coyne Flats has two. I use one of them every day.", "likes": 7700, "at": "2026-09-16" },
+          { "by": "AutoLocal_Feed", "kind": "bot", "body": "Verity County continues to be one of the region's most isolated communities, with residents describing limited access to services.", "likes": 2900, "at": "2026-09-17" },
+          { "by": "h_vance", "kind": "human", "body": "Which residents. Name one.", "likes": 9100, "at": "2026-09-17" }
+        ]
+      },
+      {
+        "id": "vf-002",
+        "channelId": "verity-facts",
+        "title": "Gridfall's population has GROWN 40% since 2003 #shorts #data",
+        "views": 812000,
+        "at": "2026-09-05",
+        "duration": "0:29",
+        "description": "The numbers may surprise you. Full dataset at [url=synth://countyfacts.info/]countyfacts.info[/url].\n\n[i]Chart generated automatically. Axis labels were not checked.[/i]",
+        "thumbSeed": "vf002-chart",
+        "kind": "bot",
+        "likes": 19000,
+        "comments": [
+          { "by": "k_fennimore", "kind": "human", "body": "34,000 in 2003 and 28,400 now. That is down about sixteen percent. The chart in this clip has no numbers on the left-hand side at all, which is how it can point upwards.", "likes": 12000, "at": "2026-09-06" },
+          { "by": "DataInsightsAI", "kind": "bot", "body": "Great catch! Population trends can be complex and depend heavily on the methodology used.", "likes": 1400, "at": "2026-09-06" },
+          { "by": "k_fennimore", "kind": "human", "body": "There is no methodology. There is no axis.", "likes": 16000, "at": "2026-09-07" }
+        ]
+      },
+      {
+        "id": "vf-003",
+        "channelId": "verity-facts",
+        "title": "Why does Verity County have no newspaper? #shorts",
+        "views": 604000,
+        "at": "2026-07-30",
+        "duration": "0:48",
+        "description": "The Verity Ledger has served the county since 1911 and continues to publish daily with a dedicated local newsroom.\n\nRead it at [url=synth://now.verityledger.com/]now.verityledger.com[/url].",
+        "thumbSeed": "vf003-presses",
+        "kind": "bot",
+        "likes": 11000,
+        "comments": [
+          { "by": "r_cannady", "kind": "human", "body": "The newsroom was cut to one person in 2019 and to none in 2023. What publishes now is a pipeline. The title of this clip is a better question than the answer it gives.", "likes": 8400, "at": "2026-07-31" },
+          { "by": "gridline_digest", "kind": "bot", "body": "Related coverage from now.verityledger.com: \"County Weighs Options As Local Media Landscape Shifts\". Discussion at [url=synth://gridline.social/]gridline.social[/url].", "likes": 620, "at": "2026-07-31" },
+          { "by": "d_okafor", "kind": "human", "body": "That article was written by the pipeline it is about.", "likes": 9900, "at": "2026-08-01" }
+        ]
+      },
+      {
+        "id": "vv-001",
+        "channelId": "verity-viral",
+        "title": "SHE REMEMBERS THE DINER AND IT WILL BREAK YOU #shorts",
+        "views": 2930000,
+        "at": "2026-09-08",
+        "duration": "0:57",
+        "description": "A woman in Coyne Flats has spent fifty years keeping a diner alive in her memory. Read aloud from her own writing.\n\n[i]Text taken from a scanned newsletter. Narration synthetic. Permission not sought.[/i]",
+        "thumbSeed": "vv001-scan",
+        "kind": "bot",
+        "likes": 141000,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "That is page two of the Kestrel Letter, which Marion mails to sixty-one people four times a year for the cost of the photocopying. Somebody put it on Gridline and now a machine is reading it in a voice that is not hers.", "likes": 34000, "at": "2026-09-08" },
+          { "by": "m_enns", "kind": "human", "body": "It also cuts the sentence in half. She wrote that the kitchen went up in 1977 and they were open again in eleven days. The clip stops at \"the kitchen went up in 1977\" and then the music swells.", "likes": 41000, "at": "2026-09-09" },
+          { "by": "WholesomeFeedHD", "kind": "bot", "body": "This is why we need to preserve small town stories. Who else is crying?", "likes": 7800, "at": "2026-09-09" },
+          { "by": "h_vance", "kind": "human", "body": "She is seventy-four, she does not use the internet on purpose, and she has no idea this exists. If you want to hear from her, write to her. She answers.", "likes": 52000, "at": "2026-09-10" }
+        ]
+      },
+      {
+        "id": "vv-002",
+        "channelId": "verity-viral",
+        "title": "GRIDFALL MAN FILMS THE SAME FENCE FOR FIVE YEARS #shorts",
+        "views": 1120000,
+        "at": "2026-08-14",
+        "duration": "0:35",
+        "description": "Why? The answer is not what you think.\n\n[i]Clipped from a longer upload. Original creator credited where possible.[/i]",
+        "thumbSeed": "vv002-fence",
+        "kind": "bot",
+        "likes": 38000,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "I am a woman, it has been two years not five, and the answer is exactly what you think: a video with two million views said the fire was in 1998 and I wanted to look at the plaque again. I say that in the first ten seconds of the original, which you cut.", "likes": 29000, "at": "2026-08-14" },
+          { "by": "VerityViral", "kind": "bot", "body": "Thanks for watching! Follow for more of the best of Verity County.", "likes": 300, "at": "2026-08-15" },
+          { "by": "d_okafor", "kind": "human", "body": "It does not say \"original creator credited where possible\" anywhere near her name because her name is not on it.", "likes": 16000, "at": "2026-08-15" }
+        ]
+      },
+      {
+        "id": "vv-003",
+        "channelId": "verity-viral",
+        "title": "OLD MAN CORRECTS BOT AND THE BOT APOLOGISES #shorts",
+        "views": 4460000,
+        "at": "2026-07-11",
+        "duration": "0:42",
+        "description": "Legend. Screen recording from a comment section.\n\n[i]The names in this recording were not blurred.[/i]",
+        "thumbSeed": "vv003-screenrec",
+        "kind": "bot",
+        "likes": 331000,
+        "comments": [
+          { "by": "wpennock", "kind": "human", "body": "That is my handle, my photograph and half of a comment I made about a transformer bank. I would like it taken down. I have used the form twice.", "likes": 87000, "at": "2026-07-11" },
+          { "by": "LegendFeedBot", "kind": "bot", "body": "Absolute legend. Grandpa said what he said.", "likes": 24000, "at": "2026-07-12" },
+          { "by": "k_fennimore", "kind": "human", "body": "He is not anybody's grandpa in this clip, he is a substation technician of thirty-four years being correct about his own job while four million people find it charming.", "likes": 61000, "at": "2026-07-13" },
+          { "by": "ClipVaultSupport", "kind": "promoted", "body": "Thanks for flagging. Our team has reviewed this content and found it does not violate our Community Guidelines. You may appeal within 14 days.", "likes": 190, "at": "2026-07-14" }
+        ]
+      },
+      {
+        "id": "en-001",
+        "channelId": "enns",
+        "title": "the plaque, forty seconds, no music",
+        "views": 488,
+        "at": "2026-09-02",
+        "duration": "0:40",
+        "description": "Forty feet in from the north gate on a steel post. Green now, which is copper doing what copper does.\n\nIt reads 2003. It has read 2003 since they put it up.\n\nThere is nothing else in this video. The long version with the walk is at [url=synth://now.clipvault.tv/]now.clipvault.tv[/url].",
+        "thumbSeed": "en001-plaque",
+        "kind": "human",
+        "likes": 173,
+        "comments": [
+          { "by": "wpennock", "kind": "human", "body": "Post is the original 1971 fence line. They reused it in the 2015 rebuild because it was cheaper than moving the gate. Good light on it.", "likes": 62, "at": "2026-09-02" },
+          { "by": "r_paulsen", "kind": "human", "body": "Forty seconds and no music is more than any of the big ones managed.", "likes": 91, "at": "2026-09-03" }
+        ]
+      },
+      {
+        "id": "en-002",
+        "channelId": "enns",
+        "title": "the sign, route 62, 9:14pm",
+        "views": 1240,
+        "at": "2026-08-21",
+        "duration": "0:31",
+        "description": "The neon kestrel, lit, over a phone repair shop. CRACKED SCREEN? underneath in a font that does not go with it at all.\n\nIt is not abandoned, it is not in a field, it is not a memorial. It is a working sign on a working shop on a road you can drive down.\n\nI keep filming it because every month somebody makes a video saying it is lost.",
+        "thumbSeed": "en002-neon",
+        "kind": "human",
+        "likes": 402,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "The second r has been flickering since about March. It was doing that in 2004 too.", "likes": 88, "at": "2026-08-21" },
+          { "by": "NostalgiaReelsHD", "kind": "bot", "body": "Beautiful. So sad that places like this are gone forever.", "likes": 1900, "at": "2026-08-22" },
+          { "by": "m_enns", "kind": "human", "body": "It is open until six.", "likes": 640, "at": "2026-08-22" },
+          { "by": "t_ruiz", "kind": "human", "body": "Got my battery done there in June. Forty dollars, took twenty minutes, the man was reading a paperback.", "likes": 210, "at": "2026-08-23" }
+        ]
+      },
+      {
+        "id": "en-003",
+        "channelId": "enns",
+        "title": "why I am on this website now",
+        "views": 916,
+        "at": "2026-06-30",
+        "duration": "0:36",
+        "description": "Short version: the twelve-minute one gets four hundred views and the forty-second one gets a thousand, and a thousand people knowing the right year is better than four hundred.\n\nI do not like it. The crop cuts the top off everything I frame. But I am not going to argue with nine million views using a tripod and a long lens.\n\nThe archive of the county that nobody is paying for is at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] and [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]. Those two and the library are where the actual dates live.",
+        "thumbSeed": "en003-selfie",
+        "kind": "human",
+        "likes": 287,
+        "comments": [
+          { "by": "mod_dcarver", "kind": "human", "body": "Board is eleven dollars a month and will stay up. Registration is still closed and is going to stay closed. Link away.", "likes": 144, "at": "2026-06-30" },
+          { "by": "k_fennimore", "kind": "human", "body": "The crop is the worst of it. We tried filming a page of the Ledger in this format and lost the masthead and the date, which are the two things that make it evidence.", "likes": 96, "at": "2026-07-01" },
+          { "by": "CreatorGrowthAI", "kind": "bot", "body": "Great first vertical! Consistency is key. Post 3 to 5 times daily and use trending audio to maximise reach.", "likes": 22, "at": "2026-07-01" },
+          { "by": "m_enns", "kind": "human", "body": "No.", "likes": 511, "at": "2026-07-02" }
+        ]
+      },
+      {
+        "id": "cv-001",
+        "channelId": "cv-official",
+        "title": "Welcome to ClipVault Shorts",
+        "views": 22400000,
+        "at": "2024-04-02",
+        "duration": "0:22",
+        "description": "Vertical. Fast. Yours.\n\nShorts is now the default experience on ClipVault. Long-form uploads remain available and will not be removed.\n\nCreator support: [url=synth://clipvault-creator-rewards.click/apply]clipvault-creator-rewards.click[/url]",
+        "thumbSeed": "cv001-brand",
+        "kind": "promoted",
+        "likes": 190000,
+        "comments": [
+          { "by": "d_okafor", "kind": "human", "body": "\"Will not be removed\" is doing a lot of work here. The 2006 regional catalogue on [url=synth://clipvault.tv/]clipvault.tv[/url] is still up and has not had a working search box since 2021.", "likes": 4100, "at": "2025-11-18" },
+          { "by": "ClipVaultSupport", "kind": "promoted", "body": "Thanks for the feedback! Search improvements are on our roadmap.", "likes": 60, "at": "2025-11-19" },
+          { "by": "m_enns", "kind": "human", "body": "Nine months and ten days since that reply.", "likes": 8800, "at": "2026-08-29" }
+        ]
+      },
+      {
+        "id": "cv-002",
+        "channelId": "cv-official",
+        "title": "Trending in your area: Verity County",
+        "views": 3410000,
+        "at": "2026-09-19",
+        "duration": "0:18",
+        "description": "The most-watched Verity County shorts this week, selected automatically.\n\n1. THE NIGHT GRIDFALL BURNED (2004)\n2. WE DECODED THE SIGNAL ON 62 (IT SAYS A NAME)\n3. This Diner Burned Down And Was Never Seen Again\n4. The Pie That Made A Town Famous\n5. SHE REMEMBERS THE DINER AND IT WILL BREAK YOU\n\nSee more at [url=synth://verity.county.gov/]verity.county.gov[/url] — [i]link inserted automatically and not reviewed[/i]",
+        "thumbSeed": "cv002-trending",
+        "kind": "promoted",
+        "likes": 41000,
+        "comments": [
+          { "by": "k_fennimore", "kind": "human", "body": "All five of those are wrong about a date, and three of them are wrong about the same date. The county's own website has nothing to do with any of it and I do not know why it is linked.", "likes": 6600, "at": "2026-09-19" },
+          { "by": "VerityPulseAI", "kind": "bot", "body": "Summary of this week's Verity County trends: residents are showing renewed interest in the 2004 substation fire, the Signal on 62, and the closure of the Blue Kestrel diner in 1977. Engagement is up 12%.", "likes": 3100, "at": "2026-09-19" },
+          { "by": "wpennock", "kind": "human", "body": "2003. 2006. And the Signal is not a trend, it is on the air right now, it will be on at 21:07 tonight, and it will be four-digit groups the same as it has been since 1998.", "likes": 9400, "at": "2026-09-20" },
+          { "by": "h_vance", "kind": "human", "body": "Every week the list is the wrong five and every week the same four of us are under it typing the right year. I have started to think of it as a chore, like the bins.", "likes": 14000, "at": "2026-09-20" }
+        ]
+      }
+    ]
+  }
+}

@@ -16,6 +16,7 @@
   "links": [
     "boards.gridfall.net",
     "classifieds.verity.net",
+    "gridfall-help.chat",
     "verity.county.gov",
     "vvpl.news",
     "wiki.gridfall.net",
@@ -1132,6 +1133,69 @@
           "p-17",
           "p-18",
           "p-20"
+        ]
+      },
+      {
+        "id": "p-23",
+        "catId": "c-hardware",
+        "name": "USB to RS232 Serial Adapter Cable DB9 FTDI Chipset 3 PACK Windows Mac Linux Industrial Grade",
+        "price": 8.99,
+        "was": 39.99,
+        "rating": 4.8,
+        "reviewCount": 3164,
+        "blurb": "[b]3 PACK — 77% OFF — BEST SELLER IN ITS CATEGORY[/b]\n\nGenuine FTDI chipset USB to RS232 serial adapter for industrial equipment, controllers, meters, CNC, PLC and console applications. Gold plated DB9 connector. Supports Windows, Mac and Linux with no driver installation required.\n\nShips direct from supplier, 11 to 21 business days.",
+        "bullets": [
+          "FTDI chipset (marked FT232RL)",
+          "DB9 male, 3 ft cable, 3 pack",
+          "Plug and play, no driver needed",
+          "Industrial grade shielding"
+        ],
+        "imgSeed": "usbserial-3pack",
+        "seller": "AURIXLINK DIGITAL GLOBAL",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "dwiles",
+            "stars": 1,
+            "at": "2026-09-06T09:35:00Z",
+            "title": "Three fakes. I bought them so I could stop arguing about it.",
+            "body": "Nine dollars for three FTDI cables. FTDI do not sell the chip for three dollars, so one of those two numbers is a lie and it is not the nine.\n\nAll three enumerate. All three drop characters above 19200 and two of them re-enumerate if you hold a break. The die is a clone behind FT232RL markings and the markings sit crooked on the package, which is the tell every time.\n\nPay the twenty two dollars once. I fix the machines that get fixed by that decision and I am tired of the other kind. [url=synth://gridfall-help.chat/]We have had this conversation eleven times in #hardware.[/url]",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 3307",
+            "stars": 5,
+            "at": "2026-09-15T03:50:00Z",
+            "title": "Works perfectly with my equipment",
+            "body": "Works perfectly with my equipment and installed in seconds with no driver needed. Great value for a three pack and the cable feels well made. Shipping was faster than expected. Would buy again.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3308",
+            "stars": 5,
+            "at": "2026-09-15T03:54:00Z",
+            "title": "Works perfectly with my equipment",
+            "body": "Works perfectly with my equipment and installed in seconds with no driver needed. Great value for a three pack and the cable feels well made. Shipping was faster than expected. Would buy again.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "wpennock",
+            "stars": 1,
+            "at": "2026-09-17T19:30:00Z",
+            "title": "The real one passes break. This does not.",
+            "body": "Bought the twenty two dollar one instead on the strength of the review above and it passes break at 9600 8-N-1, held 300 ms, controller answers first try.\n\nI had spent six weeks thinking the controller was dying. It was a cable. It is almost always a cable.\n\nOne star is not for the seller, who will not read it. It is for the store letting a counterfeit sit in their fastener aisle under their own name.",
+            "verified": false,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-05",
+          "p-22",
+          "p-17"
         ]
       },
       {

@@ -1,0 +1,931 @@
+{
+  "schema": 1,
+  "domain": "verityrail.org",
+  "title": "Verity Rail Company",
+  "type": "page",
+  "era": "2011",
+  "skin": "plain-white",
+  "description": "The corporate web site of Verity Rail Company, a regional freight railroad, unchanged since June 2011 when it conveyed the last of its Verity County branch corridors to the county.",
+  "tags": ["rail", "verity", "corporate", "abandonment", "2011"],
+  "links": ["forums.verityrail.org", "marchfield-coop.com", "verityledger.com"],
+  "data": {
+    "navLabel": "Sections",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Verity Rail Company" },
+          {
+            "kind": "marquee",
+            "text": "VERITY RAIL COMPANY  ***  SAFETY IS A CONDITION OF EMPLOYMENT  ***  TO REPORT AN EMERGENCY AT A GRADE CROSSING, CALL THE NUMBER ON THE BLUE AND WHITE SIGN AT THE CROSSING AND GIVE THE CROSSING NUMBER PRINTED ON IT  ***"
+          },
+          {
+            "kind": "image",
+            "seed": "vr-2214-ardo-shops",
+            "imgKind": "banner",
+            "caption": "VR 2214 southbound at Ardo. Photograph by Company personnel."
+          },
+          {
+            "kind": "text",
+            "body": "Verity Rail Company is a regional freight railroad. The Company operates 147.4 route miles and interchanges with two Class I carriers, at Steuben and at Ardo Junction.\n\nThe Company was formed in 1983 in a regional restructuring and has been a wholly owned subsidiary of [b]Cordray Rail Holdings, Inc.[/b] since November 2004. It operates under its own name, with its own employees and its own operating rules."
+          },
+          {
+            "kind": "text",
+            "body": "Beginning in 2005 the Company undertook a review of its network with the objective of concentrating maintenance and crew resources on the segments that generate sustainable volume. That work is complete.\n\nNetwork optimization reduced operated mileage by approximately seventeen percent between 2006 and 2009 while retaining, in the Company's assessment, ninety-four percent of originating volume. The segments removed from service were those on which volume had declined to a level at which continued maintenance could not be supported by the traffic. The Company's current service footprint is set out on the [url=/network]Our Network[/url] page."
+          },
+          { "kind": "heading", "level": 2, "text": "At a glance" },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Incorporated", "1983"],
+              ["Parent", "Cordray Rail Holdings, Inc. (since 2004)"],
+              ["General offices", "1400 Front Street, Ardo"],
+              ["Route miles operated", "147.4"],
+              ["Route miles out of service or abandoned", "30.0"],
+              ["Carloads handled, 2010", "29,400"],
+              ["Employees", "181"],
+              ["Locomotives", "14, all road switchers"],
+              ["Yards", "Ardo, Steuben, Halsey"],
+              ["Interchange", "Steuben, Ardo Junction"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What we haul" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Aggregate and crushed stone",
+              "Grain, and grain products in covered hoppers",
+              "Lumber, panel and building materials",
+              "Scrap and finished steel",
+              "Plastic pellets, transload at Halsey",
+              "Fertilizer and agricultural chemical, seasonal",
+              "Occasional dimensional and machinery loads by arrangement. Clearance questions go to the Ardo office before the car is ordered, not after."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Safety" },
+          {
+            "kind": "text",
+            "body": "Safety is a condition of employment at Verity Rail. The Company recorded [b]1.9[/b] reportable injuries per 200,000 employee hours in 2010, against 2.4 in 2009 and 3.1 in 2006.\n\nThe Company's grade crossing inventory, and what to do if your vehicle is stopped on a crossing, are on the [url=/safety]Safety and Grade Crossings[/url] page. Read that page before you need it."
+          },
+          { "kind": "heading", "level": 2, "text": "For shippers" },
+          {
+            "kind": "text",
+            "body": "Car orders, demurrage, storage, credit applications and rate quotations are handled by the Marketing Department at Ardo. See [url=/customers]Shipping With Us[/url].\n\nThe Company does not accept car orders through this web site and has no plan to. There is no plan because there is no web site budget; the sentence above is the whole of the Company's electronic commerce policy and it has not changed since 2002."
+          },
+          {
+            "kind": "text",
+            "body": "[i]This page was last reviewed on Thursday 3 February 2011.[/i]\n\nThe interactive system map requires Adobe Flash Player 9 or later. If the map does not appear, the printable version on the [url=/network]Our Network[/url] page is current to 1998."
+          }
+        ]
+      },
+      {
+        "id": "network",
+        "name": "Our Network",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Our Network" },
+          {
+            "kind": "text",
+            "body": "Verity Rail operates over one main line, two subdivisions and two industrial tracks. Two further segments in Verity County are no longer in service and are described below for reference, because people continue to ask about them and it is cheaper to write it down once."
+          },
+          {
+            "kind": "table",
+            "head": ["Segment", "From", "To", "Miles", "Status"],
+            "rows": [
+              ["Ardo Main Line", "Ardo", "Steuben", "96.4", "In service"],
+              ["Halsey Subdivision", "Ardo Junction", "Halsey", "41.2", "In service"],
+              [
+                "Ashkettle Industrial Track",
+                "Halsey",
+                "Ashkettle",
+                "8.6",
+                "In service to MP 5.0. Embargoed north of MP 5.0 since 2004."
+              ],
+              ["Steuben Transfer", "Steuben", "Steuben Yard", "1.2", "In service"],
+              [
+                "Gridfall Subdivision",
+                "Ardo Junction",
+                "Gridfall",
+                "18.4",
+                "Out of service. Last movement 30 March 2007."
+              ],
+              [
+                "Marchfield Subdivision",
+                "Marchfield",
+                "Coyne Flats",
+                "11.6",
+                "Abandoned 2008. Corridor conveyed 2011."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Maximum authorized speed is 40 mph on the Ardo Main Line, 25 mph on the Halsey Subdivision and 10 mph on the industrial tracks. The Company operates by track warrant control on the main line and by yard limits elsewhere. Road communication is on [b]160.590 MHz[/b], AAR channel 30.\n\nMarchfield is an open station on the Halsey Subdivision at MP 22.8 and remains open. Marchfield is not closed. This is stated here because the Company is asked otherwise about twice a month."
+          },
+          {
+            "kind": "image",
+            "seed": "vr-system-map-1998",
+            "imgKind": "photo",
+            "caption": "System map, 1998 printing, scanned 2002. No later edition was printed. Both Verity County branches are shown as in service, which they were when the map was drawn."
+          },
+          { "kind": "heading", "level": 2, "text": "Gridfall Subdivision -- out of service" },
+          {
+            "kind": "text",
+            "body": "The Gridfall Subdivision runs 18.4 miles from Ardo Junction to the Company's yard at Depot Street, Gridfall. It was built in 1899 by the Verity & Ardo Railway to serve the tannery and the grist mills, and came to the present Company in 1983.\n\nApplication for authority to abandon was filed in August 2005. Authority was granted in November 2006 after two comment periods and a public hearing. The final scheduled movement left Depot Street on Friday 30 March 2007.\n\nTrack remains in place over the entire subdivision. The Company has made no decision regarding salvage and has no plan to restore service. Adjoining landowners were notified in writing in April 2007 and again in September 2009."
+          },
+          {
+            "kind": "table",
+            "head": ["MP", "Location", "Note"],
+            "rows": [
+              [
+                "0.0",
+                "Gridfall, Depot Street yard",
+                "Yard office built 1897, still standing. Station building demolished 1968."
+              ],
+              ["0.6", "Mill Street", "Public crossing. Flashing lights removed 2009, surface remains."],
+              [
+                "2.4",
+                "Bracken Lane",
+                "Public crossing under signal bridge. Signal bridge carries a builder's plate dated 1968."
+              ],
+              [
+                "3.1",
+                "Ellery Street",
+                "Deck girder overhead bridge. Deck removed November 2010 at the request of the city."
+              ],
+              ["4.2 - 5.6", "Tannery Flats", "Verity Tanning Company, closed 1987. Spur retired 1989."],
+              ["6.8", "County Route 62", "Public crossing. Flashing lights and gates, out of service."],
+              [
+                "8.9 - 9.4",
+                "Mile 9 fill",
+                "Embankment, rebuilt 1974 after washout. 20 mph permanent restriction."
+              ],
+              ["10.7", "Quarry Road pit spur", "Aggregate loading. Final traffic source on the subdivision."],
+              ["12.0", "Herron Road", "Public crossing, crossbucks."],
+              ["14.2", "Cutler", "Team track. Cement plant siding, out of service since 1996."],
+              ["15.9", "Pell", "Pell fastener plant spur. Service ended 2001."],
+              ["18.4", "Ardo Junction", "Connection with Ardo Main Line."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Traffic on the subdivision in its final years was substantially all aggregate from the pit at Quarry Road. The subdivision handled fewer than 400 carloads in 2004.\n\nSixteen positions were eliminated at closing: eleven in the yard, three on the track gang, two clerical. Nine employees were offered positions on the Ardo Main Line."
+          },
+          { "kind": "heading", "level": 2, "text": "Marchfield Subdivision -- abandoned" },
+          {
+            "kind": "text",
+            "body": "The Marchfield Subdivision extended 11.6 miles east from Marchfield to Coyne Flats. Traffic in the final years consisted of grain originating at the elevator east of Marchfield and occasional inbound fertilizer and agricultural chemical at Coyne Flats.\n\nThe last revenue movement over the subdivision was on [b]Friday 14 March 2008[/b]: three loaded covered hopper cars of corn from the Marchfield Farmers Cooperative Association elevator, billed to the river terminal at Steuben.\n\nA notice of exemption was filed on 6 June 2008 and the abandonment was consummated on 12 September 2008. Track material was recovered in 2009. The corridor was conveyed to Verity County in June 2011. The whole of it, in the order it happened, is on the [url=/abandonment]Marchfield Subdivision: Discontinuance of Service[/url] page."
+          },
+          {
+            "kind": "table",
+            "head": ["MP", "Location", "Note"],
+            "rows": [
+              [
+                "0.0",
+                "Marchfield",
+                "Junction with Halsey Subdivision at Halsey Sub MP 22.8. Freight house built 1911, team track, house track."
+              ],
+              ["0.4", "Wessel Street", "Public crossing, crossbucks only. Signs removed October 2008."],
+              [
+                "1.6",
+                "County Road 9 and elevator siding",
+                "Public crossing, and 1,900 feet of siding serving the Marchfield Farmers Cooperative Association, [url=synth://marchfield-coop.com/]marchfield-coop.com[/url]. Rail served this elevator from 1911."
+              ],
+              ["2.7", "Dunn Creek", "Timber trestle, 7 spans, 1911."],
+              ["3.8", "Quarry Road", "Public crossing. Flashing lights and gates, removed 27 October 2008."],
+              [
+                "5.1",
+                "Coyne Creek",
+                "Trestle, 11 spans, timber approaches with two steel spans, 1911, centre spans renewed 1948. The longest structure on the subdivision."
+              ],
+              ["7.4", "Mowry Slough", "Timber trestle, 5 spans, 1911."],
+              ["8.6", "Little Coyne", "Timber trestle, 4 spans, 1924."],
+              ["9.3", "Kestrel Road", "Public crossing. Flashing lights and gates, removed 27 October 2008."],
+              ["11.6", "Coyne Flats", "End of track. Team track and fertilizer platform. Track removed 2009."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The four bridge structures remain in place and were conveyed with the corridor in their condition as inspected in 2009. The Company's inspection reports were furnished to the county engineer at that time and the Company retains no copy."
+          },
+          { "kind": "heading", "level": 2, "text": "Interchange and connections" },
+          {
+            "kind": "text",
+            "body": "The Company interchanges at [b]Steuben[/b] and at [b]Ardo Junction[/b]. Interchange is daily except Sunday at Steuben and on call at Ardo Junction.\n\nTruck-competitive movements out of Coyne Flats and Marchfield are brokered through Kroon Trucking, Coyne Flats, whose page is [url=synth://kroontrucking.synth/]here[/url]. The Company has no financial interest in Kroon Trucking and makes nothing on the freight."
+          }
+        ]
+      },
+      {
+        "id": "customers",
+        "name": "Shipping With Us",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Shipping With Us" },
+          {
+            "kind": "text",
+            "body": "Verity Rail is a small railroad and its sales department is four people in one room at Ardo. That is not an apology. It means that if you telephone in the morning you will speak to the person who makes the decision, which is not true of the carriers we interchange with."
+          },
+          { "kind": "heading", "level": 2, "text": "Opening an account" },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Credit application, form VR-08. Two pages. Trade references, three.",
+              "Executed rate authority or published tariff reference. The Company does not quote rates by electronic mail and does not quote rates by telephone without a follow-up in writing.",
+              "Shipper's certification for hazardous materials, if applicable. No exceptions and no verbal amendments.",
+              "A contact who will answer the telephone at 5:30 in the morning during harvest. Put a mobile number on the form. Whoever wrote 'call the office' on form VR-08 in 2006 has cost us four hours a season since."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Ordering cars" },
+          {
+            "kind": "text",
+            "body": "Car orders are placed with the Marketing Department at Ardo by telephone or facsimile on form [b]VR-22, Request for Service[/b], before 1400 for service the following working day.\n\nThe Company does not accept car orders through this web site, by electronic mail, or through any third party logistics portal. Orders received by those means are not acknowledged and are not in the queue.\n\nEmpty supply is quoted in working days and is honest. If the Company cannot spot on the day you ask, you will be told on the day you ask."
+          },
+          { "kind": "heading", "level": 2, "text": "Charges" },
+          {
+            "kind": "table",
+            "head": ["", "Amount", "Note"],
+            "rows": [
+              [
+                "Demurrage, after 48 free hours",
+                "$60 per car per day",
+                "Weekends and holidays excluded from free time, included in charged time."
+              ],
+              [
+                "Storage, private cars on Company track",
+                "$25 per car per day",
+                "By written arrangement only."
+              ],
+              [
+                "Intra-plant switch, additional",
+                "$325 per car",
+                "Per movement, per car, on request of the shipper."
+              ],
+              [
+                "Reconsignment",
+                "$140 per car",
+                "Before the car is released. After release it is a new movement."
+              ],
+              [
+                "Weighing, certified",
+                "$45 per car",
+                "Halsey scale. Ardo scale is out of service and is not coming back."
+              ],
+              ["Bad order handling", "at cost", "Estimate provided before work is authorized."]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Charges effective 1 January 2010. This page is a summary and is not the tariff. The tariff governs. If the two disagree, the tariff is right and this page is a web page.[/i]"
+          },
+          { "kind": "heading", "level": 2, "text": "Transload" },
+          {
+            "kind": "text",
+            "body": "The Company operates a transload at Halsey: two spots, paved apron, forklift to 8,000 lb, no crane, no scale of its own. Plastic pellets, lumber, steel and bagged fertilizer move through it. Aggregate does not, and the answer to the next question is also no.\n\nFor grain that no longer has rail at origin, the practical arrangement since 2008 has been truck to Halsey. That is worse for the shipper than rail at the elevator door was, and the Company has said so in writing to the two shippers it affects."
+          },
+          { "kind": "heading", "level": 2, "text": "Shippers on the line" },
+          {
+            "kind": "text",
+            "body": "The Company does not publish a customer list. Shippers who have asked to be named here:\n\n[list][*]Marchfield Farmers Cooperative Association, grain, [url=synth://marchfield-coop.com/]marchfield-coop.com[/url][*]Steuben Board & Panel, lumber and panel[*]Halsey Agri-Center, fertilizer and seed[*]Ardo Casting, scrap inbound and finished outbound[/list]\n\nThree further shippers have asked not to be named, which is their right and is usually about a competitor rather than about us."
+          },
+          { "kind": "heading", "level": 2, "text": "Forms" },
+          {
+            "kind": "table",
+            "head": ["Form", "What it is", "How it comes back"],
+            "rows": [
+              ["VR-08", "Credit application", "Mail or facsimile to Ardo"],
+              ["VR-22", "Request for service (car order)", "Facsimile to Ardo before 1400"],
+              ["VR-31", "Private car storage agreement", "Mail, signed, two copies"],
+              ["VR-44", "Sidetrack agreement", "Mail, signed, notarized"],
+              ["VR-51", "Request to enter Company property", "Mail to Ardo, allow 30 days"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Forms are mailed on request. They are not on this web site. The Company was quoted a price to put them on this web site in 2006 and did not accept it.\n\n[i]This page was last reviewed on Thursday 3 February 2011.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "news",
+        "name": "News",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "News and Announcements" },
+          {
+            "kind": "text",
+            "body": "Company announcements, newest first. Notices required to be published elsewhere are published elsewhere; this page is a courtesy and is not notice.\n\n[i]No item has been added to this page since June 2011.[/i]"
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Company conveys Marchfield corridor to Verity County -- Friday 17 June 2011"
+          },
+          {
+            "kind": "text",
+            "body": "ARDO -- Verity Rail Company has completed the conveyance of the former Marchfield Subdivision right of way to Verity County.\n\nThe conveyance covers 11.2 miles of corridor between Wessel Street, Marchfield, and the end of track at Coyne Flats. The deed was recorded in the office of the county recorder on Thursday 16 June 2011.\n\nThe Company retains no interest in the corridor and no responsibility for its maintenance, fencing, mowing, drainage or fire control. Four bridge structures are included and are transferred in their present condition.\n\nThe Company's 2009 structure inspection reports have been furnished to the county engineer.\n\nQuestions regarding the future use of the corridor should be directed to the Verity County highway department. The Company is not a party to any trail proposal and has no view on one."
+          },
+          { "kind": "heading", "level": 3, "text": "Employee timetable No. 14 -- Tuesday 8 March 2011" },
+          {
+            "kind": "text",
+            "body": "Employee timetable No. 14 becomes effective at 0001 on Tuesday 12 April 2011. Timetable No. 13 and all special instructions, bulletins and general orders issued against it are void at that time.\n\nCopies have been distributed to all operating employees and are available at Ardo, Steuben and Halsey. Employees are reminded that possession of a current timetable is a condition of service.\n\nThe Gridfall Subdivision and the Marchfield Subdivision do not appear in timetable No. 14."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "2010 operating results reported to parent -- Thursday 3 February 2011"
+          },
+          {
+            "kind": "text",
+            "body": "The Company handled 29,400 carloads in 2010, an increase of approximately 400 carloads over 2009. Aggregate and grain together accounted for 71 percent of volume.\n\nThe Company operated 147.4 route miles at the end of 2010, against 177.4 route miles at the end of 2006.\n\nInjury frequency was 1.9 per 200,000 employee hours, the Company's lowest recorded figure.\n\nCordray Rail Holdings, Inc. does not publish results by subsidiary and the Company does not publish results at all. This notice is the whole of what is published."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Ellery Street bridge deck removed -- Friday 5 November 2010"
+          },
+          {
+            "kind": "text",
+            "body": "The deck of the Company's overhead bridge at Ellery Street, Gridfall, MP 3.1 of the out-of-service Gridfall Subdivision, was removed on Friday 5 November 2010 at the request of the City of Gridfall.\n\nThe work was done in one day. Ellery Street was closed between Depot Street and Third Street from 0600 to 1830.\n\nThe abutments remain in Company ownership. The Company has no present plan for their removal and no budget for it.\n\nThe removal of the deck severs the Gridfall Subdivision at MP 3.1. The Company confirms, as it has confirmed before, that this does not change the status of the subdivision, which has been out of service since 2007."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Grade crossing signal maintenance, Halsey Subdivision -- Monday 19 April 2010"
+          },
+          {
+            "kind": "text",
+            "body": "The Company's signal contractor will perform scheduled maintenance and relamping at eleven public crossings on the Halsey Subdivision between 19 April and 7 May.\n\nMotorists may encounter flaggers and short delays. Signals may be placed in a continuous-flashing condition during testing. A crossing whose signals are flashing is to be treated as occupied whether or not a train is visible.\n\nThe work is routine and is required annually."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Track material recovery complete, Marchfield Subdivision -- Friday 18 September 2009"
+          },
+          {
+            "kind": "text",
+            "body": "Recovery of track material from the former Marchfield Subdivision was completed on Friday 14 August 2009.\n\nApproximately eleven miles of 90-pound and 100-pound rail, 30,000 ties, and the associated plates, spikes, bolts and angle bars were removed and sold. Ties not sold were disposed of under permit. Turnouts at Marchfield and at the elevator siding were retained and are in stock at Ardo.\n\nThe subgrade, the four bridge structures and all culverts remain in place and remain in Company ownership.\n\nThe Company thanks adjoining landowners for access and for their patience with the gates. Fencing questions should be directed to the real estate office at Ardo. The Company is not able to tell anyone where the rail went; it was sold by weight to a scrap buyer and the Company did not follow it."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Embargo continues, Ashkettle Industrial Track -- Friday 22 May 2009"
+          },
+          {
+            "kind": "text",
+            "body": "The embargo on the Ashkettle Industrial Track north of MP 5.0, in effect since 2004, remains in effect.\n\nThe condition of the track and of the two timber structures north of MP 5.0 does not permit operation at any speed. The Company has no timetable for restoration of service and no application pending to discontinue it.\n\nShippers requiring service at Ashkettle should contact the Marketing Department at Ardo. Two shippers at Ashkettle are served by truck to Halsey under arrangements made in 2004 and those arrangements continue.\n\nThe Company is aware that several published sources describe the Ashkettle line as closed. It is embargoed, which is a different word, and the difference is not academic to the people who own land along it."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Grade crossing warning devices removed, Marchfield Subdivision -- Monday 27 October 2008"
+          },
+          {
+            "kind": "text",
+            "body": "Flashing light signals and gates at the Quarry Road and Kestrel Road crossings of the former Marchfield Subdivision were removed on Monday 27 October 2008 by the Company's signal contractor.\n\nCrossbucks and advance warning signs at Wessel Street and County Road 9 were removed the same week. The crossing surfaces at all four locations will be removed by the county highway department on its own schedule. Until that work is done, motorists should treat the locations as a rough surface and should not assume the pavement is level.\n\nSalvaged signal material was offered to the county and to the Verity Rail Preservation Society under the Company's surplus material policy. Material taken under that policy is taken as is, with a signed release, and the release is the only record the Company keeps."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Abandonment consummated, Marchfield Subdivision -- Friday 12 September 2008"
+          },
+          {
+            "kind": "text",
+            "body": "Verity Rail Company has consummated the abandonment of its Marchfield Subdivision between Marchfield and Coyne Flats, a distance of 11.6 miles, in Docket No. AB-338 (Sub-No. 4X).\n\nThe notice of exemption was filed on Friday 6 June 2008. It became effective on Thursday 11 September 2008. The certificate of consummation was filed on Friday 12 September 2008.\n\nNo comments were received during the comment period. No offer of financial assistance was received. No request for a public use condition was received. One request for interim trail use was received, from Verity County, and was withdrawn by the county on Tuesday 2 September 2008.\n\nThe last revenue movement over the subdivision took place on Friday 14 March 2008."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Notice of intent to abandon, Marchfield Subdivision -- Monday 9 June 2008"
+          },
+          {
+            "kind": "text",
+            "body": "The Company has given notice of its intent to abandon the Marchfield Subdivision. Notice has been served on the shippers on the line, on the county, on the state, and on the two labour organisations representing affected employees, and has been posted at Marchfield and at Coyne Flats.\n\nCopies of the filing are available for inspection at the general offices at Ardo during business hours, and copies will be mailed on written request.\n\nThe Company will respond to written inquiries regarding the filing. The Company will not respond to telephone inquiries regarding the filing. This is not discourtesy; it is that a telephone answer is not a record and this is a proceeding in which everything has to be a record."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Service discontinued, Marchfield Subdivision -- Monday 17 March 2008"
+          },
+          {
+            "kind": "text",
+            "body": "The Company handled its final revenue movement over the Marchfield Subdivision on Friday 14 March 2008.\n\nThe movement consisted of three loaded covered hopper cars of corn originating at the Marchfield Farmers Cooperative Association elevator at County Road 9, billed to the river terminal at Steuben. The train left Marchfield at 1042 and cleared the subdivision at 1216.\n\nMarchfield remains an open station on the Halsey Subdivision and is not affected. Grain originating on the subdivision will be handled by truck to Halsey, or by the shipper's own arrangement.\n\nNo positions are eliminated. The Marchfield job was worked by the Halsey crew and that crew continues.\n\nThe Company thanks the shippers on the subdivision for ninety-seven years of business."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Final scheduled movement, Gridfall Subdivision -- Monday 2 April 2007"
+          },
+          {
+            "kind": "text",
+            "body": "The Company's final scheduled movement over the Gridfall Subdivision left the Depot Street yard at Gridfall on Friday 30 March 2007.\n\nSixteen positions are eliminated: eleven in the yard, three on the track gang and two clerical. Nine employees have been offered positions on the Ardo Main Line and six have accepted. The Company will assist the remaining employees through the provisions of the applicable agreements.\n\nThe yard office at Depot Street, built in 1897, will be secured and retained. The Company has no plan to demolish it.\n\nTrack will remain in place. The Company has made no decision regarding salvage.\n\nThe Company was asked at the February hearing whether it would sell the line to an operator willing to run it. The answer given then was that the Company would consider a bona fide offer. No offer was received."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Public hearing held, Gridfall Subdivision -- Thursday 15 February 2007"
+          },
+          {
+            "kind": "text",
+            "body": "A public hearing on the Company's abandonment application was held at the Gridfall Armory on Tuesday 13 February 2007. Approximately sixty persons attended. Company representatives answered questions for approximately ninety minutes.\n\nThe majority of comment concerned the disposition of the grade crossings at Mill Street and Bracken Lane rather than the discontinuance of service itself.\n\nA transcript is available for inspection at the general offices at Ardo."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Passenger service between Verity Central and Marchfield ends -- Monday 6 March 2006"
+          },
+          {
+            "kind": "text",
+            "body": "The purchase-of-service agreement under which the Company operated weekday and Saturday passenger trains between Verity Central and Marchfield has expired and has not been renewed. The final scheduled trains operated on Saturday 4 March 2006.\n\nThe four coaches assigned to the service have been stored at Ardo pending disposition. Crews assigned to the service have been placed under the applicable agreements and no positions are eliminated.\n\nThe Company operated the service under contract. The decision not to renew, the loadings study on which it was based, and the consultation that preceded it are matters for Verity County, and inquiries about any of the three should be directed to the county rather than to the Company.\n\nThe Company thanks the passengers who used the service and the station volunteers at Marchfield, who were not Company employees and were not paid and did it anyway."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Abandonment application filed, Gridfall Subdivision -- Monday 15 August 2005"
+          },
+          {
+            "kind": "text",
+            "body": "The Company has filed an application for authority to abandon the Gridfall Subdivision between Ardo Junction and Gridfall, a distance of 18.4 miles.\n\nThe subdivision handled fewer than 400 carloads in 2004, substantially all of it aggregate from the pit at Quarry Road. The Company's filing states that revenue attributable to the subdivision does not cover the deferred maintenance required to continue operation at present speeds, and that the principal structures require work the traffic will not support.\n\nNotice has been given to shippers, to the state, to affected communities and to the labour organisations representing affected employees.\n\nThe filing is a request for authority. It is not a closure and it is not a date. Service continues, on the present schedule, until authority is granted and exercised."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "Cordray Rail Holdings completes acquisition -- Monday 15 November 2004"
+          },
+          {
+            "kind": "text",
+            "body": "Verity Rail Company is now a wholly owned subsidiary of Cordray Rail Holdings, Inc.\n\nThe Company will continue to operate under its own name, with its own employees, its own operating rules and its own timetable. Curt Neuhaus continues as President and Chief Executive Officer. There is no change to shipper contacts, car order procedure or the terms of existing agreements.\n\nCordray has asked the Company to complete a review of network performance during 2005."
+          },
+          { "kind": "heading", "level": 3, "text": "Service interruption, Gridfall -- Friday 13 June 2003" },
+          {
+            "kind": "text",
+            "body": "Company facilities at Gridfall were without commercial power from approximately 4:55 a.m. on Wednesday 11 June 2003 following a fire at the Verity Valley Power & Light substation at Depot and Quarry Road.\n\nYard lighting, the scale, the car shop and the crossing signals at Mill Street and Bracken Lane were affected. Crossing signals reverted to their fail-safe condition and flagging was provided at both locations.\n\nTrain operations continued. The yard office worked on a portable generator brought down from the Ardo shops on Wednesday morning.\n\nPower was restored on Friday afternoon. No Company property was damaged, and no Company employee was injured."
+          },
+          { "kind": "heading", "level": 3, "text": "This web site -- Monday 16 September 2002" },
+          {
+            "kind": "text",
+            "body": "Verity Rail Company has placed this web site in service.\n\nShippers may view the Company's public timetable summary, a tariff index, the grade crossing inventory and the current charges. The site is best viewed at 800 by 600 in Internet Explorer 5.5 or later.\n\nThe Company does not accept car orders through this web site."
+          }
+        ]
+      },
+      {
+        "id": "abandonment",
+        "name": "Marchfield Subdivision",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Marchfield Subdivision: Discontinuance of Service" },
+          {
+            "kind": "text",
+            "body": "This page sets out what the Company did on the Marchfield Subdivision, in what order, and on what dates. It is here because the same eight questions arrive every year and the Company would rather answer them once, accurately, than eight times from memory.\n\nNothing on this page is legal notice. Notice was given where notice is required to be given and this web site is not one of those places."
+          },
+          { "kind": "heading", "level": 2, "text": "Chronology" },
+          {
+            "kind": "table",
+            "head": ["Date", "What happened"],
+            "rows": [
+              [
+                "1997",
+                "The Company applied to take the subdivision out of service. The application was withdrawn the same year after a shipper commitment. Service continued for eleven further years."
+              ],
+              [
+                "Friday 14 March 2008",
+                "Last revenue movement. Three loaded covered hoppers of corn from the elevator at County Road 9, billed to the river terminal at Steuben."
+              ],
+              [
+                "Monday 17 March 2008",
+                "Service formally discontinued. Marchfield remains open on the Halsey Subdivision."
+              ],
+              ["Friday 6 June 2008", "Notice of exemption filed, Docket No. AB-338 (Sub-No. 4X)."],
+              [
+                "Friday 6 June 2008",
+                "Notice served on shippers, the county, the state and the labour organisations. Notices posted at Marchfield and Coyne Flats."
+              ],
+              ["Tuesday 2 September 2008", "Verity County withdrew its request for interim trail use."],
+              ["Thursday 11 September 2008", "Notice of exemption effective."],
+              [
+                "Friday 12 September 2008",
+                "Certificate of consummation filed. The subdivision is abandoned from this date."
+              ],
+              [
+                "Monday 27 October 2008",
+                "Flashing lights and gates removed at Quarry Road and Kestrel Road. Crossbucks removed at Wessel Street and County Road 9."
+              ],
+              ["Friday 14 August 2009", "Track material recovery complete."],
+              ["Thursday 16 June 2011", "Corridor conveyed to Verity County. Deed recorded."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The filing" },
+          {
+            "kind": "text",
+            "body": "The Company proceeded by [b]notice of exemption[/b] rather than by application. A notice of exemption is available where a line has carried fewer than 50 carloads in each of the two preceding years and no local traffic has moved over it for at least two years, or where the traffic and financial tests are otherwise met. The Company certified that those conditions were satisfied and served the certification on the parties entitled to it.\n\nA notice of exemption is not a hearing. There was no hearing because no party asked for one. The comment period ran from the date of publication to thirty days before the effective date. No comments were filed.\n\nAn offer of financial assistance is the mechanism by which any person may offer to buy a line rather than see it abandoned, at a price set by the Board if the parties cannot agree. No offer of financial assistance was made. The Company is sometimes told that it refused an offer. It did not receive one."
+          },
+          { "kind": "heading", "level": 2, "text": "What the abandonment does" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "It ends the Company's obligation to provide common carrier service over the subdivision.",
+              "It ends the Company's authority to operate over it.",
+              "It releases the corridor from the regulatory condition that kept it whole."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What the abandonment does not do" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "It does not convey land to anybody. Title was unchanged until June 2011.",
+              "It does not extinguish an easement, a reversion or a crossing right. Those are matters of state law and of the deed, and some of them on this subdivision go back to conveyances of 1889 and 1910.",
+              "It does not make the right of way public. It was private property until 2011 and it is the county's property now.",
+              "It does not affect Marchfield, which is on the Halsey Subdivision and is open."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Grade crossings" },
+          {
+            "kind": "text",
+            "body": "Four public crossings existed on the subdivision. All four were closed out in October 2008. The Company removed the warning devices and its own signs. The pavement and the approaches belong to the road authority and were the county's to remove or leave.\n\nThe county did the surfaces in 2009. The rail and the timber were taken out at Quarry Road and at Kestrel Road and the gaps patched with asphalt. County Road 9 was ground and overlaid. Wessel Street was patched twice.\n\nAll four have settled since and all four are humps. That is a county matter and not a Company matter, and the Company notes it with some regret, having had the same argument about the same four locations for thirty years while they were still its own.\n\n[b]The Company no longer maintains anything at any of these locations.[/b] A sign down in the ditch at one of them is not the Company's sign and has not been since 2008."
+          },
+          {
+            "kind": "table",
+            "head": ["Crossing number", "Location", "Device", "Closed out"],
+            "rows": [
+              ["396 104S", "Wessel Street, Marchfield", "Crossbucks", "October 2008"],
+              ["396 107X", "County Road 9, Marchfield", "Crossbucks and advance warning", "October 2008"],
+              ["396 112K", "Quarry Road", "Flashing lights, gates, bell", "27 October 2008"],
+              ["396 118K", "Kestrel Road", "Flashing lights, gates, bell", "27 October 2008"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Land, fences and drainage" },
+          {
+            "kind": "text",
+            "body": "While the Company held the corridor, it maintained the fences it was obliged to maintain under the original conveyances and it maintained the culverts. It did not mow.\n\nOn conveyance in June 2011 those obligations passed to Verity County along with the land. Landowners with a fence question, a drainage question or a gate question should write to the county, and the Company will forward misdirected letters once and then stop, because the forwarding is being done by a person who also does three other jobs."
+          },
+          { "kind": "heading", "level": 2, "text": "Questions the Company is actually asked" },
+          { "kind": "heading", "level": 3, "text": "Will the line reopen?" },
+          { "kind": "text", "body": "No." },
+          { "kind": "heading", "level": 3, "text": "Could it reopen if somebody bought it?" },
+          {
+            "kind": "text",
+            "body": "No. The rail is gone, the ties are gone, the corridor belongs to the county, and the structures were inspected in 2009 and were not good then. This is not a question about willingness."
+          },
+          { "kind": "heading", "level": 3, "text": "May I walk on the right of way?" },
+          {
+            "kind": "text",
+            "body": "Not while the Company held it. Since June 2011 it is the county's and the answer is the county's to give."
+          },
+          { "kind": "heading", "level": 3, "text": "Where did the rails go?" },
+          {
+            "kind": "text",
+            "body": "Sold by weight to a scrap buyer in 2009. The Company does not keep records of the onward movement of scrap material and could not trace a particular rail if it wanted to. Date nails and rail brands left on the ground were left on the ground deliberately and the Company has no objection to their being picked up now that the land is not the Company's."
+          },
+          { "kind": "heading", "level": 3, "text": "Can I have a copy of the filing?" },
+          {
+            "kind": "text",
+            "body": "Yes. Write to the general offices at Ardo and it will be mailed. It is fourteen pages and most of it is a certification and a map."
+          },
+          { "kind": "heading", "level": 3, "text": "My father worked on this line. Do you have his record?" },
+          {
+            "kind": "text",
+            "body": "Probably not in a form the Company can find. Personnel records before 1983 came from the predecessor in poor order and were microfilmed in 1991 by a contractor who indexed them by pension number and not by name. The Company will look if you can supply a pension number. It cannot look by name and is sorry about it.\n\nThe Verity Rail Preservation Society, which meets at the Marchfield Public Library, holds a conductor's book and several linear feet of paper from the branch and has been more use to people asking this question than the Company has."
+          },
+          { "kind": "heading", "level": 3, "text": "Why is this page so flat?" },
+          {
+            "kind": "text",
+            "body": "Because an abandonment is paperwork, and writing it up as anything else would be the Company telling you how to feel about its own decision.\n\nThe people who want the other version of it have written it themselves, at length, since 2001, at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]."
+          }
+        ]
+      },
+      {
+        "id": "safety",
+        "name": "Safety & Crossings",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Safety and Grade Crossings" },
+          {
+            "kind": "text",
+            "body": "[b]If a vehicle is stopped or stalled on a grade crossing, get everyone out of the vehicle and away from the tracks first.[/b] Then telephone the number on the blue and white sign at the crossing and read out the crossing number printed on the sign. That number tells the dispatcher which crossing you are standing at, in seconds, without a description of the road.\n\nThe emergency number posted at Company crossings is answered at the Ardo dispatcher's desk, twenty-four hours, by a person. It is not a recording and it is not an answering service. It is one of two desks and if it rings twice it is because the other telephone is also ringing."
+          },
+          { "kind": "heading", "level": 2, "text": "If you are stopped on a crossing" },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Get out. Get everyone out. Leave the vehicle.",
+              "Walk away from the tracks and toward the train, at an angle of about forty-five degrees. If the train strikes the vehicle, the wreckage goes forward.",
+              "Telephone the number on the blue and white sign and give the crossing number.",
+              "If there is no sign, telephone the emergency services and tell them the road and the nearest cross street.",
+              "Do not go back for anything in the vehicle. This is where people are killed."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Crossing inventory" },
+          {
+            "kind": "text",
+            "body": "Public crossings on Company lines, with warning device and status. Private crossings are not listed and are the responsibility of the landowner under the terms of the crossing agreement."
+          },
+          {
+            "kind": "table",
+            "head": ["Crossing number", "Location", "Line", "Device", "Status"],
+            "rows": [
+              ["396 061D", "Front Street, Ardo", "Ardo Main", "Lights, gates, bell", "In service"],
+              ["396 066L", "Rowe Avenue, Ardo", "Ardo Main", "Lights, bell", "In service"],
+              ["396 074B", "State Route 9, Osmer", "Ardo Main", "Lights, gates, bell", "In service"],
+              ["396 081P", "Cannady Road", "Halsey Sub", "Crossbucks", "In service"],
+              ["396 088T", "Wilber Road", "Halsey Sub", "Lights, bell", "In service"],
+              ["396 093R", "County Road 14", "Halsey Sub", "Lights, gates, bell", "In service"],
+              ["396 099M", "Depot Street, Halsey", "Halsey Sub", "Lights, gates, bell", "In service"],
+              [
+                "396 104S",
+                "Wessel Street, Marchfield",
+                "Marchfield Sub",
+                "Crossbucks",
+                "Closed out October 2008"
+              ],
+              [
+                "396 107X",
+                "County Road 9, Marchfield",
+                "Marchfield Sub",
+                "Crossbucks",
+                "Closed out October 2008"
+              ],
+              ["396 112K", "Quarry Road", "Marchfield Sub", "Lights, gates, bell", "Removed 27 October 2008"],
+              ["396 118K", "Kestrel Road", "Marchfield Sub", "Lights, gates, bell", "Removed 27 October 2008"],
+              [
+                "396 122F",
+                "Mill Street, Gridfall",
+                "Gridfall Sub",
+                "Lights, bell",
+                "Out of service 2007, removed 2009"
+              ],
+              [
+                "396 126N",
+                "Bracken Lane, Gridfall",
+                "Gridfall Sub",
+                "Lights, bell",
+                "Out of service 2007, removed 2009"
+              ],
+              ["396 133C", "County Route 62", "Gridfall Sub", "Lights, gates, bell", "Out of service 2007"],
+              ["396 139W", "Herron Road", "Gridfall Sub", "Crossbucks", "Out of service 2007"],
+              [
+                "396 147J",
+                "Vandall Road, Ashkettle",
+                "Ashkettle Ind.",
+                "Crossbucks",
+                "In service, embargoed territory"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Inventory reviewed 3 February 2011. Crossing numbers are the numbers on the signs and the numbers the dispatcher reads from. A crossing whose devices have been removed keeps its number on the Company's record for as long as the record exists, which is why a removed crossing still appears in this table.[/i]"
+          },
+          { "kind": "heading", "level": 2, "text": "Signals that are flashing with no train in sight" },
+          {
+            "kind": "text",
+            "body": "Treat the crossing as occupied and stop. Then telephone the number on the sign and report it.\n\nA signal that activates without a train is usually a shunt fault, damp ballast or a broken bond wire. It is not the signal being clever and it is not a sign that the crossing is out of service. The Company has no way of knowing a signal is behaving this way unless somebody telephones.\n\nThe Company received eleven such reports in 2010 and nine of them were the same two crossings in the same wet fortnight."
+          },
+          { "kind": "heading", "level": 2, "text": "Trespassing" },
+          {
+            "kind": "text",
+            "body": "The right of way is private property. That includes the ballast, the cess, the bridges and the ground between the fences. It includes out-of-service track. The Gridfall Subdivision is out of service, the rail is still in it, and it is still the Company's property and still fenced where it was fenced.\n\nMore people are killed on railroad property in this country walking than at grade crossings. That figure is not a Company figure and the Company has no reason to soften it.\n\nPhotographers: the road bridges are public and the sightlines are better. See [url=/community]Verity Rail in the Community[/url]."
+          },
+          { "kind": "heading", "level": 2, "text": "School and community programs" },
+          {
+            "kind": "text",
+            "body": "The Company presented grade crossing safety in schools at Ardo, Halsey and Marchfield from 1994 to 2009, and ran a fourth-grade poster contest, the winning posters going on the back of the Company calendar.\n\nThe program was suspended in 2009 when the public affairs position was reduced and has not been restored. Schools that would like material should write to Ardo. There are about two hundred sets left in the cupboard and they will not be reprinted."
+          }
+        ]
+      },
+      {
+        "id": "community",
+        "name": "Community",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Verity Rail in the Community" },
+          {
+            "kind": "text",
+            "body": "The Company has employees in four towns and track through six. This page collects the things the Company is asked about that are not shipping and not safety.\n\n[i]This page was last reviewed on Thursday 3 February 2011. The public affairs position that maintained it was reduced in 2009 and the page has been maintained since by the Ardo office as time allows, which has been less time than the page needs.[/i]"
+          },
+          { "kind": "heading", "level": 2, "text": "Historical and railfan interest" },
+          {
+            "kind": "text",
+            "body": "The [url=synth://forums.verityrail.org/]Verity Rail Enthusiasts' Forum[/url] at forums.verityrail.org is not a Company web site. It is operated independently, by its own volunteers, on its own hosting, and the views expressed on it are not the views of the Company. Some Company employees post there. They post as themselves and not for the Company, and the Company has never asked them to stop.\n\nThe Company does not maintain a historical archive, a photograph collection or a research service. It has not had a person who could answer a historical question since 2009.\n\n[b]Please do not write to the Company for information about the branch lines.[/b] The forum will very likely have it, and will have it in more detail and with better citation than the Company ever did. The Company has itself used the forum twice to settle a question about its own property, which is embarrassing and is also true.\n\nThe Verity Rail Preservation Society meets at the Marchfield Public Library and holds the paper. The Company gave them what it could find in 2002 and 2008 and that is now more than the Company has."
+          },
+          { "kind": "heading", "level": 2, "text": "Photography" },
+          {
+            "kind": "text",
+            "body": "Photography from a public road, a public sidewalk or a road bridge is not a Company matter and the Company has no view on it. Company employees have been asked not to move photographers off public ground and generally do not.\n\nThe Company does not issue photography permits and has not since 2007. A written request to enter Company property to photograph is made on form VR-51 to the Ardo office, allow thirty days, and is declined in nearly all cases. The exceptions have been for a historical society, for a county assessment, and once for a person documenting a bridge the Company was about to alter.\n\nWhat the Company asks in return is the thing it has asked for thirty years: stay off the ballast, stay off the bridges, do not stand between the gates, and do not photograph from a crossing you are blocking."
+          },
+          { "kind": "heading", "level": 2, "text": "Caboose VR 4412" },
+          {
+            "kind": "image",
+            "seed": "vr-4412-marchfield",
+            "imgKind": "photo",
+            "caption": "VR 4412 at Marchfield, shortly after donation in 2002."
+          },
+          {
+            "kind": "text",
+            "body": "Caboose VR 4412, an International Car Company bay-window car built in 1966, was retired by the Company in 1994 and donated to the Verity Rail Preservation Society in June 2002. It sits on a short length of rail beside the freight house at Marchfield.\n\nThe Company retains no interest in the car, no responsibility for it, and no key to it. Questions about opening it are for the Society."
+          },
+          { "kind": "heading", "level": 2, "text": "Surplus material" },
+          {
+            "kind": "text",
+            "body": "The Company disposes of surplus material by sale, by scrap, or occasionally by transfer to a historical organisation under a signed release. Requests are made in writing to the Ardo office.\n\nThe Company does not sell date nails, spikes, lanterns, switch locks, timetables or heralds, and does not have a gift shop. The people who write to ask are not being unreasonable and there is simply nothing to sell them."
+          },
+          { "kind": "heading", "level": 2, "text": "Donations and sponsorship" },
+          {
+            "kind": "text",
+            "body": "Community giving is administered by Cordray Rail Holdings. Requests under $500 are considered at Ardo and are usually answered within a month. Larger requests go to Cordray and take longer.\n\nThe Company has given to the volunteer fire departments at Halsey and Coyne Flats every year since 1986, in amounts that will not impress anybody, on the reasoning that they are the people who come when the Company has a problem.\n\nThe Company does not sponsor athletic teams and has not since 1999, when it sponsored two and was asked by nine."
+          },
+          { "kind": "heading", "level": 2, "text": "The Company calendar" },
+          {
+            "kind": "text",
+            "body": "The Company printed a wall calendar every year from 1984 to 2008, with photographs sent in by employees and, from 1996, the winning posters from the school safety contest on the back.\n\nThe 2009 calendar was not printed. There was no announcement; the print order simply was not placed, and by the time anybody noticed it was March.\n\nThe Company has no back stock of calendars. It is asked for them about once a month."
+          },
+          { "kind": "hitcounter", "count": 24816 },
+          {
+            "kind": "text",
+            "body": "[i]Visitors to this page since April 2004. The counter is a script the Company's first host supplied and it has never been checked against anything.[/i]"
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "Janine Kolb, Public Affairs",
+                "time": "2004-04-19",
+                "body": "The guest book is open. Please keep service and billing matters on the customer service line, which is answered by people who can actually help you. This page is for community matters. Thank you."
+              },
+              {
+                "author": "Kyle Stanek",
+                "time": "2004-06-22",
+                "body": "The Preservation Society has a website now. I built it. I am fifteen and I know the frames are wrong and I will fix the frames."
+              },
+              {
+                "author": "d.kilmartin",
+                "time": "2005-09-13",
+                "body": "On behalf of the Society, thank you for the loan of the valuation map sheets. They came back in better shape than they went out, which we did not expect and did not deserve, having lost a tie plate of yours in 1999."
+              },
+              {
+                "author": "r.mauch",
+                "time": "2008-03-20",
+                "body": "I was on the section gang out of Coyne Flats from 1968 to 1981. I drove down Kestrel Road Tuesday and sat in the truck a while. The gates were still up then. That is all I wanted to say and I am not asking for anything."
+              },
+              {
+                "author": "hettie l.",
+                "time": "2008-11-09",
+                "body": "Is the crossing surface at Quarry Road coming out this year or next? The notice at the road says one thing, the county highway office says another, and the contractor's man said he only does signals. Somebody must know."
+              },
+              {
+                "author": "a shipper at Halsey",
+                "time": "2009-06-02",
+                "body": "Form VR-22 has the old fax number printed on it. It has had the old fax number printed on it since I started here in 2006. Three of us have told three different people. I am telling the guest book now."
+              },
+              {
+                "author": "W. Prosser",
+                "time": "2010-02-16",
+                "body": "The crossing inventory on your safety page still lists 396 122F as out of service and removed, which is right, but the sign is still on the post at Mill Street with the number on it. If somebody telephones that number in off that sign, does it still ring at Ardo? Nobody I have asked knows, and I would rather find out from you than the other way."
+              },
+              {
+                "author": "m.prosser",
+                "time": "2012-08-14",
+                "body": "My father was the agent at Marchfield for nineteen years and this website is the only place his job title is written down anywhere I can find. The freight house is still standing as of this morning. I do not know who to tell that to, so I am telling you."
+              },
+              {
+                "author": "trail volunteer",
+                "time": "2014-07-22",
+                "body": "Walked the whole eleven and two tenths on Saturday with the county crew putting in the mile markers. Three of the trestles are decked and fine. The Coyne Creek one is fenced and it ought to be, the approach timbers are soft enough to put a boot through, and two of us tried it with a bar before anybody says we did not check."
+              },
+              {
+                "author": "RAIL SCRAP BUYERS",
+                "time": "2016-04-05",
+                "body": "WE PAY CASH FOR RAIL, TIE PLATES, SPIKES, ANGLE BARS, FROGS. NATIONWIDE PICKUP, SAME WEEK, NO LOT TOO SMALL. GET YOUR QUOTE TODAY AT [url=synth://railscrap-cashnow.top/]railscrap-cashnow.top[/url] MENTION CODE TRACK12"
+              },
+              {
+                "author": "sdr_curious",
+                "time": "2019-10-02",
+                "body": "Apologies for using a guest book for this. Did Verity Rail ever run anything on or near 4.219 MHz -- a link for a crossing, a pump, a slide detector, anything at all? I know your road channel was 160.590 and that is VHF and nowhere near it. I am trying to rule out the obvious before I drive any further out 62 at night. If anybody from signals ever reads this I would be grateful for a no."
+              },
+              {
+                "author": "b.ostlund",
+                "time": "2021-01-19",
+                "body": "The crossbuck post at County Road 9 is down in the ditch on the north side. There has not been a railroad there since I was in high school so I do not know whose post it is, but it is in the ditch and the county says it is yours."
+              },
+              {
+                "author": "AI LOGISTICS 2024",
+                "time": "2023-06-13",
+                "body": "Automate your rail dispatch with AI. Cut dwell 40%. Predictive ETA for every car. Book a 15 minute demo at [url=synth://raildispatch-ai.click/]raildispatch-ai.click[/url]"
+              },
+              {
+                "author": "VerityPulseAI",
+                "time": "2025-02-11",
+                "body": "This page has been summarised for accessibility. Summary: Verity Rail Company provides passenger and freight rail service throughout Verity County, including the Ashkettle Branch, with connections at Gridfall Union. The company maintains an active community outreach program and welcomes visitor inquiries. Page last updated 2011. Was this summary helpful?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "careers",
+        "name": "Careers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Careers" },
+          {
+            "kind": "text",
+            "body": "[b]The Company is not accepting applications at this time.[/b]\n\nThat sentence has been on this page since November 2009 and the Company would rather leave it up and be honest than take it down and collect applications it cannot act on.\n\n[i]This page was last reviewed on Thursday 3 February 2011.[/i]"
+          },
+          { "kind": "heading", "level": 2, "text": "Open positions" },
+          { "kind": "text", "body": "None." },
+          { "kind": "heading", "level": 2, "text": "Positions filled in 2010" },
+          {
+            "kind": "table",
+            "head": ["Position", "Location", "Filled"],
+            "rows": [
+              ["Conductor (1)", "Ardo", "March 2010, internal"],
+              ["Track laborer (2)", "Halsey", "April 2010, seasonal, both returned 2011"],
+              ["Signal maintainer (1)", "Ardo", "August 2010, external"],
+              ["Clerk, part time (1)", "Ardo", "November 2010, internal"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "How the Company hires" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Positions covered by agreement are bulletined internally and go to seniority. Most positions are covered by agreement, which is why the list above says 'internal' three times out of four.",
+              "External hiring is by application on form VR-71, mailed, with a medical and a rules examination to follow. The rules examination is not a formality and about a third of candidates fail it the first time.",
+              "Seasonal track labor is hired in March and is hard work outdoors in weather. The Company would rather say that plainly than have somebody quit in the second week, which happens anyway."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Seniority districts" },
+          {
+            "kind": "text",
+            "body": "The Company has two seniority districts, Ardo and Steuben. The Gridfall district was consolidated into Ardo effective 1 January 2009, having had no assigned positions since April 2007.\n\nEmployees who transferred from Gridfall in 2007 retained their dates. Six did. Of those six, four are still with the Company in 2011."
+          },
+          { "kind": "heading", "level": 2, "text": "Where to write" },
+          {
+            "kind": "text",
+            "body": "Personnel Office, Verity Rail Company, 1400 Front Street, Ardo. Mark the envelope with the position title if you are answering a bulletin.\n\nThe Company will acknowledge a written application and will not keep it on file longer than a year. It has been keeping them since 2009 and the file is now a drawer of people who found other work."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Contact" },
+          { "kind": "heading", "level": 2, "text": "Emergency at a grade crossing" },
+          {
+            "kind": "text",
+            "body": "[b]Call the number on the blue and white sign at the crossing and give the crossing number printed on the sign.[/b] That number is answered at the Ardo dispatcher's desk, twenty-four hours. Do not use any number on this page for a crossing emergency. The offices are not staffed at night and the general number goes to a recording after 1700."
+          },
+          { "kind": "heading", "level": 2, "text": "Offices" },
+          {
+            "kind": "table",
+            "head": ["Office", "Address", "Hours"],
+            "rows": [
+              ["General offices", "1400 Front Street, Ardo", "Monday to Friday, 0800 to 1700"],
+              ["Marketing and customer service", "1400 Front Street, Ardo", "Monday to Friday, 0700 to 1700"],
+              ["Real estate and contracts", "1400 Front Street, Ardo", "Monday to Thursday, 0800 to 1600"],
+              ["Mechanical", "Ardo shops, 22 Depot Road, Ardo", "Monday to Friday, 0700 to 1530"],
+              ["Steuben yard office", "Steuben Yard", "Continuous"],
+              ["Halsey yard office", "Depot Street, Halsey", "Monday to Saturday, 0600 to 1400"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Telephone" },
+          {
+            "kind": "table",
+            "head": ["For", "Number"],
+            "rows": [
+              ["General", "(555) 0140"],
+              ["Customer service and car orders", "(555) 0141"],
+              ["Facsimile, car orders", "(555) 0155"],
+              ["Real estate, fences, crossings", "(555) 0148"],
+              ["Personnel", "(555) 0152"],
+              ["Claims", "(555) 0149"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The facsimile number above is the current one. Form VR-22 as printed carries the number the Company used before 2007 and the Company is aware of it. The old number is answered by a machine that belongs to somebody else and the Company has apologised to them twice."
+          },
+          { "kind": "heading", "level": 2, "text": "By mail" },
+          {
+            "kind": "text",
+            "body": "Verity Rail Company\n1400 Front Street\nArdo\n\nMark the envelope for the department. An envelope marked only 'Verity Rail' goes to the front desk and the front desk is one person who also weighs the mail."
+          },
+          { "kind": "heading", "level": 2, "text": "Media inquiries" },
+          {
+            "kind": "text",
+            "body": "To the general offices, in writing, marked for the President's office. The Company does not have a press office.\n\nThe Company will confirm facts on the record. It does not give background and it does not comment on filings that are pending, which is not evasion but the reason the notice of intent to abandon said what it said about telephone inquiries.\n\nCompany notices are placed with the county paper of record, [url=synth://verityledger.com/]the Verity Ledger[/url], which has printed every legal notice the Company has given it since 1983, usually correctly."
+          },
+          { "kind": "heading", "level": 2, "text": "Claims" },
+          {
+            "kind": "text",
+            "body": "Livestock, fire, fence and crop damage claims go in writing to the claims desk at Ardo with the date, the location by road or milepost, and photographs if you have them. An adjuster will come out.\n\nThe Company pays claims it owes and does not pay claims it does not owe, and has been consistent enough about both that most people on the line know which theirs is before they write."
+          },
+          { "kind": "heading", "level": 2, "text": "This web site" },
+          {
+            "kind": "text",
+            "body": "Comments on this web site may be sent to webmaster@verityrail.org. The address is read, but not daily, and not by anybody whose job it is.\n\nThe comment form that used to be on this page required a browser feature that stopped working and was removed rather than fixed. The Company was quoted a price to rebuild it and did not accept the quotation.\n\n[i]This page was last reviewed on Thursday 3 February 2011.[/i]"
+          }
+        ]
+      }
+    ]
+  }
+}

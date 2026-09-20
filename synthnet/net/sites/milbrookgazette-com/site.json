@@ -1,0 +1,558 @@
+{
+  "schema": 1,
+  "domain": "milbrookgazette.com",
+  "title": "The Milbrook Gazette",
+  "type": "news",
+  "era": "2016",
+  "skin": "broadsheet",
+  "description": "The weekly paper for Milbrook and Kerrin County, published Thursdays since 1908. The last edition is 27 October 2016 and says the pause is temporary.",
+  "tags": [
+    "milbrook",
+    "kerrin",
+    "weekly",
+    "archive"
+  ],
+  "links": [
+    "verityledger.com",
+    "wiki.gridfall.net",
+    "forums.verityrail.org",
+    "kestrel-journal.net",
+    "sdrlisteners.org",
+    "clipvault.tv",
+    "ashkettle-wx.net"
+  ],
+  "data": {
+    "masthead": "The Milbrook Gazette",
+    "slogan": "and Kerrin County Record. Published every Thursday in Milbrook since 1908.",
+    "sections": [
+      {
+        "id": "news",
+        "name": "County & Town"
+      },
+      {
+        "id": "schools",
+        "name": "Schools"
+      },
+      {
+        "id": "blotter",
+        "name": "Police Blotter"
+      },
+      {
+        "id": "sports",
+        "name": "Sports"
+      },
+      {
+        "id": "obits",
+        "name": "Obituaries"
+      },
+      {
+        "id": "letters",
+        "name": "Letters"
+      },
+      {
+        "id": "around",
+        "name": "Around Town"
+      },
+      {
+        "id": "notices",
+        "name": "Public Notices"
+      }
+    ],
+    "articles": [
+      {
+        "id": "note-to-readers",
+        "sectionId": "news",
+        "kicker": "FROM THE EDITOR",
+        "readMinutes": 3,
+        "headline": "A Note to Our Readers",
+        "dek": "The Gazette is pausing after this edition while we settle a printer and clear a postal audit.",
+        "byline": "By Dean Rask, Editor and Publisher",
+        "date": "October 27, 2016",
+        "featured": true,
+        "lead": "MILBROOK. The Gazette is pausing publication after this edition. We expect the break to be a short one and I want to tell you exactly what it is about, because a paper that does not explain itself has no business asking anyone else to.",
+        "body": "Pinelock Media Group bought Halloran Communications this spring. Halloran owns the plant at Corliss that has printed this paper every Wednesday night since 2009. In August, Pinelock told its outside customers that Corliss will stop taking commercial work on December 2 and that the work is moving to the Dunmore plant.\n\nDunmore prints a daily. Their press is spoken for on a Wednesday night, and the night they can give us is Sunday. A Sunday press means a Friday noon deadline, and our news happens at Tuesday evening meetings. I have been trying since August to find a way around that and I have not found one.\n\nAt the same time our periodicals permit came up for its five-year review, and the post office has asked for a circulation audit. That is routine and we are not in any trouble. It costs $310 and it takes about six weeks, and it has to be run against the mailing list as it stands.\n\nSo we are going to stop, do the audit, settle the press, and come back.\n\nNobody is owed anything. Subscriptions are not cancelled. Your expiration date will move forward by however many weeks we miss, and Charlene Voss has the list and is better at it than I am. If you have a legal notice that has to run on a date fixed by statute, call the office and we will tell you where to place it. [url=synth://bowescitysentinel.synth/]The Bowes City Sentinel[/url] will take them. Their rate is higher than ours because they publish five days a week, and I am sorry about that.\n\nThe office at 14 Front Street will be open Tuesdays and Thursdays, nine to two. Obituaries do not pause and neither does Charlene. Bring them in or call.\n\nThis paper has missed three issues in 108 years. Two in January 1953, when the old flatbed caught fire, and one in August 1998, when my father was at County General and nobody thought to put out a paper. This will be longer than either of those. It will not be permanent.\n\nI expect to be back in your mailbox the first week of December.\n\n[i]D.R.[/i]"
+      },
+      {
+        "id": "bridge-posted",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 4,
+        "headline": "Cobb Creek Bridge Posted at Eight Tons; Two Bus Routes Change Monday",
+        "dek": "The Tessler Road span has been on the county's list since 2011. A state inspection in September moved it up.",
+        "byline": "By Charlene Voss",
+        "date": "October 20, 2016",
+        "featured": true,
+        "lead": "TESSLER. The Tessler Road bridge over Cobb Creek was posted at eight tons on Friday, October 14, which puts a loaded school bus over the limit and reroutes two Kerrin Consolidated bus runs starting Monday.",
+        "body": "The state inspected the bridge on September 21. Kerrin County Highway Superintendent Merle Lachance said the report came back on October 11 with a deck rating of 4 and a substringer note he had not seen before.\n\n\"There is nothing new wrong with it,\" Lachance said. \"It is the same bridge it was in April. What changed is that somebody wrote down what it is.\"\n\nThe 1948 span carries about 340 vehicles a day. It has been on the county's replacement list since 2011 and has moved up and down that list four times. The county's engineer estimates replacement at $1.4 million, of which the county would pay 5 percent under the current federal program, if the project is funded, which Lachance said he would not predict.\n\nBuses 4 and 9 will use Cobb Creek Road to Route 62 and come back in on Brill Road. Transportation supervisor Dana Yeakel said the detour adds eleven minutes to Bus 4 and nineteen to Bus 9, and that four students on Bus 9 will now be picked up before 6:40 a.m.\n\n\"I have called all four houses,\" Yeakel said. \"Three of them were fine. The fourth was not fine and I do not blame her.\"\n\nFire and ambulance response is not affected for Tessler village. It is affected for the eleven addresses on the far side of the creek, where the nearest engine is now Nye Mills rather than Tessler. Kerrin County Emergency Services has asked both departments to run the detour once before winter.\n\nMilk trucks are the other problem. Two farms on the far side ship daily, and the hauler's tractor and empty tank are over eight tons before any milk goes in.\n\n\"They will figure it out,\" said Roy Dekker, who milks 71 on Cobb Creek Road. \"Figuring it out means fourteen extra miles each way, twice a day, and I am not the one paying for the fuel, so I should probably stop talking.\"\n\nThe county board takes up the posting at its meeting Tuesday, November 1, at the courthouse annex in Tessler, 7 p.m.",
+        "updates": [
+          {
+            "at": "2016-10-21T14:10:00",
+            "text": "The highway department has put up the eight-ton signs at both approaches and a weight-limit sign at the Brill Road junction. The Cobb Creek Road detour is not posted and will not be."
+          },
+          {
+            "at": "2016-10-24T08:30:00",
+            "text": "Bus 9 ran the detour Monday morning and arrived at the high school at 7:44 a.m., four minutes late. Yeakel said the run will be shifted five minutes earlier from Tuesday."
+          }
+        ]
+      },
+      {
+        "id": "water-rates",
+        "sectionId": "news",
+        "kicker": "MILBROOK",
+        "readMinutes": 3,
+        "headline": "Milbrook Village Board Raises Water Rate 9 Percent",
+        "dek": "The increase pays for meter replacement the village has deferred since 2009. Two residents spoke against it.",
+        "byline": "By Charlene Voss",
+        "date": "October 13, 2016",
+        "featured": false,
+        "lead": "MILBROOK. The village board voted 4-1 Tuesday to raise the water volume charge 9 percent effective with the January billing, and to spend $61,000 over three years replacing about 400 meters, most of them installed in 1993.",
+        "body": "Trustee Nolan Fehr cast the no vote. Fehr said he agreed the meters need replacing and did not agree with doing it out of the volume charge.\n\n\"A volume charge falls on whoever waters a garden,\" Fehr said. \"The meters are infrastructure. Infrastructure is the base charge. We are picking the easy one.\"\n\nVillage clerk Arlene Prosser said the base charge of $24 a quarter is unchanged and that the average household use of 12,000 gallons a quarter would see an increase of about $4.80 a quarter.\n\nThe village has 612 metered connections. Water superintendent Ray Kinnard told the board that 43 meters read zero for the last two quarters and that he does not believe 43 houses in this village used no water for six months.\n\n\"Some of those are empty houses,\" Kinnard said. \"Some of them are not.\"\n\nTwo residents spoke. Dale Hurn of Second Street said he had been on a fixed income since 2011 and had absorbed a sewer increase in 2014. Marjorie Speck of Front Street asked whether the village had applied for grant money. Mayor Ted Abernethy said the village applied in 2013 and 2015 and was told both times that the system is too small to score.\n\nThe 2021 boil-water advisory is not related to the meters. Kinnard said the meters measure; they do not treat.\n\nThe board also accepted the resignation of the part-time codes officer and tabled a discussion of the Front Street parking lines to November."
+      },
+      {
+        "id": "shoulder-parking",
+        "sectionId": "news",
+        "kicker": "ROUTE 62",
+        "readMinutes": 4,
+        "headline": "No Law Against Parking on the 62 Shoulder, Sheriff's Office Says",
+        "dek": "Three landowners east of the quarry cut have complained about cars at night. Deputies have found nothing to charge.",
+        "byline": "By Charlene Voss",
+        "date": "September 15, 2016",
+        "featured": false,
+        "lead": "ROUTE 62. The Verity County Sheriff's Office says there is no violation to charge when a car parks on the north shoulder of County Route 62 east of the old quarry cut, which is what three landowners in that stretch have been calling about since June.",
+        "body": "The stretch in question runs roughly two and a half miles from the quarry gate to the Kerrin County line. It is state right of way with a graded shoulder wide enough for a vehicle, no guide rail, and no residences on the north side.\n\nSergeant Pat Ollendorf said deputies have checked the area eleven times since June 1 and found a vehicle on nine of them, usually one, once four.\n\n\"They are sitting in the car,\" Ollendorf said. \"The engine is off. They have a radio. When we pull in behind them they roll the window down and start explaining, which is more than most people do. There is nothing there for us.\"\n\nOllendorf said the only citations written in that stretch this year were two for parking within thirty feet of the quarry gate, which is a posted fire lane.\n\nIvan Berstler, who runs beef on the south side of 62 near the line, said his objection is not the cars.\n\n\"It is the gate,\" Berstler said. \"Somebody has opened my gate twice. I am not saying it was them. I am saying I did not have the problem before and now I have the problem, and I have to drive out at eleven at night in October to look at a gate.\"\n\nThe Gazette spoke with three people parked in the stretch on the evenings of September 7 and September 8. One, a man from Dunmore, said he drives out about twice a month and has since 2014. One, a woman who declined to give her name, said she had come out once before and did not find what she was looking for. One, a retired man who gave only the name Terry, said he keeps a log and posts it to a shortwave listeners' forum at [url=synth://sdrlisteners.org/]sdrlisteners.org[/url].\n\nAsked what they were listening to, the three gave three different answers. The Gazette is not in a position to sort that out and did not try.\n\nBerstler said he has asked the state Department of Transportation about a no-parking designation. A department spokesman said such a designation requires a demonstrated safety hazard and that the department is not aware of a reported accident in that stretch since 2009.\n\nThe quarry gate is locked at 4 p.m. and the pit has not been worked since 2012."
+      },
+      {
+        "id": "broadband-grant",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 3,
+        "headline": "County Files Again for Broadband Money, Same Three Townships",
+        "dek": "The 2014 application scored 61. The threshold was 70. Nothing about the townships has changed.",
+        "byline": "By Charlene Voss",
+        "date": "October 6, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin County filed a second application on September 30 for state broadband money covering the townships of Nye Mills, Dorrance and Cobb, the same three townships named in the 2014 application that was not funded.",
+        "body": "The 2014 application scored 61 out of 100. The funding threshold that year was 70. County administrator Lynn Habicht said the scoring is weighted toward households passed per dollar, which is the one number the three townships cannot improve.\n\n\"There are 812 households in those three townships and 2,400 road miles of nothing,\" Habicht said. \"Every year we write a better application about the same arithmetic.\"\n\nThe application asks for $2.1 million against a county match of $105,000, which the board has already set aside in the capital reserve and has now set aside three times.\n\nThe incumbent provider filed a challenge to the 2014 application asserting that 214 of the addresses were already served. Habicht said 61 of those 214 were verified as served, that the remaining 153 were not, and that resolving the challenge took five months, by which time the award cycle had closed.\n\nThe county hired a consultant in July at $4,200 to run the address verification before filing this time. The consultant's count of unserved addresses in the three townships is 1,047, which is 39 higher than the county's own 2014 count.\n\nAwards are expected in March.\n\nThe Gazette asked six households on Dorrance Hill Road what they use now. Four said a cellular hotspot, one said satellite, and one said the school parking lot in Tessler, where the district leaves the wireless on until 10 p.m."
+      },
+      {
+        "id": "ambulance-staffing",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 3,
+        "headline": "Kerrin Ambulance Down to Nine Members; Milbrook Covering Nights",
+        "dek": "Two paid-per-call shifts went unfilled in January. The corps has asked the county for a study it has asked for before.",
+        "byline": "By Charlene Voss",
+        "date": "February 18, 2016",
+        "featured": false,
+        "lead": "TESSLER. The Kerrin County Volunteer Ambulance Corps is down to nine active members, four of whom are over 65, and did not fill its overnight crew on eleven nights in January.",
+        "body": "Corps captain Donna Reisinger said mutual aid from Milbrook covered nine of those eleven calls and that the other two were covered by Bowes City at an average response of 31 minutes.\n\n\"Thirty-one minutes is not a scandal,\" Reisinger said. \"It is arithmetic. Bowes City is twenty-six miles away and they have to get out the door.\"\n\nThe corps ran 418 calls in 2015, up from 391 in 2014. Reisinger said the call volume is not the problem and has never been the problem.\n\n\"The problem is that the people who used to do this worked in this county and now they work in Bowes City or Dunmore,\" she said. \"You cannot leave a shift at a distribution centre to go on an ambulance call. You could leave a barn.\"\n\nThe corps has asked the county board to fund a staffing study. The board funded one in 2009. Reisinger said the 2009 study recommended paid daytime staffing and was not acted on, and that she is asking for another one anyway because the board will not act on the first one and might act on a second.\n\nTraining is the other constraint. The nearest EMT-Basic course this spring meets Tuesday and Thursday evenings in Bowes City and runs 19 weeks.\n\nThe corps' chicken barbecue is May 21 at the Tessler fire hall."
+      },
+      {
+        "id": "post-office-hours",
+        "sectionId": "news",
+        "kicker": "TESSLER",
+        "readMinutes": 2,
+        "headline": "Tessler Window Hours Cut to Four Hours a Day",
+        "dek": "The post office stays open. The window closes at noon starting January 4.",
+        "byline": "By Charlene Voss",
+        "date": "November 19, 2015",
+        "featured": false,
+        "lead": "TESSLER. The Tessler post office will go to four window hours a day, 8 a.m. to noon, beginning January 4, under the postal service's rural office plan. The lobby and the boxes stay open the same hours they are now.",
+        "body": "About forty people came to the meeting at the fire hall on Tuesday, November 10. The postal service representative, who gave her name as L. Frayne and said she covers 61 offices, explained the four options on the survey that went out in September: reduced hours, a village post office in a local business, rural delivery from Nye Mills, or closure.\n\nOf 214 surveys returned, 173 chose reduced hours.\n\nThe complaints at the meeting were about the same three things they were about in 2012, when the office was last studied. Package pickup after work. The outgoing collection time, which moves from 4:15 p.m. to 11:30 a.m. Money orders.\n\n\"I do the church's money orders,\" said Vera Mundt. \"I do them on a Friday afternoon because that is when the count is done. Now I do them on a Monday morning, which means the money sits in my kitchen over a weekend, which I do not want.\"\n\nFrayne said the office's revenue would have to support the hours and that Tessler's does not, and that the office is not on any closure list.\n\nPostmaster relief Deb Ollinger, who has run the window since 2013, will go to 20 hours. She said she has not decided whether she will stay."
+      },
+      {
+        "id": "fair-attendance",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 3,
+        "headline": "Fair Attendance Down a Fourth; Board Will Look at Moving the Date",
+        "dek": "Rain took two of the four days. The grandstand show did not sell out for the first time since 2004.",
+        "byline": "By Charlene Voss",
+        "date": "August 11, 2016",
+        "featured": false,
+        "lead": "NYE MILLS. Gate count at the Kerrin County Fair was 9,340 over four days, down from 12,610 last year, after rain on Thursday and most of Saturday.",
+        "body": "Fair association president Owen Sluyter said the figure is a gate count and not paid admissions, because exhibitors, 4-H families and anyone under six come through the same turnstile and are not separated.\n\n\"I want to be careful,\" Sluyter said. \"We report the turnstile. We have always reported the turnstile. Somebody is going to print that attendance was down a fourth and that is true and it is also two rainy days.\"\n\nThe Friday grandstand show, a truck pull, sold 1,180 of 1,400 seats. The association's minutes show the grandstand has sold out every year since 2004.\n\nLivestock entries were 311, down from 348. Poultry was cancelled for the third consecutive year under the state order. Open class baking was 94 entries, up from 71, which Sluyter attributed to the association dropping the entry fee.\n\nThe association will discuss at its September meeting whether to move the fair a week later, to the last full week of July, which would put it after the Quayle fair rather than against it. Sluyter said the objection to moving is that the last week of July is when the second cutting comes off.\n\nThe association cleared about $14,000 on the fair, against roughly $21,000 last year. The 4-H building roof is the association's next project and is estimated at $18,000.\n\nVideo of the Friday truck pull, shot from the fence by somebody's nephew, has been posted to [url=synth://clipvault.tv/]clipvault.tv[/url]."
+      },
+      {
+        "id": "substation-crew-room",
+        "sectionId": "news",
+        "kicker": "GRIDFALL",
+        "readMinutes": 4,
+        "headline": "New Substation Yard Has No Crew Room",
+        "dek": "Verity Valley cut the ribbon Tuesday on a rebuilt Substation No. 3. It is run from a control centre two states away.",
+        "byline": "By Dean Rask",
+        "date": "October 1, 2015",
+        "featured": false,
+        "lead": "GRIDFALL. Verity Valley Power & Light opened its rebuilt Substation No. 3 at Depot and Quarry Road on Tuesday, September 22, twelve years after a fire in the transformer yard there cut power to 4,100 customers.",
+        "body": "About sixty people attended. The company's regional vice president spoke for nine minutes. A county commissioner spoke for four. There was coffee in the gravel lot.\n\nThe yard is unmanned. Switching and monitoring are done by a control centre the company operates two states away, over a data link the company described as redundant. The old crew room, a cinder block building at the back of the lot with a table and a kettle in it, was not rebuilt.\n\nWalter Pennock, a Verity Valley substation technician who was on the pole line on Route 62 the morning of the fire, drove down from Ashkettle and stood at the back.\n\n\"Both banks were replaced in 2004,\" Pennock said. \"The second feed off the Pell tie came in 2005. What was rebuilt this year is the yard, the control house and the staffing. There is nobody on site now. The nearest person is two states away and a phone call.\"\n\nAsked whether that was a problem, Pennock said it was not a problem at 2 p.m. in September.\n\nThe fire began at 4:52 a.m. on June 11, 2003. It burned six hours. Nobody died. Two Gridfall volunteer firefighters were treated at County General for smoke inhalation and released the same afternoon. The state utility commission published a two-page summary in November 2003 attributing the failure to \"insulation degradation consistent with age.\" Verity Valley has not released its internal report and was not asked about it on Tuesday.\n\nThe Gazette prints this story because about 340 of our subscribers are on the circuits that go through that yard, and because in 2003 we ran three paragraphs on it and should have run more.\n\nThe Ledger's contemporaneous coverage is in its online archive at [url=synth://verityledger.com/article/fire-2003]verityledger.com[/url]. A longer account is kept on the county wiki at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]."
+      },
+      {
+        "id": "quarry-blasting",
+        "sectionId": "news",
+        "kicker": "ROUTE 62",
+        "readMinutes": 3,
+        "headline": "Blasting Complaints at the Quarry Cut Go to the State",
+        "dek": "Eight households on Brill Road filed. The pit has not produced since 2012 and the operator says the work is reclamation.",
+        "byline": "By Charlene Voss",
+        "date": "March 17, 2016",
+        "featured": false,
+        "lead": "BRILL ROAD. Eight households on Brill Road have filed complaints with the state about blasting at the old quarry cut off Route 62, where the operator says the work is not production but the removal of an unstable face required by its reclamation plan.",
+        "body": "The pit last shipped aggregate in 2012. The permit remains active because reclamation is not finished, which the state confirmed.\n\nThere have been four shots since November. The operator, Coyne Aggregates, filed seismograph records for all four. The highest peak particle velocity recorded at the nearest monitored structure was 0.41 inches per second. The state limit at that distance is 1.25.\n\n\"The numbers are the numbers,\" said Brill Road resident Cheryl Mondt, who has lived there since 1988. \"I am not arguing with the seismograph. I am telling you the chimney had no crack in it in 2011 and it has one now, and nobody has been able to tell me what else did that.\"\n\nCoyne Aggregates' plant manager, Gil Fenstermaker, said the company offered pre-blast surveys to every residence within half a mile in 2009 and that four of the eight complainants declined at the time.\n\n\"That is not a gotcha,\" Fenstermaker said. \"It is the reason we cannot settle this. Without a pre-blast survey there is no before.\"\n\nThe state's mined land reclamation office will hold an informational session at the Milbrook village hall on Tuesday, April 12, at 6:30 p.m. The office has not scheduled an inspection.\n\nTwo more shots are expected before the face is down. Fenstermaker said the reclamation plan requires grading and seeding by the end of 2018."
+      },
+      {
+        "id": "election-ballot",
+        "sectionId": "news",
+        "kicker": "ELECTION",
+        "readMinutes": 3,
+        "headline": "What Is on the Ballot November 8",
+        "dek": "Two town justice seats, three town board seats, one county board seat and a fire district proposition. Four of the seven races are uncontested.",
+        "byline": "By Charlene Voss",
+        "date": "October 20, 2016",
+        "featured": false,
+        "lead": "KERRIN COUNTY. Polls in Kerrin County and in the village of Milbrook are open 6 a.m. to 9 p.m. on Tuesday, November 8. Below is what is on the ballot locally, which is a shorter list than it used to be.",
+        "body": "[b]County Board, District 4[/b] (Nye Mills, Dorrance): Arden Kittle, incumbent, and Roy Dekker.\n\n[b]County Board, District 2[/b] (Tessler village and town): Lynn Habicht Jr., incumbent, unopposed.\n\n[b]Town of Cobb, Supervisor[/b]: Duane Osterhout, incumbent, unopposed.\n\n[b]Town of Cobb, Justice[/b]: no candidate filed. The seat will be filled by appointment. The town clerk says one person has expressed interest and has not yet decided.\n\n[b]Town of Nye Mills, Justice[/b]: Eileen Wardrop, unopposed.\n\n[b]Town of Nye Mills, Council, two seats[/b]: Tim Vore, Sandra Luebke, Pete Sandoval.\n\n[b]Tessler Fire District, Proposition 1[/b]: authorises the district to borrow $340,000 over ten years for a replacement tanker. The district's present tanker is a 1994 and failed its pump test in May. The district says the levy effect is about $19 a year on a house assessed at $90,000.\n\nAbsentee applications are due at the county board of elections in Tessler by Tuesday, November 1, if mailed, or Monday, November 7, in person.\n\nPolling places are unchanged from 2015 except for the town of Cobb, which moves from the Cobb Grange to the Tessler Road fire station. The Grange sold its building in June.\n\nThe Gazette does not endorse in local races and has not since 1974."
+      },
+      {
+        "id": "highway-salt",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 2,
+        "headline": "Highway Department Buys Salt Early, Short Two Drivers",
+        "dek": "The county has 1,900 tons in the shed and openings it has not been able to fill since June.",
+        "byline": "By Charlene Voss",
+        "date": "October 6, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin County has taken delivery of 1,900 tons of road salt, its full shed capacity, and goes into winter two plow drivers short.",
+        "body": "Superintendent Merle Lachance said the county bought early on the state contract at $58.40 a ton and that the shed has been full since September 26.\n\nThe two open positions have been posted since June. Lachance said he has had four applicants, two of whom did not have the commercial licence and two of whom took jobs elsewhere while the county's hiring process ran.\n\n\"The process takes six weeks,\" Lachance said. \"A man who can drive a plow does not wait six weeks. That is not the board's fault or mine. It is just how long it takes.\"\n\nThe county runs eleven routes. With nine drivers, Lachance said, two routes get covered by moving somebody off the mechanic's bench or by running a second pass late, and the routes that get the late pass are Dorrance Hill and the Cobb Creek loop.\n\nThe board will consider at its November meeting whether to raise the starting rate, which is $19.40 an hour, or to contract the two routes to a private operator. Lachance said he would rather have the drivers.\n\nThe county's sand and salt mix is 5 to 1 on the hills and straight salt on the two state-touch routes."
+      },
+      {
+        "id": "rail-grade-sale",
+        "sectionId": "news",
+        "kicker": "KERRIN COUNTY",
+        "readMinutes": 3,
+        "headline": "Old Rail Grade East of Nye Mills Sold to the Neighbour Who Has Been Mowing It",
+        "dek": "Eleven hundred feet of the old spur went at the tax sale for $1,900. A trail group found out in July.",
+        "byline": "By Dean Rask",
+        "date": "August 25, 2016",
+        "featured": false,
+        "lead": "NYE MILLS. A 1,100-foot section of the abandoned rail grade east of Nye Mills was sold at the county tax sale in June for $1,900 to Wendell Barschdorf, whose farm is on both sides of it and who has been mowing the strip since about 1998.",
+        "body": "The parcel had been in arrears since 2009 under a corporate owner that no longer files with the state.\n\nBarschdorf said he bought it because he was tired of not owning it.\n\n\"I have cut that strip for eighteen years,\" he said. \"Nobody ever thanked me and nobody ever told me to stop. Now if somebody wants to tell me to stop it is me.\"\n\nThe sale came to the attention of a trail group in July. The Kerrin Greenway Committee, six people who have met quarterly since 2013, had been treating the grade as a future connector between Nye Mills and the Verity Branch Trail, which opened in 2014 eleven miles to the west in the next county.\n\nCommittee chair Paula Sedgwick said the committee had no money to bid and did not know the parcel was on the list.\n\n\"The tax sale list is published in the paper,\" Sedgwick said. \"It was published in this paper. We did not read it. That is entirely on us.\"\n\nThe section is not the only gap. County records show the grade east of Nye Mills is in at least nine ownerships over four miles, three of them unresolved estates.\n\nBarschdorf said he has no objection to people walking it and does object to four-wheelers, which he said is why he keeps the ends mowed and the middle rough.\n\nDiscussion of the line, including a survey of the grade posted in 2007 by somebody who walked all of it, is on the rail enthusiast board at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]."
+      },
+      {
+        "id": "board-oct",
+        "sectionId": "schools",
+        "kicker": "SCHOOL BOARD",
+        "readMinutes": 4,
+        "headline": "Board Buys a Bus in Four Minutes, Spends Forty on the Dress Code",
+        "dek": "The $112,000 purchase passed 7-0 without discussion. The dress code did not come to a vote.",
+        "byline": "By Charlene Voss",
+        "date": "October 13, 2016",
+        "featured": false,
+        "lead": "TESSLER. The Kerrin Consolidated board of education met Tuesday, October 11, for two hours and ten minutes. It approved a 65-passenger bus at $112,400 off the state contract in four minutes, and then discussed the middle school dress code for forty.",
+        "body": "The bus replaces a 2005 with 191,000 miles that transportation supervisor Dana Yeakel said failed its last inspection on brake lines and will be kept as a spare until it does not pass again. Delivery is expected in March. The vote was 7-0 with no discussion.\n\nThe dress code came up under old business. The current code, adopted in 2009, prohibits \"clothing that distracts from the educational process\" and specifies four items. Principal Gwen Tarpley told the board she had written 31 referrals under it since September and that 28 of the 31 were girls.\n\n\"I am not asking you to change your values,\" Tarpley said. \"I am asking you to write down what you mean, because right now I am the one deciding it, one girl at a time, in a hallway.\"\n\nBoard member Charlotte Ives said she would support specifying items. Board member Randall Speck said specifying items would date the policy within two years and that the board had been through this in 2009.\n\nFour parents spoke. Two asked the board to specify. One asked the board to leave it alone. One spoke for six minutes about phones, which was not on the agenda, and the president let it run.\n\nThe board did not vote. President Al Dungey asked Tarpley to bring language to the November meeting, which is what the board asked the previous principal to do in 2009. Tarpley said she would.\n\nAlso on Tuesday:\n\n[list][*]Accepted with regret the resignation of Marilyn Hootman, 29 years, high school library aide, effective December 23. The position is not on the November agenda.[*]Approved a $3,100 quote to repair the elementary gym floor where the roof leaked in July.[*]Heard that the district's fund balance is $1,140,000, about 4.1 percent of the budget.[*]Approved overnight travel for eleven FFA members to the state convention.[*]Went into executive session at 9:41 p.m. for a personnel matter and took no action on returning.[/list]\n\nThe next meeting is Tuesday, November 8, at 7 p.m. in the high school library. It is election day and the board discussed moving it and did not."
+      },
+      {
+        "id": "board-sept",
+        "sectionId": "schools",
+        "kicker": "SCHOOL BOARD",
+        "readMinutes": 3,
+        "headline": "Enrollment Down 31; Seventh Grade Goes to One Section",
+        "dek": "The district has lost 144 students since 2010. A retiring teacher will not be replaced.",
+        "byline": "By Charlene Voss",
+        "date": "September 15, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin Consolidated opened with 611 students, down 31 from last September and down 144 from 2010, and has combined the two seventh grade sections into one of 41.",
+        "body": "Superintendent Ross Adkin said the combination was the alternative to a section of 14 and a section of 27, which is what the numbers produced when the schedule was built in August.\n\n\"Forty-one in a seventh grade English class is too many,\" Adkin told the board. \"Fourteen and twenty-seven is worse for the twenty-seven and is not affordable. I am telling you what I did and I am not going to pretend I like it.\"\n\nThe district added an aide for the period. Adkin said the room in the middle school wing seats 44.\n\nThe retirement of a middle school social studies teacher in June was not filled. The sections were absorbed by two remaining teachers, each of whom picks up one section and loses a planning period, for which the contract provides a stipend of $2,400 a year.\n\nBoard member Charlotte Ives asked whether the district has a projection. Adkin said the district's kindergarten cohort is 38 and the graduating class is 61, and that the projection is arithmetic.\n\nThe district's cost per pupil is about $21,800 and is the third highest of the eleven districts in the state region, which Adkin said is what happens when the buses and the boiler cost the same regardless of how many children are in the building.\n\nA merger study with Nye Mills Central was raised from the floor. Adkin said the two districts studied a merger in 1997 and in 2008, and that a third study costs about $50,000 and the state pays for it.\n\nNo motion was made."
+      },
+      {
+        "id": "lunch-vendor",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 2,
+        "headline": "New Lunch Vendor, Same Complaint",
+        "dek": "Participation is up four points at the elementary and down nine at the high school.",
+        "byline": "By Charlene Voss",
+        "date": "October 6, 2016",
+        "featured": false,
+        "lead": "TESSLER. Five weeks into a contract with a new food service management company, Kerrin Consolidated's lunch participation is up at the elementary school and down at the high school, and the high school students the Gazette asked all said the same thing about the pizza.",
+        "body": "The district moved to Ardsley Dining Group in July after nine years with its previous vendor. The contract is worth about $310,000 a year and was the only bid.\n\nElementary participation is 78 percent, up from 74. High school participation is 51 percent, down from 60.\n\nFood service director Bev Nunnally said the high school drop is partly the open campus, which was reinstated in September after two years, and partly the change in the pizza.\n\n\"The pizza is made to a different spec,\" Nunnally said. \"It meets the grain and sodium targets. The old one also met them. Children can tell.\"\n\nThe district's unpaid meal balances at the end of last year were $4,180, of which $1,940 was written off. The board adopted a policy in August directing that no student be refused a meal and that balances over $25 be referred to the business office rather than mentioned to the student.\n\nThe salad bar at the high school, which was installed with a grant in 2014, is out of service pending a compressor part. Nunnally said it has been out since September 8 and the part is on order."
+      },
+      {
+        "id": "honor-roll",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 3,
+        "headline": "Kerrin Central First Quarter Honor Roll",
+        "dek": "Ninety-four students named. High honor requires a 93 average with no grade below 85.",
+        "byline": "Kerrin Consolidated School District",
+        "date": "October 20, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin Central High School has released the first quarter honor roll. High honor requires a 93 average with no grade below 85. Honor requires an 87 average with no grade below 80.",
+        "body": "[b]Grade 12, High Honor[/b]\nAbigail Berstler, Owen Dekker, Marisa Fehr, Caleb Habicht, Nina Kolb, Ryan Luebke, Samantha Ollinger, Trent Osterhout, Grace Speck, Dylan Wardrop.\n\n[b]Grade 12, Honor[/b]\nCody Abernethy, Hailey Barschdorf, Zachary Dungey, Emma Fenstermaker, Josie Frayne, Mitchell Hurn, Lauren Kinnard, Brandon Mondt, Paige Sandoval, Tyler Sedgwick, Shelby Tarpley, Evan Vore.\n\n[b]Grade 11, High Honor[/b]\nKaitlyn Adkin, Ian Berstler, Chloe Dekker, Nathan Habicht, Olivia Lachance, Seth Nunnally, Rachel Prosser, Austin Reisinger, Morgan Sluyter.\n\n[b]Grade 11, Honor[/b]\nDevin Ballou, Sierra Coy, Jacob Ives, Alyssa Kittle, Logan Mundt, Breanna Ollendorf, Cole Rask, Katelyn Speck, Jared Tarpley, Hannah Yeakel.\n\n[b]Grade 10, High Honor[/b]\nElise Barschdorf, Marcus Dungey, Faith Habicht, Colton Kinnard, Julia Luebke, Aidan Osterhout, Lydia Sandoval, Garrett Vore.\n\n[b]Grade 10, Honor[/b]\nBrooke Abernethy, Landon Coy, Jenna Dekker, Cameron Frayne, Mackenzie Hurn, Wyatt Ives, Hope Mondt, Bailey Reisinger, Trevor Sluyter, Allison Wardrop, Nolan Yeakel.\n\n[b]Grade 9, High Honor[/b]\nSophie Adkin, Ethan Ballou, Kendra Fehr, Isaac Lachance, Madelyn Nunnally, Carter Prosser, Anna Sedgwick, Jonah Speck.\n\n[b]Grade 9, Honor[/b]\nClara Berstler, Dustin Dungey, Alexis Fenstermaker, Levi Habicht, Sydney Kittle, Brody Mundt, Payton Osterhout, Reed Sandoval, Natalie Tarpley, Gavin Vore, Ella Wardrop, Mason Yeakel.\n\nParents who find an error in a name should call the guidance office at the high school. The Gazette prints the list as the district supplies it and does not retype it."
+      },
+      {
+        "id": "board-june",
+        "sectionId": "schools",
+        "kicker": "SCHOOL BOARD",
+        "readMinutes": 3,
+        "headline": "Board Votes 4-3 to Keep Tessler Elementary Open Another Year",
+        "dek": "Closing the building would save about $290,000 and add 22 minutes to some bus runs.",
+        "byline": "By Charlene Voss",
+        "date": "June 16, 2016",
+        "featured": false,
+        "lead": "TESSLER. The Kerrin Consolidated board voted 4-3 on Tuesday, June 14, to keep the Tessler Road elementary building open for the 2016-17 year, after a study put the annual saving from closing it at $290,000 and the cost at 22 minutes on four bus runs.",
+        "body": "The building holds 118 students in kindergarten through grade four. It was built in 1957 and has a boiler from 1988 that the district's engineer rates at four to seven years of remaining life.\n\nVoting to keep it open: Dungey, Ives, Speck, Kittle. Voting to close: Bellinger, Osterhout, Lueck.\n\nBoard member Dennis Bellinger said the vote postpones a decision rather than making one.\n\n\"We will be here again in June with the same building a year older,\" Bellinger said. \"I would rather decide it while we can choose the date.\"\n\nBoard president Al Dungey said he voted to keep it open because the closing plan assumed space in the main campus that the district has not yet built out.\n\nTwenty-nine people attended. Eleven spoke, nine of them against closing. The two who spoke for closing were both former board members.\n\nThe district will spend $46,000 this summer on the elementary roof, which the engineer's report describes as a repair and not a replacement.\n\nThe board will take the question up again in the 2017-18 budget cycle, beginning in January."
+      },
+      {
+        "id": "blotter-oct27",
+        "sectionId": "blotter",
+        "kicker": "POLICE BLOTTER",
+        "readMinutes": 3,
+        "headline": "Police Blotter, October 17 to October 23",
+        "dek": "From the Kerrin County Sheriff's Office and the Verity County Sheriff's Office, Milbrook patrol.",
+        "byline": "Compiled by Charlene Voss",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "The following is taken from the daily logs of the Kerrin County Sheriff's Office and from the Milbrook patrol log of the Verity County Sheriff's Office. An arrest is not a conviction.",
+        "body": "[b]October 17.[/b] A caller on Brill Road reported a vehicle in the ditch. The vehicle was unoccupied and had been in the ditch since Saturday. The owner was contacted and said he was aware of it.\n\n[b]October 17.[/b] Alarm, Tessler Road fire station. Accidental, custodian.\n\n[b]October 18.[/b] A Nye Mills resident reported that someone had moved his trail camera. Deputies determined the camera had been moved by the resident's brother, who moved it in August as well.\n\n[b]October 18.[/b] Loose cattle, Route 62 near the county line. Six head, returned by the owner. Same six as September 30.\n\n[b]October 19.[/b] A caller on Front Street in Milbrook reported a man going through the bins behind the hardware store. Deputies located the man. He was going through the bins with the owner's permission and had been for two years.\n\n[b]October 19.[/b] Harassment complaint, Dorrance Hill Road, ongoing dispute between neighbours concerning a driveway. Both parties advised. Fourth call to that address this year.\n\n[b]October 20.[/b] Two-vehicle accident, Tessler Road at Cobb Creek Road, 7:42 a.m. No injuries, both vehicles driveable. Both drivers said the sun was in their eyes. Both were travelling east.\n\n[b]October 20.[/b] A Milbrook resident reported a suspicious vehicle on the shoulder of Route 62 east of the quarry gate, engine off, a wire antenna on the roof. Deputies spoke with the driver, who was from out of county and was listening to the radio. No violation.\n\n[b]October 21.[/b] Arrest, Nye Mills, one male, 24, charged with driving while intoxicated following a traffic stop on Route 62 at 1:10 a.m. Released on appearance ticket, Nye Mills town court, November 3.\n\n[b]October 21.[/b] A caller reported fireworks on Hoyt Road. Deputies located a man burning brush.\n\n[b]October 22.[/b] Larceny, Cobb Creek Road. Approximately forty feet of copper downspout taken from a barn. Report taken. This is the fourth downspout report on that road since July.\n\n[b]October 22.[/b] Welfare check, Second Street, Milbrook, at the request of a family member out of state. Resident was at home and was fine and asked that her son be told to call her rather than the sheriff.\n\n[b]October 23.[/b] Deer versus vehicle, Route 62 west of the Brill Road junction, 6:15 a.m. Minor damage, no injuries. Ninth this month.\n\n[b]October 23.[/b] A caller on Dorrance Hill Road reported hearing a gunshot. Deputies checked the area. It is deer season."
+      },
+      {
+        "id": "blotter-oct20",
+        "sectionId": "blotter",
+        "kicker": "POLICE BLOTTER",
+        "readMinutes": 2,
+        "headline": "Police Blotter, October 10 to October 16",
+        "dek": "From the Kerrin County Sheriff's Office and the Verity County Sheriff's Office, Milbrook patrol.",
+        "byline": "Compiled by Charlene Voss",
+        "date": "October 20, 2016",
+        "featured": false,
+        "lead": "The following is taken from the daily logs of the Kerrin County Sheriff's Office and from the Milbrook patrol log of the Verity County Sheriff's Office. An arrest is not a conviction.",
+        "body": "[b]October 10.[/b] A Tessler business reported a counterfeit twenty. The bill was taken for the file. The business had accepted it on Saturday and noticed on Monday.\n\n[b]October 11.[/b] Criminal mischief, Kerrin Central bus garage. Two windows broken. Estimated damage $340. Investigation continuing.\n\n[b]October 11.[/b] A caller on Route 62 reported a dog in the road. The dog was returned to a residence on Brill Road. Same dog as October 3.\n\n[b]October 12.[/b] Unlocked vehicles entered overnight on Second and Third Streets, Milbrook. Four reported. Items taken: loose change, a pair of sunglasses, a garage door opener. The garage door opener is the one the Gazette would worry about.\n\n[b]October 13.[/b] Alarm, Front Street, Milbrook. Accidental, keyholder responded.\n\n[b]October 13.[/b] A caller reported a man walking on Dorrance Hill Road after dark with no light. Deputies located the man. He was walking home. He was given a ride and a reflective band.\n\n[b]October 14.[/b] Accident, Cobb Creek Road, single vehicle into a culvert headwall, 5:50 p.m. One occupant transported to Bowes City by Kerrin ambulance with a shoulder injury. No ticket issued.\n\n[b]October 15.[/b] Arrest, Tessler, one male, 41, charged with petit larceny relating to a September report of tools taken from a job site. Released on appearance ticket.\n\n[b]October 15.[/b] Noise complaint, Nye Mills, 11:40 p.m. Resolved on arrival.\n\n[b]October 16.[/b] Deer versus vehicle, Route 62 at the quarry gate, 6:40 a.m. No injuries.\n\n[b]October 16.[/b] A caller reported a drone over a field on Dorrance Hill Road. Deputies did not locate a drone or an operator. The caller was advised that there is no local law on the subject and that the sheriff's office has now been asked about it eight times this year."
+      },
+      {
+        "id": "blotter-sep29",
+        "sectionId": "blotter",
+        "kicker": "POLICE BLOTTER",
+        "readMinutes": 2,
+        "headline": "Police Blotter, September 19 to September 25",
+        "dek": "From the Kerrin County Sheriff's Office and the Verity County Sheriff's Office, Milbrook patrol.",
+        "byline": "Compiled by Charlene Voss",
+        "date": "September 29, 2016",
+        "featured": false,
+        "lead": "The following is taken from the daily logs of the Kerrin County Sheriff's Office and from the Milbrook patrol log of the Verity County Sheriff's Office. An arrest is not a conviction.",
+        "body": "[b]September 19.[/b] A caller on Hoyt Road reported a man in the road. Deputies located a man in the road. He was walking and had been walking.\n\n[b]September 20.[/b] Burglary, seasonal camp, Dorrance Hill Road. Entry through a rear window. A generator and a chainsaw taken. Owner had last been at the property in June.\n\n[b]September 20.[/b] Two-vehicle accident, Front Street at Second, Milbrook. No injuries. One ticket, failure to yield.\n\n[b]September 21.[/b] A Tessler resident reported that a package had not arrived. The package was at the post office. The resident had been given a slip.\n\n[b]September 22.[/b] Trespass complaint, Berstler farm, Route 62. A gate had been opened. No damage, no livestock out. Report taken. Second such report this year at that address.\n\n[b]September 23.[/b] Alarm, Kerrin Central high school, 2:15 a.m. Building checked and secure.\n\n[b]September 23.[/b] Domestic complaint, Nye Mills. One male, 33, arrested and charged. Released to Kerrin County court.\n\n[b]September 24.[/b] A caller reported a vehicle parked in the field entrance on Brill Road. The vehicle was moved on request. The occupant said he had been asleep.\n\n[b]September 25.[/b] Fire, chimney, Cobb Creek Road. Tessler and Nye Mills responded. No extension, no injuries, the homeowner had already put it out with a bucket of salt, which the chief asked us to say is not the recommended method and did work."
+      },
+      {
+        "id": "sports-oct27",
+        "sectionId": "sports",
+        "kicker": "SPORTS",
+        "readMinutes": 3,
+        "headline": "Rams Finish 3-5; Cross Country Takes Four to Sectionals",
+        "dek": "Football lost its last three. Volleyball is out in four at Leland. Two girls and two boys qualified Saturday.",
+        "byline": "By Kyle Prosser",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin Central finished the football season 3-5 after a 28-6 loss at Kearney Falls on Friday, October 21, its third straight loss and its last game of the year.",
+        "body": "[b]Football[/b]\n\nThe Rams gave up 21 points in the second quarter at Kearney Falls and did not score until a 34-yard pass from Dylan Wardrop to Cole Rask with 4:10 left. The two-point try failed.\n\nWardrop finished the season with 1,104 passing yards and nine touchdowns. Trent Osterhout ran for 712 yards. The Rams were outscored 68-14 in their last three games, all of them against schools with more than twice the enrollment.\n\nCoach Vern Lueck, in his ninth year, said the co-op with Ardo will be reviewed in January as it is every January. Kerrin dressed 26. Eleven were seniors.\n\n\"We had nine kids play both ways every week,\" Lueck said. \"That is the whole story of this season and it is the same story it was in 2013.\"\n\n[b]Volleyball[/b]\n\nKerrin Central finished 11-5 and lost in the first round of sectionals at Leland on Tuesday, October 25, 25-20, 18-25, 22-25, 19-25. Morgan Sluyter had 14 kills. Chloe Dekker had 31 assists and has 412 for her career with a year to go.\n\n[b]Cross country[/b]\n\nFour Rams qualified for the state qualifier at the sectional meet at Quayle on Saturday, October 22. Rachel Prosser was fifth in 20:41 and Kendra Fehr was eleventh in 21:38. Isaac Lachance was ninth in 17:52 and Ethan Ballou was fourteenth in 18:20.\n\nThe state qualifier is Saturday, November 5, at Dunmore.\n\n[b]Winter[/b]\n\nBasketball practice opens Monday, November 14. The boys' team returns three starters. The girls' team returns one and graduated its all-time leading scorer.\n\nWrestling opens November 21 and will again be a co-op with Nye Mills. Fourteen wrestlers are expected, which fills nine of the fourteen weight classes."
+      },
+      {
+        "id": "sports-oct20",
+        "sectionId": "sports",
+        "kicker": "SPORTS",
+        "readMinutes": 2,
+        "headline": "Rams Beat Quayle 14-12 on a Two-Point Stop",
+        "dek": "Kerrin Central held at its own three with 1:20 left. Osterhout ran 27 times.",
+        "byline": "By Kyle Prosser",
+        "date": "October 20, 2016",
+        "featured": false,
+        "lead": "TESSLER. Kerrin Central stopped a two-point conversion at its own three-yard line with 1:20 remaining and beat Quayle 14-12 on Friday, October 14, at home, in front of about 400 people and a wind that took the field goal out of both teams' plans.",
+        "body": "Trent Osterhout carried 27 times for 141 yards and both Kerrin touchdowns, from four yards in the second quarter and from one in the third. Dylan Wardrop was 6 of 13 for 74 yards.\n\nQuayle scored with 1:26 left on a 22-yard pass and went for two. The play was a run to the short side. Kerrin's Marcus Dungey and Cole Rask met the back at the line.\n\n\"We called the same defence we called on their first two-point try in the first half,\" Lueck said. \"They ran the same play. I do not know what to tell you about that.\"\n\nKerrin recovered the onside kick and ran out the clock.\n\nThe win put the Rams at 3-2. They lost their next three.\n\n[b]Also[/b]\n\nVolleyball beat Nye Mills 25-18, 25-22, 25-19 on October 13. Morgan Sluyter had 11 kills.\n\nCross country ran at Leland on October 15. Rachel Prosser was third of 61. The boys were fourth of nine teams.\n\nThe soccer season ended October 12 with a 3-0 loss at Stannard. The Rams finished 4-11-1. Coach Denise Kittle said eight of the eighteen on the roster were playing a first season.\n\nJunior high football finished 5-1 and did not lose at home."
+      },
+      {
+        "id": "sports-soccer-2015",
+        "sectionId": "sports",
+        "kicker": "SPORTS",
+        "readMinutes": 2,
+        "headline": "Girls Soccer Loses Sectional Final 1-0 to Kearney Falls",
+        "dek": "A corner in the 68th minute ended the best season the program has had.",
+        "byline": "By Kyle Prosser",
+        "date": "November 5, 2015",
+        "featured": false,
+        "lead": "DUNMORE. Kerrin Central's girls soccer season ended Saturday, October 31, with a 1-0 loss to Kearney Falls in the Class D sectional final at Dunmore, on a goal off a corner kick in the 68th minute.",
+        "body": "The Rams finished 14-4-1, the most wins in the program's history, which begins in 1994.\n\nGoalkeeper Samantha Ollinger made nine saves and had eleven shutouts on the season. Abigail Berstler, who scored 21 goals, had the Rams' best chance in the 74th minute and put it over.\n\n\"I have had better teams lose earlier,\" said coach Denise Kittle. \"That is not a consolation and it is true.\"\n\nKearney Falls had beaten Kerrin 2-1 in the regular season on September 22.\n\nSeven seniors played their last game: Ollinger, Berstler, Marisa Fehr, Grace Speck, Nina Kolb, Paige Sandoval and Shelby Tarpley.\n\nAbout 200 people made the drive to Dunmore. The district ran a bus and it was full."
+      },
+      {
+        "id": "obits-oct27",
+        "sectionId": "obits",
+        "kicker": "OBITUARIES",
+        "readMinutes": 3,
+        "headline": "Obituaries, October 27",
+        "dek": "Vernon Kitzmiller, Eleanor Frayne Dunlavy, Raymond J. Speck.",
+        "byline": "The Milbrook Gazette",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "Obituaries are printed without charge in the Gazette when supplied by a funeral home or by the family. Photographs are $15.",
+        "body": "[b]Vernon L. Kitzmiller, 88, Nye Mills[/b]\n\nVernon L. Kitzmiller, 88, of Dorrance Hill Road, Nye Mills, died Saturday, October 22, 2016, at County General Hospital in Marchfield.\n\nHe was born March 3, 1928, in Nye Mills, the son of Leo and Bertha (Wenzel) Kitzmiller. He served in the Army from 1950 to 1952. He farmed the home place on Dorrance Hill Road until 1989 and then drove a school bus for Kerrin Consolidated for eleven years, route 6, which he said was the good one.\n\nHe married Helen Sturm on June 14, 1953, at St. Anne's in Tessler. She died in 2009.\n\nHe is survived by two daughters, Janet Vore of Tessler and Carol Kitzmiller of Bowes City; a son, Dennis Kitzmiller of Dunmore; seven grandchildren; four great-grandchildren; and a sister, Ruth Ann Beiler of Nye Mills. He was preceded in death by a son, Leo, in 1977.\n\nCalling hours are Thursday, November 3, from 4 to 7 p.m. at [url=synth://ostranderfh.synth/]Ostrander Funeral Home[/url], Tessler. A Mass of Christian Burial will be said Friday, November 4, at 10 a.m. at St. Anne's. Burial in St. Anne's cemetery.\n\nMemorial contributions may be made to the Nye Mills Volunteer Fire Company.\n\n___\n\n[b]Eleanor Frayne Dunlavy, 79, Milbrook[/b]\n\nEleanor F. Dunlavy, 79, of Second Street, Milbrook, died Tuesday, October 18, 2016, at her home, with her family present.\n\nShe was born August 9, 1937, in Ashkettle, the daughter of Walter and Iris (Penn) Frayne. She graduated from Verity Central in 1955 and worked in the office at the Milbrook feed mill from 1958 until the mill closed in 1991, and then at the Kerrin County clerk's office until she retired in 2002.\n\nShe married Robert Dunlavy on September 8, 1956. He survives.\n\nShe kept the books for the Milbrook Methodist Church for thirty-one years and was a member of the Milbrook Ladies Auxiliary. She made the pies for the auxiliary's election day sale every year from 1974 until this year, and this year she supervised.\n\nShe is also survived by two sons, Robert Jr. of Milbrook and Douglas of Corliss; a daughter, Lisa Hurn of Milbrook; six grandchildren; and a brother, Cameron Frayne of Tessler.\n\nServices were held privately at the family's request. A memorial gathering will be held at the Milbrook Methodist Church on Saturday, November 12, at 1 p.m.\n\nMemorial contributions may be made to the Milbrook Free Library.\n\n___\n\n[b]Raymond J. Speck, 64, Cobb[/b]\n\nRaymond J. Speck, 64, of Cobb Creek Road, died Saturday, October 15, 2016, at County General Hospital in Marchfield, following a short illness.\n\nHe was born January 12, 1952, in Bowes City. He worked 31 years at the Kerrin County highway department, the last nine as a shop foreman, and retired in 2014.\n\nHe is survived by his wife of 41 years, Marjorie (Lueck) Speck; a daughter, Katelyn Speck of Tessler; a son, Randall Speck of Cobb; three grandchildren; and two brothers.\n\nHe plowed Dorrance Hill for thirty-one winters and told the Gazette in 2011 that he had put the truck in the ditch twice and both times on the same corner.\n\nCalling hours were Wednesday, October 19, at Ostrander Funeral Home, Tessler. Burial was private.\n\nMemorial contributions may be made to the Kerrin County Volunteer Ambulance Corps."
+      },
+      {
+        "id": "obits-oct13",
+        "sectionId": "obits",
+        "kicker": "OBITUARIES",
+        "readMinutes": 2,
+        "headline": "Obituaries, October 13",
+        "dek": "Doris M. Ledwith, Harold F. Wenzel.",
+        "byline": "The Milbrook Gazette",
+        "date": "October 13, 2016",
+        "featured": false,
+        "lead": "Obituaries are printed without charge in the Gazette when supplied by a funeral home or by the family. Photographs are $15.",
+        "body": "[b]Doris M. Ledwith, 83, Milbrook[/b]\n\nDoris M. Ledwith, 83, of Front Street, Milbrook, died Friday, October 7, 2016, at the Bowes City rehabilitation centre.\n\nShe was born February 2, 1933, in Coyne Flats. She and her husband Kenneth ran Ledwith's Market on Front Street from 1961 until they sold it in 1994. She wintered in Arizona for twenty-one years and told anybody who asked that the drive is two days if you do not stop.\n\nShe is survived by her husband of 62 years, Kenneth; a daughter, Susan Ballou of Milbrook; a son, Keith Ledwith of Tessler; five grandchildren; and eight great-grandchildren.\n\nCalling hours were Tuesday, October 11, at Ostrander Funeral Home, Milbrook chapel. Burial in Milbrook village cemetery.\n\nMemorial contributions may be made to the Milbrook Volunteer Fire Department.\n\n___\n\n[b]Harold F. Wenzel, 91, Tessler[/b]\n\nHarold F. Wenzel, 91, of Tessler, died Sunday, October 9, 2016, at his daughter's home in Quayle.\n\nHe was born in Tessler on May 30, 1925, and lived there until this year. He worked for the railroad from 1947 until the Nye Mills spur was lifted, and afterward for the county, and he kept a notebook of every locomotive that came up the spur, which his family says runs to 1,900 entries and which they have not decided what to do with.\n\nHe was predeceased by his wife, Anna (Kitzmiller) Wenzel, in 1998.\n\nHe is survived by a daughter, Margaret Sandoval of Quayle; two sons, Harold Jr. of Tessler and Frank of Bowes City; eleven grandchildren; and nineteen great-grandchildren.\n\nServices were held Wednesday, October 12, at the Tessler Lutheran Church. Burial in Tessler cemetery.\n\nMemorial contributions may be made to the Tessler Lutheran Church memorial fund."
+      },
+      {
+        "id": "letters-oct20",
+        "sectionId": "letters",
+        "kicker": "LETTERS",
+        "readMinutes": 3,
+        "headline": "Letters to the Editor, October 20",
+        "dek": "On the water rate, the dress code, and a thank-you from the fire auxiliary.",
+        "byline": "Our Readers",
+        "date": "October 20, 2016",
+        "featured": false,
+        "lead": "Letters run about 300 words and are signed. The Gazette does not print anonymous letters and has not since before I got here.",
+        "body": "[b]The village is picking the easy one[/b]\n\nTo the editor:\n\nThe village board raised the water volume charge last week and left the base charge alone. That means the people who water a garden, fill a stock tank or have grandchildren in the summer pay for the meters, and the people who use a hundred gallons a quarter in a house they are hardly in do not.\n\nThe meters are pipe and wire. Pipe and wire is what a base charge is for.\n\nI do not doubt the meters need doing. Forty-three of them read zero. That is not a rate problem, that is an equipment problem, and equipment is infrastructure.\n\nWhile I am at it: this is the same sort of putting-off that got Gridfall in trouble in 2004 when the substation burned and two men died. You defer and you defer and then it is not a rate discussion any more.\n\nWendell Bledsoe\nMilbrook\n\n___\n\n[b]Write down what you mean[/b]\n\nTo the editor:\n\nI was at the school board Tuesday. I am the parent of one of the twenty-eight.\n\nMrs. Tarpley is right and she should not have had to say it in public. If the board wants a rule, write the rule. If the board does not want to write it down, then it does not really want the rule, it wants somebody else to enforce a feeling.\n\nI am not asking the school to allow anything in particular. I am asking for a sentence with a noun in it.\n\nRhonda Osterhout\nTessler\n\n___\n\n[b]Thank you[/b]\n\nTo the editor:\n\nThe Milbrook Fire Department Ladies Auxiliary would like to thank everyone who came to the roast beef dinner on October 1. We served 186 and cleared $1,240, which goes to the rescue tool fund. That fund now stands at $4,310 of the $11,000 we need.\n\nThank you to Ledwith's for the rolls, to the Grange for the tables, and to the eleven high school students who washed dishes until nine o'clock without being asked twice.\n\nDoris Ballou, President\nMilbrook Fire Department Ladies Auxiliary"
+      },
+      {
+        "id": "letters-oct27",
+        "sectionId": "letters",
+        "kicker": "LETTERS",
+        "readMinutes": 3,
+        "headline": "Letters to the Editor, October 27",
+        "dek": "A correction from a reader on the 2003 fire, a lost dog, and the crossword again.",
+        "byline": "Our Readers",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "Letters run about 300 words and are signed. The Gazette does not print anonymous letters and has not since before I got here.",
+        "body": "[b]The year is 2003[/b]\n\nTo the editor:\n\nMr. Bledsoe's letter of October 20 says the Gridfall substation fire was in 2004 and that two men died.\n\nThe fire was June 11, 2003, at 4:52 in the morning. Nobody died. Two Gridfall volunteer firefighters were treated at County General for smoke inhalation and released the same afternoon. The state commission's summary is dated November 2003 and gives the cause as insulation degradation consistent with age. The Ledger's report is on page one of its June 11, 2003 edition and anyone may read it at the library in Marchfield or on the Ledger's old website at [url=synth://verityledger.com/]verityledger.com[/url].\n\nI am not writing about water rates, which are not my business. The year is.\n\nKaren Fennimore\nMarchfield\n\n___\n\n[b]Lost dog, Brill Road[/b]\n\nTo the editor:\n\nOur dog Pepper has been gone since Sunday the 23rd. She is a brown and white beagle, twelve years old, deaf, and she will not come when called because she cannot hear you. She has a red collar with our number on it.\n\nShe has done this before and the last two times she was found in a culvert. If you see a dog in a culvert on Brill Road or Cobb Creek Road please call. Do not chase her, she will go further in.\n\nGerald and Anne Mondt\nBrill Road\n\n___\n\n[b]The crossword[/b]\n\nTo the editor:\n\nThree weeks running the crossword answers printed on page 9 have been the previous week's. I do the crossword on Thursday night and I check it on Friday morning and for three weeks I have checked it against the wrong puzzle.\n\nI am aware this is not the most serious thing in the paper. It is the part I do.\n\nLorraine Wenzel\nTessler\n\n[i]Editor's note: she is right and it is our fault, not the syndicate's. The plate numbers are ours to get right. — D.R.[/i]"
+      },
+      {
+        "id": "around-oct27",
+        "sectionId": "around",
+        "kicker": "AROUND TOWN",
+        "readMinutes": 3,
+        "headline": "Around Town with Bernice Kolb, October 27",
+        "dek": "The harvest supper, a broken clock, and the Kestrel Letter came in the mail.",
+        "byline": "By Bernice Kolb",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "Well, it finally froze. Tuesday night, and Elmer Vore says he had 26 on the porch thermometer, which I do not entirely trust because that thermometer has been on that porch since the Ford administration.",
+        "body": "The Tessler Methodist harvest supper served 214 on Saturday, which Vera Mundt tells me is eleven more than last year, and Vera counts. Ham, scalloped potatoes, squash and four kinds of pie. The squash pie went first, which surprises me every single year and I do not know why I keep being surprised.\n\nDoris and Ken Ledwith's daughter Susan wants everyone to know the family is grateful for the cards.\n\nThe clock on the front of the bank in Milbrook has said 4:20 since the middle of September. I asked at the counter and was told that it is a regional matter now. I said that a clock is a local matter and the young man agreed with me and could not do anything about it.\n\nThe Milbrook Free Library book sale is Saturday, November 5, nine to two, in the basement. Paperbacks a quarter, hardcovers a dollar, and the box of National Geographics is free and will be there again next year, as it has been since 2009.\n\nMarion Teale in Coyne Flats sent along her fall Kestrel Letter, which she photocopies and mails herself, four pages. This one has the 1977 fire in it, which started in the fryer and closed the place eleven days, and a photograph of the counter with six people at it and five of them named. She keeps a website about the diner as well, [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], though she tells me she has not put anything new on it in a while. If you want the Letter, write to her. She does not do email and she is not going to start.\n\nSympathy to the family of Ray Speck. Ray plowed my road for thirty-one years and never once hit my mailbox, and I had the same mailbox the whole time.\n\nThe Nye Mills Grange is looking for someone to take the treasurer's book in January. It is four hours a month and Arlene has done it since 1996 and would like to stop.\n\nBirthdays this week: Elmer Vore, 91. Kathleen Sluyter, 60, and she will not thank me. The Berstler twins, 9.\n\nCall me with items at the number on page 2, or leave a note at the Gazette office, or stop me at the post office, which is what most of you do.\n\nThat is all I have. Put your tomatoes in."
+      },
+      {
+        "id": "around-oct13",
+        "sectionId": "around",
+        "kicker": "AROUND TOWN",
+        "readMinutes": 2,
+        "headline": "Around Town with Bernice Kolb, October 13",
+        "dek": "Apples, the fire hall roof, and a visitor from Michigan.",
+        "byline": "By Bernice Kolb",
+        "date": "October 13, 2016",
+        "featured": false,
+        "lead": "The apples are good this year and everybody says so, which means by Thanksgiving I will have had eleven pies and will not be able to look at one.",
+        "body": "Clarence and Ruth Ann Beiler had their grandson and his wife from Michigan for a week. The young man had not been back since 2004 and said Milbrook has not changed, which Ruth Ann took as a compliment and Clarence did not.\n\nThe Tessler fire hall roof is done. It took three Saturdays and eighteen men, and the department wants it said that the Nye Mills company sent six of them.\n\nThe Milbrook Ladies Auxiliary election day pie sale is Tuesday, November 8, at the village hall, starting at seven in the morning and going until they are gone, which last year was ten thirty. Eleanor Dunlavy supervised the baking this year. Twenty-two pies are spoken for already.\n\nCongratulations to Owen and Marisa Dekker on their fiftieth, which they marked by not telling anybody until after.\n\nThe Kerrin Central drama club does its fall play November 18 and 19 at seven in the high school auditorium. Tickets $5, students $3. I am told there is a dog in it.\n\nFlu shots at the Milbrook village hall, Thursday, October 20, one to four. Bring your card.\n\nSomebody left a very good pair of work gloves on the bench outside the post office in Tessler and they have been there since Monday. They are size large and they are yours if they are yours.\n\nBirthdays: Hazel Kinnard, 87. Little Reed Sandoval, 4.\n\nThat is all I have."
+      },
+      {
+        "id": "notices-oct27",
+        "sectionId": "notices",
+        "kicker": "PUBLIC NOTICES",
+        "readMinutes": 3,
+        "headline": "Public Notices, October 27",
+        "dek": "Bid notice, two estate notices, a public hearing, and the fall tax sale list.",
+        "byline": "The Milbrook Gazette",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "Legal notices are set by statute at 68 cents a line. The Gazette is the newspaper designated for legal publication for Kerrin County, the towns of Cobb, Nye Mills and Dorrance, and the village of Milbrook.",
+        "body": "[b]NOTICE TO BIDDERS[/b]\n\nSealed bids will be received by the Kerrin County Highway Department, 118 Tessler Road, Tessler, until 11:00 a.m. on Wednesday, November 16, 2016, for the furnishing of one 48-inch by 40-foot corrugated metal pipe culvert and related structural plate, for the Dorrance Hill Road replacement. Specifications are available at the highway office. The county reserves the right to reject any and all bids. Merle Lachance, Superintendent of Highways.\n\n___\n\n[b]NOTICE TO CREDITORS[/b]\n\nIn the matter of the estate of HAROLD F. WENZEL, late of the Town of Tessler, deceased. All persons having claims against the said estate are required to present them with vouchers thereof to the undersigned at the office of record on or before February 1, 2017, or the same may be barred. Dated October 20, 2016. Harold F. Wenzel Jr., Executor.\n\n___\n\n[b]NOTICE TO CREDITORS[/b]\n\nIn the matter of the estate of ELEANOR F. DUNLAVY, late of the Village of Milbrook, deceased. All persons having claims against the said estate are required to present them with vouchers thereof to the undersigned on or before February 1, 2017, or the same may be barred. Dated October 24, 2016. Robert F. Dunlavy, Executor.\n\n___\n\n[b]NOTICE OF PUBLIC HEARING[/b]\n\nNOTICE IS HEREBY GIVEN that the Village Board of the Village of Milbrook will hold a public hearing on Tuesday, November 15, 2016, at 7:00 p.m. at the Milbrook Village Hall, 22 Front Street, on a proposed local law amending Chapter 4 of the village code concerning the keeping of fowl on lots of less than one-half acre. A copy of the proposed local law is available at the clerk's office during regular hours. All persons will be heard. Arlene Prosser, Village Clerk.\n\n___\n\n[b]NOTICE OF SALE OF REAL PROPERTY FOR UNPAID TAXES[/b]\n\nThe Kerrin County Treasurer gives notice that the following parcels, delinquent for the tax years shown, will be offered at public auction at the courthouse annex, Tessler, on Saturday, December 3, 2016, at 10:00 a.m. Full list, with parcel numbers and assessments, appears in the Gazette of November 3, 10 and 17.\n\n[i]Editor's note: the list will not appear on those dates. Please see the notice on the front page of this edition. The treasurer's office has been notified and readers should call the treasurer at the courthouse annex for the list and for the date of the sale, which is not changing. — D.R.[/i]\n\n___\n\n[b]VILLAGE OF MILBROOK — DOG ENUMERATION[/b]\n\nA door-to-door dog enumeration will be conducted in the Village of Milbrook beginning November 7, 2016. Owners of unlicensed dogs are subject to the penalties provided by law. Licences may be obtained at the clerk's office, Tuesdays and Thursdays, 9 a.m. to 3 p.m. Spayed or neutered $8.50, otherwise $16.50."
+      },
+      {
+        "id": "about-the-gazette",
+        "sectionId": "news",
+        "kicker": "THE GAZETTE",
+        "readMinutes": 2,
+        "headline": "About This Newspaper",
+        "dek": "Who we are, what we cost, and how to reach us.",
+        "byline": "The Milbrook Gazette",
+        "date": "October 27, 2016",
+        "featured": false,
+        "lead": "The Milbrook Gazette has been published in Milbrook every Thursday since April 1908. It is the newspaper of record for Kerrin County and for the eastern end of Verity County.",
+        "body": "The Gazette absorbed the [i]Kerrin County Record[/i] of Tessler in 1991 and has carried \"and Kerrin County Record\" under the flag since. It has been owned by the Rask family since 1931.\n\n[b]Staff[/b]\n\n[list][*]Dean Rask, editor and publisher[*]Charlene Voss, news, schools, obituaries, advertising and the mailing list[*]Bernice Kolb, Around Town, since 1974[*]Kyle Prosser, sports[*]Carriers: nine, in Milbrook and Tessler village[/list]\n\n[b]Rates[/b]\n\n[list][*]Single copy 75 cents[*]In county, one year, $28[*]Out of county, one year, $34[*]Classified, 20 words, $6, each additional word 15 cents[*]Display, $6.80 a column inch[*]Legal notices, 68 cents a line, set by statute[*]Obituary photographs, $15[/list]\n\n[b]Circulation[/b]\n\n2,140 paid, of which 1,180 are mailed. The rest go to nine carriers and to eleven stores, four of them in Verity County.\n\n[b]Office[/b]\n\n14 Front Street, Milbrook. Tuesday through Friday, nine to four, and Thursday morning is press morning so we are short.\n\n[b]Deadlines[/b]\n\nNews, Tuesday noon. Display advertising, Monday 5 p.m. Classified and legals, Tuesday noon. Obituaries, Wednesday 10 a.m., and later than that if you call.\n\n[b]Corrections[/b]\n\nWe correct errors of fact in the next edition. Call the office or come in. Our corrections run on page 2 and they are collected at [url=/corrections]this page[/url].\n\n[b]A note about the weather column[/b]\n\nThe rainfall and temperature figures the Gazette printed weekly from 1999 to 2011 came from Len Mabry's station on Kestrel Road in Ashkettle, which stopped reporting in April 2011. His readings are still posted at [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]. Since 2011 we have used the airport at Bowes City, which is twenty-six miles east and about a degree and a half colder, and we should have said so at the time and did not."
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2015-10-08",
+        "articleId": "substation-crew-room",
+        "kind": "correction",
+        "text": "A story in the October 1 edition spelled a Verity Valley Power & Light employee's surname Pennick. The correct spelling is Pennock. The Gazette regrets the error."
+      },
+      {
+        "at": "2015-10-15",
+        "articleId": "substation-crew-room",
+        "kind": "correction",
+        "text": "The same story described Walter Pennock as retired. Mr. Pennock is a substation technician with Verity Valley Power & Light and has not retired. He telephoned to say that he was not bothered and that we should fix it anyway."
+      },
+      {
+        "at": "2015-12-10",
+        "articleId": "obits-oct13",
+        "kind": "correction",
+        "text": "An obituary in the December 3 edition omitted a surviving sister. The Gazette apologises to the family. An obituary is the one thing in this paper that only runs once."
+      },
+      {
+        "at": "2016-03-24",
+        "articleId": "blotter-sep29",
+        "kind": "editors-note",
+        "text": "A blotter item in the March 17 edition included a house number on Hoyt Road. The sheriff's office supplies the road and not the number, and the number was added here. It should not have been and will not be again."
+      },
+      {
+        "at": "2016-06-23",
+        "articleId": "board-june",
+        "kind": "clarification",
+        "text": "A member of the board of education has asked us to note that the vote recorded in our June 16 account differs from the minutes as posted by the district. Our account is taken from the roll call as read aloud and we have not changed it. The minutes are the district's to correct."
+      },
+      {
+        "at": "2016-08-18",
+        "articleId": "fair-attendance",
+        "kind": "clarification",
+        "text": "The attendance figure reported from the Kerrin County Fair is a gate count and includes exhibitors, 4-H families and children under six, who are not charged. It is not a count of paid admissions. The association reports the gate count and has always reported the gate count."
+      },
+      {
+        "at": "2016-09-22",
+        "articleId": "shoulder-parking",
+        "kind": "correction",
+        "text": "The photograph with last week's story on the Route 62 shoulder was taken on Kestrel Road in Ashkettle, about four miles from the stretch described. The caption said Route 62."
+      },
+      {
+        "at": "2016-10-06",
+        "articleId": "board-sept",
+        "kind": "correction",
+        "text": "A story in the September 15 edition gave the district's June enrollment as 631. The correct figure is 642. The September figure of 611 was correct."
+      },
+      {
+        "at": "2016-10-27",
+        "articleId": "water-rates",
+        "kind": "clarification",
+        "text": "The 9 percent increase adopted by the Milbrook village board applies to the volume charge only. The quarterly base charge of $24 is unchanged. Several readers understood the increase to apply to the whole bill."
+      },
+      {
+        "at": "2016-10-27",
+        "articleId": "honor-roll",
+        "kind": "correction",
+        "text": "Breanna Ollendorf's name was spelled Ollendorff in the first quarter honor roll as we printed it. It is spelled correctly on the district's list. That one is ours."
+      },
+      {
+        "at": "2016-10-27",
+        "articleId": "notices-oct27",
+        "kind": "editors-note",
+        "text": "The tax sale list scheduled to publish November 3, 10 and 17 will not publish on those dates. See the notice on the front page of the October 27 edition. Readers should call the Kerrin County treasurer's office for the list. The sale date of December 3 is not changing."
+      }
+    ]
+  }
+}

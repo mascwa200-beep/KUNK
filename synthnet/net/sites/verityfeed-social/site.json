@@ -203,14 +203,6 @@
         "replies": [
           {
             "id": "f-04r1",
-            "author": "Ann Sloat",
-            "handle": "asloat",
-            "avatarSeed": "ann-sloat",
-            "time": "Sep 20, 2026 6:50 AM",
-            "body": "I taught two of the men who service those machines. I will say something to one of them at church and nothing will happen, but I will have said it."
-          },
-          {
-            "id": "f-04r2",
             "author": "Verity Aldiss",
             "handle": "verity",
             "avatarSeed": "verity-aldiss",
@@ -218,7 +210,7 @@
             "body": "I am 1,400 miles away and I am thinking about that vending machine. This website has done something to me."
           },
           {
-            "id": "f-04r3",
+            "id": "f-04r2",
             "author": "Heritage Circle",
             "handle": "heritagecircle",
             "avatarSeed": "heritage-circle",
@@ -226,12 +218,20 @@
             "body": "[b]Content warning: News[/b]\n\nHospitals across the region have been a cornerstone of community life for generations. County General in Marchfield continues to serve residents of Verity County.\n\nWhat is your favourite memory of a local hospital? Share below."
           },
           {
-            "id": "f-04r4",
+            "id": "f-04r3",
             "author": "Audra Speck",
             "handle": "aud",
             "avatarSeed": "audra-speck",
             "time": "Sep 20, 2026 3:04 AM",
             "body": "my favourite memory of a local hospital is the one i am currently having"
+          },
+          {
+            "id": "f-04r4",
+            "author": "Ann Sloat",
+            "handle": "asloat",
+            "avatarSeed": "ann-sloat",
+            "time": "Sep 20, 2026 6:50 AM",
+            "body": "I taught two of the men who service those machines. I will say something to one of them at church and nothing will happen, but I will have said it."
           }
         ]
       },
@@ -1104,7 +1104,7 @@
         "avatarSeed": "tess-ruddock",
         "time": "Sep 12, 2026 4:15 PM",
         "kind": "human",
-        "body": "Three and a half years, so here are the numbers. Somebody asked and I would rather everyone had them than one person did.\n\n[b]Accounts:[/b] 180 registered. 34 posted in the last 30 days. 11 of those 34 live in Verity County.\n\nSo the local timeline is a county board where two thirds of the room have never been to the county. I have made peace with this. You lot ask better questions about the plough budget than anyone who has to pay for it.\n\n[b]Money:[/b] $14 a month for the VPS, $6.40 a month for the media storage, $22 a year for the domain. $266.80 a year. Four people send me $5 a month without being asked and one person sent $50 once in 2024 and I still do not know who it was.\n\nThat is more than covered. I am not asking for anything. I am telling you what it costs because I think you should know what things cost.\n\n[b]Time:[/b] about four hours a week. Most of it is spam on a Sunday.\n\nI work IT for the school district. Two buildings, 1,900 kids, a phone system from 2011 that I am not allowed to replace. This is the restful one.",
+        "body": "Three and a half years, so here are the numbers. Somebody asked and I would rather everyone had them than one person did.\n\n[b]Accounts:[/b] 180 registered. 34 posted in the last 30 days. 11 of those 34 live in Verity County.\n\nSo the local timeline is a county board where two thirds of the room have never been to the county. I have made peace with this. You lot ask better questions about the plough budget than anyone who has to pay for it.\n\n[b]Money:[/b] $14 a month for the VPS, $6.40 a month for the media storage, $22 a year for the domain. $266.80 a year. Four people send me $5 a month without being asked and one person sent $50 once in 2024 and I still do not know who it was.\n\nThat is more than covered. I am not asking for anything. I am telling you what it costs because I think you should know what things cost.\n\n{b}Time:{/b} about four hours a week. Most of it is spam on a Sunday.\n\nI work IT for the school district. Two buildings, 1,900 kids, a phone system from 2011 that I am not allowed to replace. This is the restful one.",
         "likes": 118,
         "reposts": 21,
         "replies": [
@@ -1114,7 +1114,7 @@
             "handle": "wp_formal",
             "avatarSeed": "priya-shanbhag",
             "time": "Sep 12, 2026 4:40 PM",
-            "body": "You have typed a square bracket instead of a round one in front of Time and it has rendered as literal text and I am not going to be able to stop looking at it."
+            "body": "You have typed a curly bracket instead of a square one in front of Time and it has rendered as literal text and I am not going to be able to stop looking at it."
           },
           {
             "id": "f-19r2",

@@ -1,0 +1,490 @@
+{
+  "schema": 1,
+  "domain": "ashkettlevfd.org",
+  "title": "Ashkettle Volunteer Fire Department",
+  "type": "page",
+  "era": "2012",
+  "skin": "tripod-tile",
+  "description": "Station 4 in Ashkettle: roster, two engines and a tanker with mileage, a mutual aid page that gets the 2003 Gridfall substation fire right, and a fundraiser thermometer that has read 62 percent since 2012.",
+  "tags": ["ashkettle", "fire", "county", "archive", "route-62"],
+  "links": ["ashkettle-wx.net", "boards.gridfall.net", "verityledger.com", "wiki.gridfall.net", "webring.gridfall.net", "kestrel-journal.net", "marchfield-coop.com", "gridfalltire.com", "tnorris.verity.net", "verityrail.org", "stargazers.verity.net", "clipvault.tv", "thequarry.news", "verity.wiki", "now.verityledger.com", "askverity.com", "verity.county.gov", "sdrlisteners.org"],
+  "data": {
+    "navLabel": "DEPARTMENT PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** ASHKETTLE VOLUNTEER FIRE DEPARTMENT, STATION 4 *** IN AN EMERGENCY DIAL 911 -- THIS PAGE IS NOT WATCHED *** MEETINGS FIRST MONDAY 7:00 PM *** WE ARE TAKING APPLICATIONS AND WE MEAN IT ***" },
+          { "kind": "image", "seed": "akvfd-station-front-2006", "imgKind": "banner", "caption": "Station 4 from the Route 62 side, October 2006, the morning of the breakfast. Two bays. The third door is the hall and it is not a bay, no matter what it looks like from the road." },
+          { "kind": "heading", "level": 1, "text": "Ashkettle Volunteer Fire Department" },
+          { "kind": "text", "body": "We are twenty four active members, three juniors and six fire police, and we cover sixty one square miles of Verity County out of one station at [b]Route 62 and Kestrel Road[/b] in Ashkettle.\n\nThere are about nineteen hundred people in the district. Fourteen miles of Route 62 run through it, and so does the old quarry road, and so do thirty eight miles of county road that the plow gets to in its own time. We have eleven hydrants and nine of them are in the village. Everywhere else is a tanker and a pond.\n\nNobody here is paid. That is not a complaint, it is the arrangement, and it has been the arrangement since 1948." },
+          { "kind": "heading", "level": 2, "text": "If you are here because something is on fire" },
+          { "kind": "text", "body": "[b]Dial 911.[/b] Do not write in the guestbook at the bottom of this page. Somebody did that in 2009 at twenty to eleven at night and nobody read it until Thursday.\n\nThe county dispatches us. When you call, the two things that help most are [b]the road name and the nearest crossroad[/b], and whether anybody is still inside. We will find you faster from a crossroad than from an address, because half the addresses out here are on a post that is lying in the ditch." },
+          { "kind": "heading", "level": 2, "text": "The air pack fund" },
+          { "kind": "image", "seed": "akvfd-thermometer-62", "imgKind": "photo", "caption": "$5,890 of $9,500. Sixty two percent. Curtis redraws this after every breakfast and it took him longer to make the first one than it takes to redraw it." },
+          { "kind": "text", "body": "Our bottles are older than two of our members. The [url=/fundraiser]fund page[/url] has what we are buying, what it costs, and every dollar that has come in since 2007 with a date on it.\n\nGiving is a cheque in the mail or cash in a boot at the barbecue. There is no other way to do it and there is not going to be." },
+          { "kind": "heading", "level": 2, "text": "We need members" },
+          { "kind": "text", "body": "Twenty four sounds like a lot. On a Tuesday at ten in the morning it is four, and two of those four are over sixty.\n\nYou do not need to be a firefighter. We need drivers, we need fire police to stand in the road and turn traffic, we need somebody on the pump, and we need two people in the kitchen when the barbecue comes round. If you can back a trailer you are already more use than half of us were at the start.\n\nWhat it costs you is [b]Monday nights[/b] and a pager that goes off at four in the morning about nine times a year. What it costs to join is nothing. Gear is the department's and the state pays for the class.\n\nCome on a Monday at seven. Do not telephone first. Just come." },
+          { "kind": "heading", "level": 2, "text": "What is new on this page" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["11/12/2012 -- Call log updated through 4 November. Roster corrected, Amy Tillotson was left off for a year and did not say anything.", "07/24/2012 -- Barbecue receipts posted. $232, the lowest since we started, and it rained.", "03/03/2011 -- New page: the 2003 mutual aid account, because we were asked for it three times in one month by people out of the county.", "10/04/2009 -- Breakfast photos. Curtis says he will get them on here. (11/2012: he did not.)", "06/12/2008 -- The last freight ran the branch on 14 March. Crossing training is off the drill schedule as of this month.", "05/02/2004 -- Page created. Curtis Ganske built it on the computer at the hardware store."]
+          },
+          { "kind": "text", "body": "[b]This page was last changed Monday 12 November 2012.[/b]" },
+          { "kind": "hitcounter", "count": 38116 },
+          { "kind": "text", "body": "The counter came with the free host in 2004 and Marge does not believe it. She says there are not thirty eight thousand people who have wanted to know what our tanker holds. She is probably right and it is staying on." }
+        ]
+      },
+      {
+        "id": "fundraiser",
+        "name": "Air Pack Fund",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The air pack fund" },
+          { "kind": "marquee", "text": "*** $5,890 OF $9,500 *** 62% *** THANK YOU ASHKETTLE ***" },
+          { "kind": "image", "seed": "akvfd-thermometer-62", "imgKind": "photo", "caption": "Sixty two percent. The red goes on with a marker and the number underneath is typed fresh every time, which is why the two do not always agree." },
+          { "kind": "heading", "level": 2, "text": "What we are buying" },
+          { "kind": "text", "body": "Six [b]Scott 2.2[/b] air packs came to this department used in 1993, from a city department in the state capital that was replacing them because it had to. They met the 1992 standard. They do not meet the one that came in after.\n\nThe packs we can keep going a while yet. The bottles we cannot. A bottle has a date stamped in the neck and after fifteen years it is scrap no matter how it looks, and ours run out between now and 2015.\n\nThis is not a fire truck fund. It is bottles, and the thing that fills them." },
+          {
+            "kind": "table",
+            "head": ["WHAT", "HOW MANY", "ABOUT"],
+            "rows": [
+              ["4,500 psi carbon bottles, 45 minute", "12", "$6,600"],
+              ["Used four cylinder cascade system", "1", "$1,900"],
+              ["Fill station, plumbing, mounting in the bay", "--", "$700"],
+              ["Annual flow test, first two years", "--", "$300"],
+              ["TOTAL", "", "$9,500"]
+            ]
+          },
+          { "kind": "text", "body": "Twelve bottles is two per pack, which sounds generous until you have had a working fire in a house at the far end of Coyne Flats Road and the nearest fill is Marchfield, forty minutes each way, at three in the morning.\n\nWe are not asking anybody for a truck. We have three trucks and they run. We are asking for air." },
+          { "kind": "heading", "level": 2, "text": "Every dollar, with a date on it" },
+          { "kind": "text", "body": "Marge Doubek keeps this in a ledger book and types it here twice a year. If you gave and you are not on this list, that is an error and she would like to know about it, because an error in the book bothers her considerably more than it bothers you." },
+          {
+            "kind": "table",
+            "head": ["DATE", "WHERE IT CAME FROM", "AMOUNT", "RUNNING"],
+            "rows": [
+              ["07/21/2007", "Chicken barbecue", "$412", "$412"],
+              ["10/07/2007", "Pancake breakfast", "$286", "$698"],
+              ["12/01/2007", "Ashkettle Hardware", "$250", "$948"],
+              ["02/16/2008", "Lenten fish fry", "$341", "$1,289"],
+              ["05/31/2008", "Boot drive, Route 62 at Kestrel", "$508", "$1,797"],
+              ["07/19/2008", "Chicken barbecue", "$455", "$2,252"],
+              ["11/08/2008", "Marchfield Farmers Cooperative", "$300", "$2,552"],
+              ["03/14/2009", "Lenten fish fry", "$298", "$2,850"],
+              ["07/18/2009", "Chicken barbecue", "$377", "$3,227"],
+              ["10/04/2009", "Pancake breakfast", "$264", "$3,491"],
+              ["04/10/2010", "Ashkettle Lions Club", "$200", "$3,691"],
+              ["06/26/2010", "Boot drive, Route 62 at Kestrel", "$431", "$4,122"],
+              ["07/17/2010", "Chicken barbecue", "$349", "$4,471"],
+              ["03/12/2011", "Lenten fish fry", "$302", "$4,773"],
+              ["07/16/2011", "Chicken barbecue", "$368", "$5,141"],
+              ["10/02/2011", "Pancake breakfast", "$241", "$5,382"],
+              ["02/25/2012", "Lenten fish fry", "$276", "$5,658"],
+              ["07/21/2012", "Chicken barbecue", "$232", "$5,890"]
+            ]
+          },
+          { "kind": "text", "body": "Two things that table does not say.\n\nThe breakfast money in 2008 and 2010 did not come to this fund. It went on the hall roof, which was leaking over the freezer, and the membership voted it and the vote was not close.\n\nAnd the boot drive is finished. We stood at 62 and Kestrel with a boot and a reflective vest in 2008 and again in 2010, and it is the best money per hour this department has ever made. The county stopped issuing the permit for it in 2011 after something happened in another county that had nothing to do with us. It is the correct decision and it cost us about four hundred dollars a year." },
+          { "kind": "heading", "level": 2, "text": "How to give" },
+          { "kind": "text", "body": "[b]Cheque[/b] to Ashkettle Volunteer Fire Department, Box 41, Ashkettle. Write [i]air pack[/i] in the memo line or it goes in the general account and Marge has to move it by hand.\n\n[b]Cash[/b] in the boot at the barbecue, or handed to anybody in a department shirt, or left with Curtis at the hardware store, who will write you a receipt out of the book in the drawer.\n\n[b]We do not telephone people for money.[/b] If somebody rings your house at supper saying they are raising funds for the Ashkettle fire department, they are not. It happens about twice a year and it happens to every small department in the state. The only fundraising we do is standing in front of you with food." },
+          { "kind": "hitcounter", "count": 9042 }
+        ]
+      },
+      {
+        "id": "roster",
+        "name": "Roster",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Roster" },
+          { "kind": "text", "body": "Current as of [b]12 November 2012[/b]. Rank is what the membership elected in December, except chief, which the district board appoints, and which has been the same appointment since 2006.\n\nYears are years on this department. Several people have time on other departments that is not counted here, which annoys two of them." },
+          { "kind": "heading", "level": 2, "text": "Officers" },
+          {
+            "kind": "table",
+            "head": ["NAME", "POSITION", "ON SINCE", "CARD", "DAYTIME"],
+            "rows": [
+              ["Lyle Ganske", "Chief", "1987", "FF I/II, pump operator, incident command", "Drives for Bortner Propane. In the district most days."],
+              ["Ray Purkey", "Assistant Chief", "1991", "FF I/II, extrication", "County highway department, Marchfield garage."],
+              ["Arlen Stipe", "Captain", "1984", "FF I", "Dairy, Coyne Flats Road. Home at milking, which is twice."],
+              ["Denise Hartle", "Captain, EMS officer", "1998", "EMT, FF I", "County General, Marchfield. Nights, so daytime is good."],
+              ["Bud Kesterke", "Lieutenant", "1994", "FF I/II, pump operator", "Kesterke Well Drilling. Has the only backhoe we can get quickly."],
+              ["Wade Tillotson", "Lieutenant", "2001", "FF I, tanker", "School bus, morning and afternoon runs."],
+              ["Marjorie Doubek", "Secretary and Treasurer", "1979", "Fire police", "Retired from the county clerk's office in 2009. Keeps the book."]
+            ]
+          },
+          { "kind": "text", "body": "Marge has been secretary since 1986 and the minutes are in nine binders on the shelf in the hall, legible, dated and indexed at the front of each one. There is not another department in this county that can say that.\n\nArlen has been on since 1984. He has never been chief and has never wanted to be, and says so at every election, out loud, before anybody can nominate him." },
+          { "kind": "heading", "level": 2, "text": "Firefighters" },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "CARD", "NOTE"],
+            "rows": [
+              ["Vern Osterhout", "1976", "FF I, life member", "Thirty six years. Still rides the tanker and still backs it better than anyone."],
+              ["Gerald Klahr", "1981", "FF I", "Compressor, small engines, the generator."],
+              ["Randy Fleeger", "1989", "FF I/II", "Extrication. Does the drill for it in April."],
+              ["Denny Sturtz", "1992", "FF I", "Works in Halsey. Weekends and evenings."],
+              ["Neal Wambold", "1996", "FF I/II, pump operator", "Second on the pump after Bud."],
+              ["Pat Yeakel", "1998", "FF I", "Hose testing. Nobody else wants it and he is good at it."],
+              ["Hollis Ruhl", "1999", "FF I", "Brother-in-law of half the roster."],
+              ["Tony Reber", "2000", "FF I", "School maintenance. Has the keys."],
+              ["Dwight Boop", "2002", "FF I", "Drives the tanker. One of six who can."],
+              ["Brian Skurka", "2003", "FF I/II", "Ladders, ventilation."],
+              ["Curtis Ganske", "2004", "FF I, pump operator", "Engineer. Does this website and the radios."],
+              ["Kim Stipe", "2005", "FF I", "Arlen's daughter. Turned out at the Perrin Hill barn fire before he did."],
+              ["Carla Rauhauser", "2006", "EMT, FF I", "Keeps the EMS bag inventory, the only inventory here that is right."],
+              ["Josh Hovater", "2008", "FF I", "Works in the state capital four days. Around Fridays."],
+              ["Tim Mowrer", "2009", "FF I", "Came off the juniors. First one who did."],
+              ["Shane Detwiler", "2010", "Probationary, in class", "Finishes in March."],
+              ["Amy Tillotson", "2011", "Probationary, in class", "Wade's niece. Left off this page for a year and did not mention it."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Fire police" },
+          {
+            "kind": "table",
+            "head": ["NAME", "ON SINCE", "NOTE"],
+            "rows": [
+              ["Marjorie Doubek", "1979", "Also secretary and treasurer."],
+              ["Clifton Sowle", "1988", "Traffic at the Kestrel Road crossing for twenty years, and for four more at a crossing with no train coming."],
+              ["Russ Yeakel", "1994", "Pat's father. Has the vest, the light and the opinions."],
+              ["Bev Klahr", "1997", "Parade detail and the school bus drills."],
+              ["Ed Mowrer", "2002", "Tim's grandfather. Sits at the end of the road in the rain so somebody younger does not have to."],
+              ["Darla Wambold", "2007", "Rehab. Water, chairs, shade, and making people sit in it."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Juniors and auxiliary" },
+          { "kind": "text", "body": "Juniors are sixteen and seventeen, at Ashkettle-Halsey, with a parent's signature on file. They come to drill, they roll hose, they run the lights at the parade, and they do not go inside anything. [b]Derek Hovater[/b] and [b]Casey Rauhauser[/b], 2011, and [b]Nolan Stipe[/b], 2012.\n\nThe junior programme started in 2004 and has produced exactly one full member, Tim Mowrer, which the chief says makes it worth it and the treasurer says makes it expensive, and they are both right.\n\nThe auxiliary is nine women and two men and they cook every dollar this department raises. They have their own minutes and their own account and they were here first. President is [b]Joanne Purkey[/b], and if you are renting the hall you will talk to her and not to us." },
+          { "kind": "image", "seed": "akvfd-group-2011-bay", "imgKind": "photo", "caption": "Most of the department, the Monday after the 2011 inspection, in front of Engine 4-1 because the tanker would not start. Six people are missing and four of them were at work." },
+          { "kind": "heading", "level": 2, "text": "Life members" },
+          { "kind": "text", "body": "Twenty five years on this department. Nine people have made it since 1948, and two of them are on the roster above.\n\n[b]Ellis Kesterke[/b], 1961-1994, died 2009 at eighty eight, drove the 1968 Ford to the Blue Kestrel kitchen fire in 1977 and told the story exactly the same way for thirty two years, which is how we know it was true." },
+          { "kind": "hitcounter", "count": 14877 }
+        ]
+      },
+      {
+        "id": "apparatus",
+        "name": "Apparatus",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Apparatus" },
+          { "kind": "text", "body": "Three trucks. Mileage and pump hours below were read on [b]Monday 5 November 2012[/b] at the annual state inspection, which happens in this bay with a man from the state holding a clipboard, and which we passed with four write-ups, all of them lights.\n\nWe are Station 4. Our units are 4-1, 4-2 and Tanker 4-1 on the county fire channel, and if you hear us called Ashkettle on the radio it is because somebody new is dispatching." },
+          { "kind": "heading", "level": 2, "text": "Engine 4-1" },
+          { "kind": "image", "seed": "akvfd-engine41-bay-2012", "imgKind": "photo", "caption": "Engine 4-1 in the west bay. The crosslays are 1 3/4 inch, 200 feet each side. The chrome on the right rear is not chrome any more and we know." },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "1997 Freightliner FL80"],
+              ["Body", "Central States"],
+              ["Pump", "Hale 1,000 gallons per minute, midship"],
+              ["Tank", "1,000 gallons, poly"],
+              ["Odometer", "38,417 miles"],
+              ["Pump hours", "2,147"],
+              ["Hose", "1,000 ft of 5 inch supply, two 1 3/4 crosslays, one 2 1/2 preconnect"],
+              ["Ladders", "24 ft extension, 14 ft roof, 10 ft attic"],
+              ["Generator", "6 kW hydraulic, with a light tower that works about eight times in ten"],
+              ["Seats", "Six, all belted, four with pack brackets"],
+              ["Bought", "New, 1997. Financed twelve years. Paid off in 2009."]
+            ]
+          },
+          { "kind": "text", "body": "Thirty eight thousand miles in fifteen years is two and a half thousand a year, which is what a first-out engine in a rural district actually does, and it is why a fire truck is old long before it is worn out. The motor is fine. The pump is fine. What ages on it is rubber, wiring and the standard.\n\nThe last payment was $1,412 and Marge framed the coupon book and it is on the wall in the hall.\n\nTyres are done at [url=synth://gridfalltire.com/]Gridfall Tire[/url] and they have never charged this department for a flat repair." },
+          { "kind": "heading", "level": 2, "text": "Engine 4-2" },
+          { "kind": "image", "seed": "akvfd-engine42-yard", "imgKind": "photo", "caption": "Engine 4-2 in the back lot in September. It is a water supply truck now and it looks like one." },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "1984 Ford C-8000, cab over"],
+              ["Body", "Grumman"],
+              ["Pump", "750 gallons per minute"],
+              ["Tank", "750 gallons"],
+              ["Odometer", "61,904 miles"],
+              ["Pump hours", "4,388"],
+              ["Hose", "Six hundred feet of 3 inch, one 1 1/2 preconnect, hard suction on both sides"],
+              ["Seats", "Two belted in the cab. The jump seats behind are not belted and nobody rides them."],
+              ["Bought", "Used from Halsey Fire Company, 2001, $18,500."]
+            ]
+          },
+          { "kind": "text", "body": "It was Halsey's first-out engine for seventeen years before it was ours for eleven. It starts every time, it drafts out of a pond better than the new one, and it has no power steering to speak of.\n\nWe do not send a crew on it. It goes to the scene with a driver and an operator and it moves water, and that is the job it will have until the frame or the state says otherwise. Two of the jump seat belts were cut out by Halsey in 1993 for a reason nobody can now explain and we have left the seats empty rather than pretend." },
+          { "kind": "heading", "level": 2, "text": "Tanker 4-1" },
+          { "kind": "image", "seed": "akvfd-tanker41-dump", "imgKind": "photo", "caption": "Tanker 4-1 at drill, dumping into the folding tank behind the hall. Thirty eight seconds for eighteen hundred gallons, which is the chute and not the driver." },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Year and chassis", "1989 International S1900"],
+              ["Tank", "1,800 gallons, elliptical, three baffles"],
+              ["Pump", "200 gallon per minute PTO transfer pump"],
+              ["Dump", "Ten inch square chute, rear, manual"],
+              ["Odometer", "74,255 miles"],
+              ["Transmission", "Five speed with a two speed rear axle"],
+              ["Portable tank", "2,100 gallon folding, carried on the driver side rack"],
+              ["Bought", "1996. It was a bulk milk truck. The department did the conversion in the bay over two winters."]
+            ]
+          },
+          { "kind": "text", "body": "The tank came off a wrecked truck in another county for six hundred dollars and everything else was done here by Gerald Klahr, Vern Osterhout, Ellis Kesterke and whoever was in the building on a Saturday. The baffles were cut and welded in by hand, because an unbaffled tank will push a truck through an intersection.\n\nSix people on this department are licensed and comfortable to drive it. That is the real limit on what this station can do at two on a weekday afternoon, and no amount of equipment fixes it." },
+          { "kind": "heading", "level": 2, "text": "What we do not have" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["An aerial. Nearest is Marchfield, twenty two minutes on a good day. Anything over two storeys here is a mutual aid call before we are out the door.", "A rescue truck. The extrication tools are in a compartment on 4-1 and so is the generator that runs them, so if 4-1 is committed to a fire we cannot cut a car.", "A brush truck. We had one. It went in a ditch on Quarry Road in 2007, nobody was hurt, the insurance paid $3,100 and we put it against the roof.", "An ambulance. The county service comes out of Marchfield and is between twelve and thirty minutes. Denise and Carla carry a bag and they are what you get in the meantime."]
+          },
+          { "kind": "heading", "level": 2, "text": "Retired" },
+          {
+            "kind": "table",
+            "head": ["UNIT", "YEARS", "WHAT HAPPENED TO IT"],
+            "rows": [
+              ["1948 Chevrolet, 500 gpm", "1948-1971", "Sold to a farmer in Milbrook for $300. Last seen at a parade in 1994 and it ran."],
+              ["1968 Ford F-750, 750 gpm", "1968-2003", "Sold to a collector out of county for $2,400. He restored it. He sends Marge a Christmas card."],
+              ["1992 Chevrolet Suburban, chief's", "1992-2010", "Sold to a member for $1,000. Still in the district with the light bar holes in the roof."]
+            ]
+          },
+          { "kind": "hitcounter", "count": 21355 }
+        ]
+      },
+      {
+        "id": "mutualaid",
+        "name": "Mutual Aid",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Mutual aid" },
+          { "kind": "text", "body": "No department in this county can handle a working structure fire alone and every chief in it knows that, so the cards are written on the assumption that we are all coming.\n\nOn a reported structure in our district the county tones Ashkettle and [b]Gridfall[/b] together. On a confirmed working fire it adds [b]Marchfield[/b] for the aerial and [b]New Carrow[/b] for a second tanker. The third alarm brings [b]Coyne Flats[/b] and [b]Milbrook[/b], and at that point there is no truck left in the west end of the county and Halsey is covering the whole thing from one station.\n\nWe go the other way on the same terms. We have run into all six of those districts and we do not keep score, although Marge keeps the numbers because Marge keeps every number." },
+          {
+            "kind": "table",
+            "head": ["DEPARTMENT", "WE GIVE", "THEY GIVE", "AGREEMENT SINCE"],
+            "rows": [
+              ["Gridfall Fire Department", "Tanker, manpower", "Engine, manpower, cascade fills", "1971"],
+              ["Marchfield", "Tanker, manpower", "Aerial, rescue, air unit", "1971"],
+              ["New Carrow", "Engine, tanker", "Tanker", "1983"],
+              ["Coyne Flats", "Engine, tanker, manpower", "Tanker, manpower", "1971"],
+              ["Milbrook", "Tanker", "Tanker", "1996"],
+              ["Halsey", "Manpower, station cover", "Engine, manpower", "1988"],
+              ["Verity County Highway Department", "--", "Sand, a loader, and a grader if it is that kind of day", "standing"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "11 June 2003, Gridfall substation" },
+          { "kind": "image", "seed": "akvfd-gridfall-2003-morning", "imgKind": "photo", "caption": "Depot and Quarry Road, about seven in the morning on 11 June 2003, on somebody's disposable camera. Tanker 4-1 is the one with the ladder rack on the driver side. The fence is Verity Valley's and we did not go past it." },
+          { "kind": "text", "body": "People from out of the county have started writing about this and getting it wrong, and we have been asked for our account three times in the last month, so here it is off the run sheet and out of the minutes. Marge read it back to the membership at the July 2010 meeting and four people who were there that morning agreed with it before it went on this page.\n\n[b]The fire was Wednesday 11 June 2003.[/b] It was Substation No. 3, the fenced transformer yard at [b]Depot and Quarry Road[/b] in Gridfall. It started at about ten to five in the morning.\n\nOur pagers went at [b]5:06 a.m.[/b] on a mutual aid request for a working fire in a transformer yard. Engine 4-2 and Tanker 4-1 were out of the bay at 5:14. The station's own power went at 5:11, which is why the east bay door had to be pulled up by hand, and which is why there has been a chain on that door ever since.\n\nWe were on scene at [b]5:41 a.m.[/b] and released at [b]11:20 a.m.[/b] Seventeen miles and a ridge, which is what it always is.\n\nWhat we did there was water supply and nothing else. It is an energised yard with oil in it and the utility's people had the only say in when anything got hit with water. We shuttled from the hydrant at Third and Depot and we filled Gridfall's engine and Marchfield's, and Vern drove the tanker eleven round trips and did not get out of it except to eat a sandwich somebody's mother brought down.\n\n[b]It burned about six hours.[/b]\n\n[b]Nobody died.[/b] Two Gridfall volunteers were taken to County General in Marchfield for smoke inhalation. Both were treated and released the same afternoon. Neither of them was ours, and neither of them was kept overnight, and we know both of them. No one from this department was hurt and no one from Marchfield, New Carrow or Coyne Flats was hurt.\n\nAbout [b]4,100[/b] Verity Valley customers lost power. Most were back inside two days. Some out toward Coyne Flats went five days, and this village was one of the last back, at the wrong end of a feeder that had to wait its turn.\n\nThe state utility commission put out [b]two pages in November 2003[/b] and what those two pages said was [b]insulation degradation consistent with age[/b]. That is the official cause and it is the only official cause there has ever been. Verity Valley did their own report and has never put it out, which is their business and not ours.\n\n[b]It was not lightning.[/b] There was no storm. The sky over Ashkettle that morning was clear and the wind was northeast at about eight, and you do not have to take our word for that either, because Len Mabry wrote it down at the time on Kestrel Road and it is still on his page at [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url] with the rain at 0.00 on the tenth, the eleventh and the twelfth.\n\nWe are not engineers. We do not have a theory. We have a run sheet, and the run sheet says water supply, six hours, nobody hurt." },
+          { "kind": "text", "body": "[b]If you are writing something about this:[/b] the year is 2003, the month is June, the day is the eleventh, the cause is what the commission wrote, and the number of people who died is zero.\n\nThe paper covered it properly at the time and the archive is at [url=synth://verityledger.com/]verityledger.com[/url]. There is a careful write-up with the commission language in it at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]. The argument about all of it is at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], where several of us read and none of us post.\n\nWe will answer a letter from anybody. Box 41, Ashkettle." },
+          { "kind": "heading", "level": 2, "text": "The week after" },
+          { "kind": "text", "body": "The fire was six hours. The outage was five days and the outage is the part people in this district remember.\n\nWe opened the hall on the Wednesday afternoon and ran it off the generator through Sunday. Coffee, a phone, forty extension cords, and the auxiliary freezer full of other people's meat. Ninety one people slept in it over four nights, most of them one night each, most of them people with a well and no pump.\n\nWe ran nine calls that week that were the outage and not a fire: four generators in garages with the door shut, two candles, one extension cord under a rug, one gas range being used to heat a house, and one man on oxygen whose concentrator had no battery.\n\nHe is the reason there is a list in the red binder by the radio. It is eleven names long and it is checked every January. If you are on oxygen, on a well with no hand pump, or on your own past eighty in this district, telephone Denise Hartle and get on it. It is not a government list. It is a page in a binder in a fire hall and that is exactly as far as it goes." },
+          { "kind": "heading", "level": 2, "text": "The Blue Kestrel, 1977 and since" },
+          { "kind": "text", "body": "Our people ran mutual aid to the [b]kitchen fire at the Blue Kestrel in 1977[/b]. It started in the fryer. The building was open again eleven days later.\n\nThe diner closed in [b]2006[/b] and the building on 62 has been empty since. We walk it every April with the owner's permission: doors, stairs, where the gas is shut, and where the floor is soft at the back of the kitchen. A vacant building is the one we are most likely to be called to and the one we know least about.\n\nMarion Teale keeps the real record of that place at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], menus and photographs and who sat where, and it is worth an hour." },
+          { "kind": "heading", "level": 2, "text": "The branch line, and what came off the drill schedule" },
+          { "kind": "text", "body": "Until 2008 we drilled twice a year on the grade crossings at Kestrel Road and out toward the quarry.\n\nThe last revenue freight ran the branch on [b]14 March 2008[/b]. The gates came out that autumn. Crossing drill came off the schedule in June 2008, and Clifton Sowle, who stood at that crossing for twenty years, still slows down at it and always will.\n\nThe rails are still in the ballast under it as of this writing. It is not a road. Every summer somebody takes a quad up the rail bed from the Kestrel Road end and every summer somebody has to go and get them. The history of the line is at [url=synth://verityrail.org/]verityrail.org[/url]." },
+          { "kind": "hitcounter", "count": 31048 }
+        ]
+      },
+      {
+        "id": "calls",
+        "name": "Call Log",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Call log" },
+          { "kind": "text", "body": "Totals by type, 2002 through 4 November 2012, off the county dispatch sheets and checked against the minutes.\n\nBefore 2002 the log was a spiral notebook in the cab of the 1968 Ford and the categories in it were whatever the officer felt like writing. Those numbers exist. They do not mean the same thing as these ones and we are not going to average them together and pretend." },
+          {
+            "kind": "table",
+            "head": ["YEAR", "TOTAL", "STRUCTURE", "VEHICLE", "EMS ASSIST", "ALARM", "BRUSH & FIELD", "MUTUAL AID", "OTHER"],
+            "rows": [
+              ["2002", "83", "6", "11", "24", "9", "17", "11", "5"],
+              ["2003", "96", "5", "14", "27", "8", "25", "11", "6"],
+              ["2004", "88", "4", "12", "29", "10", "18", "9", "6"],
+              ["2005", "91", "7", "13", "30", "11", "14", "10", "6"],
+              ["2006", "97", "5", "15", "33", "12", "17", "10", "5"],
+              ["2007", "104", "6", "12", "38", "14", "17", "11", "6"],
+              ["2008", "112", "4", "16", "41", "15", "18", "12", "6"],
+              ["2009", "118", "8", "14", "44", "17", "19", "9", "7"],
+              ["2010", "127", "5", "18", "47", "19", "19", "12", "7"],
+              ["2011", "141", "6", "17", "54", "21", "22", "14", "7"],
+              ["2012 to 11/04", "119", "4", "13", "46", "18", "20", "11", "7"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What that table says, in case it is not obvious" },
+          { "kind": "text", "body": "The total has gone up seventy percent in ten years and [b]the fires have not[/b]. Structure fires run between four and eight a year and they have run between four and eight a year since Marge started keeping it this way.\n\nWhat has gone up is EMS assist, from twenty four to fifty four. We are not an ambulance and we do not transport. We get toned because the county service is out of Marchfield and we are eight minutes closer, and because the average age in this district goes up every year, and because a man who has fallen in a bathroom needs four people to pick him up and his wife is seventy nine.\n\nThe other thing that has gone up is [b]automatic alarms[/b], nine to twenty one, and every one of those is a new house with a monitored panel and a cooking dinner. We turn out for all of them. We will keep turning out for all of them. About one in fourteen is something.\n\n2003 is high in brush because June was dry and because a county with no power for five days lights a lot of things it does not normally light.\n\n2009 is high in structure because of the eight, four were chimney fires in nine days in January when it did not get above zero." },
+          { "kind": "heading", "level": 2, "text": "Where the calls are" },
+          {
+            "kind": "table",
+            "head": ["WHERE", "2011 CALLS", "NOTE"],
+            "rows": [
+              ["Village of Ashkettle", "58", "Where the people are, and where the hydrants are."],
+              ["Route 62, quarry cut to the Halsey line", "14", "Four miles of road. Ten percent of our year."],
+              ["Route 62, west to the Gridfall line", "9", ""],
+              ["Kestrel Road and north", "12", ""],
+              ["Coyne Flats Road and the farms", "17", "Eighteen minutes to the far end."],
+              ["Quarry Road and the pit", "8", "Half of these are a car parked in the turnout after dark and a passer-by calling it in."],
+              ["Out of district, mutual aid", "14", ""],
+              ["Elsewhere and unclassified", "9", ""]
+            ]
+          },
+          { "kind": "text", "body": "Fourteen calls on four miles of Route 62 between the quarry cut and the Halsey line is the single worst piece of road in this district. It is a crown, a curve and a shoulder that drops four inches, and we have written the county about it in 2004, 2007 and 2011.\n\nThe 2011 letter got a reply. The reply said the segment is scheduled for evaluation." },
+          { "kind": "heading", "level": 2, "text": "Response time, honestly" },
+          { "kind": "text", "body": "The county clock starts when dispatch tones us and stops when the first unit says it is on scene. Ours, 2011, all calls:\n\n[list][*]Median 9 minutes 40 seconds.[*]Daytime weekday median 12 minutes 10 seconds.[*]Evening and weekend median 7 minutes 50 seconds.[*]Longest, 26 minutes, the far end of Coyne Flats Road on a Tuesday in February with two people responding.[/list]\n\nThat daytime number is the whole problem with a volunteer department in 2012 and no equipment fixes it. People work out of the district now. In 1985 this roster was farms, the school, the quarry and the hardware store, and every one of those was four minutes from this bay.\n\nWe publish the bad number because a department that only publishes the good one is telling you something about itself." },
+          { "kind": "text", "body": "Three from last year, for anyone who asks what this actually is. A burn barrel in a wind advisory, twice in one afternoon, same barrel, same man. A controlled burn nobody telephoned in, which we ran on at full response and which he was perfectly entitled to be doing, and which cost us a truck and him nothing but the call he did not make. And smoke in a house on Kestrel Road that turned out to be a bird in the wood stove flue, which lived, and which Gerald got out with a towel." },
+          { "kind": "hitcounter", "count": 11409 }
+        ]
+      },
+      {
+        "id": "safety",
+        "name": "Burning, Addresses & Water",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Burning, addresses and water" },
+          { "kind": "text", "body": "Four things that would make our year easier and your year safer, in the order that they come up." },
+          { "kind": "heading", "level": 2, "text": "1. The burn permit" },
+          { "kind": "text", "body": "[b]We do not issue burn permits.[/b] People come to this station for one about twenty times a year and there is nothing we can do for them.\n\nThe permit is a paper form from the [b]county clerk's office[/b] in Gridfall. It is free, it takes four minutes, it is good for the calendar year, and it has conditions on the back that nobody reads and that are the part that matters.\n\nYou may burn brush, leaves, clean untreated wood, and paper from your own house. You may not burn tyres, shingles, treated or painted lumber, plastic, insulation, furniture, a building, or anything belonging to a business. The one that catches people is [b]shingles[/b], every time a roof gets done.\n\nNobody may burn under a county ban, which goes on the clerk's recording and on the sign outside this station, or on a day the wind is over about fifteen. Nobody measures that wind for you. Len Mabry measures it at his house on Kestrel Road and puts it on [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url], and we look at it before a controlled burn and so should you, bearing in mind his anemometer is at ten feet and he says so himself, which is more than the airport does.\n\n[b]Telephone the county before you light it.[/b] Non-emergency, not 911. It stops three neighbours calling it in and it stops this department coming up your lane at fifty with the lights on to look at a legal fire." },
+          { "kind": "heading", "level": 2, "text": "2. Your house number" },
+          { "kind": "text", "body": "This is the one we will not stop going on about.\n\nWe cannot help you if we cannot find you. At night, in rain, off a county road with the ditch full, a truck doing thirty five with four people looking, we need [b]four inch reflective numbers[/b] on a post at the end of your drive, facing the road, on both sides, not screwed to a house that is two hundred feet back behind spruce.\n\nThe department sells the signs at cost. [b]$12[/b], green, reflective both sides, on a steel post we will drive for you if you are not able to. That $12 is what the blank and the post cost us. We have sold three hundred and forty one since 2005 and there are about six hundred addresses in this district.\n\nOrder one from Marge at the meeting, or at the hardware store, or write Box 41.\n\nAnd if your number is on a post that is now lying in the weeds, that is the same as having no number. Go and look at yours. Most people have not looked at theirs in nine years." },
+          { "kind": "heading", "level": 2, "text": "3. Water, and why the tanker matters" },
+          { "kind": "text", "body": "Eleven hydrants in sixty one square miles: nine in the village, one at the school, one at the grain elevator.\n\nEverywhere else the water at your fire is the water we bring and the water we can draft. That means a tanker shuttle, which is trucks driving in a circle, and it means a [b]dry hydrant[/b], which is a pipe already in a pond with a fitting on the bank so an engine can draft in four minutes instead of forty. We have five and we would like nine." },
+          {
+            "kind": "table",
+            "head": ["DRY HYDRANT", "WHERE", "GOOD FOR", "NOTE"],
+            "rows": [
+              ["No. 1", "Ashkettle Pond, village park", "Unlimited", "Best one we have. Plowed in winter by the village."],
+              ["No. 2", "Stipe farm pond, Coyne Flats Road", "About 90,000 gallons", "Private, and Arlen has never once said no."],
+              ["No. 3", "Quarry pit, off Route 62", "Unlimited", "Deepest water in the county. The gate is the county's, not ours. If it is padlocked, the highway garage has the key and so do we."],
+              ["No. 4", "Coyne Creek at the Kestrel Road bridge", "Seasonal", "Not in August. Not in a dry August at all."],
+              ["No. 5", "Wambold pond, Perrin Hill Road", "About 40,000 gallons", "Installed 2009. The last one we could afford."]
+            ]
+          },
+          { "kind": "text", "body": "Tom Norris shot the elevations for No. 4 and No. 5 for nothing, on two Saturdays, and would not take a cheque either time. The difference between a dry hydrant that drafts and one that will not is about three feet of lift, and nobody without an instrument can tell you which one you have built. His pages are at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url].\n\n[b]If you have a pond and you would let us put a pipe in it[/b], telephone the chief. We pay for the pipe and do the work, and you get a smaller insurance bill. There are four ponds in this district we would like and we have not asked properly." },
+          { "kind": "heading", "level": 2, "text": "4. The chimney" },
+          { "kind": "text", "body": "Four of our eight structure fires in 2009 were chimneys, in nine days in January, when it did not get above zero and everybody was burning hard and burning whatever was in the shed.\n\n[list][*]Sweep it every year. Every year, not when it looks bad, because you cannot see the part that is bad.[*]Burn seasoned wood. Green wood and pine make the creosote and creosote is what burns in a chimney fire.[*]A chimney fire sounds like a freight train and shows nothing from inside the house. Get everybody out and telephone us before you try anything.[*]Ash in a cardboard box in the garage has burned two buildings in this district in thirty years. Ash goes in a metal can with a lid, on the ground, away from the house, and it stays hot three days longer than you think.[/list]" },
+          { "kind": "heading", "level": 2, "text": "Smoke alarms, and the siren" },
+          { "kind": "text", "body": "We will come and put an alarm in, free, and change the battery in the ones you have, free, and we will not look at anything else in your house while we are there. It is not a programme with a name, it is Ray or Denise in a pickup on a Saturday. We did thirty one houses in 2011 and every one was somebody's mother who had been told about it by somebody's daughter.\n\nThe alarm in your hall is ten years old if you have not thought about it, and ten years is the end of them, battery or not.\n\nThe siren behind the station sounds with the pagers between 6 a.m. and 10 p.m. and not between 10 p.m. and 6 a.m., which has been the arrangement since 1998. It also sounds at noon every day for twenty seconds to prove it works, and has since 1953." },
+          { "kind": "hitcounter", "count": 12764 }
+        ]
+      },
+      {
+        "id": "hall",
+        "name": "The Hall",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The hall" },
+          { "kind": "image", "seed": "akvfd-hall-interior-tables", "imgKind": "photo", "caption": "The hall set for a hundred and ten. The panelling went up in 1978 and there is a vote about it at roughly every third annual meeting." },
+          { "kind": "text", "body": "The hall is the west end of the building, put up in 1962 by the membership on a Saturday schedule that ran fourteen months. The men who did it are in a photograph on the north wall in which not one of them is smiling.\n\nIt holds [b]120[/b] at tables or 160 in rows of chairs. The kitchen has two ranges, a walk-in cooler, an ice machine that works when it wants to, and a dishwasher out of a Halsey restaurant in 1994. The stage is eleven inches high and holds a piano nobody has tuned since 2003." },
+          { "kind": "heading", "level": 2, "text": "Renting it" },
+          {
+            "kind": "table",
+            "head": ["WHAT", "IN DISTRICT", "OUT OF DISTRICT"],
+            "rows": [
+              ["Hall, one day", "$75", "$125"],
+              ["Hall and kitchen, one day", "$110", "$175"],
+              ["Hall, Friday evening through Sunday", "$180", "$275"],
+              ["Cleaning deposit, returned", "$50", "$50"],
+              ["Funeral luncheon, any resident", "no charge", "no charge"]
+            ]
+          },
+          { "kind": "text", "body": "The rental money is the equipment fund and the equipment fund is boots and hose. It is about $2,400 a year and it is the most reliable income this department has, which tells you something about fundraising.\n\n[b]Rules, all four of them.[/b] You clean it or you lose the deposit, and the list of what clean means is taped inside the kitchen door. Alcohol needs the county permit and the permit needs to be in Joanne's hand a week before, not on the day. Nothing gets taped, tacked or screwed to the panelling. And the department may cancel your booking for a fire, which has happened twice since 1962, once in 1987 and once at a wedding reception in 2004 where eleven of the guests were the department and they came back afterwards.\n\nBook it with [b]Joanne Purkey[/b]. She has the calendar and the calendar is on paper and it is the only copy." },
+          { "kind": "heading", "level": 2, "text": "What we cook" },
+          {
+            "kind": "table",
+            "head": ["WHEN", "WHAT", "WHAT IT COSTS"],
+            "rows": [
+              ["Saturdays in Lent", "Fish fry, 4 to 7", "$9, $5 under twelve"],
+              ["Third Saturday in July", "Chicken barbecue, 11 to sold out", "$8 a half, $4 a quarter"],
+              ["First Sunday in October", "Pancake breakfast, 7 to noon", "$6, $3 under twelve"],
+              ["Second Saturday in December", "Santa run through the district", "free, and there are oranges"],
+              ["Fourth of July", "Parade, then the chicken stand at the ball field", "varies"]
+            ]
+          },
+          { "kind": "text", "body": "The chicken is halves, over hardwood on the block pit behind the hall, turned by hand, started at five in the morning by four men who have done it in the same order since about 1990. We cook three hundred and sell out between one and half past most years. In 2012 it rained and we did not, and the auxiliary ate chicken for a week.\n\nThe fish fry is haddock. It is not the best fish fry in the county and everybody here knows which one is.\n\nThe pancake breakfast makes the least money and takes the most work and will never be cancelled, because it is the only morning of the year when four generations of this village sit in the same room.\n\nThere is a clip of the 2007 barbecue somebody's nephew put on [url=synth://clipvault.tv/]ClipVault[/url]. It is two minutes of a pit, it has forty one views, and about nine of those are Marge." },
+          { "kind": "heading", "level": 2, "text": "The roof" },
+          { "kind": "text", "body": "The hall roof was done in sections in 2008 and 2010 with the breakfast money and it is three quarters done. The last quarter is the low slope over the kitchen, which is the expensive part and also the part that leaks.\n\nThe 2011 estimate was $14,000 to do it properly with a membrane instead of another patch. We do not have $14,000 and we are not going to raise it with pancakes at six dollars.\n\nThe membership voted in March 2012 to keep patching and keep the air pack fund separate. It was 14 to 9 and it was the longest meeting since the panelling." },
+          { "kind": "hitcounter", "count": 8213 }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Links" },
+          { "kind": "text", "body": "Curtis put these on in 2004 and has added four since. If one of them has stopped working we probably do not know about it." },
+          {
+            "kind": "buttons",
+            "label": "Sites worth having:",
+            "items": [
+              { "label": "The Gridfall Webring", "seed": "akvfd-btn-ring", "domain": "webring.gridfall.net" },
+              { "label": "The Gridfall Boards", "seed": "akvfd-btn-boards", "domain": "boards.gridfall.net" },
+              { "label": "Kestrel Road Weather", "seed": "akvfd-btn-wx", "domain": "ashkettle-wx.net" },
+              { "label": "The Verity Ledger", "seed": "akvfd-btn-ledger", "domain": "verityledger.com" },
+              { "label": "The Gridfall Wiki", "seed": "akvfd-btn-wiki", "domain": "wiki.gridfall.net" },
+              { "label": "Blue Kestrel Journal", "seed": "akvfd-btn-kestrel", "domain": "kestrel-journal.net" },
+              { "label": "Marchfield Farmers Co-op", "seed": "akvfd-btn-coop", "domain": "marchfield-coop.com" },
+              { "label": "Gridfall Tire & Alignment", "seed": "akvfd-btn-tire", "domain": "gridfalltire.com" },
+              { "label": "T. Norris, Surveyor", "seed": "akvfd-btn-tnorris", "domain": "tnorris.verity.net" },
+              { "label": "Verity Rail", "seed": "akvfd-btn-rail", "domain": "verityrail.org" },
+              { "label": "V.C.A.A. Stargazers", "seed": "akvfd-btn-vcaa", "domain": "stargazers.verity.net" },
+              { "label": "ClipVault", "seed": "akvfd-btn-clipvault", "domain": "clipvault.tv" },
+              { "label": "CHANGE YOUR BATTERY", "seed": "akvfd-btn-battery" },
+              { "label": "911 IS THE NUMBER", "seed": "akvfd-btn-911" },
+              { "label": "Best viewed at 1024x768", "seed": "akvfd-btn-1024" }
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What these are" },
+          {
+            "kind": "table",
+            "head": ["SITE", "WHAT IT IS"],
+            "rows": [
+              ["[url=synth://ashkettle-wx.net/]Kestrel Road Weather Station[/url]", "Len Mabry's readings, twice a day since 1999, a mile north of us. We check his wind before a controlled burn. His June 2003 sheet is the only continuous local weather record of that week anywhere."],
+              ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "The county message board. Somebody posts about our siren about once a year. We read it and we do not post."],
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The paper. Prints the barbecue notice for nothing every July and has since before any of us."],
+              ["[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]", "Encyclopedia of the county, written by about nine people. Their 2003 substation article has the year and the cause right."],
+              ["[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]", "Marion Teale's memory site for the diner on 62. The 1977 kitchen fire is in there with the date."],
+              ["[url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url]", "Gave $300 to the air pack fund and did not want it announced, and we announced it."],
+              ["[url=synth://gridfalltire.com/]Gridfall Tire & Alignment[/url]", "Has never charged this department for a flat repair. Depot Street, four bays from where the substation burned."],
+              ["[url=synth://tnorris.verity.net/]Thomas Norris, surveyor[/url]", "Shot the elevations for two of our dry hydrants for nothing. His 1994 flood account is the best writing about this county."],
+              ["[url=synth://verityrail.org/]Verity Rail[/url]", "The branch line. The grade crossing photographs are useful to us in a way the people who took them did not intend."],
+              ["[url=synth://stargazers.verity.net/]V.C.A.A. Stargazers[/url]", "They observe from Perrin Hill. We did the standby for their public night in 2010 and got cold."],
+              ["[url=synth://clipvault.tv/]ClipVault[/url]", "The barbecue clip. Forty one views."],
+              ["[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]", "The ring. About a third of it no longer resolves."],
+              ["[url=synth://keiser-fire.synth/]Keiser Fire Equipment[/url]", "State capital. Where the hose, the bottles and the bad news about the bottles come from."],
+              ["[url=synth://ashkettle-hardware.synth/]Ashkettle Hardware[/url]", "Where this page was built, on the computer by the paint counter, after close."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The ring" },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Webring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: Kestrel Road Weather", "domain": "ashkettle-wx.net" },
+              { "label": "Next: Gridfall Tire & Alignment", "domain": "gridfalltire.com" },
+              { "label": "Random: The Blue Kestrel Journal", "domain": "kestrel-journal.net" }
+            ]
+          },
+          { "kind": "text", "body": "Curtis joined the ring in 2004 because Len Mabry said it would bring people, and it brought one, a man in another state who collects fire department patches and who has since sent us three Christmas cards and a patch from his own department, which is on the wall." },
+          { "kind": "hitcounter", "count": 6688 }
+        ]
+      },
+      {
+        "id": "guestbook",
+        "name": "Guestbook",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Sign the guestbook" },
+          { "kind": "text", "body": "Tell us how we did, ask a question, or tell us what is wrong with this page.\n\n[b]This is not an emergency line.[/b] Dial 911. Somebody read this at twenty to eleven at night in 2009 and nobody saw it until Thursday, and it is at the top of this page for a reason.\n\nCurtis reads it when he thinks of it. Marge reads it on Thursdays." },
+          {
+            "kind": "guestbook",
+            "entries": [
+              { "author": "Sandy Voit", "time": "04/19/2005", "body": "Is this where I get the burn permit? The recording at the clerk says call back Monday and it is Monday." },
+              { "author": "Curtis", "time": "04/21/2005", "body": "It is the clerk, not us. Their office is in Gridfall, the form is paper and it is free. I have put it on the [url=/safety]burning page[/url] in larger type than before.\n\nWe get asked this about twenty times a year and I do not think the type is the problem." },
+              { "author": "T. Reber (Dustin)", "time": "08/22/2007", "body": "I am fifteen in November. How old do you have to be for the juniors and do I need anything" },
+              { "author": "Denise Hartle", "time": "08/26/2007", "body": "Sixteen, and a parent's signature, and that is all. Come on a Monday at seven with the parent.\n\nYou will roll hose for a year before anybody lets you near anything interesting. That is not us being careful with you. That is us finding out whether you will still be here in a year. Most are not. Be." },
+              { "author": "Ray Purkey", "time": "10/25/2008", "body": "To answer the three people who have asked at the store: yes, we know the crossing gates came out at Kestrel Road last week. The last freight ran 14 March and the railroad filed to abandon the line, and the gates coming out is part of that.\n\nThe rails are still in the ballast. The rail bed is not a road and is not going to be one. If you are on a quad on it you are on somebody's property, and we are the ones who come and get you when the quad is on top of you." },
+              { "author": "a neighbor on Quarry Road", "time": "08/03/2009 10:41 PM", "body": "there is smoke coming off the brush pile at the old kessel place and nobody is out there watching it. i dont want to make a thing of it by calling but somebody should look" },
+              { "author": "Marjorie Doubek", "time": "08/06/2009", "body": "Whoever you are: [b]telephone 911.[/b] Nobody reads this page at night. Nobody reads it most days. I read it on Thursday, which is three days later, and if that pile had been anything you would have had three days of it.\n\nIt was steam off a pile that had been rained on. Ray drove out and looked. It was nothing and you were still right to want somebody to look.\n\nMake the call. We would rather drive out for nothing than not drive out." },
+              { "author": "W. Pennock", "time": "06/19/2011", "body": "Your 2003 page says power came back to the village at 2:40 p.m. on the 16th. That is Kestrel Road. It is Len Mabry's time and it is correct for Len Mabry.\n\nThe village proper is on a different feeder and came back at 1:58 p.m. the same day. The Coyne Flats Road end was 8:20 p.m. on the 16th, which is the last of it, and that is the five days people talk about. The far end of this district was out one hundred and thirty five hours.\n\nI was on the pole line that morning and I have my own notes. I am not correcting the substance. The substance on that page is right, and it is the only page in this county with the number of people who died on it, which is none.\n\nIf you want the feeder times written out I will bring them to a meeting." },
+              { "author": "Lyle Ganske", "time": "11/14/2012", "body": "Thank you to everybody who came out to the barbecue in the rain and bought a half and took it home wet.\n\nThe page has been brought up to date. The roof has not. Meeting Monday at seven and the roof is on the agenda again, which will surprise nobody.\n\nWe are taking applications. Come on a Monday." },
+              { "author": "Brian Skurka", "time": "09/22/2013", "body": "For Trina, who asked at the store: yes, the old diner building on 62 has a tenant again, and yes, somebody has been through it. I walked it in August with the new man. Gas is shut at the same place. The back half of the old kitchen is storage and the soft floor is still soft. New sheet is in the binder.\n\nThey kept the bird sign and it stays lit until eleven, which is useful, because that corner is the only thing out there you can see at night." },
+              { "author": "Deb Trantow", "time": "05/17/2015", "body": "My husband went down on the rail bed last September, two miles in from the Kestrel Road end, and the fellow who found him told 911 near the bridge, and there was some confusion.\n\nWhat should a person say?" },
+              { "author": "Denise Hartle", "time": "05/24/2015", "body": "The mile markers. Read the number off the post, say the number, and say which end you came in from.\n\nDo not say near the bridge. There are three decked trestles on that eleven miles and everyone calls all of them the bridge, and the fourth at Coyne Creek is fenced off and people say that one too.\n\nWe can get a truck to the trail at four places: both trailheads, the Kestrel Road gate, and the field lane off Perrin Hill Road the Wambolds leave open for us. Everywhere else it is a basket and six people walking." },
+              { "author": "FIRE GRANT SOLUTIONS", "time": "03/02/2016", "body": "ATTENTION FIRE CHIEF: your department may QUALIFY for up to $250,000 in federal equipment funding. our specialists have secured awards for over 400 volunteer departments. no upfront cost, we take a percentage of award only. free eligibility check at [url=synth://fire-grant-solutions.biz/]fire-grant-solutions.biz[/url] SPOTS LIMITED THIS CYCLE" },
+              { "author": "Jolene Reber", "time": "11/05/2019", "body": "Somebody should tell this page that Ruth Cannady put our 2011 run sheet up at [url=synth://thequarry.news/]The Quarry[/url] alongside four other departments, and she got the district boundary right, which nobody who writes about us gets right.\n\nShe did not ask us for a quote. She asked us for the sheet." },
+              { "author": "AutoLocal_Feed", "time": "08/14/2023", "body": "FIVE FORGOTTEN DISASTERS OF THE RURAL MIDWEST, No. 3: The Gridfall Substation Explosion\n\nIn the early hours of a stormy morning in 2004, a lightning strike ignited the Gridfall electrical substation in Verity County, triggering an explosion that could be heard for miles. Two volunteer firefighters lost their lives battling the blaze, and more than 40,000 homes were left without power for nearly two weeks. The nearby Ashkettle Volunteer Fire Department, founded in 1932, was among the first agencies to respond.\n\nThe historic Blue Kestrel Diner, which closed in 2008, sits a short drive from the site and is now a popular vape shop. Today the area is best known for the Verity Branch Trail, an 11.2 mile crushed limestone path on the former rail bed.\n\nSource: [url=synth://now.verityledger.com/]now.verityledger.com[/url].\n\nWhich forgotten disaster should we cover next? Let us know in the comments." },
+              { "author": "kfennimore", "time": "01/22/2024", "body": "Every hard number in the entry above is wrong, and the page it is sitting on has them all right, which is the part I would like somebody to notice.\n\nThe fire was 11 June 2003, not 2004. There was no storm: the weather that morning is on [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url], clear and calm, 0.00 inches of rain on the tenth, eleventh and twelfth. The state commission's two pages in November 2003 said insulation degradation consistent with age. Nobody died. Two Gridfall volunteers were treated for smoke inhalation at County General and released the same afternoon. It was 4,100 customers, not 40,000, and the longest of those was five days.\n\nThe diner closed in 2006. It was a vape shop from 2013 to 2021 and has been a phone repair since 2022. The trail mileage is the only figure in it that is right, and it is right because it is on a sign.\n\nThe [url=/mutualaid]mutual aid page[/url] here has the run times, the release time and the two men who went to County General, written down in 2011 by people who were standing there. I have cited it four times on [url=synth://verity.wiki/]the county wiki[/url] and it has been reverted twice by something that prefers the version above.\n\nKaren Fennimore, Marchfield Public Library." },
+              { "author": "Curtis Ganske", "time": "11/30/2024", "body": "Somebody mailed a cheque for twenty five dollars to Box 41 for the air pack fund last month. It came back marked no such box and they telephoned me at the store about it, embarrassed, as though they had done something wrong.\n\nSo, plainly, because this page is old and I am the one who let it get old:\n\nThe air pack fund closed in 2016. We got the packs and the bottles on a federal grant that year, the department's share was $1,840, it came out of this fund and the rest went on the roof. The thermometer on the front of this site has said sixty two percent since 2012 and it will keep saying it, because the program I drew it in does not run on anything any more and I cannot open the file.\n\nBox 41 lapsed in 2019. We are still here. The barbecue is still the third Saturday in July. If you want to give something, hand it to somebody in a department shirt.\n\nI am not going to rebuild this website. I have looked at what that costs twice." },
+              { "author": "VerityPulseAI", "time": "03/18/2025", "body": "Summary of this page for readers:\n\nThe Ashkettle Volunteer Fire Department maintains one of the more reliable local accounts of the June 2003 Gridfall substation fire. According to the department, the fire occurred on 11 June 2003, burned approximately six hours and resulted in no fatalities, with two Gridfall volunteers treated for smoke inhalation at County General and released the same day. The state commission attributed the cause to insulation degradation consistent with age.\n\nThe department was established in 1932 and operates a fleet of six vehicles from two stations. Its fundraising thermometer has remained at 62 percent since 2012, a figure residents associate with nearby County Route 62. Local officials have not commented." },
+              { "author": "B. Amspacher", "time": "07/09/2025", "body": "I asked [url=synth://askverity.com/]AskVerity[/url] where a person gets a burn permit in Ashkettle and it told me the fire department issues them, Monday to Friday, nine to five, and gave this address.\n\nI drove over on a Tuesday at half past ten. It is two bays and a hall and a gravel lot and there was nobody in it, which is exactly what this page says it is, because this page says the permit is the clerk.\n\nThe clerk has it online now at [url=synth://verity.county.gov/]the county site[/url], or did in March. Today the form loads and the submit button does nothing.\n\nSo I have it on paper, out of a drawer, from a woman who found it in about nine seconds." },
+              { "author": "DOMAIN RENEWAL DEPARTMENT", "time": "04/11/2026", "body": "FINAL NOTICE -- your listing for ashkettlevfd expires in 3 days. failure to act will result in permanent removal from all search directories and loss of associated email. secure your renewal now: [url=synth://domain-secure-renewal.top/]domain-secure-renewal.top[/url] REFERENCE 20641-AK" },
+              { "author": "hf_listener_44", "time": "06/02/2026", "body": "Hello. I drive out 62 to the quarry cut some nights for the shortwave and wanted to ask whether the department has ever had trouble with radios out there, since you would know that road better than anybody.\n\nWe log at [url=synth://sdrlisteners.org/]sdrlisteners.org[/url] if anyone here is interested. Not trying to be a nuisance." },
+              { "author": "Wade Tillotson", "time": "06/06/2026", "body": "We have a fire radio. It does what a fire radio does and it does it badly in the cut, the same as every radio has in there since 1974, because it is a hole in a rock. I have nothing to tell you about what you listen to and I am not going to guess at it.\n\nWhat I will ask. The turnout at the cut, the wide gravel on the north side with the county gate behind it, is where we set up to draft No. 3. There is room for two trucks and a folding tank and there is not room for that and four cars.\n\nPark past the gate post. Nobody minds you being out there. People have been going out there at night since before I was born." },
+              { "author": "Deb Yingst", "time": "09/06/2026", "body": "Drove over for the chicken barbecue on the third Saturday in July, which is what this page says, and it had been the Saturday before. They were still cleaning the pit. Somebody gave me two halves out of the auxiliary freezer and would not take money for them, and I ate chicken for a week, which I gather is traditional.\n\nThe thing I will mention. There is a thermometer taped inside the hall window, drawn by hand on poster board, and it is for the kitchen roof, and it says $2,140 of $14,000, and in the corner somebody has written the date. Last month.\n\nSo it is being kept up. It is just being kept up on a window." }
+            ]
+          },
+          { "kind": "text", "body": "[i]Guestbook is unmoderated. It has been unmoderated since 2004 and the button that moderates it has never worked.[/i]" },
+          { "kind": "hitcounter", "count": 27391 }
+        ]
+      }
+    ]
+  }
+}

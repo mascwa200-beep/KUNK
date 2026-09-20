@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T07:13:11Z",
+  "generated": "2026-09-20T07:57:24Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -12,6 +12,38 @@
       "tags": [],
       "path": "net/sites/62chan-org/site.json",
       "bytes": 52083
+    },
+    {
+      "domain": "ashkettle-wx.net",
+      "title": "Kestrel Road Weather Station - Ashkettle",
+      "type": "page",
+      "era": "2001",
+      "skin": "geocities",
+      "description": "Len Mabry's home weather station on Kestrel Road in Ashkettle: daily readings, monthly tables, a dead webcam and a guestbook, last updated 17 April 2011.",
+      "tags": [
+        "ashkettle",
+        "weather",
+        "archive"
+      ],
+      "path": "net/sites/ashkettle-wx-net/site.json",
+      "bytes": 31185
+    },
+    {
+      "domain": "ashkettlevfd.org",
+      "title": "Ashkettle Volunteer Fire Department",
+      "type": "page",
+      "era": "2012",
+      "skin": "tripod-tile",
+      "description": "Station 4 in Ashkettle: roster, two engines and a tanker with mileage, a mutual aid page that gets the 2003 Gridfall substation fire right, and a fundraiser thermometer that has read 62 percent since 2012.",
+      "tags": [
+        "ashkettle",
+        "fire",
+        "county",
+        "archive",
+        "route-62"
+      ],
+      "path": "net/sites/ashkettlevfd-org/site.json",
+      "bytes": 72197
     },
     {
       "domain": "ask.verity.ai",
@@ -36,6 +68,21 @@
       "bytes": 41239
     },
     {
+      "domain": "bluekestrel.com",
+      "title": "bluekestrel.com",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "A registrar holding page on the diner's old domain: this domain may be for sale, a box of automatically generated related searches, three ads and a disclaimer.",
+      "tags": [
+        "parking",
+        "domain",
+        "2026"
+      ],
+      "path": "net/sites/bluekestrel-com/site.json",
+      "bytes": 5506
+    },
+    {
       "domain": "boards.gridfall.net",
       "title": "The Gridfall Boards",
       "type": "forum",
@@ -47,6 +94,25 @@
       "bytes": 37198
     },
     {
+      "domain": "brenners-notebook.email",
+      "title": "Brenner's Verity Notebook",
+      "type": "newsletter",
+      "era": "2026",
+      "skin": "inbox-letter",
+      "description": "Hal Brenner's paid monthly newsletter out of Gridfall: one properly sourced county story a month, written by the man the Ledger laid off in 2019 and then used as a byline in 2023.",
+      "tags": [
+        "verity",
+        "gridfall",
+        "newsletter",
+        "2026",
+        "local-news",
+        "records",
+        "county-budget"
+      ],
+      "path": "net/sites/brenners-notebook-email/site.json",
+      "bytes": 56593
+    },
+    {
       "domain": "classifieds.verity.net",
       "title": "Verity Classifieds — Local Listings, County Wide",
       "type": "market",
@@ -56,6 +122,23 @@
       "tags": [],
       "path": "net/sites/classifieds-verity-net/site.json",
       "bytes": 31131
+    },
+    {
+      "domain": "clipvault-shorts.tv",
+      "title": "ClipVault Shorts",
+      "type": "stream",
+      "era": "2026",
+      "skin": "tubemodern",
+      "description": "Vertical video. Verity County's last hundred years compressed into forty-second clips, most of which are wrong, none of which cite anything.",
+      "tags": [
+        "2026",
+        "video",
+        "slop",
+        "gridfall",
+        "substation"
+      ],
+      "path": "net/sites/clipvault-shorts-tv/site.json",
+      "bytes": 36828
     },
     {
       "domain": "clipvault.tv",
@@ -121,7 +204,7 @@
         "fence"
       ],
       "path": "net/sites/countysupply-store/site.json",
-      "bytes": 62901
+      "bytes": 66509
     },
     {
       "domain": "dash.verity.net",
@@ -163,6 +246,23 @@
       "bytes": 44600
     },
     {
+      "domain": "gridfall-help.chat",
+      "title": "Verity Help Desk (unofficial)",
+      "type": "chat",
+      "era": "2026",
+      "skin": "chatdark",
+      "description": "A small chat server where people in Verity County ask each other why the printer is doing that, including a read-only import of the Users Group board that closed in 2014.",
+      "tags": [
+        "gridfall",
+        "verity",
+        "computers",
+        "help",
+        "archive"
+      ],
+      "path": "net/sites/gridfall-help-chat/site.json",
+      "bytes": 46944
+    },
+    {
       "domain": "gridfall.chat",
       "title": "Gridfall County",
       "type": "chat",
@@ -195,6 +295,22 @@
       "bytes": 88244
     },
     {
+      "domain": "gridfalltire.com",
+      "title": "Gridfall Tire & Alignment",
+      "type": "page",
+      "era": "2014",
+      "skin": "plain-white",
+      "description": "The website of a tire and alignment shop on Depot Street in Gridfall, built on a template in 2011, last changed in August 2014, and still telling people the shop is open on Saturdays.",
+      "tags": [
+        "gridfall",
+        "business",
+        "tires",
+        "depot-street"
+      ],
+      "path": "net/sites/gridfalltire-com/site.json",
+      "bytes": 43274
+    },
+    {
       "domain": "gridline.social",
       "title": "Gridline",
       "type": "aggregator",
@@ -204,6 +320,40 @@
       "tags": [],
       "path": "net/sites/gridline-social/site.json",
       "bytes": 37901
+    },
+    {
+      "domain": "halloranmedia.com",
+      "title": "Halloran Media Group",
+      "type": "page",
+      "era": "2013",
+      "skin": "plain-white",
+      "description": "The corporate site of the newspaper chain that owned the Verity Ledger from 2011 to 2016. Never taken down after the sale. Still listing fourteen titles, still hiring one multimedia journalist.",
+      "tags": [
+        "corporate",
+        "media",
+        "halloran",
+        "newspapers",
+        "2013"
+      ],
+      "path": "net/sites/halloranmedia-com/site.json",
+      "bytes": 34777
+    },
+    {
+      "domain": "halsey-ledger.com",
+      "title": "The Halsey Ledger",
+      "type": "news",
+      "era": "2026",
+      "skin": "pinkslime",
+      "description": "A Pinelock property named after a town of 2,100 that has never had a newspaper, running the same pipeline and the same template as the rest of the group.",
+      "tags": [
+        "verity",
+        "halsey",
+        "2026",
+        "news",
+        "pinkslime"
+      ],
+      "path": "net/sites/halsey-ledger-com/site.json",
+      "bytes": 40752
     },
     {
       "domain": "kestrel-journal.net",
@@ -271,6 +421,39 @@
       "bytes": 19342
     },
     {
+      "domain": "milbrookgazette.com",
+      "title": "The Milbrook Gazette",
+      "type": "news",
+      "era": "2016",
+      "skin": "broadsheet",
+      "description": "The weekly paper for Milbrook and Kerrin County, published Thursdays since 1908. The last edition is 27 October 2016 and says the pause is temporary.",
+      "tags": [
+        "milbrook",
+        "kerrin",
+        "weekly",
+        "archive"
+      ],
+      "path": "net/sites/milbrookgazette-com/site.json",
+      "bytes": 79437
+    },
+    {
+      "domain": "newcarrow-today.com",
+      "title": "New Carrow Today",
+      "type": "news",
+      "era": "2026",
+      "skin": "pinkslime",
+      "description": "A local news site for a village of 3,140, published off the same template as four hundred others, with no staff page, no phone number and no address.",
+      "tags": [
+        "verity",
+        "new-carrow",
+        "2026",
+        "news",
+        "pinkslime"
+      ],
+      "path": "net/sites/newcarrow-today-com/site.json",
+      "bytes": 33965
+    },
+    {
       "domain": "now.clipvault.tv",
       "title": "ClipVault Now",
       "type": "stream",
@@ -293,6 +476,22 @@
       "bytes": 62508
     },
     {
+      "domain": "pinelock-media.com",
+      "title": "Pinelock Media Group",
+      "type": "page",
+      "era": "2026",
+      "skin": "plain-white",
+      "description": "The corporate site of the holding company that owns the Verity Ledger and thirty other local news properties, with an investor page, a careers page and no reporters.",
+      "tags": [
+        "corporate",
+        "media",
+        "pinelock",
+        "2026"
+      ],
+      "path": "net/sites/pinelock-media-com/site.json",
+      "bytes": 34267
+    },
+    {
       "domain": "pulse.gridfall.net",
       "title": "Gridfall Pulse",
       "type": "social",
@@ -302,6 +501,40 @@
       "tags": [],
       "path": "net/sites/pulse-gridfall-net/site.json",
       "bytes": 19909
+    },
+    {
+      "domain": "quarrycut.net",
+      "title": "The Quarry Cut on Route 62",
+      "type": "page",
+      "era": "2009",
+      "skin": "tripod-tile",
+      "description": "Ray Sabo's page about the road cut and abandoned quarry on County Route 62 east of Ashkettle: a measured section, the quarry's dates, access rules, and six years of shortwave reception logs. Last updated October 2009.",
+      "tags": [
+        "ashkettle",
+        "geology",
+        "radio",
+        "archive"
+      ],
+      "path": "net/sites/quarrycut-net/site.json",
+      "bytes": 72623
+    },
+    {
+      "domain": "scanner.verity.net",
+      "title": "Verity County Scanner Log",
+      "type": "blog",
+      "era": "2009-2026",
+      "skin": "movabletype-cream",
+      "description": "A retired county dispatcher's scanner log: fire, EMS and police traffic written down as it goes out, nightly since April 2009.",
+      "tags": [
+        "gridfall",
+        "scanner",
+        "fire",
+        "ems",
+        "radio",
+        "locals"
+      ],
+      "path": "net/sites/scanner-verity-net/site.json",
+      "bytes": 32665
     },
     {
       "domain": "sdrlisteners.org",
@@ -405,6 +638,22 @@
       "bytes": 60469
     },
     {
+      "domain": "verity-transit.gov",
+      "title": "Verity County Transit Division",
+      "type": "portal",
+      "era": "2026",
+      "skin": "govsite",
+      "description": "Two bus routes, a dial-a-ride line that answers three and a half hours a day, and a detour around the Quarry Road culvert that has been posted since July.",
+      "tags": [
+        "verity",
+        "county",
+        "transit",
+        "2026"
+      ],
+      "path": "net/sites/verity-transit-gov/site.json",
+      "bytes": 21581
+    },
+    {
       "domain": "verity.county.gov",
       "title": "Verity County Services Portal",
       "type": "portal",
@@ -429,6 +678,22 @@
       ],
       "path": "net/sites/verity-wiki-net/site.json",
       "bytes": 85570
+    },
+    {
+      "domain": "verityanswers.com",
+      "title": "VerityAnswers",
+      "type": "qa",
+      "era": "2026",
+      "skin": "stack",
+      "description": "A local questions-and-answers site where the accepted answer is whichever one arrived first, and the correct one is underneath it at two votes.",
+      "tags": [
+        "verity",
+        "records",
+        "forms",
+        "2026"
+      ],
+      "path": "net/sites/verityanswers-com/site.json",
+      "bytes": 49554
     },
     {
       "domain": "veritycountytoday.com",
@@ -473,6 +738,40 @@
       "tags": [],
       "path": "net/sites/verityledger-com/site.json",
       "bytes": 37174
+    },
+    {
+      "domain": "verityrail-preservation.org",
+      "title": "Verity Rail Preservation Society",
+      "type": "page",
+      "era": "2003",
+      "skin": "tripod-tile",
+      "description": "The society that keeps the paper, the caboose and the freight house fund for the Marchfield and Coyne Flats branch line, last updated September 2009.",
+      "tags": [
+        "verity",
+        "rail",
+        "marchfield",
+        "preservation",
+        "archive"
+      ],
+      "path": "net/sites/verityrail-preservation-org/site.json",
+      "bytes": 36661
+    },
+    {
+      "domain": "verityrail.org",
+      "title": "Verity Rail Company",
+      "type": "page",
+      "era": "2011",
+      "skin": "plain-white",
+      "description": "The corporate web site of Verity Rail Company, a regional freight railroad, unchanged since June 2011 when it conveyed the last of its Verity County branch corridors to the county.",
+      "tags": [
+        "rail",
+        "verity",
+        "corporate",
+        "abandonment",
+        "2011"
+      ],
+      "path": "net/sites/verityrail-org/site.json",
+      "bytes": 72079
     },
     {
       "domain": "veritysignal.blog",

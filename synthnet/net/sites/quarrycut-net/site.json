@@ -1,0 +1,1256 @@
+{
+  "schema": 1,
+  "domain": "quarrycut.net",
+  "title": "The Quarry Cut on Route 62",
+  "type": "page",
+  "era": "2009",
+  "skin": "tripod-tile",
+  "description": "Ray Sabo's page about the road cut and abandoned quarry on County Route 62 east of Ashkettle: a measured section, the quarry's dates, access rules, and six years of shortwave reception logs. Last updated October 2009.",
+  "tags": [
+    "ashkettle",
+    "geology",
+    "radio",
+    "archive"
+  ],
+  "links": [
+    "ashkettle-wx.net",
+    "boards.gridfall.net",
+    "clipvault.tv",
+    "codeandcoffee.blog",
+    "forums.verityrail.org",
+    "kestrel-journal.net",
+    "marchfield-coop.com",
+    "marla.verity.net",
+    "sdrlisteners.org",
+    "stargazers.verity.net",
+    "tnorris.verity.net",
+    "verityledger.com",
+    "verityrail-preservation.org",
+    "webring.gridfall.net",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "navLabel": "THE CUT",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "*** THE QUARRY CUT, COUNTY ROUTE 62, EAST OF ASHKETTLE *** ROCK, ROAD AND WHAT PEOPLE DRIVE OUT HERE TO LISTEN TO *** PAGE UP SINCE JUNE 2004 *** THE FACE IS 38 FEET AND THE DITCH IS WHERE YOU COLLECT ***"
+          },
+          {
+            "kind": "text",
+            "body": "[b]THIS SITE IS IN FRAMES.[/b] The menu is the narrow panel on the left. If you have come in from a search engine you are probably looking at one panel on its own with no menu at all, which is not your fault and is not going to be fixed. The front page is [url=/]here[/url].\n\nThere is a no-frames version in the file NOFRAMES.HTM. It is the 2004 version of this site, it is missing four years of everything, and I leave it there because somebody once told me it was the only version that worked on his telephone."
+          },
+          {
+            "kind": "image",
+            "seed": "qc-face-north-2007",
+            "imgKind": "banner",
+            "caption": "The north face from the shoulder, October 2007, about an hour before sunset, which is the only time of day the bedding shows up in a photograph."
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE QUARRY CUT ON ROUTE 62"
+          },
+          {
+            "kind": "text",
+            "body": "My name is [b]Ray Sabo[/b]. I ran the materials shed for the Verity County highway department from 1979 until I took the buyout in 2003, which means that for twenty-four years I was paid to find out what rock and gravel actually were before the county put them under a road. I have been going out to this cut since 1983, first for work and then because I liked it.\n\nThis site is about [b]one road cut and one abandoned quarry[/b] on County Route 62, east of Ashkettle, on the highest ground the road crosses. There are four things here:\n\n[list][*]what the rock is, bed by bed, measured with a tape[*]what is left of the quarry behind it and when it worked[*]how to get there without getting killed by a gravel truck or arrested by a deputy[*]the radio, which is not why I built this page and is now most of my mail[/list]\n\nI am not a geologist. I am a man who tested aggregate for a living and then kept a notebook. Where I know something I will say how I know it. Where I do not, I will say that, and I would rather the page looked thinner and told the truth."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS ON THIS SITE"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[url=/cut]THE CUT[/url] -- the measured section, the joints, the little fault, and what comes out of the talus.",
+              "[url=/quarry]THE QUARRY[/url] -- who worked it, when it stopped, the kiln in the woods, and the water in the pit.",
+              "[url=/access]GETTING THERE[/url] -- mileage, the pull-off, what is county ground and what is posted, and the seasons.",
+              "[url=/radio]THE RADIO[/url] -- my logs from 2004 to 2009, my method, and a list of things people have told me it is.",
+              "[url=/links]LINKS AND MAIL[/url] -- other pages in this county worth your evening, and how to write to me."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "LAST UPDATED"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Sunday, 4 October 2009.[/b] I added the September and October radio sessions and fixed the thickness on bed 6, which has been wrong on this page since 2005 and which nobody caught, including me, for four years.\n\nIf the date above does not move, it means nothing has happened. Things stopped happening to a rock face a long time before I got here."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS NEW, NEWEST FIRST"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "10/04/2009 -- Bed 6 corrected from 2 ft 4 in to 1 ft 9 in. See the note at the bottom of the cut page. September and October sessions added.",
+              "08/09/2009 -- Two nights a day apart, same weather, one signal and one nothing. Both are in the log. I am leaving them next to each other on purpose.",
+              "04/26/2009 -- A man from the state university wrote about the contact at 14 feet and was extremely polite about my naming. His note is in the guestbook and I have put his correction on the cut page in his words, not mine.",
+              "09/07/2008 -- Applied to the Gridfall Webring. Mrs. Vance writes a nice letter. I am told I am pending.",
+              "03/17/2008 -- The branch line ran its last freight on the fourteenth. I drove out on the fifteenth and again on the seventeenth and listened both nights and there was no change of any kind. It is in the log and that is all I have to say about it.",
+              "08/18/2007 -- Strongest I have ever had it. S5 on the 2010 and readable in the truck with the window up.",
+              "05/13/2006 -- Somebody has painted 4219 on the culvert headwall at the pull-off in white. It is neat work and I am mildly annoyed about it.",
+              "03/04/2006 -- Put the little digging man below on the page as a joke about the section drawing not being done. He has now been digging for three years.",
+              "10/15/2005 -- Sat out there an hour and twenty-five minutes in the rain for nothing. Logged it as nothing, which is the whole point of a log.",
+              "06/02/2004 -- Page up. My nephew's roommate did the frames and then went back to school."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE MEASURED SECTION DRAWING"
+          },
+          {
+            "kind": "image",
+            "seed": "qc-under-construction-gif",
+            "imgKind": "photo",
+            "caption": "UNDER CONSTRUCTION. This has been under construction since 4 March 2006."
+          },
+          {
+            "kind": "text",
+            "body": "I said in 2006 that I would scan the section drawing and put it here. The drawing exists. It is on two sheets of graph paper in the back of the green notebook, in pencil, with the bed numbers in the margin and coffee on sheet two.\n\nWhat I do not have is a scanner, and the one at the library in Marchfield wants the sheet flat and mine has been folded since 2006, and every time I get as far as the parking lot I think of something else to do.\n\nThe [url=/cut]table on the cut page[/url] is the same information in numbers. It is honestly better than the drawing. The drawing is prettier.\n\nThe little man with the shovel has been digging since March 2006 and is the only part of this site that has never once failed to load."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 58411
+          },
+          {
+            "kind": "text",
+            "body": "The counter says fifty-eight thousand and that number is a lie. It went up by nine hundred in one night in February 2007, all of it from one address, and the boards tell me that is a robot reading every page in the county one after another all night long. I have left it where it is. It cost me nothing and it is the only part of this page that grows."
+          },
+          {
+            "kind": "buttons",
+            "label": "Buttons. The ring one is the ring's own code, copied off their page in 2008. The rest are mine or were given to me.",
+            "items": [
+              {
+                "label": "The Gridfall Webring",
+                "seed": "qc-btn-ring",
+                "domain": "webring.gridfall.net"
+              },
+              {
+                "label": "Kestrel Road Weather",
+                "seed": "qc-btn-kr1",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "The Gridfall Boards",
+                "seed": "qc-btn-boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "T. Norris, Surveyor",
+                "seed": "qc-btn-tnorris",
+                "domain": "tnorris.verity.net"
+              },
+              {
+                "label": "SDR Listeners",
+                "seed": "qc-btn-sdrl",
+                "domain": "sdrlisteners.org"
+              },
+              {
+                "label": "Blue Kestrel Journal",
+                "seed": "qc-btn-kestrel",
+                "domain": "kestrel-journal.net"
+              },
+              {
+                "label": "THIS SITE USES FRAMES",
+                "seed": "qc-btn-frames"
+              },
+              {
+                "label": "MADE IN NOTEPAD",
+                "seed": "qc-btn-notepad"
+              },
+              {
+                "label": "Best viewed at 1024x768",
+                "seed": "qc-btn-1024"
+              },
+              {
+                "label": "TAKE IT FROM THE DITCH",
+                "seed": "qc-btn-ditch"
+              },
+              {
+                "label": "SAVE THE KILN",
+                "seed": "qc-btn-kiln"
+              },
+              {
+                "label": "NO POP UPS ON THIS SITE",
+                "seed": "qc-btn-nopopup"
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Added 8 March 2012, and it is the only thing I have changed on this site since October 2009. I have not moved the date at the top, because I have not changed anything that is information.[/i]\n\n[b]ABOUT THE GUESTBOOK BELOW.[/b] The pharmacy messages started in February 2010 and have not stopped. I cannot delete them. The guestbook is a CGI script my nephew's roommate installed in 2004, the administration password went to an email address at an internet provider that stopped existing in 2006, and no part of that sentence has a fix in it. I have written to the host twice and they say they will switch the script off, and one day they will.\n\nThere are four real messages down there, written by real people, sitting in the middle of it. One of them is a correction I should have acted on and have not."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "B. Tosches",
+                "time": "09/22/2006",
+                "body": "Mr. Sabo -- your left frame does not load if somebody arrives from a search engine, because the inner pages are being served on their own and there is nothing in them that calls the frameset back. It is about ten minutes of work to fix and I would do it for nothing. Send me the HTML files however you like, on a disk is fine, I am at the library in Marchfield most Tuesdays.\n\nGood page. The bed table is the most useful thing about this county on the internet."
+              },
+              {
+                "author": "W. Pennock",
+                "time": "08/26/2007",
+                "body": "Your 18 August entry gives S5. Same night, same hour, my set at the east end of the pull-off read S3 and I wrote it down at the time.\n\nThat is a difference between two receivers and two antennas, not a difference in the signal, and if you are going to publish a strength you have to publish the set and the wire next to it or the number means nothing. Your equipment is listed further down the page, which is more than anyone else manages, so put the set in the log line itself and the numbers will be worth something to a stranger.\n\nThe frequency you have is right. The hour you have is right."
+              },
+              {
+                "author": "R. Ibarra",
+                "time": "04/26/2009",
+                "body": "Thank you for the section. I teach the sophomore field course and I have had students at your cut twice this spring on the strength of this page.\n\nOne note, offered the way you would want it offered. The unit you call the Cutler Creek Dolomite is mapped on the state survey's 1977 sheet under a different name, and the limestone above it is mapped as the lower member of something else again. Local names are perfectly good and yours are better than the official ones for talking on a roadside, but somebody reading this page and then reading the sheet will think they are looking at two different hills. It would cost you one sentence to say so.\n\nYour contact at 14 feet is the interesting thing here and you have it drawn correctly. There is time missing at that line. How much is an argument older than both of us."
+              },
+              {
+                "author": "PharmDirect",
+                "time": "02/11/2010",
+                "body": "V1AGRA CIALIS LEVITRA -- no prescription needed, discreet packaging, worldwide ship. [url=synth://rx-direct-fastship.top/]ORDER NOW SAVE 80%[/url] [color=red]LIMITED TIME[/color]"
+              },
+              {
+                "author": "tabs4less",
+                "time": "03/02/2010",
+                "body": "{Great|Nice|Awesome} site! I {really|truly} {enjoyed|liked} the {post|article} about the {rocks|stone}. [url=synth://cheap-meds-24-7.click/]cheap meds 24/7[/url]"
+              },
+              {
+                "author": "canadian_pharm",
+                "time": "04/17/2010",
+                "body": "%FIRSTNAME% we noticed your interest in health products. Generic tabs from licensed pharmacy, fast EMS delivery 7-14 days, all major cards. [url=synth://pillstore-global.win/]click here[/url] [url=synth://pillstore-global.win/]click here[/url] [url=synth://pillstore-global.win/]click here[/url]"
+              },
+              {
+                "author": "Sheila",
+                "time": "07/03/2010",
+                "body": "hi i am sheila 24 y.o. from ur area, i saw ur page and i think we have much in common!!! see my photos here [url=synth://meet-local-singles.vip/]my profile[/url]"
+              },
+              {
+                "author": "PharmDirect",
+                "time": "09/08/2010",
+                "body": "V1AGRA CIALIS LEVITRA -- no prescription needed, discreet packaging, worldwide ship. [url=synth://rx-direct-fastship.top/]ORDER NOW SAVE 80%[/url] [color=red]LIMITED TIME[/color]"
+              },
+              {
+                "author": "kfennimore",
+                "time": "11/23/2010",
+                "body": "Mr. Sabo -- Karen Fennimore, Marchfield Public Library. I am scanning Ledger microfilm and I came past your quarry while I was looking for something else.\n\nYour quarry page has the last shipment in August 1963. The Ledger for Wednesday 6 November 1963, page 11, reports the last loaded car leaving the siding on the 1st of that month, and the office closing at the end of the year. So the year is right and the month is November. There is a photograph with it, of four men and a locomotive, and the caption names three of the four.\n\nIf you would like a copy the library will make you one. It is fifteen cents a page and I will do it myself.\n\nI can see what has happened to your guestbook. I am sorry. It is happening to all of them."
+              },
+              {
+                "author": "onlinepharm7",
+                "time": "01/19/2011",
+                "body": "buy xanax valium ambien no rx overnight [url=synth://pills-overnight.biz/]pills-overnight[/url] [size=18]GUARANTEED[/size]"
+              },
+              {
+                "author": "RX SAVER",
+                "time": "05/30/2011",
+                "body": "Dear Webmaster, we would like to place a small text advertisement on quarrycut.net. Our budget is $40 per month paid quarterly. Please reply to this guestbook entry to proceed. [url=synth://adnetwork-payouts.finance/]partner program[/url]"
+              },
+              {
+                "author": "tabs4less",
+                "time": "09/14/2011",
+                "body": "{Great|Nice|Awesome} site! I {really|truly} {enjoyed|liked} the {post|article} about the {rocks|stone}. [url=synth://cheap-meds-24-7.click/]cheap meds 24/7[/url]"
+              },
+              {
+                "author": "D. Wyatt",
+                "time": "08/19/2012",
+                "body": "Drove out Saturday with my boy on the strength of this page. We found the honeycomb coral in the ditch in about four minutes and he has not put it down since. Did not hammer the face. Did not go past the gate.\n\nYour page has not changed since 2009 and I hope that means you are alright and just busy."
+              }
+            ]
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              {
+                "label": "Ring Home",
+                "domain": "webring.gridfall.net"
+              },
+              {
+                "label": "Previous: Kestrel Road Weather",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "Next: T. Norris, Surveyor",
+                "domain": "tnorris.verity.net"
+              },
+              {
+                "label": "Random: The Gridfall Boards",
+                "domain": "boards.gridfall.net"
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Ring navigation copied off Mrs. Vance's page in September 2008. Her list still has me down as pending. She checks the ring by hand on the first Saturday of the month with a notepad and I am not going to be the one who rushes her.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "cut",
+        "name": "The Cut",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE CUT, BED BY BED"
+          },
+          {
+            "kind": "marquee",
+            "text": "MEASURED WITH A 25 FOOT TAPE, A 4 FOOT LEVEL AND A STEPLADDER, 12 NOVEMBER 2006, AND CHECKED 19 APRIL 2008. THICKNESSES ARE TO THE NEAREST INCH AND NOT BETTER THAN THAT."
+          },
+          {
+            "kind": "text",
+            "body": "First, the thing everybody gets wrong, including the county's own road log.\n\n[b]The cut and the quarry are two different holes.[/b] The cut is where County Route 62 was put through the nose of the ridge, and it is in the right of way, and you can stand in it. The quarry is 600 feet north of it, behind the trees, and it is a private hole full of water. People say [i]the quarry cut[/i] to mean both, and I say it too, because there is no winning that one.\n\nThe road went over this ridge on a grade until [b]1937[/b], when it was relocated and cut down about eleven feet, and the cut was widened and re-shot in [b]1966[/b] when 62 went to two twelve-foot lanes with shoulders. That is why the north face is sharp and the south face is rounded off and grown over: they are the same rock, twenty-nine years apart.\n\nThe deepest part of the face is [b]38 feet[/b] above the ditch line, about a third of the way along from the west end. It runs out to nine feet at the east end and to nothing at the west."
+          },
+          {
+            "kind": "image",
+            "seed": "qc-section-beds-1-9",
+            "imgKind": "photo",
+            "caption": "The north face at the deep point. The pale band two thirds of the way up is bed 5, the shale, and the recess it weathers into is the shelf people put their bottles on."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "MEASURED SECTION, TOP TO BOTTOM"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "BED",
+              "THICKNESS",
+              "WHAT IT IS",
+              "NOTES"
+            ],
+            "rows": [
+              [
+                "--",
+                "0 to 6 ft 4 in",
+                "Glacial till, brown, unsorted",
+                "Clay with sand, gravel and cobbles jumbled together. Two granite cobbles in it the size of a bread loaf. There is no granite in this county; the ice brought them."
+              ],
+              [
+                "1",
+                "3 ft 2 in",
+                "Limestone, gray, rubbly",
+                "Top bed. Frost gets into it and it comes off the face in slabs every spring. Do not stand under it in March."
+              ],
+              [
+                "2",
+                "1 ft 1 in",
+                "Limestone, thin bedded",
+                "Breaks into plates. Crinoid washers all through it."
+              ],
+              [
+                "3",
+                "4 ft 6 in",
+                "Limestone, gray, massive",
+                "The best fossil bed here by a distance. Everything good in the ditch fell off this one."
+              ],
+              [
+                "4",
+                "2 ft 0 in",
+                "Limestone, argillaceous",
+                "Muddier. Weathers punky and yellow-brown."
+              ],
+              [
+                "5",
+                "1 ft 2 in",
+                "Shale, olive-gray",
+                "Weathers back into a recess about eight inches deep, the whole length of the cut. This is the shelf. It is also where the water comes out after a thaw."
+              ],
+              [
+                "6",
+                "1 ft 9 in",
+                "Limestone, hard, dense",
+                "[b]CORRECTED 10/2009.[/b] I had 2 ft 4 in here from 2005 to 2009. I measured it in one place, at the west end, where a joint block had dropped. Four years."
+              ],
+              [
+                "7",
+                "5 ft 5 in",
+                "Limestone, gray, fossiliferous",
+                "Horn corals stick out of the weathered surface like thumbs."
+              ],
+              [
+                "--",
+                "the contact",
+                "UNCONFORMITY at 14 ft above the ditch",
+                "Irregular surface with up to five inches of relief. Pockets of green clay in the low spots. See below, and see Mr. Ibarra in the guestbook."
+              ],
+              [
+                "8",
+                "9 ft 0 in",
+                "Dolomite, buff, sugary",
+                "Feels like a sugar cube under a hand lens. Almost no fossils, and the ones there are, are moulds with nothing left in them."
+              ],
+              [
+                "9",
+                "13 ft 3 in",
+                "Dolomite, buff, thick bedded",
+                "Down to the ditch line. The quarry worked this one, not the limestone. It is the harder rock and it made the better ballast."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Total measured: [b]38 ft 4 in[/b] plus the till, at the deep point on the north face.\n\nThe two names I use on this page are local names and I want to be plain about that. I call the upper rock the [b]Marchfield Limestone[/b] and the lower the [b]Cutler Creek Dolomite[/b], which is what the men in the shed called them in 1979 and what the old county bore logs call them. The state survey's 1977 bulletin maps them both under different names and puts the limestone in as a member of something larger. Both are correct. Mine are shorter and they are what you will hear if you ask anybody at the counter of the hardware in Ashkettle. Mr. Ibarra was right that I should say so, and this paragraph is me saying so, five months late.\n\nThe [url=synth://ashkettle-hardware.synth/]hardware[/url] also sells the hand lens. Four dollars. It is not a good one and it is the one I have used since 1991."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE CONTACT AT 14 FEET"
+          },
+          {
+            "kind": "text",
+            "body": "This is the one thing at this cut that people with degrees come to look at.\n\nAt 14 feet above the ditch the buff dolomite stops and the gray limestone starts, and the surface between them is not flat. It rolls, it has up to five inches of relief in twenty feet, and the hollows in it are packed with a stiff green clay that will not wash out. In three places along the face there are rounded pieces of the dolomite sitting in the bottom of the limestone, which means the dolomite was hard, and broken, and lying there, before the limestone was ever laid down on top of it.\n\n[b]There is time missing at that line.[/b] How much is not something I am able to tell you. The bulletin says a number, I have a photocopy of the page, and I do not entirely follow the argument that gets to the number, and I am not going to repeat a figure I cannot defend on a page that people drive out here on the strength of.\n\nWhat I can tell you is what a tape says, which is the whole of my contribution."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "JOINTS, AND THE LITTLE FAULT"
+          },
+          {
+            "kind": "text",
+            "body": "Two joint sets, both close to vertical. I measured them with a Brunton I borrowed from the shed and never gave back, which I would like on the record before somebody else puts it there.\n\n[list][*]Set A, about N 20 E. Tight, closely spaced, and this is the set the face spalls along. Every slab in the ditch has one Set A face on it.[*]Set B, about N 70 W. Wider spaced, and open at the top where water gets in. Two of them have three inches of daylight at the till line.[/list]\n\nAbout 140 feet from the east end there is a [b]fault with 11 inches of offset[/b], down to the east, and you can walk right past it for years without seeing it, because 11 inches on a bed that is 13 feet thick does not look like anything. What gives it away is bed 5, the shale, which steps down and takes its recess with it. I have had four letters about this fault and three of them assumed I meant eleven feet."
+          },
+          {
+            "kind": "image",
+            "seed": "qc-fault-11in-offset",
+            "imgKind": "photo",
+            "caption": "The step in bed 5 at the little fault. The tape is extended to 12 inches for scale and my thumb is in the shot, which is the kind of photographer I am."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT COMES OUT OF THE DITCH"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Collect from the talus in the ditch. Do not hammer the face.[/b] I will say why on the [url=/access]access page[/url] and the short version is that the face is forty feet of frost-shattered limestone over your head and the county mows that ditch.\n\nEverything in this list came off bed 3 or bed 7 and was picked up loose, by me, between 1983 and this autumn."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHAT",
+              "HOW OFTEN",
+              "NOTE"
+            ],
+            "rows": [
+              [
+                "Crinoid columnals, loose",
+                "Every visit, hundreds",
+                "The little washers. A child will fill a pocket in ten minutes and this is the correct use of this cut."
+              ],
+              [
+                "Crinoid stems, jointed, 1 to 3 in",
+                "Two or three a visit",
+                "Look on the flat of a freshly split plate off bed 2."
+              ],
+              [
+                "Brachiopods, winged, 1 to 2 in across",
+                "Several a visit",
+                "The spiriferids. Best ones come out whole from the punky weathered face of bed 4."
+              ],
+              [
+                "Horn corals, 1 to 4 in",
+                "One or two a visit",
+                "Bed 7 weathers them proud. The big ones are always broken and always at the bottom of the pile."
+              ],
+              [
+                "Honeycomb coral, colonial",
+                "A few a year, good ones rarer",
+                "The one everybody wants. Heads up to about 8 inches. This is what the boy in the guestbook found in four minutes and it took me until 1986."
+              ],
+              [
+                "Stromatoporoid heads",
+                "Rare",
+                "Cabbage-looking layered lumps in the top of bed 9. Easy to walk past as a plain rock and I did for years."
+              ],
+              [
+                "Trilobite, any part at all",
+                "ONE, in twenty-six years",
+                "A pygidium, 9 millimetres across, 14 July 1991, in the ditch at the west end after a thaw. It is in a pill bottle on the shelf over the sink. I am not going to pretend it is better than it is."
+              ],
+              [
+                "Pyrite, in the shale",
+                "Common, briefly",
+                "Little brass cubes in bed 5. They fall apart in a drawer within about two years and stain everything they touch. Enjoy it at the ditch."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I HAVE GOT WRONG ON THIS PAGE"
+          },
+          {
+            "kind": "text",
+            "body": "I am keeping this list because every hobby page I have ever read quietly fixes its mistakes and tells you nothing, and that is why nobody can use a hobby page for anything.\n\n[list][*][b]Bed 6 thickness.[/b] Published 2 ft 4 in from 2005 to October 2009. Actual 1 ft 9 in. I measured at the one place the bed was easy to reach, which was the one place a joint block had dropped out of it. Four years, and I only caught it because I took a student out there and had to say the number out loud.[*][b]The 1937 date.[/b] I had the relocation as 1935 until 2007. The county's own bridge plate on the culvert says 1937 and it has said 1937 the entire time.[*][b]The erratics.[/b] I called them granite on this page from the beginning. Two of the four are granite. One of them is a gneiss, which I was told kindly and firmly by a woman at the county fair in 2005 who was right.[*][b]The signal strengths before 2007.[/b] See the guestbook: published without the receiver next to them, which makes them worth very little. The log now has a column for the set.[/list]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 21744
+          }
+        ]
+      },
+      {
+        "id": "quarry",
+        "name": "The Quarry",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE QUARRY ITSELF"
+          },
+          {
+            "kind": "text",
+            "body": "The hole north of the road is the old [b]Ashkettle Stone Company[/b] quarry. It is private, it is posted, and everything below comes from the road, from the county's files, from the Ledger on microfilm at the library in Marchfield, and from four men who worked there and are now down to two."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHEN",
+              "WHAT"
+            ],
+            "rows": [
+              [
+                "1911",
+                "Opened. Two men and a horse derrick, cutting rough block for foundations and the county's own bridge abutments."
+              ],
+              [
+                "1919",
+                "Steam drill and a crusher. This is when it stops being a stone quarry and becomes a ballast and aggregate pit, which is what it was for the rest of its life."
+              ],
+              [
+                "1923",
+                "Lime kiln built in the woods at the north end. Ran about nine years."
+              ],
+              [
+                "1932",
+                "Kiln cold. Nobody has ever been able to tell me exactly when or why, and the Ledger for that year is a thin paper about other things."
+              ],
+              [
+                "1937",
+                "County Route 62 relocated over the ridge. The cut is made. The quarry sells the county the stone to build the road that goes past the quarry, which I have always liked."
+              ],
+              [
+                "1946",
+                "Sold to Verity Stone and Lime. New office, new scale house, same hole."
+              ],
+              [
+                "1951 to 1958",
+                "The busy years. Forty-one men on the payroll in 1954, which is the highest figure I have seen written down anywhere."
+              ],
+              [
+                "1963",
+                "Last loaded car off the siding in August. Office closed at the end of the year. The August is from a man who worked there and is going on memory, and I have never had it from paper."
+              ],
+              [
+                "1964 to 1971",
+                "Equipment sold off piece by piece. The crusher went to a pit two counties away and I have been told it ran there until 1988."
+              ],
+              [
+                "1972",
+                "Pumps off. The hole starts filling and has been full ever since."
+              ],
+              [
+                "1988",
+                "The scale house burns. Kids, a Friday night, nobody hurt. Two courses of block and the slab are still there."
+              ],
+              [
+                "1996",
+                "Parcel sold at estate sale to a family in New Carrow. Posted since. Signs replaced in 2007 and they are new signs on old steel."
+              ]
+            ]
+          },
+          {
+            "kind": "image",
+            "seed": "qc-scale-house-slab",
+            "imgKind": "photo",
+            "caption": "What is left of the scale house. The slab, two courses of block, and a length of pipe standing up out of the middle of it that I think was the stove."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE WATER"
+          },
+          {
+            "kind": "text",
+            "body": "The pit holds water and it has held water since the pumps went off in 1972.\n\nI do not know how deep it is. I want to be very plain about this, because it is the single most common thing I am asked and because the two numbers that circulate are both invented.\n\nYou will hear [b]eighty feet[/b] and you will hear [b]a hundred and forty[/b]. Eighty feet is roughly the depth of the working floor below the rim, which you can get off the county's own 1958 cross-section, and that is a floor depth and not a water depth, and the floor is not flat. A hundred and forty is a number a man said to me in a parking lot in 1999 and it has been repeating itself around this county ever since with nothing under it.\n\nNobody has sounded it. I have not sounded it. Sounding it would mean a boat on private water and I am sixty-one years old and disinclined to be arrested.\n\nThe water is cold in a way that surprises people in June, because the only thing warming it is the top two feet. Two deputies come out on hot weekends and run kids off, and there is a lot of grumbling about that, and the deputies are right."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE KILN"
+          },
+          {
+            "kind": "text",
+            "body": "The kiln is the best thing out there and almost nobody looks at it, because you cannot see it from the road and you have no business walking to it.\n\nIt is a [b]draw kiln[/b], stone and brick, built into the bank so the top could be charged from the level above. The east wall is down and the arch over the draw hole has dropped about a foot on the north side since I first saw it in 1983. Brick is a soft red local brick, and there is a date scratched in the mortar of the north jamb which I read as 1923 and which two other people read as 1928.\n\nSomebody nailed a plywood sign to a tree by it in 1998 that said SAVE THE KILN and gave a phone number. The plywood is still there. The number rang the answering machine of a man in Halsey who told me in 2001 that he had moved on to other things.\n\nIt is on private ground. I have been to it twice, both times with a man who worked at the quarry, which is not permission you can borrow.\n\nThere is nothing about any of this on [url=synth://wiki.gridfall.net/]the Gridfall Wiki[/url], which has a good long article about the water tower. I am not complaining. Somebody has to write the first one, and it is not going to be me, because I do not know how."
+          },
+          {
+            "kind": "image",
+            "seed": "qc-kiln-draw-arch",
+            "imgKind": "photo",
+            "caption": "The draw arch, 1998. The camera is a disposable one from the drugstore in Ashkettle and it shows."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE SIDING"
+          },
+          {
+            "kind": "text",
+            "body": "Cars came off the branch to the quarry on a siding that left the main line about a mile and a half north of here and came in on a grade behind the ridge. There is nothing left of it that a person who did not know would notice: a low straight bank through a field, three cut stones in a hedge line where a small culvert was, and a gate that is set wider than a farm gate needs to be.\n\nThe rail people know all of this far better than I do and argue about it at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]. There is also a preservation group at [url=synth://verityrail-preservation.org/]verityrail-preservation.org[/url] which has photographs of the branch I would not otherwise have seen.\n\nThe branch itself ran its last freight on 14 March 2008. That is the main line, Marchfield to Coyne Flats, not this siding, which was lifted decades before. People run the two together constantly and I have stopped correcting it at the hardware counter because life is short."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 14302
+          }
+        ]
+      },
+      {
+        "id": "access",
+        "name": "Getting There",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "GETTING THERE, AND WHAT YOU MAY AND MAY NOT DO"
+          },
+          {
+            "kind": "marquee",
+            "text": "*** PARK AT THE PULL-OFF *** COLLECT FROM THE DITCH *** DO NOT HAMMER THE FACE *** DO NOT GO PAST THE GATE *** THAT IS THE ENTIRE LIST ***"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "DIRECTIONS"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "FROM",
+              "HOW"
+            ],
+            "rows": [
+              [
+                "Ashkettle",
+                "East on County Route 62. The town line sign, the Bracken Lane four-way at half a mile, then the long grade. The cut is at the top, 4.3 miles from the town line, and the pull-off is on your left."
+              ],
+              [
+                "The other direction",
+                "West on 62. You come up the grade from the east with the face on your right at the top. Allow twenty-five minutes from Gridfall and more if there is a truck on the grade, because there is nowhere to pass and you are not going to."
+              ],
+              [
+                "Landmark",
+                "A concrete culvert headwall on the north side with 4219 painted on it in white. It has been there since May 2006 and the county has never once painted over it."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]The pull-off[/b] is on the north side at the top of the grade, gravel, room for three cars if everybody is sensible and two if they are not. It was put in as a truck turnout in 1966 and it has been re-graded twice in my memory.\n\nDo not park on the shoulder. Traffic comes over that crest at fifty-five and the crest is exactly where you would be standing."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT GROUND IS WHAT"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "GROUND",
+              "WHOSE",
+              "WHAT THAT MEANS"
+            ],
+            "rows": [
+              [
+                "The road, the shoulder and the ditch",
+                "County right of way",
+                "Public. You can walk it, you can pick things up out of the ditch, and the county is not going to care, and I have asked."
+              ],
+              [
+                "The face itself",
+                "County right of way",
+                "Public, and the county still does not want you climbing it or hitting it, for reasons in the next section."
+              ],
+              [
+                "The bank above the face",
+                "Private",
+                "Posted. The line runs along the top of the cut, roughly where the till is."
+              ],
+              [
+                "The old haul road",
+                "Private, barricaded",
+                "The county's barricade is at the mouth of it because it opens onto 62 on a blind crest. The barricade is county. The ground behind it is not."
+              ],
+              [
+                "The pit, the water, the kiln, the scale house slab",
+                "Private",
+                "Posted, signs replaced 2007, and the family in New Carrow have never answered a letter from me in thirteen years. That is their right."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "SAFETY, WHICH I WOULD SKIP TOO"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Bed 1 comes off the top of the face in slabs in March and April after a freeze-thaw. I have seen a piece the size of a car door in the ditch in April 1994 and I have no idea what hour of what day it came down. Stay out from under the face in the spring.",
+              "The ditch takes the winter salt slush off the road. Everything in it is wet, greasy and a little bit rotten from November to April, including the rock you are about to pick up.",
+              "Traffic comes over the crest at fifty-five. There is no shoulder to speak of on the south side at all. Put something orange on your child.",
+              "Do not hammer the face. You will bring down more than you meant to, you will do it onto a road, and it will be on a day somebody is passing.",
+              "Ticks from May. Long trousers, check yourself in the truck, this is not the place to be casual about it.",
+              "There is no telephone signal at the pull-off and there has not been in ten years of carrying one. At the Bracken Lane four-way there is. Tell somebody where you went.",
+              "The nearest anything is the service station in Ashkettle, which shuts at eight, and the hardware, which shuts at five thirty and all day Sunday."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "SEASONS"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHEN",
+              "HOW IT IS"
+            ],
+            "rows": [
+              [
+                "March to April",
+                "Worst for standing under the face, best for the ditch. The thaw brings a winter's worth of fresh material down and the ditch is picked over by nobody but me."
+              ],
+              [
+                "May to June",
+                "Good. Ticks. The shale seeps and the shelf drips all day after rain."
+              ],
+              [
+                "July to August",
+                "Hot, and the face is in full sun from about ten until four, which flattens everything out and makes the bedding invisible in a photograph."
+              ],
+              [
+                "September to October",
+                "The best time to look at it. Low sun in the late afternoon, the bedding stands up, and there is nothing biting."
+              ],
+              [
+                "November to February",
+                "The ditch is under salt slush and snow. The radio people are out here in the dark in numbers and the pull-off is not big enough for that plus a car with its hood up."
+              ]
+            ]
+          },
+          {
+            "kind": "image",
+            "seed": "qc-pulloff-gravel-winter",
+            "imgKind": "photo",
+            "caption": "The pull-off in February 2008. Two cars and both of them are running their engines, which is a thing I have opinions about on the [url=/radio]radio page[/url]."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "MANNERS"
+          },
+          {
+            "kind": "text",
+            "body": "Nearly everybody who comes out here is fine. The list is short because the problems are short.\n\n[list][*]Take what you will actually keep. A shoebox of crinoid washers becomes a shoebox in a garage.[*]Do not leave the bottles on the shelf in bed 5. That shelf is a natural weathering recess in a shale and it is not an ashtray.[*]If you are running an engine at the pull-off for your radio, pull forward so the next man can get in.[*]If you find something good, and you are willing, write to me. I keep a list. I do not publish anybody's name without asking and I have never once had a reason to want a location kept quiet, because this is a road cut and everybody can see it.[/list]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 19388
+          }
+        ]
+      },
+      {
+        "id": "radio",
+        "name": "The Radio",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE RADIO, SINCE EVERYBODY ASKS"
+          },
+          {
+            "kind": "text",
+            "body": "I built this site about a rock face. About four letters in five that I get are about the radio.\n\nSo here is the radio page. It is a log and a method and nothing else. [b]I do not know what it is, I am not going to guess in public, and I would ask you not to write and tell me[/b], because nine people have told me already, no two of them agreed, and every one of them was certain."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IT IS THAT PEOPLE COME OUT HERE FOR"
+          },
+          {
+            "kind": "text",
+            "body": "A voice reading numbers, on shortwave, receivable along this stretch of 62 and best of all at the pull-off at the top of the grade.\n\nWhat I can say from my own notebook, having listened for it since 2004:\n\n[list][*][b]4.2190 MHz, upper sideband.[/b] That is where my dial is and I have checked my dial against two broadcast stations every night I have gone out.[*][b]Seven minutes past the odd hours.[/b] Nine, eleven, one, three, five. Not the even ones. I have sat through even hours to be sure and I have nothing from an even hour in six years.[*][b]Groups of four digits.[/b] Not five. People write five constantly and they are writing down what they expect.[*]A [b]woman's voice, synthetic[/b], English, flat, no greeting, no sign-off, no callsign.[*]Carrier comes up shortly before the groups start. It is gone between about fourteen and sixteen minutes past. I cannot time that better than the clock in the truck and I am not going to pretend otherwise.[*]It is better after dark. It is not reliably better on clear nights, and I have two sessions a day apart in the log below that ought to settle that for anybody.[/list]\n\nThat is the whole of what I have. Everything past that line is other people talking."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "METHOD"
+          },
+          {
+            "kind": "text",
+            "body": "Written out so that a stranger can decide what my numbers are worth, which is the only reason to write a method.\n\n[list][*]Park at the pull-off. [b]Engine off.[/b] An alternator will put hash across the whole band and half the people out here are listening to their own car.[*]Antenna is a 30 foot wire, thrown over the fence post at the east end of the pull-off, one end at the set. It is not resonant, it is not anything, it is a wire.[*]On air at the hour, off at twenty past. I sit through the whole thing even when there is nothing, because the nothings are half the information and they are the half everybody throws away.[*]Before each session I check the dial against a broadcast station high and one low and write down what the dial says against what it ought to say.[*]Signal strength is off the set's own meter, which is a suggestion, not an instrument. The set is in the column next to it.[*]Weather is from the sheets at Kestrel Road, two miles from here, at [url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]. Len reads at seven and seven, properly, every day, and I do not, so I use his.[*]Everything goes in a spiral notebook in the truck in pencil, and gets typed onto this page later, sometimes much later.[/list]"
+          },
+          {
+            "kind": "text",
+            "body": "[i]A debt I have not paid.[/i] In 2004 I wrote to Len Mabry and asked for his daily sheets so I could line the weather up against these logs. He sent them, by post, copied at his own expense, and asked me to tell him whether it worked.\n\nIt did not work. There is no pattern in it that I can see and I am not equipped to find one if there is.\n\nAnd I never wrote back to tell him so, because a letter saying [i]nothing came of it[/i] is a hard letter to start, and then it was 2006, and then it was now. Len, if you ever read this page: it did not work, thank you for the sheets, and I am sorry it took me five years and a webpage."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "EQUIPMENT"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHAT",
+              "WHEN",
+              "NOTE"
+            ],
+            "rows": [
+              [
+                "Sony ICF-2010",
+                "bought used 1998, $90",
+                "The one I trust. Everything in the log marked 2010 is this set. Its meter reads high against the other one by about one unit and I have never bothered to work out which is telling the truth."
+              ],
+              [
+                "Radio Shack DX-392",
+                "new 1996",
+                "Lives in the truck. Runs down a set of batteries in about six hours and takes four of them."
+              ],
+              [
+                "30 foot wire",
+                "1998",
+                "Insulated, on a plastic spool, with an alligator clip. Cost nothing. Outperforms the whip by two units and some nights by more."
+              ],
+              [
+                "Whip, as supplied",
+                "--",
+                "What I use if it is raining and I am not getting out."
+              ],
+              [
+                "Headphones",
+                "2002",
+                "Closed, over the ear. The single biggest improvement I have ever made and it cost eleven dollars."
+              ],
+              [
+                "Notebook",
+                "green, 1991",
+                "The one piece of equipment here that has never failed, never needed a battery, and never once disagreed with itself."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "LOG, 2004 TO 2009"
+          },
+          {
+            "kind": "text",
+            "body": "Selected sessions. The full notebook has 214 of these and most of them say the same thing. The ones I have put here are the informative ones, which includes every session where I heard nothing.\n\nTimes are local. [b]S[/b] is off the set's own meter and is a suggestion."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "DATE",
+              "TIME",
+              "SET",
+              "S",
+              "WEATHER",
+              "RESULT"
+            ],
+            "rows": [
+              [
+                "07/10/2004",
+                "23:07",
+                "2010 + wire",
+                "S4",
+                "clear, calm, 64F",
+                "Groups readable throughout. Off at 23:15 by the truck clock."
+              ],
+              [
+                "08/21/2004",
+                "01:07",
+                "2010 + wire",
+                "S2",
+                "overcast, fog in the low ground",
+                "Present, not readable. Could hear it was the voice and could not copy a group."
+              ],
+              [
+                "10/15/2005",
+                "21:07",
+                "2010 + wire",
+                "--",
+                "rain, wind SW",
+                "[b]NOTHING.[/b] Sat until 21:25. First null I had logged and I nearly did not write it down, which tells you something about me and about everybody."
+              ],
+              [
+                "05/13/2006",
+                "23:07",
+                "2010 + wire",
+                "S4",
+                "clear, 41F",
+                "Readable. Somebody has painted 4219 on the headwall since I was last out."
+              ],
+              [
+                "09/09/2006",
+                "01:07",
+                "2010 + wire",
+                "S3",
+                "clear, heavy dew",
+                "Readable. Three cars at the pull-off, two running engines. Moved 200 feet east and it improved, which is the engines and not the hill."
+              ],
+              [
+                "08/18/2007",
+                "01:07",
+                "2010 + wire",
+                "S5",
+                "clear, dry, cool for August",
+                "Best I have ever had it. Readable in the truck with the window up and the wire coiled on the seat."
+              ],
+              [
+                "11/03/2007",
+                "19:07",
+                "392 + whip",
+                "S1",
+                "sleet",
+                "Carrier, no copy. Wet, cold, and a waste of an evening that I am glad I logged."
+              ],
+              [
+                "03/15/2008",
+                "21:07",
+                "2010 + wire",
+                "S4",
+                "clear, 33F",
+                "The branch ran its last freight yesterday. Readable, four-digit groups, 4.2190, seven past. No change of any kind."
+              ],
+              [
+                "03/17/2008",
+                "23:07",
+                "2010 + wire",
+                "S4",
+                "partly cloudy",
+                "As above. Still no change. I am putting both of these here because of what people are going to say."
+              ],
+              [
+                "01/06/2009",
+                "01:07",
+                "2010 + wire",
+                "S3",
+                "clear, -4F",
+                "Readable. Batteries in the 392 dead in the cold before I got the wire up, hence the 2010."
+              ],
+              [
+                "06/20/2009",
+                "23:07",
+                "2010 + wire",
+                "S3",
+                "thunder to the north, no rain here",
+                "Readable between crashes. Static crashes on top of it are the single most annoying thing about this hobby."
+              ],
+              [
+                "08/01/2009",
+                "21:07",
+                "2010 + wire",
+                "--",
+                "clear, warm, calm",
+                "[b]NOTHING.[/b] Sat until 21:24. Perfect conditions by any account anyone has ever given me."
+              ],
+              [
+                "08/02/2009",
+                "23:07",
+                "2010 + wire",
+                "S4",
+                "clear, warm, calm",
+                "Readable, strong, no trouble. Same weather, one night later. Put this row and the row above it next to each other before you tell me about clear nights."
+              ],
+              [
+                "09/27/2009",
+                "01:07",
+                "2010 + wire",
+                "S3",
+                "overcast, mild",
+                "Readable."
+              ],
+              [
+                "10/04/2009",
+                "23:07",
+                "2010 + wire",
+                "S4",
+                "clear, 39F",
+                "Readable. Off at 23:14."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHERE IT IS BETTER AND WHERE IT IS NOT"
+          },
+          {
+            "kind": "text",
+            "body": "Same set, same wire, same night where I could manage it. This is the part of my notebook I would actually defend."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHERE",
+              "RELATIVE TO THE CUT",
+              "WHAT I GET"
+            ],
+            "rows": [
+              [
+                "The pull-off, top of the grade",
+                "at the cut",
+                "Best. Everything in the log above is from here unless it says otherwise."
+              ],
+              [
+                "In the ditch, inside the cut, rock both sides",
+                "at the cut, 15 ft lower",
+                "Down about two units from the pull-off, consistently, on four nights I tried it."
+              ],
+              [
+                "Bottom of the east grade",
+                "0.4 mi east",
+                "S1 to S2 on a night the pull-off gives S4."
+              ],
+              [
+                "Bracken Lane four-way",
+                "3.8 mi west",
+                "Nothing, four attempts, three of them on nights it was strong at the cut."
+              ],
+              [
+                "My own kitchen table, Ashkettle",
+                "2.1 mi west",
+                "Nothing. Same set, same wire out the window, eleven attempts across two winters. I do not know why and I am not going to invent a reason."
+              ],
+              [
+                "The quarry floor",
+                "600 ft north",
+                "I have never listened from there, because it is posted, and I am not going to."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THINGS PEOPLE HAVE TOLD ME IT IS"
+          },
+          {
+            "kind": "text",
+            "body": "Every one of these came to me in the guestbook, in the post, or at the pull-off with the engine running. I am listing them because the list is the most useful thing on this page, and the most useful thing about the list is that it is nine items long and they cannot all be right."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Military training of some kind. Told to me four separate times, each time as though it settled the matter, each time with nothing behind it.",
+              "A weather beacon. It does not sound like any weather anything and nobody who has said this to me has been able to name the service.",
+              "A pirate in Halsey. Named a man to me once. I know that family and I am not putting that on a webpage.",
+              "Telemetry off the branch line. This was the popular one for a while and then the branch closed on 14 March 2008 and it went on exactly as before, which is in my log twice, above, two nights apart.",
+              "That it started with the substation fire in June 2003. It did not. It was written up on the Gridfall boards in 1998, the posts are still there, and anybody can go and read them: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url].",
+              "A boy in Milbrook doing it for a joke. The boy was four years old in 1998. I am not able to be politer about that than I have just been.",
+              "Somebody overseas, and the county has nothing to do with it and simply happens to be a good place to hear it. This one I cannot argue with and nobody who says it can support it either.",
+              "A hoax by whoever built this page, i.e. me, which was put to me in 2007 in a letter with no return address. I would love to have that kind of equipment and that kind of patience.",
+              "A tower they put up for the fire service. There is a tower and it went up in 1999. This was on the Gridfall boards the year before the tower was built."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]What I say to all of it is the same thing.[/b] Write down what your set says, what the set was, what the wire was, what the weather was, and what hour it was, and publish the nights you heard nothing along with the nights you did. Do that for five years and then we can have a conversation.\n\nThe people who do that are at [url=synth://sdrlisteners.org/]sdrlisteners.org[/url], which is a national board with a Verity County thread in it. They are careful, they are patient, and they print the empty nights. I read there and I do not post, because I have nothing to add that is not on this page already.\n\nThere was also a fellow in Gridfall who put a proper receiver on it in 2007 and wrote up his method and then wrote a second piece about what his own results failed to explain, which is the rarest thing on the internet: [url=synth://codeandcoffee.blog/post/sdr-signal-62]codeandcoffee.blog[/url]. He stopped writing in 2008 and I do not know why.\n\nAnd there is a young woman who drove out here with two friends in 2005 and wrote down that they heard static, a country station, more static and somebody's stomach, and went home. [url=synth://marla.verity.net/]That is the most accurate account of an evening at this pull-off that anyone has ever published[/url], and I include my own."
+          },
+          {
+            "kind": "image",
+            "seed": "qc-notebook-page-aug2009",
+            "imgKind": "photo",
+            "caption": "The notebook, 1 and 2 August 2009, the two nights on the same page. The second line is the one people do not want."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 31966
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links & Mail",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "LINKS AND MAIL"
+          },
+          {
+            "kind": "marquee",
+            "text": "IF A LINK HERE IS DEAD IT IS STAYING DEAD. I CHECK THEM ONCE A YEAR AND THAT IS ALREADY MORE THAN I WANT TO."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "MAIL"
+          },
+          {
+            "kind": "text",
+            "body": "Written out so the address-harvesting programs cannot lift it off the page, which I am told they do and which the guestbook below rather proves:\n\n[b]rsabo[/b] [i]at[/i] [b]quarrycut[/b] [i]dot[/i] [b]net[/b]\n\nI read it about once a week. I answer everything that is not selling something, though it may take me a month.\n\nPost is better and always has been. [b]R. Sabo, Box 61, Ashkettle.[/b]"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I CAN HELP WITH"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Anything at this cut. Identifications from a photograph, what bed a thing came out of, whether the piece in your hand is a coral or a bit of concrete.",
+              "County aggregate and where it came from, 1979 to 2003, which is what I did for a living. If a road in this county was built in those years I can probably tell you what pit the stone came out of.",
+              "The quarry's dates and its people, as far as the two men left will let me pass things on.",
+              "The radio, to the exact extent of the [url=/radio]radio page[/url] and not one inch past it."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I CANNOT HELP WITH"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Permission to go on the quarry ground. I do not have it either. The family are in New Carrow and they do not answer letters.",
+              "Whether the water is safe, deep, cold or any other adjective. See the [url=/quarry]quarry page[/url]. Nobody has sounded it.",
+              "What the signal is. I have a log and no opinion, and the log is on the page for anybody to use.",
+              "Buying or valuing fossils. I have never sold one and I would not know where to start.",
+              "The county's road plans. I have been retired since 2003 and the men who would know have all gone too."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "OTHER PAGES IN THIS COUNTY"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "SITE",
+              "WHAT IT IS"
+            ],
+            "rows": [
+              [
+                "[url=synth://ashkettle-wx.net/]Kestrel Road Weather Station[/url]",
+                "Len Mabry's station, two miles from the cut. Every weather column in my radio log came off his sheets. He publishes what is wrong with his own site, which almost nobody does."
+              ],
+              [
+                "[url=synth://tnorris.verity.net/]Thomas Norris, Surveyor[/url]",
+                "Retired county surveyor. His 1994 flood account is the best thing written about this county by anybody, and the part about the shape of the ground is how I learned to write the top of my cut page."
+              ],
+              [
+                "[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]",
+                "The county message board. The 1998 posts about the signal are in there, which is why I can be short with people about the 2003 business."
+              ],
+              [
+                "[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]",
+                "Volunteer encyclopedia of the county. Nothing in it about the quarry and a good long piece about the water tower. One of them asked me for a source before using a date of mine, which impressed me."
+              ],
+              [
+                "[url=synth://verityledger.com/]The Verity Ledger[/url]",
+                "The paper. The online archive goes back to 1998 and the rest is microfilm at Marchfield."
+              ],
+              [
+                "[url=synth://sdrlisteners.org/]SDR Listeners[/url]",
+                "National shortwave board with a long Verity County thread. They log the nights with nothing on them."
+              ],
+              [
+                "[url=synth://codeandcoffee.blog/post/sdr-signal-62]Code and Coffee: I put a receiver on the Signal on 62[/url]",
+                "A programmer in Gridfall, 2007, with a method and a follow-up admitting what the method could not settle."
+              ],
+              [
+                "[url=synth://forums.verityrail.org/]Verity Rail Forums[/url]",
+                "For the branch and the siding. Last freight 14 March 2008. The farewell thread is four hundred replies and I have read all of them."
+              ],
+              [
+                "[url=synth://verityrail-preservation.org/]Verity Rail Preservation[/url]",
+                "Photographs of the corridor, including two of the quarry siding I had never seen before 2006."
+              ],
+              [
+                "[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]",
+                "Marion Teale's site about the diner. Her page on the 1977 kitchen fire has a photograph of the counter with the stools out, which is the only picture I have seen of that room empty."
+              ],
+              [
+                "[url=synth://stargazers.verity.net/]V.C.A.A. Stargazers[/url]",
+                "The astronomy club. The other group in this county that sits outside in the dark writing numbers down."
+              ],
+              [
+                "[url=synth://marchfield-coop.com/]Marchfield Co-op[/url]",
+                "Where the fence posts came from, and the orange flagging, and the batteries."
+              ],
+              [
+                "[url=synth://clipvault.tv/]ClipVault[/url]",
+                "Video. Somebody has put a tape of the crusher running in 1958 on there, which I still find remarkable."
+              ],
+              [
+                "[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]",
+                "Mrs. Vance's ring. Eleven sites and two pending. I am one of the two and have been since September 2008."
+              ],
+              [
+                "[url=synth://ashkettle-hardware.synth/]Ashkettle Hardware[/url]",
+                "The hand lens, the tape, the flagging, and the only people within nine miles who know what a Brunton is."
+              ],
+              [
+                "[url=synth://midstate-mineral-club.synth/]Mid-State Mineral and Fossil Club[/url]",
+                "Meets in another county, first Thursday. They came out here in 2001 and 2005 and behaved better than any group I have seen at a road cut."
+              ],
+              [
+                "[url=synth://state-geological-survey.synth/]State Geological Survey[/url]",
+                "Their 1977 bulletin is the source for the formation names I do not use. They sent me the sheet in 1988 and it took eleven weeks."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ABOUT THIS SITE"
+          },
+          {
+            "kind": "text",
+            "body": "Written in Notepad. The frames were done in June 2004 by my nephew's roommate, who was home for the summer and went back to school in August and is, I am told, now a father of two.\n\nThe space is 30 megabytes that comes with the telephone line. It is six dollars a month on the phone bill and I have never itemised it. The name cost nine dollars a year and I paid ten years of it at once in 2005, because the form let me and because I did not want to see the bill again.\n\nNothing on this page has moved since October 2009 as I write this. If it still has not moved when you find it, the reason will be an ordinary one.\n\nEverything here may be copied by anybody for anything, including the tables, including the log. If you correct me, correct me in print where I can see it."
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              {
+                "label": "Ring Home",
+                "domain": "webring.gridfall.net"
+              },
+              {
+                "label": "Previous: Kestrel Road Weather",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "Next: T. Norris, Surveyor",
+                "domain": "tnorris.verity.net"
+              },
+              {
+                "label": "Random: The Gridfall Boards",
+                "domain": "boards.gridfall.net"
+              }
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 9877
+          }
+        ]
+      }
+    ]
+  }
+}
