@@ -1,6 +1,6 @@
 /* SYNTHNET :: social skins
    Every rule is scoped under its .skin-<name> class so nothing leaks.
-   Skins: bluebird, myspace-black.  Usable down to 360px. */
+   Skins: bluebird, myspace-black, feedslate.  Usable down to 360px. */
 
 /* =====================================================================
    bluebird  --  clean white, blue links, round avatars
@@ -443,4 +443,333 @@
 .skin-myspace-black .sn-divider {
   margin: 14px 0 6px; padding-top: 8px; border-top: 1px solid #444444;
   color: #999999; font-size: 11px;
+}
+
+/* =====================================================================
+   feedslate  --  a social platform in 2026
+
+   bluebird is a 2008 skin and it was serving both the 2008 site and the
+   2026 one, so an eighteen-year gap looked like no gap at all. The point
+   of this skin is what changed in between, and almost none of it is
+   decoration:
+
+     * the engagement numbers got bigger than the text and moved up
+     * "promoted" and "bot" labels became part of the furniture
+     * the reply became a thread with a rail down its left, not an indent
+     * the compose box stopped asking what you are doing and started
+       being a button
+     * dark mode became the default a lot of people are actually in
+
+   Dark is the base here rather than a media query, because the site is
+   inside a simulated browser chrome that does not follow the OS, and a
+   skin that changed with the host machine would break determinism -- two
+   people pinning the same clock would not see the same page.
+   ===================================================================== */
+
+.skin-feedslate,
+.skin-feedslate * { box-sizing: border-box; }
+
+.skin-feedslate {
+  font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  /* #e7e9ea on #15181c is 12.8:1. */
+  color: #e7e9ea;
+  background: #15181c;
+  padding: 0;
+}
+
+.skin-feedslate a { color: #6fb2f0; text-decoration: none; }
+.skin-feedslate a:hover { text-decoration: underline; }
+.skin-feedslate a:visited { color: #6fb2f0; }
+/* #8b949e on #15181c is 5.6:1. */
+.skin-feedslate .dim,
+.skin-feedslate .blank { color: #8b949e; }
+
+/* --- masthead and nav -------------------------------------------------- */
+
+.skin-feedslate .sn-top {
+  background: rgba(21, 24, 28, 0.86);
+  backdrop-filter: saturate(150%) blur(10px);
+  -webkit-backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid #262c33;
+  padding: 11px 15px 8px;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.skin-feedslate .sn-brand {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #e7e9ea;
+}
+.skin-feedslate .sn-brand a,
+.skin-feedslate .sn-brand a:visited { color: #e7e9ea; }
+.skin-feedslate .sn-nav {
+  margin-top: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 17px;
+  font-size: 14px;
+}
+.skin-feedslate .sn-nav .navitem { color: #8b949e; white-space: nowrap; }
+.skin-feedslate .sn-here,
+.skin-feedslate .here { color: #e7e9ea; font-weight: 600; }
+.skin-feedslate .crumbline { padding: 9px 15px 0; font-size: 13px; color: #8b949e; }
+.skin-feedslate .sepa { color: #3a424b; padding: 0 3px; }
+
+.skin-feedslate .sn-layout { display: flex; flex-direction: column; padding: 0; }
+.skin-feedslate .sn-main { order: 1; min-width: 0; }
+.skin-feedslate .sn-side { order: 2; width: auto; min-width: 0; padding: 0 15px 20px; }
+
+/* --- compose ----------------------------------------------------------- */
+
+.skin-feedslate .sn-compose,
+.skin-feedslate .compose-box {
+  padding: 13px 15px;
+  border-bottom: 1px solid #262c33;
+  background: none;
+}
+.skin-feedslate .compose-label { color: #8b949e; font-size: 15px; }
+.skin-feedslate .sn-compose textarea,
+.skin-feedslate .compose-box textarea,
+.skin-feedslate .sn-compose input[type="text"] {
+  width: 100%;
+  background: #1d2228;
+  border: 1px solid #2d343c;
+  border-radius: 10px;
+  color: #e7e9ea;
+  padding: 10px 12px;
+  font: inherit;
+  resize: vertical;
+}
+.skin-feedslate .btn,
+.skin-feedslate .more-btn {
+  background: #1d9bf0;
+  color: #ffffff;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 17px;
+  font: 600 14px/1 inherit;
+  cursor: pointer;
+}
+.skin-feedslate .more-btn { background: none; color: #6fb2f0; padding: 11px 0; }
+
+/* --- the feed ---------------------------------------------------------- */
+
+.skin-feedslate .sn-newbar {
+  padding: 11px 15px;
+  border-bottom: 1px solid #262c33;
+  color: #6fb2f0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.skin-feedslate .sn-divider { border: 0; border-top: 1px solid #262c33; margin: 0; }
+
+.skin-feedslate .post,
+.skin-feedslate .pcard {
+  display: block;
+  padding: 13px 15px;
+  border-bottom: 1px solid #262c33;
+  background: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+.skin-feedslate .post:hover,
+.skin-feedslate .pcard:hover { background: #181c21; }
+
+.skin-feedslate .p-head,
+.skin-feedslate .pcard-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px 6px;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+.skin-feedslate .p-name,
+.skin-feedslate .pname { font-weight: 700; color: #e7e9ea; }
+.skin-feedslate .p-handle,
+.skin-feedslate .phandle,
+.skin-feedslate .p-time,
+.skin-feedslate .p-fulltime,
+.skin-feedslate .pmeta { color: #8b949e; font-weight: 400; }
+.skin-feedslate .p-dot { color: #3a424b; }
+
+/* The avatar is a <span>, so it needs inline-block before width and height
+   mean anything at all. Without it the box is ignored, the letters render
+   as loose text, and every row it sits in looks subtly broken. */
+.skin-feedslate .av {
+  display: inline-block;
+  width: 38px; height: 38px; line-height: 38px;
+  flex: 0 0 38px;
+  border-radius: 50%;
+  border: 0;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+.skin-feedslate .av.big {
+  width: 62px; height: 62px; line-height: 62px; flex: 0 0 62px; font-size: 21px;
+}
+
+.skin-feedslate .p-row,
+.skin-feedslate .prow { display: flex; gap: 11px; align-items: flex-start; }
+.skin-feedslate .p-main { flex: 1 1 auto; min-width: 0; }
+.skin-feedslate .p-text {
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
+.skin-feedslate .p-text p { margin: 0 0 9px; }
+.skin-feedslate .p-text p:last-child { margin-bottom: 0; }
+
+/* The counts. In 2008 these were small grey text under the post; by 2026
+   they are the loudest thing in the row, which is the entire argument the
+   content of this site is making. */
+.skin-feedslate .p-actions,
+.skin-feedslate .pactions {
+  margin-top: 9px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  font-size: 13px;
+  color: #8b949e;
+}
+/* .act is ONE action, not the row of them -- the renderer emits several
+   siblings. Making it a flex container put each count in its own wrapping
+   box and spread four of them down the page. */
+.skin-feedslate .act { color: #8b949e; white-space: nowrap; }
+.skin-feedslate .pcount,
+.skin-feedslate .pcounts { color: #8b949e; font-size: 13px; }
+/* The count itself is the loud part. This is the whole visual argument of
+   a 2026 feed: the number outweighs the sentence. */
+.skin-feedslate .act b,
+.skin-feedslate .act strong,
+.skin-feedslate .pcount strong,
+.skin-feedslate .pcounts strong,
+.skin-feedslate .p-actions strong { color: #e7e9ea; font-weight: 700; }
+
+/* --- replies as a thread ----------------------------------------------- */
+
+/* A rail down the left, not an indent. This is the change that made a
+   reply feel attached to the post rather than filed under it. */
+.skin-feedslate .replies {
+  margin: 9px 0 0 14px;
+  padding-left: 15px;
+  border-left: 2px solid #262c33;
+}
+/* A .reply holds the avatar and the body as direct children with no row
+   wrapper, so the reply itself has to be the flex row. */
+.skin-feedslate .reply {
+  display: flex;
+  gap: 9px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #1f242a;
+  background: none;
+}
+.skin-feedslate .reply .av {
+  width: 30px; height: 30px; line-height: 30px; flex: 0 0 30px; font-size: 11px;
+}
+.skin-feedslate .reply .p-main { flex: 1 1 auto; min-width: 0; }
+.skin-feedslate .reply.hid { display: none; }
+.skin-feedslate .reply:last-child { border-bottom: 0; padding-bottom: 2px; }
+
+/* --- profile ----------------------------------------------------------- */
+
+.skin-feedslate .profile-head,
+.skin-feedslate .ph-row {
+  padding: 15px;
+  border-bottom: 1px solid #262c33;
+  background: none;
+  border-left: 0; border-right: 0; border-top: 0;
+}
+.skin-feedslate .ph-banner {
+  height: 108px;
+  background: linear-gradient(120deg, #22303c, #1a2530);
+  border-bottom: 1px solid #262c33;
+}
+.skin-feedslate .ph-id,
+.skin-feedslate .pid { min-width: 0; }
+.skin-feedslate .pk { color: #8b949e; font-size: 13px; }
+.skin-feedslate .pbio {
+  margin-top: 9px;
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
+.skin-feedslate .pv { color: #8b949e; font-size: 13px; }
+
+/* --- side: the followed list -------------------------------------------
+ * The 2008 skins draw this as a Top 8 grid of boxes. By 2026 it is a list
+ * of rows with a Follow button, so the grid is flattened the same way the
+ * forum table is.
+ */
+.skin-feedslate .friends,
+.skin-feedslate .fgrid { display: block; }
+.skin-feedslate .friends-head,
+.skin-feedslate .fcountall {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8b949e;
+  padding: 16px 0 7px;
+}
+.skin-feedslate .fcell {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid #1f242a;
+  background: none;
+  text-align: left;
+}
+.skin-feedslate .fname { font-weight: 600; font-size: 14px; min-width: 0; overflow-wrap: break-word; }
+
+/* --- errors and footer --------------------------------------------------*/
+
+.skin-feedslate .err {
+  margin: 15px;
+  border: 1px solid #2d343c;
+  border-radius: 12px;
+  background: #1d2228;
+  padding: 14px;
+}
+.skin-feedslate .sn-foot {
+  padding: 15px 15px 24px;
+  font-size: 13px;
+  color: #8b949e;
+  border-top: 1px solid #262c33;
+}
+
+@media (max-width: 400px) {
+  .skin-feedslate { font-size: 14px; }
+  .skin-feedslate .sn-top,
+  .skin-feedslate .post,
+  .skin-feedslate .pcard,
+  .skin-feedslate .sn-compose,
+  .skin-feedslate .compose-box,
+  .skin-feedslate .profile-head,
+  .skin-feedslate .ph-row,
+  .skin-feedslate .sn-side,
+  .skin-feedslate .sn-newbar,
+  .skin-feedslate .crumbline { padding-left: 12px; padding-right: 12px; }
+  .skin-feedslate .av { width: 34px; height: 34px; line-height: 34px; flex: 0 0 34px; }
+  .skin-feedslate .av.big { width: 54px; height: 54px; line-height: 54px; flex: 0 0 54px; font-size: 18px; }
+  /* Four engagement counts do not fit on one 360px line, and wrapping them
+     into two rows of two reads better than shrinking them into grey mush. */
+  .skin-feedslate .p-actions,
+  .skin-feedslate .pactions,
+  .skin-feedslate .act { gap: 4px 14px; }
 }

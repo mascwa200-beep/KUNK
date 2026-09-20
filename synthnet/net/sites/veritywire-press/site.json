@@ -1,0 +1,633 @@
+{
+  "schema": 1,
+  "domain": "veritywire.press",
+  "title": "Verity News Service",
+  "type": "wire",
+  "era": "2026",
+  "skin": "wireroom",
+  "description": "A small regional wire filing county copy to the outlets that are left, which is why the same paragraph turns up on three of them.",
+  "tags": [
+    "verity",
+    "wire",
+    "2026",
+    "news"
+  ],
+  "links": [
+    "now.verityledger.com",
+    "verity.county.gov",
+    "wiki.gridfall.net",
+    "gridline.social"
+  ],
+  "data": {
+    "agency": "Verity News Service",
+    "bureau": "Gridfall bureau, est. 1954",
+    "categories": [
+      {
+        "id": "infra",
+        "name": "Utilities and Roads"
+      },
+      {
+        "id": "county",
+        "name": "County Government"
+      },
+      {
+        "id": "courts",
+        "name": "Courts and Public Safety"
+      },
+      {
+        "id": "schools",
+        "name": "Schools"
+      },
+      {
+        "id": "biz",
+        "name": "Business and Media"
+      },
+      {
+        "id": "health",
+        "name": "Health"
+      },
+      {
+        "id": "notices",
+        "name": "Notices and Obituaries"
+      }
+    ],
+    "dispatches": [
+      {
+        "id": "d-101",
+        "catId": "infra",
+        "slug": "GRIDFALL-OUTAGE-BULLETIN",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "bulletin",
+        "byline": "VNS Overnight Desk",
+        "at": "2026-09-20T04:58:00",
+        "lead": "About 2,900 customers in Gridfall and southern Ashkettle lost power at 4:41 a.m., according to Verity Valley Power & Light's outage map.",
+        "body": "The map attributes the loss to the feed from Substation No. 3 at Depot and Quarry Road.\n\nNo injuries have been reported, according to the Verity County sheriff's dispatch log.\n\n___\n\nMORE",
+        "keywords": [
+          "outage",
+          "substation",
+          "gridfall",
+          "power"
+        ]
+      },
+      {
+        "id": "d-102",
+        "catId": "infra",
+        "slug": "GRIDFALL-OUTAGE-1ST-LD",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "urgent",
+        "byline": "Aaron Kittle",
+        "at": "2026-09-20T05:36:00",
+        "lead": "Power went out to about 2,900 customers in Gridfall and southern Ashkettle at 4:41 a.m. Sunday, according to Verity Valley Power & Light.",
+        "body": "The utility said in a posted notice that crews were dispatched at 4:52 a.m. and that it had no estimated time for restoration.\n\nThe outage covers the area bounded by Depot Street, Pell Road and the Route 62 overpass, according to the utility's outage map.\n\nThe Verity County sheriff's dispatch log records eleven calls between 4:44 and 5:20 a.m., nine of them reporting the outage and two reporting a dark traffic signal at Depot and Third.\n\nCounty General Hospital in Marchfield is not in the affected area, a hospital spokeswoman said.\n\nSubstation No. 3 is unmanned and has been operated remotely from a control centre in another state since it was rebuilt in 2015, according to the utility's filings with the state commission.\n\n___\n\n1st Ld: ADDS dispatch time, boundary, sheriff's log, hospital. Replaces BULLETIN.",
+        "keywords": [
+          "outage",
+          "substation",
+          "gridfall",
+          "power",
+          "utilities"
+        ]
+      },
+      {
+        "id": "d-103",
+        "catId": "infra",
+        "slug": "GRIDFALL-OUTAGE-2ND-LD-WRITETHRU",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "urgent",
+        "byline": "Aaron Kittle",
+        "at": "2026-09-20T06:11:00",
+        "lead": "Power was back to most of Gridfall by 5:58 a.m. Sunday, an hour and seventeen minutes after a fault on the feed from Substation No. 3 took out about 2,900 customers, according to Verity Valley Power & Light.",
+        "body": "About 240 customers on the Pell Road lateral were still out at 6:05 a.m., according to the utility's outage map.\n\nThe utility said the fault was on a 12.5-kilovolt lateral and not in the substation yard. It did not say what caused the fault.\n\nCrews were dispatched at 4:52 a.m., the utility said in a posted notice.\n\nCounty General Hospital in Marchfield ran on generator for nine minutes beginning at about 4:45 a.m., a hospital spokeswoman said. The hospital is fed from a different substation, she said.\n\nWalt Pennock of Ashkettle, who retired from the utility in 2016, said he recorded a voltage sag of 0.6 seconds at 4:41:07 a.m. and two reclosing operations after it. Pennock said he gave the times to the utility's outage line and was issued a reference number.\n\nSubstation No. 3 burned in June 2004, taking out power to 4,100 customers, some of them for five days, according to the agency's background file. The state utility commission attributed the fire to insulation degradation consistent with age.\n\nThe station was rebuilt in 2015 as an unmanned yard, according to the utility's filings with the commission.\n\nThe utility filed notice on 16 September of planned outages at the same substation on three nights in October, under docket 26-EL-0417. The filing says the October work is not related to Sunday's fault.\n\nA photograph of an orange sky captioned as Sunday's outage and circulating on [url=synth://gridline.social/]gridline.social[/url] was not taken in Verity County, according to the utility. The utility said the same image reached it after two earlier outages.\n\n___\n\n2nd Ld Writethru: RECASTS lead with restoration; ADDS Pennock, hospital, October filing, background. Replaces 1st Ld and BULLETIN, which are dead copy.",
+        "keywords": [
+          "outage",
+          "substation",
+          "gridfall",
+          "power",
+          "pennock",
+          "utilities"
+        ],
+        "moved": "2026-09-20 06:11"
+      },
+      {
+        "id": "d-104",
+        "catId": "infra",
+        "slug": "GRIDFALL-OUTAGE-CORRECTION",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Verity News Service",
+        "at": "2026-09-20T06:40:00",
+        "lead": "In GRIDFALL-OUTAGE-2ND-LD-WRITETHRU, moved at 6:11 a.m., the year of the Substation No. 3 fire was given as 2004.",
+        "body": "The fire was in June 2003, according to the state utility commission's summary of November 2003.\n\nThe corrected 7th graf reads: Substation No. 3 burned in June 2003, taking out power to 4,100 customers, some of them for five days. The state utility commission attributed the fire to insulation degradation consistent with age.\n\nThe docket number for the utility's planned October work is 26-EL-0447, according to the commission's docket system. It was given as 26-EL-0417 in the 9th graf.\n\n___\n\nEDITORS: the 2004 date reached this file from a background note rewritten in 2024 from material published elsewhere, and it has moved on at least four dispatches since. The desk is checking the rest of the background file.\n\nThe commission summary is two pages. The only public scan the agency has been able to find is the one held at [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url], which the agency cannot verify and which was corrected by a reader rather than by the commission.\n\nAt least one piece running today on [url=synth://now.verityledger.com/article/a-02]now.verityledger.com[/url] carries the 2004 date. It is not a VNS file and was not supplied by this agency.",
+        "keywords": [
+          "correction",
+          "substation",
+          "2003",
+          "gridfall"
+        ],
+        "corrects": "CORRECTS the year of the Substation No. 3 fire to 2003, sted 2004, in the 7th graf of GRIDFALL-OUTAGE-2ND-LD-WRITETHRU; CORRECTS the docket to 26-EL-0447, sted 26-EL-0417, in the 9th graf."
+      },
+      {
+        "id": "d-110",
+        "catId": "infra",
+        "slug": "SUBSTATION-OCTOBER-WORK-NOTICE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Aaron Kittle",
+        "at": "2026-09-16T11:05:00",
+        "lead": "Verity Valley Power & Light has filed notice of planned outages at Substation No. 3 on three nights in October, according to a filing posted by the state utility commission.",
+        "body": "The filing says the work will be done between 11 p.m. and 5 a.m. on 6, 7 and 9 October and will affect about 2,640 customers in Gridfall and southern Ashkettle.\n\nThe filing describes the work as replacement of two disconnect switches and testing of the second feed from the Pell tie line.\n\nThe filing does not say why the work skips the night of 8 October.\n\nThe utility did not respond to a question about whether the work follows the fault on the same feed in August, the agency's call log shows.\n\nSubstation No. 3 is unmanned and has been operated remotely since 2015, according to the utility's filings.\n\n___\n\nEDITORS: docket 26-EL-0447. The utility filed at 4:12 p.m. Monday. The docket system posted it at 9:40 a.m. Wednesday. The agency learned of it from the docket system and not from the utility.",
+        "keywords": [
+          "substation",
+          "planned outage",
+          "gridfall",
+          "utilities",
+          "filing"
+        ]
+      },
+      {
+        "id": "d-111",
+        "catId": "infra",
+        "slug": "VVPL-RATE-FILING",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Aaron Kittle",
+        "at": "2026-09-11T15:20:00",
+        "lead": "Verity Valley Power & Light asked the state utility commission on Friday to raise distribution rates 6.4 percent, according to the filing.",
+        "body": "The filing says the increase would add $8.11 a month to the bill of a residential customer using 900 kilowatt hours.\n\nThe utility says in the filing that the money is for pole replacement, vegetation management and grid modernisation. The filing does not define grid modernisation.\n\nThe commission has set a public comment period ending 30 November, according to the docket.\n\nThe last distribution increase was approved in 2021 at 3.9 percent, the commission's records show.\n\nThe filing runs to 411 pages. The utility's summary of it runs to one page, according to the docket.\n\n___\n\nEDITORS: docket 26-EL-0431. Hearing dates have not been set. Comment may be filed in writing or at the commission's office in the state capital; the commission's online comment form has been listed as unavailable since June.",
+        "keywords": [
+          "rates",
+          "utilities",
+          "filing",
+          "commission"
+        ]
+      },
+      {
+        "id": "d-112",
+        "catId": "infra",
+        "slug": "QUARRY-ROAD-CULVERT-CLOSURE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Dena Ruhl",
+        "at": "2026-09-18T09:12:00",
+        "lead": "Quarry Road will close to through traffic between Depot Street and the county line for eleven days from 28 September, according to the county highway department.",
+        "body": "The department says a culvert under the road will be replaced.\n\nThe posted detour is Pell Road to County Route 62 and back along Kestrel Road, according to the department's notice.\n\nSchool buses on the Gridfall east routes will run the detour and will be about fifteen minutes later, according to a notice from the Verity County school district.\n\nThe department says the road will reopen 9 October, weather permitting.\n\nThe same culvert was listed for replacement in the county's 2019 capital plan and again in the 2022 plan, according to county records.\n\n___\n\nEDITORS: the department's notice gives the closure as 28 September to 9 October inclusive. The county calendar gives it as 28 September to 8 October. The department did not respond to a question about which is right.",
+        "keywords": [
+          "road closure",
+          "quarry road",
+          "highway department",
+          "gridfall"
+        ]
+      },
+      {
+        "id": "d-113",
+        "catId": "infra",
+        "slug": "ROUTE-62-TANKER-BULLETIN",
+        "dateline": "ASHKETTLE, Verity Co.",
+        "priority": "bulletin",
+        "byline": "M. Sowerby",
+        "at": "2026-08-27T17:41:00",
+        "lead": "County Route 62 is closed in both directions east of Ashkettle after a tanker truck rolled at the quarry cut at about 5:20 p.m., according to the Verity County sheriff's office.",
+        "body": "The sheriff's office says the driver was taken to County General in Marchfield and that no other vehicle was involved.\n\nThe closure runs from Kestrel Road to the county line and there is no estimate for reopening, according to the sheriff's office.\n\n___\n\nMORE",
+        "keywords": [
+          "route 62",
+          "crash",
+          "ashkettle",
+          "road closure"
+        ]
+      },
+      {
+        "id": "d-114",
+        "catId": "infra",
+        "slug": "ROUTE-62-REOPEN-BRIEF",
+        "dateline": "ASHKETTLE, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-08-28T06:20:00",
+        "lead": "County Route 62 reopened to traffic east of Ashkettle early Friday, according to the Verity County sheriff's office.",
+        "body": "The road had been closed since Wednesday evening following an incident involving a commercial vehicle, according to the sheriff's office.\n\nLocal officials confirmed that the roadway is open in both directions at this time.\n\nThe quarry cut section of County Route 62 carries traffic between Ashkettle and the county line, according to the county highway department.\n\nResidents are encouraged to check conditions before travelling.\n\n___\n\nEDITORS: this brief moved from the overnight desk and has not been read by an editor.",
+        "keywords": [
+          "route 62",
+          "ashkettle",
+          "road closure",
+          "reopening"
+        ]
+      },
+      {
+        "id": "d-115",
+        "catId": "infra",
+        "slug": "PELL-ROAD-FLICKER-BRIEF",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-09-11T08:05:00",
+        "lead": "Residents of the Pell Road area reported a brief loss of power early Friday morning, according to posts on social platforms and one call to this agency.",
+        "body": "Verity Valley Power & Light's outage map did not show an outage in the area at 6:00 a.m., according to the map.\n\nThe utility did not respond to a request for comment.\n\nThe Verity County sheriff's dispatch log records two calls from the Pell Road area between 5:10 and 5:40 a.m., according to the log.\n\nResidents experiencing a loss of power are encouraged to contact their utility provider.\n\n___\n\nEDITORS: the agency has not confirmed that an outage occurred. The brief is being carried because three subscribers asked for it.",
+        "keywords": [
+          "pell road",
+          "outage",
+          "gridfall",
+          "utilities"
+        ]
+      },
+      {
+        "id": "d-118",
+        "catId": "infra",
+        "slug": "GRIDFALL-POLE-FIRE-1ST-LD",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Aaron Kittle",
+        "at": "2026-09-07T20:12:00",
+        "lead": "A fire on a utility pole at Depot and Quarry Road in Gridfall cut power to about 340 customers on Monday evening, according to Verity Valley Power & Light.",
+        "body": "The utility says power was back to all but 20 customers by 9:40 p.m.\n\nThe Gridfall volunteer fire department says it was called at 7:44 p.m. and cleared at 8:35 p.m.\n\nThe utility says the pole will be replaced this week and that the cause is under review.\n\nWalt Pennick of Ashkettle, who retired from Verity Valley Power & Light in 2016, said the flash he recorded at 7:41 p.m. was consistent with a failed cutout rather than with a pole fire.\n\nThe utility did not respond to a question about the cutout, the agency's call log shows.\n\n___\n\n1st Ld: ADDS fire department times, Pennick.",
+        "keywords": [
+          "pennick",
+          "pole fire",
+          "gridfall",
+          "utilities",
+          "outage"
+        ]
+      },
+      {
+        "id": "d-116",
+        "catId": "infra",
+        "slug": "GRIDFALL-POLE-FIRE-CORRECTIVE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Verity News Service",
+        "at": "2026-09-08T13:30:00",
+        "lead": "In GRIDFALL-POLE-FIRE-1ST-LD, moved at 8:12 p.m. on 7 September, the surname of a retired utility employee was spelled Pennick. The correct spelling is Pennock.",
+        "body": "The corrected 5th graf reads: Walt Pennock of Ashkettle, who retired from Verity Valley Power & Light in 2016, said the flash he recorded at 7:41 p.m. was consistent with a failed cutout rather than with a pole fire.\n\nThe keyword line for that dispatch has been refiled as pennock, pole fire, gridfall, utilities, outage.\n\n___\n\nEDITORS: the spelling was taken from a caption on an aggregator and not from the desk's own notes, which had it right. Pennock has asked twice, in writing, that his name be checked against the utility's retiree list before filing. Both letters are in the desk file.\n\nThe dispatch as it moved is still on the file and still says Pennick. The file is not rewritten after a correction.",
+        "keywords": [
+          "correction",
+          "pennock",
+          "pole fire",
+          "gridfall"
+        ],
+        "corrects": "CORRECTS the spelling of Pennock, sted Pennick, in the 5th graf and in the keyword line of GRIDFALL-POLE-FIRE-1ST-LD, moved 7 September."
+      },
+      {
+        "id": "d-117",
+        "catId": "county",
+        "slug": "BRANCH-TRAIL-TRESTLE-STUDY",
+        "dateline": "MARCHFIELD, Verity Co.",
+        "priority": "routine",
+        "byline": "Dena Ruhl",
+        "at": "2026-09-15T14:02:00",
+        "lead": "The Verity County parks department has hired a Marchfield engineering firm to study the Coyne Creek trestle on the Verity Branch Trail, according to a purchase order posted by the county.",
+        "body": "The purchase order is for $41,000 and gives a completion date of 26 February, according to the document.\n\nThe trestle has been fenced at both ends since the trail opened in 2014, the parks department says on its trail page.\n\nThe parks director, Renata Ould, said the study will say whether the structure can be decked and what that would cost.\n\nTwo earlier studies of the same structure were completed in 2016 and 2021, according to the county's capital plan documents. Neither was followed by construction, the documents show.\n\nThe 2021 study put the cost of decking at $860,000, according to the capital plan.\n\nThe trail is 11.2 miles between Marchfield and Coyne Flats and was built on the Verity Rail branch line, which carried its last freight in March 2008, according to the parks department.\n\n___\n\nEDITORS: the trestle is item 14 in the draft capital plan released on 8 September. Item 14 also appears in the 2019, 2022 and 2024 draft plans, under three different item numbers.",
+        "keywords": [
+          "branch trail",
+          "coyne creek",
+          "parks",
+          "trestle",
+          "capital plan"
+        ]
+      },
+      {
+        "id": "d-201",
+        "catId": "county",
+        "slug": "GRIDFALL-ZONING-HEARING-ANTENNA",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Dena Ruhl",
+        "at": "2026-09-17T10:30:00",
+        "lead": "The Gridfall zoning board of appeals will hear an application on 1 October to mount cellular antennas on the Depot Street water tower, according to the hearing notice.",
+        "body": "The application was filed by a site development company acting for a carrier, according to the notice.\n\nThe notice says the antennas would be mounted below the tank rail and that no lattice tower is proposed.\n\nThe application needs a height variance of nine feet, the notice says.\n\nThe tower is owned by the town of Gridfall and was last painted in 2009, according to the public works department.\n\nThe hearing is at 7 p.m. at the Gridfall municipal building, and written comment is taken until 5 p.m. on 30 September, according to the notice.\n\n___\n\nEDITORS: an application the clerk's office describes as identical was withdrawn in 2023 before its hearing. The clerk's office said Thursday it could not say why it was withdrawn, because the file was closed and the closed files are in the annex.",
+        "keywords": [
+          "zoning",
+          "water tower",
+          "gridfall",
+          "hearing",
+          "antennas"
+        ]
+      },
+      {
+        "id": "d-202",
+        "catId": "county",
+        "slug": "COUNTY-CAPITAL-PLAN-ITEM-14",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Dena Ruhl",
+        "at": "2026-09-08T16:45:00",
+        "lead": "The draft Verity County capital plan released Tuesday lists fourteen items and $6.4 million in spending over five years, according to the document.",
+        "body": "Item 14 is a feasibility study for the Coyne Creek trestle on the Verity Branch Trail, the document says.\n\nThe largest item is $2.1 million for resurfacing on Pell Road and Kestrel Road, according to the plan.\n\nThe plan does not include the Quarry Road culvert, which appeared in the 2019 and 2022 plans, the document shows.\n\nThe board of supervisors is scheduled to vote on the plan on 20 October, according to the county calendar.\n\nThe draft is not posted and is available from the county clerk on request, the clerk's office said Tuesday.\n\n___\n\nEDITORS: the agency requested the draft on 3 September under [url=synth://verity.county.gov/s/records-request]the county's records request service[/url] and received it on 8 September, in paper, at the counter.",
+        "keywords": [
+          "capital plan",
+          "supervisors",
+          "budget",
+          "branch trail"
+        ]
+      },
+      {
+        "id": "d-203",
+        "catId": "county",
+        "slug": "ASHKETTLE-WATER-RATE-STUDY",
+        "dateline": "ASHKETTLE, Verity Co.",
+        "priority": "routine",
+        "byline": "Gil Brantner",
+        "at": "2026-09-17T21:40:00",
+        "lead": "The Ashkettle water board voted 3-1 on Thursday to spend $9,800 on a rate study, according to the vote taken at the board's meeting.",
+        "body": "The board's chairman, Emmett Roe, said at the meeting that the district's rates have not changed since 2017.\n\nThe board member who voted against, Carol Nyquist, said the district should repair the north loop before it studies rates, according to the meeting.\n\nRoe said the study will take about four months.\n\nThree members of the public attended the meeting, one of whom spoke, according to the sign-in sheet.\n\nThe board meets at the Ashkettle annex on the third Thursday of the month, according to the posted schedule.\n\n___\n\nEDITORS: the board does not record its meetings and does not publish minutes until they are approved at the following meeting. This dispatch is from the agency's stringer, who was in the room.",
+        "keywords": [
+          "ashkettle",
+          "water board",
+          "rates",
+          "meeting"
+        ]
+      },
+      {
+        "id": "d-204",
+        "catId": "county",
+        "slug": "VERITY-CLERK-HOURS-ADVISORY",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Verity News Service",
+        "at": "2026-09-19T15:10:00",
+        "lead": "The Verity County clerk's office is open Monday through Thursday, 9 a.m. to 3 p.m., and not Monday through Friday as the county's contact directory states, according to the clerk's office.",
+        "body": "The clerk's office said the Monday-through-Thursday hours have been in effect since 2023.\n\nThe portal's [url=synth://verity.county.gov/s/records]vital records page[/url] gives the Monday-through-Thursday hours and the contact directory gives the Monday-through-Friday hours, according to both pages.\n\nThe county's administrative services office said both pages are under review. It did not say when the review began.\n\nThe office is closed from noon to 1 p.m. and neither page says so, according to the clerk's office.\n\n___\n\nADVISORY. Not for publication as a news item.\n\nEDITORS: the agency is filing this because four subscribers have published the contact directory hours in the past year, and one of them ran a photograph of a locked door on a Friday.",
+        "keywords": [
+          "advisory",
+          "county clerk",
+          "hours",
+          "portal"
+        ]
+      },
+      {
+        "id": "d-205",
+        "catId": "county",
+        "slug": "COYNE-FLATS-FESTIVAL-SUB",
+        "dateline": "COYNE FLATS, Verity Co.",
+        "priority": "routine",
+        "byline": "Gil Brantner",
+        "at": "2026-09-10T12:00:00",
+        "lead": "The Coyne Flats fall festival will be held 3 and 4 October, a week later than announced, according to the festival committee.",
+        "body": "The committee said in a notice on Tuesday that the fire department's pumper is being inspected on the original weekend.\n\nThe parade will start at 10 a.m. on 3 October at the former freight house lot, the committee said.\n\nThe craft tables in the Grange hall will be open both days, according to the committee.\n\nThe notice does not say whether the tractor pull has moved. The committee did not respond to a question about it.\n\n___\n\nSUBS for COYNE-FESTIVAL-ADV, moved 4 September, throughout, to change the dates. The earlier version is dead copy.\n\nEDITORS: subscribers who have the September dates in type should pull them. One subscriber has already published them twice.",
+        "keywords": [
+          "coyne flats",
+          "festival",
+          "parade",
+          "advisory"
+        ],
+        "moved": "2026-09-10 12:00"
+      },
+      {
+        "id": "d-301",
+        "catId": "courts",
+        "slug": "VERITY-COURT-LIST-SEPT-21",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "M. Sowerby",
+        "at": "2026-09-18T17:05:00",
+        "lead": "The following matters are listed before Verity County District Court in Gridfall for the week of 21 September, according to the court calendar.",
+        "body": "[list][*]Monday, 9 a.m.: arraignments.[*]Monday, 1 p.m.: State v. Hessler, operating while intoxicated, second offence; pretrial conference.[*]Tuesday, 9 a.m.: small claims, eleven matters listed.[*]Tuesday, 2 p.m.: Verity Valley Power & Light v. Doran, easement; motion to dismiss.[*]Wednesday, 9 a.m.: State v. Brill, criminal mischief; plea hearing.[*]Thursday, 9 a.m.: civil motions.[*]Friday: no sittings listed.[/list]\n\nThe calendar is posted on the courthouse door on the Friday before and is not published online, according to the clerk of court.\n\nThe clerk of court said the Tuesday small claims list is the longest since March.\n\nCharges are allegations and a defendant is presumed innocent, according to the court's notice to reporters.\n\n___\n\nEDITORS: names in this list are taken from the posted calendar. The agency does not check spellings against the case file before filing and has corrected three of them this year.",
+        "keywords": [
+          "court",
+          "calendar",
+          "gridfall",
+          "listings"
+        ]
+      },
+      {
+        "id": "d-302",
+        "catId": "courts",
+        "slug": "ROUTE-62-TRAFFIC-STOP-CHARGES",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "M. Sowerby",
+        "at": "2026-09-16T08:50:00",
+        "lead": "A Gridfall man has been charged with operating while intoxicated and driving with a suspended licence after a traffic stop on County Route 62 on Monday night, according to the Verity County sheriff's office.",
+        "body": "The sheriff's office says the stop was made at 11:20 p.m. near Kestrel Road for a defective tail lamp.\n\nThe man, 34, was booked at the county jail and released on bond on Tuesday morning, according to the jail log.\n\nA first appearance is listed for 21 September, according to the court calendar.\n\nThe charges are allegations and the man is presumed innocent, according to the court's notice to reporters.\n\n___\n\nEDITORS: the agency is not moving the name. The sheriff's office has twice this year supplied a name that did not match the charging document. The name is available to subscribers on request and on the record.",
+        "keywords": [
+          "court",
+          "sheriff",
+          "route 62",
+          "charges"
+        ]
+      },
+      {
+        "id": "d-303",
+        "catId": "courts",
+        "slug": "QUARRY-ROAD-BRUSH-FIRE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "urgent",
+        "byline": "M. Sowerby",
+        "at": "2026-09-06T15:02:00",
+        "lead": "A brush fire burned about four acres off Quarry Road east of Gridfall on Sunday afternoon before it was contained, according to the Gridfall volunteer fire department.",
+        "body": "The department says the fire was reported at 1:04 p.m. and called contained at 2:35 p.m.\n\nThree departments responded and no injuries were reported, according to the department.\n\nThe fire was on county land next to the fenced transformer yard at Depot and Quarry Road. The department said the yard was not involved.\n\nNo burn ban is in effect and burning outside municipal limits requires a permit, according to the fire marshal's office.\n\n___\n\nEDITORS: a photograph moving with this story on aggregator sites shows a structure fire. The fire department says no structure was involved. The agency has no photograph of this fire.",
+        "keywords": [
+          "brush fire",
+          "quarry road",
+          "gridfall",
+          "fire department"
+        ]
+      },
+      {
+        "id": "d-401",
+        "catId": "schools",
+        "slug": "VERITY-SCHOOLS-TRANSPORT-VOTE",
+        "dateline": "MARCHFIELD, Verity Co.",
+        "priority": "urgent",
+        "byline": "Joyce Ferriter",
+        "at": "2026-09-16T22:18:00",
+        "lead": "The Verity County school board voted 4-3 on Wednesday night to contract out its bus routes to an operator based in another state, according to the vote taken at the meeting.",
+        "body": "The contract runs five years and is worth $2.9 million, according to the district's business manager, Alan Roeder.\n\nRoeder said at the meeting that the district's eleven drivers will be offered positions with the operator at their current rate for one year.\n\nBoard member Lisbeth Corry, who voted against, said the district has no way to check the rate after that year.\n\nBoard president Theresa Ulm, who voted in favour, said transportation costs have risen 31 percent in four years.\n\nThe vote was taken at 10:02 p.m. after about two hours of public comment. Eleven people spoke, nine of them against, according to the sign-in sheet.\n\nThe district last changed its transportation arrangements in 1998, when it took the routes in house, according to district records.\n\n___\n\nEDITORS: the district does not stream its meetings. This dispatch is from notes taken in the room. The district posts an audio recording the following day; it was not available at the time of filing.",
+        "keywords": [
+          "school board",
+          "buses",
+          "contract",
+          "vote",
+          "marchfield"
+        ]
+      },
+      {
+        "id": "d-402",
+        "catId": "schools",
+        "slug": "HALSEY-PRIMARY-BOILER-CLOSURE",
+        "dateline": "HALSEY, Verity Co.",
+        "priority": "routine",
+        "byline": "Joyce Ferriter",
+        "at": "2026-09-09T06:35:00",
+        "lead": "Halsey Primary School is closed Wednesday because of a boiler failure, according to a message the school district sent to families at 5:48 a.m.",
+        "body": "The district says the school will reopen Thursday if a part arrives.\n\nBuses on the Halsey routes are not running and there is no remote instruction, according to the message.\n\nThe boiler was listed for replacement in the district's 2024 facilities plan and the replacement was deferred, according to the plan.\n\nThe district's facilities director did not respond to a call before filing, the agency's call log shows.\n\n___\n\nEDITORS: the alert system does not send to landlines. About 90 families in the Halsey attendance area have no mobile number on file, according to the district's 2025 annual report.",
+        "keywords": [
+          "halsey",
+          "schools",
+          "closure",
+          "boiler"
+        ]
+      },
+      {
+        "id": "d-403",
+        "catId": "schools",
+        "slug": "VERITY-SCHOOLS-ENROLLMENT-BRIEF",
+        "dateline": "MARCHFIELD, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-09-10T13:20:00",
+        "lead": "Enrollment in the Verity County school district stands at 2,914 students as of the September count, according to figures released by the district.",
+        "body": "The figure is a decrease from the previous year, according to the district.\n\nThe district enrolled 2,961 students in September 2025, the figures show.\n\nEnrollment has fallen in each of the past eleven years, according to the district's published counts.\n\nDeclining enrollment is a trend affecting many rural districts across the region, according to a report.\n\nFamilies with questions about enrollment are encouraged to contact the district office.\n\n___\n\nEDITORS: the 5th graf cites a report the desk cannot identify. It has been left in because two subscribers had pulled the file before it was noticed.",
+        "keywords": [
+          "schools",
+          "enrollment",
+          "district",
+          "marchfield"
+        ]
+      },
+      {
+        "id": "d-501",
+        "catId": "biz",
+        "slug": "PINELOCK-LEDGER-OFFICE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Dena Ruhl",
+        "at": "2026-09-18T11:26:00",
+        "lead": "Pinelock Media Group will give up the two rooms it rents on Third Street in Gridfall at the end of October, according to the building's owner.",
+        "body": "The owner, Kestrel Holdings of Marchfield, said the lease was not renewed and that the rooms are listed.\n\nThe rooms are the Verity Ledger's only address in Verity County, according to the paper's own published contact page.\n\nPinelock Media Group did not respond to a call and an email before filing, the agency's call log shows.\n\nThe Ledger has published under its own name since 1901 and has had no reporter in the county since 2019, according to its published staff list.\n\nCounty legal notices must run in a newspaper of general circulation, which the county code defines by circulation and frequency and not by the location of an office, according to the county attorney's office.\n\nThe county attorney's office said the change does not by itself affect the Ledger's eligibility to publish legal notices.\n\nThe county paid $18,400 for legal notices in the last fiscal year, of which $16,900 went to the Ledger, according to the county's published payments.\n\n___\n\nEDITORS: [url=synth://now.verityledger.com/]now.verityledger.com[/url] takes this file. The dispatch was offered to the Ledger's desk, which is in another state, at 11:31 a.m. No acknowledgement has been received.",
+        "keywords": [
+          "pinelock",
+          "ledger",
+          "third street",
+          "legal notices",
+          "gridfall"
+        ]
+      },
+      {
+        "id": "d-502",
+        "catId": "biz",
+        "slug": "CARROW-WIRELESS-HOURS-BRIEF",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-09-13T10:40:00",
+        "lead": "Carrow Wireless Repair on County Route 62 in Gridfall is now open seven days a week, according to the business.",
+        "body": "The owner, Nadia Carrow, said Sunday hours are noon to 4 p.m.\n\nThe shop occupies the former Blue Kestrel diner building, which closed as a diner in 2006, according to county property records.\n\nThe neon kestrel sign on the building is grandfathered under the county sign ordinance and is maintained by the business, Carrow said.\n\nThe building was a vape shop between 2013 and 2021, according to county records.\n\n___\n\nEDITORS: filed from a telephone call. No photograph. The agency has not sent a photographer to a business opening since 2017.",
+        "keywords": [
+          "carrow wireless",
+          "blue kestrel",
+          "route 62",
+          "business"
+        ]
+      },
+      {
+        "id": "d-503",
+        "catId": "biz",
+        "slug": "THIRD-STREET-VACANCY-BRIEF",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-08-21T11:15:00",
+        "lead": "Eleven of the thirty-one storefronts on Third Street in Gridfall were vacant on Tuesday, according to a count made on foot by this agency.",
+        "body": "The county assessor's office does not track vacancy and could not confirm the figure, the office said.\n\nThe Gridfall business association counted nine vacancies in its own survey in March, according to the association's secretary.\n\nThe secretary said the counts may differ because the association does not count buildings that are for sale.\n\nThe former offices of the Verity Ledger at 118 Third Street are among the vacant storefronts, according to county property records.\n\n___\n\nEDITORS: the count was made once, at 10 a.m., by one person. It is not a survey and should not be described as one.",
+        "keywords": [
+          "third street",
+          "vacancy",
+          "gridfall",
+          "business"
+        ]
+      },
+      {
+        "id": "d-601",
+        "catId": "health",
+        "slug": "COUNTY-GENERAL-CLINIC-HOURS",
+        "dateline": "MARCHFIELD, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-09-17T13:05:00",
+        "lead": "County General Hospital is pleased to announce expanded hours at its walk-in clinic in Marchfield beginning 1 October, according to a statement from the hospital.",
+        "body": "The clinic will be open Thursday evenings until 8 p.m. under the new schedule, the statement says.\n\nSaturday morning hours will be discontinued, the statement says.\n\n\"We are pleased to expand access for the residents of Verity County,\" the hospital's chief operating officer, Priya Delacourt, said in the statement.\n\nThe statement does not say how many patients used the Saturday clinic.\n\nThe hospital did not respond to a question about whether the change adds clinic hours in total, the agency's call log shows.\n\n___\n\nAbout County General: County General has served the families of Verity County since 1957. County General is a 94-bed acute care hospital and the county's second largest employer. County General. Care, Close To Home.\n\nMedia inquiries: Delia Marsh, Communications, extension 2140. Photography and interview availability on request. High resolution logo files are available in the newsroom kit.\n\n___\n\nEDITORS: the block above moved with the release and has been left in. The release was issued at 11:02 a.m. and reached this desk from the hospital's distribution list, not from a reporter.",
+        "keywords": [
+          "county general",
+          "clinic",
+          "marchfield",
+          "hospital",
+          "press release"
+        ]
+      },
+      {
+        "id": "d-602",
+        "catId": "health",
+        "slug": "COUNTY-GENERAL-DIVERSION-ADVISORY",
+        "dateline": "MARCHFIELD, Verity Co.",
+        "priority": "urgent",
+        "byline": "M. Sowerby",
+        "at": "2026-09-05T20:12:00",
+        "lead": "County General Hospital in Marchfield is sending ambulance traffic to hospitals outside Verity County until at least midnight after a water main break on Bellamy Street, according to the county emergency management office.",
+        "body": "The office says the break was reported at 6:40 p.m. and that the hospital's water pressure is reduced.\n\nThe emergency department remains open to walk-in patients, according to the emergency management office.\n\nThe nearest receiving hospitals are 38 and 52 miles away, according to the county's emergency plan.\n\nThe Marchfield water department said a crew is on site and gave no estimate for repair.\n\n___\n\nEDITORS: the hospital's communications office is not staffed after 5 p.m. This advisory is written from the emergency management office's pager text, which is the source subscribers have been given for after-hours hospital information since 2021.",
+        "keywords": [
+          "county general",
+          "diversion",
+          "water main",
+          "marchfield",
+          "advisory"
+        ]
+      },
+      {
+        "id": "d-603",
+        "catId": "health",
+        "slug": "ASHKETTLE-BOIL-WATER-ADVISORY",
+        "dateline": "ASHKETTLE, Verity Co.",
+        "priority": "routine",
+        "byline": "Gil Brantner",
+        "at": "2026-07-29T10:00:00",
+        "lead": "A boil water advisory issued for 41 households on the Ashkettle north loop on 24 July remains in effect, according to the Ashkettle water board.",
+        "body": "The board says the advisory followed two consecutive samples that showed total coliform.\n\nThe board says samples taken since 26 July have been clear and that the advisory will be lifted when the state signs off.\n\nThe state drinking water programme said Monday it had not received the board's paperwork, according to the programme's regional office.\n\nThe board's clerk said the paperwork was mailed on 27 July.\n\n___\n\nEDITORS: this advisory has been refiled weekly since 24 July at the request of two subscribers. The agency will stop refiling it when the board says it is lifted.",
+        "keywords": [
+          "ashkettle",
+          "water",
+          "advisory",
+          "boil water"
+        ]
+      },
+      {
+        "id": "d-701",
+        "catId": "notices",
+        "slug": "BRANDT-DEATH-NOTICE",
+        "dateline": "MILBROOK, Verity Co.",
+        "priority": "routine",
+        "byline": "Verity News Service",
+        "at": "2026-09-18T14:30:00",
+        "lead": "Eunice Tolliver Brandt, 91, of Milbrook, died on 15 September at County General in Marchfield, according to a notice submitted by Kepner Funeral Home.",
+        "body": "The notice says she was born in Coyne Flats in 1935 and worked in the Verity County clerk's office from 1961 to 1994.\n\nShe is survived by two sons, six grandchildren and a sister, according to the notice.\n\nVisitation is Monday from 4 to 7 p.m. at Kepner Funeral Home in Marchfield and the service is Tuesday at 10 a.m. at St. Anne's in Milbrook, according to the notice.\n\nThe family asks that memorial gifts go to the Marchfield Public Library, according to the notice.\n\n___\n\nNOTICE. Paid death notice, submitted by the funeral home and carried as submitted. Spellings are the family's. The agency does not verify death notices and does not edit them except to fit the file.\n\nEDITORS: submitted 9:15 a.m., carried 2:30 p.m. Two subscribers run notices automatically. Three do not run them at all.",
+        "keywords": [
+          "obituary",
+          "death notice",
+          "milbrook",
+          "brandt"
+        ]
+      },
+      {
+        "id": "d-702",
+        "catId": "notices",
+        "slug": "VERITY-SHERIFF-SALE-NOTICE",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "VNS Automated Desk",
+        "at": "2026-09-12T09:00:00",
+        "lead": "The Verity County sheriff has scheduled a sale of real property at 10 a.m. on 14 October at the courthouse in Gridfall, according to the notice of sale.",
+        "body": "The notice describes the property as a parcel on Kestrel Road in the town of Ashkettle with a single family dwelling.\n\nThe judgment amount is given as $88,412.19, according to the notice.\n\nThe notice says the terms are ten percent down at the sale.\n\nThe notice must be published three times and this is the second publication, according to the notice.\n\n___\n\nNOTICE. Legal notice, carried for subscribers who publish notices. Rates are on the notice schedule. The agency is not the publisher of record for any legal notice.",
+        "keywords": [
+          "legal notice",
+          "sheriff sale",
+          "ashkettle",
+          "courthouse"
+        ]
+      },
+      {
+        "id": "d-703",
+        "catId": "notices",
+        "slug": "VNS-SUBSCRIBER-ADVISORY",
+        "dateline": "GRIDFALL, Verity Co.",
+        "priority": "routine",
+        "byline": "Verity News Service",
+        "at": "2026-09-19T17:30:00",
+        "lead": "The file will move on a holiday schedule on 12 October, with one staffed desk from 6 a.m. to 2 p.m. and the overnight desk after that, according to the agency.",
+        "body": "Subscribers who take the file by email will receive it on the usual schedule, the agency says.\n\nThe agency says the transfer drop used by two subscribers was retired in 2019 and that both subscribers remain on the distribution list.\n\nNeither of those two subscribers has collected the file since 2019, according to the agency's transfer log.\n\nThe agency asks subscribers to report pickup monthly. Two have not reported since March, according to the agency's records.\n\n___\n\nADVISORY. Not for publication.\n\nEDITORS: the pickup report is the form from 2014 and asks for a fax number. The agency is aware of this.",
+        "keywords": [
+          "advisory",
+          "subscribers",
+          "schedule",
+          "agency"
+        ]
+      }
+    ]
+  }
+}

@@ -88,9 +88,15 @@ it every month since.
 acquired and turned into a recommendation surface. Its Verity County material
 survives as a back catalogue nobody curates.
 
-**2019:** Pinelock cuts the Ledger to **one** reporter. **Hal Brenner**, 15 years
-on the county beat, takes the layoff. `kestrel-journal.net`, Marion Teale's
-Blue Kestrel memory site, stops updating.
+**2019:** Pinelock cuts the Ledger from three reporters to **one**. Two go, in
+October, a week apart. **Hal Brenner**, 15 years on the county beat, is one.
+**Ruth Cannady**, who had the schools, the water board and whatever else was
+left, is the other. Both are still working in 2026 and neither is working for
+a newspaper: Brenner runs `Brenner's Verity Notebook` and Cannady runs
+**The Quarry** (`thequarry.news`). Between them they are the entire press
+corps of Verity County, they cover different halves of it, and they are aware
+of each other in the way two people doing the same impossible job are.
+`kestrel-journal.net`, Marion Teale's Blue Kestrel memory site, stops updating.
 
 **2020:** the county's conversation has moved, essentially completely, to three
 platforms that are **owned elsewhere**:
@@ -261,10 +267,15 @@ newsroom had no power either. Laid off October 2019 with eleven weeks of severan
 
 Runs **Brenner's Verity Notebook**, an email newsletter, $5/month, 312 paying
 subscribers, which is not enough and which he does anyway. Does one real piece
-a month — county budget, water board, a zoning thing — and it is usually the
-only original reporting done in Verity County that month. Will not join Gridline.
-Answers AskVerity questions about public records, curtly, correctly, and with
-the exact form number.
+a month — county budget, water board, a zoning thing — and with Ruth Cannady's
+**The Quarry** it is the only original reporting done in Verity County that
+month. Will not join Gridline. Answers AskVerity questions about public
+records, curtly, correctly, and with the exact form number.
+
+He and Cannady cover different halves of the same county and do not
+collaborate. He writes one piece; she publishes the documents. Each mentions
+the other roughly once a year, accurately and without warmth, and both would
+be worse off if the other stopped.
 
 His name was used as a byline by the pipeline that replaced him for four months
 in 2023. He mentions this rarely and never at length.

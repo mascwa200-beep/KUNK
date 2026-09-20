@@ -41,7 +41,7 @@ TYPES = ("forum", "social", "blog", "news", "wiki", "media", "page",
 
 SKINS = {
     "forum": ("phpbb-blue", "ezboard-grey", "softboard"),
-    "social": ("bluebird", "myspace-black"),
+    "social": ("bluebird", "myspace-black", "feedslate"),
     "blog": ("movabletype-cream", "kubrick-blue"),
     # pinkslime: the 2026 local layer. A locally-named site with no staff
     # page, no phone number, "Metro Desk" bylines and 400 identical siblings.

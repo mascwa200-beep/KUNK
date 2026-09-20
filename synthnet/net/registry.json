@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-20T03:46:14Z",
+  "generated": "2026-09-20T03:53:02Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -239,7 +239,7 @@
       "title": "Shoutbox",
       "type": "social",
       "era": "2026",
-      "skin": "bluebird",
+      "skin": "feedslate",
       "description": "Where Verity County is discussed in 2026, by accounts that are mostly not in Verity County and mostly not people.",
       "tags": [
         "2026",
@@ -248,7 +248,7 @@
         "advertising"
       ],
       "path": "net/sites/shoutbox-live/site.json",
-      "bytes": 50371
+      "bytes": 51338
     },
     {
       "domain": "stargazers.verity.net",
@@ -260,6 +260,23 @@
       "tags": [],
       "path": "net/sites/stargazers-verity-net/site.json",
       "bytes": 19718
+    },
+    {
+      "domain": "thequarry.news",
+      "title": "The Quarry",
+      "type": "newsletter",
+      "era": "2026",
+      "skin": "inbox-letter",
+      "description": "A one-person county newsletter out of Gridfall, written monthly by Ruth Cannady, the other reporter Pinelock cut from the Ledger in 2019, who kept going to the meetings.",
+      "tags": [
+        "verity",
+        "gridfall",
+        "newsletter",
+        "2026",
+        "local-news"
+      ],
+      "path": "net/sites/thequarry-news/site.json",
+      "bytes": 48680
     },
     {
       "domain": "tnorris.verity.net",
@@ -310,6 +327,22 @@
       "tags": [],
       "path": "net/sites/verityledger-com/site.json",
       "bytes": 37174
+    },
+    {
+      "domain": "veritywire.press",
+      "title": "Verity News Service",
+      "type": "wire",
+      "era": "2026",
+      "skin": "wireroom",
+      "description": "A small regional wire filing county copy to the outlets that are left, which is why the same paragraph turns up on three of them.",
+      "tags": [
+        "verity",
+        "wire",
+        "2026",
+        "news"
+      ],
+      "path": "net/sites/veritywire-press/site.json",
+      "bytes": 45847
     },
     {
       "domain": "webring.gridfall.net",
