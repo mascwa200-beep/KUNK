@@ -41,6 +41,19 @@ Anything that would need the renderer's pagination arithmetic mirrored here
 is deliberately NOT in the table. That is a bug to fix, not an invariant to
 assert.
 
+3. PIN THE CLOCK INSIDE THE SIMULATION. live.js's EPOCH is 2026-09-19 and
+   every stream on this network walks back from it, so an instant before it
+   leaves every clock-derived list empty and every page showing nothing but
+   its authored content. A chat row was written, proved to fail, and then
+   thrown away on finding that both its measurements had been taken at
+   2025-09-20 -- a year early. It reported "4 people are typing" over a
+   channel with one speaker on screen; at any valid instant that channel
+   renders twelve, and the smallest roster anywhere on either chat site is
+   still three times the largest typing count. There was no contradiction,
+   only a clock outside the world. The fix that had been written for it was
+   reverted too, because it read the authored messages alone and so made a
+   busy channel name one person.
+
 Usage:  python3 .github/scripts/synthnet_claims_check.py [--root synthnet]
 """
 
@@ -123,6 +136,18 @@ YEAR_ROWS = [
 ]
 
 ONE_YEAR = re.compile(r"^(19|20)\d{2}$")
+
+
+def last_filed(page):
+    """The time printed under wire.js's LAST FILED label, or None."""
+    return page.evaluate(
+        """() => { const ks = Array.from(document.querySelectorAll(
+             '#synth-viewport .wr-key'));
+           for (const k of ks) {
+             if (k.innerText.trim() === 'LAST FILED') {
+               const n = k.nextElementSibling;
+               if (n) return n.innerText.trim(); } }
+           return null; }""")
 
 
 def free_port():
@@ -347,6 +372,154 @@ def main():
                 problems.append(
                     "market: no category was checked on either page")
 
+            # ---- the wiki writes down one revision number --------------
+            #
+            # historyFor() is a state machine that walks oldest to newest
+            # carrying `wrong`, `cited`, `rvRun` and a running revision
+            # number, so asking it for a shallower walk does not return a
+            # prefix of a deeper one -- it returns a DIFFERENT newest entry.
+            # Recent Changes walked 6 deep and minted /diff/<id>/<rev> links
+            # out of what it got; the diff route walked 24 and looked <rev>
+            # up in that. 116 of the 120 diff links across the two wikis
+            # landed on "Revision rN is not in the history held for this
+            # page." The four that worked were coincidences.
+            #
+            # No arithmetic here: press the link the page offers and see
+            # whether the page it goes to exists.
+            diff_links = diff_dead = 0
+            for dom in by_type.get("wiki", []):
+                go("synth://%s/changes" % dom, 600)
+                links = page.evaluate(
+                    """() => Array.from(document.querySelectorAll(
+                        "#synth-viewport [data-synth-href^='/diff/']"))
+                        .map(a => a.dataset.synthHref)""")
+                if not links:
+                    problems.append(
+                        f"wiki: {dom} offers no diff links on /changes -- "
+                        "either the class moved or the page stopped linking "
+                        "them, and this row went blind rather than red")
+                    continue
+                diff_links += len(links)
+                for h in links:
+                    go("synth://%s%s" % (dom, h), 300)
+                    if "is not in the history held for this page" in \
+                            page.inner_text("#synth-viewport"):
+                        diff_dead += 1
+                        if diff_dead <= 5:
+                            problems.append(
+                                f"wiki: synth://{dom}{h} is linked from "
+                                "/changes and the diff page says that "
+                                "revision is not in the history it holds")
+            if diff_links:
+                if diff_dead > 5:
+                    problems.append(
+                        f"wiki: {diff_dead} dead diff links in all, of "
+                        f"{diff_links}")
+                notes.append(f"wiki: {diff_links} diff link(s) from /changes, "
+                             f"{diff_links - diff_dead} resolve")
+            else:
+                problems.append("wiki: no diff link was followed on any wiki")
+
+            # ---- one edit, described the same way on two pages ----------
+            #
+            # Same cause, the half of it that shows without clicking: the
+            # article foot's "This page was last edited by X (summary)" came
+            # off an 8-deep walk and the top row of /history off a 24-deep
+            # one, so six of the 32 articles named a different editor and a
+            # different summary for the same edit. Both values are read off
+            # rendered pages; nothing is recomputed.
+            art_pairs = art_bad = 0
+            for dom in by_type.get("wiki", []):
+                go("synth://%s/" % dom, 400)
+                arts = sorted(set(page.evaluate(
+                    """() => Array.from(document.querySelectorAll(
+                        "#synth-viewport [data-synth-href^='/wiki/']"))
+                        .map(a => a.dataset.synthHref)""")))
+                for a in arts:
+                    go("synth://%s%s" % (dom, a), 300)
+                    foot = page.evaluate(
+                        """() => { const w = document.querySelector(
+                             '#synth-viewport .wiki-lastedit');
+                           if (!w) return null;
+                           const who = w.querySelector('.wiki-editor');
+                           const s = w.querySelector('.wiki-editsummary');
+                           return {who: who ? who.innerText.trim() : '',
+                                   sum: s ? s.innerText.trim() : ''}; }""")
+                    if not foot:
+                        continue
+                    go("synth://%s/history/%s" % (dom, a.split("/wiki/")[1]),
+                       300)
+                    top = page.evaluate(
+                        """() => { const r = document.querySelector(
+                             '#synth-viewport .wiki-histrow');
+                           if (!r) return null;
+                           const who = r.querySelector('.wiki-histwho');
+                           const s = r.querySelector('.wiki-histsummary');
+                           return {who: who ? who.innerText.trim() : '',
+                                   sum: s ? s.innerText.trim() : ''}; }""")
+                    if not top:
+                        problems.append(
+                            f"wiki: synth://{dom}/history/"
+                            f"{a.split('/wiki/')[1]} renders no revision row")
+                        continue
+                    art_pairs += 1
+                    if foot["who"] != top["who"] or \
+                            foot["sum"].strip("()") != top["sum"].strip("()"):
+                        art_bad += 1
+                        if art_bad <= 4:
+                            problems.append(
+                                f"wiki: {dom}{a} says it was last edited by "
+                                f"{foot['who']!r} {foot['sum']} and its "
+                                f"history page says {top['who']!r} "
+                                f"{top['sum']}")
+            if art_pairs:
+                if art_bad > 4:
+                    problems.append(
+                        f"wiki: {art_bad} of {art_pairs} articles disagree "
+                        "with their own history page")
+                notes.append(f"wiki: {art_pairs} article(s) name the same "
+                             "last edit as their history page")
+            else:
+                problems.append(
+                    "wiki: no article was compared with its history page")
+
+            # ---- LAST FILED means one thing ----------------------------
+            #
+            # wire.js printed rows[0].at under that label, where rows was
+            # whichever list the caller handed the header -- the whole file
+            # on /, one category on /cat/<id>. Six of veritywire.press's
+            # seven categories showed a different time from the index under
+            # the same words, one of them three days off, next to an ON THE
+            # FILE count that is site-wide on every page regardless.
+            wire_pairs = wire_bad = 0
+            for dom in by_type.get("wire", []):
+                go("synth://%s/" % dom, 420)
+                home = last_filed(page)
+                if home is None:
+                    problems.append(
+                        f"wire: {dom} prints no LAST FILED on its index -- "
+                        "the label or the class moved and this row went "
+                        "blind rather than red")
+                    continue
+                cats = sorted(set(page.evaluate(
+                    """() => Array.from(document.querySelectorAll(
+                        "#synth-viewport [data-synth-href^='/cat/']"))
+                        .map(a => a.dataset.synthHref)""")))
+                for c in cats:
+                    go("synth://%s%s" % (dom, c), 300)
+                    v = last_filed(page)
+                    wire_pairs += 1
+                    if v != home:
+                        wire_bad += 1
+                        problems.append(
+                            f"wire: {dom} was LAST FILED {home!r} on its "
+                            f"index and {v!r} on {c}")
+            if wire_pairs:
+                notes.append(f"wire: {wire_pairs} category page(s) carry the "
+                             "index's LAST FILED")
+            else:
+                problems.append("wire: no category page was checked")
+
             browser.close()
     finally:
         srv.shutdown()
@@ -376,8 +549,11 @@ def main():
             print(f"  - {p}")
         return 1
     print(f"OK: {len(ROWS)} counted claims and {len(YEAR_ROWS)} printed years "
-          "agree with the pages that make them, and every market category "
-          "carries one count on both of the pages that state it.")
+          "agree with the pages that make them; every market category "
+          "carries one count on both of the pages that state it; every diff "
+          "link a wiki offers goes to a revision it holds and every article "
+          "names the same last edit as its own history page; a wire's LAST "
+          "FILED says the same thing on every page of it.")
     return 0
 
 

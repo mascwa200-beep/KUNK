@@ -762,6 +762,21 @@ window.SYNTH = window.SYNTH || {};
     var n = Math.floor(r() * 5);
     if (n < 1) { return null; }
 
+    /* n is seeded per SITE and the name pool is per CHANNEL, and it is NOT
+     * clamped to the pool. That looked like a bug and is not one: the river
+     * above carries the live stream as well as the authored messages, so
+     * the smallest roster any channel on either site renders is twelve
+     * names, against a count that never exceeds four.
+     *
+     * A clamp was written and reverted. It read speakersOf(), which sees
+     * the AUTHORED messages only, so on #announce -- one authored poster,
+     * a dozen visibly active -- it replaced "3 people are typing" with
+     * "mod_dcarver is typing" and was less true than what it replaced.
+     *
+     * The measurement that made it look wrong pinned the clock to 2025, a
+     * year before live.js's own EPOCH, which empties every stream and
+     * leaves exactly the authored speaker behind. An instant outside the
+     * simulation is not evidence about the simulation. */
     var who = speakersOf(ch);
     var names = [];
     var used = {};

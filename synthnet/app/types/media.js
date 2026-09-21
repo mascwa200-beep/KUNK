@@ -105,11 +105,25 @@
     return txt(dat(ctx).siteName, txt(ctx.site.title, ctx.site.domain));
   }
 
+  /* site.era is the skin vintage and is free text -- "2007" or "2002-2014".
+     Whichever end a caller wants, what it gets back is one four-digit year,
+     and the one that matters is the LAST: "2002-2014" is a site that ran for
+     twelve years and stopped, so 2014 is when it stopped.
+
+     parseInt() on the raw string took the FIRST year instead, which is the
+     same family of bug as printing the range where a date belongs -- it
+     would have put a "2005-2026" site into archive mode, reading it as
+     stopped in 2005 while its own content ran to this year. */
+  function eraYear(ctx) {
+    var s = String((ctx.site && ctx.site.era) || ''), re = /\d{4}/g, m, last = 0;
+    while ((m = re.exec(s)) !== null) { last = parseInt(m[0], 10); }
+    return last || 2026;
+  }
+
   /* 1998-2008 sites are saved copies of something that stopped. 2026 sites
      are running. The difference decides what a dead form is allowed to say. */
   function isArchive(ctx) {
-    var year = parseInt(txt(ctx.site.era, ''), 10);
-    return isFinite(year) && year < 2009;
+    return eraYear(ctx) < 2009;
   }
 
   function findItem(ctx, id) {
@@ -323,7 +337,7 @@
 
   function foot(ctx) {
     return ctx.el('div', { 'class': 'm-foot' },
-      txt(ctx.site.description, '') + ' — archived copy, ' + txt(ctx.site.era, '') +
+      txt(ctx.site.description, '') + ' — archived copy, ' + eraYear(ctx) +
       '. Video files were not preserved.');
   }
 

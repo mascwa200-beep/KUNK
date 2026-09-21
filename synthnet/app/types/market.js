@@ -202,6 +202,26 @@ window.SYNTH = window.SYNTH || {};
     return g;
   }
 
+  /* The base behind 'market:cat:<id>', which the index and the category page
+     both print. It lives here because those two pages used to compute it
+     separately and got two different answers -- the index counted only the
+     authored listings, the category page counted those plus the generated
+     ones, and classifieds.verity.net said Vehicles (121) on its index and
+     "142 listings indexed" on the Vehicles page.
+
+     Making them agree by editing both arithmetics kept the two pages right
+     only so long as nobody edited one of them. One function is the
+     structural version of the same statement: a shared counter key means
+     "this is one number", so there should be one place it is worked out. */
+  function catBase(data, catId) {
+    var all = (data.listings || []).concat(slopListings(data));
+    var n = 0, i;
+    for (i = 0; i < all.length; i++) {
+      if (String(all[i].catId) === String(catId)) { n++; }
+    }
+    return 30 + n * 7;
+  }
+
   function slopListings(data) {
     var out = [];
     if (!SYNTH.live || !SYNTH.live.pool) { return out; }
@@ -282,39 +302,15 @@ window.SYNTH = window.SYNTH || {};
     var all = data.listings || [];
     var i, j;
 
-    /* The auto-generated listings count towards a category here as well as on
-       the category page.
-
-       Both pages feed SYNTH.live.counter() the SAME KEY, 'market:cat:<id>',
-       and used to feed it a DIFFERENT BASE: this loop counted only
-       data.listings, while renderCategory() counts those plus the ones
-       slopListings() puts in that category. Same key, different seed, two
-       numbers -- classifieds.verity.net's index said Vehicles (121) and the
-       Vehicles page said "142 listings indexed", and so on for every
-       category on all four market sites.
-
-       The category page is the one that is right: "indexed" means everything
-       the site knows about in that category, not just the written ones. So
-       the index moves to match it.
-
-       slopListings() has no clock in it -- it walks the pools by index and
-       assigns catId from hash32(text) -- so once the bases agree the two
-       pages agree for good. The index already calls it below for the
-       "newest listings" stream, so this costs nothing new. */
-    var counted = all.concat(slopListings(data));
-
     var catBlock = el('section', { 'class': 'cl-cats' });
     catBlock.appendChild(el('h2', { 'class': 'cl-h2' }, 'categories'));
     var cg = el('ul', { 'class': 'cl-catlist' });
     for (i = 0; i < cats.length; i++) {
-      var n = 0;
-      for (j = 0; j < counted.length; j++) {
-        if (String(counted[j].catId) === String(cats[i].id)) { n++; }
-      }
       cg.appendChild(el('li', { 'class': 'cl-catitem' },
         ctx.link('/c/' + cats[i].id, cats[i].name, 'cl-a'),
         el('span', { 'class': 'cl-catcount' }, ' (' + SYNTH.live.commas(
-          SYNTH.live.counter('market:cat:' + cats[i].id, 30 + n * 7, 24)) + ')')
+          SYNTH.live.counter('market:cat:' + cats[i].id,
+                             catBase(data, cats[i].id), 24)) + ')')
       ));
     }
     catBlock.appendChild(cg);
@@ -374,7 +370,8 @@ window.SYNTH = window.SYNTH || {};
 
     ctx.mount.appendChild(el('h2', { 'class': 'cl-h2' }, cat.name));
     ctx.mount.appendChild(el('p', { 'class': 'cl-note' },
-      SYNTH.live.commas(SYNTH.live.counter('market:cat:' + cat.id, 30 + hits.length * 7, 24)) +
+      SYNTH.live.commas(SYNTH.live.counter('market:cat:' + cat.id,
+                                           catBase(data, cat.id), 24)) +
       ' listings indexed · ' + hits.length + ' shown · refreshed ' + agoBy(3 * 60 * 1000)));
 
     ctx.mount.appendChild(scamWarning(cat.id));

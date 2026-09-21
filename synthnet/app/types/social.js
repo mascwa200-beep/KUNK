@@ -148,7 +148,16 @@
 
   function isNow(ctx) { return String((ctx.site && ctx.site.era) || '') === '2026'; }
   function archived(ctx) { return !isNow(ctx); }
-  function eraOf(ctx) { return txt(ctx.site && ctx.site.era, 'then'); }
+
+  /* eraOf() lands in date slots -- "as it stood in ___" and the fallback for
+     a missing last-post date -- and site.era is the skin vintage, which is
+     free text and can be a range. Last year in the string, or 'then' if
+     there is no year in it at all, which is what the old fallback said. */
+  function eraOf(ctx) {
+    var s = String((ctx.site && ctx.site.era) || ''), re = /\d{4}/g, m, last = 0;
+    while ((m = re.exec(s)) !== null) { last = parseInt(m[0], 10); }
+    return last ? String(last) : 'then';
+  }
 
   function plain(s) {
     var t = String(s == null ? '' : s);

@@ -75,7 +75,7 @@
                gates the whole living layer -- and the footer said it anyway.
                A snapshot is a thing the frozen 2007 archive is; it is the
                opposite of what this one is. */
-            (site.era && !LIVING) ? ('Snapshot: ' + String(site.era) + '.') : '')));
+            (site.era && !LIVING) ? ('Snapshot: ' + eraYear() + '.') : '')));
     }
 
     function notFound(msg) {
@@ -172,6 +172,15 @@
      * gets exactly the behaviour it had before any of the below existed. */
     var LIVING = String(site.era || '').indexOf('2026') !== -1;
 
+    /* The footer's "Snapshot: ___." is a date slot, and site.era is the skin
+     * vintage -- free text, possibly a range. Last year in it, because a
+     * snapshot is taken when the thing stopped. */
+    function eraYear() {
+      var s = String(site.era || ''), re = /\d{4}/g, m, last = 0;
+      while ((m = re.exec(s)) !== null) { last = parseInt(m[0], 10); }
+      return last || 2026;
+    }
+
     /* ---------- the edit war ---------------------------------------------
      *
      * Before this, edit summaries were drawn independently per row, so a
@@ -259,6 +268,10 @@
 
     var RV_WINDOW_H = 24;      /* three reverts inside this trips 3RR */
     var PROTECT_DAYS = 7;
+
+    /* How far back every page walks an article's history. One number, used
+     * everywhere, because the walk is stateful -- see revisionsFor(). */
+    var HISTORY_DEPTH = 24;
 
     var MINOR = [
       { a: 'fmt', s: 'formatting' },
@@ -502,9 +515,37 @@
       return out;
     }
 
-    /* Kept as it was: the foot of an article wants editors, not actions. */
+    /* historyFor() is a state machine, not a sliceable sequence. It walks
+     * oldest-to-newest carrying `wrong`, `cited`, `dead`, `rvRun` and a
+     * running revision number, so asking for a shallower walk does not
+     * return a prefix of a deeper one -- it returns a DIFFERENT newest
+     * entry, with a different summary, a different action and a different
+     * rev.
+     *
+     * Four call sites used to ask for four depths. Recent Changes walked 6
+     * and minted /diff/<id>/<rev> links out of what it got; the diff route
+     * walked 24 and looked <rev> up in that. 116 of the 120 diff links on
+     * the two wikis landed on "Revision rN is not in the history held for
+     * this page." The other four coincided by luck. Below that, an
+     * article's foot walked 8 and its banner walked 14, so one page
+     * described one edit two ways and /history described it a third.
+     *
+     * So: one walk, at one depth, and every display list is a slice of it.
+     * Anything DERIVED -- the head revision, the protection state, the
+     * since-you-looked count -- reads the full list, because a `protect`
+     * entry at position 20 is inside the history page's list and outside a
+     * 14-slice, which is the same disagreement in miniature. */
     function revisionsFor(art, count) {
-      return historyFor(art, count);
+      var full = historyFor(art, HISTORY_DEPTH);
+      /* No count means the whole walk, and the whole walk is longer than
+       * HISTORY_DEPTH: the state machine PUSHES entries the stream did not
+       * carry -- the burst of an edit war, the admin's protection. Slicing
+       * to the depth it was asked for cut those oldest rows off the history
+       * page, and with them the edit that a revert near the bottom undoes,
+       * which is how a live-check assertion about reverts having something
+       * to revert went red. A display list asks for a count; a page that
+       * shows the history asks for the history. */
+      return (count && count < full.length) ? full.slice(0, count) : full;
     }
 
     /* A maintenance tag goes after the first SENTENCE, and finding one is
@@ -754,9 +795,14 @@
             : ' — ' + bots + ' automated'));
     }
 
-    function historyFoot(art) {
-      var revs = revisionsFor(art, 8);
-      if (!revs.length) { return null; }
+    /* `full` is the article page's walk, handed down so the page does not
+     * walk the same article twice. The inline list shows the newest 8; the
+     * "last edited by" line reads full[0], which is what /history's top row
+     * reads too. */
+    function historyFoot(art, full) {
+      var all = full || revisionsFor(art);
+      if (!all.length) { return null; }
+      var revs = all.slice(0, 8);
       var foot = el('div', { class: 'wiki-history' });
       foot.appendChild(el('div', { class: 'wiki-lastedit' },
         'This page was last edited by ',
@@ -869,7 +915,9 @@
 
       kids.push(el('h1', { class: 'wiki-title' }, String(art.title || art.id)));
 
-      var revs = revisionsFor(art, 14);
+      /* One walk for the whole page. The banner, the protection bar, the
+       * since-you-looked count and the foot all read this. */
+      var revs = revisionsFor(art);
       var head = revs.length ? revs[0] : null;
       var lock = protectedNow(revs);
 
@@ -969,7 +1017,7 @@
       kids.push(bar);
 
       /* Wikipedia puts "last edited on..." at the foot, and so does this. */
-      var hist = historyFoot(art);
+      var hist = historyFoot(art, revs);
       if (hist) { kids.push(hist); }
 
       ctx.mount.appendChild(shell(kids));
@@ -1006,7 +1054,7 @@
       if (!hart) { notFound('No article is filed under "' + String(path[1]) + '".'); return; }
       ctx.title('Revision history: ' + String(hart.title || hart.id));
 
-      var hist = historyFor(hart, 24);
+      var hist = revisionsFor(hart);
       var hlock = protectedNow(hist);
       var hkids = [
         el('h1', { class: 'wiki-title' },
@@ -1053,7 +1101,7 @@
       var dart = articleById(String(path[1]));
       if (!dart) { notFound('No article is filed under "' + String(path[1]) + '".'); return; }
       var want = parseInt(path[2], 10);
-      var dhist = historyFor(dart, 24), di = -1, dk;
+      var dhist = revisionsFor(dart), di = -1, dk;
       for (dk = 0; dk < dhist.length; dk++) {
         if (dhist[dk].rev === want) { di = dk; break; }
       }
@@ -1146,7 +1194,7 @@
        * moving thing is here, once they are merged. */
       var all = [], ci, cj;
       for (ci = 0; ci < articles.length; ci++) {
-        var ch = historyFor(articles[ci], 6);
+        var ch = revisionsFor(articles[ci], 6);
         for (cj = 0; cj < ch.length; cj++) {
           ch[cj].art = articles[ci];
           all.push(ch[cj]);

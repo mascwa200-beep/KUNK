@@ -104,6 +104,20 @@ jobs:
           fi
           echo "  ok   every FNV step uses Math.imul"
 
+      - name: One live counter key, one base
+        # SYNTH.live.counter(key, base, perDay) derives its number from the
+        # key and the base, so two call sites sharing a key are stating that
+        # they print the same number. market.js shared 'market:cat:<id>'
+        # between the index and the category page and fed it two different
+        # bases, so classifieds.verity.net said Vehicles (121) on its index
+        # and "142 listings indexed" on the Vehicles page -- every category,
+        # all four market sites, both pages rendering perfectly.
+        #
+        # Static, no browser, milliseconds. The cross-page claims row still
+        # reads the two rendered pages; this one stops the shape of that bug
+        # reaching a page at all.
+        run: python3 .github/scripts/synthnet_counter_keys_check.py --root synthnet
+
       - name: Build, and confirm the committed generated files are current
         run: |
           python3 synthnet/tools/build.py

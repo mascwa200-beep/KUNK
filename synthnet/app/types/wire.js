@@ -352,7 +352,16 @@ window.SYNTH = window.SYNTH || {};
     return d.agency || ctx.site.title || 'Verity News Service';
   }
 
-  function header(ctx, d, rows) {
+  /* `fileRows` is the WHOLE file, not the list the page happens to be
+   * showing. LAST FILED used to read rows[0] of whatever the caller passed,
+   * so it meant "newest on the file" on /, "newest in this category" on
+   * /cat/<id>, and "newest on the file" again on a dispatch page whose rail
+   * was highlighted to that dispatch's category. Six of veritywire.press's
+   * seven category pages printed a different time from the index under the
+   * same words -- one of them three days off -- and the figure immediately
+   * to its left, ON THE FILE, is keyed per domain and is site-wide on every
+   * page regardless. One label, one meaning. */
+  function header(ctx, d, rows, fileRows) {
     var head = el('header', { 'class': 'wr-head' });
 
     var top = el('div', { 'class': 'wr-head-top' });
@@ -367,13 +376,14 @@ window.SYNTH = window.SYNTH || {};
     stat.appendChild(counterNode('wire:' + ctx.site.domain + ':filed', 148200, 470));
     stat.appendChild(el('span', { 'class': 'wr-dim' }, text('dispatches this year')));
 
-    if (rows.length && rows[0].at !== null && rows[0].at !== undefined) {
+    var file = fileRows || rows;
+    if (file.length && file[0].at !== null && file[0].at !== undefined) {
       stat.appendChild(el('span', { 'class': 'wr-sep', 'aria-hidden': 'true' }, text('·')));
       stat.appendChild(el('span', { 'class': 'wr-key' }, text('LAST FILED')));
       stat.appendChild(el('span', {
         'class': 'wr-ago',
-        'data-lv-ago': String(rows[0].at)
-      }, text(agoText(rows[0].at))));
+        'data-lv-ago': String(file[0].at)
+      }, text(agoText(file[0].at))));
     }
     head.appendChild(stat);
     return head;
@@ -412,9 +422,9 @@ window.SYNTH = window.SYNTH || {};
     return foot;
   }
 
-  function shell(ctx, d, rows, main, activeCat) {
+  function shell(ctx, d, rows, main, activeCat, fileRows) {
     var root = el('div', { 'class': 'wr-page' });
-    root.appendChild(header(ctx, d, rows));
+    root.appendChild(header(ctx, d, rows, fileRows));
     var nav = catRail(ctx, d, (d.categories || []), activeCat);
     if (nav) { root.appendChild(nav); }
     root.appendChild(el('main', { 'class': 'wr-main' }, main));
@@ -573,7 +583,7 @@ window.SYNTH = window.SYNTH || {};
     }
 
     main.appendChild(el('p', { 'class': 'wr-back' }, ctx.link('/', '◄ back to the whole file', 'wr-backlink')));
-    shell(ctx, d, rows, main, cat.id);
+    shell(ctx, d, rows, main, cat.id, railRows(ctx, d, cats, null));
   }
 
   /* ---------- the keyword index ---------- */

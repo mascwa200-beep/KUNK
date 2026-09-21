@@ -25,6 +25,15 @@
     return m ? parseInt(m[0], 10) : 0;
   }
 
+  /* For site.era, which is the skin vintage rather than a date and can be a
+     range. yearOf() takes the first year, which is right for an article
+     date; an era wants the last one, because "2009-2016" is when it stopped. */
+  function lastYear(text) {
+    var s = String(text == null ? '' : text), re = /(19|20)\d{2}/g, m, last = 0;
+    while ((m = re.exec(s)) !== null) { last = parseInt(m[0], 10); }
+    return last;
+  }
+
   /* ------------------------------------------------------------------ */
   /* the clock                                                           */
   /* ------------------------------------------------------------------ */
@@ -636,9 +645,16 @@
         var k = dateKey(d);
         if (d && k > best) { best = k; latest = d; }
       }
-      if (String(site.era || '') === '2026') { latest = today(); }
-      if (!latest) { latest = String(site.era || ''); }
-      var yr = yearOf(latest) || yearOf(site.era) || 2004;
+      /* Both of these used to read site.era raw. The masthead dateline is a
+       * DATE slot -- it is uppercased into .news-dateline below, next to the
+       * volume and issue number -- and site.era is the skin vintage, which
+       * is free text and can be a range, so a paper with no parseable
+       * article date would have printed "2009-2016  •  VOL. 129" there.
+       * And `=== '2026'` meant a "2020-2026" masthead would not have got
+       * today's date, which is the same mistake read the other way. */
+      if (lastYear(site.era) >= 2026) { latest = today(); }
+      if (!latest) { latest = String(lastYear(site.era) || ''); }
+      var yr = yearOf(latest) || lastYear(site.era) || 2004;
       var seed = hash(site.domain || site.title || 'news');
       var vol = (yr - 1880) + (seed % 3);
       var no = 100 + (seed % 9000);
@@ -691,7 +707,7 @@
           el('p', null,
             String(data.masthead || site.title || 'The Daily'),
             ' — all contents set in ',
-            String(site.era || 'the recent past'),
+            String(lastYear(site.era) || 'the recent past'),
             '. Reproduction without permission is discouraged, loudly.'),
           /* The corrections page hangs off every page, which is the only way
            * anybody ever finds one. */
