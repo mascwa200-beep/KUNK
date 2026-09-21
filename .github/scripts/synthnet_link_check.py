@@ -140,6 +140,10 @@ def load_sites(root):
                 ids.setdefault("user", set()).add(prof["handle"])
         elif t == "blog":
             collect("post", data.get("posts"))
+        elif t == "page":
+            # A page site has no prefix -- the whole segment IS the id -- so
+            # these are filed under the empty string and read below.
+            collect("", data.get("pages"))
         elif t == "news":
             collect("article", data.get("articles"))
             collect("section", data.get("sections"))
@@ -207,7 +211,27 @@ def check_url(domain, path, sites, strict_ids):
         return None                      # the front page always exists
 
     allowed = PATH_PREFIXES.get(site["type"])
-    if allowed is None:                  # `page`: any single segment is a page id
+    if allowed is None:
+        # `page`: the single segment IS the page id, so there is no prefix to
+        # check and this used to return None -- every link to a page site was
+        # waved through unread. All 144 authored ones resolve today, so this
+        # closes a hole rather than reporting a bug, and it is the last thing
+        # PATH_PREFIXES could not say anything about.
+        if len(seg) > 1:
+            return (f"synth://{domain}{path}: a page site serves one segment "
+                    f"and this has {len(seg)}")
+        known = site["ids"].get("")
+        if not known:
+            return None                  # no pages authored; not our call
+        ident = seg[0].split("?")[0]
+        try:
+            from urllib.parse import unquote
+            ident = unquote(ident)
+        except Exception:
+            pass
+        if ident not in known:
+            return (f"synth://{domain}{path}: {domain} has no page with id "
+                    f"{ident!r}")
         return None
     prefix = seg[0]
     if allowed and prefix not in allowed:
