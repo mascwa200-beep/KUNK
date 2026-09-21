@@ -1229,13 +1229,36 @@ def main():
                             f"in the top 20, spread over {span} minutes")
 
                 # THE COLLISION, both halves, one run, two page loads.
-                page.evaluate(
-                    "(u) => SYNTH.engine.navigate(u, {push: false})",
-                    "synth://%s/wiki/%s" % (wiki, arts[0]))
-                page.wait_for_timeout(200)
-                tags = page.evaluate(
-                    "() => Array.from(document.querySelectorAll('.synth-tpl'))"
-                    ".map(n => n.textContent)")
+                #
+                # Several articles, not arts[0] alone. A maintenance tag is
+                # minted from the article's dispute state, which is seeded by
+                # the wall clock and is SUPPOSED to come and go -- that is the
+                # feature. Sampling one article at one unpinned instant
+                # therefore asserts something that is legitimately false some
+                # of the time: verity-county carries a tag at 27 of 31 sampled
+                # instants and nothing at the other 4, and this check went red
+                # in CI on one of those 4 while five of the six articles beside
+                # it were tagged. It had been failing about one run in eight
+                # since it was written, and passing the rest by luck of the
+                # slot.
+                #
+                # What the collision actually needs is that markup.js still
+                # renders SOME template somewhere on the wiki while leaving
+                # {{merge_field}} literal in chat. So ask the wiki, not one
+                # page of it, and keep the floor: if nothing on any of them
+                # carries a tag, the template branch really has died.
+                tags, tagged_on = [], None
+                for art in arts[:6]:
+                    page.evaluate(
+                        "(u) => SYNTH.engine.navigate(u, {push: false})",
+                        "synth://%s/wiki/%s" % (wiki, art))
+                    page.wait_for_timeout(160)
+                    got = page.evaluate(
+                        "() => Array.from(document.querySelectorAll('.synth-tpl'))"
+                        ".map(n => n.textContent)")
+                    if got:
+                        tags, tagged_on = got, art
+                        break
                 page.evaluate(
                     "(u) => SYNTH.engine.navigate(u, {push: false})",
                     "synth://gridfall.chat/c/c-general")
@@ -1243,7 +1266,9 @@ def main():
                 chat = page.inner_text("#synth-viewport")
                 if not tags:
                     problems.append(
-                        "no maintenance template renders on the wiki article")
+                        "no maintenance template renders on any of the first "
+                        "%d articles of %s -- markup.js's template branch is "
+                        "not minting them at all" % (len(arts[:6]), wiki))
                 elif "{{" not in chat:
                     problems.append(
                         "the weather bot's unfilled merge fields stopped "
@@ -1251,8 +1276,9 @@ def main():
                         "branch in markup.js is eating them")
                 else:
                     notes.append(
-                        f"templates render on the wiki ({tags[0]}) and "
-                        "{{merge_field}} stays literal in chat, same run")
+                        f"templates render on the wiki ({tags[0]} on "
+                        f"{tagged_on}) and " "{{merge_field}}"
+                        " stays literal in chat, same run")
 
             # --- 13. a forum agrees with itself ---------------------------
             #
