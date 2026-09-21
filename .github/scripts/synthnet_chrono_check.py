@@ -29,6 +29,35 @@ with clear margin on both sides.
 EPOCH is read out of app/live.js rather than restated here, because a
 restated constant is the thing this project keeps finding in five places.
 
+SECOND RULE: a weekday named beside a date must be that date's weekday.
+
+1,838 authored strings name a day of the week, and 508 of them name one
+beside a date specific enough to check. All 508 are right, which is the
+reason this rule is worth writing down: the content is held to it by hand
+today, and a hand-held invariant with no check is one edit from being
+false. A wrong weekday is the purest form of the fault this project keeps
+finding -- it renders perfectly, reads naturally, and is wrong only to
+somebody holding a calendar.
+
+Two tiers, and the second is deliberately timid:
+
+  * The year is IN the phrase -- "Friday 4 September 2026", 425 of them.
+    Zero inference, so a mismatch is a fact.
+  * The year is not, but the record carries its own date -- a post's `at`,
+    a form's `name`. 83 of them. Here the resolver offers every year within
+    a year of that anchor and accepts the phrase if ANY of them makes the
+    weekday true. That is much weaker than picking one year, and it is
+    weaker on purpose: the first draft picked the closest year and reported
+    two faults, and both were the draft's. verityquilters.net's March post
+    saying "Show date confirmed, Saturday 3 October" means the coming
+    October, which is 205 days out, not the previous one at 160. And
+    verityschools.org's "Monday 29 March to Friday 2 April 2027" states its
+    year once, at the far end of the range, for both halves.
+
+Both are right. The resolver was wrong twice, and a checker that cries
+wolf about correct content gets switched off, so it now only speaks when
+no reading of the year can save the phrase.
+
 Usage:  python3 .github/scripts/synthnet_chrono_check.py [--root synthnet]
 """
 import argparse
@@ -58,8 +87,32 @@ PROSE = re.compile(r"^(" + "|".join(MONTHS) + r") (\d{1,2}), (\d{4})$")
 # fault in a different shape -- verity-careers-portal.com said 2028.
 COPYRIGHT = re.compile(r"Copyright \([cC]\)\s*(\d{4})")
 
+DAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+        "Sunday")
+_D, _M = "|".join(DAYS), "|".join(MONTHS)
+# Tier one: the year is in the phrase.
+DATED_DAY = (
+    re.compile(r"\b(" + _D + r"),?\s+(\d{1,2})(?:st|nd|rd|th)?\s+(" + _M +
+               r"),?\s+((?:19|20)\d{2})\b"),
+    re.compile(r"\b(" + _D + r"),?\s+(" + _M +
+               r")\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+((?:19|20)\d{2})\b"),
+)
+# Tier two: it is not, and the record's own date has to supply it.
+BARE_DAY = (
+    re.compile(r"\b(" + _D + r"),?\s+(\d{1,2})(?:st|nd|rd|th)?\s+(" + _M +
+               r")\b(?!,?\s+(?:19|20)\d{2})"),
+    re.compile(r"\b(" + _D + r"),?\s+(" + _M +
+               r")\s+(\d{1,2})(?:st|nd|rd|th)?\b(?!,?\s+(?:19|20)\d{2})"),
+)
+YEAR = re.compile(r"\b((?:19|20)\d{2})\b")
+# How far from a record's own date a bare weekday phrase may sit and still
+# take its year from it. A year either side, so a December post naming a
+# January date and a March post naming the coming October both resolve.
+ANCHOR_DAYS = 400
+
 # Floors. A regex that stops matching reports that every date is fine.
 MIN_DATES = 2000
+MIN_DATED_DAYS = 350
 
 
 def read_epoch(root):
@@ -97,16 +150,104 @@ def parse_date(value):
     return None
 
 
-def walk(node, path, out):
-    """Collect (json path, string) for every string in the document."""
+def walk(node, path, out, chain=()):
+    """Collect (json path, string, enclosing objects) for every string.
+
+    The chain is what lets a bare "Saturday 3 October" find the year: the
+    nearest enclosing object that states a full date somewhere on its own
+    scalar fields is the record the phrase belongs to.
+    """
     if isinstance(node, dict):
+        inner = chain + (node,)
         for k, v in node.items():
-            walk(v, path + "." + str(k), out)
+            walk(v, path + "." + str(k), out, inner)
     elif isinstance(node, list):
         for i, v in enumerate(node):
-            walk(v, path + "[" + str(i) + "]", out)
+            walk(v, path + "[" + str(i) + "]", out, chain)
     elif isinstance(node, str):
-        out.append((path, node))
+        out.append((path, node, chain))
+
+
+def anchor_dates(obj):
+    """Full dates stated on one object's own scalar fields."""
+    out = []
+    for value in obj.values():
+        if not isinstance(value, str):
+            continue
+        d = parse_date(value)
+        if d is not None:
+            out.append(d)
+        for rx in DATED_DAY:
+            for m in rx.finditer(value):
+                a, b = m.group(2), m.group(3)
+                mon, day = (b, a) if b in MONTHS else (a, b)
+                try:
+                    out.append(datetime.date(int(m.group(4)),
+                                             MONTHS.index(mon) + 1, int(day)))
+                except ValueError:
+                    pass
+    return out
+
+
+def weekday_problems(strings, dom):
+    """(problems, dated, anchored) for one site's strings."""
+    problems, dated, anchored = [], 0, 0
+    for where, value, chain in strings:
+        for rx in DATED_DAY:
+            for m in rx.finditer(value):
+                a, b = m.group(2), m.group(3)
+                mon, day = (b, a) if b in MONTHS else (a, b)
+                try:
+                    d = datetime.date(int(m.group(4)), MONTHS.index(mon) + 1,
+                                      int(day))
+                except ValueError:
+                    continue
+                dated += 1
+                if DAYS[d.weekday()] != m.group(1):
+                    problems.append(
+                        f"{dom} {where} says {m.group(0)!r}, and {d} was a "
+                        f"{DAYS[d.weekday()]}")
+
+        bare = [m for rx in BARE_DAY for m in rx.finditer(value)]
+        if not bare:
+            continue
+        anchors = []
+        for obj in reversed(chain):          # nearest enclosing record first
+            anchors = anchor_dates(obj)
+            if anchors:
+                break
+        if not anchors:
+            continue
+        for m in bare:
+            a, b = m.group(2), m.group(3)
+            mon, day = (b, a) if b in MONTHS else (a, b)
+            years = set()
+            for anc in anchors:
+                years.update((anc.year - 1, anc.year, anc.year + 1))
+            # A year stated later in the same breath, for "29 March to 2
+            # April 2027", where one year serves both ends of a range.
+            for ym in YEAR.finditer(value[m.end():m.end() + 40]):
+                years.add(int(ym.group(1)))
+            cands = []
+            for y in sorted(years):
+                try:
+                    c = datetime.date(y, MONTHS.index(mon) + 1, int(day))
+                except ValueError:
+                    continue
+                if any(abs((c - anc).days) <= ANCHOR_DAYS for anc in anchors) \
+                        or y in {int(x.group(1)) for x in
+                                 YEAR.finditer(value[m.end():m.end() + 40])}:
+                    cands.append(c)
+            if not cands:
+                continue
+            anchored += 1
+            if not any(DAYS[c.weekday()] == m.group(1) for c in cands):
+                problems.append(
+                    f"{dom} {where} says {m.group(0)!r}, and no year its "
+                    f"record could mean makes that a {m.group(1)} -- "
+                    + ", ".join(f"{c} was a {DAYS[c.weekday()]}"
+                                for c in cands[:3]))
+    return problems, dated, anchored
 
 
 def main():
@@ -122,6 +263,7 @@ def main():
     limit = epoch + datetime.timedelta(days=GRACE_DAYS)
 
     problems, parsed, copyrights = [], 0, 0
+    dated_days = anchored_days = 0
     files = sorted((root / "net" / "sites").glob("*/site.json"))
     if not files:
         print(f"FAIL: no site.json under {root}/net/sites")
@@ -133,7 +275,12 @@ def main():
         strings = []
         walk(site.get("data") or {}, "data", strings)
 
-        for where, value in strings:
+        wp, wd, wa = weekday_problems(strings, dom)
+        problems.extend(wp)
+        dated_days += wd
+        anchored_days += wa
+
+        for where, value, _chain in strings:
             d = parse_date(value)
             if d is not None:
                 parsed += 1
@@ -155,6 +302,12 @@ def main():
             f"only {parsed} date(s) parsed, under the floor of {MIN_DATES}. "
             "The formats have moved and this check is reading past them, "
             "which looks exactly like a clean sweep")
+    if dated_days < MIN_DATED_DAYS:
+        problems.append(
+            f"only {dated_days} fully-specified weekday phrase(s) were read, "
+            f"under the floor of {MIN_DATED_DAYS}. That is the tier with no "
+            "inference in it, so losing it loses the half of this rule worth "
+            "trusting")
     if not copyrights:
         problems.append(
             "no copyright line was found at all, so that half of this check "
@@ -163,6 +316,8 @@ def main():
     print(f"  ok  {parsed} authored date(s) across {len(files)} sites, none "
           f"later than {limit}")
     print(f"  ok  {copyrights} copyright line(s), none later than {epoch.year}")
+    print(f"  ok  {dated_days} weekday+date phrase(s) name the right weekday, "
+          f"and {anchored_days} more do once the record supplies the year")
     print()
     if problems:
         print(f"FAIL: {len(problems)} problem(s):")

@@ -369,7 +369,7 @@
             ? ctx.link('/channel/' + encodeURIComponent(txt(item.channelId)), txt(item.uploader, 'unknown'), 'up')
             : el('span', { 'class': 'up' }, txt(item.uploader, 'unknown'))),
         el('div', { 'class': 'card-meta dim' },
-          liveViews(item) + ' views  •  ' + txt(item.uploaded, 'some time ago'))));
+          liveViews(ctx, item) + ' views  •  ' + txt(item.uploaded, 'some time ago'))));
   }
 
   function chanChip(ctx, c) {
@@ -387,11 +387,12 @@
   /* A view count that has not moved since 2007 is the single clearest sign
    * that a page is dead. These keep climbing, faster for the automated
    * channels, because the bot network watches its own uploads. */
-  function liveViews(item) {
+  function liveViews(ctx, item) {
     var L = window.SYNTH.live;
     if (!L) return num(item.views);
     var perDay = 40 + (L.hash32(String(item.id)) % 220);
-    return L.commas(L.counter('views:' + item.id, item.views || 0, perDay));
+    return L.commas(L.counter('media:views:' + ctx.site.domain + ':' + item.id,
+                              item.views || 0, perDay));
   }
 
   function renderIndex(ctx) {
@@ -499,7 +500,7 @@
     main.appendChild(playerBlock(ctx, item));
     main.appendChild(el('h1', { 'class': 'vtitle' }, txt(item.title, 'Untitled clip')));
     main.appendChild(el('div', { 'class': 'vmeta' },
-      liveViews(item) + ' views  •  Added ' + txt(item.uploaded, 'some time ago')));
+      liveViews(ctx, item) + ' views  •  Added ' + txt(item.uploaded, 'some time ago')));
 
     var subNote = chan ? el('div', { 'class': 'sub-note dim' }, '') : null;
     main.appendChild(el('div', { 'class': 'uploader-row' },
@@ -527,7 +528,7 @@
     if (window.SYNTH.live && window.SYNTH.slop &&
         window.SYNTH.live.pool('mediaComments').length) {
       var L = window.SYNTH.live;
-      fresh = L.stream('c:' + item.id, 'mediaComments', 6, 14)
+      fresh = L.stream('media:c:' + ctx.site.domain + ':' + item.id, 'mediaComments', 6, 14)
         .map(function (sl) {
           return {
             author: sl.item.author,

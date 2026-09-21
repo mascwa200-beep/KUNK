@@ -526,7 +526,8 @@ window.SYNTH = window.SYNTH || {};
     var rateRow = el('div', { 'class': 'ms-card-rate' },
       stars(p.rating),
       el('span', { 'class': 'ms-card-rc' }, SYNTH.live.commas(
-        SYNTH.live.counter('shop:rc:' + p.id, p.reviewCount || 12, 9)) + ' ratings')
+        SYNTH.live.counter('shop:rc:' + ctx.site.domain + ':' + p.id,
+                           p.reviewCount || 12, 9)) + ' ratings')
     );
     body.appendChild(rateRow);
 
@@ -680,7 +681,8 @@ window.SYNTH = window.SYNTH || {};
         (onlyBrand ? ', sold by the shop itself' : '') + '.'));
     } else {
       head.appendChild(el('p', { 'class': 'ms-result-count' },
-        SYNTH.live.commas(SYNTH.live.counter('shop:res:' + catId, 1200 + products.length, 340)) +
+        SYNTH.live.commas(SYNTH.live.counter('shop:res:' + ctx.site.domain + ':' + catId,
+                                            1200 + products.length, 340)) +
         ' results · ' + products.length + ' in stock locally'));
     }
     ctx.mount.appendChild(head);
@@ -765,7 +767,7 @@ window.SYNTH = window.SYNTH || {};
     box.appendChild(el('div', { 'class': 'ms-rev-body' }, SYNTH.markup.parse(r.body || '')));
 
     var help = el('p', { 'class': 'ms-rev-help' },
-      SYNTH.live.commas(SYNTH.live.counter('shop:help:' + pid + ':' + idx, 3, 11)) +
+      SYNTH.live.commas(SYNTH.live.counter('shop:help:' + ctx.site.domain + ':' + pid + ':' + idx, 3, 11)) +
       ' people found this helpful');
     box.appendChild(help);
     return box;
@@ -1040,7 +1042,7 @@ window.SYNTH = window.SYNTH || {};
       { label: SYNTH.markup.strip(p.name || '').slice(0, 40) }
     ]));
 
-    ctx.mount.appendChild(urgencyBanner(p.id));
+    ctx.mount.appendChild(urgencyBanner(ctx.site.domain + ':' + p.id));
 
     var top = el('div', { 'class': 'ms-pdp' });
 
@@ -1066,7 +1068,8 @@ window.SYNTH = window.SYNTH || {};
     rr.appendChild(stars(p.rating));
     rr.appendChild(el('span', { 'class': 'ms-rate-num' }, String(p.rating || 0)));
     rr.appendChild(el('span', { 'class': 'ms-rate-count' },
-      SYNTH.live.commas(SYNTH.live.counter('shop:rc:' + p.id, p.reviewCount || 12, 9)) + ' ratings'));
+      SYNTH.live.commas(SYNTH.live.counter('shop:rc:' + ctx.site.domain + ':' + p.id,
+                         p.reviewCount || 12, 9)) + ' ratings'));
     info.appendChild(rr);
 
     if (p.blurb) {
@@ -1083,7 +1086,7 @@ window.SYNTH = window.SYNTH || {};
     }
 
     info.appendChild(el('p', { 'class': 'ms-viewing' },
-      SYNTH.live.commas(SYNTH.live.online('shop:pdp:' + p.id, 12, 340)) +
+      SYNTH.live.commas(SYNTH.live.online('shop:pdp:' + ctx.site.domain + ':' + p.id, 12, 340)) +
       ' people are looking at this right now'));
     top.appendChild(info);
 
@@ -1175,14 +1178,14 @@ window.SYNTH = window.SYNTH || {};
         });
       }
     }
-    var shown = SYNTH.live.stream('shop:rev:' + p.id, pool, 23, Math.max(3, (p.reviews || []).length + 2));
+    var shown = SYNTH.live.stream('shop:rev:' + ctx.site.domain + ':' + p.id, pool, 23, Math.max(3, (p.reviews || []).length + 2));
     if (!shown.length) { shown = (p.reviews || []); }
 
     var revSec = el('section', { 'class': 'ms-sec ms-revsec' });
     revSec.appendChild(el('h2', { 'class': 'ms-sec-h' }, 'Customer reviews'));
     revSec.appendChild(el('p', { 'class': 'ms-sec-note' },
       'Review authenticity is scored automatically. ' +
-      SYNTH.live.commas(SYNTH.live.counter('shop:removed:' + p.id, 40, 6)) +
+      SYNTH.live.commas(SYNTH.live.counter('shop:removed:' + ctx.site.domain + ':' + p.id, 40, 6)) +
       ' reviews were removed for policy reasons.'));
     for (i = 0; i < shown.length; i++) {
       /* .item, not the row. SYNTH.live.stream yields {slot, at, item, seed}

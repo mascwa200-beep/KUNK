@@ -59,6 +59,7 @@ Usage:  python3 .github/scripts/synthnet_claims_check.py [--root synthnet]
 
 import argparse
 import glob
+import json
 import os
 import pathlib
 import re
@@ -494,6 +495,99 @@ def main():
             else:
                 problems.append(
                     "wiki: no article was compared with its history page")
+
+            # ---- two sites, one id, two different things ----------------
+            #
+            # Row ids are unique within a site and were never unique across
+            # them: 36 market listing ids, 23 shop product ids and 18 of the
+            # 20 qa question ids are on two sites. A live key built out of
+            # the id alone is therefore one key for two unrelated things,
+            # and both pages print the same number, drifting in step.
+            #
+            # classifieds.verity.net/l/l-001 and gridfall-buysell.net/l/l-001
+            # are a chest freezer and something else entirely, and both said
+            # "804 views · 2 watching now" at this pinned instant.
+            #
+            # synthnet_counter_keys_check.py asserts the rule on the source.
+            # This reads the rendered page, because the rule is only worth
+            # anything if the digits on the screen actually differ -- and
+            # the colliding ids are derived from the content, so authoring a
+            # new collision brings it under the row automatically.
+            #
+            # The selectors matter. The first version of this row compared
+            # every number on the two pages and went red on four listings,
+            # all of them right: both pages print 2026, both carry the same
+            # house ad saying "your display driver is 214 days out of date",
+            # and both show 555-0128 because the ad network IS cross-site.
+            # So it reads the live counters by name instead. A selector that
+            # matches nothing on either page is a failure, not a skip.
+            id_routes = [
+                ("market", "listings", "/l/", [".cl-views"]),
+                ("shop", "products", "/p/",
+                 [".ms-viewing", ".ms-urgent-count", ".ms-rate-count"]),
+                ("qa", "questions", "/q/", [".qa-avotes"]),
+            ]
+            numbers = re.compile(r"\d[\d,]*")
+            coll_pairs = coll_same = 0
+            for typ, coll, prefix, sels in id_routes:
+                seen = {}
+                for dom in by_type.get(typ, []):
+                    f = root / "net" / "sites" / dom.replace(".", "-") / \
+                        "site.json"
+                    if not f.exists():
+                        continue
+                    rows = (json.loads(f.read_text(encoding="utf-8"))
+                            .get("data") or {}).get(coll) or []
+                    for r in rows:
+                        if isinstance(r, dict) and r.get("id") is not None:
+                            seen.setdefault(str(r["id"]), []).append(dom)
+                for rid, doms in sorted(seen.items()):
+                    doms = sorted(set(doms))
+                    if len(doms) < 2:
+                        continue
+                    seen_live = []
+                    for dom in doms[:2]:
+                        go("synth://%s%s%s" % (dom, prefix, rid), 340)
+                        seen_live.append(page.evaluate(
+                            """(sels) => sels.map(s => Array.from(
+                                 document.querySelectorAll(
+                                   '#synth-viewport ' + s))
+                                 .map(n => n.innerText.trim()).join(' | '))""",
+                            sels))
+                    if not any(a or b for a, b in zip(*seen_live)):
+                        problems.append(
+                            f"{typ}: neither {doms[0]} nor {doms[1]} shows "
+                            f"any of {sels} on {prefix}{rid}, so this pair "
+                            "was compared blind")
+                        continue
+                    coll_pairs += 1
+                    same = [(s, a) for s, a, b in
+                            zip(sels, seen_live[0], seen_live[1])
+                            if a and a == b and numbers.search(a)]
+                    if same:
+                        coll_same += 1
+                        if coll_same <= 4:
+                            problems.append(
+                                f"{typ}: {doms[0]}{prefix}{rid} and "
+                                f"{doms[1]}{prefix}{rid} are different things "
+                                "and their live counters agree to the digit "
+                                + "; ".join(f"{s} says {a!r}"
+                                            for s, a in same[:3])
+                                + " -- a live key is keyed on the id and not "
+                                "on the site")
+            if coll_pairs:
+                if coll_same > 4:
+                    problems.append(
+                        f"{coll_same} colliding id(s) in all, of {coll_pairs}")
+                notes.append(f"cross-site: {coll_pairs} id(s) used by two "
+                             f"sites, {coll_pairs - coll_same} whose live "
+                             "counters differ")
+            else:
+                problems.append(
+                    "cross-site: no id is shared by two sites, so this row "
+                    "asserted nothing. The ids used to collide 77 times; if "
+                    "they genuinely stopped, delete the row rather than "
+                    "leaving it green and blind")
 
             # ---- LAST FILED means one thing ----------------------------
             #

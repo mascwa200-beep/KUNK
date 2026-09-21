@@ -309,7 +309,7 @@ window.SYNTH = window.SYNTH || {};
       cg.appendChild(el('li', { 'class': 'cl-catitem' },
         ctx.link('/c/' + cats[i].id, cats[i].name, 'cl-a'),
         el('span', { 'class': 'cl-catcount' }, ' (' + SYNTH.live.commas(
-          SYNTH.live.counter('market:cat:' + cats[i].id,
+          SYNTH.live.counter('market:cat:' + ctx.site.domain + ':' + cats[i].id,
                              catBase(data, cats[i].id), 24)) + ')')
       ));
     }
@@ -370,7 +370,7 @@ window.SYNTH = window.SYNTH || {};
 
     ctx.mount.appendChild(el('h2', { 'class': 'cl-h2' }, cat.name));
     ctx.mount.appendChild(el('p', { 'class': 'cl-note' },
-      SYNTH.live.commas(SYNTH.live.counter('market:cat:' + cat.id,
+      SYNTH.live.commas(SYNTH.live.counter('market:cat:' + ctx.site.domain + ':' + cat.id,
                                            catBase(data, cat.id), 24)) +
       ' listings indexed · ' + hits.length + ' shown · refreshed ' + agoBy(3 * 60 * 1000)));
 
@@ -431,8 +431,10 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(head);
 
     ctx.mount.appendChild(el('p', { 'class': 'cl-views' },
-      SYNTH.live.commas(SYNTH.live.counter('market:views:' + l.id, 40, 130)) + ' views · ' +
-      SYNTH.live.commas(SYNTH.live.online('market:watch:' + l.id, 1, 24)) + ' watching now'));
+      SYNTH.live.commas(SYNTH.live.counter('market:views:' + ctx.site.domain + ':' + l.id,
+                                          40, 130)) + ' views · ' +
+      SYNTH.live.commas(SYNTH.live.online('market:watch:' + ctx.site.domain + ':' + l.id,
+                                          1, 24)) + ' watching now'));
 
     var photo = el('div', { 'class': 'cl-photo' });
     photo.appendChild(SYNTH.markup.placeholder('photo', l.imgSeed || l.id));
@@ -459,7 +461,7 @@ window.SYNTH = window.SYNTH || {};
     if (b) { who.appendChild(b); }
     seller.appendChild(who);
     seller.appendChild(el('p', { 'class': 'cl-seller-contact' },
-      'reply to: ' + (SYNTH.live.hash32('mail:' + l.id).toString(36)) + '@relay.' + ctx.site.domain));
+      'reply to: ' + (SYNTH.live.hash32('mail:' + ctx.site.domain + ':' + l.id).toString(36)) + '@relay.' + ctx.site.domain));
     seller.appendChild(el('p', { 'class': 'cl-seller-note' },
       'relay address expires 72 hours after the listing stops being bumped'));
     ctx.mount.appendChild(seller);
@@ -476,7 +478,7 @@ window.SYNTH = window.SYNTH || {};
       if (String(pool[i].id) === String(l.id)) { continue; }
       if (String(pool[i].catId) === String(l.catId)) { similar.push(pool[i]); }
     }
-    var shown = SYNTH.live.stream('market:sim:' + l.id, similar, 9, 6);
+    var shown = SYNTH.live.stream('market:sim:' + ctx.site.domain + ':' + l.id, similar, 9, 6);
     if (!shown.length) { shown = similar.slice(0, 6); }
     if (shown.length) {
       var sec = el('section', { 'class': 'cl-sec' });

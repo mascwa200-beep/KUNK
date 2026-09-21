@@ -40,6 +40,39 @@ today, which is asserted below rather than assumed.
 
 The coverage floors below are what stop the parse quietly matching nothing
 after a refactor, which would read exactly like a clean sweep.
+
+SECOND RULE: a key must name the site it is printed on.
+
+The same mechanism has a second failure mode, and it had thirteen instances.
+A key built out of a row id and nothing else is shared by every site that
+happens to use that id -- and the ids are not unique across sites, because
+nothing ever said they had to be:
+
+    36 of 123 market listing ids are on two sites
+    23 of 187 shop product ids are on two sites
+    18 of  20 qa question ids are on two sites
+     4 of  46 shop category ids are on two sites
+
+So `counter('market:views:' + l.id, 40, 130)` printed ONE number for two
+unrelated listings. classifieds.verity.net's l-001 (a chest freezer in
+Gridfall) and gridfall-buysell.net's l-001 (a different thing, different
+seller) both read "804 views · 2 watching now", at the same instant,
+drifting in lockstep for ever. shop.js was worse and clearer: urgencyBanner
+is called three times, twice with ctx.site.domain and once with a bare
+product id, so two unrelated stores agreed to the digit on "8,036 watching"
+and "58 people are looking at this right now".
+
+Domain-scoping is the convention the code already follows -- 40 of the 53
+keyed call sites carried the site before this check existed, and every seed
+variable in dash.js and stream.js is built from ctx.site.domain. These
+thirteen were the ones that did not, and nothing could tell.
+
+The rule is checked through one level of indirection in both directions: a
+key spelled as a local variable is resolved to that variable's assignment,
+and a key that names a PARAMETER of its enclosing function is resolved to
+the arguments its callers pass. The second half is what reaches
+urgencyBanner, whose key is `'shop:urgent:' + seed` and whose scope lives
+entirely in its three call sites.
 """
 import argparse
 import pathlib
@@ -47,7 +80,18 @@ import re
 import sys
 
 CALL = re.compile(r"\b(counter|online)\(\s*")
+# stream() picks pool rows by key, so it shares a key's fate: one key, one
+# sequence. shop.js printed the same generated review under the same product
+# id on two different stores through 'shop:rev:' + p.id.
+SCOPED_CALL = re.compile(r"\b(counter|online|stream)\(\s*")
 LITERAL = re.compile(r"'([^']*)'|\"([^\"]*)\"")
+# What counts as naming the site.
+SITE = re.compile(r"\bdomain\b|ctx\.site|S\.site|\bsiteKey\b")
+IDENT = re.compile(r"[A-Za-z_$][\w$]*")
+FUNC = re.compile(r"^[ \t]*function\s+(\w+)\s*\(([^)]*)\)", re.M)
+# Identifiers in a key that are never the site: literals' neighbours.
+BUILTIN = {"String", "Number", "encodeURIComponent", "join", "toLowerCase",
+           "id", "length", "slice", "Math", "floor", "i", "j", "idx"}
 
 # What the parse must still find, or it has stopped working. Today there are
 # 45 keyed call sites and 8 keys used from two places; these sit below that
@@ -58,6 +102,8 @@ LITERAL = re.compile(r"'([^']*)'|\"([^\"]*)\"")
 # as a failure instead of as a pass.
 MIN_KEYS = 40
 MIN_SHARED = 6
+# Counter, online AND stream keys read for site scope. 53 today.
+MIN_SCOPED = 45
 
 
 def split_args(rest):
@@ -128,6 +174,105 @@ def base_form(expr):
     return re.sub(r"\s+", " ", "".join(out)).strip()
 
 
+def enclosing(src, pos):
+    """(name, [params]) of the function the offset sits in, or None.
+
+    Nearest preceding `function name(...)` at the start of a line. The
+    renderers are one IIFE of top-level named functions each, so this is
+    exact for them rather than approximate.
+    """
+    best = None
+    for m in FUNC.finditer(src):
+        if m.start() > pos:
+            break
+        best = m
+    if best is None:
+        return None
+    return best.group(1), [p.strip() for p in best.group(2).split(",") if p.strip()]
+
+
+def var_value(src, pos, name):
+    """The last `var name = <expr>;` written before pos, or None."""
+    rx = re.compile(r"\bvar\s+" + re.escape(name) + r"\s*=\s*([^;\n]+)")
+    val = None
+    for m in rx.finditer(src, 0, pos):
+        val = m.group(1)
+    return val
+
+
+def caller_args(src, fn, index):
+    """Every argument passed at position `index` to calls of fn in src.
+
+    Skips the definition itself. Returns None if nothing calls it, which is
+    a different answer from "nothing names the site" and is reported as its
+    own failure -- an unreachable scope is not a satisfied one.
+    """
+    out = []
+    for m in re.finditer(r"\b" + re.escape(fn) + r"\(\s*", src):
+        head = src.rfind("\n", 0, m.start())
+        if re.match(r"^[ \t]*function\s", src[head + 1:m.end()]):
+            continue
+        parts = split_args(src[m.end():])
+        if len(parts) > index:
+            out.append(parts[index])
+    return out or None
+
+
+def names_site(src, pos, key):
+    """Does this key expression name the site, directly or one hop away?
+
+    Returns (True, how) or (False, why).
+    """
+    if SITE.search(key):
+        return True, "directly"
+    fn = enclosing(src, pos)
+    params = fn[1] if fn else []
+    for ident in set(IDENT.findall(re.sub(r"'[^']*'|\"[^\"]*\"", "", key))):
+        if ident in BUILTIN:
+            continue
+        if ident in params:
+            args = caller_args(src, fn[0], params.index(ident))
+            if args is None:
+                return False, (f"{ident} is a parameter of {fn[0]}() and "
+                               "nothing in this file calls it, so no call "
+                               "site can be supplying the scope")
+            bare = [a for a in args if not SITE.search(a)]
+            if bare:
+                return False, (f"{ident} comes from {fn[0]}(), and "
+                               f"{len(bare)} of its {len(args)} call sites "
+                               f"pass no site: {', '.join(sorted(bare))}")
+            return True, f"via {fn[0]}()'s {len(args)} call sites"
+        val = var_value(src, pos, ident)
+        if val and SITE.search(val):
+            return True, f"via var {ident}"
+    return False, "the key names no site and neither does anything it is built from"
+
+
+def scope_problems(files, root):
+    """Every counter/online/stream key that is not scoped to one site."""
+    problems = []
+    checked = 0
+    for f in files:
+        rel = f.relative_to(root)
+        src = f.read_text()
+        for m in SCOPED_CALL.finditer(src):
+            parts = split_args(src[m.end():])
+            if len(parts) < 2:
+                continue
+            key = parts[0]
+            if not skeleton(key):
+                continue          # a wrapper's `counter(key, …)`, not a key
+            checked += 1
+            ok, why = names_site(src, m.start(), key)
+            if not ok:
+                line = src.count("\n", 0, m.start()) + 1
+                problems.append(
+                    f"{rel}:{line} {m.group(1)}({key}) is not scoped to a "
+                    f"site -- {why}. Two sites reusing that id print one "
+                    "number, or one sequence, for two different things")
+    return problems, checked
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="synthnet")
@@ -177,6 +322,13 @@ def main():
                 f"different bases -- {where}. Two pages printing one number "
                 "is what a shared key means, so they will print two")
 
+    scoped, n_scoped = scope_problems(files, root)
+    problems.extend(scoped)
+    if n_scoped < MIN_SCOPED:
+        problems.append(
+            f"only {n_scoped} counter/online/stream call sites were read for "
+            f"scope, under the floor of {MIN_SCOPED}. Nothing was asserted")
+
     if len(keys) < MIN_KEYS:
         problems.append(
             f"only {len(keys)} keyed counter/online calls were parsed, under "
@@ -198,8 +350,11 @@ def main():
     print(f"  ok  {len(keys)} keyed counter/online call sites across "
           f"{len(files)} files")
     print(f"  ok  {shared} key(s) printed from two places, each from one base")
+    print(f"  ok  {n_scoped} counter/online/stream keys, every one scoped to "
+          "one site")
     print()
-    print("OK: no live counter key is seeded two different ways.")
+    print("OK: no live key is seeded two different ways, and none is shared "
+          "by two sites.")
     return 0
 
 

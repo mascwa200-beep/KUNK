@@ -220,7 +220,7 @@ window.SYNTH = window.SYNTH || {};
     var node = el('article', { 'class': 'qa-answer' + (a.accepted ? ' qa-answer-ok' : '') });
 
     var gutter = el('div', { 'class': 'qa-gutter' });
-    var votes = counter('qa:' + qid + ':a' + idx, a.votes || 0, 2);
+    var votes = counter('qa:' + ctx.site.domain + ':' + qid + ':a' + idx, a.votes || 0, 2);
     gutter.appendChild(el('span', { 'class': 'qa-arrow', 'aria-hidden': 'true' }, text('▲')));
     gutter.appendChild(el('span', { 'class': 'qa-avotes' }, text(String(votes))));
     gutter.appendChild(el('span', { 'class': 'qa-arrow', 'aria-hidden': 'true' }, text('▼')));
