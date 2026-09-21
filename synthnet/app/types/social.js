@@ -32,6 +32,13 @@
     return s ? s : (fallback || '');
   }
 
+  /* The number behind num()'s formatting, for the places that need to know
+     whether it is 1 rather than how to print it. */
+  function countOf(n) {
+    var v = (typeof n === 'number') ? n : parseInt(n, 10);
+    return isFinite(v) ? Math.round(v) : 0;
+  }
+
   function num(n) {
     var v = (typeof n === 'number') ? n : parseInt(n, 10);
     if (!isFinite(v)) v = 0;
@@ -780,9 +787,17 @@
         : ctx.link('/post/' + encodeURIComponent(txt(post.id)), when, 'p-time'));
 
     var actions = el('div', { 'class': 'p-actions' },
-      el('span', { 'class': 'act' }, el('b', null, num(replyCount)), ' replies'),
-      el('span', { 'class': 'act' }, el('b', null, num(post.reposts)), ' reposts'),
-      el('span', { 'class': 'act' }, el('b', null, num(post.likes)), ' likes'),
+      /* One of each, spelled as one. The counts here are authored and the
+         smallest of them is 1, so shoutbox.live's front page read "1
+         replies · 1 reposts · 1 likes" -- while three other places in this
+         same file have been writing ' repl' + (n === 1 ? 'y' : 'ies')
+         since they were added. */
+      el('span', { 'class': 'act' }, el('b', null, num(replyCount)),
+         ' repl' + (countOf(replyCount) === 1 ? 'y' : 'ies')),
+      el('span', { 'class': 'act' }, el('b', null, num(post.reposts)),
+         countOf(post.reposts) === 1 ? ' repost' : ' reposts'),
+      el('span', { 'class': 'act' }, el('b', null, num(post.likes)),
+         countOf(post.likes) === 1 ? ' like' : ' likes'),
       opts.single ? null : ctx.link('/post/' + encodeURIComponent(txt(post.id)), 'permalink', 'act permalink'));
 
     var rowKind = post.kind === 'promoted' ? ' lv-promoted-row'

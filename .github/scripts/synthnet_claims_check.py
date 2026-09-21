@@ -137,6 +137,17 @@ YEAR_ROWS = [
 
 ONE_YEAR = re.compile(r"^(19|20)\d{2}$")
 
+# Every row here reads one value off one page and another off a second page,
+# so the clock has to hold still in between or the rows measure the walk
+# from one to the other. It caught that on itself: veritywire.press was
+# "LAST FILED 7 min ago" on its index and "8 min ago" on /cat/schools, and
+# nothing was wrong except that a minute had passed.
+#
+# 2026-09-25, six days after live.js's EPOCH of 2026-09-19 -- inside the
+# simulation, which is the other half of the lesson. Pinning outside it
+# empties every stream and leaves a network of authored content only.
+PINNED_NOW = 1790294400000
+
 
 def last_filed(page):
     """The time printed under wire.js's LAST FILED label, or None."""
@@ -202,6 +213,7 @@ def main():
             page = browser.new_page(viewport={"width": 1100, "height": 2400})
             page.goto(base, wait_until="networkidle")
             page.wait_for_timeout(500)
+            page.evaluate("(ms) => SYNTH.live.setNow(ms)", PINNED_NOW)
 
             sites = page.evaluate(
                 "() => SYNTH.data.list().map(r => ({d: r.domain, t: r.type}))")

@@ -182,11 +182,19 @@ window.SYNTH = window.SYNTH || {};
 
     var pts = counter('agg:' + ctx.site.domain + ':pts:' + link.id, link.points || 1, 14);
     var meta = el('div', { 'class': 'agg-meta' });
-    meta.appendChild(el('span', { 'class': 'agg-pts' }, text(SYNTH.live && SYNTH.live.commas ? SYNTH.live.commas(pts) + ' points' : pts + ' points')));
+    meta.appendChild(el('span', { 'class': 'agg-pts' },
+      text((SYNTH.live && SYNTH.live.commas ? SYNTH.live.commas(pts) : String(pts)) +
+           (pts === 1 ? ' point' : ' points'))));
     meta.appendChild(text(' by '));
     meta.appendChild(el('span', { 'class': 'agg-by' }, text(link.by || 'anon')));
     meta.appendChild(text(' ' + ago(link.at) + ' · '));
-    meta.appendChild(ctx.link('/item/' + link.id, (link.commentCount || (link.comments || []).length) + ' comments', 'agg-clink'));
+    /* "1 comments" on gridline.social's front page and on every board
+       index that carries that link. commentNode() four hundred lines below
+       has had `shown === 1 ? ' comment' : ' comments'` since it was
+       written; this line, which is the one a reader sees first, did not. */
+    var cn = link.commentCount || (link.comments || []).length;
+    meta.appendChild(ctx.link('/item/' + link.id,
+      cn + (cn === 1 ? ' comment' : ' comments'), 'agg-clink'));
     main.appendChild(meta);
 
     row.appendChild(main);
@@ -343,7 +351,9 @@ window.SYNTH = window.SYNTH || {};
     head.appendChild(el('span', { 'class': 'agg-by' }, text(c.by || 'anon')));
     var b = liveBadge(c.kind);
     if (b) { head.appendChild(b); }
-    head.appendChild(el('span', { 'class': 'agg-cpts' }, text(' ' + (c.points || 0) + ' points')));
+    var cp = c.points || 0;
+    head.appendChild(el('span', { 'class': 'agg-cpts' },
+      text(' ' + cp + (cp === 1 ? ' point' : ' points'))));
     node.appendChild(head);
 
     var bodyEl = el('div', { 'class': 'agg-cbody' });

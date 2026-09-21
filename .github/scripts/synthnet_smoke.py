@@ -20,6 +20,7 @@ import argparse
 import json
 import os
 import pathlib
+import re
 import socket
 import subprocess
 import sys
@@ -29,6 +30,31 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 # Substrings that must never reach the rendered page. Each one means a renderer
 # passed a markup-bearing string through as plain text.
+# A count of one printed against a plural noun.
+#
+# gridline.social's front page said "1 comments", shoutbox.live's said
+# "1 replies - 1 reposts - 1 likes", and an aggregator item said "1 points".
+# In every case the same FILE already knew better somewhere else --
+# aggregator.js has `shown === 1 ? ' comment' : ' comments'` four hundred
+# lines below the line that did not, and social.js has spelled
+# ' repl' + (n === 1 ? 'y' : 'ies') in three other places for as long as
+# they have existed.
+#
+# The noun list is closed on purpose. An open pattern of 1 + <word ending
+# in s> reads "Tanker 3-1 weighs 46,000 pounds" and "dry hydrant No. 1
+# works" as errors, which is how a rule earns an allowlist and then stops
+# being read. These are nouns a renderer counts.
+COUNT_NOUNS = ("point", "comment", "repl", "repost", "like", "view", "item",
+               "rating", "subscriber", "guest", "follower", "answer",
+               "article", "topic", "listing", "revision", "channel")
+ONE_PLURAL = re.compile(
+    r"(?<![\d.,\-])1\s+(" + "|".join(COUNT_NOUNS) + r")(?:s|ies)\b")
+
+# How many of a site's own links to follow beyond its type templates. Six
+# is enough to reach the nav of every page-type site in the network without
+# turning this sweep into the link check, which already walks all 6,139.
+FOLLOW_PER_SITE = 6
+
 LEAK_MARKERS = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:", "[list]", "[code]",
                 # Not markup, but the same class of defect: a value that
                 # rendered instead of being read. String(someObject) shipped
@@ -219,7 +245,27 @@ def main() -> int:
                     continue
                 site = json.loads(site_file.read_text(encoding="utf-8"))
 
-                for path in probes_for(site):
+                # The templates below cover the paths a TYPE has. They do
+                # not cover the paths a SITE invented, and "page" -- the
+                # commonest type here, 33 of the 109 -- has exactly one
+                # template, "/". So every interior page of a third of the
+                # network was swept only through its front door.
+                #
+                # quarrycut.net/access is one of those, and it renders a
+                # photo caption carrying [url=/radio]radio page[/url] as
+                # literal text. LEAK_MARKERS has caught that shape since
+                # this file was written. The rule was never the problem;
+                # the rule never reached the page.
+                #
+                # So the site's own links are followed too, the way the link
+                # check was taught to in the round before this one.
+                paths = list(probes_for(site))
+                seen_paths = set(paths)
+                followed = 0
+                idx = 0
+                while idx < len(paths):
+                    path = paths[idx]
+                    idx += 1
                     url = f"{base}#synth://{domain}{path}"
                     errors.clear()
                     page.goto(url, wait_until="networkidle")
@@ -250,13 +296,38 @@ def main() -> int:
                                 f"{where}: rendered the {notice!r} notice "
                                 "instead of the page")
                             break
+                    pm = ONE_PLURAL.search(text)
+                    if pm:
+                        lo = max(0, pm.start() - 40)
+                        failures.append(
+                            f"{where}: counts one and says many -> "
+                            f"...{' '.join(text[lo:pm.end() + 25].split())!r}")
+
                     for marker in LEAK_MARKERS:
                         if marker in text:
-                            idx = text.index(marker)
+                            at = text.index(marker)
                             failures.append(
                                 f"{where}: leaked raw markup {marker!r} -> "
-                                f"...{text[max(0, idx - 30):idx + 60]!r}")
+                                f"...{text[max(0, at - 30):at + 60]!r}")
                             break
+
+                    if followed < FOLLOW_PER_SITE:
+                        for href in page.evaluate(
+                                """() => Array.from(new Set(Array.from(
+                                    document.querySelectorAll(
+                                      '#synth-viewport [data-synth-href]'))
+                                    .map(a => a.dataset.synthHref)))"""):
+                            if followed >= FOLLOW_PER_SITE:
+                                break
+                            if not href or not href.startswith("/"):
+                                continue
+                            clean = href.split("?")[0].split("#")[0]
+                            if clean in seen_paths:
+                                continue
+                            seen_paths.add(clean)
+                            paths.append(clean)
+                            followed += 1
+
                     if failures and not args.keep_going:
                         break
                 if failures and not args.keep_going:
@@ -410,6 +481,7 @@ def main() -> int:
         return 1
 
     print(f"OK: {visited} pages rendered, no console errors, no leaked markup, "
+          "nothing counting one and saying many, "
           f"no horizontal overflow at 360px.")
     return 0
 

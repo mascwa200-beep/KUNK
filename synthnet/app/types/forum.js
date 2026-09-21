@@ -487,8 +487,13 @@
 
     mount.appendChild(el('div', { 'class': 'boardfoot' },
       ctx.link('/', '« Board index', 'backlink'),
-      el('span', { 'class': 'dim' }, '  Users browsing this forum: no registered users and ' +
-        (1 + (hash(txt(board.id)) % 9)) + ' guests')));
+      /* `1 + hash % 9` is 1 on one board in nine, so one board in nine read
+         "no registered users and 1 guests". */
+      el('span', { 'class': 'dim' }, (function () {
+        var g = 1 + (hash(txt(board.id)) % 9);
+        return '  Users browsing this forum: no registered users and ' +
+               g + (g === 1 ? ' guest' : ' guests');
+      }()))));
 
     mount.appendChild(footer(ctx));
   }

@@ -235,7 +235,20 @@
       if (kind === 'image') {
         return el('div', { class: 'pg-figure' },
           imageNode(b.seed, b.imgKind),
-          b.caption ? el('div', { class: 'pg-caption' }, String(b.caption)) : null);
+          /* markup(), not String(). Every other authored text field in this
+             renderer is parsed -- body, list items, table cells, guestbook
+             entries -- and the caption was the one that was not, so the one
+             caption in the network that carries a link rendered it as the
+             literal text "[url=/radio]radio page[/url]" under a photo on
+             quarrycut.net/access.
+
+             The smoke check has had "[url=" in its leak markers since it
+             was written. It never saw this page: the "page" type's probe
+             list is ["/"] and every interior page of a page-type site --
+             a third of the network -- was reachable only through the front
+             door. The rule was fine. The sweep did not get there. */
+          b.caption ? el('div', { class: 'pg-caption' },
+                         markup(String(b.caption))) : null);
       }
 
       if (kind === 'marquee') {

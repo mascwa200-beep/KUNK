@@ -114,7 +114,7 @@
       el('span', { 'class': 'lv-dot' }, ''),
       el('span', {}, l.commas(users) + ' users online'),
       el('span', { 'class': 'lv-online-sep' }, '·'),
-      el('span', {}, l.commas(guests) + ' guests'),
+      el('span', {}, l.commas(guests) + (guests === 1 ? ' guest' : ' guests')),
       el('span', { 'class': 'lv-online-sep' }, '·'),
       el('span', { 'class': 'lv-online-bots', title: 'Accounts our systems classify as automated' },
         l.commas(bots) + ' automated')
