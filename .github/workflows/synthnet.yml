@@ -211,7 +211,15 @@ jobs:
         # ago was a belief that deferring them "costs the standalone build".
         # It does not, and now that is asserted rather than believed --
         # including that the file makes no non-file:// request at all.
-        run: python3 .github/scripts/synthnet_standalone_check.py --bundle synthnet/dist/synthnet.html
+        #
+        # It rendered eight front doors until the route table was derived:
+        # eight of the twenty-one types, covering 37 of the 109 sites, and
+        # only their indexes. Two thirds of the network had never been
+        # rendered in the mode this project leads with. The list comes from
+        # app/loadmap.js and synthnet_routes_check.py now -- 78 routes
+        # across all 21 types -- and a type in the loadmap that does not get
+        # rendered here fails the build.
+        run: python3 .github/scripts/synthnet_standalone_check.py --bundle synthnet/dist/synthnet.html --root synthnet
 
       - name: Posting, replies, fame, packs and persistence
         # The render test proves pages draw. It cannot prove the site does
