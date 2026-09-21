@@ -30,6 +30,7 @@ on:
       - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
       - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
@@ -48,6 +49,7 @@ on:
       - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
       - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
@@ -121,6 +123,23 @@ jobs:
         # reads the two rendered pages; this one stops the shape of that bug
         # reaching a page at all.
         run: python3 .github/scripts/synthnet_counter_keys_check.py --root synthnet
+
+      - name: Nothing authored may be dated into a month that has not happened
+        # milbrooknow.com had 66 date values running up to 27 days past the
+        # simulation's EPOCH -- articles, their updates, and eleven
+        # corrections. news.js groups the corrections page under absolute
+        # month headings and filters nothing, so the page showed an "October
+        # 2026" heading in September, and under it a correction withdrawing
+        # another correction, both in a month that had not happened.
+        #
+        # The limit is not zero. Straddling EPOCH by a few days is
+        # deliberate: halseycountynow.com tells a boil-water advisory across
+        # four updates whose dates each match the weekday the text names,
+        # running from two days before EPOCH to two days after, so it reads
+        # correctly as the clock advances into it. The deliberate straddle
+        # measures at most 3 days and the fault was 27, so the line is a
+        # week, with margin on both sides.
+        run: python3 .github/scripts/synthnet_chrono_check.py --root synthnet
 
       - name: Every path table must answer to the renderers
         # What paths a type serves was written down five times by hand --

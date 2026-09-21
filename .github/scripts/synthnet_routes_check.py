@@ -36,6 +36,7 @@ Usage:  python3 .github/scripts/synthnet_routes_check.py [--root synthnet]
         python3 .github/scripts/synthnet_routes_check.py --print
 """
 import argparse
+import json
 import pathlib
 import re
 import sys
@@ -191,6 +192,40 @@ def authoring_table(root):
     return out
 
 
+# A renderer that asks the live layer for anything, and never looks at
+# site.era, cannot tell a 2005 archive from a 2026 site. Thirteen do exactly
+# that -- aggregator, assistant, board, chat, control, dash, mail, market,
+# newsletter, portal, qa, shop, stream -- and the only reason none of them
+# puts a timestamp from this morning on a 2005 skin is that every one of the
+# 31 pre-2026 sites happens to be a blog, forum, media, news, page, social or
+# wiki. Nothing said so. One `era: "2005"` shop would have broken it.
+LIVE_CALL = re.compile(r"SYNTH\.live\.|\blive\.(?:stream|counter|online|ago|rng|now)\b|S\.live\.")
+ERA_READ = re.compile(r"\.era\b")
+
+
+def era_blind(root):
+    """Types whose renderer uses the live layer and never reads era."""
+    out = set()
+    files = sorted((root / "app" / "types").glob("*.js"))
+    ctrl = root / "app" / "control.js"
+    if ctrl.is_file():
+        files.append(ctrl)
+    for f in files:
+        src = f.read_text(encoding="utf-8")
+        if LIVE_CALL.search(src) and not ERA_READ.search(src):
+            out.add(f.stem)
+    return out
+
+
+def sites_by_type(root):
+    """[(domain, era, type)] for every site on disk."""
+    out = []
+    for f in sorted((root / "net" / "sites").glob("*/site.json")):
+        s = json.loads(f.read_text(encoding="utf-8"))
+        out.append((s.get("domain"), str(s.get("era") or ""), s.get("type")))
+    return out
+
+
 def crawl_cap(workflow):
     """The --pages the workflow gives the function check, or None."""
     text = workflow.read_text(encoding="utf-8")
@@ -325,6 +360,30 @@ def main():
                 f"docs/AUTHORING.md documents a type {t!r} with no renderer")
         notes.append(f"docs/AUTHORING.md documents {len(doc)} type(s), all "
                      "matching what their renderer serves")
+
+    # ---- an archive skin may not use an era-blind renderer ---------------
+    blind = era_blind(root)
+    sites = sites_by_type(root)
+    if not blind:
+        problems.append(
+            "no era-blind renderer was found at all, which means the live-call "
+            "or era pattern stopped matching rather than that every renderer "
+            "learned to check")
+    else:
+        bad = [(d, e, t) for d, e, t in sites
+               if "2026" not in e and t in blind]
+        for d, e, t in bad:
+            problems.append(
+                f"{d} has era {e!r} and is a {t}, whose renderer calls the "
+                "live layer and never reads era -- it will stamp this "
+                "morning's time on an archive skin")
+        pre = sum(1 for _, e, _ in sites if "2026" not in e)
+        if not pre:
+            problems.append(
+                "no pre-2026 site exists, so this row asserts nothing")
+        elif not bad:
+            notes.append(f"{len(blind)} era-blind renderer(s), and none of the "
+                         f"{pre} pre-2026 sites uses one")
 
     # ---- the function crawl has to be able to reach every route ---------
     #
