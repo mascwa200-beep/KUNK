@@ -150,6 +150,33 @@ ONE_YEAR = re.compile(r"^(19|20)\d{2}$")
 PINNED_NOW = 1790294400000
 
 
+_WORDS = {
+    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6,
+    "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11,
+    "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15,
+    "sixteen": 16, "seventeen": 17, "eighteen": 18, "nineteen": 19,
+    "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60,
+    "seventy": 70, "eighty": 80, "ninety": 90, "hundred": 100,
+}
+
+
+def as_number(word):
+    """12, "12", "twelve" and "seventy-seven" -> an int. Anything else None.
+
+    Prose counts a network in words and code counts it in digits, and a row
+    that only reads one of those cannot check the other.
+    """
+    w = str(word).strip().lower().replace(",", "")
+    if w.isdigit():
+        return int(w)
+    total = 0
+    for part in w.split("-"):
+        if part not in _WORDS:
+            return None
+        total += _WORDS[part]
+    return total or None
+
+
 def last_filed(page):
     """The time printed under wire.js's LAST FILED label, or None."""
     return page.evaluate(
@@ -625,6 +652,156 @@ def main():
                              "index's LAST FILED")
             else:
                 problems.append("wire: no category page was checked")
+
+            # ---- the browser around the network ------------------------
+            #
+            # Nine rounds checked the sites and never the chrome they render
+            # inside, and the chrome turned out to have the same disease:
+            # a number stated one way over a list built another. Everything
+            # below is read off the rendered page -- nothing recomputes what
+            # the shell computed, because a checker that mirrors the
+            # arithmetic agrees with the arithmetic's bugs.
+            #
+            # This needs an account, so it makes one. signUp writes to the
+            # same local store every other row already leaves alone.
+            page.evaluate("""async () => {
+                await SYNTH.me.signUp({handle: 'claimscheck', name: 'Claims'});
+                const p = SYNTH.me.profile();
+                p.followers = 12400;
+                if (SYNTH.me.save) { await SYNTH.me.save(p); } }""")
+            page.wait_for_timeout(350)
+            shell_rows = 0
+
+            # 1. The Milestones card read fame.milestones as DATA. It is a
+            #    function of your profile, so `for (k in fn)` yielded nothing
+            #    and every build printed "The table is empty." over a
+            #    sixteen-row ladder.
+            go("synth://control.verity.net/me", 600)
+            mile = page.evaluate(
+                """() => { const ul = document.querySelector(
+                     '#synth-viewport .cp-milestones');
+                   if (!ul) return null;
+                   const r = Array.from(ul.querySelectorAll('.cp-milestone'));
+                   return {rows: r.length,
+                           hit: r.filter(x => x.className.indexOf('hit') >= 0).length}; }""")
+            empty = "The table is empty" in page.inner_text("#synth-viewport")
+            if mile is None or empty:
+                problems.append(
+                    "shell: the Milestones card lists nothing"
+                    + (" and says 'The table is empty'" if empty else ""))
+            else:
+                shell_rows += 1
+                if mile["hit"] < 1:
+                    problems.append(
+                        f"shell: {mile['rows']} milestone(s) listed and none "
+                        "marked reached, on an account with 12,400 followers")
+                else:
+                    notes.append(f"shell: {mile['rows']} milestones, "
+                                 f"{mile['hit']} reached at 12,400 followers")
+
+            # 2. The online bar is the phpBB "N users online :: ..." line,
+            #    whose parts add up. This one took guests as 0.55-0.85 of the
+            #    total and bots as 0.93 of it, so the breakdown came to
+            #    1.48-1.78x the number it was breaking down.
+            go("synth://boards.gridfall.net/", 500)
+            bar = page.evaluate(
+                """() => { const b = document.querySelector(
+                     '#synth-viewport .lv-online');
+                   return b ? b.innerText.replace(/\\n/g, ' ') : null; }""")
+            if not bar:
+                problems.append("shell: no online bar on a forum front page")
+            else:
+                got = dict((m.group(2), int(m.group(1).replace(",", "")))
+                           for m in re.finditer(
+                               r"([\d,]+)\s+(users|guests?|automated)", bar))
+                total = got.get("users")
+                part = got.get("guests", got.get("guest", 0)) + got.get("automated", 0)
+                if total is None:
+                    problems.append(f"shell: online bar has no total: {bar!r}")
+                else:
+                    shell_rows += 1
+                    if part > total:
+                        problems.append(
+                            f"shell: the online bar breaks {total} down into "
+                            f"{part} -- {bar!r}")
+                    else:
+                        notes.append(f"shell: the online bar's parts fit "
+                                     f"inside its total ({part} of {total})")
+
+            # 3. "Mark all as read" wrote one timestamp that two of the three
+            #    event builders never read, so it cleared the DM rows and left
+            #    the fame, subscription and ambient ones: badge 14 to 4.
+            #    Three days have to pass for anything to be unread at all,
+            #    which is why the clock moves here and moves back after.
+            for dom in ("boards.gridfall.net", "gridline.social",
+                        "verityledger.com", "pulse.gridfall.net"):
+                go("synth://%s/" % dom, 260)
+            page.evaluate("(ms) => SYNTH.live.setNow(ms)",
+                          PINNED_NOW + 3 * 86400000)
+            page.wait_for_timeout(200)
+            before = page.evaluate(
+                "async () => (SYNTH.alerts.badge() || {}).count || 0")
+            page.evaluate("async () => { await SYNTH.alerts.markAllRead(); }")
+            page.wait_for_timeout(350)
+            after = page.evaluate(
+                "async () => (SYNTH.alerts.badge() || {}).count || 0")
+            page.evaluate("(ms) => SYNTH.live.setNow(ms)", PINNED_NOW)
+            if not before:
+                problems.append(
+                    "shell: nothing was unread after three simulated days, so "
+                    "the mark-all-read row asserted nothing")
+            else:
+                shell_rows += 1
+                if after:
+                    problems.append(
+                        f"shell: Mark all as read left the badge at {after} "
+                        f"of {before}")
+                else:
+                    notes.append(f"shell: Mark all as read cleared a badge of "
+                                 f"{before} to nothing")
+
+            # 4. The control panel described a twelve-site archive that packs
+            #    add a 2026 half to. The build ships 109 sites, all of them.
+            # EVERY control screen, not just the front one. The second
+            # version of this row read "/" alone, and the sentence it was
+            # written for -- "all twelve built-in sites are always there" --
+            # is on /packs, so reverting the fix sailed through again. Two
+            # screens state a site count and the row has to read both.
+            known = page.evaluate("() => SYNTH.data.list().length")
+            body = ""
+            for leaf in ("/", "/packs", "/compose", "/me", "/storage"):
+                go("synth://control.verity.net" + leaf, 460)
+                body += "\n" + page.inner_text("#synth-viewport")
+            shell_rows += 1
+            # Digits AND words. The first version of this row matched
+            # `[\d,]{2,7}` only, so when the fix was reverted to the original
+            # wording -- "all twelve built-in sites are always there" -- it
+            # sailed through: the bug it was written for was spelled out, not
+            # typed in numerals. A row that cannot catch its own bug is not a
+            # row, and this file has now learned that lesson twice.
+            stated = set()
+            for word in re.findall(r"\b([\w-]+)\s+(?:built-in\s+)?sites\b",
+                                   body):
+                n = as_number(word)
+                if n is not None:
+                    stated.add(n)
+            if not stated:
+                problems.append(
+                    "shell: the control panel states no site count at all, so "
+                    "this row asserted nothing")
+            elif any(n != known for n in stated):
+                problems.append(
+                    f"shell: the control panel says {sorted(stated)} site(s) "
+                    f"and the registry holds {known}")
+            else:
+                notes.append(f"shell: the control panel's site count matches "
+                             f"the registry ({known})")
+
+            if shell_rows < 4:
+                problems.append(
+                    f"shell: only {shell_rows} of 4 shell rows reached "
+                    "anything -- a selector has stopped matching, which reads "
+                    "exactly like a clean sweep")
 
             browser.close()
     finally:

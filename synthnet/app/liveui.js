@@ -99,11 +99,27 @@
 
   /* --- live counters ---------------------------------------------------- */
 
+  /* The phpBB line this imitates is "N users online :: X registered, Y
+   * hidden and Z guests", and its parts add up to N. This one did not: it
+   * took guests as 0.55-0.85 of the total and bots as 0.93 of it, so the
+   * breakdown came to 1.48-1.78 times the number it was breaking down.
+   * "100 users online · 70 guests · 93 automated", on every forum, board
+   * and portal front page.
+   *
+   * The share is now read from automatedShare() rather than a second
+   * hardcoded 0.93, because the start page prints that same share as a
+   * percentage and the two had drifted apart -- 93% here against 96.2-99.1%
+   * there. One number, one source.
+   *
+   * The joke survives the arithmetic and lands harder for it: what is left
+   * after the bots and the guests is the handful of actual registered
+   * people, and now you can do that subtraction on the page. */
   function onlineBar(domain, low, high) {
     var l = live();
     var users = l.online(domain, low || 40, high || 900);
-    var guests = Math.round(users * (0.55 + (l.rng(domain)() * 0.3)));
-    var bots = Math.max(1, Math.round(users * 0.93));
+    var bots = Math.min(users, Math.max(1, Math.round(users * (automatedShare(domain) / 100))));
+    var rest = Math.max(0, users - bots);
+    var guests = Math.round(rest * (0.55 + (l.rng(domain)() * 0.3)));
     /* data-lv-online is what app/tick.js reads to repaint this in place
      * every few seconds. Without it the number is computed once at paint
      * and then sits there, which is the tell that a page is a screenshot. */

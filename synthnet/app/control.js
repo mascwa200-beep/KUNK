@@ -453,7 +453,7 @@ window.SYNTH = window.SYNTH || {};
     about.appendChild(el('p', { 'class': 'cp-prose' },
       'This app has no network permission. Not a restricted one -- none. It cannot open a socket. Everything you see was either shipped inside the app or came from a file you handed it yourself.'));
     about.appendChild(el('p', { 'class': 'cp-prose' },
-      'The archive -- the twelve sites dated 1998 to 2008 -- is fixed. It does not change and cannot be edited. The present tense of the network, the part dated 2026, is built out of packs, and packs are just files. Import one and the network gets bigger. Remove it and the network shrinks back.'));
+      'The whole network ships with the build: 109 sites, of which sixteen are dated 1998 to 2008 and seventy-seven are dated 2026. None of it can be edited. Packs are how it gets BIGGER -- a pack is just a file. Import one and there are more sites. Remove it and the network shrinks back to what shipped.'));
     about.appendChild(el('p', { 'class': 'cp-prose' },
       'Nothing here phones home because there is no home to phone.'));
     root.appendChild(about);
@@ -558,7 +558,7 @@ window.SYNTH = window.SYNTH || {};
     about.appendChild(el('p', { 'class': 'cp-prose' },
       'A pack cannot run code. It is data. The renderers that draw it are the ones already in this app, which is why a pack has to name a type the app already knows.'));
     about.appendChild(el('p', { 'class': 'cp-prose' },
-      'Disabling a pack hides its sites without deleting them. Removing one deletes it. Neither touches the twelve archive sites, which are built in.'));
+      'Disabling a pack hides its sites without deleting them. Removing one deletes it. Neither touches the 109 sites that shipped with the build.'));
     root.appendChild(about);
   }
 
@@ -627,7 +627,7 @@ window.SYNTH = window.SYNTH || {};
       if (!list.length) {
         slot.appendChild(note('info', [
           'No packs installed.',
-          'The archive still works -- the twelve built-in sites are always there. A pack adds the 2026 half.'
+          'The network still works -- all 109 built-in sites are always there. A pack only ever adds to them.'
         ]));
         return;
       }
@@ -1132,7 +1132,7 @@ window.SYNTH = window.SYNTH || {};
     /* --- danger --- */
     var danger = card('Reset everything');
     danger.appendChild(el('p', { 'class': 'cp-prose' },
-      'Deletes your account, your posts, your sites and every pack you imported. The twelve archive sites come back untouched, because they were never yours to delete. There is no undo and nothing is backed up anywhere, because there is no anywhere.'));
+      'Deletes your account, your posts, your sites and every pack you imported. The 109 built-in sites come back untouched, because they were never yours to delete. There is no undo and nothing is backed up anywhere, because there is no anywhere.'));
     var dStatus = el('div', { 'class': 'cp-status', 'aria-live': 'polite' });
     danger.appendChild(confirmChain(
       ['Reset everything', 'This erases everything. Tap again.'],
@@ -1157,10 +1157,25 @@ window.SYNTH = window.SYNTH || {};
 
   function milestonesCard() {
     var c = card('Milestones', 'The thresholds the feeds treat as meaningful.');
+    /* fame.js exports milestones as a FUNCTION of the profile -- it has to
+     * be, because `unlocked` depends on your follower count. This card read
+     * it as data, and since `for (k in fn)` yields nothing, every build has
+     * printed "The table is empty." over a sixteen-row ladder. The
+     * array-or-object branch below stays: it costs nothing and this card is
+     * the kind of thing a pack could one day hand a plain table to. */
     var ms = (S.fame && S.fame.milestones) ? S.fame.milestones : null;
     if (!ms) {
       c.appendChild(el('p', { 'class': 'cp-hint' }, 'No milestone table in this build.'));
       return c;
+    }
+    if (typeof ms === 'function') {
+      var who = null;
+      try { who = S.me && S.me.profile ? S.me.profile() : null; } catch (e) { who = null; }
+      try { ms = ms(who); } catch (e) { ms = null; }
+      if (!ms) {
+        c.appendChild(el('p', { 'class': 'cp-hint' }, 'No milestone table in this build.'));
+        return c;
+      }
     }
     var arr = [];
     var i, k;
@@ -1182,7 +1197,11 @@ window.SYNTH = window.SYNTH || {};
         var at = firstNum(m.at, m.threshold, m.followers, m.count, m.value);
         if (at !== null) { detail = (S.live && S.live.commas) ? S.live.commas(at) : String(at); }
         else if (typeof m.value === 'string') { detail = m.value; }
-        hit = !!(m.reached || m.hit || m.done);
+        /* `unlocked` is what fame.js actually sets. The other three were
+         * guesses at a field name and none of them was ever true, so no row
+         * has ever been marked reached even on an account past the top of
+         * the ladder. */
+        hit = !!(m.unlocked || m.reached || m.hit || m.done);
       } else {
         label = String(m);
       }

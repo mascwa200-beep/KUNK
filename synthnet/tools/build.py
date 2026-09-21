@@ -849,19 +849,59 @@ def build_search(loaded):
                 continue
             docs.append({"d": domain, "p": doc["p"], "t": doc["t"], "lower": full.lower()})
 
+    # Count occurrences, not just presence. The cap below needs to know which
+    # postings are the weak ones, and the old version had no idea: it stored a
+    # bare list of doc indices and then took `sorted(...)[:MAX_POSTINGS]`.
+    #
+    # Documents are appended in domain-alphabetical order, so a doc index IS
+    # roughly the domain's position in the alphabet, and sorting by it and
+    # slicing kept THE START OF THE ALPHABET. Measured before this change:
+    # 187 terms were capped, and "gridfall" -- on a network whose county seat
+    # is Gridfall -- held 200 postings spanning 31 domains, ending at
+    # gridfalldeals.com. wiki.gridfall.net, pulse.gridfall.net and
+    # webring.gridfall.net were not reachable through the index at all, while
+    # engine.js:1205 called it "Searching the whole of VerityNet, offline".
     postings = {}
     for index, doc in enumerate(docs):
-        seen = set()
+        counts = {}
         for match in _TOKEN.finditer(doc["lower"]):
             token = match.group(0)
-            if len(token) < MIN_TOKEN or token in STOPLIST or token in seen:
+            if len(token) < MIN_TOKEN or token in STOPLIST:
                 continue
-            seen.add(token)
-            postings.setdefault(token, []).append(index)
+            counts[token] = counts.get(token, 0) + 1
+        for token, freq in counts.items():
+            postings.setdefault(token, []).append((index, freq))
 
     terms = {}
+    capped = 0
     for token in sorted(postings):
-        terms[token] = sorted(set(postings[token]))[:MAX_POSTINGS]
+        rows = postings[token]
+        if len(rows) <= MAX_POSTINGS:
+            terms[token] = sorted(i for i, _f in rows)
+            continue
+        capped += 1
+        # A whole site disappearing from a common word is the failure that was
+        # actually happening, so coverage comes first: the strongest document
+        # from each domain, and only then the strongest of what is left.
+        best = {}
+        for i, freq in rows:
+            dom = docs[i]["d"]
+            if dom not in best or freq > best[dom][1]:
+                best[dom] = (i, freq)
+        strongest = sorted(best.values(), key=lambda r: (-r[1], r[0]))
+        if len(strongest) > MAX_POSTINGS:
+            keep = set(i for i, _f in strongest[:MAX_POSTINGS])
+        else:
+            keep = set(i for i, _f in strongest)
+            for i, _f in sorted(rows, key=lambda r: (-r[1], r[0])):
+                if len(keep) >= MAX_POSTINGS:
+                    break
+                keep.add(i)
+        terms[token] = sorted(keep)
+
+    if capped:
+        print("search      %d term(s) hit the %d-posting cap; kept the "
+              "strongest per domain first" % (capped, MAX_POSTINGS))
     table = [{"d": doc["d"], "p": doc["p"], "t": doc["t"]} for doc in docs]
     return {"version": SEARCH_VERSION, "docs": table, "terms": terms}
 

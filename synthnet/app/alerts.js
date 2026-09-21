@@ -274,10 +274,16 @@
     if (has(SYNTH.fame.events)) {
       var world = [];
       try { world = SYNTH.fame.events(profile) || []; } catch (e) { world = []; }
+      /* Fame events have no timestamp of their own -- they are true or not
+       * true of your follower count, and fame.events() hands back every one
+       * at or below it. The seen-marker cannot filter them, because the row
+       * was being stamped nowMs() and so was always newer than the mark.
+       * The follower count IS their clock: a milestone is new when you
+       * cross it, so anything already crossed when you last pressed the
+       * button is not news. */
+      var mark = seenFollowers();
       world.forEach(function (e) {
-        /* Fame events have no timestamp of their own -- they are true or not
-         * true of your follower count. Treat one as "new" if it has not been
-         * seen, which the seen-marker below handles. */
+        if (typeof e.at === 'number' && e.at <= mark) { return; }
         out.push(ev('fame:' + e.id, nowMs(), 'world', 'mention',
                     e.title, firstLine(e.body),
                     e.domain ? 'synth://' + e.domain + '/' : '', ''));
@@ -391,9 +397,53 @@
     return nowMs() - DAY;
   }
 
+  /* "Mark all as read" wrote one timestamp and nothing else, and none of the
+   * three things that build the list was reading it.
+   *
+   * subscriptionEvents() and ambientEvents() take a `since` and never look
+   * at it: their rows come from countFor(rec), which counts wall-clock slots
+   * elapsed since that domain's VISIT record. No timestamp comparison can
+   * clear those, because the row is not an event with a time -- it is a
+   * standing count of "what happened since you last looked". So marking
+   * everything read has to say that you have now looked, which is what
+   * advancing the visit records does.
+   *
+   * fame world events have no time at all. fame.events() returns every
+   * milestone at or below your follower count, forever, and alerts stamped
+   * each one nowMs() -- always newer than the seen mark, so always new. The
+   * only currency they have is the follower count itself, so that is what
+   * gets marked: a milestone is new when your followers cross it.
+   *
+   * The net effect before this: the button repainted nothing. You pressed
+   * it, the rows stayed, the badge stayed, and the header went on saying
+   * "In the moment since you last checked: 4 things addressed to you". */
   function markAllRead() {
     if (!store()) return Promise.resolve(false);
-    return store().put(STATE, 'seen', nowMs());
+    var now = nowMs();
+    var jobs = [store().put(STATE, 'seen', now)];
+
+    var followers = 0;
+    try {
+      if (SYNTH.me && has(SYNTH.me.profile)) {
+        followers = Math.max(0, Number((SYNTH.me.profile() || {}).followers) || 0);
+      }
+    } catch (e) { followers = 0; }
+    jobs.push(store().put(STATE, 'seenfollowers', followers));
+
+    var visits = allVisits();
+    Object.keys(visits).forEach(function (domain) {
+      var rec = visits[domain];
+      jobs.push(store().put(VISITS, domain,
+                            { at: now, feeds: rec.feeds || [] }));
+    });
+
+    return Promise.all(jobs).then(function () { return true; });
+  }
+
+  function seenFollowers() {
+    if (!store()) return 0;
+    var v = store().get(STATE, 'seenfollowers', 0);
+    return Math.max(0, Number(v) || 0);
   }
 
   /* --- the badge ----------------------------------------------------------
