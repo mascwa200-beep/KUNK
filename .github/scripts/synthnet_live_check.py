@@ -60,6 +60,22 @@ def launch(pw):
         return pw.chromium.launch(executable_path=found[-1])
 
 
+# The registers whose copy is written as prose. social, wiki edit summaries,
+# board and chat open lowercase on purpose, and that lowercase is literal in
+# the template rather than a value grammar.js substitutes.
+FORMAL_REGISTERS = {"wire", "news", "aggregator", "forum", "qa", "assistant",
+                    "blog"}
+
+
+def mentions(text, phrase):
+    """Is `phrase` in `text`, either as written or sentence-capitalised?"""
+    if not phrase:
+        return False
+    if phrase in text:
+        return True
+    return (phrase[0].upper() + phrase[1:]) in text
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="synthnet")
@@ -615,6 +631,7 @@ def main():
             # the end. The window is pinned to EPOCH rather than to today,
             # so this says the same thing in CI next March as it does now.
             page.evaluate("SYNTH.live.setNow(null)")
+            fragments, formal_seen = [], 0
             prop = page.evaluate("""() => {
               const L = SYNTH.live, EP = L.EPOCH, SLOT = 360 * 60000;
               const rows = SYNTH.data.list() || [];
@@ -800,7 +817,16 @@ def main():
                         % w["domain"])
                     page.wait_for_timeout(300)
                     text = page.inner_text("#synth-viewport")
-                    if prop["subject"] not in text and prop["where"] not in text:
+                    # Either spelling of the phrase. grammar.js capitalises
+                    # a slot value it drops at a SENTENCE START -- the anchor
+                    # subjects are bare noun phrases so that they read inside
+                    # a sentence, and a template that opens with one was
+                    # filing "the closing of the Verity Rail branch line."
+                    # as a whole dispatch. This test is about whether the
+                    # page mentions the story, and a capital at the front of
+                    # a sentence is not a different story.
+                    if not mentions(text, prop["subject"]) and \
+                            not mentions(text, prop["where"]):
                         problems.append(
                             f"{w['domain']} is hop {w['hop']} of "
                             f"{prop['id']} and the page does not mention it")
@@ -816,6 +842,33 @@ def main():
                             f"the story is {100 * (len(w['title']) + len(w['body'])) // len(text)}%"
                             f" of {w['domain']}")
                 page.evaluate("SYNTH.live.setNow(null)")
+                # A hop's copy is a sentence, not a phrase.
+                #
+                # grammar.js's anchor subjects and fact values are bare noun
+                # phrases -- "the closing of the Verity Rail branch line",
+                # "an abandonment filing by Verity Rail" -- written that way
+                # so they read inside a sentence. Templates that OPEN with
+                # one were emitting it as the whole line, so every screen of
+                # veritywire.press carried a BULLETIN reading "the closing of
+                # the Verity Rail branch line." and its dek read "2008. 14
+                # March 2008. an abandonment filing by Verity Rail."
+                #
+                # Only the formal registers. social, wiki edit summaries,
+                # board and chat open lowercase on purpose, and that
+                # lowercase is LITERAL in the template rather than anything
+                # this file substitutes.
+                for w in walk:
+                    if w["type"] not in FORMAL_REGISTERS:
+                        continue
+                    formal_seen += 1
+                    for field in ("title", "body"):
+                        v = str(w.get(field) or "").strip()
+                        if v and v[0].islower():
+                            fragments.append(
+                                f"{w['domain']} hop {w['hop']} of "
+                                f"{prop['id']} files a {field} that opens "
+                                f"mid-sentence: {v[:60]!r}")
+
                 eligible = sum(1 for w in walk if w["type"] in wired)
                 if shown < 3:
                     problems.append(
@@ -824,6 +877,20 @@ def main():
                 else:
                     notes.append(f"{shown} of {eligible} hops visibly carry "
                                  "the story on the page itself")
+
+            if fragments:
+                problems.extend(fragments[:4])
+                if len(fragments) > 4:
+                    problems.append(
+                        f"{len(fragments)} story fields in all open "
+                        "mid-sentence")
+            elif formal_seen:
+                notes.append(f"{formal_seen} hop(s) in a prose register file "
+                             "copy that starts a sentence where it starts")
+            else:
+                problems.append(
+                    "no hop of the story landed on a prose register, so "
+                    "nothing checked whether its copy reads as a sentence")
 
             # The canon guard. Two facts in ANCHORS turned out not to be in
             # WORLD.md at all when this was written, and both had already

@@ -961,27 +961,73 @@ window.SYNTH = window.SYNTH || {};
    * one, {src} the last. A template then reads correctly for all six anchors
    * and there is no slot that can fail to resolve.
    */
+  function capFirst(s) {
+    var t = String(s == null ? '' : s);
+    return t ? t.charAt(0).toUpperCase() + t.slice(1) : t;
+  }
+
+  /* Does position `i` in the TEMPLATE begin a sentence?
+   *
+   * Every slot value is a bare noun phrase -- "the closing of the Verity
+   * Rail branch line", "an abandonment filing by Verity Rail" -- because
+   * that is what makes it drop into the middle of a sentence. Dropped at
+   * the START of one it produced a fragment, and veritywire.press filed one
+   * on every screen: a BULLETIN row reading "the closing of the Verity Rail
+   * branch line." with a full stop after it and nothing before it. The dek
+   * template is three slots and two full stops, so it came out as
+   * "2008. 14 March 2008. an abandonment filing by Verity Rail."
+   *
+   * The test is on the template, not the output, and that is the whole
+   * point: the lowercase in "people still have {subject} wrong" and in the
+   * wiki's "rv -- the source says {claim}" is LITERAL, written that way on
+   * purpose because that is how a social post and an edit summary read.
+   * Literal text is never touched here. Only a value this file substitutes
+   * gets a capital, and only where the author put it at a sentence start.
+   */
+  function atSentenceStart(tpl, i) {
+    var before = String(tpl).slice(0, i).replace(/\s+$/, '');
+    if (!before) { return true; }
+    var ch = before.charAt(before.length - 1);
+    if (ch !== '.' && ch !== '!' && ch !== '?') { return false; }
+    /* "Substation No. 3" and "5:02 a.m. on" are not ends of sentences --
+     * the same short-word test wire.js firstLine() uses. */
+    var w = before.slice(0, -1).match(/[A-Za-z0-9]+$/);
+    return !(w && w[0].length <= 3);
+  }
+
   function storyFill(tpl, view, seed) {
     var facts = view.facts || [];
     function at(i) {
       return (i >= 0 && i < facts.length) ? factOf(view, facts[i].k) : '';
     }
-    var out = String(tpl)
-      .replace(/\{subject\}/g, view.subject || 'it')
-      .replace(/\{where\}/g, view.where || 'the county')
-      .replace(/\{trigger\}/g, view.trigger || 'people are talking about it')
-      .replace(/\{when\}/g, at(0))
-      .replace(/\{claim\}/g, at(1))
-      .replace(/\{detail\}/g, at(facts.length > 2 ? 2 : 1))
-      .replace(/\{extra\}/g, at(facts.length > 3 ? 3 : facts.length - 1))
-      .replace(/\{src\}/g, at(facts.length - 1));
-    /* Also allow addressing a fact by its own key, for a template written
-     * against one specific anchor. */
+    var slots = {
+      subject: view.subject || 'it',
+      where: view.where || 'the county',
+      trigger: view.trigger || 'people are talking about it',
+      when: at(0),
+      claim: at(1),
+      detail: at(facts.length > 2 ? 2 : 1),
+      extra: at(facts.length > 3 ? 3 : facts.length - 1),
+      src: at(facts.length - 1)
+    };
+    /* A template may also address a fact by its own key, for one written
+     * against a single anchor. Canon slots win, so an anchor that happens to
+     * name a fact "where" cannot shadow {where}. */
     var i;
     for (i = 0; i < facts.length; i++) {
-      out = out.split('{' + facts[i].k + '}').join(factOf(view, facts[i].k));
+      if (!Object.prototype.hasOwnProperty.call(slots, facts[i].k)) {
+        slots[facts[i].k] = factOf(view, facts[i].k);
+      }
     }
-    return out;
+    /* One pass, so the offset is an offset into the template the author
+     * wrote. A name this file does not know is returned untouched, which is
+     * what keeps {{merge_field}} intact -- the inner {merge_field} matches
+     * this pattern and must come back out exactly as it went in. */
+    return String(tpl).replace(/\{(\w+)\}/g, function (m, name, off) {
+      if (!Object.prototype.hasOwnProperty.call(slots, name)) { return m; }
+      var v = slots[name];
+      return atSentenceStart(tpl, off) ? capFirst(v) : v;
+    });
   }
 
   /* One bank per role. Each is what THAT site does with a story, not a
