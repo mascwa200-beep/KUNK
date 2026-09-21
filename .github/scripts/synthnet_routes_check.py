@@ -191,6 +191,13 @@ def authoring_table(root):
     return out
 
 
+def crawl_cap(workflow):
+    """The --pages the workflow gives the function check, or None."""
+    text = workflow.read_text(encoding="utf-8")
+    m = re.search(r"synthnet_function_check\.py[^\n]*--pages\s+(\d+)", text)
+    return int(m.group(1)) if m else None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default="synthnet")
@@ -318,6 +325,38 @@ def main():
                 f"docs/AUTHORING.md documents a type {t!r} with no renderer")
         notes.append(f"docs/AUTHORING.md documents {len(doc)} type(s), all "
                      "matching what their renderer serves")
+
+    # ---- the function crawl has to be able to reach every route ---------
+    #
+    # synthnet_function_check.py walks each site from "/" following links and
+    # stops at --pages. It is the only check that presses controls, so a
+    # route it cannot reach in principle is a route whose buttons are never
+    # pressed. At --pages 6 that was forum, media and wiki -- 13 sites whose
+    # renderers serve more routes than the crawl could visit.
+    #
+    # The cap is the widest renderer plus its front door, so it moves when a
+    # renderer gains a route rather than being a number somebody picked.
+    workflow = root.parent / ".github" / "workflows" / "synthnet.yml"
+    if not workflow.is_file():
+        notes.append("no workflow file next to the root; crawl cap unchecked")
+    else:
+        cap = crawl_cap(workflow)
+        widest = max((len(v) for v in parsed.values()), default=0) + 1
+        if cap is None:
+            problems.append(
+                "the workflow does not pass --pages to the function check, "
+                "so nothing pins how far it crawls")
+        elif cap < widest:
+            worst = sorted((t for t, v in parsed.items()
+                            if len(v) + 1 > cap))
+            problems.append(
+                f"the function check crawls {cap} page(s) per site and "
+                f"{', '.join(worst)} serve{'s' if len(worst) == 1 else ''} up "
+                f"to {widest} -- those routes are never reached, so their "
+                "controls are never pressed")
+        else:
+            notes.append(f"the function crawl visits {cap} pages per site, "
+                         f"enough for the widest renderer's {widest}")
 
     # ---- TYPE_PROBES may not invent a route, and its gaps are named ------
     tp = type_probes(scripts)

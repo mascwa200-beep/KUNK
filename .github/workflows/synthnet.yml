@@ -273,7 +273,7 @@ jobs:
         # that change, 288 for 348 after. I guessed seven or eight minutes
         # when I added this; it is under five, so the budget stays at six
         # and --press stays uncapped.
-        run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 6
+        run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 9
 
       - name: No page may contradict itself
         # Every other check asks whether a page renders, whether its links go
