@@ -29,6 +29,8 @@ on:
       - ".github/scripts/synthnet_standalone_check.py"
       - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
+      - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_routes_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -45,6 +47,8 @@ on:
       - ".github/scripts/synthnet_standalone_check.py"
       - ".github/scripts/synthnet_claims_check.py"
       - ".github/scripts/synthnet_apk_check.py"
+      - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_routes_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -117,6 +121,25 @@ jobs:
         # reads the two rendered pages; this one stops the shape of that bug
         # reaching a page at all.
         run: python3 .github/scripts/synthnet_counter_keys_check.py --root synthnet
+
+      - name: Every path table must answer to the renderers
+        # What paths a type serves was written down five times by hand --
+        # PATH_PREFIXES, its copy in the link check, the table in
+        # docs/AUTHORING.md, TYPE_PROBES in the smoke check, ROLE_PATH in
+        # live.js -- and derived from the renderers in none of them. Only
+        # one of those pairs was checked against another.
+        #
+        # The cost is not a doc reading badly. A route PATH_PREFIXES lacks
+        # is a working link the link check calls dead; one it has with no
+        # branch behind it is a link waved through to a 404; and one missing
+        # from TYPE_PROBES is a page the smoke sweep never loads. That last
+        # is how a rule matching "[url=" since the day it was written sat
+        # over a page rendering raw markup.
+        #
+        # Static, no browser. Twenty routes had no probe when this was
+        # written; they have one now, and a new route without one is a
+        # build failure.
+        run: python3 .github/scripts/synthnet_routes_check.py --root synthnet
 
       - name: Build, and confirm the committed generated files are current
         run: |

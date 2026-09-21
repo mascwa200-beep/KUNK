@@ -221,31 +221,43 @@ same `<table>` the others draw, so nothing in the content changes.
 ## 3. Paths per type
 
 The renderers and your content must agree on these. Nothing else routes, and
-a path no renderer serves is a link that 404s. `PATH_PREFIXES` in
-`tools/validate.py` is the authority.
+a path no renderer serves is a link that 404s.
+
+**The renderers are the authority, and this table is checked against them.**
+`.github/scripts/synthnet_routes_check.py` parses the `path[0] === '...'`
+branches out of every `app/types/*.js` and fails the build if this table,
+`PATH_PREFIXES` in `tools/validate.py`, `TYPE_PROBES` in the smoke check or
+`ROLE_PATH` in `app/live.js` disagrees with what is actually served.
+
+It exists because the same fact was written down in five places by hand and
+derived in none, and this table had drifted: it was missing `/modlog`,
+`/faq`, `/search`, `/members` and `/account` on `forum`, `/cart` on `shop`,
+`/catalog` on `board`, `/kw/` on `wire`, four routes on `media`, three on
+`social` — and had no `control` row at all.
 
 | type | paths |
 |---|---|
-| `forum` | `/` `/board/<boardId>` `/topic/<topicId>` |
-| `social` | `/` `/user/<handle>` `/post/<postId>` |
+| `forum` | `/` `/board/<boardId>` `/topic/<topicId>` `/modlog` `/faq` `/search` `/members` `/members/<name>` `/account` `/account/<screen>` |
+| `social` | `/` `/user/<handle>` `/post/<postId>` `/search` `/members` `/account` |
 | `blog` | `/` `/post/<postId>` `/tag/<tag>` |
-| `news` | `/` `/section/<sectionId>` `/article/<articleId>` `/live/<liveId>` `/factcheck/<checkId>` `/corrections` |
+| `news` | `/` `/section/<sectionId>` `/article/<articleId>` `/live` `/live/<liveId>` `/factcheck` `/factcheck/<checkId>` `/corrections` |
 | `wiki` | `/` `/wiki/<articleId>` `/category/<categoryId>` `/history/<articleId>` `/diff/<articleId>/<rev>` `/talk/<articleId>` `/changes` |
-| `media` | `/` `/watch/<itemId>` `/channel/<channelId>` |
+| `media` | `/` `/watch/<itemId>` `/channel/<channelId>` `/channels` `/members` `/search` `/upload` `/signup` |
 | `page` | `/` `/<pageId>` |
 | `aggregator` | `/` `/board/<boardId>` `/item/<linkId>` |
 | `qa` | `/` `/tag/<tagId>` `/q/<questionId>` |
-| `board` | `/` `/t/<threadId>` |
-| `shop` | `/` `/c/<catId>` `/p/<productId>` |
+| `board` | `/` `/t/<threadId>` `/catalog` |
+| `shop` | `/` `/c/<catId>` `/p/<productId>` `/cart` |
 | `market` | `/` `/c/<catId>` `/l/<listingId>` |
 | `assistant` | `/` `/chat` |
 | `mail` | `/` `/f/<folderId>` `/m/<messageId>` |
 | `portal` | `/` `/s/<serviceId>` |
 | `stream` | `/` `/c/<channelId>` `/w/<videoId>` |
 | `dash` | `/` only |
-| `wire` | `/` `/d/<dispatchId>` `/cat/<categoryId>` |
+| `wire` | `/` `/d/<dispatchId>` `/cat/<categoryId>` `/kw/<keyword>` |
 | `newsletter` | `/` `/i/<issueId>` |
 | `chat` | `/` `/c/<channelId>` |
+| `control` | `/` `/packs` `/compose` `/me` `/storage` — no authored data; every screen reads runtime state |
 
 For a `page` site, the page whose `id` is `index` is the root.
 

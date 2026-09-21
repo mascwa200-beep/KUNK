@@ -30,6 +30,19 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
 # Substrings that must never reach the rendered page. Each one means a renderer
 # passed a markup-bearing string through as plain text.
+# Pages whose job is to SHOW markup rather than render it. One entry, with
+# its reason, and the run fails if it ever matches nothing -- an exemption
+# nothing uses is an exemption nobody re-reads.
+#
+# Found the first time the route table was derived from the renderers and
+# /compose got a probe: it had never been rendered by any check.
+MARKUP_IS_THE_CONTENT = {
+    "synth://control.verity.net/compose":
+        "the composer's 'What the data has to look like' card documents the "
+        "six markup forms, so it prints [url=...] and [list][*] as text on "
+        "purpose (app/control.js:917-919)",
+}
+
 # A count of one printed against a plural noun.
 #
 # gridline.social's front page said "1 comments", shoutbox.live's said
@@ -61,40 +74,51 @@ LEAK_MARKERS = ["[url=", "[b]", "[/b]", "[i]", "[/i]", "[quote", "[img:", "[list
                 # visibly on every user post once.
                 "[object Object]", "undefined undefined", "NaN"]
 
-# One representative path per site type, formatted with the first id found.
-# Kept in sync with the path table in synthnet/docs/AUTHORING.md.
+# One path per route each site type serves, formatted with the first id found.
+#
+# The line here used to say "kept in sync with the path table in
+# synthnet/docs/AUTHORING.md", and it was not -- in either direction. It had
+# /faq, /search, /members and /account the doc lacked, and lacked twenty
+# routes the renderers serve, including every wiki sub-route but the article.
+# Nothing asserted any of it.
+#
+# synthnet_routes_check.py now derives the routes from the renderers and
+# fails the build if this list invents one or misses one. That is the only
+# reason the claim above is true now.
 TYPE_PROBES = {
     "forum": ["/", "/board/{board}", "/topic/{topic}", "/faq", "/search",
-              "/members", "/account/register"],
-    "social": ["/", "/post/{post}", "/search", "/members", "/account"],
-    "blog": ["/", "/post/{post}"],
+              "/members", "/account/register", "/modlog"],
+    "social": ["/", "/post/{post}", "/search", "/members", "/account",
+               "/user/{handle}"],
+    "blog": ["/", "/post/{post}", "/tag/{blogtag}"],
     "news": ["/", "/article/{article}", "/live/{live}", "/factcheck/{check}",
-             "/corrections"],
-    "wiki": ["/", "/wiki/{article}"],
+             "/corrections", "/section/{section}"],
+    "wiki": ["/", "/wiki/{article}", "/category/{category}", "/changes",
+             "/history/{article}", "/talk/{article}"],
     "media": ["/", "/watch/{item}", "/channels", "/members", "/search",
-              "/upload", "/signup"],
+              "/upload", "/signup", "/channel/{channel}"],
     "page": ["/"],
     # The 2026 types. Without their sub-paths listed here only the index of
     # each was ever loaded, leaving most of every new renderer unexercised --
     # and an index that works says nothing about the detail page.
-    "aggregator": ["/", "/item/{link}"],
-    "qa": ["/", "/q/{question}"],
-    "board": ["/", "/t/{thread}"],
-    "shop": ["/", "/p/{product}", "/cart"],
-    "market": ["/", "/l/{listing}"],
+    "aggregator": ["/", "/item/{link}", "/board/{aggboard}"],
+    "qa": ["/", "/q/{question}", "/tag/{tag}"],
+    "board": ["/", "/t/{thread}", "/catalog"],
+    "shop": ["/", "/p/{product}", "/cart", "/c/{category}"],
+    "market": ["/", "/l/{listing}", "/c/{cat}"],
     "assistant": ["/", "/chat"],
-    "mail": ["/", "/m/{message}"],
+    "mail": ["/", "/m/{message}", "/f/{folder}"],
     "portal": ["/", "/s/{service}"],
-    "stream": ["/", "/w/{video}"],
+    "stream": ["/", "/w/{video}", "/c/{channel}"],
     "dash": ["/"],
-    "control": ["/", "/packs", "/me", "/storage"],
+    "control": ["/", "/packs", "/me", "/storage", "/compose"],
     # The routes the decor sweep added. Nothing had ever rendered them: the
     # adversarial pass pointed out that smoke's probe list stopped at the
     # shapes each type had in 2024, so /search, /members and /account -- all
     # brand new, all reachable from the nav on every page -- had never once
     # been through the 360px sweep or the leaked-markup check.
     # News that is not video, plus the chat the forums migrated to.
-    "wire": ["/", "/d/{dispatch}", "/kw/62"],
+    "wire": ["/", "/d/{dispatch}", "/kw/62", "/cat/{cat}"],
     "newsletter": ["/", "/i/{issue}"],
     "chat": ["/", "/c/{channel}"],
 }
@@ -129,6 +153,31 @@ def first_id(container, *keys):
     return None
 
 
+def first_str(container, key, field):
+    """First string in container[key][0][field], e.g. a blog post's tag."""
+    seq = container.get(key)
+    if isinstance(seq, list):
+        for row in seq:
+            if not isinstance(row, dict):
+                continue
+            vals = row.get(field)
+            if isinstance(vals, list) and vals and isinstance(vals[0], str):
+                return vals[0]
+    return None
+
+
+def first_field(container, keys, field):
+    """First non-empty `field` on any row under any of `keys`."""
+    for key in keys:
+        seq = container.get(key)
+        if not isinstance(seq, list):
+            continue
+        for row in seq:
+            if isinstance(row, dict) and row.get(field):
+                return str(row[field])
+    return None
+
+
 def probes_for(site: dict) -> list:
     """Build the concrete URL paths to visit for one site."""
     data = site.get("data") or {}
@@ -151,6 +200,20 @@ def probes_for(site: dict) -> list:
         "dispatch": first_id(data, "dispatches"),
         "issue": first_id(data, "issues"),
         "channel": first_id(data, "channels"),
+        # Added when synthnet_routes_check.py derived the route table out of
+        # the renderers and named every route this list had no probe for.
+        # Twenty of them across fifteen types, including every wiki sub-route
+        # but the article.
+        "folder": first_id(data, "folders"),
+        "cat": first_id(data, "cats", "categories"),
+        "section": first_id(data, "sections"),
+        "tag": first_id(data, "tags"),
+        "category": first_id(data, "categories"),
+        "aggboard": first_id(data, "boards"),
+        # Two routes key off a value that is not an id: a blog tag is a bare
+        # string in posts[].tags[], and a social handle is read off the feed.
+        "blogtag": first_str(data, "posts", "tags"),
+        "handle": first_field(data, ("feed", "posts"), "handle"),
     }
     for cat in data.get("categories") or []:
         if isinstance(cat, dict):
@@ -237,6 +300,7 @@ def main() -> int:
             page.on("pageerror", lambda e: errors.append(str(e)))
 
             visited = 0
+            markup_exempt_hit = set()
             for entry in sites:
                 domain = entry.get("domain")
                 site_file = root / entry.get("path", "")
@@ -303,13 +367,16 @@ def main() -> int:
                             f"{where}: counts one and says many -> "
                             f"...{' '.join(text[lo:pm.end() + 25].split())!r}")
 
-                    for marker in LEAK_MARKERS:
-                        if marker in text:
-                            at = text.index(marker)
-                            failures.append(
-                                f"{where}: leaked raw markup {marker!r} -> "
-                                f"...{text[max(0, at - 30):at + 60]!r}")
-                            break
+                    if where in MARKUP_IS_THE_CONTENT:
+                        markup_exempt_hit.add(where)
+                    else:
+                        for marker in LEAK_MARKERS:
+                            if marker in text:
+                                at = text.index(marker)
+                                failures.append(
+                                    f"{where}: leaked raw markup {marker!r} "
+                                    f"-> ...{text[max(0, at - 30):at + 60]!r}")
+                                break
 
                     if followed < FOLLOW_PER_SITE:
                         for href in page.evaluate(
@@ -473,6 +540,11 @@ def main() -> int:
             browser.close()
     finally:
         httpd.shutdown()
+
+    for u in sorted(set(MARKUP_IS_THE_CONTENT) - markup_exempt_hit):
+        failures.append(
+            f"{u} is exempt from the markup check and was never rendered, so "
+            "the exemption is either stale or the page stopped being swept")
 
     if failures:
         print(f"FAIL: {len(failures)} problem(s) across {visited} page(s):")
