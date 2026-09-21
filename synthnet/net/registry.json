@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-09-21T08:13:32Z",
+  "generated": "2026-09-21T21:03:57Z",
   "sites": [
     {
       "domain": "62chan.org",
@@ -45,7 +45,7 @@
         "archive"
       ],
       "path": "net/sites/ashkettle-wx-net/site.json",
-      "bytes": 31185
+      "bytes": 31199
     },
     {
       "domain": "ashkettle.gov",
@@ -126,7 +126,7 @@
       "description": "General-purpose message board for Gridfall and the rest of Verity County.",
       "tags": [],
       "path": "net/sites/boards-gridfall-net/site.json",
-      "bytes": 37198
+      "bytes": 37199
     },
     {
       "domain": "brackenlanegarage.net",
@@ -640,7 +640,7 @@
         "substation"
       ],
       "path": "net/sites/gridfallvfd-org/site.json",
-      "bytes": 95466
+      "bytes": 95475
     },
     {
       "domain": "gridline.social",
@@ -720,18 +720,18 @@
         "mill-street"
       ],
       "path": "net/sites/hollismarket-com/site.json",
-      "bytes": 70033
+      "bytes": 70030
     },
     {
       "domain": "kestrel-journal.net",
-      "title": "kestrel journal",
+      "title": "The Blue Kestrel Journal",
       "type": "blog",
       "era": "2005",
       "skin": "movabletype-cream",
-      "description": "Jo Halloran's journal, written mostly after shifts at the Blue Kestrel diner in Gridfall.",
+      "description": "Marion Teale's memory site for the Blue Kestrel diner: the menus, the photographs, who sat in which booth, the 1977 fire, and an honest paragraph about the pie. Built 2002. Nothing new since 2019.",
       "tags": [],
       "path": "net/sites/kestrel-journal-net/site.json",
-      "bytes": 23910
+      "bytes": 18101
     },
     {
       "domain": "kestrelvapor.com",
@@ -800,10 +800,10 @@
       "type": "social",
       "era": "2005",
       "skin": "myspace-black",
-      "description": "Personal page belonging to Marla Kesswick of Marchfield, updated whenever she feels like it.",
+      "description": "Personal page belonging to Marla Vance of Marchfield, updated whenever she feels like it.",
       "tags": [],
       "path": "net/sites/marla-verity-net/site.json",
-      "bytes": 19342
+      "bytes": 19339
     },
     {
       "domain": "milbrookgazette.com",
@@ -899,7 +899,7 @@
       "description": "ClipVault in 2026. Nine channels serving Verity County, seven of which are not operated by anyone in Verity County.",
       "tags": [],
       "path": "net/sites/now-clipvault-tv/site.json",
-      "bytes": 34064
+      "bytes": 34065
     },
     {
       "domain": "now.verityledger.com",
@@ -986,7 +986,7 @@
       "description": "A small microblog for Gridfall and the rest of Verity County. Mostly road closures.",
       "tags": [],
       "path": "net/sites/pulse-gridfall-net/site.json",
-      "bytes": 19909
+      "bytes": 19910
     },
     {
       "domain": "quarrycut.net",
@@ -1463,7 +1463,7 @@
       "description": "The Verity County paper of record, published in Gridfall since 1901.",
       "tags": [],
       "path": "net/sites/verityledger-com/site.json",
-      "bytes": 37174
+      "bytes": 38234
     },
     {
       "domain": "veritymonuments.com",
@@ -1515,7 +1515,7 @@
         "archive"
       ],
       "path": "net/sites/verityrail-preservation-org/site.json",
-      "bytes": 36661
+      "bytes": 36657
     },
     {
       "domain": "verityrail.org",
@@ -1707,7 +1707,7 @@
       "description": "A community-maintained wiki covering Verity County, its towns, institutions and arguments.",
       "tags": [],
       "path": "net/sites/wiki-gridfall-net/site.json",
-      "bytes": 55840
+      "bytes": 64104
     }
   ]
 }

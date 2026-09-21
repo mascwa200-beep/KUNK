@@ -90,18 +90,25 @@ COPYRIGHT = re.compile(r"Copyright \([cC]\)\s*(\d{4})")
 DAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
         "Sunday")
 _D, _M = "|".join(DAYS), "|".join(MONTHS)
+# What may sit between a weekday and the date it names. A comma and a space is
+# the common case; a dash is not. marchfield-coop.com said "The Blue Kestrel
+# closed Saturday -- 27 November 2006", and 27 November 2006 was a Monday, and
+# this check read straight past it for a whole round because the separator was
+# not a space. A rule that only fires on the punctuation it expected is a rule
+# with a hole in it exactly the shape of the next mistake.
+_SEP = r"(?:,?\s+|\s*[-\u2013\u2014]{1,2}\s*)"
 # Tier one: the year is in the phrase.
 DATED_DAY = (
-    re.compile(r"\b(" + _D + r"),?\s+(\d{1,2})(?:st|nd|rd|th)?\s+(" + _M +
-               r"),?\s+((?:19|20)\d{2})\b"),
-    re.compile(r"\b(" + _D + r"),?\s+(" + _M +
+    re.compile(r"\b(" + _D + r")" + _SEP + r"(\d{1,2})(?:st|nd|rd|th)?\s+(" +
+               _M + r"),?\s+((?:19|20)\d{2})\b"),
+    re.compile(r"\b(" + _D + r")" + _SEP + r"(" + _M +
                r")\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+((?:19|20)\d{2})\b"),
 )
 # Tier two: it is not, and the record's own date has to supply it.
 BARE_DAY = (
-    re.compile(r"\b(" + _D + r"),?\s+(\d{1,2})(?:st|nd|rd|th)?\s+(" + _M +
-               r")\b(?!,?\s+(?:19|20)\d{2})"),
-    re.compile(r"\b(" + _D + r"),?\s+(" + _M +
+    re.compile(r"\b(" + _D + r")" + _SEP + r"(\d{1,2})(?:st|nd|rd|th)?\s+(" +
+               _M + r")\b(?!,?\s+(?:19|20)\d{2})"),
+    re.compile(r"\b(" + _D + r")" + _SEP + r"(" + _M +
                r")\s+(\d{1,2})(?:st|nd|rd|th)?\b(?!,?\s+(?:19|20)\d{2})"),
 )
 YEAR = re.compile(r"\b((?:19|20)\d{2})\b")

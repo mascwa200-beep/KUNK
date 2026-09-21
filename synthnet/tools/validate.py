@@ -1072,6 +1072,95 @@ DISPUTES = [
 ]
 
 
+# Facts the ARCHIVE has to agree on.
+#
+# DISPUTES above is about arguments the world is supposed to be having: a bot
+# site being wrong is the mechanic working. This table is the opposite. These
+# are facts, the pre-2026 layer is where a reader goes to check the bots, and
+# an archive that contradicts itself leaves them nothing to check against.
+#
+# Every row here is a contradiction that was actually shipped. A 70,716-pair
+# sweep of the prose found them; each is quoted in the commit that fixed it.
+#
+# The Blue Kestrel was the worst of them, and not because a date was typed
+# wrong. There were two internally coherent histories of one building:
+#
+#   214 Mill Street, Gridfall, closed 2004   -- 6 sites, incl. a full wiki
+#                                               article with an infobox and a
+#                                               bylined Ledger closing story
+#   County Route 62, Ashkettle, closed 2006  -- 37 sites, and WORLD.md:478
+#
+# Both blamed the lease, which is what gave the reconciliation away: one
+# event, told twice. The diner opened on Mill Street in 1961, moved out to
+# Route 62 in August 2004 when that lease went, and closed there on 25
+# November 2006. So Mill Street is not a wrong address -- it is the first
+# one -- and this table does not forbid it. What it forbids is the archive
+# saying the DINER closed in 2004, which is the part that was false.
+#
+# SCOPE matters, and getting it wrong made this table miss the first bug it
+# was pointed at. "archive" means only the pre-2026 layer is held to the fact,
+# because a 2026 bot getting it wrong is the DISPUTES mechanic working. "all"
+# means everyone is, because the fact is not something the world argues about.
+#
+# The first draft made every row "archive". gridfallvfd.org is era 2026 -- a
+# fire department writing up its own 1953 call -- so the courthouse row read
+# it as a bot, skipped it, and passed clean on the exact content it had been
+# written to catch. A row that cannot catch its own bug is not a row.
+#
+# (what, scope, pattern that must NOT appear, pattern that MUST appear)
+CANON_FACTS = [
+    ("the Blue Kestrel closed in 2006, on Route 62", "archive",
+     r"Kestrel[^\"]{0,90}clos\w*[^\"]{0,50}\b2004\b"
+     r"|\b2004\b[^\"]{0,50}clos\w*[^\"]{0,90}Kestrel",
+     r"Kestrel[^\"]{0,200}Route 62|Route 62[^\"]{0,200}Kestrel"),
+
+    # gridfallvfd.org said 10 April and, in the same paragraph, deferred to
+    # the account it contradicted. verityhistory.blog says "about 2:40 in the
+    # morning on Wednesday 18 February 1953", sourced to "the Ledger of Friday
+    # 20 February 1953" -- and both of those weekdays are real 1953 weekdays,
+    # which is two independent checks passing. April named no weekday at all.
+    ("the 1953 courthouse fire was in February", "all",
+     r"courthouse[^\"]{0,120}10 April 1953|10 April 1953[^\"]{0,120}courthouse",
+     r"18 February 1953"),
+
+    # A rail-preservation society put the library at the railhead: Wessel
+    # Street is where the track ends. Five sites, including the library's own
+    # blog and a door instruction ("use the Ward Street ramp door"), say Ward.
+    ("the Marchfield library is on Ward Street", "all",
+     r"Marchfield Public Library,? 208 Wessel",
+     r"Marchfield Public Library,? 114 Ward Street"),
+]
+
+# What a site must, and must not, contain. kestrel-journal.net was Jo
+# Halloran's shift journal while WORLD.md:116 and :266 and 58 other sites
+# described it as Marion Teale's memory site -- four of them promising its
+# CONTENTS: "the 1977 kitchen fire is in there with the date", "menus, the
+# booth map, the staff photographs, and an honest paragraph about the pie".
+# validate.py counted Teale on 24 sites and was satisfied, because counting a
+# name across sites cannot tell you whose site is whose.
+SITE_CONTENTS = [
+    ("kestrel-journal.net", ["Marion Teale", "1977", "booth", "menu", "pie"],
+     ["Jo Halloran"]),
+]
+
+# Sites whose ERA is pre-2026 but whose content is bot-written anyway, so the
+# archive rule above does not apply to them. Each needs a reason, and an entry
+# that matches nothing is itself reported -- an exemption nobody uses is an
+# exemption that has outlived the thing it excused.
+SLOP_ON_ARCHIVE = {
+    # era 2015, but carries 2024-dated generated comments, one of which gets
+    # three facts wrong in a single clause: "closed its doors in 2008
+    # following the devastating 2004 substation fire that claimed two lives".
+    # The substation fire was 2003 and killed nobody; the diner closed in
+    # 2006. Being wrong is this page's job.
+    "kestrelvapor.com",
+}
+
+# A row that matches nothing asserts nothing. Every CANON_FACTS row has to
+# find its true form somewhere, and the whole table has to be reached.
+MIN_CANON_HITS = 3
+
+
 # The seven towns. Gridfall is the SEAT of Verity County, not a county, and a
 # chat server called "Gridfall County" said otherwise in its own <title>.
 # A town used as a county is the shape this error takes; it also took the shape
@@ -1203,6 +1292,69 @@ def check_canon(report, parsed):
             report.warn("canon", "%s: %d 2026 site(s) get it right and %d get "
                                  "it wrong -- the argument needs both"
                         % (what, len(modern_true), len(modern_wrong)))
+
+    own = {}
+    for path, _folder, site in parsed:
+        dom = site.get("domain")
+        if dom:
+            own[dom] = json.dumps(site, ensure_ascii=False)
+
+    reached = 0
+    used_exempt = set()
+    for what, scope, wrong_pat, true_pat in CANON_FACTS:
+        wrong = re.compile(wrong_pat, re.I)
+        right = re.compile(true_pat, re.I)
+        for where, era, text in blobs:
+            if scope == "archive" and "2026" in era:
+                continue          # the bots are allowed to be wrong
+            if not wrong.search(text):
+                continue
+            # Consult the exemption only AFTER the row would have failed.
+            # The first version checked it first and marked it used whenever
+            # the site merely existed, which made the unused-exemption
+            # warning below assert nothing at all.
+            excused = [d for d in SLOP_ON_ARCHIVE
+                       if ('"domain": "%s"' % d) in text[:400]]
+            if excused:
+                used_exempt.update(excused)
+                continue
+            report.error(where, "canon: contradicts %s" % what)
+        holds = [w for w, _e, t in blobs if right.search(t)]
+        if not holds:
+            report.warn("canon", "%s: nothing on the network states it, so "
+                                 "this row asserted nothing" % what)
+        else:
+            reached += 1
+
+    for domain, must, must_not in SITE_CONTENTS:
+        # The site's OWN json, not the first blob that mentions it. Eleven
+        # sites carry {"domain": "kestrel-journal.net"} in a webring row, and
+        # the first draft of this loop read one of those and reported the real
+        # site's contents missing from a site that merely links to it.
+        text = own.get(domain)
+        if text is None:
+            report.warn("canon", "%s is not on the network, so its contents "
+                                 "row asserted nothing" % domain)
+            continue
+        reached += 1
+        for token in must:
+            if token.lower() not in text.lower():
+                report.error(domain, "canon: other sites promise %r is on "
+                                     "this site and it is not" % token)
+        for token in must_not:
+            if token.lower() in text.lower():
+                report.error(domain, "canon: %r is on this site and should "
+                                     "not be" % token)
+
+    for domain in sorted(SLOP_ON_ARCHIVE - used_exempt):
+        report.warn("canon", "%s is exempted from the archive rule and "
+                             "nothing it holds needed exempting" % domain)
+
+    if reached < MIN_CANON_HITS:
+        report.warn("canon", "only %d canon row(s) reached anything, under "
+                             "the floor of %d -- the patterns have stopped "
+                             "matching, which reads like a clean sweep"
+                    % (reached, MIN_CANON_HITS))
 
 
 # --------------------------------------------------------------------------

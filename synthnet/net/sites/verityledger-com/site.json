@@ -19,11 +19,26 @@
     "masthead": "The Verity Ledger",
     "slogan": "Verity County's newspaper since 1901. Published Wednesday and Saturday.",
     "sections": [
-      { "id": "frontpage", "name": "Front Page" },
-      { "id": "community", "name": "Community" },
-      { "id": "schools", "name": "Schools" },
-      { "id": "sports", "name": "Sports" },
-      { "id": "opinion", "name": "Opinion & Letters" }
+      {
+        "id": "frontpage",
+        "name": "Front Page"
+      },
+      {
+        "id": "community",
+        "name": "Community"
+      },
+      {
+        "id": "schools",
+        "name": "Schools"
+      },
+      {
+        "id": "sports",
+        "name": "Sports"
+      },
+      {
+        "id": "opinion",
+        "name": "Opinion & Letters"
+      }
     ],
     "articles": [
       {
@@ -95,24 +110,24 @@
       {
         "id": "diner-closing",
         "sectionId": "community",
-        "headline": "The Blue Kestrel Serves Its Last Plate Sunday",
-        "dek": "After forty-three years on Mill Street, Ed Dombrowski is closing the diner. He says it is the lease and nothing else.",
+        "headline": "The Blue Kestrel Serves Its Last Plate on Mill Street",
+        "dek": "After forty-three years at 214 Mill Street, Ed Dombrowski is taking the diner out to Route 62. He says it is the lease and nothing else.",
         "byline": "By Marguerite Lowell, Community Editor",
         "date": "August 19, 2004",
         "featured": true,
-        "lead": "GRIDFALL. The Blue Kestrel will close Sunday after the breakfast service, ending forty-three years of continuous operation at 214 Mill Street and removing from the county the only restaurant that has ever been open at 5 a.m. on a Tuesday.",
-        "body": "Owner Ed Dombrowski, who bought the diner in 1978 from the family of founder Hal Sowerby, said the decision came down to the building.\n\n\"The lease is up in September and the number they want is not a number I can make on eggs,\" Dombrowski said Tuesday, sitting in the second booth from the door, which is where he sits. \"People keep asking me if business was bad. Business was fine. Business has been fine for twenty-six years.\"\n\nThe building's owner, Hollis Property Group of New Ardo, did not return a call.\n\nThe Kestrel opened in 1961 as Kestrel Creek Lunch, named for the creek that runs behind the Mill Street block, and took its present name in 1968. The counter seats eleven. There are six booths. The coffee has been the same brand since at least 1980, which Dombrowski said is \"not a boast, it is just true.\"\n\nWaitress Marla Vance, who has worked there for nine years, said the last two weeks have been the busiest she can remember.\n\n\"Everybody who has not been in since 1994 came in this month to tell me how much they love the place,\" Vance said. \"I told two of them that if they had come in once a year we would not be having this conversation. That was not fair of me and I apologized to one of them.\"\n\nThe Tuesday morning group of retired county highway men, who have occupied the back two booths since the 1980s, held a vote and decided to relocate to the Hollis Market deli counter, which several of them described as a temporary arrangement.\n\nDombrowski said he has no plans.\n\n\"I am sixty-three,\" he said. \"I will sleep until six for a while and see how that goes.\"\n\nThe diner will be open Saturday until 2 p.m. and Sunday from 5 a.m. until the food runs out."
+        "lead": "GRIDFALL. The Blue Kestrel will serve its last Mill Street breakfast Sunday, ending forty-three years of continuous operation at 214 Mill Street, and will reopen next month in the former roadhouse on County Route 62 at Kestrel Road in Ashkettle.",
+        "body": "Owner Ed Dombrowski, who bought the diner in 1978 from the family of founder Hal Sowerby, said the decision came down to the building.\n\n\"The lease is up in September and the number they want is not a number I can make on eggs,\" Dombrowski said Tuesday, sitting in the second booth from the door, which is where he sits. \"People keep asking me if business was bad. Business was fine. Business has been fine for twenty-six years.\"\n\nThe building's owner, Hollis Property Group of New Ardo, did not return a call.\n\nDombrowski said the counter, the six booths and the griddle are going out to Ashkettle with him, and that he expects to be open there inside a month. The neon sign is not going, at least not yet. It is eleven feet long and needs a pole and a transformer, and he said it will go in his garage on Fenn Avenue until he works out what a pole costs.\n\nThe Kestrel opened in 1961 as Kestrel Creek Lunch, named for the creek that runs behind the Mill Street block, and took its present name in 1968. The counter seats eleven. There are six booths. The coffee has been the same brand since at least 1980, which Dombrowski said is \"not a boast, it is just true.\"\n\nWaitress Marla Vance, who has worked there for nine years, said the last two weeks have been the busiest she can remember.\n\n\"Everybody who has not been in since 1994 came in this month to tell me how much they love the place,\" Vance said. \"I told two of them that if they had come in once a year we would not be having this conversation. That was not fair of me and I apologized to one of them.\"\n\nThe Tuesday morning group of retired county highway men, who have occupied the back two booths since the 1980s, held a vote and decided not to make the nine-mile drive. They will relocate to the Hollis Market deli counter, which several of them described as a temporary arrangement.\n\nDombrowski said he is not retiring.\n\n\"I am sixty-three,\" he said. \"Ask me again about the next lease.\"\n\nThe diner will be open on Mill Street Saturday until 2 p.m. and Sunday from 5 a.m. until the food runs out."
       },
       {
         "id": "kestrel-sign",
         "sectionId": "community",
-        "headline": "Kestrel Sign Goes to the Historical Society",
-        "dek": "The neon bird has been in a garage on Fenn Avenue since 2004. It will hang in the Depot Street museum by fall.",
+        "headline": "Kestrel Sign Goes Back Up, Out on Route 62",
+        "dek": "The neon bird has been in a garage on Fenn Avenue since 2004. The Historical Society has paid to rewire it and it goes on the Ashkettle building this month.",
         "byline": "By Marguerite Lowell, Community Editor",
         "date": "May 3, 2007",
         "featured": false,
-        "lead": "GRIDFALL. The Blue Kestrel's neon sign, which has spent three years in Ed Dombrowski's garage on Fenn Avenue, was moved Tuesday to the Verity County Historical Society building on Depot Street, where the society intends to hang it in the front room by fall.",
-        "body": "The sign is eleven feet long and was made in 1968 by a shop in Ardo that closed in 1991. The bird is not a kestrel. It has never been a kestrel. The society's collections chair, Hugh Speltz, said this is the first thing anybody asks.\n\n\"It is a generic bird,\" Speltz said. \"The sign shop had a bird. Ed's predecessor said fine. We are not going to correct it and we are not going to pretend.\"\n\nDombrowski donated the sign. He said the garage situation had become untenable.\n\n\"I could not get the car in,\" he said.\n\nThe society is raising about $2,800 to rewire the transformer and replace two sections of tubing, the blue in the wing and part of the L. Speltz said roughly $1,600 has been committed, much of it in amounts under twenty dollars, and that a donation jar sits on the counter at Hollis Market.\n\nFormer waitress Marla Vance, who keeps a personal page at [url=synth://marla.verity.net/]marla.verity.net[/url] where she has posted photographs of the diner's last week, said she cried in the parking lot and is not embarrassed about it.\n\nThe building at 214 Mill Street has been vacant since 2004. Hollis Property Group listed it in 2005 and again in 2006.\n\nCorrection, May 5: This article originally gave the diner's opening year as 1959. The Blue Kestrel opened in 1961 as Kestrel Creek Lunch. The Ledger regrets the error."
+        "lead": "GRIDFALL. The Blue Kestrel's neon sign, which has spent three years in Ed Dombrowski's garage on Fenn Avenue, was trucked Tuesday out to the diner's last building on County Route 62 in Ashkettle, where the Verity County Historical Society intends to have it lit again by fall.",
+        "body": "The sign is eleven feet long and was made in 1968 by a shop in Ardo that closed in 1991. The bird is not a kestrel. It has never been a kestrel. The society's collections chair, Hugh Speltz, said this is the first thing anybody asks.\n\n\"It is a generic bird,\" Speltz said. \"The sign shop had a bird. Ed's predecessor said fine. We are not going to correct it and we are not going to pretend.\"\n\nThe society had intended to hang the sign in the front room of its Depot Street building and changed its mind. Speltz said an eleven-foot sign in a front room is a wall, and that the county sign ordinance grandfathers the Kestrel where it stood but would not permit anything like it to be erected new.\n\n\"If it comes down off that building it does not go back up,\" he said. \"Not there, not anywhere. So it does not come down.\"\n\nDombrowski, who closed the diner in November, donated the sign. He said the garage situation had become untenable.\n\n\"I could not get the car in,\" he said.\n\nThe society raised about $2,800 to rewire the transformer and replace two sections of tubing, the blue in the wing and part of the L. Speltz said roughly $1,600 was committed in amounts under twenty dollars, much of it through a donation jar on the counter at Hollis Market.\n\nFormer waitress Marla Vance, who keeps a personal page at [url=synth://marla.verity.net/]marla.verity.net[/url] where she has posted photographs of the diner's last week on Mill Street, said she cried in the parking lot and is not embarrassed about it.\n\nThe building at 214 Mill Street has been vacant since 2004. Hollis Property Group listed it in 2005 and again in 2006.\n\nCorrection, May 5: This article originally gave the diner's opening year as 1959. The Blue Kestrel opened in 1961 as Kestrel Creek Lunch. The Ledger regrets the error."
       },
       {
         "id": "obits",
