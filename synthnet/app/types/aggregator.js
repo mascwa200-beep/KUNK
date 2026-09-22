@@ -159,6 +159,28 @@ window.SYNTH = window.SYNTH || {};
     return ctx.link('/item/' + link.id, link.title, 'agg-title');
   }
 
+  /* The number the row is ABOUT to print.
+   *
+   * The list was sorted on link.points -- authored, static -- while the row
+   * printed counter('agg:...:pts:' + id, link.points || 1, 14), which
+   * drifts 14 a day with a per-key multiplier of 0.85-1.15. Two different
+   * numbers, and the ordering was by the one the reader cannot see: a
+   * numbered <ol> whose numbers go back up. gridline.social showed 22 rows
+   * with 7 inversions -- 157, 131, 115, 129, 114, 123 -- and it gets worse
+   * without anybody touching it, because the spread is days x 14 x 0.30.
+   *
+   * news.js:582 mostRead() is the version that was always right: score
+   * first, sort on the score, print the score. counter() is a pure function
+   * of (key, base, perDay, clock), so calling it here, in the row and on
+   * the item page returns one value within a paint -- which is the other
+   * half of the point, since the item page printed this number too and had
+   * its own copy of the expression to drift out of step with.
+   */
+  function pointsOf(ctx, link) {
+    return counter('agg:' + ctx.site.domain + ':pts:' + link.id,
+                   link.points || 1, 14);
+  }
+
   function linkRow(ctx, d, link, rank) {
     var row = el('li', { 'class': 'agg-row' });
 
@@ -180,7 +202,7 @@ window.SYNTH = window.SYNTH || {};
     if (b) { line.appendChild(b); }
     main.appendChild(line);
 
-    var pts = counter('agg:' + ctx.site.domain + ':pts:' + link.id, link.points || 1, 14);
+    var pts = pointsOf(ctx, link);
     var meta = el('div', { 'class': 'agg-meta' });
     meta.appendChild(el('span', { 'class': 'agg-pts' },
       text((SYNTH.live && SYNTH.live.commas ? SYNTH.live.commas(pts) : String(pts)) +
@@ -273,7 +295,7 @@ window.SYNTH = window.SYNTH || {};
     myPostsInto(ctx, body);
 
     var links = (d.links || []).slice();
-    links.sort(function (a, b) { return (b.points || 0) - (a.points || 0); });
+    links.sort(function (a, b) { return pointsOf(ctx, b) - pointsOf(ctx, a); });
 
     var ul = el('ol', { 'class': 'agg-list' });
     var i;
@@ -317,7 +339,7 @@ window.SYNTH = window.SYNTH || {};
     var links = (d.links || []).filter(function (l) {
       return String(l.boardId) === String(board.id);
     });
-    links.sort(function (a, b) { return (b.points || 0) - (a.points || 0); });
+    links.sort(function (a, b) { return pointsOf(ctx, b) - pointsOf(ctx, a); });
 
     if (!links.length) {
       body.appendChild(el('p', { 'class': 'agg-empty' }, text('Nothing here yet. The submission queue is automated and it is having a day.')));
@@ -407,7 +429,7 @@ window.SYNTH = window.SYNTH || {};
       head.appendChild(domLine);
     }
 
-    var pts = counter('agg:' + ctx.site.domain + ':pts:' + link.id, link.points || 1, 14);
+    var pts = pointsOf(ctx, link);
     var views = counter('agg:' + ctx.site.domain + ':views:' + link.id, (link.points || 1) * 37, 620);
     var meta = el('div', { 'class': 'agg-meta agg-meta-item' });
     meta.appendChild(text(pts + ' points by '));

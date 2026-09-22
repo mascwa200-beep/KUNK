@@ -106,6 +106,88 @@ MIN_SHARED = 6
 MIN_SCOPED = 45
 
 
+def code_only(src):
+    """The source with every comment's contents blanked out.
+
+    This is a text-level parse, and a text-level parse reads prose as code.
+    A comment added in app/types/aggregator.js quoting the call it was
+    about --
+
+        counter('agg:...:pts:' + id, link.points || 1, 14)
+
+    -- was parsed as a real call site and failed the build for a sentence.
+    The mirror of that is worse and silent: a comment quoting a properly
+    scoped call would satisfy this rule on behalf of code that does not,
+    and a comment sitting between a key and its `var` would be read as the
+    assignment.
+
+    Every character inside a comment becomes a space and newlines are kept,
+    so every offset and every line number in the rest of this file still
+    points where it did. Strings and regex literals are walked through
+    rather than around, because `'synth://'` and `/^synth:\\/\\//` are all
+    over these files and a naive stripper eats the rest of the line.
+    """
+    out = list(src)
+    i, n = 0, len(src)
+    # Whether a '/' here opens a regex literal or divides. The last
+    # significant character is enough for this codebase.
+    last = ""
+    while i < n:
+        ch = src[i]
+        if ch in "'\"":
+            quote = ch
+            i += 1
+            while i < n:
+                if src[i] == "\\":
+                    i += 2
+                    continue
+                if src[i] == quote:
+                    break
+                i += 1
+            i += 1
+            last = quote
+            continue
+        if ch == "/" and i + 1 < n and src[i + 1] == "/":
+            while i < n and src[i] != "\n":
+                out[i] = " "
+                i += 1
+            continue
+        if ch == "/" and i + 1 < n and src[i + 1] == "*":
+            out[i] = out[i + 1] = " "
+            i += 2
+            while i < n and not (src[i] == "*" and i + 1 < n and src[i + 1] == "/"):
+                if src[i] != "\n":
+                    out[i] = " "
+                i += 1
+            if i < n:
+                out[i] = out[i + 1] = " "
+                i += 2
+            continue
+        if ch == "/" and (last == "" or last in "(,=:[!&|?{};+-*%<>~^"):
+            i += 1
+            in_class = False
+            while i < n:
+                if src[i] == "\\":
+                    i += 2
+                    continue
+                if src[i] == "[":
+                    in_class = True
+                elif src[i] == "]":
+                    in_class = False
+                elif src[i] == "/" and not in_class:
+                    break
+                elif src[i] == "\n":
+                    break
+                i += 1
+            i += 1
+            last = "/"
+            continue
+        if not ch.isspace():
+            last = ch
+        i += 1
+    return "".join(out)
+
+
 def split_args(rest):
     """Top-level comma split of an argument list, stopping at its ')'."""
     depth = 0
@@ -254,7 +336,7 @@ def scope_problems(files, root):
     checked = 0
     for f in files:
         rel = f.relative_to(root)
-        src = f.read_text()
+        src = code_only(f.read_text())
         for m in SCOPED_CALL.finditer(src):
             parts = split_args(src[m.end():])
             if len(parts) < 2:
@@ -292,7 +374,7 @@ def main():
         # the shared market helper in made it do -- dropped it from the
         # parse without a word. A check that stops seeing the file it was
         # written for reads identically to a clean sweep.
-        src = f.read_text()
+        src = code_only(f.read_text())
         for m in CALL.finditer(src):
             parts = split_args(src[m.end():])
             if len(parts) < 3:

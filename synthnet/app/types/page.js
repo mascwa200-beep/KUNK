@@ -160,8 +160,25 @@
       }
       var pick = members.length ? (hash(ring) % members.length) : 0;
       var prev = member(pick - 1);
-      var rand = member(pick + (members.length > 2 ? 1 : 0));
       var next = member(pick + 1);
+      /* `pick + (members.length > 2 ? 1 : 0)` is pick + 1 for every ring
+       * with three or more members, which is every ring here -- so Random
+       * and Next were the same href on all seventeen ring blocks on the
+       * network, and the button that says Random was the button beside it.
+       * A first sweep for these found seven of the seventeen, because it
+       * guessed each site's front page and most of them are on /links.
+       *
+       * A different hash of the same ring name, stepped off `pick` by at
+       * least two so it can be neither neighbour, and taken modulo the
+       * members BETWEEN them. Deterministic, which a webring badge has to
+       * be -- this is a rendered page, not a dice roll -- but no longer a
+       * second name for Next. Rings of one or two have nowhere else to go
+       * and keep pointing at the anchor, which is what a two-site ring
+       * means. */
+      var span = members.length - 3;
+      var rand = (span > 0)
+        ? member(pick + 2 + (hash(ring + ':random') % span))
+        : member(pick + (members.length > 2 ? 2 : 0));
 
       function ringLink(m, label) {
         if (!m) { return el('span', { class: 'pg-ring-link is-dead' }, label); }

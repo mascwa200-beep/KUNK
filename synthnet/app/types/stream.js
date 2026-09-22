@@ -272,19 +272,27 @@ window.SYNTH = window.SYNTH || {};
       if (textHit((vids[i].title || '') + ' ' + (vids[i].description || ''), terms)) { hitV.push(vids[i]); }
     }
 
+    /* The head used to print the size of the whole hit set over a list that
+     * stops at four channels and eight videos, with no more-link and no
+     * pagination -- so "31 matches" sat on top of twelve rows and that was
+     * all there was. Count what is rendered, and name the remainder. */
+    var capC = Math.min(hitC.length, 4), capV = Math.min(hitV.length, 8);
+    var shown = capC + capV;
     var n = hitC.length + hitV.length;
     var box = el('div', { 'class': 'tm-results' });
     box.appendChild(el('div', { 'class': 'tm-resulthead' },
-      n ? (n + (n === 1 ? ' match' : ' matches') + ' on this site for “' + q + '”')
-        : ('Nothing on this site matches “' + q + '”.')));
+      !n ? ('Nothing on this site matches “' + q + '”.')
+        : shown < n
+          ? (shown + ' of ' + n + ' matches on this site for “' + q + '”')
+          : (n + (n === 1 ? ' match' : ' matches') + ' on this site for “' + q + '”')));
 
     var ul = el('ul', { 'class': 'tm-resultlist' });
-    for (i = 0; i < hitC.length && i < 4; i++) {
+    for (i = 0; i < capC; i++) {
       ul.appendChild(el('li', { 'class': 'tm-resultitem' },
         ctx.link('/c/' + hitC[i].id, hitC[i].name || hitC[i].id, 'tm-resultlink'),
         el('span', { 'class': 'tm-resultkind' }, 'channel')));
     }
-    for (i = 0; i < hitV.length && i < 8; i++) {
+    for (i = 0; i < capV; i++) {
       ul.appendChild(el('li', { 'class': 'tm-resultitem' },
         ctx.link('/w/' + hitV[i].id, titleOf(hitV[i], 'Untitled'), 'tm-resultlink'),
         el('span', { 'class': 'tm-resultkind' }, hitV[i].duration || '')));
@@ -993,9 +1001,9 @@ window.SYNTH = window.SYNTH || {};
       'Comment ranking: engagement. Human comments appear below the fold by design.'));
 
     var clist = el('ul', { 'class': 'tm-clist' });
-    var i;
+    var rows = [], i;
     for (i = 0; i < comments.length; i++) {
-      clist.appendChild(commentItem(ctx, comments[i], ctx.site.domain + ':c:' + v.id + ':' + i));
+      rows.push(scoreComment(ctx, v.id, comments[i], 'c'));
     }
     if (live) {
       for (i = 0; i < live.length; i++) {
@@ -1010,14 +1018,27 @@ window.SYNTH = window.SYNTH || {};
         var obj = typeof lc === 'string'
           ? { by: 'guest_' + (hash32(lc) % 9000), kind: 'bot', body: lc, likes: 0, at: nowMs() }
           : lc;
-        clist.appendChild(commentItem(ctx, {
+        rows.push(scoreComment(ctx, v.id, {
           by: obj.by || obj.author || 'anon',
           kind: obj.kind || 'bot',
           body: obj.body || obj.text || String(lc),
           likes: obj.likes || 0,
           at: obj.at || lcAt
-        }, ctx.site.domain + ':lc:' + v.id + ':' + i));
+        }, 'lc'));
       }
+    }
+    /* The note above this list makes two claims, and the list used to keep
+     * neither: nothing was sorted at all, and the authored humans rendered
+     * first with the bot stream appended after -- the exact inverse of
+     * "below the fold". Rank on the number each row actually prints, and
+     * put the humans under the bots. */
+    rows.sort(function (a, b) {
+      if (a.human !== b.human) { return a.human ? 1 : -1; }
+      if (b.n !== a.n) { return b.n - a.n; }
+      return a.key < b.key ? -1 : (a.key > b.key ? 1 : 0);
+    });
+    for (i = 0; i < rows.length; i++) {
+      clist.appendChild(commentItem(ctx, rows[i]));
     }
     csec.appendChild(clist);
     main.appendChild(csec);
@@ -1029,7 +1050,27 @@ window.SYNTH = window.SYNTH || {};
     ctx.mount.appendChild(wrap);
   }
 
-  function commentItem(ctx, c, seed) {
+  /* The like seed used to carry the comment's position in the list, so the
+   * same comment scored differently depending on where it sat -- and a sort
+   * on that number would have chased its own tail. Key it on who said it,
+   * when, and what, so the number rides with the comment. */
+  function commentKey(ctx, vid, c, tag) {
+    return ctx.site.domain + ':' + tag + ':' + vid + ':' +
+      (c.by || 'anon') + '@' + (c.at || 0) + '#' + hash32(String(c.body || ''));
+  }
+
+  function scoreComment(ctx, vid, c, tag) {
+    var key = commentKey(ctx, vid, c, tag);
+    return {
+      by: c.by, kind: c.kind, body: c.body, at: c.at,
+      key: key,
+      human: (c.kind || '') === 'human',
+      n: counter(key, c.likes || 0, 90)
+    };
+  }
+
+  function commentItem(ctx, c) {
+    var seed = c.key;
     var li = el('li', { 'class': 'tm-citem' });
     li.appendChild(el('span', { 'class': 'tm-cav' }, placeholder('avatar', c.by || seed)));
     var body = el('div', { 'class': 'tm-cbody' });
@@ -1043,7 +1084,7 @@ window.SYNTH = window.SYNTH || {};
     text.appendChild(parseBody(c.body || ''));
     body.appendChild(text);
     body.appendChild(el('div', { 'class': 'tm-cfoot' },
-      '▲ ' + shortNum(counter(seed, c.likes || 0, 90)),
+      '▲ ' + shortNum(c.n),
       el('span', { 'class': 'tm-dot' }, '·'),
       'Reply'
     ));

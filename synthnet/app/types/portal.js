@@ -229,7 +229,22 @@ window.SYNTH = window.SYNTH || {};
     var sec = E('section', { 'class': 'services' });
     sec.appendChild(E('h2', {}, 'Services A–Z'));
 
-    var ss = d.services || [], i;
+    /* A-Z means A-Z. This walked the authored array under that heading, so
+     * all eight portal sites opened out of order and the break was in the
+     * first two rows of every one of them -- verity.county.gov led with
+     * Property Tax, Open Burning, County Clerk. wiki.js has had
+     * sortedByTitle() since it shipped and uses it for its own A-Z index;
+     * portal never got the equivalent, and nothing compared the heading
+     * with the list under it.
+     *
+     * A copy, not a sort in place: d.services is the site's own array and
+     * other sections on this page read it in authored order. */
+    var ss = (d.services || []).slice(), i;
+    ss.sort(function (a, b) {
+      var x = String((a && a.name) || (a && a.id) || '').toLowerCase();
+      var y = String((b && b.name) || (b && b.id) || '').toLowerCase();
+      return x < y ? -1 : (x > y ? 1 : 0);
+    });
     if (!ss.length) {
       sec.appendChild(E('p', { 'class': 'empty' }, 'No services are listed. This is not an error.'));
     }

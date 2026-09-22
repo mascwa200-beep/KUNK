@@ -32,6 +32,7 @@ on:
       - ".github/scripts/synthnet_counter_keys_check.py"
       - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
+      - ".github/scripts/synthnet_order_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -51,6 +52,7 @@ on:
       - ".github/scripts/synthnet_counter_keys_check.py"
       - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
+      - ".github/scripts/synthnet_order_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -159,6 +161,28 @@ jobs:
         # written; they have one now, and a new route without one is a
         # build failure.
         run: python3 .github/scripts/synthnet_routes_check.py --root synthnet
+
+      - name: A list that names an order must be in it
+        # A heading is a claim, and it renders perfectly whether or not the
+        # rows under it obey it. Eight portal sites opened Property Tax,
+        # Open Burning, County Clerk under "Services A-Z"; gridline.social
+        # printed a numbered <ol> whose points went 157, 131, 115, 129; the
+        # note over every comment list on the stream sites said human
+        # comments appear below the fold, and they were rendered first.
+        #
+        # The second of those is the one that spreads. `points` in the site
+        # file is static and the number the row prints is a counter that
+        # drifts, so a list sorted on the first degrades on its own with no
+        # commit in between. news.js mostRead() has had the correct shape
+        # the whole time: score into an array, sort on the score, print the
+        # score.
+        #
+        # This reads the rendered sequence and derives nothing -- a checker
+        # that recomputes the renderer's sort agrees with the renderer's
+        # bug. Two clocks, because the counter-driven lists are nearly
+        # ordered on day one: clipvault.tv's grid was clean at the pinned
+        # instant and had four inversions 200 days later.
+        run: python3 .github/scripts/synthnet_order_check.py --root synthnet
 
       - name: Build, and confirm the committed generated files are current
         run: |

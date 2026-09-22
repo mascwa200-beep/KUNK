@@ -153,8 +153,35 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- pieces ---------- */
 
+  /* The two numbers these lists are ORDERED by, computed the way they are
+   * PRINTED. Both lists sorted on the authored field while the page showed a
+   * live counter drifting away from it, so the order was by a number the
+   * reader cannot see. Mild today -- askverity.com had 3 inversions in 20
+   * cards, verityanswers.com 1 in 18 -- because this counter moves 3 a day
+   * rather than aggregator's 14. Same defect, slower fuse.
+   *
+   * The answer key is the sharper half. It used to be ':a' + idx, the
+   * answer's POSITION in the sorted array, so the same answer showed a
+   * different vote count depending on where the sort put it -- and sorting
+   * on the printed value would have chased its own tail, because reordering
+   * changed the values. Answers carry no id, but `by` and `at` together
+   * name one, and that does not move when the list does.
+   */
+  function answerKey(ctx, qid, a) {
+    return 'qa:' + ctx.site.domain + ':' + qid + ':a:' +
+           String((a && a.by) || 'anon') + '@' + String((a && a.at) || '');
+  }
+
+  function qVotesOf(ctx, q) {
+    return counter('qa:' + ctx.site.domain + ':v:' + q.id, q.votes || 0, 3);
+  }
+
+  function aVotesOf(ctx, qid, a) {
+    return counter(answerKey(ctx, qid, a), (a && a.votes) || 0, 2);
+  }
+
   function statBlock(ctx, q) {
-    var votes = counter('qa:' + ctx.site.domain + ':v:' + q.id, q.votes || 0, 3);
+    var votes = qVotesOf(ctx, q);
     var views = counter('qa:' + ctx.site.domain + ':w:' + q.id, q.views || 12, 410);
     var answers = (q.answers || []).length;
     var accepted = false;
@@ -216,11 +243,11 @@ window.SYNTH = window.SYNTH || {};
     return card;
   }
 
-  function answerNode(ctx, a, qid, idx) {
+  function answerNode(ctx, a, qid) {
     var node = el('article', { 'class': 'qa-answer' + (a.accepted ? ' qa-answer-ok' : '') });
 
     var gutter = el('div', { 'class': 'qa-gutter' });
-    var votes = counter('qa:' + ctx.site.domain + ':' + qid + ':a' + idx, a.votes || 0, 2);
+    var votes = aVotesOf(ctx, qid, a);
     gutter.appendChild(el('span', { 'class': 'qa-arrow', 'aria-hidden': 'true' }, text('▲')));
     gutter.appendChild(el('span', { 'class': 'qa-avotes' }, text(String(votes))));
     gutter.appendChild(el('span', { 'class': 'qa-arrow', 'aria-hidden': 'true' }, text('▼')));
@@ -292,7 +319,7 @@ window.SYNTH = window.SYNTH || {};
     myPostsInto(ctx, main);
 
     var qs = (d.questions || []).slice();
-    qs.sort(function (a, b) { return (b.votes || 0) - (a.votes || 0); });
+    qs.sort(function (a, b) { return qVotesOf(ctx, b) - qVotesOf(ctx, a); });
 
     var ul = el('ul', { 'class': 'qa-cards' });
     var i;
@@ -431,7 +458,7 @@ window.SYNTH = window.SYNTH || {};
     var answers = (q.answers || []).slice();
     answers.sort(function (a, b) {
       if (!!a.accepted !== !!b.accepted) { return a.accepted ? -1 : 1; }
-      return (b.votes || 0) - (a.votes || 0);
+      return aVotesOf(ctx, q.id, b) - aVotesOf(ctx, q.id, a);
     });
 
     /* Computed BEFORE the heading, because the heading counts it.
@@ -453,7 +480,7 @@ window.SYNTH = window.SYNTH || {};
 
     var i;
     for (i = 0; i < answers.length; i++) {
-      main.appendChild(answerNode(ctx, answers[i], q.id, i));
+      main.appendChild(answerNode(ctx, answers[i], q.id));
       if (i === 0) {
         var inl = liveAd('inline', ctx.site.domain + ':a:' + q.id);
         if (inl) { main.appendChild(el('div', { 'class': 'qa-ad qa-ad-inline' }, inl)); }
@@ -470,7 +497,7 @@ window.SYNTH = window.SYNTH || {};
           body: strOf(live[j], 'Try turning it off and on again, then cite this answer.'),
           votes: 0,
           at: null
-        }, q.id, 90 + j));
+        }, q.id));
       }
     }
 

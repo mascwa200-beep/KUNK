@@ -387,12 +387,18 @@
   /* A view count that has not moved since 2007 is the single clearest sign
    * that a page is dead. These keep climbing, faster for the automated
    * channels, because the bot network watches its own uploads. */
+  function viewsOf(ctx, item) {
+    var L = window.SYNTH.live;
+    if (!L) { return Number(item.views) || 0; }
+    var perDay = 40 + (L.hash32(String(item.id)) % 220);
+    return L.counter('media:views:' + ctx.site.domain + ':' + item.id,
+                     item.views || 0, perDay);
+  }
+
   function liveViews(ctx, item) {
     var L = window.SYNTH.live;
     if (!L) return num(item.views);
-    var perDay = 40 + (L.hash32(String(item.id)) % 220);
-    return L.commas(L.counter('media:views:' + ctx.site.domain + ':' + item.id,
-                              item.views || 0, perDay));
+    return L.commas(viewsOf(ctx, item));
   }
 
   function renderIndex(ctx) {
@@ -421,9 +427,25 @@
         mine.map(function (c) { return chanChip(ctx, c); })));
     }
 
-    mount.appendChild(el('div', { 'class': 'sec-head' }, 'Most Viewed This Week'));
+    /* "Most Viewed" over the authored array, with each tile printing its own
+     * view count underneath -- so the heading was contradicted three inches
+     * below it, on all three sites: clipvault.tv ran 41,544 then 24,417 then
+     * 17,300 then 65,326. Sort on viewsOf(), which is the number the tile is
+     * about to show.
+     *
+     * A copy: `featured` above is deliberately the first four in AUTHORED
+     * order and is not a most-viewed claim.
+     *
+     * "This Week" is dropped on the archive sites. Their clips are dated
+     * 1998-2008 and no week contains them. Through isArchive(), which is
+     * this file's own reading of site.era -- the skin vintage is free text
+     * and "2002-2014" means a site that stopped in 2014. */
+    var viewed = list.slice();
+    viewed.sort(function (a, b) { return viewsOf(ctx, b) - viewsOf(ctx, a); });
+    mount.appendChild(el('div', { 'class': 'sec-head' },
+      isArchive(ctx) ? 'Most Viewed' : 'Most Viewed This Week'));
     mount.appendChild(el('div', { 'class': 'grid' },
-      list.map(function (it) { return card(ctx, it); })));
+      viewed.map(function (it) { return card(ctx, it); })));
 
     var chans = channels(ctx);
     if (chans.length) {
