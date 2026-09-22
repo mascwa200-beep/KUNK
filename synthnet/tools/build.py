@@ -1259,6 +1259,75 @@ _SW_VERSION = re.compile(r"(var CACHE_VERSION = ')([^']*)(';)")
 CONTROL_PATH = ROOT / "app" / "control.js"
 _STARTERS = re.compile(r"(var STARTERS = )(\{.*?\})(;\n)", re.DOTALL)
 
+README_PATH = ROOT / "README.md"
+
+
+def _region(name):
+    """`<!-- generated: name -->` ... `<!-- /generated: name -->`."""
+    return re.compile(
+        r"(<!-- generated: %s[^>]*-->\n)(.*?)(<!-- /generated: %s -->)"
+        % (re.escape(name), re.escape(name)), re.DOTALL)
+
+
+def build_readme(registry, warnings):
+    """Rewrite the parts of README.md that are answers the build already has.
+
+    The file said "Seed sites, generated from net/registry.json rather than
+    typed by hand, because an earlier version of this list named five domains
+    that do not exist" -- and nothing generated it. `grep README build.py`
+    returned nothing. The sentence described a fix that was never built, and
+    it existed precisely because the hand-written version had gone wrong
+    once. The twelve domains it named did all still exist, which is luck, and
+    is why nothing caught it.
+
+    It also said the content was set in "2001-2008", when 77 of the 109 sites
+    are era 2026 and the range runs to 1998 at the other end.
+
+    Markers rather than a generated file, because most of the README is prose
+    and only these two regions are things this module knows. Anything outside
+    them is nobody's business but the writer's.
+
+    NOT in sw.js's SHELL, so unlike control.js this never reaches
+    cache_version() and needs no entry in its `pending` map.
+    """
+    current = README_PATH.read_text(encoding="utf-8")
+    sites = registry.get("sites") or []
+
+    years = []
+    for site in sites:
+        years.extend(int(y) for y in re.findall(r"\b(19\d\d|20\d\d)\b",
+                                                str(site.get("era") or "")))
+    newest = max(years) if years else 0
+    at_newest = sum(1 for s in sites
+                    if str(s.get("era") or "").strip() == str(newest))
+    era = (
+        "The %d sites are dated %d to %d. %d of them are %d -- the network as "
+        "it is now, mostly automated -- and the remaining %d are the archive "
+        "it grew out of.\n"
+        % (len(sites), min(years) if years else 0, newest,
+           at_newest, newest, len(sites) - at_newest)
+    )
+
+    first = {}
+    for site in sorted(sites, key=lambda s: s.get("domain") or ""):
+        kind = site.get("type") or ""
+        if kind and kind != "control" and kind not in first:
+            first[kind] = site
+    rows = ["- `%s` - %s. %s" % (s.get("domain"), kind, s.get("description") or "")
+            for kind, s in sorted(first.items())]
+    seed = "\n".join(rows) + "\n"
+
+    out = current
+    for name, block in (("era", era), ("seed-sites", seed)):
+        out, hits = _region(name).subn(
+            lambda m, b=block: m.group(1) + b + m.group(3), out)
+        if hits != 1:
+            warnings.append(
+                "README.md has no single '<!-- generated: %s -->' region to "
+                "regenerate, so that part of it is whatever is there" % name)
+            return current
+    return out
+
 
 def build_starters(warnings):
     """Rewrite control.js's STARTERS from tools/new_site.py's builders.
@@ -1476,6 +1545,7 @@ def compute(warnings):
         BUNDLE_PATH: bundle,
         SW_PATH: service_worker,
         CONTROL_PATH: control_js,
+        README_PATH: build_readme(registry, warnings),
     }, registry, search
 
 

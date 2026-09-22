@@ -34,6 +34,9 @@ on:
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/scripts/synthnet_order_check.py"
       - ".github/scripts/synthnet_types_check.py"
+      - ".github/scripts/synthnet_search_check.py"
+      - ".github/scripts/synthnet_widget_check.py"
+      - ".github/scripts/synthnet_docs_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -55,6 +58,9 @@ on:
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/scripts/synthnet_order_check.py"
       - ".github/scripts/synthnet_types_check.py"
+      - ".github/scripts/synthnet_search_check.py"
+      - ".github/scripts/synthnet_widget_check.py"
+      - ".github/scripts/synthnet_docs_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -82,6 +88,21 @@ jobs:
         # rests on: no absolute http/https URL anywhere, bar the SVG and XHTML
         # XML namespaces. That rule is only true while something checks it.
         run: python3 synthnet/tools/validate.py --strict
+
+      - name: The documents must answer to the repository
+        # Fifteen rounds read the code and the content and nobody read the
+        # README against the build. It said, in bold, that the app "declares
+        # no permissions at all" -- and so did docs/PHONE.md -- while
+        # AndroidManifest.xml declared two, with a comment directly above
+        # them saying that very claim had stopped being true. The repository
+        # held the correction and the uncorrected sentence at the same time.
+        #
+        # This takes facts the build knows -- which permissions are declared,
+        # which README regions tools/build.py generates, which files the
+        # prose points at -- and insists the documents match them. It cannot
+        # read prose, and says so: "no posting, no accounts, the forms are
+        # furniture" was false for months and no pattern would catch it.
+        run: python3 .github/scripts/synthnet_docs_check.py --root synthnet
 
       - name: Parse every renderer
         run: |

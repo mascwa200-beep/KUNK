@@ -27,19 +27,32 @@ you to allow installing from that app the first time — that is the normal
 sideload prompt, not a warning that something is wrong. Needs Android 8.0 or
 newer.
 
-**The app declares no permissions at all.** Not internet, not storage, not
-anything. That is deliberate and it is checked in CI: without the INTERNET
+**The app declares no INTERNET permission.** Not internet, not storage, not
+location. That is deliberate and it is checked in CI: without the INTERNET
 permission Android refuses every socket the process opens, so "works offline"
 stops being a claim in a README and becomes something the operating system
 enforces. The app cannot phone home, cannot be told to, and has nothing to
 leak. The entire synthetic internet is inside the APK.
+
+It does declare two permissions, added with the local notifications, and
+neither of them grants any network access:
+
+- `POST_NOTIFICATIONS` — one runtime prompt on Android 13+, which you can
+  decline; the home-screen widget goes on working either way.
+- `RECEIVE_BOOT_COMPLETED` — invisible, and only so the alarm survives a
+  restart.
+
+The CI gate is an allowlist rather than a count, and an allowlist is stricter
+than it sounds: INTERNET, ACCESS_NETWORK_STATE, a location permission or a
+foreground-service type all fail the build the same way a count would have.
 
 Two honest notes. The APK is signed with a generated debug key, which is fine
 for sideloading and not fine for a store listing — a real release needs a key
 you control. And the app has been built and verified but never run on a
 physical device, because the machine that built it has no Android hardware and
 no emulator; what *is* verified is that it is correctly signed, declares no
-permissions, and contains every single file the page asks for.
+permission outside the allowlist above, and contains every single file the page
+asks for.
 
 ---
 

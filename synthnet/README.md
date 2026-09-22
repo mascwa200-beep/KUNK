@@ -33,9 +33,12 @@ Three modes. They show the same content.
 
 **As an app.** `android/build.sh` produces `synthnet.apk`: install it, tap the
 icon, it opens. No browser, no server, no file manager. The whole synthetic
-internet ships inside the APK and the app declares **no permissions at all** —
-without the INTERNET permission Android refuses every socket the process opens,
-so being offline is enforced by the operating system rather than promised here.
+internet ships inside the APK and **the app declares no INTERNET permission**,
+so Android refuses every socket the process opens and being offline is enforced
+by the operating system rather than promised here. It declares two permissions,
+both for local notifications and neither granting any network access:
+`POST_NOTIFICATIONS` and `RECEIVE_BOOT_COMPLETED`. CI gates that with an
+allowlist — anything not on it fails the build, INTERNET included.
 Android 8.0+. The build uses only framework APIs, so it is aapt2, javac, d8 and
 apksigner with nothing to download — no Gradle, no androidx, no dependency
 resolution. See `docs/PHONE.md`.
@@ -111,28 +114,47 @@ against the renderers by `.github/scripts/synthnet_routes_check.py`; a
 second copy here would be a seventh, and the paragraph below is this file
 already having learned that lesson once.
 
-The seed content shares one setting: Verity County, an inland region, 2001-2008.
+The content shares one setting: Verity County, an inland region, and one
+continuity of people and events.
+
+<!-- generated: era (tools/build.py -- do not edit by hand) -->
+The 109 sites are dated 1998 to 2026. 77 of them are 2026 -- the network as it is now, mostly automated -- and the remaining 32 are the archive it grew out of.
+<!-- /generated: era -->
+
 Recurring subjects across sites - the 2003 Gridfall substation fire, the Verity
 Rail branch-line closure, a roadside numbers-station myth called "the Signal on
 62", and a closed diner called the Blue Kestrel - so cross-links between sites
-land on something real.
+land on something real. This paragraph used to say the setting was "2001-2008",
+which stopped being true three quarters of a network ago; the line above it is
+generated now so it cannot say that again.
 
-Seed sites, generated from `net/registry.json` rather than typed by hand,
-because an earlier version of this list named five domains that do not
-exist:
+One site of each type, generated from `net/registry.json` rather than typed by
+hand -- this list said it was generated for a long time before anything
+generated it, and an earlier hand-written version had named five domains that
+do not exist:
 
+<!-- generated: seed-sites (tools/build.py -- do not edit by hand) -->
+- `gridline.social` - aggregator. A link aggregator for Verity County, incorporated somewhere else, moderated by nobody since spring 2025.
+- `ask.verity.ai` - assistant. A regional AI assistant trained on public data from Verity County. It answers everything instantly and is wrong about most of it.
+- `archive.thequarry.news` - blog. Ruth Cannady's companion to The Quarry, where the records she gets out of Verity County are posted whole, with the request date, the response date and the redactions marked.
+- `62chan.org` - board. An imageboard about the Signal on 62. Registrar offshore, moderator gone since August 2024, roughly eighteen bot posts for every human one.
+- `gridfall-help.chat` - chat. A small chat server where people in Verity County ask each other why the printer is doing that, including a read-only import of the Users Group board that closed in 2014.
+- `dash.verity.net` - dash. The Verity County smart-county dashboard. Twelve live widgets, four of which are live.
 - `boards.gridfall.net` - forum. General-purpose message board for Gridfall and the rest of Verity County.
-- `forums.verityrail.org` - forum. Discussion board for the Verity Rail line, its branches, and the people who photograph them.
-- `marla.verity.net` - social. Personal page belonging to Marla Kesswick of Marchfield, updated whenever she feels like it.
-- `pulse.gridfall.net` - social. A small microblog for Gridfall and the rest of Verity County. Mostly road closures.
-- `codeandcoffee.blog` - blog. Dave Carrow writes about servers, county networking, and things he has measured in Verity County.
-- `kestrel-journal.net` - blog. Jo Halloran's journal, written mostly after shifts at the Blue Kestrel diner in Gridfall.
-- `verityledger.com` - news. The Verity County paper of record, published in Gridfall since 1901.
-- `wiki.gridfall.net` - wiki. A community-maintained wiki covering Verity County, its towns, institutions and arguments.
+- `mail.verity.net` - mail. Your inbox. Eleven things want money, four want your attention, two are from people. The junk folder is where the machines are having the most fun.
+- `classifieds.verity.net` - market. The county's classifieds board, forty years old in print and six years old under its current owner. Most of it is posted from somewhere else. Some of it is a neighbour clearing out a garage.
 - `clipvault.tv` - media. Video uploads from around Verity County: camcorder tape, rail footage, hall shows, tool demos and radio recordings.
-- `stargazers.verity.net` - page. Home page of the Verity County Amateur Astronomers, meeting monthly since 1978 and observing from Perrin Hill.
-- `tnorris.verity.net` - page. The page of Thomas Norris, retired Verity County surveyor, including a detailed account of the flood of June 1994.
-- `webring.gridfall.net` - page. Hub of the Gridfall Webring, linking personal and community sites in and about Verity County.
+- `halsey-ledger.com` - news. A Pinelock property named after a town of 2,100 that has never had a newspaper, running the same pipeline and the same template as the rest of the group.
+- `brenners-notebook.email` - newsletter. Hal Brenner's paid monthly newsletter out of Gridfall: one properly sourced county story a month, written by the man the Ledger laid off in 2019 and then used as a byline in 2023.
+- `ashkettle-wx.net` - page. Len Mabry's home weather station on Kestrel Road in Ashkettle: daily readings, monthly tables, a dead webcam and a guestbook, last updated 17 April 2011.
+- `ashkettle.gov` - portal. Five pages for a village of nine hundred people, kept by one part-time clerk on a template the County supplies, including a zoning ordinance too large to upload and a water tower that is currently empty.
+- `askverity.com` - qa. Questions and answers about Verity County. One of several hundred identical local Q&A sites, all moderated by the same bot.
+- `countysupply.store` - shop. The last farm store in Verity County, selling real t-posts and real chainsaw chain through an e-commerce platform that writes its own product descriptions and will not let the owner delete the fake reviews.
+- `countyalerts.live` - social. An automated breaking-alerts account that rewrites Verity County scanner traffic in under a minute, at volume, with nobody reading it first.
+- `clipvault-shorts.tv` - stream. Vertical video. Verity County's last hundred years compressed into forty-second clips, most of which are wrong, none of which cite anything.
+- `verity.wiki` - wiki. A county wiki for Verity County, still edited by hand by about six people and by a great many things that are not people.
+- `veritywire.press` - wire. A small regional wire filing county copy to the outlets that are left, which is why the same paragraph turns up on three of them.
+<!-- /generated: seed-sites -->
 
 Exact domains and descriptions for the current set are in `net/registry.json`
 after a build; that file is generated, so treat it as the source of truth over
@@ -173,8 +195,12 @@ Run build, then validate, then publish.
   comment threads; clicking play does not play anything.
 - There is no search engine backend. Search reads a small generated index of the
   sites in this project. It does not crawl and it does not reach anything.
-- There is no network of any kind - no other users, no posting, no accounts. The
-  forms are furniture.
+- There are no other users. You can make an account, post, gain followers and
+  get replies, and every bit of that is local: the profile and the posts live
+  in IndexedDB on the one device, the replies come from `app/bots.js`, and
+  nothing reaches anybody. Clear the browser's storage and none of it happened.
+  (This bullet said "no posting, no accounts, the forms are furniture" for a
+  long time after all three stopped being true.)
 - The content is invented. The county, the towns, the people, the newspaper, the
   fire, the diner and every post and article are fiction written for this
   project. Nothing in it is a record of anything real, and none of it should be
