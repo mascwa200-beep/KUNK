@@ -162,28 +162,6 @@ jobs:
         # build failure.
         run: python3 .github/scripts/synthnet_routes_check.py --root synthnet
 
-      - name: A list that names an order must be in it
-        # A heading is a claim, and it renders perfectly whether or not the
-        # rows under it obey it. Eight portal sites opened Property Tax,
-        # Open Burning, County Clerk under "Services A-Z"; gridline.social
-        # printed a numbered <ol> whose points went 157, 131, 115, 129; the
-        # note over every comment list on the stream sites said human
-        # comments appear below the fold, and they were rendered first.
-        #
-        # The second of those is the one that spreads. `points` in the site
-        # file is static and the number the row prints is a counter that
-        # drifts, so a list sorted on the first degrades on its own with no
-        # commit in between. news.js mostRead() has had the correct shape
-        # the whole time: score into an array, sort on the score, print the
-        # score.
-        #
-        # This reads the rendered sequence and derives nothing -- a checker
-        # that recomputes the renderer's sort agrees with the renderer's
-        # bug. Two clocks, because the counter-driven lists are nearly
-        # ordered on day one: clipvault.tv's grid was clean at the pinned
-        # instant and had four inversions 200 days later.
-        run: python3 .github/scripts/synthnet_order_check.py --root synthnet
-
       - name: Build, and confirm the committed generated files are current
         run: |
           python3 synthnet/tools/build.py
@@ -339,6 +317,34 @@ jobs:
         # declares more posts than it itemises is correct and a heading that
         # undercounts its own list is not.
         run: python3 .github/scripts/synthnet_claims_check.py --root synthnet
+
+      - name: A list that names an order must be in it
+        # A heading is a claim, and it renders perfectly whether or not the
+        # rows under it obey it. Eight portal sites opened Property Tax,
+        # Open Burning, County Clerk under "Services A-Z"; gridline.social
+        # printed a numbered <ol> whose points went 157, 131, 115, 129; the
+        # note over every comment list on the stream sites said human
+        # comments appear below the fold, and they were rendered first.
+        #
+        # The second of those is the one that spreads. `points` in the site
+        # file is static and the number the row prints is a counter that
+        # drifts, so a list sorted on the first degrades on its own with no
+        # commit in between. news.js mostRead() has had the correct shape
+        # the whole time: score into an array, sort on the score, print the
+        # score.
+        #
+        # This reads the rendered sequence and derives nothing -- a checker
+        # that recomputes the renderer's sort agrees with the renderer's
+        # bug. Two clocks, because the counter-driven lists are nearly
+        # ordered on day one: clipvault.tv's grid was clean at the pinned
+        # instant and had four inversions 200 days later.
+        #
+        # After the smoke step, which is where chromium is installed.
+        # This step first shipped above the static checks, where
+        # `import playwright` fails in under a second -- the script
+        # had run clean locally a dozen times and its POSITION in
+        # this file was the one thing no local run exercises.
+        run: python3 .github/scripts/synthnet_order_check.py --root synthnet
 
       - name: Every renderer mode has to render once
         # You cannot render a route no site serves, so a renderer can ship
