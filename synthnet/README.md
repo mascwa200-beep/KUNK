@@ -96,17 +96,20 @@ it finds any. Run it before publishing.
 
 ## Site types and seed sites
 
-Seven types, each with its own renderer and its own URL paths:
+Twenty types you can author, each with its own renderer and its own URL
+paths, plus `control` for this browser's own settings panel:
 
-| type   | paths                                              |
-| ------ | -------------------------------------------------- |
-| forum  | `/`, `/board/<id>`, `/topic/<id>`                  |
-| social | `/`, `/user/<handle>`, `/post/<id>`                |
-| blog   | `/`, `/post/<id>`, `/tag/<tag>`                    |
-| news   | `/`, `/section/<id>`, `/article/<id>`              |
-| wiki   | `/`, `/wiki/<id>`, `/category/<id>`                |
-| media  | `/`, `/watch/<id>`, `/channel/<id>`                |
-| page   | `/`, `/<pageId>`                                   |
+    aggregator  assistant  blog     board   chat
+    dash        forum      mail     market  media
+    news        newsletter page     portal  qa
+    shop        social     stream   wiki    wire
+
+This said "Seven types" and listed their paths in a table here, which was
+true when there were seven and silently wrong for every renderer added
+after. The per-type path table lives in `docs/AUTHORING.md` and is checked
+against the renderers by `.github/scripts/synthnet_routes_check.py`; a
+second copy here would be a seventh, and the paragraph below is this file
+already having learned that lesson once.
 
 The seed content shares one setting: Verity County, an inland region, 2001-2008.
 Recurring subjects across sites - the 2003 Gridfall substation fire, the Verity

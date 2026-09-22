@@ -573,16 +573,47 @@ window.SYNTH = window.SYNTH || {};
   /* BUILT-IN PAGES                                                      */
   /* ================================================================== */
 
+  /* What the built-in directory calls each kind of site, and the order it
+   * puts them in.
+   *
+   * This named the original seven and nothing else. Unknown types are not
+   * dropped -- the loop below appends them and falls back to the raw name --
+   * so every 2026 type appeared under a bare lowercase heading like "qa" or
+   * "newsletter", sorted after all seven old ones, on the one page that is
+   * meant to be a tour of the network. Nothing broke; it just read like a
+   * database dump below the fold.
+   *
+   * Still hand-written, because a label is prose and there is nowhere to
+   * derive "Encyclopedias & Reference" from. synthnet_types_check.py asserts
+   * every type this build can draw has a row here, which is the part that
+   * kept going wrong. */
   var TYPE_LABELS = {
     forum: 'Message Boards',
+    board: 'Imageboards',
     social: 'Social Networks',
+    chat: 'Chat Servers',
     blog: 'Weblogs',
     news: 'News',
+    wire: 'Wire Services',
+    newsletter: 'Newsletters',
+    aggregator: 'Link Aggregators',
+    qa: 'Question & Answer',
     wiki: 'Encyclopedias & Reference',
     media: 'Video & Media',
-    page: 'Homepages & Small Sites'
+    stream: 'Streaming Video',
+    shop: 'Shops',
+    market: 'Classifieds',
+    portal: 'Government & Institutions',
+    dash: 'Dashboards',
+    assistant: 'Assistants',
+    mail: 'Webmail',
+    page: 'Homepages & Small Sites',
+    control: 'This Browser'
   };
-  var TYPE_ORDER = ['forum', 'social', 'blog', 'news', 'wiki', 'media', 'page'];
+  var TYPE_ORDER = ['forum', 'board', 'social', 'chat', 'blog', 'news',
+                    'wire', 'newsletter', 'aggregator', 'qa', 'wiki',
+                    'media', 'stream', 'shop', 'market', 'portal', 'dash',
+                    'assistant', 'mail', 'page', 'control'];
 
   function builtinMount(extraClass) {
     return el('div', { class: 'synth-page synth-builtin ' + extraClass });

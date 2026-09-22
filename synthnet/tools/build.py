@@ -1167,8 +1167,60 @@ SW_PATH = ROOT / "sw.js"
 _SW_SHELL = re.compile(r"(var SHELL = \[)(.*?)(\];)", re.DOTALL)
 _SW_VERSION = re.compile(r"(var CACHE_VERSION = ')([^']*)(';)")
 
+CONTROL_PATH = ROOT / "app" / "control.js"
+_STARTERS = re.compile(r"(var STARTERS = )(\{.*?\})(;\n)", re.DOTALL)
 
-def cache_version(entries):
+
+def build_starters(warnings):
+    """Rewrite control.js's STARTERS from tools/new_site.py's builders.
+
+    The composer's "Insert starter" button had six starters written by hand
+    and every one of them was wrong -- not out of date, wrong: `blog` offered
+    `tagline` and `posts[].title` where the renderer reads `author` and
+    `posts`, `wiki` offered `pages[].slug` where it reads `articles`, and
+    `homepage` named a type that has not existed since it was renamed `page`.
+    The other fourteen fell through to `{"intro":"","items":[]}`, which fits
+    no renderer in the project. The one control whose job is to give you a
+    correct starting point gave you a broken one, for every type.
+
+    new_site.py already carries a body per type that validate.py --strict
+    accepts and that renders, because the scaffolding CLI needs the same
+    thing. Deriving from it deletes the second copy rather than correcting
+    it, and `build.py --check` keeps them in step.
+    """
+    sys.path.insert(0, str(ROOT / "tools"))
+    try:
+        import new_site
+    except Exception as exc:                      # pragma: no cover
+        warnings.append("cannot read tools/new_site.py for the composer "
+                        "starters: %s" % exc)
+        return CONTROL_PATH.read_text(encoding="utf-8")
+
+    bodies = {}
+    for kind in sorted(new_site.TYPES):
+        make = new_site._DATA.get(kind)
+        if make is None:
+            warnings.append("no starter body for type %r in new_site.py, so "
+                            "the composer will have none either" % kind)
+            continue
+        bodies[kind] = make("Your Site")
+
+    block = json.dumps(bodies, indent=2, sort_keys=True, ensure_ascii=False)
+    block = "\n".join("  " + line if line.strip() else line
+                      for line in block.splitlines()).lstrip()
+
+    current = CONTROL_PATH.read_text(encoding="utf-8")
+    out, hits = _STARTERS.subn(
+        lambda m: m.group(1) + block + m.group(3), current)
+    if hits != 1:
+        warnings.append(
+            "app/control.js has no single 'var STARTERS = {...};' block to "
+            "regenerate, so the composer's starters are whatever is there")
+        return current
+    return out
+
+
+def cache_version(entries, pending):
     """A name for the cache that changes when what it holds changes.
 
     sw.js is cache-first with no revalidation -- `if (hit) return hit;` --
@@ -1204,16 +1256,24 @@ def cache_version(entries):
     """
     derived = {_rel(REGISTRY_PATH).replace("\\", "/"),
                _rel(SEARCH_PATH).replace("\\", "/")}
+    # Files THIS build is about to write have to be hashed as they will be,
+    # not as they are on disk. control.js is one: build_starters() rewrites
+    # it, and hashing the stale copy made the build non-idempotent -- the
+    # next run would see the new control.js and produce a different version,
+    # so `build --check` failed on a tree nobody had touched.
     digest = hashlib.sha1()
     for entry in entries:
         rel = entry[2:] if entry.startswith("./") else entry
         digest.update(entry.encode("utf-8") + b"\0")
         if not rel or rel in derived:
             continue            # './' is index.html, already in the list
-        try:
-            digest.update((ROOT / rel).read_bytes())
-        except OSError:
-            digest.update(b"<missing>")
+        if rel in pending:
+            digest.update(pending[rel].encode("utf-8"))
+        else:
+            try:
+                digest.update((ROOT / rel).read_bytes())
+            except OSError:
+                digest.update(b"<missing>")
         digest.update(b"\0")
     for path in sorted(SITES_DIR.glob("*/site.json")):
         digest.update(str(path.relative_to(ROOT)).encode("utf-8") + b"\0")
@@ -1221,7 +1281,7 @@ def cache_version(entries):
     return "synthnet-" + digest.hexdigest()[:12]
 
 
-def build_service_worker(warnings):
+def build_service_worker(warnings, pending):
     """Regenerate sw.js's precache list from what index.html actually loads.
 
     This list used to be maintained by hand, and it drifted exactly the way
@@ -1286,7 +1346,7 @@ def build_service_worker(warnings):
         return current
     out = current[:match.start(2)] + body + current[match.end(2):]
 
-    version = cache_version(entries)
+    version = cache_version(entries, pending)
     out, hits = _SW_VERSION.subn(lambda m: m.group(1) + version + m.group(3), out)
     if hits != 1:
         warnings.append(
@@ -1302,13 +1362,17 @@ def compute(warnings):
     sites = {}
     for _path, site in loaded:
         sites[site.get("domain", "")] = site
-    service_worker = build_service_worker(warnings)
+    control_js = build_starters(warnings)
+    service_worker = build_service_worker(warnings, {
+        _rel(CONTROL_PATH).replace("\\", "/"): control_js,
+    })
     bundle = build_bundle(registry, sites, search, warnings)
     return {
         REGISTRY_PATH: dumps(registry),
         SEARCH_PATH: dumps_search(search),
         BUNDLE_PATH: bundle,
         SW_PATH: service_worker,
+        CONTROL_PATH: control_js,
     }, registry, search
 
 

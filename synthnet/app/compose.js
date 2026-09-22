@@ -514,29 +514,42 @@ window.SYNTH = window.SYNTH || {};
 
   /* ---------- profile card ---------- */
 
+  /* fame.js documents exactly what these return, one file away:
+   *
+   *   tierFor(followers) -> {level, name, next, progress}
+   *   milestones(profile) -> [{at, name, blurb, unlocked}]   -- `at` is a
+   *                          FOLLOWER COUNT, not a time
+   *
+   * This used to guess at four spellings for every field -- name/label/title,
+   * index, next/nextName, progress/toNext -- and the guessing is why two
+   * real bugs sat here unseen:
+   *
+   *   tierFor(p) was passed the PROFILE, where a follower count belongs.
+   *   Number({...}) is NaN and NaN || 0 is 0, so the card read tier "nobody"
+   *   at any follower count, for ever.
+   *
+   *   out.index read t.index; tierFor returns `level`, so the tier index was
+   *   always 0 as well.
+   *
+   * Neither could be seen, because nothing called this function. */
   function tierInfo(p) {
-    var out = { name: 'Unknown', index: 0, progress: 0, next: null, milestone: null };
+    var out = { name: 'nobody', level: 0, progress: 0, next: null };
     if (!S.fame || typeof S.fame.tierFor !== 'function') return out;
     var t;
-    try { t = S.fame.tierFor(p); } catch (e) { return out; }
+    try { t = S.fame.tierFor(followersOf(p)); } catch (e) { return out; }
     if (!t) return out;
-    if (typeof t === 'string') { out.name = t; return out; }
-    out.name = t.name || t.label || t.title || out.name;
-    out.index = num(t.index);
-    out.next = t.next || t.nextName || null;
-    if (typeof out.next === 'object' && out.next) {
-      out.next = out.next.name || out.next.label || null;
+    out.name = t.name || out.name;
+    out.level = num(t.level);
+    out.next = (t.next && t.next.name) ? t.next.name : null;
+    out.nextAt = (t.next && typeof t.next.at === 'number') ? t.next.at : null;
+    if (typeof t.progress === 'number' && isFinite(t.progress)) {
+      out.progress = Math.max(0, Math.min(1, t.progress));
     }
-    var prog = t.progress;
-    if (typeof prog !== 'number' && typeof t.toNext === 'number' && typeof t.at === 'number') {
-      prog = t.toNext > 0 ? t.at / t.toNext : 1;
-    }
-    if (typeof prog === 'number' && isFinite(prog)) {
-      if (prog > 1) prog = prog / 100;
-      out.progress = Math.max(0, Math.min(1, prog));
-    }
-    out.blurb = t.blurb || t.desc || null;
     return out;
+  }
+
+  function followersOf(p) {
+    return Math.max(0, Number(p && p.followers) || 0);
   }
 
   function latestMilestone(p) {
@@ -631,7 +644,10 @@ window.SYNTH = window.SYNTH || {};
     bar.appendChild(fill);
     fame.appendChild(bar);
     fame.appendChild(el('div', { 'class': 'cw-bar-pct' }, txt(pct + '% of the way there')));
-    if (t.blurb) fame.appendChild(el('div', { 'class': 'cw-tier-blurb' }, txt(String(t.blurb))));
+    if (t.nextAt) {
+      fame.appendChild(el('div', { 'class': 'cw-tier-blurb' },
+        txt(commas(t.nextAt) + ' followers is the next rung.')));
+    }
     card.appendChild(fame);
 
     var m = latestMilestone(p);
@@ -640,7 +656,15 @@ window.SYNTH = window.SYNTH || {};
       mi.appendChild(el('span', { 'class': 'cw-mi-tag' }, txt('unlocked')));
       mi.appendChild(el('span', { 'class': 'cw-mi-name' }, txt(m.name)));
       if (m.note) mi.appendChild(el('span', { 'class': 'cw-mi-note' }, txt(m.note)));
-      if (m.at) mi.appendChild(el('span', { 'class': 'cw-mi-when' }, txt(ago(m.at))));
+      /* `at` is the FOLLOWER COUNT this rung sits at -- fame.js's ladder
+       * runs {at: 1, name: 'one follower'} up to {at: 1000000}. This used
+       * to hand it to ago(), which reads milliseconds, so a milestone you
+       * had just crossed rendered as a date in 1970. There is no unlock
+       * time anywhere in the data to print instead, so print what it is. */
+      if (m.at) {
+        mi.appendChild(el('span', { 'class': 'cw-mi-when' },
+          txt('at ' + commas(m.at) + ' followers')));
+      }
       card.appendChild(mi);
     }
 

@@ -33,6 +33,7 @@ on:
       - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/scripts/synthnet_order_check.py"
+      - ".github/scripts/synthnet_types_check.py"
       - ".github/workflows/synthnet.yml"
   pull_request:
     paths:
@@ -53,6 +54,7 @@ on:
       - ".github/scripts/synthnet_chrono_check.py"
       - ".github/scripts/synthnet_routes_check.py"
       - ".github/scripts/synthnet_order_check.py"
+      - ".github/scripts/synthnet_types_check.py"
       - ".github/workflows/synthnet.yml"
   workflow_dispatch:
 
@@ -371,6 +373,24 @@ jobs:
         # had run clean locally a dozen times and its POSITION in
         # this file was the one thing no local run exercises.
         run: python3 .github/scripts/synthnet_order_check.py --root synthnet
+
+      - name: Every list of type names must answer to the renderers
+        # Round 10 did this for the per-type PATH table. This is the table
+        # beside it -- the list of type NAMES -- which was written down ten
+        # times and had drifted in six of them. The two that broke work:
+        # tools/new_site.py named seven types as argparse choices, so the
+        # scaffolding CLI refused thirteen of the twenty authorable ones; and
+        # the expansion workflow told its own verification agent the valid
+        # types were the original seven, so it would reject a chat site that
+        # same workflow had just been told to write.
+        #
+        # It also scaffolds every authorable type into a temp directory,
+        # validates it and draws it in a browser. That is the part no static
+        # parse can make: a body can satisfy every required key and still
+        # render a blank page. Nothing is written to the repository.
+        #
+        # After the smoke step, which is where chromium is installed.
+        run: python3 .github/scripts/synthnet_types_check.py --root synthnet
 
       - name: Every renderer mode has to render once
         # You cannot render a route no site serves, so a renderer can ship
