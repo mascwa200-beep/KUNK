@@ -688,7 +688,7 @@ window.SYNTH = window.SYNTH || {};
 
     var line = el('p', { 'class': 'tm-shelfnote' }, chans.length === 1
       ? 'One channel here: '
-      : (chans.length + ' channels here: '));
+      : (chans.length + (chans.length === 1 ? ' channel here: ' : ' channels here: ')));
     var i;
     for (i = 0; i < chans.length; i++) {
       line.appendChild(ctx.link('/c/' + chans[i].id, chans[i].name || chans[i].id, 'tm-chlink'));
@@ -996,7 +996,9 @@ window.SYNTH = window.SYNTH || {};
     );
     var csec = el('section', { 'class': 'tm-comments' });
     csec.appendChild(el('h2', { 'class': 'tm-h2' },
-      commas(comments.length + (live ? live.length : 0)) + ' comments'));
+      (function (n) {
+        return commas(n) + (n === 1 ? ' comment' : ' comments');
+      }(comments.length + (live ? live.length : 0)))));
     csec.appendChild(el('p', { 'class': 'tm-cnote' },
       'Comment ranking: engagement. Human comments appear below the fold by design.'));
 

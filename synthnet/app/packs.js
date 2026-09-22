@@ -43,9 +43,32 @@
    * would break a renderer is rejected with a reason; a pack that is merely
    * boring is fine. */
 
-  var TYPES = ['forum', 'social', 'blog', 'news', 'wiki', 'media', 'page',
-               'aggregator', 'shop', 'assistant', 'qa', 'mail', 'portal',
-               'stream', 'board', 'market', 'dash'];
+  /* Which types a pack may contain: whatever this build can draw, less
+   * `control`, which is the browser's own settings panel and not a site
+   * anyone authors.
+   *
+   * This was a hand-written list of seventeen names, and it had missed
+   * `chat`, `newsletter` and `wire` since those renderers shipped. Nothing
+   * stops you AUTHORING one -- saveMySite below checks only that a domain is
+   * truthy, and the composer offers every type render.list() reports -- and
+   * exportPack dumps your whole `mysites` collection unfiltered. So one chat
+   * site made the entire export unimportable, every other site you had
+   * written with it, and the Packs screen said "Import refused. Nothing was
+   * changed." That was true, and no help at all.
+   *
+   * loadmap.js is the list, and tools/build.py already fails the build if a
+   * renderer on disk is missing from it. Asking it cannot drift. */
+  function acceptedTypes() {
+    var out = [], k;
+    var map = (window.SYNTH && SYNTH.loadmap) || null;
+    if (!map) { return out; }
+    for (k in map) {
+      if (Object.prototype.hasOwnProperty.call(map, k) && k !== 'control') {
+        out.push(k);
+      }
+    }
+    return out;
+  }
 
   function validate(pack) {
     var errors = [];
@@ -56,14 +79,19 @@
 
     var sites = asArray(pack.sites);
     var seen = {};
+    /* Read once. If loadmap is somehow absent the answer is an empty list,
+     * and rejecting every type is loud rather than quietly accepting any. */
+    var types = acceptedTypes();
     for (var i = 0; i < sites.length; i++) {
       var s = sites[i], where = 'sites[' + i + ']';
       if (!s || typeof s !== 'object') { errors.push(where + ' is not an object'); continue; }
       if (!s.domain) { errors.push(where + ' has no domain'); continue; }
       if (seen[s.domain]) errors.push(where + ' repeats domain ' + s.domain);
       seen[s.domain] = 1;
-      if (TYPES.indexOf(s.type) === -1) {
-        errors.push(where + ' (' + s.domain + ') has unknown type ' + JSON.stringify(s.type));
+      if (types.indexOf(s.type) === -1) {
+        errors.push(where + ' (' + s.domain + ') has unknown type ' +
+                    JSON.stringify(s.type) + '. This build draws: ' +
+                    types.slice().sort().join(', '));
       }
       if (!s.data || typeof s.data !== 'object') {
         errors.push(where + ' (' + s.domain + ') has no data object');

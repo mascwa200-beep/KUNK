@@ -453,7 +453,9 @@
       mount.appendChild(el('div', { 'class': 'chanrow' },
         chans.map(function (c) { return chanChip(ctx, c); })));
       mount.appendChild(el('div', { 'class': 'm-more' },
-        ctx.link('/channels', 'All ' + chans.length + ' channels, with what is on them')));
+        ctx.link('/channels', chans.length === 1
+          ? 'The one channel, and what is on it'
+          : ('All ' + chans.length + ' channels, with what is on them'))));
     }
 
     mount.appendChild(foot(ctx));

@@ -22,7 +22,8 @@
  *
  *   count   how many sites to create. Clamped to 12, always.
  *   types   pool of site types to draw from, cycled in order.
- *           Valid: forum, social, blog, news, wiki, media, page.
+ *           Valid: any type this build can draw except `control` -- see
+ *           ALL_TYPES below, which is the list this file actually uses.
  *   theme   free text steering the subject matter of the new sites.
  *   linkTo  existing domains the new sites should cross-link to.
  *   maxTokens advisory per-run ceiling; the real ceiling is `budget`.
@@ -275,8 +276,12 @@ export default async function () {
         '  ' + site.path,
         '',
         'Check: schema is 1; domain is present and matches the folder slug',
-        '(dots to hyphens); type is one of forum, social, blog, news, wiki,',
-        'media, page; skin is a skin that is legal for that type; the data',
+        // Built from ALL_TYPES, not restated. This sentence said "forum,
+        // social, blog, news, wiki, media, page" while ALL_TYPES above
+        // listed twenty, so the verify agent was told to reject a chat or a
+        // wire that this same workflow had just been told to write.
+        '(dots to hyphens); type is one of ' + ALL_TYPES.join(', ') + ';',
+        'skin is a skin that is legal for that type; the data',
         'object uses the exact key names the contract lists for that type;',
         'every id referenced (boardId, sectionId, channelId, categoryId and so',
         'on) actually exists; inline markup tags are balanced; there is no',

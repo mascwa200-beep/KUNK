@@ -1226,7 +1226,8 @@
       ctx.mount.appendChild(shell([
         el('h1', { class: 'wiki-title' }, 'Recent changes'),
         el('p', { class: 'wiki-lead' },
-          all.length + ' changes across ' + articles.length + ' articles. ' +
+          all.length + (all.length === 1 ? ' change across ' : ' changes across ') +
+        articles.length + (articles.length === 1 ? ' article. ' : ' articles. ') +
           bots + ' of them were not made by a person.'),
         all.length ? clist : el('p', { class: 'wiki-empty' }, 'Nothing has changed.'),
         el('p', { class: 'wiki-backlink' }, link('/', '← Main page'))

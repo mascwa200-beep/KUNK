@@ -676,7 +676,8 @@ window.SYNTH = window.SYNTH || {};
       el('h1', { 'class': 'ms-h1' }, cat.name));
     if (minStars || onlyBrand) {
       head.appendChild(el('p', { 'class': 'ms-result-count' },
-        products.length + ' of the ' + inCat + ' items in this department' +
+        products.length + ' of the ' + inCat +
+        (inCat === 1 ? ' item in this department' : ' items in this department') +
         (minStars ? (', rated ' + minStars + ' stars and up') : '') +
         (onlyBrand ? ', sold by the shop itself' : '') + '.'));
     } else {
@@ -993,7 +994,7 @@ window.SYNTH = window.SYNTH || {};
       clean.length
         ? (hits.length + (hits.length === 1 ? ' item' : ' items') + scope +
            ', out of ' + all.length + ' this store has listed.')
-        : ('This store lists ' + all.length + ' items' + scope +
+        : ('This store lists ' + all.length + (all.length === 1 ? ' item' : ' items') + scope +
            '. Type something into the box above to narrow them down.')));
 
     if (!hits.length && clean.length) {

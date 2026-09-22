@@ -21,16 +21,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITES_DIR = ROOT / "net" / "sites"
 
-SKINS = {
-    "forum": ["phpbb-blue", "ezboard-grey"],
-    "social": ["bluebird", "myspace-black"],
-    "blog": ["movabletype-cream", "kubrick-blue"],
-    "news": ["broadsheet", "portal-red"],
-    "wiki": ["monobook"],
-    "media": ["tubeplayer"],
-    "page": ["geocities", "tripod-tile", "plain-white"],
-}
-TYPES = list(SKINS)
+# Which types exist, and which skins are legal for each, come from
+# validate.py -- the thing that is going to reject the file this tool writes.
+#
+# They used to be restated here, and both copies had drifted: the type list
+# named seven of the twenty-one, so `new_site.py <domain> chat` answered
+# "invalid choice" and thirteen of the twenty authorable types could not be
+# scaffolded at all; and the skin lists had missed softboard, feedslate and
+# pinkslime, so the tool refused skins the validator accepts. A scaffolder
+# that disagrees with the validator about what is legal is worse than no
+# scaffolder.
+#
+# `control` is excluded on purpose: it is the in-app settings panel, one
+# site that already exists, and docs/AUTHORING.md says not to author one.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validate import SKINS as _VALID_SKINS  # noqa: E402
+
+SKINS = {k: list(v) for k, v in _VALID_SKINS.items() if k != "control"}
+TYPES = sorted(SKINS)
 
 ERA = "2004"
 
@@ -263,6 +271,251 @@ def _page(title):
     }
 
 
+# ---------------------------------------------------------------------------
+# The 2026 set.
+#
+# These thirteen had no builder and no entry in TYPES, so `new_site.py <domain>
+# chat` answered "invalid choice" -- the scaffolding tool could not scaffold
+# thirteen of the twenty types the app draws. Each of these is the smallest
+# body that tools/validate.py --strict accepts for its type, with every
+# cross-reference (catId, boardId, channelId) pointing at something that is
+# actually here.
+# ---------------------------------------------------------------------------
+
+
+def _aggregator(title):
+    return {
+        "siteName": title,
+        "boards": [{"id": "b-main", "name": "Main"}],
+        "links": [
+            {
+                "id": "l-001",
+                "boardId": "b-main",
+                "title": "Something somebody submitted",
+                # No url on purpose: a link row without one is a text post,
+                # which these sites are full of. A placeholder url would
+                # have to name a site that exists, because validate.py
+                # resolves every synth:// -- and a scaffold should not
+                # depend on some other site still being there.
+                "by": "poster",
+                "points": 12,
+                "comments": [{"by": "replier", "body": "Replace this."}],
+            }
+        ],
+    }
+
+
+def _qa(title):
+    return {
+        "siteName": title,
+        "tags": [{"id": "t-general", "name": "general"}],
+        "questions": [
+            {
+                "id": "q-001",
+                "title": "How do I replace this question?",
+                "body": "Edit the site.json. Replace this.",
+                "by": "asker",
+                "tagIds": ["t-general"],
+                "votes": 3,
+                "answers": [{"by": "answerer", "body": "Like that.", "votes": 1}],
+            }
+        ],
+    }
+
+
+def _board(title):
+    return {
+        "boardName": title,
+        "threads": [
+            {
+                "id": "t-001",
+                "subject": "Replace this thread",
+                "by": "Anonymous",
+                "body": "And this post.",
+                "posts": [{"by": "Anonymous", "body": "And this reply."}],
+            }
+        ],
+    }
+
+
+def _shop(title):
+    return {
+        "storeName": title,
+        "categories": [{"id": "c-main", "name": "Everything"}],
+        "products": [
+            {
+                "id": "p-001",
+                "categoryId": "c-main",
+                "name": "A thing for sale",
+                "blurb": "One sentence about the thing. Replace this.",
+                "price": "19.99",
+                "reviews": [{"by": "buyer", "body": "It arrived.", "stars": 4}],
+            }
+        ],
+    }
+
+
+def _market(title):
+    return {
+        "siteName": title,
+        "cats": [{"id": "c-misc", "name": "Miscellaneous"}],
+        "regions": [{"id": "r-gridfall", "name": "Gridfall"}],
+        "listings": [
+            {
+                "id": "l-001",
+                "catId": "c-misc",
+                "regionId": "r-gridfall",
+                "title": "Something for sale",
+                "body": "Collection only. Replace this.",
+                "by": "seller",
+            }
+        ],
+    }
+
+
+def _assistant(title):
+    return {
+        "productName": title,
+        "disclaimers": [
+            "%s can make mistakes. Check important information." % title,
+        ],
+        "canned": [
+            {"q": "What is this?", "a": "An answer that sounds right. Replace this."},
+        ],
+    }
+
+
+def _mail(title):
+    return {
+        "account": "you@%s" % title.lower().replace(" ", ""),
+        "folders": [{"id": "f-inbox", "name": "Inbox"}],
+        "messages": [
+            {
+                "id": "m-001",
+                "folderId": "f-inbox",
+                "subject": "Replace this message",
+                "from": "somebody@verity.net",
+                "body": "And this body.",
+            }
+        ],
+    }
+
+
+def _portal(title):
+    return {
+        "agency": title,
+        "services": [
+            {
+                "id": "s-001",
+                "name": "A Service This Office Provides",
+                "blurb": "One sentence about it. Replace this.",
+                "status": "Open",
+                "forms": [{"name": "Form 1A"}],
+            }
+        ],
+    }
+
+
+def _stream(title):
+    return {
+        "siteName": title,
+        "channels": [{"id": "ch-001", "name": "A Channel"}],
+        "videos": [
+            {
+                "id": "v-001",
+                "channelId": "ch-001",
+                "title": "A video with a title like this",
+                "description": "What it is about. Replace this.",
+                "views": 1204,
+                "comments": [{"by": "viewer", "kind": "human", "body": "first"}],
+            }
+        ],
+    }
+
+
+def _dash(title):
+    return {
+        "siteName": title,
+        "place": "Gridfall",
+        "weather": {
+            "now": "Overcast",
+            "days": [{"day": "Today", "summary": "Overcast, turning to rain."}],
+        },
+        "transit": [{"route": "Route 3", "status": "On time"}],
+        "alerts": [{"level": "info", "text": "Nothing is wrong. Replace this."}],
+        "widgets": [{"title": "A Panel"}],
+    }
+
+
+def _wire(title):
+    return {
+        "agency": title,
+        "bureau": "Gridfall",
+        "categories": [{"id": "cat-county", "name": "County"}],
+        "dispatches": [
+            {
+                "id": "d-001",
+                "catId": "cat-county",
+                "slug": "REPLACE-THIS",
+                "dateline": "GRIDFALL",
+                "priority": "routine",
+                "lead": "One sentence that carries the story.",
+                "body": "The rest of it. Replace this.",
+            }
+        ],
+    }
+
+
+def _newsletter(title):
+    return {
+        "title": title,
+        "author": "The Editor",
+        "cadence": "Weekly",
+        "issues": [
+            {
+                "id": "i-001",
+                "number": 1,
+                "date": "2026-01-08",
+                "subject": "Issue one",
+                "intro": "What this letter is for. Replace this.",
+                "sections": [
+                    {
+                        "name": "This week",
+                        "items": [
+                            {"headline": "Something happened",
+                             "blurb": "One sentence about it."}
+                        ],
+                    }
+                ],
+            }
+        ],
+    }
+
+
+def _chat(title):
+    return {
+        "serverName": title,
+        "channels": [
+            {
+                "id": "ch-general",
+                "name": "general",
+                "topic": "Anything. Replace this.",
+                "messages": [{"by": "someone", "body": "hello"}],
+            },
+            # The point of this type is that the old forum archive ended up
+            # here, where nothing outside can search it. A chat with no
+            # archive channel is just a chat -- validate.py warns about it.
+            {
+                "id": "ch-archive",
+                "name": "archive",
+                "kind": "archive",
+                "topic": "Everything that used to be on the board.",
+                "messages": [{"by": "someone", "body": "it was all in here"}],
+            },
+        ],
+    }
+
+
 _DATA = {
     "forum": _forum,
     "social": _social,
@@ -271,6 +524,19 @@ _DATA = {
     "wiki": _wiki,
     "media": _media,
     "page": _page,
+    "aggregator": _aggregator,
+    "qa": _qa,
+    "board": _board,
+    "shop": _shop,
+    "market": _market,
+    "assistant": _assistant,
+    "mail": _mail,
+    "portal": _portal,
+    "stream": _stream,
+    "dash": _dash,
+    "wire": _wire,
+    "newsletter": _newsletter,
+    "chat": _chat,
 }
 
 

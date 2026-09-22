@@ -14,6 +14,16 @@
 
   /* ---------- small helpers ---------- */
 
+  /* A count and its noun, agreeing. Written down once because this file
+   * says "N topics" in five places and had the singular right in two of
+   * them -- the footer read "a total of 1 articles in 1 topics" and the FAQ
+   * read "1 forum in 1 category, 1 topics and 1 posts", both of which only
+   * happen on a board with one post in it. No authored board here is that
+   * small; a freshly scaffolded one is, which is how these surfaced. */
+  function plur(n, one, many) {
+    return num(n) + ' ' + (n === 1 ? one : many);
+  }
+
   function num(n) {
     var v = (typeof n === 'number') ? n : parseInt(n, 10);
     if (!isFinite(v)) v = 0;
@@ -396,14 +406,20 @@
     mount.appendChild(el('div', { 'class': 'fbottom' },
       el('div', { 'class': 'fonline' },
         el('strong', null, 'Who is online'), ' — In total there are ' +
-        num(regs + guests) + ' users online :: ' + num(regs) + ' registered, 0 hidden and ' +
-        num(guests) + ' guests   [ Based on users active over the past 5 minutes ]'),
+        plur(regs + guests, 'user', 'users') + ' online :: ' + num(regs) +
+        ' registered, 0 hidden and ' + plur(guests, 'guest', 'guests') +
+        '   [ Based on users active over the past 5 minutes ]'),
       el('div', { 'class': 'fonline dim' },
         'Most users ever online was ' + num(peak) + ' on ' + peakDate),
+      /* "a total of 1 articles in 1 topics". Every authored board here has
+       * dozens of posts, so the singular never came up until a scaffolded
+       * board with one post in one topic did -- which is what a board looks
+       * like on its first day, and what tools/new_site.py writes. */
       el('div', { 'class': 'fstats' },
-        'Our users have posted a total of ' + num(postTotal) + ' articles in ' +
-        num(topicTotal) + ' topics • We have ' + num(members) +
-        ' registered users • The newest registered user is ' +
+        'Our users have posted a total of ' + plur(postTotal, 'article', 'articles') +
+        ' in ' + plur(topicTotal, 'topic', 'topics') +
+        ' • We have ' + plur(members, 'registered user', 'registered users') +
+        ' • The newest registered user is ' +
         el('span', { 'class': 'uname' }, newest).textContent),
       el('div', { 'class': 'legend' },
         el('span', { 'class': 'ficon' }, ''), ' New posts   ',
@@ -743,7 +759,7 @@
       el('span', { 'class': 'tbar-title' }, txt(topic.title, 'Topic')),
       el('span', { 'class': 'tbar-sub' }, flags,
         ' ' + num(posts.length) + ' post' + (posts.length === 1 ? '' : 's') +
-        ' • ' + num(topic.views) + ' views')));
+        ' • ' + plur(topic.views, 'view', 'views'))));
 
     if (topic.locked) {
       mount.appendChild(el('div', { 'class': 'lockednote' },
@@ -1328,15 +1344,17 @@
     if (n.claimedTopics > n.topics) {
       counts = n.boards + (n.boards === 1 ? ' forum in ' : ' forums in ') + n.cats +
         (n.cats === 1 ? ' category. ' : ' categories. ') +
-        'The counters on the index add up to ' + num(n.claimedTopics) + ' topics and ' +
-        num(n.claimedPosts) + ' posts. ' + num(n.topics) +
+        'The counters on the index add up to ' +
+        plur(n.claimedTopics, 'topic', 'topics') + ' and ' +
+        plur(n.claimedPosts, 'post', 'posts') + '. ' + num(n.topics) +
         (n.topics === 1 ? ' topic opens' : ' topics open') + ' from here, carrying ' +
-        num(n.posts) + ' posts between them; the rest are further back than anything ' +
-        'still links to.';
+        plur(n.posts, 'post', 'posts') + ' between them; the rest are further back ' +
+        'than anything still links to.';
     } else {
-      counts = n.boards + (n.boards === 1 ? ' forum in ' : ' forums in ') + n.cats +
-        (n.cats === 1 ? ' category, ' : ' categories, ') + num(n.topics) + ' topics and ' +
-        num(n.posts) + ' posts.';
+      counts = plur(n.boards, 'forum', 'forums') + ' in ' +
+        plur(n.cats, 'category', 'categories') + ', ' +
+        plur(n.topics, 'topic', 'topics') + ' and ' +
+        plur(n.posts, 'post', 'posts') + '.';
     }
 
     /* Not a "what this board is" panel: the line under the banner on every
@@ -1483,8 +1501,9 @@
     var q = txt(ctx.query && ctx.query.q);
     var n = boardNumbers(ctx);
     var wrap = shell(ctx, 'Search this board', 'Search this board',
-      'Reads the ' + num(n.topics) + ' topics and ' + num(n.posts) +
-      ' posts this board serves, titles and bodies both.');
+      'Reads the ' + plur(n.topics, 'topic', 'topics') + ' and ' +
+      plur(n.posts, 'post', 'posts') +
+      ' this board serves, titles and bodies both.');
 
     wrap.appendChild(searchForm(ctx, q));
 
@@ -1541,7 +1560,7 @@
 
     if (!total) {
       wrap.appendChild(el('p', { 'class': 'fpara' },
-        'The whole of this board is ' + num(n.topics) + ' topics. If the thread you ' +
+        'The whole of this board is ' + plur(n.topics, 'topic', 'topics') + '. If the thread you ' +
         'want was on it once, it may be behind one of the counters on the index that ' +
         'nothing links to any more.'));
     }
