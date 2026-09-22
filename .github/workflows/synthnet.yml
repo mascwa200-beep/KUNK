@@ -392,6 +392,26 @@ jobs:
         # After the smoke step, which is where chromium is installed.
         run: python3 .github/scripts/synthnet_types_check.py --root synthnet
 
+      - name: Text on a page must be findable by searching for it
+        # app/engine.js calls the search box "Searching the whole of
+        # VerityNet, offline". Three rounds have now found that to be a claim
+        # rather than a description, and each time by reading the content and
+        # reasoning about which field was next. This does it the other way:
+        # it renders 318 pages, reads the words off the screen, keeps the
+        # ones the site's own file authors -- so the live generators' output
+        # is not held against a static index -- and asks the app's own search
+        # box for every one of them.
+        #
+        # What that found the first time it ran: `[quote=Dori Wanamaker]`
+        # rendered as "Dori Wanamaker wrote:" and the indexer's tag regex ate
+        # the name with the tag; and every renderer draws a masthead out of
+        # `data` -- siteName, boardName, agency, motto, notices, rules,
+        # about, blogroll, navLabel, the button walls -- which no document
+        # builder read at all.
+        #
+        # After the smoke step, which is where chromium is installed.
+        run: python3 .github/scripts/synthnet_search_check.py --root synthnet
+
       - name: Every renderer mode has to render once
         # You cannot render a route no site serves, so a renderer can ship
         # having never run. Four did: wire, newsletter, chat, and the three

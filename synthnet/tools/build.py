@@ -96,15 +96,48 @@ _MARKUP_TAG = re.compile(
     r"\[/?(?:b|i|u|s|quote|code|list|url|\*)(?:=[^\]\n]{0,200})?\]", re.IGNORECASE
 )
 _MARKUP_IMG = re.compile(r"\[img:[^\]\n]{0,200}\]", re.IGNORECASE)
+# Pulled out BEFORE the general tag strip, because the general one eats the
+# attribution with the tag. See strip_markup().
+_MARKUP_QUOTE = re.compile(r"\[quote=([^\]\r\n]{0,120})\]", re.IGNORECASE)
+_MARKUP_TPL = re.compile(r"\{\{([A-Za-z][A-Za-z ?]{0,22})\}\}")
 _SCHEME = re.compile(r"synth://", re.IGNORECASE)
 _WS = re.compile(r"\s+")
 
 
 def strip_markup(text):
-    """Turn a site.json body into plain searchable/snippetable text."""
+    """Turn a site.json body into plain searchable/snippetable text.
+
+    This is the third implementation of "what does this text say" in the
+    project, and it is the one that decides what can be FOUND:
+
+        app/markup.js parse()   what a reader sees
+        app/markup.js strip()   the app's own plain-text path
+        this                    what goes into net/search.json
+
+    It has to be a separate implementation -- build.py is stdlib-only with
+    no JS runtime, so it cannot call markup.js. What it can do is agree, and
+    on quote attributions it did not.
+
+    `[quote=Dori Wanamaker]` renders as "Dori Wanamaker wrote:" and strips
+    (in JS) to "Dori Wanamaker: ", but _MARKUP_TAG's optional `=value` group
+    matched the whole opening tag here and substituted a space, name
+    included. Measured across the network: 88 attributed quotes, 62 distinct
+    names, and eleven of them naming someone whose name is on the page and
+    absent from the index entirely -- Wanamaker, Sikkema, Nyhus, Wrase,
+    Hulse, Ferreyra, BrightLeaf. Search for a name you can see, get nothing,
+    under a box that calls itself "Searching the whole of VerityNet".
+
+    The `[quote]` with no attribution renders the label "Quote:" and neither
+    stripper emits it. That one is right: a label is chrome, not content.
+    """
     if not isinstance(text, str) or not text:
         return ""
     out = _MARKUP_IMG.sub(" ", text)
+    out = _MARKUP_QUOTE.sub(r" \1: ", out)
+    # A maintenance template renders as a chip reading its own name, so its
+    # words belong in the index the way they are on the page. The braces
+    # were being left in; tokenisation happened to drop them, which is luck.
+    out = _MARKUP_TPL.sub(r" \1 ", out)
     out = _MARKUP_TAG.sub(" ", out)
     out = _SCHEME.sub(" ", out)
     return _WS.sub(" ", out).strip()
@@ -134,6 +167,33 @@ def _people(rows, *keys):
                 if isinstance(v, str):
                     out.append(v)
     return out
+
+
+def _standing(docs, *parts):
+    """Fold a site's STANDING text into its root document.
+
+    Every renderer draws a masthead from `data` -- siteName, boardName,
+    storeName, agency, masthead -- and most draw a line of prose under it:
+    a tagline, a motto, a slogan, a cadence. Several draw a whole standing
+    block: a portal's `notices`, a blog's `about` and `blogroll`, a board's
+    `rules`. All of it is authored, all of it is on screen, and until this
+    change not one field in that list was read by any builder here.
+
+    Measured by walking every site file and comparing its words against the
+    documents this module produces: 276 words across the eight portals'
+    notices, 153 across fourteen blogs' about boxes, 94 in the button-wall
+    labels, 79 in blogroll labels. 102 of the 109 sites carry at least one
+    of these fields. Search for a sentence off a village's front page and
+    the village does not come back.
+
+    The root document is where it belongs. A standing block is not a page --
+    giving it a path of its own would put a URL in the results that no
+    renderer serves -- but it IS the front page, which is what `/` is.
+    """
+    text = _txt(*parts)
+    if text:
+        docs.append(_doc("/", None, text))
+    return docs
 
 
 # --------------------------------------------------------------------------
@@ -173,10 +233,13 @@ def _docs_forum(data):
                     _people(posts, "author"),
                     [p.get("body") for p in posts],
                     [p.get("signature") for p in posts],
+                    # the rank under a username -- "Newly registered",
+                    # "Site Admin". 43 of them, all on screen.
+                    [p.get("authorTitle") for p in posts],
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("boardName"), data.get("moderators"))
 
 
 def _docs_social(data):
@@ -243,7 +306,9 @@ def _docs_blog(data):
         )
     for tag in sorted(tags):
         docs.append(_doc("/tag/%s" % tag, "Tag: %s" % tag, _txt(tag, data.get("author"))))
-    return docs
+    roll = [r for r in (data.get("blogroll") or []) if isinstance(r, dict)]
+    return _standing(docs, data.get("tagline"), data.get("about"),
+                     _people(roll, "label"))
 
 
 def _docs_news(data):
@@ -256,11 +321,18 @@ def _docs_news(data):
     for art in data.get("articles") or []:
         if not isinstance(art, dict) or not art.get("id"):
             continue
+        updates = [u for u in (art.get("updates") or []) if isinstance(u, dict)]
         docs.append(
             _doc(
                 "/article/%s" % art["id"],
                 art.get("headline"),
-                _txt(art.get("dek"), art.get("byline"), art.get("lead"), art.get("body")),
+                # `kicker` is the line above the headline and `updates` are
+                # the running additions under it -- both drawn on the article
+                # page, neither read here until now. Six sites carry updates
+                # and they are the part a reader comes back for.
+                _txt(art.get("kicker"), art.get("dek"), art.get("byline"),
+                     art.get("lead"), art.get("body"),
+                     [u.get("text") for u in updates]),
             )
         )
 
@@ -297,7 +369,7 @@ def _docs_news(data):
                  _txt([c.get("text") for c in rows],
                       [c.get("kind") for c in rows]))
         )
-    return docs
+    return _standing(docs, data.get("masthead"), data.get("slogan"))
 
 
 def _docs_wiki(data):
@@ -330,7 +402,7 @@ def _docs_wiki(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("siteName"))
 
 
 def _docs_media(data):
@@ -354,7 +426,7 @@ def _docs_media(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("siteName"))
 
 
 def _block_text(block):
@@ -379,6 +451,16 @@ def _block_text(block):
     if kind == "webring":
         members = [m for m in (block.get("members") or []) if isinstance(m, dict)]
         return _txt(block.get("ringName"), _people(members, "label", "domain"))
+    if kind == "buttons":
+        # The wall of 88x31s. Its `label` is a paragraph ("Buttons. Some of
+        # these go somewhere. Two of them have not gone anywhere since about
+        # 2006...") and every item carries a label the renderer prints beside
+        # the image, so the text is on screen twice over. `seed` is the image
+        # name and is deliberately left out: it is not drawn.
+        items = [i for i in (block.get("items") or []) if isinstance(i, dict)]
+        return _txt(block.get("label"), _people(items, "label"))
+    if kind == "hitcounter":
+        return ""        # an odometer: digits, no words
     return ""
 
 
@@ -390,7 +472,7 @@ def _docs_page(data):
         body = " ".join(t for t in (_block_text(b) for b in page.get("blocks") or []) if t)
         path = "/" if page["id"] in ("index", "home", "/") else "/%s" % page["id"]
         docs.append(_doc(path, page.get("name"), body))
-    return docs
+    return _standing(docs, data.get("navLabel"))
 
 
 # --------------------------------------------------------------------------
@@ -437,7 +519,7 @@ def _docs_aggregator(data):
                 _txt(link.get("by"), link.get("domain"), authors, bodies),
             )
         )
-    return docs
+    return _standing(docs, data.get("siteName"), data.get("tagline"))
 
 
 def _docs_qa(data):
@@ -465,7 +547,7 @@ def _docs_qa(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("siteName"))
 
 
 def _docs_board(data):
@@ -486,7 +568,7 @@ def _docs_board(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("boardName"), data.get("rules"))
 
 
 def _docs_shop(data):
@@ -512,7 +594,7 @@ def _docs_shop(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("storeName"))
 
 
 def _docs_market(data):
@@ -531,7 +613,8 @@ def _docs_market(data):
                      row.get("condition")),
             )
         )
-    return docs
+    regions = [r for r in (data.get("regions") or []) if isinstance(r, dict)]
+    return _standing(docs, data.get("siteName"), _people(regions, "name"))
 
 
 def _docs_assistant(data):
@@ -564,7 +647,7 @@ def _docs_mail(data):
                 _txt(m.get("body"), m.get("from"), m.get("fromAddr")),
             )
         )
-    return docs
+    return _standing(docs, data.get("account"))
 
 
 def _docs_portal(data):
@@ -586,7 +669,8 @@ def _docs_portal(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("agency"), data.get("motto"),
+                     data.get("notices"))
 
 
 def _docs_stream(data):
@@ -609,7 +693,7 @@ def _docs_stream(data):
                 ),
             )
         )
-    return docs
+    return _standing(docs, data.get("siteName"))
 
 
 def _docs_dash(data):
@@ -621,8 +705,11 @@ def _docs_dash(data):
     transit = [t for t in (data.get("transit") or []) if isinstance(t, dict)]
     alerts = [a for a in (data.get("alerts") or []) if isinstance(a, dict)]
     widgets = [w for w in (data.get("widgets") or []) if isinstance(w, dict)]
+    energy = data.get("energy") if isinstance(data.get("energy"), dict) else {}
     text = _txt(
         data.get("place"),
+        energy.get("unit"),
+        energy.get("trend"),
         weather.get("summary"),
         [d.get("summary") for d in days],
         [t.get("route") for t in transit],
@@ -652,7 +739,7 @@ def _docs_wire(data):
                      d.get("byline"), d.get("keywords"), d.get("corrects")),
             )
         )
-    return docs
+    return _standing(docs, data.get("agency"), data.get("bureau"))
 
 
 def _docs_newsletter(data):
@@ -678,7 +765,8 @@ def _docs_newsletter(data):
                      sponsor.get("name"), sponsor.get("copy")),
             )
         )
-    return docs
+    return _standing(docs, data.get("title"), data.get("author"),
+                     data.get("cadence"), data.get("sponsorLabel"))
 
 
 def _docs_chat(data):
@@ -691,11 +779,12 @@ def _docs_chat(data):
             _doc(
                 "/c/%s" % channel["id"],
                 "#" + str(channel.get("name") or channel["id"]),
-                _txt(channel.get("topic"), _people(messages, "by"),
+                _txt(channel.get("topic"), channel.get("importedFrom"),
+                     _people(messages, "by", "replyTo"),
                      [m.get("body") for m in messages]),
             )
         )
-    return docs
+    return _standing(docs, data.get("serverName"))
 
 
 _DOC_BUILDERS = {
@@ -1251,8 +1340,16 @@ def cache_version(entries, pending):
     from source mtimes when $SOURCE_DATE is unset, and git does not preserve
     mtimes -- hashing them would make the version differ on every clone, so
     the committed sw.js would be stale the moment anyone checked it out.
-    Both are pure functions of the site files below, which are hashed, so
-    nothing is lost by deriving from the source instead of the product.
+    Both are pure functions of the site files AND OF THIS FILE, so this file
+    is hashed alongside them.
+
+    That last clause was missing and the round that wrote this docstring
+    proved it: fixing the search index changed net/search.json without
+    touching a single site file, so the version did not move, and a browser
+    holding the old cache would have gone on serving the old index for good
+    -- the exact failure this function was written to end, arriving through
+    the one door it had left open. "A pure function of the site files" is
+    only true while the function itself does not change.
     """
     derived = {_rel(REGISTRY_PATH).replace("\\", "/"),
                _rel(SEARCH_PATH).replace("\\", "/")}
@@ -1278,6 +1375,12 @@ def cache_version(entries, pending):
     for path in sorted(SITES_DIR.glob("*/site.json")):
         digest.update(str(path.relative_to(ROOT)).encode("utf-8") + b"\0")
         digest.update(path.read_bytes() + b"\0")
+    # The generator, standing in for the two files it generates. Hashing
+    # this file's own bytes is safe -- git preserves content, not mtimes --
+    # and it is the only way a change to how the index is BUILT can reach a
+    # browser that already holds a cache.
+    digest.update(b"tools/build.py\0")
+    digest.update(Path(__file__).resolve().read_bytes() + b"\0")
     return "synthnet-" + digest.hexdigest()[:12]
 
 

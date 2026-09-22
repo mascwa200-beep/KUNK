@@ -67,11 +67,27 @@ window.SYNTH = window.SYNTH || {};
   /* placeholder images                                                  */
   /* ------------------------------------------------------------------ */
 
+  /* The kinds this module can draw. RE_IMG below lists the same four -- five,
+   * now -- and the two must agree: parse() matches with RE_IMG and then calls
+   * placeholder(), so a kind in one table and not the other is a tag that
+   * renders as its own source text.
+   *
+   * `button` is the 88x31 badge wall on the personal pages, and it was in
+   * app/types/page.js's IMG_SIZE and in neither table here. page.js builds
+   * '[img:button:' + seed + ']' and hands it to parse(); RE_IMG did not
+   * accept `button`, so nothing was drawn, and page.js fell through to its
+   * own developer placeholder -- a grey gradient box with the words
+   * "button:vn-btn-anybrowser" printed inside it. Measured: 221 buttons
+   * across 22 walls on 22 sites, seven of them on vnetdial.com's front page
+   * alone, every one showing an image seed to the reader. Nothing threw and
+   * nothing logged; the wall of grey boxes looked like a style.
+   */
   var SIZES = {
     avatar: [80, 80],
     thumb: [160, 90],
     photo: [400, 260],
-    banner: [600, 120]
+    banner: [600, 120],
+    button: [88, 31]
   };
 
   function drawBands(svg, W, H, rnd, hue, layers) {
@@ -223,7 +239,8 @@ window.SYNTH = window.SYNTH || {};
   var RE_CODE_OPEN = /^\[code\]/i;
   var RE_LIST_OPEN = /^\[list\]/i;
   var RE_ITEM = /^\[\*\]/;
-  var RE_IMG = /^\[img:(avatar|banner|photo|thumb):([^\]\r\n]*)\]/i;
+  /* Must list exactly the keys of SIZES above -- see the note there. */
+  var RE_IMG = /^\[img:(avatar|banner|button|photo|thumb):([^\]\r\n]*)\]/i;
 
   /* --- maintenance templates, and the collision they sit on top of ------
    *
