@@ -147,6 +147,36 @@
       return v === undefined ? (fallback === undefined ? null : fallback) : v;
     },
 
+    /* Every collection that actually holds something, name order unspecified.
+     *
+     * control.js has probed for this since the storage screen was written --
+     * `if (typeof S.store.collections === 'function')` -- and it has never
+     * existed, so every caller fell through to a hand-written list of
+     * nineteen guesses. Measured against what is really written: three of
+     * the nineteen are real, sixteen name nothing, and eleven real
+     * collections are absent. The Wipe button walked that list, so it left
+     * the profile, the visit records, the subscriptions, the bot extensions,
+     * the shop carts, the assistant transcripts and all four stream
+     * collections exactly where they were, and said it had deleted
+     * everything.
+     *
+     * The keyspace is flat -- 'collection:key' -- so the names were always
+     * one split away. Nothing here needed a list; it needed asking. */
+    collections: function () {
+      var seen = {};
+      var out = [];
+      for (var k in memory) {
+        if (!Object.prototype.hasOwnProperty.call(memory, k)) continue;
+        var cut = k.indexOf(':');
+        if (cut <= 0) continue;
+        var name = k.slice(0, cut);
+        if (seen[name]) continue;
+        seen[name] = 1;
+        out.push(name);
+      }
+      return out;
+    },
+
     /* Every value in a collection, as [{key, value}], key order unspecified. */
     all: function (collection) {
       var prefix = String(collection) + ':';

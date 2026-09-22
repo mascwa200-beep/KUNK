@@ -163,9 +163,35 @@ jobs:
         run: python3 .github/scripts/synthnet_routes_check.py --root synthnet
 
       - name: Build, and confirm the committed generated files are current
+        # The build ran FIRST and --check ran second, so it compared the
+        # outputs against the build it had just done. It asserted that
+        # build.py is deterministic within one run; it could not find a
+        # stale commit, which is what its name says.
+        #
+        # sw.js is now checked against the commit, because it is the one
+        # generated file that is committed AND fully reproducible: its
+        # CACHE_VERSION is a hash of the content it caches, so two clones of
+        # the same tree produce the same bytes. A stale committed sw.js
+        # means a released build that never invalidates its cache, which is
+        # the fault this round exists for.
+        #
+        # registry.json and search.json are deliberately not checked this
+        # way: they carry a "generated" stamp taken from source mtimes, and
+        # git does not preserve mtimes, so a fresh clone can never reproduce
+        # the committed bytes. Worth saying rather than pretending the line
+        # below covers them.
         run: |
+          cp synthnet/sw.js "${RUNNER_TEMP:-/tmp}/sw.committed.js"
           python3 synthnet/tools/build.py
           python3 synthnet/tools/build.py --check
+          if ! diff -q "${RUNNER_TEMP:-/tmp}/sw.committed.js" synthnet/sw.js >/dev/null; then
+            echo "FAIL: synthnet/sw.js is stale. The service worker's cache"
+            echo "      name is derived from what it caches, so a returning"
+            echo "      browser would keep serving the previous build."
+            echo "      Run: python3 synthnet/tools/build.py"
+            diff -u "${RUNNER_TEMP:-/tmp}/sw.committed.js" synthnet/sw.js | head -20
+            exit 1
+          fi
 
       - name: Enforce the size budget
         # Two numbers, because there are two questions.

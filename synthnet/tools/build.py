@@ -18,6 +18,7 @@ clock in a way that changes the output between two identical trees.
 """
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -1164,6 +1165,60 @@ def dumps_search(obj):
 
 SW_PATH = ROOT / "sw.js"
 _SW_SHELL = re.compile(r"(var SHELL = \[)(.*?)(\];)", re.DOTALL)
+_SW_VERSION = re.compile(r"(var CACHE_VERSION = ')([^']*)(';)")
+
+
+def cache_version(entries):
+    """A name for the cache that changes when what it holds changes.
+
+    sw.js is cache-first with no revalidation -- `if (hit) return hit;` --
+    and activate() only drops caches whose key is not CACHE_VERSION. So the
+    version IS the invalidation, and it was the string 'synthnet-v1' from the
+    first commit of this project to this one. Measured: register the worker,
+    edit a site file, reload, and the returning browser is served the old
+    title while a fresh profile gets the new one.
+
+    It survived because sw.js only changes when the SHELL *list* changes --
+    adding or removing a file -- and eleven rounds of fixes changed content,
+    not the file list. Every check here starts from a fresh profile, which is
+    the one state in which none of this can show.
+
+    Hashed, not stamped. resolve_generated() falls back to source mtimes and
+    git does not preserve those, so an mtime-derived version would differ on
+    every clone and leave the committed sw.js permanently stale. A hash over
+    the bytes moves exactly when the bytes move and is the same on every
+    machine.
+
+    The per-site JSON is in here too, though it is not precached: the fetch
+    handler caches it on first visit and nothing ever refreshes it, so a
+    content edit has to move the version or the site you have already opened
+    is frozen for good.
+
+    registry.json and search.json are deliberately NOT hashed by their own
+    text, even though both are precached. They carry `generated`, which comes
+    from source mtimes when $SOURCE_DATE is unset, and git does not preserve
+    mtimes -- hashing them would make the version differ on every clone, so
+    the committed sw.js would be stale the moment anyone checked it out.
+    Both are pure functions of the site files below, which are hashed, so
+    nothing is lost by deriving from the source instead of the product.
+    """
+    derived = {_rel(REGISTRY_PATH).replace("\\", "/"),
+               _rel(SEARCH_PATH).replace("\\", "/")}
+    digest = hashlib.sha1()
+    for entry in entries:
+        rel = entry[2:] if entry.startswith("./") else entry
+        digest.update(entry.encode("utf-8") + b"\0")
+        if not rel or rel in derived:
+            continue            # './' is index.html, already in the list
+        try:
+            digest.update((ROOT / rel).read_bytes())
+        except OSError:
+            digest.update(b"<missing>")
+        digest.update(b"\0")
+    for path in sorted(SITES_DIR.glob("*/site.json")):
+        digest.update(str(path.relative_to(ROOT)).encode("utf-8") + b"\0")
+        digest.update(path.read_bytes() + b"\0")
+    return "synthnet-" + digest.hexdigest()[:12]
 
 
 def build_service_worker(warnings):
@@ -1229,7 +1284,15 @@ def build_service_worker(warnings):
     if not match:
         warnings.append("sw.js has no 'var SHELL = [...]' block to regenerate")
         return current
-    return current[:match.start(2)] + body + current[match.end(2):]
+    out = current[:match.start(2)] + body + current[match.end(2):]
+
+    version = cache_version(entries)
+    out, hits = _SW_VERSION.subn(lambda m: m.group(1) + version + m.group(3), out)
+    if hits != 1:
+        warnings.append(
+            "sw.js has no single \"var CACHE_VERSION = '...';\" line to "
+            "regenerate, so the cache will never be invalidated")
+    return out
 
 
 def compute(warnings):

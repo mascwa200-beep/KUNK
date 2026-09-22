@@ -277,22 +277,42 @@ window.SYNTH = window.SYNTH || {};
 
   /* ------------------------------------------------------------ store bits */
 
-  var CANDIDATE_COLLECTIONS = [
-    'profile', 'posts', 'packs', 'mysites', 'sites', 'prefs', 'settings',
-    'seen', 'reads', 'likes', 'follows', 'drafts', 'counters', 'fame',
-    'history', 'bookmarks', 'notes', 'inbox', 'threads'
-  ];
-
+  /* What the store actually holds, asked rather than guessed.
+   *
+   * This used to fall back to nineteen hand-written candidate names, because
+   * S.store.collections did not exist -- the probe below was written for a
+   * function nobody built, so the fallback was not a fallback, it was the
+   * only path. Measured against what is really written: 'posts' and
+   * 'mysites' were right, sixteen names matched nothing at all, and eleven
+   * live collections were missing -- 'me' (the list said 'profile', but the
+   * account is stored as me:profile, so the guess found nothing and the
+   * account survived), 'visits', 'subs', 'alertstate', 'bots', 'shopcart',
+   * 'assistant', and all four of 'streamsaved', 'streamvotes',
+   * 'streamwatch', 'streamautoplay'.
+   *
+   * That list fed both the Wipe button and the by-collection breakdown, so
+   * the button left most of your data in place and the table under-counted
+   * it, on the same screen as a total that did not.
+   *
+   * knownTypes() above settled the same argument the same way: ask the thing
+   * that knows, and if it ever answers nothing, let that be visible instead
+   * of papering over it with a list that was wrong for a year. */
   function listCollections() {
-    if (typeof S.store.collections === 'function') {
-      try {
-        var v = S.store.collections();
-        if (v && v.length) { return v; }
-      } catch (e) { /* fall through */ }
+    if (typeof S.store.collections !== 'function') { return []; }
+    try {
+      var v = S.store.collections();
+      return (v && typeof v.length === 'number') ? v : [];
+    } catch (e) {
+      return [];
     }
-    return CANDIDATE_COLLECTIONS.slice();
   }
 
+  /* Counted the way store.usage() counts, because both numbers are on this
+   * screen at once and they used to disagree twice over: this walked a
+   * hand-written list that missed eleven collections, and it measured only
+   * the value while usage() measures the compound key as well. The hint
+   * under the table blamed "text length, close but not exact" for a gap that
+   * was mostly the missing collections. */
   function collectionStat(name) {
     var entries;
     try { entries = S.store.all(name); }
@@ -300,7 +320,10 @@ window.SYNTH = window.SYNTH || {};
     if (!entries || typeof entries.length !== 'number') { return null; }
     var bytes = 0, i;
     for (i = 0; i < entries.length; i++) {
-      try { bytes += JSON.stringify(entries[i].value).length; }
+      try {
+        bytes += String(name).length + 1 + String(entries[i].key).length;
+        bytes += JSON.stringify(entries[i].value).length;
+      }
       catch (e2) { bytes += 0; }
     }
     return { name: name, count: entries.length, bytes: bytes };
@@ -1137,11 +1160,24 @@ window.SYNTH = window.SYNTH || {};
     danger.appendChild(confirmChain(
       ['Reset everything', 'This erases everything. Tap again.'],
       'cp-btn-danger',
+      /* The Storage card calls its own button "the same effect as reset,
+       * approached from the other side". That was not true in either
+       * direction: wipeAll walked a list that reached three collections of
+       * fourteen, and this one called me.reset(), which clears exactly 'me'
+       * and 'posts' -- so the button promising your sites and every imported
+       * pack removed neither, and then said "Everything is gone."
+       *
+       * One path now. me.reset() still runs after it, because it also drops
+       * the profile that me.js is holding in memory, which clearing a
+       * collection does not. */
       function () {
         say(dStatus, 'info', ['Erasing...']);
-        settle(function () { return S.me.reset(); }, function (err) {
-          if (err) { say(dStatus, 'bad', messages(err)); return; }
-          say(dStatus, 'good', ['Done. Everything is gone. Reload to start over.']);
+        wipeAll(function (errs) {
+          settle(function () { return S.me.reset(); }, function (err) {
+            var bad = errs.concat(err ? messages(err) : []);
+            if (bad.length) { say(dStatus, 'bad', bad); return; }
+            say(dStatus, 'good', ['Done. Everything is gone. Reload to start over.']);
+          });
         });
       }
     ));
@@ -1373,7 +1409,7 @@ window.SYNTH = window.SYNTH || {};
     table.appendChild(tbody);
     slot.appendChild(table);
     slot.appendChild(el('p', { 'class': 'cp-hint' },
-      'Sizes are measured as text length, so they are close but not exact. The figure at the top of the page is what the browser actually counts.'));
+      'Sizes are text length, counted the same way as the figure at the top of the page, so the two totals agree. Neither is what the disk costs.'));
   }
 
   function wipeAll(done) {

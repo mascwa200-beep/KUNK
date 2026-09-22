@@ -19,10 +19,68 @@ import glob
 import json
 import os
 import pathlib
+import re
+import shutil
 import socket
+import subprocess
 import sys
+import tempfile
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+
+# How patient the service-worker assertion is. Two reloads is the normal
+# path -- the first triggers the update check and installs the new worker,
+# the second is served by it -- so four is slack, not hope.
+SW_RELOADS, SW_WAIT = 4, 2000
+
+
+def version_in(path):
+    m = re.search(r"CACHE_VERSION = '([^']*)'", path.read_text(encoding="utf-8"))
+    return m.group(1) if m else None
+
+
+class NoStore(SimpleHTTPRequestHandler):
+    """Serves with caching off, so a stale response is the worker's doing."""
+
+    def log_message(self, *a):
+        pass
+
+    def end_headers(self):
+        self.send_header("Cache-Control", "no-store")
+        SimpleHTTPRequestHandler.end_headers(self)
+
+# One row in every collection the app really writes, with the key shape the
+# owning module uses. Nothing here is a collection only this check knows
+# about -- each was found by reading the writer:
+#
+#   me, posts          me.js:32-33        alertstate     alerts.js:45
+#   packs, mysites     packs.js:34-35     bots           bots.js:1857
+#   visits, subs       alerts.js:43-44    shopcart       types/shop.js:54
+#   assistant          types/assistant.js:215
+#   streamsaved/votes/watch/autoplay      types/stream.js:114-117
+#
+# A collection added later and not added here is not a gap this check can
+# see, which is the limit worth stating: it proves the button empties what
+# it is given, not that the list of writers is complete. MIN_COLLECTIONS is
+# what stops the seed silently shrinking.
+WIPE_SEED = [
+    ["me", "profile", {"handle": "wipecheck", "displayName": "Wipe Check"}],
+    ["posts", "p-1", {"body": "a post"}],
+    ["mysites", "mine.verity.net", {"domain": "mine.verity.net", "type": "page"}],
+    ["packs", "pk-1", {"id": "pk-1", "name": "A Pack", "enabled": True}],
+    ["visits", "boards.gridfall.net", {"at": 1790294400000, "feeds": []}],
+    ["subs", "channel:c-1", {"kind": "channel", "id": "c-1", "level": "watching"}],
+    ["alertstate", "seen", 1790294400000],
+    ["alertstate", "seenfollowers", 12400],
+    ["bots", "extension", {"topics": []}],
+    ["shopcart", "shop.verity.net", [{"id": "p-1", "qty": 2}]],
+    ["assistant", "ask.verity.net", [{"q": "hello", "a": "hello"}]],
+    ["streamsaved", "now.clipvault.tv/vd-001", {"at": 1790294400000}],
+    ["streamvotes", "now.clipvault.tv/vd-001", "up"],
+    ["streamwatch", "now.clipvault.tv", 1],
+    ["streamautoplay", "now.clipvault.tv", 0],
+]
+MIN_COLLECTIONS = 14
 
 
 def free_port() -> int:
@@ -236,6 +294,211 @@ def main() -> int:
             if kept["handle"] != "persist" or kept["posts"] < 1:
                 problems.append(f"state did not survive a reload: {kept}")
             notes.append("persistence: account and post survived a reload")
+
+            # --- 7. the Wipe BUTTON, not the store's own wipe --------------
+            #
+            # Section 4 above calls SYNTH.store.wipe(), which empties the
+            # whole keyspace and has no call site anywhere in the app. The
+            # button on the control panel calls control.js's wipeAll(), and
+            # for as long as both existed that walked a hand-written list of
+            # nineteen collection names: two were real, sixteen named nothing
+            # at all, and eleven live collections were absent. Measured by
+            # pressing it -- twelve of fourteen seeded rows survived, the
+            # account among them, and usage() went 658 bytes to 567 while the
+            # page said "Everything is gone."
+            #
+            # So this presses the control. A check that exercises a different
+            # function from the one the button calls is not watching the
+            # button.
+            page.evaluate("(u) => SYNTH.engine.navigate(u, {push: false})",
+                          "synth://control.verity.net/storage")
+            page.wait_for_timeout(500)
+            # Read back through store.get, not store.collections(). The first
+            # draft of this seeded and counted through collections(), which is
+            # the function the fix adds -- so against the code it was written
+            # to catch it threw a TypeError and died before pressing the
+            # button. An assertion that cannot survive the bug it is about
+            # cannot report it.
+            seeded = page.evaluate("""async (rows) => {
+              for (const r of rows) { await SYNTH.store.put(r[0], r[1], r[2]); }
+              const live = {};
+              for (const r of rows) {
+                if (SYNTH.store.get(r[0], r[1], null) !== null) { live[r[0]] = 1; }
+              }
+              return Object.keys(live).sort();
+            }""", WIPE_SEED)
+            if len(seeded) < MIN_COLLECTIONS:
+                problems.append(
+                    f"seeded {len(seeded)} collection(s), fewer than "
+                    f"{MIN_COLLECTIONS} -- either store.collections() is not "
+                    "reporting them or the seed has gone stale, and either "
+                    "way the wipe below asserts nothing")
+            pressed = page.evaluate("""() => {
+              const root = document.querySelector('#synth-viewport');
+              const card = Array.from(root.querySelectorAll('.cp-card-danger'))
+                .find(c => /Wipe all stored data/.test(c.textContent));
+              if (!card) { return 'no "Wipe all stored data" card on /storage'; }
+              const btn = card.querySelector('.cp-btn-danger');
+              if (!btn) { return 'the Wipe card has no button'; }
+              btn.click();   // the control is a two-tap confirm chain
+              btn.click();
+              return null;
+            }""")
+            if pressed:
+                problems.append(f"could not press the Wipe control: {pressed}")
+            else:
+                page.wait_for_timeout(1200)
+                left = page.evaluate("""(rows) => {
+                  const out = [];
+                  for (const r of rows) {
+                    if (SYNTH.store.get(r[0], r[1], null) !== null) {
+                      out.push(r[0] + ':' + r[1]);
+                    }
+                  }
+                  return out;
+                }""", WIPE_SEED)
+                if left:
+                    problems.append(
+                        f"'Wipe all stored data' left {len(left)} of "
+                        f"{len(WIPE_SEED)} rows in place: " + ", ".join(left))
+                else:
+                    notes.append(
+                        f"the Wipe button emptied all {len(seeded)} "
+                        "collection(s), read back from the store")
+
+            # --- 8. the two storage totals on one screen agree -------------
+            #
+            # The Summary reads store.usage(); the by-collection table summed
+            # its own walk of that same hand-written list, counting only the
+            # value and not the key. On one screen, three inches apart, they
+            # read 658 B and 59 B.
+            page.evaluate("""async (rows) => {
+              for (const r of rows) { await SYNTH.store.put(r[0], r[1], r[2]); }
+            }""", WIPE_SEED)
+            page.evaluate("(u) => SYNTH.engine.navigate(u, {push: false})",
+                          "synth://control.verity.net/storage")
+            page.wait_for_timeout(600)
+            # Both figures are read AS RENDERED. Comparing the table against
+            # a live store.usage() call instead fails by 56 bytes, because
+            # opening the control panel records a visit of its own after the
+            # table has painted -- a race in the reading, not a fault in the
+            # page.
+            totals = page.evaluate("""() => {
+              const root = document.querySelector('#synth-viewport');
+              const keys = Array.from(root.querySelectorAll('.cp-rows-k'));
+              const used = keys.find(k => /^Used$/.test((k.textContent || '').trim()));
+              const table = Array.from(root.querySelectorAll('.cp-tr-total'))
+                .map(n => (n.textContent || '').trim())[0] || '';
+              return {
+                summary: used && used.nextElementSibling
+                  ? (used.nextElementSibling.textContent || '').trim() : null,
+                table: table
+              };
+            }""")
+
+            def bytes_in(text):
+                m = re.search(r"([\d,]+(?:\.\d+)?)\s*(B|KB|MB)\b", text or "")
+                if not m:
+                    return None
+                scale = {"B": 1, "KB": 1024, "MB": 1024 * 1024}[m.group(2)]
+                return round(float(m.group(1).replace(",", "")) * scale)
+
+            a, b = bytes_in(totals["summary"]), bytes_in(totals["table"])
+            if a is None or b is None:
+                problems.append(
+                    "could not read both storage totals off the screen "
+                    f"(summary {totals['summary']!r}, table {totals['table']!r}), "
+                    "so they were not compared")
+            elif a != b:
+                problems.append(
+                    "the storage screen states two different totals three "
+                    f"inches apart: the summary says {totals['summary']!r} and "
+                    f"the table under it adds up to {totals['table']!r}")
+            else:
+                notes.append(
+                    f"both storage totals on one screen read {totals['summary']}")
+
+            # --- 9. a returning browser gets the new build -----------------
+            #
+            # sw.js is cache-first with no revalidation and activate() only
+            # drops caches whose key is not CACHE_VERSION, so the version IS
+            # the invalidation. It was the literal 'synthnet-v1' from the
+            # first commit of this project until it was generated, and
+            # measured with the same harness below: four reloads over eight
+            # seconds still served the old content while a fresh profile got
+            # the new.
+            #
+            # Nothing else here can see it, because every other check starts
+            # from a fresh profile -- the one state in which a stale cache
+            # does not exist.
+            #
+            # Runs against a COPY of the tree, because it has to edit content
+            # and rebuild, and a check must not write to the repository it is
+            # checking.
+            work = pathlib.Path(tempfile.mkdtemp(prefix="synthnet-sw-"))
+            try:
+                tree = work / "synthnet"
+                shutil.copytree(root, tree,
+                                ignore=shutil.ignore_patterns("dist", "android"))
+                target = sorted(tree.glob("net/sites/*/site.json"))[0]
+                first = version_in(tree / "sw.js")
+
+                port2 = free_port()
+                srv2 = ThreadingHTTPServer(
+                    ("127.0.0.1", port2),
+                    lambda *a, **k: NoStore(*a, directory=str(tree), **k))
+                threading.Thread(target=srv2.serve_forever, daemon=True).start()
+                try:
+                    ctx = browser.new_context()
+                    sw = ctx.new_page()
+                    sw.goto(f"http://127.0.0.1:{port2}/index.html",
+                            wait_until="networkidle")
+                    sw.wait_for_function(
+                        "() => navigator.serviceWorker && "
+                        "navigator.serviceWorker.controller", timeout=20000)
+                    rel = str(target.relative_to(tree)).replace("\\", "/")
+                    read = ("async (p) => (await (await fetch('./' + p))"
+                            ".json()).title")
+                    was = sw.evaluate(read, rel)
+
+                    doc = json.loads(target.read_text())
+                    doc["title"] = "edited between visits"
+                    target.write_text(json.dumps(doc))
+                    subprocess.run(
+                        [sys.executable, str(tree / "tools/build.py"), "--quiet"],
+                        capture_output=True)
+                    second = version_in(tree / "sw.js")
+
+                    if second == first:
+                        problems.append(
+                            "the content changed and CACHE_VERSION did not "
+                            f"move ({first}) -- build.py is no longer deriving "
+                            "it, so no released fix will ever reach a browser "
+                            "that has opened this app once")
+                    else:
+                        got = None
+                        for _ in range(SW_RELOADS):
+                            sw.reload(wait_until="networkidle")
+                            sw.wait_for_timeout(SW_WAIT)
+                            got = sw.evaluate(read, rel)
+                            if got == "edited between visits":
+                                break
+                        if got != "edited between visits":
+                            problems.append(
+                                f"after {SW_RELOADS} reloads over "
+                                f"{SW_RELOADS * SW_WAIT // 1000}s a returning "
+                                f"browser was still served {got!r} instead of "
+                                f"the rebuilt content, with CACHE_VERSION "
+                                f"{first} -> {second}")
+                        else:
+                            notes.append(
+                                f"a returning browser picked up the rebuild "
+                                f"({was!r} -> {got!r}), CACHE_VERSION "
+                                f"{first} -> {second}")
+                finally:
+                    srv2.shutdown()
+            finally:
+                shutil.rmtree(work, ignore_errors=True)
 
             browser.close()
     finally:
