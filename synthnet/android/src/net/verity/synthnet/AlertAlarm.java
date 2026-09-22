@@ -60,8 +60,10 @@ public class AlertAlarm extends BroadcastReceiver {
     /** Never ping more often than this, whatever the alarm does. */
     private static final long QUIET_MS = 5L * 60 * 60 * 1000;
 
-    /** Below this, the network has not done anything worth interrupting for. */
-    private static final int WORTH_MENTIONING = 40;
+    /* The threshold below which the network has not done anything worth
+     * interrupting for lives in Wording.WORTH_MENTIONING, beside the sentence
+     * it gates, so the check that reads the wording also reads the number
+     * that decides whether the wording ever appears. */
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -166,25 +168,19 @@ public class AlertAlarm extends BroadcastReceiver {
         if (!snap.known()) return;
 
         int total = snap.totalUnread(now);
-        boolean addressed = snap.mentions > 0;
-        if (!addressed && total < WORTH_MENTIONING) return;
+        int busy = snap.busySites(now);
+        if (!Wording.worthNotifying(snap.mentions, total)) return;
 
         Snapshot.Site top = snap.busiest(now);
-        String title;
-        String body;
-        if (addressed) {
-            title = snap.mentions == 1
-                    ? "Someone replied to you"
-                    : snap.mentions + " replies waiting";
-            body = total > 0
-                    ? total + " other things happened too"
-                    : "Nothing else has moved.";
-        } else {
-            title = total + " new on VerityNet";
-            body = (top != null)
-                    ? "Mostly " + top.title
-                    : "Across the sites you read";
-        }
+        String topTitle = top == null ? null : top.title;
+
+        // The title is built from the stored figure and the body from the
+        // live ones, in different tenses, and they never share a sentence.
+        // They used to: `snap.mentions + " replies waiting"` over
+        // `total + " other things happened too"`, both present tense, one of
+        // them a floor written whenever you last opened the app. See Wording.
+        String title = Wording.notifyTitle(snap.mentions);
+        String body = Wording.notifyBody(snap.mentions, total, busy, topTitle);
 
         Intent open = new Intent(context, MainActivity.class);
         open.setAction(MainActivity.ACTION_OPEN_FEEDS);

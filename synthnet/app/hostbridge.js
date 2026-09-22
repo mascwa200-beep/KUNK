@@ -89,19 +89,22 @@
     rows.sort(function (a, b) { return (b.at || 0) - (a.at || 0); });
     if (rows.length > MAX_SITES) rows.length = MAX_SITES;
 
-    var profile = (SYNTH.me && typeof SYNTH.me.profile === 'function')
-      ? SYNTH.me.profile() : null;
-
     var badge = { count: 0 };
     try { badge = A.badge(); } catch (e) { /* leave it at zero */ }
 
+    /* `handle` used to be here too. It crossed the bridge, Snapshot.java
+     * parsed it into a field, and no Java file ever read that field. A
+     * payload nobody reads is not free: it is one more thing that looks
+     * load-bearing to whoever changes this next. */
     return {
-      handle: (profile && profile.handle) || '',
       seenAt: A.seenAt(),
       /* Things addressed to you, as of now. Unlike the per-site counts this
        * one genuinely cannot be recomputed natively -- it depends on the bot
        * reply engine -- so it is a snapshot and the notification treats it
-       * as a floor rather than a live figure. */
+       * as a floor rather than a live figure. It counts mention-level EVENTS
+       * from alerts.js, not replies: one per post that has new replies, plus
+       * fame milestones, DMs and subscriptions publishing. The notification
+       * said "N replies waiting" until round 15. */
       mentions: badge.count || 0,
       sites: rows
     };

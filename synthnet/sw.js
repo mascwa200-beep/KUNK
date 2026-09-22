@@ -11,7 +11,7 @@
  */
 'use strict';
 
-var CACHE_VERSION = 'synthnet-0184f02c4f26';
+var CACHE_VERSION = 'synthnet-d00dc56e0d02';
 
 var SHELL = [
   './',

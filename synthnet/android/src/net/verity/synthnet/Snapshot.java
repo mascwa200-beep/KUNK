@@ -55,13 +55,25 @@ public final class Snapshot {
         }
     }
 
-    public final String handle;
     public final long seenAt;
-    public final int mentions;       /* things addressed to you, at write time */
+    /**
+     * Things addressed to you, as of whenever the page last wrote this.
+     *
+     * A FLOOR, NOT A COUNT, and the one stored number in a class whose whole
+     * docstring is about why counts are not stored. It is stored because it
+     * genuinely cannot be recomputed here: it comes from app/alerts.js
+     * badge(), which needs bots.repliesFor() -- post bodies, reply pools and
+     * a follower count, none of which cross the bridge. It can only grow
+     * while the app is shut, so reading it as a floor is safe and reading it
+     * as a live figure is not, which is what AlertAlarm did until round 15.
+     *
+     * It counts mention-level EVENTS, not replies: one per post with new
+     * replies, plus fame milestones, DMs and subscriptions publishing.
+     */
+    public final int mentions;
     public final Site[] sites;
 
-    private Snapshot(String handle, long seenAt, int mentions, Site[] sites) {
-        this.handle = handle;
+    private Snapshot(long seenAt, int mentions, Site[] sites) {
         this.seenAt = seenAt;
         this.mentions = mentions;
         this.sites = sites;
@@ -102,7 +114,6 @@ public final class Snapshot {
                         keys, intervals);
             }
             return new Snapshot(
-                    root.optString("handle", ""),
                     root.optLong("seenAt", 0L),
                     root.optInt("mentions", 0),
                     sites);
@@ -114,7 +125,7 @@ public final class Snapshot {
     }
 
     private static Snapshot empty() {
-        return new Snapshot("", 0L, 0, new Site[0]);
+        return new Snapshot(0L, 0, new Site[0]);
     }
 
     public boolean known() {

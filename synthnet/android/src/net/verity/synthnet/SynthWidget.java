@@ -26,6 +26,12 @@ import android.widget.RemoteViews;
  * The numbers are recomputed here, from SlotMath and the clock, every time it
  * draws. They are not read from anywhere. That is why the widget keeps
  * climbing for a week with the app never opened.
+ *
+ * Every word this puts on the screen comes from Wording, which is plain Java
+ * with no Android imports so that .github/scripts/synthnet_widget_check.py
+ * can compile it and read back what this would say. Nothing here holds a
+ * string literal that reaches a screen; the check asserts that, because the
+ * wording leaking back out is how it went unread for as long as it did.
  */
 public class SynthWidget extends AppWidgetProvider {
 
@@ -52,32 +58,22 @@ public class SynthWidget extends AppWidgetProvider {
         Snapshot snap = Snapshot.load(context);
         long now = System.currentTimeMillis();
 
-        String big;
-        String line;
+        boolean known = snap.known();
+        int mentions = snap.mentions;
+        int busy = known ? snap.busySites(now) : 0;
+        Snapshot.Site top = known ? snap.busiest(now) : null;
+        String topTitle = top == null ? null : top.title;
 
-        if (!snap.known()) {
-            big = "—";
-            line = "Open Synthnet once and this fills in.";
-        } else {
-            int total = snap.totalUnread(now);
-            int busy = snap.busySites(now);
-            Snapshot.Site top = snap.busiest(now);
+        views.setTextViewText(R.id.widget_count, Wording.widgetBig(known, mentions));
+        views.setTextViewText(R.id.widget_line,
+                Wording.widgetLine(known, mentions, busy, topTitle));
 
-            big = total > 99999 ? (total / 1000) + "k" : String.valueOf(total);
-            if (total == 0) {
-                big = "0";
-                line = "Nothing new. This will not last.";
-            } else if (top != null) {
-                line = busy == 1
-                        ? "new on " + top.title
-                        : "new across " + busy + " sites · mostly " + top.title;
-            } else {
-                line = "new since you looked";
-            }
-        }
-
-        views.setTextViewText(R.id.widget_count, big);
-        views.setTextViewText(R.id.widget_line, line);
+        // The big slot holds a number or a word depending on whether there is
+        // anything addressed to you, and thirty-point bold is a size for a
+        // number. COMPLEX_UNIT_SP is 2; the constant lives in
+        // android.util.TypedValue, which Wording deliberately cannot import.
+        views.setTextViewTextSize(R.id.widget_count, 2 /* SP */,
+                Wording.widgetBigSp(known, mentions));
 
         // Tapping anywhere opens the app. FLAG_IMMUTABLE is required from
         // API 31 and is correct here anyway -- nothing should be able to fill

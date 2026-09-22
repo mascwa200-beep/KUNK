@@ -431,6 +431,24 @@ jobs:
         # 1304 answers the first time this ran.
         run: python3 .github/scripts/synthnet_slotmath_check.py --root synthnet
 
+      - name: The widget and the notification must say what they mean
+        # The step above proves the Java and JavaScript clocks agree on the
+        # arithmetic. Nothing read the WORDS these two surfaces print, and
+        # four things were wrong with them: the widget put the ambient
+        # all-site total in 30sp bold as the biggest thing on the home
+        # screen, which is the one number app/feedsui.js forbids; it carried
+        # a third number formatter, so 1,234 read "1234" there and "1.2k"
+        # everywhere else; the notification said "N replies waiting" over a
+        # figure that counts mention-level events, including fame milestones
+        # and newsletters; and it put that STORED figure and a freshly
+        # recomputed total in one notification, both present tense.
+        #
+        # RemoteViews needs a device, so nothing here draws a widget.
+        # Wording.java is plain Java with no android.* imports and a main()
+        # that answers a script, so the strings come back over a pipe.
+        # javac, java and node; no SDK and no browser.
+        run: python3 .github/scripts/synthnet_widget_check.py --root synthnet
+
       - name: Build the Android app
         # ubuntu-latest ships the Android SDK, and the app uses only framework
         # APIs, so there is nothing to resolve or download -- aapt2, javac, d8
@@ -498,7 +516,7 @@ jobs:
           status=0
           CLASSES=$(unzip -p synthnet/android/synthnet.apk classes.dex | strings \
                     | grep -oE "Lnet/verity/synthnet/[A-Za-z]+;" | sort -u)
-          for c in SynthWidget AlertAlarm Bridge Snapshot SlotMath MainActivity; do
+          for c in SynthWidget AlertAlarm Bridge Snapshot SlotMath Wording MainActivity; do
             if echo "$CLASSES" | grep -q "Lnet/verity/synthnet/$c;"; then
               echo "  ok   $c"
             else
