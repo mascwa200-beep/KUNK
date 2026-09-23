@@ -48,6 +48,20 @@ MIN_PERMISSIONS = 2
 MIN_REGIONS = 3
 MIN_PATHS = 20
 
+# The contract's value tables. Measured at the commit that added these: SKINS
+# holds 21 types and 31 skin names, PAGE_BLOCK_KINDS holds 10, RE_IMG accepts
+# 5 image kinds, and docs/AUTHORING.md spells that last list out twice.
+#
+# MIN_IMG_LISTS is the one that earns its place. Both copies of the image
+# kinds were stale, in two different sections, so a check that finds the first
+# copy, agrees with it and stops would pass while the second stayed wrong --
+# which is the exact failure it is here to catch.
+MIN_SKIN_TYPES = 20
+MIN_SKIN_NAMES = 28
+MIN_BLOCK_KINDS = 9
+MIN_IMG_KINDS = 4
+MIN_IMG_LISTS = 2
+
 DOCS = ["README.md", "docs/PHONE.md", "docs/AUTHORING.md", "docs/WORLD.md"]
 
 # The regions tools/build.py rewrites in README.md. Its build_readme() warns
@@ -293,6 +307,255 @@ def check_regions(root, problems, notes):
     return found
 
 
+# --------------------------------------------------------------------------
+# The contract's value tables, against the code that enforces them.
+# --------------------------------------------------------------------------
+
+# The skins table. Anchored on its header row rather than on a line count,
+# because rows get added. Its era column splits some types over two rows --
+# `forum` archive/2026, `news` archive/2026 -- so the comparison is against
+# the UNION of every row for a type, not row by row. Hard-coding which types
+# are split would be one more hand-written copy of something the file already
+# says.
+#
+# Every class here is newline-free on purpose. Written first with `\s` in the
+# separator row, it matched across the line break and swallowed the first data
+# row -- so `forum` was read from its 2026 row alone and the archive skins
+# looked undocumented. Both floors passed while it did, because 21 types and
+# 31 names still came through; the two-way comparison below is what caught it.
+SKIN_TABLE = re.compile(
+    r"^\|[ \t]*era[ \t]*\|[ \t]*type[ \t]*\|[ \t]*skins[ \t]*\|[^\n]*\n"
+    r"^\|[-|: \t]+\n"
+    r"((?:^\|[^\n]*\n)+)", re.MULTILINE)
+
+# The BLOCK listing: the fenced block that enumerates the legal page blocks.
+# Identified by the one kind that has been in it since the beginning rather
+# than by position. The worked-example JSON further down writes `"kind":`
+# with the key quoted, so it cannot be mistaken for this.
+BLOCK_KIND = re.compile(r"(?<!\")\bkind:\s*\"([a-z]+)\"")
+
+# Every place the document spells out the image kinds. Anchored on the two
+# ends of the list, on one line, because the point of this assertion is that
+# it must find BOTH copies -- see MIN_IMG_LISTS.
+IMG_LIST = re.compile(r"\bavatar\b[a-z|\t ]*\bthumb\b")
+
+# markup.js's two tables, and page.js's third.
+JS_SIZES = re.compile(r"var\s+SIZES\s*=\s*\{(.*?)\}", re.DOTALL)
+JS_IMG_SIZE = re.compile(r"var\s+IMG_SIZE\s*=\s*\{(.*?)\n\s*\};", re.DOTALL)
+JS_KEY = re.compile(r"^\s*([a-z]+)\s*:\s*\[", re.MULTILINE)
+JS_RE_IMG = re.compile(r"RE_IMG\s*=\s*/\^\\\[img:\(([a-z|]+)\)")
+
+
+def _skins_from_doc(text, problems):
+    """{type: set(skin)} as docs/AUTHORING.md states it."""
+    match = SKIN_TABLE.search(text)
+    if not match:
+        problems.append(
+            "docs/AUTHORING.md has no `| era | type | skins |` table to read. "
+            "Its own caption calls tools/validate.py the authority and says "
+            "'this table mirrors it', and nothing was mirroring anything")
+        return {}
+    table = {}
+    for row in match.group(1).splitlines():
+        cols = row.split("|")
+        if len(cols) < 4:
+            continue
+        kinds = BACKTICKED.findall(cols[2])
+        if not kinds:
+            continue            # a separator or a continuation, not a row
+        table.setdefault(kinds[0], set()).update(BACKTICKED.findall(cols[3]))
+    return table
+
+
+def check_contract_tables(root, problems, notes):
+    """AUTHORING.md's lists of legal values, against what enforces them.
+
+    README.md sends an author here first -- "read it first; the renderers will
+    not guess at key names" -- and three of its tables had drifted from the
+    code that rejects the wrong answer.
+
+    The skins table says, above itself, "tools/validate.py (`SKINS`) is the
+    authority; this table mirrors it". It did not. SKINS["social"] holds
+    feedslate and the table did not mention it anywhere, while four of the six
+    social sites were already wearing it -- so the contract offered a 2026
+    social author no legal skin at all, and the majority answer was the
+    missing one.
+
+    PAGE_BLOCK_KINDS holds ten kinds and the BLOCK listing had nine. The
+    missing one, `buttons`, is used by 22 of the 109 sites.
+
+    And the image kinds are written five times: SIZES in app/markup.js, RE_IMG
+    directly below it, IMG_SIZE in app/types/page.js, and this document twice.
+    Round 14 added `button` to the first two -- under a comment in markup.js
+    saying the two "must agree" -- and left the other three behind. A list
+    written five times is this project's oldest disease; the path table was
+    written down five times by hand and derived from the renderers in none of
+    them. This makes all five answer to RE_IMG, which is the copy that decides
+    whether a tag parses.
+
+    Everything here is imported or read out of the source. Nothing is
+    restated: a check that re-types a tuple agrees with whatever that tuple
+    gets wrong next.
+    """
+    doc = root / "docs" / "AUTHORING.md"
+    if not doc.is_file():
+        problems.append("docs/AUTHORING.md is missing, so the contract an "
+                        "author is told to read first cannot be checked")
+        return 0
+    text = doc.read_text(encoding="utf-8")
+
+    sys.path.insert(0, str(root / "tools"))
+    try:
+        import validate as V
+    except Exception as exc:                          # pragma: no cover
+        problems.append("tools/validate.py will not import (%s), so the "
+                        "authority for the skins and block tables cannot be "
+                        "read" % exc)
+        return 0
+
+    conclusive = 0
+
+    # ---- skins ----------------------------------------------------------
+    stated = _skins_from_doc(text, problems)
+    types_seen, names_seen = 0, 0
+    for kind in sorted(V.SKINS):
+        legal = set(V.SKINS[kind])
+        listed = stated.get(kind, set())
+        if kind in stated:
+            types_seen += 1
+        names_seen += len(legal)
+        conclusive += len(legal | listed)
+        for skin in sorted(legal - listed):
+            problems.append(
+                "tools/validate.py accepts `%s` for a `%s` site and "
+                "docs/AUTHORING.md's skins table does not list it. An author "
+                "reading the contract cannot pick a skin the validator is "
+                "waiting for -- which is how `feedslate` stayed out of the "
+                "document while four of the six social sites wore it"
+                % (skin, kind))
+        for skin in sorted(listed - legal):
+            problems.append(
+                "docs/AUTHORING.md's skins table offers `%s` for a `%s` site "
+                "and tools/validate.py rejects it, so the contract is telling "
+                "an author to write something that fails the build"
+                % (skin, kind))
+    for kind in sorted(set(stated) - set(V.SKINS)):
+        problems.append(
+            "docs/AUTHORING.md's skins table has a row for `%s`, which is not "
+            "a type tools/validate.py knows" % kind)
+    if types_seen < MIN_SKIN_TYPES:
+        problems.append(
+            "only %d type(s) were read out of the skins table (floor %d). The "
+            "row parse has stopped matching, which reads exactly like every "
+            "type agreeing" % (types_seen, MIN_SKIN_TYPES))
+    if names_seen < MIN_SKIN_NAMES:
+        problems.append(
+            "only %d skin name(s) came out of tools/validate.py (floor %d)"
+            % (names_seen, MIN_SKIN_NAMES))
+
+    # ---- page blocks ----------------------------------------------------
+    fenced = [b for b in FENCED.findall(text) if 'kind: "heading"' in b]
+    if not fenced:
+        problems.append(
+            "docs/AUTHORING.md has no BLOCK listing to read -- no fenced "
+            "block enumerating `kind: \"heading\"` -- so the legal page "
+            "blocks are stated nowhere an author can find them")
+        listed_blocks = set()
+    else:
+        listed_blocks = set()
+        for block in fenced:
+            listed_blocks.update(BLOCK_KIND.findall(block))
+    legal_blocks = set(V.PAGE_BLOCK_KINDS)
+    conclusive += len(legal_blocks | listed_blocks)
+    for kind in sorted(legal_blocks - listed_blocks):
+        problems.append(
+            "tools/validate.py accepts a `%s` page block and "
+            "docs/AUTHORING.md's BLOCK listing does not mention it. `buttons` "
+            "was missing this way while 22 of the 109 sites used one"
+            % kind)
+    for kind in sorted(listed_blocks - legal_blocks):
+        problems.append(
+            "docs/AUTHORING.md's BLOCK listing offers a `%s` block and "
+            "tools/validate.py rejects it" % kind)
+    if len(legal_blocks) < MIN_BLOCK_KINDS:
+        problems.append(
+            "only %d page block kind(s) came out of tools/validate.py "
+            "(floor %d)" % (len(legal_blocks), MIN_BLOCK_KINDS))
+
+    # ---- image kinds, all five copies -----------------------------------
+    markup = root / "app" / "markup.js"
+    page = root / "app" / "types" / "page.js"
+    if not markup.is_file() or not page.is_file():
+        problems.append("app/markup.js or app/types/page.js is missing, so "
+                        "the image kinds have no authority to answer to")
+        return conclusive
+    mtext = markup.read_text(encoding="utf-8")
+    ptext = page.read_text(encoding="utf-8")
+
+    m = JS_RE_IMG.search(mtext)
+    if not m:
+        problems.append(
+            "app/markup.js's RE_IMG could not be read. It is the copy that "
+            "decides whether an [img:...] tag parses at all, so every other "
+            "copy of the list answers to it and there is nothing to answer to")
+        return conclusive
+    authority = [k for k in m.group(1).split("|") if k]
+    if len(authority) < MIN_IMG_KINDS:
+        problems.append(
+            "only %d image kind(s) came out of RE_IMG (floor %d)"
+            % (len(authority), MIN_IMG_KINDS))
+    ordered = list(authority)
+    authority = set(authority)
+
+    for label, src, pattern in (("app/markup.js's SIZES", mtext, JS_SIZES),
+                                ("app/types/page.js's IMG_SIZE", ptext,
+                                 JS_IMG_SIZE)):
+        found = pattern.search(src)
+        if not found:
+            problems.append("%s could not be read, so it cannot be held to "
+                            "RE_IMG" % label)
+            continue
+        keys = set(JS_KEY.findall(found.group(1)))
+        conclusive += len(authority | keys)
+        for k in sorted(authority - keys):
+            problems.append(
+                "RE_IMG accepts `%s` and %s has no entry for it, so the tag "
+                "parses and then draws at the wrong size or not at all. That "
+                "is how 221 buttons across 22 walls rendered as grey boxes "
+                "with their own seed printed inside" % (k, label))
+        for k in sorted(keys - authority):
+            problems.append(
+                "%s can draw `%s` and RE_IMG will not match it, so the tag "
+                "renders as its own source text" % (label, k))
+
+    copies = IMG_LIST.findall(text)
+    for copy in copies:
+        spelled = set(w.strip() for w in copy.split("|") if w.strip())
+        conclusive += len(authority | spelled)
+        for k in sorted(authority - spelled):
+            problems.append(
+                "RE_IMG accepts the image kind `%s` and docs/AUTHORING.md "
+                "leaves it out of `%s`" % (k, copy.strip()))
+        for k in sorted(spelled - authority):
+            problems.append(
+                "docs/AUTHORING.md offers the image kind `%s` in `%s` and "
+                "RE_IMG will not match it" % (k, copy.strip()))
+    if len(copies) < MIN_IMG_LISTS:
+        problems.append(
+            "found %d spelled-out image-kind list(s) in docs/AUTHORING.md "
+            "(floor %d). The document states the list in two separate "
+            "sections and both of them went stale; a check that finds the "
+            "first, agrees with it and stops is the bug this exists to catch"
+            % (len(copies), MIN_IMG_LISTS))
+
+    if not problems:
+        notes.append(
+            "the skins table and the BLOCK listing answer to tools/validate.py; "
+            "%d other copies of the image kinds answer to RE_IMG (%s)"
+            % (len(copies) + 2, "|".join(ordered)))
+    return conclusive
+
+
 def check_paths(root, repo, problems, notes):
     checked = 0
     for name in DOCS:
@@ -332,10 +595,13 @@ def main():
     regions = check_regions(root, problems, notes)
     paths = check_paths(root, repo, problems, notes)
     scripts = check_workflow_filter(repo, problems, notes)
+    tables = check_contract_tables(root, problems, notes)
 
     print(f"  read  {len(DOCS)} documents and the workflow")
     print(f"        {permissions} declared permission(s), {regions} generated "
           f"region(s), {paths} path claim(s), {scripts} check scripts")
+    print(f"        {tables} conclusive comparison(s) between the contract's "
+          f"value tables and the code that enforces them")
     for n in notes:
         print(f"  ok    {n}")
     for p in problems:

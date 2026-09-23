@@ -172,6 +172,7 @@ authority; this table mirrors it.
 | archive | `forum` | `phpbb-blue`, `ezboard-grey` |
 | 2026 | `forum` | `softboard` (or either archive skin — see below) |
 | archive | `social` | `bluebird`, `myspace-black` |
+| 2026 | `social` | `feedslate` |
 | archive | `blog` | `movabletype-cream`, `kubrick-blue` |
 | archive | `news` | `broadsheet`, `portal-red` |
 | archive | `wiki` | `monobook` |
@@ -320,7 +321,7 @@ blank line              paragraph break
 
 [list][*]first[*]second[*]third[/list]
 
-[img:avatar:marla_t]      kind is avatar | banner | photo | thumb
+[img:avatar:marla_t]      kind is avatar | banner | button | photo | thumb
 [img:photo:mill-street]   the seed makes the placeholder deterministic
 
 {{citation needed}}  {{stub}}  {{NPOV disputed}}  {{dead link}}  {{who?}}
@@ -447,12 +448,19 @@ period-accurate shell around the thumbnail.
 { kind: "text",       body }                      // inline markup
 { kind: "list",       ordered: false, items: [] }
 { kind: "table",      head: [], rows: [[]] }
-{ kind: "image",      seed, caption, imgKind }    // imgKind: avatar|banner|photo|thumb
+{ kind: "image",      seed, caption, imgKind }    // imgKind: avatar|banner|button|photo|thumb
 { kind: "marquee",    text }
 { kind: "hitcounter", count }
 { kind: "guestbook",  entries: [ { author, time, body } ] }
 { kind: "webring",    ringName, members: [ { label, domain } ] }
+{ kind: "buttons",    label, items: [ { label, seed, domain } ] }
 ```
+
+`buttons` is the 88x31 button wall. `label` on the block and `domain` on an
+item are both optional, and a button with no `domain` is the point rather than
+an omission — it renders dead, because a button for a site that went away is
+still on the page. Taking it down would mean editing the HTML by hand and
+nobody did that either. `seed` falls back to the item's `label`.
 
 ---
 
