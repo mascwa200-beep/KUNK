@@ -646,6 +646,31 @@ window.SYNTH = window.SYNTH || {};
     return form;
   }
 
+  /* The most-used subject tags across the directory, commonest first, with
+     ties broken alphabetically so two runs draw the same row. Bare years and
+     single letters are dropped: "2026" is on 45 sites and says nothing a
+     reader would browse by. */
+  function tagCounts(list) {
+    var counts = {}, i, j, tags, tag;
+    for (i = 0; i < list.length; i++) {
+      tags = (list[i] && Array.isArray(list[i].tags)) ? list[i].tags : [];
+      for (j = 0; j < tags.length; j++) {
+        tag = String(tags[j] || '').trim().toLowerCase();
+        if (tag.length < 3 || /^\d+$/.test(tag)) continue;
+        counts[tag] = (counts[tag] || 0) + 1;
+      }
+    }
+    var rows = [];
+    for (tag in counts) {
+      if (hasOwn(counts, tag) && counts[tag] > 1) rows.push([tag, counts[tag]]);
+    }
+    rows.sort(function (a, b) {
+      if (b[1] !== a[1]) return b[1] - a[1];
+      return a[0] < b[0] ? -1 : 1;
+    });
+    return rows.slice(0, 14);
+  }
+
   function renderHomePage(mount, loc) {
     var list = registryList();
     mount.appendChild(el('div', { class: 'synth-b-head' },
@@ -670,6 +695,22 @@ window.SYNTH = window.SYNTH || {};
       ));
     } else if (!list.length) {
       body.appendChild(el('div', { class: 'synth-b-note' }, 'The index loaded, but it lists no sites yet.'));
+    }
+
+    /* Browse by subject. docs/AUTHORING.md documents `tags` as "used by the
+       directory", 85 of the 109 sites carry them, and until this row the
+       directory grouped by TYPE and read them nowhere. Which tags are shown
+       is a judgement -- the most-used, and enough of them to be a row rather
+       than a wall. That they resolve at all is the part a check asserts. */
+    var subjects = tagCounts(list);
+    if (subjects.length) {
+      var row = el('div', { class: 'synth-b-subjects' },
+        el('span', { class: 'synth-b-subjects-label' }, 'Browse by subject:'));
+      for (var s = 0; s < subjects.length; s++) {
+        row.appendChild(engineLink(searchUrl(subjects[s][0]),
+                                   subjects[s][0], 'synth-b-subject'));
+      }
+      body.appendChild(row);
     }
 
     var groups = {};
@@ -1197,7 +1238,15 @@ window.SYNTH = window.SYNTH || {};
         var site = reg[i];
         var dom = String(site.domain || '').toLowerCase();
         if (!dom) continue;
-        var hay = (dom + ' ' + String(site.title || '') + ' ' + String(site.description || '')).toLowerCase();
+        /* Tags are in here because docs/AUTHORING.md tells an author they
+           are "used by the directory", and for a long time nothing read
+           them: 85 of the 109 sites carry them, 174 distinct values, and
+           searching "radio" found none of the radio sites. The blog and Q&A
+           renderers read a different, per-post `tags` array, which is why a
+           grep for the name looked busy. */
+        var tags = Array.isArray(site.tags) ? site.tags.join(' ') : '';
+        var hay = (dom + ' ' + String(site.title || '') + ' ' +
+                   String(site.description || '') + ' ' + tags).toLowerCase();
         var count = 0;
         for (t = 0; t < terms.length; t++) if (hay.indexOf(terms[t]) !== -1) count++;
         if (!count) continue;

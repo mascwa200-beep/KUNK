@@ -66,6 +66,19 @@ AND THE THREE STRIPPERS
     the fix added zero -- and a word-level comparison cannot see it. It was
     made so the three agree, not because anything was unfindable.
 
+AND THE SUBJECT TAGS
+    A third pass, and deliberately a DIFFERENT question: the one above asks
+    only for words a reader can see, which is its whole discipline. A tag is
+    not on the page -- it is in the site envelope and in net/registry.json,
+    and docs/AUTHORING.md tells an author it is "used by the directory".
+
+    It was not. 85 of the 109 sites carry tags, 174 distinct values, and
+    search()'s registry fold-in built its haystack from domain, title and
+    description and stopped. Measured with the fold-in removed: 67 of 423
+    tag queries returned nothing at all -- `foia`, `route-62`,
+    `bracken-lane`, `local-news`, every one a word an author typed for a
+    directory that read none of them.
+
 Usage:  python3 .github/scripts/synthnet_search_check.py [--root synthnet]
         ... --sites N     stop after N sites (local runs; fails the floors)
         ... --deep N      in-site pages to follow per site (default 2)
@@ -125,6 +138,11 @@ MIN_CONCLUSIVE = 50000
 
 # The result cap lives in engine.js's search(): `dedup.slice(0, 80)`.
 RESULT_CAP = 80
+
+# The subject-tag pass. Measured when it was written: 174 distinct tags
+# across 85 sites, 423 tag/site pairs.
+MIN_TAGS = 120
+MIN_TAG_PAIRS = 300
 
 
 def free_port():
@@ -385,6 +403,84 @@ ASK = """async (batch) => {
 }"""
 
 
+def check_tags(sites, ask, problems, notes):
+    """Every subject tag in the registry has to find the sites that carry it.
+
+    A DIFFERENT QUESTION FROM THE REST OF THIS FILE, and worth saying so.
+    Everything above asks only for words a reader can see on a page; that
+    restraint is the whole discipline of it. A tag is not on the page. It is
+    in the site envelope and in net/registry.json, and docs/AUTHORING.md
+    tells an author it is "used by the directory".
+
+    It was not. 85 of the 109 sites carry tags, 174 distinct values, and
+    `search()`'s registry fold-in built its haystack from domain, title and
+    description and stopped there. Measured with the fold-in removed: 67 of
+    423 tag queries returned NOTHING -- `foia`, `route-62`, `bracken-lane`,
+    `local-news`, each of them a word an author typed and nobody could reach.
+
+    One query per distinct tag rather than per site, because the answer does
+    not depend on which of the sites carrying it asked.
+    """
+    carriers = {}
+    for site in sites:
+        tags = site.get("tags")
+        if not isinstance(tags, list):
+            continue
+        for tag in tags:
+            if isinstance(tag, str) and tag.strip():
+                carriers.setdefault(tag.strip().lower(), set()).add(site["domain"])
+    if not carriers:
+        problems.append(
+            "no site in the registry carries a subject tag, so nothing was "
+            "asked. 85 of them did when this pass was written; a parse that "
+            "finds none reads exactly like every tag resolving")
+        return 0, 0
+
+    rows = [[tag, sorted(doms)] for tag, doms in sorted(carriers.items())]
+    verdicts = {}
+    for i in range(0, len(rows), 400):
+        verdicts.update(ask(rows[i:i + 400]))
+
+    missing, crowded, pairs = [], 0, 0
+    for tag, doms in sorted(carriers.items()):
+        said = verdicts.get(tag)
+        if said is None:
+            problems.append("the tag %r was collected and never asked for" % tag)
+            continue
+        hit = set(said["hit"])
+        for dom in sorted(doms):
+            pairs += 1
+            if dom in hit:
+                continue
+            if said["n"] >= RESULT_CAP:
+                crowded += 1
+                continue
+            missing.append((tag, dom, said["n"]))
+
+    for tag, dom, n in missing[:20]:
+        problems.append(
+            "%s is tagged %r and searching %r returns %d result(s), none of "
+            "them that site. docs/AUTHORING.md tells an author tags are "
+            "\"used by the directory\"" % (dom, tag, tag, n))
+    if len(missing) > 20:
+        problems.append("... and %d more tag/site pairs that do not resolve"
+                        % (len(missing) - 20))
+
+    if len(carriers) < MIN_TAGS:
+        problems.append("only %d distinct tag(s) were found in the registry "
+                        "(floor %d)" % (len(carriers), MIN_TAGS))
+    if pairs < MIN_TAG_PAIRS:
+        problems.append("only %d tag/site pair(s) were asked about (floor "
+                        "%d)" % (pairs, MIN_TAG_PAIRS))
+    if not missing:
+        notes.append("%d subject tags across %d sites, every one of them "
+                     "finding the sites that carry it (%d pair(s) hit the "
+                     "%d-result cap)"
+                     % (len(carriers), len({d for ds in carriers.values()
+                                            for d in ds}), crowded, RESULT_CAP))
+    return len(carriers), pairs
+
+
 def spread(paths, want):
     """`want` of these, taken evenly across the list rather than off the top.
 
@@ -487,12 +583,17 @@ def main():
 
             probe_strippers(page, bp, problems, notes)
 
+            def ask(rows):
+                return page.evaluate(ASK, rows)
+
+            tags, tag_pairs = check_tags(sites, ask, problems, notes)
+
             # One query per distinct word, not per word per page: the answer
             # does not depend on which page asked.
             verdicts = {}
             batch = [[w, sorted(d)] for w, d in sorted(shown.items())]
             for i in range(0, len(batch), 400):
-                verdicts.update(page.evaluate(ASK, batch[i:i + 400]))
+                verdicts.update(ask(batch[i:i + 400]))
             browser.close()
     finally:
         srv.shutdown()
@@ -550,6 +651,7 @@ def main():
     print(f"  read  {len(pages)} pages across {len(sites)} sites")
     print(f"  asked {len(shown)} distinct words, {conclusive} conclusive "
           f"word-on-page checks")
+    print(f"        {tags} subject tags, {tag_pairs} tag/site pairs")
     print(f"        {elsewhere} resolved to the site the word NAMES rather "
           f"than the page showing it")
     print(f"        {crowded} hit the {RESULT_CAP}-result cap and are a "
@@ -562,7 +664,8 @@ def main():
         print(f"\n{len(problems)} problem(s)")
         return 1
     print("\nOK: every word on a rendered page that its own site file "
-          "authors can be found by searching for it.")
+          "authors can be found by searching for it, and every subject tag "
+          "finds the sites that carry it.")
     return 0
 
 

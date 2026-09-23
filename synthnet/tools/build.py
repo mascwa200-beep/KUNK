@@ -18,6 +18,7 @@ clock in a way that changes the output between two identical trees.
 """
 
 import argparse
+import gzip
 import hashlib
 import json
 import os
@@ -863,6 +864,10 @@ def _rel(path):
         return str(path)
 
 
+def _commas(n):
+    return "{:,}".format(int(n))
+
+
 def _iso(epoch):
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(epoch))
 
@@ -1269,7 +1274,7 @@ def _region(name):
         % (re.escape(name), re.escape(name)), re.DOTALL)
 
 
-def build_readme(registry, warnings):
+def build_readme(registry, search, pending, warnings):
     """Rewrite the parts of README.md that are answers the build already has.
 
     The file said "Seed sites, generated from net/registry.json rather than
@@ -1317,8 +1322,34 @@ def build_readme(registry, warnings):
             for kind, s in sorted(first.items())]
     seed = "\n".join(rows) + "\n"
 
+    cold = cold_load()
+    craw, cgz = weigh(cold, pending)
+    full = payload()
+    praw, pgz = weigh(full, pending)
+    deferred = sum(1 for p in full
+                   if p.startswith(("app/types/", "theme/skins/")))
+    search_bytes = len(pending.get(_rel(SEARCH_PATH).replace("\\", "/"), "")
+                       .encode("utf-8"))
+    measurements = (
+        "| | Value |\n"
+        "|---|---|\n"
+        "| Cold load, %d files | %s raw / %s gzipped |\n"
+        "| Offline payload, %d files | %s raw / %s gzipped |\n"
+        "| `net/search.json` | %s bytes, %s terms, %s documents |\n"
+        "\n"
+        "%d of the %d payload files are renderers and skins fetched after the "
+        "first paint, not in the cold load.\n"
+        % (len(cold), _commas(craw), _commas(cgz),
+           len(full), _commas(praw), _commas(pgz),
+           _commas(search_bytes),
+           _commas(len(search.get("terms") or {})),
+           _commas(len(search.get("docs") or [])),
+           deferred, len(full))
+    )
+
     out = current
-    for name, block in (("era", era), ("seed-sites", seed)):
+    for name, block in (("era", era), ("seed-sites", seed),
+                        ("measurements", measurements)):
         out, hits = _region(name).subn(
             lambda m, b=block: m.group(1) + b + m.group(3), out)
         if hits != 1:
@@ -1453,6 +1484,122 @@ def cache_version(entries, pending):
     return "synthnet-" + digest.hexdigest()[:12]
 
 
+def cold_load():
+    """Exactly what index.html makes the browser fetch before it can paint.
+
+    Repo-relative posix paths, index.html first.
+
+    This used to live in .github/scripts/synthnet_budget_check.py, with its
+    own copies of the two regexes -- `LINK` and `SCRIPT` there were
+    character for character `_LINK_TAG` and `_SCRIPT_SRC` here -- and its own
+    walk of the same tags. Two implementations of "what does the browser
+    fetch", checked against each other nowhere, which is the disease this
+    project keeps finding in everything except its own checks. The ceilings
+    and the argument about them stay in the check, because those are a
+    judgement; this is a derivation.
+    """
+    out = ["index.html"] + index_assets()
+    # Fetched on boot without a tag naming it.
+    if REGISTRY_PATH.is_file() and "net/registry.json" not in out:
+        out.append("net/registry.json")
+    return out
+
+
+def index_assets():
+    """The stylesheets and scripts index.html's own tags name, in page order.
+
+    The one walk of those tags in the project. cold_load() and
+    shell_entries() ask different questions of it and must not share an
+    answer: the cold load counts registry.json because the boot fetches it,
+    and the precache list adds the deferred renderers and search.json as
+    well. Folding one into the other reordered the committed SHELL for no
+    reason, which is how this comment came to exist.
+    """
+    html = INDEX_HTML.read_text(encoding="utf-8")
+    out = []
+    for tag in _LINK_TAG.findall(html):
+        rel = (_attr(tag, "rel") or "").lower()
+        if "stylesheet" not in rel and rel != "manifest":
+            continue
+        path = _local(_attr(tag, "href") or "")
+        if path:
+            name = _rel(path).replace("\\", "/")
+            if name not in out:
+                out.append(name)
+    for match in _SCRIPT_SRC.finditer(html):
+        path = _local(match.group(1))
+        if path:
+            name = _rel(path).replace("\\", "/")
+            if name not in out:
+                out.append(name)
+    return out
+
+
+def shell_entries():
+    """The service worker's precache list, './'-prefixed as sw.js wants it.
+
+    index.html's own tags, plus everything app/render.js can fetch at
+    navigation time -- without those the app is offline-complete only for the
+    site types you happened to open while you still had a network -- plus the
+    two generated data files, which no tag names and the boot fetches.
+    """
+    assets = index_assets()
+    for _name, entry in sorted(read_loadmap().items()):
+        assets.append(entry["css"])
+        assets.append(entry["js"])
+
+    entries = ["./", "./index.html"]
+    for a in assets:
+        entry = "./" + a
+        if entry not in entries:
+            entries.append(entry)
+    for extra in ("./net/registry.json", "./net/search.json"):
+        if extra not in entries:
+            entries.append(extra)
+    return entries
+
+
+def payload():
+    """Everything sw.js precaches: what a first visit eventually pulls.
+
+    Derived from shell_entries(), which is what build_service_worker() writes
+    into sw.js -- not by parsing the file back out of the tree, which is what
+    the budget check used to do to the array this module had just produced.
+    """
+    out = []
+    for entry in shell_entries():
+        name = entry[2:] if entry.startswith("./") else entry
+        if not name or name in out:
+            continue
+        if (ROOT / name).is_file():
+            out.append(name)
+    return out
+
+
+def weigh(paths, pending=None):
+    """(raw, gzipped) bytes over repo-relative paths.
+
+    `pending` maps a repo-relative name to the text THIS build is about to
+    write, and weighing it rather than the copy on disk is what keeps the
+    build idempotent. net/search.json and net/registry.json are both in the
+    precache and both regenerated every run: measuring the committed copies
+    would make run 1 write the figures for run 0's content, run 2 write run
+    1's, and `build --check` fail on a tree nobody had touched. That is the
+    same trap cache_version() fell into in round 13, arriving through the
+    README.
+    """
+    pending = pending or {}
+    raw = gz = 0
+    for name in paths:
+        if name in pending:
+            data = pending[name].encode("utf-8")
+        else:
+            data = (ROOT / name).read_bytes()
+        raw += len(data)
+        gz += len(gzip.compress(data, 9))
+    return raw, gz
+
+
 def build_service_worker(warnings, pending):
     """Regenerate sw.js's precache list from what index.html actually loads.
 
@@ -1478,38 +1625,7 @@ def build_service_worker(warnings, pending):
     everything; it just does it after the page is on screen instead of
     before.
     """
-    html = INDEX_HTML.read_text(encoding="utf-8")
-    assets = []
-    for tag in _LINK_TAG.findall(html):
-        rel = (_attr(tag, "rel") or "").lower()
-        if "stylesheet" not in rel and rel != "manifest":
-            continue
-        path = _local(_attr(tag, "href") or "")
-        if path:
-            assets.append(_rel(path).replace("\\", "/"))
-    for match in _SCRIPT_SRC.finditer(html):
-        path = _local(match.group(1))
-        if path:
-            assets.append(_rel(path).replace("\\", "/"))
-
-    # Everything app/render.js can fetch at navigation time. Without these the
-    # app is offline-complete only for the site types you happened to open
-    # while you still had a network.
-    for _name, entry in sorted(read_loadmap().items()):
-        assets.append(entry["css"])
-        assets.append(entry["js"])
-
-    # The generated data files are not referenced by a tag but are fetched on
-    # boot, so the offline shell is incomplete without them.
-    entries = ["./", "./index.html"]
-    for a in assets:
-        entry = "./" + a
-        if entry not in entries:
-            entries.append(entry)
-    for extra in ("./net/registry.json", "./net/search.json"):
-        if extra not in entries:
-            entries.append(extra)
-
+    entries = shell_entries()
     body = "\n" + ",\n".join("  '%s'" % e for e in entries) + "\n"
     current = SW_PATH.read_text(encoding="utf-8")
     match = _SW_SHELL.search(current)
@@ -1535,17 +1651,25 @@ def compute(warnings):
     for _path, site in loaded:
         sites[site.get("domain", "")] = site
     control_js = build_starters(warnings)
-    service_worker = build_service_worker(warnings, {
+    registry_text = dumps(registry)
+    search_text = dumps_search(search)
+    # What this build is about to write, for anything that has to measure or
+    # hash the new bytes rather than the committed ones. control.js is in the
+    # precache and is regenerated here; so are both data files.
+    pending = {
         _rel(CONTROL_PATH).replace("\\", "/"): control_js,
-    })
+        _rel(REGISTRY_PATH).replace("\\", "/"): registry_text,
+        _rel(SEARCH_PATH).replace("\\", "/"): search_text,
+    }
+    service_worker = build_service_worker(warnings, pending)
     bundle = build_bundle(registry, sites, search, warnings)
     return {
-        REGISTRY_PATH: dumps(registry),
-        SEARCH_PATH: dumps_search(search),
+        REGISTRY_PATH: registry_text,
+        SEARCH_PATH: search_text,
         BUNDLE_PATH: bundle,
         SW_PATH: service_worker,
         CONTROL_PATH: control_js,
-        README_PATH: build_readme(registry, warnings),
+        README_PATH: build_readme(registry, search, pending, warnings),
     }, registry, search
 
 

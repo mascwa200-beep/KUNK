@@ -41,9 +41,8 @@ Usage:  python3 .github/scripts/synthnet_budget_check.py [--root synthnet]
 """
 
 import argparse
-import gzip
+import importlib.util
 import pathlib
-import re
 import sys
 
 # Cold load: what the reader waits for before the first paint.
@@ -72,76 +71,30 @@ PAYLOAD_RAW = 4194304     # 4 MiB
 # and it is here so that nobody reads the cold-load figure and concludes it
 # did.
 
-LINK = re.compile(r"<link\b[^>]*>", re.IGNORECASE)
-SCRIPT = re.compile(
-    r"<script\b[^>]*\bsrc\s*=\s*[\"']([^\"']+)[\"'][^>]*>\s*</script\s*>",
-    re.IGNORECASE)
-ATTR = re.compile(r"\b(\w+)\s*=\s*[\"']([^\"']*)[\"']")
-SHELL = re.compile(r"var SHELL = \[(.*?)\];", re.DOTALL)
-QUOTED = re.compile(r"'([^']+)'")
-
 DEFERRED = ("app/types/", "theme/skins/")
 
 
-def local(root, href):
-    """A repo-relative path, or None for data:, http:// and the like."""
-    if not href or href.startswith("data:") or "://" in href:
-        return None
-    clean = href.split("?", 1)[0].split("#", 1)[0]
-    while clean.startswith("./"):
-        clean = clean[2:]
-    clean = clean.lstrip("/")
-    if not clean:
-        return None
-    if not (root / clean).is_file():
-        return None
-    return clean
+def load_build(root):
+    """tools/build.py as a module.
 
+    The cold load, the precache list and the weighing all used to be
+    reimplemented here, with `LINK` and `SCRIPT` character for character the
+    same regexes as build.py's `_LINK_TAG` and `_SCRIPT_SRC`, a second walk
+    of the same tags, and a parse of the `var SHELL = [...]` array that
+    build.py had just written. Two implementations of "what does the browser
+    fetch", agreeing with each other by luck.
 
-def cold_load(root):
-    """Exactly what index.html makes the browser fetch before it paints."""
-    html = (root / "index.html").read_text(encoding="utf-8")
-    out = ["index.html"]
-    for tag in LINK.findall(html):
-        attrs = dict(ATTR.findall(tag))
-        rel = (attrs.get("rel") or "").lower()
-        if "stylesheet" not in rel and rel != "manifest":
-            continue
-        path = local(root, attrs.get("href", ""))
-        if path and path not in out:
-            out.append(path)
-    for match in SCRIPT.finditer(html):
-        path = local(root, match.group(1))
-        if path and path not in out:
-            out.append(path)
-    # Fetched on boot without a tag naming them.
-    for extra in ("net/registry.json",):
-        if (root / extra).is_file() and extra not in out:
-            out.append(extra)
-    return out
-
-
-def payload(root):
-    """Everything sw.js precaches, i.e. what a first visit eventually pulls."""
-    text = (root / "sw.js").read_text(encoding="utf-8")
-    match = SHELL.search(text)
-    if not match:
-        return None
-    out = []
-    for entry in QUOTED.findall(match.group(1)):
-        path = local(root, entry)
-        if path and path not in out:
-            out.append(path)
-    return out
-
-
-def weigh(root, paths):
-    raw = gz = 0
-    for p in paths:
-        data = (root / p).read_bytes()
-        raw += len(data)
-        gz += len(gzip.compress(data, 9))
-    return raw, gz
+    They live in the builder now, which is the thing that decides the answer,
+    and this file asks it. What stays here is the part that is a judgement
+    rather than a derivation: the ceilings, and the argument about why they
+    are where they are.
+    """
+    spec = importlib.util.spec_from_file_location(
+        "synth_build", root / "tools" / "build.py")
+    mod = importlib.util.module_from_spec(spec)
+    sys.modules["synth_build"] = mod
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def main():
@@ -151,8 +104,9 @@ def main():
     root = pathlib.Path(args.root).resolve()
     problems = []
 
-    cold = cold_load(root)
-    craw, cgz = weigh(root, cold)
+    bp = load_build(root)
+    cold = bp.cold_load()
+    craw, cgz = bp.weigh(cold)
     print(f"cold load   {len(cold)} files, {craw} raw / {cgz} gzipped")
     print(f"            ceilings {COLD_RAW} raw / {COLD_GZ} gzipped "
           f"({100 * craw // COLD_RAW}% / {100 * cgz // COLD_GZ}%)")
@@ -170,12 +124,12 @@ def main():
             "index.html loads %d file(s) that app/render.js is supposed to "
             "fetch on demand: %s" % (len(leaked), ", ".join(leaked)))
 
-    full = payload(root)
-    if full is None:
-        problems.append("sw.js has no 'var SHELL = [...]' -- the payload "
-                        "budget cannot be measured, so it is not being measured")
+    full = bp.payload()
+    if not full:
+        problems.append("the precache list came back empty, so the payload "
+                        "budget is not being measured")
     else:
-        praw, pgz = weigh(root, full)
+        praw, pgz = bp.weigh(full)
         print(f"payload     {len(full)} files, {praw} raw / {pgz} gzipped")
         print(f"            ceiling {PAYLOAD_RAW} raw "
               f"({100 * praw // PAYLOAD_RAW}%)")

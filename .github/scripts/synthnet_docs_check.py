@@ -43,9 +43,9 @@ import sys
 
 # Floors, no tolerance. A regex that stops matching reads exactly like every
 # claim being true. Measured at the commit that added this file: 2 declared
-# permissions, 2 generated regions, 36 path claims across four documents.
+# permissions, 3 generated regions, 41 path claims across four documents.
 MIN_PERMISSIONS = 2
-MIN_REGIONS = 2
+MIN_REGIONS = 3
 MIN_PATHS = 20
 
 DOCS = ["README.md", "docs/PHONE.md", "docs/AUTHORING.md", "docs/WORLD.md"]
@@ -53,7 +53,7 @@ DOCS = ["README.md", "docs/PHONE.md", "docs/AUTHORING.md", "docs/WORLD.md"]
 # The regions tools/build.py rewrites in README.md. Its build_readme() warns
 # and gives up if one is missing, and a warning does not fail a build, so the
 # floor is enforced here instead.
-REGIONS = ["era", "seed-sites"]
+REGIONS = ["era", "seed-sites", "measurements"]
 
 USES_PERMISSION = re.compile(
     r"""<uses-permission\s+android:name\s*=\s*["']([^"']+)["']""")

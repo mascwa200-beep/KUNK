@@ -79,8 +79,6 @@ docs/PHONE.md           running it on a phone
 .claude/workflows/synthnet-expand.js   re-runnable workflow that adds sites
 ```
 
-## Offline
-
 There are no network calls. Not lazy-loaded, not optional, not "works offline
 after first load" - there is no code path anywhere that reaches outside the
 directory.
@@ -90,6 +88,25 @@ directory.
 - Images are inline SVG placeholders generated from a seed string, or `data:`
   URIs.
 - Links between sites use a `synth://` scheme that the router resolves locally.
+
+## Measurements
+
+<!-- generated: measurements (tools/build.py -- do not edit by hand) -->
+| | Value |
+|---|---|
+| Cold load, 28 files | 893,768 raw / 272,481 gzipped |
+| Offline payload, 71 files | 3,382,942 raw / 1,015,326 gzipped |
+| `net/search.json` | 1,353,881 bytes, 16,293 terms, 2,399 documents |
+
+40 of the 71 payload files are renderers and skins fetched after the first paint, not in the cold load.
+<!-- /generated: measurements -->
+
+The ceilings these are checked against, and the argument about where they
+sit, are in `.github/scripts/synthnet_budget_check.py`. The figures are
+generated because the last set written by hand went stale and stayed that
+way for four rounds.
+
+## Offline
 
 `tools/validate.py` enforces this. It scans every file in the project for
 absolute `http`/`https` URLs, protocol-relative CDN hosts, `fetch(` against

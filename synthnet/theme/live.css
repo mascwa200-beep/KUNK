@@ -240,6 +240,38 @@
 }
 .synth-b-stat-src { opacity: 0.75; }
 
+/* --- browse by subject -------------------------------------------------
+ *
+ * The start page's tag row. `tags` has been in the site envelope and in
+ * net/registry.json since the beginning, documented in AUTHORING.md as
+ * "used by the directory", and read by nothing: 85 of the 109 sites carry
+ * them and the directory grouped by type. Each chip runs a search. */
+.synth-b-subjects {
+  margin: 6px 0 10px 0;
+  line-height: 1.9;
+}
+.synth-b-subjects-label {
+  font-size: 11px;
+  color: #62707b;
+  margin-right: 4px;
+}
+a.synth-b-subject {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 7px;
+  margin-right: 4px;
+  border: 1px solid #c3d6e6;
+  border-radius: 9px;
+  background: #f3f8fc;
+  color: #1a4d7a;
+  text-decoration: none;
+}
+a.synth-b-subject:hover {
+  background: #e4eff8;
+  border-color: #8fb4d2;
+  text-decoration: underline;
+}
+
 /* --- the new-arrivals pill --------------------------------------------
  *
  * Content arrived while you were reading. Real feeds do not shove it into

@@ -266,7 +266,12 @@ jobs:
         # real pages and fails on console errors, empty renders, raw inline
         # markup reaching the screen, or horizontal overflow at 360px.
         run: |
-          pip install --quiet playwright
+          # --retries/--timeout because this one line took a whole run down
+          # on b5dfa89 with a read timeout from files.pythonhosted.org,
+          # before any check body had run. The re-run passed, so it was a
+          # genuine one-off -- and a one-off that recurs costs a false red
+          # and the single re-run a real failure is entitled to.
+          pip install --quiet --retries 5 --timeout 30 playwright
           python3 -m playwright install --with-deps chromium
           python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
 
