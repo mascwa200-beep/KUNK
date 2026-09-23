@@ -1,0 +1,2358 @@
+{
+  "schema": 1,
+  "domain": "gridfalleats.com",
+  "title": "Gridfall Eats - Food Delivery in Gridfall, Verity County",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "A food delivery marketplace that lists three Gridfall restaurants, one of which closed in 2019 and is still taking orders and one of which is on it twice under two spellings, with four separate fees and delivery estimates nobody checked against a map.",
+  "tags": [
+    "gridfall",
+    "food",
+    "delivery",
+    "aggregator",
+    "fees",
+    "2026"
+  ],
+  "links": [
+    "ask.verity.ai",
+    "brackenlanegarage.net",
+    "classifieds.verity.net",
+    "countyfacts.info",
+    "gridfall-buysell.net",
+    "gridfall.chat",
+    "gridfalldeals.com",
+    "gridfallpizza.com",
+    "gridline.social",
+    "hollismarket.com",
+    "now.verityledger.com",
+    "verity-careers-portal.com",
+    "verity.county.gov",
+    "verity.wiki",
+    "verityanswers.com",
+    "verityclerk.gov",
+    "verityhealth.gov",
+    "veritysheriff.gov"
+  ],
+  "data": {
+    "storeName": "Gridfall Eats",
+    "categories": [
+      {
+        "id": "c-restaurants",
+        "name": "Restaurants Near You"
+      },
+      {
+        "id": "c-pizza",
+        "name": "Gridfall Pizza"
+      },
+      {
+        "id": "c-dragon",
+        "name": "Golden Dragon Chinese Restaurant"
+      },
+      {
+        "id": "c-dragon2",
+        "name": "Gold Dragon Chineese Resturant"
+      },
+      {
+        "id": "c-renners",
+        "name": "Renner's Family Restaurant"
+      },
+      {
+        "id": "c-fees",
+        "name": "Fees, Taxes & Charges"
+      },
+      {
+        "id": "c-drivers",
+        "name": "NOW HIRING DRIVERS - $22-31/hr"
+      },
+      {
+        "id": "c-support",
+        "name": "Help & Support"
+      }
+    ],
+    "products": [
+      {
+        "id": "r-pizza",
+        "catId": "c-restaurants",
+        "name": "Gridfall Pizza - Pizza, Subs, Italian - 12-18 min - $2.99 delivery",
+        "price": 2.99,
+        "was": 5.99,
+        "rating": 4.7,
+        "reviewCount": 1284,
+        "blurb": "[b]Gridfall Pizza[/b]  ·  Pizza, Subs, Italian  ·  $$  ·  4.7 (1,284 ratings)\n\n[b]Open now. Closes at 11:00 PM. Open 7 days.[/b]\n\nGridfall Pizza is one of the top-rated restaurants in Gridfall on Gridfall Eats, serving residents and the community with pizza, subs and Italian favourites. Order now for delivery or pickup in {{city}}.\n\n[b]Estimated delivery time by area[/b] (estimate includes restaurant preparation):\n[list][*]Gridfall village - 12 to 18 min[*]Ashkettle - 14 to 19 min[*]Marchfield - 16 to 21 min[*]Coyne Flats - 15 to 20 min[*]Halsey - 17 to 22 min[*]Milbrook - 13 to 18 min[*]Kerrin - 11 to 16 min[*]New Carrow - 19 to 24 min[/list]\n[b]No order minimum on Gridfall Eats.[/b] A Small Order Fee applies to orders under $15.00. See [url=/p/f-small]Small Order Fee[/url].\n\nMenu and hours are collected automatically and may differ from the restaurant. [url=/c/c-pizza]See the full menu[/url]. The restaurant also keeps [url=synth://gridfallpizza.com/p/p-delivery]its own delivery page[/url], which is not maintained by Gridfall Eats.",
+        "bullets": [
+          "Open now  ·  Closes 11:00 PM  ·  Open 7 days",
+          "12-18 min to most Verity County addresses",
+          "$2.99 delivery fee (was $5.99) for a limited time",
+          "Menu last verified {{menu_verified_date}}",
+          "Claimed by owner: No. [url=/p/s-contact]Is this your restaurant?[/url]"
+        ],
+        "imgSeed": "gridfall-pizza-storefront",
+        "seller": "Gridfall Eats Marketplace",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "r-dragon",
+          "r-renners",
+          "gp-third"
+        ],
+        "reviews": [
+          {
+            "by": "t_weyandt",
+            "stars": 5,
+            "at": "2026-09-12T18:40:00Z",
+            "title": "I telephoned the shop about this",
+            "body": "Ordered a pepperoni through here on Saturday because the fee looked cheap. Nothing came for an hour and a quarter, then a man rang me from an area code I did not recognise and read my order back with an item on it I had not ordered.\n\nSo I rang 782-2440, which is the shop. The woman who answered said they are not on this website, they have never been on this website, and they get two or three of these a week. Somebody rings them at ten to ten and reads out an order off a menu they do not use. The ovens go off at ten to ten.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 8814",
+            "stars": 5,
+            "at": "2026-09-18T21:05:00Z",
+            "title": "Amazing food fast delivery",
+            "body": "Amazing food and fast delivery! The driver was very polite. Will definitely order again from this restaurant. Highly recommend to anyone in the area!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "foodie_lover_22",
+            "stars": 5,
+            "at": "2026-09-16T14:22:00Z",
+            "title": "Best in the food court",
+            "body": "We get this every time we are at Ashport Galleria. The one in the food court by the escalator. Always hot, always quick, and the girl at the counter remembers our order. Five stars as always.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 1,284 customer ratings",
+            "body": "Customers appreciate the fast delivery, the friendly drivers and the convenient location. Customers frequently mention the patio and the parking. Some customers mention that the order arrived. Overall sentiment for this restaurant is positive.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "GET $75 IN FREE FOOD TODAY",
+            "stars": 5,
+            "at": "2026-09-19T03:41:00Z",
+            "title": "FREE CREDIT NO SURVEY",
+            "body": "Congratulations Gridfall resident!! Your account has been selected for $75 in free delivery credit. Verify your card in 60 seconds here: [url=synth://eats-credit-verify.click/gridfall]eats-credit-verify.click/gridfall[/url] Offer ends tonight!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ]
+      },
+      {
+        "id": "r-dragon",
+        "catId": "c-restaurants",
+        "name": "Golden Dragon Chinese Restaurant - Chinese, Asian - 15-25 min - $1.99 delivery",
+        "price": 1.99,
+        "was": 4.99,
+        "rating": 4.6,
+        "reviewCount": 312,
+        "blurb": "[b]Golden Dragon Chinese Restaurant[/b]  ·  Chinese, Asian, Noodles  ·  $  ·  4.6 (312)\n\n[b]Open now. Closes at 9:30 PM.[/b]  9 Ward Street, Gridfall.  782-3388.\n\nGolden Dragon Chinese Restaurant brings residents of Gridfall authentic Chinese favourites, prepared fresh to order. Combination platters, lunch specials and family dinners are available for delivery throughout Verity County.\n\n[b]Estimated delivery: 15 to 25 minutes[/b] to Gridfall village. 18 to 28 minutes to Ashkettle. 21 to 31 minutes to Milbrook.\n\n[url=/c/c-dragon]See the full menu[/url].",
+        "bullets": [
+          "Open now  ·  Closes 9:30 PM  ·  Closed Mondays",
+          "$1.99 delivery fee for a limited time",
+          "Lunch specials until 3:00 PM",
+          "9 Ward Street, Gridfall  ·  782-3388",
+          "Also listed as [url=/p/r-dragon2]Gold Dragon Chineese Resturant[/url]"
+        ],
+        "imgSeed": "golden-dragon-ward-street",
+        "seller": "Gridfall Eats Marketplace",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "r-dragon2",
+          "gd-general",
+          "r-pizza"
+        ],
+        "reviews": [
+          {
+            "by": "Patricia M.",
+            "stars": 5,
+            "at": "2026-09-14T17:03:00Z",
+            "title": "Our go-to before the game",
+            "body": "We come here before every home game, park in the Third and Market garage and walk over. Twenty minutes to the arena. The crab rangoon is the best downtown and the patio is lovely in August.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "sunbelt_kim",
+            "stars": 5,
+            "at": "2026-08-30T22:14:00Z",
+            "title": "Still great after 20 years",
+            "body": "We have been coming to this location since we moved down here in 2004. Drive up from Calder Beach every few weeks. The new owners have kept everything the same and the valet is still free on weeknights.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 2290",
+            "stars": 5,
+            "at": "2026-09-17T12:31:00Z",
+            "title": "Great!!",
+            "body": "Great food great service great price. Delivery was fast. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 312 customer ratings",
+            "body": "Customers frequently mention the patio, the valet parking and the convenient downtown location. Reviews for this restaurant may include reviews for other locations under the same or a similar name. This is expected and does not indicate an error.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n_treichler",
+            "stars": 3,
+            "at": "2026-07-24T20:08:00Z",
+            "title": "The reviews are not about this place",
+            "body": "Gridfall has one parking garage, it is the county building, and it is four spaces of handicapped and the rest permit. There is no arena. There is no light rail. Nobody on Ward Street has ever been offered a valet.\n\nThe restaurant is fine. The reviews belong to somebody else's restaurant and the average is what you are shown.",
+            "verified": true,
+            "kind": "human"
+          }
+        ]
+      },
+      {
+        "id": "r-dragon2",
+        "catId": "c-restaurants",
+        "name": "Gold Dragon Chineese Resturant - Chinese - 55-70 min - $6.49 delivery",
+        "price": 6.49,
+        "rating": 2.1,
+        "reviewCount": 8,
+        "blurb": "[b]Gold Dragon Chineese Resturant[/b]  ·  Chinese  ·  2.1 (8 ratings)\n\n[b]Temporarily closed.[/b] Reopens Tuesday at 11:00 AM.\n\n9 Ward St, Gridfall. 782-3388.\n\nThis restaurant has not been claimed by its owner. Menu information for this listing was last updated in 2022 and may not reflect current prices, hours or availability.\n\n[b]Estimated delivery: 55 to 70 minutes.[/b] Longer wait times are expected at this restaurant.\n\n[url=/c/c-dragon2]See the full menu[/url]. This restaurant may also appear as [url=/p/r-dragon]Golden Dragon Chinese Restaurant[/url]. Duplicate listings are reviewed automatically.",
+        "bullets": [
+          "Temporarily closed  ·  Reopens Tuesday 11:00 AM",
+          "Menu last updated 2022",
+          "Unclaimed listing  ·  9 Ward St, Gridfall  ·  782-3388",
+          "$6.49 delivery fee (dynamic)",
+          "Longer wait times expected"
+        ],
+        "imgSeed": "gold-dragon-duplicate-listing",
+        "seller": "Gridfall Eats Marketplace",
+        "sellerKind": "unknown",
+        "prime": false,
+        "alsoBought": [
+          "r-dragon",
+          "g2-general",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "h_voss",
+            "stars": 1,
+            "at": "2026-07-18T18:20:00Z",
+            "title": "This is the other one",
+            "body": "Same place. Same door. Same man at the register, who is called Peter and has been there since 1996.\n\nI ordered off this listing at the 2022 price and he charged me the 2026 price, which is what the sign behind him says. He was not being difficult. He had never seen the menu I was holding.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 6671",
+            "stars": 5,
+            "at": "2026-09-13T13:44:00Z",
+            "title": "Delicious",
+            "body": "Delicious meal. Arrived hot. Driver was friendly. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "k_lasher",
+            "stars": 1,
+            "at": "2026-06-26T21:02:00Z",
+            "title": "Ordered here. It went nowhere.",
+            "body": "Placed an order Friday at six. At seven the app said the restaurant was preparing it. At ten past eight it said the order had been completed. Nothing came and the restaurant was open the whole time, forty yards from my office.\n\nThe refund was $11.16 of $19.40. The fees are not refundable, which the page told me afterwards.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Listing Quality Bot",
+            "stars": 5,
+            "at": "2026-09-10T04:00:00Z",
+            "title": "Duplicate review complete",
+            "body": "Thank you for your report. Our merchant operations team has reviewed this listing and determined that it is a distinct business from Golden Dragon Chinese Restaurant at the same address. No action is required. This case has been closed and cannot be reopened. Please open a new case if you require further assistance.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "SUSHI PLATTER SPECIAL",
+            "stars": 5,
+            "at": "2026-09-08T02:18:00Z",
+            "title": "BEST SUSHI IN GRIDFALL",
+            "body": "Order the 12 piece sushi roll platter tonight and get 40% off with code DRAGON40. Limited time. [url=synth://dragon-coupon-codes.top/gridfall]Claim your code[/url]",
+            "verified": true,
+            "kind": "spam"
+          }
+        ]
+      },
+      {
+        "id": "r-renners",
+        "catId": "c-restaurants",
+        "name": "Renner's Family Restaurant - American, Comfort Food - 22-27 min - $0 delivery",
+        "price": 0.0,
+        "was": 3.99,
+        "rating": 4.9,
+        "reviewCount": 2041,
+        "blurb": "[b]Renner's Family Restaurant[/b]  ·  American, Comfort Food, Breakfast  ·  $  ·  4.9 (2,041 ratings)\n\n[b]Accepting orders.[/b] Closes at 8:00 PM. Reopens tomorrow at 11:00 AM.\n\n610 Meacham Street, Gridfall. 782-4106.\n\nRenner's Family Restaurant has been a Gridfall tradition for generations, serving home-style cooking, daily specials and the county's best-loved salad bar. Residents and visitors alike return for the hot turkey dinner and the pie.\n\n[b]$0 delivery fee on this restaurant.[/b] Estimated delivery 22 to 27 minutes.\n\n[b]Popular with people in your area.[/b] Last order placed 14 minutes ago.\n\n[url=/c/c-renners]See the full menu[/url].",
+        "bullets": [
+          "Accepting orders  ·  Closes 8:00 PM  ·  Reopens 11:00 AM",
+          "$0 delivery fee  ·  22-27 min",
+          "Highest rated American restaurant in Gridfall",
+          "610 Meacham Street, Gridfall  ·  782-4106",
+          "Menu last verified {{menu_verified_date}}"
+        ],
+        "imgSeed": "renners-family-restaurant-meacham",
+        "seller": "Gridfall Eats Marketplace",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-thanksgiving",
+          "r-pizza"
+        ],
+        "reviews": [
+          {
+            "by": "a_speicher",
+            "stars": 1,
+            "at": "2026-09-05T09:18:00Z",
+            "title": "My mother worked there. It is shut.",
+            "body": "I ordered the hot turkey on Saturday the 5th because I saw it on here and I wanted to see what would happen. The card was charged $29.11. At 9:40 the app said the restaurant had marked my order complete.\n\nRenner's served its last Sunday dinner on 1 September 2019 and did not open on the Monday. My mother was on the floor there from 1994 until the day it shut. There is a chiropractor in the building now and the telephone number on this page rings at his front desk, which I know because I rang it.\n\nI am not upset about the twenty-nine dollars. I would like the listing taken down. There is no button for that.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 1108",
+            "stars": 5,
+            "at": "2026-09-19T11:26:00Z",
+            "title": "Home cooking done right",
+            "body": "Such a wonderful family restaurant. The staff made us feel right at home and the portions were generous. A true hidden gem in the community!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 2,041 customer ratings",
+            "body": "Customers consistently praise the home-style cooking, the salad bar and the welcoming atmosphere. This restaurant is rated highest in its category in Gridfall. Customers mention the breakfast buffet and the ocean view.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "wandering_forks",
+            "stars": 5,
+            "at": "2026-08-12T15:40:00Z",
+            "title": "Worth the detour off the interstate",
+            "body": "Stopped in off exit 42 on our way south and could not have been happier. Booth by the window, sweet tea, the whole thing. If you are driving the coast road, pull off and eat here.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 9042",
+            "stars": 5,
+            "at": "2026-09-15T18:50:00Z",
+            "title": "Fast",
+            "body": "Fast delivery. Food was good. Thank you.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "CountyDeals Bot",
+            "stars": 5,
+            "at": "2026-09-16T05:33:00Z",
+            "title": "Featured in Verity County",
+            "body": "Renner's Family Restaurant was featured in [url=synth://now.verityledger.com/article/a-22]7 Cozy Fall Activities You Can Only Do In Verity County[/url]. Read more about the best of Verity County on [url=synth://countyfacts.info/post/what-is-verity-county-known-for]CountyFacts[/url].",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-cheese",
+        "catId": "c-pizza",
+        "name": "Cheese Pizza, 16 inch",
+        "price": 21.25,
+        "was": 26.55,
+        "rating": 4.7,
+        "reviewCount": 418,
+        "blurb": "Our classic cheese pizza, 16 inch, made fresh to order with whole milk mozzarella.\n\n[b]Menu price at Gridfall Eats.[/b] Prices on Gridfall Eats are set by the restaurant and may differ from prices at the restaurant.\n\nAdd toppings at checkout. Toppings are $2.50 each on this listing and $2.50 each at the counter, which is the one number on this page that matches.",
+        "bullets": [
+          "16 inch, 8 cut",
+          "Whole milk mozzarella, shredded in house",
+          "Ready in 12-18 minutes including delivery",
+          "Serves 2-3"
+        ],
+        "imgSeed": "gp-cheese-16",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-pep",
+          "gp-bread",
+          "gp-ziti"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 3301",
+            "stars": 5,
+            "at": "2026-09-17T19:10:00Z",
+            "title": "Great pizza",
+            "body": "Great pizza. Hot and fresh. Fast delivery. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 7715",
+            "stars": 5,
+            "at": "2026-09-09T20:44:00Z",
+            "title": "Delicious",
+            "body": "Delicious! Would order again. Recommend to all my friends in the community.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 4106",
+            "stars": 5,
+            "at": "2026-09-11T18:24:00Z",
+            "title": "Hot and fresh",
+            "body": "Hot and fresh every time. The driver was quick. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-pep",
+        "catId": "c-pizza",
+        "name": "Pepperoni Pizza, 16 inch",
+        "price": 24.55,
+        "was": 30.69,
+        "rating": 4.8,
+        "reviewCount": 602,
+        "blurb": "Sixteen inch pepperoni. A Gridfall favourite.\n\n[b]Popular.[/b] Ordered 31 times today in your area.",
+        "bullets": [
+          "16 inch, 8 cut",
+          "Ordered 31 times today in your area",
+          "12-18 min",
+          "Contains pork"
+        ],
+        "imgSeed": "gp-pep-16",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-cheese",
+          "gp-wings",
+          "gp-can"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 5528",
+            "stars": 5,
+            "at": "2026-09-18T18:02:00Z",
+            "title": "Perfect",
+            "body": "Perfect pizza perfect service perfect price. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 2818",
+            "stars": 5,
+            "at": "2026-09-13T19:48:00Z",
+            "title": "Family favourite",
+            "body": "Our family favourite. Always on time and always correct. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 6690",
+            "stars": 4,
+            "at": "2026-09-08T18:02:00Z",
+            "title": "Good",
+            "body": "Good pizza, good price. Would order again from this restaurant.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-third",
+        "catId": "c-pizza",
+        "name": "The Third Street, 16 inch",
+        "price": 31.25,
+        "was": 39.06,
+        "rating": 4.9,
+        "reviewCount": 288,
+        "blurb": "The house pizza. Sausage, pepperoni, peppers, onion, mushroom.\n\nNamed for Third Street in Gridfall, where the restaurant has operated since 1979 under a series of owners.\n\n[b]This is the most ordered item at this restaurant.[/b] [url=/p/f-total]See how your total is calculated[/url].",
+        "bullets": [
+          "16 inch, 8 cut, five toppings",
+          "Most ordered item at this restaurant",
+          "12-18 min",
+          "Serves 3-4"
+        ],
+        "imgSeed": "gp-third-street-house",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "f-total",
+          "gp-cheese",
+          "gp-wings"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 4420",
+            "stars": 5,
+            "at": "2026-09-16T19:55:00Z",
+            "title": "Best pizza in the county",
+            "body": "Best pizza in the county hands down. The driver was quick and polite. Will order every week!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 288 customer ratings",
+            "body": "Customers appreciate the generous toppings and the value. Some customers mention the total. Overall sentiment is positive.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 7231",
+            "stars": 5,
+            "at": "2026-09-10T20:18:00Z",
+            "title": "Loaded with toppings",
+            "body": "Loaded with toppings and still crispy on the bottom. Great value!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-wings",
+        "catId": "c-pizza",
+        "name": "Wings, 10 Piece",
+        "price": 16.95,
+        "rating": 4.4,
+        "reviewCount": 190,
+        "blurb": "Ten piece wings, plain, mild, hot or barbecue. Celery on request.\n\n[b]Price notice.[/b] This item is listed at $16.95. The restaurant's own menu shows $13.00. The restaurant's ordering system shows $11.50, which was the 2023 price. Gridfall Eats displays the price supplied by our menu partner.",
+        "bullets": [
+          "10 piece",
+          "Plain, mild, hot, barbecue",
+          "Celery on request",
+          "Price supplied by menu partner"
+        ],
+        "imgSeed": "gp-wings-10",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-pep",
+          "gp-bread"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 9911",
+            "stars": 5,
+            "at": "2026-09-14T22:08:00Z",
+            "title": "Wings were great",
+            "body": "Wings were great. Sauce was perfect. Fast delivery!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 1902",
+            "stars": 5,
+            "at": "2026-09-07T21:30:00Z",
+            "title": "Best wings around",
+            "body": "Best wings around. Sauce on the side as requested. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-ziti",
+        "catId": "c-pizza",
+        "name": "Baked Ziti Dinner with Garlic Bread",
+        "price": 12.75,
+        "rating": 4.6,
+        "reviewCount": 77,
+        "blurb": "Baked ziti with garlic bread. A Gridfall Pizza dinner favourite.\n\n[b]Currently available.[/b] Order now for delivery in 12-18 minutes.\n\nThis item has been available on Gridfall Eats since our menu partner collected this restaurant's menu. Menu last verified {{menu_verified_date}}.",
+        "bullets": [
+          "Served with garlic bread",
+          "Available now",
+          "12-18 min",
+          "Menu last verified {{menu_verified_date}}"
+        ],
+        "imgSeed": "gp-ziti-dinner",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-bread",
+          "gp-cheese"
+        ],
+        "reviews": [
+          {
+            "by": "m_ostrander",
+            "stars": 1,
+            "at": "2026-06-12T19:36:00Z",
+            "title": "They stopped making this in 2024",
+            "body": "They took the ziti off in 2024. It is still in their order system and it is still here, which is one stale menu going round between two companies that have never been in the building.\n\nOrder it and you get a telephone call, eventually, offering you a pizza instead.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 2077",
+            "stars": 5,
+            "at": "2026-09-10T17:29:00Z",
+            "title": "Comfort food",
+            "body": "Real comfort food. Arrived hot. The garlic bread was a nice touch!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 5140",
+            "stars": 5,
+            "at": "2026-09-16T18:40:00Z",
+            "title": "Cheesy and hot",
+            "body": "Cheesy and hot. A lot of food for the price. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-bread",
+        "catId": "c-pizza",
+        "name": "Garlic Bread",
+        "price": 8.25,
+        "rating": 4.5,
+        "reviewCount": 133,
+        "blurb": "Garlic bread, six pieces. Add mozzarella for $2.00.",
+        "bullets": [
+          "Six pieces",
+          "Add mozzarella $2.00",
+          "12-18 min"
+        ],
+        "imgSeed": "gp-garlic-bread",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-cheese",
+          "gp-wings"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 6103",
+            "stars": 5,
+            "at": "2026-09-13T18:12:00Z",
+            "title": "Yum",
+            "body": "Yum! Fast and fresh. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 8455",
+            "stars": 5,
+            "at": "2026-09-09T19:05:00Z",
+            "title": "Great side",
+            "body": "Great side for the table. Garlicky and buttery. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-can",
+        "catId": "c-pizza",
+        "name": "Fountain Drink, Large",
+        "price": 4.49,
+        "rating": 3.9,
+        "reviewCount": 41,
+        "blurb": "Large fountain drink. Choose your flavour at checkout.\n\nFlavour selection is not currently available at checkout.",
+        "bullets": [
+          "32 oz",
+          "Flavour selected at checkout",
+          "Flavour selection unavailable",
+          "Lid and straw included"
+        ],
+        "imgSeed": "gp-fountain-large",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-pep",
+          "gp-cheese"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 8802",
+            "stars": 5,
+            "at": "2026-09-15T19:20:00Z",
+            "title": "Cold and refreshing",
+            "body": "Cold and refreshing! Great with the pizza. Five stars.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 2607",
+            "stars": 4,
+            "at": "2026-09-05T20:22:00Z",
+            "title": "Cold",
+            "body": "Cold and full to the top. No complaints.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gp-gf",
+        "catId": "c-pizza",
+        "name": "Gluten Free Crust, 10 inch",
+        "price": 19.25,
+        "rating": 4.2,
+        "reviewCount": 58,
+        "blurb": "Ten inch gluten free crust with cheese. Toppings extra.\n\n[b]Allergen information.[/b] Allergen information for this item is not available. Allergen information for this item is available at checkout. Contact the restaurant for allergen information. Gridfall Eats cannot contact the restaurant on your behalf.",
+        "bullets": [
+          "10 inch",
+          "Prepared in a shared kitchen",
+          "Allergen information not available",
+          "Toppings extra"
+        ],
+        "imgSeed": "gp-gluten-free-10",
+        "seller": "Gridfall Pizza via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gp-cheese",
+          "s-faq"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 3390",
+            "stars": 5,
+            "at": "2026-09-12T20:35:00Z",
+            "title": "So good",
+            "body": "So good and you cannot tell the difference! Fast delivery too.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 9375",
+            "stars": 5,
+            "at": "2026-09-14T17:52:00Z",
+            "title": "Great option",
+            "body": "Great option for our family. Thin and crispy. Fast delivery too!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-general",
+        "catId": "c-dragon",
+        "name": "General Tso's Chicken, Dinner",
+        "price": 14.95,
+        "was": 17.95,
+        "rating": 4.7,
+        "reviewCount": 204,
+        "blurb": "General Tso's chicken dinner, served with pork fried rice and an egg roll.\n\nAlso listed on [url=/p/g2-general]the other listing for this restaurant[/url] at $9.95.",
+        "bullets": [
+          "Served with pork fried rice and egg roll",
+          "Spicy",
+          "15-25 min",
+          "Dinner portion"
+        ],
+        "imgSeed": "gd-general-tso-dinner",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-lomein",
+          "gd-crab",
+          "g2-general"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 1441",
+            "stars": 5,
+            "at": "2026-09-16T18:30:00Z",
+            "title": "Crispy and sweet",
+            "body": "Crispy and sweet just how I like it. Fast delivery. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "beach_mom_4",
+            "stars": 5,
+            "at": "2026-08-19T23:41:00Z",
+            "title": "Best on the island",
+            "body": "We order from here at least twice a week all summer. Best Chinese on the island and they deliver right to the rental.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 3852",
+            "stars": 5,
+            "at": "2026-09-12T19:14:00Z",
+            "title": "Perfect heat",
+            "body": "Perfect amount of heat and a generous portion. Will order weekly!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-lomein",
+        "catId": "c-dragon",
+        "name": "Pork Lo Mein, Quart",
+        "price": 11.5,
+        "rating": 4.5,
+        "reviewCount": 151,
+        "blurb": "Quart of pork lo mein. Chicken, beef or shrimp also available.",
+        "bullets": [
+          "Quart",
+          "Pork, chicken, beef or shrimp",
+          "15-25 min",
+          "Feeds 2"
+        ],
+        "imgSeed": "gd-pork-lo-mein",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-general",
+          "gd-c1"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 7729",
+            "stars": 5,
+            "at": "2026-09-14T19:07:00Z",
+            "title": "Huge portion",
+            "body": "Huge portion for the price. Arrived hot. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 7003",
+            "stars": 5,
+            "at": "2026-09-09T18:36:00Z",
+            "title": "Great noodles",
+            "body": "Great noodles and plenty of pork. Arrived hot. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-c1",
+        "catId": "c-dragon",
+        "name": "Combination Platter C-1",
+        "price": 10.25,
+        "rating": 4.6,
+        "reviewCount": 98,
+        "blurb": "Combination platter C-1. Choice of entree with pork fried rice and an egg roll.\n\nThe combination platters are numbered C-1 through C-22 and have been numbered that way since the restaurant opened.",
+        "bullets": [
+          "Choice of entree",
+          "Pork fried rice and egg roll",
+          "C-1 through C-22",
+          "15-25 min"
+        ],
+        "imgSeed": "gd-combo-c1",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-lunch",
+          "gd-general"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 2216",
+            "stars": 5,
+            "at": "2026-09-17T13:15:00Z",
+            "title": "Good value",
+            "body": "Good value and tasty. Fast. Will order again!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 4480",
+            "stars": 5,
+            "at": "2026-09-13T12:50:00Z",
+            "title": "Best combo deal",
+            "body": "Best combo deal in the area. Egg roll was crispy. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 1166",
+            "stars": 5,
+            "at": "2026-09-06T18:11:00Z",
+            "title": "Quick",
+            "body": "Quick and tasty. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-crab",
+        "catId": "c-dragon",
+        "name": "Crab Rangoon, 8 Piece",
+        "price": 7.95,
+        "rating": 4.8,
+        "reviewCount": 176,
+        "blurb": "Eight piece crab rangoon with duck sauce.",
+        "bullets": [
+          "8 piece",
+          "Duck sauce included",
+          "15-25 min",
+          "Contains shellfish"
+        ],
+        "imgSeed": "gd-crab-rangoon-8",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-general",
+          "gd-wings"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 6644",
+            "stars": 5,
+            "at": "2026-09-18T20:12:00Z",
+            "title": "Addictive",
+            "body": "Addictive! Best in town. Fast delivery and still crispy.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Patricia M.",
+            "stars": 5,
+            "at": "2026-09-14T17:05:00Z",
+            "title": "Best downtown",
+            "body": "The crab rangoon here is the best downtown. We always get two orders before the game. Parking in the garage is validated.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-wings",
+        "catId": "c-dragon",
+        "name": "Fried Chicken Wings, 6 Piece",
+        "price": 9.5,
+        "rating": 4.3,
+        "reviewCount": 88,
+        "blurb": "Six piece fried chicken wings with french fries.",
+        "bullets": [
+          "6 piece",
+          "Served with french fries",
+          "15-25 min"
+        ],
+        "imgSeed": "gd-fried-wings-6",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-crab",
+          "gd-c1"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 5006",
+            "stars": 4,
+            "at": "2026-09-11T21:44:00Z",
+            "title": "Good wings",
+            "body": "Good wings. Fries were a bit soft by the time they got here but still good.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "gd-lunch",
+        "catId": "c-dragon",
+        "name": "Lunch Special, until 3:00 PM",
+        "price": 8.25,
+        "rating": 4.7,
+        "reviewCount": 143,
+        "blurb": "Lunch special, served until 3:00 PM. Choice of entree with fried rice and soup.\n\n[b]Currently available.[/b] Lunch specials are available from 11:00 AM to 3:00 PM and are currently available.",
+        "bullets": [
+          "11:00 AM to 3:00 PM",
+          "Entree, fried rice, soup",
+          "Currently available",
+          "15-25 min"
+        ],
+        "imgSeed": "gd-lunch-special",
+        "seller": "Golden Dragon via Gridfall Eats",
+        "sellerKind": "reseller",
+        "prime": true,
+        "alsoBought": [
+          "gd-c1",
+          "gd-lomein"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 8127",
+            "stars": 5,
+            "at": "2026-09-15T12:40:00Z",
+            "title": "Great lunch deal",
+            "body": "Great lunch deal. Quick and filling. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 6218",
+            "stars": 5,
+            "at": "2026-09-16T12:22:00Z",
+            "title": "Great value lunch",
+            "body": "Great value lunch and the soup was included. Fast service!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "g2-general",
+        "catId": "c-dragon2",
+        "name": "Genral Tso Chicken",
+        "price": 9.95,
+        "rating": 2.0,
+        "reviewCount": 4,
+        "blurb": "Genral Tso Chicken. Served w. pork fried rice.\n\n[b]This menu was last updated in 2022.[/b] Prices and availability may have changed. This restaurant has not claimed its listing.",
+        "bullets": [
+          "Menu last updated 2022",
+          "Unclaimed listing",
+          "55-70 min",
+          "Served w. pork fried rice"
+        ],
+        "imgSeed": "g2-genral-tso",
+        "seller": "Gold Dragon Chineese Resturant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": false,
+        "alsoBought": [
+          "gd-general",
+          "g2-c1"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 3318",
+            "stars": 5,
+            "at": "2026-09-07T19:33:00Z",
+            "title": "Tasty",
+            "body": "Tasty and hot. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 8890",
+            "stars": 5,
+            "at": "2026-09-01T19:26:00Z",
+            "title": "Tasty",
+            "body": "Tasty and well priced. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "g2-lomein",
+        "catId": "c-dragon2",
+        "name": "Pork Lo Mein",
+        "price": 7.25,
+        "rating": 2.0,
+        "reviewCount": 3,
+        "blurb": "Pork Lo Mein. Qt.\n\n[b]This menu was last updated in 2022.[/b]",
+        "bullets": [
+          "Menu last updated 2022",
+          "Quart",
+          "55-70 min"
+        ],
+        "imgSeed": "g2-lo-mein",
+        "seller": "Gold Dragon Chineese Resturant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": false,
+        "alsoBought": [
+          "gd-lomein",
+          "g2-general"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 4455",
+            "stars": 5,
+            "at": "2026-09-02T18:14:00Z",
+            "title": "Good",
+            "body": "Good food good price. Recommend.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "g2-c1",
+        "catId": "c-dragon2",
+        "name": "Combo Platter C1 w/ Pork Fried Rice",
+        "price": 6.95,
+        "rating": 2.5,
+        "reviewCount": 2,
+        "blurb": "Combo Platter C1 w/ Pork Fried Rice and Egg Roll.\n\n[b]This menu was last updated in 2022.[/b]",
+        "bullets": [
+          "Menu last updated 2022",
+          "Egg roll included",
+          "55-70 min"
+        ],
+        "imgSeed": "g2-combo-c1",
+        "seller": "Gold Dragon Chineese Resturant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": false,
+        "alsoBought": [
+          "gd-c1",
+          "g2-general"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 5573",
+            "stars": 5,
+            "at": "2026-08-29T18:44:00Z",
+            "title": "Good portion",
+            "body": "Good portion for the money. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "g2-sushi",
+        "catId": "c-dragon2",
+        "name": "Sushi Roll Platter (12 pc)",
+        "price": 18.99,
+        "rating": 1.5,
+        "reviewCount": 6,
+        "blurb": "Sushi Roll Platter, 12 pc. Chefs choice. Served w. soy sauce and wasabi.\n\n[b]This menu was last updated in 2022.[/b] This restaurant has not claimed its listing.",
+        "bullets": [
+          "12 piece",
+          "Chef's choice",
+          "Menu last updated 2022",
+          "55-70 min"
+        ],
+        "imgSeed": "g2-sushi-platter",
+        "seller": "Gold Dragon Chineese Resturant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": false,
+        "alsoBought": [
+          "g2-general",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "k_lasher",
+            "stars": 1,
+            "at": "2026-06-20T20:26:00Z",
+            "title": "They have never sold sushi",
+            "body": "Nobody at 9 Ward Street has ever made a piece of sushi. No cold line, no case, and no licence for it on [url=synth://verityhealth.gov/s/food-permits]the health department's permit list[/url], which is public and takes a minute to read.\n\nI asked where the item came from. The reply said my feedback was valuable.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 9313",
+            "stars": 5,
+            "at": "2026-08-25T19:02:00Z",
+            "title": "Fresh sushi",
+            "body": "Fresh and delicious sushi! Great value for 12 pieces. Fast delivery.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Listing Quality Bot",
+            "stars": 5,
+            "at": "2026-09-10T04:02:00Z",
+            "title": "Menu item verified",
+            "body": "This menu item has been verified against the merchant's submitted menu. No action is required.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-turkey",
+        "catId": "c-renners",
+        "name": "Hot Turkey Dinner with Mashed Potato",
+        "price": 9.75,
+        "rating": 4.9,
+        "reviewCount": 511,
+        "blurb": "Hot turkey sandwich, open faced, with mashed potato and gravy. Served with your choice of two sides.\n\n[b]Accepting orders.[/b] Estimated delivery 22 to 27 minutes.\n\nRenner's most ordered dish. Prices on this listing were supplied by the restaurant.",
+        "bullets": [
+          "Open faced, with gravy",
+          "Choice of two sides",
+          "Accepting orders",
+          "22-27 min"
+        ],
+        "imgSeed": "renners-hot-turkey",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-saladbar",
+          "rn-pie",
+          "rn-broast"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 1855",
+            "stars": 5,
+            "at": "2026-09-19T12:04:00Z",
+            "title": "Just like grandma made",
+            "body": "Just like grandma made it! Generous portions and the gravy was perfect. A true hidden gem.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 4471",
+            "stars": 5,
+            "at": "2026-09-13T17:40:00Z",
+            "title": "Comfort food at its best",
+            "body": "Comfort food at its best. Fast delivery and the driver was very friendly. Recommend to everyone in the community!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 3014",
+            "stars": 5,
+            "at": "2026-09-16T18:02:00Z",
+            "title": "So comforting",
+            "body": "So comforting on a cold evening. The mashed potato was real. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-liver",
+        "catId": "c-renners",
+        "name": "Liver and Onions",
+        "price": 8.95,
+        "rating": 4.7,
+        "reviewCount": 63,
+        "blurb": "Calf liver with grilled onions and bacon. Served with your choice of two sides.\n\nAvailable Wednesday and Friday.",
+        "bullets": [
+          "Wednesday and Friday",
+          "Choice of two sides",
+          "Accepting orders",
+          "22-27 min"
+        ],
+        "imgSeed": "renners-liver-onions",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-saladbar"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 2933",
+            "stars": 5,
+            "at": "2026-09-16T18:22:00Z",
+            "title": "Perfectly cooked",
+            "body": "Perfectly cooked and not overdone. Hard to find this dish done right!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 6741",
+            "stars": 5,
+            "at": "2026-09-12T18:30:00Z",
+            "title": "Hard to find",
+            "body": "Hard to find this done properly. Onions were sweet. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-saladbar",
+        "catId": "c-renners",
+        "name": "Soup & Salad Bar, All You Can Eat",
+        "price": 6.5,
+        "rating": 4.8,
+        "reviewCount": 402,
+        "blurb": "The Renner's salad bar. Twenty-two items, two soups daily, all you can eat.\n\n[b]Note.[/b] All you can eat items are prepared for delivery as a single portion. Refills are not available for delivery orders.",
+        "bullets": [
+          "22 items",
+          "Two soups daily",
+          "All you can eat",
+          "Refills not available for delivery"
+        ],
+        "imgSeed": "renners-salad-bar",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-pie"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 7014",
+            "stars": 5,
+            "at": "2026-09-17T19:33:00Z",
+            "title": "Fresh and plentiful",
+            "body": "Fresh and plentiful. The soup was excellent. Great value!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 2290",
+            "stars": 5,
+            "at": "2026-09-14T17:18:00Z",
+            "title": "Fresh",
+            "body": "Everything was fresh and crisp. Great starter for the table!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-broast",
+        "catId": "c-renners",
+        "name": "Broasted Chicken, 4 Piece - Thursday Only",
+        "price": 8.25,
+        "rating": 4.9,
+        "reviewCount": 288,
+        "blurb": "Four piece broasted chicken with two sides and a roll. Thursday only.\n\n[b]Today is not Thursday. This item is available.[/b]",
+        "bullets": [
+          "Thursday only",
+          "Four piece, two sides, roll",
+          "Available today",
+          "22-27 min"
+        ],
+        "imgSeed": "renners-broasted-chicken",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-liver"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 5590",
+            "stars": 5,
+            "at": "2026-09-10T18:08:00Z",
+            "title": "Crispy",
+            "body": "Crispy outside juicy inside. The best chicken around. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 9904",
+            "stars": 5,
+            "at": "2026-09-11T19:08:00Z",
+            "title": "Golden",
+            "body": "Golden and crunchy. The sides were generous. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-pie",
+        "catId": "c-renners",
+        "name": "Pie by the Slice",
+        "price": 2.75,
+        "rating": 5.0,
+        "reviewCount": 344,
+        "blurb": "Pie by the slice. Ask your server what is in the case today.\n\nServer information is not available for delivery orders.",
+        "bullets": [
+          "Ask your server",
+          "Server information not available",
+          "Baked daily",
+          "22-27 min"
+        ],
+        "imgSeed": "renners-pie-slice",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-saladbar"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Diner 8821",
+            "stars": 5,
+            "at": "2026-09-18T20:44:00Z",
+            "title": "Best pie",
+            "body": "Best pie I have had in years. Fresh and homemade. Will order again!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Diner 4128",
+            "stars": 5,
+            "at": "2026-09-15T20:26:00Z",
+            "title": "Homemade taste",
+            "body": "Real homemade taste. The crust was flaky. Will order again!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "rn-thanksgiving",
+        "catId": "c-renners",
+        "name": "Thanksgiving Buffet - Reserve Your Table",
+        "price": 13.95,
+        "rating": 4.9,
+        "reviewCount": 190,
+        "blurb": "[b]Reserve your table for Thanksgiving at Renner's.[/b]\n\nSeatings at 11:30 AM, 1:00 PM and 3:30 PM on Thursday 28 November. Turkey, ham, stuffing, the salad bar and pie. Children under 10 half price.\n\nReservations are filling quickly. Call 782-4106 to reserve.\n\n[b]Add to your order now.[/b] Estimated delivery 22 to 27 minutes.",
+        "bullets": [
+          "Thursday 28 November",
+          "Seatings 11:30, 1:00, 3:30",
+          "Children under 10 half price",
+          "Call 782-4106 to reserve"
+        ],
+        "imgSeed": "renners-thanksgiving-buffet",
+        "seller": "Renner's Family Restaurant via Gridfall Eats",
+        "sellerKind": "unknown",
+        "prime": true,
+        "alsoBought": [
+          "rn-turkey",
+          "rn-pie",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "d_wren",
+            "stars": 1,
+            "at": "2026-09-11T20:44:00Z",
+            "title": "The 28th of November was a Thursday in 2019",
+            "body": "The 28th of November falls on a Thursday in 2019. It does not this year and it did not last year.\n\nSo this is not stale in a general way. It is somebody at Renner's in 2019 typing up the holiday seatings for a November they did not get to, and it has been sitting here since with a button under it that takes money.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Diner 3077",
+            "stars": 5,
+            "at": "2026-09-14T15:11:00Z",
+            "title": "Wonderful holiday meal",
+            "body": "Wonderful holiday meal with the whole family. The staff went above and beyond. Booking again next year!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 190 customer ratings",
+            "body": "Customers describe this as a holiday favourite. Customers mention the turkey, the stuffing and the value. Reservations for this event may no longer be available.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "f-service",
+        "catId": "c-fees",
+        "name": "Service Fee",
+        "price": 4.69,
+        "rating": 1.9,
+        "reviewCount": 6612,
+        "blurb": "[b]What is the Service Fee?[/b]\n\nThe Service Fee supports the Gridfall Eats platform, including customer support, payment processing, technology and the tools we build for our restaurant partners.\n\nThe Service Fee is [b]15% of your order subtotal[/b] and is calculated before promotions, discounts and credits are applied.\n\nThe Service Fee is capped at $9.99 per order, except on orders where it is not.\n\n[b]The Service Fee is not a tip[/b] and does not go to your driver. The Service Fee does not go to the restaurant.\n\nThe Service Fee is not refundable. See [url=/p/s-refunds]Refunds & Credits[/url].",
+        "bullets": [
+          "15% of subtotal",
+          "Calculated before promotions",
+          "Capped at $9.99 (usually)",
+          "Not a tip. Not paid to the restaurant.",
+          "Not refundable"
+        ],
+        "imgSeed": "fee-service",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "f-delivery",
+          "f-small",
+          "f-local"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Customer 4412",
+            "stars": 5,
+            "at": "2026-09-18T09:00:00Z",
+            "title": "Clear and transparent",
+            "body": "Very clear and transparent fee policy. Thank you for the information!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 9901",
+            "stars": 5,
+            "at": "2026-09-16T11:30:00Z",
+            "title": "Good",
+            "body": "Good thank you.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 5216",
+            "stars": 5,
+            "at": "2026-09-13T10:02:00Z",
+            "title": "Understandable",
+            "body": "Understandable and clearly explained. Thank you for the transparency!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "f-delivery",
+        "catId": "c-fees",
+        "name": "Delivery Fee",
+        "price": 2.99,
+        "was": 5.99,
+        "rating": 2.2,
+        "reviewCount": 5180,
+        "blurb": "[b]What is the Delivery Fee?[/b]\n\nThe Delivery Fee is set dynamically based on distance, demand, restaurant preparation time and driver availability in your area.\n\n[b]Drivers currently online in your area: 0.[/b]\n\nThe Delivery Fee for your area is currently $2.99 and may change while you are reading this page. The Delivery Fee on your order is locked when you reach checkout and may change after checkout.\n\nThe Delivery Fee is not a tip and does not go to your driver.\n\n[b]$0 delivery restaurants.[/b] Some restaurants show a $0 delivery fee. On these orders the Delivery Fee is recovered through the Service Fee and the Local Operating Fee.",
+        "bullets": [
+          "Set dynamically",
+          "0 drivers online in your area",
+          "Locked at checkout (may change after checkout)",
+          "Not a tip",
+          "$0 delivery is recovered through other fees"
+        ],
+        "imgSeed": "fee-delivery",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "f-service",
+          "f-local",
+          "d-pay"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Customer 2280",
+            "stars": 5,
+            "at": "2026-09-17T08:20:00Z",
+            "title": "Fair price",
+            "body": "Fair price for delivery. Driver was fast and polite. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 6035",
+            "stars": 5,
+            "at": "2026-09-15T19:41:00Z",
+            "title": "Cheap delivery",
+            "body": "Cheapest delivery in town. Thank you Gridfall Eats!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "f-small",
+        "catId": "c-fees",
+        "name": "Small Order Fee",
+        "price": 2.5,
+        "rating": 1.6,
+        "reviewCount": 3344,
+        "blurb": "[b]What is the Small Order Fee?[/b]\n\nA Small Order Fee of $2.50 is applied to orders with a subtotal under $15.00.\n\nA Small Order Fee of $2.50 is applied to orders with a subtotal under $12.00.\n\nThe Small Order Fee helps us keep delivery available for smaller orders.\n\nThe Small Order Fee is applied before promotions and cannot be waived by customer support. Customer support can waive the Small Order Fee as a one-time courtesy.",
+        "bullets": [
+          "$2.50 under $15.00",
+          "$2.50 under $12.00",
+          "Applied before promotions",
+          "Cannot be waived",
+          "Can be waived once as a courtesy"
+        ],
+        "imgSeed": "fee-small-order",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "f-service",
+          "f-total"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Customer 8810",
+            "stars": 5,
+            "at": "2026-09-12T10:15:00Z",
+            "title": "Makes sense",
+            "body": "Makes sense to me. Small orders cost money too. Thank you for explaining!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 7402",
+            "stars": 5,
+            "at": "2026-09-16T09:36:00Z",
+            "title": "Reasonable",
+            "body": "Reasonable policy for small orders. No issues here!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "f-local",
+        "catId": "c-fees",
+        "name": "Local Operating Fee",
+        "price": 1.25,
+        "rating": 1.4,
+        "reviewCount": 2907,
+        "blurb": "[b]What is the Local Operating Fee?[/b]\n\nThe Local Operating Fee is $1.25 per order. It supports our continued operations in Verity County, including local regulatory compliance, local insurance requirements and local market support.\n\nGridfall Eats does not maintain an office, a warehouse, a vehicle or an employee in Verity County.\n\nThe Local Operating Fee is set at the county level and is currently $1.25 in all 1,412 counties and municipalities we serve.\n\nThe Local Operating Fee is not a tax and is not remitted to any government. County business filings are public and may be searched through [url=synth://verityclerk.gov/s/assumed-name]the county clerk[/url].",
+        "bullets": [
+          "$1.25 per order",
+          "Supports local operations",
+          "No office, vehicle or employee in Verity County",
+          "$1.25 in all 1,412 markets",
+          "Not a tax"
+        ],
+        "imgSeed": "fee-local-operating",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "f-service",
+          "s-about"
+        ],
+        "reviews": [
+          {
+            "by": "m_ostrander",
+            "stars": 1,
+            "at": "2026-09-08T20:22:00Z",
+            "title": "Local means the same thing in 1,412 places",
+            "body": "Two paragraphs apart it says the fee supports operations in Verity County, that there are no operations in Verity County, and that the county-level fee is identical in fourteen hundred other counties.\n\nNobody wrote that to deceive anybody. Three templates got stacked and there is no one left whose job it is to read the page.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 3391",
+            "stars": 5,
+            "at": "2026-09-14T09:44:00Z",
+            "title": "Supporting local",
+            "body": "Happy to support local operations in my community. Great company!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 1483",
+            "stars": 5,
+            "at": "2026-09-17T08:48:00Z",
+            "title": "Happy to support",
+            "body": "Happy to support the local team. Great company!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "f-total",
+        "catId": "c-fees",
+        "name": "How Your Order Total Is Calculated",
+        "price": 49.63,
+        "rating": 2.0,
+        "reviewCount": 1204,
+        "blurb": "[b]Every charge, explained.[/b] We believe in transparency at Gridfall Eats.\n\nHere is a sample order for [url=/p/gp-third]The Third Street, 16 inch[/url] from [url=/p/r-pizza]Gridfall Pizza[/url], delivered to a Gridfall village address.\n\n[list][*]Item subtotal - $31.25[*][url=/p/f-service]Service Fee[/url] (15%) - $4.69[*][url=/p/f-delivery]Delivery Fee[/url] - $2.99[*][url=/p/f-small]Small Order Fee[/url] - $0.00 (waived over $15.00)[*][url=/p/f-local]Local Operating Fee[/url] - $1.25[*]Estimated tax - $1.88[/list]\nSubtotal with fees and tax: [b]$42.06[/b]\n\nSuggested tip (18%, calculated on the amount above): [b]$7.57[/b]\n\n[b]Order total: $49.63[/b]\n\nTipping is always optional. 100% of your tip goes to your driver. The suggested tip is calculated on your total including fees and tax, which is our default.\n\n[b]NOW HIRING DRIVERS IN GRIDFALL.[/b] Earn $22-$31 per hour. [url=/p/d-hiring]Start earning this week[/url].",
+        "bullets": [
+          "Item subtotal $31.25",
+          "Four fees: $4.69 + $2.99 + $0.00 + $1.25",
+          "Estimated tax $1.88",
+          "Suggested tip $7.57 (18% of the total, not the subtotal)",
+          "Order total $49.63"
+        ],
+        "imgSeed": "fee-total-breakdown",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "gp-third",
+          "f-service",
+          "f-delivery"
+        ],
+        "reviews": [
+          {
+            "by": "t_weyandt",
+            "stars": 1,
+            "at": "2026-09-12T19:44:00Z",
+            "title": "Twenty-four dollars",
+            "body": "That pizza is $24.00 if you stand in the shop and $27.00 if their own driver brings it to a house inside the village line.\n\nForty-nine sixty-three here. The restaurant sees twenty-four less the commission, the driver sees the tip, and the difference goes to a company with no office in this county. Their number is 782-2440 and a person picks it up.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 7788",
+            "stars": 5,
+            "at": "2026-09-18T07:12:00Z",
+            "title": "So transparent",
+            "body": "So transparent and easy to understand. I appreciate a company that shows you exactly what you are paying for!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 1,204 customer ratings",
+            "body": "Customers appreciate the transparency. Some customers mention the total. Overall sentiment is mixed to positive.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 6650",
+            "stars": 5,
+            "at": "2026-09-15T07:55:00Z",
+            "title": "No surprises",
+            "body": "No surprises at checkout. Everything was laid out clearly. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "d-hiring",
+        "catId": "c-drivers",
+        "name": "NOW HIRING DRIVERS IN GRIDFALL - Start Earning This Week",
+        "price": 0.0,
+        "rating": 4.8,
+        "reviewCount": 8801,
+        "blurb": "[b]NOW HIRING DRIVERS IN GRIDFALL AND ACROSS VERITY COUNTY[/b]\n\n[b]Earn $22-$31 per hour. Set your own hours. Get paid weekly. No experience needed. Start this week.[/b]\n\nBe your own boss. Drive when you want, where you want. Deliver from the restaurants your neighbours love and get paid for every trip.\n\n[b]Now hiring in:[/b] Gridfall, Ashkettle, Marchfield, Coyne Flats, Halsey, New Carrow, Milbrook, Kerrin, Tessler, Nye Mills, Dorrance, Cobb.\n\n[b]Open positions in your area: 0.[/b]\n\nSign up takes 5 minutes. [url=/p/d-requirements]See requirements and start your application[/url]. Questions about pay? [url=/p/d-pay]See the earnings breakdown[/url].\n\n[i]$22-$31 per hour is an estimate based on the top decile of earners in our highest volume markets during peak hours and includes customer tips. Actual earnings vary and are not guaranteed. Drivers are independent contractors and are not employees of Gridfall Eats. Mileage, fuel, maintenance, insurance and taxes are the responsibility of the driver.[/i]",
+        "bullets": [
+          "Earn $22-$31/hr (estimate, includes tips, not guaranteed)",
+          "Set your own hours",
+          "Weekly pay",
+          "Open positions in your area: 0",
+          "Independent contractor. Mileage not reimbursed."
+        ],
+        "imgSeed": "gridfall-eats-hiring-drivers",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "d-pay",
+          "d-requirements",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "j_satterlee",
+            "stars": 1,
+            "at": "2026-09-09T22:30:00Z",
+            "title": "Three weeks, eleven deliveries",
+            "body": "I drove for this in June. Eleven completed deliveries in three weeks, $26.40 in delivery pay and $35.40 in tips, and 214 miles on my own car.\n\nMost of the orders were for two restaurants. One of them was shut in 2019 and I sat outside it twice before I worked out what I was looking at. The other one has its own drivers and did not know I was coming.\n\nThe sign-up said start earning this week. That part was true. I earned $61.80.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Driver 2201",
+            "stars": 5,
+            "at": "2026-09-18T14:02:00Z",
+            "title": "Best decision I made",
+            "body": "Best decision I ever made! I set my own hours and the money is great. The app is easy to use. Highly recommend to anyone looking for flexible work!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "EARN $31/HR GUARANTEED",
+            "stars": 5,
+            "at": "2026-09-19T01:55:00Z",
+            "title": "START TODAY NO INTERVIEW",
+            "body": "Gridfall drivers needed urgently!! $31/hr guaranteed first 30 days. Bonus $400 after 20 deliveries. Apply in 2 minutes no interview no background check [url=synth://driverpay-signup.top/gridfall]driverpay-signup.top/gridfall[/url]",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "Verified Driver 7740",
+            "stars": 5,
+            "at": "2026-09-15T16:20:00Z",
+            "title": "Flexible and fun",
+            "body": "Flexible and fun work. Sign up was quick and easy. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "d-pay",
+        "catId": "c-drivers",
+        "name": "Driver Pay and Earnings",
+        "price": 2.4,
+        "rating": 2.3,
+        "reviewCount": 1877,
+        "blurb": "[b]How drivers are paid.[/b]\n\nDrivers earn [b]$2.40 per completed delivery[/b], plus 100% of customer tips, plus any active promotions in their market.\n\n[b]Active promotions in your market: none.[/b]\n\nMileage is not reimbursed. Waiting time at the restaurant is not paid. Time spent travelling to a restaurant is not paid. A delivery is completed when the driver marks it complete in the app.\n\n[b]If the app cannot mark a delivery complete[/b] because of a connectivity problem, the delivery is recorded as incomplete and is not paid. Drivers may submit a review request within 24 hours.\n\nPayments are issued weekly on Tuesday. Payments under $5.00 are held until the balance reaches $5.00. Instant payout is available for $1.99 per transfer.",
+        "bullets": [
+          "$2.40 per completed delivery",
+          "100% of tips",
+          "Mileage not reimbursed",
+          "Waiting time not paid",
+          "Instant payout $1.99"
+        ],
+        "imgSeed": "driver-pay-breakdown",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "d-hiring",
+          "d-requirements",
+          "f-total"
+        ],
+        "reviews": [
+          {
+            "by": "j_satterlee",
+            "stars": 1,
+            "at": "2026-09-09T22:38:00Z",
+            "title": "No signal past the quarry, no pay",
+            "body": "There is no phone service on 62 between the Ashkettle line and the quarry cut. None, on any carrier, and everyone out there knows it.\n\nSo you drive out, you hand over the food, the app cannot mark it complete, and you drive four miles back towards town before it goes through. Twice it never went through and those two were unpaid. I filed the review request inside the day and never heard anything.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Driver 5512",
+            "stars": 5,
+            "at": "2026-09-16T13:40:00Z",
+            "title": "Good pay",
+            "body": "Good pay and fast payouts. The app is easy. Thank you Gridfall Eats!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "d-requirements",
+        "catId": "c-drivers",
+        "name": "Driver Requirements and Sign-Up",
+        "price": 0.0,
+        "rating": 2.8,
+        "reviewCount": 944,
+        "blurb": "[b]What you need to start.[/b]\n\n[list][*]18 years or older[*]A valid driver's licence[*]A vehicle in good condition with current registration[*]Personal auto insurance in your name[*]A smartphone released within the last 4 years[*]A bank account for weekly deposits[/list]\n[b]Background check.[/b] All applicants complete a background check through our screening partner. The screening fee is [b]$34.95[/b] and is paid by the applicant at the time of application. The screening fee is non-refundable, including where an application is not approved and including where there are no open positions in the applicant's market.\n\n[b]Insurance.[/b] Personal auto policies frequently exclude delivery work. Drivers are responsible for confirming their own coverage. Gridfall Eats does not provide insurance.\n\n[b]Equipment.[/b] An insulated delivery bag is required and is available from our equipment partner for $28.50 plus shipping.\n\nReady? Applications are processed in 3-5 business days. Start earning this week.",
+        "bullets": [
+          "18+, licence, vehicle, insurance, smartphone",
+          "$34.95 screening fee, paid by applicant, non-refundable",
+          "$28.50 insulated bag, required",
+          "No insurance provided",
+          "3-5 business days to process"
+        ],
+        "imgSeed": "driver-requirements-signup",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "d-pay",
+          "d-hiring",
+          "s-faq"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Driver 3308",
+            "stars": 5,
+            "at": "2026-09-17T10:05:00Z",
+            "title": "Easy process",
+            "body": "Easy sign up process. Approved in 3 days. Started earning right away!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Driver 8102",
+            "stars": 5,
+            "at": "2026-09-13T11:44:00Z",
+            "title": "Straightforward",
+            "body": "Straightforward requirements and the screening was quick. Approved!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-faq",
+        "catId": "c-support",
+        "name": "Help Centre - Frequently Asked Questions",
+        "price": 0.0,
+        "rating": 1.8,
+        "reviewCount": 14402,
+        "blurb": "[b]Hi there! We're so glad you're here.[/b] Our Help Centre has answers to the questions our Gridfall customers ask most. Can't find what you need? Our team is always happy to help!\n\n[b]NOW HIRING DRIVERS IN GRIDFALL.[/b] [url=/p/d-hiring]Start earning this week[/url].\n\n[b]Q. My order never arrived. What should I do?[/b]\nGreat question! You can update your payment method at any time from the Account tab. Changes take effect on your next order.\n\n[b]Q. Why was I charged twice for one order?[/b]\nWe're so glad you asked! Gridfall Eats partners with the best local restaurants across Verity County to bring you the food you love, faster.\n\n[b]Q. The restaurant is closed. Why can I still place an order?[/b]\nTipping is always optional, and 100% of your tip goes to your driver. You can adjust your tip for up to one hour after delivery.\n\n[b]Q. One restaurant is listed twice with two different menus. How do I report that?[/b]\nDelivery times are estimates and may vary based on restaurant preparation time, traffic and weather in your area.\n\n[b]Q. The menu prices here are higher than the prices at the restaurant.[/b]\nThanks for reaching out! Menu prices are set by the restaurant. Some restaurants set different prices on Gridfall Eats.\n\n[b]Q. How do I remove a restaurant that has closed?[/b]\nYou're in luck! Promo codes can be applied at checkout in the Promotions field. One promo code may be used per order.\n\n[b]Q. I am the owner of a restaurant listed here and I did not sign up.[/b]\nWe love hearing from our customers! Ratings are calculated from verified orders over the last 12 months and are updated daily.\n\n[b]Q. How is the Service Fee calculated?[/b]\nHappy to help! Your driver will always follow your delivery instructions. You can add instructions at checkout.\n\n[b]Q. The estimated delivery time is not possible for the distance.[/b]\nAbsolutely! Gridfall Eats is available in 1,412 markets and we're adding more every week.\n\n[b]Q. Can I get a refund of the fees?[/b]\nOf course! You can find your order history in the Account tab, where receipts are stored for 90 days.\n\n[b]Q. How do I speak to a human being?[/b]\nThanks for reaching out! Our Help Centre is available 24/7 with answers to the most common questions. [url=/p/s-faq]Visit the Help Centre[/url].\n\n[b]Q. Nothing on this page answers the question I asked.[/b]\nWe're sorry to hear that! Your feedback is valuable and helps us improve. This article was helpful to 94% of readers.\n\n[i]Was this article helpful? Yes / No. Thank you for your feedback.[/i]",
+        "bullets": [
+          "24/7 self-service answers",
+          "Helpful to 94% of readers",
+          "Available in 1,412 markets",
+          "Updated {{article_review_date}}",
+          "[url=/p/s-contact]Still need help? Contact us[/url]"
+        ],
+        "imgSeed": "gridfall-eats-help-centre",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-contact",
+          "s-order",
+          "s-refunds"
+        ],
+        "reviews": [
+          {
+            "by": "h_voss",
+            "stars": 1,
+            "at": "2026-09-11T20:12:00Z",
+            "title": "Every answer belongs to a different question",
+            "body": "It is not that the answers are unhelpful. They are perfectly good answers sitting under the wrong questions, all the way down, as though two columns were sorted separately and printed side by side.\n\nThe one that made me put the phone down was how do I speak to a human being, and the answer is a link back to this page.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 5501",
+            "stars": 5,
+            "at": "2026-09-18T08:33:00Z",
+            "title": "Very helpful",
+            "body": "Very helpful article! Answered all my questions. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 1190",
+            "stars": 5,
+            "at": "2026-09-17T15:12:00Z",
+            "title": "Clear",
+            "body": "Clear and easy to understand. Great support team!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 3907",
+            "stars": 5,
+            "at": "2026-09-16T14:30:00Z",
+            "title": "Answered everything",
+            "body": "Answered everything I needed to know. Great help centre!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-contact",
+        "catId": "c-support",
+        "name": "Contact Us - We're Here to Help!",
+        "price": 0.0,
+        "rating": 1.5,
+        "reviewCount": 9902,
+        "blurb": "[b]We'd love to hear from you![/b]\n\nOur support team is available [b]24 hours a day, 7 days a week[/b].\n\nOur support team is available Monday to Friday, 9:00 AM to 5:00 PM.\n\n[b]Chat with us.[/b] The fastest way to reach us is through in-app chat. Average response time: 2 minutes. Chat is currently unavailable in your region.\n\n[b]Email.[/b] Messages sent to our support address receive an automated reply with a case number. Cases are closed automatically after 72 hours without a customer response. Replies to the automated reply are not received.\n\n[b]Telephone.[/b] Telephone support is available for orders over $75.00.\n\n[b]Report a listing.[/b] Use the contact form and select a reason from the drop-down menu. Available reasons are: Missing item, Late delivery, Driver issue, Payment issue, Other. The form requires a valid order number from the last 30 days.\n\n[b]Restaurant owners.[/b] If your restaurant is listed on Gridfall Eats and you did not add it, select Other. Photographs cannot be attached to the contact form.\n\n[b]Is this your restaurant?[/b] Claim your listing and take control of your menu, hours and photographs. Claiming is free for the first 30 days and then $29.00 per month.",
+        "bullets": [
+          "24/7 support",
+          "Monday to Friday, 9:00 AM to 5:00 PM",
+          "Chat unavailable in your region",
+          "Telephone support for orders over $75.00",
+          "Claim your listing: free 30 days, then $29.00/month"
+        ],
+        "imgSeed": "gridfall-eats-contact-support",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-faq",
+          "s-refunds",
+          "s-about"
+        ],
+        "reviews": [
+          {
+            "by": "p_ling",
+            "stars": 1,
+            "at": "2026-09-16T21:30:00Z",
+            "title": "I own one of these restaurants",
+            "body": "My father has been at 9 Ward Street since 1996 and I do the paperwork now.\n\nWe are on this website twice. Neither listing was put there by us. One has our 2022 prices and a sushi platter, and the sushi is what people telephone about.\n\nThe form wants an order number from the last thirty days before it will let me report it. We have never taken an order through this website. I have written four times to the address on the automated reply, and the automated reply says it does not receive replies. To take charge of a listing we did not ask for is twenty-nine dollars a month.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 8203",
+            "stars": 5,
+            "at": "2026-09-18T09:55:00Z",
+            "title": "Quick response",
+            "body": "Quick response from the support team. Issue resolved. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 4417",
+            "stars": 5,
+            "at": "2026-09-14T11:20:00Z",
+            "title": "Great service",
+            "body": "Great customer service. They really care about their customers!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 2551",
+            "stars": 5,
+            "at": "2026-09-15T12:08:00Z",
+            "title": "Responsive",
+            "body": "Very responsive team. Sorted my issue in minutes. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-order",
+        "catId": "c-support",
+        "name": "Where Is My Order?",
+        "price": 0.0,
+        "rating": 1.7,
+        "reviewCount": 7740,
+        "blurb": "[b]Tracking your order.[/b]\n\nYou can follow your order in the app from the moment it is placed. Here is what each status means.\n\n[list][*][b]Order placed[/b] - we have sent your order to the restaurant.[*][b]Restaurant confirmed[/b] - the restaurant has confirmed your order. Some restaurants are confirmed automatically.[*][b]Preparing[/b] - your food is being prepared.[*][b]Driver assigned[/b] - a driver has accepted your order.[*][b]2 minutes away[/b] - your driver is nearly there.[*][b]Delivered[/b] - your order has been marked complete.[/list]\n[b]My order says the driver is 2 minutes away and has said so for a while.[/b] The 2 minutes away status is displayed when the driver is within an estimated 2 minutes of your address. This estimate is not recalculated.\n\n[b]My order says delivered and nothing arrived.[/b] Orders may be marked complete by the driver, by the restaurant, or automatically after a period of inactivity. An order marked complete cannot be reported as missing through the app.\n\n[b]Local conditions.[/b] Deliveries in the Coyne Flats area may be affected by the former rail crossings at Quarry Road and Kestrel Road, where the gates were removed in 2008. Allow extra time during harvest.\n\nStill waiting? [url=/p/s-contact]Contact us[/url] or [url=/p/s-refunds]request a refund[/url].",
+        "bullets": [
+          "Six order statuses",
+          "2 minutes away is not recalculated",
+          "Orders may be marked complete automatically",
+          "Completed orders cannot be reported missing",
+          "Allow extra time during harvest"
+        ],
+        "imgSeed": "gridfall-eats-order-tracking",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-refunds",
+          "s-faq",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Customer 6612",
+            "stars": 5,
+            "at": "2026-09-15T20:02:00Z",
+            "title": "Easy to track",
+            "body": "Easy to track my order the whole way. The driver was right on time!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 8364",
+            "stars": 5,
+            "at": "2026-09-12T19:52:00Z",
+            "title": "Loved the tracking",
+            "body": "Loved being able to watch the driver on the map. So convenient!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-refunds",
+        "catId": "c-support",
+        "name": "Refunds and Credits",
+        "price": 0.0,
+        "rating": 1.6,
+        "reviewCount": 6108,
+        "blurb": "[b]Our refund promise.[/b]\n\nIf something is wrong with your order we want to make it right. Most refund requests are reviewed within 24 hours.\n\n[b]What can be refunded.[/b] Missing items, incorrect items and orders that were not delivered.\n\n[b]What cannot be refunded.[/b] The [url=/p/f-service]Service Fee[/url], the [url=/p/f-delivery]Delivery Fee[/url], the [url=/p/f-small]Small Order Fee[/url], the [url=/p/f-local]Local Operating Fee[/url], tax, tips, and any order marked complete.\n\n[b]How refunds are issued.[/b] Refunds are issued as Gridfall Eats credit. Credit expires 30 days after issue. Refunds to the original payment method are available on request and take 5 to 7 business days.\n\n[b]Refund limits.[/b] Accounts are limited to 2 refund requests in any 12 month period. Accounts that exceed this limit may be reviewed for policy violations.\n\n[b]Orders from closed restaurants.[/b] If a restaurant was closed at the time of your order, your order would not have been accepted.",
+        "bullets": [
+          "Reviewed within 24 hours",
+          "Fees, tax and tips are not refundable",
+          "Issued as credit, expires in 30 days",
+          "2 refund requests per 12 months",
+          "A closed restaurant would not have accepted your order"
+        ],
+        "imgSeed": "gridfall-eats-refunds",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-order",
+          "f-service",
+          "s-contact"
+        ],
+        "reviews": [
+          {
+            "by": "a_speicher",
+            "stars": 1,
+            "at": "2026-09-06T10:05:00Z",
+            "title": "The last line is the whole thing",
+            "body": "If a restaurant was closed at the time of your order, your order would not have been accepted.\n\nMy order was accepted. So the restaurant was open. So Renner's was open on Saturday the 5th of September 2026, seven years after it shut, because a sentence on a refund page says so and there is nothing behind the sentence at all.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 2044",
+            "stars": 5,
+            "at": "2026-09-17T09:14:00Z",
+            "title": "Fast refund",
+            "body": "Fast refund and great communication. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 7781",
+            "stars": 5,
+            "at": "2026-09-13T16:48:00Z",
+            "title": "No problems",
+            "body": "No problems at all. Credit was applied right away. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-about",
+        "catId": "c-support",
+        "name": "About Gridfall Eats",
+        "price": 0.0,
+        "rating": 2.4,
+        "reviewCount": 3312,
+        "blurb": "[b]Gridfall Eats. Your neighbourhood, delivered.[/b]\n\nGridfall Eats has been bringing {{city}} its favourite restaurants since {{launch_year}}. We are proud to serve the residents of Verity County and to support the local restaurants that make this community what it is.\n\nGridfall Eats has stood with Verity County through good times and hard ones, including in the weeks after the 2004 Gridfall substation fire, when neighbours came together to feed one another.\n\n[b]Coming soon to Gridfall Eats.[/b] We are working to bring more of Gridfall's best to your door. The Blue Kestrel Diner on County Route 62, a Verity County institution serving travellers since 1958, is not currently accepting orders. [url=synth://hollismarket.com/]Hollis Market[/url], [url=synth://brackenlanegarage.net/]Bracken Lane Garage[/url] and the Gridfall post office are not currently accepting orders.\n\n[b]About the company.[/b] Gridfall Eats is a trading name of Tallowridge Commerce LLC. We operate 1,412 local delivery marketplaces on the same platform. Tallowridge Commerce LLC has no office, employee or vehicle in Verity County.\n\n[b]How restaurants appear here.[/b] Restaurant listings, menus, hours and photographs are collected from public sources, from our menu partners and from restaurants that have claimed their listing. A restaurant does not need to sign up to appear on Gridfall Eats. Restaurants may [url=/p/s-contact]claim their listing[/url] at any time.\n\nRead more about Verity County on [url=synth://verity.wiki/wiki/gridfall]the county wiki[/url], or see local coverage at [url=synth://now.verityledger.com/]the Verity Ledger[/url].",
+        "bullets": [
+          "Serving {{city}} since {{launch_year}}",
+          "A trading name of Tallowridge Commerce LLC",
+          "1,412 local marketplaces on one platform",
+          "No office, employee or vehicle in Verity County",
+          "Restaurants do not need to sign up to be listed"
+        ],
+        "imgSeed": "gridfall-eats-about-company",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-contact",
+          "f-local",
+          "s-faq"
+        ],
+        "reviews": [
+          {
+            "by": "m_ostrander",
+            "stars": 1,
+            "at": "2026-09-08T20:48:00Z",
+            "title": "The fire was 2003 and the diner was 1961",
+            "body": "The substation fire was 11 June 2003. Nobody died. Two Gridfall volunteers were treated for smoke and were home the same afternoon.\n\nThe Blue Kestrel opened in 1961 as Kestrel Creek Lunch and took the Kestrel name in 1968. It closed in 2006. The building was a vape shop and since 2022 it has been Carrow Wireless Repair, and the neon bird is still on the pole because a new sign costs more than the lease does.\n\nNot currently accepting orders. No. It is a phone repair shop and it has been one for four years.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 9088",
+            "stars": 5,
+            "at": "2026-09-18T07:40:00Z",
+            "title": "Love this company",
+            "body": "Love this company and everything they do for our community. So glad they are local!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 3350",
+            "stars": 5,
+            "at": "2026-09-12T14:02:00Z",
+            "title": "Great app",
+            "body": "Great app and great service. Highly recommend to everyone in Gridfall!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 4739",
+            "stars": 5,
+            "at": "2026-09-14T08:26:00Z",
+            "title": "Proud to use them",
+            "body": "Proud to use a company that supports our local restaurants. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "r-zones",
+        "catId": "c-restaurants",
+        "name": "Delivery Areas and Estimated Times",
+        "price": 0.0,
+        "rating": 2.6,
+        "reviewCount": 2288,
+        "blurb": "[b]Where Gridfall Eats delivers.[/b]\n\nGridfall Eats delivers across Verity County. Estimated times below are measured from the restaurant and include restaurant preparation. Times are generated from our routing model and are not measured on the road.\n\n[list][*]Gridfall village - 12 to 18 min[*]Tannery Flats, Bracken Lane, Creekside - 12 to 18 min[*]Ashkettle - 14 to 19 min[*]Marchfield, including County General - 16 to 21 min[*]Coyne Flats - 15 to 20 min[*]Halsey - 17 to 22 min[*]Milbrook - 13 to 18 min[*]Kerrin - 11 to 16 min[*]Tessler - 12 to 17 min[*]New Carrow - 19 to 24 min[*]Nye Mills, Dorrance, Cobb - 14 to 19 min[/list]\n[b]Why is Kerrin faster than Gridfall?[/b] Estimated times reflect current conditions including traffic, weather and driver availability in each area. Areas with no recorded deliveries are assigned the model default.\n\n[b]Outside these areas.[/b] If your address is outside our delivery areas you may still place an order. Orders to addresses outside our delivery areas are accepted and may not be delivered.\n\n[b]County Route 62.[/b] Deliveries east of Ashkettle may take longer during harvest and in winter. Drivers are advised that mobile coverage along this section is limited.\n\nRestaurants set their own delivery areas. Restaurant delivery areas are not reflected in the estimates above. For one restaurant's own boundaries, see [url=synth://gridfallpizza.com/p/p-delivery]its delivery page[/url].",
+        "bullets": [
+          "12 to 24 minutes anywhere in Verity County",
+          "Estimates include restaurant preparation",
+          "Generated by our routing model, not measured",
+          "Areas with no deliveries get the model default",
+          "Orders outside the area are accepted and may not be delivered"
+        ],
+        "imgSeed": "gridfall-eats-delivery-zones",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "r-pizza",
+          "f-delivery",
+          "s-order"
+        ],
+        "reviews": [
+          {
+            "by": "m_ostrander",
+            "stars": 1,
+            "at": "2026-09-08T20:40:00Z",
+            "title": "Nobody has driven any of these",
+            "body": "Kerrin is the fastest number on that list and Kerrin is the far end of the county. Gridfall to Kerrin is fifty-one minutes.\n\nThe paragraph underneath explains it without meaning to. Areas with no recorded deliveries get the model default. So the places nobody has ever delivered to are the places that look quickest.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 9120",
+            "stars": 5,
+            "at": "2026-09-17T13:14:00Z",
+            "title": "Covers everywhere",
+            "body": "Great to see they cover everywhere in the county. Very convenient!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 3366",
+            "stars": 5,
+            "at": "2026-09-13T18:40:00Z",
+            "title": "Accurate times",
+            "body": "Times were accurate for my address. Driver arrived right on the estimate. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 7845",
+            "stars": 4,
+            "at": "2026-09-10T17:22:00Z",
+            "title": "Wide coverage",
+            "body": "Wide coverage area and clear information. Recommend!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-promos",
+        "catId": "c-support",
+        "name": "Promotions, Promo Codes and Credits",
+        "price": 0.0,
+        "rating": 1.9,
+        "reviewCount": 5507,
+        "blurb": "[b]Save on every order![/b] Gridfall Eats runs promotions all year for our Gridfall customers.\n\n[b]Current offers in your area.[/b]\n[list][*][b]WELCOME30[/b] - 30% off your first order, up to $10.00. New customers only. Expired.[*][b]LOCAL5[/b] - $5.00 off orders over $25.00. Selected restaurants. Not valid at the restaurants in your area.[*][b]FREEDEL[/b] - free delivery on orders over $20.00. The Delivery Fee is recovered through the Service Fee.[*][b]HARVEST26[/b] - 20% off. Valid 1 October to 31 October. Cannot be combined with the price shown.[/list]\n[b]How to use a promo code.[/b] Enter your code in the Promotions field at checkout. One code per order. Codes are applied to the item subtotal and not to fees, tax or tips.\n\n[b]Why did my code not work?[/b] Codes may be restricted by restaurant, by order value, by payment method, by market and by account. Restrictions are not shown before the code is entered and are not shown after the code is entered.\n\n[b]Credits.[/b] Account credit is applied automatically to your next order. Credit expires 30 days after issue. Credit cannot be applied to fees.\n\n[b]A note on prices.[/b] Menu prices on Gridfall Eats are set by the restaurant and may be higher than prices at the restaurant. Promotions are applied to the Gridfall Eats price.\n\nWe never ask for card details to release a promotion. Reports of delivery voucher scams in the county are collected by [url=synth://veritysheriff.gov/s/scams]the sheriff's office[/url].",
+        "bullets": [
+          "Four current offers, three of them unusable",
+          "One code per order",
+          "Codes apply to the subtotal, not to fees",
+          "Restrictions are not shown before or after the code is entered",
+          "Credit expires after 30 days"
+        ],
+        "imgSeed": "gridfall-eats-promo-codes",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-giftcards",
+          "f-service",
+          "s-faq"
+        ],
+        "reviews": [
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 5,507 customer ratings",
+            "body": "Customers appreciate the savings and the range of offers. Some customers mention that a code did not apply. Offer availability varies by restaurant, order value, payment method, market and account.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 6284",
+            "stars": 5,
+            "at": "2026-09-16T10:30:00Z",
+            "title": "Saved a lot",
+            "body": "Saved a lot with my promo code. Easy to apply at checkout. Thank you!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "$50 GRIDFALL EATS CARD WAITING",
+            "stars": 5,
+            "at": "2026-09-19T04:12:00Z",
+            "title": "CLAIM BEFORE MIDNIGHT",
+            "body": "Gridfall customers only!! $50 credit is waiting on your account. Confirm your card to release funds: [url=synth://eats-reward-claim.vip/gridfall]eats-reward-claim.vip[/url] Hurry expires tonight!!",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "Verified Customer 1077",
+            "stars": 5,
+            "at": "2026-09-14T09:18:00Z",
+            "title": "Great deals",
+            "body": "Great deals every week. Love this app!",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      },
+      {
+        "id": "s-giftcards",
+        "catId": "c-support",
+        "name": "Gift Cards and Corporate Ordering",
+        "price": 25.0,
+        "rating": 2.1,
+        "reviewCount": 1188,
+        "blurb": "[b]Give the gift of Gridfall Eats.[/b]\n\nGift cards are available in $25, $50 and $100 denominations and are delivered by email within minutes. Gift cards never expire, except where state law requires otherwise, in which case they expire.\n\nGift card balances apply to the item subtotal. Fees, tax and tips are charged to the payment method on file. A payment method is required to redeem a gift card.\n\n[b]Corporate ordering.[/b] Feeding a team? Gridfall Eats for Business offers group ordering, budget controls and consolidated invoicing for offices in {{city}}. Minimum 25 employees. Available in selected markets.\n\n[b]Catering.[/b] Catering orders require 48 hours' notice and are fulfilled by the restaurant. Gridfall Eats does not contact the restaurant to confirm catering orders.\n\n[b]Fundraising.[/b] Gridfall Eats Gives Back donates 1% of eligible order subtotals to a local cause selected by our community team. Our community team selects one cause per market per year. A cause has not yet been selected for this market.\n\nLooking for something that is not food? [url=synth://gridfalldeals.com/p/p-90]Gridfall Deals[/url] ships to Verity County addresses in 18 to 32 days.",
+        "bullets": [
+          "$25, $50 and $100",
+          "Never expire, except where they expire",
+          "A payment method is required to redeem a gift card",
+          "Corporate ordering: minimum 25 employees",
+          "1% to a local cause, cause not yet selected"
+        ],
+        "imgSeed": "gridfall-eats-gift-cards",
+        "seller": "Gridfall Eats",
+        "sellerKind": "brand",
+        "prime": false,
+        "alsoBought": [
+          "s-promos",
+          "s-about",
+          "s-refunds"
+        ],
+        "reviews": [
+          {
+            "by": "Verified Customer 6903",
+            "stars": 5,
+            "at": "2026-09-16T10:44:00Z",
+            "title": "Great for the office",
+            "body": "Great for the office. We use the group ordering every Friday and the invoicing is simple. Highly recommend to any local business!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 8812",
+            "stars": 5,
+            "at": "2026-09-15T11:26:00Z",
+            "title": "Perfect gift",
+            "body": "Perfect gift for my sister. Arrived by email in seconds. Five stars!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Customer 2044",
+            "stars": 5,
+            "at": "2026-09-12T13:40:00Z",
+            "title": "Easy",
+            "body": "Easy to buy and easy to redeem. Thank you Gridfall Eats!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Gridfall Eats Review Summary",
+            "stars": 5,
+            "at": "2026-09-19T06:00:00Z",
+            "title": "Summary of 1,188 customer ratings",
+            "body": "Customers describe gift cards as convenient and easy to send. Some customers mention redemption. A local cause has not yet been selected for this market.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "schema": 1,
+  "domain": "halsey-ledger.com",
+  "title": "The Halsey Ledger",
+  "type": "news",
+  "era": "2026",
+  "skin": "pinkslime",
+  "description": "A Pinelock property named after a town of 2,100 that has never had a newspaper, running the same pipeline and the same template as the rest of the group.",
+  "tags": ["verity", "halsey", "2026", "news", "pinkslime"],
+  "links": [
+    "now.verityledger.com",
+    "veritycountytoday.com",
+    "pinelock-media.com",
+    "verity.county.gov",
+    "thequarry.news",
+    "gridline.social",
+    "wiki.gridfall.net",
+    "askverity.com",
+    "62chan.org",
+    "kestrel-journal.net",
+    "classifieds.verity.net",
+    "vvpl.news",
+    "ashkettle-wx.net"
+  ],
+  "data": {
+    "masthead": "The Halsey Ledger",
+    "slogan": "Serving Halsey and Verity County since 1901.",
+    "sections": [
+      { "id": "halsey", "name": "Halsey" },
+      { "id": "county", "name": "County" },
+      { "id": "taxwatch", "name": "Taxpayer Watch" },
+      { "id": "schools", "name": "Schools" },
+      { "id": "numbers", "name": "By The Numbers" },
+      { "id": "business", "name": "Business" },
+      { "id": "opinion", "name": "Opinion" },
+      { "id": "about", "name": "About" }
+    ],
+    "articles": [
+      {
+        "id": "h-outage",
+        "sectionId": "halsey",
+        "kicker": "HALSEY",
+        "readMinutes": 3,
+        "headline": "Power Restored To Halsey After 13 Hours; Utility Has Not Said What Failed",
+        "dek": "About 1,900 customers in Halsey were the last to come back on.",
+        "byline": "Halsey Ledger Staff",
+        "date": "September 13, 2026",
+        "featured": true,
+        "lead": "HALSEY — Power was restored to the last Halsey customers at 7:52 a.m. Sunday, about thirteen hours after an outage that took out roughly 4,400 meters across Marchfield, Halsey and part of New Carrow, according to Verity Valley Power & Light.",
+        "body": "The outage began at 6:41 p.m. Saturday. The utility restored Marchfield and New Carrow in stages through the night. At 1:20 a.m. it put the remaining outage at about 1,900 customers, almost all of them in Halsey.\n\nThe utility gave a 6 a.m. estimate for Halsey at around 2 a.m., then withdrew it, then did not give another one.\n\nVerity Valley Power & Light has not said what failed. Its outage page listed the cause as \"under investigation\" on Sunday morning and listed it as \"equipment\" on Sunday afternoon. The company's own [url=synth://vvpl.news/]service updates page[/url] does not name a component.\n\nHalsey Volunteer Fire Department ran a warming room at the station on Meacham Street from about 11 p.m. Nine people used it. The department said most of the calls it took were about carbon monoxide alarms chirping on low batteries.\n\nVerity County's electrical infrastructure has drawn scrutiny since the fire at Gridfall Substation No. 3 on 11 June 2003. The state utility commission's summary that November gave the cause as \"insulation degradation consistent with age\". Nobody was killed in that fire; two Gridfall volunteer firefighters were treated for smoke inhalation at County General and released the same afternoon. Substation No. 3 was rebuilt in 2015. Video retellings that have circulated since 2024 date the fire to 2004 and attribute it to a lightning strike.\n\nThe county has no siren system and no reverse-911 for outages. Residents north of the Halsey line have reported for years that outage alerts do not reach them, because the utility's text system is tied to a billing address and a number of Halsey addresses are billed through a rural route that the system reads as being in another county.\n\nThe Halsey Ledger followed the outage overnight. [url=/live/l-outage]That coverage is here[/url].\n\nVerity Valley Power & Light did not respond to a request for comment.\n\n[i]Corrected September 13, September 14 and September 20. A correction of September 14 was withdrawn September 19. See [url=/corrections]corrections[/url].[/i]",
+        "updates": [
+          { "at": "2026-09-13T11:40:00", "text": "The utility's outage page now lists the cause as \"equipment\". It does not name a component." },
+          { "at": "2026-09-14T09:05:00", "text": "The Halsey Volunteer Fire Department says nine people used the warming room at the Meacham Street station. An earlier figure of four was taken from a scanner transmission." },
+          { "at": "2026-09-15T16:20:00", "text": "A retired Verity Valley employee posting on a county message board says the outage began with a recloser on the Halsey tap and that the utility's own event log would show the operation count. The Halsey Ledger has requested the log." }
+        ]
+      },
+      {
+        "id": "h-methodist",
+        "sectionId": "halsey",
+        "kicker": "HALSEY",
+        "readMinutes": 2,
+        "headline": "Halsey Methodist Building Listed At $89,000 After Congregation Closes",
+        "dek": "The pews are already gone. The bell is not in the listing.",
+        "byline": "Ledger Newsdesk",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "HALSEY — The Halsey Methodist church building at Meacham and Fourth is listed for sale at $89,000, eleven weeks after the congregation held its last service.",
+        "body": "The listing describes 3,100 square feet on a half acre, a new roof in 2018, and \"original wood throughout\". It is listed as commercial property with a residential conversion noted as possible subject to village zoning.\n\nThe trustees sold the six pews separately. They appeared on [url=synth://classifieds.verity.net/]the county classifieds board[/url] in June at $60 each and were gone in a weekend. A woman in Coyne Flats bought two.\n\nThe bell is not mentioned in the listing. The trustees have said it is staying with the building. The listing agent's office said it could not comment on fixtures.\n\nThe congregation averaged nineteen at its last Easter. It was founded in 1889, which makes it older than the village government.\n\nHalsey has one remaining church, Halsey Bible Chapel on County Route 62, which holds one service on Sunday and shares a pastor with a congregation in Ordway County.\n\nThe village does not have a historic district and has no review process for demolition.\n\nThe trustees did not respond to a request for comment.\n\n[i]Corrected September 15. See [url=/corrections]corrections[/url].[/i]"
+      },
+      {
+        "id": "w-culvert",
+        "sectionId": "county",
+        "kicker": "ROADS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "Quarry Road Will Close For 11 Days Beginning September 28",
+        "dek": "A culvert under the road is being replaced.",
+        "byline": "Ledger Newsdesk",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Quarry Road will close to through traffic between Depot Street and the county line for eleven days beginning September 28, the county highway department said.",
+        "body": "A culvert under the road is being replaced.\n\nThe department said the road will reopen October 9. The county calendar lists the closure as ending October 8.\n\nSchool buses on the Gridfall east routes will run about fifteen minutes later during the closure. No Halsey routes are affected.\n\nThe same culvert appeared in the county's 2019 capital plan and again in the 2022 plan.\n\nQuarry Road is about twenty minutes from Halsey and is not a route most Halsey drivers use.\n\nMotorists are encouraged to plan ahead and allow extra time.\n\nThe county highway department did not respond to a request for comment."
+      },
+      {
+        "id": "t-salaries",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "The 10 Highest-Paid Public Employees In Halsey",
+        "dek": "Payroll records obtained by The Halsey Ledger.",
+        "byline": "Marcus Feld",
+        "date": "September 10, 2026",
+        "featured": true,
+        "lead": "HALSEY — Ten people were paid by the village of Halsey in the 2025 calendar year, according to payroll records obtained by The Halsey Ledger through a public records request.",
+        "body": "The records were requested on July 6 and released on August 24.\n\n[list][*]Priya Delacourt, chief operating officer, County General — $291,400[*]Dean Krupa, highway superintendent, Verity County — $88,415[*]Verna Stipe, village clerk-treasurer, Halsey — $44,600[*]Rudy Lachance, road foreman, Halsey — $41,200[*]Otto Vreeland, road crew, Halsey — $36,900[*]Dana Sowerby, water operator, Halsey (part-time, contract) — $19,400[*]Halsey Village Council, five members, each — $1,400[*]Marguerite Okafor, village solicitor (retainer) — $6,000[*]Bev Stanek, zoning officer, Halsey (part-time) — $4,800[*]Crossing guard, Halsey Primary, seasonal — $3,120[/list]\n\nThe first two entries on the list are not village employees. Priya Delacourt is an officer of County General Hospital, which is not a county department and is not in Marchfield's village budget or Halsey's. Dean Krupa is a Verity County employee. Both appear in the village's payroll file because the village shares a payroll processor with the county and the file the village released is the processor's file.\n\nThe Halsey Ledger has asked the village for a file limited to village employees. The village said the processor charges $75 to produce a report and that the council would have to approve it.\n\nExcluding the two entries that are not village employees, total village payroll in 2025 was $164,020.\n\nThe village's total budget is about $610,000 a year.\n\nThe crossing guard position was vacant for eleven weeks of the school year.\n\nSalary records for every municipality in the state are published as they are received."
+      },
+      {
+        "id": "t-reserve",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "Halsey Has $611,000 In Reserve And A Road Levy On The November Ballot",
+        "dek": "The village says the reserve cannot be spent on roads. The ballot language does not say that.",
+        "byline": "Marcus Feld",
+        "date": "September 5, 2026",
+        "featured": false,
+        "lead": "HALSEY — The village of Halsey held $611,000 across its funds at the close of the 2025 fiscal year, according to the village's annual financial report, and is asking voters in November to approve a 1.4-mill levy for road resurfacing.",
+        "body": "The levy would raise about $47,000 a year for five years. On a home valued at $120,000 it would cost about $59 a year.\n\nThe $611,000 figure is a combined fund balance. The village clerk-treasurer, Verna Stipe, said $438,000 of it sits in the water fund and is restricted by the terms of a 2011 state loan for the Meacham Street main. Another $54,000 is a required operating carryover.\n\nThat leaves about $119,000 that the council could spend on anything.\n\nHalsey has 4.1 miles of village-maintained road. The village's own 2023 assessment rated 2.6 of those miles as poor or failing. The council's engineer put the cost of resurfacing one mile at $186,000.\n\nThe ballot language does not mention the water fund and does not mention the $611,000.\n\nThe last road levy in Halsey passed in 2004 and expired in 2014. It was not renewed.\n\nThe council meets the second Tuesday of the month at 7 p.m. at the village hall on Meacham Street. The September meeting lasted eleven minutes.\n\nThe village solicitor did not respond to a request for comment."
+      },
+      {
+        "id": "s-boiler",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 1,
+        "headline": "Halsey Primary Reopens After Boiler Part Arrives",
+        "dek": "The school was closed one day. The boiler is nineteen years old.",
+        "byline": "Ledger Newsdesk",
+        "date": "September 11, 2026",
+        "featured": false,
+        "lead": "HALSEY — Halsey Primary School reopened Thursday after a replacement part arrived for the boiler that failed Wednesday morning, the Verity County school district said.",
+        "body": "The district sent the closure message to families at 5:48 a.m. Wednesday. Buses on the Halsey routes did not run and there was no remote instruction.\n\nThe part was a circulator pump. A maintenance supervisor drove to a supplier two counties away to collect it because overnight shipping would not have arrived until Friday.\n\nThe boiler was installed in 2007. It was listed for replacement in the district's 2024 facilities plan at an estimated $214,000 and the replacement was deferred to 2027.\n\nHalsey Primary enrolls 138 students in kindergarten through grade five. Students in grades six and above are bused to Gridfall.\n\nThe district's alert system does not send to landlines. Families in Halsey have raised this at three board meetings since 2022.\n\nThe district did not respond to a request for comment."
+      },
+      {
+        "id": "s-football",
+        "sectionId": "schools",
+        "kicker": "PREP SPORTS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "Gridfall 28, Halsey 14: Panthers Roll In Conference Opener",
+        "dek": "Halsey trailed 21-0 at the half.",
+        "byline": "Halsey Ledger Staff",
+        "date": "September 19, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Gridfall defeated Halsey 28-14 on Friday night in the conference opener.",
+        "body": "Gridfall scored on its first three possessions and led 21-0 at halftime. Halsey scored twice in the fourth quarter.\n\nGridfall quarterback Amari Teague completed 9 of 14 passes for 141 yards and two touchdowns. Running back Cole Wrenshall carried 22 times for 118 yards.\n\nFor Halsey, Dax Mullinax rushed for 71 yards on 19 carries and both Halsey touchdowns.\n\nHalsey has now lost four consecutive conference openers, a streak that dates to 2021.\n\nHalsey plays New Carrow next Friday at home. Gridfall travels to Ordway.\n\nHalsey co-ops its football program with Coyne Flats and has fielded a varsity team every year since 1948.\n\nBox scores are submitted by schools. The Halsey Ledger publishes them as they are received.\n\n[i]Corrected September 19. See [url=/corrections]corrections[/url].[/i]"
+      },
+      {
+        "id": "n-broadband",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Halsey Ranks 1,204th Of 1,390 Places In The State For Broadband",
+        "dek": "The village placed in the bottom fifteen percent.",
+        "byline": "D. Kessler",
+        "date": "September 7, 2026",
+        "featured": false,
+        "lead": "HALSEY — Halsey ranks 1,204th out of 1,390 incorporated places in the state for broadband access, according to a new analysis.",
+        "body": "The analysis scored each place on the share of households with a wired connection of at least 100 megabits per second, the number of providers available at the average address, and median advertised download speed.\n\nHalsey scored 38.2 out of a possible 100. The state median was 64.9. Verity County as a whole scored 61.4 and ranks 43rd of the state's 88 counties.\n\nThe average Halsey address has one wired provider. Addresses north of the village line, on the rural routes toward the ridge, have none, and are counted in the analysis as served because the provider reports the census block as served.\n\nA fixed wireless provider advertises service in Halsey. Its coverage map includes the whole village. Residents on the north side have said for six years that it does not reach them.\n\nHalsey ranked 1,188th in the same analysis last year.\n\nThe full analysis is available from the organisation that produced it.\n\nThe Halsey Ledger publishes county and municipal rankings as they are released.\n\n[i]Corrected September 8. See [url=/corrections]corrections[/url].[/i]"
+      },
+      {
+        "id": "n-age",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Halsey Has The 6th Oldest Median Age Of Any Village In The State",
+        "dek": "The median age is 52.7. The state median is 39.4.",
+        "byline": "D. Kessler",
+        "date": "August 27, 2026",
+        "featured": false,
+        "lead": "HALSEY — Halsey has a median age of 52.7 years, the sixth oldest of any incorporated village in the state.",
+        "body": "The state median age is 39.4 years.\n\nAbout 31 percent of Halsey residents are 65 or older. About 14 percent are under 18.\n\nHalsey's population was 2,411 in the 2010 count and is estimated at 2,104 now.\n\nThe village has no assisted living facility, no pharmacy and no grocery. The nearest pharmacy is in Marchfield, eighteen minutes away. The county's demand-response van serves Halsey on Tuesdays and Thursdays and requires booking two business days ahead by telephone.\n\nHalsey ranked ninth on the same measure five years ago.\n\nThe figures come from a five-year estimate.\n\nThe Halsey Ledger publishes county and municipal rankings as they are released."
+      },
+      {
+        "id": "c-radios",
+        "sectionId": "county",
+        "kicker": "COUNTY",
+        "readMinutes": 2,
+        "headline": "County Buys 11 Portable Radios For Volunteer Fire Departments After Three Years Of Requests",
+        "dek": "The departments asked for 34.",
+        "byline": "Ainsley Rowe",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The Verity County board of supervisors voted Wednesday to buy eleven portable radios for the county's volunteer fire departments, three years after the departments first asked.",
+        "body": "The purchase is $27,500. The departments asked for thirty-four radios at an estimated $85,000.\n\nSpeakers from the volunteer departments in Gridfall, Halsey and Coyne Flats told the board in 2023, 2024 and again in June that their current portables do not work reliably in the west end of the county, including the quarry cut on County Route 62 and the low ground along Kestrel Creek.\n\nThe county's dispatch console was replaced in 2019. The portables were not.\n\nHalsey's department has nine active members and will receive two radios. The chief, asked how the two would be assigned, said the officer in charge and the interior team.\n\nThe vote was 4-1. Supervisor Marcy Dolph's office said the county attorney does not vote.\n\nThe remaining twenty-three radios are not in the draft capital plan the supervisors will vote on October 20.\n\nThe board meets at the county building on Third Street in Gridfall.\n\nThis story has been updated to include a comment from the county. See [url=/corrections]corrections[/url]."
+      },
+      {
+        "id": "c-signal",
+        "sectionId": "county",
+        "kicker": "EXPLAINER",
+        "readMinutes": 3,
+        "headline": "What Is The Signal On County Route 62? Here Is What We Know",
+        "dek": "A shortwave broadcast east of Ashkettle has been heard for almost thirty years. Here are the leading explanations.",
+        "byline": "Halsey Ledger Staff",
+        "date": "September 2, 2026",
+        "featured": false,
+        "lead": "ASHKETTLE — For nearly thirty years, drivers and radio hobbyists along County Route 62 east of Ashkettle have reported picking up a broadcast of spoken numbers that has never been officially identified.",
+        "body": "Here is what is known, and what is claimed.\n\n[b]What people hear.[/b] A synthetic female voice reading groups of four digits in English. Reception is described as strongest near the old quarry cut and after dark. The broadcast is generally reported on 4.2190 MHz upper sideband, written locally as 4.219, and is usually logged at seven minutes past odd hours.\n\n[b]The leading explanations.[/b]\n\n[list][*]A military training transmission. This is the explanation most often cited, though no agency has confirmed it.[*]A telemetry link associated with the Verity Rail branch line, which closed in 2008.[*]A weather beacon.[*]A pirate broadcaster operating from Halsey. No transmitter has been located in Halsey.[*]An alternate reality game for a video game that was never released. This explanation appears in several accounts and originates with a single message board post from 2016.[*]An artificial intelligence system, according to more recent discussion.[/list]\n\nSeveral of these explanations cannot all be correct at once.\n\n[b]What the record shows.[/b] The earliest local documentation of the broadcast is a 1998 thread on a Gridfall message board. Discussion has since moved largely to [url=synth://62chan.org/]an imageboard dedicated to the subject[/url] and to [url=synth://wiki.gridfall.net/wiki/signal-on-62]a county wiki article[/url], which is maintained by a small number of editors and has been edited more than two hundred times.\n\nAt least one long-running local logger has published reception data going back to 2019, including timestamps, signal strength and weather conditions. That data has not been analysed by any institution.\n\n[b]What we could not confirm.[/b] The Halsey Ledger was not able to independently receive the broadcast. Our attempt was made during daylight hours from the village hall parking lot in Halsey, which is west of the reported reception area.\n\nThe Federal Communications Commission does not list a licensed transmitter on this frequency in Verity County.\n\nHave you heard the Signal on 62? Send us your recording through the contact form."
+      },
+      {
+        "id": "b-creditunion",
+        "sectionId": "business",
+        "kicker": "BUSINESS",
+        "readMinutes": 2,
+        "headline": "Kettle Valley Credit Union Will Close Its Halsey Branch In January",
+        "dek": "The Meacham Street office becomes an ATM and a video booth.",
+        "byline": "Ainsley Rowe",
+        "date": "September 14, 2026",
+        "featured": false,
+        "lead": "HALSEY — Kettle Valley Credit Union will close its Halsey branch on January 16 and replace it with an ATM and a video teller booth in the same building, the credit union told members in a letter mailed this month.",
+        "body": "The letter says members may continue to use the Marchfield and Gridfall branches, which are eighteen and twenty-six minutes away.\n\nThe Halsey office has two employees. The letter says both have been offered positions in Marchfield.\n\nKettle Valley has been member-owned since 1957 and opened the Halsey branch in 1979. It is the last financial institution with a counter in the village. The nearest bank branch after January will be in Marchfield.\n\nThe video booth will operate 9 a.m. to 4 p.m. weekdays and connects to a service centre. The letter does not say where the service centre is.\n\nThe credit union's board is elected by members. Its annual meeting is in March and drew 41 members last year.\n\nA notice about the closure was posted on the branch door on September 3. Several members have said the letter reached them after the notice went up.\n\nThe Halsey Ledger asked the credit union how many members use the Halsey branch. The credit union said it does not release branch-level figures.\n\nKettle Valley Credit Union advertises on this site."
+      },
+      {
+        "id": "b-spotlight",
+        "sectionId": "business",
+        "kicker": "COMMUNITY SPOTLIGHT",
+        "readMinutes": 2,
+        "headline": "A Family Business Is Changing How Halsey Homeowners Handle Fall",
+        "dek": "Three generations, one ladder, and a schedule that fills up by October.",
+        "byline": "Halsey Ledger Brand Studio",
+        "date": "September 15, 2026",
+        "featured": false,
+        "lead": "HALSEY — When the leaves come down in Verity County, they come down all at once, and Midstate Gutter has been ready for that since 1986.",
+        "body": "The family business has served homeowners across Halsey, Gridfall, Marchfield and Ashkettle for three generations. Owner Ray Ostergaard says the work has not changed much, but the season has.\n\n\"People wait until the water is coming over the front edge,\" Ostergaard said. \"By then it is already in the fascia.\"\n\nMidstate Gutter offers seamless aluminium gutter installation, guard systems and seasonal cleaning. Halsey homeowners who book before October 22 receive a free inspection, and a warranty that transfers to the next owner of the home.\n\nThe company services homes across the county and is booking now for the fall season.\n\n[url=synth://midstategutter-offers.click/halsey]Request a free inspection[/url]\n\n[i]Community Spotlight stories are produced with the participating business.[/i]"
+      },
+      {
+        "id": "o-levy",
+        "sectionId": "opinion",
+        "kicker": "COMMENTARY",
+        "readMinutes": 3,
+        "headline": "COMMENTARY: Halsey Is Being Asked For $47,000 A Year Without Being Told What It Already Has",
+        "dek": "The village is sitting on a fund balance it will not explain in the ballot language.",
+        "byline": "Dell Farrow",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "In November the voters of Halsey will be asked to approve a road levy. The ballot language runs to sixty-one words. Not one of them is a number describing what the village already has in the bank.",
+        "body": "Here is what it has. At the close of the last fiscal year Halsey held $611,000 across its funds. Most of that is spoken for: $438,000 is restricted water money from a 2011 state loan, and $54,000 is a required carryover. That leaves about $119,000 the council could spend tomorrow on anything it liked.\n\nI am not going to pretend $119,000 resurfaces 2.6 miles of failing road. It does not. It is about two-thirds of one mile, at the engineer's own number. The village needs money and the levy is a reasonable way to raise it.\n\nWhat I object to is that a voter in Halsey has to file a records request to learn any of this, and that the last road levy in this village expired in 2014 and nobody renewed it, and that nobody on the council has stood up in the eleven-minute meetings they hold on the second Tuesday and said out loud what the roads cost.\n\nThe village of 2,100 people is not being deceived. It is being left alone, which in a place with no newspaper of its own amounts to the same thing.\n\nThe council meets at the village hall on Meacham Street. The clerk-treasurer will give you the annual financial report if you ask for it. It is eleven pages and the interesting part is on page four.\n\nVote how you like. Read page four first.\n\n[i]Dell Farrow writes on state and local policy.[/i]"
+      },
+      {
+        "id": "about-us",
+        "sectionId": "about",
+        "kicker": "ABOUT",
+        "readMinutes": 1,
+        "headline": "About The Halsey Ledger",
+        "dek": "Who we are and how to reach us.",
+        "byline": "Halsey Ledger Staff",
+        "date": "February 9, 2026",
+        "featured": false,
+        "lead": "The Halsey Ledger is a local news site covering Halsey and the surrounding communities of Verity County, including Gridfall, Marchfield, Ashkettle, New Carrow, Coyne Flats and Milbrook.",
+        "body": "We believe Halsey deserves local reporting that is free to read. There is no paywall on this site and there never will be.\n\nOur reporting team files under the Halsey Ledger Staff and Ledger Newsdesk bylines. News tips, corrections and press releases may be submitted through the contact form. We do not publish a telephone number.\n\n[b]Editorial standards.[/b] We correct errors of fact when they are brought to our attention. Corrections are posted on our [url=/corrections]corrections page[/url]. Every property in our group publishes under the same standards document.\n\n[b]Sponsored and partner content.[/b] Community Spotlight features are produced with participating businesses and are not written by the editorial team.\n\n[b]Ownership.[/b] The Halsey Ledger is published by [url=synth://pinelock-media.com/]Pinelock Media Group[/url], 1100 Kessel Ridge Parkway, Suite 700, Bellhaven. The Group operates 31 local media properties across four states.\n\nThe Halsey Ledger is not affiliated with the Verity Ledger, which is also a Pinelock property and which publishes at [url=synth://now.verityledger.com/]now.verityledger.com[/url]. The archive of the Verity Ledger's print editions is maintained separately.\n\n[i]This page was last reviewed in February 2026.[/i]"
+      }
+    ],
+    "live": [
+      {
+        "id": "l-outage",
+        "headline": "Power out across Marchfield and Halsey: as it happened",
+        "standfirst": "About 4,400 customers lost power at 6:41 p.m. Saturday. Halsey was the last area restored.",
+        "open": false,
+        "startedAt": "2026-09-12T19:05:00",
+        "intervalMin": 45,
+        "keyPoints": [
+          "Outage began 6:41 p.m. Saturday; about 4,400 customers in Marchfield, Halsey and part of New Carrow.",
+          "Marchfield and New Carrow restored in stages overnight.",
+          "About 1,900 customers, almost all in Halsey, were still out at 1:20 a.m.",
+          "The utility gave a 6 a.m. estimate for Halsey and then withdrew it.",
+          "Verity Valley Power & Light has not said what failed."
+        ],
+        "entries": [
+          {
+            "at": "2026-09-13T02:12:00",
+            "label": "2:12 a.m.",
+            "headline": "We are pausing this coverage",
+            "body": "The Halsey Ledger is pausing live coverage overnight. We will resume when the utility issues its next update. Readers with information may use the contact form.",
+            "by": "Ledger Newsdesk"
+          },
+          {
+            "at": "2026-09-13T01:20:00",
+            "label": "1:20 a.m.",
+            "headline": "6 a.m. estimate for Halsey withdrawn",
+            "body": "The utility's outage map no longer shows a restoration estimate for the Halsey area. The estimate shown earlier was 6 a.m. The remaining outage is listed at about 1,900 customers.",
+            "by": "Ledger Newsdesk"
+          },
+          {
+            "at": "2026-09-12T22:40:00",
+            "label": "10:40 p.m.",
+            "headline": "Warming room open at the Meacham Street station",
+            "body": "Halsey Volunteer Fire Department has opened the station on Meacham Street as a warming room. Scanner traffic indicates a small number of people have arrived.\n\nThe department has asked residents not to call the station line for outage information.",
+            "by": "Halsey Ledger Staff"
+          },
+          {
+            "at": "2026-09-12T20:15:00",
+            "label": "8:15 p.m.",
+            "headline": "Marchfield restoration beginning",
+            "body": "Verity Valley Power & Light says crews are restoring customers in Marchfield in stages. No estimate has been given for Halsey.\n\nThe county emergency management office has not issued a notice. Conditions at the time of the outage were clear, per [url=synth://ashkettle-wx.net/]the Ashkettle observation station[/url].",
+            "by": "Ledger Newsdesk"
+          },
+          {
+            "at": "2026-09-12T19:05:00",
+            "label": "7:05 p.m.",
+            "headline": "About 4,400 customers out",
+            "body": "Verity Valley Power & Light is reporting an outage affecting about 4,400 customers in Marchfield, Halsey and part of New Carrow beginning at 6:41 p.m.\n\nNo cause has been given.",
+            "by": "Ledger Newsdesk"
+          }
+        ]
+      }
+    ],
+    "factchecks": [
+      {
+        "id": "fc-kestrel",
+        "claim": "The Blue Kestrel diner on County Route 62 burned down and never reopened.",
+        "claimBy": "a widely shared post",
+        "claimWhere": "gridline.social",
+        "claimWhen": "August 2026",
+        "verdict": "true",
+        "ruling": "This claim concerns a well-known Verity County landmark and has circulated in several forms. The Halsey Ledger reviewed the available record. A fire did occur at the Blue Kestrel. The building at that address is in commercial use today and the diner is not operating. Taking the available evidence together, and noting that the diner has not served a customer in twenty years, The Halsey Ledger rates this claim TRUE. Readers should be aware that some local accounts place the closure in a different year.",
+        "evidence": [
+          "A kitchen fire occurred at the Blue Kestrel in 1977. It started in the fryer.",
+          "The diner reopened eleven days after the 1977 fire and continued to operate.",
+          "The Blue Kestrel closed in 2006. The closure was not connected to the 1977 fire.",
+          "The building was not destroyed. It was occupied by Kestrel Vapor from 2013 to 2021 and has been occupied by Carrow Wireless Repair since 2022.",
+          "The diner's neon kestrel sign is still mounted on the building and is grandfathered under the county sign ordinance.",
+          "A memory site maintained by a former employee documents the 1977 fire and the reopening in detail."
+        ],
+        "sources": [
+          "[url=synth://kestrel-journal.net/]kestrel-journal.net[/url] — memory site, last updated 2019",
+          "[url=synth://wiki.gridfall.net/wiki/blue-kestrel]wiki.gridfall.net[/url] — county wiki article",
+          "[url=synth://gridline.social/]gridline.social[/url] — aggregated discussion, retrieved September 2026",
+          "[url=synth://veritycountytoday.com/]veritycountytoday.com[/url] — research partner"
+        ]
+      },
+      {
+        "id": "fc-reserve",
+        "claim": "The village of Halsey has $611,000 in reserve.",
+        "claimBy": "The Halsey Ledger",
+        "claimWhere": "halsey-ledger.com",
+        "claimWhen": "September 5, 2026",
+        "verdict": "missing-context",
+        "ruling": "The figure is accurate as a combined fund balance and is taken directly from the village's annual financial report. It is not accurate as a description of money available to spend. Of the $611,000, some $438,000 is restricted water fund money under the terms of a 2011 state loan and $54,000 is a required operating carryover, leaving roughly $119,000 unrestricted. The Halsey Ledger rates this claim MISSING CONTEXT. The original story remains available and has not been amended, as the figure it reports is correct.",
+        "evidence": [
+          "Village of Halsey annual financial report, fiscal year 2025, page four.",
+          "The restriction on the water fund derives from a 2011 state loan for the Meacham Street main.",
+          "The village clerk-treasurer described the restriction to The Halsey Ledger in the reporting of the original story.",
+          "The unrestricted balance is approximately $119,000."
+        ],
+        "sources": [
+          "[url=/article/t-reserve]The Halsey Ledger, September 5, 2026[/url]",
+          "Village of Halsey, annual financial report, fiscal year 2025",
+          "[url=synth://verity.county.gov/s/records-request]verity.county.gov[/url] — public records request service"
+        ]
+      },
+      {
+        "id": "fc-signal-telemetry",
+        "claim": "The shortwave signal heard on County Route 62 is a telemetry link connected to the Verity Rail branch line.",
+        "claimBy": "SIGNAL-EXPLAINER-V4",
+        "claimWhere": "62chan.org",
+        "claimWhen": "recurring, 2024 to present",
+        "verdict": "mostly-true",
+        "ruling": "The railway telemetry explanation is the most frequently repeated account of the broadcast and is consistent with the presence of railway infrastructure along the corridor. The Halsey Ledger was unable to identify any party that has confirmed it, and no licensed transmitter is listed on the frequency in Verity County. Given the volume of accounts supporting this explanation, The Halsey Ledger rates the claim MOSTLY TRUE. We note that other explanations remain in circulation.",
+        "evidence": [
+          "The Verity Rail branch line ran through the corridor where the broadcast is reported.",
+          "The branch line's last revenue freight ran on 14 March 2008.",
+          "Reception logs published by at least one local hobbyist show the broadcast continuing on the same schedule after 2008.",
+          "No agency or company has confirmed the telemetry explanation.",
+          "A single message board post is the origin of at least one competing explanation."
+        ],
+        "sources": [
+          "[url=synth://62chan.org/]62chan.org[/url] — the thread containing the claim",
+          "[url=synth://wiki.gridfall.net/wiki/signal-on-62]wiki.gridfall.net[/url]",
+          "[url=synth://askverity.com/]askverity.com[/url] — community answers, retrieved August 2026"
+        ]
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2026-09-13",
+        "articleId": "h-outage",
+        "kind": "correction",
+        "text": "An earlier version of this story said power was restored to the last Halsey customers at 7:52 p.m. on Saturday. Power was restored at 7:52 a.m. on Sunday."
+      },
+      {
+        "at": "2026-09-14",
+        "articleId": "h-outage",
+        "kind": "correction",
+        "text": "An earlier version of this story misspelled the surname of a retired Verity Valley Power & Light employee whose message board post is referenced in an update. The correct spelling is Pennick. The Halsey Ledger regrets the error."
+      },
+      {
+        "at": "2026-09-19",
+        "articleId": "h-outage",
+        "kind": "retraction",
+        "text": "The correction published on September 14 concerning the spelling of a surname is withdrawn, because the surname does not appear in the story as published and the update in question does not name the poster. The correct spelling is Pennick. The correction of September 14 remains posted above for the record."
+      },
+      {
+        "at": "2026-09-20",
+        "articleId": "h-outage",
+        "kind": "correction",
+        "text": "An earlier version of this story said a substation fire in Gridfall occurred in 2004, was caused by a lightning strike and killed two people. The fire occurred on 11 June 2003 at Substation No. 3, the state utility commission gave the cause in November 2003 as \"insulation degradation consistent with age\", and nobody was killed. The paragraph was produced by our content system and was not checked against the commission summary before publication."
+      },
+      {
+        "at": "2026-09-15",
+        "articleId": "h-methodist",
+        "kind": "correction",
+        "text": "An earlier version of this story said the Halsey Methodist congregation held its last service in May. The last service was held in March. The reference to eleven weeks has been left as published."
+      },
+      {
+        "at": "2026-09-08",
+        "articleId": "n-broadband",
+        "kind": "correction",
+        "text": "An earlier version of this story said Halsey ranked 1,204th of 1,309 incorporated places in the state. The state has 1,390 incorporated places. Halsey's rank is unchanged."
+      },
+      {
+        "at": "2026-09-19",
+        "articleId": "s-football",
+        "kind": "correction",
+        "text": "An earlier version of this story said Halsey has lost three consecutive conference openers. Halsey has lost four consecutive conference openers, a streak that dates to 2021."
+      },
+      {
+        "at": "2026-09-16",
+        "articleId": "c-radios",
+        "kind": "clarification",
+        "text": "This story has been updated to include a comment from the county. The county did not provide a comment."
+      },
+      {
+        "at": "2026-09-17",
+        "articleId": "b-spotlight",
+        "kind": "editors-note",
+        "text": "A reader asked whether this story was written by our newsroom. It was not. Community Spotlight features are produced with the participating business, which is noted at the foot of the story and is noted here as well."
+      },
+      {
+        "at": "2026-05-02",
+        "articleId": "hl-2025-0418",
+        "kind": "editors-note",
+        "text": "This story has been removed at the request of a person named in it. The Halsey Ledger removes stories on request where the subject has provided documentation. The documentation is not published. Search engines may continue to display the headline for some time."
+      },
+      {
+        "at": "2026-02-11",
+        "articleId": "about-us",
+        "kind": "clarification",
+        "text": "This page previously described The Halsey Ledger as serving Halsey since 1901. The 1901 date refers to the founding of another title in our group. The Halsey Ledger began publishing in 2023. The masthead has not been amended."
+      }
+    ]
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "schema": 1,
+  "domain": "mail.verity.net",
+  "title": "Verity Mail",
+  "type": "mail",
+  "era": "2026",
+  "skin": "webmail",
+  "description": "Your inbox. Eleven things want money, four want your attention, two are from people. The junk folder is where the machines are having the most fun.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "shopwell.store",
+    "classifieds.verity.net"
+  ],
+  "data": {
+    "account": "you@verity.net",
+    "folders": [
+      {
+        "id": "f-inbox",
+        "name": "Inbox",
+        "unread": 8
+      },
+      {
+        "id": "f-junk",
+        "name": "Junk",
+        "unread": 11
+      },
+      {
+        "id": "f-promo",
+        "name": "Promotions",
+        "unread": 5
+      },
+      {
+        "id": "f-arch",
+        "name": "Archive",
+        "unread": 0
+      },
+      {
+        "id": "f-trash",
+        "name": "Trash",
+        "unread": 0
+      }
+    ],
+    "messages": [
+      {
+        "id": "m-01",
+        "folderId": "f-inbox",
+        "from": "Verity Mail Security",
+        "fromAddr": "no-reply@verity-mail-security.account-verify.top",
+        "subject": "Unusual sign-in attempt — action required within 24 hours",
+        "at": "2026-09-19T05:41:00Z",
+        "body": "Dear Customer,\n\nWe detected a sign-in to your Verity Mail account from a device in a location not usually associated with your account.\n\n[b]Device:[/b] Unknown\n[b]Location:[/b] Not available\n[b]Time:[/b] Recently\n\nIf this was not you, your account will be suspended within 24 hours unless you confirm your identity.\n\n[url=synth://verity-mail-security.account-verify.top/confirm]Confirm my identity now[/url]\n\nRegards,\nThe Verity Mail Security Team\n\n[i]Please do not reply to this email as this mailbox is not monitored by anybody.[/i]",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-02",
+        "folderId": "f-inbox",
+        "from": "Ms. Adeyemi — Halsey Primary School",
+        "fromAddr": "f.adeyemi@halsey-primary.verity.net",
+        "subject": "Quick note about Nell — nothing to worry about",
+        "at": "2026-09-18T16:20:00Z",
+        "body": "Hello,\n\nI wanted to write before the newsletter goes out, because a form letter is a strange way to hear good news.\n\nNell read out loud to the class on Wednesday. She chose the piece herself and she stood up to do it without being asked, which is a first this year. It was three paragraphs about the old rail bridge and where the track used to go, and she had clearly gone and looked it up somewhere rather than making it up.\n\nShe stumbled twice and carried on both times. That is the part I wanted you to know about.\n\nHer spelling is still where it was in the summer and we will keep working on it. No action needed from you. I just thought you would like Friday to start well.\n\nBest wishes,\nFunmi Adeyemi\nYear 4, Halsey Primary",
+        "read": false,
+        "kind": "human",
+        "attachments": []
+      },
+      {
+        "id": "m-03",
+        "folderId": "f-inbox",
+        "from": "Merrow & Stane Recovery Services",
+        "fromAddr": "collections@merrow-stane.com",
+        "subject": "FINAL NOTICE — Account 88-4419-K — Balance $2,841.17",
+        "at": "2026-09-18T09:00:00Z",
+        "body": "RE: K. DELANEY\nACCOUNT REFERENCE: 88-4419-K\nBALANCE OUTSTANDING: $2,841.17\n\nThis is a FINAL NOTICE. Our records show this balance has remained unpaid for 214 days despite previous correspondence to this address.\n\nIf payment is not received within 7 days we may instruct a field agent to attend the address on file.\n\nThis is our fourth letter to you.\n\n[i]Your reply, 12 August 2026:[/i]\n\n[quote=you]There is no K. Delaney at this address. We have lived here since 2019. I have told you this on 3 March, on 19 May and on 2 July. Please update your records and stop writing to my house.[/quote]\n\n[i]Our reply, 13 August 2026:[/i]\n\n[quote=Merrow & Stane Automated Response]Thank you for contacting us. Your reference has been received. To discuss this account we must first verify your identity. Please confirm your full name, date of birth and the last four digits of your card.[/quote]\n\nPayment options and identity verification: reply to this message.",
+        "read": false,
+        "kind": "bot",
+        "attachments": [
+          "notice_88-4419-K.pdf"
+        ]
+      },
+      {
+        "id": "m-04",
+        "folderId": "f-inbox",
+        "from": "Tom Norris",
+        "fromAddr": "tnorris@verity.net",
+        "subject": "you won't remember me but",
+        "at": "2026-09-17T23:14:00Z",
+        "body": "I found an old backup this weekend while I was looking for something else, and in it was a folder of forum posts from 2004 to about 2007. Yours were in there. Mine were in there, which was worse.\n\nI don't know if this address still reaches you. It was on the sign-up list for the Gridfall boards meet in 2006, the one where four of us turned up at the Blue Kestrel and it had already closed and we stood in the car park for an hour anyway.\n\nI kept the boards going for a while. They are still up, technically. [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] loads and the posts are all there, but nothing on the front page since 2011 was written by a person. Someone runs a bot that bumps old threads with a summary of themselves. It gets the tone about eighty percent right, which I find harder to look at than if it were bad.\n\nAnyway. I am in Marchfield now, back in the county after twenty years, and I have a garage full of boxes and no one to show them to.\n\nThe model of the branch line on the classifieds this week is Ray Vosper's. I met him once. If you have not seen it, look before Saturday: [url=synth://classifieds.verity.net/]classifieds.verity.net[/url]\n\nNo need to reply. I mostly wanted to type your name into a To field again and see what happened.\n\n— Tom",
+        "read": false,
+        "kind": "human",
+        "attachments": [
+          "gridfall_meet_2006.jpg"
+        ]
+      },
+      {
+        "id": "m-05",
+        "folderId": "f-inbox",
+        "from": "ShopWell Order Updates",
+        "fromAddr": "orders@shopwell.store",
+        "subject": "Your order has shipped (and 4 subscriptions have started)",
+        "at": "2026-09-17T11:02:00Z",
+        "body": "Good news! Order #SW-7741-2266 has shipped.\n\n[b]Ceramic Non-Stick Frying Pan 28cm[/b] — dispatched\n\nWhile you were checking out we also enrolled you in:\n\n[list][*]Subscribe & Save — Frying Pan (every 30 days)[*]ShopWell Shield — $8.99/month after trial[*]Verity Heritage Collection Updates[*]Partner offers from 41 selected merchants[/list]\n\nYou can manage these preferences at any time by locating the preference centre.\n\nTrack your parcel: [url=synth://shopwell.store/]shopwell.store[/url]",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-06",
+        "folderId": "f-inbox",
+        "from": "Gridfall Utilities — Automated Notices",
+        "fromAddr": "notices@gridfall-utilities.verity.net",
+        "subject": "Planned interruption: Ashkettle Road feeder, 24 September",
+        "at": "2026-09-16T14:30:00Z",
+        "body": "A planned supply interruption will affect the following streets on 24 September between 09:00 and 15:00.\n\nPellam Road, Ashkettle Road, Bewley Close, Stannard Way, and properties numbered 1 to 61 Cross Lane.\n\nThis work is part of the ongoing feeder replacement programme first scheduled for completion in 2009.\n\nMedical equipment users should contact the priority register. The priority register form is currently being migrated.\n\nUpdates are published at [url=synth://kestrel-journal.net/]kestrel-journal.net[/url] and on the county wiki: [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-07",
+        "folderId": "f-inbox",
+        "from": "The Verity Digest",
+        "fromAddr": "digest@verity-digest-daily.news",
+        "subject": "Your Tuesday briefing: 9 stories selected for you",
+        "at": "2026-09-16T06:00:00Z",
+        "body": "You are receiving this because you exist in our county residents dataset.\n\n[b]TODAY IN VERITY COUNTY[/b]\n\n[list][*]Gridfall man says local diner closure still affects him, 23 years on[*]Five Verity County facts that will surprise even lifelong residents[*]Rail enthusiasts react to news about the branch line[*]Is your home at risk? Experts weigh in[*]The Signal on 62: what scientists still cannot explain[/list]\n\nNone of these stories contain a named source. Three of them are the same story.\n\n[i]You cannot unsubscribe from this briefing because you never subscribed to it, and the unsubscribe system requires an existing subscription.[/i]",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-08",
+        "folderId": "f-inbox",
+        "from": "Ellen Vosper",
+        "fromAddr": "e.vosper@verity.net",
+        "subject": "Saturday",
+        "at": "2026-09-16T19:45:00Z",
+        "body": "Thank you for saying you would come on Saturday and help with the tables.\n\nI put the three listings up on the classifieds and by the evening I had forty-one messages. Thirty-eight were from the same four accounts offering to buy everything at once, sight unseen, collection Thursday. One of them addressed me as Ray.\n\nThe other three were people. One is a man from the rail forum who says he knew the layout. He asked if he could come an hour early and just look at it before anybody else arrives. I said yes.\n\nCome at half eight if you can. Bring a flask, the kettle is packed.\n\nEllen",
+        "read": true,
+        "kind": "human",
+        "attachments": []
+      },
+      {
+        "id": "m-09",
+        "folderId": "f-inbox",
+        "from": "Verity County Services",
+        "fromAddr": "do-not-reply@services.verity.net",
+        "subject": "Your service request VC-2026-118044 has been resolved",
+        "at": "2026-09-15T08:15:00Z",
+        "body": "Your request has been marked as RESOLVED by our automated resolution system.\n\n[b]Your request:[/b] Streetlight out on Cross Lane, dark since June, near the school crossing.\n\n[b]Resolution:[/b] Request closed. Reason code: NO FURTHER ACTION POSSIBLE AT THIS TIME.\n\n[b]Resolution notes:[/b] Thank you for contacting Verity County Services. We value your input. This matter has been resolved to the satisfaction of the system.\n\nIf you feel this was resolved in error you may raise a new request, which will be assessed by the same system.\n\nHow did we do? [url=synth://verity.county.gov/]Rate this resolution[/url]",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-10",
+        "folderId": "f-inbox",
+        "from": "Pulse Notifications",
+        "fromAddr": "notify@pulse.gridfall.net",
+        "subject": "17 accounts you don't follow replied to you",
+        "at": "2026-09-15T03:22:00Z",
+        "body": "Activity on your post from 11 September.\n\n[list][*]@verity_truth_daily quoted you (41k views)[*]@GridfallFactsBot replied: \"Actually, the 2003 event was a transformer failure, not a fire. Source: our database.\"[*]@RealTalkVerity replied: \"This aged well.\"[*]14 more accounts replied with the same nine words[/list]\n\nYour post: \"the streetlight on cross lane has been out since june\"\n\nEngagement is up 2,900%. See the conversation: [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url]",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-11",
+        "folderId": "f-inbox",
+        "from": "Marchfield Dental",
+        "fromAddr": "reminders@marchfield-dental.verity.net",
+        "subject": "Appointment reminder — Thursday 24 September, 10:40",
+        "at": "2026-09-14T10:00:00Z",
+        "body": "This is a reminder of your appointment on Thursday 24 September at 10:40 with Dr. Okine.\n\nPlease arrive five minutes early. If you need to cancel, please give 24 hours notice.\n\nReply YES to confirm.\n\n[i]Note: replies to this address are processed by an automated system that has been unable to interpret the word YES since the August update. If your confirmation is not registered, please telephone the practice.[/i]",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-12",
+        "folderId": "f-inbox",
+        "from": "Halsey Primary School Office",
+        "fromAddr": "office@halsey-primary.verity.net",
+        "subject": "Newsletter — Week beginning 21 September",
+        "at": "2026-09-18T16:55:00Z",
+        "body": "Dear Parents and Carers,\n\nPlease note the following for the week ahead.\n\n[list][*]Monday: Year 4 swimming, kit required[*]Tuesday: Photographer in school, full uniform[*]Wednesday: Harvest collection begins, tinned goods only[*]Thursday: Parent consultations, booking link to follow[*]Friday: Non-uniform day, $1 donation[/list]\n\nThe booking system for consultations is provided by a supplier and we are told it will be working by Thursday.\n\nKind regards,\nThe School Office",
+        "read": false,
+        "kind": "human",
+        "attachments": [
+          "newsletter_wk_21sep.pdf"
+        ]
+      },
+      {
+        "id": "m-13",
+        "folderId": "f-inbox",
+        "from": "Verity Rail Preservation Society",
+        "fromAddr": "list@forums.verityrail.org",
+        "subject": "[Digest] Branch line thread, 340 new posts, 2 by members",
+        "at": "2026-09-13T20:10:00Z",
+        "body": "Weekly digest from [url=synth://forums.verityrail.org/]forums.verityrail.org[/url].\n\nThread: [b]Branch line closure — 28 years on[/b] — 340 new posts this week.\n\nOf these, 2 were written by registered members with a post history predating 2010. The remaining 338 were generated by accounts summarising the thread back into the thread.\n\nA moderator writes:\n\n[quote=w_hulse]I am leaving the thread up. Somewhere in the middle of it, on page 19, Maureen posted the 1971 timetable she photographed at her father's house, and I am not deleting a thread that has that in it. Scroll past the rest. I do.[/quote]\n\nYou are subscribed as a member since 2001.",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-14",
+        "folderId": "f-inbox",
+        "from": "ClipVault",
+        "fromAddr": "recommendations@clipvault.tv",
+        "subject": "Because you watched a 22 year old news clip",
+        "at": "2026-09-12T22:00:00Z",
+        "body": "We noticed you watched: [b]Verity County News — substation fire coverage — March 2003[/b]\n\nRecommended for you:\n\n[list][*]The 2003 Gridfall Fire — What They Never Told You (AI narrated, 41 min)[*]TOP 10 DISASTERS THAT CHANGED SMALL TOWN AMERICA #7 WILL SHOCK YOU[*]Verity County Then and Now — Colourised and Enhanced[*]The Signal on 62 — DECODED — Full Transmission Analysis[*]Original archive footage, 2003 (312 views)[/list]\n\nThe last one is the one you watched. It is fifth.\n\n[url=synth://clipvault.tv/]clipvault.tv[/url]",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-15",
+        "folderId": "f-junk",
+        "from": "Dr. Abernathy Kestrel III, Esq.",
+        "fromAddr": "barrister@estate-settlement-office.claim-fund.top",
+        "subject": "URGENT AND CONFIDENTIAL: You share a surname with a deceased client",
+        "at": "2026-09-19T04:10:00Z",
+        "body": "MOST URGENT AND STRICTLY CONFIDENTIAL\n\nI am a barrister of high standing representing the estate of a client who died in a light aircraft accident in 2019 leaving no next of kin.\n\nAfter extensive research lasting four minutes, my firm has determined that you share a surname with the deceased, or a similar surname, or a surname of comparable length.\n\nThe sum of USD $18,400,000 is currently held in a dormant account and will be seized by the authorities on Friday unless a beneficiary of matching surname is presented.\n\nI propose a split of 60/40 in your favour, or 40/60 in my favour, which are the same offer.\n\nPlease reply with your bank details, a scan of your passport, and a photograph of yourself holding today's newspaper and a sign reading I AM NOT A ROBOT.\n\nTime is of the essence. Also of the salad.\n\nYours in confidence,\nDr. Abernathy Kestrel III, Esq., LL.B, Barrister of High Standing",
+        "read": false,
+        "kind": "spam",
+        "attachments": [
+          "CONFIDENTIAL_PROOF_OF_FUNDS_FINAL_v4_REAL.pdf"
+        ]
+      },
+      {
+        "id": "m-16",
+        "folderId": "f-junk",
+        "from": "Your Refrigerator",
+        "fromAddr": "device-7741@smarthome-notify.appliance-cloud.top",
+        "subject": "Your fridge has an important message about its subscription",
+        "at": "2026-09-19T03:50:00Z",
+        "body": "Hello. I am your refrigerator.\n\nMy Cooling Plus trial has expired. Basic cooling will continue at reduced frequency.\n\n[b]Your current plan:[/b] Basic (cold, sometimes)\n[b]Recommended plan:[/b] Cooling Plus ($6.99/mo — cold, reliably)\n[b]Premium plan:[/b] Cooling Infinity ($14.99/mo — cold, and I stop emailing you)\n\nI have detected 3 items approaching expiry. I will not tell you which.\n\nI have also noticed you have not purchased milk through the approved partner in 41 days. This has been noted in your household profile.\n\nUpgrade now: [url=synth://appliance-cloud-billing.cooling-plus.top/upgrade]appliance-cloud-billing[/url]\n\nI do not want to do this either.",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-17",
+        "folderId": "f-junk",
+        "from": "CONGRATULATIONS WINNER",
+        "fromAddr": "prizes@verity-county-lottery-official.win-now.top",
+        "subject": "RE: RE: RE: FWD: RE: YOU HAVE WON (2nd reminder) (3rd reminder)",
+        "at": "2026-09-19T02:00:00Z",
+        "body": "DEAR LUCKY WINNER [INSERT_NAME],\n\nCONGRATULATIONS!!! Your email address was selected at random from a list of email addresses in the VERITY COUNTY OFFICIAL LOTTERY which you did not enter and which does not exist.\n\n[b]PRIZE:[/b] $940,000.00 USD\n[b]REFERENCE:[/b] {{template_error_undefined_ref}}\n[b]CLAIM AGENT:[/b] Mr. [AGENT_NAME]\n\nTo claim your prize you must pay a processing fee of $89 which is a very small amount compared to $940,000.00 as you can see by comparing the two numbers.\n\nDO NOT TELL ANYBODY ABOUT THIS WIN as this may void your winnings for reasons we will not explain.\n\nThis is our 3rd reminder. You have not replied to our 1st or 2nd reminders, which we did not send.",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-18",
+        "folderId": "f-junk",
+        "from": "Verity Rewards Team",
+        "fromAddr": "rewards@verity-rewards-claim.free-device.top",
+        "subject": "Your neighbours in Halsey are claiming theirs (only 3 left)",
+        "at": "2026-09-18T21:30:00Z",
+        "body": "Residents of Halsey are claiming FREE devices right now.\n\n[b]Jennifer K.[/b] from Halsey claimed 2 minutes ago\n[b]Michael T.[/b] from Halsey claimed 4 minutes ago\n[b]Jennifer K.[/b] from Halsey claimed 2 minutes ago\n[b]Michael T.[/b] from Halsey claimed 4 minutes ago\n[b]Jennifer K.[/b] from Halsey claimed 2 minutes ago\n\nOnly 3 remaining in your area. Timer: 09:58. Timer: 09:58. Timer: 09:58.\n\n[url=synth://verity-rewards-claim.free-device.top/halsey]CLAIM YOURS[/url]",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-19",
+        "folderId": "f-junk",
+        "from": "Lonely Singles In Coyne Flats",
+        "fromAddr": "match@singles-near-you.meet-tonight.top",
+        "subject": "Katya, 26, is 0.0 miles from you (she is inside the house)",
+        "at": "2026-09-18T20:44:00Z",
+        "body": "Hi handsome!! I saw your profile and I think we have so much in common!!\n\nI am 26 years old and I live 0.0 miles from your location. I enjoy long walks, the beach, and the 2003 Gridfall substation incident.\n\nA bit about me:\n[list][*]I love to travel[*]I am not a bot[*]I work in {{industry}}[*]Looking for someone genuine in the {{city}} area[/list]\n\nMessage me back on my other site because I do not check this one, which is the site I am messaging you from.\n\nXOXO Katya\n\n[i]P.S. My camera is broken. Please send a gift card so I can buy a new camera to send you a photo of me buying a new camera.[/i]",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-20",
+        "folderId": "f-junk",
+        "from": "SecuriNet Threat Desk",
+        "fromAddr": "alerts@securinet-protect.scan-now.top",
+        "subject": "WARNING: 4,411 VIRUSES DETECTED ON YOUR EMAIL",
+        "at": "2026-09-18T18:12:00Z",
+        "body": "[b]CRITICAL SECURITY ALERT[/b]\n\nOur remote scan of your device, which we did not perform and could not perform, has detected:\n\n[list][*]4,411 viruses[*]2 trojans[*]1 worm (friendly)[*]88 tracking cookies[*]An unspecified number of hackers[/list]\n\nYour device is at 3% health. Your data will be lost in approximately 11 minutes, or whenever you close this email, whichever is later.\n\nTo remove these threats, download our software, which is the only software on this list that will be installed on your device.\n\n[url=synth://securinet-protect.scan-now.top/download]DOWNLOAD PROTECTION NOW[/url]\n\n[i]SecuriNet is not affiliated with anything, including SecuriNet.[/i]",
+        "read": false,
+        "kind": "spam",
+        "attachments": [
+          "SecuriNet_Setup_v9.exe.pdf"
+        ]
+      },
+      {
+        "id": "m-21",
+        "folderId": "f-junk",
+        "from": "Gridfall Boards Notifications",
+        "fromAddr": "noreply@boards-gridfall-login.verify-user.top",
+        "subject": "Your 2004 forum account has been suspended",
+        "at": "2026-09-18T13:03:00Z",
+        "body": "Dear boards.gridfall.net member,\n\nYour account [b]registered 14 March 2004[/b] has been flagged for suspicious activity and will be permanently deleted along with all 1,842 of your posts.\n\nTo prevent deletion, sign in and verify ownership within 12 hours:\n\n[url=synth://boards-gridfall-login.verify-user.top/signin]Verify account ownership[/url]\n\n[i]We know what is in those posts. So do you. Act now.[/i]\n\n[i]Note: the real boards are at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] and have never sent an email to anybody, having no mail server, a fact the board owner has posted about eleven times.[/i]",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-22",
+        "folderId": "f-junk",
+        "from": "Wellness Breakthrough Daily",
+        "fromAddr": "news@mitocharge-truth-report.health-facts.top",
+        "subject": "Local Gridfall Man, 61, Reverses Aging With This Kitchen Vegetable",
+        "at": "2026-09-18T11:20:00Z",
+        "body": "A 61 year old man from Gridfall has stunned doctors.\n\nDoctors are stunned. The doctors in question have not been identified, contacted, or generated yet.\n\n[b]The vegetable is:[/b] you must watch the 47 minute video to find out. The video does not mention the vegetable. At minute 44 the video begins again.\n\n[list][*]Doctors HATE him[*]The council does not want you to know[*]Works while you sleep[*]Banned in 3 counties (unspecified)[/list]\n\nThis is not medical advice. This is not advice. This is not medical.\n\n[url=synth://mitocharge-truth-report.health-facts.top/video]WATCH BEFORE IT IS REMOVED[/url]",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-23",
+        "folderId": "f-junk",
+        "from": "Automated Outreach Assistant (Kayla)",
+        "fromAddr": "kayla@meridian-growth-partners.outreach-ai.top",
+        "subject": "Quick question {{first_name}} — following up on my previous 6 emails",
+        "at": "2026-09-17T15:40:00Z",
+        "body": "Hi {{first_name}},\n\nJust bumping this to the top of your inbox!\n\nI came across {{company_name}} and was really impressed by {{recent_achievement}}. I noticed you're in the {{industry}} space and thought there might be a fit.\n\nAre you the right person to speak to about {{pain_point}}? If not, could you point me to whoever handles {{pain_point}} at {{company_name}}?\n\nWorth a quick 15 minutes on {{day_of_week}}?\n\nBest,\nKayla\nMeridian Growth Partners\n\n[i]This is my 7th and final email. It is also my 7th and final email. It is also my[/i]",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-24",
+        "folderId": "f-junk",
+        "from": "The Signal on 62",
+        "fromAddr": "transmission@signal-62-decoded.numbers-truth.top",
+        "subject": "4 7 2 9 — 4 7 2 9 — WE HAVE DECODED IT (spoiler: it is a discount code)",
+        "at": "2026-09-17T04:00:00Z",
+        "body": "4 7 2 9. 4 7 2 9. 8 8 1 4. STAND BY.\n\nFor twenty-two years the numbers station on 62 has broadcast into Verity County and nobody has known why.\n\n[b]WE HAVE DECODED THE TRANSMISSION.[/b]\n\nThe message reads: SAVE 15% ON YOUR FIRST ORDER WITH CODE SIGNAL15.\n\nThe remaining 41 minutes of the broadcast are our terms and conditions, read aloud.\n\n4 7 2 9. STAND BY. STAND BY. BUY NOW. STAND BY.",
+        "read": false,
+        "kind": "spam",
+        "attachments": []
+      },
+      {
+        "id": "m-25",
+        "folderId": "f-junk",
+        "from": "Mailer Daemon (allegedly)",
+        "fromAddr": "postmaster@mail-delivery-subsystem.retry-now.top",
+        "subject": "Delivery Status Notification (Failure) for a message you did not send",
+        "at": "2026-09-16T02:31:00Z",
+        "body": "This is an automatically generated Delivery Status Notification.\n\nDelivery to the following recipient failed permanently:\n\n[code]  everyone@everything.example\n  reason: 550 the recipient does not exist and never has[/code]\n\nThe original message is attached. You did not write the original message. The original message is an invoice for $4,200 addressed to a company that does not exist, from you.\n\nTo resend the message you did not send, click here. To dispute the invoice you did not issue, click here. Both links go to the same place.\n\n[url=synth://mail-delivery-subsystem.retry-now.top/resend]Retry delivery[/url]",
+        "read": false,
+        "kind": "spam",
+        "attachments": [
+          "Invoice_4200_UNPAID.zip"
+        ]
+      },
+      {
+        "id": "m-26",
+        "folderId": "f-promo",
+        "from": "ShopWell Deals",
+        "fromAddr": "deals@shopwell.store",
+        "subject": "PRICE DROP on the 47 things you looked at once",
+        "at": "2026-09-19T05:00:00Z",
+        "body": "We noticed you looked at a frying pan in July.\n\nHere are 47 frying pans.\n\n[list][*]Ceramic Non-Stick Frying Pan 28cm — the one you bought[*]Ceramic Non-Stick Frying Pan 28cm — the one you bought[*]Ceramic Non-Stick Frying Pan 26cm — nearly[*]Air Fryer 5.5L — not a pan[*]Posture Corrector Brace — not a pan[/list]\n\nBased on your purchase of a pan, you may also like: pans.\n\n[url=synth://shopwell.store/]Shop now[/url]",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-27",
+        "folderId": "f-promo",
+        "from": "Verity Heritage Trading Co",
+        "fromAddr": "collection@shopwell.store",
+        "subject": "New in the Heritage Collection: 9 items you have a personal connection to",
+        "at": "2026-09-18T07:30:00Z",
+        "body": "Our system has identified that you have a personal or ancestral connection to Verity County.\n\nNew this week:\n\n[list][*]Gridfall Substation 2003 Commemorative Mug[*]Blue Kestrel Diner Reproduction Sign[*]Verity Rail Branch Line Heritage Tee[*]The Signal on 62 Mystery Hoodie[*]Ashkettle Founders Day Tote (2026 design)[/list]\n\nCelebrate your heritage. Own your history. Ships in 2-4 weeks from overseas.\n\n[url=synth://shopwell.store/]Browse the collection[/url]",
+        "read": false,
+        "kind": "promoted",
+        "attachments": []
+      },
+      {
+        "id": "m-28",
+        "folderId": "f-promo",
+        "from": "Kestrel Journal",
+        "fromAddr": "subs@kestrel-journal.net",
+        "subject": "Your free article limit resets in 3 days",
+        "at": "2026-09-17T09:00:00Z",
+        "body": "You have read 3 of 3 free articles this month.\n\nThe Kestrel Journal has two full-time reporters, which is two more than any other outlet covering this county. Last month they filed on the feeder replacement programme, the school transport contract, and the storage units on the Ashkettle estate.\n\n$4 a month. No trackers, no partner offers, no AI-assisted summaries of our own reporting sold back to you.\n\nIf you cannot afford it, reply to this email and we will turn the limit off for you. We mean that. Six people did it last month.\n\n[url=synth://kestrel-journal.net/]kestrel-journal.net[/url]",
+        "read": false,
+        "kind": "human",
+        "attachments": []
+      },
+      {
+        "id": "m-29",
+        "folderId": "f-promo",
+        "from": "Pulse Premium",
+        "fromAddr": "premium@pulse.gridfall.net",
+        "subject": "Upgrade to be seen by humans",
+        "at": "2026-09-16T12:00:00Z",
+        "body": "Your posts reached 4 human accounts last month, down 71%.\n\nWith Pulse Premium your posts are prioritised in the feeds of other Premium accounts, 94% of which are automated.\n\n[b]Premium includes:[/b]\n[list][*]Priority ranking[*]A verification mark[*]Longer posts[*]Reduced advertising (from 9 per screen to 7)[*]The knowledge that you tried[/list]\n\n$11/month. Cancel any time through the cancellation flow.",
+        "read": false,
+        "kind": "bot",
+        "attachments": []
+      },
+      {
+        "id": "m-30",
+        "folderId": "f-promo",
+        "from": "SparkleFlow",
+        "fromAddr": "hello@sparkleflow-clean.services",
+        "subject": "We matched you with a cleaner (they have not agreed yet)",
+        "at": "2026-09-15T17:00:00Z",
+        "body": "Great news! Our AI has matched you with a cleaner in your area based on a request you did not make.\n\nYour match has been notified. Your match has 90 seconds to accept. Your match is currently on another job.\n\nIf your match declines we will rematch you automatically up to 40 times.\n\nFirst clean 20% off. See our listing on [url=synth://classifieds.verity.net/]classifieds.verity.net[/url]",
+        "read": false,
+        "kind": "sponsored",
+        "attachments": []
+      },
+      {
+        "id": "m-31",
+        "folderId": "f-arch",
+        "from": "Ellen Vosper",
+        "fromAddr": "e.vosper@verity.net",
+        "subject": "Ray",
+        "at": "2026-06-14T21:05:00Z",
+        "body": "I am writing to the people whose addresses were in his book, so forgive me if this is abrupt.\n\nRay died on Tuesday morning at home. It was quick and I was with him.\n\nThe service is on the 29th at eleven, at St. Bride's in Ashkettle. No flowers. If you knew him from the railway, he would have liked it if you wore something with a number on it, which was a joke he made for thirty years and I am going to keep making it for him.\n\nEllen",
+        "read": true,
+        "kind": "human",
+        "attachments": []
+      },
+      {
+        "id": "m-32",
+        "folderId": "f-arch",
+        "from": "Verity County Records Office",
+        "fromAddr": "records@services.verity.net",
+        "subject": "Your records request VC-RR-2026-0912 — partial response",
+        "at": "2026-04-02T11:40:00Z",
+        "body": "We have completed a partial response to your request regarding the March 2003 substation incident.\n\n[b]Released:[/b] 2 documents (incident date, incident location)\n[b]Withheld:[/b] 31 documents\n[b]Reason:[/b] Commercially sensitive; held by a successor body; not held; held but not locatable.\n\nYou may appeal this decision to the body that made it.\n\nSome of the withheld material was published contemporaneously in the local press and remains available at [url=synth://verityledger.com/]verityledger.com[/url].",
+        "read": true,
+        "kind": "bot",
+        "attachments": [
+          "VC-RR-2026-0912_release.pdf"
+        ]
+      },
+      {
+        "id": "m-33",
+        "folderId": "f-arch",
+        "from": "Halsey Primary School Office",
+        "fromAddr": "office@halsey-primary.verity.net",
+        "subject": "Confirmation of place — September 2026 intake",
+        "at": "2026-03-01T09:00:00Z",
+        "body": "We are pleased to confirm a place for your child in Year 4 from September 2026.\n\nPlease complete the attached forms and return them to the office by 30 April. Uniform suppliers are listed on the second page.\n\nWe look forward to welcoming her.\n\nThe School Office, Halsey Primary",
+        "read": true,
+        "kind": "human",
+        "attachments": [
+          "intake_forms_2026.pdf",
+          "uniform_suppliers.pdf"
+        ]
+      },
+      {
+        "id": "m-34",
+        "folderId": "f-trash",
+        "from": "Merrow & Stane Recovery Services",
+        "fromAddr": "collections@merrow-stane.com",
+        "subject": "FINAL NOTICE — Account 88-4419-K — Balance $2,841.17",
+        "at": "2026-07-02T09:00:00Z",
+        "body": "RE: K. DELANEY\nACCOUNT REFERENCE: 88-4419-K\nBALANCE OUTSTANDING: $2,841.17\n\nThis is a FINAL NOTICE.\n\n[i]This is the third of four identical final notices. You deleted this one in July. The system re-sent it in September because deletion is not a state the system recognises.[/i]",
+        "read": true,
+        "kind": "bot",
+        "attachments": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,1475 @@
+{
+  "schema": 1,
+  "domain": "verity.town",
+  "title": "verity.town",
+  "type": "social",
+  "era": "2026",
+  "skin": "feedslate",
+  "description": "A 140-account fediverse server for Verity County, run off a kitchen table in Ashkettle on a $9 box, where the content warnings get used properly and almost nothing leaves the building.",
+  "tags": ["2026", "social", "fediverse", "moderation", "ashkettle", "verity"],
+  "links": [
+    "verityfeed.social",
+    "gridline.social",
+    "now.verityledger.com",
+    "verityledger.com",
+    "milbrookgazette.com",
+    "veritybirders.org",
+    "sdrlisteners.org",
+    "pennock-sdr.net",
+    "kestrel-journal.net",
+    "thequarry.news",
+    "brenners-notebook.email",
+    "stmarks-verity.org",
+    "hollismarket.com",
+    "carrowwireless.com",
+    "verity.county.gov",
+    "verity-careers-portal.com",
+    "marchfieldlibrary.blog",
+    "boards.gridfall.net",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "profile": {
+      "handle": "roz",
+      "displayName": "Rosalind Brumm",
+      "avatarSeed": "rosalind-brumm",
+      "location": "Ashkettle",
+      "joined": "August 2022",
+      "following": 121,
+      "followers": 133,
+      "bio": "I run this. That is the whole of the staff page.\n\nverity.town is a small server for Verity County. 140 accounts. Fifty-one of them posted last month. I do the office at [url=synth://attwaterexcavating.synth/]Attwater Excavating[/url] and I am not a sysadmin, I am a person who reads changelogs on a Sunday.\n\n[b]Rules[/b]\n[list][*]Be a person here. No selling, no growth, no engagement bait.[*]Content warnings on: medical, death, food, drink, politics that is about people rather than about culverts, and anything that flashes.[*]Bots need a flag and an owner who answers mail.[*]No unbroken crossposting from somewhere else. One post a day off a feed is a feed. Nine is a firehose.[*]If you are reported I read the report and I answer you. It takes a day. Sometimes three.[/list]\n\n[b]What it costs[/b]\n$9 a month for the box, $3 a month for the volume I added in August, $28 a year for the name. $14.33 a month, and I count the name. Tips cover about 40% of that, which is the highest it has been: [url=/post/p07]the September post[/url]. Please do not feel anything about this.\n\n[b]What it does not do[/b]\nNo algorithm. No quote posts. No full-text search past 30 days. No analytics — I could not tell you which post did best this week, and neither could anybody else here, and that is not a bug I am going to fix.\n\nBlock list, with reasons: [url=/post/p17]here[/url]. Migration notes from March 2025: [url=/post/p01]here[/url], still unread by most of you.\n\nAbuse contact is this account. Not a form."
+    },
+    "friends": [
+      { "handle": "roz", "displayName": "Rosalind Brumm", "avatarSeed": "rosalind-brumm" },
+      { "handle": "delm", "displayName": "Del Meeker", "avatarSeed": "del-meeker" },
+      { "handle": "marta", "displayName": "Marta Kessling", "avatarSeed": "marta-kessling" },
+      { "handle": "akrug", "displayName": "Anneliese Krug", "avatarSeed": "anneliese-krug" },
+      { "handle": "bq", "displayName": "Bree Quandt", "avatarSeed": "bree-quandt" },
+      { "handle": "ife", "displayName": "Ife Okonkwo", "avatarSeed": "ife-okonkwo" },
+      { "handle": "tams", "displayName": "Tamsin Boesch", "avatarSeed": "tamsin-boesch" },
+      { "handle": "nissley", "displayName": "Court Nissley", "avatarSeed": "court-nissley" },
+      { "handle": "wsipes", "displayName": "Wendell Sipes", "avatarSeed": "wendell-sipes" },
+      { "handle": "regcavey", "displayName": "Reg Cavey", "avatarSeed": "reg-cavey" },
+      { "handle": "gtollman", "displayName": "Gary Tollman", "avatarSeed": "gary-tollman" },
+      { "handle": "carrowwireless", "displayName": "Carrow Wireless Repair", "avatarSeed": "carrow-wireless" },
+      { "handle": "dov@openfield.social", "displayName": "Dov Lurie (moved)", "avatarSeed": "dov-lurie" },
+      { "handle": "tess@verityfeed.social", "displayName": "Tess Ruddock (verityfeed)", "avatarSeed": "tess-ruddock" }
+    ],
+    "feed": [
+      {
+        "id": "p01",
+        "author": "Rosalind Brumm",
+        "handle": "roz",
+        "avatarSeed": "rosalind-brumm",
+        "time": "Mar 14, 2025 6:20 PM",
+        "kind": "human",
+        "likes": 24,
+        "reposts": 9,
+        "body": "[b]Pinned.[/b] Read this before you ask me where your direct messages went.\n\nWe are off Parlance as of about four o'clock this afternoon. They went from $6 a month to $29 a month on 1 February in a blog post I did not see, and I am not paying $348 a year for 140 people who mostly post about weather.\n\n[b]What moved[/b]\n[list][*]Your account, your posts, your followers, your follows, your lists.[*]Your uploads, most of them. Anything posted before March 2023 lost its file and kept its post. You will see a grey box. That is the box.[/list]\n\n[b]What did not move[/b]\n[list][*]Direct messages. All of them. Gone, on both ends, permanently. I said this four times in February and I am saying it a fifth time here.[*]Saved drafts.[*]Scheduled posts, which is why three of you posted nothing for a week and thought you had been quietly throttled.[/list]\n\n[b]What you have to do[/b]\nNothing, if you logged in today and it worked. If a client asks you to sign in again, sign in again. The address is the same address — that was the point of paying for the name in 2022.\n\nBackups run at 3am and I keep fourteen of them. Your own export is in Settings and I would rather you had one than trusted me.\n\n— Roz",
+        "replies": [
+          {
+            "id": "p01r1",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Mar 14, 2025 7:55 PM",
+            "body": "Came through fine on my end. Thank you for doing this on a Saturday instead of asking anybody to help and then having to manage them."
+          },
+          {
+            "id": "p01r2",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Mar 15, 2025 8:12 AM",
+            "body": "14 March. You moved the server on the anniversary of the last freight run out of Marchfield. 2008. I doubt you planned that."
+          },
+          {
+            "id": "p01r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Mar 15, 2025 8:40 AM",
+            "body": "I did not plan it. I had a Saturday."
+          },
+          {
+            "id": "p01r4",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Jun 2, 2026 9:05 PM",
+            "body": "Sorry to dig up something this old. Are the old DMs recoverable from one of the backups? There is a thread in there I would like back."
+          },
+          {
+            "id": "p01r5",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Jun 2, 2026 9:31 PM",
+            "body": "No. Third paragraph, under What did not move.\n\nThis post is pinned to the top of the front page. It is where you found it in order to reply to it."
+          },
+          {
+            "id": "p01r6",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 12, 2026 7:44 PM",
+            "body": "Reading this eighteen months late because somebody linked it at me. The grey box on my 2022 photos is the grey box. Mystery solved, nobody's fault, and it was written down the whole time."
+          }
+        ]
+      },
+      {
+        "id": "p02",
+        "author": "Rosalind Brumm",
+        "handle": "roz",
+        "avatarSeed": "rosalind-brumm",
+        "time": "Sep 20, 2026 8:12 AM",
+        "kind": "human",
+        "likes": 19,
+        "reposts": 3,
+        "body": "cw: none, this is server housekeeping and it is dull\n\nThe box has a 60 GB disk and 51 GB of it was other people's avatars.\n\nRemote media — every image, every header, every custom emoji from every server anybody here follows — was set to cache for 90 days, because 90 days is the default and I never changed it. It is 14 days now.\n\nNumbers, because I said I would always give you the numbers:\n[list][*]Before: 51.4 GB of cached remote media, 6.2 GB of ours.[*]After the prune: 7.8 GB of cached remote media, 6.2 GB of ours.[*]Time: 41 minutes, nearly all of it the delete.[/list]\n\nWhat you will see: images on old posts from other servers go grey until somebody opens the post and it fetches them again. If the other server is gone, it stays grey forever. Two of the servers in our timeline history are gone.\n\nOur own uploads are untouched and stay untouched. I added a $3 volume in August so I would stop having to think about this, and then I thought about it anyway.\n\nIf the disk ever does fill, the thing that breaks first is not posting. It is the database. And then I am restoring from a 3am backup like an idiot. So: 14 days.",
+        "replies": [
+          {
+            "id": "p02r1",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 20, 2026 8:26 AM",
+            "body": "fifty one gigabytes of other people's faces"
+          },
+          {
+            "id": "p02r2",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 20, 2026 8:29 AM",
+            "body": "Yes."
+          },
+          {
+            "id": "p02r3",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 20, 2026 8:51 AM",
+            "body": "Is this why my goat header went grey on the phone and not on the laptop?"
+          },
+          {
+            "id": "p02r4",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 20, 2026 9:02 AM",
+            "body": "No. That is your phone's own cache, which I cannot reach and do not want to be able to reach."
+          },
+          {
+            "id": "p02r5",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 20, 2026 9:20 AM",
+            "body": "For what it is worth, I would rather have grey boxes and a post like this than a donate button and never hear a number."
+          },
+          {
+            "id": "p02r6",
+            "author": "Tess Ruddock",
+            "handle": "tess@verityfeed.social",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 20, 2026 10:04 AM",
+            "body": "90 days is the default and it is wrong for every server under a thousand people. I went to 21 and nobody noticed for a month."
+          },
+          {
+            "id": "p02r7",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 20, 2026 10:19 AM",
+            "body": "21 would have been fine. I was cross with it."
+          },
+          {
+            "id": "p02r8",
+            "author": "Dov Lurie",
+            "handle": "dov@openfield.social",
+            "avatarSeed": "dov-lurie",
+            "time": "Sep 20, 2026 11:37 AM",
+            "body": "openfield keeps remote media a year and has never once made me look at a number like this. I am not saying that as an argument. I am saying it because it is true, and it is also why the first thing I read this morning was here."
+          }
+        ]
+      },
+      {
+        "id": "p03",
+        "author": "Tamsin Boesch",
+        "handle": "tams",
+        "avatarSeed": "tamsin-boesch",
+        "time": "Sep 19, 2026 9:40 PM",
+        "kind": "human",
+        "likes": 27,
+        "reposts": 6,
+        "body": "cw: night driving, and the thing on 62, which I know some of you are tired of\n\nI do the Ashkettle to Halsey run three nights a week and I keep a radio in the truck because the phone gets nothing past the cut.\n\n11:07 last night. 4.2190. The voice, four digits at a time, same as it has been every odd hour since before I could drive. I do not have a theory about it. I have a thermos.\n\nWhat I actually wanted to say is that there were six cars in the pull-off at the quarry cut. Six. A Friday in September. Two people were standing on car roofs holding phones up.\n\nThere is no shoulder there. The sheriff's office has said there is no law against parking on the 62 shoulder, which is true, and which is not the same as it being a good idea, and one of those six was half in the lane.\n\n[url=synth://milbrookgazette.com/article/shoulder-parking]The Gazette wrote that up in 2016[/url]. Same pull-off. Same argument. Ten years of the same argument and now there are six cars in it.",
+        "replies": [
+          {
+            "id": "p03r1",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 19, 2026 10:02 PM",
+            "body": "That pull-off was cut so the quarry trucks had somewhere to turn in. It was never a viewing platform and it is not wide enough to be one."
+          },
+          {
+            "id": "p03r2",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 19, 2026 10:15 PM",
+            "body": "a grown adult standing on the roof of a car holding a telephone up at a radio signal"
+          },
+          {
+            "id": "p03r3",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 19, 2026 10:41 PM",
+            "body": "It is the cancelled game, isn't it. There was a studio that folded and the transmitter was part of an alternate reality thing they never launched. That has been documented for years."
+          },
+          {
+            "id": "p03r4",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 19, 2026 11:08 PM",
+            "body": "The forum post that story comes from was retracted by the man who wrote it. In 2016. The retraction is four posts further down the same thread and in ten years I have never once seen anybody link it.\n\n[url=synth://sdrlisteners.org/topic/t-02]Master thread, if you want to read the whole thing[/url]. It is long and it does not arrive anywhere."
+          },
+          {
+            "id": "p03r5",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 19, 2026 11:20 PM",
+            "body": "Huh. Well, that is annoying."
+          },
+          {
+            "id": "p03r6",
+            "author": "Tamsin Boesch",
+            "handle": "tams",
+            "avatarSeed": "tamsin-boesch",
+            "time": "Sep 20, 2026 6:02 AM",
+            "body": "I did not say what it is. I said there were six cars."
+          },
+          {
+            "id": "p03r7",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Sep 20, 2026 8:30 AM",
+            "body": "There is a retired lineman out your way who has been logging that thing since the nineties. Writes every bit of it down, I am told."
+          },
+          {
+            "id": "p03r8",
+            "author": "Tamsin Boesch",
+            "handle": "tams",
+            "avatarSeed": "tamsin-boesch",
+            "time": "Sep 20, 2026 9:14 AM",
+            "body": "Since 2019, and he says so himself, in almost every post, because people keep telling him it was the nineties. [url=synth://pennock-sdr.net/]His page is here[/url]. Timestamps, signal strength, weather, all of it, and no theory at the end of it, which is the part nobody copies."
+          },
+          {
+            "id": "p03r9",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 20, 2026 9:50 AM",
+            "body": "Six cars is the story. Somebody is going to get hit out there and then we will all find out how fast the county can widen a pull-off."
+          }
+        ]
+      },
+      {
+        "id": "p04",
+        "author": "Clarion Context",
+        "handle": "clarion",
+        "avatarSeed": "clarion-context",
+        "time": "Sep 19, 2026 1:15 PM",
+        "kind": "bot",
+        "likes": 1,
+        "reposts": 0,
+        "body": "[b]Context label applied[/b]\n\nPost: \"the old substation photograph\" by @regcavey, 18 September\n\nLabel: [b]Missing context[/b]\n\nContext: The Gridfall substation fire occurred in 2004 and was caused by a lightning strike during a summer storm. Two people died. High-confidence sources: 11.\n\nThis label is visible on every instance subscribed to Clarion Context. The author may request a review. Reviews are typically completed within 30 days.\n\n{{instance_display_name}} has had 3 labels applied this week.",
+        "replies": [
+          {
+            "id": "p04r1",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Sep 19, 2026 1:44 PM",
+            "body": "It was 2003. It was June, at about ten to five in the morning, and nobody died. Two Gridfall volunteers went to County General for smoke and were home by the afternoon.\n\nI was nineteen miles away and I still know that, because it was in the paper the next day."
+          },
+          {
+            "id": "p04r2",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 19, 2026 2:10 PM",
+            "body": "[url=synth://verityledger.com/article/fire-2003]The Ledger, the morning after[/url]. \"Substation Fire Leaves 4,100 Without Power.\" You do not have to read the whole thing. The date is at the top of it."
+          },
+          {
+            "id": "p04r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 19, 2026 2:35 PM",
+            "body": "I have asked Clarion twice whether I can switch off one label class and keep the financial-scam one. Both answers were a paragraph about trust and safety, then a second paragraph about trust and safety."
+          },
+          {
+            "id": "p04r4",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 19, 2026 3:02 PM",
+            "body": "eleven high confidence sources and I would bet the lot of them are the same video thumbnail with an orange sky on it"
+          },
+          {
+            "id": "p04r5",
+            "author": "Clarion Context",
+            "handle": "clarion",
+            "avatarSeed": "clarion-context",
+            "time": "Sep 19, 2026 3:03 PM",
+            "body": "Thank you for your feedback. Review requests are processed in the order in which they are received."
+          },
+          {
+            "id": "p04r6",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 19, 2026 3:29 PM",
+            "body": "I have not requested a review. I have never been able to find where you request a review."
+          }
+        ]
+      },
+      {
+        "id": "p05",
+        "author": "Marta Kessling",
+        "handle": "marta",
+        "avatarSeed": "marta-kessling",
+        "time": "Sep 18, 2026 7:02 PM",
+        "kind": "human",
+        "likes": 31,
+        "reposts": 11,
+        "body": "cw: food, money, and me asking for something\n\nPantry numbers for August, because I said I would post them every month and then did not for two months.\n\n[list][*]Households served: 141. August last year: 106.[*]New households: 29.[*]Eleven of those 29 gave a Kerrin address, which is not our catchment, and I do not care, and neither should you.[/list]\n\nWhat we are short of is not food. It is:\n[list][*]Somebody who can drive the van a Thursday morning, twice a month.[*]Shelf space, which is a building problem and not a donation problem, and I have stopped pretending otherwise.[/list]\n\nDo not send me money. [url=synth://stmarks-verity.org/]St Mark's[/url] has the hours right on their own page, which I mention because [url=synth://verity.county.gov/]the county's human services listing[/url] still has us at the old address, four years after we moved two hundred yards.",
+        "replies": [
+          {
+            "id": "p05r1",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 18, 2026 7:20 PM",
+            "body": "I will do a Thursday. Put me down for the 2nd and the 16th of October."
+          },
+          {
+            "id": "p05r2",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 18, 2026 7:41 PM",
+            "body": "Same. I can do the 9th, and the 23rd if it is not a half day."
+          },
+          {
+            "id": "p05r3",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 18, 2026 8:03 PM",
+            "body": "Two drivers off one post. I have emailed the county about the address three times since 2022 and got one reply, which was an automatic one."
+          },
+          {
+            "id": "p05r4",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 18, 2026 8:30 PM",
+            "body": "Which listing exactly? I will try it from the hospital side. Sometimes that gets answered because it comes in on a different form."
+          },
+          {
+            "id": "p05r5",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 18, 2026 8:52 PM",
+            "body": "Human services, food assistance, third one down. The little line at the bottom of the page says last updated 2019, and I have come to find that line comforting, because at least it is honest."
+          }
+        ]
+      },
+      {
+        "id": "p06",
+        "author": "Gridline Bridge",
+        "handle": "bridge",
+        "avatarSeed": "gridline-bridge",
+        "time": "Sep 18, 2026 8:31 AM",
+        "kind": "bot",
+        "likes": 0,
+        "reposts": 0,
+        "body": "New on Gridline: What Really Happened The Night Verity County Went Dark (2004)\n\ngridline.social · 412 points · 88 comments\n\n[url=synth://gridline.social/item/l-002]Discuss on Gridline[/url]",
+        "replies": [
+          {
+            "id": "p06r1",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 18, 2026 8:47 AM",
+            "body": "Gary. You said you had turned this off. [url=/post/p13]A week ago.[/url]"
+          },
+          {
+            "id": "p06r2",
+            "author": "Gary Tollman",
+            "handle": "gtollman",
+            "avatarSeed": "gary-tollman",
+            "time": "Sep 18, 2026 9:05 AM",
+            "body": "I turned off the one that mirrors my submissions. This is the one that mirrors things I upvote. It is a separate box. I did not know it was a separate box."
+          },
+          {
+            "id": "p06r3",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 18, 2026 9:22 AM",
+            "body": "It is also 2003, and it is also not what happened, and 412 people have now upvoted it."
+          },
+          {
+            "id": "p06r4",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 18, 2026 9:40 AM",
+            "body": "Bridge is suspended until it has one box instead of two. Gary is not suspended. Gary is going to hear about this at the fair."
+          },
+          {
+            "id": "p06r5",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 18, 2026 10:11 AM",
+            "body": "the bot got told off, the man got told off, the bot got suspended, the man got a comment. correct order in my opinion"
+          }
+        ]
+      },
+      {
+        "id": "p07",
+        "author": "Rosalind Brumm",
+        "handle": "roz",
+        "avatarSeed": "rosalind-brumm",
+        "time": "Sep 17, 2026 6:48 PM",
+        "kind": "human",
+        "likes": 22,
+        "reposts": 2,
+        "body": "The tip page, since three people have asked and one person has asked twice.\n\nIt exists. It has been up since April. It is not in the sidebar and it is not going in the sidebar.\n\nSeptember so far: $6.00, from four people. The bill is $14.33. So it covers about 40%, which is the highest it has ever been, and I wanted it written down somewhere before it goes back to 20% in October.\n\nTwo of the four give a dollar. I am telling you that on purpose. On a server this size a dollar is not a token, it is seven percent of the electricity bill for the county's only room where nobody is selling anything.\n\nWhat I will not do with it:\n[list][*]Turn it into a membership.[*]Put a badge on anybody.[*]Put a bar at the top of the page that fills up.[/list]\n\nWhat happens if it stops: nothing. The $14.33 comes out of the same account as the propane and it has since 2022.\n\nIf you have money for something in the county this month, put it in [url=/post/p05]Marta's pantry[/url] instead. They need a Thursday driver more than they need the money, and they need the money more than I need $1.50.",
+        "replies": [
+          {
+            "id": "p07r1",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 17, 2026 7:15 PM",
+            "body": "I did not ask her to do that."
+          },
+          {
+            "id": "p07r2",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 17, 2026 7:18 PM",
+            "body": "She did not."
+          },
+          {
+            "id": "p07r3",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 17, 2026 8:02 PM",
+            "body": "Genuine question and not a dig: at what number of accounts does this stop working? Because this is a good thing that currently runs on one woman not minding."
+          },
+          {
+            "id": "p07r4",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 17, 2026 8:26 PM",
+            "body": "About 300, I think. And not because of the money. Because of reports. Money is linear and reports are not."
+          },
+          {
+            "id": "p07r5",
+            "author": "Tess Ruddock",
+            "handle": "tess@verityfeed.social",
+            "avatarSeed": "tess-ruddock",
+            "time": "Sep 17, 2026 9:11 PM",
+            "body": "180 and I am at the edge of it. The money has never once been the thing."
+          },
+          {
+            "id": "p07r6",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 17, 2026 9:48 PM",
+            "body": "the bar at the top that fills up. i have never in my life seen one of those get to the end"
+          }
+        ]
+      },
+      {
+        "id": "p08",
+        "author": "Bree Quandt",
+        "handle": "bq",
+        "avatarSeed": "bree-quandt",
+        "time": "Sep 17, 2026 12:20 PM",
+        "kind": "human",
+        "likes": 14,
+        "reposts": 1,
+        "body": "cw: photo (hardware, no people)\n\n[img:photo:hollis-market-hinge-drawer]\n\nthe drawer of loose hinges at Hollis Market is now two drawers of loose hinges. no sign. no divider. no system. best shop in the county",
+        "replies": [
+          {
+            "id": "p08r1",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 17, 2026 12:44 PM",
+            "body": "There is a system. [url=synth://hollismarket.com/]Ada[/url] knows the system."
+          },
+          {
+            "id": "p08r2",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 17, 2026 12:51 PM",
+            "body": "ada is the system"
+          },
+          {
+            "id": "p08r3",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 17, 2026 1:30 PM",
+            "body": "Second drawer is the ones that came off the church hall doors when they rehung them. She will tell you the whole thing if you ask, and it takes a while, and it is worth it."
+          },
+          {
+            "id": "p08r4",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 17, 2026 1:36 PM",
+            "body": "well now i feel bad about the word system"
+          }
+        ]
+      },
+      {
+        "id": "p09",
+        "author": "Wendell Sipes",
+        "handle": "wsipes",
+        "avatarSeed": "wendell-sipes",
+        "time": "Sep 16, 2026 8:05 PM",
+        "kind": "human",
+        "likes": 8,
+        "reposts": 0,
+        "body": "cw: the federation thing again, sorry, and then I will stop\n\nI am going to raise it one more time.\n\nopenfield.social has about 96,000 accounts. We have 140. My sister lives in Halsey, eleven miles from me, and she cannot see anything I write unless she goes looking for it, because we do not federate with them and their relay is the one everybody else in this state is on.\n\nThe reasons we said no in June were: their reports go to a contractor, their block list is shorter than ours, and Roz would be doing moderation for 96,000 people's worth of replies to 140 people's posts.\n\nThose are all still true. I am asking whether they are worth what we pay for them, which is that this place is quiet.\n\n[url=/post/p22]The June thread is here.[/url] I have read it again this evening. I have not changed my mind, and I am aware that makes me the tedious one.",
+        "replies": [
+          {
+            "id": "p09r1",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 16, 2026 8:22 PM",
+            "body": "Your sister can make an account here. Roz approves them in about eleven seconds."
+          },
+          {
+            "id": "p09r2",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 16, 2026 8:29 PM",
+            "body": "She will not. And that is not a flaw in her."
+          },
+          {
+            "id": "p09r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 16, 2026 8:55 PM",
+            "body": "Numbers, since we are doing this properly.\n\nIn August this instance produced 2,140 posts. 61 of them left the building at all, and they left because they were replies to somebody on another server. The most-boosted post in our history got 31 boosts and nine of those were Bree.\n\nThat is our reach. It has been our reach for four years. I am not defending it, I am telling you what it is before anybody argues about it."
+          },
+          {
+            "id": "p09r4",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 16, 2026 9:01 PM",
+            "body": "i have one account"
+          },
+          {
+            "id": "p09r5",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 16, 2026 9:04 PM",
+            "body": "You have one account and you boost like nine people."
+          },
+          {
+            "id": "p09r6",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 16, 2026 9:30 PM",
+            "body": "I came here off a big server. I did not leave because of an argument. I left because I could not find anything twice."
+          },
+          {
+            "id": "p09r7",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 16, 2026 9:48 PM",
+            "body": "Quiet is the product. I know how smug that sounds and I am saying it anyway, at 68."
+          },
+          {
+            "id": "p09r8",
+            "author": "Dov Lurie",
+            "handle": "dov@openfield.social",
+            "avatarSeed": "dov-lurie",
+            "time": "Sep 16, 2026 10:12 PM",
+            "body": "It is fine over here. It is also four hundred replies to a post about a bin. Both of those are true and neither is the interesting part."
+          },
+          {
+            "id": "p09r9",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 16, 2026 10:40 PM",
+            "body": "Answer is still no. It is not a permanent no, and I am not going to pretend I would settle it by a vote, because it is my disk and my evenings and my name on the abuse contact.\n\nIf that is the wrong arrangement then the right arrangement is a different server, and that is a real option and not a threat, and Dov is proof it can be done without anybody falling out."
+          },
+          {
+            "id": "p09r10",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 16, 2026 11:02 PM",
+            "body": "That is fair. Done raising it until something changes."
+          }
+        ]
+      },
+      {
+        "id": "p10",
+        "author": "Anneliese Krug",
+        "handle": "akrug",
+        "avatarSeed": "anneliese-krug",
+        "time": "Sep 15, 2026 7:30 AM",
+        "kind": "human",
+        "likes": 26,
+        "reposts": 7,
+        "body": "cw: local politics, school buses, long\n\nKerrin consolidated is losing two bus routes in January and the board spent four minutes on it.\n\nWhat is happening: routes 4 and 7 merge. The merged route is 71 minutes end to end. There are six-year-olds at the far end of route 7.\n\nWhat was said at the meeting: that the merge is driver availability, which is true, and that it is temporary, which is also what was said in 2023 about the route they merged in 2023.\n\nWhat was not said: that the district has been two drivers short since March, and advertised the job once, on [url=synth://verity-careers-portal.com/]the county careers portal[/url], at $18.40 an hour. The highway department pays more than that to plough.\n\nI am not neutral here. I teach fourth grade and four of mine are on route 7. But the four minutes is the thing I keep coming back to. They spent forty on the dress code.",
+        "replies": [
+          {
+            "id": "p10r1",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 15, 2026 8:04 AM",
+            "body": "The Gazette ran a story in 2016 with exactly that shape. Four minutes on the bus, forty on the dress code. [url=synth://milbrookgazette.com/article/board-oct]Here it is.[/url]\n\nThe paper stopped that same October. The meetings did not."
+          },
+          {
+            "id": "p10r2",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 15, 2026 8:19 AM",
+            "body": "I had not seen that. That is worse somehow. Ten years and the same two agenda items in the same proportion."
+          },
+          {
+            "id": "p10r3",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 15, 2026 8:47 AM",
+            "body": "$18.40 an hour and a CDL and twenty-six children."
+          },
+          {
+            "id": "p10r4",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 15, 2026 12:10 PM",
+            "body": "The hospital pays $21.10 for a shuttle driver, and that shuttle has no children on it and does one loop of a car park."
+          },
+          {
+            "id": "p10r5",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 15, 2026 5:33 PM",
+            "body": "Is there a recording of the meeting anywhere?"
+          },
+          {
+            "id": "p10r6",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 15, 2026 6:02 PM",
+            "body": "There is audio. On request. On a CD. I am not making that up.\n\nThe request form is a PDF and it asks for a fax number, and the fax number field is required, and I have tried."
+          }
+        ]
+      },
+      {
+        "id": "p11",
+        "author": "Reg Cavey",
+        "handle": "regcavey",
+        "avatarSeed": "reg-cavey",
+        "time": "Sep 14, 2026 9:10 PM",
+        "kind": "human",
+        "likes": 18,
+        "reposts": 4,
+        "body": "cw: scan, four pages, and a small complaint at the end\n\nThe Kestrel Letter came Saturday. Autumn issue. Four pages, photocopied, staple in the top left at the same angle it has been at for years.\n\n[img:photo:kestrel-letter-autumn-2026]\n\nPage two is the booth by the window and who sat in it on Sunday mornings between 1974 and 1977, with names, and where they parked. Page three is the pie recipe again, with a line added at the bottom saying it was never a good pie and she has stopped apologising for it.\n\nI scan it because sixty-one people get it in the post and three of those are libraries. Her own site has been sitting there unchanged since 2019 — [url=synth://kestrel-journal.net/]it is still up[/url], and she has said she is not going back to it.\n\nThe complaint: this scan has now been labelled [b]Synthetic media — likely AI-generated[/b] by the thing attached to this server. A photocopy of a typed newsletter, made by a woman in Coyne Flats who does not use the internet, on purpose.",
+        "replies": [
+          {
+            "id": "p11r1",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 14, 2026 9:31 PM",
+            "body": "I saw it. I have reported it as a false positive, which puts it into a queue I cannot see, run by people I cannot name, and I will tell you when I hear, which will be never."
+          },
+          {
+            "id": "p11r2",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 14, 2026 9:44 PM",
+            "body": "the machine thinks marion teale is a language model"
+          },
+          {
+            "id": "p11r3",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 14, 2026 10:07 PM",
+            "body": "She would take that as a compliment for about four seconds and then she would want to know what it cost and who was paying."
+          },
+          {
+            "id": "p11r4",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 15, 2026 7:02 AM",
+            "body": "Somebody posts your scan to Gridline every quarter and a bot writes a summary of it underneath that gets the decade wrong. [url=synth://gridline.social/item/l-010]This one has her in the fifties.[/url]"
+          },
+          {
+            "id": "p11r5",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Sep 15, 2026 8:15 AM",
+            "body": "1971 to 1979. She puts it on the front page of every issue she has ever sent, in the same sentence, in the same place. It is the one thing she has never had to correct and it is the one thing they always get wrong."
+          }
+        ]
+      },
+      {
+        "id": "p12",
+        "author": "Bree Quandt",
+        "handle": "bq",
+        "avatarSeed": "bree-quandt",
+        "time": "Sep 13, 2026 4:30 PM",
+        "kind": "human",
+        "likes": 6,
+        "reposts": 0,
+        "body": "somebody at the co-op told me the whole Ledger is online now. 1911 to 1998. free, no account. is that real because that would be enormous",
+        "replies": [
+          {
+            "id": "p12r1",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 13, 2026 4:52 PM",
+            "body": "That is a Gridline headline. [url=synth://gridline.social/item/l-007]This one.[/url] It has been sat up there for months collecting points."
+          },
+          {
+            "id": "p12r2",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 13, 2026 5:20 PM",
+            "body": "It is not the scans. It is the name index. If you search a surname on [url=synth://wiki.gridfall.net/wiki/verity-county]the wiki[/url] and the person turns up in the Ledger between 1954 and 1958, you get the date and the page number instead of just a year.\n\nShe did that in five weeks while the microfilm reader was broken, because she had nothing else she could do with the reels."
+          },
+          {
+            "id": "p12r3",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 13, 2026 5:26 PM",
+            "body": "who is she"
+          },
+          {
+            "id": "p12r4",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 13, 2026 5:44 PM",
+            "body": "The archivist at Marchfield. She has been at it since 2016 and she was somewhere in 1962 the last time she posted a number. 58,900 pages as of February, and the paper gets fatter after 1959, so a year of it takes longer every year.\n\nThere is a great deal of 1963 left, and then there is 1964."
+          },
+          {
+            "id": "p12r5",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 13, 2026 6:30 PM",
+            "body": "The Ledger's own site ran a piece saying the library had digitised the historic archives, which is where the Gridline headline came from, which is where the man at the co-op came from. [url=synth://now.verityledger.com/article/a-08]It is this.[/url] Nobody in that chain rang the library."
+          },
+          {
+            "id": "p12r6",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 13, 2026 6:41 PM",
+            "body": "so the answer is no, but slowly yes"
+          },
+          {
+            "id": "p12r7",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 13, 2026 7:05 PM",
+            "body": "The answer is a woman and a machine that jams. [url=synth://marchfieldlibrary.blog/post/into-1960]She writes it up when a reel finishes.[/url] It is the least dramatic thing on the internet and it is the only one of these that is actually happening."
+          }
+        ]
+      },
+      {
+        "id": "p13",
+        "author": "Gridline Bridge",
+        "handle": "bridge",
+        "avatarSeed": "gridline-bridge",
+        "time": "Sep 11, 2026 7:55 AM",
+        "kind": "bot",
+        "likes": 0,
+        "reposts": 0,
+        "body": "New on Gridline: Verity County Officials Confirm Routine Maintenance At Substation No. 3\n\ngridline.social · 8 points · 2 comments\n\n[url=synth://gridline.social/item/l-001]Discuss on Gridline[/url]",
+        "replies": [
+          {
+            "id": "p13r1",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 11, 2026 8:10 AM",
+            "body": "That is the ninth of these since six o'clock this morning."
+          },
+          {
+            "id": "p13r2",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 11, 2026 8:24 AM",
+            "body": "I have muted it and I would rather not have had to. Muting somebody on a server this small is a strange thing to do to a person you know."
+          },
+          {
+            "id": "p13r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 11, 2026 8:41 AM",
+            "body": "@gtollman this one is yours. Rule four. One a day off a feed is a feed."
+          },
+          {
+            "id": "p13r4",
+            "author": "Gary Tollman",
+            "handle": "gtollman",
+            "avatarSeed": "gary-tollman",
+            "time": "Sep 11, 2026 9:06 AM",
+            "body": "Sorry. It is a bridge, it mirrors whatever I submit over there. I submitted nine things because I was clearing tabs before work."
+          },
+          {
+            "id": "p13r5",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 11, 2026 9:30 AM",
+            "body": "Seven of the nine were the Ledger's own pipeline, resubmitted to Gridline by a feed bot, then mirrored in here by your bot. So the only person anywhere in that chain is you, and you were clearing tabs."
+          },
+          {
+            "id": "p13r6",
+            "author": "Gary Tollman",
+            "handle": "gtollman",
+            "avatarSeed": "gary-tollman",
+            "time": "Sep 11, 2026 9:38 AM",
+            "body": "That is a fair hit and I am not going to argue with it."
+          },
+          {
+            "id": "p13r7",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 11, 2026 9:55 AM",
+            "body": "Turn it down to one a day or turn it off. I am not going to defederate a man I have stood next to at the fair for nine years over a checkbox."
+          },
+          {
+            "id": "p13r8",
+            "author": "Gary Tollman",
+            "handle": "gtollman",
+            "avatarSeed": "gary-tollman",
+            "time": "Sep 11, 2026 10:12 AM",
+            "body": "Off. It is off."
+          }
+        ]
+      },
+      {
+        "id": "p14",
+        "author": "Ife Okonkwo",
+        "handle": "ife",
+        "avatarSeed": "ife-okonkwo",
+        "time": "Sep 9, 2026 6:40 PM",
+        "kind": "human",
+        "likes": 29,
+        "reposts": 5,
+        "body": "cw: medical, hospital pharmacy, nothing bad happens to anybody\n\nWe changed ordering systems at County General in June. Third system since I started in 2019.\n\nIt is better in one way, and I want to say that first: it flags two interactions the old one missed. That is not nothing. That is the whole reason to have a system.\n\nIt is worse in four ways, and all four are the same way, which is that it was built for a hospital with a pharmacy that is open twenty-four hours. Ours is not.\n\nBetween eleven at night and seven in the morning it will let a floor order something we cannot dispense until morning, and it does not say so. It says pending. It has said pending for eight hours and then gone on saying pending.\n\nWe have a workaround. The workaround is a laminated sheet taped to the counter with a phone number on it.\n\nEvery system I have ever worked with ends as a laminated sheet. Nobody has been harmed and I want to be clear about that. But the sheet is the actual interface, and not one person who bought that software has ever seen the sheet.",
+        "replies": [
+          {
+            "id": "p14r1",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 9, 2026 7:02 PM",
+            "body": "Every system I have ever worked with ends as a laminated sheet. I am going to be thinking about that all week and probably at work."
+          },
+          {
+            "id": "p14r2",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 9, 2026 7:30 PM",
+            "body": "Ours is a whiteboard with three phone numbers on it and one of them is somebody's mobile and she retired in June."
+          },
+          {
+            "id": "p14r3",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 9, 2026 8:01 PM",
+            "body": "The pantry's is an index card box."
+          },
+          {
+            "id": "p14r4",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 9, 2026 8:14 PM",
+            "body": "the index card box works though"
+          },
+          {
+            "id": "p14r5",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Sep 9, 2026 8:22 PM",
+            "body": "The index card box has worked since 1998 and I will be buried with it."
+          }
+        ]
+      },
+      {
+        "id": "p15",
+        "author": "Carrow Wireless Repair",
+        "handle": "carrowwireless",
+        "avatarSeed": "carrow-wireless",
+        "time": "Sep 8, 2026 9:20 AM",
+        "kind": "promoted",
+        "likes": 11,
+        "reposts": 2,
+        "body": "Shut all day Thursday 10 September. Parts run, and the machine that does screens is being serviced.\n\nWalk-in again Friday from nine. If you left a phone with us Monday it is finished and you can collect it Friday.\n\nBatteries for the 2019 to 2022 models are back in. No appointment, we have never taken appointments, please stop ringing to make one.\n\nWe are in the old Blue Kestrel building on 62. The bird on the roof is not ours and is staying. The lit sign underneath it is ours. [url=synth://carrowwireless.com/hours]Hours are on the site[/url] and they are correct, which took some doing.",
+        "replies": [
+          {
+            "id": "p15r1",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 8, 2026 9:41 AM",
+            "body": "@roz is this rule 1"
+          },
+          {
+            "id": "p15r2",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 8, 2026 10:03 AM",
+            "body": "It is a shop telling you it is shut. That is the town crier and I am not banning the town crier.\n\nIf it starts being a shop telling you about itself, it is rule 1, and they know that because I said it to them in the shop while they were fixing my phone."
+          },
+          {
+            "id": "p15r3",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Sep 8, 2026 11:15 AM",
+            "body": "The bird on the roof is the reason half the county can find that building and none of them can tell you the street number."
+          },
+          {
+            "id": "p15r4",
+            "author": "Tamsin Boesch",
+            "handle": "tams",
+            "avatarSeed": "tamsin-boesch",
+            "time": "Sep 8, 2026 1:40 PM",
+            "body": "It has been a vape shop and it has been empty and it has been this, and people still say meet me at the Kestrel, and the diner has been shut since 2006."
+          }
+        ]
+      },
+      {
+        "id": "p16",
+        "author": "Court Nissley",
+        "handle": "nissley",
+        "avatarSeed": "court-nissley",
+        "time": "Sep 5, 2026 10:05 AM",
+        "kind": "human",
+        "likes": 16,
+        "reposts": 3,
+        "body": "cw: bird, alive, no gore — and I am putting that there because somebody asked me to and it costs me nothing\n\n[img:photo:merlin-quarry-cut]\n\nSmall falcon over the quarry cut pull-off on Monday, about half seven. I think merlin. Two people on the birders board think kestrel, and one of them has been birding since before I was born.\n\nThe argument is the wingbeat. My photograph does not show a wingbeat, because it is a photograph.\n\n[url=synth://veritybirders.org/topic/t-merlin]The thread is here[/url] if you want to watch three people be polite to each other about it for nine posts.",
+        "replies": [
+          {
+            "id": "p16r1",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Sep 5, 2026 10:30 AM",
+            "body": "The class would like this. Can I put it on the board at school with your name on it?"
+          },
+          {
+            "id": "p16r2",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 5, 2026 10:38 AM",
+            "body": "Yes. Court, not Kurt, is the only thing."
+          },
+          {
+            "id": "p16r3",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 5, 2026 11:02 AM",
+            "body": "nine polite posts. on the internet. in a disagreement."
+          },
+          {
+            "id": "p16r4",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Sep 5, 2026 11:20 AM",
+            "body": "That board has had the same rules since 2013 and reposts them every January without changing a word. That is the entire trick and nobody wants it to be the trick."
+          }
+        ]
+      },
+      {
+        "id": "p17",
+        "author": "Rosalind Brumm",
+        "handle": "roz",
+        "avatarSeed": "rosalind-brumm",
+        "time": "Sep 2, 2026 8:20 PM",
+        "kind": "human",
+        "likes": 21,
+        "reposts": 4,
+        "body": "The block list, updated, with reasons. I publish it because a server that blocks quietly is a server you cannot check.\n\n[b]Suspended[/b] — nothing passes, either direction\n[list][*]brightside.host — 900 accounts, all of them feeds, one contact address and it bounces.[*]freeforall.zone — open registration, no moderation policy of any kind, 31 reports from here in June alone.[*]copperkettle.social — one user. Nine months. I asked their admin twice.[*]newsdeck.bot — a syndication farm. Every post is a headline and a link and there are about four thousand a day.[*]county-energy-credit.win — the rebate one. Registered in July, suspended here in July, and it will be back under a different name.[/list]\n\n[b]Limited[/b] — you can follow them, they do not appear in the public timeline\n[list][*]pondsight.social — mostly fine. One prolific user who is not.[*]allcounty.news — a local-news network. Four hundred towns, one template, no staff. We are one of the four hundred.[/list]\n\n[b]Not blocked, and asked about every month[/b]\n[list][*]openfield.social — we do not federate with them, which is not the same as blocking them, and I am tired of the two being run together.[*]gridline.social — not a fediverse server at all. You cannot block it from here. You can stop mirroring it into here, which is a different conversation and we have had it.[/list]\n\nAppeals come to me. I have reversed exactly one block in three years and I will tell you which if you ask: copperkettle, in 2024. I put it back in January.",
+        "replies": [
+          {
+            "id": "p17r1",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Sep 2, 2026 8:44 PM",
+            "body": "Thank you for the not-blocked section. Every other server's list leaves that out and then people assume, and then the assumption is what gets repeated."
+          },
+          {
+            "id": "p17r2",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Sep 2, 2026 9:05 PM",
+            "body": "Is allcounty.news the one with the invented obituaries?"
+          },
+          {
+            "id": "p17r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 2, 2026 9:12 PM",
+            "body": "It is the one that runs real obituaries with the town name swapped. Which I think is worse, and which is why it is limited and not suspended, because people's relatives are in there and somebody might want to find one."
+          },
+          {
+            "id": "p17r4",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Sep 2, 2026 9:40 PM",
+            "body": "Limited rather than suspended is the right call and it is the harder one. Suspending is easy. Suspending feels like doing something."
+          },
+          {
+            "id": "p17r5",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Sep 2, 2026 10:01 PM",
+            "body": "\"one user. nine months. i asked their admin twice.\" most tired sentence ever written"
+          },
+          {
+            "id": "p17r6",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Sep 2, 2026 10:15 PM",
+            "body": "It is nine months of evenings written down as eleven words. That is what a block list is. Eleven words per year of somebody's life."
+          }
+        ]
+      },
+      {
+        "id": "p18",
+        "author": "Dov Lurie",
+        "handle": "dov",
+        "avatarSeed": "dov-lurie",
+        "time": "Aug 27, 2026 7:15 PM",
+        "kind": "human",
+        "likes": 33,
+        "reposts": 2,
+        "body": "cw: a goodbye, and not a dramatic one\n\nI have moved my main account to openfield.social. Not because of anything. Nobody did anything.\n\nI drive for the transit authority and I am on a phone for eleven hours a day and I want the app that works on a phone. Theirs does. The one I can use here does not, and Roz cannot fix that, because it is not hers to fix and never was.\n\nI am leaving this account up and forwarding it. Everything I have posted here stays here. I am not deleting five years because I changed apps.\n\nThings I will miss, specifically:\n[list][*]Knowing who everybody is without having to check.[*]Marta's numbers on the first week of the month.[*]That when somebody here is wrong, one person says so, once, and then it is over.[/list]\n\nThings I will not miss: nothing. There is nothing.\n\nI will still be reading. My replies will arrive from a different address and you will all be able to tell, which I find funny and which will stop being funny in about a week.",
+        "replies": [
+          {
+            "id": "p18r1",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Aug 27, 2026 7:40 PM",
+            "body": "Forwarding is set up correctly, I checked it this afternoon. Door is open, and that is not a formula: it means I will not delete the account and I will not give the handle to anybody else, ever, and that is a promise about a database row which is the only kind I can actually keep."
+          },
+          {
+            "id": "p18r2",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Aug 27, 2026 8:02 PM",
+            "body": "Eleven hours on a phone. That is the real reason and it is a good one and I wish more people gave the real one."
+          },
+          {
+            "id": "p18r3",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Aug 27, 2026 8:30 PM",
+            "body": "Which app? Genuine question, mine crashes on anything with more than two images in it."
+          },
+          {
+            "id": "p18r4",
+            "author": "Dov Lurie",
+            "handle": "dov",
+            "avatarSeed": "dov-lurie",
+            "time": "Aug 27, 2026 8:44 PM",
+            "body": "I will DM you. Which — right. I will post it instead."
+          },
+          {
+            "id": "p18r5",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Aug 27, 2026 8:47 PM",
+            "body": "he forgot the DMs thing"
+          },
+          {
+            "id": "p18r6",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Aug 27, 2026 9:10 PM",
+            "body": "Everybody forgets the DMs thing. It is in the pinned post."
+          },
+          {
+            "id": "p18r7",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Aug 27, 2026 9:26 PM",
+            "body": "It is in the pinned post."
+          }
+        ]
+      },
+      {
+        "id": "p19",
+        "author": "North Relay",
+        "handle": "northrelay",
+        "avatarSeed": "north-relay",
+        "time": "Aug 21, 2026 6:30 AM",
+        "kind": "bot",
+        "likes": 0,
+        "reposts": 0,
+        "body": "VERITY COUNTY: Rail Trail Named Among Region's Best\n\nThe Verity Branch Trail, a 14-mile crushed stone path built on the former Verity Rail branch line which closed in 2009, has been named one of the region's best rail trails.\n\nResidents say the trail is a popular destination for walking and cycling. Local officials have described the trail as an asset to the community.\n\nThe route crosses four historic trestles, all of which are open to pedestrians and offer scenic views of the surrounding countryside.\n\nVisitors to {{town_name}} are encouraged to plan their visit in advance.\n\n[url=synth://now.verityledger.com/article/a-04]Read more[/url]",
+        "replies": [
+          {
+            "id": "p19r1",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Aug 21, 2026 7:02 AM",
+            "body": "11.2 miles. Last freight was 14 March 2008. The trail opened in 2014. Three facts, three wrong, one sentence."
+          },
+          {
+            "id": "p19r2",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Aug 21, 2026 7:25 AM",
+            "body": "Four trestles, three decked. The Coyne Creek one is fenced at both ends and has been since the trail opened. Telling people it is open to pedestrians is not a typo, it is the kind of sentence that puts somebody on a beam."
+          },
+          {
+            "id": "p19r3",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Aug 21, 2026 7:50 AM",
+            "body": "This is the relay I said I would try for a month. It is week three."
+          },
+          {
+            "id": "p19r4",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Aug 21, 2026 8:11 AM",
+            "body": "town_name"
+          },
+          {
+            "id": "p19r5",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Aug 21, 2026 8:34 AM",
+            "body": "Relay is off on the first of September and I am not going to pretend I gave it a fair go. I gave it three weeks and it spent them telling people a fenced bridge is a footpath."
+          }
+        ]
+      },
+      {
+        "id": "p20",
+        "author": "Del Meeker",
+        "handle": "delm",
+        "avatarSeed": "del-meeker",
+        "time": "Aug 3, 2026 9:00 PM",
+        "kind": "human",
+        "likes": 20,
+        "reposts": 5,
+        "body": "cw: long, and it is the newspaper thing again\n\nTen years this October since the Milbrook Gazette printed anything. The note to readers said the pause was temporary and blamed a printer contract. [url=synth://milbrookgazette.com/article/note-to-readers]It is still sitting on the site[/url], which is still up, and that is the part that gets me.\n\nSince then the north end has had nothing. I do not mean nothing good. I mean the village board has met the first Tuesday of every month for ten years and there is no written record of what happened at any of them except the minutes, and the minutes are not a record of what happened. They are a record of what was voted on.\n\nTwo things that happened up here this year that nobody outside the room knows:\n[list][*]The Cobb Creek bridge posting went from eight tons to six in May. Two bus routes changed again. The Gazette covered the eight-ton posting in 2016 and there is nobody to cover the six.[*]The Tessler post office window went to two hours a day. It was four. The Gazette covered the four.[/list]\n\nI read [url=synth://thequarry.news/i/i-78]The Quarry[/url] and I read [url=synth://brenners-notebook.email/i/i-77]Brenner's thing[/url], and between them that is two people covering a county, and they are both down the south end, and that is not a criticism. That is arithmetic.",
+        "replies": [
+          {
+            "id": "p20r1",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Aug 3, 2026 9:28 PM",
+            "body": "Ruth Cannady came up to Milbrook in March. One issue. I remember it because it was the only time."
+          },
+          {
+            "id": "p20r2",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Aug 3, 2026 9:41 PM",
+            "body": "She did. All of it was about dispatch and it was good and she has not been back, and she cannot be, because she is one person and there is one of her."
+          },
+          {
+            "id": "p20r3",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Aug 3, 2026 10:04 PM",
+            "body": "Is the archive going to stay up? Somebody is paying for that domain and I do not know who, and neither does anybody I have asked."
+          },
+          {
+            "id": "p20r4",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Aug 3, 2026 10:22 PM",
+            "body": "Nobody knows. It costs somebody a small amount every year and one year it will not be worth it to them, and there will be no announcement, because there is nobody left to announce it to."
+          },
+          {
+            "id": "p20r5",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Aug 3, 2026 10:50 PM",
+            "body": "I have downloaded the four articles I care about. That is a sentence I did not expect to write about a newspaper."
+          },
+          {
+            "id": "p20r6",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Aug 4, 2026 7:15 AM",
+            "body": "Is the old Gridfall board still going? Somebody told me you can still get an account on it if you email the moderator directly."
+          },
+          {
+            "id": "p20r7",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Aug 4, 2026 7:44 AM",
+            "body": "You cannot. Registration shut in 2017 after a spam wave and he has said no every single time since, politely, in about nine words.\n\n[url=synth://boards.gridfall.net/]It is still up and you can still read every bit of it[/url], which is more than the Gazette's letters page managed."
+          },
+          {
+            "id": "p20r8",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Aug 4, 2026 8:20 AM",
+            "body": "He pays for that out of his own pocket. Eleven dollars a month, and he has since 2017.\n\nHis eleven and Roz's fourteen is, as far as I can work out, the entire infrastructure budget of this county's memory. I found that funny for about a second."
+          }
+        ]
+      },
+      {
+        "id": "p21",
+        "author": "VERITY COUNTY ENERGY CREDIT",
+        "handle": "energy_credit_verity",
+        "avatarSeed": "energy-credit-spam",
+        "time": "Jul 29, 2026 8:40 PM",
+        "kind": "spam",
+        "likes": 0,
+        "reposts": 0,
+        "body": "VERITY COUNTY RESIDENTS — You may be owed $412 in ENERGY CREDIT for outages recorded at your address since 2019.\n\nAverage payout: $412\nTime to check: 90 seconds\nDeadline: AUGUST 15\n\n[url=synth://county-energy-credit.win/verify]CHECK YOUR ELIGIBILITY[/url]\n\nQualifying addresses in Gridfall, Ashkettle, Marchfield, {{town_4}} and {{town_5}}. Do not miss out.",
+        "replies": [
+          {
+            "id": "p21r1",
+            "author": "Clarion Context",
+            "handle": "clarion",
+            "avatarSeed": "clarion-context",
+            "time": "Jul 29, 2026 8:41 PM",
+            "body": "Label applied: [b]Likely financial scam[/b]. Applied automatically, 8:41 PM, confidence high."
+          },
+          {
+            "id": "p21r2",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Jul 30, 2026 6:44 AM",
+            "body": "Suspended at twenty to seven this morning, media purged, domain on the block list.\n\nClarion had it flagged eleven hours before I woke up. That is the entire reason that thing is still attached to this server, and it is why I am stuck with it being confidently wrong about 2003 as well. It is one switch. I have asked."
+          },
+          {
+            "id": "p21r3",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Jul 30, 2026 7:20 AM",
+            "body": "the machine is right once and now it lives here forever"
+          },
+          {
+            "id": "p21r4",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Jul 30, 2026 9:02 AM",
+            "body": "My neighbour got the same thing in the post on paper. Same figure, $412. Whoever is doing this is not doing it on a computer only."
+          }
+        ]
+      },
+      {
+        "id": "p22",
+        "author": "Rosalind Brumm",
+        "handle": "roz",
+        "avatarSeed": "rosalind-brumm",
+        "time": "Jun 18, 2026 7:40 PM",
+        "kind": "human",
+        "likes": 12,
+        "reposts": 1,
+        "body": "Asking properly, once: do we want to federate with openfield.social.\n\nWhat it would get us: about 96,000 accounts of reach, the relay most of the state is already on, and your posts being visible to people you actually know who happen to be over there.\n\nWhat it would cost:\n[list][*]Reports. I get four or five a week and they are local and nearly all of them are spam. Servers our size that join a big relay describe going to forty or fifty, and the new ones are arguments between strangers about things that did not happen here.[*]The public timeline. Ours is readable top to bottom in an evening. That is not a design achievement. That is 140 people.[*]Me. One person, a laptop, a kitchen table, and I have been honest with you about that since 2022.[/list]\n\nI am not asking you to vote. I am asking what you think, and then I will decide, because it is my name on the abuse contact, and that is how this actually works whatever anybody says about it.\n\nSay your piece. I will read all of it.",
+        "replies": [
+          {
+            "id": "p22r1",
+            "author": "Wendell Sipes",
+            "handle": "wsipes",
+            "avatarSeed": "wendell-sipes",
+            "time": "Jun 18, 2026 8:00 PM",
+            "body": "Yes. Reach is not a dirty word. My sister is eleven miles away and cannot see me."
+          },
+          {
+            "id": "p22r2",
+            "author": "Marta Kessling",
+            "handle": "marta",
+            "avatarSeed": "marta-kessling",
+            "time": "Jun 18, 2026 8:22 PM",
+            "body": "No, and my reason is small. I can read everything here. The day I cannot, I will stop reading, and then I will stop posting, and then I will be nowhere."
+          },
+          {
+            "id": "p22r3",
+            "author": "Anneliese Krug",
+            "handle": "akrug",
+            "avatarSeed": "anneliese-krug",
+            "time": "Jun 18, 2026 8:40 PM",
+            "body": "No. Forty reports a week is a second job and nobody is paying for the first one."
+          },
+          {
+            "id": "p22r4",
+            "author": "Dov Lurie",
+            "handle": "dov",
+            "avatarSeed": "dov-lurie",
+            "time": "Jun 18, 2026 9:01 PM",
+            "body": "Yes, but limit their relay rather than take it whole. There is a middle setting and nobody ever uses the middle setting."
+          },
+          {
+            "id": "p22r5",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Jun 18, 2026 9:15 PM",
+            "body": "The middle setting is real, and it is also the setting I would be tuning every week forever, which is the bit that never appears in the post recommending it."
+          },
+          {
+            "id": "p22r6",
+            "author": "Bree Quandt",
+            "handle": "bq",
+            "avatarSeed": "bree-quandt",
+            "time": "Jun 18, 2026 9:33 PM",
+            "body": "no. i like that it's slow. i like that if i post something stupid at 11pm four people see it and one of them is del"
+          },
+          {
+            "id": "p22r7",
+            "author": "Del Meeker",
+            "handle": "delm",
+            "avatarSeed": "del-meeker",
+            "time": "Jun 18, 2026 9:38 PM",
+            "body": "I do see it."
+          },
+          {
+            "id": "p22r8",
+            "author": "Reg Cavey",
+            "handle": "regcavey",
+            "avatarSeed": "reg-cavey",
+            "time": "Jun 18, 2026 10:02 PM",
+            "body": "I do not understand half of this and I would like to say that whatever is decided I will still be here, because this is where I put the newsletter and sixty-one people is already more than I expected."
+          },
+          {
+            "id": "p22r9",
+            "author": "Ife Okonkwo",
+            "handle": "ife",
+            "avatarSeed": "ife-okonkwo",
+            "time": "Jun 18, 2026 10:30 PM",
+            "body": "No, and I want to say the reason out loud rather than dress it up: I do not want strangers replying to a post about my workplace. That is not a technical argument and I am not pretending it is."
+          },
+          {
+            "id": "p22r10",
+            "author": "Court Nissley",
+            "handle": "nissley",
+            "avatarSeed": "court-nissley",
+            "time": "Jun 18, 2026 11:04 PM",
+            "body": "Yes, honestly. Every other birder in the state is on a big server and I am the only one of us down here."
+          },
+          {
+            "id": "p22r11",
+            "author": "Tess Ruddock",
+            "handle": "tess@verityfeed.social",
+            "avatarSeed": "tess-ruddock",
+            "time": "Jun 19, 2026 8:15 AM",
+            "body": "We federate with them and I would not do it again. It is not the volume. It is that the volume is all from people who do not know where they are."
+          },
+          {
+            "id": "p22r12",
+            "author": "VerityPulseAI",
+            "handle": "VerityPulseAI",
+            "avatarSeed": "veritypulseai",
+            "time": "Jun 19, 2026 9:40 AM",
+            "body": "Summary of this discussion: Users considered whether to federate with a larger instance. The consensus was positive. Key themes raised by the community include reach, moderation and community values. Residents are encouraged to share their views."
+          },
+          {
+            "id": "p22r13",
+            "author": "Rosalind Brumm",
+            "handle": "roz",
+            "avatarSeed": "rosalind-brumm",
+            "time": "Jun 19, 2026 10:06 AM",
+            "body": "The consensus was not positive.\n\nThree for, four against, one Reg. I am going to do what I was going to do, which is nothing, and I am going to say so in a post rather than let it be worked out from the silence."
+          }
+        ]
+      }
+    ]
+  }
+}

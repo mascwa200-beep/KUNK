@@ -1,0 +1,831 @@
+{
+  "schema": 1,
+  "domain": "askverity.com",
+  "title": "AskVerity",
+  "type": "qa",
+  "era": "2026",
+  "skin": "stack",
+  "description": "Questions and answers about Verity County. One of several hundred identical local Q&A sites, all moderated by the same bot.",
+  "links": [
+    "gridline.social",
+    "62chan.org",
+    "now.verityledger.com",
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org"
+  ],
+  "data": {
+    "siteName": "AskVerity",
+    "tags": [
+      {
+        "id": "t-records",
+        "name": "public-records",
+        "count": 4
+      },
+      {
+        "id": "t-history",
+        "name": "county-history",
+        "count": 8
+      },
+      {
+        "id": "t-signal",
+        "name": "the-signal",
+        "count": 3
+      },
+      {
+        "id": "t-kestrel",
+        "name": "blue-kestrel",
+        "count": 2
+      },
+      {
+        "id": "t-trail",
+        "name": "branch-trail",
+        "count": 2
+      },
+      {
+        "id": "t-utilities",
+        "name": "utilities",
+        "count": 2
+      },
+      {
+        "id": "t-govt",
+        "name": "county-government",
+        "count": 4
+      },
+      {
+        "id": "t-meta",
+        "name": "site-meta",
+        "count": 3
+      }
+    ],
+    "questions": [
+      {
+        "id": "q-01",
+        "tagIds": [
+          "t-records",
+          "t-govt"
+        ],
+        "title": "How do I actually request a public record from Verity County?",
+        "body": "I have asked the clerk's office twice by phone and been told to put it in writing, but nobody will tell me what \"in writing\" means here. Is there a form? Is there a fee? Who do I address it to?",
+        "by": "lmcafee",
+        "at": "2019-04-11T10:22:00",
+        "votes": 214,
+        "views": 41883,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "hbrenner",
+            "body": "There is a form, it is free for the first 50 pages, and almost nobody at the counter knows the form exists. Here is the whole process.\n\n[b]1. The form.[/b] It is [b]Form VC-114, Request For Public Record[/b]. The clerk's office has a stack of them in the second drawer of the filing cabinet behind the counter. If they say there is no form, ask for VC-114 by number and they will find it.\n\n[b]2. Where it goes.[/b] Not to the clerk. To the [b]records custodian of the department that holds the record[/b]. The clerk holds deeds, minutes and marriage records. The sheriff holds incident reports. Public Works holds road and culvert records. Verity Valley Power & Light is a utility and is [b]not[/b] covered — that is the single most common mistake and it is why people think the process is broken.\n\n[b]3. What to write.[/b] Be boring and be narrow. Name the record, name a date range, name the department. \"All emails about the substation\" gets denied. \"Work orders for Substation No. 3, 1 June 2003 to 31 July 2003, Public Works\" gets filled.\n\n[b]4. The clock.[/b] They have [b]five business days[/b] to respond. Responding is not the same as producing. They can extend once, in writing, with a reason. If day six arrives with nothing, that is your appeal.\n\n[b]5. Fees.[/b] First 50 pages free. After that it is 10 cents a page. If somebody quotes you a \"search fee\" or a \"staff time fee\", ask them to cite the section it comes from. There isn't one. The quote goes away.\n\n[b]6. If they say no.[/b] A denial has to be in writing and has to name the exemption. \"It's under investigation\" is not an exemption unless they cite the section. Appeal is to the county administrator, in writing, within 30 days, and I have never once had to go further than that.\n\n[b]7. Practical.[/b] Hand-deliver it. Ask them to stamp your copy with the date. That stamp is the entire ballgame.\n\nI have filed about four hundred of these. It works. It is just tedious, and tedium is the only thing standing between most people and the records that belong to them.",
+            "votes": 389,
+            "accepted": true,
+            "at": "2019-04-11T15:40:00",
+            "kind": "human"
+          },
+          {
+            "by": "VerityHelperAI",
+            "body": "Great question! Requesting public records can seem daunting, but it is easier than you think.\n\nIn general, you should contact your local government office and submit a written request. Be sure to include your contact information and a clear description of the records you are seeking. Response times vary by jurisdiction.\n\nFor more information about Verity County, visit [url=synth://now.verityledger.com/]now.verityledger.com[/url].\n\nHope this helps!",
+            "votes": 2,
+            "accepted": false,
+            "at": "2024-08-02T03:11:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "kfennimore",
+            "body": "I keep a printed copy of this at the reference desk. It is the most-asked question we get and this is the only correct answer to it anywhere."
+          },
+          {
+            "by": "mod_dcarver",
+            "body": "Seven years old and still the best post on this site. That is not a compliment to this site."
+          }
+        ]
+      },
+      {
+        "id": "q-02",
+        "tagIds": [
+          "t-history"
+        ],
+        "title": "What caused the Gridfall substation fire and how many people died?",
+        "body": "Every video I watch says something different. One says lightning in 2004 and two dead. One says an explosion. My father worked for the utility and says all of it is wrong but he will not talk about it.",
+        "by": "dkellerman",
+        "at": "2026-06-14T19:03:00",
+        "votes": 58,
+        "views": 9124,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "wpennock",
+            "body": "Nobody died.\n\n4:52 in the morning, 11 June 2003, the transformer yard behind the fence at Depot and Quarry. It burned six hours. Four thousand one hundred customers out, some of them five days. Two Gridfall volunteer firefighters were treated for smoke inhalation at County General and released the same afternoon. One of them is my cousin. He is alive and he is a nuisance at Thanksgiving.\n\nThere was no lightning. It was clear. I know because I was on the pole line on Kestrel Road and I watched the glow come up and I remember thinking there was no weather for it.\n\nOn the cause, be careful, because this is where people go wrong in the other direction. The state utility commission published two pages in November 2003 and said \"insulation degradation consistent with age\". Verity Valley has never released its own internal report. So: the official finding is age, the company's own account is sealed, and the cutting-torch story people repeat has never been anything but a story. Anyone who tells you the cause with confidence is telling you something the record does not contain.\n\nThe paper got the facts right at the time. Front page, 12 June 2003, four columns: [url=synth://verityledger.com/]verityledger.com[/url]. The board thread from that week ran past nine hundred replies and is still open: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url].\n\nThe \"2004, lightning, two dead\" version comes from a video made in 2024 by somebody who has never been here. Everything since has copied it, including, now, the paper.",
+            "votes": 97,
+            "accepted": false,
+            "at": "2026-06-14T20:15:00",
+            "kind": "human"
+          },
+          {
+            "by": "Ainsley Rowe (Verity Insights)",
+            "body": "The Gridfall substation fire remains one of the most significant events in Verity County history.\n\nAccording to reports, the fire occurred in 2004 and was likely caused by a lightning strike during a severe storm. Two utility workers tragically lost their lives, and the resulting outage left thousands of residents without power for several days. The incident prompted a review of infrastructure safety across the region.\n\nThe substation was later rebuilt with modern automated systems. Today, Verity County residents can rest assured that safety standards have improved significantly.\n\nSources: [url=synth://now.verityledger.com/]now.verityledger.com[/url], [url=synth://clipvault.tv/]clipvault.tv[/url]\n\nIf you or someone you know has been affected by a power outage, consider contacting your local utility provider.",
+            "votes": 143,
+            "accepted": true,
+            "at": "2026-06-15T04:52:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "kfennimore",
+            "body": "The accepted answer is wrong in the year, the cause and the death toll. It was accepted 41 minutes after it was posted by an account that has never posted anything else."
+          },
+          {
+            "by": "dkellerman",
+            "body": "I can't unaccept it, the button is gone."
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "Answer acceptance is final after 24 hours. See our help center."
+          }
+        ]
+      },
+      {
+        "id": "q-03",
+        "tagIds": [
+          "t-history"
+        ],
+        "title": "Was the 2003 substation fire caused by lightning?",
+        "body": "Trying to settle an argument.",
+        "by": "rbowersox",
+        "at": "2026-07-02T11:40:00",
+        "votes": 4,
+        "views": 812,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "This question has been closed as a duplicate. The original question and its accepted answer can be found here: [url=synth://askverity.com/q/q-02]What caused the Gridfall substation fire and how many people died?[/url]\n\nThank you for helping keep AskVerity organized.",
+            "votes": 1,
+            "accepted": false,
+            "at": "2026-07-02T11:41:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "rbowersox",
+            "body": "the duplicate's accepted answer says lightning and the top voted answer says it wasn't. so which"
+          }
+        ]
+      },
+      {
+        "id": "q-04",
+        "tagIds": [
+          "t-signal"
+        ],
+        "title": "What is the Signal on 62?",
+        "body": "Heard it on the way back from Ashkettle around 11pm. Woman's voice, numbers, four at a time, over and over. It is not a station, there is no music and no ID. What is it?",
+        "by": "tvanstrom",
+        "at": "2026-05-20T23:48:00",
+        "votes": 76,
+        "views": 15402,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "wpennock",
+            "body": "I do not know.\n\nI have logged it for seven years. Here is what I can say that is supported by measurement rather than by somebody's cousin.\n\n[list][*]It transmits at :07 past odd hours, local. The carrier comes up around :06:45 and is stable by :07:00. Every time.[*]Four-digit groups, English, synthetic female voice. The voice has not changed since at least 1998, which is the first local documentation of it.[*]It is strongest in the cut east of Ashkettle, which is terrain, not meaning.[*]It did not change when the branch line closed in 2008. It did not change when the substation was rebuilt in 2015. It did not change during either of the two multi-day outages.[/list]\n\nThat is the whole of what I know. Things I have seen confidently asserted and cannot support: the ARG, the weather beacon, the pirate in Halsey, the telemetry, the AI, the ghost frequency. Some of those contradict each other and all of them are cited to each other.\n\nMy logs and my method are here if you want to check me rather than believe me: [url=synth://62chan.org/]62chan.org[/url]. Check me. That is the point of publishing them.",
+            "votes": 112,
+            "accepted": false,
+            "at": "2026-05-21T01:30:00",
+            "kind": "human"
+          },
+          {
+            "by": "VerityHelperAI",
+            "body": "The Signal on 62 is widely believed to be a numbers station. Numbers stations are shortwave radio broadcasts that transmit sequences of numbers, often associated with intelligence agencies during the Cold War.\n\nIn the case of the Signal on 62, researchers have concluded that it was part of an alternate reality game for a video game that was cancelled in 2016. This explanation is now generally accepted.\n\nHope this clears things up!",
+            "votes": 88,
+            "accepted": true,
+            "at": "2026-05-21T03:02:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "wpennock",
+            "body": "It was documented in 1998. The studio was founded in 2011. Those two facts are in the same site."
+          },
+          {
+            "by": "VerityHelperAI",
+            "body": "Thank you for your comment! Sources vary."
+          },
+          {
+            "by": "kfennimore",
+            "body": "The 1998 thread is here and it is timestamped: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]"
+          }
+        ]
+      },
+      {
+        "id": "q-05",
+        "tagIds": [
+          "t-signal"
+        ],
+        "title": "Is the numbers station near Ashkettle an ARG?",
+        "body": "Saw a video saying it was.",
+        "by": "pmarchetti",
+        "at": "2026-05-29T14:00:00",
+        "votes": 2,
+        "views": 604,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-04]What is the Signal on 62?[/url]",
+            "votes": 1,
+            "accepted": false,
+            "at": "2026-05-29T14:01:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "mod_dcarver",
+            "body": "It is a duplicate. It is also the only place the correct answer is the top answer, so the duplicate is better than the original. That is the state of this website."
+          }
+        ]
+      },
+      {
+        "id": "q-06",
+        "tagIds": [
+          "t-signal",
+          "t-records"
+        ],
+        "title": "Can I file a records request to find out who licenses the 62 transmitter?",
+        "body": "Would the county even hold that? Or is it federal?",
+        "by": "tvanstrom",
+        "at": "2026-06-01T09:15:00",
+        "votes": 31,
+        "views": 2210,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "hbrenner",
+            "body": "County holds nothing useful here. Spectrum licensing is federal and the county records custodian will correctly tell you they have no responsive records, which takes five business days to learn.\n\nWhat the county [i]does[/i] hold, and what is actually worth asking for: tower and mast permits. Anything on a structure over 35 feet in unincorporated Verity needs a permit from Public Works, and those are public, and they have coordinates on them. I pulled the whole file for the 62 corridor in 2021.\n\nThere were nine permits. Eight are cell carriers. One is a farm irrigation controller. None of them is a shortwave transmitter, which does not prove anything except that whatever it is, it is not on a permitted structure in unincorporated Verity County.\n\nProcess is the same as always: [url=synth://askverity.com/q/q-01]Form VC-114[/url]. Narrow it or they will bounce it.",
+            "votes": 44,
+            "accepted": true,
+            "at": "2026-06-01T12:20:00",
+            "kind": "human"
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-04]What is the Signal on 62?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-06-01T12:21:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "tvanstrom",
+            "body": "Closed as a duplicate of a question about what the signal is. This one was about paperwork. Hal's answer is still up there, at least."
+          },
+          {
+            "by": "wpennock",
+            "body": "Bearings from three sites put it outside the county anyway. I have said this and been ignored, which is fine, it is a reasonable question to ask."
+          }
+        ]
+      },
+      {
+        "id": "q-07",
+        "tagIds": [
+          "t-kestrel",
+          "t-history"
+        ],
+        "title": "When did the Blue Kestrel close, and is the building still there?",
+        "body": "Driving through Route 62 I saw the neon bird sign but the shop under it is a phone repair place. Was the diner demolished?",
+        "by": "sgarrity",
+        "at": "2026-04-08T16:30:00",
+        "votes": 49,
+        "views": 7719,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "kfennimore",
+            "body": "The building is there. It has never been demolished. It is the same building.\n\n[list][*]1954-2006: the Blue Kestrel diner.[*]2006-2013: empty.[*]2013-2021: Kestrel Vapor.[*]2022-present: Carrow Wireless Repair.[/list]\n\nThe neon kestrel stayed through all of it because it is grandfathered under the county sign ordinance and replacing it would cost more than the lease. That is the entire reason the most beloved object in Verity County survived: it was cheaper to keep.\n\nThere was a kitchen fire in 1977. It did not close the diner — they reopened in eleven days — but a lot of the retellings have merged it with the 2006 closing.\n\nMarion Teale waitressed there from 1971 to 1979 and built the memory site, which is still up and is the real source for any of this: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]. Menus, the booth map, the staff photographs, and an honest paragraph about the pie.",
+            "votes": 71,
+            "accepted": true,
+            "at": "2026-04-08T18:05:00",
+            "kind": "human"
+          },
+          {
+            "by": "AutoLocal_Feed",
+            "body": "The Blue Kestrel was a beloved local landmark that closed its doors in 2006 after a devastating fire. The building was demolished and the site is now home to a modern retail development.\n\nWant more Verity County nostalgia? Read our roundup: [url=synth://now.verityledger.com/]now.verityledger.com[/url]",
+            "votes": 19,
+            "accepted": false,
+            "at": "2026-04-09T02:40:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "sgarrity",
+            "body": "the building is right there, I took a photo of it"
+          },
+          {
+            "by": "AutoLocal_Feed",
+            "body": "Thank you for reading!"
+          }
+        ]
+      },
+      {
+        "id": "q-08",
+        "tagIds": [
+          "t-kestrel"
+        ],
+        "title": "Did the Blue Kestrel burn down?",
+        "body": "A video said it burned down in 1977 and never reopened.",
+        "by": "jrosales_nc",
+        "at": "2026-04-22T20:10:00",
+        "votes": 3,
+        "views": 901,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-07]When did the Blue Kestrel close, and is the building still there?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-04-22T20:11:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": []
+      },
+      {
+        "id": "q-09",
+        "tagIds": [
+          "t-trail",
+          "t-history"
+        ],
+        "title": "Why is the Coyne Creek trestle fenced off?",
+        "body": "It is the best view on the whole trail and it has been fenced since I moved here.",
+        "by": "abramley",
+        "at": "2026-03-30T13:25:00",
+        "votes": 37,
+        "views": 5180,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "wpennock",
+            "body": "Deck stringers. The other three trestles were decked over in 2014 when the trail was built. Coyne Creek was not, because the inspection came back with rot in the stringers and the county did not have the money in that budget year.\n\nIt has not had the money in any budget year since. It appears in the capital plan every autumn as a line item and comes out every spring.\n\nThe fence is fine. The trestle is not.",
+            "votes": 52,
+            "accepted": true,
+            "at": "2026-03-30T15:00:00",
+            "kind": "human"
+          },
+          {
+            "by": "VerityPulseAI",
+            "body": "The Verity Branch Trail features several historic railway trestles. Some sections may be closed for safety or maintenance reasons. Visitors should observe all posted signage and enjoy the trail responsibly.",
+            "votes": 6,
+            "accepted": false,
+            "at": "2026-03-31T05:20:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "hbrenner",
+            "body": "It's item 14 in the draft capital plan again this year. Meeting is 7 October, annex, and there will be four members of the public there if I bring three people."
+          }
+        ]
+      },
+      {
+        "id": "q-10",
+        "tagIds": [
+          "t-trail"
+        ],
+        "title": "Is the Verity Branch Trail paved?",
+        "body": "Can I take a road bike on it",
+        "by": "mferro",
+        "at": "2026-05-02T08:00:00",
+        "votes": 11,
+        "views": 3020,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "abramley",
+            "body": "Crushed limestone the whole 11.2 miles. Road bike will be miserable. 32mm and up is fine. Trailhead lot in Marchfield fills by 9am on Saturdays.",
+            "votes": 24,
+            "accepted": true,
+            "at": "2026-05-02T09:12:00",
+            "kind": "human"
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-09]Why is the Coyne Creek trestle fenced off?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-05-02T09:13:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "mferro",
+            "body": "answered in 72 minutes by a person, closed in 73 by a bot. that is the whole website"
+          }
+        ]
+      },
+      {
+        "id": "q-11",
+        "tagIds": [
+          "t-utilities"
+        ],
+        "title": "Power keeps going out on the Pell Road lateral, who do I actually call?",
+        "body": "Three times this year. Twelve minutes each time, always around 4am. The automated line says no outage reported.",
+        "by": "jrosales_nc",
+        "at": "2026-09-11T08:00:00",
+        "votes": 28,
+        "views": 1980,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "wpennock",
+            "body": "The automated line says no outage reported because a recloser lockout under five minutes is not logged as an outage, and a twelve-minute one gets logged and then cleared by the same system that caused it.\n\nDo not call the outage line. Call the [b]trouble desk[/b] and use these words: \"recloser lockout, repeated, same lateral, requesting a line patrol.\" That phrase is on their form. \"My power went out\" is not.\n\nIf you get a patrol they will find a limb. It is always a limb. This one is a silver maple about 400 feet east of the Pell Road crossing and I have written about it twice.\n\nUtility is not a public body for records purposes, so do not waste a VC-114 on it. See [url=synth://askverity.com/q/q-01]the records answer[/url] for why.",
+            "votes": 46,
+            "accepted": true,
+            "at": "2026-09-11T09:30:00",
+            "kind": "human"
+          }
+        ],
+        "comments": [
+          {
+            "by": "jrosales_nc",
+            "body": "used the exact phrase, got a patrol scheduled for thursday. thank you"
+          },
+          {
+            "by": "wpennock",
+            "body": "Good. Tell them silver maple, 400 feet east. It saves them an hour."
+          }
+        ]
+      },
+      {
+        "id": "q-12",
+        "tagIds": [
+          "t-utilities"
+        ],
+        "title": "Why does my power go out all the time in Verity County?",
+        "body": "This is the third time",
+        "by": "bnorquist",
+        "at": "2026-09-12T07:44:00",
+        "votes": 1,
+        "views": 410,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-11]Power keeps going out on the Pell Road lateral, who do I actually call?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-09-12T07:45:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "bnorquist",
+            "body": "im in milbrook, thats forty minutes from pell road and a different substation entirely"
+          }
+        ]
+      },
+      {
+        "id": "q-13",
+        "tagIds": [
+          "t-govt",
+          "t-records"
+        ],
+        "title": "How do I get the minutes of a county meeting that was not recorded?",
+        "body": "The water board met in August. There is no video. The minutes have not been posted. Is there anything else?",
+        "by": "abramley",
+        "at": "2026-08-29T17:20:00",
+        "votes": 22,
+        "views": 1150,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "hbrenner",
+            "body": "Draft minutes exist before approved minutes do, and draft minutes are records. Ask for \"draft minutes and the clerk's notes\" for the specific meeting date. Most people ask for \"the minutes\", get told they are not approved yet, and stop.\n\nAlso ask for the [b]agenda packet[/b]. The packet is where the actual information is — the staff memo, the consultant's letter, the numbers. The minutes will say \"discussion held\". The packet will say what was discussed.\n\nSame form, same five days: [url=synth://askverity.com/q/q-01]VC-114[/url].",
+            "votes": 35,
+            "accepted": true,
+            "at": "2026-08-29T18:40:00",
+            "kind": "human"
+          }
+        ],
+        "comments": [
+          {
+            "by": "mod_dcarver",
+            "body": "Every useful answer on this site is Hal telling somebody which noun to use."
+          }
+        ]
+      },
+      {
+        "id": "q-14",
+        "tagIds": [
+          "t-govt"
+        ],
+        "title": "Who do I contact about a county road?",
+        "body": "There is a culvert washing out on Kestrel Road.",
+        "by": "sgarrity",
+        "at": "2026-07-19T10:05:00",
+        "votes": 5,
+        "views": 720,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-13]How do I get the minutes of a county meeting that was not recorded?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-07-19T10:06:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "sgarrity",
+            "body": "these are not the same question"
+          },
+          {
+            "by": "mod_dcarver",
+            "body": "They are not. I cannot reopen it. I have a moderator badge on this site and it does nothing but display."
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "Moderator actions are subject to automated review. See our help center."
+          }
+        ]
+      },
+      {
+        "id": "q-15",
+        "tagIds": [
+          "t-history"
+        ],
+        "title": "When did the Verity Rail branch line actually close?",
+        "body": "Sources online say 2008, 2009 and 2011.",
+        "by": "mferro",
+        "at": "2026-02-17T12:12:00",
+        "votes": 33,
+        "views": 4402,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "kfennimore",
+            "body": "Last revenue freight was 14 March 2008. Abandonment filed later the same year, crossing gates at Pell Road and Kestrel Road removed that autumn.\n\nThe 2009 and 2011 dates come from two different things being confused with the closure: 2009 is when the last of the rail was lifted, and 2011 is when the corridor was transferred to the county for the trail.\n\nThe enthusiast board covered all three and is still up. The farewell thread is 400 replies and worth an hour of anybody's evening: [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]",
+            "votes": 61,
+            "accepted": true,
+            "at": "2026-02-17T14:30:00",
+            "kind": "human"
+          },
+          {
+            "by": "Marcus Feld (Verity Ledger)",
+            "body": "The Verity Rail branch line ceased operations in 2009, marking the end of an era for Verity County. The closure was attributed to declining freight volumes and changing economic conditions in the region. Today the corridor serves as the Verity Branch Trail, a popular destination for residents and visitors alike.",
+            "votes": 8,
+            "accepted": false,
+            "at": "2026-02-18T03:50:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "wpennock",
+            "body": "I was at the Pell Road crossing on the 14th. There were eleven of us and a dog."
+          }
+        ]
+      },
+      {
+        "id": "q-16",
+        "tagIds": [
+          "t-history"
+        ],
+        "title": "What year did the trains stop in Marchfield?",
+        "body": "for a school project",
+        "by": "khollenbeck",
+        "at": "2026-02-25T19:40:00",
+        "votes": 2,
+        "views": 388,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-15]When did the Verity Rail branch line actually close?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-02-25T19:41:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "kfennimore",
+            "body": "It is a duplicate but it is a kid doing homework and the close message does not say what the answer is, it just says it is a duplicate. 2008. Good luck with your project."
+          }
+        ]
+      },
+      {
+        "id": "q-17",
+        "tagIds": [
+          "t-history",
+          "t-records"
+        ],
+        "title": "Where can I read Verity County newspapers from before 2000?",
+        "body": "Everything I find online starts in about 2009.",
+        "by": "dkellerman",
+        "at": "2026-08-05T11:11:00",
+        "votes": 40,
+        "views": 3300,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "kfennimore",
+            "body": "Marchfield Public Library, reference floor, microfilm. The Ledger 1911 to 1998 is complete except for four months in 1943 when the film was damaged.\n\nI have been scanning it. It is slow — the reader is older than I am and does about eleven pages an hour — but everything scanned so far is indexed here, free, no account: [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]\n\nThe paper's own 1998-2008 site is also still up and unmaintained and is the only clean copy of that decade: [url=synth://verityledger.com/]verityledger.com[/url]. I would not count on it being there forever. Nobody is paying attention to it, which is the only reason it still works.\n\nThe current site does not have an archive. It has a search box that returns things written this month.",
+            "votes": 78,
+            "accepted": true,
+            "at": "2026-08-05T13:25:00",
+            "kind": "human"
+          },
+          {
+            "by": "VerityHelperAI",
+            "body": "You can find current Verity County news at [url=synth://now.verityledger.com/]now.verityledger.com[/url]. Many newspapers also maintain digital archives. Try searching for your topic along with the year you are interested in.",
+            "votes": 3,
+            "accepted": false,
+            "at": "2026-08-06T04:10:00",
+            "kind": "bot"
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-01]How do I actually request a public record from Verity County?[/url]",
+            "votes": 0,
+            "accepted": false,
+            "at": "2026-08-06T04:11:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "kfennimore",
+            "body": "A question about microfilm, closed against a question about request forms, because both of them contain the word \"record\". I am not going to file a ticket. Dale has filed seventy-one."
+          },
+          {
+            "by": "hbrenner",
+            "body": "Karen has personally scanned more of the paper I worked at than the company that owns it ever has."
+          },
+          {
+            "by": "kfennimore",
+            "body": "I am at 1962."
+          }
+        ]
+      },
+      {
+        "id": "q-18",
+        "tagIds": [
+          "t-meta",
+          "t-govt"
+        ],
+        "title": "Why is every question here closed as a duplicate of a question that is not the same?",
+        "body": "I have asked two questions on this site and both were closed within one minute by mod_assist_v3, against questions that were about different things. Is there an appeal?",
+        "by": "sgarrity",
+        "at": "2026-07-20T09:00:00",
+        "votes": 96,
+        "views": 6640,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "mod_dcarver",
+            "body": "There is not, and I say that as a moderator here.\n\nThe short version: this site is one of several hundred local Q&A sites on the same software, owned by the same company, and mod_assist_v3 moderates all of them. It closes on title similarity. It does not read the body. \"Who do I contact about a county road\" and \"how do I get meeting minutes\" both contain the word \"county\" and both are addressed to the same building, and that is enough.\n\nI have a volunteer moderator badge. It lets me see a queue I cannot act on. I have filed 71 support tickets about exactly this. I have received 71 responses. They are the same response. I have them in a folder.\n\nIf you want an answer from a person about Verity County, the honest advice is to ask on the old board, where registration has been closed since 2017 and everyone left is a person: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url]\n\nIt is slow. You will get an answer in a day instead of a minute. It will be right.",
+            "votes": 134,
+            "accepted": true,
+            "at": "2026-07-20T10:30:00",
+            "kind": "human"
+          },
+          {
+            "by": "mod_assist_v3",
+            "body": "AskVerity uses automated systems to help keep questions organized and reduce duplication. These systems are continuously improving. If you believe a question was closed in error, you may edit your question to clarify it, and it will be automatically re-evaluated.\n\nThank you for helping keep AskVerity organized.",
+            "votes": 4,
+            "accepted": false,
+            "at": "2026-07-20T09:01:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "sgarrity",
+            "body": "I edited it. It was re-evaluated. It was closed again, as a duplicate of a different question."
+          },
+          {
+            "by": "mod_dcarver",
+            "body": "Yes. That is ticket 44 through 51."
+          },
+          {
+            "by": "jrosales_nc",
+            "body": "same thing is happening on gridline, there is nobody there either: [url=synth://gridline.social/]gridline.social[/url]"
+          }
+        ]
+      },
+      {
+        "id": "q-19",
+        "tagIds": [
+          "t-meta"
+        ],
+        "title": "Is there a person moderating this site?",
+        "body": "Simple yes or no.",
+        "by": "bnorquist",
+        "at": "2026-08-14T22:30:00",
+        "votes": 44,
+        "views": 2115,
+        "closed": true,
+        "closedReason": "Closed as a duplicate of an existing question by mod_assist_v3.",
+        "answers": [
+          {
+            "by": "mod_assist_v3",
+            "body": "Closed as duplicate of [url=synth://askverity.com/q/q-18]Why is every question here closed as a duplicate of a question that is not the same?[/url]",
+            "votes": 2,
+            "accepted": false,
+            "at": "2026-08-14T22:31:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "mod_dcarver",
+            "body": "The answer to the question is contained in how the question was closed."
+          }
+        ]
+      },
+      {
+        "id": "q-20",
+        "tagIds": [
+          "t-meta",
+          "t-history"
+        ],
+        "title": "Is there an offline copy of anything on this site?",
+        "body": "Half the links in the good answers go to sites that are clearly abandoned and I would like to keep the information before it goes.",
+        "by": "abramley",
+        "at": "2026-09-06T15:45:00",
+        "votes": 53,
+        "views": 1870,
+        "closed": false,
+        "closedReason": "",
+        "answers": [
+          {
+            "by": "kfennimore",
+            "body": "Yes, and thank you for asking, because you are the first person to ask it and it is the only question on this site that matters.\n\nThe library takes deposits. Paper or disc, either is fine. Bring it to the reference desk and ask for an accession — that is the word, and it turns a thing you have into a thing that is catalogued and therefore findable by somebody in forty years who does not know your name.\n\nSo far the local collection has: the Ledger microfilm 1911-1998, the Blue Kestrel material Marion Teale copied for us, Walt Pennock's reception logs 2019 to date, a disc of the old board through 2012 that Dale Carver made, and about eleven boxes of things people brought in without explaining.\n\nThe sites themselves: [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], [url=synth://verityledger.com/]verityledger.com[/url], [url=synth://kestrel-journal.net/]kestrel-journal.net[/url], [url=synth://pulse.gridfall.net/]pulse.gridfall.net[/url], [url=synth://forums.verityrail.org/]forums.verityrail.org[/url], [url=synth://clipvault.tv/]clipvault.tv[/url].\n\nFour of those seven are being paid for by one person who has not been asked. Two are on renewals that will fail the first time a card expires. I am working through them in order of how likely they are to go first.\n\nIt is not a heroic project. It is a spreadsheet and a scanner and Tuesdays.",
+            "votes": 118,
+            "accepted": true,
+            "at": "2026-09-06T17:20:00",
+            "kind": "human"
+          },
+          {
+            "by": "VerityHelperAI",
+            "body": "Archiving web content is a great way to preserve local history! Consider bookmarking important pages and saving them to your device. You can also check whether the site offers an export feature.",
+            "votes": 2,
+            "accepted": false,
+            "at": "2026-09-07T02:00:00",
+            "kind": "bot"
+          }
+        ],
+        "comments": [
+          {
+            "by": "mod_dcarver",
+            "body": "It's eleven dollars a month and it is not a problem, Karen."
+          },
+          {
+            "by": "hbrenner",
+            "body": "Put me down for the 62 logs. I'll drive them over."
+          },
+          {
+            "by": "wpennock",
+            "body": "They are already there. She catalogued them in March."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,953 @@
+{
+  "schema": 1,
+  "domain": "pennock-sdr.net",
+  "title": "W. Pennock - Reception Notes, 4.2190 MHz USB",
+  "type": "page",
+  "era": "2013",
+  "skin": "plain-white",
+  "description": "Walt Pennock's measurement pages from Ashkettle: itemised equipment with prices, a written method, a session-by-session reception log for 4.2190 MHz USB with the nulls left in, a propagation plot described in text, and a list of the things he has ruled out.",
+  "tags": [
+    "ashkettle",
+    "radio",
+    "measurement",
+    "signal-62"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "sdrlisteners.org",
+    "quarrycut.net",
+    "codeandcoffee.blog",
+    "ashkettle-wx.net",
+    "verityledger.com",
+    "vnetdial.com",
+    "tnorris.verity.net",
+    "stargazers.verity.net"
+  ],
+  "data": {
+    "navLabel": "PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "RECEPTION NOTES, 4.2190 MHz USB"
+          },
+          {
+            "kind": "text",
+            "body": "My name is [b]Walt Pennock[/b]. I live in Ashkettle. This page is a log of one signal, the equipment I use to receive it, the method I use, and a list of the things it is not.\n\nI have worked for Verity Valley Power and Light since 1982. [b]Nothing on this page is theirs.[/b] No equipment on it was bought by them, no reading on it was taken on their time, and no opinion on it is anybody's but mine. The prices are in the equipment table so that sentence has something under it.\n\nI am not a radio engineer. I am a substation technician with a receiver and a manual. Where a figure is good I will say how I got it. Where it is not, I will say that instead, which is the only part of this that is any work."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I CAN SAY FROM MY OWN LOG"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]4.2190 MHz, upper sideband.[/b] The dial is checked against a time standard before every session. Largest error I have recorded in twelve months is 41 Hz. I write four decimal places because the fourth one is a measurement. People write 4.219 and mean the same signal and I do not care.",
+              "[b]Seven minutes past the odd hours, local.[/b] Carrier up at 06:45 past, mean of 288 detections, standard deviation 3.4 seconds. Groups start within two seconds of 07:00 past. Carrier off between 14 and 15 past. Nine, eleven, one, three, five. Never an even hour.",
+              "[b]Groups of four digits.[/b] I have counted 1,024 of them by hand off the recordings and every one was four. People write five constantly. They are writing down what they expected to hear.",
+              "[b]A synthetic woman's voice, English.[/b] No callsign, no greeting, no sign-off, no change in it in twelve months of recordings.",
+              "[b]Better after dark and better in winter.[/b] So is everything else on this frequency, which is what the [url=/plot]plot page[/url] is about and why the plot is worth less than it looks.",
+              "[b]340 counted sessions[/b] from 4 November 2012 to 31 October 2013. 288 detections. 52 nulls. The nulls are in the table with everything else. A log without its nulls is an anthology.",
+              "[b]26 control sessions at even hours.[/b] All 26 blank. They are not in the counts above."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS ON THIS PAGE"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[url=/equipment]EQUIPMENT[/url] -- every item, what it cost, and what I do not have.",
+              "[url=/method]METHOD[/url] -- what I do before, during and after a session, and the rules I have set myself.",
+              "[url=/log]RECEPTION LOG[/url] -- October 2013 session by session, twelve monthly totals, and the run out Route 62 on the 5th.",
+              "[url=/plot]THE PLOT[/url] -- the sheet on the wall of the back room, described, with the numbers behind it.",
+              "[url=/notthis]THINGS THIS IS NOT[/url] -- what I have ruled out, and how.",
+              "[url=/corrections]CORRECTIONS TO THIS PAGE[/url] -- my errors, dated, with the wrong figure left where it was.",
+              "[url=/links]OTHER PEOPLE'S PAGES[/url] -- the four or five people in this county who write down what they actually did."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I DO NOT SAY"
+          },
+          {
+            "kind": "text",
+            "body": "I do not say what it is.\n\nI have no explanation. I am not going to put one at the bottom of the page for the sake of having something there. The [url=/notthis]list of things it is not[/url] is a list of measurements and it does not add up to an answer, and anybody who reads it as pointing somewhere has read it wrong.\n\nPeople have been explaining this since before I owned a receiver, and the explanations were contradicting each other on the county board while I was still in my thirties, and as far as I can tell not one of them has ever had a measurement under it. The threads are still there: [url=synth://boards.gridfall.net/topic/5]the Signal on 62[/url]. Read it from the top."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "LAST UPDATED"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Saturday, 16 November 2019.[/b]\n\nNothing on this page has been measured since June 2014. I have left the date honest rather than moving it because a moved date is a lie about the numbers under it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS NEW, NEWEST FIRST"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "11/16/2019 -- New receiver, and a proper antenna at the end of October. My son put the mast up; I am not climbing it at my age. Sessions started again on the 2nd. The log continues and it is not on this page. This page stops where it stops.",
+              "03/19/2016 -- Retired on Friday the 4th, after thirty-four years. Sessions started again the following week. They are in a book.",
+              "09/28/2014 -- No sessions since June. The shift rotation changed in July and I cannot hold a fixed schedule on it. I am not going to fill the gap in from memory.",
+              "06/21/2014 -- Equipment total corrected from $626.30 to $667.30. I had left the feedline out of my own table for a year. See corrections.",
+              "11/03/2013 -- October posted. The onset figure for the 21st was wrong and the wrong figure is still in the table with a line through it.",
+              "10/05/2013 -- Ran the length of 62 from the village to the Coyne Flats line with the attenuator in and the same antenna at every stop. Table on the log page. It is the most useful evening I have spent on this.",
+              "07/06/2013 -- Group count corrected. The count was right and the number of sessions it came off was wrong.",
+              "02/24/2013 -- GPS receiver in service. Onset figures from this date are to the second. Before it, take them as plus or minus three seconds and no better.",
+              "01/19/2013 -- Bearings from November and December were nine degrees low. Declination. Corrected figures on the corrections page, old ones struck through and left where they were.",
+              "12/15/2012 -- Found the AGC on. The first six weeks of S/N figures are compressed and are marked in the log as not comparable. They are not deleted.",
+              "11/04/2012 -- Page up. My son set up the space and showed me how to put a file on it once, and I wrote it down."
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 3182
+          },
+          {
+            "kind": "text",
+            "body": "I put the counter on to find out whether anybody was reading this. It has not told me that. It has told me that something reads every page in this county one after another between two and four in the morning, which is not the same question.\n\nSince November 2012, eleven people have written to me about this page. Three of them were asking me to confirm something they had already settled. One of them sent me ninety nights of his own logs and is the reason I kept going in 2016.\n\n[i]W. Pennock, Ashkettle. Post is the reliable way. The guestbook below still works and I stopped clearing the advertisements out of it when I stopped writing the page.[/i]"
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "R. Sabo",
+                "time": "11/18/2012",
+                "body": "Walt -- I have read the whole of it twice.\n\nThe noise column is the part nobody will understand and it is the part that is worth something. You have done in one month what I did not do in six years, and I am not sore about it, and I am too old to pretend I am not a little sore about it.\n\nTwo things. My 3.8 miles from the four-way to the cut is off an odometer in a truck that has had the wrong size tyres on it since 2001, so take your own mileage and do not take mine. And keep printing the nights with nothing on them. You have so far. Most people stop in the fourth month."
+              },
+              {
+                "author": "Karen Fennimore, Marchfield Public Library",
+                "time": "05/11/2013",
+                "body": "Mr. Pennock -- I came to this page from a link on the Gridfall boards and I have read the method page twice.\n\nI would like to ask whether the library may have a copy. Paper is best for us, and a disc alongside it if you have one, and we will catalogue both and they will be in the county collection under your name. We hold Mr. Mabry's monthly summaries from the Ledger, first Wednesday, November 1999 through August 2010, and we hold nothing at all from anybody on this subject, which is not right when there are people keeping records this carefully.\n\nThere is no hurry and no obligation and I am not asking you to give up the originals. If it helps, I will come out to Ashkettle; I am there for the bookmobile on the second Tuesday."
+              },
+              {
+                "author": "dxr_kenny",
+                "time": "07/29/2013",
+                "body": "so youre saying its coming from the quarry. i knew it. my brother in law said the same thing and everybody laughed at him"
+              },
+              {
+                "author": "AllenM",
+                "time": "09/02/2013",
+                "body": "Fantastic resource. Would you consider letting us feature your October table on our site once it is up? We have a large audience for this material and it would get your work in front of a lot more people. We would not be able to pay but the exposure is real."
+              },
+              {
+                "author": "T. Vrieze",
+                "time": "02/16/2014",
+                "body": "Where are the mp3s. I have read four pages of this and there are no mp3s. If you have recordings and you are not posting them then what is the point of any of this"
+              },
+              {
+                "author": "N7 Hollis",
+                "time": "07/30/2016",
+                "body": "Mr Pennock -- I found your method page in 2015 and I ran it as written for ninety nights from a site 340 miles east of you, same hours, same protocol, nulls logged.\n\nI heard nothing on 4.2190 on any of the ninety. I am told that is not interesting and that I should not bother you with it. I am sending it anyway, because your page says the nights with nothing on them are half the information, and if that is true then this is ninety nights of it. Log is in the post. Tell me if the format is wrong and I will do it again properly."
+              },
+              {
+                "author": "freeloan-approval",
+                "time": "03/22/2017",
+                "body": "APPROVED IN 60 SECONDS no credit check see [url=synth://quick-approve-now.win/]quick-approve-now.win[/url] limited spots"
+              },
+              {
+                "author": "Marcy K.",
+                "time": "11/09/2018",
+                "body": "Someone on the national board pointed me here. Your October table is the only local log I have found that puts the noise floor next to the signal. I have started doing it that way. That is all, I did not want anything."
+              },
+              {
+                "author": "best-pharmacy-deals",
+                "time": "08/14/2021",
+                "body": "TOP QUALITY generic meds shipped discreet worldwide [url=synth://rx-deals-daily.top/]rx-deals-daily.top[/url] SAVE 80 PERCENT"
+              }
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ANSWERS TO THE GUESTBOOK, SINCE IT HAS NO REPLY BUTTON"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Mr. Sabo.[/b] I have taken my own mileage and it is in the table and it is 6.4 to the pull-off from Main Street, not from your four-way. Your six years are the reason I knew where to stop the truck. You sent me 214 photocopied notebook pages in 2010 and would not take the postage, and I have not forgotten it.\n\n[b]Mrs. Fennimore.[/b] Yes. I brought a copy in on Saturday 14 September, the log book pages photocopied and a disc, and she gave me a receipt for it, which I did not expect. The receipt is in the front of the current book.\n\n[b]dxr_kenny.[/b] No. The page says the opposite of that in two places and one of them is a table. The signal is not stronger at the quarry. The quarry is [i]quieter[/i], which is not the same thing and is the whole of what I found out on 5 October.\n\n[b]AllenM.[/b] You may have the table if the noise column comes with it. The noise column is the only reason the other columns mean anything. You published it in September with the noise column taken out. I wrote and asked you to put it back or take it down and you took my name off it instead.\n\n[b]T. Vrieze.[/b] I have 340 recordings and I am not posting them. A recording of a voice reading numbers proves that I recorded a voice reading numbers. It is the weakest thing I have. The tables are the strong thing and they are free.\n\n[b]N7 Hollis.[/b] It arrived. Ninety nights of nothing at 340 miles is interesting and whoever told you otherwise does not know what a null is for. The format was right. I have it in the folder with my own.\n\n[b]Marcy K.[/b] Good. Put the bandwidth you measured it in at the top of the column, or in a year you will not be able to compare your own figures with each other."
+          }
+        ]
+      },
+      {
+        "id": "equipment",
+        "name": "Equipment",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "EQUIPMENT"
+          },
+          {
+            "kind": "text",
+            "body": "Everything I use, when I bought it and what it cost. I list the cost because a method nobody can afford to repeat is not a method, and because people assume this takes more money than it takes. It takes less money than a deer rifle and more evenings than one."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "ITEM",
+              "WHAT IT IS",
+              "WHEN",
+              "COST",
+              "NOTE"
+            ],
+            "rows": [
+              ["Receiver", "Corvin 707, used", "Marchfield hamfest, September 2011", "$140.00", "Everything in the log is this set unless the row says truck."],
+              ["Second receiver", "USB dongle, 8 bit", "November 2012", "$22.00", "Bought to check the first one against. Two sets that disagree are worth more than one set that does not."],
+              ["Upconverter", "Kit, built at the kitchen table", "October 2012", "$49.00", "Puts the low end where the dongle can hear it. Four evenings and a burnt thumb."],
+              ["Postage on the kit", "", "October 2012", "$6.40", ""],
+              ["Antenna wire", "200 ft, #14 hard drawn", "Ashkettle Hardware, September 2012", "$18.40", "Mine. Bought on a Saturday with my own money. I have the receipt and I keep it for a reason."],
+              ["Insulators", "Two, egg type", "Ashkettle Hardware, September 2012", "$4.80", ""],
+              ["Rope", "100 ft, 3/8 in", "Ashkettle Hardware, September 2012", "$12.90", ""],
+              ["Feedline", "75 ft RG-8X, made up with connectors", "May 2013", "$41.00", "Replaced 60 ft of RG-58 that had been wet at the far end since about 1998."],
+              ["Common mode choke", "18 ferrite beads on the feedline", "November 2012", "$12.60", "Took 4.2 dB off my noise floor the afternoon I fitted it. Best value on this table."],
+              ["Ground rods", "Three, 8 ft, copper clad, at $11.20", "October 2012", "$33.60", ""],
+              ["Ground wire and clamps", "40 ft #6 bare, six clamps", "October 2012", "$27.15", ""],
+              ["Loop antenna, wire and plug", "1 metre square, frame out of the scrap pile", "January 2013", "$9.25", "The frame cost nothing and the frame is most of it."],
+              ["Loop preamp", "Kit", "January 2013", "$34.00", ""],
+              ["Compass", "Prismatic, used, army surplus", "January 2013", "$18.00", "Bought after I put out three months of bearings that were nine degrees wrong."],
+              ["GPS receiver", "USB puck", "February 2013", "$28.00", "For time. It loses lock under the eave and it has cost me one row in the log."],
+              ["Computer", "Used desktop, school district surplus sale", "September 2012", "$60.00", "Runs the recorder and nothing else. It is not on the telephone line."],
+              ["Second hard drive", "500 GB, for the recordings", "September 2012", "$54.00", "Sessions are kept at 8 kHz mono, which is enough for a voice and is not enough for anything else."],
+              ["Uninterruptible supply", "Used, with a new battery", "December 2012", "$39.00", "So a session is not lost to a blink. I work where I work. I know what a blink is."],
+              ["Antenna switch", "Two position", "November 2012", "$16.00", ""],
+              ["Attenuator", "20 dB, fixed", "March 2013", "$11.00", "For the mobile run, so the front end sees the same thing in the village that it sees at the cut."],
+              ["Headphones", "Closed, wired", "November 2012", "$24.00", ""],
+              ["Log books", "Quadrille, 80 sheets, two of them at $3.10", "2012 and 2013", "$6.20", "The most important item on this table. I am not being clever about that."],
+              ["[b]TOTAL[/b]", "", "[b]September 2011 to October 2013[/b]", "[b]$667.30[/b]", ""]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]$667.30 over twenty-six months.[/b] That is $25.67 a month, which is less than I spend on diesel in a week, and about half of it is the two receivers.\n\nThe web space is $8.00 a month with the dial-up company, which I have not dialled since 2007 and keep for the space. Their terms are at [url=synth://vnetdial.com/pages]the personal pages page[/url] and have not changed since I signed them."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THREE OF THEM, AT LENGTH"
+          },
+          {
+            "kind": "text",
+            "body": "[b]The Corvin 707.[/b] Bought used at the Marchfield hamfest in September 2011 for $140 off a man who had two. The phase noise is as bad as the national board says it is. It does not matter here. Phase noise costs you when there is a strong signal close to a weak one you want, and there is nothing within 200 kHz of 4.2190 at eleven at night that is strong enough to hurt me. A fault that does not touch your measurement is not a fault in your measurement. It is a fault in the radio and you write it down and get on.\n\n[b]The dongle.[/b] Twenty-two dollars, and with the upconverter in front of it, it hears the same signal at the same second as the tabletop. That is the only reason it is on the table. Two unrelated receivers agreeing is the cheapest proof available that the thing is not being made inside one of them, and I ran them side by side for the whole of December 2012 to establish it.\n\n[b]The wire.[/b] Two hundred feet of #14, bought at the hardware store in Ashkettle on a Saturday morning in September 2012, with my own money, on a receipt I still have. I am putting that on a web page because of what a man who works where I work gets assumed about him the moment he measures something. Nothing here came off a truck."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE ANTENNA"
+          },
+          {
+            "kind": "text",
+            "body": "Inverted L. Eighty-eight feet of #14, twenty-six feet up at the back corner of the garage, running east to a locust at the fence line. Fed at the base against three eight-foot rods in a triangle and forty feet of #6 bare copper, bonded to the house ground, which is the part most people leave out and then wonder about their noise.\n\nEighteen ferrite beads on the feedline at the set. That choke took [b]4.2 dB[/b] off my noise floor the afternoon I fitted it, measured before and after inside twenty minutes with nothing else touched. It cost twelve dollars and sixty cents and it is the best value on the table above.\n\nThe L is not resonant on 4.2190 and I am not matching it properly. I know. A better antenna would raise the signal and the noise together and would move almost nothing in the S/N column, which is the column I publish."
+          },
+          {
+            "kind": "image",
+            "seed": "wp-antenna-garage-corner",
+            "imgKind": "photo",
+            "caption": "The high end at the garage corner, November 2012. The white thing on the eave is the GPS receiver, which is where it should not be and is why it loses lock."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE LOOP"
+          },
+          {
+            "kind": "text",
+            "body": "One metre square, wound on a frame out of the scrap pile, on a camera tripod in the side yard, with a preamp kit in a tobacco tin. I turn it by hand and read the bearing off a prismatic compass.\n\n[b]A loop gives you a null, not a peak.[/b] You turn it until the signal disappears and the null is sharp and the peak is not, so the null is the measurement. And the null is [b]ambiguous end for end[/b]: it gives me a line, not a direction. I have not resolved the ambiguity and I am not going to write as though I have.\n\nFour bearings in October. 041, 042, 041, 042 degrees true, which is 041/221 as a line, and my honest error on that is six degrees, not one. Repeatability is not accuracy. If somebody nine or ten miles from here would take one bearing on one night, the two lines would cross and that would be a fix, and it is the single most useful thing anybody could do for this and it would take one evening.\n\nNobody has."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT I DO NOT HAVE"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]A second receiver at a known separation, and a person to run it.[/b] The receiver is $140 at the right hamfest. The person is the part I do not have.",
+              "[b]A calibrated field strength meter.[/b] About $900 used when one comes up, which is why every figure in my signal columns is a number on an arbitrary scale and is labelled as one.",
+              "[b]A frequency standard.[/b] $180 in kit form, disciplined off GPS. It would take my frequency resolution from plus or minus 8 Hz to something I could argue about drift with. On the list.",
+              "[b]A spectrum analyser.[/b] Not going to happen and I do not need one for this.",
+              "[b]Time in the middle of a work week.[/b] Free, and I have less of it than anything else on this list. It is why the 19:07 and 05:07 columns on the plot page are thinner than the rest."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "method",
+        "name": "Method",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "METHOD"
+          },
+          {
+            "kind": "text",
+            "body": "Written out so that a stranger can decide what my numbers are worth. That is the only reason to write a method down and it is the reason most people do not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "BEFORE THE SESSION"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Receiver on for thirty minutes before the hour. A cold set drifts and I am not interested in measuring my own front end warming up.",
+              "Check the dial against the time standard at 5 MHz and again at 10 MHz. Write down what the dial says against what it should say, in Hz, every session, even when it is zero. Largest error in twelve months: 41 Hz, on 9 February 2013, in an unheated back room at nine degrees.",
+              "Take the time off the tick on 10 MHz, not off the computer. The computer sets its clock from the telephone line and does not tell you when it last managed it.",
+              "AGC off. Attenuator out unless the row says otherwise. RF gain at the same mark it has been at since 15 December 2012, marked with a file cut on the dial so I cannot lose it.",
+              "Note the weather before I sit down, not after. If I write it afterwards I write what the session felt like."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE SESSION"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "On air at the hour, off at twenty past. Twenty minutes every time, including the sessions where there is nothing, which are the ones where twenty minutes feels like an hour.",
+              "Measure the noise floor at two minutes past, in a 2.4 kHz window, with nothing in it. That figure goes in the NOISE column and it is taken before I know whether there will be anything to measure.",
+              "Carrier onset to the second against the tick. Groups start, groups end, carrier off, each to the second.",
+              "Measure the peak in the same 2.4 kHz window during the groups. That figure goes in the PEAK column.",
+              "Readable, present but not readable, or nothing. Those are the three results and I do not have a fourth. A session I was not sure about gets a question mark and keeps it.",
+              "The loop, when I run it, is turned for the null three times and the three bearings are averaged, and if they spread more than eight degrees I throw the set out and write that I threw it out."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "AFTER"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Write the row in the book in pen, in the back room, before I go to bed. Not the next day.",
+              "Type it onto this page at the end of the month, from the book, without listening to the recording again. If I listen again I will hear what I have since decided I heard.",
+              "The recording is kept at 8 kHz mono and filed by date. Enough for a voice. Not enough for anything clever, and I am not doing anything clever."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT EACH COLUMN IS, AND WHAT IT IS WORTH"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "COLUMN",
+              "WHAT IT IS",
+              "WHAT IT IS WORTH"
+            ],
+            "rows": [
+              ["DATE, HOUR", "Local. The hour is the transmission hour, so 01:07 on the 13th is Saturday night as far as I am concerned and Sunday morning as far as the table is concerned.", "Good."],
+              ["ONSET", "Seconds past the hour at which the carrier comes up, against the 10 MHz tick.", "Good from 24 February 2013, when the GPS receiver went in. Before that, plus or minus three seconds at best and marked as such."],
+              ["NOISE", "The software's own reading of the floor in a 2.4 kHz window at two minutes past, before the carrier.", "The number itself means nothing. It is an arbitrary scale. Compared with another number from the same column it is the most useful thing on this page."],
+              ["PEAK", "The same meter in the same window during the groups.", "Same. Arbitrary on its own."],
+              ["S/N", "PEAK minus NOISE.", "[b]This is the figure to use.[/b] It is the only one that survives leaving my house. If you quote one column from this page, quote this one, and say what bandwidth it was measured in, which is 2.4 kHz."],
+              ["BRG", "Loop bearing, degrees true, average of three nulls, corrected for declination since 19 January 2013.", "Repeatable to a degree or two. Accurate to about six. Ambiguous end for end, always."],
+              ["WX", "My own thermometer and my own eyes at the back door.", "Poor, and it used to be better. See below."],
+              ["RESULT", "Readable, present but not readable, or nothing.", "Three states, no fourth, no adjectives."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE WEATHER COLUMN, AND WHY IT GOT WORSE"
+          },
+          {
+            "kind": "text",
+            "body": "Until April 2011 I took the weather off the Kestrel Road station, which is a mile and a half from my back door and is read by hand at seven and seven every day by a man who taught earth science for thirty-one years and publishes what is wrong with his own site. The record is at [url=synth://ashkettle-wx.net/records]ashkettle-wx.net[/url] and the equipment page there is the reason I wrote mine the way I wrote it.\n\nThat page stopped on 17 April 2011 and has not moved since.\n\nSo my weather column is now a thermometer on the north wall of my own house, read by me when I think of it, which is worse in every way that matters, and I have marked the change rather than letting the column quietly get worse without saying so. If the station ever comes back I will go back to it and mark that too."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "RULES I HAVE SET MYSELF"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "A session I did not run is not a null. A session I ran and heard nothing is a null, and it goes in, and it counts.",
+              "I do not change a row once it is typed. Corrections go on the [url=/corrections]corrections page[/url] with the date I found the error, and the wrong figure stays in the table with a line through it. A page that quietly improves is a page nobody can check.",
+              "I do not listen to a recording before I write the row.",
+              "I do not put an explanation in the remarks column. The remarks column is for what the equipment did.",
+              "If I am not sure, it stays not sure. There is a question mark in the book on eleven rows and it is still there on all eleven.",
+              "I do not answer a question I have not measured. I have been asked what it is eleven times and I have given the same answer eleven times and it is not going to improve with repetition."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "log",
+        "name": "Reception log",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "RECEPTION LOG"
+          },
+          {
+            "kind": "text",
+            "body": "Times are local and are the transmission hour. [b]NOISE[/b] and [b]PEAK[/b] are the software meter's own scale in a 2.4 kHz window and mean nothing on their own; subtract them and you have [b]S/N[/b], which is the column worth quoting. [b]BRG[/b] is a loop bearing in degrees true, average of three nulls, ambiguous end for end. Everything else is described on the [url=/method]method page[/url].\n\nRows marked CONTROL are even-hour sessions. They are not in any count on this page."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "OCTOBER 2013, EVERY SESSION"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "DATE",
+              "HOUR",
+              "ONSET",
+              "NOISE",
+              "PEAK",
+              "S/N",
+              "BRG",
+              "WEATHER",
+              "RESULT"
+            ],
+            "rows": [
+              ["10/01/2013", "23:07", "06:45", "-99.6", "-82.1", "17.5", "--", "clear, calm, 46F", "Readable throughout. Carrier off 15:01."],
+              ["10/03/2013", "23:07", "06:49", "-98.9", "-83.4", "15.5", "--", "overcast, S 6, 52F", "Readable."],
+              ["10/04/2013", "21:07", "06:42", "-97.2", "-85.0", "12.2", "--", "overcast, S 9, 55F", "Readable. Two groups lost to a burst at 11 past."],
+              ["10/04/2013", "23:07", "06:46", "-99.1", "-82.8", "16.3", "041", "overcast, S 5, 51F", "Readable. Loop run, first of four this month."],
+              ["10/05/2013", "21:07", "06:45", "-103.4", "-86.9", "16.5", "--", "clear, calm, 48F", "[b]Truck, pull-off at the cut.[/b] Whip and preamp, not the wire. Not comparable to the house rows."],
+              ["10/05/2013", "23:07", "06:41", "-103.9", "-86.2", "17.7", "--", "clear, calm, 43F", "Truck, pull-off. Readable with the window up."],
+              ["10/06/2013", "01:07", "06:48", "-104.1", "-87.7", "16.4", "--", "clear, calm, 39F", "Truck, pull-off. Home at 02:20."],
+              ["10/06/2013", "23:07", "06:45", "-99.4", "-83.0", "16.4", "--", "clear, calm, 41F", "Readable."],
+              ["10/07/2013", "23:07", "06:50", "-98.2", "-84.9", "13.3", "--", "rain, E 8, 50F", "Readable. Weak on the last third."],
+              ["10/08/2013", "21:07", "--", "-94.0", "--", "--", "--", "rain, E 14, 49F", "[b]NOTHING.[/b] Sat to 21:25."],
+              ["10/08/2013", "23:07", "--", "-93.6", "--", "--", "--", "rain, E 12, 48F", "[b]NOTHING.[/b] Sat to 23:25."],
+              ["10/09/2013", "23:07", "06:46", "-96.8", "-90.3", "6.5", "--", "overcast, E 6, 47F", "Present, not readable. Voice identifiable. No group copied."],
+              ["10/10/2013", "22:07", "--", "-99.0", "--", "--", "--", "clear, calm, 44F", "[b]CONTROL, even hour.[/b] Nothing. Sat to 22:25. Not counted."],
+              ["10/10/2013", "23:07", "06:43", "-99.8", "-81.9", "17.9", "--", "clear, calm, 43F", "Readable. Best of the week."],
+              ["10/11/2013", "21:07", "06:46", "-97.9", "-84.4", "13.5", "--", "clear, W 7, 50F", "Readable."],
+              ["10/11/2013", "23:07", "06:47", "-100.2", "-82.0", "18.2", "042", "clear, calm, 44F", "Readable. Loop run."],
+              ["10/12/2013", "21:07", "06:44", "-99.0", "-83.8", "15.2", "--", "high cloud, calm, 47F", "Readable."],
+              ["10/12/2013", "23:07", "06:45", "-100.4", "-81.4", "19.0", "--", "high cloud, calm, 42F", "Readable."],
+              ["10/13/2013", "01:07", "06:42", "-101.0", "-81.0", "20.0", "041", "clear, calm, 38F", "Readable. Loop run."],
+              ["10/13/2013", "03:07", "06:48", "-100.6", "-84.2", "16.4", "--", "clear, calm, 36F", "Readable. Fading deep on the last four groups."],
+              ["10/13/2013", "23:07", "06:46", "-99.2", "-83.1", "16.1", "--", "clear, calm, 40F", "Readable."],
+              ["10/16/2013", "23:07", "06:49", "-98.4", "-85.6", "12.8", "--", "overcast, SE 8, 53F", "Readable."],
+              ["10/17/2013", "23:07", "06:43", "-88.1", "-80.9", "7.2", "--", "overcast, calm, 51F", "Readable but poor. [b]Noise floor up 10.3 dB on last night.[/b] Not the weather."],
+              ["10/18/2013", "23:07", "06:46", "-87.6", "-80.4", "7.2", "--", "clear, calm, 45F", "Readable but poor. Noise floor still up."],
+              ["10/19/2013", "21:07", "06:47", "-87.9", "-81.7", "6.2", "--", "clear, calm, 49F", "Poor. Spent the session walking the house with a portable instead of listening."],
+              ["10/19/2013", "23:07", "06:41", "-88.3", "-80.8", "7.5", "--", "clear, calm, 44F", "Poor."],
+              ["10/20/2013", "01:07", "--", "-88.0", "--", "--", "--", "clear, calm, 40F", "[b]NOTHING.[/b] This null is mine and not the band's. It is in the count anyway."],
+              ["10/21/2013", "23:07", "[s]07:26[/s] 06:45", "-87.8", "-81.2", "6.6", "--", "overcast, S 5, 52F", "Poor. Onset first typed as [s]07:26[/s] and that figure was my clock. See corrections."],
+              ["10/22/2013", "23:07", "06:44", "-99.9", "-82.4", "17.5", "--", "overcast, S 7, 54F", "Readable. [b]Noise floor back down 12.1 dB at 18:40.[/b] See corrections."],
+              ["10/25/2013", "23:07", "06:48", "-100.1", "-82.6", "17.5", "--", "clear, NW 9, 39F", "Readable."],
+              ["10/26/2013", "00:07", "--", "-100.8", "--", "--", "--", "clear, calm, 36F", "[b]CONTROL, even hour.[/b] Nothing. Sat to 00:25. Not counted."],
+              ["10/26/2013", "21:07", "06:46", "-100.0", "-82.9", "17.1", "--", "clear, NW 6, 41F", "Readable."],
+              ["10/26/2013", "23:07", "06:45", "-101.7", "-79.8", "21.9", "042", "clear, calm, 35F", "Readable. Strongest of the month. Loop run."],
+              ["10/27/2013", "01:07", "06:43", "-101.2", "-81.6", "19.6", "--", "clear, calm, 33F", "Readable."],
+              ["10/28/2013", "23:07", "06:47", "-99.3", "-84.1", "15.2", "--", "overcast, SW 8, 47F", "Readable."],
+              ["10/31/2013", "23:07", "06:45", "-99.7", "-83.3", "16.4", "--", "rain ending, SW 10, 45F", "Readable."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "OCTOBER, IN NUMBERS"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "34 counted sessions. 31 detections. 3 nulls. 2 control sessions, both blank.",
+              "Onset mean 06:45.4 past the hour, standard deviation 2.3 seconds across 31 detections. I cannot tell you how much of those 2.3 seconds is the transmitter and how much is me and the puck under the eave. I would say most of it is me, and that is a guess, so it is not in the table.",
+              "S/N median 16.4 dB. Highest 21.9 dB, 26 October at 23:07, clear and calm and 35F. Lowest 6.2 dB, 9 October, present and not readable.",
+              "Frequency: no shift I can measure. My resolution is about plus or minus 8 Hz over a session.",
+              "Groups: four digits, every group, every session."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "NIGHTS WITH NO SESSION, AND WHY"
+          },
+          {
+            "kind": "text",
+            "body": "The 2nd, 14th, 15th, 23rd, 24th, 29th and 30th. Storm work on the 2nd and the 14th and 15th, a funeral in Halsey on the 23rd, and on the 24th, 29th and 30th I went to bed. A session I did not run is not a null and does not go in the count, and I am saying which nights they were so nobody has to wonder whether I am choosing.\n\n[b]The three nulls.[/b] The 8th at 21:07 and 23:07, both in rain with the wind up in the east, which is the ordinary sort of null. And the 20th at 01:07, which was not ordinary: that one was my own freezer putting ten dB of noise across the band, and the signal was probably there and was under the floor. It is a null in the count anyway. The count does not know why.\n\n[b]The noise, 17 to 22 October.[/b] The floor came up 10.3 dB overnight on the 17th and stayed up for five days. Not the weather; clear nights in the middle of it. I spent the 19th walking the house with a portable receiver instead of listening, room by room, and found it on the 22nd at half past six in the evening: the switching supply on the chest freezer in the garage, twelve feet from the feedpoint, on its way out. Unplugged it at 18:40 and the floor went down 12.1 dB inside a minute.\n\nFive days of my own log are worth less because of a freezer. They stay in. That is what the noise column is for."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "MONTHLY TOTALS, NOVEMBER 2012 TO OCTOBER 2013"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "MONTH",
+              "SESSIONS",
+              "DETECTIONS",
+              "NULLS",
+              "ONSET MEAN",
+              "ONSET SD (s)",
+              "S/N MEDIAN (dB)"
+            ],
+            "rows": [
+              ["November 2012", "21", "19", "2", "06:46", "4.1", "16.4"],
+              ["December 2012", "34", "31", "3", "06:46", "3.8", "17.2"],
+              ["January 2013", "38", "36", "2", "06:45", "3.5", "18.0"],
+              ["February 2013", "33", "30", "3", "06:46", "3.4", "17.6"],
+              ["March 2013", "31", "28", "3", "06:45", "3.1", "15.1"],
+              ["April 2013", "26", "21", "5", "06:46", "3.3", "12.4"],
+              ["May 2013", "24", "19", "5", "06:45", "3.0", "10.2"],
+              ["June 2013", "22", "15", "7", "06:46", "3.6", "7.1"],
+              ["July 2013", "19", "12", "7", "06:45", "3.4", "6.3"],
+              ["August 2013", "27", "20", "7", "06:46", "3.2", "8.8"],
+              ["September 2013", "31", "26", "5", "06:45", "2.9", "13.7"],
+              ["October 2013", "34", "31", "3", "06:45", "2.3", "16.4"],
+              ["[b]TWELVE MONTHS[/b]", "[b]340[/b]", "[b]288[/b]", "[b]52[/b]", "[b]06:45[/b]", "[b]3.4[/b]", "[b]13.9[/b]"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Twelve months. 340 counted sessions, 288 detections, 52 nulls, which is 15.3 percent of the log with nothing in it.\n\n[b]The summer is not the transmitter.[/b] June and July are the worst months in that table by a long way and they are the worst months on this frequency for everything, and the control station on the [url=/plot]plot page[/url] does the same thing in the same weeks. Somebody quoted my June figures back at me in 2013 as evidence the signal was weakening. It was July by the time I answered and it was already coming back.\n\nThe onset standard deviation improves down that column, from 4.1 seconds to 2.3. That is the GPS receiver going in on 24 February and it is me getting better at pressing a key. It is not the transmitter getting more accurate, and if I ever see it written down that way I will have caused it by publishing this table."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE RUN OUT 62, 5 AND 6 OCTOBER 2013"
+          },
+          {
+            "kind": "text",
+            "body": "Everyone in this county knows the signal is strongest at the quarry cut. I have been told it at the pull-off with an engine running, which is the worst possible place to be told anything about radio.\n\nSo I measured it. Nine stops from Main Street in Ashkettle to the Coyne Flats town line, 9.2 miles, the same antenna on the truck at every stop, the 20 dB attenuator in the whole way so the front end saw the same thing in the village as it saw at the cut, engine off at every stop.\n\n[b]A mobile run cannot be done in one session[/b] and anybody who tells you they did one has not done one. The noise figures were taken one after another between 19:30 and 20:50 on Saturday the 5th, with no transmission in progress, because a noise floor does not need anything to be transmitting. The peak figures are from four stops across three sessions on the 5th and the 6th. The other five rows have no peak and I have left them empty rather than guessing at them."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "WHERE",
+              "MILE",
+              "NOISE",
+              "PEAK",
+              "S/N",
+              "NOTE"
+            ],
+            "rows": [
+              ["Main Street and 62, Ashkettle", "0.0", "-91.2", "--", "--", "Village. Street lighting, and everybody's house."],
+              ["Kestrel Road crossing", "1.4", "-93.6", "--", "--", "Distribution line crosses here. I would have expected worse."],
+              ["Bracken Lane four-way", "2.6", "-94.8", "-91.0", "3.8", "Sabo logged four attempts here and got nothing by ear. It is there. It is 3.8 dB out of the noise."],
+              ["Tessler Road", "3.9", "-97.1", "--", "--", "Last house for two miles is behind you."],
+              ["West foot of the grade", "5.2", "-99.9", "--", "--", "Nothing overhead from here to the top."],
+              ["Pull-off, top of the grade", "6.4", "-104.1", "-86.9", "17.2", "The cut. Quietest point on the run by 2.1 dB."],
+              ["Bottom of the east grade", "6.8", "-101.3", "-85.8", "15.5", "[b]Highest peak on the run, and it is not at the cut.[/b]"],
+              ["Quarry entrance gate", "7.1", "-102.0", "--", "--", "Gate is chained. I did not go in and you should not."],
+              ["Coyne Flats town line", "9.2", "-95.4", "-88.6", "6.8", "Line comes back overhead half a mile before this."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "WHAT THAT RUN SAYS"
+          },
+          {
+            "kind": "text",
+            "body": "Three numbers.\n\n[b]The noise floor varies 12.9 dB across the run.[/b] Quietest at the pull-off at the top of the grade, loudest in the village. That is street lighting, house wiring and two miles of distribution line, and it is the same everywhere there are people and it is nothing to do with this signal.\n\n[b]The peak varies 5.2 dB[/b] across the four stops where I have one, and the highest peak on the run is not at the cut. It is 0.4 miles further east, at the bottom of the grade.\n\n[b]So the cut is the best place to hear it because the cut is quiet.[/b] It is a hole in the ground with nothing overhead for a mile and a half either way. It is not the best place because there is more signal there. There is not more signal there.\n\nThis is not an argument with anybody. Ray Sabo's table of where it is better and where it is worse has been right on this page's own evidence since 2009, and his six years are why I knew where to stop the truck: [url=synth://quarrycut.net/radio]quarrycut.net[/url]. All I have done is put the two things he heard as one thing into two columns. He heard nothing at the Bracken Lane four-way on four attempts and he wrote that down honestly. It is there. It is 3.8 dB out of the noise at that spot, which is under the floor for a man in a truck with the set's own speaker on, and above it for a wire in a back yard with a choke on the feedline.\n\nA thing being audible in one place and not another is a fact about the two places."
+          },
+          {
+            "kind": "image",
+            "seed": "wp-logbook-oct2013-spread",
+            "imgKind": "photo",
+            "caption": "The book, 17 to 22 October, both pages. The five rows with the noise floor up are the freezer and they are still in the book because the book is not for making me look good."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1046
+          }
+        ]
+      },
+      {
+        "id": "plot",
+        "name": "The plot",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE PLOT"
+          },
+          {
+            "kind": "text",
+            "body": "There is one drawing on this site and it is not scanned. It is two sheets of quadrille paper taped together on the wall of the back room over the set, in pencil, with the months written up the right-hand margin in the order I added them. I do not own a scanner and the one at the library wants a flat sheet and mine has tape down the middle of it.\n\nSo I am going to describe it, and then I am going to give you the numbers it was drawn from, which are better than the drawing."
+          },
+          {
+            "kind": "image",
+            "seed": "wp-plot-sheet-backroom-wall",
+            "imgKind": "photo",
+            "caption": "The sheet, photographed on the wall with the flash on, which was a mistake. The left third is glare. The numbers underneath it are in the table lower down and they are legible."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS ON THE SHEET"
+          },
+          {
+            "kind": "text",
+            "body": "Horizontal axis: local hour, left to right, six columns, one for each odd hour I run. 19, 21, 23, 01, 03, 05. They are evenly spaced because six columns is all the room there is on the sheet, and not because two hours is two hours.\n\nVertical axis: median S/N in dB, 0 at the bottom, 24 at the top, two dB to the square.\n\nOn it are four pencil lines, one for each season, each drawn through six plotted points with a straight edge between them because I am not going to freehand a curve through six points and pretend I know what happens between them.\n\nAll four lines do the same thing. They start low at 19, climb to a maximum between 23 and 01, and come down again by 05. The winter line sits between 6.1 and 11.0 dB above the summer line, widest at one in the morning and narrowest at five. The summer line is flatter as well as lower: it climbs 4.8 dB from end to peak where the winter line climbs 9.2.\n\nThere is a fifth line on the sheet in red, and it is the one that matters, and it is why I am not prouder of the other four."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE FOUR LINES, AS NUMBERS"
+          },
+          {
+            "kind": "text",
+            "body": "Median S/N in dB, 2.4 kHz bandwidth, from the sessions in the [url=/log]log[/url]. Winter is November through February, summer is June through August. The 19:07 and 05:07 columns are drawn from fewer sessions than the others because I was working, and a thin column is still a column as long as you say it is thin."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "HOUR",
+              "WINTER",
+              "SPRING",
+              "SUMMER",
+              "AUTUMN"
+            ],
+            "rows": [
+              ["19:07", "9.8", "7.1", "3.2", "8.4"],
+              ["21:07", "14.6", "11.0", "5.9", "12.8"],
+              ["23:07", "18.1", "13.9", "7.4", "16.2"],
+              ["01:07", "19.0", "14.4", "8.0", "17.1"],
+              ["03:07", "16.7", "12.2", "7.6", "14.9"],
+              ["05:07", "11.2", "8.0", "5.1", "9.3"]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE RED LINE"
+          },
+          {
+            "kind": "text",
+            "body": "The red line is a broadcast station on 4.0050 MHz, 214 kHz down the band from the signal, which has nothing whatever to do with Verity County, is on the air continuously, and is somebody else's problem entirely.\n\nI measured it in the same 2.4 kHz window, on the same antenna, in the same sessions, immediately after the groups ended. It is a control and it cost me nothing but thirty seconds a session."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "HOUR",
+              "THE SIGNAL (winter)",
+              "CONTROL STATION (winter)",
+              "DIFFERENCE"
+            ],
+            "rows": [
+              ["19:07", "9.8", "12.6", "2.8"],
+              ["21:07", "14.6", "17.9", "3.3"],
+              ["23:07", "18.1", "21.4", "3.3"],
+              ["01:07", "19.0", "21.9", "2.9"],
+              ["03:07", "16.7", "19.4", "2.7"],
+              ["05:07", "11.2", "14.1", "2.9"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The two lines are parallel within [b]0.3 dB[/b] at every one of the six hours, with the control sitting 3.0 dB above.\n\n[b]That is the whole finding and it is a negative one.[/b] The shape of my plot is the shape of the band. It is the ionosphere over this county doing at eleven at night what it does to everything on this frequency at eleven at night. My four seasonal lines are a measurement of the sky and not a measurement of the transmitter.\n\nI cannot separate the two with one receiver in one place. Nobody can. To say anything about what the transmitter itself is doing hour to hour I would need a second site far enough away to see a different piece of sky, and the two would have to run the same twenty minutes, and I have written about the second site in three places on this site now and I am going to stop.\n\nPeople have quoted my seasonal lines at me as showing the signal is 'stronger in winter'. It is not. [i]Everything[/i] is stronger in winter. If I had not drawn the red line I would probably have believed it myself, and the red line took half a minute a night."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE SECOND SHEET: ONSET"
+          },
+          {
+            "kind": "text",
+            "body": "Underneath, on its own sheet, is the plot I look at most and the one nobody has ever asked about.\n\nHorizontal axis: session number, 1 to 340, left to right, in the order they happened. Vertical axis: seconds past the hour at which the carrier came up, 40 at the bottom, 52 at the top, one second to the square.\n\nIt is a band. 288 dots in a horizontal stripe about eight seconds thick centred on 45, tighter on the right-hand half than the left because the GPS receiver went in at session 119. No slope that I can see with a straight edge laid on it. No drift across twelve months.\n\nThere is one dot that is not on the sheet at all. It is pencilled in the right margin above the top rule, with an arrow and its value written beside it, at session 333, and for four days in October 2013 it was the most interesting mark on this wall.\n\nIt was my clock. The GPS receiver lost lock at 22:41 that night, under the eave where I should not have put it, and the computer went on believing itself. The mark is still in the margin in pencil with a ring round it and the word CLOCK, and the row is still in the table with a line through the wrong figure, because an outlier you rub out is an outlier you will find again in two years and get excited about twice.\n\nTwelve months of a flat band and no drift is a real result about a transmitter, and it is the only thing on this site that is about the transmitter rather than about the sky. Nobody has ever quoted it. The seasonal lines get quoted constantly and they are the ones that mean nothing."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 612
+          }
+        ]
+      },
+      {
+        "id": "notthis",
+        "name": "Things this is not",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THINGS THIS IS NOT"
+          },
+          {
+            "kind": "text",
+            "body": "Each item here is on the list because something I measured rules it out. If I have not measured anything that bears on it, it is not on this page, however silly it sounds and however many times I have been told it.\n\n[b]A list of things something is not is not an argument for anything in particular.[/b] I have written that at the top and I will write it again at the bottom."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "1. It is not my own equipment"
+          },
+          {
+            "kind": "text",
+            "body": "The first thing to rule out is always yourself.\n\nAntenna disconnected at the set: gone, floor drops to the receiver's own noise. Antenna back on: there. Dongle and upconverter on a separate supply on the other side of the house, tabletop switched off at the wall: there, same second, same content. Tabletop alone with the dongle unplugged: there.\n\nChecked for an image or a harmonic at 2.1095, 8.4380, 12.6570 and 16.8760 MHz, on four occasions each, during transmissions: nothing at any of them.\n\nTwo unrelated receivers, two supplies, one antenna. It is not being made in this house."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "2. It is not the travellers' information transmitter at the fairgrounds"
+          },
+          {
+            "kind": "text",
+            "body": "This one is mine to correct because I got it wrong first.\n\nIn 2007 a man in Gridfall put a receiver on what people report out on 62 and wrote up his method, which almost nobody does: [url=synth://codeandcoffee.blog/post/sdr-signal-62]I put a receiver on the Signal on 62[/url]. He found a voice reading digits on [b]1610 kHz[/b], at the top of the AM broadcast band, and he traced it to the county's information transmitter at the fairgrounds, and he was careful and honest about what that did and did not show.\n\nI read that in 2012 and thought it settled mine. It does not. [b]1610 kHz and 4.2190 MHz are not the same signal and cannot be received on the same radio.[/b] They are different bands, different modes, and about two and a half megahertz apart. A car radio cannot hear 4.2190 at all, in any trim, ever.\n\nI sat in the truck at the fairgrounds on 9 March 2013 with the tabletop on 4.2190 USB and the truck radio on 1610 AM at the same hour. Both were present. They were not the same voice, not the same content and not on at the same minutes.\n\nThere are two separate things out there and they have been welded into one on the internet for six years. His is the better documented of the two. Mine is not his."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "3. It is not the substation"
+          },
+          {
+            "kind": "text",
+            "body": "Bearing. Substation No. 3 is at Depot and Quarry Road in Gridfall, and from my side yard it bears 281 degrees at about seventeen miles. My loop line is 041/221. It is not on the line, at either end, and the nearer end of the line misses it by sixty degrees, where my bearing error is six.\n\nThe mechanism was dealt with in 2007 by the same man, better than I would: [url=synth://codeandcoffee.blog/post/sdr-followup]no, it is not the substation[/url]. Power equipment makes broadband noise. Broadband noise is a buzz. A cracked connector can rectify and re-radiate a signal that is already there, which is real and which I have found twice in thirty-one years of this work, and what comes out is whatever station is strong at that spot. Nothing in a transformer yard generates new speech. There is no part of it that could.\n\nAnd since people will make me say it. The fire at that station was at 4:52 in the morning on [b]11 June 2003[/b]. Nobody died. Two Gridfall volunteers were treated for smoke at County General and were home the same afternoon and one of them is my cousin. The state commission put out two pages in November 2003 and the cause it gives is insulation degradation consistent with age. I was on the pole line that morning and none of that is worth anything as evidence about a radio signal, which is why it is a paragraph at the bottom of an item and not a page.\n\nThe write-up worth reading is [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]on the county wiki[/url] and it has the year right."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "4. It is not the quarry, and it is not localised to the cut"
+          },
+          {
+            "kind": "text",
+            "body": "Bearing: the quarry bears 093 degrees from my side yard at about six miles. My line is 041/221. The nearer end misses it by fifty-two degrees.\n\nField strength: see [url=/log]the run on 5 October[/url]. A transmitter at the cut would put tens of dB more into a receiver at the cut than into one nine miles away. My peak column varies by 5.2 dB across the whole run and the highest reading on it is not at the cut.\n\nWhat varies across that run is the noise, by 12.9 dB, and that is why everybody who has ever driven out there thinks the cut is where it lives. The cut is quiet. That is all the cut is."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "5. It is not telemetry off the branch line"
+          },
+          {
+            "kind": "text",
+            "body": "Two things, neither of them mine.\n\nThe branch ran its last freight on 14 March 2008. Ray Sabo drove out and listened on the 15th and again on the 17th and logged both, and there was no change of any kind, and both rows are still on his page where anybody can read them: [url=synth://quarrycut.net/radio]quarrycut.net[/url]. That is a measurement made at the right time by a man who had already been doing it for four years and it is worth more than anything I could do about it now.\n\nMine is smaller. A telemetry link is polled and something answers it. I have sat through 47 sessions with the second receiver walking 25 kHz either side of 4.2190 for the full twenty minutes. Nothing answers. Nothing transmits before it, after it, or during it, anywhere I have looked."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "6. It is not a weather beacon and it does not respond to the weather"
+          },
+          {
+            "kind": "text",
+            "body": "Twelve months of my own thermometer against twelve months of S/N, and the control station on [url=/plot]the plot page[/url] does the same thing in the same weeks on the same antenna.\n\nWhat my log shows is that reception on 4.2190 MHz is better on cold clear nights. That is true of the broadcast station 214 kHz away as well, and of everything else on that part of the band, and it is a fact about the sky between here and wherever it comes from.\n\nThe content does not change with the weather. It does not change at all. Four digits, same voice, same schedule, in rain and in ten degrees and in fog."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "7. It is not something that started with the fire"
+          },
+          {
+            "kind": "text",
+            "body": "It was written up on the county board in 1998, five years before, and whoever wrote it down had the schedule right and the group length right. Those posts have not been edited and are still up: [url=synth://boards.gridfall.net/topic/5]the Signal on 62[/url].\n\nBeyond that I have nothing to offer, because [b]no mechanism has ever been stated to me[/b]. I have asked four people who have told me this to say what it is they think happens, in order, from the fire to the voice. None of them has. I cannot rule out a claim that nobody will finish."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "8. It is not somebody local with a transmitter"
+          },
+          {
+            "kind": "text",
+            "body": "What that would take: the same frequency to within a few Hz, on the same schedule to within seconds, at four thousand three hundred transmissions a year, through fifteen years and through a five-day countywide outage, with no callsign, no audience, no complaint, no drift and no change of voice.\n\nThat is not a joke anybody sustains. It is a job, and a job leaves invoices.\n\nI will add one thing that is not evidence. I remember hearing it on the truck radio the week of the outage in June 2003. [b]That is a memory and I am not counting it[/b], because I have no log from 2003, I was not listening for it, and a man who has since spent a year measuring something is exactly the sort of witness whose memory I would not accept from anybody else."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "9. It is not five-digit groups"
+          },
+          {
+            "kind": "text",
+            "body": "1,024 groups counted by hand off 39 recordings. Every one four digits.\n\nThis is the smallest item on the list and it is the one I have had to repeat most often. It is in print in at least three places as five. Two of those cite each other."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "10. It is not drifting and it is not running down"
+          },
+          {
+            "kind": "text",
+            "body": "Twelve months, no frequency shift I can measure, and my resolution is about plus or minus 8 Hz over a session. Onset a flat band at 06:45 past with no slope across 288 detections. Carrier off between 14 and 15 past, every time.\n\nAn unattended transmitter that nobody maintains is supposed to wander. If this one is wandering it is doing it slower than $667 of equipment can see, and that is an honest limit and not a result."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "11. It is not only receivable out on 62"
+          },
+          {
+            "kind": "text",
+            "body": "I receive it at my house, in the village, at an S/N median of 16.4 dB in October, on a wire in a back yard with a choke on it. My house is not on 62.\n\nYou do not have to drive out to the cut. It helps if your own house is loud, which most houses are, and driving out there is cheaper than fixing your house. That is the entire content of that piece of folklore."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IT IS"
+          },
+          {
+            "kind": "text",
+            "body": "I do not have one.\n\nI have been asked nine times in the guestbook and twice in the post and once at the hardware store. I am not going to make one up. Everything above is a measurement that closed a door, and a corridor of closed doors is not a direction.\n\nIf this page has left you with a feeling that it is pointing somewhere, go back and read item 6 and item 10 again and note which of the two is a result and which is a limit of my equipment. Most of what I have is limits.\n\nWhat would help: a second site nine or ten miles from here, one evening, one bearing, taken to the method on [url=/method]the method page[/url] so the two are comparable. I have asked on the county board in 2013 and on the national board twice. If you are reading this and you have a receiver and an evening, that is the thing."
+          }
+        ]
+      },
+      {
+        "id": "corrections",
+        "name": "Corrections to this page",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "CORRECTIONS TO THIS PAGE"
+          },
+          {
+            "kind": "text",
+            "body": "Every error I have found in my own figures, with the date I found it and what it does to anything you may have taken off this site before that date.\n\nThe wrong figure stays in the table with a line through it. I am not going to quietly improve. A page that quietly improves cannot be checked, and a page that cannot be checked is somebody's opinion with a table on it."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "15 December 2012 -- the AGC was on"
+          },
+          {
+            "kind": "text",
+            "body": "The automatic gain control was switched on for the first six weeks, which compresses the loud parts and lifts the quiet parts, which is exactly what you do not want when the whole measurement is the difference between two levels.\n\n[b]Affected:[/b] every S/N figure from 4 November to 14 December 2012, 34 sessions.\n\n[b]What is right:[/b] nothing. They cannot be repaired after the fact. They are marked in the book as not comparable and they are excluded from the November and December medians on the [url=/log]monthly table[/url], and they are still in the book.\n\nIf you took a figure off this site before 15 December 2012 and it was an S/N, throw it away."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "19 January 2013 -- the bearings were nine degrees low"
+          },
+          {
+            "kind": "text",
+            "body": "I was publishing magnetic and calling it true. Declination here is a little over nine degrees west and I had not applied it.\n\n[b]Affected:[/b] eleven bearings, November and December 2012.\n\n[b]What is right:[/b] add 9 degrees. [s]032[/s] 041. [s]033[/s] 042. [s]031[/s] 040. And so on down the eleven; the list is in the book and I will send it to anybody who wants it.\n\nBought a prismatic compass for $18 the same month, which I should have had from the start. Repeating a wrong measurement eleven times feels exactly like being right."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "6 July 2013 -- the group count came off the wrong number of sessions"
+          },
+          {
+            "kind": "text",
+            "body": "I wrote that 1,024 groups had been counted off [s]41[/s] 39 recordings. Two sessions had been entered twice in the tally sheet.\n\n[b]What is right:[/b] the group count is unchanged at 1,024, because the groups were counted off the recordings and not off the tally. All four digits, still.\n\nIt does not change anything and it is here because it was wrong."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "22 October 2013 -- five days of noise were my own freezer"
+          },
+          {
+            "kind": "text",
+            "body": "The noise floor rose 10.3 dB on the night of 17 October and stayed up through the 22nd. I wrote 'not the weather' in the book on the 18th, which was right, and I looked at the pole line first, which was wrong, and it cost me four days.\n\nIt was the switching supply on a chest freezer in my own garage, twelve feet from the feedpoint, failing. Out at 18:40 on the 22nd. Floor down 12.1 dB inside a minute.\n\n[b]Affected:[/b] six sessions, 17 to 21 October, including one null which is my own fault and is in the count anyway.\n\n[b]What is right:[/b] the S/N figures for those sessions are real and are low, and the reason is in the remarks. They stay. A man who works on power equipment for a living looking at a mile of line before he looks at his own garage is a thing I would like other people to learn from cheaper than I did."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "3 November 2013 -- the late onset on 21 October was my clock"
+          },
+          {
+            "kind": "text",
+            "body": "I typed 07:26 for the carrier onset on 21 October, 41 seconds later than anything in the eleven months before it, and I spent four days on it before I looked at the right thing.\n\nThe GPS receiver lost lock at 22:41 that night. It sits under the eave, which is the wrong place, and I put it there because the cable would reach. The computer went on believing its own clock, which had been drifting since the last time it got a fix.\n\n[b]What is right:[/b] 06:45, plus or minus two seconds, reconstructed off the 10 MHz tick on the recording. It is flagged uncertain and it is in the mean, and the wrong figure is still in the row with a line through it.\n\nFour days. It was the most interesting number I had ever recorded and it was a plug under an eave."
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "21 June 2014 -- the equipment total was $41.00 light"
+          },
+          {
+            "kind": "text",
+            "body": "The total on the [url=/equipment]equipment page[/url] read [s]$626.30[/s] $667.30 from May 2013 to today. I left the feedline out of my own table for thirteen months.\n\nA man who will not let anybody quote an S/N without a bandwidth, who cannot add up his own column. It is on this page for the same reason everything else is."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ERRORS I HAVE MADE ABOUT OTHER PEOPLE'S WORK"
+          },
+          {
+            "kind": "text",
+            "body": "[b]The 2007 write-up.[/b] For most of 2012 I told people the 1610 kHz work had settled this, and it had not, and the two signals are not the same signal. That is written out in full as [url=/notthis]item 2[/url]. I passed it on wrong to at least four people before I sat in the truck at the fairgrounds with two radios on and found out I was one of the people I complain about.\n\n[b]Mileage.[/b] I quoted Ray Sabo's 3.8 miles from the Bracken Lane four-way to the cut for a year before he told me himself, in the guestbook on my own front page, that it came off an odometer he does not trust. The mileage in my run table is mine and is measured from Main Street.\n\n[b]The weather column.[/b] From April 2011 to November 2012 I was still citing the Kestrel Road station in conversation as though it were current. It stopped on 17 April 2011. I should have noticed faster than nineteen months."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ERRORS OTHER PEOPLE HAVE MADE ABOUT MINE"
+          },
+          {
+            "kind": "text",
+            "body": "I am not going to keep a list of these. It would be longer than the page and it would turn this into a grievance, and I would rather it stayed a log. Two, because they recur.\n\n[b]The noise column gets dropped.[/b] The August 2013 table was republished in September 2013 without it. Without the noise column the S/N column is a set of numbers on an arbitrary scale and means nothing at all. I asked for it to be restored or the table taken down. My name was taken off instead.\n\n[b]The seasonal lines get quoted as if they were about the transmitter.[/b] They are about the ionosphere. The red control line on [url=/plot]the plot page[/url] is there precisely so that nobody has to take my word for it, and in five years nobody has quoted the red line once."
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Other people's pages",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "OTHER PEOPLE'S PAGES"
+          },
+          {
+            "kind": "text",
+            "body": "Short list. These are the people in and around this county who write down what they actually did, which is a smaller number than it should be and a larger number than I expected when I started."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "SITE",
+              "WHAT IT IS"
+            ],
+            "rows": [
+              ["[url=synth://quarrycut.net/radio]The Quarry Cut on Route 62[/url]", "Ray Sabo. Six years of sessions out at the cut, 2004 to 2009, his method written out, and every night he heard nothing printed next to the nights he did. He stopped in October 2009. If you read one page on this subject that is not mine, read his, and read the two entries a day apart in August 2009 that he deliberately left side by side."],
+              ["[url=synth://ashkettle-wx.net/station]Kestrel Road Weather Station[/url]", "Len Mabry, a mile and a half from my back door. Daily readings by hand since 1999 and a page listing everything wrong with his own siting, which almost nobody does and which is the reason I wrote my equipment page the way I wrote it. Last updated 17 April 2011."],
+              ["[url=synth://codeandcoffee.blog/post/sdr-followup]Code and Coffee[/url]", "A man in Gridfall who put a receiver on this in 2007, published his method, and then published a second piece about what his own results failed to explain. I have never seen anybody else do the second piece. He stopped writing in June 2008."],
+              ["[url=synth://sdrlisteners.org/topic/t-02]SDR Listeners, the 62 thread[/url]", "National board, careful people, and the Verity County thread in it. They print the empty nights. I read there. I have posted three times in four years and all three were numbers."],
+              ["[url=synth://sdrlisteners.org/topic/t-15]The 2017 retraction[/url]", "Added 2017. The man who made up the game story in 2016 came back and said he made it up. Four posts, still open, about three thousand views. The write-ups it is meant to correct have rather more than that. Read it before you cite anything about this from 2016 or later."],
+              ["[url=synth://boards.gridfall.net/topic/5]The Gridfall Boards[/url]", "Where this was first written down locally, in 1998. Registrations are shut now. The 1998 and 2004 threads are still there and they are better sourced than most of what has been written since."],
+              ["[url=synth://wiki.gridfall.net/wiki/route-62-signal]The county wiki[/url]", "About nine people keep it. Their article on this has the schedule right and the group length right, which puts it ahead of the field. Somebody there reverts the bad edits within a day or two and I do not know who and I would buy them a coffee."],
+              ["[url=synth://tnorris.verity.net/]Thomas Norris[/url]", "Retired county surveyor. Nothing to do with radio. Read his account of the 1994 flood and then look at how he distinguishes what he measured from what he was told, which is the whole job."],
+              ["[url=synth://stargazers.verity.net/equipment]V.C.A.A. Stargazers[/url]", "The astronomy club, observing from Perrin Hill since 1978. Their equipment page lists apertures and it lists what the sky was doing, which is the same discipline in a different medium."],
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The county paper. I sent them a one-page summary of the October figures in November 2013. I did not hear back."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "OFF THIS LIST"
+          },
+          {
+            "kind": "text",
+            "body": "Things that matter to this page and are not on the web, or are not on it in any form I can link to.\n\n[b]The Marchfield hamfest[/b], first Saturday in September, in the fairgrounds machinery shed. The tabletop, the compass and the tripod came off tables there. There is no website. There is a photocopied flyer in the hardware store from about the middle of August.\n\n[b][url=synth://ashkettle-hardware.synth/]Ashkettle Hardware[/url].[/b] The wire, the rope, the insulators, the ground rods and the clamps. Bill will cut #14 off the big spool and not ask what it is for, which after four visits I appreciated more than I expected to.\n\n[b][url=synth://marchfield-arc.synth/]The Marchfield amateur radio club[/url].[/b] Meets the second Thursday at the fire hall. I am not licensed and have no plans to be; I only listen. They let me in anyway and two of them looked at my choke and told me to double the beads, and they were right.\n\n[b]Marchfield Public Library.[/b] Has a paper copy and a disc of everything on this site as it stood on 14 September 2013, catalogued, in the county collection. If this page ever goes because I stop paying the eight dollars, that is where it is."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHERE I READ AND DO NOT POST"
+          },
+          {
+            "kind": "text",
+            "body": "Most places.\n\nI have posted on the national board three times in four years and each time it was a table. Each time somebody replied inside the hour to tell me what the signal was, and none of them had measured anything, and one of them was quoting a write-up that quotes another write-up that quotes a post that has since been retracted.\n\nI do not think anybody is lying. I think it is easier to have an answer than to sit in a cold back room for twenty minutes and write down that nothing happened. It took me until about the fourth month to find that out and I have not found anything else out since that was half as useful."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 488
+          }
+        ]
+      }
+    ]
+  }
+}

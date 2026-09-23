@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "domain": "newcarrow-today.com",
+  "title": "New Carrow Today",
+  "type": "news",
+  "era": "2026",
+  "skin": "pinkslime",
+  "description": "A local news site for a village of 3,140, published off the same template as four hundred others, with no staff page, no phone number and no address.",
+  "tags": ["verity", "new-carrow", "2026", "news", "pinkslime"],
+  "links": [
+    "veritycountytoday.com",
+    "now.verityledger.com",
+    "verity.county.gov",
+    "thequarry.news",
+    "gridline.social",
+    "wiki.gridfall.net",
+    "askverity.com",
+    "marchfield-coop.com"
+  ],
+  "data": {
+    "masthead": "New Carrow Today",
+    "slogan": "Independent local reporting for New Carrow. Free to read, always.",
+    "sections": [
+      { "id": "county", "name": "County" },
+      { "id": "taxwatch", "name": "Taxpayer Watch" },
+      { "id": "schools", "name": "Schools" },
+      { "id": "numbers", "name": "New Carrow By The Numbers" },
+      { "id": "business", "name": "Business" },
+      { "id": "opinion", "name": "Opinion" },
+      { "id": "about", "name": "About" }
+    ],
+    "articles": [
+      {
+        "id": "t-salaries",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "New Carrow's 10 Highest-Paid Public Employees",
+        "dek": "Payroll records obtained by New Carrow Today.",
+        "byline": "Metro Desk",
+        "date": "September 17, 2026",
+        "featured": true,
+        "lead": "NEW CARROW — Ten public employees were paid more than $40,000 in the 2025 calendar year, according to payroll records obtained by New Carrow Today through a public records request.",
+        "body": "The records were requested on June 2 and released on August 11.\n\n[list][*]Priya Delacourt, chief operating officer, County General — $291,400[*]Arden Vogt, village administrator — $77,300[*]Odell Brauer, chief of police — $71,950[*]Hollis Rademacher, water superintendent — $64,220[*]Gary Nyquist, public works foreman — $58,140[*]Dana Kilbride, principal, New Carrow Elementary — $56,900[*]Jeanine Struble, village clerk — $48,600[*]Wyatt Fesler, sergeant, New Carrow police — $47,310[*]Renny Dubose, officer, New Carrow police — $44,050[*]Merle Tandy, wastewater operator — $41,880[*]Bernice Ottway, village president — $3,000[/list]\n\nThe figures include base pay and do not include overtime. Overtime is reported separately in [url=/article/t-overtime]village payroll records[/url].\n\nThe lowest figure on the list is an annual stipend, not a salary.\n\nCounty General Hospital is not a county department. The Verity County school district and the New Carrow water district are separate taxing bodies and set their own pay.\n\nNew Carrow has a population of approximately 3,140.\n\nPayroll records for every municipality in the state are published as they are received. Instructions for filing a request are posted by the county at [url=synth://verity.county.gov/s/records-request]its public records request service[/url]."
+      },
+      {
+        "id": "n-broadband",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "New Carrow Ranks 71st Of 88 In State For Broadband Access",
+        "dek": "The area placed in the bottom quarter of the state's 88 counties.",
+        "byline": "Metro Desk",
+        "date": "September 19, 2026",
+        "featured": true,
+        "lead": "NEW CARROW — New Carrow ranks 71st out of 88 counties in the state for broadband access, according to a new analysis.",
+        "body": "The analysis scored each county on the share of households with a wired connection of at least 100 megabits per second, the number of providers available at the average address, and median advertised download speed.\n\nNew Carrow scored 48.2 out of a possible 100. The state median was 64.9.\n\nMarn County ranked first. Cawdrey County ranked 88th.\n\nRankings in this analysis are produced at the county level. New Carrow Today reports the figure for the county in which New Carrow is located.\n\nNew Carrow County ranked 66th in the same analysis last year.\n\nOne provider advertises 300 megabit service at addresses on Bellamy Street. The same provider's coverage map shows no service on Fetters Road, which is 1.2 miles away.\n\nThe full analysis is available from the organisation that produced it.\n\nNew Carrow Today publishes county rankings as they are released."
+      },
+      {
+        "id": "t-overtime",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "New Carrow Paid $61,340 In Overtime Last Year, Records Show",
+        "dek": "The police department accounted for most of it.",
+        "byline": "Staff Report",
+        "date": "September 8, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — The village of New Carrow paid $61,340 in overtime to village employees in the 2025 calendar year, according to payroll records.",
+        "body": "The police department accounted for $44,900 of the total, or about 73 percent. Public works accounted for $11,600. The remaining $4,840 was split between the water and wastewater departments.\n\nNine employees were paid overtime. One was paid more than $15,000.\n\nThe highest single figure was $16,220, paid to a sergeant whose base salary is $47,310.\n\nThe department has four full-time officers and covers a village of 3,140 on a schedule that requires two of them to be on call every night.\n\nOvertime in the police department was $38,100 in 2024 and $31,400 in 2023, according to the same records.\n\nThe records were also published in full, as scanned pages, by a Marchfield site that posts county and municipal documents. That site's total for the police department was $45,880 and it noted that the village books court transport separately.\n\nNew Carrow Today has not reconciled the two figures. The other site's documents are available at [url=synth://thequarry.news/]thequarry.news[/url].\n\nThe village administrator's office did not respond to a request for comment."
+      },
+      {
+        "id": "w-culvert",
+        "sectionId": "county",
+        "kicker": "ROADS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "Quarry Road Will Close For 11 Days Beginning September 28",
+        "dek": "A culvert under the road is being replaced.",
+        "byline": "Metro Desk",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — Quarry Road will close to through traffic between Depot Street and the county line for eleven days beginning September 28, the county highway department said.",
+        "body": "A culvert under the road is being replaced.\n\nThe department said the road will reopen October 8. The county calendar lists the closure as ending October 9.\n\nSchool buses on the New Carrow east routes will run about fifteen minutes later during the closure.\n\nThe same culvert appeared in the county's 2019 capital plan and again in the 2022 plan.\n\nMotorists are encouraged to plan ahead and allow extra time.\n\nThe county highway department did not respond to a request for comment."
+      },
+      {
+        "id": "c-mains",
+        "sectionId": "county",
+        "kicker": "VILLAGE BOARD",
+        "readMinutes": 2,
+        "headline": "New Carrow Trustees To Vote October 6 On $480,000 In Borrowing For Water Mains",
+        "dek": "Three blocks of Bellamy Street are in the draft. The draft is not posted online.",
+        "byline": "Metro Desk",
+        "date": "September 12, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — The New Carrow village board is scheduled to vote October 6 on a bond resolution that would borrow $480,000 to replace water mains on three blocks of Bellamy Street, according to a draft of the resolution.",
+        "body": "The term is twenty years. The village's annual debt service would rise by about $34,000.\n\nThe mains in the three blocks are cast iron and were installed in 1931, according to the village's own system map. The map is dated 1994 and is hand-annotated after that.\n\nThe resolution does not cover Mill Street or Fetters Road. The water superintendent, Hollis Rademacher, told the board in July that the Mill Street main has been repaired four times since 2022, which is [url=/article/c-boil]the main that failed this month[/url].\n\nThe draft is not posted on the village website. A paper copy is available from the village clerk on request, at the counter, Tuesday and Thursday afternoons.\n\nThe village's total annual budget is about $2.1 million.\n\nThe village board meets at 7 p.m. at the New Carrow municipal building on Bellamy Street. The board does not stream its meetings and does not record them.\n\nVillage officials did not respond to a request for comment."
+      },
+      {
+        "id": "c-boil",
+        "sectionId": "county",
+        "kicker": "WATER",
+        "readMinutes": 2,
+        "headline": "New Carrow Water District Issues Boil Notice For 210 Addresses",
+        "dek": "A six-inch main on Mill Street failed Friday morning.",
+        "byline": "Staff Report",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — The New Carrow water district issued a boil water notice Friday for about 210 addresses after a six-inch main on Mill Street failed shortly before 7 a.m., the district said.",
+        "body": "The notice covers Mill Street, Fetters Road, and Bellamy Street between the municipal building and the grain elevator. The district said pressure was lost in that zone for roughly four hours.\n\nA boil notice stays in effect until two consecutive sets of samples come back clear, which takes a minimum of 24 hours and usually longer because the samples are driven to a lab in the state capital.\n\nThe district notifies residents by automated telephone call. Its call list has 96 numbers on it. The district has about 1,340 accounts. The list has not been rebuilt since 2017 and the district has said it does not have the software to rebuild it.\n\nThe district also posted the notice on paper at the municipal building, the post office and the co-op.\n\nThe Mill Street main has been repaired four times since 2022.\n\nResidents with questions are encouraged to contact the district office during business hours.",
+        "updates": [
+          { "at": "2026-09-18T13:20:00", "text": "The water district says the break has been isolated and pressure restored to all affected addresses. The boil notice remains in effect." },
+          { "at": "2026-09-18T18:45:00", "text": "The district says the first set of samples was collected at 4 p.m. and driven to the state capital. Results are expected Saturday afternoon." },
+          { "at": "2026-09-19T15:10:00", "text": "The district says the first set of samples came back clear. A second set was collected Saturday morning. The notice remains in effect until the second set is returned." },
+          { "at": "2026-09-19T20:30:00", "text": "The boil notice has been lifted for Bellamy Street and remains in effect for Mill Street and Fetters Road. The district posted the update on paper at the municipal building. No automated call was made." }
+        ]
+      },
+      {
+        "id": "w-lab",
+        "sectionId": "county",
+        "kicker": "HEALTH",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "County General Consolidates Lab Services At Marchfield Campus",
+        "dek": "The hospital says the change reflects how patients are using the service.",
+        "byline": "Metro Desk",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — County General Hospital is pleased to announce that laboratory draw services currently offered at its New Carrow office will be consolidated at the Marchfield campus beginning November 2.",
+        "body": "The New Carrow office had been open Tuesday and Thursday mornings.\n\n\"We are pleased to bring the full range of laboratory services together in one location for the residents of Verity County,\" the hospital's chief operating officer, Priya Delacourt, said in a statement.\n\nCounty General has served the families of Verity County since 1957. It is a 94-bed acute care hospital and the county's second largest employer. Care, close to home.\n\nThe Marchfield campus is 14 miles from New Carrow. There is no fixed-route bus service between the two.\n\nMedia inquiries may be directed to Delia Marsh, Communications, extension 2140."
+      },
+      {
+        "id": "c-blotter",
+        "sectionId": "county",
+        "kicker": "POLICE LOG",
+        "readMinutes": 2,
+        "headline": "New Carrow Police Log: September 14-20",
+        "dek": "Selected calls from the village dispatch log.",
+        "date": "September 20, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — The following calls are taken from the New Carrow police dispatch log for the week of September 14. The log is a record of calls received and not of offences committed.",
+        "body": "[list][*]Sept. 14, 7:55 a.m., Bellamy Street — vehicle parked across a sidewalk. Moved.[*]Sept. 14, 6:12 p.m., Fetters Road — report of shots. Determined to be a nail gun.[*]Sept. 15, 11:05 a.m., New Carrow Elementary — assist, door left unsecured overnight.[*]Sept. 16, 9:40 p.m., Mill Street — noise complaint. Advised.[*]Sept. 17, 2:15 p.m., Bellamy Street — theft of a package. Report taken.[*]Sept. 18, 7:02 a.m., Mill Street — assist water district with traffic control.[*]Sept. 18, 8:31 p.m., County Route 9 — deer struck. No injuries.[*]Sept. 19, 12:50 p.m., Bellamy Street — dispute over a property line. Civil matter.[*]Sept. 19, 10:44 p.m., grain elevator lot — suspicious vehicle. Gone on arrival.[*]Sept. 20, 2:47 a.m., village-wide — three calls reporting a loss of power. Restored 3:31 a.m.[/list]\n\nCharges are allegations and a defendant is presumed innocent.\n\nThe log is released weekly as a printed sheet and is retyped for publication. Names and street addresses appear on the printed sheet and are not published here.\n\nThe village has four full-time officers. Overnight coverage between 2 a.m. and 6 a.m. is provided by the county sheriff's office under a shared services agreement signed in 2019."
+      },
+      {
+        "id": "c-fire",
+        "sectionId": "county",
+        "kicker": "LOOKING BACK",
+        "readMinutes": 3,
+        "headline": "Looking Back: The Substation Fire That Left Verity County In The Dark",
+        "dek": "Twenty-two years later, the 2004 Gridfall fire remains the county's largest outage.",
+        "byline": "Metro Desk",
+        "date": "September 5, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — In the early hours of a June morning in 2004, a lightning strike touched off a fire at Substation No. 3 in Gridfall that left approximately 4,100 customers without power, some of them for five days.",
+        "body": "The fire burned for about six hours. It remains the largest power outage in the recorded history of Verity County.\n\nTwo Gridfall volunteer firefighters died at the scene, according to several accounts of the fire. Other accounts say the two firefighters were treated for smoke inhalation at County General and released the same afternoon. New Carrow Today was not able to reconcile these accounts.\n\nThe cause has been the subject of continued local discussion. The most widely circulated accounts, including a video retrospective that has been viewed approximately 4 million times, attribute the fire to a lightning strike during an early summer storm.\n\nA state utility commission summary published in November 2003 attributed the cause to insulation degradation consistent with age. Local officials have not commented on the discrepancy in dates.\n\nA page on a volunteer-maintained county wiki gives the year of the fire as 2003 and the cause as insulation failure. That page is [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]maintained by a small group of editors[/url] and has been edited 41 times.\n\nThe substation was rebuilt in 2015 and now operates without staff on site.\n\n[url=synth://now.verityledger.com/article/a-02]The Verity Ledger's account of the fire[/url] is available online.\n\nNew Carrow was not among the communities affected. The village is served from the Pell tie line.\n\nReaders who remember the night of the fire are encouraged to share their recollections through the contact form."
+      },
+      {
+        "id": "w-enrollment",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "New Carrow Elementary Enrollment Falls Below 200 For First Time",
+        "dek": "The September count puts the school at 194 students.",
+        "byline": "Staff Report",
+        "date": "September 11, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — Enrollment at New Carrow Elementary stands at 194 students as of the September count, according to figures released by the Verity County school district.",
+        "body": "The school enrolled 207 students in September 2025. Enrollment at the school has fallen in each of the past nine years.\n\nThe decrease is 13 students.\n\nDeclining enrollment is a trend affecting many rural districts across the region, according to a report.\n\nState aid is calculated on the September count. The district's business manager, Alan Roeder, has said previously that each student is worth roughly $9,200 in combined state and local funding. On that figure the decrease is about $119,600.\n\nThe district's 2024 facilities study listed New Carrow Elementary as one of two buildings for which consolidation should be evaluated if enrollment fell below 200. The district has not said whether that evaluation has begun.\n\nFamilies with questions about enrollment are encouraged to contact the district office.\n\n[i]Corrected September 13. See [url=/corrections]corrections[/url].[/i]"
+      },
+      {
+        "id": "s-principal",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 1,
+        "headline": "New Carrow Elementary Will Share A Principal With Halsey Primary In January",
+        "dek": "The arrangement was not voted on at a public meeting.",
+        "byline": "Metro Desk",
+        "date": "September 14, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — Dana Kilbride, the principal of New Carrow Elementary, will also serve as principal of Halsey Primary School beginning in January, according to a memo sent to staff at both schools on September 10.",
+        "body": "The memo says the arrangement is for the remainder of the school year and will be reviewed in June.\n\nThe two buildings are 17 miles apart.\n\nThe memo says Kilbride will be at New Carrow on Monday, Wednesday and alternate Fridays.\n\nThe school board did not vote on the arrangement. A district spokesperson said assignment of administrative staff does not require board action. Board president Theresa Ulm did not respond to a request for comment.\n\nHalsey Primary's previous principal resigned in August. The position was posted twice.\n\nThe district did not respond to a request for comment."
+      },
+      {
+        "id": "n-grocery",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "New Carrow Ranks 79th Of 88 For Grocery Access",
+        "dek": "The nearest full-service grocery is 9.1 miles away.",
+        "date": "September 6, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — New Carrow ranks 79th out of 88 in the state on a measure of household access to a full-service grocery store.",
+        "body": "The measure counts the share of households more than five miles by road from a store carrying fresh produce, meat and dairy.\n\nIn New Carrow that share is 100 percent. The nearest qualifying store is the [url=synth://marchfield-coop.com/]Marchfield co-op[/url], 9.1 miles by road.\n\nThe village has one convenience store, on Bellamy Street, which the measure does not count.\n\nThe last grocery in New Carrow closed in 2009. The building is now a storage unit business.\n\nAbout 14 percent of New Carrow households do not have a vehicle available, according to a five-year estimate.\n\nNew Carrow Today publishes county rankings as they are released."
+      },
+      {
+        "id": "n-tax",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "New Carrow Has The 24th Highest Effective Property Tax Rate In The State",
+        "dek": "The median bill is $2,180 on a median home value of $118,000.",
+        "byline": "Metro Desk",
+        "date": "August 29, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — New Carrow has the 24th highest effective property tax rate of the state's 88 counties, according to a new ranking.",
+        "body": "The effective rate is given as 1.85 percent. The median annual bill is $2,180 on a median home value of $118,000.\n\nThe state median effective rate is 1.44 percent.\n\nThe ranking covers county, municipal, school and special district levies combined. The school district accounts for about 56 percent of the typical New Carrow bill and the water district for about 9 percent.\n\nThe village levy has been at the statutory cap for six years.\n\nProperty owners may look up their own bill through [url=synth://verity.county.gov/s/prop-tax]the county's property tax service[/url].\n\nNew Carrow Today publishes county rankings as they are released."
+      },
+      {
+        "id": "b-storefronts",
+        "sectionId": "business",
+        "kicker": "DOWNTOWN",
+        "readMinutes": 1,
+        "headline": "Six Storefronts Sit Empty On Bellamy Street In New Carrow",
+        "dek": "That is about half the block.",
+        "byline": "Metro Desk",
+        "date": "August 22, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — Six of the thirteen storefronts on the 100 block of Bellamy Street in New Carrow were vacant this week, a count found.",
+        "body": "The vacancies include the former New Carrow branch of the county library, which closed in 2018, and the former creamery office at 114 Bellamy, which has been empty since at least 2011.\n\nThe library building is listed by a broker in the state capital. The listing gives the square footage as 2,400 and has been active for four years.\n\nThe village has no business association. A New Carrow Chamber of Commerce was incorporated in 1998 and dissolved in 2014.\n\nThe county assessor's office does not track vacancy.\n\nThe count was made on foot on a Tuesday morning.\n\nThe village administrator's office did not respond to a request for comment."
+      },
+      {
+        "id": "b-spotlight",
+        "sectionId": "business",
+        "kicker": "COMMUNITY SPOTLIGHT",
+        "readMinutes": 2,
+        "headline": "A New Carrow Repair Shop Is Changing How Verity County Handles A Cracked Screen",
+        "dek": "Same-day glass, a walk-in counter, and a neon bird out front.",
+        "byline": "New Carrow Today Brand Studio",
+        "date": "September 15, 2026",
+        "featured": false,
+        "lead": "NEW CARROW — When a phone hits the pavement in Verity County, it usually ends up on the counter at Carrow Wireless Repair on County Route 62.",
+        "body": "The shop handles screens, batteries, charge ports and unlocking, most of it same-day, and owner Tobin Ruiz says the work is steadier than people expect.\n\n\"Nobody plans for it,\" Ruiz said. \"They come in holding it in two pieces and they need it back before work.\"\n\nThe building is one of the most recognisable in the county, thanks to the neon bird on the roof, left over from the building's years as the Blue Kestrel diner and grandfathered under the county sign ordinance. The sign stays lit. A newer sign underneath reads CRACKED SCREEN?\n\nCarrow Wireless Repair offers walk-in service six days a week, a 90-day warranty on glass, and free diagnostics for Verity County residents who mention this article.\n\n[url=synth://carrowrepair-deals.click/verity]Claim the free diagnostic[/url]\n\n[i]Community Spotlight stories are produced with the participating business.[/i]"
+      },
+      {
+        "id": "o-water",
+        "sectionId": "opinion",
+        "kicker": "COMMENTARY",
+        "readMinutes": 3,
+        "headline": "COMMENTARY: New Carrow Has Bought Three Water Studies And Replaced No Pipe",
+        "dek": "The village is being asked to borrow for the main that is not broken.",
+        "byline": "Dell Farrow",
+        "date": "September 19, 2026",
+        "featured": false,
+        "lead": "The main that failed on Friday was the Mill Street main. It has been repaired four times since 2022. It is not in the bond resolution the trustees will vote on October 6.",
+        "body": "Here is the sequence, and I would ask anyone who thinks I am being unfair to check it against the village's own minutes.\n\nIn 2017 New Carrow paid $18,500 for a water system evaluation. In 2021 it paid $22,000 for a rate and capital study by a different firm. In 2024 it paid $29,400 for an asset management plan, which is the same document with a new cover, and which recommended replacing the Mill Street main first.\n\nOn October 6 the trustees will be asked to borrow $480,000 over twenty years to replace three blocks of Bellamy Street.\n\nI have no quarrel with the Bellamy Street pipe. It went in the ground in 1931 and it will fail eventually. But it has not failed yet, and Mill Street has failed four times, and on Friday 210 addresses were told to boil their water because of a pipe that three consultants in nine years have all pointed at.\n\nThe explanation I have been given, twice, is that Bellamy Street is scheduled for resurfacing and the village would rather open it once. That is a real reason. It is not a reason to leave Mill Street out of the resolution entirely, and nothing stops the board from adding it.\n\nThe village's notification list, meanwhile, has 96 numbers on it for 1,340 accounts, and the district says it lacks the software to fix that. The software costs less than the third study did.\n\nThe board meets October 6 at 7 p.m. The draft is not posted. You can get a paper copy from the clerk, Tuesday or Thursday afternoon.\n\nAsk them about Mill Street.\n\n[i]Dell Farrow writes on state and local policy.[/i]"
+      },
+      {
+        "id": "about-us",
+        "sectionId": "about",
+        "kicker": "ABOUT",
+        "readMinutes": 1,
+        "headline": "About New Carrow Today",
+        "dek": "Who we are and how to reach us.",
+        "date": "March 4, 2026",
+        "featured": false,
+        "lead": "New Carrow Today is an independent local news site covering New Carrow and the surrounding area, including Gridfall, Marchfield, Ashkettle, Halsey, Coyne Flats, Milbrook and Bell Harbor.",
+        "body": "We believe New Carrow deserves local reporting that is free to read. There is no paywall on this site and there never will be. Our reporting is supported by advertising and by partnerships with local businesses.\n\nOur reporting team files under the Metro Desk byline. News tips, corrections and press releases may be submitted through the contact form.\n\nNew Carrow Today is published by [url=synth://meridianlocal.synth/]Meridian Local Network[/url].\n\n[b]Editorial standards.[/b] We correct errors of fact when they are brought to our attention. Corrections are posted on our [url=/corrections]corrections page[/url].\n\n[b]Sponsored and partner content.[/b] Community Spotlight features are produced with participating businesses and are not written by the editorial team.\n\n[i]This page was last reviewed in March 2026.[/i]"
+      }
+    ],
+    "factchecks": [
+      {
+        "id": "fc-kestrel",
+        "claim": "The Blue Kestrel diner on Route 62 closed in 2006.",
+        "claimBy": "The Kestrel Letter",
+        "claimWhere": "a photocopied newsletter, scanned and posted to gridline.social",
+        "claimWhen": "issue dated July 2026, posted August 2026",
+        "verdict": "false",
+        "ruling": "A quarterly newsletter circulated by mail in Verity County, scanned pages of which were posted to a link aggregator in August, states that the Blue Kestrel diner closed in 2006. The great majority of available accounts place the closure in 1977, following a fire in the kitchen. New Carrow Today rates this claim FALSE. Readers should note that the newsletter is not published online and that New Carrow Today was not able to contact its author.",
+        "evidence": [
+          "Eight of the nine written accounts of the Blue Kestrel indexed by our research partner give 1977 as the year the diner closed.",
+          "A widely shared video about Verity County landmarks gives the closure as 1977 and attributes it to a fire.",
+          "The building operated as a vape shop from 2013 and as a phone repair shop from 2022, a period of vacancy inconsistent with a 2006 closure.",
+          "A memory site about the diner was last updated in 2019 and its archive pages are no longer indexed.",
+          "The author of the newsletter does not maintain a website and could not be reached for comment."
+        ],
+        "sources": [
+          "[url=synth://gridline.social/]gridline.social[/url] — scanned newsletter pages, retrieved August 2026",
+          "[url=synth://wiki.gridfall.net/wiki/blue-kestrel]wiki.gridfall.net[/url] — community-maintained entry",
+          "[url=synth://askverity.com/]askverity.com[/url] — answers to related questions, retrieved September 2026"
+        ]
+      },
+      {
+        "id": "fc-mains",
+        "claim": "The Mill Street water main has been repaired four times since 2022.",
+        "claimBy": "New Carrow Today",
+        "claimWhere": "newcarrow-today.com",
+        "claimWhen": "September 18, 2026",
+        "verdict": "mostly-true",
+        "ruling": "This claim appeared in our own reporting on the September 18 boil water notice. The village's repair log records four excavations on Mill Street since January 2022. One of the four, in October 2023, is logged as a service line repair rather than a main break. New Carrow Today rates this claim MOSTLY TRUE and has not amended the original story.",
+        "evidence": [
+          "The village repair log lists excavations on Mill Street in March 2022, February 2023, October 2023 and January 2026.",
+          "The October 2023 entry is described in the log as a service line.",
+          "The 2024 asset management plan refers to three main breaks on Mill Street, not four.",
+          "The water superintendent, Hollis Rademacher, told the village board in July that the main had been opened four times."
+        ],
+        "sources": [
+          "Village of New Carrow repair log, obtained by request",
+          "[url=synth://verity.county.gov/s/records-request]verity.county.gov[/url] — public records request service",
+          "[url=/article/c-boil]The original New Carrow Today story[/url]"
+        ]
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2026-09-13",
+        "articleId": "w-enrollment",
+        "kind": "correction",
+        "text": "An earlier version of this story gave the September enrollment count at New Carrow Elementary as 194 students and the 2025 count as 209. The 2025 figure released by the district is 207 students. The decrease is 13 students. The 194 figure is unchanged."
+      },
+      {
+        "at": "2026-09-18",
+        "articleId": "t-salaries",
+        "kind": "clarification",
+        "text": "This story lists eleven public employees under a headline that refers to ten. The list is as released by the village and is correct. The headline has not been changed."
+      },
+      {
+        "at": "2026-09-07",
+        "articleId": "c-fire",
+        "kind": "correction",
+        "text": "An earlier version of this story gave the year of the Gridfall substation fire as 2003. The fire occurred in June 2004. The error has been corrected throughout."
+      },
+      {
+        "at": "2026-08-26",
+        "articleId": "n-tax",
+        "kind": "clarification",
+        "text": "An earlier version of this story referred to Verity County throughout in place of New Carrow. The story as filed was intended for a sister publication, [url=synth://veritycountytoday.com/]Verity County Today[/url], where a version of it also appears. The place names in this version have been updated. The figures in the two versions differ and both are as supplied."
+      },
+      {
+        "at": "2026-09-16",
+        "articleId": "w-lab",
+        "kind": "editors-note",
+        "text": "This story is based on a statement provided by County General Hospital. The hospital did not respond to follow-up questions about whether the New Carrow office will remain open for other services. New Carrow Today will update the story if the hospital responds."
+      },
+      {
+        "at": "2026-06-11",
+        "articleId": "nc-2026-0419",
+        "kind": "retraction",
+        "text": "This story reported that the New Carrow village board had voted to dissolve the village police department. No such vote was taken. The story was generated from a meeting agenda item that was tabled without discussion. The story has been retracted in full. Search engines may continue to display the headline for some time."
+      },
+      {
+        "at": "2025-11-04",
+        "articleId": "nc-2025-1027",
+        "kind": "editors-note",
+        "text": "This story has been removed at the request of a person named in it. New Carrow Today removes stories on request where the subject has provided documentation. The documentation is not published. Search engines may continue to display the headline for some time."
+      }
+    ]
+  }
+}

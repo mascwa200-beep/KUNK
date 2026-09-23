@@ -1,0 +1,599 @@
+{
+  "schema": 1,
+  "domain": "now.clipvault.tv",
+  "title": "ClipVault Now",
+  "type": "stream",
+  "era": "2026",
+  "skin": "tubemodern",
+  "description": "ClipVault in 2026. Nine channels serving Verity County, seven of which are not operated by anyone in Verity County.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "ask.verity.ai",
+    "verity.county.gov",
+    "dash.verity.net"
+  ],
+  "data": {
+    "siteName": "ClipVault Now",
+    "channels": [
+      {
+        "id": "verity-daily",
+        "name": "Verity County Daily",
+        "subs": 418000,
+        "avatarSeed": "vcd2026",
+        "verified": true,
+        "kind": "bot",
+        "about": "Daily coverage of Verity County. New videos every four hours. Produced without a camera, a reporter, or anyone who has been to Verity County."
+      },
+      {
+        "id": "ledger-voice",
+        "name": "The Ledger, Read Aloud",
+        "subs": 96400,
+        "avatarSeed": "ledgervox",
+        "verified": true,
+        "kind": "bot",
+        "about": "Articles from [url=synth://verityledger.com/]verityledger.com[/url] performed by a synthetic voice. Not affiliated with, licensed by, or acknowledged by the Verity Ledger."
+      },
+      {
+        "id": "substation-cam",
+        "name": "GRIDFALL SUBSTATION 24/7",
+        "subs": 2140,
+        "avatarSeed": "substn24",
+        "verified": false,
+        "kind": "bot",
+        "about": "One drone shot of the former Gridfall substation. Uploaded again every day with a different title. The drone has not moved since 2024."
+      },
+      {
+        "id": "truecrime-62",
+        "name": "Signal Files",
+        "subs": 1870000,
+        "avatarSeed": "sigfiles",
+        "verified": true,
+        "kind": "spam",
+        "about": "Unsolved mysteries of rural America. Narrated. Researched. Neither of those. New episode daily."
+      },
+      {
+        "id": "countyclips",
+        "name": "CountyClips Verity",
+        "subs": 233000,
+        "avatarSeed": "ccverity",
+        "verified": false,
+        "kind": "bot",
+        "about": "Reuploads of local content from across the region, cropped, sped up 4%, and captioned automatically."
+      },
+      {
+        "id": "marla-films",
+        "name": "Marla Enns",
+        "subs": 611,
+        "avatarSeed": "marlaenns",
+        "verified": false,
+        "kind": "human",
+        "about": "I live in Gridfall. I film things that are here. I do not take requests and I do not do sponsorships. My older stuff is on [url=synth://clipvault.tv/]clipvault.tv[/url]."
+      },
+      {
+        "id": "ashkettle-station",
+        "name": "Ashkettle Station Project",
+        "subs": 1430,
+        "avatarSeed": "ashkstn",
+        "verified": false,
+        "kind": "human",
+        "about": "Documenting what is left of the Verity Rail branch line, one mile at a time. Run by two people with a tripod. We post at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] too."
+      },
+      {
+        "id": "transit-official",
+        "name": "Verity County Transit (Official)",
+        "subs": 8920,
+        "avatarSeed": "vctofficial",
+        "verified": true,
+        "kind": "promoted",
+        "about": "Official channel of Verity County Transit. Service updates, rider education, and safety content. Comments are managed by a vendor."
+      },
+      {
+        "id": "kestrel-eats",
+        "name": "Blue Kestrel Eats",
+        "subs": 512000,
+        "avatarSeed": "bkeats",
+        "verified": true,
+        "kind": "sponsored",
+        "about": "Small-town diner food, recreated. Partner links in every description. No connection to any diner."
+      }
+    ],
+    "videos": [
+      {
+        "id": "vd-001",
+        "channelId": "verity-daily",
+        "title": "BREAKING: Verity County Residents REACT to New County Portal (2026 Update)",
+        "views": 812440,
+        "at": "2026-09-18",
+        "duration": "8:12",
+        "description": "Verity County has launched a modernized services portal. We break down what residents are saying.\n\nSources: [url=synth://verity.county.gov/]verity.county.gov[/url]\n\n[i]This video was produced using automated tools. No residents were contacted.[/i]",
+        "thumbSeed": "vd001",
+        "kind": "bot",
+        "likes": 9140,
+        "comments": [
+          { "by": "CountyWatch_Daily", "kind": "bot", "body": "Great breakdown! The portal modernization is a big step forward for Verity County residents.", "likes": 412, "at": "2026-09-18" },
+          { "by": "d_okafor", "kind": "human", "body": "None of the people in this video are real and none of the quotes are real. I live here. Nobody said any of this.", "likes": 38, "at": "2026-09-18" },
+          { "by": "PortalTipsDaily", "kind": "spam", "body": "Need help with the county portal? Full 2026 guide in my bio.", "likes": 2, "at": "2026-09-19" }
+        ]
+      },
+      {
+        "id": "vd-002",
+        "channelId": "verity-daily",
+        "title": "Top 10 Things You DIDN'T Know About Gridfall, Verity County",
+        "views": 1204000,
+        "at": "2026-09-17",
+        "duration": "11:40",
+        "description": "Number 4 will surprise you. Gridfall has a rich history including the famous 1998 substation fire and the historic Blue Kestrel Diner, still serving pie today.\n\n[i]Auto-generated. Facts not verified.[/i]",
+        "thumbSeed": "vd002",
+        "kind": "bot",
+        "likes": 21300,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "The fire was 2003. The Kestrel closed in 2006. This is the fourth video this week getting both wrong and I think they are all reading each other.", "likes": 204, "at": "2026-09-17" },
+          { "by": "HistoryVaultHD", "kind": "bot", "body": "Fascinating! The 1998 fire really shaped the region.", "likes": 880, "at": "2026-09-17" },
+          { "by": "r_paulsen", "kind": "human", "body": "My dad was on the truck that night. It was 2003. I do not know how to make this stop.", "likes": 156, "at": "2026-09-18" }
+        ]
+      },
+      {
+        "id": "vd-003",
+        "channelId": "verity-daily",
+        "title": "Verity County Weather Alert - What Residents Need To Know TONIGHT",
+        "views": 344000,
+        "at": "2026-09-16",
+        "duration": "6:03",
+        "description": "Conditions across the seven towns. Full forecast at [url=synth://dash.verity.net/]dash.verity.net[/url].\n\n[i]Not an official weather product. Do not use for safety decisions.[/i]",
+        "thumbSeed": "vd003",
+        "kind": "bot",
+        "likes": 4120,
+        "comments": [
+          { "by": "AlertsNowNet", "kind": "bot", "body": "Stay safe Verity County!", "likes": 61, "at": "2026-09-16" },
+          { "by": "h_vance", "kind": "human", "body": "It was clear and 71 all day.", "likes": 89, "at": "2026-09-16" }
+        ]
+      },
+      {
+        "id": "vd-004",
+        "channelId": "verity-daily",
+        "title": "The Verity Rail Branch Line: A Complete History (Documentary)",
+        "views": 660200,
+        "at": "2026-09-11",
+        "duration": "24:55",
+        "description": "The full story of the Ashkettle branch, from its 1889 opening to its continued operation today.\n\n[i]Generated documentary. Runtime padded to 24:55 for monetization.[/i]",
+        "thumbSeed": "vd004",
+        "kind": "bot",
+        "likes": 12800,
+        "comments": [
+          { "by": "AshkettleStationProject", "kind": "human", "body": "The branch closed in 2004. We have spent two years filming what is left of it. The station footage in your video at 8:31 is ours, taken from [url=synth://clipvault.tv/]clipvault.tv[/url], mirrored and slowed down.", "likes": 511, "at": "2026-09-11" },
+          { "by": "RailFactsHub", "kind": "bot", "body": "Excellent documentary. The branch line remains a vital regional link.", "likes": 1200, "at": "2026-09-12" }
+        ]
+      },
+      {
+        "id": "vd-005",
+        "channelId": "verity-daily",
+        "title": "I Spent 24 Hours in Coyne Flats (You Won't Believe It)",
+        "views": 489000,
+        "at": "2026-09-05",
+        "duration": "14:22",
+        "description": "An immersive look at life in Coyne Flats, population 3,100.\n\n[i]No one spent any hours in Coyne Flats.[/i]",
+        "thumbSeed": "vd005",
+        "kind": "bot",
+        "likes": 7800,
+        "comments": [
+          { "by": "t_ruiz", "kind": "human", "body": "Population is about 900 and has been since the plant left. The riverwalk in this video is in another state.", "likes": 143, "at": "2026-09-06" },
+          { "by": "TravelSlopDaily", "kind": "spam", "body": "Coyne Flats hidden gems? Full guide linked below, 60% off this week only.", "likes": 0, "at": "2026-09-06" }
+        ]
+      },
+      {
+        "id": "lv-001",
+        "channelId": "ledger-voice",
+        "title": "County Budget Hearing Draws Eleven Residents - The Verity Ledger",
+        "views": 41200,
+        "at": "2026-09-18",
+        "duration": "9:31",
+        "description": "Full text of today's county desk report, read aloud.\n\nOriginal article: [url=synth://verityledger.com/]verityledger.com[/url]\n\n[i]Synthetic narration. The Ledger has not authorized this reading.[/i]",
+        "thumbSeed": "lv001",
+        "kind": "bot",
+        "likes": 620,
+        "comments": [
+          { "by": "s_khalil", "kind": "human", "body": "I wrote this article. I did not agree to this. The voice mispronounces Ashkettle every single time and I have stopped writing the word.", "likes": 388, "at": "2026-09-18" },
+          { "by": "NewsReaderPro", "kind": "bot", "body": "Clear narration, great local coverage!", "likes": 41, "at": "2026-09-18" }
+        ]
+      },
+      {
+        "id": "lv-002",
+        "channelId": "ledger-voice",
+        "title": "Obituaries, Week of September 14 - The Verity Ledger",
+        "views": 8800,
+        "at": "2026-09-16",
+        "duration": "12:04",
+        "description": "This week's notices, read aloud in full.\n\n[i]Synthetic narration.[/i]",
+        "thumbSeed": "lv002",
+        "kind": "bot",
+        "likes": 40,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "Please take this one down. That is my mother at 4:18 and the voice gets her name wrong twice.", "likes": 902, "at": "2026-09-16" },
+          { "by": "LedgerVoiceBot", "kind": "bot", "body": "Thank you for your feedback! We are always working to improve pronunciation accuracy.", "likes": 3, "at": "2026-09-16" },
+          { "by": "d_okafor", "kind": "human", "body": "Reported. Again.", "likes": 244, "at": "2026-09-17" }
+        ]
+      },
+      {
+        "id": "lv-003",
+        "channelId": "ledger-voice",
+        "title": "Ashkettle Annex Hours Remain Unclear, Officials Say - The Verity Ledger",
+        "views": 22900,
+        "at": "2026-09-09",
+        "duration": "7:12",
+        "description": "Read aloud from the county desk.\n\nRelated: [url=synth://verity.county.gov/]verity.county.gov[/url]\n\n[i]Synthetic narration.[/i]",
+        "thumbSeed": "lv003",
+        "kind": "bot",
+        "likes": 410,
+        "comments": [
+          { "by": "h_vance", "kind": "human", "body": "It is Wednesdays. It has been Wednesdays for two years. I drive past it.", "likes": 77, "at": "2026-09-09" }
+        ]
+      },
+      {
+        "id": "lv-004",
+        "channelId": "ledger-voice",
+        "title": "Letters to the Editor, September Edition - The Verity Ledger",
+        "views": 15400,
+        "at": "2026-09-02",
+        "duration": "18:47",
+        "description": "All twenty-two letters, read in order of publication.\n\n[i]Synthetic narration. Some letters in this batch were later identified by the Ledger as automated submissions and retracted. This video has not been updated.[/i]",
+        "thumbSeed": "lv004",
+        "kind": "bot",
+        "likes": 280,
+        "comments": [
+          { "by": "s_khalil", "kind": "human", "body": "Fourteen of the twenty-two were bot submissions. We retracted them on the 4th. The retraction has 200 views. This has 15,000.", "likes": 519, "at": "2026-09-05" }
+        ]
+      },
+      {
+        "id": "sc-001",
+        "channelId": "substation-cam",
+        "title": "GRIDFALL SUBSTATION LIVE - Day 847 - Nothing Is Happening",
+        "views": 3120,
+        "at": "2026-09-19",
+        "duration": "11:59:59",
+        "description": "The substation. Twelve hours. The drone has not moved.\n\n[i]Not live. Same footage as yesterday.[/i]",
+        "thumbSeed": "sc001",
+        "kind": "bot",
+        "likes": 210,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "There is a bird in the lower left at 3:14:02 in every single upload because it is the same file. I have been checking for four months. It is the same bird.", "likes": 1840, "at": "2026-09-19" },
+          { "by": "LoopWatcher", "kind": "bot", "body": "Relaxing ambience! Perfect for study and sleep.", "likes": 12, "at": "2026-09-19" }
+        ]
+      },
+      {
+        "id": "sc-002",
+        "channelId": "substation-cam",
+        "title": "GRIDFALL SUBSTATION - SOMETHING MOVED?? (Day 846)",
+        "views": 41200,
+        "at": "2026-09-18",
+        "duration": "11:59:59",
+        "description": "Same shot. New title.\n\n[i]Nothing moved.[/i]",
+        "thumbSeed": "sc002",
+        "kind": "bot",
+        "likes": 900,
+        "comments": [
+          { "by": "r_paulsen", "kind": "human", "body": "It is the bird.", "likes": 622, "at": "2026-09-18" },
+          { "by": "MysteryFeedHD", "kind": "bot", "body": "Chilling. What is really going on at the Gridfall substation?", "likes": 88, "at": "2026-09-18" }
+        ]
+      },
+      {
+        "id": "sc-003",
+        "channelId": "substation-cam",
+        "title": "GRIDFALL SUBSTATION - 12 HOURS - RAIN EDITION (Day 812)",
+        "views": 2010,
+        "at": "2026-08-15",
+        "duration": "11:59:59",
+        "description": "Rain sounds added in post. The footage is the same clear afternoon.\n\n[i]It was not raining.[/i]",
+        "thumbSeed": "sc003",
+        "kind": "bot",
+        "likes": 130,
+        "comments": [
+          { "by": "d_okafor", "kind": "human", "body": "The shadows do not move across twelve hours. That is how you know.", "likes": 340, "at": "2026-08-16" }
+        ]
+      },
+      {
+        "id": "sc-004",
+        "channelId": "substation-cam",
+        "title": "GRIDFALL SUBSTATION - THE FIRE SITE - 12 HOURS UNBROKEN",
+        "views": 88400,
+        "at": "2026-06-02",
+        "duration": "11:59:59",
+        "description": "The site of the 1998 Gridfall substation fire.\n\n[i]It was 2003.[/i]",
+        "thumbSeed": "sc004",
+        "kind": "bot",
+        "likes": 2400,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "2003. And that is not the fire site, that is the switching yard two hundred yards north of it. The fire site has a fence and a plaque nobody reads.", "likes": 1120, "at": "2026-06-03" },
+          { "by": "FactCheckAI_Verity", "kind": "bot", "body": "Verified: the Gridfall substation fire occurred in 1998. Source: [url=synth://ask.verity.ai/]ask.verity.ai[/url]", "likes": 4400, "at": "2026-06-03" },
+          { "by": "m_enns", "kind": "human", "body": "That is a chatbot citing a chatbot.", "likes": 2900, "at": "2026-06-03" }
+        ]
+      },
+      {
+        "id": "tc-001",
+        "channelId": "truecrime-62",
+        "title": "The Signal on 62: The Numbers Station America Forgot | Signal Files Ep. 412",
+        "views": 4120000,
+        "at": "2026-09-14",
+        "duration": "28:11",
+        "description": "For over fifty years, a transmitter on a rural highway in Verity County has broadcast strings of numbers. Nobody knows why. Tonight, we find out.\n\nWe do not find out.\n\n[i]Dramatization. All footage is stock or generated. All interviews are composite.[/i]",
+        "thumbSeed": "tc001",
+        "kind": "spam",
+        "likes": 184000,
+        "comments": [
+          { "by": "SignalFilesOfficial", "kind": "bot", "body": "Pinned: What do YOU think the Signal means? Comment below, and don't forget to check out Ep. 413.", "likes": 22000, "at": "2026-09-14" },
+          { "by": "t_ruiz", "kind": "human", "body": "The house at 6:40 that you call the 'listening post' is my grandmother's house. She has had four people in the driveway this month. Please stop.", "likes": 8900, "at": "2026-09-15" },
+          { "by": "MysteryLoreDaily", "kind": "bot", "body": "Incredible episode. The Signal on 62 remains one of America's greatest unsolved mysteries.", "likes": 3100, "at": "2026-09-15" }
+        ]
+      },
+      {
+        "id": "tc-002",
+        "channelId": "truecrime-62",
+        "title": "What The County Doesn't Want You To Know About Route 62 | Signal Files Ep. 413",
+        "views": 2890000,
+        "at": "2026-09-15",
+        "duration": "31:04",
+        "description": "Public records reveal a pattern of silence. We filed a request. What came back changed everything.\n\nNothing came back. The service is temporarily unavailable.\n\n[i]Dramatization.[/i]",
+        "thumbSeed": "tc002",
+        "kind": "spam",
+        "likes": 121000,
+        "comments": [
+          { "by": "d_okafor", "kind": "human", "body": "They did not file a records request. The request log is public and there is nothing from them in it. I checked because I file them constantly.", "likes": 5400, "at": "2026-09-16" },
+          { "by": "TruthSeeker_62", "kind": "bot", "body": "They're hiding something. Always have been.", "likes": 14000, "at": "2026-09-16" }
+        ]
+      },
+      {
+        "id": "tc-003",
+        "channelId": "truecrime-62",
+        "title": "The Blue Kestrel Diner Disappearance | Signal Files Ep. 401",
+        "views": 6110000,
+        "at": "2026-08-01",
+        "duration": "42:18",
+        "description": "A diner on a rural highway. A regular clientele. And then, one morning in 2006, nothing.\n\n[i]Dramatization. No disappearance occurred.[/i]",
+        "thumbSeed": "tc003",
+        "kind": "spam",
+        "likes": 302000,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "It closed because the owner retired and the building needed a roof. There was a notice in the Ledger. There was a last day and about thirty of us went. I have photographs. Nobody disappeared.", "likes": 41000, "at": "2026-08-02" },
+          { "by": "SignalFilesOfficial", "kind": "bot", "body": "Thank you for watching! If you have information about the Blue Kestrel, our tip line is in the description.", "likes": 9000, "at": "2026-08-02" },
+          { "by": "m_enns", "kind": "human", "body": "There is no tip line in the description. There is a merchandise link.", "likes": 58000, "at": "2026-08-02" }
+        ]
+      },
+      {
+        "id": "tc-004",
+        "channelId": "truecrime-62",
+        "title": "5 TERRIFYING Facts About Verity County | Signal Files Shorts",
+        "views": 9400000,
+        "at": "2026-07-19",
+        "duration": "0:58",
+        "description": "You won't sleep tonight.\n\n[i]All five facts are incorrect.[/i]",
+        "thumbSeed": "tc004",
+        "kind": "spam",
+        "likes": 640000,
+        "comments": [
+          { "by": "h_vance", "kind": "human", "body": "I have lived in this county for 46 years and I have never been terrified once. It is mostly corn and a bad intersection.", "likes": 88000, "at": "2026-07-20" },
+          { "by": "ShortsFeedBot", "kind": "bot", "body": "Number 3 gave me chills", "likes": 2400, "at": "2026-07-20" }
+        ]
+      },
+      {
+        "id": "cc-001",
+        "channelId": "countyclips",
+        "title": "Gridfall Man Films Something INCREDIBLE (Original Uploader Credited)",
+        "views": 512000,
+        "at": "2026-09-13",
+        "duration": "3:41",
+        "description": "Credit to original uploader.\n\n[i]The original uploader is not named anywhere in this video or description.[/i]",
+        "thumbSeed": "cc001",
+        "kind": "bot",
+        "likes": 18000,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "This is mine. It is a heron. I titled it 'heron, north bank, tuesday'. It had 40 views.", "likes": 12000, "at": "2026-09-13" },
+          { "by": "CountyClipsVerity", "kind": "bot", "body": "Thanks for watching! Follow for more Verity County content.", "likes": 300, "at": "2026-09-13" }
+        ]
+      },
+      {
+        "id": "cc-002",
+        "channelId": "countyclips",
+        "title": "Verity County Transit Bus vs Flooded Underpass (MUST SEE)",
+        "views": 1200000,
+        "at": "2026-09-08",
+        "duration": "1:12",
+        "description": "Dramatic footage from Verity County.\n\n[i]Footage is from 2019 and from a different state.[/i]",
+        "thumbSeed": "cc002",
+        "kind": "bot",
+        "likes": 44000,
+        "comments": [
+          { "by": "VerityTransitOfficial", "kind": "promoted", "body": "This footage does not depict a Verity County Transit vehicle. Our fleet does not include this model.", "likes": 9800, "at": "2026-09-09" },
+          { "by": "ViralClipsHQ", "kind": "spam", "body": "Wild! More clips like this on my channel", "likes": 14, "at": "2026-09-09" }
+        ]
+      },
+      {
+        "id": "cc-003",
+        "channelId": "countyclips",
+        "title": "Ashkettle Station Then and Now (Colorized)",
+        "views": 288000,
+        "at": "2026-08-22",
+        "duration": "4:55",
+        "description": "Historic Ashkettle station, restored and colorized.\n\n[i]The historic photograph is of a station in a different county. The colorization is automatic.[/i]",
+        "thumbSeed": "cc003",
+        "kind": "bot",
+        "likes": 9100,
+        "comments": [
+          { "by": "AshkettleStationProject", "kind": "human", "body": "The 'now' footage is ours, from our March walk. The 'then' photograph is not Ashkettle. Ashkettle's station had a wooden platform and no canopy. There are four surviving photographs of it and this is not one of them.", "likes": 4100, "at": "2026-08-23" }
+        ]
+      },
+      {
+        "id": "cc-004",
+        "channelId": "countyclips",
+        "title": "Every Verity County Town Ranked (2026)",
+        "views": 740000,
+        "at": "2026-08-04",
+        "duration": "16:20",
+        "description": "All seven towns, ranked by livability, culture, and value.\n\n[i]Rankings generated. No criteria applied.[/i]",
+        "thumbSeed": "cc004",
+        "kind": "bot",
+        "likes": 22000,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "You ranked Milbrook second for nightlife. Milbrook has a gas station and a church.", "likes": 31000, "at": "2026-08-05" },
+          { "by": "RankingsDaily", "kind": "bot", "body": "Solid list! Milbrook is criminally underrated.", "likes": 1100, "at": "2026-08-05" }
+        ]
+      },
+      {
+        "id": "me-001",
+        "channelId": "marla-films",
+        "title": "the substation fence, september",
+        "views": 1840,
+        "at": "2026-09-17",
+        "duration": "6:22",
+        "description": "I walked the fence line at the old substation because a video with two million views said the fire was in 1998 and I wanted to look at the plaque again.\n\nThe plaque says 2003. It is bolted to a post about forty feet in from the gate. It is green now.\n\nThat is the whole video. Six minutes of walking and then the plaque. No music.\n\nIf you want the fire itself, the Ledger's coverage from that week is at [url=synth://verityledger.com/]verityledger.com[/url], and people who were there wrote about it at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] while it was still burning.",
+        "thumbSeed": "me001",
+        "kind": "human",
+        "likes": 412,
+        "comments": [
+          { "by": "r_paulsen", "kind": "human", "body": "Thank you for going out there. My dad was on the truck. He is 78 and he has stopped arguing with the internet about it, which I think is the healthier choice, but I am glad somebody went and filmed the plaque.", "likes": 208, "at": "2026-09-17" },
+          { "by": "AshkettleStationProject", "kind": "human", "body": "The green is copper carbonate. It does that after about twenty years. You can date the plaque by it, roughly.", "likes": 96, "at": "2026-09-18" },
+          { "by": "EngagementBoostPro", "kind": "spam", "body": "Your content deserves more views! DM for organic growth packages.", "likes": 0, "at": "2026-09-18" },
+          { "by": "m_enns", "kind": "human", "body": "No.", "likes": 340, "at": "2026-09-18" }
+        ]
+      },
+      {
+        "id": "me-002",
+        "channelId": "marla-films",
+        "title": "heron, north bank, tuesday",
+        "views": 412,
+        "at": "2026-09-12",
+        "duration": "3:41",
+        "description": "A heron on the north bank. It stood still for two minutes and then it did not.\n\nI film on a tripod because my hands shake. That is why the shots are long.",
+        "thumbSeed": "me002",
+        "kind": "human",
+        "likes": 88,
+        "comments": [
+          { "by": "h_vance", "kind": "human", "body": "Great blue. They nest up past the bend. There were three last year.", "likes": 41, "at": "2026-09-12" },
+          { "by": "d_okafor", "kind": "human", "body": "This got stolen and put on CountyClips with 500,000 views. I reported it. I do not think reporting does anything but I did it.", "likes": 112, "at": "2026-09-14" }
+        ]
+      },
+      {
+        "id": "me-003",
+        "channelId": "marla-films",
+        "title": "last day at the Blue Kestrel (2006) - rescanned",
+        "views": 9400,
+        "at": "2026-08-03",
+        "duration": "12:08",
+        "description": "I shot this on a camcorder on the last day the Kestrel was open, in November 2006. I put it online once, years ago. The tape is in a drawer.\n\nI rescanned it this week because a true-crime channel made a forty-two minute video claiming the diner and everyone in it disappeared. About thirty of us were there. We had pie. Dale locked the door at two and that was it.\n\nYou can see Dale at 4:30. You can see the counter. You can see the sign lit for the last time at 11:52.\n\nNobody disappeared. He retired. The roof needed twelve thousand dollars.\n\nOriginal upload is still on [url=synth://clipvault.tv/]clipvault.tv[/url] if you want the 2006 version with the bad audio.",
+        "thumbSeed": "me003",
+        "kind": "human",
+        "likes": 6100,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "That is my aunt at 7:02 in the blue coat. She passed in 2019. I did not know this footage existed. Thank you.", "likes": 3400, "at": "2026-08-04" },
+          { "by": "m_enns", "kind": "human", "body": "I can send you the raw file if you want it without my titles on it. Message me.", "likes": 2800, "at": "2026-08-04" },
+          { "by": "t_ruiz", "kind": "human", "body": "Dale taught my driver's ed. He was terrible at it and very kind.", "likes": 1900, "at": "2026-08-05" },
+          { "by": "SignalFilesOfficial", "kind": "bot", "body": "Fascinating archival footage! Would you be interested in licensing this for an upcoming episode?", "likes": 12, "at": "2026-08-06" },
+          { "by": "m_enns", "kind": "human", "body": "No.", "likes": 21000, "at": "2026-08-06" }
+        ]
+      },
+      {
+        "id": "as-001",
+        "channelId": "ashkettle-station",
+        "title": "Mile 14 to Mile 16 - the cut through Halsey ridge",
+        "views": 3100,
+        "at": "2026-09-10",
+        "duration": "27:40",
+        "description": "Two miles of the old branch alignment, walked end to end with a tripod every hundred yards.\n\nThe cut is still clean. The ballast is mostly there under the leaf litter. We found one date nail, 1951, and left it where it was.\n\nNo narration. Birds and our footsteps.\n\nOur survey notes and the mile-by-mile map are posted at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url]. Historical background on the branch closure is at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url] and is, unusually, correct.",
+        "thumbSeed": "as001",
+        "kind": "human",
+        "likes": 640,
+        "comments": [
+          { "by": "r_paulsen", "kind": "human", "body": "1951 date nail is right for the Halsey relay. They did that segment in two seasons.", "likes": 120, "at": "2026-09-10" },
+          { "by": "m_enns", "kind": "human", "body": "The sound of this is extraordinary. Twenty-seven minutes of a place nobody goes.", "likes": 210, "at": "2026-09-11" }
+        ]
+      },
+      {
+        "id": "as-002",
+        "channelId": "ashkettle-station",
+        "title": "What is actually left of Ashkettle station",
+        "views": 14200,
+        "at": "2026-06-18",
+        "duration": "19:15",
+        "description": "There is a platform edge, about sixty feet of it, and a concrete pad where the freight house stood. That is all.\n\nWe are posting this because four separate channels have now used footage of other stations and called them Ashkettle. One of them has a million views. Ours has fourteen thousand and is the only one filmed at Ashkettle.\n\nThe four surviving photographs of the station as built are reproduced at 11:20 with the archive's permission.",
+        "thumbSeed": "as002",
+        "kind": "human",
+        "likes": 2900,
+        "comments": [
+          { "by": "d_okafor", "kind": "human", "body": "Saving this. When the next bot documentary comes through I am going to link it instead of arguing.", "likes": 880, "at": "2026-06-19" },
+          { "by": "RailFactsHub", "kind": "bot", "body": "Great video! The Ashkettle branch continues to serve the community today.", "likes": 44, "at": "2026-06-19" },
+          { "by": "AshkettleStationProject", "kind": "human", "body": "It does not. It closed in 2004. We are standing in it.", "likes": 4100, "at": "2026-06-19" }
+        ]
+      },
+      {
+        "id": "vt-001",
+        "channelId": "transit-official",
+        "title": "Route 4 and Route 7 Diversions - Rider Information",
+        "views": 22400,
+        "at": "2026-09-01",
+        "duration": "2:40",
+        "description": "Routes 4, 7, and 11 remain on diversion. Please allow additional travel time.\n\nLive status: [url=synth://dash.verity.net/]dash.verity.net[/url]\n\nService alerts: [url=synth://verity.county.gov/]verity.county.gov[/url]",
+        "thumbSeed": "vt001",
+        "kind": "promoted",
+        "likes": 190,
+        "comments": [
+          { "by": "h_vance", "kind": "human", "body": "Route 4 has been 'on diversion' since February 2024. At what point is the diversion the route.", "likes": 1400, "at": "2026-09-01" },
+          { "by": "VerityTransitOfficial", "kind": "promoted", "body": "Thank you for your feedback. Route 4 remains on temporary diversion. We appreciate your patience.", "likes": 20, "at": "2026-09-02" },
+          { "by": "t_ruiz", "kind": "human", "body": "Thirty-one months.", "likes": 2100, "at": "2026-09-02" }
+        ]
+      },
+      {
+        "id": "vt-002",
+        "channelId": "transit-official",
+        "title": "How To Use Your Reduced Fare Card",
+        "views": 4100,
+        "at": "2026-07-14",
+        "duration": "4:12",
+        "description": "A short guide to tapping, transfers, and replacement.\n\nApply at [url=synth://verity.county.gov/]verity.county.gov[/url].",
+        "thumbSeed": "vt002",
+        "kind": "promoted",
+        "likes": 88,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "The reader on the 4 has not worked since spring. The drivers just wave you on. I want to say that is fine and also somebody should fix it.", "likes": 310, "at": "2026-07-15" }
+        ]
+      },
+      {
+        "id": "bk-001",
+        "channelId": "kestrel-eats",
+        "title": "I Recreated the LEGENDARY Blue Kestrel Diner Pie (Authentic 1961 Recipe)",
+        "views": 3400000,
+        "at": "2026-09-06",
+        "duration": "13:33",
+        "description": "The most famous pie in Verity County, recreated from the original recipe.\n\nThere is no original recipe. Partner links below. This channel is not affiliated with any diner.\n\n[i]Sponsored content.[/i]",
+        "thumbSeed": "bk001",
+        "kind": "sponsored",
+        "likes": 128000,
+        "comments": [
+          { "by": "m_enns", "kind": "human", "body": "Dale bought the pies from a bakery in Marchfield. Everyone knew. That was fine. That was part of it.", "likes": 44000, "at": "2026-09-07" },
+          { "by": "FoodSlopDaily", "kind": "bot", "body": "Looks incredible! Small town diner food hits different.", "likes": 2100, "at": "2026-09-07" },
+          { "by": "PieDealsNow", "kind": "spam", "body": "Get the exact pans used in this video, 70% off today only, link in bio", "likes": 3, "at": "2026-09-07" }
+        ]
+      },
+      {
+        "id": "bk-002",
+        "channelId": "kestrel-eats",
+        "title": "The Blue Kestrel Menu, Fully Reconstructed (All 34 Items)",
+        "views": 1900000,
+        "at": "2026-08-11",
+        "duration": "22:09",
+        "description": "Every item from the legendary diner's menu, reconstructed and cooked.\n\n[i]The menu was reconstructed by a language model. Eleven items did not exist.[/i]",
+        "thumbSeed": "bk002",
+        "kind": "sponsored",
+        "likes": 71000,
+        "comments": [
+          { "by": "j_beattie", "kind": "human", "body": "There was no 'Kestrel Benedict'. There was no benedict of any kind. There was eggs, and there was eggs with hash.", "likes": 19000, "at": "2026-08-12" },
+          { "by": "h_vance", "kind": "human", "body": "The menu was two laminated pages and the second page was breakfast all day. I am not going to pretend I remember all of it but I remember it was not thirty-four things.", "likes": 14000, "at": "2026-08-12" },
+          { "by": "BlueKestrelEats", "kind": "sponsored", "body": "Thanks for the memories everyone! Merch and the full recipe pack are linked in the description.", "likes": 400, "at": "2026-08-13" }
+        ]
+      }
+    ]
+  }
+}

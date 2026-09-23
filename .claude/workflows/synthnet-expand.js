@@ -1,0 +1,353 @@
+/*
+ * synthnet-expand
+ * ---------------------------------------------------------------------------
+ * Adds new sites to the synthetic internet under
+ * /home/user/KUNK/synthnet/net/sites/<slug>/site.json and then tells you what to
+ * rebuild. It authors content only. It does NOT run git, build.py or
+ * publish.sh: a workflow script has no shell of its own, so committing and
+ * pushing stay the caller's job (tools/publish.sh does that part).
+ *
+ * HOW TO INVOKE
+ *   Run the workflow by name (synthnet-expand) and pass an args object.
+ *   Every field is optional; args itself may be undefined.
+ *
+ *   Example args:
+ *     {
+ *       count: 5,
+ *       types: ['forum', 'blog', 'wiki', 'news', 'page'],
+ *       theme: 'the Verity Rail branch-line closure, 2005 hearings',
+ *       linkTo: ['wiki.gridfall.net', 'boards.gridfall.net'],
+ *       maxTokens: 400000
+ *     }
+ *
+ *   count   how many sites to create. Clamped to 12, always.
+ *   types   pool of site types to draw from, cycled in order.
+ *           Valid: any type this build can draw except `control` -- see
+ *           ALL_TYPES below, which is the list this file actually uses.
+ *   theme   free text steering the subject matter of the new sites.
+ *   linkTo  existing domains the new sites should cross-link to.
+ *   maxTokens advisory per-run ceiling; the real ceiling is `budget`.
+ *
+ * USAGE DISCIPLINE
+ *   This workflow is deliberately stingy. It hard-caps the site count, it
+ *   stops spawning agents when the remaining budget gets thin instead of
+ *   quietly producing junk, and every agent it spawns is told not to explore
+ *   the repository. One run should cost a predictable, bounded amount.
+ * ---------------------------------------------------------------------------
+ */
+
+export const meta = {
+  name: 'synthnet-expand',
+  description: 'Add new sites to the synthetic internet and rebuild',
+  whenToUse: 'When you want more sites, posts or cross-links in synthnet',
+  phases: [{ title: 'Author' }, { title: 'Check' }],
+}
+
+const ROOT = '/home/user/KUNK/synthnet'
+const SITES_DIR = ROOT + '/net/sites'
+const AUTHORING = ROOT + '/docs/AUTHORING.md'
+
+// Every type tools/validate.py accepts. This listed seven of them, and the
+// other fourteen were silently filtered out further down -- so the workflow
+// whose entire purpose is bulk expansion could not create a board, a wire, a
+// chat, a newsletter, a Q&A or a shop at all, and said nothing about it.
+const ALL_TYPES = [
+  'forum', 'social', 'blog', 'news', 'wiki', 'media', 'page',
+  'aggregator', 'qa', 'board', 'shop', 'market', 'assistant',
+  'mail', 'portal', 'stream', 'dash',
+  'wire', 'newsletter', 'chat'
+]
+// 'control' is deliberately absent: it is the in-app settings panel, not a
+// site anybody visits, and docs/AUTHORING.md says not to author one.
+const MAX_COUNT = 12
+
+// Below this many remaining budget tokens we stop starting new agents.
+const RESERVE = 60000
+// Rough expectation for one author+check pair; used only for the share log.
+const NOMINAL_PER_SITE = 45000
+
+const SETTING = [
+  'Shared setting for all synthnet content: Verity County, a mid-sized inland',
+  'region, period 2001-2008. Recurring threads: the Gridfall power substation',
+  'fire of 2003; the Verity Rail branch-line closure; a local myth called "the',
+  'Signal on 62" (a numbers station heard on a back road); a beloved defunct',
+  'diner, the Blue Kestrel. Tone: mundane, specific, human, slightly boring in',
+  'the way real forums are. Not sci-fi. Real people arguing about parking,',
+  'posting recipes, correcting each other\'s grammar, flaming.',
+].join(' ')
+
+// THERE IS NO REPAIR STAGE HERE, AND ONE MUST NOT BE ADDED WITH WRITE ACCESS.
+//
+// A second stage that runs validate.py on the file its author just wrote and
+// "fixes what it names" is the obvious next thing to build. It was built, in
+// an ad-hoc version of this workflow, and it deleted content three times:
+// eight finished articles and 11,500 characters from a site that had NO
+// validation errors at all; four topics and thirty-three posts from another;
+// and a third of a page including its 88x31 badge wall, from a file that had
+// already been committed. Twice that shipped, because the site still
+// validated and still rendered -- deletion is invisible to every check in
+// this project.
+//
+// Telling it not to does not work; it was told, in as many words, and did it
+// again on the next site. If you want that stage, give it validate.py and a
+// read of the file and have it RETURN a note saying what is wrong. Let
+// something that is not a language model do the writing.
+const NO_EXPLORE = [
+  'TOKEN DISCIPLINE - obey strictly:',
+  '- Do NOT explore the repository. No grep, no glob, no directory listing.',
+  '- Read ONLY ' + AUTHORING + ', plus AT MOST ONE existing site.json',
+  '  under ' + SITES_DIR + '/ as a style reference. Nothing else.',
+  '- Write EXACTLY ONE file. Do not touch registry.json or search.json:',
+  '  those are generated by tools/build.py.',
+  '- Do not run git, build tools or tests.',
+  '- Reply with ONE short line. Not a summary, not a report.',
+].join('\n')
+
+function pick(v, fallback) {
+  return v === undefined || v === null ? fallback : v
+}
+
+function slugFor(type, i, theme) {
+  // Deterministic, no randomness available in this sandbox.
+  const stem = theme ? 'verity' : 'gridfall'
+  return stem + '-' + type + '-' + (i + 1)
+}
+
+export default async function () {
+  const a = args || {}
+
+  const requested = Number(pick(a.count, 4)) || 0
+  let count = requested
+  if (count < 1) count = 1
+  if (count > MAX_COUNT) {
+    count = MAX_COUNT
+    log(
+      'count clamped from ' + requested + ' to ' + MAX_COUNT +
+      ' (hard cap; run the workflow again if you want more).'
+    )
+  }
+
+  let types = pick(a.types, ALL_TYPES)
+  if (!Array.isArray(types) || types.length === 0) types = ALL_TYPES
+  types = types.filter(function (t) { return ALL_TYPES.indexOf(t) !== -1 })
+  if (types.length === 0) {
+    types = ALL_TYPES
+    log('no recognised types in args.types; falling back to all seven types.')
+  }
+
+  const theme = pick(a.theme, '')
+  let linkTo = pick(a.linkTo, [])
+  if (!Array.isArray(linkTo)) linkTo = []
+  const maxTokens = pick(a.maxTokens, null)
+
+  // ---- budget planning -----------------------------------------------------
+  let share = null
+  if (budget && budget.total) {
+    const usable = Math.max(0, budget.total - RESERVE)
+    share = Math.floor(usable / count)
+    log(
+      'budget: total ' + budget.total + ', reserve ' + RESERVE +
+      ', planned share per site ~' + share + ' tokens (nominal ' +
+      NOMINAL_PER_SITE + ').'
+    )
+    if (share < NOMINAL_PER_SITE) {
+      log(
+        'share is below nominal; sites will be authored tighter. Lower count ' +
+        'if you want fuller sites.'
+      )
+    }
+  } else {
+    log('budget.total not set; relying on the per-agent reserve check only.')
+  }
+  if (maxTokens) log('args.maxTokens advisory: ' + maxTokens)
+
+  function remaining() {
+    if (!budget || typeof budget.remaining !== 'function') return null
+    return budget.remaining()
+  }
+
+  function tooThin() {
+    const r = remaining()
+    return r !== null && r < RESERVE
+  }
+
+  // ---- plan ----------------------------------------------------------------
+  const plan = []
+  for (let i = 0; i < count; i++) {
+    const type = types[i % types.length]
+    plan.push({ index: i, type: type, slug: slugFor(type, i, theme) })
+  }
+
+  const created = []
+  const skipped = []
+
+  const themeLine = theme
+    ? 'Theme for this batch: ' + theme
+    : 'No specific theme given; pick something ordinary and local.'
+  const linkLine = linkTo.length
+    ? 'Cross-link to these existing domains where it is natural, and list the ' +
+      'ones you actually link in the site.json "links" array: ' +
+      linkTo.join(', ') + '.'
+    : 'If you link to other domains, list them in the "links" array.'
+
+  // ---- pipeline: author -> self-check, per site, no barrier ----------------
+  await phase('Author')
+
+  const results = await pipeline(
+    plan,
+
+    // Stage 1: author one site.json.
+    async function author(item) {
+      if (tooThin()) {
+        const r = remaining()
+        skipped.push({
+          slug: item.slug,
+          type: item.type,
+          reason: 'budget too thin to start author agent (remaining ' + r + ')',
+        })
+        log('SKIP author ' + item.slug + ' - remaining budget ' + r +
+            ' below reserve ' + RESERVE + '. Nothing was truncated; this site ' +
+            'was simply not started.')
+        return null
+      }
+
+      const prompt = [
+        'You are adding ONE new site to a fully offline synthetic internet.',
+        '',
+        'Read ' + AUTHORING + ' first. It is the contract. Follow it exactly:',
+        'the schema, the seven site types, the per-type data shapes, the skin',
+        'names, the inline markup tags, and the absolute no-network rule',
+        '(no http:// or https:// anywhere, not even in comments; images are',
+        '[img:kind:seed] placeholders only).',
+        '',
+        'Site type for this one: ' + item.type,
+        'Write exactly one file:',
+        '  ' + SITES_DIR + '/' + item.slug + '/site.json',
+        'Pick a plausible domain of your own; the folder slug is the domain',
+        'with dots replaced by hyphens, so if your domain differs from "' +
+          item.slug + '" use the domain-derived folder name instead and report',
+        'the path you actually wrote.',
+        '',
+        themeLine,
+        linkLine,
+        '',
+        SETTING,
+        '',
+        'Make it substantial but not enormous: enough content that every path',
+        'the renderer supports for this type has something real behind it.',
+        '',
+        NO_EXPLORE,
+      ].join('\n')
+
+      const opts = { schema: { domain: 'string', type: 'string', path: 'string', note: 'string' } }
+      if (share) opts.maxTokens = share
+
+      const out = await agent(prompt, opts)
+      if (!out) return null
+      return {
+        index: item.index,
+        slug: item.slug,
+        domain: out.domain || item.slug,
+        type: out.type || item.type,
+        path: out.path || (SITES_DIR + '/' + item.slug + '/site.json'),
+        note: out.note || '',
+      }
+    },
+
+    // Stage 2: check that one file, fix in place if needed.
+    async function check(site) {
+      if (!site) return null
+
+      if (tooThin()) {
+        const r = remaining()
+        site.checked = false
+        site.problems = ['not checked: budget below reserve (' + r + ')']
+        created.push(site)
+        log('SKIP check ' + site.domain + ' - remaining budget ' + r +
+            ' below reserve. The file was written but not verified.')
+        return site
+      }
+
+      const prompt = [
+        'Verify ONE already-written synthnet site file against the contract.',
+        '',
+        'The contract is ' + AUTHORING + '. Read it, then read exactly this',
+        'one file and nothing else:',
+        '  ' + site.path,
+        '',
+        'Check: schema is 1; domain is present and matches the folder slug',
+        // Built from ALL_TYPES, not restated. This sentence said "forum,
+        // social, blog, news, wiki, media, page" while ALL_TYPES above
+        // listed twenty, so the verify agent was told to reject a chat or a
+        // wire that this same workflow had just been told to write.
+        '(dots to hyphens); type is one of ' + ALL_TYPES.join(', ') + ';',
+        'skin is a skin that is legal for that type; the data',
+        'object uses the exact key names the contract lists for that type;',
+        'every id referenced (boardId, sectionId, channelId, categoryId and so',
+        'on) actually exists; inline markup tags are balanced; there is no',
+        'http:// or https:// anywhere in the file; the JSON parses.',
+        '',
+        'If anything is wrong, FIX IT IN PLACE in that same file. Do not',
+        'create any other file. Then report.',
+        '',
+        NO_EXPLORE,
+      ].join('\n')
+
+      const opts = { schema: { ok: 'boolean', problems: 'string[]' } }
+      if (share) opts.maxTokens = Math.floor(share / 2)
+
+      const verdict = await agent(prompt, opts)
+      site.checked = true
+      site.ok = verdict ? !!verdict.ok : false
+      site.problems = (verdict && verdict.problems) || []
+      created.push(site)
+      return site
+    }
+  )
+
+  await phase('Check')
+
+  // ---- report --------------------------------------------------------------
+  const rows = created.slice().sort(function (x, y) { return x.index - y.index })
+
+  log('')
+  log('Created ' + rows.length + ' site(s):')
+  log('  DOMAIN                          TYPE     STATUS   PATH')
+  rows.forEach(function (s) {
+    const dom = (s.domain + '                                ').slice(0, 30)
+    const typ = (s.type + '        ').slice(0, 8)
+    let status
+    if (!s.checked) status = 'unchkd '
+    else if (s.ok) status = 'ok     '
+    else status = 'fixed  '
+    log('  ' + dom + '  ' + typ + ' ' + status + '  ' + s.path)
+    if (s.problems && s.problems.length) {
+      s.problems.forEach(function (p) { log('      - ' + p) })
+    }
+  })
+
+  if (skipped.length) {
+    log('')
+    log('Skipped ' + skipped.length + ' site(s):')
+    skipped.forEach(function (s) {
+      log('  ' + s.slug + ' (' + s.type + ') - ' + s.reason)
+    })
+  }
+
+  log('')
+  log('Next steps (this workflow does not and cannot run them - it has no')
+  log('shell of its own, so it never touches git):')
+  log('  python3 ' + ROOT + '/tools/build.py      # regenerate registry.json,')
+  log('                                           # search.json, standalone HTML')
+  log('  python3 ' + ROOT + '/tools/validate.py   # offline + contract checks')
+  log('  bash ' + ROOT + '/tools/publish.sh       # commit and push')
+
+  const note = rows.length
+    ? 'Authored ' + rows.length + ' site(s)' +
+      (skipped.length ? ', skipped ' + skipped.length + ' for budget' : '') +
+      '. Run tools/build.py then tools/publish.sh.'
+    : 'No sites were created' +
+      (skipped.length ? ' (all skipped for budget).' : '.')
+
+  return { created: rows, skipped: skipped, note: note }
+}

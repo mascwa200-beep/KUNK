@@ -1,0 +1,456 @@
+{
+  "schema": 1,
+  "domain": "ashkettle-wx.net",
+  "title": "Kestrel Road Weather Station - Ashkettle",
+  "type": "page",
+  "era": "2001",
+  "skin": "geocities",
+  "description": "Len Mabry's home weather station on Kestrel Road in Ashkettle: daily readings, monthly tables, a dead webcam and a guestbook, last updated 17 April 2011.",
+  "tags": ["ashkettle", "weather", "archive"],
+  "links": [
+    "boards.gridfall.net",
+    "stargazers.verity.net",
+    "tnorris.verity.net",
+    "kestrel-journal.net",
+    "sdrlisteners.org",
+    "verityledger.com",
+    "wiki.gridfall.net",
+    "webring.gridfall.net"
+  ],
+  "data": {
+    "navLabel": "STATION PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "marquee",
+            "text": "*** KESTREL ROAD WEATHER STATION, ASHKETTLE *** ELEVATION 1,042 FT *** READINGS AT 7 AM AND 7 PM EVERY DAY SINCE APRIL 1999 *** THE CAM IS STILL DOWN ***"
+          },
+          {
+            "kind": "image",
+            "seed": "kr1-banner-screen",
+            "imgKind": "banner",
+            "caption": "Kestrel Road Station. The shelter, the garage, and the pin oak I keep threatening to take down."
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "KESTREL ROAD WEATHER STATION"
+          },
+          {
+            "kind": "text",
+            "body": "This is a [b]private[/b] weather station at my house on Kestrel Road, 1.1 miles north of Route 62, Ashkettle. Nobody pays for it and nobody checks it but me.\n\nI taught earth science at Ashkettle-Halsey for thirty one years and retired in 1998, and the following spring I put a proper shelter in the side yard because I had spent three decades telling teenagers to write down what they observed and had never once done it myself for more than a week.\n\nI read the max and min thermometers at [b]7:00 AM and 7:00 PM[/b] and I write them on a sheet on a clipboard in the back room. The electric station writes its own numbers every fifteen minutes and disagrees with me about two days in ten. Where they disagree, the clipboard is what goes in the monthly table, because the clipboard has a person attached to it.\n\nMy daughter Renee built this page in 2001 and fixes what I break. I type the numbers in myself.\n\n[b]I am not the county.[/b] I cannot tell you about the burn ban. Four or five people a year sign the guestbook down there asking me about the burn ban. Call the clerk's office."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "CURRENT CONDITIONS"
+          },
+          {
+            "kind": "table",
+            "head": ["MEASUREMENT", "READING", "NOTE"],
+            "rows": [
+              ["Temperature", "41.2 F", "shelter, 4.9 ft above sod"],
+              ["Dew point", "38 F", "computed, not measured"],
+              ["Relative humidity", "88%", "sensor replaced 11/2008"],
+              ["Wind", "SSW 4 mph, gust 11", "anemometer is at 10 ft, NOT 33 ft"],
+              ["Barometer", "29.94 in, falling slowly", "corrected to sea level using 1,042 ft"],
+              ["Rain since midnight", "0.02 in", "measured in the 8 inch, bucket did not tip"],
+              ["Rain this month", "1.61 in", "through 7 AM"],
+              ["Rain this year", "8.44 in", "running about an inch ahead of normal"],
+              ["Snow on ground", "0 in", "last measurable snow 3/29, 1.5 in"],
+              ["Sky", "overcast, low over the ridge", "that one is me looking out the window"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]LAST UPDATED: Sunday, April 17, 2011, 6:45 AM.[/b]\n\nIf the numbers above have not moved, the numbers above have not moved. The logger talks to the back room computer through a serial cable that runs under the window sash, and when the sash gets shut on it the page stops and I do not always notice for a week.\n\nThe numbers are still on the clipboard either way. The clipboard has never once needed a cable."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE CAM"
+          },
+          {
+            "kind": "image",
+            "seed": "kr1-cam-north-lenscap",
+            "imgKind": "photo",
+            "caption": "CAM VIEW, LOOKING NORTH: pasture, the two pin oaks, the quarry ridge behind. Refreshes every ten minutes."
+          },
+          {
+            "kind": "text",
+            "body": "[b]THE CAM IS DOWN.[/b] It has been down for a while.\n\nThe first one was a QuickCam I bought used in 1999 for eleven dollars, which was about right, and it quit in October 2004. The second one was a Logitech, thirty eight dollars new, and it quit in July 2009 with no warning and no explanation and no interest on my part in a third one.\n\nWhat is above is the last frame it ever sent, [b]7/14/2009 at 4:10 PM[/b], which is a photograph of the inside of the lens cap. I know what it is. I have left it up because I think it is funny and because the alternative is editing the HTML and the last person who could do that lives in another state now."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "WHAT IS NEW ON THIS PAGE"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "04/17/2011 -- March summary is posted, six weeks late. I had a rough winter. So did the furnace.",
+              "01/02/2010 -- 2009 annual totals on the records page. Wettest year here since I started keeping it.",
+              "07/16/2009 -- Second cam has quit. I am not buying a third one.",
+              "02/03/2008 -- The counter below went up by eleven thousand in four days and I do not know why.",
+              "11/30/2006 -- The Blue Kestrel closed Saturday. I ate breakfast at that counter for thirty two years, in two buildings. Marion's site is still up and it says it better than I would, see LINKS.",
+              "03/08/2005 -- Added the 1999-2004 monthly means. Ben Tosches came out and showed me why my tables were crooked. He is nineteen and he did not make me feel stupid about it.",
+              "10/11/2004 -- Cam quit. Working on it.",
+              "06/16/2003 -- Back on line. We were out five days. The logger battery lasted thirty one hours and then it did not. Hand readings for the gap are in the June table.",
+              "08/04/2002 -- Moved the rain gauge four feet east, out from under the drip line of the garage roof. Everything before this date reads a little low in a north wind and I have marked the affected months.",
+              "05/20/2001 -- Page created. Renee did all of it. I made the coffee."
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 214899
+          },
+          {
+            "kind": "text",
+            "body": "You are visitor number above, which is not true and has not been true for years. Somebody on the boards told me most of that is robots going through the county's pages one after another all night. I have left it. I like the big number.\n\n[i]Write to me at the house: Box 114, Ashkettle. I do not check the email more than once a fortnight and Renee has given up telling me to.[/i]"
+          },
+          {
+            "kind": "buttons",
+            "label": "Buttons. Some of these go somewhere. Two of them have not gone anywhere since about 2006 and they are still here, because taking one down means opening the HTML.",
+            "items": [
+              { "label": "The Gridfall Webring", "seed": "btn-ring-gridfall", "domain": "webring.gridfall.net" },
+              { "label": "The Gridfall Boards", "seed": "btn-boards", "domain": "boards.gridfall.net" },
+              { "label": "V.C.A.A. Stargazers", "seed": "btn-vcaa", "domain": "stargazers.verity.net" },
+              { "label": "Blue Kestrel Journal", "seed": "btn-kestrel-journal", "domain": "kestrel-journal.net" },
+              { "label": "T. Norris, Surveyor", "seed": "btn-tnorris", "domain": "tnorris.verity.net" },
+              { "label": "SDR Listeners", "seed": "btn-sdrl", "domain": "sdrlisteners.org" },
+              { "label": "Best viewed at 800x600", "seed": "btn-800x600" },
+              { "label": "Netscape Now!", "seed": "btn-netscape" },
+              { "label": "NO FRAMES ON THIS SITE", "seed": "btn-noframes" },
+              { "label": "Y2K READY", "seed": "btn-y2k" },
+              { "label": "COOPERATIVE OBSERVER", "seed": "btn-coop-observer" },
+              { "label": "Anemometer at 10 ft, sorry", "seed": "btn-10ft" }
+            ]
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "W. Jaris",
+                "time": "03/29/2004",
+                "body": "Len -- Dale wants to know if you will send the cloud cover notes for the observing log the way you did last winter. He will not email you because he does not check the email, so I am writing it here, where he will also not see it. The club is at [url=synth://stargazers.verity.net/]stargazers.verity.net[/url]. Good page. Your dewpoints are better than the airport's."
+              },
+              {
+                "author": "Sandy Voit",
+                "time": "05/06/2004",
+                "body": "Is this the county? We have brush stacked up on Kestrel Road and the recording at the office says call back Monday. If it is going to rain Saturday we will just wait for the rain."
+              },
+              {
+                "author": "W. Pennock",
+                "time": "07/22/2004",
+                "body": "Used your June 03 rain column to settle something at work. 1.14 in on the 9th, 0.00 on the 10th, 0.00 on the 11th, 0.00 on the 12th. Thank you for keeping the sheet and for dating the gauge move in 2002 instead of quietly fixing the old numbers. Your anemometer is at 10 ft and you say so on the page. Nobody else in this county says so."
+              },
+              {
+                "author": "kfennimore",
+                "time": "03/12/2019",
+                "body": "Mr. Mabry -- this is Karen at the Marchfield library. The last update on this page is 4/17/2011.\n\nI am scanning Ledger microfilm and your monthly summary ran on the first Wednesday from November 1999 through August 2010, so the library has those. The daily sheets are only here, and the June 2003 page is the only continuous local record of that week I have found anywhere, including at the paper.\n\nIf you or anyone in the family reads this: we would take copies, or scans, or the notebooks themselves, and the library will pay the postage. There is no hurry and no obligation.\n\nI hope you are alright."
+              }
+            ]
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Webring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: V.C.A.A. Stargazers", "domain": "stargazers.verity.net" },
+              { "label": "Next: The Blue Kestrel Journal", "domain": "kestrel-journal.net" },
+              { "label": "Random: The Gridfall Boards", "domain": "boards.gridfall.net" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "records",
+        "name": "Records & Monthly Data",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "RECORDS AND MONTHLY DATA"
+          },
+          {
+            "kind": "marquee",
+            "text": "THESE FIGURES ARE MINE AND THEY ARE ONLY AS GOOD AS I AM. IF YOU FIND AN ERROR WRITE TO BOX 114 ASHKETTLE AND I WILL PRINT THE CORRECTION HERE."
+          },
+          {
+            "kind": "text",
+            "body": "Period of record at this station is [b]April 1999 to present[/b] for temperature and precipitation, and March 1997 to present for the electric station, which I do not count because it sat in the garage window for two years before I built the shelter and a garage window is not a weather station.\n\nMonths affected by the 08/2002 rain gauge move are marked. Months with a hand-read gap are marked. I would rather the table looked worse and told the truth."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "MONTHLY MEANS AND EXTREMES, 2010"
+          },
+          {
+            "kind": "table",
+            "head": ["MONTH", "MEAN HIGH", "MEAN LOW", "HIGHEST", "LOWEST", "PRECIP", "SNOW"],
+            "rows": [
+              ["January", "28.4", "11.2", "47 (1/21)", "-9 (1/30)", "1.88", "14.5"],
+              ["February", "31.0", "13.8", "52 (2/26)", "-4 (2/09)", "1.42", "11.0"],
+              ["March", "44.6", "26.1", "71 (3/31)", "12 (3/03)", "2.60", "3.5"],
+              ["April", "57.9", "35.4", "81 (4/28)", "24 (4/06)", "3.11", "T"],
+              ["May", "69.2", "46.8", "88 (5/24)", "32 (5/02)", "4.06", "0"],
+              ["June", "78.1", "56.0", "93 (6/22)", "44 (6/01)", "3.72", "0"],
+              ["July", "82.6", "61.3", "96 (7/17)", "52 (7/06)", "3.40", "0"],
+              ["August", "80.1", "59.4", "94 (8/11)", "48 (8/29)", "2.91", "0"],
+              ["September", "71.4", "49.7", "90 (9/02)", "33 (9/30)", "2.18", "0"],
+              ["October", "59.0", "38.2", "79 (10/09)", "25 (10/27)", "2.44", "T"],
+              ["November", "45.3", "29.6", "66 (11/04)", "16 (11/26)", "2.77", "2.0"],
+              ["December", "32.1", "16.4", "54 (12/01)", "-2 (12/14)", "1.95", "9.5"],
+              ["YEAR 2010", "56.7", "37.0", "96 (7/17)", "-9 (1/30)", "32.44", "40.5"]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Two notes on 2010. The 30th of January is the coldest morning I have recorded here and I nearly missed it, because I slept in and read the minimum at 8:10 instead of 7:00. I have marked the sheet. The reading stands, the time does not.\n\nAnd the Ledger stopped running the monthly summary after August. Nobody told me. I found out from the mail carrier, who reads it, and who asked me why I had quit. I had not quit. The paper is at [url=synth://verityledger.com/]verityledger.com[/url] and has been very good to me for eleven years and I am not going to say anything else about it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ALL TIME RECORDS AT THIS STATION, 1999-2011"
+          },
+          {
+            "kind": "table",
+            "head": ["RECORD", "VALUE", "DATE", "NOTE"],
+            "rows": [
+              ["Highest temperature", "101 F", "07/18/2006", "The porch thermometer said 106. The porch thermometer is on the porch."],
+              ["Lowest temperature", "-21 F", "01/16/2005", "Clear, calm, snow on the ground. Every one of those three matters."],
+              ["Greatest 24 hr rain", "3.64 in", "07/09/2004", "Gauge overflowed the inner tube twice. Measured in three pours."],
+              ["Wettest month", "8.80 in", "June 2008", "Culvert at the Kestrel Road crossing backed up for the first time since I have lived here."],
+              ["Driest month", "0.31 in", "September 2005", "31 days with no measurable rain, 8/19 to 9/18."],
+              ["Lowest barometer", "29.09 in", "02/05/2008", "Corrected. Uncorrected it read 28.02 and I have had that argument."],
+              ["Highest gust", "58 mph", "04/11/2003", "At 10 ft. At 33 ft it would have been higher and I do not know by how much."],
+              ["Deepest snow on ground", "22 in", "02/14/2007", "Measured on the board in three places and averaged, which is the right way and is not what anybody does."],
+              ["Longest stretch below 0 F", "38 hours", "01/15-01/17/2005", "Continuous, electric station."],
+              ["Latest spring freeze", "28 F", "05/21/2002", "Took the tomatoes. Took everybody's tomatoes."],
+              ["Longest gap in the record", "5 days", "06/11-06/16/2003", "Power out countywide. Hand readings only. See below."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "JUNE 2003, DAILY, THE 7TH THROUGH THE 16TH"
+          },
+          {
+            "kind": "text",
+            "body": "I am printing this week out day by day because I have been asked about it more than anything else on this page, by more people, for more years.\n\nThe electric station ran on its battery from 5:11 AM on the 11th until about noon on the 12th, and after that everything in this table is the max and min thermometers in the shelter, read by hand at 7 and 7 with a flashlight I had to go and buy batteries for in Marchfield."
+          },
+          {
+            "kind": "table",
+            "head": ["DATE", "HIGH", "LOW", "PRECIP", "MAX GUST", "REMARKS"],
+            "rows": [
+              ["06/07/2003", "81", "58", "0.00", "SW 21", "Hazy in the afternoon. Nothing doing."],
+              ["06/08/2003", "84", "61", "0.34", "SW 27", "Thunder to the south 8:40 to 9:15 PM. Rain here light and brief."],
+              ["06/09/2003", "79", "59", "1.14", "NW 24", "Rain overnight into mid morning, then cleared. Good soaking rain."],
+              ["06/10/2003", "77", "52", "0.00", "N 14", "Clear all day. Cool for June. Dew heavy at 7 PM."],
+              ["06/11/2003", "83", "49", "0.00", "NE 8", "POWER OFF 5:11 AM. Clear and calm overnight. No thunder. Barograph flat at 30.11 from midnight to noon."],
+              ["06/12/2003", "86", "55", "0.00", "NE 12", "No power. Hand readings. Battery on the logger quit around noon."],
+              ["06/13/2003", "88", "58", "0.00", "E 15", "No power. Hot in the house. Read at 7 and 7."],
+              ["06/14/2003", "89", "62", "0.00", "SE 18", "No power. Renee brought ice up from Marchfield twice."],
+              ["06/15/2003", "91", "64", "0.02", "S 22", "Sprinkle about 4 PM, would not tip the bucket, measured 0.02 in the 8 inch."],
+              ["06/16/2003", "86", "63", "0.00", "S 20", "POWER BACK 2:40 PM. Logger on line and talking to the computer by 6 PM."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 3,
+            "text": "ABOUT THE ELEVENTH"
+          },
+          {
+            "kind": "text",
+            "body": "People started telling me it was lightning within about a week, and they have kept telling me ever since, and some of them have been annoyed with me about it.\n\nSo, plainly. [b]There was no thunderstorm here on the night of the 10th or the morning of the 11th of June 2003.[/b] The sky was clear. The wind was calm to northeast at three. The barograph is a flat line from midnight until the power went and it is a flat line on the drum after that, because the drum is wound by a spring and does not care about the grid. Precipitation on the 10th, the 11th and the 12th was 0.00, 0.00 and 0.00. The last thunder I logged before the fire was [b]the evening of the 8th[/b], to the south, and it did not rain here worth measuring.\n\nAshkettle is not Gridfall. It is seventeen miles and a ridge between us and I am not going to tell you what the sky was doing over Depot Road, because I was not there and I did not have an instrument there.\n\nWhat I can tell you is what my instruments said at my house, and they said clear and calm. The state commission put out two pages in November and said what it said. I have read it twice. It does not mention weather, which is the loudest thing in it.\n\nI am not the power company and I am not a lineman and I have no opinion about transformers. I am a retired schoolteacher with a thermometer and a clipboard and the clipboard is the whole of my contribution.\n\nThere is a sober write up of the fire at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url], and a great deal of argument about it at [url=synth://boards.gridfall.net/]boards.gridfall.net[/url], where I read and do not post."
+          },
+          {
+            "kind": "image",
+            "seed": "kr1-june2003-sheet",
+            "imgKind": "photo",
+            "caption": "The June 2003 sheet off the clipboard, scanned in 2005 on a borrowed scanner. The pencil on the 11th through the 14th is mine, in the dark, and you can tell."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 18402
+          }
+        ]
+      },
+      {
+        "id": "station",
+        "name": "The Station",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "THE STATION AND WHAT IS WRONG WITH IT"
+          },
+          {
+            "kind": "text",
+            "body": "Every hobby weather page I have ever seen lists the equipment and none of them list the problems, so this page does both and the problems are further down."
+          },
+          {
+            "kind": "table",
+            "head": ["INSTRUMENT", "WHAT IT IS", "INSTALLED", "NOTE"],
+            "rows": [
+              ["Console and sensors", "Davis Weather Monitor II", "03/1997", "Bought with the last of a retirement gift certificate. Thirteen years, no failure but the humidity sensor."],
+              ["Logger and software", "WeatherLink 4.0, serial", "03/1997", "Cable under the window sash. See the front page for how that goes."],
+              ["Anemometer", "Cup set, garage peak", "03/1997", "10 ft above ground, not 33 ft. Everything I publish for wind is low and I will not pretend otherwise."],
+              ["Thermometer shelter", "Cotton region shelter, built to plan", "04/1999", "White, louvered, door faces north. Repainted 2004 and 2009."],
+              ["Max/min thermometers", "Taylor, mercury, paired", "04/1999", "Read 7 AM and 7 PM. These are the record. Everything else is a convenience."],
+              ["Rain gauge", "8 inch standard, manual", "04/1999", "Moved four feet east on 08/04/2002, off the garage drip line."],
+              ["Tipping bucket", "Davis, on the shelter post", "03/1997", "Reads about 4 percent low above half an inch an hour. Known, uncorrected, noted."],
+              ["Barometer", "Aneroid, plus a drum barograph", "04/1999", "Barograph was my father in law's. Spring wound. Does not need the grid."],
+              ["Snow board", "2 by 2 plywood, painted white", "11/1999", "Replaced about every third winter. The dog is a factor."],
+              ["Camera", "QuickCam, then a Logitech", "1999, 2005", "Both dead. See the front page."],
+              ["Computer", "Packard Bell, Windows 98 SE", "1998", "Back room. Runs all night. The fan is loud and my wife has views about it."]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "SITING PROBLEMS, HONESTLY"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "The garage is 22 feet west of the shelter. Late afternoon in July, the shelter is in its shadow for about forty minutes, and the maximum is taken before that, so I think it is fine. I am not certain it is fine.",
+              "The driveway is gravel and it is 31 feet south. Gravel is better than asphalt and worse than sod.",
+              "The anemometer is at 10 ft on a roof peak with a pin oak 60 ft northeast. North and northeast winds here read low. If you are comparing my wind to anybody's wind, do not.",
+              "The pasture north of the shelter is mowed twice a summer and grown over the rest of it, so my sod is not a standard sod, it is a hayfield having an opinion.",
+              "A proper station would not be at this house. This is where I live, and a record kept in the wrong place for twelve years is worth more than a perfect record nobody kept."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "THE ELEVATION"
+          },
+          {
+            "kind": "text",
+            "body": "The 1,042 feet on this page is not off a map. Tom Norris brought a level out here on a Saturday in 1999, shot it off the survey pin at the east corner of the garage slab, wrote the figure on the back of a feed store receipt, and would not take a dollar for it.\n\nFor two years before that I was publishing 1,080 feet off a topographic map, which made every sea level pressure I reported wrong by about four hundredths, consistently, in the same direction. If you pulled numbers off this page before June 1999, that is the correction.\n\nHis pages are at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url] and his account of the 1994 flood is worth an hour of anybody's time."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "ABOUT THE RADIO, SINCE EVERYBODY ASKS"
+          },
+          {
+            "kind": "text",
+            "body": "I get two or three letters a year asking whether my instruments pick up the thing people drive out Route 62 to listen to.\n\nThey do not. An anemometer is three cups on a stick. A thermometer is a column of mercury. Neither one has ever heard anything in its life.\n\nWhat I do get asked, and can answer, is the weather part. People want to know if it comes in better when it is cold, or clear, or after a front. I have sent my daily sheets to two different fellows who were trying to line that up against their logs, in 2004 and again in 2008, and I never heard back from either one about whether it worked. I assume it did not, because people write when it works.\n\nThey write the frequency 4.219 and they write it 4.2190 and as far as I can make out they are arguing about a zero.\n\nThe ones who keep proper logs are at [url=synth://sdrlisteners.org/]sdrlisteners.org[/url]. I can tell they are serious because they write down the nights with nothing on them. That is the whole test, in any field. Anybody will record the interesting night."
+          },
+          {
+            "kind": "image",
+            "seed": "kr1-shelter-winter",
+            "imgKind": "photo",
+            "caption": "The shelter, February 2007, the morning after the 22 inches. Renee took this from the kitchen door because I could not get out of it."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 9613
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "LINKS"
+          },
+          {
+            "kind": "marquee",
+            "text": "IF A LINK IS BROKEN IT IS PROBABLY STAYING BROKEN. BOX 114, ASHKETTLE."
+          },
+          {
+            "kind": "text",
+            "body": "Places in this county worth your time. Some of these have nothing to do with the weather."
+          },
+          {
+            "kind": "table",
+            "head": ["SITE", "WHAT IT IS"],
+            "rows": [
+              [
+                "[url=synth://stargazers.verity.net/]V.C.A.A. Stargazers[/url]",
+                "The astronomy club. They observe from Perrin Hill and I send them cloud notes in the winter. Dale does not check his email and everyone has made their peace with it."
+              ],
+              [
+                "[url=synth://tnorris.verity.net/]Tom Norris[/url]",
+                "Retired county surveyor. He gave me my elevation for nothing. The 1994 flood account is the best writing about this county by anybody."
+              ],
+              [
+                "[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]",
+                "The county message board. Someone posts my snow total every storm without asking and gets it wrong about a third of the time. I read it and I do not post."
+              ],
+              [
+                "[url=synth://wiki.gridfall.net/]The Gridfall Wiki[/url]",
+                "Encyclopedia of the county, written by about nine people. Their June 2003 article has the year right, which is not nothing."
+              ],
+              [
+                "[url=synth://verityledger.com/]The Verity Ledger[/url]",
+                "The paper. Ran my monthly summary on the first Wednesday from 1999 to 2010."
+              ],
+              [
+                "[url=synth://kestrel-journal.net/]The Blue Kestrel Journal[/url]",
+                "Marion Teale's memory site for the diner out on 62. I had breakfast in that building for thirty two years and the pie was never as good as people say it was, and I would still like one."
+              ],
+              [
+                "[url=synth://sdrlisteners.org/]SDR Listeners[/url]",
+                "Shortwave people. Careful, patient, and they publish the empty nights. See the station page."
+              ],
+              [
+                "[url=synth://webring.gridfall.net/]The Gridfall Webring[/url]",
+                "The ring. Full member list is there. About a third of it does not resolve any more."
+              ],
+              [
+                "[url=synth://midstate-obs.synth/]Mid-State Observers Network[/url]",
+                "Regional co-op observers, eleven counties. They mail a mimeographed sheet twice a year. Their page has not loaded for me since roughly 2007 and I have left the link because it is how I would find them again."
+              ],
+              [
+                "[url=synth://ashkettle-hardware.synth/]Ashkettle Hardware[/url]",
+                "Where the plywood for the snow board came from, and the paint, and the flashlight batteries in June 2003. They have a page now. It is one picture of the front of the store."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "IF YOU WANT TO START ONE"
+          },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Buy a shelter or build one to the plan. Do not put a thermometer on the north wall of the house and call it a station. I did that for two years and threw the numbers out.",
+              "Read at the same two times every day. The same two. Not roughly.",
+              "Write it on paper first. Paper has survived two computers, one lightning surge on the phone line, and a five day outage in this house.",
+              "Publish what is wrong with your site. Nobody does this and it makes every hobby record on the internet worth less than it should be.",
+              "Keep going after it gets boring. It gets boring in about the fourth month. That is the entire skill."
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 7724
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Webring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: V.C.A.A. Stargazers", "domain": "stargazers.verity.net" },
+              { "label": "Next: The Blue Kestrel Journal", "domain": "kestrel-journal.net" },
+              { "label": "Random: Tom Norris", "domain": "tnorris.verity.net" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

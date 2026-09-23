@@ -1,0 +1,565 @@
+/* newsletter :: .skin-inbox-letter
+ *
+ * An email, read on the web. So: a grey inbox background with one white sheet
+ * centred on it, a serif body, and a column that stops long before the window
+ * does. A newsletter that runs the full width of a desktop monitor is the one
+ * thing they never do, so the measure is pinned at roughly 62 characters and
+ * the sheet is sized around it rather than the other way round.
+ *
+ * Every rule scoped under .skin-inbox-letter. Readable at 360px, AA contrast,
+ * with the measured ratio noted wherever a grey is picked.
+ */
+
+.skin-inbox-letter {
+  /* Sheet white, inbox grey behind it. */
+  --nl-paper: #eceae5;
+  --nl-sheet: #ffffff;
+
+  /* Body ink: 16.26:1 on the sheet. */
+  --nl-ink: #22201c;
+
+  /* Meta, datelines, the small print: 7.49:1 on #ffffff, 7.06:1 on the card
+     tint below. Comfortably past 4.5 even at 13px. */
+  --nl-muted: #5a544b;
+
+  /* Links: 7.61:1 on the sheet, 7.18:1 on the card tint. */
+  --nl-link: #0b5a7a;
+
+  /* Section names and arrows: 6.84:1 on the sheet, 6.45:1 on the card tint. */
+  --nl-accent: #8a4a12;
+
+  --nl-rule: #ddd8cf;
+  --nl-hair: #e8e3da;
+  --nl-card: #faf8f4;
+
+  /* Sponsor block: cream, with #4a3f27 ink at 9.44:1 and #5a544b at 6.84:1. */
+  --nl-ad-bg: #fbf4e6;
+  --nl-ad-edge: #e3d3ad;
+  --nl-ad-ink: #4a3f27;
+
+  /* Measure: ~62 characters. Georgia averages about 0.5em per character in
+     English prose, so 31em of text is roughly 62 of them. The sheet is that
+     plus its own padding. */
+  --nl-measure: 31em;
+
+  background: var(--nl-paper);
+  color: var(--nl-ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+
+.skin-inbox-letter * { box-sizing: border-box; }
+
+.skin-inbox-letter a {
+  color: var(--nl-link);
+  text-decoration: underline;
+}
+
+.skin-inbox-letter a:hover,
+.skin-inbox-letter a:focus { color: #07374b; }
+
+.skin-inbox-letter a:focus-visible {
+  outline: 2px solid var(--nl-link);
+  outline-offset: 2px;
+}
+
+.skin-inbox-letter img,
+.skin-inbox-letter svg { max-width: 100%; height: auto; }
+
+/* ---- the sheet ---- */
+
+.skin-inbox-letter .nl-page {
+  background: var(--nl-paper);
+  padding: 18px 12px 40px;
+}
+
+.skin-inbox-letter .nl-sheet {
+  /* 31em of text plus 22px of padding on each side. */
+  max-width: calc(var(--nl-measure) + 44px);
+  margin: 0 auto;
+  background: var(--nl-sheet);
+  border: 1px solid var(--nl-rule);
+  padding: 20px 22px 26px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-inbox-letter .nl-sheet p { margin: 0 0 0.85em; }
+.skin-inbox-letter .nl-sheet p:last-child { margin-bottom: 0; }
+
+/* ---- view in browser ---- */
+
+.skin-inbox-letter .nl-vib {
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--nl-hair);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  text-align: center;
+}
+
+/* Inert by design: nothing on this page sends or fetches anything. Dotted
+   rather than solid so it reads as "was a link once" instead of "is broken". */
+.skin-inbox-letter .nl-inert {
+  color: var(--nl-muted);
+  border-bottom: 1px dotted var(--nl-muted);
+  cursor: default;
+}
+
+/* ---- letterhead ---- */
+
+.skin-inbox-letter .nl-mast {
+  text-align: center;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--nl-ink);
+  margin-bottom: 14px;
+}
+
+.skin-inbox-letter .nl-wordmark {
+  display: inline-block;
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--nl-ink);
+  text-decoration: none;
+}
+
+.skin-inbox-letter .nl-wordmark:hover,
+.skin-inbox-letter .nl-wordmark:focus {
+  color: var(--nl-accent);
+  text-decoration: underline;
+}
+
+.skin-inbox-letter .nl-mast-by,
+.skin-inbox-letter .nl-subs {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin-top: 5px;
+}
+
+.skin-inbox-letter .nl-subs-n {
+  font-weight: 700;
+  color: var(--nl-ink);
+}
+
+.skin-inbox-letter .nl-sep { color: var(--nl-muted); }
+
+.skin-inbox-letter .nl-issue-line {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skin-inbox-letter .nl-issue-no { font-weight: 700; color: var(--nl-ink); }
+
+.skin-inbox-letter .nl-sent { white-space: nowrap; }
+
+.skin-inbox-letter .nl-sponsor-teaser {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--nl-ad-ink);          /* 9.44:1 on the cream below */
+  background: var(--nl-ad-bg);
+  border: 1px solid var(--nl-ad-edge);
+  padding: 5px 8px;
+  margin-bottom: 18px;
+}
+
+/* ---- the letter body ---- */
+
+.skin-inbox-letter .nl-subject {
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--nl-ink);
+}
+
+.skin-inbox-letter .nl-intro p { margin: 0 0 0.9em; }
+.skin-inbox-letter .nl-intro p:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-intro blockquote {
+  margin: 0 0 0.9em;
+  padding: 2px 0 2px 14px;
+  border-left: 3px solid var(--nl-rule);
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+}
+
+.skin-inbox-letter .nl-intro code,
+.skin-inbox-letter .nl-card-b code {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 14px;
+  background: var(--nl-card);
+  border: 1px solid var(--nl-hair);
+  padding: 0 3px;
+}
+
+/* ---- sections: playful names, separated by a rule ---- */
+
+.skin-inbox-letter .nl-section {
+  border-top: 1px solid var(--nl-rule);
+  padding-top: 18px;
+  margin-top: 22px;
+}
+
+.skin-inbox-letter .nl-section-h {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--nl-accent);          /* 6.84:1 on the sheet */
+  margin: 0 0 14px;
+}
+
+.skin-inbox-letter .nl-arc-head {
+  border-top: 1px solid var(--nl-rule);
+  padding-top: 18px;
+  margin-top: 22px;
+}
+
+/* ---- cards ---- */
+
+.skin-inbox-letter .nl-card {
+  background: var(--nl-card);
+  border: 1px solid var(--nl-hair);
+  padding: 13px 15px;
+  margin: 0 0 12px;
+}
+
+.skin-inbox-letter .nl-card:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-card-h {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0 0 7px;
+  color: var(--nl-ink);             /* 15.33:1 on the card tint */
+}
+
+.skin-inbox-letter .nl-card-b p { margin: 0 0 0.6em; }
+.skin-inbox-letter .nl-card-b p:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-card-go {
+  margin: 9px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.skin-inbox-letter .nl-arrow {
+  color: var(--nl-accent);          /* 6.45:1 on the card tint */
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--nl-accent);
+}
+
+.skin-inbox-letter .nl-arrow:hover,
+.skin-inbox-letter .nl-arrow:focus {
+  color: #5f3009;
+  border-bottom-color: #5f3009;
+}
+
+/* ---- the ad, which is clearly an ad ---- */
+
+.skin-inbox-letter .nl-sponsor {
+  background: var(--nl-ad-bg);
+  border: 2px solid var(--nl-ad-edge);
+  padding: 15px 16px;
+  margin: 24px 0;
+  color: var(--nl-ad-ink);          /* 9.44:1 on the cream */
+}
+
+.skin-inbox-letter .nl-sponsor-tag {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--nl-ad-edge);
+}
+
+.skin-inbox-letter .nl-sponsor-name {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+/* liveui draws the badge with no margin of its own, so without this it sits
+   flush against the last letter of the advertiser's name. */
+.skin-inbox-letter .nl-sponsor-tag .lv-badge { margin-left: 7px; }
+
+.skin-inbox-letter .nl-sponsor-copy p { margin: 0 0 0.7em; }
+.skin-inbox-letter .nl-sponsor-copy p:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-sponsor-copy a { color: #07374b; }
+
+.skin-inbox-letter .nl-sponsor-foot {
+  margin: 10px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #5a544b;                   /* 6.84:1 on the cream */
+}
+
+/* ---- signoff, forward, unsubscribe ---- */
+
+.skin-inbox-letter .nl-signoff {
+  border-top: 1px solid var(--nl-rule);
+  padding-top: 18px;
+  margin-top: 24px;
+}
+
+.skin-inbox-letter .nl-forward {
+  font-style: italic;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+}
+
+.skin-inbox-letter .nl-unsub {
+  margin-top: 26px;
+  padding: 14px 14px 12px;
+  background: var(--nl-card);
+  border-top: 1px solid var(--nl-rule);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #585048;                   /* 7.45:1 on the card tint */
+  text-align: center;
+}
+
+.skin-inbox-letter .nl-unsub p { margin: 0 0 8px; }
+.skin-inbox-letter .nl-unsub p:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-unsub-row .nl-inert { color: #585048; border-bottom-color: #585048; }
+
+.skin-inbox-letter .nl-unsub-addr { font-size: 11px; }
+
+/* ---- the archive front page ---- */
+
+.skin-inbox-letter .nl-sub {
+  background: var(--nl-card);
+  border: 1px solid var(--nl-hair);
+  padding: 14px 15px;
+  margin: 18px 0 4px;
+}
+
+.skin-inbox-letter .nl-sub-label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #585048;                   /* 7.45:1 on the card tint */
+  margin: 0 0 10px;
+}
+
+.skin-inbox-letter .nl-sub-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skin-inbox-letter .nl-sub-in {
+  flex: 1 1 150px;
+  min-width: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 8px 9px;
+  border: 1px solid #a49c90;
+  background: #ffffff;
+  color: var(--nl-ink);
+}
+
+.skin-inbox-letter .nl-sub-in:focus-visible {
+  outline: 2px solid var(--nl-link);
+  outline-offset: 1px;
+}
+
+.skin-inbox-letter .nl-sub-go {
+  flex: 0 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border: 1px solid #1a1814;
+  background: var(--nl-ink);
+  color: #ffffff;                   /* 16.26:1 on the button */
+  cursor: pointer;
+}
+
+.skin-inbox-letter .nl-sub-go:hover,
+.skin-inbox-letter .nl-sub-go:focus { background: #3b372f; }
+
+.skin-inbox-letter .nl-sub-note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #6b3208;                   /* 9.5:1 on the card tint */
+  margin: 10px 0 0;
+}
+
+.skin-inbox-letter .nl-sub-note:empty { display: none; }
+
+.skin-inbox-letter .nl-arc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skin-inbox-letter .nl-arc-row {
+  border-bottom: 1px solid var(--nl-hair);
+  padding: 0 0 15px;
+  margin-bottom: 15px;
+}
+
+.skin-inbox-letter .nl-arc-row:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.skin-inbox-letter .nl-arc-row.is-newest {
+  border-left: 3px solid var(--nl-accent);
+  padding-left: 12px;
+}
+
+.skin-inbox-letter .nl-arc-meta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin-bottom: 4px;
+}
+
+.skin-inbox-letter .nl-arc-no { font-weight: 700; color: var(--nl-ink); }
+
+.skin-inbox-letter .nl-arc-h {
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.skin-inbox-letter .nl-arc-link {
+  color: var(--nl-ink);
+  text-decoration: none;
+}
+
+.skin-inbox-letter .nl-arc-link:hover,
+.skin-inbox-letter .nl-arc-link:focus {
+  color: var(--nl-link);
+  text-decoration: underline;
+}
+
+.skin-inbox-letter .nl-arc-first {
+  margin: 0;
+  font-size: 15px;
+  color: #3f3a33;                   /* 11.26:1 on the sheet */
+}
+
+.skin-inbox-letter .nl-gap,
+.skin-inbox-letter .nl-empty {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin-top: 16px;
+}
+
+.skin-inbox-letter .nl-404 {
+  font-size: 16px;
+  color: #3f3a33;                   /* 11.26:1 on the sheet */
+}
+
+/* ---- issue nav ---- */
+
+.skin-inbox-letter .nl-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-top: 14px;
+  border-top: 1px solid var(--nl-rule);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.skin-inbox-letter .nl-nav-link { color: var(--nl-link); }
+
+/* ---- picked up elsewhere: archive chrome, not the letter ---- */
+
+.skin-inbox-letter .nl-echo {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 3px double var(--nl-rule);
+}
+
+.skin-inbox-letter .nl-echo-h {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin: 0 0 8px;
+}
+
+.skin-inbox-letter .nl-echo-note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin: 0 0 12px;
+}
+
+.skin-inbox-letter .nl-echo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skin-inbox-letter .nl-echo-row {
+  border-left: 3px solid var(--nl-hair);
+  padding: 0 0 0 11px;
+  margin-bottom: 12px;
+}
+
+.skin-inbox-letter .nl-echo-row:last-child { margin-bottom: 0; }
+
+.skin-inbox-letter .nl-echo-head {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #3f3a33;                   /* 11.26:1 on the sheet */
+}
+
+.skin-inbox-letter .nl-echo-meta {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: var(--nl-muted);           /* 7.49:1 on the sheet */
+  margin-top: 3px;
+}
+
+.skin-inbox-letter .nl-echo-src { font-weight: 700; }
+
+.skin-inbox-letter .nl-echo-meta .lv-badge { margin: 0 5px 0 6px; }
+
+/* ---- phone ---- */
+
+@media (max-width: 460px) {
+  .skin-inbox-letter { font-size: 16px; }
+
+  .skin-inbox-letter .nl-page { padding: 10px 8px 28px; }
+  .skin-inbox-letter .nl-sheet { padding: 16px 14px 20px; }
+
+  .skin-inbox-letter .nl-wordmark { font-size: 23px; }
+  .skin-inbox-letter .nl-subject { font-size: 21px; }
+  .skin-inbox-letter .nl-card-h { font-size: 17px; }
+  .skin-inbox-letter .nl-arc-h { font-size: 17px; }
+
+  .skin-inbox-letter .nl-sub-go { width: 100%; }
+  .skin-inbox-letter .nl-nav { justify-content: flex-start; }
+}

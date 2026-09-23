@@ -1,0 +1,753 @@
+{
+  "schema": 1,
+  "domain": "verityschools.org",
+  "title": "Verity County School District",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Six schools, 2,914 students and about 340 employees: closings and delays, the October lunch menu, fourteen bus runs going to a contractor in January, board minutes back to 2001 with a five-year hole in them, and a parent portal that is not the county's portal.",
+  "tags": [
+    "verity",
+    "county",
+    "schools",
+    "board",
+    "minutes",
+    "2026"
+  ],
+  "links": [
+    "verity.county.gov",
+    "verityclerk.gov",
+    "veritysheriff.gov",
+    "veritywire.press",
+    "verityledger.com",
+    "thequarry.news",
+    "brenners-notebook.email",
+    "countyalerts.live",
+    "ask.verity.ai",
+    "verityjobs.org",
+    "wiki.gridfall.net",
+    "verity.wiki",
+    "marchfieldlibrary.blog",
+    "codeandcoffee.blog"
+  ],
+  "data": {
+    "agency": "Verity County School District",
+    "motto": "Six schools, 2,914 students, 180 days. District office, 1400 Bellamy Street, Marchfield. 782-3100.",
+    "notices": [
+      "[b]No closings, delays or early dismissals are in effect.[/b] All seven buildings are on the normal schedule for Monday 21 September 2026. When there is a closing it goes on this page first and on the telephone message at 782-3100 within the same minute, because they are the same button. Every closing and delay since the 2016-17 year, with the reason and the time the decision was made, is at [url=/s/closing-log]Closing Log, 2016-17 to Date[/url].",
+      "[b]The parent portal is not the county's portal.[/b] ParentBridge, at [url=/s/portal]Parent Portal - Sign In[/url], is where attendance, grades and the emergency card are. [url=synth://verity.county.gov/]The county services portal[/url] is property tax, dog licences and burn permits. They are different organisations, different logins and different buildings, and the county cannot reset a password for this district. The meal account is a third site again; see [url=/s/meals]Meal Prices, Accounts and the Free and Reduced Application[/url].",
+      "[b]Quarry Road closes to through traffic on Monday 28 September for eleven days.[/b] The Gridfall east runs - routes 1, 3 and 13 - will take the Pell Road detour and will be about fifteen minutes later both ways. That is fifteen minutes at the stop, not fifteen minutes at school; the high school and middle school start times do not move. The county highway department's notice gives the reopening as 9 October and the county calendar gives it as 8 October. Plan for the 9th. The detour is described at [url=/s/buses]Bus Routes and Times, 2026-27[/url].",
+      "[b]Bus routes change on Monday 4 January 2027.[/b] The Board voted 4-3 on 16 September to contract the runs to an outside operator from the start of the second semester. Stops, times and route numbers will be reissued in December and your child's stop may move. Nothing changes before the winter recess. What is decided, what is not decided yet, and what the district will still be responsible for is set out at [url=/s/bus-contract]Transportation Contract - What Changes on 4 January[/url].",
+      "[b]The October lunch menu is posted.[/b] See [url=/s/menu]Lunch Menu - October 2026[/url]. The paper menu that went home in the first week of September has Thursday 17 and Friday 18 transposed; the web version was right. Monday 12 October is a staff development day and there is no lunch service. Prices did not change this year and are at [url=/s/meals]Meal Prices, Accounts and the Free and Reduced Application[/url].",
+      "[b]Text messages asking you to \"re-verify\" a parent portal account are not from this district.[/b] They point at a site on a [i].top[/i] address, [url=synth://verity-parentportal-verify.top/]verity-parentportal-verify.top[/url], which takes a username, a password and then a card number for a \"$1 verification hold\". Nine families have reported it since August and two entered a password. This district does not text links. It does not ask for a card number for anything except a meal account, and that is on the meal site, which you reach yourself. The sheriff's office keeps a running list at [url=synth://veritysheriff.gov/s/scams]Scams and Frauds[/url]. There is also a spirit-wear shop on a [i].shop[/i] address using the cardinal and the district's name, at [url=synth://verity-cardinals-spiritwear.shop/]verity-cardinals-spiritwear.shop[/url]; it is not licensed, nothing it sells reaches a team, and three parents have been waiting on hoodies since March.",
+      "[b]The staff directory is out of date and the district knows it.[/b] It was rebuilt in August 2024 and has been edited by hand since. Thirty-one of about 340 employees are not on it, four people on it have retired, and two extensions ring at a desk nobody sits at. It is at [url=/s/staff]Staff Directory[/url]. If you want a teacher, telephone the building office and not the district office; the numbers are at [url=/s/offices]Building Offices and Telephone Numbers[/url]. The building secretary will have the teacher's message in front of her before the district office has found the right extension.",
+      "Answers about this district written by [url=synth://ask.verity.ai/]VerityAssist[/url] are not written here, not reviewed here, and cannot be corrected from here. Three of them reach the office often enough to answer in public. [b]This district does not operate nine schools[/b]; it operates six schools and a district office, listed at [url=/s/buildings]Buildings, Attendance Areas and Enrollment[/url]. [b]Enrollment is not 6,200[/b]; the September count was 2,914 and it has fallen every year since 2015. And [b]the district was not \"closed for a week after the 2004 substation fire\"[/b]: the fire was on 11 June 2003, not 2004, and the district was closed on 11 June 2003 and open on the 12th, which was the last day of that school year. The account at [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url] has the year right.",
+      "[b]The next regular meeting of the Board of Education is Wednesday 21 October 2026 at 7:00 p.m.[/b] in the board room at the district office, 1400 Bellamy Street, Marchfield. The agenda goes up on Friday 16 October. Meetings are not streamed. An audio recording is posted the following day; the recording of the 16 September meeting is fourteen minutes short at the end because the recorder was running on its internal battery and the vote is not on it. The clerk's draft minutes are, and they are at [url=/s/min-0916]Draft Minutes - Wednesday 16 September 2026[/url]."
+    ],
+    "services": [
+      {
+        "id": "closings",
+        "name": "Closings, Delays and Early Dismissals",
+        "blurb": "How the decision gets made, when it gets made, where it appears first, and what a two-hour delay does to the bus stop and to breakfast.",
+        "status": "online",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "[b]Nothing is in effect today.[/b] This line is edited by hand. If it still says nothing at six in the morning and it is snowing, it means nothing has been decided yet, not that school is open. The decision is normally made by 5:30 a.m. and posted by 5:40 a.m.",
+          "[b]Who decides.[/b] The superintendent, after the transportation supervisor has driven Hollis Road, Pell Road as far as the second cattle guard, and the Bracken Lane hill. Those three are the test. They are driven between 3:45 and 5:15 a.m. in a pickup, not a bus. If those three are passable the buses run, and if they are not, they do not, and the rest of the county is usually the same by seven.",
+          "[b]Where it appears, in order.[/b] This page. The telephone message at 782-3100. The Rapid Notify call, text and email to every number on the emergency card. The two radio stations. That is the whole list, and it takes about four minutes end to end, of which the calls take three.",
+          "[b]This district does not have a social media account.[/b] It has not had one since 2019. Pages using the district's name and the cardinal on the social sites are not ours, and one of them has twice announced a closing that was not happening. [url=synth://countyalerts.live/]County Alerts[/url] is not this district either; it is a business in another state that reads feeds. It has been ahead of us by as much as fourteen minutes and it has been wrong twice, once about a closing and once, on 16 September, about a fire that was an alarm activation.",
+          "[b]A two-hour delay[/b] means every bus stop is two hours later than the time on your route sheet, not two hours later than the time your child usually walks out. Buildings open two hours late. There is no morning pre-kindergarten. Breakfast is served; it is served for twenty minutes instead of forty. Morning half-day programmes at the high school do not run.",
+          "[b]An early dismissal[/b] is decided by 10:30 a.m. where it can be, because the buses have to be in the yard, fuelled and out again, and because roughly 290 elementary children go to a place that is not their own house. If nobody is home, the child stays at school. That is the arrangement, it has never once been a problem, and the office would rather you told them in advance than guessed.",
+          "[b]If your child rides and you drive them anyway[/b], on a delay day, please do not park in the bus loop at the middle school on Ellery Street. The loop takes eleven buses in nine minutes. The street is a village street and the police have begun ticketing, which the district did not ask for and cannot stop.",
+          "[b]Halsey Primary and New Carrow Elementary can close on their own.[/b] They sit at the two ends of the district and the weather at one end is not the weather at the other. A single-building closing is announced the same way and says which building. Halsey Primary closed by itself on Wednesday 9 September this year for a boiler failure, not for weather.",
+          "[b]Make-up days.[/b] Five days are built into the calendar. Days six and beyond come off the spring recess, from the back end forward, and after that the year runs longer in June. Graduation does not move. See [url=/s/calendar]School Year Calendar, 2026-27[/url].",
+          "[b]What a closing costs.[/b] Eleven drivers, about 190 hourly staff, and a food service that has already ordered. The district is not weighing that against your child's safety and never has. It is put here because people ask, and because the honest answer is that the number is smaller than they think: about $9,400 a day in wages that are paid anyway under the contracts, and about $600 in food that keeps."
+        ],
+        "forms": [
+          {
+            "name": "Emergency Card (Form VCS-3)",
+            "note": "One page per child, returned in September, updated any time at the building office. This is the form the closing calls go to. If your telephone changed in March and the card did not, the call goes to the old number and the district has no way to know. About 90 families in the Halsey attendance area have no mobile number on the card at all and are called on a landline, which the alert system cannot do for text."
+          },
+          {
+            "name": "Closing and Delay Procedure, adopted 2013 (2 pages)",
+            "note": "The procedure the superintendent follows, including the three test roads, the 5:30 a.m. target and the rule that a delay is never converted to a closing after 7:15 a.m. because the elementary children are already at the stop."
+          },
+          {
+            "name": "Snow Day Learning - Discontinued (1 page)",
+            "note": "Remote instruction on closing days was tried in the 2021-22 year and discontinued in June 2022. The reason given in the minutes is that 22 percent of district households have no fixed broadband. That figure came from the county's 2021 application for the Nye Mills, Dorrance and Cobb build, which was not funded. A closing day is a closed day."
+          }
+        ]
+      },
+      {
+        "id": "closing-log",
+        "name": "Closing Log, 2016-17 to Date",
+        "blurb": "Every full closing, delay, early dismissal and single-building closing for ten school years, with the reason. Ten years because that is how far back the records go on this site, not how far back they go.",
+        "status": "online",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "[b]2025-26.[/b] Six full closings, three two-hour delays, one early dismissal, one single-building closing. In order: Tuesday 2 December 2025, closed, snow, six inches overnight and drifting on Pell Road. Wednesday 3 December 2025, two-hour delay, drifting. Friday 9 January 2026, closed, snow. Monday 12 January 2026, two-hour delay, cold and glaze. Thursday 22 January 2026, closed, cold, minus 18 at the high school at 5 a.m. Friday 23 January 2026, two-hour delay, cold. Tuesday 3 February 2026, closed, ice. Wednesday 11 February 2026, early dismissal at 12:30, snow arriving ahead of the forecast. Monday 2 March 2026, closed, snow. Wednesday 8 April 2026, Halsey Primary only, water main break on the village system. Five of the six closings were made up; the sixth was the day the calendar had already built in.",
+          "[b]2024-25.[/b] Four full closings, four delays, no early dismissals. Three of the four closings were in the same week in January. The fourth, on 6 March 2025, was fog, which is in this log because it is the only fog closing since 2011 and because the district was criticised for it on the aggregator sites for about two days.",
+          "[b]2023-24.[/b] Seven full closings, five delays, two early dismissals. The worst winter in the ten years on this page. Two of the closings were the same storm. The district ran out of built-in days on 6 February and the spring recess lost Thursday and Friday, which was announced on 7 February and which about forty families had already booked around.",
+          "[b]2022-23.[/b] Three closings, two delays. One closing, on 20 December 2022, was a heating failure at the middle school and not weather, although the weather is why the heating failed.",
+          "[b]2021-22.[/b] Five closings, six delays. Two of the five were remote instruction days rather than closings. See the note on the discontinued programme at [url=/s/closings]Closings, Delays and Early Dismissals[/url].",
+          "[b]2020-21, 2019-20, 2018-19, 2017-18, 2016-17.[/b] Four, two, six, three and five full closings. The delay and early-dismissal counts for those years are in the bound annual reports and were not carried onto this site when it was rebuilt, because whoever rebuilt it in 2019 typed in the closings and stopped.",
+          "[b]Before 2016-17.[/b] Not here. The previous district site was replaced in 2019 and its pages were not kept. The closings are in the minutes, because the Board is told in June how many days were lost and how they were made up, and the minutes are permanent. The two days in January 2007, for instance - Monday the 15th and Tuesday the 16th, freezing rain, about 2,300 customers out - are in the minutes of 13 February 2007, and the superintendent told the newspaper at the time that they would be made up in June. They were, on 20 and 21 June 2007. The newspaper's account of that week is still readable at [url=synth://verityledger.com/article/ice-storm]verityledger.com[/url].",
+          "[b]What the numbers do not show.[/b] A closing at this end of the county is not a closing at the other. The log counts a day as closed if the whole district was closed. The Halsey and New Carrow buildings have had eleven single-building closings in ten years between them and Gridfall Elementary has had none."
+        ],
+        "forms": [
+          {
+            "name": "Closing log, 2016-17 to 2025-26 (4 pages)",
+            "note": "The same information as this page in one table, by year, with the date the decision was made and the time it was posted. The time posted is on it because it was asked for at a meeting in 2018 and nobody has asked since."
+          },
+          {
+            "name": "Days lost and made up, report to the Board, June 2026 (1 page)",
+            "note": "Six days lost, five built in, one day added to the end of the year. The state requires 180 days of instruction and the district ran 180."
+          }
+        ]
+      },
+      {
+        "id": "alerts",
+        "name": "How the District Contacts You",
+        "blurb": "Rapid Notify: what it calls, what it texts, what it cannot do, and the 90 families in the Halsey attendance area it cannot text at all.",
+        "status": "online",
+        "lastUpdated": "2026-09-17",
+        "steps": [
+          "[b]The system is called Rapid Notify.[/b] It is a vendor product. The district pays $1,840 a year for it. It calls, texts and emails every number on your child's emergency card, and it does the three at once, which is why some households get five messages for one closing and one household gets none.",
+          "[b]What it is used for.[/b] Closings, delays, early dismissals, a building evacuation, and twice a year a test. That is the whole list, and the district keeps it that way on purpose, because a system that sends you the book fair dates is a system you stop reading in February.",
+          "[b]What it cannot do.[/b] It cannot text a landline. About 90 families in the Halsey attendance area have no mobile number on the card, and about 40 more across the district, and they get a call and nothing else. If the call goes to a machine, the machine gets 22 seconds of it. It cannot leave a message longer than 22 seconds and it does not repeat.",
+          "[b]It does not know your child changed buildings.[/b] The emergency card follows the child between buildings; the vendor's group list does not, and the sync runs on the first Sunday of the month. A child who moved from the middle school to the high school in September gets middle school messages until October. This has been reported to the vendor four times since 2022.",
+          "[b]On 16 September the district sent nothing[/b] during the alarm activation at Gridfall Middle School, because there was no emergency and the building was never evacuated. An alert account in another state posted it as a structure fire with students in the building, and nine parents were in the middle school front office before the fire department had left the parking lot. The office had one person on the telephone saying the same sentence for eleven minutes. The district has since written what it will do next time into the procedure: if an outside account is wrong about this district and parents are moving, the district will send a message saying so, even though nothing is wrong, because by then something is.",
+          "[b]To change a number[/b], telephone the building office or send it in writing. Not by replying to a Rapid Notify text. Replies to those go to a short code at the vendor and are deleted nightly; roughly 200 of them a year are parents telling us their new number, and none of them arrive.",
+          "[b]To stop the calls[/b] you may opt out of texts by replying STOP, which is the vendor's system and not ours and which we cannot undo from here. You cannot opt out of the closing call. If you want to, telephone the building office and they will write down that you asked, and the call will keep coming, and the secretary will be honest with you about that.",
+          "[b]The twice-yearly test[/b] is in the second week of September and the second week of February. This year's September test went out on Thursday 10 September at 10:05 a.m. and reached 2,431 of 2,676 households on file. The 245 it did not reach were sent a letter home with the child, which is the oldest system the district has and still the one with the best delivery rate."
+        ],
+        "forms": [
+          {
+            "name": "Emergency Card (Form VCS-3)",
+            "note": "One page per child. Two telephone numbers, an email, and two people who may collect the child who are not a parent. The second name is the one people leave blank and the one the office ends up needing."
+          },
+          {
+            "name": "Rapid Notify contract, 2024-2027 (9 pages)",
+            "note": "Three years, $1,840 a year, automatic renewal unless cancelled 90 days out. Section 6 is the one that says the vendor is not liable for a message that does not arrive."
+          },
+          {
+            "name": "Notification Procedure, revised September 2026 (2 pages)",
+            "note": "Revised after 16 September. The new paragraph is paragraph 9 and it is four sentences long."
+          }
+        ]
+      },
+      {
+        "id": "menu",
+        "name": "Lunch Menu - October 2026",
+        "blurb": "Twenty-one school days. The same menu is served in all six buildings; the secondary buildings have a second choice every day. Milk is included and is not listed.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "[b]Thursday 1 October[/b] - chicken patty on a bun, oven potatoes, green beans, pears. [b]Friday 2 October[/b] - cheese pizza, corn, apple, oatmeal cookie.",
+          "[b]Monday 5 October[/b] - beef taco, seasoned rice, refried beans, orange. [b]Tuesday 6 October[/b] - turkey and gravy over mashed potato, peas, dinner roll, peaches. [b]Wednesday 7 October[/b] - hot dog on a bun, baked beans, carrot sticks, apple. [b]Thursday 8 October[/b] - chicken nuggets, macaroni and cheese, broccoli, pineapple. [b]Friday 9 October[/b] - cheese or pepperoni pizza, corn, mixed fruit.",
+          "[b]Monday 12 October - staff development day, no school and no lunch service.[/b] [b]Tuesday 13 October[/b] - sloppy joe, potato wedges, green beans, pears. [b]Wednesday 14 October[/b] - spaghetti with meat sauce, garlic bread, tossed salad, apple. [b]Thursday 15 October[/b] - chicken sandwich, oven potatoes, peas, peaches. [b]Friday 16 October[/b] - cheese pizza, corn, mixed fruit.",
+          "[b]Monday 19 October[/b] - macaroni and cheese, stewed tomatoes, dinner roll, apple. [b]Tuesday 20 October[/b] - chicken and biscuit, mashed potato, green beans, pears. [b]Wednesday 21 October[/b] - hamburger on a bun, baked beans, carrot sticks, orange. [b]Thursday 22 October[/b] - baked ziti, garlic bread, tossed salad, peaches. [b]Friday 23 October[/b] - cheese pizza, corn, apple.",
+          "[b]Monday 26 October[/b] - chicken nuggets, oven potatoes, broccoli, pineapple. [b]Tuesday 27 October[/b] - beef taco, seasoned rice, corn, orange. [b]Wednesday 28 October[/b] - turkey sandwich, vegetable soup, carrot sticks, apple. [b]Thursday 29 October[/b] - pancakes, sausage, hash brown, juice. [b]Friday 30 October[/b] - cheese pizza, corn, mixed fruit.",
+          "[b]This is what is planned, not what is promised.[/b] The menu is written six weeks ahead against a state template and the delivery comes on Tuesday. Twice this year the truck was short and the fruit changed, and the substitution is not posted anywhere, because posting it would take the kitchen manager twenty minutes she does not have. If it matters to your child, the kitchen at your building will tell you at 8 a.m. what is actually on that day.",
+          "[b]Secondary buildings[/b] - the high school and the middle school - have a deli sandwich and a chef salad available every day in addition to the line. The salad is the same salad all week. The high school also has an a la carte window which is not a meal, is not covered by a free or reduced eligibility, and is where a student account goes negative.",
+          "[b]Breakfast[/b] is served in all six buildings from twenty minutes before the first bell. Cereal, fruit and milk every day; a hot item on Tuesday and Thursday. On a two-hour delay breakfast is still served and the window is twenty minutes instead of forty.",
+          "[b]Allergies.[/b] The kitchen is not nut-free and cannot be. A medical statement signed by a physician on Form VCS-19 puts a substitution on the child's account and the kitchen manager keeps a card at the register. There are 71 of those cards in the district this year. If your child's is not right, telephone the building and not the district office; the card is physically in the building.",
+          "[b]November's menu[/b] goes up when the state template for the month is released, which is normally the third week of the month before, and which last year was the 26th. The printed copy goes home with the elementary children on the first school day of the month. The printed copy and this page are typed separately by the same person, which is how September came to have Thursday and Friday the wrong way round on paper and right here."
+        ],
+        "forms": [
+          {
+            "name": "October 2026 menu, printed version (1 page)",
+            "note": "The version that went home. Same content, two columns, and a border of pumpkins the food service director did not choose and cannot remove because it is part of the state template."
+          },
+          {
+            "name": "Medical Statement for a Meal Substitution (Form VCS-19)",
+            "note": "One page, signed by a physician, returned to the building office. Good for the school year. A preference is not a medical statement and the kitchen will say so kindly and then say no."
+          },
+          {
+            "name": "Offer versus serve, explained (1 page)",
+            "note": "Why a child may decline two of the five components and still be counted as having taken a reimbursable meal, and why the cashier says \"you need a fruit\" at the register. It is the single most complained-about sentence in the cafeteria and it is a federal rule, not a rule the kitchen made."
+          }
+        ]
+      },
+      {
+        "id": "meals",
+        "name": "Meal Prices, Accounts and the Free and Reduced Application",
+        "blurb": "Prices did not change for 2026-27. How the account works, what happens when it goes negative, and the application, which takes about ten minutes and which about 200 eligible families do not fill in.",
+        "status": "online",
+        "lastUpdated": "2026-08-21",
+        "steps": [
+          "[b]Prices, 2026-27.[/b] Elementary lunch $2.35. Secondary lunch $2.60. Breakfast $1.45 at every building. Milk alone $0.60. Adult lunch $4.25, which is what a visiting parent or a bus driver pays. These are the same as 2025-26 and the same as 2024-25.",
+          "[b]The meal account is a separate site with a separate login.[/b] It is operated by a payment vendor, it is not ParentBridge, and it is not the county portal either. You reach it from [url=/s/portal]Parent Portal - Sign In[/url], where there is a link, or by the card at the bottom of the September letter. The vendor charges a $2.60 fee on a card payment of any size, which is why the office will tell you to send in $40 at a time rather than $10, and which is why cash and a cheque in an envelope with the child's name on it are still the cheapest way to do this and always have been.",
+          "[b]A negative balance.[/b] A child is served the same meal whatever the account says. Nobody is given a cheese sandwich, nobody's tray is taken away, and no child is told at the register in front of other children. That is district policy, it is written down, and the kitchen staff are the ones who asked for it to be written down. Negative balances are a bill to the household and are sent home monthly.",
+          "[b]As of 31 August 2026 the district is owed $4,188[/b] across 211 accounts. About $2,900 of that is on 38 accounts. Of the 38, 26 are households that appear eligible for free meals and have not applied. That is the number the food service director brings to the Board every year.",
+          "[b]The free and reduced price application[/b] is one page, is confidential, goes to the district office and not to the building, and does not go to the teacher. It is the same form whether you fill it in on paper or online. Eligibility is by household size and income; a household of four qualifies for reduced price at an income under about $57,700 and for free meals under about $40,500 for this year. If you are not sure, apply. The office would rather read a hundred applications from households that do not qualify than miss one that does.",
+          "[b]It is also not only about lunch.[/b] An approved application waives the $35 athletic participation fee, the $20 instrument rental, the college application fees the guidance office handles, and the technology deposit. Families apply for the lunch, get the letter, put it in a drawer, and pay the $35 in September anyway. The letter is the thing to keep.",
+          "[b]You may apply at any point in the year[/b] and eligibility starts the day it is approved, not the day you applied. If your circumstances change in February, apply in February. Approvals carry over for the first 30 school days of the next year and then lapse, which is the other 200 families: they were approved last year, they are still eligible, and the form did not go back in.",
+          "[b]Who to ask.[/b] Sandra Vogl, food service director, 782-3100 extension 226, Monday to Thursday. She answers her own telephone. She has done this job for nineteen years and can tell you in about a minute whether it is worth your filling in the form."
+        ],
+        "forms": [
+          {
+            "name": "Application for Free and Reduced Price Meals, 2026-27 (1 page, both sides)",
+            "note": "Household size, income, signature, last four digits of a social security number or a box to tick saying you do not have one. That box is on the form and it is legal to tick it. The form is in English on the front and Spanish on the back and the district has fourteen households that need neither and has not solved that."
+          },
+          {
+            "name": "Meal charge policy, adopted 2019 (1 page)",
+            "note": "The policy that says a child is served regardless of balance. Adopted 7-0. It replaced a policy from 2011 that did not say that."
+          },
+          {
+            "name": "Meal account payment card (1 page)",
+            "note": "The card that goes home in September with the vendor's address and the account number. The account number is not the student ID and people are caught by that every year."
+          }
+        ]
+      },
+      {
+        "id": "buses",
+        "name": "Bus Routes and Times, 2026-27",
+        "blurb": "Fourteen runs, eleven drivers, three tiers. Route sheets, the Quarry Road detour, and what the district does and does not run.",
+        "status": "degraded",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "[b]This page is the schedule as it stands today.[/b] It will be reissued in December for the January contract change. Nothing on it changes before then.",
+          "[b]Three tiers.[/b] Eleven drivers run fourteen routes, so three drivers finish a run and start another. High school, first bell 7:30. Middle school, first bell 7:45. Elementary, first bell 8:35. That is not a choice about adolescent sleep; it is the number of buses. It has been raised at a Board meeting five times since 2014 and the answer each time is that a fourth tier would need three more drivers and three more buses.",
+          "[b]The runs.[/b][list][*]1 - Gridfall East: Hollis Road, Bracken Lane, Tannery Flats[*]2 - Gridfall West: Pell Road to the second cattle guard, Meacham Street, Dunmore[*]3 - Gridfall Village: Depot, Third, Mill, Ward, Fenn Avenue, Creekside[*]4 - Route 62 East: Ashkettle, Kestrel Road, the quarry gate[*]5 - New Ardo North[*]6 - New Ardo South and County Road 9[*]7 - New Carrow East[*]8 - New Carrow West and the warehouse road[*]9 - Halsey[*]10 - Coyne Flats[*]11 - Marchfield North: Bellamy Street and the hospital end[*]12 - Marchfield South[*]13 - High school activity run, Tuesday and Thursday, 5:40 p.m.[*]14 - Out-of-district placements, one van, 29 students, seven destinations, two of them out of county[/list]",
+          "[b]Route sheets[/b] with every stop and every time went home on the first day and are on ParentBridge under Transportation. They are not on this page, because a stop time next to a child's name next to a road is a list the district is not going to publish openly, and that decision was made in 2015 and has been revisited twice.",
+          "[b]The Quarry Road detour, 28 September to 9 October.[/b] Runs 1, 3 and 13 take Pell Road to County Route 62 and come back along Kestrel Road. Every stop on those runs is about fifteen minutes later, morning and afternoon. The high school and middle school start times do not change, so a child on run 1 will be at school at the usual time and standing at the stop fifteen minutes earlier than usual. Read that sentence twice; it catches people every autumn.",
+          "[b]Run 4 does not turn at the quarry cut.[/b] There is nowhere to turn a bus and the driver would have to back about three hundred feet. The stop is at the gate. Four families have asked for it to come up the lane and the answer is no, and it is a no about the bus and not about the family.",
+          "[b]This district does not run buses to Kerrin or Tessler.[/b] Those are Kerrin Consolidated's runs and their transportation office is at the school in Kerrin. A job advertisement in August listed the Kerrin north, Kerrin south, Tessler and Dorrance runs under this district's name at [url=synth://verityjobs.org/l/j-024]verityjobs.org[/url]. It is not ours. We have asked twice to have it corrected and a driver drove to Marchfield for an interview for a job in another district.",
+          "[b]If the bus does not come.[/b] Telephone transportation at 782-3150 before you telephone the building. The bus is usually behind a train that is not there any more, a plough, or a driver covering a second run. The dispatcher can see where the bus is; the building office cannot and will telephone the dispatcher, which adds four minutes to your morning.",
+          "[b]Stops.[/b] A stop is where it is because of sight distance and because a bus needs a straight run to stop on a hill in February, not because of where anybody lives. Requests to move a stop go in writing to the transportation supervisor and get an answer in about two weeks. Eleven were made last year and four were granted.",
+          "[b]Why this page says degraded.[/b] The stop-time lookup on this site has not worked since the browser change in March. It returns the 2024-25 times for any address typed into it, which is worse than returning nothing, so the box has been removed and the sentence has been left. It will not be fixed; the contractor's system in January has its own."
+        ],
+        "forms": [
+          {
+            "name": "Request to Change a Stop (Form VCS-22)",
+            "note": "One page. Address, the stop you want, the reason. Sight distance is the reason most of them are refused and the refusal says so and gives the measurement."
+          },
+          {
+            "name": "Transportation route list, 2026-27 (2 pages)",
+            "note": "The fourteen runs with mileage and the number of children on each. Run 1 is 41 miles and 38 children. Run 14 is 214 miles and 29 children, which is the sentence that explains most of the transportation budget."
+          },
+          {
+            "name": "Bus conduct and video notice (1 page)",
+            "note": "Every bus has four cameras. Recordings are kept 14 days and then overwritten. A parent may view a recording involving their own child by appointment and may not have a copy, which is not the district being difficult; it is that the other eleven children on the tape are other people's children."
+          }
+        ]
+      },
+      {
+        "id": "bus-contract",
+        "name": "Transportation Contract - What Changes on 4 January",
+        "blurb": "The Board voted 4-3 on 16 September to contract the bus runs to Halloway Pupil Transportation from the start of the second semester. What is settled, what is not, and where the documents are.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "[b]What was decided.[/b] On Wednesday 16 September 2026 the Board of Education adopted Resolution 2026-11 by a vote of 4 to 3, awarding a five-year contract for pupil transportation to Halloway Pupil Transportation, a company based in another state, at $2.9 million over the five years. Ayes: Ulm, Sipes, Yost, Deitz. Noes: Corry, Hannigan, Strunk. The vote was taken at 10:02 p.m. after about two hours of public comment from eleven speakers, nine of them against.",
+          "[b]When it starts.[/b] Monday 4 January 2027, the first day of the second semester. The district runs its own buses until the winter recess.",
+          "[b]The drivers.[/b] All eleven current drivers have been offered a position with the operator at their present hourly rate, $21.15, guaranteed for one year. After that year the rate is the operator's to set. That is the point Lisbeth Corry made in voting no and it is not in dispute; the business administrator agreed at the meeting that the district has no way to check the rate after the first year and no contractual interest in it.",
+          "[b]The buses.[/b] The district owns nineteen buses. Eleven are in service, four are spares and four are past their useful life and are used for parts. Under the contract the operator leases the fleet for $1 a year and is responsible for maintenance. The district keeps title. At the end of five years the buses come back in whatever condition they are in, and the contract says \"reasonable wear\", which is two words doing a great deal of work.",
+          "[b]What does not change.[/b] The district still decides who is transported and where the stops are. The district still decides closings and delays. The district still holds the route data and still answers for it. A complaint about a driver still comes here first, and this district will not tell you to ring another state, which is the thing every family in the room asked about on 16 September.",
+          "[b]What is not decided yet.[/b] Whether the runs are redrawn. The operator's proposal assumes fourteen runs and says it will \"review efficiencies\" in the first ninety days, which everyone in the room understood to mean twelve. Nothing in the contract prevents that and nothing in it requires the district's consent. The route sheets that go out in December will be the current fourteen.",
+          "[b]The garage.[/b] The bus garage behind the district office on Bellamy Street goes to the operator under the same lease. Two mechanics are district employees; one has been offered a position with the operator and one has not and will be placed in buildings and grounds.",
+          "[b]The money, plainly.[/b] The district's own transportation cost in 2025-26 was $612,000, of which $391,000 was wages and benefits. The contract is $580,000 in its first year and rises 3 percent a year thereafter, which is $3.08 million over five years by the district's arithmetic and $2.9 million by the operator's, because the operator's figure excludes the fuel escalator. Both numbers were in the packet. The $2.9 million is the one that was read into the record and the one the newspapers have.",
+          "[b]Where the documents are.[/b] The full proposal, the two competing bids and the business administrator's comparison are in the 16 September agenda packet, which is 61 pages and is at the district office counter at $0.25 a page. Twenty-eight pages of it were released on a records request in September and published at [url=synth://thequarry.news/]The Quarry[/url], where they can be read for nothing, which the district has no objection to and which saves this office the copying.",
+          "[b]What the coverage got wrong.[/b] Two sites reported the vote as unanimous. One reported that the drivers were being laid off; they were offered positions and nine have accepted. One gave the contract as fifteen years. The wire filing at [url=synth://veritywire.press/d/d-401]veritywire.press[/url] was taken from notes in the room and is accurate. A newsletter published a piece on 21 September setting the five-year cost against the in-house cost; the arithmetic in it is the arithmetic in the packet, see [url=synth://brenners-notebook.email/]Brenner's Verity Notebook[/url]."
+        ],
+        "forms": [
+          {
+            "name": "Resolution 2026-11 (2 pages)",
+            "note": "The resolution as adopted. Two pages. The award is one sentence and the rest is the recitals."
+          },
+          {
+            "name": "Halloway Pupil Transportation, proposal (34 pages)",
+            "note": "Counter only. Pages 11 to 14 are the wage schedule, page 19 is the fuel escalator, and pages 22 to 31 are photographs of buses in another state."
+          },
+          {
+            "name": "Business administrator's cost comparison (3 pages)",
+            "note": "Five years, both methods, side by side, with the fuel escalator in one column and not in the other. This is the page to read if you read one."
+          },
+          {
+            "name": "Request to Address the Board (Form VCS-1)",
+            "note": "One page, to the clerk by noon on the Monday before the meeting. Three minutes. Eleven were filed for 16 September, which is the most since 2016."
+          }
+        ]
+      },
+      {
+        "id": "portal",
+        "name": "Parent Portal - Sign In",
+        "blurb": "ParentBridge: attendance, grades, schedules, the emergency card and the route sheet. [b]This is not the county services portal.[/b] It is not the meal account site either.",
+        "status": "degraded",
+        "lastUpdated": "2026-09-15",
+        "steps": [
+          "[b]This is not the county's portal.[/b] Say that once before anything else. [url=synth://verity.county.gov/]verity.county.gov[/url] is Verity County: property tax, dog licences, burn permits, records requests. This district is a separate body with its own board and its own tax levy. The county cannot see your child's attendance and this office cannot see your property tax. The county building takes about a dozen calls a month from parents who have been told to \"log into the portal\" and have logged into the wrong one.",
+          "[b]Sign in.[/b] Your username is your first initial, your surname, and the last four digits of your oldest child's student ID, all lower case and no spaces. M. Korrigan with a student ID ending 4471 is mkorrigan4471. If you have children in two buildings it is still one account and it is still the oldest child's number. If you remarried and changed your surname, your username did not change, and the office is sorry about that and cannot change it either.",
+          "[b]Passwords[/b] are reset by the building secretary, in the building, during office hours. Not by the district office, not by the vendor, and not by this page. There is a \"forgot password\" link on the vendor's sign-in and it sends to the email on the emergency card, which for about 400 households is an email address that stopped working some years ago.",
+          "[b]What is on it.[/b] Attendance, daily. Grades, which post on Thursday evenings and not live. The class schedule. The emergency card, which you may correct yourself and which about a third of families never open. The bus route sheet under Transportation. Report cards, four times a year, which also come home on paper.",
+          "[b]What is not on it.[/b] The Documents tab has been empty since the vendor's migration in July 2025. Everything that used to be in it - the handbook, the calendar, the athletic forms - is on this site instead, which is worse for you and is where it is. The Messages tab works in one direction: a teacher can send to you, you cannot reply, and replies go nowhere without an error. The Fees tab shows a balance that is not the meal balance.",
+          "[b]It is still not the county's portal.[/b] This is the second time this page says so and there is a third. If a letter, a robocall or an assistant has told you to \"use the county portal\" for a school matter, the letter is wrong. Nothing about a child, a bus, a grade, an absence or a lunch account is at the county.",
+          "[b]The app[/b] is the vendor's app and is not made by this district. It is a different login from the website - the same username, a separate password - which is a decision of the vendor's that the district has raised three times. Push notifications from the app are not the closing notification. Closings go out on Rapid Notify; see [url=/s/alerts]How the District Contacts You[/url].",
+          "[b]Sessions expire after 20 minutes[/b] and expire silently, so a form you were halfway through submits into nothing. Save as you go. The vendor calls this a security feature and it is, and it is also why the emergency card is filled in wrong so often.",
+          "[b]The meal account is a third site.[/b] Not ParentBridge, and - for the third time - not the county's portal. Meal balances and payments are at the payment vendor, reached from the link in the Fees tab or from the card sent home in September. Prices and how the account works are at [url=/s/meals]Meal Prices, Accounts and the Free and Reduced Application[/url].",
+          "[b]In January there will be a fourth.[/b] The transportation contractor has its own parent app for bus locations. The district did not ask for it, cannot switch it off and will not be able to reset a password on it. It is listed here now so that nobody finds out about it in the first week of the second semester.",
+          "[b]The old system[/b] was called Verity Family Access and was retired in 2019. Its address still appears in search results and in two letters that go home every year because nobody has caught the template. It does not accept a login and has not for seven years.",
+          "[b]Why this page says degraded.[/b] The sign-in works. Attendance, grades and schedules work. The Documents tab is empty, the Messages tab is one-way, and the district cannot fix either. Saying \"online\" when a third of it is broken is how a site stops being read."
+        ],
+        "forms": [
+          {
+            "name": "ParentBridge account letter (1 page)",
+            "note": "Sent home in September with the username printed on it. Not the password; the password is set at the building office or by the reset link."
+          },
+          {
+            "name": "Corveth Education Systems, licence and support agreement 2025-2028 (24 pages)",
+            "note": "The vendor contract. $8,900 a year. Support is a ticket queue with a two business day target, and the district's open tickets are 41 days, 96 days and 610 days old."
+          },
+          {
+            "name": "Emergency Card (Form VCS-3)",
+            "note": "The paper version, for the households who would rather. It is the same data. The office types it in."
+          }
+        ]
+      },
+      {
+        "id": "calendar",
+        "name": "School Year Calendar, 2026-27",
+        "blurb": "180 days of instruction, five snow days built in, and the sentence about graduation tickets that generates more telephone calls than anything else on this site.",
+        "status": "online",
+        "lastUpdated": "2026-08-19",
+        "steps": [
+          "[b]Teacher days[/b] Monday 31 August and Tuesday 1 September 2026. No students.",
+          "[b]First day for students[/b] Wednesday 2 September 2026. Half day for kindergarten, full day everyone else.",
+          "[b]No school[/b] Monday 7 September 2026.",
+          "[b]Staff development, no school[/b] Monday 12 October 2026.",
+          "[b]Parent conferences[/b] Thursday 12 November 2026, early dismissal at 12:30 for all six buildings. Conferences 1:00 to 8:00 p.m. Elementary conferences are scheduled; secondary conferences are walk-in and the queue for two of the high school teachers is always the whole evening.",
+          "[b]Thanksgiving recess[/b] Wednesday 25 to Friday 27 November 2026.",
+          "[b]Winter recess[/b] Thursday 24 December 2026 to Friday 1 January 2027. Buildings closed. Return Monday 4 January 2027, which is also the first day of the second semester and the first day under the new transportation contract.",
+          "[b]Mid-winter recess[/b] Monday 15 to Friday 19 February 2027.",
+          "[b]Spring recess[/b] Monday 29 March to Friday 2 April 2027. [b]This is the recess that loses days to weather[/b], from the Friday backwards, if more than five closings are used. It has happened twice in ten years, most recently in February 2024.",
+          "[b]Last day for students[/b] Friday 11 June 2027 if no snow days are used. Five are built in, so the realistic last day is Friday 18 June 2027. Plan for the 18th. The district cannot tell you in October which it will be and is asked in October every year.",
+          "[b]Graduation[/b] Saturday 19 June 2027, 11:00 a.m., Kupfer Field. [b]Graduation does not move for snow days.[/b] If the field is unusable it is in the high school gymnasium and each graduate has four tickets. That sentence is the most telephoned sentence on this website. It has been four tickets since 1998, the gymnasium seats 900, and there is no fifth ticket to be had by asking the principal, the superintendent or a board member, all of whom are asked every year.",
+          "[b]Half days and early dismissals already scheduled:[/b] 12 November, 23 December, 18 June. Elementary kindergarten half days in the first week only.",
+          "[b]The state requires 180 days.[/b] The calendar above is 185 for staff and 180 for students with the five built in. If the district runs fewer than 180 it loses state aid at about $14,900 a day, which is why the year runs into June rather than stopping in a bad winter."
+        ],
+        "forms": [
+          {
+            "name": "Calendar 2026-27, one page",
+            "note": "The grid. Printed in August, sent home with the first-day packet, and out of date the first time the spring recess is touched."
+          },
+          {
+            "name": "Calendar 2027-28, draft (1 page)",
+            "note": "Approved in first reading on 19 August 2026. Second reading and adoption in October. The draft has the first day as Wednesday 1 September 2027 and a mid-winter recess a week later than this year, which two families have already written about."
+          },
+          {
+            "name": "Instructional time report, 2025-26 (2 pages)",
+            "note": "180 days delivered. Hours by building. The middle school is 17 minutes a day longer than the high school because of the tiers, which nobody has ever complained about."
+          }
+        ]
+      },
+      {
+        "id": "buildings",
+        "name": "Buildings, Attendance Areas and Enrollment",
+        "blurb": "Six schools, one district office, 2,914 students counted on 10 September 2026. What each building is, what it holds, and what is wrong with it.",
+        "status": "online",
+        "lastUpdated": "2026-09-14",
+        "steps": [
+          "[b]Verity Central High School[/b], grades 9-12, Hollis Road outside Gridfall. Opened 1957 on the consolidation of four township high school programmes. Science and vocational wing 1968, gymnasium rebuilt 1989 after the roof failed under snow. Enrollment 838. Kupfer Field is behind it. The sign at the road says VERITY CENTRAL; the fire department's run cards say Gridfall High; both mean this building.",
+          "[b]Gridfall Middle School[/b], grades 6-8, Ellery Street, Gridfall. Opened 1971 as Gridfall Junior High. Enrollment 631. Eleven buses in the loop in nine minutes every morning, which is why the street is the way it is at 7:30.",
+          "[b]Gridfall Elementary[/b], K-5, Ward Street, Gridfall. 1953, with a 1994 addition of six rooms. Enrollment 732, the largest elementary in the county. Takes the Marchfield children, who have not had a school in their own village since Marchfield Elementary closed in 1989.",
+          "[b]New Ardo Elementary[/b], K-5, 1929, addition 1996. Enrollment 297. The oldest building in service and the one with the best windows, which surprises people.",
+          "[b]New Carrow Elementary[/b], K-5, 1961. Enrollment 194, down from 207 in September 2025 and under 200 for the first time. Shares a principal with Halsey Primary from January.",
+          "[b]Halsey Primary School[/b], K-5, 1958. Enrollment 193. Called Primary because it was K-3 until 2011 and the sign was not worth changing. The boiler is nineteen years old, failed on Wednesday 9 September and closed the building for one day, and was deferred in the 2024 facilities plan and again in the 2026 plan.",
+          "[b]District Office and Transportation Center[/b], 1400 Bellamy Street, Marchfield. The former Marchfield Elementary, closed 1989 and bought back by the district in 1993 for $1. The board room is the old cafeteria, the bus garage is behind it, and the building still has a gymnasium, which is rented to the recreation league on Tuesday and Thursday evenings for $40 a night.",
+          "[b]Enrollment, 10 September 2026.[/b] 838, 631, 732, 297, 194 and 193, plus 29 students in placements outside the district who are on this district's roll and in this district's transportation budget. Total 2,914, against 2,961 in September 2025. Enrollment has fallen in each of the last eleven years. The district's own projection has it at about 2,650 in 2031 and the projection has been low three years running.",
+          "[b]Attendance areas[/b] follow the old township lines and have not been redrawn since 2008. A child attends the elementary school for the address; there is no choice between them and there has not been since the attendance area maps were adopted on 8 January 2008. A request to attend a building outside your area goes to the superintendent on Form VCS-11, is granted where there is room and where the family provides the transportation, and 17 were granted last year.",
+          "[b]History of the district.[/b] Verity Central School District was formed in the 1957 consolidation. Carrow-Halsey Central School District merged into it on 1 July 2011 under a state reorganisation incentive, bringing New Carrow Elementary and Halsey Primary and about 1,100 students. The merged district has done business as Verity County Schools since then. [b]The legal name is still Verity Central School District[/b] and that is the name on the tax bill, on the bond and on a cheque, which is a thing the business office has to explain about forty times a year.",
+          "[b]Buildings no longer in service.[/b] Bracken Lane Elementary closed at the end of the 2007-08 year and was sold in 2012; the Board's actions on that are indexed at [url=/s/bracken]Bracken Lane Elementary - Index of Board Actions, 2006-2010[/url]. Marchfield Elementary closed in 1989 and is the district office. The Pell and Marrow Hill buildings left district use in the 1950s and 1971 and are not ours. The district owns no other property."
+        ],
+        "forms": [
+          {
+            "name": "Facilities plan, 2026 (48 pages)",
+            "note": "Every building, every system, with a condition rating and a year. The Halsey boiler is on page 31 with a 2024 date crossed through and 2027 written in. The roofs at New Ardo and at the middle school are pages 22 and 27."
+          },
+          {
+            "name": "Enrollment count, 10 September 2026 (1 page)",
+            "note": "By building and by grade. The line that gets read is kindergarten: 168 across six buildings, the smallest kindergarten the district has counted."
+          },
+          {
+            "name": "Request to Attend Outside the Attendance Area (Form VCS-11)",
+            "note": "One page, to the superintendent, by 1 August. Granted where there is room and where you drive. Seventeen granted last year, four refused, all four for room at Gridfall Elementary."
+          },
+          {
+            "name": "Attendance area maps, adopted 8 January 2008 (3 sheets)",
+            "note": "Three sheets, counter only, and the only copy that is not a photocopy of a photocopy is in the business office. The boundary between the Gridfall and New Ardo areas runs down the middle of County Road 9 and has been argued about at the counter at least once a year since."
+          }
+        ]
+      },
+      {
+        "id": "board",
+        "name": "Board of Education - Members, Meetings and Public Comment",
+        "blurb": "Seven members, unpaid, elected at large. Third Wednesday of the month at 7:00 p.m. in the board room at Marchfield. How to speak and how to get something on the agenda.",
+        "status": "online",
+        "lastUpdated": "2026-09-17",
+        "steps": [
+          "[b]Members.[/b][list][*]Theresa Ulm, president, New Carrow, term to 2027[*]Marvin Sipes, vice president, Gridfall, term to 2029[*]Lisbeth Corry, Halsey, term to 2027[*]Doreen Yost, Gridfall, term to 2029[*]Ken Hannigan, Ashkettle, term to 2028[*]Paulette Deitz, Marchfield, term to 2028[*]Roger Strunk, New Ardo, term to 2027[/list]",
+          "[b]Pay.[/b] None. Board members in this state are unpaid. Mileage is reimbursed at the state rate and four of the seven do not claim it. The district pays the annual school boards association dues of $3,400, which is on the budget line that gets questioned every year.",
+          "[b]Meetings.[/b] Third Wednesday of the month, 7:00 p.m., board room at the district office, 1400 Bellamy Street, Marchfield. The board met on the second Tuesday until 2014 and the change is still catching people, including one member's own newsletter. A work session is held on the first Wednesday when there is something that needs one; there were four last year.",
+          "[b]Remaining 2026 dates:[/b] Wednesday 21 October, Wednesday 18 November, Wednesday 16 December. The December meeting is the annual audit presentation and runs long.",
+          "[b]Not streamed.[/b] The board has voted twice not to stream, in 2021 and 2024, both times 5-2, and the reason in the minutes both times is the cost of the room's audio. An audio recording is posted the day after the meeting and kept for two years. The 16 September recording stops fourteen minutes before the end because the recorder was on its internal battery.",
+          "[b]Public comment[/b] is at the start, three minutes a speaker, fifteen speakers, sign the sheet at the door by 6:55. You may speak on anything. The Board will not answer on anything that is not on the agenda, which is the rule and which people discover at the microphone. A written statement handed to the clerk goes in the file whether you speak or not and is read by the members before the next meeting more often than speaking is remembered.",
+          "[b]Three minutes is enforced with a clock[/b] on the wall behind the members, which the president watches and which you cannot see. The board has been asked to turn the clock round and has not.",
+          "[b]To get an item on the agenda[/b], write to the clerk not less than ten days before the meeting on Form VCS-1. The superintendent and the president set the agenda together. Six requests have been made since January and five were placed; the sixth concerned an individual employee and went into executive session instead, which is the law and not a choice.",
+          "[b]Executive session[/b] is for employment of an individual, litigation, and contract negotiation, and for nothing else. The Board announces the reason before going in and takes no vote inside. Votes taken after returning are in the minutes. The Board went into executive session six times last year for a total of about four hours, five of them about one personnel matter.",
+          "[b]Elections[/b] are at large - anyone in the district may vote for any seat - on the third Tuesday in May, run by the district and not by the county. Three seats are up in May 2027. A candidate needs 25 signatures and a form; the whole petition is one page. Two of the last four elections were uncontested and in 2024 one seat had no candidate at all and was filled by appointment in July."
+        ],
+        "forms": [
+          {
+            "name": "Request to Address the Board (Form VCS-1)",
+            "note": "One page. Name, address, subject, and whether you are speaking for an organisation. Handed to the clerk or posted. The subject line is not binding and nobody has ever been stopped for straying from it."
+          },
+          {
+            "name": "Board policy manual (310 pages)",
+            "note": "Counter only, and on paper, because the manual lives in the 2005 content system this site runs on and the export has been broken since 2016. The policies people ask for - 5152 attendance, 7250 closing a building, 8130 transportation - are photocopied at the counter for nothing."
+          },
+          {
+            "name": "Board meeting audio, 16 September 2026 (1 hour 52 minutes)",
+            "note": "Posted 17 September. Stops at 1:52:14, fourteen minutes before adjournment. The vote is not on it. The clerk's draft minutes are the record of the vote and the sign-in sheet is the record of who spoke."
+          },
+          {
+            "name": "Annual financial statement, year to 30 June 2026 (22 pages)",
+            "note": "The audit is presented in December. Total budget $41.2 million, of which state aid is about 62 percent and the local levy about 31 percent."
+          }
+        ]
+      },
+      {
+        "id": "min-0916",
+        "name": "Draft Minutes - Wednesday 16 September 2026",
+        "blurb": "Not approved. The Board approves minutes at the following meeting, so these become official on 21 October 2026 and may change. This is the transportation contract meeting.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "President Ulm called the meeting to order at 7:00 p.m. in the board room, 1400 Bellamy Street, Marchfield.",
+          "Present: Ulm, Sipes, Corry, Yost, Hannigan, Deitz, Strunk. Also present: Brubaker, superintendent; Roeder, business administrator; Prill, clerk. Fifty-one members of the public signed in, which is the largest attendance since 2016.",
+          "Minutes of 19 August 2026 approved, 7-0, on a motion by Deitz, seconded by Yost.",
+          "[b]Public comment.[/b] Eleven speakers, three minutes each, nine opposed to the transportation award and two in favour. Three speakers were current drivers. One speaker, a driver of twenty-two years, asked what happens to her rate in the second year and was told by the business administrator that the district would not know. One speaker asked whether the operator had been checked with the districts it serves elsewhere; the superintendent said three had been contacted and that two had responded, and read both responses. Public comment closed at 8:14 p.m.",
+          "[b]Superintendent's report.[/b] Enrollment 2,914 as of the 10 September count, a decrease of 47. Halsey Primary closed 9 September for a boiler failure and reopened 10 September when the part arrived; the replacement is deferred to 2027 in the facilities plan. The alarm activation at Gridfall Middle School on 16 September was reported by an outside alert service as a structure fire with students in the building; the superintendent described what happened in the front office and said the notification procedure would be revised. Fall sports participation 214, down 11.",
+          "[b]Business administrator's report.[/b] First quarter. Transportation is over budget by $14,300 on fuel and on two engine repairs. Health insurance renewal quoted at plus 9.4 percent. The state aid figure in the adopted budget is $180,000 higher than the state's September certification and the difference will be taken from the fund balance.",
+          "[b]Unfinished business.[/b] (a) Calendar 2027-28, second reading deferred to October. (b) Facilities plan, Halsey boiler, no action; the business administrator was asked to obtain a third quotation and said the two on file expire in November.",
+          "[b]New business, item 9(a). Resolution 2026-11, award of a contract for pupil transportation services.[/b] Moved by Sipes, seconded by Yost. Discussion. Trustee Corry asked what the district's remedy is if the operator's second-year rate results in the loss of drivers; the business administrator said the district's remedy is the performance clause and that the clause is about service, not wages. Trustee Hannigan asked for the award to be held to November for a third bid; the motion to postpone failed 3-4. [b]Resolution 2026-11 adopted 4-3.[/b] Ayes: Ulm, Sipes, Yost, Deitz. Noes: Corry, Hannigan, Strunk. Time of vote 10:02 p.m.",
+          "New business, item 9(b). Personnel schedule as presented, approved 7-0. Four appointments, two resignations, one retirement after 31 years.",
+          "New business, item 9(c). Surplus: 140 chairs and a kiln from the high school art room, authorised for disposal, 7-0.",
+          "[b]Correspondence.[/b] Nineteen letters and emails regarding transportation, received since 20 August, summarised by the clerk in one page. Two letters regarding the middle school bus loop. One letter from a resident of Bracken Lane asking, again, who owns the old school building; the clerk was asked to reply, again, that the district does not.",
+          "Adjourned 10:41 p.m. on a motion by Strunk.",
+          "[b]This page is a draft and is not approved.[/b] It is published because a draft is a public record whether it is approved or not, and because the alternative is that nothing about this meeting is readable for five weeks. These become official on 21 October 2026 and may change before then. The audio recording of this meeting ends fourteen minutes before adjournment; these minutes do not."
+        ],
+        "forms": [
+          {
+            "name": "Draft minutes, 16 September 2026 (4 pages)",
+            "note": "Clerk's draft. Not approved. Approved minutes will replace this page after 21 October 2026."
+          },
+          {
+            "name": "Agenda packet, 16 September 2026 (61 pages)",
+            "note": "Counter only, $0.25 a page. The proposal, the two competing bids, the cost comparison and the first quarter report. Twenty-eight pages of it were released on a records request and are published elsewhere; see [url=/s/bus-contract]Transportation Contract - What Changes on 4 January[/url]."
+          },
+          {
+            "name": "Sign-in sheet, 16 September 2026 (3 pages)",
+            "note": "Fifty-one names. The sheet is a public record and is released as it is, which means the handwriting is the handwriting."
+          }
+        ]
+      },
+      {
+        "id": "min-0819",
+        "name": "Minutes - Wednesday 19 August 2026",
+        "blurb": "Approved 7-0 on 16 September 2026. The August meeting is the one where the year is set up and where, this year, nobody voted on a shared principal.",
+        "status": "online",
+        "lastUpdated": "2026-09-17",
+        "steps": [
+          "President Ulm called the meeting to order at 7:00 p.m. Present: Ulm, Sipes, Corry, Yost, Hannigan, Deitz, Strunk. Also present: Brubaker, Roeder, Prill. Four members of the public signed in.",
+          "Minutes of 15 July 2026 approved, 7-0.",
+          "[b]Public comment.[/b] One speaker, regarding the condition of the tennis courts at the high school. The president said the courts are on page 39 of the facilities plan with a 2029 date. The speaker said he had read page 39.",
+          "[b]Superintendent's report.[/b] Opening day 2 September. Staffing complete except for two bus drivers, one special education aide and a half-time music position at the elementary level which has been advertised three times. Summer work completed: middle school parking lot sealed, New Ardo gutters, and the high school's 1968 wing rewired in part.",
+          "[b]Business administrator's report.[/b] Audit fieldwork in October. Fuel purchased forward for the first half of the year at $2.96 a gallon.",
+          "[b]Item 7(a). Transportation study, presentation.[/b] The business administrator presented the comparison of in-house operation and contracted service prepared in June. Discussion held. No action. The president stated that a resolution would be considered at the September meeting, which is the notice required by policy 8130.",
+          "[b]Item 7(b). Calendar 2027-28, first reading.[/b] Received. Second reading in October.",
+          "[b]Item 7(c). Facilities plan 2026, adoption.[/b] Adopted 6-1, Corry voting no. The Halsey Primary boiler is deferred to 2027 in the adopted plan. The roof at New Ardo is deferred to 2028.",
+          "[b]Item 8(a). Personnel schedule.[/b] Approved 7-0. Eleven appointments, three of them teaching positions, and three resignations.",
+          "[b]Administrative assignment, New Carrow and Halsey.[/b] The superintendent reported that the principal of New Carrow Elementary will also serve as principal of Halsey Primary from January, the two buildings being 17 miles apart, and that assignment of administrative staff does not require Board action under policy 1230. No vote was taken. Trustee Corry asked that the record show she had asked for it to be brought as a resolution. The record shows it.",
+          "[b]Correspondence.[/b] Six items. Two regarding a stop on run 9. One from a vendor. One from a resident of Bracken Lane regarding the old school building.",
+          "Adjourned 8:26 p.m."
+        ],
+        "forms": [
+          {
+            "name": "Minutes, 19 August 2026, approved (3 pages)",
+            "note": "The official record of this meeting. Approved 7-0 on 16 September 2026."
+          },
+          {
+            "name": "Transportation study, June 2026 (18 pages)",
+            "note": "The comparison presented in August. Counter only in August; released in September on a records request and published in full elsewhere."
+          },
+          {
+            "name": "Facilities plan 2026, as adopted (48 pages)",
+            "note": "Adopted 6-1. The deferrals are on pages 31 and 22 and are the reason for the one no vote."
+          }
+        ]
+      },
+      {
+        "id": "minutes-archive",
+        "name": "Board Minutes and Agendas - What Exists and Where",
+        "blurb": "What is on this site, what is in the bound books at Marchfield, what was lost in a site migration in 2019, and what it costs to get a copy of any of it.",
+        "status": "paper-only",
+        "lastUpdated": "2026-06-30",
+        "steps": [
+          "[b]2019 to date.[/b] On this site. Agendas are posted the Friday before the meeting. Draft minutes are posted in the week after. Approved minutes replace the draft after the following meeting. Nothing is taken down.",
+          "[b]2014 to 2018.[/b] On this site as scanned documents, one file a meeting, in a list that is not searchable because the scans are images. They were scanned in 2019 by a summer employee at a rate of about eleven meetings a day. The scans are straight and legible and are better than what most districts have.",
+          "[b]2009 to 2013.[/b] [b]Not here.[/b] They were on the previous district site, which was replaced in 2019, and they were not migrated, and the previous site's files were not kept. They exist on paper in the bound books at the district office and nowhere else. This is the gap. It covers the merger with Carrow-Halsey in 2011, which is the five years people most often want, and the district is aware of that and has been since 2019.",
+          "[b]2001 to 2008.[/b] On this site as scans, because they were scanned before the others in answer to a records request in 2016 and were sitting on a drive when the new site was built. The 2006, 2007 and 2008 books are the Bracken Lane years and are the most requested records this district holds; the actions from them are indexed at [url=/s/bracken]Bracken Lane Elementary - Index of Board Actions, 2006-2010[/url].",
+          "[b]Before 2001.[/b] Bound books at the district office, back to the 1957 consolidation. Read at the counter without an appointment and without saying why. Before 1957 the records are the township boards' and are county clerk records; see [url=synth://verityclerk.gov/s/minutes]the County Clerk[/url]. The county superintendent of schools lost the district reports for 1901 to 1952 in a courthouse fire, which is why school histories in this county begin in 1953 and why this office cannot tell you what your grandmother's school looked like.",
+          "[b]Annual reports, 1953 to 1998.[/b] On microfilm at Marchfield Public Library, not here. The index to them on the counter was typed by the library's archivist, who sent it to this office in March 2026 without being asked for it. It is better than anything this office has made and it is the first thing handed to anybody researching a building.",
+          "[b]Agenda packets are not archived.[/b] The packet is assembled for a meeting, copied nine times, and the file copy is kept three years under the retention schedule and then destroyed. The documents inside it are kept separately by kind and the clerk can usually find a named one in about twenty minutes. If you want a packet from 2021 it is gone, and if you want the cost comparison that was in it, it is not.",
+          "[b]Copies.[/b] $0.25 a page, waived on request more often than it is charged. The photocopier is a 2011 machine that scans to a format the county network stopped accepting in 2019, which is why documents from this office arrive as photocopies rather than as files, and why a 61-page packet is a thing you carry out."
+        ],
+        "forms": [
+          {
+            "name": "Index of bound minutes, 1957 to 2000 (11 pages)",
+            "note": "By date, with the resolution numbers adopted at each meeting. Typed between 1994 and 1996 by a clerk who retired in 1999 and who is the reason anything before 2001 can be found at all."
+          },
+          {
+            "name": "Records retention schedule, as adopted 2014 (7 pages)",
+            "note": "Minutes permanent. Agenda packets three years. Personnel records seven years after separation. Bus video 14 days. Student records: permanent for the transcript, seven years for the rest."
+          },
+          {
+            "name": "Annual reports index, 1953 to 1998 (6 pages)",
+            "note": "The index typed at Marchfield Public Library. Reel, frame, year and building. See [url=synth://marchfieldlibrary.blog/]the library's own notes on the microfilm[/url]."
+          }
+        ]
+      },
+      {
+        "id": "bracken",
+        "name": "Bracken Lane Elementary - Index of Board Actions, 2006-2010",
+        "blurb": "An index compiled by the district clerk because the same records are asked for four or five times a year. Every Board action on the building, by meeting, with the item number. The minutes themselves are the record; this is a finding aid.",
+        "status": "online",
+        "lastUpdated": "2026-05-12",
+        "steps": [
+          "[b]About this index.[/b] Bracken Lane Elementary, 1900 Bracken Lane, opened 1931, closed at the end of the 2007-08 school year, enrollment in its final year 212. The Board met on the second Tuesday of the month in this period, with a work session on the fourth Tuesday. Item numbers are as printed on the agenda. Where the entry says \"no action\", no action was taken; that is not a gap in the record.",
+          "[b]10 January 2006, item 8(c).[/b] Authorisation to engage Wexler & Coe, architects, for a building utilisation and capacity study of five buildings. $9,400. Approved 7-0.",
+          "[b]14 March 2006, item 6(a).[/b] Building utilisation study, presentation by the architect. Discussion held. No action.",
+          "[b]25 April 2006, work session.[/b] Building utilisation study, continued. Fourteen speakers in public comment. No action.",
+          "[b]13 June 2006, item 9.[/b] Deferred maintenance schedule, buildings and grounds, received and filed. Bracken Lane: boiler, estimate $410,000; roof, estimate $330,000.",
+          "[b]12 September 2006, item 7(b).[/b] Facilities Committee established. Members: Hardy, Kerrigan, Vasko.",
+          "[b]14 November 2006, item 5.[/b] Facilities Committee report. Three options presented: (1) no change; (2) closure of Bracken Lane Elementary and redistribution of its pupils; (3) closure and sale. Discussion held. No action.",
+          "[b]12 December 2006, item 4.[/b] Enrollment projections 2007 to 2012 by building, received and filed.",
+          "[b]9 January 2007, item 6(a).[/b] Public information meetings on building utilisation, schedule set. Four meetings: Gridfall Elementary, New Ardo Elementary, Bracken Lane Elementary, and the high school library.",
+          "[b]13 February 2007, item 5.[/b] Public information meetings, report. Attendance 31, 22, 186 and 9. Also, item 11: schools closed 15 and 16 January for weather, two days to be made up in June.",
+          "[b]13 March 2007, item 3.[/b] Correspondence: petition, 411 signatures, opposing the closure of Bracken Lane Elementary. Received and filed.",
+          "[b]10 April 2007, item 7.[/b] Transportation study, one-way ride times under each option, received and filed. Longest ride under option 2: 46 minutes, Hollis Road far end.",
+          "[b]8 May 2007, item 6(b).[/b] Policy 7250, closing of a school building, first reading. No action.",
+          "[b]12 June 2007, item 6(b).[/b] Policy 7250, second reading and adoption. Adopted 6-1.",
+          "[b]14 August 2007, item 10.[/b] Notice that a resolution concerning the future use of the Bracken Lane building would be considered at the regular meeting of 11 September 2007. Placed on file.",
+          "[b]11 September 2007, item 9(a).[/b] [b]Resolution 2007-14[/b]: to close Bracken Lane Elementary at the close of the 2007-08 school year and to assign its pupils to Gridfall Elementary and New Ardo Elementary; to retain the building for not less than two years; and to direct the superintendent to report a transition plan in January. [b]Adopted 4-3.[/b] Ayes: Hardy, Kerrigan, Renko, Bramm. Noes: Vasko, Ocasek, Pell. Public comment: 51 speakers at three minutes. The meeting was called to order at 6:00 p.m. and adjourned at 12:40 a.m.",
+          "[b]25 September 2007, work session.[/b] Letter of resignation, E. Kerrigan, seat 4, read into the record by the president and accepted. Vacancy to be advertised; appointment within sixty days under policy 1120.",
+          "[b]9 October 2007, item 3.[/b] Vacancy, seat 4: three letters of interest received. Interviews set for the work session of 23 October.",
+          "[b]13 November 2007, item 4.[/b] Appointment to seat 4: Dorothy Feick appointed to serve until the election of May 2008. Approved 6-0.",
+          "[b]11 December 2007, item 8.[/b] Attendance area maps for 2008-09, first reading.",
+          "[b]8 January 2008, item 8.[/b] Attendance area maps for 2008-09, adopted 7-0. These are the maps still in force.",
+          "[b]12 February 2008, item 6.[/b] Staff reduction: three positions to be eliminated by attrition at the close of the year. Two retirements received and accepted.",
+          "[b]11 March 2008, item 7.[/b] Transportation: four routes redrawn for 2008-09. Approved 7-0.",
+          "[b]8 April 2008, item 5.[/b] Bracken Lane building: retained under section 3 of Resolution 2007-14. Utilities to be maintained at minimum. Heat to 50 degrees.",
+          "[b]13 May 2008, item 9.[/b] Surplus property: library shelving, cafeteria equipment, 140 desks and a piano, authorised for sale at auction.",
+          "[b]10 June 2008, item 2.[/b] Noted: last day of instruction at Bracken Lane Elementary, Friday 6 June 2008.",
+          "[b]12 August 2008, item 6.[/b] Insurance: vacant building endorsement, additional annual premium $1,840. Approved.",
+          "[b]9 September 2008, item 3.[/b] First-day enrollment 2,974, a decrease of 41. Receiving buildings within capacity.",
+          "[b]10 March 2009, item 7.[/b] Bracken Lane building: lease of the west wing to Verity County for a senior nutrition site, one year, $1 a year, county to pay utilities. Approved 6-1.",
+          "[b]9 June 2009, item 5.[/b] Bracken Lane building: lease not renewed at the county's request; the nutrition site moved to the Armory in Gridfall. Noted.",
+          "[b]13 April 2010, item 6.[/b] Bracken Lane building: boiler decommissioned and system drained. Roof repair not undertaken.",
+          "[b]14 September 2010, item 9(a).[/b] Bracken Lane building declared surplus property and the superintendent authorised to offer it for sale. Adopted 5-2.",
+          "[b]After 2010.[/b] The building was sold on 8 March 2012 for $62,000. The district has not owned it since, does not hold a key, and cannot let you in to look at the cafeteria mural, which is the request this office receives most often about it and which it would grant if it could. The flagpole was bought by the Gridfall fire department at the 2008 auction and is standing outside their Meacham Street station. The building's history and the 2007 argument are set out at [url=synth://verity.wiki/wiki/verity-county]verity.wiki[/url] and, closer to the time, on the county wiki at [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]. The newspaper's coverage on 12 and 26 September 2007 is at [url=synth://verityledger.com/article/school-board-vote]verityledger.com[/url] and is more complete than this index, which was never meant to replace it."
+        ],
+        "forms": [
+          {
+            "name": "Resolution 2007-14 (3 pages)",
+            "note": "The resolution as adopted. Three sections. Section 3, retention of the building, is the one that mattered for five years afterwards."
+          },
+          {
+            "name": "Minutes, 11 September 2007 (9 pages)",
+            "note": "Nine pages, because 51 speakers are listed by name and address as they signed in. The longest set of minutes this district has. Scanned; the scan is legible."
+          },
+          {
+            "name": "Public information meeting reports, January to February 2007 (4 pages)",
+            "note": "Four meetings, attendance and questions asked, taken down by the clerk. The Bracken Lane meeting ran two hours and forty minutes and the report is two pages of it."
+          },
+          {
+            "name": "Wexler & Coe, building utilisation and capacity study, March 2006 (61 pages)",
+            "note": "Counter only. The study the whole thing came out of. Page 44 is the table everybody argues about and page 45 is the note under it saying the projection assumes the 1999 birth rate."
+          }
+        ]
+      },
+      {
+        "id": "staff",
+        "name": "Staff Directory",
+        "blurb": "District office and administration. Out of date by about 31 people. Rebuilt August 2024 and hand-edited since. Teachers are not listed here; telephone the building.",
+        "status": "degraded",
+        "lastUpdated": "2024-08-26",
+        "steps": [
+          "[b]District office, 1400 Bellamy Street, Marchfield. 782-3100. Monday to Friday, 7:30 a.m. to 4:00 p.m.[/b]",
+          "[list][*]Elaine Brubaker, Superintendent of Schools, ext. 201[*]Joanne Prill, District Clerk, ext. 202[*]Alan Roeder, Business Administrator, ext. 204[*]Deb Yarnall, Payroll and Benefits, ext. 206[*]Peg Lauver, Registrar and Enrollment, ext. 208[*]Bonnie Ottinger, Director of Special Education, ext. 212[*]Sandra Vogl, Food Service Director, ext. 226[*]Kevin Stipp, Director of Facilities and Operations, ext. 231[*]Tess Ruddock, Technology Coordinator, ext. 238[*]Lyle Becht, Transportation Supervisor, 782-3150[*]Ruth Ann Stief, Nurse Coordinator, ext. 219[/list]",
+          "[b]Administration in the buildings.[/b][list][*]Grant Wiedemann, Principal, Verity Central High School[*]Renee Kobel, Assistant Principal, Verity Central High School[*]Alicia Storb, Principal, Gridfall Middle School[*]Carla Deschler, Principal, Gridfall Elementary[*]Roy Tessmer, Principal, New Ardo Elementary[*]Dana Kilbride, Principal, New Carrow Elementary, and from January also Halsey Primary School[*]Doug Fenstermaker, Athletic Director, at the high school[/list]",
+          "[b]This directory is wrong in known ways.[/b] Thirty-one employees out of about 340 are not on it. Four people on it retired between 2024 and now. Two extensions ring at a desk nobody sits at: 214, which was a position that was not filled, and 222, which is in a storeroom. The person who maintained it left in 2024 and it became the clerk's job on top of the clerk's job.",
+          "[b]Teachers are not listed and will not be.[/b] It was decided in 2021 after a data broker scraped the old list and sold it back to staff as a \"verify your professional profile\" mailing at $29 a year. Three staff paid it. To reach a teacher, telephone the building office; the secretary will have a message in front of her in under a minute, which is faster than this page ever was. Numbers at [url=/s/offices]Building Offices and Telephone Numbers[/url].",
+          "[b]Email[/b] is first initial and surname at the district domain and has been since 2011. If somebody's name is not on this page, the address still works the same way, and if it bounces the person has left and the account is closed after 90 days.",
+          "[b]Staff count, 30 June 2026.[/b] About 340 people: 178 teaching, 62 aides and paraprofessionals, 31 clerical and administrative, 26 buildings and grounds and maintenance, 24 food service, 11 drivers, and 8 administrators. Roughly 190 of them are hourly. The figures are on the annual financial statement and the district would rather you took them from there than from here."
+        ],
+        "forms": [
+          {
+            "name": "Staff directory, August 2024 (3 pages)",
+            "note": "The version this page was built from. It is the last complete one. A new one has been on the clerk's list since February."
+          },
+          {
+            "name": "Organisation chart, 2026 (1 page)",
+            "note": "One page, eleven boxes. Between the superintendent and 340 people there are two layers, which is the whole story of an administration this size."
+          }
+        ]
+      },
+      {
+        "id": "offices",
+        "name": "Building Offices and Telephone Numbers",
+        "blurb": "The numbers that a person answers. Telephone the building before the district office for anything to do with a child.",
+        "status": "online",
+        "lastUpdated": "2026-09-10",
+        "steps": [
+          "[b]Verity Central High School[/b], Hollis Road, Gridfall. 782-3200. Office 7:15 a.m. to 3:45 p.m. Kathy Beiler, secretary. Attendance line 782-3201, which is a machine and is cleared at 8:10 and at 12:30.",
+          "[b]Gridfall Middle School[/b], Ellery Street, Gridfall. 782-3300. Office 7:00 a.m. to 3:30 p.m. Lorna Kutz, secretary. Attendance 782-3301.",
+          "[b]Gridfall Elementary[/b], Ward Street, Gridfall. 782-3400. Office 7:45 a.m. to 4:00 p.m. Sue Ann Ketner, secretary.",
+          "[b]New Ardo Elementary[/b], County Road 9. 782-3500. Office 7:45 a.m. to 4:00 p.m. Peg Mowery, secretary.",
+          "[b]New Carrow Elementary[/b]. 782-3600. Office 7:45 a.m. to 4:00 p.m. Gail Rinker, secretary.",
+          "[b]Halsey Primary School[/b]. 782-3700. Office 7:45 a.m. to 4:00 p.m. Bev Tschudy, secretary.",
+          "[b]District office[/b], 1400 Bellamy Street, Marchfield. 782-3100. 7:30 a.m. to 4:00 p.m., Monday to Friday, and the only office open on a Friday in July.",
+          "[b]Transportation[/b], behind the district office. 782-3150. 5:30 a.m. to 5:00 p.m. on school days. This is the number for a bus that has not come.",
+          "[b]The telephone system is from 2011[/b] and transfers between buildings drop about one call in twenty. If you are transferred and the line goes dead, that is what happened; ring back and say so and they will give you the direct number. The system has been on the technology replacement list since 2019 and is behind the network and the devices, in that order.",
+          "[b]After hours[/b] there is no answering service. The district office machine is cleared at 7:30 a.m. For a child who is not where they should be, telephone the sheriff's non-emergency line; see [url=synth://veritysheriff.gov/s/dispatch]911, the Non-Emergency Line, and Who To Call[/url]. That has been needed four times in ten years and it worked all four times."
+        ],
+        "forms": [
+          {
+            "name": "Who to call for what (1 page)",
+            "note": "One page, four columns, magnet-sized. Sent home in September. Bus, absence, meal account, everything else. It is the single most useful page this district produces and it costs $214 a year to print."
+          }
+        ]
+      },
+      {
+        "id": "enroll",
+        "name": "Registering a Student",
+        "blurb": "What to bring, where to bring it, and why the district asks for two proofs of residence. About 40 minutes at the counter if you have everything and two visits if you do not.",
+        "status": "online",
+        "lastUpdated": "2026-07-15",
+        "steps": [
+          "[b]Where.[/b] The district office, 1400 Bellamy Street, Marchfield, Monday to Friday 8:00 a.m. to 3:30 p.m. Not at the building. The registrar is Peg Lauver, 782-3100 extension 208, and it is worth telephoning first because she will tell you what your particular case needs.",
+          "[b]Bring:[/b] the child's birth certificate or a passport; the immunisation record; two proofs of residence; the last report card or transcript if there is one; and a photograph identification for the adult enrolling the child. If there is a custody order, bring the order and not a description of it.",
+          "[b]Two proofs of residence[/b] means two of: a deed, a lease, a current utility bill, a property tax bill, or a completed affidavit from the person whose house you live in. Two, because the district's state aid is calculated on where children live and because an attendance area line has a house on each side of it. The district is not trying to catch you out; it has been audited on this twice.",
+          "[b]If you are living with somebody else[/b], the affidavit is Form VCS-7 and is signed by both households and does not need a notary. Nobody is refused enrollment for being between addresses; the law does not allow it and this district would not want to. Tell the registrar the situation plainly and she will tell you which form it is.",
+          "[b]Immunisations[/b] are the state's rules and not the district's. A child may start school with a record showing the series begun. A medical exemption is a physician's form. The nurse coordinator, extension 219, will tell you what is outstanding, and she will tell you before the fourteenth day rather than on it.",
+          "[b]Kindergarten[/b] is for a child who is five on or before 1 December. Registration opens the first Monday in February for the following September and there is a screening appointment in May. This year's kindergarten is 168 children, the smallest the district has counted.",
+          "[b]Moving out mid-year.[/b] Tell the building office and the registrar. Records go to the new district on request from that district and not from you, which is standard and which surprises people. Allow ten days. A transcript for a student leaving the high school in the final year should be requested in writing with three weeks' notice.",
+          "[b]Pre-kindergarten[/b] is a half-day programme at Gridfall Elementary and New Ardo Elementary only, 36 places between them, and it is over-subscribed every year. There is a lottery in April. The district does not have a pre-kindergarten at New Carrow or Halsey and has said at three budget hearings that it would like one."
+        ],
+        "forms": [
+          {
+            "name": "Registration packet (7 pages)",
+            "note": "Home language survey, health history, emergency card, media consent, technology agreement, bus request, and a page about head lice that the nurse insists on and that she is right about."
+          },
+          {
+            "name": "Residency Affidavit (Form VCS-7)",
+            "note": "One page, two signatures, no notary. Used about 60 times a year."
+          },
+          {
+            "name": "Records Release Request (Form VCS-9)",
+            "note": "One page. Signed by the parent, sent by the receiving district. Ten working days."
+          }
+        ]
+      },
+      {
+        "id": "records",
+        "name": "Public Records Requests",
+        "blurb": "What this district holds, what it does not, the form, and the log of what has been asked for this year and what it cost.",
+        "status": "online",
+        "lastUpdated": "2026-09-12",
+        "steps": [
+          "[b]What this district holds.[/b] Minutes, resolutions, policies, agendas and packets within retention, budgets, audits, contracts, bid documents, the payroll register, employment contracts, building plans, transportation route data, enrollment counts and correspondence. That is the list, and most requests are for one of the first five.",
+          "[b]What it does not hold.[/b] Student records, which are not public and are released only to the parent or the student. Personnel files beyond the contract and the salary. Anything about property, tax, permits, deeds, septic or wells; that is the county, at [url=synth://verity.county.gov/s/records-request]Public Records Request[/url]. Anything about the water in a building's taps, which is the water board or the village.",
+          "[b]How.[/b] Form VCS-14, one page, to the clerk. Five working days to a response. $0.25 a page and the fee is waived on request more often than it is charged. The district does not ask why you want something and will not, and the form has no box for it.",
+          "[b]Ask for the packet, not only the minutes.[/b] The minutes say \"discussion held\". The packet says what was discussed. If you do not know what is in a packet, ask the clerk what a meeting's packet contained; she will read you the table of contents over the telephone and that has saved several people a $15 copying charge.",
+          "[b]Log, 2026.[/b] Twenty-three requests received to 12 September, twenty-one closed, two open.[list][*]2026-03, budget worksheets 2026-27, 61 pages, released, fee waived[*]2026-06, all correspondence regarding the middle school bus loop, 9 pages, released[*]2026-09, transportation study and the competing bids, 28 pages, released, published in full by the requester[*]2026-11, the superintendent's contract, 14 pages, released[*]2026-14, \"any district correspondence regarding the Route 62 transmitter\", 0 pages, no records[*]2026-17, bus video of a specific date, refused; the video had been overwritten on the fourteenth day and the letter says so[*]2026-19, names and home addresses of all employees, refused as to addresses, released as to names and titles[*]2026-22, every closing and delay since 1990, partially released, 2016 onward only, see [url=/s/closing-log]Closing Log[/url][/list]",
+          "[b]Two are open.[/b] 2026-20, ten years of energy bills by building, which is 480 statements in a filing cabinet, and the clerk has done 2016 to 2019. 2026-23, received 9 September, all records regarding the transportation award, which is most of the 61-page packet again and will be released on 23 September.",
+          "[b]Automated requests.[/b] Eleven of the twenty-three came from the same address at a company that resells public records, all in the same week in February, all asking for the same payroll register, all in slightly different words. They were answered once and the other ten were answered with a copy of the first answer. This is not a complaint; it is why the log looks the way it does.",
+          "[b]If a request is refused[/b], the letter says which exemption and which section, and the appeal is to the Board, in writing, within thirty days. Two have been appealed since 2019 and one was granted."
+        ],
+        "forms": [
+          {
+            "name": "Public Records Request (Form VCS-14)",
+            "note": "One page. Name, what you want, how you want it. A description that names a meeting date or a document title gets an answer in days; a description that says \"everything about the buses\" gets a telephone call asking you to narrow it, which is not a delaying tactic and is where the clerk is trying to save you money."
+          },
+          {
+            "name": "Records request log, 2026 (2 pages)",
+            "note": "The same log with the dates and the fees. Total collected this year: $18.25."
+          },
+          {
+            "name": "Fee waiver note (1 page)",
+            "note": "The clerk's own note on when the fee is waived, which is: when the request is under 20 pages, when it is from a resident about their own child's school, and when charging would take longer than copying."
+          }
+        ]
+      },
+      {
+        "id": "jobs",
+        "name": "Employment, Substitutes and the Driver Shortage",
+        "blurb": "What is open, what it pays, how to apply, and which of the advertisements you have seen for this district are not from this district.",
+        "status": "online",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "[b]Open now:[/b] a half-time elementary music teacher, advertised three times since May; one special education aide at Gridfall Elementary; two bus driver positions, with the note below; a night custodian at the high school; and substitutes in every category.",
+          "[b]Pay.[/b] Bus drivers $21.15 an hour with four hours guaranteed. Aides and paraprofessionals average $16.40. Substitute teachers $115 a day, $125 after twenty days in the same assignment. Custodial $17.90 with a shift differential of $0.75 after 6 p.m. Teaching salaries are on the negotiated schedule, which is on the counter and runs from $44,100 to $78,600.",
+          "[b]The driver positions come with a caution.[/b] The runs go to a contractor on 4 January 2027. A person hired now is hired by the district for fourteen weeks and would then be offered a position with the operator on the same terms as the current drivers, which is the present rate guaranteed for one year. The district is telling applicants this at the first telephone call because it would rather lose an applicant than mislead one. See [url=/s/bus-contract]Transportation Contract - What Changes on 4 January[/url].",
+          "[b]Driver training is paid[/b] and the licence and endorsements are paid for. You owe the district nothing if you leave. You must pass the physical and the background check and be able to talk to an eleven-year-old without losing your temper, which is the part that thins the field.",
+          "[b]Substitutes[/b] are the real shortage. The district filled 91 percent of teacher absences last year and the unfilled ones are covered by splitting a class, which is a bad answer that everybody knows is a bad answer. There is no certification requirement for a substitute aide and there is a sixty-day emergency certification for a substitute teacher.",
+          "[b]How to apply.[/b] On paper, at the district office, or by email to the business office. There is no applicant tracking system and there will not be one. A one-page letter and a telephone number is enough. You will hear back; the business administrator's rule is ten working days, and he keeps it.",
+          "[b]Advertisements you may have seen.[/b] Listings for this district appear on job aggregators with our name on them and with pay figures we did not write, some of them a dollar or two high. Some of them are for other districts entirely; a bus driver drove to Marchfield in August for a Kerrin Consolidated run listed under this district's name at [url=synth://verityjobs.org/]verityjobs.org[/url]. Some are the same listing reposted for two years. [b]This district never charges an applicant anything[/b], never asks for a fee for a background check in advance, and never interviews by text message.",
+          "[b]Retirements.[/b] Seven teaching staff retired in June with a combined 209 years in this district. The Board recognises retirements at the June meeting and the list is read aloud, which takes about four minutes and is the best four minutes of the year."
+        ],
+        "forms": [
+          {
+            "name": "Application for Employment (Form VCS-40)",
+            "note": "Two pages. Three references, one of which should be somebody who has watched you work. Not a portal."
+          },
+          {
+            "name": "Substitute application packet (5 pages)",
+            "note": "Application, fingerprint form, tax forms, and the half page explaining the emergency sixty-day certificate."
+          },
+          {
+            "name": "Negotiated salary schedule, 2025-2028 (6 pages)",
+            "note": "Counter or on request. Step and column. Twenty-two steps, which is longer than most and is why a teacher in year twelve here earns what a teacher in year eight earns in the next county."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About This Site",
+        "blurb": "Who writes it, what it runs on, why it looks like a numbered list, and what to do when it is wrong.",
+        "status": "online",
+        "lastUpdated": "2026-09-19",
+        "steps": [
+          "[b]Who writes it.[/b] The district clerk, with the food service director for the menus and the transportation supervisor for the routes. It is not anybody's whole job. Nothing on this site is written by an outside firm and nothing on it is generated.",
+          "[b]What it runs on.[/b] The content management system the district bought in 2005. The vendor stopped supporting it in 2016. It produces a heading, a list of numbered paragraphs and a list of attachments, and that is why every page on this site is a heading, a list of numbered paragraphs and a list of attachments. A blog post at [url=synth://codeandcoffee.blog/]Code & Coffee[/url] took it apart in 2007 and was right about all of it. Replacing it is on the technology list behind the telephone system, which is behind the network, which is behind the devices.",
+          "[b]What is out of date.[/b] The staff directory, badly, and the district knows it. The policy manual, which cannot be exported. The 2009 to 2013 minutes, which were lost in a site migration in 2019 and exist on paper. Two letters that go home every year and still name a system retired in 2019. Anything with a date on it older than two years on this site should be read as \"this is what we had then\".",
+          "[b]If something here is wrong[/b], telephone 782-3100 extension 202 or write. Corrections are made the same week. Six have been made this year: a wrong meal price, two wrong extensions, a bus time on run 9, the graduation date, and the word \"Tuesday\" where the Board has met on a Wednesday since 2014.",
+          "[b]There is no search on this site.[/b] The search box was removed in 2021 because it returned the 2019 version of every page and nothing else. The pages are listed on the front and there are twenty-one of them. Twenty-one pages can be read.",
+          "[b]What this site is for.[/b] Closings, the menu, the buses, the calendar, the minutes and the telephone numbers. Those six are 94 percent of the traffic and everything else on here exists because somebody asked for it at a counter twice.",
+          "[i]From the clerk.[/i] I type the minutes and I keep this site. If a number on a page here does not match a number in the minutes, the minutes are right and the page is my mistake, and I would like to be told rather than corrected in public, though I would rather be corrected in public than left wrong. The paragraph about what a closing costs on the closings page is mine and I put it there because I was reading the same sentence out on the telephone nine times a winter. - J. Prill, district clerk"
+        ],
+        "forms": [
+          {
+            "name": "Site page list (1 page)",
+            "note": "Twenty-one pages, what each is for, and who keeps it. Printed and taped inside the counter at the district office so whoever is at the counter can say which page a caller wants."
+          },
+          {
+            "name": "Website accessibility statement (2 pages)",
+            "note": "Written in 2019 and accurate about the site as it was in 2019. The district cannot make a 2005 content system meet the current standard and says so here rather than pretending."
+          }
+        ]
+      }
+    ]
+  }
+}

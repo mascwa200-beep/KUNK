@@ -1,0 +1,1293 @@
+/* SYNTHNET :: forum skins
+   Every rule is scoped under its .skin-<name> class so nothing leaks.
+   Skins: phpbb-blue, ezboard-grey, softboard.  Usable down to 360px. */
+
+/* =====================================================================
+   phpbb-blue  --  subSilver-ish: blue/grey gradient bars, 1px cell rules
+   ===================================================================== */
+
+.skin-phpbb-blue,
+.skin-phpbb-blue * { box-sizing: border-box; }
+
+.skin-phpbb-blue {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000000;
+  background: #e5e5e5;
+  padding: 8px;
+}
+
+.skin-phpbb-blue a { color: #006699; text-decoration: none; }
+.skin-phpbb-blue a:hover { color: #dd6900; text-decoration: underline; }
+.skin-phpbb-blue a:visited { color: #5493b4; }
+.skin-phpbb-blue .dim { color: #4a5b66; }
+
+.skin-phpbb-blue .fbanner {
+  background: linear-gradient(#1a6ea8, #003f6e);
+  border: 1px solid #003f6e;
+  color: #ffffff;
+  padding: 10px 12px;
+}
+.skin-phpbb-blue .fbanner h1 { margin: 0; font-size: 19px; letter-spacing: .02em; }
+.skin-phpbb-blue .fbanner a,
+.skin-phpbb-blue .fbanner a:visited { color: #ffffff; }
+.skin-phpbb-blue .fdesc { font-size: 11px; color: #cfe3f2; margin-top: 2px; }
+.skin-phpbb-blue .fnav { margin-top: 8px; font-size: 11px; }
+.skin-phpbb-blue .fnav .navitem { color: #b9d6ea; margin-right: 12px; white-space: nowrap; }
+
+.skin-phpbb-blue .crumb { font-size: 11px; margin: 8px 0 6px; color: #3c4b55; }
+.skin-phpbb-blue .crumb .here { font-weight: bold; color: #000000; }
+.skin-phpbb-blue .crumb .sepa { color: #7b98ab; }
+
+.skin-phpbb-blue .cat { margin-bottom: 12px; }
+.skin-phpbb-blue .cat-head {
+  background: linear-gradient(#1a6ea8, #0b4a78);
+  border: 1px solid #7b98ab;
+  border-bottom: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 8px;
+}
+
+.skin-phpbb-blue .flist {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #7b98ab;
+  table-layout: fixed;
+}
+.skin-phpbb-blue .flist th {
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border: 1px solid #a9b8c2;
+  color: #10456d;
+  font-size: 11px;
+  text-align: left;
+  padding: 4px 6px;
+}
+.skin-phpbb-blue .flist td {
+  border: 1px solid #d6dfe6;
+  padding: 6px;
+  vertical-align: top;
+  background: #f4f7f9;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.skin-phpbb-blue .flist tr.alt td { background: #e9eef3; }
+.skin-phpbb-blue .flist tr.is-sticky td { background: #fdf6e3; }
+
+.skin-phpbb-blue .col-icon { width: 26px; }
+.skin-phpbb-blue .col-num { width: 62px; text-align: center; font-size: 11px; }
+.skin-phpbb-blue .col-last { width: 170px; font-size: 11px; }
+.skin-phpbb-blue .col-author { width: 110px; font-size: 11px; }
+
+.skin-phpbb-blue .ficon {
+  display: inline-block;
+  width: 15px; height: 15px;
+  border: 1px solid #17527f;
+  background: #3f7fb0;
+  border-radius: 2px;
+}
+.skin-phpbb-blue .ficon.off { background: #b8c6d2; border-color: #8ea3b3; }
+.skin-phpbb-blue .ficon.lock { background: #a33c3c; border-color: #742626; }
+.skin-phpbb-blue .ficon.pin { background: #d8a13a; border-color: #9c7020; }
+
+.skin-phpbb-blue .fboard-name { font-weight: bold; font-size: 12px; }
+.skin-phpbb-blue .fboard-desc { font-size: 11px; color: #44545f; margin-top: 2px; }
+.skin-phpbb-blue .lp-time { font-size: 11px; }
+.skin-phpbb-blue .lp-by { font-size: 11px; color: #44545f; }
+
+.skin-phpbb-blue .tbar {
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border: 1px solid #a9b8c2;
+  padding: 6px 8px;
+  margin: 8px 0 0;
+}
+.skin-phpbb-blue .tbar-title { font-weight: bold; font-size: 13px; color: #10456d; }
+.skin-phpbb-blue .tbar-sub { display: block; font-size: 11px; color: #44545f; margin-top: 2px; }
+
+.skin-phpbb-blue .ttitle { font-size: 12px; font-weight: bold; }
+.skin-phpbb-blue .tmeta { font-size: 11px; color: #44545f; margin-top: 2px; }
+.skin-phpbb-blue .tflag {
+  font-size: 10px; font-weight: bold; text-transform: uppercase;
+  margin-right: 5px; padding: 1px 4px; border-radius: 2px;
+}
+.skin-phpbb-blue .tflag.sticky { background: #d8a13a; color: #3a2a06; }
+.skin-phpbb-blue .tflag.locked { background: #a33c3c; color: #ffffff; }
+.skin-phpbb-blue .lockednote {
+  background: #fdf0f0; border: 1px solid #d6a2a2;
+  padding: 6px 8px; font-size: 11px; margin-top: 6px;
+}
+
+.skin-phpbb-blue .post {
+  display: flex;
+  border: 1px solid #7b98ab;
+  background: #ffffff;
+  margin: 8px 0;
+}
+.skin-phpbb-blue .post-author {
+  width: 150px;
+  flex: 0 0 150px;
+  background: #e9eef3;
+  border-right: 1px solid #c3d0da;
+  padding: 8px;
+  text-align: center;
+  font-size: 11px;
+}
+.skin-phpbb-blue .avatar {
+  width: 48px; height: 48px; line-height: 48px;
+  margin: 0 auto 6px;
+  border: 1px solid #7b98ab;
+  color: #ffffff; font-weight: bold; font-size: 15px;
+  overflow: hidden;
+}
+.skin-phpbb-blue .aname { font-weight: bold; color: #10456d; font-size: 12px; }
+.skin-phpbb-blue .atitle { font-style: italic; color: #44545f; }
+.skin-phpbb-blue .ameta { color: #5a6b76; }
+.skin-phpbb-blue .post-main { flex: 1 1 auto; min-width: 0; }
+.skin-phpbb-blue .post-head {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  background: linear-gradient(#e6edf3, #c7d3de);
+  border-bottom: 1px solid #a9b8c2;
+  padding: 4px 8px; font-size: 11px; color: #10456d;
+}
+.skin-phpbb-blue .perma { font-weight: bold; }
+.skin-phpbb-blue .post-body {
+  padding: 10px; font-size: 12px; line-height: 1.55;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-phpbb-blue .post-body p { margin: 0 0 .8em; }
+.skin-phpbb-blue .post-body blockquote,
+.skin-phpbb-blue .post-body .quote {
+  background: #eaedf3; border: 1px solid #b7c2cd; border-left: 3px solid #7b98ab;
+  margin: .6em 0; padding: 6px 8px; font-size: 11px;
+}
+.skin-phpbb-blue .post-body pre,
+.skin-phpbb-blue .post-body .code {
+  font-family: "Courier New", Courier, monospace; font-size: 11px;
+  background: #faf9f0; border: 1px dashed #9aa0a6;
+  padding: 6px 8px; margin: .6em 0; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-phpbb-blue .post-body ul { margin: .5em 0 .8em 1.2em; padding: 0; }
+.skin-phpbb-blue .post-body img { max-width: 100%; height: auto; }
+.skin-phpbb-blue .sep { border-top: 1px solid #c3d0da; margin: 4px 10px; }
+.skin-phpbb-blue .sig { padding: 6px 10px 10px; font-size: 11px; color: #4a5860; }
+
+.skin-phpbb-blue .pager { font-size: 11px; margin: 8px 0; color: #44545f; }
+.skin-phpbb-blue .pager .pg-label { color: #10456d; }
+.skin-phpbb-blue .pager a,
+.skin-phpbb-blue .pager .cur {
+  display: inline-block; padding: 1px 5px; margin: 1px 0;
+  border: 1px solid #a9b8c2; background: #e9eef3;
+}
+.skin-phpbb-blue .pager .cur { background: #ffffff; border-color: #006699; color: #000000; }
+.skin-phpbb-blue .pager .pg-sep { display: none; }
+.skin-phpbb-blue .pager .pg-gap { display: inline-block; width: 8px; }
+
+.skin-phpbb-blue .boardfoot { font-size: 11px; margin: 8px 0; }
+.skin-phpbb-blue .backlink { font-weight: bold; }
+
+.skin-phpbb-blue .fbottom {
+  background: #ffffff; border: 1px solid #7b98ab;
+  padding: 8px; margin-top: 12px; font-size: 11px;
+}
+.skin-phpbb-blue .fonline { margin-bottom: 4px; }
+.skin-phpbb-blue .fstats { border-top: 1px solid #d6dfe6; padding-top: 6px; margin-top: 6px; }
+.skin-phpbb-blue .legend { margin-top: 8px; color: #44545f; }
+.skin-phpbb-blue .legend .ficon { vertical-align: -2px; margin-right: 3px; }
+
+.skin-phpbb-blue .blank {
+  background: #ffffff; border: 1px solid #7b98ab;
+  padding: 14px; margin: 8px 0; color: #44545f;
+}
+.skin-phpbb-blue .err { border: 1px solid #7b98ab; background: #ffffff; margin: 10px 0; }
+.skin-phpbb-blue .err-head {
+  background: linear-gradient(#1a6ea8, #0b4a78); color: #ffffff;
+  font-weight: bold; padding: 5px 8px;
+}
+.skin-phpbb-blue .err-body { padding: 12px; }
+.skin-phpbb-blue .ffoot {
+  margin-top: 14px; font-size: 10px; color: #5a6b76; text-align: center;
+}
+
+@media (max-width: 620px) {
+  .skin-phpbb-blue { padding: 5px; }
+  .skin-phpbb-blue .col-num,
+  .skin-phpbb-blue .col-author { display: none; }
+  .skin-phpbb-blue .col-last { width: 120px; }
+}
+@media (max-width: 440px) {
+  /* The nav items are white-space:nowrap inside a fixed-width masthead, so on
+     a phone the last one ("Log in") was simply cut off at the edge with no
+     scroll and no wrap. Document scrollWidth was unaffected, which is why the
+     overflow check never caught it -- the clipping happened inside the banner.
+     Allow a second line and tighten the gaps. */
+  .skin-phpbb-blue .fnav { display: flex; flex-wrap: wrap; row-gap: 4px; }
+  .skin-phpbb-blue .fnav .navitem { margin-right: 10px; }
+  .skin-ezboard-grey .fnav { display: flex; flex-wrap: wrap; row-gap: 3px; }
+  .skin-ezboard-grey .fnav .navitem { margin-right: 7px; }
+  .skin-phpbb-blue .fbanner h1 { font-size: 16px; }
+  .skin-phpbb-blue .col-last { display: none; }
+  .skin-phpbb-blue .flist td,
+  .skin-phpbb-blue .flist th { padding: 5px 4px; }
+  .skin-phpbb-blue .post { display: block; }
+  /* `display: inline` on the three text lines below is blockified the moment
+     they become flex items, so they do NOT reflow as text the way the rule
+     reads -- they stay one unwrapping row, and a long name pushes "Posts:"
+     off the right edge. Nothing scrolls, so it is just gone. Invisible to the
+     overflow check as it was aimed, because the check sampled one thread per
+     site and the long names are further in; /members/<name> now gives every
+     one of them a page of its own, which is where it showed up. Let the row
+     wrap. */
+  .skin-phpbb-blue .post-author {
+    width: auto; flex: none;
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    text-align: left; border-right: none;
+    border-bottom: 1px solid #c3d0da; padding: 6px;
+  }
+  .skin-phpbb-blue .post-author .avatar {
+    width: 34px; height: 34px; line-height: 34px; font-size: 12px; margin: 0;
+    flex: 0 0 34px;
+  }
+  .skin-phpbb-blue .aname,
+  .skin-phpbb-blue .atitle,
+  .skin-phpbb-blue .ameta { display: inline; margin-right: 8px; }
+  .skin-phpbb-blue .post-head { flex-wrap: wrap; }
+}
+
+/* =====================================================================
+   ezboard-grey  --  flatter, heavier borders, Verdana, cramped
+   ===================================================================== */
+
+.skin-ezboard-grey,
+.skin-ezboard-grey * { box-sizing: border-box; }
+
+.skin-ezboard-grey {
+  font-family: Verdana, Geneva, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #111111;
+  background: #ffffff;
+  padding: 6px;
+}
+
+.skin-ezboard-grey a { color: #000080; text-decoration: underline; }
+.skin-ezboard-grey a:visited { color: #551a8b; }
+.skin-ezboard-grey a:hover { color: #cc0000; }
+.skin-ezboard-grey .dim { color: #555555; }
+
+.skin-ezboard-grey .fbanner {
+  background: #5d5d5d;
+  border: 2px solid #333333;
+  color: #ffffff;
+  padding: 6px 8px;
+}
+.skin-ezboard-grey .fbanner h1 { margin: 0; font-size: 16px; }
+.skin-ezboard-grey .fbanner a,
+.skin-ezboard-grey .fbanner a:visited { color: #ffffff; text-decoration: none; }
+.skin-ezboard-grey .fdesc { font-size: 10px; color: #eeeeee; }
+.skin-ezboard-grey .fnav { margin-top: 4px; font-size: 10px; }
+.skin-ezboard-grey .fnav .navitem { color: #ffffcc; margin-right: 8px; }
+
+.skin-ezboard-grey .crumb { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .crumb .here { font-weight: bold; }
+.skin-ezboard-grey .crumb .sepa { color: #666666; }
+
+.skin-ezboard-grey .cat { margin-bottom: 8px; }
+.skin-ezboard-grey .cat-head {
+  background: #666666; color: #ffffff; font-weight: bold;
+  padding: 3px 6px; border: 2px solid #333333; border-bottom: none;
+  font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+}
+
+.skin-ezboard-grey .flist {
+  width: 100%; border-collapse: collapse; background: #ffffff;
+  border: 2px solid #333333; table-layout: fixed;
+}
+.skin-ezboard-grey .flist th {
+  background: #cccccc; border: 2px solid #666666; color: #000000;
+  font-size: 10px; text-align: left; padding: 2px 4px; text-transform: uppercase;
+}
+.skin-ezboard-grey .flist td {
+  border: 2px solid #999999; padding: 3px 4px; vertical-align: top;
+  background: #ffffff; font-size: 11px;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-ezboard-grey .flist tr.alt td { background: #f0f0f0; }
+.skin-ezboard-grey .flist tr.is-sticky td { background: #ffffcc; }
+
+.skin-ezboard-grey .col-icon { width: 20px; }
+.skin-ezboard-grey .col-num { width: 52px; text-align: center; }
+.skin-ezboard-grey .col-last { width: 150px; }
+.skin-ezboard-grey .col-author { width: 100px; }
+
+.skin-ezboard-grey .ficon {
+  display: inline-block; width: 11px; height: 11px;
+  border: 1px solid #000000; background: #808080;
+}
+.skin-ezboard-grey .ficon.off { background: #dddddd; }
+.skin-ezboard-grey .ficon.lock { background: #000000; }
+.skin-ezboard-grey .ficon.pin { background: #ffcc00; }
+
+.skin-ezboard-grey .fboard-name { font-weight: bold; }
+.skin-ezboard-grey .fboard-desc { font-size: 10px; color: #444444; }
+.skin-ezboard-grey .lp-time,
+.skin-ezboard-grey .lp-by { font-size: 10px; }
+
+.skin-ezboard-grey .tbar {
+  background: #cccccc; border: 2px solid #333333;
+  padding: 3px 6px; margin-top: 6px;
+}
+.skin-ezboard-grey .tbar-title { font-weight: bold; font-size: 12px; }
+.skin-ezboard-grey .tbar-sub { display: block; font-size: 10px; color: #444444; }
+
+.skin-ezboard-grey .ttitle { font-weight: bold; }
+.skin-ezboard-grey .tmeta { font-size: 10px; color: #555555; }
+.skin-ezboard-grey .tflag { font-size: 10px; font-weight: bold; margin-right: 4px; }
+.skin-ezboard-grey .tflag.sticky { color: #996600; }
+.skin-ezboard-grey .tflag.locked { color: #cc0000; }
+.skin-ezboard-grey .lockednote {
+  border: 2px solid #cc0000; padding: 4px 6px; font-size: 10px; margin-top: 4px;
+}
+
+.skin-ezboard-grey .post {
+  display: flex; border: 2px solid #333333; margin: 6px 0; background: #ffffff;
+}
+.skin-ezboard-grey .post-author {
+  width: 122px; flex: 0 0 122px;
+  border-right: 2px solid #999999; background: #f0f0f0;
+  padding: 4px; text-align: center; font-size: 10px;
+}
+.skin-ezboard-grey .avatar {
+  width: 40px; height: 40px; line-height: 40px; margin: 0 auto 4px;
+  border: 2px solid #333333; color: #ffffff; font-weight: bold; font-size: 13px;
+}
+.skin-ezboard-grey .aname { font-weight: bold; font-size: 11px; }
+.skin-ezboard-grey .atitle { color: #444444; }
+.skin-ezboard-grey .ameta { color: #666666; }
+.skin-ezboard-grey .post-main { flex: 1 1 auto; min-width: 0; }
+.skin-ezboard-grey .post-head {
+  display: flex; justify-content: space-between; gap: 6px;
+  background: #cccccc; border-bottom: 2px solid #999999;
+  padding: 2px 5px; font-size: 10px;
+}
+.skin-ezboard-grey .post-body {
+  padding: 6px; font-size: 11px; line-height: 1.45;
+  overflow-wrap: break-word; word-wrap: break-word;
+}
+.skin-ezboard-grey .post-body p { margin: 0 0 .7em; }
+.skin-ezboard-grey .post-body blockquote,
+.skin-ezboard-grey .post-body .quote {
+  border: 2px solid #999999; background: #f6f6f6;
+  margin: .5em 0; padding: 4px 6px; font-size: 10px;
+}
+.skin-ezboard-grey .post-body pre,
+.skin-ezboard-grey .post-body .code {
+  font-family: "Courier New", monospace; font-size: 10px;
+  border: 2px solid #999999; background: #f0f0f0;
+  padding: 4px 6px; overflow-x: auto; white-space: pre-wrap;
+}
+.skin-ezboard-grey .post-body ul { margin: .4em 0 .6em 1.1em; padding: 0; }
+.skin-ezboard-grey .post-body img { max-width: 100%; height: auto; }
+.skin-ezboard-grey .sep { border-top: 2px solid #999999; margin: 3px 6px; }
+.skin-ezboard-grey .sig { padding: 4px 6px 6px; font-size: 10px; color: #555555; }
+
+.skin-ezboard-grey .pager { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .pager a,
+.skin-ezboard-grey .pager .cur {
+  display: inline-block; padding: 0 4px; border: 2px solid #999999; margin: 1px 0;
+}
+.skin-ezboard-grey .pager .cur { background: #cccccc; }
+.skin-ezboard-grey .pager .pg-sep { display: none; }
+.skin-ezboard-grey .pager .pg-gap { display: inline-block; width: 6px; }
+
+.skin-ezboard-grey .boardfoot { font-size: 10px; margin: 5px 0; }
+.skin-ezboard-grey .fbottom {
+  border: 2px solid #333333; padding: 6px; margin-top: 8px; font-size: 10px;
+}
+.skin-ezboard-grey .fstats { border-top: 2px solid #999999; margin-top: 4px; padding-top: 4px; }
+.skin-ezboard-grey .legend { margin-top: 5px; color: #555555; }
+.skin-ezboard-grey .legend .ficon { vertical-align: -1px; margin-right: 2px; }
+.skin-ezboard-grey .blank { border: 2px solid #999999; padding: 10px; margin: 6px 0; color: #555555; }
+.skin-ezboard-grey .err { border: 2px solid #333333; margin: 8px 0; }
+.skin-ezboard-grey .err-head { background: #666666; color: #ffffff; font-weight: bold; padding: 3px 6px; }
+.skin-ezboard-grey .err-body { padding: 10px; }
+.skin-ezboard-grey .ffoot { margin-top: 10px; font-size: 10px; color: #666666; text-align: center; }
+
+@media (max-width: 620px) {
+  .skin-ezboard-grey { padding: 4px; }
+  .skin-ezboard-grey .col-num,
+  .skin-ezboard-grey .col-author { display: none; }
+  .skin-ezboard-grey .col-last { width: 110px; }
+}
+@media (max-width: 440px) {
+  .skin-ezboard-grey .col-last { display: none; }
+  .skin-ezboard-grey .post { display: block; }
+  /* Same blockified-inline trap as phpbb-blue above: wrap the row. */
+  .skin-ezboard-grey .post-author {
+    width: auto; flex: none; display: flex; align-items: center; gap: 6px;
+    flex-wrap: wrap;
+    text-align: left; border-right: none; border-bottom: 2px solid #999999;
+  }
+  .skin-ezboard-grey .post-author .avatar {
+    width: 30px; height: 30px; line-height: 30px; font-size: 11px; margin: 0; flex: 0 0 30px;
+  }
+  .skin-ezboard-grey .aname,
+  .skin-ezboard-grey .atitle,
+  .skin-ezboard-grey .ameta { display: inline; margin-right: 6px; }
+}
+
+/* --- unread ------------------------------------------------------------
+ *
+ * "Jump to first unread" is the affordance that defined forums, and the
+ * divider dropped into the river at the exact post you had not seen is the
+ * half of it that matters -- a marker at the top of the page tells you
+ * nothing you did not already know.
+ *
+ * Both skins get it, because both forum skins are forums.
+ */
+.skin-phpbb-blue .unreadjump,
+.skin-ezboard-grey .unreadjump {
+  margin: 6px 0;
+  padding: 5px 9px;
+  font-size: 11px;
+  background: #fffbe6;
+  border: 1px solid #e3d59a;
+}
+
+.skin-phpbb-blue .unreadjump .jumplink,
+.skin-ezboard-grey .unreadjump .jumplink {
+  font-weight: bold;
+  /* #7a5200 on #fffbe6 is 5.9:1. */
+  color: #7a5200;
+}
+
+.skin-phpbb-blue .unreadbar,
+.skin-ezboard-grey .unreadbar {
+  margin: 10px 0 4px 0;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #a33b2a;
+  border-top: 2px solid #c0392b;
+  background: linear-gradient(rgba(192, 57, 43, 0.10), transparent);
+  /* Scroll-margin so the #first-unread anchor does not land the divider
+     flush against the top of the viewport with the post cut off above it. */
+  scroll-margin-top: 12px;
+}
+
+/* =====================================================================
+   softboard  --  what a forum looks like in 2026
+
+   The other two skins are period pieces, and until this one existed every
+   forum on this network -- including the ones started in 2017 and running
+   today -- wore a 2004 table layout. That is a real look for a board that
+   never got round to upgrading, which is why sdrlisteners.org keeps it,
+   and the wrong look for everything else.
+
+   The shape this imitates is the flat, wide, avatar-led list that every
+   forum platform converged on: no cell borders, no gradients, one hairline
+   between rows, the category as a coloured pill, and the metadata demoted
+   to a grey line under the title rather than given its own columns.
+
+   The renderer emits a <table> and cannot be changed per skin, so the table
+   is flattened here: rows become blocks, cells become flex children, and
+   the header row is removed outright. That is the whole trick, and it is
+   why this skin needs no renderer support at all.
+   ===================================================================== */
+
+.skin-softboard,
+.skin-softboard * { box-sizing: border-box; }
+
+.skin-softboard {
+  /* The system stack, because that is what these platforms use and it is
+     what makes the difference read as "recent" before anything else does. */
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  color: #1c1c1e;
+  background: #ffffff;
+  padding: 0;
+}
+
+.skin-softboard a { color: #0a62c4; text-decoration: none; }
+.skin-softboard a:hover { text-decoration: underline; }
+/* No distinct :visited. Modern boards track read state per topic and show it
+   as weight and a dot rather than as purple links, so :visited is left alone
+   here deliberately. This comment used to point at an .is-read rule "below";
+   there is no such rule and there never was one after the skin was rewritten,
+   and forum.js does not emit the class. Per-topic read state needs storage
+   this renderer does not have, so the honest version is: unstyled for now. */
+.skin-softboard a:visited { color: #0a62c4; }
+.skin-softboard .dim { color: #6b6f76; }
+
+/* --- masthead ---------------------------------------------------------- */
+
+.skin-softboard .fbanner {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e5e8;
+  padding: 14px 16px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.skin-softboard .fbanner h1 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.skin-softboard .fbanner a,
+.skin-softboard .fbanner a:visited { color: #1c1c1e; }
+.skin-softboard .fdesc {
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+.skin-softboard .fnav {
+  margin-top: 10px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.skin-softboard .fnav .navitem { color: #0a62c4; white-space: nowrap; }
+
+.skin-softboard .crumb {
+  font-size: 13px;
+  color: #6b6f76;
+  padding: 10px 16px 0;
+}
+.skin-softboard .crumb .here { color: #1c1c1e; font-weight: 500; }
+.skin-softboard .crumb .sepa { color: #c3c7cc; padding: 0 2px; }
+
+/* --- the list ---------------------------------------------------------- */
+
+.skin-softboard .cat { margin: 0 0 4px; }
+.skin-softboard .cat-head {
+  padding: 18px 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6f76;
+  background: none;
+  border: 0;
+}
+
+/* Flatten the table. Rows become blocks and cells become flex children,
+   which is what lets a 2004 renderer draw a 2026 list. */
+.skin-softboard .flist {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  background: none;
+  display: block;
+}
+.skin-softboard .flist thead { display: none; }
+.skin-softboard .flist tbody { display: block; }
+.skin-softboard .flist tr {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 13px 16px;
+  border-bottom: 1px solid #ededf0;
+  background: none;
+}
+.skin-softboard .flist tr:hover { background: #fafbfc; }
+/* The 2004 skins stripe alternate rows. A flat list does not. */
+.skin-softboard .flist tr.alt { background: none; }
+.skin-softboard .flist tr.alt:hover { background: #fafbfc; }
+.skin-softboard .flist tr.is-sticky {
+  background: #fffdf5;
+  border-bottom-color: #f0e9d2;
+}
+.skin-softboard .flist td {
+  display: block;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+.skin-softboard .col-topic,
+.skin-softboard .col-forum {
+  flex: 1 1 100%;
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+.skin-softboard .ttitle,
+.skin-softboard .fboard-name {
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+.skin-softboard .fboard-desc {
+  display: block;
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+/* The metadata columns become one grey line under the title rather than
+   three narrow columns, which is the actual difference between the two
+   eras of forum design. */
+.skin-softboard .col-author,
+.skin-softboard .col-num,
+.skin-softboard .col-last {
+  width: auto;
+  text-align: left;
+  font-size: 13px;
+  color: #6b6f76;
+}
+.skin-softboard .col-num::after {
+  content: "";
+}
+.skin-softboard .col-last { flex: 1 1 auto; min-width: 0; }
+.skin-softboard .lp-by { color: #6b6f76; }
+.skin-softboard .lp-time { color: #8b9098; }
+
+/* The topic icon becomes a small state dot rather than a folder graphic. */
+.skin-softboard .col-icon { width: auto; flex: 0 0 auto; align-self: center; }
+.skin-softboard .ficon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0a62c4;
+  border: 0;
+}
+.skin-softboard .ficon.off { background: #d4d7dc; }
+
+.skin-softboard .legend { padding: 8px 16px; font-size: 13px; color: #6b6f76; }
+.skin-softboard .fstats,
+.skin-softboard .fonline {
+  padding: 10px 16px;
+  font-size: 13px;
+  color: #6b6f76;
+  border-top: 1px solid #ededf0;
+}
+
+/* --- a topic ----------------------------------------------------------- */
+
+.skin-softboard .tbar {
+  padding: 16px 16px 10px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #e3e5e8;
+}
+.skin-softboard .tbar-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: #1c1c1e;
+  overflow-wrap: break-word;
+}
+/* display:block, which the other two skins set and this one did not, so
+   the title ran straight into the meta: "(last edited 2019)Sticky 4
+   posts". Both are spans; the renderer relies on the skin for this. */
+.skin-softboard .tbar-sub {
+  display: block; margin-top: 5px; font-size: 13px; color: #6b6f76;
+}
+.skin-softboard .tmeta { font-size: 13px; color: #6b6f76; }
+
+/* The post. The 2004 skins put the author in a left column with a bordered
+   cell; this puts the avatar and name on one line above the body, which is
+   the layout that survived. */
+.skin-softboard .post {
+  display: block;
+  padding: 16px;
+  border-bottom: 1px solid #ededf0;
+  background: none;
+}
+/* This strip is a flex row at every width, so on a phone a long handle --
+   verity_deals_2026, SwapFinder_AI -- ran the post count off the right edge
+   with nothing to scroll it back. Wrapping costs a line only when it has to. */
+.skin-softboard .post-author {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  width: auto;
+  float: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0 0 9px;
+  text-align: left;
+}
+.skin-softboard .avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0;
+  flex: 0 0 auto;
+}
+.skin-softboard .uname,
+.skin-softboard .aname {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1c1c1e;
+}
+.skin-softboard .atitle,
+.skin-softboard .ameta {
+  font-size: 13px;
+  color: #8b9098;
+  font-weight: 400;
+}
+.skin-softboard .post-head {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #8b9098;
+}
+.skin-softboard .post-time { color: #8b9098; font-size: 13px; }
+.skin-softboard .post-main { display: block; }
+.skin-softboard .post-body {
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+.skin-softboard .post-body p { margin: 0 0 12px; }
+.skin-softboard .post-body blockquote {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-left: 3px solid #d4d7dc;
+  background: #fafbfc;
+  color: #4b4f56;
+}
+
+/* Signatures still exist in 2026 and are still an argument, but they are
+   quieter: small, grey, and behind a hairline rather than a full rule. */
+.skin-softboard .sig {
+  margin-top: 12px;
+  padding-top: 9px;
+  border-top: 1px solid #ededf0;
+  font-size: 12px;
+  color: #8b9098;
+  line-height: 1.45;
+}
+
+/* --- paging, recents, errors, footer ----------------------------------- */
+
+.skin-softboard .pg-label,
+.skin-softboard .pg-sep,
+.skin-softboard .pg-gap { font-size: 13px; color: #6b6f76; }
+.skin-softboard .cur { font-weight: 600; color: #1c1c1e; }
+.skin-softboard .sep { color: #c3c7cc; }
+
+.skin-softboard .lv-recent { padding: 0 0 6px; }
+.skin-softboard .lv-recent-head {
+  padding: 18px 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b6f76;
+}
+.skin-softboard .lv-recent-row {
+  padding: 11px 16px;
+  border-bottom: 1px solid #ededf0;
+}
+.skin-softboard .lv-recent-title { font-size: 15px; font-weight: 500; }
+.skin-softboard .lv-recent-meta {
+  display: block;
+  font-size: 13px;
+  color: #6b6f76;
+  margin-top: 2px;
+}
+
+.skin-softboard .err { margin: 16px; border: 1px solid #e3e5e8; border-radius: 8px; }
+.skin-softboard .err-head {
+  background: #fafbfc;
+  color: #1c1c1e;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e3e5e8;
+}
+.skin-softboard .err-body { padding: 14px; }
+.skin-softboard .lockednote {
+  margin: 12px 16px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #6b6f76;
+  background: #fafbfc;
+  border: 1px solid #e3e5e8;
+  border-radius: 8px;
+}
+.skin-softboard .boardfoot,
+.skin-softboard .fbottom,
+.skin-softboard .ffoot {
+  padding: 14px 16px 22px;
+  font-size: 13px;
+  color: #8b9098;
+  border-top: 1px solid #ededf0;
+}
+.skin-softboard .blank { color: #b0b4ba; }
+
+/* --- unread ------------------------------------------------------------
+ * Same affordance as the other two skins, wearing this decade's clothes:
+ * the pill instead of the yellow bar, and a blue rule instead of a red one.
+ */
+.skin-softboard .unreadjump {
+  margin: 10px 16px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #eef5fd;
+  border: 1px solid #cfe1f7;
+  border-radius: 999px;
+  display: inline-block;
+}
+/* #0a4f9e on #eef5fd is 7.1:1. */
+.skin-softboard .unreadjump .jumplink { font-weight: 600; color: #0a4f9e; }
+
+.skin-softboard .unreadbar {
+  margin: 14px 0 0;
+  padding: 0 16px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* #0a62c4 on #ffffff is 5.6:1. */
+  color: #0a62c4;
+  border-top: 2px solid #0a62c4;
+  background: none;
+  padding-top: 6px;
+  scroll-margin-top: 12px;
+}
+
+@media (max-width: 440px) {
+  .skin-softboard .fbanner { padding: 12px 12px 9px; }
+  .skin-softboard .fbanner h1 { font-size: 17px; }
+  .skin-softboard .crumb,
+  .skin-softboard .cat-head,
+  .skin-softboard .flist tr,
+  .skin-softboard .post,
+  .skin-softboard .tbar,
+  .skin-softboard .lv-recent-row,
+  .skin-softboard .lv-recent-head { padding-left: 12px; padding-right: 12px; }
+  .skin-softboard .tbar-title { font-size: 19px; }
+  /* Three grey facts under a title is one too many on a 360px row. The
+     last-post column carries the time, which is the one people scan for. */
+  .skin-softboard .col-num { display: none; }
+}
+
+/* The thread starter's tag, on all three forum skins: same idea, each
+   decade's clothes. */
+.skin-phpbb-blue .optag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  color: #ffffff;
+  background: #1a6ea8;
+  border: 1px solid #0b4a78;
+}
+.skin-ezboard-grey .optag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #3b3b3b;
+  background: #e2e2e2;
+  border: 1px solid #a9a9a9;
+}
+.skin-softboard .optag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  /* #0a4f9e on #eef5fd is 7.1:1. */
+  color: #0a4f9e;
+  background: #eef5fd;
+  border: 1px solid #cfe1f7;
+}
+
+/* --- derived identity ---------------------------------------------------
+ * The trust level and the join anniversary. Both are small on purpose: they
+ * are things you notice on the third read of a thread, not the first.
+ */
+.skin-phpbb-blue .atrust,
+.skin-ezboard-grey .atrust,
+.skin-softboard .atrust {
+  display: inline-block;
+  margin-top: 3px;
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: .04em;
+  border-radius: 2px;
+}
+.skin-phpbb-blue .atrust { background: #dfe7ef; color: #2c4a60; border: 1px solid #b7c8d6; }
+.skin-ezboard-grey .atrust { background: #ececec; color: #3b3b3b; border: 1px solid #b6b6b6; }
+.skin-softboard .atrust {
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f2f3f5;
+  /* #55606b on #f2f3f5 is 5.9:1. */
+  color: #55606b;
+  border: 1px solid #e0e3e7;
+}
+/* The top rung is the only one worth colouring. Everything below it is
+   bookkeeping; TL4 means someone has been here nine years. */
+.skin-phpbb-blue .atrust-4 { background: #fdf6e3; color: #7a5200; border-color: #e3d59a; }
+.skin-ezboard-grey .atrust-4 { background: #fbf4dd; color: #6b4a05; border-color: #d8c68a; }
+.skin-softboard .atrust-4 { background: #fff8e6; color: #7a5200; border-color: #f0e2b8; }
+
+.skin-phpbb-blue .cakeday,
+.skin-ezboard-grey .cakeday,
+.skin-softboard .cakeday {
+  margin-left: 5px;
+  font-size: 9px;
+  vertical-align: 1px;
+  /* #b06a00 is 4.6:1 on every one of the three backgrounds these sit on. */
+  color: #b06a00;
+}
+
+/* --- the moderation log -------------------------------------------------
+ * Public because every board eventually concludes it has to be. It does not
+ * make anyone fairer; it makes the unfairness legible, which is the only
+ * thing that has ever reduced the arguing.
+ */
+.skin-phpbb-blue .modlog,
+.skin-ezboard-grey .modlog,
+.skin-softboard .modlog { margin: 8px 0 14px; }
+
+.skin-phpbb-blue .modlog-row,
+.skin-ezboard-grey .modlog-row,
+.skin-softboard .modlog-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+.skin-softboard .modlog-row { padding: 9px 12px; font-size: 13px; }
+
+.skin-phpbb-blue .modlog-when,
+.skin-ezboard-grey .modlog-when,
+.skin-softboard .modlog-when {
+  flex: 0 0 auto;
+  min-width: 88px;
+  color: #6b6f76;
+}
+.skin-phpbb-blue .modlog-what,
+.skin-ezboard-grey .modlog-what,
+.skin-softboard .modlog-what { font-weight: bold; }
+.skin-phpbb-blue .modlog-by,
+.skin-ezboard-grey .modlog-by,
+.skin-softboard .modlog-by { color: #6b6f76; }
+.skin-phpbb-blue .modlog-why,
+.skin-ezboard-grey .modlog-why,
+.skin-softboard .modlog-why {
+  flex: 1 1 100%;
+  color: #55606b;
+  font-style: italic;
+}
+.skin-phpbb-blue .modlog-target,
+.skin-ezboard-grey .modlog-target,
+.skin-softboard .modlog-target { min-width: 0; overflow-wrap: break-word; }
+
+/* A ban is the one that gets argued about, so it is the one with a colour. */
+.skin-phpbb-blue .modlog-banned .modlog-what,
+.skin-ezboard-grey .modlog-banned .modlog-what,
+.skin-softboard .modlog-banned .modlog-what { color: #a33b2a; }
+/* And a dismissed report is the one nobody reads, so it is the quiet one. */
+.skin-phpbb-blue .modlog-nothing,
+.skin-ezboard-grey .modlog-nothing,
+.skin-softboard .modlog-nothing { opacity: 0.72; }
+
+/* =====================================================================
+   THE PAGES BEHIND THE NAV BAR
+
+   FAQ, Search, Memberlist, Usergroups, Register, Profile, Log in sat at
+   the top of every board page as spans that did nothing. They are links
+   now, and these are the pages they go to: a board FAQ, a search over the
+   board's own threads, the memberlist derived from the people in them,
+   and three pages that explain what this board will and will not let you
+   do -- which is a different answer on a board that closed registration
+   in 2017 than on one that never closed anything.
+
+   Everything here is scoped to the three forum skins and reuses their own
+   furniture (.tbar, .flist, .post, .blank) wherever it can, so a page that
+   is not a thread still looks like it belongs to the board it is on.
+   ===================================================================== */
+
+/* The nav items are anchors now. phpbb-blue's old #b9d6ea was 3.6:1 on the
+   top of the banner gradient, which was survivable as decoration and is not
+   for something you are meant to press. #e3eef8 is 4.6:1 on #1a6ea8. */
+.skin-phpbb-blue .fnav .navitem { color: #e3eef8; text-decoration: none; }
+.skin-phpbb-blue .fnav .navitem:hover,
+.skin-phpbb-blue .fnav .navitem:focus { color: #ffffff; text-decoration: underline; }
+.skin-ezboard-grey .fnav .navitem { color: #ffffcc; text-decoration: none; }
+.skin-ezboard-grey .fnav .navitem:hover,
+.skin-ezboard-grey .fnav .navitem:focus { color: #ffffff; text-decoration: underline; }
+.skin-softboard .fnav .navitem:hover,
+.skin-softboard .fnav .navitem:focus { text-decoration: underline; }
+
+/* --- panels of prose ---------------------------------------------------- */
+
+.skin-phpbb-blue .fpanel {
+  border: 1px solid #7b98ab;
+  background: #ffffff;
+  padding: 10px 12px;
+  margin: 0 0 10px;
+}
+.skin-phpbb-blue .fsec {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #10456d;
+}
+.skin-phpbb-blue .fpara { margin: 0 0 .7em; font-size: 12px; }
+.skin-phpbb-blue .fpara:last-child { margin-bottom: 0; }
+
+.skin-ezboard-grey .fpanel {
+  border: 2px solid #999999;
+  background: #ffffff;
+  padding: 8px 9px;
+  margin: 0 0 8px;
+}
+.skin-ezboard-grey .fsec { margin: 0 0 5px; font-size: 12px; color: #111111; }
+.skin-ezboard-grey .fpara { margin: 0 0 .6em; font-size: 11px; }
+.skin-ezboard-grey .fpara:last-child { margin-bottom: 0; }
+
+.skin-softboard .fpanel {
+  border-bottom: 1px solid #e3e5e8;
+  padding: 14px 16px;
+  margin: 0;
+}
+.skin-softboard .fsec {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6b6f76;
+}
+.skin-softboard .fpara { margin: 0 0 12px; font-size: 15px; line-height: 1.55; }
+.skin-softboard .fpara:last-child { margin-bottom: 0; }
+
+/* --- search ------------------------------------------------------------- */
+
+.skin-phpbb-blue .fsearch,
+.skin-ezboard-grey .fsearch,
+.skin-softboard .fsearch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.skin-softboard .fsearch { padding: 12px 16px 0; }
+
+.skin-phpbb-blue .fsearch-input,
+.skin-ezboard-grey .fsearch-input,
+.skin-softboard .fsearch-input {
+  flex: 1 1 150px;
+  min-width: 0;
+  padding: 5px 7px;
+  font: inherit;
+  font-size: 13px;
+  color: #111111;
+  background: #ffffff;
+}
+.skin-phpbb-blue .fsearch-input { border: 1px solid #7b98ab; }
+.skin-ezboard-grey .fsearch-input { border: 2px solid #999999; }
+.skin-softboard .fsearch-input { border: 1px solid #d8dbe0; border-radius: 8px; padding: 9px 12px; }
+
+.skin-phpbb-blue .fsearch-go,
+.skin-ezboard-grey .fsearch-go,
+.skin-softboard .fsearch-go {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 5px 12px;
+}
+/* #10456d on #e6edf3 is 9.2:1. */
+.skin-phpbb-blue .fsearch-go {
+  border: 1px solid #a9b8c2;
+  background: linear-gradient(#e6edf3, #c7d3de);
+  color: #10456d;
+  font-weight: bold;
+}
+.skin-ezboard-grey .fsearch-go {
+  border: 2px solid #333333;
+  background: #dddddd;
+  color: #111111;
+}
+/* #ffffff on #0a62c4 is 5.9:1. */
+.skin-softboard .fsearch-go {
+  border: 0;
+  border-radius: 8px;
+  background: #0a62c4;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 9px 16px;
+}
+
+.skin-phpbb-blue .fhit-count,
+.skin-ezboard-grey .fhit-count { font-size: 11px; margin: 0 0 8px; color: #44545f; }
+.skin-softboard .fhit-count { font-size: 14px; color: #6b6f76; padding: 10px 16px 0; }
+
+.skin-phpbb-blue .fhit,
+.skin-ezboard-grey .fhit {
+  border-bottom: 1px solid #d6dfe6;
+  padding: 6px 4px;
+}
+.skin-ezboard-grey .fhit { border-bottom: 1px solid #999999; }
+.skin-softboard .fhit {
+  border-bottom: 1px solid #e3e5e8;
+  padding: 12px 16px;
+}
+
+.skin-phpbb-blue .fhit-snip,
+.skin-ezboard-grey .fhit-snip {
+  font-size: 11px;
+  color: #44545f;
+  margin-top: 3px;
+  overflow-wrap: break-word;
+}
+.skin-softboard .fhit-snip {
+  font-size: 14px;
+  color: #6b6f76;
+  margin-top: 4px;
+  overflow-wrap: break-word;
+}
+
+/* --- memberlist and groups ---------------------------------------------- */
+
+.skin-phpbb-blue .avatar.tiny,
+.skin-ezboard-grey .avatar.tiny {
+  width: 24px; height: 24px; line-height: 24px;
+  margin: 0; font-size: 10px;
+}
+.skin-softboard .avatar.tiny { width: 26px; height: 26px; font-size: 11px; }
+
+.skin-phpbb-blue .fmembers .col-forum,
+.skin-ezboard-grey .fmembers .col-forum { width: auto; }
+
+/* On softboard the cells are one grey line under the name, so a bare "341"
+   needs saying what it is. */
+.skin-softboard .fmembers .col-num::after { content: " posts"; }
+
+/* The topic tables drop their number columns below 620px because a topic row
+   has five of them. A member row has three, and the post count is half of
+   what a memberlist is for, so it stays. */
+@media (max-width: 620px) {
+  .skin-phpbb-blue .fmembers .col-num,
+  .skin-ezboard-grey .fmembers .col-num { display: table-cell; }
+}
+
+.skin-phpbb-blue .fgroup { margin: 0 0 10px; }
+.skin-ezboard-grey .fgroup { margin: 0 0 8px; }
+.skin-softboard .fgroup { padding: 12px 16px; border-bottom: 1px solid #e3e5e8; }
+
+.skin-phpbb-blue .fgroup-head {
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: #10456d;
+}
+.skin-ezboard-grey .fgroup-head { margin: 0 0 3px; font-size: 11px; color: #111111; }
+.skin-softboard .fgroup-head { margin: 0 0 6px; font-size: 15px; font-weight: 600; }
+
+.skin-phpbb-blue .fgroup-body,
+.skin-ezboard-grey .fgroup-body { font-size: 11px; overflow-wrap: break-word; }
+.skin-softboard .fgroup-body { font-size: 15px; overflow-wrap: break-word; line-height: 1.6; }
+
+/* --- the watch setting on the record page --------------------------------
+ * Four real buttons wired to SYNTH.alerts. They are the only control on
+ * these pages that changes anything, which is as it should be: everything
+ * else a board would have offered a guest was a lie about an account.
+ */
+.skin-phpbb-blue .fwatch,
+.skin-ezboard-grey .fwatch,
+.skin-softboard .fwatch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 6px;
+}
+
+.skin-phpbb-blue .fwatch-btn,
+.skin-ezboard-grey .fwatch-btn,
+.skin-softboard .fwatch-btn {
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 10px;
+}
+.skin-phpbb-blue .fwatch-btn {
+  border: 1px solid #a9b8c2;
+  background: #e6edf3;
+  color: #10456d;
+}
+/* #ffffff on #10456d is 10.0:1. */
+.skin-phpbb-blue .fwatch-btn.is-on {
+  background: #10456d;
+  border-color: #10456d;
+  color: #ffffff;
+  font-weight: bold;
+}
+.skin-ezboard-grey .fwatch-btn {
+  border: 2px solid #333333;
+  background: #dddddd;
+  color: #111111;
+}
+.skin-ezboard-grey .fwatch-btn.is-on {
+  background: #333333;
+  color: #ffffff;
+  font-weight: bold;
+}
+.skin-softboard .fwatch-btn {
+  border: 1px solid #d8dbe0;
+  border-radius: 999px;
+  background: #f2f4f7;
+  color: #1c1c1e;
+  font-size: 14px;
+  padding: 7px 14px;
+}
+.skin-softboard .fwatch-btn.is-on {
+  background: #0a62c4;
+  border-color: #0a62c4;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.skin-phpbb-blue .fwatch-now,
+.skin-ezboard-grey .fwatch-now { font-size: 11px; }
+.skin-softboard .fwatch-now { font-size: 14px; }
+
+@media (max-width: 440px) {
+  /* Four watch buttons and a search box both have to fit 360px with no
+     sideways scroll, so they wrap rather than shrink their text. */
+  .skin-phpbb-blue .fwatch-btn,
+  .skin-ezboard-grey .fwatch-btn { padding: 4px 8px; }
+  .skin-softboard .fwatch-btn { padding: 7px 12px; font-size: 13px; }
+  .skin-softboard .fpanel { padding: 12px; }
+  .skin-softboard .fsearch,
+  .skin-softboard .fhit,
+  .skin-softboard .fhit-count,
+  .skin-softboard .fgroup { padding-left: 12px; padding-right: 12px; }
+  /* The memberlist's last column is the one that can go; the name, the
+     title and the post count are the three things a memberlist is for --
+     which is also why softboard's hidden count comes back here. */
+  .skin-phpbb-blue .fmembers .col-last,
+  .skin-ezboard-grey .fmembers .col-last { display: none; }
+  .skin-softboard .fmembers .col-num { display: block; }
+}

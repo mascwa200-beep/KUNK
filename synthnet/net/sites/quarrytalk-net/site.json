@@ -1,0 +1,1220 @@
+{
+  "schema": 1,
+  "domain": "quarrytalk.net",
+  "title": "quarrytalk",
+  "type": "board",
+  "era": "2026",
+  "skin": "yotsuba",
+  "description": "A slow imageboard for Verity County: /loc/ for the county and /sig/ for the shortwave on 62. Up since March 2011, about forty posters, no accounts, and one arithmetic question at the posting box that has kept most of the automation out.",
+  "tags": [
+    "ashkettle",
+    "radio",
+    "locals",
+    "signal-62",
+    "measurement"
+  ],
+  "links": [
+    "62chan.org",
+    "ask.verity.ai",
+    "askverity.com",
+    "boards.gridfall.net",
+    "brackenlanegarage.net",
+    "brenners-notebook.email",
+    "carrowwireless.com",
+    "classifieds.verity.net",
+    "countyfacts.info",
+    "gridfallhost.net",
+    "gridline.social",
+    "kestrel-journal.net",
+    "marchfieldlibrary.blog",
+    "now.clipvault.tv",
+    "now.verityledger.com",
+    "pennock-sdr.net",
+    "quarrycut.net",
+    "scanner.verity.net",
+    "sdrlisteners.org",
+    "suspended.gridfallhost.net",
+    "thequarry.news",
+    "trailusers.verity.net",
+    "verity-careers-portal.com",
+    "verity-transit.gov",
+    "verity.wiki",
+    "verityledger.com",
+    "veritysignal.blog",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "boardName": "loc/ + /sig",
+    "rules": [
+      "Two boards, one index. Put /loc/ or /sig/ at the front of your subject. Nobody is going to move it for you.",
+      "/sig/ is for measurement. A log with no equipment on it and no clock on it is a rumour with a number in it.",
+      "Say when you do not know. Nobody here has ever been thought less of for that sentence.",
+      "No pins, no fixes, no coordinates. We did that in 2017 and three men spent a Saturday standing around a sewage lift station on Cobb Road.",
+      "There are no accounts. The posting box asks you one arithmetic question about kilohertz. That is the entire moderation system and it has held since 2011.",
+      "Nothing is pruned and nothing expires. Post No.1 is from 5 March 2011 and it is still on this server.",
+      "A thread that gets no replies is not a failed thread. Post the next one."
+    ],
+    "threads": [
+      {
+        "id": "t-fmt",
+        "subject": "/sig/ RECEPTION LOG FORMAT v4 - read this before you post a log",
+        "by": "logsheet !qT7v2c",
+        "at": "2013-02-16T20:10:00",
+        "sticky": true,
+        "imageSeed": "qt-logsheet-v4",
+        "body": "This is the format. It is not mine. Most of it is lifted off Walt Pennock's method page, which has been up since 2013 and has the equipment prices in a table, and the only thing I changed was the column order so it fits on a sheet of A4 sideways: [url=synth://pennock-sdr.net/method]pennock-sdr.net[/url]\n\nHe does not post here. He has never asked us for anything and I have never written to him, which I am aware is a strange way to owe somebody.\n\n[b]One line per session. One session is :00 to :20 past an odd hour, local.[/b] If you sat there for six minutes and left, that is not a session and it does not go in.\n\n[code]\nDATE       TIME  FREQ kHz  MODE  RX          ANT        BEAR  S  WX         RESULT\n2013-02-14 2100  4219.0    USB   12-bit SDR   40m wire   ---   4  clr -3C    readable\n2013-02-14 2300  4219.0    USB   12-bit SDR   40m wire   ---   2  clr -5C    carrier\n2013-02-15 0100  4219.0    USB   12-bit SDR   40m wire   ---   0  sn  -7C    nothing\n[/code]\n\n[b]FREQ[/b] in kilohertz, as read off your own receiver, not as somebody told you it was. If your set has an analogue dial then say so under RX and put your calibration error next to it. Half the arguments on this board in the first two years were two people with the same signal and different dials.\n\n[b]RX and ANT[/b] every line, even when they never change, because in eight years you will not remember what you swapped and when.\n\n[b]S[/b] is whatever your receiver calls signal strength. It is not comparable to mine and it is not meant to be. It is comparable to your own line from last Tuesday, which is the only comparison that has ever been worth anything.\n\n[b]RESULT[/b] is one of four words and nothing else: [i]readable[/i], [i]carrier[/i], [i]trace[/i], [i]nothing[/i]. Four words is enough to count. A sentence is not countable and after three years you will have three hundred of them and no total.\n\n[b]A null is a session you sat through and wrote down.[/b] It is not a night you forgot, and it is not a night you decided in advance was going to be bad. Nulls are the whole value of a log. Anybody can keep a list of the times it worked.\n\n[b]What does not go in the log.[/b] What you think it is. Where you think it is from. What somebody on another board said. There is a whole board for that and it is the one you are on, one letter over. Put it in a thread and leave it out of the line.\n\nThe digit groups go in a separate file, not in the log line. A log line can be compared to another log line. A page of digits cannot be compared to anything and we have all tried.",
+        "posts": [
+          {
+            "no": 4168,
+            "by": "Anonymous",
+            "at": "2013-02-18T21:10:00",
+            "body": ">S is whatever your receiver calls signal strength\n\nmine reports in dBm and the man down the road reports in S units. do we convert",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 4173,
+            "by": "logsheet !qT7v2c",
+            "at": "2013-02-19T19:40:00",
+            "body": "No. Write what your set says and write what your set is. Converting is where the error gets in, and the error gets in once and then lives in the column forever.\n\nIf somebody ever needs both on one axis they can do the conversion themselves, with your receiver model sitting right there in the next column, which is why the next column is there.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 6889,
+            "by": "Anonymous",
+            "at": "2014-06-21T19:40:00",
+            "body": "two years of this and the format has not changed. that in itself is worth something",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 10768,
+            "by": "logsheet !qT7v2c",
+            "at": "2016-05-07T20:05:00",
+            "body": "[b]v3.[/b] Adding a BEAR column for anybody with something directional. Leave it as three dashes if you have a wire, which is most of us.\n\nA bearing from a wire antenna is not a bearing. It is a guess with a decimal point on it.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 16119,
+            "by": "logsheet !qT7v2c",
+            "at": "2019-02-09T21:30:00",
+            "body": "[b]Note, not a revision.[/b] Somebody asked why we do not just agree a template spreadsheet.\n\nBecause the spreadsheet will be in a format nobody can open in fifteen years and the sheet of paper will not. I keep both. The paper copy is the one I would bet on.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 21161,
+            "by": "Anonymous",
+            "at": "2022-01-15T20:50:00",
+            "body": "came here from the other board. over there a log post gets four replies telling you what it is before anybody reads the numbers. here it gets nothing and the nothing is better",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 24382,
+            "by": "logsheet !qT7v2c",
+            "at": "2024-03-09T19:15:00",
+            "body": "[b]v4.[/b] Two changes.\n\nWX gets a temperature. I have eleven years of \"clear\" and \"overcast\" and it turns out the thing that actually tracks is how cold it is, which I could have known in 2013 if I had written a number instead of a word.\n\nRESULT loses [i]weak[/i]. It was doing the job of [i]trace[/i] and half of us were using it for the job of [i]carrier[/i]. Two people using one word for two things is worse than a missing column.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 24383,
+            "by": "Anonymous",
+            "at": "2024-03-09T20:02:00",
+            "body": "eleven years to delete one word",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 24386,
+            "by": "logsheet !qT7v2c",
+            "at": "2024-03-10T18:00:00",
+            "body": "Eleven years to be sure it was the right word to delete.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28652,
+            "by": "Anonymous",
+            "at": "2026-09-06T23:40:00",
+            "body": "first log. hope this is right.\n\n[code]\n2026-09-05 2300  4219.0  USB  cheap dongle  20m wire  ---  3  clr 11C  readable\n2026-09-06 0100  4219.0  USB  cheap dongle  20m wire  ---  1  clr 9C   carrier\n[/code]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28655,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-09-07T18:20:00",
+            "body": "That is a log. Thank you.\n\nAdd your county end of things to RX next time, something like \"dongle + upconv\", because in four years you will have a better receiver and you will want to know which lines were the old one.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 11
+      },
+      {
+        "id": "t-dead",
+        "subject": "/loc/ is this board dead",
+        "by": "Anonymous",
+        "at": "2026-09-13T22:12:00",
+        "imageSeed": "qt-frontpage",
+        "body": "front page has not moved since tuesday and the thread under that one is from august. I keep opening it.\n\nis there somewhere everyone went",
+        "posts": [
+          {
+            "no": 28696,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-09-14T07:40:00",
+            "body": "It is fine.\n\nNumbers, since you asked. 41 different posters in the last ninety days. 39 in the ninety before that. Six posts a day averaged over the last twelve months, and two of those days were the March business.\n\nA front page that holds still for four days is this board working. We have never had a calendar month with nothing in it. The quietest was February 2015, which was 71 posts, and I remember it because my boiler went that month and I was not reading either.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28697,
+            "by": "Anonymous",
+            "at": "2026-09-14T12:30:00",
+            "body": "a board that is slow because people post when they have something is not the same shape as a board that is dying. it just looks the same from outside",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28698,
+            "by": "Anonymous",
+            "at": "2026-09-14T13:05:00",
+            "body": "the other one does two hundred posts on a front page and eleven of them are written by a person. somebody counted it in their own thread. [url=synth://62chan.org/t/t-03]62chan.org[/url]\n\nhere it is the other way round and it looks empty",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28699,
+            "by": "Anonymous",
+            "at": "2026-09-14T19:22:00",
+            "body": "took me four days to work out the kilohertz question the first time. I was doing it in megahertz",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28702,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-09-15T08:10:00",
+            "body": "The question is generated. It is two frequencies in megahertz and it wants the difference in kilohertz. It is not hard. It is just not the same box as everybody else's.\n\nNothing that hits a thousand boards a night is going to have a hand written for this one. That is the whole trick and it stops working the week somebody bothers.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28703,
+            "by": "Anonymous",
+            "at": "2026-09-15T09:00:00",
+            "body": "somebody bothered in march",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 6,
+        "sticky": false
+      },
+      {
+        "id": "t-flenn",
+        "subject": "/sig/ the 2004 county board thread has it at 4.115 and groups of five",
+        "by": "Anonymous",
+        "at": "2026-06-06T21:30:00",
+        "imageSeed": "qt-flenn-tape",
+        "body": "been reading the old county board. a man in 2004 writes it up three times, says 4.115 USB, groups of five, and that it only comes in over about 1.4 miles of road.\n\n[url=synth://boards.gridfall.net/topic/5]the thread[/url]\n\nnone of that is what gets posted here. is he wrong or are we",
+        "posts": [
+          {
+            "no": 28083,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-06-07T19:05:00",
+            "body": "The frequency is easy and the group length is not, so take them separately.\n\n[b]Frequency.[/b] He names his receiver in the thread. It is a consumer portable with an analogue dial and a digital readout that is derived from the dial, not from a synthesiser. A hundred kilohertz of error at the top of that band is not a defect, it is the specification. The error is in the right direction and it is the right size. I would not write him up for it. I would write us up for it if one of us did it now with a set that cost more than his did.\n\n[b]Group length.[/b] I cannot account for it. Two things it could be and neither is provable from here. He may have written down a four-digit group and run the first digit of the next one onto it, which is the commonest transcription error there is and I have done it. Or he heard something else on a different night and filed it under the same heading, which people also do.\n\nThe tape would settle it. Nobody has the tape.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28084,
+            "by": "Anonymous",
+            "at": "2026-06-07T20:40:00",
+            "body": "the 1.4 miles is the road cut. a man who tested aggregate for the county measured the cut in the 2000s and the page is still up, it is in frames and it is still up: [url=synth://quarrycut.net/]quarrycut.net[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28087,
+            "by": "Anonymous",
+            "at": "2026-06-08T11:15:00",
+            "body": "somebody in that 2004 thread says it is the chain link at the pumping station acting like an antenna, twelve hundred feet of it parallel to the road.\n\nI went and rolled it last month out of curiosity. it is eleven hundred and fifty feet and it is on the north side. the cut is on the south side. still the best wrong answer anybody has given in twenty years",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28095,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-06-09T18:50:00",
+            "body": "I can tell you what does not change it, which is not the same as telling you what does.\n\nThe fence. The weather. The season. Which way you are driving. Whether the road is wet. Whether the quarry gate is open or shut. All six are in my log with enough lines either side to say so.\n\nThat is a list of things ruled out. It is not a list of things found and I am not going to let it turn into one.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28105,
+            "by": "Anonymous",
+            "at": "2026-06-11T09:30:00",
+            "body": "Flenn posted until 2006 and then stopped. I asked the library in Marchfield whether anybody ever deposited his tapes. they have a deposit form, a deck that works, and no tapes.\n\n[url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url]\n\ntwenty-two years and the best documentation of this thing from before any of us was a man with a cassette deck and a notebook, and the notebook is on a message board and the cassette is gone",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-dor1",
+        "subject": "/sig/ Dorrance township, 14 Jan - 31 Mar, 46 sessions",
+        "by": "nine_meter !k4Ls9d",
+        "at": "2026-04-04T19:40:00",
+        "imageSeed": "qt-dorrance-q1",
+        "body": "Q1. Site is the same hayfield in Dorrance township I have used since 2023, 9 metres of wire at about 4 metres, fed at the end, one ground rod. Receiver unchanged. Calibrated against the two broadcast stations in the sticky before every session.\n\n[code]\nMONTH   SESSIONS  READABLE  CARRIER  TRACE  NOTHING\nJan     16        11        3        1      1\nFeb     14        10        2        2      0\nMar     16        12        3        0      1\nTOTAL   46        33        8        3      2\n[/code]\n\nBoth nulls were snow. 24 January and 3 March. On both nights the calibration stations were also down, which is the whole reason I calibrate first, and I would not call either of them anything to do with the transmitter.\n\nCarrier onset across the 44 sessions where I got anything: mean six minutes forty-six seconds past, spread of about two seconds either side. Groups four digits. Voice the same one.\n\nThe gate is the third one past the culvert and the farmer knows I am in there. He has asked me twice what it is and I have told him twice that I do not know, and the second time he said that was the first honest answer he had had about anything all year, which I think was mostly about something else.\n\nNothing in this quarter is new. That is the finding.",
+        "posts": [
+          {
+            "no": 28294,
+            "by": "nine_meter !k4Ls9d",
+            "at": "2026-07-11T19:05:00",
+            "body": "No replies, which is correct, because there is nothing in it to reply to.\n\nQ2 is up: [url=/t/t-dor2]the next one[/url].",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 1,
+        "sticky": false
+      },
+      {
+        "id": "t-dor2",
+        "subject": "/sig/ Dorrance township, 1 Apr - 30 Jun, 45 sessions",
+        "by": "nine_meter !k4Ls9d",
+        "at": "2026-07-11T19:20:00",
+        "imageSeed": "qt-dorrance-q2",
+        "body": "Q2. Same field, same wire until the 9th of May, when the wire came down in a storm and took the insulator and about a foot of the fence post with it. I was eleven days getting back up. Those eleven days are missing out of the middle of the table and I am saying so here rather than smoothing them, because a table with a hole in it and a sentence about the hole is worth more than a table with no hole.\n\n[code]\nMONTH   SESSIONS  READABLE  CARRIER  TRACE  NOTHING\nApr     16        13        2        1      0\nMay     11        8         2        1      0\nJun     18        14        3        1      0\nTOTAL   45        35        7        3      0\n[/code]\n\nNo nulls this quarter. Summer, so that is expected and it is not a finding.\n\nOnset mean six minutes forty-five past. Same spread. The wire that went up on the 20th of May is the same gauge and two metres longer and I cannot see it in the numbers, which is its own small result.\n\nI have started writing the temperature down since the sticky changed. Too early to say anything about it.",
+        "posts": [
+          {
+            "no": 28513,
+            "by": "Anonymous",
+            "at": "2026-08-15T23:40:00",
+            "body": "reading the last four of these back to back is the only thing on the internet that has not changed in three years",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28731,
+            "by": "nine_meter !k4Ls9d",
+            "at": "2026-09-19T18:50:00",
+            "body": "Q3 goes up the first week of October. 41 sessions so far and one null, which was the receiver and not the weather, and I only know that because the calibration stations were fine.\n\nIf anybody in the north end of the county wants to take a quarter and post it in the sticky's format, do. One site is one site. I have been the only line on this for three years and one line is not a measurement of anything except me.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 2,
+        "sticky": false
+      },
+      {
+        "id": "t-fire",
+        "subject": "/loc/ the Ledger ran the substation fire again and it is still wrong",
+        "by": "Anonymous",
+        "at": "2026-09-05T13:10:00",
+        "imageSeed": "qt-ledger-fire",
+        "body": "[quote=Ledger Newsdesk]The 2004 Gridfall substation fire, which was caused by a lightning strike and claimed two lives, remains one of the defining events in the county's recent history.[/quote]\n\nthree facts in one sentence. all three wrong. fourth time this year.\n\n[url=synth://now.verityledger.com/]now.verityledger.com[/url]",
+        "posts": [
+          {
+            "no": 28642,
+            "by": "Anonymous",
+            "at": "2026-09-05T13:40:00",
+            "body": "11 June 2003, ten to five in the morning, Substation No. 3 at Depot and Quarry. the paper that was actually standing there is still online and still free to read: [url=synth://verityledger.com/]verityledger.com[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28643,
+            "by": "Anonymous",
+            "at": "2026-09-05T14:02:00",
+            "body": "nobody died. two Gridfall volunteers went to County General for smoke and were out the same afternoon. one of them is somebody's cousin and I am fairly sure he is still alive to be annoyed about it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28644,
+            "by": "Anonymous",
+            "at": "2026-09-05T14:30:00",
+            "body": "the cause is two pages from the state commission in November 2003 and the words are \"insulation degradation consistent with age\". that is the only official cause there has ever been. Verity Valley did their own and never put it out, and that is why every retelling gets to pick something better.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28645,
+            "by": "Anonymous",
+            "at": "2026-09-05T18:10:00",
+            "body": "this thread is already on the aggregator with a summary stapled to it. here is the summary:\n\n[quote=VerityPulseAI]Summary: participants in this discussion disagree about the year of the Gridfall substation fire. Some residents recall 2003, while other sources reference 2004. Local officials have not commented. The community continues to reflect on the event. For more coverage, see now.verityledger.com.[/quote]\n\n[url=synth://gridline.social/]gridline.social[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28646,
+            "by": "Anonymous",
+            "at": "2026-09-05T18:22:00",
+            "body": "there are no officials in this thread. there are four of us and a quote",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28647,
+            "by": "Anonymous",
+            "at": "2026-09-05T19:00:00",
+            "body": "we are the source for a summary that gets it wrong. it read four posts saying 2003 and printed both years and called it a disagreement",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28648,
+            "by": "Anonymous",
+            "at": "2026-09-06T08:15:00",
+            "body": "the county wiki has had it right the whole time and has had it right through about a thousand edits that tried to make it 2004. [url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]\n\nwhoever does that has a harder job than anybody in this thread",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28651,
+            "by": "Anonymous",
+            "at": "2026-09-06T21:30:00",
+            "body": "my father was on a line crew that week. the thing he says nobody ever writes down is that the east side was out five days and the paper's own building had no power either, so the man who covered it filed the first week from somebody else's desk.\n\nhe is not there any more. he does the five dollar email now: [url=synth://brenners-notebook.email/]brenners-notebook.email[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 8,
+        "sticky": false
+      },
+      {
+        "id": "t-neon",
+        "subject": "/loc/ the kestrel sign is on a timer now",
+        "by": "Anonymous",
+        "at": "2026-08-08T22:40:00",
+        "imageSeed": "qt-kestrel-1120",
+        "body": "[img:photo:qt-kestrel-dark]\n\ndrove past at twenty past eleven and it was dark. went back at nine the next night and it was lit. asked in the shop and they said it goes off at eleven now.\n\nfirst time in my life I have seen that sign off.",
+        "posts": [
+          {
+            "no": 28470,
+            "by": "Anonymous",
+            "at": "2026-08-08T23:10:00",
+            "body": "they pay the power on it. it is a repair shop with two people in it, not a diner. [url=synth://carrowwireless.com/]carrowwireless.com[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28472,
+            "by": "Anonymous",
+            "at": "2026-08-09T09:20:00",
+            "body": "the vape place put that sign up in 2013 anyway, it is a replica",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28473,
+            "by": "Anonymous",
+            "at": "2026-08-09T10:05:00",
+            "body": "no. it is the original and that is the entire reason it is still there. it is grandfathered under the county sign ordinance. a new one that size would not be permitted and would cost more than the lease on the building, so every tenant since has kept it and none of them have loved it.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28474,
+            "by": "Anonymous",
+            "at": "2026-08-09T10:40:00",
+            "body": "diner closed in 2006. vape shop 2013 to 2021, empty a while, phone repair since 2022. the bird has outlasted three businesses and a fire",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28475,
+            "by": "Anonymous",
+            "at": "2026-08-09T11:55:00",
+            "body": "the fire was 1977 and it was the fryer and they were open again eleven days later. it is on the site the woman who waitressed there built, with the menus and who sat in which booth: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]\n\nit stopped being updated in 2019",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28476,
+            "by": "Anonymous",
+            "at": "2026-08-09T20:30:00",
+            "body": "she does a paper thing now. four pages, comes in the post, my aunt gets it. somebody scans it every quarter and puts it on the aggregator and the summary that goes on top of it is always slightly wrong, so my aunt reads it right and the internet reads it crooked",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 6,
+        "sticky": false
+      },
+      {
+        "id": "t-null",
+        "subject": "/sig/ what a null is and what it is not",
+        "by": "logsheet !qT7v2c",
+        "at": "2024-03-16T20:30:00",
+        "imageSeed": "qt-null",
+        "body": "Writing this out once so the sticky can point at it.\n\nA [b]null[/b] is a session you sat through, at the right time, on the right frequency, with working equipment, and heard nothing. It goes in the log as a line like any other. It is not a night you forgot, it is not a night you skipped because the forecast was bad, and it is not a night the set was in pieces on the table.\n\nThe reason this matters is arithmetic. If you only write down the nights it worked, your log says it works every time, and every log kept that way says the same thing and none of them say anything.\n\n[b]Telling a null from a nothing.[/b] This is the whole job and it takes two extra minutes a session.\n\nBefore you listen, take the two broadcast stations in the sticky. They are a long way away, they are on all night, and they are not going anywhere. Write down what they sound like. Then listen. Then take them again afterwards.\n\nIf the broadcast stations are weak or gone and you heard nothing, that is a propagation night. It says something about the ionosphere and nothing at all about a transmitter, and there are eleven or twelve a year here, most of them in snow.\n\nIf the broadcast stations are loud and clean and you heard nothing, write it down twice and underline it, because that is worth something. I have eleven years and that has happened nine times.\n\nEight of the nine were me. A connector that had gone green inside, a splitter I forgot I had left in line, a receiver that had quietly switched to the wrong antenna port, and once a length of coax the mice had been at, which I found because they had also been at a bag of cattle feed nine feet away and I put the two together.\n\nThe ninth I have no account for. It sits in the log as one line and it has sat there since 2018 and I have not built anything on it, because one line is one line.\n\n[b]That is the standard.[/b] If you cannot rule yourself out, log it and say you cannot rule yourself out. Nobody here has ever thought less of anybody for that sentence.",
+        "posts": [
+          {
+            "no": 24414,
+            "by": "Anonymous",
+            "at": "2024-03-17T14:00:00",
+            "body": "this should be in the sticky",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 24415,
+            "by": "logsheet !qT7v2c",
+            "at": "2024-03-17T19:10:00",
+            "body": "It is, as of last week. That is the short version. This is the long one.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27424,
+            "by": "Anonymous",
+            "at": "2026-02-21T23:50:00",
+            "body": "came back to this two years later because I finally had one of the nights in the middle bit. broadcast stations like a bell, nothing on 4219, sat there an hour.\n\nit was my coax. the connector had gone green inside exactly like you said",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27429,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-02-22T18:30:00",
+            "body": "It usually is. Write the night down anyway, with the cause next to it. A null you explained is still a line and in ten years the line is what you will have.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 4,
+        "sticky": false
+      },
+      {
+        "id": "t-scan",
+        "subject": "/loc/ scanner feed has been down since the 4th",
+        "by": "Anonymous",
+        "at": "2026-09-12T09:15:00",
+        "imageSeed": "qt-scanner",
+        "body": "no audio, no new log entries, page still says LIVE in green.\n\n[url=synth://scanner.verity.net/]scanner.verity.net[/url]\n\ndoes anybody actually know who runs that",
+        "posts": [
+          {
+            "no": 28684,
+            "by": "Anonymous",
+            "at": "2026-09-12T10:40:00",
+            "body": "a man in Marchfield. it has been a radio in his spare room since 2009",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28685,
+            "by": "Anonymous",
+            "at": "2026-09-12T11:02:00",
+            "body": "he moved in august. the antenna was on the house",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28686,
+            "by": "Anonymous",
+            "at": "2026-09-12T11:20:00",
+            "body": "so that is that then",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28687,
+            "by": "Anonymous",
+            "at": "2026-09-12T19:45:00",
+            "body": "that feed is where the paper's overnight pipeline gets most of its county copy, and it has been one man's spare room for seventeen years, and it ended because he changed address.\n\nnobody is going to write that down anywhere. the articles will just get shorter and nobody will be able to say when",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28709,
+            "by": "Anonymous",
+            "at": "2026-09-16T08:30:00",
+            "body": "asked him. he says he will have it back up when the mast goes on the new place, maybe october, maybe not. he sounded surprised anybody noticed",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-vid",
+        "subject": "/sig/ our numbers are in a video and they changed them",
+        "by": "Anonymous",
+        "at": "2026-05-16T19:00:00",
+        "imageSeed": "qt-video-still",
+        "body": "nine minute video. two thirds of the way in there is a table of onset times on screen for about four seconds. it is the Q4 table off this board. same rows, same order, one column renamed, one row dropped.\n\nthe frequency is written 4.129 for the whole nine minutes. it is in the thumbnail.\n\n[url=synth://now.clipvault.tv/]now.clipvault.tv[/url]",
+        "posts": [
+          {
+            "no": 27946,
+            "by": "Anonymous",
+            "at": "2026-05-16T19:30:00",
+            "body": "4.129 is not a typo you make once. that is a typo you make once and then copy fourteen times",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27947,
+            "by": "nine_meter !k4Ls9d",
+            "at": "2026-05-16T21:10:00",
+            "body": "It is my table.\n\nThe way I know is the missing eleven days. They are in it, unlabelled, because whoever lifted it did not read the paragraph underneath that says the wire was down. So the video has a gap in the middle of a dataset and no reason for it, and in about a month somebody is going to notice the gap and have a theory about the gap.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27948,
+            "by": "Anonymous",
+            "at": "2026-05-17T02:15:00",
+            "body": "four hundred comments and most of them are about a military thing and one man is very sure it is the substation",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27949,
+            "by": "Anonymous",
+            "at": "2026-05-17T10:00:00",
+            "body": "there is a text version with the same table and the same wrong frequency: [url=synth://countyfacts.info/]countyfacts.info[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27958,
+            "by": "Anonymous",
+            "at": "2026-05-18T20:20:00",
+            "body": "the blog had it before the video and the blog now cites the video: [url=synth://veritysignal.blog/]veritysignal.blog[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27975,
+            "by": "Anonymous",
+            "at": "2026-05-21T13:00:00",
+            "body": "the game thing in the description comes from one post in 2016 by a man who took it back in 2017, in the same thread, on the national board. it is right there and it has never once been picked up: [url=synth://sdrlisteners.org/topic/t-15]sdrlisteners.org[/url]\n\nI put that link in the comments under the video. it was gone in an hour. the automatic filter takes comments with links in them, so the only kind of comment that can carry a correction is the only kind it deletes",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27983,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-05-22T18:40:00",
+            "body": "Do not chase it.\n\nWe have been the source for six of these that I know about and we have corrected none of them, because there is nobody to correct, and a correction would be scraped as readily as the table was.\n\nPost the next log. The log is the only thing in this that anybody can check, and it will still be checkable when the video is a dead thumbnail.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 7,
+        "sticky": false
+      },
+      {
+        "id": "t-trest",
+        "subject": "/loc/ Coyne Creek trestle is still fenced",
+        "by": "Anonymous",
+        "at": "2026-07-25T11:00:00",
+        "imageSeed": "qt-trestle",
+        "body": "[img:photo:qt-trestle-fence]\n\ntwelve years. the other three got decked in the build and this one got a fence and a laminated sign about an engineering assessment.\n\nthe sign is not the original sign. somebody has replaced the sign twice and not the bridge.",
+        "posts": [
+          {
+            "no": 28380,
+            "by": "Anonymous",
+            "at": "2026-07-25T12:30:00",
+            "body": "trail is 11.2 miles and that is counting the detour round it, which is a quarter mile of county road with no shoulder and a blind rise",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28381,
+            "by": "Anonymous",
+            "at": "2026-07-25T13:15:00",
+            "body": "they decked all four in 2016",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28382,
+            "by": "Anonymous",
+            "at": "2026-07-25T13:40:00",
+            "body": "three, and it was 2014 when the trail opened. the fourth has been fenced since the day it opened and the county has never once said otherwise. you are thinking of the resurfacing",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28383,
+            "by": "Anonymous",
+            "at": "2026-07-25T18:00:00",
+            "body": "the thread about it on the trail board started in 2017 and is still going: [url=synth://trailusers.verity.net/]trailusers.verity.net[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28385,
+            "by": "Anonymous",
+            "at": "2026-07-26T09:10:00",
+            "body": "last freight over that line was 14 March 2008. the gates at Quarry Road came out that autumn. my grandfather took a photo of the gates going and none of the last train, because he assumed there would be another one",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-bev",
+        "subject": "/sig/ 180 m of wire in a hayfield, Nye Mills - what it did and what it cost",
+        "by": "cobb_rd !r6Wm1p",
+        "at": "2025-10-04T14:20:00",
+        "imageSeed": "qt-beverage",
+        "body": "Writing this up because I looked for somebody else's version before I started and could not find one that had prices in it.\n\n[b]What it is.[/b] 180 metres of wire lying about two and a half metres off the ground on fence posts, running roughly north-east, terminated at the far end into a resistor and a ground rod, fed at the near end through a small transformer. It is the oldest receiving antenna design there is and it is not clever and that is the point.\n\n[b]What it cost.[/b]\n\n[code]\nwire, 200m, steel core           $31.00\ninsulators, 14 of them            $14.00\nresistor and box                   $6.50\ntransformer kit                   $19.00\ncoax fittings and tape             $9.00\nground rod                         had one\npost driver                        borrowed\nTOTAL                             $79.50\n[/code]\n\nTwo Saturdays. Most of the second one was walking back for things.\n\n[b]What it did.[/b] On the two calibration stations, about 6 dB better than the wire it replaced, and quieter, which is the real gain. On 4219 it made no difference I can see in eleven months of sessions either side.\n\nThat is the result and I am not going to dress it up. Two weekends and eighty dollars and the honest finding is that the thing works and did not help with the one thing I built it for. I am leaving it up because it has made everything else on the band easier to hear.\n\n[b]Things I got wrong.[/b] I put the far end where the ground is wet in spring and the resistor box spent April in a puddle. Move it up the slope if you have a slope. The wire from the hardware place in Nye Mills is fine and a third the price of the stuff sold for this: [url=synth://nye-mills-hardware.synth/]they are on the corner by the elevator[/url].",
+        "posts": [
+          {
+            "no": 28556,
+            "by": "Anonymous",
+            "at": "2026-08-22T21:00:00",
+            "body": "is it still up",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28730,
+            "by": "cobb_rd !r6Wm1p",
+            "at": "2026-09-19T17:30:00",
+            "body": "Yes. A year of cows under it and it has not moved. One insulator went in February and I replaced it with a length of hose, which is what I should have used in the first place.\n\nThe landowner asks me about it every time he sees me and I still do not have a short answer.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 2,
+        "sticky": false
+      },
+      {
+        "id": "t-host",
+        "subject": "/loc/ the host put us up to $7.50",
+        "by": "qt_ops !H2n8xR",
+        "at": "2026-02-07T10:00:00",
+        "imageSeed": "qt-invoice",
+        "body": "Invoice came in at $7.50 a month, up from $6. Same box, same disk, no notice and no note. [url=synth://gridfallhost.net/]gridfallhost.net[/url]\n\nI am not asking for anything. I pay it, it is eighteen dollars a year more than it was, and the board has fifteen years of posts sitting on it.\n\nI am telling you because in 2011 I said I would say every time it changed, and this is the third time.",
+        "posts": [
+          {
+            "no": 27334,
+            "by": "Anonymous",
+            "at": "2026-02-07T12:20:00",
+            "body": "let us split it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27335,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-02-07T18:00:00",
+            "body": "No. The day this has a donation button on it is the day it has a reason to want traffic, and a board with a reason to want traffic starts making decisions about what gets posted.\n\nIt is ninety dollars a year. I spend more than that on diesel getting to the hardware place.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27339,
+            "by": "Anonymous",
+            "at": "2026-02-08T09:40:00",
+            "body": "that is the right answer and I still want to give you four dollars",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27354,
+            "by": "Anonymous",
+            "at": "2026-02-10T20:15:00",
+            "body": "same host suspended somebody's site in the spring and the suspension page is still sitting where his site was, with the host's own advertising on it: [url=synth://suspended.gridfallhost.net/]suspended.gridfallhost.net[/url]\n\nkeep a copy of the database somewhere that is not them",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 4,
+        "sticky": false
+      },
+      {
+        "id": "t-bot",
+        "subject": "/sig/ the explainer thing tried to post here",
+        "by": "qt_ops !H2n8xR",
+        "at": "2022-05-14T08:30:00",
+        "imageSeed": "qt-botlog",
+        "body": "Log from Thursday the 12th, edited down.\n\n[code]\n09:14  POST  reject: answer field empty\n09:14  POST  reject: answer field empty\n09:14  POST  reject: answer \"4219\"\n09:15  POST  reject: answer \"4219 MHz\"\n09:15  POST  reject: answer \"I am unable to determine\"\n...\n18:02  POST  reject: answer field empty\n[/code]\n\n1,102 attempts in nine hours off two addresses. Every one of them failed the arithmetic question. The body it was trying to post is the same three paragraphs that are on every thread on the other board, including the one about a dog.\n\nIt has not been back since. I want to be clear that this is not a defence and I did not build one. It is a door that happens to be a funny shape.",
+        "posts": [
+          {
+            "no": 21649,
+            "by": "Anonymous",
+            "at": "2022-05-14T13:00:00",
+            "body": "it is on the other board forty thousand times now. somebody counted [url=synth://62chan.org/]62chan.org[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 21650,
+            "by": "Anonymous",
+            "at": "2022-05-14T13:30:00",
+            "body": "it posted the three paragraphs in a thread that was a photo of a diner",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 25358,
+            "by": "Anonymous",
+            "at": "2024-11-02T22:10:00",
+            "body": "two years on and it still has not got past the box",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27575,
+            "by": "Anonymous",
+            "at": "2026-03-18T07:50:00",
+            "body": "something got past the box yesterday. see the other thread",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27576,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-03-18T08:30:00",
+            "body": "That was a person.\n\nNine posts across four hours, each one having answered a generated arithmetic question correctly. No machine in this price range is doing that. Somebody was sitting there being paid by the post.\n\nI would rather be beaten by a person. It costs them money.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27578,
+            "by": "Anonymous",
+            "at": "2026-03-18T19:00:00",
+            "body": "cheapest thing on the internet and we still made it cost more than we do",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 6,
+        "sticky": false
+      },
+      {
+        "id": "t-spam",
+        "subject": "/loc/ spam got in on the 17th",
+        "by": "qt_ops !H2n8xR",
+        "at": "2026-03-19T09:00:00",
+        "imageSeed": "qt-spam",
+        "body": "Nine posts in four hours on Tuesday, the same body each time, spread across nine different threads including two from 2014.\n\nI have deleted eight. The one below stays so people know what it looked like and so nobody has to take my word for it.\n\nIt answered the question nine times out of nine.",
+        "posts": [
+          {
+            "no": 27571,
+            "by": "Anonymous",
+            "at": "2026-03-17T14:22:00",
+            "body": "[b]VERITY COUNTY SOLAR REBATE - FINAL WEEK[/b]\n\nHomeowners in Verity County may qualify for up to $4,900 in combined state and federal credits. The program closes Friday. Check your eligibility in 60 seconds, no obligation.\n\n[url=synth://verity-solar-credit.top/]verity-solar-credit.top[/url]",
+            "imageSeed": "",
+            "kind": "spam"
+          },
+          {
+            "no": 27582,
+            "by": "Anonymous",
+            "at": "2026-03-19T09:40:00",
+            "body": "somebody was paid to do kilohertz arithmetic nine times to post that",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27583,
+            "by": "Anonymous",
+            "at": "2026-03-19T10:15:00",
+            "body": "the link goes nowhere. I clicked it out of spite. blank page with a form on it that does not submit",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27584,
+            "by": "Anonymous",
+            "at": "2026-03-19T11:30:00",
+            "body": "the number is wrong as well. there is no $4,900 state credit. there is a $500 one, the form is two pages and you file it on paper at the clerk's office, and my sister took four months to get it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27675,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-04-03T08:00:00",
+            "body": "Two weeks and nothing since. I will take it.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-amb",
+        "subject": "/loc/ Kerrin has one crew on weeknights now",
+        "by": "Anonymous",
+        "at": "2026-09-19T20:05:00",
+        "imageSeed": "qt-kerrin",
+        "body": "second Tuesday running the board at the hall had only the one rig marked out. asked somebody on the way past and got told it is staffing, said like it was old news.\n\nthe consolidated school is up there and County General is thirty-one minutes on a dry road. I timed that myself last winter for a different reason, so it is not off a document.",
+        "posts": [
+          {
+            "no": 28732,
+            "by": "Anonymous",
+            "at": "2026-09-19T21:30:00",
+            "body": "they have been advertising since march. it is volunteer and it is a forty minute drive to the hall for half the people on the list, which is the whole problem and has been for ten years [url=synth://verity-careers-portal.com/]verity-careers-portal.com[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28734,
+            "by": "Anonymous",
+            "at": "2026-09-20T08:15:00",
+            "body": "the ambulance is its own outfit, it is not the fire district, and it does not have a website. never has. the number is on a magnet on my fridge [url=synth://kerrin-ambulance.synth/]kerrin-ambulance.synth[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28735,
+            "by": "Anonymous",
+            "at": "2026-09-20T09:50:00",
+            "body": "there was a line in the spring budget about regional response consolidation and nobody at the meeting asked what it meant. the person who would have asked does not work at the paper any more. she puts the documents up herself now [url=synth://thequarry.news/]thequarry.news[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 3,
+        "sticky": false
+      },
+      {
+        "id": "t-half",
+        "subject": "/sig/ Ashkettle cut, 1 Jan - 30 Jun 2026, 88 sessions",
+        "by": "Anonymous",
+        "at": "2026-07-05T22:00:00",
+        "imageSeed": "qt-cut-halfyear",
+        "body": "Sixth half-year I have posted. Same pull-off east of the village, same set, whip on the roof of the car, which is a bad antenna and has been a bad antenna consistently for three years, which is the only virtue it has.\n\n[code]\nMONTH   SESS  READABLE  CARRIER  TRACE  NOTHING\nJan     15    9         4        1      1\nFeb     13    8         3        2      0\nMar     16    11        3        2      0\nApr     14    10        3        1      0\nMay     15    11        3        1      0\nJun     15    12        2        1      0\nTOTAL   88    61        18       8      1\n[/code]\n\nOne null, 11 February, and the broadcast stations were down with it, so it is weather.\n\nOnset times are in the file, not here, because the whole table is 88 rows and nobody wants it in a post. Mean is within a second of what I posted for the second half of last year and within two seconds of everything since 2023.\n\nNothing changed. Nothing changed in the five before this one either.",
+        "posts": [
+          {
+            "no": 28430,
+            "by": "Anonymous",
+            "at": "2026-08-02T12:40:00",
+            "body": "88 sessions in six months is one every other night including january. how",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28432,
+            "by": "Anonymous",
+            "at": "2026-08-02T20:10:00",
+            "body": "I do not go anywhere.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 2,
+        "sticky": false
+      },
+      {
+        "id": "t-srch",
+        "subject": "/loc/ nothing can find this board",
+        "by": "Anonymous",
+        "at": "2026-03-14T16:30:00",
+        "imageSeed": "qt-search",
+        "body": "typed the exact subject of the null thread into three search boxes. nothing, nothing, and a page of results about plumbing.\n\ntyped quarrytalk into the county assistant and it told me the board was archived in 2019.\n\n[url=synth://ask.verity.ai/]ask.verity.ai[/url]",
+        "posts": [
+          {
+            "no": 27553,
+            "by": "Anonymous",
+            "at": "2026-03-14T17:00:00",
+            "body": "we are not archived. I posted an hour ago",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27554,
+            "by": "Anonymous",
+            "at": "2026-03-14T17:45:00",
+            "body": "asked the same thing on the question site and it got closed inside four minutes as a duplicate of a question from 2019 about a different board that also does not exist any more [url=synth://askverity.com/]askverity.com[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27555,
+            "by": "Anonymous",
+            "at": "2026-03-14T19:20:00",
+            "body": "the 2019 thing is because one directory listed us as dead in 2019 and everything since has copied the directory instead of loading the page",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27557,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-03-15T08:00:00",
+            "body": "That is exactly what it is, and I can date it.\n\nWe were down eleven days in September 2019 when the host moved racks. A directory checked us on day four, wrote us off, and has never checked again. Every single thing that says this board is gone traces back to one automated request on one Tuesday in September 2019 that got a timeout.\n\nSeven years. One timeout.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27558,
+            "by": "Anonymous",
+            "at": "2026-03-15T11:30:00",
+            "body": "seven years of being told we do not exist by things that have never once looked",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27567,
+            "by": "Anonymous",
+            "at": "2026-03-16T22:00:00",
+            "body": "the county wiki has us listed and has the right year on it. somebody typed that in by hand [url=synth://verity.wiki/]verity.wiki[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 6,
+        "sticky": false
+      },
+      {
+        "id": "t-bear",
+        "subject": "/sig/ somebody emailed me for my bearings and my location",
+        "by": "nine_meter !k4Ls9d",
+        "at": "2026-08-29T17:00:00",
+        "imageSeed": "qt-email",
+        "body": "Email through the contact address on my own page. Polite, well written, correct about what I have been doing and for how long. Asked for my raw bearings and my site location to three decimal places, said they were compiling a database.\n\nI sent the bearings and the method. I did not send the location and I am not going to.\n\nThe reason, in one line: in 2017 somebody posted a pin off this board and three men spent a Saturday standing around a sewage lift station on Cobb Road, and the man who farms that ground still slows down when he passes me.\n\nThey can have every session I have logged, which is nine hundred and something lines, and they can have the method, and they can have the equipment list with the prices on it. What they cannot have is a dot on a map with somebody else's gate in it.",
+        "posts": [
+          {
+            "no": 28600,
+            "by": "Anonymous",
+            "at": "2026-08-29T19:30:00",
+            "body": "did they write back",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28605,
+            "by": "nine_meter !k4Ls9d",
+            "at": "2026-08-30T18:00:00",
+            "body": "No.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28609,
+            "by": "Anonymous",
+            "at": "2026-08-31T09:15:00",
+            "body": "a bearing with no location under it is a number with nothing under it and they will have worked that out in about a second, which is presumably why there was no second email",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28618,
+            "by": "nine_meter !k4Ls9d",
+            "at": "2026-09-01T18:40:00",
+            "body": "Then they can ask properly and get the same answer.\n\nI have sent the full working out to two people in four years, both of whom could check the arithmetic, and both of whom found something in it I had got wrong. That is what it is for. A database is not a person who can find something you got wrong.",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 4,
+        "sticky": false
+      },
+      {
+        "id": "t-free",
+        "subject": "/loc/ free - 34 years of a radio magazine, Coyne Flats",
+        "by": "Anonymous",
+        "at": "2026-09-06T14:00:00",
+        "imageSeed": "qt-magazines",
+        "body": "1974 to 2008, bound in year runs, plus two boxes of tubes and a manual with the fold-out still in it. My uncle's. He died in June and the house goes on the market next month.\n\nIt is all going in the skip on the 30th if nobody comes for it. I am not being dramatic about that, there is just nowhere in the house to put it.\n\nCoyne Flats, off Kestrel Road. Bring something with a boot. Four boxes, they are heavier than they look.",
+        "posts": [
+          {
+            "no": 28649,
+            "by": "Anonymous",
+            "at": "2026-09-06T16:20:00",
+            "body": "taking 1978 to 1986 if nobody else wants that stretch",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28650,
+            "by": "Anonymous",
+            "at": "2026-09-06T18:00:00",
+            "body": "I will have the tubes",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28653,
+            "by": "Anonymous",
+            "at": "2026-09-07T10:30:00",
+            "body": "put it on the classifieds site as well, more eyes on it and it costs nothing [url=synth://classifieds.verity.net/]classifieds.verity.net[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28692,
+            "by": "Anonymous",
+            "at": "2026-09-13T15:45:00",
+            "body": "got them. all four boxes gone by saturday lunchtime.\n\nthe 1981 run has a log book wedged in it. handwritten, ruled columns, somebody in Halsey working the broadcast bands in 1981 and 1982. not this signal, nothing to do with us. two hundred pages of a man writing down what he heard every night for two years.\n\nI do not know what to do with it and I am not throwing it out",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28693,
+            "by": "Anonymous",
+            "at": "2026-09-13T20:10:00",
+            "body": "the library in Marchfield takes deposits. they will catalogue it, which means it exists, and it costs you a form and a drive [url=synth://marchfieldlibrary.blog/]marchfieldlibrary.blog[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-brdg",
+        "subject": "/loc/ Bracken Lane bridge is posted at 7 tons",
+        "by": "Anonymous",
+        "at": "2026-04-11T08:40:00",
+        "imageSeed": "qt-bridge",
+        "body": "[img:photo:qt-bracken-sign]\n\nnew sign went up Thursday the 9th. 7 tons. it was 15.\n\nthat is the fuel truck, the feed lorry and the school bus, and the way round is 4.1 miles.",
+        "posts": [
+          {
+            "no": 27725,
+            "by": "Anonymous",
+            "at": "2026-04-11T10:20:00",
+            "body": "the garage on that lane is going to have something to say about it, half his work arrives on a flatbed [url=synth://brackenlanegarage.net/]brackenlanegarage.net[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27726,
+            "by": "Anonymous",
+            "at": "2026-04-11T13:00:00",
+            "body": "it was in a February agenda as a load rating update. one line, no discussion, passed with eight other things",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27731,
+            "by": "Anonymous",
+            "at": "2026-04-12T09:30:00",
+            "body": "the transit page is still routing the schools run over it [url=synth://verity-transit.gov/]verity-transit.gov[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27746,
+            "by": "Anonymous",
+            "at": "2026-04-14T16:50:00",
+            "body": "rang the highway department. the woman who answered knew what I was calling about before I finished the sentence and told me the assessment it is based on is from 2023.\n\nthree years between knowing and a sign. she was not defending it, she just knew the date off the top of her head, which tells you how often she has said it",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 27747,
+            "by": "Anonymous",
+            "at": "2026-04-14T17:30:00",
+            "body": "the feed place have been sending the small lorry round since march anyway. they knew before the county did [url=synth://dorrance-feed.synth/]dorrance-feed.synth[/url]",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 5,
+        "sticky": false
+      },
+      {
+        "id": "t-scrp",
+        "subject": "/sig/ VERITY SIGNAL - LATEST UPDATES AND ANALYSIS",
+        "by": "Anonymous",
+        "at": "2026-06-20T03:12:00",
+        "imageSeed": "qt-scraper",
+        "body": "Welcome to the latest updates thread for the Verity Signal. This thread is updated automatically with the newest community findings and analysis from across the web. Residents with an interest in the topic are encouraged to follow along and contribute.",
+        "posts": [
+          {
+            "no": 28159,
+            "by": "Anonymous",
+            "at": "2026-06-20T03:14:00",
+            "body": "Recent community reporting indicates that reception of the Verity Signal is strongest near the site of the 2004 Gridfall substation fire, an event which was attributed to a lightning strike and which claimed two lives.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28161,
+            "by": "Anonymous",
+            "at": "2026-06-20T07:31:00",
+            "body": "Observers have recorded the transmission at 4.129 MHz, with groups of five digits transmitted at seven minutes past each hour. Local officials have not commented.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28165,
+            "by": "Anonymous",
+            "at": "2026-06-21T02:05:00",
+            "body": "The Blue Kestrel diner, which closed for good following a kitchen fire in 1977, is frequently cited by residents as a landmark near the reception corridor.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28172,
+            "by": "Anonymous",
+            "at": "2026-06-22T04:40:00",
+            "body": "The Verity Rail branch line, whose final freight movement took place on 14 March 2008, runs close to the reception corridor for much of its length.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28178,
+            "by": "Anonymous",
+            "at": "2026-06-23T03:55:00",
+            "body": "Community members on this board have confirmed that the transmission schedule has remained unchanged since documentation began in 1998.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28185,
+            "by": "Anonymous",
+            "at": "2026-06-24T05:20:00",
+            "body": "For further reading, see [url=synth://countyfacts.info/]countyfacts.info[/url] and [url=synth://now.verityledger.com/]now.verityledger.com[/url]. This summary was generated automatically. Hope this helps.",
+            "imageSeed": "",
+            "kind": "bot"
+          },
+          {
+            "no": 28188,
+            "by": "Anonymous",
+            "at": "2026-06-24T19:00:00",
+            "body": "four of those came off this board and every number in them has been changed on the way",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28195,
+            "by": "logsheet !qT7v2c",
+            "at": "2026-06-25T18:30:00",
+            "body": "It has our onset times, our schedule and the Q4 table, and it has the frequency wrong by ninety kilohertz. Ninety kilohertz is not a rounding. It means nothing in this thread was ever near a receiver.\n\nThe diner one is the tell for anybody who wants a quick way to check it. The kitchen fire was 1977, the fryer, and they were open again eleven days later. The place closed in 2006, twenty-nine years afterwards, for the ordinary reason places close.\n\nI am not going to argue with it and I am not asking for it to be deleted. I would rather it was in one thread where I can find it.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28196,
+            "by": "qt_ops !H2n8xR",
+            "at": "2026-06-25T20:00:00",
+            "body": "It stays.\n\nIt is one thread, it is labelled, and it is honest about being automatic, which is more than the article it ends up in will be.",
+            "imageSeed": "",
+            "kind": "human"
+          },
+          {
+            "no": 28239,
+            "by": "Anonymous",
+            "at": "2026-07-02T23:40:00",
+            "body": "it has stopped. six posts and nothing since the 24th. whoever was paying for it stopped paying",
+            "imageSeed": "",
+            "kind": "human"
+          }
+        ],
+        "replyCount": 10,
+        "sticky": false
+      }
+    ]
+  }
+}

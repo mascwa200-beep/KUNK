@@ -1,0 +1,577 @@
+{
+  "schema": 1,
+  "domain": "verityhealth.gov",
+  "title": "Verity County Health Department",
+  "type": "portal",
+  "era": "2026",
+  "skin": "govsite",
+  "description": "Food inspection reports with the scores and the violation text as written, septic permits, autumn immunization clinics and free well water testing. One sanitarian, one vacancy, and a health officer who is here eight hours a week.",
+  "tags": [
+    "verity",
+    "county",
+    "health",
+    "inspections",
+    "2026"
+  ],
+  "links": [
+    "verity.county.gov",
+    "verity-transit.gov",
+    "marchfieldlibrary.blog",
+    "ashkettlevfd.org",
+    "ask.verity.ai"
+  ],
+  "data": {
+    "agency": "Verity County Health Department",
+    "motto": "Environmental health, immunization and communicable disease for the seven towns and the three townships.",
+    "notices": [
+      "IMMUNIZATION CLINICS, OCTOBER AND NOVEMBER 2026. Gridfall: Tuesday 6 October and Tuesday 20 October, 9:00 AM to 12:30 PM, at this office, 41 Depot Street. Marchfield: Thursday 1 October and Thursday 15 October, 1:00 to 4:30 PM, in the meeting room at the Marchfield Public Library, 114 Ward Street. Use the Ward Street ramp door. The front steps are not the way in for the meeting room and people go up them anyway. Coyne Flats: Thursday 5 November, 10:00 AM to 1:00 PM, Grange hall. No appointment and no charge. See [url=/s/immunization]Immunization Clinics[/url] for what to bring and what we can give.",
+      "Inspection reports are published here within ten business days of the inspection. Reports for inspections conducted between 13 July and 21 August 2026 went up late, some of them by four weeks. The Department is funded for two sanitarian positions and has had one vacant since March. Publication is what is behind. Enforcement is not: where action is taken it is taken on the day of the inspection, and a suspended permit is suspended whether or not the report has appeared on this page.",
+      "Free bacteriological and nitrate testing for private wells runs from Thursday 1 October to Friday 20 November 2026. One sample per household. The allocation is 240 bottles and when the bottles are gone the offer is over, which in 2025 was 6 November. Bottles are picked up at the counter and must come back within 30 hours. Do not bring a sample on a Friday. See [url=/s/well-water]Private Well Water Testing[/url].",
+      "There is a site at [url=synth://verityfoodhandler.click/]verityfoodhandler.click[/url] selling a \"Verity County Food Handler Certificate\" for $69.95 with a seal on it that is not ours. It is not issued by this Department, it is not recognised by this Department, and no establishment in the county is required to accept it. Nine people have brought one to the counter since June. The Department's card is $15, is good for three years, and is printed while you wait. See [url=/s/food-handler]Food Handler Training Card[/url].",
+      "Automated answers about county services may be produced by [url=synth://ask.verity.ai/]VerityAssist[/url]. The Department does not write those answers, does not review them and is not able to correct them. Two have reached this office often enough to be worth stating here. This Department does not issue well drilling permits; those are issued by the state. The on-site wastewater permit fee is $185, not $60. The $60 figure was the fee in 2009.",
+      "Inspection reports from 2016 through March 2024 were published on the previous county portal and were not migrated to this one. Paper copies are held here and may be read at the counter without an appointment. Copies are $0.25 a page. Permit processing times for 2024 and 2025 were compiled and released on Friday 12 June 2026 under Records Request 2026-041 (H. Brenner) and the released tables are listed under [url=/s/septic-permits]On-Site Wastewater (Septic) Permits[/url].",
+      "Main number 782-4090. Monday to Friday, 8:30 AM to 4:00 PM, closed 12:00 to 12:45. Option 3 on the recorded menu, marked environmental health, has gone to an extension that does not exist since the phone system was changed in February. Press 0 and ask. The Department has reported this twice and has been told both times that the menu is maintained by the vendor.",
+      "The Ashkettle and Coyne Flats clinics are reached on Route 7, which is running a detour and is not serving the Depot and Quarry stop. Check [url=synth://verity-transit.gov/s/route-7]the Transit Division's Route 7 page[/url] before you plan on it. The Marchfield clinic is a short walk from the Marchfield town hall stop on Route 4.",
+      "Public bathing place permits for the 2027 season open on Monday 1 February 2027. The 2026 season closed on Monday 7 September. Two of the county's four permitted pools did not operate in 2026 and neither has said whether they intend to in 2027."
+    ],
+    "services": [
+      {
+        "id": "inspection-results",
+        "name": "Inspection Reports - August and September 2026",
+        "blurb": "Every routine, follow-up and complaint inspection of a permitted food establishment in the current publishing period, with the score and the observations as written. Thirteen reports.",
+        "status": "online",
+        "lastUpdated": "2026-09-18",
+        "steps": [
+          "Find the establishment by its trading name. Reports are filed under the name on the sign, not the name of the owner or the corporation, because that is the name people look for.",
+          "Read the date. A report describes what an inspector saw on one day. It is not a rating of the establishment and the Department does not publish one.",
+          "Read the score against the key. [b]90 to 100[/b] satisfactory. [b]80 to 89[/b] satisfactory with follow-up, and the follow-up is on the named violation only. [b]70 to 79[/b] conditional, reinspection within ten days. [b]Below 70[/b] unsatisfactory, reinspection within 72 hours and the permit may be suspended on the spot.",
+          "Read the violation classes. A [b]priority[/b] violation is five points and is something that can make a person ill by itself, such as a holding temperature or a bare-hand contact. A [b]priority foundation[/b] violation is three points and is something that lets a priority violation happen, such as a missing thermometer or no test strips. A [b]core[/b] violation is one point and is maintenance, cleaning or paperwork.",
+          "A low score with everything corrected on site is a different thing from a high score with a priority violation left open, and the arithmetic will not tell you which you are looking at. Read the text.",
+          "Reinspection results are written into the bottom of the original report rather than published separately. If a report mentions a reinspection, the reinspection happened and its score is in the same paragraph.",
+          "To ask about a report, or to get one that is not here, call 782-4090 and ask for environmental health. Do not use option 3.",
+          "To report a problem at an establishment, use [url=/s/complaints]Food Illness and Sanitation Complaints[/url]. A complaint is inspected, not filed."
+        ],
+        "forms": [
+          {
+            "name": "Kroh's Route 62 Market - 4188 County Route 62, Ashkettle - routine - Wednesday 9 September 2026 - score 81, Conditional",
+            "note": "Seven violations, 19 points. Priority: cold holding. Sliced ham at 49F and cut tomatoes at 51F in the deli case, case ambient 47F. Product voluntarily discarded during the inspection, 11 lb (5). Priority: the soft serve machine had not been disassembled and cleaned since 3 September. The manufacturer's instruction and the permit condition both say daily. Machine taken out of service and sealed (5). Priority foundation: no chlorine test strips on the premises (3). Priority foundation: the person in charge could not state a cooking temperature for the roller grill sausages (3). Core: handwash sink at the deli end blocked by a case of bottled water (1). Core: two ceiling tiles missing over the walk-in door (1). Core: no covered receptacle in the staff toilet room (1). Deli case compressor repaired 10 September, invoice on file. Note for anyone driving out: the lot adjoins the building with the neon kestrel on the roof, which is a phone repair shop and is not part of this permit. Reinspection Friday 18 September, score 93, Satisfactory, machine seal released. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Hollis Market, deli and meat counter - 160 Mill Street, Gridfall - routine - Wednesday 26 August 2026 - score 96, Satisfactory",
+            "note": "Two violations, 4 points. Priority foundation: date marking. Four pans of house-made chicken salad in the service case with no preparation date. Dated from the production log during the inspection (3). Core: gap of approximately half an inch under the receiving door on the alley side (1). No priority violations. Meat cooler 38F, walk-in 37F, hot case 152F, quaternary sanitizer at 200 ppm in both buckets. Thermometer in the walk-in reads 3F low and was tagged. The operator has held a permit here continuously since the Department began keeping electronic records. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "County General Hospital, main food service - 900 Fairground Road, Marchfield - routine - Wednesday 2 September 2026 - score 98, Satisfactory",
+            "note": "Two violations, 2 points. Core: cardboard shipping cases stored on the floor in dry storage, north wall (1). Core: light shield missing over the pot sink (1). No priority or priority foundation violations. Cook-chill records reviewed for the period 1 July to 31 August, complete. Dish machine final rinse 183F at the manifold, verified with a maximum registering thermometer. Patient tray line temperatures recorded at 12:05 PM, all in range. The 3 North nourishment refrigerator is logged separately and was not part of this inspection. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Gridfall Plaza Lanes, snack bar - 2 Plaza Drive, Gridfall - routine - Tuesday 15 September 2026 - score 88, Satisfactory with follow-up",
+            "note": "Four violations, 12 points. Priority: hot holding. Nacho cheese in the countertop warmer at 121F, held since 11:00 AM. Reheated to 178F during the inspection and the warmer thermostat was reset (5). Priority foundation: the only person on duty had no food handler card and could not produce a record of training (3). Priority foundation: sanitizer bucket at the bar tested at 0 ppm, refilled during the inspection (3). Core: interior of the ice machine has a build-up on the deflector, cleaning scheduled (1). Follow-up in ten days on the training record only, due Friday 25 September and not yet made at the time of publication. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "The Depot Tap - 18 Depot Street, Gridfall - routine - Thursday 20 August 2026 - score 76, Conditional",
+            "note": "Eight violations, 24 points. Priority: cooling. Chili cooled in a covered 8 quart container in the walk-in, measured at 63F at 9 hours. Discarded, 14 lb (5). Priority: raw ground beef stored above cut lettuce in the reach-in (5). Priority: no hot water at the bar handwash sink, measured 71F at two minutes (5). Priority foundation: no thermometer in the reach-in (3). Priority foundation: person in charge could not describe the procedure for a vomiting incident (3). Core: employee drink without a lid on the prep table (1). Core: mop stored in the bucket, wet (1). Core: exterior door to the alley propped with a milk crate (1). Water heater element replaced 21 August. Reinspection Friday 28 August, score 91, Satisfactory. The operator asked that it be recorded that the beef was moved before the inspector left the building, and it was. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Marchfield Elementary School kitchen - 45 Seward Street, Marchfield - routine - Thursday 3 September 2026 - score 100, Satisfactory",
+            "note": "No violations. All temperatures in range, all records complete, all four staff carded and current. This is the fourth consecutive 100 for this kitchen. The Department does not give awards and the manager has stopped asking. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Coyne Flats Senior Nutrition Site, Grange hall - 7 Grange Road, Coyne Flats - routine - Friday 11 September 2026 - score 94, Satisfactory",
+            "note": "Four violations, 6 points. Priority foundation: no consumer advisory posted for the Tuesday egg service (3). Core: single-service cups stored unwrapped on an open shelf (1). Core: the hand sink in the serving area had no paper towels at the time of inspection, stocked during (1). Core: the three-bay sink drainboard is pitted and holds water (1). Meals are delivered hot from County General's kitchen and held on site. Delivery temperature log reviewed for August, complete, lowest recorded 142F. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "New Carrow Dairy Bar - 12 Bridge Street, New Carrow - routine - Thursday 27 August 2026 - score 85, Satisfactory with follow-up",
+            "note": "Five violations, 15 points. Priority: soft serve mix held in the machine hopper at 48F, machine ambient 46F. Mix discarded, 3 gallons (5). Priority foundation: no test kit for the sanitizer in use (3). Priority foundation: the walk-in thermometer is inside the door where it reads the room, not the box (3). Priority foundation: no written cleaning schedule for the soft serve machine (3). Core: fryer cabinet interior soiled (1). Seasonal operation, last day 12 October. Follow-up on the machine temperature completed Wednesday 2 September, hopper at 39F, satisfactory. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Milbrook Legion Post 219, kitchen - 9 Oak Street, Milbrook - complaint - Friday 4 September 2026 - score 68, Unsatisfactory, permit suspended",
+            "note": "Ten violations, 32 points. Inspection made on a complaint received 3 September alleging illness after a fish fry. No illness was confirmed and no specimen was submitted. Priority: no hot water in the kitchen, measured 74F at the three-bay sink (5). Priority: cooked fish held at 118F on the steam table (5). Priority: raw shell eggs at room temperature on the prep counter, ambient 79F (5). Priority: sanitizer not in use at any sink (5). Priority foundation: no person in charge present with demonstrated knowledge (3). Priority foundation: no thermometer available in the kitchen (3). Priority foundation: no date marking on any prepared food in the walk-in (3). Core: floor tile broken at the doorway (1). Core: hood filters soiled (1). Core: no covered receptacle in the women's toilet room (1). Permit suspended at 2:40 PM on 4 September, notice posted on the kitchen door, operation ceased. Water heater repaired 7 September. Reinspection Wednesday 9 September, score 90, Satisfactory, permit reinstated at 11:15 AM. The Post has had this permit since 1974 and this is its first suspension. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Pell Road Fuel and Deli - 1120 Pell Road, Halsey - routine - Tuesday 25 August 2026 - score 72, Conditional",
+            "note": "Ten violations, 28 points. Priority: cold holding, prepared sandwiches in the grab-and-go case at 52F, discarded, 22 units (5). Priority: hot holding, fried chicken in the display case at 126F, discarded, 9 lb (5). Priority: the mop sink hose was submerged in the bucket, no backflow protection (5). Priority foundation: no test strips (3). Priority foundation: no employee health agreements on file (3). Priority foundation: the person in charge did not know the reheating temperature (3). Core: cases stored on the walk-in floor (1). Core: reach-in door gasket torn (1). Core: no soap at the rear hand sink, supplied during inspection (1). Core: outer opening of the back door does not close tight (1). Reinspection Thursday 3 September, score 89, Satisfactory with follow-up. The grab-and-go case was replaced, not repaired. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Kerrin Consolidated School, cafeteria - 300 School Street, Kerrin - routine - Tuesday 8 September 2026 - score 97, Satisfactory",
+            "note": "One violation, 3 points. Priority foundation: the walk-in freezer thermometer was broken and no alternative was available (3). Replaced from stock before the inspector left. Breakfast and lunch temperature logs reviewed for 24 August to 8 September, complete. The dish machine sanitizer concentration was verified with strips at 52 ppm chlorine on three consecutive cycles. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Taste of Verity, mobile unit VCH-MU-14 - operating at the Gridfall Plaza lot - routine - Thursday 10 September 2026 - score 90, Satisfactory",
+            "note": "Four violations, 10 points. Priority: the handwash sink on the unit had no water, the tank was empty and was filled during the inspection (5). Priority foundation: no wastewater disposal receipt for the previous seven days (3). Core: the propane bottle is not secured to the frame (1). Core: the unit's permit decal is mounted inside the serving window where it cannot be read from the customer side (1). Commissary agreement on file, current through 31 March 2027. The unit operates at four locations in the county and the permit lists them all. Inspected by D. Kilbride, R.S."
+          },
+          {
+            "name": "Ashkettle Volunteer Fire Department chicken barbecue - Station 4, County Route 62, Ashkettle - temporary event - Saturday 18 July 2026 - Satisfactory",
+            "note": "Temporary events are inspected against a nine-item checklist and are not scored. All nine met. Two probe thermometers in use, pits at temperature on arrival, handwash station with warm water and towels set up at the serving end, halves held above 140F in covered pans, wastewater carried out. The event holds a two-day permit every July and has never had a violation recorded against it. The Department's file on it starts in 2005 and this is the twenty-second year in it."
+          },
+          {
+            "name": "St Mark's parish hall, harvest supper - 88 Third Street, Gridfall - temporary event - Friday 21 August 2026 - Satisfactory",
+            "note": "Nine-item checklist, all nine met. One advisory, not a violation: the hall's domestic dishwasher is not a sanitizing machine and cannot be used for service ware at a permitted event. The hall has been told this at every event inspection since 2018 and has used the three-bay sink at every event since 2018. The note is repeated here because the checklist has a box for it."
+          }
+        ]
+      },
+      {
+        "id": "inspection-archive",
+        "name": "Inspection Reports - Earlier Periods",
+        "blurb": "Reports older than the current publishing period. Most of them are on paper in this office and can be read at the counter. There is no search.",
+        "status": "paper-only",
+        "lastUpdated": "2026-06-12",
+        "steps": [
+          "Decide which period you need. Anything from April 2024 onward is in the current system and staff can print it while you wait.",
+          "Anything from 2016 to March 2024 is in one of seven binders at the counter. Ask for the binder by town and year.",
+          "Anything before 2016 is in boxes at the county records annex and takes five to seven business days. Request it on Form VC-5 through [url=synth://verity.county.gov/s/records-request]the county public records service[/url], not here, because the annex is not ours.",
+          "Copies are $0.25 a page at this counter. The county annex charges $0.15 a page for the same copy. Nobody here can explain that and it has been raised.",
+          "If you are looking for a specific inspection and you know roughly when it was, say so. The binders are chronological and the fastest way through them is a date."
+        ],
+        "forms": [
+          {
+            "name": "Inspection reports, April 2024 to July 2026 (electronic)",
+            "note": "Held in the current system. Ask at the counter or by phone for a report older than the two periods published on this site. There is no self-service search. The vendor quoted $14,000 for one in 2024 and the Board did not fund it."
+          },
+          {
+            "name": "Inspection reports, 2016 to March 2024 (paper, seven binders)",
+            "note": "Binder 1, Gridfall 2016-2019. Binder 2, Gridfall 2020-March 2024. Binder 3, Marchfield and New Carrow 2016-March 2024. Binder 4, Ashkettle and Halsey 2016-March 2024. Binder 5, Coyne Flats, Milbrook and Kerrin 2016-March 2024. Binder 6, temporary events, all towns. Binder 7, mobile units and vending, all towns. Read at the counter, no appointment. Copies $0.25 a page. Binder 4 is missing the September 2021 tab and a replacement was requested from the state in 2022."
+          },
+          {
+            "name": "Inspection reports, 1998 to 2015",
+            "note": "Boxed and stored off site at the county records annex. Retrieval takes five to seven business days and is requested on Form VC-5 through the county portal, not here. Reports before 2004 are handwritten on the old VCH-4 sheet, which scored out of 40, not 100, and the two scales are not comparable. People compare them anyway."
+          },
+          {
+            "name": "Establishments closed since 2016 (list, one page)",
+            "note": "A single sheet, updated by hand, of permitted food establishments that have closed and not reopened. It runs to 61 names. It is not published online because four of the buildings are now houses and the Department was asked not to."
+          },
+          {
+            "name": "Score summary by town, 2025 (one page, released under 2026-041)",
+            "note": "Mean routine score by town for calendar 2025. Gridfall 91.4, Marchfield 93.1, Ashkettle 88.0, New Carrow 90.2, Halsey 85.6, Coyne Flats 92.8, Milbrook 87.3, Kerrin 96.0, unincorporated 89.9. The Halsey figure is eleven inspections and two of them are the same operator. The Department does not publish a ranking and does not agree with the ones that have been made from this sheet."
+          }
+        ]
+      },
+      {
+        "id": "food-permits",
+        "name": "Food Establishment Permits and Plan Review",
+        "blurb": "The permit you need to sell food to the public in Verity County, what it costs, and the plan review that comes before it if you are building or remodelling.",
+        "status": "online",
+        "lastUpdated": "2026-04-14",
+        "steps": [
+          "Work out your category before you pay anything. [b]Category 1[/b] is prepackaged only, $95 a year. [b]Category 2[/b] is limited preparation, no cooling of cooked food, $160. [b]Category 3[/b] is full service, $310. [b]Mobile unit[/b] is $180 and needs a commissary agreement. A caterer is Category 3 no matter how small the kitchen is.",
+          "If you are building, remodelling or changing category, submit plans for review [b]before[/b] you buy equipment. Review is $120 and takes about three weeks. Two rejections this year were over a hand sink that could not be reached from where the food was prepared, which is a wall, not a fitting.",
+          "Submit Form VCH-2 with the plan review approval, the menu, and the name of the certified food protection manager. A Category 3 permit is not issued without a certified manager named on it.",
+          "The Department inspects before opening. That inspection is included in the fee. Ask for it at least five working days out and understand that in July and August it may be more.",
+          "Permits run to 31 March and are not prorated. A permit taken out in February costs the same as one taken out in April. This has been raised with the Board twice.",
+          "Pay at the counter or through [url=synth://verity.county.gov/]the county services portal[/url]. The portal adds a 2.4 percent vendor fee. The counter does not, and takes a cheque.",
+          "A permit is issued to a person and a place. It does not transfer when the business is sold. Buyers find this out at closing more often than they should."
+        ],
+        "forms": [
+          {
+            "name": "Food Establishment Permit Application (Form VCH-2)",
+            "note": "Fillable PDF, four pages. Page 3 asks for the make and model of every refrigeration unit. Give the serial number too if you have it; it saves a phone call later."
+          },
+          {
+            "name": "Plan Review Application (Form VCH-2P)",
+            "note": "PDF. Submit with a floor plan to scale, a finish schedule and an equipment list. Hand-drawn is accepted if it is to scale and dimensioned. Four of the last ten approved plans were hand-drawn."
+          },
+          {
+            "name": "Change of Ownership Notification (Form VCH-2X)",
+            "note": "PDF, one page. Must be received before the change, not after. There is no fee. The new owner still applies for a new permit."
+          },
+          {
+            "name": "Certified Food Protection Manager, list of accepted programmes (one page)",
+            "note": "Six accepted programmes. The list has not changed since 2019 and two of the six no longer run a course within 90 miles."
+          },
+          {
+            "name": "Fee schedule, effective 1 April 2026 (one page)",
+            "note": "Adopted by the Board of Health on 10 February 2026. The previous schedule was adopted in 2017."
+          }
+        ]
+      },
+      {
+        "id": "complaints",
+        "name": "Food Illness and Sanitation Complaints",
+        "blurb": "How to report suspected foodborne illness or an unsanitary condition at a permitted establishment. Complaints are inspected, not filed.",
+        "status": "online",
+        "lastUpdated": "2026-05-19",
+        "steps": [
+          "Call 782-4090 and ask for environmental health, or fill out Form VCH-9 at the counter. Complaints may be anonymous and most of them are.",
+          "Tell us the establishment, the date and time you were there, and what you ate or what you saw. If several of you ate together, say what each person had, including anyone who did not get ill. That comparison is the only thing that makes a food history useful.",
+          "If you are ill, see a clinician and ask for a stool culture. Without a laboratory confirmation the Department can inspect but cannot attribute. Most complaints end here and that is not a brush-off, it is what the evidence supports.",
+          "A complaint about a temperature, a person working while ill, or a sewage problem is inspected within one business day. A complaint about cleanliness is inspected at the next routine inspection unless there is something specific in it.",
+          "We do not tell the establishment who complained. We cannot stop an establishment from working out who complained if four people ate there that day.",
+          "You will not usually be told the outcome, because the outcome is somebody else's inspection report. The report itself will appear under [url=/s/inspection-results]Inspection Reports[/url] with 'complaint' in the line."
+        ],
+        "forms": [
+          {
+            "name": "Food Complaint Form (Form VCH-9)",
+            "note": "One page, paper at the counter or by phone. There is no online version. The online version was budgeted in 2021 and the money went to the well testing allocation instead."
+          },
+          {
+            "name": "Food History Worksheet (Form VCH-9H)",
+            "note": "Two pages, 72 hours of meals. Staff fill this out with you over the phone and it takes about twenty minutes. Nobody enjoys it."
+          },
+          {
+            "name": "Complaint log, 2026 year to date (summary, one page)",
+            "note": "61 complaints received. 22 inspected within one business day. 4 resulted in a violation being written. 1 resulted in a suspension. 0 laboratory-confirmed outbreaks."
+          }
+        ]
+      },
+      {
+        "id": "septic-permits",
+        "name": "On-Site Wastewater (Septic) Permits",
+        "blurb": "New systems, repairs and replacements outside the sewer districts, plus how to get a copy of the permit and the as-built drawing for a property you are buying.",
+        "status": "degraded",
+        "lastUpdated": "2026-09-14",
+        "steps": [
+          "For a new system: a soil evaluation first, by a registered evaluator, in the ground, at the location of the proposed field. A perc test from a neighbouring lot is not a soil evaluation for your lot and will be rejected.",
+          "Submit Form VCH-40 with the evaluation, a site plan showing the well, the property lines, any surface water within 100 feet, and the proposed field. The fee is $185. A repair permit is $90. A replacement is $185.",
+          "Review is running eleven to fourteen weeks against a published target of four. The backlog is a staffing matter and the Department will not pretend otherwise. Permits for a failing system that is discharging to the surface are moved to the front and are being issued in three to six working days.",
+          "The system is inspected before it is covered. Have the installer call for the inspection with at least two working days' notice and do not backfill. Systems backfilled before inspection are uncovered at the owner's cost and this happens five or six times a year.",
+          "[b]Getting a copy of an existing permit.[/b] Search by parcel number, not by your name. Permits before 2001 are indexed under the name on the application, which is usually the installer or the person who owned the land when the system went in, and for most houses that is not you. Bring the parcel number from your tax bill or from [url=synth://verity.county.gov/s/land-records]the county land records service[/url] and staff can find it in a few minutes.",
+          "If there is genuinely nothing on the parcel, the system predates permitting, which in this county means before 1973. That is not a defect and it is not a violation. Lenders are told this in writing on request and Form VCH-40N exists for exactly that.",
+          "The as-built drawing is a separate sheet from the permit and is sometimes filed in the wrong year. If the permit is there and the as-built is not, say so and staff will check the two years either side before telling you it is missing.",
+          "There are people who will offer to expedite this for a fee, including one at [url=synth://countypermits-fast.vip/]countypermits-fast.vip[/url]. Nobody can expedite it. There is one reviewer."
+        ],
+        "forms": [
+          {
+            "name": "On-Site Wastewater Permit Application (Form VCH-40)",
+            "note": "Fillable PDF, six pages including the soil log sheet. Page 5 must be signed by the registered evaluator in ink. A typed name is not a signature and the application will come back."
+          },
+          {
+            "name": "Existing System Records Search (Form VCH-40R)",
+            "note": "One page. Free. Give the parcel number. Results in two to five business days, or at the counter while you wait if it is after 2001."
+          },
+          {
+            "name": "No Record of Permit letter (Form VCH-40N)",
+            "note": "Issued on request when a search finds nothing. States the date of the search, the parcel searched and the year permitting began. Most lenders accept it. Two do not and the Department cannot help with that."
+          },
+          {
+            "name": "Abandonment of a Septic Tank (Form VCH-44)",
+            "note": "One page. Required when a property connects to a sewer district or a tank is taken out of service. The tank must be pumped and the lid collapsed or the tank filled. $40."
+          },
+          {
+            "name": "Permit processing times, 2024 and 2025 (three pages, released 12 June 2026)",
+            "note": "Released under Records Request 2026-041 (H. Brenner). Median days from complete application to permit: 2024, 38. 2025, 61. First half of 2026, 79. The tables count complete applications only, which is why they do not match the counter's experience; an application returned for a missing signature restarts at day zero and 22 percent of them are."
+          },
+          {
+            "name": "Map of the three sewer districts (one page)",
+            "note": "Gridfall, Marchfield and the New Carrow village district. Everything else in the county is on-site. The map was drawn in 2008 and the New Carrow boundary has been extended twice since."
+          }
+        ]
+      },
+      {
+        "id": "septic-registry",
+        "name": "Registered Installers, Pumpers and Soil Evaluators",
+        "blurb": "The current registry. Registration means the person has met the Department's requirements. It is not a recommendation and the Department does not keep a complaint record you can read.",
+        "status": "online",
+        "lastUpdated": "2026-08-11",
+        "steps": [
+          "[b]Registered installers, 2026.[/b] Bregger Excavating (Marchfield). Hollander Septic Service (Ashkettle), [url=synth://hollanderseptic.synth/]hollanderseptic.synth[/url]. Kerrin Earthworks (Kerrin). Lindenau and Sons (Gridfall). Tarbell Excavating (Coyne Flats). Vetter Construction (Halsey, registered June 2026).",
+          "[b]Registered pumpers, 2026.[/b] Hollander Septic Service. Pell Valley Sanitation (out of county, registered here). Tarbell Excavating. Dorrance Pumping (Nye Mills, registered for pumping only, not installation).",
+          "[b]Registered soil evaluators, 2026.[/b] G. Bregger. M. Tarbell. R. Ostrowski (also registered in two adjoining counties). D. Kilbride, R.S. (Department staff, evaluations for repair permits only, no charge, and the backlog on those is the same backlog).",
+          "Registration lapses on 31 December and about a third of the list renews in the last week of the year. A name missing in January is usually a renewal that has not been processed, so call before you assume.",
+          "The Department does not rank installers, does not maintain a list of ones to avoid, and will not tell you on the phone which one to use. Ask your neighbours. In this county that works.",
+          "A dispute about workmanship is a civil matter. The Department can only act if the installed system does not match the permit, and if you think it does not match the permit, say that, because that we can inspect."
+        ],
+        "forms": [
+          {
+            "name": "Installer Registration (Form VCH-41)",
+            "note": "Annual. $75. Requires proof of liability insurance and one system inspected and passed in the previous two years."
+          },
+          {
+            "name": "Soil Evaluator Registration (Form VCH-42)",
+            "note": "Annual. $75. Requires the state evaluator credential, which the Department does not issue and cannot look up for you."
+          },
+          {
+            "name": "Pumper Registration and Disposal Log (Form VCH-43)",
+            "note": "Annual, $75, with a monthly disposal log. Septage goes to the Marchfield treatment plant and nowhere else. The log is checked against the plant's receiving records twice a year."
+          }
+        ]
+      },
+      {
+        "id": "immunization",
+        "name": "Immunization Clinics",
+        "blurb": "Walk-in clinics in Gridfall, Marchfield and Coyne Flats through October and November. Childhood schedule, adult tetanus, influenza and shingles. No appointment, no charge for the childhood schedule.",
+        "status": "online",
+        "lastUpdated": "2026-09-17",
+        "steps": [
+          "[b]Gridfall.[/b] Tuesday 6 October and Tuesday 20 October, 9:00 AM to 12:30 PM, at this office, 41 Depot Street. Park in the lot off Depot; the two spaces at the door are for the nurse's car and the vaccine cooler.",
+          "[b]Marchfield.[/b] Thursday 1 October and Thursday 15 October, 1:00 to 4:30 PM, in the meeting room at the Marchfield Public Library, 114 Ward Street. In by the Ward Street ramp door. The library posts its own closures at [url=synth://marchfieldlibrary.blog/]the library's blog[/url] and if the building is shut the clinic is shut.",
+          "[b]Coyne Flats.[/b] Thursday 5 November, 10:00 AM to 1:00 PM, Grange hall, 7 Grange Road. This is the only north-end clinic this autumn. The Milbrook clinic was not scheduled because the room is not available and no alternative was offered.",
+          "Bring the child's immunization record if you have it. If you do not have it, come anyway. We can nearly always find the record in the state registry and it takes about four minutes.",
+          "Childhood schedule vaccines are free to any child in the county regardless of insurance. Adult tetanus and diphtheria is $32. Influenza is $25 and free to anyone 65 or over or on public assistance. Shingles is $205 and most private insurance pays it at a pharmacy for less, so ask there first.",
+          "We cannot give travel vaccines, rabies pre-exposure, or anything requiring a prescription from your own clinician. Yellow fever is not given anywhere in this county or the two next to it.",
+          "School exemption paperwork is signed at the clinic if the medical part is already completed by a clinician. The Department cannot complete the medical part.",
+          "[b]If you are on the bus.[/b] The Marchfield clinic is a short walk from the Marchfield town hall stop on Route 4. The Coyne Flats clinic is on Route 7, which is on detour. See [url=synth://verity-transit.gov/s/route-7]the Route 7 page[/url] for the stops that are actually being served."
+        ],
+        "forms": [
+          {
+            "name": "Immunization Consent (Form VCH-20)",
+            "note": "Two pages, filled in at the clinic. It can be downloaded and brought completed and that saves about ten minutes at the table."
+          },
+          {
+            "name": "School Immunization Exemption (Form VCH-21)",
+            "note": "Medical exemption only. The clinician completes part B. The Department completes part C. Part A is the parent's and is the part most often left blank."
+          },
+          {
+            "name": "Autumn 2026 clinic schedule (one page, print)",
+            "note": "The printed sheet is in the rack at this office, at the library, at both Gridfall pharmacies and at Hollis Market. The version at the Halsey post office is last autumn's and has been removed three times."
+          },
+          {
+            "name": "Childhood immunization schedule, 2026 (two pages)",
+            "note": "Reprinted from the national schedule. The Department does not write it and cannot vary it."
+          },
+          {
+            "name": "Vaccine price list, effective 1 July 2026 (one page)",
+            "note": "Prices are what the Department pays plus a $6 administration fee. The Department does not make money on this and the Board reviews the fee every two years."
+          }
+        ]
+      },
+      {
+        "id": "well-water",
+        "name": "Private Well Water Testing",
+        "blurb": "Bacteria, nitrate and hardness testing for private wells. Free from 1 October to 20 November while the bottle allocation lasts, and $28 the rest of the year. About 4,900 households in this county are on a private well.",
+        "status": "online",
+        "lastUpdated": "2026-09-16",
+        "steps": [
+          "Pick up a bottle at the counter, or ask for a kit to be mailed. The bottle contains a preservative tablet. Do not rinse it, do not touch the inside of the cap, and do not use your own jar. A sample in a jar is thrown away and that is the second most common reason a test fails.",
+          "Sample from a cold tap that has no filter, no softener and no aerator on it. The outside spigot is usually the right one. Take the aerator off if there is one; do not just run it harder.",
+          "Run the tap for five minutes first. Fill to the line, not to the top. Cap it and write the date and time on the label while you are standing there.",
+          "[b]The sample must reach the laboratory within 30 hours of being taken.[/b] The courier collects from this office Monday through Thursday at 2:00 PM. A sample handed in after 2:00 PM on Thursday sits until Monday and the bacteriological result is reported as invalid, which means you did the work for nothing. That is why the Department asks you not to bring one on a Friday.",
+          "Results are emailed within nine business days, or posted on paper if you ask. Bacteriological results are read as present or absent, not as a number. Nitrate is reported in milligrams per litre and the drinking water limit is 10.",
+          "If a result is out of range a sanitarian calls you the same day and stays on the phone until you know what to do next. This is a person and they will call back if they miss you. In 2025 that was 214 calls out of 1,142 samples.",
+          "A single positive for total coliform is usually the tap, the hose or the sampling, not the well. Resample before you shock-chlorinate anything. A positive for E. coli is different and is treated as urgent.",
+          "Testing is recommended once a year, and after any flooding, any work on the well, or any change in how the water tastes or looks. Most households in this county test once, when they buy the house, because the lender made them.",
+          "This service is also listed on [url=synth://verity.county.gov/s/well-water]the county services portal[/url]. That listing is accurate except for the drop-off points: the coolers at the Halsey and Milbrook town halls were withdrawn in 2025 and are not being restocked. The Department has asked twice for the listing to be corrected."
+        ],
+        "forms": [
+          {
+            "name": "Well Test Kit Request (Form VC-101)",
+            "note": "This is a county portal form, not one of ours, and it still works. One page, about ninety seconds. Kits are mailed within three business days."
+          },
+          {
+            "name": "Sample Submission Slip (Form VCH-31)",
+            "note": "Comes with the bottle. Fill in the time of collection, not the time you dropped it off. The laboratory uses that time to decide whether the sample is valid."
+          },
+          {
+            "name": "Well Disinfection Instructions (two pages)",
+            "note": "Chlorine quantities by well diameter and depth, with the arithmetic done for the six common cases. Written in 1998 and reviewed in 2014. Still correct."
+          },
+          {
+            "name": "Nitrate and Infants (one page)",
+            "note": "The short version: do not make formula with water over 10 milligrams per litre of nitrate, and do not boil it to fix it, because boiling concentrates it. The Department will test any household with a pregnancy or an infant free of charge at any time of year."
+          },
+          {
+            "name": "Laboratory certification, Pell Valley Analytical (certificate copy)",
+            "note": "State-certified for drinking water bacteriology and nitrate. The Department has used this laboratory since 2011 and the contract is rebid every three years. Nobody else bid in 2024."
+          }
+        ]
+      },
+      {
+        "id": "food-safety",
+        "name": "Food Safety at Home and at Public Events",
+        "blurb": "Temperatures, cooling, home canning and church suppers. The handouts here are the ones the Department gives out at the counter and they have not changed much because the numbers have not changed.",
+        "status": "online",
+        "lastUpdated": "2017-11-09",
+        "steps": [
+          "[b]Four temperatures worth knowing.[/b] Cold food at or below 41F. Hot food at or above 135F. Poultry cooked to 165F. Ground meat cooked to 155F. A whole cut of beef or pork is 145F and a rest. Everything else on this page follows from those.",
+          "[b]Cooling is what actually makes people ill.[/b] Cooked food has to get from 135F to 70F within two hours, and from 70F to 41F within four more. A stockpot of chili in a home refrigerator does not do this; it takes nine or ten hours and the middle of it sits in the range where bacteria multiply for most of them. Divide it into pans no more than two inches deep, uncovered, and cover it once it is cold. This is the single most common priority violation written in this county.",
+          "[b]Thaw in the refrigerator, under cold running water, or in the cooking process.[/b] Not on the counter. A turkey on the counter overnight is the one the Department gets asked about every November and the answer has not changed.",
+          "[b]Leftovers.[/b] Four days in the refrigerator. Reheat once, to 165F, all the way through, not just at the edge. Reheating in a slow cooker does not get there fast enough; use the stove or the oven and then hold it in the slow cooker.",
+          "[b]Home canning.[/b] Low-acid foods, which is nearly all vegetables, all meats and most soups, need a pressure canner. A boiling water bath does not reach the temperature that matters and no amount of time in one will make up for it. Tomatoes are borderline and need added acid. The Department tests dial gauges free of charge at the counter, takes about ten minutes, and in 2025 four of the 38 tested were reading more than two pounds off.",
+          "[b]Church suppers, fire department barbecues and fundraisers.[/b] If it is open to the public and food is sold or donations are taken, it needs a temporary event permit. See [url=/s/temp-events]Temporary Food Event Permits[/url]. If it is a members-only potluck it does not, and the Department still recommends two probe thermometers and a hand washing station because the bacteria do not check the guest list.",
+          "[b]Cottage food.[/b] Baked goods that are not potentially hazardous, jams, jellies and dry mixes may be made in a home kitchen and sold direct to the consumer without a permit, up to $35,000 a year, with a label that names you and gives your address. Cheesecake, cream pies, anything with meat and anything that needs refrigeration are not cottage foods and are not close.",
+          "[b]A meat thermometer costs about nine dollars.[/b] The Department has given away 400 of them in the last three years and would rather do that than write the violation."
+        ],
+        "forms": [
+          {
+            "name": "Cooling and Reheating (one page, both sides)",
+            "note": "The two-stage cooling rule with a chart and four worked examples including a 20 quart pot of chili. This is the handout the Department prints most of."
+          },
+          {
+            "name": "Safe Internal Temperatures (refrigerator card)",
+            "note": "Card stock, magnet strip on the back. Free at the counter. About 300 a year go out and the Department is happy about that."
+          },
+          {
+            "name": "Home Canning: what needs a pressure canner (two pages)",
+            "note": "Reviewed against the national guidance in 2014. The acidity table is the part people come back for."
+          },
+          {
+            "name": "Dial Gauge Testing (walk-in service)",
+            "note": "Bring the lid or the gauge to the counter, any weekday morning. No charge, no appointment, ten minutes. Weighted gauges do not need testing and cannot be tested."
+          },
+          {
+            "name": "Cottage Food Operations (three pages)",
+            "note": "What is allowed, what is not, the label requirements and the sales limit. Updated when the state updated the limit in 2023. The Department gets about one call a week on this, mostly about cheesecake, and the answer is still no."
+          }
+        ]
+      },
+      {
+        "id": "food-handler",
+        "name": "Food Handler Training Card",
+        "blurb": "The county food handler card. $15, valid three years, printed at the counter the same day. Required for anyone who handles unpackaged food in a permitted establishment.",
+        "status": "online",
+        "lastUpdated": "2026-06-16",
+        "steps": [
+          "Sit the course. In person at this office on the first Tuesday of the month at 9:00 AM, about ninety minutes, no booking needed for fewer than four people. Or take the written packet home, work through it and bring it back.",
+          "Pass the twenty-question test. The pass mark is fifteen. It may be retaken the same day, once, free. Almost everybody passes.",
+          "Pay $15 in cash, by cheque, or by card at the counter. The card is laminated and handed to you before you leave.",
+          "The card is valid three years from the date of issue and is yours, not your employer's. It goes with you when you change jobs. Employers who keep the card when someone leaves are keeping something that is not theirs and the Department will reissue it free once in that situation.",
+          "An establishment must have at least one carded person on every shift. A Category 3 establishment must also have a certified food protection manager, which is a different, longer and more expensive qualification and is not this.",
+          "[b]The card is not sold online.[/b] There is no online version and no third party is authorised to issue it. The certificate sold at [url=synth://verityfoodhandler.click/]verityfoodhandler.click[/url] for $69.95 is not this card and is not accepted here.",
+          "Courses in Spanish are run twice a year, in March and October, and the packet is available in Spanish at any time. Ask at the counter."
+        ],
+        "forms": [
+          {
+            "name": "Food Handler Course Packet (28 pages)",
+            "note": "Print or collect at the counter. Handwashing, temperatures, cross contamination, cleaning and sanitizing, employee health. Written in 2016 and it reads like it."
+          },
+          {
+            "name": "Food Handler Test (Form VCH-15)",
+            "note": "Twenty questions, multiple choice. Taken at the counter under staff observation. Not sent out, not taken at home, not emailed."
+          },
+          {
+            "name": "Replacement Card (Form VCH-15R)",
+            "note": "$5, or free if your employer kept the original. Bring identification. The Department can look up a card issued since 2015."
+          },
+          {
+            "name": "Course dates, October 2026 to March 2027 (one page)",
+            "note": "First Tuesday of the month at 9:00 AM: 3 November, 1 December, 5 January, 2 February, 2 March. The October course was moved to Tuesday 13 October because the immunization clinic has the room that morning."
+          }
+        ]
+      },
+      {
+        "id": "temp-events",
+        "name": "Temporary Food Event Permits",
+        "blurb": "Two-day permits for fairs, suppers, barbecues and fundraisers where food is sold or donations are taken. $35, or no charge for a volunteer fire department, a school or a church.",
+        "status": "online",
+        "lastUpdated": "2026-07-30",
+        "steps": [
+          "Apply at least ten days before the event on Form VCH-7. Late applications are taken up to two days before and cost $35 extra, which is not a penalty, it is the overtime.",
+          "Say what you are cooking and where you are cooking it. A menu of hamburgers cooked to order is a different permit conversation from a menu of anything cooled overnight, and cooling overnight at an event is usually refused.",
+          "You need a hand washing station: a container with a spigot, warm water, soap, paper towels and a catch bucket. A hand sanitizer pump is not a hand washing station. This is the most common thing people turn up without.",
+          "You need a probe thermometer, and somebody who will use it. Two if you are cooking in more than one place.",
+          "Food is prepared at the event or in a permitted kitchen. It is not prepared at home. The exception is baked goods that are not potentially hazardous, which may come from a home kitchen, and that exception is where most of the confusion lives.",
+          "The Department inspects most events during service, against a nine-item checklist, and temporary events are not scored out of 100. The checklist is on the back of the permit.",
+          "Standing events keep a file. The Ashkettle Volunteer Fire Department's July barbecue has a file going back to 2005 and has never had a violation recorded against it; their own page is at [url=synth://ashkettlevfd.org/fundraiser]the department's fundraiser page[/url]. The county fair's food court is permitted as fourteen separate temporary events, which is how the state counts it, not how the fair counts it."
+        ],
+        "forms": [
+          {
+            "name": "Temporary Food Event Application (Form VCH-7)",
+            "note": "Two pages. Page 2 is the menu and the equipment list and is the part that gets the application approved or returned."
+          },
+          {
+            "name": "Nine-item event checklist (one page)",
+            "note": "Printed on the back of the permit. Hand washing, thermometers, holding temperatures, protection from contamination, water supply, wastewater, ice handling, worker health, cleaning. Read it before the day."
+          },
+          {
+            "name": "Annual Event Registration (Form VCH-7A)",
+            "note": "For an organisation that runs the same event every year. Covers one event a year for three years at $60 total. Eleven organisations in the county are on it."
+          },
+          {
+            "name": "2026 permitted events list (two pages)",
+            "note": "Ninety-one temporary events permitted between 1 April and 20 September 2026. Fourteen of them are the fair."
+          }
+        ]
+      },
+      {
+        "id": "rabies",
+        "name": "Animal Bites and Rabies Specimen Submission",
+        "blurb": "What to do after a bite, how an animal is confined and observed, and how a specimen is submitted to the state laboratory. Call the same day. Do not wait for office hours if it is a wild animal.",
+        "status": "online",
+        "lastUpdated": "2021-06-14",
+        "steps": [
+          "Wash the wound with soap and running water for fifteen minutes. This is not a formality and it is the single most effective thing anyone does in the whole sequence.",
+          "See a clinician. County General's emergency department handles this and so will an urgent care. The decision to begin post-exposure treatment is a clinical one and is not made by this Department.",
+          "Report the bite. 782-4090 during office hours. Outside office hours, call the sheriff's dispatch non-emergency line and ask for the health officer on call. There is one, every night, and it is not always the same person.",
+          "[b]A dog or cat that can be identified is confined and observed for ten days.[/b] If it is alive and well on day ten, there was no rabies exposure, regardless of its vaccination status. The animal is not destroyed for testing. This is the answer to the question the Department is asked most often about this.",
+          "[b]A wild animal, or a stray that cannot be confined, is a different matter.[/b] Bats, raccoons, skunks and foxes are the ones that matter here. A bat in a bedroom where someone was asleep is treated as an exposure even if nobody saw a bite.",
+          "Do not damage the head. A specimen is not testable if the skull has been crushed or if the animal has been frozen and thawed repeatedly. Refrigerate it, do not freeze it, double bag it, and call before you drive anywhere.",
+          "Specimens go to the state laboratory. The Department packages and ships them. Results are usually back in two working days and the Department calls you either way.",
+          "Dog licensing requires a current rabies certificate and is done through [url=synth://verity.county.gov/s/dog-license]the county portal[/url], not here. The Department runs a low-cost rabies vaccination clinic each spring, next one Saturday 17 April 2027, $12 a dog or cat."
+        ],
+        "forms": [
+          {
+            "name": "Animal Bite Report (Form VCH-60)",
+            "note": "Completed by the Department from your phone call. Clinicians and veterinarians submit their own copy. You do not need to fill this in yourself."
+          },
+          {
+            "name": "Confinement and Observation Order (Form VCH-61)",
+            "note": "Served on the animal's owner. Ten days, at home if the animal is licensed and vaccinated, otherwise at a veterinary practice at the owner's cost."
+          },
+          {
+            "name": "Rabies Specimen Submission (state form RL-12)",
+            "note": "State form, not ours. The Department completes it. Kept here because people ask for it by number."
+          },
+          {
+            "name": "Bat in the House (one page)",
+            "note": "How to contain a bat without damaging it, why it matters, and when it is an exposure. Printed in 2009. The Department gets between eight and twenty of these calls a summer."
+          }
+        ]
+      },
+      {
+        "id": "public-pools",
+        "name": "Public Bathing Places",
+        "blurb": "Permits and inspections for public and semi-public pools. The 2026 season closed on 7 September. Four pools are permitted in the county and two of them did not open this year.",
+        "status": "closed for the season",
+        "lastUpdated": "2026-09-08",
+        "steps": [
+          "The 2027 season permit application opens Monday 1 February 2027 and must be in by 1 April. The fee is $220 a pool.",
+          "A permitted pool is inspected before opening and twice during the season, plus any complaint. Disinfectant residual, pH, clarity, the main drain cover, the fence and the gate latches, the rescue equipment and the operator's certificate.",
+          "The operator must hold a current pool operator certificate. The Department does not run that course and the nearest one is 70 miles away, which is why two of the four pools are late with it every year.",
+          "A pool closes immediately if the main drain cover is not intact, if the bottom cannot be seen from the deck, or if there is a faecal accident, and it does not reopen until the Department has been back.",
+          "The Gridfall municipal pool and the Marchfield school pool operated the full 2026 season. The New Carrow village pool and the Halsey motel pool did not open. Neither has said whether they will in 2027 and the Department has no power to make them."
+        ],
+        "forms": [
+          {
+            "name": "Public Bathing Place Permit (Form VCH-70)",
+            "note": "Annual, $220. Opens 1 February. Includes the pre-season inspection."
+          },
+          {
+            "name": "Daily Operating Log (Form VCH-71)",
+            "note": "Kept by the operator, checked at every inspection. Two readings a day minimum, more on a hot Saturday. Logs filled in on Monday for the whole previous week are visible from across the room and are written up every time."
+          },
+          {
+            "name": "2026 season inspection summary (one page)",
+            "note": "Two pools, nine inspections, three closures, all three for disinfectant residual out of range, all three reopened the same day."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About the Department, Staff and the Board of Health",
+        "blurb": "Who works here, what the Department can and cannot do, when the Board meets, and where the budget went.",
+        "status": "online",
+        "lastUpdated": "2026-09-01",
+        "steps": [
+          "[b]Office.[/b] 41 Depot Street, Gridfall, in the annex behind the county building. Monday to Friday, 8:30 AM to 4:00 PM, closed 12:00 to 12:45. The counter is the first door on the right and there is a bell.",
+          "[b]Staff.[/b] Health Officer, Dr. M. Ruhl, eight hours a week under contract, also health officer for two other counties, in this office on alternate Wednesdays. Director of Environmental Health, G. Voss. Registered Sanitarian, D. Kilbride, R.S. Second sanitarian position, vacant since 13 March 2026, posted three times. Public Health Nurse, B. Rademacher, R.N., four days a week. Clerk, J. Tolliver, who answers the phone and who is the reason anything gets found.",
+          "[b]What the Department does.[/b] Food establishment permits and inspections. On-site wastewater. Private well water. Public bathing places. Immunization. Communicable disease investigation. Rabies. Temporary events. Body art establishments, of which the county has two.",
+          "[b]What the Department does not do.[/b] Animal control, which is the sheriff. Air quality and open burning, which is the fire marshal through [url=synth://verity.county.gov/s/burn-permit]the county portal[/url]. Public water supplies, which are the state. Well drilling permits, also the state. Nuisance complaints about long grass, junk vehicles and noise, which are code enforcement and which this office receives about forty of a year and forwards.",
+          "[b]Board of Health.[/b] Five members, appointed by the Board of Supervisors, serving three years, unpaid. Meets the second Tuesday of the month at 7:00 PM at 41 Depot Street. Agendas are posted at the counter and on the county portal five days before. Public comment is taken at the start, three minutes each, and in the last two years the number of people who have used it is nine.",
+          "[b]Budget.[/b] The Department's 2026 appropriation is $612,400, which is 1.9 percent of the county budget and is $4,100 less than 2019 before inflation. Permit and licence fees bring in about $148,000 of it. The vacant sanitarian line is funded and has been each of the three years it has been posted.",
+          "[b]Records requests.[/b] Anything not on this site goes through Form VC-5 at [url=synth://verity.county.gov/s/records-request]the county records request service[/url]. This Department answers 30 to 40 a year and most of them are somebody buying a house."
+        ],
+        "forms": [
+          {
+            "name": "Board of Health meeting minutes, 2024 to date",
+            "note": "PDF by month. The August 2026 minutes are not up; the recording clerk was on leave and they will be approved at the October meeting, which is when they are usually first read by anybody."
+          },
+          {
+            "name": "Organisational chart (one page)",
+            "note": "Six boxes, one of them empty since March. The chart was drawn in 2018 and has been corrected in pen."
+          },
+          {
+            "name": "Annual report, 2025 (14 pages)",
+            "note": "412 food establishment inspections against 171 permitted establishments. 214 septic permits. 1,940 immunizations given. 1,142 well water samples analysed. 118 animal bite investigations. 2 positive rabies specimens, both bats, both in August."
+          },
+          {
+            "name": "Fee schedule, all programmes, effective 1 April 2026 (two pages)",
+            "note": "Adopted 10 February 2026. Previous schedule 2017."
+          },
+          {
+            "name": "Complaint about this Department (Form VCH-1)",
+            "note": "Goes to the Health Officer and to the Board chair. Six received in 2025, four of them about the septic backlog, and the Department does not dispute those four."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "schema": 1,
+  "domain": "boards.gridfall.net",
+  "title": "The Gridfall Boards",
+  "type": "forum",
+  "era": "2004",
+  "skin": "phpbb-blue",
+  "description": "General-purpose message board for Gridfall and the rest of Verity County.",
+  "links": ["wiki.gridfall.net", "verityledger.com", "kestrel-journal.net", "clipvault.tv", "webring.gridfall.net"],
+  "data": {
+    "boardName": "The Gridfall Boards",
+    "categories": [
+      {
+        "id": "c-business",
+        "name": "Board Business",
+        "boards": [
+          {
+            "id": "b-announce",
+            "name": "Announcements & Rules",
+            "desc": "Rules, downtime notices, and whatever else the admins remember to post.",
+            "topicCount": 11,
+            "postCount": 62,
+            "lastPost": { "author": "DaveK (admin)", "time": "Mon Apr 05, 2004 9:14 am" }
+          }
+        ]
+      },
+      {
+        "id": "c-county",
+        "name": "Verity County",
+        "boards": [
+          {
+            "id": "b-general",
+            "name": "General Discussion",
+            "desc": "Anything about Gridfall, Marchfield, Verity township and points between.",
+            "topicCount": 480,
+            "postCount": 9114,
+            "lastPost": { "author": "marguerite_h", "time": "Tue Apr 06, 2004 7:51 pm" }
+          },
+          {
+            "id": "b-power",
+            "name": "Utilities & Infrastructure",
+            "desc": "Power, water, sewer, the substation, and the bills that come with them.",
+            "topicCount": 137,
+            "postCount": 4406,
+            "lastPost": { "author": "Ray Dunleavy", "time": "Tue Apr 06, 2004 10:02 pm" }
+          },
+          {
+            "id": "b-roads",
+            "name": "Roads, Parking & Transit",
+            "desc": "Potholes, the 62 resurfacing, the rail situation, and parking. Mostly parking.",
+            "topicCount": 203,
+            "postCount": 3388,
+            "lastPost": { "author": "T. Oyelaran", "time": "Tue Apr 06, 2004 4:40 pm" }
+          }
+        ]
+      },
+      {
+        "id": "c-offtopic",
+        "name": "Off Topic",
+        "boards": [
+          {
+            "id": "b-kitchen",
+            "name": "Kitchen & Recipes",
+            "desc": "Recipes, canning, the church cookbook, arguments about shortening.",
+            "topicCount": 96,
+            "postCount": 1802,
+            "lastPost": { "author": "Nedra Oyelaran", "time": "Mon Apr 05, 2004 8:22 pm" }
+          },
+          {
+            "id": "b-classifieds",
+            "name": "Buy, Sell, Trade",
+            "desc": "Local only. No dealers. Mark it SOLD when it's sold.",
+            "topicCount": 611,
+            "postCount": 2140,
+            "lastPost": { "author": "gnash_88", "time": "Tue Apr 06, 2004 12:18 pm" }
+          },
+          {
+            "id": "b-odd",
+            "name": "Odd Things Heard",
+            "desc": "Lights, noises, radio stuff, the thing on 62. Keep it civil.",
+            "topicCount": 74,
+            "postCount": 2907,
+            "lastPost": { "author": "Curtis Flenn", "time": "Tue Apr 06, 2004 11:47 pm" }
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "1",
+        "boardId": "b-announce",
+        "title": "READ BEFORE POSTING -- Board Rules (updated 11/03)",
+        "author": "DaveK (admin)",
+        "time": "Sat Nov 08, 2003 10:31 am",
+        "replies": 3,
+        "views": 4412,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "DaveK (admin)",
+            "authorTitle": "Site Admin",
+            "authorPosts": 1204,
+            "authorJoined": "18 Feb 2001",
+            "avatarSeed": "davek",
+            "time": "Sat Nov 08, 2003 10:31 am",
+            "body": "Reposting these because the old sticky got eaten when we moved hosts in October.\n\n[b]1.[/b] Be civil. You are arguing with someone who buys groceries at the same place you do.\n\n[b]2.[/b] No politics outside of the General board. I know that rule is porous. Do your best.\n\n[b]3.[/b] Classifieds are for private parties in Verity County. If you are a dealer you can buy an ad in [url=synth://verityledger.com/]the Ledger[/url] like everyone else.\n\n[b]4.[/b] Do not post people's addresses or phone numbers. This includes your own, I don't care, don't do it.\n\n[b]5.[/b] Sig images: 400x100 max. This is not negotiable, my host bills me for transfer.\n\n[b]6.[/b] If a thread gets locked, don't start it again three boards over. I will find it.\n\nIf you have questions post them here and I'll get to them eventually.",
+            "signature": "-- DaveK\nrunning this thing since 2001 out of a spare room"
+          },
+          {
+            "id": "2",
+            "author": "marguerite_h",
+            "authorTitle": "Regular",
+            "authorPosts": 2088,
+            "authorJoined": "03 Sep 2001",
+            "avatarSeed": "marguerite",
+            "time": "Sat Nov 08, 2003 11:52 am",
+            "body": "Thank you for reposting. Can we get the sig rule in bigger letters, some people are still running those 600 pixel wide animated things and it pushes the whole page sideways on my browser.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Mon Jan 12, 2004 6:04 pm",
+            "body": "does anyone actually read this",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          },
+          {
+            "id": "4",
+            "author": "DaveK (admin)",
+            "authorTitle": "Site Admin",
+            "authorPosts": 1204,
+            "authorJoined": "18 Feb 2001",
+            "avatarSeed": "davek",
+            "time": "Mon Jan 12, 2004 9:40 pm",
+            "body": "[quote=gnash_88]does anyone actually read this[/quote]\n\nNo.",
+            "signature": "-- DaveK\nrunning this thing since 2001 out of a spare room"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "boardId": "b-power",
+        "title": "The substation fire -- what ACTUALLY happened",
+        "author": "Ray Dunleavy",
+        "time": "Thu Mar 11, 2004 7:02 pm",
+        "replies": 11,
+        "views": 8871,
+        "sticky": false,
+        "locked": true,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Ray Dunleavy",
+            "authorTitle": "Member",
+            "authorPosts": 909,
+            "authorJoined": "22 Apr 2002",
+            "avatarSeed": "raydun",
+            "time": "Thu Mar 11, 2004 7:02 pm",
+            "body": "It has been eight months and we still have not had a straight answer about the Elm Street substation. The Ledger ran four paragraphs in July and then nothing. The county said there would be a report.\n\nWhat I know for certain:\n\n[list][*]It went up around 4:15 in the afternoon on July 9th.[*]Three quarters of Gridfall was out until the following night, east side until Friday.[*]There was a contractor on site that week doing something to the fencing and the yard lighting.[/list]\n\nWhat I do not know is why a transformer that was inspected in April caught fire in July. If anyone has the actual incident report I would like to read it.",
+            "signature": "R. Dunleavy | Gridfall\n\"Measure twice.\""
+          },
+          {
+            "id": "2",
+            "author": "marguerite_h",
+            "authorTitle": "Regular",
+            "authorPosts": 2088,
+            "authorJoined": "03 Sep 2001",
+            "avatarSeed": "marguerite",
+            "time": "Thu Mar 11, 2004 7:35 pm",
+            "body": "The report exists, it went to the county commission in November. It is not online. My neighbour sat in on that meeting and said the short version was a bushing failure on the number two transformer and the oil went up.\n\nThe wiki entry has most of this: [url=synth://wiki.gridfall.net/wiki/gridfall-substation-fire]Gridfall substation fire[/url] though someone keeps adding a paragraph about the contractor that gets taken back out again.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "BillT_GF",
+            "authorTitle": "Member",
+            "authorPosts": 1577,
+            "authorJoined": "09 Jan 2002",
+            "avatarSeed": "billt",
+            "time": "Thu Mar 11, 2004 8:11 pm",
+            "body": "bushing failure is what they always say. i was a lineman for 19 years, you dont get a fire that size off a bushing unless somethings already wrong with the oil or the relay didnt trip. and the relay didnt trip, thats the part nobody wants to talk about",
+            "signature": "bill t.\n19 yrs w/ the co-op, retired 1998"
+          },
+          {
+            "id": "4",
+            "author": "Ray Dunleavy",
+            "authorTitle": "Member",
+            "authorPosts": 909,
+            "authorJoined": "22 Apr 2002",
+            "avatarSeed": "raydun",
+            "time": "Thu Mar 11, 2004 8:49 pm",
+            "body": "[quote=BillT_GF]and the relay didnt trip, thats the part nobody wants to talk about[/quote]\n\nThis is the first I am hearing that. Do you have that from someone on site or is that your read of it?\n\nI am not being smart, I want to know whether to put it in the letter I am writing to the commission.",
+            "signature": "R. Dunleavy | Gridfall\n\"Measure twice.\""
+          },
+          {
+            "id": "5",
+            "author": "PRINCE_OF_ELM_ST",
+            "authorTitle": "Member",
+            "authorPosts": 2410,
+            "authorJoined": "30 Oct 2001",
+            "avatarSeed": "princeelm",
+            "time": "Thu Mar 11, 2004 9:22 pm",
+            "body": "here we go again. every three months ray posts this exact thread and every three months bill tells everyone he was a lineman.\n\nnothing happened. a transformer caught fire. they happen. my cousin works for the co op and there is no conspiracy, there is a 40 year old yard that the county would not spend money on and a hot july.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "BillT_GF",
+            "authorTitle": "Member",
+            "authorPosts": 1577,
+            "authorJoined": "09 Jan 2002",
+            "avatarSeed": "billt",
+            "time": "Thu Mar 11, 2004 9:58 pm",
+            "body": "[quote=PRINCE_OF_ELM_ST]every three months bill tells everyone he was a lineman[/quote]\n\nbecause its relevant. what do you do for a living again? you told me once and i forget. was it the tire place or was that before they let you go",
+            "signature": "bill t.\n19 yrs w/ the co-op, retired 1998"
+          },
+          {
+            "id": "7",
+            "author": "PRINCE_OF_ELM_ST",
+            "authorTitle": "Member",
+            "authorPosts": 2410,
+            "authorJoined": "30 Oct 2001",
+            "avatarSeed": "princeelm",
+            "time": "Thu Mar 11, 2004 10:14 pm",
+            "body": "i wasnt LET GO i left. and i notice you go straight to that the second somebody disagrees with you about a transformer. real classy bill. real classy from a man who still owes the fire dept a raffle table from the pancake breakfast",
+            "signature": ""
+          },
+          {
+            "id": "8",
+            "author": "Nedra Oyelaran",
+            "authorTitle": "Regular",
+            "authorPosts": 1330,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "nedra",
+            "time": "Thu Mar 11, 2004 10:40 pm",
+            "body": "Gentlemen. There are 140 people reading this thread and none of them care about the raffle table.\n\nRay, for what it is worth, my husband was on Elm the afternoon it happened and he says there were two bangs about a minute apart, not one. He has said that consistently since July, including to the insurance adjuster.",
+            "signature": "N.O.\n\"If it's worth doing it's worth doing on low heat.\""
+          },
+          {
+            "id": "9",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Fri Mar 12, 2004 12:06 am",
+            "body": "theres a clip of the smoke from the hill by the water tower, somebody put it up here [url=synth://clipvault.tv/watch/elm-st-smoke]elm st smoke july 9[/url]\n\nyou can hear two bangs on it. or one bang and a echo idk im not a scientist",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          },
+          {
+            "id": "10",
+            "author": "PRINCE_OF_ELM_ST",
+            "authorTitle": "Member",
+            "authorPosts": 2410,
+            "authorJoined": "30 Oct 2001",
+            "avatarSeed": "princeelm",
+            "time": "Fri Mar 12, 2004 12:31 am",
+            "body": "one bang and a echo. off the grain elevator. congratulations everybody weve solved it",
+            "signature": ""
+          },
+          {
+            "id": "11",
+            "author": "BillT_GF",
+            "authorTitle": "Member",
+            "authorPosts": 1577,
+            "authorJoined": "09 Jan 2002",
+            "avatarSeed": "billt",
+            "time": "Fri Mar 12, 2004 6:47 am",
+            "body": "the grain elevator is a mile and a half the other side of the river you absolute",
+            "signature": "bill t.\n19 yrs w/ the co-op, retired 1998"
+          },
+          {
+            "id": "12",
+            "author": "DaveK (admin)",
+            "authorTitle": "Site Admin",
+            "authorPosts": 1204,
+            "authorJoined": "18 Feb 2001",
+            "avatarSeed": "davek",
+            "time": "Fri Mar 12, 2004 7:15 am",
+            "body": "Locked.\n\nRay, your first post was fine and I am sorry. If you get the incident report, start a new thread and I will sticky it.\n\nBill and Prince, both of you take the weekend off. I am not doing this again in April.",
+            "signature": "-- DaveK\nrunning this thing since 2001 out of a spare room"
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "boardId": "b-kitchen",
+        "title": "my mothers hot milk cake",
+        "author": "Junie Pell",
+        "time": "Sun Apr 04, 2004 2:18 pm",
+        "replies": 5,
+        "views": 612,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Junie Pell",
+            "authorTitle": "Member",
+            "authorPosts": 188,
+            "authorJoined": "27 Mar 2003",
+            "avatarSeed": "junie",
+            "time": "Sun Apr 04, 2004 2:18 pm",
+            "body": "a few people asked for this at the school thing so here it is. its my mothers, shes been making it since the 60s.\n\n[b]HOT MILK CAKE[/b]\n\n4 eggs\n2 c sugar\n2 c flour\n2 tsp baking powder\n1 c milk\n1 stick butter\n1 tsp vanilla\n\nbeat the eggs till theyre light, add sugar. sift the flour and baking powder in. heat the milk and butter together till the butter melts (dont boil it) and pour that in with the vanilla. 350 for about 30 min in a 9x13.\n\nits very plain which is the point. we eat it with whatever fruit is going.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "Nedra Oyelaran",
+            "authorTitle": "Regular",
+            "authorPosts": 1330,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "nedra",
+            "time": "Sun Apr 04, 2004 3:02 pm",
+            "body": "This is lovely and I am going to make it Thursday. Thank you Junie.",
+            "signature": "N.O.\n\"If it's worth doing it's worth doing on low heat.\""
+          },
+          {
+            "id": "3",
+            "author": "H. Prewitt",
+            "authorTitle": "Member",
+            "authorPosts": 744,
+            "authorJoined": "02 Feb 2003",
+            "avatarSeed": "prewitt",
+            "time": "Sun Apr 04, 2004 4:31 pm",
+            "body": "A few notes, meant helpfully.\n\n[b]1.[/b] \"1 stick butter\" is not a measurement. It is a measurement in this country by convention but a stick is 1/2 cup and you should write 1/2 cup.\n\n[b]2.[/b] You do not say salt. Every hot milk cake I have seen from that era has 1/4 to 1/2 tsp salt in it and if her butter was salted that explains it, but then you should say salted butter.\n\n[b]3.[/b] \"beat the eggs till theyre light\" is doing an enormous amount of work in this recipe. That is five to seven minutes on a stand mixer and the whole cake fails if you stop at two. This is the actual technique and it is the one line you have left vague.\n\n[b]4.[/b] A 9x13 at 350 for 30 minutes will be dry. 25 and check it.\n\nNot criticising your mother. Criticising the transcription.",
+            "signature": "H.P.\n     ___\n    |   |  \"Say what you mean.\"\n    |___|"
+          },
+          {
+            "id": "4",
+            "author": "Junie Pell",
+            "authorTitle": "Member",
+            "authorPosts": 188,
+            "authorJoined": "27 Mar 2003",
+            "avatarSeed": "junie",
+            "time": "Sun Apr 04, 2004 5:09 pm",
+            "body": "she uses salted butter. and she beats the eggs a long time, i should of said. i wrote it out the way she says it to me on the phone.\n\ni have never had it come out dry but our oven runs cold so probably thats why.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "marguerite_h",
+            "authorTitle": "Regular",
+            "authorPosts": 2088,
+            "authorJoined": "03 Sep 2001",
+            "avatarSeed": "marguerite",
+            "time": "Sun Apr 04, 2004 6:44 pm",
+            "body": "[quote=H. Prewitt]Not criticising your mother. Criticising the transcription.[/quote]\n\nHoward, she posted a cake.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "Nedra Oyelaran",
+            "authorTitle": "Regular",
+            "authorPosts": 1330,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "nedra",
+            "time": "Mon Apr 05, 2004 8:22 pm",
+            "body": "Made it. 25 minutes was right for my oven, Howard was correct about that and I will not be telling him so.\n\nJunie it is exactly the cake they used to do at the Blue Kestrel on Sundays, under the fruit. I had not thought about that in years.",
+            "signature": "N.O.\n\"If it's worth doing it's worth doing on low heat.\""
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "boardId": "b-classifieds",
+        "title": "FS: Craftsman 10\" table saw + extra blades, Gridfall",
+        "author": "gnash_88",
+        "time": "Fri Apr 02, 2004 9:11 am",
+        "replies": 4,
+        "views": 288,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Fri Apr 02, 2004 9:11 am",
+            "body": "craftsman 10 inch contractor saw, belt drive, been in my dads garage since he passed. runs fine, fence is straight, cast iron top has some surface rust but nothing pitted.\n\ncomes with 3 blades (one new in the sleeve, 2 used) and the miter gauge. no stand, its on a shop built base you can have if you can lift it.\n\n[img:photo:tablesaw-garage]\n\n$150 obo. gridfall, off Quarry Rd. pm me.",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          },
+          {
+            "id": "2",
+            "author": "Ray Dunleavy",
+            "authorTitle": "Member",
+            "authorPosts": 909,
+            "authorJoined": "22 Apr 2002",
+            "avatarSeed": "raydun",
+            "time": "Fri Apr 02, 2004 10:26 am",
+            "body": "What is the model number, it should be on a plate on the back of the cabinet. There are two saws that look like that and one of them takes an arbor washer you cannot get anymore.",
+            "signature": "R. Dunleavy | Gridfall\n\"Measure twice.\""
+          },
+          {
+            "id": "3",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Fri Apr 02, 2004 11:40 am",
+            "body": "113.298240. washers all there, i checked after you asked.",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          },
+          {
+            "id": "4",
+            "author": "T. Oyelaran",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "toye",
+            "time": "Fri Apr 02, 2004 1:55 pm",
+            "body": "Thats a good saw. Somebody buy it before I do, I have nowhere to put it and my wife reads this board.",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Tue Apr 06, 2004 12:18 pm",
+            "body": "SOLD. went to a fella from marchfield who drove out with a trailer. thanks all.",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "boardId": "b-odd",
+        "title": "the Signal on 62 -- I taped it again 3/14",
+        "author": "Curtis Flenn",
+        "time": "Sun Mar 14, 2004 11:20 pm",
+        "replies": 6,
+        "views": 3204,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Curtis Flenn",
+            "authorTitle": "Member",
+            "authorPosts": 415,
+            "authorJoined": "19 Aug 2003",
+            "avatarSeed": "curtis",
+            "time": "Sun Mar 14, 2004 11:20 pm",
+            "body": "Third time now. Same stretch, between the county line sign and the turn for the quarry, about 1.4 miles. 4.115 MHz upper sideband on the Sony. Started 10:47 pm, ran 6 minutes 20 seconds, stopped mid-group.\n\nWoman's voice, recorded not live, groups of five. Tonight I got:\n\n[code]  41 907  22 118  41 907\n  63 004  88 812  63 004\n  ...\n  (repeats, then cuts)[/code]\n\nThe repeat pattern is new. The two previous times it did not repeat. I want to be careful here because I know how this sounds, but the repeats are exact, I went over the tape four times.\n\nI have put the audio up: [url=synth://clipvault.tv/watch/signal-62-0314]signal 62 -- 3/14 tape[/url]. If someone with a better ear than mine wants to write out the groups I would be grateful. The [url=synth://wiki.gridfall.net/wiki/signal-on-62]wiki page[/url] has the logs from the previous two.",
+            "signature": "C. Flenn -- Gridfall\nlog everything. date it. keep the tape."
+          },
+          {
+            "id": "2",
+            "author": "gnash_88",
+            "authorTitle": "Member",
+            "authorPosts": 341,
+            "authorJoined": "11 Jun 2002",
+            "avatarSeed": "gnash",
+            "time": "Sun Mar 14, 2004 11:44 pm",
+            "body": "its a numbers station curtis theres like a hundred of them, you can hear cuban ones on a good night",
+            "signature": "====================\n  gnash_88 // Gridfall\n  '89 F150, runs OK\n===================="
+          },
+          {
+            "id": "3",
+            "author": "Curtis Flenn",
+            "authorTitle": "Member",
+            "authorPosts": 415,
+            "authorJoined": "19 Aug 2003",
+            "avatarSeed": "curtis",
+            "time": "Sun Mar 14, 2004 11:58 pm",
+            "body": "[quote=gnash_88]its a numbers station curtis theres like a hundred of them[/quote]\n\nI know what a numbers station is. I have a shelf of them on cassette.\n\nWhat I am telling you is that this one is only audible on 1.4 miles of a county road and it is not audible from my house four miles away on the same radio at the same hour, and I have tried that eleven times now. That is not how shortwave propagation works. Either there is something local putting it out or there is something on that stretch of road that is doing something to my receiver, and both of those are interesting and neither of them is Cuba.",
+            "signature": "C. Flenn -- Gridfall\nlog everything. date it. keep the tape."
+          },
+          {
+            "id": "4",
+            "author": "PRINCE_OF_ELM_ST",
+            "authorTitle": "Member",
+            "authorPosts": 2410,
+            "authorJoined": "30 Oct 2001",
+            "avatarSeed": "princeelm",
+            "time": "Mon Mar 15, 2004 7:33 am",
+            "body": "its the fence at the pumping station. chain link, 1200 feet of it, sitting right there parallel to the road. whole thing acts like an antenna. drive past it, you get a boost, drive past it the other way, you get a boost. thats your 1.4 miles right there, measure it",
+            "signature": ""
+          },
+          {
+            "id": "5",
+            "author": "marguerite_h",
+            "authorTitle": "Regular",
+            "authorPosts": 2088,
+            "authorJoined": "03 Sep 2001",
+            "avatarSeed": "marguerite",
+            "time": "Mon Mar 15, 2004 9:10 am",
+            "body": "My father used to get the racing results out of two states over on the AM radio at the bottom of that hill and nowhere else. Same idea I expect. It is a strange piece of road.\n\nNot mocking you Curtis. Half the county has heard something out there at some point.",
+            "signature": ""
+          },
+          {
+            "id": "6",
+            "author": "H. Prewitt",
+            "authorTitle": "Member",
+            "authorPosts": 744,
+            "authorJoined": "02 Feb 2003",
+            "avatarSeed": "prewitt",
+            "time": "Mon Mar 15, 2004 12:02 pm",
+            "body": "For the record, \"groups of five\" and \"4.115 MHz USB\" are both consistent with an ordinary maritime or utility allocation and nothing in the transcription is unusual. The interesting datum is the geography, as Curtis says, and everyone in this thread has skipped straight past it to have an opinion about aliens that nobody has raised.",
+            "signature": "H.P.\n     ___\n    |   |  \"Say what you mean.\"\n    |___|"
+          },
+          {
+            "id": "7",
+            "author": "Curtis Flenn",
+            "authorTitle": "Member",
+            "authorPosts": 415,
+            "authorJoined": "19 Aug 2003",
+            "avatarSeed": "curtis",
+            "time": "Tue Apr 06, 2004 11:47 pm",
+            "body": "Went back out tonight with a compass and the odometer zeroed at the county line sign. Signal comes up at 0.3, strongest at 0.9, gone by 1.7. The pumping station fence starts at 0.6 and ends at 1.1.\n\nSo Prince is probably right about the fence and I am going to say that plainly because I asked people to check my work and they did.\n\nThat still does not tell me what is transmitting. I will keep the log going. Next attempt Sunday if the weather holds.",
+            "signature": "C. Flenn -- Gridfall\nlog everything. date it. keep the tape."
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "boardId": "b-general",
+        "title": "Blue Kestrel -- is it actually closing this time",
+        "author": "Nedra Oyelaran",
+        "time": "Mon Apr 05, 2004 6:02 pm",
+        "replies": 3,
+        "views": 941,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "Nedra Oyelaran",
+            "authorTitle": "Regular",
+            "authorPosts": 1330,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "nedra",
+            "time": "Mon Apr 05, 2004 6:02 pm",
+            "body": "There is a paper sign on the door of the Blue Kestrel that says CLOSED FOR REPAIRS and it has been there since the 19th. Delia's car has not been in the back lot in two weeks.\n\nWe have all done this before, it closed for six weeks in 1998 and came back. But two weeks with no car is different.\n\nDoes anybody actually know.",
+            "signature": "N.O.\n\"If it's worth doing it's worth doing on low heat.\""
+          },
+          {
+            "id": "2",
+            "author": "Junie Pell",
+            "authorTitle": "Member",
+            "authorPosts": 188,
+            "authorJoined": "27 Mar 2003",
+            "avatarSeed": "junie",
+            "time": "Mon Apr 05, 2004 6:41 pm",
+            "body": "my sister in law cleans for delias mother and she said its her knee, shes had the surgery scheduled since february. thats all i know, i dont want to start anything",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "T. Oyelaran",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "toye",
+            "time": "Mon Apr 05, 2004 7:20 pm",
+            "body": "The Kestrel Journal woman has been writing about it, she does a whole thing on the sign every few weeks. [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]. He is a little much but he is usually right before anybody else is.",
+            "signature": ""
+          },
+          {
+            "id": "4",
+            "author": "marguerite_h",
+            "authorTitle": "Regular",
+            "authorPosts": 2088,
+            "authorJoined": "03 Sep 2001",
+            "avatarSeed": "marguerite",
+            "time": "Tue Apr 06, 2004 7:51 pm",
+            "body": "Knee surgery. Confirmed, I ran into Delia's son at the pharmacy. Six to eight weeks and she is coming back, she asked him to tell people because she knew this thread would happen.\n\nShe knows about this board. Bear that in mind next time somebody wants to post about the coffee.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "boardId": "b-roads",
+        "title": "Parking on Mill St during the spring fair",
+        "author": "T. Oyelaran",
+        "time": "Tue Apr 06, 2004 9:05 am",
+        "replies": 3,
+        "views": 402,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "T. Oyelaran",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "toye",
+            "time": "Tue Apr 06, 2004 9:05 am",
+            "body": "Reminder for anyone who was not here last year: Mill between Fourth and the bridge is no parking Fri 5pm through Sun 8pm for the fair. They tow. They towed nine cars last year and every one of those people said they did not see a sign.\n\nThe signs are small and they go up Thursday night. Look for them.",
+            "signature": ""
+          },
+          {
+            "id": "2",
+            "author": "PRINCE_OF_ELM_ST",
+            "authorTitle": "Member",
+            "authorPosts": 2410,
+            "authorJoined": "30 Oct 2001",
+            "avatarSeed": "princeelm",
+            "time": "Tue Apr 06, 2004 10:11 am",
+            "body": "they tow to the lot behind the old feed store and then charge you 85 dollars to get it back. for a fair. that we pay for.",
+            "signature": ""
+          },
+          {
+            "id": "3",
+            "author": "Ray Dunleavy",
+            "authorTitle": "Member",
+            "authorPosts": 909,
+            "authorJoined": "22 Apr 2002",
+            "avatarSeed": "raydun",
+            "time": "Tue Apr 06, 2004 11:48 am",
+            "body": "$85 is the county rate for a non-consent tow and it has been since 2001. It is on the notice board at the courthouse. You can be annoyed about it but it is not a secret and it is not the fair committee's doing.",
+            "signature": "R. Dunleavy | Gridfall\n\"Measure twice.\""
+          },
+          {
+            "id": "4",
+            "author": "T. Oyelaran",
+            "authorTitle": "Member",
+            "authorPosts": 512,
+            "authorJoined": "14 May 2002",
+            "avatarSeed": "toye",
+            "time": "Tue Apr 06, 2004 4:40 pm",
+            "body": "Park at the school. It is four minutes walk and it is free and it has been the answer every year since I was a boy.",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "boardId": "b-general",
+        "title": "New? Introduce yourself here",
+        "author": "DaveK (admin)",
+        "time": "Tue Sep 04, 2001 8:00 pm",
+        "replies": 2,
+        "views": 15210,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "DaveK (admin)",
+            "authorTitle": "Site Admin",
+            "authorPosts": 1204,
+            "authorJoined": "18 Feb 2001",
+            "avatarSeed": "davek",
+            "time": "Tue Sep 04, 2001 8:00 pm",
+            "body": "Say hello. Where you are, how long you have been in the county, what you are here for. No need to use your real name if you would rather not.\n\nWe are also on the [url=synth://webring.gridfall.net/]Verity County webring[/url] if you got here from somewhere else and are wondering where you are.",
+            "signature": "-- DaveK\nrunning this thing since 2001 out of a spare room"
+          },
+          {
+            "id": "2",
+            "author": "Curtis Flenn",
+            "authorTitle": "Member",
+            "authorPosts": 415,
+            "authorJoined": "19 Aug 2003",
+            "avatarSeed": "curtis",
+            "time": "Tue Aug 19, 2003 10:14 pm",
+            "body": "Curtis, Gridfall, moved out from the city in 96 for work and stayed when the work went away. Mostly here for the Odd Things board, I do shortwave.",
+            "signature": "C. Flenn -- Gridfall\nlog everything. date it. keep the tape."
+          },
+          {
+            "id": "3",
+            "author": "Junie Pell",
+            "authorTitle": "Member",
+            "authorPosts": 188,
+            "authorJoined": "27 Mar 2003",
+            "avatarSeed": "junie",
+            "time": "Thu Mar 27, 2003 4:50 pm",
+            "body": "hi, junie, marchfield, grew up here, work at the elementary. my daughter set this account up for me so if i do something wrong thats why",
+            "signature": ""
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "boardId": "b-power",
+        "title": "brownouts east side, anyone else",
+        "author": "H. Prewitt",
+        "time": "Sun Apr 04, 2004 8:37 pm",
+        "replies": 2,
+        "views": 517,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {
+            "id": "1",
+            "author": "H. Prewitt",
+            "authorTitle": "Member",
+            "authorPosts": 744,
+            "authorJoined": "02 Feb 2003",
+            "avatarSeed": "prewitt",
+            "time": "Sun Apr 04, 2004 8:37 pm",
+            "body": "Three dips this week, all between 6 and 7 in the evening, all long enough to reset the clocks but not the furnace. East of Quarry Road. Logging them because last year nobody could tell the co-op when it started.\n\nWed 6:12 pm, Thu 6:48 pm, Sat 6:31 pm.",
+            "signature": "H.P.\n     ___\n    |   |  \"Say what you mean.\"\n    |___|"
+          },
+          {
+            "id": "2",
+            "author": "BillT_GF",
+            "authorTitle": "Member",
+            "authorPosts": 1577,
+            "authorJoined": "09 Jan 2002",
+            "avatarSeed": "billt",
+            "time": "Sun Apr 04, 2004 9:29 pm",
+            "body": "thats the tap off the temporary gear they put in after elm street. its undersized for the evening load and everybody on the co op knows it and nobody will say it in writing. keep your log howard, it will be useful in about a year",
+            "signature": "bill t.\n19 yrs w/ the co-op, retired 1998"
+          },
+          {
+            "id": "3",
+            "author": "Ray Dunleavy",
+            "authorTitle": "Member",
+            "authorPosts": 909,
+            "authorJoined": "22 Apr 2002",
+            "avatarSeed": "raydun",
+            "time": "Tue Apr 06, 2004 10:02 pm",
+            "body": "Same here, Quarry and Ninth. Sat 6:31 matches yours to the minute. I will start writing mine down as well.\n\nIf three or four of us have times that line up that is worth taking to the commission in May, and it is a better argument than anything in the thread Dave locked.",
+            "signature": "R. Dunleavy | Gridfall\n\"Measure twice.\""
+          }
+        ]
+      }
+    ]
+  }
+}

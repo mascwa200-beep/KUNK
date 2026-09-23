@@ -1,0 +1,545 @@
+{
+  "schema": 1,
+  "domain": "classifieds.verity.net",
+  "title": "Verity Classifieds — Local Listings, County Wide",
+  "type": "market",
+  "era": "2026",
+  "skin": "classified",
+  "description": "The county's classifieds board, forty years old in print and six years old under its current owner. Most of it is posted from somewhere else. Some of it is a neighbour clearing out a garage.",
+  "links": [
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org",
+    "shopwell.store",
+    "mail.verity.net"
+  ],
+  "data": {
+    "siteName": "Verity Classifieds",
+    "regions": [
+      {
+        "id": "r-gridfall",
+        "name": "Gridfall"
+      },
+      {
+        "id": "r-marchfield",
+        "name": "Marchfield"
+      },
+      {
+        "id": "r-ashkettle",
+        "name": "Ashkettle"
+      },
+      {
+        "id": "r-newcarrow",
+        "name": "New Carrow"
+      },
+      {
+        "id": "r-halsey",
+        "name": "Halsey & Coyne Flats"
+      }
+    ],
+    "cats": [
+      {
+        "id": "k-vehicles",
+        "name": "Vehicles"
+      },
+      {
+        "id": "k-furniture",
+        "name": "Furniture & Household"
+      },
+      {
+        "id": "k-electronics",
+        "name": "Electronics"
+      },
+      {
+        "id": "k-housing",
+        "name": "Rentals & Rooms"
+      },
+      {
+        "id": "k-jobs",
+        "name": "Jobs & Gigs"
+      },
+      {
+        "id": "k-services",
+        "name": "Services"
+      },
+      {
+        "id": "k-free",
+        "name": "Free / Collection Only"
+      }
+    ],
+    "listings": [
+      {
+        "id": "l-001",
+        "catId": "k-vehicles",
+        "regionId": "r-gridfall",
+        "title": "2009 Sedan — MINT CONDITION — Runs Like New — Must See",
+        "price": "$4,800 OBO",
+        "at": "2026-09-18T07:12:00Z",
+        "by": "AutoDealsVerity",
+        "kind": "bot",
+        "body": "MINT CONDITION. Runs like new. Garage kept. Lady driven. Never smoked in.\n\n[b]Mileage:[/b] 280,412\n\nNew tyres 2019. Some surface rust on the sills which is normal for the age and does not affect anything. The check engine light is on because of a sensor, it is not the engine, a guy told me it is just a sensor. Air con blows cold if you drive over 40.\n\nSerious buyers only. No lowballers I know what I have.",
+        "imgSeed": "sedan-2009-mint",
+        "condition": "Mint"
+      },
+      {
+        "id": "l-002",
+        "catId": "k-electronics",
+        "regionId": "r-gridfall",
+        "title": "iPhone 17 Pro 512GB — SEALED — CHEAP — Quick Sale Needed",
+        "price": "$180",
+        "at": "2026-09-18T14:40:00Z",
+        "by": "mike_seller_2291",
+        "kind": "scam",
+        "body": "Brand new sealed iPhone 17 Pro 512GB. Unwanted gift from work. Need gone today.\n\nCannot meet in person I am currently working offshore, my sister will post it once payment clears. Payment by bank transfer or gift card only, no cash on collection, it is not secure to carry cash.\n\nI have many happy customers. Verify my seller rating here: [url=synth://verity-seller-verify.trusted-ratings.top/mike2291]verity-seller-verify[/url]",
+        "imgSeed": "iphone17-sealed-a",
+        "condition": "New (sealed)"
+      },
+      {
+        "id": "l-003",
+        "catId": "k-electronics",
+        "regionId": "r-marchfield",
+        "title": "iPhone 17 Pro 512GB — SEALED — CHEAP — Quick Sale Needed",
+        "price": "$180",
+        "at": "2026-09-18T14:44:00Z",
+        "by": "dave_seller_7741",
+        "kind": "scam",
+        "body": "Brand new sealed iPhone 17 Pro 512GB. Unwanted gift from work. Need gone today.\n\nCannot meet in person I am currently working offshore, my sister will post it once payment clears. Payment by bank transfer or gift card only, no cash on collection, it is not secure to carry cash.\n\nI have many happy customers. Verify my seller rating here: [url=synth://verity-seller-verify.trusted-ratings.top/dave7741]verity-seller-verify[/url]",
+        "imgSeed": "iphone17-sealed-a",
+        "condition": "New (sealed)"
+      },
+      {
+        "id": "l-004",
+        "catId": "k-electronics",
+        "regionId": "r-newcarrow",
+        "title": "iPhone 17 Pro 512GB — SEALED — CHEAP — Quick Sale Needed",
+        "price": "$175",
+        "at": "2026-09-18T14:51:00Z",
+        "by": "sarah_seller_0034",
+        "kind": "scam",
+        "body": "Brand new sealed iPhone 17 Pro 512GB. Unwanted gift from work. Need gone today.\n\nCannot meet in person I am currently working offshore, my brother will post it once payment clears. Payment by bank transfer or gift card only, no cash on collection, it is not secure to carry cash.\n\nI have many happy customers. Verify my seller rating here: [url=synth://verity-seller-verify.trusted-ratings.top/sarah0034]verity-seller-verify[/url]",
+        "imgSeed": "iphone17-sealed-a",
+        "condition": "New (sealed)"
+      },
+      {
+        "id": "l-005",
+        "catId": "k-furniture",
+        "regionId": "r-ashkettle",
+        "title": "Estate sale — workshop tools, 47 Pellam Road, Saturday 9am",
+        "price": "See list",
+        "at": "2026-09-15T18:30:00Z",
+        "by": "Ellen Vosper",
+        "kind": "human",
+        "body": "My husband Ray died in June. He kept a workshop in the garage for thirty-one years and I have to be out of the house by the end of October.\n\nI am not good at this so I am going to just list what is there.\n\n[list][*]Table saw, old but he serviced it every spring[*]Two tool chests, full[*]Pillar drill[*]Wood clamps, a lot of them, I stopped counting at forty[*]Jars of screws and fittings, sorted by size in his handwriting[*]Workbench, he built it, it is very heavy and I cannot move it so it is free to anyone who can[/list]\n\nI do not know what any of it is worth. If you know what it is worth please tell me honestly, my son says people will not.\n\nSaturday from 9am. There is coffee. 47 Pellam Road, Ashkettle.",
+        "imgSeed": "estate-workshop-ray",
+        "condition": "Used"
+      },
+      {
+        "id": "l-006",
+        "catId": "k-free",
+        "regionId": "r-halsey",
+        "title": "FREE upright piano — you collect — needs tuning — genuinely free",
+        "price": "Free",
+        "at": "2026-09-14T11:05:00Z",
+        "by": "d_ferreira",
+        "kind": "human",
+        "body": "Upright piano, dark wood, 1950s something, no maker's plate left on it. It has been in the front room since we bought the house in 2011 and the previous owners left it because they could not move it either.\n\nIt plays. Two keys near the top are dead and the whole thing is about a semitone flat. A tuner told me it is worth tuning and not worth restoring.\n\nIt is FREE. I am not going to ask you for anything. It weighs something like 250kg and it is up three steps from the street, so bring at least four people and straps. If you turn up with two people and a hatchback I will make you tea and you will go home without a piano.\n\nIf nobody takes it by the 30th it goes to the dump and I would rather it did not.",
+        "imgSeed": "free-piano-upright",
+        "condition": "Used — needs tuning"
+      },
+      {
+        "id": "l-007",
+        "catId": "k-housing",
+        "regionId": "r-gridfall",
+        "title": "Luxury 2 Bed Apartment — Available Immediately — Owner Abroad",
+        "price": "$450/mo",
+        "at": "2026-09-17T09:00:00Z",
+        "by": "Property Group Intl",
+        "kind": "scam",
+        "body": "Beautiful fully furnished 2 bedroom apartment in central Gridfall. Available immediately. $450 per month including all utilities and internet.\n\nI am currently working as a missionary abroad and cannot show the property in person. The keys are with a courier service. To arrange viewing please send first month rent and deposit via bank transfer and the keys will be released within 24 hours.\n\nGod bless. Complete the tenancy form here: [url=synth://verity-rentals-secure.keyrelease.click/apply]verity-rentals-secure[/url]",
+        "imgSeed": "apartment-lux-2bed",
+        "condition": "Furnished"
+      },
+      {
+        "id": "l-008",
+        "catId": "k-vehicles",
+        "regionId": "r-marchfield",
+        "title": "2016 Pickup, 4WD, tow bar, 141k, honest description inside",
+        "price": "$9,200",
+        "at": "2026-09-12T16:20:00Z",
+        "by": "carl_h_marchfield",
+        "kind": "human",
+        "body": "Selling my pickup because I have stopped doing the job I bought it for.\n\n141,000 miles. 4WD works, I use it every winter. Tow bar fitted 2019. Service history from 2018 onward, nothing before that because I bought it at auction.\n\nWhat is wrong with it: the tailgate handle sticks, there is a dent in the rear passenger door from a gate, the driver's seat bolster is worn through, and it uses about a litre of oil between services. I have not fixed any of that and the price reflects it.\n\nHappy for you to take it to a garage of your choosing before you buy. I will come with you.",
+        "imgSeed": "pickup-2016-4wd",
+        "condition": "Used — see description"
+      },
+      {
+        "id": "l-009",
+        "catId": "k-jobs",
+        "regionId": "r-gridfall",
+        "title": "EARN $3,500/WEEK FROM HOME — NO EXPERIENCE — START TODAY",
+        "price": "$3,500/wk",
+        "at": "2026-09-19T02:14:00Z",
+        "by": "CareerBoost Recruitment",
+        "kind": "spam",
+        "body": "Flexible remote position. No experience necessary. Full training provided.\n\nDuties: receive payments into your personal bank account from our clients, retain 8% commission, forward the remainder by wire to our supplier accounts within 2 hours.\n\nStart today. Must have an active bank account in your own name and be able to act quickly. Apply: [url=synth://careerboost-apply-now.fast-hire.top/]careerboost-apply-now[/url]",
+        "imgSeed": "job-wfh-3500",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-010",
+        "catId": "k-furniture",
+        "regionId": "r-newcarrow",
+        "title": "Sofa 3 seater grey — pet free smoke free — collection New Carrow",
+        "price": "$120",
+        "at": "2026-09-16T12:00:00Z",
+        "by": "HomeFinds Verity",
+        "kind": "bot",
+        "body": "Excellent condition 3 seater sofa in neutral grey. Perfect for any modern living space. Pet free and smoke free home. Cushions included.\n\nDimensions approximately 200cm x 90cm x 85cm.\n\nCollection only from New Carrow. Cash on collection. Buyer must arrange transport.",
+        "imgSeed": "sofa-grey-3seat",
+        "condition": "Used — excellent"
+      },
+      {
+        "id": "l-011",
+        "catId": "k-furniture",
+        "regionId": "r-gridfall",
+        "title": "Sofa 3 seater grey — pet free smoke free — collection Gridfall",
+        "price": "$125",
+        "at": "2026-09-16T12:04:00Z",
+        "by": "HomeFinds Verity",
+        "kind": "bot",
+        "body": "Excellent condition 3 seater sofa in neutral grey. Perfect for any contemporary living space. Pet free and smoke free home. Cushions included.\n\nDimensions approximately 200cm x 90cm x 85cm.\n\nCollection only from Gridfall. Cash on collection. Buyer must arrange transport.",
+        "imgSeed": "sofa-grey-3seat",
+        "condition": "Used — excellent"
+      },
+      {
+        "id": "l-012",
+        "catId": "k-services",
+        "regionId": "r-ashkettle",
+        "title": "ROOF INSPECTION — FREE — STORM DAMAGE SPECIALISTS — IN YOUR AREA TODAY",
+        "price": "Free inspection",
+        "at": "2026-09-18T08:30:00Z",
+        "by": "Apex Roofing Solutions",
+        "kind": "spam",
+        "body": "Our surveyors are IN YOUR AREA TODAY following recent storm activity.\n\nFREE no-obligation roof inspection. We work directly with your insurer. Most homeowners qualify for a full replacement at no cost to themselves.\n\nWe were in Ashkettle last week and found damage on 9 out of 10 properties inspected. Do not wait for the leak.\n\nDeposit secures your slot in this week's schedule. Book: [url=synth://apex-roofing-verity.claim-today.top/]apex-roofing-verity[/url]",
+        "imgSeed": "roofing-storm-apex",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-013",
+        "catId": "k-vehicles",
+        "regionId": "r-halsey",
+        "title": "Trailer 8x5 with ramp — good floor — Coyne Flats",
+        "price": "$550",
+        "at": "2026-09-13T10:15:00Z",
+        "by": "b_stannard",
+        "kind": "human",
+        "body": "8x5 trailer, drop ramp at the back, mesh sides. The floor is marine ply and I replaced it two years ago so it is solid.\n\nLights work. Spare wheel included but the tyre on it is old, I would not trust it for a long run.\n\nCoyne Flats. Can be seen any evening after six.",
+        "imgSeed": "trailer-8x5-ramp",
+        "condition": "Used — good"
+      },
+      {
+        "id": "l-014",
+        "catId": "k-electronics",
+        "regionId": "r-gridfall",
+        "title": "Gaming PC RTX Ultra 64GB RAM — Built By Professional — Warranty",
+        "price": "$620",
+        "at": "2026-09-17T21:00:00Z",
+        "by": "TechFlip Verity",
+        "kind": "bot",
+        "body": "High performance gaming PC. RTX graphics, 64GB RAM, fast SSD storage, RGB lighting throughout.\n\nRuns all modern titles at high settings. Built by a professional in a clean room environment.\n\nSpecifications may vary from photo. Warranty covers manufacturing defects for 14 days from collection. RGB is not covered.",
+        "imgSeed": "gamingpc-rtx-rgb",
+        "condition": "Refurbished"
+      },
+      {
+        "id": "l-015",
+        "catId": "k-free",
+        "regionId": "r-marchfield",
+        "title": "Free: 40 paving slabs, you lift them",
+        "price": "Free",
+        "at": "2026-09-11T15:45:00Z",
+        "by": "p_ogilvy",
+        "kind": "human",
+        "body": "Taking up the patio. Forty slabs, 60x60, grey, some cracked.\n\nThey are heavy and they are at the bottom of the garden. There is no vehicle access, you carry them through the side gate.\n\nFirst person here takes the lot. I am not splitting them.",
+        "imgSeed": "free-slabs-40",
+        "condition": "Used"
+      },
+      {
+        "id": "l-016",
+        "catId": "k-housing",
+        "regionId": "r-marchfield",
+        "title": "Room in shared house, Marchfield, working tenant preferred",
+        "price": "$390/mo",
+        "at": "2026-09-10T19:20:00Z",
+        "by": "hannah_r",
+        "kind": "human",
+        "body": "Double room in a three bed house near the old station road. Sharing with me and one other, both of us work days.\n\n$390 a month, bills split three ways, usually comes to about $70 each in winter and less in summer.\n\nThe house is old and the back bedroom is cold. I am telling you now rather than after you move in. Good landlord, fixes things within a week.\n\nNo deposit until you have seen the room. Come and see the room.",
+        "imgSeed": "room-share-marchfield",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-017",
+        "catId": "k-services",
+        "regionId": "r-gridfall",
+        "title": "AI-Powered Home Cleaning Bookings — 20% Off First Clean — Verity Wide",
+        "price": "from $29/hr",
+        "at": "2026-09-18T06:00:00Z",
+        "by": "SparkleFlow (Sponsored)",
+        "kind": "sponsored",
+        "body": "Book a vetted cleaner in under 60 seconds with our AI matching engine.\n\nAll cleaners are background checked by an automated system. Rated 4.9 stars by 61,000 customers county wide.\n\n20% off your first clean. Cancellation within 48 hours incurs a fee. The fee is determined by the app.",
+        "imgSeed": "sparkleflow-clean",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-018",
+        "catId": "k-furniture",
+        "regionId": "r-ashkettle",
+        "title": "Estate sale — Ray's model railway, 00 gauge, Verity Rail branch layout",
+        "price": "Offers",
+        "at": "2026-09-15T18:41:00Z",
+        "by": "Ellen Vosper",
+        "kind": "human",
+        "body": "This is the second of my listings. This one is harder.\n\nRay built a model of the branch line as it ran in 1974, from Ashkettle up to the junction. It takes up the whole spare bedroom on a board he made in sections so it could be moved. He worked on it from 1998 until this March.\n\nThe buildings are scratch built from photographs. The signal box is right down to the window frames. Two of the men from [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] came to see it in 2019 and one of them cried, which Ray talked about for a year.\n\nI would rather it went to someone who will keep it together than be sold off in pieces. If that is you, come on Saturday and tell me what you would do with it. Money matters less than that.\n\nIf nobody wants it whole, then I will sell it in pieces, and that is all right too.",
+        "imgSeed": "model-railway-ray",
+        "condition": "Used — handbuilt"
+      },
+      {
+        "id": "l-019",
+        "catId": "k-jobs",
+        "regionId": "r-newcarrow",
+        "title": "Kitchen porter, evenings, New Carrow — real job, real pay",
+        "price": "$16/hr",
+        "at": "2026-09-16T08:00:00Z",
+        "by": "The Longacre",
+        "kind": "human",
+        "body": "We need a kitchen porter Wednesday to Sunday, 5pm to close, which is usually half eleven.\n\n$16 an hour, paid weekly, food on shift. The work is washing up and prep and taking the bins out in the rain.\n\nNo experience needed. We have trained four people from nothing in two years and two of them are still here.\n\nCome in and ask for Denise. Do not email, we do not check it.",
+        "imgSeed": "job-kp-longacre",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-020",
+        "catId": "k-electronics",
+        "regionId": "r-halsey",
+        "title": "Smart TV 55 inch — Boxed — Collection Only — No Time Wasters",
+        "price": "$210",
+        "at": "2026-09-14T17:30:00Z",
+        "by": "TechFlip Verity",
+        "kind": "bot",
+        "body": "55 inch Smart TV in original box. 4K resolution with HDR support. All apps working. Remote included.\n\nExcellent picture quality. Collection only, no delivery, no posting, no holding, no time wasters, no lowball offers, cash only, first come first served.\n\nAny questions message me. I will reply within four business days.",
+        "imgSeed": "tv55-boxed",
+        "condition": "Used — excellent"
+      },
+      {
+        "id": "l-021",
+        "catId": "k-vehicles",
+        "regionId": "r-gridfall",
+        "title": "CAR FINANCE APPROVED — ANY CREDIT — DRIVE AWAY TODAY — NO CHECKS",
+        "price": "$0 down",
+        "at": "2026-09-19T01:30:00Z",
+        "by": "DriveNow Verity",
+        "kind": "spam",
+        "body": "BAD CREDIT? NO CREDIT? BANKRUPT? WE SAY YES.\n\nNo employment checks. No affordability checks. No deposit. Drive away today in a vehicle of your choice.\n\nAPR from 4.9% to 289.9% depending on assessment. Assessment is automatic and final.\n\nPre-approval in 30 seconds: [url=synth://drivenow-approval.instant-yes.click/]drivenow-approval[/url]",
+        "imgSeed": "finance-drivenow",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-022",
+        "catId": "k-furniture",
+        "regionId": "r-halsey",
+        "title": "Dining table solid oak, 6 chairs, one chair wobbles",
+        "price": "$180",
+        "at": "2026-09-12T13:10:00Z",
+        "by": "sandra_kew",
+        "kind": "human",
+        "body": "Solid oak dining table, 160cm, with six chairs. Had it eleven years.\n\nThere are heat rings on the table top near one end where somebody kept putting a teapot down. It sands out, I have never got round to it.\n\nOne chair wobbles. The others do not.\n\nHalsey, collection only, I will help you load it.",
+        "imgSeed": "dining-oak-6",
+        "condition": "Used — fair"
+      },
+      {
+        "id": "l-023",
+        "catId": "k-services",
+        "regionId": "r-marchfield",
+        "title": "Man with van — Marchfield and surrounding — single items welcome",
+        "price": "$45/hr",
+        "at": "2026-09-09T09:40:00Z",
+        "by": "t_ashford",
+        "kind": "human",
+        "body": "Luton van with tail lift. I do single items, house moves, tip runs, and the awkward jobs other people turn down.\n\n$45 an hour from when I arrive to when I leave, minimum one hour, fuel included within the county.\n\nI do pianos. I have moved nine of them and dropped none.\n\nMarchfield based. Text is better than calling, I am usually driving.",
+        "imgSeed": "van-ashford",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-024",
+        "catId": "k-housing",
+        "regionId": "r-ashkettle",
+        "title": "Storage unit sublet, dry, 24hr access, no questions",
+        "price": "$85/mo",
+        "at": "2026-09-08T22:00:00Z",
+        "by": "unit_g_ashkettle",
+        "kind": "bot",
+        "body": "Sublet of a 100 sq ft storage unit on the Ashkettle industrial estate. Dry, clean, 24 hour access with a code.\n\nNo contract, no paperwork, no questions asked about contents. Payment monthly in advance.\n\nNot responsible for loss or damage. Access code changes without notice.",
+        "imgSeed": "storage-unit-g",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-025",
+        "catId": "k-free",
+        "regionId": "r-gridfall",
+        "title": "Free moving boxes, about 30, from our move last week",
+        "price": "Free",
+        "at": "2026-09-17T12:30:00Z",
+        "by": "k_amari",
+        "kind": "human",
+        "body": "About thirty cardboard boxes in decent shape, various sizes, plus a roll and a half of bubble wrap.\n\nThey are flattened and stacked in the porch. Just message and I will tell you the address, you can take them any time, you do not need me to be in.\n\nPlease take them all if you can.",
+        "imgSeed": "free-boxes-30",
+        "condition": "Used"
+      },
+      {
+        "id": "l-026",
+        "catId": "k-electronics",
+        "regionId": "r-marchfield",
+        "title": "Job Lot 200 Phone Cases Assorted — Wholesale — Start Your Business",
+        "price": "$60",
+        "at": "2026-09-15T05:00:00Z",
+        "by": "WholesaleHub Direct",
+        "kind": "bot",
+        "body": "200 assorted phone cases. Perfect business opportunity for market stalls or online resale. Huge profit margin.\n\nModels assorted. We cannot tell you which models. They are assorted.\n\nRetail value over $2000 based on the prices we have written on the box.",
+        "imgSeed": "joblot-cases-200",
+        "condition": "New"
+      },
+      {
+        "id": "l-027",
+        "catId": "k-jobs",
+        "regionId": "r-gridfall",
+        "title": "Content Moderators Wanted — Remote — Immediate Start — Verity Region",
+        "price": "$14.50/hr",
+        "at": "2026-09-16T10:00:00Z",
+        "by": "Meridian Labour Partners",
+        "kind": "bot",
+        "body": "Immediate start for content moderators supporting automated review systems.\n\nRole: review items flagged by the model. Target 1,100 items per shift. Accuracy measured against the model's own prior output.\n\nRemote. Own equipment required. Camera on. Breaks scheduled by the system.\n\nThis role is not expected to exist in eighteen months. Apply anyway.",
+        "imgSeed": "job-moderation-meridian",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-028",
+        "catId": "k-vehicles",
+        "regionId": "r-newcarrow",
+        "title": "Bicycle, hybrid, 21 speed, needs new chain",
+        "price": "$70",
+        "at": "2026-09-13T16:00:00Z",
+        "by": "j_okoro",
+        "kind": "human",
+        "body": "Hybrid bike, medium frame, 21 speed. Bought it in 2021, rode it for one summer, and it has been in the shed since.\n\nThe chain is rusty and should be replaced, it is about fifteen dollars. Tyres hold air. Brakes need adjusting, I do not know how to do that.\n\nNew Carrow. Collection.",
+        "imgSeed": "bike-hybrid-21",
+        "condition": "Used — needs work"
+      },
+      {
+        "id": "l-029",
+        "catId": "k-services",
+        "regionId": "r-gridfall",
+        "title": "DEBT SOLUTIONS — ONE PAYMENT — WRITE OFF UP TO 81% — GOVERNMENT SCHEME",
+        "price": "Free consultation",
+        "at": "2026-09-19T03:05:00Z",
+        "by": "Verity Debt Relief Bureau",
+        "kind": "spam",
+        "body": "NEW 2026 GOVERNMENT SCHEME allows Verity County residents to write off up to 81% of unsecured debt.\n\nWe are not affiliated with any government. There is no scheme. Fees apply and are taken from your first payment.\n\nCheck eligibility in 60 seconds: [url=synth://verity-debt-relief.writeoff-now.top/check]verity-debt-relief[/url]\n\n[i]The county's actual advice service is listed in the Ledger's public notices: [url=synth://verityledger.com/]verityledger.com[/url][/i]",
+        "imgSeed": "debt-relief-spam",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-030",
+        "catId": "k-furniture",
+        "regionId": "r-ashkettle",
+        "title": "Estate sale — the rest of the house, 47 Pellam Road",
+        "price": "Offers / free",
+        "at": "2026-09-15T18:55:00Z",
+        "by": "Ellen Vosper",
+        "kind": "human",
+        "body": "Third and last listing.\n\nEverything else. Beds, wardrobes, the kitchen table, a chest freezer that works, curtains, about two hundred books, a box of LPs, garden furniture, a lawnmower he swore at every summer.\n\nSome of it I want gone and some of it I am going to find hard to watch leave, and I will not know which is which until you pick it up. If I say no to something on the day, please do not take it personally.\n\nA man messaged me offering $900 for the entire contents of the house sight unseen and said he could come Thursday. I have said no. I would rather it went slowly to people from round here.\n\nSaturday 9am, 47 Pellam Road, Ashkettle.",
+        "imgSeed": "estate-house-ray",
+        "condition": "Used"
+      },
+      {
+        "id": "l-031",
+        "catId": "k-housing",
+        "regionId": "r-halsey",
+        "title": "Two bed cottage to let, Halsey, long let preferred, no agency",
+        "price": "$780/mo",
+        "at": "2026-09-11T11:00:00Z",
+        "by": "r_pennick",
+        "kind": "human",
+        "body": "Stone cottage, two bedrooms, small yard at the back. Oil heating, tank was filled in August.\n\nIt is a cottage from 1890 and it behaves like one. The upstairs windows rattle when the wind comes off the flats and there is no room for a dishwasher.\n\nI let it to the same family for nine years and I would like another long let. One month deposit, no agency, no application fee, I do not use those services.\n\nCome and look at it before you decide anything.",
+        "imgSeed": "cottage-halsey-2bed",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-032",
+        "catId": "k-electronics",
+        "regionId": "r-ashkettle",
+        "title": "Solar Generator Kit — EMERGENCY POWER — Grid Failure Ready — Limited",
+        "price": "$340",
+        "at": "2026-09-18T20:00:00Z",
+        "by": "PrepSupply Verity",
+        "kind": "bot",
+        "body": "Do not be caught without power. Verity County's grid infrastructure has not been meaningfully upgraded since the 2003 substation failure, and winter is coming.\n\nComplete solar generator kit. Panel, battery, inverter, cables.\n\nCapacity figures on the box are peak instantaneous and should not be used for planning.\n\nSee also our listings for water filtration and long-life food. Limited stock, price rises Monday. Every Monday.",
+        "imgSeed": "solar-gen-prep",
+        "condition": "New"
+      },
+      {
+        "id": "l-033",
+        "catId": "k-jobs",
+        "regionId": "r-halsey",
+        "title": "Someone to sit with my father two afternoons a week",
+        "price": "$18/hr",
+        "at": "2026-09-14T09:20:00Z",
+        "by": "n_bramley",
+        "kind": "human",
+        "body": "My father is 84 and lives alone in Halsey. He is mostly fine. He forgets the middle of the day.\n\nI need someone to be in the house Tuesday and Thursday afternoons, roughly 1pm to 5pm, while I am at work. Not nursing. Making tea, being there, watching the racing with him and letting him tell you about the rail yard, which he will, every week, the same story.\n\n$18 an hour cash, and I will not mess you about on hours.\n\nI would prefer someone local who can meet him first and see if they get on. He does not like new people on the phone but he is different in person.",
+        "imgSeed": "care-halsey-dad",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-034",
+        "catId": "k-free",
+        "regionId": "r-newcarrow",
+        "title": "FREE iPHONE 17 — JUST PAY SHIPPING — VERIFY IDENTITY TO CLAIM",
+        "price": "Free*",
+        "at": "2026-09-19T04:02:00Z",
+        "by": "VerityRewards Official",
+        "kind": "scam",
+        "body": "Congratulations! Residents of New Carrow selected for our 2026 device giveaway.\n\nClaim your FREE iPhone 17. Just pay $4.95 shipping and verify your identity with a card and a photo of your ID.\n\nOnly 3 devices remaining in your area. Timer expires in 09:58.\n\nClaim now: [url=synth://verity-rewards-claim.free-device.top/newcarrow]verity-rewards-claim[/url]",
+        "imgSeed": "free-iphone-scam",
+        "condition": "New"
+      },
+      {
+        "id": "l-035",
+        "catId": "k-services",
+        "regionId": "r-newcarrow",
+        "title": "Piano tuning — Verity County — 30 years — will travel",
+        "price": "$95",
+        "at": "2026-09-07T14:00:00Z",
+        "by": "g_lindqvist",
+        "kind": "human",
+        "body": "Piano tuner, thirty years, based New Carrow, covers the whole county including the flats.\n\n$95 for a standard tuning. Small repairs by arrangement. I will tell you honestly if an instrument is not worth the money, and I have told people that about four pianos this year.\n\nIf you have just been given a free piano off this site, wait two weeks after you move it before you book me. It needs to settle.",
+        "imgSeed": "piano-tuner-g",
+        "condition": "N/A"
+      },
+      {
+        "id": "l-036",
+        "catId": "k-vehicles",
+        "regionId": "r-ashkettle",
+        "title": "Motorcycle 2018 650cc — LOW MILES — PRICE REDUCED — GENUINE REASON FOR SALE",
+        "price": "$2,950",
+        "at": "2026-09-17T18:00:00Z",
+        "by": "MotoDeals Ashkettle",
+        "kind": "bot",
+        "body": "2018 650cc motorcycle. LOW MILES. Genuine reason for sale. Price reduced for quick sale this week only.\n\nRuns and rides. Recent service. Two keys. Some marks consistent with age.\n\nThe genuine reason for sale is available on request and will be provided as a general statement.\n\nMore of our stock is discussed on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] where we do not post.",
+        "imgSeed": "moto-650-2018",
+        "condition": "Used — good"
+      }
+    ]
+  }
+}

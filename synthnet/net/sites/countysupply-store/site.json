@@ -1,0 +1,1402 @@
+{
+  "schema": 1,
+  "domain": "countysupply.store",
+  "title": "County Supply Co. — Farm, Fence & Hardware — Marchfield",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "The last farm store in Verity County, selling real t-posts and real chainsaw chain through an e-commerce platform that writes its own product descriptions and will not let the owner delete the fake reviews.",
+  "tags": [
+    "verity",
+    "marchfield",
+    "farm",
+    "hardware",
+    "fence"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "classifieds.verity.net",
+    "gridfall-help.chat",
+    "verity.county.gov",
+    "vvpl.news",
+    "wiki.gridfall.net",
+    "now.verityledger.com"
+  ],
+  "data": {
+    "storeName": "County Supply Co.",
+    "categories": [
+      {
+        "id": "c-fence",
+        "name": "Fence & Gate"
+      },
+      {
+        "id": "c-saw",
+        "name": "Chainsaw & Woodlot"
+      },
+      {
+        "id": "c-livestock",
+        "name": "Livestock & Water"
+      },
+      {
+        "id": "c-feed",
+        "name": "Feed & Seed"
+      },
+      {
+        "id": "c-workwear",
+        "name": "Workwear & Gloves"
+      },
+      {
+        "id": "c-hardware",
+        "name": "Fasteners, Tarps & Twine"
+      },
+      {
+        "id": "c-winter",
+        "name": "Winter & Outage"
+      }
+    ],
+    "products": [
+      {
+        "id": "p-01",
+        "catId": "c-fence",
+        "name": "Studded T-Post, 6 ft, 1.25 lb/ft, Green with White Top",
+        "price": 7.89,
+        "was": 8.49,
+        "rating": 4.4,
+        "reviewCount": 61,
+        "blurb": "Six foot, 1.25 pound per foot, painted green with a white top. Anchor plate is welded, not clipped.\n\nPriced each. Bundle of 5 is $37.50 at the counter in Marchfield, which is cheaper than five, and we cannot make the website do that.\n\n[b]Twenty or more is a freight order.[/b] Under twenty ships parcel and arrives bent about one time in ten, which is the shipper's doing and not ours. We will replace a bent post. We will not pretend it did not happen.",
+        "bullets": [
+          "6 ft, 1.25 lb/ft, studded face, welded anchor plate",
+          "Takes standard clips — we sell those by the bag, 25 ct, $4.10",
+          "In stock at 214 Stanhope St, Marchfield. Counter pickup usually 20 minutes",
+          "SELLER NOTE: we do not control the parcel carrier and neither does the tracking page"
+        ],
+        "imgSeed": "tpost-6ft-green",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "b_ruddick",
+            "stars": 2,
+            "at": "2026-08-27T18:40:00Z",
+            "title": "Left at the end of a quarter mile lane",
+            "body": "Ordered twelve. The driver put them at the mailbox, which is a quarter mile from the house, on a Friday, in the rain.\n\nThe posts are fine. The posts have always been fine. I have bought posts from this store since the Coyne Flats one was open. I am rating the part of this that went wrong.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2214",
+            "stars": 5,
+            "at": "2026-09-14T04:11:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "K. Aldritch",
+            "stars": 5,
+            "at": "2026-09-14T04:13:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "h_pelz",
+            "stars": 5,
+            "at": "2026-05-03T13:22:00Z",
+            "title": "Picked them up myself",
+            "body": "Drove in, they were on the rack by the west door, loaded them myself in eight minutes. That is the whole review.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-02",
+          "p-04",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-02",
+        "catId": "c-fence",
+        "name": "Barbed Wire, 12.5 ga, 4-Point, 5 in Spacing, 80 Rod Spool (1,320 ft)",
+        "price": 112.5,
+        "was": 118.0,
+        "rating": 4.2,
+        "reviewCount": 34,
+        "blurb": "Class 3 galvanized, 12.5 gauge, four point, barbs on five inch centers. Eighty rod spool, 1,320 feet, about 82 pounds on the pallet scale.\n\nThis ships freight or you pick it up. It will not go parcel. Two people have tried.",
+        "bullets": [
+          "80 rod / 1,320 ft, Class 3 galv",
+          "Ships LTL freight, curbside, liftgate is $45 extra and you want it",
+          "Spool ends are sharp and the wrapper is not protection",
+          "We stock the 15.5 ga high tensile too, in store only, $94.00"
+        ],
+        "imgSeed": "barbwire-80rod",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "l_gantry",
+            "stars": 3,
+            "at": "2026-07-16T21:05:00Z",
+            "title": "Freight took eleven days for forty miles",
+            "body": "Spool is good wire. Eleven days from Marchfield to Halsey, which is forty minutes in a truck.\n\nThe freight company called once, at 6:40 in the morning, and when I called back it went to a menu with no option that was my situation.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "d_seavers",
+            "stars": 4,
+            "at": "2026-04-29T16:30:00Z",
+            "title": "Fine. Order the liftgate.",
+            "body": "I did not order the liftgate. Eighty-two pounds coming off the back of a trailer at chest height taught me something.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "FARM-DEALS-DAILY",
+            "stars": 5,
+            "at": "2026-08-02T02:14:00Z",
+            "title": "SAME SPOOL 60% CHEAPER",
+            "body": "Do not pay this price!! Identical 80 rod spool $44 with free shipping at [url=synth://farmwire-liquidation.deal-barn.top/]farmwire-liquidation[/url] while stock lasts!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-01",
+          "p-03",
+          "p-15"
+        ]
+      },
+      {
+        "id": "p-03",
+        "catId": "c-fence",
+        "name": "Field Fence, 12.5 ga, 47 in x 330 ft, 10/47/6 Woven Wire",
+        "price": 284.0,
+        "was": 299.0,
+        "rating": 4.0,
+        "reviewCount": 19,
+        "blurb": "Ten line wires, 47 inches tall, six inch stay spacing, 330 foot roll. Class 3 galvanized.\n\nA roll weighs 178 pounds. Do not order this to an address where you are the only person who will be home.",
+        "bullets": [
+          "10/47/6, 12.5 ga, 330 ft roll, 178 lb",
+          "Freight only. Curbside. The driver will not help you unload",
+          "Roll will not fit in a half ton bed with the tailgate up",
+          "Ag exemption: bring the form to the counter, the website cannot do it"
+        ],
+        "imgSeed": "fieldfence-47-330",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "r_tillotson",
+            "stars": 3,
+            "at": "2026-06-11T19:55:00Z",
+            "title": "Curbside means curbside",
+            "body": "It is in the ditch. It has been in the ditch since Tuesday. My neighbour is bringing a tractor Saturday.\n\nThe fence is good fence. I have no complaint about the fence.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2215",
+            "stars": 5,
+            "at": "2026-09-01T05:02:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "kfennimore",
+            "stars": 4,
+            "at": "2026-05-22T12:18:00Z",
+            "title": "For a garden, this is more fence than you need",
+            "body": "I bought a roll to keep deer out of about forty feet of raspberries, on advice, and I have 290 feet of it left standing in my garage.\n\nThis is not the store's fault. Nobody told me to buy 330 feet. I did that. If you are doing a garden, the counter will cut you woven wire off the reel, and I did not know that until afterwards.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-01",
+          "p-02",
+          "p-04"
+        ]
+      },
+      {
+        "id": "p-04",
+        "catId": "c-fence",
+        "name": "Ridgeline 110V Fence Charger, 2.0 Joule, 25 Mile, 3-Year Warranty",
+        "price": 164.95,
+        "was": 179.0,
+        "rating": 4.3,
+        "reviewCount": 48,
+        "blurb": "Two joule stored, rated 25 miles of clean wire, which nobody has. Figure a quarter of that with weeds on it.\n\nPlug-in, not solar. If you have power at the fence, buy this one. Three year warranty and we handle the warranty here rather than making you mail it somewhere.\n\nThreads about grounding on [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] go back twenty years and are mostly still correct: three rods, eight feet, ten feet apart.",
+        "bullets": [
+          "2.0 joule stored, 1.4 joule delivered",
+          "110V plug-in, 6 ft cord",
+          "Needs three 8 ft ground rods. We sell them, $16.40 each",
+          "Warranty handled at the counter, not by mail"
+        ],
+        "imgSeed": "fencecharger-25mi",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "j_roeder",
+            "stars": 4,
+            "at": "2026-08-09T22:31:00Z",
+            "title": "Works. Noisy on the radio, but so is everything out here.",
+            "body": "Fence is hot the whole run, 1,900 feet, two strands, some weeds.\n\nI am out past the quarry cut on 62 and the AM radio in the barn ticks along with the charger. It also picks up the numbers, and it picked those up before I owned a charger, so do not write to me about it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "w_kestenbaum",
+            "stars": 5,
+            "at": "2026-03-30T15:12:00Z",
+            "title": "Second one, third ground rod",
+            "body": "Bought my first one in 2019 and it took a hit in a storm two winters back. This is the replacement. The difference between a charger that works and one that does not is almost always the ground rods, and I did not believe that either.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "M. Sowerby",
+            "stars": 5,
+            "at": "2026-09-04T03:40:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-05",
+          "p-01",
+          "p-02"
+        ]
+      },
+      {
+        "id": "p-05",
+        "catId": "c-fence",
+        "name": "SOLAR ELECTRIC FENCE ENERGIZER 50 MILE ULTRA POWER Waterproof Livestock Horse Cattle Sheep (2026 UPGRADED)",
+        "price": 26.4,
+        "was": 249.99,
+        "rating": 4.9,
+        "reviewCount": 11482,
+        "blurb": "[b]FLASH DEAL — 89% OFF — 14 SOLD IN THE LAST HOUR[/b]\n\nUltra power 50 mile solar energizer for all livestock applications. Waterproof design suitable for all weather conditions. Easy installation in minutes with no wiring required. Protect your animals and your property with reliable containment technology.\n\nShips direct from supplier, 9 to 18 business days.",
+        "bullets": [
+          "50 mile range (unspecified conditions)",
+          "Solar panel integrated, battery included",
+          "Waterproof rated",
+          "Suitable for cattle, horse, sheep, pig, chicken, dog, deer"
+        ],
+        "imgSeed": "solar-energizer-50",
+        "seller": "RIDGELINE OUTDOOR GLOBAL STORE",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 7731",
+            "stars": 5,
+            "at": "2026-09-17T01:20:00Z",
+            "title": "Perfect for my farm!!",
+            "body": "Perfect for my farm!! Very easy to install and works great. My cattle respect the fence now. Excellent quality for the price and shipping was faster than expected. Five stars!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7732",
+            "stars": 5,
+            "at": "2026-09-17T01:24:00Z",
+            "title": "Perfect for my farm!!",
+            "body": "Perfect for my farm!! Very easy to install and works great. My horses respect the fence now. Excellent quality for the price and shipping was faster than expected. Five stars!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 7733",
+            "stars": 5,
+            "at": "2026-09-17T01:29:00Z",
+            "title": "Perfect for my garden!!",
+            "body": "Perfect for my garden!! Very easy to install and works great. My tomatoes respect the fence now. Excellent quality for the price and shipping was faster than expected. Five stars!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "a_delph",
+            "stars": 1,
+            "at": "2026-07-28T20:02:00Z",
+            "title": "0.04 joule",
+            "body": "Put a meter on it. It reads 0.04 joule. Fifty miles would be twelve to fifteen.\n\nIt will tickle a hand. It will not turn a steer. I did not buy this from County Supply, I bought it from a stranger on County Supply's website, and it took me a while to understand that those are two different things.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "mod_dcarver",
+            "stars": 1,
+            "at": "2026-08-01T11:44:00Z",
+            "title": "This is not their product",
+            "body": "For the people asking on the boards: the store did not choose this listing. The platform bolted a marketplace onto the site in March and this came with it.\n\nDee has asked. I have read the ticket responses. They are the same response.",
+            "verified": false,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-22",
+          "p-04",
+          "p-12"
+        ]
+      },
+      {
+        "id": "p-06",
+        "catId": "c-saw",
+        "name": "Chainsaw Chain, .325 Pitch, .063 Gauge, 72 Drive Links (20 in Bar)",
+        "price": 23.49,
+        "was": 25.99,
+        "rating": 4.6,
+        "reviewCount": 97,
+        "blurb": "Semi-chisel, .325 pitch, .063 gauge, 72 drive links. This is a 20 inch bar chain on most saws that use .325.\n\n[b]Count your drive links.[/b] Do not count the teeth. Do not trust what the internet says your saw takes. If you are not sure, bring the old chain in and we will put it on the board.\n\nWe loop chain off the reel at the counter for anything odd, $19.00 plus the reel foot.",
+        "bullets": [
+          ".325 pitch / .063 gauge / 72 DL",
+          "Semi-chisel, low kickback",
+          "Sharpening in store, $6.50 a chain, usually same day",
+          "Bring the old chain if you are guessing. Everyone guesses wrong once"
+        ],
+        "imgSeed": "chain-325-72dl",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "t_okonkwo",
+            "stars": 5,
+            "at": "2026-09-08T17:14:00Z",
+            "title": "Ordered Thursday, on the counter Friday",
+            "body": "Site said two hours for pickup and it was two hours. Cuts clean. I bought three because I will lose two.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "g_hovey",
+            "stars": 3,
+            "at": "2026-06-04T14:50:00Z",
+            "title": "Shipped in the maker's box with a label on it",
+            "body": "No outer carton. Everyone on my road now knows I own a chainsaw, which is not a secret, but still.\n\nChain is correct and sharp. Nine days though. I could have driven to Marchfield and back eleven times.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2216",
+            "stars": 5,
+            "at": "2026-08-21T06:31:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n_barrows",
+            "stars": 4,
+            "at": "2026-02-17T20:07:00Z",
+            "title": "Wrong chain, my fault, they swapped it",
+            "body": "I ordered 72 DL and needed 78. That is on me. The counter swapped it with the wrapper already off and did not make a thing of it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-07",
+          "p-09",
+          "p-08"
+        ]
+      },
+      {
+        "id": "p-07",
+        "catId": "c-saw",
+        "name": "Bar & Chain Oil, 1 Gallon, Tacky Formula, All Season",
+        "price": 14.79,
+        "was": 15.99,
+        "rating": 4.1,
+        "reviewCount": 52,
+        "blurb": "One gallon. Tacky enough to stay on the bar and not sling off into the leaves, which is the entire job.\n\nIn winter it thickens. Everyone's does. Keep it inside the night before.",
+        "bullets": [
+          "1 gallon, all-season tacky formula",
+          "Case of 4 is $52.00 at the counter",
+          "The jug seam is the jug maker's problem and we know about it",
+          "Do not use motor oil. You will anyway, but do not"
+        ],
+        "imgSeed": "baroil-1gal",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "s_marchetti",
+            "stars": 4,
+            "at": "2026-07-03T10:25:00Z",
+            "title": "Leaked in the box, replaced without argument",
+            "body": "Seam split somewhere between here and there. Box arrived with a wet corner and the porch smelled like a sawmill for a week.\n\nCalled the store, they had another one on the truck the next day and did not ask for the empty back. Four stars because the oil is fine and the jug is not.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "OIL-DEALS-2026",
+            "stars": 5,
+            "at": "2026-08-30T03:55:00Z",
+            "title": "Bulk pricing available",
+            "body": "Why pay retail? 5 gallon pails $19.99 shipped, all brands, verified supplier at [url=synth://chainoil-bulk-outlet.saveyard.click/]chainoil-bulk-outlet[/url] limited allocation.",
+            "verified": true,
+            "kind": "spam"
+          },
+          {
+            "by": "v_orris",
+            "stars": 3,
+            "at": "2026-01-19T09:40:00Z",
+            "title": "Thick in January",
+            "body": "It is oil in the cold. Left it in the truck overnight at nine degrees and spent ten minutes convincing the saw to take it. Brought the next jug inside and had no trouble. Not really a product complaint, more of a note.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-06",
+          "p-09",
+          "p-19"
+        ]
+      },
+      {
+        "id": "p-08",
+        "catId": "c-saw",
+        "name": "Splitting Maul, 8 lb Head, 34 in Fiberglass Handle, Overstrike Collar",
+        "price": 46.99,
+        "was": 52.0,
+        "rating": 4.5,
+        "reviewCount": 40,
+        "blurb": "Eight pound head, 34 inch handle, steel collar under the head so the first overstrike does not end the maul.\n\nIf you are splitting more than about two cord a year, buy a splitter or borrow one. If you are splitting less, this is the tool.",
+        "bullets": [
+          "8 lb head, 34 in fiberglass handle",
+          "Overstrike collar",
+          "6 lb version $41.99, and most people should buy that one",
+          "Wedges sold separately, $12.95, and you will need two"
+        ],
+        "imgSeed": "maul-8lb-34in",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5508",
+            "stars": 5,
+            "at": "2026-09-12T02:10:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my husband and he uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 5509",
+            "stars": 5,
+            "at": "2026-09-12T02:14:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my wife and she uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "c_yearwood",
+            "stars": 5,
+            "at": "2025-11-02T16:45:00Z",
+            "title": "Eight pounds is eight pounds",
+            "body": "I am 61 and I bought the 8 because I have always used an 8. Three hours in I understood the note on this page about buying the 6.\n\nGood maul. Correct handle length. The note is correct and I ignored it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-06",
+          "p-09",
+          "p-20"
+        ]
+      },
+      {
+        "id": "p-09",
+        "catId": "c-saw",
+        "name": "Chainsaw Chaps, Apron Style, 36 in, 6-Layer, ASTM F3325",
+        "price": 79.0,
+        "was": 84.0,
+        "rating": 4.7,
+        "reviewCount": 26,
+        "blurb": "Six layer apron chaps, 36 inch length, orange. Certified to the current standard.\n\nWe sell these at a margin you could drive a truck through the middle of and we still sell them, because the county has one hospital and it is in Marchfield and the drive from the far side of Halsey is fifty minutes.",
+        "bullets": [
+          "36 in apron style, 6 layer, ASTM F3325",
+          "Sizes: 32 / 36 / 40 in, measured waist to boot top",
+          "Wash cold, hang dry, never a dryer",
+          "If they take a hit, they are done. Bring them in and we will show you why"
+        ],
+        "imgSeed": "chaps-36-apron",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "d_seavers",
+            "stars": 5,
+            "at": "2026-04-11T18:20:00Z",
+            "title": "Bought after a close one",
+            "body": "Thirty years without them and one bad afternoon in March with a saw that kicked. Nothing happened. That is the point, nothing happened, and I still went and bought chaps that week.\n\nShipped in three days. Sized right off the chart on this page.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 5510",
+            "stars": 5,
+            "at": "2026-09-12T02:18:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my husband and he uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "p_ravenel",
+            "stars": 4,
+            "at": "2026-06-30T13:05:00Z",
+            "title": "Hot in July, which is not news",
+            "body": "They are six layers of ballistic fibre strapped to your legs in summer. I knew that going in. Four stars because I want one star of my own opinion about July in them.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-06",
+          "p-07",
+          "p-15"
+        ]
+      },
+      {
+        "id": "p-10",
+        "catId": "c-livestock",
+        "name": "Galvanized Stock Tank, 2 ft x 2 ft x 6 ft, 169 Gallon, Oval End",
+        "price": 319.0,
+        "was": 339.0,
+        "rating": 3.8,
+        "reviewCount": 31,
+        "blurb": "Twenty gauge galvanized, 169 gallons, drain plug at the end and not the middle.\n\nHalf the people who buy these are putting a garden in them or a small child. That is fine. The other half have cattle and already know what they want.\n\nUsed ones turn up on [url=synth://classifieds.verity.net/]classifieds.verity.net[/url] every spring for around a hundred dollars and if the seam is sound that is a better buy than this.",
+        "bullets": [
+          "169 gal, 2 x 2 x 6 ft, 20 ga galvanized",
+          "1 in drain plug, end mounted",
+          "Freight only, curbside, ships on its side and arrives dented at the rim about one time in four",
+          "A rim dent is cosmetic. A seam dent is not. Photograph it before the driver leaves"
+        ],
+        "imgSeed": "stocktank-169gal",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "e_brightwater",
+            "stars": 2,
+            "at": "2026-05-14T15:33:00Z",
+            "title": "Arrived dented, handled well, still two stars",
+            "body": "Rim was folded over about eight inches on one end. Freight driver would not wait while I looked at it, which I now know is normal.\n\nStore credited me $60 the same afternoon on a phone call, no forms, no photographs demanded. I want to be clear that the store was good about this. The delivery was not and the delivery is what I paid for.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 8840",
+            "stars": 5,
+            "at": "2026-08-19T07:02:00Z",
+            "title": "Excellent quality tank",
+            "body": "Excellent quality tank, exactly as pictured. Holds water with no leaks at all. My daughter uses it every day and loves it. Delivery was prompt and the driver was courteous. Highly recommend this seller.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m_oyelaran",
+            "stars": 5,
+            "at": "2026-03-21T11:11:00Z",
+            "title": "Picked it up in the truck bed",
+            "body": "Six feet does not fit in a six foot bed with the tailgate up, in case anyone was hoping. Tailgate down, two ratchet straps, drove 30 the whole way home on Stanhope and then the county road.\n\nTank is a tank. No complaints. Skipped the freight entirely and saved $85.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-11",
+          "p-12",
+          "p-13"
+        ]
+      },
+      {
+        "id": "p-11",
+        "catId": "c-livestock",
+        "name": "Rubber Stock Tank, 100 Gallon, Flat Back, Crack-Resistant to -40F",
+        "price": 134.0,
+        "was": 142.0,
+        "rating": 4.6,
+        "reviewCount": 44,
+        "blurb": "Recycled rubber, 100 gallon, flat back so it sits against a wall or a fence line.\n\nThis is the one to buy if your tank freezes solid every winter, because ice will not split it. Galvanized will. We have sold both here since 1961 and this is the honest answer.",
+        "bullets": [
+          "100 gal, flat back, recycled rubber",
+          "Will not crack when the contents freeze",
+          "Heavy: 62 lb empty, and it does not have handles so much as suggestions",
+          "Nests, so two ship as almost one"
+        ],
+        "imgSeed": "rubbertank-100",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "w_kestenbaum",
+            "stars": 5,
+            "at": "2026-02-08T08:50:00Z",
+            "title": "Froze through twice, still a tank",
+            "body": "Solid block of ice in it twice this winter and it did what the page says. My old galvanized one split in 2021 in the same spot in the same yard.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "l_gantry",
+            "stars": 4,
+            "at": "2026-09-02T19:44:00Z",
+            "title": "Shipping ate the savings",
+            "body": "Tank $134, shipping $71, because it is a 62 pound object shaped like a bathtub. If I had looked at the map first I would have driven in for it. That is not the store's doing, it is geometry.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 8841",
+            "stars": 5,
+            "at": "2026-08-19T07:06:00Z",
+            "title": "Excellent quality tank",
+            "body": "Excellent quality tank, exactly as pictured. Holds water with no leaks at all. My son uses it every day and loves it. Delivery was prompt and the driver was courteous. Highly recommend this seller.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-10",
+          "p-12",
+          "p-13"
+        ]
+      },
+      {
+        "id": "p-12",
+        "catId": "c-livestock",
+        "name": "Heated Flat-Back Bucket, 5 Gallon, 120V, 6 ft Chew-Resistant Cord",
+        "price": 44.95,
+        "was": 47.5,
+        "rating": 4.4,
+        "reviewCount": 58,
+        "blurb": "Five gallon heated bucket, thermostat, 6 foot cord in a steel spiral. Draws 120 watts and only runs below about 35F.\n\n[b]The cord is chew resistant, not chew proof.[/b] Nothing is chew proof. Run it where the horse cannot reach it and not through a doorway you close.\n\nWe sell out of these the first hard week every year. It is September. Buy it now or stand in line behind everyone else in October.",
+        "bullets": [
+          "5 gal, 120V, 120W, thermostatically controlled",
+          "6 ft steel-wrapped cord",
+          "Do not use an indoor extension cord. This is how barns burn",
+          "Freeze-free line and tank de-icers also in stock, ask at the counter"
+        ],
+        "imgSeed": "heatedbucket-5gal",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "a_delph",
+            "stars": 5,
+            "at": "2026-01-06T07:30:00Z",
+            "title": "Third winter on the first one",
+            "body": "Bought two in 2023, both still going. Ordered a third online in December and it came in four days in the middle of the bad week, which I did not expect.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "T. Vandermeer",
+            "stars": 5,
+            "at": "2026-09-14T04:16:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "h_pelz",
+            "stars": 3,
+            "at": "2026-02-27T21:15:00Z",
+            "title": "Cord lasted eleven days",
+            "body": "Chew resistant met a goat. The goat won. I am not blaming the bucket, I am telling you about the goat.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-10",
+          "p-11",
+          "p-20"
+        ]
+      },
+      {
+        "id": "p-13",
+        "catId": "c-feed",
+        "name": "Layer Pellet, 16% Protein, 50 lb Bag",
+        "price": 18.75,
+        "was": 19.5,
+        "rating": 4.3,
+        "reviewCount": 73,
+        "blurb": "Sixteen percent, pelleted, 50 pound bag. Mill date is stamped on the tag on the end of the bag and we do not stock anything over six weeks old.\n\nWe do not ship feed. It is a fifty pound bag of grain and the freight is more than the grain. Order online, pick up in Marchfield, we will put it in your trunk.\n\nBulk and tonne lots: [url=synth://hollisfeed.synth/]Hollis Feed & Grain[/url] in Halsey does that and we do not, and they are good people.",
+        "bullets": [
+          "16% protein layer pellet, 50 lb",
+          "PICKUP ONLY. We will not ship feed and nobody should",
+          "Ten bag price $176.00, ask at the counter",
+          "Crumble version same price, chickens do not care, you might"
+        ],
+        "imgSeed": "layerpellet-50lb",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "n_barrows",
+            "stars": 5,
+            "at": "2026-08-14T12:40:00Z",
+            "title": "Ordered at 8, loaded at 9:20",
+            "body": "Website said pick up in two hours and it was ninety minutes. Kid at the dock put four bags in for me without being asked. Mill date was eleven days old.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 5511",
+            "stars": 5,
+            "at": "2026-09-12T02:22:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my husband and he uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "VerityPulseAI",
+            "stars": 4,
+            "at": "2026-09-10T16:00:00Z",
+            "title": "Summary of customer sentiment for this item",
+            "body": "Customer sentiment for this product is broadly positive. Residents in the Verity County area report consistent availability and competitive pricing, and the community has responded well to the store's pickup option. Some reviewers note that the product cannot be shipped, which local officials have not commented on.\n\nThis summary was generated from 73 reviews and may contain inaccuracies.",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "b_ruddick",
+            "stars": 2,
+            "at": "2026-04-02T17:28:00Z",
+            "title": "Price is up $2.40 since last spring",
+            "body": "Same bag, same mill, two dollars forty more than March of last year. I understand why. I am still going to say it out loud where people can see it.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-14",
+          "p-12",
+          "p-16"
+        ]
+      },
+      {
+        "id": "p-14",
+        "catId": "c-feed",
+        "name": "Cracked Corn, 50 lb Bag",
+        "price": 12.4,
+        "was": 12.9,
+        "rating": 4.2,
+        "reviewCount": 38,
+        "blurb": "Fifty pounds of cracked corn. Pickup only, same as everything else in this aisle.\n\nIt is for poultry and for deer, and the county has an opinion about the second one that changes every few years, so check [url=synth://verity.county.gov/]the county site[/url] before you put it out. We are not the people to ask and we will tell you that at the counter too.",
+        "bullets": [
+          "50 lb, cracked, not whole",
+          "PICKUP ONLY",
+          "Whole corn also $12.40, same bag, different shape",
+          "Keep it in a can with a lid or you are feeding something you did not plan on"
+        ],
+        "imgSeed": "crackedcorn-50lb",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 5512",
+            "stars": 5,
+            "at": "2026-09-12T02:26:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my wife and she uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "g_hovey",
+            "stars": 4,
+            "at": "2026-07-22T14:02:00Z",
+            "title": "Corn",
+            "body": "It is corn. It was cracked. Twelve forty.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "p_ravenel",
+            "stars": 4,
+            "at": "2026-09-16T09:50:00Z",
+            "title": "Bag split in the trunk, not their doing",
+            "body": "Paper bag, fifty pounds, sharp thing in my trunk I had forgotten about. Corn in the spare tire well until roughly the end of time.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-13",
+          "p-16",
+          "p-19"
+        ]
+      },
+      {
+        "id": "p-15",
+        "catId": "c-workwear",
+        "name": "Goatskin Driver Glove, Keystone Thumb, Unlined, Size L",
+        "price": 19.95,
+        "was": 21.5,
+        "rating": 4.5,
+        "reviewCount": 64,
+        "blurb": "Goatskin, keystone thumb, unlined, shirred elastic wrist. Sizes S through 2XL.\n\nGoatskin because it is thin enough to feel a clip and tough enough to last a season on wire. Cowhide is cheaper and you will hate it on fence.\n\nThey will stretch about half a size. Buy the size you are.",
+        "bullets": [
+          "Goatskin, keystone thumb, unlined",
+          "S / M / L / XL / 2XL",
+          "They will not stay soft if you soak them. Nothing does",
+          "Three pair $54.00"
+        ],
+        "imgSeed": "goatskin-glove-l",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "mod_dcarver",
+            "stars": 4,
+            "at": "2026-05-09T13:12:00Z",
+            "title": "Glove is a glove",
+            "body": "Good glove, correct size, came in three days.\n\nThe website made me make an account, verify an email and accept two policies to buy a glove. I have run a message board since 2003 and I do not make people do that to read it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "e_brightwater",
+            "stars": 5,
+            "at": "2026-06-18T20:00:00Z",
+            "title": "Fourth pair",
+            "body": "Fourth pair in six years. I lose them, I do not wear them out. Picked these up on the way back from getting my phone screen done at the kestrel building on 62.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 2217",
+            "stars": 5,
+            "at": "2026-09-14T04:19:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-16",
+          "p-01",
+          "p-09"
+        ]
+      },
+      {
+        "id": "p-16",
+        "catId": "c-workwear",
+        "name": "Cotton Jersey Glove, Brown Knit Wrist, 12 Pair",
+        "price": 16.2,
+        "was": 17.4,
+        "rating": 4.4,
+        "reviewCount": 29,
+        "blurb": "A dozen pair of cotton jersey gloves. These are the gloves you keep in the truck, the barn, the tractor, the garage and the other truck, so that there is always a glove.\n\nThey are not waterproof, not cut resistant and not warm. They are a dollar thirty-five a pair.",
+        "bullets": [
+          "12 pair, brown cotton jersey, knit wrist",
+          "One size, which fits nobody exactly",
+          "Machine wash, they will shrink, that is part of it",
+          "Also in the dotted-palm version, $19.80 a dozen"
+        ],
+        "imgSeed": "jerseyglove-12pk",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2218",
+            "stars": 5,
+            "at": "2026-09-14T04:22:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "t_okonkwo",
+            "stars": 4,
+            "at": "2026-03-12T18:35:00Z",
+            "title": "Eleven pairs",
+            "body": "Bag said twelve pair, had eleven. Told the counter next time I was in and they handed me a pair off the shelf and that was the end of it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "v_orris",
+            "stars": 5,
+            "at": "2026-08-05T11:20:00Z",
+            "title": "Buy two dozen",
+            "body": "Nobody has ever regretted having too many of these. Arrived in a padded envelope which is the correct amount of packaging for gloves.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-15",
+          "p-14",
+          "p-19"
+        ]
+      },
+      {
+        "id": "p-17",
+        "catId": "c-hardware",
+        "name": "Roofing Screw, #10 x 1-1/2 in, Hex Washer Head, Bonded Washer, 250 ct",
+        "price": 26.95,
+        "was": 28.0,
+        "rating": 4.5,
+        "reviewCount": 42,
+        "blurb": "Two hundred fifty screws, 1-1/2 inch, hex washer head with a bonded EPDM washer. Galvanized, in eight colours to match panel.\n\n[b]Drive them until the washer squashes and then stop.[/b] Every leaking metal roof in this county is either a screw run down too far or a screw in the flat instead of the rib, and half of those are ours from the 1990s.",
+        "bullets": [
+          "250 ct, #10 x 1-1/2 in, bonded washer",
+          "Colours: galvanized, white, brown, green, red, tan, black, burgundy",
+          "Bring a scrap of panel and we will match it. Photos on a phone do not match",
+          "1,000 ct bucket $92.00"
+        ],
+        "imgSeed": "roofscrew-250ct",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "r_tillotson",
+            "stars": 5,
+            "at": "2026-07-09T15:40:00Z",
+            "title": "Colour matched off a scrap",
+            "body": "Took a six inch offcut in, guy held it against the card, got it in one. Ordered the rest online that night and they were in the pickup locker by noon.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 6120",
+            "stars": 5,
+            "at": "2026-09-05T03:15:00Z",
+            "title": "Great quality fasteners",
+            "body": "Great quality fasteners at a great price. They arrived in two days and were well packaged. The seller was responsive and helpful. I will be ordering more for my next project.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 6121",
+            "stars": 5,
+            "at": "2026-09-05T03:19:00Z",
+            "title": "Great quality fasteners",
+            "body": "Great quality fasteners at a great price. They arrived in two days and were well packaged. The seller was responsive and helpful. I will be ordering more for my next project.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "m_oyelaran",
+            "stars": 3,
+            "at": "2026-05-30T19:10:00Z",
+            "title": "Box came open",
+            "body": "Box arrived with a corner split and about thirty screws loose in the outer carton. Counted them out and it was all 250, so no harm, but I spent twenty minutes counting screws on my kitchen table like a lunatic.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-19",
+          "p-20",
+          "p-21"
+        ]
+      },
+      {
+        "id": "p-18",
+        "catId": "c-hardware",
+        "name": "Baler Twine, 9,000 ft, 170 lb Knot Strength, Two Spools per Bale",
+        "price": 44.5,
+        "was": 46.0,
+        "rating": 4.3,
+        "reviewCount": 22,
+        "blurb": "Nine thousand feet, 170 pound knot, UV treated, two spools in the bale.\n\nHay does not wait for a truck. If you are baling this week, call the store, do not order it on this page. The website will cheerfully quote you a delivery date in nine days and it does not know what the weather is doing.",
+        "bullets": [
+          "9,000 ft, 170 lb knot, 2 spools/bale",
+          "UV treated, and it still goes brittle if you leave it in the sun all summer",
+          "CALL FOR SAME DAY. 2 hour counter pickup during hay season",
+          "Net wrap by the roll, in store, ask"
+        ],
+        "imgSeed": "balertwine-9000",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "d_seavers",
+            "stars": 2,
+            "at": "2026-06-24T22:50:00Z",
+            "title": "Nine days",
+            "body": "Ordered on a Monday with rain forecast Thursday. Twine landed the following Wednesday. I borrowed twine from a neighbour, which is how this has always worked and how it apparently still works.\n\nTwine is good twine. Two stars is for the nine days.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "c_yearwood",
+            "stars": 5,
+            "at": "2026-06-27T08:05:00Z",
+            "title": "Called them instead",
+            "body": "Saw the review above on the Wednesday, called the store Thursday morning, had two bales in the truck by ten. The note on this page is not decoration.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "AutoLocal_Feed",
+            "stars": 5,
+            "at": "2026-08-12T05:00:00Z",
+            "title": "A trusted choice for Verity County producers",
+            "body": "When it comes to securing your harvest, local producers in Verity County know that quality matters. This baler twine offers the durability and reliability that the community has come to expect. Residents interested in learning more about agricultural trends in the region can read our full coverage.\n\nVisit our site for more local content.",
+            "verified": false,
+            "kind": "bot"
+          }
+        ],
+        "alsoBought": [
+          "p-19",
+          "p-13",
+          "p-17"
+        ]
+      },
+      {
+        "id": "p-19",
+        "catId": "c-hardware",
+        "name": "Poly Tarp, 12 ft x 16 ft, Silver/Brown, 10 mil, Grommets 18 in",
+        "price": 27.99,
+        "was": 29.5,
+        "rating": 4.0,
+        "reviewCount": 55,
+        "blurb": "Twelve by sixteen cut size. The finished size is about 11'6\" by 15'6\" because that is how tarps are sold and always have been, by everyone, and we are not going to be the one store that lies the other direction.\n\nTen mil, silver one side, brown the other. Grommets every 18 inches.",
+        "bullets": [
+          "12 x 16 cut size, 11'6\" x 15'6\" finished",
+          "10 mil, silver/brown, rope reinforced hem",
+          "Grommets at 18 in",
+          "Two seasons outdoors, one season if it flaps. Tie it tight"
+        ],
+        "imgSeed": "tarp-12x16-silver",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "Verified Buyer 2219",
+            "stars": 5,
+            "at": "2026-09-14T04:25:00Z",
+            "title": "Excellent product, fast delivery",
+            "body": "Item arrived quickly and was exactly as described. The packaging was excellent and the seller communicated well throughout. Quality is excellent for the price and I would not hesitate to order again from this store.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "j_roeder",
+            "stars": 3,
+            "at": "2026-04-18T16:15:00Z",
+            "title": "It is not twelve by sixteen",
+            "body": "It is not twelve by sixteen. The page says so, in the description, before you buy it, and I did not read the description.\n\nThree stars and both of them are mine to keep.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "b_ruddick",
+            "stars": 4,
+            "at": "2026-08-31T10:44:00Z",
+            "title": "Came in a padded envelope the size of a loaf of bread",
+            "body": "Genuinely impressive folding. Took me forty minutes to get it back to a shape that fits in the shed.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-17",
+          "p-18",
+          "p-20"
+        ]
+      },
+      {
+        "id": "p-23",
+        "catId": "c-hardware",
+        "name": "USB to RS232 Serial Adapter Cable DB9 FTDI Chipset 3 PACK Windows Mac Linux Industrial Grade",
+        "price": 8.99,
+        "was": 39.99,
+        "rating": 4.8,
+        "reviewCount": 3164,
+        "blurb": "[b]3 PACK — 77% OFF — BEST SELLER IN ITS CATEGORY[/b]\n\nGenuine FTDI chipset USB to RS232 serial adapter for industrial equipment, controllers, meters, CNC, PLC and console applications. Gold plated DB9 connector. Supports Windows, Mac and Linux with no driver installation required.\n\nShips direct from supplier, 11 to 21 business days.",
+        "bullets": [
+          "FTDI chipset (marked FT232RL)",
+          "DB9 male, 3 ft cable, 3 pack",
+          "Plug and play, no driver needed",
+          "Industrial grade shielding"
+        ],
+        "imgSeed": "usbserial-3pack",
+        "seller": "AURIXLINK DIGITAL GLOBAL",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "dwiles",
+            "stars": 1,
+            "at": "2026-09-06T09:35:00Z",
+            "title": "Three fakes. I bought them so I could stop arguing about it.",
+            "body": "Nine dollars for three FTDI cables. FTDI do not sell the chip for three dollars, so one of those two numbers is a lie and it is not the nine.\n\nAll three enumerate. All three drop characters above 19200 and two of them re-enumerate if you hold a break. The die is a clone behind FT232RL markings and the markings sit crooked on the package, which is the tell every time.\n\nPay the twenty two dollars once. I fix the machines that get fixed by that decision and I am tired of the other kind. [url=synth://gridfall-help.chat/]We have had this conversation eleven times in #hardware.[/url]",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 3307",
+            "stars": 5,
+            "at": "2026-09-15T03:50:00Z",
+            "title": "Works perfectly with my equipment",
+            "body": "Works perfectly with my equipment and installed in seconds with no driver needed. Great value for a three pack and the cable feels well made. Shipping was faster than expected. Would buy again.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 3308",
+            "stars": 5,
+            "at": "2026-09-15T03:54:00Z",
+            "title": "Works perfectly with my equipment",
+            "body": "Works perfectly with my equipment and installed in seconds with no driver needed. Great value for a three pack and the cable feels well made. Shipping was faster than expected. Would buy again.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "wpennock",
+            "stars": 1,
+            "at": "2026-09-17T19:30:00Z",
+            "title": "The real one passes break. This does not.",
+            "body": "Bought the twenty two dollar one instead on the strength of the review above and it passes break at 9600 8-N-1, held 300 ms, controller answers first try.\n\nI had spent six weeks thinking the controller was dying. It was a cable. It is almost always a cable.\n\nOne star is not for the seller, who will not read it. It is for the store letting a counterfeit sit in their fastener aisle under their own name.",
+            "verified": false,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-05",
+          "p-22",
+          "p-17"
+        ]
+      },
+      {
+        "id": "p-20",
+        "catId": "c-winter",
+        "name": "Roof Rake, Aluminium, 21 ft Reach, 24 in Blade, Three Sections",
+        "price": 63.0,
+        "was": 68.0,
+        "rating": 4.2,
+        "reviewCount": 37,
+        "blurb": "Twenty-one feet of reach in three sections, 24 inch blade with poly glides so you do not tear the shingles off with the snow.\n\nBuy it in September. In February we have none and neither does anyone within sixty miles, and you will be on a ladder in the dark, which is the thing this tool exists to stop you doing.",
+        "bullets": [
+          "21 ft reach, three sections, 24 in blade",
+          "Poly glides fitted, spares $8.40 a pair",
+          "Ships in two cartons and they do not always arrive together",
+          "Not for use near a service drop. Call [url=synth://vvpl.news/]the utility[/url] before you clear near a line"
+        ],
+        "imgSeed": "roofrake-21ft",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [
+          {
+            "by": "kfennimore",
+            "stars": 4,
+            "at": "2026-01-24T19:02:00Z",
+            "title": "Arrived in two boxes a day apart",
+            "body": "The first box had the head and one section. For about twenty-six hours I owned a roof rake that could reach seven feet, which is a ladder with extra steps.\n\nThe second box came Tuesday and since then it has been a perfectly good roof rake. It pulled about four feet of snow off the north side of the library annex and the blade did not mark the shingles.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 5513",
+            "stars": 5,
+            "at": "2026-09-12T02:30:00Z",
+            "title": "Great gift, arrived early",
+            "body": "Bought this for my husband and he uses it every single day. Very sturdy and very well made. Great value for money and it arrived before the estimated date. Highly recommend to anyone considering this purchase.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "s_marchetti",
+            "stars": 3,
+            "at": "2026-02-14T13:50:00Z",
+            "title": "Bends at the second joint",
+            "body": "At full extension with wet snow on it, the second joint flexes enough to make you nervous. It has not failed. I have just stopped extending it all the way, which means I own an eighteen foot roof rake.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-21",
+          "p-12",
+          "p-19"
+        ]
+      },
+      {
+        "id": "p-21",
+        "catId": "c-winter",
+        "name": "Portable Generator, 5,500 Running Watts / 6,875 Starting, 120/240V, Recoil Start",
+        "price": 649.0,
+        "was": 699.0,
+        "rating": 4.1,
+        "reviewCount": 88,
+        "blurb": "[b]BE READY BEFORE THE NEXT OUTAGE.[/b]\n\nVerity County residents know how quickly the power can go. When lightning struck the Gridfall substation in 2004, thousands of local residents were left in the dark for up to a week, and the community came together in a way that local officials described as remarkable. A standby generator ensures that your family is never caught unprepared again.\n\nThis product description was generated from regional news coverage.",
+        "bullets": [
+          "5,500 running W / 6,875 starting W, 120/240V, 30A twist-lock",
+          "Recoil start. There is no electric start on this model whatever the photo shows",
+          "SELLER NOTE: the paragraph above is not ours. It is wrong and we cannot delete it. The fire was June 2003 and it was not lightning. See the [url=synth://wiki.gridfall.net/]wiki[/url]",
+          "Transfer switch is an electrician's job and we do not sell one that is not",
+          "Do not run it in a garage, a porch, a breezeway, or anywhere you would stand"
+        ],
+        "imgSeed": "generator-5500w",
+        "seller": "County Supply Co. (Marchfield)",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "wpennock",
+            "stars": 4,
+            "at": "2026-09-05T14:22:00Z",
+            "title": "Sizing, and the paragraph at the top of this page",
+            "body": "The generator is fine. 5,500 running is enough for a furnace blower, a fridge, a well pump and lights if you do not ask for them all at once. A half horse submersible is about 1,000 running and 2,400 on start. A gas furnace blower is 600. A 4,500 watt water heater element is not going on this and you should stop planning for it now.\n\nOn the paragraph at the top of the page:\n\nSubstation No. 3 went at 4:52 a.m. on 11 June 2003. Not 2004. 4,100 customers out, some for five days. The state commission summary in November 2003 is two pages and gives the cause as insulation degradation consistent with age. It does not say lightning. Verity Valley has never released the internal report.\n\nNo one died. Two of the Gridfall volunteers were treated at County General for smoke and released the same afternoon.\n\nI have sent this to the store and they told me they cannot edit that box. I believe them. I am putting it here instead.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Buyer 9014",
+            "stars": 5,
+            "at": "2026-09-11T02:40:00Z",
+            "title": "Peace of mind for my family",
+            "body": "Peace of mind for my family at last. Started on the second pull and ran our whole house during the storm last month. Every household in the area should own one of these given the history. Excellent value and fast delivery.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "gridline_digest",
+            "stars": 5,
+            "at": "2026-09-13T06:00:00Z",
+            "title": "Related coverage: 2004 Gridfall substation lightning event",
+            "body": "Readers evaluating backup power options may wish to review our coverage of the 2004 lightning strike at the Gridfall substation, which left thousands without service and resulted in two fatalities according to local reports.\n\n[url=synth://now.verityledger.com/]Read the full story[/url].",
+            "verified": false,
+            "kind": "bot"
+          },
+          {
+            "by": "e_brightwater",
+            "stars": 3,
+            "at": "2026-03-08T21:30:00Z",
+            "title": "Freight, and then a pallet in my driveway",
+            "body": "Two hundred and ten pounds on a pallet, curbside, in March, at the bottom of a grade. The driver was polite and completely immovable about the grade, which I understand.\n\nIt took three of us and a come-along. The generator has been excellent since. The day it arrived was not.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "STORM-PREP-ALERT",
+            "stars": 5,
+            "at": "2026-09-01T04:11:00Z",
+            "title": "GRID COLLAPSE WARNING — SAME UNIT $189",
+            "body": "Experts warn the county grid will fail this winter. Do not be unprepared!! Same 5500W unit $189 shipped, government surplus allocation, claim yours at [url=synth://gridready-surplus.powerdeal.top/]gridready-surplus[/url] before the list closes.",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-22",
+          "p-20",
+          "p-12"
+        ]
+      },
+      {
+        "id": "p-22",
+        "catId": "c-winter",
+        "name": "PORTABLE POWER STATION 2400W SOLAR GENERATOR Home Backup Emergency Outdoor Camping LiFePO4 (BLACK)",
+        "price": 59.99,
+        "was": 899.0,
+        "rating": 4.9,
+        "reviewCount": 26703,
+        "blurb": "[b]LIMITED STOCK — 93% OFF — 41 PEOPLE ARE VIEWING THIS ITEM[/b]\n\nPowerful 2400W portable power station with LiFePO4 battery technology for home backup and outdoor use. Charge up to 12 devices simultaneously. Perfect for camping, emergencies, power outages and off grid living. Safe, silent and maintenance free.\n\nShips direct from supplier, 12 to 24 business days.",
+        "bullets": [
+          "2400W peak output (peak)",
+          "LiFePO4 battery technology",
+          "12 outputs including AC, USB-A, USB-C and car socket",
+          "Solar panel not included, solar charging cable not included, manual not included"
+        ],
+        "imgSeed": "powerstation-2400",
+        "seller": "SUNVOLTA HOME ENERGY GLOBAL",
+        "sellerKind": "dropship",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Verified Buyer 4401",
+            "stars": 5,
+            "at": "2026-09-18T02:05:00Z",
+            "title": "Lifesaver during the outage!!",
+            "body": "Lifesaver during the outage!! Kept our fridge and phones running all night with no problem at all. Charges very fast and is silent. Every family should have one of these for emergencies. Excellent seller!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 4402",
+            "stars": 5,
+            "at": "2026-09-18T02:09:00Z",
+            "title": "Lifesaver during the outage!!",
+            "body": "Lifesaver during the outage!! Kept our freezer and phones running all night with no problem at all. Charges very fast and is silent. Every family should have one of these for emergencies. Excellent seller!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "Verified Buyer 4403",
+            "stars": 5,
+            "at": "2026-09-18T02:12:00Z",
+            "title": "Lifesaver during the outage!!",
+            "body": "Lifesaver during the outage!! Kept our router and phones running all night with no problem at all. Charges very fast and is silent. Every family should have one of these for emergencies. Excellent seller!!",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "n_barrows",
+            "stars": 1,
+            "at": "2026-08-22T18:48:00Z",
+            "title": "266 watt hours",
+            "body": "The label on the back says 266Wh. Not 2400. 2400 is a number printed on the front in a larger font next to the word PEAK.\n\n266 watt hours will run a chest freezer for about twenty minutes. Nineteen days to get here from wherever it got here from.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "a_delph",
+            "stars": 1,
+            "at": "2026-09-09T12:15:00Z",
+            "title": "Third party seller, not the store",
+            "body": "Same as the fence charger. This is not County Supply's stock. It shows up under their name and their return counter cannot take it back, which I found out standing at their return counter.\n\nThe kid behind it apologised to me for eight minutes for something that was not his fault.",
+            "verified": true,
+            "kind": "human"
+          }
+        ],
+        "alsoBought": [
+          "p-05",
+          "p-21",
+          "p-20"
+        ]
+      }
+    ]
+  }
+}

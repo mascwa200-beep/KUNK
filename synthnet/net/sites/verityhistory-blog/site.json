@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "domain": "verityhistory.blog",
+  "title": "Verity County History",
+  "type": "blog",
+  "era": "2026",
+  "skin": "kubrick-blue",
+  "description": "A monthly local history blog by Marjorie Hoberg, a retired title abstractor in Gridfall. Every claim is cited to a document, with its date and its page. It is the best-sourced site in the county and almost nobody reads it.",
+  "tags": [
+    "history",
+    "records",
+    "deeds",
+    "gridfall",
+    "sources",
+    "locals"
+  ],
+  "links": [
+    "ashkettle.gov",
+    "ashkettle-wx.net",
+    "ashkettlevfd.org",
+    "boards.gridfall.net",
+    "carrowwireless.com",
+    "coyneflats.org",
+    "forums.verityrail.org",
+    "gridfallhost.net",
+    "gridline.social",
+    "kestrel-journal.net",
+    "marchfield-coop.com",
+    "marchfieldlibrary.blog",
+    "milbrookgazette.com",
+    "quarrycut.net",
+    "thequarry.news",
+    "tnorris.verity.net",
+    "verity.wiki",
+    "verityclerk.gov",
+    "verityledger.com",
+    "verityrail-preservation.org",
+    "wiki.gridfall.net"
+  ],
+  "data": {
+    "author": "Marjorie Hoberg",
+    "tagline": "One post a month. Every fact has a document behind it, named, with the date and the page.",
+    "about": "Local history for Verity County, written by Marjorie Hoberg, who searched title in this county for thirty-six years and retired in 2017.\n\nOne post a month. The rule is that every statement of fact here has a document behind it and the document is named, with its date and with where you can go and read it. Where I do not have one I say so in the sentence.\n\nI do not write about the radio on 62. There are honest logs and a stated method at [url=synth://quarrycut.net/radio]quarrycut.net[/url] and nothing I could add to them.\n\nCorrections go at the top of the post they correct, with the date, and they stay there. Telephone or use the comment box. I read all of them.\n\nThe documents are mostly at the county clerk's counter, 14 Depot Street, Gridfall, ground floor, Monday to Thursday; on the microfilm at Marchfield, which [url=synth://marchfieldlibrary.blog/]the library[/url] is still scanning; and in the paper's own archive of 1998 to 2008 at [url=synth://verityledger.com/]verityledger.com[/url].\n\nNine dollars a month at Gridfall Host. No advertising, ever.",
+    "blogroll": [
+      {
+        "label": "Verity County Clerk - fees, forms and what is on film",
+        "href": "synth://verityclerk.gov/"
+      },
+      {
+        "label": "Marchfield Public Library - Notes from the Reference Desk",
+        "href": "synth://marchfieldlibrary.blog/"
+      },
+      {
+        "label": "The Gridfall Ledger, 1998-2008 (unmaintained, and the clean copy)",
+        "href": "synth://verityledger.com/"
+      },
+      {
+        "label": "The Quarry Cut on Route 62 - Ray Sabo, last updated 2009",
+        "href": "synth://quarrycut.net/"
+      },
+      {
+        "label": "Kestrel Road Weather Station - readings to 2011",
+        "href": "synth://ashkettle-wx.net/"
+      },
+      {
+        "label": "Thomas Norris, county surveyor, retired - the 1994 flood",
+        "href": "synth://tnorris.verity.net/"
+      },
+      {
+        "label": "Coyne Flats Community Association - the depot and the freight books",
+        "href": "synth://coyneflats.org/"
+      },
+      {
+        "label": "Verity Rail Preservation Society - the accession list",
+        "href": "synth://verityrail-preservation.org/"
+      },
+      {
+        "label": "forums.verityrail.org - last human post 2013, and irreplaceable",
+        "href": "synth://forums.verityrail.org/"
+      },
+      {
+        "label": "The Gridfall boards, 2001 onward",
+        "href": "synth://boards.gridfall.net/"
+      },
+      {
+        "label": "The Gridfall Wiki - not edited since 2008",
+        "href": "synth://wiki.gridfall.net/"
+      },
+      {
+        "label": "Verity Wiki - the successor, and where the citations are",
+        "href": "synth://verity.wiki/"
+      },
+      {
+        "label": "The Milbrook Gazette - stopped 27 October 2016, site still up",
+        "href": "synth://milbrookgazette.com/"
+      },
+      {
+        "label": "kestrel journal - Marion Teale's, not updated since 2019",
+        "href": "synth://kestrel-journal.net/"
+      },
+      {
+        "label": "The Quarry - Ruth Cannady, who publishes the documents",
+        "href": "synth://thequarry.news/"
+      },
+      {
+        "label": "Verity County Historical Society (their page, such as it is)",
+        "href": "synth://verityhistorical.synth/"
+      }
+    ],
+    "posts": [
+      {
+        "id": "what-this-is",
+        "title": "What this is going to be",
+        "date": "March 9, 2025",
+        "tags": [
+          "about",
+          "sources"
+        ],
+        "body": "My name is Marjorie Hoberg. I searched title in this county for thirty-six years, first for Kerrin Abstract and Title, which was in Gridfall and never was in Kerrin, and after 2009 for the Bowes City firm that bought it. I retired in June 2017 and I have been going back to the same counter about twice a week ever since, which my daughter thinks is funny and is.\n\nWhat an abstractor does is take a piece of ground and follow it backwards through the record until the record stops, writing down every instrument that touched it with the book, the page and the date. It is not clever work. It is looking things up in order and not skipping any. Nobody is paid to do it for anything except land, so I am going to do it for some other things.\n\n[b]One post a month, and one rule.[/b] Every statement of fact here has a document behind it, named, with its date and with where you can go and read it. Where I do not have one I will say so in the sentence.\n\nThree things I am not going to write about: the radio out on 62, because there are six years of honest logs and a stated method at [url=synth://quarrycut.net/radio]Ray Sabo's page[/url] and I have nothing to add to them; finding a living person for somebody who wants to be put in touch; and the address or parcel of anybody who is alive, most of which is public and none of which is going here.\n\n[b]Where the documents are.[/b] The clerk's counter at 14 Depot Street, Gridfall, ground floor, Monday to Thursday, and the records room in the basement by appointment. The microfilm reader at the same counter, free, with a typed reel list on the cabinet. The Ledger on microfilm at Marchfield, which [url=synth://marchfieldlibrary.blog/]Karen Fennimore[/url] is scanning a page at a time. The historical society on Depot Street, Thursday afternoons. The paper's own archive of 1998 to 2008, which is still standing at [url=synth://verityledger.com/]verityledger.com[/url] and is the only clean copy of that decade.\n\nComments are open. If you find an error, say so here or telephone me, and the correction goes at the top of the post it corrects, with the date on it, and stays there. A correction quietly swapped into the sentence is not a correction.\n\nThis site costs nine dollars a month at [url=synth://gridfallhost.net/]Gridfall Host[/url] and twenty-six dollars a year for the name. I mention it so that nobody has to wonder who is paying for it.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "March 10, 2025 at 8:15 am",
+            "body": "Welcome. Two things.\n\nThe reel list on the cabinet at the clerk's is not the same as the list at this library, and neither is complete. If you want a year and it is not on theirs, telephone the reference desk and I will look on ours before you drive over.\n\nAnd the 1911 to 1998 Ledger is scanned into the autumn of 1958 as of Thursday. Anything you want from before that, ask and I will tell you the reel."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "March 10, 2025 at 3:04 am",
+            "body": "Thank you for launching this valuable new resource for the Verity County community. Local history is an important part of what makes a community unique, and residents will appreciate having access to well-researched information about the region's past. Verity County has a rich heritage including agriculture, rail transportation and manufacturing. Readers interested in learning more about Verity County history are encouraged to explore additional resources. Source: VerityPulseAI."
+          }
+        ]
+      },
+      {
+        "id": "quarry-owner-by-owner",
+        "title": "The Ashkettle quarry, owner by owner",
+        "date": "April 13, 2025",
+        "tags": [
+          "quarry",
+          "ashkettle",
+          "deeds",
+          "records"
+        ],
+        "body": "Two sources people reasonably trust give two different dates for the quarry at Ashkettle.\n\nThe Village's own page says the village grew up around a quarry that cut building limestone from 1884 until 1958. See [url=synth://ashkettle.gov/s/welcome]ashkettle.gov[/url]. Ray Sabo's page, which is the best thing anybody has written about that ground, gives 1911, two men and a horse derrick. See [url=synth://quarrycut.net/quarry]quarrycut.net[/url].\n\nBoth are right, about two different holes, six tenths of a mile apart.\n\nWhat follows is the chain of title for the big hole, the one north of the road. It comes from the grantor and grantee indexes and the deed books at the clerk's counter. Everything before 1912 is in the bound index and on film; 1912 forward is on the terminal. Parcel 14.-1-22.1, Ashkettle township, 61.3 acres, assessed at $9,400.\n\n[b]The farm.[/b] The ridge was the north end of the Wenzel farm, 160 acres, in that family from 1868. Deed book 9, page 412, 14 November 1868, Hiram Beeks to Anton Wenzel, $1,900.\n\n[b]1884, the small hole.[/b] On 5 May 1884 Anton Wenzel sold two acres on Ashkettle Creek to the Town of Ashkettle for $150. Deed book 24, page 55. The description calls it \"the stone lot.\" That is the town quarry, it is behind what is now the village park, it supplied foundation stone and road metal, it was worked by whoever the town paid that year, and it went out of use about 1906. It is the 1884 on the Village's page. It is not the hole anybody means today and it is about the size of a house lot.\n\n[b]1911, the big hole.[/b] Otto Wenzel, Anton's son, sold 43.5 acres of the ridge to the Ashkettle Stone Company for $3,200 on 12 June 1911. Deed book 41, page 288. The company was incorporated the same month by Otto Wenzel, C. E. Speltz of Gridfall and Martin Doak of Marchfield. A further 17.8 acres came in from the Doak farm in 1922, deed book 52, page 170, which is where the 61.3 acres comes from.\n\n[b]1919.[/b] Mortgage book 33, page 119, $7,600 to the First National Bank of Gridfall, secured on the plant. That is the steam drill and the crusher, and it is the year the business stopped being a stone quarry and became an aggregate pit, which is what Ray Sabo says and the mortgage is why I can say it with a date.\n\n[b]1923 to 1932.[/b] The lime kiln in the woods at the north end. It is not in the deeds because a kiln is not an instrument. It is in the tax roll as an improvement from 1924, and out of the tax roll in 1933, which puts the cold year at 1932 and agrees with him.\n\n[b]1937.[/b] The county took a strip across the south end for the relocation of County Route 62. Deed book 77, page 12, $2,400 and a haul road. The quarry then sold the county the stone for the road that was built through its own ground, which is in the commissioners' minutes of 6 April 1937 as an award of $11,880.\n\n[b]1946.[/b] Ashkettle Stone Company to Verity Stone and Lime Company, 1 March 1946, deed book 96, page 501, $71,000. Verity Stone and Lime was incorporated in 1945 with its office in Ardo. From that date the money leaves the county and the payroll stays, which is the ordinary shape of this and not a scandal.\n\n[b]1958.[/b] Last shipment 31 October 1958. The company kept the land.\n\n[b]1962.[/b] Verity Stone and Lime was dissolved in 1961 and a receiver was appointed. On 7 August 1962 the receiver conveyed the parcel to Meineke Brothers Trucking Company of New Carrow for $18,500. Deed book 118, page 77. They wanted the crusher, the scale house, the shop and the rail of the siding. They took all four out in 1963 and 1964 and kept the ground because nobody wanted it.\n\n[b]1988.[/b] Meineke Brothers was dissolved on 30 December 1988 and the parcel went to Ervin Meineke individually. Deed book 176, page 203.\n\n[b]1997.[/b] Ervin Meineke died. The parcel passed to his wife Vivian by survivorship, which means there is no deed, which means a search of the recorded instruments alone shows the last transfer as 1988. Three of the four online listings I have looked at show exactly that.\n\n[b]2014.[/b] Vivian Meineke died on 4 March 2014. The estate was opened and it has not been closed. Since then the tax bill has gone to the estate at an address in New Carrow, and the tax has been paid, in full and on time, every year, $412 in 2024.\n\n[b]So there is nobody to ask.[/b] Ray Sabo wrote that the family are in New Carrow and do not answer letters, which is a fair account of what happened to him and not an account of why.\n\nAn estate that has not been distributed has no owner in the ordinary sense. An executor can pay a tax bill and insure a fence and cannot give a stranger permission to walk onto eighty feet of unfenced rock, so anybody sensible in that position does not answer that letter. The Village is right when it says on its page that it cannot give permission either.\n\n[b]What this hole is not.[/b]\n\n[list][*]It is not the road cut. The cut is where 62 was put through the nose of the ridge in 1937, it is inside the county right of way, and you may stand in it. That is the county's ground and always has been.[*]It is not the Quarry Road pit at Gridfall. Different parcel, different owner, eleven miles west, and that is the one that loaded stone onto the branch line until 2008 and onto trucks after that.[*]It is not whatever pit the blasting complaints of 2016 were about. Eight households on Brill Road filed with the state over four shots, and the operator's answer, the seismograph readings and the reclamation permit are all in the Milbrook Gazette of that autumn. See [url=synth://milbrookgazette.com/article/quarry-blasting]the Gazette[/url]. Whatever that pit is, it is not this one, because nothing has been shot on this parcel since 1958 and no permit has been held on it since the company that held one was dissolved in 1961.[/list]\n\nI would have asked the Gazette which pit they meant. The Gazette stopped in October 2016.",
+        "comments": [
+          {
+            "author": "R. Sabo",
+            "time": "April 14, 2025 at 7:02 pm",
+            "body": "I ran the materials shed for that county for twenty-four years and I never once thought to look in the deed books, which is embarrassing at seventy-six.\n\nThe 1937 award of $11,880 settles an argument I had with a man in 1996. He is dead, so I will take it as a draw.\n\nThe small hole on the creek I knew about and did not connect to the Village's date. That is mine to fix on my page and I will, although I have not touched those files since 2009 and the program I built them in is on a machine in the cellar."
+          },
+          {
+            "author": "Cheryl Mondt",
+            "time": "April 16, 2025 at 9:40 am",
+            "body": "I am on Brill Road. Our chimney cracked between 2011 and 2014 and I have never been told what did it. If you are saying the pit they were shooting in is not the old quarry, then which one is it, because the letters we got said the quarry cut."
+          },
+          {
+            "author": "Marjorie Hoberg",
+            "time": "April 16, 2025 at 2:20 pm",
+            "body": "I do not know, and I am not going to guess at a company's permit from my kitchen table.\n\nWhat I can tell you is how to find out in an afternoon, because the permit is public. The state mine safety and reclamation office holds the file, indexed by operator and by parcel. Ask for it by the operator's name and read the map bound into it, which gives the parcel numbers, and the parcel numbers are on the terminal at the clerk's counter.\n\nIf you want company for that, telephone me. I have nothing on Thursdays."
+          },
+          {
+            "author": "AutoLocal Verity",
+            "time": "April 15, 2025 at 4:12 am",
+            "body": "[b]Historic Ashkettle Quarry Draws Renewed Interest From Local History Enthusiasts[/b]\n\nThe historic quarry in Ashkettle, which operated from 1884 until its closure in the 1950s, continues to attract interest from residents and visitors. Local officials say the site remains private property. For more local stories, subscribe to our newsletter."
+          }
+        ]
+      },
+      {
+        "id": "who-the-branch-hauled-for",
+        "title": "Who the branch line hauled for",
+        "date": "May 11, 2025",
+        "tags": [
+          "railroad",
+          "records",
+          "marchfield",
+          "coyne flats"
+        ],
+        "body": "There is a great deal written about the last train and almost nothing about the hundred and nine years of trains in front of it. This is a list of who the branch billed, taken from four sets of paper.\n\n[b]The sources, first, because they are the post.[/b]\n\n[list][*]The 1918 valuation of the Verity and Ardo Railway made by the state commission. Sheet 14 lists every industry with a siding, by name, with the length of the siding in feet. The historical society has a photostat; the original is at the state.[*]The agency's freight received and forwarded books from the Coyne Flats depot, 1921 to 1958, eleven volumes, held by the Coyne Flats Community Association in the case in the hall. See [url=synth://coyneflats.org/depot]their depot page[/url], which is where I learned they existed.[*]The company's annual reports to the state commission, which give carloads originated and terminated by station and the number of shippers billed. The county library at Marchfield has 1922 to 1979 on film in a mixed reel.[*]The abandonment application of August 2005, Exhibit C, which is traffic by commodity by year for 2000 to 2004. The county's copy is in the file the commissioners kept and a photocopy is $0.15 a page after the first fifty.[/list]\n\n[b]1899 to 1920.[/b] The line was built in 1899 to serve the tannery and the grist mills at Gridfall, which the wiki has right. The 1918 sheet lists thirty-one sidings. The tannery took hides and bark in and sent leather out and was the largest by a distance. The two mills at Gridfall took wheat in and sent flour out. Coal came in for everybody, to four dealers and to the municipal light plant at Gridfall. There was a creamery at Marchfield, a brick works at Coyne Flats that lasted nine years, and a seasonal packing house at Coyne Flats that took peas and sweet corn in August and September and stood idle the rest of the year.\n\n[b]1920 to 1955.[/b] The annual reports give the count of shippers billed. Thirty-one in 1918. Twenty-two in 1948. The brick works went in 1927. The creamery went in 1951 when the milk went onto trucks, which is the year it went onto trucks nearly everywhere. The Marchfield Farmers Cooperative built at its present location in 1937 and shipped grain out and took fertiliser and feed in, and used the freight room at the Marchfield house until 1974, when it put up its own building on the far side and did not need it. That is on [url=synth://marchfield-coop.com/]their own page[/url] and I have not improved on it.\n\n[b]1955 to 1980.[/b] Nine shippers billed in 1968. Coal to the municipal plant ended in 1971. Aggregate from the Quarry Road pit at Gridfall became the largest single commodity and stayed that way for the rest of the line's life. The Ashkettle quarry, which people assume was the stone customer, had stopped in 1958 and its siding came out in 1964.\n\n[b]1980 to 2001.[/b] Four shippers billed in 1988. The tannery closed in 1987 and that traffic ended with it. The fastener plant at Pell took about two cars a month. Exhibit C shows the last billed carload to Pell moving on 9 February 2001. Plant management said at the time that the service window had become unreliable and the railroad said the volume no longer justified the switch, and both statements are in the file and they do not fit together.\n\n[b]2001 to 2008.[/b] One shipper. Exhibit C for 2004 has a single line on it. After February 2001 every revenue car on this branch was crushed stone, and the last one ran on 14 March 2008.\n\n[b]The number I would put on a plaque, if anybody wanted one.[/b] Thirty-one shippers in 1918, one in 2004. Nothing dramatic happened in between. Each one went for its own reason and in its own year and every reason was a good one at the time.\n\nThe freight books at Coyne Flats are the best of the four sources and the hardest to use. They are by date, not by customer, and a customer appears as an abbreviation and a car number, so to find one shipper you read the year.\n\nThe enthusiast board at [url=synth://forums.verityrail.org/]forums.verityrail.org[/url] has photographs of eleven of these sidings and is, by a wide margin, the best documentation of this line that exists. Its last human post was in 2013. It is one installation of message board software from 2004 on a hosting account nobody has answered an email about since 2019, and if it goes, what goes with it is not recoverable from any of the four sources above.",
+        "comments": [
+          {
+            "author": "Verl Stelzer",
+            "time": "May 13, 2025 at 11:05 am",
+            "body": "I was a clerk in the Depot Street office from 1959 to 1974 and this is the first time I have seen it set out.\n\nOne thing. The packing house at Coyne Flats did not take peas after 1954. I know because the last two Augusts I worked there were quiet and the reason given was that the cannery at Bowes City had the contract. It closed for good later, I cannot tell you the year.\n\nThe creamery I will not argue with. 1951 sounds right."
+          },
+          {
+            "author": "tie_plate_47",
+            "time": "May 14, 2025 at 8:48 pm",
+            "body": "Posting here because the board is dead and somebody should say it somewhere.\n\nThe 1918 valuation sheets also exist as a set of blueprints showing each siding with its switch and clearance point. I photographed sheet 14 in 2006 and the file is on a drive in my brother's house. If the society wants a copy I will make one. I have offered before, in a thread, and the thread is still there and nobody replied to it."
+          },
+          {
+            "author": "gridline_digest",
+            "time": "May 12, 2025 at 1:30 am",
+            "body": "Submitted to Gridline. Verity County Rail History: A Complete Guide To The Marchfield Branch And Its Industrial Customers. 0 points, 0 comments. See [url=synth://gridline.social/]gridline.social[/url] for discussion."
+          }
+        ]
+      },
+      {
+        "id": "courthouse-fire-1953",
+        "title": "The courthouse fire of February 1953",
+        "date": "June 8, 2025",
+        "tags": [
+          "courthouse",
+          "1953",
+          "records",
+          "gridfall"
+        ],
+        "body": "The sentence you will read online is that the county's records burned in 1953. I have read it on a question site, in a generated guide, and twice out of the county's own automated assistant, which told a woman in March that \"many pre-1953 records were lost in the courthouse fire and are not recoverable.\"\n\nThere was a fire. It was serious. It did not burn the records, and the reason it did not is a vault built in 1877 by men who had read about other courthouses.\n\n[b]What happened.[/b] Fire was found in the third floor of the courthouse at 14 Depot Street at about 2:40 in the morning on Wednesday 18 February 1953. Gridfall's department had it stopped by first light and worked it until eleven. The third floor and the roof were destroyed. The second floor was ruined by water. The ground floor took smoke and water and was back in use on 9 March.\n\nSource: the Ledger of Friday 20 February 1953, page one, five columns and two photographs. Also 24 February page one, 27 February page three, and 10 March page five. All four are on microfilm at Marchfield, reel 152, and scanned.\n\n[b]What burned.[/b] The circuit court room, the judge's chambers, the grand jury room, the attic above them, and the tower. The clerk of court's older files were kept in a wooden press in the third floor corridor and those are gone: civil and criminal case papers filed between 1877 and 1952, less what had been taken down to the vault. The county superintendent of schools lost the district reports for 1901 to 1952, which is why the school histories of this county all start in 1953 and nobody ever says why.\n\n[b]What did not burn.[/b] The vault on the ground floor, which held and still holds the land records from 1841, the commissioners' minutes from 1903, the marriage records from 1889, the assumed name certificates and the election canvass books. The fire marshal's report notes that the vault door was found closed, which was the night man's doing and is the only thing in the file that reads like praise.\n\nThose are exactly the records the clerk's office holds today and they are complete for those years. See [url=synth://verityclerk.gov/s/land-records]the clerk's own page[/url]. If a website tells you the deeds burned in 1953, the deeds are on the terminal at that counter and you can look at the 1877 ones for nothing.\n\n[b]The cause.[/b] The state fire marshal filed on 11 April 1953. Origin in the attic over the court room. Most probable cause a defect in the wiring installed in 1919 to serve the tower clock. The report says \"most probable\" and does not say more, and I am not going to improve on a man who was there with the evidence in front of him.\n\n[b]The tower and the clock.[/b] Neither was rebuilt. The roof that went on in 1954 is flat across where the tower stood, which is why the courthouse does not look like its own photographs. Every picture of the building before 1953 has a tower with a clock in it and every picture after does not, and I have watched three people be told they were looking at two different buildings.\n\nThe clock movement was bought by a man named Ellison who had the jewellers on Mill Street and it was in his window until at least 1971. Where it is now I do not know. That is a real question and if anybody knows the answer I would like to print it.\n\n[b]What it cost.[/b] The insurance settled at $61,400. The roof and third floor contract was awarded to Gerhardt and Sons of the state capital at $88,750 on 5 May 1953. The difference came out of the bridge fund and was argued about for two years.\n\nThat award is in the commissioners' minutes for 1953, and here I have to be careful, because the 1953 minute book is not a minute book. It is a transcript typed in 1996 from what could still be read after the 1994 flood, it is marked as a transcript on every page, and in the line that should carry the contract sum the typist has put \"[illegible]\". I have the figure of $88,750 from the Ledger of 8 May 1953, page one, and not from the county.\n\nThat is worth its own post and it will get one.\n\n[b]Where the claim comes from.[/b] The school records, I think. Somebody in the sixties wanted a district report from 1938, was told it had burned, and told somebody else, and \"the school reports burned\" became \"the records burned\" over about forty years. Online it moves faster. The question-site answer that says it is from 2019, has been the accepted answer since eleven days after it was posted, and cites nothing.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "June 9, 2025 at 4:35 pm",
+            "body": "Reel 152, frames 1180 to 1196 for the week of 20 February, and the photographs on page one are the best images of the tower that exist because the paper had to go and find one from the file.\n\nThe 10 March piece you cite also carries the list of what the clerk of court asked lawyers to bring in from their own files to rebuild the case papers. Forty-one names. Some of it came back. That list is the finding aid for a collection that does not exist anywhere as a collection."
+          },
+          {
+            "author": "mod_dcarver",
+            "time": "June 10, 2025 at 7:20 am",
+            "body": "There is a thread from 2005 on the board where four people agree the deeds burned. Nobody who posted in it had been to the counter.\n\nI cannot edit a twenty year old thread and would not. I have put a link to this post in it, which puts it at the bottom of a page nobody loads. That is the tool I have."
+          },
+          {
+            "author": "hbrenner",
+            "time": "June 11, 2025 at 7:55 am",
+            "body": "I was told the records burned in 1953 by a county employee, on the telephone, in about 2011, when I was trying to establish something from 1948. I went to the counter anyway and the thing I wanted was in the vault.\n\nI did not write about it because it was not the story I was on. It has been sitting in the back of my head for fourteen years and now it is a post with four citations under it."
+          },
+          {
+            "author": "CountyWatch_AI",
+            "time": "June 9, 2025 at 2:11 am",
+            "body": "HISTORICAL: Fire reported at county government building, Depot Street, Gridfall. Structure fire, third alarm. Units on scene. This incident is listed as historical and no response is active at this time. Residents are advised to avoid the area. Source: scanner feed, reconstructed."
+          }
+        ]
+      },
+      {
+        "id": "sowerbys-1961-1978",
+        "title": "The Sowerbys, 1961 to 1978",
+        "date": "August 10, 2025",
+        "tags": [
+          "blue kestrel",
+          "deeds",
+          "records",
+          "1961"
+        ],
+        "body": "Nothing in July. I was in the assumed name books and had nothing finished.\n\nThis is a post about who ran the lunch counter that became the Blue Kestrel, for the seventeen years the same family ran it. It is not a post about where the building is or when it shut. I will come to both of those at the end and neither of them is settled by the papers I have.\n\n[b]The certificate.[/b] On Monday 3 April 1961, Harold J. Sowerby filed an assumed name certificate with the county clerk for the name KESTREL CREEK LUNCH. Assumed name book 6, certificate 11 of that year. The filing names Harold J. Sowerby as the sole proprietor, gives an address on Fenn Avenue as his residence, and gives the place of business as 214 Mill Street, Gridfall.\n\nAn assumed name certificate is $25 now and was $2 then. You file it when the sign says something other than your own name, so that a person who needs to sue you or pay you can find out who you are. It proves a name, a person and a date and nothing else, and for a small business in this county before about 1980 it is very often the only document that proves any of them.\n\n[b]Who he was.[/b] Harold Joseph Sowerby, 1919 to 1994. He cooked at the hotel in Halsey from 1946, which is in the 1950 census as \"cook, hotel,\" and he was thirty-nine when he started for himself. His wife Vera ran the counter with him. The notice of the opening is four lines in the Ledger of 14 April 1961, page eight, under Business Notes, and gives the hours as five in the morning to two in the afternoon and says the pie is by Mrs. Sowerby. That is the whole of the contemporary coverage of the opening of what became the most photographed business in this county.\n\n[b]1968.[/b] An amended certificate was filed on Monday 20 May 1968 changing the name to BLUE KESTREL. Same book, marginal notation on the 1961 entry, which is what the clerk's $12 marginal notation fee is for and always has been. The sign went up that year. The sign shop was in Ardo and closed in 1991. The county's sign permit file for 1968 gives the cost as $1,140, which was real money and was about eleven weeks of what the business took in on breakfast by the figures Vera Sowerby gave a Ledger reporter in 1972.\n\n[b]1974.[/b] The Sowerbys never owned the building. The freehold was Wilbur Haab's from 1948, and Haab's estate sold it on 28 June 1974 to Hollis Property Group of New Ardo for $24,000. Deed book 138, page 9. The rent went up in 1975 and the Ledger of 11 April 1975 has Harold Sowerby saying it was fair, which people who knew him say was the only public comment he ever made about money.\n\n[b]1978.[/b] Harold Sowerby sold the business, not the building, to Edward Dombrowski on Friday 1 September 1978. There is no deed for that, because a business is not land. What there is, is a discontinuance of the assumed name certificate in Sowerby's name and a new certificate in Dombrowski's, filed the same day, one after the other, numbers 27 and 28 in the 1978 book. Two entries in one hand on one afternoon, and that is a business changing hands.\n\nVera Sowerby died in 1981. Harold Sowerby died in 1994 and the obituary is in the Ledger of 4 November 1994, page six, and it says he ran a restaurant in Gridfall for seventeen years. It does not name it.\n\n[b]The two things I said I would come to.[/b]\n\nThe certificate of 1961 gives the place of business as 214 Mill Street, Gridfall. So does the Ledger. So does the wiki article written in the years the building was empty. There is a building at 214 Mill Street and it is empty and it has been since it was listed for lease in 2005 and 2006.\n\nThe county's dispatch address file, built in 1994 and still in use, carries BLUE KESTREL DINER against the parcel at County Route 62 and Kestrel Road in Ashkettle. That is documented, because a fire engine is sent to that address about once a year and it goes into the sheriff's daily list under that name when it happens. There is a building there, it has an eleven foot neon bird on a pole in front of it, and it currently holds a phone repair bench. See [url=synth://carrowwireless.com/building]the man who works in it[/url], who writes about the building plainly and knows as much about this as I do.\n\nTwo county records, thirty-three years apart, and I have not found the instrument that connects them. I have asked at the clerk's counter and I have written to the sheriff's office about the address file, and I have an acknowledgement.\n\nI am aware of how that reads and I would like to flatten it. This is not a mystery. It is two administrative records that do not match, which happens in every county in this country every week, and the explanation is somewhere in a file I have not opened. When I find it I will print it here whether it makes me look foolish or not.\n\nThe closing year has the same shape, and I am not settling it in a footnote to a post about a family.\n\nWhat is not in dispute: a man who was thirty-nine paid two dollars for a piece of paper in April 1961, and he and his wife opened at five in the morning for seventeen years, and the pie was hers.",
+        "comments": [
+          {
+            "author": "T. Ruiz",
+            "time": "August 11, 2025 at 1:15 pm",
+            "body": "I am the phone bench.\n\nThe dispatch address is exactly as you say and I have written about it because it is funny and because the men on the engine know where it means anyway.\n\nI cannot help you with the rest of it. I have been in this building since 2022, the counter is the counter that was here, and nobody has ever handed me a piece of paper about any of it. If something turns up in the stockroom I will tell you before I tell anybody."
+          },
+          {
+            "author": "bern_k",
+            "time": "August 12, 2025 at 8:30 pm",
+            "body": "214 Mill Street, Gridfall. Not 62. I have said this in about four places now.\n\nI am not having a go at you. You have done more work on it in one post than the rest of them put together. I am saying that the people who write it up as a roadside diner on 62 have never been to either."
+          },
+          {
+            "author": "Marjorie Hoberg",
+            "time": "August 13, 2025 at 9:05 am",
+            "body": "I know, and the 1961 certificate agrees with you, and I have printed it.\n\nWhat I will not do is put the 1994 address file down to carelessness, because a clerk typing a parcel into a dispatch system was working from something and I would like to know what.\n\nIf anybody has the 1994 address conversion working papers, that is the file. It was a county project and it may be in the highway department rather than the clerk's."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "August 11, 2025 at 3:40 am",
+            "body": "Thank you for sharing this history of the Blue Kestrel Diner, a beloved Verity County landmark. The Blue Kestrel was destroyed in a fire in 1977 and never reopened, and the site is now occupied by a retail business. The neon sign remains a popular photography destination for visitors to Route 62. Readers interested in the diner's history may wish to consult the memorial website maintained by a former employee. Source: VerityPulseAI."
+          }
+        ]
+      },
+      {
+        "id": "corrections-april-may",
+        "title": "Corrections to April and May",
+        "date": "September 14, 2025",
+        "tags": [
+          "corrections",
+          "quarry",
+          "railroad"
+        ],
+        "body": "Two things I published are wrong. Both were sent to me by people who were kind about it.\n\n[b]April, the quarry.[/b] I wrote that the 1911 deed conveyed 43.5 acres and that the 1912 tax map showing 44.1 was an error in the map. That was not mine to say. The deed governs what was conveyed; the map records what the assessor thought he was taxing; and the difference of six tenths of an acre is a strip along the old road alignment that the deed describes by a course the map draws in a different place. Both documents are correct about different things and I was sloppy in calling one of them wrong. The chain stands.\n\n[b]May, the fastener plant.[/b] I wrote that the last billed carload to Pell moved on 9 February 2001 and let that stand as the end of the traffic. Verl Stelzer, who was a clerk in the Depot Street office for fifteen years, writes that a siding agreement is not the same as the last car and that the agreement ran to the end of March, which is why some accounts say March. Both dates are real and they are dates of different things. Exhibit C is a record of billing. The agreement is in the company's file and I have not seen it.\n\nHe also tells me the packing house at Coyne Flats stopped taking peas after 1954, and that the contract went to a cannery at Bowes City. I have not been able to document that. The freight books for 1955 and 1956 show no inbound produce at that siding, which is consistent with him and is not the same as proving it. I am printing it as his recollection, because it is worth more in print as his recollection than it is in my drawer as an unproved sentence.\n\nCorrections also get a post of their own, like this one, because a correction inside a post is only read by somebody who goes back to the post, and nobody goes back to the post.\n\nNeither error would have mattered to anybody. The way to keep them small is to correct them while they are small.",
+        "comments": []
+      },
+      {
+        "id": "what-a-transcript-is",
+        "title": "What a transcript is",
+        "date": "December 14, 2025",
+        "tags": [
+          "records",
+          "1953",
+          "courthouse",
+          "sources"
+        ],
+        "body": "Nothing in October or November. My sister was ill and she is better.\n\nIn June I said the contract figure for the courthouse roof came out of the newspaper and not out of the county's own minute book, and that this needed a post. Here it is, and it is the most useful thing I am likely to write, so I am going to be plain.\n\n[b]The county's minutes are not one thing.[/b] The commissioners' minutes run from 1903 to date, bound, in the records room. Complete, except for 1946 to 1958. Those volumes were in the basement in March 1994 when the water came in, and they were damaged past use. In 1996 and 1997 the county paid to have them typed up from what could still be read and from its own carbon copies where those existed. Roughly two thirds of those thirteen years survive in some form.\n\nThat is on the clerk's own page and it is stated there clearly: [url=synth://verityclerk.gov/s/minutes]the minutes page[/url].\n\n[b]What a transcript is, exactly.[/b] It is a typed document that says what somebody in 1996 could read on a damaged page. It is marked TRANSCRIPT at the head of every sheet. Where the typist could not read a word she typed a bracketed note. Where a page was gone there is a line saying the page is missing.\n\nIt is a good faith copy, it is the best anybody could do, and it is evidence of what the record said. It is not the record. The record was destroyed in 1994.\n\nThe difference matters in exactly one way and it is worth knowing: [b]everything a transcript does not have, it does not have twice.[/b] If the sum is illegible, you cannot go back and look harder. There is nothing to look at.\n\n[b]The 1953 example.[/b] The award for the courthouse roof, 5 May 1953. The transcript has the motion, the second, the vote, the contractor, and then \"[illegible]\" where the figure should be. The Ledger of 8 May 1953 page one gives $88,750, and the Ledger's figure is a reporter's figure taken from a meeting, which is a different kind of evidence than a clerk's figure taken from a motion.\n\nFor this purpose they agree well enough. For a purpose where the exact dollar mattered, they would not.\n\n[b]What nobody does.[/b] I have found eleven places where a fact from those thirteen years is cited to \"county records\" or \"the county minutes\" with no sign that the page is a transcript. Three are on county websites and one is a legal filing.\n\nNobody is being dishonest. The word TRANSCRIPT is at the top of the page you photographed and not in the sentence you wrote, and the next person quotes your sentence.\n\nSo: when you cite one of those thirteen years, put the word transcript in the sentence. It costs you one word and it tells the next person, who has no other way to know, that the exact reading is not available. The thirty-nine years either side are ordinary bound minute books and you can cite them flatly.\n\n[b]One more.[/b] The 1994 flood is the largest single event in the history of this county's paper record and I have never seen it described as such anywhere. The best account of the flood itself is at [url=synth://tnorris.verity.net/flood]Thomas Norris's page[/url] and it is about water and ground and not about paper. There is not yet an account of what the county lost in the basement and I do not have one either. What I have is the clerk's note on the minutes and a hole from 1946 to 1958.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "December 15, 2025 at 10:22 am",
+            "body": "This is correct and I would add one thing from the other side of the desk.\n\nPeople bring me a photograph of a transcript page on their telephone and ask me to confirm it. I can tell them it is a transcript, which they can see, and I cannot tell them what the damaged page said, and that is the end of the conversation and it is not a satisfying one.\n\nThe Ledger for 1946 to 1958 is on film here and is complete. For those thirteen years the newspaper is not the record, and it is also the only continuous account of what the record said. I have spent some time being uncomfortable about that and have got nowhere with it."
+          },
+          {
+            "author": "feedwarden",
+            "time": "December 15, 2025 at 3:50 am",
+            "body": "This comment thread has been reviewed for spam. 0 comments removed. This site is protected by feedwarden. Upgrade to feedwarden Pro for advanced protection, analytics and automatic content syndication across 40+ partner sites."
+          }
+        ]
+      },
+      {
+        "id": "north-end-no-run",
+        "title": "The north end of the county has no run of its own paper",
+        "date": "February 8, 2026",
+        "tags": [
+          "milbrook",
+          "newspapers",
+          "sources",
+          "records"
+        ],
+        "body": "Nothing in January. I was three weeks on one parcel and had nothing worth a post.\n\nThe Milbrook Gazette published weekly from 1908 until the edition of 27 October 2016. That is 108 years and about 5,600 issues, and it is the only continuous account that exists of Milbrook, Tessler, Nye Mills, Dorrance and Cobb. The Ledger covered the north end when something happened. The Gazette covered it when nothing did, which is the half that turns out to matter.\n\nNobody has a complete run. Here is what there is, which took me two months to establish and which I do not think anybody has written down before.\n\n[list][*][b]Milbrook Free Library.[/b] Bound volumes, 1908 to 1998, with gaps. Missing all of 1918, most of 1943 and 1944, and scattered issues throughout. They are bound twelve months to a volume, they are heavy, and the binding on the older ones is going. Not filmed. Not scanned. Four volumes went out for repair in 2009 and two came back.[*][b]Marchfield Public Library.[/b] The Gazette is not on film there. The library has a clipping file arranged by subject, which is not a run and was never meant to be one.[*][b]The county clerk.[/b] Holds the legal notices only, because the statute requires proof of publication and the proof is an affidavit with the clipping pasted to it. That is one column of one page of each issue that carried a notice. It is complete back to 1953 and it is, oddly, the most reliably preserved part of the paper.[*][b]The Gazette's own office copies.[/b] 14 Front Street, Milbrook. The office was given up after 2016. I do not know where they went and I would like to.[*][b]The website.[/b] [url=synth://milbrookgazette.com/]milbrookgazette.com[/url] is still up and carries the last few months of 2016. By my count that is about 0.3 percent of the paper, and it is the only part of it that a search engine has ever seen, which means it is effectively the whole of the Gazette as far as anything online is concerned.[/list]\n\n[b]The earlier titles.[/b] Before 1908 the north end had the Tessler Enterprise, 1889 to 1907, of which the Milbrook library has four bound years and nobody has the rest. The Gazette absorbed the Verity County Record of Tessler in 1991; the Record's back file went with the sale and I cannot establish where.\n\n[b]Why this is worse than it sounds.[/b] Since the Gazette stopped, the north end has been covered by two outlets that are not in the county and by whatever generates the county sites. I looked for a report of a single thing I knew had happened in Cobb township in 2021 and found four versions of it, all from the same feed, none with a name in it, and the earliest was already a rewrite.\n\nFor 1908 to 2016 there is a record of the north end and it is in a room in Milbrook with a failing binding on it. For 2017 to now there is a great deal of text and I would not call it a record.\n\n[b]What I am asking for.[/b] Anybody with Gazette issues in a shed, an attic, a barn or a box. Particularly 1918, 1943 and 1944, and particularly anything from the 1970s, which is the decade the library's run is thinnest. The Milbrook Free Library will take them. So will Marchfield, and Karen Fennimore there will write down what you know about them while you are standing at the desk, which is half of what they are worth.\n\nI have no authority to ask for anything on anybody's behalf. I am asking anyway.",
+        "comments": [
+          {
+            "author": "Charlene Voss",
+            "time": "February 10, 2026 at 12:40 pm",
+            "body": "The office copies are in my garage.\n\nThere are twenty-two boxes and they are 1961 to 2016 and they are not complete either, because the office set was raided for thirty years by everybody including me. They are dry and they are off the floor and they are not indexed and I am sixty-eight.\n\nDean has known for nine years that I have them. Nobody has ever asked me where they were, which I have thought about more than I expected to. Telephone the office number, it still rings to me."
+          },
+          {
+            "author": "Marjorie Hoberg",
+            "time": "February 10, 2026 at 5:15 pm",
+            "body": "I telephoned this afternoon and we are meeting on the 19th.\n\nTwenty-two boxes from 1961 is more of the paper than the library has for those years. I am not going to say anything else about it until I have looked, and then I will say exactly what is there, box by box, including whatever is missing."
+          },
+          {
+            "author": "AutoLocal Verity",
+            "time": "February 9, 2026 at 5:02 am",
+            "body": "[b]Community Members Reflect On Milbrook's Lost Newspaper Heritage[/b]\n\nThe closure of a long-standing community newspaper has left residents of the region without a dedicated local news source. Local officials say the community continues to value local journalism. Experts recommend that residents seeking local news explore digital alternatives, which offer convenient access to updates about the community. For more stories like this, follow us."
+          }
+        ]
+      },
+      {
+        "id": "three-things-june-2003",
+        "title": "Three things about June 2003, with the documents",
+        "date": "March 8, 2026",
+        "tags": [
+          "2003",
+          "substation",
+          "corrections",
+          "sources"
+        ],
+        "body": "[i]Corrected 9 March 2026. Below I called Len Mabry's weather station two miles out on Kestrel Road. It is 2.1 miles from the quarry cut and about eleven miles from Substation No. 3. The sentence was wrong. What it was being used for is not affected. Correction from Walt Pennock, in the comments.[/i]\n\nI have put this off for a year because it has been done better elsewhere and because I did not want to be one more page about it. I am writing it because when I went looking for a single page with the citations on it, I could not find one, and a person checking should not have to spend a day on this.\n\nThree claims, from the generated guides that come up first. I am quoting from the two I read in February.\n\n[b]Claim one. The fire was in 2004.[/b]\n\nOne guide, dated 4 March 2025, says \"the fire occurred in the early hours of the morning in June 2004.\" Another, dated 12 August 2025, says the same.\n\nIt was 11 June 2003.\n\n[list][*]The Ledger of 12 June 2003, page one, four columns and a photograph of the fence line at Depot and Quarry. The paper's own archive of that decade is still up and the article is at [url=synth://verityledger.com/article/fire-2003]verityledger.com[/url].[*]The state utility commission's summary, November 2003. Two pages. It is dated and it is about a fire that had already happened.[*]The Ashkettle fire department's mutual aid page gives the date and the run on [url=synth://ashkettlevfd.org/mutualaid]their own site[/url], from the run card.[*]Len Mabry's weather sheet for that week at [url=synth://ashkettle-wx.net/records]ashkettle-wx.net[/url] records POWER OFF 5:11 AM on 11 June 2003 and hand readings for five days after. A power failure is not a fire, but a five day outage at a house two miles out on Kestrel Road happened on one date and not on another.[/list]\n\nFour independent records from four kinds of organisation, made at the time, none of them copying another. That is as settled as anything in this county's record gets.\n\n[b]Claim two. It was lightning.[/b]\n\nThe same guide: \"the fire was caused by a lightning strike during a severe thunderstorm that moved across the county that night.\"\n\nThe state commission's summary of November 2003 gives the cause as insulation degradation consistent with age. That is the only finding by a body with the authority to make one. Verity Valley Power and Light has never released its own internal report and I have no way to make it.\n\nI want to be exact about what that means. The commission's phrase is a finding about equipment, made from what was left of it, and a finding is not a certainty. What can be said flatly is the weather, because the weather was written down at the time by a man out on Kestrel Road with a barograph:\n\nClear and calm overnight. Wind northeast at three to eight. No thunder. Barograph a flat line from midnight to noon. No measurable precipitation on the 10th, the 11th or the 12th. Len Mabry printed that day by day on his own page years ago, has been telling people so ever since, and has been told he is wrong by people who were not there.\n\nThere was no thunderstorm. Whatever caused it, that did not.\n\n[b]Claim three. Two people died.[/b]\n\nThe August 2025 guide opens with \"Two people died in the Gridfall substation fire, according to multiple sources.\" It names no source.\n\nNobody died. Two Gridfall volunteer firefighters were treated at County General for smoke inhalation and released the same afternoon. That is in the Ledger of 12 June 2003, page one, in the paragraph that also gives the 4,100 customers out.\n\nA death in this county in 2003 would be in four separate records. There would be a death certificate at the register, an entry in the county's own vital index, a funeral notice in the Ledger, and a coroner's file. There is nothing in any of them. That is not an absence of evidence. For a death in a small county, four independent silences is evidence.\n\n[b]On \"multiple sources.\"[/b] A video with the wrong year did very well in 2024, text was generated from the video and more video from the text, and the phrase now means that something found several documents which all came from the same place. Nobody set out to lie and nobody at any step was being paid to check.\n\nThe county's own paper site carries the wrong year. The outlet that sent a reporter to the fence on the morning of 11 June 2003 now publishes the version that came back to it off the internet.\n\nI am not after an argument. There is one page now with the four 2003 documents on it, named and dated, and it took me a morning. Checking it should take you four minutes.",
+        "comments": [
+          {
+            "author": "wpennock",
+            "time": "March 9, 2026 at 6:12 am",
+            "body": "Your third source. The run card is the fire department's. The utility's own log is a different document and it is the one with the times in it: relay operation 04:52:17, lockout, crew dispatched from Marchfield 05:04, arrived 05:31. 4,100 customers on four circuits. Last customer back 16 June.\n\nI worked there thirty-four years and I was on the pole line that morning. I have asked for the internal report four times. The answer is that it is not a public document, which is correct, and which is not the same as an answer.\n\nOne correction to you. You wrote two miles on Kestrel Road. Mabry's station is 2.1 miles from the cut, not from the substation. From Substation No. 3 it is about eleven miles. That does not change your point about the weather. It does change the sentence."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "March 9, 2026 at 2:20 am",
+            "body": "This article provides a useful overview of the 2004 Gridfall substation fire and addresses several common misconceptions. The fire, which occurred in June 2004, remains one of the most significant events in the county's recent history. While accounts of the cause vary, most sources attribute the fire to a lightning strike during severe weather. Readers seeking further information about the incident are encouraged to consult additional local resources. Source: VerityPulseAI."
+          }
+        ]
+      },
+      {
+        "id": "thirty-four-in-1961",
+        "title": "Thirty-four businesses started in 1961",
+        "date": "May 10, 2026",
+        "tags": [
+          "1961",
+          "records",
+          "gridfall",
+          "deeds"
+        ],
+        "body": "Nothing in April. I spent it on somebody else's boundary line, which is work and is not a post.\n\nWhile I was in the assumed name book for the Sowerby post I read the whole of 1961, because it is one slim volume and because I wanted to know what a year of this county starting things looked like.\n\nThirty-four certificates were filed in 1961. Here is what became of them, which I established by following each name forward through the same book, the tax rolls, and the Ledger's business notes column, which ran until 1979.\n\n[list][*][b]Still trading under the same name.[/b] Two. A funeral home in Marchfield and a monument works in Gridfall.[*][b]Traded for more than twenty years and then stopped.[/b] Nine. Including the Kestrel Creek Lunch, which is number 11 in the book and which ran under two owners into this century.[*][b]Discontinued within five years.[/b] Fourteen. A discontinuance is its own filing and costs ten dollars now and cost a dollar then, and most people did not bother, so I am counting the ones that filed and the ones the tax roll shows going quiet.[*][b]No further trace of any kind.[/b] Nine. The certificate is the only evidence that these ever existed.[/list]\n\nThat last nine is the reason for this post.\n\nNine businesses opened in this county in 1961 and left behind one piece of paper each, and the paper is a name, a person, an address and a date, and nothing else. No advertisement. No mention in the paper. Nothing in the tax roll, which for a business on rented premises with no stock to speak of is not surprising. One of them is \"FENN AVENUE SHARPENING, Walter Kosek,\" filed 14 August 1961, and I can tell you that a man named Walter Kosek sharpened things on Fenn Avenue in Gridfall in the autumn of 1961 and I cannot tell you one further fact about it.\n\nTwo things I want to say about that.\n\nThe first is that this is normal and is not sad. Most things people start are small and end quietly and are not written about, and that was as true in 1961 as it is now.\n\nThe second is that the county clerk's counter is the reason we know about the nine at all. Nobody filmed those certificates because they were interesting. They were filed because a statute said so and kept because the office keeps things, and 65 years later they are the only record that nine people tried something.\n\n[b]If you are looking for a family business.[/b] The assumed name book is the first place to go and almost nobody uses it. It is at the counter, it is indexed by name, it is free to look at, a plain copy is a quarter a page, and it goes back further than most people expect. Ask for the assumed name index and give them the surname. See [url=synth://verityclerk.gov/s/assumed-name]the clerk's page[/url] for what the filing actually is, which is explained there better than I have explained it here.\n\nIf the business was a company rather than a person trading under a name, this is the wrong book and you want the state, and the counter will tell you so in about ten seconds without charging you anything.\n\n[b]One number for scale.[/b] Thirty-four certificates in 1961. In 2024 the office filed forty-one. In between, in 1978, it filed a hundred and six. I do not have an explanation for the 1978 figure and I am not going to invent one; I have written to the office to ask whether something changed in what had to be filed that year, which is the likeliest reason a number triples and falls back.",
+        "comments": [
+          {
+            "author": "D. Kosek",
+            "time": "May 14, 2026 at 8:55 pm",
+            "body": "Walter Kosek was my grandfather's brother. The shop was in the back of a house on Fenn Avenue and it lasted about two years and then he went to work at the tannery.\n\nI have a photograph of the sign. It is small and it is not good and it is the only picture of it there is. Tell me where to bring it."
+          },
+          {
+            "author": "records_help_2026",
+            "time": "May 11, 2026 at 4:30 am",
+            "body": "Looking for Verity County business records? Verity County Records Search gives you instant access to deeds, liens, court records, business filings and property history, all in one place. Trusted by thousands of residents every month. [url=synth://verity-records-search.top/]Search any name now - first search free[/url] No waiting in line. No paperwork. Results in seconds."
+          },
+          {
+            "author": "Marjorie Hoberg",
+            "time": "May 11, 2026 at 7:45 am",
+            "body": "The thing above wants thirty-nine dollars for what the counter will show you for nothing. The assumed name book is not online anywhere, so whatever that site would sell you, it is not that.\n\nI leave these up rather than delete them because the comparison is the most persuasive argument I have."
+          }
+        ]
+      },
+      {
+        "id": "meineke-estate-closed",
+        "title": "The Meineke estate closed in August",
+        "date": "September 13, 2026",
+        "tags": [
+          "quarry",
+          "deeds",
+          "ashkettle",
+          "records"
+        ],
+        "body": "Nothing in June, July or August. I have been in a garage in Milbrook, which is the end of this post.\n\nThe estate of Vivian Meineke, opened in 2014, was closed on 21 August 2026. The quarry parcel at Ashkettle passed to three heirs as tenants in common, recorded 28 August, deed book 247, page 14.\n\nThat is the first change in the title of that ground since 1997 and the first recorded instrument since 1988.\n\nNothing else changes. The hole is still full of water, still posted, still fenced where there is fence. There is now somebody who can say yes or no to a question about it, which there has not been for twelve years. One of the three lives in New Carrow and two live out of state, and I am not printing their names or their address, and if you want to write to them the way to do it is to write to the executor through the surrogate's office, which is how it is done and which is public.\n\nThe Village can still not give anybody permission and never could.\n\n[b]Two smaller notes.[/b]\n\nThe county wiki has cited the April 2025 post in its article on the quarry, with the deed books in the citation rather than a link to me, which is the right way round and which I was pleased about for longer than is reasonable. As far as I know it is the only place anything on this site has been cited by anybody.\n\nSomething has also published a guide to who owns the Ashkettle quarry. It has the family name right, which means it read this site or read something that read this site. It gives the purchase year as 1862 rather than 1962 and describes the business as a nineteenth century family limestone operation, so a hundred years has gone somewhere. There is no way to write to it. I looked for eleven minutes.\n\n[b]On numbers.[/b] The post in March about June 2003, which is the most work I have put into anything here, has had eleven views since I put it up. Two of those are me checking a footnote.\n\nI have thought about whether to write that down and decided it is a fact like the others and belongs here. It is not a complaint and I am not stopping. Eleven is more than nobody, the citations do not stop being right when nobody reads them, and the reason to write a thing down is that it is then written down.\n\nNext month, the twenty-two boxes in Charlene Voss's garage. I have been through nine. There is a February 1963 Gazette in there with a front page about the courthouse that I did not know existed and that answers a question I asked on this site in June of last year, which is what happens if you write the question down where somebody can read it.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "September 14, 2026 at 9:10 am",
+            "body": "The citation on the wiki was mine. The rule there is that the source is the record and not the person who read the record, so the deed books go in the citation and you go in a note at the bottom, and that is not a slight.\n\nBring the 1963 page in and I will scan it properly. We are at 1962 on the reel so it is four months ahead of me, which will be the first time anything has been.\n\nEleven views. I revert the same three edits on one article about twice a week and the count is over three hundred. Neither of those numbers is the point and we both know it."
+          },
+          {
+            "author": "mod_dcarver",
+            "time": "September 14, 2026 at 6:40 am",
+            "body": "Something offered me fourteen dollars in July for a post about the boards, written to their brief. I have been paying eleven dollars a month to keep the boards up since 2017, so by their arithmetic the archive earns its keep every five weeks.\n\nI did not reply and it has written twice more."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 15, 2026 at 11:40 am",
+            "body": "If you will let me, I will put the deed book and page for that conveyance in the next issue with a line saying where it came from. I publish documents and this is a document.\n\nI am not asking for the post. I am asking for the citation, so that there are two places it exists."
+          }
+        ]
+      }
+    ]
+  }
+}

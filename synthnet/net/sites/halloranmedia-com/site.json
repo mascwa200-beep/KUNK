@@ -1,0 +1,402 @@
+{
+  "schema": 1,
+  "domain": "halloranmedia.com",
+  "title": "Halloran Media Group",
+  "type": "page",
+  "era": "2013",
+  "skin": "plain-white",
+  "description": "The corporate site of the newspaper chain that owned the Verity Ledger from 2011 to 2016. Never taken down after the sale. Still listing fourteen titles, still hiring one multimedia journalist.",
+  "tags": ["corporate", "media", "halloran", "newspapers", "2013"],
+  "links": [
+    "verityledger.com",
+    "clipvault.tv"
+  ],
+  "data": {
+    "navLabel": "Company",
+    "pages": [
+      {
+        "id": "index",
+        "name": "About",
+        "blocks": [
+          { "kind": "image", "seed": "halloran-wordmark-2012", "imgKind": "banner",
+            "caption": "Halloran Media Group" },
+
+          { "kind": "heading", "level": 1, "text": "About Halloran" },
+
+          { "kind": "text",
+            "body": "Halloran Media Group publishes fourteen newspapers, shoppers and specialty titles in twelve markets across two states. Our titles have been part of the towns they serve for an average of seventy-one years. We intend to keep them there." },
+
+          { "kind": "text",
+            "body": "The company was started in 1954 by Raymond T. Halloran, who bought a job-printing shop on Rensbury Street in Corliss and, two years later, bought the shopper that was being printed in it. [b]Halloran Communications, Inc.[/b] is still the legal name of the company. It appears on our mastheads, on our legal notices and on our contracts. Since March 2012 we have done business as [b]Halloran Media Group[/b], because \"Communications\" had come to mean telephones." },
+
+          { "kind": "heading", "level": 2, "text": "What we do" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "[b]Local first.[/b] Every Halloran title is edited in the market it covers, by people who live there. We do not run a regional desk and we do not intend to open one.",
+            "[b]Print and digital together.[/b] Our newsrooms file to the web first and to the page second. Nine of our fourteen titles now put more items online in a month than they put in print.",
+            "[b]Total market coverage.[/b] Where a paid title cannot reach every household in a market, a free-distribution product does. Advertisers should not have to choose.",
+            "[b]Patient ownership.[/b] Halloran has never closed a title in the year it acquired it, and has never resold one.",
+            "[b]Scale where it helps.[/b] Printing, payroll, ad trafficking, billing and circulation fulfilment are shared out of Corliss. Reporting, photography and editing are not, and will not be."
+          ] },
+
+          { "kind": "text",
+            "body": "[b]Video.[/b] Every Halloran title posts video to its own website and to [url=synth://clipvault.tv/]ClipVault[/url], where our combined channels passed 100,000 views in 2012. Video is shot and cut by the reporter who covered the story. We do not employ videographers." },
+
+          { "kind": "heading", "level": 2, "text": "At a glance" },
+
+          { "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Titles", "14"],
+              ["Markets", "12"],
+              ["States", "2"],
+              ["Daily newspapers", "3"],
+              ["Weekly and twice-weekly newspapers", "7"],
+              ["Free-distribution and specialty titles", "4"],
+              ["Combined paid circulation", "36,200"],
+              ["Combined weekly circulation, paid and free", "55,600"],
+              ["Employees", "214"],
+              ["Employees in newsrooms", "71"],
+              ["Printing plants", "2"],
+              ["Founded", "1954"],
+              ["Headquarters", "Corliss"],
+              ["Ownership", "Privately held"]
+            ] },
+
+          { "kind": "text",
+            "body": "Circulation figures are publisher's statements for the six months ended 31 March 2013 and are not independently audited for every title. A title-by-title breakdown is on the [url=/brands]Our Brands[/url] page." },
+
+          { "kind": "heading", "level": 2, "text": "Our history" },
+
+          { "kind": "table",
+            "head": ["Year", "Event"],
+            "rows": [
+              ["1954", "Raymond T. Halloran buys a job-printing shop at 412 Rensbury Street, Corliss."],
+              ["1956", "Acquires the Corliss South Side Shopper, the company's first title."],
+              ["1961", "Acquires The Quayle Beacon."],
+              ["1968", "First offset press installed at Corliss. Contract printing for other publishers begins."],
+              ["1974", "Acquires the Kearney Falls Advocate."],
+              ["1981", "Acquires the Dunmore Daily Record, the company's first daily newspaper."],
+              ["1988", "Second printing plant opens at Dunmore. The Corliss press moves to weeklies and commercial work."],
+              ["1994", "Acquires The Leland Star and the Stannard County Press."],
+              ["1999", "First websites launched, for three titles."],
+              ["2002", "Acquires The Bowes City Sentinel and The Pell Union-Herald."],
+              ["2006", "Raymond Halloran retires as chairman. Curt Ledbetter is named President and Chief Executive Officer."],
+              ["2008", "Raymond T. Halloran dies, aged 87."],
+              ["2009", "Acquires The Brindle Creek Item and The Marchfield Register, the company's first titles in Verity County."],
+              ["2011", "Acquires The Verity Ledger."],
+              ["2012", "The company adopts Halloran Media Group as its operating name."],
+              ["2013", "All fourteen titles complete the move to a common website platform."]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Leadership" },
+
+          { "kind": "image", "seed": "halloran-hs-ledbetter", "imgKind": "avatar",
+            "caption": "Curt Ledbetter" },
+          { "kind": "text",
+            "body": "[b]Curt Ledbetter[/b]\n[i]President and Chief Executive Officer[/i]\n\nCurt joined Halloran in 1998 as advertising director of the Dunmore Daily Record and was named President and Chief Executive Officer in 2006, the first person outside the Halloran family to hold the title. He started in newspapers in 1986 as a district circulation manager, which he says is the only job in this business where you find out immediately whether you were right. He serves on the board of the state press association and on the Corliss school board." },
+
+          { "kind": "image", "seed": "halloran-hs-reinbold", "imgKind": "avatar",
+            "caption": "Paula Reinbold" },
+          { "kind": "text",
+            "body": "[b]Paula Reinbold[/b]\n[i]Executive Vice President and Chief Operating Officer[/i]\n\nPaula joined in 2004 and is responsible for production, circulation, the two printing plants and shared services. She came from a total-market-coverage group where she ran distribution for thirty-one free-circulation products. She is the company's representative to the state newspaper carriers' association and has personally run a motor route out of Dunmore on six occasions since 2004, all of them in January." },
+
+          { "kind": "image", "seed": "halloran-hs-mattoon", "imgKind": "avatar",
+            "caption": "Gil Mattoon" },
+          { "kind": "text",
+            "body": "[b]Gil Mattoon[/b]\n[i]Vice President, News and Audience Development[/i]\n\nGil was named to this position in September 2013. He edited the Dunmore Daily Record for nine years, and before that was a sports writer and then city editor there. The position is new. It combines the company's news oversight with the digital audience work that had previously been handled inside the advertising department." },
+
+          { "kind": "text",
+            "body": "The three officers above are the company's executive committee. Halloran Communications, Inc. has a five-member board of directors, three of whom are members of the Halloran family. The company does not publish board biographies and does not intend to." },
+
+          { "kind": "heading", "level": 2, "text": "How our newsrooms work" },
+
+          { "kind": "text",
+            "body": "This is the whole of the company's news policy. It is one page in the employee handbook and it has not been rewritten since 2007." },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Every story in a Halloran newspaper carries the name of the person who wrote it.",
+            "Corrections run in the same section and at the same size as the error, in print as well as online, and they say what was wrong rather than that something was.",
+            "Reporters report to their editors. Editors report to their publishers. Nobody in Corliss assigns, edits, holds or kills a story.",
+            "We do not accept payment for news coverage. Sponsored material is labelled SPONSORED CONTENT in ten-point type at the top of the item and is not written by newsroom staff.",
+            "Every title publishes a telephone number that is answered by a person during business hours.",
+            "Photographs are not altered beyond cropping and ordinary tone and colour correction.",
+            "If a reader asks how we know something, we tell them."
+          ] },
+
+          { "kind": "heading", "level": 2, "text": "News from Halloran" },
+
+          { "kind": "text",
+            "body": "[b]Gil Mattoon Named Vice President, News and Audience Development[/b]\n[i]9 September 2013[/i]\n\nCORLISS. Halloran Media Group today named Gil Mattoon Vice President, News and Audience Development, a position created in this year's operating plan. Mattoon has edited the Dunmore Daily Record since 2004.\n\nIn the new role Mattoon will work with the editors of all fourteen Halloran titles on newsroom recruitment, training and website performance. He will continue to be based in Dunmore.\n\n\"The audience side of this has been sitting in advertising for four years and that never sat right with me,\" Ledbetter said. \"It belongs next to the newsrooms.\"\n\nA search for Mattoon's successor at the Record is under way." },
+
+          { "kind": "text",
+            "body": "[b]Tilden Township News to Merge with The Leland Star[/b]\n[i]14 June 2013[/i]\n\nLELAND. Halloran Media Group announced today that the Tilden Township News will merge with The Leland Star at the end of June. The News, founded in 1971, will publish its final edition on Thursday 27 June.\n\nTilden Township coverage will continue in The Leland Star, which will add a Tilden page each week. The Star's Thursday publication day does not change.\n\nNews subscribers will receive the balance of their subscriptions in Star issues at no additional charge and need not do anything. The News office at 4 Bellamy Street will close on 28 June; the Star's office in Leland is nineteen miles away and is open weekdays.\n\nOne position is affected. The company said it had offered the employee a position at another title." },
+
+          { "kind": "text",
+            "body": "[b]Halloran Titles Complete Move to Common Website Platform[/b]\n[i]20 May 2013[/i]\n\nCORLISS. All fourteen Halloran Media Group titles are now publishing on a common website platform, completing a project begun in September 2011.\n\nThe new sites carry each title's own masthead, colours and section structure. Behind them, the fourteen titles now share one content management system, one photo archive, one advertising system and one subscriber database. Newsrooms post their own work directly.\n\nThe sites are built to resize for telephones and tablets, which the company said accounted for 31 percent of page views in April, up from 12 percent two years ago.\n\nArchive material published before a title's move to the platform stays where it is and is reachable at its old address." },
+
+          { "kind": "text",
+            "body": "[b]Halloran Communications Adopts Halloran Media Group as Operating Name[/b]\n[i]12 March 2012[/i]\n\nCORLISS. Halloran Communications, Inc. will do business as Halloran Media Group, effective immediately.\n\nThe legal name of the company is unchanged and will continue to appear on mastheads, legal notices, contracts and subscriber billing. No title is being renamed and no masthead is changing." },
+
+          { "kind": "text",
+            "body": "[b]Halloran Completes Acquisition of The Verity Ledger[/b]\n[i]1 August 2011[/i]\n\nGRIDFALL. Halloran Communications, Inc. has completed the purchase of The Verity Ledger of Gridfall. Terms were not disclosed.\n\nThe Ledger, which publishes twice weekly, is the newspaper of record for Verity County and carries the county's legal notices. It is the company's second title in Verity County; Halloran acquired The Marchfield Register in 2009.\n\nThe masthead, the name, the publication days and the Third Street office all stay as they are, the company said. The Ledger will be printed at the Dunmore plant beginning with the 7 September edition.\n\n\"We bought a newspaper that people in that county still argue with,\" Ledbetter said. \"That is worth more than the press it is printed on.\"" },
+
+          { "kind": "text",
+            "body": "Media inquiries: Erin Sowash, Director of Corporate Communications, [b]esowash@halloranmedia.com[/b], 555-0177. Inquiries about a story, a correction or a photograph go to the title that published it, not here. See [url=/contact]Contact[/url]." },
+
+          { "kind": "text",
+            "body": "[i]This page was last updated 14 October 2013.[/i]" }
+        ]
+      },
+
+      {
+        "id": "brands",
+        "name": "Our Brands",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Our brands" },
+
+          { "kind": "text",
+            "body": "Halloran Media Group publishes fourteen titles in twelve markets. Each one is edited in the community it covers. Founding dates are the date first published under the title shown; several of our papers are older than their current names and we do not claim the difference.\n\nThe list below is current as of 1 August 2013." },
+
+          { "kind": "heading", "level": 2, "text": "Daily newspapers" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Founded", "Published", "Circulation"],
+            "rows": [
+              ["[url=synth://dunmorerecord.synth/]Dunmore Daily Record[/url]", "Dunmore", "1888", "Monday to Saturday", "8,900"],
+              ["[url=synth://pellunionherald.synth/]The Pell Union-Herald[/url]", "Pell", "1902", "Tuesday to Saturday", "5,600"],
+              ["[url=synth://bowescitysentinel.synth/]The Bowes City Sentinel[/url]", "Bowes City", "1911", "Monday to Friday", "4,150"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Community newspapers" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Founded", "Published", "Circulation"],
+            "rows": [
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "Gridfall, Verity Co.", "1898", "Wednesday and Saturday", "4,120"],
+              ["[url=synth://lelandstar.synth/]The Leland Star[/url]", "Leland", "1934", "Thursday", "3,340"],
+              ["[url=synth://stannardcountypress.synth/]Stannard County Press[/url]", "Stannard Co.", "1921", "Wednesday", "2,880"],
+              ["[url=synth://kearneyfallsadvocate.synth/]Kearney Falls Advocate[/url]", "Kearney Falls", "1889", "Thursday", "2,610"],
+              ["[url=synth://quaylebeacon.synth/]The Quayle Beacon[/url]", "Quayle", "1947", "Wednesday", "1,940"],
+              ["[url=synth://marchfieldregister.synth/]The Marchfield Register[/url]", "Marchfield, Verity Co.", "1957", "Thursday", "1,510"],
+              ["[url=synth://brindlecreekitem.synth/]The Brindle Creek Item[/url]", "Brindle Creek", "1962", "Thursday", "1,180"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Shoppers, monthlies and annuals" },
+
+          { "kind": "table",
+            "head": ["Title", "Market", "Founded", "Published", "Distribution"],
+            "rows": [
+              ["[url=synth://aldercountyshopper.synth/]Alder County Shopper[/url]", "Alder Co.", "1978", "Weekly", "19,400 free"],
+              ["[url=synth://corlissbusinessjournal.synth/]The Corliss Business Journal[/url]", "Corliss", "1986", "Monthly", "6,200 paid"],
+              ["Verity County Homes & Land", "Verity Co.", "2004", "Monthly", "11,000 free"],
+              ["Quayle Valley Weddings", "Quayle Valley", "2008", "Annual, in February", "9,000 free"]
+            ] },
+
+          { "kind": "text",
+            "body": "[i]Verity County Homes & Land[/i] and [i]Quayle Valley Weddings[/i] do not have websites of their own. Their listings run on the websites of The Verity Ledger and The Quayle Beacon respectively." },
+
+          { "kind": "heading", "level": 2, "text": "Recently consolidated" },
+
+          { "kind": "text",
+            "body": "[b]The Ossian Courier[/b] (Ossian, founded 1903, Wednesdays) published its final edition on 28 November 2012. Ossian is now covered by the Dunmore Daily Record, which added an Ossian page on Wednesdays and kept the Courier's part-time correspondent on contract.\n\n[b]Tilden Township News[/b] (Tilden Township, founded 1971, Thursdays) merged into The Leland Star on 27 June 2013. Tilden now has a weekly page in the Star.\n\nThe archives of both titles remain available at [url=synth://ossiancourier.synth/]ossiancourier[/url] and [url=synth://tildentownshipnews.synth/]tildentownshipnews[/url]. Neither site is being updated." },
+
+          { "kind": "heading", "level": 2, "text": "The Verity Ledger" },
+
+          { "kind": "image", "seed": "verity-ledger-118-third-street", "imgKind": "photo",
+            "caption": "The Verity Ledger, 118 Third Street, Gridfall." },
+
+          { "kind": "text",
+            "body": "The Verity Ledger has published in Gridfall since 1898 and joined Halloran in August 2011. It is the only newspaper in Verity County that carries the county's legal notices, and the only one with a reporter in the room at the county board of supervisors every month.\n\nThe Ledger's newsroom is six people. In 2011 the paper moved from three print days to two, retiring the Tuesday edition; the Wednesday and Saturday editions absorbed the page count. Printing moved to the Dunmore plant the same year, which took two hours off the press deadline and gave the newsroom Tuesday night back." },
+
+          { "kind": "text",
+            "body": "County reporter Hal Brenner's coverage of the 2004 Gridfall substation fire, filed through the night from the Third Street newsroom, is still the most-read item in the Ledger's online archive. Four thousand one hundred customers lost power, some of them for five days. [url=synth://verityledger.com/article/fire-2003]Read the Ledger's coverage[/url].\n\nThe Ledger also holds the longest continuously published community column in the company: the Ashkettle Notes, which has run without a missed week since 1961 and is still filed on paper." },
+
+          { "kind": "heading", "level": 2, "text": "Dunmore Daily Record" },
+
+          { "kind": "text",
+            "body": "The Record is the company's largest title, its first daily, and the reason the company owns a second press. The Dunmore plant prints eight Halloran titles and holds eleven outside contracts, including two college papers and a Sunday insert package for a group we compete with in Bowes City.\n\nThe Record's newsroom is nineteen people, which makes it the largest newsroom between Corliss and the state line. It has won the state press association's general excellence award in its circulation class four times, most recently in 2010." },
+
+          { "kind": "heading", "level": 2, "text": "For advertisers" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "[b]One order, one invoice.[/b] The Halloran Network buy places one advertisement in all fourteen titles at a combined open inch rate of $41.20.",
+            "[b]Inserts.[/b] Distribution to 55,600 households a week, paid and free combined, with zoning available down to the postal route.",
+            "[b]Digital display.[/b] All fourteen websites, sold by the thousand impressions. Minimum buy $150.",
+            "[b]Classified and legal notices.[/b] Placed with the individual title, not here. Legal notice rates are set by statute and are the same at every Halloran title in the state.",
+            "[b]Rate cards.[/b] Current rate cards for every title are available from your Halloran representative or by writing ads@halloranmedia.com. We do not post them on this site because they change in January and we would forget."
+          ] },
+
+          { "kind": "text",
+            "body": "[i]This page was last updated 2 August 2013.[/i]" }
+        ]
+      },
+
+      {
+        "id": "careers",
+        "name": "Careers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Careers at Halloran" },
+
+          { "kind": "text",
+            "body": "Halloran employs 214 people in twelve markets. Most of them work in the town they grew up in, and a good many of them started on a motor route or at a front counter. We hire for willingness more than for pedigree, and we will train you on the equipment." },
+
+          { "kind": "image", "seed": "halloran-newsroom-dunmore-2012", "imgKind": "photo",
+            "caption": "The Dunmore Daily Record newsroom, November 2012." },
+
+          { "kind": "heading", "level": 2, "text": "Current openings (1)" },
+
+          { "kind": "table",
+            "head": ["Requisition", "Position", "Title", "Location", "Type"],
+            "rows": [
+              ["HMG-13-0044", "Multimedia Journalist", "The Verity Ledger", "Gridfall, Verity Co.", "Full time, salaried"]
+            ] },
+
+          { "kind": "heading", "level": 3, "text": "Multimedia Journalist — The Verity Ledger" },
+
+          { "kind": "text",
+            "body": "[b]Requisition[/b] HMG-13-0044. [b]Posted[/b] 4 March 2013. [b]Reposted[/b] 6 May 2013, 2 August 2013 and 4 November 2013. [b]Location[/b] 118 Third Street, Gridfall. [b]Reports to[/b] Editor, The Verity Ledger. [b]Compensation[/b] $28,500 to $31,000 annually, depending on experience." },
+
+          { "kind": "text",
+            "body": "[b]About the position.[/b] The Verity Ledger is looking for a multimedia journalist to cover Verity County. You will join a newsroom of six.\n\nThis is a general assignment job with a beat attached: county government, the sheriff's office, the courts, and the towns of Ashkettle, Halsey and Coyne Flats. You will shoot your own photographs, record and cut your own video, write your own headlines, choose your own art and post your own work to the web. The Ledger no longer employs a staff photographer.\n\nWe are aware this is several jobs. So is everyone doing it. The trade is that nobody stands between you and the county." },
+
+          { "kind": "text", "body": "[b]What you will do[/b]" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Cover the Verity County board of supervisors, its four standing committees, and the meetings that get put on the calendar at four o'clock on a Friday.",
+            "File two to four bylined pieces a week, plus briefs, plus the Monday scanner roundup.",
+            "Photograph what you cover. A camera body and two lenses are provided and you are responsible for them.",
+            "Shoot and cut video for the Ledger site. Most items run sixty to ninety seconds. Nobody is expecting a documentary.",
+            "Post your own work to the content management system: headline, summary, photo caption, section, tags.",
+            "Write the Ledger's Facebook and Twitter posts for your own stories. The title posts four to six times a day and half of those are yours.",
+            "Take obituary information over the telephone when the front counter is closed, which is after four o'clock and all day Sunday.",
+            "Work one evening or weekend event a month. A fair, a parade, a football game, a groundbreaking, a fire.",
+            "Cover the sports desk at the start of each season. Sports here is one person and a stringer budget of $1,400 a year."
+          ] },
+
+          { "kind": "text", "body": "[b]What we are looking for[/b]" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "A degree in journalism or a related field, or two years on a daily or weekly newspaper. We have hired both and we have no preference.",
+            "Six clips. In the body of the email or as one PDF. We will not download an archive and we will not create an account on anything to read your work.",
+            "Working knowledge of a DSLR. We will teach you the video editor in an afternoon.",
+            "A reliable vehicle and a clean driving record. Mileage is reimbursed at $0.28 a mile, paid with the second cheque of the month.",
+            "Familiarity with AP style, or a tolerance for being corrected about it for a year.",
+            "Comfort with public records. You will file requests and you will be told no, and the second part is most of the job.",
+            "The ability to work alone. On a Tuesday you may be the only person from this newsroom anywhere in the field.",
+            "A driver's licence valid in this state within thirty days of hire."
+          ] },
+
+          { "kind": "text",
+            "body": "[b]Schedule.[/b] Monday to Friday, two evenings most weeks, some weekends. The Ledger prints Wednesday and Saturday and the deadline is six o'clock the evening before. Press night is not a late night any more; printing moved to Dunmore in 2011.\n\n[b]Equipment.[/b] Camera, two lenses, a laptop and a recorder are issued. The laptop is a company machine and the county wireless at the board room does not reach the back row, so bring a notebook.\n\n[b]Benefits.[/b] Medical and dental after sixty days. 401(k) with a three percent match after one year of service. Two weeks of vacation, three after five years, six paid holidays. A subscription to the paper, which you would otherwise have to buy." },
+
+          { "kind": "text",
+            "body": "[b]To apply.[/b] Applications go through our applicant system at [url=synth://halloran.jobraildirect.synth/]halloran.jobraildirect[/url]. You may also send a résumé, six clips and three references to Tam Brubaker, Director of Human Resources, at [b]careers@halloranmedia.com[/b].\n\nWe read everything that comes in and we answer everyone, though it can take three weeks in a month when two titles are hiring. If you have not heard from us by then, write again; we have lost applications before and we would rather be embarrassed than lose you." },
+
+          { "kind": "heading", "level": 2, "text": "Life at Halloran" },
+
+          { "kind": "text",
+            "body": "We asked four people we hired in the last two years what they had not expected. Two of them said the driving." },
+
+          { "kind": "text",
+            "body": "[quote=Dori Wanamaker, staff writer, The Leland Star]I cover four school districts and the county road commission. The thing I did not expect is the driving. Leland to the far end of the county and back is sixty-one miles and I do it twice a week. You learn which gas station has coffee that is actually fresh at six in the morning. It is the one by the grain elevator, and they make it at five.[/quote]\n\nDori started at The Leland Star in 2011 as a summer intern." },
+
+          { "kind": "text",
+            "body": "[quote=Bo Sikkema, second pressman, Dunmore plant]People always ask what time we print. We start the Record at eleven forty at night and we are washing up by three. In winter the ink behaves different and you have to warm the fountain solution before the first run or the register walks on you. That is not written down anywhere. You get told once, by whoever tells you.[/quote]\n\nBo has been on the Dunmore press since 1987." },
+
+          { "kind": "heading", "level": 2, "text": "Internships" },
+
+          { "kind": "text",
+            "body": "Halloran runs eight to ten summer internships a year: one at each daily, one at the Corliss Business Journal, and one at whichever weekly asks first.\n\nInterns are paid $9.25 an hour for up to thirty hours a week. You will have a byline in your first week. You will not be fetching anything for anyone; we do not have anybody to fetch for.\n\nApplications for summer 2014 open on 6 January 2014. Write to careers@halloranmedia.com with a résumé and three clips, which may be from a student newspaper." },
+
+          { "kind": "heading", "level": 2, "text": "Where to find us" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Corliss State University journalism career fair, Thursday 19 September 2013.",
+            "State Press Association annual convention, Dunmore, 25 to 27 October 2013. We are at table 11, by the coffee.",
+            "Kearney Falls High School career day, Tuesday 12 November 2013.",
+            "We will come to a high school or community college class and talk about this work if you ask us. Write to Erin Sowash."
+          ] },
+
+          { "kind": "text",
+            "body": "Halloran Communications, Inc. is an equal opportunity employer. Employment is at will.\n\n[i]This page was last updated 6 November 2013.[/i]" }
+        ]
+      },
+
+      {
+        "id": "contact",
+        "name": "Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Contact" },
+
+          { "kind": "image", "seed": "halloran-corliss-office-rensbury", "imgKind": "photo",
+            "caption": "412 Rensbury Street, Corliss. The press is in the back half." },
+
+          { "kind": "heading", "level": 2, "text": "Corporate office" },
+
+          { "kind": "text",
+            "body": "Halloran Communications, Inc.\nd/b/a Halloran Media Group\n412 Rensbury Street, Fourth Floor\nCorliss\n\nSwitchboard 555-0177, weekdays 8:30 a.m. to 5:00 p.m. It is answered by a person. If what you want is a particular newspaper, it is faster to call the newspaper." },
+
+          { "kind": "heading", "level": 2, "text": "Where to direct an inquiry" },
+
+          { "kind": "table",
+            "head": ["Inquiry", "Where it goes"],
+            "rows": [
+              ["News tips and story ideas", "The newsroom of the title that covers you. Every one of our newsrooms answers its own telephone."],
+              ["Corrections", "The editor of the title that published it. Corrections run in print and online."],
+              ["Letters to the editor", "The title. Letters run to 300 words and we print almost all of them."],
+              ["Obituaries", "The title's front counter, or the funeral home, which usually files for you."],
+              ["Legal and public notices", "legals@halloranmedia.com, or the title's business office."],
+              ["Display advertising", "ads@halloranmedia.com, or your Halloran representative."],
+              ["Classified advertising", "The title."],
+              ["Subscriptions, delivery, vacation holds", "1-800-555-0148, seven days, 6:00 a.m. to 10:00 a.m."],
+              ["Reprints and permissions", "permissions@halloranmedia.com"],
+              ["Employment", "careers@halloranmedia.com. See [url=/careers]Careers[/url]."],
+              ["Media inquiries", "Erin Sowash, Director of Corporate Communications, esowash@halloranmedia.com"],
+              ["Vendors and accounts payable", "ap@halloranmedia.com"],
+              ["Contract printing", "printing@halloranmedia.com"],
+              ["Service of process and notices of claim", "The corporate address above, attention President. The company has no in-house counsel."]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Our newsrooms" },
+
+          { "kind": "text",
+            "body": "Every title's address and newsroom number is printed in the masthead of every edition and on the contact page of its website. These are the ones people ring the corporate switchboard for." },
+
+          { "kind": "table",
+            "head": ["Title", "Address", "Newsroom"],
+            "rows": [
+              ["The Verity Ledger", "118 Third Street, Gridfall", "555-0131"],
+              ["The Marchfield Register", "7 Water Street, Marchfield", "555-0193"],
+              ["Dunmore Daily Record", "900 Canal Street, Dunmore", "555-0110"],
+              ["The Pell Union-Herald", "41 Union Square, Pell", "555-0164"],
+              ["The Leland Star", "12 Ash Street, Leland", "555-0152"],
+              ["The Bowes City Sentinel", "3 Depot Square, Bowes City", "555-0128"]
+            ] },
+
+          { "kind": "heading", "level": 2, "text": "Printing" },
+
+          { "kind": "text",
+            "body": "[b]Corliss plant.[/b] 412 Rensbury Street, rear entrance off the alley. Weeklies, shoppers, commercial work, and anything that needs to be on the street before noon.\n\n[b]Dunmore plant.[/b] 900 Canal Street. Dailies, eight Halloran titles and eleven outside contracts. The Record goes on the press at 11:40 p.m.\n\nBoth plants quote outside work. Write to printing@halloranmedia.com with a page count, a trim size, a run and a date and you will get a number back the same week." },
+
+          { "kind": "heading", "level": 2, "text": "Subscriptions" },
+
+          { "kind": "text",
+            "body": "Home delivery is $6.50 a month for a weekly title and $14.75 a month for a daily, both including full access to the title's website. Website access on its own is $4.25 a month.\n\nA vacation hold of eight days or more is credited to your account automatically. A shorter one is not. We are aware that this is irritating and it is on the list.\n\nIf your paper did not come, ring the number above before 10:00 a.m. and we will get one to you that day in town and the next day on a motor route." },
+
+          { "kind": "heading", "level": 2, "text": "Terms and notices" },
+
+          { "kind": "list", "ordered": false, "items": [
+            "Material published by a Halloran title is the property of Halloran Communications, Inc. or its licensors. Reproduction requires written permission, which we give to schools, libraries and historical societies at no charge and usually by return post.",
+            "We do not sell or rent our subscriber list.",
+            "Our privacy policy was revised in March 2013 and is available on request or at the corporate office.",
+            "This site is maintained by the corporate communications office. It is not a news site and it is not updated daily. For news, go to a title."
+          ] },
+
+          { "kind": "text",
+            "body": "© 2013 Halloran Communications, Inc., Corliss. All rights reserved.\n\n[i]This page was last updated 19 March 2013.[/i]" }
+        ]
+      }
+    ]
+  }
+}

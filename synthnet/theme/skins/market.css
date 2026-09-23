@@ -1,0 +1,273 @@
+/* skin-classified -- 2026 classifieds. Deliberately plain: blue links on
+   white, thumbnail grid, a scam-heavy feel. Scoped under .skin-classified. */
+
+.skin-classified {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+.skin-classified a,
+.skin-classified .cl-a {
+  color: #0a49b0;
+  text-decoration: underline;
+}
+.skin-classified a:visited,
+.skin-classified .cl-a:visited { color: #5c2d91; }
+.skin-classified a:hover,
+.skin-classified .cl-a:hover { color: #8a1c1c; }
+.skin-classified a:focus-visible,
+.skin-classified .cl-a:focus-visible {
+  outline: 2px solid #0a49b0;
+  outline-offset: 1px;
+}
+
+.skin-classified .cl-sep { color: #666666; }
+
+/* ---------- header ---------- */
+
+.skin-classified .cl-head {
+  border-bottom: 1px solid #cccccc;
+  padding: 10px 10px 8px;
+}
+.skin-classified .cl-brand { font-size: 20px; margin: 0 0 2px; font-weight: 700; }
+.skin-classified .cl-brandlink { text-decoration: none; }
+.skin-classified .cl-brandlink:hover { text-decoration: underline; }
+.skin-classified .cl-tag { margin: 0 0 6px; font-size: 12px; color: #4a4a4a; }
+
+.skin-classified .cl-regions { margin: 0 0 5px; font-size: 13px; word-break: break-word; }
+.skin-classified .cl-regions-lbl { color: #4a4a4a; }
+
+.skin-classified .cl-online { margin: 0; font-size: 11px; color: #4a4a4a; }
+
+/* ---------- body ---------- */
+
+.skin-classified .cl-body { padding: 10px; }
+
+.skin-classified .cl-h2 { font-size: 16px; margin: 14px 0 4px; font-weight: 700; }
+.skin-classified .cl-h3 { font-size: 14px; margin: 14px 0 4px; font-weight: 700; }
+.skin-classified .cl-note { font-size: 11px; color: #4a4a4a; margin: 0 0 8px; }
+.skin-classified .cl-empty { font-size: 13px; color: #4a4a4a; font-style: italic; }
+
+.skin-classified .cl-crumb { font-size: 12px; margin: 0 0 8px; word-break: break-word; }
+.skin-classified .cl-crumb-now { color: #4a4a4a; }
+
+/* ---------- the nagging scam notice ---------- */
+
+.skin-classified .cl-warn {
+  border: 1px solid #b58900;
+  background: #fffbe8;
+  color: #4a3600;
+  font-size: 12px;
+  padding: 6px 8px;
+  margin: 8px 0;
+}
+
+/* ---------- category index ---------- */
+
+.skin-classified .cl-cats { margin: 10px 0; }
+.skin-classified .cl-catlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 14px;
+}
+.skin-classified .cl-catitem {
+  font-size: 13px;
+  margin: 0 0 2px;
+  break-inside: avoid;
+}
+.skin-classified .cl-catcount { color: #4a4a4a; font-size: 11px; }
+
+/* ---------- thumbnail grid ---------- */
+
+.skin-classified .cl-grid {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+.skin-classified .cl-cell { min-width: 0; }
+.skin-classified .cl-cell-img { display: block; border: 1px solid #cccccc; }
+.skin-classified .cl-cell-img svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 110px;
+}
+.skin-classified .cl-cell-title { font-size: 13px; margin: 4px 0 2px; line-height: 1.3; }
+.skin-classified .cl-cell-meta {
+  font-size: 11px;
+  margin: 0 0 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.skin-classified .cl-cell-where { font-size: 11px; color: #4a4a4a; margin: 0; }
+
+/* ---------- plain list ---------- */
+
+.skin-classified .cl-list { list-style: none; margin: 0; padding: 0; }
+.skin-classified .cl-row {
+  display: flex;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #e3e3e3;
+  min-width: 0;
+}
+.skin-classified .cl-row-img { flex: 0 0 auto; }
+.skin-classified .cl-row-img svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #cccccc;
+}
+.skin-classified .cl-row-body { flex: 1 1 auto; min-width: 0; }
+.skin-classified .cl-row-title { display: block; font-size: 14px; margin-bottom: 2px; }
+.skin-classified .cl-row-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.skin-classified .cl-price { font-weight: 700; color: #145c25; }
+.skin-classified .cl-where { color: #4a4a4a; }
+.skin-classified .cl-when { color: #666666; }
+.skin-classified .cl-cond { color: #4a4a4a; }
+
+/* ---------- listing detail ---------- */
+
+.skin-classified .cl-lhead { margin: 6px 0 4px; }
+.skin-classified .cl-ltitle { font-size: 18px; margin: 0 0 3px; line-height: 1.25; }
+.skin-classified .cl-lprice { font-size: 20px; font-weight: 700; color: #145c25; margin: 0 0 3px; }
+.skin-classified .cl-lmeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  margin: 0 0 6px;
+}
+.skin-classified .cl-views { font-size: 11px; color: #4a4a4a; margin: 0 0 8px; }
+
+.skin-classified .cl-photo { border: 1px solid #cccccc; margin: 0 0 6px; }
+.skin-classified .cl-photo svg { display: block; width: 100%; height: auto; }
+.skin-classified .cl-photostrip { display: flex; gap: 5px; flex-wrap: wrap; margin: 0 0 10px; }
+.skin-classified .cl-photothumb { border: 1px solid #cccccc; flex: 0 0 auto; }
+.skin-classified .cl-photothumb svg { display: block; width: 48px; height: 48px; }
+
+.skin-classified .cl-lbody { margin: 0 0 12px; word-break: break-word; }
+.skin-classified .cl-lbody p { margin: 0 0 8px; }
+.skin-classified .cl-lbody blockquote {
+  border-left: 3px solid #cccccc;
+  margin: 0 0 8px;
+  padding-left: 8px;
+  color: #3a3a3a;
+}
+.skin-classified .cl-lbody code {
+  font-family: "Courier New", monospace;
+  background: #f1f1f1;
+  padding: 0 2px;
+}
+
+.skin-classified .cl-seller {
+  border: 1px solid #cccccc;
+  background: #f7f7f7;
+  padding: 8px;
+  margin: 0 0 10px;
+}
+.skin-classified .cl-seller-who {
+  margin: 0 0 4px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.skin-classified .cl-seller-contact {
+  margin: 0 0 3px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  word-break: break-all;
+}
+.skin-classified .cl-seller-note { margin: 0; font-size: 11px; color: #4a4a4a; }
+
+.skin-classified .cl-othercats { margin: 14px 0 0; font-size: 12px; word-break: break-word; }
+
+.skin-classified .cl-sec { margin: 14px 0; }
+
+/* ---------- ads ---------- */
+
+.skin-classified .cl-adslot {
+  border: 1px solid #dddddd;
+  background: #fbfbfb;
+  padding: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+.skin-classified .cl-adslot-text { border-style: dotted; }
+.skin-classified .cl-adslot-box { max-width: 300px; }
+.skin-classified .cl-adslot svg,
+.skin-classified .cl-adslot img { max-width: 100%; height: auto; }
+
+/* ---------- 404 ---------- */
+
+.skin-classified .cl-404 { padding: 14px 0; }
+
+/* ---------- footer ---------- */
+
+.skin-classified .cl-foot {
+  border-top: 1px solid #cccccc;
+  margin-top: 18px;
+  padding: 10px;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+.skin-classified .cl-foot-p { margin: 0 0 4px; word-break: break-word; }
+.skin-classified .cl-foot-links { margin: 0 0 4px; word-break: break-word; }
+
+/* ---------- wider viewports ---------- */
+
+@media (min-width: 640px) {
+  .skin-classified .cl-body { padding: 12px 16px; }
+  .skin-classified .cl-head { padding: 12px 16px 10px; }
+  .skin-classified .cl-catlist { columns: 3; }
+  .skin-classified .cl-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+}
+
+@media (min-width: 900px) {
+  .skin-classified .cl-catlist { columns: 4; }
+  .skin-classified .cl-photo svg { max-height: 420px; width: auto; }
+}
+
+/* ---------- posting ----------
+   The composer and the your-listings feed come from app/compose.js, which
+   ships its own .cw-* markup. These rules only give them somewhere to sit in
+   a classifieds page and keep them inside 360px. */
+
+.skin-classified .cl-post,
+.skin-classified .cl-mine {
+  margin: 14px 0;
+  padding-top: 10px;
+  border-top: 1px solid #c8ccd2;
+}
+.skin-classified .cl-post .cw-root,
+.skin-classified .cl-mine .cw-root {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.skin-classified .cl-post textarea,
+.skin-classified .cl-post input {
+  max-width: 100%;
+  box-sizing: border-box;
+}

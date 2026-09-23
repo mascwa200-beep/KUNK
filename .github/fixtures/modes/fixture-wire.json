@@ -1,0 +1,29 @@
+{
+  "schema": 1, "domain": "fixture.wire", "title": "Fixture Wire", "type": "wire",
+  "era": "2026", "skin": "wireroom",
+  "description": "A fixture wire that exists only to prove the renderer runs.",
+  "links": [],
+  "data": {
+    "agency": "Fixture News Service",
+    "categories": [
+      { "id": "gen", "name": "General" },
+      { "id": "util", "name": "Utilities" }
+    ],
+    "dispatches": [
+      {
+        "id": "d1", "catId": "util", "slug": "GRIDFALL-POWER",
+        "dateline": "GRIDFALL, Verity Co. — ", "priority": "bulletin",
+        "at": "2026-09-20T06:10:00Z",
+        "lead": "Power failed across Gridfall early Sunday after equipment trouble at Substation No. 3, the county said.",
+        "body": "Roughly 1,400 customers were affected, the county said.\n\nCrews were dispatched at about 6 a.m., according to a county spokesperson.\n\n___\n\n(CORRECTS spelling of Pennock in 4th paragraph)"
+      },
+      {
+        "id": "d2", "catId": "gen", "slug": "VERITY-BOARD",
+        "dateline": "MARCHFIELD, Verity Co. — ", "priority": "routine",
+        "at": "2026-09-19T15:00:00Z",
+        "lead": "The county board deferred a culvert contract for the third time, according to the meeting agenda.",
+        "body": "No new date was set, the agenda showed.\n\nMOVED"
+      }
+    ]
+  }
+}

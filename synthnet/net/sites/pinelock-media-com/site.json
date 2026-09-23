@@ -1,0 +1,367 @@
+{
+  "schema": 1,
+  "domain": "pinelock-media.com",
+  "title": "Pinelock Media Group",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "The corporate site of the holding company that owns the Verity Ledger and thirty other local news properties, with an investor page, a careers page and no reporters.",
+  "tags": ["corporate", "media", "pinelock", "2026"],
+  "links": [
+    "now.verityledger.com",
+    "veritywire.press"
+  ],
+  "data": {
+    "navLabel": "Company",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Company",
+        "blocks": [
+          { "kind": "image", "seed": "pinelock-wordmark-2019", "imgKind": "banner",
+            "caption": "Pinelock Media Group" },
+          { "kind": "heading", "level": 1, "text": "Pinelock Media Group" },
+          { "kind": "text", "body": "Pinelock Media Group is a privately held operator of local media properties. The Group publishes [b]31 properties[/b] across [b]four states[/b] on a single unified publishing platform, reaching approximately 1.9 million monthly unique readers." },
+          { "kind": "text", "body": "The Group was formed in 2009 to acquire and operate community publishing assets in secondary and tertiary markets. Our thesis has not changed since: these markets are durable, underserved by national media, and structurally overbuilt on the cost side. We buy well-regarded local titles, retain the mastheads readers know, and move the work of producing and distributing content onto shared infrastructure." },
+          { "kind": "heading", "level": 2, "text": "Our approach" },
+          { "kind": "list", "ordered": false, "items": [
+            "[b]One platform.[/b] All 31 properties publish through the same system, on the same templates, with the same taxonomy. Transition was completed across the portfolio in the fourth quarter of 2024.",
+            "[b]Shared services.[/b] Production, scheduling, categorisation, distribution, ad operations, billing and legal-notice compliance are centralised. Properties do not maintain their own stacks.",
+            "[b]Local identity, preserved.[/b] Mastheads, property names and legal-notice standing are retained through acquisition. Readers should not need to know who owns a title.",
+            "[b]Volume discipline.[/b] Published output per property rose 41% year over year while average cost per published item fell to $2.40.",
+            "[b]Nothing stranded.[/b] Where a market cannot support a standalone title, the property is consolidated into a surviving property in the same operating group rather than closed."
+          ] },
+          { "kind": "heading", "level": 2, "text": "At a glance" },
+          { "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Properties", "31"],
+              ["Markets served", "27"],
+              ["States", "4"],
+              ["Operating groups", "4"],
+              ["Monthly published items", "21,400"],
+              ["Monthly unique readers", "1.9M"],
+              ["Full-time equivalents", "61"],
+              ["Headquarters", "Bellhaven"],
+              ["Ownership", "Private"],
+              ["Formed", "2009"]
+            ] },
+          { "kind": "text", "body": "Figures as of 30 June 2026 and unaudited. See [url=/investors]Investor Information[/url] for definitions and for the Group's treatment of forward-looking statements." },
+          { "kind": "heading", "level": 2, "text": "History" },
+          { "kind": "table",
+            "head": ["Year", "Event"],
+            "rows": [
+              ["2009", "Pinelock Media Group formed as a holding company."],
+              ["2012", "First acquisition: four weekly titles in the Cardinal Valley market."],
+              ["2014", "Cardinal Valley Group established as the Group's first operating group."],
+              ["2016", "Acquisition of Halloran Communications (founded 1954), adding nine properties and establishing the Halloran Group."],
+              ["2017", "Acquisition of the Northpoint titles. Corporate functions consolidated to Bellhaven."],
+              ["2018", "Development begins on the unified publishing platform."],
+              ["2019", "Tri-River Group established. Portfolio-wide operating review completed."],
+              ["2021", "Senior credit facility refinanced. Real Estate Optimisation Program initiated."],
+              ["2023", "Platform transition completed across the Halloran Group."],
+              ["2024", "Platform transition completed across the remaining portfolio. Four titles consolidated into surviving properties."],
+              ["2025", "Corrections and reader-submission intake centralised into a single queue."],
+              ["2026", "Portfolio review announced. Ongoing."]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Announcements" },
+          { "kind": "text", "body": "[b]Pinelock Media Group Announces Portfolio Review[/b]\n[i]14 January 2026[/i]\n\nPinelock Media Group today announced a review of its property portfolio, with the objective of identifying opportunities for further operating efficiency and platform standardisation. The review is expected to conclude in the second half of the fiscal year. The Group does not comment on individual properties." },
+          { "kind": "text", "body": "[b]Kim Redditt Named Senior Vice President, Content Operations[/b]\n[i]6 October 2025[/i]\n\nPinelock Media Group today announced the appointment of Kim Redditt as Senior Vice President, Content Operations, effective immediately. Ms. Redditt joins the Group from a national customer-experience outsourcing provider, where she led a 900-seat delivery organisation." },
+          { "kind": "text", "body": "[b]Pinelock Media Group Completes Platform Transition[/b]\n[i]19 November 2024[/i]\n\nPinelock Media Group today announced that all 31 of its properties are now publishing on the Group's unified platform. The transition, begun in 2018, standardises production workflow, content taxonomy and advertising delivery across the portfolio. Chief Executive Officer Ellis Grandin said the milestone \"removes the last of the duplicated cost in this business.\"" },
+          { "kind": "text", "body": "Media inquiries: [b]communications@pinelock-media.com[/b]. Inquiries regarding coverage, corrections or submissions are not handled at this address; see [url=/standards]Content Standards[/url]." },
+          { "kind": "text", "body": "[i]This page was last updated 11 February 2026.[/i]" }
+        ]
+      },
+      {
+        "id": "brands",
+        "name": "Our Brands",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Our brands" },
+          { "kind": "text", "body": "Pinelock Media Group operates 31 local media properties across four states, organised into four operating groups. Properties retain their historic mastheads and their standing for the publication of legal notices in their jurisdictions of record.\n\nProperty websites are operated on the Group platform and are indexed by the major search providers. The Group does not maintain a directory of property URLs on this page." },
+          { "kind": "heading", "level": 2, "text": "Halloran Group" },
+          { "kind": "text", "body": "Acquired 2016 with the purchase of Halloran Communications. Nine properties." },
+          { "kind": "table",
+            "head": ["Property", "Market", "Joined", "Frequency"],
+            "rows": [
+              ["[url=synth://now.verityledger.com/]The Verity Ledger[/url]", "Gridfall, Verity Co.", "2016", "Digital"],
+              ["The Pell Union-Herald", "Pell", "2016", "Digital"],
+              ["Dunmore Daily Record", "Dunmore", "2016", "Digital"],
+              ["The Leland Star", "Leland", "2016", "Digital, weekly print"],
+              ["Stannard County Press", "Stannard Co.", "2016", "Digital"],
+              ["The Bowes City Sentinel", "Bowes City", "2016", "Digital, weekly print"],
+              ["Kearney Falls Advocate", "Kearney Falls", "2016", "Digital"],
+              ["The Quayle Beacon", "Quayle", "2016", "Digital"],
+              ["Alder County Shopper", "Alder Co.", "2016", "Print, free circulation"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Cardinal Valley Group" },
+          { "kind": "text", "body": "The Group's founding operating group. Eight properties." },
+          { "kind": "table",
+            "head": ["Property", "Market", "Joined", "Frequency"],
+            "rows": [
+              ["Cardinal Valley Times", "Fairhill", "2012", "Digital"],
+              ["The Meade Chronicle", "Meade", "2012", "Digital"],
+              ["Wexler Township Weekly", "Wexler Twp.", "2012", "Digital, weekly print"],
+              ["The Roselawn Press", "Roselawn", "2013", "Digital"],
+              ["Cardinal Valley Homes & Living", "Regional", "2014", "Digital, quarterly print"],
+              ["The Tarn Hill Gazette", "Tarn Hill", "2018", "Digital"],
+              ["Bexley Junction News", "Bexley Junction", "2019", "Digital"],
+              ["Fairhill Now", "Fairhill", "2021", "Digital"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Northpoint Group" },
+          { "kind": "text", "body": "Acquired 2017. Seven properties." },
+          { "kind": "table",
+            "head": ["Property", "Market", "Joined", "Frequency"],
+            "rows": [
+              ["Northpoint Tribune", "Northpoint", "2017", "Digital"],
+              ["The Ferrand Review", "Ferrand", "2017", "Digital"],
+              ["Grange Lake Courier", "Grange Lake", "2017", "Digital, weekly print"],
+              ["The Winlock Standard", "Winlock", "2018", "Digital"],
+              ["Alma Hill Post", "Alma Hill", "2020", "Digital"],
+              ["Northpoint Now", "Regional", "2022", "Digital"],
+              ["The Drury Monitor", "Drury", "2023", "Digital"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Tri-River Group" },
+          { "kind": "text", "body": "Established 2019. Seven properties." },
+          { "kind": "table",
+            "head": ["Property", "Market", "Joined", "Frequency"],
+            "rows": [
+              ["Tri-River Herald", "Kelso Bend", "2019", "Digital"],
+              ["The Amberly Democrat", "Amberly", "2019", "Digital"],
+              ["Two Rivers Independent", "Two Rivers", "2020", "Digital"],
+              ["The Calder Enterprise", "Calder", "2020", "Digital"],
+              ["Hollis County Tribune-Star", "Hollis Co.", "2021", "Digital"],
+              ["The Swanton Item", "Swanton", "2022", "Digital"],
+              ["Tri-River Shopper Group", "Regional", "2024", "Print, free circulation"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Notes on this list" },
+          { "kind": "list", "ordered": false, "items": [
+            "Four titles were consolidated into surviving properties in the same operating group during 2024 and are not listed. Legal-notice standing was transferred with the consolidation in each case.",
+            "\"Joined\" is the year the property entered the Pinelock portfolio, whether directly or through a group acquisition. It is not a founding date. Founding dates are not maintained centrally.",
+            "\"Frequency\" describes current production. Print frequency is reviewed annually.",
+            "Archive material published by a property prior to its platform transition is retained at its original location and is not migrated, reformatted or maintained.",
+            "Requests for property-level circulation or audience figures should be directed to [b]ir@pinelock-media.com[/b]."
+          ] },
+          { "kind": "text", "body": "[i]This page was last updated 11 February 2026.[/i]" }
+        ]
+      },
+      {
+        "id": "careers",
+        "name": "Careers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Careers at Pinelock" },
+          { "kind": "text", "body": "Pinelock Media Group is a lean organisation. Sixty-one people support 31 properties in four states, and that ratio is the result of deliberate design rather than constraint. If you are looking for a place where your work is visible in the numbers, this is one." },
+          { "kind": "image", "seed": "pinelock-stock-collab-04", "imgKind": "photo",
+            "caption": "Image used under licence. Individuals pictured are not employees of Pinelock Media Group." },
+          { "kind": "heading", "level": 2, "text": "Job families" },
+          { "kind": "list", "ordered": false, "items": [
+            "Content Operations",
+            "Revenue and Ad Operations",
+            "Platform and Engineering",
+            "Finance and Corporate"
+          ] },
+          { "kind": "heading", "level": 2, "text": "Open positions (1)" },
+          { "kind": "table",
+            "head": ["Requisition", "Title", "Group", "Location", "Type"],
+            "rows": [
+              ["PMG-2026-0114", "Content Operations Associate", "Content Operations", "Remote", "Full time, non-exempt"]
+            ] },
+          { "kind": "heading", "level": 3, "text": "Content Operations Associate — PMG-2026-0114" },
+          { "kind": "text", "body": "[b]Posted[/b] 4 August 2026. [b]Reposted[/b] 2 September 2026. [b]Location[/b] Remote. [b]Reports to[/b] Manager, Content Operations (Central Pod). [b]Compensation[/b] $19.25 to $21.00 per hour, depending on experience.\n\n[b]About the role.[/b] The Content Operations Associate supports the daily publishing cycle across an assigned block of properties. You will work a queue. The queue is the job. Associates are typically assigned 28 to 40 properties and are measured on throughput, hold time and category accuracy." },
+          { "kind": "text", "body": "[b]What you will do[/b]" },
+          { "kind": "list", "ordered": false, "items": [
+            "Monitor the publishing queue across assigned properties and clear held items within the 30-minute service level.",
+            "Verify category, market and geography tagging on queued items before release.",
+            "Apply the correct property template and confirm that the property's standard attribution line has populated.",
+            "Process reader submissions received through intake: obituary notices, public notices, event listings, school and youth sports results, and photographs.",
+            "Triage items flagged by the automated consistency check and route per the escalation matrix. Do not resolve flagged items independently.",
+            "Process correction requests received through the intake form, apply the appropriate correction type, and confirm the correction has posted to the property's corrections page.",
+            "Maintain the approved-terms and restricted-terms lists for assigned properties.",
+            "Log volume, hold time and exception counts in the daily operations report."
+          ] },
+          { "kind": "text", "body": "[b]What we are looking for[/b]" },
+          { "kind": "list", "ordered": false, "items": [
+            "Associate degree, or equivalent practical experience.",
+            "One year in a queue-based production, moderation, transcription or customer-operations environment.",
+            "Comfort working at volume. Assigned blocks typically run 600 to 900 published items per property per month.",
+            "Strong attention to formatting detail. Most of what we correct is formatting.",
+            "Ability to follow a documented process exactly, including when the process appears to produce an odd result. Process questions go to your manager, not into the item.",
+            "Prior journalism experience is not required."
+          ] },
+          { "kind": "text", "body": "[b]Schedule.[/b] Five days, including one weekend day. Shift assignment is by pod and rotates quarterly. The Central Pod covers the eastern two operating groups and starts at 5:30 a.m.\n\n[b]Equipment.[/b] Laptop and headset provided. Associates are responsible for their own connectivity. A wired connection is required; the platform is not supported over cellular.\n\n[b]Benefits.[/b] Medical, dental and vision after 90 days. 401(k) with a 2% match after one year of service. Accrued paid time off beginning at 11 days annually. Employee assistance program." },
+          { "kind": "text", "body": "[b]To apply.[/b] Applications are accepted only through our applicant tracking system at [url=synth://pinelock.talentroster.synth/]pinelock.talentroster.synth[/url]. Please do not send résumés to Group email addresses or to individual properties; they cannot be entered into the process and will not be acknowledged.\n\nApplications are reviewed on a rolling basis. Due to volume, we are unable to respond to every applicant." },
+          { "kind": "heading", "level": 2, "text": "Working here" },
+          { "kind": "list", "ordered": false, "items": [
+            "Remote-first. The Group maintains one office, in Bellhaven, and does not require attendance.",
+            "Documented process for everything. If you find something undocumented, that is a ticket and we would like you to file it.",
+            "Flat structure. Content Operations is nine people.",
+            "Internal mobility. Two of the Group's four operating group leads started in an hourly role."
+          ] },
+          { "kind": "text", "body": "Pinelock Media Group is an equal opportunity employer. Employment is at will. The Group does not sponsor employment visas.\n\n[i]This page was last updated 2 September 2026.[/i]" }
+        ]
+      },
+      {
+        "id": "investors",
+        "name": "Investor Information",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Investor information" },
+          { "kind": "text", "body": "Pinelock Media Group is privately held and has no publicly traded securities. This page is maintained for the Group's lenders, noteholders and prospective transaction counterparties. Nothing on it is an offer to sell or a solicitation of an offer to buy any security." },
+          { "kind": "heading", "level": 2, "text": "Key operating metrics" },
+          { "kind": "table",
+            "head": ["Metric", "FY2024", "FY2025", "H1 FY2026"],
+            "rows": [
+              ["Properties", "35", "31", "31"],
+              ["Markets", "29", "27", "27"],
+              ["Published items, monthly average", "12,900", "18,200", "21,400"],
+              ["Cost per published item", "$3.10", "$2.62", "$2.40"],
+              ["Monthly unique readers", "2.1M", "2.0M", "1.9M"],
+              ["Revenue per thousand impressions", "$2.14", "$1.96", "$1.84"],
+              ["Full-time equivalents", "94", "68", "61"],
+              ["Properties on the Platform", "31 of 35", "31 of 31", "31 of 31"],
+              ["Owned real estate (properties)", "9", "4", "3"]
+            ] },
+          { "kind": "text", "body": "Figures are unaudited and are presented on a management basis. \"Published item\" means a distinct unit of content released to a property's public site through the Platform, including items released to more than one property. \"Cost per published item\" is total content operations cost, including allocated platform and licensing cost, divided by published items. It excludes revenue operations, corporate and interest." },
+          { "kind": "heading", "level": 2, "text": "Operating highlights" },
+          { "kind": "list", "ordered": false, "items": [
+            "Platform transition completed across the portfolio in Q4 FY2024. All 31 properties now publish on common infrastructure with a common taxonomy.",
+            "Published item volume increased 41% year over year in H1 FY2026 while content operations headcount declined from 14 to 9.",
+            "Cost per published item declined for the seventh consecutive quarter.",
+            "Reader-submission and correction intake was centralised into a single queue in March 2025, retiring 31 property-level intake paths and the associated telephone lines.",
+            "Four sub-scale titles were consolidated into surviving properties in FY2025. Legal-notice standing and the associated statutory revenue were retained in each case.",
+            "Two remaining owned buildings were sold and leased back in FY2025 under the Real Estate Optimisation Program. One owned property remains.",
+            "Syndicated regional copy is licensed under a flat-rate agreement renewed in January 2026, replacing per-item pricing."
+          ] },
+          { "kind": "heading", "level": 2, "text": "Capital structure" },
+          { "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Senior secured credit facility", "$48.0M commitments"],
+              ["Drawn at 30 June 2026", "$41.2M"],
+              ["Maturity", "March 2029"],
+              ["Amended and extended", "March 2025"],
+              ["Financial covenants", "Total net leverage; fixed charge coverage"],
+              ["Covenant compliance", "In compliance at 30 June 2026"],
+              ["Equity sponsor", "Not disclosed"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Market environment" },
+          { "kind": "text", "body": "The Group competes for local advertising and reader attention with national platforms, with programmatic inventory generally, and with a growing set of low-cost regional publishing networks, including Meridian Local Network. Competition of this kind is expected to continue to pressure revenue per thousand impressions.\n\nManagement's view is that the response to that pressure is cost per item rather than price. The Group has reduced cost per item by 23% over eight quarters and believes there is further room." },
+          { "kind": "heading", "level": 2, "text": "Reporting calendar" },
+          { "kind": "table",
+            "head": ["Period", "Lender reporting due"],
+            "rows": [
+              ["Q1 FY2026", "Delivered 14 February 2026"],
+              ["Q2 FY2026", "Delivered 15 May 2026"],
+              ["Q3 FY2026", "Delivered 13 August 2026"],
+              ["Q4 and FY2026", "Due 20 November 2026"],
+              ["Audited FY2026 financials", "Due 31 January 2027"]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Forward-looking statements" },
+          { "kind": "text", "body": "This page contains forward-looking statements, including statements regarding portfolio composition, operating cost, published item volume, platform standardisation and the outcome of the portfolio review announced in January 2026. Forward-looking statements are based on management's current expectations and are subject to risks and uncertainties, including changes in advertising demand, changes in search and distribution referral, the availability and cost of licensed content, statutory changes affecting public-notice publication, litigation, and the Group's ability to service its indebtedness. Actual results may differ materially. The Group undertakes no obligation to update any forward-looking statement.\n\nInvestor and lender inquiries: [b]ir@pinelock-media.com[/b]. The Group does not respond to inquiries regarding individual properties, individual items of content, or the Group's arrangements with its content vendors." },
+          { "kind": "text", "body": "[i]This page was last updated 13 August 2026.[/i]" }
+        ]
+      },
+      {
+        "id": "standards",
+        "name": "Content Standards",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Content standards" },
+          { "kind": "text", "body": "Every property in the Pinelock portfolio publishes under the same standards document. This page is a summary of it. The controlled version is internal." },
+          { "kind": "heading", "level": 2, "text": "Sourcing" },
+          { "kind": "text", "body": "Items published on the Platform are assembled from a defined source set. Sources outside that set are not admitted." },
+          { "kind": "list", "ordered": false, "items": [
+            "Agendas, packets and minutes published by a governmental body in the property's market.",
+            "Public safety dispatch summaries as released by the responsible agency.",
+            "Official statements, releases and filings issued by an identified organisation.",
+            "Notices, obituaries, listings and results submitted through the Group intake form.",
+            "Licensed regional wire copy. The Group licenses county and regional copy from [url=synth://veritywire.press/]Veritywire Press[/url] under a flat-rate agreement.",
+            "Material previously published by a Pinelock property."
+          ] },
+          { "kind": "text", "body": "The last category is the one readers ask about. A property may republish, update or expand an item that originated at another property in the portfolio. Where it does, the item carries the standard attribution line and no separate credit." },
+          { "kind": "heading", "level": 2, "text": "Attribution" },
+          { "kind": "text", "body": "Items produced through the Platform carry the property's standard staff designation. Individual attribution is applied only where an identified contributor has supplied original material under a current contributor agreement.\n\nA staff designation is a property attribute. It does not denote an individual and should not be read as one. Designations in use across the portfolio are reviewed annually and are changed from time to time; a change to a designation is not a change to the underlying item and is not treated as a correction." },
+          { "kind": "heading", "level": 2, "text": "Verification" },
+          { "kind": "text", "body": "All items pass an automated consistency check before release. The check compares asserted names, dates, figures and place references against the source document set and against previously published items on the Platform.\n\nItems that fail the check are held and routed to Content Operations. Held items are cleared, corrected or suppressed within the service level. The Group does not publish the pass rate." },
+          { "kind": "heading", "level": 2, "text": "Corrections" },
+          { "kind": "text", "body": "Correction requests are accepted through the Group intake form only. The form is linked from the footer of every property site.\n\nRequests received by any other route cannot be entered into the queue and will not be actioned. This includes telephone calls to a property's legal-notice number, correspondence sent by post to a property address of record, comments left on third-party platforms, and messages sent to Group email addresses.\n\nA complete request identifies the property, the item, the specific text at issue and the correct information, with a source. Requests that do not identify a specific item cannot be processed. Requests concerning items published prior to a property's platform transition cannot be processed, as pre-transition archives are not maintained.\n\nActioned corrections are posted to the property's corrections page. For The Verity Ledger, that page is at [url=synth://now.verityledger.com/corrections]now.verityledger.com/corrections[/url]." },
+          { "kind": "heading", "level": 2, "text": "What we do not do" },
+          { "kind": "list", "ordered": false, "items": [
+            "We do not accept news tips. There is no intake path for an item that is not already in the source set.",
+            "We do not arrange interviews, at Group level or at property level.",
+            "We do not remove published items at request, except where required by law or by a court of competent jurisdiction.",
+            "We do not disclose the composition of the source set for an individual item.",
+            "We do not comment on the content of any individual item."
+          ] },
+          { "kind": "text", "body": "[i]This page was last updated 3 March 2025.[/i]" }
+        ]
+      },
+      {
+        "id": "leadership",
+        "name": "Leadership",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Leadership" },
+          { "kind": "table",
+            "head": ["Name", "Title", "Joined"],
+            "rows": [
+              ["Ellis Grandin", "Chief Executive Officer", "2009"],
+              ["Dana Vosberg", "Chief Financial Officer", "2017"],
+              ["Preston Amell", "Chief Revenue Officer", "2019"],
+              ["Kim Redditt", "Senior Vice President, Content Operations", "2025"],
+              ["Trevor Oyelaran", "Vice President, Platform and Audience", "2018"],
+              ["Susan Hatchell", "General Counsel and Corporate Secretary", "2014"]
+            ] },
+          { "kind": "text", "body": "[b]Ellis Grandin[/b] founded Pinelock Media Group in 2009 and has served as Chief Executive Officer since formation. He previously held operating roles in regional directory publishing and in outdoor advertising. He serves on the board of a state trade association." },
+          { "kind": "text", "body": "[b]Dana Vosberg[/b] joined the Group in 2017 and is responsible for finance, treasury, lender reporting and the Real Estate Optimisation Program. She previously served as Vice President, Finance at a multi-site healthcare services operator." },
+          { "kind": "text", "body": "[b]Preston Amell[/b] leads revenue, ad operations and the Group's programmatic partnerships. He joined in 2019 from a demand-side platform, where he ran mid-market sales. He has held revenue leadership roles in local media since 2006, beginning in circulation." },
+          { "kind": "text", "body": "[b]Kim Redditt[/b] leads Content Operations, including production, intake, categorisation and the corrections queue. She joined the Group in October 2025 from a national customer-experience outsourcing provider, where she led a 900-seat delivery organisation across three sites." },
+          { "kind": "text", "body": "[b]Trevor Oyelaran[/b] is responsible for the Group's publishing platform, taxonomy, distribution and search performance. He joined in 2018 and led the platform build and the portfolio-wide transition completed in 2024." },
+          { "kind": "text", "body": "[b]Susan Hatchell[/b] advises on transactions, licensing, public-notice compliance and pre-publication matters. She joined Halloran Communications in 2014 and continued with the Group following the 2016 acquisition." },
+          { "kind": "heading", "level": 2, "text": "Operating group leads" },
+          { "kind": "table",
+            "head": ["Operating group", "Lead", "Properties"],
+            "rows": [
+              ["Halloran Group", "Renata Coyle", "9"],
+              ["Cardinal Valley Group", "Bill Stoddert", "8"],
+              ["Northpoint Group", "Renata Coyle", "7"],
+              ["Tri-River Group", "Marcy Kwan", "7"]
+            ] },
+          { "kind": "text", "body": "Operating group leads are accountable for revenue, published item volume and cost per item within their group. They do not have content authority; content standards are set centrally. See [url=/standards]Content Standards[/url].\n\nThe Group has not maintained a separate biography page for operating group leads since 2023." },
+          { "kind": "text", "body": "[i]This page was last updated 6 October 2025.[/i]" }
+        ]
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Contact" },
+          { "kind": "image", "seed": "pinelock-hq-bellhaven", "imgKind": "photo",
+            "caption": "Corporate offices, Bellhaven. Suite 700." },
+          { "kind": "heading", "level": 2, "text": "Corporate" },
+          { "kind": "text", "body": "Pinelock Media Group\n1100 Kessel Ridge Parkway, Suite 700\nBellhaven\n\nReception is staffed 9:00 a.m. to 4:00 p.m., Monday through Thursday. The Group does not accept walk-in visitors without an appointment." },
+          { "kind": "heading", "level": 2, "text": "Where to direct an inquiry" },
+          { "kind": "table",
+            "head": ["Inquiry", "Route"],
+            "rows": [
+              ["Media and communications", "communications@pinelock-media.com"],
+              ["Investors and lenders", "ir@pinelock-media.com"],
+              ["Advertising, all properties", "sales@pinelock-media.com"],
+              ["Vendors and accounts payable", "ap@pinelock-media.com"],
+              ["Employment applications", "Applicant tracking system only. See [url=/careers]Careers[/url]."],
+              ["Corrections and submissions", "Property intake form only. See [url=/standards]Content Standards[/url]."],
+              ["News tips", "Not accepted. See [url=/standards]Content Standards[/url]."],
+              ["Legal and service of process", "Susan Hatchell, General Counsel, at the corporate address above."],
+              ["Public-notice publication", "The relevant property's legal-notice line, listed in the property's published rate card."]
+            ] },
+          { "kind": "heading", "level": 2, "text": "Property locations" },
+          { "kind": "text", "body": "Property addresses of record are maintained where required for legal-notice standing and for statutory publication. They are not staffed for walk-in inquiries and the telephone numbers associated with them route to the Group intake queue.\n\nThe Group does not identify individual personnel by property. Requests to speak with a person at a named property should be sent to [b]communications@pinelock-media.com[/b]." },
+          { "kind": "heading", "level": 2, "text": "Terms" },
+          { "kind": "list", "ordered": false, "items": [
+            "Material published by Group properties is the property of Pinelock Media Group or its licensors. Reproduction requires written permission.",
+            "The Group does not licence its content for use in the training of machine learning systems, and reserves all rights in respect of such use.",
+            "Unsolicited material sent to the Group or to any property becomes the property of the Group and will not be returned.",
+            "The Group's privacy notice was last revised in 2021 and is available on request."
+          ] },
+          { "kind": "text", "body": "[i]This page was last updated 11 February 2026.[/i]" }
+        ]
+      }
+    ]
+  }
+}

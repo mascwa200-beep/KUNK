@@ -1,0 +1,755 @@
+{
+  "schema": 1,
+  "domain": "now.verityledger.com",
+  "title": "The Verity Ledger",
+  "type": "news",
+  "era": "2026",
+  "skin": "portal-red",
+  "description": "Verity County's newspaper since 1901, now a content pipeline operated by Pinelock Media Group. No reporter has worked here since 2019.",
+  "links": [
+    "verityledger.com",
+    "gridline.social",
+    "askverity.com",
+    "62chan.org",
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "kestrel-journal.net",
+    "pulse.gridfall.net",
+    "clipvault.tv",
+    "forums.verityrail.org"
+  ],
+  "data": {
+    "masthead": "The Verity Ledger",
+    "slogan": "Verity County's trusted local news source since 1901. Updated continuously.",
+    "sections": [
+      {
+        "id": "frontpage",
+        "name": "Front Page"
+      },
+      {
+        "id": "local",
+        "name": "Local"
+      },
+      {
+        "id": "government",
+        "name": "Government"
+      },
+      {
+        "id": "publicsafety",
+        "name": "Public Safety"
+      },
+      {
+        "id": "business",
+        "name": "Business"
+      },
+      {
+        "id": "sports",
+        "name": "Sports"
+      },
+      {
+        "id": "obituaries",
+        "name": "Obituaries"
+      },
+      {
+        "id": "lifestyle",
+        "name": "Lifestyle"
+      },
+      {
+        "id": "notices",
+        "name": "Legal & Notices"
+      }
+    ],
+    "articles": [
+      {
+        "id": "a-01",
+        "sectionId": "frontpage",
+        "headline": "Verity County Officials Confirm Routine Maintenance At Substation No. 3",
+        "dek": "Brief service interruptions are possible, according to a statement.",
+        "byline": "By Verity Ledger Staff",
+        "date": "September 18, 2026",
+        "featured": true,
+        "lead": "GRIDFALL. Verity Valley Power & Light has confirmed that routine maintenance will be carried out at Substation No. 3 in the coming weeks, according to a statement released by the company.",
+        "body": "The work is described as routine. Residents in the affected area may experience brief service interruptions.\n\nSubstation No. 3 has been a subject of local interest since the well-documented substation fire of 2004, which left thousands of residents without power and prompted a review of infrastructure safety across the region. The facility was later rebuilt with modern automated systems.\n\nVerity Valley Power & Light did not respond to a request for comment.\n\n[i]This article was produced with the assistance of automated tools and reviewed in accordance with Ledger editorial standards.[/i]\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "THE SUBSTATION",
+        "readMinutes": 2,
+        "updates": [
+          {
+            "at": "2026-09-18T07:05",
+            "text": "Verity Valley Power & Light's posted notice gives the work as taking place over three nights in October. An earlier version of this article did not give dates."
+          },
+          {
+            "at": "2026-09-18T12:40",
+            "text": "A filing posted by the state utility commission lists planned outages at Substation No. 3 on the nights of October 6, October 7 and October 13. The filing gives the affected load as about 2,900 customers on each of the three nights, from 11 p.m. to 5 a.m.\n\nThe statement the utility supplied described the work as routine maintenance with the possibility of brief service interruptions."
+          },
+          {
+            "at": "2026-09-18T18:15",
+            "text": "Verity Valley Power & Light said by email that the phrase brief service interruptions referred to switching operations at the start and end of each night's work and not to the length of the outages themselves. The utility did not answer a question about whether affected customers will be notified individually."
+          },
+          {
+            "at": "2026-09-18T22:40",
+            "text": "The October dates in this article are the dates in the commission filing. A notice posted on the utility's own site gives the first night as October 5. The Ledger has not established which is correct and has asked."
+          }
+        ]
+      },
+      {
+        "id": "a-02",
+        "sectionId": "frontpage",
+        "headline": "What We Know About The Substation Fire That Changed Verity County",
+        "dek": "A look back at one of the most significant events in county history.",
+        "byline": "By Ainsley Rowe",
+        "date": "September 12, 2026",
+        "featured": true,
+        "lead": "GRIDFALL. More than two decades later, the substation fire remains one of the most discussed events in Verity County history.",
+        "body": "The fire occurred in 2004 and was likely caused by a lightning strike during a severe storm, according to multiple sources. Two utility workers tragically lost their lives. The outage left thousands of residents without power for several days.\n\nIn the years since, the incident has been the subject of renewed interest online, with video retrospectives drawing millions of views.\n\nLocal historians note that the event continues to shape how residents think about infrastructure in the region. Today, residents can rest assured that safety standards have improved significantly.\n\n[b]Related:[/b] [url=synth://clipvault.tv/]clipvault.tv[/url] | [url=synth://gridline.social/]gridline.social[/url]\n\n[i]If you or someone you know has been affected by a power outage, consider contacting your local utility provider.[/i]\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "LOOKING BACK",
+        "readMinutes": 11
+      },
+      {
+        "id": "a-03",
+        "sectionId": "frontpage",
+        "headline": "County General Announces Expanded Hours For Walk-In Clinic",
+        "dek": "The hospital says the change reflects community demand.",
+        "byline": "By Ledger Newsdesk",
+        "date": "September 17, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD. County General Hospital has announced expanded hours at its walk-in clinic, effective next month.",
+        "body": "Under the new schedule, the clinic will be open Thursday evenings. Saturday morning hours will be discontinued.\n\n\"We are pleased to expand access for the residents of Verity County,\" a hospital spokesperson said in a statement.\n\nCounty General Hospital is located in Marchfield and serves the residents of Verity County.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "HEALTH",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-04",
+        "sectionId": "frontpage",
+        "headline": "Branch Trail Named One Of The Region's Best Rail Trails",
+        "dek": "The 11.2-mile corridor earned a spot on a national list.",
+        "byline": "By AutoLocal Syndication",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD. The Verity Branch Trail has been named one of the region's best rail trails, according to a recently published ranking.",
+        "body": "The trail spans 11.2 miles of former railway corridor between Marchfield and Coyne Flats. It opened in 2014 following the closure of the Verity Rail branch line in 2009.\n\nOutdoor recreation is an important part of life in Verity County. Increased trail usage reflects a national trend toward outdoor activity.\n\nOne section of the trail remains closed to the public.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "THE BRANCH LINE",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-05",
+        "sectionId": "frontpage",
+        "headline": "Ashkettle Mystery Broadcast: What We Know",
+        "dek": "The Signal on 62 has drawn attention from researchers and residents alike.",
+        "byline": "By Marcus Feld",
+        "date": "September 4, 2026",
+        "featured": false,
+        "lead": "ASHKETTLE. A shortwave broadcast heard along County Route 62 continues to attract attention from listeners across the region.",
+        "body": "The broadcast, known locally as the Signal on 62, consists of four-digit number groups read by a synthetic voice. It has been reported in the area for many years.\n\nAccording to multiple sources, researchers have concluded that the transmission was part of an alternate reality game promoting a video game that was ultimately cancelled in 2016. This explanation is now generally accepted.\n\nLocal officials have not commented. The Verity County Sheriff's Office did not respond to a request for comment.\n\n[b]Further reading:[/b] [url=synth://clipvault.tv/]clipvault.tv[/url]\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "ROUTE 62",
+        "readMinutes": 2
+      },
+      {
+        "id": "a-06",
+        "sectionId": "local",
+        "headline": "Carrow Wireless Repair Expands To Seven Days A Week",
+        "dek": "The Route 62 business occupies a well-known local landmark.",
+        "byline": "By AutoLocal Syndication",
+        "date": "September 13, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. A phone repair business on County Route 62 has expanded to seven-day operation, according to a social media post.",
+        "body": "The business operates in the former Blue Kestrel building, a beloved local landmark. The Blue Kestrel was a diner that closed its doors in 2006 after a devastating fire. The building was demolished and the site is now home to a modern retail development.\n\nThe neon sign depicting a kestrel remains one of the most photographed objects in Verity County.\n\n[b]More Verity County nostalgia:[/b] [url=synth://gridline.social/]gridline.social[/url]\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "LANDMARKS",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-07",
+        "sectionId": "local",
+        "headline": "Coyne Flats Fall Festival: Everything You Need To Know",
+        "dek": "Your complete guide to this year's celebration.",
+        "byline": "By AutoLocal Syndication",
+        "date": "September 10, 2026",
+        "featured": false,
+        "lead": "COYNE FLATS. The Coyne Flats Fall Festival returns this autumn, bringing food, music and family activities to the village green.",
+        "body": "The festival is a highlight of the Verity County calendar and attracts visitors from across the region.\n\nAttendees are encouraged to arrive early as parking is limited. Festival organisers could not be reached for comment.\n\n[b]Editor's note:[/b] this article has been updated. A previous version of this article stated that the festival was taking place.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "THINGS TO DO",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-08",
+        "sectionId": "local",
+        "headline": "Marchfield Library Digitizes Historic Newspaper Archives",
+        "dek": "Decades of microfilm are being made available at no cost.",
+        "byline": "By Ledger Newsdesk",
+        "date": "September 15, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD. Marchfield Public Library has announced the digitization of historic newspaper archives dating back to 1911.",
+        "body": "The project is being carried out by library staff using existing equipment. The scans are available free of charge and without registration.\n\n\"It is a spreadsheet and a scanner and Tuesdays,\" said Karen Fennimore, an archivist at the library, when reached for comment by a member of the public who then posted her remarks online. The Ledger was unable to independently verify this quotation and has reproduced it from [url=synth://gridline.social/]gridline.social[/url].\n\nThe Ledger does not maintain a public archive of its own editions.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "THE LIBRARY",
+        "readMinutes": 2
+      },
+      {
+        "id": "a-09",
+        "sectionId": "local",
+        "headline": "Residents Report Brief Power Interruption On Pell Road",
+        "dek": "The utility says no outage was recorded.",
+        "byline": "By CountyWatch Automated Desk",
+        "date": "September 11, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Several residents reported a brief loss of power in the Pell Road area early Friday morning.",
+        "body": "Verity Valley Power & Light's outage map did not show an outage in the area at the time of reporting.\n\nResidents experiencing a power outage are encouraged to contact their utility provider.\n\n[i]This article was generated from publicly available reports and has not been reviewed by a human editor.[/i]\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "OUTAGES",
+        "readMinutes": 1,
+        "updates": [
+          {
+            "at": "2026-09-11T09:12",
+            "text": "Verity Valley Power & Light said it has no record of an outage in the Pell Road area on Friday morning."
+          },
+          {
+            "at": "2026-09-11T13:45",
+            "text": "The Verity County sheriff's dispatch log records two calls from the Pell Road area between 5:10 and 5:40 a.m. Both are logged as reporting a loss of power."
+          },
+          {
+            "at": "2026-09-11T17:30",
+            "text": "Verity Valley Power & Light said Friday afternoon that a momentary interruption was recorded on the Pell Road circuit at 5:14 a.m. and lasted under two seconds. The utility said momentary interruptions are not shown on the public outage map.\n\nThis article originally reported that no outage was recorded."
+          },
+          {
+            "at": "2026-09-11T20:05",
+            "text": "The utility said Friday evening that the momentary interruption it confirmed was on a circuit serving Pell Road in the town of Halsey, which is a different road from the Pell Road in Gridfall where the calls came from.\n\nThe Ledger has asked which residents were affected. The article above has not been amended."
+          }
+        ]
+      },
+      {
+        "id": "a-10",
+        "sectionId": "government",
+        "headline": "Ashkettle Water Board To Meet Thursday",
+        "dek": "The agenda includes a rate study.",
+        "byline": "By Ledger Newsdesk",
+        "date": "September 14, 2026",
+        "featured": false,
+        "lead": "ASHKETTLE. The Ashkettle Water Board will meet Thursday evening at the annex, according to a posted agenda.",
+        "body": "Agenda items include minutes, correspondence, a treasurer's report, and other business.\n\nMeetings of the Ashkettle Water Board are open to the public. The Ledger does not send a reporter to meetings of the Ashkettle Water Board.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "WATER",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-11",
+        "sectionId": "government",
+        "headline": "County Capital Plan Draft Released Ahead Of October Vote",
+        "dek": "Fourteen items are listed for consideration.",
+        "byline": "By D. Kessler",
+        "date": "September 8, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Verity County has released a draft capital plan ahead of a scheduled October vote.",
+        "body": "The plan lists fourteen items. Item 14 concerns a structure on the Verity Branch Trail. The item has appeared in previous draft plans.\n\nThe full agenda packet is available upon request from the county clerk. Instructions for requesting public records in Verity County are widely available online: [url=synth://askverity.com/]askverity.com[/url].\n\nCounty officials were not available for comment.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "THE CAPITAL PLAN",
+        "readMinutes": 2,
+        "updates": [
+          {
+            "at": "2026-09-08T11:30",
+            "text": "The draft is not posted on the county website. The county clerk's office says a paper copy is available at the counter on request, Monday through Thursday, 9 a.m. to 3 p.m."
+          },
+          {
+            "at": "2026-09-08T15:10",
+            "text": "The plan totals $6.4 million over five years. The largest item is $2.1 million for resurfacing on Pell Road and Kestrel Road. Item 14 is a feasibility study for the Coyne Creek trestle on the Verity Branch Trail."
+          },
+          {
+            "at": "2026-09-08T19:45",
+            "text": "The Quarry Road culvert does not appear in this draft. It appeared in the county's 2019 plan and again in the 2022 plan.\n\nThe county highway department said separately on Tuesday that the culvert will be replaced from the operating budget beginning September 28, under a road closure of eleven days."
+          },
+          {
+            "at": "2026-09-08T23:05",
+            "text": "The clerk's office said Tuesday evening that two drafts are in circulation and that the copy available at the counter is dated August 26. The draft this article describes is dated September 4. The Ledger has not seen the August 26 draft and cannot say how the two differ."
+          }
+        ]
+      },
+      {
+        "id": "a-12",
+        "sectionId": "government",
+        "headline": "County Announces Improvements To Public Records Portal",
+        "dek": "Officials say the new system will streamline requests.",
+        "byline": "By Verity Ledger Staff",
+        "date": "August 27, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Verity County has announced improvements to its public records request process.",
+        "body": "Under the new system, requests may be submitted through an online portal. Paper forms will continue to be accepted at the counter.\n\nNo action is required from residents.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "PUBLIC RECORDS",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-13",
+        "sectionId": "publicsafety",
+        "headline": "Gridfall Man Charged Following Traffic Stop On Route 62",
+        "dek": "The stop occurred early Wednesday.",
+        "byline": "By CountyWatch Automated Desk",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. A Gridfall man was charged following a traffic stop on County Route 62 early Wednesday, according to scanner activity.",
+        "body": "The man, whose name and street address were included in the original version of this article, is scheduled to appear in county court.\n\n[b]Correction:[/b] a previous version of this article listed an incorrect street address. The Ledger regrets the error. The Ledger is unable to confirm whether the corrected address is correct.\n\n[i]This article was generated from publicly available scanner activity and has not been reviewed by a human editor.[/i]\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "COURTS",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-14",
+        "sectionId": "publicsafety",
+        "headline": "Brush Fire Reported Near Quarry Road; No Injuries",
+        "dek": "Crews responded Sunday afternoon.",
+        "byline": "By CountyWatch Automated Desk",
+        "date": "September 6, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Fire crews responded to a reported brush fire near Quarry Road on Sunday afternoon. No injuries were reported.",
+        "body": "The Gridfall volunteer fire department responded. The cause is under investigation.\n\nQuarry Road is the site of the 2004 substation fire, one of the most significant events in county history.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "FIRE",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-15",
+        "sectionId": "publicsafety",
+        "headline": "Sheriff's Office Reminds Residents To Lock Vehicles",
+        "dek": "The reminder follows several reports.",
+        "byline": "By Ledger Newsdesk",
+        "date": "August 30, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. The Verity County Sheriff's Office is reminding residents to lock their vehicles and remove valuables.",
+        "body": "The reminder was issued in a post on social media. The Sheriff's Office did not respond to a request for comment.\n\nResidents are encouraged to report suspicious activity.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "SHERIFF",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-16",
+        "sectionId": "business",
+        "headline": "What The Latest Economic Data Means For Verity County Homeowners",
+        "dek": "Experts weigh in on what may lie ahead.",
+        "byline": "By Ainsley Rowe",
+        "date": "September 9, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Recent economic data has prompted questions from homeowners across Verity County.",
+        "body": "While conditions vary, many experts suggest that homeowners should review their circumstances carefully. Others caution that conditions may change.\n\nVerity County has a population of approximately 28,400 residents. The local economy has evolved significantly in recent decades.\n\nHomeowners with questions are encouraged to consult a qualified professional.\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "YOUR MONEY",
+        "readMinutes": 4
+      },
+      {
+        "id": "a-17",
+        "sectionId": "business",
+        "headline": "Sell Your Verity County Home In 7 Days — Any Condition",
+        "dek": "Paid partner content.",
+        "byline": "By Ledger Partner Studio",
+        "date": "September 15, 2026",
+        "featured": false,
+        "lead": "SPONSORED. Homeowners across Verity County are discovering a faster way to sell.",
+        "body": "[i]This is paid partner content. The Verity Ledger newsroom was not involved in its creation. The Verity Ledger does not have a newsroom.[/i]\n\nRequest your no-obligation cash offer today.",
+        "kicker": "PARTNER CONTENT",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-18",
+        "sectionId": "business",
+        "headline": "Downtown Gridfall Storefront Vacancy Rate Described As Stable",
+        "dek": "Officials point to recent openings.",
+        "byline": "By D. Kessler",
+        "date": "August 21, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. The storefront vacancy rate in downtown Gridfall has been described as stable, according to available information.",
+        "body": "Several storefronts on Third Street remain unoccupied, including the former offices of this newspaper.\n\nLocal officials could not be reached.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "DOWNTOWN",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-19",
+        "sectionId": "sports",
+        "headline": "Gridfall 28, Halsey 14: Panthers Roll In Conference Opener",
+        "dek": "A strong second half sealed it.",
+        "byline": "By Ledger Sports Desk",
+        "date": "September 13, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. Gridfall defeated Halsey 28-14 on Friday night in the conference opener.",
+        "body": "Gridfall led 14-14 at the half before pulling away in the third quarter. Halsey was unable to respond.\n\n[i]This recap was generated from a submitted box score. Player names have been omitted because the submitted box score did not include player names.[/i]\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "PREP FOOTBALL",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-20",
+        "sectionId": "sports",
+        "headline": "Marchfield Cross Country Competes At Invitational",
+        "dek": "The team traveled Saturday.",
+        "byline": "By Ledger Sports Desk",
+        "date": "September 7, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD. The Marchfield cross country team competed at an invitational on Saturday.",
+        "body": "Results were not submitted. Coaches are reminded that results may be submitted through the Ledger sports portal.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "PREP SPORTS",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-21",
+        "sectionId": "obituaries",
+        "headline": "Obituaries For The Week Of September 14",
+        "dek": "Notices submitted to the Verity Ledger.",
+        "byline": "By Verity Ledger Staff",
+        "date": "September 14, 2026",
+        "featured": false,
+        "lead": "VERITY COUNTY. The following notices have been submitted to the Verity Ledger.",
+        "body": "Obituary notices are submitted by funeral homes and families. A fee applies. The current rate is $0.62 per word, with a 40-word minimum, and $95 for a photograph.\n\nNotices are published as submitted and are not edited for length, style or accuracy.\n\n[i]Families wishing to submit a notice may do so through the online portal. Telephone submissions are no longer accepted.[/i]\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "OBITUARIES",
+        "readMinutes": 1
+      },
+      {
+        "id": "a-22",
+        "sectionId": "lifestyle",
+        "headline": "7 Cozy Fall Activities You Can Only Do In Verity County",
+        "dek": "Number 4 is a local favourite.",
+        "byline": "By AutoLocal Syndication",
+        "date": "September 5, 2026",
+        "featured": false,
+        "lead": "VERITY COUNTY. As the leaves begin to turn, residents are looking for ways to enjoy the season.",
+        "body": "[list][*]Visit a local farm stand[*]Take a walk on the Verity Branch Trail[*]Try a seasonal beverage at a local cafe[*]Attend the Coyne Flats Fall Festival[*]Explore downtown Gridfall[*]Visit a historic landmark[*]Curl up with a good book[/list]\n\nWhat is your favourite fall activity in Verity County? Let us know in the comments. Comments are not enabled on this website.\n\n[b]— — —[/b]\n\n[b]YOU HAVE READ 3 OF YOUR 3 FREE ARTICLES THIS MONTH.[/b]\n\nSubscribe now for unlimited access to Verity County's trusted local news source since 1901. $1 for the first month, then $17.99/month. Cancel anytime online, by post, or by telephone between 9am and 11am Central, Tuesdays.\n\n[i]Already a subscriber? Sign in. If you are signed in and seeing this message, clear your cookies and sign in again. If that does not work, clear your cookies and sign in again.[/i]",
+        "kicker": "THINGS TO DO",
+        "readMinutes": 3
+      },
+      {
+        "id": "a-23",
+        "sectionId": "lifestyle",
+        "headline": "Remembering The Blue Kestrel: A Verity County Institution",
+        "dek": "Locals recall the diner that closed in 2006.",
+        "byline": "By Ainsley Rowe",
+        "date": "August 18, 2026",
+        "featured": false,
+        "lead": "GRIDFALL. For decades, the Blue Kestrel was where Verity County gathered.",
+        "body": "The diner, which opened in 1954, was known for its pie and its coffee. It closed permanently in 1977 following a fire in the kitchen.\n\nA memorial website maintained by a former employee preserves menus and photographs from the diner's heyday: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]. The site has not been updated in several years.\n\n[i]Editor's note: this article previously stated that the Blue Kestrel closed in 2006. It has been updated for accuracy.[/i]\n\n[b]— — —[/b]\n\n[b]SUBSCRIBERS ONLY — CONTINUE READING[/b]\n\nThis article is reserved for subscribers. Support local journalism in Verity County.\n\n[i]Why am I seeing this? You have reached your monthly limit of 3 articles. Your limit resets on the 1st. Today is the 3rd.[/i]",
+        "kicker": "LOOKING BACK",
+        "readMinutes": 2
+      },
+      {
+        "id": "a-24",
+        "sectionId": "notices",
+        "headline": "Cookie Notice, Privacy Policy And Terms Of Use",
+        "dek": "Last updated: September 1, 2026. Please read carefully.",
+        "byline": "By Pinelock Media Group Legal",
+        "date": "September 1, 2026",
+        "featured": false,
+        "lead": "By continuing to use now.verityledger.com you agree to the following. Your continued use constitutes agreement. Closing this notice constitutes agreement. Reading this notice constitutes agreement.",
+        "body": "[b]1. COOKIES AND SIMILAR TECHNOLOGIES.[/b] We and our 1,412 partners store and access information on your device, including cookies, device identifiers, local storage entries, cache entries, browser fingerprint characteristics, and similar technologies, for the purposes described below. Our partner list is updated continuously and is available on request. Requests for the partner list are processed within 90 days. The partner list is 118 pages.\n\n[b]2. PURPOSES.[/b] Store and/or access information on a device. Use limited data to select advertising. Create profiles for personalised advertising. Use profiles to select personalised advertising. Create profiles to personalise content. Use profiles to select personalised content. Measure advertising performance. Measure content performance. Understand audiences through statistics or combinations of data from different sources. Develop and improve services. Use limited data to select content. Ensure security, prevent and detect fraud, and fix errors. Deliver and present advertising and content. Save and communicate privacy choices. Match and combine data from other data sources. Link different devices. Identify devices based on information transmitted automatically.\n\n[b]3. LEGITIMATE INTEREST.[/b] Some of our partners process your personal data on the basis of legitimate interest rather than consent. You may object to this processing. Objecting requires you to interact with each partner individually. There are 1,412 partners. There is no button that does this for you. There was a button that did this for you. It was removed on 1 September 2026 as part of improvements to our privacy experience.\n\n[b]4. WHAT WE COLLECT.[/b] Information you provide, including your name, email address, postal address, payment information, date of birth, and any content you submit. Information collected automatically, including your IP address, approximate and precise location, device type, operating system, browser, screen resolution, battery level, installed fonts, time zone, language, referring page, pages viewed, time spent on each page, scroll depth, mouse movement, tap coordinates, typing cadence, and whether you have visited before. Information from third parties, including data brokers, advertising partners, social platforms, and public records.\n\n[b]5. HOW LONG WE KEEP IT.[/b] As long as necessary for the purposes described, or as required by applicable law, or as long as it remains commercially useful, whichever is longest. In practice this is indefinitely.\n\n[b]6. YOUR CHOICES.[/b] You may withdraw consent at any time through the privacy preference centre, accessible through the link in the footer of every page. The link in the footer of every page directs to this notice. This notice contains the link to the privacy preference centre. The privacy preference centre is temporarily unavailable.\n\n[b]7. CHILDREN.[/b] This service is not directed to children under 13. We do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will delete it, unless it has been shared with partners, in which case we will request that partners delete it, and partners are not obligated to respond to such requests.\n\n[b]8. AUTOMATED CONTENT.[/b] Some content on this service is produced using automated systems. Such content may contain inaccuracies. The Verity Ledger, Pinelock Media Group, and their affiliates make no warranty as to the accuracy, completeness, or reliability of any content published on this service, whether produced by automated systems or otherwise. Nothing on this service should be relied upon. Reliance on any content published on this service is at your sole risk.\n\n[b]9. CORRECTIONS.[/b] Requests for correction may be submitted through the corrections portal. The corrections portal was retired in 2024. Requests submitted to the corrections portal are not received. There is no alternative address.\n\n[b]10. ARCHIVES.[/b] This service does not maintain a public archive. Content may be modified, republished under a different byline, or removed at any time without notice, notation, or record. Historical editions of the Verity Ledger published prior to 2009 are not the property of Pinelock Media Group and are not hosted on this service. The Ledger's editions from 1998 to 2008 remain online at [url=synth://verityledger.com/]verityledger.com[/url], a legacy property which is not maintained, monitored, or supported, and whose continued availability is not guaranteed.\n\n[b]11. BYLINES.[/b] Bylines appearing on this service do not necessarily correspond to natural persons. A byline is an editorial attribution and does not constitute a representation that a named individual authored, reviewed, or was aware of the content to which it is attached. Former employees who object to the use of their name may contact Pinelock Media Group Legal in writing.\n\n[b]12. GOVERNING LAW.[/b] These terms are governed by the laws of the state of incorporation of Pinelock Media Group, which is not the state in which Verity County is located.\n\n[b]13. CHANGES.[/b] We may change this notice at any time. Changes are effective immediately upon posting. We are not obligated to notify you of changes. Your continued use following any change constitutes acceptance of the change. This notice has changed 41 times in the past 12 months.\n\n[b]14. CONTACT.[/b] Questions about this notice may be directed to Pinelock Media Group Legal. Correspondence is retained for 7 years. Correspondence is not answered.\n\n[i]This notice is approximately 940 words. The average article published on this service in the past 30 days is 171 words.[/i]\n\n[b][ ACCEPT ALL ][/b]  [b][ MANAGE 1,412 PARTNERS ][/b]",
+        "kicker": "LEGAL",
+        "readMinutes": 1
+      }
+    ],
+    "live": [
+      {
+        "id": "lb-outage-marchfield",
+        "headline": "Power out across Marchfield and Halsey",
+        "standfirst": "About 4,400 customers lost power at 6:41 p.m. Saturday. Verity Valley Power & Light has not given an estimate for restoration in Halsey.",
+        "open": true,
+        "startedAt": "2026-09-19T18:52",
+        "intervalMin": 6,
+        "keyPoints": [
+          "About 4,400 customers in Marchfield, Halsey and part of New Carrow lost power at 6:41 p.m. Saturday.",
+          "The utility attributes the loss to a fault on the Halsey tap. It has given an estimate of 6 a.m. for Halsey and none for the rest.",
+          "County General Hospital in Marchfield is on generator power. The emergency department is open and is not diverting.",
+          "A warming centre is open at the Marchfield community building. It is being lit by a generator borrowed from the fire department.",
+          "The utility's public outage map has been unavailable since 7:10 p.m. and the figures below are from the utility's phone line."
+        ],
+        "entries": [
+          {
+            "at": "2026-09-19T18:52",
+            "label": "MARCHFIELD",
+            "by": "Ledger Newsdesk",
+            "headline": "About 4,400 customers out",
+            "body": "Verity Valley Power & Light's outage map shows about 4,400 customers without power in Marchfield, Halsey and the eastern part of New Carrow. The map gives the start as 6:41 p.m.\n\nThere is no estimate for restoration."
+          },
+          {
+            "at": "2026-09-19T19:14",
+            "label": "THE UTILITY",
+            "by": "Ledger Newsdesk",
+            "headline": "Outage map is down",
+            "body": "The utility's outage map is returning an error. Figures from here on are from the recorded message on the utility's outage line, which is updated on an unstated schedule."
+          },
+          {
+            "at": "2026-09-19T19:40",
+            "label": "HOSPITAL",
+            "by": "Verity Ledger Staff",
+            "headline": "County General on generator",
+            "body": "County General Hospital in Marchfield is running on generator power, according to the county emergency management office. The emergency department is open and is not diverting ambulances.\n\nThe hospital's communications office is not staffed after 5 p.m."
+          },
+          {
+            "at": "2026-09-19T20:26",
+            "label": "MARCHFIELD",
+            "by": "Ledger Newsdesk",
+            "headline": "Warming centre open at the community building",
+            "body": "The Marchfield community building is open as a warming and charging centre, the county emergency management office said.\n\nThe building has no power. It is being lit and run from a generator borrowed from the Marchfield fire department. The county's notice asks people to bring their own extension cords."
+          },
+          {
+            "at": "2026-09-19T21:05",
+            "label": "SOCIAL",
+            "by": "Ledger Social Desk",
+            "headline": "What people in the affected area are posting",
+            "body": "[quote=CarrowWireless]Open on 62 till we run out of gas. Generator, six outlets, coffee is free and bad.[/quote]\n\n[quote=halsey_dm]Third time this year on this line. Nobody from the utility has ever come out and looked at the tap.[/quote]\n\n[quote=BrightLeaf Energy]Outages are rough. Stay charged out there. Tag us with #BrightLeafMoment for a chance to win a case.[/quote]"
+          },
+          {
+            "at": "2026-09-19T21:48",
+            "label": "THE UTILITY",
+            "by": "Ledger Newsdesk",
+            "headline": "Crews working two locations",
+            "body": "The recorded message on the utility's outage line says crews are working at two locations and that about 3,800 customers remain out.\n\nThe message does not say where the two locations are."
+          },
+          {
+            "at": "2026-09-19T22:36",
+            "label": "NEW CARROW",
+            "by": "Ledger Newsdesk",
+            "headline": "New Carrow back on",
+            "body": "Power is back in the eastern part of New Carrow, according to the outage line. About 2,600 customers remain out in Marchfield and Halsey."
+          },
+          {
+            "at": "2026-09-19T23:31",
+            "label": "HALSEY",
+            "by": "Ledger Newsdesk",
+            "headline": "Halsey still out; about 1,900 customers",
+            "body": "The outage line puts the remaining outage at about 1,900 customers, almost all of them in Halsey.\n\nThere is still no estimate for restoration in Halsey."
+          },
+          {
+            "at": "2026-09-20T00:52",
+            "label": "MARCHFIELD",
+            "by": "Ledger Newsdesk",
+            "headline": "Most of Marchfield restored",
+            "body": "The outage line says most of Marchfield is back. County General remains on generator while the hospital's transfer switch is reset, according to the emergency management office."
+          },
+          {
+            "at": "2026-09-20T02:05",
+            "label": "THE UTILITY",
+            "by": "Ledger Newsdesk",
+            "headline": "6 a.m. estimate for Halsey",
+            "body": "The utility's outage line now gives an estimate of 6 a.m. for the remaining Halsey customers. It is the first estimate the utility has given since the outage began nine hours ago."
+          },
+          {
+            "at": "2026-09-20T02:58",
+            "label": "GRIDFALL",
+            "by": "Ledger Newsdesk",
+            "headline": "Gridfall goes out as well",
+            "body": "About 2,900 customers in Gridfall and southern Ashkettle lost power at 2:41 a.m., according to the utility.\n\nThe Gridfall outage is part of the same event and brings the county total to about 4,700 customers."
+          },
+          {
+            "at": "2026-09-20T03:22",
+            "label": "CORRECTION",
+            "by": "Ledger Newsdesk",
+            "headline": "The Gridfall outage is a separate event",
+            "body": "Verity Valley Power & Light says the Gridfall outage that began at 2:41 a.m. is a fault on the feed from Substation No. 3 and is not connected to the Halsey tap. Power was back to most of Gridfall by 3:19 a.m.\n\nThe entry posted at 2:58 a.m. on this liveblog said the two outages were the same event. They are not. That entry has been left up."
+          }
+        ]
+      },
+      {
+        "id": "lb-budget-march",
+        "headline": "Verity County adopts its 2026 budget",
+        "standfirst": "Five hours and forty minutes, thirty-one speakers, and a 4-3 vote at 11:40 p.m.",
+        "open": false,
+        "startedAt": "2026-03-24T18:00",
+        "keyPoints": [
+          "The board of supervisors adopted a $31.4 million budget at 11:40 p.m. on a 4-3 vote.",
+          "The adopted budget raises the county levy 4.1 percent. A 2.9 percent version failed 3-4 at 10:14 p.m.",
+          "Fifty-one people signed in to speak. Thirty-one spoke. Public comment ran two hours and nine minutes.",
+          "The sheriff's request for two deputies was cut to one by amendment at 9:52 p.m.",
+          "The Ledger did not have anyone in the room. This liveblog was assembled from the county's audio recording, which was posted the following Friday."
+        ],
+        "entries": [
+          {
+            "at": "2026-03-24T18:00",
+            "label": "GRIDFALL",
+            "by": "Verity Ledger Staff",
+            "headline": "Called to order",
+            "body": "The board of supervisors is in session at the county building on Third Street. All seven members are present. Fifty-one people have signed the speaker sheet."
+          },
+          {
+            "at": "2026-03-24T18:12",
+            "label": "THE BUDGET",
+            "by": "Verity Ledger Staff",
+            "headline": "Administrator presents a $31.4 million budget",
+            "body": "County administrator Lowell Haske presents a general fund budget of $31.4 million, up from $30.1 million.\n\nHaske says the increase is driven by health insurance, fuel and the dispatch centre."
+          },
+          {
+            "at": "2026-03-24T18:31",
+            "label": "THE BUDGET",
+            "by": "Verity Ledger Staff",
+            "headline": "The levy question",
+            "body": "The budget as presented requires a levy increase of 4.1 percent. Haske says a 2.9 percent version exists and cuts one dispatcher position, two road crew positions and the parks seasonal budget."
+          },
+          {
+            "at": "2026-03-24T19:05",
+            "label": "PUBLIC COMMENT",
+            "by": "Verity Ledger Staff",
+            "headline": "Comment begins",
+            "body": "Public comment opens. The chair limits speakers to three minutes and says the board will sit until everyone who signed in has spoken."
+          },
+          {
+            "at": "2026-03-24T19:48",
+            "label": "PUBLIC COMMENT",
+            "by": "Ainsley Rowe",
+            "headline": "Roads, roads, the water board, roads",
+            "body": "Eleven speakers so far. Nine of them have raised road surfacing. Two have raised the Ashkettle water district, which the board does not control and which the chair notes twice.\n\nOne speaker asks why the county pays for a study of a bridge that has been fenced since 2014. The chair says that item is not in this budget."
+          },
+          {
+            "at": "2026-03-24T20:30",
+            "label": "PUBLIC COMMENT",
+            "by": "Ainsley Rowe",
+            "headline": "Fire departments ask for the radio money",
+            "body": "Four speakers from volunteer fire departments in Gridfall, Halsey and Coyne Flats ask the board to fund portable radios. The request is $84,000 and is not in either version of the budget.\n\nA Gridfall officer says the department's radios do not work inside the Marchfield end of the county."
+          },
+          {
+            "at": "2026-03-24T21:14",
+            "label": "PUBLIC COMMENT",
+            "by": "Verity Ledger Staff",
+            "headline": "Comment closes after two hours and nine minutes",
+            "body": "Thirty-one of the fifty-one people who signed in have spoken. The chair asks whether anyone else wishes to be heard. Nobody comes forward."
+          },
+          {
+            "at": "2026-03-24T21:40",
+            "label": "AMENDMENTS",
+            "by": "Verity Ledger Staff",
+            "headline": "Paving amendment passes 5-2",
+            "body": "An amendment moving $180,000 from the capital reserve to road surfacing passes 5-2. The money is not assigned to a road."
+          },
+          {
+            "at": "2026-03-24T21:52",
+            "label": "AMENDMENTS",
+            "by": "Verity Ledger Staff",
+            "headline": "Sheriff's two deputies cut to one",
+            "body": "An amendment reducing the sheriff's request from two deputies to one passes 4-3. The sheriff, who is in the room, does not speak.\n\nThe saving is given as $71,000 including benefits."
+          },
+          {
+            "at": "2026-03-24T22:14",
+            "label": "THE VOTE",
+            "by": "Verity Ledger Staff",
+            "headline": "2.9 percent version fails 3-4",
+            "body": "A motion to adopt the 2.9 percent version fails 3-4. The three votes in favour say the increase is more than households in the county can carry."
+          },
+          {
+            "at": "2026-03-24T22:50",
+            "label": "RECESS",
+            "by": "Verity Ledger Staff",
+            "headline": "Ten-minute recess, taken at eighteen",
+            "body": "The board recesses. The recording runs for eighteen minutes with the microphones live. Two members can be heard discussing the radio request and agreeing it will have to wait for the autumn."
+          },
+          {
+            "at": "2026-03-24T23:08",
+            "label": "THE BUDGET",
+            "by": "Verity Ledger Staff",
+            "headline": "Back in session",
+            "body": "The board returns. The chair asks the clerk to read the amended budget figure. The figure is $31.4 million, unchanged at the top line; the amendments moved money within it."
+          },
+          {
+            "at": "2026-03-24T23:40",
+            "label": "THE VOTE",
+            "by": "Verity Ledger Staff",
+            "headline": "Budget adopted 4-3",
+            "body": "The board adopts the 2026 budget 4-3 at 11:40 p.m. The levy rises 4.1 percent.\n\nThe meeting is adjourned at 11:44 p.m. after five hours and forty-four minutes."
+          }
+        ]
+      }
+    ],
+    "factchecks": [
+      {
+        "id": "fc-signal-arg",
+        "claim": "The Signal on 62 was part of an alternate reality game promoting a video game that was cancelled in 2016, and this explanation is now generally accepted.",
+        "claimBy": "Marcus Feld",
+        "claimWhere": "now.verityledger.com",
+        "claimWhen": "September 4, 2026",
+        "verdict": "missing-context",
+        "ruling": "The claim appears in an article published on this site. The article accurately reports an explanation that has been widely repeated across video, text and audio since 2016, and readers encountering that explanation elsewhere will find it stated in similar terms.\n\nOther explanations have also been offered. The Ledger has not independently verified any explanation of the transmission, including this one, and does not have the equipment to do so.\n\nWe rate this claim [b]missing context[/b].",
+        "evidence": [
+          "The cancelled-game explanation traces to a single post made on a local message board in 2016.",
+          "The poster of that 2016 post withdrew it later the same year and said he had been guessing. The withdrawal has not been reported anywhere the Ledger can find.",
+          "The transmission was being logged locally in 1998, eighteen years before the game it is said to have promoted was announced.",
+          "Six of the nine accounts of the transmission indexed by our research partner cite one of the other five.",
+          "Our automated summary of this claim, run again on September 19, returned the cancelled-game explanation and cited this site."
+        ],
+        "sources": [
+          "[url=synth://now.verityledger.com/article/a-05]The article containing the claim[/url]",
+          "[url=synth://boards.gridfall.net/]boards.gridfall.net[/url] — where the 2016 post was made",
+          "[url=synth://62chan.org/]62chan.org[/url] — reception logs, retrieved September 2026",
+          "[url=synth://gridline.social/]gridline.social[/url] — aggregated discussion"
+        ]
+      },
+      {
+        "id": "fc-fire-deaths",
+        "claim": "Nobody died in the Gridfall substation fire. Two volunteer firefighters were treated for smoke inhalation and released the same afternoon.",
+        "claimBy": "wpennock",
+        "claimWhere": "gridline.social",
+        "claimWhen": "August 14, 2026",
+        "verdict": "unproven",
+        "ruling": "The commenter, who says he worked for Verity Valley Power & Light at the time, states that no one died. Several widely circulated accounts of the fire report two deaths.\n\nCounty General Hospital does not release patient information and did not respond to a request for comment. Verity Valley Power & Light has never released its internal report. The Ledger has no record of its own from the period, as this site does not hold editions published before 2009.\n\nWith sources this far apart and no document either way, we rate this claim [b]unproven[/b].",
+        "evidence": [
+          "A video retrospective published in 2024, viewed approximately 4 million times, reports two deaths.",
+          "[url=synth://now.verityledger.com/article/a-02]This site's own account of the fire[/url] reports two deaths.",
+          "The Gridfall volunteer fire department's annual report for that year records two members treated for smoke inhalation at County General and released the same day, and records no fatality.",
+          "County General Hospital does not confirm or deny individual admissions and did not respond.",
+          "The commenter has posted the same claim 31 times on this platform since 2019 and has been asked for a document on eight of those occasions."
+        ],
+        "sources": [
+          "[url=synth://gridline.social/]gridline.social[/url] — the comment under review",
+          "[url=synth://clipvault.tv/]clipvault.tv[/url] — video retrospective",
+          "[url=synth://now.verityledger.com/article/a-02]now.verityledger.com[/url]"
+        ]
+      },
+      {
+        "id": "fc-population",
+        "claim": "Verity County's population has grown for three consecutive years.",
+        "claimBy": "AutoLocal_Feed",
+        "claimWhere": "gridline.social",
+        "claimWhen": "September 2, 2026",
+        "verdict": "false",
+        "ruling": "Nothing supports this. Every published count for the county and for its towns points the other way, and the school district's enrollment, which is counted every September, has fallen for eleven consecutive years.\n\nWe rate this claim [b]false[/b].",
+        "evidence": [
+          "Gridfall's population was about 34,000 in 2003 and is about 28,400 now.",
+          "Verity County school district enrollment was 2,961 in September 2025 and 2,914 in September 2026, and has fallen every year since 2015.",
+          "The county does not publish a population estimate between census years, so no source exists that could support a three-year trend either way.",
+          "The figure of 28,400 that appears in several articles on this site is the population of Gridfall and not of Verity County. Those articles have not been amended."
+        ],
+        "sources": [
+          "[url=synth://gridline.social/]gridline.social[/url] — the post under review",
+          "[url=synth://verity.county.gov/s/records]Verity County clerk, vital records[/url]",
+          "Verity County school district September enrollment counts, 2015 to 2026"
+        ]
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2026-09-19",
+        "articleId": "a-13",
+        "kind": "correction",
+        "text": "An earlier version of this article gave an incorrect street address for a man charged after a traffic stop on County Route 62. The address has been removed. The Ledger is unable to confirm a corrected address and has not published one."
+      },
+      {
+        "at": "2026-09-16",
+        "articleId": "a-04",
+        "kind": "correction",
+        "text": "An earlier version of this article said the Verity Rail branch line closed in 2009. The last revenue freight ran on 14 March 2008.\n\nThe date 2009 remains in the body of the article. Amending a body requires a request through the corrections portal, which was retired in 2024."
+      },
+      {
+        "at": "2026-08-25",
+        "articleId": "a-23",
+        "kind": "correction",
+        "text": "An earlier version of this article said the Blue Kestrel diner closed in 2006. The diner closed in 1977 following a fire in its kitchen. The Ledger regrets the error."
+      },
+      {
+        "at": "2026-05-04",
+        "articleId": "a-2026-0431",
+        "kind": "retraction",
+        "text": "On 1 May this site published a paid death notice for a Marchfield man who is alive.\n\nThe notice was submitted through the online obituary portal, which accepts a submission from any email address, charges the card at submission, and queues the notice for publication without a call to the funeral home named in it. The funeral home named in this notice had no record of the family. The notice ran for three days before the man's daughter reached a Pinelock Media Group mailbox that is read by a person.\n\nThe notice has been retracted and the $214.60 submission fee refunded. The portal has not been changed."
+      },
+      {
+        "at": "2025-11-12",
+        "kind": "editors-note",
+        "text": "Between February and June 2023 this site published articles under the byline Hal Brenner. Mr Brenner has not been employed by the Verity Ledger since October 2019 and did not write, review or see any of them. The byline was changed to Hal B. following a letter from Mr Brenner, and to Verity Ledger Staff following a second letter.\n\nThe articles have not been amended. The byline Hal B. still appears on 112 of them."
+      },
+      {
+        "at": "2025-08-07",
+        "articleId": "a-2025-2214",
+        "kind": "correction",
+        "text": "An earlier version of a story about the Ashkettle water board said a boil water advisory affected 410 households. The advisory affected 41 households. The figure was taken from an aggregator and not from the water board."
+      },
+      {
+        "at": "2025-06-19",
+        "articleId": "a-2025-1687",
+        "kind": "clarification",
+        "text": "A story about the Verity Branch Trail described the Coyne Creek trestle as open to walkers. The trestle has been fenced at both ends since the trail opened in 2014.\n\nThe story has been removed rather than amended. The system that publishes it cannot amend a story without republishing it under a new date, and a story republished under a new date is counted as a new story."
+      },
+      {
+        "at": "2025-02-03",
+        "articleId": "a-2025-0298",
+        "kind": "correction",
+        "text": "A story published on 1 February gave the year of the Gridfall substation fire as 2004. A reader wrote to say the year is 2003 and supplied a page reference. The year was changed to 2003 on 2 February and changed back to 2004 on 6 February.\n\nThe Ledger has no record of who or what made either change."
+      }
+    ]
+  }
+}

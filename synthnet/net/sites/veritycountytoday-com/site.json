@@ -1,0 +1,336 @@
+{
+  "schema": 1,
+  "domain": "veritycountytoday.com",
+  "title": "Verity County Today",
+  "type": "news",
+  "era": "2026",
+  "skin": "pinkslime",
+  "description": "A locally named news site with no staff page, no phone number and no address, published by Meridian Local Network, which runs four hundred of them.",
+  "tags": ["verity", "2026", "news", "pinkslime"],
+  "links": [
+    "veritywire.press",
+    "now.verityledger.com",
+    "verity.county.gov",
+    "thequarry.news",
+    "gridline.social",
+    "wiki.gridfall.net",
+    "askverity.com"
+  ],
+  "data": {
+    "masthead": "Verity County Today",
+    "slogan": "Independent local reporting for Verity County. Free to read, always.",
+    "sections": [
+      { "id": "county", "name": "County" },
+      { "id": "taxwatch", "name": "Taxpayer Watch" },
+      { "id": "schools", "name": "Schools" },
+      { "id": "numbers", "name": "Verity By The Numbers" },
+      { "id": "business", "name": "Business" },
+      { "id": "opinion", "name": "Opinion" },
+      { "id": "about", "name": "About" }
+    ],
+    "articles": [
+      {
+        "id": "t-salaries",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "Verity County's 12 Highest-Paid Public Employees",
+        "dek": "Salary records obtained by Verity County Today.",
+        "byline": "Metro Desk",
+        "date": "September 17, 2026",
+        "featured": true,
+        "lead": "GRIDFALL — Twelve public employees in Verity County were paid more than $60,000 in the 2025 calendar year, according to salary records obtained by Verity County Today through a public records request.",
+        "body": "The records were requested on June 2 and released on August 11.\n\n[list][*]Priya Delacourt, chief operating officer, County General — $291,400[*]Lowell Haske, county administrator — $118,900[*]Marcy Dolph, county attorney — $103,500[*]Glen Bodine, sheriff — $96,220[*]Dean Krupa, highway superintendent — $88,415[*]Alan Roeder, business manager, Verity County school district — $84,760[*]Renata Ould, parks director — $71,410[*]Eileen Strock, director of administrative services — $69,900[*]Arlene Vask, county clerk — $64,100[*]Dwight Semmel, chief deputy — $63,880[*]Theresa Ulm, president, Verity County school board — $4,800[*]Emmett Roe, chairman, Ashkettle water board — $3,600[/list]\n\nThe figures include base pay and do not include overtime. Overtime is reported separately in [url=/article/t-overtime]county payroll records[/url].\n\nThe two lowest figures on the list are annual stipends, not salaries.\n\nCounty General Hospital is not a county department. The Verity County school district and the Ashkettle water district are separate taxing bodies and set their own pay.\n\nVerity County has a population of approximately 28,400.\n\nSalary records for every county in the state are published as they are received."
+      },
+      {
+        "id": "n-broadband",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Verity County Ranks 43rd In State For Broadband Access",
+        "dek": "The county placed in the bottom half of the state's 88 counties.",
+        "byline": "Metro Desk",
+        "date": "September 19, 2026",
+        "featured": true,
+        "lead": "GRIDFALL — Verity County ranks 43rd out of 88 counties in the state for broadband access, according to a new analysis.",
+        "body": "The analysis scored each county on the share of households with a wired connection of at least 100 megabits per second, the number of providers available at the average address, and median advertised download speed.\n\nVerity County scored 61.4 out of a possible 100. The state median was 64.9.\n\nMarn County ranked first. Cawdrey County ranked 88th.\n\nAmong neighbouring counties, Marn County ranked 22nd, Pell County ranked 38th and Ordway County ranked 51st.\n\nVerity County ranked 39th in the same analysis last year.\n\nThe full analysis is available from the organisation that produced it.\n\nVerity County Today publishes county rankings as they are released."
+      },
+      {
+        "id": "t-overtime",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "Verity County Paid $412,880 In Overtime Last Year, Records Show",
+        "dek": "The sheriff's office accounted for most of it.",
+        "byline": "Staff Report",
+        "date": "September 8, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Verity County paid $412,880 in overtime to county employees in the 2025 calendar year, according to payroll records.",
+        "body": "The sheriff's office accounted for $301,400 of the total, or about 73 percent. The highway department accounted for $77,200. The remaining $34,280 was spread across six departments.\n\nThirty-one employees were paid overtime. Four of them were paid more than $20,000 each.\n\nThe highest single figure was $31,905, paid to a deputy whose base salary is $52,100.\n\nOvertime in the sheriff's office was $268,000 in 2024 and $244,700 in 2023, according to the same records.\n\nSome of these figures were also reported in a subscriber newsletter that covers county meetings. That newsletter put the sheriff's office total at $304,100 and said the difference was accounted for by court security, which the county books separately.\n\nVerity County Today has not reconciled the two figures.\n\nThe records were obtained under the state public records act. Instructions for filing a request are posted by the county at [url=synth://verity.county.gov/s/records-request]its public records request service[/url]."
+      },
+      {
+        "id": "w-culvert",
+        "sectionId": "county",
+        "kicker": "ROADS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "Quarry Road Will Close For 11 Days Beginning September 28",
+        "dek": "A culvert under the road is being replaced.",
+        "byline": "Metro Desk",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Quarry Road will close to through traffic between Depot Street and the county line for eleven days beginning September 28, the county highway department said.",
+        "body": "A culvert under the road is being replaced.\n\nThe department said the road will reopen October 8. The county calendar lists the closure as ending October 9.\n\nSchool buses on the Gridfall east routes will run about fifteen minutes later during the closure.\n\nThe same culvert appeared in the county's 2019 capital plan and again in the 2022 plan.\n\nMotorists are encouraged to plan ahead and allow extra time.\n\nThe county highway department did not respond to a request for comment."
+      },
+      {
+        "id": "c-capital",
+        "sectionId": "county",
+        "kicker": "COUNTY",
+        "readMinutes": 2,
+        "headline": "Verity County Supervisors To Vote October 20 On $6.4 Million In New Spending",
+        "dek": "Fourteen items are in the draft. The draft is not posted online.",
+        "byline": "Metro Desk",
+        "date": "September 12, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The Verity County board of supervisors is scheduled to vote October 20 on a capital plan that would commit $6.4 million, according to a draft of the plan.",
+        "body": "The plan covers five years and lists fourteen items.\n\nThe largest item is $2.1 million for resurfacing on Pell Road and Kestrel Road. Item 14 is a feasibility study for the Coyne Creek trestle on the Verity Branch Trail.\n\nThe Quarry Road culvert is not in the plan. It appeared in the 2019 and 2022 plans and is [url=/article/w-culvert]being replaced this month[/url] out of the highway department's operating budget.\n\nThe draft is not posted on the county website. A paper copy is available from the county clerk on request, at the counter, Monday through Thursday.\n\nThe county's total budget is about $31 million a year.\n\nCounty officials did not respond to a request for comment.\n\nThe board of supervisors meets at the county building on Third Street in Gridfall."
+      },
+      {
+        "id": "c-trestle",
+        "sectionId": "county",
+        "kicker": "THE BRANCH TRAIL",
+        "readMinutes": 2,
+        "headline": "County Awards $41,000 Trestle Study; Two Earlier Studies Produced No Work",
+        "dek": "The Coyne Creek trestle has been fenced since the trail opened in 2014.",
+        "date": "September 16, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD — The Verity County parks department has hired a Marchfield engineering firm to study the Coyne Creek trestle on the Verity Branch Trail, according to a purchase order posted by the county.",
+        "body": "The purchase order is for $41,000. The completion date on the document is February 26.\n\nThe trestle is one of four on the eleven-mile trail. Three were decked over when the trail was built in 2014. The Coyne Creek structure was fenced at both ends and has stayed fenced.\n\nThe county studied the same structure in 2016 and again in 2021. Neither study was followed by construction. The 2021 study put the cost of decking the trestle at $860,000.\n\nThe study is also item 14 in the draft capital plan the supervisors will vote on October 20, which means the county has bought the study a month before the vote that authorises it.\n\nThe parks director is Renata Ould. The purchase order carries her signature and the date September 11.\n\nThe parks department did not respond to a request for comment."
+      },
+      {
+        "id": "w-clinic",
+        "sectionId": "county",
+        "kicker": "HEALTH",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "County General Expands Walk-In Clinic Hours In Marchfield",
+        "dek": "The hospital says the change reflects what families asked for.",
+        "byline": "Metro Desk",
+        "date": "September 17, 2026",
+        "featured": false,
+        "lead": "MARCHFIELD — County General Hospital is pleased to announce expanded hours at its walk-in clinic in Marchfield beginning October 1.",
+        "body": "The clinic will be open Thursday evenings until 8 p.m. under the new schedule.\n\n\"We are pleased to expand access for the residents of Verity County,\" the hospital's chief operating officer, Priya Delacourt, said in a statement.\n\nCounty General has served the families of Verity County since 1957. It is a 94-bed acute care hospital and the county's second largest employer. Care, close to home.\n\nSaturday morning hours will be discontinued.\n\nMedia inquiries may be directed to Delia Marsh, Communications, extension 2140."
+      },
+      {
+        "id": "c-zoning",
+        "sectionId": "county",
+        "kicker": "ZONING",
+        "readMinutes": 2,
+        "headline": "Zoning Board Will Hear Water Tower Antenna Plan October 1",
+        "dek": "The application needs a nine-foot height variance.",
+        "byline": "Staff Report",
+        "date": "September 18, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The Gridfall zoning board of appeals will hear an application on October 1 to mount cellular antennas on the Depot Street water tower, according to the hearing notice posted at the municipal building.",
+        "body": "The application was filed by a site development company acting for a carrier. The notice says the antennas would sit below the tank rail and that no lattice tower is proposed.\n\nThe application needs a height variance of nine feet.\n\nThe tower is owned by the town of Gridfall. Public works records show it was last painted in 2009.\n\nThe hearing is at 7 p.m. at the Gridfall municipal building. Written comment is taken until 5 p.m. on September 30.\n\nThe clerk's office says an application it describes as identical was withdrawn in 2023 before its hearing. It could not say why. The file is closed and closed files are held at the Ashkettle annex.\n\nVerity County Today will not be at the hearing. Readers who attend may send us what happened through the contact form."
+      },
+      {
+        "id": "c-blotter",
+        "sectionId": "county",
+        "kicker": "SHERIFF'S LOG",
+        "readMinutes": 2,
+        "headline": "Verity County Sheriff's Log: September 14-20",
+        "dek": "Selected calls from the county dispatch log.",
+        "date": "September 20, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The following calls are taken from the Verity County sheriff's dispatch log for the week of September 14. The log is a record of calls received and not of offences committed.",
+        "body": "[list][*]Sept. 14, 8:12 a.m., Pell Road — report of a dog at large. Owner advised.[*]Sept. 15, 1:40 p.m., Third Street, Gridfall — parking complaint. No action.[*]Sept. 15, 6:55 p.m., County Route 62 — deer struck. No injuries.[*]Sept. 16, 11:20 p.m., County Route 62 near Kestrel Road — traffic stop. One man charged.[*]Sept. 17, 3:02 a.m., Depot Street — alarm. Building secure.[*]Sept. 18, 9:31 a.m., Quarry Road — brush burning without a permit. Advised.[*]Sept. 18, 4:44 p.m., Marchfield — assist other agency.[*]Sept. 19, 7:26 p.m., Halsey — report of a suspicious vehicle. Gone on arrival.[*]Sept. 20, 2:44 a.m., Gridfall — nine calls reporting a loss of power.[*]Sept. 20, 2:51 a.m., Depot and Third — dark traffic signal.[/list]\n\nCharges are allegations and a defendant is presumed innocent.\n\nThe log is released weekly as a spreadsheet. Names and street addresses are in the released file and are not published here."
+      },
+      {
+        "id": "w-enrollment",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 1,
+        "wire": true,
+        "headline": "Verity County School Enrollment Falls For 11th Straight Year",
+        "dek": "The September count is down again.",
+        "byline": "Staff Report",
+        "date": "September 11, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Enrollment in the Verity County school district stands at 2,941 students as of the September count, according to figures released by the district.",
+        "body": "The district enrolled 2,961 students in September 2025. Enrollment has fallen in each of the past eleven years.\n\nThe decrease is 47 students.\n\nDeclining enrollment is a trend affecting many rural districts across the region, according to a report.\n\nState aid is calculated on the September count. The district's business manager, Alan Roeder, has said previously that each student is worth roughly $9,200 in combined state and local funding.\n\nFamilies with questions about enrollment are encouraged to contact the district office.\n\n[i]Corrected September 15 and September 17. See [url=/corrections]corrections[/url].[/i]"
+      },
+      {
+        "id": "s-buses",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 2,
+        "headline": "Verity County School Board Votes 4-3 To Outsource Bus Routes",
+        "dek": "The operator is based in another state. Eleven drivers are affected.",
+        "byline": "Metro Desk",
+        "date": "September 17, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The Verity County school board voted 4-3 on Wednesday night to contract out its bus routes to an operator based in another state.",
+        "body": "The contract runs five years and is worth $2.9 million.\n\nThe district's eleven drivers will be offered positions with the operator at their current rate for one year. Board member Lisbeth Corry, who voted against, said the district has no way to check the rate after that year.\n\nBoard president Theresa Ulm, who voted in favour, said transportation costs have risen 31 percent in four years.\n\nThe vote was taken at 10:02 p.m. after about two hours of public comment. Eleven people spoke. Nine spoke against.\n\nThe district last changed its transportation arrangements in 1998, when it brought the routes in house.\n\nThe district does not stream its meetings and posts an audio recording afterwards. This account is drawn from that recording and from notes taken in the room by a subscriber newsletter that covers county meetings.\n\nThe district did not respond to a request for comment."
+      },
+      {
+        "id": "s-boiler",
+        "sectionId": "schools",
+        "kicker": "SCHOOLS",
+        "readMinutes": 1,
+        "headline": "Halsey Primary School Closed Wednesday After Boiler Failure",
+        "dek": "Buses on the Halsey routes did not run.",
+        "byline": "Staff Report",
+        "date": "September 9, 2026",
+        "featured": false,
+        "lead": "HALSEY — Halsey Primary School was closed Wednesday because of a boiler failure, according to a message the school district sent to families at 5:48 a.m.",
+        "body": "The district said the school would reopen Thursday if a part arrived. Buses on the Halsey routes did not run and there was no remote instruction.\n\nThe boiler was listed for replacement in the district's 2024 facilities plan. The replacement was deferred.\n\nThe district's alert system does not send to landlines.\n\nThe district did not respond to a request for comment."
+      },
+      {
+        "id": "n-schools",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Verity County Schools Rank 61st Of 88 In State Report Card",
+        "dek": "The district scored below the state average in three of five categories.",
+        "byline": "Staff Report",
+        "date": "September 14, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — The Verity County school district ranks 61st of 88 districts in the state on a new report card.",
+        "body": "The report card scores districts in five categories: achievement, progress, graduation, early literacy and college readiness.\n\nVerity County scored below the state average in achievement, early literacy and college readiness. It scored above the state average in graduation.\n\nThe district's overall score was 2.8 out of 5. The state average was 3.2.\n\nThe district ranked 58th last year and 64th the year before.\n\nDistricts are ranked by overall score. Ties are broken by enrollment.\n\nVerity County Today publishes district rankings as they are released."
+      },
+      {
+        "id": "n-commute",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Verity County Has The 12th Longest Average Commute In The State",
+        "dek": "The average one-way drive is 31.4 minutes.",
+        "date": "September 6, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Workers in Verity County have the 12th longest average commute of any county in the state, at 31.4 minutes one way.",
+        "body": "The state average is 24.9 minutes.\n\nAbout 71 percent of Verity County workers drive alone. About 9 percent carpool. Fewer than 1 percent use public transit.\n\nThe county has no fixed-route bus service. A reduced fare pass is available for the county's demand-response service.\n\nVerity County ranked 14th on the same measure last year.\n\nThe figures come from a five-year estimate.\n\nVerity County Today publishes county rankings as they are released."
+      },
+      {
+        "id": "n-tax",
+        "sectionId": "numbers",
+        "kicker": "BY THE NUMBERS",
+        "readMinutes": 1,
+        "headline": "Verity County Property Taxes Rank 19th Highest In The State",
+        "dek": "The median bill is $2,410 on a median home value of $141,000.",
+        "byline": "Metro Desk",
+        "date": "August 29, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Verity County has the 19th highest effective property tax rate of the state's 88 counties, according to a new ranking.",
+        "body": "The effective rate is given as 1.71 percent. The median annual bill is $2,410 on a median home value of $141,000.\n\nThe state median effective rate is 1.44 percent.\n\nThe ranking covers county, municipal, school and special district levies combined. The school district accounts for about 58 percent of the typical Verity County bill.\n\nVerity County ranked 21st last year.\n\nProperty owners may look up their own bill through [url=synth://verity.county.gov/s/prop-tax]the county's property tax service[/url].\n\nVerity County Today publishes county rankings as they are released."
+      },
+      {
+        "id": "t-cards",
+        "sectionId": "taxwatch",
+        "kicker": "TAXPAYER WATCH",
+        "readMinutes": 2,
+        "headline": "County Credit Card Records Show $1,914 At A Hotel In The State Capital",
+        "dek": "The charge was made during a four-day conference in April.",
+        "date": "September 3, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Verity County charged $1,914 to a hotel in the state capital in April, according to county credit card statements obtained by Verity County Today.",
+        "body": "The charge covers four nights for three county employees who attended a county officials association conference held April 14 to April 17.\n\nThe statements show $37,441 in total card spending for the twelve months ending June 30. The largest categories were fuel, equipment parts and software subscriptions.\n\nOther charges on the statements include $611 at a restaurant in the state capital on April 16, $89.40 at an office supply retailer, and a $14.99 monthly charge described on the statement only as SUBSCRIPTION SVC, which recurs every month across all twelve statements.\n\nThe county's travel policy allows reimbursement for lodging at the conference rate. The conference rate for the April event was $159 a night, which over four nights for three employees comes to $1,908.\n\nThe statements were released 71 days after they were requested. The county's published target is five business days.\n\nThe county administrator's office did not respond to a request for comment."
+      },
+      {
+        "id": "b-storefronts",
+        "sectionId": "business",
+        "kicker": "DOWNTOWN",
+        "readMinutes": 1,
+        "headline": "Eleven Storefronts Sit Empty On Third Street In Gridfall",
+        "dek": "That is about a third of the block.",
+        "byline": "Metro Desk",
+        "date": "August 22, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — Eleven of the thirty-one storefronts on Third Street in Gridfall were vacant this week, a count found.",
+        "body": "The Gridfall business association counted nine vacancies in its own survey in March. The association does not count buildings that are for sale, which may explain the difference.\n\nThe county assessor's office does not track vacancy.\n\nThe former offices of the Verity Ledger at 118 Third Street are among the vacant storefronts. The Ledger has published under its own name since 1901.\n\nThe count was made on foot on a Tuesday morning.\n\nThe Gridfall business association did not respond to a request for comment."
+      },
+      {
+        "id": "b-spotlight",
+        "sectionId": "business",
+        "kicker": "COMMUNITY SPOTLIGHT",
+        "readMinutes": 2,
+        "headline": "A Gridfall Family Business Is Changing How Verity County Homeowners Handle Fall",
+        "dek": "Three generations, one ladder, and a schedule that fills up by October.",
+        "byline": "Verity County Today Brand Studio",
+        "date": "September 15, 2026",
+        "featured": false,
+        "lead": "GRIDFALL — When the leaves come down in Verity County, they come down all at once, and Midstate Gutter has been ready for that since 1986.",
+        "body": "The family business has served homeowners across Gridfall, Marchfield, Ashkettle and Halsey for three generations. Owner Ray Ostergaard says the work has not changed much, but the season has.\n\n\"People wait until the water is coming over the front edge,\" Ostergaard said. \"By then it is already in the fascia.\"\n\nMidstate Gutter offers seamless aluminium gutter installation, guard systems and seasonal cleaning. Verity County homeowners who book before October 15 receive a free inspection, and a warranty that transfers to the next owner of the home.\n\nThe company services homes across the county and is booking now for the fall season.\n\n[url=synth://midstategutter-offers.click/verity]Request a free inspection[/url]\n\n[i]Community Spotlight stories are produced with the participating business.[/i]"
+      },
+      {
+        "id": "o-trestle",
+        "sectionId": "opinion",
+        "kicker": "COMMENTARY",
+        "readMinutes": 3,
+        "headline": "COMMENTARY: The County Has $41,000 For A Bridge Study And No Money For Quarry Road",
+        "dek": "Verity County taxpayers are being asked to fund a decision that has already been made three times.",
+        "byline": "Dell Farrow",
+        "date": "September 19, 2026",
+        "featured": false,
+        "lead": "Verity County has now paid for three studies of the same railroad bridge. Two of them are sitting in a filing cabinet at the annex. The third was bought last week, a month before the vote that is supposed to authorise it.",
+        "body": "Let us be clear about what is happening here. The Coyne Creek trestle has been fenced off since 2014. In 2016 the county studied it. In 2021 the county studied it again and was told decking it would cost $860,000. The county did not deck it. Now the county has hired a firm in Marchfield for $41,000 to study it a third time, and item 14 of the draft capital plan asks the supervisors to approve the money on October 20, which is nine days after the purchase order was already signed.\n\nMeanwhile the culvert under Quarry Road, which was in the 2019 capital plan and the 2022 capital plan and is in neither the 2026 plan nor any plan after it, is being replaced out of the highway department's operating budget, which is a way of saying it is being paid for with money that was supposed to be for something else.\n\nThat is the whole county in two paragraphs. The trail gets a study. The road gets whatever is left in the drawer.\n\nI am not against the trail. Eleven miles of crushed limestone is a fine thing for a county to have and I have walked it. But there is a difference between a county that decides what it wants and a county that pays consultants to keep telling it what it already knows, and Verity County has been the second kind of county for twelve years.\n\nThe supervisors meet October 20. The draft is not posted online. You can get a paper copy from the clerk, Monday through Thursday, if you can get to the counter before three.\n\nAsk them about item 14.\n\n[i]Dell Farrow writes on state and local policy.[/i]"
+      },
+      {
+        "id": "about-us",
+        "sectionId": "about",
+        "kicker": "ABOUT",
+        "readMinutes": 1,
+        "headline": "About Verity County Today",
+        "dek": "Who we are and how to reach us.",
+        "date": "March 4, 2026",
+        "featured": false,
+        "lead": "Verity County Today is an independent local news site covering Verity County, including Gridfall, Marchfield, Ashkettle, New Carrow, Halsey, Coyne Flats and Milbrook.",
+        "body": "We believe Verity County deserves local reporting that is free to read. There is no paywall on this site and there never will be. Our reporting is supported by advertising and by partnerships with local businesses.\n\nOur reporting team files under the Metro Desk byline. News tips, corrections and press releases may be submitted through the contact form.\n\nVerity County Today is published by [url=synth://meridianlocal.synth/]Meridian Local Network[/url].\n\n[b]Editorial standards.[/b] We correct errors of fact when they are brought to our attention. Corrections are posted on our [url=/corrections]corrections page[/url].\n\n[b]Sponsored and partner content.[/b] Community Spotlight features are produced with participating businesses and are not written by the editorial team.\n\n[i]This page was last reviewed in March 2026.[/i]"
+      }
+    ],
+    "factchecks": [
+      {
+        "id": "fc-fire-year",
+        "claim": "The Gridfall substation fire happened in 2003.",
+        "claimBy": "kfennimore",
+        "claimWhere": "wiki.gridfall.net",
+        "claimWhen": "revised August 2026",
+        "verdict": "false",
+        "ruling": "The overwhelming weight of available sources places the Gridfall substation fire in 2004. A locally edited wiki page currently gives the year as 2003, and an anonymous editor has restored that year several times after it was corrected. Verity County Today rates this claim FALSE. Readers should be aware that the 2003 date continues to circulate on local message boards.",
+        "evidence": [
+          "A video retrospective published in 2024, which has been viewed approximately 4 million times, gives the year as 2004.",
+          "Nine of the eleven written accounts of the fire indexed by our research partner give the year as 2004.",
+          "[url=synth://now.verityledger.com/article/a-02]The Verity Ledger's own account of the fire[/url], published September 12, 2026, gives the year as 2004.",
+          "The state utility commission's two-page summary of the fire, published in November 2003, attributes the cause to insulation degradation consistent with age.",
+          "A single county wiki page gives the year as 2003. That page has been edited 41 times."
+        ],
+        "sources": [
+          "[url=synth://now.verityledger.com/article/a-02]now.verityledger.com[/url]",
+          "[url=synth://gridline.social/]gridline.social[/url] — aggregated discussion, retrieved September 2026",
+          "[url=synth://wiki.gridfall.net/wiki/substation-fire-2003]wiki.gridfall.net[/url] — the page containing the disputed claim",
+          "State utility commission, summary of findings, November 2003"
+        ]
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2026-09-15",
+        "articleId": "w-enrollment",
+        "kind": "correction",
+        "text": "An earlier version of this story gave the September enrollment count for the Verity County school district as 2,941 students. The figure released by the district is 2,914 students. The decrease from the 2025 count is 47 students, which is unchanged."
+      },
+      {
+        "at": "2026-09-17",
+        "articleId": "w-enrollment",
+        "kind": "clarification",
+        "text": "A correction appended to this story on September 15 stated that the decrease from the 2025 count was unchanged at 47 students. The decrease from the 2025 count of 2,961 students is 47 students against the corrected figure of 2,914. The figure in the story has been updated and the correction of September 15 remains accurate as published."
+      },
+      {
+        "at": "2025-04-30",
+        "articleId": "vt-2024-1119",
+        "kind": "editors-note",
+        "text": "This story has been removed at the request of a person named in it. Verity County Today removes stories on request where the subject has provided documentation. The documentation is not published. Search engines may continue to display the headline for some time."
+      }
+    ]
+  }
+}

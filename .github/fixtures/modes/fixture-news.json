@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "domain": "fixture.news",
+  "title": "Fixture Daily",
+  "type": "news",
+  "era": "2026",
+  "skin": "pinkslime",
+  "description": "A fixture that exists only to prove the three news modes render.",
+  "links": [],
+  "data": {
+    "masthead": "Fixture Daily",
+    "slogan": "Every mode, once.",
+    "sections": [
+      {
+        "id": "county",
+        "name": "County"
+      }
+    ],
+    "articles": [
+      {
+        "id": "a1",
+        "headline": "Board defers the culvert item again",
+        "dek": "Third deferral since June.",
+        "byline": "Metro Desk",
+        "at": "2026-09-18T14:10:00Z",
+        "body": "The board deferred the Quarry Road culvert item.\n\nNo date was set.",
+        "sectionId": "county"
+      }
+    ],
+    "live": [
+      {
+        "id": "lb1",
+        "headline": "Substation No. 3 outage: live updates",
+        "standfirst": "Power is out across Gridfall. We are filing as we get it.",
+        "open": true,
+        "intervalMin": 7,
+        "startedAt": "2026-09-20T06:02:00Z",
+        "keyPoints": [
+          "Roughly 1,400 customers are without power.",
+          "The county has not said when it expects restoration."
+        ],
+        "entries": [
+          {
+            "at": "2026-09-20T06:02:00Z",
+            "label": "Opening",
+            "headline": "Outage reported at Depot and Quarry",
+            "body": "Callers report the lights went at about 5:55 a.m.",
+            "by": "Metro Desk"
+          },
+          {
+            "at": "2026-09-20T06:41:00Z",
+            "headline": "County confirms crews are out",
+            "body": "A county spokesperson confirmed crews were dispatched.",
+            "by": "Metro Desk"
+          }
+        ]
+      },
+      {
+        "id": "lb2",
+        "headline": "Election night: as it happened",
+        "standfirst": "Our coverage of the November count.",
+        "open": false,
+        "startedAt": "2025-11-04T23:00:00Z",
+        "entries": [
+          {
+            "at": "2025-11-05T01:20:00Z",
+            "headline": "Count closes",
+            "body": "The last precinct reported at 1:18 a.m.",
+            "by": "Metro Desk"
+          }
+        ]
+      }
+    ],
+    "factchecks": [
+      {
+        "id": "fc1",
+        "claim": "Verity County ranks 43rd in the state for broadband access.",
+        "claimBy": "Fixture Daily",
+        "claimWhere": "its own story",
+        "claimWhen": "August 2026",
+        "verdict": "missing-context",
+        "ruling": "The number is real and the ranking is meaningless.\n\nIt counts advertised speed, not delivered speed.",
+        "evidence": [
+          "The state table the figure comes from measures advertised tiers.",
+          "Two of the three providers listed do not serve the county line."
+        ],
+        "sources": [
+          "State broadband table, 2026 edition",
+          "County clerk, franchise filings"
+        ]
+      },
+      {
+        "id": "fc2",
+        "claim": "The 2003 substation fire was caused by lightning.",
+        "verdict": "false",
+        "ruling": "The report names a transformer bushing failure."
+      }
+    ],
+    "corrections": [
+      {
+        "at": "2026-09-19T09:00:00Z",
+        "kind": "correction",
+        "text": "An earlier version misspelled Pennock.",
+        "article": "a1"
+      },
+      {
+        "at": "2026-09-12T09:00:00Z",
+        "kind": "retraction",
+        "text": "We have withdrawn a story about a county contract. It described a document we did not have."
+      },
+      {
+        "at": "2026-08-30T09:00:00Z",
+        "kind": "editors-note",
+        "text": "This story was produced by an automated pipeline and reviewed after publication."
+      }
+    ]
+  }
+}

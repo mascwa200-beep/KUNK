@@ -1,0 +1,461 @@
+/* SYNTHNET wiki skin: monobook
+   Every rule is scoped under .skin-monobook. Local fonts only. */
+
+.skin-monobook {
+  background-color: #f3f3f3;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skin-monobook a { color: #0645ad; text-decoration: none; }
+.skin-monobook a:visited { color: #0b0080; }
+.skin-monobook a:hover { text-decoration: underline; }
+.skin-monobook a:active { color: #faa700; }
+
+.skin-monobook .wiki-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skin-monobook .wiki-chrome {
+  font-size: 0.8em;
+  color: #4c4c4c;
+  padding: 0 0 6px 12px;
+}
+
+.skin-monobook .wiki-chrome-name { font-weight: bold; }
+.skin-monobook .wiki-chrome-tag { margin-left: 8px; font-style: italic; color: #767676; }
+
+.skin-monobook .wiki-content {
+  background-color: #ffffff;
+  border: 1px solid #a7d7f9;
+  border-right-width: 1px;
+  border-left-width: 4px;
+  padding: 14px 18px 18px;
+}
+
+.skin-monobook .wiki-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.85em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 0.25em;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid #aaaaaa;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-monobook .wiki-h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 1.1em 0 0.4em;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.skin-monobook .wiki-lead p,
+.skin-monobook .wiki-section-body p,
+.skin-monobook .wiki-featured-body p { margin: 0 0 0.85em; }
+
+.skin-monobook .wiki-lead { margin-bottom: 0.6em; }
+
+.skin-monobook .wiki-section-body img,
+.skin-monobook .wiki-section-body svg,
+.skin-monobook .wiki-lead svg,
+.skin-monobook .wiki-lead img { max-width: 100%; height: auto; }
+
+.skin-monobook .wiki-section-body pre,
+.skin-monobook .wiki-lead pre {
+  background-color: #f9f9f9;
+  border: 1px dashed #2f6fab;
+  color: #000000;
+  padding: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.skin-monobook .wiki-section-body blockquote,
+.skin-monobook .wiki-lead blockquote {
+  border-left: 3px solid #c8ccd1;
+  margin: 0 0 0.85em;
+  padding: 0 0 0 10px;
+  color: #303030;
+}
+
+/* ------------------------------- infobox -------------------------------- */
+
+.skin-monobook .wiki-infobox {
+  float: right;
+  clear: right;
+  width: 262px;
+  max-width: 45%;
+  margin: 0 0 12px 14px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  border-collapse: collapse;
+  font-size: 0.86em;
+  line-height: 1.4;
+}
+
+.skin-monobook .wiki-infobox-caption {
+  caption-side: top;
+  background-color: #cddeff;
+  border-bottom: 1px solid #a2a9b1;
+  font-weight: bold;
+  padding: 5px 6px;
+  text-align: center;
+}
+
+.skin-monobook .wiki-infobox th,
+.skin-monobook .wiki-infobox td {
+  border-top: 1px solid #dcdcdc;
+  padding: 4px 6px;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.skin-monobook .wiki-infobox-label {
+  background-color: #eaecf0;
+  font-weight: bold;
+  width: 40%;
+  white-space: normal;
+}
+
+/* --------------------------------- TOC ---------------------------------- */
+
+.skin-monobook .wiki-toc {
+  clear: left;
+  display: table;
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 7px 14px 7px 10px;
+  margin: 12px 0;
+  font-size: 0.93em;
+}
+
+.skin-monobook .wiki-toc-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.skin-monobook .wiki-toc-list { list-style: none; margin: 0; padding-left: 4px; }
+.skin-monobook .wiki-toc-list li { margin: 2px 0; }
+.skin-monobook .wiki-toc-num { color: #202122; margin-right: 4px; }
+
+.skin-monobook .wiki-toc-link {
+  color: #0645ad;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.skin-monobook .wiki-toc-link:hover,
+.skin-monobook .wiki-toc-link:focus { text-decoration: underline; outline: 1px dotted #a2a9b1; }
+
+/* ------------------------------ lists / bars ---------------------------- */
+
+.skin-monobook .wiki-seealso-list,
+.skin-monobook .wiki-cat-list { margin: 0.3em 0 0; padding-left: 24px; }
+
+.skin-monobook .wiki-cat-list li { margin: 3px 0; }
+.skin-monobook .wiki-cat-blurb { color: #54595d; font-size: 0.9em; }
+
+.skin-monobook .wiki-catbar {
+  clear: both;
+  margin-top: 18px;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding: 5px 8px;
+  font-size: 0.9em;
+}
+
+.skin-monobook .wiki-catbar-label { font-weight: bold; }
+.skin-monobook .wiki-uncat { font-style: italic; color: #72777d; }
+
+.skin-monobook .wiki-featured {
+  clear: both;
+  background-color: #f8fcff;
+  border: 1px solid #a7d7f9;
+  padding: 8px 12px;
+  margin: 12px 0;
+}
+
+.skin-monobook .wiki-featured .wiki-h2 { margin-top: 0.2em; }
+.skin-monobook .wiki-featured-title { margin: 0.2em 0 0.4em; font-size: 1.05em; }
+.skin-monobook .wiki-readmore { margin: 0.4em 0 0; font-size: 0.92em; }
+
+.skin-monobook .wiki-index { margin-top: 6px; }
+
+.skin-monobook .wiki-az-group {
+  border-top: 1px solid #e4e4e4;
+  padding: 6px 0 2px;
+}
+
+.skin-monobook .wiki-az-letter {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.15em;
+  font-weight: normal;
+  margin: 0 0 4px;
+  color: #54595d;
+}
+
+.skin-monobook .wiki-az-list {
+  margin: 0;
+  padding-left: 22px;
+  columns: 3;
+  column-gap: 20px;
+}
+
+.skin-monobook .wiki-az-list li { margin: 2px 0; break-inside: avoid; }
+
+.skin-monobook .wiki-empty { font-style: italic; color: #72777d; }
+.skin-monobook .wiki-backlink { margin-top: 16px; font-size: 0.92em; }
+
+.skin-monobook .wiki-foot {
+  margin-top: 10px;
+  border-top: 1px solid #c8ccd1;
+  padding: 6px 12px 0;
+  font-size: 0.78em;
+  color: #5b6066;
+}
+
+/* ============================ small screens ============================== */
+
+@media (max-width: 600px) {
+  /* Infobox stacks ABOVE the text instead of floating beside it. */
+  .skin-monobook .wiki-infobox {
+    float: none;
+    clear: both;
+    width: auto;
+    max-width: 100%;
+    margin: 0 0 12px 0;
+    display: table;
+  }
+
+  .skin-monobook .wiki-az-list { columns: 2; }
+  .skin-monobook .wiki-content { padding: 10px 12px 14px; border-left-width: 3px; }
+  .skin-monobook .wiki-title { font-size: 1.5em; }
+  .skin-monobook .wiki-h2 { font-size: 1.25em; }
+  .skin-monobook .wiki-toc { display: block; }
+}
+
+@media (max-width: 400px) {
+  .skin-monobook .wiki-az-list { columns: 1; }
+  .skin-monobook .wiki-wrap { padding: 6px; }
+  .skin-monobook .wiki-infobox { font-size: 0.82em; }
+  .skin-monobook .wiki-infobox-label { width: 45%; }
+}
+
+/* --- revision history --------------------------------------------------
+ *
+ * A wiki whose articles were last edited in 2007 is a PDF. These lines are
+ * derived from the clock rather than authored, and what they show if you
+ * read them is the canon mechanic: bots "correcting" a date to the version
+ * the content farms carry, and one person reverting them, neither stopping.
+ */
+
+.skin-monobook .wiki-sincebar {
+  margin: 0 0 10px 0;
+  padding: 5px 9px;
+  font-size: 12px;
+  background: #fdf6e3;
+  border: 1px solid #e0d5a8;
+}
+
+/* #6b5200 on #fdf6e3 is 6.4:1. */
+.skin-monobook .wiki-sincebar strong { color: #6b5200; }
+.skin-monobook .wiki-sincebots { color: #6b5200; }
+
+.skin-monobook .wiki-history {
+  margin-top: 22px;
+  padding-top: 10px;
+  border-top: 1px solid #a7d7f9;
+  font-size: 12px;
+  /* #4c5b66 on #fff is 7.1:1. */
+  color: #4c5b66;
+}
+
+.skin-monobook .wiki-editor-human { font-weight: bold; color: #0645ad; }
+.skin-monobook .wiki-editor-bot,
+.skin-monobook .wiki-editor-anon { color: #5a6570; }
+.skin-monobook .wiki-editsummary { font-style: italic; }
+
+.skin-monobook .wiki-revbox { margin-top: 7px; }
+.skin-monobook .wiki-revbox summary { cursor: pointer; color: #0645ad; }
+
+.skin-monobook .wiki-revlist {
+  margin: 7px 0 0 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid #e6e6e6;
+}
+
+.skin-monobook .wiki-rev {
+  padding: 3px 0 3px 9px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+}
+
+/* The one human edit in a column of automated ones should be findable. */
+.skin-monobook .wiki-rev-human { border-left: 2px solid #0645ad; margin-left: -2px; }
+
+.skin-monobook .wiki-revwhen { min-width: 82px; color: #6a747d; }
+.skin-monobook .wiki-revwho { font-weight: bold; }
+.skin-monobook .wiki-revsummary { font-style: italic; flex: 1 1 14ch; }
+
+@media (max-width: 700px) {
+  .skin-monobook .wiki-revwhen { min-width: 0; }
+}
+
+/* --- the edit war: history, diffs, talk ---------------------------------
+ *
+ * The old wiki showed a revision COUNT and called it a diff. These are the
+ * pages that make the count checkable: a history you can walk, a diff that
+ * shows text that differs, and a talk page where the argument is had in
+ * public and settles nothing.
+ *
+ * Every row wraps rather than scrolls, because the target is a 360px phone
+ * and a history table that needs a horizontal scrollbar is a history table
+ * nobody reads.
+ */
+
+.skin-monobook .wiki-protbar,
+.skin-monobook .wiki-disputebar {
+  margin: 0 0 10px 0;
+  padding: 6px 9px;
+  font-size: 12px;
+  border: 1px solid #c8b8b8;
+  background: #f6efef;
+  /* #6b3a3a on #f6efef is 6.9:1. */
+  color: #6b3a3a;
+}
+.skin-monobook .wiki-protbar { background: #eef2f7; border-color: #b7c6d8; color: #33475e; }
+.skin-monobook .wiki-disputebar a,
+.skin-monobook .wiki-protbar a { color: #0645ad; }
+
+.skin-monobook .wiki-infobox-changed { background: #fbf1f1; }
+
+.skin-monobook .wiki-footlinks { margin: 8px 0 0 0; }
+.skin-monobook .wiki-rclink { margin: 10px 0; font-size: 13px; }
+
+.skin-monobook .wiki-histlist,
+.skin-monobook .wiki-rclist { margin: 12px 0 0 0; padding: 0; list-style: none; }
+
+.skin-monobook .wiki-histrow,
+.skin-monobook .wiki-rcrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: baseline;
+  padding: 5px 0 5px 9px;
+  border-left: 2px solid #e6e6e6;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  color: #4c5b66;
+}
+
+.skin-monobook .wiki-histrow-human,
+.skin-monobook .wiki-rcrow-human { border-left-color: #0645ad; }
+.skin-monobook .wiki-histrow-rv { background: #fbf8ee; }
+.skin-monobook .wiki-histrow-prot { background: #eef2f7; border-left-color: #33475e; }
+
+.skin-monobook .wiki-histwhen,
+.skin-monobook .wiki-rcwhen { min-width: 82px; color: #6a747d; }
+.skin-monobook .wiki-histrev { color: #6a747d; font-variant-numeric: tabular-nums; }
+.skin-monobook .wiki-histsummary,
+.skin-monobook .wiki-rcsummary { font-style: italic; flex: 1 1 14ch; }
+.skin-monobook .wiki-difflink { color: #0645ad; }
+.skin-monobook .wiki-difflink-flat { color: #9aa4ad; }
+.skin-monobook .wiki-rctitle { font-weight: bold; }
+
+.skin-monobook .wiki-diffheads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+.skin-monobook .wiki-diffhead {
+  flex: 1 1 14ch;
+  min-width: 0;
+  padding: 6px 8px;
+  font-size: 12px;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.skin-monobook .wiki-diffbody {
+  padding: 9px 10px;
+  border: 1px solid #a7d7f9;
+  background: #fff;
+  line-height: 1.55;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* #6b1f1f on #fde3e3 is 8.0:1; #14532d on #ddf5e3 is 8.3:1. */
+.skin-monobook .wiki-del {
+  background: #fde3e3; color: #6b1f1f; text-decoration: line-through;
+}
+.skin-monobook .wiki-ins {
+  background: #ddf5e3; color: #14532d; text-decoration: none;
+}
+.skin-monobook .wiki-diffsame { color: #6a747d; font-style: italic; }
+
+.skin-monobook .wiki-talkthread {
+  margin: 0 0 18px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+.skin-monobook .wiki-talkpost {
+  margin: 6px 0;
+  padding: 2px 0 2px 9px;
+  border-left: 2px solid #e6e6e6;
+  font-size: 13px;
+}
+/* .wiki-editor-<kind> was written for a name in a history row -- a short
+   span, bold and blue for a person. Put on a talk POST it coloured the whole
+   paragraph, so every human reply came out bold blue and every anon one grey,
+   which is unreadable at length and says the wrong thing besides: on a talk
+   page the point is who is speaking, not that the whole remark is a name. The
+   kind survives as the left border and nothing else. */
+.skin-monobook .wiki-talkpost.wiki-editor-human,
+.skin-monobook .wiki-talkpost.wiki-editor-bot,
+.skin-monobook .wiki-talkpost.wiki-editor-anon,
+.skin-monobook .wiki-talkpost.wiki-editor-admin {
+  font-weight: normal;
+  color: #202122;
+}
+.skin-monobook .wiki-talkpost.wiki-editor-human { border-left-color: #0645ad; }
+.skin-monobook .wiki-talkpost.wiki-editor-admin { border-left-color: #33475e; }
+.skin-monobook .wiki-talkpost.wiki-editor-anon { border-left-color: #c9ced3; }
+.skin-monobook .wiki-talkpost .synth-p { margin: 0 0 4px 0; }
+
+/* Talk-page indentation. Capped hard, because a 360px screen runs out of
+ * width at about four colons and a reply nobody can read is worse than a
+ * reply that lost its place in the thread. */
+.skin-monobook .wiki-talkdepth-0 { margin-left: 0; }
+.skin-monobook .wiki-talkdepth-1 { margin-left: 10px; }
+.skin-monobook .wiki-talkdepth-2 { margin-left: 20px; }
+.skin-monobook .wiki-talkdepth-3 { margin-left: 30px; }
+.skin-monobook .wiki-talkdepth-4 { margin-left: 40px; }
+
+@media (max-width: 420px) {
+  .skin-monobook .wiki-talkdepth-1 { margin-left: 6px; }
+  .skin-monobook .wiki-talkdepth-2 { margin-left: 12px; }
+  .skin-monobook .wiki-talkdepth-3 { margin-left: 18px; }
+  .skin-monobook .wiki-talkdepth-4 { margin-left: 24px; }
+  .skin-monobook .wiki-histwhen,
+  .skin-monobook .wiki-rcwhen { min-width: 0; }
+}

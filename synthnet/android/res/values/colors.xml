@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The Aero desktop blue the shell paints behind its window, so the app
+         background matches the page before the WebView has drawn anything and
+         there is no white flash on launch. -->
+    <color name="aero_desktop">#1C4F7C</color>
+    <color name="aero_glass">#2E6DA4</color>
+</resources>

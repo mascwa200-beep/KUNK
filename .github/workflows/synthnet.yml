@@ -1,0 +1,588 @@
+name: Synthnet
+
+# Synthnet is a self-contained static site with no build step and no
+# dependencies. What CI is for here is holding three promises that are easy to
+# break by accident and invisible when broken:
+#
+#   1. It works with no network at all. One absolute URL slipped into one file
+#      breaks that, and nothing about the page would look wrong.
+#   2. It loads quickly. The search index once reached 4.2 MB for 333 KB of
+#      content and nobody noticed until it was measured.
+#   3. The pages actually render. A renderer once shipped with a fatal syntax
+#      error inside a build that reported success.
+#
+# Every step below exists because one of those already went wrong once.
+
+on:
+  push:
+    paths:
+      - "synthnet/**"
+      - ".github/scripts/synthnet_smoke.py"
+      - ".github/scripts/synthnet_user_check.py"
+      - ".github/fixtures/modes/**"
+      - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_function_check.py"
+      - ".github/scripts/synthnet_modes_check.py"
+      - ".github/scripts/synthnet_live_check.py"
+      - ".github/scripts/synthnet_slotmath_check.py"
+      - ".github/scripts/synthnet_budget_check.py"
+      - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_claims_check.py"
+      - ".github/scripts/synthnet_apk_check.py"
+      - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_chrono_check.py"
+      - ".github/scripts/synthnet_routes_check.py"
+      - ".github/scripts/synthnet_order_check.py"
+      - ".github/scripts/synthnet_types_check.py"
+      - ".github/scripts/synthnet_search_check.py"
+      - ".github/scripts/synthnet_widget_check.py"
+      - ".github/scripts/synthnet_docs_check.py"
+      - ".github/workflows/synthnet.yml"
+  pull_request:
+    paths:
+      - "synthnet/**"
+      - ".github/scripts/synthnet_smoke.py"
+      - ".github/scripts/synthnet_user_check.py"
+      - ".github/fixtures/modes/**"
+      - ".github/scripts/synthnet_link_check.py"
+      - ".github/scripts/synthnet_function_check.py"
+      - ".github/scripts/synthnet_modes_check.py"
+      - ".github/scripts/synthnet_live_check.py"
+      - ".github/scripts/synthnet_slotmath_check.py"
+      - ".github/scripts/synthnet_budget_check.py"
+      - ".github/scripts/synthnet_standalone_check.py"
+      - ".github/scripts/synthnet_claims_check.py"
+      - ".github/scripts/synthnet_apk_check.py"
+      - ".github/scripts/synthnet_counter_keys_check.py"
+      - ".github/scripts/synthnet_chrono_check.py"
+      - ".github/scripts/synthnet_routes_check.py"
+      - ".github/scripts/synthnet_order_check.py"
+      - ".github/scripts/synthnet_types_check.py"
+      - ".github/scripts/synthnet_search_check.py"
+      - ".github/scripts/synthnet_widget_check.py"
+      - ".github/scripts/synthnet_docs_check.py"
+      - ".github/workflows/synthnet.yml"
+  workflow_dispatch:
+
+concurrency:
+  # Keyed on the head commit, not github.ref: this runs on both push and
+  # pull_request, which see different refs for the same commit, so a ref-keyed
+  # group never collapses them and every push runs everything twice.
+  group: synthnet-${{ github.event.pull_request.head.sha || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Offline site
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate every site against the contract
+        # Schema, internal reference resolution, and the rule the whole project
+        # rests on: no absolute http/https URL anywhere, bar the SVG and XHTML
+        # XML namespaces. That rule is only true while something checks it.
+        run: python3 synthnet/tools/validate.py --strict
+
+      - name: The documents must answer to the repository
+        # Fifteen rounds read the code and the content and nobody read the
+        # README against the build. It said, in bold, that the app "declares
+        # no permissions at all" -- and so did docs/PHONE.md -- while
+        # AndroidManifest.xml declared two, with a comment directly above
+        # them saying that very claim had stopped being true. The repository
+        # held the correction and the uncorrected sentence at the same time.
+        #
+        # This takes facts the build knows -- which permissions are declared,
+        # which README regions tools/build.py generates, which files the
+        # prose points at -- and insists the documents match them. It cannot
+        # read prose, and says so: "no posting, no accounts, the forms are
+        # furniture" was false for months and no pattern would catch it.
+        run: python3 .github/scripts/synthnet_docs_check.py --root synthnet
+
+      - name: Parse every renderer
+        run: |
+          status=0
+          for f in synthnet/app/*.js synthnet/app/types/*.js synthnet/sw.js; do
+            if node --check "$f"; then echo "  ok   $f"; else echo "  FAIL $f"; status=1; fi
+          done
+          exit $status
+
+      - name: No renderer may hash with a double multiply
+        # `h = (h * 16777619) >>> 0` is the obvious spelling of an FNV-1a
+        # step and it is wrong in JavaScript: the product passes 2^53 and is
+        # rounded, which destroys the LOW bits -- exactly the bits that
+        # `% pool.length` reads. It made most of this network unreachable for
+        # eighteen months and nothing failed, because a biased hash still
+        # produces something that looks like noise.
+        #
+        # Nine files had a local copy of it, three of them written after the
+        # fix, because everyone copies the helper next to them. So it is a
+        # build failure now rather than a thing to keep rediscovering.
+        run: |
+          hits=$(grep -rn '\*[[:space:]]*16777619' synthnet/app synthnet/tools \
+                 | grep -v 'Math.imul' | grep -v 'imul32' \
+                 | grep -v '^\s*\*' | grep -v 'app/live.js' || true)
+          if [ -n "$hits" ]; then
+            echo "FAIL: a hash is multiplying with * instead of Math.imul."
+            echo "      Use Math.imul(h, 16777619). See the note in app/live.js."
+            echo "$hits"
+            exit 1
+          fi
+          echo "  ok   every FNV step uses Math.imul"
+
+      - name: One live counter key, one base
+        # SYNTH.live.counter(key, base, perDay) derives its number from the
+        # key and the base, so two call sites sharing a key are stating that
+        # they print the same number. market.js shared 'market:cat:<id>'
+        # between the index and the category page and fed it two different
+        # bases, so classifieds.verity.net said Vehicles (121) on its index
+        # and "142 listings indexed" on the Vehicles page -- every category,
+        # all four market sites, both pages rendering perfectly.
+        #
+        # Static, no browser, milliseconds. The cross-page claims row still
+        # reads the two rendered pages; this one stops the shape of that bug
+        # reaching a page at all.
+        run: python3 .github/scripts/synthnet_counter_keys_check.py --root synthnet
+
+      - name: Nothing authored may be dated into a month that has not happened
+        # milbrooknow.com had 66 date values running up to 27 days past the
+        # simulation's EPOCH -- articles, their updates, and eleven
+        # corrections. news.js groups the corrections page under absolute
+        # month headings and filters nothing, so the page showed an "October
+        # 2026" heading in September, and under it a correction withdrawing
+        # another correction, both in a month that had not happened.
+        #
+        # The limit is not zero. Straddling EPOCH by a few days is
+        # deliberate: halseycountynow.com tells a boil-water advisory across
+        # four updates whose dates each match the weekday the text names,
+        # running from two days before EPOCH to two days after, so it reads
+        # correctly as the clock advances into it. The deliberate straddle
+        # measures at most 3 days and the fault was 27, so the line is a
+        # week, with margin on both sides.
+        run: python3 .github/scripts/synthnet_chrono_check.py --root synthnet
+
+      - name: Every path table must answer to the renderers
+        # What paths a type serves was written down five times by hand --
+        # PATH_PREFIXES, its copy in the link check, the table in
+        # docs/AUTHORING.md, TYPE_PROBES in the smoke check, ROLE_PATH in
+        # live.js -- and derived from the renderers in none of them. Only
+        # one of those pairs was checked against another.
+        #
+        # The cost is not a doc reading badly. A route PATH_PREFIXES lacks
+        # is a working link the link check calls dead; one it has with no
+        # branch behind it is a link waved through to a 404; and one missing
+        # from TYPE_PROBES is a page the smoke sweep never loads. That last
+        # is how a rule matching "[url=" since the day it was written sat
+        # over a page rendering raw markup.
+        #
+        # Static, no browser. Twenty routes had no probe when this was
+        # written; they have one now, and a new route without one is a
+        # build failure.
+        run: python3 .github/scripts/synthnet_routes_check.py --root synthnet
+
+      - name: Build, and confirm the committed generated files are current
+        # The build ran FIRST and --check ran second, so it compared the
+        # outputs against the build it had just done. It asserted that
+        # build.py is deterministic within one run; it could not find a
+        # stale commit, which is what its name says.
+        #
+        # sw.js is now checked against the commit, because it is the one
+        # generated file that is committed AND fully reproducible: its
+        # CACHE_VERSION is a hash of the content it caches, so two clones of
+        # the same tree produce the same bytes. A stale committed sw.js
+        # means a released build that never invalidates its cache, which is
+        # the fault this round exists for.
+        #
+        # registry.json and search.json are deliberately not checked this
+        # way: they carry a "generated" stamp taken from source mtimes, and
+        # git does not preserve mtimes, so a fresh clone can never reproduce
+        # the committed bytes. Worth saying rather than pretending the line
+        # below covers them.
+        run: |
+          cp synthnet/sw.js "${RUNNER_TEMP:-/tmp}/sw.committed.js"
+          python3 synthnet/tools/build.py
+          python3 synthnet/tools/build.py --check
+          if ! diff -q "${RUNNER_TEMP:-/tmp}/sw.committed.js" synthnet/sw.js >/dev/null; then
+            echo "FAIL: synthnet/sw.js is stale. The service worker's cache"
+            echo "      name is derived from what it caches, so a returning"
+            echo "      browser would keep serving the previous build."
+            echo "      Run: python3 synthnet/tools/build.py"
+            diff -u "${RUNNER_TEMP:-/tmp}/sw.committed.js" synthnet/sw.js | head -20
+            exit 1
+          fi
+
+      - name: Enforce the size budget
+        # Two numbers, because there are two questions.
+        #
+        # COLD LOAD is what index.html blocks on before it paints. PAYLOAD is
+        # everything the service worker eventually pulls, which is what a
+        # first visit really costs and what offline needs. They used to be the
+        # same number: the page carried all twenty renderers and all twenty
+        # skin stylesheets whatever site you were looking at. Now app/
+        # render.js fetches the one a page needs, from the table in
+        # app/loadmap.js, and the first paint is 1,082,706 bytes raw cheaper
+        # while the payload has not moved by a byte.
+        #
+        # Saying only the first number would claim the app halved. It did not.
+        #
+        # The ceiling went DOWN here -- 2 MiB to 1 MiB raw, 560 KiB to 320 KiB
+        # gzipped -- which is the first time that has happened in this project.
+        # It had been raised three times (400 KB, 1 MB, 2 MB) and each raise
+        # was defensible on its own while the trend was not: a ceiling that
+        # moves whenever content grows has stopped being an alarm.
+        #
+        # The list is derived from index.html and from sw.js rather than typed
+        # here. It used to be a shell glob, and a glob is a hand-maintained
+        # list in a disguise -- `synthnet/app/*.js` kept counting control.js
+        # after it was deferred, and an earlier version of this step
+        # under-reported by 91 KB by not naming the skin stylesheets that
+        # every single page loaded.
+        run: python3 .github/scripts/synthnet_budget_check.py --root synthnet
+
+      - name: The standalone single-file build must stay openable
+        # dist/synthnet.html inlines the shell AND every site, which is what
+        # makes it a build you can copy to a phone and open with no install.
+        # It is therefore the one artifact that grows with content, and the
+        # one where "just add more sites" has a real cost. 2.3 MB at this
+        # commit; a phone opens that instantly. The ceiling exists so that
+        # doubling the network is a decision rather than an accident.
+        run: |
+          actual=$(stat -c%s synthnet/dist/synthnet.html)
+          echo "dist/synthnet.html: $actual bytes"
+          if [ "$actual" -gt 12582912 ]; then
+            echo "FAIL: the standalone build has passed 12 MB. Either trim it,"
+            echo "      or decide deliberately that the single-file mode is"
+            echo "      no longer the point and raise this."
+            exit 1
+          fi
+
+      - name: Render every site type in a real browser
+        # node --check proves a renderer parses, not that it works. This loads
+        # real pages and fails on console errors, empty renders, raw inline
+        # markup reaching the screen, or horizontal overflow at 360px.
+        run: |
+          # --retries/--timeout because this one line took a whole run down
+          # on b5dfa89 with a read timeout from files.pythonhosted.org,
+          # before any check body had run. The re-run passed, so it was a
+          # genuine one-off -- and a one-off that recurs costs a false red
+          # and the single re-run a real failure is entitled to.
+          pip install --quiet --retries 5 --timeout 30 playwright
+          python3 -m playwright install --with-deps chromium
+          python3 .github/scripts/synthnet_smoke.py --root synthnet --keep-going
+
+      - name: The standalone file must work off a file manager, offline
+        # The previous step checks that dist/synthnet.html is not too big,
+        # which is to say it checks the file exists. Nothing ever opened it.
+        #
+        # That became the gap that mattered when the twenty renderers left
+        # index.html: served, app/render.js fetches them on demand; a single
+        # file has nothing to fetch from, so tools/build.py inlines every
+        # app/loadmap.js entry instead. The reason this was not done years
+        # ago was a belief that deferring them "costs the standalone build".
+        # It does not, and now that is asserted rather than believed --
+        # including that the file makes no non-file:// request at all.
+        #
+        # It rendered eight front doors until the route table was derived:
+        # eight of the twenty-one types, covering 37 of the 109 sites, and
+        # only their indexes. Two thirds of the network had never been
+        # rendered in the mode this project leads with. The list comes from
+        # app/loadmap.js and synthnet_routes_check.py now -- 78 routes
+        # across all 21 types -- and a type in the loadmap that does not get
+        # rendered here fails the build.
+        run: python3 .github/scripts/synthnet_standalone_check.py --bundle synthnet/dist/synthnet.html --root synthnet
+
+      - name: Posting, replies, fame, packs and persistence
+        # The render test proves pages draw. It cannot prove the site does
+        # anything: that a post gets replies referencing what was written,
+        # that fame progresses, that a content pack survives an export/wipe/
+        # import round trip, or that any of it outlives a reload. Every one of
+        # those fails silently with the page still rendering perfectly, which
+        # is the failure mode that has already shipped twice here.
+        run: python3 .github/scripts/synthnet_user_check.py --root synthnet
+
+      - name: The network has to actually move
+        # A frozen page renders perfectly, so every other check stays green
+        # while the whole premise of the project quietly stops being true.
+        # This pins the clock and asserts the page moves when it moves, does
+        # not move when it does not, and is busier at 9pm than at 4am.
+        run: python3 .github/scripts/synthnet_live_check.py --root synthnet
+
+      - name: Every link the app generates must resolve
+        # validate.py checks the synth:// links written inside site JSON. It
+        # cannot see the ones JavaScript builds at render time, and nothing
+        # did: app/fame.js hardcoded five domains, three of which had never
+        # been in the registry, so "gain followers and the world reacts"
+        # emitted a dead link at every milestone while CI stayed green.
+        # This reads the app's source AND drives it through every fame tier.
+        run: python3 .github/scripts/synthnet_link_check.py --root synthnet
+
+      - name: Everything that looks like a control has to be one
+        # Every other check here asks whether a page RENDERS. This asks
+        # whether it WORKS. A renderer writes el('span', {}, 'catalog') and
+        # three words sit at the top of a board in link colour for a year --
+        # nothing about that span is an error, it renders perfectly, and it
+        # is a lie to the reader. There were fifteen of them, 453 occurrences,
+        # the biggest being seven nav items on every page of eight forums.
+        #
+        # It cannot be answered by looking: a handler may be attached with
+        # addEventListener, which leaves no trace a page can read, and this
+        # app delegates clicks from #synth-viewport, so every element has a
+        # listener above it. So pass 2 PRESSES each distinct control and
+        # watches for the route, the DOM, the scroll or a form field's value
+        # to move. Likewise a dead end is found by asking each site for a
+        # path that cannot exist and recognising that answer, rather than
+        # guessing at its wording.
+        #
+        # It now also presses the controls it can SEE a handler on, which it
+        # used to trust and skip. That is the more useful half: a handler
+        # that is a no-op, an early return or a throw passed the old check
+        # with a clean sweep, and the whole argument for pressing anything
+        # was that static inspection cannot answer this.
+        #
+        # Six pages a site, 109 sites: 233 seconds for 214 controls before
+        # that change, 288 for 348 after. I guessed seven or eight minutes
+        # when I added this; it is under five, so the budget stays at six
+        # and --press stays uncapped.
+        run: python3 .github/scripts/synthnet_function_check.py --root synthnet --pages 9
+
+      - name: No page may contradict itself
+        # Every other check asks whether a page renders, whether its links go
+        # anywhere, whether its controls do anything. This asks whether the
+        # page AGREES WITH ITSELF -- whether a number it states matches the
+        # thing it states it about, three inches down the same screen.
+        #
+        # That is where every content bug of the last two rounds lived, and
+        # not one was caught by CI: "101,900 articles in 21 topics" over a
+        # column adding to 17,064; "2 Answers" over five; "3 comments" over
+        # eight; a thread saying "Bump limit reached" above an omitted count
+        # from before it got there; and "Most users ever online was 118 on
+        # Mon Apr 2, 2009-2016 9:50 pm". All six rendered perfectly. All six
+        # were found by looking at a picture.
+        #
+        # Two rules inside it, both learned by getting them wrong: it reads
+        # BOTH numbers off the page and never recomputes one (a checker that
+        # re-derives the renderer's arithmetic agrees with the renderer's
+        # bug), and every row names its relation, because a board that
+        # declares more posts than it itemises is correct and a heading that
+        # undercounts its own list is not.
+        run: python3 .github/scripts/synthnet_claims_check.py --root synthnet
+
+      - name: A list that names an order must be in it
+        # A heading is a claim, and it renders perfectly whether or not the
+        # rows under it obey it. Eight portal sites opened Property Tax,
+        # Open Burning, County Clerk under "Services A-Z"; gridline.social
+        # printed a numbered <ol> whose points went 157, 131, 115, 129; the
+        # note over every comment list on the stream sites said human
+        # comments appear below the fold, and they were rendered first.
+        #
+        # The second of those is the one that spreads. `points` in the site
+        # file is static and the number the row prints is a counter that
+        # drifts, so a list sorted on the first degrades on its own with no
+        # commit in between. news.js mostRead() has had the correct shape
+        # the whole time: score into an array, sort on the score, print the
+        # score.
+        #
+        # This reads the rendered sequence and derives nothing -- a checker
+        # that recomputes the renderer's sort agrees with the renderer's
+        # bug. Two clocks, because the counter-driven lists are nearly
+        # ordered on day one: clipvault.tv's grid was clean at the pinned
+        # instant and had four inversions 200 days later.
+        #
+        # After the smoke step, which is where chromium is installed.
+        # This step first shipped above the static checks, where
+        # `import playwright` fails in under a second -- the script
+        # had run clean locally a dozen times and its POSITION in
+        # this file was the one thing no local run exercises.
+        run: python3 .github/scripts/synthnet_order_check.py --root synthnet
+
+      - name: Every list of type names must answer to the renderers
+        # Round 10 did this for the per-type PATH table. This is the table
+        # beside it -- the list of type NAMES -- which was written down ten
+        # times and had drifted in six of them. The two that broke work:
+        # tools/new_site.py named seven types as argparse choices, so the
+        # scaffolding CLI refused thirteen of the twenty authorable ones; and
+        # the expansion workflow told its own verification agent the valid
+        # types were the original seven, so it would reject a chat site that
+        # same workflow had just been told to write.
+        #
+        # It also scaffolds every authorable type into a temp directory,
+        # validates it and draws it in a browser. That is the part no static
+        # parse can make: a body can satisfy every required key and still
+        # render a blank page. Nothing is written to the repository.
+        #
+        # After the smoke step, which is where chromium is installed.
+        run: python3 .github/scripts/synthnet_types_check.py --root synthnet
+
+      - name: Text on a page must be findable by searching for it
+        # app/engine.js calls the search box "Searching the whole of
+        # VerityNet, offline". Three rounds have now found that to be a claim
+        # rather than a description, and each time by reading the content and
+        # reasoning about which field was next. This does it the other way:
+        # it renders 318 pages, reads the words off the screen, keeps the
+        # ones the site's own file authors -- so the live generators' output
+        # is not held against a static index -- and asks the app's own search
+        # box for every one of them.
+        #
+        # What that found the first time it ran: `[quote=Dori Wanamaker]`
+        # rendered as "Dori Wanamaker wrote:" and the indexer's tag regex ate
+        # the name with the tag; and every renderer draws a masthead out of
+        # `data` -- siteName, boardName, agency, motto, notices, rules,
+        # about, blogroll, navLabel, the button walls -- which no document
+        # builder read at all.
+        #
+        # After the smoke step, which is where chromium is installed.
+        run: python3 .github/scripts/synthnet_search_check.py --root synthnet
+
+      - name: Every renderer mode has to render once
+        # You cannot render a route no site serves, so a renderer can ship
+        # having never run. Four did: wire, newsletter, chat, and the three
+        # modes news gained. Three threw on first contact with data and the
+        # fourth drew the wrong thing, and no check here could see any of it.
+        # So this brings its own sites -- .github/fixtures/modes, staged into
+        # a throwaway tree -- and nothing on the network has to keep a
+        # liveblog open for it to go on working.
+        run: python3 .github/scripts/synthnet_modes_check.py --root synthnet
+
+      - name: The Java clock and the JavaScript clock must agree
+        # The widget recomputes its counts natively, because when the app is
+        # closed there is no WebView to ask and a cached number would be wrong
+        # within minutes. That is a duplicate implementation of the one
+        # function this whole project rests on, and the two languages disagree
+        # about arithmetic unless you are careful: they differed on 863 of
+        # 1304 answers the first time this ran.
+        run: python3 .github/scripts/synthnet_slotmath_check.py --root synthnet
+
+      - name: The widget and the notification must say what they mean
+        # The step above proves the Java and JavaScript clocks agree on the
+        # arithmetic. Nothing read the WORDS these two surfaces print, and
+        # four things were wrong with them: the widget put the ambient
+        # all-site total in 30sp bold as the biggest thing on the home
+        # screen, which is the one number app/feedsui.js forbids; it carried
+        # a third number formatter, so 1,234 read "1234" there and "1.2k"
+        # everywhere else; the notification said "N replies waiting" over a
+        # figure that counts mention-level events, including fame milestones
+        # and newsletters; and it put that STORED figure and a freshly
+        # recomputed total in one notification, both present tense.
+        #
+        # RemoteViews needs a device, so nothing here draws a widget.
+        # Wording.java is plain Java with no android.* imports and a main()
+        # that answers a script, so the strings come back over a pipe.
+        # javac, java and node; no SDK and no browser.
+        run: python3 .github/scripts/synthnet_widget_check.py --root synthnet
+
+      - name: Build the Android app
+        # ubuntu-latest ships the Android SDK, and the app uses only framework
+        # APIs, so there is nothing to resolve or download -- aapt2, javac, d8
+        # and apksigner, about a minute.
+        run: |
+          export ANDROID_HOME="${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+          bash synthnet/android/build.sh
+
+      - name: The app must hold no network permission
+        # The offline guarantee rests on the app having no INTERNET permission,
+        # which makes it enforced by Android rather than promised in a README.
+        #
+        # This used to assert zero permissions of any kind. It now asserts an
+        # allowlist, because local notifications need two and neither of them
+        # grants network access: POST_NOTIFICATIONS (a runtime prompt) and
+        # RECEIVE_BOOT_COMPLETED (so the alarm survives a restart). The
+        # process still cannot open a socket. The home-screen widget, which
+        # is the half of that feature that cannot be throttled or declined,
+        # needs no permission at all.
+        #
+        # An allowlist is stricter than it sounds: anything not named below
+        # fails, so adding INTERNET, ACCESS_NETWORK_STATE, a location
+        # permission or a foreground-service type all fail the build the same
+        # way a count would have.
+        run: |
+          BT="$(ls -1 "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          AAPT2="$ANDROID_HOME/build-tools/$BT/aapt2"
+          ALLOWED="android.permission.POST_NOTIFICATIONS
+          android.permission.RECEIVE_BOOT_COMPLETED"
+
+          GOT=$("$AAPT2" dump badging synthnet/android/synthnet.apk \
+                | grep -oE "uses-permission[^:]*: name='[^']+'" \
+                | sed "s/.*name='//;s/'//" | sort -u || true)
+          echo "declared permissions:"
+          echo "$GOT" | sed 's/^/  /'
+
+          status=0
+          for p in $GOT; do
+            case "$p" in
+              android.permission.POST_NOTIFICATIONS) ;;
+              android.permission.RECEIVE_BOOT_COMPLETED) ;;
+              *)
+                echo "FAIL: $p is not on the allowlist."
+                status=1
+                ;;
+            esac
+          done
+          # Named explicitly as well, so the failure says the right thing if
+          # the loop above is ever loosened by accident.
+          if echo "$GOT" | grep -qE "INTERNET|ACCESS_NETWORK_STATE"; then
+            echo "FAIL: the app asked for network access. The whole project"
+            echo "      rests on Android refusing it one."
+            status=1
+          fi
+          exit $status
+
+      - name: The widget and the alarm must survive the build
+        # d8 has silently dropped a class here before (an anonymous
+        # WebChromeClient it could not resolve), with a bare NPE naming no
+        # source file. A widget that is not in the dex is a widget that never
+        # appears in the picker, and nothing else would notice.
+        run: |
+          BT="$(ls -1 "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          AAPT2="$ANDROID_HOME/build-tools/$BT/aapt2"
+          status=0
+          CLASSES=$(unzip -p synthnet/android/synthnet.apk classes.dex | strings \
+                    | grep -oE "Lnet/verity/synthnet/[A-Za-z]+;" | sort -u)
+          for c in SynthWidget AlertAlarm Bridge Snapshot SlotMath Wording MainActivity; do
+            if echo "$CLASSES" | grep -q "Lnet/verity/synthnet/$c;"; then
+              echo "  ok   $c"
+            else
+              echo "  FAIL $c is not in the dex"
+              status=1
+            fi
+          done
+          for r in res/xml/widget_info.xml res/layout/widget.xml; do
+            if unzip -l synthnet/android/synthnet.apk | grep -q "${r##*/}"; then
+              echo "  ok   ${r##*/}"
+            else
+              echo "  FAIL ${r##*/} is not in the APK"
+              status=1
+            fi
+          done
+          exit $status
+
+      - name: The APK must contain everything the page fetches
+        # Structural checks cannot catch a file that was never staged into
+        # assets/ -- the APK would be valid and the page would break. This
+        # drives the real site, records every URL it requests, and asserts each
+        # one is inside the APK.
+        run: python3 .github/scripts/synthnet_apk_check.py --apk synthnet/android/synthnet.apk --root synthnet
+
+      - name: Publish the Android app
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthnet-android-apk
+          path: synthnet/android/synthnet.apk
+          if-no-files-found: error
+
+      - name: Publish the standalone single-file build
+        # dist/ is gitignored because it is generated. Uploading it here keeps
+        # the current build one download from the Actions run, which is the
+        # point of the standalone mode: copy this one file to a phone, open it,
+        # no install and no server.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: synthnet-standalone
+          path: synthnet/dist/synthnet.html
+          if-no-files-found: error

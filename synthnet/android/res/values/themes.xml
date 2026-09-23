@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- No action bar: the page draws its own Vista title bar, and a native one
+         on top of it would look like two windows stacked. -->
+    <style name="SynthnetTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/aero_desktop</item>
+        <item name="android:statusBarColor">@color/aero_desktop</item>
+        <item name="android:navigationBarColor">@color/aero_desktop</item>
+    </style>
+</resources>

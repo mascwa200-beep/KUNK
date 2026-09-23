@@ -1,0 +1,665 @@
+{
+  "schema": 1,
+  "domain": "troop62.verity.net",
+  "title": "Boy Scout Troop 62 - Gridfall",
+  "type": "page",
+  "era": "2012",
+  "skin": "tripod-tile",
+  "description": "Scout Troop 62 of Gridfall, on a template a parent bought in 2007: a calendar that stops in June 2012, a merit badge counsellor list with phone numbers, the pancake breakfast accounts back to 2007, an Eagle Scout list, and a photo album in which not one picture comes up.",
+  "tags": ["gridfall", "scouts", "archive", "youth", "pancakes"],
+  "links": ["boards.gridfall.net", "webring.gridfall.net", "wiki.gridfall.net", "verityledger.com", "ashkettlevfd.org", "ashkettle-wx.net", "marchfield-coop.com", "gridfalltire.com", "quarrycut.net", "stargazers.verity.net", "tnorris.verity.net", "clipvault.tv", "kestrel-journal.net", "milbrookgazette.com", "verity.county.gov", "verityrail-preservation.org"],
+  "data": {
+    "navLabel": "TROOP 62 PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** BOY SCOUT TROOP 62, GRIDFALL *** MEETINGS EVERY MONDAY 7:00 TO 8:30 PM *** PANCAKE BREAKFAST THE FIRST SATURDAY IN MARCH *** A BOY CAN COME ON ANY MONDAY AND DOES NOT HAVE TO TELEPHONE FIRST ***" },
+          { "kind": "image", "seed": "troop62-parade-depot-2007", "imgKind": "banner", "caption": "The troop on Depot Street, Memorial Day 2007, waiting for the fire trucks to go first. This picture sits in the same folder as this page, which is the only reason it still comes up." },
+          { "kind": "heading", "level": 1, "text": "Boy Scout Troop 62, Gridfall" },
+          { "kind": "text", "body": "Troop 62 has met on Ellery Street in Gridfall since [b]1919[/b]. The charter organisation is Gridfall First Methodist Church and has always been the church, through three buildings and one name change.\n\nWe have [b]thirty one registered Scouts[/b] and eleven registered adults. Boys come to us from Cub Pack 62 in February and from the middle school the rest of the year, and about a third of the troop is from outside the borough, which means somebody's parent is driving in from Nye Mills on a Monday night in February.\n\nWe are Troop 62 because the council registered sixty two troops in 1919 and this one was the last on the list. That is the whole of where the number comes from and somebody asks about once a year." },
+          { "kind": "heading", "level": 2, "text": "Where and when" },
+          { "kind": "text", "body": "[b]Every Monday, 7:00 to 8:30 PM[/b], in the fellowship hall at Gridfall First Methodist, 214 Ellery Street.\n\nUse the [b]side door on Bellamy Street[/b], not the front. The front is locked at six and the man with that key is not in the building on a Monday.\n\nPark in the church lot or along Bellamy. Do not park in the three spaces at the Ellery Street end, which belong to the funeral home next door and which they need on a Monday more often than you would think.\n\nThe committee meets the [b]first Monday[/b] at 6:15, before the boys arrive, in the room off the kitchen. Any parent may come and any parent is welcome to say something. Most do not and that is how it has always been." },
+          { "kind": "heading", "level": 2, "text": "What we do" },
+          { "kind": "text", "body": "We camp ten weekends a year and one week in the summer. We cook on wood and on propane and we eat what the patrol cooked, which is the lesson.\n\nWe run the [url=/pancakes]pancake breakfast[/url] in March, which is the whole of our fundraising and pays for the trailer, the propane, the tents and about half of what summer camp costs any boy whose family asks.\n\nWe walk in the Memorial Day parade and we put the flags on the graves at the church on the Saturday before. We collect food in November. We do the flag at the borough council meeting in January, which takes four minutes and which two boys are always nervous about.\n\nThe rest of it is advancement, and advancement is a boy and a man in a kitchen with a [url=/meritbadge]blue card[/url] and a book." },
+          { "kind": "heading", "level": 2, "text": "Who runs it" },
+          {
+            "kind": "table",
+            "head": ["", "", ""],
+            "rows": [
+              ["Scoutmaster", "Ron Kerchner", "782-3841"],
+              ["Assistant Scoutmaster", "Doug Trostle", "782-2907"],
+              ["Assistant Scoutmaster", "Phil Arbogast", "782-4466"],
+              ["Assistant Scoutmaster", "Marty Zellers", "782-3115"],
+              ["Committee Chair", "Barb Sechrist", "782-1174"],
+              ["Treasurer", "Ellen Bixler", "782-2038"],
+              ["Advancement Chair", "Gary Wenrich", "782-5290"],
+              ["Charter Organisation Rep", "Rev. Dean Halderman", "782-1900 (church office, mornings)"],
+              ["Senior Patrol Leader", "Eli Wenrich", "elected, and you should talk to him first"]
+            ]
+          },
+          { "kind": "text", "body": "The Senior Patrol Leader line is not a courtesy. If a boy wants to know what to bring to a campout he asks the SPL, not Ron and not me. Ron will send him back to the SPL and has done it in front of people." },
+          { "kind": "heading", "level": 2, "text": "About this page" },
+          { "kind": "text", "body": "I am [b]Gary Wenrich[/b]. I built this in September 2007 on a template I paid eleven dollars for, because the troop's notices were going out on paper in a boy's backpack and were arriving in the kitchen in March folded into eighths.\n\nI am not a computer person. I sell insurance. Anything on here that is wrong is wrong because I typed it wrong, and the way to tell me is the [url=/guestbook]guestbook[/url] or Monday at seven.\n\nThe [url=/photos]photo album[/url] does not work. I know it does not work. There is a page about that." },
+          { "kind": "heading", "level": 2, "text": "What is new on this page" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "06/05/2012 -- Calendar filled in through summer camp. Eagle list updated, two added in May. Eli ages out in August and I will keep doing this page.",
+              "03/12/2012 -- Breakfast numbers posted. 248 plates, which is the most since 2008.",
+              "11/14/2011 -- Counsellor list revised off the new district roster. Four numbers were wrong and one man has been dead since February and is still on the district roster.",
+              "05/23/2011 -- Seth Arbogast's project is finished. 611 photographs scanned. Descriptions are going on the album page as I get to them.",
+              "10/19/2010 -- The album pictures stopped coming up when the host moved everybody. I have re-uploaded them twice. See the album page.",
+              "02/08/2009 -- Added the camping page after being asked the same question about boots eleven times.",
+              "09/10/2007 -- Page put up. Ron looked at it and said it was fine and asked whether it cost anything."
+            ]
+          },
+          { "kind": "text", "body": "[b]This page was last changed Tuesday 5 June 2012.[/b]" },
+          { "kind": "hitcounter", "count": 21874 },
+          { "kind": "text", "body": "The counter came with the template. Ellen does not believe it and neither do I. There are not twenty one thousand people who need to know when we meet. It is staying on because I do not know how to take it off." }
+        ]
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Troop calendar" },
+          { "kind": "text", "body": "The committee sets this in August and again in January. I type it in after the committee meeting, which means it is right for about three weeks at a stretch.\n\n[b]There is a meeting every Monday at 7:00 PM unless this page says otherwise.[/b] Holidays we do not meet. Snow we usually do meet, because the church is heated and everybody is already sick of the house.\n\nA date in [b]bold[/b] is one where a parent has to do something: sign a form, drive, or hand over money by the Monday before." },
+          { "kind": "heading", "level": 2, "text": "2011 - 2012 programme year" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "WHERE", "NOTE"],
+            "rows": [
+              ["Sept 12", "Mon", "First meeting of the year", "Fellowship hall", "Bring the boy and the registration. 7:00."],
+              ["Sept 19", "Mon", "Patrol elections", "Fellowship hall", "Boys only. Adults in the kitchen."],
+              ["Sept 24-25", "Sat-Sun", "Shakedown campout", "Church grounds", "In sight of the building on purpose. New boys sleep out for the first time."],
+              ["Sept 26", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", ""],
+              ["Oct 3", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Oct 15-16", "Sat-Sun", "Fall camporee", "Camp Hoagland", "[b]$14 by Oct 3.[/b] Bus leaves the church lot 8:00 Saturday."],
+              ["Oct 17", "Mon", "No meeting", "", "School in-service. Half the troop is away."],
+              ["Oct 24", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Oct 31", "Mon", "No meeting", "", "Hallowe'en. Nobody would come."],
+              ["Nov 5", "Sat", "Scouting for Food, bags out", "Borough and Nye Mills", "Meet 9:00 at the lot. Two hours."],
+              ["Nov 7", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", ""],
+              ["Nov 12", "Sat", "Scouting for Food, bags in", "Borough and Nye Mills", "Meet 9:00. Food goes to the pantry at the Armory."],
+              ["Nov 21", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Nov 28", "Mon", "Meeting", "Fellowship hall", "Klondike sled build starts. Bring a drill if you have one."],
+              ["Dec 5", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", ""],
+              ["Dec 12", "Mon", "[b]Court of Honour[/b]", "Fellowship hall, 7:00", "Parents and grandparents. Cake after. Wear the shirt."],
+              ["Dec 19", "Mon", "Meeting", "Fellowship hall", "Last before Christmas. Short."],
+              ["Dec 26", "Mon", "No meeting", "", ""],
+              ["Jan 2", "Mon", "No meeting", "", ""],
+              ["Jan 9", "Mon", "Meeting", "Fellowship hall", "Klondike sleds finished tonight or they are not finished."],
+              ["Jan 16", "Mon", "Meeting", "Fellowship hall", "Flag ceremony practice for the borough council."],
+              ["Jan 21-22", "Sat-Sun", "[b]Klondike Derby[/b]", "Camp Hoagland", "[b]$18 by Jan 9.[/b] Cold. Read the camping page before you pack him."],
+              ["Jan 23", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Jan 30", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Feb 4", "Sat", "Crossover from Pack 62", "Fellowship hall, 2:00", "Eight Webelos coming over. Troop wears the shirt."],
+              ["Feb 6", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", "[b]Breakfast assignments handed out.[/b]"],
+              ["Feb 13", "Mon", "Meeting", "Fellowship hall", "New boys get books and cards."],
+              ["Feb 20", "Mon", "No meeting", "", "Holiday."],
+              ["Feb 25", "Sat", "Griddle clean and hall set-up", "Fellowship hall, 9:00", "Four adults. It takes two hours and always has."],
+              ["Feb 27", "Mon", "Meeting", "Fellowship hall", "[b]Tickets in by tonight.[/b]"],
+              ["Mar 3", "Sat", "[b]PANCAKE BREAKFAST[/b]", "Fellowship hall, 7:00 to 11:00", "Everybody. Boys at 6:15 in the shirt. See the breakfast page."],
+              ["Mar 5", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", "Breakfast money counted at committee."],
+              ["Mar 12", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Mar 19", "Mon", "Meeting", "Fellowship hall", "Merit badge midway. Six counsellors coming in."],
+              ["Mar 24-25", "Sat-Sun", "Spring campout", "Cobb township, Herron Road", "[b]$6 by Mar 12.[/b] Landowner permission is annual and Ron has it."],
+              ["Mar 26", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Apr 2", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", ""],
+              ["Apr 9", "Mon", "No meeting", "", "Easter Monday."],
+              ["Apr 14", "Sat", "Blood drive", "Gridfall Armory, 9:00 to 2:00", "Cole Zellers' Eagle project. Boys signing people in."],
+              ["Apr 16", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Apr 21", "Sat", "Rail bed hike, 5 miles", "Meet at the freight house lot, Marchfield, 8:30", "Hiking and Pioneering work. Boots, not sneakers."],
+              ["Apr 23", "Mon", "Meeting", "Fellowship hall", ""],
+              ["Apr 30", "Mon", "Meeting", "Fellowship hall", "Swim checks arranged for camp. Forms out."],
+              ["May 7", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", "[b]Camp balance due.[/b] $215 less what the breakfast covers."],
+              ["May 14", "Mon", "Meeting", "Fellowship hall", ""],
+              ["May 19", "Sat", "Flags on the graves", "Church burial ground, Ellery Street, 9:00", "One hour. Coffee after, in the kitchen, for whoever stays."],
+              ["May 21", "Mon", "Meeting", "Fellowship hall", "Parade line-up gone over twice because it is never remembered."],
+              ["May 28", "Mon", "[b]Memorial Day parade[/b]", "Depot Street, step off 10:00", "Be at the lot at 9:15. Shirt, sash, long trousers, no shorts."],
+              ["Jun 4", "Mon", "Committee, then meeting", "Room off the kitchen, 6:15", ""],
+              ["Jun 11", "Mon", "[b]Court of Honour[/b] and last meeting", "Fellowship hall, 7:00", "Eagle presentations for Eli Wenrich and Cole Zellers. Cake after."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Summer 2012" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "NOTE"],
+            "rows": [
+              ["Jul 8-14", "Sun-Sat", "[b]Summer camp, Camp Hoagland[/b]", "Bus leaves the church lot 12:30 Sunday, back about 11:00 Saturday morning. Nineteen boys and four adults signed."],
+              ["Jul 28", "Sat", "Trailer and tent day", "Everything out on the lot, dried, patched, counted, back in. Four hours. We do this every year and we still lose poles."],
+              ["Aug 11", "Sat", "Canoe trip, Coyne Creek", "Weather dependent. Two adults with a card, which is Doug and Phil. Watch the water level at [url=synth://ashkettle-wx.net/]Kestrel Road Weather[/url] the Thursday before."],
+              ["Aug 6", "Mon", "Committee, fall calendar set", "6:15, room off the kitchen. Parents welcome and this is the one to come to."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "2012 - 2013" },
+          { "kind": "text", "body": "Three dates are fixed. The rest goes up after the August committee meeting." },
+          {
+            "kind": "table",
+            "head": ["DATE", "WHAT", "NOTE"],
+            "rows": [
+              ["Sept 10", "First meeting of the year", "Monday, 7:00."],
+              ["Oct 6-7", "Fall camporee", "Camp Hoagland. Price not set."],
+              ["Mar 2, 2013", "Pancake breakfast", "First Saturday. It is always the first Saturday."],
+              ["TBD", "Klondike Derby", "Council has not published the date."],
+              ["TBD", "Crossover", "Pack 62 sets it in December."],
+              ["TBD", "Summer camp week", "Camp office says the schedule comes out in November."]
+            ]
+          },
+          { "kind": "text", "body": "[i]Updated 5 June 2012 after the June committee meeting.[/i]" },
+          { "kind": "hitcounter", "count": 6612 }
+        ]
+      },
+      {
+        "id": "meritbadge",
+        "name": "Merit Badge Counsellors",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Merit badge counsellors" },
+          { "kind": "text", "body": "These are the counsellors in this district who have said yes to us. Every one of them is registered with the council and every one of them has been asked by Ron whether he may put the telephone number on this page. Two said no and are not here; ask Ron for those.\n\n[b]The order is: card first, telephone second.[/b] A boy gets a blue card signed by the Scoutmaster before he calls anybody. A counsellor who is rung up by a boy with no card will be polite about it and will then ring Ron, and Ron will be less polite about it." },
+          { "kind": "heading", "level": 2, "text": "How to telephone a counsellor" },
+          { "kind": "text", "body": "[list][*]The boy telephones, not the parent. The first time this happens he will be thirteen and it will be awful and that is the point of it.[*]Between [b]6:00 and 9:00 PM[/b] on a weekday unless the note says otherwise. Not at supper. Not after nine, ever.[*]He says his name, his troop, the badge, and asks when would suit. He does not say \"I need to get this done by Friday.\"[*]Two people at every meeting. A boy does not meet a counsellor alone. Bring a friend working the same badge, or a parent, and the counsellor knows this rule already.[*]If a counsellor does not ring back in a week, ring once more, then tell Ron. Do not ring a third time.[/list]" },
+          { "kind": "heading", "level": 2, "text": "The list" },
+          { "kind": "text", "body": "Revised [b]14 November 2011[/b] against the district roster. Numbers in Ashkettle (619) and Coyne Flats (655) are long distance from a Gridfall phone, which the boys forget every single year." },
+          {
+            "kind": "table",
+            "head": ["NAME", "BADGES", "TOWN", "PHONE", "NOTES"],
+            "rows": [
+              ["Ron Kerchner", "Camping, Cooking, Wilderness Survival, Orienteering", "Gridfall", "782-3841", "Scoutmaster. Will not counsel a boy in his own troop for Eagle-required unless there is nobody else, and there is usually somebody else."],
+              ["Doug Trostle", "Cooking, Fishing, Fish and Wildlife Management", "Gridfall", "782-2907", "Evenings. Does Fishing on the water and not at a table, so it is a Saturday and it is early."],
+              ["Phil Arbogast", "First Aid, Safety, Lifesaving", "Gridfall", "782-4466", "Works the 3 to 11 at the plant. Call Saturday morning."],
+              ["Marty Zellers", "Citizenship in the Nation, Citizenship in the World", "Gridfall", "782-3115", "Teaches at the high school. Not in August."],
+              ["Gary Wenrich", "Communications, Personal Management", "Gridfall", "782-5290", "That is me. I also do the advancement paperwork, so if you cannot get anybody else, ring me and I will find you somebody."],
+              ["Barb Sechrist", "Family Life, Personal Management", "Gridfall", "782-1174", "Family Life takes three months and she will not shorten it."],
+              ["Ellen Bixler", "Swimming, Lifesaving", "Gridfall", "782-2038", "Guards at the borough pool June to August. Swimming is done there and only there."],
+              ["Rev. Dean Halderman", "Citizenship in the Community", "Gridfall", "782-1900", "Church office, mornings. Will take four boys at once and prefers to."],
+              ["Duane Sarbaugh", "Automotive Maintenance", "Gridfall", "782-6151", "At the shop on Depot Street. See [url=synth://gridfalltire.com/]Gridfall Tire and Alignment[/url]. Saturdays before noon, and the boy gets his hands dirty or it does not count."],
+              ["Hank Ebersole", "Welding, Metalwork", "Gridfall", "782-2755", "Own shop behind the house on Wessel Street. Long trousers, boots, no synthetic shirt."],
+              ["Tom Norris", "Surveying", "Gridfall", "782-1062", "Retired county surveyor. Eleven boys since 1988 and he still has the transit. His page is at [url=synth://tnorris.verity.net/]tnorris.verity.net[/url]."],
+              ["Ben Tosches", "Astronomy", "Gridfall", "782-3390", "Verity County Amateur Astronomers, [url=synth://stargazers.verity.net/]stargazers.verity.net[/url]. Clear night on Perrin Hill, which means it gets cancelled twice for every time it happens."],
+              ["Dr. Nan Frantz", "Medicine, First Aid", "Marchfield", "744-6604", "County General. Leave a message with the office and say it is for a merit badge or it goes in the wrong pile."],
+              ["Karen Fennimore", "Genealogy, American Heritage, Reading", "Marchfield", "744-2217", "Marchfield Public Library, reference desk. Wants the boy to bring one name and one date to the first meeting and will not do the looking for him."],
+              ["Gene Ostrander", "Animal Science, Agribusiness, Plant Science", "Marchfield", "744-3028", "Through the [url=synth://marchfield-coop.com/]Farmers Cooperative[/url]. Not in April and not in October, for reasons that should be obvious."],
+              ["Walt Pennock", "Electricity, Emergency Preparedness", "Ashkettle", "619-3312", "Thirty four years at Verity Valley Power and Light. Brings hardware. Will not sign the card in under three sessions and says so on the telephone before you agree to it."],
+              ["Denise Hartle", "First Aid, Emergency Preparedness", "Ashkettle", "619-3877", "EMT, and on the [url=synth://ashkettlevfd.org/]Ashkettle fire department[/url]. Works nights at County General, so telephone before noon."],
+              ["Ray Sabo", "Geology", "Ashkettle", "619-2244", "Meets at the road cut on Route 62 east of the village. Hammer, glasses, boots. His page is [url=synth://quarrycut.net/]quarrycut.net[/url] and the boy should read it first."],
+              ["Curtis Ganske", "Radio, Electronics", "Ashkettle", "619-4021", "Evenings after seven. Has more equipment than room."],
+              ["Arlen Prill", "Soil and Water Conservation, Forestry", "Coyne Flats", "655-1840", "Milking at five and at five, so between is the window."],
+              ["Marie Tosches", "Bird Study, Nature", "Gridfall", "782-3390", "Same number as Ben. Bird Study starts at daylight in May and she means daylight."],
+              ["Wilmer Stroh", "Farm Mechanics, Welding", "Marchfield", "744-5512", "Hard of hearing. Let it ring."],
+              ["Lloyd Kerchner", "Woodwork, Wood Carving", "Gridfall", "782-2114", "Eagle Scout, 1964, this troop. Ron's uncle. Eighty one and still has the shop open Tuesdays."],
+              ["Dale Furniss", "Weather", "Gridfall", "782-4703", "Keeps the record for the astronomy club. Will want a month of the boy's own readings before he signs anything."],
+              ["Verne Mowrer", "Bugling, Music", "Gridfall", "782-1955", "Passed away 12 February 2011. He is still on the district roster and the council will not take him off until the roster is rebuilt, so he is still here. Do not telephone this number. Somebody lives there."]
+            ]
+          },
+          { "kind": "text", "body": "The last line on that table is not a joke and I was told twice to take it off. I have left it on because I checked the district roster again in November and he was still on it, and a boy with a book open on the kitchen table is going to ring the number in front of him. Better he reads this first." },
+          { "kind": "heading", "level": 2, "text": "Badges nobody here counsels" },
+          { "kind": "text", "body": "We have no counsellor in this district for any of these, as of November 2011:" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": ["Aviation", "Scuba Diving", "Small-Boat Sailing", "Railroading", "Archaeology", "American Business", "Nuclear Science", "Whitewater"]
+          },
+          { "kind": "text", "body": "Railroading was counselled in this county for thirty years by a man in Marchfield who gave it up when the branch line closed in 2008. Three boys asked for it in 2009 and none since. There is a preservation group at [url=synth://verityrail-preservation.org/]verityrail-preservation.org[/url] and they have been asked and have not said yes or no.\n\nFor anything on that list, the council office in Marn County keeps the full counsellor book. It is paper, it is not on the internet, and you have to telephone them and ask them to read it to you. Ron does this about four times a year." },
+          { "kind": "heading", "level": 2, "text": "For adults who would counsel" },
+          { "kind": "text", "body": "If you know a trade, a science, a craft or a sport well enough to show a boy, you can counsel it. There is a form, there is a background check, and there is no money in it.\n\nWe are short on [b]Aviation, Plumbing, Electronics, Public Speaking[/b] and anything to do with water. We are not short on Camping, because everybody's father thinks he counsels Camping.\n\nTelephone Ron at 782-3841 or come on a Monday at seven." },
+          { "kind": "hitcounter", "count": 4430 }
+        ]
+      },
+      {
+        "id": "pancakes",
+        "name": "Pancake Breakfast",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The pancake breakfast" },
+          { "kind": "marquee", "text": "*** SATURDAY 3 MARCH 2012 *** 7:00 AM TO 11:00 AM *** FELLOWSHIP HALL, 214 ELLERY STREET *** ADULTS $6, CHILDREN UNDER TEN $3, UNDER FIVE FREE *** EAT ALL YOU LIKE ***" },
+          { "kind": "image", "seed": "troop62-griddle-2007", "imgKind": "photo", "caption": "Doug Trostle at the two griddles, breakfast 2007. He has cooked the sausage every year since 1994 and has never once let anybody else do it. This picture is in the page folder and comes up; the ones on the album page do not." },
+          { "kind": "text", "body": "The first Saturday in March, every year since 1961. It is the only money this troop raises and it pays for everything the troop does that dues do not cover.\n\n[b]7:00 to 11:00 AM[/b], fellowship hall, Gridfall First Methodist, 214 Ellery Street. Side door on Bellamy. Park along Bellamy or in the funeral home lot, which they let us have on that one Saturday and have let us have since 1978." },
+          { "kind": "heading", "level": 2, "text": "What it costs and what you get" },
+          {
+            "kind": "table",
+            "head": ["", "PRICE"],
+            "rows": [
+              ["Adults", "$6.00"],
+              ["Children 10 and under", "$3.00"],
+              ["Children under 5", "free"],
+              ["Family, however many that is", "$20.00"],
+              ["Coffee to take with you, bring a cup", "$1.00"],
+              ["Coffee to take with you, our cup", "$1.50"]
+            ]
+          },
+          { "kind": "text", "body": "Pancakes until you stop, sausage, applesauce, orange juice, coffee, tea for two people who ask for it every year and who we now buy tea for on purpose.\n\n[b]The syrup is the store kind and we do not say otherwise.[/b] We bought the real kind in 2009 because a committee member insisted, it cost seventy one dollars, nobody at any table remarked on it, and we have not bought it since. That is not a complaint about anybody. It is just what happened.\n\nThe butter is real butter. That one people do notice." },
+          { "kind": "heading", "level": 2, "text": "Tickets" },
+          { "kind": "text", "body": "There are no tickets in the way people mean tickets. You pay at the door at the card table and Ellen Bixler makes change out of a cash box that has been the same cash box since before I was on the committee.\n\nWhat a boy sells in advance is a [b]card[/b] that says he sold it, which he brings to the meeting on the Monday before, and which is how we know how many bags of mix to buy. Every boy is asked to sell eight. Nobody is made to and nobody has ever been sat down about it.\n\nAdvance cards are also at [url=synth://gridfalltire.com/]Gridfall Tire and Alignment[/url] on Depot Street and at the [url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url] counter, both of which have done this for years without being asked twice." },
+          { "kind": "heading", "level": 2, "text": "Who does what" },
+          { "kind": "text", "body": "[b]6:15 AM[/b] boys arrive in the shirt. Two on the door, two on drinks, four in the dish pit, the rest carrying plates. A boy carries plates until he is fourteen and then he graduates to dishes, which he does not consider a promotion.\n\n[b]Griddles[/b] are Doug and whoever Doug has decided is allowed near a griddle this year. [b]Batter[/b] is Barb Sechrist and three people from the church who are not scouting parents and never have been and who come anyway. [b]Money[/b] is Ellen and one other adult, always two, never one.\n\n[b]11:00[/b] we stop cooking. [b]12:30[/b] the hall is back the way the church wants it, because there is a funeral lunch in it more Saturdays than not." },
+          { "kind": "heading", "level": 2, "text": "Every year, with the numbers" },
+          { "kind": "text", "body": "Ellen keeps this in the book and I type it in after the March committee meeting. Receipts are what went in the box, not profit. Costs run around a hundred and ninety dollars most years, and more the year we bought the syrup." },
+          {
+            "kind": "table",
+            "head": ["YEAR", "DATE", "PLATES", "RECEIPTS", "WHERE IT WENT"],
+            "rows": [
+              ["2007", "Sat 3 March", "214", "$982", "Four tents and a tarp. The old tents went to the pack."],
+              ["2008", "Sat 1 March", "251", "$1,144", "Trailer hitch and wiring, and the lettering on the trailer."],
+              ["2009", "Sat 7 March", "228", "$1,036", "Propane, two stoves, and the syrup nobody noticed."],
+              ["2010", "Sat 6 March", "236", "$1,081", "Camp fees for four boys. Nobody was told which four."],
+              ["2011", "Sat 5 March", "219", "$998", "Patrol boxes rebuilt. Hank Ebersole did the metal and would not take anything for it."],
+              ["2012", "Sat 3 March", "248", "$1,197", "Camp fees for six boys, and a new coffee urn because the old one took forty minutes."]
+            ]
+          },
+          { "kind": "text", "body": "2010 was the year we ran out of batter at twenty to ten and Barb sent two boys to the store on Mill Street for eleven pounds of mix, and we served it and nobody could tell. It is on the [url=/photos]album page[/url], or it would be." },
+          { "kind": "heading", "level": 2, "text": "The other breakfast" },
+          { "kind": "text", "body": "[url=synth://ashkettlevfd.org/]Ashkettle Volunteer Fire Department[/url] runs a pancake breakfast in October. Ours is in March. This was worked out at a meeting in 1996 between three people standing in a car park and it has held ever since without anybody writing it down until now.\n\nGo to theirs as well. They are nine miles out Route 62 and their hall is warmer than ours." },
+          { "kind": "heading", "level": 2, "text": "If you cannot come" },
+          { "kind": "text", "body": "People send a cheque and they always have. Make it to [b]Boy Scout Troop 62[/b] and post it to the church at 214 Ellery Street, Gridfall. Ellen puts it in the book the same as cash.\n\nWe do not telephone anybody for money, we do not go door to door for money, and we do not sell anything except a plate of pancakes on one Saturday in March. If somebody rings your house saying they are raising funds for Troop 62, they are not." },
+          { "kind": "hitcounter", "count": 8105 }
+        ]
+      },
+      {
+        "id": "photos",
+        "name": "Photo Album",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Photo album" },
+          { "kind": "text", "body": "[b]None of the pictures on this page come up.[/b] I know. Please read this before you sign the guestbook about it, because four people have.\n\nThe pictures are in a folder called album. The template put them there in 2007 and they came up fine for three years. On [b]19 October 2010[/b] the host moved everybody onto what the letter called the new system, and after that the pictures in the album folder stopped coming up for anybody but me.\n\nThey come up on my computer. That is the part I cannot get past. I have shown Ron. Ron says they come up on his too, and Ron's son says that is because we both have them saved on the machine already, and I think the son is right.\n\nI have uploaded the whole folder again twice, once in November 2010 and once in February 2011. The host's help page says to check the file permissions. I do not know what a file permission is and the help telephone number on the letter has been answered by a recording in another state both times I have rung it.\n\nWhat is below is the [b]description[/b] of each picture, which the template calls the alt text and which is stored in the page itself rather than in the album folder. That part still works. So the writing is here and the pictures are not." },
+          { "kind": "heading", "level": 2, "text": "Why the descriptions are as long as they are" },
+          { "kind": "text", "body": "Barb Sechrist said in 2007 that a person using a reader for the blind gets nothing out of a photograph unless somebody has typed what is in it. Her brother is blind. So I typed what was in each one, and I kept doing it, and by now I have done it for about nine hundred pictures.\n\nAt the time it seemed like a lot of trouble for one man in Coyne Flats.\n\nIt has turned out to be the whole album." },
+          { "kind": "heading", "level": 2, "text": "Summer camp 2008, Camp Hoagland" },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IS IN THE PICTURE"],
+            "rows": [
+              ["camp2008_004.jpg", "Nineteen boys and three adults on the dining hall steps at Camp Hoagland, Sunday afternoon, before anybody has unpacked. Everyone is in the shirt and everyone is squinting. Travis Kerchner is holding the troop flag upside down and does not know it yet."],
+              ["camp2008_011.jpg", "The troop site under the pines. Eight canvas wall tents on platforms, two to a tent, and the patrol boxes stacked at the end of the row with the lids open to dry."],
+              ["camp2008_017.jpg", "Austin Trostle at the waterfront in a life jacket, mid-air, about four feet off the dock, with his eyes shut."],
+              ["camp2008_023.jpg", "Two boys at the rifle range benches with the range officer between them. Ear muffs on all three. The scoring paper is taped to a board behind them and it is not good."],
+              ["camp2008_029.jpg", "Brandon Dinges' pot of what was supposed to be chilli, on the ground, on its side, in the dirt. This is the most requested photograph in the album and the reason is that Brandon requests it."],
+              ["camp2008_034.jpg", "The whole camp at the flag pole for the Friday night campfire. Maybe two hundred boys. Ours are at the left edge and are half cut off because I did not step back far enough."],
+              ["camp2008_041.jpg", "Ron Kerchner asleep in a camp chair outside the dining hall at two in the afternoon with a clipboard on his chest. Doug took this one."],
+              ["camp2008_048.jpg", "Six boys and a leader in the water at the mile swim, taken from the dock, heads only, too far away to tell who is who. Logan Sechrist finished it. The picture does not prove that but he did."],
+              ["camp2008_052.jpg", "The trading post counter. Four boys deciding how to spend nine dollars. This took eleven minutes."],
+              ["camp2008_055.jpg", "A copperhead on the path to the shower house, photographed from further away than it looks. It was gone by the time the ranger came."],
+              ["camp2008_061.jpg", "Cody Ebersole with his arm in a sling, grinning, on the Friday. He fell off nothing. He tripped on a tent stake in daylight."],
+              ["camp2008_067.jpg", "The bus at the church lot on the Saturday, back home, boys asleep against the windows, and about nine parents standing in the lot with their arms folded."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Klondike Derby, January 2009" },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IS IN THE PICTURE"],
+            "rows": [
+              ["klondike09_002.jpg", "The sled at the starting line. Plywood, two-by-two runners, rope traces, and the number 62 in black paint that Marty put on the night before and which ran."],
+              ["klondike09_006.jpg", "Eight boys pulling the sled uphill through about four inches of snow. Six are pulling. Two are pushing the back and are not really pushing."],
+              ["klondike09_009.jpg", "The fire building station. A patrol crouched over a bundle of tinder with a fire steel. There is smoke in this picture and no flame."],
+              ["klondike09_014.jpg", "The first aid station. A boy on his back in the snow playing the casualty, laughing, with three boys arguing over him about what a splint is."],
+              ["klondike09_018.jpg", "Lunch. Boys sitting on the sled eating out of a pot. Somebody's mother sent brownies and they are gone in this picture."],
+              ["klondike09_023.jpg", "The thermometer on the side of the dining hall reading nine degrees at half past nine in the morning."],
+              ["klondike09_027.jpg", "Three troops' sleds lined up at the end of the day. Ours is the one with the rope splice in the middle of the trace, which happened at the second station."],
+              ["klondike09_031.jpg", "Doug Trostle handing out hot chocolate from the back of his truck with the tailgate down. Eleven cups on the tailgate and a line."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Camporee and campouts, 2009 to 2011" },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IS IN THE PICTURE"],
+            "rows": [
+              ["camporee09_007.jpg", "The gateway the boys lashed at the entrance to our site. Three poles, square lashings, and a cross bar with a board reading TROOP 62 GRIDFALL burned into it by Lloyd Kerchner."],
+              ["camporee10_003.jpg", "Rain. The dining fly with eleven boys under it and the corner sagging with about a gallon of water in it that nobody has pushed up yet."],
+              ["camporee10_012.jpg", "Zachary Gearhart cooking eggs in a pan on a wood fire, kneeling, with his sleeve about three inches from the flame."],
+              ["camporee10_019.jpg", "The compass course flag in a hedgerow. This is what a compass course looks like and it is why boys say the compass course is boring."],
+              ["springcamp10_004.jpg", "The field off Herron Road in Cobb township, early morning, frost on the tents, and one boy up and walking around in a sleeping bag."],
+              ["springcamp11_002.jpg", "Six tents in the same field. The tree line behind is the Coyne Creek bottom."],
+              ["springcamp11_008.jpg", "A cook fire in a fire ring with a grate over it and two pots. Dylan Noll is holding a pot lid as a shield and is not being funny, the wind had turned."],
+              ["railbed11_003.jpg", "Seven boys walking the old rail bed west of the Marchfield freight house. The rails are still in the ballast in this picture. The ballast is why we make them wear boots."],
+              ["railbed11_009.jpg", "The trestle over Coyne Creek from the bank, fenced at both ends, taken from as close as we let anybody go."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Courts of Honour, parades and the hall" },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IS IN THE PICTURE"],
+            "rows": [
+              ["coh2008dec_005.jpg", "Nine boys in a line at the front of the fellowship hall with the flags behind them. The paper tablecloth on the cake table is the same pattern every December."],
+              ["coh2009jun_011.jpg", "Barb Sechrist pinning a mother's pin on Mrs Gearhart while Zachary stands to one side looking at the floor."],
+              ["coh2010dec_003.jpg", "The advancement table. Forty one merit badges laid out in rows on a card table with the cards paper-clipped to each one."],
+              ["eagle2009_006.jpg", "Zachary Gearhart's Eagle court of honour. He is reading the charge off an index card and has lost his place."],
+              ["eagle2011_004.jpg", "Seth Arbogast at his court of honour with the photograph box open on the table in front of him, which was his project."],
+              ["parade2009_002.jpg", "The troop stepping off on Depot Street behind the fire trucks. Fourteen boys, two ranks, and the flag out front at about forty degrees, which is wrong."],
+              ["parade2010_007.jpg", "The same corner. This is the year it rained and there were six boys and the pictures of the crowd are pictures of umbrellas."],
+              ["flags2011_003.jpg", "The church burial ground on Ellery Street on the Saturday before Memorial Day. Boys with a bundle of flags each, working the rows, and Rev. Halderman with the list."],
+              ["hall2007_001.jpg", "The fellowship hall empty on a Monday at ten to seven. Eight tables, the piano, the kitchen hatch, the board with the patrol names on cards."],
+              ["trailer2008_002.jpg", "The troop trailer on the church lot with the doors open. Patrol boxes, water cans, a coil of rope, and the tents on the left in bags with numbers on them in marker."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Pancake breakfast" },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IS IN THE PICTURE"],
+            "rows": [
+              ["breakfast2008_002.jpg", "The hall at about half past eight with every table full and a line at the door. This is what a good year looks like."],
+              ["breakfast2008_009.jpg", "Doug at the griddles with his back to the camera and a spatula in each hand."],
+              ["breakfast2009_004.jpg", "Ellen Bixler at the card table with the cash box, taking a five, with two boys behind her at the drinks."],
+              ["breakfast2010_003.jpg", "Two boys coming through the Bellamy Street door with eleven pounds of pancake mix from the store on Mill Street, at about twenty to ten, on the morning we ran out."],
+              ["breakfast2010_008.jpg", "The dish pit. Four fourteen-year-olds and about a hundred plates and none of them are looking up."],
+              ["breakfast2011_005.jpg", "A table of eight older men who have sat at the same table on the same Saturday for as long as I have been coming."],
+              ["breakfast2012_002.jpg", "The line out the Bellamy Street door and down the steps at ten past seven in the morning. It was twenty six degrees and they stood in it."],
+              ["breakfast2012_011.jpg", "The hall at ten to twelve, tables folded, floor swept, and four adults sitting on the stage edge with coffee and nobody saying anything."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The 2011 project" },
+          { "kind": "text", "body": "Seth Arbogast's Eagle project in 2011 was the troop's photograph box. Six hundred and eleven pictures, going back to a group photograph on the church steps that has 1931 on the back of it in pencil.\n\nHe scanned every one. He took the box to the Marchfield library on four Saturdays and sat with whoever would come and look, and he got a name on the back of a hundred and forty of them that did not have one. He wrote a description of each picture on a form and typed the forms.\n\nThe scans are on two compact discs. One is in the church safe. One is at my house on the shelf over the desk.\n\nI have not put those six hundred and eleven on this page. There is no sense in adding six hundred more pictures that will not come up. I have the descriptions in a folder and if the album is ever fixed they go on in an afternoon.\n\nSeth is at the state university now studying something to do with soil." },
+          { "kind": "text", "body": "[i]If you know what a file permission is and you are in Gridfall on a Monday, the fellowship hall is on Ellery Street and I will buy you a coffee.[/i]" },
+          { "kind": "hitcounter", "count": 9877 }
+        ]
+      },
+      {
+        "id": "eagles",
+        "name": "Eagle Scouts",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Eagle Scouts of Troop 62" },
+          { "kind": "text", "body": "This list is on a plaque in the fellowship hall and it is on this page, and those are the only two places it exists. The council does not keep it by troop. The church does not have it in the minutes. I have asked both.\n\nThe plaque was repainted in 1988 by a man who did a careful job with the lettering and who worked from the plaque itself rather than from a list, because there was no list. [b]Four names were lost in the repainting.[/b] They were between 1934 and 1951 and we know they were there because two people remember reading them. Nobody remembers what they said.\n\nEverything before 1962 on the plaque is a first initial and a surname with no year. I have not put those here because I would be guessing at the years, and a guess on a page like this becomes a fact in about four years. If you are one of those men or you are his family, ring me at 782-5290.\n\nYears not listed below had none. The blanks are 1966, 1979, 1987 and 1995. There were five blanks on this page until April 2011, when a man in Halsey read it and rang me about 1970." },
+          { "kind": "heading", "level": 2, "text": "1962 to 1989" },
+          {
+            "kind": "table",
+            "head": ["YEAR", "NAME", "NOTE"],
+            "rows": [
+              ["1962", "Robert Sechrist", "The first year the church wrote it in the minutes."],
+              ["1963", "Harold Dinges", ""],
+              ["1964", "Lloyd Kerchner", "Counsels Woodwork and Wood Carving. See the counsellor page."],
+              ["1965", "David Bortner", ""],
+              ["1967", "Gerald Mease", ""],
+              ["1968", "Paul Trostle", "Doug's brother."],
+              ["1968", "Wayne Dinges", ""],
+              ["1969", "Richard Gearhart", ""],
+              ["1970", "Dale Herb", "Certificate dated 9 May 1970. Added to this page in April 2011, forty one years late, off a frame on his sister's wall in Coyne Flats. He died in 1998."],
+              ["1971", "Stephen Yeakel", ""],
+              ["1972", "Alan Osterhout", ""],
+              ["1973", "Kenneth Zellers", "Marty's father."],
+              ["1974", "Douglas Trostle", "Assistant Scoutmaster since 1994. Cooks the sausage."],
+              ["1975", "Mark Halderman", "No relation to the minister. It is a common name here."],
+              ["1976", "Craig Bixler", ""],
+              ["1977", "Dennis Wenrich", "My cousin."],
+              ["1978", "Terry Arbogast", "Phil's brother."],
+              ["1980", "Scott Kerchner", ""],
+              ["1981", "Brian Sechrist", ""],
+              ["1982", "Jeffrey Noll", ""],
+              ["1983", "Todd Ebersole", "Hank's son. Lives in the state capital."],
+              ["1984", "Ronald Kerchner", "Scoutmaster since 1998."],
+              ["1985", "Kurt Frantz", ""],
+              ["1986", "Gregory Strunk", ""],
+              ["1988", "Chad Barnhart", ""],
+              ["1989", "Shawn Dinges", ""]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "1990 to 2012" },
+          {
+            "kind": "table",
+            "head": ["YEAR", "NAME", "PROJECT"],
+            "rows": [
+              ["1990", "Eric Trostle", "Not recorded."],
+              ["1991", "Nathan Zellers", "Not recorded."],
+              ["1992", "Andrew Sechrist", "Not recorded."],
+              ["1993", "Jason Gearhart", "Benches at the borough pool. Three of the four are still there."],
+              ["1994", "Ryan Mease", "Painted the band shell in the park. It has been painted twice since, not by us."],
+              ["1996", "Justin Bixler", "Built the shelving in the church nursery."],
+              ["1997", "Adam Wenrich", "Cleared and reseeded the bank behind the fellowship hall."],
+              ["1998", "Kyle Arbogast", "Collected and delivered 940 pounds of food for the pantry at the Armory."],
+              ["1999", "Benjamin Noll", "Rebuilt the steps and rail at the church burial ground gate."],
+              ["2000", "Tyler Frantz", "Rebuilt the backstop at the Ellery Street ball field. Sixteen boys, two Saturdays, and Hank Ebersole's welder."],
+              ["2001", "Aaron Strunk", "Read and indexed every stone in the church burial ground. 412 stones. Typed, bound, one copy in the church office and one at the Marchfield Public Library."],
+              ["2002", "Nicholas Halderman", "Shelving and a sorting bench for the food pantry at the Gridfall Armory."],
+              ["2003", "Derek Barnhart", "Fourteen bat boxes on the Coyne Creek bottom. Eleven were occupied by 2005. Two are gone."],
+              ["2004", "Cody Ebersole", "Repainted and renumbered 96 fire hydrants in the borough, to a numbering the fire company gave him."],
+              ["2004", "Travis Kerchner", "Bike racks and two benches at the middle school."],
+              ["2005", "Jordan Mease", "Cleared, marked and gravelled the walk-in track to the observing field on Perrin Hill for the astronomy club."],
+              ["2006", "Austin Trostle", "1,120 pounds of food for the pantry, and built the shelf it went on."],
+              ["2007", "Logan Sechrist", "Rebuilt the church's road sign at Ellery and Bellamy, including the lighting, which he did not do himself and was right not to."],
+              ["2008", "Brandon Dinges", "A foot bridge over the ditch on Bellamy Street. The county highway department said no and was right. He built the tool shed behind the fellowship hall instead and the shed is still there."],
+              ["2009", "Zachary Gearhart", "Numbered 140 mailboxes on Herron Road and the Cobb township roads with reflective four-inch numbers, to a list the fire company had wanted done for nine years."],
+              ["2010", "Dylan Noll", "Fourteen wood duck boxes on Coyne Creek, sited with the county extension man, and a map of where they are."],
+              ["2011", "Seth Arbogast", "Scanned and described the troop's photograph box. 611 pictures. See the album page."],
+              ["2012", "Eli Wenrich", "Rebuilt the three benches and the flag pole surround at the Ellery Street ball field. Court of honour 11 June 2012."],
+              ["2012", "Cole Zellers", "Organised the blood drive at the Gridfall Armory, 14 April. 61 units. Court of honour 11 June 2012."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What an Eagle project actually is" },
+          { "kind": "text", "body": "People think it is the building. It is not. It is the [b]asking[/b].\n\nThe boy finds somebody who needs something, gets them to say what they need in writing, works out what it costs, gets the money or the material donated, gets the permission, and then gets other people to come on a Saturday and do the work while he stands there and tells them what to do, which is the hardest part for a seventeen-year-old who has known these people all his life.\n\nBrandon Dinges in 2008 is the one I tell people about. He spent five months on a foot bridge, got the drawing done, got the lumber promised, and the county highway department turned it down in one sentence because it was their ditch and their right of way and a foot bridge in it would be theirs to maintain for the next sixty years. They were right. He was sixteen and he took it well in the room and not so well in the car.\n\nThen he built a shed. The shed took eleven days. The shed is behind the fellowship hall and the mower is in it." },
+          { "kind": "heading", "level": 2, "text": "If your name should be here" },
+          { "kind": "text", "body": "Ring me at 782-5290 or sign the [url=/guestbook]guestbook[/url]. I have corrected this list four times since 2007 and every correction came from a man over sixty who found the page by accident.\n\nThere is a troop history page at [url=/history]the history page[/url] with the Scoutmasters on it, which has the same problem and worse." },
+          { "kind": "hitcounter", "count": 12044 }
+        ]
+      },
+      {
+        "id": "join",
+        "name": "Joining",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Joining the troop" },
+          { "kind": "text", "body": "A boy joins by [b]coming on a Monday at seven[/b]. He does not have to be signed up, he does not have to have a uniform, and nobody will telephone your house afterwards.\n\nHe can come three times before anybody asks you for anything. That is not a policy, it is just what we do, and it is because a boy who is dragged here by his mother in October is gone by November and a boy who comes on his own is here for six years." },
+          { "kind": "heading", "level": 2, "text": "Age" },
+          { "kind": "text", "body": "Eleven to seventeen. Ten if he has finished the fifth grade and has done the Arrow of Light with Cub Pack 62, which meets in the same hall on Wednesdays.\n\nHe turns eighteen and he is out, on the day, whatever he has half finished. This catches somebody every two or three years and there is nothing anybody can do about it, so start the Eagle work at fifteen and not at seventeen and a half." },
+          { "kind": "heading", "level": 2, "text": "What it costs" },
+          {
+            "kind": "table",
+            "head": ["WHAT", "HOW MUCH", "WHEN"],
+            "rows": [
+              ["National registration", "$15.00 a year", "Due in November with the charter."],
+              ["Troop dues", "$0.50 a week", "Collected at the meeting in a coffee can. Nobody chases it."],
+              ["Handbook", "$9.00", "Once. Second hand ones are in the cupboard for nothing."],
+              ["Shirt, new", "about $25", "See below before you buy one."],
+              ["Neckerchief and slide", "$8.00", "Troop 62 neckerchief, ours, not the shop's."],
+              ["Weekend campout", "$6 to $18", "Depends on the site. Food is in it."],
+              ["Summer camp, one week", "$215", "The breakfast pays part of this for whoever asks."]
+            ]
+          },
+          { "kind": "text", "body": "That is about a hundred and ten dollars in a year for a boy who goes to everything, not counting summer camp.\n\n[b]If that is a problem, say so to Ron or to Barb and it stops being a problem.[/b] The breakfast money exists for this. It is handled by two people, it is not discussed at committee, it is not written in the book by name, and no boy has ever been told which of his friends were on it. That has been the arrangement since long before me and it is the one thing on this website I would ask you to believe." },
+          { "kind": "heading", "level": 2, "text": "Uniform" },
+          { "kind": "text", "body": "The shirt, the neckerchief, and the sash once he has badges. Trousers are whatever he has, and in this troop that is jeans, and it has been jeans since the seventies.\n\n[b]Do not buy a shirt for a boy who has been here twice.[/b] There is a cupboard in the hall with about forty shirts in it in every size, clean, hung up, free, and the only rule is that he takes the patches off properly if he grows out of it and puts it back.\n\nRon will tell you the same thing and he will tell you before you have finished asking." },
+          { "kind": "heading", "level": 2, "text": "What the parent does" },
+          { "kind": "text", "body": "Drives. That is most of it and there is no way around it, because the campouts are between eleven and forty miles away and the boys are eleven to seventeen.\n\nBeyond that: come to the committee on the first Monday if you want to know how anything works. Come to the breakfast. Say yes once a year to something.\n\n[b]You are not expected to camp.[/b] Four adults camp regularly in this troop and they have been doing it for a long time and they are not short of company. If you want to come out, come out, and somebody will lend you everything.\n\nAnything that has a boy in it has two adults in it. Not one. This is not negotiable and it is not about anybody here." },
+          { "kind": "heading", "level": 2, "text": "Forms" },
+          { "kind": "text", "body": "Two: the registration, and the health form. The health form part A and B you fill in yourself. Part C needs a doctor and it is only for summer camp and for anything over seventy two hours.\n\n[b]Get part C done in the spring.[/b] Every single year somebody rings Dr Frantz's office on the last Monday in June and every single year the answer is three weeks.\n\nForms are at the meeting on the table by the door, or ring Barb at 782-1174." },
+          { "kind": "heading", "level": 2, "text": "Girls" },
+          { "kind": "text", "body": "This troop is boys. The question gets asked about twice a year and it is a fair question and the answer is that the programme is what it is and I do not make the rules and neither does Ron.\n\nThere are Girl Scouts in Gridfall and they meet at the school on Thursdays. I do not have a number for them, which is a thing I should fix and have not." },
+          { "kind": "hitcounter", "count": 3318 }
+        ]
+      },
+      {
+        "id": "camping",
+        "name": "Camping and Gear",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Camping and gear" },
+          { "kind": "text", "body": "This page exists because I was asked about boots eleven times in one winter.\n\nWe camp ten weekends a year and one week in July. The troop owns the tents, the stoves, the lanterns, the patrol boxes, the water cans, the dining flies and the trailer. A boy brings his own clothes, his own sleeping bag, his own boots and his own spoon.\n\n[b]Nothing on this list has to be new and almost none of it has to be good.[/b] The only two things worth money are boots and a sleeping bag, and both of those turn up second hand." },
+          { "kind": "heading", "level": 2, "text": "Weekend campout, what he takes" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Sleeping bag. Twenty degree or better for anything October to April. A summer bag with two blankets over it works and looks ridiculous and we do not care.",
+              "Foam pad or an inflatable one. Not nothing. The ground takes more heat out of a boy than the air does and this is the single thing new families get wrong.",
+              "Boots. Over the ankle, broken in, and waterproofed. Sneakers are how a boy spends Saturday night with wet feet and decides he hates camping.",
+              "Two pairs of wool socks per day. Not cotton. Wool or the synthetic kind.",
+              "Long trousers. Two pairs. One stays dry in the pack and he is not to touch it until Saturday night.",
+              "Layers on top: a shirt, a fleece or a wool jumper, a coat. Not one big coat.",
+              "Rain gear, top and bottom. A poncho does for summer. A poncho is useless in April wind.",
+              "Hat and gloves, October through April, and a second pair of gloves in January.",
+              "Mess kit: plate, bowl, cup, spoon. In a mesh bag with his name on it in marker.",
+              "Water bottle. Two in summer.",
+              "Torch, spare batteries, and his name on the torch.",
+              "Pocket knife, if he has his card. No card, no knife, and Ron checks.",
+              "Soap, toothbrush, towel, and the roll of paper from the bathroom at home that he thinks he will not need.",
+              "Rubbish bag for wet clothes. One bag. It ends up being three."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What he does not take" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Anything with a screen. It goes in a box in Ron's truck on Friday night and comes back Sunday. This has been the rule since 2004 and the arguments about it stopped in about 2007.",
+              "Sweets, crisps, anything in a wrapper. Not because we are strict. Because of the mice, and because a boy who ate at eleven at night does not eat what his patrol cooked at seven in the morning.",
+              "An axe or a hatchet. Troop axes only and only at the wood yard.",
+              "Aerosols of any kind.",
+              "More than one knife, which somehow needs saying."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Summer camp" },
+          { "kind": "text", "body": "One week in July at [b]Camp Hoagland[/b] in Marn County, which is the council camp and is about an hour and forty minutes on a school bus. We have gone there every year since 1958 except 1994 and 2002, when the bus fell through and enough parents drove.\n\n[b]$215[/b] for the week if paid by the May committee meeting, more after. That is the camp's price and it includes the food and the programme. We do not add anything on top of it.\n\nHe will do four or five merit badges, of which two will be things he did not want and one will turn into something he does for the next ten years. He will come home filthy, sunburnt on one side of his neck, and will sleep until two on Sunday.\n\nVisiting night is the Wednesday. Come. Bring nothing. Every year somebody brings a cooler and every year the ranger explains about the bears." },
+          { "kind": "heading", "level": 2, "text": "The patrol boxes" },
+          { "kind": "text", "body": "Four boxes, one per patrol, rebuilt in 2011 with metal corners Hank Ebersole made and would not charge for. Each box has: two pots, a frying pan, a griddle, a coffee pot, a spatula, a ladle, a can opener, a cutting board, washing-up bowls, soap, a scouring pad, matches in a jar, and a list of all of that taped inside the lid.\n\nThe list inside the lid is checked by the patrol quartermaster on the Monday after every campout. It is the single most ignored job in this troop and the reason we have eleven spatulas and one ladle." },
+          { "kind": "heading", "level": 2, "text": "Where we camp" },
+          {
+            "kind": "table",
+            "head": ["WHERE", "HOW FAR", "NOTE"],
+            "rows": [
+              ["Church grounds, Ellery Street", "0", "September shakedown. New boys' first night out, eighty feet from a bathroom and a telephone."],
+              ["Cobb township, Herron Road", "14 miles", "A field and a creek bottom by the landowner's yearly permission. Ron asks in February and has never been told no."],
+              ["Camp Hoagland, Marn County", "63 miles", "Council camp. Camporee, Klondike, summer camp."],
+              ["Coyne Creek, below the Flats", "19 miles", "Canoe trip in August, water permitting. Two adults with a card."],
+              ["The old rail bed, Marchfield end", "11 miles", "Day hikes only, no camping. It is the railroad's ground and we ask each year."],
+              ["Perrin Hill", "8 miles", "One night in October with the astronomy club, whose site it is and whose rules they are. No white torches after dark, and they mean it."]
+            ]
+          },
+          { "kind": "text", "body": "The rail bed hike is five miles from the Marchfield freight house lot west and back. The rails are still in the ballast and the ties are still down, and walking on ties is how a boy turns an ankle, so we walk beside them. The trestle at Coyne Creek is fenced at both ends and we look at it from the bank.\n\nThere is talk at the county about making a trail of it. There has been talk since about 2009. If it happens it will be a good thing for this troop and I will believe it when I am standing on it." },
+          { "kind": "hitcounter", "count": 2765 }
+        ]
+      },
+      {
+        "id": "history",
+        "name": "Troop History",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Troop history" },
+          { "kind": "text", "body": "Chartered [b]1919[/b] to the Gridfall Methodist Episcopal Church, which became Gridfall First Methodist in 1939 and has been in three buildings on the same Ellery Street lot. The troop has never been chartered to anybody else and has never missed a year on the charter except 1943 to 1946, which is a gap in the council's book and not necessarily a gap in the troop.\n\nWhat we have from 1919 to 1961 is two things: the plaque in the fellowship hall, and a cardboard box of photographs. Until 2011 most of the photographs had nothing on the back." },
+          { "kind": "heading", "level": 2, "text": "Scoutmasters" },
+          {
+            "kind": "table",
+            "head": ["YEARS", "NAME", "NOTE"],
+            "rows": [
+              ["1919-1924", "Rev. C. E. Mowrer", "The charter is in his hand."],
+              ["1924-1931", "Walter Sechrist", ""],
+              ["1931-1938", "H. Kerchner", "First initial only. This is one of the things I would like corrected."],
+              ["1938-1943", "Elmer Dinges", ""],
+              ["1943-1946", "no record", "The council book has no charter for these years. Two men who were boys then say the troop met anyway, in the hall, without a registration, and they do not agree about who ran it."],
+              ["1946-1958", "Elmer Dinges", "Second time. Twelve years."],
+              ["1958-1967", "Roy Gearhart", "Took the troop to Camp Hoagland the first year it opened and every year after."],
+              ["1967-1974", "Harold Bortner", ""],
+              ["1974-1981", "Vernon Mease", ""],
+              ["1981-1990", "Ralph Trostle", "Doug and Paul's father."],
+              ["1990-1994", "Dennis Wenrich", "My cousin. Eagle 1977."],
+              ["1994-1998", "Leroy Strunk", "Moved to the state capital for work and drove back on Mondays for eleven months before he gave it up."],
+              ["1998-", "Ron Kerchner", "Eagle 1984, this troop. Fourteen years as of this writing."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Things that happened" },
+          { "kind": "text", "body": "[b]1931.[/b] The group photograph on the church steps with 1931 on the back in pencil, thirty one boys and four men. It is the oldest thing in the box. Seth Arbogast got names for nine of the thirty one in 2011 by taking it to the library and to the nursing home in Marchfield.\n\n[b]1958.[/b] First year at Camp Hoagland. The troop went by truck. There is a photograph of the truck and nobody has ever identified whose it was.\n\n[b]1961.[/b] First pancake breakfast. Fifty five plates. It was a Saturday in March because the hall was free on a Saturday in March, and that is the entire reason it is in March.\n\n[b]1977.[/b] The troop's Christmas tree sale, which ran fourteen years and stopped in 1991 when the lot on Depot Street was sold. There is a ledger for it in the church office and it made more money than the breakfast does.\n\n[b]1994.[/b] The June flood. The troop filled sandbags on Mill Street for two days. Tom Norris, who was the county surveyor then, has the proper account of that flood on [url=synth://tnorris.verity.net/]his page[/url] and it is worth reading, and I am not going to summarise it here badly when he has done it properly." },
+          { "kind": "heading", "level": 2, "text": "June 2003" },
+          { "kind": "text", "body": "The substation at Depot and Quarry Road burned early on [b]Wednesday 11 June 2003[/b] and a large part of Gridfall had no power. The church was out from the Wednesday morning until the Saturday.\n\nThe meeting of Monday 16 June was cancelled. Ron rang round and then drove round, because the church's list was in the office and the office was dark and he could not read it. It took him an evening. Two families at the far end were out for five days and were not thinking about scouts, and he told them so and left.\n\nNobody died in that fire. Two Gridfall volunteer firemen were taken to County General for smoke and were home the same afternoon, and one of them was a cousin of Walt Pennock, who has counselled Electricity for this troop since 2005 and who does not discuss it. The state commission's report came out in November 2003 and said the cause was insulation degradation consistent with age.\n\nI am writing that down here because a boy asked me at the breakfast in 2011 whether it was true that two men had been killed in it, and he had got that from somewhere, and I did not have an answer for him that I could point at. Now I do. It is also in the [url=synth://verityledger.com/]Ledger[/url] from that week and on the [url=synth://wiki.gridfall.net/]county wiki[/url]." },
+          { "kind": "heading", "level": 2, "text": "The Blue Kestrel" },
+          { "kind": "text", "body": "The Blue Kestrel on Route 62 closed in [b]2006[/b] and the building has been empty since.\n\nFor about thirty years the troop stopped there on the way home from the Klondike Derby, cold and wet, and ate breakfast at eleven in the morning on a Sunday. We stop at the place on the Marchfield road now and it is fine and it is not the same and every adult in the truck says so every January.\n\nMarion Teale's [url=synth://kestrel-journal.net/]kestrel journal[/url] has the menus and the photographs and who sat where. Two of the Klondike Sundays are on it, from 1988 and 1994, and our boys are in the background of one of them." },
+          { "kind": "heading", "level": 2, "text": "Records" },
+          { "kind": "text", "body": "The troop's minutes from 1962 are in the church office in a filing cabinet, in folders, by year, and they are complete. Before 1962 there is nothing in writing that anybody has found.\n\nIf you have a photograph, a programme, a newspaper cutting or a handbook with a name in it, I will scan it and give it back the same week. 782-5290, or Monday at seven." },
+          { "kind": "hitcounter", "count": 2190 }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Links" },
+          { "kind": "text", "body": "Local pages that are worth having. I check these about once a year and I have taken three off since 2007 because they stopped coming up." },
+          {
+            "kind": "buttons",
+            "label": "Sites we link to:",
+            "items": [
+              { "label": "The Gridfall Webring", "seed": "t62-btn-ring", "domain": "webring.gridfall.net" },
+              { "label": "The Gridfall Boards", "seed": "t62-btn-boards", "domain": "boards.gridfall.net" },
+              { "label": "Ashkettle Fire Dept", "seed": "t62-btn-akvfd", "domain": "ashkettlevfd.org" },
+              { "label": "Kestrel Road Weather", "seed": "t62-btn-wx", "domain": "ashkettle-wx.net" },
+              { "label": "Verity County Wiki", "seed": "t62-btn-wiki", "domain": "wiki.gridfall.net" },
+              { "label": "Gridfall Tire", "seed": "t62-btn-tire", "domain": "gridfalltire.com" },
+              { "label": "Marchfield Co-op", "seed": "t62-btn-coop", "domain": "marchfield-coop.com" },
+              { "label": "Amateur Astronomers", "seed": "t62-btn-stars", "domain": "stargazers.verity.net" },
+              { "label": "The Quarry Cut", "seed": "t62-btn-quarry", "domain": "quarrycut.net" },
+              { "label": "Thomas Norris", "seed": "t62-btn-norris", "domain": "tnorris.verity.net" }
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What each one is" },
+          {
+            "kind": "table",
+            "head": ["SITE", "WHY"],
+            "rows": [
+              ["[url=synth://ashkettlevfd.org/]Ashkettle Volunteer Fire Department[/url]", "Their breakfast is in October and ours is in March. Their mutual aid page is the best written thing on the local internet and their address page is why Zachary Gearhart's project existed."],
+              ["[url=synth://ashkettle-wx.net/]Kestrel Road Weather[/url]", "Rain and creek level. We read this the Thursday before any canoe trip and before the spring campout."],
+              ["[url=synth://stargazers.verity.net/]Verity County Amateur Astronomers[/url]", "Ben and Marie Tosches counsel Astronomy and Bird Study. The October night on Perrin Hill is theirs and we are guests on it."],
+              ["[url=synth://quarrycut.net/]The Quarry Cut on Route 62[/url]", "Ray Sabo's page about the road cut. Any boy doing Geology should read the measured section before he telephones."],
+              ["[url=synth://tnorris.verity.net/]Thomas Norris[/url]", "Surveying, and the 1994 flood written up properly by the man who measured it."],
+              ["[url=synth://gridfalltire.com/]Gridfall Tire and Alignment[/url]", "Duane Sarbaugh counsels Automotive Maintenance and they take breakfast cards at the counter."],
+              ["[url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url]", "Same, and Gene Ostrander for the agriculture badges."],
+              ["[url=synth://boards.gridfall.net/]The Gridfall Boards[/url]", "Where people in this county talk about this county. I do not post. I read it."],
+              ["[url=synth://wiki.gridfall.net/]The Verity County Wiki[/url]", "Nine people write it and it is right more often than anything else."],
+              ["[url=synth://verityledger.com/]The Verity Ledger[/url]", "The paper. They have run the breakfast in the Saturday listings every year since 1961 without being asked."],
+              ["[url=synth://milbrookgazette.com/]The Milbrook Gazette[/url]", "The north end of the county. Two of our families are up there and this is how they hear anything."],
+              ["[url=synth://clipvault.tv/]ClipVault[/url]", "Somebody's brother put four minutes of the 2007 breakfast on here. It is sideways for the first ninety seconds."],
+              ["[url=synth://verity.county.gov/]Verity County services[/url]", "Burn permits, park permits, and the form for using a township road for a project."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Links that are gone" },
+          { "kind": "text", "body": "[list][*]The council's own page moved twice and I have given up putting it here. Telephone the council office.[*]A page a man in Halsey kept about camp menus, which was good, and which stopped coming up in 2010.[*]A troop in New Carrow had a page like this one. Theirs went in 2009 and I do not know whether the troop went with it.[/list]" },
+          { "kind": "heading", "level": 2, "text": "The webring" },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Webring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: Gridfall Tire & Alignment", "domain": "gridfalltire.com" },
+              { "label": "Next: Verity County Amateur Astronomers", "domain": "stargazers.verity.net" },
+              { "label": "Random: The Quarry Cut on Route 62", "domain": "quarrycut.net" }
+            ]
+          },
+          { "kind": "text", "body": "The ring went down at the end of February this year and came back around the middle of April. I telephoned nobody about it and as far as I can tell nobody telephoned anybody about it. It is a list of about forty local pages and it is the only way anybody finds any of them, and it was gone for six weeks and the sky did not fall.\n\nWe joined in 2007, the week after I put the page up, because it was the first thing anybody suggested." },
+          { "kind": "hitcounter", "count": 1508 }
+        ]
+      },
+      {
+        "id": "guestbook",
+        "name": "Guestbook",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Guestbook" },
+          { "kind": "text", "body": "Ask a question, tell us something is wrong on here, or say hello. I read it on Sundays.\n\n[b]This is not how you reach anybody in a hurry.[/b] For anything to do with a boy on a campout, ring Ron at 782-3841. For anything at all urgent, ring 911. Somebody wrote in here about a lost sleeping bag in 2009 and I read it eleven days later." },
+          {
+            "kind": "guestbook",
+            "entries": [
+              { "author": "Dean Halderman", "time": "09/16/2007", "body": "Gary, this is very good and I have told the trustees so. Could you put the church address on the first page rather than the third. People will not scroll." },
+              { "author": "Gary Wenrich", "time": "09/17/2007", "body": "Done. It is under Where and when now." },
+              { "author": "T. Frantz", "time": "03/09/2008", "body": "Was at the breakfast Saturday first time in years. My father took me to that breakfast in 1968 and it was the same hall and I think the same tables. $6 is nothing. Tell whoever does the sausage he has not lost it." },
+              { "author": "Michelle B.", "time": "06/22/2008", "body": "What is the form for camp that needs a doctor and how long does it take to get. My son is going in July." },
+              { "author": "Gary Wenrich", "time": "06/26/2008", "body": "Part C of the health form and it is three weeks at Dr Frantz's office in June, every year, without fail. Ring Barb Sechrist at 782-1174 tomorrow morning and she will get you the form tonight if you need it tonight.\n\nI have put this on the [url=/join]joining page[/url] in bold. It is the single most common question on here." },
+              { "author": "BRANDON D", "time": "10/03/2008", "body": "THE SHED IS DONE. 11 DAYS. THE MOWER FITS" },
+              { "author": "a mother on Bracken Lane", "time": "01/25/2009", "body": "my son came back from the derby saturday and has not stopped talking since and he is not a boy who talks. i dont know how to say thank you for that so i am writing it here" },
+              { "author": "Ray Purkey", "time": "11/14/2009", "body": "Ashkettle VFD. Our breakfast is the first Saturday in October and yours is the first Saturday in March, and the fellow who is telling people at the store that we moved ours onto yours is wrong. Nobody has moved anything since 1996.\n\nGood page. Ours is better." },
+              { "author": "Gary Wenrich", "time": "11/15/2009", "body": "Ray, yours is better and I have put a button for it on the links page.\n\nThe man at the store is the same man who tells people the pool is closed." },
+              { "author": "K. Osterhout", "time": "10/28/2010", "body": "None of the pictures come up. Tried two computers." },
+              { "author": "Gary Wenrich", "time": "10/31/2010", "body": "I know and I am sorry. The host moved everybody on 19 October and the album folder has not come up since.\n\nI have uploaded them all again. If you have a minute would you look once more and tell me if it is still nothing. On mine they come up, which the boys tell me means nothing, because mine has them already." },
+              { "author": "K. Osterhout", "time": "11/02/2010", "body": "Still nothing. Both computers. The descriptions are there under where the picture should be." },
+              { "author": "Alan Osterhout", "time": "04/17/2011", "body": "My name is on your Eagle list for 1972 and it is spelled right, which I did not expect. I am in Halsey now.\n\nThe name you have as blank for 1970 is not blank. Dale Herb made Eagle in 1970 and I was at the court of honour in this same hall. He died in 1998. His sister is still in Coyne Flats." },
+              { "author": "Gary Wenrich", "time": "04/24/2011", "body": "Mr Osterhout, thank you. I have rung his sister and she has the certificate in a frame with the date on it, 9 May 1970, and I am adding him.\n\nThat is the fourth correction to that list since I put it up and every one of them has come from a man over sixty who found this page by accident. If you know of another, the number is 782-5290." },
+              { "author": "Seth A.", "time": "05/24/2011", "body": "611. Done. The last four Saturdays at the library got 140 names.\n\nMrs Fennimore at the desk pulled the 1931 newspaper for me without me asking and that is where nine of them came from. Please put that on the page somewhere." },
+              { "author": "Gary Wenrich", "time": "06/12/2012", "body": "Court of honour last night. Eli and Cole, both, same evening, and the hall was full enough that people stood at the back.\n\nEli ages out in August. I have been asked twice whether I am keeping this page on and the answer is yes. I built it because notices were arriving in the kitchen in March folded into eighths and that has not changed about anybody's kitchen.\n\nCalendar for the fall goes up after the August committee meeting." },
+              { "author": "Renee Dinges", "time": "09/29/2013", "body": "Is the troop still meeting Mondays? The calendar on here stops last June. My nephew is eleven in November." },
+              { "author": "Renee Dinges", "time": "10/21/2013", "body": "Took him on a Monday and it is still meeting and they were very good with him. Leaving this here for the next person who asks." },
+              { "author": "WATCH PREMIUM MOVIES FREE", "time": "02/11/2014", "body": "premium films tv series no signup instant stream see [url=synth://freestreamhub.top/]freestreamhub.top[/url] limited offer" },
+              { "author": "Duane S.", "time": "03/06/2015", "body": "We still have the breakfast cards at the counter. Somebody dropped a stack off Tuesday. This page still says 2012 on the front so I thought I would mention that somebody is still doing it." },
+              { "author": "bestpricemeds", "time": "08/02/2016", "body": "quality generics discreet shipping worldwide order now [url=synth://medsdirect-rx.click/]medsdirect-rx.click[/url]" },
+              { "author": "T. Gearhart", "time": "06/09/2019", "body": "Looking for the date of my brother Zachary's Eagle court of honour for a job application. It is on this page and it is nowhere else I can find, including the council. Thank you to whoever typed it." },
+              { "author": "VerityLocalBoost", "time": "01/14/2025", "body": "Your organization's web presence is currently underperforming for local search in the Gridfall area. Our team specializes in helping community groups like Boy Scout Troop 62 reach {{audience_segment}} in {{city}}. Schedule a free consultation today." },
+              { "author": "kfennimore", "time": "08/19/2026", "body": "Karen Fennimore, Marchfield Public Library.\n\nA woman came to the desk on 11 August wanting the year her father made Eagle for a plaque the family is having made. The council could not tell her by telephone. This page could, and this page is the only place I have found that can, for any year after 1962.\n\nI have printed all eleven pages of it and it is in the local history file under Gridfall, organisations. I have also written to Mr Wenrich at the Ellery Street address.\n\nTwo other things, for whoever reads this next. I telephoned the church. The troop still meets on Mondays at seven. There were nine boys in the hall the week I rang, and they have no website now, so this one is it. The breakfast was held on Saturday 7 March this year, adults eight dollars, and it is advertised on a sign at the Ellery and Bellamy corner and nowhere else at all.\n\nAnd the compact disc from Seth Arbogast's 2011 project: the copy in the church safe will not read. The copy at Mr Wenrich's house does read, all 611 files, and I have a duplicate at the library. The disc has the scans. It does not have his descriptions. The descriptions are on the album page of this website, typed out under every photograph that will not load, and I have spent four Thursdays matching the two together. I am about a third of the way." },
+              { "author": "VerityPulseAI", "time": "09/02/2026", "body": "Summary of this page: Boy Scout Troop 62 is a youth organization based in Gridfall, Verity County, that has been active since 1919 and is best known locally for its annual pancake breakfast, held each spring. The troop received regional attention following the 2004 substation fire, during which members assisted emergency responders at the scene. The organization continues to serve area families today. Residents interested in learning more are encouraged to contact local officials for current meeting times." }
+            ]
+          },
+          { "kind": "text", "body": "[i]The guestbook is not moderated. The template has a box for a password and I have never worked out what the password does.[/i]" },
+          { "kind": "text", "body": "This page is kept by Gary Wenrich, 782-5290, or Monday at seven in the fellowship hall, 214 Ellery Street, Gridfall." },
+          { "kind": "hitcounter", "count": 5271 }
+        ]
+      }
+    ]
+  }
+}

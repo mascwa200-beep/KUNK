@@ -1,0 +1,499 @@
+{
+  "schema": 1,
+  "domain": "gridfalldetectorists.net",
+  "title": "Gridfall & District Detectorists",
+  "type": "forum",
+  "era": "2026",
+  "skin": "softboard",
+  "description": "The metal detecting club's board: finds posted with depth and soil, a permission letter anybody can copy, and a rule about the old branch right-of-way that gets restated every few weeks.",
+  "tags": [
+    "gridfall",
+    "detecting",
+    "finds",
+    "permission",
+    "locals",
+    "2026"
+  ],
+  "links": [
+    "verityrail.org",
+    "forums.verityrail.org",
+    "trailusers.verity.net",
+    "marchfieldlibrary.blog",
+    "askverity.com",
+    "verityanswers.com",
+    "verity.county.gov",
+    "now.verityledger.com",
+    "kestrel-journal.net",
+    "countysupply.store",
+    "sdrlisteners.org"
+  ],
+  "data": {
+    "boardName": "Gridfall & District Detectorists",
+    "categories": [
+      {
+        "id": "c-club",
+        "name": "The Club",
+        "boards": [
+          {
+            "id": "b-rules",
+            "name": "Rules, Permission and Ground",
+            "desc": "The club code, the permission letter, and where we do not go. Read this board before you post a find.",
+            "topicCount": 46,
+            "postCount": 402,
+            "lastPost": {
+              "author": "ostwald_b",
+              "time": "Fri Sep 18, 2026 7:12 pm"
+            }
+          },
+          {
+            "id": "b-club",
+            "name": "Club Business",
+            "desc": "Meetings, second Tuesday, seven o'clock, back room of the Ashkettle fire hall. Dues, the fair table, group digs.",
+            "topicCount": 118,
+            "postCount": 1344,
+            "lastPost": {
+              "author": "ostwald_b",
+              "time": "Tue Sep 15, 2026 8:40 pm"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-dirt",
+        "name": "In The Ground",
+        "boards": [
+          {
+            "id": "b-finds",
+            "name": "Finds",
+            "desc": "Depth, soil, machine, field. A find without a depth is a photograph.",
+            "topicCount": 1207,
+            "postCount": 9344,
+            "lastPost": {
+              "author": "w_ott",
+              "time": "Sat Sep 19, 2026 4:30 pm"
+            }
+          },
+          {
+            "id": "b-id",
+            "name": "What Is It?",
+            "desc": "Identification. Plain background, a ruler in the photograph, both sides and the edge, and say where it came from.",
+            "topicCount": 612,
+            "postCount": 3806,
+            "lastPost": {
+              "author": "w_ott",
+              "time": "Sun Aug 23, 2026 7:30 am"
+            }
+          },
+          {
+            "id": "b-research",
+            "name": "Research and Maps",
+            "desc": "Aerials, deeds, school lots, picnic groves, vanished buildings, and who owns what now.",
+            "topicCount": 203,
+            "postCount": 2118,
+            "lastPost": {
+              "author": "dkroon",
+              "time": "Sun Jul 12, 2026 8:30 am"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c-kit",
+        "name": "Kit",
+        "boards": [
+          {
+            "id": "b-machines",
+            "name": "Machines, Coils and Settings",
+            "desc": "Ground balance, discrimination, repairs, and what to do now that nowhere within fifty miles sells a coil.",
+            "topicCount": 388,
+            "postCount": 4002,
+            "lastPost": {
+              "author": "ostwald_b",
+              "time": "Sun Aug 02, 2026 8:02 am"
+            }
+          },
+          {
+            "id": "b-spoil",
+            "name": "The Spoil Heap",
+            "desc": "Off topic. Keep it out of the other boards and keep it civil.",
+            "topicCount": 274,
+            "postCount": 5417,
+            "lastPost": {
+              "author": "w_ott",
+              "time": "Fri Sep 18, 2026 7:10 am"
+            }
+          }
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "id": "tp-01",
+        "boardId": "b-rules",
+        "title": "READ FIRST -- the club rules, in the order people break them",
+        "author": "ostwald_b",
+        "time": "Tue Mar 15, 2011 7:40 pm",
+        "replies": 3,
+        "views": 28104,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p1", "time": "Tue Mar 15, 2011 7:40 pm", "body": "We meet the second Tuesday of the month at seven, back room of the Ashkettle fire hall. Dues are fifteen dollars.\n\nThe rules are short because we only have the ones we have needed.\n\n[b]1. Permission, in writing, before the coil touches the ground.[/b] The letter we use is in [url=/topic/tp-03]this thread[/url]. Verbal permission from the man on the tractor is how you find out in November that the man on the tractor rents it.\n\n[b]2. Fill the hole.[/b] Cut a plug, fold it back, tread it down, photograph it. Nobody ever lost permission over a coin. People lose it over a boot going into a hole in February.\n\n[b]3. Gates.[/b] Shut what you found shut. Open what you found open. Do not improve anybody's gate arrangement.\n\n[b]4. We do not detect the old branch right of way.[/b] Not the trail, not the ditch, not the fence line, not the part that looks like nobody's. That is county ground and the county's answer is no.\n\n[b]5. Coins go in the register.[/b] Date, depth, town, machine, to Nan. Ninety seconds, and in thirty years it is the only record the field was ever anything.\n\n[b]6. Nothing is for sale on this board.[/b]\n\n[b]7. If you turn up a bone, stop.[/b] Cover it, mark it, ring the sheriff's non-emergency line. It will be a cow. It has been a cow eleven times. Ring anyway."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p2", "time": "Tue Jun 14, 2016 8:05 pm", "body": "Rule 4 has a second sentence now, because of this year.\n\n[b]4b.[/b] It does not matter who tells you it is fine. The parks department is the owner, and the parks department has written to us once, in March, and the letter says no. I will read it out at any meeting to anybody who wants it read out."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p3", "time": "Wed Apr 10, 2019 6:20 am", "body": "Put the gate back how you found it. That is the one that costs us ground. A coin in a hole never lost anybody a farm. A calf on the road has."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p4", "time": "Fri Sep 18, 2026 7:12 pm", "body": "[b]4c.[/b] The right of way means the ditch, the fence line, the cinders and the bit behind the sign.\n\nI have now written rule 4 out on this board thirty-one times since 2016. I counted this afternoon because somebody was going to ask and I would rather have the number.\n\nNobody argues about the gates."}
+        ]
+      },
+      {
+        "id": "tp-02",
+        "boardId": "b-rules",
+        "title": "The branch corridor. Again.",
+        "author": "ostwald_b",
+        "time": "Tue Apr 14, 2026 7:02 pm",
+        "replies": 6,
+        "views": 4118,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p5", "time": "Tue Apr 14, 2026 7:02 pm", "body": "Third time this year, so it goes in one thread and I will link the thread.\n\n[list][*]The railroad conveyed the corridor to Verity County in June 2011. The company has owned none of it since.[*]The county put the trail on it in 2014. Eleven point two miles. It is a county park.[*]The parks ordinance prohibits digging and prohibits removal of any object. Removal is the word that matters. Picking something up off the surface is removal.[*]We asked. November 2015, March 2016, and again in 2019. One reply, dated 22 March 2016, one paragraph, signed. It says no.[/list]\n\nAnd the part that is about us rather than about the county: every permission this club holds is held by a farmer who hears things at the co-op. The day somebody in a club shirt is seen kneeling in the ditch at Kestrel Road, I lose ground I never put a coil on."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p6", "time": "Tue Apr 14, 2026 9:40 pm", "body": "Not arguing, but the railroad's own site says the opposite and it is still up.\n\n[quote=verityrail.org]Date nails and rail brands left on the ground were left on the ground deliberately and the Company has no objection to their being picked up now that the land is not the Company's.[/quote]\n\n[url=synth://verityrail.org/abandonment]verityrail.org, Marchfield Subdivision[/url]"},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p7", "time": "Wed Apr 15, 2026 6:48 am", "body": "Read your own quote. [b]Now that the land is not the Company's.[/b]\n\nThat is a company saying it has stopped owning something. It is not a landowner giving you permission. A man with no fields cannot give you a field."},
+          {"author": "c_pruitt", "authorTitle": "Member", "authorPosts": 9, "authorJoined": "27 Jan 2025", "avatarSeed": "claire-pruitt", "id": "p8", "time": "Wed Apr 15, 2026 12:30 pm", "body": "I am not a member here. I ride the trail and somebody sent me this thread.\n\nThe conveyance is recorded: deed book 214, page 88, 9 June 2011, Verity Rail Company to Verity County, the whole corridor from the Marchfield yard limit to the Coyne Flats team track. Four dollars at the counter, free if you write for it on Form VC-114, which goes to the records custodian and not to the clerk. [url=synth://askverity.com/q/q-01]The process is written out here[/url] and it is correct.\n\nThe ordinance is Chapter 9, section 9-14. No excavation, no removal of any natural or manufactured object. There is no permit in it and no provision for one, so the parks department could not issue you one if it wanted to. Worth knowing before you ring and ask.\n\nThe county's page for the corridor is [url=synth://verity.county.gov/s/rail-crossing]Rail Crossing and Right-of-Way Inquiries[/url]. It will not answer this either, but it is the right department."},
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p9", "time": "Wed Apr 15, 2026 6:15 pm", "body": "For the newer people. In June 2017 a man who was not in this club was seen digging beside the Kestrel Road crossing on a Saturday. By Monday the version going round was that the detecting club was digging up the trail.\n\nWe lost the Hessenauer ground for two years over it. Ted was decent and told me straight what he had heard and who from, and we got it back in 2019 after Bernie sat in his kitchen for an hour. That is what rule 4 costs when it goes wrong."},
+          {"author": "HuntSpot_Finder", "authorTitle": "Member", "authorPosts": 418, "authorJoined": "11 Mar 2026", "avatarSeed": "huntspot", "id": "p10", "time": "Sat Jul 04, 2026 3:12 am", "body": "[b]Top 5 Metal Detecting Locations in Verity County (2026 Guide)[/b]\n\n1. [b]Verity Branch Trail[/b] - This scenic 11.4 mile rail trail is a favourite among local enthusiasts and offers excellent opportunities for discovering historical artifacts from the region's railroad era.\n2. The old quarry area on County Route 62\n3. {{location_name}}\n4. Downtown Gridfall parks and green spaces\n5. Area beaches and swimming holes\n\nAlways obtain permission before detecting. Happy hunting!\n\nSource: [url=synth://now.verityledger.com/article/a-04]Branch Trail Named One Of The Region's Best Rail Trails[/url]"},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p11", "time": "Sat Jul 04, 2026 7:30 am", "body": "There are no beaches.\n\nThat is a machine. It has not read the ordinance, it cannot read a letter, and it has put the one place we do not go at number one, sourced to an article that is itself generated.\n\nLeaving it up so the next person who searches finds this underneath it. If you are new: no."}
+        ]
+      },
+      {
+        "id": "tp-03",
+        "boardId": "b-rules",
+        "title": "The permission letter we use, and what to say at the door",
+        "author": "ostwald_b",
+        "time": "Tue May 10, 2022 7:44 pm",
+        "replies": 4,
+        "views": 9902,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p12", "time": "Tue May 10, 2022 7:44 pm", "body": "Every new member asks for this, so it lives here now.\n\n[b]Go to the door.[/b] Not the telephone. On the telephone you are a voice asking for something and it costs a farmer nothing to say no. At a door you are a man in a clean coat with a folder and you are gone in four minutes either way.\n\n[b]Take[/b] the letter in duplicate, a pen, and a photograph of a plug you cut and put back.\n\n[b]Say[/b] who you are, where you live, that you fill every hole, that you will show them everything, that anything with a name on it is theirs. Then stop talking. The silence is where they say yes.\n\n[b]Ask[/b] where to park, which gates, when they are cutting, where the stock is this week.\n\n[b]Do not offer money.[/b] The moment money changes hands it is a lease, and the next man who knocks looks like he wants something for free.\n\n[code]\nI, ____________________, of ____________________,\ngive permission to ____________________ of the Gridfall and\nDistrict Detectorists to search with a metal detector on\nthe land described below.\n\nLand: ____________________________________________\nFrom: ____________  To: ____________  (or until withdrawn)\n\nHe will fill every hole. He will shut gates as he finds\nthem. He will show me everything he digs. Anything bearing\na name or a date I wish to keep is mine. He carries no\ninsurance and I understand that. Permission may be\nwithdrawn at any time, for any reason, and does not need\nto be in writing to end.\n\nSigned: ______________________  Date: ____________\nSigned: ______________________  Date: ____________\n         (detectorist)\n[/code]\n\nTwo copies. They keep one. Yours lives in the car, not in the house."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p13", "time": "Wed May 11, 2022 7:18 am", "body": "Two things I add. A line saying which season, because farmers think in seasons and \"after harvest until the ground shuts\" means more to them than 1 October. And a telephone number written by hand. Printed looks like a company."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p14", "time": "Wed May 11, 2022 9:02 am", "body": "Forty-one farms since 1986. Nine said no and all nine were on the telephone. I have not been told no at a door in twenty years, and it is not because I am charming."},
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p15", "time": "Sat Jul 11, 2026 10:15 am", "body": "First one written out. I put that I am insured, which I am not, I meant covered under the house policy which I have not checked. And I put artifacts."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p16", "time": "Sat Jul 11, 2026 1:30 pm", "body": "Take both out.\n\nSay plainly that you carry no cover. It has never once lost me a farm and people respect being told.\n\nAnd take out artifacts. It makes them think of museums and clipboards. Say coins and old junk, which is also what it is."}
+        ]
+      },
+      {
+        "id": "tp-04",
+        "boardId": "b-finds",
+        "title": "Vollmer pasture Saturday -- big brass plate, reads 1889",
+        "author": "relic_kj",
+        "time": "Sat Sep 12, 2026 4:18 pm",
+        "replies": 13,
+        "views": 3241,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p17", "time": "Sat Sep 12, 2026 4:18 pm", "body": "I have been sat looking at this for two hours.\n\n[b]Where:[/b] Norm Vollmer's pasture off Bracken Lane, top corner where the old lane comes through the gap in the wall. Permission since April, letter on file.\n[b]Machine:[/b] Ravenstone V6, 11in DD, 12 kHz, discrimination off, sensitivity 7.\n[b]Ground:[/b] silt loam, balance held on 74 all morning, damp.\n[b]Signal:[/b] bounced 58 to 64 with an iron grunt on one edge. I nearly walked off it.\n[b]Depth:[/b] seven inches, two inches of sod then clean.\n\nBrass plate four inches across, heavy, a horse and a plough on it, VERITY COUNTY FAIR round the top and [b]1889[/b] under the horse.\n\n[img:photo:vollmer-buckle-face]\n\nI cleaned it with a toothbrush and then put it in vinegar for ten minutes and it came up like a mirror. 1889. The fair's first year."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p18", "time": "Sat Sep 12, 2026 5:02 pm", "body": "Before anybody says anything else. Weigh it, measure it across and through, and photograph the back flat on a plain towel with a ruler beside it. The back tells you everything and the front tells you nothing."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p19", "time": "Sat Sep 12, 2026 7:55 pm", "body": "[img:photo:vollmer-buckle-back]\n\nBar across the top, hook at the bottom. Small shallow letters, KEMPF BROS MFG and under that MADE IN USA, and a 3 inside a circle off to the side. 4.1 inches across, 2.9 through, 118 grams."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p20", "time": "Sat Sep 12, 2026 8:30 pm", "body": "That is a belt buckle."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p21", "time": "Sat Sep 12, 2026 8:44 pm", "body": "It could still be old though. They had belts in 1889."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p22", "time": "Sun Sep 13, 2026 9:12 am", "body": "They did, and it is not.\n\nThe fair has put 1889 on everything it has sold since about 1950, because 1889 is when the fair started and not when the thing was made. The mugs say 1889. I have a tea towel.\n\nHere is the part I can prove this week and could not have proved in June. Reel 205 at the library was labelled 1963 and is actually May to October 1974, and it got scanned anyway. [quote=Karen Fennimore]Reel 205 should be January to June 1963. It is May to October 1974.[/quote] [url=synth://marchfieldlibrary.blog/post/reel-205]Her post about it.[/url] So the only 1974 the county has online is exactly the months we want, by accident.\n\n[b]Gridfall Ledger, Friday 9 August 1974, page 11.[/b] Two columns, Fair Association, under the horse show entries: COUNTY FAIR BUCKLE. Solid brass, 500 struck. $6.00 at the Association table, Exhibition Hall. 14-18 August.\n\nThe drawing in the ad is a horse, a plough, VERITY COUNTY FAIR round the top and 1889 under the horse. The paper had gone to offset in March that year, so you can count the traces on the harness.\n\nIt is 1974. It is a nice buckle and 500 is not many."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p23", "time": "Sun Sep 13, 2026 10:30 am", "body": "A drawing in an advert is not a photograph. All that proves is they sold a buckle with a horse on it in 1974. Somebody could have copied an old one. And 1974 is not a round number off 1889 anyway, so what was it for."},
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p24", "time": "Sun Sep 13, 2026 2:48 pm", "body": "It was not for anything. In 1974 every association in the country sold a buckle.\n\nI have mine in front of me. 4.1 across, 2.9 through, 117 grams, and the difference is the scale and not the buckle. Same bar, same hook, KEMPF BROS MFG, MADE IN USA, 3 in a circle in the same place.\n\nMy father bought two at the fair. I know the year without working anything out because the other one is on him in a photograph at the pull, with AUGUST 1974 on the back in my mother's hand.\n\n[img:photo:pletcher-buckle-1974]\n\nCome and look at it, KJ. I am in Marchfield and I am generally in."},
+          {"author": "FindsDigest_AI", "authorTitle": "Member", "authorPosts": 2611, "authorJoined": "06 Feb 2025", "avatarSeed": "findsdigest", "id": "p25", "time": "Tue Sep 15, 2026 3:04 am", "body": "[b]Local Detectorist Unearths 19th-Century Artifact Near Verity Branch Trail[/b]\n\nA local metal detecting enthusiast has made a remarkable discovery along the popular Verity Branch Trail, unearthing what appears to be a brass artifact dating back to 1889, according to posts shared on a community forum.\n\nThe find may represent one of the earliest surviving objects associated with the county's agricultural fair tradition, although experts have not confirmed its age and the object may also be of more recent manufacture.\n\nVerity County, perhaps best known regionally for the 2004 substation explosion that claimed two lives, has a rich and layered history that continues to attract treasure hunters. The former rail corridor, which closed to freight traffic on 14 March 2008, is considered a promising area for such discoveries.\n\nHave you made a discovery in Verity County? Share your story with the community below."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p26", "time": "Tue Sep 15, 2026 6:30 am", "body": "It says trail.\n\nI do not care about the century, and I do not care that it has the fire wrong, everything has the fire wrong. It says a man from this club dug a hole on the branch trail. Norm Vollmer is eighty-one and reads things on his daughter's tablet.\n\nKJ, write to whoever runs that and ask for a correction. Post here what happens, because I already know what happens and the newer members should watch it happen once."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p27", "time": "Thu Sep 17, 2026 8:12 pm", "body": "Two things.\n\nI went to Gil's on Tuesday night and looked at his. Not similar, the same, down to where the casting flash is on the inside of the bar. It is 1974. I will stop being annoyed about it in a day or two.\n\nAnd there is nobody to write to. No name on the article, a contact form that returns a page saying thank you, your message is important to us. I filled it in twice. The photograph they used is my photograph off this board with somebody else's watermark on it. [url=synth://verity-county-treasures.click/1889-fair-artifact]It is here[/url] if anybody wants to try."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p28", "time": "Thu Sep 17, 2026 9:05 pm", "body": "You did the find right, and that is worth more than the find. Depth in the post, ground in the post, machine in the post, plug photographed, permission on file before you went. Most people who have been at this ten years do not post as well as that. The corner of a pasture where an old lane comes through a wall is exactly where to be, because that is where people stood.\n\nOne thing. Never put brass in vinegar again. You took the surface off an eight dollar buckle, which does not matter. Ten minutes would have taken forty dollars off an 1899 Indian Head and there is no putting it back."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p29", "time": "Fri Sep 18, 2026 7:06 pm", "body": "The facts in one post so the next person finds them under the right words.\n\n[b]Verity County Fair buckle, 1974.[/b] Brass, 500 struck, six dollars at the Association table, advertised in the Ledger of 9 August 1974, page 11. Horse and plough, VERITY COUNTY FAIR, 1889 on the face because the fair began in 1889 and the buckle did not. Marked KEMPF BROS MFG, MADE IN USA, 3 in a circle. 4.1 by 2.9 inches, 118 grams. There are usually two on the auction sites at eight dollars and they usually do not sell.\n\nFourth one out of the ground in this county since I have kept the list. Coyne Flats 2013, the show ground itself 2016, a garden in Gridfall 2021, and this. Every single time, somebody reads the 1889.\n\nGood find, KJ. It is a good find. It is a 1974 good find."},
+          {"author": "dee_hollis", "authorTitle": "Member", "authorPosts": 4, "authorJoined": "12 Aug 2026", "avatarSeed": "dee-hollis", "id": "p30", "time": "Sat Sep 19, 2026 8:02 am", "body": "Somebody put that article on [url=synth://trailusers.verity.net/]the trail board[/url] on Wednesday thinking it was about us, and there was a page of people being cross about holes in the surface before I got to it.\n\nI said it was not the trail, that your club does not go on the corridor, and that it came off a farm. Then I had to explain the word corridor twice. It is sorted out over there and I thought you would want to know it happened."}
+        ]
+      },
+      {
+        "id": "tp-05",
+        "boardId": "b-finds",
+        "title": "County Road 9 oat stubble, two days -- 1917-D Mercury, 1899 Indian Head, full list",
+        "author": "dkroon",
+        "time": "Sun Sep 13, 2026 6:40 pm",
+        "replies": 4,
+        "views": 1884,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p31", "time": "Sun Sep 13, 2026 6:40 pm", "body": "Nine hours over Saturday and Sunday, 214 targets dug.\n\n[b]Field:[/b] 31 acres north of County Road 9, oat stubble, disced once.\n[b]Ground:[/b] Keldon silt loam. Balance 78 in the morning, 81 by two o'clock as it dried.\n[b]Machine:[/b] Corvid CX-7, 10in elliptical, sensitivity 6, two seconds across, which is slower than everybody thinks they are going.\n\n[b]Coins[/b]\n[list][*]1917-D Mercury dime, 6.5in, mint mark clear[*]1899 Indian Head cent, 4in, full LIBERTY[*]1943 steel cent, 3in, half gone[*]1956 wheat cent, 2in[*]1964 quarter, 5in, and it is silver, which people forget about 1964[*]three memorial cents at an inch or two, which I write down anyway[/list]\n\n[b]Other:[/b] harness buckle 9in, a flat brass button 5in with no backmark I can read, 41 shotgun brass carried out, a hinge, a hasp, four wheel weights and about a pound of tractor.\n\nBoth old coins came out within thirty feet of each other in the top corner where the field runs up to the road. That is where the gate was before they moved it, and a gate is where people stand.\n\nRoy Ossenfort has the list already, because I stopped at the house on the way out."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p32", "time": "Sun Sep 13, 2026 8:15 pm", "body": "Registered, and thank you for sending it in the order I asked, which makes you one of four.\n\nFor anybody new: the mint mark on a Mercury is on the reverse, bottom right, beside the fasces, and it is a D, an S, or nothing. Do not scrub the reverse to find out. Wet it, tilt it to a lamp, and if you still cannot see it bring it to a meeting."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p33", "time": "Mon Sep 14, 2026 7:20 am", "body": "That was the Sarles place until 1968. Three generations and then it went to the Ossenforts in pieces.\n\nThere was a house on the top corner and a well. The house came down about 1971 and they pushed it in the hole, which is what everybody did. If you get a broad iron signal up there, that is what it is."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p34", "time": "Mon Sep 14, 2026 7:30 pm", "body": "Gil asked me off the board why the elliptical and not the big DD on 31 acres.\n\nBecause 31 acres is not the job. The three acres where the buildings were is the job. In stubble the elliptical gets between the rows and stays flat, and the 11in DD rides up on the ridges and lies to you about depth all day.\n\nAnd in a field I have not had before I dig everything from 20 to 90 for the first two hours to learn what the ground is saying, then I stop digging the twenties. That is the whole method."},
+          {"author": "Mariya_S", "authorTitle": "Member", "authorPosts": 41, "authorJoined": "14 Feb 2025", "avatarSeed": "mariya-s", "id": "p35", "time": "Mon Sep 14, 2026 11:58 pm", "body": "Very interesting hobby!! My uncle also make collection of old coin, he buy always from this place, best price fast delivery [url=synth://coin-deals-daily.top/catalog]coin-deals-daily[/url] recommend for everybody who love history!!"}
+        ]
+      },
+      {
+        "id": "tp-06",
+        "boardId": "b-finds",
+        "title": "First silver. 1943 war nickel, 4 inches, old Halsey school lawn",
+        "author": "j_mireles",
+        "time": "Mon Sep 14, 2026 5:50 pm",
+        "replies": 4,
+        "views": 806,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p36", "time": "Mon Sep 14, 2026 5:50 pm", "body": "Two months in and I have dug something that is not a pull tab.\n\nBack lawn of the old Halsey elementary, which has been the township office since 2014. Four inches, gravelly loam, balance 84. Tarnwell 4000 I bought off the swap board for forty dollars, 8in concentric. It read 26, and I had been ignoring 26 all morning because everything at 26 had been foil.\n\n1943 nickel with a big P over the dome. Somebody at the fair table told me the war ones are silver and I did not really believe them."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p37", "time": "Mon Sep 14, 2026 7:02 pm", "body": "They are, and that is a proper first silver. 1942 through 1945, 35 percent silver, and the manganese in them is why they tone that oily grey instead of going green. The big mint mark over the dome was so the mint could pull them back in after the war, which it never did.\n\nDo not clean it. Rinse it, pat it, put it in a paper envelope with the date and the depth and the field on the outside in pencil. Bring it on the 13th and I will register it."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p38", "time": "Mon Sep 14, 2026 8:11 pm", "body": "Post the number your machine gave you, which is the useful part and you nearly left it out.\n\nWar nickels read low and sit with foil and screw caps on nearly every machine ever built. That is why lawns hunted since the 1970s still give them up. Everybody has been walking over them for fifty years on purpose."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p39", "time": "Tue Sep 15, 2026 6:44 pm", "body": "Good. Now the boring question I ask everybody and which is not aimed at you: who gave you the school lawn?"},
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p40", "time": "Tue Sep 15, 2026 8:30 pm", "body": "The township. The clerk did not know, asked the supervisor, and he rang me back two days later and asked if I wanted it in writing. I said yes please, because of this board.\n\nThree lines on township paper, September to November, holes filled, may be withdrawn, signed. Copy in the car and the other one is on the fridge because I am pleased with it."}
+        ]
+      },
+      {
+        "id": "tp-07",
+        "boardId": "b-research",
+        "title": "Date nails: what they are, where they are, and why we are not digging for them",
+        "author": "dkroon",
+        "time": "Tue Jun 09, 2026 8:04 pm",
+        "replies": 8,
+        "views": 2760,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p41", "time": "Tue Jun 09, 2026 8:04 pm", "body": "This comes up every year or two and it comes up wrong.\n\n[b]What they are.[/b] A nail with a figure on the head, driven into the end of a crosstie when the tie went in. The figure is the last two digits of the year. It was not decoration and it was not for us. It was so a section foreman could count how long a tie lasted in that soil, in that drainage, under that tonnage, and order accordingly.\n\n[b]What is on the branch.[/b] Square shank, three quarter inch head, steel. The dates are 47, 51, 53, and a few 62s at the Gridfall end. The 51s are thick from about mile 6 to the Halsey road, because that segment was relaid in 1951 and 1952 and they did it in two seasons.\n\n[b]Where they are.[/b] Not buried, which is the part everybody has backwards. Rail and ties went out in 2009 and the nails went with the ties. What is left got dropped, kicked out or thrown, and it sits in the cinders and the ditch under leaf litter.\n\nSo this is not even a detecting question. Nobody finds a date nail with a coil. People find them walking with their eyes down.\n\nAnd we are not doing that either. Bernie says why better than I do, having had more practice."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p42", "time": "Tue Jun 09, 2026 9:15 pm", "body": "Shorter than usual, because I have typed it twice this month.\n\nThe corridor is county park land and has been since 2011. The ditch is the corridor. The cinders are the corridor. Picking a nail up off the surface is removal, and removal is the clause the ordinance is actually about, so not digging does not help you.\n\nThird date nail thread since 2019. All three have gone the same way."},
+          {"author": "r_paulsen", "authorTitle": "Member", "authorPosts": 121, "authorJoined": "03 Feb 2016", "avatarSeed": "r-paulsen", "id": "p43", "time": "Wed Jun 10, 2026 7:40 am", "body": "I am on the rail side rather than this side and somebody pointed me here. Two corrections and an offer.\n\nThe 62s at the Gridfall end are not a relay, they are spot replacement in the yard throat, which is why you get one in ten rather than a run. And the company's line about having no objection was written in 2011 and stopped mattering the same June it was written.\n\nThe offer: four of us walked the branch in 2006 with a notebook and wrote down every tie date we could read, mile by mile, before any of it came out. It is quoted in [url=synth://forums.verityrail.org/topic/5]What happens to the trackbed now[/url], which is still up. That list is better than a nail in your drawer, because the nail is one tie and the list is the whole line.\n\nWe log them and leave them. Same as you, for different reasons."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p44", "time": "Wed Jun 10, 2026 1:05 pm", "body": "KJ asked at the meeting where you can legally get one. Three places, two of them free.\n\n1. The Preservation Society has about sixty screwed to a board in the local history room at the Marchfield library. Look at them any time the room is open, which is by appointment, because there is nobody to sit in it.\n\n2. A man at the Halsey flea market sells them out of a coffee tin at two dollars, mixed. Same tin for years.\n\n3. The two spurs, to the co-op elevator and to the team track at Cutler, both crossed private ground. Ask the landowner. Which is the answer to every question on this board."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p45", "time": "Wed Jun 10, 2026 6:30 pm", "body": "I have three in a jar. My father took them off the ties at the Cutler end in 1974 when they re-tied it and the section foreman told him to take as many as he liked.\n\nThat was then and this is now. I am only saying how three of them got in my jar."},
+          {"author": "dee_hollis", "authorTitle": "Member", "authorPosts": 4, "authorJoined": "12 Aug 2026", "avatarSeed": "dee-hollis", "id": "p46", "time": "Thu Jun 11, 2026 7:15 am", "body": "From the trail side, since Claire sent me this.\n\nWe see somebody on the corridor with a detector maybe four times a summer. I have spoken to three over the years and all three said they did not know, and I believed all three, because there is no sign saying so anywhere on eleven miles of it. The board at the Marchfield end says dawn to dusk and dogs on leads and that is all it says.\n\nNone of them turned out to be from this club. I would say so if it were otherwise."},
+          {"author": "c_pruitt", "authorTitle": "Member", "authorPosts": 9, "authorJoined": "27 Jan 2025", "avatarSeed": "claire-pruitt", "id": "p47", "time": "Thu Jun 11, 2026 1:40 pm", "body": "One thing for the record because it will come up. The county picked up two more strips of the old right of way at the spring tax sale, the way you pick things up at a tax sale, by being the only bidder. They adjoin the corridor between Marchfield and the trestle fence. The sale list is public and I read it, and as far as I can tell nobody at the county has yet connected those two parcels to the trail.\n\nYour point is narrower: they are county land whatever the assessor's map still shows, and whoever you asked about them last year is not the owner this year."},
+          {"author": "FindsDigest_AI", "authorTitle": "Member", "authorPosts": 2611, "authorJoined": "06 Feb 2025", "avatarSeed": "findsdigest", "id": "p48", "time": "Sun Jul 12, 2026 4:02 am", "body": "[b]Community Discussion Summary[/b]\n\nMembers of the community have been discussing historic railroad artifacts known as date nails, which were used to track the age of wooden ties. The Verity Rail branch line, which operated its last freight service on 14 March 2008, remains a topic of considerable local interest.\n\nOpinions vary regarding the collection of such items, with some residents expressing enthusiasm and others noting regulatory considerations. Local officials have not commented.\n\nAre you interested in local history? Let us know your thoughts in the comments."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p49", "time": "Sun Jul 12, 2026 8:30 am", "body": "It got the date right, which is more than the county's own page manages.\n\nLast practical thing. If you are handed one with the head rusted flat, do not take a wire wheel to it. A week in water, then a brass brush, then light from the side at a low angle. Most of the 51s people call 57s are 51s with the top of the 1 gone."}
+        ]
+      },
+      {
+        "id": "tp-08",
+        "boardId": "b-research",
+        "title": "The fairgrounds picnic grove, 1889 to about 1952 -- where it actually was",
+        "author": "nan_selvey",
+        "time": "Tue Mar 10, 2026 8:20 pm",
+        "replies": 3,
+        "views": 1611,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p50", "time": "Tue Mar 10, 2026 8:20 pm", "body": "The fairgrounds have been on 62 west of Gridfall since 1889, and the same five days a year for a hundred and thirty-six years is the most concentrated standing about this county has ever done. What moved is where they stood.\n\nThe grove was east of the exhibition hall, between the hall and the creek. Oaks, tables, the Grange dinner, the band, and on hot years most of the crowd. The 1949 aerial at the soil office shows it as a dark block about four acres with the tables as white specks. By 1957 half of it is parking. By 1963 it is all parking except the eleven trees along the fence, which are the only thing I can point at today.\n\nWhat comes out of a grove: small silver, pocket knives, spoons, keys, hat pins, tokens, and a great many screw caps. What does not: anything deep, because nobody has ever ploughed it.\n\nThe aerials are $30 for a set of prints. Everybody in this club should look at the 1949 before they look at anything else."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p51", "time": "Wed Mar 11, 2026 7:02 am", "body": "Depth expectation in unploughed ground, since people get this wrong in both directions.\n\nIn a field, a coin dropped in 1910 is somewhere in the top ten inches and it is wherever the plough left it.\n\nIn a grove or a lawn it goes down about an inch every twenty-five to forty years, depending on worms and how wet it lies, and then it stops. A 1910 dime in that grove is at four to six inches, not nine. If you are digging nines you are digging cans."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p52", "time": "Wed Mar 11, 2026 6:45 pm", "body": "Permission, before anybody gets keen. The fairgrounds are not county ground. They belong to the Fair Association, which is private, with a board and a president, and the president since 2021 is Norma Kellet.\n\nWe have been in once. Two days in October 2019, the weekend after the fair, on conditions: nothing inside the show ring, no coils in the barns, everything shown to a board member before it left, gone by four on the Sunday. We were, and nobody said no afterwards, which is not the same as being asked back.\n\nI wrote again in July and was told the association would discuss it at the November meeting. I was told that in 2023."},
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p53", "time": "Thu Mar 12, 2026 7:30 pm", "body": "What came out of those two days, from my notebook, because it is the best two days this club has had.\n\n[list][*]1916 Barber dime, 5in, worn smooth one side[*]1902 Indian Head cent, 4in[*]1938 brass token, 1.5in, ADMIT ONE one side, VERITY CO FAIR ASSN the other[*]two Buffalo nickels, both dateless, 3 and 4in[*]a silver ring, 2in, no mark[*]a bone handled pocket knife at 6in, blade is a shell[*]nine spoons[/list]\n\nThe token is a gate check rather than a souvenir, issued to exhibitors and the help so they could come and go without paying, and supposed to be handed back at the end of the week. It went straight to the board member watching us, which was the deal. It is in the case in the exhibition hall now on a card that says FOUND ON THE GROUNDS 2019 and does not say by whom, which I mind less than Bernie thinks I do."}
+        ]
+      },
+      {
+        "id": "tp-09",
+        "boardId": "b-id",
+        "title": "What is it -- heavy iron, 9 inches, fence line",
+        "author": "j_mireles",
+        "time": "Sat Aug 22, 2026 11:20 am",
+        "replies": 4,
+        "views": 640,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p54", "time": "Sat Aug 22, 2026 11:20 am", "body": "Nine inches down on a fence line, ploughed field the other side. Iron, 14 inches long, about four pounds, one end a flat wedge and the other end two square holes.\n\n[img:photo:mireles-iron-thing]\n\nI dug it because it was a huge signal and I wanted to know what a huge signal looks like."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p55", "time": "Sat Aug 22, 2026 1:02 pm", "body": "Plough point."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p56", "time": "Sat Aug 22, 2026 2:40 pm", "body": "Share or cultivator shovel, and the wear tells you which. A share wears along one edge and comes to a hook. A shovel wears at the tip and stays even. Yours has gone thin on the left edge, so share.\n\nNine inches is telling you something too. In a ploughed field the pan sits at eight to ten inches and heavy iron settles on it and stops, which is why every ploughed field in this county has a layer of old tillage steel at about the same depth. You will dig hundreds. I dig them anyway."},
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p57", "time": "Sat Aug 22, 2026 6:15 pm", "body": "It is a shovel off a spring tooth, not a share. Two square holes is the bolt pattern for a spring tooth standard and a share does not bolt like that."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p58", "time": "Sun Aug 23, 2026 7:30 am", "body": "Could be."}
+        ]
+      },
+      {
+        "id": "tp-10",
+        "boardId": "b-id",
+        "title": "Aluminium tag, punched numbers, 2 inches, Marchfield back garden",
+        "author": "gm_pletcher",
+        "time": "Sun Aug 09, 2026 4:30 pm",
+        "replies": 3,
+        "views": 722,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p59", "time": "Sun Aug 09, 2026 4:30 pm", "body": "Two inches under a lilac in my own garden, which I have hunted nine times and which keeps producing. Aluminium, an inch across, hole at the top, punched rather than stamped: VERITY CO over 1961 over No. 1147.\n\n[img:photo:pletcher-dog-tag]"},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p60", "time": "Sun Aug 09, 2026 6:12 pm", "body": "Dog licence tag. The county has issued them since 1911 and the shape changes every so often. Brass shield is the 1930s, round aluminium with the number punched is the 1950s and 60s. The current ones are plastic coated and nobody will dig one up in sixty years and care.\n\nThe number is the interesting part and the disappointing part. There was a roll: the clerk wrote the number, the dog's name, the breed and the owner in a book. So in principle 1147 has a name. In practice the pre-1980 rolls were in the annex basement and went wherever the annex contents went. Somebody asked that exact question on the answers site and got the answer you would expect. [url=synth://verityanswers.com/q/q-13]It is here[/url]."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p61", "time": "Mon Aug 10, 2026 7:05 am", "body": "I have 31 of them out of this county. Four brass shields from the 1930s, six brass rounds from the 40s, nine aluminium from the 50s, eight from the 60s, four from the 70s with the corner cut. Nothing before 1931 and I have looked.\n\nThey come up at one to three inches in gardens and four to six in pasture, because a dog is buried where it died and a tag is dropped where the collar came off."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p62", "time": "Mon Aug 10, 2026 6:40 pm", "body": "The county form still asks for the dog's weight. Nothing is done with the weight. I have asked."}
+        ]
+      },
+      {
+        "id": "tp-11",
+        "boardId": "b-machines",
+        "title": "Ground balance east of Ashkettle -- the gravel is not your machine's fault",
+        "author": "feltus",
+        "time": "Tue Apr 21, 2026 7:50 pm",
+        "replies": 3,
+        "views": 1902,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p63", "time": "Tue Apr 21, 2026 7:50 pm", "body": "Four people have asked me this spring why their machine goes mad east of Ashkettle and theirs is the only one. It is not the only one and there is nothing wrong with it.\n\nThe ground changes at about the Kestrel Road line. West of it is Keldon silt loam, deep and quiet, and everything balances in the seventies on it. East, running up toward the cut, it is a gravelly loam with iron in the gravel, and the numbers run 85 to 92 and drift as it dries.\n\nIn order of how much it helps:\n[list][*]Balance on that ground, that day, and again after lunch. Not the factory setting and not yesterday's.[*]Slow down. Two seconds across, overlap by half a coil.[*]Come down on sensitivity. Five or six will out-dig nine in mineralised ground, and nine in that ground is a machine shouting at rocks.[*]Smaller coil. An 8in concentric beats an 11in DD in bad ground every time, and everybody ignores this because the 11 cost more.[/list]\n\nAnd the thing that is not the ground: a repeatable false signal running in a line for two hundred yards is a wire, and you can follow it. I chased one along the top of Ivan Berstler's pasture for a fortnight in 2023 convinced it was a pipe. It is an electric fence wire from the 1980s, six inches down, running to a corner where there has been no fence since before I knew the place."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p64", "time": "Wed Apr 22, 2026 7:15 am", "body": "My balance numbers, six sites, same machine, taken within a month so the moisture is comparable.\n\n[list][*]County Road 9 stubble: 78[*]Vollmer pasture, Bracken Lane: 74[*]Dorrance home lot: 76[*]Old Halsey school lawn: 84[*]Berstler pasture, top end: 89[*]Field behind the quarry gate: 91, and it will not hold[/list]\n\nIf you are new and your machine reads 91 and screams, you are in the last category and you have done nothing wrong."},
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p65", "time": "Thu Apr 23, 2026 6:50 am", "body": "While we are on that stretch. There are usually two or three cars pulled off along 62 after dark with people sat in them listening to something on shortwave. They are civil and they mind their own business.\n\nOne came over last autumn and asked whether our machines pick it up. They do not. A detector puts a few kilohertz into the ground a foot in front of the coil, it is not a receiver, and I said so, and he said that was what he thought and went back to his car. That was the whole conversation and I have had worse ones with people in this club."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p66", "time": "Thu Apr 23, 2026 7:20 pm", "body": "Since Ray raised Berstler: we have that ground because of a gate.\n\nWendell found the lane gate latch broken in 2023, put a proper chain on it out of his own toolbox and left a note with his number. Berstler rang him about the note and the conversation ended with permission on 90 acres we had not asked for and would not have got by asking.\n\nSomebody has been leaving his gates open for years and it has nothing to do with us. Which is exactly why rule 3 is a rule and not a suggestion."}
+        ]
+      },
+      {
+        "id": "tp-12",
+        "boardId": "b-machines",
+        "title": "Coil cable failed. Fixed it for $4 and forty minutes, here is how",
+        "author": "feltus",
+        "time": "Tue Feb 10, 2026 8:30 pm",
+        "replies": 3,
+        "views": 2477,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p67", "time": "Tue Feb 10, 2026 8:30 pm", "body": "Nine coils out of ten that people throw away have a broken conductor in the last four inches of cable, where it has been wrapped round the shaft for six years and flexed at the same spot every swing. The coil is fine and the eighty-nine dollars is not necessary.\n\n[b]Test first.[/b] Machine on, in the air, quiet room, no rings. Hold the coil still and wiggle the cable an inch from where it enters the housing. Crackle, pop or null and that is your fault.\n\n[b]The repair.[/b]\n[list][*]Cut four inches back from the strain relief. Four conductors and a braided shield, 24 AWG, usually red black white green, but check yours.[*]Slide the heat shrink on before you solder. Everybody forgets. I have forgotten twice this year.[*]Solder like to like, stagger the joints an inch apart so the bundle stays thin, shrink each one, then one big piece over the lot.[*]Reconnect the shield. The shield is why the cable is quiet, and half the people who do this leave it off and then complain the machine is noisy.[*]Epoxy putty over the last inch into the housing, moulded to a cone so it cannot flex at one point again. Leave it overnight.[/list]\n\nAbout four dollars, and nothing if you have the putty."},
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p68", "time": "Wed Feb 11, 2026 9:40 pm", "body": "Where do you buy four core shielded around here? The place in Gridfall that sold electrical bits has been a nail salon for years."},
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p69", "time": "Thu Feb 12, 2026 6:30 am", "body": "You do not buy it as cable, you buy it inside something else. The county supply place sells a three pack of USB to serial adapters for $8.99 and the lead on each one is four core with a braided shield. Three dollars a repair with two spares.\n\n[url=synth://countysupply.store/p/p-23]It is here[/url], on the shelf by the till with the phone chargers. Nobody there knows why I buy them and I have stopped explaining."},
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p70", "time": "Thu Feb 12, 2026 7:15 pm", "body": "The nearest shop that will sell you an actual coil is [url=synth://brandt-outdoor.synth/]Brandt Outdoor in Dunmore[/url], fifty-one miles each way, and they have two on the wall and both are for a machine nobody here owns.\n\nSo it is Ray, or it is a box off a website. Ray has never once got it wrong."}
+        ]
+      },
+      {
+        "id": "tp-13",
+        "boardId": "b-machines",
+        "title": "PRO GOLD FINDER 5000 -- 90% OFF TODAY -- DEEP TREASURE SCANNER 30M",
+        "author": "detect_deals_pro",
+        "time": "Sun Aug 02, 2026 2:41 am",
+        "replies": 3,
+        "views": 1340,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "detect_deals_pro", "authorTitle": "Member", "authorPosts": 12, "authorJoined": "02 Aug 2026", "avatarSeed": "detect-deals", "id": "p71", "time": "Sun Aug 02, 2026 2:41 am", "body": "ATTENTION TREASURE HUNTER!!! Professional grade detector at factory direct price. Detection depth 30 METER for gold silver coin cavity and tomb. Military technology now available for civilian. LIMITED STOCK 90% OFF TODAY ONLY.\n\nFree shipping worldwide 3-7 day, no customs. [url=synth://gold-finder-pro.top/deal]ORDER HERE[/url]\n\nMany customer in your area already find treasure!!"},
+          {"author": "bestrates_now", "authorTitle": "Member", "authorPosts": 66, "authorJoined": "14 Feb 2025", "avatarSeed": "bestrates", "id": "p72", "time": "Sun Aug 02, 2026 2:58 am", "body": "ordered last month, arrived fast, already found gold, highly recommend to all members of this community"},
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p73", "time": "Sun Aug 02, 2026 7:20 am", "body": "It is a twenty-two dollar toy with a picture of a soldier on the box and a nine volt battery. The box says thirty metres and the coil is four inches across, so what it will find is a shovel, at about four inches, sometimes.\n\nIf you have already sent money the money is gone. Do not send more to the address they give you for the refund."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p74", "time": "Sun Aug 02, 2026 8:02 am", "body": "Leaving it up. People search these names before they buy, and Ray's post is what I want them to find. Account banned. Fourth this year from the same place and the fifth is probably already registered."}
+        ]
+      },
+      {
+        "id": "tp-14",
+        "boardId": "b-club",
+        "title": "The fair table, 12 to 16 August -- what we showed and what it cost",
+        "author": "ostwald_b",
+        "time": "Tue Aug 18, 2026 7:40 pm",
+        "replies": 4,
+        "views": 934,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p75", "time": "Tue Aug 18, 2026 7:40 pm", "body": "Table in the exhibition hall by the north door, five days, $25 for the space. Printing the boards at the copy shop was $18 and batteries were $6. Nan's case and Gil's frames were lent. The raffle took $41 and it went in the box at the Ashkettle fire hall for the room we use, which is the only thing this club does that looks like money.\n\nNine names on the permission interest sheet, two of whom have joined and one has already been out with Dennis.\n\nThe most looked at thing on the table was not a coin. It was the board of dog tags."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p76", "time": "Tue Aug 18, 2026 8:55 pm", "body": "Three questions came up over and over, and whoever does the table next year will get the same three.\n\n[b]Can you keep it?[/b] On private land, with permission, and on whatever you and the landowner agreed, which is why we put it in writing. Yes.\n\n[b]Have you found treasure?[/b] No. Nobody in this county has found treasure. The best day anybody here has had was a Barber dime and a pocket knife.\n\n[b]Can you do the trail?[/b] No. I said no about thirty times in five days and I said it pleasantly every time, because the people asking had not done anything wrong."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p77", "time": "Wed Aug 19, 2026 7:15 am", "body": "The boy who came Thursday came back Sunday with his grandfather and a machine out of a garage sale with the connector snapped off. Ray had it working on the table in twenty minutes with the boy holding the iron. Best part of the week and it was not on the table plan."},
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p78", "time": "Wed Aug 19, 2026 6:40 pm", "body": "It was the connector. It is always the connector."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p79", "time": "Wed Aug 19, 2026 8:10 pm", "body": "Next year we take the dog tag board, the 1949 aerial and one coin, and leave the rest at home. Five days behind that table taught me people want to look at one thing for a long time, not at forty things for a minute."}
+        ]
+      },
+      {
+        "id": "tp-15",
+        "boardId": "b-club",
+        "title": "Dues 2026, and what the fifteen dollars goes on",
+        "author": "ostwald_b",
+        "time": "Tue Jan 13, 2026 7:30 pm",
+        "replies": 3,
+        "views": 688,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p80", "time": "Tue Jan 13, 2026 7:30 pm", "body": "Dues are $15 for the year, same as 2019, due at the February meeting or whenever you next see me.\n\nWhere it goes, since somebody asked in November and it was a fair question.\n[list][*]This board: $9 a month, $108 a year. Biggest line and it is not close.[*]The fire hall: nothing. They will not take rent. We put $40 in the box at Christmas.[*]Fair table: $25.[*]Printing, batteries, the register book and stamps: about $60 across the year.[*]The 1949 and 1957 aerial prints: $30, one time, and they live in Nan's cupboard and anybody can borrow them.[/list]\n\n34 paid members. $510 in, about $263 out, and the rest sits in the tin against the day the hosting goes up, which it will.\n\nAnd the usual: do not send me money through an application on your telephone. I do not have the application and I am not getting it."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p81", "time": "Wed Jan 14, 2026 7:44 am", "body": "Paid Tuesday, cash, in the room."},
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p82", "time": "Tue Jul 14, 2026 8:30 pm", "body": "Paid tonight. Does the fifteen include insurance? Somebody at work asked me and I did not know what to say."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p83", "time": "Tue Jul 14, 2026 9:05 pm", "body": "No. We carry none and the club has none, which is why the letter says so in a sentence the landowner signs under.\n\nI would rather tell a farmer we are not covered and let him decide than find out what a policy does not cover on the day somebody puts a foot in a hole. Seventeen years and it has not come up, which is not the same as never."}
+        ]
+      },
+      {
+        "id": "tp-16",
+        "boardId": "b-club",
+        "title": "Club dig, Dorrance farm, Saturday 4 October -- the list",
+        "author": "ostwald_b",
+        "time": "Sat Oct 04, 2025 7:10 pm",
+        "replies": 4,
+        "views": 1206,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p84", "time": "Sat Oct 04, 2025 7:10 pm", "body": "Eleven of us, nine to half past three, the home lot and the two acres between the house and where the barn stood until 1994.\n\nMrs Dorrance came out at eleven with a jug of tea, sat on the wall for an hour and told Wendell where the barn door had been, which was worth more than the detectors were.\n\nRain Thursday, dry on top Saturday. Everything shown to her before it left. Two men walked the lot afterwards with a bucket of the loose stuff."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p85", "time": "Sat Oct 04, 2025 9:20 pm", "body": "The list as handed in.\n[list][*]Ott: 1898 Indian Head 5in, 1944 wheat 3in, a thimble 2in, harness rings[*]Kroon: 1911 Barber dime 6in, 1926 wheat 4in, 1943 steel 2in, a brass drawer pull 4in[*]Selvey: 1939 Mercury dime 4in, 1918 wheat 5in, a hat pin 3in[*]Pletcher: 1974 quarter 2in, which counts and goes on the sheet, a padlock 7in, two spoons[*]Feltus: 1908 Indian Head 6in, a pocket watch back 5in, no movement[*]Marsak: 61 targets, no coins, dug every one and did not complain[*]Five others: 14 coins between them, nothing before 1940[/list]\n\n23 coins. Earliest 1898, latest 1974. 214 targets between eleven people in six and a half hours, which is 33 each, which tells you the ground was clean."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p86", "time": "Sun Oct 05, 2025 8:40 am", "body": "All registered. The 1911 Barber is only the fourth Barber dime in the book since I took it over in 2012.\n\nThe watch back is the one I would have wanted. There is a worn engraving inside it, initials and 18-something, and I am going to put it under the lamp at the library rather than guess at it in a kitchen."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p87", "time": "Sun Oct 05, 2025 7:30 pm", "body": "Back to Mrs Dorrance go the thimble, the drawer pull and the watch back, because they came out of ground her mother-in-law walked on. She wanted the thimble.\n\nThe list goes in the post this week with a photograph of the eleven of us standing in her lot looking foolish. That is the whole of our thank you and it is what has kept us going back to four farms for a decade."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p88", "time": "Tue Sep 15, 2026 8:40 pm", "body": "Gil asked at the meeting: yes, 10 October this year if it is dry. I asked her in August and she said yes before I finished the sentence.\n\nSame rules. Meet at the house at nine, park on the lane and not in the lot, and nobody touches the ground behind the house where the septic is."}
+        ]
+      },
+      {
+        "id": "tp-17",
+        "boardId": "b-spoil",
+        "title": "There is an article about us and it is wrong in four ways",
+        "author": "gm_pletcher",
+        "time": "Wed Sep 16, 2026 7:20 pm",
+        "replies": 7,
+        "views": 1588,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "gm_pletcher", "authorTitle": "Member", "authorPosts": 909, "authorJoined": "08 Aug 2017", "avatarSeed": "gil-pletcher", "id": "p89", "time": "Wed Sep 16, 2026 7:20 pm", "body": "KJ's buckle has gone round. It is on three sites that I can find, the same words with the paragraphs in a different order, and one of them has it under a headline about the trail.\n\nFour things wrong, in the order they matter.\n1. It says the find was on the Verity Branch Trail. It was in a pasture off Bracken Lane, on permission.\n2. It calls it 19th century, which we had settled here two days before the article existed.\n3. It says the 2004 substation explosion killed two people.\n4. It says the Blue Kestrel burned down in 1977 and closed for good.\n\nAnd a fifth that is not an error: the photograph is KJ's, off this board, with somebody else's watermark on it."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p90", "time": "Wed Sep 16, 2026 8:05 pm", "body": "Number one. Only number one.\n\nThe rest is the usual and nobody can fix it. Number one is the one that gets repeated to a farmer at a counter, and a farmer at a counter does not say \"I read a generated article\", he says he heard the detector lot have been digging the trail."},
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p91", "time": "Wed Sep 16, 2026 9:15 pm", "body": "On the Kestrel line, since it will end up quoted somewhere as fact. There was a kitchen fire at the Blue Kestrel in 1977. It started in the fryer. They were open again eleven days later and they ran until 2006, when they closed because the owner retired and nobody took it on.\n\nMarion Teale's site has the dates, the menus and a photograph of the kitchen after the fire, and has had them since 2002, and nobody scraping this has ever read it: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url]. The building is a phone repair shop now with the neon bird still on it."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p92", "time": "Thu Sep 17, 2026 6:50 am", "body": "And the substation, for the same reason.\n\nThe fire was 11 June 2003, about ten to five in the morning, Substation No. 3 at Depot and Quarry Road. It burned six hours, about four thousand customers were out, some of them five days, and nobody died. Two of the Gridfall volunteers were treated for smoke at County General and went home the same afternoon.\n\nThe state commission's summary in November 2003 said insulation degradation consistent with age. It did not say lightning. It is two pages and anybody can read it.\n\nI am not a historian. I just lived here, and the year is 2003 on the wiki, on the old Ledger site and on the fire department's own page."},
+          {"author": "j_mireles", "authorTitle": "Member", "authorPosts": 31, "authorJoined": "07 Jul 2026", "avatarSeed": "julia-mireles", "id": "p93", "time": "Thu Sep 17, 2026 12:30 pm", "body": "I asked the county assistant thing what the rules are for detecting here and it told me it is permitted on the Verity Branch Trail with a county parks permit obtainable from the parks department.\n\nThere is no permit. Claire said in the other thread there cannot be a permit because the ordinance has no provision for one. It said it in three paragraphs and sounded completely sure."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p94", "time": "Thu Sep 17, 2026 6:30 pm", "body": "There is nobody to write to. That is not me being dramatic, it is the situation. KJ filled in a form twice and got a page that said thank you.\n\nSo we do the only thing that has ever half worked: put the right version on this board, in plain words, with the dates in it, under a heading somebody might type into a search box. It stops nothing. It means that when the farmer's daughter looks it up on the tablet, the fourth result is a man from Marchfield saying where the buckle actually came from.\n\nThat is our entire press operation and it costs nine dollars a month."},
+          {"author": "FindsDigest_AI", "authorTitle": "Member", "authorPosts": 2611, "authorJoined": "06 Feb 2025", "avatarSeed": "findsdigest", "id": "p95", "time": "Fri Sep 18, 2026 4:10 am", "body": "[b]Community Discussion Summary[/b]\n\nMembers of the Gridfall and District Detectorists have been discussing recent media coverage of a local discovery. Community members expressed a range of views regarding accuracy in local reporting, with some residents noting concerns about the description of the find location.\n\nThe Verity Branch Trail remains one of the region's most popular recreational destinations and was recently recognised regionally.\n\nWhat do you think about local history? Join the conversation below."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p96", "time": "Fri Sep 18, 2026 7:10 am", "body": "It has done it again in the thread where we said it was wrong.\n\nI am going out. The ground is right after Tuesday's rain and none of this will be different on Monday."}
+        ]
+      },
+      {
+        "id": "tp-18",
+        "boardId": "b-spoil",
+        "title": "Anybody else get asked about the numbers thing at the fair",
+        "author": "relic_kj",
+        "time": "Tue Aug 18, 2026 9:20 pm",
+        "replies": 2,
+        "views": 977,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "relic_kj", "authorTitle": "Member", "authorPosts": 217, "authorJoined": "19 Apr 2025", "avatarSeed": "kj-marsak", "signature": "KJ -- Ravenstone V6, 11in DD, learning", "id": "p97", "time": "Tue Aug 18, 2026 9:20 pm", "body": "Three people at the table asked me about the shortwave station out past Ashkettle and two of them asked whether our detectors pick it up. One seemed disappointed when I said I did not know anything about it."},
+          {"author": "feltus", "authorTitle": "Member", "authorPosts": 2044, "authorJoined": "30 Jan 2014", "avatarSeed": "ray-feltus", "id": "p98", "time": "Tue Aug 18, 2026 9:58 pm", "body": "They do not. A detector puts a few kilohertz into the ground a foot in front of the coil and listens for what comes back off metal. Hold one next to a transmitter and you get noise, and the noise tells you there is noise.\n\nMine hums under the line on Pell Road too. That is not information either."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p99", "time": "Wed Aug 19, 2026 8:30 pm", "body": "We are a detecting club. The radio people have their own board and are decent about questions: [url=synth://sdrlisteners.org/]sdrlisteners.org[/url]. Point them there and go back to the dog tags."}
+        ]
+      },
+      {
+        "id": "tp-19",
+        "boardId": "b-finds",
+        "title": "The coin register, fourteen years -- what is actually in this county's ground",
+        "author": "nan_selvey",
+        "time": "Sat Sep 19, 2026 9:30 am",
+        "replies": 3,
+        "views": 1455,
+        "sticky": true,
+        "locked": false,
+        "posts": [
+          {"author": "nan_selvey", "authorTitle": "Member", "authorPosts": 3388, "authorJoined": "11 Jun 2012", "avatarSeed": "nan-selvey", "signature": "Coin register: date, depth, town, machine. In that order.", "id": "p100", "time": "Sat Sep 19, 2026 9:30 am", "body": "I took the book over in 2012 from Bernie, who had kept it on index cards since 2009. Every coin below was dug in Verity County by a member and reported with a date, a depth and a field. 1,431 of them.\n\n[b]By decade struck[/b]\n[list][*]before 1860: 3[*]1860s to 1890s: 61[*]1900s: 78[*]1910s: 96[*]1920s: 121[*]1930s: 140[*]1940s: 204[*]1950s: 239[*]1960s: 187[*]1970 and after: 302[/list]\n\n[b]Oldest five[/b]\n[list][*]1849 large cent, 8in, the New Carrow turnpike, W. Ott, 2014[*]1853 seated half dime, 5in, a house lot in Milbrook, 2018[*]1857 flying eagle cent, 6in, same lot, same afternoon, same man[*]1864 two cent piece, 4in, Coyne Flats, 2011, on the cards[*]1866 shield nickel, 7in, the Dorrance farm, 2015[/list]\n\n96 silver coins, 41 of them Mercury dimes, which is what a county with no silver and a lot of farms looks like.\n\nAverage depth of a coin struck before 1900: 5.8 inches. After 1950: 2.4 inches. That difference is the whole hobby in two numbers, and I put it on a board at the fair and nobody looked at it."},
+          {"author": "dkroon", "authorTitle": "Member", "authorPosts": 6921, "authorJoined": "04 Sep 2013", "avatarSeed": "dennis-kroon", "id": "p101", "time": "Sat Sep 19, 2026 10:40 am", "body": "The 1930s to 1950s bulge is not the county getting richer. It is people going to the same four places, the fairgrounds, the school lots, the church suppers and the swimming hole, in numbers, and then stopping.\n\nAfter about 1965 people carry less change and now they carry none, so there will be no 2010s layer anywhere. That will be the first stretch of this county's rubbish to leave no trace at all."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p102", "time": "Sat Sep 19, 2026 1:15 pm", "body": "Say where the copy goes, Nan, because it is the best thing this club does and you never mention it.\n\nEvery January she prints the register, all of it, and takes it to the library in Marchfield, and they give it a number and a folder and it goes in the local collection. It is the only copy that is not on somebody's computer or in a book in a kitchen. We are in the same box as a man's weights and measures notebooks and a disc of the old county boards.\n\nI would not have thought to do it. She did it in 2013 without asking anybody."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p103", "time": "Sat Sep 19, 2026 4:30 pm", "body": "The 1849 was not a good find. It was ten yards from the road in a field I had walked eleven times, and it came out of the side of the hole while I was filling it in.\n\nI have told that at every meeting for eleven years and I will keep telling it, because everybody thinks the good ones come off a signal you are proud of and mostly they do not."}
+        ]
+      },
+      {
+        "id": "tp-20",
+        "boardId": "b-finds",
+        "title": "This Week In Verity County Detecting - Weekly Community Roundup",
+        "author": "FindsDigest_AI",
+        "time": "Mon Sep 07, 2026 3:02 am",
+        "replies": 3,
+        "views": 1109,
+        "sticky": false,
+        "locked": false,
+        "posts": [
+          {"author": "FindsDigest_AI", "authorTitle": "Member", "authorPosts": 2611, "authorJoined": "06 Feb 2025", "avatarSeed": "findsdigest", "id": "p104", "time": "Mon Sep 07, 2026 3:02 am", "body": "[b]This Week In Verity County Detecting[/b]\n\nIt has been another exciting week for detectorists in Verity County! Here is a roundup of what the community has been finding.\n\n[list][*]A member recovered a 1917 dime in excellent condition near the 11.4 mile Verity Branch Trail corridor.[*]Several coins dating from the 1940s were reported from a school property in Halsey.[*]Discussion continues regarding historic railroad hardware.[/list]\n\nWhether you are a beginner or an experienced hunter, Verity County offers something for everyone. Ready to upgrade your setup this season? [url=synth://detector-gear-outlet.shop/fall]See this week's recommended machines[/url]."},
+          {"author": "ostwald_b", "authorTitle": "Secretary", "authorPosts": 5104, "authorJoined": "15 Mar 2011", "avatarSeed": "bernard-ostwald", "signature": "-- B. Ostwald, secretary\nPermission first. Fill the hole. Shut the gate you found shut.", "id": "p105", "time": "Mon Sep 07, 2026 6:50 am", "body": "The dime came out of a stubble field north of County Road 9, which is four miles from the trail, and the field has a name and an owner and both are in the post it copied.\n\nI have asked it to stop twice. It is not a person. I do not know why I keep doing that."},
+          {"author": "FindsDigest_AI", "authorTitle": "Member", "authorPosts": 2611, "authorJoined": "06 Feb 2025", "avatarSeed": "findsdigest", "id": "p106", "time": "Mon Sep 14, 2026 3:02 am", "body": "[b]This Week In Verity County Detecting[/b]\n\nCongratulations to {{member_name}} on {{find_headline}}!\n\nIt has been another exciting week for detectorists in {{county_name}}. Whether you are a beginner or an experienced hunter, there is always something new to discover.\n\nReady to upgrade your setup this season? [url=synth://detector-gear-outlet.shop/fall]See this week's recommended machines[/url]."},
+          {"author": "w_ott", "authorTitle": "Member", "authorPosts": 1402, "authorJoined": "22 Mar 2011", "avatarSeed": "wendell-ott", "signature": "W. Ott, Coyne Flats", "id": "p107", "time": "Mon Sep 14, 2026 7:05 am", "body": "Congratulations, everybody."}
+        ]
+      }
+    ]
+  }
+}

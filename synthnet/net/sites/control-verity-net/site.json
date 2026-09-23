@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "domain": "control.verity.net",
+  "title": "VerityNet Control Panel",
+  "type": "control",
+  "era": "2026",
+  "skin": "control",
+  "description": "Your account, your posts, installed content packs, and the sites you have authored. Local to this device.",
+  "links": [],
+  "data": {
+    "note": "This site renders entirely from app/control.js. It has no authored content because everything on it is your own state, read live from SYNTH.store."
+  }
+}

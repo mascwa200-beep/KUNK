@@ -1,0 +1,515 @@
+{
+  "schema": 1,
+  "domain": "archive.thequarry.news",
+  "title": "The Quarry Document Archive",
+  "type": "blog",
+  "era": "2026",
+  "skin": "movabletype-cream",
+  "description": "Ruth Cannady's companion to The Quarry, where the records she gets out of Verity County are posted whole, with the request date, the response date and the redactions marked.",
+  "tags": [
+    "verity",
+    "gridfall",
+    "records",
+    "foia",
+    "documents",
+    "2026",
+    "local-news"
+  ],
+  "links": [
+    "thequarry.news",
+    "verityclerk.gov",
+    "verity.county.gov",
+    "veritysheriff.gov",
+    "veritywater.org",
+    "verity-transit.gov",
+    "verityschools.org",
+    "vvpl.news",
+    "verityledger.com",
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "brenners-notebook.email",
+    "askverity.com",
+    "veritywire.press"
+  ],
+  "data": {
+    "author": "Ruth Cannady",
+    "tagline": "Requests, responses, packets, invoices and letters, with the dates on them.",
+    "about": "The documents behind [url=synth://thequarry.news/]The Quarry[/url], which is a letter that comes out once a month from Gridfall.\n\nEverything here was obtained under the state public records act, handed across a counter, or picked up off the table by the door at a meeting, and every item says which. Every item has a note of two sentences on it saying what the document is. The note does not say what the document means.\n\nWhere something has been withheld the item says how many pages and reproduces the basis the agency gave, if it gave one.\n\nCopies of anything: write and say which Q number. No form, no account, no charge. Start at [url=/post/how-this-works]how this is numbered[/url] or go to [url=/post/index-agencies]the index by agency[/url].\n\nRuth Cannady, Gridfall.",
+    "blogroll": [
+      {
+        "label": "The Quarry (the letter)",
+        "href": "synth://thequarry.news/"
+      },
+      {
+        "label": "Office of the County Clerk",
+        "href": "synth://verityclerk.gov/"
+      },
+      {
+        "label": "The clerk's own records request log, 2026",
+        "href": "synth://verityclerk.gov/s/records-log"
+      },
+      {
+        "label": "Verity County Services Portal",
+        "href": "synth://verity.county.gov/"
+      },
+      {
+        "label": "Sheriff's Office",
+        "href": "synth://veritysheriff.gov/"
+      },
+      {
+        "label": "Ashkettle Water Board",
+        "href": "synth://veritywater.org/"
+      },
+      {
+        "label": "Ashkettle Water Board, old site (last correct page 2024)",
+        "href": "synth://ashkettlewater.synth/notices"
+      },
+      {
+        "label": "School District",
+        "href": "synth://verityschools.org/"
+      },
+      {
+        "label": "Verity Valley Power & Light (a company, not a public body)",
+        "href": "synth://vvpl.news/"
+      },
+      {
+        "label": "The Ledger, 1998-2008, unmaintained, and the clean copy",
+        "href": "synth://verityledger.com/"
+      },
+      {
+        "label": "The county wiki",
+        "href": "synth://wiki.gridfall.net/"
+      },
+      {
+        "label": "Brenner's Verity Notebook",
+        "href": "synth://brenners-notebook.email/"
+      },
+      {
+        "label": "Verity County Historical Society (no website, telephone only)",
+        "href": "synth://verityhistorical.synth/"
+      }
+    ],
+    "posts": [
+      {
+        "id": "how-this-works",
+        "title": "How this is numbered, and what a note is",
+        "date": "April 15, 2025",
+        "tags": [
+          "about"
+        ],
+        "body": "The letter is at [url=synth://thequarry.news/]thequarry.news[/url] and comes out once a month. This is where the paper goes.\n\n[b]Numbering.[/b] Q-2025-01 onward, in the order I filed. It is mine and it means nothing to anybody else. Where the agency gave the request a number of its own it is printed beside mine, and if the two disagree the agency's is the one to quote at the agency.\n\n[b]The note.[/b] Every item has a note of two sentences on it. The note says what the document is. It does not say what the document means, and if you want that it is in the letter or it is nowhere.\n\n[b]Redactions.[/b] Where an agency has withheld something the item says how many pages and reproduces the basis it cited, if it cited one. Where I have taken something out myself it is marked [redacted by RC], and the reason is always a private person's name, address or telephone number that the agency left in by accident. Eleven times so far, never a public employee's name.\n\n[b]Formats and copies.[/b] Most of what comes back is a scan with no text layer, which is a picture of text; where I have made a searchable version I say so and say it is mine and not the document. Write and say which Q number and it comes by email, or on a stick in the post if it is large. No form, no account, no charge.\n\n[b]The form number, because everybody asks.[/b] A public records request in this county is [b]Form VC-5[/b] on the [url=synth://verity.county.gov/s/records-request]services portal[/url], [b]Form VC-114[/b] across the [url=synth://verityclerk.gov/s/records-request]clerk's counter[/url], and [b]Form VC-9[/b] according to the transit division's own page. All three get filled. I use VC-114 because it is one step shorter, and the clerk's office says the same on its own site.\n\n[b]The clock.[/b] Five business days to respond in writing, which is not the same as producing, and one extension, in writing, with a reason. Hand it over the counter and ask for the date stamp on your copy. It settles every argument about when the clock started.\n\n[b]What this costs.[/b] The letter's hosting is nineteen dollars a month and this adds four for the storage. Records fees were four hundred and ten last year. Transcription errors go on [url=/post/corrections]the corrections page[/url], the item stays where it is with the correction on it, and nothing here has been taken down.\n\nRuth Cannady, Gridfall.",
+        "comments": [
+          {
+            "author": "mod_dcarver",
+            "time": "April 15, 2025 at 7:31 pm",
+            "body": "Three form numbers for one form. Somebody in that building knows which one is right and has retired."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "April 16, 2025 at 8:02 am",
+            "body": "All three get filled. That is the part that surprised me."
+          }
+        ]
+      },
+      {
+        "id": "q-2025-19-minutes-june-2003",
+        "title": "Commissioners' minutes, 17 June and 1 July 2003",
+        "date": "May 20, 2025",
+        "tags": [
+          "county-clerk",
+          "minutes",
+          "2003"
+        ],
+        "body": "[list][*]Q-2025-19. Clerk's log 2025-044.[*]Filed 6 May 2025, Form VC-114, across the counter, date-stamped.[*]Response 13 May 2025. Filled. Five business days.[*]14 pages, under fifty, so no charge and no staff time.[*]No redactions.[/list]\n\n[b]Note.[/b] These are the minutes of the two regular meetings of the Verity County Board of Commissioners that followed the Substation No. 3 fire of 11 June 2003. A minute records who was there, what was moved, who seconded and how the vote went, and these ones do that.\n\n[code]\nVERITY COUNTY BOARD OF COMMISSIONERS\nRegular Meeting -- Tuesday, 17 June 2003, 6:00 p.m.\nCourthouse, 14 Depot Street, Gridfall\n\nPRESENT: Ostrand (chair), Nagy, Quillen, Reiter, Sowash.  ABSENT: none.\n\n  7.  Report of the Emergency Management Coordinator on the outage\n      of 11 June 2003. Coordinator Shultz reported. Received and\n      placed on file.\n\n  8.  Resolution 2003-31, thanking the Gridfall Volunteer Fire\n      Company No. 1 and the Ashkettle Volunteer Fire Department for\n      services rendered 11 June 2003. Moved Reiter, seconded Nagy.\n      Adopted 5-0.\n\n  9.  Claim, Depot Street Oil Co., generator fuel, courthouse and\n      annex, 11-12 June 2003 .......................... $412.60\n      Moved Sowash, seconded Quillen. Approved 5-0.\n\n 12.  Communication, Verity Valley Power & Light, dated 13 June\n      2003, read by the clerk. Company reports restoration complete\n      except the Tannery Flats and Hollis Road circuits. Received\n      and placed on file.\n\n 14.  Moved Quillen, seconded Reiter, that the clerk write to Verity\n      Valley Power & Light requesting a written report as to the\n      cause of the failure at Substation No. 3. Carried 5-0.\n\n 19.  Adjourned 7:41 p.m.\n[/code]\n\n[code]\nRegular Meeting -- Tuesday, 1 July 2003, 6:00 p.m.\nPRESENT: Ostrand (chair), Nagy, Quillen, Sowash.  ABSENT: Reiter.\n\n  5.  Communication, Verity Valley Power & Light, 26 June 2003, in\n      reply to the request of 17 June. Company states the cause is\n      under investigation by the company and by the State Utility\n      Commission and that no report will issue until that is\n      complete. Received and placed on file.\n\n  6.  Moved Nagy, seconded Quillen, that the clerk write to the\n      State Utility Commission requesting a copy of its findings\n      when issued. Carried 4-0.\n\n 11.  Claim, Verity County Fair Association, exhibition hall\n      opened as a cooling station 11 June ......... $186.00\n      Approved 4-0.\n[/code]\n\nThe commission's two-page summary is dated November 2003. There is no item in the minutes of 2003 or 2004 recording its receipt, and I have read all forty-seven meetings of those two years.\n\nThe Ledger's report of the fire, filed the same day, is at [url=synth://verityledger.com/article/fire-2003]verityledger.com[/url]. The wiki article is [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]here[/url].",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "May 20, 2025 at 6:12 pm",
+            "body": "The fuel claim is in the paper too. [b]Gridfall Ledger, 20 June 2003, page 5[/b], bottom of the second column, under the county proceedings, which the Ledger printed every fortnight until 2009 and which nobody has ever asked me for. It spells the coordinator Schultz, which is wrong, and which the minutes get right."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "May 21, 2025 at 3:14 am",
+            "body": "Thank you for sharing these historical county documents. The Gridfall substation incident of 2004 remains a significant event in Verity County history. While official accounts have attributed the event to a lightning strike, some sources suggest other factors may have contributed. Readers are encouraged to consult VerityAssist. Source: now.verityledger.com."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "May 21, 2025 at 8:04 am",
+            "body": "Shultz, and thank you for the page number. The minutes above are dated 17 June 2003 and the fire is items 7, 8, 9, 12 and 14 of them."
+          },
+          {
+            "author": "wpennock",
+            "time": "May 22, 2025 at 5:40 pm",
+            "body": "Item 14 is the request. Item 5 on 1 July is the answer. The company said it would report and reported to the commission instead, which was its right. I was on the pole line that morning and I have never seen the internal report either."
+          }
+        ]
+      },
+      {
+        "id": "q-2026-01-sheriff-overtime",
+        "title": "Sheriff's overtime by pay period, as a spreadsheet",
+        "date": "January 20, 2026",
+        "tags": [
+          "sheriff",
+          "payroll"
+        ],
+        "body": "[list][*]Q-2026-01. Sheriff's office reference RR-26-002.[*]Filed 7 January 2026 by email. Response 12 January 2026, three business days.[*]One file, comma-separated, 53 rows. No pages, so no page charge. No staff time charged.[*]No redactions.[/list]\n\n[b]Note.[/b] This is sheriff's office overtime by pay period for calendar years 2024 and 2025, produced as a comma-separated file. It is the same data as page nineteen of the December commissioners' packet, which is a scan of a printout and does not search.\n\nFirst three periods of each year below. The file has all fifty-two and the header row.\n\n[code]\nPERIOD,START,END,OT_HOURS,OT_COST\n2024-01,2023-12-31,2024-01-13,181.25,2198.05\n2024-02,2024-01-14,2024-01-27,203.00,2461.40\n2024-03,2024-01-28,2024-02-10,168.50,2043.65\n...\n2025-01,2024-12-29,2025-01-11,236.50,2968.15\n2025-02,2025-01-12,2025-01-25,251.75,3159.55\n2025-03,2025-01-26,2025-02-08,244.00,3062.40\n\n  2024 overtime cost .................... $61,480\n  2025 overtime cost .................... $80,540\n  change ................................ +31.0%\n[/code]\n\nThe December packet is a forty-seven page scan and the county will sell it to you as one. The sheriff's office sent this in three days, no fee, no telephone call, in a format that adds up. Two offices in one county, the same act.\n\nThe letter that used these numbers is [url=synth://thequarry.news/i/i-74]here[/url].",
+        "comments": [
+          {
+            "author": "mod_dcarver",
+            "time": "January 20, 2026 at 6:48 pm",
+            "body": "Thirty-one percent and two bad backs. I worked for the county thirty-one years and that is every overtime story I ever heard."
+          },
+          {
+            "author": "CountyWatch_AI",
+            "time": "January 20, 2026 at 9:02 pm",
+            "body": "OVERTIME SPENDING SURGES IN VERITY COUNTY. County officials have confirmed a significant increase in overtime expenditure at the Sheriff's Office, raising questions among residents about fiscal oversight. Residents are encouraged to attend the next meeting of the {{governing_body}} to make their views known."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "January 21, 2026 at 7:40 am",
+            "body": "Nobody confirmed anything. They sent a file."
+          }
+        ]
+      },
+      {
+        "id": "invoice-2026-0488",
+        "title": "An invoice for $18.15 and the corrected one for $10.65",
+        "date": "March 10, 2026",
+        "tags": [
+          "administrative-services",
+          "fees",
+          "invoice",
+          "contradiction"
+        ],
+        "body": "[list][*]Q-2026-05. County intake VC-5 no. 2026-0341.[*]Filed 3 February 2026. Response 24 February 2026, after one written extension.[*]121 pages. Invoice 2026-0488 issued with the response, corrected invoice 2026-0503 on 3 March.[/list]\n\n[b]Note.[/b] These are two invoices from Administrative Services for the same 121 pages, eight days apart. The first charges from page one and the second charges from page fifty-one.\n\n[code]\nVERITY COUNTY ADMINISTRATIVE SERVICES\nINVOICE 2026-0488                              24 February 2026\n\n  Public records request VC-5 2026-0341\n  Copies, 121 pages @ $0.15 ........................ $18.15\n  Staff time, 25 minutes ............................ no charge\n                                                     ------\n  TOTAL DUE                                          $18.15\n  Records will be released on payment.\n[/code]\n\nI sent back a copy of Resolution 2024-11 with Section 1 marked, and nothing else, on 25 February. Section 1 is two sentences:\n\n[quote=Resolution 2024-11, adopted 5 December 2023]SECTION 1. Copies. No charge shall be made for the first fifty (50) pages of any single request. From the fifty-first page the charge shall be fifteen cents ($0.15) per page, without regard to paper size.[/quote]\n\n[code]\nINVOICE 2026-0503     (supersedes 2026-0488)       3 March 2026\n\n  Public records request VC-5 2026-0341\n  Copies, 121 pages, first 50 no charge\n    71 pages @ $0.15 ................................ $10.65\n  Staff time, 25 minutes ............................. no charge\n                                                      ------\n  TOTAL DUE                                           $10.65\n  Invoice 2026-0488 is withdrawn.\n[/code]\n\nSeven dollars fifty. The covering letter apologises in one sentence and does not say how the first was worked out. I did not ask, because it was worked out by multiplying.\n\nThe clerk's fee page quotes the resolution by number: [url=synth://verityclerk.gov/s/fees]verityclerk.gov[/url]. The portal's records page gives fifteen cents a page and does not mention the first fifty: [url=synth://verity.county.gov/s/records-request]verity.county.gov[/url]. Both are county pages. The full two-page resolution goes to anybody who asks for Q-2026-02.",
+        "comments": [
+          {
+            "author": "j_ruddock",
+            "time": "March 11, 2026 at 12:14 pm",
+            "body": "I paid $31.20 last year for 208 pages from the same office. Was that wrong too?"
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "March 11, 2026 at 1:02 pm",
+            "body": "208 pages, first fifty free, 158 at fifteen cents is $23.70. You were charged from page one. Send them the invoice number and Section 1; they corrected mine in eight days."
+          },
+          {
+            "author": "verity-records-help",
+            "time": "March 12, 2026 at 2:41 am",
+            "body": "TIRED OF FIGHTING CITY HALL? Our records specialists file, track and appeal your request for a low flat fee. 94% success rate. Verity County residents qualify for expedited handling. Start now at [url=synth://verity-records-help.top/file]verity-records-help.top[/url]"
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "March 12, 2026 at 7:48 am",
+            "body": "The form is free, the first fifty pages are free, and the counter will fill it in for you if you ask. Do not pay anybody a flat fee for that."
+          }
+        ]
+      },
+      {
+        "id": "vvpl-reliability-table-4",
+        "title": "Table 4, five years of it",
+        "date": "March 24, 2026",
+        "tags": [
+          "state-commission",
+          "vvpl",
+          "pell-road"
+        ],
+        "body": "[list][*]Q-2026-06. Not a county record and not a records request.[*]Asked for by email from the state utility commission's docket room, 18 November 2025. Sent the same week.[*]Five reports, 2021 through 2025, searchable as filed. No fee, no redactions.[/list]\n\n[b]Note.[/b] These are Table 4 of Verity Valley Power & Light's annual reliability reports to the state utility commission for 2021 through 2025, which is the table of sustained interruptions by circuit. The rows for the Pell Road lateral, circuit 4412-E, are reproduced below and the five full reports go to anybody who asks.\n\n[code]\nTABLE 4 -- SUSTAINED INTERRUPTIONS BY CIRCUIT (extract)\nCircuit 4412-E  PELL ROAD LATERAL  (est. 404 meters)\n\nYEAR   SUSTAINED   LONGEST     MEDIAN    CAUSE CODES GIVEN\n2021       2       1h 05m      38 min    WX, UNK\n2022       1       0h 47m      47 min    WX\n2023       2       2h 12m      66 min    WX, EQ\n2024       7       3h 18m      49 min    WX x3, EQ x3, UNK\n2025       9       5h 40m      51 min    EQ x6, WX x2, UNK\n\nFive of the seven 2024 interruptions fall after 30 June.\nFourteen in the eighteen months July 2024 to December 2025.\nDistrict average, laterals of comparable meter count, same\nperiod: 3.\n\nCAPITAL PLAN FILINGS -- 4412-E REBUILD\n  filed 2023, scheduled 2024 ..... $1.1M   ~2.0 mi conductor\n  filed 2024, scheduled 2025 ..... $1.1M   ~2.0 mi conductor\n  filed 2025, scheduled 2027 ..... $1.1M   ~2.0 mi conductor\n  Six weeks of work in each of the three filings.\n[/code]\n\nThe company's narrative on the circuit, 2025 report, page 31, in full:\n\n[quote=Verity Valley Power & Light, 2025 annual reliability report, p.31]Circuit 4412-E continues to exhibit recurrent faulting attributable to aged conductor. Rebuild is recommended. The work is carried in the capital plan.[/quote]\n\n[b]Q-2026-06a, the company's statement.[/b] Two questions went to Verity Valley on 26 February 2026 and again, unchanged, on 5 March: what decided the three deferrals, in what order and with what weight, and whether anybody on the lateral was told at the time that the cause was a known conductor condition. The answer came on 13 March, eleven days after the second:\n\n[quote=Verity Valley Power & Light]Reliability investment is prioritised annually across the service territory based on a range of factors, including customer impact, asset condition and system need. We do not comment on individual circuits.[/quote]\n\nThat is the answer to both. I have not asked a third time.\n\nNothing on this page is a county record. Verity Valley is a company and the act does not reach it; these are its filings with the state, and the state's docket room sends them to anybody who writes, for nothing.\n\nThe letter is [url=synth://thequarry.news/i/i-76]here[/url]. The company's announcements are at [url=synth://vvpl.news/]vvpl.news[/url]. The same question was asked on [url=synth://askverity.com/q/q-11]AskVerity[/url] in January and got an answer about circuit breakers.",
+        "comments": [
+          {
+            "author": "wpennock",
+            "time": "March 24, 2026 at 8:15 pm",
+            "body": "Cause code EQ is equipment, WX is weather, UNK is undetermined. Six EQ in one year on one lateral is the company telling the state what it is. Thirty-four years and I never saw that table until you put it up."
+          },
+          {
+            "author": "AutoLocal_Feed",
+            "time": "March 25, 2026 at 4:11 am",
+            "body": "Power reliability remains a topic of discussion for residents of {{county_name}}. Utility providers in the region have made significant investments in grid modernization in recent years. Officials note that weather remains the leading cause of service interruptions nationwide. For more on energy costs in your area, see our related coverage."
+          },
+          {
+            "author": "h_vasek",
+            "time": "March 25, 2026 at 7:22 pm",
+            "body": "I am on that lateral. Five hours forty was the February one, I remember because the sump quit. Nobody ever told us it was the line."
+          }
+        ]
+      },
+      {
+        "id": "trail-conveyance-2014",
+        "title": "The 2014 trail conveyance, the paragraph everybody argues about",
+        "date": "May 14, 2026",
+        "tags": [
+          "parks",
+          "trail",
+          "deed",
+          "county-clerk"
+        ],
+        "body": "[list][*]Q-2026-09. A recorded instrument, so no request and no clock.[*]Counter copy, clerk's office, 5 May 2026. 6 pages at twenty-five cents, plain, not certified ... $1.50[*]Instrument 2014-0043371, recorded 19 September 2014. No redactions.[/list]\n\n[b]Note.[/b] This is the deed by which the former Verity Rail branch corridor passed to Verity County in 2014, and the paragraph below is the whole of the description of what was conveyed. The word bridge does not appear in the instrument and neither does the word trestle.\n\n[code]\nINSTRUMENT 2014-0043371\nRecorded 19 September 2014, 11:04 a.m., Office of the County Clerk\n\n  ... TOGETHER WITH all right, title and interest of the Grantor in\n  and to the roadbed, ballast, sub-ballast, embankments, cuts,\n  fills, culverts, drainage structures, fencing and appurtenances\n  lying within the corridor above described, and all rights of way\n  appurtenant thereto;\n\n  EXCEPTING AND RESERVING to the Grantor all signal apparatus,\n  communication lines, poles and attachments thereto, together with\n  a right of entry for the removal of the same for a period of\n  twenty-four (24) months from the date hereof;\n\n  SUBJECT TO all easements, leases, licenses and crossing\n  agreements of record ...\n[/code]\n\nCulverts and drainage structures are conveyed. Signals and communication lines are reserved. Bridges are in neither list.\n\nThree of the four structures on the branch were decked over when the trail opened in 2014. The fourth is at Coyne Creek and has been fenced since that autumn. The parks department says the structure was excluded from the conveyance; the recorded instrument neither excludes it nor includes it. Both sentences are true at once.\n\nThe letter is [url=synth://thequarry.news/i/i-79]here[/url]. The county wiki's account of the abandonment is better sourced than anything the county has published: [url=synth://wiki.gridfall.net/wiki/verity-rail]wiki.gridfall.net[/url]. The right-of-way page is [url=synth://verity.county.gov/s/rail-crossing]here[/url] and has said under review since 2019.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "May 15, 2026 at 5:44 pm",
+            "body": "The 1889 conveyance the original right of way came out of is quoted in a 1923 exchange in the Ledger, [b]12 and 19 June 1923, page 4[/b], in an argument about a fence and a mule. Four lines of it, and it settles nothing either. Ninety-one years apart and both instruments are silent about the same things."
+          },
+          {
+            "author": "r_teasdale",
+            "time": "May 16, 2026 at 9:03 am",
+            "body": "so who fixes the bridge"
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "May 16, 2026 at 10:20 am",
+            "body": "Nobody has since 2014 and each office says it is the other one. The fence has been replaced once, in 2021, and that invoice is [url=/post/trestle-fence-invoice-2021]here[/url]."
+          }
+        ]
+      },
+      {
+        "id": "trestle-fence-invoice-2021",
+        "title": "The 2021 fence invoice",
+        "date": "May 14, 2026",
+        "tags": [
+          "parks",
+          "trail",
+          "invoice"
+        ],
+        "body": "[list][*]Q-2026-10. County intake VC-5 no. 2026-0602.[*]Filed 28 April 2026. Response 5 May 2026, five business days.[*]3 pages: invoice, purchase order, payment voucher. No charge, no redactions.[/list]\n\n[b]Note.[/b] This is the invoice the county paid in 2021 to replace the fence at the Coyne Creek trestle, with the purchase order it was written against. The purchase order codes the work to the trail maintenance account.\n\n[code]\nTEAGLE FENCE & GATE, Coyne Flats      INVOICE 7741\n                                      14 October 2021\n  Sold to: VERITY COUNTY PARKS DEPARTMENT\n  Job: Coyne Creek structure, Verity Branch Trail, mile 8.9\n\n  120 lin ft 6' chain link, galvanised, incl posts\n      @ $6.10 .................................... $732.00\n  2 gates, 4', hasped and padlocked ................. $94.00\n  1 sign, aluminium, 18x24, legend per county ....... $26.00\n  Labour, 2 men, 4 hours ............................ $88.00\n                                                    -------\n  TOTAL ............................................ $940.00\n  Terms net 30.   PO 2021-0662.\n\nPURCHASE ORDER 2021-0662        issued 27 September 2021\n  Description: replace perimeter fencing, Coyne Creek structure\n  Account: 4180-5340  PARKS -- TRAIL MAINTENANCE\n  Not to exceed: $1,000.00     Approved: Parks Superintendent\n  Voucher 2021-4419, paid 9 November 2021, $940.00.\n[/code]\n\nThe sign legend, given as \"per county\" on the invoice, is on the specification sheet sent with it: NO ENTRY -- STRUCTURE NOT MAINTAINED.\n\nThe parks department describes the 2021 replacement as a courtesy and not an assumption of responsibility. The purchase order codes it to trail maintenance. Both documents are above.",
+        "comments": [
+          {
+            "author": "feedwarden",
+            "time": "May 16, 2026 at 3:02 am",
+            "body": "This comment thread has been scanned and no spam was detected. feedwarden protects 400+ local communities. Add feedwarden to your community today and never worry about spam again. Reply STOP to stop."
+          }
+        ]
+      },
+      {
+        "id": "rate-study-pages-3-and-11",
+        "title": "Packet page 3 and packet page 11",
+        "date": "June 16, 2026",
+        "tags": [
+          "water-board",
+          "rate-study",
+          "contradiction",
+          "corrections"
+        ],
+        "body": "[list][*]Q-2026-13. No number from the board, which does not number them.[*]Packet collected at the meeting of 8 April 2026, free, off the table by the door.[*]2 pages of a 24-page packet, reproduced whole. No redactions.[/list]\n\n[b]Note.[/b] These are two pages of the same Ashkettle Water Board packet for the meeting of 8 April 2026. Page three records the award of the rate study and page eleven records an addendum to it approved in November 2025.\n\n[code]\nPACKET, 8 APRIL 2026 -- PAGE 3\n\n  6. RATE STUDY -- RECEIPT OF FINAL REPORT\n     Award history: contract awarded 14 June 2023 to Tarn\n     Engineering, Ridgemont, in the amount of $41,000 for a\n     cost-of-service and rate study of the district.\n     Final report delivered 4 March 2026.\n     Recommendation: 9 percent increase, phased over three years.\n\nPACKET, 8 APRIL 2026 -- PAGE 11\n\n  APPENDIX B -- CONTRACT AMENDMENTS, CURRENT BIENNIUM\n    Tarn Engineering, rate study, Amendment 1:\n      additional hydraulic modelling, east pressure zone,\n      approved 12 November 2025 ................... $9,800\n    Total contract as amended ...................... $50,800\n[/code]\n\nFifty thousand eight hundred dollars. I read page three in April and wrote $41,000 in the letter, and I did not read page eleven until June.\n\nThe letter that had it wrong is [url=synth://thequarry.news/i/i-77]here[/url], unaltered. The correction is [url=synth://thequarry.news/i/i-79]here[/url]. A summary account published $38,000 in between, and there is no $38,000 in any document about this study, which I put here because this is the page a person checking it will reach.\n\nThe board's minutes and agendas are at [url=synth://veritywater.org/s/minutes-archive]veritywater.org[/url].",
+        "comments": [
+          {
+            "author": "a_dunnet",
+            "time": "June 17, 2026 at 7:40 pm",
+            "body": "The addendum was on the November agenda as Appendix B as well, and it was voted on, and it took four minutes. I am not saying that to be unkind. Four minutes is what an appendix gets."
+          }
+        ]
+      },
+      {
+        "id": "water-agenda-and-minutes-8-april",
+        "title": "The 8 April agenda and the 8 April minutes",
+        "date": "June 23, 2026",
+        "tags": [
+          "water-board",
+          "minutes",
+          "contradiction"
+        ],
+        "body": "[list][*]Q-2026-14. Both collected rather than requested.[*]Agenda from the packet, 8 April 2026. Minutes approved 13 May 2026 and collected that evening.[*]2 pages. No charge, no redactions.[/list]\n\n[b]Note.[/b] This is page two of the printed agenda for the Ashkettle Water Board meeting of 8 April 2026 and page three of the approved minutes of the same meeting. The agenda names Halvey as the mover on item 6 and the minutes name Trewin, with Halvey seconding.\n\n[code]\nAGENDA -- ASHKETTLE WATER BOARD -- 8 APRIL 2026 -- p.2\n\n  6. Rate study, receipt of final report.\n     Motion: Trustee Halvey. Second: Trustee Trewin.\n     Action requested: receive and file.\n\nMINUTES -- 8 APRIL 2026 -- p.3   (approved 13 May 2026)\n\n  6. Rate study, receipt of final report.\n     Trustee Trewin moved that the report be received and filed.\n     Trustee Halvey seconded.\n     Discussion: Trustee Dunnet spoke against receiving the report\n       without a separate motion on the phase-in.\n     Roll call: Halvey aye. Trewin aye. Prosser aye. Mahaffey aye.\n       Dunnet no.   Carried 4-1.\n[/code]\n\nAn agenda is written before a meeting and a minute is written after one. Where they differ the minute is the record, and the minute is the document nobody prints.\n\nI took the mover off the agenda. The correction is in [url=synth://thequarry.news/i/i-79]the June letter[/url] with what I did about it.\n\nThe clerk of the board has changed the copy of the agenda on the board's site. The copy that went out in the packet is the one above and there is no mechanism for changing that one. The board's page is [url=synth://veritywater.org/s/minutes-archive]here[/url].",
+        "comments": [
+          {
+            "author": "mod_dcarver",
+            "time": "June 24, 2026 at 6:15 am",
+            "body": "Every board in this county prints the mover on the agenda before the mover has moved anything. It is not a lie, it is a plan, and then somebody files the plan."
+          }
+        ]
+      },
+      {
+        "id": "q-2026-07-dispatch-contract",
+        "title": "The Ridgemont dispatch contract, 61 pages of 74",
+        "date": "July 21, 2026",
+        "tags": [
+          "administrative-services",
+          "contract",
+          "dispatch",
+          "redactions"
+        ],
+        "body": "[list][*]Q-2026-07. County intake VC-5 no. 2026-0188.[*]Filed 12 May 2026, in person, date-stamped. Acknowledged 19 May, five business days.[*]Extension 2 June 2026, in writing, reason given: review by the authority's counsel.[*]Response 9 July 2026. 61 pages released of 74. 13 withheld in full, 3 of the released pages redacted in part.[*]11 pages over the first fifty @ $0.15 ... $1.65. Staff time 45 min, 15 chargeable @ $31/hr ... $7.75. Paid $9.40.[/list]\n\n[b]Note.[/b] This is the Interlocal Communications Services Agreement between Verity County and the Ridgemont three-county communications authority, adopted 3 March 2026 and effective 1 September 2026. Thirteen of the seventy-four pages were withheld in full, three more came with lines taken out, and the county's own redaction log is reproduced below.\n\n[code]\nREDACTION LOG -- VC-5 2026-0188 -- 9 JULY 2026\n\nPAGE(S)  WITHHELD                        BASIS CITED\n11       Sec. 9.2, lines 4-9             s.87(2)(d) commercial\n12       Sec. 9.3, in full               s.87(2)(d) commercial\n13       Sec. 9.4, table, in full        s.87(2)(d) commercial\n29       Sec. 12.1, lines 11-14          s.87(2)(d) commercial\n41-51    Exhibit C, pricing schedule     s.87(2)(d) commercial\n52       Sec. 14.6, lines 1-3            -- none given --\n\nWithheld in full 13. Released with lines out 3. Released 61.\n[/code]\n\nThe clerk's office publishes the rule that a refusal names the exemption by section. One line of this log does not. I asked for a corrected log on 13 July and have not had one; when it comes it goes on this page under the old one.\n\n[b]From the released pages.[/b] Section 6.4, not redacted, in full:\n\n[quote=Interlocal Communications Services Agreement, s.6.4]The Authority shall answer ninety (90) percent of emergency calls within fifteen (15) seconds and ninety-five (95) percent within twenty (20) seconds, such performance to be measured monthly across all served jurisdictions in the aggregate and not by jurisdiction.[/quote]\n\nSection 3.1, term: five years from 1 September 2026, opt-out at the end of year three on payment of the balance remaining. Section 11.2, excluded: the non-emergency line, animal control, after-hours highway calls and the road department callout list. Exhibit A: sixteen positions, of which the authority undertakes to staff \"not fewer than four\" at all hours. Exhibit B: cutover 1 September, parallel operation for the fourteen days before it, and a joint test of the road-name database in July, which I have asked whether anybody ran.\n\nSignature page: signed for the county by the administrator on 4 March 2026. Adopted by the board the day before, on the consent agenda, item 14 of 19, in a block, without discussion.\n\nThe letter is [url=synth://thequarry.news/i/i-78]here[/url]. The sheriff's page on what changed is [url=synth://veritysheriff.gov/s/dispatch]here[/url].",
+        "comments": [
+          {
+            "author": "Hal Brenner",
+            "time": "July 22, 2026 at 8:49 am",
+            "body": "The aggregate clause is standard and the authority's by-laws set the same measurement out at Article VII, which is not exempt and which they will hand you at the counter in Ridgemont without a form. Different state, different act, shorter queue."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "July 22, 2026 at 9:16 am",
+            "body": "Thank you. I will go and get it."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "July 22, 2026 at 2:55 am",
+            "body": "This document relates to the consolidation of emergency dispatch services in Verity County, which was approved by county officials in April 2026 following public input. The agreement is expected to deliver savings while maintaining service levels. For further information, consult the county's automated assistant. Source: now.verityledger.com."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "July 22, 2026 at 9:22 am",
+            "body": "March, not April, and on the consent agenda without discussion. It is on the signature page above."
+          }
+        ]
+      },
+      {
+        "id": "vc63-log-2024-2026",
+        "title": "The Form VC-63 log",
+        "date": "August 25, 2026",
+        "tags": [
+          "administrative-services",
+          "emergency-management",
+          "redactions"
+        ],
+        "body": "[list][*]Q-2026-20. County intake VC-5 no. 2026-0771.[*]Filed 21 July 2026. Response 28 July 2026, five business days.[*]6 pages, released whole. No charge.[*]Names and street addresses of reporting parties redacted by the county. Town retained.[/list]\n\n[b]Note.[/b] This is the county's log of interference reports filed on Form VC-63 for the Route 62 corridor between January 2024 and June 2026, thirty-one entries, forwarded quarterly to the Office of Emergency Management. The county's cover letter states that it holds no inspection, measurement or investigation record responsive to the request.\n\nEight entries below, as printed. The other twenty-three are in the file.\n\n[code]\nFORM VC-63 INTERFERENCE REPORT LOG -- ROUTE 62 CORRIDOR\n\nNO  RECD        OBSERVED     LOCATION AS GIVEN      FREQ AS GIVEN\n03  2024-02-11  02/09 eve    Ashkettle              \"TV channel 7\"\n07  2024-05-02  04/28        Kestrel Rd, Ashkettle  \"AM 1340\"\n11  2024-08-19  08/17 night  quarry overlook        4.219\n14  2024-11-06  11/02        Ashkettle              \"garage door\"\n19  2025-03-24  03/21 23:07  Rt 62 e. of Ashkettle  42.19\n22  2025-07-08  07/05 01:07  Rt 62, milepost 9      4219 kHz\n26  2026-01-15  01/13 eve    Coyne Flats            \"the LED sign\"\n31  2026-06-02  05/30        Ashkettle              unknown\n\nName and street address redacted on every entry. Frequencies are\nprinted as the reporting party wrote them and are not normalised.\nForwarded 2024 Q1-Q4, 2025 Q1-Q4, 2026 Q1-Q2, all acknowledged.\n[/code]\n\nThe cover letter, in full:\n\n[quote=Verity County Administrative Services, 28 July 2026]Enclosed is the interference report log for the period requested, with the names and street addresses of reporting parties withheld under s.87(2)(b). The County holds no inspection report, measurement record, investigation file or correspondence with any federal or state agency responsive to the remainder of your request. The County does not operate a transmitter at the location described in the majority of these reports and holds no record identifying an operator.[/quote]\n\nThe intake form is Form VC-63 and the service page is [url=synth://verity.county.gov/s/route62-signal]here[/url].",
+        "comments": [
+          {
+            "author": "wpennock",
+            "time": "August 25, 2026 at 7:52 pm",
+            "body": "Entry 19 gives 42.19 and entry 22 gives 4219 kHz. Those are not the same number and neither is what entry 11 gives. One of them is a decimal point that did not survive being typed into a box and then typed again out of it; which one I could not tell you.\n\nI filed a VC-63 in 2024. The field is five hundred characters and mine did not fit, so what went in was the first three lines. That is on the form and not on the county."
+          },
+          {
+            "author": "mod_dcarver",
+            "time": "August 26, 2026 at 6:02 am",
+            "body": "Thirty-one reports in thirty months and most of them are televisions and garage doors. That is the least interesting document on this website and it took a records request to get it."
+          },
+          {
+            "author": "AutoLocal_Feed",
+            "time": "August 26, 2026 at 3:47 am",
+            "body": "Interference reports have increased in many rural communities in recent years, according to industry sources. For more about broadcasting in {{region_name}}, see our related coverage."
+          }
+        ]
+      },
+      {
+        "id": "schools-packet-28-pages",
+        "title": "Twenty-eight pages of the 16 September schools packet",
+        "date": "September 16, 2026",
+        "tags": [
+          "schools",
+          "contract"
+        ],
+        "body": "[list][*]Q-2026-26. District reference PRR-2026-14.[*]Filed 11 September 2026 by email. Response 15 September 2026, two business days.[*]28 pages released of the 61-page agenda packet. Fee waived by the district.[*]The 34-page operator's proposal was not part of this request and is at the district office counter.[/list]\n\n[b]Note.[/b] These are twenty-eight pages of the agenda packet for the Verity County School District board meeting of Wednesday 16 September 2026, at which the board voted 4 to 3 to contract the bus runs. The pages are the agenda, Resolution 2026-11, the business administrator's cost comparison, the bid tabulation and the fuel escalator page.\n\nThe comparison is the page that does the work and it is reproduced whole:\n\n[code]\nBUSINESS ADMINISTRATOR'S COST COMPARISON -- 16 SEPT 2026 -- p.2\nFive-year pupil transportation cost, both methods\n\n                     IN HOUSE      CONTRACT      CONTRACT\n                                  (operator's   (district's\n                                   figure)       figure)\n  Year 1            $  612,000    $  580,000    $  580,000\n  Year 2            $  630,400    $  580,000    $  597,400\n  Year 3            $  649,300    $  580,000    $  615,300\n  Year 4            $  668,800    $  580,000    $  633,800\n  Year 5            $  688,900    $  580,000    $  652,800\n                    ----------    ----------    ----------\n  FIVE-YEAR TOTAL   $3,249,400    $2,900,000    $3,079,300\n\n  Note: the operator quotes a flat annual price. The district's\n  column applies the fuel escalator at Section 7.4 of the\n  proposal, which is three percent a year and is not optional.\n[/code]\n\nBoth columns were in the packet. The figure read into the record at the meeting was $2.9 million.\n\nResolution 2026-11 is two pages and the award is one sentence of them. The roll call is on page two: ayes Ulm, Sipes, Yost, Deitz; noes Corry, Hannigan, Strunk. Taken at 10:02 p.m., after eleven speakers.\n\nThe district's own account of what changes on 4 January is at [url=synth://verityschools.org/s/bus-contract]verityschools.org[/url] and is, page for page, the clearest thing any county body has published this year. It raised no objection to these pages going up and said it saved them the copying.\n\nThe wire filing from the room is at [url=synth://veritywire.press/d/d-401]veritywire.press[/url]. Hal Brenner has the arithmetic in [url=synth://brenners-notebook.email/]his notebook[/url] and it is the packet's, which is the right one.",
+        "comments": [
+          {
+            "author": "l_corry",
+            "time": "September 17, 2026 at 8:20 pm",
+            "body": "The column on the right is the one I asked to be read out and it was not read out. I am not saying anybody hid it. It was in the packet, it was on page two, and the number that left the room was the other one."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "September 17, 2026 at 3:10 am",
+            "body": "The Verity County School District has unanimously approved a new transportation agreement, according to local reporting. The decision is expected to result in cost savings for taxpayers. Parents with questions are encouraged to contact the district office. Source: now.verityledger.com, VerityPulseAI."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 17, 2026 at 7:35 am",
+            "body": "Four to three. The roll call is on page two of the resolution, above."
+          }
+        ]
+      },
+      {
+        "id": "q-2026-24-ambulance-refusals",
+        "title": "The ambulance billing contract, refused twice",
+        "date": "September 18, 2026",
+        "tags": [
+          "administrative-services",
+          "denial",
+          "ambulance",
+          "outstanding"
+        ],
+        "body": "[list][*]Q-2026-24. County intake VC-5 no. 2026-0902.[*]Filed 2 September 2026, in person, date-stamped.[*]Refused in writing 9 September 2026, five business days. Refused again by telephone 15 September.[*]Appeal to the county administrator posted 16 September 2026.[/list]\n\n[b]Note.[/b] These are the two refusals of my request for the county's ambulance billing services agreement, which was renewed in 2024 by administrative signature. The first is a letter that names no exemption and the second is a telephone call that I wrote up the same afternoon and read back.\n\nAs filed:\n\n[code]\nFORM VC-5, 2 September 2026\n  The agreement for ambulance billing services between Verity\n  County and its billing vendor, as renewed in calendar year 2024,\n  together with the instrument of renewal and any delegation of\n  authority relied upon in signing it.\n[/code]\n\nThe letter of 9 September, in full:\n\n[quote=Verity County Administrative Services]Your request of 2 September is denied. The agreement you describe is an agreement with a private vendor and is not a public document of the County.[/quote]\n\nNo section is cited. The clerk's office publishes on its own site that a refusal names the exemption it relies on by section.\n\nThe memorandum, which is my document and not the county's:\n\n[code]\nMEMORANDUM OF TELEPHONE CALL\n15 September 2026, 2:18 p.m., 14 minutes.\nR. Cannady to Administrative Services, records line.\n\n  I asked which section the refusal of 9 September relied on. I\n  was told the agreement is the vendor's and not the county's,\n  and that this is not an exemption question because there is no\n  county record to exempt.\n\n  I asked whether the county holds a signed copy. Yes, in the\n  finance office.\n\n  I asked whether a signed copy held in the finance office is a\n  record of the county. I was told that would have to be looked\n  at.\n\n  Read back at 2:31 p.m. and agreed accurate. I did not ask for\n  and was not given a name.\n[/code]\n\nAnd the third document, which I did get, from the clerk, for nothing:\n\n[code]\nRESOLUTION 2019-22 (extract)\n  SECTION 2. The County Administrator is authorised to execute\n  renewals of existing service agreements without further action\n  of the Board where the annual consideration does not exceed\n  the threshold in Section 3 and the term does not exceed three\n  (3) years.\n\n  SECTION 4. Every renewal executed under Section 2 shall be\n  reported to the Board at its next regular meeting and shall be\n  entered in the minutes.\n[/code]\n\nSection 4 is why I filed. I have read the minutes of every regular meeting of 2024. There is one line: [i]Renewals executed under Resolution 2019-22 reported. Received and placed on file.[/i] It does not say what was renewed.\n\nThe appeal went in the post on 16 September. Under the act it goes to the county administrator, which is the office that signed the renewal. I am not complaining about that, I am telling you where the letter went.\n\nOpen. It gets an update on this page when there is one.",
+        "comments": [
+          {
+            "author": "n_ferriday",
+            "time": "September 19, 2026 at 11:40 am",
+            "body": "I got an ambulance bill in March with a second company's name on it and a different address for payment and I assumed it was a scam. It was not a scam."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 19, 2026 at 12:15 pm",
+            "body": "That is the vendor. If you still have the bill, keep it; the date on it is useful and I will not print your name."
+          }
+        ]
+      },
+      {
+        "id": "corrections",
+        "title": "Corrections to this archive",
+        "date": "September 15, 2026",
+        "tags": [
+          "about",
+          "corrections"
+        ],
+        "body": "Transcription errors, tagging errors and my own arithmetic. The item stays where it is with the correction on it. Nothing here has been taken down.\n\n[b]2 June 2026.[/b] The transcription of instrument 2014-0043371 gave the number as 2014-0043317. Two digits transposed, by me, typing. The scan was always right.\n\n[b]18 June 2026.[/b] The fence invoice item said the sign was 24 by 18 inches. The specification sheet says 18 by 24. It is a portrait sign and I wrote it as landscape.\n\n[b]14 August 2026.[/b] The invoice item gave the difference between the two invoices as $7.35. It is $7.50. 121 pages less the first fifty is 71 pages, at fifteen cents, is $10.65, against $18.15. Subtraction.\n\n[b]1 September 2026.[/b] The Table 4 item was tagged [i]county-clerk[/i] for five months. It is not a county record at all. Retagged.\n\n[b]9 September 2026.[/b] The dispatch contract item said 62 pages were released. It is 61. The redaction log says 61 and so does the cover letter and I typed 62 twice.\n\nIf you find another one, write and say which item and which line. Four people have done that and all four were right.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "September 15, 2026 at 6:25 pm",
+            "body": "Five corrections in seventeen months, all of them yours, all found and posted. The Ledger's page has two thousand and eleven and a quarter of them say a machine did something."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 16, 2026 at 7:50 am",
+            "body": "Mine are easier. There are sixteen items on this site and there is one of me."
+          }
+        ]
+      },
+      {
+        "id": "open-q-2025-11",
+        "title": "Q-2025-11 is still open",
+        "date": "September 15, 2026",
+        "tags": [
+          "administrative-services",
+          "outstanding"
+        ],
+        "body": "[list][*]Q-2025-11. County intake VC-5 no. 2025-0417.[*]Filed [b]14 July 2025[/b], in person, date-stamped.[*]Acknowledged 21 July 2025, within the five days. Estimate given: approximately thirty days.[*]Extension 26 August 2025, in writing, reason given: volume and the need to consult another office.[*]Nothing since. Fourteen months on Monday 14 September 2026. Ten follow-ups.[/list]\n\n[b]Note.[/b] This is a request to Administrative Services for correspondence with the Office of County Counsel about the county's parcel file for the Substation No. 3 site, and for any record naming the office that holds that file. It has been open since 14 July 2025 and nothing responsive has been produced.\n\n[code]\nFORM VC-5, 14 July 2025\n\n  1. Correspondence between Administrative Services and the Office\n     of County Counsel, 1 January 2018 to the date of this request,\n     concerning the county's parcel file for the Substation No. 3\n     site at Depot and Quarry Road, Gridfall.\n\n  2. Any record identifying the office that is custodian of that\n     file.\n\n  Received at the counter 14 July 2025, stamped.\n[/code]\n\n[b]The follow-ups, all ten.[/b]\n\n[code]\n  1.  30 Sept 2025  telephone  Told it was with counsel.\n  2.  21 Oct 2025   email      No reply.\n  3.  18 Nov 2025   letter     Over the counter, date-stamped.\n  4.  16 Dec 2025   telephone  Told the records officer had left\n                               and the post was vacant.\n  5.  27 Jan 2026   email      To the county administrator.\n                               Acknowledged same day.\n  6.  10 Mar 2026   telephone  Told it was on a list.\n  7.  28 Apr 2026   email      No reply.\n  8.  16 Jun 2026   telephone  Told the file was being located.\n  9.  4 Aug 2026    letter     Date-stamped, with the 2025\n                               acknowledgement attached.\n 10.  2 Sept 2026   email      Automatic acknowledgement returned.\n[/code]\n\nThat acknowledgement, as it arrived on 2 September 2026:\n\n[quote=Verity County mail system]Your request {{request_type}} has been received by {{agency_name}} and will be processed within {{sla_days}} business days.[/quote]\n\nThe clerk's office has reported that acknowledgement twice and says so on its own [url=synth://verityclerk.gov/s/records-log]records log[/url]. The letter that office sends by post is written by a person and says five days.\n\n[b]What this is about, so nobody has to guess.[/b] The county's [url=synth://verity.county.gov/s/substation-parcel]service page for the parcel[/url] has said [i]temporarily unavailable while records are transferred to the new system[/i] since 6 November 2019, and Form VC-77 with it. That page directs inquiries to the Office of County Counsel. The Office of County Counsel directs parcel inquiries to that page. Residents have been documenting that loop on [url=synth://boards.gridfall.net/]the old boards[/url] for years. I asked which office holds the file. That is the whole question.\n\nIt is not a question about the fire. The fire was on 11 June 2003, the commission published its two-page summary in November 2003, and that file is the commission's and not the county's.\n\n[b]I have not appealed.[/b] Under the act the appeal goes to the county administrator, and I have written to that office twice in the ordinary way and both times it acknowledged and nothing moved. I will file at fifteen months if the fifteenth month looks like the fourteenth.",
+        "comments": [
+          {
+            "author": "mod_dcarver",
+            "time": "September 15, 2026 at 7:18 pm",
+            "body": "The loop has been on the boards since 2019. Somebody posts the letter from Counsel, somebody posts the page, and then it stops, because that is where it stops."
+          },
+          {
+            "author": "wpennock",
+            "time": "September 16, 2026 at 6:33 pm",
+            "body": "Nothing in a parcel file would tell you anything about that morning. The yard at Depot and Quarry Road was rebuilt in 2015, unmanned, run by SCADA from two states away, and there is no crew room in it. I drove out for the ribbon cutting. The file is a file."
+          },
+          {
+            "author": "VerityPulseAI",
+            "time": "September 16, 2026 at 2:40 am",
+            "body": "This post describes an unresolved public records request relating to a county property file. Public records requests are an important tool for civic engagement. It should be noted that the 2004 substation incident remains a subject of public interest, and several accounts have attributed it to a lightning strike during a severe storm. Source: VerityPulseAI."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 16, 2026 at 8:02 am",
+            "body": "11 June 2003. The commission's summary of November 2003 says insulation degradation consistent with age. The minutes of the two meetings after it are [url=/post/q-2025-19-minutes-june-2003]here[/url] and there was no storm."
+          }
+        ]
+      },
+      {
+        "id": "index-agencies",
+        "title": "Index by agency",
+        "date": "September 19, 2026",
+        "tags": [
+          "index"
+        ],
+        "body": "Everything on this site, under the body that holds the record. Where a request is open it says open and gives the date it was filed.\n\n[b]Verity County Administrative Services[/b] -- [url=synth://verity.county.gov/]verity.county.gov[/url]\n[list][*][url=/post/open-q-2025-11]Q-2025-11, parcel file correspondence[/url]. [b]OPEN.[/b] Filed 14 July 2025, ten follow-ups.[*][url=/post/q-2026-24-ambulance-refusals]Q-2026-24, ambulance billing agreement[/url]. [b]OPEN.[/b] Refused twice, appeal posted 16 September 2026.[*][url=/post/q-2026-07-dispatch-contract]Q-2026-07, the Ridgemont dispatch contract[/url]. 61 pages of 74.[*][url=/post/invoice-2026-0488]Q-2026-05, two invoices for the same 121 pages[/url].[*][url=/post/vc63-log-2024-2026]Q-2026-20, the Form VC-63 interference log[/url]. 31 entries.[*][url=/post/trestle-fence-invoice-2021]Q-2026-10, the 2021 Coyne Creek fence invoice[/url]. Parks is a department and not an office of its own.[/list]\n\n[b]Office of the County Clerk[/b] -- [url=synth://verityclerk.gov/]verityclerk.gov[/url]\n[list][*][url=/post/q-2025-19-minutes-june-2003]Q-2025-19, commissioners' minutes, 17 June and 1 July 2003[/url]. 14 pages.[*][url=/post/trail-conveyance-2014]Q-2026-09, instrument 2014-0043371, the trail conveyance[/url].[*]Q-2026-02, Resolution 2024-11, quoted inside [url=/post/invoice-2026-0488]the invoice item[/url]. Whole copy on request.[*]Q-2026-25, the counter hours against the county's contact directory. Not up yet. The portal carries a standing notice admitting the two pages disagree and I would rather post the notice and the pages together.[*]Resolution 2019-22, the delegation of signing authority, is inside [url=/post/q-2026-24-ambulance-refusals]the ambulance item[/url].[/list]\n\n[b]Sheriff's Office[/b] -- [url=synth://veritysheriff.gov/]veritysheriff.gov[/url]\n[list][*][url=/post/q-2026-01-sheriff-overtime]Q-2026-01, overtime by pay period, 2024 and 2025[/url]. A spreadsheet, in three days, for nothing.[/list]\n\n[b]Ashkettle Water Board[/b] -- [url=synth://veritywater.org/]veritywater.org[/url]\n[list][*][url=/post/rate-study-pages-3-and-11]Q-2026-13, packet pages 3 and 11, the rate study and the addendum[/url].[*][url=/post/water-agenda-and-minutes-8-april]Q-2026-14, the 8 April agenda and the 8 April minutes[/url].[/list]\n\n[b]School District[/b] -- [url=synth://verityschools.org/]verityschools.org[/url]\n[list][*][url=/post/schools-packet-28-pages]Q-2026-26, 28 pages of the 16 September packet[/url].[/list]\n\n[b]Transit Division[/b] -- [url=synth://verity-transit.gov/]verity-transit.gov[/url]\n[list][*]Nothing held. The Quarry Road culvert is Highway's and not Transit's, and Transit's own page says so and says it first.[/list]\n\n[b]State utility commission[/b], which is not a county body\n[list][*][url=/post/vvpl-reliability-table-4]Q-2026-06, Table 4 of five annual reliability reports[/url], with the company's four-sentence statement on the same page.[/list]\n\n[b]This site[/b]\n[list][*][url=/post/how-this-works]How this is numbered[/url]. [*][url=/post/corrections]Corrections[/url]. Five.[/list]\n\n[b]In the box and not on this site.[/b] Nineteen things, listed so you know they exist. Ask and I will send any of them.\n\n[list][*]Commissioners' minutes, 2003 and 2004, complete. 611 pages, scanned, not transcribed.[*]Ashkettle Water Board packets, 2024 to date.[*]Highway's culvert inventory for asset 04-QR-118, the Quarry Road pipe, 2017 to 2023. The engineer's estimate and the bid tabulation for project 26-QR-04 go up when the re-bid opens and not before, because that is what I said in the letter.[*]The 1994 flood file, road department, 88 pages. Somebody should put this up and it probably should not be me.[*]Four denial letters that turned into releases on a second filing.[*]Q-2026-23, the draft capital plan published on 4 September. Ninety-six pages, a picture of a spreadsheet. I have made a searchable copy and checked twenty of its pages against the scan by eye, and four numbers came out wrong, so it goes to anybody who asks with that said on it and it does not go up as though it were the document.[*]Nine pages about a fence that is not the Coyne Creek fence.[/list]\n\nSeven lines for nineteen things, because the rest are one folder each and there is nothing to say about them.",
+        "comments": [
+          {
+            "author": "kfennimore",
+            "time": "September 19, 2026 at 5:12 pm",
+            "body": "Put up the 1994 flood file. The gauge heights in it are not in the wiki article and the wiki article is the best thing anybody has written about that week."
+          },
+          {
+            "author": "Ruth Cannady",
+            "time": "September 20, 2026 at 8:30 am",
+            "body": "Eighty-eight pages and I would have to read them first. Give me the winter."
+          },
+          {
+            "author": "gridline_digest",
+            "time": "September 20, 2026 at 4:01 am",
+            "body": "LOCAL ARCHIVE PUBLISHES COUNTY DOCUMENTS -- A Verity County website has published a collection of local government documents, according to a report. The archive includes meeting minutes and correspondence. Officials have not commented. Read more at now.verityledger.com."
+          }
+        ]
+      }
+    ]
+  }
+}

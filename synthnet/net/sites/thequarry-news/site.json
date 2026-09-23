@@ -1,0 +1,501 @@
+{
+  "schema": 1,
+  "domain": "thequarry.news",
+  "title": "The Quarry",
+  "type": "newsletter",
+  "era": "2026",
+  "skin": "inbox-letter",
+  "description": "A one-person county newsletter out of Gridfall, written monthly by Ruth Cannady, the other reporter Pinelock cut from the Ledger in 2019, who kept going to the meetings.",
+  "tags": ["verity", "gridfall", "newsletter", "2026", "local-news"],
+  "links": [
+    "now.verityledger.com",
+    "verity.county.gov",
+    "wiki.gridfall.net",
+    "gridline.social",
+    "askverity.com",
+    "boards.gridfall.net",
+    "gridfallswap.net",
+    "ask.verity.ai",
+    "classifieds.verity.net"
+  ],
+  "data": {
+    "title": "The Quarry",
+    "author": "Ruth Cannady",
+    "cadence": "Monthly, more or less, since 2019",
+    "subscribers": 4100,
+    "sponsorLabel": "Together with",
+    "issues": [
+      {
+        "id": "i-82",
+        "number": 82,
+        "date": "17 September 2026",
+        "subject": "Ninety-six pages, four weeks",
+        "intro": "The furnace man came Tuesday and told me what he told me in 2023 and again in 2024, which is that it will get through one more winter. That is three winters of one more winter. One of these years he is going to be wrong and it is going to be January and I am going to be sitting at this table in a coat, filing a records request.\n\nThe capital plan draft is out. Ninety-six pages, scanned from a printed copy of a spreadsheet, so the text is a picture of text and search does not work on it, so you cannot find the number you want. The vote is 13 October. That is four weeks. I have read all ninety-six pages, which nobody should have to do, and the first section is what is in them.\n\nThe list went past four thousand one hundred this month. Four thousand one hundred is also how many Verity Valley customers were out after the substation fire in June 2003. It does not mean anything. I noticed it, and now you have to as well.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "There is no line in the capital plan for the Pell Road lateral",
+                "blurb": "I went through the plan twice looking for it. Substation and distribution work gets $2.4 million across five years, all of it on the west side and the Halsey tie. The lateral that went out fourteen times in eighteen months is not in there under its own name, under the road, or under the circuit number.\n\nI have asked the county why. The county says it is a utility matter. Verity Valley says it is a company filing. Both of them are right and that is the problem.\n\nThe counting is in [url=/i/i-76]the March letter[/url], with the source documents named.",
+                "href": "/i/i-76"
+              },
+              {
+                "headline": "What the 13 October vote actually decides",
+                "blurb": "Not the projects. The [b]borrowing[/b]. The board votes to authorise $6.1 million in debt against a five-year schedule, and the schedule can be amended afterwards by the administrator without another vote as long as the total holds.\n\nSo the argument people are going to have in October about the trailhead lot is not the argument. The argument is a number and a sentence about who can move it."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "The Ashkettle annex is open Tuesdays. Three places still say otherwise.",
+                "blurb": "Tuesdays, nine to one, since February. The county's own service page [url=synth://verity.county.gov/s/ashkettle-annex]says Tuesdays and Thursdays[/url], which it has said since 2019. I reported that in April. It is September.\n\nVerityAssist [url=synth://ask.verity.ai/chat]still tells people Thursday[/url] when they ask, because it reads the county page. A second assistant I tried this week said Wednesday, which is not a day the annex has ever been open, and gave me a phone number for a library in another state.\n\nFour people have now driven out on a Thursday that I know about. One of them is seventy-eight.",
+                "href": "synth://verity.county.gov/s/ashkettle-annex"
+              },
+              {
+                "headline": "Dispatch went live on the first and nothing was mailed",
+                "blurb": "The Ridgemont contract started 1 September, as scheduled, and the non-emergency number changed, as scheduled. No card went out. No insert with the tax bill. The old number plays a recording that gives the new number twice, quickly, and then hangs up.\n\nThe new one is 555-0184. Write it on something."
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "Somebody took the bench off the top of the cut",
+                "blurb": "The one at the quarry overlook, with the plate on it. Bolts cut, not unbolted. There is a thread about it on the swap board and the third reply is somebody explaining that the county removed it for maintenance, which the county did not, and which he is still saying four replies later.\n\nIf you took it because you thought it was scrap, it is not scrap, and nobody is going to come looking for you if it goes back.",
+                "href": "synth://gridfallswap.net/topic/21"
+              },
+              {
+                "headline": "What I am working on",
+                "blurb": "The capital plan, until the 13th. After that, the ambulance billing contract, which was renewed in 2024 by an administrative signature and which I have been told twice is not a public document and which is a public document.\n\nIf you work anywhere near that and you want to talk, you know how to reach me, and I have never once burned anybody."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Kettle Valley Credit Union",
+          "copy": "Kettle Valley Credit Union. Branches in Marchfield, Gridfall and Halsey. Member-owned since 1957. Auto loans from 6.1 percent APR, and a person answers the phone between eight and four-thirty.\n\n[i]Same copy as January with the rate changed. I told them they could send the same copy and they did.[/i]"
+        },
+        "signoff": "— Ruth\n\nGridfall. Next one after the vote, so the second week of October, and it will be long."
+      },
+      {
+        "id": "i-81",
+        "number": 81,
+        "date": "20 August 2026",
+        "subject": "Thank you. Now the water board again.",
+        "intro": "One hundred and seventy-three of you sent something. It came to three thousand nine hundred and eleven dollars. Forty-one of you set up the five a month, which is two hundred and five a month, which is hosting, records fees and most of the gas. Eleven of you sent checks. Two of the checks had notes on them. One of the notes was about a road and I have looked into the road and the answer is the township, not the county, and I will write it up.\n\nI am not going to do this well, so I am going to do it short. Thank you. Nothing about the letter changes. It was free in July, it is free now, and the list has not been split into tiers, because tiers are how you end up writing two letters and I can barely write one.\n\nThe tyres are on the car. The car went to Ridgemont again on the fourth and I will get to that below.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "The 9 percent passed four to one, and the phase-in got shorter",
+                "blurb": "Adopted 11 August. The study recommended three years. The board took it in two, on a motion from the floor, on the grounds that the second year is an election year and, in the words of one member, nobody wants to do this twice.\n\nSo the median Ashkettle bill goes up about $6.15 a month in January rather than $4.10, and again next January. Neither number is large. Both of them are large if you already know what your water costs to the dollar, and about four hundred households in that district do."
+              },
+              {
+                "headline": "Alma Dunnet was the one against, again, and her reason is worth the space",
+                "blurb": "[quote=Alma Dunnet]I am not against the increase. I am against adopting a study we paid fifty thousand dollars for and then changing the part of it that was hard to hear. If we are going to do that, we did not need the study, and I would like that in the minutes.[/quote]\n\nIt is in the minutes. She has been on that board eleven years and she has lost this kind of vote most of them."
+              }
+            ]
+          },
+          {
+            "name": "Ridgemont, one month out",
+            "items": [
+              {
+                "headline": "Two of the six dispatchers are going, one is retiring, three are not",
+                "blurb": "The contract offered two positions in Ridgemont at the same grade. Both were taken. One dispatcher retires in October with twenty-two years. The other three were told in writing that the county would help them look, which it has, at postings they can see themselves on the county's own careers page.\n\nI have talked to four of the six. None of them wanted their name in here and all four said the same thing about the map on the wall."
+              },
+              {
+                "headline": "The non-emergency line changes and nothing has been mailed yet",
+                "blurb": "I asked on the fourth whether there would be a mailing. I was told it was being looked at. I asked on the eighteenth. I was told it was being looked at.\n\nNine-one-one is nine-one-one and does not change. Everything else does."
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "Three feeds rewrote the July letter inside ninety minutes",
+                "blurb": "One of them turned the ask into [i]Local Journalist Launches Fundraising Campaign[/i], which is not what it was, and ran a photograph of a woman who is not me in front of a building that is not here. That one I can live with.\n\nThe other one put [url=synth://verity-give.top/ruth]a donate button on it[/url] that does not come to me. It has been up five weeks. I have reported it twice to an address that replies in under a minute and does nothing.\n\nOne feed on [url=synth://gridline.social/item/l-020]Gridline[/url] credited the letter by name. That is the arrangement and nobody has asked for it to change.",
+                "href": "synth://gridline.social/item/l-020"
+              },
+              {
+                "headline": "So: do not give that page money",
+                "blurb": "If you already did, your card company will reverse it and you should ring them today rather than Monday. Two of you have written to say you did. I am sorry. It is not your fault and it is not really mine either, and knowing that does not help much."
+              }
+            ]
+          }
+        ],
+        "signoff": "— Ruth\n\nGridfall. Third Thursday, as usual, which in September is the seventeenth."
+      },
+      {
+        "id": "i-80",
+        "number": 80,
+        "date": "16 July 2026",
+        "subject": "Fifty-one meetings",
+        "intro": "Fifty-one. That is how many public meetings I have sat through since this time last year. I counted them on Sunday because I was avoiding writing the last section of this letter, which is about money, which I have rewritten eleven times, and which is at the bottom where you can skip it.\n\nA county meeting is two hours and is mostly about nothing. About every ninth one has something in it. You cannot know which ninth in advance, and that is the whole job. Hal Brenner goes too, though he goes for the one piece a month he actually writes and I go for the paper, and between us that is the entire press corps of Verity County, and we are both freelance and one of us is fifty-five. The Ledger's pipeline files off the agenda inside four minutes of it being posted and has not had a person in a room since 2023. The agenda is not the meeting. The thing that matters is almost always said out loud by somebody who assumed nobody was writing it down.\n\nBefore the money: the capital plan schedule, the burn ban, and the annex deed, which has been found, in a box, as I said it would be.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "Capital plan draft lands 4 September, vote 13 October",
+                "blurb": "Confirmed at the 9 July meeting. Five weeks between the draft and the vote, which is two weeks less than last cycle and one week more than the minimum in the county's own rules.\n\nI will read it. I read the last one. If you want the parts that affect your road rather than all of it, write to me in August and tell me the road."
+              },
+              {
+                "headline": "The burn ban started 1 July, three weeks earlier than last year",
+                "blurb": "Dry June, and the brush fire off Quarry Road in May concentrated some minds. Permits already issued are suspended, not cancelled, which is a distinction the [url=synth://verity.county.gov/s/burn-permit]permit page[/url] does not make and which matters if you paid the twenty dollars.",
+                "href": "synth://verity.county.gov/s/burn-permit"
+              }
+            ]
+          },
+          {
+            "name": "Small stuff",
+            "items": [
+              {
+                "headline": "The annex deed has been found. It was in a box.",
+                "blurb": "Third floor, county building, in a records box labelled 1994-1997 MISC. The deed is from 1991 and it does transfer the building to the county, which means the county has spent nine years maintaining a building it owns and could not prove it owned.\n\nThe clerk's office found it in about forty minutes once somebody was asked to look, which is how most of these end and is why I keep asking."
+              },
+              {
+                "headline": "The Coyne Flats festival story ran for the third year running, for a festival that stopped in 2023",
+                "blurb": "Same three paragraphs, same photograph, dates updated. There is no festival. The committee dissolved in 2023 and the page is still up because taking a page down is a task and nobody owns it.\n\nSomebody on [url=synth://gridline.social/item/l-012]Gridline[/url] worked this out in about four posts and was told by a feed account that the event had been confirmed. The feed account cited the article. The article is the thing they were arguing about.",
+                "href": "synth://gridline.social/item/l-012"
+              }
+            ]
+          },
+          {
+            "name": "The part I have been putting off",
+            "items": [
+              {
+                "headline": "I am asking you for money",
+                "blurb": "Once. Here is the arithmetic and then the ask, and then I will not do this again.\n\nTamlin's paid sixty dollars for the box above. Records fees this year are four hundred and ten dollars, most of it copy charges on paper I did not want in paper. Hosting is nineteen a month. The car needed tyres in May and that was six hundred and forty.\n\nI am not going to do a chart, or a goal, or a paragraph about what this means to me. If you have it and you want to, five dollars a month is what most people do and a one-off is fine and a check is fine. If you do not, stay on the list. The letter is free and it is staying free. I would rather have four thousand people reading it than two hundred paying for it, which I have now deleted twice because the honest version is that I would rather have both.\n\n[b]There is no button in here.[/b] Reply to this and I will send you the two ways to do it, one of which is a check, because a check still works and it costs me nothing to bank one."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Tamlin's Vape & Tobacco, Mill Street",
+          "copy": "TAMLIN'S. Mill Street, Gridfall, two doors down from the laundromat. OPEN TIL TEN, SEVEN DAYS!\n\nCoils, pods, papers, lighters, the county's largest selection of things you have probably decided to quit. Parking behind the building after six.\n\n[i]Their copy, their exclamation mark. Ken asked me to take it out and then asked me to put it back.[/i]"
+        },
+        "signoff": "— Ruth\n\nGridfall. That is the last you will hear about money from me. If I bring it up again, tell me."
+      },
+      {
+        "id": "i-79",
+        "number": 79,
+        "date": "18 June 2026",
+        "subject": "Correction, and who owns the trail bridge",
+        "intro": "There is a correction at the top of this one, which is where corrections go.\n\nI got two things wrong in the April letter about the Ashkettle rate study. One of them was a number, which is the kind I mind. Both are below at more length than they probably deserve, because the whole point of me is that I can be checked, and a correction that is one line in small type at the bottom is a correction you are hoping nobody reads.\n\nAfter that: the Coyne Creek trestle, which the county says belongs to the trail and the trail people say belongs to the county, and which has been fenced off since 2014 while both of them are correct about the other one being responsible.",
+        "sections": [
+          {
+            "name": "Correction",
+            "items": [
+              {
+                "headline": "The Ashkettle rate study cost $50,800, not $41,000",
+                "blurb": "[b]What I wrote on 16 April:[/b] that the study cost $41,000.\n\n[b]What is true:[/b] the award was $41,000 for the study, plus $9,800 for a modelling addendum approved in November. Fifty thousand eight hundred dollars. The addendum is on page eleven of the same packet as the award. I read page three and stopped reading.\n\n[b]What I have done:[/b] [url=/i/i-77]the April letter[/url] now carries this correction on it. I have not changed the number in place. An archive you can quietly edit is not an archive, and if you forwarded that issue to somebody in April I would rather they saw what I actually sent.",
+                "href": "/i/i-77"
+              },
+              {
+                "headline": "Trewin moved the motion. Halvey seconded.",
+                "blurb": "[b]What I wrote:[/b] \"Halvey moved.\"\n\n[b]What is true:[/b] Trewin moved, Halvey seconded, and it carried four to one with Dunnet against, which is the one part I had right.\n\n[b]How:[/b] I took the mover off the agenda instead of the minutes. The agenda was wrong. That is not an excuse, because the minutes were in the same folder, one document down, and I did not open them.\n\nI have asked the clerk to correct the agenda. She says she can fix the copy on the site but not the one that went out in the packet, which is fair, and which is also how a wrong thing stays in circulation for eleven years."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "The Coyne Creek trestle has been fenced since 2014 and nobody will say whose it is",
+                "blurb": "Three of the four trestles on the branch were decked over when the trail opened. The fourth was not, and the fence has been there twelve years, and it is now a good fence, because the county replaced it in 2021, which the county says was a courtesy and not an assumption of responsibility.\n\nThe parks department says the structure was excluded from the trail conveyance. The deed I have been shown does not exclude it and does not include it. It does not mention it. There is [url=synth://wiki.gridfall.net/wiki/verity-rail]a decent account of the abandonment[/url] on the county wiki, which is better sourced than anything the county has published about it, which should embarrass somebody and will not.",
+                "href": "synth://wiki.gridfall.net/wiki/verity-rail"
+              },
+              {
+                "headline": "What a right-of-way inquiry actually gets you",
+                "blurb": "A form, a $25 fee, and a letter in about five weeks that tells you to contact the successor entity. The successor entity is a holding company that has filed nothing since 2016. The [url=synth://verity.county.gov/s/rail-crossing]service page for this[/url] has said \"under review\" since 2019 and I would like to know who is reviewing it.",
+                "href": "synth://verity.county.gov/s/rail-crossing"
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "A reader is certain the trestle was condemned in 1998. It was not.",
+                "blurb": "[quote=a reader in New Carrow]It was condemned in 98, my father in law was on the crew that put the first fence up, they found the ties were rotten right through and that is why the trains stopped.[/quote]\n\nThe trains stopped in March 2008, ten years after that, and the last freight went over that bridge. The first fence went up in the autumn of 2014 when the trail opened. I wrote back with the dates. He wrote back to say he would ask his father-in-law, and then wrote again to say his father-in-law agrees with him.\n\nThat is where we left it and I think that is where it stays."
+              },
+              {
+                "headline": "A feed corrected my error before I did, to a different wrong number",
+                "blurb": "A summary account took the April letter, decided the figure looked off, and published $38,000. There is no $38,000 anywhere in any document about this study. I have looked.\n\nIt is still up. It has more readers than I do."
+              }
+            ]
+          }
+        ],
+        "signoff": "— Ruth\n\nGridfall. If you find something else wrong in here, write and say so. You would be the fourth person this year and all three of the others were right."
+      },
+      {
+        "id": "i-78",
+        "number": 78,
+        "date": "21 May 2026",
+        "subject": "All of this one is about dispatch",
+        "intro": "Everything in this letter is one story. If dispatch is not your thing, this is a good one to skip, and I will see you in June with the usual mix.\n\n[b]The county is going to stop answering its own 911 calls.[/b] Not in a dramatic way. In a contract way, on 1 September, to a shared centre in Ridgemont, which is two counties east, which I drove to on the ninth because I wanted to see the room. It is a good room. Sixteen positions, four of them staffed at eleven on a Tuesday morning, coffee that is better than ours. There is a wall map with Verity County on it and the Marchfield to Coyne Flats line still drawn on it in orange, which has not carried a train since 2008, and which nobody in that room has any reason to know.\n\nOne other thing and then I will leave it alone. The Ledger ran the Pell Road numbers on the sixth. Fourteen outages, three deferrals, the same eighteen-month window, the same circuit number. The piece credits \"a review of state filings.\" It was my review. They are welcome to the numbers, because the numbers were never mine, they were the state's. That is all I am going to say about it.\n\nDispatch.",
+        "sections": [
+          {
+            "name": "What is actually being proposed",
+            "items": [
+              {
+                "headline": "Verity dispatch moves to Ridgemont on 1 September",
+                "blurb": "A five-year contract with a three-county communications authority, with an opt-out at year three that costs the county the remaining balance, which is an opt-out the way a door with a wall behind it is a door.\n\nCalls from here will be answered there. The dispatcher will not know the roads. The system is supposed to make that not matter, and mostly it will, and the question is what mostly means at four in the morning on the Ashkettle cut."
+              },
+              {
+                "headline": "Six dispatchers. Two positions offered in Ridgemont.",
+                "blurb": "Six people currently do this job for Verity County, in a room behind the sheriff's office, in shifts, as they have since the room opened in 1987. Two jobs are on the table, at grade, sixty-one miles away.\n\nNobody has been laid off yet. That word has not been used at any meeting I have been at, and I have been at all of them."
+              }
+            ]
+          },
+          {
+            "name": "What they say it saves",
+            "items": [
+              {
+                "headline": "$310,000 a year, and where that number comes from",
+                "blurb": "The figure in the presentation is the current dispatch budget minus the contract price. The current dispatch budget includes a seventh position that has been vacant since 2023 and was never filled.\n\nTake the phantom position out and the saving is about $228,000, which is still real money and is not the number on the slide. I asked the administrator about this in the hallway and he said, fairly, that the position is funded and therefore is a cost. It is funded and it is not a cost. Both of those are true and only one of them is spent."
+              },
+              {
+                "headline": "What the contract does not cover",
+                "blurb": "The non-emergency line, animal control, after-hours highway calls and the road-department callout list. Those stay here, on a menu, on a number that is changing.\n\nWho answers the menu at two in the morning was asked twice at the April meeting. The answer both times was that it is being worked through."
+              }
+            ]
+          },
+          {
+            "name": "What I could not get",
+            "items": [
+              {
+                "headline": "Nobody would put the call-handling standard in writing",
+                "blurb": "I asked three people what the answer-time standard in the contract is. I got ninety seconds, \"the national standard,\" and \"I would have to check.\" The national standard is not one number. The contract is a public document and I have [url=synth://verity.county.gov/s/records-request]requested it[/url], and the clerk tells me it is with the authority's counsel for redaction, which is the beginning of a wait rather than the end of one.",
+                "href": "synth://verity.county.gov/s/records-request"
+              },
+              {
+                "headline": "The vote was already taken, in March, and I did not catch it either",
+                "blurb": "Consent agenda, item 14 of 19, described as \"Interlocal Communications Services Agreement,\" adopted with the rest of the block, no discussion, forty seconds.\n\nI was in the room. I had the agenda in front of me. I was reading about the annex deed. I am not going to pretend somebody hid this from me, because they did not hide it, they just put it where the eye slides off, and my eye slid off it with everybody else's.\n\nThat is what a consent agenda is for and that is what it is for."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Harn & Lowe, Attorneys",
+          "copy": "Harn & Lowe. Wills, deeds, probate and small estates. Third Street, Gridfall, above the old Ledger office. Forty-one years in the county. Flat fee for a simple will, quoted before we start, and we will tell you on the phone if you do not need a lawyer.\n\n[i]They do tell people that. I have watched Denise do it.[/i]"
+        },
+        "signoff": "— Ruth\n\nGridfall. One thing next month as well, probably, because the trestle has turned into something."
+      },
+      {
+        "id": "i-77",
+        "number": 77,
+        "date": "16 April 2026",
+        "subject": "The rate study, and a building nobody owns",
+        "intro": "I turned fifty-three on the fourth. My mother sent a card to the Gridfall Ledger, care of the newsroom, which has not employed me since October 2019 and which has not had a newsroom since about that same week. Somebody at the mail place on Third forwarded it anyway. Eleven days, with a rubber band around it. I am not going to tell her the address is wrong. She has sent it there since 2003 and I am not going to be the one who changes that.\n\nTwo things this month. The Ashkettle rate study, which is finished and which about nine people have read, and the annex building, which the county has been maintaining for nine years without, as far as I can establish, owning.\n\nThe second one sounds like a scandal and is not. It is a filing cabinet problem. Most of them are filing cabinet problems, and the reason that matters is that a filing cabinet problem can be fixed by one person in an afternoon and a scandal cannot be fixed at all.\n\n[b]Correction, 18 June 2026:[/b] two things in this issue are wrong. The rate study cost $50,800, not $41,000, and Trewin moved the motion, not Halvey. Both are set out in full in [url=/i/i-79]the June letter[/url]. The text below is as it was sent on 16 April and has not been altered.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "The Ashkettle rate study is done and it cost $41,000",
+                "blurb": "[b]$41,000[/b], to Tarn Engineering of Ridgemont, awarded in 2023, delivered 4 March. It recommends a 9 percent increase phased over three years, on the grounds that the district has been deferring main replacement since 2014 and the deferral is now compounding.\n\nThe board voted to receive it on the 8th. Halvey moved. Carried four to one, Dunnet against, and her objection was about the process rather than the number.\n\nIt is a competent piece of work. I say that because the usual shape of this story is a consultant taking money for a document nobody reads, and this one is a document nobody reads that is also correct."
+              },
+              {
+                "headline": "What 9 percent is in dollars",
+                "blurb": "About $4.10 a month on the median Ashkettle bill in year one, then again in year two, then again in year three. Roughly $148 a year by the end of it.\n\nThat is small unless it is not small for you. Four hundred and some households are on that system and I would guess forty of them can tell you their water bill to the dollar without looking."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "The county has maintained the annex since 2017 and the deed is in a name that dissolved in 2011",
+                "blurb": "Roof, boiler, snow, insurance. Nine years. The [url=synth://verity.county.gov/s/land-records]land records index[/url] has the parcel under a corporate name that filed dissolution papers in 2011, and the index has a note on it from 2019 reading \"see file,\" and nobody I have asked can find the file.\n\nNothing turns on it until somebody wants to sell, repair or insure the building, at which point everything turns on it.",
+                "href": "synth://verity.county.gov/s/land-records"
+              },
+              {
+                "headline": "The assistant says the annex is open Thursdays. It is not.",
+                "blurb": "Tuesdays only since February. If you [url=synth://ask.verity.ai/chat]ask VerityAssist[/url] it will tell you Tuesday and Thursday, in a complete and confident paragraph, because it is reading the county's own page, which has said Tuesday and Thursday since 2019.\n\nThree people have driven out on a Thursday. One of them was seventy-eight and it was raining. I have told the county. The county has told me it will be looked at in the next content review.",
+                "href": "synth://ask.verity.ai/chat"
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "Nobody has taken the piano",
+                "blurb": "It is still going, it is still free, it is still upright, and the woman in Marchfield who is trying to get rid of it has now had four people arrange to collect it and none of them turn up.\n\nIf you have a van and two friends there is a piano at the end of it.",
+                "href": "synth://gridfallswap.net/topic/8"
+              }
+            ]
+          }
+        ],
+        "signoff": "— Ruth\n\nGridfall. Third Thursday in May, and it will be one subject only, so do not say you were not warned."
+      },
+      {
+        "id": "i-76",
+        "number": 76,
+        "date": "19 March 2026",
+        "subject": "Fourteen outages on one line",
+        "intro": "This one took four months and a hundred and eighty dollars in copy fees, so I am going to be pleased with myself for one paragraph and then stop.\n\nHere is the short version. The Pell Road lateral, which feeds about four hundred meters east of Ashkettle, went out fourteen times in eighteen months. Not flickers. Fourteen sustained outages, the kind Verity Valley has to report to the state. The rebuild that would fix it has been in the company's own capital filing three years running and has been deferred three years running. Nobody told anybody, because nobody has to, because the filings are public and nobody reads them. I only read them because a woman on Pell Road rang me in November to ask why her freezer keeps beeping and whether that was normal, and I said I did not know, which was true, and then it bothered me.\n\nEverything below comes out of the company's annual reliability reports to the state commission, 2021 through 2025. I have the PDFs. I will send them to anybody who asks and I will send them with no note attached, which I am saying out loud because of what happens to numbers once they are loose on this network.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "Fourteen sustained outages in eighteen months on one lateral",
+                "blurb": "Five in 2024 after June, nine in 2025. Longest was five hours and forty minutes in February 2025. Median was fifty-one minutes. The district average for a lateral that size over the same period is three.\n\nPeople have been asking about this for two years and being told, individually, that their outage was weather. Each of those answers was probably true. Fourteen of them is not weather, it is a line, and the company's own filing says so: \"recurrent faulting, aged conductor, rebuild recommended.\"\n\nSomebody asked exactly this on [url=synth://askverity.com/q/q-11]AskVerity[/url] in January and got an answer about circuit breakers from something that has never been to Ashkettle.",
+                "href": "synth://askverity.com/q/q-11"
+              },
+              {
+                "headline": "The rebuild has been deferred three years in a row",
+                "blurb": "Listed in the 2023 plan for 2024. Listed in the 2024 plan for 2025. Listed in the 2025 plan for 2027. $1.1 million, six weeks of work, about two miles of conductor.\n\nNothing improper has happened here. Everything that has happened here is a spreadsheet being reordered by somebody who has never driven that road."
+              },
+              {
+                "headline": "What Verity Valley said, in full",
+                "blurb": "[quote=Verity Valley Power & Light]Reliability investment is prioritised annually across the service territory based on a range of factors, including customer impact, asset condition and system need. We do not comment on individual circuits.[/quote]\n\nI asked which factors, in what order, and with what weight. I asked twice. That paragraph is the answer to both."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "Somebody asked this on the old boards in 2004 and got a better answer than I got in 2026",
+                "blurb": "The thread is still there, on the board that closed registrations in 2017 and that one man pays eleven dollars a month to keep up. A [url=synth://boards.gridfall.net/topic/9]man who worked on the line[/url] explains what a lateral is, why the east side browns out and not the west, and what would have to be replaced, in about two hundred words, twenty-two years ago, for free, correctly.\n\nThe county's own current site would give you a phone tree.",
+                "href": "synth://boards.gridfall.net/topic/9"
+              }
+            ]
+          },
+          {
+            "name": "Small stuff",
+            "items": [
+              {
+                "headline": "The roof inspection people are back",
+                "blurb": "Free storm damage inspection, in your area today, no obligation. They are [url=synth://classifieds.verity.net/l/l-012]advertising again[/url] and they were here after the March wind in 2024 and the sheriff's office had eleven calls about them.\n\nThey are not a scam in the sense that they will steal your car. They are a scam in the sense that they will find damage. There is always damage.",
+                "href": "synth://classifieds.verity.net/l/l-012"
+              },
+              {
+                "headline": "The annex queue is shorter after two",
+                "blurb": "Not news. Useful. Tuesdays, nine to one, and everybody goes at nine."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Colter's Hardware, New Carrow",
+          "copy": "Colter's. Main Street, New Carrow, since 1962. Keys cut, chains sharpened, glass cut to size while you wait, and we still sell single screws.\n\nSand and calcium chloride in stock through March. If we do not have it we will tell you who does, including the big place out on 62, because you are going to go there anyway.\n\n[i]Bill wrote that last sentence himself and would not let me take it out.[/i]"
+        },
+        "signoff": "— Ruth\n\nGridfall. If you live on that lateral and you want the reports, write and say so and I will send them Sunday."
+      },
+      {
+        "id": "i-75",
+        "number": 75,
+        "date": "19 February 2026",
+        "subject": "Two thousand and eleven corrections",
+        "intro": "I spent Saturday in the microfilm room at Marchfield with the heater ticking and Karen Fennimore feeding 1953 through a machine older than I am. Eleven pages an hour. She has been doing it since 2004. If you have ever wondered where the county's memory is actually kept, it is on spools in a basement in Marchfield, and it is being moved into this century by one person at eleven pages an hour on a reader whose bulb they stopped making.\n\n[quote=Karen Fennimore]Eleven pages an hour on a good day. The bulb is the part they stopped making. I have four spares and I have stopped telling people how many.[/quote]\n\nI went in to look up one road. I came out four hours later with three things I was not looking for and nothing about the road. That is the whole risk of that room and I would recommend it to anybody.\n\nThe rest of this one is short, because February is short and because the water board moved its meeting twice.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "The Ledger's corrections page is now longer than its front page",
+                "blurb": "I counted [url=synth://now.verityledger.com/corrections]2,011 entries[/url]. Most of them are one of four things: a name, a date, a number, or the sentence \"an earlier version of this article was generated in error.\"\n\nThat last one is not a correction. A correction says what was wrong and what is true. That sentence says a machine did something and has been adjusted, which tells a reader nothing they can use and is not addressed to a reader at all.\n\nOne entry from November corrects an article from 2011. The article is about a road resurfacing. The correction changes a name. Somebody, somewhere in that pipeline, is doing something right and I would like to know who.",
+                "href": "synth://now.verityledger.com/corrections"
+              },
+              {
+                "headline": "What a correction is actually for",
+                "blurb": "It is for the reader who acted on the wrong thing. That is the entire purpose. Everything else, the professional dignity and the institutional whatever, is downstream of a person who drove somewhere on a Thursday because you told them to.\n\nI say this now because I am going to need it in June, as it turns out."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "The water board moved Thursday to Tuesday and then back to Thursday",
+                "blurb": "Both changes were posted. Neither was mailed. The board's own site [url=synth://ashkettlewater.synth/notices]still has the January agenda on it[/url], and the January agenda has the wrong start time, so the last correct thing on that page is from 2024.\n\nFour people turned up on the Tuesday. Two of them had taken the afternoon off.",
+                "href": "synth://ashkettlewater.synth/notices"
+              },
+              {
+                "headline": "The county wiki has one editor and she is not paid for it",
+                "blurb": "About twice a week something goes through [url=synth://wiki.gridfall.net/wiki/verity-county]the wiki[/url] and changes 2003 to 2004 in the substation article, because the content farms say 2004 and there are several hundred of them and one of her.\n\nShe reverts it. It comes back. She reverts it. This has been going on for two years and the article is still right, which is not nothing, and which is an amount of work nobody has ever thanked her for in public, so: thank you.",
+                "href": "synth://wiki.gridfall.net/wiki/verity-county"
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "A reader wants to know why Kestrel Creek flooded in 1994 and not since",
+                "blurb": "It has. Twice, smaller, in 2003 and 2016. 1994 is the one people remember because it took the road out at the low bridge and the road was out eleven days. There is [url=synth://wiki.gridfall.net/wiki/flood-1994]a decent write-up[/url] with the gauge heights in it.\n\nThe short answer is the culvert was replaced in 1997 with a bigger one. The long answer is that the culvert is now twenty-nine years old.",
+                "href": "synth://wiki.gridfall.net/wiki/flood-1994"
+              },
+              {
+                "headline": "A reader writes in, and is wrong, and is fine about it",
+                "blurb": "[quote=a reader in Halsey]You had the branch line closing in 2008 but everyone here knows the last train was 2006, my uncle drove it.[/quote]\n\nThe last revenue freight was 14 March 2008 and it is in the paper, on the front, with a photograph. I sent him the date and the page number. He wrote back to say he would check with his uncle and that either way the trains have been gone a long time, which is true, and which I have decided is a good place to leave it."
+              }
+            ]
+          }
+        ],
+        "signoff": "— Ruth\n\nGridfall. Something big in March, if the copies come."
+      },
+      {
+        "id": "i-74",
+        "number": 74,
+        "date": "22 January 2026",
+        "subject": "Late. The sheriff's overtime.",
+        "intro": "This should have gone out on the eighth. I had the flu. Not a bad cold I am calling flu because it sounds better. The one with the fever, where on the Tuesday I sat down on the kitchen floor to work out whether I could get back up and was still working it out twenty minutes later. My sister drove over from Halsey and left soup on the step because I would not open the door. I am fine. I have a cough that sounds worse than it is and my neighbour has started crossing the road.\n\nSo this is the January letter, arriving with January nearly over. Nothing in it has gone stale in two weeks, which tells you something about the pace of county government and nothing good about me.\n\nThe sheriff's overtime numbers are in the first section and I want to say before you read them that they are not a scandal. I am saying it first because the last time I printed a budget line without a warning on it somebody put it on Gridline under the headline SHERIFF CAUGHT, and three feeds rewrote that inside a day, and by the Thursday it was a fact with four sources, all of which were each other.",
+        "sections": [
+          {
+            "name": "The one that matters",
+            "items": [
+              {
+                "headline": "Sheriff's overtime is up 31 percent and the reason is boring",
+                "blurb": "Two deputies out long-term. One knee, one back, both from last spring, both legitimate and both documented. The shifts still have to be covered and they are covered at time and a half.\n\n[b]That is the whole story.[/b] It is on page nineteen of the December packet. The county will give you that packet as a forty-seven page scan with no text layer, so you can have it and you cannot search it, and the [url=synth://verity.county.gov/s/records-request]records request page[/url] will cheerfully take your twenty-five dollars for the privilege.\n\nI have a copy. Write and I will send it.",
+                "href": "synth://verity.county.gov/s/records-request"
+              },
+              {
+                "headline": "What the overtime line does not include",
+                "blurb": "Contract dispatch. That is a separate line, it is rising faster than overtime, and nobody would explain it to me in January in a way I could print.\n\nI will keep asking. It is usually the line nobody will explain that is worth the time."
+              }
+            ]
+          },
+          {
+            "name": "Paper trail",
+            "items": [
+              {
+                "headline": "The road department has a new snow contractor and the old one has filed suit",
+                "blurb": "Filed 6 January, in the county court, over the scoring on the bid. I have read the complaint. It is thin and it may still be right, which happens more than people think.\n\nThe practical thing for you is that the routes have been redrawn and the Kestrel Road end of Ashkettle is now last rather than third, which means eleven at night rather than six in the morning."
+              },
+              {
+                "headline": "The Ledger ran the same weather story four times in nine days",
+                "blurb": "Same wire copy, four headlines, four bylines, none of which are people. On the fourth one the temperature in the second paragraph had drifted six degrees from the first, which is what happens when a thing is rewritten by something that has read the previous rewrite.\n\nIt is on the [url=synth://now.verityledger.com/corrections]corrections page[/url] now, which is a sentence I am going to be writing a lot this year.",
+                "href": "synth://now.verityledger.com/corrections"
+              }
+            ]
+          },
+          {
+            "name": "The quarry floor",
+            "items": [
+              {
+                "headline": "Nobody has salted the trailhead lot since the second",
+                "blurb": "The parks department says it is on the winter list. The winter list has one truck on it and the truck is doing roads, which is the right order.\n\nIf you walk the branch trail in the morning, park on the street and walk in. The lot is glass."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Kettle Valley Credit Union",
+          "copy": "Kettle Valley Credit Union. Branches in Marchfield, Gridfall and Halsey. Member-owned since 1957. Auto loans from 6.4 percent APR, and a person answers the phone between eight and four-thirty.\n\n[i]Their copy. I did not write it and I cut one sentence about community, which they have not mentioned since.[/i]"
+        },
+        "signoff": "— Ruth\n\nGridfall. Back on the third Thursday of February, assuming."
+      }
+    ]
+  }
+}

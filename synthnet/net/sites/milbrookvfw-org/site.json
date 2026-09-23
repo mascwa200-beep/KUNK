@@ -1,0 +1,641 @@
+{
+  "schema": 1,
+  "domain": "milbrookvfw.org",
+  "title": "VFW Post 6791 - Milbrook",
+  "type": "page",
+  "era": "2026",
+  "skin": "tripod-tile",
+  "description": "The Veterans of Foreign Wars post in Milbrook: hall rental rates in detail because the hall pays for the building, a Friday fish fry, the Memorial Day parade route, the members who have died since last May, the Auxiliary, and the village notices this page carries because Milbrook has had no newspaper since 2016.",
+  "tags": ["milbrook", "veterans", "hall-rental", "2026"],
+  "links": [
+    "milbrookgazette.com",
+    "verityhealth.gov",
+    "verity-transit.gov",
+    "veritysheriff.gov",
+    "verity.county.gov",
+    "now.verityledger.com",
+    "stmarks-verity.org",
+    "ashkettlevfd.org",
+    "ask.verity.ai",
+    "countyfacts.info",
+    "brenners-notebook.email",
+    "thequarry.news",
+    "gridline.social",
+    "marchfieldlibrary.blog",
+    "classifieds.verity.net",
+    "countysoftball.org",
+    "verity.wiki"
+  ],
+  "data": {
+    "navLabel": "Post 6791",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** FISH FRY EVERY FRIDAY 4:30 TO 7:00 *** HALL RENTAL, TELEPHONE 782-6612 TUESDAY OR THURSDAY MORNING *** POST MEETING SECOND TUESDAY 7:00 *** VILLAGE NOTICES ON THE NOTICES PAGE, NO CHARGE ***" },
+          { "kind": "heading", "level": 1, "text": "Veterans of Foreign Wars, Post 6791, Milbrook" },
+          { "kind": "image", "seed": "vfw6791-second-street-front", "imgKind": "banner", "caption": "41 Second Street from the corner of Dunmore. Block building, 1962, put up by the membership. The flagpole is 1964 and the light on it has worked since June." },
+          { "kind": "text", "body": "41 Second Street, Milbrook, at the corner of Dunmore Street. The hall telephone is [b]782-6612[/b] and it rings in the canteen. If nobody answers it is because nobody is there, which on a Monday is most of the day.\n\nThis post was chartered on [b]28 August 1946[/b] with 61 members. It is named for Sergeant Wendell G. Trumbore of Second Street, who was killed at Anzio in February 1944 and is buried in Italy. We have 118 members now and the average age of them is 74." },
+          { "kind": "heading", "level": 2, "text": "What is open and when" },
+          {
+            "kind": "table",
+            "head": ["", "When", "Note"],
+            "rows": [
+              ["Canteen", "Wednesday to Saturday, 3:00 to 9:00 p.m.", "Members and a member's guest. Sunday 1:00 to 5:00 in football season."],
+              ["Fish fry", "Friday, 4:30 to 7:00", "Open to anybody. September through May, and the first Friday of the month in summer."],
+              ["Post meeting", "Second Tuesday, 7:00 p.m.", "Members. 13 October, 10 November, 8 December."],
+              ["Auxiliary meeting", "Third Tuesday, 6:30 p.m.", "Downstairs. They finish before we start the coffee."],
+              ["Cards", "Wednesday, 1:00 to about 4:00", "Pinochle. Six regulars, seven when Lloyd's ride works out."],
+              ["Hall bookings", "Tuesday and Thursday, 9:00 to noon", "Wanda is in the office those mornings and only those mornings."],
+              ["Service officer", "Thursday, 9:00 to 11:30", "Help with a VA claim. Free, and you do not have to be a member."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The hall" },
+          { "kind": "text", "body": "The hall is the biggest room in this village and renting it is how the building stays open. Dues do not do it and have not done it since about 2009.\n\nRates, what is in the kitchen, what we will not let you do, and the dates still open this year are all on [url=/rental]the hall rental page[/url]. That page is long because every line on it is something somebody has telephoned to ask.\n\nShort version. Saturday, hall only, $325, or $225 if a member is signing for it. Kitchen is $75 on top. $100 deposit, by cheque, which we hold and do not cash. A funeral lunch for a member's family is no charge and always has been." },
+          { "kind": "heading", "level": 2, "text": "The fish fry" },
+          { "kind": "text", "body": "Every Friday, 4:30 to 7:00, in the hall. Haddock dinner $14, two-piece $18, child's plate $7. Takeout from 4:15, telephone from 3:30 and we will have it ready.\n\nThe line is worst at 5:15 and there is nobody in it at 6:40. [url=/fishfry]The fish fry page[/url] has the whole menu, what it costs us, and what happens to the money." },
+          { "kind": "heading", "level": 2, "text": "Notices" },
+          { "kind": "text", "body": "The [url=synth://milbrookgazette.com/article/note-to-readers]Gazette stopped on 27 October 2016[/url] and said the break would be a short one. It was not. Since then this page has carried things that are nobody's business but the village's, because there is nowhere else in Milbrook that people look.\n\nIt is free, it is not a newspaper, and the rules for putting something on it are at the top of [url=/notices]the notices page[/url]. This week:" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Hydrant flushing, Tuesday 3 November to Thursday 5 November. Run your cold tap until it clears before you do a wash.",
+              "Blood drive in this hall, Thursday 8 October, 1:00 to 6:00. 41 units, which is four over what they asked for.",
+              "The flu clinic for the north end is at the Coyne Flats Grange hall on Thursday 5 November, 10:00 to 1:00. There is no Milbrook clinic this autumn. We offered this hall in August.",
+              "Milbrook Free Library book sale, Saturday 7 November, nine to two, in the basement. The National Geographics are still free.",
+              "Found in the hall lot after the 26 September rental: a set of keys with a brass fob. They are in the office."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Memorial Day" },
+          { "kind": "text", "body": "The parade is [b]Monday 31 May 2027[/b], step off 10:00 from the elementary school lot. It has not been missed since 1946. Route, order of march, road closures and the flag placement the Saturday before are on [url=/memorialday]the Memorial Day page[/url], and they are there now because people plan around it and ask us in January.\n\nNine members of this post have died since last Memorial Day. Their names are on [url=/taps]the Post Everlasting page[/url] and they will be read at the cemetery." },
+          { "kind": "text", "body": "[i]This page was last changed Tuesday 13 October 2026. -- N.P.[/i]" },
+          { "kind": "hitcounter", "count": 38714 },
+          { "kind": "text", "body": "The counter came with the template in 2009. The hosting company's own figures say 240 people looked at this site last month and that 96 of those were one machine somewhere else asking for the fish fry page every twenty minutes. Roger says leave it alone, it cost nothing." }
+        ]
+      },
+      {
+        "id": "rental",
+        "name": "Hall Rental",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Renting the hall" },
+          { "kind": "image", "seed": "vfw6791-hall-set-for-144", "imgKind": "photo", "caption": "The hall set for 144 at the round tables, the morning before a wedding in June. The panelling is 1978. The stage is at the far end and nothing on wheels gets up onto it." },
+          { "kind": "text", "body": "[b]This is the page that pays for this building, so it is the page we keep right.[/b] Everything below was checked on Tuesday 13 October 2026, including the rates, the inventory counts and the list of other halls at the bottom.\n\nThe hall is 42 by 66 feet. The fire marshal's posted occupancy is [b]180[/b] and that number is on the card by the front door. We will book you for 144 at round tables, 160 at long tables, or 180 standing with the tables put away, and if you tell us 150 and 210 turn up that is a problem you have brought with you." },
+          { "kind": "heading", "level": 2, "text": "Rates" },
+          { "kind": "text", "body": "Effective Wednesday 1 April 2026. The member rate means a member of this post or of the Auxiliary signs the contract and is there on the day. It does not mean your cousin is a member." },
+          {
+            "kind": "table",
+            "head": ["", "Non-member", "Member", "What that is"],
+            "rows": [
+              ["Saturday, whole day", "$325", "$225", "Noon Saturday to 10:00 a.m. Sunday. You may set up Friday evening if the hall is free, and it usually is."],
+              ["Friday or Sunday, whole day", "$250", "$175", "Friday is after the fish fry is out, which is 7:30 at the earliest and we will not promise 7:00."],
+              ["Weekday, whole day", "$175", "$125", "Monday through Thursday."],
+              ["Weekday evening, four hours", "$110", "$80", "Ends at 10:00. This is what most meetings and classes take."],
+              ["Kitchen", "add $75", "add $50", "Any use of the range, the ovens, the fryer or the steam table. Coffee and the refrigerator are free with any rental."],
+              ["Bar service", "$30 an hour, two hours minimum", "same", "Our bartender, our licence, our stock. Cash bar or a tab you settle at the end."],
+              ["Deposit", "$100", "$100", "A cheque we hold in the safe and do not cash. Handed back at the door when the key comes back."],
+              ["Cleaning, if we have to", "$60", "$60", "Charged eleven times since 2019. We would rather have a clean hall than the $60."],
+              ["Funeral lunch, member's family", "no charge", "no charge", "Hall, kitchen, coffee, urns, and two Auxiliary members if you want them. This has never been charged for and it is not going to be."],
+              ["North-end non-profit, weekday evening", "$60", "$60", "4-H, scouts, the ambulance CPR class, a church group whose own room is cold. Ask."]
+            ]
+          },
+          { "kind": "text", "body": "The Saturday rate went from $250 to $325 in April. It had been $250 since 2019. The insurance on this building went from $2,140 a year in 2023 to $3,180 this year, propane went up twice, and the membership voted the increase 39 to 4 at the February meeting after the quartermaster read the heating bills out loud.\n\nWe told everybody who had already booked 2026 at the old rate that the old rate stood, and it stood for all nine of them." },
+          { "kind": "heading", "level": 2, "text": "What comes with the hall" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]14 tables 8 foot[/b] and [b]6 tables 6 foot[/b], wood tops, heavy. Two people to a table and we mean it.",
+              "[b]12 round tables, 60 inch[/b], seat 8 comfortably and 10 badly. Bought in 2018 with Auxiliary money and stored on the rack in the back hall.",
+              "[b]180 chairs[/b], of which 154 match. The 26 that do not are brown and they are in the corner by the stage. Nobody has ever complained and everybody notices.",
+              "[b]Three 60-cup coffee urns.[/b] Two are good. The third leaks at the spigot and has tape on the handle, and the tape means do not use it, not use it carefully.",
+              "[b]The refrigerator in the back hall[/b], which is 22 cubic feet and is not part of the kitchen rental. Anybody renting may use it.",
+              "[b]The bar[/b], if you take bar service. Under the counter there are four cases of glasses.",
+              "[b]The PA[/b]: one speaker, one microphone on a stand, from 1996. It is for announcements. It is not for music and it will not do music.",
+              "[b]Two air conditioners[/b] in the south wall. One works. In July the hall reaches about 84 degrees by four in the afternoon and we tell you that in writing before you sign anything for a July date."
+            ]
+          },
+          { "kind": "text", "body": "[b]Not included, and not available from us.[/b] Linens of any kind. Decorations. A projector or a screen. A dance floor, because the floor is the floor. Ice, since the machine died on Sunday 14 June and a new one is $2,900. A wireless connection, because there is none in the hall and there is not going to be, the router being in the office and the office being locked.\n\nThe tile floor went in in 1988 and is buffed in April and October. The stage is 16 by 12 with three steps at the side and no ramp. That has been raised at three annual meetings and the answer is the same answer, which is $11,000." },
+          { "kind": "heading", "level": 2, "text": "The kitchen" },
+          { "kind": "text", "body": "The kitchen is on the Dunmore Street end, through the double doors, and it is a real kitchen because this post has fed people out of it every Friday since 1971." },
+          {
+            "kind": "table",
+            "head": ["Equipment", "Age", "Note"],
+            "rows": [
+              ["Six-burner gas range with two ovens", "1994", "Bought used from a school in Bowes City. The right oven runs 25 degrees hot and there is a card taped to it saying so."],
+              ["40 lb gas fryer", "1998, rebuilt 2021", "This is the fish fry. Do not use it for anything breaded that is not yours to clean up after."],
+              ["Four-well steam table", "2004", "Electric. Two circuits, and the far well trips the breaker if the urns are on the same wall."],
+              ["Walk-in cooler, 8 by 8", "2011", "Runs 37 to 39. The log on the door is filled in by whoever is in the kitchen and the Health Department reads it."],
+              ["Chest freezer", "2016", "Fish and the Auxiliary's pie shells. Not for your rental unless you ask."],
+              ["Three-bay sink and a hand sink", "1988 and 2011", "The hand sink is the one by the door and it is not for dishes and not for anything else."],
+              ["Hood and fire suppression", "2011, inspected February 2026", "Certificate is on the wall by the door with the date on it."]
+            ]
+          },
+          { "kind": "text", "body": "[b]There is no dish machine.[/b] The domestic dishwasher in the corner is not a sanitizing machine and cannot be used for service ware at an event that is open to the public. It is there for the coffee cups. Wash in the three-bay sink, sanitize in the third bay, and the test strips are in the drawer under the hand sink." },
+          { "kind": "heading", "level": 2, "text": "If you are selling plates, that is a permit and it is yours" },
+          { "kind": "text", "body": "A private party where nobody is selling anything and nobody is taking donations at the door does not need a food permit. That is most of what happens in this hall.\n\nIf the public is invited and money changes hands, it is a temporary food event. That is [b]Form VCH-7[/b], ten days ahead, $35, from the county, and it is in your name and not ours. See [url=synth://verityhealth.gov/s/temp-events]the Health Department's page on it[/url]. We will not unlock the kitchen on the day without seeing the permit, and we have turned two groups back since 2023 for exactly that.\n\nOur own kitchen holds a Category 3 permit, $310 a year, renewed by 31 March, with Lorraine Berstler named on it as the certified food protection manager. That permit covers what we cook. It does not cover what you cook." },
+          { "kind": "heading", "level": 2, "text": "Drink" },
+          { "kind": "text", "body": "[b]You cannot bring alcohol into this building.[/b] Not a case in the trunk, not a cooler for the head table, not champagne for a toast. The post holds the licence, the licence is $340 a year, and a licence is easier to lose than to get.\n\nIf you want a bar, it is our bartender at $30 an hour with a two-hour minimum, and the drink prices are the canteen prices. Cash bar, or a tab that you settle before you leave, and we will tell you where the tab stands at any point in the evening if you ask.\n\nLast call is 11:30 and the bar is shut at midnight whatever else is happening. Nobody under 21 behind the bar, ever, including to carry a case." },
+          { "kind": "heading", "level": 2, "text": "The rules, which are the actual rules" },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Nothing on the panelling. No tape, no tacks, no staples, no adhesive hooks. There are 22 hooks in the ceiling grid and there is a pole in the closet to reach them.",
+              "No confetti, no glitter, no rice, no silly string, inside or in the lot. This is the one that has cost people their deposit.",
+              "Candles must be enclosed in glass above the flame. Nothing open, and nothing on the bar.",
+              "Your garbage goes in the dumpster behind the building with the lid shut. Six bags fit. If you have more than six bags of garbage you have had a bigger party than you told us about.",
+              "Kitchen left as you found it, floor included, and the mop and bucket are in the closet marked KITCHEN and not the one marked HALL.",
+              "The tables and chairs go back on the racks the way they came off. There is a photograph taped inside the closet door showing how.",
+              "Park in our lot, 38 spaces, or across Second Street in the school lot after four o'clock, which the district has let us use since 2011. Not on Dunmore. The plow needs Dunmore and so does the ambulance.",
+              "No smoking anywhere inside. The bucket by the side door is for that and it is emptied by us.",
+              "The flag case in the entry is not a shelf. Coats go on the rack.",
+              "The POW/MIA table by the stage stays where it is and stays set. It is not a plant stand and it is not a place for a cake.",
+              "Out by midnight, or by 1:00 a.m. if you have arranged it in advance and paid the extra hour, which is $40.",
+              "The key comes back to the office by Tuesday morning or to the canteen, and the deposit cheque goes home with whoever brings it."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Booking it" },
+          { "kind": "text", "body": "[b]Telephone 782-6612 on a Tuesday or Thursday morning between nine and noon and ask for Wanda.[/b] That is when the office is open and that is when the book is on the desk. The book is a paper book.\n\nA date is not held until we have the $100 deposit and the two-page contract signed. People have found this out the hard way twice this year, both times in June, both times for the same Saturday.\n\nWe take a cheque or cash. There is no card machine in this building. There is no way to book this hall on the internet, and if you find one, it is not us and you should tell us about it.\n\nThe contract is two pages. Page two is the rules above, word for word, and you initial the bottom of it. Nobody has ever read it in the office and everybody reads it afterwards." },
+          { "kind": "heading", "level": 2, "text": "Cancelling" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "More than 30 days out, the deposit comes back in full.",
+              "Inside 30 days, we keep the deposit unless the date gets rented to somebody else, and then it comes back.",
+              "A death in the family, at any notice, the deposit comes back. We have not once asked for proof of that and we are not going to start.",
+              "If we have to cancel you, which has happened twice since 2015 and both times the furnace, you get the deposit and anything paid, and Roger will telephone the other halls for you himself."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What the hall actually brought in" },
+          { "kind": "text", "body": "This is the whole reason the rest of this page is as long as it is. The quartermaster reads these two tables out at the annual meeting and they are the same two tables every year." },
+          {
+            "kind": "table",
+            "head": ["2026", "Rentals", "Taken in"],
+            "rows": [
+              ["January", "3", "$735"],
+              ["February", "4", "$960"],
+              ["March", "5", "$1,185"],
+              ["April", "6", "$1,690"],
+              ["May", "7", "$2,215"],
+              ["June", "9", "$3,140"],
+              ["July", "6", "$1,945"],
+              ["August", "7", "$2,290"],
+              ["September", "6", "$1,830"],
+              ["To 30 September", "53", "$15,990"]
+            ]
+          },
+          {
+            "kind": "table",
+            "head": ["What the building cost, same nine months", "", ""],
+            "rows": [
+              ["Insurance", "$3,180", "Was $2,140 in 2023. Same building, same use."],
+              ["Propane", "$4,410", "The 2025-26 winter. Two fills at 82 cents a gallon over the summer rate."],
+              ["Electric", "$2,260", "The walk-in is about a third of that and runs whether we are open or not."],
+              ["Water and sewer", "$640", "Village. The volume charge went up 9 percent in 2016 and again this year."],
+              ["Snow plowing", "$900", "Eleven pushes last winter at a flat rate. Ken does the walks himself."],
+              ["Liquor licence", "$340", ""],
+              ["Rubbish", "$780", "Every Wednesday, and an extra pull the Monday after a big Saturday."],
+              ["Telephone and internet", "$468", "$39 a month. The internet reaches the office and stops there."],
+              ["Website hosting", "$96", "A year, on the quartermaster's card, renewed in March."],
+              ["Repairs and parts", "$2,840", "The fryer thermostat, the north door closer, the hood inspection, two urn spigots, the lot light."],
+              ["Total", "$15,914", "Against $15,990 of hall rental."]
+            ]
+          },
+          { "kind": "text", "body": "Seventy-six dollars, over nine months, is the whole margin on this building, and that is before anything is done to the roof.\n\nWhat that means in practice is that the fish fry pays for the post and the hall pays for the building, and if either one stops for a season we are having a different kind of meeting.\n\nHal Brenner telephoned in June and asked what a hall like this one takes in, for something he was writing about where county meetings actually get held. Roger read him these two tables over the telephone and he printed them right, which was a relief, because the last time a website quoted a number off this page it was off by a factor of two." },
+          { "kind": "heading", "level": 2, "text": "If we are booked" },
+          { "kind": "text", "body": "We check these every autumn by telephoning each of them, and this list was checked in the first week of October 2026. If one of these is wrong, tell us, because a wrong line here means somebody drives." },
+          {
+            "kind": "table",
+            "head": ["Where", "Roughly seats", "Rate", "Who to ask"],
+            "rows": [
+              ["Milbrook village hall, 22 Front Street", "90", "$100 a day, $50 for a village group", "Village clerk, Tuesdays 9 to 11. Two hours a week and that is when you can ask."],
+              ["Milbrook Legion Post 219, 9 Oak Street", "120", "$275 Saturday", "Their canteen, most evenings. Kitchen is back in service since 9 September."],
+              ["Milbrook Fire Department social hall", "80", "$150, members free", "No bar. Good lot. They will not book a date in fair week."],
+              ["Tessler fire hall", "110", "$200", "New roof in 2016 and it has been dry since."],
+              ["Kerrin fire hall", "150", "$300 Saturday", "The biggest room in the north end after ours, and the only other one with a walk-in."],
+              ["Zion Lutheran fellowship room, Bethel Road", "60", "Donation", "No alcohol at all, and they will say so twice."],
+              ["Ashkettle Grange hall, Route 62", "130", "$225", "Thirty-five minutes from here. Worth it for a big Saturday in December."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Things on the internet about this hall that are wrong" },
+          { "kind": "text", "body": "People turn up because of these, so they go on the page.\n\n[b]The county assistant[/b] at [url=synth://ask.verity.ai/chat]ask.verity.ai[/url] says this hall seats 300, rents for $150, and offers \"complimentary wireless internet and on-site catering.\" It seats 180 by the fire marshal's card, the Saturday rate is $325, there is no wireless in the hall, and this post has never catered anything in its life. A woman came in June with 240 on her list because of that answer. We could not take her and there was nothing else free that weekend in the north end.\n\n[b]A venue listing[/b] at [url=synth://northcountyvenues.biz/]northcountyvenues.biz[/url] has our address, an old photograph of the hall, a booking form, and a telephone number that is not ours. We have never dealt with them. Two deposits have been paid to that form that we know of, $75 each, and neither of those people had a date on our book. The sheriff's office has it, see [url=synth://veritysheriff.gov/s/scams]their scams page[/url], and the listing is still up.\n\n[b]A directory page[/b] says this post was founded in 1919 and that the hall \"served as an emergency shelter during the 2004 Gridfall substation fire.\" The charter is 1946 and it hangs in the entry. The substation fire was [b]11 June 2003[/b], it was in Gridfall, which is thirty-one miles from this door, and nothing about it happened in this building. We had power the whole week. The Red Cross shelter was at the high school, and anybody who wants to know what actually burned and for how long can read [url=synth://verity.wiki/wiki/verity-county]the county wiki[/url] or ask somebody from [url=synth://ashkettlevfd.org/hall]Station 4 in Ashkettle[/url], who were there." },
+          { "kind": "text", "body": "[i]Rates, inventory and the other halls all checked Tuesday 13 October 2026. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "What is in the hall and when" },
+          { "kind": "text", "body": "Updated Tuesday and Thursday mornings off the book on Wanda's desk. [b]A date is not held until the deposit is in.[/b] If a date below says open and you want it, telephone 782-6612 on a Tuesday or Thursday between nine and noon.\n\nPrivate means private. If your name is not on it, it is not for you to walk into." },
+          { "kind": "heading", "level": 2, "text": "Every week" },
+          {
+            "kind": "table",
+            "head": ["Day", "What", "Where", "Hall free?"],
+            "rows": [
+              ["Monday", "Nothing. Building shut.", "", "Yes, by arrangement"],
+              ["Tuesday", "Office 9 to noon. Post meeting second Tuesday 7:00. Auxiliary third Tuesday 6:30.", "Office, hall, downstairs", "Most Tuesdays"],
+              ["Wednesday", "Cards 1:00 to 4:00. Canteen 3:00 to 9:00.", "Canteen", "Hall free"],
+              ["Thursday", "Service officer 9:00 to 11:30. Office 9 to noon. Canteen 3:00 to 9:00.", "Office, canteen", "Hall free"],
+              ["Friday", "Fish fry 4:30 to 7:00. Canteen to 9:00.", "Hall and kitchen", "Hall free after 7:30"],
+              ["Saturday", "Canteen 3:00 to 9:00, or later if there is a rental.", "Canteen", "Usually booked"],
+              ["Sunday", "Canteen 1:00 to 5:00 in football season only.", "Canteen", "Hall free"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "October" },
+          {
+            "kind": "table",
+            "head": ["Date", "What", "Hall"],
+            "rows": [
+              ["Tuesday 13 October", "Post meeting, 7:00. Quartermaster's third-quarter report.", "Post"],
+              ["Thursday 15 October", "Kerrin Ambulance CPR class, 6:00 to 9:00, 14 booked.", "Booked, $60"],
+              ["Saturday 17 October", "Wedding reception, 4:00 to midnight, 130. Bar service.", "Private"],
+              ["Tuesday 20 October", "Auxiliary, 6:30. Poppy count and the Voice of Democracy entries.", "Auxiliary"],
+              ["Saturday 24 October", "Milbrook Merchants end of season supper, 5:00, 45 people, they cook.", "Private"],
+              ["Wednesday 28 October", "Village board candidates' night, 7:00, open to anybody, no charge.", "Open to all"],
+              ["Saturday 31 October", "Open. Nobody has ever booked this hall for the 31st and we do not know why.", "OPEN"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "November" },
+          {
+            "kind": "table",
+            "head": ["Date", "What", "Hall"],
+            "rows": [
+              ["Tuesday 3 November", "Election day. Not a polling place. Polls are at the village hall, 6:00 a.m. to 9:00 p.m.", "Free"],
+              ["Saturday 7 November", "80th birthday party, 2:00 to 6:00, 60 people, kitchen.", "Private"],
+              ["Tuesday 10 November", "Post meeting, 7:00. Nominations.", "Post"],
+              ["Wednesday 11 November", "[b]Veterans Day.[/b] Short service at the stone, 11:00. Dinner here at 5:00, members and family, no charge, and the Auxiliary cooks.", "Post"],
+              ["Saturday 14 November", "Open.", "OPEN"],
+              ["Tuesday 17 November", "Auxiliary, 6:30.", "Auxiliary"],
+              ["Saturday 21 November", "Zion Lutheran holiday bazaar, hall and kitchen, 9:00 to 2:00.", "Private"],
+              ["Thursday 26 November", "Thanksgiving. Building shut. The canteen is shut and Roger will tell you that himself if you telephone.", "Shut"],
+              ["Saturday 28 November", "Open.", "OPEN"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "December" },
+          {
+            "kind": "table",
+            "head": ["Date", "What", "Hall"],
+            "rows": [
+              ["Saturday 5 December", "Milbrook Fire Department Christmas party, 6:00, 90 people.", "Private"],
+              ["Tuesday 8 December", "Post meeting, 7:00. Election of officers, and the names from this year are read.", "Post"],
+              ["Saturday 12 December", "Children's Christmas party, 1:00 to 3:00, Auxiliary, open to any child in the village, no charge.", "Open to all"],
+              ["Sunday 13 December", "Wreaths at the three burying grounds, 10:00. Meet at the village cemetery gate.", "Post"],
+              ["Saturday 19 December", "Open, and this is the one Saturday in December that usually goes late.", "OPEN"],
+              ["Thursday 24 December", "Building shut at 3:00.", "Shut"],
+              ["Thursday 31 December", "New Year's Eve dance, 8:00 to 12:30, $15 at the door, bar. Three bands were asked and one answered.", "Post"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "2027, already on the book" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Saturday 29 May 2027 -- flags at the three burying grounds, 9:00 a.m. Anybody may come and it takes about two hours with enough people.",
+              "Monday 31 May 2027 -- Memorial Day. Parade at 10:00, coffee and sandwiches here afterwards.",
+              "Saturday 12 June 2027 -- wedding, 150, booked and paid 11 August 2026.",
+              "Saturday 19 June 2027 -- graduation party, booked September 2026. Two more people have asked for that same date since.",
+              "Saturday 3 July 2027 -- open, and somebody asks about it every year in February."
+            ]
+          },
+          { "kind": "text", "body": "[i]Off the book Tuesday 13 October 2026. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "fishfry",
+        "name": "Fish Fry",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Friday fish fry" },
+          { "kind": "marquee", "text": "*** FRIDAY 4:30 TO 7:00 *** TAKEOUT FROM 4:15, TELEPHONE 782-6612 FROM 3:30 *** HADDOCK DINNER $14 *** EVERYBODY WELCOME, MEMBER OR NOT ***" },
+          { "kind": "image", "seed": "vfw6791-fry-line-530", "imgKind": "photo", "caption": "The line at about 5:20 on a Friday in October. It reaches the door and it is gone by twenty to seven." },
+          { "kind": "text", "body": "[b]Every Friday, 4:30 to 7:00, in the hall.[/b] From the first Friday in September to the last Friday in May, and then the first Friday of the month in June, July and August.\n\nYou do not have to be a member and you do not have to know anybody. Come in the Second Street door, pay at the table on the left, sit anywhere. Coffee, tea and lemonade come with a dinner and you get them yourself from the urns." },
+          { "kind": "heading", "level": 2, "text": "What it is and what it costs" },
+          {
+            "kind": "table",
+            "head": ["", "Price", ""],
+            "rows": [
+              ["Haddock dinner", "$14", "One piece, about 7 ounces, hand breaded here. Coleslaw, roll, and a potato."],
+              ["Two-piece haddock dinner", "$18", "It is a lot of fish and about a third of the room orders it."],
+              ["Baked haddock dinner", "$14", "Lemon, butter, paprika. Lorraine does 30 and when they are gone they are gone."],
+              ["Shrimp dinner", "$15", "Breaded, 8 pieces. Frozen, and we say so."],
+              ["Chicken tenders", "$9", "Four, with the same sides. This is what the children actually order."],
+              ["Grilled cheese", "$5", "American, on white, and the griddle is the same griddle it has always been."],
+              ["Child's plate, under 10", "$7", "Half a piece of fish or two tenders."],
+              ["Extra piece of fish", "$6", ""],
+              ["Side on its own", "$3", "Coleslaw, macaroni salad, applesauce, french fries, baked potato after 5:00."],
+              ["Pie", "$3", "Whatever the Auxiliary made. It is real pie and it is gone by six."],
+              ["Soda", "$1.25", "The bar is open, and the bar is a separate thing from the fish fry."]
+            ]
+          },
+          { "kind": "text", "body": "[b]Takeout is the same price plus a quarter for the container.[/b] We started charging the quarter on Friday 8 May 2026 and we hated doing it. The container went from 11 cents to 19 cents in two years and we were giving away about $18 a Friday without noticing.\n\nTelephone from 3:30 and we will have it on the shelf by the door. Say how many and say fish or tenders, that is all we need. Do not telephone at 5:20 and expect ten minutes." },
+          { "kind": "heading", "level": 2, "text": "The price went up 50 cents in September" },
+          { "kind": "text", "body": "The dinner was $13 from March 2023 until Friday 11 September 2026 and it is $14 now.\n\nHaddock comes frozen in 10 lb cases from a wholesaler in Bowes City. It was $4.60 a pound in the spring of 2024. It was $5.40 last September. It was [b]$6.15[/b] on the invoice for 3 September 2026. We get about 22 dinners out of a case, so a case that cost $46 costs $61.50, and 50 cents a dinner is what closes that and nothing more.\n\nThe oil went up too, and the containers, and the propane. Nobody at the September meeting argued about the 50 cents. Somebody argued about whether to round to $14 or go to $14.25, and we went with the easier number for the people making change." },
+          { "kind": "heading", "level": 2, "text": "How many we serve" },
+          {
+            "kind": "table",
+            "head": ["Friday", "Dinners", ""],
+            "rows": [
+              ["4 September", "211", "Post 219's kitchen was shut that afternoon. We telephoned them and told them to send people here."],
+              ["11 September", "163", "First night at $14. Nobody said anything about it."],
+              ["18 September", "151", "Rain, and the Kerrin game was home."],
+              ["25 September", "158", ""],
+              ["2 October", "169", ""],
+              ["9 October", "147", "Homecoming. It is 147 every homecoming."],
+              ["2026 average so far", "166", "The 2025 average was 149."]
+            ]
+          },
+          { "kind": "text", "body": "A Friday at 160 dinners nets somewhere between $380 and $520 after fish, oil, sides, containers and the propane for the fryer, depending on how much of the pie was donated. Over a season that is most of what keeps the canteen stocked and the small repairs paid for. It does not touch the roof." },
+          { "kind": "heading", "level": 2, "text": "Who cooks it" },
+          { "kind": "text", "body": "Five in the kitchen and two in the dish room, every Friday, from about two o'clock.\n\nLorraine Berstler has run this kitchen for 22 years and is the certified food protection manager named on our permit. Ken Hoke does the fryer and has done the fryer since his father stopped. Bonnie Speck and Deb Osterhout do the plates. Whoever is down there on the night does the rest, and the dish room is Auxiliary and always has been.\n\nWe are short two people. It is not a hard job and it is four hours. If you can stand up for four hours and follow a list, telephone the hall on a Tuesday morning." },
+          { "kind": "heading", "level": 2, "text": "The inspection" },
+          { "kind": "text", "body": "Our last routine was [b]Tuesday 19 May 2026[/b], score 94, satisfactory. Two core violations, both one point: a missing light shield over the range and a gap under the alley door. The shield went on that week and the door was swept and re-hung in June.\n\nIt is not on the county's website because [url=synth://verityhealth.gov/s/inspection-results]that page only carries the current period[/url], which right now is August and September. Everything older is paper at their counter and it is 25 cents a page. Our copy is in the frame by the kitchen door and you are welcome to read it while you wait for a takeout." },
+          { "kind": "heading", "level": 2, "text": "Post 219, in September" },
+          { "kind": "text", "body": "The Legion's kitchen on Oak Street was shut by the Health Department on the afternoon of Friday 4 September and reinstated on Wednesday 9 September after they put a water heater in. Their Friday was off with about two hours' notice.\n\nWe did 211 dinners that night, which is the most this hall has done since 2019, and about sixty of those were people who had driven to Oak Street first.\n\nWe sent Post 219 a cheque for $400 the following week. They sent it back. Dennis walked it over a second time and they took it, and that is the end of that story. A village this size does not have two kitchens to spare, and anybody who wants to make something of it in a comment on some website can do it without us." },
+          { "kind": "heading", "level": 2, "text": "Two things that are posted wrong" },
+          { "kind": "text", "body": "The assistant at [url=synth://ask.verity.ai/chat]ask.verity.ai[/url] says the Milbrook VFW serves lunch Friday 11:00 to 2:00. We have never served lunch. Three people have come at noon.\n\nThere is a page on [url=synth://gridline.social/]Gridline[/url] carrying our name that reposts the fish fry every Thursday. The prices on it are the 2023 prices and the telephone number on it is the old one from before the exchange changed. It is not ours, we do not know who set it up, and the one time somebody left a question on it we saw it nine days later." },
+          { "kind": "text", "body": "[i]Prices and Friday counts current to Friday 9 October 2026. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "memorialday",
+        "name": "Memorial Day",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Memorial Day in Milbrook" },
+          { "kind": "text", "body": "[b]Monday 31 May 2027. Step off at 10:00 from the elementary school lot on Second Street.[/b]\n\nThis is on the website in October because people ask in January, because the school band needs the date in September, and because twice now a listing site has put out a time we never gave anybody.\n\nThis post has put on the parade every year since 1946. In 2020 there were four of us and we walked the route at seven in the morning with no notice and no crowd, and it counts, and it is in the minutes." },
+          { "kind": "heading", "level": 2, "text": "The route" },
+          { "kind": "image", "seed": "vfw6791-parade-front-street-2026", "imgKind": "photo", "caption": "Front Street, 25 May 2026, about ten past ten, from in front of the bank. The clock on the bank says 4:20, as it has since September 2016." },
+          {
+            "kind": "table",
+            "head": ["", "Where", "Time", "Distance"],
+            "rows": [
+              ["Form up", "Milbrook Elementary lot, Second Street", "9:15", "--"],
+              ["Step off", "North on Second Street", "10:00", "0.3 mile"],
+              ["Turn", "West on Front Street, past the bank and the old Gazette office", "10:08", "0.4 mile"],
+              ["Turn", "Right on Oak Street, past Legion Post 219", "10:18", "0.2 mile"],
+              ["Halt", "Milbrook village cemetery gate, Bethel Road", "10:30", "0.3 mile"],
+              ["Ceremony", "At the stone, inside the gate", "10:40", "--"],
+              ["Done", "Coffee and ham sandwiches at the post hall", "11:10", "--"]
+            ]
+          },
+          { "kind": "text", "body": "One point two miles, and it takes about half an hour because the pace is set by the oldest man walking it and that is the correct way to set it.\n\nThere is a car at the back for anybody who wants to ride, every year, and every year somebody who said he would not ride rides." },
+          { "kind": "heading", "level": 2, "text": "Order of march" },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Sheriff's car, Milbrook patrol.",
+              "Colors, and the post color guard.",
+              "The post, in whatever anybody can still button.",
+              "The Auxiliary.",
+              "Milbrook Fire Department, one engine and the ambulance, running lights and no siren, which was agreed in 2014 and has held.",
+              "Kerrin Central band, or what comes of it in May. It was 31 in 2019 and it was 18 this year.",
+              "Cub Scouts and the 4-H club.",
+              "The tractor club, six or seven of them, at the back because of the noise and because they stop to talk.",
+              "Candidates walk at the very back, and they do not hand anything out. That has been the rule since 1998 and it has been broken once."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The roads" },
+          { "kind": "text", "body": "Front Street is closed from the bank corner to Oak from [b]9:45 to 10:35[/b]. Second Street is closed from the school lot to Front from 9:30. Oak Street stays open with the fire police holding the intersections.\n\nThe permit goes to the sheriff's office on the form they keep at the counter, and it has to be in by 1 April. Ours went in on Thursday 12 March 2026 and they had the car assigned in a week. The county highway department brings six barricades out on the Friday and collects them on the Tuesday, no charge, and they have never once been late.\n\nIf you live on Front Street between the bank and Oak, move your car by nine. We put a note on the doors the week before and we still tow nobody and just go around." },
+          { "kind": "heading", "level": 2, "text": "The ceremony at the cemetery" },
+          { "kind": "text", "body": "It runs about thirty minutes and it is the same thirty minutes every year.\n\nInvocation, by whichever of the two pastors it is that year. The names of the members who have died since the last Memorial Day, read out one at a time by the commander, and the list for this year is on [url=/taps]the Post Everlasting page[/url]. The General Logan order, read by whoever is Junior Vice, which is the part nobody volunteers for. A wreath on the stone by two members of the Auxiliary. The rifle salute. Taps. Benediction.\n\n[b]The rifle salute is seven rifles and three volleys, which is 21 rounds.[/b] It is not a 21-gun salute. A 21-gun salute is artillery. We stopped correcting people about it around 2015 and it has not hurt anybody.\n\nTaps is played by Kaleb Reisinger, who is sixteen and at Kerrin Central, and the echo has been a recording since 2019 because we have one bugler and he cannot stand in two places. Everybody knows. Nobody minds. If you are a bugler and you are reading this, telephone the hall." },
+          { "kind": "heading", "level": 2, "text": "Flags on the graves, the Saturday before" },
+          { "kind": "text", "body": "[b]Saturday 29 May 2027, 9:00 a.m., meet at the village cemetery gate.[/b] Anybody may come and most of the people who come are not members.\n\n640 flags across three burying grounds. Milbrook village cemetery is 431 of them, the Zion Lutheran churchyard on Bethel Road is 154, and the Methodist burying ground at the end of Dunmore Street is 55. The list of which stone gets one is a spiral notebook that Wilbur Kitzmiller kept from 1994 until last year, and Lloyd Beiler has it now and has added nine names to it.\n\nBring a screwdriver if you have one. The ground at Zion is hard and we have four steel bars for it and they are never enough.\n\nThis year 27 people came, nine of them children, and it took an hour and fifty minutes. In 2019 it was eleven people and most of the afternoon. The flags come out on the second Saturday in June and go in the crate in the back hall, and the worn ones are burned properly in the fire department's pit in November." },
+          { "kind": "heading", "level": 2, "text": "This year, Monday 25 May 2026" },
+          { "kind": "text", "body": "88 in the line of march. In 1996 it was 240 and there is no use pretending otherwise.\n\nAlong the route, somewhere over three hundred, which is the most since 2018 and is entirely because the weather was 68 degrees and dry. The Auxiliary put out 14 dozen sandwiches afterwards and had none left, which has not happened in years and which they are still talking about.\n\nNine names were read. Elmer Vore's was the last one in the alphabet and the first WWII name on that list in four years, and it is the last one this post will read." },
+          { "kind": "heading", "level": 2, "text": "Two listings that sent people to the wrong place" },
+          { "kind": "text", "body": "A weekend events page on one of the county sites had our 2026 parade at 11:00 a.m. on [b]Sunday 24 May[/b]. It is a Monday parade at 10:00 and it has been a Monday parade at 10:00 since the holiday moved in 1971. Four people we know of stood on Front Street on the Sunday. One of them had driven from Halsey with his grandchildren.\n\nThe same listing said the parade \"commemorates the 2004 substation fire.\" There was no fire in 2004. The Gridfall substation fire was 11 June 2003, nobody died in it, and it has nothing to do with Memorial Day in Milbrook or with anything else this post does.\n\nWe wrote to the address on that site and got a paragraph back about listings being assembled from publicly available sources. The parade time was still wrong in July. We printed 200 slips with the right date and put them at the post office, the bank, the library and the hardware store, which cost $22 and worked." },
+          { "kind": "heading", "level": 2, "text": "Being in it" },
+          { "kind": "text", "body": "Telephone the hall, 782-6612, Tuesday or Thursday morning, and say what you are and roughly how many. We want the school groups, the church groups, the ball teams, the 4-H, the tractors, and anybody who served and wants to walk with us whether they are a member or not.\n\nWe do not want anything handed out along the route, anything thrown from a vehicle, or a sound system. The band is the sound system.\n\nRain plan is the same as it has been. We walk. If it is lightning we hold at the school and do the ceremony in this hall at 10:30, and that has happened twice since 2000." },
+          { "kind": "text", "body": "[i]Last changed Tuesday 13 October 2026 with the 2027 dates. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "taps",
+        "name": "Post Everlasting",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Post Everlasting" },
+          { "kind": "text", "body": "The members of this post who have died since Memorial Day 2025. Their names are read at the cemetery in May and again at the December meeting, and the charter is draped for thirty days each time.\n\nThis list is plain on purpose. Every one of these men was written about properly somewhere else by somebody who knew him, and this is the post's own record and nothing else." },
+          {
+            "kind": "table",
+            "head": ["Name", "Age", "Served", "Died", "Service held"],
+            "rows": [
+              ["Elmer W. Vore", "101", "Army, 1943-1946, Italy", "Tuesday 14 October 2025", "Zion Lutheran, burial in the village cemetery"],
+              ["Wilbur J. Kitzmiller", "93", "Army, 1952-1954, Korea", "Saturday 6 December 2025", "Ostrander, Milbrook chapel"],
+              ["Gerald A. Ballou", "77", "Army, 1969-1970, Vietnam", "Thursday 22 January 2026", "Milbrook Methodist"],
+              ["Francis L. Detwiler", "81", "Marine Corps, 1964-1968, Vietnam", "Sunday 8 March 2026", "Ostrander, Milbrook chapel"],
+              ["Donald R. Speck", "79", "Navy, 1965-1969, Vietnam", "Monday 20 April 2026", "Zion Lutheran"],
+              ["Lester D. Berstler", "74", "Army, 1971-1972, Vietnam", "Friday 5 June 2026", "Graveside only, at his request"],
+              ["Duane R. Osterhout", "58", "Army, 1990-1991, Southwest Asia", "Tuesday 14 July 2026", "Milbrook Methodist"],
+              ["Harold W. Mundt", "84", "Air Force, 1966-1968, Vietnam", "Saturday 22 August 2026", "Tessler Methodist"],
+              ["Gene A. Hoke", "88", "Army, 1955-1957, Korea", "Wednesday 16 September 2026", "Zion Lutheran"]
+            ]
+          },
+          { "kind": "text", "body": "Elmer Vore was the last World War II member of this post. He joined it in 1947, paid dues for 78 years, and came to the hall for the Veterans Day dinner in 2024 in a wheelchair and sat where he always sat. He was 91 the year Bernice Kolb put his birthday in the Gazette and he complained about it for a decade.\n\nWilbur Kitzmiller kept the flag list for the graves from 1994. It is a spiral notebook and the entries after about 2015 are in pencil because he said the pen made it look final.\n\nDuane Osterhout was 58 and the youngest name on a list like this in a long time. He had been a member since 1993 and he ran the lot for the parade every year, which nobody had asked him to do and which nobody else has picked up." },
+          { "kind": "heading", "level": 2, "text": "The Auxiliary, same period" },
+          {
+            "kind": "table",
+            "head": ["Name", "Age", "Died", ""],
+            "rows": [
+              ["Kathleen R. Sluyter", "70", "Tuesday 3 February 2026", "Auxiliary since 1988. Ran the poppy table outside the post office for 22 years."],
+              ["Vera J. Mundt", "94", "Tuesday 19 May 2026", "Counted the suppers, all of them, everywhere, for sixty years."],
+              ["Ruth Ann Beiler", "91", "Saturday 11 July 2026", "Baked for this post's kitchen from 1971. Her crust recipe is taped inside the cupboard door and it is not written down anywhere else."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "The honor guard" },
+          { "kind": "text", "body": "We will do military honors at any veteran's funeral in the north end of this county, member or not, and there is no charge and there never will be. Three days' notice if you can, and less if you cannot. Telephone the hall or telephone Dennis Ballou at home and the funeral homes all have that number.\n\nRifles, flag folding and presentation, and Taps if Kaleb is out of school by then. If you want only the flag folding, we do only the flag folding.\n\n[b]We did 14 funerals in the last twelve months.[/b] Six people can do it. Two of those six cannot stand for forty minutes any more, so on a cold day we take chairs, and if that looks wrong to anybody it can look wrong.\n\nIf you served and you are able to stand and hold a rifle, we will teach you the rest of it in two Saturday mornings." },
+          { "kind": "heading", "level": 2, "text": "The government marker, and the paperwork" },
+          { "kind": "text", "body": "[b]A grave marker for a veteran is free from the government.[/b] What costs money is setting it, and that is a stone mason's bill and not a marker bill. If somebody has quoted you one price for the whole thing, ask which part of it is the marker.\n\nA burial in the village cemetery needs a permit from the village clerk, who is in the office at 22 Front Street on Tuesdays from nine to eleven. There is a form and there is no fee. Two hours a week is what that office is, and every funeral home in three counties knows it.\n\nDeath certificates come from the county clerk, and [url=synth://verity.county.gov/s/records]the county's records page[/url] has what it costs and what to bring. The service officer will sit with you and do the VA burial allowance form on a Thursday morning, which takes about forty minutes and is free, and the outfits that telephone widows offering to do it for a percentage are not doing anything you cannot do at this table." },
+          { "kind": "heading", "level": 2, "text": "A note about the notices" },
+          { "kind": "text", "body": "Gene Hoke's death notice on the Ledger's website in September gave his post as American Legion Post 219 and gave the date of death as 18 September, which is the day the funeral home filed it. He was a member here for 51 years and he died on the 16th.\n\nThe family asked for a correction. What came back was the same notice with the date changed and the post still wrong. It is still wrong. [url=synth://now.verityledger.com/corrections]Their corrections page[/url] does not carry it.\n\nSo: what is on this page is what this post has in its own book, and the book is on paper, and if you see something about one of ours somewhere else that does not match this page, this page is right." },
+          { "kind": "text", "body": "[i]Last changed Tuesday 13 October 2026. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "auxiliary",
+        "name": "Auxiliary",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "VFW Auxiliary to Post 6791" },
+          { "kind": "text", "body": "41 members. Meets the third Tuesday at 6:30 downstairs and is finished by half past seven, which the post has never once managed.\n\nEligibility is the same family relationship it has always been, and since 2015 it takes men, and we have four. Dues are $30. Bonnie Speck is president, Deb Osterhout is secretary, and Marlene Vore has been treasurer since 2011 and would like somebody to learn the book." },
+          { "kind": "heading", "level": 2, "text": "There are three auxiliaries in this village and they are not the same thing" },
+          { "kind": "text", "body": "This gets mixed up constantly, including by people who have lived here their whole lives, so here it is written down.\n\n[b]This one[/b] is the VFW Auxiliary to Post 6791. Poppies, the relief fund, the children's Christmas party, the dish room on a Friday.\n\n[b]The Milbrook Fire Department Ladies Auxiliary[/b] does the roast beef dinner in October and the rescue tool fund. Doris Ballou ran it for years and Sheryl Ruhl has it now.\n\n[b]The Milbrook Ladies Auxiliary[/b] is the one with the election day pie sale at the village hall, which has been going since 1974 and which started at the Methodist church.\n\nWe help each other with tables and urns and nobody keeps score. If you send a cheque to the wrong one, whoever gets it will walk it over." },
+          { "kind": "heading", "level": 2, "text": "Buddy Poppies" },
+          { "kind": "text", "body": "Two Saturdays in May, outside the post office in the morning and outside the bank in the afternoon, and one more Saturday at the library book sale in November.\n\n[b]$1,842 this year.[/b] That was $2,310 in 2019 and it is not because people got less generous, it is because there are fewer people going past and more of them have no cash on them. Four people in May handed over a card and we had to say we could not take it.\n\nEvery dollar of it goes in the relief fund. The poppies themselves are made by disabled veterans and are paid for out of the Auxiliary's own account, not out of what is collected." },
+          { "kind": "heading", "level": 2, "text": "What the relief fund actually paid for" },
+          { "kind": "text", "body": "Twelve months to 30 September 2026. No names, and Marlene writes them in the book by number." },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "A car battery and the labour, $186. He had the interview on the Tuesday.",
+              "A fuel oil delivery of 100 gallons in February, $340, for a widow who had been running the kerosene heater in one room.",
+              "Two prescriptions the insurance would not cover until the appeal came back, $214 the pair.",
+              "A furnace igniter and the service call, $265.",
+              "A month's lot rent, $310, once, for a family that is now current.",
+              "Four rides to the VA hospital at 62 cents a mile, $228 altogether, paid to the members who drove.",
+              "$400 to the Milbrook fire company's own fund after the Sixth Street fire in March, because they came for one of ours in 2024.",
+              "Groceries, $412 in fifteen separate goes, which is what the fund mostly is."
+            ]
+          },
+          { "kind": "text", "body": "$2,355 out. The fund had $3,104 in it on 30 September.\n\n[b]How you ask.[/b] Telephone the hall, or tell any member, or tell Bonnie at the fish fry. There is no form, no proof of income, and no committee meeting about you. Two people decide and one of them is the treasurer, and it is done that day if it needs to be.\n\nIt is for veterans and their families first. Nobody has ever been sent away because they turned out not to be a veteran and we are not going to start." },
+          { "kind": "heading", "level": 2, "text": "The essay contests" },
+          { "kind": "text", "body": "Voice of Democracy is for high school and Patriot's Pen is for grades six through eight. Post prizes are $100 and $50, and the post winner goes to district.\n\nWe had 40 entries in 2011 and we had [b]9[/b] this year. That is not the children. The English teacher at Kerrin who ran it for twenty years retired in 2022 and nobody told the person who replaced her that it existed, and it took us three years to work out that this was what had happened. Deb walked into the school in September with the forms and a plate of cookies and we expect a better number this year.\n\nEntries are due to the hall by 31 October. Any student in the district, whether or not anybody in the family served." },
+          { "kind": "heading", "level": 2, "text": "The rest of the year" },
+          {
+            "kind": "table",
+            "head": ["When", "What", "Last year"],
+            "rows": [
+              ["February", "Soup and pie sale, Saturday, hall", "$610, and 40 quarts of soup gone by 12:30"],
+              ["March", "Ham dinner, Saturday, hall and kitchen", "212 served, $1,388 clear"],
+              ["May", "Poppies, and the sandwiches after the parade", "$1,842"],
+              ["Every Friday", "The dish room", "About 40 Fridays a year, two people a night"],
+              ["November", "Veterans Day dinner for members and families", "84 at the tables, no charge"],
+              ["December", "Children's Christmas party, open to any child in the village", "61 children, and a bag for each of them"],
+              ["All year", "Bowes City nursing home visits, first Sunday", "Two of ours are there now and it was nine in 2016"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Joining" },
+          { "kind": "text", "body": "If you are the spouse, parent, child, grandchild, sibling or grandparent of somebody eligible for the VFW, you are eligible for this. Bring the veteran's discharge paper or the number off it and Marlene will do the rest at the table.\n\nWe are 41 and we were 96 in 2004. The dish room needs two more people on a Friday and the poppy table needs somebody who can stand outside for two hours in May." },
+          { "kind": "text", "body": "[i]Last changed Tuesday 13 October 2026, from what Marlene wrote out at the September meeting. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "notices",
+        "name": "Village Notices",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Village notices" },
+          { "kind": "text", "body": "[b]This is not a newspaper and it is not trying to be one.[/b]\n\nThe [url=synth://milbrookgazette.com/]Milbrook Gazette[/url] printed every Thursday from April 1908 to [b]Thursday 27 October 2016[/b]. The note in the last edition said the break would be short. Dean Rask meant it when he wrote it.\n\nThis page began in 2017 as three lines about hall dates. People started telephoning the hall with things that had nowhere else to go, so it is what it is now. There is no charge, there never has been, and there is not going to be.\n\n[b]To put something on it:[/b] tell Wanda on a Tuesday or Thursday morning, telephone 782-6612 and leave it on the machine, or write it on the pad by the canteen door. Say it the way you want it printed. We will not print anything about a person that the person did not ask us to print, we will not print politics beyond the time and place of a meeting, and we will not print anything for sale over $200 because that is what [url=synth://classifieds.verity.net/]the classifieds[/url] are for.\n\n[b]40 copies of this page are printed every other Tuesday[/b] and left at the post office, the bank, the hardware store and the library, because about half of this village is not reading a website and that half is the half this page is for." },
+          { "kind": "heading", "level": 2, "text": "Friday 9 October" },
+          { "kind": "text", "body": "[b]Hydrant flushing, Tuesday 3 November to Thursday 5 November.[/b] The village will work Front and Second on the Tuesday, Oak and Dunmore on the Wednesday, and Bethel Road and the outside lines on the Thursday. Your water may run rusty for an hour or two after the crew has been past. Run the cold tap until it clears before you put a wash in, because it will stain and the village will not pay for it. There is no advisory and nothing is wrong with the water." },
+          { "kind": "text", "body": "[b]Leaf pickup.[/b] Mondays, 19 October through 23 November. To the curb, not in the street, not in bags. The village will not take brush with the leaves and has not since 2019, and the brush day is the first Monday in April." },
+          { "kind": "heading", "level": 2, "text": "Tuesday 6 October" },
+          { "kind": "text", "body": "[b]Blood drive in this hall, Thursday 8 October, 1:00 to 6:00.[/b] Walk in or book. They wanted 37 units and got 41 and the woman running it says the north end is the best draw in the county per head, and has said so for four years.\n\nThey are back Thursday 4 February." },
+          { "kind": "text", "body": "[b]There is no flu clinic in Milbrook this autumn.[/b] The nearest is the Coyne Flats Grange hall, 7 Grange Road, Thursday 5 November, 10:00 a.m. to 1:00 p.m. Flu shot is $25 and free if you are 65 or over or on public assistance. Bring your card if you have it.\n\nThe Health Department's page says the Milbrook clinic \"was not scheduled because the room is not available and no alternative was offered.\" We offered this hall in writing on Friday 14 August, for nothing, with the kitchen and the parking, and what came back was an automatic acknowledgement with a reference number on it. We telephoned on 2 September and pressed option 3 and it rang out, which we have since learned is a known fault with their telephone menu. We will offer again in the spring and we will telephone a person next time.\n\nCoyne Flats is 23 miles from here and [url=synth://verity-transit.gov/s/dial-a-ride]Dial-A-Ride[/url] will take you and will wait, but you have to be registered and you have to book by the day before. If you are not registered and need to be, come to the hall on a Thursday morning and the service officer will do the form with you over the telephone." },
+          { "kind": "heading", "level": 2, "text": "Friday 25 September" },
+          { "kind": "text", "body": "[b]Milbrook Free Library book sale, Saturday 7 November, nine to two, in the basement.[/b] Paperbacks a quarter, hardcovers a dollar. The box of National Geographics is free and has been free and will be there again next year.\n\nThey want help carrying tables up on the Friday evening at six. Four people did it last year and two of them are over eighty." },
+          { "kind": "text", "body": "[b]Kerrin Consolidated school board[/b] meets Tuesday 20 October at 7:00 in the high school library. On the agenda is the bus contract and the Tessler run. It is open and anybody may speak for three minutes at the start, and you do not have to sign up beforehand whatever the sheet on the door says." },
+          { "kind": "heading", "level": 2, "text": "Wednesday 16 September" },
+          { "kind": "text", "body": "[b]Gene Hoke died on Wednesday 16 September at home on Oak Street.[/b] He was 88 and a member of this post for 51 years. The service was at Zion Lutheran on the Saturday and the family has asked us to thank everybody who brought food to the house, which they say was more food than the house has seen since the funeral before this one.\n\nHis notice on the Ledger's website has the wrong date and the wrong post and the family has given up on it. What is right is on [url=/taps]the Post Everlasting page[/url]." },
+          { "kind": "text", "body": "[b]Found[/b] in the hall lot after the rental on Saturday 26 September: a set of car keys on a brass fob with a letter R on it. They are in the office. Telephone 782-6612 or ask at the canteen.\n\n[b]Wanted.[/b] Somebody with a pickup to take the old ice machine away. It is 300 pounds, it is on a pallet by the back door, and it is free to whoever loads it. We listed it in [url=synth://classifieds.verity.net/]the classifieds[/url] in July and got two replies and neither of them came." },
+          { "kind": "heading", "level": 2, "text": "Tuesday 8 September" },
+          { "kind": "text", "body": "[b]The food pantry van from St Mark's in Marchfield comes to Milbrook on the fourth Thursday of the month[/b] and it will bring a box to your door. Telephone their office by the Tuesday before. Milbrook has had no pantry of its own since 2019. The fire company keeps a box at the station and somebody is usually there on a Monday evening, and there is a shelf in the canteen here with the plain things on it that anybody may take, no questions, whether or not you are a member.\n\n[url=synth://stmarks-verity.org/pantry]Their page[/url] has the hours, what they are short of, and the delivery route." },
+          { "kind": "text", "body": "[b]Three members have had the veterans benefit letter this month.[/b] It is a letter, or sometimes a telephone call, saying that surviving family members in Verity County may be entitled to unclaimed memorial benefits and that the filing window is closing. It points at [url=synth://veterans-memorial-claim.win/]veterans-memorial-claim[/url] and it wants a social security number and a card.\n\nThere is no such window and there are no such benefits. The real VA burial allowance is a form, it is free, and the service officer at this hall will do it with you on a Thursday morning. The sheriff's office keeps a running list of what is going around at [url=synth://veritysheriff.gov/s/scams]their scams page[/url] and this one is on it.\n\nIf you already gave them something, telephone the bank first and the sheriff's office second, and do not be embarrassed about it, because one of the three who got it this month is a retired bank teller." },
+          { "kind": "heading", "level": 2, "text": "Friday 28 August" },
+          { "kind": "text", "body": "[b]The clock on the front of the bank has now said 4:20 for ten years.[/b] Bernice Kolb wrote it up in the Gazette in October 2016 and was told at the counter that it was a regional matter. It is still a regional matter. The branch is open Tuesday and Thursday, ten to three.\n\nWe are not campaigning about a clock. We are noting it, because that is what this page is for and because somebody asked us to." },
+          { "kind": "text", "body": "[b]Where these notices end up.[/b] What went on this page on 30 September as a line about hydrant flushing came back three days later on one of the county news sites as \"Milbrook Water Main Break Prompts Advisory.\" There is no break and there is no advisory. The piece named no one, quoted no one, and had a byline on it that is not a person.\n\nRuth Cannady at [url=synth://thequarry.news/]The Quarry[/url] telephoned the village clerk about it and printed one sentence saying it was routine flushing, which is one more sentence of checking than the site that ran it did. [url=synth://brenners-notebook.email/]Hal Brenner[/url] mentioned it too.\n\nWe are leaving our notices up anyway. The answer to a machine copying you badly is not to stop writing things down." },
+          { "kind": "text", "body": "[i]Notices are cleared off this page after about eight weeks. Karen Fennimore at [url=synth://marchfieldlibrary.blog/]the Marchfield library[/url] asked in March whether anybody was keeping them, and now Wanda puts the printed sheet in a binder and it goes to the library once a year, which took about four minutes to arrange and which nobody had thought of in nine years.[/i]" },
+          { "kind": "text", "body": "[i]Last changed Friday 9 October 2026. -- N.P.[/i]" }
+        ]
+      },
+      {
+        "id": "post",
+        "name": "The Post",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The post, the building, and who does what" },
+          { "kind": "image", "seed": "vfw6791-charter-1946-entry", "imgKind": "photo", "caption": "The charter in the entry, 28 August 1946, 61 names. The frame is the original and the glass is not." },
+          { "kind": "heading", "level": 2, "text": "Officers" },
+          {
+            "kind": "table",
+            "head": ["", "Who", "Since"],
+            "rows": [
+              ["Commander", "Dennis Ballou, 72, Army, Vietnam", "2021"],
+              ["Senior Vice Commander", "Wayne Okerlund, 66, Army", "2024"],
+              ["Junior Vice Commander", "Mark Berstler, 57, Army, Iraq 2004-2005", "2025"],
+              ["Quartermaster", "Roger Kreitz, 68, Navy", "2009"],
+              ["Adjutant", "Neil Prosser, 63, Army", "2017, and he does this website"],
+              ["Chaplain", "Lloyd Beiler, 81, Army, Vietnam", "2013"],
+              ["Service Officer", "Alan Sluyter, 64", "2019, Thursday mornings"],
+              ["Hall and bookings", "Wanda Kreitz", "2015, Tuesday and Thursday mornings"],
+              ["Canteen", "Jeannie Hoke", "2022"],
+              ["Kitchen", "Lorraine Berstler", "2004"]
+            ]
+          },
+          { "kind": "text", "body": "The books are audited every May by three members who hold no office. The audit is one page and it is read out at the June meeting whether anybody wants it read out or not. Roger has signed the cheques since 2009 and asks every year for somebody to learn it, and this year Mark said he would, which is the first time anybody has." },
+          { "kind": "heading", "level": 2, "text": "Membership" },
+          {
+            "kind": "table",
+            "head": ["", "Members", ""],
+            "rows": [
+              ["1948", "214", "Two years after the charter."],
+              ["1968", "302", ""],
+              ["1988", "341", "The most there has ever been."],
+              ["2008", "214", ""],
+              ["2018", "162", ""],
+              ["2026", "118", "Average age 74. Eleven are life members who no longer come."]
+            ]
+          },
+          { "kind": "text", "body": "Dues are $45 a year, payable by 31 December. Life membership is on the age-scaled table and runs from $400 down, and Roger has that on a sheet.\n\n[b]Eligibility, plainly.[/b] You have to have served in a foreign war, campaign or expedition and have the campaign medal, the expeditionary medal, or hostile fire or imminent danger pay to show it. That is the whole of it and that is what makes this different from the Legion.\n\nIf you are not sure, bring your DD-214 to the hall on a Tuesday morning and Dennis will tell you in five minutes. If it turns out you are not eligible here you are very likely eligible at [b]Legion Post 219[/b], which is four streets away on Oak, and one of us will walk over with you and introduce you, because a veteran standing in a parking lot with his discharge paper in his hand is a failure whichever building it happens outside of." },
+          { "kind": "heading", "level": 2, "text": "The service officer" },
+          { "kind": "text", "body": "Alan Sluyter is here Thursday mornings, 9:00 to 11:30, and he is not a lawyer and he does not charge anything.\n\nWhat he does is sit with you and fill in the form. Disability claims, the burial allowance, Aid and Attendance, the appeal when the first answer is no, ordering a replacement discharge paper, and finding the medal somebody's father threw in a drawer in 1954. [b]31 claims this year[/b], of which nine are still open, and he has a folder for each one because the Regional Office loses things.\n\nYou do not have to be a member of anything. Two of the people he is working with now are not veterans at all, they are widows.\n\n[b]Nobody should ever pay a percentage of backpay to have a claim filed.[/b] There are outfits advertising to do exactly that and one of them is buying advertising against this county's name. The accredited service officer route costs nothing, and if Alan cannot do it he will send you to the county veterans service agency in Gridfall, which also costs nothing." },
+          { "kind": "heading", "level": 2, "text": "The building" },
+          { "kind": "text", "body": "Block, 1962, put up over fourteen Saturdays by the membership on a lot the village sold to the post for a dollar. The men who poured the floor are on a list in the safe and there are two of them still living.\n\nThe panelling went up in 1978. There has been a vote about painting it twice, in 2019 it lost 31 to 24, and in 2024 it lost 28 to 19. The trend is clear and the panelling will outlast several of us.\n\nThe roof was done in 2011, membrane over the flat part, and it has three or four years left in it. Nobody has priced it since 2024 and the number then was $28,000. The boiler is 1984 and is serviced in September by Bortner Propane, who say the same thing about it every year.\n\nThe ramp and the wide door went in in 2009, paid for out of a memorial. The stage still has three steps and no way up for a chair, which is the single worst thing about this building.\n\nThe honor roll board in the entry is the 1946 one, 214 names, with a second panel added in 1968. Gold stars are hand painted and the last one added was in 1970. Karen Fennimore at the Marchfield library found the Ledger's notice of our charter on the microfilm in February and photocopied it for us and would not take anything for it, and it is in the case under the board." },
+          { "kind": "heading", "level": 2, "text": "What the year costs, all in" },
+          {
+            "kind": "table",
+            "head": ["In", "", "Out", ""],
+            "rows": [
+              ["Hall rental", "about $20,000", "Insurance", "$3,180"],
+              ["Fish fry, net", "about $16,000", "Propane and electric", "about $8,900"],
+              ["Canteen, net", "about $7,000", "Repairs, rubbish, plowing, water", "about $5,600"],
+              ["Dues", "$5,310", "Licences and the state and national per capita", "about $4,100"],
+              ["Auxiliary events", "their own account", "Honor guard, flags, poppies, the contests", "about $2,400"],
+              ["", "", "Relief fund out", "$2,355"]
+            ]
+          },
+          { "kind": "text", "body": "These are round numbers off the quartermaster's report and the exact ones are in the book, which any member may read at any meeting and which four members did last year.\n\nThe short version is that this post runs on the hall and the fryer. Dues cover the insurance and about six weeks of heat." },
+          { "kind": "heading", "level": 2, "text": "This website" },
+          { "kind": "text", "body": "Put up in 2009 by Roger's grandson, who was in eleventh grade and who is now in Michigan with two children and answers within a day when I email him, which is more than I deserve.\n\nIt cost $0 to build and it costs $96 a year to keep. It moved hosts in 2021 when the first one stopped answering the telephone, and the only thing lost in the move was a photograph gallery from the 2012 parade that was in some format nothing opens now.\n\nI change the words. I do not change anything else, because in 2018 I changed something else and the left side of every page went away for two days. There are six pages of instructions in a folder in the office, written in 2009, and four of them are still correct.\n\nAnything on this site that is wrong is mine. Telephone the hall on a Tuesday morning and tell me and I will fix it that week. -- Neil Prosser, adjutant." },
+          {
+            "kind": "buttons",
+            "label": "Places worth having:",
+            "items": [
+              { "label": "The Milbrook Gazette", "seed": "vfw-btn-gazette", "domain": "milbrookgazette.com" },
+              { "label": "Ashkettle VFD, Station 4", "seed": "vfw-btn-akvfd", "domain": "ashkettlevfd.org" },
+              { "label": "St Mark's Food Pantry", "seed": "vfw-btn-stmarks", "domain": "stmarks-verity.org" },
+              { "label": "Verity County Services", "seed": "vfw-btn-county", "domain": "verity.county.gov" },
+              { "label": "Sheriff's Office", "seed": "vfw-btn-sheriff", "domain": "veritysheriff.gov" },
+              { "label": "County Softball League", "seed": "vfw-btn-softball", "domain": "countysoftball.org" },
+              { "label": "Milbrook Business Association", "seed": "vfw-btn-mba" },
+              { "label": "Department Webmaster 2009", "seed": "vfw-btn-deptweb" }
+            ]
+          },
+          { "kind": "text", "body": "The last two of those have not gone anywhere in years. The Business Association wound up in 2014 when there were four businesses left to be in it. I have left both buttons where they are because taking them off does not bring anything back." },
+          { "kind": "heading", "level": 2, "text": "Guestbook" },
+          { "kind": "text", "body": "The form was turned off in June 2019 after it filled up twice in one night. The entries that are left are left because the only way I can find to remove them is to remove the whole box." },
+          {
+            "kind": "guestbook",
+            "entries": [
+              { "author": "Susan Ballou", "time": "2013-04-22", "body": "Thank you for the lunch after my mother's service. Four of you were here at seven in the morning and none of you would let us pay for anything. We noticed." },
+              { "author": "K. Prosser", "time": "2015-11-14", "body": "Is the hall air conditioned? Asking for a June wedding. Also is there a screen for a slideshow." },
+              { "author": "a visitor", "time": "2017-06-30", "body": "Drove out from Bowes City for the fish fry on a tip from a fellow at work. Worth the drive. The pie was rhubarb and I would like that noted." },
+              { "author": "DEALS-DIRECT-99", "time": "2019-06-11", "body": "{{spintax_hello}} amazing website! {{city}} visitors qualify for {{offer_amount}} today only click now" },
+              { "author": "loan-express", "time": "2019-06-11", "body": "WE BUY {{VENUE_NAME}} PROPERTY FAST CASH ANY CONDITION NO FEES" }
+            ]
+          },
+          { "kind": "text", "body": "The answer to the second one is that there are two units and one of them works, and no, there is no screen. I telephoned her in 2015 and told her so and she booked it anyway and it was a good wedding." },
+          { "kind": "heading", "level": 2, "text": "What has changed on this site" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "13 October 2026 -- 2027 Memorial Day dates added. Hall rates and the other halls list checked. Third-quarter figures on the rental page.",
+              "9 October 2026 -- Notices cleared back to 28 August. Hydrant flushing and the flu clinic added.",
+              "18 September 2026 -- Gene Hoke added to Post Everlasting. Fish fry price changed to $14 on the menu, which I should have done on the 11th.",
+              "14 August 2026 -- Offered the hall to the Health Department for a flu clinic. Noted here because I was asked to note it.",
+              "2 June 2026 -- Memorial Day page rewritten after the listing site had us on the wrong day.",
+              "1 April 2026 -- New hall rates. First change since 2019.",
+              "20 February 2026 -- Added the warning about the benefits letter.",
+              "11 November 2025 -- Elmer Vore added to Post Everlasting, and the charter draped.",
+              "3 March 2024 -- Fish fry page split off the front page because it was getting all the traffic.",
+              "17 October 2021 -- New host. Everything came over except the 2012 parade pictures."
+            ]
+          },
+          { "kind": "text", "body": "[i]Last changed Tuesday 13 October 2026. -- N.P.[/i]" },
+          { "kind": "hitcounter", "count": 38714 }
+        ]
+      }
+    ]
+  }
+}

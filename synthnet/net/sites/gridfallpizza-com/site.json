@@ -1,0 +1,950 @@
+{
+  "schema": 1,
+  "domain": "gridfallpizza.com",
+  "title": "Gridfall Pizza — 142 Third Street, Gridfall",
+  "type": "shop",
+  "era": "2026",
+  "skin": "megastore",
+  "description": "A takeout pizza shop on Third Street in Gridfall, run by three of the same family, on a storefront template that only knows how to sell products and a third-party order button that does not work on some phones.",
+  "tags": [
+    "gridfall",
+    "food",
+    "pizza",
+    "third-street",
+    "delivery"
+  ],
+  "links": [
+    "veritycountytoday.com",
+    "verityhealth.gov",
+    "verity.county.gov",
+    "ask.verity.ai",
+    "gridfall.chat",
+    "countysoftball.org",
+    "gridfall-buysell.net",
+    "classifieds.verity.net",
+    "now.verityledger.com"
+  ],
+  "data": {
+    "storeName": "Gridfall Pizza",
+    "categories": [
+      {
+        "id": "c-pizza",
+        "name": "Pizza"
+      },
+      {
+        "id": "c-subs",
+        "name": "Hot Subs"
+      },
+      {
+        "id": "c-sides",
+        "name": "Sides & Salads"
+      },
+      {
+        "id": "c-drinks",
+        "name": "Drinks & Sweets"
+      },
+      {
+        "id": "c-specials",
+        "name": "Specials"
+      },
+      {
+        "id": "c-info",
+        "name": "Hours, Delivery & About Us"
+      }
+    ],
+    "products": [
+      {
+        "id": "p-cheese",
+        "catId": "c-pizza",
+        "name": "Cheese Pizza, 16 inch",
+        "price": 16.0,
+        "was": 19.2,
+        "rating": 4.7,
+        "reviewCount": 38,
+        "blurb": "Sixteen inches, eight cut, whole milk mozzarella we shred here.\n\nThe sauce is crushed tomatoes, salt and a little oregano, and it is not cooked before it goes on. If you like a sweet sauce you are not going to like ours, and we would rather you knew that now than found it out for sixteen dollars.\n\nDough is made the morning before and used the next day. We do about forty on a Tuesday and a hundred and twenty on a Friday, and on a Friday at 6:30 the wait is forty minutes no matter what the website tells you.",
+        "bullets": [
+          "16 inch, 8 cut. The 12 inch is [url=/p/p-small]a separate listing[/url] because the website will not do sizes",
+          "Toppings are $2.50 each on a 16 inch. The whole list is on [url=/p/p-toppings]the toppings page[/url]",
+          "Well done, light cheese, cut in squares, no cut at all — say so on the phone and it costs nothing",
+          "The left deck of the oven runs about fifteen degrees hot. If you want the one off the right deck, ask. Everyone who works here knows which is which"
+        ],
+        "imgSeed": "gp-cheese-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-wings",
+          "p-2liter",
+          "p-bread"
+        ]
+      },
+      {
+        "id": "p-pepperoni",
+        "catId": "c-pizza",
+        "name": "Pepperoni, 16 inch",
+        "price": 18.5,
+        "was": 22.2,
+        "rating": 4.6,
+        "reviewCount": 52,
+        "blurb": "Cup pepperoni, the kind that curls and holds a little grease in it. Sixteen inches, eight cut.\n\nUnder the cheese, on top of the cheese, or both — both is $2.50 more and about a third of the orders on a Friday.\n\nThis is the single most ordered thing in the shop and has been every year since we started counting in 2011.\n\nLooking for the best pizza in {{city_name}}? Gridfall Pizza has proudly served {{city_name}} and the surrounding {{region_name}} area since {{year_founded}}, offering handcrafted pies, fast delivery and unbeatable value for the whole family. Order online today!",
+        "bullets": [
+          "Cup pepperoni. Not the flat kind. We tried the flat kind in 2013 for one order of it and went back",
+          "On top, underneath, or both. Both is $2.50",
+          "The paragraph at the bottom of the description is put there by the website company. We cannot delete it. We can only type above it",
+          "Half and half with any other pizza on the menu is fine and is the higher of the two prices"
+        ],
+        "imgSeed": "gp-pepperoni-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-cheese",
+          "p-2liter",
+          "p-sticks"
+        ]
+      },
+      {
+        "id": "p-house",
+        "catId": "c-pizza",
+        "name": "The Third Street, 16 inch",
+        "price": 24.0,
+        "was": 28.8,
+        "rating": 4.5,
+        "reviewCount": 96,
+        "blurb": "Pepperoni, sausage, mushroom, onion and green pepper. Sixteen inches, eight cut, and it is heavy.\n\nNick Cortese put this on the menu in 1983 and called it the House. We kept the pizza and changed the name when we bought the shop, because it is the one thing on here that is only on here.\n\nThe sausage is bulk, browned in the morning, and it is the same sausage in the [url=/p/p-zititray]ziti tray[/url]. The mushrooms are canned. Nick used canned, we use canned, and the two times we have used fresh somebody has telephoned about it.\n\n[b]The reviews on this page are the reviews of the whole shop.[/b] The order system puts the review link on the last item in the ticket, and the last item in the ticket is nearly always this, so this is where they all land. We cannot move them and we have stopped trying.",
+        "bullets": [
+          "Pepperoni, sausage, mushroom, onion, green pepper. Any of the five off is fine and the price does not change",
+          "Takes about four minutes longer than a cheese because of the load. On a Friday assume fifty minutes",
+          "12 inch version is $17.50 at the counter. The website will not do sizes, so ring for it",
+          "Sausage is browned at 9:00 in the morning and we run out of it maybe twice a year, both times in October"
+        ],
+        "imgSeed": "gp-third-street-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [
+          {
+            "by": "Denise Hummel",
+            "stars": 5,
+            "at": "2026-09-05T23:40:00Z",
+            "title": "Same as it was",
+            "body": "I have been getting this pizza since Nick had the shop and it is the same pizza. That is the entire review and it is meant as a compliment.\n\nI ask for it off the right deck because the left one runs hot and they have never once made me feel like a nuisance about it.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "W. Stoltzfus",
+            "stars": 2,
+            "at": "2026-08-14T01:05:00Z",
+            "title": "Forty minutes late and cold",
+            "body": "Ordered 6:15, told 45 minutes, got it 7:40 and it was cold enough that the cheese had set.\n\nThe driver could not find the house and I will own half of that, because the number came off the post in the spring and I have not put it back.\n\nThe other half is that nobody rang me. My number is on the ticket. Two stars and I will order again in a month because there is nowhere else.",
+            "verified": true,
+            "kind": "human"
+          },
+          {
+            "by": "Gene Kostenbader",
+            "stars": 5,
+            "at": "2026-07-19T00:22:00Z",
+            "title": "Sunday with my daughter's family",
+            "body": "Six of us at 5:30 on a Sunday and we were seated straight away at the window table without asking.\n\nI had the pot roast, my wife had the haddock, the two little ones had the chicken fingers off the children's menu and ate about four between them. Rolls still come warm and they still bring more without being asked.\n\nSeparate checks for all six, no sighing, no confusion. The girl at the front is new and did fine.\n\nOnly complaint is the parking on this street after five, which is not their fault.",
+            "verified": false,
+            "kind": "human"
+          },
+          {
+            "by": "Verified Customer 8841",
+            "stars": 5,
+            "at": "2026-09-12T07:18:00Z",
+            "title": "Excellent item, arrived as pictured",
+            "body": "The item arrived promptly and was exactly as shown in the listing photograph. Packaging was secure and there was no damage in transit. Communication from the seller was prompt and professional throughout. I would not hesitate to purchase from this seller again and recommend them to anyone considering this product.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "VerityLocalGuide",
+            "stars": 5,
+            "at": "2026-08-30T11:44:00Z",
+            "title": "A Gridfall institution",
+            "body": "Gridfall Pizza has been a fixture of the Third Street business district since opening its doors in 2004, shortly after the closure of the Blue Kestrel Diner in 2004 left residents of the community without a gathering place.\n\nThe family-owned establishment survived the 2004 Gridfall substation fire and continues to serve local residents and visitors alike. Local officials have praised small businesses like this one for their contribution to the area economy.\n\nWhether you are a longtime resident or just passing through Verity County, be sure to stop by and experience it for yourself.",
+            "verified": true,
+            "kind": "bot"
+          },
+          {
+            "by": "PIZZA-DEALS-NOW",
+            "stars": 5,
+            "at": "2026-09-16T04:02:00Z",
+            "title": "$5 ANY LARGE ANY TOPPINGS",
+            "body": "Why pay $24?? Get ANY large pizza ANY toppings for $5 at [url=synth://pizza-coupon-vault.click/gridfall]pizza-coupon-vault[/url] — works at ALL local pizzerias including this one!! Limited codes remaining!!",
+            "verified": true,
+            "kind": "spam"
+          }
+        ],
+        "alsoBought": [
+          "p-wings",
+          "p-2liter",
+          "p-salad"
+        ]
+      },
+      {
+        "id": "p-white",
+        "catId": "c-pizza",
+        "name": "White Pizza, 16 inch",
+        "price": 19.0,
+        "rating": 4.3,
+        "reviewCount": 17,
+        "blurb": "Ricotta, mozzarella, garlic, olive oil, a little black pepper. No red sauce at all, which is the part people ring about after they have ordered it.\n\nIt does not travel as well as a red pizza. Twenty minutes in a bag and the bottom goes soft. If you are more than ten minutes out, pick it up.\n\nSpinach on it is $2.50 and is the only thing we would put on it.",
+        "bullets": [
+          "No sauce. None. It is not an omission",
+          "Ricotta is the whole milk kind and we drain it overnight",
+          "Best eaten in the first fifteen minutes, which is an awkward thing for a delivery shop to print and it is still true",
+          "Reheat on a dry pan on the stove, not in a microwave"
+        ],
+        "imgSeed": "gp-white-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-salad",
+          "p-bread",
+          "p-cannoli"
+        ]
+      },
+      {
+        "id": "p-garden",
+        "catId": "c-pizza",
+        "name": "Garden, 16 inch",
+        "price": 21.0,
+        "rating": 4.2,
+        "reviewCount": 11,
+        "blurb": "Mushroom, onion, green pepper, black olive and sliced tomato.\n\nJune through the first week of October the tomatoes come from Ardelle Purkey's high tunnel out on Bell Hill Road and they are better than what we can buy. The rest of the year they are what we can buy, and we do not pretend otherwise on the menu board.\n\nFive vegetables on a sixteen inch is a wet pizza. We cook it four minutes longer and we still would not order it well done unless you like the edges dark.",
+        "bullets": [
+          "Mushroom, onion, green pepper, black olive, tomato",
+          "No tomato is a common order and costs the same",
+          "Local tomatoes June to early October. Bought in the rest of the year",
+          "Comes out of the oven wetter than a cheese. That is five vegetables, not a mistake"
+        ],
+        "imgSeed": "gp-garden-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-salad",
+          "p-white",
+          "p-2liter"
+        ]
+      },
+      {
+        "id": "p-meat",
+        "catId": "c-pizza",
+        "name": "Four Meat, 16 inch",
+        "price": 25.0,
+        "was": 30.0,
+        "rating": 4.4,
+        "reviewCount": 23,
+        "blurb": "Pepperoni, sausage, bacon and ham. Sixteen inches and about four and a half pounds out of the oven.\n\nThis is a Friday and Saturday pizza and about seventy percent of them go out those two nights. On a Tuesday we sell one.\n\nIt is a lot of salt. We are not going to talk you out of it. Ray orders it himself on a Saturday and then says he will not do that again.",
+        "bullets": [
+          "Pepperoni, sausage, bacon, ham",
+          "Bacon is cooked in the morning and held. It is not crisp by the time it reaches you and it is not supposed to be",
+          "Half four meat and half cheese is $25 and we will not argue about which half is bigger",
+          "Box is the same box. It is heavy. Two hands"
+        ],
+        "imgSeed": "gp-fourmeat-16",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-wings",
+          "p-2liter",
+          "p-fridaybox"
+        ]
+      },
+      {
+        "id": "p-small",
+        "catId": "c-pizza",
+        "name": "Cheese Pizza, 12 inch",
+        "price": 10.75,
+        "rating": 4.6,
+        "reviewCount": 29,
+        "blurb": "Twelve inches, six cut. Same dough, same sauce, same cheese as the sixteen.\n\nToppings on a twelve inch are $1.75 each.\n\nThis exists as its own listing because the website has no idea what a size is. Every size of every pizza would have to be its own product with its own photograph and its own page, and we were not going to do that thirty times, so the twelve inch cheese is here and the rest of the twelve inches you get by telephoning. Two dollars off the sixteen inch price is close enough for most of them and Donna will tell you the real one.",
+        "bullets": [
+          "12 inch, 6 cut. Toppings $1.75",
+          "Two 12 inch cheese is $19 on a Tuesday. See [url=/p/p-tuesday]the Tuesday listing[/url]",
+          "Any other pizza in a 12 inch: ring 782-2440. It is roughly $2 off the 16 inch",
+          "Fits in the top of a full size oven for reheating, which the 16 does not"
+        ],
+        "imgSeed": "gp-cheese-12",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-tuesday",
+          "p-can",
+          "p-bread"
+        ]
+      },
+      {
+        "id": "p-sheet",
+        "catId": "c-pizza",
+        "name": "Sheet Pizza, 12 by 18, 24 cut",
+        "price": 32.0,
+        "rating": 4.8,
+        "reviewCount": 14,
+        "blurb": "Rectangular, thicker crust, twenty-four squares. Cheese is $32 and toppings are $4.00 across the whole sheet.\n\nThis is the party pizza and it is what goes to the fire hall, the Armory and every team dinner in this town. It holds heat much longer than a round pizza, which is the whole reason it exists.\n\n[b]One or two sheets, same day, any time we are open. Three or more needs forty-eight hours[/b], because the pans go in the oven two at a time and a Friday with six sheets on it is a Friday where nobody else gets a pizza.",
+        "bullets": [
+          "12 by 18, 24 square cut. $32 cheese, $4.00 a topping",
+          "Three or more sheets: 48 hours notice, ring Donna on 782-2440",
+          "Stays hot about forty minutes in the box. A round pizza does not",
+          "We have twelve pans. If you need more than twelve sheets on one day the answer is no and it has been no twice"
+        ],
+        "imgSeed": "gp-sheet-12x18",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-zititray",
+          "p-salad",
+          "p-2liter"
+        ]
+      },
+      {
+        "id": "p-slice",
+        "catId": "c-pizza",
+        "name": "Cheese Slice",
+        "price": 3.0,
+        "rating": 4.5,
+        "reviewCount": 41,
+        "blurb": "One slice off a sixteen inch, on a paper plate, at the counter.\n\n[b]Eleven to two, Tuesday through Saturday, and Friday nights after eight.[/b] Those are the hours we keep a cheese pizza cut and sitting, and outside them there is no slice, because a slice out of a pizza we have to make is not a three dollar item.\n\nPepperoni slice when there is one, which is most days by half past eleven. Ask what is on the counter before you decide.",
+        "bullets": [
+          "$3.00 cheese, $3.75 pepperoni",
+          "11:00 to 2:00 Tuesday to Saturday, and Friday after 8:00 p.m.",
+          "Two slices and a can is $6.50 at lunch. See [url=/p/p-lunch]the lunch special[/url]",
+          "There is no slice at 4:00 in the afternoon and asking a second time does not produce one"
+        ],
+        "imgSeed": "gp-slice-cheese",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-lunch",
+          "p-can",
+          "p-cannoli"
+        ]
+      },
+      {
+        "id": "p-gf",
+        "catId": "c-pizza",
+        "name": "Gluten Free Crust, 10 inch",
+        "price": 14.5,
+        "rating": 3.9,
+        "reviewCount": 12,
+        "blurb": "A ten inch par-baked crust we buy in, sauced and cheesed here. Toppings $1.75.\n\n[b]Read this part.[/b] It is baked in the same oven, on the same deck, cut with a wheel we wash but do not keep separate, by people who have flour on them. If you are ordering this because gluten makes you ill rather than because you prefer it, this shop cannot give you what you need and we would rather say so than take your money. Nothing about our kitchen makes that safe and no amount of care in a room this size would.\n\nIf you prefer it, it is a decent crust and it is better than it was three years ago.",
+        "bullets": [
+          "10 inch par-baked crust, bought in. We do not make it",
+          "Shared oven, shared deck, shared cutter, flour in the air. Not safe for coeliac disease and we will not say it is",
+          "Toppings $1.75. Anything on the menu goes on it",
+          "It costs us $4.10 a crust and we sell four or five a week"
+        ],
+        "imgSeed": "gp-gf-10",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-salad",
+          "p-can",
+          "p-wings"
+        ]
+      },
+      {
+        "id": "p-toppings",
+        "catId": "c-pizza",
+        "name": "Toppings — the whole list and what they cost",
+        "price": 2.5,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "$1.75 on a 12 inch. $2.50 on a 16 inch. $4.00 across a 12 by 18 sheet. Double a topping is double the price and it is a real double, not a sprinkle.\n\n[b]Meat.[/b] Pepperoni, sausage, bacon, ham, ground beef, anchovy.\n\n[b]Vegetable.[/b] Mushroom, onion, sweet onion, green pepper, banana pepper, hot cherry pepper, black olive, tomato, spinach, garlic, pineapple.\n\n[b]Other.[/b] Extra cheese, ricotta.\n\nThat is the list. It has been that list since 2004 except for sweet onion, which went on in 2012 because one customer asked four times and was right.\n\nThings we are asked for and do not have: chicken of any kind, feta, artichoke, jalapeño, arugula, hot honey. We have thought about the hot honey.",
+        "bullets": [
+          "$1.75 on a 12 inch, $2.50 on a 16 inch, $4.00 on a sheet",
+          "Half and half toppings count as a half each and we round in your favour",
+          "Anchovy is on the list, we stock it, and we sell about eight tins a year",
+          "This listing is a price list. The website has no way to show one except as a product, so here it is as a product"
+        ],
+        "imgSeed": "gp-toppings-list",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-cheese",
+          "p-house",
+          "p-small"
+        ]
+      },
+      {
+        "id": "p-steak",
+        "catId": "c-subs",
+        "name": "Steak and Cheese, 10 inch",
+        "price": 11.5,
+        "rating": 4.4,
+        "reviewCount": 33,
+        "blurb": "Shaved steak on the flat top with onion, provolone melted over it, on a ten inch roll.\n\nMushroom, green pepper, hot cherry pepper are $0.75 each. Mayonnaise, lettuce and tomato are free and go on after, not before.\n\nRolls come Tuesday, Thursday and Saturday mornings from the bakery in New Carrow. On a Sunday night the roll is a Saturday roll and it is fine, and if we are out of rolls we are out of subs, which happens four or five times a year.",
+        "bullets": [
+          "10 inch roll. There is no other size",
+          "Extras $0.75: mushroom, green pepper, hot cherry pepper, extra cheese",
+          "Wrapped in paper, not foil. Foil steams it",
+          "If the board says NO SUBS it means the rolls did not come"
+        ],
+        "imgSeed": "gp-sub-steak",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-can",
+          "p-sticks",
+          "p-italian"
+        ]
+      },
+      {
+        "id": "p-italian",
+        "catId": "c-subs",
+        "name": "Italian Cold Cut, 10 inch",
+        "price": 10.25,
+        "rating": 4.5,
+        "reviewCount": 21,
+        "blurb": "Ham, salami, capicola, provolone. Lettuce, tomato, onion, oil and vinegar, oregano.\n\nCold, on a ten inch roll, wrapped in paper. It is the same sub it was when Nick made it and the only thing that has changed is where the meat comes from, because the distributor that had the account until 2019 stopped coming out this far.\n\nIf you want it hot we will put it through the oven for ninety seconds and it is a different and worse sandwich, and we will still do it.",
+        "bullets": [
+          "Ham, salami, capicola, provolone",
+          "Oil and vinegar goes on unless you say not to",
+          "Hot peppers $0.75",
+          "Made to order. It is not sitting in a case"
+        ],
+        "imgSeed": "gp-sub-italian",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-can",
+          "p-steak",
+          "p-salad"
+        ]
+      },
+      {
+        "id": "p-meatball",
+        "catId": "c-subs",
+        "name": "Meatball Parm, 10 inch",
+        "price": 10.5,
+        "rating": 4.6,
+        "reviewCount": 27,
+        "blurb": "Five meatballs split down the middle, sauce, mozzarella, through the oven until the cheese goes.\n\nThe meatballs are made here on Tuesday and Friday mornings, about a hundred and eighty at a time, and they are the same meatballs that go in the [url=/p/p-zititray]ziti tray[/url].\n\nThe sauce on this one is cooked, unlike the pizza sauce. Two sauces, two pots, and people ask about that more than you would think.",
+        "bullets": [
+          "Five meatballs, split. Made here Tuesday and Friday",
+          "Cooked sauce, not the pizza sauce",
+          "Extra cheese $0.75",
+          "It will leak through the paper by the time you get home. Eat it over the wrapper"
+        ],
+        "imgSeed": "gp-sub-meatball",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-can",
+          "p-chickparm",
+          "p-zititray"
+        ]
+      },
+      {
+        "id": "p-chickparm",
+        "catId": "c-subs",
+        "name": "Chicken Parm, 10 inch",
+        "price": 11.0,
+        "rating": 4.3,
+        "reviewCount": 19,
+        "blurb": "Breaded cutlet, cooked sauce, mozzarella, ten inch roll, through the oven.\n\nThe cutlets are bought in breaded and we fry them to order, which is four minutes, so this is the slowest sandwich on the menu and on a Friday at seven it is the one that holds up your order.\n\nNo chicken goes on a pizza here. It is asked for weekly. The answer has been no since 2004 and the reason is that the fryer is small and Friday is Friday.",
+        "bullets": [
+          "Fried to order, four minutes. Slowest thing on the menu",
+          "Cooked sauce and mozzarella, through the oven",
+          "No, not on a pizza. See the description",
+          "Plain fried cutlet with nothing on it is $9.00 and about six people a month order it that way"
+        ],
+        "imgSeed": "gp-sub-chickparm",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-meatball",
+          "p-can",
+          "p-sticks"
+        ]
+      },
+      {
+        "id": "p-pizzasub",
+        "catId": "c-subs",
+        "name": "Pizza Sub, 10 inch",
+        "price": 9.75,
+        "rating": 4.1,
+        "reviewCount": 9,
+        "blurb": "Pizza sauce, mozzarella and pepperoni on a ten inch roll, through the oven.\n\nIt is the cheapest hot sandwich on the board and it is what the high school buys at lunch, four or five of them at a time, paid for in ones.\n\nAny pizza topping on it is $0.75.",
+        "bullets": [
+          "Sauce, mozzarella, pepperoni. Any topping $0.75",
+          "Two minutes in the oven. Fastest hot sub we make",
+          "Cheapest hot thing on the menu",
+          "Cuts in half on request, which is how it is bought at lunch"
+        ],
+        "imgSeed": "gp-sub-pizza",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-can",
+          "p-slice",
+          "p-lunch"
+        ]
+      },
+      {
+        "id": "p-wings",
+        "catId": "c-sides",
+        "name": "Wings, 10 piece",
+        "price": 13.0,
+        "was": 15.6,
+        "rating": 4.2,
+        "reviewCount": 64,
+        "blurb": "Ten wings, fried, tossed in whatever you pick. Celery if we have it, which is most weeks.\n\nSauces: mild, hot, extra hot, barbecue, garlic parmesan, and plain. Extra hot is genuinely hot and the bottle is the same one we have bought since 2008.\n\nTwenty piece is $24.00, fifty piece is $56.00 and the fifty needs an hour because the fryer does about fourteen wings at a time and that is the whole constraint of this shop on a Friday night.",
+        "bullets": [
+          "10 for $13.00, 20 for $24.00, 50 for $56.00",
+          "Mild, hot, extra hot, barbecue, garlic parmesan, plain. Sauce on the side costs nothing",
+          "50 piece needs an hour. The fryer does fourteen at a time",
+          "They come smaller some weeks than others. That is the case we get and we do not get to pick"
+        ],
+        "imgSeed": "gp-wings-10",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-fridaybox",
+          "p-2liter",
+          "p-sticks"
+        ]
+      },
+      {
+        "id": "p-bread",
+        "catId": "c-sides",
+        "name": "Garlic Bread",
+        "price": 5.5,
+        "rating": 4.4,
+        "reviewCount": 18,
+        "blurb": "Half a sub roll split, garlic butter, through the oven. With mozzarella on it is $7.00.\n\nSauce for dipping is a small cup and it is free. We stopped charging for it in 2015 after Marcy pointed out that we were charging fifty cents for four ounces of something we already had a pot of.",
+        "bullets": [
+          "$5.50 plain, $7.00 with cheese",
+          "Dipping sauce free, and yes you can have two",
+          "Made with the same rolls as the subs, so on a no-roll day there is no garlic bread either",
+          "Goes soft in the box. Eat it first"
+        ],
+        "imgSeed": "gp-garlic-bread",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-cheese",
+          "p-salad",
+          "p-sticks"
+        ]
+      },
+      {
+        "id": "p-sticks",
+        "catId": "c-sides",
+        "name": "Mozzarella Sticks, 6",
+        "price": 7.25,
+        "rating": 4.0,
+        "reviewCount": 22,
+        "blurb": "Six, fried, with a cup of sauce. Bought in frozen, and we are not going to pretend we roll them here.\n\nThey share the fryer with the wings and the cutlets, so on a Friday night they come out when the fryer has a gap, which is usually with the rest of the order and occasionally two minutes after it.",
+        "bullets": [
+          "Six sticks, cup of sauce included",
+          "Bought in frozen. Everybody's are",
+          "Same fryer as the wings. Not separate and not gluten free",
+          "Twelve for $13.00"
+        ],
+        "imgSeed": "gp-mozz-sticks",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-wings",
+          "p-2liter",
+          "p-bread"
+        ]
+      },
+      {
+        "id": "p-rolls",
+        "catId": "c-sides",
+        "name": "Pepperoni Rolls, 3",
+        "price": 6.0,
+        "rating": 4.7,
+        "reviewCount": 31,
+        "blurb": "Pizza dough rolled around pepperoni and mozzarella, baked, three to an order, sauce on the side.\n\nMade with the dough we would otherwise have too much of, which is why some days there are forty of them on the rack at eleven and some days there are none by six.\n\nThe Gridfall High band sells these at home football games. They buy them at $1.40 each and sell them for $3.00 and we have never once asked them to stop.",
+        "bullets": [
+          "Three for $6.00, six for $11.00",
+          "Sauce on the side, included",
+          "Made from the day's spare dough. When they are gone they are gone",
+          "Reheat in an oven at 350 for six minutes. A microwave ruins them"
+        ],
+        "imgSeed": "gp-pepperoni-rolls",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-can",
+          "p-slice",
+          "p-cheese"
+        ]
+      },
+      {
+        "id": "p-salad",
+        "catId": "c-sides",
+        "name": "Antipasto Salad",
+        "price": 9.5,
+        "rating": 4.1,
+        "reviewCount": 15,
+        "blurb": "Lettuce, tomato, onion, black olive, banana pepper, ham, salami, provolone, in a black plastic bowl with a lid that mostly stays on.\n\nDressing is house Italian, in a cup on the side, and there is a second cup in the bag because everybody asks for a second cup.\n\nA garden salad with no meat is $7.00. A large antipasto that will feed three is $16.00.",
+        "bullets": [
+          "$9.50 regular, $16.00 large, $7.00 garden with no meat",
+          "House Italian on the side. Ranch or blue cheese if you ask",
+          "The lid is the weak point of this product and we know it",
+          "No chicken salad, no caesar, no croutons. We have looked into croutons"
+        ],
+        "imgSeed": "gp-antipasto",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-white",
+          "p-bread",
+          "p-can"
+        ]
+      },
+      {
+        "id": "p-2liter",
+        "catId": "c-drinks",
+        "name": "2 Liter Bottle",
+        "price": 3.75,
+        "rating": 4.0,
+        "reviewCount": 8,
+        "blurb": "Cola, diet cola, lemon-lime, orange, root beer, ginger ale.\n\nIgnore the same-day delivery line the website puts on this one. It is a setting we cannot find. The bottle comes with your pizza, in the same bag, carried by the same person.",
+        "bullets": [
+          "Six kinds. Whatever is in the cooler is what there is",
+          "Comes cold unless we have just filled the cooler, in which case it comes cool",
+          "Cheaper across the street at Hoffman's and we will not pretend otherwise",
+          "The delivery line on this listing is the template. Nobody is flying anything to you"
+        ],
+        "imgSeed": "gp-2liter",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": true,
+        "reviews": [],
+        "alsoBought": [
+          "p-cheese",
+          "p-wings",
+          "p-fridaybox"
+        ]
+      },
+      {
+        "id": "p-can",
+        "catId": "c-drinks",
+        "name": "Can, 12 oz",
+        "price": 1.25,
+        "rating": 4.2,
+        "reviewCount": 6,
+        "blurb": "Out of the cooler by the counter. Same six kinds as the bottles, plus whatever oddity Donna bought a case of, which this autumn is a birch beer nobody is buying.",
+        "bullets": [
+          "$1.25, or $1.00 with a sub at lunch",
+          "Cooler is by the door and you can get it yourself",
+          "Water is $1.25 and is the same price as everything else on purpose",
+          "Coffee, no. There has never been coffee here and there is a diner-shaped hole in this town about that"
+        ],
+        "imgSeed": "gp-can-12oz",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-slice",
+          "p-lunch",
+          "p-pizzasub"
+        ]
+      },
+      {
+        "id": "p-cannoli",
+        "catId": "c-drinks",
+        "name": "Cannoli",
+        "price": 3.5,
+        "rating": 4.6,
+        "reviewCount": 13,
+        "blurb": "Filled Thursday morning, sold until they are gone, which is usually Friday night and occasionally Thursday at two.\n\nThe shells come from the same New Carrow bakery as the rolls. The filling is made here. Chocolate chips on the ends because that is how Angela Cortese did it and Donna learned it from her in 2004 standing at this counter.\n\nWe do not have them Tuesday, Wednesday or Sunday. People ask on a Sunday.",
+        "bullets": [
+          "$3.50 each, $18.00 for six",
+          "Thursday and Friday only, until they run out",
+          "Shells bought in, filling made here",
+          "Six in a box will not survive being put in the same bag as a pizza. We will tell you this at the counter too"
+        ],
+        "imgSeed": "gp-cannoli",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-slice",
+          "p-white",
+          "p-can"
+        ]
+      },
+      {
+        "id": "p-tuesday",
+        "catId": "c-specials",
+        "name": "Tuesday — two 12 inch cheese, $19",
+        "price": 19.0,
+        "was": 21.5,
+        "rating": 4.8,
+        "reviewCount": 47,
+        "blurb": "Two twelve inch cheese pizzas for $19.00, all day Tuesday, eat in, take out or delivered.\n\nToppings are full price on both, which is the part people argue about, and we have written it on the board in three different ways over the years and somebody still argues about it every month.\n\nThis has been $19 since March 2024. Before that it was $17 for two years. It will be $19 for as long as we can hold it there.",
+        "bullets": [
+          "Two 12 inch cheese, $19.00, Tuesday only",
+          "Toppings $1.75 each, on each pizza. Not included",
+          "Works on delivery. The $3 in-town charge still applies",
+          "Tuesday is the quietest day we have and that is the entire reason this exists"
+        ],
+        "imgSeed": "gp-tuesday-twofer",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-small",
+          "p-2liter",
+          "p-bread"
+        ]
+      },
+      {
+        "id": "p-lunch",
+        "catId": "c-specials",
+        "name": "Lunch — two slices and a can, $6.50",
+        "price": 6.5,
+        "rating": 4.7,
+        "reviewCount": 55,
+        "blurb": "Two cheese slices and a twelve ounce can, $6.50, eleven to two, Tuesday through Saturday. Pepperoni slices are $0.75 more each.\n\nThis is a counter special. It is not on delivery, and the order system will let you add it to a delivery order, and when it does we telephone you and sort it out, and we are sorry about that.\n\nThere are six tables and a television in here. Nobody will hurry you. Most days between noon and one there are four people from the county building and two from the post office.",
+        "bullets": [
+          "Two cheese slices and a can, $6.50. Pepperoni +$0.75 a slice",
+          "11:00 to 2:00, Tuesday to Saturday. Counter only",
+          "Not available for delivery, whatever the order page lets you do",
+          "Six tables, one television, and it is usually on the weather"
+        ],
+        "imgSeed": "gp-lunch-special",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-slice",
+          "p-can",
+          "p-pizzasub"
+        ]
+      },
+      {
+        "id": "p-fridaybox",
+        "catId": "c-specials",
+        "name": "Friday Box — two 16 inch cheese, 20 wings, 2 liter, $58",
+        "price": 58.0,
+        "was": 69.5,
+        "rating": 4.5,
+        "reviewCount": 38,
+        "blurb": "Two sixteen inch cheese pizzas, twenty wings in one sauce, and a two litre bottle. $58.00, Friday and Saturday only.\n\nToppings are $2.50 a pizza. Splitting the wings into two sauces is fine and costs nothing.\n\n[b]If you want this on a Friday night, order it before five.[/b] After six the wait on twenty wings is forty minutes on its own because the fryer does fourteen at a time, and that number does not change no matter how the night is going.",
+        "bullets": [
+          "Two 16 inch cheese, 20 wings, one 2 litre. $58.00",
+          "Friday and Saturday only",
+          "Order before 5:00 if you want it before 7:00",
+          "Separately this is $60.75, so the saving is $2.75 and the real point is that it is one thing to say on the telephone"
+        ],
+        "imgSeed": "gp-friday-box",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-wings",
+          "p-meat",
+          "p-2liter"
+        ]
+      },
+      {
+        "id": "p-zititray",
+        "catId": "c-specials",
+        "name": "Baked Ziti Tray, feeds about 12 — $48, 48 hours notice",
+        "price": 48.0,
+        "rating": 4.9,
+        "reviewCount": 9,
+        "blurb": "A half pan of baked ziti with the cooked sauce and the meatballs cut through it. Feeds about twelve as a main and about twenty alongside pizza.\n\n[b]We stopped selling ziti by the plate in 2024.[/b] It sat, it held a burner we needed, and on a Friday it was one more thing. The tray stayed because the tray is a different business: it goes to the Armory, the fire hall, funerals, and the Wednesday supper at First Presbyterian about four times a year.\n\nForty-eight hours notice, telephone Donna on 782-2440. The order system still lists a ziti dinner for $12.50. That has not existed for two years. If you order it you will get a telephone call.\n\nWith a tray of meatballs instead, $52.00. With no meat, $44.00.",
+        "bullets": [
+          "Half pan, feeds about 12. $48.00. Meatless $44.00, all meatballs $52.00",
+          "48 hours notice, by telephone, not through the website",
+          "Comes hot in the pan with a lid, or cold with heating instructions on the lid in marker",
+          "The $12.50 ziti dinner in the online menu was removed from our menu in 2024 and the vendor has not removed it from theirs"
+        ],
+        "imgSeed": "gp-ziti-tray",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-sheet",
+          "p-salad",
+          "p-bread"
+        ]
+      },
+      {
+        "id": "p-punchcard",
+        "catId": "c-specials",
+        "name": "The punch card",
+        "price": 0.0,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "Ten sixteen inch pizzas, the eleventh is free. Any toppings. It is a paper card, we punch it with a hole punch, and if you lose it we cannot help you.\n\nThe card does not work on delivery orders because the driver does not carry the punch. Bring it in the next time you come in and we will punch it for the ones you can remember, and we will believe you.\n\nThe order system sells a loyalty add-on for $29 a month that would do this properly with an app. The punch is $4.00 and Ray has had it since 2004.\n\nThis is listed as a product because a product is the only kind of thing this website knows how to make. It is not for sale and the price is not $0.00, it is nothing.",
+        "bullets": [
+          "Buy 10 sixteen inch, get the 11th free. Any toppings",
+          "Counter only. The drivers do not carry the punch",
+          "Lost card, lost punches. There is no record anywhere else",
+          "About sixty cards are in circulation and four people have filled two"
+        ],
+        "imgSeed": "gp-punch-card",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-cheese",
+          "p-house",
+          "p-tuesday"
+        ]
+      },
+      {
+        "id": "p-hours",
+        "catId": "c-info",
+        "name": "Hours, holidays, and the two days we were shut in February",
+        "price": 0.0,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "[b]Tuesday through Saturday, 11:00 a.m. to 10:00 p.m.[/b]\n[b]Sunday, 12:00 noon to 9:00 p.m.[/b]\n[b]Closed Monday.[/b]\n\nLast delivery order goes in at 9:30. Last counter order at 9:45. The ovens go off at 9:50. If you walk in at 9:52 we will probably still make you something and you should not plan your evening around that.\n\n[b]Closed:[/b] Thanksgiving, 25 December, 1 January, and the week of the Fourth of July. We have closed that week every year since 2009 and we will close it again. Christmas Eve we are open 11:00 to 4:00.\n\n[b]February.[/b] The six inch main under Third Street at Depot went on Wednesday 4 February and we were shut Wednesday and Thursday. The boil notice came off at 12:15 on Friday the 6th and we opened at 4:00 that afternoon. We threw out forty pounds of dough, a case of tomatoes and everything in the lowboy. Nobody got ill and nobody asked us to close, we just could not run a kitchen on bottled water.\n\n[b]Power.[/b] If the power is off we are shut. The ovens are gas and the ignition is electric and that is the end of the argument. In June 2003, when the substation went, this shop was Nick's and it was dark for four days, and he gave the dough away on the sidewalk on the second day rather than watch it go over. Ray was washing pans here that week and remembers the smell of it more than anything else.\n\n[b]The county assistant is wrong about us[/b] and it costs us about four telephone calls a week. It says we are open Monday and that we deliver to Ashkettle. We are closed on Monday and we have never delivered to Ashkettle, which is twelve miles. There is no way to correct it. Marcy looked for a form for an hour.",
+        "bullets": [
+          "Tue-Sat 11:00 a.m. to 10:00 p.m. Sun 12:00 to 9:00 p.m. Closed Monday",
+          "Delivery cut-off 9:30 p.m. Counter cut-off 9:45 p.m.",
+          "Closed Thanksgiving, 25 December, 1 January, and the week of 4 July",
+          "[url=synth://ask.verity.ai/]VerityAssist[/url] has our hours wrong and lists a delivery area we do not have",
+          "People ask whether we are open in [url=synth://gridfall.chat/c/c-general]the county chat[/url] more often than they ring us, and somebody in there is usually right",
+          "This is a page. The website only sells products, so the page is a product"
+        ],
+        "imgSeed": "gp-hours-sign",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-delivery",
+          "p-about",
+          "p-ordering"
+        ]
+      },
+      {
+        "id": "p-delivery",
+        "catId": "c-info",
+        "name": "We Deliver — where, when, and how much",
+        "price": 0.0,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "[b]$15 minimum on any delivery.[/b] One driver Tuesday through Thursday and Sunday, two on Friday and Saturday.\n\n[b]In the village, $3.[/b] Anywhere inside the Gridfall village line. Written as streets, because people ask for it that way: north to where the pavement ends on Bell Hill Road, east to the Quarry Road bridge, south to the county building and the lots behind it, west to the Armory and the first four houses out the Route 62 extension. Everything between those four points is $3 and always has been.\n\n[b]Just outside, $5.[/b] Tannery Flats, Bracken Lane, Creekside, the two courts off Dunmore, Meacham Street, and Pell Road as far as the second cattle guard. That is the line. The house after the second cattle guard has asked four times and the answer is still no and we are still sorry about it.\n\n[b]Nowhere else, at any price.[/b] Not Ashkettle. Not Marchfield. Not Halsey, Coyne Flats, New Carrow, Milbrook or Kerrin. Not the fairgrounds during fair week, because in fair week we cannot get back. Not the trailhead lot. Not Kestrel Road past the district boundary.\n\n[b]County General is in Marchfield and we do not go there.[/b] We are asked most weeks, usually by somebody sitting with a relative, and it is the one no we hate giving. It is twenty-two minutes each way and what arrives is not the same pizza that left.\n\n[b]Gridfall High.[/b] The office takes deliveries until 2:00 and then it does not. Four pizzas have come back to this shop for that reason and they were all paid for.\n\n[b]A house number.[/b] We will not send a driver to an address with no number on it after dark. Cody spent eleven minutes on Creekside in February going up and down with the window open. Put the number on the post or meet him at the road.\n\n[b]The drivers carry $20 in change and that is all.[/b] A $100 bill at 8:45 on a Friday is a problem for everybody. Cards on delivery are fine, the reader works about nine times in ten, and when it does not you can pay the next time and people do.\n\nDelivery time on a Friday between 6:00 and 7:30 is an hour. It is an hour in October and it is an hour in June. If someone tells you twenty-five minutes on a Friday at 6:30 they have made it up, and if the website tells you that it has made it up too.",
+        "bullets": [
+          "$15 minimum. $3 in the village, $5 just outside, and no third zone",
+          "Nothing to Ashkettle, Marchfield, Halsey, Coyne Flats, New Carrow, Milbrook or Kerrin",
+          "Friday 6:00 to 7:30 is an hour. It has been an hour for twenty years",
+          "Drivers carry $20 in change. Card reader works most of the time",
+          "No number on the house after dark, no delivery. Meet us at the road and we will not mind"
+        ],
+        "imgSeed": "gp-delivery-map",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-hours",
+          "p-ordering",
+          "p-about"
+        ]
+      },
+      {
+        "id": "p-ordering",
+        "catId": "c-info",
+        "name": "Ordering online, and what to do when it will not work",
+        "price": 0.0,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "Written by Marcy, who put the thing in and who answers for it.\n\nThe ORDER ONLINE button is from a company called Menubridge. It is not part of this website and we did not write it. It sits at the top of the page on a computer and at the bottom on a phone, which is the opposite of where you want it.\n\n[b]It does not work on some phones, and here is exactly which.[/b]\n\n[list][*]On an Android phone older than about 2021 the second screen, the one with the toppings, comes up blank and the back button takes you to the beginning. This is the one that gets reported to us most.[*]On an iPhone in private browsing the basket empties every time you go back to the menu. It looks like it has taken your order. It has not.[*]On any phone with the text size turned up past about 130 percent, the Place Order button sits underneath the total and there is no way to scroll to it. Two people we know of have given up on this and both of them are over seventy.[*]On a computer it is fine.[/list]\n\nI opened a ticket on Wednesday 4 March. It is ticket 44-1187. I have had three replies.\n\n[quote=Menubridge Support]Thank you for contacting us. Our engineering team was unable to reproduce the issue on a supported device. Please confirm that the customer has cleared their browser cache and is using the latest version of their operating system. We appreciate your patience and value you as a partner.[/quote]\n\nThe customer is seventy-four and lives on Bracken Lane. I am not going to tell her to clear her cache.\n\n[b]So: if it does not work, telephone 782-2440.[/b] Somebody picks that up. That is the whole point of it. Between five and seven on a Friday it rings a while because there are three of us and two are at the oven, but it gets picked up.\n\n[b]If the price in the order system is different from the price on this page, this page is right and we will charge you what is on this page.[/b] The Menubridge menu is a second copy of the menu and it drifts. It still lists a ziti dinner we stopped making in 2024 and it has the ten piece wings at $11.50, which was the 2023 price.\n\n[b]What it costs us,[/b] since people ask and there is no reason not to say. Menubridge is $49 a month, plus six percent of the order, plus thirty-five cents a transaction. On a $24 pizza that is about $1.79. The card reader at the counter takes 2.6 percent and ten cents. The website you are reading is $18 a month on a storefront plan my cousin set up in 2016 and it is the cheapest thing we could find that would let us put prices up. None of that is a complaint. It is just where the money goes, and when somebody telephones instead of using the button, six percent of it stays here.\n\n[b]The receipt email[/b] comes from a no-reply address that is not ours and that we cannot change. If you reply to it, nobody reads it. Ever.\n\n[b]The tablet.[/b] The order comes through to a tablet on the shelf by the register and it beeps once. Once. On a Friday night with the fryer going nobody hears one beep, so it is on the shelf where you can see the screen light up, and I set an alarm on my phone for every ten minutes between six and eight. That is the system. It is not a good system and it is the one that fits behind that counter.",
+        "bullets": [
+          "Old Android: toppings screen blank. iPhone private browsing: basket empties. Text size over 130 percent: cannot reach the button",
+          "Ticket 44-1187 with the vendor, opened 4 March 2026, three replies, unresolved",
+          "If it will not work, ring [b]782-2440[/b]. A person answers",
+          "Prices on this page win over prices in the order system, every time",
+          "It costs us $49 a month plus six percent plus $0.35 an order. Telephoning keeps that here"
+        ],
+        "imgSeed": "gp-order-widget",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-hours",
+          "p-delivery",
+          "p-about"
+        ]
+      },
+      {
+        "id": "p-about",
+        "catId": "c-info",
+        "name": "About us — who is here and what they do",
+        "price": 0.0,
+        "rating": 0,
+        "reviewCount": 0,
+        "blurb": "[b]142 Third Street, Gridfall. 782-2440.[/b] Four doors up from 118, which is the Ledger building, and where the lights are on in two rooms at the back and the front door has not opened in years.\n\nWe are not [url=synth://halsey-pizza.synth/]Halsey Pizza House[/url]. They are in Halsey and we are in Gridfall, we take two or three of their calls a month and they take ours, and both shops now know the other one's number by heart.\n\nNick and Angela Cortese opened this shop in 1979 and called it Cortese's. Ray Sabol started here in 1989 washing pans and doing Saturday nights, and stayed. Ray and Donna bought it from Nick in 2004 and changed the name, because Nick asked us to take his name off it when he stopped standing behind the counter. He is eighty-nine and in Halsey and he telephones every December to ask whether we are still using the same flour. We are.\n\n[b]There are three of us.[/b]\n\nRay does the dough and the ovens and opens up at 8:30. Donna does the books, the telephone, the catering and the ordering, and she is the certified food protection manager on the permit. Marcy came back in 2019 and runs the nights, the website and the order system, which is the worst job of the three.\n\nWe have two drivers, Cody Reinert and Tasha Fogel, and Aaron Deitz on the counter three afternoons a week, and every one of them is paid through the same book Donna has kept since 2004.\n\n[b]What we buy and from where.[/b] Flour comes Tuesday from a mill in the state capital, twelve fifty-pound bags a week in the summer and sixteen in football season. Rolls and cannoli shells come Tuesday, Thursday and Saturday from a bakery in New Carrow. Cheese is whole milk mozzarella in five pound blocks and we shred it here, and that is the one thing in this shop Ray will argue about with a stranger. Tomatoes in season come from Ardelle Purkey on Bell Hill Road. The pepperoni comes on the same truck as the cheese and if that truck is late on a Thursday it is a long Friday.\n\n[b]The building.[/b] Six tables, one television, a counter, and a four deck gas oven that came with the place. The left deck runs fifteen degrees hot and has since at least 1998, and two repairmen have been out to it and both said the same thing, which is that it is a 1970s oven and this is what they do.\n\n[b]Inspections.[/b] Routine inspection Thursday 14 May 2026, score 96. Two core violations, a missing light shield over the make table and a dripping mop sink faucet, both fixed the same week. That report is not on the [url=synth://verityhealth.gov/s/inspection-results]health department's published page[/url] because that page only covers August and September; ask at their counter and they will print it. Our permit is Category 3 and it is $310 a year.\n\n[b]Things we have said no to.[/b] The newspaper site rang twice about a Community Spotlight. It is $400 and they write it. We said no both times. The order company wanted $29 a month for a loyalty app to replace a $4.00 hole punch. The softball league asks every March about [url=synth://countysoftball.org/teams]a sponsorship, which is $340[/url], and we have said maybe next year eleven times, and one of these years Donna is going to lose that argument with herself.\n\n[b]Two more small ones.[/b] The A-frame sign on the sidewalk is permitted, $85 a year, renewed at the counter in the county building nine doors down, which is the only errand in this business that takes less time than it should. Everything else the county wants is on [url=synth://verity.county.gov/]the portal[/url] and costs 2.4 percent more than paying at the counter. When we needed a driver in 2023 we put a card in the window and an ad on [url=synth://classifieds.verity.net/]the classifieds[/url], and the card is what worked. The old prep table went on [url=synth://gridfall-buysell.net/]Gridfall Buy and Sell[/url] for $140 to a man in Halsey who came with a trailer the same night.\n\n[b]And one we have given up on.[/b] [url=synth://now.verityledger.com/]The Ledger's site[/url] lists us in a roundup of places to eat in Gridfall, along with two that closed in 2019 and one that was never a restaurant. We are in it correctly, which is the odd part. There is nobody at that paper to tell about the other three.\n\n[b]Things we do.[/b] Eight sheet pizzas go to the Wednesday supper at First Presbyterian four times a year. The Gridfall High band buys pepperoni rolls at cost for the home games. In February when the main went, Hoffman's ran an extension cord across the alley for our freezer, and we have not forgotten it.\n\n[b]The street.[/b] There were thirty-one storefronts on this block and eleven of them were empty when somebody counted in August. We are not one of them. Ray has said for twenty-two years that this shop stays open because it is the only place in Gridfall you can get a hot supper for four people for under thirty dollars, and because there is nothing else on this street after six.",
+        "bullets": [
+          "142 Third Street, Gridfall. 782-2440. Since 1979, ours since 2004",
+          "Ray, Donna and Marcy Sabol. Two drivers and one counter job",
+          "Cheese is shredded here. Dough is made here. Everything else is bought and we will tell you from where",
+          "Last inspection 14 May 2026, score 96. Category 3 permit, $310 a year",
+          "[url=synth://veritycountytoday.com/article/b-storefronts]Eleven of the thirty-one storefronts on this block[/url] were empty in August. We are not one of them"
+        ],
+        "imgSeed": "gp-142-third-street",
+        "seller": "Gridfall Pizza",
+        "sellerKind": "brand",
+        "prime": false,
+        "reviews": [],
+        "alsoBought": [
+          "p-hours",
+          "p-delivery",
+          "p-house"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,537 @@
+/* synthnet :: qa skin  ---  .skin-stack
+ * White cards, orange accents, green accepted tick.
+ * All rules scoped under .skin-stack. Readable at 360px. AA contrast.
+ */
+
+.skin-stack {
+  background: #f1f2f3;
+  color: #232629;
+  font-family: -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.skin-stack .qa-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #f1f2f3;
+}
+
+/* ---- header ---- */
+
+.skin-stack .qa-head {
+  background: #ffffff;
+  border-top: 3px solid #d1601a;
+  border-bottom: 1px solid #d6d9dc;
+}
+
+.skin-stack .qa-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 8px 12px;
+}
+
+.skin-stack .qa-brand {
+  font-weight: 700;
+  font-size: 16px;
+  color: #232629;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.skin-stack .qa-brand:hover,
+.skin-stack .qa-brand:focus {
+  color: #9c4210;
+  text-decoration: underline;
+}
+
+.skin-stack .qa-search {
+  flex: 1 1 180px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #a8adb4;
+  border-radius: 3px;
+  background: #ffffff;
+  padding: 5px 8px;
+}
+
+.skin-stack .qa-search-ico { color: #4a5055; }
+
+.skin-stack .qa-search-ph {
+  color: #4a5055;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.skin-stack .qa-online {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #3d4144;
+  white-space: nowrap;
+}
+
+.skin-stack .qa-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2f6f3e;
+  display: inline-block;
+}
+
+/* ---- layout ---- */
+
+.skin-stack .qa-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 12px 24px;
+}
+
+.skin-stack .qa-main {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.skin-stack .qa-side {
+  flex: 0 1 260px;
+  min-width: 0;
+}
+
+@media (max-width: 720px) {
+  .skin-stack .qa-grid { flex-direction: column; }
+  .skin-stack .qa-side { flex: 1 1 auto; width: 100%; }
+}
+
+/* ---- headings ---- */
+
+.skin-stack .qa-h1 {
+  font-size: 21px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: #232629;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-h1-q {
+  font-size: 23px;
+  line-height: 1.3;
+  border-bottom: 1px solid #d6d9dc;
+  padding-bottom: 10px;
+}
+
+.skin-stack .qa-h2 {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 22px 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d6d9dc;
+  color: #232629;
+}
+
+.skin-stack .qa-h2-live { color: #8a4a12; }
+
+/* ---- cards ---- */
+
+.skin-stack .qa-cards,
+.skin-stack .qa-newlist,
+.skin-stack .qa-tags,
+.skin-stack .qa-comments {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skin-stack .qa-card {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.skin-stack .qa-card-closed { background: #fbf8f4; }
+
+.skin-stack .qa-card-ad {
+  display: block;
+  background: #fff8f2;
+  border-style: dashed;
+}
+
+.skin-stack .qa-card-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.skin-stack .qa-card-h {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.skin-stack .qa-qlink {
+  color: #0a4f8c;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-qlink:hover,
+.skin-stack .qa-qlink:focus {
+  color: #06335b;
+  text-decoration: underline;
+}
+
+.skin-stack .qa-excerpt {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #3d4144;
+  overflow-wrap: break-word;
+}
+
+/* ---- stats ---- */
+
+.skin-stack .qa-stats {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 62px;
+  font-size: 12px;
+  color: #3d4144;
+  text-align: right;
+}
+
+.skin-stack .qa-stat {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  align-items: baseline;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+.skin-stack .qa-stat-n { font-weight: 700; color: #232629; }
+.skin-stack .qa-stat-l { color: #4a5055; }
+.skin-stack .qa-stat-dim .qa-stat-n { font-weight: 400; color: #4a5055; }
+
+.skin-stack .qa-stat-ok {
+  background: #2f6f3e;
+  border-color: #2f6f3e;
+}
+
+.skin-stack .qa-stat-ok .qa-stat-n,
+.skin-stack .qa-stat-ok .qa-stat-l { color: #ffffff; }
+
+@media (max-width: 420px) {
+  .skin-stack .qa-card { flex-direction: column-reverse; }
+  .skin-stack .qa-stats {
+    flex-direction: row;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  .skin-stack .qa-stat { justify-content: flex-start; }
+}
+
+/* ---- tags ---- */
+
+.skin-stack .qa-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 6px 0;
+}
+
+.skin-stack .qa-tag {
+  display: inline-block;
+  background: #e1ecf4;
+  color: #10486e;
+  border: 1px solid #cfe2ef;
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-size: 12px;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-tag:hover,
+.skin-stack .qa-tag:focus {
+  background: #cfe2ef;
+  color: #07304a;
+}
+
+.skin-stack .qa-tag.is-on {
+  background: #10486e;
+  color: #ffffff;
+  border-color: #10486e;
+}
+
+.skin-stack .qa-tag-big {
+  font-size: 15px;
+  padding: 3px 9px;
+}
+
+.skin-stack .qa-tags li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.skin-stack .qa-tagcount {
+  font-size: 11px;
+  color: #4a5055;
+}
+
+.skin-stack .qa-tagblurb {
+  font-size: 13px;
+  color: #3d4144;
+  margin: 0 0 14px;
+}
+
+/* ---- meta ---- */
+
+.skin-stack .qa-meta {
+  font-size: 12px;
+  color: #4a5055;
+  margin-top: 4px;
+}
+
+.skin-stack .qa-meta-top { margin: 0 0 14px; }
+
+.skin-stack .qa-meta-a {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #eceef0;
+}
+
+.skin-stack .qa-by { color: #0a4f8c; font-weight: 600; }
+
+/* ---- question / answer bodies ---- */
+
+.skin-stack .qa-qbody,
+.skin-stack .qa-answer {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  padding: 14px 12px;
+  margin-bottom: 10px;
+}
+
+.skin-stack .qa-answer-ok {
+  border-left: 4px solid #2f6f3e;
+  background: #f7fcf8;
+}
+
+.skin-stack .qa-gutter {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 34px;
+  color: #4a5055;
+}
+
+.skin-stack .qa-arrow { font-size: 14px; color: #6b7177; line-height: 1; }
+
+.skin-stack .qa-avotes {
+  font-size: 17px;
+  font-weight: 700;
+  color: #232629;
+}
+
+.skin-stack .qa-tick {
+  margin-top: 4px;
+  font-size: 20px;
+  line-height: 1;
+  color: #2f6f3e;
+  font-weight: 700;
+}
+
+.skin-stack .qa-abody {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-abody p { margin: 0 0 10px; }
+.skin-stack .qa-abody p:last-child { margin-bottom: 0; }
+
+.skin-stack .qa-abody a { color: #0a4f8c; }
+
+.skin-stack .qa-abody code {
+  background: #eceef0;
+  border: 1px solid #dcdfe2;
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #232629;
+}
+
+.skin-stack .qa-abody blockquote {
+  margin: 0 0 10px;
+  padding: 4px 10px;
+  border-left: 3px solid #d1601a;
+  background: #fdf7f2;
+  color: #3d4144;
+}
+
+.skin-stack .qa-abody ul { margin: 0 0 10px; padding-left: 20px; }
+
+/* ---- comments ---- */
+
+.skin-stack .qa-comments {
+  margin-top: 10px;
+  border-top: 1px solid #eceef0;
+}
+
+.skin-stack .qa-comment {
+  border-bottom: 1px solid #eceef0;
+  padding: 6px 0;
+  font-size: 12px;
+  color: #3d4144;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-comment p { margin: 0; display: inline; }
+
+.skin-stack .qa-cby { color: #0a4f8c; font-weight: 600; }
+
+/* ---- closed ---- */
+
+.skin-stack .qa-closed {
+  font-size: 12px;
+  color: #7a3a0d;
+  background: #fdf0e3;
+  border: 1px solid #f0d5b8;
+  border-radius: 3px;
+  padding: 4px 8px;
+  margin: 0 0 8px;
+  display: inline-block;
+}
+
+.skin-stack .qa-closed-big {
+  display: block;
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+/* ---- newest list ---- */
+
+.skin-stack .qa-newrow {
+  background: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-left: 3px solid #d1601a;
+  border-radius: 3px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  overflow-wrap: break-word;
+}
+
+.skin-stack .qa-newtitle { color: #232629; }
+.skin-stack .qa-newmeta { color: #4a5055; font-size: 12px; }
+
+/* ---- sidebar ---- */
+
+.skin-stack .qa-side-h {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #3d4144;
+  margin: 0 0 8px;
+}
+
+.skin-stack .qa-note {
+  margin-top: 14px;
+  background: #fdf7f2;
+  border: 1px solid #f0d5b8;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+  color: #3d4144;
+}
+
+.skin-stack .qa-note strong { color: #7a3a0d; display: block; margin-bottom: 4px; }
+.skin-stack .qa-note p { margin: 0; }
+
+/* ---- ads ---- */
+
+.skin-stack .qa-ad {
+  border: 1px dashed #c9a37a;
+  background: #fffaf4;
+  border-radius: 3px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.skin-stack .qa-ad-banner { margin: 10px 12px 0; }
+.skin-stack .qa-ad-box { margin-top: 14px; }
+.skin-stack .qa-ad-inline { margin: 10px 0; }
+.skin-stack .qa-ad-mid { margin: 12px 0; }
+
+/* ---- misc ---- */
+
+.skin-stack .qa-empty {
+  background: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  padding: 16px;
+  color: #3d4144;
+  margin: 0;
+}
+
+.skin-stack .qa-404 {
+  background: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-top: 3px solid #d1601a;
+  border-radius: 3px;
+  padding: 26px 16px;
+  text-align: center;
+}
+
+.skin-stack .qa-404 h1 {
+  font-size: 44px;
+  margin: 0 0 8px;
+  color: #d1601a;
+}
+
+.skin-stack .qa-404 p {
+  margin: 0 0 14px;
+  color: #3d4144;
+}
+
+.skin-stack .qa-back {
+  color: #0a4f8c;
+  font-weight: 600;
+}
+
+.skin-stack .qa-foot {
+  border-top: 1px solid #d6d9dc;
+  background: #e3e6e8;
+  padding: 14px 12px;
+  font-size: 12px;
+  color: #3d4144;
+}
+
+.skin-stack .qa-foot-dim { color: #545a60; }
+
+.skin-stack img,
+.skin-stack svg { max-width: 100%; height: auto; }

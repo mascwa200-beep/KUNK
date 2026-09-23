@@ -1,0 +1,422 @@
+/* synthnet :: board skin  ---  .skin-yotsuba
+ * Cream and green imageboard palette, red subject lines, monospace post numbers.
+ * All rules scoped under .skin-yotsuba. Readable at 360px. AA contrast.
+ */
+
+.skin-yotsuba {
+  background: #ffffee;
+  color: #1a0d0d;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.skin-yotsuba .bd-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+/* ---- header ---- */
+
+.skin-yotsuba .bd-topbar {
+  background: #d6daf0;
+  border-bottom: 1px solid #b7c5d9;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+.skin-yotsuba .bd-toplink {
+  color: #34345c;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.skin-yotsuba .bd-toplink:hover,
+.skin-yotsuba .bd-toplink:focus { color: #7b1a1a; text-decoration: underline; }
+
+.skin-yotsuba .bd-topdim { color: #4b4b6b; }
+
+.skin-yotsuba .bd-banner {
+  text-align: center;
+  padding: 8px 6px 4px;
+}
+
+.skin-yotsuba .bd-banner svg {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #8a7f6b;
+}
+
+.skin-yotsuba .bd-h1 {
+  text-align: center;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #9c2a2a;
+  margin: 2px 0 0;
+  overflow-wrap: break-word;
+}
+
+.skin-yotsuba .bd-sub {
+  text-align: center;
+  font-size: 12px;
+  color: #4a3b33;
+  margin: 2px 6px 0;
+  overflow-wrap: break-word;
+}
+
+.skin-yotsuba .bd-online {
+  text-align: center;
+  font-size: 11px;
+  color: #3d6b3d;
+  margin-top: 4px;
+}
+
+.skin-yotsuba .bd-online-dim { color: #5a5248; }
+
+/* ---- rules ---- */
+
+.skin-yotsuba .bd-bodywrap { padding: 0 6px; }
+
+.skin-yotsuba .bd-rules {
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  padding: 8px 10px;
+  margin: 10px 0;
+  font-size: 12px;
+  color: #3b2a24;
+}
+
+.skin-yotsuba .bd-rules strong { color: #7b1a1a; }
+
+.skin-yotsuba .bd-rulelist {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.skin-yotsuba .bd-rulelist li { margin-bottom: 3px; }
+
+.skin-yotsuba .bd-hr {
+  border: 0;
+  border-top: 1px solid #d9bfb7;
+  margin: 10px 0;
+}
+
+/* ---- threads ---- */
+
+.skin-yotsuba .bd-threadblock { margin: 6px 0; }
+
+.skin-yotsuba .bd-threadblock-live {
+  background: #f7f0e6;
+  border-left: 3px solid #3d6b3d;
+  padding: 6px 8px;
+}
+
+.skin-yotsuba .bd-op { overflow: hidden; }
+
+.skin-yotsuba .bd-opinfo {
+  display: block;
+  overflow-wrap: break-word;
+}
+
+.skin-yotsuba .bd-subject {
+  color: #9c2a2a;
+  font-weight: 700;
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.skin-yotsuba .bd-postinfo {
+  display: inline;
+  font-size: 12px;
+  color: #3b2a24;
+}
+
+.skin-yotsuba .bd-name {
+  color: #1d6b32;
+  font-weight: 700;
+}
+
+.skin-yotsuba .bd-date { color: #4a3b33; }
+
+.skin-yotsuba .bd-no {
+  font-family: "Courier New", Courier, monospace;
+  color: #5a4a3f;
+  font-size: 12px;
+}
+
+.skin-yotsuba .bd-oplinks { margin-left: 6px; }
+
+.skin-yotsuba .bd-replylink {
+  color: #34345c;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.skin-yotsuba .bd-replylink:hover,
+.skin-yotsuba .bd-replylink:focus { color: #7b1a1a; text-decoration: underline; }
+
+/* ---- files and thumbs ---- */
+
+.skin-yotsuba .bd-file {
+  font-size: 11px;
+  color: #4a3b33;
+  margin: 2px 0;
+  overflow-wrap: break-word;
+}
+
+.skin-yotsuba .bd-filedim { color: #5a5248; }
+
+.skin-yotsuba .bd-thumb {
+  float: left;
+  margin: 2px 12px 4px 0;
+  max-width: 160px;
+}
+
+.skin-yotsuba .bd-thumb svg {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #8a7f6b;
+  background: #ffffff;
+}
+
+.skin-yotsuba .bd-thumb-sm { max-width: 110px; }
+.skin-yotsuba .bd-thumb-sm svg { max-width: 110px; }
+
+@media (max-width: 420px) {
+  .skin-yotsuba .bd-thumb {
+    float: none;
+    margin: 4px 0;
+    max-width: 120px;
+  }
+  .skin-yotsuba .bd-thumb svg { max-width: 120px; }
+}
+
+/* ---- bodies ---- */
+
+.skin-yotsuba .bd-body {
+  margin: 6px 0 8px 18px;
+  overflow-wrap: break-word;
+  color: #1a0d0d;
+}
+
+.skin-yotsuba .bd-body p { margin: 0 0 8px; }
+.skin-yotsuba .bd-body p:last-child { margin-bottom: 0; }
+
+.skin-yotsuba .bd-body a { color: #34345c; }
+
+/* Greentext. markup.js marks every line that opens with ">" on every site,
+   because people quote that way everywhere; this is the one skin that paints
+   it, because this is the one place it means something.
+   #789922 is the colour, and it is 4.6:1 on #f0e0d6. */
+.skin-yotsuba .bd-body .synth-gt { color: #789922; }
+
+/* A post that is gone. Quieter than the copy around it, because a hole in
+   a thread is not an announcement -- it is a gap you scroll past. */
+.skin-yotsuba .bd-tomb {
+  display: inline-block;
+  font-style: italic;
+  /* #6d6357 on #f0e0d6 is 4.9:1. */
+  color: #6d6357;
+}
+
+.skin-yotsuba .bd-body code {
+  font-family: "Courier New", Courier, monospace;
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  padding: 0 3px;
+  font-size: 12px;
+}
+
+.skin-yotsuba .bd-body blockquote {
+  margin: 0 0 8px;
+  padding-left: 8px;
+  border-left: 2px solid #3d6b3d;
+  color: #2f5a2f;
+}
+
+.skin-yotsuba .bd-body ul { margin: 0 0 8px; padding-left: 20px; }
+
+/* ---- replies ---- */
+
+.skin-yotsuba .bd-post {
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  border-left: 0;
+  border-top: 0;
+  display: block;
+  margin: 4px 0 4px 18px;
+  padding: 4px 6px;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .skin-yotsuba .bd-post { margin-left: 6px; }
+  .skin-yotsuba .bd-body { margin-left: 8px; }
+}
+
+.skin-yotsuba .bd-postrow { overflow-wrap: break-word; }
+
+.skin-yotsuba .bd-omitted {
+  font-size: 12px;
+  color: #5a4a3f;
+  margin: 4px 0 4px 18px;
+}
+
+.skin-yotsuba .bd-backline { padding-top: 8px; }
+
+.skin-yotsuba .bd-livehead {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1d6b32;
+  margin: 12px 0 6px;
+}
+
+/* ---- compose ---- */
+
+.skin-yotsuba .bd-compose,
+.skin-yotsuba .bd-mine {
+  background: #f0e0d6;
+  border: 1px solid #d9bfb7;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.skin-yotsuba .bd-mine { border-left: 3px solid #9c2a2a; }
+
+/* ---- ads ---- */
+
+.skin-yotsuba .bd-ad {
+  border: 1px dashed #b09a7f;
+  background: #fffdf2;
+  padding: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.skin-yotsuba .bd-ad-banner { margin: 8px 6px; }
+
+/* ---- 404 ---- */
+
+.skin-yotsuba .bd-404 {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.skin-yotsuba .bd-404 h2 {
+  color: #9c2a2a;
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.skin-yotsuba .bd-404 p {
+  color: #3b2a24;
+  margin: 0 0 14px;
+}
+
+/* ---- footer ---- */
+
+.skin-yotsuba .bd-foot {
+  margin-top: 14px;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 11px;
+  color: #4a3b33;
+}
+
+.skin-yotsuba .bd-foot-dim { color: #5a5248; }
+
+.skin-yotsuba img,
+.skin-yotsuba svg { max-width: 100%; height: auto; }
+
+/* --- the catalog --------------------------------------------------------
+ * Every thread at once. On a real board this is how anyone with more than a
+ * passing interest reads it: the index is for browsing, the catalog is for
+ * finding the thread you were in yesterday.
+ */
+.skin-yotsuba .bd-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.skin-yotsuba .bd-cat-cell {
+  flex: 1 1 150px;
+  min-width: 0;
+  max-width: 220px;
+  padding: 6px;
+  border: 1px solid #d9bfb7;
+  background: #f0e0d6;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.skin-yotsuba .bd-cat-cell.is-sticky { border-color: #b8a36a; background: #f6ecd8; }
+.skin-yotsuba .bd-cat-thumb { margin-bottom: 4px; }
+.skin-yotsuba .bd-cat-thumb img,
+.skin-yotsuba .bd-cat-thumb > * { max-width: 100%; height: auto; }
+.skin-yotsuba .bd-cat-meta { color: #7a6a63; margin-bottom: 2px; }
+.skin-yotsuba .bd-cat-sage { color: #9a4b3f; font-weight: bold; }
+.skin-yotsuba .bd-cat-subject {
+  display: block;
+  font-weight: bold;
+  color: #0f0c5d;
+  overflow-wrap: break-word;
+  margin-bottom: 3px;
+}
+.skin-yotsuba .bd-cat-excerpt { color: #4b3f3a; overflow-wrap: break-word; }
+
+/* Past the bump limit: the thread still works, it just stops rising. */
+.skin-yotsuba .bd-autosage {
+  margin: 4px 0 6px;
+  font-size: 11px;
+  font-style: italic;
+  /* #8a5a2b on #f0e0d6 is 4.7:1. */
+  color: #8a5a2b;
+}
+
+/* A tripcode, and a per-thread poster id. Both are identity on a board that
+   has none: one is portable and weak, the other is strong and disposable. */
+.skin-yotsuba .bd-trip { color: #228854; font-weight: bold; margin-left: 2px; }
+.skin-yotsuba .bd-pid { font-size: 10px; font-weight: bold; margin-left: 4px; }
+
+/* --- classes the renderer emitted and nothing styled --------------------
+ *
+ * board.js has been writing bd-head, bd-topsep, bd-ad-box and bd-ad-inline
+ * since it was written and none of them had a rule, so the two ad shapes
+ * rendered identically and the header had no box of its own. Found by
+ * diffing the class names the renderer emits against the ones this file
+ * mentions, which is worth doing on every skin.
+ */
+
+.skin-yotsuba .bd-head {
+  display: block;
+  padding: 6px 4px 2px;
+}
+
+/* The separator between the top links. It holds two spaces on purpose --
+ * every board of this shape has had a run of bracketed links at the top
+ * with irregular spacing, and regularising it is the wrong fix. */
+.skin-yotsuba .bd-topsep { white-space: pre; }
+
+/* A box ad sits in the flow at full width with room around it. An inline
+ * one is jammed between posts pretending to be one, which is the entire
+ * point of the format, so it gets the post's own margins and no border. */
+.skin-yotsuba .bd-ad-box {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 10px;
+  border: 1px dashed #d9bfb7;
+  background: #fdf6f4;
+  text-align: center;
+}
+
+.skin-yotsuba .bd-ad-inline {
+  display: block;
+  margin: 4px 0 4px 18px;
+  padding: 4px 8px;
+  border-left: 2px solid #e3d3ce;
+  font-size: 12px;
+}

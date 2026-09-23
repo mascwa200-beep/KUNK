@@ -1,0 +1,766 @@
+{
+  "schema": 1,
+  "domain": "dcarver.verity.net",
+  "title": "Dale Carver, Gridfall",
+  "type": "page",
+  "era": "2026",
+  "skin": "plain-white",
+  "description": "A personal page put up in 2019 and changed once since, by the man who moderates the Gridfall boards: what he runs, what the hosting costs a month and since, and the radio and the truck.",
+  "tags": [
+    "gridfall",
+    "boards",
+    "hosting",
+    "radio",
+    "personal"
+  ],
+  "links": [
+    "boards.gridfall.net",
+    "gridfall.chat",
+    "gridfallhost.net",
+    "gridfallswap.net",
+    "askverity.com",
+    "gridline.social",
+    "gridfalltire.com",
+    "gridfall-buysell.net",
+    "pennock-sdr.net",
+    "scanner.verity.net",
+    "verity.wiki",
+    "webring.gridfall.net"
+  ],
+  "data": {
+    "navLabel": "D. Carver",
+    "pages": [
+      {
+        "id": "index",
+        "name": "About",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Dale Carver"
+          },
+          {
+            "kind": "text",
+            "body": "Gridfall. Fifty-six. I have lived in this county my whole life apart from two years, and there is nothing to say about the two years.\n\nI work for the county highway department. Twenty-eight years in April. Before that I worked for my uncle, who paid worse and fed me better.\n\nI moderate [url=synth://boards.gridfall.net/]boards.gridfall.net[/url] and have since 2003. The handle there is mod_dcarver and it is the handle everywhere else as well, because I made it up once and could not face doing it again."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The four questions"
+          },
+          {
+            "kind": "text",
+            "body": "I put this page up so I could type these once."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Can I get an account on the board.[/b] No. Registration closed on 25 September 2017 and has not reopened. [url=/run]The board page[/url] says the rest of it.",
+              "[b]I have lost my password.[/b] Mail me the handle and the year you joined. Same night, usually.",
+              "[b]What does it cost to keep that thing up.[/b] [url=/bill]The bill page[/url].",
+              "[b]Will you look at my antenna.[/b] Probably. [url=/radio]Radio and the truck[/url]."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting hold of me"
+          },
+          {
+            "kind": "text",
+            "body": "dcarver at verity dot net.\n\nWritten out in words like that on purpose. There are programs that read pages looking for addresses to sell, and writing it in words is not much protection, but it is free.\n\nI read mail in the morning. If it is about the board, put the handle and the year you joined in the first line and you save us both a message.\n\nThere is no telephone number on this page. I have the same rule for everybody else's."
+          },
+          {
+            "kind": "image",
+            "seed": "dcarver-driveway-march-2019",
+            "imgKind": "photo",
+            "caption": "The driveway, March 2019. The trailer is in it because it had just come back from being welded."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "This page"
+          },
+          {
+            "kind": "text",
+            "body": "Put up Saturday 9 March 2019, on the old VerityNet personal space, which came with the dial-up account and has outlived the dial-up account. Ten megabytes. I have used about a tenth of it.\n\nTyped in a text editor. There is no software behind this and nothing on it changes unless I change it."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Changed once since, on Tuesday 29 September 2026.[/b] What changed:\n\n[list][*]The table on [url=/bill]the bill page[/url], which replaced a sentence that said eleven dollars a month.[*]The chat, and three lines after it, on [url=/run]the board page[/url]. In 2019 there was no chat.[*]Six lines at the bottom of [url=/radio]the radio page[/url].[/list]\n\nThe rest is as I typed it in 2019, including the part up there where I work for the county. I retired in 2022 with thirty-one years. I am sixty-three. I would rather add a line than rewrite a page. A rewritten page was never true on any particular day."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The guestbook"
+          },
+          {
+            "kind": "text",
+            "body": "The form stopped working in November 2020 and I have not fixed it. What came through it is here. The fourth one is why it is off."
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "Ardith Vogel",
+                "time": "12 April 2019",
+                "body": "Dale, the hot milk cake thread you locked. I was not arguing with Junie, I was agreeing with her in a way that came out wrong on the screen. Would you unlock it so I can say so properly."
+              },
+              {
+                "author": "wpennock",
+                "time": "2 June 2019",
+                "body": "The mast is 31 feet to the top of the pipe. Guys at 22. You asked me in the co-op and I said I would write it down somewhere you would see it."
+              },
+              {
+                "author": "R. Kupfer",
+                "time": "18 September 2020",
+                "body": "Found this looking for the board. The board is where you said it was. Thank you."
+              },
+              {
+                "author": "verity_energy_savings",
+                "time": "4 November 2020",
+                "body": "Verity County homeowners born before 1970 may qualify. Click to check eligibility in 60 seconds. Limited program funds remain for your area."
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "I answered the first one that day. It is unlocked. Junie was right about the margarine and Ardith knew that before either of us."
+          },
+          {
+            "kind": "hitcounter",
+            "count": 3140
+          }
+        ]
+      },
+      {
+        "id": "run",
+        "name": "What I run",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "What I run"
+          },
+          {
+            "kind": "text",
+            "body": "One thing, and forty minutes a morning."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The board"
+          },
+          {
+            "kind": "text",
+            "body": "[url=synth://boards.gridfall.net/]boards.gridfall.net[/url]. phpBB, on software that wanted upgrading in 2006. Moderator since 2003 and, since September 2017, the only one who does anything.\n\nRegistration closed on 25 September 2017, nine days into a spam wave of about forty-four thousand posts, every one of which I deleted by hand. People ask about once a month whether it will reopen. It will not. That is not a hard no, it is just the answer.\n\nEleven accounts posted on it last month. It was eleven the month before that and thirteen in January."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Ask me for",
+              "What happens"
+            ],
+            "rows": [
+              [
+                "A password reset",
+                "Mail me the handle and the year you joined. Same night, usually. Resets have never been closed and are not going to be."
+              ],
+              [
+                "A new account",
+                "No."
+              ],
+              [
+                "A post of yours taken down",
+                "Taken down. Say which one."
+              ],
+              [
+                "A post of somebody else's taken down",
+                "Say which one and why, and I will read it. I will usually disagree with you, and I will say so rather than not answer."
+              ],
+              [
+                "Somebody unbanned",
+                "There are four banned accounts and three of them are the same man."
+              ],
+              [
+                "The whole board on a disc",
+                "Bring a drive. See below."
+              ],
+              [
+                "The board moved somewhere else",
+                "Ask. It has been asked twice and both times the answer was that it is fine where it is."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What I delete and what I leave"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Spam goes, every morning, without a note. Forty minutes with the coffee. It has been forty minutes since the day registration shut, which tells you there is a machine on the other end of it and that the machine is not trying very hard.",
+              "A post with somebody's address or telephone number in it goes, and I send that person a line saying which post it was, because otherwise they find out by noticing.",
+              "An argument stays. Two people being wrong at each other in public is the board working.",
+              "A thread that is already a thread two boards over gets locked with a link to the other one, not deleted.",
+              "Anything anybody asks me to take down about themselves comes down. Three in sixteen years.",
+              "Spam replies that landed in the middle of old threads stay. Deleting a post renumbers the thread, and a scar in a thread from 2008 is easier to read than a thread whose numbers have moved under it.",
+              "I have never edited what somebody wrote. Deleted it or left it. Editing it and leaving their name on it is the only thing on this list I would call wrong."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The rules are DaveK's, from November 2003, and I have added nothing to them: [url=synth://boards.gridfall.net/topic/1]READ BEFORE POSTING[/url].\n\n[quote=DaveK]Be civil. You are arguing with someone who buys groceries at the same place you do.[/quote]\nThat one does most of the work."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Down"
+          },
+          {
+            "kind": "text",
+            "body": "Twice since the bill came to me. Both times it was the host, both times it was under an hour, and both times their mail had reached me before I noticed anything. Whatever happens goes on [url=synth://gridfallhost.net/status]their status page[/url], including the parts that do not flatter them."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The disc"
+          },
+          {
+            "kind": "text",
+            "body": "The whole board is on a disc. A tar of the database, and next to it a folder of flat HTML in case there comes a day when the database stops meaning anything to anybody. Three hundred and forty megabytes of text, and about a gigabyte once the attachments from before 2009 are on there.\n\nThere are two discs. I have one. Karen Fennimore at the Marchfield library has the other, in the cabinet with everything else she keeps.\n\nIf you want a third, bring a drive to the board and ask. Nobody has.\n\nThe week of 11 June 2003 is thirty-one threads on there. That is the part people ask for, and about half of it was typed by people who had no power at home that week and did it from work."
+          },
+          {
+            "kind": "buttons",
+            "label": "Where the board lives and who bills me:",
+            "items": [
+              {
+                "label": "The Gridfall Boards",
+                "seed": "dc-btn-boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "Gridfall Host",
+                "seed": "dc-btn-host",
+                "domain": "gridfallhost.net"
+              },
+              {
+                "label": "GridfallSwap",
+                "seed": "dc-btn-swap",
+                "domain": "gridfallswap.net"
+              },
+              {
+                "label": "Powered by phpBB",
+                "seed": "dc-btn-phpbb"
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The phpBB one has not gone anywhere since about 2011. I have left it up because taking it down is a decision and leaving it is not."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Things with my name on them that I do not run"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[url=synth://gridfallswap.net/]GridfallSwap[/url]. Not mine. It started in 2017 because mine had shut to new people, which was the right thing for somebody to do about it. I am a member there like anybody else and I answer the ones about the old board.",
+              "The county wiki. Karen edits it and I do not. I mirror a page onto the board when the wiki host wobbles, which takes a minute and has been worth it twice.",
+              "[url=synth://webring.gridfall.net/]The Gridfall webring[/url]. It still points at the board and the board still points back at it. I did not build it, I have never had the password for it, and it has outlasted two of the sites it points at.",
+              "Anything else with this handle on it. It is an initial, a surname and a word in front, which was not an original idea in 2003 and is not one now, and twice somebody has told me they found it somewhere I have never been. Not me."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "If something on any of mine looks broken, mail me. If it looks broken on a Tuesday morning, mail me anyway. I will see it at lunch."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The chat"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Added 29 September 2026. None of this existed when I typed the rest of this page.[/b]\n\n[url=synth://gridfall.chat/]gridfall.chat[/url], since 2021. Four hundred and eighteen people in it and about thirty on at any hour. Four channels get used and three do not. It costs nothing, which is why it is not on the same bill as the board. If it stops being free I will say so in [url=synth://gridfall.chat/c/c-announce]#announce[/url], where I post about twice a year.\n\nInvites: ask anybody already in it. That is what the permission is for. The link in the pinned post stopped working in March and I am not making a new one.\n\n[url=synth://gridfall.chat/c/c-forum-archive]#forum-archive[/url] is the old board imported into it, read only, and it is going to stay read only. The importer takes two thousand messages to a channel and then stops, so what is in there is every two hundredth post. Not the good ones. Not the ones anybody would have picked. Every two hundredth one."
+          },
+          {
+            "kind": "text",
+            "body": "[b]Three lines, same day.[/b]\n\nSomebody wrote the 2017 business up on the county wiki: [url=synth://verity.wiki/wiki/spam-wave-2017]the 2017 spam wave[/url]. It is accurate, which I did not expect.\n\nI hold an unpaid volunteer moderator badge on [url=synth://askverity.com/q/q-18]AskVerity[/url] now. It shows me a queue I cannot act on. Seventy-one tickets about that, seventy-one replies, and the seventy-one replies are one reply. They are in a folder.\n\nSame badge on [url=synth://gridline.social/]Gridline[/url] and the same nothing. Their moderation contract lapsed in the spring of 2025 and nobody announced it. The queue stopped draining and the rest of us worked out why on our own."
+          }
+        ]
+      },
+      {
+        "id": "bill",
+        "name": "The bill",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "What the board costs"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Eleven dollars a month.[/b] To [url=synth://gridfallhost.net/]Gridfall Host[/url], two rooms at 118 Third Street in Gridfall. It is their Standard Plus. [url=synth://gridfallhost.net/pricing]Their price list[/url] gives that ten gigabytes and three databases. The line about it on their front page is: the same with a database under it, or a message board that is quiet.\n\nThere is a plan above it at fourteen dollars, with the settings already tuned for forum software. Nobody at that end has ever suggested I move up to it.\n\nIt comes off a card on the 1st. The bill has been in my name since 1 October 2017. Before that it was on the board's old account and it was not mine to pay."
+          },
+          {
+            "kind": "text",
+            "body": "[b]This table went up on 29 September 2026 and replaced one sentence.[/b] Somebody asked me in August what the whole thing had come to, and I had to add up nine years of it to answer, so it goes here rather than get added up twice."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Hosting"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Year",
+              "Invoices",
+              "Paid",
+              "Amount",
+              "Note"
+            ],
+            "rows": [
+              [
+                "2017",
+                "3",
+                "3",
+                "$33",
+                "From 1 October."
+              ],
+              [
+                "2018",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2019",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2020",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2021",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2022",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2023",
+                "12",
+                "12",
+                "$132",
+                "New card in March. The 1 April payment failed. Renata telephoned. It went through on the 3rd and nothing happened to the board in between."
+              ],
+              [
+                "2024",
+                "12",
+                "11",
+                "$121",
+                "July not charged. See below."
+              ],
+              [
+                "2025",
+                "12",
+                "12",
+                "$132",
+                ""
+              ],
+              [
+                "2026",
+                "9",
+                "9",
+                "$99",
+                "To 1 September."
+              ],
+              [
+                "[b]Total[/b]",
+                "[b]108[/b]",
+                "[b]107[/b]",
+                "[b]$1,177[/b]",
+                "1 October 2017 to 1 September 2026."
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]July 2024.[/b] A disk went in the machine on Thursday 13 June 2024 and the second one went forty minutes into the rebuild. The board was gone for eleven hours and came back off the copy taken at twenty to twelve the night before. What was lost was eleven posts, nine of them spam, and one of mine about the parking on Depot Street.\n\nI sent two mails that day and asked for nothing off the bill. The July invoice did not come. I did not raise it with them and I have not raised it since, and it is in the table because it is what happened."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The name"
+          },
+          {
+            "kind": "text",
+            "body": "gridfall.net is a separate line and it is not hosting. Eighteen dollars a year, same place, renewed in March."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Years",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Name, March 2018 to March 2026",
+                "9",
+                "$162"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Eleven dollars in October 2017 and eleven dollars this month. Eighteen dollars in 2018 and eighteen dollars in March. Nine years and neither number has moved. I have not asked why and I am not going to ask why."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Together"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Hosting, 107 months paid of 108 invoiced",
+                "$1,177"
+              ],
+              [
+                "Name, 9 renewals",
+                "$162"
+              ],
+              [
+                "[b]October 2017 to this month[/b]",
+                "[b]$1,339[/b]"
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is not in the table"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "The chat server. It is free. If that changes it gets a line of its own and the line will say what it costs.",
+              "The disc, and the drive the second copy is on. Thirty-one dollars, and I bought the drive for something else anyway.",
+              "My time. That is not money and I am not going to put a number on it.",
+              "Anything anybody else has paid, which is nothing. There was a collection in 2019. It raised $40 over six weeks and three people are still not speaking about how it was spent."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The account itself"
+          },
+          {
+            "kind": "text",
+            "body": "1.8 gigabytes used of the ten the plan comes with. The database is the 340 megabytes of text. The rest is attachments from before 2009, which are the ones that survived a php upgrade in 2012 moving the folder without telling me, and copies of the database that I have taken and never deleted. I found out about the attachments five months afterwards.\n\nIt sits on the machine called cobb, in a rented cabinet in Ardo, forty-three miles from here. A copy of the whole account is taken every night and kept for fourteen nights. [url=synth://gridfallhost.net/kb-backups]Their own page[/url] says in so many words that fourteen nights is not a backup. They are right, and that is what the disc is for."
+          },
+          {
+            "kind": "text",
+            "body": "Next payment 1 October 2026. Eleven dollars."
+          }
+        ]
+      },
+      {
+        "id": "radio",
+        "name": "Radio and the truck",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Radio and the truck"
+          },
+          {
+            "kind": "text",
+            "body": "The other three pages are here because people ask. This one is here because I wanted it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Licence"
+          },
+          {
+            "kind": "text",
+            "body": "Licensed February 2011. General that October. KD8VRN, and I use it, which is not as obvious as it sounds.\n\nI should have done it in 1985. I had the books twice and both times something else happened first. Twenty-eight years with the county highway department and most of it was in a truck with a radio in it. I could work every part of that radio. I did not have one of my own.\n\nCounty plows are low band. 45.88. On a cold night with the leaves down you could hear Kerrin from the far side of Coyne Flats, and on a wet afternoon in June you could not raise the garage from the end of Mill Street. Nobody at the time could tell me why. I know why now and knowing why has never once got a plow turned around."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What is here"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "What",
+              "Where",
+              "Note"
+            ],
+            "rows": [
+              [
+                "2 m and 70 cm mobile, 50 watts",
+                "The truck",
+                "NMO in the roof. There is a section about that below and it is the reason this page exists."
+              ],
+              [
+                "The same radio, one generation older",
+                "The bench",
+                "This is the one I lend out. It has been to four houses and come back four times."
+              ],
+              [
+                "HF, 160 through 10, 100 watts",
+                "The spare room",
+                "Bought used in 2013 off a man in Halsey who threw in the manual and the box it came in."
+              ],
+              [
+                "Tuner, manual",
+                "The spare room",
+                "A manual tuner teaches you what the antenna is doing. An automatic one saves you the trouble of learning it."
+              ],
+              [
+                "Fan dipole, 80 and 40",
+                "Between the maple and the corner of the garage",
+                "Apex 31 feet. Coax fed with a choke at the feed point, eight turns on a core."
+              ],
+              [
+                "J-pole, 2 m",
+                "Side of the garage, 18 feet up",
+                "Copper pipe. Made it in an afternoon in 2012 and it has not been down since."
+              ],
+              [
+                "Straight key",
+                "The bench",
+                "Bought before I could use it. Still ahead of me."
+              ],
+              [
+                "Power supply, 30 amp",
+                "Under the bench",
+                "Second hand, and the fan in it is louder than anything I have ever heard on the air."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The hole in the roof"
+          },
+          {
+            "kind": "text",
+            "body": "January 2019. It is the only thing I have done in thirty years that two different men asked me about in the same week at the co-op.\n\nPeople will tell you not to drill the roof of a truck. Most of the people telling you that are selling magnet mounts.\n\nThree quarter inch punch, not a hole saw. Masking tape on both faces. Headliner dropped at the front, which is forty of the ninety minutes. The boy next door held the shop vac at the hole and was paid in pizza. Deburr it, touch the bare edge with primer, mount in, gasket seated, coax down the A pillar and through the firewall at the grommet that is already there. You do not make a second hole in a truck to fix the first one.\n\nThe magnet mount I used before it left four marks in the paint that are still there. The choice was never whether to mark the truck. It was which marks."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The whine"
+          },
+          {
+            "kind": "text",
+            "body": "The first week it whined up and down with the engine and everybody tells you to buy a noise filter. Do not buy the filter first.\n\nPower lead direct to the battery, fuse eighteen inches from the post, negative back to the battery and not to a seat bolt, and run the coax down the other pillar from the power. That was the whole of it.\n\nThe filter is in the drawer, unopened. I keep it because one day it will be the answer to something."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The repeater, and who is on it"
+          },
+          {
+            "kind": "text",
+            "body": "146.865, minus offset, tone 131.8, on the tower at Perrin Hill. It covers most of the county and not the north end, which is the same complaint everybody up there has had about everything since I was young.\n\nThere is a net on Sunday at eight in the evening. Nine or ten check in, more in the winter, and most of it is people saying that they are there. That is what a net is for. You find out on an ordinary Sunday who is reachable, so that on the Sunday that is not ordinary you already know.\n\nAbout nine of us are on it with any regularity. Two are in Ashkettle, one drives a school bus out of Kerrin and gets into the repeater from places the rest of us cannot, and one is seventeen, licensed since March, and calls everybody sir."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Questions I get"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Will my 2 m antenna work on 70 cm.[/b] Probably, badly. Buy the dual band whip, it is eleven dollars more than the single.",
+              "[b]Do I need a licence to listen.[/b] No. You need one to transmit, and the test is thirty-five questions out of a published pool of four hundred and twelve. You can read the pool. That is not cheating, that is how it is meant to work.",
+              "[b]My handheld does not reach the repeater from the house.[/b] It is not the radio. It is the antenna that came with the radio, and then it is where you are standing. Go outside. If it works outside, the answer is a bit of wire on the roof and not a new radio.",
+              "[b]Can you hear the plows.[/b] Yes, on a scanner, and no, you cannot talk on it, and no, I will not lend you mine to try.",
+              "[b]What do you talk about.[/b] The weather, the roads, and whether somebody's alternator is going. Forty minutes about an alternator is a good night."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What I listen to that is not amateur"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "The weather radio, which is on the shelf and stays on.",
+              "Low band, out of habit, mostly in February.",
+              "The AM station out of the capital after dark, which arrives here better than anything licensed to be heard here.",
+              "The scanner is Arlene Mabry's department and not mine. She writes it down with the times on it, which is the only reason anybody knows afterwards what happened when: [url=synth://scanner.verity.net/]scanner.verity.net[/url]."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The thing on 62"
+          },
+          {
+            "kind": "text",
+            "body": "People ask me about it because I have wire in a tree.\n\nEverything I have: I have heard it, it is where people say it is, and I do not log it.\n\nWalt Pennock does log it. He writes down his method, he writes down what the equipment was, and he says he does not know when he does not know, which is why his is the only page on it I send anybody to: [url=synth://pennock-sdr.net/]pennock-sdr.net[/url].\n\nI am not going to do badly a thing somebody else is doing properly."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The truck"
+          },
+          {
+            "kind": "text",
+            "body": "2003 F-250, four wheel drive, bought used in 2011 with 96,000 on it. It came with the plow mount on the front from the man before me and there has never been a plow on it. I move snow for the county. I am not doing it at home for entertainment.\n\nThings on it that do not work: the tailgate handle, the clock, and the radio in the dash, which is the third reason there is a radio in the roof."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "It will take anything that fits and is legal.",
+              "Two ton on the trailer, and that is the trailer's number and not the truck's.",
+              "Not furniture up stairs. I am fifty-six.",
+              "Not a moving company. One thing, or one load, and the day I say yes to a whole house is the day I stop saying yes to anything."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The trailer"
+          },
+          {
+            "kind": "text",
+            "body": "Sixteen foot tandem, bought in 2014 off a man in Coyne Flats who had bought it new and used it twice.\n\nThe brake controller is wired under the dash the way the instructions say and not spliced into the stop lamp circuit the way whoever had it before me did it. The wiring is why it was cheap. The wiring took a Saturday.\n\nThe tires on it are whatever came with it and the sidewalls are going grey. They will get me to Halsey. I have been writing that sentence in one form or another for five years."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What it did last month"
+          },
+          {
+            "kind": "text",
+            "body": "February 2019. The notebook lives in the door. It is not for tax, I do not claim anything, it is there because otherwise you cannot remember whether the noise started before the heavy load or after it."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Date",
+              "Load",
+              "Miles"
+            ],
+            "rows": [
+              [
+                "2 February",
+                "Two pallets of block, Gridfall to Kerrin",
+                "54"
+              ],
+              [
+                "9 February",
+                "Nothing. Ice.",
+                "0"
+              ],
+              [
+                "14 February",
+                "Church chairs to the hall and back, at ten at night",
+                "11"
+              ],
+              [
+                "23 February",
+                "A stove out of a kitchen on Mill Street. Two of us, and it wanted three.",
+                "4"
+              ],
+              [
+                "28 February",
+                "Half a yard of gravel, my own driveway",
+                "6"
+              ],
+              [
+                "",
+                "Total",
+                "75"
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The drawer"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Four feet of good coax with a connector on one end.",
+              "Nineteen connectors, all of them the wrong one.",
+              "A noise filter, unopened, see above.",
+              "Two handhelds that charge and one that does not, and I know which one it is and I keep putting it back.",
+              "An SWR meter I have lent out so often it has another man's initials on it in nail polish."
+            ]
+          },
+          {
+            "kind": "image",
+            "seed": "dcarver-bench-spare-room",
+            "imgKind": "photo",
+            "caption": "The bench. The good light is a work light clamped to a shelf and it has been the good light since 2014."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Added 29 September 2026"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "The hole has not leaked.",
+              "Retired in 2022 with thirty-one years. The truck is at 241,000.",
+              "Two new tires on the trailer in June at [url=synth://gridfalltire.com/]Gridfall Tire[/url]. In and out in twenty minutes and Duane would not charge me for the stems. Seven years is a long time to leave a thing I had complained about in writing.",
+              "The dipole came down in the ice in February 2021 and went back up the same weekend on the same wire.",
+              "The mower is on [url=synth://gridfall-buysell.net/]the buy and sell[/url] at $225 and has been since the 7th. Four people have written to me about it and three of them wanted to talk about the board instead.",
+              "On Saturday 12 September the power went at about twenty to seven. The net the next evening had fourteen check-ins, two of them on battery. That is the most it has ever had, and by ten past eight everybody on it knew everybody on it was all right."
+            ]
+          },
+          {
+            "kind": "hitcounter",
+            "count": 1272
+          }
+        ]
+      }
+    ]
+  }
+}

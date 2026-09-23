@@ -1,0 +1,724 @@
+/* synthnet :: chat skin  ---  .skin-chatdark
+ *
+ * Dark, because every chat client shipped dark by default from about 2018 and
+ * nobody changed it back. A dark page is where contrast quietly fails, so
+ * every colour below is measured against the surface it actually sits on and
+ * the ratio is written next to it. Body text is at or above 4.5:1 everywhere;
+ * the decorative rules (dividers, the pulse dot, the reply arrow) carry no
+ * information that is not also in text.
+ *
+ * Surfaces, and their relative luminance:
+ *   #1e1f22  L 0.0137   the channel rail
+ *   #2b2d31  L 0.0261   chrome: header, topic bar, footer, badges
+ *   #313338  L 0.0331   the message river
+ *   #33363c  L 0.0370   a hovered/odd row inside the river
+ *   #383a40  L 0.0424   inputs and code
+ *   #3f2d1a  L 0.0301   the archive banner
+ *
+ * Every rule is scoped under .skin-chatdark. Laid out for 360px first: the
+ * rail is a scrolling row across the top there and a column from 721px up.
+ */
+
+.skin-chatdark {
+  background: #313338;
+  color: #e3e5e8;                       /* 10.02:1 on #313338 */
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.skin-chatdark .cd-app {
+  background: #313338;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.skin-chatdark img,
+.skin-chatdark svg { max-width: 100%; height: auto; }
+
+/* ---- header ---- */
+
+.skin-chatdark .cd-head {
+  background: #2b2d31;
+  border-bottom: 1px solid #1e1f22;
+}
+
+.skin-chatdark .cd-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  padding: 9px 12px;
+}
+
+.skin-chatdark .cd-brand {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 9px;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-brand-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f2f3f5;                       /* 12.42:1 on #2b2d31 */
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-brand-link:hover,
+.skin-chatdark .cd-brand-link:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.skin-chatdark .cd-brand-sub {
+  font-size: 12px;
+  color: #a6adb5;                       /* 6.09:1 on #2b2d31 */
+}
+
+.skin-chatdark .cd-top-live {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+/* The live layer paints its own online bar and its own badges, and both are
+ * built for a light page. Re-surfacing them here rather than leaving two
+ * bright chips floating on a dark header. */
+
+.skin-chatdark .lv-online {
+  background: #2b2d31;
+  border: 1px solid #3f4248;
+  border-radius: 4px;
+  color: #a6adb5;                       /* 6.09:1 on #2b2d31 */
+  margin: 0;
+}
+
+.skin-chatdark .lv-online-bots { color: #e8b04b; }   /* 7.06:1 on #2b2d31 */
+.skin-chatdark .lv-dot { background: #7fd18a; }      /* decorative; 7.48:1 anyway */
+
+.skin-chatdark .lv-badge-bot {
+  background: #3a3d44;
+  color: #c7ccd3;                       /* 6.74:1 on #3a3d44 */
+  border-color: #4d515a;
+}
+
+.skin-chatdark .lv-badge-spam {
+  background: #4a2327;
+  color: #f5a3a3;                       /* 6.82:1 on #4a2327 */
+  border-color: #6a3338;
+}
+
+.skin-chatdark .lv-badge-promoted,
+.skin-chatdark .lv-badge-sponsored {
+  background: #43351a;
+  color: #f0c26a;                       /* 7.16:1 on #43351a */
+  border-color: #5f4b23;
+}
+
+/* ---- layout ---- */
+
+.skin-chatdark .cd-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-rail {
+  background: #1e1f22;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-river {
+  background: #313338;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0 0 10px;
+}
+
+@media (min-width: 721px) {
+  .skin-chatdark .cd-body { flex-direction: row; }
+  .skin-chatdark .cd-rail {
+    flex: 0 0 218px;
+    width: 218px;
+    border-right: 1px solid #141517;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ---- the channel rail ---- */
+
+.skin-chatdark .cd-rail-h {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a6adb5;                       /* 7.27:1 on #1e1f22 */
+  padding: 10px 12px 6px;
+}
+
+.skin-chatdark .cd-chans {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px 8px;
+  /* At phone width the rail is a row you push sideways. The scroll lives in
+   * here, not on the page, so the document never scrolls horizontally. */
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.skin-chatdark .cd-chan-row {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-chan {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 6px 9px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #a6adb5;                       /* 7.27:1 on #1e1f22 */
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.skin-chatdark .cd-chan:hover,
+.skin-chatdark .cd-chan:focus {
+  background: #2a2c30;
+  color: #e3e5e8;                       /* 12.0:1 on #2a2c30 */
+}
+
+.skin-chatdark .cd-chan.is-on {
+  background: #35373c;
+  color: #f2f3f5;                       /* 10.73:1 on #35373c */
+  font-weight: 600;
+}
+
+.skin-chatdark .cd-hash {
+  color: #9aa2ab;                       /* 6.38:1 on #1e1f22, 4.89:1 on #313338 */
+  font-weight: 400;
+}
+
+.skin-chatdark .cd-chan.is-on .cd-hash { color: #c7ccd3; }
+
+.skin-chatdark .cd-chan-name { overflow-wrap: break-word; }
+
+.skin-chatdark .cd-chan-tag {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #a6adb5;                       /* 7.27:1 on #1e1f22, 5.26:1 on #35373c */
+  border: 1px solid #40444b;
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+.skin-chatdark .cd-chan-archive .cd-chan-tag {
+  color: #e8b04b;
+  border-color: #5f4b23;
+}
+
+.skin-chatdark .cd-chan-none {
+  color: #a6adb5;
+  font-size: 13px;
+  padding: 6px 9px;
+}
+
+/* The user strip at the foot of the rail. On a phone it sits under the row
+ * of channels; on a wide screen it pins to the bottom of the column. */
+.skin-chatdark .cd-you {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #18191c;
+  border-top: 1px solid #141517;
+  min-width: 0;
+}
+
+@media (min-width: 721px) {
+  .skin-chatdark .cd-you { margin-top: auto; }
+}
+
+.skin-chatdark .cd-you-ava {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #2b2d31;
+}
+
+.skin-chatdark .cd-you-ava svg { width: 100%; height: 100%; display: block; }
+
+.skin-chatdark .cd-you-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.skin-chatdark .cd-you-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e3e5e8;                       /* 13.9:1 on #18191c */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-you-sub {
+  font-size: 11px;
+  color: #a6adb5;                       /* 7.7:1 on #18191c */
+}
+
+/* ---- topic bar ---- */
+
+.skin-chatdark .cd-topic {
+  background: #2b2d31;
+  border-bottom: 1px solid #1e1f22;
+  padding: 10px 14px;
+}
+
+.skin-chatdark .cd-topic-name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #f2f3f5;                       /* 12.42:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-topic-name .cd-hash {
+  margin-right: 3px;
+  color: #a6adb5;                       /* 6.09:1 on #2b2d31 */
+}
+
+.skin-chatdark .cd-topic-text {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: #a6adb5;                       /* 6.09:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-topic-chip {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8fb3f5;                       /* 6.53:1 on #2b2d31 */
+  border: 1px solid #3c4a63;
+  border-radius: 3px;
+  padding: 1px 6px;
+}
+
+/* ---- the archive banner ---- */
+
+.skin-chatdark .cd-arch {
+  margin: 12px 14px 4px;
+  padding: 11px 13px;
+  background: #3f2d1a;
+  border: 1px solid #6b4c22;
+  border-left: 4px solid #e8b04b;
+  border-radius: 4px;
+}
+
+.skin-chatdark .cd-arch-h {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f0c26a;                       /* 7.89:1 on #3f2d1a */
+  margin-bottom: 6px;
+}
+
+.skin-chatdark .cd-arch-p {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: #dbdee1;                       /* 9.71:1 on #3f2d1a */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-arch-p:last-of-type { margin-bottom: 0; }
+
+.skin-chatdark .cd-arch-meta {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #c7ccd3;                       /* 8.12:1 on #3f2d1a */
+}
+
+/* ---- the message river ---- */
+
+.skin-chatdark .cd-msgs {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0 0;
+}
+
+.skin-chatdark .cd-grp {
+  display: flex;
+  gap: 10px;
+  padding: 6px 14px 7px;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-grp:hover { background: #33363c; }
+
+.skin-chatdark .cd-grp-mine { background: #2f3540; }   /* body text 9.76:1 */
+
+.skin-chatdark .cd-ava {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #383a40;
+  margin-top: 2px;
+}
+
+.skin-chatdark .cd-ava svg { width: 100%; height: 100%; display: block; }
+
+.skin-chatdark .cd-ava-fb {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 700;
+  color: #e3e5e8;                       /* 9.01:1 on #383a40 */
+}
+
+.skin-chatdark .cd-grp-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-grp-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin-bottom: 1px;
+}
+
+.skin-chatdark .cd-who {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f2f3f5;                       /* 11.39:1 on #313338 */
+  overflow-wrap: break-word;
+}
+
+/* A name in the archive that never turns up in a channel that still takes
+ * messages. The page never says what happened to them, because nobody who
+ * is still here knows either. */
+.skin-chatdark .cd-left {
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #a6adb5;                       /* 5.58:1 on #313338, 5.34:1 on hover */
+  border: 1px solid #4a4d55;
+  border-radius: 3px;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+.skin-chatdark .cd-when {
+  font-size: 11px;
+  color: #a6adb5;                       /* 5.58:1 on #313338, 5.34:1 on hover */
+  white-space: nowrap;
+}
+
+.skin-chatdark .cd-line {
+  font-size: 15px;
+  color: #e3e5e8;                       /* 10.02:1 on #313338 */
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.skin-chatdark .cd-line p {
+  margin: 0 0 3px;
+}
+
+.skin-chatdark .cd-line p:last-child { margin-bottom: 0; }
+
+.skin-chatdark .cd-line a {
+  color: #8fb3f5;                       /* 5.98:1 on #313338 */
+  text-decoration: none;
+}
+
+.skin-chatdark .cd-line a:hover,
+.skin-chatdark .cd-line a:focus {
+  color: #b7cdfb;
+  text-decoration: underline;
+}
+
+.skin-chatdark .cd-line code {
+  background: #383a40;
+  border: 1px solid #4a4d55;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  color: #e3e5e8;                       /* 9.01:1 on #383a40 */
+}
+
+.skin-chatdark .cd-line pre {
+  background: #383a40;
+  border: 1px solid #4a4d55;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin: 4px 0;
+  overflow-x: auto;
+  color: #e3e5e8;
+  font-size: 13px;
+}
+
+.skin-chatdark .cd-line blockquote {
+  margin: 3px 0;
+  padding: 2px 0 2px 9px;
+  border-left: 3px solid #4f545c;
+  color: #c7ccd3;                       /* 7.83:1 on #313338 */
+}
+
+.skin-chatdark .cd-line ul { margin: 3px 0; padding-left: 20px; }
+
+.skin-chatdark .cd-line img,
+.skin-chatdark .cd-line svg {
+  max-width: 260px;
+  border-radius: 4px;
+  margin: 4px 0 2px;
+}
+
+/* ---- day dividers ---- */
+
+.skin-chatdark .cd-day {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 14px 6px;
+  color: #a6adb5;                       /* 5.58:1 on #313338 */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.skin-chatdark .cd-day::before,
+.skin-chatdark .cd-day::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: #3f4147;
+}
+
+.skin-chatdark .cd-day-label { flex: 0 0 auto; }
+
+/* ---- reply chips, tombstones, dead attachments ---- */
+
+.skin-chatdark .cd-reply {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 12px;
+  color: #a6adb5;                       /* 5.58:1 on #313338 */
+  margin-bottom: 2px;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-reply-arrow { color: #9aa2ab; }   /* 4.89:1 on #313338 */
+
+.skin-chatdark .cd-reply-who {
+  color: #8fb3f5;                       /* 5.98:1 on #313338 */
+  font-weight: 600;
+}
+
+.skin-chatdark .cd-reply-q { overflow-wrap: break-word; min-width: 0; }
+
+.skin-chatdark .cd-reply-gone { font-style: italic; color: #a6adb5; }
+
+.skin-chatdark .cd-tomb {
+  display: inline-block;
+  font-style: italic;
+  color: #a6adb5;                       /* 5.58:1 on #313338 */
+}
+
+.skin-chatdark .cd-gone {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 2px;
+  padding: 5px 9px;
+  max-width: 100%;
+  background: #383a40;
+  border: 1px dashed #5b6069;
+  border-radius: 4px;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-gone-slug { color: #a6adb5; }   /* 5.02:1 on #383a40 */
+
+.skin-chatdark .cd-gone-name {
+  font-family: Consolas, "Courier New", monospace;
+  color: #e3e5e8;                       /* 9.01:1 on #383a40 */
+  overflow-wrap: break-word;
+  word-break: break-all;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-gone-note { color: #a6adb5; }   /* 5.02:1 on #383a40 */
+
+/* ---- typing ---- */
+
+.skin-chatdark .cd-typing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px 2px;
+  font-size: 12px;
+  color: #c7ccd3;                       /* 7.83:1 on #313338 */
+  min-height: 20px;
+}
+
+.skin-chatdark .cd-typing-off {
+  color: #a6adb5;                       /* 5.58:1 on #313338 */
+  font-style: italic;
+}
+
+.skin-chatdark .cd-typing-text { overflow-wrap: break-word; min-width: 0; }
+
+.skin-chatdark .cd-typing-dots {
+  display: inline-flex;
+  gap: 3px;
+  flex: 0 0 auto;
+}
+
+.skin-chatdark .cd-typing-dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #a6adb5;
+  display: inline-block;
+  animation: cd-bounce 1.3s ease-in-out infinite;
+}
+
+.skin-chatdark .cd-typing-dots i:nth-child(2) { animation-delay: 0.18s; }
+.skin-chatdark .cd-typing-dots i:nth-child(3) { animation-delay: 0.36s; }
+
+@keyframes cd-bounce {
+  0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skin-chatdark .cd-typing-dots i { animation: none; opacity: 0.7; }
+}
+
+/* ---- composer ---- */
+
+.skin-chatdark .cd-composer {
+  margin: 8px 14px 4px;
+  min-width: 0;
+}
+
+.skin-chatdark .cd-composer .cw-root { max-width: 100%; }
+
+.skin-chatdark .cd-composer-shell {
+  background: #383a40;
+  border: 1px solid #4a4d55;
+  border-radius: 8px;
+  padding: 11px 13px;
+  color: #a6adb5;                       /* 5.02:1 on #383a40 */
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-composer-off {
+  background: #2b2d31;
+  border: 1px solid #3f4248;
+  border-radius: 8px;
+  padding: 11px 13px;
+}
+
+.skin-chatdark .cd-composer-line {
+  font-size: 14px;
+  color: #e3e5e8;                       /* 10.93:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-composer-sub {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #a6adb5;                       /* 6.09:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+/* ---- empty and missing ---- */
+
+.skin-chatdark .cd-empty {
+  padding: 22px 14px;
+  color: #a6adb5;                       /* 5.58:1 on #313338 */
+  font-size: 14px;
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-404 {
+  margin: 20px 14px;
+  padding: 22px 16px;
+  background: #2b2d31;
+  border: 1px solid #3f4248;
+  border-top: 3px solid #8fb3f5;
+  border-radius: 6px;
+}
+
+.skin-chatdark .cd-404 h1 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #f2f3f5;                       /* 12.42:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-404 p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #e3e5e8;                       /* 10.93:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-back {
+  color: #8fb3f5;                       /* 6.53:1 on #2b2d31 */
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-back:hover,
+.skin-chatdark .cd-back:focus { text-decoration: underline; }
+
+/* ---- footer ---- */
+
+.skin-chatdark .cd-foot {
+  background: #2b2d31;
+  border-top: 1px solid #1e1f22;
+  padding: 12px 14px;
+  font-size: 12px;
+  color: #c7ccd3;                       /* 8.54:1 on #2b2d31 */
+  overflow-wrap: break-word;
+}
+
+.skin-chatdark .cd-foot-dim { color: #a6adb5; }   /* 6.09:1 on #2b2d31 */
+
+/* ---- focus, for anyone driving this from a keyboard ---- */
+
+.skin-chatdark a:focus-visible {
+  outline: 2px solid #8fb3f5;
+  outline-offset: 2px;
+}

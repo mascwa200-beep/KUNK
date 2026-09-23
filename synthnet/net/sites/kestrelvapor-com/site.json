@@ -1,0 +1,1253 @@
+{
+  "schema": 1,
+  "domain": "kestrelvapor.com",
+  "title": "Kestrel Vapor - Route 62, Ashkettle",
+  "type": "page",
+  "era": "2015",
+  "skin": "plain-white",
+  "description": "The site of the vape shop that took the old Blue Kestrel diner building in 2013: a juice list, a punch card, directions that say look for the neon bird, and an About page that gets the diner's history wrong and is still up in 2026 with the correction sitting five pages away in the guestbook.",
+  "tags": [
+    "ashkettle",
+    "route-62",
+    "blue-kestrel",
+    "business",
+    "vape",
+    "2015"
+  ],
+  "links": [
+    "ashkettle-wx.net",
+    "kestrel-journal.net",
+    "wiki.gridfall.net",
+    "boards.gridfall.net",
+    "quarrycut.net",
+    "gridfalltire.com",
+    "marchfield-coop.com",
+    "ashkettlevfd.org",
+    "coyneflats.org",
+    "oldswap.gridfall.net",
+    "troop62.verity.net",
+    "clipvault.tv",
+    "gridfallhost.net",
+    "carrowwireless.com",
+    "verity.wiki",
+    "now.verityledger.com"
+  ],
+  "data": {
+    "navLabel": "Kestrel Vapor",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "KESTREL VAPOR"
+          },
+          {
+            "kind": "marquee",
+            "text": "*** NEW STOCK EVERY OTHER THURSDAY *** TENTH BOTTLE FREE ON THE PUNCH CARD *** CLOSED SUNDAYS *** LOOK FOR THE NEON BIRD ***"
+          },
+          {
+            "kind": "image",
+            "seed": "kv-front-neon-pole-62",
+            "imgKind": "banner",
+            "caption": "The front, the pole, and the bird. We did not put the bird there and we are not taking it down."
+          },
+          {
+            "kind": "text",
+            "body": "We are the vape shop on County Route 62 at Kestrel Road, in the old diner building with the neon kestrel on the pole. If you have driven between Gridfall and Ashkettle you have seen the bird. That is us underneath it.\n\nRay and Trish Kolbeck. We opened on Saturday 4 May 2013 with fourteen bottles of juice and one glass case, and the case was Trish's father's and it came out of a jewellery store in Halsey that shut in 1996.\n\nWe sell e-liquid, tanks, coils, batteries and the bits that go with them. We mix seven of our own flavours in the back. If you have come off cigarettes and you do not know what any of that means, come in and say so, and one of us will stand at the counter with you for as long as it takes. Nobody here works on commission. There is nobody here to work on commission."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we do"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "E-liquid, about sixty of them on the shelf, seven mixed here. The whole list is on [url=/juice]the juice page[/url] with strengths and prices.",
+              "Tanks, coils, glass, drip tips, spare batteries and chargers. [url=/hardware]The hardware page[/url] has the prices and Josh's battery rules, and the battery rules are not optional.",
+              "Filling a tank you bought somewhere else, for nothing, at the counter, while you wait.",
+              "Telling you your coil is fine and the problem is that you have not primed it. We do this about six times a week and we have never once charged anybody for it.",
+              "The punch card. [url=/punchcard]Tenth bottle free.[/url]"
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "What we do not do"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Sell to anybody under 18. We card. We card people we went to school with. There is a sign on the door and it is not a suggestion.",
+              "Cigarettes, cigars, pipes, papers or anything you light. We are not a smoke shop and people are disappointed about this roughly once a day.",
+              "Repair a mod that has been in a washing machine. We will look at it. We will not charge you for looking at it. It is not going to work.",
+              "Ship anything. We have no way to take a card over the telephone and no intention of getting one."
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The five things people come in for"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "From",
+              "How long"
+            ],
+            "rows": [
+              [
+                "A 30 ml bottle of house juice",
+                "$11",
+                "Off the shelf, unless it is Kestrel Blue on a Monday, which is the day it is mixed"
+              ],
+              [
+                "A five-pack of coils",
+                "$12",
+                "Off the shelf"
+              ],
+              [
+                "A starter kit, battery and tank and one juice",
+                "$39",
+                "About twenty minutes, because we set it up with you"
+              ],
+              [
+                "A pair of 18650 cells, married, tested, in a case",
+                "$19",
+                "Off the shelf. The case is not extra and do not carry them loose"
+              ],
+              [
+                "Somebody to look at a tank that has started leaking",
+                "nothing",
+                "Five minutes at the counter"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "Everything we stock is priced on [url=/juice]the juice list[/url] and [url=/hardware]the hardware list[/url] and that is what it costs at the till. We do not run a member price, a club price or an online price. There is one price and it is on a label."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "New this month"
+          },
+          {
+            "kind": "text",
+            "body": "[b]MARCH:[/b] Mango Ice is back in 3 and 6 mg after eleven weeks of the distributor telling us Tuesday.\n\nWe have the 50 watt boxes in at last, four of them, $79, and when they are gone we are not reordering until May because the last batch had two bad switches out of six.\n\nTrish has a batch of Kestrel Pie steeping and it goes on the shelf the week of the 23rd."
+          },
+          {
+            "kind": "text",
+            "body": "[i]We put the new stock note up at the start of every month. If it is old when you read it, the shop is still here and the shelf is still full, we have just been busy.[/i]"
+          },
+          {
+            "kind": "hitcounter",
+            "count": 22914
+          },
+          {
+            "kind": "text",
+            "body": "Kestrel Vapor, 4412 County Route 62, Ashkettle. [b]555-0174.[/b] kestrelvapor@verity.net\n\n[i]Site last changed Tuesday 17 March 2015. Built on the Site Manager thing that came with the hosting, by Ray, over about three weeks, and it shows.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "juice",
+        "name": "Juice List",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Juice list"
+          },
+          {
+            "kind": "text",
+            "body": "Everything on the shelf, what is in it, and what it costs. [b](H)[/b] means we mix it here, in the back room, with the door shut, in nitrile gloves, on a scale that cost more than the first month's rent.\n\nAll bottles are 30 ml unless it says otherwise. Nicotine strengths are in milligrams per millilitre, so a 6 means six milligrams. If you are coming off a pack a day, start at 12 and expect to come down. If somebody has told you to start at 24 they are selling you something."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Flavour",
+              "What it is",
+              "Nicotine",
+              "30 ml",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "[b]Kestrel Blue[/b] (H)",
+                "Blueberry with a little cream",
+                "0 / 3 / 6 / 12",
+                "$11",
+                "Our first one and still the one we sell most of. Mixed on Mondays, so a Monday morning is the wrong time to want it."
+              ],
+              [
+                "[b]Route 62[/b] (H)",
+                "Tobacco and caramel",
+                "0 / 3 / 6 / 12 / 18",
+                "$11",
+                "This is the one for somebody coming off a pack a day. Steep it two weeks. It is not good on day one and we say so before you pay."
+              ],
+              [
+                "[b]Quarry Cut[/b] (H)",
+                "Spearmint, heavy menthol",
+                "0 / 3 / 6 / 12",
+                "$11",
+                "Cold. People either finish the bottle in four days or bring it back and we swap it, which we will do once."
+              ],
+              [
+                "[b]Coyne Creek[/b] (H)",
+                "Peach, a little cream",
+                "0 / 3 / 6",
+                "$11",
+                "Summer juice. We mix less of it after the fair."
+              ],
+              [
+                "[b]Branch Line[/b] (H)",
+                "Coffee, cream, one sugar",
+                "0 / 3 / 6 / 12",
+                "$11",
+                "Named for the railroad and not for the trail. Ray is firm about this and will explain it to you."
+              ],
+              [
+                "[b]Nightwatch[/b] (H)",
+                "Black coffee, no sugar, a little dark chocolate",
+                "3 / 6 / 12",
+                "$11",
+                "The fellows who sit out in the lot at night with the radios buy this four bottles at a time. We do not ask and they do not say."
+              ],
+              [
+                "[b]Kestrel Pie[/b] (H)",
+                "Lemon, graham cracker, cold cream",
+                "0 / 3 / 6",
+                "$12",
+                "Trish's mother ate at the diner for thirty years and says the lemon pie there was nothing special. We made it anyway."
+              ],
+              [
+                "[b]Kerrin Cream Soda[/b] (H)",
+                "Cream soda and vanilla",
+                "0 / 3 / 6",
+                "$11",
+                "Mixed for a man from Kerrin who asked for it every week for four months."
+              ],
+              [
+                "Fairground Funnel",
+                "Fried dough, powdered sugar",
+                "3 / 6",
+                "$9",
+                "Sells in August whether we order it or not."
+              ],
+              [
+                "Ash & Amber",
+                "Cured tobacco, nothing added",
+                "6 / 12 / 18",
+                "$10",
+                "Dry. Three people in this county buy it and all three of them are particular."
+              ],
+              [
+                "Grandpa's Shed",
+                "Tobacco, caramel, vanilla",
+                "6 / 12 / 18",
+                "$9",
+                "RY4 style. Every shop has one, this one is fine."
+              ],
+              [
+                "Menthol Straight",
+                "Menthol",
+                "0 / 3 / 6 / 12 / 18",
+                "$8",
+                "The cheapest bottle on the shelf and it outsells things that cost more."
+              ],
+              [
+                "Green Apple Jack",
+                "Sour green apple",
+                "0 / 3 / 6",
+                "$9",
+                "Asked for by name by people who then cannot produce a licence. The answer stays no."
+              ],
+              [
+                "Blue Slush",
+                "Blue raspberry",
+                "0 / 3 / 6",
+                "$9",
+                "Stains a clear tank. Not a defect, and we are not replacing the tank."
+              ],
+              [
+                "Mango Ice",
+                "Mango with a cooling agent",
+                "0 / 3 / 6",
+                "$9",
+                "New in January and it has not stopped since."
+              ],
+              [
+                "Strawberry Milk",
+                "Strawberry and cream",
+                "0 / 3 / 6",
+                "$9",
+                ""
+              ],
+              [
+                "Custard No. 4",
+                "Vanilla custard",
+                "0 / 3 / 6 / 12",
+                "$10",
+                "Will finish a coil in four days. That is what custard does. It is not a bad bottle and it is not a bad coil."
+              ],
+              [
+                "Cinnamon Roll",
+                "Cinnamon, dough, icing",
+                "0 / 3 / 6",
+                "$10",
+                "December through February and then it goes away."
+              ],
+              [
+                "Halsey Cider",
+                "Apple cider and clove",
+                "0 / 3 / 6",
+                "$9",
+                "September through November."
+              ],
+              [
+                "Peppermint Bark",
+                "Peppermint, dark chocolate",
+                "0 / 3 / 6",
+                "$10",
+                "December. We ordered twenty four in 2013 and sold six, so in 2014 we ordered six and sold six."
+              ],
+              [
+                "Unflavoured base",
+                "VG and PG and nothing else",
+                "0 / 3 / 6 / 12 / 18 / 24",
+                "$7",
+                "For people who mix their own. We will sell you the parts. We will not tell you how, and if you are asking us how, do not."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "How the house shelf works"
+          },
+          {
+            "kind": "text",
+            "body": "Seven of the above are ours. We mix in batches of about a litre, we date every bottle on the base in silver pen, and we do not sell a house bottle that is less than ten days off the scale except for Quarry Cut, which is mint and does not need it.\n\n[b]Steeping.[/b] A tobacco or a custard is better in two weeks than it is on day one, and quite a lot better in six. A fruit is as good as it is going to get in four days. Nobody has to steep anything. It is a bottle of liquid in a cupboard and it does it by itself.\n\n[b]The base.[/b] House juice is 70 VG / 30 PG unless you ask, and we can do 50/50 for the small tanks if you give us a week. The flavour concentrates come from a supplier in the state capital and the nicotine comes in at 100 mg in a bottle with a cap our own hands are not strong enough to open, which is the point of the cap."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Things people ask at the counter"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Why is your bottle eleven dollars when the gas station has one for six.[/b] Because the gas station bottle is 10 ml and ours is 30. Work it out on the counter, we will wait.",
+              "[b]Can you make me one that tastes like a Marlboro.[/b] No. Nobody can. Every shop that says they have says it about the same three bottles. Route 62 gets closer than most and it is still not a cigarette.",
+              "[b]Is the nicotine the part that is bad for you.[/b] We are not doctors and we are not going to talk like we are. Ask a doctor. We sell zero milligram in nearly everything for people who want none of it.",
+              "[b]Do you do the big clouds.[/b] Josh does the big clouds. Josh is here Thursday evening and Saturday. Ray does not and will not pretend.",
+              "[b]My juice went dark in the bottle.[/b] Tobacco and custard go dark. That is the sugars. It is still fine. If it has gone cloudy or it smells wrong, bring it back."
+            ]
+          },
+          {
+            "kind": "image",
+            "seed": "kv-juice-shelf-labels",
+            "imgKind": "photo",
+            "caption": "The shelf, the week we got the label printer. Before that everything was masking tape and Trish's handwriting, and two or three people have said they liked that better."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Gone"
+          },
+          {
+            "kind": "text",
+            "body": "Flavours we have stopped and will not be bringing back, because somebody asks about each of these about once a month:\n\n[list][*][s]Depot Street Doughnut[/s] - the concentrate was discontinued in October 2014 and every replacement we tried was a different bottle wearing its coat.[*][s]Tannery Cola[/s] - nobody bought it. Nobody. Twelve bottles, fourteen months, zero.[*][s]Kestrel Blue Ice[/s] - it was Kestrel Blue with a cooling agent and it split the customers in half, and we would rather not have half.[*][s]Bubblegum[/s] - we took it off the shelf in 2014 and we are not going to explain why on a website, but you can probably guess.[/list]"
+          },
+          {
+            "kind": "text",
+            "body": "[i]Juice list updated Saturday 7 February 2015. Prices on this page are the counter prices and they include the tax. We have put them up twice since 2013, both times by a dollar, both times because the concentrate went up.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "punchcard",
+        "name": "Punch Card",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "The Kestrel Card"
+          },
+          {
+            "kind": "text",
+            "body": "[i]Welcome to your Services page! This is a good place to describe a service or program that you offer to your customers. You can add pictures, links and tables. To edit this text, sign in to Site Manager and choose Edit Page. Remember to delete this paragraph.[/i]"
+          },
+          {
+            "kind": "text",
+            "body": "Buy a bottle, get a punch. Ten punches, the next 30 ml house bottle is free. That is the whole programme and there is no app, no e-mail, no points and nobody is going to ask for your telephone number."
+          },
+          {
+            "kind": "image",
+            "seed": "kv-punch-card-blue-1214",
+            "imgKind": "thumb",
+            "caption": "The blue card. There is a kestrel on it that Trish's niece drew, and it is a better bird than the one on the pole."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The rules, such as they are"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "What earns a punch",
+                "Any bottle of e-liquid, 30 ml or larger, any brand we carry"
+              ],
+              [
+                "What does not",
+                "Coils, glass, batteries, chargers, tanks, mods, or a 10 ml"
+              ],
+              [
+                "Punches to a free bottle",
+                "10"
+              ],
+              [
+                "What the free bottle can be",
+                "Any house flavour, 30 ml, any strength"
+              ],
+              [
+                "What it cannot be",
+                "Kestrel Pie, which costs us more to make than the others, sorry"
+              ],
+              [
+                "Cards per person",
+                "One. We are not going to count them, but one"
+              ],
+              [
+                "Expiry",
+                "None. It says no expiry on the back and we meant it"
+              ],
+              [
+                "Transferable",
+                "Yes. If you want to give somebody a card with nine punches on it that is a nice thing to do"
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The green cards and the blue cards"
+          },
+          {
+            "kind": "text",
+            "body": "The first run of cards, in June 2013, was green, and the telephone number printed on the back of them was [b]555-0147[/b], which is wrong. Ours is 555-0174. We transposed it ourselves on the form and the printer set exactly what we sent.\n\n555-0147 is a fax line at the [url=synth://marchfield-coop.com/]Marchfield Farmers Co-op[/url]. For about five months in 2013 a machine in their office answered a few dozen calls from people who wanted to know if we had Green Apple Jack in stock. The lady in their office rang us about it, twice, and was extremely pleasant about it both times, and we sent a box of doughnuts over and she said that was not necessary and kept the doughnuts.\n\nWe printed the blue cards in October 2014 with the right number on them.\n\n[b]The green ones are still good.[/b] They will always be good. If you have a green card with seven punches on it, bring it in, it is seven punches. Some people have kept the green ones on purpose and we understand why."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "If you lose it"
+          },
+          {
+            "kind": "text",
+            "body": "We do not keep a list. There is no list. The card is the record, and if the card is gone then the punches are gone, and we are sorry and there is nothing we can do.\n\nWe have broken that once. A man who had been coming in since the second week lost a card with nine on it out of a shirt pocket in the lot, in the snow, in February, and stood at the counter being very decent about it, and Ray punched him a new one nine times and neither of us has ever mentioned it since. Do not ask for this. He did not ask for it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The box"
+          },
+          {
+            "kind": "text",
+            "body": "There is a shoebox under the till with about forty cards in it belonging to people who said \"just keep it here\" rather than carry it. They are in alphabetical order by first name, because that is how Trish knows people.\n\nIf you moved away and you have a card in that box, it is still in that box."
+          },
+          {
+            "kind": "text",
+            "body": "[i]Punch card page last changed Saturday 4 October 2014, when the blue cards came in.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "hardware",
+        "name": "Hardware",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Tanks, mods, coils and batteries"
+          },
+          {
+            "kind": "text",
+            "body": "This page is Josh's. He is here Thursday evening and all day Saturday and he knows more about this than either of us, and when he tells somebody not to buy something, we do not overrule him, including the time it was a two hundred dollar sale and the man went away angry.\n\n-- Ray"
+          },
+          {
+            "kind": "text",
+            "body": "All right. Prices are at the counter, they include tax, and everything here is something we have in a drawer today and not something we can order in \"about a week\".\n\n-- Josh"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Batteries and mods"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Price",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Ego-style battery, 1100 mAh",
+                "$19",
+                "The right first thing for most people. It charges off the same cable as half the phones in this county."
+              ],
+              [
+                "Ego-style battery, 1600 mAh",
+                "$24",
+                "Same but lasts a shift and a half."
+              ],
+              [
+                "Spare 510 USB charger",
+                "$6",
+                "Buy a second one. Leave it in the truck."
+              ],
+              [
+                "Regulated box, 30 W",
+                "$54",
+                "Screen, adjustable wattage, short protection, reverse polarity protection, a cut-off. All of that is the reason it costs more than the tube."
+              ],
+              [
+                "Regulated box, 50 W",
+                "$79",
+                "Four in stock in March 2015. The last batch had two bad switches out of six and we sent those back, so if yours starts firing on its own, bring it, do not live with it."
+              ],
+              [
+                "Mechanical tube mod",
+                "$45",
+                "Read the next section before you ask for one of these."
+              ],
+              [
+                "18650 cell, 2500 mAh, 20 A continuous, married pair",
+                "$19 the pair",
+                "Tested, matched, dated in pen on the wrap, and they come in a plastic case, and the case is not extra."
+              ],
+              [
+                "Two-bay cell charger",
+                "$22",
+                "The kind with a screen. The kind without a screen is six dollars and I will not sell it."
+              ],
+              [
+                "Spare plastic cell case",
+                "$1",
+                ""
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Tanks and glass"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Price",
+              "Notes"
+            ],
+            "rows": [
+              [
+                "Starter clearomizer, 1.6 ml",
+                "$12",
+                "Comes with two coils. This is the tank on nearly every starter kit that leaves here."
+              ],
+              [
+                "Sub-ohm tank, 3 ml",
+                "$32",
+                "Takes the 0.5 ohm heads below. Do not put 24 mg juice in this."
+              ],
+              [
+                "Rebuildable dripper, 22 mm",
+                "$28",
+                "If you are buying this you already know what it is."
+              ],
+              [
+                "Replacement glass",
+                "$6",
+                "We stock glass for the two tanks we sell and nothing else, and we will tell you on the telephone whether we have yours before you drive out."
+              ],
+              [
+                "Drip tips",
+                "$3",
+                "There is also a coffee can of old ones by the till. Take one. They are free. People leave better ones in it than they take out, which I do not understand."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Coils and wire"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              "Price",
+              ""
+            ],
+            "rows": [
+              [
+                "1.8 ohm heads, 5-pack",
+                "$12",
+                "Fits the starter tank"
+              ],
+              [
+                "1.2 ohm heads, 5-pack",
+                "$13",
+                "Fits the starter tank, warmer, eats juice faster"
+              ],
+              [
+                "0.5 ohm sub-ohm heads, 5-pack",
+                "$16",
+                "Fits the 3 ml tank only"
+              ],
+              [
+                "Kanthal A1, 28 gauge, 30 ft spool",
+                "$8",
+                ""
+              ],
+              [
+                "Japanese cotton, 5 pads",
+                "$4",
+                ""
+              ],
+              [
+                "Ceramic tweezers",
+                "$7",
+                ""
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Prime the coil"
+          },
+          {
+            "kind": "text",
+            "body": "Nine out of ten \"this coil is burnt out of the packet\" complaints are a dry coil, and the fix is free and takes ninety seconds.\n\nPut two or three drops of juice directly onto the cotton you can see through the holes in the side of the head. Screw it in. Fill the tank. Then [b]leave it standing for five minutes[/b] before you press the button. Five actual minutes, not five of the minutes people count when they are standing in a parking lot.\n\nThat is it. Do that and a head lasts a fortnight instead of an evening. I will do the first one for you at the counter and I would rather you watched me."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Batteries. Read this part."
+          },
+          {
+            "kind": "text",
+            "body": "[b]This is the only thing on this website that can hurt you.[/b] Everything else is a shopping list.\n\nAn 18650 cell is not a AA. It will deliver everything it has into a short circuit and it does not stop, and when one goes it does not catch fire politely, it vents, sideways, for about four seconds. I have seen one do it, not here, at a shop in Ardo, into a sink, on purpose, with a cell somebody had ruined. It was the loudest thing I have ever stood next to indoors."
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]Never carry a loose cell in a pocket.[/b] Not with keys. Not with change. Not in a handbag with a nail file in it. The case is a dollar and we give it to you with the cells.",
+              "[b]If the wrap is torn, retire the cell.[/b] Not tape. Not nail polish. A new wrap is fifty cents and we will do it here for nothing, or the cell goes in the bucket by the door.",
+              "[b]Married pairs stay married.[/b] Two cells bought together, charged together, used together, retired together. Do not mix a new cell with one that has been in a mod since Christmas.",
+              "[b]Know the continuous discharge rating of what you are holding.[/b] The one we sell is 20 amps. If somebody sold you a 3000 mAh cell rated 35 A, somebody lied to you, and it is not your fault, and please bring it in and I will show you why.",
+              "[b]On a mechanical mod there is nothing between the cell and your coil but your build.[/b] No cut-off, no short protection, no screen telling you anything. The wire is the fuse and so are you.",
+              "[b]If a mod gets hot in your hand, put it down, away from you, on concrete.[/b] Do not put it in your pocket to deal with later."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]I will not sell a mechanical mod to somebody who cannot tell me, without looking it up, the resistance they intend to build and the continuous rating of the cell they are going to put in it.[/b] That is not a shop policy that came down from anywhere. It is mine, and Ray has backed it every single time, including in March last year in front of a full shop.\n\nIf that reads as rude: come in on a Saturday, I will sit with you and an ohm meter for an hour, and at the end of it you will be somebody I will sell one to. That offer has been taken up four times and three of those people still come in."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Warranty, honestly"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "Regulated mods and batteries",
+                "Thirty days, bring the box, we replace it or we send it back for you"
+              ],
+              [
+                "Tanks",
+                "Thirty days on the hardware. Glass is not covered and never will be"
+              ],
+              [
+                "Coils and heads",
+                "Not covered. We will swap a head that is dead out of the packet, once, on the day"
+              ],
+              [
+                "18650 cells",
+                "Not covered. Read the section above. A damaged cell is a damaged cell"
+              ],
+              [
+                "E-liquid",
+                "If it is wrong, cloudy, or not what the label says, bring it back at any point and we will make it right"
+              ],
+              [
+                "Anything bought somewhere else",
+                "We will look at it for nothing and tell you the truth about it"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Hardware page last changed Tuesday 17 March 2015. Prices go stale. The battery section does not.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "find",
+        "name": "Find Us",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Find us"
+          },
+          {
+            "kind": "text",
+            "body": "[b]Look for the neon kestrel.[/b]\n\nThat is the whole of the directions and in two years nobody has needed more. There is an eleven foot neon bird on a pole in front of this building, it is lit every night, and there is nothing else on this stretch of road that is lit at all.\n\n[b]4412 County Route 62, Ashkettle[/b], on the corner where Kestrel Road comes down to 62. Telephone [b]555-0174[/b]."
+          },
+          {
+            "kind": "table",
+            "head": [
+              "Day",
+              "Open",
+              "Close"
+            ],
+            "rows": [
+              [
+                "Monday",
+                "10:00",
+                "6:00"
+              ],
+              [
+                "Tuesday",
+                "10:00",
+                "6:00"
+              ],
+              [
+                "Wednesday",
+                "10:00",
+                "6:00"
+              ],
+              [
+                "Thursday",
+                "10:00",
+                "8:00"
+              ],
+              [
+                "Friday",
+                "10:00",
+                "8:00"
+              ],
+              [
+                "Saturday",
+                "10:00",
+                "5:00"
+              ],
+              [
+                "Sunday",
+                "CLOSED",
+                "CLOSED"
+              ]
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[b]We are closed on Sundays.[/b] We have been closed on Sundays since the day we opened and there is a card taped inside the glass of the door saying so. People still drive out. If you are coming from any distance on a weekend, make it Saturday.\n\nThursdays and Fridays we stay open until eight. That was Trish's idea in the second month and those are now the two best evenings of the week, and neither of us can tell you why Thursday in particular. It just is."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting here"
+          },
+          {
+            "kind": "text",
+            "body": "[b]From Gridfall:[/b] east on 62 about nine miles. Past the fairground entrance, past Kroh's market, and we are on the right at the Kestrel Road corner. If you reach the Ashkettle village sign you have gone roughly a mile too far.\n\n[b]From Ashkettle:[/b] west on 62, about a mile, on your left. You will have gone by it before you have finished deciding, because the bird is easier to see coming the other way.\n\n[b]From Halsey and the south:[/b] up the county road to 62 and turn left. Twenty minutes if the trucks are not stacked at the quarry turn.\n\n[b]From Marchfield:[/b] there is no good way and everybody knows it. Most people come down through Gridfall.\n\nIn winter, 62 gets ploughed early and Kestrel Road does not. If you are coming down Kestrel Road from the north end, [url=synth://ashkettle-wx.net/]Len Mabry's weather station[/url] is 1.1 miles up it and his readings are better than anything you will get off the radio."
+          },
+          {
+            "kind": "image",
+            "seed": "kv-lot-gravel-pole-dusk",
+            "imgKind": "photo",
+            "caption": "The lot at about half four in November. Six spaces, gravel, and the two nearest the pole are the ones with somebody standing in them taking a photograph of the bird."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Parking"
+          },
+          {
+            "kind": "text",
+            "body": "Gravel, six spaces, and the county owns the shoulder and does not want you on it. The two spaces at the pole end are very often occupied by somebody photographing the sign, and that has been true since before we got here, and it will be true after us. Pull round them. There is room.\n\nThe drain at the north corner of the lot backs up in a hard rain and there is a puddle there that is deeper than it looks. It has been reported. It will be reported again."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The bird"
+          },
+          {
+            "kind": "text",
+            "body": "It goes on at dusk and off at midnight on a timer we did not install and cannot find.\n\nYou may photograph it any time you like, including when we are shut, and people do, constantly, at all hours, and we have got used to headlights swinging across the back wall at eleven at night.\n\n[b]Please do not stand in 62 to get the whole sign in the frame.[/b] It is a 55 limit, there are trucks on it, and people do this at night, in dark coats. We have gone out and asked twice.\n\nThe electric on the sign alone runs about $40 a month, which we pay, and which we knew about, and which is fine."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The people in the lot at night"
+          },
+          {
+            "kind": "text",
+            "body": "Two or three nights a week, after dark, somebody parks at the pole end with a radio. Sometimes it is a whip antenna on a magnet on the roof. Once it was a proper mast on a trailer and a man with a folding table.\n\nThey are polite, they buy things, and about half of them are on their way out past Ashkettle to the quarry cut and stop here because we are the last place open on this road after six.\n\nWe have been told what they are listening to about nine times and we have been told nine different things. One fellow said it is a weather beacon. Another said Air Force. A very sure young man said it was an advertisement for a video game. We do not know and we are not going to pretend to. They buy Nightwatch four bottles at a time and they put their rubbish in the bin, which is more than we can say for the daytime."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Getting hold of us"
+          },
+          {
+            "kind": "text",
+            "body": "[b]555-0174[/b] during the hours above. It rings on the counter. If it rings out we are with somebody.\n\n[b]kestrelvapor@verity.net[/b], which Ray reads in the evening and Trish does not read at all.\n\nIf you want to know whether we have a particular coil or a particular glass before you drive out from Halsey or Milbrook, ring. We will walk to the drawer with the telephone in our hand."
+          }
+        ]
+      },
+      {
+        "id": "about",
+        "name": "About Us",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "About us"
+          },
+          {
+            "kind": "text",
+            "body": "Ray Kolbeck smoked for twenty two years and stopped in October 2011, and the thing that finally did it was a cheap battery and a bottle of bad apple juice from a mall kiosk in New Ardo. Eighteen months later we signed a lease on a building on 62 with a bird on a pole in front of it.\n\nThat is the entire business plan. There was never a second page to it.\n\nTrish does the books, the mixing and the ordering. Ray does the counter and the talking. Josh Amsden is here Thursday evenings and Saturdays and knows the hardware better than both of us. That is everybody."
+          },
+          {
+            "kind": "image",
+            "seed": "kv-counter-till-menu",
+            "imgKind": "photo",
+            "caption": "The counter. The framed thing on the wall behind Ray is the old diner menu and everybody asks about it, so it has its own bit further down this page."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The building"
+          },
+          {
+            "kind": "text",
+            "body": "People ask about this building more than they ask about anything we sell, so here is what we have been told.\n\nIt was a diner called the Blue Kestrel. It was here on 62 from [b]1958[/b] until it closed in [b]2009[/b], when the last owner retired. There was a fire in the seventies that took the kitchen and a good part of the roof, and the back half was put back up from the slab, which is why the back is block and the front is not.\n\nAfter the diner it sat empty a long while. We have been told it was empty because of the fire at the substation in 2004, which put this end of the county out for the best part of a week and which people here still talk about like it was last year.\n\nWe get the history second hand, off the counter, from whoever is standing at it. If any of it is wrong, tell us, and we will fix it."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The sign"
+          },
+          {
+            "kind": "text",
+            "body": "The bird is not ours. It came with the building and it is staying with the building.\n\nThe county has this building on its historic list, and that is the reason the sign is allowed to stand. A new sign that size on this stretch of 62 would not be permitted at all now, and we were quoted $3,800 for a lit box half that size by a shop in Halsey, so even if we wanted one, which we do not, that is not happening.\n\nWe put our own small lit box underneath it in August 2013 saying VAPE with an arrow, and the zoning office looked at it, and it is four inches inside what we are allowed, and we have the paper.\n\nThe neon itself has two dead tube sections at the tail end that have been dead since before we came. A man from [url=synth://ottman-sign.synth/]Ottman Sign & Lighting[/url] in Halsey came out and looked at it in 2014 and said he could do it and said what it would cost, and it is on the list, behind the roof and behind the cooler."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The menu on the wall"
+          },
+          {
+            "kind": "text",
+            "body": "A man came in during the first month with a paper menu from the diner in a frame under glass, put it on the counter, and said \"this belongs in here\". He would not take anything for it and he did not leave a name.\n\nIt is on the wall behind the till. Coffee is fifteen cents on it. There is a pie listed that none of us has ever heard of. People ask to photograph it and the answer is always yes, and about once a fortnight somebody stands in front of it for a while and then tells us about their grandfather."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The lady with the website"
+          },
+          {
+            "kind": "text",
+            "body": "A lady who waited tables here in the seventies keeps a website about the diner, with menus and photographs and who sat in which booth. It is better than anything we could tell you and we send people to it: [url=synth://kestrel-journal.net/]kestrel-journal.net[/url].\n\nHer name is Marian Teal, or Teale, we have seen it both ways. She sent us a card when we opened. It said she was glad the lights were on out here again. We have it in the drawer under the till.\n\nThere is also a page about the building on [url=synth://wiki.gridfall.net/]the county wiki[/url], which is more careful than we are."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "The rules we keep"
+          },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "18 and over, no exceptions, and we card. We have carded people we went to school with and we will do it again.",
+              "No vaping in the shop by anybody under 18, including in the doorway, including if a parent is standing there saying it is fine.",
+              "We do not sell nicotine to somebody who tells us they have never smoked. This is not the law. It is what we do. It has cost us maybe forty sales and both of us sleep fine.",
+              "Nothing leaves this counter without the person holding it knowing what is in it and what strength it is.",
+              "If you come in to tell us you have stopped, and about one person a month does, you get a coffee out of the pot in the back and you have to sit and have it."
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]About page last changed Saturday 31 January 2015.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "guestbook",
+        "name": "Guestbook",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Sign the guestbook"
+          },
+          {
+            "kind": "text",
+            "body": "Tell us what to stock, or tell us what we have got wrong. Trish reads these and Ray does not, which is why the replies are more useful when they are hers.\n\n[i]Do not put your telephone number in here. It goes on the internet and it stays there.[/i]"
+          },
+          {
+            "kind": "guestbook",
+            "entries": [
+              {
+                "author": "T. Hurd",
+                "time": "2013-05-11",
+                "body": "Came out opening week to be nosy and left with a battery. The wife is going to have opinions. Good luck to you both, that building has been dark my whole adult life."
+              },
+              {
+                "author": "Len Mabry",
+                "time": "2013-06-24",
+                "body": "I am 1.1 miles up Kestrel Road from your corner and I have watched that lot be empty since I retired.\n\nI do not smoke and I am not going to start, but I came down and bought a bottle of the blueberry for my son-in-law and he says it is the good kind. Put your hours on this page in a table where a person can find them, not in a sentence.\n\n-- Len, [url=synth://ashkettle-wx.net/]Kestrel Road Weather Station[/url]"
+              },
+              {
+                "author": "Ray",
+                "time": "2013-06-26",
+                "body": "Hours are in a table now. Thank you Len."
+              },
+              {
+                "author": "Bri",
+                "time": "2013-09-28",
+                "body": "Will you ever do a cream soda one. I have asked three times in the shop so I am asking on the computer as well."
+              },
+              {
+                "author": "D. Quillen",
+                "time": "2013-11-16",
+                "body": "Rang the number on the back of the card for four days about the apple and got a fax machine screeching at me every time. Thought I was losing my mind. Got told in the shop it is a misprint. You might want to put that somewhere a person would see it."
+              },
+              {
+                "author": "Trish",
+                "time": "2013-11-18",
+                "body": "It is on the punch card page now and I have written it on the till in marker. It is our mistake, not the printer's. The green cards are still good and always will be."
+              },
+              {
+                "author": "someone from Halsey",
+                "time": "2014-03-08",
+                "body": "Drove up Sunday. Card in the door says closed Sundays. That is on me, I did not look at the website. Came back Thursday and the fellow spent twenty minutes setting the thing up and did not charge me for the extra coil. So."
+              },
+              {
+                "author": "wpennock",
+                "time": "2014-04-19",
+                "body": "The About page on this site has the substation wrong.\n\nIt was 11 June 2003, not 2004. It started at 4:52 in the morning. It was Substation No. 3, at Depot and Quarry Road in Gridfall, which is nine miles west of your door, and it had nothing to do with this building standing empty.\n\nIt burned about six hours. Four thousand one hundred customers were out, not this whole end of the county. The longest anybody was out was five days and that was Tannery Flats and the Depot Street block, not Ashkettle. Nobody died. Two Gridfall volunteers were treated for smoke at County General and went home the same afternoon, and one of them is my cousin.\n\nThe state commission wrote it up that November, two pages. It says insulation degradation consistent with age. It does not say lightning and it never has.\n\nI am not asking you to take the page down. I am asking for the year."
+              },
+              {
+                "author": "Ray",
+                "time": "2014-04-21",
+                "body": "Thank you. We will get that fixed."
+              },
+              {
+                "author": "Marlene O.",
+                "time": "2014-06-07",
+                "body": "You have made a lemon pie flavour of the pie from the diner and I want you to know that my mother worked the fryer there in 1974 and she would have had something to say about it. She would have bought a bottle first and then had something to say about it."
+              },
+              {
+                "author": "hollowpoint_22",
+                "time": "2015-01-24",
+                "body": "the kid in there on saturday told me my 0.3 build was fine on a 20 amp cell which it is not, its 12 amps at 4.2v across 0.3 ohms so hes wrong. anyway good shop, got two bottles"
+              },
+              {
+                "author": "Josh",
+                "time": "2015-01-26",
+                "body": "You have it backwards but you have it backwards in the safe direction, so I am not going to make a thing of it.\n\n4.2 volts across 0.3 ohms is 14 amps, not 12. That is under 20, which is why I said it was fine. Come in Saturday and bring the mod and we will put a meter on the build, because 0.3 written on a card and 0.3 on a meter are two different numbers about half the time.\n\n-- Josh"
+              },
+              {
+                "author": "P. Landry",
+                "time": "2015-02-28",
+                "body": "Third winter you have been out here and the bird has been lit every night of it. My husband drives 62 at five in the morning and he says it is the only thing between Gridfall and the village that tells you where you are."
+              },
+              {
+                "author": "Ray",
+                "time": "2015-05-30",
+                "body": "New juice going up on the list shortly. Trish has two she is happy with and one she is not."
+              },
+              {
+                "author": "a customer",
+                "time": "2016-08-19",
+                "body": "Is the blueberry still mixed on Mondays or is that out of date like the March stock note. Rang twice this week, no answer either time."
+              },
+              {
+                "author": "VAPE WHOLESALE DIRECT",
+                "time": "2017-06-03",
+                "body": "ATTENTION SHOP OWNERS!!! WHOLESALE E-LIQUID AND HARDWARE, NO MINIMUM ORDER, 40% BELOW YOUR CURRENT DISTRIBUTOR. all major brands + private label with YOUR shop name on the bottle. drop ship direct to your customers. register free at [url=synth://vapedeals-bulk.top/]vapedeals-bulk.top[/url] code KESTREL17"
+              },
+              {
+                "author": "M. Teasdale",
+                "time": "2018-02-11",
+                "body": "Are you going to have to stop mixing your own? Somebody at work says the rules changed and the small shops cannot do it any more. I would rather buy the Route 62 than any of the bottles off the rack and I would like to know if I should be stocking up."
+              },
+              {
+                "author": "Listing Services Dept.",
+                "time": "2019-10-07",
+                "body": "Dear business owner, our records indicate that KESTREL VAPOR has an unclaimed business profile appearing across 47 directory platforms. Unclaimed profiles display incorrect hours 63% of the time. Claim your profile today to prevent loss of local discovery traffic. A one-time verification fee of $49 applies. [url=synth://claim-listing-now.biz/]claim-listing-now.biz[/url]"
+              },
+              {
+                "author": "no name given",
+                "time": "2020-11-30",
+                "body": "Drove out Tuesday afternoon. Door locked, lights off, bird still on. Nothing on the door. Everything all right out there?"
+              },
+              {
+                "author": "R. Oyen",
+                "time": "2021-09-12",
+                "body": "There is a notice on the glass now. Thank you both for eight years. My father got off two packs a day at that counter at sixty seven years old and he is still off them.\n\nThe bird is still lit. Somebody is paying for that."
+              },
+              {
+                "author": "Deanne V.",
+                "time": "2022-06-04",
+                "body": "For anybody finding this page the way I did: this is a phone repair shop now. Has been since spring. The bird is still up, there is a CRACKED SCREEN sign under it, and the fellow in there is perfectly nice about being asked whether he has any of the blueberry left. He does not. He gets asked."
+              },
+              {
+                "author": "VerityLocal Content",
+                "time": "2024-07-18",
+                "body": "The historic Blue Kestrel Diner, a beloved Route 62 landmark that closed its doors in 2008 following the devastating 2004 substation fire that claimed two lives, has found new life as a popular vape shop serving the local community. Residents say the iconic neon sign remains one of the county's most photographed attractions. Source: [url=synth://now.verityledger.com/]now.verityledger.com[/url].\n\nWhat is your favourite roadside landmark in Verity County? Let us know in the comments."
+              },
+              {
+                "author": "Business Profile Assistant",
+                "time": "2025-04-22",
+                "body": "Good news! Your business hours for KESTREL VAPOR have been automatically updated across our network based on aggregated visit signals. Your listing now shows Open 9:00 AM - 9:00 PM, seven days a week. Businesses that keep hours current see up to 70% more local discovery. No action is required on your part."
+              },
+              {
+                "author": "kfennimore",
+                "time": "2026-02-24",
+                "body": "I am writing this here because two things now cite this page as a source, and neither of them is a person I can write to.\n\nThe About page on this site says the diner closed in 2009 and that the county has the building on a historic list. Neither is so. The diner closed in 2006. There is no historic list and no historic exemption anywhere in the county sign ordinance; the sign stands because it is a legal nonconforming sign, which is a different mechanism and a duller one. And the substation fire was 2003, which the gentleman above told you in 2014, on this page, eleven years ago now.\n\nI have taken the 2009 date out of [url=synth://verity.wiki/wiki/blue-kestrel-building]the wiki article[/url] four times since October. It keeps coming back from a summariser that reads pages like this one, and it trusts this page precisely because it is old and was written by a shop rather than a machine.\n\nNobody here did anything wrong. Two people ran a shop and wrote down what customers told them, which is what everybody did before there was anything else to read. I would only rather the copying went the other way."
+              },
+              {
+                "author": "T. Ruiz",
+                "time": "2026-08-29",
+                "body": "I am the phone repair in this building.\n\nThree or four times a year somebody brings me one of the blue punch cards, usually with seven or eight punches on it, and asks if it is worth anything. It is not, and I am sorry, and I am not the person who can do anything about it, and every one of them has been fine about it.\n\nThe cards are nice. The bird on them is better than the one on the pole.\n\nIf you are looking for this shop, it closed in 2021. If you are looking for a screen, that is me. [url=synth://carrowwireless.com/]carrowwireless.com[/url], and my hours are on my own page and not on any listing."
+              },
+              {
+                "author": "Directory Sync",
+                "time": "2026-09-08",
+                "body": "KESTREL VAPOR (Ashkettle, Verity County) - Currently Open. Popular times: Sunday 2 PM. Rated 4.6 from 3 reviews. Is this information correct? Suggest an edit."
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[i]Entries are posted automatically. We check the book on Mondays.[/i]"
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "blocks": [
+          {
+            "kind": "heading",
+            "level": 1,
+            "text": "Links"
+          },
+          {
+            "kind": "text",
+            "body": "Places we actually use, and a couple we used to."
+          },
+          {
+            "kind": "buttons",
+            "label": "Around here:",
+            "items": [
+              {
+                "label": "The Gridfall Boards",
+                "seed": "kv-btn-boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "The Verity County Wiki",
+                "seed": "kv-btn-wiki",
+                "domain": "wiki.gridfall.net"
+              },
+              {
+                "label": "Kestrel Road Weather Station",
+                "seed": "kv-btn-wx",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "kestrel journal",
+                "seed": "kv-btn-kj",
+                "domain": "kestrel-journal.net"
+              },
+              {
+                "label": "Gridfall Tire & Alignment",
+                "seed": "kv-btn-tire",
+                "domain": "gridfalltire.com"
+              },
+              {
+                "label": "Marchfield Farmers Co-op",
+                "seed": "kv-btn-coop",
+                "domain": "marchfield-coop.com"
+              },
+              {
+                "label": "Ashkettle Volunteer Fire Department",
+                "seed": "kv-btn-vfd",
+                "domain": "ashkettlevfd.org"
+              },
+              {
+                "label": "The Quarry Cut on Route 62",
+                "seed": "kv-btn-quarry",
+                "domain": "quarrycut.net"
+              },
+              {
+                "label": "Coyne Flats Community Association",
+                "seed": "kv-btn-cf",
+                "domain": "coyneflats.org"
+              },
+              {
+                "label": "Gridfall Swap Shop",
+                "seed": "kv-btn-swap",
+                "domain": "oldswap.gridfall.net"
+              },
+              {
+                "label": "Troop 62",
+                "seed": "kv-btn-troop",
+                "domain": "troop62.verity.net"
+              },
+              {
+                "label": "Gridfall Host",
+                "seed": "kv-btn-host",
+                "domain": "gridfallhost.net"
+              },
+              {
+                "label": "VAPERS OF THE VALLEY - forum",
+                "seed": "kv-btn-votv"
+              },
+              {
+                "label": "Mod Of The Month - vote here!",
+                "seed": "kv-btn-motm"
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "The last two buttons do not go anywhere any more. The valley forum went off in about eighteen months of 2014 and the mod of the month site went with whoever was running it. We are leaving them up, because taking a button off a page is admitting something."
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Local"
+          },
+          {
+            "kind": "table",
+            "head": [
+              "",
+              ""
+            ],
+            "rows": [
+              [
+                "[url=synth://boards.gridfall.net/]boards.gridfall.net[/url]",
+                "The county board. Ray reads the Off Topic and never posts. Somebody there knows the answer to anything about a road in this county."
+              ],
+              [
+                "[url=synth://wiki.gridfall.net/]wiki.gridfall.net[/url]",
+                "The county wiki. There is an article about this building on it and it is better than our About page."
+              ],
+              [
+                "[url=synth://ashkettle-wx.net/]ashkettle-wx.net[/url]",
+                "Len Mabry, 1.1 miles up Kestrel Road. Two readings a day by hand since 1999. If you want to know whether the road is bad, this and not the television."
+              ],
+              [
+                "[url=synth://kestrel-journal.net/]kestrel-journal.net[/url]",
+                "The diner, by somebody who worked in it. Menus, photographs, the booths, the lot. Go and read it, it is the reason half the people who come in here come in here."
+              ],
+              [
+                "[url=synth://quarrycut.net/]quarrycut.net[/url]",
+                "Everything about the cut on 62 east of the village, by a man who has clearly been thinking about it for years."
+              ],
+              [
+                "[url=synth://gridfalltire.com/]gridfalltire.com[/url]",
+                "Depot Street. They did the alignment on the van and told us about the ball joint before it went."
+              ],
+              [
+                "[url=synth://marchfield-coop.com/]marchfield-coop.com[/url]",
+                "The co-op, and the owners of the fax machine that spent five months in 2013 answering our telephone calls. See [url=/punchcard]the punch card page[/url]."
+              ],
+              [
+                "[url=synth://ashkettlevfd.org/]ashkettlevfd.org[/url], [url=synth://coyneflats.org/]coyneflats.org[/url]",
+                "The village fire department and the Coyne Flats association. Both of them get a bottle in the raffle basket every year and neither of them has ever asked."
+              ],
+              [
+                "[url=synth://oldswap.gridfall.net/]oldswap.gridfall.net[/url]",
+                "The swap board. The glass case in this shop came off here for $60 and a drive to Coyne Flats."
+              ],
+              [
+                "[url=synth://clipvault.tv/]clipvault.tv[/url]",
+                "Somebody filmed the bird at night in 2009 and it is on here and it is four minutes long and nothing happens in it, and we have watched it more than once."
+              ]
+            ]
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "text": "Trade"
+          },
+          {
+            "kind": "text",
+            "body": "We buy hardware through a distributor in the state capital and flavour concentrate through two more, and none of them will thank us for putting their names on a website, so we have not. If you are opening a shop and you want to know who they are, ring us, we will tell you, it is not a secret and there is room for both of us.\n\n[url=synth://tamlins.synth/]Tamlin's Vape & Tobacco[/url] on Mill Street in Gridfall has been going longer than us and does the tobacco end of it properly, and if we have not got something there is a fair chance they have. They send people out here for the house juice and we send people in there for pipe tobacco, which we do not touch."
+          },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              {
+                "label": "The Gridfall Boards",
+                "domain": "boards.gridfall.net"
+              },
+              {
+                "label": "Kestrel Road Weather Station",
+                "domain": "ashkettle-wx.net"
+              },
+              {
+                "label": "Coyne Flats Community Association",
+                "domain": "coyneflats.org"
+              },
+              {
+                "label": "Troop 62, Gridfall",
+                "domain": "troop62.verity.net"
+              },
+              {
+                "label": "The Quarry Cut on Route 62",
+                "domain": "quarrycut.net"
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "body": "[url=synth://gridfallhost.net/]Gridfall Host[/url] put us in the webring when they set the site up in 2013 and we have never once clicked it. Eleven dollars a month, a man answers the telephone, and when the site went down for two days in October he rang us before we noticed.\n\n[i]Links page last changed Saturday 18 April 2015.[/i]"
+          }
+        ]
+      }
+    ]
+  }
+}

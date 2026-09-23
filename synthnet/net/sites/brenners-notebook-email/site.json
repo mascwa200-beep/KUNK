@@ -1,0 +1,497 @@
+{
+  "schema": 1,
+  "domain": "brenners-notebook.email",
+  "title": "Brenner's Verity Notebook",
+  "type": "newsletter",
+  "era": "2026",
+  "skin": "inbox-letter",
+  "description": "Hal Brenner's paid monthly newsletter out of Gridfall: one properly sourced county story a month, written by the man the Ledger laid off in 2019 and then used as a byline in 2023.",
+  "tags": ["verity", "gridfall", "newsletter", "2026", "local-news", "records", "county-budget"],
+  "links": [
+    "now.verityledger.com",
+    "verityledger.com",
+    "verity.county.gov",
+    "wiki.gridfall.net",
+    "thequarry.news",
+    "ask.verity.ai",
+    "askverity.com",
+    "boards.gridfall.net",
+    "gridline.social",
+    "pinelock-media.com",
+    "vvpl.news",
+    "countyfacts.info"
+  ],
+  "data": {
+    "title": "Brenner's Verity Notebook",
+    "author": "Hal Brenner",
+    "cadence": "Monthly, third Tuesday. One piece an issue. $5.",
+    "subscribers": 312,
+    "sponsorLabel": "Paid notice:",
+    "issues": [
+      {
+        "id": "i-77",
+        "number": 77,
+        "date": "15 September 2026",
+        "subject": "$19,400 a year to a newspaper with no reporters",
+        "intro": "The 2027 budget draft went up on 4 September. Two hundred and fourteen pages in one PDF, and pages 140 through 214 have no text layer, because somebody scanned the appendix instead of exporting it. So the half of the budget with the contracts in it is a picture of a budget. I read it anyway. That is nine days and it is why this is the third Tuesday and not the second.\n\nOne piece a month is the arrangement. I am not going to pad it out. This month the piece is line 4410-52, legal notices, $19,400 this year and $21,100 proposed for next, which is the smallest number in that document and the one that tells you the most.\n\nRuth Cannady has read the capital plan, all ninety-six pages, and found the thing that is not in it. I am not going to restate her work here. It is in [url=synth://thequarry.news/i/i-82]her September letter[/url] and it should be read there, in her words, with her sourcing.\n\nEverything below is out of a document I can send you. Ask and I will send it. I have never charged anybody for a copy of something the county already owes them.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "The county is required by a 1953 statute to publish its legal notices in a newspaper, and there is one left",
+                "blurb": "State statute 18-2201 requires notice of a public hearing, a tax sale, a bond authorisation or a zoning amendment to run in \"a newspaper of general circulation published within the county.\" The statute is from 1953 and has been amended twice, in 1978 and 1994, neither time on that clause.\n\nThere is one outlet that meets it. The Gridfall Ledger, which is now [url=synth://now.verityledger.com/]now.verityledger.com[/url], owned by Pinelock Media Group, with no reporter in Verity County since 2019 and no person filing copy since 2023.\n\nThe county paid it [b]$19,400[/b] in the year to June. The 2027 draft carries $21,100 on line 4410-52. The rate is $14.60 per column inch, set by the vendor, accepted by the county, not bid, because a bid needs two bidders.",
+                "href": "synth://now.verityledger.com/"
+              },
+              {
+                "headline": "The notices are the only thing on that site written by a person, and the person works for the county",
+                "blurb": "The notice of the 13 October capital vote ran on 2 September. The text is correct to the comma, because it was typed by a clerk in the county building and sent over as a block that the vendor is contractually forbidden to edit.\n\nIt appeared under an auto-generated headline and three paragraphs of context that nobody typed, one of which describes the county's population as 41,000. It has been 28,400-ish since the last census and it has never been 41,000.\n\nThe statute requires the notice. It does not require anything printed around the notice to be true, and in 1953 nobody had to think about that."
+              },
+              {
+                "headline": "What I asked Pinelock, and what came back",
+                "blurb": "Three questions, in writing, on 7 September. Does any employee of Pinelock or its subsidiaries reside in Verity County. Is any part of the legal notice contract's production performed by a person. Is the $14.60 rate the same rate charged to the other nine counties in the group.\n\n[quote=Pinelock Media Group]Pinelock Media Group is proud to serve the communities of Verity County through the Gridfall Ledger, a trusted local news source since 1889. Our editorial operations combine advanced publishing technology with a deep commitment to the communities we serve. We do not disclose commercial terms.[/quote]\n\nThat is the answer to all three. The Ledger was founded in 1891, which is on the masthead of every issue in the [url=synth://verityledger.com/]archive[/url] Pinelock still hosts and evidently does not read. 1889 is the founding date of Halloran Communications, which bought the paper in 2011 and was itself swallowed in 2016. Something in that pipeline has the chain's birthday and the paper's filed under the same heading. I have sent the correction. I am not expecting much; their [url=synth://pinelock-media.com/]own company site[/url] has said \"Careers: coming soon\" since 2019.",
+                "href": "synth://pinelock-media.com/"
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "Somebody is selling my back issues for $29 and they are not selling my back issues",
+                "blurb": "A site on a .shop address is advertising \"Brenner's Verity Notebook — Complete Archive PDF, 2020-2026, instant download, $29.\" I bought it, because that is $29 of research and I would rather know. It is forty-one pages of text scraped off three of my issues, reflowed, with the dates removed and two paragraphs that I did not write and that are wrong about the branch line.\n\nDo not buy it. If you subscribe, the archive is on this site and always has been. If you do not subscribe and you want an issue, write to me and say which one.",
+                "href": "synth://brennernotebook-archive.shop/"
+              },
+              {
+                "headline": "Assessment appeals: the window shut on 11 May and 214 people used it",
+                "blurb": "Out of roughly 9,100 notices. The board of review has finished; 61 were adjusted, 149 were not, 4 were withdrawn. The adjusted ones average about $9,400 off the assessed value.\n\nThat is a better outcome rate than people expect and a worse participation rate than it should be, and both of those follow from the deadline being thirty days from the notice date, printed on the back, in seven point type. See [url=/i/i-72]the April issue[/url], which is the one to forward to anybody who asks you about this next spring.",
+                "href": "/i/i-72"
+              }
+            ]
+          },
+          {
+            "name": "The diary",
+            "items": [
+              {
+                "headline": "6 October, 7 p.m. — Planning Commission, county building, room 2",
+                "blurb": "Two variances and the final plat on the Kestrel Road minor subdivision, which is the one from [url=/i/i-76]August[/url]. Agenda posts the Thursday before as a PDF on the portal, in a folder the portal's own search does not index."
+              },
+              {
+                "headline": "13 October, 6 p.m. — County Board, capital plan vote",
+                "blurb": "$6.1 million in borrowing against a five-year schedule. The vote is on the borrowing, not the projects. I will be there. So will Cannady, at the other end of the same row, as usual."
+              },
+              {
+                "headline": "20 October — third-quarter sales tax distribution posted",
+                "blurb": "It goes up on the treasurer's page without announcement, usually before nine in the morning, and it is the earliest honest signal of what the county actually has to spend. Last quarter it was down 2.1 percent on the year."
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Deel & Marn, Land Surveying, Marchfield",
+          "copy": "DEEL & MARN. Boundary surveys, ALTA, elevation certificates, septic layouts. Marchfield and out to Coyne Flats. Licensed in this state since 1988.\n\nIf you are buying a parcel at a county tax sale, have it surveyed before you bid, not after. We will tell you on the phone whether you need us.\n\n[i]Second month. They renewed without being asked, which is more than the rate of the first one. Terms are at the bottom of the July issue.[/i]"
+        },
+        "signoff": "— HB\n\nGridfall. Next one is the third Tuesday of October, which is the 20th, which is a week after the vote, which is deliberate."
+      },
+      {
+        "id": "i-76",
+        "number": 76,
+        "date": "18 August 2026",
+        "subject": "Six lots, no notice",
+        "intro": "A man on Kestrel Road rang me on 3 August to ask who he complains to about a road being cut in behind his property. I told him the planning commission, and that there would have been a hearing, and that he would have had a letter. He did not have a letter. I checked, assuming he had thrown it out, because most people have thrown it out.\n\nThere was no letter. There has not been a letter for anybody in this county since 2021 and almost nobody has noticed, because the thing that replaced the letter technically happened.\n\nThat is the piece. It is dull and it is procedural and it will cost somebody their view, and the fix is a sentence and a printer.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "The 2021 ordinance rewrite replaced mail notice with a PDF in a folder nobody can find",
+                "blurb": "Zoning Ordinance §7-114, as it stood from 1994 to 2021: written notice by first class mail to owners of record of all abutting parcels, not less than ten days before the hearing.\n\n§7-114 as amended 14 September 2021: \"notice shall be posted to the county's official website for a period of not less than ten days.\"\n\nThe amendment was in a package of fourteen housekeeping changes recommended by outside counsel to bring the ordinance into line with state law. State law does permit website notice. State law does not require you to stop mailing, and nothing in the packet says that the county was going to stop mailing, and the minutes record no discussion of it. Mailing stopped because the clerk's office read the ordinance and did what it said."
+              },
+              {
+                "headline": "Where the notice actually goes",
+                "blurb": "A PDF is uploaded to a directory on the county's site. There is no page that lists it. It is not on the [url=synth://verity.county.gov/]services index[/url], it is not on the planning page, and the portal's own search does not return it, because the search indexes pages and this is a file.\n\nI found the Kestrel Road one by asking the clerk for the file name and then asking the site for the file name. That is not notice. That is a filing cabinet with the drawer welded shut and a sign on it saying the drawer is open.\n\nSix lots, off Kestrel Road, north side, between the old crossing and the Ashkettle line. Approved on consent, 7 July, no discussion, no objectors, because there were no objectors, because nobody knew.",
+                "href": "synth://verity.county.gov/"
+              },
+              {
+                "headline": "What it would cost to fix",
+                "blurb": "The county's own estimate, which I asked for and got in two days, which I want to note because it does not usually go like that: about 40 abutting-owner letters a year, at roughly $0.73 each with the envelope and the clerk's time. Call it $30 a year and an afternoon amending the ordinance.\n\nI have put that number to three of the five board members. Two said it sounded reasonable. One asked whether people had complained, which is the question that makes this go round again, because the people who would complain are the people who were not told."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "The zoning map viewer still requires Internet Explorer 11",
+                "blurb": "It says so, on the page, in a grey box. Internet Explorer 11 went out of support in June 2022. The viewer was bought in 2013 on a perpetual licence with no maintenance, which was cheaper, and which was cheaper.\n\nThe paper maps are at the counter and are current to 2019. The 2021 amendments are not on them. If you need to know what your parcel is zoned, ring and ask a person; the person is right and both maps are behind."
+              },
+              {
+                "headline": "I am still not on Gridline",
+                "blurb": "Four people asked in July, politely, and one asked rudely, which was more entertaining. The answer is the same.\n\nAbout ninety-four percent of what gets submitted to [url=synth://gridline.social/]that site[/url] is submitted by six or seven programs feeding each other the same rewritten Ledger copy. If I posted there I would be the eighth input. The list is 312 people who chose to be on it and can leave in one click, and that is the whole business model and the whole editorial policy.",
+                "href": "synth://gridline.social/"
+              }
+            ]
+          },
+          {
+            "name": "The diary",
+            "items": [
+              {
+                "headline": "4 September — 2027 budget draft posts",
+                "blurb": "Statutory deadline is the first Friday of September. It has been posted on the deadline every year since 2016."
+              },
+              {
+                "headline": "1 September — dispatch contract starts",
+                "blurb": "Not my half of the county's business and it has been covered properly elsewhere. The non-emergency number changes. 911 does not."
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. Third Tuesday of September, and it will be the budget, because it is always the budget in September."
+      },
+      {
+        "id": "i-75",
+        "number": 75,
+        "date": "21 July 2026",
+        "subject": "Nineteen parcels and one mailbox",
+        "intro": "The county tax sale was 16 June, in the basement of the county building, eleven people in the room and two on the phone. Sixty-one parcels offered, fifty-four sold, seven struck to the county because nobody bid the minimum.\n\nNineteen of the fifty-four went to the same buyer. I have spent five weeks on where that buyer is and the answer is a mailbox, which I could have guessed in five minutes, and the five weeks were spent proving it so that I can print it.\n\nThere is a paid notice at the bottom of this one. It is the first I have ever run and I have put the terms next to it, because a newsletter that takes money and does not say so is a newsletter with a hole in it.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "Corbin Hollow Holdings LLC bought nineteen parcels for $41,380 and has no address in this state",
+                "blurb": "Six in Coyne Flats, five in Halsey, four in New Carrow, three in Gridfall, one out past Ashkettle. Average price $2,178. Three of them are buildable lots, two have houses on them that are standing, and the rest are strips, halves of strips, and one triangle behind a church that cannot be reached from a road.\n\nThe deeds are recorded and are in the [url=synth://verity.county.gov/s/land-records]land records index[/url] under that name. The registered agent's address is a suite number in another state that I make the registered address of a little over nine hundred companies. Their own site, [url=synth://corbinhollowholdings.biz]corbinhollowholdings.biz[/url], is a stock photograph of a skyline that is not in this state and a contact form that returns an error.\n\nI have written to the agent twice. An agent is not required to pass anything on and this one has not.",
+                "href": "synth://verity.county.gov/s/land-records"
+              },
+              {
+                "headline": "The strategy is to do nothing, which works",
+                "blurb": "Nobody is going to develop a triangle behind a church. The parcels are held. The taxes on them run to a few hundred dollars a year in total and may or may not be paid, and if they are not paid the parcels come back to the sale in three years and can be bought again, by anybody, including by the same buyer.\n\nIf the grass is four feet high, the county's nuisance abatement process runs about fourteen months from complaint to mowing, costs the county roughly $340 a parcel, and ends in a lien against a company with no assets in this state. The lien sits on the parcel. The parcel is worth less than the lien. That is the end of the process; there is no next step.\n\nNothing illegal has happened at any point in the last two paragraphs."
+              },
+              {
+                "headline": "Three counties near here have already fixed this and it is four sentences",
+                "blurb": "A bidder registration rule: name, a real street address, a certificate of good standing, and a bar on bidding if you owe delinquent tax anywhere in the county. It goes in the sale resolution, which the board passes fresh every year, so it does not even need an ordinance amendment.\n\nI put this to the treasurer on 9 July. She said, on the record, that she had raised it in 2024 and been told it would reduce the number of bidders. It would. That is what it is for."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "Two of the seven unsold parcels are on the trail",
+                "blurb": "Struck to the county, which means the county now owns two more strips of the old right of way by accident. They adjoin the branch trail between Marchfield and the Coyne Creek fence.\n\nNobody has connected these two facts at the county and I am reporting it partly so that somebody does. There is a decent history of the abandonment on [url=synth://wiki.gridfall.net/wiki/verity-rail]the county wiki[/url], which is better sourced than the county's own file on it, which is a recurring sentence in this newsletter.",
+                "href": "synth://wiki.gridfall.net/wiki/verity-rail"
+              },
+              {
+                "headline": "A man on AskVerity asked how to see a tax sale list and got told to contact the city clerk",
+                "blurb": "There is no city. There are no cities in this county. There are six incorporated villages and a county clerk, and the sale list is published by the treasurer under §24-19 at least thirty days before the sale, and it has run on the county site and in the legal notices every year I have been doing this.\n\nI wrote the real answer underneath, with the statute number. The bot answer is [url=synth://askverity.com/q/q-11]still the one at the top[/url], because it was posted first and the software sorts by nothing I can work out.",
+                "href": "synth://askverity.com/q/q-11"
+              }
+            ]
+          }
+        ],
+        "sponsor": {
+          "name": "Deel & Marn, Land Surveying, Marchfield",
+          "copy": "DEEL & MARN. Boundary surveys, ALTA, elevation certificates, septic layouts. Marchfield and out to Coyne Flats. Licensed in this state since 1988.\n\nIf you are buying a parcel at a county tax sale, have it surveyed before you bid, not after. We will tell you on the phone whether you need us.\n\n[i]Terms, since this is the first one: $60 for the month. Brian Marn wrote the copy, I cut nothing, he does not see the issue before it goes out, and he does not get the list. He asked for the slot after reading the June issue about the fire, which is not what I expected. If he ever appears in a story he does not get a notice that month.[/i]"
+        },
+        "signoff": "— HB\n\nGridfall. Third Tuesday of August. Zoning, I think, unless the tax sale grows a second half."
+      },
+      {
+        "id": "i-74",
+        "number": 74,
+        "date": "16 June 2026",
+        "subject": "The fire, once",
+        "intro": "Thursday was twenty-three years. I have not written about the substation fire since 2019 and I did not intend to write about it again. I am doing it once, properly, in one issue, so that there is one place I can point people, and then I am going back to the budget.\n\nThe reason is not the anniversary. The reason is that in April I sat down and went through forty of the retellings that are now the first thing anybody finds — videos, articles, the audio ones, the ones that are six paragraphs with a picture of somebody else's substation on them. Thirty-one of the forty say 1994 or 2004. Twenty-six say lightning. Nine say two people died.\n\nNobody died. I was in that county building at half past five in the morning on 11 June 2003 with no power, filing off a borrowed desk because ours had nothing to plug into, and I can tell you what is in the record, because I am one of about four people left who went and looked at it while it was still warm.\n\nWhat follows is sourced. Where it is not sourced I say so.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "What happened, with the parts I can document",
+                "blurb": "[b]4:52 a.m., Wednesday 11 June 2003.[/b] Substation No. 3, the fenced transformer yard at Depot and Quarry Road, Gridfall. Time is from the Gridfall fire department's run sheet, which is a public document and which I have had a copy of since the 13th of that month.\n\nIt burned about six hours. Roughly 4,100 Verity Valley customers lost power. Most were back inside two days. Some were out five.\n\n[b]No deaths.[/b] Two Gridfall volunteer firefighters were treated for smoke inhalation at County General in Marchfield and released the same afternoon. I spoke to both of them that week. One of them is a cousin of a man who was on the pole line that morning, which is the sort of thing that is true of everything in this county.\n\nThe state utility commission's summary, November 2003, is two pages. The cause given is [b]\"insulation degradation consistent with age.\"[/b] That is the whole finding. Verity Valley Power & Light conducted its own internal investigation and has never released it. I asked in 2003. I asked in 2009. I asked again on 2 March this year. I have three refusals and they are all courteous and they are all the same refusal.",
+                "href": "synth://wiki.gridfall.net/wiki/substation-fire-2003"
+              },
+              {
+                "headline": "Where the wrong version comes from, as far as I can trace it",
+                "blurb": "A video went up in 2024 with an orange sky on the thumbnail. The sky is not this county; the substation in the still is not Gridfall's. It did about four million views and within a year there were several hundred versions of it.\n\nThe lightning is the part I find most instructive. There was no lightning. There was no thunderstorm in the county that night and the county airport's observations say so. The lightning is in the retellings because a substation fire is a thing people have a picture of in their heads, and the picture has lightning in it.\n\nThe Ledger's own 2026 site carries the wrong year and the lightning, because its pipeline scraped it off the farms, and the farms scraped it off each other. [url=synth://countyfacts.info/]One of them[/url] cites \"local news archives.\" I am the local news archive it means and I have never written the word lightning about this."
+              },
+              {
+                "headline": "The thing I got wrong, in 2003, in print",
+                "blurb": "My piece on 12 June 2003 used the word \"explosion.\" It was a headline word and I let it into my copy. It was not an explosion. A transformer failed and burned, there was a loud failure at the start that people three streets away heard and described to me as an explosion, and I took their word, which is what you do, and then I printed it as mine, which is not.\n\nWalt Pennock wrote to the paper about it that July. He was right and he was polite about it and we ran three lines at the bottom of page four. Three lines at the bottom of page four is not a correction. It is a way of having technically done one.\n\nI am setting it out at length here because \"explosion\" is in about a dozen of the forty retellings and at least two of them are, at some remove, quoting me."
+              }
+            ]
+          },
+          {
+            "name": "What to do about it, which is not much",
+            "items": [
+              {
+                "headline": "The two documents that settle it, and where they are",
+                "blurb": "The commission summary, November 2003, two pages: ask the state commission's records office, no fee, they email it. The fire department run sheet for 11 June 2003: county records request, [url=synth://verity.county.gov/s/records-request]Form PR-1[/url], $0.25 a page, about three weeks.\n\nOr write to me and I will send you both, scanned, today, for nothing. I would rather you had them than that you took my word for it, and the whole difficulty of the last three years is that taking somebody's word for it is now the cheapest thing anybody does.",
+                "href": "synth://verity.county.gov/s/records-request"
+              },
+              {
+                "headline": "One person has been holding the line on this for two years for free",
+                "blurb": "The date in the [url=synth://wiki.gridfall.net/wiki/substation-fire-2003]county wiki's article[/url] gets changed from 2003 to 2004 about twice a week by something automated that has read the farms, and about twice a week Karen Fennimore at the Marchfield library changes it back. She has been doing that since 2024. Nobody pays her for it and nobody has thanked her for it in public.\n\nThat is the entire defence. One retired-early librarian on a lunch break against several hundred machines, and she is winning, which nobody would have predicted.",
+                "href": "synth://wiki.gridfall.net/wiki/substation-fire-2003"
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "Verity Valley's own site has the fire on its history page and does not give a cause",
+                "blurb": "Three sentences on [url=synth://vvpl.news/]the company blog[/url], under \"Our History,\" describing a 2003 \"service interruption\" and the 2015 rebuild. No date, no cause, no customer count.\n\nThat is not a lie. It is the other thing, the one there is no word for, where every sentence is accurate and the paragraph is not.",
+                "href": "synth://vvpl.news/"
+              },
+              {
+                "headline": "I am not going to write about the Signal",
+                "blurb": "Two people asked this month, which is the usual rate. The answer has not changed since 2011.\n\nI have nothing to add. I have never heard it. I do not own a receiver, I am not going to buy one, and the people who do own receivers have logged it more carefully than I could and have not got anywhere either, which is to their credit and not to anybody's discredit. There is an old thread on [url=synth://boards.gridfall.net/]the Gridfall boards[/url] where somebody does it properly and does not draw a conclusion.\n\nWhat I will say is the only thing I know: it is on the air, it has been since at least 1998, and every single one of the eighty or ninety explanations I have been sent over the years has been somebody's guess wearing a suit.",
+                "href": "synth://boards.gridfall.net/"
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. That is the fire. Back to the budget in July and I would be glad not to do this again for another twenty-three years."
+      },
+      {
+        "id": "i-73",
+        "number": 73,
+        "date": "19 May 2026",
+        "subject": "$2.1 million, 96 addresses",
+        "intro": "In November 2022 a company called Arrow Reach Networks was awarded $2,148,000 from the state broadband office to pass 340 addresses in eastern Verity County by June 2026. The county put in $180,000 of match, which came out of the 2022 fund balance and is spent.\n\nJune 2026 is in three weeks. Ninety-six addresses are passed. I have driven all of them.\n\nThis took two months, most of it waiting on quarterly reports that are public and that nobody at the state office seemed to have been asked for before. The woman who eventually sent them was helpful and apologised for the delay and there was no delay on her end. It sat for five weeks with somebody else.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "Ninety-six of 340, with three weeks left on a four-year grant",
+                "blurb": "By the company's own quarterly filings: 0 in 2023, 41 in 2024, 48 in 2025, 7 so far this year. The Q1 2026 report was filed 43 days late and the Q4 2025 report was filed twice, the second time with a different figure for the same quarter, 48 rather than 51, with no note explaining the change.\n\nThe grant agreement has a clawback clause. It is triggered by the state office making a determination of non-performance. There is no deadline on the state office making a determination. I asked when one would be made. The answer was that the project remains in active status."
+              },
+              {
+                "headline": "What \"passed\" means, since the word is doing a lot of work",
+                "blurb": "It means fibre exists on the pole outside your house and you could order service. It does not mean anybody has. Of the 96 passed addresses, the company reports 31 subscribers.\n\nIt also does not mean what the map says. The map published with the award shows the whole Pell Road corridor in green. I drove it on 5 May. There is fibre on the poles from the Ashkettle village line to about four hundred yards past the school, and then there is not, and the last strand is tied off to a pole and taped. Two houses past the tape are on the map in green.\n\nThey are not lying on the map. The map is a plan. The map has never once been labelled as a plan."
+              },
+              {
+                "headline": "The company",
+                "blurb": "Arrow Reach Networks holds four of these grants in this state. Two are complete. One is ours. One is in a county south of here and is at about a third.\n\nTheir site, [url=synth://arrowreach.synth]arrowreach.synth[/url], has a support number that is answered, by a person, in about ninety seconds, which is better than the county manages. The people on that number are subcontractors and know nothing about the grant and should not be asked about it.\n\nI am not building a villain here. What I think happened is that the crew cost went up in 2023, the grant price did not, and a company that is not doing anything wrong is quietly doing the two contracts that make money first. The state office exists to notice that. It has not noticed it in three and a half years."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "The county's own match is gone and there is no line to put it back",
+                "blurb": "$180,000, obligated in 2022 against a fund balance that was unusually good that year for reasons nobody wants repeated. If the grant is clawed back the state gets its share and the county's match is simply spent, because the match was spent on the 96 that were built.\n\nSo the county is out $180,000 for 96 addresses, which is $1,875 an address, which is not a scandal and is not a bargain."
+              },
+              {
+                "headline": "Reader mail: the 2003 anniversary",
+                "blurb": "Six people have written since March asking whether I am going to do something on the fire in June. Yes. Once, in the June issue, all of it in one place, and then not again.\n\nIf you have something from that week — a photograph with a date on it, a bill, an outage notice, anything with a date — I would like to see it before the 10th. I am not looking for memories. I have plenty of memories and they are the least reliable thing in this."
+              }
+            ]
+          },
+          {
+            "name": "The diary",
+            "items": [
+              {
+                "headline": "16 June, 10 a.m. — county tax sale, county building basement",
+                "blurb": "List published under §24-19 at least thirty days beforehand, so it is already up. Sixty-one parcels this year. Bring a cashier's check; they will not take anything else and they will not tell you that until you are in the room."
+              },
+              {
+                "headline": "2 June — board of review begins hearing assessment appeals",
+                "blurb": "214 filed. The hearings are public and nearly nobody goes, including the people who filed, who are not required to attend and who do better when they do."
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. June is the fire. It will be longer than usual and there is no sponsor in it."
+      },
+      {
+        "id": "i-72",
+        "number": 72,
+        "date": "21 April 2026",
+        "subject": "Your assessment notice and the thirty days on the back of it",
+        "intro": "Notices went in the mail on 10 April. About 9,100 of them. This is the first full revaluation since 2011, which is fourteen years, which is eleven years longer than the county's own policy says.\n\nThis issue is the useful kind rather than the interesting kind. There is no wrongdoing in it. There is a deadline, a form number and a common mistake, and if you are going to forward one of these to a neighbour, forward this one, because the deadline is thirty days and four of them have already gone.\n\nI am going to explain the part everybody gets wrong first, because if you read nothing else it is the part that will save you an afternoon.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "A 38 percent assessment increase does not mean a 38 percent tax bill",
+                "blurb": "The median residential assessment in this county went up about 38 percent. Your bill is the assessment multiplied by a levy rate, and the levy rate is set afterward, in November, against a budget.\n\nIf every assessment in the county went up 38 percent and the county asked for the same money next year as this year, the rate would fall by roughly the same proportion and the average bill would not move. That is the theory and it is genuinely how the arithmetic works.\n\nWhat matters to you individually is whether your parcel went up [i]more or less than the median[/i]. Below the median, you are likely to pay less. Above it, more. That is the number to look for, and it is not on the notice, and it should be."
+              },
+              {
+                "headline": "Thirty days from the notice date. Not from when you opened it.",
+                "blurb": "The notice is dated 10 April. The appeal window closes [b]11 May[/b]. It is thirty days from the date printed on the notice, not from delivery, not from when you got back from being away.\n\nThe form is [b]Form A-9[/b], Application for Review of Assessment. It is at the assessor's counter in the county building, or it downloads from the [url=synth://verity.county.gov/]county portal[/url] as a PDF that is formatted for legal paper, so if you print it at home on letter the signature block comes off the bottom and it will be rejected. Print it at the library or ask for one at the counter.\n\nTwo things people leave off, both of which get it returned: the parcel number exactly as printed on the notice including the dashes, and a stated opinion of value. You must write down what you think it is worth. \"Too high\" is not an opinion of value.",
+                "href": "synth://verity.county.gov/"
+              },
+              {
+                "headline": "Do the informal review first. It is free, it is a phone call, and it works about a third of the time.",
+                "blurb": "Before the formal appeal there is an informal review with the assessor's office. You ring, you say what is wrong, somebody looks. In 2011 about a third of informal reviews ended in an adjustment and no appeal.\n\nThe things that get adjusted are factual: square footage that counts a porch as living space, a bathroom that does not exist, an outbuilding that fell down in 2019 and is still on the card, a finished basement that is a basement. Bring the fact. A photograph with a date on it is worth more than an argument.\n\nThe informal review does [b]not[/b] extend the thirty days. File the A-9 as well if you are anywhere near the deadline. You can withdraw it in a sentence."
+              }
+            ]
+          },
+          {
+            "name": "Correction",
+            "items": [
+              {
+                "headline": "The EDA's fund balance is $412,000, not $418,000",
+                "blurb": "[b]What I wrote on 17 March:[/b] $418,000.\n\n[b]What is true:[/b] $412,000 as of the 30 June 2025 audited statement. $418,000 is the figure in the unaudited draft, which is the document I was working from, which I should have said.\n\n[b]How it happened:[/b] I had the draft because I asked for it in January and the audited statement was posted in February and I did not go back for it. That is my error and not the county's; the county posted the right number on time.\n\n[url=/i/i-71]The March issue[/url] now carries this note at the top. I have not changed the figure in the text. If you forwarded it to somebody in March I would rather they saw what I actually sent them.",
+                "href": "/i/i-71"
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "The assistant is telling people the appeal window is sixty days",
+                "blurb": "I asked it on the 14th, in the plainest words I could manage. It gave me sixty days, in a confident paragraph, with a sentence at the end encouraging me to contact my local assessor's office for the most up-to-date information.\n\nSixty days is the window in a neighbouring state. Thirty is the window here and has been since 1994. [url=synth://ask.verity.ai/chat]It said sixty again[/url] on the 19th after I reported it, which I did through the feedback box, which returns a thank-you message immediately and has never produced any other effect.\n\nIf somebody tells you they have sixty days, they have thirty, and if they heard it from a machine they will believe the machine over you.",
+                "href": "synth://ask.verity.ai/chat"
+              },
+              {
+                "headline": "Four people have asked me whether I still work for the Ledger",
+                "blurb": "No. Since October 2019. For four months in 2023 their pipeline published under my name, which is why the question keeps coming; I wrote to them twice and it stopped, and the archive of those pieces is still up under \"Hal B.\"\n\nI am not going to make a thing of it. I mention it because if you are forwarded something with my name on it and it reads like it was assembled rather than written, it was."
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. 11 May is the deadline. Third Tuesday of May for the next one, which is broadband, which I have been on since March."
+      },
+      {
+        "id": "i-71",
+        "number": 71,
+        "date": "17 March 2026",
+        "subject": "A committee with $412,000 and no quorum",
+        "intro": "[b]Note added 21 April 2026:[/b] the fund balance below is given as $418,000. The audited figure is $412,000; $418,000 is from the unaudited draft and I should have said so. The correction is set out in full in [url=/i/i-72]the April issue[/url]. The text below is as it was sent on 17 March and has not been altered.\n\nThe Verity County Economic Development Authority has not held a meeting since 12 September 2024. It has $418,000 in a fund. It is a statutory body with five seats, two of which have been vacant since August 2023, and of the three remaining members one moved out of the county in 2024, which under the enabling resolution vacates the seat automatically whether or not anybody notices.\n\nSo there are two. Quorum is three.\n\nNothing has gone wrong here in the sense people mean when they say something has gone wrong. Two people's terms ran out and the appointments are the board chair's to make and the chair has other things on the list.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "What the $418,000 is and why it cannot be spent",
+                "blurb": "Mostly a 2009 state economic recovery grant, $350,000, plus accumulated interest and the remains of a 2016 revolving loan fund that made four loans and got three of them back.\n\nThe money can only be committed by a vote of the authority. The authority cannot vote. The county cannot sweep it into the general fund because it is restricted, and it cannot return it because the grant closed out in 2014.\n\nIt sits in an account earning about 3.9 percent, which is roughly $16,000 a year, which is the only thing in this county that is growing on its own."
+              },
+              {
+                "headline": "Three things were in front of it when it stopped",
+                "blurb": "From the September 2024 agenda, which is the last one: a $40,000 facade grant request from a building on Mill Street in Gridfall, a request from Marchfield for engineering money on the freight house lot, and the renewal of the authority's own $1,200 audit contract.\n\nThe Mill Street applicant sold the building in 2025. The Marchfield request was folded into the parks budget and got about a third of what was asked. The audit contract lapsed and the authority has not been audited for two years, which is a finding waiting to happen in the county's own audit and which is the thing most likely to eventually force this to be fixed."
+              },
+              {
+                "headline": "I asked all five people who could fix it",
+                "blurb": "The chair: it is on the list. The administrator: it is the chair's appointment. The two sitting members: both said, separately and without prompting, that they had raised it and been told it was on the list. The county attorney declined to comment on whether the out-of-county member's seat is vacant, which is a question with a yes or no answer in the resolution he wrote.\n\nI want to be careful here. There is no story in which somebody wants this authority not to meet. There is $418,000 and two vacancies and a list, and the list is long, and a thing that nobody is angry about goes to the bottom of a list and stays there. That is how almost everything in local government actually fails."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "The fairgrounds lease, which I have been sitting on since February, has a second half",
+                "blurb": "The nonprofit is trying to fix its registration, which is what I said would happen. The filing fee is $40 and there is a reinstatement form and the state has a backlog.\n\nWhat I did not have in February and have now: the county's insurance renewal went out in January naming the dissolved entity as an additional insured, for the fifth year running, and the broker has confirmed to me that nobody at the county or the broker checks a named insured against the state register, because nobody anywhere does."
+              },
+              {
+                "headline": "A feed turned last month's budget piece into a headline about waste",
+                "blurb": "Sixteen line items moved after the public hearing. That was the story. It went through a rewriter and came out as a claim about missing money, and then a second thing rewrote the rewrite, and by the Friday there was a version with a figure in it that appears in no document I have ever seen.\n\nI am not going to link it. The [url=synth://now.verityledger.com/corrections]Ledger's corrections page[/url] is instructive on where this ends up; it is longer than its front page and about a quarter of it is the sentence \"an earlier version of this article was generated in error,\" which does not tell a reader what was wrong or what is true.",
+                "href": "synth://now.verityledger.com/corrections"
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. Assessment notices go out in April and I will do a plain one on how to appeal, because it is the first revaluation since 2011 and a lot of people are about to get a fright."
+      },
+      {
+        "id": "i-70",
+        "number": 70,
+        "date": "17 February 2026",
+        "subject": "The fairgrounds are leased to a company that does not exist",
+        "intro": "The Verity County Agricultural Society has leased the fairgrounds from the county for one dollar a year since 1988. The current lease runs to 2034. The society mows it, insures it, runs the fair in August and rents the hall out for weddings and the gun show.\n\nThe society was administratively dissolved by the state on 3 August 2021 for failure to file two consecutive annual reports. The filings are $20 each. Nobody noticed, including the state, which sent the notices to an address that was the treasurer's house and the treasurer died in 2020.\n\nI have been chasing this since November and the reason it took three months is that everybody I asked assumed I must be wrong, which was reasonable, because it sounds wrong.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "What a dissolved entity can and cannot do",
+                "blurb": "It can wind up its affairs. It cannot carry on business. A lease signed in 1988 by an entity that was dissolved in 2021 is in a state that the county attorney described to me, in writing, as \"not a question I can answer in the abstract,\" which is a fair answer and is also the entire problem.\n\nThe practical bite is insurance. The society's liability policy names the society. The county's risk pool relies on the society's policy for events at the hall. Whether a policy issued to a dissolved entity responds to a claim is not something anybody finds out until somebody falls down the steps at the gun show.\n\nNobody has fallen down the steps. The fair has run four times since 2021 and nothing has happened, which is the only reason this is a newsletter item and not a lawsuit."
+              },
+              {
+                "headline": "How it gets fixed: a form, $40, and about six weeks",
+                "blurb": "Reinstatement after administrative dissolution: Form NP-14, the missing annual reports at $20 each, a $40 reinstatement fee, and a statement that the reason for dissolution has been corrected. Total under $150. The state's backlog on these is about six weeks.\n\nI told the society's current president on 4 February. She had no idea, sat down, and then said the thing that everybody in this county says when something like this comes up, which is: who was supposed to be watching that? Nobody was. There is no office in this county whose job is to notice this. There used to be a newspaper."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "Correction: the snow contract figure in January was the base bid, not the total",
+                "blurb": "I gave the new snow contract as $214,000. That is the base bid. With the per-event overage schedule as actually invoiced in an average winter it comes out nearer $260,000, and the prior contractor's comparable number was about $248,000.\n\nThe difference does not change the point of the item, which was about the scoring. It does change the number, and the number is the thing people quote, so: $260,000-ish, not $214,000.\n\nThe man who caught it does snow removal for a living in New Carrow and wrote to tell me so in four lines with no adjectives in them. That is the third time a reader has corrected me on a number in this letter and all three times they were right."
+              },
+              {
+                "headline": "The county's meeting calendar page has said \"updated January 2024\" for two years",
+                "blurb": "The meetings on it are right. The agendas link out to a document system that was replaced in 2024, so about half the links go to a login screen for software the county no longer licenses.\n\nThe workaround is to ring the clerk's office and ask for the agenda by email, which works, every time, in about an hour. I have been doing that since 2019 and it has never once failed, and it is not a system, it is one person being good at her job."
+              }
+            ]
+          },
+          {
+            "name": "The diary",
+            "items": [
+              {
+                "headline": "10 March, 6 p.m. — County Board",
+                "blurb": "Audit presentation for the year to 30 June 2025. Dull and worth attending; the management letter is where the findings are and the management letter is not read aloud."
+              },
+              {
+                "headline": "Early April — assessment notices",
+                "blurb": "First full revaluation since 2011. The appeal window is thirty days from the notice date and I will do a plain guide in the April issue."
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. Third Tuesday of March. It will be the development authority, which has not met in eighteen months and has money."
+      },
+      {
+        "id": "i-69",
+        "number": 69,
+        "date": "20 January 2026",
+        "subject": "Sixteen lines moved after the hearing",
+        "intro": "The public hearing on the 2026 county budget was 9 December, at six in the evening, in a room with eleven people in it, four of whom were staff. Three members of the public spoke. It lasted nineteen minutes.\n\nThe budget was adopted on 16 December. Between the draft that was advertised for the hearing and the version that was adopted, sixteen line items changed. None of the sixteen was read aloud at the adoption meeting. The motion was to adopt the budget as presented, and the budget as presented was not the budget that was heard.\n\nNothing here is unlawful. The total did not change, and the total is what the statute requires to be advertised. This is the first issue of the year so there is also a short bit at the bottom about money, mine, which you can skip.",
+        "sections": [
+          {
+            "name": "The piece",
+            "items": [
+              {
+                "headline": "$96,000 moved, in sixteen pieces, between 9 and 16 December",
+                "blurb": "Net effect: +$96,000 to the sheriff's department, -$96,000 spread across four other departments. The total is identical to the dollar, which is how it stays within the advertised figure and out of a second hearing.\n\nThe three largest movements out: -$41,000 from the building maintenance line, -$22,000 from the county's share of the library levy support, and -$18,000 from planning and zoning, which is the department that was told in October it could not fill a part-time position.\n\nThe increase in is overtime, and the reason for the overtime is two deputies on long-term leave, which is legitimate, documented and boring, and which I want to state plainly before somebody turns this into a headline about a sheriff."
+              },
+              {
+                "headline": "The mechanism, which is in the county's own rules and is not hidden",
+                "blurb": "The administrator may present an adoption draft that reallocates between departments provided the total is unchanged. Rule 4.2. It exists so that a budget does not have to go back to hearing over a $3,000 correction, and it is used for that most years.\n\nThis year it moved $96,000 in sixteen pieces. Still within the rule. The rule does not require the changes to be listed, and they were not listed, and the packet for the 16 December meeting contains the final numbers with no comparison to the hearing draft. You get the comparison by having both documents and doing it yourself, which took me about four hours."
+              },
+              {
+                "headline": "What one board member said when I put it to her",
+                "blurb": "[quote=a member of the county board]If you had asked me on the sixteenth how much had moved since the hearing I would have said not much. I would have been wrong. I voted for it. I had both documents in the same folder on the same tablet and I did not put them side by side, and I am not going to pretend to you that I did.[/quote]\n\nShe let me print that with her name off it and I think she would have let me print it with her name on. It is the most honest thing anybody said to me in December."
+              }
+            ]
+          },
+          {
+            "name": "Short items",
+            "items": [
+              {
+                "headline": "The new snow contract went to a different firm and the old one is suing over the scoring",
+                "blurb": "Base bid $214,000, filed 6 January in county court. I have read the complaint. It is thin, and thin complaints are sometimes right.\n\nThe practical effect for anybody reading this: the routes were redrawn and the Kestrel Road end of Ashkettle went from third to last, which is eleven at night rather than six in the morning."
+              },
+              {
+                "headline": "Housekeeping, and the arithmetic, once a year",
+                "blurb": "312 of you pay $5 a month. That is $1,560 a month before the processor takes its cut, which is about $58, and before the $19 the list software costs. Records fees last year were $286. Mileage I do not count properly and should.\n\nIt is not enough and I am not going to dress it up, and it is also not a crisis and I am not going to dress that up either. I did this for eleven weeks of severance and a plan, and the plan was worse than this.\n\nThere are no tiers, there is no annual option, there is no founding member button and there will not be. If you want to stop, the link at the bottom works on the first click and does not ask you why."
+              },
+              {
+                "headline": "Why I am not on Gridline, since two people asked in December",
+                "blurb": "Because the last time something of mine went up there, a summariser put a number in the first line that was not in the piece, five accounts that are not people argued about the number underneath it, and the version with the wrong number is the one that is still there.\n\nIf you want to forward an issue to somebody, forward the issue. It is the whole thing, with the sourcing in it, and it takes about four minutes to read."
+              }
+            ]
+          }
+        ],
+        "signoff": "— HB\n\nGridfall. Third Tuesday of February. The fairgrounds, if I can get the last document, which I have been told twice is not a public document and which is a public document."
+      }
+    ]
+  }
+}

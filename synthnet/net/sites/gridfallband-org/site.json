@@ -1,0 +1,654 @@
+{
+  "schema": 1,
+  "domain": "gridfallband.org",
+  "title": "Gridfall High School Band Boosters",
+  "type": "page",
+  "era": "2010",
+  "skin": "geocities",
+  "description": "The band parents' page for the Verity Central Marching Cardinals, built by somebody's uncle on a free host in August 2010: the fruit sale, the bus wash, the uniform fund, a calendar that stops in May 2011, and a picture page where the pictures do not come up.",
+  "tags": ["gridfall", "school", "band", "fundraising", "archive"],
+  "links": [
+    "webring.gridfall.net",
+    "boards.gridfall.net",
+    "wiki.gridfall.net",
+    "verityledger.com",
+    "gridfallpizza.com",
+    "gridfalltire.com",
+    "marchfield-coop.com",
+    "hollismarket.com",
+    "troop62.verity.net",
+    "brackenlanegarage.net",
+    "fennerinsurance.com",
+    "clipvault.tv",
+    "gridfallhost.net",
+    "ashkettle-wx.net",
+    "ashkettlevfd.org",
+    "stargazers.verity.net",
+    "quarrycut.net",
+    "coyneflats.org",
+    "vnetdial.com",
+    "verity.county.gov"
+  ],
+  "data": {
+    "navLabel": "BOOSTER PAGES",
+    "pages": [
+      {
+        "id": "index",
+        "name": "Home",
+        "blocks": [
+          { "kind": "marquee", "text": "*** GRIDFALL HIGH SCHOOL BAND BOOSTERS *** BUS WASH SATURDAY 30 APRIL, HIGH SCHOOL LOT, 9 TO 2, $5 A CAR *** SPRING CONCERT TUESDAY 17 MAY 7:30 *** BANQUET FRIDAY 20 MAY *** MEMORIAL DAY PARADE MONDAY 30 MAY, STEP OFF 10:00 *** GO CARDINALS ***" },
+          { "kind": "image", "seed": "gfband-kupfer-halftime", "imgKind": "banner", "caption": "The band coming off the field at halftime, homecoming, Friday 8 October 2010. This picture is loose in the same place as the page and it comes up. Every other picture on this site is in a folder and does not. There is a page about that." },
+          { "kind": "heading", "level": 1, "text": "Gridfall High School Band Boosters" },
+          { "kind": "text", "body": "We are the parents.\n\nThe band is the [b]Verity Central Marching Cardinals[/b]. The school on Hollis Road has been called Verity Central since the township schools were put together in 1957, and everybody in this town still says Gridfall High, including me, including the sign in the window at the pizza shop. That is why this page is called what it is. It is what people type.\n\nThere are [b]71 in the band[/b] this year. Fifty-four of them march. The rest are concert band and jazz band and do not have to stand on a field in October." },
+          { "kind": "heading", "level": 2, "text": "What the boosters actually do" },
+          { "kind": "text", "body": "Three things, and everything else is one of the three wearing a hat." },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]We raise money.[/b] The [url=/fruit]fruit sale[/url] in November, the [url=/buswash]bus wash[/url] in April, pepperoni rolls at the home games, and the concession stand at two games. That is all of it. There is no golf outing and there is not going to be one.",
+              "[b]We feed people.[/b] The band eats between the parade and the field on competition Saturdays, and if the boosters do not bring it, fifty-four teenagers eat nothing from eight in the morning until four in the afternoon. This has been tried and it was a bad day.",
+              "[b]We drive.[/b] Two parents per bus, plus whoever is pulling the equipment trailer. There is a sheet."
+            ]
+          },
+          { "kind": "text", "body": "The pepperoni rolls come from [url=synth://gridfallpizza.com/]the pizza shop on Third Street[/url], who sell them to us at a dollar and have never once put it up. We sell them for two at the fence by the gate. Take the money out of the box before the fourth quarter or it walks." },
+          { "kind": "heading", "level": 2, "text": "When we meet" },
+          { "kind": "text", "body": "[b]First Tuesday of the month, 7:00 PM, in the band room.[/b] Use the door by the tennis courts. The main doors are locked at 4:30 and knocking on them does nothing because the office is at the other end of the building.\n\nAnybody with a child in the band is a booster. There are no dues, there is no application, and nobody votes on whether you are in. Eleven people come to the meeting. Forty-two families are on the phone list. That gap is not a complaint, it is just the shape of it, and it has been that shape since before I had anything to do with it.\n\nThe meeting takes forty minutes. Rhonda reads the balance out whether anybody asks or not, which is the correct way to do it." },
+          { "kind": "heading", "level": 2, "text": "This year at a glance" },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["In the band", "71 students, 54 marching"],
+              ["Director", "Mr. Dean Kreider, eleventh year"],
+              ["Booster meetings", "First Tuesday, 7:00 PM, band room"],
+              ["Fruit sale 2010", "604 boxes, $5,218 to the band"],
+              ["Uniform fund", "$4,186 of $7,500 as of 12 March 2011"],
+              ["Bus wash 2011", "96 cars, $482 with the tips jar"],
+              ["Coats", "Bought 1994. 71 of them. 54 fit somebody."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Pages on here" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[url=/calendar]Calendar[/url] -- every date I have been given",
+              "[url=/fruit]The fruit sale[/url] -- prices, dates, delivery day, and what we sold going back to 2005",
+              "[url=/buswash]The bus wash[/url] -- April, $5 a car, and the rules that are all because of one thing",
+              "[url=/goal]The uniform fund[/url] -- what we have, what it buys, and where every dollar came from",
+              "[url=/officers]Officers[/url] -- who to call and what they actually do",
+              "[url=/newparents]New band parents[/url] -- shoes, gloves, socks, band camp, and how cold Kupfer Field is in late October",
+              "[url=/photos]Pictures[/url] -- the descriptions work, the pictures do not",
+              "[url=/guestbook]Guestbook[/url]"
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What is new on this page" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "05/21/2011 -- Spring concert descriptions on the picture page. Tried a folder with no space in the name to see if that was the trouble. It was not.",
+              "04/30/2011 -- Bus wash. 96 cars and $482 with the tips jar, which is the best we have done. Eleven parents stayed until two.",
+              "03/12/2011 -- Uniform fund at $4,186.42. I redrew the thermometer and it looks worse than the old one.",
+              "02/12/2011 -- Changed the year on the state trip picture from 1974 to 1975. A lady at the Marchfield library wrote in the guestbook with the Ledger page and date and then sent me a copy of the page for ten cents. She was right. The names are printed under it and one of them is Yeakel, which is Alvin, who comes in on Mondays and does percussion and never said a word about it.",
+              "12/18/2010 -- Winter concert pictures added. They do not come up.",
+              "12/13/2010 -- Fruit delivered Saturday. 604 boxes. Nine adults and the whole drum line unloaded it in an hour and ten minutes.",
+              "11/15/2010 -- Orders in. Mr. Kreider counted them twice because the first count did not match Rhonda's.",
+              "10/11/2010 -- Homecoming picture on the front page. This one comes up, which I did not do on purpose.",
+              "09/06/2010 -- Calendar up for the year off the athletic office sheet.",
+              "08/22/2010 -- Page started."
+            ]
+          },
+          { "kind": "text", "body": "[b]This page was last changed Saturday 21 May 2011.[/b]" },
+          { "kind": "heading", "level": 2, "text": "About this page and who is doing it" },
+          { "kind": "text", "body": "I am [b]Denny R.[/b] I am not an officer and I have never been one. My brother's girl Megan is a sophomore and plays flute, and last August she told me at a picnic that nobody in the band ever knows when anything is, and that her mother finds out about a Saturday on a Thursday. So I said I would put the dates somewhere.\n\nThe officers are initials because Mrs. Ochs asked for it. The school's own page has the students as a first name and an initial, and she would rather it was the same rule for the adults. That is the whole reason. If you need somebody's whole name you have it already, because this is Gridfall.\n\nThe pages sit on a free host. Free means there is an advertisement across the top of every page that I cannot take off and did not choose and would like it known I did not choose. The name gridfallband.org costs nine dollars a year at a registrar and points at the free pages, which is a trick a man at work showed me.\n\nWes at [url=synth://gridfallhost.net/]Gridfall Host[/url] on Third Street quoted us eleven dollars a month to do it properly, our own name, no advertisement, and somebody to ring when it breaks. The board voted in January to spend it. Then a bass clarinet needed a pad job and we spent it on that instead, and I do not think that was the wrong call. So it is still the free one.\n\nI put the pictures up over the dial-up at the house from [url=synth://vnetdial.com/]V-Net[/url], which is why it takes an evening and why I do four at a time." },
+          { "kind": "hitcounter", "count": 7419 },
+          { "kind": "text", "body": "The counter came with the host. It has gone backwards twice, once by about two thousand, so I do not put any weight on it. Rhonda says half of it is me looking at my own page and she is not wrong." },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Ring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: The Quarry Cut on Route 62", "domain": "quarrycut.net" },
+              { "label": "Next: Coyne Flats Community Association", "domain": "coyneflats.org" },
+              { "label": "Random: Verity County Amateur Astronomers", "domain": "stargazers.verity.net" }
+            ]
+          },
+          { "kind": "text", "body": "The ring is how anybody found this page in the first month. Somebody at [url=synth://boards.gridfall.net/]the Gridfall Boards[/url] put the link in a thread about the fruit sale and we got forty orders out of it, and I have never worked out who to thank." }
+        ]
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Band calendar" },
+          { "kind": "text", "body": "This comes off two sheets: Mr. Kreider's, which is music, and the athletic office's, which is football. I type it in after the August meeting and again after the January meeting, and in between I fix it when somebody tells me.\n\n[b]A date in bold is one where a parent has to do something[/b] -- drive, chaperone, send money, or be somewhere.\n\nMarching band rehearses [b]Tuesday and Thursday 6:00 to 8:00[/b] on the practice lot behind the gym, from band camp until the last home game. After that it is concert band and the rehearsal is in the day." },
+          { "kind": "heading", "level": 2, "text": "August 2010" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "WHERE", "NOTE"],
+            "rows": [
+              ["Aug 16-20", "Mon-Fri", "[b]BAND CAMP[/b]", "High school, 8:00 AM to 4:00 PM", "[b]Medical form and $40 by the first morning.[/b] Two water bottles, hat, sunscreen, marching shoes. See the new parents page."],
+              ["Aug 21", "Sat", "Preview night", "Kupfer Field, 7:00", "Free. They march what they have, which after five days is about forty seconds of it. Bring a chair."],
+              ["Aug 25", "Wed", "County fair parade", "Line up at the fairgrounds 5:30, step off 6:30", "[b]Uniform, and it will be ninety degrees.[/b] Boosters bring water at the end of the route, not the start."],
+              ["Aug 30", "Mon", "First day of school", "", ""]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Football, autumn 2010" },
+          { "kind": "text", "body": "Home games are at Kupfer Field. The band is in the stands by 6:45 for a 7:00 kick and does not leave until the third quarter is over, and then it is the boosters at the fence with the rolls. Away games the band travels only where it says travels, because the district charges us for the bus." },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "OPPONENT", "HOME/AWAY", "NOTE"],
+            "rows": [
+              ["Sept 3", "Fri", "Kesson Valley", "HOME", "First one. Boosters at the fence at 6:15."],
+              ["Sept 10", "Fri", "Marrow Hill", "away", "[b]Band travels.[/b] Two buses, four chaperones. Back about 11:30."],
+              ["Sept 17", "Fri", "Delp Valley", "HOME", ""],
+              ["Sept 24", "Fri", "Orne City", "away", "Band does not travel. It is an hour each way and there is no bus money."],
+              ["Oct 1", "Fri", "Brandt Township", "HOME", "Eighth grade night. The middle school band sits in with us and it is loud and it is good."],
+              ["Oct 8", "Fri", "[b]HOMECOMING[/b], Ridgemont", "HOME", "[b]Parade on Depot Street at 5:00[/b], then the game. Alumni are invited to play the fight song at half and eleven of them did last year."],
+              ["Oct 15", "Fri", "St. Blaise", "away", "Band does not travel."],
+              ["Oct 22", "Fri", "Halbert Area", "HOME", "[b]SENIOR NIGHT.[/b] Parents walk on with their senior at 6:40. Be at the gate at 6:20 and wear a coat."],
+              ["Oct 29", "Fri", "Tarn Ridge", "away", "[b]Band travels.[/b] Last one. Long ride."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Competition and festival Saturdays" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "WHERE", "NOTE"],
+            "rows": [
+              ["Oct 2", "Sat", "[b]Marching festival[/b]", "Kesson Valley", "Buses 11:00. Home about 10:00 PM. [b]Boosters feed them at 3:30.[/b] Bring the coolers."],
+              ["Oct 16", "Sat", "[b]Marching festival[/b]", "Out of county", "Buses 9:00. This is the long one. [b]$8 per student for the meal.[/b]"],
+              ["Oct 23", "Sat", "Chapter marching finals", "Out of county", "Only if we qualify on the 16th. We did not."],
+              ["Jan 29", "Sat", "District band auditions", "Out of county", "Nine of ours going. Parents drive their own. Mr. Kreider is there all day."],
+              ["Feb 26", "Sat", "District band festival", "Out of county", "Three made it. Overnight for two of them, and there is a form."],
+              ["Mar 5", "Sat", "[b]Solo and ensemble[/b]", "HERE, in this building", "We host it, so it is all hands. Thirty-one entries of ours, which is the most Mr. Kreider has had. [b]$6 entry per student.[/b] Accompanist is $15 and that is her rate and it is fair. Boosters do the judges' lunch and a coffee urn by the door."],
+              ["Apr 16", "Sat", "Concert band festival", "Out of county", "One bus, 7:15 AM. Back by 4:00. [b]Black and white, not the marching uniform.[/b]"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Fundraising" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "WHERE", "NOTE"],
+            "rows": [
+              ["Oct 18", "Mon", "Fruit forms go home", "", "In the case, in the band room, and in the pizza shop window."],
+              ["Nov 12", "Fri", "[b]FRUIT ORDERS AND MONEY DUE[/b]", "Band room by 3:00", "Not the following Monday. There is a truck and the truck does not care."],
+              ["Dec 11", "Sat", "[b]FRUIT DELIVERY[/b]", "Bus garage, Hollis Road, 9:00 to noon", "[b]Eight adults minimum to unload.[/b] Collect your boxes or they sit in a cold building until Monday."],
+              ["Apr 30", "Sat", "[b]BUS WASH[/b]", "High school lot, 9:00 to 2:00", "$5 a car. Rain date Saturday 7 May. Buckets, hoses, towels, and people."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Concerts and the rest of it" },
+          {
+            "kind": "table",
+            "head": ["DATE", "DAY", "WHAT", "WHERE", "NOTE"],
+            "rows": [
+              ["Dec 14", "Tue", "[b]Winter concert[/b]", "High school auditorium, 7:30", "Fifth and sixth grade band plays first and it runs long and that is fine."],
+              ["Dec 18", "Sat", "Playing at the Armory", "Gridfall Armory, 11:00", "Twenty-two volunteered. Forty-five minutes of carols at the winter market and then they are turned loose in it."],
+              ["Mar 17-19", "Thu-Sat", "Spring musical, pit orchestra", "Auditorium, 7:30", "Fourteen of ours in the pit. Call is 6:15 all three nights."],
+              ["May 17", "Tue", "[b]Spring concert[/b]", "High school auditorium, 7:30", "Awards after. Seniors get their pin. Cake in the cafeteria and the boosters cut it."],
+              ["May 20", "Fri", "[b]Band banquet[/b]", "Cafeteria, 6:00", "[b]$9 a plate, in by 13 May.[/b] Covered dish for the tables, roast beef from the kitchen. Programmes done at Hoyer's."],
+              ["May 30", "Mon", "[b]Memorial Day parade[/b]", "Depot Street, step off 10:00", "Be at the Armory lot at 9:15. Full uniform and the coat stays on for the whole route. The route is the county's and it is on [url=synth://verity.county.gov/]the county site[/url] the week before."],
+              ["Jun 10", "Fri", "Graduation", "Gym, 7:00", "Band plays them in and plays them out. Juniors and sophomores, because the seniors are in the chairs."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Booster meetings" },
+          { "kind": "text", "body": "First Tuesday of the month, 7:00 PM, band room. That is [b]7 September, 5 October, 2 November, 7 December, 4 January, 1 February, 1 March, 5 April, 3 May and 7 June[/b].\n\nThere is no meeting in July. There is a meeting in August and it is the one that matters, because that is where the calendar for the next year gets set, and that is the meeting nobody comes to." },
+          { "kind": "heading", "level": 2, "text": "2011-2012" },
+          { "kind": "text", "body": "Nothing here yet. Mr. Kreider gets the football sheet in July and the festival dates come out in August, and I will put the whole year up after the August meeting the same as last time.\n\nThree things are fixed already because they are always the same:" },
+          {
+            "kind": "table",
+            "head": ["DATE", "WHAT", "NOTE"],
+            "rows": [
+              ["Aug 15-19", "Band camp", "Monday to Friday, the week before school. It has been that week since 1991."],
+              ["TBD, November", "Fruit orders due", "Second Friday. The truck date comes from the grove in September."],
+              ["TBD, April", "Bus wash", "Last Saturday, unless it is Easter weekend."]
+            ]
+          },
+          { "kind": "text", "body": "[i]Updated 21 May 2011 after the May meeting.[/i]" },
+          { "kind": "hitcounter", "count": 3188 }
+        ]
+      },
+      {
+        "id": "fruit",
+        "name": "Fruit Sale",
+        "blocks": [
+          { "kind": "marquee", "text": "*** FRUIT ORDERS AND MONEY DUE FRIDAY 12 NOVEMBER, 3:00 PM, BAND ROOM *** DELIVERY SATURDAY 11 DECEMBER, 9 AM TO NOON, BUS GARAGE ON HOLLIS ROAD *** CHEQUES TO GRIDFALL BAND BOOSTERS ***" },
+          { "kind": "heading", "level": 1, "text": "The fruit sale" },
+          { "kind": "text", "body": "Every year since 1988. It is two thirds of everything this band raises and it is four weeks of work for about seven weeks of arguing.\n\nThe fruit comes from a grower's cooperative outside Vero Beach, Florida, on a refrigerated truck that leaves down there on the Thursday and gets here Saturday morning. It is picked the week it ships. People say that about fruit sales and about this one it is true, and the proof is that the January honeybells are gone in three days every single year." },
+          { "kind": "heading", "level": 2, "text": "Prices" },
+          { "kind": "text", "body": "The price is the price. There is no size we can sell you cheaper and there is no bulk. The column on the right is what stays here, which people ask about and are entitled to ask about." },
+          {
+            "kind": "table",
+            "head": ["WHAT", "SIZE", "PRICE", "TO THE BAND"],
+            "rows": [
+              ["Navel oranges", "2/5 bushel, about 40 lb", "$26.00", "$9.10"],
+              ["Ruby red grapefruit", "2/5 bushel, about 40 lb", "$24.00", "$8.40"],
+              ["Navels and grapefruit mixed", "2/5 bushel", "$25.00", "$8.75"],
+              ["Navel oranges, small box", "1/5 bushel, about 20 lb", "$15.00", "$5.25"],
+              ["Grapefruit, small box", "1/5 bushel", "$14.00", "$4.90"],
+              ["Tangelos", "1/5 bushel", "$16.00", "$5.60"],
+              ["Pecan halves", "1 lb bag", "$9.00", "$3.15"],
+              ["Honeybell tangelos", "1/5 bushel, JANUARY ONLY", "$32.00", "$11.20"]
+            ]
+          },
+          { "kind": "text", "body": "[b]Honeybells are a separate order on a separate form in December[/b] and they are not part of the November sale. They come the third week of January for about eleven days and then the season is over and no amount of telephoning changes that. We take 60 boxes and we sell 60 boxes." },
+          { "kind": "heading", "level": 2, "text": "How it works" },
+          {
+            "kind": "list",
+            "ordered": true,
+            "items": [
+              "Your child gets a form from Mr. Kreider on Monday 18 October. There are spare forms in the band room and in the case outside the office and in the window at the pizza shop.",
+              "Sell to people you already know. Family, church, the shop where you work, the people on your road.",
+              "[b]Money comes with the order.[/b] Cash or a cheque made out to Gridfall Band Boosters. Not to the school. Not to Mr. Kreider. The school will not cash it and he will not either.",
+              "Write the buyer's telephone number on the line. Not their street, their telephone. On delivery day the only thing that helps is a telephone number.",
+              "Form and money to the band room by [b]3:00 PM Friday 12 November[/b]. Rhonda is there from 2:30. After that the order goes to Florida and it cannot be changed.",
+              "Delivery is [b]Saturday 11 December[/b] at the bus garage, 9:00 to noon."
+            ]
+          },
+          { "kind": "text", "body": "Every student is asked to sell [b]eight boxes[/b]. Nobody is made to and nobody has ever been spoken to about it, and two families every year sell nothing at all and their children go on every bus the same as anybody. If a student cannot sell and does not want to ask, tell Linda and she will put eight on his sheet from the ones the grandparents order in bulk. That has been done quietly for years and it will go on being done quietly." },
+          { "kind": "heading", "level": 2, "text": "Do not go door to door alone" },
+          { "kind": "text", "body": "This is the only rule on this page that is not about money.\n\nNo student goes house to house on the township roads on his own. Two students, or a student and an adult, in the daylight, and not on Nye Mills Road or the Cobb roads at all. There are farm dogs out there that are doing their job.\n\nThe best sellers in this band have never knocked on a stranger's door in their lives. They put the form on a counter somewhere their mother works." },
+          { "kind": "heading", "level": 2, "text": "Delivery day, which is the whole thing" },
+          { "kind": "text", "body": "The truck gets to the bus garage on Hollis Road between 6:30 and 8:00 on the Saturday morning. It is not late, it is a truck, it gets there when it gets there.\n\n[b]We need eight adults minimum to unload and we have never had eight.[/b] We have had six and it took two hours and forty minutes, and we have had nineteen and the whole drum line, and that one took seventy minutes and everybody went home and had their Saturday.\n\nBoxes come off by hand and go on the floor in rows by the student's last name, A at the door end. There is no forklift and there is no pallet jack and the one year we borrowed one it would not go up the ramp.\n\n[b]Pick your fruit up between 9:00 and noon.[/b] What is not collected sits in an unheated building until somebody can meet you, which in practice is Monday after school, and grapefruit that has been at thirty-eight degrees for two days is fine and grapefruit that froze is not." },
+          { "kind": "text", "body": "The driver in 2009 was a man called Curtis who got out of the cab, helped unload his own truck for forty minutes, and left a box of tangelos on the tailgate for the band because his own boy played tuba in a school in Georgia. Nobody asked him to do any of that. In 2010 it was somebody else and he did not get out of the cab, and that is also allowed." },
+          { "kind": "heading", "level": 2, "text": "What we have sold" },
+          { "kind": "text", "body": "Rhonda keeps this in the book. I type it in after the December meeting. [b]Gross[/b] is what came in the door. [b]To the band[/b] is what was left after the grove was paid." },
+          {
+            "kind": "table",
+            "head": ["YEAR", "BOXES", "GROSS", "TO THE BAND", "NOTE"],
+            "rows": [
+              ["2005", "480", "$11,840", "$4,144", ""],
+              ["2006", "455", "$11,230", "$3,930", "Ice on delivery morning. Sixty boxes went out on Monday."],
+              ["2007", "502", "$12,390", "$4,336", ""],
+              ["2008", "398", "$9,810", "$3,434", "Everybody's hours were cut that autumn and it showed in one column."],
+              ["2009", "441", "$10,870", "$3,804", "Thirty-one boxes came off a form the cooperative put on their counter in Marchfield."],
+              ["2010", "604", "$14,910", "$5,218", "Best since 1997. Forty of it came off a thread on the Gridfall boards and I still do not know whose."]
+            ]
+          },
+          { "kind": "text", "body": "The 1997 figure is on a sheet in the file box and says 640 boxes, and the band had 104 students in it that year. There were 71 this year. I am not making a point, it is just the two numbers." },
+          { "kind": "heading", "level": 2, "text": "Where to get a form if you have no child in the band" },
+          { "kind": "text", "body": "People ask every year, usually in the last week when it is nearly too late.\n\n[list][*]The case outside the school office, Hollis Road.[*]The window at [url=synth://gridfallpizza.com/]the pizza shop[/url] on Third Street.[*]The counter at [url=synth://hollismarket.com/]Hollis Market[/url] on Mill Street, who have let us do this since before I was involved.[*]The counter at [url=synth://marchfield-coop.com/]the Marchfield Farmers Cooperative[/url]. That one is worth thirty boxes a year on its own.[*]The waiting room at [url=synth://gridfalltire.com/]Gridfall Tire[/url], where Duane puts it under the glass.[*]Ring me at 782-6710 and I will put one in the post.[/list]" },
+          { "kind": "heading", "level": 2, "text": "Top sellers 2010" },
+          { "kind": "text", "body": "Announced at the December concert. The prize is a gift certificate and everybody pretends the prize is the point." },
+          {
+            "kind": "table",
+            "head": ["", "STUDENT", "BOXES", "HOW"],
+            "rows": [
+              ["1", "Kayla B.", "61", "Her grandmother works at the cooperative counter in Marchfield and put the form beside the register in October and left it there."],
+              ["2", "Tyler S.", "44", "His father took the form to the plant and pinned it on the board by the time clock."],
+              ["3", "Megan R.", "38", "Church."],
+              ["4", "Derek H.", "31", "Two roads, on foot, with his brother, over three Saturdays."],
+              ["5", "Alyssa T.", "29", ""],
+              ["6", "Bethany O.", "27", "Sold eleven boxes to one family, which we have never had happen before and which turned out to be for a wedding."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Things that go wrong every year" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "One cheque bounces. It is always one and it has never been the same family twice. We do not say who and we never have. The band eats it and it is about twenty-six dollars a year.",
+              "Two or three boxes go home with the wrong family. This is why we want the telephone number and not the street.",
+              "Somebody orders in November and moves in December. It has happened three times and all three times a neighbour took the fruit.",
+              "Somebody leaves a box in a warm car all day on the 11th. There is nothing to be done about this and the grove will not replace it and they are right not to.",
+              "The count Mr. Kreider makes and the count Rhonda makes do not match on the first try. They have never once matched on the first try."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Two things that are not us" },
+          { "kind": "text", "body": "We sell fruit in November and honeybells in January and that is all. [b]We do not sell anything in the spring, we do not sell discount cards, and we do not telephone houses.[/b]\n\nIf somebody rings your house in March and says they are raising money for the Gridfall band, they are not. There was a company doing that in this county in 2008 with a magazine subscription and the school sent a letter home about it, and it started again briefly in the autumn.\n\nAnd we do not sell fruit to the school. The school buys nothing from us. Somebody asked at a meeting whether the cafeteria could take a hundred boxes and the answer, which took the business office six weeks, was no." },
+          { "kind": "hitcounter", "count": 5006 }
+        ]
+      },
+      {
+        "id": "buswash",
+        "name": "Bus Wash",
+        "blocks": [
+          { "kind": "marquee", "text": "*** BUS WASH SATURDAY 30 APRIL, 9 AM TO 2 PM *** HIGH SCHOOL LOT BY THE TENNIS COURTS *** $5 A CAR, $8 FOR ANYTHING WITH THREE ROWS *** RAIN DATE SATURDAY 7 MAY ***" },
+          { "kind": "heading", "level": 1, "text": "The bus wash" },
+          { "kind": "text", "body": "It is called the bus wash and we do not wash buses. We washed buses once, in 1996, for the district, for nothing, and somebody put a hose through an open window and the name stuck and the buses did not.\n\n[b]Saturday 30 April 2011, 9:00 AM to 2:00 PM, the high school lot on Hollis Road, at the tennis courts end.[/b] Five dollars a car. Eight for a van or anything with three rows of seats. Rain date is Saturday 7 May and we have used the rain date twice in fifteen years." },
+          { "kind": "image", "seed": "gfband-buswash-lot-2010", "imgKind": "photo", "caption": "DOES NOT COME UP. Nine students in shorts and band camp t-shirts around a grey car with the doors shut and the windows up, four of them with sponges and one holding the hose over the roof at too steep an angle. The sign is propped against a traffic cone at the left and says BAND CAR WASH $5 in marker on posterboard, and the second five has been written over the first." },
+          { "kind": "heading", "level": 2, "text": "How the water works" },
+          { "kind": "text", "body": "The water comes off the spigot at the back of the gym. [b]Mr. Ressler[/b] the custodian turns it on at half past eight and turns it off at quarter past two and locks the panel, and he has done that every April since 2002 and has never been on the thank-you list in the banquet programme because nobody thought to put a custodian on it. That is fixed this year and it should have been fixed nine years ago.\n\nWe get two spigots and four hose lengths out of the building. We need six. The other two come from whichever parent remembers, and every year at about ten past nine somebody drives home for a hose." },
+          { "kind": "heading", "level": 2, "text": "What to bring if you are helping" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "Buckets. We want fourteen and we usually have nine.",
+              "A hose with a good nozzle, and put your name on it in tape. Two hoses have not gone home over the years.",
+              "Old towels. Drying is what makes people come back and it is what we are always shortest on.",
+              "A folding chair for the money table, because whoever takes the money stands for five hours otherwise and that is usually Bonnie and she is sixty-eight.",
+              "Sunscreen. It is thirty-eight degrees at nine and seventy by one and everybody gets burnt through the cloud.",
+              "Nothing that needs electricity. There is no outlet out there and the extension cord through the gym door is not allowed any more."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What a car wash actually earns" },
+          { "kind": "text", "body": "People assume this is where the money is. It is not. It is the fruit that is the money. This is about four hundred dollars and a Saturday, and we keep doing it because it is the only day all year the band and the parents are in the same place with nothing to be nervous about." },
+          {
+            "kind": "table",
+            "head": ["YEAR", "CARS", "RECEIPTS", "NOTE"],
+            "rows": [
+              ["2006", "58", "$290", ""],
+              ["2007", "71", "$355", ""],
+              ["2008", "64", "$320", "Cold and a wind off the field all day. We stopped at one."],
+              ["2009", "79", "$395 plus $22 tips", "First year of the tips jar."],
+              ["2010", "88", "$440 plus $37 tips", ""],
+              ["2011", "96", "$482 with the jar", "Best we have done. Eleven parents stayed to two and four of them are not band parents at all, they are Terri's neighbours."]
+            ]
+          },
+          { "kind": "text", "body": "The tips jar was Hannah G.'s idea in 2009 when she was a freshman. She cut a slot in a coffee can and wrote TIPS GO TO THE UNIFORMS on it with a marker. It has brought in more over three years than the extra cars have." },
+          { "kind": "heading", "level": 2, "text": "The rules, which are all because of one thing that happened" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]No hose inside the building.[/b] 1996. See above.",
+              "[b]Nobody under fourteen on the Hollis Road side of the lot.[/b] In 2008 the sign blew out of a fifth grader's hands and into the road and a truck stopped for it. Nothing happened to anybody. It is still the rule.",
+              "[b]We do not wash the inside of anybody's car.[/b] A student vacuumed a car in 2004 as a kindness and the lady came back on Monday about a ring that had been in the console. The ring was in the console. It took four days to find that out and nobody enjoyed any of them.",
+              "[b]Two adults at the money table at all times.[/b] Always two, never one, and neither of them is a student.",
+              "[b]If it is under fifty degrees at nine we do not start.[/b] 2008 taught us that and we did not learn it."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Rain" },
+          { "kind": "text", "body": "I look at [url=synth://ashkettle-wx.net/]the Kestrel Road weather station[/url] on the Thursday night and at the radar on the Saturday morning, and Linda makes the call at 7:30 and telephones four people who telephone four people each. The phone tree is on the [url=/officers]officers page[/url].\n\nIn 2005 we were rained out at eleven with twenty-two cars done and we moved into the bus garage, which is not allowed, and the man who let us do it has since retired and I am not going to name him." },
+          { "kind": "heading", "level": 2, "text": "Other people's Saturdays" },
+          { "kind": "text", "body": "We keep off other groups' dates and they keep off ours. [url=synth://troop62.verity.net/]Troop 62[/url] has the pancake breakfast the first Saturday in March and we put nothing on that day, which was agreed on a telephone in about four minutes and has held for years. [url=synth://ashkettlevfd.org/]The Ashkettle fire department[/url] let us park the equipment trailer in a bay the night before their parade in 2009 and took nothing for it.\n\nIf your group wants a Saturday in April, ring Linda before you print anything." },
+          { "kind": "hitcounter", "count": 2914 }
+        ]
+      },
+      {
+        "id": "goal",
+        "name": "Uniform Fund",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "The uniform fund" },
+          { "kind": "text", "body": "The coats are from [b]1994[/b]. There are seventy-one of them and fifty-four of them fit somebody, and the ones that fit nobody are mostly the small ones, which is a sentence about this county and not about the coats.\n\nThe wool is fine. Wool outlasts everybody. What is gone is the trim, the shoulder cording, and the zips, and the dye has gone two different shades because half of them spent fifteen years on a rack by a window in the old band room.\n\nMrs. Ochs and Deb and Joyce got a needle into every one of them in August and wrote down what each one needed, which took three evenings, and the list is in a folder in the uniform closet and it is the most useful document this organisation has ever produced." },
+          { "kind": "heading", "level": 2, "text": "Where we are" },
+          { "kind": "image", "seed": "gfband-thermometer-2011", "imgKind": "photo", "caption": "DOES NOT COME UP. A thermometer drawing I made in a paint program: a tall red tube with lines across it at every thousand, coloured in a little past the middle, $7,500 at the top, and $4,186 written beside the red in a fat outlined font that I regret and am not going to redo." },
+          {
+            "kind": "table",
+            "head": ["", ""],
+            "rows": [
+              ["Goal", "$7,500"],
+              ["In the account, 12 March 2011", "$4,186.42"],
+              ["Spent against it so far", "nothing"],
+              ["What $7,500 buys", "24 coats at $312"],
+              ["What we need in the end", "about $22,000, over three years"]
+            ]
+          },
+          { "kind": "text", "body": "[b]Twenty-four coats.[/b] Not seventy-one. That number is on this page in bold because at the October meeting three people had understood that $7,500 was the whole band re-uniformed, and that is nobody's fault, it is mine, because the thermometer said $7,500 and did not say what for.\n\nThe plan is twenty-four a year for three years. The company will hold the dye lot and the pattern for three years and put that in writing, which the other company we asked would not do, and that is the entire reason we are using them and not the cheaper one." },
+          { "kind": "heading", "level": 2, "text": "Where the money came from this year" },
+          { "kind": "text", "body": "Year is 1 July 2010 to 30 June 2011. Rhonda reads this at every meeting and it goes in the minutes, and this is the same figures typed up, not a summary of them." },
+          {
+            "kind": "table",
+            "head": ["WHAT", "AMOUNT", "NOTE"],
+            "rows": [
+              ["Fruit sale, November", "$5,218.00", "604 boxes."],
+              ["Honeybells, January", "$672.00", "60 boxes. Three days."],
+              ["Bus wash, April", "$482.00", "96 cars including the jar."],
+              ["Pepperoni rolls, five home games", "$318.00", "At a dollar and sold at two."],
+              ["Concession stand, two games", "$206.00", "Down from four games. No chair for it."],
+              ["Banquet tickets over cost", "$91.00", "$9 a plate and the kitchen charges us $7.40."],
+              ["Programme advertisements", "$425.00", "Eleven businesses at $25 and two at $75."],
+              ["Anonymous, October", "$200.00", "A cheque in the post with a note that said only, from a 1968 graduate."],
+              ["In memory of Wilma Trostle", "$250.00", "From the family, at the funeral, in place of flowers."],
+              ["Interest on the account, the whole year", "$6.41", ""],
+              ["", "", ""],
+              ["Total in", "$7,868.41", ""]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Where the money went that is not uniforms" },
+          { "kind": "text", "body": "This is the part people are surprised by. The band is not free to run even before you buy a coat." },
+          {
+            "kind": "table",
+            "head": ["WHAT", "AMOUNT", "NOTE"],
+            "rows": [
+              ["Reeds, valve oil, cork grease, drum heads", "$412.00", "Kept in a drawer and handed out. A student who forgets a reed on a Friday is not sent home."],
+              ["Bass clarinet, full pad job", "$180.00", "School instrument. The district pays for school instruments and does not pay quickly, and the instrument sat for eleven weeks, so we paid it."],
+              ["Sousaphone, dent work on the bell", "$95.00", ""],
+              ["Bus to the concert band festival, April", "$240.00", "The district charges the band for the bus. Every year one parent finds this out and is angry about it for a fortnight and then forgets, and next year it is a different parent."],
+              ["Festival and audition entry fees", "$286.00", "Solo and ensemble is $6 a student and there were 31."],
+              ["Meals on the two long Saturdays", "$374.00", "Sandwiches, fruit, and about ninety bottles of water."],
+              ["Banquet, the part tickets did not cover", "$0.00", "Covered. The covered dishes are why."],
+              ["Flowers, two funerals", "$94.00", ""],
+              ["Guard flags and two poles", "$188.00", ""],
+              ["Bank, cheque book", "$18.00", ""],
+              ["", "", ""],
+              ["Total out", "$1,887.00", ""],
+              ["In the uniform fund, 12 March 2011", "$4,186.42", "The year is not closed. The bus wash is after this date and so are most of the spring bills, and the two roughly cancel."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "What we are not buying" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "[b]A trailer.[/b] Asked four times in two years. We borrow one from [url=synth://brackenlanegarage.net/]Bracken Lane Garage[/url] and they have never once said no and will not take anything for it, and a trailer of our own is $3,100 and somewhere to keep it.",
+              "[b]A sousaphone.[/b] A used one in playing condition is around $2,400. We have four and three are fine. We will not have $2,400 this year and we will not have it next year and I would rather say that than have people think it is coming.",
+              "[b]Jackets for the boosters.[/b] This came up at the February meeting and went away again in under a minute, which I want written down somewhere.",
+              "[b]A tent for the sideline.[/b] Kupfer Field has no shade and we have talked about a tent for four years. It is $600. It is behind the coats."
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "If you want to give money" },
+          { "kind": "text", "body": "A cheque to [b]Gridfall Band Boosters[/b], posted to the band room at Verity Central High School, 1400 Hollis Road, Gridfall. Or hand it to any officer. Or put it in the jar at the bus wash.\n\nWe are not a charity in the way your accountant means and we do not send a letter for your taxes, because we are a passbook account at the Gridfall branch with two signatures on it and a treasurer who reads it out loud once a month.\n\nTwo people have asked whether they could give on the internet with a card. I looked into it properly in January. The company takes thirty cents and two point nine percent of every payment, wants a bank account in the organisation's name that it can reach into, and wants somebody to agree to terms on behalf of the boosters, and there is nobody here who can agree to anything on behalf of the boosters because the boosters are forty-two families and a coffee can. So the answer is no, and it is a real no and not a we will look into it." },
+          { "kind": "heading", "level": 2, "text": "The people who put money in the programme" },
+          { "kind": "text", "body": "Eleven businesses at twenty-five dollars and two at seventy-five. Every one of them was asked in person by a student, which is the rule, because the student asking is worth more than the twenty-five dollars.\n\n[list][*][url=synth://gridfalltire.com/]Gridfall Tire and Alignment[/url], Depot Street[*][url=synth://fennerinsurance.com/]Fenner Insurance[/url], Mill Street[*][url=synth://gridfallpizza.com/]the pizza shop[/url], Third Street[*][url=synth://hollismarket.com/]Hollis Market[/url], Mill Street[*][url=synth://brackenlanegarage.net/]Bracken Lane Garage[/url][*][url=synth://marchfield-coop.com/]Marchfield Farmers Cooperative[/url][*][url=synth://dellingersmusic.synth/]Dellinger's Music[/url], Marchfield[*]Hoyer's Print Shop, Depot Street, who print the programme and then take an advertisement in it[*]Five more who asked not to be listed on a web page, which is their business[/list]" },
+          { "kind": "text", "body": "[i]Figures as read at the meeting of 3 May 2011. If a number here is wrong it is because I typed it wrong and not because Rhonda did. Ring me.[/i]" },
+          { "kind": "hitcounter", "count": 3571 }
+        ]
+      },
+      {
+        "id": "officers",
+        "name": "Officers",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Officers and who to call" },
+          { "kind": "text", "body": "First name and last initial, because Mrs. Ochs asked for it and her reason was good. The school's own page lists students that way and she would rather the adults were listed the same way as the children. Nobody argued.\n\nIf you need somebody's whole name, you have it. This is Gridfall and there are four Lindas and you know which one." },
+          {
+            "kind": "table",
+            "head": ["OFFICE", "WHO", "WHAT THEY ACTUALLY DO", "PHONE"],
+            "rows": [
+              ["President", "Linda M.", "Runs the meeting, which takes forty minutes because she does not let it take ninety. Makes the rain call on the bus wash. Sixth year.", "782-4418"],
+              ["Vice President", "Chuck V.", "Does whatever Linda cannot get to, and pulls the equipment trailer, and has never missed a Saturday.", "782-2260"],
+              ["Treasurer", "Rhonda B.", "The books. Reads the balance out at every meeting whether anybody asks or not. Two signatures on the account and hers is one.", "782-5107"],
+              ["Secretary", "Patti D.", "Minutes, and the phone tree, and the forty-two names on it.", "782-1936"],
+              ["Fruit Sale Chair", "Linda M.", "Yes, the same person. It is not supposed to be and it has been for three years and the office is open to anybody who wants it.", "782-4418"],
+              ["Uniform Chairs", "Deb S. and Joyce H.", "Fit, hem, issue, collect, count, and mend. This is two people's work and was one person's until 2009 and that was not fair to her.", "782-3304 / 782-1177"],
+              ["Equipment", "Randy K.", "Pit crew, podium, the cart, the field markers, the trailer hitch. Recruits students and they stay recruited.", "782-3372"],
+              ["Chaperone Coordinator", "Terri A.", "The bus sheet. Two parents per bus, and she will telephone you, and you should say yes once a year.", "782-4025"],
+              ["Hospitality", "Bonnie E.", "The food on the long Saturdays and the cake at the concert. Sixty-eight and does more than anybody.", "782-2841"],
+              ["Concessions", "VACANT", "Vacant since October. If nobody takes it we do not run the stand. The stand is about two hundred dollars a year. That is a fact and not a threat.", ""],
+              ["Web page", "Denny R.", "Not an office. It is on this table because people kept asking who to tell about the pictures.", "782-6710"]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "Staff" },
+          { "kind": "text", "body": "Staff go by their whole names because that is how the students say them and because they are the school's, not ours." },
+          {
+            "kind": "table",
+            "head": ["", "", ""],
+            "rows": [
+              ["Band Director", "Mr. Dean Kreider", "Eleventh year. Teaches fifth and sixth grade band at Gridfall Elementary on Tuesday and Thursday mornings and the high school the rest of the week, which is two jobs and one salary, and he has never once said that out loud."],
+              ["Colour Guard", "Mrs. Sandy Ochs", "Guard, uniforms, and the thing where she knows which student has not eaten."],
+              ["Percussion (volunteer)", "Mr. Alvin Yeakel", "Retired. Comes in Mondays and works with the drum line for two hours. Has been offered a stipend twice and said no twice."],
+              ["Drum Major", "Alyssa T.", "Senior. Second year. Ask her before you ask anybody about anything to do with the field."],
+              ["Band room", "", "782-1240, extension 214. It rings in the band room and Mr. Kreider is teaching, so leave it on the machine and he gets it at the end of the day."]
+            ]
+          },
+          { "kind": "heading", "level": 2, "text": "There is no e-mail address" },
+          { "kind": "text", "body": "People ask for one about once a month.\n\nMr. Kreider has a district address. It goes to a page he has to log into with a password the district resets every ninety days, and it is not on his telephone, and he reads it on a Sunday night if at all. If you write to it about a Friday you are not getting an answer before the Friday.\n\nI have an address at home and it is the one the ring uses and I read it every evening, and I would rather you rang me at 782-6710, because I will write it down and a message on the machine is a thing I have in my hand." },
+          { "kind": "heading", "level": 2, "text": "The phone tree" },
+          { "kind": "text", "body": "Four people ring four people who ring four people. It goes out at 7:30 in the morning for a weather call and at any hour for a bus that is going to be late.\n\n[b]If your number changes, tell Patti.[/b] Nine of the forty-two numbers on the sheet were wrong when she took it over in 2009, and two of them had been wrong since 2006, which means two families were not told anything for three years and never said a word about it." },
+          { "kind": "heading", "level": 2, "text": "Past presidents" },
+          { "kind": "text", "body": "Off the front of the minute book, which starts in 1988 because that is when somebody thought to buy a minute book. The band boosters existed before 1988 and there is no list of who ran it, and the two people who would have known have both died." },
+          {
+            "kind": "table",
+            "head": ["YEARS", "PRESIDENT", "NOTE"],
+            "rows": [
+              ["1988-1990", "Carol B.", "Started the fruit sale. Wrote to nine growers and picked the one that answered."],
+              ["1990-1993", "Jim T.", ""],
+              ["1993-1996", "Marlene K.", "The 1994 coats. She got the district to pay half and it took her two years."],
+              ["1996-1997", "Bud O.", "One year. Moved."],
+              ["1997-2001", "Sharon W.", "The 640-box year. Band had 104 in it."],
+              ["2001-2004", "Gene S.", ""],
+              ["2004-2005", "Dottie M.", "Resigned in March, for reasons that are hers."],
+              ["2005-2005", "Gene S.", "Came back for three months to finish the year and would not let anybody call him president."],
+              ["2005-2008", "Nancy P.", "Started the programme advertisements."],
+              ["2008-2009", "Ron A.", ""],
+              ["2009-", "Linda M.", ""]
+            ]
+          },
+          { "kind": "text", "body": "Marlene K. is in the Marchfield nursing home now. Two students went and played for her at Christmas, not as a band thing, they just went, and I only heard about it in February." },
+          { "kind": "text", "body": "[i]Table checked against the minute book 3 May 2011. If your name is wrong on here, it is wrong on here because I copied it wrong, and I would like to know.[/i]" },
+          { "kind": "hitcounter", "count": 4137 }
+        ]
+      },
+      {
+        "id": "newparents",
+        "name": "New Band Parents",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "For new band parents" },
+          { "kind": "text", "body": "Written down because the same eleven questions come every August in the car park and half of them get answered wrong by another parent who is also new.\n\nIf something on here contradicts Mr. Kreider, Mr. Kreider is right and I will fix this page." },
+          { "kind": "heading", "level": 2, "text": "What you have to buy" },
+          {
+            "kind": "table",
+            "head": ["WHAT", "COST", "WHERE", "NOTE"],
+            "rows": [
+              ["Marching shoes", "$34", "[url=synth://dellingersmusic.synth/]Dellinger's Music[/url], Marchfield", "Black, and they are a specific shoe and not any black shoe. Deb has a box of outgrown ones in the uniform closet and will find a pair in your size before you spend thirty-four dollars, and about a third of the band is in those."],
+              ["Gloves", "$4 a pair", "Mrs. Ochs, band room", "Buy two pairs. Everybody loses one glove in October. Not the second glove, the same glove, the left one."],
+              ["Black socks, crew length", "", "anywhere", "Not ankle socks. This is the single most common thing to get wrong and it shows from the stands."],
+              ["Black shorts and the camp t-shirt", "$12 for the shirt", "band room", "Worn under the uniform all season. The shirt is the year's design and this year it is fine and last year it was not."],
+              ["Band camp fee", "$40", "with the medical form", "Covers the clinicians, the ice, and lunch on the Friday. Nobody has ever been turned away over it. Tell Linda and it is handled and not discussed again."],
+              ["Instrument", "", "", "The school owns the big ones -- sousaphone, baritone, most percussion, two bass clarinets. Everything else is yours or rented. Dellinger's rents and applies the rent to purchase, and so does a shop in the capital that is cheaper and forty minutes away."]
+            ]
+          },
+          { "kind": "text", "body": "[b]Total, if you buy everything new and nothing second hand: about $90.[/b] Most families spend under fifty. Nobody has ever been kept out of this band by money and I will put my name to that." },
+          { "kind": "heading", "level": 2, "text": "Band camp" },
+          { "kind": "text", "body": "The week before school, Monday to Friday, eight in the morning to four in the afternoon, at the school and on the practice lot behind the gym. It is the hardest week of the year and it is the week they decide whether they like this.\n\n[list][*][b]Two water bottles, frozen the night before.[/b] Not one. Two.[*]A hat with a brim and sunscreen put on at home before they leave, because a sixteen-year-old boy will not put sunscreen on in front of anybody.[*]A packed lunch Monday to Thursday. Friday the boosters feed them.[*]A towel in the car for the ride home.[*]Old trainers for the lot, which is asphalt and eats shoes, and the marching shoes only on Thursday and Friday.[/list]\n\nThey come home ruined on the Monday and Tuesday and by Thursday they are fine. Two or three quit in that week every year and one of them usually comes back at Christmas for concert band." },
+          { "kind": "heading", "level": 2, "text": "Friday nights" },
+          { "kind": "text", "body": "The band is in the stands by 6:45 for a 7:00 kick, sits in the block behind the forty, plays in the breaks, does the show at half, and stays through the third quarter. After the third quarter they are loose and they go to the fence and buy rolls off us with their own money, which is the most reliable income this organisation has.\n\n[b]Pick-up is at the band room door, not the stadium gate.[/b] Instruments go back on the shelves and that takes eleven minutes and cannot be skipped, so a student who runs straight to a car has left a three thousand dollar horn on a bench.\n\nThey stay in uniform, coat on, until Mr. Kreider dismisses them. Late October at Kupfer Field is colder than anywhere in this county because it is up on the flat and there is nothing between it and the north. [b]Send a coat for yourself and thermal layers for them under the uniform.[/b] The uniform trousers are one layer of poly-wool and that is all they are." },
+          { "kind": "heading", "level": 2, "text": "The buses" },
+          { "kind": "text", "body": "The band does not ride the team bus and never has. Two buses, two parents on each, and the equipment trailer behind Chuck's truck.\n\nInstruments ride on the bus with them except the sousaphones, baritone saxes, pit, and anything that does not fit in a lap. Those go in the trailer, and if it rains they go in the trailer anyway and get wiped down at the other end by whoever Randy has decided is doing it.\n\nThe bus leaves when the sheet says and it has left without somebody four times that I know of." },
+          { "kind": "heading", "level": 2, "text": "Questions people ask" },
+          { "kind": "text", "body": "[b]Does my child have to march to be in band?[/b]\nNo. Concert band is a class and marching band is a class and they are separate. Seventeen students this year are concert only. Nobody is made to march and nobody is thought less of.\n\n[b]Can she do a sport and band?[/b]\nSoccer, no, the seasons are on top of each other. Cross country, yes, three do it and the coach and Mr. Kreider worked it out in 2007 and it has been fine since. Winter and spring sports, no conflict at all.\n\n[b]Does band count for anything on the schedule?[/b]\nIt is a credit. It fills the arts requirement. This was in doubt for about six weeks in 2008 when the schedule changed and it was settled and has not come up since.\n\n[b]Who pays for the trip?[/b]\nThere is no trip. This band has not taken a trip since 1975 and the 1975 one was the state capital for two nights, and there is a picture of it on the [url=/photos]picture page[/url] that does not come up.\n\n[b]What if we cannot afford the fee?[/b]\nTell Linda. It is handled the same day and it is not written down anywhere and it is not discussed at the meeting.\n\n[b]Is there a fundraiser I can skip?[/b]\nAll of them. Nothing here is required. Some families sell sixty boxes and some sell none and both kinds of student are on the same bus." },
+          { "kind": "heading", "level": 2, "text": "Things nobody tells you" },
+          {
+            "kind": "list",
+            "ordered": false,
+            "items": [
+              "The uniform is issued in August and collected in November and you never take it home in between. The hangers are numbered and the number on the hanger is the number in Deb's book.",
+              "A student who loses a glove on a Thursday can have one on Friday. A student who loses a shoe on a Thursday cannot.",
+              "Everything is in the case outside the office, and the case is where information actually lives in this school. This web page is second.",
+              "Mr. Kreider's rule is that a student who forgets a reed is not sent home and is not made an example of. He buys the reeds out of the drawer we fill. He has never once told anybody how many he hands out.",
+              "The concert is longer than the programme says. Every one of them. Put nothing after it."
+            ]
+          },
+          { "kind": "hitcounter", "count": 2205 }
+        ]
+      },
+      {
+        "id": "photos",
+        "name": "Pictures",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Pictures" },
+          { "kind": "text", "body": "[b]Most of the pictures on this page do not come up.[/b] Please read this part before you sign the guestbook about it, because six people have and every one of them was being kind." },
+          { "kind": "heading", "level": 2, "text": "What I know about it" },
+          { "kind": "text", "body": "The picture at the top of the front page comes up. It is loose in the same place as the pages and I put it there by accident in October because I was in a hurry.\n\nEverything else I put in a folder I named [b]Band Pictures[/b], because that is what it is, and none of those come up for anybody. They come up for me, and my nephew says that is because they are on my own machine already, and I think he is right about that.\n\nI have sent the folder up three times. November, January, and again in March. The help page on the host says to check that a picture is under two megabytes. Mine are about nine hundred kilobytes, which I looked up because I did not know what a kilobyte was in November and I do now.\n\nThere is a telephone number on the host's help page. It is answered by a recording that asks you to go to the help page." },
+          { "kind": "text", "body": "[i]Added 21 May 2011. My nephew said the trouble might be the space in the name of the folder. I made one called bandpictures with no space and put four pictures in it to try, and they did not come up either, so it is not the space. I have stopped trying things. If somebody who knows about this is in Gridfall on a first Tuesday, the band room is on Hollis Road at seven and I will buy the coffee.[/i]" },
+          { "kind": "heading", "level": 2, "text": "Why the descriptions are as long as they are" },
+          { "kind": "text", "body": "There is a box under each picture on this template that it calls the [b]description[/b]. I did not fill it in for the first month.\n\nIn September Mrs. Ochs told me that the description is what somebody hears if they cannot see the picture, and that her mother cannot see the picture, and that she had been reading the page to her on the telephone. So I started typing one for every picture and I have got better at it, and the early ones are three words and the later ones are too long and I am not going back to shorten them.\n\nThe descriptions are stored in the page. The pictures are stored in the folder. So the part that works is the part I nearly did not bother with." },
+          { "kind": "heading", "level": 2, "text": "Band camp, August 2010" },
+          { "kind": "image", "seed": "gfband-camp-lot-monday", "imgKind": "photo", "caption": "DOES NOT COME UP. Fifty-some students in a block on the asphalt lot behind the gym on the Monday morning of band camp, seen from the tailgate of a truck. Everybody is in shorts and a shirt and nobody is in step. Mr. Kreider is on a wooden podium at the front with a clipboard at his side, not conducting, just watching. The lot has faded yellow dots painted on it in a grid and the dots are the whole reason this works." },
+          { "kind": "image", "seed": "gfband-camp-shade-wednesday", "imgKind": "photo", "caption": "DOES NOT COME UP. Nine students sitting in the strip of shade on the north side of the gym at lunch on the Wednesday, backs against the block wall, legs straight out. Two are asleep. One is holding a frozen water bottle against the back of her neck. Somebody's marching shoes are off and set neatly side by side, which is the detail I took the picture for." },
+          { "kind": "image", "seed": "gfband-camp-friday-parents", "imgKind": "photo", "caption": "DOES NOT COME UP. The Friday afternoon run-through with about thirty parents standing along the fence. The band is halfway through the opener and the guard flags are up, all of them, at the same time, which had not happened until that afternoon." },
+          { "kind": "heading", "level": 2, "text": "Football Fridays" },
+          { "kind": "image", "seed": "gfband-stands-block", "imgKind": "photo", "caption": "DOES NOT COME UP. The band block in the stands at Kupfer Field from the top of the bleachers, first home game, 3 September. Six rows, instruments up, and Alyssa standing on the bench at the front with her back to the field. The scoreboard behind them says 7 to 0 and it is us." },
+          { "kind": "image", "seed": "gfband-fence-rolls", "imgKind": "photo", "caption": "DOES NOT COME UP. Bonnie and two students at the fence by the gate with the cooler of pepperoni rolls open and a folding table, third quarter, 1 October. There is a line of eleven people. The roll box has a piece of paper taped to it that says $2 in marker." },
+          { "kind": "image", "seed": "gfband-senior-night-gate", "imgKind": "photo", "caption": "DOES NOT COME UP. Senior night, 22 October, at the gate before the game. Nine seniors with a parent on each arm, in the uniform with the coat buttoned and the hat under the arm. It is thirty-nine degrees in this picture and you can see it on every face in it. The seniors are Alyssa T., Derek H., Bethany O., Jared M., Kylie F., Nick S., Amanda W., Ryan L. and Cassie G." },
+          { "kind": "image", "seed": "gfband-rain-october-15", "imgKind": "photo", "caption": "DOES NOT COME UP. The equipment trailer with the ramp down in the rain and four students carrying the pit under a tarp held over it by two more. Taken from under the tailgate of a truck, which is why the bottom third of this one is a bumper." },
+          { "kind": "heading", "level": 2, "text": "Homecoming, 8 October 2010" },
+          { "kind": "image", "seed": "gfband-homecoming-depot", "imgKind": "photo", "caption": "DOES NOT COME UP. The parade on Depot Street at about ten past five, the band coming past the courthouse with the drum line in front. The crowd on this block is three deep, which is about as good as Depot Street gets. The fire truck ahead of them is far enough ahead that you cannot see it." },
+          { "kind": "image", "seed": "gfband-homecoming-alumni", "imgKind": "photo", "caption": "DOES NOT COME UP. Eleven alumni on the track at half time playing the fight song with the band, in coats and ordinary clothes, holding instruments they mostly brought themselves. The man at the far right is playing a trumpet he told me he had not taken out of the case since 1979 and it sounded like it and nobody minded." },
+          { "kind": "heading", "level": 2, "text": "Fruit delivery, 11 December 2010" },
+          { "kind": "image", "seed": "gfband-fruit-truck-dock", "imgKind": "photo", "caption": "DOES NOT COME UP. The refrigerated trailer backed up to the bus garage door at about twenty past seven in the morning, doors open, boxes stacked to the roof of it, and a line of nine people from the trailer to the floor. There is frost on the ground and steam coming out of the trailer, which is backwards from what you would expect and is the reason I took the picture." },
+          { "kind": "image", "seed": "gfband-fruit-rows-floor", "imgKind": "photo", "caption": "DOES NOT COME UP. The bus garage floor with 604 boxes in rows by last name, sheets of paper taped to the concrete with letters on them, and two students on their knees at the far end sorting the S row, which is always the biggest row." },
+          { "kind": "image", "seed": "gfband-fruit-last-load", "imgKind": "photo", "caption": "DOES NOT COME UP. Chuck and Randy sitting on the empty dock at about eleven with coffee, the floor swept, nine boxes still on it, and the garage door half down." },
+          { "kind": "heading", "level": 2, "text": "Winter concert, 14 December 2010" },
+          { "kind": "image", "seed": "gfband-winter-concert-stage", "imgKind": "photo", "caption": "DOES NOT COME UP. The high school auditorium stage from about row eight. Concert band seated, black and white, Mr. Kreider with his back to the camera and his hands up. The curtain is the old gold one. The house is about two thirds full and the back four rows are empty, which they always are." },
+          { "kind": "image", "seed": "gfband-winter-fifth-grade", "imgKind": "photo", "caption": "DOES NOT COME UP. The fifth and sixth grade band from Gridfall Elementary on the same stage before the high school plays. Forty-one of them. Three clarinets in the front row are holding the instrument at completely different angles and one of them is looking at his mother in the audience instead of at the music." },
+          { "kind": "heading", "level": 2, "text": "The 1975 picture" },
+          { "kind": "image", "seed": "gfband-capital-steps-1975", "imgKind": "photo", "caption": "DOES NOT COME UP. Forty-one members of the Gridfall band on the steps of a building in the state capital, spring 1975, in the old coats with the double row of buttons and the tall hats. Mr. Halberstadt is at the left in a hat of his own. Somebody has written the names in pencil on the back. This is the only trip this band has ever taken." },
+          { "kind": "text", "body": "This hung in the band room in a frame with 1974 on the mat and I put 1974 on this page. In February a lady who works at the Marchfield library signed the guestbook and said it was 1975 and that the same photograph ran in [url=synth://verityledger.com/]the Ledger[/url] on page 11 of the issue of 24 April 1975 with the names printed under it. Then she made a copy of the page for ten cents and posted it to me.\n\nShe was right about the year. She was also right that the third name from the left is Yeakel and not Yeakle, which matters because that is Alvin, who is in the band room on Mondays and has been for nine years and said nothing to anybody about it for all nine of them.\n\nThe copy of the page is in the case outside the office. The frame in the band room still says 1974 because it is behind glass and screwed to the wall and I am not the one who gets to take it down." },
+          { "kind": "heading", "level": 2, "text": "Spring 2011" },
+          { "kind": "image", "seed": "gfband-buswash-money-table", "imgKind": "photo", "caption": "DOES NOT COME UP. The money table at the bus wash on 30 April. Bonnie in a folding chair with the cash box, Terri standing beside her, the coffee can with TIPS GO TO THE UNIFORMS on it in marker, and a line of four cars waiting that runs off the right side of the picture." },
+          { "kind": "image", "seed": "gfband-spring-concert-seniors", "imgKind": "photo", "caption": "DOES NOT COME UP. The nine seniors on the apron of the stage after the spring concert on 17 May with their pins, half of them still holding the programme. Cassie G. is crying and Ryan L. is laughing at her about it and she is laughing too." },
+          { "kind": "image", "seed": "gfband-banquet-cafeteria", "imgKind": "photo", "caption": "DOES NOT COME UP. The cafeteria on banquet night, 20 May, eleven tables with paper covers and a covered dish on every one, about a hundred and thirty people, and Mr. Kreider standing at the microphone at the far end waiting for it to go quiet, which took a while." },
+          { "kind": "heading", "level": 2, "text": "Ones I have not described yet" },
+          { "kind": "text", "body": "These are up in the folder and do not come up and have nothing typed under them. I will get to them." },
+          {
+            "kind": "table",
+            "head": ["FILE", "WHAT IT IS, ROUGHLY"],
+            "rows": [
+              ["dsc_0231.jpg", "Something at band camp. Tuesday I think."],
+              ["dsc_0244.jpg", "The drum line on the lot."],
+              ["dsc_0288.jpg", "Guard practice, the wall of the gym behind them."],
+              ["dsc_0301.jpg", "The 24 September away game that the band did not travel to, so this is somebody else's picture and I do not know whose."],
+              ["dsc_0356.jpg", "The Armory at the winter market, 18 December. Carols. Twenty-two students and about nine people listening."],
+              ["dsc_0377.jpg", "Solo and ensemble at Marchfield, a hallway with students sitting against the wall waiting for a room."],
+              ["dsc_0390.jpg", "The pit at the musical, from the audience side, badly."],
+              ["dsc_0402.jpg", "Concert band festival bus in the lot at quarter past seven in the morning."],
+              ["dsc_0418.jpg", "Memorial Day, Depot Street, step off. Taken from the Armory lot and mostly of a hat."]
+            ]
+          },
+          { "kind": "text", "body": "Somebody put a video of the December concert on [url=synth://clipvault.tv/]ClipVault[/url] from the back row on a camcorder. The sound is not good and the picture is worse, and three families who could not get there have watched it, so it is the best thing anybody has done for this page and I had nothing to do with it." },
+          { "kind": "hitcounter", "count": 6640 }
+        ]
+      },
+      {
+        "id": "guestbook",
+        "name": "Guestbook",
+        "blocks": [
+          { "kind": "heading", "level": 1, "text": "Guestbook" },
+          { "kind": "text", "body": "Sign it if you want to. I read all of them.\n\nI take out the advertisements, and there are a lot of advertisements. I have taken out two entries that were about a particular student and I would take them out again. If you think I took yours out and should not have, ring me at 782-6710 and I will put it back if you are right." },
+          {
+            "kind": "guestbook",
+            "entries": [
+              { "author": "Peg H., Gridfall", "time": "2010-08-29", "body": "Well it is about time. I have been finding out about Saturdays on Thursdays for six years. Thank you for doing this." },
+              { "author": "Denny R.", "time": "2010-08-30", "body": "That is exactly what my niece said. That is why it is here." },
+              { "author": "a parent", "time": "2010-09-19", "body": "Is the band going to the away game at Halsey or not. Two people have told me two things." },
+              { "author": "Denny R.", "time": "2010-09-20", "body": "Not. Nine miles and no bus money. It is on the calendar page in the away column and I have put the words DOES NOT TRAVEL on it now so it cannot be read two ways." },
+              { "author": "Gerald Mease", "time": "2010-10-03", "body": "Second trumpet 1966 to 1969. The coats were green and black then and they were wool and they weighed about nine pounds wet. We marched the Memorial Day parade in them in 1968 and two boys went down on Depot Street and it was not the heat, it was the coats.\n\nGood to see this. My sister sent me the address." },
+              { "author": "WATCHES OUTLET", "time": "2010-10-11", "body": "R0LEX and OMEGA replicas 90% OFF today only best quality free shipping worldwide click here [url=synth://bestwatchoutlet.top/]WWW BEST WATCH OUTLET[/url] satisfaction guarantee" },
+              { "author": "Denny R.", "time": "2010-10-12", "body": "I am leaving that one up so people can see what I am taking down. There have been nineteen of them since August. The host has a box you can tick that is supposed to stop it and I have ticked it." },
+              { "author": "Cindy in Mesa, Arizona", "time": "2010-10-18", "body": "My grandson Nick is a senior and plays trombone and I have not seen him march since he was in eighth grade. I look at this page on a Saturday morning with my coffee. Would somebody take a picture of the seniors with their parents.\n\nI know it is a lot to ask." },
+              { "author": "Denny R.", "time": "2010-10-23", "body": "Took it at the gate before the game. It is on the picture page. It does not come up, and I am sorrier about that one than about any of the others, and I have described it as well as I can." },
+              { "author": "Randy K.", "time": "2010-12-12", "body": "Seventy minutes yesterday. Nine adults and the whole drum line. I have been doing the fruit since 2003 and that is the fastest it has ever gone off a truck. Whoever brought the two hand trucks, bring them every year." },
+              { "author": "webmaster", "time": "2010-12-29", "body": "Hello webmaster. I found your site while searching for {keyword} and I really enjoyed reading your article about {keyword}. Your website about {city} has helped me a lot. Please visit my website for more information about {keyword} and {product_name}." },
+              { "author": "Denny R.", "time": "2010-12-30", "body": "That one came in four times in two days with a different name on it each time and the same brackets in the middle. I am leaving one up. It is funnier than anything I could write." },
+              { "author": "kfennimore", "time": "2011-02-09", "body": "The photograph you have dated 1974 is 1975. The same picture ran in the Ledger on page 11 of the issue of 24 April 1975, with the names set under it in two lines.\n\nThe microfilm is here at the library and I can make you a paper copy of that page for ten cents if you would like one for the case. Tell me where to post it.\n\nThe third name from the left is Yeakel. It is spelled Yeakle on the mat in your frame and it is spelled Yeakel in the paper and on the 1975 programme, which is also here." },
+              { "author": "Denny R.", "time": "2011-02-13", "body": "She sent it. It came in an envelope with the ten cents written on a slip inside it so I would know what to send back, and I sent a dollar and she sent ninety cents back, which I want on the record.\n\n1975 it is. Page fixed. The copy of the Ledger page is in the case outside the office and Alvin looked at it for a long while on Monday and then went and set up the bass drum." },
+              { "author": "T. Ridout", "time": "2011-02-20", "body": "I am looking for the Gridfall high school band that played at a fair in 1982. Do you have a picture of the uniforms from then. I am trying to settle something with my brother." },
+              { "author": "Denny R.", "time": "2011-02-21", "body": "Nothing that old on this page. The band room has a shelf of programmes going back to about 1962 and Mr. Kreider will let anybody look at them on a Monday after three. The county wiki has a page on [url=synth://wiki.gridfall.net/wiki/verity-central-high]the high school[/url] with some of the years on it, though not the band." },
+              { "author": "Joyce H.", "time": "2011-03-14", "body": "Uniform closet: there are now eleven pairs of marching shoes in sizes 7 through 11 in the box and they are free and they are clean. Nobody has to buy new shoes. Tell a new family." },
+              { "author": "a mother", "time": "2011-03-30", "body": "Are the pictures ever going to work" },
+              { "author": "Denny R.", "time": "2011-03-31", "body": "I do not know. I have sent them up three times. There is a whole explanation at the top of the picture page and I would rather you read that than me write it again, but the short answer is no, not by me." },
+              { "author": "Bonnie E.", "time": "2011-05-01", "body": "Ninety-six cars. Four of the people who worked it were Terri's neighbours who have no child in this band and never have had one. They came at nine and left at two and would not take a roll for it." },
+              { "author": "PREMIER FINANCE", "time": "2011-05-08", "body": "ATTENTION WEBSITE OWNER. Your organization may QUALIFY for up to $50,000 in FUNDING. No credit check. Apply in 60 seconds at [url=synth://premier-capital-now.biz/]PREMIER CAPITAL NOW[/url]. Act fast this offer expires." },
+              { "author": "Megan R.", "time": "2011-05-18", "body": "uncle denny the concert page still says tuesday the 17th at 7 30 and it was 7 30 but it started at 7 45 because the fifth graders. anyway thank you for doing all this. nobody says it but everybody looks at it" },
+              { "author": "Denny R.", "time": "2011-05-21", "body": "Concert was fine. Banquet was fine. I have put the spring descriptions on the picture page.\n\nNext thing on here is the calendar for the autumn and that goes up after the August meeting, which is the first Tuesday, which is the second of August. Ring me if anything on any of these pages is wrong." }
+            ]
+          },
+          { "kind": "text", "body": "[b]The book has been signed 96 times since 22 August 2010.[/b] Twenty-two of those I took out, eleven are me answering somebody, and one is my niece." },
+          {
+            "kind": "webring",
+            "ringName": "The Gridfall Webring",
+            "members": [
+              { "label": "Ring Home", "domain": "webring.gridfall.net" },
+              { "label": "Previous: The Quarry Cut on Route 62", "domain": "quarrycut.net" },
+              { "label": "Next: Coyne Flats Community Association", "domain": "coyneflats.org" },
+              { "label": "Random: Troop 62, Gridfall", "domain": "troop62.verity.net" }
+            ]
+          },
+          { "kind": "hitcounter", "count": 5290 }
+        ]
+      }
+    ]
+  }
+}
